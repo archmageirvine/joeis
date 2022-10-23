@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056757 Cube of number of divisors is larger than the number.
  * @author Sean A. Irvine
  */
-public class A056757 implements Sequence {
+public class A056757 extends Sequence1 {
 
   private Z mN = Z.ONE;
 

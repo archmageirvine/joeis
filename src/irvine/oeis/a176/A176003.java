@@ -3,13 +3,14 @@ package irvine.oeis.a176;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008578;
 
 /**
  * A176003 a(n) = 3*(n-th noncomposite number) - 2.
  * @author Georg Fischer
  */
-public class A176003 implements Sequence {
+public class A176003 extends Sequence1 {
 
   final Sequence mA008578 = new A008578();
   @Override

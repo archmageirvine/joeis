@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055046 Numbers of the form 4^i*(8*j+3).
  * @author Sean A. Irvine
  */
-public class A055046 implements Sequence {
+public class A055046 extends Sequence1 {
 
   private final TreeSet<Long> mA = new TreeSet<>();
   private long mN = 3;

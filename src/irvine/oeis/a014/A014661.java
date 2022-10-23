@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014661 Numbers that do not divide 2^k + 1 for any k&gt;0.
  * @author Sean A. Irvine
  */
-public class A014661 implements Sequence {
+public class A014661 extends Sequence1 {
 
   private long mN = 1;
 

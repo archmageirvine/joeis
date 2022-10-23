@@ -3,6 +3,7 @@ package irvine.oeis.a322;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003958;
 import irvine.oeis.a097.A097945;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a097.A097945;
  * A322581 Sum of A003958 and its Dirichlet inverse: a(n) = A003958(n) + A097945(n).
  * @author Georg Fischer
  */
-public class A322581 implements Sequence {
+public class A322581 extends Sequence1 {
 
   final Sequence mA003958 = new A003958();
   final Sequence mA097945 = new A097945();

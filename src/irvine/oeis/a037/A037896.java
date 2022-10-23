@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037896 Primes of the form k^4 + 1.
  * @author Sean A. Irvine
  */
-public class A037896 implements Sequence {
+public class A037896 extends Sequence1 {
 
   private long mN = 0;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034712 Largest number using only digits &lt;= n that does not repeat a pair of consecutive digits.
  * @author Sean A. Irvine
  */
-public class A034712 implements Sequence {
+public class A034712 extends Sequence1 {
 
   private int mN = 1;
 

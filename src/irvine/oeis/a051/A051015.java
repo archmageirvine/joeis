@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051015 Zeisel numbers.
  * @author Sean A. Irvine
  */
-public class A051015 implements Sequence {
+public class A051015 extends Sequence1 {
 
   // After M. F. Hasler
 

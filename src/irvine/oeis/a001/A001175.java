@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001175 Pisano periods (or Pisano numbers): period of Fibonacci numbers mod n.
  * @author Sean A. Irvine
  */
-public class A001175 implements Sequence {
+public class A001175 extends Sequence1 {
 
   private int mN = 0;
 

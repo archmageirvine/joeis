@@ -2,13 +2,13 @@ package irvine.oeis.a153;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A153425 Numbers n such that n = p*phi(p) where p is product of the digits of n.
  * @author Sean A. Irvine
  */
-public class A153425 implements Sequence {
+public class A153425 extends Sequence1 {
 
   private long mN = 0;
   private final long[] mPhiCache = new long[1000000];

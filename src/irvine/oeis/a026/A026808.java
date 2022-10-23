@@ -1,13 +1,13 @@
 package irvine.oeis.a026;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A026808 a(n) is the number of products P of distinct positive integers satisfying P &lt;= n.
  * @author Sean A. Irvine
  */
-public class A026808 implements Sequence {
+public class A026808 extends Sequence1 {
 
   private long mN = 0;
   private long mC = 0;

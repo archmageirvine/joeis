@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027345 Triangular array T given by rows: T(n,k) = number of partitions of n into distinct odd parts, the least being k.
  * @author Sean A. Irvine
  */
-public class A027345 implements Sequence {
+public class A027345 extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = 0;

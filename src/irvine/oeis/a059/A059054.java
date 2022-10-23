@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059054 Integers which can be written as (b^k+1)/(b+1) for positive integers b and k.
  * @author Sean A. Irvine
  */
-public class A059054 implements Sequence {
+public class A059054 extends Sequence1 {
 
   private static final class State implements Comparable<State> {
     private final Z mB;

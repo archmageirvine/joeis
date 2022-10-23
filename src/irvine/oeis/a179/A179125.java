@@ -4,13 +4,14 @@ package irvine.oeis.a179;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000037;
 
 /**
  * A179125 a(n) = A000037(n)^3.
  * @author Georg Fischer
  */
-public class A179125 implements Sequence {
+public class A179125 extends Sequence1 {
 
   final Sequence mA000037 = new A000037();
   @Override

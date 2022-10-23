@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046659 Numbers whose sum of divisors and sum of cubes of divisors are relatively prime.
  * @author Sean A. Irvine
  */
-public class A046659 implements Sequence {
+public class A046659 extends Sequence1 {
 
   private long mN = 0;
 

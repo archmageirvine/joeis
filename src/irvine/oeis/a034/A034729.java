@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034729 a(n) = Sum_{ k, k|n } 2^(k-1).
  * @author Sean A. Irvine
  */
-public class A034729 implements Sequence {
+public class A034729 extends Sequence1 {
 
   private int mN = 0;
 

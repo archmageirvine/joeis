@@ -3,13 +3,14 @@ package irvine.oeis.a171;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008578;
 import irvine.oeis.a163.A163300;
 /**
  * A171576 a(n) = abs(n-th noncomposite number minus n-th even nonprime number).
  * @author Georg Fischer
  */
-public class A171576 implements Sequence {
+public class A171576 extends Sequence1 {
 
   private final Sequence mA008578 = new A008578();
   private final Sequence mA163300 = new A163300();

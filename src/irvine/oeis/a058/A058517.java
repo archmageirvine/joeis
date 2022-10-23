@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058517 Positive even numbers not of the form prime + 3^x.
  * @author Sean A. Irvine
  */
-public class A058517 implements Sequence {
+public class A058517 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

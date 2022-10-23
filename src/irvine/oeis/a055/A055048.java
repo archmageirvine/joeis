@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055048 Numbers of the form 9^i*(3*j+2).
  * @author Sean A. Irvine
  */
-public class A055048 implements Sequence {
+public class A055048 extends Sequence1 {
 
   private final TreeSet<Long> mA = new TreeSet<>();
   private long mN = 2;

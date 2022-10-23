@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007853 Number of maximal antichains in rooted plane trees on n nodes.
  * @author Sean A. Irvine
  */
-public class A007853 implements Sequence {
+public class A007853 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> X4 = RING.monomial(Q.FOUR, 1);

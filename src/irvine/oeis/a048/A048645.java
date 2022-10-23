@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048645 Integers with one or two 1-bits in their binary expansion.
  * @author Sean A. Irvine
  */
-public class A048645 implements Sequence {
+public class A048645 extends Sequence1 {
 
   private Z mA = Z.ONE; // one-bit cases
   private Z mB = Z.THREE; // two-bit cases

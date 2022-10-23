@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.math.LongUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046794 Geometric and harmonic means of A046795(n) and a(n) both integers.
  * @author Sean A. Irvine
  */
-public class A046794 implements Sequence {
+public class A046794 extends Sequence1 {
 
   private long mN = 19;
 

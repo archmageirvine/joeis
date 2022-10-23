@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007320 Number of steps needed for juggler sequence (A094683) started at n to reach 1.
  * @author Sean A. Irvine
  */
-public class A007320 implements Sequence {
+public class A007320 extends Sequence1 {
 
   private long mN = 0;
 

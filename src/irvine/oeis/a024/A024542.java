@@ -3,13 +3,13 @@ package irvine.oeis.a024;
 import irvine.math.IntegerUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024542 Lower bound on cumulative mean of distances between cards after n shuffles in A024222.
  * @author Sean A. Irvine
  */
-public class A024542 implements Sequence {
+public class A024542 extends Sequence1 {
 
   private int mN = 0;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A047908 a(n+1) = a(n) op n, where op is successively +, *, -.
  * @author Sean A. Irvine
  */
-public class A047908 implements Sequence {
+public class A047908 extends Sequence1 {
 
   private Z mA = null;
   private long mN = 0;

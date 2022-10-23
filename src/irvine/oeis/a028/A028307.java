@@ -1,7 +1,7 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.string.StringUtils;
 
@@ -9,7 +9,7 @@ import irvine.util.string.StringUtils;
  * A028307 Form a triangle with n numbers in top row; all other numbers are the sum of their parents. E.g.: 4 1 2 7; 5 3 9; 8 12; 20. The numbers must be positive and distinct and the final number is to be minimized. Sequence gives final number.
  * @author Sean A. Irvine
  */
-public class A028307 implements Sequence {
+public class A028307 extends Sequence1 {
 
   // Incrementally chooses elements for the top row.
   // Maintain last element of each subsequent row (sufficient to compute total or back up).

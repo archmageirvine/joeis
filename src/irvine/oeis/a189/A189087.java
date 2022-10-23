@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A189087 E.g.f.: sinh(x)/(1-sinh(x)-sinh(x)^2).
  * E.g.f.: sinh(x)/(1-sinh(x)-sinh(x)^2)
  * @author Georg Fischer
  */
-public class A189087 implements Sequence {
+public class A189087 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

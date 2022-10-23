@@ -1,13 +1,13 @@
 package irvine.oeis.a039;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039687 Primes of form 3*2^n+1.
  * @author Sean A. Irvine
  */
-public class A039687 implements Sequence {
+public class A039687 extends Sequence1 {
 
   private Z mM = Z.THREE;
 

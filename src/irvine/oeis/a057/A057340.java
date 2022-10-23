@@ -1,14 +1,14 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A057340 Smallest of the most frequently occurring numbers in 1-to-n multiplication cube.
  * @author Sean A. Irvine
  */
-public class A057340 implements Sequence {
+public class A057340 extends Sequence1 {
 
   private final LongDynamicLongArray mCounts = new LongDynamicLongArray();
   private long mMax = 0;

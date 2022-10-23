@@ -3,13 +3,14 @@ package irvine.oeis.a168;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a161.A161671;
 
 /**
  * A168563 a(n) = (n-th prime &gt; 3) minus (n-th composite number).
  * @author Georg Fischer
  */
-public class A168563 implements Sequence {
+public class A168563 extends Sequence1 {
 
   final Sequence mA161671 = new A161671();
   /** Construct the sequence. */

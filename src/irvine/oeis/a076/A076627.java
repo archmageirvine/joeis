@@ -3,13 +3,14 @@ package irvine.oeis.a076;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a049.A049820;
 /**
  * A076627 a(n) = tau(n)*(n-tau(n)), where tau(n) = number of divisors of n (A000005).
  * @author Georg Fischer
  */
-public class A076627 implements Sequence {
+public class A076627 extends Sequence1 {
 
   private final Sequence mA000005 = new A000005();
   private final Sequence mA049820 = new A049820();

@@ -3,13 +3,13 @@ package irvine.oeis.a194;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A194368 Numbers m such that Sum_{k=1..m} (&lt;1/2 + k*r&gt; - &lt;k*r&gt;) = 0, where r=sqrt(2) and &lt; &gt; denotes fractional part.
  * @author Georg Fischer
  */
-public class A194368 implements Sequence {
+public class A194368 extends Sequence1 {
 
   protected long mN;
   protected CR mR; // 1st parameter for fractional part

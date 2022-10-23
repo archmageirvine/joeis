@@ -2,13 +2,13 @@ package irvine.oeis.a026;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A026261 a(n) = j if n = [ j*sqrt(5) ], else a(n) = k if n = [ (k/4)*(5 + sqrt(5)) ].
  * @author Sean A. Irvine
  */
-public class A026261 implements Sequence {
+public class A026261 extends Sequence1 {
 
   private static final CR SQRT5 = CR.FIVE.sqrt();
   private long mJ = 1;

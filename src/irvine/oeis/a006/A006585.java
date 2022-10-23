@@ -3,13 +3,14 @@ package irvine.oeis.a006;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000058;
 
 /**
  * A006585 Egyptian fractions: number of solutions to 1 = 1/x_1 + ... + 1/x_n in positive integers x_1 &lt; ... &lt; x_n.
  * @author Sean A. Irvine
  */
-public class A006585 implements Sequence {
+public class A006585 extends Sequence1 {
 
   private int mN = 0;
   private long mSolutions = 0;

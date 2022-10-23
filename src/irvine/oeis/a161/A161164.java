@@ -3,6 +3,7 @@ package irvine.oeis.a161;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001097;
 import irvine.oeis.a007.A007510;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007510;
  * A161164 Absolute value of (the n-th twin prime minus the n-th non-twin prime).
  * @author Georg Fischer
  */
-public class A161164 implements Sequence {
+public class A161164 extends Sequence1 {
 
   final Sequence mA001097 = new A001097();
   final Sequence mA007510 = new A007510();

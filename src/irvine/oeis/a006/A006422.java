@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006422 Number of rooted toroidal maps with 2 faces and n vertices and without separating cycles or isthmuses.
  * @author Sean A. Irvine
  */
-public class A006422 implements Sequence {
+public class A006422 extends Sequence1 {
 
   // Using conjectured formula
 

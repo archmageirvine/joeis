@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048752 Mean integral divisors associated with A048751.
  * @author Sean A. Irvine
  */
-public class A048752 implements Sequence {
+public class A048752 extends Sequence1 {
 
   private long mN = 5;
 

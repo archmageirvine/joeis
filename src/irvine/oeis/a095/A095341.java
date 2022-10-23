@@ -3,13 +3,14 @@ package irvine.oeis.a095;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000081;
 
 /**
  * A095341 Total number of nodes in all planted trees on n nodes.
  * @author Georg Fischer
  */
-public class A095341 implements Sequence {
+public class A095341 extends Sequence1 {
 
   final Sequence mA000081 = new A000081();
   protected long mN;

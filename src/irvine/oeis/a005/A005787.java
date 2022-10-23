@@ -5,13 +5,13 @@ import java.util.HashSet;
 import java.util.LinkedList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005787 Reachable configurations on n circles.
  * @author Sean A. Irvine
  */
-public class A005787 implements Sequence {
+public class A005787 extends Sequence1 {
 
   private final HashSet<BitSet> mSeen = new HashSet<>();
   private final LinkedList<BitSet> mQ = new LinkedList<>();

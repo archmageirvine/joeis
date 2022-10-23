@@ -1,13 +1,13 @@
 package irvine.oeis.a092;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A092831 Indices of prime Motzkin numbers.
  * @author Sean A. Irvine
  */
-public class A092831 implements Sequence {
+public class A092831 extends Sequence1 {
 
   private long mN = 1;
   private Z mA = Z.ONE;

@@ -3,13 +3,14 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a024.A024893;
 
 /**
  * A088879 Numbers n such that 3n + 5 is a prime.
  * @author Georg Fischer
  */
-public class A088879 implements Sequence {
+public class A088879 extends Sequence1 {
 
   final Sequence mA024893 = new A024893();
   @Override

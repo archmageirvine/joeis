@@ -1,14 +1,14 @@
 package irvine.oeis.a009;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.UnimplementedException;
 
 /**
  * A009571 Least m such that if a/b &lt; c/d are Farey fractions of order n then there exists k such that a/b &lt; k/m &lt; c/d, k/m reduced.
  * @author Sean A. Irvine
  */
-public class A009571 implements Sequence {
+public class A009571 extends Sequence1 {
 
   //private long mN = 0;
 

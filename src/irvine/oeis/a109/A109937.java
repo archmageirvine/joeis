@@ -3,13 +3,14 @@ package irvine.oeis.a109;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038804;
 
 /**
  * A109937 Number of consecutive composite numbers in successive consecutive number sets in A109936; (smallest (n+1)-digit prime) - (largest n-digit prime) - 1.
  * @author Georg Fischer
  */
-public class A109937 implements Sequence {
+public class A109937 extends Sequence1 {
 
   final Sequence mA038804 = new A038804();
   @Override

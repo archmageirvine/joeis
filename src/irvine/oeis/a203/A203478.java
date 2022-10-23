@@ -3,13 +3,14 @@ package irvine.oeis.a203;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a028.A028362;
 
 /**
  * A203478 a(n) = v(n+1)/v(n), where v=A203477.
  * @author Georg Fischer
  */
-public class A203478 implements Sequence {
+public class A203478 extends Sequence1 {
 
   final Sequence mA028362 = new A028362();
   protected long mN;

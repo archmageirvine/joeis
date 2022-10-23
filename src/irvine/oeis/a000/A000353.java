@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000353 Primes == 7, 19, 23 (mod 40) such that (p-1)/2 is also prime.
  * @author Sean A. Irvine
  */
-public class A000353 implements Sequence {
+public class A000353 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.FIVE;

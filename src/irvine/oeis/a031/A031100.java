@@ -3,13 +3,13 @@ package irvine.oeis.a031;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A031100 Write 2n-1 in base 9 and juxtapose.
  * @author Georg Fischer
  */
-public class A031100 implements Sequence {
+public class A031100 extends Sequence1 {
  
   private String mS = "";
   private int mPos = 0;

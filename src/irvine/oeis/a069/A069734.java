@@ -3,13 +3,14 @@ package irvine.oeis.a069;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 
 /**
  * A069734 Number of pairs (p,q), 0&lt;=p&lt;=q, such that p+q divides n.
  * @author Georg Fischer
  */
-public class A069734 implements Sequence {
+public class A069734 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA069735 = new A069735();

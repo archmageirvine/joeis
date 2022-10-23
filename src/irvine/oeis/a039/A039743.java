@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039743 Number k such that gcd(phi(k), k-1) = number of distinct prime factors of k.
  * @author Sean A. Irvine
  */
-public class A039743 implements Sequence {
+public class A039743 extends Sequence1 {
 
   private long mN = 1;
 

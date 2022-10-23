@@ -5,13 +5,13 @@ import java.util.TreeSet;
 import irvine.factor.factor.Jaguar;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036840 a(n) is the average of the repeating terms of {T(n,k)} rounded to the nearest integer (rounding up if there's a choice), if {T(n,k)} is eventually periodic; = 0 otherwise. Here T(n,k) is the "phi/sigma tug-of-war sequence with seed n" defined by T(n,1) = phi(n), T(n,2) = sigma(phi(n)), T(n,3) = phi(sigma(phi(n))), ..., T(n,k) = phi(T(n,k-1)) if k is odd and = sigma(T(n,k-1)) if k is even.
  * @author Sean A. Irvine
  */
-public class A036840 implements Sequence {
+public class A036840 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

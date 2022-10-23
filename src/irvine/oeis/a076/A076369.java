@@ -3,6 +3,7 @@ package irvine.oeis.a076;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000027;
 import irvine.oeis.a008.A008683;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a008.A008683;
  * A076369 n + mu(n), where mu is the Moebius-function (A008683).
  * @author Georg Fischer
  */
-public class A076369 implements Sequence {
+public class A076369 extends Sequence1 {
 
   final Sequence mA000027 = new A000027();
   final Sequence mA008683 = new A008683();

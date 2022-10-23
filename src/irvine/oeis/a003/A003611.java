@@ -8,13 +8,13 @@ import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003611 Symmetries in planted 3-trees on n+1 vertices.
  * @author Sean A. Irvine
  */
-public class A003611 implements Sequence {
+public class A003611 extends Sequence1 {
 
   // Note formula for S_n in McKeon articles is wrong, should be
   // S_n = Sum_{k=0..n} T(k, n) * 2^k

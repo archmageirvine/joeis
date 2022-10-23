@@ -4,13 +4,13 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002651 Dates at 16-day intervals starting at the beginning of a leap year.
  * @author Sean A. Irvine
  */
-public class A002651 implements Sequence {
+public class A002651 extends Sequence1 {
 
   // WARNING This sequence is poorly defined for what happens after 400 years.
 

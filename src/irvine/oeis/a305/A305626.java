@@ -3,6 +3,7 @@ package irvine.oeis.a305;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000920;
 import irvine.oeis.a056.A056457;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a056.A056457;
  * A305626 Number of chiral pairs of rows of n colors with exactly 6 different colors.
  * @author Georg Fischer
  */
-public class A305626 implements Sequence {
+public class A305626 extends Sequence1 {
 
   final Sequence mA000920 = new A000920();
   final Sequence mA056457 = new A056457();

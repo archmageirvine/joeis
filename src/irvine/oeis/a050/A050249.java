@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050249 Weakly prime numbers (changing any one decimal digit always produces a composite number). Also called digitally delicate primes.
  * @author Sean A. Irvine
  */
-public class A050249 implements Sequence {
+public class A050249 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 294000;

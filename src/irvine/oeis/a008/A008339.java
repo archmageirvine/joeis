@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008339 a(1)=1; for n &gt;= 1, a(n+1) = lcm(a(n),n) / gcd(a(n),n).
  * @author Sean A. Irvine
  */
-public class A008339 implements Sequence {
+public class A008339 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private Z mN = Z.NEG_ONE;

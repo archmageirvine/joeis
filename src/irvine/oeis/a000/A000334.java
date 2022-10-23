@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.partitions.MultidimensionalIntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000334 Number of 4-dimensional partitions of n.
  * @author Sean A. Irvine
  */
-public class A000334 implements Sequence {
+public class A000334 extends Sequence1 {
 
   private int mN = 0;
 

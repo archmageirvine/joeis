@@ -1,14 +1,14 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006314 Numbers n such that n^8 + 1 is prime.
  * @author Sean A. Irvine
  * @author Georg Fischer
  */
-public class A006314 implements Sequence {
+public class A006314 extends Sequence1 {
 
   private Z mN;
   private final int mExpon;

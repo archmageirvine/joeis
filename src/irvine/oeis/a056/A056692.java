@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056692 Number of divisors k of n with gcd(k-1, n) = 1.
  * @author Sean A. Irvine
  */
-public class A056692 implements Sequence {
+public class A056692 extends Sequence1 {
 
   private int mN = 0;
 

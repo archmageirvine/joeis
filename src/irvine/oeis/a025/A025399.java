@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025399 Numbers that are the sum of 3 distinct positive cubes in exactly 1 way.
  * @author Sean A. Irvine
  */
-public class A025399 implements Sequence {
+public class A025399 extends Sequence1 {
 
   private long mN = 1;
 

@@ -4,13 +4,13 @@ package irvine.oeis.a190;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A190245 a(n) = [nu+nv]-[nu]-[nv], where u=sqrt(2), v=2u, and []=floor.
  * @author Georg Fischer
  */
-public class A190245 implements Sequence {
+public class A190245 extends Sequence1 {
   private long mN = 0;
   private static final CR U = CR.SQRT2;
   private static final CR V = CR.TWO.multiply(U);

@@ -2,13 +2,13 @@ package irvine.oeis.a173;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A173490 Even abundant numbers (even numbers n whose sum of divisors exceeds 2n).
  * @author Sean A. Irvine
  */
-public class A173490 implements Sequence {
+public class A173490 extends Sequence1 {
 
   private Z mN = Z.TEN;
 

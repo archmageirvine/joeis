@@ -2,6 +2,7 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -9,7 +10,7 @@ import irvine.oeis.a000.A000040;
  * Similar to A082246.
  * @author Georg Fischer
  */
-public class A133524 implements Sequence {
+public class A133524 extends Sequence1 {
 
   private int mExpon;
   private Z mSum;

@@ -1,14 +1,14 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A018884 Squares using at most two distinct digits, not ending in 0.
  * @author Sean A. Irvine
  */
-public class A018884 implements Sequence {
+public class A018884 extends Sequence1 {
 
   // Sequentially generate binary numbers of a given length, holding the initial
   // digit to be 0.  Replace (0,1) with (a,b).  Test if result is a square.

@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034770 Dirichlet convolution of Bell numbers with themselves.
  * @author Sean A. Irvine
  */
-public class A034770 implements Sequence {
+public class A034770 extends Sequence1 {
 
   private int mN = 0;
 

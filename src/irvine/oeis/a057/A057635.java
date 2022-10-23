@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057635 a(n) is the largest m such that phi(m) = n, where phi is Euler's totient function = A000010, or a(n) = 0 if no such m exists.
  * @author Sean A. Irvine
  */
-public class A057635 implements Sequence {
+public class A057635 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

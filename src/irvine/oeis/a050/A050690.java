@@ -3,13 +3,13 @@ package irvine.oeis.a050;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050690 Sum of digits of zero-absent composite a(n) equals number of prime factors.
  * @author Sean A. Irvine
  */
-public class A050690 implements Sequence {
+public class A050690 extends Sequence1 {
 
   private long mN = 11;
 

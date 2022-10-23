@@ -3,13 +3,14 @@ package irvine.oeis.a136;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a025.A025584;
 
 /**
  * A136799 Last term in a sequence of at least 3 consecutive composite integers.
  * @author Georg Fischer
  */
-public class A136799 implements Sequence {
+public class A136799 extends Sequence1 {
 
   final Sequence mA025584 = new A025584();
   /** Construct the sequence. */

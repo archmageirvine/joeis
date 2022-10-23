@@ -4,13 +4,13 @@ package irvine.oeis.a110;
 import irvine.math.LongUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A110376 a(n) = Sum_{r &lt; n, gcd(r,n)=1} n!/r.
  * @author Georg Fischer
  */
-public class A110376 implements Sequence {
+public class A110376 extends Sequence1 {
 
   private int mN = 0;
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;

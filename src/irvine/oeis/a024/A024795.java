@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024795 Numbers that are the sum of 3 nonzero squares, including repetitions.
  * @author Sean A. Irvine
  */
-public class A024795 implements Sequence {
+public class A024795 extends Sequence1 {
 
   private long mN = 2;
   private long mC = 0;

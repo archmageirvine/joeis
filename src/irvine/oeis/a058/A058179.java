@@ -1,14 +1,14 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
  * A058179 Numbers whose English names include all five vowels at least once.
  * @author Sean A. Irvine
  */
-public class A058179 implements Sequence {
+public class A058179 extends Sequence1 {
 
   private int mN = 104;
 

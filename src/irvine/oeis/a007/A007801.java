@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007801 Expansion of f(f(x)), where f = x + x^2 + x^4 + x^8 + x^16 + ...
  * @author Sean A. Irvine
  */
-public class A007801 implements Sequence {
+public class A007801 extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private Polynomial<Z> mP = RING.zero();

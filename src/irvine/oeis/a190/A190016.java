@@ -3,13 +3,13 @@ package irvine.oeis.a190;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A190016 Numbers 1 through 10000 sorted lexicographically in decimal representation.
  * @author Georg Fischer
  */
-public class A190016 implements Sequence {
+public class A190016 extends Sequence1 {
 
   private long mN;
   private int mMode;

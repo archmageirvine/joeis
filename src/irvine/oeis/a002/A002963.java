@@ -1,14 +1,14 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.Roman;
 
 /**
  * A002963 Number of chisel strokes required for Roman numerals for n.
  * @author Sean A. Irvine
  */
-public class A002963 implements Sequence {
+public class A002963 extends Sequence1 {
 
   private int mN = 0;
 

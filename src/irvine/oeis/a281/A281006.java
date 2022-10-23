@@ -4,6 +4,7 @@ package irvine.oeis.a281;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a052.A052928;
 
@@ -11,7 +12,7 @@ import irvine.oeis.a052.A052928;
  * A281006 a(n) = A000203(n) - A052928(n-1).
  * @author Georg Fischer
  */
-public class A281006 implements Sequence {
+public class A281006 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA052928 = new A052928();

@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014752 Primes of the form x^2 + 27y^2.
  * @author Sean A. Irvine
  */
-public class A014752 implements Sequence {
+public class A014752 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 29;

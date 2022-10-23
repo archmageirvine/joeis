@@ -1,13 +1,13 @@
 package irvine.oeis.a012;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A012245 Characteristic function of factorial numbers; also decimal expansion of Liouville's number or Liouville's constant.
  * @author Sean A. Irvine
  */
-public class A012245 implements Sequence {
+public class A012245 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 1;

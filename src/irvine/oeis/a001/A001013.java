@@ -5,13 +5,13 @@ import java.util.Collections;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001013 Jordan-Polya numbers: products of factorial numbers A000142.
  * @author Sean A. Irvine
  */
-public class A001013 implements Sequence {
+public class A001013 extends Sequence1 {
 
   private static final int LIMIT = 1 << 7;
 

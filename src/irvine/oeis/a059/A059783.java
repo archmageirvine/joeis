@@ -1,14 +1,14 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A059783 Number of paths (without loops) in graph of n-dimensional hypercube starting at point (0,0,0,...,0) and ending at (1,1,1,...,1).
  * @author Sean A. Irvine
  */
-public class A059783 implements Sequence {
+public class A059783 extends Sequence1 {
 
   private int mN = 0;
   private Z mCount = Z.ZERO;

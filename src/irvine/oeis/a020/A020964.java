@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020964 Sum of Floor[ 3*(1+sqrt(2))^(n-k) ] for k from 1 to infinity.
  * @author Sean A. Irvine
  */
-public class A020964 implements Sequence {
+public class A020964 extends Sequence1 {
 
   private static final CR N = CR.SQRT2.add(CR.ONE);
   private long mN = 0;

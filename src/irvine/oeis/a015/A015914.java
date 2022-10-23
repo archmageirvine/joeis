@@ -2,13 +2,13 @@ package irvine.oeis.a015;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015914 Numbers k such that sigma(k) + 6 = sigma(k+6).
  * @author Sean A. Irvine
  */
-public class A015914 implements Sequence {
+public class A015914 extends Sequence1 {
 
   private Z mSigmaA = Jaguar.factor(1).sigma();
   private Z mSigmaB = Jaguar.factor(2).sigma();

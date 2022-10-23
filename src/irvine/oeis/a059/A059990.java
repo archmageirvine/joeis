@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059990 Number of points of period n under the dual of the map x-&gt;2x on Z[1/6].
  * @author Sean A. Irvine
  */
-public class A059990 implements Sequence {
+public class A059990 extends Sequence1 {
 
   private Z mA = Z.ONE;
 

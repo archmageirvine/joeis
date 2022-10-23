@@ -3,12 +3,13 @@ package irvine.oeis.a137;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a065.A065608;
 /**
  * A137319 Start with the set of natural numbers. Add 1 to every 2nd term, 2 to every 3rd term, 3 to every 4th term, etc.
  * @author Georg Fischer
  */
-public class A137319 implements Sequence {
+public class A137319 extends Sequence1 {
 
   private final Sequence mA065608 = new A065608();
   protected long mN;

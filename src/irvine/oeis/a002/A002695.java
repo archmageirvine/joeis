@@ -1,14 +1,14 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 
 /**
  * A002695 P_n'(3), where P_n is n-th Legendre polynomial.
  * @author Sean A. Irvine
  */
-public class A002695 implements Sequence {
+public class A002695 extends Sequence1 {
 
   private long mN = 2;
   private Z mA = null;

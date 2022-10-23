@@ -3,13 +3,14 @@ package irvine.oeis.a224;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005101;
 
 /**
  * A224907 Numbers n such that the sum of reciprocals of even divisors of n &gt; 1.
  * @author Georg Fischer
  */
-public class A224907 implements Sequence {
+public class A224907 extends Sequence1 {
 
   final Sequence mA005101 = new A005101();
   @Override

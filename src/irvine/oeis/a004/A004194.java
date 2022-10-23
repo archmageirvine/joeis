@@ -2,13 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004194 Number of partitions of 1/n into 3 reciprocals of positive integers.
  * @author Sean A. Irvine
  */
-public class A004194 implements Sequence {
+public class A004194 extends Sequence1 {
 
   // After Charles R. Greathouse IV
 

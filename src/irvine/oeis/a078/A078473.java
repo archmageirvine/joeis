@@ -3,13 +3,13 @@ package irvine.oeis.a078;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A078473 Expansion of zeta function of icosian ring.
  * @author Sean A. Irvine
  */
-public class A078473 implements Sequence {
+public class A078473 extends Sequence1 {
 
   // After Michel Marcus
 

@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033948 Numbers that have a primitive root (the multiplicative group modulo n is cyclic).
  * @author Sean A. Irvine
  */
-public class A033948 implements Sequence {
+public class A033948 extends Sequence1 {
 
   private final TreeMap<Z, Z> mA = new TreeMap<>();
   private final Fast mPrime = new Fast();

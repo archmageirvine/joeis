@@ -3,16 +3,17 @@ package irvine.oeis.a113;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
  * A113122 Sum of the first n Fibonacci numbers, in ascending order, as bases, with the same, in descending order, as exponents.
  * @author Georg Fischer
  */
-public class A113122 implements Sequence {
+public class A113122 extends Sequence1 {
 
   private int mN = 0;
-  private MemorySequence mSeq;
+  private final MemorySequence mSeq;
 
   /** Construct the sequence. */
   public A113122() {
@@ -26,8 +27,6 @@ public class A113122 implements Sequence {
   public A113122(final Sequence seq) {
     mSeq = MemorySequence.cachedSequence(seq);
   }
-
-  ;
 
   @Override
   public Z next() {

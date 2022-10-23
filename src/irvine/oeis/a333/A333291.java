@@ -3,13 +3,13 @@ package irvine.oeis.a333;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A333291 a(n) = Sum_{i=1..n, gcd(i,n)=1} i*phi(i) where phi is Euler's totient function A000010.
  * @author Georg Fischer
  */
-public class A333291 implements Sequence {
+public class A333291 extends Sequence1 {
 
   private int mN = 0;
 

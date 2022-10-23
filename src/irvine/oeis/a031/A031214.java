@@ -3,13 +3,14 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 import irvine.oeis.DeadSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.SequenceFactory;
 
 /**
  * A031214 Initial term of sequence An.
  * @author Sean A. Irvine
  */
-public class A031214 implements Sequence {
+public class A031214 extends Sequence1 {
 
   // This is an appalling sequence as it requires values for dead sequences
 

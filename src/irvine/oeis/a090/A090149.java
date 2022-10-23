@@ -3,14 +3,14 @@ package irvine.oeis.a090;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A090149 Primes of the form identical digits preceded by a 1.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class A090149 implements Sequence {
+public class A090149 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
 

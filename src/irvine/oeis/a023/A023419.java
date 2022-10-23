@@ -3,14 +3,14 @@ package irvine.oeis.a023;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A023419 a(n) = c([ n/2 ]) + c([ n/3 ]) + ... + c([ n/n ]) for n &gt;=3, where a(1) = 1, a(2) = 2 and c(n) = n-th number not in sequence a( ).
  * @author Sean A. Irvine
  */
-public class A023419 implements Sequence {
+public class A023419 extends Sequence1 {
 
   private final TreeSet<Long> mA = new TreeSet<>();
   private final LongDynamicLongArray mC = new LongDynamicLongArray();

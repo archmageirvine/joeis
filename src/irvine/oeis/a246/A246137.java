@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A246137 Number of maximal classes determined by elementary Abelian p-groups.
  * @author Sean A. Irvine
  */
-public class A246137 implements Sequence {
+public class A246137 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

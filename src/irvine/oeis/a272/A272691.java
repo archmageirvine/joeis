@@ -3,13 +3,14 @@ package irvine.oeis.a272;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033834;
 
 /**
  * A272691 Number of factorizations of the highly factorable numbers A033833.
  * @author Georg Fischer
  */
-public class A272691 implements Sequence {
+public class A272691 extends Sequence1 {
 
   final Sequence mA033834 = new A033834();
   @Override

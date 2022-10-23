@@ -3,13 +3,14 @@ package irvine.oeis.a110;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002383;
 
 /**
  * A110284 Squares of the form 4p - 3, where p is a prime.
  * @author Georg Fischer
  */
-public class A110284 implements Sequence {
+public class A110284 extends Sequence1 {
 
   final Sequence mA002383 = new A002383();
   @Override

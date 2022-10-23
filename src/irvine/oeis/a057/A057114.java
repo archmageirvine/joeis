@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057114 Permutation of N induced by the order-preserving permutation of the rational numbers (x -&gt; x+1); positions in Stern-Brocot tree.
  * @author Sean A. Irvine
  */
-public class A057114 implements Sequence {
+public class A057114 extends Sequence1 {
 
   // Full (-infinity,infinity) Stern-Brocot tree
   private final LinkedList<Q> mBreadthFirst = new LinkedList<>();

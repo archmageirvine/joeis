@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058359 Absolute value of difference between the even and odd first differences of the divisors of n.
  * @author Sean A. Irvine
  */
-public class A058359 implements Sequence {
+public class A058359 extends Sequence1 {
 
   private long mN = 0;
 

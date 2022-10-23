@@ -3,6 +3,7 @@ package irvine.oeis.a296;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a007.A007429;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007429;
  * A296075 Sum of deficiencies of divisors of n.
  * @author Georg Fischer
  */
-public class A296075 implements Sequence {
+public class A296075 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA007429 = new A007429();

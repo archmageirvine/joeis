@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048786 Triangle of coefficients of certain exponential convolution polynomials.
  * @author Sean A. Irvine
  */
-public class A048786 implements Sequence {
+public class A048786 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

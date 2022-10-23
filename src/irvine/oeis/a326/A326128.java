@@ -3,13 +3,14 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007913;
 
 /**
  * A326128 a(n) = n - A007913(n), where A007913 gives the squarefree part of n.
  * @author Georg Fischer
  */
-public class A326128 implements Sequence {
+public class A326128 extends Sequence1 {
 
   final Sequence mA007913 = new A007913();
   protected long mN;

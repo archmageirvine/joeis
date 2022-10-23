@@ -3,13 +3,13 @@ package irvine.oeis.a098;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A098594 Numbers n such that n!-1 and n!+1 are both semiprime.
  * @author Sean A. Irvine
  */
-public class A098594 implements Sequence {
+public class A098594 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN;

@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055388 Number of riffle shuffles of 2n cards required to return the deck to initial state.
  * @author Sean A. Irvine
  */
-public class A055388 implements Sequence {
+public class A055388 extends Sequence1 {
 
   private int mN = -1;
 

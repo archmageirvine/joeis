@@ -6,13 +6,13 @@ import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A083006 Numbers k such that Sum_{j=0..k-1} Bernoulli(j)*binomial(k,j)^2 is an integer.
  * @author Sean A. Irvine
  */
-public class A083006 implements Sequence {
+public class A083006 extends Sequence1 {
 
   private int mN = -1;
   private final BernoulliSequence mBS = new BernoulliSequence(0);

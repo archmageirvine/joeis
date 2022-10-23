@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007932 Numbers that contain only 1's, 2's and 3's.
  * @author Sean A. Irvine
  */
-public class A007932 implements Sequence {
+public class A007932 extends Sequence1 {
 
   private long mN = 2;
   private long mLimit = 6;

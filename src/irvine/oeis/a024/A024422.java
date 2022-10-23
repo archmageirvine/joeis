@@ -4,13 +4,13 @@ import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024422 a(n) = [ (sum of S(n,m)/C(n-1,m-1) ] for m = 1,2,...,n; S(n,m) are Stirling numbers of second kind.
  * @author Sean A. Irvine
  */
-public class A024422 implements Sequence {
+public class A024422 extends Sequence1 {
 
   private int mN = 0;
 

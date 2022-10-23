@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.math.LongUtils;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046144 Number of primitive roots modulo n.
  * @author Sean A. Irvine
  */
-public class A046144 implements Sequence {
+public class A046144 extends Sequence1 {
 
   private long mN = 0;
 

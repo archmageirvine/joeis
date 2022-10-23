@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054265 Sum of composite numbers between successive primes.
  * @author Sean A. Irvine
  */
-public class A054265 implements Sequence {
+public class A054265 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 2;

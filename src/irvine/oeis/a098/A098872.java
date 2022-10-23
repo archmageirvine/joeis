@@ -1,13 +1,13 @@
 package irvine.oeis.a098;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A098872 Least k such that 2*((6*n)^k) + 1 is prime.
  * @author Georg Fischer
  */
-public class A098872 implements Sequence {
+public class A098872 extends Sequence1 {
 
   private int mN;
   private int mMult;

@@ -3,6 +3,7 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001221;
 import irvine.oeis.a034.A034444;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a034.A034444;
  * A062513 Product of unitary divisors of n is divided by n^(number of distinct prime factors).
  * @author Georg Fischer
  */
-public class A062513 implements Sequence {
+public class A062513 extends Sequence1 {
 
   final Sequence mA001221 = new A001221();
   final Sequence mA034444 = new A034444();

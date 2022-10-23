@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048155 a(n)=Sum{T(n,k): k=1,2,...,n}, array T as in A048154.
  * @author Sean A. Irvine
  */
-public class A048155 implements Sequence {
+public class A048155 extends Sequence1 {
 
   private long mN = 0;
 

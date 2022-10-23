@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014766 Numbers k such that the 3k shuffle group does not accomplish a perfect shuffle.
  * @author Sean A. Irvine
  */
-public class A014766 implements Sequence {
+public class A014766 extends Sequence1 {
 
   // Conjecture
 

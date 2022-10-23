@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038500 Highest power of 3 dividing n.
  * @author Georg Fischer
  */
-public class A038500 implements Sequence {
+public class A038500 extends Sequence1 {
 
   protected long mN;
   protected long mBase;

@@ -3,13 +3,13 @@ package irvine.oeis.a328;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A328817 Numbers k such that at least 7 of k, k+1, ..., k+9 are divisible by their least prime factor squared.
  * @author Sean A. Irvine
  */
-public class A328817 implements Sequence {
+public class A328817 extends Sequence1 {
 
   private long mN = 1;
 

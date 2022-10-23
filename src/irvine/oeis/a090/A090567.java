@@ -3,13 +3,14 @@ package irvine.oeis.a090;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a082.A082210;
 
 /**
  * A090567 Squares arising in A082209.
  * @author Georg Fischer
  */
-public class A090567 implements Sequence {
+public class A090567 extends Sequence1 {
 
   final Sequence mA082210 = new A082210();
   /** Construct the sequence. */

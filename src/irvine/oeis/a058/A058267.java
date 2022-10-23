@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 import irvine.factor.factor.Jaguar;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058267 An approximation to sigma_{1/2}(n): round( Sum_{ d divides n } sqrt(d) ).
  * @author Sean A. Irvine
  */
-public class A058267 implements Sequence {
+public class A058267 extends Sequence1 {
 
   private long mN = 0;
 

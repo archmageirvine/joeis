@@ -1,14 +1,14 @@
 package irvine.oeis.a165;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A165250 Members of A165249 that are not palindromes when written in binary.
  * @author Sean A. Irvine
  */
-public class A165250 implements Sequence {
+public class A165250 extends Sequence1 {
 
   private long mN = 0;
 

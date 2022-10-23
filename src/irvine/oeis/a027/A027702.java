@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027702 Numbers k such that the k-th prime has an even number of 1's in binary expansion and the (k+1)st prime also has an even number of 1's.
  * @author Sean A. Irvine
  */
-public class A027702 implements Sequence {
+public class A027702 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

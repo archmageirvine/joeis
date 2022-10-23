@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import java.util.LinkedList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059521 a(1) = 5; thereafter write the cubes of each element in order.
  * @author Sean A. Irvine
  */
-public class A059521 implements Sequence {
+public class A059521 extends Sequence1 {
 
   private final LinkedList<Integer> mA = new LinkedList<>();
   {

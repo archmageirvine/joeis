@@ -3,13 +3,14 @@ package irvine.oeis.a090;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a066.A066049;
 
 /**
  * A090697 Numbers n such that n^2/2 - 1 is a prime.
  * @author Georg Fischer
  */
-public class A090697 implements Sequence {
+public class A090697 extends Sequence1 {
 
   final Sequence mA066049 = new A066049();
   @Override

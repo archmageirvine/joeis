@@ -3,6 +3,7 @@ package irvine.oeis.a100;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008966;
 import irvine.oeis.a013.A013928;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a013.A013928;
  * A100112 If n is the k-th squarefree number then a(n) = k, otherwise a(n) = 0.
  * @author Georg Fischer
  */
-public class A100112 implements Sequence {
+public class A100112 extends Sequence1 {
 
   final Sequence mA008966 = new A008966();
   final Sequence mA013928 = new A013928();

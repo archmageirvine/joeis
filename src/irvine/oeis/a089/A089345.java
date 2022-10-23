@@ -3,14 +3,14 @@ package irvine.oeis.a089;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A089345 Primes of the form identical even digits followed by a 1.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class A089345 implements Sequence {
+public class A089345 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
 

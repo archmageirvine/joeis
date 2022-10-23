@@ -1,14 +1,14 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A045777 a(1)=1, a(2)=2; thereafter successive products of pairs of digits make further digits.
  * @author Sean A. Irvine
  */
-public class A045777 implements Sequence {
+public class A045777 extends Sequence1 {
 
   private final LongDynamicByteArray mA = new LongDynamicByteArray();
   {

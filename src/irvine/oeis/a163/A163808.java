@@ -1,13 +1,13 @@
 package irvine.oeis.a163;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A163808 Write n in binary. Place a 0 right of every 1 without a 0 right of it. a(n) = the decimal value of the result.
  * @author Sean A. Irvine
  */
-public class A163808 implements Sequence {
+public class A163808 extends Sequence1 {
 
   private long mN = 0;
 

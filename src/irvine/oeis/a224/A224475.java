@@ -3,11 +3,12 @@ package irvine.oeis.a224;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 /**
  * A224475 (2*5^(2^n) + (10^n)/2 - 1) mod 10^n: a sequence of trimorphic numbers ending (for n &gt; 1) in 9.
  * @author Georg Fischer
  */
-public class A224475 implements Sequence {
+public class A224475 extends Sequence1 {
 
   private final Sequence mA224473 = new A224473();
   protected long mN;

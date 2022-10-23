@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054571 a(n) = phi(n - phi(n)), a(1) = 0.
  * @author Sean A. Irvine
  */
-public class A054571 implements Sequence {
+public class A054571 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

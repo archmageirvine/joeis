@@ -1,13 +1,13 @@
 package irvine.oeis.a307;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A307913 Numbers without the decimal digits 3, 6 and 9.
  * @author Sean A. Irvine
  */
-public class A307913 implements Sequence {
+public class A307913 extends Sequence1 {
 
   private long mN = -1;
 

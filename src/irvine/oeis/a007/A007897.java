@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007897 a(n) is multiplicative with a(2) = 1; a(4) = 2; a(2^i) = 2^(i-2)+2 if i&gt;2; a(p^i) = 1+(p-1)*p^(i-1)/2 if prime p&gt;2 and i&gt;0.
  * @author Sean A. Irvine
  */
-public class A007897 implements Sequence {
+public class A007897 extends Sequence1 {
 
   private long mN = 0;
 

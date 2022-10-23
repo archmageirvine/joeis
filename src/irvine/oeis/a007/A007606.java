@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007606 Take 1, skip 2, take 3, etc.
  * @author Sean A. Irvine
  */
-public class A007606 implements Sequence {
+public class A007606 extends Sequence1 {
 
   private long mN = 0;
   private long mS = 1;

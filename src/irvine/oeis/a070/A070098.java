@@ -3,13 +3,14 @@ package irvine.oeis.a070;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004526;
 import irvine.oeis.a183.A183138;
 /**
  * A070098 Number of integer triangles with perimeter n which are acute and isosceles.
  * @author Georg Fischer
  */
-public class A070098 implements Sequence {
+public class A070098 extends Sequence1 {
 
   private final Sequence mA004526 = new A004526();
   private final Sequence mA183138 = new A183138();

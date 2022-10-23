@@ -5,12 +5,13 @@ import java.util.TreeSet;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057950 Numbers primitive with respect to having more than one factorization into S-primes. See related sequences for definition.
  * @author Sean A. Irvine
  */
-public class A057950 implements Sequence {
+public class A057950 extends Sequence1 {
 
   private final Sequence mS = new A057948();
   private final TreeSet<Long> mSPrimes = new TreeSet<>();

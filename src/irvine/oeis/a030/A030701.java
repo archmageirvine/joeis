@@ -2,13 +2,13 @@ package irvine.oeis.a030;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030701 Decimal expansion of 4^n contains no zeros (probably finite).
  * @author Sean A. Irvine
  */
-public class A030701 implements Sequence {
+public class A030701 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private long mN = -1;

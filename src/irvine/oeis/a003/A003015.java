@@ -4,13 +4,13 @@ import java.util.HashMap;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003015 Numbers that occur 5 or more times in Pascal's triangle.
  * @author Sean A. Irvine
  */
-public class A003015 implements Sequence {
+public class A003015 extends Sequence1 {
 
   // First implementation finds only "Fibonacci" solutions, not every solution
 

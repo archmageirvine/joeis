@@ -3,13 +3,14 @@ package irvine.oeis.a224;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a016.A016090;
 
 /**
  * A224474 (2*16^(5^n) - 1) mod 10^n: a sequence of trimorphic numbers ending in 1.
  * @author Georg Fischer
  */
-public class A224474 implements Sequence {
+public class A224474 extends Sequence1 {
 
   final Sequence mA016090 = new A016090();
   protected long mN;

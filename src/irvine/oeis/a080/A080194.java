@@ -3,13 +3,14 @@ package irvine.oeis.a080;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002473;
 
 /**
  * A080194 7-smooth numbers which are not 5-smooth.
  * @author Georg Fischer
  */
-public class A080194 implements Sequence {
+public class A080194 extends Sequence1 {
 
   final Sequence mA002473 = new A002473();
   @Override

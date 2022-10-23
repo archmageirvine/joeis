@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032378 Noncubes such that n is divisible by floor(n^(1/3)).
  * @author Sean A. Irvine
  */
-public class A032378 implements Sequence {
+public class A032378 extends Sequence1 {
 
   private Z mN = Z.ONE;
 

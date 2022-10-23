@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036759 Number of mirror-symmetrical edge-rooted tree-like octagonal systems.
  * @author Sean A. Irvine
  */
-public class A036759 implements Sequence {
+public class A036759 extends Sequence1 {
 
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> C1 = Polynomial.create(0, -2, 1);

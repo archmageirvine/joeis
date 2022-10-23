@@ -3,13 +3,14 @@ package irvine.oeis.a134;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007510;
 
 /**
  * A134797 Odd isolated primes.
  * @author Georg Fischer
  */
-public class A134797 implements Sequence {
+public class A134797 extends Sequence1 {
 
   final Sequence mA007510 = new A007510();
   /** Construct the sequence. */

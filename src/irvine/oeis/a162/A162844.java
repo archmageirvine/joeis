@@ -1,14 +1,14 @@
 package irvine.oeis.a162;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A162844 Let b(n) be the n-th positive integer that is a palindrome in base 2. Then a(n) = A162843(n)/b(n).
  * @author Sean A. Irvine
  */
-public class A162844 implements Sequence {
+public class A162844 extends Sequence1 {
 
   private long mN = 0;
 

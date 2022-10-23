@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006345 Linus sequence: a(n) "breaks the pattern" by avoiding the longest doubled suffix.
  * @author Sean A. Irvine
  */
-public class A006345 implements Sequence {
+public class A006345 extends Sequence1 {
 
   protected String mSeq = "";
 

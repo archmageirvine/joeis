@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050412 Riesel problem: start with n; repeatedly double and add 1 until reaching a prime. Sequence gives number of steps to reach a prime or 0 if no prime is ever reached.
  * @author Sean A. Irvine
  */
-public class A050412 implements Sequence {
+public class A050412 extends Sequence1 {
 
   private long mN = 0;
 

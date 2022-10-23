@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058864 Number of labeled chordal graphs (connected or not) on n nodes with no induced path P_4.
  * @author Sean A. Irvine
  */
-public class A058864 implements Sequence {
+public class A058864 extends Sequence1 {
 
   private long mN = 0;
 

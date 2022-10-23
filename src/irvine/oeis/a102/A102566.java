@@ -3,13 +3,14 @@ package irvine.oeis.a102;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a035.A035103;
 
 /**
  * A102566 a(n) = {minimal k such that f^k(prime(n)) = 1} where f(m) = (m+1)/2^r, 2^r is the highest power of two dividing m+1.
  * @author Georg Fischer
  */
-public class A102566 implements Sequence {
+public class A102566 extends Sequence1 {
 
   final Sequence mA035103 = new A035103();
   @Override

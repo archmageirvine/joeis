@@ -3,12 +3,13 @@ package irvine.oeis.a152;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a111.A111071;
 /**
  * A152527 a(n) = (p(n)*p(n+1)-p(n+2))/2, where p(n) is the n-th odd prime.
  * @author Georg Fischer
  */
-public class A152527 implements Sequence {
+public class A152527 extends Sequence1 {
 
   private final Sequence mA111071 = new A111071();
   /** Construct the sequence. */

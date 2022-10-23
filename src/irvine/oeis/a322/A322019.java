@@ -3,6 +3,7 @@ package irvine.oeis.a322;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a014.A014197;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a014.A014197;
  * A322019 a(n) = A000005(n) - A014197(n), where A000005(n) gives the number of divisors of n, and A014197(n) gives the number of integers m with phi(m) = n.
  * @author Georg Fischer
  */
-public class A322019 implements Sequence {
+public class A322019 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA014197 = new A014197();

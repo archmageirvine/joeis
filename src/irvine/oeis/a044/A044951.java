@@ -2,13 +2,13 @@ package irvine.oeis.a044;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A044951 Numbers having a different number of ones and zeros in base 2.
  * @author Sean A. Irvine
  */
-public class A044951 implements Sequence {
+public class A044951 extends Sequence1 {
 
   private long mN = 0;
 

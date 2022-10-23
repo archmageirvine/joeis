@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056624 Number of unitary square divisors of n.
  * @author Sean A. Irvine
  */
-public class A056624 implements Sequence {
+public class A056624 extends Sequence1 {
 
   private long mN = 0;
 

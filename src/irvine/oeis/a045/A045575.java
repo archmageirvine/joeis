@@ -3,13 +3,13 @@ package irvine.oeis.a045;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045575 Nonnegative numbers of the form x^y - y^x, for x,y &gt; 1.
  * @author Sean A. Irvine
  */
-public class A045575 implements Sequence {
+public class A045575 extends Sequence1 {
 
   // After Robert Israel
 

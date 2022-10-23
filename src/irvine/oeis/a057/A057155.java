@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057155 Denominator of Sum_{k&lt;=n} P(k)/p(k), where p(k) (resp. P(k)) is smallest (resp. largest) prime divisor of k.
  * @author Sean A. Irvine
  */
-public class A057155 implements Sequence {
+public class A057155 extends Sequence1 {
 
   private Q mSum = Q.ZERO;
   private long mN = 0;

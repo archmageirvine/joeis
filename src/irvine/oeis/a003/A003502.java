@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003502 The smaller of a betrothed pair.
  * @author Sean A. Irvine
  */
-public class A003502 implements Sequence {
+public class A003502 extends Sequence1 {
 
   private Z mN = Z.valueOf(47);
 

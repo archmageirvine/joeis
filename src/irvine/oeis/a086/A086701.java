@@ -3,6 +3,7 @@ package irvine.oeis.a086;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002808;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002808;
  * A086701 n-th prime number raised to the n-th composite number.
  * @author Georg Fischer
  */
-public class A086701 implements Sequence {
+public class A086701 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA002808 = new A002808();

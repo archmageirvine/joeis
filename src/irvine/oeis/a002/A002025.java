@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002025 Smaller of an amicable pair: (a,b) such that sigma(a)=sigma(b)=a+b, a&lt;b.
  * @author Sean A. Irvine
  */
-public class A002025 implements Sequence {
+public class A002025 extends Sequence1 {
 
   private Z mN = Z.valueOf(119);
 

@@ -6,13 +6,13 @@ import irvine.math.lattice.Animal;
 import irvine.math.lattice.Lattice;
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057783 Building block is 2 hexagons side-by-side; sequence gives number of pieces (polydohexes) that can be formed from n such pairs of hexagons.
  * @author Sean A. Irvine
  */
-public class A057783 implements Sequence {
+public class A057783 extends Sequence1 {
 
   private static final Lattice L = Lattices.HEXAGONAL;
   private static final int NEIGHBOURS = L.neighbourCount(L.origin()); // constant for all points in this lattice

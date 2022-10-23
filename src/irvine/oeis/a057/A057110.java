@@ -3,6 +3,7 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002034;
 import irvine.oeis.a034.A034699;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a034.A034699;
  * A057110 Difference between largest prime power factor of n and the smallest number S(n) with S(n)! a multiple of n [taking a(1)=0].
  * @author Georg Fischer
  */
-public class A057110 implements Sequence {
+public class A057110 extends Sequence1 {
 
   final Sequence mA002034 = new A002034();
   final Sequence mA034699 = new A034699();

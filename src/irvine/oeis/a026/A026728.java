@@ -1,13 +1,13 @@
 package irvine.oeis.a026;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A026728 a(n) = number of primes of the form k*(n-k) + 1.
  * @author Sean A. Irvine
  */
-public class A026728 implements Sequence {
+public class A026728 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

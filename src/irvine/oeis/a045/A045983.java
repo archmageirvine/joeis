@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045983 Numbers k such that n or more consecutive integers starting at k have the same number of distinct prime divisors.
  * @author Sean A. Irvine
  */
-public class A045983 implements Sequence {
+public class A045983 extends Sequence1 {
 
   private long mN = 0;
   private long mK = 1;

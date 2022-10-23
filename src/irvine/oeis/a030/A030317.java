@@ -3,13 +3,13 @@ package irvine.oeis.a030;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030317 Write the odd numbers 2n - 1 in base 2 and juxtapose these binary expansions; read the result bit-by-bit.
  * @author Georg Fischer
  */
-public class A030317 implements Sequence {
+public class A030317 extends Sequence1 {
  
   private String mS = "";
   private int mPos = 0;

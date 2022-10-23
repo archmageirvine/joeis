@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030666 Smallest nontrivial extension of n which is a square.
  * @author Sean A. Irvine
  */
-public class A030666 implements Sequence {
+public class A030666 extends Sequence1 {
 
   private static final long[] STEPS = {1, 1, 3, 1, 1, 3};
   private long mN = 0;

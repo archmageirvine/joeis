@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000279 Card matching: coefficients B[n,1] of t in the reduced hit polynomial A[n,n,n](t).
  * @author Sean A. Irvine
  */
-public class A000279 implements Sequence {
+public class A000279 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

@@ -3,13 +3,13 @@ package irvine.oeis.a050;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050701 If composite k and its reverse are different and have same number of prime factors, then the larger of them is a term of the sequence.
  * @author Sean A. Irvine
  */
-public class A050701 implements Sequence {
+public class A050701 extends Sequence1 {
 
   private long mN = 14;
 

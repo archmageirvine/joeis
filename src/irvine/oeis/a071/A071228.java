@@ -3,13 +3,14 @@ package irvine.oeis.a071;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 
 /**
  * A071228 a(n) = n*(n-th composite number).
  * @author Georg Fischer
  */
-public class A071228 implements Sequence {
+public class A071228 extends Sequence1 {
 
   final Sequence mA002808 = new A002808();
   protected long mN;

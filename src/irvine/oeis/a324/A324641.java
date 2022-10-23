@@ -3,13 +3,14 @@ package irvine.oeis.a324;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005940;
 
 /**
  * A324641 Sum of the Doudna sequence and its Dirichlet inverse: a(n) = A005940(n) + A324640(n).
  * @author Georg Fischer
  */
-public class A324641 implements Sequence {
+public class A324641 extends Sequence1 {
 
   final Sequence mA005940 = new A005940();
   final Sequence mA324640 = new A324640();

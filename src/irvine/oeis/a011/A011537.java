@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011537 Numbers that contain at least one 7.
  * @author Sean A. Irvine
  */
-public class A011537 implements Sequence {
+public class A011537 extends Sequence1 {
 
   private long mN = 6;
 

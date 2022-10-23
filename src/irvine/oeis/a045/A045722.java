@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045722 Number of border edges in all noncrossing rooted trees on n nodes.
  * @author Sean A. Irvine
  */
-public class A045722 implements Sequence {
+public class A045722 extends Sequence1 {
 
   private long mN = 0;
 

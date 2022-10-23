@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059215 Least number k such that k^n reversed is a prime.
  * @author Sean A. Irvine
  */
-public class A059215 implements Sequence {
+public class A059215 extends Sequence1 {
 
   private long mN = 0;
 

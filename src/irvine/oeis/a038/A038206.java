@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038206 Can express a(n) with the digits of a(n)^2 in order, only adding plus signs.
  * @author Sean A. Irvine
  */
-public class A038206 implements Sequence {
+public class A038206 extends Sequence1 {
 
   private long mAdd = 1; // We want == 0,1 (mod 9)
   private long mN = -8;

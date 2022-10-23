@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048992 Hannah Rollman's numbers: the numbers excluded from A048991.
  * @author Sean A. Irvine
  */
-public class A048992 implements Sequence {
+public class A048992 extends Sequence1 {
 
   private final StringBuilder mA = new StringBuilder();
   private long mN = 0;

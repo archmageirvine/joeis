@@ -5,13 +5,13 @@ import java.util.Set;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059998 Number of different primes occurring when n is expressed as p1+q1+r1 = ... = pk+qk+rk where pk,qk,rk are primes with pk &lt;= qk &lt;= rk.
  * @author Sean A. Irvine
  */
-public class A059998 implements Sequence {
+public class A059998 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

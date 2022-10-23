@@ -2,14 +2,14 @@ package irvine.oeis.a014;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014951 Positive integers k such that k divides 12^k - 1.
  * @author Sean A. Irvine
  * @author Georg Fischer
  */
-public class A014951 implements Sequence {
+public class A014951 extends Sequence1 {
 
   protected int mN;
   protected int mParm1;

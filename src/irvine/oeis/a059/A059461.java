@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059461 Numbers which are the sum of their proper divisors containing the digit 0.
  * @author Sean A. Irvine
  */
-public class A059461 implements Sequence {
+public class A059461 extends Sequence1 {
 
   private final int mBit;
   private long mN = 0;

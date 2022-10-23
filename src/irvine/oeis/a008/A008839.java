@@ -2,13 +2,13 @@ package irvine.oeis.a008;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008839 Numbers k such that the decimal expansion of 5^k contains no zeros.
  * @author Sean A. Irvine
  */
-public class A008839 implements Sequence {
+public class A008839 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private long mN = -1;

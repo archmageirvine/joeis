@@ -1,13 +1,13 @@
 package irvine.oeis.a031;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A031349 3-multiplicative persistence: number of iterations of "multiply 3rd powers of digits" needed to reach 0 or 1.
  * @author Sean A. Irvine
  */
-public class A031349 implements Sequence {
+public class A031349 extends Sequence1 {
 
   private long mN = 0;
 

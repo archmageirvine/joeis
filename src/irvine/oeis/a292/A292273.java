@@ -3,6 +3,7 @@ package irvine.oeis.a292;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008683;
 import irvine.oeis.a087.A087003;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a087.A087003;
  * A292273 For odd n: a(n) = 0, and for even n: a(n) = -mu(n), where mu is Moebius function (A008683).
  * @author Georg Fischer
  */
-public class A292273 implements Sequence {
+public class A292273 extends Sequence1 {
 
   final Sequence mA008683 = new A008683();
   final Sequence mA087003 = new A087003();

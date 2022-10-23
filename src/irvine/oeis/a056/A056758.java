@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056758 Numbers n for which d(n)^3 &lt; n.
  * @author Georg Fischer
  */
-public class A056758 implements Sequence {
+public class A056758 extends Sequence1 {
 
   protected long mN = 0;
 

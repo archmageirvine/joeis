@@ -3,13 +3,14 @@ package irvine.oeis.a144;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014574;
 
 /**
  * A144834 Numbers n such that the two numbers n+1 and n+3 are both prime.
  * @author Georg Fischer
  */
-public class A144834 implements Sequence {
+public class A144834 extends Sequence1 {
 
   final Sequence mA014574 = new A014574();
   @Override

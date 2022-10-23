@@ -2,14 +2,14 @@ package irvine.oeis.a013;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A013581 Let P = 2*3*5*..*p_n = n-th primorial number (A002110), G = Z_2xZ_3x...xZ_{p_n}; a(n) = max{e in G} min{i : both e+i, e-i are relatively prime to P}.
  * @author Sean A. Irvine
  */
-public class A013581 implements Sequence {
+public class A013581 extends Sequence1 {
 
   // I think you definitely only need to look as far as p_n#/2
   // Empirically (n+1)! is far enough

@@ -3,13 +3,14 @@ package irvine.oeis.a249;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a025.A025475;
 
 /**
  * A249435 a(1) = 0, after which one less than prime powers p^m with exponent m &gt;= 2.
  * @author Georg Fischer
  */
-public class A249435 implements Sequence {
+public class A249435 extends Sequence1 {
 
   final Sequence mA025475 = new A025475();
   @Override

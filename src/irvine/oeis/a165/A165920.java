@@ -3,13 +3,13 @@ package irvine.oeis.a165;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A165920 Number of 2-elements orbits of S3 action on irreducible polynomials of degree 3n, n &gt; 0, over GF(2).
  * @author Sean A. Irvine
  */
-public class A165920 implements Sequence {
+public class A165920 extends Sequence1 {
 
   private int mN = 0;
 

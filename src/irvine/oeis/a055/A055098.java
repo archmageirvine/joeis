@@ -1,14 +1,14 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A055098 Number of distinct anagrams of digits of n without leading zeros.
  * @author Sean A. Irvine
  */
-public class A055098 implements Sequence {
+public class A055098 extends Sequence1 {
 
   private long mN = 0;
 

@@ -1,14 +1,14 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 
 /**
  * A002407 Cuban primes: primes which are the difference of two consecutive cubes.
  * @author Sean A. Irvine
  */
-public class A002407 implements Sequence {
+public class A002407 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

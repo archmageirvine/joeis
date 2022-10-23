@@ -2,13 +2,13 @@ package irvine.oeis.a124;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A124107 Numbers n such that n is the sum of the augmenting factorials of the digits of n, e.g. 733 = 7 + 3! + (3!)!.
  * @author Sean A. Irvine
  */
-public class A124107 implements Sequence {
+public class A124107 extends Sequence1 {
 
   private long mN = 0;
 

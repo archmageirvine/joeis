@@ -3,6 +3,7 @@ package irvine.oeis.a163;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a029.A029837;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a029.A029837;
  * A163298 Sum of divisors of n minus binary order of n.
  * @author Georg Fischer
  */
-public class A163298 implements Sequence {
+public class A163298 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA029837 = new A029837();

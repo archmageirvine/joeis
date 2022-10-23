@@ -5,14 +5,14 @@ import java.util.TreeSet;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A057035 Numbers n such that n = p + q with n*p*q = primorial number (A002110) (p &lt;= q, p &gt; 0, q &gt; 0).
  * @author Sean A. Irvine
  */
-public class A057035 implements Sequence {
+public class A057035 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final Fast mPrime = new Fast();

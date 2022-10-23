@@ -1,14 +1,14 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A025034 Least modulus &gt;= 3 having maximum run of n consecutive non-residues.
  * @author Sean A. Irvine
  */
-public class A025034 implements Sequence {
+public class A025034 extends Sequence1 {
 
   private final LongDynamicLongArray mMax = new LongDynamicLongArray();
   private long mN = 0;

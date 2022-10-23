@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038343 Maximal value of difference between successive primes among the first 10^n primes.
  * @author Sean A. Irvine
  */
-public class A038343 implements Sequence {
+public class A038343 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

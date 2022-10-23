@@ -4,13 +4,13 @@ import irvine.math.group.GaloisField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A165740 Positive integers n such that solution to the toric n X n "Lights Out" puzzle is not unique (up to the order of flippings; each flipping appears at most once).
  * @author Sean A. Irvine
  */
-public class A165740 implements Sequence {
+public class A165740 extends Sequence1 {
 
   // Cf. http://www.win.tue.nl/~aeb/preprints/madaart2c.pdf
 

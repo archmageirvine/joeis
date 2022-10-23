@@ -2,14 +2,14 @@ package irvine.oeis.a173;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A173448 Smallest prime(k) such that the concatenation prime(k)//prime(k+1)//...//prime(k+n-1) represents an emirp.
  * @author Sean A. Irvine
  */
-public class A173448 implements Sequence {
+public class A173448 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

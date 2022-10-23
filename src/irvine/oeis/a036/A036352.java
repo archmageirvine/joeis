@@ -6,14 +6,14 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 
 /**
  * A036352 Number of numbers up to 10^n that are products of two primes.
  * @author Sean A. Irvine
  */
-public class A036352 implements Sequence {
+public class A036352 extends Sequence1 {
 
   private final MemorySequence mPrimePi = MemorySequence.cachedSequence(new PrependSequence(new A000720(), 0));
   private final Fast mPrime = new Fast();

@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003689 Number of Hamiltonian paths in K_3 X P_n.
  * @author Sean A. Irvine
  */
-public class A003689 implements Sequence {
+public class A003689 extends Sequence1 {
 
   private Z mThrees = Z.valueOf(128);
   private int mN = 0;

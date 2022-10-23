@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007176 Stopping times (see Borwein-Loring article for precise definition).
  * @author Sean A. Irvine
  */
-public class A007176 implements Sequence {
+public class A007176 extends Sequence1 {
 
   private long mN = 0;
   private long mPrev = -1;

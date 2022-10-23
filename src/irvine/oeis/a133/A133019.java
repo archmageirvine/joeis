@@ -3,6 +3,7 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a004.A004087;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a004.A004087;
  * A133019 Product of n-th prime and n-th prime written backwards.
  * @author Georg Fischer
  */
-public class A133019 implements Sequence {
+public class A133019 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA004087 = new A004087();

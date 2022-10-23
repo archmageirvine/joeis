@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A061125 Number of degree-n permutations of order exactly 12.
@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class A061125 implements Sequence {
+public class A061125 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   static final Polynomial<Q> C6 = Polynomial.create(Q.ZERO, Q.ONE, Q.HALF, Q.ONE_THIRD, Q.ZERO, Q.ZERO, new Q(1, 6));

@@ -3,6 +3,7 @@ package irvine.oeis.a086;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a022.A022328;
 import irvine.oeis.a022.A022329;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a022.A022329;
  * A086418 Sum of distinct prime factors of 3-smooth numbers.
  * @author Georg Fischer
  */
-public class A086418 implements Sequence {
+public class A086418 extends Sequence1 {
 
   final Sequence mA022328 = new A022328();
   final Sequence mA022329 = new A022329();

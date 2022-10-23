@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027473 Second column of A027466.
  * @author Sean A. Irvine
  */
-public class A027473 implements Sequence {
+public class A027473 extends Sequence1 {
 
   private int mN = 0;
   private Z mT = Z.ONE;

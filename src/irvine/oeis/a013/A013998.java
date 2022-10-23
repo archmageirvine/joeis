@@ -6,13 +6,13 @@ import irvine.math.group.IntegersMod;
 import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013998 Unrestricted Perrin pseudoprimes.
  * @author Sean A. Irvine
  */
-public class A013998 implements Sequence {
+public class A013998 extends Sequence1 {
 
   private static final Matrix<Z> MATRIX = new DefaultMatrix<>(new Z[][] {
     {Z.ZERO, Z.ONE, Z.ZERO},

@@ -2,14 +2,14 @@ package irvine.oeis.a233;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A233773 Triangle read by rows in which row n lists the proper divisors of n together with -n.
  * Copied from A027750.
  * @author Georg Fischer
  */
-public class A233773 implements Sequence {
+public class A233773 extends Sequence1 {
 
   private long mN = 0;
   private Z[] mList = new Z[0];

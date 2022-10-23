@@ -2,13 +2,13 @@ package irvine.oeis.a122;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A122821 Number of ways n can be represented as the arithmetic mean of consecutive primes.
  * @author Sean A. Irvine
  */
-public class A122821 implements Sequence {
+public class A122821 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

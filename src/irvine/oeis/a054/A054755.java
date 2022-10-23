@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054755 Odd powers of primes of the form q = x^2 + 1 (A002496).
  * @author Sean A. Irvine
  */
-public class A054755 implements Sequence {
+public class A054755 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final TreeMap<Z, Z> mA = new TreeMap<>();

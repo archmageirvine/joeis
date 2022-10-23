@@ -3,13 +3,14 @@ package irvine.oeis.a069;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001248;
 
 /**
  * A069262 a(n) = 4*prime(n)^2.
  * @author Georg Fischer
  */
-public class A069262 implements Sequence {
+public class A069262 extends Sequence1 {
 
   final Sequence mA001248 = new A001248();
   @Override

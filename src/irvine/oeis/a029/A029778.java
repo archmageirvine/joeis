@@ -2,13 +2,13 @@ package irvine.oeis.a029;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A029778 Digits of n^3 appear in n.
  * @author Sean A. Irvine
  */
-public class A029778 implements Sequence {
+public class A029778 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

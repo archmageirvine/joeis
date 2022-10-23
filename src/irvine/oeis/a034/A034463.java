@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034463 Maximal number of residue classes mod n such that no subset adds to 0.
  * @author Sean A. Irvine
  */
-public class A034463 implements Sequence {
+public class A034463 extends Sequence1 {
 
   private int mN = 0;
 

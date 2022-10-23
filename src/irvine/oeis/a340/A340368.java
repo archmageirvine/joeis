@@ -3,13 +3,14 @@ package irvine.oeis.a340;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a173.A173557;
 import irvine.oeis.a327.A327564;
 /**
  * A340368 Multiplicative with a(p^e) = (p - 1) * (p + 1)^(e-1).
  * @author Georg Fischer
  */
-public class A340368 implements Sequence {
+public class A340368 extends Sequence1 {
 
   private final Sequence mA173557 = new A173557();
   private final Sequence mA327564 = new A327564();

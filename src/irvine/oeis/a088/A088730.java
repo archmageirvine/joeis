@@ -3,13 +3,14 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051674;
 
 /**
  * A088730 Numbers of the form p^p - 1, where p is a prime.
  * @author Georg Fischer
  */
-public class A088730 implements Sequence {
+public class A088730 extends Sequence1 {
 
   final Sequence mA051674 = new A051674();
   @Override

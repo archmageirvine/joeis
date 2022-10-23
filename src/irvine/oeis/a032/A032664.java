@@ -2,13 +2,13 @@ package irvine.oeis.a032;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032664 Digit '1' concatenated with a(n) is a prime.
  * @author Sean A. Irvine
  */
-public class A032664 implements Sequence {
+public class A032664 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mMult = Z.TEN;

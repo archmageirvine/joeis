@@ -3,13 +3,14 @@ package irvine.oeis.a180;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a015.A015910;
 
 /**
  * A180060 2^(2^n mod n) mod n.
  * @author Georg Fischer
  */
-public class A180060 implements Sequence {
+public class A180060 extends Sequence1 {
 
   final Sequence mA015910 = new A015910();
   protected long mN;

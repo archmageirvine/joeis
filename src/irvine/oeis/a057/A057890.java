@@ -1,14 +1,14 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A057890 In base 2, either a palindrome or becomes a palindrome if trailing 0's are omitted.
  * @author Sean A. Irvine
  */
-public class A057890 implements Sequence {
+public class A057890 extends Sequence1 {
 
   private long mN = -1;
 

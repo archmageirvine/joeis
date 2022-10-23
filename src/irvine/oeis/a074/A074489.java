@@ -3,13 +3,14 @@ package irvine.oeis.a074;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003618;
 
 /**
  * A074489 n-th power of the largest n-digit prime.
  * @author Georg Fischer
  */
-public class A074489 implements Sequence {
+public class A074489 extends Sequence1 {
 
   final Sequence mA003618 = new A003618();
   protected long mN;

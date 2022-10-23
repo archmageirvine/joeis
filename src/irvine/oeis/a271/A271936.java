@@ -2,14 +2,14 @@ package irvine.oeis.a271;
 // manually 2021-07-21
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A271936 Commutative powers: numbers of the form a^b = b^a.
  * Like A000312, but starting with 1, 4, 16, 27 ...
  * @author Georg Fischer
  */
-public class A271936 implements Sequence {
+public class A271936 extends Sequence1 {
 
   private int mN = -1;
 

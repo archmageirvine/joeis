@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034915 Primes of the form p^k - p + 1 for prime p.
  * @author Sean A. Irvine
  */
-public class A034915 implements Sequence {
+public class A034915 extends Sequence1 {
 
   private static final class State implements Comparable<State> {
     final Z mValue;

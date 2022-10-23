@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003657 Discriminants of imaginary quadratic fields, negated.
  * @author Sean A. Irvine
  */
-public class A003657 implements Sequence {
+public class A003657 extends Sequence1 {
 
   long mN = -2;
 

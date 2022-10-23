@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036991 Numbers k with the property that in the binary expansion of k, reading from right to left, the number of 0's never exceeds the number of 1's.
  * @author Sean A. Irvine
  */
-public class A036991 implements Sequence {
+public class A036991 extends Sequence1 {
 
   private long mN = -1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059677 Numbers n such that 1n1, 3n3, 7n7 and 9n9 are all primes.
  * @author Sean A. Irvine
  */
-public class A059677 implements Sequence {
+public class A059677 extends Sequence1 {
 
   private long mN = 19;
 

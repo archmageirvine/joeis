@@ -2,13 +2,13 @@ package irvine.oeis.a099;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A099544 Odd part of n modulo 3.
  * @author Georg Fischer
  */
-public class A099544 implements Sequence {
+public class A099544 extends Sequence1 {
 
   private int mN;
   private final int mRes;

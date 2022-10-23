@@ -1,14 +1,14 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A002004 Davenport-Schinzel numbers of degree 4 on n symbols.
  * @author Sean A. Irvine
  */
-public class A002004 implements Sequence {
+public class A002004 extends Sequence1 {
 
   // Davenport-Schinzel numbers
   // There are three symbols, here 0, 1, 2.

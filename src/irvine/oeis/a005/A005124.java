@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005124 Numbers n such that 8n + 3 is prime.
  * @author Sean A. Irvine
  */
-public class A005124 implements Sequence {
+public class A005124 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

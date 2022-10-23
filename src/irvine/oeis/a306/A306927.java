@@ -4,13 +4,14 @@ package irvine.oeis.a306;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001615;
 
 /**
  * A306927 a(n) = A001615(n) - n.
  * @author Georg Fischer
  */
-public class A306927 implements Sequence {
+public class A306927 extends Sequence1 {
 
   final Sequence mA001615 = new A001615();
   protected long mN;

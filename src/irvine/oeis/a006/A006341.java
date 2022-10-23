@@ -2,14 +2,14 @@ package irvine.oeis.a006;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A006341 Octal palindromes which are also primes.
  * @author Sean A. Irvine
  */
-public class A006341 implements Sequence {
+public class A006341 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mN = Z.ONE;

@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A029827 Composite connected numbers: composite numbers k such that g(k) &lt; g(u) + g(v) holds for all relatively prime factorizations k=u*v, where g(x) = ceiling(log_2 x).
  * @author Sean A. Irvine
  */
-public class A029827 implements Sequence {
+public class A029827 extends Sequence1 {
 
   // After Michel Marcus
 

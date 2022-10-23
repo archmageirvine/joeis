@@ -3,13 +3,14 @@ package irvine.oeis.a237;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033879;
 
 /**
  * A237588 Sigma(n) - 2n + 1.
  * @author Georg Fischer
  */
-public class A237588 implements Sequence {
+public class A237588 extends Sequence1 {
 
   final Sequence mA033879 = new A033879();
   @Override

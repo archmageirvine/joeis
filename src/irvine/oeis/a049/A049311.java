@@ -4,13 +4,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.HararyMultiply;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049311 Number of (0,1) matrices with n ones and no zero rows or columns, up to row and column permutations.
  * @author Sean A. Irvine
  */
-public class A049311 implements Sequence {
+public class A049311 extends Sequence1 {
 
   private int mN = 0;
 

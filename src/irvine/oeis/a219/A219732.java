@@ -3,13 +3,14 @@ package irvine.oeis.a219;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a028.A028362;
 
 /**
  * A219732 a(n) = (Product_{i=1..n-1} (2^i + 1)) modulo (2^n - 1).
  * @author Georg Fischer
  */
-public class A219732 implements Sequence {
+public class A219732 extends Sequence1 {
 
   final Sequence mA028362 = new A028362();
   protected long mN;

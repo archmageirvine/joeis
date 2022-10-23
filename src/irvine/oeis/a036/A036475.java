@@ -3,13 +3,13 @@ package irvine.oeis.a036;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036475 partition(11n+1) mod 11.
  * @author Georg Fischer
  */
-public class A036475 implements Sequence {
+public class A036475 extends Sequence1 {
 
   protected int mN = -1;
   protected int mBase;

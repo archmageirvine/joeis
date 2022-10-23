@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007433 Inverse Moebius transform applied twice to squares.
  * @author Sean A. Irvine
  */
-public class A007433 implements Sequence {
+public class A007433 extends Sequence1 {
 
   private long mN = 0;
 

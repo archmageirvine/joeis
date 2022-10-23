@@ -3,14 +3,14 @@ package irvine.oeis.a034;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A034388 Smallest prime containing at least n consecutive identical digits.
  * @author Sean A. Irvine
  */
-public class A034388 implements Sequence {
+public class A034388 extends Sequence1 {
 
   private int mN = 0;
   private final ArrayList<String> mZeros = new ArrayList<>();  // cache of "00...." prefixes

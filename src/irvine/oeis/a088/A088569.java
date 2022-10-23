@@ -3,13 +3,14 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000002;
 
 /**
  * A088569 Anti-Kolakoski sequence (sequence of run lengths never coincides with the sequence itself).
  * @author Georg Fischer
  */
-public class A088569 implements Sequence {
+public class A088569 extends Sequence1 {
 
   final Sequence mA000002 = new A000002();
   /** Construct the sequence. */

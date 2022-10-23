@@ -3,13 +3,14 @@ package irvine.oeis.a176;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a062.A062570;
 
 /**
  * A176095 a(n) = n - phi(2*n), where phi() is the Euler totient A000010().
  * @author Georg Fischer
  */
-public class A176095 implements Sequence {
+public class A176095 extends Sequence1 {
 
   final Sequence mA062570 = new A062570();
   protected long mN;

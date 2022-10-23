@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005998 Number of paraffins.
  * @author Sean A. Irvine
  */
-public class A005998 implements Sequence {
+public class A005998 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

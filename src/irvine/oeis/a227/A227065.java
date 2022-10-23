@@ -3,13 +3,14 @@ package irvine.oeis.a227;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045917;
 
 /**
  * A227065 The number of partitions of 2n into exactly two parts such that the smaller and larger parts are not both prime.
  * @author Georg Fischer
  */
-public class A227065 implements Sequence {
+public class A227065 extends Sequence1 {
 
   final Sequence mA045917 = new A045917();
   protected long mN;

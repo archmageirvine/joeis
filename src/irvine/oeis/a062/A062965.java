@@ -3,13 +3,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001597;
 
 /**
  * A062965 Positive numbers which are one less than a perfect square that is also another power.
  * @author Georg Fischer
  */
-public class A062965 implements Sequence {
+public class A062965 extends Sequence1 {
 
   final Sequence mA001597 = new A001597();
   /** Construct the sequence. */

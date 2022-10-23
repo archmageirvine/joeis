@@ -3,14 +3,14 @@ package irvine.oeis.a057;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A057535 Numbers expressible as (a^2 - 1)*(b^2 - 1) in 5 distinct ways.
  * @author Sean A. Irvine
  */
-public class A057535 implements Sequence {
+public class A057535 extends Sequence1 {
 
   private static final int MOD = 134217757;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));

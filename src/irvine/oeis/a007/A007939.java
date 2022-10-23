@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007939 Some permutation of digits is a cube.
  * @author Sean A. Irvine
  */
-public class A007939 implements Sequence {
+public class A007939 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   private final HashSet<String> mSortedCubes = new HashSet<>();

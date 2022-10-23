@@ -6,13 +6,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A029701 Number of lines on the intersection of two general hypersurfaces of degree n in complex projective (n+2)-space.
  * @author Sean A. Irvine
  */
-public class A029701 implements Sequence {
+public class A029701 extends Sequence1 {
 
   private static final PolynomialRing<Z> RINGX = new PolynomialRing<>(Integers.SINGLETON);
   private static final MultivariatePolynomialField<Z> RING = new MultivariatePolynomialField<>(IntegerField.SINGLETON, 2);

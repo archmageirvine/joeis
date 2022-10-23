@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005163 Number of alternating sign n X n matrices that are symmetric about a diagonal.
  * @author Sean A. Irvine
  */
-public class A005163 implements Sequence {
+public class A005163 extends Sequence1 {
 
   // An explicit search, we use 1, 2, 3 to denote the values in the matrix
   // reserving 0 for an unfilled cell.  Simple search that attempts to

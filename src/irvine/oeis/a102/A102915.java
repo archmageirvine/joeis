@@ -3,14 +3,14 @@ package irvine.oeis.a102;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 
 /**
  * A102915 Numbers n such that n3 is prime and n is a multiple of 10.
  * @author Georg Fischer
  */
-public class A102915 implements Sequence {
+public class A102915 extends Sequence1 {
   protected long mK; // number k to be returned
   protected Z mConst1; // constant behind k
   protected Z mPow10; // 10^m always > k

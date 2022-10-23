@@ -3,6 +3,7 @@ package irvine.oeis.a332;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002024;
 import irvine.oeis.a060.A060432;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a060.A060432;
  * A332027 Savannah problem: number of distinct possible populations after n weeks, allowing populations after the empty set.
  * @author Georg Fischer
  */
-public class A332027 implements Sequence {
+public class A332027 extends Sequence1 {
 
   final Sequence mA002024 = new A002024();
   final Sequence mA060432 = new A060432();

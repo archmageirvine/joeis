@@ -3,13 +3,13 @@ package irvine.oeis.a053;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053170 Number of 3 X 3 integer matrices with elements in the range [ -n,n ] which generate a group of finite order under matrix multiplication.
  * @author Sean A. Irvine
  */
-public class A053170 implements Sequence {
+public class A053170 extends Sequence1 {
 
   // After Ralf W. Grosse-Kunstleve,
   // https://github.com/rwgk/stuff/tree/master/loop3x3matrices

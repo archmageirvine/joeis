@@ -2,13 +2,14 @@ package irvine.oeis.a030;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
  * A030555 a(n)=least k such that base 6 representation of n begins at s(k), where s=A030548.
  * @author Sean A. Irvine
  */
-public class A030555 implements Sequence {
+public class A030555 extends Sequence1 {
 
   private final LongDynamicIntArray mA = new LongDynamicIntArray();
   private long mM;

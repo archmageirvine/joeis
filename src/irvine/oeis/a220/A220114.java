@@ -3,12 +3,13 @@ package irvine.oeis.a220;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a063.A063655;
 /**
  * A220114 Largest k &gt;= 0 such that k = n - x - y where n = x*y, x &gt; 0, y &gt; 0, or -1 if no such k exists.
  * @author Georg Fischer
  */
-public class A220114 implements Sequence {
+public class A220114 extends Sequence1 {
 
   private final Sequence mA063655 = new A063655();
   protected long mN;

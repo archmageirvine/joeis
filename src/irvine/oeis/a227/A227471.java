@@ -3,13 +3,14 @@ package irvine.oeis.a227;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023512;
 
 /**
  * A227471 Position of first 0 in the binary representation of prime(n), starting the count of positions at 1 for the least significant bit.
  * @author Georg Fischer
  */
-public class A227471 implements Sequence {
+public class A227471 extends Sequence1 {
 
   final Sequence mA023512 = new A023512();
   @Override

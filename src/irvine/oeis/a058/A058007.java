@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058007 Freestyle perfect numbers n = Product_{i=1,..,k} f_i^e_i where 1 &lt; f_1 &lt;  ... &lt; f_k, e_i &gt; 0, such that 2n = Product_{i=1,..,k} (f_i^(e_i+1)-1)/(f_i-1).
  * @author Sean A. Irvine
  */
-public class A058007 implements Sequence {
+public class A058007 extends Sequence1 {
 
   private long mN = 5;
 

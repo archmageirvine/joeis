@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054875 Number of pairwise incongruent triangles with integer sides and positive integer area and longest side of length n.
  * @author Sean A. Irvine
  */
-public class A054875 implements Sequence {
+public class A054875 extends Sequence1 {
 
   // After Amiran Elder
 

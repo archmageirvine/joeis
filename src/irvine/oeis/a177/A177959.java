@@ -3,6 +3,7 @@ package irvine.oeis.a177;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a035.A035103;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a035.A035103;
  * A177959 n-th prime minus number of 0's in binary representation of n-th prime.
  * @author Georg Fischer
  */
-public class A177959 implements Sequence {
+public class A177959 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA035103 = new A035103();

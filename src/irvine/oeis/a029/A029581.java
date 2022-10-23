@@ -1,13 +1,13 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A029581 All digits are composite.
  * @author Sean A. Irvine
  */
-public class A029581 implements Sequence {
+public class A029581 extends Sequence1 {
 
   private static final long[] DIGITS = {9, 4, 6, 8};
   private long mN = 0;

@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004230 10000*log_10 (n) rounded up.
  * @author Sean A. Irvine
  */
-public class A004230 implements Sequence {
+public class A004230 extends Sequence1 {
 
   private long mN = 0;
 

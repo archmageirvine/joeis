@@ -3,6 +3,7 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a038.A038548;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a038.A038548;
  * A056924 Number of divisors of n that are smaller than sqrt(n).
  * @author Georg Fischer
  */
-public class A056924 implements Sequence {
+public class A056924 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA038548 = new A038548();

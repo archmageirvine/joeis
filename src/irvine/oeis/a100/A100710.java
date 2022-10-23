@@ -3,13 +3,14 @@ package irvine.oeis.a100;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006519;
 
 /**
  * A100710 Characterized by a(n) XOR (a(n) + 1) = a(n) - n.
  * @author Georg Fischer
  */
-public class A100710 implements Sequence {
+public class A100710 extends Sequence1 {
 
   final Sequence mA006519 = new A006519();
   protected long mN;

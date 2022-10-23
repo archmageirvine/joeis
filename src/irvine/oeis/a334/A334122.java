@@ -3,13 +3,14 @@ package irvine.oeis.a334;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a034.A034387;
 
 /**
  * A334122 a(n) is the sum of all primes &lt;= n, mod n.
  * @author Georg Fischer
  */
-public class A334122 implements Sequence {
+public class A334122 extends Sequence1 {
 
   final Sequence mA034387 = new A034387();
   protected long mN;

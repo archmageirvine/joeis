@@ -4,13 +4,13 @@ import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035166 Let d(n) = denominator of Sum_{k=1..n} 1/k^2 and consider f(n) = product of primes which appear to odd powers in d(n); sequence lists n such that f(n) is different from f(n-1).
  * @author Sean A. Irvine
  */
-public class A035166 implements Sequence {
+public class A035166 extends Sequence1 {
 
   private Q mSum = Q.ZERO;
   private long mN = 0;

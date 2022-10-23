@@ -6,13 +6,13 @@ import java.util.HashSet;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054578 Number of subsequences of {1..n} such that all differences of pairs of terms are distinct (i.e., number of Golomb rulers on {1..n}).
  * @author Sean A. Irvine
  */
-public class A054578 implements Sequence {
+public class A054578 extends Sequence1 {
 
   // After Alois P. Heinz
 

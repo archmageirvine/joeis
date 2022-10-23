@@ -7,13 +7,13 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034089 Numbers that are proper divisors of the number you get by rotating digits right once.
  * @author Sean A. Irvine
  */
-public class A034089 implements Sequence {
+public class A034089 extends Sequence1 {
 
   // After M. F. Hasler
 

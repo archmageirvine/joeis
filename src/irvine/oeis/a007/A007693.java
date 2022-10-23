@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007693 Primes p such that 6*p + 1 is also prime.
  * @author Sean A. Irvine
  */
-public class A007693 implements Sequence {
+public class A007693 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.ONE;

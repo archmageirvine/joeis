@@ -3,6 +3,7 @@ package irvine.oeis.a166;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002033;
 import irvine.oeis.a004.A004125;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a004.A004125;
  * A166247 Number of perfect partitions of n-1 plus sum of remainders of n mod k, for k=1,2,3,..,n.
  * @author Georg Fischer
  */
-public class A166247 implements Sequence {
+public class A166247 extends Sequence1 {
 
   final Sequence mA002033 = new A002033();
   final Sequence mA004125 = new A004125();

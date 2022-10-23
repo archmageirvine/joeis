@@ -2,14 +2,14 @@ package irvine.oeis.a058;
 
 import irvine.math.group.GaussianIntegers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A058770 Numbers n such that n * (1+i)^n + 1 is a Gaussian prime.
  * @author Sean A. Irvine
  */
-public class A058770 implements Sequence {
+public class A058770 extends Sequence1 {
 
   private static final GaussianIntegers G = GaussianIntegers.SINGLETON;
   private static final Pair<Z, Z> B = new Pair<>(Z.ONE, Z.ONE);

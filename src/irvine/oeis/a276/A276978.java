@@ -3,13 +3,13 @@ package irvine.oeis.a276;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A276978 a(n) = (ceiling(n/2))^n.
  * @author Georg Fischer
  */
-public class A276978 implements Sequence {
+public class A276978 extends Sequence1 {
 
   private long mN = 0;
 

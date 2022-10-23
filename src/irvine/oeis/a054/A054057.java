@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054057 Numbers of form 41+n^2+n or 41+2*n^2.
  * @author Sean A. Irvine
  */
-public class A054057 implements Sequence {
+public class A054057 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   {

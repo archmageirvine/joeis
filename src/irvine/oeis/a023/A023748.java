@@ -3,13 +3,13 @@ package irvine.oeis.a023;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023748 Plaindromes: numbers whose digits in base 6 are in nondecreasing order.
  * @author Sean A. Irvine
  */
-public class A023748 implements Sequence {
+public class A023748 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   {

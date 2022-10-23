@@ -5,13 +5,13 @@ import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056780 Rectangular free polyominoes: number of n-celled polyominoes when the cell is a rectangle.
  * @author Sean A. Irvine
  */
-public class A056780 implements Sequence {
+public class A056780 extends Sequence1 {
 
   private final ParallelHunter mHunter = new ParallelHunter(6,
     () -> new Hunter(Lattices.Z2, true),

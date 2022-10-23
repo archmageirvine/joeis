@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038528 If n has decimal expansion abc...d, with k digits, let f(n) be obtained by deleting all k's from abc...d, closing up and deleting initial 0's; sequence gives n such that f(f(f(...(n)))) = 0 or empty.
  * @author Sean A. Irvine
  */
-public class A038528 implements Sequence {
+public class A038528 extends Sequence1 {
 
   private long mN = 0;
 

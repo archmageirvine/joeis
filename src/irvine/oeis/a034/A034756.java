@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034756 Dirichlet convolution of 3^(n-1) with Bell numbers.
  * @author Sean A. Irvine
  */
-public class A034756 implements Sequence {
+public class A034756 extends Sequence1 {
 
   private int mN = 0;
 

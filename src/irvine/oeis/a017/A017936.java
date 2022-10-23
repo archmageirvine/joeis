@@ -1,13 +1,13 @@
 package irvine.oeis.a017;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A017936 Smallest number whose square has n digits.
  * @author Sean A. Irvine
  */
-public class A017936 implements Sequence {
+public class A017936 extends Sequence1 {
 
   private Z mN = null;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046677 Number of primes p of the form p = 4m^2+1 for n^2 &lt; m &lt; (n+1)^2.
  * @author Sean A. Irvine
  */
-public class A046677 implements Sequence {
+public class A046677 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

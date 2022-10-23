@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048684 Multiplicity of maximal squarefree kernel numbers applied to C(n,k) coefficients.
  * @author Sean A. Irvine
  */
-public class A048684 implements Sequence {
+public class A048684 extends Sequence1 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
   private long mN = 0;

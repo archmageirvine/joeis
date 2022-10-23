@@ -3,13 +3,14 @@ package irvine.oeis.a073;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a058.A058798;
 
 /**
  * A073888 a(1) = 1, a(2) = 2; a(n+1) = a(n)^n/a(n-1).
  * @author Georg Fischer
  */
-public class A073888 implements Sequence {
+public class A073888 extends Sequence1 {
 
   final Sequence mA058798 = new A058798();
   @Override

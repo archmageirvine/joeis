@@ -1,13 +1,13 @@
 package irvine.oeis.a146;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A146760 Last prime subtrahend at 10^n in A146759.
  * @author Sean A. Irvine
  */
-public class A146760 implements Sequence {
+public class A146760 extends Sequence1 {
 
   private Z mN = Z.ONE;
 

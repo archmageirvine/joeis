@@ -3,6 +3,7 @@ package irvine.oeis.a167;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001055;
 import irvine.oeis.a033.A033273;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a033.A033273;
  * A167688 Number of ways of factoring n with all factors greater than 1 (a(1)=1 by convention) minus number of nonprime divisors of n.
  * @author Georg Fischer
  */
-public class A167688 implements Sequence {
+public class A167688 extends Sequence1 {
 
   final Sequence mA001055 = new A001055();
   final Sequence mA033273 = new A033273();

@@ -2,14 +2,14 @@ package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A007369 Numbers n such that sigma(x) = n has no solution.
  * @author Sean A. Irvine
  */
-public class A007369 implements Sequence {
+public class A007369 extends Sequence1 {
 
   private final LongDynamicBooleanArray mA = new LongDynamicBooleanArray();
   private long mN = 0;

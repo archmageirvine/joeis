@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007635 Primes of form n^2 + n + 17.
  * @author Sean A. Irvine
  */
-public class A007635 implements Sequence {
+public class A007635 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

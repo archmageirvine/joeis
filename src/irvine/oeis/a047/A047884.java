@@ -8,13 +8,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A047884 Triangle of numbers a(n,k) = number of Young tableaux with n cells and k rows (1 &lt;= k &lt;= n); also number of self-inverse permutations on n letters in which the length of the longest scattered (i.e., not necessarily contiguous) increasing subsequence is k.
  * @author Sean A. Irvine
  */
-public class A047884 implements Sequence {
+public class A047884 extends Sequence1 {
 
   // After Alois P. Heinz
 

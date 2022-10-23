@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051705 Numbers whose Japanese name lacks syllable "ku".
  * @author Sean A. Irvine
  */
-public class A051705 implements Sequence {
+public class A051705 extends Sequence1 {
 
   // WARNING: DO NOT USE THIS TO EXTEND SEQUENCE
   // Rules here were inferred for existing values

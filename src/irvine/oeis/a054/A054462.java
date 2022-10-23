@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054462 Numbers n such that (n+1)^n + n^(n-1) is prime.
  * @author Sean A. Irvine
  */
-public class A054462 implements Sequence {
+public class A054462 extends Sequence1 {
 
   private long mN = 0;
 

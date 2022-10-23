@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000091 Multiplicative with a(2^e) = 2 for k &gt;= 1; a(3) = 2, a(3^e) = 0 for k &gt;= 2; a(p^e) = 0 if p &gt; 3 and p == -1 (mod 3); a(p^e) = 2 if p &gt; 3 and p == 1 (mod 3).
  * @author Sean A. Irvine
  */
-public class A000091 implements Sequence {
+public class A000091 extends Sequence1 {
 
   private long mN = 0;
   private final Fast mPrime = new Fast();

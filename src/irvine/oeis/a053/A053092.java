@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053092 2^A053087 kara n.
  * @author Sean A. Irvine
  */
-public class A053092 implements Sequence {
+public class A053092 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

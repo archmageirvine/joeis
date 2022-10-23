@@ -3,13 +3,13 @@ package irvine.oeis.a031;
 import irvine.factor.prime.Fast;
 import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A031364 Number of coincidence site modules of index 10n+1 in an icosahedral module.
  * @author Sean A. Irvine
  */
-public class A031364 implements Sequence {
+public class A031364 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final DirichletSeries mZetaP = new DirichletSeries();

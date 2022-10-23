@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005243 A self-generating sequence: start with 1 and 2, take all sums of any number of successive previous elements and adjoin them to the sequence. Repeat!.
  * @author Sean A. Irvine
  */
-public class A005243 implements Sequence {
+public class A005243 extends Sequence1 {
 
   private final HashSet<Z> mSet = new HashSet<>();
   private final ArrayList<Z> mA = new ArrayList<>();

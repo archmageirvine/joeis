@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048754 Mean integral quotients associated with A048753.
  * @author Sean A. Irvine
  */
-public class A048754 implements Sequence {
+public class A048754 extends Sequence1 {
 
   private long mN = 3;
 

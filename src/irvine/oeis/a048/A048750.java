@@ -5,13 +5,13 @@ import java.util.TreeSet;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048750 Mean integral aliquot divisors associated with A048749.
  * @author Sean A. Irvine
  */
-public class A048750 implements Sequence {
+public class A048750 extends Sequence1 {
 
   private final TreeSet<Z> mSeen = new TreeSet<>();
   private long mN = 5;

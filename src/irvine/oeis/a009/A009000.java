@@ -2,13 +2,13 @@ package irvine.oeis.a009;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009000 Ordered hypotenuse numbers (squares are sums of 2 distinct nonzero squares).
  * @author Sean A. Irvine
  */
-public class A009000 implements Sequence {
+public class A009000 extends Sequence1 {
 
   private long mN = 4;
   private long mC = 0; // Counts number of solutions for given value of mN

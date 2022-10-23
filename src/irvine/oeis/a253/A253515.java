@@ -3,6 +3,7 @@ package irvine.oeis.a253;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a074.A074294;
 import irvine.oeis.a130.A130829;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a130.A130829;
  * A253515 Count down from 2*k to 1, then from 2*(k+1) to 1 and so on.
  * @author Georg Fischer
  */
-public class A253515 implements Sequence {
+public class A253515 extends Sequence1 {
 
   final Sequence mA074294 = new A074294();
   final Sequence mA130829 = new A130829();

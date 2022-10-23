@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051795 Doubly balanced primes: primes which are averages of both their immediate and their second neighbors.
  * @author Sean A. Irvine
  */
-public class A051795 implements Sequence {
+public class A051795 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP0 = Z.valueOf(18713);

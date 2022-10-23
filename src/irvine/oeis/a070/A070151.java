@@ -3,6 +3,7 @@ package irvine.oeis.a070;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002330;
 import irvine.oeis.a002.A002331;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002331;
  * A070151 a(n) is one fourth of the even leg of the unique primitive Pythagorean triangle with hypotenuse A002144(n).
  * @author Georg Fischer
  */
-public class A070151 implements Sequence {
+public class A070151 extends Sequence1 {
 
   final Sequence mA002330 = new A002330();
   final Sequence mA002331 = new A002331();

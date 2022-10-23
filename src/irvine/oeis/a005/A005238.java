@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005238 Numbers n such that n, n+1 and n+2 have the same number of divisors.
  * @author Sean A. Irvine
  */
-public class A005238 implements Sequence {
+public class A005238 extends Sequence1 {
 
   private long mN = 1;
   private long mPrev = 1;

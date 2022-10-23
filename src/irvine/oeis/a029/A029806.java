@@ -1,14 +1,14 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A029806 n in base 8 is a palindromic square.
  * @author Sean A. Irvine
  */
-public class A029806 implements Sequence {
+public class A029806 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

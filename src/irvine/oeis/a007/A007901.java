@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007901 Number of minimal unavoidable n-celled pebbling configurations.
  * @author Sean A. Irvine
  */
-public class A007901 implements Sequence {
+public class A007901 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C1 = RING.create(Arrays.asList(Q.ONE, new Q(-3), Q.ONE));

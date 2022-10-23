@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037138 Numbers k such that sigma(totient(k)) + sigma(cototient(k)) = 2k.
  * @author Sean A. Irvine
  */
-public class A037138 implements Sequence {
+public class A037138 extends Sequence1 {
 
   private Z mN = Z.ONE;
 

@@ -5,7 +5,7 @@ import java.util.HashSet;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.array.LongDynamicLongArray;
 
@@ -13,7 +13,7 @@ import irvine.util.array.LongDynamicLongArray;
  * A222208 a(1) = 1, a(2) = 3; for n&gt;2, a(n) = smallest number not in {a(1), ..., a(n-1)} such that a(n) is divisible by a(d) for all divisors d of n.
  * @author Sean A. Irvine
  */
-public class A222208 implements Sequence {
+public class A222208 extends Sequence1 {
 
   // Does not use MemorySequence to save memory
   // Various other contortions in an effort to allow A242211(9) to be computed

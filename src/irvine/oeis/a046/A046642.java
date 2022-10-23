@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046642 Numbers k such that k and number of divisors d(k) are relatively prime.
  * @author Sean A. Irvine
  */
-public class A046642 implements Sequence {
+public class A046642 extends Sequence1 {
 
   private long mN = 0;
 

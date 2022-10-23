@@ -3,6 +3,7 @@ package irvine.oeis.a226;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a008.A008683;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a008.A008683;
  * A226177 a(n) = mu(n)*d(n), where mu(n) = A008683 and d(n) = A000005.
  * @author Georg Fischer
  */
-public class A226177 implements Sequence {
+public class A226177 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA008683 = new A008683();

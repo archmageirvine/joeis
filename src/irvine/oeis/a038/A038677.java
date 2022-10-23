@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038677 Cubes ending in a (different) positive cube.
  * @author Sean A. Irvine
  */
-public class A038677 implements Sequence {
+public class A038677 extends Sequence1 {
 
   private long mN = 10;
 

@@ -5,13 +5,13 @@ import java.util.TreeSet;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A343471 Start of the first run of n or more consecutive primes using only prime digits.
  * @author Sean A. Irvine
  */
-public class A343471 implements Sequence {
+public class A343471 extends Sequence1 {
 
   private int mN = 0;
   private final Fast mPrime = new Fast();

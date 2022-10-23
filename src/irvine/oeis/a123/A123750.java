@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A123750 Number of distinct resistances possible with at most n arbitrary resistors connected in series or in parallel.
  * E.g.f.: exp(x)*(-2*exp(x) + exp(x)*x + 2)/(-2 + exp(x))
  * @author Georg Fischer
  */
-public class A123750 implements Sequence {
+public class A123750 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

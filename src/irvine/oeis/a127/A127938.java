@@ -3,13 +3,14 @@ package irvine.oeis.a127;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007862;
 import irvine.oeis.a049.A049982;
 /**
  * A127938 Number of arithmetic progressions of 2 or more nonnegative integers, strictly increasing with sum n.
  * @author Georg Fischer
  */
-public class A127938 implements Sequence {
+public class A127938 extends Sequence1 {
 
   private final Sequence mA007862 = new A007862();
   private final Sequence mA049982 = new A049982();

@@ -3,13 +3,14 @@ package irvine.oeis.a177;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a120.A120944;
 
 /**
  * A177492 Products of squares of 2 or more distinct primes.
  * @author Georg Fischer
  */
-public class A177492 implements Sequence {
+public class A177492 extends Sequence1 {
 
   final Sequence mA120944 = new A120944();
   @Override

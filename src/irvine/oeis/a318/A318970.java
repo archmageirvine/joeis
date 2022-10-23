@@ -1,13 +1,13 @@
 package irvine.oeis.a318;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A318970 a(1) = 3; for n &gt; 1, a(n) = 2^(a(n-1) - 1) + 5.
  * @author Georg Fischer
  */
-public class A318970 implements Sequence {
+public class A318970 extends Sequence1 {
 
   private int mN;
   private int mA;

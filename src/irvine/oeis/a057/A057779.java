@@ -4,13 +4,13 @@ import irvine.math.lattice.Hexagonal;
 import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057779 Number of hexagonal polyominoes (or polyhexes, A000228) with perimeter 2n.
  * @author Sean A. Irvine
  */
-public class A057779 implements Sequence {
+public class A057779 extends Sequence1 {
 
   private final long[] mPerimeterCounts = new long[1000];
   private int mLeastChange = 0;

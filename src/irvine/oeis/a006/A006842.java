@@ -6,13 +6,13 @@ import java.util.Collections;
 import irvine.math.LongUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006842 Triangle read by rows: row n gives numerators of Farey series of order n.
  * @author Sean A. Irvine
  */
-public class A006842 implements Sequence {
+public class A006842 extends Sequence1 {
 
   private long mN = 0;
   private int mM = 0;

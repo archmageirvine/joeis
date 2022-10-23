@@ -3,14 +3,14 @@ package irvine.oeis.a137;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A137723 First occurrence of a set of n consecutive numbers having at least one prime gap in their factorization: a(n) = smallest number of this set.
  * @author Sean A. Irvine
  */
-public class A137723 implements Sequence {
+public class A137723 extends Sequence1 {
 
   private int mN = 0;
   private long mSearch = 9; // First decent gap is at 10

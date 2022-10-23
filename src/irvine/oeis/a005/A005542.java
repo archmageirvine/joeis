@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005542 Numbers k such that 10*3^k - 1 is prime.
  * @author Sean A. Irvine
  */
-public class A005542 implements Sequence {
+public class A005542 extends Sequence1 {
 
   private Z mA = Z.TEN;
   private long mN = -1;

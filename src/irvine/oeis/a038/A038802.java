@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038802 Factor 2n+1 = (2^m1)*(3^m2)*(5^m3)*...; a(n) = number of initial zero exponents.
  * @author Sean A. Irvine
  */
-public class A038802 implements Sequence {
+public class A038802 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 1;

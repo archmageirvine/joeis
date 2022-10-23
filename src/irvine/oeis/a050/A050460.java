@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050460 a(n) = Sum_{ d divides n, n/d=1 mod 4} d.
  * @author Sean A. Irvine
  */
-public class A050460 implements Sequence {
+public class A050460 extends Sequence1 {
 
   private long mN = 0;
 

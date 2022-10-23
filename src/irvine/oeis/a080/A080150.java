@@ -3,12 +3,13 @@ package irvine.oeis.a080;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A080150 Let m = Wonderful Demlo number A002477(n); a(n) = square of the sum of digits of m.
  * @author Georg Fischer
  */
-public class A080150 implements Sequence {
+public class A080150 extends Sequence1 {
 
   final Sequence mA080151 = new A080151();
   @Override

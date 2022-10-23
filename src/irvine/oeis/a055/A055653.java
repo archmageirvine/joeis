@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055653 Sum of phi(d) [A000010] over all unitary divisors d of n (that is, gcd(d,n/d) = 1).
  * @author Sean A. Irvine
  */
-public class A055653 implements Sequence {
+public class A055653 extends Sequence1 {
 
   protected long mN = 0;
 

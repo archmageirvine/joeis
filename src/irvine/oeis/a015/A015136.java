@@ -1,13 +1,13 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015136 Consider Fibonacci-type sequences b(0)=X, b(1)=Y, b(k)=b(k-1)+b(k-2) mod n; all are periodic; sequence gives minimal nontrivial period length.
  * @author Sean A. Irvine
  */
-public class A015136 implements Sequence {
+public class A015136 extends Sequence1 {
 
   private int mN = 0;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a075;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002496;
 
 /**
  * A075408 Perfect powers pp such that pp+1 is prime.
  * @author Georg Fischer
  */
-public class A075408 implements Sequence {
+public class A075408 extends Sequence1 {
 
   final Sequence mA002496 = new A002496();
   @Override

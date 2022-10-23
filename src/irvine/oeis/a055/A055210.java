@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055210 Sum of totients of square divisors of n.
  * @author Sean A. Irvine
  */
-public class A055210 implements Sequence {
+public class A055210 extends Sequence1 {
 
   private long mN = 0;
 

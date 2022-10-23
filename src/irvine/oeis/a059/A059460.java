@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059460 Iteration of unitary-sigma function: a(1) = 2, a(n) = usigma(a(n-1)).
  * @author Sean A. Irvine
  */
-public class A059460 implements Sequence {
+public class A059460 extends Sequence1 {
 
   private Z mA = null;
 

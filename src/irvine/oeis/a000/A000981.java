@@ -1,14 +1,14 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
  * A000981 Numbers beginning with letter 'n' in English.
  * @author Sean A. Irvine
  */
-public class A000981 implements Sequence {
+public class A000981 extends Sequence1 {
 
   private int mN = 8;
 

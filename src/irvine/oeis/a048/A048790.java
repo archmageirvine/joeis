@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048790 Array read by antidiagonals: T(n,k) = number of rooted n-dimensional polycubes with k cells, with no symmetries removed (n &gt;= 1, k &gt;= 1).
  * @author Sean A. Irvine
  */
-public class A048790 implements Sequence {
+public class A048790 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053580 Primes whose digits contain circles.
  * @author Sean A. Irvine
  */
-public class A053580 implements Sequence {
+public class A053580 extends Sequence1 {
 
   private static final char[] DIGITS = {'0', '6', '8', '9'};
   private long mN = 1;

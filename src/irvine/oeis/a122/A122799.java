@@ -3,13 +3,14 @@ package irvine.oeis.a122;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045930;
 
 /**
  * A122799 A P_7-stuttered arithmetic progression with a(n+1)=a(n) if n is not a heptagonal number, a(n+1)=a(n)+2 otherwise.
  * @author Georg Fischer
  */
-public class A122799 implements Sequence {
+public class A122799 extends Sequence1 {
 
   final Sequence mA045930 = new A045930();
   protected long mN;

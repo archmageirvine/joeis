@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A083384 a(n) = n*Sum(((k-1)/2)*k!*Stirling_2(n,k),k=1..n).
  * E.g.f.: x*(exp(x)-1)*exp(x)/(2-exp(x))^3
  * @author Georg Fischer
  */
-public class A083384 implements Sequence {
+public class A083384 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027864 Primes of the form k^2 + (k+1)^2 + (k+2)^2.
  * @author Sean A. Irvine
  */
-public class A027864 implements Sequence {
+public class A027864 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

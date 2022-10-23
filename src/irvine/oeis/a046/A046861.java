@@ -4,13 +4,13 @@ import irvine.graph.Graph;
 import irvine.graph.Vertex;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046861 Lower members of a "good pair" of the form (k, 2*k +- 1).
  * @author Sean A. Irvine
  */
-public class A046861 implements Sequence {
+public class A046861 extends Sequence1 {
 
   private int mN = 0;
 

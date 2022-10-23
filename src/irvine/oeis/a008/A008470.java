@@ -2,13 +2,13 @@ package irvine.oeis.a008;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008470 At least 3 out of 10m+1, 10m+3, 10m+7, 10m+9 are primes.
  * @author Sean A. Irvine
  */
-public class A008470 implements Sequence {
+public class A008470 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

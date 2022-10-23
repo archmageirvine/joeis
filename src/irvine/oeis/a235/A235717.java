@@ -3,13 +3,14 @@ package irvine.oeis.a235;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a016.A016069;
 
 /**
  * A235717 Squares which have one or more occurrences of exactly two different digits.
  * @author Georg Fischer
  */
-public class A235717 implements Sequence {
+public class A235717 extends Sequence1 {
 
   final Sequence mA016069 = new A016069();
   @Override

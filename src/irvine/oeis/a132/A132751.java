@@ -4,6 +4,7 @@ package irvine.oeis.a132;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000012;
 import irvine.oeis.a003.A003506;
 
@@ -11,7 +12,7 @@ import irvine.oeis.a003.A003506;
  * A132751 Triangle T(n, k) = 2/Beta(n-k+1, k) - 1, read by rows.
  * @author Georg Fischer
  */
-public class A132751 implements Sequence {
+public class A132751 extends Sequence1 {
 
   final Sequence mA000012 = new A000012();
   final Sequence mA003506 = new A003506();

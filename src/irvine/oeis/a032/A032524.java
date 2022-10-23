@@ -5,13 +5,13 @@ import java.util.TreeSet;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032524 Arrange digits of primes in ascending order (omitting any that contain 0's), sort list, remove duplicates.
  * @author Sean A. Irvine
  */
-public class A032524 implements Sequence {
+public class A032524 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final Fast mPrime = new Fast();

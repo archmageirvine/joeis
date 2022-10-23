@@ -3,13 +3,14 @@ package irvine.oeis.a095;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000224;
 
 /**
  * A095972 Number of quadratic nonresidues modulo n.
  * @author Georg Fischer
  */
-public class A095972 implements Sequence {
+public class A095972 extends Sequence1 {
 
   final Sequence mA000224 = new A000224();
   protected long mN;

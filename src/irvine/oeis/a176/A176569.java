@@ -3,13 +3,14 @@ package irvine.oeis.a176;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045344;
 
 /**
  * A176569 a(n) = (-1)^n + (n-th prime of the form 3k-+1).
  * @author Georg Fischer
  */
-public class A176569 implements Sequence {
+public class A176569 extends Sequence1 {
 
   final Sequence mA045344 = new A045344();
   protected long mN;

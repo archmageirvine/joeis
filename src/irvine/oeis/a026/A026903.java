@@ -1,13 +1,13 @@
 package irvine.oeis.a026;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A026903 a(n) is the number of multisets S of positive integers satisfying E(S)=n, where E = 2nd elementary symmetric function.
  * @author Sean A. Irvine
  */
-public class A026903 implements Sequence {
+public class A026903 extends Sequence1 {
 
   // After Andrew Howroyd
 

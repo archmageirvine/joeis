@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015737 Number of 3's in partitions of n into distinct parts.
  * @author Sean A. Irvine
  */
-public class A015737 implements Sequence {
+public class A015737 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final Polynomial<Z> mDen = RING.onePlusXToTheN(target());

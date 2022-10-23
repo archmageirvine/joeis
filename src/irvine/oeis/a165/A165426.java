@@ -3,12 +3,13 @@ package irvine.oeis.a165;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a166.A166444;
 /**
  * A165426 a(1) = 1, a(2) = 8, a(n) = product of the previous terms for n &gt;= 3.
  * @author Georg Fischer
  */
-public class A165426 implements Sequence {
+public class A165426 extends Sequence1 {
 
   private final Sequence mA166444 = new A166444();
   @Override

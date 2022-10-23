@@ -1,13 +1,13 @@
 package irvine.oeis.a301;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A301990 a(n) = 8*(n-1)*a(n-1) + Product_{k=0..n-2} (2*k-1) with a(1) = 1.
  * @author Georg Fischer
  */
-public class A301990 implements Sequence {
+public class A301990 extends Sequence1 {
 
   private int mN;
   private Z mA;

@@ -3,12 +3,13 @@ package irvine.oeis.a163;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 /**
  * A163750 a(n) = (n-th even nonprime mod n-th prime).
  * @author Georg Fischer
  */
-public class A163750 implements Sequence {
+public class A163750 extends Sequence1 {
 
   private final Sequence mA000040 = new A000040();
   private final Sequence mA163300 = new A163300();

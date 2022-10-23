@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055481 Numbers k for which there exists some m such that k = Sum_{i=1..1+floor(log_10(k))} binomial(m, d_i), where d_i is the i-th digit of k.
  * @author Sean A. Irvine
  */
-public class A055481 implements Sequence {
+public class A055481 extends Sequence1 {
 
   private long mN = 0;
 

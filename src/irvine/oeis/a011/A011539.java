@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011539 "9ish numbers": decimal representation contains at least one nine.
  * @author Sean A. Irvine
  */
-public class A011539 implements Sequence {
+public class A011539 extends Sequence1 {
 
   private long mN = 8;
 

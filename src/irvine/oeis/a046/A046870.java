@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046870 Sigma(1,n) divides Sigma(4,n).
  * @author Sean A. Irvine
  */
-public class A046870 implements Sequence {
+public class A046870 extends Sequence1 {
 
   private long mN = 0;
 

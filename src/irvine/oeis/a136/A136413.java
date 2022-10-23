@@ -3,13 +3,13 @@ package irvine.oeis.a136;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A136413 a(1)=1. a(n+1) = a(n) + (number of terms of this sequence that are &lt;= (1/n)sum{k=1 to n} a(k)).
  * @author Sean A. Irvine
  */
-public class A136413 implements Sequence {
+public class A136413 extends Sequence1 {
 
   private int mN = 0;
   private Z mSum = Z.ZERO;

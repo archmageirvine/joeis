@@ -3,13 +3,13 @@ package irvine.oeis.a334;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A334795 a(n) = Product_{d|n} lcm(d, tau(d)) where tau(k) is the number of divisors of k (A000005).
  * @author Georg Fischer
  */
-public class A334795 implements Sequence {
+public class A334795 extends Sequence1 {
 
   private int mN = 0;
 

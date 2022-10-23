@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024164 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, a+b+c=n such that c - b = b - a.
  * @author Sean A. Irvine
  */
-public class A024164 implements Sequence {
+public class A024164 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,12 +3,13 @@ package irvine.oeis.a343;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a011.A011772;
 /**
  * A343999 a(n) = A011772(n) mod 2, where A011772(n) is the smallest number m such that m(m+1)/2 is divisible by n.
  * @author Georg Fischer
  */
-public class A343999 implements Sequence {
+public class A343999 extends Sequence1 {
 
   private final Sequence mA011772 = new A011772();
   @Override

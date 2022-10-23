@@ -3,13 +3,13 @@ package irvine.oeis.a011;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011257 Geometric mean of phi(n) and sigma(n) is an integer.
  * @author Sean A. Irvine
  */
-public class A011257 implements Sequence {
+public class A011257 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

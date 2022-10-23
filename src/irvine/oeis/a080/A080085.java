@@ -3,6 +3,7 @@ package irvine.oeis.a080;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a014.A014499;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a014.A014499;
  * A080085 Number of factors of 2 in the factorial of the n-th prime, counted with multiplicity.
  * @author Georg Fischer
  */
-public class A080085 implements Sequence {
+public class A080085 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA014499 = new A014499();

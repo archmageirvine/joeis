@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.math.group.IntegerField;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059836 Triangle T(s,t), s&gt;=1, 1&lt;=t&lt;=s (see formula line).
  * @author Sean A. Irvine
  */
-public class A059836 implements Sequence {
+public class A059836 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

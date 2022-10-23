@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057699 Primes whose reversal is a cube.
  * @author Sean A. Irvine
  */
-public class A057699 implements Sequence {
+public class A057699 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private long mN = 3;

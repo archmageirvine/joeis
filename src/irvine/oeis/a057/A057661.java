@@ -3,12 +3,13 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051193;
 /**
  * A057661 a(n) = Sum_{k=1..n} lcm(n,k)/n.
  * @author Georg Fischer
  */
-public class A057661 implements Sequence {
+public class A057661 extends Sequence1 {
 
   private final Sequence mA051193 = new A051193();
   protected long mN;

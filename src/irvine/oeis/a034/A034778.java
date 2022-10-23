@@ -3,14 +3,14 @@ package irvine.oeis.a034;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000594;
 
 /**
  * A034778 Dirichlet convolution of Ramanujan numbers (A000594) with themselves.
  * @author Sean A. Irvine
  */
-public class A034778 implements Sequence {
+public class A034778 extends Sequence1 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A000594());
   private int mN = 0;

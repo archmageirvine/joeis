@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000341 Number of ways to pair up {1..2n} so sum of each pair is prime.
  * @author Sean A. Irvine
  */
-public class A000341 implements Sequence {
+public class A000341 extends Sequence1 {
 
   protected final Fast mPrime = new Fast();
   private int mN = 0;

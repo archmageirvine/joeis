@@ -3,13 +3,13 @@ package irvine.oeis.a050;
 import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050338 Number of ways of factoring n with 2 levels of parentheses.
  * @author Sean A. Irvine
  */
-public class A050338 implements Sequence {
+public class A050338 extends Sequence1 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A050336());
   private long mN = 0;

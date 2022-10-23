@@ -3,13 +3,13 @@ package irvine.oeis.a051;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051283 Numbers k such that if one writes k = Product p_i^e_i (p_i primes) and P = max p_i^e_i, then k/P &gt; P.
  * @author Sean A. Irvine
  */
-public class A051283 implements Sequence {
+public class A051283 extends Sequence1 {
 
   private long mN = 29;
 

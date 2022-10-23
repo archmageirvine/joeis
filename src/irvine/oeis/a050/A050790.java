@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050790 Consider the Diophantine equation x^3 + y^3 = z^3 - 1 (x &lt; y &lt; z) or 'Fermat near misses'. Arrange solutions by increasing values of z. Sequence gives values of x^3 + y^3 = z^3 - 1.
  * @author Sean A. Irvine
  */
-public class A050790 implements Sequence {
+public class A050790 extends Sequence1 {
 
   private long mN = 8;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a162;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007304;
 
 /**
  * A162144 Products of cubes of 3 distinct primes.
  * @author Georg Fischer
  */
-public class A162144 implements Sequence {
+public class A162144 extends Sequence1 {
 
   final Sequence mA007304 = new A007304();
   @Override

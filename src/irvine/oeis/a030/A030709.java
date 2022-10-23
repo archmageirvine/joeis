@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 import irvine.util.array.LongDynamicLongArray;
 
@@ -9,7 +9,7 @@ import irvine.util.array.LongDynamicLongArray;
  * A030709 Number of new terms at stage n in the formation of A030707.
  * @author Sean A. Irvine
  */
-public class A030709 implements Sequence {
+public class A030709 extends Sequence1 {
 
   private final DynamicLongArray mA = new DynamicLongArray();
   private final DynamicLongArray mB = new DynamicLongArray();

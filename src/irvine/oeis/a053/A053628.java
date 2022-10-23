@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053628 Smallest integer which is the harmonic mean of A005279(n) and an integer.
  * @author Sean A. Irvine
  */
-public class A053628 implements Sequence {
+public class A053628 extends Sequence1 {
 
   private long mN = 0;
 

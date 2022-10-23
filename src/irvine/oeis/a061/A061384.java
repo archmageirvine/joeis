@@ -2,13 +2,13 @@ package irvine.oeis.a061;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A061384 Numbers n such that sum of digits = number of digits.
  * @author Georg Fischer
  */
-public class A061384 implements Sequence {
+public class A061384 extends Sequence1 {
 
   private Z mK;
   private long mMult;

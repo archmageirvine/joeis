@@ -3,6 +3,7 @@ package irvine.oeis.a327;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a024.A024916;
 import irvine.oeis.a080.A080277;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a080.A080277;
  * A327327 Partial sums of the sum of nonpowers of 2 dividing n.
  * @author Georg Fischer
  */
-public class A327327 implements Sequence {
+public class A327327 extends Sequence1 {
 
   final Sequence mA024916 = new A024916();
   final Sequence mA080277 = new A080277();

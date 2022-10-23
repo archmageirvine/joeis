@@ -3,13 +3,13 @@ package irvine.oeis.a008;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008297 Triangle of Lah numbers.
  * @author Sean A. Irvine
  */
-public class A008297 implements Sequence {
+public class A008297 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

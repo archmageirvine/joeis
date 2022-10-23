@@ -3,13 +3,14 @@ package irvine.oeis.a325;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a048.A048272;
 
 /**
  * A325939 Expansion of Sum_{k&gt;=1} x^(2*k) / (1 + x^k).
  * @author Georg Fischer
  */
-public class A325939 implements Sequence {
+public class A325939 extends Sequence1 {
 
   final Sequence mA048272 = new A048272();
   @Override

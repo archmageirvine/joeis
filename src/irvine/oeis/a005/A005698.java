@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005698 Positions of remoteness 2 in Beans-Don't-Talk.
  * @author Sean A. Irvine
  */
-public class A005698 implements Sequence {
+public class A005698 extends Sequence1 {
 
   private int mIndexA = 1;
   private int mIndexB = 1;

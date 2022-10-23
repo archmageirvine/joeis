@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059663 Positions of the flipped bits in the sequence A059459.
  * @author Sean A. Irvine
  */
-public class A059663 implements Sequence {
+public class A059663 extends Sequence1 {
 
   private final HashSet<Z> mSeen = new HashSet<>();
   private Z mA = Z.TWO;

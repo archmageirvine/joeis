@@ -2,13 +2,13 @@ package irvine.oeis.a039;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039669 Numbers n &gt; 2 such that n - 2^k is a prime for all k &gt; 0 with 2^k &lt; n.
  * @author Sean A. Irvine
  */
-public class A039669 implements Sequence {
+public class A039669 extends Sequence1 {
 
   // There is no chance of finding the next term with this!
 

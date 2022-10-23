@@ -2,13 +2,13 @@ package irvine.oeis.a066;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A066417 Sum of anti-divisors of n.
  * @author Sean A. Irvine
  */
-public class A066417 implements Sequence {
+public class A066417 extends Sequence1 {
 
   private long mN = 0;
 

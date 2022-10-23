@@ -3,13 +3,13 @@ package irvine.oeis.a094;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.EuclidMullinSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A094153 a(n) is least prime p such that 7 is the n-th term in the Euclid-Mullin sequence starting at p, or 0 if no such prime p exists.
  * @author Sean A. Irvine
  */
-public class A094153 implements Sequence {
+public class A094153 extends Sequence1 {
 
   private int mN = 0;
 

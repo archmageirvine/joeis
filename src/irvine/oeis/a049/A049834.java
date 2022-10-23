@@ -1,13 +1,13 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049834 Triangular array T given by rows: T(n,k)=sum of quotients when Euclidean algorithm acts on n and k; for k=1,2,...,n; n=1,2,3,...; also number of subtraction steps when computing gcd(n,k) using subtractions rather than divisions.
  * @author Sean A. Irvine
  */
-public class A049834 implements Sequence {
+public class A049834 extends Sequence1 {
 
   // After R. J. Mathar
 

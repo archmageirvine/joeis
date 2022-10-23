@@ -6,13 +6,13 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005312 Maximal sum of inverse squares of the singular values of symmetric anti-Hadamard matrices of order n.
  * @author Sean A. Irvine
  */
-public class A005312 implements Sequence {
+public class A005312 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;

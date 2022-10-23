@@ -3,6 +3,7 @@ package irvine.oeis.a156;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005384;
 import irvine.oeis.a005.A005385;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a005.A005385;
  * A156592 Product p*q of two primes with q = 2*p + 1.
  * @author Georg Fischer
  */
-public class A156592 implements Sequence {
+public class A156592 extends Sequence1 {
 
   final Sequence mA005384 = new A005384();
   final Sequence mA005385 = new A005385();

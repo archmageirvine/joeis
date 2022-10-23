@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057875 Numbers of 2n-digit primes which are concatenations of n-digit primes (no leading zeros allowed).
  * @author Sean A. Irvine
  */
-public class A057875 implements Sequence {
+public class A057875 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mLim = 1;

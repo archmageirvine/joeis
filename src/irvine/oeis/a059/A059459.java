@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059459 a(1) = 2; a(n+1) is obtained by writing a(n) in binary and trying to complement just one bit, starting with the least significant bit, until a new prime is reached.
  * @author Sean A. Irvine
  */
-public class A059459 implements Sequence {
+public class A059459 extends Sequence1 {
 
   private final HashSet<Z> mSeen = new HashSet<>();
   private Z mA = null;

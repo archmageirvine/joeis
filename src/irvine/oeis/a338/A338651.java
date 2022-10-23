@@ -3,13 +3,13 @@ package irvine.oeis.a338;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A338651 Number of divisors of n which are greater than 7.
  * @author Georg Fischer
  */
-public class A338651 implements Sequence {
+public class A338651 extends Sequence1 {
 
   private int mN = 0;
 

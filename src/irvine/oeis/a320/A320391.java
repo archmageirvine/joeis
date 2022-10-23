@@ -3,13 +3,14 @@ package irvine.oeis.a320;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001838;
 
 /**
  * A320391 Numbers k such that phi(k - 2) = phi(k) - 2.
  * @author Georg Fischer
  */
-public class A320391 implements Sequence {
+public class A320391 extends Sequence1 {
 
   final Sequence mA001838 = new A001838();
   @Override

@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.AliquotSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A044050 a(n) = "length" of the aliquot sequence for n.
  * @author Sean A. Irvine
  */
-public class A044050 implements Sequence {
+public class A044050 extends Sequence1 {
 
   private long mN = 0;
 

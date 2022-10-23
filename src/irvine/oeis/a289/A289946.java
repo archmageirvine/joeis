@@ -4,13 +4,13 @@ package irvine.oeis.a289;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A289946 a(n) = Sum_{k=1..n} k!^6.
  * @author Georg Fischer
  */
-public class A289946 implements Sequence {
+public class A289946 extends Sequence1 {
 
   private int mN = 0;
 

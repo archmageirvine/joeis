@@ -3,13 +3,13 @@ package irvine.oeis.a043;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A043681 When cubed gives number composed just of the digits 0, 1, 2, 3.
  * @author Georg Fischer
  */
-public class A043681 implements Sequence {
+public class A043681 extends Sequence1 {
     
   private Z mN;
 

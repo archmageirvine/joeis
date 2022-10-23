@@ -2,14 +2,14 @@ package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A007370 Numbers k such that sigma(x) = k has a unique solution.
  * @author Sean A. Irvine
  */
-public class A007370 implements Sequence {
+public class A007370 extends Sequence1 {
 
   private final LongDynamicByteArray mA = new LongDynamicByteArray();
   private long mN = 0;

@@ -3,13 +3,13 @@ package irvine.oeis.a036;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036844 Numbers k such that k / sopfr(k) is an integer, where sopfr = sum-of-prime-factors, A001414.
  * @author Sean A. Irvine
  */
-public class A036844 implements Sequence {
+public class A036844 extends Sequence1 {
 
   private long mN = 1;
 

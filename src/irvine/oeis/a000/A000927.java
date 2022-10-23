@@ -6,13 +6,13 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000927 "First factor" (or relative class number) h- for cyclotomic field Q( exp(2 Pi / prime(n)) ).
  * @author Sean A. Irvine
  */
-public class A000927 implements Sequence {
+public class A000927 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 3;

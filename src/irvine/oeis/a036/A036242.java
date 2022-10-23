@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036242 Numerator of fraction equal to the continued fraction [0,2,4,...2n].
  * @author Sean A. Irvine
  */
-public class A036242 implements Sequence {
+public class A036242 extends Sequence1 {
 
   private long mN = -1;
   private Z mA = Z.ZERO;

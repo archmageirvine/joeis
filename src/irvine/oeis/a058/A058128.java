@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058128 a(1) = 1, a(n) = (n^n-n)/(n-1)^2 for n &gt;= 2.
  * @author Sean A. Irvine
  */
-public class A058128 implements Sequence {
+public class A058128 extends Sequence1 {
 
   protected long mN = 0;
 

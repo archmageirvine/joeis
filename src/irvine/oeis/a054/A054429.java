@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054429 Simple self-inverse permutation of natural numbers: List each block of 2^n numbers (from 2^n to 2^(n+1) - 1) in reverse order.
  * @author Sean A. Irvine
  */
-public class A054429 implements Sequence {
+public class A054429 extends Sequence1 {
 
   private long mT = 2;
   private long mN = 2;

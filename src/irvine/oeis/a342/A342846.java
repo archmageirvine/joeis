@@ -3,13 +3,13 @@ package irvine.oeis.a342;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A342846 Number of distinct odd numbers visible as proper substrings of n.
  * @author Sean A. Irvine
  */
-public class A342846 implements Sequence {
+public class A342846 extends Sequence1 {
 
   private long mN = 0;
 

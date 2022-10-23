@@ -3,13 +3,14 @@ package irvine.oeis.a124;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004737;
 
 /**
  * A124258 Triangle whose rows are sequences of increasing and decreasing squares: 1; 1,4,1; 1,4,9,4,1; ...
  * @author Georg Fischer
  */
-public class A124258 implements Sequence {
+public class A124258 extends Sequence1 {
 
   final Sequence mA004737 = new A004737();
   @Override

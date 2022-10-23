@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006145 Ruth-Aaron numbers (1): sum of prime divisors of n = sum of prime divisors of n+1.
  * @author Sean A. Irvine
  */
-public class A006145 implements Sequence {
+public class A006145 extends Sequence1 {
 
   private long mN = 4;
   private long mSum = 2;

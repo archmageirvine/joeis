@@ -1,14 +1,14 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A057116 k = a*b where ab is cyclic permutation of the digits of k.
  * @author Sean A. Irvine
  */
-public class A057116 implements Sequence {
+public class A057116 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private long mN = 9;

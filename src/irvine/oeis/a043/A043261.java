@@ -4,13 +4,14 @@ package irvine.oeis.a043;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006995;
 
 /**
  * A043261 Sum of the binary digits of the n-th base-2 palindrome.
  * @author Georg Fischer
  */
-public class A043261 implements Sequence {
+public class A043261 extends Sequence1 {
 
   protected int mRadix; // number system base
   protected Sequence mSeq; // underlying sequence for palindrome generation

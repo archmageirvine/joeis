@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A007336 Signature sequence of sqrt 2 (arrange the numbers i+j*x (i,j &gt;= 1) in increasing order; the sequence of i's is the signature of x).
  * @author Sean A. Irvine
  */
-public class A007336 implements Sequence {
+public class A007336 extends Sequence1 {
 
   protected CR getBase() {
     return CR.SQRT2;

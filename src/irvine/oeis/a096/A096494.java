@@ -3,13 +3,14 @@ package irvine.oeis.a096;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000006;
 
 /**
  * A096494 Largest value in the periodic part of the continued fraction of sqrt(prime(n)).
  * @author Georg Fischer
  */
-public class A096494 implements Sequence {
+public class A096494 extends Sequence1 {
 
   final Sequence mA000006 = new A000006();
   @Override

@@ -3,13 +3,13 @@ package irvine.oeis.a334;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A334809 a(n) = Product_{d|n} lcm(sigma(d), pod(d)) where sigma(k) is the sum of divisors of k (A000203) and pod(k) is the product of divisors of k (A007955).
  * @author Georg Fischer
  */
-public class A334809 implements Sequence {
+public class A334809 extends Sequence1 {
 
   private int mN = 0;
 

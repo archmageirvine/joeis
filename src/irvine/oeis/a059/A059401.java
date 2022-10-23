@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059401 Numbers that contain as proper substrings every maximal prime power dividing them.
  * @author Sean A. Irvine
  */
-public class A059401 implements Sequence {
+public class A059401 extends Sequence1 {
 
   private long mN = 1196;
 

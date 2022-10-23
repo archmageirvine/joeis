@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030474 n does not have the property that all even digits occur together and all odd digits occur together.
  * @author Sean A. Irvine
  */
-public class A030474 implements Sequence {
+public class A030474 extends Sequence1 {
 
   private long mN = 100;
 

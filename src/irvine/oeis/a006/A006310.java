@@ -5,13 +5,13 @@ import java.util.Arrays;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006310 a(n) = norm of Heilbronn sum NH_{p}, with p = prime(n).
  * @author Sean A. Irvine
  */
-public class A006310 implements Sequence {
+public class A006310 extends Sequence1 {
 
   // Based on C code by Ken Yamamura
 

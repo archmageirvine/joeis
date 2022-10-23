@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050299 Numbers n such that ((n-1)! + 1)/n is prime.
  * @author Sean A. Irvine
  */
-public class A050299 implements Sequence {
+public class A050299 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private boolean mFirst = true;

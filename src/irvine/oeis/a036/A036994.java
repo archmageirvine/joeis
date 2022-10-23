@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036994 Numbers k with the property that reading from right to left in the binary expansion of k, the number of 1's always stays ahead of the number of 0's.
  * @author Sean A. Irvine
  */
-public class A036994 implements Sequence {
+public class A036994 extends Sequence1 {
 
   private long mN = -1;
 

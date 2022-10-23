@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006429 Number of loopless tree-rooted planar maps with 4 vertices and n faces.
  * @author Sean A. Irvine
  */
-public class A006429 implements Sequence {
+public class A006429 extends Sequence1 {
 
   private long mN = 0;
 

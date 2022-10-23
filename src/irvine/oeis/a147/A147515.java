@@ -3,13 +3,14 @@ package irvine.oeis.a147;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a125.A125259;
 
 /**
  * A147515 Numbers n with property that (2n)^4+3 is prime.
  * @author Georg Fischer
  */
-public class A147515 implements Sequence {
+public class A147515 extends Sequence1 {
 
   final Sequence mA125259 = new A125259();
   @Override

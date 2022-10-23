@@ -6,13 +6,13 @@ import java.util.TreeMap;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048692 Triangle read by rows in which row n contains first n numbers with exactly n distinct prime factors.
  * @author Sean A. Irvine
  */
-public class A048692 implements Sequence {
+public class A048692 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final FactorSequence mFirst = new FactorSequence();

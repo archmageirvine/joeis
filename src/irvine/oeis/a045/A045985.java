@@ -2,14 +2,14 @@ package irvine.oeis.a045;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007504;
 
 /**
  * A045985 a(n) = least k such that sum of first k primes is n times a prime.
  * @author Sean A. Irvine
  */
-public class A045985 implements Sequence {
+public class A045985 extends Sequence1 {
 
   private final MemorySequence mSumP = MemorySequence.cachedSequence(new A007504());
   private Z mN = Z.ZERO;

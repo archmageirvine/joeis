@@ -6,13 +6,13 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032028 Number of rooted planar trees (n+1 nodes) where any 2 subtrees extending from same node are different.
  * @author Sean A. Irvine
  */
-public class A032028 implements Sequence {
+public class A032028 extends Sequence1 {
 
   protected static final PolynomialRingField<Q> Y_RING = new PolynomialRingField<>("y", Rationals.SINGLETON);
   protected static final PolynomialRingField<Polynomial<Q>> RING = new PolynomialRingField<>(Y_RING);

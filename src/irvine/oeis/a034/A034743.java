@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034743 a(n) = Sum_{d | n} mu(n/d) * Bell(d-1).
  * @author Sean A. Irvine
  */
-public class A034743 implements Sequence {
+public class A034743 extends Sequence1 {
 
   private int mN = 0;
 

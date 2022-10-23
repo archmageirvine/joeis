@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056983 Primes p which divide Sum_{i=1..m} i! for some m (see A125138).
  * @author Sean A. Irvine
  */
-public class A056983 implements Sequence {
+public class A056983 extends Sequence1 {
 
   protected final Fast mPrime = new Fast();
   private final ArrayList<Z> mFL = new ArrayList<>();

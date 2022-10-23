@@ -3,13 +3,14 @@ package irvine.oeis.a243;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005117;
 
 /**
  * A243351 Difference between 2n and the n-th squarefree number: a(n) = 2n - A005117(n).
  * @author Georg Fischer
  */
-public class A243351 implements Sequence {
+public class A243351 extends Sequence1 {
 
   final Sequence mA005117 = new A005117();
   protected long mN;

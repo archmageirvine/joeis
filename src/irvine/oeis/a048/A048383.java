@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048383 Numbers k such that replacing each nonzero digit d with the d-th prime (replacing each 0 digit with a 1) yields a square.
  * @author Sean A. Irvine
  */
-public class A048383 implements Sequence {
+public class A048383 extends Sequence1 {
 
   private long mN = -1;
 

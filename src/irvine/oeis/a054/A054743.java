@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054743 If n = Product p_i^e_i then p_i &lt; e_i (where e_i &gt; 0) for all i.
  * @author Sean A. Irvine
  */
-public class A054743 implements Sequence {
+public class A054743 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final TreeSet<Z> mA = new TreeSet<>();

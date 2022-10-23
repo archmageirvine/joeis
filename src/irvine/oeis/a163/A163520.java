@@ -3,6 +3,7 @@ package irvine.oeis.a163;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033676;
 import irvine.oeis.a033.A033677;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a033.A033677;
  * A163520 a(n) is the least integer x such that n &lt; x and the product n*x is divisible by an integer y where n &lt; y &lt; x.
  * @author Georg Fischer
  */
-public class A163520 implements Sequence {
+public class A163520 extends Sequence1 {
 
   final Sequence mA033676 = new A033676();
   final Sequence mA033677 = new A033677();

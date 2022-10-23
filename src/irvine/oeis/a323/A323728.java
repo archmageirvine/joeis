@@ -3,6 +3,7 @@ package irvine.oeis.a323;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033676;
 import irvine.oeis.a033.A033677;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a033.A033677;
  * A323728 a(n) is the smallest number k such that both k-2*n and k+2*n are squares.
  * @author Georg Fischer
  */
-public class A323728 implements Sequence {
+public class A323728 extends Sequence1 {
 
   final Sequence mA033676 = new A033676();
   final Sequence mA033677 = new A033677();

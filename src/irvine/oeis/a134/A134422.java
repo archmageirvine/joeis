@@ -3,13 +3,14 @@ package irvine.oeis.a134;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a009.A009003;
 
 /**
  * A134422 Square numbers which are sums of 2 distinct nonzero squares.
  * @author Georg Fischer
  */
-public class A134422 implements Sequence {
+public class A134422 extends Sequence1 {
 
   final Sequence mA009003 = new A009003();
   @Override

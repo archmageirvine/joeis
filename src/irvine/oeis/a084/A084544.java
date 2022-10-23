@@ -1,13 +1,13 @@
 package irvine.oeis.a084;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A084544 Alternate number system in base 4.
  * @author Sean A. Irvine
  */
-public class A084544 implements Sequence {
+public class A084544 extends Sequence1 {
 
   private long mN = 3;
   private long mLimit = 8;

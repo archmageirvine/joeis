@@ -4,14 +4,14 @@ import java.util.HashMap;
 
 import irvine.math.MutableInteger;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A054383 Number of (zeroless) pandigital fractions for 1/n.
  * @author Sean A. Irvine
  */
-public class A054383 implements Sequence {
+public class A054383 extends Sequence1 {
 
   private long mN = 0;
   private final HashMap<Integer, MutableInteger> mCounts = new HashMap<>();

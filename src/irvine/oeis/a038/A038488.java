@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038488 Sums of 3 distinct powers of 9.
  * @author Sean A. Irvine
  */
-public class A038488 implements Sequence {
+public class A038488 extends Sequence1 {
 
   private Z mN = null;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055629 Beginning of first run of at least n consecutive happy numbers.
  * @author Sean A. Irvine
  */
-public class A055629 implements Sequence {
+public class A055629 extends Sequence1 {
 
   private static final String[] TERMS = {
     "1",

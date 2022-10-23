@@ -3,13 +3,14 @@ package irvine.oeis.a229;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a020.A020696;
 
 /**
  * A229337 Sum of products of elements of nonempty subsets of divisors of n.
  * @author Georg Fischer
  */
-public class A229337 implements Sequence {
+public class A229337 extends Sequence1 {
 
   final Sequence mA020696 = new A020696();
   @Override

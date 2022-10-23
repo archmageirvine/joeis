@@ -3,6 +3,7 @@ package irvine.oeis.a177;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014499;
 import irvine.oeis.a035.A035103;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a035.A035103;
  * A177718 a(n) = |(number of 1's in binary representation of prime(n)) - (number of 0's in binary representation of prime(n))|.
  * @author Georg Fischer
  */
-public class A177718 implements Sequence {
+public class A177718 extends Sequence1 {
 
   final Sequence mA014499 = new A014499();
   final Sequence mA035103 = new A035103();

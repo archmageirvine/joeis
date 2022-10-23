@@ -3,13 +3,14 @@ package irvine.oeis.a270;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001651;
 
 /**
  * A270296 Numbers which are representable as a sum of five but no fewer consecutive nonnegative integers.
  * @author Georg Fischer
  */
-public class A270296 implements Sequence {
+public class A270296 extends Sequence1 {
 
   final Sequence mA001651 = new A001651();
   @Override

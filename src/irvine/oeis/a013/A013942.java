@@ -1,13 +1,13 @@
 package irvine.oeis.a013;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013942 Triangle of numbers T(n,k) = floor(2n/k), k=1..2n, read by rows.
  * @author Sean A. Irvine
  */
-public class A013942 implements Sequence {
+public class A013942 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

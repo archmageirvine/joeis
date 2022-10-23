@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058074 Integers m such that gcd(d(m),d(m+1)) = 1, where d(m) is number of positive divisors of m.
  * @author Sean A. Irvine
  */
-public class A058074 implements Sequence {
+public class A058074 extends Sequence1 {
 
   private long mN = 0;
   private Z mSigma = Z.ONE;

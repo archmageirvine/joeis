@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036780 Primes of the form n + Sum_{i=1..n} i!.
  * @author Sean A. Irvine
  */
-public class A036780 implements Sequence {
+public class A036780 extends Sequence1 {
 
   private long mN = 0;
   private Z mF = Z.ONE;

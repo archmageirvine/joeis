@@ -12,14 +12,14 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.StandardMultiply;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A007878 Number of terms in discriminant of generic polynomial of degree n.
  * @author Sean A. Irvine
  */
-public class A007878 implements Sequence {
+public class A007878 extends Sequence1 {
 
   // This might work but is stupidly slow ... It got as far as a(4).
 

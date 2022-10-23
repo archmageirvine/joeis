@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007432 Moebius transform applied thrice to natural numbers.
  * @author Sean A. Irvine
  */
-public class A007432 implements Sequence {
+public class A007432 extends Sequence1 {
 
   private long mN = 0;
 

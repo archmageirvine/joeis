@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055078 Write n as a sum of terms of the form (p^2-1)/24 where p is a prime &gt; 4; sequence gives those n which require at least 4 terms.
  * @author Sean A. Irvine
  */
-public class A055078 implements Sequence {
+public class A055078 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 32;

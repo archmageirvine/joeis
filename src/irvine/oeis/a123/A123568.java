@@ -1,13 +1,13 @@
 package irvine.oeis.a123;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A123568 Prime numbers of the form (10^n - 7)/3.
  * @author Sean A. Irvine
  */
-public class A123568 implements Sequence {
+public class A123568 extends Sequence1 {
 
   private Z mT = Z.ZERO;
 

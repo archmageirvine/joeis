@@ -3,13 +3,14 @@ package irvine.oeis.a345;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001043;
 import irvine.oeis.a023.A023523;
 /**
  * A345366 a(n) = (p*q+1) mod (p+q) where p=prime(n) and q=prime(n+1).
  * @author Georg Fischer
  */
-public class A345366 implements Sequence {
+public class A345366 extends Sequence1 {
 
   private final Sequence mA001043 = new A001043();
   private final Sequence mA023523 = new A023523();

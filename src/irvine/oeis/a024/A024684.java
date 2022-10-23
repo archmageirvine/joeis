@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024684 Number of ways prime(n) is a sum of three distinct primes.
  * @author Sean A. Irvine
  */
-public class A024684 implements Sequence {
+public class A024684 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

@@ -3,6 +3,7 @@ package irvine.oeis.a163;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005408;
 import irvine.oeis.a014.A014076;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a014.A014076;
  * A163506 a(n) = n-th odd nonprime * n-th odd number.
  * @author Georg Fischer
  */
-public class A163506 implements Sequence {
+public class A163506 extends Sequence1 {
 
   final Sequence mA005408 = new A005408();
   final Sequence mA014076 = new A014076();

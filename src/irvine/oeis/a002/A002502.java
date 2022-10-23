@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002502 Number of connected relations.
  * @author Sean A. Irvine
  */
-public class A002502 implements Sequence {
+public class A002502 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.FOUR;

@@ -12,13 +12,13 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006608 Number of n-node graphs not determined by their spectrum.
  * @author Sean A. Irvine
  */
-public class A006608 implements Sequence, GraphProcessor {
+public class A006608 extends Sequence1 implements GraphProcessor {
 
   private static final PolynomialRing<Z> POLY = new PolynomialRing<>(IntegerField.SINGLETON);
 

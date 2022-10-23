@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030431 Primes of form 10n+3.
  * @author Sean A. Irvine
  */
-public class A030431 implements Sequence {
+public class A030431 extends Sequence1 {
 
   private Z mN = Z.valueOf(-7);
 

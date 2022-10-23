@@ -1,13 +1,13 @@
 package irvine.oeis.a068;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A068849 a(1) = 41 ( the smallest prime beginning with 4) and then the smallest prime with leading digits containing a(n-1).
  * @author Georg Fischer
  */
-public class A068849 implements Sequence {
+public class A068849 extends Sequence1 {
 
   private int mN;
   private Z mA;

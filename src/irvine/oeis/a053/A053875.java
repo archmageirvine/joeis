@@ -9,14 +9,14 @@ import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A053875 Number of elements of order 4 in GL(n,2).
  * @author Sean A. Irvine
  */
-public class A053875 implements Sequence {
+public class A053875 extends Sequence1 {
 
   private int mN;
   private final Ring<Z> mFld;

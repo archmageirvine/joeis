@@ -4,14 +4,14 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a159.A159289;
 
 /**
  * A032199 "CIK" (necklace, indistinct, unlabeled) transform of 3,5,7...
  * @author Sean A. Irvine
  */
-public class A032199 implements Sequence {
+public class A032199 extends Sequence1 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A159289());
   private int mN = 0;

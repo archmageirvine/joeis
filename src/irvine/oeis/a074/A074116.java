@@ -3,12 +3,13 @@ package irvine.oeis.a074;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a066.A066343;
 /**
  * A074116 Largest n-digit power of 2.
  * @author Georg Fischer
  */
-public class A074116 implements Sequence {
+public class A074116 extends Sequence1 {
 
   private final Sequence mA066343 = new A066343();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036779 Greedy sequence such that no term is the average of three others.
  * @author Sean A. Irvine
  */
-public class A036779 implements Sequence {
+public class A036779 extends Sequence1 {
 
   private long mN = -1;
 

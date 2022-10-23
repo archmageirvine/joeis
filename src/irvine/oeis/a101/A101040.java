@@ -3,6 +3,7 @@ package irvine.oeis.a101;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a010.A010051;
 import irvine.oeis.a064.A064911;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a064.A064911;
  * A101040 If n has one or two prime-factors then 1 else 0.
  * @author Georg Fischer
  */
-public class A101040 implements Sequence {
+public class A101040 extends Sequence1 {
 
   final Sequence mA010051 = new A010051();
   final Sequence mA064911 = new A064911();

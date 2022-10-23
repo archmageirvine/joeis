@@ -3,13 +3,13 @@ package irvine.oeis.a038;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038546 Numbers n such that n-th Fibonacci number has initial digits n.
  * @author Sean A. Irvine
  */
-public class A038546 implements Sequence {
+public class A038546 extends Sequence1 {
 
   // After Benoit Cloitre
 

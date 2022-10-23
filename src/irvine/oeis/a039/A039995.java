@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039995 Number of distinct primes which occur as subsequences of the sequence of digits of n.
  * @author Sean A. Irvine
  */
-public class A039995 implements Sequence {
+public class A039995 extends Sequence1 {
 
   protected final Fast mPrime = new Fast();
   private long mN = 0;

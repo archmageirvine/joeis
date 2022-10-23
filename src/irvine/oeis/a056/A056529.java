@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056529 Number of iterations of sum of digits of square to reach 1, 9, 13 or 16.
  * @author Sean A. Irvine
  */
-public class A056529 implements Sequence {
+public class A056529 extends Sequence1 {
 
   private long mN = 0;
 

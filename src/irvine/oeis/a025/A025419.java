@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025419 Least sum of 3 distinct positive cubes in exactly n ways.
  * @author Sean A. Irvine
  */
-public class A025419 implements Sequence {
+public class A025419 extends Sequence1 {
 
   private long mN = 0;
 

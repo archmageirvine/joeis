@@ -3,13 +3,14 @@ package irvine.oeis.a098;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003991;
 
 /**
  * A098360 Multiplication table of the cube numbers read by antidiagonals.
  * @author Georg Fischer
  */
-public class A098360 implements Sequence {
+public class A098360 extends Sequence1 {
 
   final Sequence mA003991 = new A003991();
   @Override

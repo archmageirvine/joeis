@@ -3,13 +3,13 @@ package irvine.oeis.a053;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053014 a(n) is the smallest number which has n consecutive divisors k, k+1, ..., k+n-1 such that the quotients all begin with the same digit.
  * @author Sean A. Irvine
  */
-public class A053014 implements Sequence {
+public class A053014 extends Sequence1 {
 
   private static final class State implements Comparable<State> {
     private final Z mA;

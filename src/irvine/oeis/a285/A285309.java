@@ -3,6 +3,7 @@ package irvine.oeis.a285;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a035.A035316;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a035.A035316;
  * A285309 Sum of nonsquare divisors of n.
  * @author Georg Fischer
  */
-public class A285309 implements Sequence {
+public class A285309 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA035316 = new A035316();

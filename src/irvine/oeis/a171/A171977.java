@@ -3,13 +3,14 @@ package irvine.oeis.a171;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001511;
 
 /**
  * A171977 a(n) = 2^(k+1) where 2^k is the highest power of 2 dividing n.
  * @author Georg Fischer
  */
-public class A171977 implements Sequence {
+public class A171977 extends Sequence1 {
 
   final Sequence mA001511 = new A001511();
   @Override

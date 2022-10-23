@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A346629 Number of n-digit positive integers that are the product of two integers ending with 2.
  * E.g.f.: (9*exp(10*x) - 9 + 110*x - 50*x^2)/200
  * @author Georg Fischer
  */
-public class A346629 implements Sequence {
+public class A346629 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

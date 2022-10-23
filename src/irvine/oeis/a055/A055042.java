@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055042 Numbers of the form 2^(2i+1)*(8*j+5).
  * @author Sean A. Irvine
  */
-public class A055042 implements Sequence {
+public class A055042 extends Sequence1 {
 
   private final TreeSet<Long> mA = new TreeSet<>();
   private long mN = 10;

@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024194 [ (4th elementary symmetric function of S(n))/(2nd elementary symmetric of S(n)) ], where S(n) = {3,4, ..., n+5}.
  * @author Sean A. Irvine
  */
-public class A024194 implements Sequence {
+public class A024194 extends Sequence1 {
 
   private long mN = 0;
 

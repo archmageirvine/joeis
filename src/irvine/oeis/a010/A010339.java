@@ -4,13 +4,13 @@ import java.util.List;
 
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A010339 Numbers k such that the continued fraction for sqrt(k) has period 9.
  * @author Sean A. Irvine
  */
-public class A010339 implements Sequence {
+public class A010339 extends Sequence1 {
 
   private Z mN = Z.valueOf(105);
 

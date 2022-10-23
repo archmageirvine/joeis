@@ -3,13 +3,14 @@ package irvine.oeis.a092;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004754;
 
 /**
  * A092754 a(1)=1, a(2n)=2a(n)+1, a(2n+1)=2a(n)+2.
  * @author Georg Fischer
  */
-public class A092754 implements Sequence {
+public class A092754 extends Sequence1 {
 
   final Sequence mA004754 = new A004754();
   @Override

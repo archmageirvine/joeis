@@ -3,13 +3,13 @@ package irvine.oeis.a053;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053443 x^2 + y^2 does not take on all possible values mod n.
  * @author Sean A. Irvine
  */
-public class A053443 implements Sequence {
+public class A053443 extends Sequence1 {
 
   protected long mN = 3;
 

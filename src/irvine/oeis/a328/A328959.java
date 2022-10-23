@@ -3,6 +3,7 @@ package irvine.oeis.a328;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a307.A307408;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a307.A307408;
  * A328959 a(n) = sigma_0(n) - 2 - (omega(n) - 1) * nu(n), where sigma_0 = A000005, nu = A001221, omega = A001222.
  * @author Georg Fischer
  */
-public class A328959 implements Sequence {
+public class A328959 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA307408 = new A307408();

@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023072 Numbers k such that k and 6*k are anagrams in base 7 (written in base 7).
  * @author Sean A. Irvine
  */
-public class A023072 implements Sequence {
+public class A023072 extends Sequence1 {
 
   private long mN = 0;
 

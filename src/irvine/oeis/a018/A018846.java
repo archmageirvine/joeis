@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A018846 Strobogrammatic numbers: numbers that are the same upside down (using calculator-style numerals).
  * @author Sean A. Irvine
  */
-public class A018846 implements Sequence {
+public class A018846 extends Sequence1 {
 
   static final char[] INVERT = {'0', '1', '2', '.', '.', '5', '9', '.', '8', '6'};
   private Z mN = Z.NEG_ONE;

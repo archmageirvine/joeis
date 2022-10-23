@@ -4,13 +4,13 @@ import java.util.List;
 
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020363 Numbers k such that the continued fraction for sqrt(k) has period 24.
  * @author Sean A. Irvine
  */
-public class A020363 implements Sequence {
+public class A020363 extends Sequence1 {
 
   private Z mN = Z.valueOf(270);
 

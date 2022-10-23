@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050521 Number of factorizations of (n,2*n) into pairs (k,l).
  * @author Sean A. Irvine
  */
-public class A050521 implements Sequence {
+public class A050521 extends Sequence1 {
 
   private int mN = 0;
   private long[][] mCount = new long[0][0];

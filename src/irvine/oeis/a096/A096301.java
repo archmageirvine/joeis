@@ -2,13 +2,13 @@ package irvine.oeis.a096;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A096301 (Product of nonzero digits(sum of digits(n^n)).
  * @author Georg Fischer
  */
-public class A096301 implements Sequence {
+public class A096301 extends Sequence1 {
 
   private int mN = 0;
 

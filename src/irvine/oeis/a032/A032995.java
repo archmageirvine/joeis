@@ -3,13 +3,13 @@ package irvine.oeis.a032;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032995 If d,e are consecutive digits of n in base 7, then |d-e|&gt;=5.
  * @author Sean A. Irvine
  */
-public class A032995 implements Sequence {
+public class A032995 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
 

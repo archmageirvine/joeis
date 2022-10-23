@@ -4,12 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A102191 Iccanobirt semiprimes (1 of 15): Semiprime numbers in A102111.
  * @author Georg Fischer
  */
-public class A102191 implements Sequence {
+public class A102191 extends Sequence1 {
 
   private final Sequence mSeq;
 

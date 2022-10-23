@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034180 Numbers m with property that rotating digits of m right gives k*m + 1 for some k &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A034180 implements Sequence {
+public class A034180 extends Sequence1 {
 
   private long mN = 102;
   private long mMul = 100;

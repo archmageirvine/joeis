@@ -5,13 +5,13 @@ import irvine.math.IntegerUtils;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056373 Number of step shifted (decimated) sequences using a maximum of four different symbols.
  * @author Sean A. Irvine
  */
-public class A056373 implements Sequence {
+public class A056373 extends Sequence1 {
 
   private int mN = 0;
 

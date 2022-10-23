@@ -3,6 +3,7 @@ package irvine.oeis.a026;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002808;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002808;
  * A026239 Beginning with the natural numbers, swap the k-th prime and k-th composite.
  * @author Sean A. Irvine
  */
-public class A026239 implements Sequence {
+public class A026239 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final Sequence mSeqPrimes = new A000040();

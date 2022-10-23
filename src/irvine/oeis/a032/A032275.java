@@ -2,13 +2,13 @@ package irvine.oeis.a032;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032275 Number of bracelets (turnover necklaces) of n beads of 4 colors.
  * @author Sean A. Irvine
  */
-public class A032275 implements Sequence {
+public class A032275 extends Sequence1 {
 
   private int mN = 0;
 

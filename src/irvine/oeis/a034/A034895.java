@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034895 Dropping any digit gives a prime number.
  * @author Sean A. Irvine
  */
-public class A034895 implements Sequence {
+public class A034895 extends Sequence1 {
 
   private Z mN = Z.valueOf(21);
 

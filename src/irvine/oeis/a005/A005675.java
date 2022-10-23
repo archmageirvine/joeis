@@ -6,14 +6,14 @@ import java.util.List;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A005675 Deficit in peeling rinds.
  * @author Sean A. Irvine
  */
-public class A005675 implements Sequence {
+public class A005675 extends Sequence1 {
 
   // This works, but very slow at generating terms
 

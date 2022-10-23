@@ -3,13 +3,14 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a235.A235127;
 
 /**
  * A065883 Remove factors of 4 from n (i.e., write n in base 4, drop final zeros, then rewrite in decimal).
  * @author Georg Fischer
  */
-public class A065883 implements Sequence {
+public class A065883 extends Sequence1 {
 
   final Sequence mA235127 = new A235127();
   protected long mN;

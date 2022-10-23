@@ -3,13 +3,13 @@ package irvine.oeis.a145;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A145119 a(n) = Product_{k=1..n-1} (ceiling(n/k) - ceiling(n/k) mod 2).
  * @author Georg Fischer
  */
-public class A145119 implements Sequence {
+public class A145119 extends Sequence1 {
 
   private int mN = 0;
 

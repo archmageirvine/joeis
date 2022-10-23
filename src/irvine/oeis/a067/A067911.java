@@ -2,13 +2,13 @@ package irvine.oeis.a067;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A067911 Product of gcd(k,n) for 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
-public class A067911 implements Sequence {
+public class A067911 extends Sequence1 {
 
   private long mN = 0;
 

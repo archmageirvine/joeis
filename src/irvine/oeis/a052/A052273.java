@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052273 Number of distinct 4th powers mod n.
  * @author Sean A. Irvine
  */
-public class A052273 implements Sequence {
+public class A052273 extends Sequence1 {
 
   private long mN = 0;
 

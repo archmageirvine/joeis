@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023188 Lonely (or isolated) primes: least prime of distance n from nearest prime (n = 1 or even).
  * @author Sean A. Irvine
  */
-public class A023188 implements Sequence {
+public class A023188 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mD = -1;

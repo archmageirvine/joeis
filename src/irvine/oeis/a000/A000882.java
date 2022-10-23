@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000882 Number of twin prime pairs &lt;= product of first n primes.
  * @author Sean A. Irvine
  */
-public class A000882 implements Sequence {
+public class A000882 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mProduct = Z.ONE;

@@ -10,13 +10,13 @@ import irvine.math.polynomial.HararyMultiply;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001325 Number of equivalence classes of 3-valued Post functions of n variables under action of semi-direct product of symmetric group S_n and complementing group D(n,3).
  * @author Sean A. Irvine
  */
-public class A001325 implements Sequence {
+public class A001325 extends Sequence1 {
 
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 

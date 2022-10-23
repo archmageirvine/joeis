@@ -3,13 +3,13 @@ package irvine.oeis.a019;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019332 Lengths of quantum cellular automata that cycle through all possible values of the QCA vector.
  * @author Sean A. Irvine
  */
-public class A019332 implements Sequence {
+public class A019332 extends Sequence1 {
 
   private int mN = 0;
 

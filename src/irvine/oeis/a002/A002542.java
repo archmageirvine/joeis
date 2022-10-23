@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002542 Number of two-valued complete Post functions of n variables.
  * @author Sean A. Irvine
  */
-public class A002542 implements Sequence {
+public class A002542 extends Sequence1 {
 
   private int mN = 0;
 

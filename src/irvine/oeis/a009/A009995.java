@@ -3,13 +3,13 @@ package irvine.oeis.a009;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009995 Numbers with digits in strictly decreasing order. From the Macaulay expansion of n.
  * @author Sean A. Irvine
  */
-public class A009995 implements Sequence {
+public class A009995 extends Sequence1 {
 
   private final TreeSet<Z> mSeq = new TreeSet<>();
 

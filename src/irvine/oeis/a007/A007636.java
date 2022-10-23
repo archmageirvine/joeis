@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007636 Numbers k such that k^2 + k + 17 is composite.
  * @author Sean A. Irvine
  */
-public class A007636 implements Sequence {
+public class A007636 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

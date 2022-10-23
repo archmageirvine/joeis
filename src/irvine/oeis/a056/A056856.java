@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056856 Triangle of numbers related to rooted trees and unrooted planar trees.
  * @author Sean A. Irvine
  */
-public class A056856 implements Sequence {
+public class A056856 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

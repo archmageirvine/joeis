@@ -2,12 +2,13 @@ package irvine.oeis.a009;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009070 Ordered sides of Pythagorean triangles.
  * @author Sean A. Irvine
  */
-public class A009070 implements Sequence {
+public class A009070 extends Sequence1 {
 
   private final Sequence mSeqA = new A009000();
   private final Sequence mSeqB = new A009041();

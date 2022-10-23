@@ -3,13 +3,13 @@ package irvine.oeis.a042;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A042938 Reverse or triple: if reverse(a(n)) &gt; a(n), a(n+1) = reverse(a(n)), else a(n+1) = 3*a(n).
  * @author Georg Fischer
  */
-public class A042938 implements Sequence {
+public class A042938 extends Sequence1 {
 
   protected Z mTerm; // a(n)
   

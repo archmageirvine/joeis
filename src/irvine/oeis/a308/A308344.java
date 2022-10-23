@@ -3,13 +3,14 @@ package irvine.oeis.a308;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001359;
 
 /**
  * A308344 a(n) = (A001359(n+1)^2 - 1)/24, where A001359 = lesser of twin primes; or: pentagonal numbers (A000326) whose indices are twin ranks (A002822).
  * @author Georg Fischer
  */
-public class A308344 implements Sequence {
+public class A308344 extends Sequence1 {
 
   final Sequence mA001359 = new A001359();
   /** Construct the sequence. */

@@ -3,13 +3,13 @@ package irvine.oeis.a014;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014575 Vampire numbers (definition 2): numbers n with an even number of digits which have a factorization n = i*j where i and j have the same number of digits and the multiset of the digits of n coincides with the multiset of the digits of i and j.
  * @author Sean A. Irvine
  */
-public class A014575 implements Sequence {
+public class A014575 extends Sequence1 {
 
   private Z mN = Z.valueOf(start() - 1);
   private Z mJump = Z.valueOf(10000);

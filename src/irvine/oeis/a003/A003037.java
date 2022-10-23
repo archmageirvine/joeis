@@ -7,14 +7,14 @@ import java.util.List;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A003037 Smallest number of complexity n: smallest number requiring n 1's to build using +, * and ^.
  * @author Sean A. Irvine
  */
-public class A003037 implements Sequence {
+public class A003037 extends Sequence1 {
 
   private long mPowBound = 10;
   private long mBound = 1L << mPowBound;

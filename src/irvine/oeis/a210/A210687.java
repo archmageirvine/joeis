@@ -1,13 +1,13 @@
 package irvine.oeis.a210;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A210687 The number of triangles in an equipotential triangle divided by medians into n rows of smaller triangles.
  * @author Sean A. Irvine
  */
-public class A210687 implements Sequence {
+public class A210687 extends Sequence1 {
 
   private int mN = 0;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a085;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006881;
 
 /**
  * A085986 Squares of the squarefree semiprimes (p^2*q^2).
  * @author Georg Fischer
  */
-public class A085986 implements Sequence {
+public class A085986 extends Sequence1 {
 
   final Sequence mA006881 = new A006881();
   @Override

@@ -6,13 +6,13 @@ import irvine.math.api.RationalSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003633 The sequence 2^(1-n)*a(n) is fixed (up to signs) by Stirling2 transform.
  * @author Sean A. Irvine
  */
-public class A003633 implements Sequence, RationalSequence {
+public class A003633 extends Sequence1 implements RationalSequence {
 
   private final ArrayList<Q> mTerms = new ArrayList<>();
 

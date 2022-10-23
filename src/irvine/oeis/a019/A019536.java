@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019536 Number of length n necklaces with integer entries that cover an initial interval of positive integers.
  * @author Sean A. Irvine
  */
-public class A019536 implements Sequence {
+public class A019536 extends Sequence1 {
 
   private long mN = 0;
 

@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057228 a(n) = u * v = x * y with (u - v) = (x + y) = A009000(n) (u&gt;v, y&gt;0, v&gt;0, x&gt;0, y&gt;0).
  * @author Sean A. Irvine
  */
-public class A057228 implements Sequence {
+public class A057228 extends Sequence1 {
 
   private long mN = 4;
   private final TreeSet<Z> mA = new TreeSet<>();

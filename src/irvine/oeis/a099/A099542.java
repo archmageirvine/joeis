@@ -3,13 +3,13 @@ package irvine.oeis.a099;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A099542 Rhonda numbers to base 10.
  * @author Georg Fischer
  */
-public class A099542 implements Sequence {
+public class A099542 extends Sequence1 {
 
   private int mBase;
   protected Z mSopfr;

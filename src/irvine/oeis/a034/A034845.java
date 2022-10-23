@@ -3,14 +3,14 @@ package irvine.oeis.a034;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A034845 Primes of the form iii...ijjj...j, i != j.
  * @author Sean A. Irvine
  */
-public class A034845 implements Sequence {
+public class A034845 extends Sequence1 {
 
   private static final char[] SUFFIX = {'1', '3', '7', '9'};
   private TreeSet<Z> mA = new TreeSet<>();

@@ -3,6 +3,7 @@ package irvine.oeis.a118;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a020.A020882;
 import irvine.oeis.a046.A046086;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a046.A046086;
  * A118962 Difference between short leg and hypotenuse in primitive Pythagorean triangles, sorted on hypotenuse (A020882), then on long leg (A046087).
  * @author Georg Fischer
  */
-public class A118962 implements Sequence {
+public class A118962 extends Sequence1 {
 
   final Sequence mA020882 = new A020882();
   final Sequence mA046086 = new A046086();

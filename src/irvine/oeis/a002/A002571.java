@@ -1,14 +1,14 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 
 /**
  * A002571 From a definite integral.
  * @author Sean A. Irvine
  */
-public class A002571 implements Sequence {
+public class A002571 extends Sequence1 {
 
   private final Z[] mSeq = {Z.ZERO, Z.ZERO, Z.ZERO, Z.ONE, null, null};
   private final int mLast = mSeq.length - 1;

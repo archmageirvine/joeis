@@ -3,13 +3,13 @@ package irvine.oeis.a045;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045701 Number of ways n can be written as a sum of a square of a prime and a cube of a prime.
  * @author Sean A. Irvine
  */
-public class A045701 implements Sequence {
+public class A045701 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   protected long mN = 0;

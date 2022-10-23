@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007407 a(n) = denominator of Sum_{k=1..n} 1/k^2.
  * @author Sean A. Irvine
  */
-public class A007407 implements Sequence {
+public class A007407 extends Sequence1 {
 
   private long mN = 0;
   private Q mSum = Q.ZERO;

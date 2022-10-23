@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023196 Nondeficient numbers: numbers k such that sigma(k) &gt;= 2k; union of A000396 and A005101.
  * @author Sean A. Irvine
  */
-public class A023196 implements Sequence {
+public class A023196 extends Sequence1 {
 
   private Z mN = Z.FIVE;
 

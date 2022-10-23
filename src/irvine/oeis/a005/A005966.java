@@ -5,13 +5,13 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.nauty.Multigraph;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005966 Number of trivalent planar loopless multigraphs with 2n nodes.
  * @author Sean A. Irvine
  */
-public class A005966 implements Sequence, GraphProcessor {
+public class A005966 extends Sequence1 implements GraphProcessor {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;

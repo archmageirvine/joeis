@@ -1,13 +1,13 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035239 Smallest number that contains the numbers from 1 to n as substrings.
  * @author Sean A. Irvine
  */
-public class A035239 implements Sequence {
+public class A035239 extends Sequence1 {
 
   // This is brute force, not very smart
 

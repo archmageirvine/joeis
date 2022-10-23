@@ -3,13 +3,14 @@ package irvine.oeis.a089;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a022.A022007;
 
 /**
  * A089157 Numbers n such that 30*n+7, 30*n+11, 30*n+13, 30*n+17, 30*n+19 are consecutive primes.
  * @author Georg Fischer
  */
-public class A089157 implements Sequence {
+public class A089157 extends Sequence1 {
 
   final Sequence mA022007 = new A022007();
   @Override

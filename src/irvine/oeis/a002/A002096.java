@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000607;
 
 /**
  * A002096 Mixed partitions of n.
  * @author Sean A. Irvine
  */
-public class A002096 implements Sequence {
+public class A002096 extends Sequence1 {
 
   private final A000607 mPrime = new A000607();
   private final A002095 mComposite = new A002095();

@@ -1,13 +1,13 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052081 Numbers k such that k^2 is a square whose decimal expansion's digits are grouped together.
  * @author Sean A. Irvine
  */
-public class A052081 implements Sequence {
+public class A052081 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

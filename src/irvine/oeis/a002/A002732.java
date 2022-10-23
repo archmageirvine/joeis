@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002732 Numbers n such that (4n^2 + 1)/5 is prime.
  * @author Sean A. Irvine
  */
-public class A002732 implements Sequence {
+public class A002732 extends Sequence1 {
 
   private Z mN = Z.ONE;
   private int mAdd = 3;

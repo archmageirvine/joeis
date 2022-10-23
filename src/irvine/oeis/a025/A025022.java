@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025022 Numbers whose least quadratic nonresidue (A020649) is 5.
  * @author Sean A. Irvine
  */
-public class A025022 implements Sequence {
+public class A025022 extends Sequence1 {
 
   private long mN = 22;
 

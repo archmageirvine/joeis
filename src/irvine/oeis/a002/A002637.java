@@ -1,14 +1,14 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
  * A002637 Number of partitions of n into not more than 5 pentagonal numbers.
  * @author Sean A. Irvine
  */
-public class A002637 implements Sequence {
+public class A002637 extends Sequence1 {
 
   private final LongDynamicIntArray mSeq = new LongDynamicIntArray();
   private long mN = 0;

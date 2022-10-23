@@ -3,13 +3,13 @@ package irvine.oeis.a057;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057532 n is odd and sum of digits of n equals the numbers of divisors of n.
  * @author Sean A. Irvine
  */
-public class A057532 implements Sequence {
+public class A057532 extends Sequence1 {
 
   private long mN = -1;
 

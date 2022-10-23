@@ -3,12 +3,13 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a050.A050449;
 /**
  * A326049 a(n) = n - A050449(n), where A050449 is the sum of divisors of the form 4k+1.
  * @author Georg Fischer
  */
-public class A326049 implements Sequence {
+public class A326049 extends Sequence1 {
 
   private final Sequence mA050449 = new A050449();
   protected long mN;

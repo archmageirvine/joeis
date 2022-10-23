@@ -5,13 +5,13 @@ import java.util.Map;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058524 Each c(i) is "multiply" (*) or "divide" (/). a(n) is number of choices for c(1), ..., c(n-1) so that 1 c(1) 2 c(2) 3,.., c(n-1) n is an integer.
  * @author Sean A. Irvine
  */
-public class A058524 implements Sequence {
+public class A058524 extends Sequence1 {
 
   private HashMap<Q, Long> mCounts = new HashMap<>();
   private long mN = 0;

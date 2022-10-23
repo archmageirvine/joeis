@@ -1,14 +1,14 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A029995 Squares which are palindromes in base 9.
  * @author Sean A. Irvine
  */
-public class A029995 implements Sequence {
+public class A029995 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

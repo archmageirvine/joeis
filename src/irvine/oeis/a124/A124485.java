@@ -3,13 +3,14 @@ package irvine.oeis.a124;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005384;
 
 /**
  * A124485 Numbers n such that 2n-1 and 4n-1 are primes.
  * @author Georg Fischer
  */
-public class A124485 implements Sequence {
+public class A124485 extends Sequence1 {
 
   final Sequence mA005384 = new A005384();
   /** Construct the sequence. */

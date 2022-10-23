@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053783 (1+e)-harmonic numbers: harmonic mean of (1+e)-divisors is an integer.
  * @author Sean A. Irvine
  */
-public class A053783 implements Sequence {
+public class A053783 extends Sequence1 {
 
   // After Amiram Eldar
 

@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055650 Numbers k such that k | phi(k)*d(k) - sigma(k), where phi=A000010, d=A000005 and sigma=A000203.
  * @author Sean A. Irvine
  */
-public class A055650 implements Sequence {
+public class A055650 extends Sequence1 {
 
   private long mN = 0;
 

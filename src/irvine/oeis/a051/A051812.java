@@ -3,14 +3,14 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051812 Number of n-digit numbers with nonzero multiplicative digital root 1.
  * Caution, works for n &lt; 10^18 only!
  * @author Georg Fischer
  */
-public class A051812 implements Sequence {
+public class A051812 extends Sequence1 {
 
   protected long mN; // current index
   protected long mPow10; // 10^n

@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002981 Numbers k such that k! + 1 is prime.
  * @author Sean A. Irvine
  */
-public class A002981 implements Sequence {
+public class A002981 extends Sequence1 {
 
   private long mN = -1;
   private Z mF = Z.ONE;

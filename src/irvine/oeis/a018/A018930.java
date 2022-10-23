@@ -2,13 +2,13 @@ package irvine.oeis.a018;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A018930 a(1)=3; for n&gt;1, a(n) is smallest positive integer such that a(1)^2+...+a(n)^2 = m^2 for some m.
  * @author Sean A. Irvine
  */
-public class A018930 implements Sequence {
+public class A018930 extends Sequence1 {
 
   // After Max Alekseyev
 

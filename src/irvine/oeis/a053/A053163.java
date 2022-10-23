@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053163 n+cototient(n) produces these powers of 2 in order of magnitude.
  * @author Sean A. Irvine
  */
-public class A053163 implements Sequence {
+public class A053163 extends Sequence1 {
 
   private long mN = 0;
 

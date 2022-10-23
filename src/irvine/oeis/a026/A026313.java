@@ -3,13 +3,13 @@ package irvine.oeis.a026;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A026313 Numbers k such that |sin(k)*sin(k+2)| &lt; (sin(k+1))^2.
  * @author Sean A. Irvine
  */
-public class A026313 implements Sequence {
+public class A026313 extends Sequence1 {
 
   private static final ComputableReals C = ComputableReals.SINGLETON;
   private long mN = -1;

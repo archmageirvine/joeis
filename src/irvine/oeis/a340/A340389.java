@@ -7,14 +7,14 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A340389 Number at the apex of Recam\u00e1n's triangle of primes and squares with n rows.
  * @author Sean A. Irvine
  */
-public class A340389 implements Sequence {
+public class A340389 extends Sequence1 {
 
   private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;

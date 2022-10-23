@@ -3,12 +3,13 @@ package irvine.oeis.a216;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A216361 a(n) = (A216315(n) - 1)/118.
  * @author Georg Fischer
  */
-public class A216361 implements Sequence {
+public class A216361 extends Sequence1 {
 
   final Sequence mA216315 = new A216315();
   @Override

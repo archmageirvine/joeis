@@ -5,7 +5,7 @@ package irvine.oeis.a038;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000578;
 import irvine.oeis.a001.A001001;
 
@@ -14,7 +14,7 @@ import irvine.oeis.a001.A001001;
  * A038991 Number of sublattices of index n in generic 4-dimensional lattice.
  * @author Georg Fischer
  */
-public class A038991 implements Sequence {
+public class A038991 extends Sequence1 {
 
   private final MemorySequence mSeq1 = MemorySequence.cachedSequence(new A001001());
   private final MemorySequence mSeq2 = MemorySequence.cachedSequence(new A000578());

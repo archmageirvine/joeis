@@ -1,14 +1,14 @@
 package irvine.oeis.a091;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A091257 Multiplication table A x B computed for polynomials over GF(2), where (A,B) runs as (1,1),(1,2),(2,1),(1,3),(2,2),(3,1),...
  * Adapted from A048720.
  * @author Georg Fischer
  */
-public class A091257 implements Sequence {
+public class A091257 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 1;

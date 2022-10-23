@@ -3,13 +3,14 @@ package irvine.oeis.a325;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002496;
 
 /**
  * A325437 Final digit of primes of the form k^2 + 1.
  * @author Georg Fischer
  */
-public class A325437 implements Sequence {
+public class A325437 extends Sequence1 {
 
   final Sequence mA002496 = new A002496();
   @Override

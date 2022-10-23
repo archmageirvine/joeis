@@ -1,13 +1,13 @@
 package irvine.oeis.a074;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A074983 Successive factors of the Fibonacci word A003842.
  * @author Sean A. Irvine
  */
-public class A074983 implements Sequence {
+public class A074983 extends Sequence1 {
 
   private String mPrev = null;
 

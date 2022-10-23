@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000101 Record gaps between primes (upper end) (compare A002386, which gives lower ends of these gaps).
  * @author Sean A. Irvine
  */
-public class A000101 implements Sequence {
+public class A000101 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

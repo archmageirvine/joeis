@@ -3,6 +3,7 @@ package irvine.oeis.a152;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a090.A090076;
 import irvine.oeis.a100.A100484;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a100.A100484;
  * A152532 a(n) = prime(n) * prime(n+2) - 2 * prime(n+1).
  * @author Georg Fischer
  */
-public class A152532 implements Sequence {
+public class A152532 extends Sequence1 {
 
   final Sequence mA090076 = new A090076();
   final Sequence mA100484 = new A100484();

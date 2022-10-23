@@ -3,6 +3,7 @@ package irvine.oeis.a075;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a009.A009195;
 import irvine.oeis.a051.A051953;
@@ -11,7 +12,7 @@ import irvine.oeis.a051.A051953;
  * A075857 Least common multiple of totient and cototient of n.
  * @author Georg Fischer
  */
-public class A075857 implements Sequence {
+public class A075857 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA009195 = new A009195();

@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059405 Numbers that are the product of their digits raised to positive integer powers.
  * @author Sean A. Irvine
  */
-public class A059405 implements Sequence {
+public class A059405 extends Sequence1 {
 
   // Some care is needed because some numbers have more than one possible expansion in terms of digits.
   // For example, 4128768.

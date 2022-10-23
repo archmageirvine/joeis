@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003624 Duffinian numbers: composite numbers k relatively prime to sigma(k).
  * @author Sean A. Irvine
  */
-public class A003624 implements Sequence {
+public class A003624 extends Sequence1 {
 
   private long mN = 3;
   private final Fast mPrime = new Fast();

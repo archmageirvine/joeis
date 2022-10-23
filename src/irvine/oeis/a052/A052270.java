@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052270 Consider a room of size r X s where rs = 2n and 1 &lt;= r &lt;= s; count ways to arrange n Tatami mats in room; a(n) = total number of ways for all choices of r and s. Two arrangements are considered the same if one is a rotation or reflection of the other.
  * @author Sean A. Irvine
  */
-public class A052270 implements Sequence {
+public class A052270 extends Sequence1 {
 
   // After Jean-Fran&ccedil;ois Alcover and Dean Hickerson
 

@@ -5,13 +5,13 @@ import irvine.math.cr.CR;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A062418 Nearest integer to log(n!)^((1 - 1/n)^(1/n)).
  * @author Georg Fischer
  */
-public class A062418 implements Sequence {
+public class A062418 extends Sequence1 {
 
   private int mN = 0;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a175;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A175872 Write n in binary. Consider the 0's and 1 as a list. (*) If the new list consists entirely of 1's, then a(n) = the number of 1's, and end. Otherwise, construct a new list made up of the lengths, written in order, of the runs of similarly-valued terms from the previous list. Go to *.
  * @author Sean A. Irvine
  */
-public class A175872 implements Sequence {
+public class A175872 extends Sequence1 {
 
   private int mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059267 Numbers n with 2 divisors d1 and d2 having difference 2: d2 - d1 = 2; equivalently, numbers that are 0 (mod 4) or have a divisor d of the form d = m^2 - 1.
  * @author Sean A. Irvine
  */
-public class A059267 implements Sequence {
+public class A059267 extends Sequence1 {
 
   private long mN = 2;
 

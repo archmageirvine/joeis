@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053626 a(n) is the smallest positive integer k such that harmonic mean of n and k is an integer.
  * @author Sean A. Irvine
  */
-public class A053626 implements Sequence {
+public class A053626 extends Sequence1 {
 
   private long mN = 0;
 

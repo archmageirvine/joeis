@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A318000 E.g.f.: log( 2*cosh(x) / (1 + sqrt(1 - 2*sinh(2*x))) ).
  * E.g.f.: log( 2*cosh(x) / (1 + sqrt(1 - 2*sinh(2*x))) )
  * @author Georg Fischer
  */
-public class A318000 implements Sequence {
+public class A318000 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

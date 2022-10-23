@@ -3,11 +3,12 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 /**
  * A056925 Largest integer power of n which divides product of divisors of n.
  * @author Georg Fischer
  */
-public class A056925 implements Sequence {
+public class A056925 extends Sequence1 {
 
   private final Sequence mA056924 = new A056924();
   protected long mN;

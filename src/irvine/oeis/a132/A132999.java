@@ -3,13 +3,13 @@ package irvine.oeis.a132;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A132999 Imperfect numbers: Not equal to sum of proper divisors.
  * @author Georg Fischer
  */
-public class A132999 implements Sequence {
+public class A132999 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

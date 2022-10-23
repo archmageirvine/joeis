@@ -5,13 +5,13 @@ import irvine.math.LongUtils;
 import irvine.math.Mobius;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053727 Triangle T(n,k) = Sum_{d|gcd(n,k)} mu(d)*C(n/d,k/d) (n &gt;= 1, 1 &lt;= k &lt;= n).
  * @author Sean A. Irvine
  */
-public class A053727 implements Sequence {
+public class A053727 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

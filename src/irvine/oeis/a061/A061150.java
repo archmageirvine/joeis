@@ -3,14 +3,14 @@ package irvine.oeis.a061;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A061150 a(n) = Sum_{d|n} d*prime(d).
  * @author Sean A. Irvine
  */
-public class A061150 implements Sequence {
+public class A061150 extends Sequence1 {
 
   private int mN = 0;
   private final Fast mPrime = new Fast();

@@ -6,13 +6,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A112730 Numbers n such that the equation sigma(x)-phi(x)=n has at least one solution.
  * @author Sean A. Irvine
  */
-public class A112730 implements Sequence {
+public class A112730 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private long mN = 1;

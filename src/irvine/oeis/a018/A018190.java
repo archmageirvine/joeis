@@ -32,7 +32,7 @@ package irvine.oeis.a018;
 import irvine.math.MutableInteger;
 import irvine.math.plantri.Marks;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A018190 Number of planar simply-connected polyhexes (or benzenoid hydrocarbons) with n hexagons.
@@ -41,7 +41,7 @@ import irvine.oeis.Sequence;
  * @author Nicolas Van Cleemput
  * @author Sean A. Irvine
  */
-public class A018190 implements Sequence {
+public class A018190 extends Sequence1 {
 
   private static final int MAXNV = 30;              // the maximum number of vertices -- at most CHAR_MAX-1
   private static final int MAXE = 6 * MAXNV - 12;   // the maximum number of oriented edges

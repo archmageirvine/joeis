@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A016105 Blum integers: numbers of the form p * q where p and q are distinct primes congruent to 3 (mod 4).
  * @author Sean A. Irvine
  */
-public class A016105 implements Sequence {
+public class A016105 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final TreeSet<Z> mSeq = new TreeSet<>();

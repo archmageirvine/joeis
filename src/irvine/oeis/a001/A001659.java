@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001659 Expansion of bracket function.
  * @author Sean A. Irvine
  */
-public class A001659 implements Sequence {
+public class A001659 extends Sequence1 {
 
   private long mN = 0;
 

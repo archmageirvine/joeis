@@ -5,13 +5,13 @@ import java.util.List;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A026792 List of juxtaposed reverse-lexicographically ordered partitions of the positive integers.
  * @author Sean A. Irvine
  */
-public class A026792 implements Sequence {
+public class A026792 extends Sequence1 {
 
   private int mN = 0;
   private int mL = 0;

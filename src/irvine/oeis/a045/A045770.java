@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045770 Numbers k such that sigma(k) == 8 (mod k).
  * @author Sean A. Irvine
  */
-public class A045770 implements Sequence {
+public class A045770 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a112;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008578;
 
 /**
  * A112773 3 together with primes multiplied by 3.
  * @author Georg Fischer
  */
-public class A112773 implements Sequence {
+public class A112773 extends Sequence1 {
 
   final Sequence mA008578 = new A008578();
   @Override

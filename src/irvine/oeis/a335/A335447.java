@@ -3,13 +3,14 @@ package irvine.oeis.a335;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008480;
 
 /**
  * A335447 Number of (1,2)-matching permutations of the prime indices of n.
  * @author Georg Fischer
  */
-public class A335447 implements Sequence {
+public class A335447 extends Sequence1 {
 
   final Sequence mA008480 = new A008480();
   @Override

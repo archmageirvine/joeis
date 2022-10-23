@@ -3,13 +3,14 @@ package irvine.oeis.a330;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000668;
 
 /**
  * A330820 Numbers of the form (M_p^2-1)^2, where M_p is a Mersenne prime, A000668. Also the second element of the power-spectral basis of A330817.
  * @author Georg Fischer
  */
-public class A330820 implements Sequence {
+public class A330820 extends Sequence1 {
 
   final Sequence mA000668 = new A000668();
   @Override

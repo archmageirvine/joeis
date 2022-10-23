@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007519 Primes of form 8n+1, that is, primes congruent to 1 mod 8.
  * @author Sean A. Irvine
  */
-public class A007519 implements Sequence {
+public class A007519 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 16;

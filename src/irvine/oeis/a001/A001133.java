@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001133 Primes p such that the multiplicative order of 2 modulo p is (p-1)/3.
  * @author Sean A. Irvine
  */
-public class A001133 implements Sequence {
+public class A001133 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 41;

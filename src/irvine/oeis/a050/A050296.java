@@ -3,13 +3,13 @@ package irvine.oeis.a050;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050296 Maximum cardinality of a strongly triple-free subset of {1, 2, ..., n}.
  * @author Sean A. Irvine
  */
-public class A050296 implements Sequence {
+public class A050296 extends Sequence1 {
 
   // After Steven Finch
 

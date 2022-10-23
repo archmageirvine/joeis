@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020756 Numbers that are the sum of two triangular numbers.
  * @author Sean A. Irvine
  */
-public class A020756 implements Sequence {
+public class A020756 extends Sequence1 {
 
   private long mN = -1;
 

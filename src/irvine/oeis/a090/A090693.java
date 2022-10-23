@@ -3,13 +3,14 @@ package irvine.oeis.a090;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005574;
 
 /**
  * A090693 Positive numbers n such that n^2 - 2n + 2 is a prime.
  * @author Georg Fischer
  */
-public class A090693 implements Sequence {
+public class A090693 extends Sequence1 {
 
   final Sequence mA005574 = new A005574();
   @Override

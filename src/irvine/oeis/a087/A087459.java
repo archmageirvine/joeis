@@ -3,13 +3,14 @@ package irvine.oeis.a087;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014498;
 
 /**
  * A087459 Values (X + Y - Z) sorted on Z, then on Y, where (X,Y,Z) is a primitive Pythagorean triple with X&lt;Y&lt;Z.
  * @author Georg Fischer
  */
-public class A087459 implements Sequence {
+public class A087459 extends Sequence1 {
 
   final Sequence mA014498 = new A014498();
   @Override

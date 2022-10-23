@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000529 Powers of rooted tree enumerator.
  * @author Sean A. Irvine
  */
-public class A000529 implements Sequence {
+public class A000529 extends Sequence1 {
 
   private long mN = 0;
 

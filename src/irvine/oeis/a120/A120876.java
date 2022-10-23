@@ -3,11 +3,12 @@ package irvine.oeis.a120;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 /**
  * A120876 (Product of twin primes - 1)/2.
  * @author Georg Fischer
  */
-public class A120876 implements Sequence {
+public class A120876 extends Sequence1 {
 
   private final Sequence mA120875 = new A120875();
   @Override

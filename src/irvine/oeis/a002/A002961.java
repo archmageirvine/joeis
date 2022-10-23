@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002961 Numbers k such that k and k+1 have same sum of divisors.
  * @author Sean A. Irvine
  */
-public class A002961 implements Sequence {
+public class A002961 extends Sequence1 {
 
   private long mN = 13;
   private Z mPrev = Z.ZERO;

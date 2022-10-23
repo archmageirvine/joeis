@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046851 Numbers n such that n^2 can be obtained from n by inserting internal (but not necessarily contiguous) digits.
  * @author Sean A. Irvine
  */
-public class A046851 implements Sequence {
+public class A046851 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

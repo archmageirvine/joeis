@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050874 Binary numbers d(1)...d(j) such that d(i) = d(j+1-i) for all but 6 values of i.
  * @author Sean A. Irvine
  */
-public class A050874 implements Sequence {
+public class A050874 extends Sequence1 {
 
   private long mN = 1;
 

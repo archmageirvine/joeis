@@ -2,14 +2,14 @@ package irvine.oeis.a144;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A144855 Number of paths from (1,1) to (n,n) in an n X n grid using only the steps +(1,0), -(1,0), +(0,1) and -(0,1) which do not self-intersect and which avoid any point (p,q) satisfying "(p-1)*n + q is prime".
  * @author Sean A. Irvine
  */
-public class A144855 implements Sequence {
+public class A144855 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

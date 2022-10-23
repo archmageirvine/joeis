@@ -3,13 +3,14 @@ package irvine.oeis.a100;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001223;
 
 /**
  * A100803 A100802(m) where A100802(m) &gt; A100802(m-1).
  * @author Georg Fischer
  */
-public class A100803 implements Sequence {
+public class A100803 extends Sequence1 {
 
   final Sequence mA001223 = new A001223();
   @Override

@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005068 Sum of 4th powers of odd primes dividing n.
  * @author Sean A. Irvine
  */
-public class A005068 implements Sequence {
+public class A005068 extends Sequence1 {
 
   private long mN = 0;
 

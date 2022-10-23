@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050480 Numbers that can be written as a concatenation of distinct proper divisors.
  * @author Sean A. Irvine
  */
-public class A050480 implements Sequence {
+public class A050480 extends Sequence1 {
 
   private long mN = 11;
 

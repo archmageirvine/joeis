@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A336183 a(n) = n^2 + (1/n) * Sum_{k=1..n-1} binomial(n,k) * k * a(k) * (n-k)^2.
  * E.g.f.: -log(1 - exp(x) * x * (1 + x))
  * @author Georg Fischer
  */
-public class A336183 implements Sequence {
+public class A336183 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

@@ -3,13 +3,13 @@ package irvine.oeis.a036;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036346 Composites n such that A001414(n) is odd and divides n.
  * @author Sean A. Irvine
  */
-public class A036346 implements Sequence {
+public class A036346 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 26;

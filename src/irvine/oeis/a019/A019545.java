@@ -1,13 +1,13 @@
 package irvine.oeis.a019;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019545 Cubes whose digits are cubes.
  * @author Sean A. Irvine
  */
-public class A019545 implements Sequence {
+public class A019545 extends Sequence1 {
 
   private long mN = -1;
 

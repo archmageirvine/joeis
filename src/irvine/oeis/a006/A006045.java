@@ -4,13 +4,13 @@ import irvine.math.api.Matrix;
 import irvine.math.group.IntegersMod;
 import irvine.math.group.MatrixRing;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006045 Sum of orders of all 2 X 2 matrices with entries mod n.
  * @author Sean A. Irvine
  */
-public class A006045 implements Sequence {
+public class A006045 extends Sequence1 {
 
   private long mN = 0;
 

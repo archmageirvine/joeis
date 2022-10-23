@@ -3,13 +3,13 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A062808 a(n) = Sum_{i=1..n} n^i * (n - i).
  * @author Georg Fischer
  */
-public class A062808 implements Sequence {
+public class A062808 extends Sequence1 {
 
   private int mN = 0;
 

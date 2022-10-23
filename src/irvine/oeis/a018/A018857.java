@@ -1,14 +1,14 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 
 /**
  * A018857 Smallest power of 3 that begins with n.
  * @author Sean A. Irvine
  */
-public class A018857 implements Sequence {
+public class A018857 extends Sequence1 {
 
   private DynamicArray<String> mCache = new DynamicArray<>();
   {

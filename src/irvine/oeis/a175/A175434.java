@@ -2,13 +2,13 @@ package irvine.oeis.a175;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A175434 (Digit sum of 2^n) mod n.
  * @author Georg Fischer
  */
-public class A175434 implements Sequence {
+public class A175434 extends Sequence1 {
 
   private int mN;
   private int mParm;

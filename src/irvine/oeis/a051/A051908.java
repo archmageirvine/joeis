@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051908 Number of ways to express 1 as the sum of unit fractions such that the sum of the denominators is n.
  * @author Sean A. Irvine
  */
-public class A051908 implements Sequence {
+public class A051908 extends Sequence1 {
 
   private long mN = 0;
   private long mCount = 0;

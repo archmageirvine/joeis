@@ -2,13 +2,13 @@ package irvine.oeis.a009;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009191 a(n) = gcd(n, d(n)), where d(n) is the number of divisors of n (A000005).
  * @author Sean A. Irvine
  */
-public class A009191 implements Sequence {
+public class A009191 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

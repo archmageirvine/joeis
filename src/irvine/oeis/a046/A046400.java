@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002385;
 
 /**
  * A046400 Numbers with exactly 2 distinct palindromic prime factors.
  * @author Sean A. Irvine
  */
-public class A046400 implements Sequence {
+public class A046400 extends Sequence1 {
 
   private final MemorySequence mPalinPrimes = MemorySequence.cachedSequence(new A002385());
   private final TreeSet<Z> mA = new TreeSet<>();

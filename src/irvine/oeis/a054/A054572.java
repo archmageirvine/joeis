@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054572 Larger members of g-reduced amicable pairs a &lt; b such that sigma(a) = sigma(b) = a + b + gcd(a,b).
  * @author Sean A. Irvine
  */
-public class A054572 implements Sequence {
+public class A054572 extends Sequence1 {
 
   private long mM = 0;
   private long mN = 181;

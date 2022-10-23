@@ -1,14 +1,14 @@
 package irvine.oeis.a016;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A016106 Nonpalindromic and "non-core" numbers that when squared give palindrome with odd number of digits.
  * @author Georg Fischer
  */
-public class A016106 implements Sequence {
+public class A016106 extends Sequence1 {
 
   protected int mVariant;
   private Z mN = Z.TEN;

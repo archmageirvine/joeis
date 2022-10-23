@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003139 Number of coprime chains with largest member n.
  * @author Sean A. Irvine
  */
-public class A003139 implements Sequence {
+public class A003139 extends Sequence1 {
 
   // After Charles R Greathouse IV
 

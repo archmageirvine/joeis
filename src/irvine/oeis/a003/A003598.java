@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003598 Numbers of the form 5^i * 11^j.
  * @author Sean A. Irvine
  */
-public class A003598 implements Sequence {
+public class A003598 extends Sequence1 {
 
   private final TreeSet<Z> mPriority = new TreeSet<>();
   {

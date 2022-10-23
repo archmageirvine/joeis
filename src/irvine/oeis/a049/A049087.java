@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049087 Ceiling of mean distance between successive distinct prime divisors of n.
  * @author Sean A. Irvine
  */
-public class A049087 implements Sequence {
+public class A049087 extends Sequence1 {
 
   private long mN = 0;
 

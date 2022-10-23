@@ -1,13 +1,13 @@
 package irvine.oeis.a066;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A066432 a(n) = 10^n mod n^10.
  * @author Georg Fischer
  */
-public class A066432 implements Sequence {
+public class A066432 extends Sequence1 {
 
   protected long mN;
   protected int mP1;

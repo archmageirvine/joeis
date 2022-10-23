@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058294 Successive rows of a triangle, the columns of which are generalized Fibonacci sequences S(j).
  * @author Sean A. Irvine
  */
-public class A058294 implements Sequence {
+public class A058294 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038610 Least common multiple of integers less than and prime to n.
  * @author Sean A. Irvine
  */
-public class A038610 implements Sequence {
+public class A038610 extends Sequence1 {
 
   private long mN = 0;
 

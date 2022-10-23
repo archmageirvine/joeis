@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002472 Number of pairs x,y such that y-x=2, (x,n)=1, (y,n)=1 and 1 &lt;= x &lt;= n.
  * @author Sean A. Irvine
  */
-public class A002472 implements Sequence {
+public class A002472 extends Sequence1 {
 
   private long mN = 0;
 

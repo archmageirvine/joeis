@@ -4,13 +4,13 @@ import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056619 Smallest prime with primitive root n, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
-public class A056619 implements Sequence {
+public class A056619 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mS = 4;

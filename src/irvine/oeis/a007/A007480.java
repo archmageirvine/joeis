@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007480 a(n) = denominator of sum_{k=1..n} k^(-4).
  * @author Sean A. Irvine
  */
-public class A007480 implements Sequence {
+public class A007480 extends Sequence1 {
 
   private long mN = 0;
   private Q mSum = Q.ZERO;

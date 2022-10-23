@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034730 Dirichlet convolution of b_n=1 with c_n=3^(n-1).
  * @author Sean A. Irvine
  */
-public class A034730 implements Sequence {
+public class A034730 extends Sequence1 {
 
   private int mN = 0;
 

@@ -1,14 +1,14 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A057165 Indices of addition steps in Recam\u00e1n's sequence A005132.
  * @author Sean A. Irvine
  */
-public class A057165 implements Sequence {
+public class A057165 extends Sequence1 {
 
   private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
   private long mPrev = 0;

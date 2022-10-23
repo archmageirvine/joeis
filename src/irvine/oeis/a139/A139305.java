@@ -3,13 +3,14 @@ package irvine.oeis.a139;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000668;
 
 /**
  * A139305 (2^(2p - 1)/32)-1, where p=A000668(n) is n-th Mersenne prime.
  * @author Georg Fischer
  */
-public class A139305 implements Sequence {
+public class A139305 extends Sequence1 {
 
   final Sequence mA000668 = new A000668();
   @Override

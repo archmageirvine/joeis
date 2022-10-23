@@ -3,6 +3,7 @@ package irvine.oeis.a191;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000201;
 import irvine.oeis.a001.A001950;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001950;
  * A191329 (Lower Wythoff sequence mod 2)+(Upper Wythoff sequence mod 2).
  * @author Georg Fischer
  */
-public class A191329 implements Sequence {
+public class A191329 extends Sequence1 {
 
   final Sequence mA000201 = new A000201();
   final Sequence mA001950 = new A001950();

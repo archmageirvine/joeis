@@ -3,13 +3,13 @@ package irvine.oeis.a038;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038203 Number of distinct values of factorials mod n.
  * @author Sean A. Irvine
  */
-public class A038203 implements Sequence {
+public class A038203 extends Sequence1 {
 
   private long mN = 0;
 

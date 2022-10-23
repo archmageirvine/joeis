@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023066 k and 4k are anagrams in base 6 (written in base 6).
  * @author Sean A. Irvine
  */
-public class A023066 implements Sequence {
+public class A023066 extends Sequence1 {
 
   private long mN = 0;
 

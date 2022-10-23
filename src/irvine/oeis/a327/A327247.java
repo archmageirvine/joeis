@@ -3,6 +3,7 @@ package irvine.oeis.a327;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000523;
 import irvine.oeis.a025.A025528;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a025.A025528;
  * A327247 Number of odd prime powers &lt;= n (with exponents &gt; 0).
  * @author Georg Fischer
  */
-public class A327247 implements Sequence {
+public class A327247 extends Sequence1 {
 
   final Sequence mA000523 = new A000523();
   final Sequence mA025528 = new A025528();

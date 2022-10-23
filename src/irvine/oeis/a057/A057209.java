@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057209 n!^n *sum_{k=1 to n}[1/k^k].
  * @author Sean A. Irvine
  */
-public class A057209 implements Sequence {
+public class A057209 extends Sequence1 {
 
   private Z mF = Z.ONE;
   private Q mSum = Q.ZERO;

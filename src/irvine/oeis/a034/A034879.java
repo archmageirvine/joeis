@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034879 a(n) = product of factorials of digits of a(n-1).
  * @author Sean A. Irvine
  */
-public class A034879 implements Sequence {
+public class A034879 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Z mA = null;

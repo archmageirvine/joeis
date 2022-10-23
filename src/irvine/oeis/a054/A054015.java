@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054015 a(n) is Chowla function of n read modulo (number of proper divisors of n), a(1) = 0 by convention.
  * @author Sean A. Irvine
  */
-public class A054015 implements Sequence {
+public class A054015 extends Sequence1 {
 
   private long mN = 0;
 

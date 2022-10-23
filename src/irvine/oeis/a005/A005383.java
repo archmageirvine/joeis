@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005383 Primes p such that (p+1)/2 is prime.
  * @author Sean A. Irvine
  */
-public class A005383 implements Sequence {
+public class A005383 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

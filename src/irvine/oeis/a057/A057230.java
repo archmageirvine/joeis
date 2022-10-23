@@ -5,14 +5,14 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A057230 Numbers k such that k = p+q = r+s with p*q = r*s = primorial number(A002110) (p*q) &lt; (r*s).
  * @author Sean A. Irvine
  */
-public class A057230 implements Sequence {
+public class A057230 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final Fast mPrime = new Fast();

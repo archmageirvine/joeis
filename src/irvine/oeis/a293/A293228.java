@@ -3,6 +3,7 @@ package irvine.oeis.a293;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008966;
 import irvine.oeis.a048.A048250;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a048.A048250;
  * A293228 a(n) is the sum of proper divisors of n that are squarefree.
  * @author Georg Fischer
  */
-public class A293228 implements Sequence {
+public class A293228 extends Sequence1 {
 
   final Sequence mA008966 = new A008966();
   final Sequence mA048250 = new A048250();

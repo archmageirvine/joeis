@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038400 List of pairs of consecutive numbers each with 6 divisors (duplicates removed).
  * @author Sean A. Irvine
  */
-public class A038400 implements Sequence {
+public class A038400 extends Sequence1 {
 
   private boolean mWas = false;
   private boolean mQueue = false;

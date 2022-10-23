@@ -3,6 +3,7 @@ package irvine.oeis.a290;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007947;
 import irvine.oeis.a078.A078599;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a078.A078599;
  * A290479 Product of nonprime squarefree divisors of n.
  * @author Georg Fischer
  */
-public class A290479 implements Sequence {
+public class A290479 extends Sequence1 {
 
   final Sequence mA007947 = new A007947();
   final Sequence mA078599 = new A078599();

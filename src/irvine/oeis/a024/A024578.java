@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024578 a(n) = [ 1/{n/e} ], {x} := x - [ x ].
  * @author Sean A. Irvine
  */
-public class A024578 implements Sequence {
+public class A024578 extends Sequence1 {
 
   private long mN = 0;
 

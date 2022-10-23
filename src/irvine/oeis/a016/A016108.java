@@ -2,13 +2,13 @@ package irvine.oeis.a016;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A016108 Numbers k=3*m+1 such that 2^m == 1 (mod k).
  * @author Sean A. Irvine
  */
-public class A016108 implements Sequence {
+public class A016108 extends Sequence1 {
 
   private long mN = -1;
   private long mM = 0;

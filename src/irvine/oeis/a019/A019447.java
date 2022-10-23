@@ -7,13 +7,13 @@ import irvine.math.group.MultivariatePolynomialField;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019447 Number of monomials in expansion of determinant of an n X n Toeplitz matrix [ t(|i-j|) ] in terms of its entries.
  * @author Sean A. Irvine
  */
-public class A019447 implements Sequence {
+public class A019447 extends Sequence1 {
 
   private int mN = 0;
 

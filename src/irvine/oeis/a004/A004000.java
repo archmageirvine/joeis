@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004000 RATS: Reverse Add Then Sort the digits applied to previous term, starting with 1.
  * @author Sean A. Irvine
  */
-public class A004000 implements Sequence {
+public class A004000 extends Sequence1 {
 
   private Z mA = null;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020642 n-th composite is sum of first k composites for some k.
  * @author Sean A. Irvine
  */
-public class A020642 implements Sequence {
+public class A020642 extends Sequence1 {
 
   private Z mA = Z.ZERO;
   private Z mC = Z.THREE;

@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005225 Number of permutations of length n with equal cycles.
  * @author Sean A. Irvine
  */
-public class A005225 implements Sequence {
+public class A005225 extends Sequence1 {
 
   private int mN = 0;
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

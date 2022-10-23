@@ -3,12 +3,13 @@ package irvine.oeis.a076;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A076619 Least x&gt;1 such that x^d == 1 (mod d) for each divisor d of n, for all nonsquarefree numbers n (cf. A013929).
  * @author Georg Fischer
  */
-public class A076619 implements Sequence {
+public class A076619 extends Sequence1 {
 
   final Sequence mA076333 = new A076333();
   @Override

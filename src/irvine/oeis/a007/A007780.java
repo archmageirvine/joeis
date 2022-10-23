@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007780 Losing initial configurations in 2-hole Tchuka Ruma.
  * @author Sean A. Irvine
  */
-public class A007780 implements Sequence {
+public class A007780 extends Sequence1 {
 
   // Solve Tchuka Ruma solitaire with 2 holes + ruma.
   // We treat the ruma as hole 0 and remember small solutions in a cache

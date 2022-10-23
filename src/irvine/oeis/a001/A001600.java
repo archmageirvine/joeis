@@ -3,13 +3,13 @@ package irvine.oeis.a001;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001600 Harmonic means of divisors of harmonic numbers.
  * @author Sean A. Irvine
  */
-public class A001600 implements Sequence {
+public class A001600 extends Sequence1 {
 
   private long mN = 0;
 

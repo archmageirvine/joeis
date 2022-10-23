@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011535 Numbers that contain a 5.
  * @author Sean A. Irvine
  */
-public class A011535 implements Sequence {
+public class A011535 extends Sequence1 {
 
   private long mN = 4;
 

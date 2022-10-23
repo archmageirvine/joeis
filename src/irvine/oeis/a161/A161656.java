@@ -3,13 +3,13 @@ package irvine.oeis.a161;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A161656 The largest multiple of {the sum of the distinct prime divisors of n} that is &lt;=n.
  * @author Sean A. Irvine
  */
-public class A161656 implements Sequence {
+public class A161656 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

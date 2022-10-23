@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045752 4n-1 is composite.
  * @author Sean A. Irvine
  */
-public class A045752 implements Sequence {
+public class A045752 extends Sequence1 {
 
   private long mN = 0;
 

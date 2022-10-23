@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036361 Number of labeled 2-trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A036361 implements Sequence {
+public class A036361 extends Sequence1 {
 
   private int mN = 0;
 

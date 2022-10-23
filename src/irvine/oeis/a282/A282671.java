@@ -3,13 +3,14 @@ package irvine.oeis.a282;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 
 /**
  * A282671 Twice composite numbers.
  * @author Georg Fischer
  */
-public class A282671 implements Sequence {
+public class A282671 extends Sequence1 {
 
   final Sequence mA002808 = new A002808();
   @Override

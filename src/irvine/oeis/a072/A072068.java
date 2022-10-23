@@ -1,14 +1,14 @@
 package irvine.oeis.a072;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A072068 Number of integer solutions to the equation 2x^2+y^2+8z^2=m for an odd number m=2n-1.
  * @author Sean A. Irvine
  */
-public class A072068 implements Sequence {
+public class A072068 extends Sequence1 {
 
   private final LongDynamicLongArray mCount = new LongDynamicLongArray();
   private long mN = start() - 1;

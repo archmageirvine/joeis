@@ -3,13 +3,13 @@ package irvine.oeis.a334;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A334806 a(n) = Product_{d|n} lcm(tau(d), sigma(d)) where tau(k) is the number of divisors of k (A000005) and sigma(k) is the sum of divisors of k (A000203).
  * @author Georg Fischer
  */
-public class A334806 implements Sequence {
+public class A334806 extends Sequence1 {
 
   private int mN = 0;
 

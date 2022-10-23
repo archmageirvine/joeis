@@ -3,13 +3,13 @@ package irvine.oeis.a010;
 import irvine.math.LongUtils;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A010846 Number of numbers &lt;= n whose set of prime factors is a subset of the set of prime factors of n.
  * @author Sean A. Irvine
  */
-public class A010846 implements Sequence {
+public class A010846 extends Sequence1 {
 
   protected long mN = 0;
 

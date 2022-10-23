@@ -3,6 +3,7 @@ package irvine.oeis.a325;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a001.A001221;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001221;
  * A325938 a(n) = omega(n)^tau(n), where omega=A001221 and tau=A000005.
  * @author Georg Fischer
  */
-public class A325938 implements Sequence {
+public class A325938 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA001221 = new A001221();

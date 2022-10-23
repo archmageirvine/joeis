@@ -1,13 +1,13 @@
 package irvine.oeis.a016;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A016114 Circular primes (numbers that remain prime under cyclic shifts of digits).
  * @author Sean A. Irvine
  */
-public class A016114 implements Sequence {
+public class A016114 extends Sequence1 {
 
   // A somewhat smart approach
 

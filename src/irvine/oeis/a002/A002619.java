@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002619 Number of 2-colored patterns on an n X n board.
  * @author Sean A. Irvine
  */
-public class A002619 implements Sequence {
+public class A002619 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private long mN = 0;

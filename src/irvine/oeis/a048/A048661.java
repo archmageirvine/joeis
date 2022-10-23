@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048661 Number of n-digit dihedral primes for which the 4 numbers (n, n upside-down, n in a mirror, n upside-down and mirrored) are distinct.
  * @author Sean A. Irvine
  */
-public class A048661 implements Sequence {
+public class A048661 extends Sequence1 {
 
   // Based on A134996
 

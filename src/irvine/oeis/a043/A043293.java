@@ -3,13 +3,13 @@ package irvine.oeis.a043;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A043293 Numbers n such that lcm(sigma(n),phi(n)) is a perfect square.
  * @author Sean A. Irvine
  */
-public class A043293 implements Sequence {
+public class A043293 extends Sequence1 {
 
   private long mN = 0;
 

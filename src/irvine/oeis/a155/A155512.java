@@ -1,14 +1,14 @@
 package irvine.oeis.a155;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A155512 Emirps with digits 0 and 1 only.
  * @author Sean A. Irvine
  */
-public class A155512 implements Sequence {
+public class A155512 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a051;
 import irvine.math.IntegerUtils;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051839 Number of partitions of n with parts (with repetitions) forming a division lattice (i.e., closed under GCD and LCM).
  * @author Sean A. Irvine
  */
-public class A051839 implements Sequence {
+public class A051839 extends Sequence1 {
 
   // After Charles R Greathouse IV
 

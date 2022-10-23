@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005988 x^3 + n*y^3 = 1 is solvable.
  * @author Sean A. Irvine
  */
-public class A005988 implements Sequence {
+public class A005988 extends Sequence1 {
 
   private long mD = 1;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a071;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051037;
 
 /**
  * A071520 Number of 5-smooth numbers (A051037) &lt;= n.
  * @author Georg Fischer
  */
-public class A071520 implements Sequence {
+public class A071520 extends Sequence1 {
 
   protected int mN;
   protected Sequence mSeq;

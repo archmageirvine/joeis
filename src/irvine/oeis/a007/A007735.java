@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007735 Period of base 4 representation of 1/n.
  * @author Sean A. Irvine
  */
-public class A007735 implements Sequence {
+public class A007735 extends Sequence1 {
 
   private long mN = 0;
 

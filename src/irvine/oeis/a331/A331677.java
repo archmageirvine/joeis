@@ -3,13 +3,14 @@ package irvine.oeis.a331;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a020.A020900;
 
 /**
  * A331677 a(n) is the difference between the number of primes smaller than prime(n) (i.e., n-1) and greater than prime(n) but less than 2*prime(n).
  * @author Georg Fischer
  */
-public class A331677 implements Sequence {
+public class A331677 extends Sequence1 {
 
   final Sequence mA020900 = new A020900();
   protected long mN;

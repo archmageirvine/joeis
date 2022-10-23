@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035306 List prime factors of each number in order (each prime factor is followed by its power). Start with 1 = {1,1}.
  * @author Sean A. Irvine
  */
-public class A035306 implements Sequence {
+public class A035306 extends Sequence1 {
 
   private final ArrayList<Z> mA = new ArrayList<>();
   private long mN = 0;

@@ -3,13 +3,14 @@ package irvine.oeis.a286;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 
 /**
  * A286002 a(n) = 2n - d(n), where d(n) is the number of divisors of n (A000005).
  * @author Georg Fischer
  */
-public class A286002 implements Sequence {
+public class A286002 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   protected long mN;

@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051851 Table in which n-th row gives all partitions of n interpreted in base n+1. (A subset of A051849 with each term having a non-descending digit-sequence in base n+1).
  * @author Sean A. Irvine
  */
-public class A051851 implements Sequence {
+public class A051851 extends Sequence1 {
 
   protected int mN = 0;
   private final TreeSet<Z> mA = new TreeSet<>();

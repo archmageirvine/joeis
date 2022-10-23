@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A022013 Initial members of prime octuplets (p, p+6, p+8, p+14, p+18, p+20, p+24, p+26).
  * @author Sean A. Irvine
  */
-public class A022013 implements Sequence {
+public class A022013 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.valueOf(88791);

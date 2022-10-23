@@ -1,13 +1,13 @@
 package irvine.oeis.a175;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A175282 Positive numbers n with property that n^2+3n+9 is prime (A005471).
  * @author Sean A. Irvine
  */
-public class A175282 implements Sequence {
+public class A175282 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a334;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a048.A048161;
 import irvine.oeis.a067.A067756;
 /**
  * A334802 Positive integers of the form x^4 - y^4 that have exactly 4 divisors.
  * @author Georg Fischer
  */
-public class A334802 implements Sequence {
+public class A334802 extends Sequence1 {
 
   private final Sequence mA048161 = new A048161();
   private final Sequence mA067756 = new A067756();

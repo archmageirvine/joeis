@@ -3,13 +3,13 @@ package irvine.oeis.a047;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A047727 Average divisor is an integer (A003601) and the number is refactorable (A033950).
  * @author Sean A. Irvine
  */
-public class A047727 implements Sequence {
+public class A047727 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

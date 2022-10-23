@@ -1,14 +1,14 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A027719 Numbers k such that k^2 + 1 is a palindrome.
  * @author Sean A. Irvine
  */
-public class A027719 implements Sequence {
+public class A027719 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

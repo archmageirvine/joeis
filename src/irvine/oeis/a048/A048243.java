@@ -4,13 +4,13 @@ import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048243 Number of non-unitary divisors of binomial(n, floor(n/2)).
  * @author Sean A. Irvine
  */
-public class A048243 implements Sequence {
+public class A048243 extends Sequence1 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
   private long mN = 0;

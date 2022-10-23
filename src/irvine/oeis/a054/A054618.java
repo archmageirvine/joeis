@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054618 Triangle T(n,k) = Sum_{d|n} phi(d)*k^(n/d).
  * @author Sean A. Irvine
  */
-public class A054618 implements Sequence {
+public class A054618 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

@@ -3,6 +3,7 @@ package irvine.oeis.a074;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008966;
 import irvine.oeis.a034.A034444;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a034.A034444;
  * A074823 a(n) = 2^omega(n)*mu(n)^2.
  * @author Georg Fischer
  */
-public class A074823 implements Sequence {
+public class A074823 extends Sequence1 {
 
   final Sequence mA008966 = new A008966();
   final Sequence mA034444 = new A034444();

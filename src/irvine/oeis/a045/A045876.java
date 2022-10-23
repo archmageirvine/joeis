@@ -3,13 +3,13 @@ package irvine.oeis.a045;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045876 Sum of different permutations of digits of n (leading 0's allowed).
  * @author Sean A. Irvine
  */
-public class A045876 implements Sequence {
+public class A045876 extends Sequence1 {
 
   // After Robert Israel
 

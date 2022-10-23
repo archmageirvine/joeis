@@ -3,13 +3,14 @@ package irvine.oeis.a339;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003325;
 
 /**
  * A339993 Sums of two positive even cubes.
  * @author Georg Fischer
  */
-public class A339993 implements Sequence {
+public class A339993 extends Sequence1 {
 
   final Sequence mA003325 = new A003325();
   @Override

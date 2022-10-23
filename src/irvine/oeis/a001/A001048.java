@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001048 a(n) = n! + (n-1)!.
  * @author Sean A. Irvine
  */
-public class A001048 implements Sequence {
+public class A001048 extends Sequence1 {
 
   private Z mF = Z.ONE;
   private long mN = 0;

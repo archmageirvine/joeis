@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055435 (1/18)*Difference between concatenation of n and n^2 and concatenation of n^2 and n.
  * @author Sean A. Irvine
  */
-public class A055435 implements Sequence {
+public class A055435 extends Sequence1 {
 
   private long mN = 0;
 

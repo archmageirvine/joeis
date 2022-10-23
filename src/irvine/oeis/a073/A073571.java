@@ -5,13 +5,13 @@ import java.util.Iterator;
 import irvine.math.polynomial.IrreduciblePolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A073571 Irreducible trinomials: numbers n such that x^n + x^k + 1 is an irreducible polynomial (mod 2) for some k with 0 &lt; k &lt; n.
  * @author Sean A. Irvine
  */
-public class A073571 implements Sequence {
+public class A073571 extends Sequence1 {
 
   private final Iterator<Polynomial<Z>> mPolynomialIterator = IrreduciblePolynomials.iterator();
   private Polynomial<Z> mP = mPolynomialIterator.next();

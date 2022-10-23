@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057273 Triangle T(n,k) of the number of strongly connected digraphs on n labeled nodes and with k arcs, k=0..n*(n-1).
  * @author Sean A. Irvine
  */
-public class A057273 implements Sequence {
+public class A057273 extends Sequence1 {
 
   // After Andrew Howroyd
 

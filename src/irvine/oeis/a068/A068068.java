@@ -3,13 +3,13 @@ package irvine.oeis.a068;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A068068 Number of odd unitary divisors of n. d is a unitary divisor of n if d divides n and gcd(d,n/d)=1.
  * @author Sean A. Irvine
  */
-public class A068068 implements Sequence {
+public class A068068 extends Sequence1 {
 
   protected long mN = 0;
 

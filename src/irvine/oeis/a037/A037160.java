@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037160 Squares in A037159.
  * @author Sean A. Irvine
  */
-public class A037160 implements Sequence {
+public class A037160 extends Sequence1 {
 
   private static final long HEURISTIC_MULTIPLIER = 1000;
   private Z mN = Z.valueOf(146);

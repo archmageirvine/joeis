@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038683 Seventh powers ending nontrivially in a nonzero seventh power.
  * @author Sean A. Irvine
  */
-public class A038683 implements Sequence {
+public class A038683 extends Sequence1 {
 
   private long mN = 2;
 

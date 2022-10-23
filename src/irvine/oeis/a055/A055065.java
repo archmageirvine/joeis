@@ -2,14 +2,14 @@ package irvine.oeis.a055;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A055065 Smallest even number that is the sum of distinct primes in exactly n ways.
  * @author Sean A. Irvine
  */
-public class A055065 implements Sequence {
+public class A055065 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final LongDynamicLongArray mCount = new LongDynamicLongArray();

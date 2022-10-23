@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032023 "AGK" (ordered, elements, unlabeled) transform of 2,2,2,2...
  * @author Sean A. Irvine
  */
-public class A032023 implements Sequence {
+public class A032023 extends Sequence1 {
 
   // AGK
 

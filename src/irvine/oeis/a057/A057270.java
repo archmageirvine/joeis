@@ -6,13 +6,13 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.nauty.Multigraph;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057270 Triangle T(n,k) of number of unilaterally connected digraphs on n unlabeled nodes with k arcs, k=0..n*(n-1).
  * @author Sean A. Irvine
  */
-public class A057270 implements Sequence, GraphProcessor {
+public class A057270 extends Sequence1 implements GraphProcessor {
 
   // There are hints in Robinson's work that this sequence could be doable by the cycle index method.
 

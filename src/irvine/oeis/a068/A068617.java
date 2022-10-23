@@ -1,13 +1,13 @@
 package irvine.oeis.a068;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A068617 Starting from a(1)=8, each subsequent term is the minimal square obtained by inserting at least one digit in the previous term.
  * @author Sean A. Irvine
  */
-public class A068617 implements Sequence {
+public class A068617 extends Sequence1 {
 
   private final String mStart;
   private String mCurrent = null;

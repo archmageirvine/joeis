@@ -3,12 +3,13 @@ package irvine.oeis.a162;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a066.A066539;
 /**
  * A162884 Half the difference between the larger and smaller term of the n-th amicable pair.
  * @author Georg Fischer
  */
-public class A162884 implements Sequence {
+public class A162884 extends Sequence1 {
 
   private final Sequence mA066539 = new A066539();
   @Override

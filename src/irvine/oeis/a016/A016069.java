@@ -1,13 +1,13 @@
 package irvine.oeis.a016;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A016069 Numbers k such that k^2 contains exactly 2 distinct digits.
  * @author Sean A. Irvine
  */
-public class A016069 implements Sequence {
+public class A016069 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

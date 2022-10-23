@@ -3,13 +3,13 @@ package irvine.oeis.a057;
 import irvine.factor.factor.Jaguar;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057642 (Product k^k) * (Sum 1/k^k) where both the sum and product are over those positive integers k that divide n.
  * @author Sean A. Irvine
  */
-public class A057642 implements Sequence {
+public class A057642 extends Sequence1 {
 
   private long mN = 0;
 

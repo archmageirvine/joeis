@@ -3,13 +3,13 @@ package irvine.oeis.a033;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033053 Numbers whose base-2 representation Sum_{i=0..m} d(i)*2^i has d(i)=1 when i != m mod 2.
  * @author Sean A. Irvine
  */
-public class A033053 implements Sequence {
+public class A033053 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mLimit = Z.valueOf(base());

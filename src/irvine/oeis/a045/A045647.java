@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045647 Numbers n such that n! stripped of trailing zeros ends in n.
  * @author Sean A. Irvine
  */
-public class A045647 implements Sequence {
+public class A045647 extends Sequence1 {
 
   private Z mF = Z.ONE;
   private long mN = 0;

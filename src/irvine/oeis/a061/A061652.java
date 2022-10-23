@@ -3,13 +3,14 @@ package irvine.oeis.a061;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000668;
 
 /**
  * A061652 Even superperfect numbers: 2^(p-1) where 2^p-1 is a Mersenne prime (A000668).
  * @author Georg Fischer
  */
-public class A061652 implements Sequence {
+public class A061652 extends Sequence1 {
 
   final Sequence mA000668 = new A000668();
   @Override

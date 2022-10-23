@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056534 Mapping from the ordering by product (A027750, A056538) to the ordering by sum (A002260, A004736) of ordered pairs (a,b), a&gt;=1, b&gt;=1.
  * @author Sean A. Irvine
  */
-public class A056534 implements Sequence {
+public class A056534 extends Sequence1 {
 
   private long mN = 0;
   private int mM = 0;

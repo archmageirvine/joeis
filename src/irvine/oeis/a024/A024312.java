@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024312 a(n) = s(1)*s(n) + s(2)*s(n-1) + ... + s(k)*s(n+1-k), where k = floor((n+1)/2)), s = (natural numbers &gt;= 3).
  * @author Sean A. Irvine
  */
-public class A024312 implements Sequence {
+public class A024312 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

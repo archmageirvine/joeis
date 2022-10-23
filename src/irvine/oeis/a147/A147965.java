@@ -3,13 +3,14 @@ package irvine.oeis.a147;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046933;
 
 /**
  * A147965 a(n) = n + 1 - A001223(n) = n - A046933(n). In words, a(n) is the difference between n+1 and the n-th gap between primes.
  * @author Georg Fischer
  */
-public class A147965 implements Sequence {
+public class A147965 extends Sequence1 {
 
   final Sequence mA046933 = new A046933();
   protected long mN;

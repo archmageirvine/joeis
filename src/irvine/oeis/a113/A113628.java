@@ -1,13 +1,13 @@
 package irvine.oeis.a113;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A113628 Primes of the form 10 followed by a string of 1's.
  * @author Georg Fischer
  */
-public class A113628 implements Sequence {
+public class A113628 extends Sequence1 {
 
   private Z mA = Z.TEN;
   private final int mLast;

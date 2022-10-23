@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003627 Primes of the form 3n-1.
  * @author Sean A. Irvine
  */
-public class A003627 implements Sequence {
+public class A003627 extends Sequence1 {
 
   private Z mP = Z.ONE;
   private final Fast mPrime = new Fast();

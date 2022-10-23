@@ -3,6 +3,7 @@ package irvine.oeis.a320;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a034.A034958;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a034.A034958;
  * A320228 Distribute the primes into groups in ascending order, with the n-th group having prime(n) elements. Then a(n) is the sum of the numbers in the n-th group times the number of elements in the group.
  * @author Georg Fischer
  */
-public class A320228 implements Sequence {
+public class A320228 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA034958 = new A034958();

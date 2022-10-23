@@ -1,14 +1,14 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A011784 Levine's sequence. First construct a triangle as follows. Row 1 is {1,1}; if row n is {r_1, ..., r_k} then row n+1 consists of {r_k 1's, r_{k-1} 2's, r_{k-2} 3's, etc.}; sequence consists of the final elements in each row.
  * @author Sean A. Irvine
  */
-public class A011784 implements Sequence {
+public class A011784 extends Sequence1 {
 
   // I don't know any easy way to generate this sequence.
   // a(n) is the sum of values in the row for n-2.

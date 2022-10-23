@@ -4,13 +4,13 @@ import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058865 Irregular table a(n,k) = number of connected labeled chordal graphs on n nodes with k edges, containing no induced path P_4, for n &gt;= 1, 1 &lt;= k &lt;= n*(n-1)/2, read by rows; also the number of labeled trees with each vertex replaced by a clique.
  * @author Sean A. Irvine
  */
-public class A058865 implements Sequence {
+public class A058865 extends Sequence1 {
 
   // Thanks to M. F. Hasler
 

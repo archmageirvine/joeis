@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059972 a(n) is the least positive integer k such that all digits of k are 0 or 1 in exactly n different bases B, where 2 &lt;= B &lt;= k; i.e., such that A068953(k)=n.
  * @author Sean A. Irvine
  */
-public class A059972 implements Sequence {
+public class A059972 extends Sequence1 {
 
   private int mN = 0;
 

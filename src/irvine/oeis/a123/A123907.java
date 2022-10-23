@@ -3,6 +3,7 @@ package irvine.oeis.a123;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a011.A011756;
 import irvine.oeis.a034.A034953;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a034.A034953;
  * A123907 a(n) = T(p(n)) - p(T(n)) = Commutator[triangular numbers, primes] at n.
  * @author Georg Fischer
  */
-public class A123907 implements Sequence {
+public class A123907 extends Sequence1 {
 
   final Sequence mA011756 = new A011756();
   final Sequence mA034953 = new A034953();

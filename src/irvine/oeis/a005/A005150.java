@@ -1,14 +1,14 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045918;
 
 /**
  * A005150 Look and Say sequence: describe the previous term! (method A - initial term is 1).
  * @author Sean A. Irvine
  */
-public class A005150 implements Sequence {
+public class A005150 extends Sequence1 {
 
   private String mA = null;
 

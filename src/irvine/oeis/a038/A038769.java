@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038769 Number of digits of n which are divisors of n.
  * @author Sean A. Irvine
  */
-public class A038769 implements Sequence {
+public class A038769 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

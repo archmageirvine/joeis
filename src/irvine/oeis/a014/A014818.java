@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014818 a(n) is the sum over all floor(k^3/n), k=0 to n inclusive.
  * @author Sean A. Irvine
  */
-public class A014818 implements Sequence {
+public class A014818 extends Sequence1 {
 
   private long mN = 0;
 

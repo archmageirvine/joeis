@@ -3,13 +3,13 @@ package irvine.oeis.a009;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009112 Areas of Pythagorean triangles: numbers which can be the area of a right triangle with integer sides.
  * @author Sean A. Irvine
  */
-public class A009112 implements Sequence {
+public class A009112 extends Sequence1 {
 
   private long mN = 4;
 

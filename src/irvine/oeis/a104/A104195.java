@@ -3,6 +3,7 @@ package irvine.oeis.a104;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002322;
@@ -11,7 +12,7 @@ import irvine.oeis.a002.A002322;
  * A104195 a(n) = -(phi(n) + CarmichaelLambda(n)) + prime(n).
  * @author Georg Fischer
  */
-public class A104195 implements Sequence {
+public class A104195 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA000040 = new A000040();

@@ -2,13 +2,13 @@ package irvine.oeis.a092;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A092663 Number of consecutive prime runs of 10 primes congruent to 1 mod 4 below 10^n.
  * @author Sean A. Irvine
  */
-public class A092663 implements Sequence {
+public class A092663 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mLimit = 1;

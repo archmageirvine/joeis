@@ -3,13 +3,14 @@ package irvine.oeis.a330;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000043;
 
 /**
  * A330818 Numbers of the form 2^(2*p+1), where p is a Mersenne exponent, A000043.
  * @author Georg Fischer
  */
-public class A330818 implements Sequence {
+public class A330818 extends Sequence1 {
 
   final Sequence mA000043 = new A000043();
   @Override

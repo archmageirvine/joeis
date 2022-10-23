@@ -3,6 +3,7 @@ package irvine.oeis.a083;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a033.A033273;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a033.A033273;
  * A083399 Number of divisors of n that are not divisors of other divisors of n.
  * @author Georg Fischer
  */
-public class A083399 implements Sequence {
+public class A083399 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA033273 = new A033273();

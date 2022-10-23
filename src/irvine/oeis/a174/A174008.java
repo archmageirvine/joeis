@@ -3,13 +3,14 @@ package irvine.oeis.a174;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a163.A163300;
 /**
  * A174008 n-th prime plus n-th even nonnegative nonprime.
  * @author Georg Fischer
  */
-public class A174008 implements Sequence {
+public class A174008 extends Sequence1 {
 
   private final Sequence mA000040 = new A000040();
   private final Sequence mA163300 = new A163300();

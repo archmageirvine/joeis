@@ -4,6 +4,7 @@ package irvine.oeis.a081;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a001.A001222;
 import irvine.oeis.a005.A005361;
@@ -12,7 +13,7 @@ import irvine.oeis.a005.A005361;
  * A081400 a(n) = d(n) - bigomega(n) - A005361(n).
  * @author Georg Fischer
  */
-public class A081400 implements Sequence {
+public class A081400 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA001222 = new A001222();

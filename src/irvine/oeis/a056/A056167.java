@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056167 Numbers k such that k! is not divisible by the square of (f+1)!, where f = floor(k/2).
  * @author Sean A. Irvine
  */
-public class A056167 implements Sequence {
+public class A056167 extends Sequence1 {
 
   private long mN = 0;
   private Z mF = Z.ONE;

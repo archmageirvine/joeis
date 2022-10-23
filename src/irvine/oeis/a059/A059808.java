@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059808 Numbers which contain the same digits in two different bases.
  * @author Sean A. Irvine
  */
-public class A059808 implements Sequence {
+public class A059808 extends Sequence1 {
 
   private int mN = 6;
 

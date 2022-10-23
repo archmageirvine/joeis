@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051628 Number of digits in decimal expansion of 1/n before the periodic part begins.
  * @author Sean A. Irvine
  */
-public class A051628 implements Sequence {
+public class A051628 extends Sequence1 {
 
   private long mN = 0;
 

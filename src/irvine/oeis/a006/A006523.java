@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006523 Sum ((-1)^(i+1)*binomial(n,i)*2^i*(2*n-1)!,i=1..n) for n odd.
  * @author Sean A. Irvine
  */
-public class A006523 implements Sequence {
+public class A006523 extends Sequence1 {
 
   private int mN = -1;
   private Z mF = Z.ONE;

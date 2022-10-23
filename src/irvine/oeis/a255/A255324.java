@@ -3,6 +3,7 @@ package irvine.oeis.a255;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003309;
 import irvine.oeis.a008.A008578;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a008.A008578;
  * A255324 Difference between the n-th Ludic number and the n-th noncomposite number: a(n) = A003309(n) - A008578(n).
  * @author Georg Fischer
  */
-public class A255324 implements Sequence {
+public class A255324 extends Sequence1 {
 
   final Sequence mA003309 = new A003309();
   final Sequence mA008578 = new A008578();

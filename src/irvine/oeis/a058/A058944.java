@@ -6,13 +6,13 @@ import irvine.math.polynomial.IrreduciblePolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058944 Coefficients of monic irreducible polynomials over GF(3) listed in lexicographic order.
  * @author Sean A. Irvine
  */
-public class A058944 implements Sequence {
+public class A058944 extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final GaloisField mFld;

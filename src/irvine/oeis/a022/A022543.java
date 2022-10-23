@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A022543 Number of distinct 'failure tables' for a string of length n.
  * @author Sean A. Irvine
  */
-public class A022543 implements Sequence {
+public class A022543 extends Sequence1 {
 
   // After Pavel Irzavski
 

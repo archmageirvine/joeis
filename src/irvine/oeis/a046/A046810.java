@@ -4,14 +4,14 @@ import java.util.Arrays;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A046810 Number of anagrams of n that are primes.
  * @author Sean A. Irvine
  */
-public class A046810 implements Sequence {
+public class A046810 extends Sequence1 {
 
   private static final Fast PRIME = new Fast();
   protected long mN = 0;

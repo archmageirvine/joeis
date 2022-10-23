@@ -2,14 +2,14 @@ package irvine.oeis.a087;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A087630 Number of n-digit primes ending in 1 in base 10.
  * extended from A006880
  * @author Georg Fischer
  */
-public class A087630 implements Sequence {
+public class A087630 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mLimit;

@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055114 Numbers k such that the continued fraction for m/k contains a term &gt;= 3 for every 1 &lt;= m &lt; k.
  * @author Sean A. Irvine
  */
-public class A055114 implements Sequence {
+public class A055114 extends Sequence1 {
 
   private long mN = 22;
 

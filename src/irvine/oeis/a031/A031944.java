@@ -1,13 +1,13 @@
 package irvine.oeis.a031;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A031944 Numbers in which digits 0,1,2 all occur in base 3.
  * @author Sean A. Irvine
  */
-public class A031944 implements Sequence {
+public class A031944 extends Sequence1 {
 
   private final long mBase;
   private final long mMask;

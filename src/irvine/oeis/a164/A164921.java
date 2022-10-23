@@ -2,14 +2,14 @@ package irvine.oeis.a164;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A164921 a(1)=0, a(2)=1. For n &gt;=3, a(n) = the smallest integer &gt; a(n-1) that is coprime to every sum of any two distinct earlier terms of this sequence.
  * @author Sean A. Irvine
  */
-public class A164921 implements Sequence {
+public class A164921 extends Sequence1 {
 
   private final LongDynamicLongArray mA = new LongDynamicLongArray();
   private final LongDynamicLongArray mS = new LongDynamicLongArray();

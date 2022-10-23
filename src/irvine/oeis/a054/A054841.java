@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054841 If n = 2^a * 3^b * 5^c * 7^d * ... then a(n) = a + 10 * b + 100 * c + 1000 * d + ... .
  * @author Sean A. Irvine
  */
-public class A054841 implements Sequence {
+public class A054841 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

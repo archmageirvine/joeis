@@ -3,6 +3,7 @@ package irvine.oeis.a173;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001477;
 import irvine.oeis.a141.A141468;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a141.A141468;
  * A173073 (n-th nonnegative nonprime) minus (n-1).
  * @author Georg Fischer
  */
-public class A173073 implements Sequence {
+public class A173073 extends Sequence1 {
 
   final Sequence mA001477 = new A001477();
   final Sequence mA141468 = new A141468();

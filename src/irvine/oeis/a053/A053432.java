@@ -3,13 +3,13 @@ package irvine.oeis.a053;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053432 Numbers with digits in alphabetical order (in English).
  * @author Sean A. Irvine
  */
-public class A053432 implements Sequence {
+public class A053432 extends Sequence1 {
 
   private final long[] mSort;
   private final TreeSet<Z> mA = new TreeSet<>();

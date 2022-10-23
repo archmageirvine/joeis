@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059893 Reverse the order of all but the most significant bit in binary expansion of n: if n = 1ab..yz then a(n) = 1zy..ba.
  * @author Sean A. Irvine
  */
-public class A059893 implements Sequence {
+public class A059893 extends Sequence1 {
 
   private long mN = 0;
   private long mBit = 1;

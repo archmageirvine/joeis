@@ -2,13 +2,13 @@ package irvine.oeis.a202;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A202327 Triangle read by rows, T(n, k) is the coefficient of x^n in expansion of ((-1 - x + sqrt(1 + 2*x + 5*x^2)) /2)^k.
  * @author Sean A. Irvine
  */
-public class A202327 implements Sequence {
+public class A202327 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

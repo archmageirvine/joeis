@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006971 Composite numbers k such that k == +-1 (mod 8) and 2^((k-1)/2) == 1 (mod k).
  * @author Sean A. Irvine
  */
-public class A006971 implements Sequence {
+public class A006971 extends Sequence1 {
 
   private Z mN = Z.valueOf(559);
   private long mD = 2;

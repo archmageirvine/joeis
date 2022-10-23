@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003962 Completely multiplicative with a(p(k)) = floor( (p(k+1)+1)/2 ) for k-th prime p(k).
  * @author Sean A. Irvine
  */
-public class A003962 implements Sequence {
+public class A003962 extends Sequence1 {
 
   private long mN = 0;
   private final Fast mPrime = new Fast();

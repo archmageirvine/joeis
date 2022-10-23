@@ -2,13 +2,13 @@ package irvine.oeis.a197;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A197975 Round((2*n+1/n)^n).
  * @author Georg Fischer
  */
-public class A197975 implements Sequence {
+public class A197975 extends Sequence1 {
 
   protected long mN = 0;
   protected final int mParm;

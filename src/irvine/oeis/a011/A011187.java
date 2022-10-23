@@ -1,14 +1,14 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A011187 Number of ways to choose 2^n vectors in {0, 1, 2, 3}^n such that any two differ by at least 2 in at least one coordinate (2^n being maximal).
  * @author Sean A. Irvine
  */
-public class A011187 implements Sequence {
+public class A011187 extends Sequence1 {
 
   // Encode vectors using 2-bits per coordinate
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));

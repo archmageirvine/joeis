@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
  * A049862 Products of two Fibonacci numbers with distinct indices.
  * @author Sean A. Irvine
  */
-public class A049862 implements Sequence {
+public class A049862 extends Sequence1 {
 
   private final MemorySequence mFibo = MemorySequence.cachedSequence(new A000045());
   private final TreeSet<Z> mA = new TreeSet<>();

@@ -3,13 +3,13 @@ package irvine.oeis.a001;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001292 Concatenations of cyclic permutations of initial positive integers.
  * @author Sean A. Irvine
  */
-public class A001292 implements Sequence {
+public class A001292 extends Sequence1 {
 
   private final TreeSet<Z> mQ = new TreeSet<>();
   private long mN = 1;

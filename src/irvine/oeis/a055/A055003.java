@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055003 a(n) = prime(prime(n)-1).
  * @author Sean A. Irvine
  */
-public class A055003 implements Sequence {
+public class A055003 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

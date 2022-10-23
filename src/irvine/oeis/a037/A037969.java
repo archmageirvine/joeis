@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037969 Numbers whose maximal base-2 run length is 2.
  * @author Sean A. Irvine
  */
-public class A037969 implements Sequence {
+public class A037969 extends Sequence1 {
 
   private long mN = 0;
 

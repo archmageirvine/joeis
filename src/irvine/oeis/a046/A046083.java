@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046083 The smallest member 'a' of the Pythagorean triples (a,b,c) ordered by increasing c.
  * @author Sean A. Irvine
  */
-public class A046083 implements Sequence {
+public class A046083 extends Sequence1 {
 
   private long mN = 4;
   private final TreeSet<Z> mA = new TreeSet<>();

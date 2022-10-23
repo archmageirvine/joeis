@@ -2,13 +2,13 @@ package irvine.oeis.a010;
 
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A010341 Sum of all terms except last in period of continued fraction for sqrt(n).
  * @author Sean A. Irvine
  */
-public class A010341 implements Sequence {
+public class A010341 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

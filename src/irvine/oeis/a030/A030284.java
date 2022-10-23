@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030284 a(n) is the least prime &gt; a(n-1) whose digits do not appear in a(n-1).
  * @author Sean A. Irvine
  */
-public class A030284 implements Sequence {
+public class A030284 extends Sequence1 {
 
   private Z mA = Z.ONE;
 

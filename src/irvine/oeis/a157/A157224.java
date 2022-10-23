@@ -3,6 +3,7 @@ package irvine.oeis.a157;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000089;
 import irvine.oeis.a001.A001615;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001615;
  * A157224 Number of primitive inequivalent (up to Pi/2 rotation) nonsquare sublattices of square lattice of index n.
  * @author Georg Fischer
  */
-public class A157224 implements Sequence {
+public class A157224 extends Sequence1 {
 
   final Sequence mA000089 = new A000089();
   final Sequence mA001615 = new A001615();

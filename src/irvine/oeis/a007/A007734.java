@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007734 Period of repeating digits of 1/n in base 3.
  * @author Sean A. Irvine
  */
-public class A007734 implements Sequence {
+public class A007734 extends Sequence1 {
 
   private long mN = 0;
 

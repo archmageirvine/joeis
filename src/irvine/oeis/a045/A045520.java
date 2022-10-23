@@ -3,13 +3,14 @@ package irvine.oeis.a045;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008905;
 
 /**
  * A045520 Numbers k such that k! has initial digit '1'.
  * @author Georg Fischer
  */
-public class A045520 implements Sequence {
+public class A045520 extends Sequence1 {
 
   protected Z mDig1;
   protected int mN;

@@ -3,13 +3,14 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a096.A096268;
 
 /**
  * A056832 All a(n) = 1 or 2; a(1) = 1; get next 2^k terms by repeating first 2^k terms and changing last element so sum of first 2^(k+1) terms is odd.
  * @author Georg Fischer
  */
-public class A056832 implements Sequence {
+public class A056832 extends Sequence1 {
 
   final Sequence mA096268 = new A096268();
   @Override

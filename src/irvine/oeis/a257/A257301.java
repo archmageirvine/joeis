@@ -3,13 +3,14 @@ package irvine.oeis.a257;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046530;
 
 /**
  * A257301 Number of cubic nonresidues modulo n.
  * @author Georg Fischer
  */
-public class A257301 implements Sequence {
+public class A257301 extends Sequence1 {
 
   final Sequence mA046530 = new A046530();
   protected long mN;

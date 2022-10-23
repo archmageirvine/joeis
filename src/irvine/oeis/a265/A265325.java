@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A265325 Number of n-digit decimal numbers with leading zeros allowed where no digit appears exactly twice.
  * E.g.f.: (exp(x)-x^2/2)^10
  * @author Georg Fischer
  */
-public class A265325 implements Sequence {
+public class A265325 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

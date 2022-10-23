@@ -3,13 +3,14 @@ package irvine.oeis.a347;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a055.A055155;
 /**
  * A347088 a(n) = A055155(n) - d(n), where A055155(n) = Sum_{d|n} gcd(d, n/d) and d(n) gives the number of divisors of n.
  * @author Georg Fischer
  */
-public class A347088 implements Sequence {
+public class A347088 extends Sequence1 {
 
   private final Sequence mA000005 = new A000005();
   private final Sequence mA055155 = new A055155();

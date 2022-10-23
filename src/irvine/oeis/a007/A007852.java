@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007852 Antichains in rooted plane trees on n nodes.
  * @author Sean A. Irvine
  */
-public class A007852 implements Sequence {
+public class A007852 extends Sequence1 {
 
   private long mN = 0;
 

@@ -4,13 +4,13 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005694 Positions of remoteness 6 in Beans-Don't-Talk.
  * @author Sean A. Irvine
  */
-public class A005694 implements Sequence {
+public class A005694 extends Sequence1 {
 
   private static final int NOT_YET_COMPUTABLE = -1;
   private static final int TERMINATING_RECURSION = -2;

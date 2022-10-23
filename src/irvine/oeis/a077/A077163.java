@@ -3,13 +3,14 @@ package irvine.oeis.a077;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002024;
 
 /**
  * A077163 n-th power of next n numbers.
  * @author Georg Fischer
  */
-public class A077163 implements Sequence {
+public class A077163 extends Sequence1 {
 
   final Sequence mA002024 = new A002024();
   protected long mN;

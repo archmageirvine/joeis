@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007506 Primes p with property that p divides the sum of all primes &lt;= p.
  * @author Sean A. Irvine
  */
-public class A007506 implements Sequence {
+public class A007506 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

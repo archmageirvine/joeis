@@ -3,6 +3,7 @@ package irvine.oeis.a318;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007814;
 import irvine.oeis.a046.A046645;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a046.A046645;
  * A318440 a(n) = A046645(n) - A007814(n); the 2-adic valuation of A299150.
  * @author Georg Fischer
  */
-public class A318440 implements Sequence {
+public class A318440 extends Sequence1 {
 
   final Sequence mA007814 = new A007814();
   final Sequence mA046645 = new A046645();

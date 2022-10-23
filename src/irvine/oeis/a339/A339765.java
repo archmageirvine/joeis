@@ -3,13 +3,14 @@ package irvine.oeis.a339;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000201;
 
 /**
  * A339765 a(n) = 2*floor(n*phi) - 3*n, where phi = (1+sqrt(5))/2.
  * @author Georg Fischer
  */
-public class A339765 implements Sequence {
+public class A339765 extends Sequence1 {
 
   final Sequence mA000201 = new A000201();
   protected long mN;

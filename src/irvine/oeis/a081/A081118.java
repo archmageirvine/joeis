@@ -3,6 +3,7 @@ package irvine.oeis.a081;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002260;
 import irvine.oeis.a004.A004736;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a004.A004736;
  * A081118 Triangle of first n numbers per row having exactly n 1's in binary representation.
  * @author Georg Fischer
  */
-public class A081118 implements Sequence {
+public class A081118 extends Sequence1 {
 
   final Sequence mA002260 = new A002260();
   final Sequence mA004736 = new A004736();

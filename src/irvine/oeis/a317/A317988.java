@@ -2,7 +2,7 @@ package irvine.oeis.a317;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A317988 Farey fraction tree, reading each fraction's numerator first, then its denominator.
@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
  * </pre>
  * @author Georg Fischer
  */
-public class A317988 implements Sequence {
+public class A317988 extends Sequence1 {
 
   protected long mNum;
   protected long mDen;

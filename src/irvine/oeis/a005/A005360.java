@@ -5,13 +5,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005360 Flimsy numbers.
  * @author Sean A. Irvine
  */
-public class A005360 implements Sequence {
+public class A005360 extends Sequence1 {
 
   // Implemented using the description by T.D. Noe in A125121.
   // This is more robust than the existing programs in A005360

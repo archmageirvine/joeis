@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048682 a(n) is the difference between maximal and central squarefree kernel numbers dividing values of {binomial(n,k)} or A001405(n), respectively.
  * @author Sean A. Irvine
  */
-public class A048682 implements Sequence {
+public class A048682 extends Sequence1 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
   private long mN = 0;

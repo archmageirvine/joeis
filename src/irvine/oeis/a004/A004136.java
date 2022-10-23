@@ -4,13 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004136 Additive bases: a(n) is the least integer k such that in the cyclic group Z_k there is a subset of n elements all pairs (of not necessarily distinct elements) of which add up to a different sum (in Z_k).
  * @author Sean A. Irvine
  */
-public class A004136 implements Sequence {
+public class A004136 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;

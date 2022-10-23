@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.math.MutableInteger;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038670 Concatenations of two squares in two ways.
  * @author Sean A. Irvine
  */
-public class A038670 implements Sequence {
+public class A038670 extends Sequence1 {
 
   private final TreeMap<Z, MutableInteger> mA = new TreeMap<>();
   private long mN = 1;

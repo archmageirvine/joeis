@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036923 Odd composite numbers n such that the digit sum of n equals digit sum of sum of its prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
-public class A036923 implements Sequence {
+public class A036923 extends Sequence1 {
 
   private Z mN = Z.valueOf(25);
 

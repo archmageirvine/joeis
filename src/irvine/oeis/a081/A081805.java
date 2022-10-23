@@ -3,13 +3,14 @@ package irvine.oeis.a081;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a034.A034699;
 
 /**
  * A081805 a(n) = n minus (largest prime power in n factorization); a(1) = 0.
  * @author Georg Fischer
  */
-public class A081805 implements Sequence {
+public class A081805 extends Sequence1 {
 
   final Sequence mA034699 = new A034699();
   protected long mN;

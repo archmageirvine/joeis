@@ -2,13 +2,13 @@ package irvine.oeis.a197;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A197773 Ceiling((n+1/n)^3).
  * @author Georg Fischer
  */
-public class A197773 implements Sequence {
+public class A197773 extends Sequence1 {
 
   protected int mN = 0;
   protected final int mParm;

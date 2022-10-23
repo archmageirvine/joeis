@@ -3,13 +3,13 @@ package irvine.oeis.a016;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A016078 Smallest number that is sum of 2 positive n-th powers in 2 different ways.
  * @author Sean A. Irvine
  */
-public class A016078 implements Sequence {
+public class A016078 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final TreeSet<Z> mSeen = new TreeSet<>();

@@ -6,13 +6,13 @@ import java.util.TreeSet;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052215 a(n) = smallest number m such that m and m+1 are the product of exactly n distinct primes.
  * @author Sean A. Irvine
  */
-public class A052215 implements Sequence {
+public class A052215 extends Sequence1 {
 
   private long mN = 0;
 

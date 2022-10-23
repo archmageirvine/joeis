@@ -3,13 +3,13 @@ package irvine.oeis.a080;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A080672 Numbers having divisors 2 or 3 or 5 or 7.
  * @author Georg Fischer
  */
-public class A080672 implements Sequence {
+public class A080672 extends Sequence1 {
 
   protected int mN;
   protected long mParm;

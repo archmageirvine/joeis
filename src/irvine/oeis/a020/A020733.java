@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020733 Consider number of prime divisors of C(n,k), k=0..n; a(n) = multiplicity of maximal value.
  * @author Sean A. Irvine
  */
-public class A020733 implements Sequence {
+public class A020733 extends Sequence1 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
   private long mN = 0;

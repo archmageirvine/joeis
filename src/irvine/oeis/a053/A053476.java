@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053476 Smallest number m such that when A051953 is applied n times to m the result is neither a power of 2 nor 0.
  * @author Sean A. Irvine
  */
-public class A053476 implements Sequence {
+public class A053476 extends Sequence1 {
 
   private long mN = 1;
   private long mM = 3;

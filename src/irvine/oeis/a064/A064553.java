@@ -2,14 +2,14 @@ package irvine.oeis.a064;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A064553 a(1) = 1, a(prime(i)) = i + 1 for i &gt; 0 and a(u * v) = a(u) * a(v) for u, v &gt; 0.
  * @author Sean A. Irvine
  */
-public class A064553 implements Sequence {
+public class A064553 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final DynamicLongArray mSeq = new DynamicLongArray();

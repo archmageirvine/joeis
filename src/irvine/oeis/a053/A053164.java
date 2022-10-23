@@ -3,13 +3,14 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008835;
 
 /**
  * A053164 4th root of largest 4th power dividing n.
  * @author Georg Fischer
  */
-public class A053164 implements Sequence {
+public class A053164 extends Sequence1 {
 
   final Sequence mA008835 = new A008835();
   @Override

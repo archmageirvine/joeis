@@ -1,14 +1,14 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 
 /**
  * A054398 Define a sequence of 2^n X 2^n squares as follows: S_0 = [1], S_1 = [1,2; 3,4]; S_2 = [1,2,5,6; 3,4,7,8; 9,10,13,14; 11,12,15,16], etc.; sequence gives triangular array whose n-th row gives differences between successive columns of n-th square.
  * @author Sean A. Irvine
  */
-public class A054398 implements Sequence {
+public class A054398 extends Sequence1 {
 
   private final DynamicArray<Z> mA = new DynamicArray<>();
   private int mN = -1;

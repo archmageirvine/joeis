@@ -3,13 +3,14 @@ package irvine.oeis.a232;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a067.A067201;
 
 /**
  * A232011 Numbers n such that (3n)^2 + 2 is prime.
  * @author Georg Fischer
  */
-public class A232011 implements Sequence {
+public class A232011 extends Sequence1 {
 
   final Sequence mA067201 = new A067201();
   /** Construct the sequence. */

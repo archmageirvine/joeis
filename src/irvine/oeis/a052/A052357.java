@@ -2,13 +2,14 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a031.A031934;
 
 /**
  * A052357 First prime from A031934 (lesser of 16-twins) whose distance to the next 16-twin increases.
  * @author Sean A. Irvine
  */
-public class A052357 implements Sequence {
+public class A052357 extends Sequence1 {
 
   private long mN = 12;
 

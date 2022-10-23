@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051300 a(n+1) = a(n) + rotate( a(n), 1 digit right).
  * @author Sean A. Irvine
  */
-public class A051300 implements Sequence {
+public class A051300 extends Sequence1 {
 
   private Z mA = null;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023738 Numbers with a single 4 in their base 5 expansion.
  * @author Sean A. Irvine
  */
-public class A023738 implements Sequence {
+public class A023738 extends Sequence1 {
 
   private long mN = 0;
 

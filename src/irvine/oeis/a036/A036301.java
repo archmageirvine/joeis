@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036301 Numbers whose sum of even digits and sum of odd digits are equal.
  * @author Sean A. Irvine
  */
-public class A036301 implements Sequence {
+public class A036301 extends Sequence1 {
 
   private long mN = -1;
 

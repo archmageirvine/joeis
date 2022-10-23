@@ -1,13 +1,13 @@
 package irvine.oeis.a256;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A256290 Numbers which have only digits 4 and 5 in base 10.
  * @author Georg Fischer
  */
-public class A256290 implements Sequence {
+public class A256290 extends Sequence1 {
 
   private long mN = 1;
 

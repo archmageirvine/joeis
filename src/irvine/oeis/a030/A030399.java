@@ -3,13 +3,13 @@ package irvine.oeis.a030;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030399 Write n in base 4, then complement each digit (d -&gt; 3-d) and juxtapose.
  * @author Georg Fischer
  */
-public class A030399 implements Sequence {
+public class A030399 extends Sequence1 {
  
   private String mS = "";
   private int mPos = 0;

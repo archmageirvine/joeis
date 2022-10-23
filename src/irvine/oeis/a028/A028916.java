@@ -3,13 +3,13 @@ package irvine.oeis.a028;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028916 Friedlander-Iwaniec primes: Primes of form a^2 + b^4.
  * @author Sean A. Irvine
  */
-public class A028916 implements Sequence {
+public class A028916 extends Sequence1 {
 
   private final TreeSet<Z> mForms = new TreeSet<>();
   private long mA = 0;

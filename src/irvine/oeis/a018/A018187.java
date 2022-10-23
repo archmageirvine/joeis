@@ -5,13 +5,13 @@ import irvine.math.group.IntegersMod;
 import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A018187 Restricted Perrin pseudoprimes.
  * @author Sean A. Irvine
  */
-public class A018187 implements Sequence {
+public class A018187 extends Sequence1 {
 
   // This is slow, cf. also A013998
 

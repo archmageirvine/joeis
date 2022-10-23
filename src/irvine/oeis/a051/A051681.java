@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051681 Smallest term of first run of exactly n consecutive integers which are not squarefree.
  * @author Sean A. Irvine
  */
-public class A051681 implements Sequence {
+public class A051681 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 3;

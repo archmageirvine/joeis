@@ -3,13 +3,14 @@ package irvine.oeis.a215;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a022.A022005;
 
 /**
  * A215918 Numbers n such that 6*n + {1, 5, 7}  are all primes.
  * @author Georg Fischer
  */
-public class A215918 implements Sequence {
+public class A215918 extends Sequence1 {
 
   final Sequence mA022005 = new A022005();
   @Override

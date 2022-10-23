@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055460 Number of primes with odd exponents in the prime power factorization of n!.
  * @author Sean A. Irvine
  */
-public class A055460 implements Sequence {
+public class A055460 extends Sequence1 {
 
   private final FactorSequence mFactorSequence = new FactorSequence();
   private final PrimeDivision mFactor = new PrimeDivision();

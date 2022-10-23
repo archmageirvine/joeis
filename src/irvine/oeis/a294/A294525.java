@@ -7,14 +7,14 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A294525 Triangle read by rows: T(n,k) is the number of connected graphs on n nodes with k center nodes.
  * @author Sean A. Irvine
  */
-public class A294525 implements Sequence, GraphProcessor {
+public class A294525 extends Sequence1 implements GraphProcessor {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;

@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032723 Numbers k such that k prefixed by '6' and followed by '7' is a prime.
  * @author Sean A. Irvine
  */
-public class A032723 implements Sequence {
+public class A032723 extends Sequence1 {
 
   private long mN = -1;
 

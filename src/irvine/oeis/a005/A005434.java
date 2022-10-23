@@ -1,14 +1,14 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A005434 Number of distinct autocorrelations of binary words of length n.
  * @author Sean A. Irvine
  */
-public class A005434 implements Sequence {
+public class A005434 extends Sequence1 {
 
   // After T. Sillke
 

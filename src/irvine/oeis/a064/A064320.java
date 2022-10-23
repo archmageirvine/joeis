@@ -4,13 +4,13 @@ package irvine.oeis.a064;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A064320 a(n) = Product_{j=1..n} j^C(n-1,j-1).
  * @author Georg Fischer
  */
-public class A064320 implements Sequence {
+public class A064320 extends Sequence1 {
 
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN = 0;

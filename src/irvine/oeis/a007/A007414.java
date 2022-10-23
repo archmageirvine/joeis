@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007414 Largest number not a sum of distinct primes &gt;= prime(n).
  * @author Sean A. Irvine
  */
-public class A007414 implements Sequence {
+public class A007414 extends Sequence1 {
 
   // After Charles R. Greathouse IV
 

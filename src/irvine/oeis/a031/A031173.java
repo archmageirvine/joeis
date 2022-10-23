@@ -2,13 +2,13 @@ package irvine.oeis.a031;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A031173 Longest edge a of smallest (measured by the longest edge) primitive Euler bricks (a, b, c, sqrt(a^2 + b^2), sqrt(b^2 + c^2), sqrt(a^2 + c^2) are integers).
  * @author Sean A. Irvine
  */
-public class A031173 implements Sequence {
+public class A031173 extends Sequence1 {
 
   private long mM = 0;
   private long mN = 239;

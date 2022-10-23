@@ -1,13 +1,13 @@
 package irvine.oeis.a245;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A245417 Number of nonnegative integers with property that their base 7/3 expansion (see A024640) has n digits.
  * @author Sean A. Irvine
  */
-public class A245417 implements Sequence {
+public class A245417 extends Sequence1 {
 
   private Z mSum = Z.ZERO;
 

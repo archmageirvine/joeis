@@ -2,13 +2,13 @@ package irvine.oeis.a029;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A029783 Exclusionary squares: numbers n such that no digit of n is present in n^2.
  * @author Sean A. Irvine
  */
-public class A029783 implements Sequence {
+public class A029783 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

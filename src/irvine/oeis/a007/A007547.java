@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007547 Number of steps to compute n-th prime in PRIMEGAME (slow version).
  * @author Sean A. Irvine
  */
-public class A007547 implements Sequence {
+public class A007547 extends Sequence1 {
 
   private Z mA = Z.ZERO;
   private Z mP = Z.TWO;

@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005730 Related to n-th powers of polynomials.
  * @author Sean A. Irvine
  */
-public class A005730 implements Sequence {
+public class A005730 extends Sequence1 {
 
   private long mN = 0;
 

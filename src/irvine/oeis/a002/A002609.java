@@ -2,12 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002609 Glaisher's function G(n) (18 squares version).
  * @author Sean A. Irvine
  */
-public class A002609 implements Sequence {
+public class A002609 extends Sequence1 {
 
   private final Sequence mA = new A002611();
   private final Sequence mB = new A002611();

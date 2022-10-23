@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a054.A054747;
 
 /**
  * A000282 Finite automata.
  * @author Sean A. Irvine
  */
-public class A000282 implements Sequence {
+public class A000282 extends Sequence1 {
 
   private final A054747 mA = new A054747();
   private final ArrayList<Z> mS = new ArrayList<>();

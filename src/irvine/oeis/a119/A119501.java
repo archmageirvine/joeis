@@ -2,13 +2,13 @@ package irvine.oeis.a119;
 
 import irvine.math.plantri.Plantri;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A119501 Number of isomorphism classes of 3-connected simple planar graphs (convex polytopes) where isomorphism does not allow reflection.
  * @author Sean A. Irvine
  */
-public class A119501 implements Sequence {
+public class A119501 extends Sequence1 {
 
   private int mN = 0;
 

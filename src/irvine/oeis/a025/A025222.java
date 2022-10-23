@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025222 a(n) = [ Sum{(sqrt(j+1)-sqrt(i+1))^2} ], 1 &lt;= i &lt; j &lt;= n.
  * @author Sean A. Irvine
  */
-public class A025222 implements Sequence {
+public class A025222 extends Sequence1 {
 
   private long mN = 2;
   private CR mSum = CR.ZERO;

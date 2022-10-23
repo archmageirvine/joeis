@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023741 Ternary expansion uses each positive digit just once.
  * @author Sean A. Irvine
  */
-public class A023741 implements Sequence {
+public class A023741 extends Sequence1 {
 
   private long mN = 0;
 

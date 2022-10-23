@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006670 Edge-distinguishing chromatic number of path with n nodes.
  * @author Sean A. Irvine
  */
-public class A006670 implements Sequence {
+public class A006670 extends Sequence1 {
 
   private long mN = 0;
   private long mR = 0;

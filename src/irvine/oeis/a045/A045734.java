@@ -2,13 +2,14 @@ package irvine.oeis.a045;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
  * A045734 Smallest Fibonacci number beginning "n^2".
  * @author Sean A. Irvine
  */
-public class A045734 implements Sequence {
+public class A045734 extends Sequence1 {
 
   private long mN = 0;
 

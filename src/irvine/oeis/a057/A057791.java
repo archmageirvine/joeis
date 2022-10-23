@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057791 Sum[k^(n-k)], where sum is over positive integers, k, where k &lt;= n and gcd(k,n) = 1.
  * @author Sean A. Irvine
  */
-public class A057791 implements Sequence {
+public class A057791 extends Sequence1 {
 
   private long mN = 0;
 

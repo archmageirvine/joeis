@@ -9,14 +9,14 @@ import java.util.List;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
  * A213086 Square array read by antidiagonals: T(n,m) (n&gt;=1, m&gt;=0) is the number of partitions of mn that are the sum of m not necessarily distinct partitions of n.
  * @author Sean A. Irvine
  */
-public class A213086 implements Sequence {
+public class A213086 extends Sequence1 {
 
   private int mN = 0;
   private int mPos = 0;

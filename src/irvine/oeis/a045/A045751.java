@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045751 Numbers k such that 4*k + 1 is not prime.
  * @author Sean A. Irvine
  */
-public class A045751 implements Sequence {
+public class A045751 extends Sequence1 {
 
   private long mN = -1;
 

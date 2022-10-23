@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027847 a(n) = Sum_{d|n} sigma(n/d)*d^3.
  * @author Sean A. Irvine
  */
-public class A027847 implements Sequence {
+public class A027847 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a230;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a080.A080697;
 /**
  * A230285 a(n) = n*prime(prime(n)) - prime(n).
  * @author Georg Fischer
  */
-public class A230285 implements Sequence {
+public class A230285 extends Sequence1 {
 
   private final Sequence mA000040 = new A000040();
   private final Sequence mA080697 = new A080697();

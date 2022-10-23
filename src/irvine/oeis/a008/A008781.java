@@ -1,7 +1,7 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 import irvine.util.array.LongDynamicBooleanArray;
 
@@ -9,7 +9,7 @@ import irvine.util.array.LongDynamicBooleanArray;
  * A008781 For any circular arrangement of 0..n-1, let S be the sum of cubes of every sum of two contiguous numbers; then a(n) is the number of distinct values of S.
  * @author Sean A. Irvine
  */
-public class A008781 implements Sequence {
+public class A008781 extends Sequence1 {
 
   private int mN = -1;
 

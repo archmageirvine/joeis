@@ -3,6 +3,7 @@ package irvine.oeis.a319;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002410;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002410;
  * A319229 a(n) is equal to the difference between the nearest integer to the imaginary part of the n-th zero of the Riemann zeta function and the n-th prime.
  * @author Georg Fischer
  */
-public class A319229 implements Sequence {
+public class A319229 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA002410 = new A002410();

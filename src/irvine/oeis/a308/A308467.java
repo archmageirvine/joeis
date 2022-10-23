@@ -3,13 +3,14 @@ package irvine.oeis.a308;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018074;
 
 /**
  * A308467 The smallest positive n-digit 4th power.
  * @author Georg Fischer
  */
-public class A308467 implements Sequence {
+public class A308467 extends Sequence1 {
 
   final Sequence mA018074 = new A018074();
   @Override

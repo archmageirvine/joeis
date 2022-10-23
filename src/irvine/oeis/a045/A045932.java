@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045932 Numbers n such that n through n+3 are divisible by the same number of distinct primes.
  * @author Sean A. Irvine
  */
-public class A045932 implements Sequence {
+public class A045932 extends Sequence1 {
 
   private long mN = 1;
 

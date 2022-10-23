@@ -3,13 +3,14 @@ package irvine.oeis.a178;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a189.A189766;
 
 /**
  * A178790 The arithmetic mean of (2*k+1)*A_k (k=0,...,n-1), where A_0,A_1,... are Apery numbers given by A005259.
  * @author Georg Fischer
  */
-public class A178790 implements Sequence {
+public class A178790 extends Sequence1 {
 
   final Sequence mA189766 = new A189766();
   protected long mN;

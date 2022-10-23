@@ -1,13 +1,13 @@
 package irvine.oeis.a224;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A224752 a(1)=1; thereafter a(n) = smallest number m such that a(n-1)+m = (a(n-1) followed by the leading digit of m).
  * @author Georg Fischer
  */
-public class A224752 implements Sequence {
+public class A224752 extends Sequence1 {
 
   private int mN;
   private Z mA;

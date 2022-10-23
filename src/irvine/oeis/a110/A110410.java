@@ -1,13 +1,13 @@
 package irvine.oeis.a110;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A110410 a(1) = 10, a(n+1) = {a(n) followed by digit reversal(a(n))}/11.
  * @author Georg Fischer
  */
-public class A110410 implements Sequence {
+public class A110410 extends Sequence1 {
 
   private Z mA = Z.TEN;
 

@@ -7,13 +7,13 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.nauty.Multigraph;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038193 Let G be an n-node graph with valencies d_1 .. d_n say; let m = (d_1 + ... + d_n)/n and s = n*Sum( (d_i-m)^2 ) be the scaled degree variance; a(n) gives number of different values taken by s.
  * @author Sean A. Irvine
  */
-public class A038193 implements Sequence, GraphProcessor {
+public class A038193 extends Sequence1 implements GraphProcessor {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;

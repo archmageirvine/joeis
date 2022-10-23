@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059436 Smallest number whose set of divisors contains each digit 0-9 at least n times.
  * @author Sean A. Irvine
  */
-public class A059436 implements Sequence {
+public class A059436 extends Sequence1 {
 
   private int mN = 0;
   private long mM = 107;

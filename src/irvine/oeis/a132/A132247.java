@@ -3,13 +3,14 @@ package irvine.oeis.a132;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001097;
 
 /**
  * A132247 Twin primes congruent to {1, 11, 13, 17, 19, 29} mod 30.
  * @author Georg Fischer
  */
-public class A132247 implements Sequence {
+public class A132247 extends Sequence1 {
 
   final Sequence mA001097 = new A001097();
   /** Construct the sequence. */

@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000358 Number of binary necklaces of length n with no subsequence 00, excluding the necklace "0".
  * @author Sean A. Irvine
  */
-public class A000358 implements Sequence {
+public class A000358 extends Sequence1 {
 
   protected int mN = 0;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a049;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049228 sigma(n)-n is a perfect square associated with A049226.
  * @author Sean A. Irvine
  */
-public class A049228 implements Sequence {
+public class A049228 extends Sequence1 {
 
   private long mN = 118;
 

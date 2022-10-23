@@ -6,13 +6,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028689 Sorted Galois numbers.
  * @author Sean A. Irvine
  */
-public class A028689 implements Sequence {
+public class A028689 extends Sequence1 {
 
   private final TreeSet<Z> mQueue = new TreeSet<>();
   private final Map<Long, Z> mGalois = new HashMap<>();

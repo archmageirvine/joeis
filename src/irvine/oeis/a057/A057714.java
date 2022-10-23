@@ -3,13 +3,13 @@ package irvine.oeis.a057;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057714 Composite numbers m = Product p_i^{e_i} such that p_j^{e_j} &lt; p_k^{e_k} for all p_j &lt; p_k.
  * @author Sean A. Irvine
  */
-public class A057714 implements Sequence {
+public class A057714 extends Sequence1 {
 
   private long mN = 5;
 

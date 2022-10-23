@@ -2,13 +2,14 @@ package irvine.oeis.a047;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
  * A047930 Smallest positive Fibonacci number divisible by n.
  * @author Sean A. Irvine
  */
-public class A047930 implements Sequence {
+public class A047930 extends Sequence1 {
 
   private long mN = 0;
 

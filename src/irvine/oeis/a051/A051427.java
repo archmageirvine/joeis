@@ -7,13 +7,13 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.Multigraph;
 import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051427 Number of strictly Deza graphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A051427 implements Sequence {
+public class A051427 extends Sequence1 {
 
   private static final class StrictlyDeza extends ParallelGenerateGraphsSequence {
 

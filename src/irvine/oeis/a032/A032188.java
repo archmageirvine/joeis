@@ -2,13 +2,13 @@ package irvine.oeis.a032;
 
 import irvine.math.z.Eulerian2;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032188 Number of labeled series-reduced mobiles (circular rooted trees) with n leaves (root has degree 0 or &gt;= 2).
  * @author Sean A. Irvine
  */
-public class A032188 implements Sequence {
+public class A032188 extends Sequence1 {
 
   private int mN = -1;
 

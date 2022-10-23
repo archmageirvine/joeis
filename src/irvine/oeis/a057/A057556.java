@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057556 Lexicographic ordering of M x M x M, where M={0,1,2,...}.
  * @author Sean A. Irvine
  */
-public class A057556 implements Sequence {
+public class A057556 extends Sequence1 {
 
   private long mN = -1;
   private long mM = 0;

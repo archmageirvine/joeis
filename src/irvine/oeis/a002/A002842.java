@@ -3,14 +3,14 @@ package irvine.oeis.a002;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
 
 /**
  * A002842 Number of strongly asymmetric sequences of length n.
  * @author Sean A. Irvine
  */
-public class A002842 implements Sequence {
+public class A002842 extends Sequence1 {
 
   private int mN = 0;
   private LongDynamicArray<byte[]> mPrev = null;

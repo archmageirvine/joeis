@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053663 Numbers k such that 2*k+1 does not divide k!+1.
  * @author Sean A. Irvine
  */
-public class A053663 implements Sequence {
+public class A053663 extends Sequence1 {
 
   private long mN = 0;
 

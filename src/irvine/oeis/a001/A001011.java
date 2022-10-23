@@ -1,14 +1,14 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001011 Number of ways to fold a strip of n blank stamps.
  * @author Joe Sawada
  * @author Sean A. Irvine (Java port)
  */
-public class A001011 implements Sequence {
+public class A001011 extends Sequence1 {
 
   // This implementation is based on stamp.c which carried the following header:
   // http://www.cis.uoguelph.ca/~sawada/prog/stamp.c

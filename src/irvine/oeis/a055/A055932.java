@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055932 Numbers all of whose prime divisors are consecutive primes starting at 2.
  * @author Sean A. Irvine
  */
-public class A055932 implements Sequence {
+public class A055932 extends Sequence1 {
 
   private final TreeMap<Z, Long> mA = new TreeMap<>();
   private final Fast mPrime = new Fast();

@@ -1,13 +1,13 @@
 package irvine.oeis.a261;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A261301 a(n+1) = abs(a(n) - gcd(a(n), n)), a(1) = 1.
  * @author Georg Fischer
  */
-public class A261301 implements Sequence {
+public class A261301 extends Sequence1 {
 
   private int mN;
   private int mMult;

@@ -3,6 +3,7 @@ package irvine.oeis.a158;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001221;
 import irvine.oeis.a008.A008683;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a008.A008683;
  * A158210 Number omega(n) of distinct primes dividing n multiplied by -1 when n is squarefree (thus Omega(n) = omega(n)).
  * @author Georg Fischer
  */
-public class A158210 implements Sequence {
+public class A158210 extends Sequence1 {
 
   final Sequence mA001221 = new A001221();
   final Sequence mA008683 = new A008683();

@@ -4,7 +4,7 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
@@ -12,7 +12,7 @@ import irvine.util.string.StringUtils;
  * A046451 Semiprimes whose prime factors, when concatenated, yield a palindrome.
  * @author Sean A. Irvine
  */
-public class A046451 implements Sequence {
+public class A046451 extends Sequence1 {
 
   private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A000040());
   private final TreeSet<Z> mA = new TreeSet<>();

@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036763 Numbers k such that k*d(x) = x has no solution for x, where d (A000005) is the number of divisors; sequence gives impossible x/d(x) quotients in order of magnitude.
  * @author Sean A. Irvine
  */
-public class A036763 implements Sequence {
+public class A036763 extends Sequence1 {
 
   private Z mN = Z.valueOf(17);
 

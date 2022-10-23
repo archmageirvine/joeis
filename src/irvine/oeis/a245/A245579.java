@@ -3,13 +3,14 @@ package irvine.oeis.a245;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001227;
 
 /**
  * A245579 Number of odd divisors of n multiplied by n.
  * @author Georg Fischer
  */
-public class A245579 implements Sequence {
+public class A245579 extends Sequence1 {
 
   final Sequence mA001227 = new A001227();
   protected long mN;

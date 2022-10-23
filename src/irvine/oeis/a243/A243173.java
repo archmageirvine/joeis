@@ -2,13 +2,13 @@ package irvine.oeis.a243;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A243173 Numbers of the form x^2+15y^2.
  * @author Sean A. Irvine
  */
-public class A243173 implements Sequence {
+public class A243173 extends Sequence1 {
 
   private long mN = -1;
 

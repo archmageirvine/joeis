@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003634 Smallest positive integer that is n times its digit sum, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
-public class A003634 implements Sequence {
+public class A003634 extends Sequence1 {
 
   // Looking for least m such that m = n * digitSum(m).
   // Does not always exist. Note n | m.

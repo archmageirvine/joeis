@@ -8,13 +8,13 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A306597 a(n) = Card({ Sum_{k=1..n}(x_k * k) : (x_k)_{k=1..n} is an n-tuple of nonnegative integers such that Sum_{k=1..n}(x_k * T_k) = T_n }), where T_k denotes the k-th triangular number.
  * @author Luc Rousseau
  */
-public class A306597 implements Sequence {
+public class A306597 extends Sequence1 {
 
   private final class Interval implements Comparable<Interval> {
     private final int mMin;

@@ -5,13 +5,13 @@ import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055561 Numbers n such that there are precisely 3 groups of order n.
  * @author Sean A. Irvine
  */
-public class A055561 implements Sequence {
+public class A055561 extends Sequence1 {
 
   // After Gheorghe Coserea
 

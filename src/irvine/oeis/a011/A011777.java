@@ -2,13 +2,13 @@ package irvine.oeis.a011;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011777 a(n) = least k&gt;1 such that k^n divides k!.
  * @author Sean A. Irvine
  */
-public class A011777 implements Sequence {
+public class A011777 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

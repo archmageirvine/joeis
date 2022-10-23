@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037337 Numbers whose base-9 and base-10 expansions have no digits in common.
@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  * Assertion: <code>base1 &lt; base2</code>.
  * @author Georg Fischer
  */
-public class A037337 implements Sequence {
+public class A037337 extends Sequence1 {
 
   protected Z mN;
   protected int mBase1;

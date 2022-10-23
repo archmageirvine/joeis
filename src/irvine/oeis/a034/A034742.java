@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034742 Dirichlet convolution of Moebius function mu(n) (A008683) with Catalan numbers (A000108).
  * @author Sean A. Irvine
  */
-public class A034742 implements Sequence {
+public class A034742 extends Sequence1 {
 
   private int mN = 0;
 

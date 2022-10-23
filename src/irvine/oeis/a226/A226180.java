@@ -3,13 +3,14 @@ package irvine.oeis.a226;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a036.A036279;
 
 /**
  * A226180 Denominators in Taylor series for integral of tan(x)/x.
  * @author Georg Fischer
  */
-public class A226180 implements Sequence {
+public class A226180 extends Sequence1 {
 
   final Sequence mA036279 = new A036279();
   protected long mN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055480 Energetic numbers.
  * @author Sean A. Irvine
  */
-public class A055480 implements Sequence {
+public class A055480 extends Sequence1 {
 
   private long mN = 23;
 

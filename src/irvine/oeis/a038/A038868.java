@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038868 If a Fibonacci sequence is formed with first term = number of digits in n and second term = sum of decimal digits in n, then n itself occurs as a term in the sequence after the first two terms.
  * @author Sean A. Irvine
  */
-public class A038868 implements Sequence {
+public class A038868 extends Sequence1 {
 
   private long mN = 15;
   private long mDigits = 2;

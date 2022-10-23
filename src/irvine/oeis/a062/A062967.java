@@ -3,13 +3,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001065;
 
 /**
  * A062967 a(n) = 2*(sigma(n)-n-1)+1, where sigma = A000203, sum of divisors of n.
  * @author Georg Fischer
  */
-public class A062967 implements Sequence {
+public class A062967 extends Sequence1 {
 
   final Sequence mA001065 = new A001065();
   @Override

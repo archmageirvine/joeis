@@ -3,6 +3,7 @@ package irvine.oeis.a344;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a067.A067858;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a067.A067858;
  * A344210 a(n) = Sum_{d|n} mu(n/d) * d^n / phi(n).
  * @author Georg Fischer
  */
-public class A344210 implements Sequence {
+public class A344210 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA067858 = new A067858();

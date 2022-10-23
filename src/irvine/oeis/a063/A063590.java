@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
@@ -11,7 +11,7 @@ import irvine.util.array.DynamicIntArray;
  * Derived from A031146.java
  * @author Georg Fischer
  */
-public class A063590 implements Sequence {
+public class A063590 extends Sequence1 {
 
   protected final DynamicIntArray mSmallest = new DynamicIntArray();
   protected int mN = -1;

@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052469 Denominators in the Taylor series for arccosh(x) - log(2*x).
  * @author Sean A. Irvine
  */
-public class A052469 implements Sequence {
+public class A052469 extends Sequence1 {
 
   private Q mA = Q.ONE_QUARTER;
   private int mN = 0;

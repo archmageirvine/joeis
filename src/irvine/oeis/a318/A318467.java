@@ -3,12 +3,13 @@ package irvine.oeis.a318;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a224.A224880;
 /**
  * A318467 a(n) = 2*n XOR A000203(n), where XOR is bitwise-xor (A003987) and A000203 = sum of divisors.
  * @author Georg Fischer
  */
-public class A318467 implements Sequence {
+public class A318467 extends Sequence1 {
 
   private final Sequence mA224880 = new A224880();
   private final Sequence mA318468 = new A318468();

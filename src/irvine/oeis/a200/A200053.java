@@ -2,13 +2,13 @@ package irvine.oeis.a200;
 
 import irvine.math.MemoryFunctionInt4;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A200053 Number of -4..4 arrays X (0..n-1) of n elements with zero sum and elements alternately strictly increasing and strictly decreasing.
  * @author Georg Fischer
  */
-public class A200053 implements Sequence {
+public class A200053 extends Sequence1 {
 
   private int mN;
   private final int mDim;

@@ -2,13 +2,13 @@ package irvine.oeis.a019;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019278 Numbers n such that sigma(sigma(n)) = k*n for some k.
  * @author Sean A. Irvine
  */
-public class A019278 implements Sequence {
+public class A019278 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

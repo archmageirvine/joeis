@@ -1,13 +1,13 @@
 package irvine.oeis.a070;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A070667 Smallest m in range 2..n-1 such that m^2 == 1 mod n, or 1 if no such number exists.
  * @author Georg Fischer
  */
-public class A070667 implements Sequence {
+public class A070667 extends Sequence1 {
 
   private int mN;
   private int mPow;

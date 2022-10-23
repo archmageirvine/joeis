@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057870 Number of singular points on n-th order Chmutov surface.
  * @author Sean A. Irvine
  */
-public class A057870 implements Sequence {
+public class A057870 extends Sequence1 {
 
   private int mN = 0;
 

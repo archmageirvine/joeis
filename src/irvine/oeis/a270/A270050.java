@@ -3,13 +3,14 @@ package irvine.oeis.a270;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003136;
 
 /**
  * A270050 Numbers of the form 2 * (x^2 + xy + y^2).
  * @author Georg Fischer
  */
-public class A270050 implements Sequence {
+public class A270050 extends Sequence1 {
 
   final Sequence mA003136 = new A003136();
   @Override

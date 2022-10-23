@@ -6,13 +6,13 @@ import java.util.TreeMap;
 import irvine.factor.factor.Jaguar;
 import irvine.math.MutableInteger;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051346 Numbers that can be written as k/d(k) in four or more ways, where d(k) = number of divisors of k.
  * @author Sean A. Irvine
  */
-public class A051346 implements Sequence {
+public class A051346 extends Sequence1 {
 
   private final TreeMap<Long, MutableInteger> mSeen = new TreeMap<>();
   private long mM = 1;

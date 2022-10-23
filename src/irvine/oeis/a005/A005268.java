@@ -5,13 +5,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005268 Number of elementary sequences of length n.
  * @author Sean A. Irvine
  */
-public class A005268 implements Sequence {
+public class A005268 extends Sequence1 {
 
   private static class State {
 

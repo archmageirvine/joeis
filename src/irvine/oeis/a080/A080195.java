@@ -3,12 +3,13 @@ package irvine.oeis.a080;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051038;
 /**
  * A080195 11-smooth numbers which are not 7-smooth.
  * @author Georg Fischer
  */
-public class A080195 implements Sequence {
+public class A080195 extends Sequence1 {
 
   private final Sequence mA051038 = new A051038();
   @Override

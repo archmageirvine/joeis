@@ -3,13 +3,14 @@ package irvine.oeis.a067;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004125;
 
 /**
  * A067436 a(n) = sum of all the remainders when n-th even number is divided by even numbers &lt; 2n.
  * @author Georg Fischer
  */
-public class A067436 implements Sequence {
+public class A067436 extends Sequence1 {
 
   final Sequence mA004125 = new A004125();
   @Override

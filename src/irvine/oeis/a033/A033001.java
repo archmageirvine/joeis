@@ -4,13 +4,13 @@ import java.util.Comparator;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033001 Every run of digits of n in base 3 has length 2.
  * @author Sean A. Irvine
  */
-public class A033001 implements Sequence {
+public class A033001 extends Sequence1 {
 
   private static final char[] DIGITS = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
   private final TreeSet<String> mA = new TreeSet<>(Comparator.comparingInt(String::length).thenComparing(a -> new Z(a, base())));

@@ -2,13 +2,13 @@ package irvine.oeis.a137;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A137450 A038610(n) (the LCM of the positive integers that are &lt;= n and are coprime to n) is the a(n)-th positive integer that is coprime to n.
  * @author Sean A. Irvine
  */
-public class A137450 implements Sequence {
+public class A137450 extends Sequence1 {
 
   private long mN = 0;
   @Override

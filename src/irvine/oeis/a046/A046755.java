@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046755 Numbers k such that d(k)^3 divides k.
  * @author Sean A. Irvine
  */
-public class A046755 implements Sequence {
+public class A046755 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

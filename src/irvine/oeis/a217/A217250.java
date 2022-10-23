@@ -3,13 +3,14 @@ package irvine.oeis.a217;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a025.A025280;
 
 /**
  * A217250 Minimal length of formulas representing n only using addition, multiplication, exponentiation and the constant 1.
  * @author Georg Fischer
  */
-public class A217250 implements Sequence {
+public class A217250 extends Sequence1 {
 
   final Sequence mA025280 = new A025280();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036556 Integers which when multiplied by 3 have an odd number of 1's in their binary expansion (cf. A000069).
  * @author Sean A. Irvine
  */
-public class A036556 implements Sequence {
+public class A036556 extends Sequence1 {
 
   private long mN = 6;
 

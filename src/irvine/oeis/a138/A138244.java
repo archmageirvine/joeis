@@ -3,13 +3,13 @@ package irvine.oeis.a138;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A138244 a(1)=1; for n&gt;1, a(n) = smallest integer &gt; a(n-1) such that a(n) is coprime to (a(k) - a(k-1)) for all k, 2 &lt;= k &lt;= n and such that (a(n) - a(n-1)) doesn't equal (a(k) - a(k-1)) for any k, 2 &lt;= k &lt;= n-1.
  * @author Sean A. Irvine
  */
-public class A138244 implements Sequence {
+public class A138244 extends Sequence1 {
 
   private final ArrayList<Z> mDifferences = new ArrayList<>();
   private Z mPrev = null;

@@ -3,13 +3,13 @@ package irvine.oeis.a051;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051302 Numbers whose square can be expressed as the sum of two positive cubes in more than one way.
  * @author Sean A. Irvine
  */
-public class A051302 implements Sequence {
+public class A051302 extends Sequence1 {
 
   private long mN = 77975;
   private final HashSet<Z> mCubes = new HashSet<>();

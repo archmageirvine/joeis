@@ -2,13 +2,13 @@ package irvine.oeis.a324;
 // manually 2021-08-15
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A324472 a(n) = 1000 mod n.
  * @author Georg Fischer
  */
-public class A324472 implements Sequence {
+public class A324472 extends Sequence1 {
 
   protected Z mN;
   protected Z mParm;

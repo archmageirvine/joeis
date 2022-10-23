@@ -4,13 +4,13 @@ package irvine.oeis.a135;
 import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A135396 a(n) = Product_{d|n} (n-d)!.
  * @author Georg Fischer
  */
-public class A135396 implements Sequence {
+public class A135396 extends Sequence1 {
 
   private int mN = 0;
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;

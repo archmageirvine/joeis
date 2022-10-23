@@ -3,13 +3,14 @@ package irvine.oeis.a071;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a019.A019335;
 
 /**
  * A071522 Numbers n such that x^n + x^(n-1) + x^(n-2) + ... + x + 1 is irreducible over GF(5).
  * @author Georg Fischer
  */
-public class A071522 implements Sequence {
+public class A071522 extends Sequence1 {
 
   final Sequence mA019335 = new A019335();
   @Override

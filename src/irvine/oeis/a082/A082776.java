@@ -1,14 +1,14 @@
 package irvine.oeis.a082;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A082776 a(1) = 1, a(n) = smallest palindromic multiple of a(n-1) obtained by inserting digits anywhere in a(n-1).
  * @author Sean A. Irvine
  */
-public class A082776 implements Sequence {
+public class A082776 extends Sequence1 {
 
   private Z mA = null;
 

@@ -3,6 +3,7 @@ package irvine.oeis.a173;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000027;
 import irvine.oeis.a158.A158611;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a158.A158611;
  * A173137 n-th nonnegative noncomposite number plus n.
  * @author Georg Fischer
  */
-public class A173137 implements Sequence {
+public class A173137 extends Sequence1 {
 
   final Sequence mA000027 = new A000027();
   final Sequence mA158611 = new A158611();

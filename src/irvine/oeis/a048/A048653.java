@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048653 Numbers k such that the decimal digits of k^2 can be partitioned into two or more nonzero squares.
  * @author Sean A. Irvine
  */
-public class A048653 implements Sequence {
+public class A048653 extends Sequence1 {
 
   private Z mN = Z.SIX;
 

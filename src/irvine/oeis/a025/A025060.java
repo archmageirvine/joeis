@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025060 Numbers of the form i*j + j*k + k*i, where 1 &lt;= i &lt; j &lt; k.
  * @author Sean A. Irvine
  */
-public class A025060 implements Sequence {
+public class A025060 extends Sequence1 {
 
   private long mN = 2;
 

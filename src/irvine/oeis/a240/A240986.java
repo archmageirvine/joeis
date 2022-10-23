@@ -6,13 +6,13 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.SmallDenseMatrix;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A240986 Determinants of n X n matrices of sets of distinct primes selected by increasing prime gaps (see comments).
  * @author Sean A. Irvine
  */
-public class A240986 implements Sequence {
+public class A240986 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

@@ -3,13 +3,14 @@ package irvine.oeis.a322;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002385;
 
 /**
  * A322947 Numbers k such that 2k + 1 is a palindromic prime.
  * @author Georg Fischer
  */
-public class A322947 implements Sequence {
+public class A322947 extends Sequence1 {
 
   final Sequence mA002385 = new A002385();
   /** Construct the sequence. */

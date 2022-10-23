@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033875 Skipping from prime to prime by least powers of 2.
  * @author Sean A. Irvine
  */
-public class A033875 implements Sequence {
+public class A033875 extends Sequence1 {
 
   private Z mA = null;
 

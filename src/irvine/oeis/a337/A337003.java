@@ -4,13 +4,13 @@ package irvine.oeis.a337;
 import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A337003 a(n) = Sum_{k=1..n, gcd(n,k) = 1} binomial(n,k)^2.
  * @author Georg Fischer
  */
-public class A337003 implements Sequence {
+public class A337003 extends Sequence1 {
 
   private int mN = 0;
 

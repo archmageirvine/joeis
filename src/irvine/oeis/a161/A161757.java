@@ -3,6 +3,7 @@ package irvine.oeis.a161;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a141.A141468;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a141.A141468;
  * A161757 a(n) = (prime(n))^2 - (nonprime(n))^2.
  * @author Georg Fischer
  */
-public class A161757 implements Sequence {
+public class A161757 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA141468 = new A141468();

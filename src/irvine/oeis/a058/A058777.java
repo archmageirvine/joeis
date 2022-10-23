@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058777 Numbers n such that n^2*2^n + n*2^((n + 1)/2) + 1 is prime.
  * @author Sean A. Irvine
  */
-public class A058777 implements Sequence {
+public class A058777 extends Sequence1 {
 
   private int mN = -1;
 

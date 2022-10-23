@@ -4,13 +4,13 @@ package irvine.oeis.a062;
 import irvine.math.cr.CR;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A062425 Integer part of log(n!)^log(1 + log(n)).
  * @author Georg Fischer
  */
-public class A062425 implements Sequence {
+public class A062425 extends Sequence1 {
 
   private int mN = 0;
 

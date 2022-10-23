@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006236 n^(n-2)*(n+2)^(n-1).
  * @author Sean A. Irvine
  */
-public class A006236 implements Sequence {
+public class A006236 extends Sequence1 {
 
   private int mN = 0;
 

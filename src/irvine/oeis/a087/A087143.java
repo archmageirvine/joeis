@@ -3,13 +3,13 @@ package irvine.oeis.a087;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A087143 Numbers n such that sum of digits of n is divisible by digital root of n. 
  * @author Georg Fischer
  */
-public class A087143 implements Sequence {
+public class A087143 extends Sequence1 {
 
   protected int mN;
 

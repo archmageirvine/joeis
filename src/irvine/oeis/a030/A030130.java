@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030130 Binary expansion contains a single 0.
  * @author Sean A. Irvine
  */
-public class A030130 implements Sequence {
+public class A030130 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

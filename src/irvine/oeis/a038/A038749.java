@@ -4,13 +4,13 @@ import irvine.math.lattice.ExactContactsWalker;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.Walker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038749 Coefficients arising in the enumeration of configurations of linear chains.
  * @author Sean A. Irvine
  */
-public class A038749 implements Sequence {
+public class A038749 extends Sequence1 {
 
   protected int param() {
     return 1;

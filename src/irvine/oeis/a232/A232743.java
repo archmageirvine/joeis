@@ -2,13 +2,13 @@ package irvine.oeis.a232;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A232743 Numbers n for which the largest m such that (m-1)! divides n is a composite number &gt; 5.
  * @author Sean A. Irvine
  */
-public class A232743 implements Sequence {
+public class A232743 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

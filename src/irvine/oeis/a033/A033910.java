@@ -2,13 +2,13 @@ package irvine.oeis.a033;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033910 Numbers k such that s(k) + s(k+1) + s(k+2) = t(k) + t(k+1) + t(k+2) where s(k) = sigma(k) - k, t(k) = |s(k) - k|.
  * @author Sean A. Irvine
  */
-public class A033910 implements Sequence {
+public class A033910 extends Sequence1 {
 
   private long mN = 0;
 

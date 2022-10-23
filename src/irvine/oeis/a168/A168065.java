@@ -3,6 +3,7 @@ package irvine.oeis.a168;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003958;
 import irvine.oeis.a003.A003959;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a003.A003959;
  * A168065 If n = Product p(k)^e(k) then a(n) = {Product (p(k)+1)^e(k) + Product (p(k)-1)^e(k)}/2, a(1) = 1.
  * @author Georg Fischer
  */
-public class A168065 implements Sequence {
+public class A168065 extends Sequence1 {
 
   final Sequence mA003958 = new A003958();
   final Sequence mA003959 = new A003959();

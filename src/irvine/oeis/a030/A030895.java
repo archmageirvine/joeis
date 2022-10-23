@@ -3,13 +3,13 @@ package irvine.oeis.a030;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030895 [ exp(5/17)*n! ].
  * @author Sean A. Irvine
  */
-public class A030895 implements Sequence {
+public class A030895 extends Sequence1 {
 
   private static final CR EXP5_17 = CR.valueOf(new Q(5, 17)).exp();
   private Z mF = Z.ONE;

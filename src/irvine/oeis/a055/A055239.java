@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055239 Numbers which are not divisible by any of their digits in at least one base.
  * @author Sean A. Irvine
  */
-public class A055239 implements Sequence {
+public class A055239 extends Sequence1 {
 
   private long mN = 10;
 

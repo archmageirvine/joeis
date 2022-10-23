@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054865 Numbers not divisible by any of their digits when written in base 9.
  * @author Sean A. Irvine
  */
-public class A054865 implements Sequence {
+public class A054865 extends Sequence1 {
 
   private long mN = 22;
 

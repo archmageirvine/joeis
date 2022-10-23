@@ -3,6 +3,7 @@ package irvine.oeis.a135;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a034.A034785;
 import irvine.oeis.a057.A057901;
 import irvine.oeis.a057.A057902;
@@ -10,7 +11,7 @@ import irvine.oeis.a057.A057902;
  * A135173 5^p - 3^p - 2^p, where p = prime(n).
  * @author Georg Fischer
  */
-public class A135173 implements Sequence {
+public class A135173 extends Sequence1 {
 
   private final Sequence mA034785 = new A034785();
   private final Sequence mA057901 = new A057901();

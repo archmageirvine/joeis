@@ -1,13 +1,13 @@
 package irvine.oeis.a165;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A165153 a(n) = the product of all distinct positive (nonzero) integers that, when written in binary, occur as substrings in the binary representation of n.
  * @author Sean A. Irvine
  */
-public class A165153 implements Sequence {
+public class A165153 extends Sequence1 {
 
   private long mN = 0;
 

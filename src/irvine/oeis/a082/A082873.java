@@ -1,13 +1,13 @@
 package irvine.oeis.a082;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A082873 Independence number of king KG_2 on triangle board B_n.
  * @author Sean A. Irvine
  */
-public class A082873 implements Sequence {
+public class A082873 extends Sequence1 {
 
   private long mN = 0;
 

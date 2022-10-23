@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003321 Smallest n-th order perfect digital invariant or PDI: smallest number &gt; 1 equal to sum of n-th powers of its digits, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
-public class A003321 implements Sequence {
+public class A003321 extends Sequence1 {
 
   // After Derek Orr
 

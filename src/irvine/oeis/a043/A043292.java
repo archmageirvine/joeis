@@ -1,13 +1,13 @@
 package irvine.oeis.a043;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A043292 Divides 10^k + 1 for some k.
  * @author Sean A. Irvine
  */
-public class A043292 implements Sequence {
+public class A043292 extends Sequence1 {
 
   private long mN = 0;
 

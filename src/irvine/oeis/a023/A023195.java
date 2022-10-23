@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023195 Prime numbers that are the sum of the divisors of some n.
  * @author Sean A. Irvine
  */
-public class A023195 implements Sequence {
+public class A023195 extends Sequence1 {
 
   // Heuristic to order -- will detect a failure
   // TreeSet also gets rid of repeats like 31 occurring twice

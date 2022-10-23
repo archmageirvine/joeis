@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006777 Number of n-step spirals on hexagonal lattice.
  * @author Sean A. Irvine
  */
-public class A006777 implements Sequence {
+public class A006777 extends Sequence1 {
 
   // Walks on hexagonal/triangular lattice
   // Coordinate of a point is (x,y).

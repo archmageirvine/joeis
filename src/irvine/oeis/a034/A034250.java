@@ -4,13 +4,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.WreathExponentiation;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034250 Number of quaternary codes (not necessarily linear) of length n with 13 words.
  * @author Sean A. Irvine
  */
-public class A034250 implements Sequence {
+public class A034250 extends Sequence1 {
 
   private static final CycleIndex Z4 = SymmetricGroup.create(4).cycleIndex();
   private int mN = 0;

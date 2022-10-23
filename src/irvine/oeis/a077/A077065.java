@@ -3,13 +3,14 @@ package irvine.oeis.a077;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005385;
 
 /**
  * A077065 Semiprimes of form prime - 1.
  * @author Georg Fischer
  */
-public class A077065 implements Sequence {
+public class A077065 extends Sequence1 {
 
   final Sequence mA005385 = new A005385();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002760 Squares and cubes.
  * @author Sean A. Irvine
  */
-public class A002760 implements Sequence {
+public class A002760 extends Sequence1 {
 
   private Z mSquareRoot = Z.ZERO;
   private Z mCubeRoot = Z.TWO;

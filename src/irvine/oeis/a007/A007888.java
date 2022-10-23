@@ -13,13 +13,13 @@ import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007888 Euler characteristic of mapping class group Gamma_n.
  * @author Sean A. Irvine
  */
-public class A007888 implements Sequence {
+public class A007888 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Z Z12 = Z.valueOf(12);

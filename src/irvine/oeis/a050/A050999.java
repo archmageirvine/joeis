@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050999 Sum of squares of odd divisors of n.
  * @author Sean A. Irvine
  */
-public class A050999 implements Sequence {
+public class A050999 extends Sequence1 {
 
   private int mPow;
   private long mN = 0;

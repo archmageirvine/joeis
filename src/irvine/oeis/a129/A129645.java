@@ -5,13 +5,13 @@ import java.util.Collections;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A129645 a(1) = 1; for n&gt;1, a(n) = a(n-1)*b(n-1) + 1, where {b(k)} is the concatenated list of the ordered positive divisors of the terms of {a(k)}.
  * @author Sean A. Irvine
  */
-public class A129645 implements Sequence {
+public class A129645 extends Sequence1 {
 
   private int mN = 0;
   private Z mPrev = null;

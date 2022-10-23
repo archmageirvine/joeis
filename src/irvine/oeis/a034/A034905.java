@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034905 Numbers whose square contains no loops in its digits (assumes 1, 2, 3, 5, 7 have no loops and 0, 4, 6, 8, 9 do).
  * @author Sean A. Irvine
  */
-public class A034905 implements Sequence {
+public class A034905 extends Sequence1 {
 
   private static final long[] STEP = {4, 4, 2};
   private Z mN = Z.NEG_ONE;

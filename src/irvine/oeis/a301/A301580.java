@@ -3,13 +3,14 @@ package irvine.oeis.a301;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a139.A139231;
 
 /**
  * A301580 a(n) is the number of positive integers between successive Mersenne primes.
  * @author Georg Fischer
  */
-public class A301580 implements Sequence {
+public class A301580 extends Sequence1 {
 
   final Sequence mA139231 = new A139231();
   @Override

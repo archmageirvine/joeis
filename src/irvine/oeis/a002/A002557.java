@@ -5,13 +5,13 @@ import java.util.Collections;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002557 Odd squarefree numbers with an even number of prime factors that have no prime factors greater than 31.
  * @author Sean A. Irvine
  */
-public class A002557 implements Sequence {
+public class A002557 extends Sequence1 {
 
   private final ArrayList<Long> mTerms = new ArrayList<>();
   private int mN = -1;

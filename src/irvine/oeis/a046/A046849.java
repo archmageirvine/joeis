@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046849 Numbers n such that n*2^n+(n-1) is prime.
  * @author Sean A. Irvine
  */
-public class A046849 implements Sequence {
+public class A046849 extends Sequence1 {
 
   private int mN = -1;
 

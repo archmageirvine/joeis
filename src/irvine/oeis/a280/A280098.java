@@ -3,12 +3,13 @@ package irvine.oeis.a280;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A280098 The sum of the divisors of 24*n - 1, divided by 24.
  * @author Georg Fischer
  */
-public class A280098 implements Sequence {
+public class A280098 extends Sequence1 {
 
   final Sequence mA280097 = new A280097();
   @Override

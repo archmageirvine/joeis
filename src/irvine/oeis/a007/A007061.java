@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007061 The Ehrenfeucht-Mycielski sequence (1,2-version): a maximally unpredictable sequence.
  * @author Sean A. Irvine
  */
-public class A007061 implements Sequence {
+public class A007061 extends Sequence1 {
 
   private final StringBuilder mS = new StringBuilder();
 

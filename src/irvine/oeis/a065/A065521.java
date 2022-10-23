@@ -3,6 +3,7 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004648;
 import irvine.oeis.a038.A038605;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a038.A038605;
  * A065521 a(n) = floor(prime(n) / n) * n - prime(n) mod n.
  * @author Georg Fischer
  */
-public class A065521 implements Sequence {
+public class A065521 extends Sequence1 {
 
   final Sequence mA004648 = new A004648();
   final Sequence mA038605 = new A038605();

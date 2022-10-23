@@ -3,13 +3,14 @@ package irvine.oeis.a258;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a173.A173184;
 
 /**
  * A258817 a(n) = (!0 + !1 +... + !(n-1)) mod n.
  * @author Georg Fischer
  */
-public class A258817 implements Sequence {
+public class A258817 extends Sequence1 {
 
   final Sequence mA173184 = new A173184();
   protected long mN;

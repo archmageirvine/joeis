@@ -7,13 +7,13 @@ import irvine.math.set.AbstractSet;
 import irvine.math.set.FiniteSet;
 import irvine.math.set.IntegerSet;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003102 Largest number divisible by all numbers &lt; its n-th root.
  * @author Sean A. Irvine
  */
-public class A003102 implements Sequence {
+public class A003102 extends Sequence1 {
 
   // After T. D. Noe, Mathematica
 

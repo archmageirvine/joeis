@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001031 Goldbach conjecture: a(n) = number of decompositions of 2n into sum of two primes (counting 1 as a prime).
  * @author Sean A. Irvine
  */
-public class A001031 implements Sequence {
+public class A001031 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

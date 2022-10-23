@@ -3,13 +3,14 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051953;
 
 /**
  * A053158 Sum of n and its cototient function value (A051953): a(n) = 2*n - phi(n), where phi is Euler phi.
  * @author Georg Fischer
  */
-public class A053158 implements Sequence {
+public class A053158 extends Sequence1 {
 
   final Sequence mA051953 = new A051953();
   protected long mN;

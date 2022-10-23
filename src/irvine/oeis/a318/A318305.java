@@ -3,6 +3,7 @@ package irvine.oeis.a318;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003557;
 import irvine.oeis.a051.A051953;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a051.A051953;
  * A318305 a(n) = product_{p} - product_{p-1}, where p are distinct primes dividing n; a(n) = A007947(n) - A173557(n).
  * @author Georg Fischer
  */
-public class A318305 implements Sequence {
+public class A318305 extends Sequence1 {
 
   final Sequence mA003557 = new A003557();
   final Sequence mA051953 = new A051953();

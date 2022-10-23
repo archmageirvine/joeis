@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051129 Table T(n,k) = k^n read by upwards antidiagonals (n &gt;= 1, k &gt;= 1).
  * @author Sean A. Irvine
  */
-public class A051129 implements Sequence {
+public class A051129 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

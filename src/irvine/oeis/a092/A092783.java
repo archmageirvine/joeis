@@ -3,13 +3,14 @@ package irvine.oeis.a092;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a013.A013629;
 
 /**
  * A092783 Ceiling of imaginary parts of zeros of Riemann zeta function.
  * @author Georg Fischer
  */
-public class A092783 implements Sequence {
+public class A092783 extends Sequence1 {
 
   final Sequence mA013629 = new A013629();
   @Override

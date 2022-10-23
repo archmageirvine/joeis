@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045975 Take the first odd integer and multiple of 1, the next 2 even integers and multiples of 2, the next 3 odd integers and multiples of 3, the next 4 even integers and multiples of 4, ...
  * @author Sean A. Irvine
  */
-public class A045975 implements Sequence {
+public class A045975 extends Sequence1 {
 
   private long mN = 1;
   private long mM = 1;

@@ -3,13 +3,14 @@ package irvine.oeis.a137;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018805;
 
 /**
  * A137243 Number of coprime pairs (a,b) with -n &lt;= a,b &lt;= n.
  * @author Georg Fischer
  */
-public class A137243 implements Sequence {
+public class A137243 extends Sequence1 {
 
   final Sequence mA018805 = new A018805();
   @Override

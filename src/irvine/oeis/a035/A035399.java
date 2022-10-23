@@ -2,13 +2,13 @@ package irvine.oeis.a035;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035399 Limit of the position of the n-th partition without repetition in the list of all integer partitions sorted in reverse lexicographic order.
  * @author Sean A. Irvine
  */
-public class A035399 implements Sequence {
+public class A035399 extends Sequence1 {
 
   private static final int N = 1000000;
 

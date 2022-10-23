@@ -2,13 +2,13 @@ package irvine.oeis.a073;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A073467 a(n) is the number of essentially different ways in which the integers 1,2,3,...,2n can be arranged in a circle such that (1) all pairs of adjacent integers sum to a prime number and (2) all pairs of integers opposite each other on the circle sum to a prime.
  * @author Sean A. Irvine
  */
-public class A073467 implements Sequence {
+public class A073467 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

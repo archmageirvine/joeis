@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023093 Numbers k such that k and 9*k are anagrams.
  * @author Sean A. Irvine
  */
-public class A023093 implements Sequence {
+public class A023093 extends Sequence1 {
 
   private long mN = -9;
 

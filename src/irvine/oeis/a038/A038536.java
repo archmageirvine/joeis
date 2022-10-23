@@ -2,14 +2,14 @@ package irvine.oeis.a038;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A038536 Odd values of n &gt; 1 for which there are n-hyperperfect numbers.
  * @author Sean A. Irvine
  */
-public class A038536 implements Sequence {
+public class A038536 extends Sequence1 {
 
   // WARNING: This is not very good.
 

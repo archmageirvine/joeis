@@ -4,13 +4,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.WreathExponentiation;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034228 Number of ternary codes (not necessarily linear) of length n with 8 words.
  * @author Sean A. Irvine
  */
-public class A034228 implements Sequence {
+public class A034228 extends Sequence1 {
 
   private static final CycleIndex Z3 = SymmetricGroup.create(3).cycleIndex();
   private int mN = 0;

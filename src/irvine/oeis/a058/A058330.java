@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058330 a(n) is smallest positive integer, distinct from any terms earlier in the sequence, such that (sum{k=1 to n}[a(k)]) divides (product{k=1 to n}[a(k)])*(sum{k=1 to n}[1/a(k)]).
  * @author Sean A. Irvine
  */
-public class A058330 implements Sequence {
+public class A058330 extends Sequence1 {
 
   private final HashSet<Long> mUsed = new HashSet<>();
   private Z mSum = Z.ZERO;

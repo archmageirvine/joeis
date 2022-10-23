@@ -3,13 +3,13 @@ package irvine.oeis.a069;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A069842 Number of distinct primes obtained by inserting a 1 at all possible places in n. This includes prefixing and suffixing.
  * @author Georg Fischer
  */
-public class A069842 implements Sequence {
+public class A069842 extends Sequence1 {
 
   private long mN = 0;
   private String mDigit;

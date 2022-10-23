@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058912 Numbers k such that k^k + k - 1 is prime.
  * @author Sean A. Irvine
  */
-public class A058912 implements Sequence {
+public class A058912 extends Sequence1 {
 
   private long mN = 1;
 

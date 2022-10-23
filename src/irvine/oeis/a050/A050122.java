@@ -4,7 +4,7 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000032;
 import irvine.oeis.a000.A000045;
 
@@ -12,7 +12,7 @@ import irvine.oeis.a000.A000045;
  * A050122 Numbers of the form Fibonacci(i)*Lucas(j), i &lt;= j.
  * @author Sean A. Irvine
  */
-public class A050122 implements Sequence {
+public class A050122 extends Sequence1 {
 
   private final MemorySequence mFibo = MemorySequence.cachedSequence(new A000045());
   private final MemorySequence mLucas = MemorySequence.cachedSequence(new A000032());

@@ -7,13 +7,13 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027614 Related to Clebsch-Gordan formulas.
  * @author Sean A. Irvine
  */
-public class A027614 implements Sequence {
+public class A027614 extends Sequence1 {
 
   private int mN = 1;
 

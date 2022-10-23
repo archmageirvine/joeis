@@ -3,13 +3,14 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a204.A204518;
 
 /**
  * A055851 a(n) and floor(a(n)/6) are both squares; i.e., squares that remain squares when written in base 6 and last digit is removed.
  * @author Georg Fischer
  */
-public class A055851 implements Sequence {
+public class A055851 extends Sequence1 {
 
   final Sequence mA204518 = new A204518();
   @Override

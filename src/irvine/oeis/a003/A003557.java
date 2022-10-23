@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003557 n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
  * @author Sean A. Irvine
  */
-public class A003557 implements Sequence {
+public class A003557 extends Sequence1 {
 
   protected long mN = 0;
 

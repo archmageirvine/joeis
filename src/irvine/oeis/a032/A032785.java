@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032785 Numbers k such that k*(k+1)*(k+2) ... (k+13) / (k+(k+1)+(k+2)+ ... +(k+13)) is an integer.
  * @author Sean A. Irvine
  */
-public class A032785 implements Sequence {
+public class A032785 extends Sequence1 {
 
   private long mN = -1;
 

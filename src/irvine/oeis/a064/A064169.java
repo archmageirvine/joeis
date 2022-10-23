@@ -3,6 +3,7 @@ package irvine.oeis.a064;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001008;
 import irvine.oeis.a002.A002805;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002805;
  * A064169 Numerator - denominator in n-th harmonic number, 1 + 1/2 + 1/3 + ... + 1/n.
  * @author Georg Fischer
  */
-public class A064169 implements Sequence {
+public class A064169 extends Sequence1 {
 
   final Sequence mA001008 = new A001008();
   final Sequence mA002805 = new A002805();

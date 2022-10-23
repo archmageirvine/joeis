@@ -3,13 +3,14 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005117;
 
 /**
  * A133466 Positive integers k for which there is exactly one integer i in {1,2,3,...,k-1} such that i*k is a square.
  * @author Georg Fischer
  */
-public class A133466 implements Sequence {
+public class A133466 extends Sequence1 {
 
   final Sequence mA005117 = new A005117();
   @Override

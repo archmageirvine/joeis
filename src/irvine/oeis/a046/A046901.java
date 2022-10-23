@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046901 a(n) = a(n-1) - n if a(n-1) &gt; n, else a(n) = a(n-1) + n.
  * @author Sean A. Irvine
  */
-public class A046901 implements Sequence {
+public class A046901 extends Sequence1 {
 
   private long mPrev = 0;
   private long mN = 0;

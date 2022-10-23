@@ -3,13 +3,13 @@ package irvine.oeis.a051;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051516 Number of triangles with perimeter n having integer sides and area.
  * @author Sean A. Irvine
  */
-public class A051516 implements Sequence {
+public class A051516 extends Sequence1 {
 
   // After Wesley Ivan Hurt
 

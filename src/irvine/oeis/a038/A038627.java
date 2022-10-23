@@ -3,14 +3,14 @@ package irvine.oeis.a038;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 
 /**
  * A038627 Number of solutions x to n * pi(x) = x, where pi(x) = number of primes &lt;= x.
  * @author Sean A. Irvine
  */
-public class A038627 implements Sequence {
+public class A038627 extends Sequence1 {
 
   // After Robert Price
 

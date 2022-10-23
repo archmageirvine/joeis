@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003307 Numbers k such that 2*3^k - 1 is prime.
  * @author Sean A. Irvine
  */
-public class A003307 implements Sequence {
+public class A003307 extends Sequence1 {
 
   private Z mT = Z.ONE;
   private long mN = 0;

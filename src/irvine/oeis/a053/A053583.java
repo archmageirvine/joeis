@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053583 a(n+1) is the smallest prime ending with (but not equal to) a(n), where a(1)=3.
  * @author Sean A. Irvine
  */
-public class A053583 implements Sequence {
+public class A053583 extends Sequence1 {
 
   private String mA = null;
 

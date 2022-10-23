@@ -2,13 +2,13 @@ package irvine.oeis.a146;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A146759 Number of primes p &lt; 10^n such that c - p is prime, where c is the next cube greater than p.
  * @author Sean A. Irvine
  */
-public class A146759 implements Sequence {
+public class A146759 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 1;

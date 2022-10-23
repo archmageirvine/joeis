@@ -3,13 +3,13 @@ package irvine.oeis.a033;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033273 Number of nonprime divisors of n.
  * @author Sean A. Irvine
  */
-public class A033273 implements Sequence {
+public class A033273 extends Sequence1 {
 
   private long mN = 0;
 

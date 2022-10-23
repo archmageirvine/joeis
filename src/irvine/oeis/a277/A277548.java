@@ -1,13 +1,13 @@
 package irvine.oeis.a277;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A277548 Numbers k such that k/5^m == 4 (mod 5), where 5^m is the greatest power of 5 that divides k.
  * @author Georg Fischer
  */
-public class A277548 implements Sequence {
+public class A277548 extends Sequence1 {
 
   private long mK;
   private long mBase;

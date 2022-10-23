@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057096 Saint-Exup\u00e9ry numbers: ordered products of the three sides of Pythagorean triangles.
  * @author Sean A. Irvine
  */
-public class A057096 implements Sequence {
+public class A057096 extends Sequence1 {
 
   // Cf. A009111
 

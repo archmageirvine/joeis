@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055720 Numbers k such that d(k)+1 | k.
  * @author Sean A. Irvine
  */
-public class A055720 implements Sequence {
+public class A055720 extends Sequence1 {
 
   private long mN = 2;
 

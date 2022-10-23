@@ -3,6 +3,7 @@ package irvine.oeis.a180;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000188;
 import irvine.oeis.a018.A018804;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a018.A018804;
  * A180772 Number of distinct solutions to the congruence x(1)*x(2) == 0 (mod n), with x() only in 1..n-1.
  * @author Georg Fischer
  */
-public class A180772 implements Sequence {
+public class A180772 extends Sequence1 {
 
   final Sequence mA000188 = new A000188();
   final Sequence mA018804 = new A018804();

@@ -3,13 +3,13 @@ package irvine.oeis.a050;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050693 Composites c whose decimal expansion ends with its largest prime factor.
  * @author Sean A. Irvine
  */
-public class A050693 implements Sequence {
+public class A050693 extends Sequence1 {
 
   private long mN = 14;
 

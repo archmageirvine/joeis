@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001562 Numbers n such that (10^n + 1)/11 is a prime.
  * @author Sean A. Irvine
  */
-public class A001562 implements Sequence {
+public class A001562 extends Sequence1 {
 
   private long mN = 3;
   private Z mTen = Z.valueOf(1000);

@@ -2,13 +2,13 @@ package irvine.oeis.a043;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A043530 Number of distinct base-3 digits of n.
  * @author Sean A. Irvine
  */
-public class A043530 implements Sequence {
+public class A043530 extends Sequence1 {
 
   private long mN = 0;
 

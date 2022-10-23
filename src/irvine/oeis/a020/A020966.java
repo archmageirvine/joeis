@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020966 a(n) = Sum_{k&gt;=1} floor(n*sqrt(2)^(2-k)).
  * @author Sean A. Irvine
  */
-public class A020966 implements Sequence {
+public class A020966 extends Sequence1 {
 
   private static final CR N = CR.SQRT2;
   private long mN = 0;

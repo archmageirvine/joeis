@@ -3,13 +3,13 @@ package irvine.oeis.a053;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053858 Squarefree even composite numbers with an odd number of prime factors.
  * @author Sean A. Irvine
  */
-public class A053858 implements Sequence {
+public class A053858 extends Sequence1 {
 
   private long mN = 28;
 

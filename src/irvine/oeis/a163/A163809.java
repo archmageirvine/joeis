@@ -1,13 +1,13 @@
 package irvine.oeis.a163;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A163809 Write n in binary. Insert a 0 in the middle of each pair of two consecutive 1's. a(n) = the decimal value of the result.
  * @author Sean A. Irvine
  */
-public class A163809 implements Sequence {
+public class A163809 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a054.A054785;
 /**
  * A062731 Sum of divisors of 2*n.
  * @author Georg Fischer
  */
-public class A062731 implements Sequence {
+public class A062731 extends Sequence1 {
 
   private final Sequence mA000203 = new A000203();
   private final Sequence mA054785 = new A054785();

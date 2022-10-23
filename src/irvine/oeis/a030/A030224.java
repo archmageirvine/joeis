@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import jmason.poly.Polyiamond;
 import jmason.poly.PolyiamondCounter;
 
@@ -11,7 +11,7 @@ import jmason.poly.PolyiamondCounter;
  * A030224 Triangular polyominoes (n-iamonds) without bilateral symmetry (holes are allowed).
  * @author Sean A. Irvine
  */
-public class A030224 implements Sequence {
+public class A030224 extends Sequence1 {
 
   private int mN = 0;
   private List<Polyiamond> mPrevList = null;

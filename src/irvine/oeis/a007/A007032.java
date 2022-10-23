@@ -6,13 +6,13 @@ import irvine.math.plantri.Plantri;
 import irvine.math.plantri.PlantriGraphProcessor;
 import irvine.math.plantri.PlantriGraphState;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007032 Number of non-Hamiltonian polyhedra with n faces.
  * @author Sean A. Irvine
  */
-public class A007032 implements Sequence, PlantriGraphProcessor {
+public class A007032 extends Sequence1 implements PlantriGraphProcessor {
 
   // In theory this will work, but very slow, even for a(10)
 

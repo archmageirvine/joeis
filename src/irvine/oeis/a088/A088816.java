@@ -3,11 +3,12 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 /**
  * A088816 Numbers of the form p^p - 2 where p is prime.
  * @author Georg Fischer
  */
-public class A088816 implements Sequence {
+public class A088816 extends Sequence1 {
 
   private final Sequence mA088730 = new A088730();
   @Override

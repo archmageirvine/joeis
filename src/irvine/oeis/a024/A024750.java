@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024750 Binomial coefficients: C(n,k), 6 &lt;= k &lt;= n-6, sorted.
  * @author Sean A. Irvine
  */
-public class A024750 implements Sequence {
+public class A024750 extends Sequence1 {
 
   private final TreeMap<Z, Integer> mA = new TreeMap<>();
   private Z mB = Z.valueOf(924);

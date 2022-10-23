@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007699 Pisot sequence E(10,219): a(n) = nearest integer to a(n-1)^2 / a(n-2), starting 10, 219, ... Deviates from A007698 at 1403rd term.
  * @author Sean A. Irvine
  */
-public class A007699 implements Sequence {
+public class A007699 extends Sequence1 {
 
   private Z mA = null;
   private Z mB = null;

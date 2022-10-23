@@ -4,13 +4,13 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001597 Perfect powers: m^k where m &gt; 0 and k &gt;= 2.
  * @author Sean A. Irvine
  */
-public class A001597 implements Sequence {
+public class A001597 extends Sequence1 {
 
   private final TreeMap<Z, Z> mPriority = new TreeMap<>();
   private Z mBasis = Z.THREE;

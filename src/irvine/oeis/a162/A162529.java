@@ -3,13 +3,13 @@ package irvine.oeis.a162;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A162529 Numbers k whose largest divisor &lt;= sqrt(k) equals 9.
  * @author Sean A. Irvine
  */
-public class A162529 implements Sequence {
+public class A162529 extends Sequence1 {
 
   private long mN = 72;
 

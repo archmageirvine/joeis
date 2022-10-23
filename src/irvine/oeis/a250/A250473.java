@@ -3,13 +3,14 @@ package irvine.oeis.a250;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000879;
 
 /**
  * A250473 Length of the maximal prefix of noncomposite numbers on row n of A249821.
  * @author Georg Fischer
  */
-public class A250473 implements Sequence {
+public class A250473 extends Sequence1 {
 
   final Sequence mA000879 = new A000879();
   protected long mN;

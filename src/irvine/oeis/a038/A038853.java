@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038853 Numbers that are divisible by 5 and are the difference between two (different positive) cubes in at least one way.
  * @author Sean A. Irvine
  */
-public class A038853 implements Sequence {
+public class A038853 extends Sequence1 {
 
   private Z mN = Z.valueOf(210);
 

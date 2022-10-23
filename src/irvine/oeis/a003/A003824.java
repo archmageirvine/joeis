@@ -5,14 +5,14 @@ import java.util.List;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
 /**
  * A003824 Numbers that are the sum of two 4th powers in more than one way (primitive solutions).
  * @author Sean A. Irvine
  */
-public class A003824 implements Sequence {
+public class A003824 extends Sequence1 {
 
   // Using ideas for Bernstein, "Enumerating Solutions to p(a) + q(b) = r(c) + s(d)", Math. Comp.
 

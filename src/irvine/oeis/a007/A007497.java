@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007497 a(1) = 2, a(n) = sigma(a(n-1)).
  * @author Sean A. Irvine
  */
-public class A007497 implements Sequence {
+public class A007497 extends Sequence1 {
 
   private Z mA = null;
 

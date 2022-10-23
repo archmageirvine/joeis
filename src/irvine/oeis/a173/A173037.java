@@ -3,13 +3,14 @@ package irvine.oeis.a173;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007530;
 
 /**
  * A173037 Numbers k such that k-4, k-2, k+2 and k+4 are prime.
  * @author Georg Fischer
  */
-public class A173037 implements Sequence {
+public class A173037 extends Sequence1 {
 
   final Sequence mA007530 = new A007530();
   @Override

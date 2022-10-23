@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046828 Digits of n^2 include digits of n, n does not end in 0.
  * @author Sean A. Irvine
  */
-public class A046828 implements Sequence {
+public class A046828 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

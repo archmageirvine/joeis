@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000175 Related to zeros of Bessel function.
  * @author Sean A. Irvine
  */
-public class A000175 implements Sequence {
+public class A000175 extends Sequence1 {
 
   // Using method described by Herman Jamke
 

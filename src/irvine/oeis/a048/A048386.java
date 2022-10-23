@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048386 Numbers n such that replacing digits d in decimal expansion of n with d^2 yields a square.
  * @author Sean A. Irvine
  */
-public class A048386 implements Sequence {
+public class A048386 extends Sequence1 {
 
   private long mN = -1;
 

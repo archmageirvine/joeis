@@ -1,13 +1,13 @@
 package irvine.oeis.a019;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019544 Squares whose digits are squares.
  * @author Sean A. Irvine
  */
-public class A019544 implements Sequence {
+public class A019544 extends Sequence1 {
 
   private long mN = -1;
 

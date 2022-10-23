@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050525 Primes of form 11*2^n-1.
  * @author Sean A. Irvine
  */
-public class A050525 implements Sequence {
+public class A050525 extends Sequence1 {
 
   private Z mP = Z.valueOf(44);
   private long mN = -2;

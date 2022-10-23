@@ -4,6 +4,7 @@ package irvine.oeis.a179;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a001.A001221;
 
@@ -11,7 +12,7 @@ import irvine.oeis.a001.A001221;
  * A179179 a(n) = phi(n) - omega(n) = A000010(n) - A001221(n).
  * @author Georg Fischer
  */
-public class A179179 implements Sequence {
+public class A179179 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA001221 = new A001221();

@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023187 Distances of increasingly lonely primes to nearest prime.
  * @author Sean A. Irvine
  */
-public class A023187 implements Sequence {
+public class A023187 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mD = 0;

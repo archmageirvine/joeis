@@ -3,13 +3,14 @@ package irvine.oeis.a165;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023200;
 
 /**
  * A165986 Even semiprimes n such that (the largest prime factor of n) + 4 is prime.
  * @author Georg Fischer
  */
-public class A165986 implements Sequence {
+public class A165986 extends Sequence1 {
 
   final Sequence mA023200 = new A023200();
   @Override

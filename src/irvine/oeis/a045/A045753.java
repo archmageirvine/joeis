@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045753 Numbers n such that 4n-1 and 4n+1 are both primes.
  * @author Sean A. Irvine
  */
-public class A045753 implements Sequence {
+public class A045753 extends Sequence1 {
 
   private long mN = 0;
 

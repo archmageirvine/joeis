@@ -1,13 +1,13 @@
 package irvine.oeis.a163;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A163807 Reverse the order of inner digits (all digits but the first and last) of n written in binary. a(n) = the decimal value of the result.
  * @author Georg Fischer
  */
-public class A163807 implements Sequence {
+public class A163807 extends Sequence1 {
 
   private long mN = 0;
 

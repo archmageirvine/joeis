@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054744 p-full numbers: numbers such that if any prime p divides it, then so does p^p.
  * @author Sean A. Irvine
  */
-public class A054744 implements Sequence {
+public class A054744 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final TreeSet<Z> mA = new TreeSet<>();

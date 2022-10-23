@@ -5,14 +5,14 @@ import java.util.HashSet;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A307670 Number of (undirected) cycles in the n X n antelope graph.
  * @author Sean A. Irvine
  */
-public class A307670 implements Sequence {
+public class A307670 extends Sequence1 {
 
   private static final int[] DELTA_X = {3, 3, -3, -3, 4, 4, -4, -4};
   private static final int[] DELTA_Y = {4, -4, 4, -4, 3, -3, 3, -3};

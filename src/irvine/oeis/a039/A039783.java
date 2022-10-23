@@ -3,13 +3,13 @@ package irvine.oeis.a039;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039783 phi(n) is equal to the product of the dual prime-power components of n-1 (i.e., A008477(n-1)).
  * @author Sean A. Irvine
  */
-public class A039783 implements Sequence {
+public class A039783 extends Sequence1 {
 
   private long mN = 2;
 

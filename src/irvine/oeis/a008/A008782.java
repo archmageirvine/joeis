@@ -3,14 +3,14 @@ package irvine.oeis.a008;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A008782 For any circular arrangement of 0..n-1, let S = sum of squares of every sum of three contiguous numbers; then a(n) = # of distinct values of S.
  * @author Sean A. Irvine
  */
-public class A008782 implements Sequence {
+public class A008782 extends Sequence1 {
 
   private int mN = 0;
 

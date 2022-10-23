@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001851 Total diameter of unlabeled trees with n nodes.
@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  * @author W. Bomfin
  * @author Sean A. Irvine
  */
-public class A001851 implements Sequence {
+public class A001851 extends Sequence1 {
 
   // Based on freetree.c by Gang Li & Frank Ruskey.
   // Described in G. Li and F. Ruskey,  "The Advantages of Forward Thinking in

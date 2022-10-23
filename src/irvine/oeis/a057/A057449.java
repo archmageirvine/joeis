@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057449 Product of differences between consecutive positive divisors of n.
  * @author Sean A. Irvine
  */
-public class A057449 implements Sequence {
+public class A057449 extends Sequence1 {
 
   private long mN = 0;
 

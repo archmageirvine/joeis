@@ -3,13 +3,14 @@ package irvine.oeis.a074;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a010.A010055;
 
 /**
  * A074591 If n is a prime power then 0 else n.
  * @author Georg Fischer
  */
-public class A074591 implements Sequence {
+public class A074591 extends Sequence1 {
 
   final Sequence mA010055 = new A010055();
   protected long mN;

@@ -3,6 +3,7 @@ package irvine.oeis.a205;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000040;
  * Copied from A204892.
  * @author Georg Fischer
  */
-public class A205558 implements Sequence {
+public class A205558 extends Sequence1 {
 
   private final Z mC;
   private int mK;

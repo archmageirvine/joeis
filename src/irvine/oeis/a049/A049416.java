@@ -1,13 +1,13 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049416 Largest number whose square has n digits.
  * @author Sean A. Irvine
  */
-public class A049416 implements Sequence {
+public class A049416 extends Sequence1 {
 
   private Z mT = Z.ONE;
 

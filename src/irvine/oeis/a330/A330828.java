@@ -3,13 +3,14 @@ package irvine.oeis.a330;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a019.A019434;
 
 /**
  * A330828 The squares of the Fermat primes, (A019434(n))^2.
  * @author Georg Fischer
  */
-public class A330828 implements Sequence {
+public class A330828 extends Sequence1 {
 
   final Sequence mA019434 = new A019434();
   @Override

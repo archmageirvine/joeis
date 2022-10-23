@@ -3,13 +3,13 @@ package irvine.oeis.a030;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030413 Write (n+1)st Fibonacci number in base 4 and juxtapose.
  * @author Georg Fischer
  */
-public class A030413 implements Sequence {
+public class A030413 extends Sequence1 {
  
   private String mS = "";
   private int mPos = 0;

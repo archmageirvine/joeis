@@ -6,13 +6,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053431 Numbers k such that (Pi/2)*k^2*sin(1/k) &lt; floor(Pi*k/2).
  * @author Sean A. Irvine
  */
-public class A053431 implements Sequence {
+public class A053431 extends Sequence1 {
 
   private long mN = 0;
   private final Convergents mConvergents = new Convergents(CR.HALF_PI);

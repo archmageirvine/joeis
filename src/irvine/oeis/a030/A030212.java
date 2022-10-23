@@ -3,13 +3,14 @@ package irvine.oeis.a030;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000144;
 
 /**
  * A030212 Glaisher's chi_4(n).
  * @author Sean A. Irvine
  */
-public class A030212 implements Sequence {
+public class A030212 extends Sequence1 {
 
   private long mN = 0;
   private final Sequence mA144 = new A000144();

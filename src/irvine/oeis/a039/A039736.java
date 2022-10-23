@@ -2,13 +2,13 @@ package irvine.oeis.a039;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039736 a(n) = number of primes q&lt;p having (p mod q) = 2, where p = n-th prime.
  * @author Sean A. Irvine
  */
-public class A039736 implements Sequence {
+public class A039736 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

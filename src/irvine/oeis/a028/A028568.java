@@ -1,14 +1,14 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A028568 Palindromes of the form k*(k+8).
  * @author Sean A. Irvine
  */
-public class A028568 implements Sequence {
+public class A028568 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
   

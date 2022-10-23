@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054682 a(n) = smallest prime p = prime(k) such that gcd( prime(k+1) - prime(k), prime(k+2) - prime(k+1) ) is a multiple of 2n.
  * @author Sean A. Irvine
  */
-public class A054682 implements Sequence {
+public class A054682 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

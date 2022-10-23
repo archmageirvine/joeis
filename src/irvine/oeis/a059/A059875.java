@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059875 The lexicographically last sequence of binary encodings of solutions satisfying the equation given in A059871.
  * @author Sean A. Irvine
  */
-public class A059875 implements Sequence {
+public class A059875 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

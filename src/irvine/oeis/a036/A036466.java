@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036466 If n = Sum_{i} b(i)^2 (i.e., a partition of n into squares), then a(n) is the smallest possible value of the largest multiplicity of the b(i).
  * @author Sean A. Irvine
  */
-public class A036466 implements Sequence {
+public class A036466 extends Sequence1 {
 
   private int mN = 0;
   private int mUpperBound = 0;

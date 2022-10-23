@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028982 Squares and twice squares.
  * @author Sean A. Irvine
  */
-public class A028982 implements Sequence {
+public class A028982 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.ONE;

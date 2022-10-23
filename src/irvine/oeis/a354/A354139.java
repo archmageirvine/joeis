@@ -4,13 +4,13 @@ import irvine.math.group.IntegersMod;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A354139 a(n) is the least positive integer so that (k+1)^n + (k+2)^n + ... + (k+a(n))^n = 0 (mod n) for every positive integer k.
  * @author Sean A. Irvine
  */
-public class A354139 implements Sequence {
+public class A354139 extends Sequence1 {
 
   // After Michel Marcus
 

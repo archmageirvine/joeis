@@ -1,14 +1,14 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A030298 List of permutations of 1,2,3,...,n for n=1,2,3,..., in lexicographic order.
  * @author Sean A. Irvine
  */
-public class A030298 implements Sequence {
+public class A030298 extends Sequence1 {
 
   private Permutation mPerm = new Permutation(1);
   private int[] mP = new int[0];

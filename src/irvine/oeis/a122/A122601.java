@@ -3,13 +3,14 @@ package irvine.oeis.a122;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a039.A039705;
 
 /**
  * A122601 a(n)=(n-th prime +1) modulo 7.
  * @author Georg Fischer
  */
-public class A122601 implements Sequence {
+public class A122601 extends Sequence1 {
 
   final Sequence mA039705 = new A039705();
   @Override

@@ -3,13 +3,14 @@ package irvine.oeis.a239;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a097.A097723;
 
 /**
  * A239053 Sum of divisors of 4*n-1.
  * @author Georg Fischer
  */
-public class A239053 implements Sequence {
+public class A239053 extends Sequence1 {
 
   final Sequence mA097723 = new A097723();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024160 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, a+b+c=n such that (c-b)(c-a)(b-a) divides (c+b)(c+a)(b+a).
  * @author Sean A. Irvine
  */
-public class A024160 implements Sequence {
+public class A024160 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,6 +3,7 @@ package irvine.oeis.a285;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005361;
 import irvine.oeis.a007.A007947;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007947;
  * A285769 (Product of distinct prime factors)^(Product of prime exponents).
  * @author Georg Fischer
  */
-public class A285769 implements Sequence {
+public class A285769 extends Sequence1 {
 
   final Sequence mA005361 = new A005361();
   final Sequence mA007947 = new A007947();

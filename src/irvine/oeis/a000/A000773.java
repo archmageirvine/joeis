@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000773 Number of numbers == 0 (mod 3) in range 2^n to 2^(n+1) with odd number of 1's in binary expansion.
  * @author Sean A. Irvine
  */
-public class A000773 implements Sequence {
+public class A000773 extends Sequence1 {
 
   private int mN = 0;
 

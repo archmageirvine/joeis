@@ -3,13 +3,13 @@ package irvine.oeis.a023;
 import irvine.factor.prime.Fast;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023049 Smallest prime &gt; n having primitive root n, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
-public class A023049 implements Sequence {
+public class A023049 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mN = Z.ZERO;

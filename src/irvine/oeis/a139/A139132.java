@@ -1,14 +1,14 @@
 package irvine.oeis.a139;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.French;
 
 /**
  * A139132 The following sequence of French words has the property that it tells which letters in the sequence are vowels: un, quatre, cinq, huit, dix, quatorze, quinze, dix-huit, vingt et un, vingt-deux, ... Now replace the words with their numerical values.
  * @author Sean A. Irvine
  */
-public class A139132 implements Sequence {
+public class A139132 extends Sequence1 {
 
   private final StringBuilder mBuilder = new StringBuilder();
   private int mPos = 3;

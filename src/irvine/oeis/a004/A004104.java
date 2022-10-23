@@ -4,13 +4,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.PairMultiply;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004104 Number of self-dual signed graphs with n nodes. Also number of self-complementary 2-multigraphs on n nodes.
  * @author Sean A. Irvine
  */
-public class A004104 implements Sequence {
+public class A004104 extends Sequence1 {
 
   private int mN = 0;
 

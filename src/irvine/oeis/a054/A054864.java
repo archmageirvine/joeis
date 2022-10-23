@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054864 Numbers not divisible by any of their digits when written in base 8.
  * @author Sean A. Irvine
  */
-public class A054864 implements Sequence {
+public class A054864 extends Sequence1 {
 
   private long mN = 16;
 

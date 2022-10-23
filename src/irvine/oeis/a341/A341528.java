@@ -3,13 +3,14 @@ package irvine.oeis.a341;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003973;
 
 /**
  * A341528 a(n) = n * sigma(A003961(n)), where A003961 shifts the prime factorization of n one step towards larger primes, and sigma is the sum of the divisors of n.
  * @author Georg Fischer
  */
-public class A341528 implements Sequence {
+public class A341528 extends Sequence1 {
 
   final Sequence mA003973 = new A003973();
   protected long mN;

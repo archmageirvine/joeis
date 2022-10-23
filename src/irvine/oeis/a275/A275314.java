@@ -3,6 +3,7 @@ package irvine.oeis.a275;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001222;
 import irvine.oeis.a001.A001414;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001414;
  * A275314 Euler's gradus ("suavitatis gradus", or degrees of softness) function.
  * @author Georg Fischer
  */
-public class A275314 implements Sequence {
+public class A275314 extends Sequence1 {
 
   final Sequence mA001222 = new A001222();
   final Sequence mA001414 = new A001414();

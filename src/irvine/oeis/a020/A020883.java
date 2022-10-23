@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020883 Ordered long legs of primitive Pythagorean triangles.
  * @author Sean A. Irvine
  */
-public class A020883 implements Sequence {
+public class A020883 extends Sequence1 {
 
   private long mA = 2;
   private long mB = 4;

@@ -6,13 +6,13 @@ import java.util.Map;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036045 Sum of distances between dual pairs of partitions of n for the canonical order.
  * @author Sean A. Irvine
  */
-public class A036045 implements Sequence {
+public class A036045 extends Sequence1 {
 
   private int mN = 0;
 

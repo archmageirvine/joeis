@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006716 Squares with digits 1, 4, 9.
  * @author Sean A. Irvine
  */
-public class A006716 implements Sequence {
+public class A006716 extends Sequence1 {
 
   private static final int TAB_SIZE = 10000; // Must be a power of 10
   private static final Z BIG = Z.valueOf(TAB_SIZE);

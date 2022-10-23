@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036440 Number of ways of arranging row n of the prime pyramid.
  * @author Sean A. Irvine
  */
-public class A036440 implements Sequence {
+public class A036440 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

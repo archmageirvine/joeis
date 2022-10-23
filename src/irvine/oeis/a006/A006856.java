@@ -4,13 +4,13 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006856 Maximal number of edges in n-node graph of girth at least 5.
  * @author Sean A. Irvine
  */
-public class A006856 implements Sequence, GraphProcessor {
+public class A006856 extends Sequence1 implements GraphProcessor {
 
   // This is not competitive
 

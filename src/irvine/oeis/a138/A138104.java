@@ -3,13 +3,14 @@ package irvine.oeis.a138;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001358;
 
 /**
  * A138104 2^(n-th semiprime) - 1.
  * @author Georg Fischer
  */
-public class A138104 implements Sequence {
+public class A138104 extends Sequence1 {
 
   final Sequence mA001358 = new A001358();
   @Override

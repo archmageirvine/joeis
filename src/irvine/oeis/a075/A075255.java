@@ -3,13 +3,14 @@ package irvine.oeis.a075;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001414;
 
 /**
  * A075255 a(n) = n - (sum of primes factors of n (with repetition)).
  * @author Georg Fischer
  */
-public class A075255 implements Sequence {
+public class A075255 extends Sequence1 {
 
   final Sequence mA001414 = new A001414();
   protected long mN;

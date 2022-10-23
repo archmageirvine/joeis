@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053521 a(n) = floor(A*a(n-1) + B*a(n-2) + C)/p^r, where p^r is the highest power of p dividing floor(A*a(n-1) + B*a(n-2) + C), A=1.0001, B=1.0001, C=1, p=2.
  * @author Sean A. Irvine
  */
-public class A053521 implements Sequence {
+public class A053521 extends Sequence1 {
 
   private static final Q A = new Q(10001, 10000);
 

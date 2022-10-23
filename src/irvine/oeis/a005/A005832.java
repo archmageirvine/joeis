@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005832 Product k^(2^(k-1)), k = 1..n.
  * @author Sean A. Irvine
  */
-public class A005832 implements Sequence {
+public class A005832 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private int mN = 0;

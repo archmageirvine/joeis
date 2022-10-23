@@ -3,14 +3,14 @@ package irvine.oeis.a099;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 
 /**
  * A099192 Numbers k such that the string k235711131719 is prime.
  * @author Georg Fischer
  */
-public class A099192 implements Sequence {
+public class A099192 extends Sequence1 {
   protected long mK; // number k to be returned
   protected Z mConst1; // constant behind k
   protected Z mPow10; // 10^m always > k

@@ -3,13 +3,13 @@ package irvine.oeis.a331;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A331536 Number of words that can be reached in at most n - 1 steps in the MIU system starting from the word 'mi'.
  * @author Sean A. Irvine
  */
-public class A331536 implements Sequence {
+public class A331536 extends Sequence1 {
 
   private final HashSet<String> mSeen = new HashSet<>(); // everything so far
   private HashSet<String> mNewlySeen = new HashSet<>(); // those that were new this iteration

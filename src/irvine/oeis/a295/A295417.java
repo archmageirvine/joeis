@@ -3,6 +3,7 @@ package irvine.oeis.a295;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007947;
 import irvine.oeis.a051.A051903;
 import irvine.oeis.a051.A051904;
@@ -10,7 +11,7 @@ import irvine.oeis.a051.A051904;
  * A295417 Self-inverse permutation of natural numbers: in prime factorization of n replace each positive prime exponent e with max + min - e, where max = A051903(n) and min = A051904(n).
  * @author Georg Fischer
  */
-public class A295417 implements Sequence {
+public class A295417 extends Sequence1 {
 
   private final Sequence mA007947 = new A007947();
   private final Sequence mA051903 = new A051903();

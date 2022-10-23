@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034738 Dirichlet convolution of b_n = 2^(n-1) with phi(n).
  * @author Sean A. Irvine
  */
-public class A034738 implements Sequence {
+public class A034738 extends Sequence1 {
 
   private int mN = 0;
 

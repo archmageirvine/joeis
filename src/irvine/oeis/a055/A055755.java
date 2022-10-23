@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055755 4n^2+1, 2n^2+1, 2n^2-1 are all prime.
  * @author Sean A. Irvine
  */
-public class A055755 implements Sequence {
+public class A055755 extends Sequence1 {
 
   private long mN = 2;
 

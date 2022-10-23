@@ -1,14 +1,14 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
 
 /**
  * A025494 Squares which are the sum of factorials of distinct integers (probably finite).
  * @author Sean A. Irvine
  */
-public class A025494 implements Sequence {
+public class A025494 extends Sequence1 {
 
   private final LongDynamicArray<Z> mSums = new LongDynamicArray<>();
   {

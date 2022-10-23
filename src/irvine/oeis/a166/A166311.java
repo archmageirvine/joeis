@@ -2,13 +2,13 @@ package irvine.oeis.a166;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A166311 Numbers whose sum of digits is 11.
  * @author Georg Fischer
  */
-public class A166311 implements Sequence {
+public class A166311 extends Sequence1 {
 
   private Z mN;
   private int mSum;

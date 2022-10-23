@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057816 If a(n) = 0 mod 3 then a(n+1)=a(n)/3 otherwise a(n+1)=4*a(n)+-1 where sign is chosen to give a multiple of 3.
  * @author Sean A. Irvine
  */
-public class A057816 implements Sequence {
+public class A057816 extends Sequence1 {
 
   private Z mA = null;
 

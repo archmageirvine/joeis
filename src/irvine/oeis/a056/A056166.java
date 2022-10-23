@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056166 Numbers which are the product of distinct primes raised to prime powers.
  * @author Sean A. Irvine
  */
-public class A056166 implements Sequence {
+public class A056166 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

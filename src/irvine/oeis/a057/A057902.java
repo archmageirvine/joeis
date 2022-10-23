@@ -3,13 +3,14 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A057902 a(n) = 5^prime(n).
  * @author Georg Fischer
  */
-public class A057902 implements Sequence {
+public class A057902 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   @Override

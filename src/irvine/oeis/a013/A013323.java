@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013323 Numerator of [x^n] in the Taylor series arccosh(exp(x)-arcsinh(x))= x+x^2/3 -x^3/18 -14*x^4/135 +47*x^5/3240 +3527*x^6/68040 -4787*x^7/680400-...
  * @author Sean A. Irvine
  */
-public class A013323 implements Sequence {
+public class A013323 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

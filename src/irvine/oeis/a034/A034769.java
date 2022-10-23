@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034769 Dirichlet convolution of Catalan numbers with Bell numbers.
  * @author Sean A. Irvine
  */
-public class A034769 implements Sequence {
+public class A034769 extends Sequence1 {
 
   private int mN = 0;
 

@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033947 Smallest primitive root (in absolute value) of n-th prime.
  * @author Sean A. Irvine
  */
-public class A033947 implements Sequence {
+public class A033947 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   protected Z mP = Z.ONE;

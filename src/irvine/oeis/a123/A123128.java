@@ -3,13 +3,14 @@ package irvine.oeis.a123;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001223;
 
 /**
  * A123128 Add n to the n-th difference between consecutive primes.
  * @author Georg Fischer
  */
-public class A123128 implements Sequence {
+public class A123128 extends Sequence1 {
 
   final Sequence mA001223 = new A001223();
   protected long mN;

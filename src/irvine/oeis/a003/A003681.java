@@ -5,13 +5,13 @@ import java.util.Arrays;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003681 a(n) = min { p +- q : p +- q &gt; 1 and p*q = Product_{k=1..n-1} a(k) }.
  * @author Sean A. Irvine
  */
-public class A003681 implements Sequence {
+public class A003681 extends Sequence1 {
 
   private final FactorSequence mFS = new FactorSequence(); // Accumulates factorization
   private Z mProd = Z.ONE; // Accumulates terms (saves multiplying out mFS)

@@ -3,13 +3,13 @@ package irvine.oeis.a039;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039799 For S a subset of [ n ] = {1,2,3,...n}, let B_S = {x+y : x,y in S, x&lt;y}; then a(n) is maximal cardinality of B_S intersect B_{[ n ]-S}.
  * @author Sean A. Irvine
  */
-public class A039799 implements Sequence {
+public class A039799 extends Sequence1 {
 
   // After Alois P. Heinz
 

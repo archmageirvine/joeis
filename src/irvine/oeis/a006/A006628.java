@@ -3,14 +3,14 @@ package irvine.oeis.a006;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A006628 From a partition of the integers.
  * @author Sean A. Irvine
  */
-public class A006628 implements Sequence {
+public class A006628 extends Sequence1 {
 
   private final DynamicIntArray mAssignment = new DynamicIntArray();
   private final DynamicIntArray mFirsts = new DynamicIntArray();

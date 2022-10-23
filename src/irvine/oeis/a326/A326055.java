@@ -3,13 +3,14 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008833;
 
 /**
  * A326055 a(n) = n - {the largest square that divides n}.
  * @author Georg Fischer
  */
-public class A326055 implements Sequence {
+public class A326055 extends Sequence1 {
 
   final Sequence mA008833 = new A008833();
   protected long mN;

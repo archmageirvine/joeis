@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028876 Numbers k such that k^2 - 5 is prime.
  * @author Sean A. Irvine
  */
-public class A028876 implements Sequence {
+public class A028876 extends Sequence1 {
 
   private Z mN = Z.THREE;
 

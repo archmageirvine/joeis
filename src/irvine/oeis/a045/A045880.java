@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045880 Integers whose square root is "well approximated" by other square roots of integers.
  * @author Sean A. Irvine
  */
-public class A045880 implements Sequence {
+public class A045880 extends Sequence1 {
 
   private CR mPrev = CR.TWO;
   private int mN = 0;

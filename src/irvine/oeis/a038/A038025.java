@@ -3,13 +3,13 @@ package irvine.oeis.a038;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038025 Winner of n-th Littlewood Frog Race.
  * @author Sean A. Irvine
  */
-public class A038025 implements Sequence {
+public class A038025 extends Sequence1 {
 
   // After R. J. Mathar
 

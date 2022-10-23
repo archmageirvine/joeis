@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030301 n-th run has length 2^(n-1).
  * @author Sean A. Irvine
  */
-public class A030301 implements Sequence {
+public class A030301 extends Sequence1 {
 
   private Z mV = Z.ONE;
   private long mC = 0;

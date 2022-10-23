@@ -3,6 +3,7 @@ package irvine.oeis.a101;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a051.A051674;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a051.A051674;
  * A101340 a(n) = prime(n)^prime(n)+prime(n).
  * @author Georg Fischer
  */
-public class A101340 implements Sequence {
+public class A101340 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA051674 = new A051674();

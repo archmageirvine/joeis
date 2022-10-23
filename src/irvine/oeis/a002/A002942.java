@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002942 a(n) = n^2 written backwards.
  * @author Sean A. Irvine
  */
-public class A002942 implements Sequence {
+public class A002942 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

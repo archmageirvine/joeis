@@ -3,13 +3,13 @@ package irvine.oeis.a203;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A203482 a(n) = Product_{1 &lt;= i &lt; j &lt;= n} (i! + j!).
  * @author Georg Fischer
  */
-public class A203482 implements Sequence {
+public class A203482 extends Sequence1 {
 
   private int mN = 0;
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;

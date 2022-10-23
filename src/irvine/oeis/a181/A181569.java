@@ -3,13 +3,14 @@ package irvine.oeis.a181;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014973;
 
 /**
  * A181569 Greatest common divisor of n! and n+1.
  * @author Georg Fischer
  */
-public class A181569 implements Sequence {
+public class A181569 extends Sequence1 {
 
   final Sequence mA014973 = new A014973();
   protected long mN;

@@ -3,13 +3,14 @@ package irvine.oeis.a076;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007947;
 
 /**
  * A076930 Smallest k such that n*k is an n-th power.
  * @author Georg Fischer
  */
-public class A076930 implements Sequence {
+public class A076930 extends Sequence1 {
 
   final Sequence mA007947 = new A007947();
   protected long mN;

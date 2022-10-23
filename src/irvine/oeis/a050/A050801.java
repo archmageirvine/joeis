@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050801 Numbers k such that k^2 is expressible as the sum of two positive cubes in at least one way.
  * @author Sean A. Irvine
  */
-public class A050801 implements Sequence {
+public class A050801 extends Sequence1 {
 
   private long mN = 2;
 

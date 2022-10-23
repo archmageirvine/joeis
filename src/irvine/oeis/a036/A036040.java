@@ -7,13 +7,13 @@ import irvine.math.Comparators;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036040 Irregular triangle of multinomial coefficients, read by rows (version 1).
  * @author Sean A. Irvine
  */
-public class A036040 implements Sequence {
+public class A036040 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final TreeSet<int[]> mA = new TreeSet<>(Comparators.LEXICOGRAPHIC);

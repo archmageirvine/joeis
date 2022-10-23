@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007812 Number of n-node Steinhaus graphs whose complements have at least one cut-vertex.
  * @author Sean A. Irvine
  */
-public class A007812 implements Sequence {
+public class A007812 extends Sequence1 {
 
   // The initial terms of this sequence are not what I would expect.
   private static final int[] SMALL = {0, 0, 1, 3, 2, 6};

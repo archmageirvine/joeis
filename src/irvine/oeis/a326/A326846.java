@@ -3,6 +3,7 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001222;
 import irvine.oeis.a061.A061395;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a061.A061395;
  * A326846 Length times maximum of the integer partition with Heinz number n.
  * @author Georg Fischer
  */
-public class A326846 implements Sequence {
+public class A326846 extends Sequence1 {
 
   final Sequence mA001222 = new A001222();
   final Sequence mA061395 = new A061395();

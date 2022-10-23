@@ -3,13 +3,13 @@ package irvine.oeis.a140;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A140173 Numbers k such that sigma(k) = phi(k)*(sum of the digits of k).
  * @author Sean A. Irvine
  */
-public class A140173 implements Sequence {
+public class A140173 extends Sequence1 {
 
   private long mN = 0;
 

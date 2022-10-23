@@ -3,13 +3,14 @@ package irvine.oeis.a107;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002383;
 
 /**
  * A107317 Semiprimes of the form 2*(m^2 + m + 1) (implying that m^2 + m + 1 is a prime).
  * @author Georg Fischer
  */
-public class A107317 implements Sequence {
+public class A107317 extends Sequence1 {
 
   final Sequence mA002383 = new A002383();
   @Override

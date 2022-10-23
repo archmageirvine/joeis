@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034883 Maximum length of Euclidean algorithm starting with n and any nonnegative i&lt;n.
  * @author Sean A. Irvine
  */
-public class A034883 implements Sequence {
+public class A034883 extends Sequence1 {
 
   private long mN = 0;
 

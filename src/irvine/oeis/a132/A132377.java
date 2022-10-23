@@ -3,13 +3,14 @@ package irvine.oeis.a132;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 
 /**
  * A132377 PrimePi(n)^n.
  * @author Georg Fischer
  */
-public class A132377 implements Sequence {
+public class A132377 extends Sequence1 {
 
   final Sequence mA000720 = new A000720();
   protected long mN;

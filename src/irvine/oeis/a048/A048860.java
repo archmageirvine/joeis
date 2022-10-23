@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048860 Smallest denominator d such that the Sylvester expansion of n/d has n terms.
  * @author Sean A. Irvine
  */
-public class A048860 implements Sequence {
+public class A048860 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048153 a(n) = Sum_{k=1..n} (k^2 mod n).
  * @author Sean A. Irvine
  */
-public class A048153 implements Sequence {
+public class A048153 extends Sequence1 {
 
   private long mN = 0;
 

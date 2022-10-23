@@ -5,13 +5,13 @@ import irvine.math.nauty.DirectedGraph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A185193 Number of unlabeled digraphs on n vertices such that every vertex has outdegree 3.
  * @author Sean A. Irvine
  */
-public class A185193 implements Sequence, GraphProcessor {
+public class A185193 extends Sequence1 implements GraphProcessor {
 
   private static final class DigraphCheck extends DirectedGraph {
     private long mCount = 0;

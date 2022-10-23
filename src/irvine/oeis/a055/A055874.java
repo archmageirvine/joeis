@@ -3,13 +3,14 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007978;
 
 /**
  * A055874 a(n) = largest m such that 1, 2, ..., m divide n.
  * @author Georg Fischer
  */
-public class A055874 implements Sequence {
+public class A055874 extends Sequence1 {
 
   final Sequence mA007978 = new A007978();
   @Override

@@ -2,14 +2,14 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008578;
 
 /**
  * A058009 a(n) is obtained by applying the map k -&gt; prime(k) n times, starting at n.
  * @author Sean A. Irvine
  */
-public class A058009 implements Sequence {
+public class A058009 extends Sequence1 {
 
   private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A008578());
   private int mN = 0;

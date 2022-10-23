@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002734 Remove squares!.
  * @author Sean A. Irvine
  */
-public class A002734 implements Sequence {
+public class A002734 extends Sequence1 {
 
   private long mN = 1;
 

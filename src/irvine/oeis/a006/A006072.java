@@ -1,14 +1,14 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A006072 Numbers with mirror symmetry about middle.
  * @author Sean A. Irvine
  */
-public class A006072 implements Sequence {
+public class A006072 extends Sequence1 {
 
   private long mN = -1;
 

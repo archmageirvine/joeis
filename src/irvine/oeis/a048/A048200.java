@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048200 Minimal length pair-exchange / set-rotate sequence to reverse n distinct ordered elements.
  * @author Sean A. Irvine
  */
-public class A048200 implements Sequence {
+public class A048200 extends Sequence1 {
 
   // Brute force, breadth first search.
   // We represent states as a long, using 4-bits per element.

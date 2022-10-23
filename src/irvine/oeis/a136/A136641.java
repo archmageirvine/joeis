@@ -3,13 +3,13 @@ package irvine.oeis.a136;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A136641 a(n) is the smallest positive integer that is coprime to n and has n divisors.
  * @author Sean A. Irvine
  */
-public class A136641 implements Sequence {
+public class A136641 extends Sequence1 {
 
   private long mN = 0;
 

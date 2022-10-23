@@ -3,13 +3,13 @@ package irvine.oeis.a085;
 import irvine.math.LongUtils;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A085097 Ramanujan sum c_n(3).
  * @author Georg Fischer
  */
-public class A085097 implements Sequence {
+public class A085097 extends Sequence1 {
 
   private int mN;
   private int mM;

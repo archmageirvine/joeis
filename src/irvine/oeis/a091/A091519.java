@@ -2,14 +2,14 @@ package irvine.oeis.a091;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A091519 G.f.: sum(k&gt;=0, 2^k*t*(1+t)/(1-t)^3, t=x^2^k).
  * a(n)=2*n*n-n*n/2^valuation(n, 2).
  * @author Georg Fischer
  */
-public class A091519 implements Sequence {
+public class A091519 extends Sequence1 {
 
   private long mN;
 

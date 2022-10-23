@@ -1,13 +1,13 @@
 package irvine.oeis.a075;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A075152 Number of possible permutations of a Rubik cube of size n X n X n.
  * @author Sean A. Irvine
  */
-public class A075152 implements Sequence {
+public class A075152 extends Sequence1 {
 
   private static final Z C1 = Z.valueOf(3246670537110000L);
   private Z mA = Z.valueOf(3674160);

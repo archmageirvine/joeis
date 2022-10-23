@@ -1,13 +1,13 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052191 Smallest multiple of n with no isolated digits.
  * @author Sean A. Irvine
  */
-public class A052191 implements Sequence {
+public class A052191 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

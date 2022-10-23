@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057153 Construct difference array so that (1) first row begins with 1, (2) every row is monotonic increasing, (3) no number appears more than once, (4) smallest number not yet used begins a new row. Sequence gives first row of array.
  * @author Sean A. Irvine
  */
-public class A057153 implements Sequence {
+public class A057153 extends Sequence1 {
 
   protected final ArrayList<Long> mA = new ArrayList<>();
   protected final TreeSet<Long> mUsed = new TreeSet<>();

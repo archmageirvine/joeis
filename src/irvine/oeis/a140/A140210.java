@@ -3,13 +3,13 @@ package irvine.oeis.a140;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A140210 a(n) = Product_{h == 1 (mod 4) and h|n} h.
  * @author Georg Fischer
  */
-public class A140210 implements Sequence {
+public class A140210 extends Sequence1 {
 
   private int mN = 0;
 

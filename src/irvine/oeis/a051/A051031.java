@@ -4,13 +4,13 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051031 Triangle read by rows: T(n,r) is the number of not necessarily connected r-regular graphs with n nodes, 0 &lt;= r &lt; n.
  * @author Sean A. Irvine
  */
-public class A051031 implements Sequence {
+public class A051031 extends Sequence1 {
 
   // Uses direct enumeration -- better methods are known
 

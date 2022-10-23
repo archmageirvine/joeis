@@ -3,14 +3,14 @@ package irvine.oeis.a052;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 
 /**
  * A052093 a(n)^4 is the smallest fourth power whose decimal expansion digits occur with same frequency n.
  * @author Sean A. Irvine
  */
-public class A052093 implements Sequence {
+public class A052093 extends Sequence1 {
 
   private int mN = 0;
   private final DynamicArray<Z> mFirsts = new DynamicArray<>();

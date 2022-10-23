@@ -1,13 +1,13 @@
 package irvine.oeis.a215;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A215782 Odd tribonacci non-divisors.
  * @author Sean A. Irvine
  */
-public class A215782 implements Sequence {
+public class A215782 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a300;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003557;
 
 /**
  * A300719 Difference between A003557 (n divided by largest squarefree divisor of n) and its M\u00f6bius transform.
  * @author Georg Fischer
  */
-public class A300719 implements Sequence {
+public class A300719 extends Sequence1 {
 
   final Sequence mA003557 = new A003557();
   final Sequence mA300717 = new A300717();

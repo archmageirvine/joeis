@@ -6,13 +6,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003964 Fully multiplicative with a(prime(k)) = partition(k+1).
  * @author Sean A. Irvine
  */
-public class A003964 implements Sequence {
+public class A003964 extends Sequence1 {
 
   private long mN = 0;
   private int mP = 1;

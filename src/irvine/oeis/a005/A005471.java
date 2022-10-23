@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005471 Primes of the form m^2 + 3m + 9, where m can be positive or negative.
  * @author Sean A. Irvine
  */
-public class A005471 implements Sequence {
+public class A005471 extends Sequence1 {
 
   protected Z mN = Z.valueOf(-2);
 

@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034179 Difference between two positive cubes in more than one way.
  * @author Sean A. Irvine
  */
-public class A034179 implements Sequence {
+public class A034179 extends Sequence1 {
 
   private long mN = 720;
 

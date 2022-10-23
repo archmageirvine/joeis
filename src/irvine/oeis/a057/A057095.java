@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057095 Numbers n such that n^2 +1, n^2 +3, n^2 +7, n^2 +9 and n^2 +13 are simultaneously prime.
  * @author Sean A. Irvine
  */
-public class A057095 implements Sequence {
+public class A057095 extends Sequence1 {
 
   private long mN = 1;
 

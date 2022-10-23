@@ -2,13 +2,13 @@ package irvine.oeis.a015;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015636 Number of ordered quadruples of integers from [ 1,n ] with no common factors between pairs.
  * @author Sean A. Irvine
  */
-public class A015636 implements Sequence {
+public class A015636 extends Sequence1 {
 
   private long mN = start() - 1;
   private Z mA = Z.ZERO;

@@ -3,13 +3,14 @@ package irvine.oeis.a317;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000723;
 
 /**
  * A317251 a(n) is the number of ways to paint the 2^n cells of dimension n-1 that bound a regular convex n-orthoplex polytope using exactly 2^n colors where n is the dimension of Euclidean space.
  * @author Georg Fischer
  */
-public class A317251 implements Sequence {
+public class A317251 extends Sequence1 {
 
   final Sequence mA000723 = new A000723();
   @Override

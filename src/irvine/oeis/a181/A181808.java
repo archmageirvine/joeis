@@ -3,13 +3,14 @@ package irvine.oeis.a181;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002182;
 
 /**
  * A181808 Numbers that set a record for number of even divisors: a(n) = 2*A002182(n).
  * @author Georg Fischer
  */
-public class A181808 implements Sequence {
+public class A181808 extends Sequence1 {
 
   final Sequence mA002182 = new A002182();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006317 Maximum number of chess queens of 3 colors on an n X n board such that no queen attacks or protects another queen of its color.
  * @author Sean A. Irvine
  */
-public class A006317 implements Sequence {
+public class A006317 extends Sequence1 {
 
   // This is too slow to get more than a few terms.
 

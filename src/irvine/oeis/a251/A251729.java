@@ -3,13 +3,13 @@ package irvine.oeis.a251;
 import irvine.math.MemoryFunctionInt3;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A251729 Number of gap-free but not complete compositions of n.
  * @author Georg Fischer
  */
-public class A251729 implements Sequence {
+public class A251729 extends Sequence1 {
 
   private int mN = 0;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a162;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008578;
 
 /**
  * A162177 a(n) is the number of composite numbers that are smaller than A008578(n).
  * @author Georg Fischer
  */
-public class A162177 implements Sequence {
+public class A162177 extends Sequence1 {
 
   final Sequence mA008578 = new A008578();
   protected long mN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036977 Primes arising in A036976.
  * @author Sean A. Irvine
  */
-public class A036977 implements Sequence {
+public class A036977 extends Sequence1 {
 
   private long mN = -1;
 

@@ -13,14 +13,14 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
 /**
  * A051787 Expected number of spins in a 2-player Dreidel game (rounded to nearest integer) (version 1).
  * @author Sean A. Irvine
  */
-public class A051787 implements Sequence {
+public class A051787 extends Sequence1 {
 
   // This sequence is a nice example of determining the expected length of a Markov chain.
 

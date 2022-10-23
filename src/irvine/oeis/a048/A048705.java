@@ -3,6 +3,7 @@ package irvine.oeis.a048;
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a020.A020652;
 import irvine.oeis.a020.A020653;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a020.A020653;
  * A048705 The rule numbers for 1-D CA composed of Rules "90" and "150" so that each direction occurs only once.
  * @author Sean A. Irvine
  */
-public class A048705 implements Sequence {
+public class A048705 extends Sequence1 {
 
   // After Antti Karttunen
 

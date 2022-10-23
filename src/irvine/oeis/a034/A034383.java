@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import irvine.math.api.Group;
 import irvine.math.group.GroupFactory;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034383 Number of labeled groups.
  * @author Sean A. Irvine
  */
-public class A034383 implements Sequence {
+public class A034383 extends Sequence1 {
 
   protected int mN = 0;
   private Z mF = Z.ONE;

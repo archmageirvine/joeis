@@ -3,6 +3,7 @@ package irvine.oeis.a286;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046118;
 import irvine.oeis.a046.A046119;
 import irvine.oeis.a046.A046120;
@@ -11,7 +12,7 @@ import irvine.oeis.a046.A046120;
  * A286217 Product of the n-th sexy prime triple.
  * @author Georg Fischer
  */
-public class A286217 implements Sequence {
+public class A286217 extends Sequence1 {
 
   final Sequence mA046118 = new A046118();
   final Sequence mA046119 = new A046119();

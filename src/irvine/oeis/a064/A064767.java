@@ -3,6 +3,7 @@ package irvine.oeis.a064;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a011.A011785;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a011.A011785;
  * A064767 Order of automorphism group of the group C_n X C_n X C_n (where C_n is the cyclic group of order n).
  * @author Georg Fischer
  */
-public class A064767 implements Sequence {
+public class A064767 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA011785 = new A011785();

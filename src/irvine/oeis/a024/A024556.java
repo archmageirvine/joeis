@@ -3,13 +3,13 @@ package irvine.oeis.a024;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024556 Odd squarefree composite numbers.
  * @author Sean A. Irvine
  */
-public class A024556 implements Sequence {
+public class A024556 extends Sequence1 {
 
   private long mN = 13;
 

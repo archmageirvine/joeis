@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007957 Numbers that contain an odd digit.
  * @author Sean A. Irvine
  */
-public class A007957 implements Sequence {
+public class A007957 extends Sequence1 {
 
   private long mN = 0;
 

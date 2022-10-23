@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049116 Repeatedly apply Euler phi to n; a(n) = highest power of 2 that is seen.
  * @author Sean A. Irvine
  */
-public class A049116 implements Sequence {
+public class A049116 extends Sequence1 {
 
   private long mN = 0;
 

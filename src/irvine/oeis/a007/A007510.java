@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007510 Single (or isolated or non-twin) primes: Primes p such that neither p-2 nor p+2 is prime.
  * @author Sean A. Irvine
  */
-public class A007510 implements Sequence {
+public class A007510 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

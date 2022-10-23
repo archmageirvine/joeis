@@ -7,13 +7,13 @@ import irvine.math.graph.GraphUtils;
 import irvine.math.group.IntegerField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A350360 Number of unlabeled digraphs with n nodes containing a global sink (or source).
  * @author Sean A. Irvine
  */
-public class A350360 implements Sequence {
+public class A350360 extends Sequence1 {
 
   private int mN = 0;
 

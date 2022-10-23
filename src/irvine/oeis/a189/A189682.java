@@ -3,11 +3,12 @@ package irvine.oeis.a189;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 /**
  * A189682 (A189680)/2; from a 3-way partition of the positive integers.
  * @author Georg Fischer
  */
-public class A189682 implements Sequence {
+public class A189682 extends Sequence1 {
 
   private final Sequence mA189680 = new A189680();
   @Override

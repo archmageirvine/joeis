@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011541 Taxicab, taxi-cab or Hardy-Ramanujan numbers: the smallest number that is the sum of 2 positive integral cubes in n ways.
  * @author Sean A. Irvine
  */
-public class A011541 implements Sequence {
+public class A011541 extends Sequence1 {
 
   private final ArrayList<Z> mCubes = new ArrayList<>();
   private final HashMap<Z, Integer> mCounts = new HashMap<>();

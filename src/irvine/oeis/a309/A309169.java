@@ -3,13 +3,13 @@ package irvine.oeis.a309;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A309169 a(n) = Product_{d|n} |Stirling1(n,d)|.
  * @author Georg Fischer
  */
-public class A309169 implements Sequence {
+public class A309169 extends Sequence1 {
 
   private int mN = 0;
 

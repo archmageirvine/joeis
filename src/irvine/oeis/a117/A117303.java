@@ -3,6 +3,7 @@ package irvine.oeis.a117;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001511;
 import irvine.oeis.a003.A003602;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a003.A003602;
  * A117303 Self-inverse permutation of the natural numbers based on the bijection (2*x-1)*2^(y-1) &lt;--&gt; (2*y-1)*2^(x-1).
  * @author Georg Fischer
  */
-public class A117303 implements Sequence {
+public class A117303 extends Sequence1 {
 
   final Sequence mA001511 = new A001511();
   final Sequence mA003602 = new A003602();

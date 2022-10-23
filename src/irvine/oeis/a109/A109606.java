@@ -3,13 +3,14 @@ package irvine.oeis.a109;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 
 /**
  * A109606 Number of numbers k with 1 &lt; k &lt; n which are relatively prime to n.
  * @author Georg Fischer
  */
-public class A109606 implements Sequence {
+public class A109606 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   @Override

@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045661 a(n) = Product_{d|n} (n/d + d).
  * @author Sean A. Irvine
  */
-public class A045661 implements Sequence {
+public class A045661 extends Sequence1 {
 
   private long mN = 0;
 

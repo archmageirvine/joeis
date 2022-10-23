@@ -3,12 +3,13 @@ package irvine.oeis.a134;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000043;
 /**
  * A134713 Base-2 logarithm of (n-th even superperfect number divided by 2^n), plus 1.
  * @author Georg Fischer
  */
-public class A134713 implements Sequence {
+public class A134713 extends Sequence1 {
 
   private final Sequence mA000043 = new A000043();
   protected long mN;

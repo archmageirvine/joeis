@@ -6,13 +6,13 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.nauty.Multigraph;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057279 Triangle T(n,k) of number of digraphs with a quasi-source on n unlabeled nodes and with k arcs, k = 0..n*(n-1).
  * @author Sean A. Irvine
  */
-public class A057279 implements Sequence, GraphProcessor {
+public class A057279 extends Sequence1 implements GraphProcessor {
 
   // Cf. A049512.
   // There are hints in Robinson's work that this sequence can be done by the cycle index method.

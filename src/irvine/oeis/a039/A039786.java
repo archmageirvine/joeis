@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039786 phi(a(n)) is equal to the multiplicative projection of (a(n)-1).
  * @author Sean A. Irvine
  */
-public class A039786 implements Sequence {
+public class A039786 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 1;

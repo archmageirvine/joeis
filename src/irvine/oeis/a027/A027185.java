@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027185 Triangular array O by rows: O(n,k) = number of partitions of n into an odd number of parts, the least being k.
  * @author Sean A. Irvine
  */
-public class A027185 implements Sequence {
+public class A027185 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

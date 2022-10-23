@@ -3,13 +3,14 @@ package irvine.oeis.a243;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a024.A024916;
 
 /**
  * A243980 Four times the sum of all divisors of all positive integers &lt;= n.
  * @author Georg Fischer
  */
-public class A243980 implements Sequence {
+public class A243980 extends Sequence1 {
 
   final Sequence mA024916 = new A024916();
   @Override

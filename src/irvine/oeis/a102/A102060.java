@@ -5,13 +5,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A102060 Expansion of e.g.f. tan(arcsinh(x)) = cot(arccosh(x)).
  * @author Georg Fischer
  */
-public class A102060 implements Sequence {
+public class A102060 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

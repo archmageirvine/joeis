@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053036 Number of values which are not powers of 2 in the trajectory when A051953 (cototient function) is repeatedly applied starting with n!.
  * @author Sean A. Irvine
  */
-public class A053036 implements Sequence {
+public class A053036 extends Sequence1 {
 
   private final FactorSequence mFactorSequence = new FactorSequence();
   private final PrimeDivision mFactor = new PrimeDivision();

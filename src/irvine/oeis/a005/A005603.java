@@ -2,14 +2,14 @@ package irvine.oeis.a005;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 
 /**
  * A005603 Smallest prime beginning a complete Cunningham chain (of the second kind) of length n.
  * @author Sean A. Irvine
  */
-public class A005603 implements Sequence {
+public class A005603 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final DynamicArray<Z> mFirst = new DynamicArray<>();

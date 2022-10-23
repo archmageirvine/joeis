@@ -8,13 +8,13 @@ import irvine.math.polynomial.HararyMultiply;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A222189 Number of toroidal n X 3 binary arrays, allowing rotation and/or reflection of the rows and/or the columns.
  * @author Sean A. Irvine
  */
-public class A222189 implements Sequence {
+public class A222189 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final CycleIndex mS = SymmetricGroup.create(3).cycleIndex();

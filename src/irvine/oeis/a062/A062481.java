@@ -3,13 +3,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A062481 a(n) = n^prime(n).
  * @author Georg Fischer
  */
-public class A062481 implements Sequence {
+public class A062481 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   protected long mN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006852 Step at which n is expelled in Kimberling's puzzle (A035486).
  * @author Sean A. Irvine
  */
-public class A006852 implements Sequence {
+public class A006852 extends Sequence1 {
 
   private long mN = 0;
 

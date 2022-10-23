@@ -3,13 +3,14 @@ package irvine.oeis.a100;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038550;
 
 /**
  * A100368 Numbers of the form 2^k * p where k &gt; 0 and p is an odd prime.
  * @author Georg Fischer
  */
-public class A100368 implements Sequence {
+public class A100368 extends Sequence1 {
 
   final Sequence mA038550 = new A038550();
   @Override

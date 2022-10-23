@@ -3,6 +3,7 @@ package irvine.oeis.a076;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a009.A009195;
 import irvine.oeis.a051.A051953;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a051.A051953;
  * A076511 Numerator of cototient(n)/totient(n).
  * @author Georg Fischer
  */
-public class A076511 implements Sequence {
+public class A076511 extends Sequence1 {
 
   final Sequence mA009195 = new A009195();
   final Sequence mA051953 = new A051953();

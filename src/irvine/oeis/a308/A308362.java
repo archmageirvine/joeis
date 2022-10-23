@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A308362 Number of (2k+1)-ary quasitrivial semigroups on an n-element set.
  * E.g.f.: (2 + x^2)/(6 - 4*exp(x) + 2*x)
  * @author Georg Fischer
  */
-public class A308362 implements Sequence {
+public class A308362 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

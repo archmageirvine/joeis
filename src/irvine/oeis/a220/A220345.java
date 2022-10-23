@@ -3,6 +3,7 @@ package irvine.oeis.a220;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002322;
 import irvine.oeis.a007.A007434;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007434;
  * A220345 Ratio of Jordan's totient to Carmichael's lambda function: a(n) = A007434(n) / A002322(n).
  * @author Georg Fischer
  */
-public class A220345 implements Sequence {
+public class A220345 extends Sequence1 {
 
   final Sequence mA002322 = new A002322();
   final Sequence mA007434 = new A007434();

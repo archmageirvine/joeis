@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032727 Numbers n such that n prefixed by '2' and followed by '9' is prime.
  * @author Sean A. Irvine
  */
-public class A032727 implements Sequence {
+public class A032727 extends Sequence1 {
 
   private long mN = -1;
 

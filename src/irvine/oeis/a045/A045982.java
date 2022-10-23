@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045982 Describe all the previous terms!.
  * @author Sean A. Irvine
  */
-public class A045982 implements Sequence {
+public class A045982 extends Sequence1 {
 
   private final StringBuilder mA = new StringBuilder();
 

@@ -3,6 +3,7 @@ package irvine.oeis.a340;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007947;
 import irvine.oeis.a014.A014963;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a014.A014963;
  * A340679 If n is a power of prime then a(n) = 1, otherwise a(n) = product of the distinct prime factors of n.
  * @author Georg Fischer
  */
-public class A340679 implements Sequence {
+public class A340679 extends Sequence1 {
 
   final Sequence mA007947 = new A007947();
   final Sequence mA014963 = new A014963();

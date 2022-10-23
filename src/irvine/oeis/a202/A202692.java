@@ -2,13 +2,13 @@ package irvine.oeis.a202;
 // manually 2021-10-20
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A202692 The first of three triangles counting 3-colored alternating permutations by their last value.
  * @author Georg Fischer
  */
-public class A202692 implements Sequence {
+public class A202692 extends Sequence1 {
 
   protected static final int MAX_GRIX = 3;
   protected int mGrix;

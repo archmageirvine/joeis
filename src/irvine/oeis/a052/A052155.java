@@ -3,13 +3,13 @@ package irvine.oeis.a052;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052155 Pseudoprimes to both base 2 and base 3, i.e., intersection of A001567 and A005935.
  * @author Sean A. Irvine
  */
-public class A052155 implements Sequence {
+public class A052155 extends Sequence1 {
 
   private long mN = 1103;
   private final Fast mPrime = new Fast();

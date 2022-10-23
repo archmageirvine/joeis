@@ -2,13 +2,13 @@ package irvine.oeis.a122;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A122780 Nonprimes k such that 3^k == 3 (mod k).
  * @author Georg Fischer
  */
-public class A122780 implements Sequence {
+public class A122780 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

@@ -3,6 +3,7 @@ package irvine.oeis.a131;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006093;
 import irvine.oeis.a050.A050997;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a050.A050997;
  * A131992 a(n) = 1 + prime(n) + prime(n)^2 + prime(n)^3 + prime(n)^4.
  * @author Georg Fischer
  */
-public class A131992 implements Sequence {
+public class A131992 extends Sequence1 {
 
   final Sequence mA006093 = new A006093();
   final Sequence mA050997 = new A050997();

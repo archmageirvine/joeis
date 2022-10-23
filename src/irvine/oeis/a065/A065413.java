@@ -1,13 +1,13 @@
 package irvine.oeis.a065;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A065413 Number of positive solutions to "numbers that are n times their number of binary 1's".
  * @author Sean A. Irvine
  */
-public class A065413 implements Sequence {
+public class A065413 extends Sequence1 {
 
   // After R. J. Mathar
 

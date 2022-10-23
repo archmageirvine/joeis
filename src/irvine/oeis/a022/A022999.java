@@ -1,13 +1,13 @@
 package irvine.oeis.a022;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A022999 Areas for which ApSimon's diagonal point triangle problem has no solution.
  * @author Sean A. Irvine
  */
-public class A022999 implements Sequence {
+public class A022999 extends Sequence1 {
 
   private long mDelta = 0;
 

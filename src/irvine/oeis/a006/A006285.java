@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006285 Odd numbers not of form p + 2^k (de Polignac numbers).
  * @author Sean A. Irvine
  */
-public class A006285 implements Sequence {
+public class A006285 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

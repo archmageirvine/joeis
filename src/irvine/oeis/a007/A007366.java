@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007366 Numbers k such that phi(x) = k has exactly 2 solutions.
  * @author Sean A. Irvine
  */
-public class A007366 implements Sequence {
+public class A007366 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

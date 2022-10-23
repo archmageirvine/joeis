@@ -3,13 +3,13 @@ package irvine.oeis.a051;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051281 Sum of divisors of n, sigma(n) (A000203), is a power of number of divisors of n, d(n) (A000005).
  * @author Sean A. Irvine
  */
-public class A051281 implements Sequence {
+public class A051281 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051254 Mills primes.
  * @author Sean A. Irvine
  */
-public class A051254 implements Sequence {
+public class A051254 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mA = null;

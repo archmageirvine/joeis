@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046108 Decimal period of 1/b(n), where b(n) is A046107.
  * @author Sean A. Irvine
  */
-public class A046108 implements Sequence {
+public class A046108 extends Sequence1 {
 
   private final TreeSet<Z> mSeen = new TreeSet<>();
   private final TreeSet<Z> mA = new TreeSet<>();

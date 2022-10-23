@@ -3,6 +3,7 @@ package irvine.oeis.a261;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a001.A001248;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001248;
  * A261971 Number of unit cubes that have a side on the surface of a p X p X p cube composed of p^3 unit cubes, where p is the n-th prime.
  * @author Georg Fischer
  */
-public class A261971 implements Sequence {
+public class A261971 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA001248 = new A001248();

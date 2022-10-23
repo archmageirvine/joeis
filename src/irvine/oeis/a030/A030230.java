@@ -2,13 +2,13 @@ package irvine.oeis.a030;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030230 Numbers that have an odd number of distinct prime divisors.
  * @author Sean A. Irvine
  */
-public class A030230 implements Sequence {
+public class A030230 extends Sequence1 {
 
   private long mN = 0;
   

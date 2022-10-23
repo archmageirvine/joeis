@@ -3,14 +3,14 @@ package irvine.oeis.a113;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A113599 Least n-digit multiple of n whose digit permutations yield at least n distinct multiples of n, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
-public class A113599 implements Sequence {
+public class A113599 extends Sequence1 {
 
   private int mN = 0;
   private Z mBase = Z.ONE;

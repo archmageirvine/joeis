@@ -2,13 +2,13 @@ package irvine.oeis.a016;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A016067 Consider all ways of writing a number as p+2m^2 where p is 1 or a prime and m &gt;= 0; sequence gives numbers that are expressible in at least 2 more ways than any smaller number.
  * @author Sean A. Irvine
  */
-public class A016067 implements Sequence {
+public class A016067 extends Sequence1 {
 
   // Assumes terms are odd
 

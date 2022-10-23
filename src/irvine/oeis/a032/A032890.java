@@ -4,13 +4,13 @@ import java.util.Comparator;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032890 Numbers whose base-2 representation Sum_{i=0..m} d(i)*2^i has d(0) &gt;= d(1) &lt;= d(2) &gt;= ...
  * @author Sean A. Irvine
  */
-public class A032890 implements Sequence {
+public class A032890 extends Sequence1 {
 
   private final TreeSet<String> mA = new TreeSet<>(Comparator.comparingInt(String::length).thenComparing(a -> new Z(a, base())));
 

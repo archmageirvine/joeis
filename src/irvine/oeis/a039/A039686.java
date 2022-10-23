@@ -1,13 +1,13 @@
 package irvine.oeis.a039;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039686 Squares which are the concatenation of two nonzero squares.
  * @author Sean A. Irvine
  */
-public class A039686 implements Sequence {
+public class A039686 extends Sequence1 {
 
   private long mN = 6;
 

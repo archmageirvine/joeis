@@ -3,12 +3,13 @@ package irvine.oeis.a237;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a052.A052216;
 /**
  * A237424 Numbers of the form (10^a + 10^b + 1)/3.
  * @author Georg Fischer
  */
-public class A237424 implements Sequence {
+public class A237424 extends Sequence1 {
 
   private final Sequence mA052216 = new A052216();
   @Override

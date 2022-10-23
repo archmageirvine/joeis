@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002093 Highly abundant numbers: numbers k such that sigma(k) &gt; sigma(m) for all m &lt; k.
  * @author Sean A. Irvine
  */
-public class A002093 implements Sequence {
+public class A002093 extends Sequence1 {
 
   private long mN = 0;
   private Z mPrev = Z.ZERO;

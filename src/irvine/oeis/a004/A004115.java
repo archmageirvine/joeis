@@ -5,13 +5,13 @@ import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004115 Number of unlabeled rooted nonseparable graphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A004115 implements Sequence {
+public class A004115 extends Sequence1 {
 
   // After Andrew Howroyd
 

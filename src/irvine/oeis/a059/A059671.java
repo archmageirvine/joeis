@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059671 Numbers n such that n*10^n - 1 is prime.
  * @author Sean A. Irvine
  */
-public class A059671 implements Sequence {
+public class A059671 extends Sequence1 {
 
   private Z mA = Z.TEN;
   private long mN = 1;

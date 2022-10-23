@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007148 Number of self-complementary 2-colored bracelets (turnover necklaces) with 2n beads.
  * @author Sean A. Irvine
  */
-public class A007148 implements Sequence {
+public class A007148 extends Sequence1 {
 
   private int mN = 0;
 

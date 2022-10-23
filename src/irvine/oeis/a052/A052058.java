@@ -1,14 +1,14 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A052058 Numbers k such that the largest palindromic substring (without leading zeros) of 2^k is a repdigit of minimum length 2.
  * @author Sean A. Irvine
  */
-public class A052058 implements Sequence {
+public class A052058 extends Sequence1 {
 
   private int mN = 0;
   private Z mA = Z.ONE;

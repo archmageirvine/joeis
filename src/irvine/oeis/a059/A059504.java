@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059504 Numbers k with the property that reading k gives correct, although not necessarily complete, information about itself.
  * @author Sean A. Irvine
  */
-public class A059504 implements Sequence {
+public class A059504 extends Sequence1 {
 
   private long mN = 9;
   private long mLim = 100;

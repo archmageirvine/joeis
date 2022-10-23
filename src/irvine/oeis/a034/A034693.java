@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034693 Smallest k such that k*n+1 is prime.
  * @author Sean A. Irvine
  */
-public class A034693 implements Sequence {
+public class A034693 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a045;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045888 Number of distinct odd numbers visible as proper subsequences of n.
  * @author Sean A. Irvine
  */
-public class A045888 implements Sequence {
+public class A045888 extends Sequence1 {
 
   private long mN = 0;
   private final TreeSet<Long> mA = new TreeSet<>();

@@ -1,13 +1,13 @@
 package irvine.oeis.a065;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A065825 Smallest k such that n numbers may be picked in {1,...,k} with no three terms in arithmetic progression.
  * @author Sean A. Irvine
  */
-public class A065825 implements Sequence {
+public class A065825 extends Sequence1 {
 
   private int mN = 0;
   private int mMin = 1;

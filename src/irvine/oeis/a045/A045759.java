@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045759 Maris-McGwire numbers: numbers k such that f(k) = f(k+1), where f(k) = sum of digits of k + sum of digits of prime factors of k (including multiplicities).
  * @author Sean A. Irvine
  */
-public class A045759 implements Sequence {
+public class A045759 extends Sequence1 {
 
   private long mN = 6;
 

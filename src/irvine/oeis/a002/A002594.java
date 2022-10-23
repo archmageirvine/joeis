@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002594 a(n) = n^2*(16*n^4-20*n^2+7)/3.
  * @author Sean A. Irvine
  */
-public class A002594 implements Sequence {
+public class A002594 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

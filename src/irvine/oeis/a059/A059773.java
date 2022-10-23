@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.math.api.Group;
 import irvine.math.group.GroupFactory;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059773 Maximum size of Aut(G) where G is a finite group of order n.
  * @author Sean A. Irvine
  */
-public class A059773 implements Sequence {
+public class A059773 extends Sequence1 {
 
   private int mN = 0;
 

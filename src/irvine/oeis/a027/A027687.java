@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027687 4-perfect (quadruply-perfect or sous-triple) numbers: sum of divisors of n is 4n.
  * @author Sean A. Irvine
  */
-public class A027687 implements Sequence {
+public class A027687 extends Sequence1 {
 
   private Z mN = Z.valueOf(30239);
 

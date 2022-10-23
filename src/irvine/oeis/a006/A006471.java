@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006471 Number of tree-rooted planar maps with 4 faces and n vertices and no isthmuses.
  * @author Sean A. Irvine
  */
-public class A006471 implements Sequence {
+public class A006471 extends Sequence1 {
 
   // Using conjecture of Colin Barker
 

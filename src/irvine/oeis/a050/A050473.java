@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050473 Smallest k such that phi(k+n)=2*phi(k).
  * @author Sean A. Irvine
  */
-public class A050473 implements Sequence {
+public class A050473 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

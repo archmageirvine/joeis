@@ -2,13 +2,13 @@ package irvine.oeis.a030;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030988 5-automorphic numbers: final digits of 5n^2 agree with n.
  * @author Sean A. Irvine
  */
-public class A030988 implements Sequence {
+public class A030988 extends Sequence1 {
 
   private int mN = 0;
   private Z mF = Z.ONE;

@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027607 Number of non-well-founded sets or hypersets (sets that can contain themselves) of level n (representable by graphs with n nodes).
@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
  * @author John Markus 
  * @author Sean A. Irvine (Java port)
  */
-public class A027607 implements Sequence {
+public class A027607 extends Sequence1 {
 
   // Ported from original C implementation at https://github.com/ctubbsii/hypersets
 

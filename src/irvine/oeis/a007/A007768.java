@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007768 From Engel product expansion of 4/7.
  * @author Sean A. Irvine
  */
-public class A007768 implements Sequence {
+public class A007768 extends Sequence1 {
 
   // Engel product expansion
 

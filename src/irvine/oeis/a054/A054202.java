@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054202 a(n) = (n-1)! * Sum_{k=1..n} floor(k^k/k!).
  * @author Sean A. Irvine
  */
-public class A054202 implements Sequence {
+public class A054202 extends Sequence1 {
 
   private int mN = 0;
   private Z mF = Z.ONE;

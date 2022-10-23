@@ -1,13 +1,13 @@
 package irvine.oeis.a309;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A309523 Start with a(1) = 1 and apply certain patterns of operations on a(n-1) to obtain a(n) as described in comments.
  * @author Georg Fischer
  */
-public class A309523 implements Sequence {
+public class A309523 extends Sequence1 {
 
   protected long mN; // current index
   protected int mState; // automaton state for flattening of while loops

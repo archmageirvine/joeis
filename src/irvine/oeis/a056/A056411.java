@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import irvine.math.LongUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056411 Number of step cyclic shifted sequences using a maximum of three different symbols.
  * @author Sean A. Irvine
  */
-public class A056411 implements Sequence {
+public class A056411 extends Sequence1 {
 
   // After Joerg Arndt
 

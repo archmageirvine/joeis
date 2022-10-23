@@ -4,13 +4,13 @@ import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003086 Number of self-complementary digraphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A003086 implements Sequence {
+public class A003086 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

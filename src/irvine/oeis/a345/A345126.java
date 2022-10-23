@@ -1,14 +1,14 @@
 package irvine.oeis.a345;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
  * A345126 a(1) = 1; thereafter, a(n) = A073327(a(n-1)), using the British English version of A073327 when there is a choice.
  * @author Sean A. Irvine
  */
-public class A345126 implements Sequence {
+public class A345126 extends Sequence1 {
 
   private Z mA = null;
 

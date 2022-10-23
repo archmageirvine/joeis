@@ -3,13 +3,14 @@ package irvine.oeis.a334;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 
 /**
  * A334954 a(n) is 1 plus the number of divisors of n.
  * @author Georg Fischer
  */
-public class A334954 implements Sequence {
+public class A334954 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   @Override

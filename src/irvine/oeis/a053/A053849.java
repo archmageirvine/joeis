@@ -8,12 +8,13 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053849 Number of n X n matrices over GF(3) of order dividing 5 (i.e., number of solutions of X^5=I in GL(n,3)).
  * @author Sean A. Irvine
  */
-public class A053849 implements Sequence {
+public class A053849 extends Sequence1 {
 
   // After Andrew Howroyd
 

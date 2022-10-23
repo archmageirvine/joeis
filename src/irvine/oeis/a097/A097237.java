@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A097237 Number of hierarchical orderings ("societies") of n labeled elements ("individuals") with at least two occupied levels.
  * E.g.f.: exp(-(exp(x)^2-2*exp(x)+1)/(-2+exp(x)))
  * @author Georg Fischer
  */
-public class A097237 implements Sequence {
+public class A097237 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052157 Least positive integer r such that there exists an integer s, 0 &lt;= s &lt; r gcd(r-i, s-j) &gt; 1 for all integers i, j with 0 &lt;= i, j &lt; n.
  * @author Sean A. Irvine
  */
-public class A052157 implements Sequence {
+public class A052157 extends Sequence1 {
 
   // Note Charles R Greathouse IV has better method
 

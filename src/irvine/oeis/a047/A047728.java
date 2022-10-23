@@ -3,13 +3,13 @@ package irvine.oeis.a047;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A047728 Intersection of A046985 and A007691: multiply perfect, refactorable numbers with integer average divisor dividing the number.
  * @author Sean A. Irvine
  */
-public class A047728 implements Sequence {
+public class A047728 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

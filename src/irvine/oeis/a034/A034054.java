@@ -3,14 +3,14 @@ package irvine.oeis.a034;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A034054 Numbers with multiplicative digital root value 7.
  * @author Sean A. Irvine
  */
-public class A034054 implements Sequence {
+public class A034054 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private int mN = -1;

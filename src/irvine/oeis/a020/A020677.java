@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020677 Numbers of form 3*x^2 + 4*y^2.
  * @author Sean A. Irvine
  */
-public class A020677 implements Sequence {
+public class A020677 extends Sequence1 {
 
   private long mN = -1;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a158;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003592;
 
 /**
  * A158911 Numbers of the form 2^i*5^j - 1.
  * @author Georg Fischer
  */
-public class A158911 implements Sequence {
+public class A158911 extends Sequence1 {
 
   final Sequence mA003592 = new A003592();
   @Override

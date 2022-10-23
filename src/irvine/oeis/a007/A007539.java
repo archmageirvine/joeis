@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007539 a(n) = first n-fold perfect (or n-multiperfect) number.
  * @author Sean A. Irvine
  */
-public class A007539 implements Sequence {
+public class A007539 extends Sequence1 {
 
   // Only good for 4 terms or 5 if you wait for ages
 

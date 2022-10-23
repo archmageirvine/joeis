@@ -3,13 +3,14 @@ package irvine.oeis.a208;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000070;
 
 /**
  * A208738 Number of multisets occurring as the peak heights multiset of a Dyck n-path.
  * @author Georg Fischer
  */
-public class A208738 implements Sequence {
+public class A208738 extends Sequence1 {
 
   final Sequence mA000070 = new A000070();
   protected long mN;

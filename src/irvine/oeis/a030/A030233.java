@@ -5,13 +5,13 @@ import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030233 Number of n-celled one-sided polyplets.
  * @author Sean A. Irvine
  */
-public class A030233 implements Sequence {
+public class A030233 extends Sequence1 {
 
   private final ParallelHunter mHunter = new ParallelHunter(7,
     () -> new Hunter(Lattices.Z2Q, true),

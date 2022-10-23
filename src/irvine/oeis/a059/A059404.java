@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059404 Numbers with different exponents in their prime factorizations.
  * @author Sean A. Irvine
  */
-public class A059404 implements Sequence {
+public class A059404 extends Sequence1 {
 
   private long mN = 11;
 

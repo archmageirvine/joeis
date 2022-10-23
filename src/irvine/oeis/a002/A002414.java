@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002414 Octagonal pyramidal numbers: a(n) = n*(n+1)*(2*n-1)/2.
  * @author Sean A. Irvine
  */
-public class A002414 implements Sequence {
+public class A002414 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

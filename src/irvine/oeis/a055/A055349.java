@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055349 Triangle of labeled mobiles (circular rooted trees) with n nodes and k leaves.
  * @author Sean A. Irvine
  */
-public class A055349 implements Sequence {
+public class A055349 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING_Y = new PolynomialRingField<>("y", Rationals.SINGLETON);
   private static final PolynomialRingField<Polynomial<Q>> RING = new PolynomialRingField<>(RING_Y);

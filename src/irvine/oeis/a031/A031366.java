@@ -4,14 +4,14 @@ import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a035.A035187;
 
 /**
  * A031366 Number of symmetrically inequivalent coincidence rotations of icosian ring of index n.
  * @author Sean A. Irvine
  */
-public class A031366 implements Sequence {
+public class A031366 extends Sequence1 {
 
   // After R. J. Mathar
 

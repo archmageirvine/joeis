@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023709 Numbers with no 1's in base 4 expansion.
  * @author Sean A. Irvine
  */
-public class A023709 implements Sequence {
+public class A023709 extends Sequence1 {
 
   private long mN = -1;
 

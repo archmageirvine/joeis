@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002816 Number of polygons that can be formed from n points on a circle, no two adjacent.
  * @author Sean A. Irvine
  */
-public class A002816 implements Sequence {
+public class A002816 extends Sequence1 {
 
   private final Z[] mA = {Z.valueOf(23), Z.ONE, Z.ZERO, Z.ZERO, Z.ZERO, Z.ONE, Z.THREE};
   private long mN = 0;

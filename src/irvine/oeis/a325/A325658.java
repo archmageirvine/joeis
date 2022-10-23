@@ -2,13 +2,13 @@ package irvine.oeis.a325;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A325658 Brazilian composites of the form 1 + b + b^2 + b^3 + ... + b^k, b &gt; 1, k &gt; 1.
  * @author Sean A. Irvine
  */
-public class A325658 implements Sequence {
+public class A325658 extends Sequence1 {
 
   private long mN = 14;
   private final Fast mPrime = new Fast();

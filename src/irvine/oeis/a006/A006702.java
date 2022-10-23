@@ -5,13 +5,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006702 Solution to a Pellian equation: least x such that x^2 - n*y^2 = +- 1.
  * @author Sean A. Irvine
  */
-public class A006702 implements Sequence {
+public class A006702 extends Sequence1 {
 
   protected long mN = 0;
 

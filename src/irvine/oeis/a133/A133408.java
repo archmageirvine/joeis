@@ -1,13 +1,13 @@
 package irvine.oeis.a133;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A133408 Numbers n such that n is a substring of both its square and its cube in base 2 (written in base 10).
  * @author Sean A. Irvine
  */
-public class A133408 implements Sequence {
+public class A133408 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

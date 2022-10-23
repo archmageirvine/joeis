@@ -2,14 +2,14 @@ package irvine.oeis.a137;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A137833 Emirps with a prime number of only prime digits.
  * @author Sean A. Irvine
  */
-public class A137833 implements Sequence {
+public class A137833 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mN = Z.valueOf(36);

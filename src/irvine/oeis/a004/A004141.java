@@ -2,13 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004141 Norm of a matrix.
  * @author Sean A. Irvine
  */
-public class A004141 implements Sequence {
+public class A004141 extends Sequence1 {
 
   private int mN = -1;
 

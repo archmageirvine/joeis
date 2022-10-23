@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028427 Clog sequence in base 6. Right to left concatenation of n,int(log_6(n)),int(log_6(int(log_6(n)))),... in base6.
  * @author Sean A. Irvine
  */
-public class A028427 implements Sequence {
+public class A028427 extends Sequence1 {
 
   private static final CR BASE_LOG = CR.SIX.log();
   private long mN = 0;

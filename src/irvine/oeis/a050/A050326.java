@@ -3,6 +3,7 @@ package irvine.oeis.a050;
 import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a005.A005117;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a005.A005117;
  * A050326 Number of factorizations of n into distinct squarefree numbers &gt; 1.
  * @author Sean A. Irvine
  */
-public class A050326 implements Sequence {
+public class A050326 extends Sequence1 {
 
   private long mN = 0;
 

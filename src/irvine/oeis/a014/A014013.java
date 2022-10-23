@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014013 Alternating Egyptian fraction expansion of Pi-3.
  * @author Sean A. Irvine
  */
-public class A014013 implements Sequence {
+public class A014013 extends Sequence1 {
 
   // Alternating Egyptian expansion
 

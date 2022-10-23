@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007356 Apocalyptic powers: 2^n contains 666.
  * @author Sean A. Irvine
  */
-public class A007356 implements Sequence {
+public class A007356 extends Sequence1 {
 
   private int mN = 156;
 

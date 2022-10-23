@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053047 EulerPhi is iterated with initial value n!; a(n) = first (maximal) power of 2 arising during iteration.
  * @author Sean A. Irvine
  */
-public class A053047 implements Sequence {
+public class A053047 extends Sequence1 {
 
   private final FactorSequence mFactorSequence = new FactorSequence();
   private final PrimeDivision mFactor = new PrimeDivision();

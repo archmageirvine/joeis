@@ -3,6 +3,7 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001065;
 import irvine.oeis.a020.A020639;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a020.A020639;
  * A326146 a(n) = sigma(n) - A020639(n) - n, where A020639 gives the smallest prime factor of n, and sigma is the sum of divisors of n.
  * @author Georg Fischer
  */
-public class A326146 implements Sequence {
+public class A326146 extends Sequence1 {
 
   final Sequence mA001065 = new A001065();
   final Sequence mA020639 = new A020639();

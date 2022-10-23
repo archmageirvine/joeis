@@ -3,6 +3,7 @@ package irvine.oeis.a259;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000720;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000720;
  * A259923 a(n) = prime(n)^pi(n).
  * @author Georg Fischer
  */
-public class A259923 implements Sequence {
+public class A259923 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA000720 = new A000720();

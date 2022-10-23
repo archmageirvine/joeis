@@ -4,6 +4,7 @@ import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051626;
 import irvine.oeis.a051.A051628;
 
@@ -11,7 +12,7 @@ import irvine.oeis.a051.A051628;
  * A056055 Integers &gt; 1 where the decimal expansion of 1/n contains n as a string (if 1/n is finite, trailing zeros do not count).
  * @author Sean A. Irvine
  */
-public class A056055 implements Sequence {
+public class A056055 extends Sequence1 {
 
   private final Sequence mPreperiod = new A051628();
   private final Sequence mPeriod = new A051626();

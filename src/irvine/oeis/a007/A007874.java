@@ -8,13 +8,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007874 Distinct perimeter lengths of polygons with regularly spaced vertices.
  * @author Sean A. Irvine
  */
-public class A007874 implements Sequence {
+public class A007874 extends Sequence1 {
 
   private static final int PRECISION = 100;
   private final HashSet<List<Integer>> mA = new HashSet<>();

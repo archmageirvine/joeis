@@ -4,13 +4,13 @@ import java.util.function.Function;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A258774 a(n) = 1 + sigma(n) + sigma(n)^2.
  * @author Georg Fischer
  */
-public class A258774 implements Sequence {
+public class A258774 extends Sequence1 {
 
   private int mN;
   private Function<Z, Z> mLambda;

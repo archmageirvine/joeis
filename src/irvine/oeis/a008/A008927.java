@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008927 Number of increasing sequences of star chain type with maximal element n.
  * @author Sean A. Irvine
  */
-public class A008927 implements Sequence {
+public class A008927 extends Sequence1 {
 
   // Storing all unexpanded paths would be expensive in space.
   // Recomputing for each value of n is expensive in time.

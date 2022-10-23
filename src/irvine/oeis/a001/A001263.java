@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001263 Triangle of Narayana numbers T(n,k) = C(n-1,k-1)*C(n,k-1)/k with 1 &lt;= k &lt;= n, read by rows. Also called the Catalan triangle.
  * @author Sean A. Irvine
  */
-public class A001263 implements Sequence {
+public class A001263 extends Sequence1 {
 
   private long mN = 0;
   private long mK = 0;

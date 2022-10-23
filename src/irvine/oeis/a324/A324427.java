@@ -1,13 +1,13 @@
 package irvine.oeis.a324;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A324427 a(n) = Product_{k=1..n} (Product_{j=1..k} (Product_{i=1..j} (i+j+k))).
  * @author Georg Fischer
  */
-public class A324427 implements Sequence {
+public class A324427 extends Sequence1 {
 
   private int mN = 0;
 

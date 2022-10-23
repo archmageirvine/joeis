@@ -4,13 +4,13 @@ import java.util.List;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003643 Number of genera of Q(sqrt(-n)), n squarefree.
  * @author Sean A. Irvine
  */
-public class A003643 implements Sequence {
+public class A003643 extends Sequence1 {
 
   private long mN = 0;
 

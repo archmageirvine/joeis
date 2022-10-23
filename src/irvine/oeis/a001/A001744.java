@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001744 Numbers n such that every digit contains a loop (version 2).
  * @author Sean A. Irvine
  */
-public class A001744 implements Sequence {
+public class A001744 extends Sequence1 {
 
   private long mN = -1;
 

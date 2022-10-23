@@ -3,13 +3,13 @@ package irvine.oeis.a067;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A067540 Number of partitions of n in which the sum of reciprocal of parts divides number of parts.
  * @author Sean A. Irvine
  */
-public class A067540 implements Sequence {
+public class A067540 extends Sequence1 {
 
   private int mN = 0;
 

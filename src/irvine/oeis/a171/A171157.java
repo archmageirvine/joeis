@@ -3,13 +3,14 @@ package irvine.oeis.a171;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001221;
 
 /**
  * A171157 Number of distinct primes &gt; 3 that divide n.
  * @author Georg Fischer
  */
-public class A171157 implements Sequence {
+public class A171157 extends Sequence1 {
 
   final Sequence mA001221 = new A001221();
   final Sequence mA171182 = new A171182();

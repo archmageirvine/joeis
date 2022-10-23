@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053589 Greatest primorial number (A002110) which divides n.
  * @author Sean A. Irvine
  */
-public class A053589 implements Sequence {
+public class A053589 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

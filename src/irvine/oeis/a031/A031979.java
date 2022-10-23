@@ -2,13 +2,13 @@ package irvine.oeis.a031;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A031979 Smallest digit of n concatenated with largest digit of n is prime.
  * @author Sean A. Irvine
  */
-public class A031979 implements Sequence {
+public class A031979 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 10;

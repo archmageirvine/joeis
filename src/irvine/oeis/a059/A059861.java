@@ -3,14 +3,14 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A059861 a(n) = Product_{i=2..n} (prime(i) - 2).
  * @author Georg Fischer
  */
-public class A059861 implements Sequence {
+public class A059861 extends Sequence1 {
 
   private int mN;
   private MemorySequence mSeq;

@@ -1,14 +1,14 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A002376 Least number of positive cubes needed to represent n.
  * @author Sean A. Irvine
  */
-public class A002376 implements Sequence {
+public class A002376 extends Sequence1 {
 
   private final LongDynamicByteArray mMinRep = new LongDynamicByteArray();
   private long mN = 0;

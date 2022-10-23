@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006883 Long period primes: the decimal expansion of 1/p has period p-1.
  * @author Sean A. Irvine
  */
-public class A006883 implements Sequence {
+public class A006883 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

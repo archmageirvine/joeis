@@ -3,13 +3,14 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023238;
 
 /**
  * A055782 Primes q of the form q = 10p + 3, where p is also prime.
  * @author Georg Fischer
  */
-public class A055782 implements Sequence {
+public class A055782 extends Sequence1 {
 
   final Sequence mA023238 = new A023238();
 

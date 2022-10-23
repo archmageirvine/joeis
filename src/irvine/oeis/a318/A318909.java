@@ -2,13 +2,13 @@ package irvine.oeis.a318;
 // manually prodsim/prodsi at 2021-11-28 11:09
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A318909 a(n) = Product_{1&lt;=x&lt;=n, n|(x^2-1)} x.
  * @author Georg Fischer
  */
-public class A318909 implements Sequence {
+public class A318909 extends Sequence1 {
 
   private int mN = 0;
 

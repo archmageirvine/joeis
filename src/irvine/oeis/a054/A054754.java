@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054754 Totient(n) and cototient(n) are squares.
  * @author Georg Fischer
  */
-public class A054754 implements Sequence {
+public class A054754 extends Sequence1 {
 
   private long mN = 0;
 

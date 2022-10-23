@@ -3,14 +3,14 @@ package irvine.oeis.a156;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A156819 Last digit d of a(n) is present in a(n+1+d); a(1)=0; a(n+1) is always the smallest available integer not already in the sequence and not leading to a contradiction.
  * @author Sean A. Irvine
  */
-public class A156819 implements Sequence {
+public class A156819 extends Sequence1 {
 
   private int mN = -1;
   private final DynamicIntArray mRequire = new DynamicIntArray();

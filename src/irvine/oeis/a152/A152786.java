@@ -3,12 +3,13 @@ package irvine.oeis.a152;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a037.A037073;
 /**
  * A152786 Integers k such that (k^2)/2 is the arithmetic mean of a pair of twin primes.
  * @author Georg Fischer
  */
-public class A152786 implements Sequence {
+public class A152786 extends Sequence1 {
 
   private final Sequence mA037073 = new A037073();
   @Override

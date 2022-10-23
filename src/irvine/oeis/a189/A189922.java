@@ -3,13 +3,13 @@ package irvine.oeis.a189;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A189922 Jordan function J_{-4} multiplied by n^4.
  * @author Georg Fischer
  */
-public class A189922 implements Sequence {
+public class A189922 extends Sequence1 {
 
   protected long mN = 0;
   protected int mExp; // exponent k in "J_k"

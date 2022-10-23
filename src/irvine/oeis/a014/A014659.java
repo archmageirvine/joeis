@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014659 Odd numbers that do not divide 2^k + 1 for any k &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A014659 implements Sequence {
+public class A014659 extends Sequence1 {
 
   private long mN = 5;
 

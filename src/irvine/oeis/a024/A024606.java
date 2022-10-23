@@ -3,14 +3,14 @@ package irvine.oeis.a024;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A024606 Numbers of form x^2 + xy + y^2 with distinct x and y &gt; 0.
  * @author Sean A. Irvine
  */
-public class A024606 implements Sequence {
+public class A024606 extends Sequence1 {
 
   private static Z eval(final Pair<Long, Long> a) {
     final Z l = Z.valueOf(a.left());

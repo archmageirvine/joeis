@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007806 Integer part of Sum_{i=1..n} binomial(n,i) * (n/i)^i.
  * @author Sean A. Irvine
  */
-public class A007806 implements Sequence {
+public class A007806 extends Sequence1 {
 
   private long mN = 0;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a131;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A131835 Numbers starting with 1.
  * @author Georg Fischer
  */
-public class A131835 implements Sequence {
+public class A131835 extends Sequence1 {
 
   protected Z mStart;
   protected Z mCurr;

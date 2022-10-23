@@ -8,13 +8,13 @@ import java.util.Set;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002181 Least number k such that phi(k) = n, where n runs through the values (A002202) taken by phi.
  * @author Sean A. Irvine
  */
-public class A002181 implements Sequence {
+public class A002181 extends Sequence1 {
 
   private static final List<Z> INITIAL = Arrays.asList(Z.ONE, Z.TWO);
   private Z mN = null;

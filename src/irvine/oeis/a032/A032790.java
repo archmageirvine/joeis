@@ -1,14 +1,14 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A032790 Palindromic quotients (k*(k+1)*(k+2)) / (k+(k+1)+(k+2)).
  * @author Sean A. Irvine
  */
-public class A032790 implements Sequence {
+public class A032790 extends Sequence1 {
 
   private long mN = -1;
 

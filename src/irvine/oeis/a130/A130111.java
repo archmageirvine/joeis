@@ -2,14 +2,14 @@ package irvine.oeis.a130;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A130111 Rearrangement of positive integers such that each five terms sum up to a perfect square.
  * @author Sean A. Irvine
  */
-public class A130111 implements Sequence {
+public class A130111 extends Sequence1 {
 
   private final LongDynamicBooleanArray mUsed = new LongDynamicBooleanArray();
   private long mLeastUnused = 1;

@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036963 Primes with digits (0,...,7) taken as base 8 and converted to base 10.
  * @author Sean A. Irvine
  */
-public class A036963 implements Sequence {
+public class A036963 extends Sequence1 {
 
   private long mN = 0;
 

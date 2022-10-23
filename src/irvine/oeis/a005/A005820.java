@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005820 3-perfect (triply perfect, tri-perfect, triperfect or sous-double) numbers: numbers such that the sum of the divisors of n is 3n.
  * @author Sean A. Irvine
  */
-public class A005820 implements Sequence {
+public class A005820 extends Sequence1 {
 
   // This sequence is probably finite and complete, and this implementation does not
   // search beyond the known values.

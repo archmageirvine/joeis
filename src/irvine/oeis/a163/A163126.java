@@ -2,14 +2,14 @@ package irvine.oeis.a163;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A163126 a(1)=1. a(n) = the number of integers k, 1 &lt;= k &lt;= n-1, where a(k) is coprime to n-k.
  * @author Sean A. Irvine
  */
-public class A163126 implements Sequence {
+public class A163126 extends Sequence1 {
 
   private final LongDynamicLongArray mSeq = new LongDynamicLongArray();
 

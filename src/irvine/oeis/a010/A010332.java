@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A010332 Consider integers z such that C(z,4) = C(x,4) + C(y,4), x &gt;= y &gt;= 4, is solvable. Sequence gives values of x.
  * @author Sean A. Irvine
  */
-public class A010332 implements Sequence {
+public class A010332 extends Sequence1 {
 
   private long mN = 4;
   private final TreeMap<Z, Long> mExpressible = new TreeMap<>();

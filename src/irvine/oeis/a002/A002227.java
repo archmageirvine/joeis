@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002227 Smallest prime p such that first n primes (p_1=2, ..., p_n) are 7th power residues mod p.
  * @author Sean A. Irvine
  */
-public class A002227 implements Sequence {
+public class A002227 extends Sequence1 {
 
   // There must be a better way...
 

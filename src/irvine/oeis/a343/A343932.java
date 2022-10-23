@@ -3,13 +3,14 @@ package irvine.oeis.a343;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001923;
 
 /**
  * A343932 a(n) = (Sum_{k=1..n} k^k) mod n.
  * @author Georg Fischer
  */
-public class A343932 implements Sequence {
+public class A343932 extends Sequence1 {
 
   final Sequence mA001923 = new A001923();
   protected long mN;

@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038688 Squares which are the sum of the divisors of some n.
  * @author Sean A. Irvine
  */
-public class A038688 implements Sequence {
+public class A038688 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final TreeSet<Z> mSeen = new TreeSet<>();

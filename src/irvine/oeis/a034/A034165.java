@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034165 Number of 'zig-zag' self-avoiding walks on an n X n lattice from a corner to opposite one.
  * @author Sean A. Irvine
  */
-public class A034165 implements Sequence {
+public class A034165 extends Sequence1 {
 
   // Not competitive for large terms ...
 

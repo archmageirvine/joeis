@@ -5,13 +5,13 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001857 a(1)=2, a(2)=3; for n &gt;= 3, a(n) is smallest number that is uniquely of the form a(j) + a(k) with 1 &lt;= j &lt; k &lt; n.
  * @author Sean A. Irvine
  */
-public class A001857 implements Sequence {
+public class A001857 extends Sequence1 {
 
   private final ArrayList<Z> mSeq = new ArrayList<>();
   private final TreeMap<Z, Boolean> mSums = new TreeMap<>();

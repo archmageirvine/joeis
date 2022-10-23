@@ -3,6 +3,7 @@ package irvine.oeis.a145;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a002.A002324;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002324;
  * A145394 Number of inequivalent sublattices of index n in hexagonal lattice, where two sublattices are considered equivalent if one can be rotated by a multiple of Pi/3 to give the other.
  * @author Georg Fischer
  */
-public class A145394 implements Sequence {
+public class A145394 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA002324 = new A002324();

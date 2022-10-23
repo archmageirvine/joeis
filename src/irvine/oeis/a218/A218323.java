@@ -3,13 +3,14 @@ package irvine.oeis.a218;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001055;
 
 /**
  * A218323 a(n) = n^p*(n) where p*(n) is the multiplicative partition function.
  * @author Georg Fischer
  */
-public class A218323 implements Sequence {
+public class A218323 extends Sequence1 {
 
   final Sequence mA001055 = new A001055();
   protected long mN;

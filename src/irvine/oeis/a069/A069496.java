@@ -3,12 +3,13 @@ package irvine.oeis.a069;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a037.A037072;
 /**
  * A069496 Smaller member of a twin prime pair with a square sum.
  * @author Georg Fischer
  */
-public class A069496 implements Sequence {
+public class A069496 extends Sequence1 {
 
   private final Sequence mA037072 = new A037072();
   @Override

@@ -3,13 +3,14 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000523;
 
 /**
  * A053645 Distance to largest power of 2 less than or equal to n; write n in binary, change the first digit to zero, and convert back to decimal.
  * @author Georg Fischer
  */
-public class A053645 implements Sequence {
+public class A053645 extends Sequence1 {
 
   final Sequence mA000523 = new A000523();
   protected long mN;

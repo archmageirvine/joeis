@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020960 a(n) = Sum_{k &gt;= 1} floor(n*phi^(2-k)).
  * @author Sean A. Irvine
  */
-public class A020960 implements Sequence {
+public class A020960 extends Sequence1 {
 
   private long mN = 0;
 

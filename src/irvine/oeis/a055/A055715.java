@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055715 Numbers k such that k | sigma_11(k).
  * @author Sean A. Irvine
  */
-public class A055715 implements Sequence {
+public class A055715 extends Sequence1 {
 
   private long mN = 0;
 

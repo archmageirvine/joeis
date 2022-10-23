@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046684 Numbers k such that k and sum of squares of divisors of k are relatively prime.
  * @author Sean A. Irvine
  */
-public class A046684 implements Sequence {
+public class A046684 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

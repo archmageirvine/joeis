@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014885 n is equal to the number of 1's in all numbers &lt;= n written in base 8.
  * @author Sean A. Irvine
  */
-public class A014885 implements Sequence {
+public class A014885 extends Sequence1 {
 
   private long mC = 0;
   private long mN = 0;

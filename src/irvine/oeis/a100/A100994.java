@@ -3,13 +3,14 @@ package irvine.oeis.a100;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a010.A010055;
 
 /**
  * A100994 If n is a prime power p^m, m &gt;= 1, then n, otherwise 1.
  * @author Georg Fischer
  */
-public class A100994 implements Sequence {
+public class A100994 extends Sequence1 {
 
   final Sequence mA010055 = new A010055();
   protected long mN;

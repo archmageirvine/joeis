@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059811 Let g_n be the ball packing n-width for the manifold torus X interval; sequence gives numerator of (g_n/Pi)^2.
  * @author Sean A. Irvine
  */
-public class A059811 implements Sequence {
+public class A059811 extends Sequence1 {
 
   private static final long[] SMALL = {1, 1, 1, 1, 4, 4, 9, 36};
   private int mN = 0;

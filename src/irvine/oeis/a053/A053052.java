@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053052 Append n to the previous term, reverse alternate terms.
  * @author Sean A. Irvine
  */
-public class A053052 implements Sequence {
+public class A053052 extends Sequence1 {
 
   private boolean mForward = false;
   private final StringBuilder mF = new StringBuilder();

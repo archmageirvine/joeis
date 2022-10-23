@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006364 Numbers n with an even number of 1's in binary, ignoring last bit.
  * @author Sean A. Irvine
  */
-public class A006364 implements Sequence {
+public class A006364 extends Sequence1 {
 
   private long mN = -1;
 

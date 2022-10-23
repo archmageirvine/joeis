@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059170 Strictly undulating primes (digits alternate and differ by 1).
  * @author Sean A. Irvine
  */
-public class A059170 implements Sequence {
+public class A059170 extends Sequence1 {
 
   private static final class State implements Comparable<State> {
     private final Z mValue;

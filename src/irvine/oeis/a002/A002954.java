@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 import irvine.util.array.LongDynamicLongArray;
 
@@ -12,7 +12,7 @@ import irvine.util.array.LongDynamicLongArray;
  * A002954 Smallest number such that n-th iterate of Chowla function is 0.
  * @author Sean A. Irvine
  */
-public class A002954 implements Sequence {
+public class A002954 extends Sequence1 {
 
   // We use 0 for not yet computed and -1 for a true 0 (i.e. a prime)
   private final LongDynamicLongArray mChowla = new LongDynamicLongArray();

@@ -3,13 +3,14 @@ package irvine.oeis.a090;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a022.A022006;
 
 /**
  * A090286 Median term of prime 5-tuples (p, p+2, p+6, p+8, p+12).
  * @author Georg Fischer
  */
-public class A090286 implements Sequence {
+public class A090286 extends Sequence1 {
 
   final Sequence mA022006 = new A022006();
   @Override

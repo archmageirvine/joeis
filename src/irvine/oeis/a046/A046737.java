@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046737 Reduced period of A000073 mod n.
  * @author Sean A. Irvine
  */
-public class A046737 implements Sequence {
+public class A046737 extends Sequence1 {
 
   private long mN = 0;
 

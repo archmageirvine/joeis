@@ -3,13 +3,13 @@ package irvine.oeis.a179;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A179310 The smallest number that has more copies of some digit than all previous terms of the sequence put together.
  * @author Sean A. Irvine
  */
-public class A179310 implements Sequence {
+public class A179310 extends Sequence1 {
 
   private final int[] mCounts = new int[10];
   private final int[] mWorkspace = new int[10];

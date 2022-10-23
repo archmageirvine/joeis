@@ -3,13 +3,14 @@ package irvine.oeis.a161;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046022;
 
 /**
  * A161344 Numbers k with A033676(k)=2, where A033676 is the largest divisor &lt;= sqrt(k).
  * @author Georg Fischer
  */
-public class A161344 implements Sequence {
+public class A161344 extends Sequence1 {
 
   final Sequence mA046022 = new A046022();
   /** Construct the sequence. */

@@ -3,12 +3,13 @@ package irvine.oeis.a204;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A204891 Least k such that n divides A204890(k), the k-th difference of two primes.
  * @author Georg Fischer
  */
-public class A204891 implements Sequence {
+public class A204891 extends Sequence1 {
 
   private Z mNz;
   private final int mDist;

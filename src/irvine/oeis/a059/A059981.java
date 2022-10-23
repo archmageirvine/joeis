@@ -6,13 +6,14 @@ import java.util.Map;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 
 /**
  * A059981 Order of compositeness for the n-th composite number.
  * @author Sean A. Irvine
  */
-public class A059981 implements Sequence {
+public class A059981 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final Sequence mComposites = new A002808();

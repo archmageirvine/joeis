@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006591 a(n) = Sum_{k=1..n} nearest integer to n/k (if n/k is midway between two numbers take the smaller).
  * @author Sean A. Irvine
  */
-public class A006591 implements Sequence {
+public class A006591 extends Sequence1 {
 
   private long mN = 0;
 

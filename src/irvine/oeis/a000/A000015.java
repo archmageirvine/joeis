@@ -2,14 +2,14 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A000015 Smallest prime power &gt;= n.
  * @author Sean A. Irvine
  */
-public class A000015 implements Sequence {
+public class A000015 extends Sequence1 {
 
   private int mN = 0;
   private final DynamicLongArray mPrimePowers = new DynamicLongArray();

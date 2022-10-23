@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020731 Numbers n for which number of distinct prime divisors of C(n,k) has maximum at k = [n/2].
  * @author Sean A. Irvine
  */
-public class A020731 implements Sequence {
+public class A020731 extends Sequence1 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
   private long mN = 0;

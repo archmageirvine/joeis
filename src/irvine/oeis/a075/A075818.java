@@ -3,13 +3,14 @@ package irvine.oeis.a075;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001358;
 
 /**
  * A075818 Even numbers with exactly 3 prime factors (counted with multiplicity).
  * @author Georg Fischer
  */
-public class A075818 implements Sequence {
+public class A075818 extends Sequence1 {
 
   final Sequence mA001358 = new A001358();
   @Override

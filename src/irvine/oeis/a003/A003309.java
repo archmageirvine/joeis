@@ -3,14 +3,14 @@ package irvine.oeis.a003;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A003309 Ludic numbers: apply the same sieve as Eratosthenes, but cross off every k-th /remaining/ number.
  * @author Sean A. Irvine
  */
-public class A003309 implements Sequence {
+public class A003309 extends Sequence1 {
 
   // This implementation does a kind of complicated incremental sieve.
 

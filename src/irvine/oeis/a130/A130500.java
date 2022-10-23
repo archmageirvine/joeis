@@ -3,13 +3,13 @@ package irvine.oeis.a130;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A130500 a(1)=1. a(n) = number of earlier terms of the sequence which divide (the number of positive integers which are &lt;=n and missing from first (n-1) terms of sequence).
  * @author Sean A. Irvine
  */
-public class A130500 implements Sequence {
+public class A130500 extends Sequence1 {
 
   private int mN = 0;
   private int[] mA = new int[1024];

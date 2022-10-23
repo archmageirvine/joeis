@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056777 Composite numbers k such that both phi(k+12) = phi(k) + 12 and sigma(k+12) = sigma(k) + 12.
  * @author Sean A. Irvine
  */
-public class A056777 implements Sequence {
+public class A056777 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 64;

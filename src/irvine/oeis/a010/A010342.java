@@ -4,13 +4,13 @@ import java.util.List;
 
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A010342 Numbers k such that all terms in the periodic part of the continued fraction for sqrt(k) except the final term are 1.
  * @author Sean A. Irvine
  */
-public class A010342 implements Sequence {
+public class A010342 extends Sequence1 {
 
   private Z mN = Z.TWO;
 

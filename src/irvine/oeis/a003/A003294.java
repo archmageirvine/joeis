@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003294 Numbers n such that n^4 can be written as a sum of four positive 4th powers.
  * @author Sean A. Irvine
  */
-public class A003294 implements Sequence {
+public class A003294 extends Sequence1 {
 
   private static final int MAXN = 55108;
 //  private static final long[] FOURTH = new long[MAXN + 1];

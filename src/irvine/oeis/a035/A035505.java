@@ -2,6 +2,7 @@ package irvine.oeis.a035;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000194;
 import irvine.oeis.a074.A074294;
@@ -10,7 +11,7 @@ import irvine.oeis.a074.A074294;
  * A035505 Active part of Kimberling's expulsion array as a triangular array.
  * @author Sean A. Irvine
  */
-public class A035505 implements Sequence {
+public class A035505 extends Sequence1 {
 
   // After Enrique P&eacute;rez Herrero
 

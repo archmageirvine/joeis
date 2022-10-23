@@ -3,6 +3,7 @@ package irvine.oeis.a157;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000086;
 import irvine.oeis.a001.A001615;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001615;
  * A157227 Number of primitive inequivalent (up to Pi/3 rotation) non-hexagonal sublattices of hexagonal (triangular) lattice of index n.
  * @author Georg Fischer
  */
-public class A157227 implements Sequence {
+public class A157227 extends Sequence1 {
 
   final Sequence mA000086 = new A000086();
   final Sequence mA001615 = new A001615();

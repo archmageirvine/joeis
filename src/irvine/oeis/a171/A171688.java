@@ -3,13 +3,14 @@ package irvine.oeis.a171;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001097;
 
 /**
  * A171688 Twin primes &gt; 3.
  * @author Georg Fischer
  */
-public class A171688 implements Sequence {
+public class A171688 extends Sequence1 {
 
   final Sequence mA001097 = new A001097();
   /** Construct the sequence. */

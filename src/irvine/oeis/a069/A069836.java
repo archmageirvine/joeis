@@ -1,13 +1,13 @@
 package irvine.oeis.a069;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A069836 Inverse permutation to A057033: a(n) is the m such that A057033(m) = n, or 0 if no such m exists.
  * @author Sean A. Irvine
  */
-public class A069836 implements Sequence {
+public class A069836 extends Sequence1 {
 
   private long mN = 0;
 

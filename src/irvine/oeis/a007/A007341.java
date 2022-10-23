@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007341 Number of spanning trees in n X n grid.
  * @author Sean A. Irvine
  */
-public class A007341 implements Sequence {
+public class A007341 extends Sequence1 {
 
   private int mN = 0;
 

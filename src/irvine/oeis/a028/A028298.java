@@ -5,13 +5,13 @@ import irvine.math.polynomial.ChebyshevPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028298 Triangle of coefficients in expansion of sin(n*x) (or sin(n*x)/cos(x) if n is even) in ascending powers of sin(x).
  * @author Sean A. Irvine
  */
-public class A028298 implements Sequence {
+public class A028298 extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final ChebyshevPolynomials mChebyshev1 = new ChebyshevPolynomials(1);

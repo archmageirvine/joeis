@@ -7,14 +7,14 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A003135 n! is a nontrivial product of factorials. It is conjectured that the list is complete.
  * @author Sean A. Irvine
  */
-public class A003135 implements Sequence {
+public class A003135 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final DynamicIntArray mPrimeToIndex = new DynamicIntArray();

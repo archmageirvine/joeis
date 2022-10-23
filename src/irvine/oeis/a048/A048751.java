@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048751 Composites k whose product of divisors divided by number of divisors is an integer.
  * @author Sean A. Irvine
  */
-public class A048751 implements Sequence {
+public class A048751 extends Sequence1 {
 
   private long mN = 5;
 

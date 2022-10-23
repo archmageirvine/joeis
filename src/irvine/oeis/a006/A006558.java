@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006558 Start of first run of n consecutive integers with same number of divisors.
  * @author Sean A. Irvine
  */
-public class A006558 implements Sequence {
+public class A006558 extends Sequence1 {
 
   protected long mN = 0;
   private long mM = 0;

@@ -3,13 +3,13 @@ package irvine.oeis.a334;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A334729 a(n) = Product_{d|n} gcd(tau(d), sigma(d)).
  * @author Georg Fischer
  */
-public class A334729 implements Sequence {
+public class A334729 extends Sequence1 {
 
   private int mN = 0;
 

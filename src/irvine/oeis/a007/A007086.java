@@ -5,13 +5,13 @@ import java.util.HashSet;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007086 Next term is uniquely the sum of 3 earlier terms.
  * @author Sean A. Irvine
  */
-public class A007086 implements Sequence {
+public class A007086 extends Sequence1 {
 
   // Cf. A002858
   private final ArrayList<Z> mSeq = new ArrayList<>();

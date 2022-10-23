@@ -2,13 +2,13 @@ package irvine.oeis.a016;
 
 import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A016741 Initial pile sizes which guarantee a win for player 2 in a certain variant of NIM.
  * @author Sean A. Irvine
  */
-public class A016741 implements Sequence {
+public class A016741 extends Sequence1 {
 
   // Player A to move
   private final MemoryFunctionInt3<Boolean> mPlayerACache = new MemoryFunctionInt3<Boolean>() {

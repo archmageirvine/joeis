@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007542 Successive integers produced by Conway's PRIMEGAME.
  * @author Sean A. Irvine
  */
-public class A007542 implements Sequence {
+public class A007542 extends Sequence1 {
 
   private static final Q[] CONWAY_PRIMEGAME = {
     new Q(17, 91),

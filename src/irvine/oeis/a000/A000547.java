@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000547 Number of steps to reach 1 in sequence A000546.
  * @author Sean A. Irvine
  */
-public class A000547 implements Sequence {
+public class A000547 extends Sequence1 {
 
   private int mN = 0;
 

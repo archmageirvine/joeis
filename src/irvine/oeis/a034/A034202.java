@@ -4,13 +4,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.WreathExponentiation;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034202 Number of binary codes (not necessarily linear) of length n with 7 words.
  * @author Sean A. Irvine
  */
-public class A034202 implements Sequence {
+public class A034202 extends Sequence1 {
 
   private static final CycleIndex Z2 = SymmetricGroup.create(2).cycleIndex();
   private int mN = 0;

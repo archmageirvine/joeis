@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005917 Rhombic dodecahedral numbers: a(n) = n^4 - (n - 1)^4.
  * @author Sean A. Irvine
  */
-public class A005917 implements Sequence {
+public class A005917 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

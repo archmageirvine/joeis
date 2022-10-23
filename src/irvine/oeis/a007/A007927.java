@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007927 Some nontrivial permutation of digits is a factorial number.
  * @author Sean A. Irvine
  */
-public class A007927 implements Sequence {
+public class A007927 extends Sequence1 {
 
   // Essentially A007926 minus the factorials themselves
 

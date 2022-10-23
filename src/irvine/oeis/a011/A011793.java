@@ -7,13 +7,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011793 Triangle of numbers of irreducible Euler sums.
  * @author Sean A. Irvine
  */
-public class A011793 implements Sequence {
+public class A011793 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

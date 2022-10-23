@@ -6,13 +6,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A336364 Rectangular array by antidiagonals: row n shows the positive integers whose distance to the nearest prime is n.
  * @author Sean A. Irvine
  */
-public class A336364 implements Sequence {
+public class A336364 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final List<TreeSet<Long>> mRows = new ArrayList<>();

@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001232 Numbers k such that 9*k = (k written backwards), k &gt; 0.
  * @author Sean A. Irvine
  */
-public class A001232 implements Sequence {
+public class A001232 extends Sequence1 {
 
   private Z mN = Z.valueOf(1088);
   private Z mLimit = Z.valueOf(10000);

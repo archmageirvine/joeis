@@ -2,7 +2,7 @@ package irvine.oeis.a057;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.util.string.StringUtils;
 
@@ -10,7 +10,7 @@ import irvine.util.string.StringUtils;
  * A057563 Numbers k such that the k initial decimal digits of e - 2 form a prime number.
  * @author Sean A. Irvine
  */
-public class A057563 implements Sequence {
+public class A057563 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final DecimalExpansionSequence mSeq = new DecimalExpansionSequence(CR.E.subtract(CR.TWO));

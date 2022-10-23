@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002225 a(n) is the smallest prime p such that each of the first n primes has three cube roots mod p.
  * @author Sean A. Irvine
  */
-public class A002225 implements Sequence {
+public class A002225 extends Sequence1 {
 
   // There must be a better way...
 

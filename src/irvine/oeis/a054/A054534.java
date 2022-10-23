@@ -4,13 +4,13 @@ import irvine.math.IntegerUtils;
 import irvine.math.Mobius;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054534 Square array giving Ramanujan sum T(n,k) = c_k(n) = Sum_{m=1..k, (m,k)=1} exp(2 Pi i m n / k), read by antidiagonals upwards (n &gt;= 1, k &gt;= 1).
  * @author Sean A. Irvine
  */
-public class A054534 implements Sequence {
+public class A054534 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

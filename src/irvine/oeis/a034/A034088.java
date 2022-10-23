@@ -1,14 +1,14 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a031.A031178;
 
 /**
  * A034088 Numbers divisible by the sum of the cubes of their digits.
  * @author Sean A. Irvine
  */
-public class A034088 implements Sequence {
+public class A034088 extends Sequence1 {
 
   private long mN = 0;
 

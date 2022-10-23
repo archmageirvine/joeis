@@ -1,13 +1,13 @@
 package irvine.oeis.a044;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A044813 Positive integers having distinct base-2 run lengths.
  * @author Sean A. Irvine
  */
-public class A044813 implements Sequence {
+public class A044813 extends Sequence1 {
 
   private long mN = 0;
   // We reuse the following workspace to detect repeated run lengths for

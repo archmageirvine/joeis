@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007106 Number of labeled odd degree trees with 2n nodes.
  * @author Sean A. Irvine
  */
-public class A007106 implements Sequence {
+public class A007106 extends Sequence1 {
 
   private int mN = 0;
 

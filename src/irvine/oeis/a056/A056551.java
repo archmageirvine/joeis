@@ -3,13 +3,14 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008834;
 import irvine.oeis.a053.A053149;
 /**
  * A056551 Smallest cube divisible by n divided by largest cube which divides n.
  * @author Georg Fischer
  */
-public class A056551 implements Sequence {
+public class A056551 extends Sequence1 {
 
   private final Sequence mA008834 = new A008834();
   private final Sequence mA053149 = new A053149();

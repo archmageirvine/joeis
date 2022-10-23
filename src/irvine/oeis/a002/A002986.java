@@ -18,14 +18,14 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.TimeUnit;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.CliFlags;
 
 /**
  * A002986 Number of non-cyclic hydrocarbons with n carbon atoms (excluding stereoisomers).
  * @author Sean A. Irvine
  */
-public class A002986 implements Sequence {
+public class A002986 extends Sequence1 {
 
   // This class iteratively generates A002986 by exhaustively generating the molecules
   // (in the form of trees).  It is not particularly smart using essentially brute

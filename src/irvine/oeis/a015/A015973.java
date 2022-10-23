@@ -1,13 +1,13 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015973 Positive integers n such that n | (3^n + 2).
  * @author Sean A. Irvine
  */
-public class A015973 implements Sequence {
+public class A015973 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

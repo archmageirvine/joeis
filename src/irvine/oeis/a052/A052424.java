@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052424 Numbers with no single-digit factors (apart from 1 and n).
  * @author Sean A. Irvine
  */
-public class A052424 implements Sequence {
+public class A052424 extends Sequence1 {
 
   private long mN = 0;
 

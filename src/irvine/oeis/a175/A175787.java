@@ -3,13 +3,14 @@ package irvine.oeis.a175;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046022;
 
 /**
  * A175787 Primes together with 4.
  * @author Georg Fischer
  */
-public class A175787 implements Sequence {
+public class A175787 extends Sequence1 {
 
   final Sequence mA046022 = new A046022();
   /** Construct the sequence. */

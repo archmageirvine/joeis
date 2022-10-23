@@ -1,13 +1,13 @@
 package irvine.oeis.a164;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A164344 Positive integers whose square contains the same number of 0's as 1's when represented in binary.
  * @author Sean A. Irvine
  */
-public class A164344 implements Sequence {
+public class A164344 extends Sequence1 {
 
   private Z mN = Z.TWO;
 

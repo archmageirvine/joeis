@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045717 For each prime p take the sum of nonprimes &lt; p.
  * @author Sean A. Irvine
  */
-public class A045717 implements Sequence {
+public class A045717 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mSum = Z.ZERO;

@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002385;
 
 /**
  * A046368 Products of two palindromic primes.
  * @author Sean A. Irvine
  */
-public class A046368 implements Sequence {
+public class A046368 extends Sequence1 {
 
   private final MemorySequence mPrimePalindromes = MemorySequence.cachedSequence(new A002385());
   private final TreeSet<Z> mA = new TreeSet<>();

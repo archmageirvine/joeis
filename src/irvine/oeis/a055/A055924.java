@@ -3,13 +3,14 @@ package irvine.oeis.a055;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000110;
 
 /**
  * A055924 Exponential transform of Stirling-1 triangle A008275.
  * @author Sean A. Irvine
  */
-public class A055924 implements Sequence {
+public class A055924 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

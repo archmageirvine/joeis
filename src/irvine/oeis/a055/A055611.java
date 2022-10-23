@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055611 n written efficiently in natural numbers base, i.e., in form ...wxyz where n = 1*z + 2*y + 3*x + 4*w + ... with z &lt;= 1, y &lt; 2, x &lt; 3, w &lt; 4, ...
  * @author Sean A. Irvine
  */
-public class A055611 implements Sequence {
+public class A055611 extends Sequence1 {
 
   private long mN = 0;
   private int mK = 1;

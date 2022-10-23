@@ -4,13 +4,13 @@ package irvine.oeis.a307;
 import irvine.math.Mobius;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A307653 a(n) = Sum_{d|n} mu(d) * d^d.
  * @author Georg Fischer
  */
-public class A307653 implements Sequence {
+public class A307653 extends Sequence1 {
 
   private int mN = 0;
 

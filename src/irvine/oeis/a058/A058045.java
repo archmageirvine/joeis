@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058045 Numbers k such that (5^k + k)/3 is prime.
  * @author Sean A. Irvine
  */
-public class A058045 implements Sequence {
+public class A058045 extends Sequence1 {
 
   private long mN = -4;
   private long mAdd = 1;

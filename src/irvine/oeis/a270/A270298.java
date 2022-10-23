@@ -3,13 +3,14 @@ package irvine.oeis.a270;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008364;
 
 /**
  * A270298 Numbers which are representable as a sum of eight but no fewer consecutive nonnegative integers.
  * @author Georg Fischer
  */
-public class A270298 implements Sequence {
+public class A270298 extends Sequence1 {
 
   final Sequence mA008364 = new A008364();
   /** Construct the sequence. */

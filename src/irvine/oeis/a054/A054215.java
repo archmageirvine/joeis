@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054215 Squares that are concatenations of two consecutive decreasing numbers.
  * @author Sean A. Irvine
  */
-public class A054215 implements Sequence {
+public class A054215 extends Sequence1 {
 
   private long mN = 81;
 

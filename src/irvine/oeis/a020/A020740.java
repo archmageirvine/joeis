@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020740 Max_{k=0..n} d(C(n,k)) - d(C(n,[ n/2 ])), where d() = number of divisors.
  * @author Sean A. Irvine
  */
-public class A020740 implements Sequence {
+public class A020740 extends Sequence1 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
   private long mN = 0;

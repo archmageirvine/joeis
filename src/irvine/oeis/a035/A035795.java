@@ -2,13 +2,13 @@ package irvine.oeis.a035;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035795 Start of a string of exactly 7 consecutive (but disjoint) pairs of twin primes.
  * @author Sean A. Irvine
  */
-public class A035795 implements Sequence {
+public class A035795 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 678771473;

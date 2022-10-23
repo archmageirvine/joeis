@@ -3,14 +3,14 @@ package irvine.oeis.a118;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007918;
 
 /**
  * A118456 a(n) = Product_{k=1..n} P(k), where P(k) is the smallest prime &gt;= k.
  * @author Georg Fischer
  */
-public class A118456 implements Sequence {
+public class A118456 extends Sequence1 {
 
   private int mN = 0;
   private MemorySequence mSeq = MemorySequence.cachedSequence(new A007918());

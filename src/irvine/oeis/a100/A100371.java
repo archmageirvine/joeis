@@ -4,13 +4,14 @@ package irvine.oeis.a100;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 
 /**
  * A100371 a(n) = 2^phi(n) - 1 = A066781(n) - 1.
  * @author Georg Fischer
  */
-public class A100371 implements Sequence {
+public class A100371 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   @Override

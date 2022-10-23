@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057920 Numbers k such that phi(k+1) divides phi(k), where phi is A000010.
  * @author Sean A. Irvine
  */
-public class A057920 implements Sequence {
+public class A057920 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private long mN = 0;

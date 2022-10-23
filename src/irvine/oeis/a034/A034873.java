@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034873 Primes in which digit occur in runs of at least 2.
  * @author Sean A. Irvine
  */
-public class A034873 implements Sequence {
+public class A034873 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   {

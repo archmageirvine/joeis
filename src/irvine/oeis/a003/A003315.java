@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003315 Representing n as sum of increasing powers.
  * @author Sean A. Irvine
  */
-public class A003315 implements Sequence {
+public class A003315 extends Sequence1 {
 
   // Recursive descent solution.
   // Theory says 26 is largest possible value for large enough n.

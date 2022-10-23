@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import irvine.math.partitions.IntegerComposition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006543 Maximal iterated binomial coefficients.
  * @author Sean A. Irvine
  */
-public class A006543 implements Sequence {
+public class A006543 extends Sequence1 {
 
   private int mN = 0;
 

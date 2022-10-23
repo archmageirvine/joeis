@@ -1,14 +1,14 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A046077 a(d-2) is the smallest member of A046076 containing an undulating sequence of 010... or 101... of maximal length d=3, 4, ...
  * @author Sean A. Irvine
  */
-public class A046077 implements Sequence {
+public class A046077 extends Sequence1 {
 
   private int mN = 102;
   private Z mA = Z.ONE.shiftLeft(mN);

@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A308352 Number of k-ary quasitrivial semigroups that have no neutral element on an n-element set.
  * E.g.f.: (1 - x)/(x + 3 - 2*exp(x))
  * @author Georg Fischer
  */
-public class A308352 implements Sequence {
+public class A308352 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

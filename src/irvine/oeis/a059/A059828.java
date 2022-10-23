@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059828 Numbers which contain exactly the same digits (with the correct multiplicity) in 3 different smaller bases.
  * @author Sean A. Irvine
  */
-public class A059828 implements Sequence {
+public class A059828 extends Sequence1 {
 
   private int mN = 494;
 

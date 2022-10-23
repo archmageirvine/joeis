@@ -3,13 +3,14 @@ package irvine.oeis.a005;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000110;
 
 /**
  * A005003 Number of rhyme schemes (see reference for precise definition).
  * @author Sean A. Irvine
  */
-public class A005003 implements Sequence {
+public class A005003 extends Sequence1 {
 
   private long mN = 1;
   private Z mA = Z.ZERO;

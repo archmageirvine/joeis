@@ -1,14 +1,14 @@
 package irvine.oeis.a107;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A107665 Numbers with semiprime digits (digits 4, 6, 9 only).
  * Copied from A007932.
  * @author Georg Fischer
  */
-public class A107665 implements Sequence {
+public class A107665 extends Sequence1 {
 
   private long mN = 2;
   private long mLimit = 6;

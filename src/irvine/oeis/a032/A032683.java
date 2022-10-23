@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032683 Numbers k such that k surrounded by digit '3' is a prime.
  * @author Sean A. Irvine
  */
-public class A032683 implements Sequence {
+public class A032683 extends Sequence1 {
 
   private long mN = -1;
 

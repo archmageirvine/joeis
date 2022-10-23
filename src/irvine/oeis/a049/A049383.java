@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049383 Iterated binomial coefficients.
  * @author Sean A. Irvine
  */
-public class A049383 implements Sequence {
+public class A049383 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

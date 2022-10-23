@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024193 Integer part of (3rd elementary symmetric function of S(n))/(2nd elementary symmetric of S(n)), where S(n) = {3,4, ..., n+4}.
  * @author Sean A. Irvine
  */
-public class A024193 implements Sequence {
+public class A024193 extends Sequence1 {
 
   private long mN = 0;
 

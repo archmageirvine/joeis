@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058976 Number of inequivalent n-variable 3-valued Post functions under action of complementing group D(n,3).
  * @author Sean A. Irvine
  */
-public class A058976 implements Sequence {
+public class A058976 extends Sequence1 {
 
   private int mN = 0;
 

@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036924 Digit sum of composite even number equals digit sum of juxtaposition of its prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
-public class A036924 implements Sequence {
+public class A036924 extends Sequence1 {
 
   private Z mN = Z.TWO;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a160;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A160944 a(n)= n * digital sum(n-1) * digital sum(n+1).
  * @author Georg Fischer
  */
-public class A160944 implements Sequence {
+public class A160944 extends Sequence1 {
 
   private int mN = 0;
 

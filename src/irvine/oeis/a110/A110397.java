@@ -1,13 +1,13 @@
 package irvine.oeis.a110;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A110397 a(n) = (10^k - n)(10^k + n), where k is the number of digits in n.
  * @author Georg Fischer
  */
-public class A110397 implements Sequence {
+public class A110397 extends Sequence1 {
 
   private int mN = 0;
 

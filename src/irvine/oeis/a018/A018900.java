@@ -3,13 +3,13 @@ package irvine.oeis.a018;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A018900 Sums of two distinct powers of 2.
  * @author Sean A. Irvine
  */
-public class A018900 implements Sequence {
+public class A018900 extends Sequence1 {
 
   private final TreeSet<Z> mCache = new TreeSet<>();
   private Z mA = Z.ONE;

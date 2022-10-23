@@ -3,13 +3,13 @@ package irvine.oeis.a345;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A345709 A variation on the Yellowstone permutation: a(n) = n if n &lt;= 3, a(4) = 5; otherwise the smallest number not occurring earlier having at least one common factor with a(n-2), but none with a(n-1), with the condition that two odd terms alternate with one even term.
  * @author Sean A. Irvine
  */
-public class A345709 implements Sequence {
+public class A345709 extends Sequence1 {
 
   private final TreeSet<Z> mS = new TreeSet<>();
   private Z mA = null;

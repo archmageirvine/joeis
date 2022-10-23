@@ -1,13 +1,13 @@
 package irvine.oeis.a291;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A291793 Period of orbit of Post's tag system applied to the word (100)^n (version 2), or -1 if the orbit increases without limit.
  * @author Sean A. Irvine
  */
-public class A291793 implements Sequence {
+public class A291793 extends Sequence1 {
 
   private static final class Post {
 

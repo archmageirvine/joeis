@@ -3,6 +3,7 @@ package irvine.oeis.a129;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005382;
 import irvine.oeis.a005.A005383;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a005.A005383;
  * A129521 Numbers of the form p*q, p and q prime with q=2*p-1.
  * @author Georg Fischer
  */
-public class A129521 implements Sequence {
+public class A129521 extends Sequence1 {
 
   final Sequence mA005382 = new A005382();
   final Sequence mA005383 = new A005383();

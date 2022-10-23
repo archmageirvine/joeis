@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007749 Numbers k such that k!! - 1 is prime.
  * @author Sean A. Irvine
  */
-public class A007749 implements Sequence {
+public class A007749 extends Sequence1 {
 
   private long mN = 2;
   private Z mEven = Z.TWO;

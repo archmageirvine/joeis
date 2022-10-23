@@ -3,13 +3,14 @@ package irvine.oeis.a347;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051953;
 import irvine.oeis.a337.A337549;
 /**
  * A347100 a(n) = phi(A003961(n)) - phi(n), where A003961 is the prime shift towards larger primes, and phi is Euler totient function.
  * @author Georg Fischer
  */
-public class A347100 implements Sequence {
+public class A347100 extends Sequence1 {
 
   private final Sequence mA051953 = new A051953();
   private final Sequence mA337549 = new A337549();

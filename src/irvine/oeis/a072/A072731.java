@@ -3,13 +3,14 @@ package irvine.oeis.a072;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 import irvine.oeis.a065.A065855;
 /**
  * A072731 Difference of numbers of composite and prime numbers &lt;= n.
  * @author Georg Fischer
  */
-public class A072731 implements Sequence {
+public class A072731 extends Sequence1 {
 
   private final Sequence mA000720 = new A000720();
   private final Sequence mA065855 = new A065855();

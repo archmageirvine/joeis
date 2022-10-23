@@ -9,13 +9,13 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005326 Permanent of "coprime?" matrix.
  * @author Sean A. Irvine
  */
-public class A005326 implements Sequence {
+public class A005326 extends Sequence1 {
 
   private int mN = 0;
 

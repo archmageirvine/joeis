@@ -3,13 +3,14 @@ package irvine.oeis.a166;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000265;
 
 /**
  * A166466 Trisection a(n) = A000265(3n).
  * @author Georg Fischer
  */
-public class A166466 implements Sequence {
+public class A166466 extends Sequence1 {
 
   final Sequence mA000265 = new A000265();
   @Override

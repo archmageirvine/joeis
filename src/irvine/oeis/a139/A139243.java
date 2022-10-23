@@ -3,12 +3,13 @@ package irvine.oeis.a139;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A139243 Second differences of Mersenne numbers A001348, divided by 4.
  * @author Georg Fischer
  */
-public class A139243 implements Sequence {
+public class A139243 extends Sequence1 {
 
   final Sequence mA139241 = new A139241();
   @Override

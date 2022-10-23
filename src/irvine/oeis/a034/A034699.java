@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034699 Largest prime power factor of n.
  * @author Sean A. Irvine
  */
-public class A034699 implements Sequence {
+public class A034699 extends Sequence1 {
 
   protected long mN = 0;
 

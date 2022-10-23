@@ -3,13 +3,14 @@ package irvine.oeis.a301;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003627;
 
 /**
  * A301812 Numbers of the form p^2 - 1 where p is a prime of the form 3*k-1 (A003627).
  * @author Georg Fischer
  */
-public class A301812 implements Sequence {
+public class A301812 extends Sequence1 {
 
   final Sequence mA003627 = new A003627();
   @Override

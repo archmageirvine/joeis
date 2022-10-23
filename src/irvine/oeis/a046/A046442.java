@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A046442 Semiprimes whose two prime factors are distinct in length.
  * @author Sean A. Irvine
  */
-public class A046442 implements Sequence {
+public class A046442 extends Sequence1 {
 
   private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A000040());
   private final TreeSet<Z> mA = new TreeSet<>();

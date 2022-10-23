@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023688 Numbers with exactly 6 ones in binary expansion.
  * @author Sean A. Irvine
  */
-public class A023688 implements Sequence {
+public class A023688 extends Sequence1 {
 
   private Z mN = null;
 

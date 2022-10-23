@@ -3,13 +3,14 @@ package irvine.oeis.a338;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007955;
 
 /**
  * A338576 a(n) = n * pod(n) where pod(n) = the product of divisors of n (A007955).
  * @author Georg Fischer
  */
-public class A338576 implements Sequence {
+public class A338576 extends Sequence1 {
 
   final Sequence mA007955 = new A007955();
   protected long mN;

@@ -3,13 +3,13 @@ package irvine.oeis.a023;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023890 Sum of the nonprime divisors of n.
  * @author Sean A. Irvine
  */
-public class A023890 implements Sequence {
+public class A023890 extends Sequence1 {
 
   private int mN = 0;
 

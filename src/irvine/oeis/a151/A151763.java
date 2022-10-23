@@ -3,13 +3,14 @@ package irvine.oeis.a151;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a010.A010051;
 
 /**
  * A151763 If n is a prime == 1 mod 4 then a(n) = 1, if n is a prime == 3 mod 4 then a(n) = -1, otherwise a(n) = 0.
  * @author Georg Fischer
  */
-public class A151763 implements Sequence {
+public class A151763 extends Sequence1 {
 
   final Sequence mA010051 = new A010051();
   protected long mN;

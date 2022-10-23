@@ -5,14 +5,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A067380 Primes expressible as the sum of (at least two) consecutive primes in at least 4 ways.
  * @author Sean A. Irvine
  */
-public class A067380 implements Sequence {
+public class A067380 extends Sequence1 {
 
   private static final class State {
     final Z mValue;

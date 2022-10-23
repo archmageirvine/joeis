@@ -7,13 +7,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001578 Smallest primitive prime factor of Fibonacci number F(n), or 1 if F(n) has no primitive prime factor.
  * @author Sean A. Irvine
  */
-public class A001578 implements Sequence {
+public class A001578 extends Sequence1 {
 
   private int mN = 0;
   private final HashSet<Z> mPrimitives = new HashSet<>();

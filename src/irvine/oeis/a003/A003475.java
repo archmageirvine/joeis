@@ -6,13 +6,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003475 Expansion of Sum_{k&gt;0} (-1)^(k+1) q^(k^2) / ((1-q)(1-q^3)(1-q^5)...(1-q^(2k-1))).
  * @author Sean A. Irvine
  */
-public class A003475 implements Sequence {
+public class A003475 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = 0;

@@ -3,13 +3,14 @@ package irvine.oeis.a072;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 
 /**
  * A072668 Numbers one less than composite numbers.
  * @author Georg Fischer
  */
-public class A072668 implements Sequence {
+public class A072668 extends Sequence1 {
 
   final Sequence mA002808 = new A002808();
   @Override

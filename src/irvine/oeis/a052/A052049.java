@@ -3,13 +3,13 @@ package irvine.oeis.a052;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052049 a(n)^2 is a square whose digits occur with an equal minimum frequency of 2.
  * @author Sean A. Irvine
  */
-public class A052049 implements Sequence {
+public class A052049 extends Sequence1 {
 
   private Z mN = Z.valueOf(87);
 

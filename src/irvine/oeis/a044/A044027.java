@@ -3,13 +3,13 @@ package irvine.oeis.a044;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A044027 Numbers k such that 4 and 6 occur juxtaposed in the base-10 representation of k but not of k+1.
  * @author Georg Fischer
  */
-public class A044027 implements Sequence {
+public class A044027 extends Sequence1 {
 
   private static final String P12 = String.valueOf(4) + String.valueOf(6);
   private static final String P21 = String.valueOf(6) + String.valueOf(4);

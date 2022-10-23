@@ -3,13 +3,14 @@ package irvine.oeis.a339;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a092.A092606;
 
 /**
  * A339584 A ternary sequence: a(n) = 1 if n is in A003156, 2 if n is in A003157, 3 if n is in A003158.
  * @author Georg Fischer
  */
-public class A339584 implements Sequence {
+public class A339584 extends Sequence1 {
 
   final Sequence mA092606 = new A092606();
   @Override

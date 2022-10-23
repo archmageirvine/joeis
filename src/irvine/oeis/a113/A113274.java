@@ -3,12 +3,13 @@ package irvine.oeis.a113;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a036.A036063;
 /**
  * A113274 Record gaps between twin primes.
  * @author Georg Fischer
  */
-public class A113274 implements Sequence {
+public class A113274 extends Sequence1 {
 
   private final Sequence mA036063 = new A036063();
 

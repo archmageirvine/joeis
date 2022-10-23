@@ -3,6 +3,7 @@ package irvine.oeis.a332;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002024;
 import irvine.oeis.a010.A010054;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a010.A010054;
  * A332026 Savannah problem: number of new possibilities after n weeks.
  * @author Georg Fischer
  */
-public class A332026 implements Sequence {
+public class A332026 extends Sequence1 {
 
   final Sequence mA002024 = new A002024();
   final Sequence mA010054 = new A010054();

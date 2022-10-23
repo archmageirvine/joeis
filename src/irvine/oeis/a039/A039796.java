@@ -7,14 +7,14 @@ import java.util.Map;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A039796 Sequence arising in search for Legendre sequences.
  * @author Sean A. Irvine
  */
-public class A039796 implements Sequence {
+public class A039796 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   protected int mN = 1;

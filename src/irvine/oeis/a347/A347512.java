@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A347512 Number of minimal dominating sets in the n-book graph.
  * E.g.f.: exp(x)*(3 + exp(x)) - 4 + x
  * @author Georg Fischer
  */
-public class A347512 implements Sequence {
+public class A347512 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

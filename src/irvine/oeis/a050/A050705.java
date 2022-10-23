@@ -3,13 +3,13 @@ package irvine.oeis.a050;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050705 Composite number such that when sum of its prime factors is added or subtracted becomes prime.
  * @author Sean A. Irvine
  */
-public class A050705 implements Sequence {
+public class A050705 extends Sequence1 {
 
   private long mN = 9;
 

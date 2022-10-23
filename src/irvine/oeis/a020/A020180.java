@@ -1,13 +1,13 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020180 Pseudoprimes to base 52.
  * @author Sean A. Irvine
  */
-public class A020180 implements Sequence {
+public class A020180 extends Sequence1 {
 
   private static final Z BASE = Z.valueOf(52);
   private Z mN = Z.valueOf(49);

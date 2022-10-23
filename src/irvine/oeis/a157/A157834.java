@@ -3,13 +3,14 @@ package irvine.oeis.a157;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a029.A029708;
 
 /**
  * A157834 Numbers n such that 3n-2 and 3n+2 are both prime.
  * @author Georg Fischer
  */
-public class A157834 implements Sequence {
+public class A157834 extends Sequence1 {
 
   final Sequence mA029708 = new A029708();
   @Override

@@ -3,14 +3,14 @@ package irvine.oeis.a121;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a020.A020338;
 
 /**
  * A121826 a(n) = Product_{k=1..n} D(k), where D() are the doublets, A020338.
  * @author Georg Fischer
  */
-public class A121826 implements Sequence {
+public class A121826 extends Sequence1 {
 
   private int mN = 0;
   private MemorySequence mSeq = MemorySequence.cachedSequence(new A020338());

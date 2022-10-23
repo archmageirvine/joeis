@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000462 Numbers written in base of triangular numbers.
  * @author Sean A. Irvine
  */
-public class A000462 implements Sequence {
+public class A000462 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

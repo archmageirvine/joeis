@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001082 Generalized octagonal numbers: k*(3*k-2), k=0, +- 1, +- 2, +-3, ...
  * @author Sean A. Irvine
  */
-public class A001082 implements Sequence {
+public class A001082 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

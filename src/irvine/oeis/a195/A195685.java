@@ -3,12 +3,13 @@ package irvine.oeis.a195;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a248.A248201;
 /**
  * A195685 Primes p for which tau(2p-1) = tau(2p+1) = 4.
  * @author Georg Fischer
  */
-public class A195685 implements Sequence {
+public class A195685 extends Sequence1 {
 
   private final Sequence mA248201 = new A248201();
   @Override

@@ -9,13 +9,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A295193 Number of regular simple graphs on n labeled nodes.
  * @author Sean A. Irvine
  */
-public class A295193 implements Sequence {
+public class A295193 extends Sequence1 {
 
   // After Andrew Howroyd
 

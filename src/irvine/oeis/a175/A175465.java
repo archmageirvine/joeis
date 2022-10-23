@@ -1,13 +1,13 @@
 package irvine.oeis.a175;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A175465 a(n) is the number of elements in the largest set of same-sized run-lengths (of either 0's or 1's) in the binary representation of n.
  * @author Sean A. Irvine
  */
-public class A175465 implements Sequence {
+public class A175465 extends Sequence1 {
 
   private long mN = 0;
 

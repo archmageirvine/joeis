@@ -2,13 +2,13 @@ package irvine.oeis.a073;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A073631 Nonprimes k such that k divides 3^(k-1) - 2^(k-1).
  * @author Georg Fischer
  */
-public class A073631 implements Sequence {
+public class A073631 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

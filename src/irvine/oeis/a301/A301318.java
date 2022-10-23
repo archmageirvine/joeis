@@ -4,13 +4,14 @@ package irvine.oeis.a301;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a299.A299921;
 
 /**
  * A301318 a(n) = sqrt(A299921(n)).
  * @author Georg Fischer
  */
-public class A301318 implements Sequence {
+public class A301318 extends Sequence1 {
 
   final Sequence mA299921 = new A299921();
   @Override

@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054631 Triangle read by rows: row n (n &gt;= 1) contains the numbers T(n,k) = Sum_{d|n} phi(d)*k^(n/d)/n, for k=1..n.
  * @author Sean A. Irvine
  */
-public class A054631 implements Sequence {
+public class A054631 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

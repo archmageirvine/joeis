@@ -3,13 +3,14 @@ package irvine.oeis.a337;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a055.A055575;
 
 /**
  * A337356 Numbers whose digit sum of their square is equal to their square root.
  * @author Georg Fischer
  */
-public class A337356 implements Sequence {
+public class A337356 extends Sequence1 {
 
   final Sequence mA055575 = new A055575();
   @Override

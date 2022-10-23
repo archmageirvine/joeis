@@ -5,14 +5,14 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051573;
 
 /**
  * A052250 Triangle T(n,k) (n &gt;= 1, k &gt;= 1) giving dimension of bigrading of Hopf algebra of rooted trees.
  * @author Sean A. Irvine
  */
-public class A052250 implements Sequence {
+public class A052250 extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
 

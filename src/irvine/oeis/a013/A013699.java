@@ -2,13 +2,13 @@ package irvine.oeis.a013;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013699 Degree of variety K_{2,n}^2.
  * @author Sean A. Irvine
  */
-public class A013699 implements Sequence {
+public class A013699 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

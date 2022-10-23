@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006413 Number of nonseparable tree-rooted planar maps with n + 4 edges and 5 vertices.
  * @author Sean A. Irvine
  */
-public class A006413 implements Sequence {
+public class A006413 extends Sequence1 {
 
   private long mN = 0;
 

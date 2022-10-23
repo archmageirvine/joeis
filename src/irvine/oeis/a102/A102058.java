@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A102058 Expansion of e.g.f. sin(arctanh(x)), odd powers only.
  * E.g.f.: sin(arctanh(x)), odd powers
  * @author Georg Fischer
  */
-public class A102058 implements Sequence {
+public class A102058 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

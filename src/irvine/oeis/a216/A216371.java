@@ -3,13 +3,14 @@ package irvine.oeis.a216;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a054.A054639;
 
 /**
  * A216371 Odd primes with one coach: primes p such that A135303((p-1)/2) = 1.
  * @author Georg Fischer
  */
-public class A216371 implements Sequence {
+public class A216371 extends Sequence1 {
 
   final Sequence mA054639 = new A054639();
   @Override

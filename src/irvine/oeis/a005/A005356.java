@@ -6,13 +6,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005356 Number of low discrepancy sequences in base 2.
  * @author Sean A. Irvine
  */
-public class A005356 implements Sequence {
+public class A005356 extends Sequence1 {
 
   private final ArrayList<Z> mN2 = new ArrayList<>();
   private final ArrayList<Z> mM2 = new ArrayList<>();

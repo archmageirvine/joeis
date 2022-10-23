@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045538 Smallest number k such that kn contains two consecutive digits which are the same.
  * @author Sean A. Irvine
  */
-public class A045538 implements Sequence {
+public class A045538 extends Sequence1 {
 
   private long mN = 0;
 

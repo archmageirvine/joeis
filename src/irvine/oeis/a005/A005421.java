@@ -6,13 +6,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005421 Number of numbers of complexity n, i.e., that can be built from n ones using + and *, and require at least that many ones.
  * @author Sean A. Irvine
  */
-public class A005421 implements Sequence {
+public class A005421 extends Sequence1 {
 
   private HashSet<Z> mSeen = new HashSet<>();
   private final ArrayList<Set<Z>> mByComplexity = new ArrayList<>();

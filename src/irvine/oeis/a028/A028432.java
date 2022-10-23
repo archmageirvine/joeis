@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028432 Golc sequence in base 2. Left to right concatenation of n,int(log_2(n)),int(log_2(int(log_2(n)))),... in base 2.
  * @author Sean A. Irvine
  */
-public class A028432 implements Sequence {
+public class A028432 extends Sequence1 {
 
   private long mN = 0;
 

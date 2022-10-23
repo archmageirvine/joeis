@@ -3,6 +3,7 @@ package irvine.oeis.a244;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a001.A001615;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001615;
  * A244963 a(n) = sigma(n) - n * Product_{p|n, p prime} (1 + 1/p).
  * @author Georg Fischer
  */
-public class A244963 implements Sequence {
+public class A244963 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA001615 = new A001615();

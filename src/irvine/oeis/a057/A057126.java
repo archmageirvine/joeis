@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057126 Numbers n such that 2 is a square mod n.
  * @author Sean A. Irvine
  */
-public class A057126 implements Sequence {
+public class A057126 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

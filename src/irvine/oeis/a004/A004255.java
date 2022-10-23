@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004255 n(n+1)(n^2 -3n + 6)/8.
  * @author Sean A. Irvine
  */
-public class A004255 implements Sequence {
+public class A004255 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

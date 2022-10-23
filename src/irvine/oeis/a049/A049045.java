@@ -2,14 +2,14 @@ package irvine.oeis.a049;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003422;
 
 /**
  * A049045 Domain of A049044.
  * @author Sean A. Irvine
  */
-public class A049045 implements Sequence {
+public class A049045 extends Sequence1 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A003422());
   private int mN = 0;

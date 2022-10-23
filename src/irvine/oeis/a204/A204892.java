@@ -3,13 +3,14 @@ package irvine.oeis.a204;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A204892 Least k such that n divides s(k)-s(j) for some j in [1,k), where s(k)=prime(k).
  * @author Georg Fischer
  */
-public class A204892 implements Sequence {
+public class A204892 extends Sequence1 {
 
   private Z mNz;
   private int mDist;

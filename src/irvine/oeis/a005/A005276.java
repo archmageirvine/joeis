@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005276 Betrothed (or quasi-amicable) numbers.
  * @author Sean A. Irvine
  */
-public class A005276 implements Sequence {
+public class A005276 extends Sequence1 {
 
   private final TreeSet<Z> mPriority = new TreeSet<>();
   private Z mN = Z.valueOf(47);

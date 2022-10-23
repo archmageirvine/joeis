@@ -3,6 +3,7 @@ package irvine.oeis.a089;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a034.A034444;
 import irvine.oeis.a062.A062570;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a062.A062570;
  * A089692 a(n) = phi(2n)/2^omega(n).
  * @author Georg Fischer
  */
-public class A089692 implements Sequence {
+public class A089692 extends Sequence1 {
 
   final Sequence mA034444 = new A034444();
   final Sequence mA062570 = new A062570();

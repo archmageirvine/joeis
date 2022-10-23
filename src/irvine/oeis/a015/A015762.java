@@ -3,13 +3,13 @@ package irvine.oeis.a015;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015762 Numbers n such that phi(n) | sigma_4(n).
  * @author Sean A. Irvine
  */
-public class A015762 implements Sequence {
+public class A015762 extends Sequence1 {
 
   private long mN = 0;
 

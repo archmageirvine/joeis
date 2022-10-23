@@ -3,13 +3,14 @@ package irvine.oeis.a158;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023228;
 
 /**
  * A158014 Primes p such that (p-1)/8 is also prime.
  * @author Georg Fischer
  */
-public class A158014 implements Sequence {
+public class A158014 extends Sequence1 {
 
   final Sequence mA023228 = new A023228();
   @Override

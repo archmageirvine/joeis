@@ -1,13 +1,13 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049804 a(n) = n mod 4 + n mod 16 + ... + n mod 4^k, where 4^k &lt;= n &lt; 4^(k+1).
  * @author Sean A. Irvine
  */
-public class A049804 implements Sequence {
+public class A049804 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a302;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A302563 Numbers whose digital root is equal to their number of digits.
  * @author Georg Fischer
  */
-public class A302563 implements Sequence {
+public class A302563 extends Sequence1 {
 
   protected long mN; // current index
   protected long mPow10; // 10^k

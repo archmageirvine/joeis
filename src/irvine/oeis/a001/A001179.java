@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001179 Leonardo logarithm of n.
  * @author Sean A. Irvine
  */
-public class A001179 implements Sequence {
+public class A001179 extends Sequence1 {
 
   private int mN = 0;
 

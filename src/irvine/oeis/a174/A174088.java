@@ -3,6 +3,7 @@ package irvine.oeis.a174;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000188;
 import irvine.oeis.a018.A018804;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a018.A018804;
  * A174088 Number of pairs (i,j) such that i*j == 0 (mod k), 0 &lt;= i &lt;= j &lt; k.
  * @author Georg Fischer
  */
-public class A174088 implements Sequence {
+public class A174088 extends Sequence1 {
 
   final Sequence mA000188 = new A000188();
   final Sequence mA018804 = new A018804();

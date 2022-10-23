@@ -2,13 +2,13 @@ package irvine.oeis.a074;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A074386 Numbers n such that sigma(n) is the square of a prime.
  * @author Sean A. Irvine
  */
-public class A074386 implements Sequence {
+public class A074386 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private long mN = 2;

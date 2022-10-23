@@ -1,13 +1,13 @@
 package irvine.oeis.a043;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A043277 Maximal run length in base 3 representation of n.
  * @author Sean A. Irvine
  */
-public class A043277 implements Sequence {
+public class A043277 extends Sequence1 {
 
   private long mN = 0;
 

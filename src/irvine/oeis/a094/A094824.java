@@ -3,13 +3,13 @@ package irvine.oeis.a094;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A094824 Maximum number of longest common substrings of two binary sequences of length n.
  * @author Sean A. Irvine
  */
-public class A094824 implements Sequence {
+public class A094824 extends Sequence1 {
 
   private int mN = 0;
 

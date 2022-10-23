@@ -3,13 +3,14 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007949;
 
 /**
  * A088838 Numerator of the quotient sigma(3n)/sigma(n).
  * @author Georg Fischer
  */
-public class A088838 implements Sequence {
+public class A088838 extends Sequence1 {
 
   final Sequence mA007949 = new A007949();
   @Override

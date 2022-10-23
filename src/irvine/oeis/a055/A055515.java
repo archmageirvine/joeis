@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055515 (2^n -1)/product(2^p -1) where the product is over all distinct primes p that divide n.
  * @author Sean A. Irvine
  */
-public class A055515 implements Sequence {
+public class A055515 extends Sequence1 {
 
   private int mN = 0;
 

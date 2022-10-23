@@ -1,14 +1,14 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
  * A045495 Smallest positive integer requiring at least n letters (not including hyphens) to be spelled out in English.
  * @author Sean A. Irvine
  */
-public class A045495 implements Sequence {
+public class A045495 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 1;

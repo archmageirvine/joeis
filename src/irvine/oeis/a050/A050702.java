@@ -8,13 +8,13 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050702 Nonprime numbers n such that n and n-reversed (&lt;&gt;n and no leading zeros) have the same number of prime factors and these prime factors (palindromes allowed here) are also reversals of each other.
  * @author Sean A. Irvine
  */
-public class A050702 implements Sequence {
+public class A050702 extends Sequence1 {
 
   private long mN = 25;
 

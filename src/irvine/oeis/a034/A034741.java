@@ -3,14 +3,14 @@ package irvine.oeis.a034;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034741 Dirichlet convolution of mu(n) with 3^(n-1).
  * @author Sean A. Irvine
  * @author Georg Fischer
  */
-public class A034741 implements Sequence {
+public class A034741 extends Sequence1 {
 
   private int mN;
   private Z mBase;

@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025583 Composite numbers that are not the sum of 2 primes.
  * @author Sean A. Irvine
  */
-public class A025583 implements Sequence {
+public class A025583 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 25;

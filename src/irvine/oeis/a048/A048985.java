@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048985 Working in base 2, replace n with the concatenation of its prime divisors in increasing order (write answer in base 10).
  * @author Sean A. Irvine
  */
-public class A048985 implements Sequence {
+public class A048985 extends Sequence1 {
 
   private long mN = 0;
 

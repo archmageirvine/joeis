@@ -3,13 +3,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018252;
 
 /**
  * A062312 Nonprime numbers squared.
  * @author Georg Fischer
  */
-public class A062312 implements Sequence {
+public class A062312 extends Sequence1 {
 
   final Sequence mA018252 = new A018252();
   @Override

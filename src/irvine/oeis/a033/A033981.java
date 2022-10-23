@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033981 Integers k such that 2^k == 7 (mod k).
  * @author Sean A. Irvine
  */
-public class A033981 implements Sequence {
+public class A033981 extends Sequence1 {
 
   private Z mExp2; // exponent of 2
   private Z mN = Z.ZERO;

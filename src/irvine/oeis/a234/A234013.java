@@ -4,13 +4,13 @@ import irvine.math.lattice.Canons;
 import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A234013 Number of maximally biased free polyominoes with n squares.
  * @author Sean A. Irvine
  */
-public class A234013 implements Sequence {
+public class A234013 extends Sequence1 {
 
   private long[] mBiasCounts = null;
   private final Hunter mHunter = new Hunter(Lattices.Z2, true) {

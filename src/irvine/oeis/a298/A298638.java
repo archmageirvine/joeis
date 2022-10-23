@@ -3,13 +3,13 @@ package irvine.oeis.a298;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A298638 Numbers k such that the digital sum of k and the digital root of k have opposite parity. 
  * @author Georg Fischer
  */
-public class A298638 implements Sequence {
+public class A298638 extends Sequence1 {
 
   protected int mN;
 

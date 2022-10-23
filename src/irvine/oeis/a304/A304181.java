@@ -3,13 +3,14 @@ package irvine.oeis.a304;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a020.A020639;
 import irvine.oeis.a051.A051904;
 /**
  * A304181 If n = Product (p_j^k_j) then a(n) = min{p_j}^min{k_j}.
  * @author Georg Fischer
  */
-public class A304181 implements Sequence {
+public class A304181 extends Sequence1 {
 
   private final Sequence mA020639 = new A020639();
   private final Sequence mA051904 = new A051904();

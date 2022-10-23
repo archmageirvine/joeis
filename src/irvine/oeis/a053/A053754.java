@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053754 If k is in the sequence then 2*k and 2*k+1 are not (and 0 is in the sequence); when written in binary k has an even number of bits (0 has 0 digits).
  * @author Georg Fischer
  */
-public class A053754 implements Sequence {
+public class A053754 extends Sequence1 {
 
   protected Z mN = Z.ZERO;
 

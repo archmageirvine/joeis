@@ -3,13 +3,13 @@ package irvine.oeis.a103;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A103618 Number of steps required for n to reach a digit count invariant or cycle loop under the 'Look and Say' function A045918.
  * @author Sean A. Irvine
  */
-public class A103618 implements Sequence {
+public class A103618 extends Sequence1 {
 
   private long mN = -1;
 

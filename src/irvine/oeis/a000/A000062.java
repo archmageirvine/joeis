@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000062 A Beatty sequence: a(n) = floor(n/(e-2)).
  * @author Sean A. Irvine
  */
-public class A000062 implements Sequence {
+public class A000062 extends Sequence1 {
 
   private Q mE = Q.HALF;
   private Z mF = Z.TWO;

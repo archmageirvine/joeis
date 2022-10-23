@@ -3,6 +3,7 @@ package irvine.oeis.a169;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007814;
 import irvine.oeis.a007.A007949;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007949;
  * A169611 Number of prime divisors of n that are not greater than 3, counted with multiplicity.
  * @author Georg Fischer
  */
-public class A169611 implements Sequence {
+public class A169611 extends Sequence1 {
 
   final Sequence mA007814 = new A007814();
   final Sequence mA007949 = new A007949();

@@ -6,13 +6,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008284;
 
 /**
  * A055884 Euler transform of partition triangle A008284.
  * @author Sean A. Irvine
  */
-public class A055884 implements Sequence {
+public class A055884 extends Sequence1 {
 
   // Cf. A055375 but enough offsets etc. changed here to make it easier this way
 

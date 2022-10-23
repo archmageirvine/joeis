@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048435 Take the first n numbers written in base 3, concatenate them, then convert from base 3 to base 10.
  * @author Georg Fischer
  */
-public class A048435 implements Sequence {
+public class A048435 extends Sequence1 {
 
   protected long mN;
   protected int mBase;

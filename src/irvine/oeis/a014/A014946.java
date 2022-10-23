@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014946 Numbers k that divide 6^k-1.
  * @author Sean A. Irvine
  */
-public class A014946 implements Sequence {
+public class A014946 extends Sequence1 {
 
   private long mN = 0;
 

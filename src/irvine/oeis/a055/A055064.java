@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055064 a(n) = A004125(2^n) = A004125(2^n-1).
  * @author Sean A. Irvine
  */
-public class A055064 implements Sequence {
+public class A055064 extends Sequence1 {
 
   private int mN = 0;
 

@@ -3,12 +3,13 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033879;
 /**
  * A326127 a(n) = A326126(n) - n, where A326126 gives the sum of all other divisors of n except the squarefree part of n.
  * @author Georg Fischer
  */
-public class A326127 implements Sequence {
+public class A326127 extends Sequence1 {
 
   private final Sequence mA033879 = new A033879();
   private final Sequence mA326128 = new A326128();

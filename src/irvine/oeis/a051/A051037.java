@@ -4,13 +4,13 @@ package irvine.oeis.a051;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051037 5-smooth numbers, i.e., numbers whose prime divisors are all &lt;= 5.
  * @author Georg Fischer
  */
-public class A051037 implements Sequence {
+public class A051037 extends Sequence1 {
 
   private final TreeSet<Z> mPriority = new TreeSet<>();
   protected final int[] mPrimes;

@@ -2,13 +2,13 @@ package irvine.oeis.a008;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008850 Numbers n such that sum of divisors of n^2 is a cube.
  * @author Sean A. Irvine
  */
-public class A008850 implements Sequence {
+public class A008850 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

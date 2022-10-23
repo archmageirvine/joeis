@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A022911 Arrange the nontrivial binomial coefficients C(m,k) (2 &lt;= k &lt;= m/2) in increasing order (not removing duplicates); record the sequence of m's.
  * @author Sean A. Irvine
  */
-public class A022911 implements Sequence {
+public class A022911 extends Sequence1 {
 
   private final TreeSet<Pair<Long, Long>> mA = new TreeSet<>((a, b) -> {
     final int c = eval(a).compareTo(eval(b));

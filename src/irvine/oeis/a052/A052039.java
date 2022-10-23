@@ -2,14 +2,14 @@ package irvine.oeis.a052;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
 
 /**
  * A052039 a(n) is the smallest k such that the first significant digits of 1/k coincide with n.
  * @author Sean A. Irvine
  */
-public class A052039 implements Sequence {
+public class A052039 extends Sequence1 {
 
   private final LongDynamicArray<String> mA = new LongDynamicArray<>();
   {

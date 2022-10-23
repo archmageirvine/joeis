@@ -5,14 +5,14 @@ import java.util.Collections;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
 /**
  * A003613 Number of symmetries in planted (1,4) trees on 3n-1 vertices.
  * @author Sean A. Irvine
  */
-public class A003613 implements Sequence {
+public class A003613 extends Sequence1 {
 
   // Tricky because this g.f. is not really a polynomial until after substitution for y
   // T(x,y) = x + (1/6x)T(x,y)^3 + (1/x)(y-1/2)T(x^2,y^2)T(x,y) + (1/x)(y^L-y+1/3)T(x^3,y^3),

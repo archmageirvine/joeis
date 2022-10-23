@@ -1,14 +1,14 @@
 package irvine.oeis.a126;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
  * A126259 Numbers that are divisible by the number of letters in their English name, excluding spaces and hyphens;.
  * @author Sean A. Irvine
  */
-public class A126259 implements Sequence {
+public class A126259 extends Sequence1 {
 
   private int mN = 0;
 

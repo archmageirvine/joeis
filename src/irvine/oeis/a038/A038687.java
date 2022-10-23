@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038687 Concatenate i &gt;= 1 and j &gt;= 1, then sort.
  * @author Sean A. Irvine
  */
-public class A038687 implements Sequence {
+public class A038687 extends Sequence1 {
 
   private Z mN = Z.TEN;
 

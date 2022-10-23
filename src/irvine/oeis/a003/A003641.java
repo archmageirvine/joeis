@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003641 Number of genera of imaginary quadratic field with discriminant -k, k = A039957(n).
  * @author Sean A. Irvine
  */
-public class A003641 implements Sequence {
+public class A003641 extends Sequence1 {
 
   long mN = 1;
 

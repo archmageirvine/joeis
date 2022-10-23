@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051623 a(n) = Sum_{x=1+floor(sqrt(n))..floor(sqrt(2n))} (x^2 - n).
  * @author Sean A. Irvine
  */
-public class A051623 implements Sequence {
+public class A051623 extends Sequence1 {
 
   private long mN = 0;
 

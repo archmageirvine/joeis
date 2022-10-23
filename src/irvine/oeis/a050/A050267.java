@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050267 Primes or negative values of primes in the sequence b(n) = 47*n^2 - 1701*n + 10181, n &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A050267 implements Sequence {
+public class A050267 extends Sequence1 {
 
   private long mN = -1;
 

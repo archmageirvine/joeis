@@ -3,14 +3,14 @@ package irvine.oeis.a034;
 import java.util.Stack;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A034704 Largest number that can be made using only the digits of n, exponentiation and concatenation.
  * @author Sean A. Irvine
  */
-public class A034704 implements Sequence {
+public class A034704 extends Sequence1 {
 
   private long mN = 0;
   private long mLim = 10;

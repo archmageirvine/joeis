@@ -3,14 +3,14 @@ package irvine.oeis.a032;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000959;
 
 /**
  * A032792 Quotients k*(k+1)*(k+2) / (k+(k+1)+(k+2)) that are lucky numbers.
  * @author Sean A. Irvine
  */
-public class A032792 implements Sequence {
+public class A032792 extends Sequence1 {
 
   private final A000959 mLucky = new A000959();
   private final TreeSet<Z> mLuckyNumbers = new TreeSet<>();

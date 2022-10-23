@@ -3,13 +3,13 @@ package irvine.oeis.a045;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045763 Number of numbers "unrelated to n": m &lt; n such that m is neither a divisor of n nor relatively prime to n.
  * @author Sean A. Irvine
  */
-public class A045763 implements Sequence {
+public class A045763 extends Sequence1 {
 
   private long mN = 0;
 

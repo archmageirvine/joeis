@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049506 a(1)=1, a(2)=5, a(n+1) = 2^phi(a(1)*a(2)*...*a(n)) - 3.
  * @author Sean A. Irvine
  */
-public class A049506 implements Sequence {
+public class A049506 extends Sequence1 {
 
   private Z mA = null;
 

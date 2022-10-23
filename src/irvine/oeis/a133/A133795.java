@@ -3,6 +3,7 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001358;
 import irvine.oeis.a100.A100959;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a100.A100959;
  * A133795 a(n) = n-th semiprime + n-th non-semiprime.
  * @author Georg Fischer
  */
-public class A133795 implements Sequence {
+public class A133795 extends Sequence1 {
 
   final Sequence mA001358 = new A001358();
   final Sequence mA100959 = new A100959();

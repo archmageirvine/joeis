@@ -6,14 +6,14 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A006814 Related to self-avoiding walks on square lattice.
  * @author Sean A. Irvine
  */
-public class A006814 implements Sequence {
+public class A006814 extends Sequence1 {
 
   static final int[] DELTA_X = {-1, 1, 0, 0};
   static final int[] DELTA_Y = {0, 0, -1, 1};

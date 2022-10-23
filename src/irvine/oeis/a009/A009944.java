@@ -2,13 +2,13 @@ package irvine.oeis.a009;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009944 Left-right/right-left numbers: n = pq such that n=q_reversed*p_reversed.
  * @author Sean A. Irvine
  */
-public class A009944 implements Sequence {
+public class A009944 extends Sequence1 {
 
   private long mN = 125;
 

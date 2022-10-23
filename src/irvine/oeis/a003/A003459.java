@@ -3,14 +3,14 @@ package irvine.oeis.a003;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A003459 Absolute primes (or permutable primes): every permutation of the digits is a prime.
  * @author Sean A. Irvine
  */
-public class A003459 implements Sequence {
+public class A003459 extends Sequence1 {
 
   // Based on results in A. Slinko, "Absolute Primes"
   // Excluding single digit cases, can only have digits 1, 3, 7, 9.

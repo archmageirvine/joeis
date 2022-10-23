@@ -3,13 +3,13 @@ package irvine.oeis.a134;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A134996 Dihedral calculator primes: p, p upside down, p in a mirror, p upside-down-and-in-a-mirror are all primes.
  * @author Sean A. Irvine
  */
-public class A134996 implements Sequence {
+public class A134996 extends Sequence1 {
 
   private static final String NATURAL = "01258";
   private static final String MIRROR = "01528";

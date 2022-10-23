@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023700 Numbers with exactly 2 2's in ternary expansion.
  * @author Sean A. Irvine
  */
-public class A023700 implements Sequence {
+public class A023700 extends Sequence1 {
 
   private long mN = 0;
 

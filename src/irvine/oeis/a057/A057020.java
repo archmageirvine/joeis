@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057020 Numerator of (sum of divisors of n / number of divisors of n).
  * @author Sean A. Irvine
  */
-public class A057020 implements Sequence {
+public class A057020 extends Sequence1 {
 
   private long mN = 0;
 

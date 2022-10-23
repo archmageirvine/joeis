@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005808 Numbers k such that (11^k - 1)/10 is prime.
  * @author Sean A. Irvine
  */
-public class A005808 implements Sequence {
+public class A005808 extends Sequence1 {
 
   private Z mA = Z.valueOf(11);
   private long mN = 1;

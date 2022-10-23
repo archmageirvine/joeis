@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028429 Clog sequence in base 8. Right to left concatenation of n, int(log_8(n)),int(log_8(int(log_8(n)))),... in base8.
  * @author Sean A. Irvine
  */
-public class A028429 implements Sequence {
+public class A028429 extends Sequence1 {
 
   private static final CR BASE_LOG = CR.EIGHT.log();
   private long mN = 0;

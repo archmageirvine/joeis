@@ -2,13 +2,13 @@ package irvine.oeis.a167;
 // manually
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A167626 Prime numbers ending in the prime number 101.
  * @author Georg Fischer
  */
-public class A167626 implements Sequence {
+public class A167626 extends Sequence1 {
 
   private final long mAdd10;
   private Z mN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003460 Octal formula for dragon curve of order n.
  * @author Sean A. Irvine
  */
-public class A003460 implements Sequence {
+public class A003460 extends Sequence1 {
 
   private String mDragon = "";
 

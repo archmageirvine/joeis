@@ -3,13 +3,14 @@ package irvine.oeis.a080;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004755;
 
 /**
  * A080079 Least number causing the longest carry sequence when adding numbers &lt;= n to n in binary representation.
  * @author Georg Fischer
  */
-public class A080079 implements Sequence {
+public class A080079 extends Sequence1 {
 
   final Sequence mA004755 = new A004755();
   protected long mN;

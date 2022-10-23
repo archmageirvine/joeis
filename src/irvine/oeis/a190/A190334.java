@@ -3,13 +3,14 @@ package irvine.oeis.a190;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a022.A022838;
 
 /**
  * A190334 a(n) = n + floor(n*r/t) + floor(n*s/t) where r=1, s=sqrt(3), t=1/s.
  * @author Georg Fischer
  */
-public class A190334 implements Sequence {
+public class A190334 extends Sequence1 {
 
   final Sequence mA022838 = new A022838();
   protected long mN;

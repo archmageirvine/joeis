@@ -3,13 +3,13 @@ package irvine.oeis.a023;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023776 Metadromes: digits in base 7 are in strict ascending order.
  * @author Sean A. Irvine
  */
-public class A023776 implements Sequence {
+public class A023776 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   {

@@ -7,13 +7,13 @@ import java.util.TreeSet;
 import irvine.math.Comparators;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036051 Sum of distances between greatest-part-order and length-order of partitions of n.
  * @author Sean A. Irvine
  */
-public class A036051 implements Sequence {
+public class A036051 extends Sequence1 {
 
   // todo
 

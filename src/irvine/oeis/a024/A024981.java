@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024981 Numbers that are the sum of 3 positive cubes, including repetitions.
  * @author Sean A. Irvine
  */
-public class A024981 implements Sequence {
+public class A024981 extends Sequence1 {
 
   private long mN = 2;
   private long mC = 0;

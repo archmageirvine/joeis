@@ -3,13 +3,13 @@ package irvine.oeis.a011;
 import java.time.Year;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011771 Days per century for Roman calendar from first century, following Gregorian calendar after A.D. 1582.
  * @author Sean A. Irvine
  */
-public class A011771 implements Sequence {
+public class A011771 extends Sequence1 {
 
   // Cf. A011770.
 

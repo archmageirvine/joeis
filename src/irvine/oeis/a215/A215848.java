@@ -3,13 +3,14 @@ package irvine.oeis.a215;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A215848 Primes &gt; 3.
  * @author Georg Fischer
  */
-public class A215848 implements Sequence {
+public class A215848 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   /** Construct the sequence. */

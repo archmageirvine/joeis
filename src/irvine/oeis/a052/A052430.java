@@ -5,14 +5,14 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A052430 Numbers n such that sum of digits and product of digits are both prime.
  * @author Sean A. Irvine
  */
-public class A052430 implements Sequence {
+public class A052430 extends Sequence1 {
 
   // Only digits 1-9 can occur, only 1 digit not equal to 1 can occur
   // Any permutation of a value in the sequence is also in the sequence.

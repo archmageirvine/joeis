@@ -3,13 +3,14 @@ package irvine.oeis.a330;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002236;
 import irvine.oeis.a050.A050524;
 /**
  * A330412 Integers m such that sigma(m) + sigma(8*m) = 18*m.
  * @author Georg Fischer
  */
-public class A330412 implements Sequence {
+public class A330412 extends Sequence1 {
 
   private final Sequence mA002236 = new A002236();
   private final Sequence mA050524 = new A050524();

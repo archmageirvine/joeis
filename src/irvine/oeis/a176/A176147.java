@@ -3,13 +3,14 @@ package irvine.oeis.a176;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008472;
 
 /**
  * A176147 a(n) = n^sopf(n), where sopf(n) is the sum of the distinct primes dividing n (A008472).
  * @author Georg Fischer
  */
-public class A176147 implements Sequence {
+public class A176147 extends Sequence1 {
 
   final Sequence mA008472 = new A008472();
   protected long mN;

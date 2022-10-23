@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A138309 a(1)=1. a(n) = smallest integer &gt; a(n-1) that is coprime to every (nonzero) exponent in the prime factorization of n.
  * @author Sean A. Irvine
  */
-public class A138309 implements Sequence {
+public class A138309 extends Sequence1 {
 
   private long mN = 0;
   private long mT = 0;

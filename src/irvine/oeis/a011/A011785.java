@@ -3,13 +3,13 @@ package irvine.oeis.a011;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011785 Number of 3 X 3 matrices whose determinant is 1 mod n.
  * @author Sean A. Irvine
  */
-public class A011785 implements Sequence {
+public class A011785 extends Sequence1 {
 
   private long mN = 0;
 

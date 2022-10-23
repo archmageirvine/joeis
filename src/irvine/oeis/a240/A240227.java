@@ -3,13 +3,14 @@ package irvine.oeis.a240;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a024.A024606;
 
 /**
  * A240227 All even positive integers which have at least one 'balanced' representation as a sum of three distinct nonzero squares.
  * @author Georg Fischer
  */
-public class A240227 implements Sequence {
+public class A240227 extends Sequence1 {
 
   final Sequence mA024606 = new A024606();
   @Override

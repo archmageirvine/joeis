@@ -4,6 +4,7 @@ package irvine.oeis.a066;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a001.A001157;
 
@@ -11,7 +12,7 @@ import irvine.oeis.a001.A001157;
  * A066294 a(n) = A000203(n)^2 - A001157(n) - 2n = sigma(n)^2 - sigma_2(n) - 2n.
  * @author Georg Fischer
  */
-public class A066294 implements Sequence {
+public class A066294 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA001157 = new A001157();

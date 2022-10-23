@@ -3,13 +3,14 @@ package irvine.oeis.a249;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003961;
 
 /**
  * A249734 Even bisection of A003961: Replace in 2n each prime factor p(k) with prime p(k+1).
  * @author Georg Fischer
  */
-public class A249734 implements Sequence {
+public class A249734 extends Sequence1 {
 
   final Sequence mA003961 = new A003961();
   @Override

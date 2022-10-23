@@ -3,13 +3,14 @@ package irvine.oeis.a066;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007947;
 import irvine.oeis.a051.A051903;
 /**
  * A066636 a(n) = A066638(n)/n, where A066638(n) is the smallest power of a squarefree kernel of n that is a multiple of n.
  * @author Georg Fischer
  */
-public class A066636 implements Sequence {
+public class A066636 extends Sequence1 {
 
   private final Sequence mA007947 = new A007947();
   private final Sequence mA051903 = new A051903();

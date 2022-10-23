@@ -1,13 +1,13 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A047713 Euler-Jacobi pseudoprimes: 2^((n-1)/2) == (2 / n) mod n, where (2 / n) is a Jacobi symbol.
  * @author Sean A. Irvine
  */
-public class A047713 implements Sequence {
+public class A047713 extends Sequence1 {
 
   private Z mN = Z.valueOf(119);
 

@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020958 a(n) = Sum_{k &gt;= 1} floor(3*tau^(n-k)).
  * @author Sean A. Irvine
  */
-public class A020958 implements Sequence {
+public class A020958 extends Sequence1 {
 
   private long mN = -1;
 

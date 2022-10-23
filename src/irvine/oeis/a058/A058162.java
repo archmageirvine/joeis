@@ -3,13 +3,14 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a034.A034382;
 
 /**
  * A058162 Number of labeled Abelian groups with a fixed identity.
  * @author Georg Fischer
  */
-public class A058162 implements Sequence {
+public class A058162 extends Sequence1 {
 
   final Sequence mA034382 = new A034382();
   protected long mN;

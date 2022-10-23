@@ -3,12 +3,13 @@ package irvine.oeis.a225;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a079.A079523;
 /**
  * A225822 Lesser of adjacent odd numbers with different parity of binary weight and both isolated from odd numbers of same parity of binary weight.
  * @author Georg Fischer
  */
-public class A225822 implements Sequence {
+public class A225822 extends Sequence1 {
 
   private final Sequence mA079523 = new A079523();
   @Override

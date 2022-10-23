@@ -3,13 +3,14 @@ package irvine.oeis.a222;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007530;
 
 /**
  * A222960 Numbers n such that 2*n + {3, 5, 9, 11} are all primes.
  * @author Georg Fischer
  */
-public class A222960 implements Sequence {
+public class A222960 extends Sequence1 {
 
   final Sequence mA007530 = new A007530();
   @Override

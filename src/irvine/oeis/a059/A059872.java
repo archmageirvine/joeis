@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059872 Solutions to the equation given in A059871, encoded as binary vectors and converted to decimal.
  * @author Sean A. Irvine
  */
-public class A059872 implements Sequence {
+public class A059872 extends Sequence1 {
 
   protected final TreeSet<Long> mA = new TreeSet<>();
   private final Fast mPrime = new Fast();

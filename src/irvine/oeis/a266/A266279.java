@@ -2,13 +2,13 @@ package irvine.oeis.a266;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A266279 Nonnegative integers where all occurring digits occur with equal frequency.
  * @author Georg Fischer
  */
-public class A266279 implements Sequence {
+public class A266279 extends Sequence1 {
 
   protected int mM;
   protected int mBase;

@@ -3,13 +3,14 @@ package irvine.oeis.a107;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a013.A013928;
 
 /**
  * A107079 Minimal number of squared primes in a squarefree gap of length n.
  * @author Georg Fischer
  */
-public class A107079 implements Sequence {
+public class A107079 extends Sequence1 {
 
   final Sequence mA013928 = new A013928();
   @Override

@@ -3,6 +3,7 @@ package irvine.oeis.a264;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a001.A001602;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001602;
  * A264008 Index of the smallest Fibonacci number divisible by prime(n)^2.
  * @author Georg Fischer
  */
-public class A264008 implements Sequence {
+public class A264008 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA001602 = new A001602();

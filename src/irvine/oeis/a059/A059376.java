@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059376 Jordan function J_3(n).
  * @author Georg Fischer
  */
-public class A059376 implements Sequence {
+public class A059376 extends Sequence1 {
 
   protected long mN = 0;
   protected int mExp; // exponent k in "J_k"

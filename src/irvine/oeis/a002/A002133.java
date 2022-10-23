@@ -4,13 +4,13 @@ import java.util.HashMap;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002133 Number of partitions of n with exactly two part sizes.
  * @author Sean A. Irvine
  */
-public class A002133 implements Sequence {
+public class A002133 extends Sequence1 {
 
   private long mN = 0;
 

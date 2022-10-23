@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027569 Initial members of prime decaplets (p, p+2, p+6, p+8, p+12, p+18, p+20, p+26, p+30, p+32).
  * @author Sean A. Irvine
  */
-public class A027569 implements Sequence {
+public class A027569 extends Sequence1 {
 
   // Slow ...
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002958 Numbers n such that 2*25^n - 1 is prime.
  * @author Sean A. Irvine
  */
-public class A002958 implements Sequence {
+public class A002958 extends Sequence1 {
 
   private Z mN = Z.TWO;
   private Z mP = Z.ZERO;

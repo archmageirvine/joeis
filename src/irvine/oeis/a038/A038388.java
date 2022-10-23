@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038388 Let f(n) be the smallest number such that the arithmetic mean (A) and geometric mean (G) of n and f(n) are both integers; sequence gives G values.
  * @author Sean A. Irvine
  */
-public class A038388 implements Sequence {
+public class A038388 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

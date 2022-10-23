@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000326;
 import irvine.util.array.LongDynamicBooleanArray;
 
@@ -12,7 +12,7 @@ import irvine.util.array.LongDynamicBooleanArray;
  * A003679 Numbers that are not the sum of 3 pentagonal numbers.
  * @author Sean A. Irvine
  */
-public class A003679 implements Sequence {
+public class A003679 extends Sequence1 {
 
   private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
   private final List<Long> mPentagonals = new ArrayList<>();

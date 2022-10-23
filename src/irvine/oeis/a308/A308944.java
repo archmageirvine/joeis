@@ -3,13 +3,13 @@ package irvine.oeis.a308;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A308944 a(n) = Product_{k=1..n} lcm(n,k) / (k * gcd(n,k)).
  * @author Georg Fischer
  */
-public class A308944 implements Sequence {
+public class A308944 extends Sequence1 {
 
   private int mN = 0;
 

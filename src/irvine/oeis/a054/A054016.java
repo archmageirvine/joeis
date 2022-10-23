@@ -5,13 +5,13 @@ import java.util.Set;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054016 a(n) = smallest nonnegative integer not the Nim sum of at most 4 earlier terms.
  * @author Sean A. Irvine
  */
-public class A054016 implements Sequence {
+public class A054016 extends Sequence1 {
 
   private final Set<Long> mA = new HashSet<>();
   private final Set<Long> mRejects = new HashSet<>();

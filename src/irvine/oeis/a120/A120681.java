@@ -3,6 +3,7 @@ package irvine.oeis.a120;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046086;
 import irvine.oeis.a046.A046087;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a046.A046087;
  * A120681 Sum of legs of primitive Pythagorean triangles sorted first on hypotenuse, then long leg.
  * @author Georg Fischer
  */
-public class A120681 implements Sequence {
+public class A120681 extends Sequence1 {
 
   final Sequence mA046086 = new A046086();
   final Sequence mA046087 = new A046087();

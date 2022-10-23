@@ -3,13 +3,13 @@ package irvine.oeis.a164;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A164839 Left-truncatable squares: every suffix is square.
  * @author Sean A. Irvine
  */
-public class A164839 implements Sequence {
+public class A164839 extends Sequence1 {
 
   private final HashSet<String> mValid = new HashSet<>();
   {

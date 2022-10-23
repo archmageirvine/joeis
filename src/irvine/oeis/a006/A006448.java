@@ -6,13 +6,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006448 Number of n-element algebras with 1 binary operator and 1 constant (pointed groupoids).
  * @author Sean A. Irvine
  */
-public class A006448 implements Sequence {
+public class A006448 extends Sequence1 {
 
   private int mN = 0;
 

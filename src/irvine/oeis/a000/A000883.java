@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000883 Number of switching networks with C(2,n) acting on the domain and AG(2,2) acting on the range.
  * @author Sean A. Irvine
  */
-public class A000883 implements Sequence {
+public class A000883 extends Sequence1 {
 
   private int mN = 0;
 

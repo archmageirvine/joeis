@@ -3,13 +3,13 @@ package irvine.oeis.a037;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037264 Numbers whose sum of reciprocals of digits is the reciprocal of an integer.
  * @author Sean A. Irvine
  */
-public class A037264 implements Sequence {
+public class A037264 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a061;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002034;
 
 /**
  * A061243 a(n) = n+r where r is the smallest number such that n divides (n+1)(n+2)(n+3)...(n+r).
  * @author Georg Fischer
  */
-public class A061243 implements Sequence {
+public class A061243 extends Sequence1 {
 
   final Sequence mA002034 = new A002034();
   protected long mN;

@@ -1,14 +1,14 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A029954 Palindromic in base 7.
  * @author Sean A. Irvine
  */
-public class A029954 implements Sequence {
+public class A029954 extends Sequence1 {
 
   private long mN = -1;
 

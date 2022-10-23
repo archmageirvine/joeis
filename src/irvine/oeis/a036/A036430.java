@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036430 Number of iterations needed to reach 1 under the map n -&gt; Omega(n).
  * @author Sean A. Irvine
  */
-public class A036430 implements Sequence {
+public class A036430 extends Sequence1 {
 
   private long mN = 0;
 

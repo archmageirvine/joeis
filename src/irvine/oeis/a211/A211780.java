@@ -3,13 +3,14 @@ package irvine.oeis.a211;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007429;
 
 /**
  * A211780 a(n) = Sum_{d_&lt;n | n} (d_&lt;n) * tau(n / d_&lt;n), where d_&lt;n = divisors of n that are less than n, tau(x) = A000005(x).
  * @author Georg Fischer
  */
-public class A211780 implements Sequence {
+public class A211780 extends Sequence1 {
 
   final Sequence mA007429 = new A007429();
   protected long mN;

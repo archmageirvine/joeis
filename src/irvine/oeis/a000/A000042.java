@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000042 Unary representation of natural numbers.
  * @author Sean A. Irvine
  */
-public class A000042 implements Sequence {
+public class A000042 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048753 Composite numbers k whose product of aliquot divisors divided by number of aliquot divisors is an integer.
  * @author Sean A. Irvine
  */
-public class A048753 implements Sequence {
+public class A048753 extends Sequence1 {
 
   private long mN = 3;
 

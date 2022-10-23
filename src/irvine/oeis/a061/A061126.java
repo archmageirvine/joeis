@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A061126 Number of degree-n permutations of order exactly 16.
  * E.g.f.: - exp(x + 1/2*x^2 + 1/4*x^4 + 1/8*x^8) + exp(x + 1/2*x^2 + 1/4*x^4 + 1/8*x^8 + 1/16*x^16)
  * @author Georg Fischer
  */
-public class A061126 implements Sequence {
+public class A061126 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

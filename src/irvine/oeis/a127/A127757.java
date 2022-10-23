@@ -3,13 +3,13 @@ package irvine.oeis.a127;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A127757 Integer part of Gauss' Arithmetic-Geometric Mean M(1,n).
  * @author Georg Fischer
  */
-public class A127757 implements Sequence {
+public class A127757 extends Sequence1 {
 
   protected int mN;
   protected CR mParm1;

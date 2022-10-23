@@ -3,13 +3,14 @@ package irvine.oeis.a094;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a049.A049820;
 import irvine.oeis.a051.A051953;
 /**
  * A094181 a(n) = (n - tau(n))*(n - phi(n)), where tau=A000005 and phi=A000010.
  * @author Georg Fischer
  */
-public class A094181 implements Sequence {
+public class A094181 extends Sequence1 {
 
   private final Sequence mA049820 = new A049820();
   private final Sequence mA051953 = new A051953();

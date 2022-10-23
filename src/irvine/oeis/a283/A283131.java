@@ -3,13 +3,14 @@ package irvine.oeis.a283;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a157.A157238;
 
 /**
  * A283131 A different representation (1 mapped to 1, 2 mapped to -1) of the Linus sequence (A006345): a(n) "breaks the pattern" by avoiding the longest doubled suffix.
  * @author Georg Fischer
  */
-public class A283131 implements Sequence {
+public class A283131 extends Sequence1 {
 
   final Sequence mA157238 = new A157238();
   @Override

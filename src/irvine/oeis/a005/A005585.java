@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005585 5-dimensional pyramidal numbers: a(n) = n*(n+1)*(n+2)*(n+3)*(2n+3)/5!.
  * @author Sean A. Irvine
  */
-public class A005585 implements Sequence {
+public class A005585 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

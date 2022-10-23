@@ -5,13 +5,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.CyclotomicPolynomials;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054372 Table of resultants for cyclotomic polynomials phi_k(x) and phi_n(x).
  * @author Sean A. Irvine
  */
-public class A054372 implements Sequence {
+public class A054372 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final CyclotomicPolynomials mCyclotomicPolynomials = new CyclotomicPolynomials();

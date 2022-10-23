@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027701 Primes with even number of 1's in binary expansion such that next prime also has even number of 1's.
  * @author Sean A. Irvine
  */
-public class A027701 implements Sequence {
+public class A027701 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

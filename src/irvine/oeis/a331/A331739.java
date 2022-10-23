@@ -3,13 +3,14 @@ package irvine.oeis.a331;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000265;
 
 /**
  * A331739 a(n) is n minus its largest odd divisor.
  * @author Georg Fischer
  */
-public class A331739 implements Sequence {
+public class A331739 extends Sequence1 {
 
   final Sequence mA000265 = new A000265();
   protected long mN;

@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035081 Number of increasing asymmetric rooted connected graphs where every block is a complete graph.
  * @author Sean A. Irvine
  */
-public class A035081 implements Sequence {
+public class A035081 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final Polynomial<Q> mA = RING.create(Collections.singletonList(Q.ONE));

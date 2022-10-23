@@ -3,13 +3,14 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 
 /**
  * A326122 a(n) = 10 * sigma(n).
  * @author Georg Fischer
  */
-public class A326122 implements Sequence {
+public class A326122 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   @Override

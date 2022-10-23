@@ -1,13 +1,13 @@
 package irvine.oeis.a137;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A137866 a(1)=0. For n &gt;= 2, a(n) = gcd(a(n-1)+1, n).
  * @author Sean A. Irvine
  */
-public class A137866 implements Sequence {
+public class A137866 extends Sequence1 {
 
   private long mN = 0;
   private Z mPrev = Z.ZERO;

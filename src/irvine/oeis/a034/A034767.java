@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034767 Dirichlet convolution of phi(n) with Bell numbers.
  * @author Sean A. Irvine
  */
-public class A034767 implements Sequence {
+public class A034767 extends Sequence1 {
 
   private int mN = 0;
 

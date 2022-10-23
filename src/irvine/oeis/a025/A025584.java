@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025584 Primes p such that p-2 is not a prime.
  * @author Sean A. Irvine
  */
-public class A025584 implements Sequence {
+public class A025584 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

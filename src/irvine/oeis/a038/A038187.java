@@ -3,13 +3,13 @@ package irvine.oeis.a038;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038187 Numbers other than powers of 10 that are coprime to the sum of their digits.
  * @author Sean A. Irvine
  */
-public class A038187 implements Sequence {
+public class A038187 extends Sequence1 {
 
   private long mN = 10;
   private long mT = 100;

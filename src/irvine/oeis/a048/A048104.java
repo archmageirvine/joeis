@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048104 If n = Product p_i^e_i (e_i &gt;= 1) then for some i, p_i &gt; e_i and for some j, p_j &lt; e_j.
  * @author Sean A. Irvine
  */
-public class A048104 implements Sequence {
+public class A048104 extends Sequence1 {
 
   private long mN = 23;
 

@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a022.A022290;
 
 /**
  * A057336 1) Write n in binary; 2) Find run lengths of this expression; 3) Replace these as follows: 1 -&gt; 0, 2 -&gt; 010, 3 -&gt; 01010, 4 -&gt; 0101010...; 4) Remove final 0 and append an initial 1; 5) The term a(n) is the number with the obtained Zeckendorf expression.
  * @author Sean A. Irvine
  */
-public class A057336 implements Sequence {
+public class A057336 extends Sequence1 {
 
   private long mN = 0;
 

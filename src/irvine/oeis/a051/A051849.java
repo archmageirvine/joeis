@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A051849 Table in which n-th row gives all compositions of n interpreted as digits in base n+1.
  * @author Sean A. Irvine
  */
-public class A051849 implements Sequence {
+public class A051849 extends Sequence1 {
 
   protected int mN = 0;
   private final TreeSet<Z> mA = new TreeSet<>();

@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import irvine.math.LongUtils;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003277 Cyclic numbers: k such that k and phi(k) are relatively prime; also k such that there is just one group of order k, i.e., A000001(n) = 1.
  * @author Sean A. Irvine
  */
-public class A003277 implements Sequence {
+public class A003277 extends Sequence1 {
 
   private int mN = 0;
   private int mLimit = 5;

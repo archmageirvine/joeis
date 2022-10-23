@@ -3,13 +3,14 @@ package irvine.oeis.a119;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a036.A036689;
 
 /**
  * A119959 p^2-p+1 central polygonal numbers with prime indices A002061(prime(n)).
  * @author Georg Fischer
  */
-public class A119959 implements Sequence {
+public class A119959 extends Sequence1 {
 
   final Sequence mA036689 = new A036689();
   @Override

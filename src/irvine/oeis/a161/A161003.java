@@ -3,6 +3,7 @@ package irvine.oeis.a161;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 import irvine.oeis.a052.A052369;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a052.A052369;
  * A161003 A list of the composite numbers divided by their largest prime factors.
  * @author Georg Fischer
  */
-public class A161003 implements Sequence {
+public class A161003 extends Sequence1 {
 
   final Sequence mA002808 = new A002808();
   final Sequence mA052369 = new A052369();

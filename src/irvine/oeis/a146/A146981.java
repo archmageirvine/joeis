@@ -3,13 +3,14 @@ package irvine.oeis.a146;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a062.A062326;
 
 /**
  * A146981 Numbers k of the form q^2, q = prime, such that k-2 is a prime.
  * @author Georg Fischer
  */
-public class A146981 implements Sequence {
+public class A146981 extends Sequence1 {
 
   final Sequence mA062326 = new A062326();
   @Override

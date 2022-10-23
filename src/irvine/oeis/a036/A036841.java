@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036841 Smallest number k such that floor[(the number of digits in k!) / k] is greater than any j &lt; k.
  * @author Sean A. Irvine
  */
-public class A036841 implements Sequence {
+public class A036841 extends Sequence1 {
 
   private static final CR LOG10 = CR.TEN.log();
   private Z mF = Z.ONE;

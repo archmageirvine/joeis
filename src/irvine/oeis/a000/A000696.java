@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import irvine.graph.Graph;
 import irvine.graph.Vertex;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000696 Numbers k such that (1,k) is "good".
  * @author Sean A. Irvine
  */
-public class A000696 implements Sequence {
+public class A000696 extends Sequence1 {
 
   private int mN = 0;
 

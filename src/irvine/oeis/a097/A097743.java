@@ -3,13 +3,14 @@ package irvine.oeis.a097;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001348;
 import irvine.oeis.a061.A061286;
 /**
  * A097743 Numbers of the form 3*2^(p - 1) - 1 where p is prime.
  * @author Georg Fischer
  */
-public class A097743 implements Sequence {
+public class A097743 extends Sequence1 {
 
   private final Sequence mA001348 = new A001348();
   private final Sequence mA061286 = new A061286();

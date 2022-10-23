@@ -3,13 +3,13 @@ package irvine.oeis.a019;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019548 Cubes formed by concatenating other cubes.
  * @author Sean A. Irvine
  */
-public class A019548 implements Sequence {
+public class A019548 extends Sequence1 {
 
   private final TreeSet<Long> mConcatOfCubes = new TreeSet<>();
   private long mN = -1;

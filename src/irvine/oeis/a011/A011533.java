@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011533 Numbers that contain a 3.
  * @author Sean A. Irvine
  */
-public class A011533 implements Sequence {
+public class A011533 extends Sequence1 {
 
   private long mN = 2;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a009;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009949 Factorial expansion of sqrt(2) = Sum_{n&gt;=1} a(n)/n!, using greedy algorithm.
  * @author Sean A. Irvine
  */
-public class A009949 implements Sequence {
+public class A009949 extends Sequence1 {
 
   private int mN = 0;
   private Z mF = Z.ONE;

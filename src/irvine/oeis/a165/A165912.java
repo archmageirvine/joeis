@@ -3,12 +3,13 @@ package irvine.oeis.a165;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A165912 Number of alternating polynomials of degree 3n in GF(2)[X], n&gt;0.
  * @author Georg Fischer
  */
-public class A165912 implements Sequence {
+public class A165912 extends Sequence1 {
 
   final Sequence mA165920 = new A165920();
   @Override

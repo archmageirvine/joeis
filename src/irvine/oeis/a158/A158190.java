@@ -2,13 +2,13 @@ package irvine.oeis.a158;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A158190 Nonprime numbers with final digit prime.
  * @author Georg Fischer
  */
-public class A158190 implements Sequence {
+public class A158190 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

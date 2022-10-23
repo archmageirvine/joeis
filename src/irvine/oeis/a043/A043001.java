@@ -2,13 +2,13 @@ package irvine.oeis.a043;
 // manually 2021-02-28
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A043001 Base-3 palindromes that start with 1.
  * @author Georg Fischer
  */
-public class A043001 implements Sequence {
+public class A043001 extends Sequence1 {
 
   protected int mRadix; // number system base
   protected int mStart; // first digit (in mRadix)

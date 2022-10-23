@@ -3,14 +3,14 @@ package irvine.oeis.a203;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018252;
 
 /**
  * A203418 Vandermonde determinant of the first n composite numbers (A002808).
  * @author Georg Fischer
  */
-public class A203418 implements Sequence {
+public class A203418 extends Sequence1 {
 
   private int mN = 0;
   private final MemorySequence mA018252 = MemorySequence.cachedSequence(new A018252());

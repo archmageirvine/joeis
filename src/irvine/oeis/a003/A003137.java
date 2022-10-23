@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003137 Write n in base 3 and juxtapose.
  * @author Georg Fischer
  */
-public class A003137 implements Sequence {
+public class A003137 extends Sequence1 {
  
   private String mS = "";
   private int mPos = 0;

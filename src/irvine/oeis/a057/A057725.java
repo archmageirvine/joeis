@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import jmason.poly.Polyare;
 import jmason.poly.PolyareCounter;
 
@@ -11,7 +11,7 @@ import jmason.poly.PolyareCounter;
  * A057725 Number of "polyares" of order n (turning over not allowed).
  * @author Sean A. Irvine
  */
-public class A057725 implements Sequence {
+public class A057725 extends Sequence1 {
 
   private int mN = 0;
   private List<Polyare> mPrevList = null;

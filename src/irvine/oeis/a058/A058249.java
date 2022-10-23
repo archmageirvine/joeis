@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058249 (Smallest prime &gt;= 2^n) - (largest prime &lt;= 2^n).
  * @author Sean A. Irvine
  */
-public class A058249 implements Sequence {
+public class A058249 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mA = Z.ONE;

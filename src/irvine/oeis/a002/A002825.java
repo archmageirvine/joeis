@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002825 Number of precomplete Post functions.
  * @author Sean A. Irvine
  */
-public class A002825 implements Sequence {
+public class A002825 extends Sequence1 {
 
   private int mN = 0;
 

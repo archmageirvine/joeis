@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006430 Number of loopless tree-rooted planar maps with 5 vertices and n faces and no isthmuses.
  * @author Sean A. Irvine
  */
-public class A006430 implements Sequence {
+public class A006430 extends Sequence1 {
 
   private long mN = -2;
 

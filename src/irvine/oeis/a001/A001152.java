@@ -4,13 +4,13 @@ import irvine.math.group.GaloisField;
 import irvine.math.group.GeneralLinearGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001152 Number of n-input 3-output switching networks with GL(n,2) acting on the input and S(3) and C(2,3) acting on the output.
  * @author Sean A. Irvine
  */
-public class A001152 implements Sequence {
+public class A001152 extends Sequence1 {
 
   private int mN = 0;
 

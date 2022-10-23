@@ -4,14 +4,14 @@ package irvine.oeis.a203;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018252;
 
 /**
  * A203415 Vandermonde determinant of the first n nonprimes (A018252).
  * @author Georg Fischer
  */
-public class A203415 implements Sequence {
+public class A203415 extends Sequence1 {
 
   private int mN = 0;
   private final MemorySequence mA018252 = MemorySequence.cachedSequence(new PrependSequence(new A018252(), 1));

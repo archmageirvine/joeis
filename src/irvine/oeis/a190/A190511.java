@@ -3,13 +3,14 @@ package irvine.oeis.a190;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a022.A022839;
 
 /**
  * A190511 n+[nr/u]+[ns/u]+[nt/u];  r=golden ratio, s=r^2, t=r^3, u=r^4.
  * @author Georg Fischer
  */
-public class A190511 implements Sequence {
+public class A190511 extends Sequence1 {
 
   final Sequence mA022839 = new A022839();
   @Override

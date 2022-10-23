@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050625 Divisible by 3^k (where k is digit length of a(n)).
  * @author Sean A. Irvine
  */
-public class A050625 implements Sequence {
+public class A050625 extends Sequence1 {
 
   private long mN = 3;
   private long mLim = 10;

@@ -3,13 +3,14 @@ package irvine.oeis.a236;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a089.A089001;
 
 /**
  * A236767 Numbers whose square is a fourth power plus a prime.
  * @author Georg Fischer
  */
-public class A236767 implements Sequence {
+public class A236767 extends Sequence1 {
 
   final Sequence mA089001 = new A089001();
   @Override

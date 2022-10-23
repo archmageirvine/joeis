@@ -3,13 +3,14 @@ package irvine.oeis.a134;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000396;
 
 /**
  * A134705 a(n) = n-th perfect number divided by 2^n.
  * @author Georg Fischer
  */
-public class A134705 implements Sequence {
+public class A134705 extends Sequence1 {
 
   final Sequence mA000396 = new A000396();
   protected long mN;

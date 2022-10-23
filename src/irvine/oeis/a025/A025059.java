@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025059 Numbers expressible in more than one way as j*k + k*i + i*j, where 1 &lt;=i &lt; j &lt; k.
  * @author Sean A. Irvine
  */
-public class A025059 implements Sequence {
+public class A025059 extends Sequence1 {
 
   private long mN = 2;
 

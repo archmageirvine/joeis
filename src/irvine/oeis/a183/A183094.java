@@ -3,13 +3,14 @@ package irvine.oeis.a183;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005361;
 
 /**
  * A183094 a(n) = number of powerful divisors d (excluding 1) of n.
  * @author Georg Fischer
  */
-public class A183094 implements Sequence {
+public class A183094 extends Sequence1 {
 
   final Sequence mA005361 = new A005361();
   @Override

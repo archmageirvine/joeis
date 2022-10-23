@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038700 Smallest prime == -1 (mod n).
  * @author Sean A. Irvine
  */
-public class A038700 implements Sequence {
+public class A038700 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

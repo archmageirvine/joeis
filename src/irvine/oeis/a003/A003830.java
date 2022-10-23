@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003830 Order of universal Chevalley group D_n (3).
  * @author Sean A. Irvine
  */
-public class A003830 implements Sequence {
+public class A003830 extends Sequence1 {
 
   private long mN = 0;
 

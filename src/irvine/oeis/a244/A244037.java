@@ -2,13 +2,13 @@ package irvine.oeis.a244;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A244037 Numbers of the form x^2+14y^2.
  * @author Sean A. Irvine
  */
-public class A244037 implements Sequence {
+public class A244037 extends Sequence1 {
 
   private long mN = -1;
 

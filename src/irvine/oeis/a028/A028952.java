@@ -3,13 +3,13 @@ package irvine.oeis.a028;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028952 Numbers represented by quadratic form with Gram matrix [ 3, 1; 1, 4 ].
  * @author Sean A. Irvine
  */
-public class A028952 implements Sequence {
+public class A028952 extends Sequence1 {
 
   private final TreeSet<Z> mForms = new TreeSet<>();
   private long mX = 0;

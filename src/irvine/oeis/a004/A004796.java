@@ -3,13 +3,13 @@ package irvine.oeis.a004;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004796 Numbers k such that if 2 &lt;= j &lt; k then the fractional part of the k-th partial sum of the harmonic series is &lt; the fractional part of the j-th partial sum of the harmonic series.
  * @author Sean A. Irvine
  */
-public class A004796 implements Sequence {
+public class A004796 extends Sequence1 {
 
   private long mN = 3;
   private CR mLast = CR.ONE;

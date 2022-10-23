@@ -3,6 +3,7 @@ package irvine.oeis.a069;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007429;
 import irvine.oeis.a060.A060640;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a060.A060640;
  * A069914 a(n) = Sum_{d|n} (d-1)*sigma(n/d).
  * @author Georg Fischer
  */
-public class A069914 implements Sequence {
+public class A069914 extends Sequence1 {
 
   final Sequence mA007429 = new A007429();
   final Sequence mA060640 = new A060640();

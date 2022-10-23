@@ -1,13 +1,13 @@
 package irvine.oeis.a022;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A022803 Numbers that reach ...,7,8,4,2,1 under the mapping: if n is even divide by 2 else add 1.
  * @author Sean A. Irvine
  */
-public class A022803 implements Sequence {
+public class A022803 extends Sequence1 {
 
   private long mN = 12;
 

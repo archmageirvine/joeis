@@ -1,13 +1,13 @@
 package irvine.oeis.a109;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A109643 a(1) = 1, a(n) = square of the concatenation of all previous terms.
  * @author Georg Fischer
  */
-public class A109643 implements Sequence {
+public class A109643 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private final StringBuilder mSb = new StringBuilder();

@@ -3,13 +3,14 @@ package irvine.oeis.a050;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033372;
 
 /**
  * A050514 Cards left over after dealing evenly to n people.
  * @author Georg Fischer
  */
-public class A050514 implements Sequence {
+public class A050514 extends Sequence1 {
 
   final Sequence mA033372 = new A033372();
   protected long mN;

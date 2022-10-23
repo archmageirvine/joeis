@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002858;
 
 /**
  * A033629 Numbers that are not the sum of two distinct Ulam numbers.
  * @author Sean A. Irvine
  */
-public class A033629 implements Sequence {
+public class A033629 extends Sequence1 {
 
   private final TreeSet<Z> mForbidden = new TreeSet<>();
   private final MemorySequence mUlam = MemorySequence.cachedSequence(new A002858());

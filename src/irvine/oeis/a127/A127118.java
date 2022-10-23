@@ -3,6 +3,7 @@ package irvine.oeis.a127;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a018.A018252;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a018.A018252;
  * A127118 a(n) = n-th prime * n-th nonprime.
  * @author Georg Fischer
  */
-public class A127118 implements Sequence {
+public class A127118 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA018252 = new A018252();

@@ -3,12 +3,13 @@ package irvine.oeis.a128;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a107.A107316;
 /**
  * A128105 a(n) = smallest multiple of n which is &gt; exp(n).
  * @author Georg Fischer
  */
-public class A128105 implements Sequence {
+public class A128105 extends Sequence1 {
 
   private final Sequence mA107316 = new A107316();
   protected long mN;

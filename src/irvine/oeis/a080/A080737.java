@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A080737 a(1) = a(2) = 0; for n &gt; 2, the least dimension of a lattice possessing a symmetry of order n.
  * @author Sean A. Irvine
  */
-public class A080737 implements Sequence {
+public class A080737 extends Sequence1 {
 
   private long mN = 0;
 

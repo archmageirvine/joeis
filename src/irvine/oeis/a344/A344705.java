@@ -3,6 +3,7 @@ package irvine.oeis.a344;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033879;
 import irvine.oeis.a306.A306927;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a306.A306927;
  * A344705 a(n) = n + A001615(n) - sigma(n), where A001615 is the Dedekind psi-function, and sigma(n) gives the sum of divisors of n; difference between psi and the sum of proper divisors.
  * @author Georg Fischer
  */
-public class A344705 implements Sequence {
+public class A344705 extends Sequence1 {
 
   final Sequence mA033879 = new A033879();
   final Sequence mA306927 = new A306927();

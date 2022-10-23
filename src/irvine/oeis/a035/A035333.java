@@ -3,13 +3,13 @@ package irvine.oeis.a035;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035333 Concatenation of two or more consecutive positive integers.
  * @author Sean A. Irvine
  */
-public class A035333 implements Sequence {
+public class A035333 extends Sequence1 {
 
   private static final class State implements Comparable<State> {
     private final Z mV;

@@ -3,13 +3,14 @@ package irvine.oeis.a109;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046897;
 
 /**
  * A109506 Expansion of (1 - phi(-q)^4)/ 8 in powers of q where phi() is a Ramanujan theta function.
  * @author Georg Fischer
  */
-public class A109506 implements Sequence {
+public class A109506 extends Sequence1 {
 
   final Sequence mA046897 = new A046897();
   protected long mN;

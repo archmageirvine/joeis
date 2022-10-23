@@ -4,13 +4,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 
 /**
  * A062011 a(n) = 2*tau(n) = 2*A000005(n).
  * @author Georg Fischer
  */
-public class A062011 implements Sequence {
+public class A062011 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   @Override

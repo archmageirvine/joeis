@@ -3,13 +3,14 @@ package irvine.oeis.a279;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005652;
 
 /**
  * A279934 Positive integers k such that {(k-1)*r} &gt; 1/2, where r = golden ratio = (1 + sqrt(5))/2 and { } = fractional part.
  * @author Georg Fischer
  */
-public class A279934 implements Sequence {
+public class A279934 extends Sequence1 {
 
   final Sequence mA005652 = new A005652();
   @Override

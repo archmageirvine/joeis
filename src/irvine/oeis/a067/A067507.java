@@ -2,13 +2,13 @@ package irvine.oeis.a067;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A067507 Powers of 2 with even digit sum.
  * @author Georg Fischer
  */
-public class A067507 implements Sequence {
+public class A067507 extends Sequence1 {
 
   private int mBase = 2;
   private Z mPow = Z.ONE;

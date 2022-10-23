@@ -3,14 +3,14 @@ package irvine.oeis.a006;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003636;
 
 /**
  * A006641 Class number of forms with discriminant -A003657(n), or equivalently class number of imaginary quadratic field with discriminant -A003657(n).
  * @author Sean A. Irvine
  */
-public class A006641 implements Sequence {
+public class A006641 extends Sequence1 {
 
   long mN = -2;
 

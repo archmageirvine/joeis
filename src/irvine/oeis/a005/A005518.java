@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005518 Largest label f(T) given to a rooted tree T with n nodes in Matula-Goebel labeling.
  * @author Sean A. Irvine
  */
-public class A005518 implements Sequence {
+public class A005518 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = -1;

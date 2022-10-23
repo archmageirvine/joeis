@@ -4,13 +4,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A031149 Numbers whose square with its last digit deleted is also a square.
  * @author Sean A. Irvine
  */
-public class A031149 implements Sequence {
+public class A031149 extends Sequence1 {
 
   // After Robert Israel
   private static final ComputableReals REALS = ComputableReals.SINGLETON;

@@ -2,13 +2,13 @@ package irvine.oeis.a039;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039635 Fixed point of "n -&gt; n/2 or (n+1)/2 until result is prime".
  * @author Sean A. Irvine
  */
-public class A039635 implements Sequence {
+public class A039635 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

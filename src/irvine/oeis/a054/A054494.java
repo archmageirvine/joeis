@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054494 Largest Fibonacci factor of n.
  * @author Sean A. Irvine
  */
-public class A054494 implements Sequence {
+public class A054494 extends Sequence1 {
 
   private long mN = 0;
 

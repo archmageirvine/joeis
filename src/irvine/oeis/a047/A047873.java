@@ -1,14 +1,14 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 
 /**
  * A047873 a(n) = max_{r=1..n-1} ceiling(t(t(n)-t(r-1))/(n-r+1)), where t() = triangular numbers A000217.
  * @author Sean A. Irvine
  */
-public class A047873 implements Sequence {
+public class A047873 extends Sequence1 {
 
   private long mN = 0;
 

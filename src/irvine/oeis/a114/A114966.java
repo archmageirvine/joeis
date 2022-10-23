@@ -3,6 +3,7 @@ package irvine.oeis.a114;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a001.A001358;
 import irvine.oeis.a014.A014612;
@@ -13,7 +14,7 @@ import irvine.oeis.a014.A014614;
  * A114966 Prime(n) + Semiprime(n) + 3AlmostPrime(n) + 4AlmostPrime(n) + 5AlmostPrime(n).
  * @author Georg Fischer
  */
-public class A114966 implements Sequence {
+public class A114966 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA001358 = new A001358();

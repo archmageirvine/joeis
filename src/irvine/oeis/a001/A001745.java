@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001745 Numbers such that at least one digit contains a loop (version 2). Also called "holey" or "holy" numbers.
  * @author Sean A. Irvine
  */
-public class A001745 implements Sequence {
+public class A001745 extends Sequence1 {
 
   private long mN = -1;
 

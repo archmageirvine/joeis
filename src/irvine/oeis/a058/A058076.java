@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058076 Numbers n such that n | sigma_3(n) + sigma_2(n) + sigma_1(n) + sigma_0(n).
  * @author Sean A. Irvine
  */
-public class A058076 implements Sequence {
+public class A058076 extends Sequence1 {
 
   private long mN = 0;
 

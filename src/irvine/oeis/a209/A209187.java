@@ -3,13 +3,14 @@ package irvine.oeis.a209;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a065.A065387;
 
 /**
  * A209187 Sum of divisors of n minus cototient of n.
  * @author Georg Fischer
  */
-public class A209187 implements Sequence {
+public class A209187 extends Sequence1 {
 
   final Sequence mA065387 = new A065387();
   protected long mN;

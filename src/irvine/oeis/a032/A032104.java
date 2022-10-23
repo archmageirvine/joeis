@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032104 Shifts left 2 places under "BHK" (reversible, identity, unlabeled) transform.
  * @author Sean A. Irvine
  */
-public class A032104 implements Sequence {
+public class A032104 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final Polynomial<Z> mA = RING.empty();

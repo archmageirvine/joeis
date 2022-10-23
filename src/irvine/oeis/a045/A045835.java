@@ -3,13 +3,13 @@ package irvine.oeis.a045;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045835 Numbers n such that sopfr(Omega(n)) = Omega(sopfr(n)), where Omega(m) is the number and sopfr(m) is the sum of prime factors of m, with repetition respectively.
  * @author Sean A. Irvine
  */
-public class A045835 implements Sequence {
+public class A045835 extends Sequence1 {
 
   private long mN = 0;
 

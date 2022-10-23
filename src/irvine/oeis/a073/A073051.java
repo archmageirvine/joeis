@@ -3,13 +3,14 @@ package irvine.oeis.a073;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038664;
 
 /**
  * A073051 Least k such that Sum_{i=1..k} (prime(i) + prime(i+2) - 2*prime(i+1)) = 2n + 1.
  * @author Georg Fischer
  */
-public class A073051 implements Sequence {
+public class A073051 extends Sequence1 {
 
   final Sequence mA038664 = new A038664();
   @Override

@@ -3,12 +3,13 @@ package irvine.oeis.a335;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a052.A052126;
 /**
  * A335876 a(1) = 2, and for n &gt; 1, a(n) = n + (n/p), where p is largest prime dividing n, A006530(n).
  * @author Georg Fischer
  */
-public class A335876 implements Sequence {
+public class A335876 extends Sequence1 {
 
   private final Sequence mA052126 = new A052126();
   protected long mN;

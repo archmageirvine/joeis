@@ -3,13 +3,14 @@ package irvine.oeis.a122;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045928;
 
 /**
  * A122800 A P_4-stuttered arithmetic progression with a(n+1)=a(n) if n is square, a(n+1)=a(n)+2 otherwise.
  * @author Georg Fischer
  */
-public class A122800 implements Sequence {
+public class A122800 extends Sequence1 {
 
   final Sequence mA045928 = new A045928();
   protected long mN;

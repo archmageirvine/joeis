@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054520 Let S = {1,5,9,13,..., 4n+1, ...} and call p in S an S-prime if p&gt;1 and the only divisors of p in S are 1 and p; sequence gives elements of S that are not S-primes.
  * @author Sean A. Irvine
  */
-public class A054520 implements Sequence {
+public class A054520 extends Sequence1 {
 
   private long mN = -3;
 

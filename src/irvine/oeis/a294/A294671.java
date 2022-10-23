@@ -3,6 +3,7 @@ package irvine.oeis.a294;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002163;
 import irvine.oeis.a002.A002193;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002193;
  * A294671 Decimal expansion of the sum of sqrt(2) and sqrt(5) with no positional regrouping.
  * @author Georg Fischer
  */
-public class A294671 implements Sequence {
+public class A294671 extends Sequence1 {
 
   final Sequence mA002163 = new A002163();
   final Sequence mA002193 = new A002193();

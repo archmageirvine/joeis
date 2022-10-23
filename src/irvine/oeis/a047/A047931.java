@@ -1,13 +1,13 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A047931 Number of new penny-penny contacts when putting pennies on a table following a spiral pattern.
  * @author Sean A. Irvine
  */
-public class A047931 implements Sequence {
+public class A047931 extends Sequence1 {
 
   private static final int[] SMALL = {0, 1, 2, 2, 2, 2, 3};
   private int mN = 1;

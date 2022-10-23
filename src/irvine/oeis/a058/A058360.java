@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058360 Number of partitions of n whose reciprocal sum is an integer.
  * @author Sean A. Irvine
  */
-public class A058360 implements Sequence {
+public class A058360 extends Sequence1 {
 
   private int mN = 0;
 

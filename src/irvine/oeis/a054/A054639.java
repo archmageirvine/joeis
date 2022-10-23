@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import irvine.factor.prime.Fast;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054639 Queneau numbers: numbers n such that the Queneau-Daniel permutation {1, 2, 3, ..., n} -&gt; {n, 1, n-1, 2, n-2, 3, ...} is of order n.
  * @author Sean A. Irvine
  */
-public class A054639 implements Sequence {
+public class A054639 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

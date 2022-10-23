@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002953 Larger of unitary amicable pair.
  * @author Sean A. Irvine
  */
-public class A002953 implements Sequence {
+public class A002953 extends Sequence1 {
 
   private Z mN = Z.valueOf(113);
 

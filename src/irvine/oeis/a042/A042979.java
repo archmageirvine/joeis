@@ -5,13 +5,13 @@ import irvine.math.LongUtils;
 import irvine.math.Mobius;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A042979 Number of degree-n irreducible polynomials over GF(2) with trace = 0 and subtrace = 1.
  * @author Sean A. Irvine
  */
-public class A042979 implements Sequence {
+public class A042979 extends Sequence1 {
 
   // After Joerg Arndt
 

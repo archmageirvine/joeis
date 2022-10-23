@@ -2,13 +2,13 @@ package irvine.oeis.a156;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A156083 In this sequence each prime ends a prime century. Place a 0 between the final two digits, and raise the 100s digit by 1, to form the first prime of the next century.
  * @author Sean A. Irvine
  */
-public class A156083 implements Sequence {
+public class A156083 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.valueOf(8779);

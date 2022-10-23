@@ -3,14 +3,14 @@ package irvine.oeis.a007;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
  * A007298 Sums of consecutive Fibonacci numbers.
  * @author Sean A. Irvine
  */
-public class A007298 implements Sequence {
+public class A007298 extends Sequence1 {
 
   private final TreeSet<Z> mNotYetOutput = new TreeSet<>();
   private final A000045 mFibo = new A000045();

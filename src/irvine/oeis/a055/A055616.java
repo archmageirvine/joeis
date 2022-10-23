@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055616 Numbers, with an even number of digits, that are the sum of the squares of their two halves (leading zeros allowed only for the second half).
  * @author Sean A. Irvine
  */
-public class A055616 implements Sequence {
+public class A055616 extends Sequence1 {
 
   private long mLim = 100;
   private long mN = 12;

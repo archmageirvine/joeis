@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036229 Smallest n-digit prime containing only digits 1 or 2 or -1 if no such prime exists.
  * @author Sean A. Irvine
  */
-public class A036229 implements Sequence {
+public class A036229 extends Sequence1 {
 
   private Z mN = Z.ONE;
 

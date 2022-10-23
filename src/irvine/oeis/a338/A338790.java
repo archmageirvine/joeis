@@ -3,6 +3,7 @@ package irvine.oeis.a338;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a007.A007947;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007947;
  * A338790 a(n) = rad(n)^2 - sigma(n), where rad(n) is the squarefree kernel of n (A007947) and sigma(n) is the sum of divisors of n (A000203).
  * @author Georg Fischer
  */
-public class A338790 implements Sequence {
+public class A338790 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA007947 = new A007947();

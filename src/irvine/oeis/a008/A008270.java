@@ -3,13 +3,13 @@ package irvine.oeis.a008;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008270 Total length of strings on n symbols in Stockhausen problem.
  * @author Sean A. Irvine
  */
-public class A008270 implements Sequence {
+public class A008270 extends Sequence1 {
 
   protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

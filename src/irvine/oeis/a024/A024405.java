@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024405 Number of products of distinct primes &lt;= p(n) equal to 1 (mod p(n)).
  * @author Sean A. Irvine
  */
-public class A024405 implements Sequence {
+public class A024405 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

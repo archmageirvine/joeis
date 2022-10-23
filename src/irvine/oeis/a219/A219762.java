@@ -3,13 +3,14 @@ package irvine.oeis.a219;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a099.A099054;
 
 /**
  * A219762 Start with 0; repeatedly apply the map {0-&gt;012, 1-&gt;120, 2-&gt;201} to the odd-numbered terms and {0-&gt;210, 1-&gt;021, 2-&gt;102} to the even-numbered terms.
  * @author Georg Fischer
  */
-public class A219762 implements Sequence {
+public class A219762 extends Sequence1 {
 
   final Sequence mA099054 = new A099054();
   @Override

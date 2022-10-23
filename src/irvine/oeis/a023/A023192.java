@@ -6,13 +6,13 @@ import java.util.List;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023192 Conjecturally, number of infinitely-recurring prime patterns on n consecutive integers.
  * @author Sean A. Irvine
  */
-public class A023192 implements Sequence {
+public class A023192 extends Sequence1 {
 
   // Incrementally add "p" or "c" to the front of each existing solution from previous
   // iteration. Adding "c" is easy. Adding "p" need to check that does not introduce a

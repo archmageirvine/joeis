@@ -3,13 +3,13 @@ package irvine.oeis.a343;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A343514 a(n) = Sum_{k=1..n} (k/gcd(n, k))^4.
  * @author Georg Fischer
  */
-public class A343514 implements Sequence {
+public class A343514 extends Sequence1 {
 
   private int mN = 0;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a045;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045927 Digits even, nonzero and nondecreasing.
  * @author Sean A. Irvine
  */
-public class A045927 implements Sequence {
+public class A045927 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   {

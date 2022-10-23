@@ -6,13 +6,13 @@ import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051171 A variation on A056223.
  * @author Sean A. Irvine
  */
-public class A051171 implements Sequence {
+public class A051171 extends Sequence1 {
 
   private int mN = 0;
   final DefaultMatrix<Q> mMat = new DefaultMatrix<>(0, 0, Q.ZERO);

@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007591 Numbers k such that k^2 + 4 is prime.
  * @author Sean A. Irvine
  */
-public class A007591 implements Sequence {
+public class A007591 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

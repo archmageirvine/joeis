@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034090 Numbers whose sum of proper divisors exceeds that of all smaller numbers.
  * @author Sean A. Irvine
  */
-public class A034090 implements Sequence {
+public class A034090 extends Sequence1 {
 
   private Z mMax = Z.NEG_ONE;
   private long mN = 0;

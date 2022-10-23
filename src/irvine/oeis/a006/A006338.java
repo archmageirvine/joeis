@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006338 An "eta-sequence": floor((n+1)*sqrt(2) + 1/2) - floor(n*sqrt(2) + 1/2).
  * @author Sean A. Irvine
  */
-public class A006338 implements Sequence {
+public class A006338 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,7 +2,7 @@ package irvine.oeis.a006;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a072.A072068;
 import irvine.oeis.a072.A072069;
 import irvine.oeis.a072.A072070;
@@ -12,7 +12,7 @@ import irvine.oeis.a072.A072071;
  * A006991 Primitive congruent numbers.
  * @author Sean A. Irvine
  */
-public class A006991 implements Sequence {
+public class A006991 extends Sequence1 {
 
   // Assumes the truth of the Birch and Swinnerton-Dyer conjecture
 

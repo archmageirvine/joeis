@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048274 Let G be the graph with n vertices, the i-th vertex consisting of all multiples of i &lt;= n, where edges indicate that the vertices intersect; a(n) = |n-(number of edges of G)|.
  * @author Sean A. Irvine
  */
-public class A048274 implements Sequence {
+public class A048274 extends Sequence1 {
 
   private long mN = 0;
 

@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007550 Natural numbers exponentiated twice.
  * @author Sean A. Irvine
  */
-public class A007550 implements Sequence {
+public class A007550 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final ArrayList<Q> mCoeffs = new ArrayList<>();

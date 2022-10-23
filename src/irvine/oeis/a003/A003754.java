@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003754 Numbers with no adjacent 0's in binary expansion.
  * @author Sean A. Irvine
  */
-public class A003754 implements Sequence {
+public class A003754 extends Sequence1 {
 
   private long mN = -1;
 

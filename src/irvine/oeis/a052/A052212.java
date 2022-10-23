@@ -1,13 +1,13 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052212 Numbers whose square contains the digits of n in order (not necessarily consecutively).
  * @author Sean A. Irvine
  */
-public class A052212 implements Sequence {
+public class A052212 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

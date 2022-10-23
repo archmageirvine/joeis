@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032740 Numbers k such that k is a substring of 2^k.
  * @author Sean A. Irvine
  */
-public class A032740 implements Sequence {
+public class A032740 extends Sequence1 {
 
   private int mN = 5;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046530 Number of distinct cubic residues mod n.
  * @author Sean A. Irvine
  */
-public class A046530 implements Sequence {
+public class A046530 extends Sequence1 {
 
   private long mN = 0;
 

@@ -4,12 +4,13 @@ package irvine.oeis.a192;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A192467 (A192466)/2.
  * @author Georg Fischer
  */
-public class A192467 implements Sequence {
+public class A192467 extends Sequence1 {
 
   final Sequence mA192466 = new A192466();
   @Override

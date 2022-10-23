@@ -3,13 +3,14 @@ package irvine.oeis.a345;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a046.A046144;
 /**
  * A345674 Euler totient function phi(n) - number of primitive roots modulo n.
  * @author Georg Fischer
  */
-public class A345674 implements Sequence {
+public class A345674 extends Sequence1 {
 
   private final Sequence mA000010 = new A000010();
   private final Sequence mA046144 = new A046144();

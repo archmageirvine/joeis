@@ -3,6 +3,7 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001221;
 import irvine.oeis.a051.A051953;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a051.A051953;
  * A057860 Number of residue classes modulo n which contain only composite numbers.
  * @author Georg Fischer
  */
-public class A057860 implements Sequence {
+public class A057860 extends Sequence1 {
 
   final Sequence mA001221 = new A001221();
   final Sequence mA051953 = new A051953();

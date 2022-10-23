@@ -3,13 +3,13 @@ package irvine.oeis.a053;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053696 Numbers that can be represented as a string of three or more 1's in a base &gt;= 2.
  * @author Sean A. Irvine
  */
-public class A053696 implements Sequence {
+public class A053696 extends Sequence1 {
 
   private static final class State implements Comparable<State> {
     private final Z mN;

@@ -8,13 +8,13 @@ import java.util.List;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002846 Number of ways of transforming a set of n indistinguishable objects into n singletons via a sequence of n-1 refinements.
  * @author Sean A. Irvine
  */
-public class A002846 implements Sequence {
+public class A002846 extends Sequence1 {
 
   private static class MyComparator implements Comparator<int[]>, Serializable {
     @Override

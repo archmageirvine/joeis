@@ -3,13 +3,13 @@ package irvine.oeis.a036;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036435 Digits are nonzero squares.
  * @author Sean A. Irvine
  */
-public class A036435 implements Sequence {
+public class A036435 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   {

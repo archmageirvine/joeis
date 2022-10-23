@@ -1,14 +1,14 @@
 package irvine.oeis.a233;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A233007 Numbers k such that (k-1)^2 + k^2 + (k+1)^2 is a palindrome.
  * @author Georg Fischer
  */
-public class A233007 implements Sequence {
+public class A233007 extends Sequence1 {
 
   private Z mK = Z.NEG_ONE;
 

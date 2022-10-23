@@ -1,13 +1,13 @@
 package irvine.oeis.a242;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A242474 Numbers n such that A = n - digitsum(n) is divisible by the largest power of 10 &lt;= A.
  * @author Georg Fischer
  */
-public class A242474 implements Sequence {
+public class A242474 extends Sequence1 {
 
   private static final Z TWENTY = Z.valueOf(20);
   private Z mK = Z.ZERO;

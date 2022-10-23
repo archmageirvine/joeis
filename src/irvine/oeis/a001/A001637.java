@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001637 Numbers with an even number of digits.
  * @author Sean A. Irvine
  */
-public class A001637 implements Sequence {
+public class A001637 extends Sequence1 {
 
   private long mN = 9;
   private long mNextSkip = 100;

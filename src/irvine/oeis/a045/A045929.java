@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045929 Generalized Connell sequence C_{5,3}.
  * @author Sean A. Irvine
  */
-public class A045929 implements Sequence {
+public class A045929 extends Sequence1 {
 
   private static final CR R6 = CR.SIX;
   private static final CR R7 = CR.SEVEN;

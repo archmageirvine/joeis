@@ -2,13 +2,13 @@ package irvine.oeis.a307;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A307980 Numbers k whose number of divisors is the square of the number of decimal digits of k.
  * @author Sean A. Irvine
  */
-public class A307980 implements Sequence {
+public class A307980 extends Sequence1 {
 
   private long mN = 0;
   private long mLen = 1;

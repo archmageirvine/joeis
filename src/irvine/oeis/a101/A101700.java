@@ -3,13 +3,14 @@ package irvine.oeis.a101;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a089.A089675;
 
 /**
  * A101700 Numbers of the form 3*(10^n-3), where 10^n-3 is prime.
  * @author Georg Fischer
  */
-public class A101700 implements Sequence {
+public class A101700 extends Sequence1 {
 
   final Sequence mA089675 = new A089675();
   @Override

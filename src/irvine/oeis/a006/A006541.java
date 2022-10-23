@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006541 Number of dissimilarity relations on an n-set.
  * @author Sean A. Irvine
  */
-public class A006541 implements Sequence {
+public class A006541 extends Sequence1 {
 
   private long mN = 0;
 

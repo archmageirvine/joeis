@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054703 Number of distinct powers of 2 modulo n.
  * @author Georg Fischer
  */
-public class A054703 implements Sequence {
+public class A054703 extends Sequence1 {
 
   private int mN = 0;
   private int mBase;

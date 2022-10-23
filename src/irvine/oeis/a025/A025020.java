@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025020 Numbers whose least quadratic nonresidue (A020649) is 2.
  * @author Sean A. Irvine
  */
-public class A025020 implements Sequence {
+public class A025020 extends Sequence1 {
 
   private long mN = 2;
 

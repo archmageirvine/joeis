@@ -3,13 +3,14 @@ package irvine.oeis.a278;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001097;
 
 /**
  * A278972 Twice the twin primes.
  * @author Georg Fischer
  */
-public class A278972 implements Sequence {
+public class A278972 extends Sequence1 {
 
   final Sequence mA001097 = new A001097();
   @Override

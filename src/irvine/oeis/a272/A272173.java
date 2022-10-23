@@ -3,12 +3,13 @@ package irvine.oeis.a272;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 /**
  * A272173 Product of the sum of the divisors of n and the sum of the divisors of n-th prime.
  * @author Georg Fischer
  */
-public class A272173 implements Sequence {
+public class A272173 extends Sequence1 {
 
   private final Sequence mA000203 = new A000203();
   private final Sequence mA272211 = new A272211();

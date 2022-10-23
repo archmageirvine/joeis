@@ -3,11 +3,12 @@ package irvine.oeis.a249;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 /**
  * A249720 a(n) = 2 * A249719(n).
  * @author Georg Fischer
  */
-public class A249720 implements Sequence {
+public class A249720 extends Sequence1 {
 
   private final Sequence mA249719 = new A249719();
   @Override

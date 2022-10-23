@@ -3,13 +3,14 @@ package irvine.oeis.a239;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014689;
 
 /**
  * A239636 Distance between the two occurrences of n-th prime in A082500.
  * @author Georg Fischer
  */
-public class A239636 implements Sequence {
+public class A239636 extends Sequence1 {
 
   final Sequence mA014689 = new A014689();
   @Override

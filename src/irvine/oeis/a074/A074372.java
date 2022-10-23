@@ -3,13 +3,14 @@ package irvine.oeis.a074;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008472;
 
 /**
  * A074372 1 + the sum of the distinct primes dividing n.
  * @author Georg Fischer
  */
-public class A074372 implements Sequence {
+public class A074372 extends Sequence1 {
 
   final Sequence mA008472 = new A008472();
   @Override

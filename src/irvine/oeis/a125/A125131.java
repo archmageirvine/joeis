@@ -3,6 +3,7 @@ package irvine.oeis.a125;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003958;
 import irvine.oeis.a008.A008836;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a008.A008836;
  * A125131 Product 1-p, where p ranges over the prime factors of n with multiplicity.
  * @author Georg Fischer
  */
-public class A125131 implements Sequence {
+public class A125131 extends Sequence1 {
 
   final Sequence mA003958 = new A003958();
   final Sequence mA008836 = new A008836();

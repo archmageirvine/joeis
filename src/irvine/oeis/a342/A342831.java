@@ -3,12 +3,13 @@ package irvine.oeis.a342;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a078.A078608;
 /**
  * A342831 a(n) is the smallest positive integer k such that the n-dimensional cube [0,k]^n contains at least as many internal lattice points as external lattice points.
  * @author Georg Fischer
  */
-public class A342831 implements Sequence {
+public class A342831 extends Sequence1 {
 
   private final Sequence mA078608 = new A078608();
   @Override

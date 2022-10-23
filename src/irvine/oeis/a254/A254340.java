@@ -3,12 +3,13 @@ package irvine.oeis.a254;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a074.A074372;
 /**
  * A254340 Sum of the distinct prime factors of n plus n+1: a(n) = A008472(n) + n + 1.
  * @author Georg Fischer
  */
-public class A254340 implements Sequence {
+public class A254340 extends Sequence1 {
 
   private final Sequence mA074372 = new A074372();
   protected long mN;

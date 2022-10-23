@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014963 Exponential of Mangoldt function M(n): a(n) = 1 unless n is a prime or prime power when a(n) = that prime.
  * @author Sean A. Irvine
  */
-public class A014963 implements Sequence {
+public class A014963 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

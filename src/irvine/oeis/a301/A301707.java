@@ -3,13 +3,14 @@ package irvine.oeis.a301;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a034.A034387;
 
 /**
  * A301707 a(n) = n * Sum_{k prime&lt;=n} k.
  * @author Georg Fischer
  */
-public class A301707 implements Sequence {
+public class A301707 extends Sequence1 {
 
   final Sequence mA034387 = new A034387();
   protected long mN;

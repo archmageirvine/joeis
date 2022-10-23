@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056978 Number of blocks of {1, 0, 0} in binary expansion of n.
  * @author Sean A. Irvine
  */
-public class A056978 implements Sequence {
+public class A056978 extends Sequence1 {
 
   private long mN = 0;
 

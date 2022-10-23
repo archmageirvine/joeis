@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007637 Primes of form 3n^2-3n+23.
  * @author Sean A. Irvine
  */
-public class A007637 implements Sequence {
+public class A007637 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

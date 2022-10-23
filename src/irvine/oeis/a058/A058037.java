@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058037 Numbers n such that 3^n - n is prime.
  * @author Sean A. Irvine
  */
-public class A058037 implements Sequence {
+public class A058037 extends Sequence1 {
 
   private long mN = 0;
   private Z mA = null;

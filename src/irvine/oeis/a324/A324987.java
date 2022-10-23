@@ -3,13 +3,13 @@ package irvine.oeis.a324;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A324987 a(n) = Product_{d|n} (tau(d)*sigma(d)) where tau(k) = the number of divisors of k (A000005) and sigma(k) = the sum of the divisors of k (A000203).
  * @author Georg Fischer
  */
-public class A324987 implements Sequence {
+public class A324987 extends Sequence1 {
 
   private int mN = 0;
 

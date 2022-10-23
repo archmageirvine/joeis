@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.z.Binomial;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034749 Dirichlet convolution of Fibonacci numbers with Catalan numbers.
  * @author Sean A. Irvine
  */
-public class A034749 implements Sequence {
+public class A034749 extends Sequence1 {
 
   private int mN = 0;
 

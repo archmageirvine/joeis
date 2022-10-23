@@ -3,13 +3,14 @@ package irvine.oeis.a330;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 import irvine.oeis.a053.A053767;
 /**
  * A330578 a(n) is the remainder when the sum of the first n composite numbers is divided by the n-th composite number.
  * @author Georg Fischer
  */
-public class A330578 implements Sequence {
+public class A330578 extends Sequence1 {
 
   private final Sequence mA002808 = new A002808();
   private final Sequence mA053767 = new A053767();

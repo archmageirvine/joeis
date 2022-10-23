@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059411 a(1) = 2, a(n) = k*a(n-1) + 1, where a(n) is the smallest prime of the form k*a(n-1) + 1 and k &gt; 1.
  * @author Sean A. Irvine
  */
-public class A059411 implements Sequence {
+public class A059411 extends Sequence1 {
 
   private Z mA = null;
 

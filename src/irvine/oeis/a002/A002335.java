@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002335 Least positive integer y such that A038873(n) = x^2 - 2y^2 for some x.
  * @author Sean A. Irvine
  */
-public class A002335 implements Sequence {
+public class A002335 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.ONE;

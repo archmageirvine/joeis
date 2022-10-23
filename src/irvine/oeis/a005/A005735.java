@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005735 Greatest k such that binomial(k,n) has fewer than n distinct prime factors.
  * @author Sean A. Irvine
  */
-public class A005735 implements Sequence {
+public class A005735 extends Sequence1 {
 
   // Heuristic after T. D. Noe
 

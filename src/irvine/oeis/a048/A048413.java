@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048413 Primes whose consecutive digits differ by 1 or 2.
  * @author Sean A. Irvine
  */
-public class A048413 implements Sequence {
+public class A048413 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
 

@@ -3,13 +3,14 @@ package irvine.oeis.a087;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023202;
 
 /**
  * A087680 Numbers n such that n + 4 and n - 4 are both prime.
  * @author Georg Fischer
  */
-public class A087680 implements Sequence {
+public class A087680 extends Sequence1 {
 
   final Sequence mA023202 = new A023202();
   @Override

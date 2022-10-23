@@ -3,12 +3,13 @@ package irvine.oeis.a131;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a079.A079523;
 /**
  * A131323 Odd numbers whose binary expansion ends in an even number of 1's.
  * @author Georg Fischer
  */
-public class A131323 implements Sequence {
+public class A131323 extends Sequence1 {
 
   private final Sequence mA079523 = new A079523();
   @Override

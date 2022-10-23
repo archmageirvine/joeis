@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001602 Fibonacci entry points: a(n) = smallest m &gt; 0 such that the n-th prime divides Fibonacci(m).
  * @author Sean A. Irvine
  */
-public class A001602 implements Sequence {
+public class A001602 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

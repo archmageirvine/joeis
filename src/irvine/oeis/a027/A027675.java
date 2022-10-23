@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027675 When squared gives number composed of digits {1,4,9}.
  * @author Sean A. Irvine
  */
-public class A027675 implements Sequence {
+public class A027675 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

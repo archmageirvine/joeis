@@ -3,13 +3,13 @@ package irvine.oeis.a035;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035187 Sum over divisors d of n of Kronecker symbol (5|d).
  * @author Sean A. Irvine
  */
-public class A035187 implements Sequence {
+public class A035187 extends Sequence1 {
 
   protected long mN = 0;
 

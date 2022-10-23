@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008972 n^2 raised to power n^2.
  * @author Sean A. Irvine
  */
-public class A008972 implements Sequence {
+public class A008972 extends Sequence1 {
 
   private int mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053610 Number of positive squares needed to sum to n using the greedy algorithm.
  * @author Sean A. Irvine
  */
-public class A053610 implements Sequence {
+public class A053610 extends Sequence1 {
 
   private long mN = 0;
 

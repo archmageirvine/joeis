@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A022765 Ordered sequence of distinct terms of the form floor(exp(i) * floor(exp(j))), i,j &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A022765 implements Sequence {
+public class A022765 extends Sequence1 {
 
   private Z mPrev = Z.ZERO;
   private final TreeSet<Pair<Long, Long>> mS = new TreeSet<>((a, b) -> {

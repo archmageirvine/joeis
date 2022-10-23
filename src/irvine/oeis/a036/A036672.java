@@ -7,13 +7,13 @@ import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036672 Number of stereoisomers of acyclic hydrocarbons with n carbon atoms.
  * @author Sean A. Irvine
  */
-public class A036672 implements Sequence {
+public class A036672 extends Sequence1 {
 
   // See Ronald C. Read, "The Enumeration of Acyclic Chemical Compounds"
   // in Chemical Applications of Graph Theory (A. T. Balaban editor),

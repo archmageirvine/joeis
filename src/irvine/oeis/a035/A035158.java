@@ -3,13 +3,13 @@ package irvine.oeis.a035;
 import irvine.factor.prime.Fast;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035158 Floor of the Chebyshev function theta(n): a(n) = floor(Sum_{primes p &lt;= n } log(p)).
  * @author Sean A. Irvine
  */
-public class A035158 implements Sequence {
+public class A035158 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private CR mSum = CR.ZERO;

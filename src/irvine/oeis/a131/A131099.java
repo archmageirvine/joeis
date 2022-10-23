@@ -3,13 +3,14 @@ package irvine.oeis.a131;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002324;
 
 /**
  * A131099 a(n) = n times number of divisors of n of form 3m+1 - n times number of divisors of form 3m+2.
  * @author Georg Fischer
  */
-public class A131099 implements Sequence {
+public class A131099 extends Sequence1 {
 
   final Sequence mA002324 = new A002324();
   protected long mN;

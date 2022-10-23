@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056968 10^(n-1) modulo n.
  * @author Sean A. Irvine
  */
-public class A056968 implements Sequence {
+public class A056968 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

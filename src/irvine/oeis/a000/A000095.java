@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000095 Number of fixed points of GAMMA_0 (n) of type i.
  * @author Sean A. Irvine
  */
-public class A000095 implements Sequence {
+public class A000095 extends Sequence1 {
 
   private long mN = 0;
   private final Fast mPrime = new Fast();

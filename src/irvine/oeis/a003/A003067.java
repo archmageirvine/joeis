@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003067 Problimes (second definition).
  * @author Sean A. Irvine
  */
-public class A003067 implements Sequence {
+public class A003067 extends Sequence1 {
 
   private Z mS = null;
   private Q mP = Q.ONE;

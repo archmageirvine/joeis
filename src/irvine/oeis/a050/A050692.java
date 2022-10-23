@@ -3,13 +3,13 @@ package irvine.oeis.a050;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050692 Largest prime factor of composite a(n) is a substring of a(n).
  * @author Sean A. Irvine
  */
-public class A050692 implements Sequence {
+public class A050692 extends Sequence1 {
 
   private long mN = 14;
 

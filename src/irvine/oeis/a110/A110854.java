@@ -4,6 +4,7 @@ package irvine.oeis.a110;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a155.A155067;
 import irvine.oeis.a155.A155750;
 
@@ -11,7 +12,7 @@ import irvine.oeis.a155.A155750;
  * A110854 A155750(n)-A155067(n) = prime(2n+2)-prime(2n+1)-prime(2n)+prime(2n-1).
  * @author Georg Fischer
  */
-public class A110854 implements Sequence {
+public class A110854 extends Sequence1 {
 
   final Sequence mA155067 = new A155067();
   final Sequence mA155750 = new A155750();

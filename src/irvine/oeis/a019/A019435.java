@@ -3,13 +3,13 @@ package irvine.oeis.a019;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019435 Numbers k at which the fractional part of tan(k) reaches a record high.
  * @author Sean A. Irvine
  */
-public class A019435 implements Sequence {
+public class A019435 extends Sequence1 {
 
   // Cf. A016274
 

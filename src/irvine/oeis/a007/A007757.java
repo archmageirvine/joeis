@@ -6,13 +6,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007757 Dwork-Kontsevich sequence evaluated at 2*n.
  * @author Sean A. Irvine
  */
-public class A007757 implements Sequence {
+public class A007757 extends Sequence1 {
 
   // After Michael Somos
 

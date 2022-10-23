@@ -2,13 +2,13 @@ package irvine.oeis.a029;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A029772 Every digit that appears in n also appears at least once in n^2.
  * @author Sean A. Irvine
  */
-public class A029772 implements Sequence {
+public class A029772 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

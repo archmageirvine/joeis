@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037014 Numbers n with property that reading binary expansion from right to left (from least significant to most significant), run lengths do not increase.
  * @author Sean A. Irvine
  */
-public class A037014 implements Sequence {
+public class A037014 extends Sequence1 {
 
   private long mN = -1;
 

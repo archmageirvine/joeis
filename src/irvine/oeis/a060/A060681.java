@@ -1,13 +1,13 @@
 package irvine.oeis.a060;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A060681 Largest difference between consecutive divisors of n (ordered by size).
  * @author Sean A. Irvine
  */
-public class A060681 implements Sequence {
+public class A060681 extends Sequence1 {
 
   protected long mN = 0;
 

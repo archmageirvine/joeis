@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057237 Maximum k &lt;= n such that 1, 2, ..., k are all relatively prime to n.
  * @author Sean A. Irvine
  */
-public class A057237 implements Sequence {
+public class A057237 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034726 Smallest integral value of m/(sum of digits of m) for any n-digit number m.
  * @author Sean A. Irvine
  */
-public class A034726 implements Sequence {
+public class A034726 extends Sequence1 {
 
   private long mN = 1;
   private long mLim = 10;

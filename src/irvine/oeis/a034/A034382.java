@@ -7,13 +7,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034382 Number of labeled Abelian groups of order n.
  * @author Sean A. Irvine
  */
-public class A034382 implements Sequence {
+public class A034382 extends Sequence1 {
 
   private int mN = 0;
   private Z mF = Z.ONE;

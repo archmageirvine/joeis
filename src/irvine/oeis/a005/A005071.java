@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005071 Sum of squares of primes = 1 mod 3 dividing n.
  * @author Sean A. Irvine
  */
-public class A005071 implements Sequence {
+public class A005071 extends Sequence1 {
 
   private long mN = 0;
 

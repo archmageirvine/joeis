@@ -2,13 +2,13 @@ package irvine.oeis.a175;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A175416 Those positive integers n that when written in binary, each run of 0's and 1's has a length which is coprime to the number of binary digits of n.
  * @author Sean A. Irvine
  */
-public class A175416 implements Sequence {
+public class A175416 extends Sequence1 {
 
   private long mN = 0;
 

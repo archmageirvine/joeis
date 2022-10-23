@@ -3,13 +3,13 @@ package irvine.oeis.a017;
 import irvine.factor.factor.Jaguar;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A017686 Denominator of sum of -11th powers of divisors of n.
  * @author Sean A. Irvine
  */
-public class A017686 implements Sequence {
+public class A017686 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

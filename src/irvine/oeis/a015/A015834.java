@@ -3,13 +3,13 @@ package irvine.oeis.a015;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015834 Numbers k such that phi(k) | sigma(k + 1).
  * @author Sean A. Irvine
  */
-public class A015834 implements Sequence {
+public class A015834 extends Sequence1 {
 
   private FactorSequence mFactorSequenceA = Jaguar.factor(1);
   private long mN = 1;

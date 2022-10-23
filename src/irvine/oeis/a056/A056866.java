@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056866 Orders of non-solvable groups, i.e., numbers that are not solvable numbers.
  * @author Sean A. Irvine
  */
-public class A056866 implements Sequence {
+public class A056866 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 56;

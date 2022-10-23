@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032743 Super-2 Numbers (2 * n^2 contains substring '22' in its decimal expansion).
  * @author Sean A. Irvine
  */
-public class A032743 implements Sequence {
+public class A032743 extends Sequence1 {
 
   private long mN = 18;
 

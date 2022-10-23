@@ -1,13 +1,13 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035060 Numbers k such that 2^k does not contain the digit 5 (probably finite).
  * @author Sean A. Irvine
  */
-public class A035060 implements Sequence {
+public class A035060 extends Sequence1 {
 
   private Z mT = Z.ONE;
   private long mN = -1;

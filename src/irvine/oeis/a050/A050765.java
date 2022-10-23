@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050765 Composite n added to sum of its prime factors is nextprime(n).
  * @author Sean A. Irvine
  */
-public class A050765 implements Sequence {
+public class A050765 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 38399;

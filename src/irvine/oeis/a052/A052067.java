@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052067 a(n) is the first cube root greater than 10^n such that a(n)^3 is a palfree cube (palfree = contains no palindromic substring except single digits).
  * @author Sean A. Irvine
  */
-public class A052067 implements Sequence {
+public class A052067 extends Sequence1 {
 
   // After Keith Schneider
 

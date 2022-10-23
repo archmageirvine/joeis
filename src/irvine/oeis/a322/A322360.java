@@ -3,13 +3,14 @@ package irvine.oeis.a322;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046970;
 
 /**
  * A322360 Multiplicative with a(p^e) = p^2 - 1.
  * @author Georg Fischer
  */
-public class A322360 implements Sequence {
+public class A322360 extends Sequence1 {
 
   final Sequence mA046970 = new A046970();
   @Override

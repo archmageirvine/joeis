@@ -3,12 +3,13 @@ package irvine.oeis.a129;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a062.A062324;
 /**
  * A129119 Numbers of the form 2*p (with p a prime number) such that p^2+4 is prime.
  * @author Georg Fischer
  */
-public class A129119 implements Sequence {
+public class A129119 extends Sequence1 {
 
   private final Sequence mA062324 = new A062324();
   @Override

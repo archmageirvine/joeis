@@ -5,14 +5,14 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A006948 Zero-entropy permutations of length n.
  * @author Sean A. Irvine
  */
-public class A006948 implements Sequence {
+public class A006948 extends Sequence1 {
 
   private int mN = 0;
 

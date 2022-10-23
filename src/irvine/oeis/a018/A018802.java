@@ -1,14 +1,14 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 
 /**
  * A018802 Smallest power of 2 that begins with n.
  * @author Sean A. Irvine
  */
-public class A018802 implements Sequence {
+public class A018802 extends Sequence1 {
 
   private DynamicArray<String> mCache = new DynamicArray<>();
   private int mM = -1;

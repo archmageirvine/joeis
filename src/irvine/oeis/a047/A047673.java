@@ -1,13 +1,13 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A047673 Row 4 of square array defined in A047671.
  * @author Sean A. Irvine
  */
-public class A047673 implements Sequence {
+public class A047673 extends Sequence1 {
 
   private long mN = 0;
 

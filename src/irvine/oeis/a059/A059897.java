@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059897 Symmetric square array read by antidiagonals: A(n,k) is the product of all factors that occur in one, but not both, of the Fermi-Dirac factorizations of n and k.
  * @author Sean A. Irvine
  */
-public class A059897 implements Sequence {
+public class A059897 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

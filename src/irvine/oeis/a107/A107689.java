@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
@@ -12,7 +12,7 @@ import irvine.util.string.StringUtils;
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class A107689 implements Sequence {
+public class A107689 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final int[] mDigits;

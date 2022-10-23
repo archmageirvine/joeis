@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005174 Number of trees of subsets of an n-set.
  * @author Sean A. Irvine
  */
-public class A005174 implements Sequence {
+public class A005174 extends Sequence1 {
 
   private int mN = 0;
 

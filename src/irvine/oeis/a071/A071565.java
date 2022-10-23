@@ -3,13 +3,14 @@ package irvine.oeis.a071;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a019.A019337;
 
 /**
  * A071565 Numbers k such that x^k + x^(k-1) + x^(k-2) + ... + x + 1 is irreducible over GF(7).
  * @author Georg Fischer
  */
-public class A071565 implements Sequence {
+public class A071565 extends Sequence1 {
 
   final Sequence mA019337 = new A019337();
   /** Construct the sequence. */

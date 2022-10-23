@@ -3,13 +3,14 @@ package irvine.oeis.a160;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a039.A039956;
 
 /**
  * A160785 Even squarefree numbers plus 1.
  * @author Georg Fischer
  */
-public class A160785 implements Sequence {
+public class A160785 extends Sequence1 {
 
   final Sequence mA039956 = new A039956();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a082;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A082792 Smallest multiple of n beginning with 3.
  * @author Sean A. Irvine
  */
-public class A082792 implements Sequence {
+public class A082792 extends Sequence1 {
 
   protected char first() {
     return '3';

@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014405 Number of arithmetic progressions of 3 or more positive integers, strictly increasing with sum n.
  * @author Sean A. Irvine
  */
-public class A014405 implements Sequence {
+public class A014405 extends Sequence1 {
 
   // After Rick L. Shepherd
 

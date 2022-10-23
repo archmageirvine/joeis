@@ -1,13 +1,13 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052089 Primes formed by concatenating k with k-1.
  * @author Sean A. Irvine
  */
-public class A052089 implements Sequence {
+public class A052089 extends Sequence1 {
 
   private long mN = 1;
 

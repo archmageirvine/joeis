@@ -3,13 +3,13 @@ package irvine.oeis.a015;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015707 Values of n where (phi(n) * sigma(n))/n is an integer and increases.
  * @author Sean A. Irvine
  */
-public class A015707 implements Sequence {
+public class A015707 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   private Z mBest = Z.ZERO;

@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000113 Number of transformation groups of order n.
  * @author Sean A. Irvine
  */
-public class A000113 implements Sequence {
+public class A000113 extends Sequence1 {
 
   private long mN = 0;
 

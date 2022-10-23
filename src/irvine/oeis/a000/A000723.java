@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000723 Invertible Boolean functions of n variables.
  * @author Sean A. Irvine
  */
-public class A000723 implements Sequence {
+public class A000723 extends Sequence1 {
 
   int mN = 0;
 

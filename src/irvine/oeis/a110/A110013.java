@@ -3,13 +3,14 @@ package irvine.oeis.a110;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002327;
 
 /**
  * A110013 Squares of the form 4p + 5, where p is a prime.
  * @author Georg Fischer
  */
-public class A110013 implements Sequence {
+public class A110013 extends Sequence1 {
 
   final Sequence mA002327 = new A002327();
   @Override

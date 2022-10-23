@@ -3,14 +3,14 @@ package irvine.oeis.a015;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A015135 Consider Fibonacci-type sequences f(0)=X, f(1)=Y, f(k)=f(k-1)+f(k-2) mod n; all are periodic; sequence gives number of distinct period lengths.
  * @author Sean A. Irvine
  */
-public class A015135 implements Sequence {
+public class A015135 extends Sequence1 {
 
   private int mN = 0;
 

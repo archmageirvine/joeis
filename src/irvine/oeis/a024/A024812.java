@@ -3,13 +3,13 @@ package irvine.oeis.a024;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024812 Numbers n for which there is exactly one positive integer m such that n = floor(cot(Pi/(2m))).
  * @author Sean A. Irvine
  */
-public class A024812 implements Sequence {
+public class A024812 extends Sequence1 {
 
   private long mN = 3;
 

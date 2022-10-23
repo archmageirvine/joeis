@@ -3,6 +3,7 @@ package irvine.oeis.a280;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a000.A000422;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000422;
  * A280987 {Concatenation n, n-1, n-2, ...3,2,1} mod sigma(n).
  * @author Georg Fischer
  */
-public class A280987 implements Sequence {
+public class A280987 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA000422 = new A000422();

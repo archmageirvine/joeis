@@ -1,13 +1,13 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015889 Numbers k that divide 4^k + 4.
  * @author Georg Fischer
  */
-public class A015889 implements Sequence {
+public class A015889 extends Sequence1 {
 
   protected Z mK; // Number k such that ...
   protected Z[] mList; // list of constants to be exponentiated

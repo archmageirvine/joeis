@@ -2,13 +2,13 @@ package irvine.oeis.a013;
 
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013944 Sum of terms in period of continued fraction for square root of the n-th nonsquare.
  * @author Sean A. Irvine
  */
-public class A013944 implements Sequence {
+public class A013944 extends Sequence1 {
 
   private long mN = 0;
 

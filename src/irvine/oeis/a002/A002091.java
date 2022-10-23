@@ -2,14 +2,14 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A002091 From a Goldbach conjecture: the location of records in A185091.
  * @author Sean A. Irvine
  */
-public class A002091 implements Sequence {
+public class A002091 extends Sequence1 {
 
   private final LongDynamicBooleanArray mRepresentable = new LongDynamicBooleanArray();
   private final Fast mPrime = new Fast();

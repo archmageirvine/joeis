@@ -4,13 +4,13 @@ package irvine.oeis.a226;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A226898 Hooley's Delta function: maximum number of divisors of n in [u, eu] for all u. (Here e is Euler's number 2.718... = A001113.).
  * @author Georg Fischer
  */
-public class A226898 implements Sequence {
+public class A226898 extends Sequence1 {
 
   protected int mN; // current index/offset
   private static final Z EP10 = Z.valueOf(2718281828L);

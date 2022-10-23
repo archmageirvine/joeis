@@ -8,13 +8,13 @@ import irvine.math.lattice.Canons;
 import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056785 Number of polydominoes.
  * @author Sean A. Irvine
  */
-public class A056785 implements Sequence {
+public class A056785 extends Sequence1 {
 
   // Note: I was unable to get this to work using the "forbidden" mechanism
 

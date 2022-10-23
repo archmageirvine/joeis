@@ -3,13 +3,13 @@ package irvine.oeis.a037;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037021 Greedy sequence such that no term is the average of four others.
  * @author Sean A. Irvine
  */
-public class A037021 implements Sequence {
+public class A037021 extends Sequence1 {
 
   private static final long[] R = {0, 1, 2, 3, 5, 7, 13, 26, 27, 28, 29, 31};
   private final TreeSet<Z> mA = new TreeSet<>();

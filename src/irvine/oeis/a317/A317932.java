@@ -3,12 +3,13 @@ package irvine.oeis.a317;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a305.A305439;
 /**
  * A317932 Denominators of certain "Dirichlet Square Root" sequences: a(n) = A046644(n)/(2^A007949(n)).
  * @author Georg Fischer
  */
-public class A317932 implements Sequence {
+public class A317932 extends Sequence1 {
 
   private final Sequence mA305439 = new A305439();
   @Override

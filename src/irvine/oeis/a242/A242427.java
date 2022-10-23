@@ -1,13 +1,13 @@
 package irvine.oeis.a242;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A242427 n! mod n^3.
  * @author Georg Fischer
  */
-public class A242427 implements Sequence {
+public class A242427 extends Sequence1 {
 
   private int mN = 0;
   private Z mFact = Z.ONE;

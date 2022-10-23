@@ -2,14 +2,14 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
  * A056888 a(n) = number of k such that sum of digits of 9^k is 9n.
  * @author Sean A. Irvine
  */
-public class A056888 implements Sequence {
+public class A056888 extends Sequence1 {
 
   private static final int HEURISTIC_STEPS = 5;
   private final LongDynamicIntArray mCounts = new LongDynamicIntArray();

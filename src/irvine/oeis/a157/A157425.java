@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A157425 Numbers which can be represented using fewer symbols than the number of decimal digits in the number.
  * @author Sean A. Irvine
  */
-public class A157425 implements Sequence {
+public class A157425 extends Sequence1 {
 
   private Z[] mCache = new Z[0];
   private int mCachePosition = 0;

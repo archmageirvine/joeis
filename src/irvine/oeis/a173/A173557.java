@@ -3,6 +3,7 @@ package irvine.oeis.a173;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a003.A003557;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a003.A003557;
  * A173557 a(n) = Product_{primes p dividing n} (p-1).
  * @author Georg Fischer
  */
-public class A173557 implements Sequence {
+public class A173557 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA003557 = new A003557();

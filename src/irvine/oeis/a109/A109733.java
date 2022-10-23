@@ -1,13 +1,13 @@
 package irvine.oeis.a109;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A109733 Sequence is its own base-10 ASCII representation.
  * @author Sean A. Irvine
  */
-public class A109733 implements Sequence {
+public class A109733 extends Sequence1 {
 
   // After David Wilson and David L. Applegate
 

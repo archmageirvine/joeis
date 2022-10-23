@@ -3,13 +3,13 @@ package irvine.oeis.a030;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030302 Write n in base 2 and juxtapose; irregular table in which row n lists the binary expansion of n.
  * @author Georg Fischer
  */
-public class A030302 implements Sequence {
+public class A030302 extends Sequence1 {
  
   private String mS = "";
   private int mPos = 0;

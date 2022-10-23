@@ -3,12 +3,13 @@ package irvine.oeis.a345;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a034.A034448;
 /**
  * A345451 Sum of the unitary divisors of n whose square does not divide n.
  * @author Georg Fischer
  */
-public class A345451 implements Sequence {
+public class A345451 extends Sequence1 {
 
   private final Sequence mA034448 = new A034448();
   @Override

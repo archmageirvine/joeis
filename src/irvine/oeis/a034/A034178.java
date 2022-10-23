@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034178 Number of solutions to n = a^2 - b^2, a &gt; b &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A034178 implements Sequence {
+public class A034178 extends Sequence1 {
 
   protected long mN = 0;
 

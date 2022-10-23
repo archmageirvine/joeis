@@ -2,14 +2,14 @@ package irvine.oeis.a059;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A059316 Least integer m such that between m and 2m (including endpoints) there are exactly n primes.
  * @author Sean A. Irvine
  */
-public class A059316 implements Sequence {
+public class A059316 extends Sequence1 {
 
   private final DynamicLongArray mA = new DynamicLongArray();
   private final Fast mPrime = new Fast();

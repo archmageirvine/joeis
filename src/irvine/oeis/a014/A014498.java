@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014498 Varying radii of inscribed circles within primitive Pythagorean triples as a function of increasing values of hypotenuse.
  * @author Sean A. Irvine
  */
-public class A014498 implements Sequence {
+public class A014498 extends Sequence1 {
 
   private long mC = 4;
   private long mB = 4;

@@ -2,14 +2,14 @@ package irvine.oeis.a000;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A000448 Smallest number that is the sum of 2 squares in at least n ways.
  * @author Sean A. Irvine
  */
-public class A000448 implements Sequence {
+public class A000448 extends Sequence1 {
 
   private int mN = 0;
   private final DynamicLongArray mSeen = new DynamicLongArray();

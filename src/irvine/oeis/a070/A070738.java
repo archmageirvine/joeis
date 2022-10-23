@@ -3,13 +3,13 @@ package irvine.oeis.a070;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A070738 Nonprimes n such that n^2 reduced modulo phi(n) = phi(n)^2 reduced modulo n.
  * @author Georg Fischer
  */
-public class A070738 implements Sequence {
+public class A070738 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

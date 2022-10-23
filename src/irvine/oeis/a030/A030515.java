@@ -4,12 +4,13 @@ package irvine.oeis.a030;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030515 Numbers with exactly 6 divisors.
  * @author Georg Fischer
  */
-public class A030515 implements Sequence {
+public class A030515 extends Sequence1 {
 
   protected long mN; // current index
   protected final Z mK; // exact number of divisors

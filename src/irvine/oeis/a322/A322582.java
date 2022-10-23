@@ -3,13 +3,14 @@ package irvine.oeis.a322;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003958;
 
 /**
  * A322582 a(n) = n - A003958(n), where A003958 is fully multiplicative with a(p) = (p-1).
  * @author Georg Fischer
  */
-public class A322582 implements Sequence {
+public class A322582 extends Sequence1 {
 
   final Sequence mA003958 = new A003958();
   protected long mN;

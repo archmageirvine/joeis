@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003594 Numbers of the form 3^i*7^j with i, j &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A003594 implements Sequence {
+public class A003594 extends Sequence1 {
 
   private final TreeSet<Z> mPriority = new TreeSet<>();
   {

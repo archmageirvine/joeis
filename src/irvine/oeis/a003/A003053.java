@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003053 Order of orthogonal group O(n, GF(2)).
  * @author Sean A. Irvine
  */
-public class A003053 implements Sequence {
+public class A003053 extends Sequence1 {
 
   private int mN = -1;
 

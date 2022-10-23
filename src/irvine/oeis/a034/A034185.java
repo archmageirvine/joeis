@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034185 Number of symmetric n X 3 crossword puzzle grids.
  * @author Sean A. Irvine
  */
-public class A034185 implements Sequence {
+public class A034185 extends Sequence1 {
 
   // Use 1 to denote a white square, 0 black
   // Pack entire column into an int (1-bit per square)

@@ -3,13 +3,13 @@ package irvine.oeis.a023;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023762 Nialpdromes: digits in base 6 are in nonincreasing order.
  * @author Sean A. Irvine
  */
-public class A023762 implements Sequence {
+public class A023762 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
 

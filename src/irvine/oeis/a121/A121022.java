@@ -1,13 +1,13 @@
 package irvine.oeis.a121;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A121022 Even numbers containing a 2 in their decimal representation.
  * @author Georg Fischer
  */
-public class A121022 implements Sequence {
+public class A121022 extends Sequence1 {
 
   private Z mN;
   private String mMultS;

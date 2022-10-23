@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059094 Numbers whose sum of digits is a cube.
  * @author Sean A. Irvine
  */
-public class A059094 implements Sequence {
+public class A059094 extends Sequence1 {
 
   private long mN = 0;
 

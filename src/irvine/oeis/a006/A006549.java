@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006549 Numbers k such that k and k+1 are prime powers.
  * @author Sean A. Irvine
  */
-public class A006549 implements Sequence {
+public class A006549 extends Sequence1 {
 
   // One of the numbers must be a power of 2
   private Z mA = Z.ONE;

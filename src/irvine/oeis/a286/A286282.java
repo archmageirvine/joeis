@@ -3,13 +3,14 @@ package irvine.oeis.a286;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002627;
 
 /**
  * A286282 Stage at which Ken Knowlton's elevator (version 2) reaches floor n for the first time.
  * @author Georg Fischer
  */
-public class A286282 implements Sequence {
+public class A286282 extends Sequence1 {
 
   final Sequence mA002627 = new A002627();
   protected long mN;

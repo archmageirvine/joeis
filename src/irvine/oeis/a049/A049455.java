@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049455 Triangle read by rows: T(n,k) = numerator of fraction in k-th term of n-th row of variant of Farey series.
  * @author Sean A. Irvine
  */
-public class A049455 implements Sequence {
+public class A049455 extends Sequence1 {
 
   private ArrayList<Q> mA = new ArrayList<>();
   private int mN = 0;

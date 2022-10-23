@@ -3,13 +3,13 @@ package irvine.oeis.a035;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035285 Similar submodules in cubian ring of index (f(n)^2 where f(n) is the n-th positive integer represented by the quadratic form x^2 - 2 y^2.
  * @author Sean A. Irvine
  */
-public class A035285 implements Sequence {
+public class A035285 extends Sequence1 {
 
   // After Michel Marcus
 

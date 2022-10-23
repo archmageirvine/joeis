@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004775 Numbers k such that the binary expansion of k does not end in 011.
  * @author Sean A. Irvine
  */
-public class A004775 implements Sequence {
+public class A004775 extends Sequence1 {
 
   private long mN = -1;
 

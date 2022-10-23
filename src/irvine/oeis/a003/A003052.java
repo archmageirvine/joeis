@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003052 Self numbers or Colombian numbers (numbers that are not of the form m + sum of digits of m for any m).
  * @author Sean A. Irvine
  */
-public class A003052 implements Sequence {
+public class A003052 extends Sequence1 {
 
   private long mN = 0;
 

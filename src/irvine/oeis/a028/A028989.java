@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028989 Smallest palindromic prime with 2n-1 digits.
  * @author Sean A. Irvine
  */
-public class A028989 implements Sequence {
+public class A028989 extends Sequence1 {
 
   // After Charles R Greathouse IV
 

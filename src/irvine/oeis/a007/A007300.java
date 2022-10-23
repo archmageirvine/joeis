@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007300 a(1)=2, a(2)=5; for n &gt;= 3, a(n) is smallest number which is uniquely of the form a(j) + a(k) with 1 &lt;= j &lt; k &lt; n.
  * @author Sean A. Irvine
  */
-public class A007300 implements Sequence {
+public class A007300 extends Sequence1 {
 
   private static final int[] INITIAL = {2, 5, 7, 9, 11, 12};
   private static final int[] ADD = {13, 15, 19, 23, 27, 29, 35, 37, 41, 43, 45, 49, 51, 55, 61, 67, 69, 71, 79, 83, 85, 87, 89, 95, 99, 107, 109, 119, 131, 133, 135, 137};

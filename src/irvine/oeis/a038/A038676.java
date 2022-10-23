@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038676 Fourth powers ending in a (different) positive fourth power.
  * @author Sean A. Irvine
  */
-public class A038676 implements Sequence {
+public class A038676 extends Sequence1 {
 
   private long mN = 2;
 

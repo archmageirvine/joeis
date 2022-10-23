@@ -3,13 +3,14 @@ package irvine.oeis.a049;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a062.A062326;
 
 /**
  * A049002 Primes of form p^2 - 2, where p is prime.
  * @author Georg Fischer
  */
-public class A049002 implements Sequence {
+public class A049002 extends Sequence1 {
 
   final Sequence mA062326 = new A062326();
 

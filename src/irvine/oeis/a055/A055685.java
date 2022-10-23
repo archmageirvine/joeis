@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055685 Numbers k such that 2^k == -1 (mod k-1).
  * @author Georg Fischer
  */
-public class A055685 implements Sequence {
+public class A055685 extends Sequence1 {
 
   protected Z mK = Z.ONE;
   protected Z mBase;

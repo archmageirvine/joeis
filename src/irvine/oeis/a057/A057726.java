@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057726 Primes of the form 3^(2^n) + 2.
  * @author Sean A. Irvine
  */
-public class A057726 implements Sequence {
+public class A057726 extends Sequence1 {
 
   private long mN = -1;
 

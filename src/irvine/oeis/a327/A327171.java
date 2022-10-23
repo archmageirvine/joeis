@@ -3,6 +3,7 @@ package irvine.oeis.a327;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a007.A007913;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007913;
  * A327171 a(n) = phi(n) * core(n), where phi is Euler totient function, and core gives the squarefree part of n.
  * @author Georg Fischer
  */
-public class A327171 implements Sequence {
+public class A327171 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA007913 = new A007913();

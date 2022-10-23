@@ -3,13 +3,13 @@ package irvine.oeis.a051;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051423 Sum of prime divisors of n is congruent to 2^n (mod n).
  * @author Sean A. Irvine
  */
-public class A051423 implements Sequence {
+public class A051423 extends Sequence1 {
 
   private long mN = 14;
 

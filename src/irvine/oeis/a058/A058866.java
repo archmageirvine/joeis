@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058866 Number of 2-trees rooted at an edge.
  * @author Sean A. Irvine
  */
-public class A058866 implements Sequence {
+public class A058866 extends Sequence1 {
 
   // See p. 75 Harary and Palmer
 

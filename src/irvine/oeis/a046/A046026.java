@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046026 Smallest prime p dividing n#-1, n#, or n#+1, n squarefree.
  * @author Sean A. Irvine
  */
-public class A046026 implements Sequence {
+public class A046026 extends Sequence1 {
 
   // Smallest prime p such that n divides one of p#-1, p#, p#+1
 

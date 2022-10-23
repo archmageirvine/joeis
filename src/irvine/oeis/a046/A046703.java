@@ -3,14 +3,14 @@ package irvine.oeis.a046;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A046703 Multiplicative primes: product of digits is a prime.
  * @author Sean A. Irvine
  */
-public class A046703 implements Sequence {
+public class A046703 extends Sequence1 {
 
   private static final long[] PRIME_DIGITS = {2, 3, 5, 7};
   private final TreeSet<Z> mA = new TreeSet<>();

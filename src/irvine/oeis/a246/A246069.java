@@ -3,13 +3,13 @@ package irvine.oeis.a246;
 import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A246069 Number of maximal classes determined by permutations.
  * @author Sean A. Irvine
  */
-public class A246069 implements Sequence {
+public class A246069 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

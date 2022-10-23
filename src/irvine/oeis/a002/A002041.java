@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002041 Expansion of x/((1-x)(1-4x^2)(1-5x)).
  * @author Sean A. Irvine
  */
-public class A002041 implements Sequence {
+public class A002041 extends Sequence1 {
 
   private boolean mEven = false;
   private Z mA = Z.valueOf(75);

@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002328 Numbers n such that n^2 - n - 1 is prime.
  * @author Sean A. Irvine
  */
-public class A002328 implements Sequence {
+public class A002328 extends Sequence1 {
 
   protected Z mN = Z.TWO;
 

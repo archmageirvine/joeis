@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038511 Composite numbers with smallest prime factor &gt;= 11.
  * @author Sean A. Irvine
  */
-public class A038511 implements Sequence {
+public class A038511 extends Sequence1 {
 
   private static final Z Z210 = Z.valueOf(210);
   private Z mN = Z.valueOf(120);

@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014701 Number of multiplications to compute n-th power by the Chandah-sutra method.
  * @author Sean A. Irvine
  */
-public class A014701 implements Sequence {
+public class A014701 extends Sequence1 {
 
   private long mN = 0;
 

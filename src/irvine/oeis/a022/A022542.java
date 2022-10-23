@@ -3,13 +3,13 @@ package irvine.oeis.a022;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A022542 Minimum number of possible solutions for all irreducible stick-cutting problems.
  * @author Sean A. Irvine
  */
-public class A022542 implements Sequence {
+public class A022542 extends Sequence1 {
 
   // After Frans J. Fasse
   // http://www.iwriteiam.nl/CS_gen_c.txt

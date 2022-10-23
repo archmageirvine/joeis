@@ -3,6 +3,7 @@ package irvine.oeis.a293;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001826;
 import irvine.oeis.a121.A121262;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a121.A121262;
  * A293451 Number of proper divisors of form 4k+1.
  * @author Georg Fischer
  */
-public class A293451 implements Sequence {
+public class A293451 extends Sequence1 {
 
   final Sequence mA001826 = new A001826();
   final Sequence mA121262 = new A121262();

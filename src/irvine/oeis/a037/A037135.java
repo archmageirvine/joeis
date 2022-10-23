@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037135 Number of ways of writing n=a+b where |s(a)-a|=|s(b)-b|, s(x)=sigma(x)-x.
  * @author Sean A. Irvine
  */
-public class A037135 implements Sequence {
+public class A037135 extends Sequence1 {
 
   private long mN = 0;
 

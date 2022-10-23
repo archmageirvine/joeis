@@ -3,13 +3,14 @@ package irvine.oeis.a307;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a035.A035250;
 
 /**
  * A307989 a(n) = n - pi(2*n) + pi(n-1), where pi is the prime counting function.
  * @author Georg Fischer
  */
-public class A307989 implements Sequence {
+public class A307989 extends Sequence1 {
 
   final Sequence mA035250 = new A035250();
   protected long mN;

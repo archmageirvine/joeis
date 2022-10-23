@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007959 Some nontrivial permutation of digits is an odd number.
  * @author Sean A. Irvine
  */
-public class A007959 implements Sequence {
+public class A007959 extends Sequence1 {
 
   // After M. F. Hasler
 

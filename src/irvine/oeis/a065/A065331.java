@@ -3,6 +3,7 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006519;
 import irvine.oeis.a038.A038500;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a038.A038500;
  * A065331 Largest 3-smooth divisor of n.
  * @author Georg Fischer
  */
-public class A065331 implements Sequence {
+public class A065331 extends Sequence1 {
 
   final Sequence mA006519 = new A006519();
   final Sequence mA038500 = new A038500();

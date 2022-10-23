@@ -3,13 +3,14 @@ package irvine.oeis.a221;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023811;
 
 /**
  * A221741 a(n) = -4*(((n+1)^(n+1)-(n+1))/((n+1)-1)^2-1)/((-3+(-1)^n)*n).
  * @author Georg Fischer
  */
-public class A221741 implements Sequence {
+public class A221741 extends Sequence1 {
 
   final Sequence mA023811 = new A023811();
   protected long mN;

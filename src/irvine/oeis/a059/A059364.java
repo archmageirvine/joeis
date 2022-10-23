@@ -4,13 +4,13 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059364 Triangle T(n,k)=Sum_{i=0..n} |stirling1(n,n-i)|*binomial(i,k), k=0..n-1.
  * @author Sean A. Irvine
  */
-public class A059364 implements Sequence {
+public class A059364 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

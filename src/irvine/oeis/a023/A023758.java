@@ -3,13 +3,13 @@ package irvine.oeis.a023;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023758 Numbers of the form 2^i - 2^j with i &gt;= j.
  * @author Sean A. Irvine
  */
-public class A023758 implements Sequence {
+public class A023758 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
 

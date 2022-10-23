@@ -3,6 +3,7 @@ package irvine.oeis.a045;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000142;
 import irvine.oeis.a008.A008905;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a008.A008905;
  * A045509 Factorials having initial digit '1'.
  * @author Georg Fischer
  */
-public class A045509 implements Sequence {
+public class A045509 extends Sequence1 {
 
   protected Z mDig1;
   protected int mN;

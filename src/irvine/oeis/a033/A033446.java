@@ -2,13 +2,13 @@ package irvine.oeis.a033;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033446 List of quadruplets of primes with common difference 12.
  * @author Sean A. Irvine
  */
-public class A033446 implements Sequence {
+public class A033446 extends Sequence1 {
 
   private final Z mDiff = Z.valueOf(diff());
   protected final Fast mPrime = new Fast();

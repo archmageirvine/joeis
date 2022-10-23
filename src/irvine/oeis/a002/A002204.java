@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002204 An ill-conditioned determinant.
  * @author Sean A. Irvine
  */
-public class A002204 implements Sequence {
+public class A002204 extends Sequence1 {
 
   private long mN = 0;
   private Z mA = Z.ONE;

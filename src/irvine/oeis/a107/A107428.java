@@ -3,13 +3,13 @@ package irvine.oeis.a107;
 import irvine.math.MemoryFunctionInt3;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A107428 Number of gap-free compositions of n.
  * @author Georg Fischer
  */
-public class A107428 implements Sequence {
+public class A107428 extends Sequence1 {
   /* Maple:
     b:= proc(n, i, t) option remember; `if`(n=0, t!,
           `if`(i<1 or n<i, 0, add(b(n-i*j, i-1, t+j)/j!, j=1..n/i)))

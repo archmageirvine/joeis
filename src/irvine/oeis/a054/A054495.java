@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054495 Smallest k such that n/k is a Fibonacci number.
  * @author Sean A. Irvine
  */
-public class A054495 implements Sequence {
+public class A054495 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,13 +2,14 @@ package irvine.oeis.a103;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001622;
 
 /**
  * A103812 Primes from merging of 2 successive digits in decimal expansion of the Golden Ratio, (1+sqrt(5))/2.
  * @author Georg Fischer
  */
-public class A103812 implements Sequence {
+public class A103812 extends Sequence1 {
 
   private final Sequence mSeq;
   private Z mA; // current result of merging

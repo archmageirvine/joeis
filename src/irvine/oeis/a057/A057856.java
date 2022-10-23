@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057856 Least k such that (n+1)^k + n^k is a prime.
  * @author Sean A. Irvine
  */
-public class A057856 implements Sequence {
+public class A057856 extends Sequence1 {
 
   private long mN = 0;
 

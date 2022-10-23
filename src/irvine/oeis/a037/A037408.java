@@ -3,14 +3,14 @@ package irvine.oeis.a037;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037408 Positive numbers having the same set of digits in base 2 and base 3.
  * Assertion: <code>base1 &lt; base2</code>.
  * @author Georg Fischer
  */
-public class A037408 implements Sequence {
+public class A037408 extends Sequence1 {
 
   protected Z mN;
   protected int mBase1;

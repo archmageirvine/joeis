@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.CollectionUtils;
 import irvine.util.array.LongDynamicByteArray;
 
@@ -11,7 +11,7 @@ import irvine.util.array.LongDynamicByteArray;
  * A090702 a(n) is the minimal number k such that every binary word of length n can be transformed into a palindrome or an antipalindrome by deleting at most k letters.
  * @author Sean A. Irvine
  */
-public class A090702 implements Sequence {
+public class A090702 extends Sequence1 {
 
   // We are dealing with words, so need to support leading 0's
   // This is done by assuming a leading 1 which is ignored for palindrome and antipalindrome testing

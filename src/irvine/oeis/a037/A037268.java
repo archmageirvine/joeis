@@ -3,13 +3,13 @@ package irvine.oeis.a037;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037268 Sum of reciprocals of digits = 1.
  * @author Sean A. Irvine
  */
-public class A037268 implements Sequence {
+public class A037268 extends Sequence1 {
 
   private boolean mDone = false;
   private long mN = 0;

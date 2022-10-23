@@ -2,13 +2,13 @@ package irvine.oeis.a013;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013919 Numbers n such that sum of first n composites is composite.
  * @author Sean A. Irvine
  */
-public class A013919 implements Sequence {
+public class A013919 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mSum = Z.ZERO;

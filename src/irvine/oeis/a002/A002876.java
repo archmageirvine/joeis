@@ -5,13 +5,13 @@ import java.util.HashSet;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002876 Number of weighted linear spaces of total weight n.
  * @author Sean A. Irvine
  */
-public class A002876 implements Sequence {
+public class A002876 extends Sequence1 {
 
   // Correct to at least a(8) = 239.
 

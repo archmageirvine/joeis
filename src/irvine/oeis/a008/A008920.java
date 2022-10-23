@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008920 Let j = | i - i_written_backwards |, k = j + j_written_backwards; then k is in this sequence.
  * @author Sean A. Irvine
  */
-public class A008920 implements Sequence {
+public class A008920 extends Sequence1 {
 
   private final TreeSet<Long> mValues = new TreeSet<>();
   private long mN = -1;

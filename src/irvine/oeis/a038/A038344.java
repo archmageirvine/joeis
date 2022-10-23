@@ -3,13 +3,13 @@ package irvine.oeis.a038;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038344 Numbers k such that phi(k) + sigma(k) is a prime.
  * @author Sean A. Irvine
  */
-public class A038344 implements Sequence {
+public class A038344 extends Sequence1 {
 
   private long mN = 0;
 

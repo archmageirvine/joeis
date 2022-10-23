@@ -3,13 +3,13 @@ package irvine.oeis.a036;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036116 Numbers n such that the number of distinct primes dividing n is a square.
  * @author Sean A. Irvine
  */
-public class A036116 implements Sequence {
+public class A036116 extends Sequence1 {
 
   private long mN = 0;
 

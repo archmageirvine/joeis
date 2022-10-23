@@ -3,13 +3,14 @@ package irvine.oeis.a216;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045542;
 
 /**
  * A216765 Perfect powers (squares, cubes, etc.) plus 1.
  * @author Georg Fischer
  */
-public class A216765 implements Sequence {
+public class A216765 extends Sequence1 {
 
   final Sequence mA045542 = new A045542();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033680 a(1) = 1; a(n) is smallest number &gt;= a(n-1) such that the juxtaposition a(1)a(2)...a(n) is a prime.
  * @author Sean A. Irvine
  */
-public class A033680 implements Sequence {
+public class A033680 extends Sequence1 {
 
   private final StringBuilder mA = new StringBuilder();
   private Z mPrev = null;

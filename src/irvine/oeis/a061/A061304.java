@@ -3,13 +3,13 @@ package irvine.oeis.a061;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A061304 Squarefree triangular numbers.
  * @author Georg Fischer
  */
-public class A061304 implements Sequence {
+public class A061304 extends Sequence1 {
   
   protected long mN = 0;
   

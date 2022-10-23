@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030531 Value of 3^x - 2^x - 5 for the solutions of 3^x - 2^x == 5 (mod 7).
  * @author Sean A. Irvine
  */
-public class A030531 implements Sequence {
+public class A030531 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.ONE;

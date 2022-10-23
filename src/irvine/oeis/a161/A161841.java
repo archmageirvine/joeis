@@ -3,13 +3,14 @@ package irvine.oeis.a161;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038548;
 
 /**
  * A161841 Number of factors, with repetition, in all distinct pairs (a &lt;= b) such that a*b = n.
  * @author Georg Fischer
  */
-public class A161841 implements Sequence {
+public class A161841 extends Sequence1 {
 
   final Sequence mA038548 = new A038548();
   @Override

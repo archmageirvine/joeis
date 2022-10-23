@@ -3,13 +3,14 @@ package irvine.oeis.a325;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a048.A048146;
 
 /**
  * A325814 a(n) = n - A048146(n), where A048146 is the sum of non-unitary divisors of n.
  * @author Georg Fischer
  */
-public class A325814 implements Sequence {
+public class A325814 extends Sequence1 {
 
   final Sequence mA048146 = new A048146();
   protected long mN;

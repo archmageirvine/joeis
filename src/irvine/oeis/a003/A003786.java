@@ -4,13 +4,13 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003786 Dates at weekly intervals from Jan 01 of leap year.
  * @author Sean A. Irvine
  */
-public class A003786 implements Sequence {
+public class A003786 extends Sequence1 {
 
   // WARNING This sequence is poorly defined for what happens after 400 years.
 

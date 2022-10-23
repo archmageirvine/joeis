@@ -2,13 +2,13 @@ package irvine.oeis.a116;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A116068 Numbers k such that k has nondecreasing digits and the k-th prime has nonincreasing digits.
  * @author Sean A. Irvine
  */
-public class A116068 implements Sequence {
+public class A116068 extends Sequence1 {
 
   private long mN = 0;
   private final Fast mPrime = new Fast();

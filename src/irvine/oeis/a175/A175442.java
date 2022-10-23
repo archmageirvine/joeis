@@ -2,13 +2,13 @@ package irvine.oeis.a175;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A175442 a(n)&gt;a(n-1), a(n) = smallest prime such that a(n)+a(n-1) is multiple of m, a(1)=2, m=3.
  * @author Georg Fischer
  */
-public class A175442 implements Sequence {
+public class A175442 extends Sequence1 {
 
   private int mN;
   private final Z mM;

@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033868 Numbers n such that 7*n-11 is prime.
  * @author Sean A. Irvine
  */
-public class A033868 implements Sequence {
+public class A033868 extends Sequence1 {
 
   private Z mN = Z.valueOf(-11);
 

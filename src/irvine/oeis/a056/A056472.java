@@ -7,13 +7,13 @@ import java.util.List;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056472 Triangle read by rows in which row n lists all factorizations of n.
  * @author Sean A. Irvine
  */
-public class A056472 implements Sequence {
+public class A056472 extends Sequence1 {
 
   private final List<Long> mA = new ArrayList<>();
   private int mN = 0;

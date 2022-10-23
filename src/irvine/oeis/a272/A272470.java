@@ -3,13 +3,14 @@ package irvine.oeis.a272;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A272470 7 times the primes.
  * @author Georg Fischer
  */
-public class A272470 implements Sequence {
+public class A272470 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   @Override

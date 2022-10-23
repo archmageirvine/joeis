@@ -3,13 +3,14 @@ package irvine.oeis.a084;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008365;
 
 /**
  * A084970 Numbers whose smallest prime factor is 13.
  * @author Georg Fischer
  */
-public class A084970 implements Sequence {
+public class A084970 extends Sequence1 {
 
   final Sequence mA008365 = new A008365();
   @Override

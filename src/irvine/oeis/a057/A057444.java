@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057444 For the numbers k that can be expressed as k = w + x = y*z with w*x = y^2 + z^2 where w, x, y, and z are all positive integers, this sequence gives the corresponding values of w*x.
  * @author Sean A. Irvine
  */
-public class A057444 implements Sequence {
+public class A057444 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private long mN = 8;

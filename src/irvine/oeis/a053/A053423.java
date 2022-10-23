@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053423 The mapping F(n) = floor(floor(n*sqrt(n)) / floor(sqrt(n))) iterates to a fixed point; a(n) is the least k such that f(k,n)=f(k-1,n), where f(0,n)=n, f(1,n)=F(n), f(k,n)=f(k-1,F(n)).
  * @author Sean A. Irvine
  */
-public class A053423 implements Sequence {
+public class A053423 extends Sequence1 {
 
   private long mN = 0;
 

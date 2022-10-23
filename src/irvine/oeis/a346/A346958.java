@@ -7,13 +7,13 @@ import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Keeper;
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A346958 a(n) is the minimal number of cubes required to make a void of volume n.
  * @author Sean A. Irvine
  */
-public class A346958 implements Sequence, Keeper {
+public class A346958 extends Sequence1 implements Keeper {
 
   private int mN = 0;
   private int mMin;

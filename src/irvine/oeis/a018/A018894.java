@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A018894 Numbers n such that sigma(n)/phi(n) sets a new record.
  * @author Sean A. Irvine
  */
-public class A018894 implements Sequence {
+public class A018894 extends Sequence1 {
 
   private Q mBest = Q.ZERO;
   private long mN = 0;

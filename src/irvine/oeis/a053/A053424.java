@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053424 Fixed point to which iterates of F(n) in A053423 converge.
  * @author Sean A. Irvine
  */
-public class A053424 implements Sequence {
+public class A053424 extends Sequence1 {
 
   private long mN = 0;
 

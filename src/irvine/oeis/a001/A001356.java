@@ -5,13 +5,13 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001356 Dates at fortnightly intervals from Jan 01 in the Julian calendar.
  * @author Sean A. Irvine
  */
-public class A001356 implements Sequence {
+public class A001356 extends Sequence1 {
 
   // Month is zero based
   private final GregorianCalendar mCalendar = new GregorianCalendar(4, Calendar.DECEMBER, 18, 0, 0, 1);

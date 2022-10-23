@@ -4,7 +4,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000720;
 
@@ -12,7 +12,7 @@ import irvine.oeis.a000.A000720;
  * A048768 Numbers n such that A048767(n) = n.
  * @author Sean A. Irvine
  */
-public class A048768 implements Sequence {
+public class A048768 extends Sequence1 {
 
   private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A000040());
   private final MemorySequence mPi = MemorySequence.cachedSequence(new A000720());

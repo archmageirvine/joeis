@@ -2,13 +2,13 @@ package irvine.oeis.a139;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A139206 Smallest son factorial prime p of order n: smallest p such that p!/n-1 is prime.
  * @author Sean A. Irvine
  */
-public class A139206 implements Sequence {
+public class A139206 extends Sequence1 {
 
   final Fast mPrime = new Fast();
   int mN = 0;

@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000655 a(n) = number of letters in a(n-1), a(1) = 1 (in English).
  * @author Sean A. Irvine
  */
-public class A000655 implements Sequence {
+public class A000655 extends Sequence1 {
 
   private int mN = 0;
 

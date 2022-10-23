@@ -2,13 +2,13 @@ package irvine.oeis.a074;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A074861 Iccanobirt sequence: a(n) = R(a(n-1)) + R(a(n-2)) + R(a(n-3)) where a(1)=a(2)=a(3)=1 and R(n) (A004086) is the reverse of n.
  * @author Georg Fischer
  */
-public class A074861 implements Sequence {
+public class A074861 extends Sequence1 {
 
   protected int mN = -1;
   protected Z mA = Z.ONE; // a(n-1)

@@ -2,13 +2,14 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007018;
 
 /**
  * A053631 Pythagorean spiral: a(n-1)+1, a(n) and a(n)+1 are the sides of a right triangle (a primitive Pythagorean triangle).
  * @author Georg Fischer
  */
-public class A053631 implements Sequence {
+public class A053631 extends Sequence1 {
 
   private final Sequence mA007018 = new A007018();
 

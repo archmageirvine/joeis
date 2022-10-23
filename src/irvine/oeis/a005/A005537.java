@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005537 Numbers n such that 4*3^n + 1 is prime.
  * @author Sean A. Irvine
  */
-public class A005537 implements Sequence {
+public class A005537 extends Sequence1 {
 
   private Z mA = Z.FOUR;
   private long mN = -1;

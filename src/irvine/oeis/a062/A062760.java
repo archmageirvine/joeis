@@ -3,13 +3,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007947;
 import irvine.oeis.a051.A051904;
 /**
  * A062760 a(n) is n divided by the largest power of the squarefree kernel of n (A007947) which divides it.
  * @author Georg Fischer
  */
-public class A062760 implements Sequence {
+public class A062760 extends Sequence1 {
 
   private final Sequence mA007947 = new A007947();
   private final Sequence mA051904 = new A051904();

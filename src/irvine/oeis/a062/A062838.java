@@ -3,13 +3,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005117;
 
 /**
  * A062838 Cubes of squarefree numbers.
  * @author Georg Fischer
  */
-public class A062838 implements Sequence {
+public class A062838 extends Sequence1 {
 
   final Sequence mA005117 = new A005117();
   @Override

@@ -3,13 +3,13 @@ package irvine.oeis.a031;
 import irvine.factor.prime.Fast;
 import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A031362 Number of coincidence site modules of index 10n+1 with 10-fold symmetry in plane.
  * @author Sean A. Irvine
  */
-public class A031362 implements Sequence {
+public class A031362 extends Sequence1 {
 
   // After R. J. Mathar
 

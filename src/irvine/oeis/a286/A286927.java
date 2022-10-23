@@ -3,13 +3,14 @@ package irvine.oeis.a286;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001952;
 
 /**
  * A286927 Positions of 1 in A286925; complement of A286926.
  * @author Georg Fischer
  */
-public class A286927 implements Sequence {
+public class A286927 extends Sequence1 {
 
   final Sequence mA001952 = new A001952();
   @Override

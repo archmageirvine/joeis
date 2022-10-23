@@ -6,13 +6,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002945 Continued fraction for cube root of 2.
  * @author Sean A. Irvine
  */
-public class A002945 implements Sequence {
+public class A002945 extends Sequence1 {
 
   // Polynomial method for generating continued fractions
   // In this case <code>\sqrt[3]{2}</code> initial polynomial is x^3-2=0

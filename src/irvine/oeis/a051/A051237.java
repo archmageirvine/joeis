@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051237 Lexicographically earliest prime pyramid, read by rows.
  * @author Sean A. Irvine
  */
-public class A051237 implements Sequence {
+public class A051237 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int[] mRow = {1};

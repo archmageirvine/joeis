@@ -3,13 +3,14 @@ package irvine.oeis.a105;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000224;
 
 /**
  * A105612 Number of nonzero quadratic residues (mod n) (cf. A000224).
  * @author Georg Fischer
  */
-public class A105612 implements Sequence {
+public class A105612 extends Sequence1 {
 
   final Sequence mA000224 = new A000224();
   @Override

@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003990 Table of lcm(x,y), read along antidiagonals.
  * @author Sean A. Irvine
  */
-public class A003990 implements Sequence {
+public class A003990 extends Sequence1 {
 
   private long mRow = 0;
   private long mCol = 0;

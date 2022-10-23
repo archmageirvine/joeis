@@ -3,6 +3,7 @@ package irvine.oeis.a050;
 import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a005.A005117;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a005.A005117;
  * A050320 Number of ways n is a product of squarefree numbers &gt; 1.
  * @author Sean A. Irvine
  */
-public class A050320 implements Sequence {
+public class A050320 extends Sequence1 {
 
   private long mN = 0;
 

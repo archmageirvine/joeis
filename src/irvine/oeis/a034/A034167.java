@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import irvine.factor.prime.Fast;
 import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034167 Product of primes == 1 (mod 7) and cubes of primes == 2 or 4 (mod 7).
  * @author Sean A. Irvine
  */
-public class A034167 implements Sequence {
+public class A034167 extends Sequence1 {
 
   private int mN = 0;
   private int mMax = 100;

@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037084 Positive integers not going to 1 under iterations of the map in A001281: n-&gt;3n-1 if n odd, n-&gt;n/2 if n even.
  * @author Sean A. Irvine
  */
-public class A037084 implements Sequence {
+public class A037084 extends Sequence1 {
 
   private static final Z Z17 = Z.valueOf(17);
   private Z mN = Z.FOUR;

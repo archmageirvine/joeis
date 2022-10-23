@@ -3,14 +3,14 @@ package irvine.oeis.a007;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A007709 Number of winning (or reformed) decks at Mousetrap.
  * @author Sean A. Irvine
  */
-public class A007709 implements Sequence {
+public class A007709 extends Sequence1 {
 
   // Brute force Mousetrap
 

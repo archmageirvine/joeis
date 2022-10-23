@@ -5,13 +5,13 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000171 Number of self-complementary graphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A000171 implements Sequence {
+public class A000171 extends Sequence1 {
 
   private final MemoryFactorial mFactorial = MemoryFactorial.SINGLETON;
   private int mN = 0;

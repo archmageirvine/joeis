@@ -3,13 +3,14 @@ package irvine.oeis.a076;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007947;
 
 /**
  * A076618 Least x&gt;1 such that x^d == 1 (mod d) for each divisor d of n.
  * @author Georg Fischer
  */
-public class A076618 implements Sequence {
+public class A076618 extends Sequence1 {
 
   final Sequence mA007947 = new A007947();
   @Override

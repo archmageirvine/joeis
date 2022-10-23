@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036570 Primes p such that (p+1)/2 and (p+2)/3 are also primes.
  * @author Sean A. Irvine
  */
-public class A036570 implements Sequence {
+public class A036570 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 11;

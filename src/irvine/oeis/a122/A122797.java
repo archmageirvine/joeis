@@ -3,13 +3,14 @@ package irvine.oeis.a122;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001614;
 
 /**
  * A122797 A P_3-stuttered arithmetic progression with a(n+1) = a(n) if n is a triangular number, a(n+1) = a(n) + 1 otherwise.
  * @author Georg Fischer
  */
-public class A122797 implements Sequence {
+public class A122797 extends Sequence1 {
 
   final Sequence mA001614 = new A001614();
   protected long mN;

@@ -5,13 +5,13 @@ package irvine.oeis.a190;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A190239 a(n) = [n*u + n*v] - [n*u] - [n*v], where u=e^(Pi/2), v=1/u, and []=floor.
  * @author Georg Fischer
  */
-public class A190239 implements Sequence {
+public class A190239 extends Sequence1 {
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
   private long mN = 0;
   private static final CR U = REALS.pow(CR.E, CR.PI.divide(CR.TWO));

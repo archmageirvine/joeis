@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054723 Prime exponents of composite Mersenne numbers.
  * @author Sean A. Irvine
  */
-public class A054723 implements Sequence {
+public class A054723 extends Sequence1 {
 
   private final Fast mPrime = new Fast(); // this knows about Mersenne primes
   private long mN = 1;

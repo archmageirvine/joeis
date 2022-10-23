@@ -3,13 +3,14 @@ package irvine.oeis.a079;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003158;
 
 /**
  * A079523 Utterly odd numbers: numbers whose binary representation ends in an odd number of ones.
  * @author Georg Fischer
  */
-public class A079523 implements Sequence {
+public class A079523 extends Sequence1 {
 
   final Sequence mA003158 = new A003158();
   protected long mN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014118 Write in binary and read in ternary!.
  * @author Sean A. Irvine
  */
-public class A014118 implements Sequence {
+public class A014118 extends Sequence1 {
 
   private Z mA = null;
 

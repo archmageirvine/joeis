@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008560 a(1) = 2; to get a(n), n &gt;= 2, convert a(n-1) from base 3 to base 2.
  * @author Sean A. Irvine
  */
-public class A008560 implements Sequence {
+public class A008560 extends Sequence1 {
 
   private Z mA = null;
 

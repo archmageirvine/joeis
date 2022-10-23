@@ -1,14 +1,14 @@
 package irvine.oeis.a061;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A061931 Numbers n such that n divides the (right) concatenation of all numbers &lt;= n written in base 2 (most significant digit on right).
  * @author Sean A. Irvine
  * @author Georg Fischer
  */
-public class A061931 implements Sequence {
+public class A061931 extends Sequence1 {
 
   private int mBase;
   private long mN;

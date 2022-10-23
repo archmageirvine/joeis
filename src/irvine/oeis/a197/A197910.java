@@ -2,13 +2,13 @@ package irvine.oeis.a197;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A197910 Ceiling((n+1/2)^n).
  * @author Georg Fischer
  */
-public class A197910 implements Sequence {
+public class A197910 extends Sequence1 {
 
   protected int mN = 0;
   protected final Q mParm;

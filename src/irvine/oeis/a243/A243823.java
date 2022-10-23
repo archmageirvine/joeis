@@ -3,12 +3,13 @@ package irvine.oeis.a243;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045763;
 /**
  * A243823 Quantity of "semitotatives," numbers m &lt; n that are products of at least one prime divisor p of n and one prime q coprime to n.
  * @author Georg Fischer
  */
-public class A243823 implements Sequence {
+public class A243823 extends Sequence1 {
 
   private final Sequence mA045763 = new A045763();
   private final Sequence mA243822 = new A243822();

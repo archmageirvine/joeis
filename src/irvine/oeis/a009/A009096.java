@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009096 Ordered perimeters of Pythagorean triangles.
  * @author Sean A. Irvine
  */
-public class A009096 implements Sequence {
+public class A009096 extends Sequence1 {
 
   private final TreeMap<Long, Integer> mPerimeters = new TreeMap<>();
   private long mC = 4;

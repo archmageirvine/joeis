@@ -2,13 +2,13 @@ package irvine.oeis.a166;
 // manually 2021-08-08
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A166727 Positive integers with English names ending in "r".
  * @author Georg Fischer
  */
-public class A166727 implements Sequence {
+public class A166727 extends Sequence1 {
 
   protected long mK;
 

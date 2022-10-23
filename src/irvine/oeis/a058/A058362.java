@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058362 Initial primes of sets of 6 consecutive primes in arithmetic progression.
  * @author Sean A. Irvine
  */
-public class A058362 implements Sequence {
+public class A058362 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 121174810;

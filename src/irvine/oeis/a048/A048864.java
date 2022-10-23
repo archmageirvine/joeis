@@ -3,13 +3,14 @@ package irvine.oeis.a048;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a036.A036997;
 
 /**
  * A048864 Number of nonprime numbers (composites and 1) in the reduced residue system of n.
  * @author Georg Fischer
  */
-public class A048864 implements Sequence {
+public class A048864 extends Sequence1 {
 
   final Sequence mA036997 = new A036997();
   @Override

@@ -3,13 +3,14 @@ package irvine.oeis.a100;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001358;
 
 /**
  * A100493 a(n) = n + n-th semiprime.
  * @author Georg Fischer
  */
-public class A100493 implements Sequence {
+public class A100493 extends Sequence1 {
 
   final Sequence mA001358 = new A001358();
   protected long mN;

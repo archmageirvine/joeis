@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019312 Taxman sequence: define T(S) by max{x+T(S \ {c : c|x})}, where the max is over all x in S for which S also contains a proper divisor of x; if no such x exists, T(S)=0; set T(n)=T({1,...,n}).
  * @author Sean A. Irvine
  */
-public class A019312 implements Sequence {
+public class A019312 extends Sequence1 {
 
   // Taxman
 

@@ -3,13 +3,14 @@ package irvine.oeis.a137;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001248;
 
 /**
  * A137831 (Prime(n)^2 minus its last digit)/20.
  * @author Georg Fischer
  */
-public class A137831 implements Sequence {
+public class A137831 extends Sequence1 {
 
   final Sequence mA001248 = new A001248();
   final Sequence mA137807 = new A137807();

@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045551 Numbers whose factorial has '04' as its final two digits before the trailing zeros.
  * @author Sean A. Irvine
  */
-public class A045551 implements Sequence {
+public class A045551 extends Sequence1 {
 
   private Z mF = Z.ONE;
   private long mN = 1;

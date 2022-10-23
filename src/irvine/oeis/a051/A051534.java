@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051534 Integers n for which ceiling(n/2)*10^n - ceiling(n/2) is an n-White number.
  * @author Sean A. Irvine
  */
-public class A051534 implements Sequence {
+public class A051534 extends Sequence1 {
 
   private int mN = 0;
 

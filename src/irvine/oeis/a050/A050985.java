@@ -3,13 +3,14 @@ package irvine.oeis.a050;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008834;
 
 /**
  * A050985 Cubefree part of n.
  * @author Georg Fischer
  */
-public class A050985 implements Sequence {
+public class A050985 extends Sequence1 {
 
   final Sequence mA008834 = new A008834();
   protected long mN;

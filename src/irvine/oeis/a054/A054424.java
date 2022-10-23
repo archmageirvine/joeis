@@ -5,6 +5,7 @@ import java.util.HashMap;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a007.A007305;
 import irvine.oeis.a020.A020652;
@@ -15,7 +16,7 @@ import irvine.oeis.a047.A047679;
  * A054424 Permutation of natural numbers: maps the canonical list of fractions (A020652/A020653) to whole Stern-Brocot (Farey) tree (top = 1/1 and both sides &lt; 1 and &gt; 1, but excluding the "fractions" 0/1 and 1/0).
  * @author Sean A. Irvine
  */
-public class A054424 implements Sequence {
+public class A054424 extends Sequence1 {
 
   private final HashMap<Q, Long> mSternBrocotMap = new HashMap<>();
   private long mSternBrocotMapIndex = 0;

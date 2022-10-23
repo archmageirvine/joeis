@@ -4,13 +4,14 @@ import irvine.math.z.Z;
 import irvine.oeis.DifferenceSequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a059.A059543;
 
 /**
  * A325752 First term of n-th difference sequence of (floor(r*k)), r = log(3), k &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A325752 implements Sequence {
+public class A325752 extends Sequence1 {
 
   private long mN = 0;
 

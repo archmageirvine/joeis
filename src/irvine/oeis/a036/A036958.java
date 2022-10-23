@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036958 Primes containing only digits from the set (0,1,2,3,4,5).
  * @author Sean A. Irvine
  */
-public class A036958 implements Sequence {
+public class A036958 extends Sequence1 {
 
   private long mN = 0;
 

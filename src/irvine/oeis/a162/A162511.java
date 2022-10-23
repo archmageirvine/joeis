@@ -3,6 +3,7 @@ package irvine.oeis.a162;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008836;
 import irvine.oeis.a076.A076479;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a076.A076479;
  * A162511 Multiplicative function with a(p^e) = (-1)^(e-1).
  * @author Georg Fischer
  */
-public class A162511 implements Sequence {
+public class A162511 extends Sequence1 {
 
   final Sequence mA008836 = new A008836();
   final Sequence mA076479 = new A076479();

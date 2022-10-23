@@ -3,12 +3,13 @@ package irvine.oeis.a305;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051518;
 /**
  * A305704 Numbers that are the semiperimeter of some triangle with integer sides and area.
  * @author Georg Fischer
  */
-public class A305704 implements Sequence {
+public class A305704 extends Sequence1 {
 
   private final Sequence mA051518 = new A051518();
   @Override

@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054514 Number of ways to place non-crossing diagonals in convex (n+4)-gon so as to create no triangles or quadrilaterals.
  * @author Sean A. Irvine
  */
-public class A054514 implements Sequence {
+public class A054514 extends Sequence1 {
 
   private int mN = 0;
 

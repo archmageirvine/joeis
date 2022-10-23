@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import irvine.math.api.RationalSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020650 Numerators in recursive bijection from positive integers to positive rationals (the bijection is f(1) = 1, f(2n) = f(n)+1, f(2n+1) = 1/(f(n)+1)).
  * @author Sean A. Irvine
  */
-public class A020650 implements Sequence, RationalSequence {
+public class A020650 extends Sequence1 implements RationalSequence {
 
   private boolean mEven = true;
   private final ArrayList<Q> mA = new ArrayList<>();

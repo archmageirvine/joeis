@@ -10,14 +10,14 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.r.Constants;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002410 Nearest integer to imaginary part of n-th zero of Riemann zeta function.
  * @author Sean A. Irvine
  * @author Raymond Manzoni
  */
-public class A002410 implements Sequence {
+public class A002410 extends Sequence1 {
 
   // WARNING: This might not have sufficient accuracy, cf. A162774 diff
 

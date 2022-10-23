@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051252 Number of essentially different ways of arranging numbers 1 through 2n around a circle so that sum of each pair of adjacent numbers is prime.
  * @author Sean A. Irvine
  */
-public class A051252 implements Sequence {
+public class A051252 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

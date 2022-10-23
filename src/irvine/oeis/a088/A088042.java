@@ -3,13 +3,13 @@ package irvine.oeis.a088;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A088042 Number of permutations in the symmetric group S_n such that the size of their conjugacy class is odd.
  * @author Sean A. Irvine
  */
-public class A088042 implements Sequence {
+public class A088042 extends Sequence1 {
 
   protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   protected int mN = 0;

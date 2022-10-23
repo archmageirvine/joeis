@@ -7,14 +7,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
 
 /**
  * A005984 Related to recurrences over rings.
  * @author Sean A. Irvine
  */
-public class A005984 implements Sequence {
+public class A005984 extends Sequence1 {
 
   // After Michel Marcus
 

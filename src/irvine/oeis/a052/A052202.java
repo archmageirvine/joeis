@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052202 Numbers k such that the product of the logarithms of k's prime factors is greater than their sum.
  * @author Sean A. Irvine
  */
-public class A052202 implements Sequence {
+public class A052202 extends Sequence1 {
 
   private static final int TOLERANCE = -32;
   private long mN = 76;

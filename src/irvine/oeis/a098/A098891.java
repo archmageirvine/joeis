@@ -13,14 +13,14 @@ import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
  * A098891 Define the n-omino graph to be the graph whose vertices are each of the n-ominoes, two of which are joined by an edge if one can be obtained from the other by cutting out one of the latter's component squares (thus obtaining an (n-1)-omino for most cases) and gluing it elsewhere. The sequence counts the edges in these graphs.
  * @author Sean A. Irvine
  */
-public class A098891 implements Sequence {
+public class A098891 extends Sequence1 {
 
   private final List<Animal> mAnimals = Collections.synchronizedList(new ArrayList<>());
   private final ParallelHunter mHunter = new ParallelHunter(6,

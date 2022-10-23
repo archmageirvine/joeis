@@ -2,7 +2,7 @@ package irvine.oeis.a320;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a143.A143325;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
@@ -12,7 +12,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  * a(n) = Sum_{j=1..n} A143325(j,n).
  * @author Georg Fischer
  */
-public class A320095 implements Sequence {
+public class A320095 extends Sequence1 {
 
   private int mN;
   private UpperLeftTriangle mULT;

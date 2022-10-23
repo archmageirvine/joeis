@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057368 Number of Gaussian primes (in the first half-quadrant; i.e., 0 to 45 degrees) with real part = n.
  * @author Sean A. Irvine
  */
-public class A057368 implements Sequence {
+public class A057368 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 1;

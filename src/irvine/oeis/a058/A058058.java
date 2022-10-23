@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058058 Generalized Somos-7 sequence: a(n)*a(n+7) = 3*a(n+1)*a(n+6) - 4*a(n+2)* a(n+5) + 4*a(n+3)*a(n+4).
  * @author Sean A. Irvine
  */
-public class A058058 implements Sequence {
+public class A058058 extends Sequence1 {
 
   private final Z[] mA = new Z[7];
 

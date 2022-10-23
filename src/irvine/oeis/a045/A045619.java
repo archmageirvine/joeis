@@ -3,14 +3,14 @@ package irvine.oeis.a045;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A045619 Numbers that are the products of 2 or more consecutive integers.
  * @author Sean A. Irvine
  */
-public class A045619 implements Sequence {
+public class A045619 extends Sequence1 {
 
   private static final class State extends Pair<Z, Long> implements Comparable<State> {
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057139 Odd number of digits palindrome based on sequential digits.
  * @author Sean A. Irvine
  */
-public class A057139 implements Sequence {
+public class A057139 extends Sequence1 {
 
   private int mN = 0;
 

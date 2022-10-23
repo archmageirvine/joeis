@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A030496 Permutations of 1,2,...,n for n=1,2,3,..., arranged antilexicographically.
  * @author Sean A. Irvine
  */
-public class A030496 implements Sequence {
+public class A030496 extends Sequence1 {
 
   private final ArrayList<int[]> mPermutations = new ArrayList<>();
   private int mRow = 0;

@@ -3,13 +3,14 @@ package irvine.oeis.a329;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008965;
 
 /**
  * A329145 Number of non-necklace compositions of n.
  * @author Georg Fischer
  */
-public class A329145 implements Sequence {
+public class A329145 extends Sequence1 {
 
   final Sequence mA008965 = new A008965();
   protected long mN;

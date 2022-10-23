@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055242 Largest base in which n is not divisible by any of its digits (0 if no such base).
  * @author Sean A. Irvine
  */
-public class A055242 implements Sequence {
+public class A055242 extends Sequence1 {
 
   private long mN = 0;
 

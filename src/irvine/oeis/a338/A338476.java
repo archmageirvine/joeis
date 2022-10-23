@@ -3,12 +3,13 @@ package irvine.oeis.a338;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A338476 Primes of the form 398*x^2-1.
  * @author Georg Fischer
  */
-public class A338476 implements Sequence {
+public class A338476 extends Sequence1 {
 
   final Sequence mA338477 = new A338477();
   @Override

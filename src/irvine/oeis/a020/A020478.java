@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020478 Number of singular 2 X 2 matrices over Z(n) (i.e., with determinant = 0).
  * @author Sean A. Irvine
  */
-public class A020478 implements Sequence {
+public class A020478 extends Sequence1 {
 
   protected long mN = 0;
 

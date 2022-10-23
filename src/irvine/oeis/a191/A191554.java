@@ -3,14 +3,14 @@ package irvine.oeis.a191;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A191554 a(n) = Product_{k=1..n} prime(k)^(2^(k-1)).
  * @author Georg Fischer
  */
-public class A191554 implements Sequence {
+public class A191554 extends Sequence1 {
 
   private int mN = 0;
   private MemorySequence mSeq = MemorySequence.cachedSequence(new A000040());

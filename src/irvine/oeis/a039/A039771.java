@@ -2,13 +2,13 @@ package irvine.oeis.a039;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039771 Numbers k such that phi(k) is a perfect cube.
  * @author Sean A. Irvine
  */
-public class A039771 implements Sequence {
+public class A039771 extends Sequence1 {
 
   private long mN = 0;
 

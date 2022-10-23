@@ -3,13 +3,14 @@ package irvine.oeis.a269;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006530;
 
 /**
  * A269304 a(n) = n + n/gpf(n) + 1, where gpf(n) is the greatest prime factor of n or 1 if n = 1.
  * @author Georg Fischer
  */
-public class A269304 implements Sequence {
+public class A269304 extends Sequence1 {
 
   final Sequence mA006530 = new A006530();
   protected long mN;

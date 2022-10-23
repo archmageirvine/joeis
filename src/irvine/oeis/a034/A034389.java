@@ -5,13 +5,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034389 Multiplicity of highest weight (or singular) vectors associated with character chi_1 of Monster module.
  * @author Sean A. Irvine
  */
-public class A034389 implements Sequence {
+public class A034389 extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final int mConjugacyClass;

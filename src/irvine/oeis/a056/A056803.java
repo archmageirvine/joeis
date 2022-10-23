@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056803 Numbers n such that 12 repeated n times followed by 1 is a palindromic prime.
  * @author Georg Fischer
  */
-public class A056803 implements Sequence {
+public class A056803 extends Sequence1 {
 
   private int mN;
   private Z mK;

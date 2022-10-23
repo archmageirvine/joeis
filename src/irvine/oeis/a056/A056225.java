@@ -6,14 +6,14 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 
 /**
  * A056225 Hankel transform of number of divisors sequence (A000005).
  * @author Sean A. Irvine
  */
-public class A056225 implements Sequence {
+public class A056225 extends Sequence1 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A000005());
   private int mN = 0;

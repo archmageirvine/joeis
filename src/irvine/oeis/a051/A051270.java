@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051270 Numbers that are divisible by exactly 5 different primes.
  * @author Sean A. Irvine
  */
-public class A051270 implements Sequence {
+public class A051270 extends Sequence1 {
 
   private long mN = 209;
 

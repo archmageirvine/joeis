@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046838 Numbers n such that n^2 can be obtained from n by inserting a block of digits.
  * @author Sean A. Irvine
  */
-public class A046838 implements Sequence {
+public class A046838 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

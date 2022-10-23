@@ -3,13 +3,14 @@ package irvine.oeis.a341;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a180.A180003;
 
 /**
  * A341893 Indices of triangular numbers that are one-tenth of other triangular numbers.
  * @author Georg Fischer
  */
-public class A341893 implements Sequence {
+public class A341893 extends Sequence1 {
 
   final Sequence mA180003 = new A180003();
   @Override

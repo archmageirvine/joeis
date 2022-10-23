@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055436 a(n) = concatenation of n^2 and n.
  * @author Sean A. Irvine
  */
-public class A055436 implements Sequence {
+public class A055436 extends Sequence1 {
 
   private long mN = 0;
 

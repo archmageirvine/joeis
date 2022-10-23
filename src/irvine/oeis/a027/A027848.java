@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027848 a(n) = Sum_{ d|n } sigma(n/d)*d^4.
  * @author Sean A. Irvine
  */
-public class A027848 implements Sequence {
+public class A027848 extends Sequence1 {
 
   private long mN = 0;
 

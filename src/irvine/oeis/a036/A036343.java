@@ -3,13 +3,13 @@ package irvine.oeis.a036;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036343 Prime concatenated analog clock numbers read counterclockwise.
  * @author Sean A. Irvine
  */
-public class A036343 implements Sequence {
+public class A036343 extends Sequence1 {
 
   private final TreeSet<A036342.State> mState = new TreeSet<>();
   {

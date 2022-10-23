@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020492 Balanced numbers: numbers k such that phi(k) (A000010) divides sigma(k) (A000203).
  * @author Sean A. Irvine
  */
-public class A020492 implements Sequence {
+public class A020492 extends Sequence1 {
 
   private long mN = 0;
 

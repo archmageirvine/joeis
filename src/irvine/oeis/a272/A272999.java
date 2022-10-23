@@ -1,13 +1,13 @@
 package irvine.oeis.a272;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A272999 Numbers k such that (11*10^k + 49)/3 is prime.
  * @author Sean A. Irvine
  */
-public class A272999 implements Sequence {
+public class A272999 extends Sequence1 {
 
   private long mN = -1;
   private Z mA = Z.valueOf(11);

@@ -3,13 +3,14 @@ package irvine.oeis.a225;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a025.A025480;
 
 /**
  * A225381 Elimination order of the first person in a Josephus problem.
  * @author Georg Fischer
  */
-public class A225381 implements Sequence {
+public class A225381 extends Sequence1 {
 
   final Sequence mA025480 = new A025480();
   protected long mN;

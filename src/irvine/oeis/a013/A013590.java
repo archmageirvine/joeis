@@ -3,13 +3,13 @@ package irvine.oeis.a013;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013590 Numbers k such that Phi(k,x) is a cyclotomic polynomial containing a coefficient with an absolute value greater than one.
  * @author Sean A. Irvine
  */
-public class A013590 implements Sequence {
+public class A013590 extends Sequence1 {
 
   private int mN = 104;
 

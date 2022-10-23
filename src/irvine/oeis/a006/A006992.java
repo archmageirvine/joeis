@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006992 Bertrand primes: a(n) is largest prime &lt; 2*a(n-1) for n &gt; 1, with a(1) = 2.
  * @author Sean A. Irvine
  */
-public class A006992 implements Sequence {
+public class A006992 extends Sequence1 {
 
   private Z mA = null;
 

@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A022879 The number of numbers [ [ ix ]jx ] that equal n, where i &gt;= 1, j &gt;= 1 and x=(1+sqrt(5))/2. a(n)=0 iff n is in Beatty sequence A001950.
  * @author Sean A. Irvine
  */
-public class A022879 implements Sequence {
+public class A022879 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   private final TreeSet<Pair<Long, Long>> mS = new TreeSet<>((a, b) -> {

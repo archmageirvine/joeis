@@ -2,13 +2,13 @@ package irvine.oeis.a284;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A284938 Triangle read by rows: coefficients of the edge cover polynomial for the n-path graph P_n.
  * @author Sean A. Irvine
  */
-public class A284938 implements Sequence {
+public class A284938 extends Sequence1 {
 
   private long mN = -1;
   private long mM = 0;

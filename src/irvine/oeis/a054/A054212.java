@@ -3,14 +3,14 @@ package irvine.oeis.a054;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 
 /**
  * A054212 a(n)^5 is the smallest fifth power whose decimal expansion digits occur with same frequency n.
  * @author Sean A. Irvine
  */
-public class A054212 implements Sequence {
+public class A054212 extends Sequence1 {
 
   private int mN = 0;
   private final DynamicArray<Z> mFirsts = new DynamicArray<>();

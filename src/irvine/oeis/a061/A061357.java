@@ -3,6 +3,7 @@ package irvine.oeis.a061;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a010.A010051;
 import irvine.oeis.a045.A045917;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a045.A045917;
  * A061357 Number of 0&lt;k&lt;n such that n-k and n+k are both primes.
  * @author Georg Fischer
  */
-public class A061357 implements Sequence {
+public class A061357 extends Sequence1 {
 
   final Sequence mA010051 = new A010051();
   final Sequence mA045917 = new A045917();

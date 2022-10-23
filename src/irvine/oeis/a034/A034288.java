@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034288 Product of proper divisors is larger than for any smaller number.
  * @author Sean A. Irvine
  */
-public class A034288 implements Sequence {
+public class A034288 extends Sequence1 {
 
   private Z mBestProd = Z.ZERO;
   private long mN = 0;

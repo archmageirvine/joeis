@@ -3,13 +3,13 @@ package irvine.oeis.a019;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019555 Smallest number whose cube is divisible by n.
  * @author Sean A. Irvine
  */
-public class A019555 implements Sequence {
+public class A019555 extends Sequence1 {
 
   private long mN = 0;
 

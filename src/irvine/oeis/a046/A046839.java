@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046839 Numbers k such that the number of divisors of k divides the sum of cubes of divisors of k.
  * @author Sean A. Irvine
  */
-public class A046839 implements Sequence {
+public class A046839 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a013;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013921 a(n) is composite and is sum of first k composites for some k.
  * @author Sean A. Irvine
  */
-public class A013921 implements Sequence {
+public class A013921 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mSum = Z.ZERO;

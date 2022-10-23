@@ -3,6 +3,7 @@ package irvine.oeis.a339;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000523;
 import irvine.oeis.a001.A001222;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001222;
  * A339893 a(n) = A000523(n) - A001222(n); floor(log_2(n)) minus the number of prime divisors of n, counted with multiplicity.
  * @author Georg Fischer
  */
-public class A339893 implements Sequence {
+public class A339893 extends Sequence1 {
 
   final Sequence mA000523 = new A000523();
   final Sequence mA001222 = new A001222();

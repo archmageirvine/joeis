@@ -5,13 +5,13 @@ import java.util.List;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A080576 Triangle in which n-th row lists all partitions of n, in graded reflected lexicographic order.
  * @author Sean A. Irvine
  */
-public class A080576 implements Sequence {
+public class A080576 extends Sequence1 {
 
   private int mN = 0;
   private int mL = 0;

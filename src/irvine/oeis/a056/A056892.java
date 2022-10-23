@@ -3,6 +3,7 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000006;
 import irvine.oeis.a000.A000040;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000040;
  * A056892 a(n) = square excess of the n-th prime.
  * @author Georg Fischer
  */
-public class A056892 implements Sequence {
+public class A056892 extends Sequence1 {
 
   private final Sequence mA000006 = new A000006();
   private final Sequence mA000040 = new A000040();

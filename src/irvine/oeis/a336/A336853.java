@@ -3,13 +3,14 @@ package irvine.oeis.a336;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a252.A252748;
 
 /**
  * A336853 a(n) = A003961(n) - n, where A003961 is the prime shift towards larger primes.
  * @author Georg Fischer
  */
-public class A336853 implements Sequence {
+public class A336853 extends Sequence1 {
 
   final Sequence mA252748 = new A252748();
   protected long mN;

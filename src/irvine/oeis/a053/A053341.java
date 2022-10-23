@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053341 Euclid-Pocklington primes: primes of the form Product_{i=1..k} prime(i) * prime(k+1)^m + 1 where prime(r) is the r-th prime and Product_{i=1..k} prime(i) &lt; prime(k+1)^m.
  * @author Sean A. Irvine
  */
-public class A053341 implements Sequence {
+public class A053341 extends Sequence1 {
 
   private static final class State implements Comparable<State> {
     private final Z mN;

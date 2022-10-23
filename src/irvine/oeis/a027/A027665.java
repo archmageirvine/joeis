@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027665 a(n)/100000 gives log_10(n) to 5 places.
  * @author Sean A. Irvine
  */
-public class A027665 implements Sequence {
+public class A027665 extends Sequence1 {
 
   private static final CR CR100000 = CR.valueOf(100000);
   private static final CR LOG10 = CR.TEN.log();

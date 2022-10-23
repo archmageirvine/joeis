@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A054081 Array T by antidiagonals: for n &gt;= 0 and k &gt;= 1, let p(k)=least positive integer not already in a(i), q(k)=p(k)+k+n-1, a(p(k))=q(k), a(q(k))=p(k); then for h&gt;=1, T(n,h)=a(h).
  * @author Sean A. Irvine
  */
-public class A054081 implements Sequence {
+public class A054081 extends Sequence1 {
 
   private final DynamicIntArray mStep = new DynamicIntArray();
   private final List<DynamicIntArray> mPerm = new ArrayList<>();

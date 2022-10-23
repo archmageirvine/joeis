@@ -3,13 +3,14 @@ package irvine.oeis.a168;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 import irvine.oeis.a062.A062298;
 /**
  * A168048 a(n) = C(n)*Pi(n) where C(n) = number of nonprimes &lt;= n, Pi(n) = number of primes &lt;= n.
  * @author Georg Fischer
  */
-public class A168048 implements Sequence {
+public class A168048 extends Sequence1 {
 
   private final Sequence mA000720 = new A000720();
   private final Sequence mA062298 = new A062298();

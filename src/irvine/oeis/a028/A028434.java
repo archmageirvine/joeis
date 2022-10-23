@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028434 Golc sequence in base 4. Left to right concatenation of n,int(log_4(n)),int(log_4(int(log_4(n)))),... in base 4.
  * @author Sean A. Irvine
  */
-public class A028434 implements Sequence {
+public class A028434 extends Sequence1 {
 
   private static final CR BASE_LOG = CR.FOUR.log();
   private long mN = 0;

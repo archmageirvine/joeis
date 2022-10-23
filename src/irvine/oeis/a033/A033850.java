@@ -3,13 +3,13 @@ package irvine.oeis.a033;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033850 Numbers whose prime factors are 3 and 7.
  * @author Sean A. Irvine
  */
-public class A033850 implements Sequence {
+public class A033850 extends Sequence1 {
 
   private final TreeSet<Z> mPriority = new TreeSet<>();
   {

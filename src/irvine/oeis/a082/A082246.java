@@ -2,13 +2,14 @@ package irvine.oeis.a082;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A082246 Primes that are the sum of 7 consecutive primes.
  * @author Georg Fischer
  */
-public class A082246 implements Sequence {
+public class A082246 extends Sequence1 {
 
   protected Z mSum;
   protected Sequence mHead;

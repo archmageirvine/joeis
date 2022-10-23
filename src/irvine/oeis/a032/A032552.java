@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032552 Quotient of 'base-8' division described in A032551.
  * @author Sean A. Irvine
  */
-public class A032552 implements Sequence {
+public class A032552 extends Sequence1 {
 
   private long mN = -1;
 

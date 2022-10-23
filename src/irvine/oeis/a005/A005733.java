@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005733 Least k such that binomial(k,n) has n or more distinct prime factors.
  * @author Sean A. Irvine
  */
-public class A005733 implements Sequence {
+public class A005733 extends Sequence1 {
 
   private final PrimeDivision mF = new PrimeDivision();
   private long mN = 0;

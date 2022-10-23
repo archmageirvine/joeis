@@ -3,13 +3,14 @@ package irvine.oeis.a144;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007491;
 
 /**
  * A144831 (n+1)^2 - (smallest prime &gt; n^2).
  * @author Georg Fischer
  */
-public class A144831 implements Sequence {
+public class A144831 extends Sequence1 {
 
   final Sequence mA007491 = new A007491();
   protected long mN;

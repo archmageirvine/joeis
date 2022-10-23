@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038848 Even numbers that are differences between two cubes in at least one way.
  * @author Sean A. Irvine
  */
-public class A038848 implements Sequence {
+public class A038848 extends Sequence1 {
 
   private Z mN = Z.valueOf(24);
 

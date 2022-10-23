@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050804 Numbers n such that n^3 is the sum of two nonzero squares in exactly one way.
  * @author Sean A. Irvine
  */
-public class A050804 implements Sequence {
+public class A050804 extends Sequence1 {
 
   private long mN = 1;
 

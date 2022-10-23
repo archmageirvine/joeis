@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034728 Sum of digits of A034727(n).
  * @author Sean A. Irvine
  */
-public class A034728 implements Sequence {
+public class A034728 extends Sequence1 {
 
   private long mN = 1;
   private long mLim = 10;

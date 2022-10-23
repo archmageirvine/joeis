@@ -3,6 +3,7 @@ package irvine.oeis.a271;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007814;
 import irvine.oeis.a025.A025480;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a025.A025480;
  * A271519 Let n = (2*i + 1)*2^j; then a(n) = i + j.
  * @author Georg Fischer
  */
-public class A271519 implements Sequence {
+public class A271519 extends Sequence1 {
 
   final Sequence mA007814 = new A007814();
   final Sequence mA025480 = new A025480();

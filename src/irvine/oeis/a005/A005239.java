@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005239 Irregular triangle of Section I numbers. Row n contains numbers k with 2^n &lt; k &lt; 2^(n+1) and phi^n(k) = 2, where phi^n means n iterations of Euler's totient function.
  * @author Sean A. Irvine
  */
-public class A005239 implements Sequence {
+public class A005239 extends Sequence1 {
 
   private int mN = 0;
   private Z mK = Z.ONE;

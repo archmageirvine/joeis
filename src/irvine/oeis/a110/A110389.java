@@ -1,7 +1,7 @@
 package irvine.oeis.a110;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A110389 Integers with mutual residues -1.
@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
  * </pre>
  * @author Georg Fischer
  */
-public class A110389 implements Sequence {
+public class A110389 extends Sequence1 {
 
   protected int mN;
   protected int mK;

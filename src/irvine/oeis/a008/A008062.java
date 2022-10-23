@@ -3,13 +3,13 @@ package irvine.oeis.a008;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008062 a(n) = maximal value of m such that an n X m radar array exists. (A (0,1) matrix A such that any horizontal shift of A overlaps A in at most a single 1.).
  * @author Sean A. Irvine
  */
-public class A008062 implements Sequence {
+public class A008062 extends Sequence1 {
 
   private int mN = 0;
 

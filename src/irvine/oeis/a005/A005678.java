@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import java.util.LinkedList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005678 A squarefree ternary sequence.
  * @author Sean A. Irvine
  */
-public class A005678 implements Sequence {
+public class A005678 extends Sequence1 {
 
   private final LinkedList<Integer> mA = new LinkedList<>();
   private int mPrev = 0;

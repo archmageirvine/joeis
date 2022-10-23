@@ -3,13 +3,14 @@ package irvine.oeis.a109;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001223;
 
 /**
  * A109585 a(n) = ( prime(n+1) - prime(n) )^(n+1).
  * @author Georg Fischer
  */
-public class A109585 implements Sequence {
+public class A109585 extends Sequence1 {
 
   final Sequence mA001223 = new A001223();
   protected long mN;

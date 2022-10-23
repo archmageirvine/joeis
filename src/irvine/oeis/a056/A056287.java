@@ -1,7 +1,7 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.array.LongDynamicIntArray;
 import irvine.util.array.LongDynamicLongArray;
@@ -10,7 +10,7 @@ import irvine.util.array.LongDynamicLongArray;
  * A056287 Maximal AND-OR formula complexity (operator count) for n-input Boolean functions.
  * @author Sean A. Irvine
  */
-public class A056287 implements Sequence {
+public class A056287 extends Sequence1 {
 
   // After Russ Cox
   // see https://oeis.org/A056287/a056287.txt

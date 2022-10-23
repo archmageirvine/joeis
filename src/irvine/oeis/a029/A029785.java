@@ -2,13 +2,13 @@ package irvine.oeis.a029;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A029785 Numbers k whose cube k^3 has no digit in common with k.
  * @author Sean A. Irvine
  */
-public class A029785 implements Sequence {
+public class A029785 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

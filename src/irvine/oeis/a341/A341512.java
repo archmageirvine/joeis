@@ -3,11 +3,12 @@ package irvine.oeis.a341;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 /**
  * A341512 a(n) = A341529(n) - A341528(n) = (sigma(n)*A003961(n)) - (n*sigma(A003961(n))).
  * @author Georg Fischer
  */
-public class A341512 implements Sequence {
+public class A341512 extends Sequence1 {
 
   private final Sequence mA341528 = new A341528();
   private final Sequence mA341529 = new A341529();

@@ -2,13 +2,13 @@ package irvine.oeis.a140;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A140213 Product_{h|n and h mod 6 = 1} h; product of divisors of n of the form 6*k + 1.
  * @author Georg Fischer
  */
-public class A140213 implements Sequence {
+public class A140213 extends Sequence1 {
 
   private int mN = 0;
 

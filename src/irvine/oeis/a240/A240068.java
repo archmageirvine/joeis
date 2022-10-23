@@ -3,13 +3,14 @@ package irvine.oeis.a240;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008864;
 
 /**
  * A240068 Number of prime Lipschitz quaternions having norm prime(n).
  * @author Georg Fischer
  */
-public class A240068 implements Sequence {
+public class A240068 extends Sequence1 {
 
   final Sequence mA008864 = new A008864();
   @Override

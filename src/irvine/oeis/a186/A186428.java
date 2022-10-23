@@ -3,6 +3,7 @@ package irvine.oeis.a186;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a065.A065764;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a065.A065764;
  * A186428 sigma(n^2) modulo sigma(n).
  * @author Georg Fischer
  */
-public class A186428 implements Sequence {
+public class A186428 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA065764 = new A065764();

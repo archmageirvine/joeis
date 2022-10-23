@@ -3,13 +3,13 @@ package irvine.oeis.a061;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A061075 Greatest prime number p(n) with decimal fraction period of length n.
  * @author Sean A. Irvine
  */
-public class A061075 implements Sequence {
+public class A061075 extends Sequence1 {
 
   private int mN = 0;
 

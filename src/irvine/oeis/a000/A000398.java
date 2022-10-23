@@ -2,14 +2,14 @@ package irvine.oeis.a000;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A000398 Numbers of form x^2 + 2y^2 + 2yz + 4z^2.
  * @author Sean A. Irvine
  */
-public class A000398 implements Sequence {
+public class A000398 extends Sequence1 {
 
   private final LongDynamicBooleanArray mSeq = new LongDynamicBooleanArray();
   private long mLast = -1;

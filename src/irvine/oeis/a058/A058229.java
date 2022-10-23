@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058229 Digits composite, each digit minus 1 is prime, sum of digits minus 1 is prime, difference of digits (in absolute value) minus 1 is prime.
  * @author Sean A. Irvine
  */
-public class A058229 implements Sequence {
+public class A058229 extends Sequence1 {
 
   private static final int[] REPLACEMENTS = {4, 6, 8};
   private final Fast mPrime = new Fast();

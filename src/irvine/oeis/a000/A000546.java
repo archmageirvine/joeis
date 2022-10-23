@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000546 First occurrence of n consecutive numbers that take same number of steps to reach 1 in 3x+1 problem.
  * @author Sean A. Irvine
  */
-public class A000546 implements Sequence {
+public class A000546 extends Sequence1 {
 
   static long collatz(Z n) {
     long c = 0;

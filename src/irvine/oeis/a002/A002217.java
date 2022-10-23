@@ -5,13 +5,13 @@ import java.util.HashMap;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002217 Starting with n, repeatedly calculate the sum of prime factors (with repetition) of the previous term, until reaching 0 or a fixed point: a(n) is the number of terms in the resulting sequence.
  * @author Sean A. Irvine
  */
-public class A002217 implements Sequence {
+public class A002217 extends Sequence1 {
 
   private long mN = 0;
   private final HashMap<Long, Long> mCache = new HashMap<>();

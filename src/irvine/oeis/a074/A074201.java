@@ -2,13 +2,13 @@ package irvine.oeis.a074;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A074201 Let b(1) = 1, b(2) = 2, b(n+2) = (b(n+1)+1)/(b(n)+1); then a(n) = 1 if b(n) &gt;= 1 and a(n) = 0 otherwise (also a(n) = floor(b(n)) for n &gt; 2).
  * @author Sean A. Irvine
  */
-public class A074201 implements Sequence {
+public class A074201 extends Sequence1 {
 
   private Q mA = null;
   private Q mB = null;

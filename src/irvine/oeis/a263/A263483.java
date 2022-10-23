@@ -3,6 +3,7 @@ package irvine.oeis.a263;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a039.A039704;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a039.A039704;
  * A263483 a(n) = prime(n)+(prime(n) modulo 6).
  * @author Georg Fischer
  */
-public class A263483 implements Sequence {
+public class A263483 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA039704 = new A039704();

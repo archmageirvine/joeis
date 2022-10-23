@@ -1,14 +1,14 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A033283 Numbers whose maximal base-10 run length is 2.
  * @author Sean A. Irvine
  */
-public class A033283 implements Sequence {
+public class A033283 extends Sequence1 {
 
   private long mN = Long.parseLong(StringUtils.rep('1', target())) - 1;
 

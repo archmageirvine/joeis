@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007670 Numbers n such that 2^n - 2^((n + 1)/2) + 1 is prime.
  * @author Sean A. Irvine
  */
-public class A007670 implements Sequence {
+public class A007670 extends Sequence1 {
 
   private int mN = 1;
 

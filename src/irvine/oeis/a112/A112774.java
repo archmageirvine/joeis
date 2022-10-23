@@ -3,13 +3,14 @@ package irvine.oeis.a112;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003627;
 
 /**
  * A112774 Semiprimes of the form 6n+4.
  * @author Georg Fischer
  */
-public class A112774 implements Sequence {
+public class A112774 extends Sequence1 {
 
   final Sequence mA003627 = new A003627();
   @Override

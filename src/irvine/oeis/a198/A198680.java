@@ -3,12 +3,13 @@ package irvine.oeis.a198;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a079.A079498;
 /**
  * A198680 Multiples of 3 whose sum of base-3 digits are also multiples of 3.
  * @author Georg Fischer
  */
-public class A198680 implements Sequence {
+public class A198680 extends Sequence1 {
 
   private final Sequence mA079498 = new A079498();
   @Override

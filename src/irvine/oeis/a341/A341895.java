@@ -3,13 +3,14 @@ package irvine.oeis.a341;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a198.A198943;
 
 /**
  * A341895 Indices of triangular numbers that are ten times other triangular numbers.
  * @author Georg Fischer
  */
-public class A341895 implements Sequence {
+public class A341895 extends Sequence1 {
 
   final Sequence mA198943 = new A198943();
   @Override

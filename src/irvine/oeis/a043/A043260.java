@@ -3,13 +3,13 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A043260 Numbers k such that 8 and 9 occur juxtaposed in the base-10 representation of k but not of k-1.
  * @author Georg Fischer
  */
-public class A043260 implements Sequence {
+public class A043260 extends Sequence1 {
 
   private static final String P12 = String.valueOf(8) + String.valueOf(9);
   private static final String P21 = String.valueOf(9) + String.valueOf(8);

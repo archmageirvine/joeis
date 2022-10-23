@@ -5,13 +5,13 @@ import java.util.Collections;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055547 Number of normal n X n matrices with entries {0,1}.
  * @author Sean A. Irvine
  */
-public class A055547 implements Sequence {
+public class A055547 extends Sequence1 {
 
   // After Georg Muntingh
 

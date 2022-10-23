@@ -5,13 +5,13 @@ import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027413 If n is an odd prime, a(n) = the number of primitive roots mod n, otherwise a(n) =  the number of k &lt; n divisible by at least one but not all of the prime factors of n.
  * @author Sean A. Irvine
  */
-public class A027413 implements Sequence {
+public class A027413 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

@@ -3,13 +3,14 @@ package irvine.oeis.a167;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002822;
 
 /**
  * A167379 Let p and q be twin primes, excluding the pair (3,5). Then p+q is always divisible by 6 and we set a(n) = (p+q)/6.
  * @author Georg Fischer
  */
-public class A167379 implements Sequence {
+public class A167379 extends Sequence1 {
 
   final Sequence mA002822 = new A002822();
   @Override

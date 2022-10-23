@@ -3,6 +3,7 @@ package irvine.oeis.a344;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001615;
 import irvine.oeis.a033.A033879;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a033.A033879;
  * A344753 a(n) = sigma(n) + psi(n) - 2n = Sum_{d|n, d&lt;n} d+(mu(n/d)^2 * d), where mu is M\u00f6bius mu-function.
  * @author Georg Fischer
  */
-public class A344753 implements Sequence {
+public class A344753 extends Sequence1 {
 
   final Sequence mA001615 = new A001615();
   final Sequence mA033879 = new A033879();

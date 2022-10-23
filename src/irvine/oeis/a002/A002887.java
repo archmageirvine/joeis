@@ -5,7 +5,7 @@ import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 import irvine.util.string.StringUtils;
 
@@ -13,7 +13,7 @@ import irvine.util.string.StringUtils;
  * A002887 The minimum number of nodes of a tree with a cutting center of n nodes.
  * @author Sean A. Irvine
  */
-public class A002887 implements Sequence, GraphProcessor {
+public class A002887 extends Sequence1 implements GraphProcessor {
 
   // Only good for first few terms
 

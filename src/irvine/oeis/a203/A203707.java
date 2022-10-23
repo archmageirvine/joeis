@@ -3,14 +3,14 @@ package irvine.oeis.a203;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A203707 Vandermonde sequence using x^2 + y^2 applied to the first n primes.
  * @author Georg Fischer
  */
-public class A203707 implements Sequence {
+public class A203707 extends Sequence1 {
 
   protected int mN = 0;
   private final MemorySequence mA000040 = MemorySequence.cachedSequence(new A000040());

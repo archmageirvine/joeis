@@ -4,13 +4,13 @@ package irvine.oeis.a184;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A184742 a(n) = floor(n*r + h), where r = sqrt(Pi), h = -1/2.
  * @author Georg Fischer
  */
-public class A184742 implements Sequence {
+public class A184742 extends Sequence1 {
   private long mN = 0;
   private static final CR R = CR.PI.sqrt();
   private static final CR H = CR.HALF.negate();

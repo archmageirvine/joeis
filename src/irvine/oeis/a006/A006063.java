@@ -1,14 +1,14 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A006063 A card-arranging problem: values of n such that there exists a permutation p_1, ..., p_n of 1, ..., n such that i + p_i is a cube for every i.
  * @author Sean A. Irvine
  */
-public class A006063 implements Sequence {
+public class A006063 extends Sequence1 {
 
   // This is slow.
 

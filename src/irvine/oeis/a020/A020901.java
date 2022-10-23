@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020901 Greatest k such that k-th prime &lt; 3 times n-th prime.
  * @author Sean A. Irvine
  */
-public class A020901 implements Sequence {
+public class A020901 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mM = 0;

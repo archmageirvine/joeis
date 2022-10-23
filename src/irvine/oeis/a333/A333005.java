@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A333005 Number of unrooted level-2 phylogenetic networks with n+1 labeled leaves, when multiple (i.e., parallel) edges are not allowed.
  * @author Sean A. Irvine
  */
-public class A333005 implements Sequence {
+public class A333005 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> NUM = RING.create(Arrays.asList(Q.ZERO, new Q(12), new Q(-30), new Q(32), new Q(-16), Q.THREE));

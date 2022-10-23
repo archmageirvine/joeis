@@ -1,13 +1,13 @@
 package irvine.oeis.a090;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A090050 Numbers having equal length of longest contiguous block of zeros and ones in binary expansion.
  * @author Georg Fischer
  */
-public class A090050 implements Sequence {
+public class A090050 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

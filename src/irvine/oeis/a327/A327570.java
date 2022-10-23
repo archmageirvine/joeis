@@ -3,6 +3,7 @@ package irvine.oeis.a327;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a002.A002618;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002618;
  * A327570 a(n) = n*phi(n)^2, phi = A000010.
  * @author Georg Fischer
  */
-public class A327570 implements Sequence {
+public class A327570 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA002618 = new A002618();

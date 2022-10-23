@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051445 Smallest k such that phi(k) = 2n, or 0 if there is no such k.
  * @author Sean A. Irvine
  */
-public class A051445 implements Sequence {
+public class A051445 extends Sequence1 {
 
   private long mN = 0;
 

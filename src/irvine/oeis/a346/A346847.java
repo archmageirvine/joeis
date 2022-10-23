@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A346847 E.g.f.: log(1 + x) / (1 - x)^5.
  * E.g.f.: log(1 + x) / (1 - x)^5
  * @author Georg Fischer
  */
-public class A346847 implements Sequence {
+public class A346847 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

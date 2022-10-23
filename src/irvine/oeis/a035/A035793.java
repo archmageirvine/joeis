@@ -2,13 +2,13 @@ package irvine.oeis.a035;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035793 Start of a string of exactly 5 consecutive (but disjoint) pairs of twin primes.
  * @author Sean A. Irvine
  */
-public class A035793 implements Sequence {
+public class A035793 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 909281;

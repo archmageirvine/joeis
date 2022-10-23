@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034686 a(n) = k, where k/(product of digits of k) is least possible integer for k with n digits.
  * @author Sean A. Irvine
  */
-public class A034686 implements Sequence {
+public class A034686 extends Sequence1 {
 
   private long mLim = 1;
   private long mN = 0;

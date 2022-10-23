@@ -3,13 +3,14 @@ package irvine.oeis.a103;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a069.A069720;
 
 /**
  * A103945 Number of rooted dual-unicursal n-edge maps in the plane (planar with a distinguished outside face).
  * @author Georg Fischer
  */
-public class A103945 implements Sequence {
+public class A103945 extends Sequence1 {
 
   final Sequence mA069720 = new A069720();
   final Sequence mA103944 = new A103944();

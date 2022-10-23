@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014811 a(n) = Sum_{k=1..n-1} ceiling(k^2/n).
  * @author Sean A. Irvine
  */
-public class A014811 implements Sequence {
+public class A014811 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a015;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015708 Numbers k such that k | (phi(k) * sigma(k)) but (phi(k) + sigma(k))/k does not increase.
  * @author Sean A. Irvine
  */
-public class A015708 implements Sequence {
+public class A015708 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   private Z mBest = Z.ONE;

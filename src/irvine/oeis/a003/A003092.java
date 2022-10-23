@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003092 Number of labeled plane 2-trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A003092 implements Sequence {
+public class A003092 extends Sequence1 {
 
   private Z mP = null;
   private long mN = 0;

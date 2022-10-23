@@ -3,14 +3,14 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
 
 /**
  * A000087 Number of unrooted nonseparable planar maps with n edges and a distinguished face.
  * @author Sean A. Irvine
  */
-public class A000087 implements Sequence {
+public class A000087 extends Sequence1 {
 
   private long mN = 0;
   private final LongDynamicArray<Z> mBinomial3 = new LongDynamicArray<>();

@@ -4,13 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A321442 Length of Beanstalk game.
  * @author Sean A. Irvine
  */
-public class A321442 implements Sequence {
+public class A321442 extends Sequence1 {
 
   private Z mN = Z.ONE;
 

@@ -5,13 +5,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034286 Decimal part of n^(1/11) starts with a 'nine digits' anagram.
  * @author Sean A. Irvine
  */
-public class A034286 implements Sequence {
+public class A034286 extends Sequence1 {
 
   private static final CR C = CR.valueOf(1000000000);
   private static final CR ONE_ELEVENTH = CR.valueOf(new Q(1, 11));

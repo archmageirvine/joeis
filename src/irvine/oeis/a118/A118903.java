@@ -3,13 +3,14 @@ package irvine.oeis.a118;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a009.A009112;
 
 /**
  * A118903 Areas of rectangles with integer sides and diagonal.
  * @author Georg Fischer
  */
-public class A118903 implements Sequence {
+public class A118903 extends Sequence1 {
 
   final Sequence mA009112 = new A009112();
   @Override

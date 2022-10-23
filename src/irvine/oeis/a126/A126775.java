@@ -4,6 +4,7 @@ package irvine.oeis.a126;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a000.A000010;
 
@@ -11,7 +12,7 @@ import irvine.oeis.a000.A000010;
  * A126775 a(n) = phi(n)^2 * d(n) = A000010(n)^2 * A000005(n).
  * @author Georg Fischer
  */
-public class A126775 implements Sequence {
+public class A126775 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA000010 = new A000010();

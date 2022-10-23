@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030143 Even numbers in which parity of digits alternates.
  * @author Sean A. Irvine
  */
-public class A030143 implements Sequence {
+public class A030143 extends Sequence1 {
 
   private Z mN = Z.valueOf(-2);
 

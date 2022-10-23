@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025156 A prime number of consecutive composites follow n.
  * @author Sean A. Irvine
  */
-public class A025156 implements Sequence {
+public class A025156 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 6;

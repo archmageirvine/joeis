@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006972 Lucas-Carmichael numbers: squarefree composite numbers k such that p | k =&gt; p+1 | k+1.
  * @author Sean A. Irvine
  */
-public class A006972 implements Sequence {
+public class A006972 extends Sequence1 {
 
   private Z mN = Z.valueOf(397);
 

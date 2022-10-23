@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036764 If n can be expressed as m/d(m) for some m, where d(m) is the number of divisors of m (A000005), then a(n) is the smallest such m, otherwise a(n) = 0.
  * @author Sean A. Irvine
  */
-public class A036764 implements Sequence {
+public class A036764 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

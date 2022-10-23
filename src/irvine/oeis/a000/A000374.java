@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000374 Number of cycles (mod n) under doubling map.
  * @author Sean A. Irvine
  */
-public class A000374 implements Sequence {
+public class A000374 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

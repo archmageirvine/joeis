@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001577 An operational recurrence.
  * @author Sean A. Irvine
  */
-public class A001577 implements Sequence {
+public class A001577 extends Sequence1 {
 
   private int mN = 1;
 

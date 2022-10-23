@@ -3,14 +3,14 @@ package irvine.oeis.a289;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A289670 Consider the Post tag system defined in A284116; a(n) = number of binary words of length n which terminate at the empty word.
  * @author Sean A. Irvine
  */
-public class A289670 implements Sequence {
+public class A289670 extends Sequence1 {
 
   private int mN = 0;
 

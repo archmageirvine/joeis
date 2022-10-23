@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051169 Smallest number m such that 2*m - p is composite for the first n primes p.
  * @author Sean A. Irvine
  */
-public class A051169 implements Sequence {
+public class A051169 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

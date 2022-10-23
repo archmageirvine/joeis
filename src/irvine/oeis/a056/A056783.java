@@ -2,6 +2,7 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006746;
 import irvine.oeis.a006.A006747;
 import irvine.oeis.a006.A006748;
@@ -13,7 +14,7 @@ import irvine.oeis.a142.A142886;
  * A056783 Number of diamond polyominoes with n cells.
  * @author Sean A. Irvine
  */
-public class A056783 implements Sequence {
+public class A056783 extends Sequence1 {
 
   private final Sequence mA = new A006749();
   private final Sequence mB = new A006746();

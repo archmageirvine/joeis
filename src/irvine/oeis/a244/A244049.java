@@ -3,6 +3,7 @@ package irvine.oeis.a244;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a024.A024916;
 import irvine.oeis.a034.A034856;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a034.A034856;
  * A244049 Sum of all proper divisors of all positive integers &lt;= n.
  * @author Georg Fischer
  */
-public class A244049 implements Sequence {
+public class A244049 extends Sequence1 {
 
   final Sequence mA024916 = new A024916();
   final Sequence mA034856 = new A034856();

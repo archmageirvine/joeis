@@ -3,6 +3,7 @@ package irvine.oeis.a157;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000089;
 import irvine.oeis.a019.A019590;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a019.A019590;
  * A157228 Number of primitive inequivalent inclined square sublattices of square lattice of index n.
  * @author Georg Fischer
  */
-public class A157228 implements Sequence {
+public class A157228 extends Sequence1 {
 
   final Sequence mA000089 = new A000089();
   final Sequence mA019590 = new A019590();

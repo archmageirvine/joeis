@@ -3,6 +3,7 @@ package irvine.oeis.a152;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a000.A000720;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000720;
  * A152993 a(n) = n - d(n) - pi(n) + 1.
  * @author Georg Fischer
  */
-public class A152993 implements Sequence {
+public class A152993 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA000720 = new A000720();

@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046025 Numbers n such that 6n+1, 12n+1 and 18n+1 are all primes.
  * @author Sean A. Irvine
  */
-public class A046025 implements Sequence {
+public class A046025 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048596 (n mod (sum of decimal digits of n)) divides n.
  * @author Sean A. Irvine
  */
-public class A048596 implements Sequence {
+public class A048596 extends Sequence1 {
 
   private long mN = 10;
 

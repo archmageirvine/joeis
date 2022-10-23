@@ -3,6 +3,7 @@ package irvine.oeis.a095;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000422;
 import irvine.oeis.a007.A007908;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007908;
  * A095249 Reverse concatenation of first n positive integers modulo forward concatenation of first n positive integers.
  * @author Georg Fischer
  */
-public class A095249 implements Sequence {
+public class A095249 extends Sequence1 {
 
   final Sequence mA000422 = new A000422();
   final Sequence mA007908 = new A007908();

@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001774 Numbers k such that 17*2^k - 1 is prime.
  * @author Sean A. Irvine
  */
-public class A001774 implements Sequence {
+public class A001774 extends Sequence1 {
 
   private Z mP = Z.valueOf(17);
   private long mN = 0;

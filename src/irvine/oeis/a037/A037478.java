@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037478 Number of positive solutions to "numbers that are n times sum of their digits".
  * @author Sean A. Irvine
  */
-public class A037478 implements Sequence {
+public class A037478 extends Sequence1 {
 
   // After R. J. Mathar
 

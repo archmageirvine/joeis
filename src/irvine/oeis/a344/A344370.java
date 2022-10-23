@@ -3,13 +3,14 @@ package irvine.oeis.a344;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045778;
 
 /**
  * A344370 Dirichlet g.f.: Product_{k&gt;=2} (1 + k^(1-s)).
  * @author Georg Fischer
  */
-public class A344370 implements Sequence {
+public class A344370 extends Sequence1 {
 
   final Sequence mA045778 = new A045778();
   protected long mN;

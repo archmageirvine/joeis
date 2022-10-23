@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049281 Numerators of coefficients in power series for -log(1+x)*log(1-x).
  * @author Sean A. Irvine
  */
-public class A049281 implements Sequence {
+public class A049281 extends Sequence1 {
 
   private long mN = 0;
   private Q mSum = Q.ONE;

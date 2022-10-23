@@ -1,14 +1,14 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A020906 Triangle where n-th row is the first n terms of the sequence in reverse order, starting with a(1) = 1 and a(2) = 2.
  * @author Sean A. Irvine
  */
-public class A020906 implements Sequence {
+public class A020906 extends Sequence1 {
 
   private final LongDynamicBooleanArray mA = new LongDynamicBooleanArray();
   private long mN = -1;

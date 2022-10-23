@@ -3,13 +3,14 @@ package irvine.oeis.a294;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005408;
 import irvine.oeis.a074.A074400;
 /**
  * A294015 Sum of the even divisors of 2n, minus the (n-1)st odd number.
  * @author Georg Fischer
  */
-public class A294015 implements Sequence {
+public class A294015 extends Sequence1 {
 
   private final Sequence mA005408 = new A005408();
   private final Sequence mA074400 = new A074400();

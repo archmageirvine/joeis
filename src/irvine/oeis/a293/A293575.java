@@ -3,12 +3,13 @@ package irvine.oeis.a293;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a056.A056595;
 /**
  * A293575 Difference between the number of proper divisors of n and the number of squares dividing n.
  * @author Georg Fischer
  */
-public class A293575 implements Sequence {
+public class A293575 extends Sequence1 {
 
   private final Sequence mA056595 = new A056595();
   @Override

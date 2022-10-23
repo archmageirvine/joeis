@@ -2,13 +2,13 @@ package irvine.oeis.a210;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A210252 Triangle read by rows: T(n,k) is the number of c-nets with n+1 faces and k+1 vertices, 1 &lt;= k &lt;= n. But see A290326 for a better version.
  * @author Sean A. Irvine
  */
-public class A210252 implements Sequence {
+public class A210252 extends Sequence1 {
 
   /**
    * The number of simple quadrangulations.

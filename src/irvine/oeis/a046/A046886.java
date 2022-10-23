@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046886 Number of divisors d of 2n satisfying (d+1) = prime or number of prime factors of the denominator of the even Bernoulli numbers.
  * @author Sean A. Irvine
  */
-public class A046886 implements Sequence {
+public class A046886 extends Sequence1 {
 
   private long mN = 0;
 

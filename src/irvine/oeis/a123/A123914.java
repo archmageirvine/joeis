@@ -3,6 +3,7 @@ package irvine.oeis.a123;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001248;
 import irvine.oeis.a011.A011757;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a011.A011757;
  * A123914 a(n) = prime(n)^2 - prime(n^2). Commutator of (primes, squares) at n.
  * @author Georg Fischer
  */
-public class A123914 implements Sequence {
+public class A123914 extends Sequence1 {
 
   final Sequence mA001248 = new A001248();
   final Sequence mA011757 = new A011757();

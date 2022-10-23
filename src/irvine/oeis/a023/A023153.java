@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023153 Number of cycles of function f(x) = x^2 mod n.
  * @author Sean A. Irvine
  */
-public class A023153 implements Sequence {
+public class A023153 extends Sequence1 {
 
   private int mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024508 Numbers that are a sum of 2 distinct nonzero squares in more than one way.
  * @author Sean A. Irvine
  */
-public class A024508 implements Sequence {
+public class A024508 extends Sequence1 {
 
   private long mN = 64;
 

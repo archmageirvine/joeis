@@ -3,6 +3,7 @@ package irvine.oeis.a074;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006530;
 import irvine.oeis.a020.A020639;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a020.A020639;
  * A074320 a(n) = sum of smallest and largest prime factors of n, for n&gt;1; a(1)=2.
  * @author Georg Fischer
  */
-public class A074320 implements Sequence {
+public class A074320 extends Sequence1 {
 
   final Sequence mA006530 = new A006530();
   final Sequence mA020639 = new A020639();

@@ -5,7 +5,7 @@ import java.util.List;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 import irvine.util.string.StringUtils;
 
@@ -13,7 +13,7 @@ import irvine.util.string.StringUtils;
  * A054234 Consider all integer triples (i,j,k), j,k&gt;0, with i^3=j^3+binomial(k+2,3), ordered by increasing i; sequence gives i values.
  * @author Sean A. Irvine
  */
-public class A054234 implements Sequence {
+public class A054234 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final List<Triple<Long>> mA = new ArrayList<>();

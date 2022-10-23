@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.q.Q;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A072109 Numbers k such that Sum_{i=1..k} gcd(k,i) divides Sum_{i=1..k} lcm(k,i).
  * @author Sean A. Irvine
  */
-public class A072109 implements Sequence {
+public class A072109 extends Sequence1 {
 
   private long mN = 0;
 

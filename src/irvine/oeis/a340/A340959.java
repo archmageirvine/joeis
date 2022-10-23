@@ -2,13 +2,13 @@ package irvine.oeis.a340;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A340959 Table read by antidiagonals of the smallest prime &gt;= n^k, n &gt;= 1 and k &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A340959 implements Sequence {
+public class A340959 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

@@ -3,13 +3,14 @@ package irvine.oeis.a281;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045326;
 
 /**
  * A281664 Numbers k such that A000005(k) = A000005(A000217(k)).
  * @author Georg Fischer
  */
-public class A281664 implements Sequence {
+public class A281664 extends Sequence1 {
 
   final Sequence mA045326 = new A045326();
   @Override

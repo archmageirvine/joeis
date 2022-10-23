@@ -3,13 +3,13 @@ package irvine.oeis.a031;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A031312 Successive digits of odd numbers.
  * @author Georg Fischer
  */
-public class A031312 implements Sequence {
+public class A031312 extends Sequence1 {
  
   private String mS = "";
   private int mPos = 0;

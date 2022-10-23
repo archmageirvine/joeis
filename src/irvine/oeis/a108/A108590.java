@@ -4,13 +4,14 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a140.A140758;
 
 /**
  * A108590 Self-inverse integer permutation induced by Beatty sequences for Pi/2 and Pi/(Pi-2).
  * @author Georg Fischer
  */
-public class A108590 implements Sequence {
+public class A108590 extends Sequence1 {
 
   private int mN;
   private int mI1; // index in mSeqLo

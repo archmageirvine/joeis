@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059013 Odd number of 0's and even number of 1's in binary expansion.
  * @author Sean A. Irvine
  */
-public class A059013 implements Sequence {
+public class A059013 extends Sequence1 {
 
   private long mN = -1;
   private long mM = 0;

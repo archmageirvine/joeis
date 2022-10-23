@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.polynomial.ExtendedSymmetricGroupCycleIndex;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001321 Number of Post functions.
  * @author Sean A. Irvine
  */
-public class A001321 implements Sequence {
+public class A001321 extends Sequence1 {
 
   private int mN = 0;
 

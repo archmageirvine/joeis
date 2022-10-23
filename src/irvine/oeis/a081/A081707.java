@@ -4,6 +4,7 @@ package irvine.oeis.a081;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a001.A001222;
 
@@ -11,7 +12,7 @@ import irvine.oeis.a001.A001222;
  * A081707 a(n) = tau(n) - bigomega(n) = A000005(n) - A001222(n).
  * @author Georg Fischer
  */
-public class A081707 implements Sequence {
+public class A081707 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA001222 = new A001222();

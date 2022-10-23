@@ -3,6 +3,7 @@ package irvine.oeis.a167;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000027;
 import irvine.oeis.a007.A007510;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007510;
  * A167397 n-th single (or isolated or non-twin) prime minus n.
  * @author Georg Fischer
  */
-public class A167397 implements Sequence {
+public class A167397 extends Sequence1 {
 
   final Sequence mA000027 = new A000027();
   final Sequence mA007510 = new A007510();

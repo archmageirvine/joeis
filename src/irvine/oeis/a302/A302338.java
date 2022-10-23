@@ -3,13 +3,14 @@ package irvine.oeis.a302;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007814;
 
 /**
  * A302338 a(n) = 3*n + 2^v(n) where v(n) denotes the 2-adic valuation of n.
  * @author Georg Fischer
  */
-public class A302338 implements Sequence {
+public class A302338 extends Sequence1 {
 
   final Sequence mA007814 = new A007814();
   protected long mN;

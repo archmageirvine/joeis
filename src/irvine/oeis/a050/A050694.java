@@ -3,13 +3,13 @@ package irvine.oeis.a050;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050694 Composite numbers n such that all prime factors of n are a substring of n.
  * @author Sean A. Irvine
  */
-public class A050694 implements Sequence {
+public class A050694 extends Sequence1 {
 
   private long mN = 24;
 

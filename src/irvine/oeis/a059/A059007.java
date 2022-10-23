@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059007 Numbers m such that m^2 reversed is a prime.
  * @author Georg Fischer
  */
-public class A059007 implements Sequence {
+public class A059007 extends Sequence1 {
 
   private int mN;
   private int mPow;

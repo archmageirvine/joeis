@@ -4,13 +4,13 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035046 Numbers with two representations as cube + fifth power.
  * @author Sean A. Irvine
  */
-public class A035046 implements Sequence {
+public class A035046 extends Sequence1 {
 
   private final TreeMap<Z, Long> mMap = new TreeMap<>();
   private long mA = 1;

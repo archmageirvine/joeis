@@ -1,14 +1,14 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.UnimplementedException;
 
 /**
  * A003428 Number of trees by stability index.
  * @author Sean A. Irvine
  */
-public class A003428 implements Sequence {
+public class A003428 extends Sequence1 {
 
 //  // todo not right, A_{2,4} does reproduce what is in the paper
 //  // but this is still not A003428 ??

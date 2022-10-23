@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007993 Poincar\u00e9 series [or Poincare series] of Lie algebra associated with a certain braid group.
  * @author Sean A. Irvine
  */
-public class A007993 implements Sequence {
+public class A007993 extends Sequence1 {
 
   private long mN = 1;
 

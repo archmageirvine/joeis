@@ -3,13 +3,13 @@ package irvine.oeis.a151;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A151657 Number of permutations of 7 indistinguishable copies of 1..n with exactly 3 adjacent element pairs in decreasing order.
  * @author Georg Fischer
  */
-public class A151657 implements Sequence {
+public class A151657 extends Sequence1 {
 
   private int mN = 0;
 

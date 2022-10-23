@@ -3,13 +3,14 @@ package irvine.oeis.a145;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000695;
 
 /**
  * A145812 Odd positive integers a(n) such that for every odd integer m &gt; 1 there exists a unique representation of m as a sum of the form a(l) + 2a(s).
  * @author Georg Fischer
  */
-public class A145812 implements Sequence {
+public class A145812 extends Sequence1 {
 
   final Sequence mA000695 = new A000695();
   @Override

@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007508 Number of twin prime pairs below 10^n.
  * @author Sean A. Irvine
  */
-public class A007508 implements Sequence {
+public class A007508 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 3;

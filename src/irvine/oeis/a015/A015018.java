@@ -1,13 +1,13 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015018 q-factorial numbers for q=-5.
  * @author Sean A. Irvine
  */
-public class A015018 implements Sequence {
+public class A015018 extends Sequence1 {
 
   private Z mT = Z.ONE;
   private Z mA = Z.ONE;

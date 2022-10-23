@@ -3,13 +3,14 @@ package irvine.oeis.a089;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a085.A085753;
 
 /**
  * A089542 a(n) is the least semiprime &gt; n^n.
  * @author Georg Fischer
  */
-public class A089542 implements Sequence {
+public class A089542 extends Sequence1 {
 
   final Sequence mA085753 = new A085753();
   protected long mN;

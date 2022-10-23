@@ -1,13 +1,13 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049773 Triangular array T read by rows: if row n is r(1),...,r(m), then row n+1 is 2r(1)-1,...,2r(m)-1,2r(1),...,2r(m).
  * @author Sean A. Irvine
  */
-public class A049773 implements Sequence {
+public class A049773 extends Sequence1 {
 
   private Z[] mA = {};
   protected int mN = 0;

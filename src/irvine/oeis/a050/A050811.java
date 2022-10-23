@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050811 Partition numbers rounded to nearest integer given by the Hardy-Ramanujan approximate formula.
  * @author Sean A. Irvine
  */
-public class A050811 implements Sequence {
+public class A050811 extends Sequence1 {
 
   private static final CR FOUR_SQRT_3 = CR.valueOf(48).sqrt();
   private static final CR C = CR.PI.multiply(CR.TWO.divide(CR.THREE).sqrt());

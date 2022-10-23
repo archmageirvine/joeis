@@ -3,13 +3,13 @@ package irvine.oeis.a011;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011251 Numbers n such that phi(n) + sigma(n) = 3n.
  * @author Sean A. Irvine
  */
-public class A011251 implements Sequence {
+public class A011251 extends Sequence1 {
 
   private Z mN = Z.valueOf(310);
 

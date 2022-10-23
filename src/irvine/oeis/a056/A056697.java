@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056697 a(n) is least N &gt; 1 congruent to -1,0, or 1 mod i for all i=1,...,n.
  * @author Sean A. Irvine
  */
-public class A056697 implements Sequence {
+public class A056697 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 2;

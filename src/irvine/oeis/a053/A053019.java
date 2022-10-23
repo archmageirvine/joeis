@@ -4,14 +4,14 @@ import java.util.HashSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006566;
 
 /**
  * A053019 Let Do(n)=A006566(n)=n-th dodecahedral number. Consider all integer triples (i,j,k), j &gt;= k&gt;0, with Do(i)=Do(j)+Do(k), ordered by increasing i; sequence gives k values.
  * @author Sean A. Irvine
  */
-public class A053019 implements Sequence {
+public class A053019 extends Sequence1 {
 
   private final MemorySequence mD = MemorySequence.cachedSequence(new A006566());
   private final HashSet<Z> mSet = new HashSet<>();

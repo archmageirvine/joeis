@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020885 Ordered areas (divided by 6) of primitive Pythagorean triangles (with multiple entries).
  * @author Sean A. Irvine
  */
-public class A020885 implements Sequence {
+public class A020885 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

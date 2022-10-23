@@ -2,13 +2,14 @@ package irvine.oeis.a031;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
  * A031044 a(n)=least k such that base 8 representation of n begins at s(k), where s=A031035.
  * @author Sean A. Irvine
  */
-public class A031044 implements Sequence {
+public class A031044 extends Sequence1 {
 
   private final LongDynamicIntArray mA = new LongDynamicIntArray();
   private long mM;

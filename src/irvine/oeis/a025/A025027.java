@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025027 Numbers whose least quadratic nonresidue (A020649) is 19.
  * @author Sean A. Irvine
  */
-public class A025027 implements Sequence {
+public class A025027 extends Sequence1 {
 
   private long mN = 1558;
 

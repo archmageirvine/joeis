@@ -3,13 +3,13 @@ package irvine.oeis.a023;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023800 Xenodromes: all digits in base 5 are different.
  * @author Sean A. Irvine
  */
-public class A023800 implements Sequence {
+public class A023800 extends Sequence1 {
 
   private final TreeSet<Long> mA = new TreeSet<>();
   private final int mBase;

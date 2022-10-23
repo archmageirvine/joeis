@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007352 Where the prime race 3k-1 vs. 3k+1 changes leader.
  * @author Sean A. Irvine
  */
-public class A007352 implements Sequence {
+public class A007352 extends Sequence1 {
 
   private Z mP = null;
   private final Fast mPrime = new Fast();

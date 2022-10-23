@@ -3,12 +3,13 @@ package irvine.oeis.a336;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008833;
 /**
  * A336644 a(n) = (n-rad(n)) / core(n), where rad(n) and core(n) give the squarefree kernel and squarefree part of n, respectively.
  * @author Georg Fischer
  */
-public class A336644 implements Sequence {
+public class A336644 extends Sequence1 {
 
   private final Sequence mA008833 = new A008833();
   private final Sequence mA336643 = new A336643();

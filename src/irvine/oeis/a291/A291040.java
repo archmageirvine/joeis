@@ -3,13 +3,13 @@ package irvine.oeis.a291;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A291040 The arithmetic function u(n,3,2).
  * @author Georg Fischer
  */
-public class A291040 implements Sequence {
+public class A291040 extends Sequence1 {
 
   protected long mN;
   protected Z mM;

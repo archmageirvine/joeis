@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023961 First digit after decimal point of square root of n.
  * @author Sean A. Irvine
  */
-public class A023961 implements Sequence {
+public class A023961 extends Sequence1 {
 
   private static final CR TEN = CR.TEN;
   private long mN = 0;

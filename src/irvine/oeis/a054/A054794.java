@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054794 Numbers of form 5+n^2+n or 5+2*n^2.
  * @author Sean A. Irvine
  */
-public class A054794 implements Sequence {
+public class A054794 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

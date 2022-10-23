@@ -3,13 +3,14 @@ package irvine.oeis.a229;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a054.A054024;
 
 /**
  * A229087 a(n) = sigma(n) mod n - antisigma(n) mod n, where sigma(n) = A000203(n) = sum of divisor of n, antisigma(n) = A024816(n) = sum of non-divisors of n.
  * @author Georg Fischer
  */
-public class A229087 implements Sequence {
+public class A229087 extends Sequence1 {
 
   final Sequence mA054024 = new A054024();
   final Sequence mA229110 = new A229110();

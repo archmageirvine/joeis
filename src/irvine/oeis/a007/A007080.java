@@ -7,13 +7,13 @@ import java.util.List;
 import irvine.math.group.IntegerField;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007080 Number of labeled Eulerian digraphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A007080 implements Sequence {
+public class A007080 extends Sequence1 {
 
   private static final List<Z> C1 = Collections.singletonList(Z.TWO);
   private static final List<Z> C2 = Arrays.asList(Z.ONE, Z.ONE);

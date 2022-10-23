@@ -3,14 +3,14 @@ package irvine.oeis.a046;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046970 Dirichlet inverse of the Jordan function J_2 (A007434).
  * a(n) = Sum_{d|n} mu(d)*d^2.
  * @author Georg Fischer
  */
-public class A046970 implements Sequence {
+public class A046970 extends Sequence1 {
 
   protected long mN; // current index
   

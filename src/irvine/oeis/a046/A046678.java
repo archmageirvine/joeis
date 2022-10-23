@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046678 Number of divisors of n and sum of divisors of n are relatively prime.
  * @author Sean A. Irvine
  */
-public class A046678 implements Sequence {
+public class A046678 extends Sequence1 {
 
   private long mN = 0;
 

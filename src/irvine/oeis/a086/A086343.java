@@ -3,13 +3,14 @@ package irvine.oeis.a086;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000120;
 
 /**
  * A086343 a(n) starts new run of consecutive values in A055938.
  * @author Georg Fischer
  */
-public class A086343 implements Sequence {
+public class A086343 extends Sequence1 {
 
   final Sequence mA000120 = new A000120();
   protected long mN;

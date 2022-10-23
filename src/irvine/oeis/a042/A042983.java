@@ -1,13 +1,13 @@
 package irvine.oeis.a042;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A042983 Numbers n &gt; 99 with following property: form a sequence whose initial terms are the t digits of n, later terms given by rule b(i+1) = b(i) + product of t-1 previous terms; then n itself appears in the sequence.
  * @author Sean A. Irvine
  */
-public class A042983 implements Sequence {
+public class A042983 extends Sequence1 {
 
   private long mN = 204;
   private long mT = 1000;

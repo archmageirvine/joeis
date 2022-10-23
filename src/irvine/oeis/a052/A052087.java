@@ -3,13 +3,13 @@ package irvine.oeis.a052;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052087 Primes whose decimal expansion is a concatenation of two or more consecutive increasing numbers (no leading zeros allowed).
  * @author Sean A. Irvine
  */
-public class A052087 implements Sequence {
+public class A052087 extends Sequence1 {
 
   private static final class State implements Comparable<State> {
     private final Z mA;

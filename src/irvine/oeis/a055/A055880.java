@@ -3,13 +3,14 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a053.A053317;
 
 /**
  * A055880 Quotients arising from sequence A053317.
  * @author Georg Fischer
  */
-public class A055880 implements Sequence {
+public class A055880 extends Sequence1 {
 
   final Sequence mA053317 = new A053317();
   protected long mN;

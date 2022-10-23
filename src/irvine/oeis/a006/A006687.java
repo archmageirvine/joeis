@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006687 Duodecimal primes: p = (x^12 + y^12 )/(x^4 + y^4 ).
  * @author Sean A. Irvine
  */
-public class A006687 implements Sequence {
+public class A006687 extends Sequence1 {
 
   private final TreeSet<Z> mPriority = new TreeSet<>();
   private long mX = 0;

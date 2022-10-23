@@ -1,13 +1,13 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035062 Numbers n such that 2^n does not contain the digit 7.
  * @author Sean A. Irvine
  */
-public class A035062 implements Sequence {
+public class A035062 extends Sequence1 {
 
   private Z mT = Z.ONE;
   private long mN = -1;

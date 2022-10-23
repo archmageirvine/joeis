@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014629 Number of segments created by diagonals of n-gon.
  * @author Sean A. Irvine
  */
-public class A014629 implements Sequence {
+public class A014629 extends Sequence1 {
 
   private long mN = 2;
 

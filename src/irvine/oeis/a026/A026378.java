@@ -2,13 +2,13 @@ package irvine.oeis.a026;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A026378 a(n) = number of integer strings s(0),...,s(n) counted by array T in A026374 that have s(n)=1; also a(n) = T(2n-1,n-1).
  * @author Sean A. Irvine
  */
-public class A026378 implements Sequence {
+public class A026378 extends Sequence1 {
 
   private long mN = -1;
 

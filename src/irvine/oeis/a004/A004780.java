@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004780 Binary expansion contains 2 adjacent 1's.
  * @author Sean A. Irvine
  */
-public class A004780 implements Sequence {
+public class A004780 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

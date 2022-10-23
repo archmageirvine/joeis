@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001615 Dedekind psi function: n * Product_{p|n, p prime} (1 + 1/p).
  * @author Sean A. Irvine
  */
-public class A001615 implements Sequence {
+public class A001615 extends Sequence1 {
 
   private long mN = 0;
 

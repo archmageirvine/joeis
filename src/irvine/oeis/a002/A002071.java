@@ -9,14 +9,14 @@ import irvine.factor.prime.Fast;
 import irvine.math.api.Set;
 import irvine.math.set.FiniteSet;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.AbstractIterator;
 
 /**
  * A002071 Number of pairs of consecutive integers x, x+1 such that all prime factors of both x and x+1 are at most the n-th prime.
  * @author Sean A. Irvine
  */
-public class A002071 implements Sequence {
+public class A002071 extends Sequence1 {
 
   // Fundamentally this works using the Lehmer's improvements to Stormer's theorem
   // Implementation is based on the Python code by D. Eppstein.

@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000105;
 import irvine.oeis.a234.A234006;
 import irvine.oeis.a234.A234007;
@@ -14,7 +14,7 @@ import irvine.oeis.a234.A234008;
  * For even n, <code>a(n) = 2*A000105(n) - (M(n) + R90(n) + R180(n))</code>.
  * @author jmason
  */
-public class A001933 implements Sequence {
+public class A001933 extends Sequence1 {
 
   private int mMax = 0;
   private final A000105 mA000105 = new A000105(); // valid for all values of n

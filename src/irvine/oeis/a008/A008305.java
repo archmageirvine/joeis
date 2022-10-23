@@ -4,13 +4,13 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008305 Triangle read by rows: a(n,k) = number of permutations of [n] allowing i-&gt;i+j (mod n), j=0..k-1.
  * @author Sean A. Irvine
  */
-public class A008305 implements Sequence {
+public class A008305 extends Sequence1 {
 
   private int mN = 0;
   private int mK = 1;

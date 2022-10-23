@@ -2,13 +2,13 @@ package irvine.oeis.a068;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A068706 Primes obtained as a right concatenation of more than one consecutive even numbers and 1.
  * @author Sean A. Irvine
  */
-public class A068706 implements Sequence {
+public class A068706 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mN = Z.valueOf(240);

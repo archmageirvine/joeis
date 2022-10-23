@@ -3,13 +3,14 @@ package irvine.oeis.a195;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003418;
 
 /**
  * A195507 Smallest integer m greater than n such that m (mod k) == n (mod k) for k = 1..n-1.
  * @author Georg Fischer
  */
-public class A195507 implements Sequence {
+public class A195507 extends Sequence1 {
 
   final Sequence mA003418 = new A003418();
   protected long mN;

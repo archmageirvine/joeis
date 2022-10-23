@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027922 Least k such that 1+2+...+k &gt;= 1^2 + 2^2 + ... + n^2.
  * @author Sean A. Irvine
  */
-public class A027922 implements Sequence {
+public class A027922 extends Sequence1 {
 
   private Z mSumSquares = Z.ZERO;
   private long mN = 0;

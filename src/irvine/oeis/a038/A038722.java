@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038722 Take the sequence of natural numbers (A000027) and reverse successive subsequences of lengths 1,2,3,4,... .
  * @author Sean A. Irvine
  */
-public class A038722 implements Sequence {
+public class A038722 extends Sequence1 {
 
   private long mN = 0;
   private long mSwapPoint = 0;

@@ -3,6 +3,7 @@ package irvine.oeis.a154;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001031;
 import irvine.oeis.a080.A080339;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a080.A080339;
  * A154804 Number of ways to represent 2n as the sum of two distinct primes (counting 1 as a prime).
  * @author Georg Fischer
  */
-public class A154804 implements Sequence {
+public class A154804 extends Sequence1 {
 
   final Sequence mA001031 = new A001031();
   final Sequence mA080339 = new A080339();

@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024681 a(n) = number of ways p(n) is a sum of 3 odd nonprimes r,s,t satisfying 9 &lt;= r &lt; s &lt; t.
  * @author Sean A. Irvine
  */
-public class A024681 implements Sequence {
+public class A024681 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

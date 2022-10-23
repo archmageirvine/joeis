@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001742 Numbers whose digits contain no loops (version 2).
  * @author Sean A. Irvine
  */
-public class A001742 implements Sequence {
+public class A001742 extends Sequence1 {
 
   private long mN = 0;
 

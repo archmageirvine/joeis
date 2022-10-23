@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038050 Number of labeled rooted trees with 3-colored leaves.
  * @author Sean A. Irvine
  */
-public class A038050 implements Sequence {
+public class A038050 extends Sequence1 {
 
   private long mN = 0;
 

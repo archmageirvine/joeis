@@ -3,13 +3,14 @@ package irvine.oeis.a053;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003285;
 
 /**
  * A053190 Numerators in the convergents of [L_1, L_2, L_3, . . . ] where L_i is period length of the continued fraction for sqrt(i).
  * @author Sean A. Irvine
  */
-public class A053190 implements Sequence {
+public class A053190 extends Sequence1 {
 
   private Z mH0 = Z.ZERO;
   private Z mK0 = Z.ONE;

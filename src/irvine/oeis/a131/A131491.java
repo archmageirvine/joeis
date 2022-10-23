@@ -3,13 +3,14 @@ package irvine.oeis.a131;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a039.A039716;
 
 /**
  * A131491 2*prime(n)!.
  * @author Georg Fischer
  */
-public class A131491 implements Sequence {
+public class A131491 extends Sequence1 {
 
   final Sequence mA039716 = new A039716();
   @Override

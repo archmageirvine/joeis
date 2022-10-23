@@ -2,13 +2,13 @@ package irvine.oeis.a197;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A197602 Floor((n+1/n)^3).
  * @author Georg Fischer
  */
-public class A197602 implements Sequence {
+public class A197602 extends Sequence1 {
 
   protected int mN = 0;
   protected final int mParm; 

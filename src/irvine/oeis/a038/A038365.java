@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038365 Numbers n with property that digits of n are not present in 2n.
  * @author Sean A. Irvine
  */
-public class A038365 implements Sequence {
+public class A038365 extends Sequence1 {
 
   private long mN = 0;
 

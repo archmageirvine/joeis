@@ -3,6 +3,7 @@ package irvine.oeis.a171;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002476;
 import irvine.oeis.a007.A007528;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007528;
  * A171716 a(n) = abs((n-th prime of the form 6*k+1) minus (n-th prime of the form 6*m-1))/2.
  * @author Georg Fischer
  */
-public class A171716 implements Sequence {
+public class A171716 extends Sequence1 {
 
   final Sequence mA002476 = new A002476();
   final Sequence mA007528 = new A007528();

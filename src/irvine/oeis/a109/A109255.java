@@ -3,13 +3,14 @@ package irvine.oeis.a109;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002144;
 
 /**
  * A109255 a(n) = (p^2 - 1) / 12, where p is the n-th prime of the form 4*k+1.
  * @author Georg Fischer
  */
-public class A109255 implements Sequence {
+public class A109255 extends Sequence1 {
 
   final Sequence mA002144 = new A002144();
   @Override

@@ -3,13 +3,13 @@ package irvine.oeis.a036;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036785 Numbers divisible by the squares of two distinct primes.
  * @author Sean A. Irvine
  */
-public class A036785 implements Sequence {
+public class A036785 extends Sequence1 {
 
   private long mN = 35;
 

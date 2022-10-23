@@ -1,14 +1,14 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A029957 Numbers that are palindromic in base 12.
  * @author Sean A. Irvine
  */
-public class A029957 implements Sequence {
+public class A029957 extends Sequence1 {
 
   private long mN = -1;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046411 Composite numbers the concatenation of whose prime factors is a prime.
  * @author Sean A. Irvine
  */
-public class A046411 implements Sequence {
+public class A046411 extends Sequence1 {
 
   private long mN = 5;
 

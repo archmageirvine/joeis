@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014369 a(n) = bcd, where n = C(b,3)+C(c,2)+C(d,1), b&gt;c&gt;d&gt;=0.
  * @author Sean A. Irvine
  */
-public class A014369 implements Sequence {
+public class A014369 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

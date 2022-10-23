@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058500 Primes of the form p*2^k + 1, where p is an odd prime and k &gt; 0.
  * @author Sean A. Irvine
  */
-public class A058500 implements Sequence {
+public class A058500 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final TreeSet<Z> mA = new TreeSet<>();

@@ -1,13 +1,13 @@
 package irvine.oeis.a031;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A031448 Numbers whose base-2 representation has one fewer 0's than 1's.
  * @author Sean A. Irvine
  */
-public class A031448 implements Sequence {
+public class A031448 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

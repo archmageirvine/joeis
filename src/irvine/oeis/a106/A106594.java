@@ -2,13 +2,13 @@ package irvine.oeis.a106;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A106594 a(n) = number of primitive solutions to 4n+1 = x^2 + y^2.
  * @author Sean A. Irvine
  */
-public class A106594 implements Sequence {
+public class A106594 extends Sequence1 {
 
   // After R. J. Mathar
 

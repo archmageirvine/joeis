@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003629 Primes p == +- 3 (mod 8), or, primes p such that 2 is not a square mod p.
  * @author Sean A. Irvine
  */
-public class A003629 implements Sequence {
+public class A003629 extends Sequence1 {
 
   private Z mP = Z.TWO;
   private final Fast mPrime = new Fast();

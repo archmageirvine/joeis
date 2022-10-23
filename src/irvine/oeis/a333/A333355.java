@@ -3,13 +3,14 @@ package irvine.oeis.a333;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000523;
 import irvine.oeis.a062.A062153;
 /**
  * A333355 Number of bits in binary expansion of n minus the number of digits of n when written in base 3.
  * @author Georg Fischer
  */
-public class A333355 implements Sequence {
+public class A333355 extends Sequence1 {
 
   private final Sequence mA000523 = new A000523();
   private final Sequence mA062153 = new A062153();

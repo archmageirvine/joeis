@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014949 Numbers k that divide 8^k - 1.
  * @author Sean A. Irvine
  */
-public class A014949 implements Sequence {
+public class A014949 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038367 Numbers n with property that (product of digits of n) is divisible by (sum of digits of n).
  * @author Sean A. Irvine
  */
-public class A038367 implements Sequence {
+public class A038367 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

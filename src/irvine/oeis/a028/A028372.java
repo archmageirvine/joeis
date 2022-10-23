@@ -3,13 +3,13 @@ package irvine.oeis.a028;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028372 Smallest prime that is simultaneously of forms x^2 + m*y^2 for m = 1, ..., n.
  * @author Sean A. Irvine
  */
-public class A028372 implements Sequence {
+public class A028372 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 2;

@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003602 Kimberling's paraphrases: if n = (2k-1)*2^m then a(n) = k.
  * @author Sean A. Irvine
  */
-public class A003602 implements Sequence {
+public class A003602 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

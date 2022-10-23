@@ -2,13 +2,13 @@ package irvine.oeis.a008;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008457 a(n) = Sum_{ d &gt;= 1, d divides n} (-1)^(n-d)*d^3.
  * @author Sean A. Irvine
  */
-public class A008457 implements Sequence {
+public class A008457 extends Sequence1 {
 
   private long mN = 0;
 

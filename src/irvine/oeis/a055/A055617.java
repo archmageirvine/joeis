@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055617 a(n)= A*10^(3*n)+B with A=(10^(3*n)-10^n) and B=10^(2*n).
  * @author Sean A. Irvine
  */
-public class A055617 implements Sequence {
+public class A055617 extends Sequence1 {
 
   private long mN = 0;
 

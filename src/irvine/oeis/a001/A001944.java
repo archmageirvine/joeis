@@ -3,13 +3,13 @@ package irvine.oeis.a001;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001944 Numbers that are the sum of 4 distinct squares: of form w^2 + x^2 + y^2 + z^2 with 0 &lt;= w &lt; x &lt; y &lt; z.
  * @author Sean A. Irvine
  */
-public class A001944 implements Sequence {
+public class A001944 extends Sequence1 {
 
   private Z mW = init();
   private final TreeSet<Z> mSeq = new TreeSet<>();

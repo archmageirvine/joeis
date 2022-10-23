@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014741 Numbers k such that k divides 2^(k+1) - 2.
  * @author Sean A. Irvine
  */
-public class A014741 implements Sequence {
+public class A014741 extends Sequence1 {
 
   private long mN = 0;
 

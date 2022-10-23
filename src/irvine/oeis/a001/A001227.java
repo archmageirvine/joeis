@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001227 Number of odd divisors of n.
  * @author Sean A. Irvine
  */
-public class A001227 implements Sequence {
+public class A001227 extends Sequence1 {
 
   protected long mN = 0;
 

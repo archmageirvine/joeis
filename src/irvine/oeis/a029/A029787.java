@@ -2,14 +2,14 @@ package irvine.oeis.a029;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A029787 Numbers n such that digits of n^2 are not present in n^3.
  * @author Sean A. Irvine
  */
-public class A029787 implements Sequence {
+public class A029787 extends Sequence1 {
 
 private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private Z mN = Z.NEG_ONE;

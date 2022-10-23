@@ -3,13 +3,13 @@ package irvine.oeis.a032;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032953 Numbers whose base-3 representation Sum_{i=0..m} d(i)*3^(m-i) has even d(i) for all odd i.
  * @author Sean A. Irvine
  */
-public class A032953 implements Sequence {
+public class A032953 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mLimit = Z.valueOf(base());

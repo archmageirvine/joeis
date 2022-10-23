@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014508 a(n) = floor( n! / e ).
  * @author Sean A. Irvine
  */
-public class A014508 implements Sequence {
+public class A014508 extends Sequence1 {
 
   private long mN = 0;
   private Z mF = Z.ONE;

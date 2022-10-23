@@ -1,14 +1,14 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a009.A009421;
 
 /**
  * A014157 Numbers that are the sum of 2 cubes and a triangular number.
  * @author Sean A. Irvine
  */
-public class A014157 implements Sequence {
+public class A014157 extends Sequence1 {
 
   private long mN = -1;
 

@@ -9,14 +9,14 @@ import java.util.Set;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
 /**
  * A002974 Number of restricted solid partitions of n.
  * @author Sean A. Irvine
  */
-public class A002974 implements Sequence {
+public class A002974 extends Sequence1 {
 
   private static final Triple<Integer> ORIGIN = new Triple<>(0, 0, 0);
   private int mN = 0;

@@ -3,14 +3,14 @@ package irvine.oeis.a052;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A052474 Construct difference array so that (1) first row begins with 1, (2) every row is monotonic increasing, (3) no number appears more than once, (4) smallest number not yet used begins a new row. Sequence gives main diagonal.
  * @author Sean A. Irvine
  */
-public class A052474 implements Sequence {
+public class A052474 extends Sequence1 {
 
   protected final DynamicLongArray mA = new DynamicLongArray(); // trailing element of each row
   private final TreeSet<Long> mUsed = new TreeSet<>();

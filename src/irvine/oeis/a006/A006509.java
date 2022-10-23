@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006509 Cald's sequence: a(n+1) = a(n) - prime(n) if that value is positive and new, otherwise a(n) + prime(n) if new, otherwise 0.
  * @author Sean A. Irvine
  */
-public class A006509 implements Sequence {
+public class A006509 extends Sequence1 {
 
   private final HashSet<Z> mSeen = new HashSet<>();
   private final Fast mPrime = new Fast();

@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014309 a(n) = (n+2)*(n+1)*(n^2 + 7*n - 12)/24.
  * @author Sean A. Irvine
  */
-public class A014309 implements Sequence {
+public class A014309 extends Sequence1 {
 
   private Z mN = Z.ONE;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058050 a(n) is the number of different graphs drawn in the following way: you decide for each number k &lt;= n on a pair of positive numbers (x(k),y(k)) such that x(k)+y(k)=k; you draw n points numbered 1 to n; draw two arrows from n, one to x(n) and one to y(n); draw two arrows from each k already reached by an arrow, one to x(k) and one to y(k). The process stops when 1 is the only point reached by an arrow without any arrow leaving it; you can also erase the isolated points.
  * @author Sean A. Irvine
  */
-public class A058050 implements Sequence {
+public class A058050 extends Sequence1 {
 
   // It would be possible to squeeze one more bit here as bit 0 is not currently used.
   // It would be possible to cache smaller results to make it faster.

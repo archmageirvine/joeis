@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019506 Hoax numbers: composite numbers whose digit-sum equals the sum of the digit-sums of its distinct prime factors.
  * @author Sean A. Irvine
  */
-public class A019506 implements Sequence {
+public class A019506 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 21;

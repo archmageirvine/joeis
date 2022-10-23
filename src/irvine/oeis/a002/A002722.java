@@ -1,14 +1,14 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002722 Rotatable partitions.
  * @author R. J. Mathar
  * @author Sean A. Irvine
  */
-public class A002722 implements Sequence {
+public class A002722 extends Sequence1 {
 
   // Dimensionality. Here d=3 means solid partitions.
   private static final int DIMENSION = 3;

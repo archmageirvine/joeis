@@ -3,13 +3,14 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046951;
 import irvine.oeis.a162.A162641;
 /**
  * A056626 Number of non-unitary square divisors of n.
  * @author Georg Fischer
  */
-public class A056626 implements Sequence {
+public class A056626 extends Sequence1 {
 
   private final Sequence mA046951 = new A046951();
   private final Sequence mA162641 = new A162641();

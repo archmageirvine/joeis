@@ -3,13 +3,14 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001227;
 
 /**
  * A054844 Number of ways to write n as the sum of any number of consecutive integers (including the trivial one-term sum n = n).
  * @author Georg Fischer
  */
-public class A054844 implements Sequence {
+public class A054844 extends Sequence1 {
 
   final Sequence mA001227 = new A001227();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051194 Triangular array T read by rows: T(n,k) = number of positive integers that divide both n and k.
  * @author Sean A. Irvine
  */
-public class A051194 implements Sequence {
+public class A051194 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

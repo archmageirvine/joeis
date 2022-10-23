@@ -1,13 +1,13 @@
 package irvine.oeis.a161;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A161888 a(n) = the smallest positive integer that does not divide n, and is such that sum{k=1 to n} a(k) is coprime to n.
  * @author Sean A. Irvine
  */
-public class A161888 implements Sequence {
+public class A161888 extends Sequence1 {
 
   private Z mSum = null;
   private long mN = 0;

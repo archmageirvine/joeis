@@ -3,13 +3,13 @@ package irvine.oeis.a051;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051388 Numbers whose 4th power can be expressed as the sum of two positive cubes in more than one way.
  * @author Sean A. Irvine
  */
-public class A051388 implements Sequence {
+public class A051388 extends Sequence1 {
 
   private long mN = 1;
   private final HashSet<Z> mCubes = new HashSet<>();

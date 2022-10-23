@@ -3,13 +3,13 @@ package irvine.oeis.a013;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013946 Least d for which the number with continued fraction [n,n,n,n...] is in Q(sqrt(d)).
  * @author Sean A. Irvine
  */
-public class A013946 implements Sequence {
+public class A013946 extends Sequence1 {
 
   private long mN = 0;
 

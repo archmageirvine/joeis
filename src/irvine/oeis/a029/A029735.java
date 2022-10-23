@@ -1,14 +1,14 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A029735 Numbers k such that k^3 is palindromic in base 16.
  * @author Sean A. Irvine
  */
-public class A029735 implements Sequence {
+public class A029735 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

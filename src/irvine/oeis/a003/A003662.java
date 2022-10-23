@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003662 a(n) is smallest number != a(j)+a(k), j&lt;k.
  * @author Sean A. Irvine
  */
-public class A003662 implements Sequence {
+public class A003662 extends Sequence1 {
 
   private long mN = 0;
 

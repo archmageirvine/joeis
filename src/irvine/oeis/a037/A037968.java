@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037968 Greatest number of distinct digits of n in any base b&gt;=2.
  * @author Sean A. Irvine
  */
-public class A037968 implements Sequence {
+public class A037968 extends Sequence1 {
 
   private int mN = 0;
 

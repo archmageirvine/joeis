@@ -3,13 +3,14 @@ package irvine.oeis.a250;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000879;
 
 /**
  * A250474 Number of times prime(n) occurs as the least prime factor among numbers 1 .. prime(n)^3: a(n) = A078898(A030078(n)).
  * @author Georg Fischer
  */
-public class A250474 implements Sequence {
+public class A250474 extends Sequence1 {
 
   final Sequence mA000879 = new A000879();
   protected long mN;

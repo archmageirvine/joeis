@@ -2,13 +2,13 @@ package irvine.oeis.a101;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A101594 Numbers with exactly two distinct decimal digits, neither of which is 0.
  * @author Georg Fischer
  */
-public class A101594 implements Sequence {
+public class A101594 extends Sequence1 {
 
   protected long mN = 0;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006711 Describe previous term from the right (method A - initial term is 1).
  * @author Sean A. Irvine
  */
-public class A006711 implements Sequence {
+public class A006711 extends Sequence1 {
 
   private String mPrev = null;
 

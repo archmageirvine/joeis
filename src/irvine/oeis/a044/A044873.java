@@ -1,13 +1,13 @@
 package irvine.oeis.a044;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A044873 Numbers having, in base 2, (sum of even run lengths)=(sum of odd run lengths).
  * @author Sean A. Irvine
  */
-public class A044873 implements Sequence {
+public class A044873 extends Sequence1 {
 
   private long mN = 0;
 

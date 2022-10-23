@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007907 Concatenation of sequence (1, 2, ..., floor((n-1)/2), floor(n/2), floor(n/2)-1, ..., 1) for n &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A007907 implements Sequence {
+public class A007907 extends Sequence1 {
 
   private long mN = 1;
 

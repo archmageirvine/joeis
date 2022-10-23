@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023185 Square of main diagonal of 3-dimensional box with coprime integer sides and integer face diagonals.
  * @author Sean A. Irvine
  */
-public class A023185 implements Sequence {
+public class A023185 extends Sequence1 {
 
   // Straight forward search.  Does not even use know results like
   // two of the sides must be even, two sides must be divisible by 3.

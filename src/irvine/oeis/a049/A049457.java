@@ -3,13 +3,13 @@ package irvine.oeis.a049;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049457 Least positive integer k such that the number having periodic continued fraction [ 1,m,1,m,1,m,... ] is of form (a+b*sqrt(k))/c, where a,b,c are positive integers.
  * @author Sean A. Irvine
  */
-public class A049457 implements Sequence {
+public class A049457 extends Sequence1 {
 
   private long mN = 0;
 

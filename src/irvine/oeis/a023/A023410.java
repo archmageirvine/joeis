@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023410 In base 10, if any power of 2 ends with k 6's and 9's, they must be the first k terms of this sequence in reverse order.
  * @author Sean A. Irvine
  */
-public class A023410 implements Sequence {
+public class A023410 extends Sequence1 {
 
   private Z mA = Z.ZERO;
   private Z mT = Z.ONE;

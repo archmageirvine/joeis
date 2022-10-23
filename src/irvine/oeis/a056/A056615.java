@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056615 Binomial(2*n - 1, n - 1) - 1 (mod n^2).
  * @author Georg Fischer
  */
-public class A056615 implements Sequence {
+public class A056615 extends Sequence1 {
 
   protected Z mN;
 

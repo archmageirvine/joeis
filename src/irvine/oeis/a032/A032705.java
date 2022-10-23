@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032705 Numbers k such that k prefixed by '5' and followed by '1' is prime.
  * @author Sean A. Irvine
  */
-public class A032705 implements Sequence {
+public class A032705 extends Sequence1 {
 
   private long mN = -1;
 

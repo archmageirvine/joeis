@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007684 Prime(n)*...*prime(a(n)) is the least product of consecutive primes that is non-deficient.
  * @author Sean A. Irvine
  */
-public class A007684 implements Sequence {
+public class A007684 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

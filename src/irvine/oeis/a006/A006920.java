@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006920 At each step, record how many 1's, 2's, etc. have been seen so far in the sequence.
  * @author Sean A. Irvine
  */
-public class A006920 implements Sequence {
+public class A006920 extends Sequence1 {
 
   private int[] mCounts = null;
 

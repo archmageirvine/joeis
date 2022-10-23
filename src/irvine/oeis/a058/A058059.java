@@ -7,13 +7,13 @@ import irvine.math.group.GaloisField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.IrreduciblePolynomials;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058059 Numbers n such that x^n + x + 2 is irreducible over GF(3).
  * @author Sean A. Irvine
  */
-public class A058059 implements Sequence {
+public class A058059 extends Sequence1 {
 
   // Only a few terms can be generated
 

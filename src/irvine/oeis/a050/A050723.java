@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050723 Numbers k such that the decimal expansion of 2^k contains no pair of consecutive equal digits (probably finite).
  * @author Sean A. Irvine
  */
-public class A050723 implements Sequence {
+public class A050723 extends Sequence1 {
 
   private long mN = -1;
   private Z mT = Z.ONE;

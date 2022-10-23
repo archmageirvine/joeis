@@ -10,13 +10,13 @@ import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002985 Number of trees in an n-node wheel.
  * @author Sean A. Irvine
  */
-public class A002985 implements Sequence {
+public class A002985 extends Sequence1 {
 
   // See a002985.tex for some hints on the method used here.
 

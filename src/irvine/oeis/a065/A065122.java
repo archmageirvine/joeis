@@ -2,13 +2,13 @@ package irvine.oeis.a065;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A065122 a(1) = 2; a(n) is smallest prime &gt; 10*a(n-1).
  * @author Georg Fischer
  */
-public class A065122 implements Sequence {
+public class A065122 extends Sequence1 {
 
   private int mN;
   private Z mA;

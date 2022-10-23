@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033349 a(n) = floor(29/n).
  * @author Sean A. Irvine
  */
-public class A033349 implements Sequence {
+public class A033349 extends Sequence1 {
 
   private static final Z NUM = Z.valueOf(29);
   private long mN = 0;

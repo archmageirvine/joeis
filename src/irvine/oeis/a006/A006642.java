@@ -3,14 +3,14 @@ package irvine.oeis.a006;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003636;
 
 /**
  * A006642 Class number of quadratic field with discriminant -4n+1.
  * @author Sean A. Irvine
  */
-public class A006642 implements Sequence {
+public class A006642 extends Sequence1 {
 
   long mN = 1;
 

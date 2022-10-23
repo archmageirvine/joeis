@@ -5,6 +5,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a061.A061686;
 
 /**
@@ -12,7 +13,7 @@ import irvine.oeis.a061.A061686;
  * a(n) = (1/n)*Sum_{d|n} mu(d)*A061686(n/d).
  * @author Georg Fischer
  */
-public class A091112 implements Sequence {
+public class A091112 extends Sequence1 {
 
   protected int mN;
   protected MemorySequence mSeq;

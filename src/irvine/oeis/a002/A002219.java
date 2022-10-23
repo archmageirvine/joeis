@@ -6,14 +6,14 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A002219 a(n) is the number of partitions of 2n that can be obtained by adding together two (not necessarily distinct) partitions of n.
  * @author Sean A. Irvine
  */
-public class A002219 implements Sequence {
+public class A002219 extends Sequence1 {
 
   private long mN = 0;
 

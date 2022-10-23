@@ -3,12 +3,13 @@ package irvine.oeis.a188;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051903;
 /**
  * A188385 Highest exponent in the prime factorization of n^n.
  * @author Georg Fischer
  */
-public class A188385 implements Sequence {
+public class A188385 extends Sequence1 {
 
   private final Sequence mA051903 = new A051903();
   protected long mN;

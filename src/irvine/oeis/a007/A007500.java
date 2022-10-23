@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007500 Primes whose reversal in base 10 is also prime (called "palindromic primes" by D. Wells, although that name usually refers to A002385). Also called reversible primes.
  * @author Georg Fischer
  */
-public class A007500 implements Sequence {
+public class A007500 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.ONE;

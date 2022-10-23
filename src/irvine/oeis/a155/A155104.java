@@ -3,13 +3,14 @@ package irvine.oeis.a155;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a028.A028362;
 
 /**
  * A155104 Numbers appearing in the fourth column of A155103.
  * @author Georg Fischer
  */
-public class A155104 implements Sequence {
+public class A155104 extends Sequence1 {
 
   final Sequence mA028362 = new A028362();
   /** Construct the sequence. */

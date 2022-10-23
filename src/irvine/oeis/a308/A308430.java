@@ -2,13 +2,13 @@ package irvine.oeis.a308;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A308430 Number of 0's minus number of 1's among the edge truncated binary representations of the first n prime numbers.
  * @author Sean A. Irvine
  */
-public class A308430 implements Sequence {
+public class A308430 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mSum = Z.ZERO;

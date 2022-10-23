@@ -3,13 +3,14 @@ package irvine.oeis.a071;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a035.A035316;
 
 /**
  * A071326 Sum of squares &gt; 1 dividing n.
  * @author Georg Fischer
  */
-public class A071326 implements Sequence {
+public class A071326 extends Sequence1 {
 
   final Sequence mA035316 = new A035316();
   @Override

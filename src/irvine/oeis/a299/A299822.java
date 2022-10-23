@@ -3,6 +3,7 @@ package irvine.oeis.a299;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a007.A007947;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007947;
  * A299822 Product of Euler's totient and the squarefree kernel, a(n) = phi(n)*rad(n).
  * @author Georg Fischer
  */
-public class A299822 implements Sequence {
+public class A299822 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA007947 = new A007947();

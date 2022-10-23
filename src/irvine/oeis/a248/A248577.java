@@ -3,6 +3,7 @@ package irvine.oeis.a248;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a001.A001221;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001221;
  * A248577 Product of the number of divisors of n and the number of distinct prime divisors of n; i.e., tau(n) * omega(n).
  * @author Georg Fischer
  */
-public class A248577 implements Sequence {
+public class A248577 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA001221 = new A001221();

@@ -2,13 +2,13 @@ package irvine.oeis.a070;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A070676 Smallest m in range 1..phi(n) such that 3^m == 1 mod n, or 0 if no such number exists.
  * @author Georg Fischer
  */
-public class A070676 implements Sequence {
+public class A070676 extends Sequence1 {
 
   private int mN;
   private final Z mBase;

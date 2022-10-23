@@ -3,13 +3,13 @@ package irvine.oeis.a038;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038693 Numbers whose concatenation of prime factors (with multiplicity) is a square.
  * @author Sean A. Irvine
  */
-public class A038693 implements Sequence {
+public class A038693 extends Sequence1 {
 
   private long mN = 9;
 

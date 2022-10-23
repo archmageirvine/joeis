@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028874 Primes of form n^2 - 3.
  * @author Sean A. Irvine
  */
-public class A028874 implements Sequence {
+public class A028874 extends Sequence1 {
 
   private Z mN = Z.THREE;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004138 From a counter moving problem.
  * @author Sean A. Irvine
  */
-public class A004138 implements Sequence {
+public class A004138 extends Sequence1 {
 
   private Z mA = null;
   private Z mB = null;

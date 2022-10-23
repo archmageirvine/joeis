@@ -3,13 +3,14 @@ package irvine.oeis.a125;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000378;
 
 /**
  * A125084 Cubes which have a partition as the sum of 3 squares.
  * @author Georg Fischer
  */
-public class A125084 implements Sequence {
+public class A125084 extends Sequence1 {
 
   final Sequence mA000378 = new A000378();
   @Override

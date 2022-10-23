@@ -3,13 +3,14 @@ package irvine.oeis.a298;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038800;
 
 /**
  * A298008 a(n) = f(n-1,n) + 10*(n-1), where f(a,b) is the number of primes in the range [10*a,10*b].
  * @author Georg Fischer
  */
-public class A298008 implements Sequence {
+public class A298008 extends Sequence1 {
 
   final Sequence mA038800 = new A038800();
   protected long mN;

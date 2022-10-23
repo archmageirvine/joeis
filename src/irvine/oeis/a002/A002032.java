@@ -5,14 +5,14 @@ import java.util.HashMap;
 import irvine.math.graph.GraphUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A002032 Number of n-colored connected graphs on n labeled nodes.
  * @author Sean A. Irvine
  */
-public class A002032 implements Sequence {
+public class A002032 extends Sequence1 {
 
   private static final HashMap<Pair<Long, Long>, Z> F = new HashMap<>();
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023729 Numbers with no 2's in their base-5 expansion.
  * @author Sean A. Irvine
  */
-public class A023729 implements Sequence {
+public class A023729 extends Sequence1 {
 
   private long mN = -1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005540 Numbers k such that 4*3^k - 1 is prime.
  * @author Sean A. Irvine
  */
-public class A005540 implements Sequence {
+public class A005540 extends Sequence1 {
 
   private Z mA = Z.FOUR;
   private long mN = -1;

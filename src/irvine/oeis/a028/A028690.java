@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
 import irvine.util.array.LongDynamicIntArray;
 
@@ -11,7 +11,7 @@ import irvine.util.array.LongDynamicIntArray;
  * A028690 Sorted Galois and Pseudo-Galois numbers.
  * @author Sean A. Irvine
  */
-public class A028690 implements Sequence {
+public class A028690 extends Sequence1 {
 
   private final TreeSet<Z> mQueue = new TreeSet<>();
   private final LongDynamicArray<Z> mGalois = new LongDynamicArray<>();

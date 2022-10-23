@@ -5,13 +5,13 @@ import java.util.Arrays;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005153 Practical numbers: positive integers m such that every k &lt;= sigma(m) is a sum of distinct divisors of m. Also called panarithmic numbers.
  * @author Sean A. Irvine
  */
-public class A005153 implements Sequence {
+public class A005153 extends Sequence1 {
 
   private long mN = 0;
 

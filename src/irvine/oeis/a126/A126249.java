@@ -3,6 +3,7 @@ package irvine.oeis.a126;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014574;
 import irvine.oeis.a037.A037074;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a037.A037074;
  * A126249 p*(p+1)*(p+2)/6 where (p,p+2) are twin primes.
  * @author Georg Fischer
  */
-public class A126249 implements Sequence {
+public class A126249 extends Sequence1 {
 
   final Sequence mA014574 = new A014574();
   final Sequence mA037074 = new A037074();

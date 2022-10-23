@@ -3,13 +3,14 @@ package irvine.oeis.a309;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a071.A071904;
 
 /**
  * A309355 Even numbers k such that k! is divisible by k*(k+1)/2.
  * @author Georg Fischer
  */
-public class A309355 implements Sequence {
+public class A309355 extends Sequence1 {
 
   final Sequence mA071904 = new A071904();
   @Override

@@ -3,13 +3,14 @@ package irvine.oeis.a085;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007814;
 
 /**
  * A085296 Runs of zeros in Catalan sequence modulo 3: consecutive occurrences of binomial(2*k,k)/(k+1) == 0 (mod 3).
  * @author Georg Fischer
  */
-public class A085296 implements Sequence {
+public class A085296 extends Sequence1 {
 
   final Sequence mA007814 = new A007814();
   @Override

@@ -3,6 +3,7 @@ package irvine.oeis.a256;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000959;
 import irvine.oeis.a003.A003309;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a003.A003309;
  * A256486 Difference between n-th Ludic and n-th Lucky number: a(n) = A003309(n) - A000959(n).
  * @author Georg Fischer
  */
-public class A256486 implements Sequence {
+public class A256486 extends Sequence1 {
 
   final Sequence mA000959 = new A000959();
   final Sequence mA003309 = new A003309();

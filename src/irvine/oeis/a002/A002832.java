@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002832 Median Euler numbers.
  * @author Sean A. Irvine
  */
-public class A002832 implements Sequence {
+public class A002832 extends Sequence1 {
 
   // After Barbara Haas Margolius and Mathar.  Recomputed at each stage
   // because of precision of series expansion.

@@ -3,14 +3,14 @@ package irvine.oeis.a054;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.Sort;
 
 /**
  * A054065 Fractal sequence induced by tau: for k &gt;= 1, let p(k) be the permutation of 1,2,...,k obtained by ordering the fractional parts {h*tau} for h=1,2,...,k; then juxtapose p(1),p(2),p(3),...
  * @author Sean A. Irvine
  */
-public class A054065 implements Sequence {
+public class A054065 extends Sequence1 {
 
   // WARNING: Some precision danger here!
 

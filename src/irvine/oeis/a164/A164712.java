@@ -1,13 +1,13 @@
 package irvine.oeis.a164;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A164712 A positive integer n is included if all runs of 0's in binary n are of the same length, and if there are at least two runs of 0's.
  * @author Sean A. Irvine
  */
-public class A164712 implements Sequence {
+public class A164712 extends Sequence1 {
 
   private Z mN = Z.NINE;
 

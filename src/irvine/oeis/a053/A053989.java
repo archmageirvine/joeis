@@ -3,13 +3,14 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038700;
 
 /**
  * A053989 Smallest k such that nk-1 is prime.
  * @author Georg Fischer
  */
-public class A053989 implements Sequence {
+public class A053989 extends Sequence1 {
 
   final Sequence mA038700 = new A038700();
   protected long mN;

@@ -3,13 +3,13 @@ package irvine.oeis.a045;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045771 Number of similar sublattices of index n^2 in root lattice D_4.
  * @author Sean A. Irvine
  */
-public class A045771 implements Sequence {
+public class A045771 extends Sequence1 {
 
   private long mN = 0;
 

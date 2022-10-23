@@ -3,13 +3,13 @@ package irvine.oeis.a053;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053585 If n = p_1^e_1 * ... * p_k^e_k, p_1 &lt; ... &lt; p_k primes, then a(n) = p_k^e_k.
  * @author Sean A. Irvine
  */
-public class A053585 implements Sequence {
+public class A053585 extends Sequence1 {
 
   private long mN = 0;
 

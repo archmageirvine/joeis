@@ -3,13 +3,13 @@ package irvine.oeis.a011;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011254 Numbers k such that phi(k) + sigma(k) = 4*k.
  * @author Sean A. Irvine
  */
-public class A011254 implements Sequence {
+public class A011254 extends Sequence1 {
 
   private Z mN = Z.valueOf(23758);
 

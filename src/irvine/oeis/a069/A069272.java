@@ -2,14 +2,14 @@ package irvine.oeis.a069;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A069272 11-almost primes (generalization of semiprimes).
  * @author Sean A. Irvine
  * @author Georg Fischer
  */
-public class A069272 implements Sequence {
+public class A069272 extends Sequence1 {
 
   private long mN;
   private final int mCount;

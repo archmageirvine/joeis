@@ -3,13 +3,13 @@ package irvine.oeis.a013;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013648 Numbers k such that the periodic part of the continued fraction for sqrt(k) contains a single 1.
  * @author Sean A. Irvine
  */
-public class A013648 implements Sequence {
+public class A013648 extends Sequence1 {
 
   private long mN = 1;
 

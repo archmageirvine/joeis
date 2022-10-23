@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006037 Weird numbers: abundant (A005101) but not pseudoperfect (A005835).
  * @author Sean A. Irvine
  */
-public class A006037 implements Sequence {
+public class A006037 extends Sequence1 {
 
   private Z mN = Z.valueOf(69);
 

@@ -3,6 +3,7 @@ package irvine.oeis.a152;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a038.A038040;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a038.A038040;
  * A152211 a(n) = n * sigma_0(n) + sigma_1(n).
  * @author Georg Fischer
  */
-public class A152211 implements Sequence {
+public class A152211 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA038040 = new A038040();

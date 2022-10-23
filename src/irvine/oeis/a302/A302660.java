@@ -3,6 +3,7 @@ package irvine.oeis.a302;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007652;
 import irvine.oeis.a038.A038194;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a038.A038194;
  * A302660 a(n) = (prime(n) mod 9) + (prime(n) mod 10).
  * @author Georg Fischer
  */
-public class A302660 implements Sequence {
+public class A302660 extends Sequence1 {
 
   final Sequence mA007652 = new A007652();
   final Sequence mA038194 = new A038194();

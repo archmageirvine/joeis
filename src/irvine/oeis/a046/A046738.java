@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046738 Period of Fibonacci 3-step sequence A000073 mod n.
  * @author Sean A. Irvine
  */
-public class A046738 implements Sequence {
+public class A046738 extends Sequence1 {
 
   // After T. D. Noe
 

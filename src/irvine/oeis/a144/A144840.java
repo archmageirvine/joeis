@@ -3,13 +3,14 @@ package irvine.oeis.a144;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a022.A022005;
 
 /**
  * A144840 Numbers k such that the three numbers k-1, k+3 and k+5 are all prime.
  * @author Georg Fischer
  */
-public class A144840 implements Sequence {
+public class A144840 extends Sequence1 {
 
   final Sequence mA022005 = new A022005();
   @Override

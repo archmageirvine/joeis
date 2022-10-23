@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045740 Number of components in all forests on nodes on a circle.
  * @author Sean A. Irvine
  */
-public class A045740 implements Sequence {
+public class A045740 extends Sequence1 {
 
   private long mN = 0;
 

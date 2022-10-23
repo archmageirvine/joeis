@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005236 Barriers for omega(n): numbers n such that, for all m &lt; n, m + omega(m) &lt;= n.
  * @author Sean A. Irvine
  */
-public class A005236 implements Sequence {
+public class A005236 extends Sequence1 {
 
   private long mN = 1;
 

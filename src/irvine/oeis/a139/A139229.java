@@ -3,12 +3,13 @@ package irvine.oeis.a139;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A139229 First differences of perfect numbers A000396, divided by 2.
  * @author Georg Fischer
  */
-public class A139229 implements Sequence {
+public class A139229 extends Sequence1 {
 
   final Sequence mA139228 = new A139228();
   @Override

@@ -3,6 +3,7 @@ package irvine.oeis.a336;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007913;
 import irvine.oeis.a007.A007947;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007947;
  * A336643 Squarefree kernel of n divided by the squarefree part of n: a(n) = rad(n) / core(n).
  * @author Georg Fischer
  */
-public class A336643 implements Sequence {
+public class A336643 extends Sequence1 {
 
   final Sequence mA007913 = new A007913();
   final Sequence mA007947 = new A007947();

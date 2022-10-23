@@ -6,13 +6,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046965 Cos(a(n)) decreases monotonically to -1.
  * @author Sean A. Irvine
  */
-public class A046965 implements Sequence {
+public class A046965 extends Sequence1 {
 
   private final Convergents mC = new Convergents(CR.PI);
   private long mN = 0;

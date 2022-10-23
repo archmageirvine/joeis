@@ -1,14 +1,14 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
  * A000916 a(2n) = n+2, a(2n-1) = smallest number requiring n+2 letters in English.
  * @author Sean A. Irvine
  */
-public class A000916 implements Sequence {
+public class A000916 extends Sequence1 {
 
   private int mN = 0;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046987 Multiply perfect numbers whose average divisor is (a) not an integer and (b) does not divide the number itself.
  * @author Sean A. Irvine
  */
-public class A046987 implements Sequence {
+public class A046987 extends Sequence1 {
 
   private long mN = 119;
 

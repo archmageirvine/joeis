@@ -3,12 +3,13 @@ package irvine.oeis.a164;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A164080 Perfect squares one less than a triangular number.
  * @author Georg Fischer
  */
-public class A164080 implements Sequence {
+public class A164080 extends Sequence1 {
 
   final Sequence mA164055 = new A164055();
   @Override

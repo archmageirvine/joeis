@@ -5,13 +5,13 @@ import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.RedfieldExponentiation;
 import irvine.math.polynomial.StandardMultiply;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A192517 Table read by antidiagonals: T(n,k) = number of multigraphs with n vertices and k edges, with no loops allowed (n &gt;= 1, k &gt;= 0).
  * @author Sean A. Irvine
  */
-public class A192517 implements Sequence {
+public class A192517 extends Sequence1 {
 
   private static final CycleIndex Z2 = SymmetricGroup.create(2).cycleIndex();
   private int mN = 0;

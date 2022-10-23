@@ -1,13 +1,13 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049046 Number of k &gt;= 1 with k! == 1 (mod n).
  * @author Sean A. Irvine
  */
-public class A049046 implements Sequence {
+public class A049046 extends Sequence1 {
 
   private int mN = 0;
 

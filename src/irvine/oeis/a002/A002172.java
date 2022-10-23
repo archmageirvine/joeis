@@ -5,13 +5,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002172 Glaisher's chi numbers chi(p) for p a prime of the form 4m+1.
  * @author Sean A. Irvine
  */
-public class A002172 implements Sequence {
+public class A002172 extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(IntegerField.SINGLETON);
   private final Fast mPrime = new Fast();

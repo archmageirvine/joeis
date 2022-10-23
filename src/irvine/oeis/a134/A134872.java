@@ -3,13 +3,14 @@ package irvine.oeis.a134;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000668;
 
 /**
  * A134872 Product of n-th Mersenne prime and 2^n.
  * @author Georg Fischer
  */
-public class A134872 implements Sequence {
+public class A134872 extends Sequence1 {
 
   final Sequence mA000668 = new A000668();
   protected long mN;

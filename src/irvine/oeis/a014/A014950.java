@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014950 Numbers m such that m divides 10^m - 1.
  * @author Sean A. Irvine
  */
-public class A014950 implements Sequence {
+public class A014950 extends Sequence1 {
 
   private long mN = 0;
 

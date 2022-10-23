@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005528 St\u00f8rmer numbers or arc-cotangent irreducible numbers: numbers k such that the largest prime factor of k^2 + 1 is &gt;= 2*k.
  * @author Sean A. Irvine
  */
-public class A005528 implements Sequence {
+public class A005528 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

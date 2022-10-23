@@ -3,6 +3,7 @@ package irvine.oeis.a346;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a007.A007434;
 import irvine.oeis.a059.A059376;
@@ -11,7 +12,7 @@ import irvine.oeis.a059.A059377;
  * A346761 a(n) = Sum_{d|n} mu(n/d) * binomial(d,4).
  * @author Georg Fischer
  */
-public class A346761 implements Sequence {
+public class A346761 extends Sequence1 {
 
   private final Sequence mA000010 = new A000010();
   private final Sequence mA007434 = new A007434();

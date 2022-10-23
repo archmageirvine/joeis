@@ -2,14 +2,14 @@ package irvine.oeis.a078;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A078923 Possible values of sigma(n)-n.
  * @author Sean A. Irvine
  */
-public class A078923 implements Sequence {
+public class A078923 extends Sequence1 {
 
   private long mN = -1;
   private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();

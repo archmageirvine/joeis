@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049237 Quotient n/phi(n) for n in A007694.
  * @author Sean A. Irvine
  */
-public class A049237 implements Sequence {
+public class A049237 extends Sequence1 {
 
   private long mN = 0;
 

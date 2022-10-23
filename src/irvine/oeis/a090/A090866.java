@@ -3,13 +3,14 @@ package irvine.oeis.a090;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023212;
 
 /**
  * A090866 Primes p == 1 (mod 4) such that (p-1)/4 is prime.
  * @author Georg Fischer
  */
-public class A090866 implements Sequence {
+public class A090866 extends Sequence1 {
 
   final Sequence mA023212 = new A023212();
   @Override

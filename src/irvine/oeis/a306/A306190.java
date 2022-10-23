@@ -3,13 +3,14 @@ package irvine.oeis.a306;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a036.A036689;
 
 /**
  * A306190 a(n) = p^2 - p - 1 where p = prime(n), the n-th prime.
  * @author Georg Fischer
  */
-public class A306190 implements Sequence {
+public class A306190 extends Sequence1 {
 
   final Sequence mA036689 = new A036689();
   @Override

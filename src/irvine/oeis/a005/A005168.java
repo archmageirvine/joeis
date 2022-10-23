@@ -7,13 +7,13 @@ import irvine.math.expression.LiteralZ;
 import irvine.math.expression.Power;
 import irvine.math.expression.Substitution;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005168 n-th derivative of x^x at 1, divided by n.
  * @author Sean A. Irvine
  */
-public class A005168 implements Sequence {
+public class A005168 extends Sequence1 {
 
   private static final Identifier X = new Identifier("x");
   private static final LiteralZ LIT_ONE = new LiteralZ(Z.ONE);

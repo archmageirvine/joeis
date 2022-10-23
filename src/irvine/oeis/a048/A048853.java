@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048853 Number of primes (different from n) that can be produced by altering one digit of decimal expansion of n (without changing the number of digits).
  * @author Sean A. Irvine
  */
-public class A048853 implements Sequence {
+public class A048853 extends Sequence1 {
 
   protected long mN = 0;
 

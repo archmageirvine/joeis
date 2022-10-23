@@ -3,6 +3,7 @@ package irvine.oeis.a279;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a008.A008683;
@@ -11,7 +12,7 @@ import irvine.oeis.a008.A008683;
  * A279914 a(n) = sigma(n) + phi(n) - mu(n).
  * @author Georg Fischer
  */
-public class A279914 implements Sequence {
+public class A279914 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA000203 = new A000203();

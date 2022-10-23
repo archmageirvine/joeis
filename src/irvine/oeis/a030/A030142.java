@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030142 Odd numbers in which parity of digits alternates.
  * @author Sean A. Irvine
  */
-public class A030142 implements Sequence {
+public class A030142 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

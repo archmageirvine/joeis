@@ -2,13 +2,13 @@ package irvine.oeis.a026;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A026254 a(n) = j if n = [ j*sqrt(3) ], else a(n) = k if n = [ (k/2)*(3 + sqrt(3)) ].
  * @author Sean A. Irvine
  */
-public class A026254 implements Sequence {
+public class A026254 extends Sequence1 {
 
   private static final CR SQRT3 = CR.THREE.sqrt();
   private long mJ = 1;

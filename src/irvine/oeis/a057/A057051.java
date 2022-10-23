@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057051 Number of polyominoes of 2n-1 cells that span an n X n square.
  * @author Sean A. Irvine
  */
-public class A057051 implements Sequence {
+public class A057051 extends Sequence1 {
 
   private int mN = 0;
 

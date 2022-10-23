@@ -3,13 +3,13 @@ package irvine.oeis.a057;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057660 a(n) = Sum_{k=1..n} n/gcd(n,k).
  * @author Georg Fischer
  */
-public class A057660 implements Sequence {
+public class A057660 extends Sequence1 {
 
   private int mN = 0;
 

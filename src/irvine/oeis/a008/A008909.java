@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008909 Join 2n points on a line with n arcs above the line; form graph with the arcs as nodes, joining 2 nodes when the arcs cross. a(n) is the number of cases in which the graph is a path.
  * @author Sean A. Irvine
  */
-public class A008909 implements Sequence {
+public class A008909 extends Sequence1 {
 
   private int mN = -1;
   private long mCount = 0;

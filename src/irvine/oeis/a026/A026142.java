@@ -1,14 +1,14 @@
 package irvine.oeis.a026;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A026142 Lexicographically earliest permutation of the positive integers such that for n &gt;= 2, |a(n)-n| = [(a(n)+1)/2].
  * @author Sean A. Irvine
  */
-public class A026142 implements Sequence {
+public class A026142 extends Sequence1 {
 
   private final LongDynamicLongArray mA = new LongDynamicLongArray();
   {

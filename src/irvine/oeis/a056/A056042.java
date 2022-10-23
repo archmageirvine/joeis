@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056042 a(n) = n!/(k!)^2, where k is the largest number such that (k!)^2 divides n!.
  * @author Sean A. Irvine
  */
-public class A056042 implements Sequence {
+public class A056042 extends Sequence1 {
 
   private int mN = 0;
   private int mK = 1;

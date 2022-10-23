@@ -3,6 +3,7 @@ package irvine.oeis.a173;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002822;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002822;
  * A173387 The absolute value of n-th prime number minus n-th number k such that 6*k-+1 is a twin prime pair.
  * @author Georg Fischer
  */
-public class A173387 implements Sequence {
+public class A173387 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA002822 = new A002822();

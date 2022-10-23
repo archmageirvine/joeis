@@ -3,14 +3,14 @@ package irvine.oeis.a118;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007917;
 
 /**
  * A118455 a(1)=1, a(n) = Product_{k=2..n} P(k), where P(k) is the largest prime &lt;= k.
  * @author Georg Fischer
  */
-public class A118455 implements Sequence {
+public class A118455 extends Sequence1 {
 
   private int mN = 0;
   private MemorySequence mSeq = MemorySequence.cachedSequence(new A007917());

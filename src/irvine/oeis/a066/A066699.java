@@ -2,13 +2,13 @@ package irvine.oeis.a066;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A066699 Numbers n such that binomial(2n,n)+1 is prime.
  * @author Georg Fischer
  */
-public class A066699 implements Sequence {
+public class A066699 extends Sequence1 {
 
   private long mN;
   private final int mAdd;

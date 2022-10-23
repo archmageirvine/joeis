@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028970 Numbers represented by quadratic form with Gram matrix [ 3, 1, 1; 1, 3, 1; 1, 1, 3 ].
  * @author Sean A. Irvine
  */
-public class A028970 implements Sequence {
+public class A028970 extends Sequence1 {
 
   private long mN = -1;
 

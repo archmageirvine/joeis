@@ -2,13 +2,13 @@ package irvine.oeis.a162;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A162400 a(n) = the largest square that when represented in binary is a substring within the binary representation of n.
  * @author Sean A. Irvine
  */
-public class A162400 implements Sequence {
+public class A162400 extends Sequence1 {
 
   private long mN = 0;
 

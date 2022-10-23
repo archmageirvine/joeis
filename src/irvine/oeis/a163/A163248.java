@@ -3,13 +3,14 @@ package irvine.oeis.a163;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 import irvine.oeis.a162.A162177;
 /**
  * A163248 Sum of the n-th composite number plus the number of composite numbers less than the n-th noncomposite number.
  * @author Georg Fischer
  */
-public class A163248 implements Sequence {
+public class A163248 extends Sequence1 {
 
   private final Sequence mA002808 = new A002808();
   private final Sequence mA162177 = new A162177();

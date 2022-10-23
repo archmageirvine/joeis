@@ -3,13 +3,14 @@ package irvine.oeis.a285;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a020.A020639;
 
 /**
  * A285109 a(n) = n multiplied by its smallest prime factor; a(1) = 1.
  * @author Georg Fischer
  */
-public class A285109 implements Sequence {
+public class A285109 extends Sequence1 {
 
   final Sequence mA020639 = new A020639();
   protected long mN;

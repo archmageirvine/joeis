@@ -5,12 +5,13 @@ import java.util.HashSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002855 {m + n: m in A002382, n in A002381}.
  * @author Sean A. Irvine
  */
-public class A002855 implements Sequence {
+public class A002855 extends Sequence1 {
 
   private final HashSet<Z> mMembers = new HashSet<>();
   private final Sequence mA = new A002381();

@@ -3,6 +3,7 @@ package irvine.oeis.a249;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000796;
 import irvine.oeis.a001.A001113;
 import irvine.oeis.a001.A001622;
@@ -11,7 +12,7 @@ import irvine.oeis.a001.A001622;
  * A249135 Product of the n-th digit of Pi, the n-th digit of e and the n-th digit of the golden ratio phi.
  * @author Georg Fischer
  */
-public class A249135 implements Sequence {
+public class A249135 extends Sequence1 {
 
   final Sequence mA000796 = new A000796();
   final Sequence mA001113 = new A001113();

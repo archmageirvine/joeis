@@ -3,6 +3,7 @@ package irvine.oeis.a083;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a000.A000010;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000010;
  * A083245 Difference between numbers of related and numbers of unrelated numbers belonging to n: a(n) = A073757(n)-A045763(n) = (n-u(n))-u(n) = n-2*A045763(n) = 2*A073757(n)-n.
  * @author Georg Fischer
  */
-public class A083245 implements Sequence {
+public class A083245 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA000010 = new A000010();

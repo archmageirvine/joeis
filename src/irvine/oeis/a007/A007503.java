@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007503 Number of subgroups of dihedral group: sigma(n) + d(n).
  * @author Sean A. Irvine
  */
-public class A007503 implements Sequence {
+public class A007503 extends Sequence1 {
 
   private long mN = 0;
 

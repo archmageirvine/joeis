@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005934 Highly powerful numbers: numbers with record value of the product of the exponents in prime factorization (A005361).
  * @author Sean A. Irvine
  */
-public class A005934 implements Sequence {
+public class A005934 extends Sequence1 {
 
   private long mN = 0;
   private Z mBest = Z.ZERO;

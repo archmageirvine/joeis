@@ -6,13 +6,13 @@ import irvine.math.LongUtils;
 import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008783 Period of continued fraction representation of (sqrt(4n+1)+1)/2=sqrt(n+sqrt(n+sqrt(n+...))).
  * @author Sean A. Irvine
  */
-public class A008783 implements Sequence {
+public class A008783 extends Sequence1 {
 
   private static final int REQUIRED_REPEATS = 5; // heuristic
   private long mN = 0;

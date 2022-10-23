@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055681 Numbers k that divide sigma(k)-phi(k).
  * @author Sean A. Irvine
  */
-public class A055681 implements Sequence {
+public class A055681 extends Sequence1 {
 
   private long mN = 0;
 

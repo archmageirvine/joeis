@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054403 Result of third stage of sieve of Eratosthenes (after eliminating multiples of 2, 3 and 5).
  * @author Sean A. Irvine
  */
-public class A054403 implements Sequence {
+public class A054403 extends Sequence1 {
 
   private long mN = 1;
 

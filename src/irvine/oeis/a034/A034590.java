@@ -3,14 +3,14 @@ package irvine.oeis.a034;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A034590 Decimal part of square root of 'nine digits anagram' starts with a 'nine digits anagram'.
  * @author Sean A. Irvine
  */
-public class A034590 implements Sequence {
+public class A034590 extends Sequence1 {
 
   private static final CR C = CR.valueOf(1000000000);
   private final Permutation mPermutation = new Permutation(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9});

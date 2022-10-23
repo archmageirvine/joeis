@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046809 Recursive sequence of indices of Proth primes a*2^b - 1.
  * @author Sean A. Irvine
  */
-public class A046809 implements Sequence {
+public class A046809 extends Sequence1 {
 
   private Z mA = null;
 

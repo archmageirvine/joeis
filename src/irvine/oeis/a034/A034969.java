@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034969 a(1) = a(2) = 1, a(n) is largest prime factor of concatenation of a(n - 2) and a(n - 1).
  * @author Sean A. Irvine
  */
-public class A034969 implements Sequence {
+public class A034969 extends Sequence1 {
 
   private Z mA = null;
   private Z mB = null;

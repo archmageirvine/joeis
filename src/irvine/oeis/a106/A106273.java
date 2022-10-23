@@ -1,13 +1,13 @@
 package irvine.oeis.a106;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A106273 Discriminant of the polynomial x^n - x^(n-1) - ... - x - 1.
  * @author Sean A. Irvine
  */
-public class A106273 implements Sequence {
+public class A106273 extends Sequence1 {
 
   protected int mN = 0;
 

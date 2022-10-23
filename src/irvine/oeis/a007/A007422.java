@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007422 Multiplicatively perfect numbers j: product of divisors of j is j^2.
  * @author Sean A. Irvine
  */
-public class A007422 implements Sequence {
+public class A007422 extends Sequence1 {
 
   private long mN = 0;
 

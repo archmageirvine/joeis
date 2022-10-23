@@ -3,13 +3,14 @@ package irvine.oeis.a160;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001316;
 
 /**
  * A160723 First differences of A160722.
  * @author Georg Fischer
  */
-public class A160723 implements Sequence {
+public class A160723 extends Sequence1 {
 
   final Sequence mA001316 = new A001316();
   @Override

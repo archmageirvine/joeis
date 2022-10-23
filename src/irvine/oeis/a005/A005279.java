@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005279 Numbers having divisors d,e with d &lt; e &lt; 2*d.
  * @author Sean A. Irvine
  */
-public class A005279 implements Sequence {
+public class A005279 extends Sequence1 {
 
   private Z mN = Z.FIVE;
 

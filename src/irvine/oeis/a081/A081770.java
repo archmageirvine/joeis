@@ -3,13 +3,14 @@ package irvine.oeis.a081;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a039.A039956;
 
 /**
  * A081770 Numbers twice their squarefree kernel (A007947).
  * @author Georg Fischer
  */
-public class A081770 implements Sequence {
+public class A081770 extends Sequence1 {
 
   final Sequence mA039956 = new A039956();
   @Override

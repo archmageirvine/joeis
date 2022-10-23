@@ -1,13 +1,13 @@
 package irvine.oeis.a133;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A133421 Image of n under one application of the "7x+1" map.
  * @author Sean A. Irvine
  */
-public class A133421 implements Sequence {
+public class A133421 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

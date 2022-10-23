@@ -1,13 +1,13 @@
 package irvine.oeis.a044;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A044903 Base-2 run lengths alternate: odd, even, odd, ...
  * @author Sean A. Irvine
  */
-public class A044903 implements Sequence {
+public class A044903 extends Sequence1 {
 
   private long mN = 0;
 

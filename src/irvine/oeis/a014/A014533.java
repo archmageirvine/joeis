@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014533 Form array in which n-th row is obtained by expanding (1 + x + x^2)^n and taking the 4th column from the center.
  * @author Sean A. Irvine
  */
-public class A014533 implements Sequence {
+public class A014533 extends Sequence1 {
 
   private long mN = 0;
   private Z mA = Z.ONE;

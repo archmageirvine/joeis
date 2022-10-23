@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052490 Numbers n with only one nonzero solution to "numbers that are n times sum of their digits".
  * @author Sean A. Irvine
  */
-public class A052490 implements Sequence {
+public class A052490 extends Sequence1 {
 
   private long mN = 1;
 

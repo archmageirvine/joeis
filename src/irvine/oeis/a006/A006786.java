@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006786 Number of squarefree graphs on n vertices.
  * @author Sean A. Irvine
  */
-public class A006786 implements Sequence {
+public class A006786 extends Sequence1 {
 
   private int mN = 0;
 

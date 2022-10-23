@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050273 Smallest value a for Diophantine 1-triples (a,b,c) ordered by smallest c,b.
  * @author Sean A. Irvine
  */
-public class A050273 implements Sequence {
+public class A050273 extends Sequence1 {
 
   private long mC = 2;
   private long mB = 1;

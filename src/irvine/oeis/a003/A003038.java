@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003038 Dimensions of split simple Lie algebras over any field of characteristic zero.
  * @author Sean A. Irvine
  */
-public class A003038 implements Sequence {
+public class A003038 extends Sequence1 {
 
   private final TreeSet<Z> mSeq = new TreeSet<>();
   {

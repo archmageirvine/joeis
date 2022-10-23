@@ -3,13 +3,13 @@ package irvine.oeis.a019;
 import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019491 Numbers n for which number of distinct prime divisors of binomial(n,k) has local minimum at k = n/2.
  * @author Sean A. Irvine
  */
-public class A019491 implements Sequence {
+public class A019491 extends Sequence1 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
   private long mN = 9;

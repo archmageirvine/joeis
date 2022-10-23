@@ -1,13 +1,13 @@
 package irvine.oeis.a181;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A181123 Numbers that are the differences of two positive cubes.
  * @author Sean A. Irvine
  */
-public class A181123 implements Sequence {
+public class A181123 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

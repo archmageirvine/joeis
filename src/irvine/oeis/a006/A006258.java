@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006258 Numerators of approximations to e.
  * @author Sean A. Irvine
  */
-public class A006258 implements Sequence {
+public class A006258 extends Sequence1 {
 
   private CR mAlpha = null;
   private Z mA00 = Z.ONE;

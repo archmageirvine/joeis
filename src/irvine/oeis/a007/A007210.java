@@ -5,14 +5,14 @@ import java.util.List;
 
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 import irvine.oeis.transform.PartitionTransformSequence;
-import irvine.oeis.Sequence;
 
 /**
  * A007210 Oscillates under partition transform.
  * @author Sean A. Irvine
  */
-public class A007210 implements Sequence {
+public class A007210 extends Sequence1 {
 
   protected final List<Z> mA = new ArrayList<>();
   {

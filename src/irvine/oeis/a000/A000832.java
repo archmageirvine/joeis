@@ -4,13 +4,13 @@ import irvine.math.group.GaloisField;
 import irvine.math.group.GeneralLinearGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000832 Number of switching networks (see Harrison reference for precise definition).
  * @author Sean A. Irvine
  */
-public class A000832 implements Sequence {
+public class A000832 extends Sequence1 {
 
   private int mN = 0;
 

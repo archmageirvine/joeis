@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034772 Dirichlet convolution of d(n) (number of divisors) with Fibonacci numbers.
  * @author Sean A. Irvine
  */
-public class A034772 implements Sequence {
+public class A034772 extends Sequence1 {
 
   private int mN = 0;
 

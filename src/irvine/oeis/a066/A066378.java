@@ -1,13 +1,13 @@
 package irvine.oeis.a066;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A066378 Floor(log(n)) divides n.
  * @author Georg Fischer
  */
-public class A066378 implements Sequence {
+public class A066378 extends Sequence1 {
 
   private long mN = 2;
 

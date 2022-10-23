@@ -7,13 +7,13 @@ import java.util.List;
 import irvine.math.IntegerUtils;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034880 Minimal number of rectangles with integer sides that will form any rectangle with area n.
  * @author Sean A. Irvine
  */
-public class A034880 implements Sequence {
+public class A034880 extends Sequence1 {
 
   // All the component rectangles must be 1 x k for various k, because one of
   // the rectangles to be considered is 1 x n.   Therefore, the solution must

@@ -3,13 +3,13 @@ package irvine.oeis.a011;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011189 Coefficients in expansion of e as Sum_{n&gt;=1} a(n)/(n*n!*(n+1)!), as found by greedy algorithm.
  * @author Sean A. Irvine
  */
-public class A011189 implements Sequence {
+public class A011189 extends Sequence1 {
 
   private int mN = 0;
   private Z mF = Z.ONE;

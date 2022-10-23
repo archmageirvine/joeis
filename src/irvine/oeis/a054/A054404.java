@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054404 Number of daughters to wait before picking in sultan's dowry problem with n daughters.
  * @author Sean A. Irvine
  */
-public class A054404 implements Sequence {
+public class A054404 extends Sequence1 {
 
   private long mN = 0;
 

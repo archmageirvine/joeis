@@ -2,14 +2,14 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000670;
 
 /**
  * A007322 Number of functors of degree n from free Abelian groups to Abelian groups.
  * @author Sean A. Irvine
  */
-public class A007322 implements Sequence {
+public class A007322 extends Sequence1 {
 
   private long mN = 0;
   private Z mF = Z.ONE;

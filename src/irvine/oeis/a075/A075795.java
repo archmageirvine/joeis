@@ -3,13 +3,14 @@ package irvine.oeis.a075;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001222;
 
 /**
  * A075795 Number of k, 0&lt;k&lt;=n, such that the resultant of the k-th cyclotomic polynomial and the n-th cyclotomic polynomial is equal to 1.
  * @author Georg Fischer
  */
-public class A075795 implements Sequence {
+public class A075795 extends Sequence1 {
 
   final Sequence mA001222 = new A001222();
   protected long mN = 0;

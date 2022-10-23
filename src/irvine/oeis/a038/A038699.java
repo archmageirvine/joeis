@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038699 Smallest prime of form n*2^m-1, m &gt;= 0, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
-public class A038699 implements Sequence {
+public class A038699 extends Sequence1 {
 
   private long mN = 0;
 

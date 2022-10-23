@@ -3,12 +3,13 @@ package irvine.oeis.a070;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a028.A028504;
 /**
  * A070254 Perfect squares one more than a palindrome.
  * @author Georg Fischer
  */
-public class A070254 implements Sequence {
+public class A070254 extends Sequence1 {
 
   private final Sequence mA028504 = new A028504();
   @Override

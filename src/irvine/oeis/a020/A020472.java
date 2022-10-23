@@ -1,13 +1,13 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020472 Primes that contain digits 8 and 9 only.
  * @author Sean A. Irvine
  */
-public class A020472 implements Sequence {
+public class A020472 extends Sequence1 {
 
   private long mN = 1;
 

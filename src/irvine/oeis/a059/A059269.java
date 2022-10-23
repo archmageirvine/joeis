@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059269 Numbers m for which the number of divisors, tau(m), is divisible by 3.
  * @author Sean A. Irvine
  */
-public class A059269 implements Sequence {
+public class A059269 extends Sequence1 {
 
   private long mN = 3;
 

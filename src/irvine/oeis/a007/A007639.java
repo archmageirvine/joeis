@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007639 Primes of form 2n^2 - 2n + 19.
  * @author Sean A. Irvine
  */
-public class A007639 implements Sequence {
+public class A007639 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

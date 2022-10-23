@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006061 Star numbers (A003154) that are squares.
  * @author Sean A. Irvine
  */
-public class A006061 implements Sequence {
+public class A006061 extends Sequence1 {
 
   private Z mA = null;
   private Z mB = null;

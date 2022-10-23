@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001670 n appears n times (n even).
  * @author Sean A. Irvine
  */
-public class A001670 implements Sequence {
+public class A001670 extends Sequence1 {
 
   private long mN = 0;
   private long mC = 1;

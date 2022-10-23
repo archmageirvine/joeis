@@ -8,13 +8,13 @@ import irvine.math.group.MultivariatePolynomialField;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005202 Total number of fixed points in planted trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A005202 implements Sequence {
+public class A005202 extends Sequence1 {
 
   protected static final MultivariatePolynomialField<Z> RING = new MultivariatePolynomialField<>(IntegerField.SINGLETON, 2);
   protected static final MultivariatePolynomial<Z> XY = RING.monomial(Z.ONE, new int[] {1, 1});

@@ -4,14 +4,14 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
  * A000052 1-digit numbers arranged in alphabetical order, then the 2-digit numbers arranged in alphabetical order, then the 3-digit numbers, etc.
  * @author Sean A. Irvine
  */
-public class A000052 implements Sequence {
+public class A000052 extends Sequence1 {
 
   private int mLow = 0;
   private int mHigh = 10;

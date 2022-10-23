@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A022551 Numbers that are the sum of 2 squares and a nonnegative cube.
  * @author Sean A. Irvine
  */
-public class A022551 implements Sequence {
+public class A022551 extends Sequence1 {
 
   private long mN = -1;
 

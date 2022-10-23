@@ -1,14 +1,14 @@
 package irvine.oeis.a079;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045918;
 
 /**
  * A079342 Integers n that divide LS(n), where LS is the "Look and Say" function (A045918).
  * @author Sean A. Irvine
  */
-public class A079342 implements Sequence {
+public class A079342 extends Sequence1 {
 
   private long mN = 0;
 

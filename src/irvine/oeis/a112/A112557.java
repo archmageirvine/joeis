@@ -2,13 +2,13 @@ package irvine.oeis.a112;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A112557 Smallest number of stones in Tchoukaillon (or Mancala, or Kalahari) solitaire which make use of (2*n-1)-th hole for n&gt;=1; a bisection of A002491.
  * @author Georg Fischer
  */
-public class A112557 implements Sequence {
+public class A112557 extends Sequence1 {
 
   private int mN;
   private final int mMult;

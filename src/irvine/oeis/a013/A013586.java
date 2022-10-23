@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013586 Smallest prime p such that n divides one of f(p)-1, f(p) or f(p)+1, where f(p) is product of primes &lt;= p, or 0 if no such p exists.
  * @author Sean A. Irvine
  */
-public class A013586 implements Sequence {
+public class A013586 extends Sequence1 {
 
   private int mN = 0;
   private long mP = 1;

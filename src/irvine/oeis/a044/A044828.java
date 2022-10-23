@@ -1,13 +1,13 @@
 package irvine.oeis.a044;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A044828 Positive integers having more base-2 runs of even length than odd.
  * @author Sean A. Irvine
  */
-public class A044828 implements Sequence {
+public class A044828 extends Sequence1 {
 
   private long mN = 0;
 

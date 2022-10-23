@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054892 Smallest prime a(n) such that the sum of n consecutive primes starting with a(n) is divisible by n.
  * @author Sean A. Irvine
  */
-public class A054892 implements Sequence {
+public class A054892 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

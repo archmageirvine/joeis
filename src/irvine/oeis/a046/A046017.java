@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046017 Least k &gt; 1 with k = sum of digits of k^n, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
-public class A046017 implements Sequence {
+public class A046017 extends Sequence1 {
 
   private long mN = 0;
 

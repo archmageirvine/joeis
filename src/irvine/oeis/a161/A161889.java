@@ -1,13 +1,13 @@
 package irvine.oeis.a161;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A161889 a(1)=2. a(n) = the smallest integer &gt; a(n-1) that is coprime to n, and is such that (a(n)-a(n-1)) is not a divisor of n.
  * @author Sean A. Irvine
  */
-public class A161889 implements Sequence {
+public class A161889 extends Sequence1 {
 
   private Z mPrev = null;
   private long mN = 0;

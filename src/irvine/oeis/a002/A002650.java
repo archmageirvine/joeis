@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002650 Quintan primes: p = (x^5 + y^5)/(x + y).
  * @author Sean A. Irvine
  */
-public class A002650 implements Sequence {
+public class A002650 extends Sequence1 {
 
   private final TreeSet<Z> mP = new TreeSet<>();
   private Z mX = Z.ZERO;

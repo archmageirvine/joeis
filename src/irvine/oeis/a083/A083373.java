@@ -5,13 +5,13 @@ import java.util.Arrays;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A083373 2n is equal to the sum of its divisors after the digits have been sorted in descending order (zeros dropped).
  * @author Sean A. Irvine
  */
-public class A083373 implements Sequence {
+public class A083373 extends Sequence1 {
 
   private long mN = 5;
   private final int[] mSpace = new int[10];

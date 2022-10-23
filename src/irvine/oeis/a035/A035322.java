@@ -2,13 +2,13 @@ package irvine.oeis.a035;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035322 Sum of composite divisors of n that are less than n and are not primes nor prime powers.
  * @author Sean A. Irvine
  */
-public class A035322 implements Sequence {
+public class A035322 extends Sequence1 {
 
   private long mN = 0;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007929 Odd numbers containing an even digit.
  * @author Sean A. Irvine
  */
-public class A007929 implements Sequence {
+public class A007929 extends Sequence1 {
 
   private long mN = 19;
 

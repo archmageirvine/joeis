@@ -3,12 +3,13 @@ package irvine.oeis.a297;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a083.A083254;
 /**
  * A297114 M\u00f6bius transform of A294898, where A294898(n) = A005187(n) - A000203(n).
  * @author Georg Fischer
  */
-public class A297114 implements Sequence {
+public class A297114 extends Sequence1 {
 
   private final Sequence mA083254 = new A083254();
   private final Sequence mA297115 = new A297115();

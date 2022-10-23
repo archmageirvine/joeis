@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054412 Numbers n such that, in the prime factorization of n, the product of exponents equals the product of prime factors.
  * @author Sean A. Irvine
  */
-public class A054412 implements Sequence {
+public class A054412 extends Sequence1 {
 
   private long mN = 0;
 

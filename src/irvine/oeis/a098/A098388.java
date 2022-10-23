@@ -3,13 +3,14 @@ package irvine.oeis.a098;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a035.A035100;
 
 /**
  * A098388 a(n) = floor(log_2(prime(n))).
  * @author Georg Fischer
  */
-public class A098388 implements Sequence {
+public class A098388 extends Sequence1 {
 
   final Sequence mA035100 = new A035100();
   @Override

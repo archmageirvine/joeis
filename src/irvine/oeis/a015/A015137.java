@@ -3,14 +3,14 @@ package irvine.oeis.a015;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A015137 Consider Fibonacci-type sequences b(0)=X, b(1)=Y, b(k)=b(k-1)+b(k-2) mod n; all are periodic; sequence gives number of nontrivial periods of minimal length.
  * @author Sean A. Irvine
  */
-public class A015137 implements Sequence {
+public class A015137 extends Sequence1 {
 
   private int mN = 0;
 

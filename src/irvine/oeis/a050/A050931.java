@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050931 Numbers having a prime factor congruent to 1 mod 6.
  * @author Sean A. Irvine
  */
-public class A050931 implements Sequence {
+public class A050931 extends Sequence1 {
 
   private long mN = 6;
 

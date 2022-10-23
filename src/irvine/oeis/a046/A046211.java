@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046211 Number of ternary Lyndon words whose digits sum to 1 (or 2) mod 3; number of trace 1 (or 2) monic irreducible polynomials over GF(3).
  * @author Sean A. Irvine
  */
-public class A046211 implements Sequence {
+public class A046211 extends Sequence1 {
 
   private int mN = 0;
 

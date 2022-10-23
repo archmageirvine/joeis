@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057625 a(n) = n! * sum 1/k! where the sum is over all positive integers k that divide n.
  * @author Sean A. Irvine
  */
-public class A057625 implements Sequence {
+public class A057625 extends Sequence1 {
 
   private int mN = 0;
 

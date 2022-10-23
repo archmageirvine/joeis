@@ -3,13 +3,14 @@ package irvine.oeis.a248;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000992;
 
 /**
  * A248748 Number of rooted binary trees with n leaves and each internal vertex colored in one of two colors.
  * @author Georg Fischer
  */
-public class A248748 implements Sequence {
+public class A248748 extends Sequence1 {
 
   final Sequence mA000992 = new A000992();
   protected long mN;

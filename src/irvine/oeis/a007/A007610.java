@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007610 Sum of n consecutive primes starting at a(n) is prime (or 0 if impossible).
  * @author Sean A. Irvine
  */
-public class A007610 implements Sequence {
+public class A007610 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

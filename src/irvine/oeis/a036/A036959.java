@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036959 Primes with digits (0,...,5) taken as base 6 and converted to base 10.
  * @author Sean A. Irvine
  */
-public class A036959 implements Sequence {
+public class A036959 extends Sequence1 {
 
   private long mN = 0;
 

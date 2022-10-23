@@ -2,13 +2,13 @@ package irvine.oeis.a104;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A104088 Largest prime &lt;= 3^n.
  * @author Sean A. Irvine
  */
-public class A104088 implements Sequence {
+public class A104088 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

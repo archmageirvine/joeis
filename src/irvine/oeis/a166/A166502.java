@@ -3,13 +3,14 @@ package irvine.oeis.a166;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006094;
 
 /**
  * A166502 The n-th power of the product prime(n)*prime(n+1) of 2 successive primes.
  * @author Georg Fischer
  */
-public class A166502 implements Sequence {
+public class A166502 extends Sequence1 {
 
   final Sequence mA006094 = new A006094();
   protected long mN;

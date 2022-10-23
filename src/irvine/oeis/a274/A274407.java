@@ -1,13 +1,13 @@
 package irvine.oeis.a274;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A274407 Numbers n with the property that when divided by their last digit the remainder of the division is their penultimate digit.
  * @author Georg Fischer
  */
-public class A274407 implements Sequence {
+public class A274407 extends Sequence1 {
 
   private long mN = 9;
 

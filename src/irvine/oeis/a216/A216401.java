@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A216401 E.g.f.: arctanh(x*exp(x)).
  * E.g.f.: arctanh(x*exp(x))
  * @author Georg Fischer
  */
-public class A216401 implements Sequence {
+public class A216401 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

@@ -7,13 +7,13 @@ import java.util.HashSet;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007499 Number of cases considered in a particular algorithm for enumerating hexaflexagrams.
  * @author Sean A. Irvine
  */
-public class A007499 implements Sequence {
+public class A007499 extends Sequence1 {
 
   // Based on the description in Thomas J. O'Reilly,
   // "Classifying and Counting Hexaflexagrams"

@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055394 Numbers that are the sum of a positive square and a positive cube.
  * @author Sean A. Irvine
  */
-public class A055394 implements Sequence {
+public class A055394 extends Sequence1 {
 
   private long mN = 1;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007949;
 
 /**
  * A051064 3^a(n) exactly divides 3n. Or, 3-adic valuation of 3n.
  * @author Georg Fischer
  */
-public class A051064 implements Sequence {
+public class A051064 extends Sequence1 {
 
   final Sequence mA007949 = new A007949();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059198 Ratios arising in A005184.
  * @author Sean A. Irvine
  */
-public class A059198 implements Sequence {
+public class A059198 extends Sequence1 {
 
   private Z mN = Z.valueOf(29);
 

@@ -3,12 +3,13 @@ package irvine.oeis.a325;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033879;
 /**
  * A325314 a(n) = n - A162296(n), where A162296(n) is the sum of divisors of n that have a square factor.
  * @author Georg Fischer
  */
-public class A325314 implements Sequence {
+public class A325314 extends Sequence1 {
 
   private final Sequence mA033879 = new A033879();
   private final Sequence mA325313 = new A325313();

@@ -3,14 +3,14 @@ package irvine.oeis.a240;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 
 /**
  * A240962 Number of zeros in the decimal expansion of n^n.
  * @author Georg Fischer
  */
-public class A240962 implements Sequence {
+public class A240962 extends Sequence1 {
 
   protected int mN = 0;
   

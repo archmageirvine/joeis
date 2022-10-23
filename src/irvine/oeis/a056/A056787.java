@@ -8,14 +8,14 @@ import java.util.List;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056787 Number of incongruental unlabeled undirected trees with n nodes on a square lattice and edges of length 1 or sqrt(2) admitted to the 4 nearest or 4 2nd nearest neighbors.
  * @author R. J. Mathar
  * @author Sean A. Irvine (Java port)
  */
-public class A056787 implements Sequence {
+public class A056787 extends Sequence1 {
 
   // 2022-05-09 Some data structures changed to avoid need for sorting
   // 2022-05-12 Made more OO to support A056841

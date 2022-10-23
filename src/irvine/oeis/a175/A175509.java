@@ -3,13 +3,14 @@ package irvine.oeis.a175;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a075.A075818;
 import irvine.oeis.a099.A099981;
 /**
  * A175509 a(n) = ((2*n)-th semiprime) minus 2*(n-th semiprime).
  * @author Georg Fischer
  */
-public class A175509 implements Sequence {
+public class A175509 extends Sequence1 {
 
   private final Sequence mA075818 = new A075818();
   private final Sequence mA099981 = new A099981();

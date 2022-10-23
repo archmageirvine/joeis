@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007603 Power-sum numbers: let n = a_1 a_2 ... a_k be a k-digit number; n is a power-sum number if there are exponents e_1 ... e_m such that n = Sum_{i=1..m} Sum_{j=1..k} a_j^e_i.
  * @author Sean A. Irvine
  */
-public class A007603 implements Sequence {
+public class A007603 extends Sequence1 {
 
   private ArrayList<long[]> mPowers = new ArrayList<>();
   {

@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049318 Number of 3-dimensional integer direction vectors (a,b,c) towards grid points at squared integer distance 2n-1 with a &gt;= 0, b &gt;= 0, c &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A049318 implements Sequence {
+public class A049318 extends Sequence1 {
 
   private long mN = 0;
 

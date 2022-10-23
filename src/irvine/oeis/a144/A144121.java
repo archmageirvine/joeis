@@ -3,12 +3,13 @@ package irvine.oeis.a144;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a138.A138137;
 /**
  * A144121 Number of nonprime parts in the last section of the set of partitions of n.
  * @author Georg Fischer
  */
-public class A144121 implements Sequence {
+public class A144121 extends Sequence1 {
 
   private final Sequence mA138137 = new A138137();
   private final Sequence mA144120 = new A144120();

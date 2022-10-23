@@ -3,13 +3,14 @@ package irvine.oeis.a037;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A037022 Triangle in which row n has the first n digits of sqrt(n) (truncated).
  * @author Sean A. Irvine
  */
-public class A037022 implements Sequence {
+public class A037022 extends Sequence1 {
 
   private Sequence mA = null;
   private long mN = 0;

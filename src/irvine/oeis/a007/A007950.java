@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007950 Binary sieve: delete every 2nd number, then every 4th, 8th, etc.
  * @author Sean A. Irvine
  */
-public class A007950 implements Sequence {
+public class A007950 extends Sequence1 {
 
   // We don't actually want to do this as a real "sieve".
   // Instead using something more incremental but still fast

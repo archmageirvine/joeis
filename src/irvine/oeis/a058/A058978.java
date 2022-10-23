@@ -1,7 +1,7 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 import irvine.util.array.LongDynamicIntArray;
 
@@ -9,7 +9,7 @@ import irvine.util.array.LongDynamicIntArray;
  * A058978 Minimal number of (non-consecutive) Fibonacci numbers needed to get n by addition and subtraction.
  * @author Sean A. Irvine
  */
-public class A058978 implements Sequence {
+public class A058978 extends Sequence1 {
 
   private final DynamicLongArray mF = new DynamicLongArray();
   private final LongDynamicIntArray mA = new LongDynamicIntArray();

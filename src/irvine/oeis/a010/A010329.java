@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A010329 Expressible as C(m,3) + C(n,3) in at least 3 ways.
  * @author Sean A. Irvine
  */
-public class A010329 implements Sequence {
+public class A010329 extends Sequence1 {
 
   private long mN = 3;
   private final TreeMap<Z, Integer> mCount = new TreeMap<>();

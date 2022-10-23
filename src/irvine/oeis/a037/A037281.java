@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037281 Number of iterations of transformation in A037280 needed to reach 1 or a prime, or -1 if no such number exists.
  * @author Sean A. Irvine
  */
-public class A037281 implements Sequence {
+public class A037281 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private Z mN = Z.ZERO;

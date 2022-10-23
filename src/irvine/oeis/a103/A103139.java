@@ -2,14 +2,14 @@ package irvine.oeis.a103;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A103139 Woolbright sequence: the maximum number of kings on an n X n chessboard such that every single king is attacking a number of other kings that is smaller or equal to the number of empty spaces around it.
  * @author Sean A. Irvine
  */
-public class A103139 implements Sequence {
+public class A103139 extends Sequence1 {
 
   private static final int[] DELTA_X = {1, -1, 0, 0, 1, -1, 1, -1};
   private static final int[] DELTA_Y = {0, 0, 1, -1, 1, -1, -1, 1};

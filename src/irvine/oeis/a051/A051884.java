@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051884 Smallest number larger than the previous term which is not a prime but is relatively prime to the previous term.
  * @author Sean A. Irvine
  */
-public class A051884 implements Sequence {
+public class A051884 extends Sequence1 {
 
   private Z mA = null;
 

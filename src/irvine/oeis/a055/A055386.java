@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055386 Smallest factor of (2n)^(2n) + 1.
  * @author Sean A. Irvine
  */
-public class A055386 implements Sequence {
+public class A055386 extends Sequence1 {
 
   private int mN = 0;
 

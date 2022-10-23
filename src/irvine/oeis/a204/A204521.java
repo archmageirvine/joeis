@@ -2,13 +2,14 @@ package irvine.oeis.a204;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a055.A055812;
 
 /**
  * A204521 Square root of floor(A055812(n) / 5).
  * @author Georg Fischer
  */
-public class A204521 implements Sequence {
+public class A204521 extends Sequence1 {
 
   private Sequence mSeq;
   private int mBase;

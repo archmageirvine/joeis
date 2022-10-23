@@ -3,13 +3,14 @@ package irvine.oeis.a331;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a067.A067563;
 
 /**
  * A331999 a(n) is the product of n, the n-th prime and the n-th composite number.
  * @author Georg Fischer
  */
-public class A331999 implements Sequence {
+public class A331999 extends Sequence1 {
 
   final Sequence mA067563 = new A067563();
   protected long mN;

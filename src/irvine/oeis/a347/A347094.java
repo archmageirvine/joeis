@@ -3,13 +3,14 @@ package irvine.oeis.a347;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038040;
 import irvine.oeis.a328.A328722;
 /**
  * A347094 Sum of A038040 (convolution of sigma with Euler phi) and its Dirichlet inverse.
  * @author Georg Fischer
  */
-public class A347094 implements Sequence {
+public class A347094 extends Sequence1 {
 
   private final Sequence mA038040 = new A038040();
   private final Sequence mA328722 = new A328722();

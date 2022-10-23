@@ -3,13 +3,14 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006520;
 
 /**
  * A326300 Steinhaus sums.
  * @author Georg Fischer
  */
-public class A326300 implements Sequence {
+public class A326300 extends Sequence1 {
 
   final Sequence mA006520 = new A006520();
   @Override

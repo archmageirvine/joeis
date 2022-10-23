@@ -3,14 +3,14 @@ package irvine.oeis.a115;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A115241 Square array read by antidiagonals: T(n,p) is the number of linearly independent, homogeneous harmonic polynomials of degree n in p variables (n,p&gt;=1). 
  * <code>T(n,p) = (2n+p-2) * binomial(n+p-3,n-1)/n for n&gt;=1, p&gt;=1.</code>
  * @author Georg Fischer
  */
-public class A115241 implements Sequence {
+public class A115241 extends Sequence1 {
 
   private long mN = 0;
   private long mK = 0;

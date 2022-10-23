@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038051 G.f.: B(x/(1-x)) where B is g.f. of A000169.
  * @author Sean A. Irvine
  */
-public class A038051 implements Sequence {
+public class A038051 extends Sequence1 {
 
   private long mN = -1;
 

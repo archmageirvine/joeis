@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004280 2 together with the odd numbers (essentially the result of the first stage of the sieve of Eratosthenes).
  * @author Sean A. Irvine
  */
-public class A004280 implements Sequence {
+public class A004280 extends Sequence1 {
 
   private long mN = 0;
 

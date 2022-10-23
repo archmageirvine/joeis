@@ -3,13 +3,14 @@ package irvine.oeis.a176;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007947;
 
 /**
  * A176031 a(n) = n^rad(n).
  * @author Georg Fischer
  */
-public class A176031 implements Sequence {
+public class A176031 extends Sequence1 {
 
   final Sequence mA007947 = new A007947();
   protected long mN;

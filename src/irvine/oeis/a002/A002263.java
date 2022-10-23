@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002263 Numbers k such that 25*4^k + 1 is prime.
  * @author Sean A. Irvine
  */
-public class A002263 implements Sequence {
+public class A002263 extends Sequence1 {
 
   private long mN = 0;
   private Z mM = Z.valueOf(25);

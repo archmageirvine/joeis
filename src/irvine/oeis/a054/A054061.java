@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054061 Least k for which the integers Floor(k/(m*(m+1))) for m=1,2,...,n are distinct.
  * @author Sean A. Irvine
  */
-public class A054061 implements Sequence {
+public class A054061 extends Sequence1 {
 
   private long mN = 0;
   private long mK = 0;

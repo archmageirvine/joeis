@@ -3,13 +3,13 @@ package irvine.oeis.a078;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A078926 Number of primitive Pythagorean triangles with perimeter 2n.
  * @author Sean A. Irvine
  */
-public class A078926 implements Sequence {
+public class A078926 extends Sequence1 {
 
   protected long mN = 0;
 

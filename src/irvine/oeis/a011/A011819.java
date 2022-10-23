@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011819 M-sequences m_0,m_1,m_2,m_3 with m_1 &lt; n.
  * @author Sean A. Irvine
  */
-public class A011819 implements Sequence {
+public class A011819 extends Sequence1 {
 
   private long mN = -1;
 

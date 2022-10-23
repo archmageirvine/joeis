@@ -3,13 +3,14 @@ package irvine.oeis.a243;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006530;
 import irvine.oeis.a051.A051119;
 /**
  * A243074 a(1) = 1, a(n) = n/p^(k-1), where p = largest prime dividing n and p^k = highest power of p dividing n.
  * @author Georg Fischer
  */
-public class A243074 implements Sequence {
+public class A243074 extends Sequence1 {
 
   private final Sequence mA006530 = new A006530();
   private final Sequence mA051119 = new A051119();

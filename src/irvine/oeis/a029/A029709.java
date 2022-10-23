@@ -2,13 +2,13 @@ package irvine.oeis.a029;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A029709 Numbers k such that k-th and (k+1)st primes differ by 4.
  * @author Sean A. Irvine
  */
-public class A029709 implements Sequence {
+public class A029709 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP0;

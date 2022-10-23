@@ -5,13 +5,13 @@ import java.util.Set;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059686 Grimm numbers (1): a(n) = largest k so that for each m in {n+1, n+2, ..., n+k} there corresponds a different prime factor p_m.
  * @author Sean A. Irvine
  */
-public class A059686 implements Sequence {
+public class A059686 extends Sequence1 {
 
   private long mN = 0;
   private long mBestK = 0;

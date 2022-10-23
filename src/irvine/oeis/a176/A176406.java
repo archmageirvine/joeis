@@ -3,13 +3,14 @@ package irvine.oeis.a176;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046315;
 
 /**
  * A176406 Odd semiprimes minus 2.
  * @author Georg Fischer
  */
-public class A176406 implements Sequence {
+public class A176406 extends Sequence1 {
 
   final Sequence mA046315 = new A046315();
   @Override

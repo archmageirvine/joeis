@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054873 Number of (S_5 67)-avoiding permutations.
  * @author Sean A. Irvine
  */
-public class A054873 implements Sequence {
+public class A054873 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> C = Polynomial.create(0, 1, 2, 6, 24, 480, -2160);

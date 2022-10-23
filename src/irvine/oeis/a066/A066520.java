@@ -3,12 +3,13 @@ package irvine.oeis.a066;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A066520 Number of primes of the form 4m+3 &lt;= n minus number of primes of the form 4m+1 &lt;= n.
  * @author Georg Fischer
  */
-public class A066520 implements Sequence {
+public class A066520 extends Sequence1 {
 
   final Sequence mA066339 = new A066339();
   final Sequence mA066490 = new A066490();

@@ -6,13 +6,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007860 Maximal matchings in rooted plane trees on n nodes.
  * @author Sean A. Irvine
  */
-public class A007860 implements Sequence {
+public class A007860 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final ArrayList<Polynomial<Z>> C = new ArrayList<>(7);

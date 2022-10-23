@@ -4,13 +4,13 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005837 Lexicographically earliest increasing sequence of positive numbers that contains no 4-term arithmetic progression.
  * @author Sean A. Irvine
  */
-public class A005837 implements Sequence {
+public class A005837 extends Sequence1 {
 
   private final Set<Long> mTerms = new TreeSet<>();
   private long mN = 0;

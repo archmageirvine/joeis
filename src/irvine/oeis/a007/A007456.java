@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007456 Number of days required to spread gossip to n people.
  * @author Sean A. Irvine
  */
-public class A007456 implements Sequence {
+public class A007456 extends Sequence1 {
 
   private long mN = 0;
 

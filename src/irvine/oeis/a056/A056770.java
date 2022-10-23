@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056770 Smallest number that is n times the product of its digits or 0 if impossible.
  * @author Sean A. Irvine
  */
-public class A056770 implements Sequence {
+public class A056770 extends Sequence1 {
 
   // WARNING: Do not use this to extend the sequence.
 

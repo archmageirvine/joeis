@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A036463 Conjecturally, a power of 2 written in base 3 cannot have this many 2's.
  * @author Sean A. Irvine
  */
-public class A036463 implements Sequence {
+public class A036463 extends Sequence1 {
 
   private final TreeSet<Long> mReported = new TreeSet<>();
   private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();

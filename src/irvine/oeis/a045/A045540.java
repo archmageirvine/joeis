@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045540 Numbers whose square contains an equal number of each digit that it contains.
  * @author Sean A. Irvine
  */
-public class A045540 implements Sequence {
+public class A045540 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056050 Semimorphic numbers: n^2 mod the number of digits in n = n^3 mod the number of digits in n.
  * @author Sean A. Irvine
  */
-public class A056050 implements Sequence {
+public class A056050 extends Sequence1 {
 
   private long mMod = 10;
   private long mN = 0;

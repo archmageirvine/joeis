@@ -44,7 +44,7 @@ import java.util.zip.GZIPInputStream;
 import irvine.math.SparseInteger;
 import irvine.math.r.DoubleUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
@@ -52,7 +52,7 @@ import irvine.util.string.StringUtils;
  * @author Vladimir Reshetnikov
  * @author Sean A. Irvine (Java port)
  */
-public class A002845 implements Sequence {
+public class A002845 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
 

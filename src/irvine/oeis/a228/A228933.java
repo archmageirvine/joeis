@@ -1,14 +1,14 @@
 package irvine.oeis.a228;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A228933 Optimal ascending continued fraction expansion of phi-1=1/phi=(sqrt(5)-1)/2 .
  * <code>Flatten[{2, 4, RecurrenceTable[{a[n] == a[n-1]^2 - 2, a[3] == -18}, a, {n, 3, 10}]}]</code>.
  * @author Georg Fischer
  */
-public class A228933 implements Sequence {
+public class A228933 extends Sequence1 {
 
   private int mN;
   private Z mA;

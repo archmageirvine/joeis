@@ -3,13 +3,13 @@ package irvine.oeis.a024;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024813 Positive integers m for which f(m-1) &lt; f(m) &lt; f(m+1), where f(m) = floor(cot(Pi/(2m))).
  * @author Sean A. Irvine
  */
-public class A024813 implements Sequence {
+public class A024813 extends Sequence1 {
 
   private long mN = 3;
 

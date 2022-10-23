@@ -3,13 +3,13 @@ package irvine.oeis.a008;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008273 Number of performances of n fragments in Stockhausen problem.
  * @author Sean A. Irvine
  */
-public class A008273 implements Sequence {
+public class A008273 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

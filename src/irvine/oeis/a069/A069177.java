@@ -3,13 +3,14 @@ package irvine.oeis.a069;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a053.A053574;
 
 /**
  * A069177 Maximal power of 2 that divides Phi(n), or the size of the Sylow 2-subgroup of the group of units mod n.
  * @author Georg Fischer
  */
-public class A069177 implements Sequence {
+public class A069177 extends Sequence1 {
 
   final Sequence mA053574 = new A053574();
   @Override

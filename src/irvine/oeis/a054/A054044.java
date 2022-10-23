@@ -5,13 +5,13 @@ import java.util.Set;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054044 Grundy function for turn-at-most-7-coins game.
  * @author Sean A. Irvine
  */
-public class A054044 implements Sequence {
+public class A054044 extends Sequence1 {
 
   private final Set<Long> mA = new HashSet<>();
   private final Set<Long> mRejects = new HashSet<>();

@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005184 Self-contained numbers: odd numbers k whose Collatz sequence contains a higher multiple of k.
  * @author Sean A. Irvine
  */
-public class A005184 implements Sequence {
+public class A005184 extends Sequence1 {
 
   private Z mN = Z.valueOf(29);
 

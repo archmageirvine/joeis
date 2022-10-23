@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007333 An upper bound on the biplanar crossing number of the complete graph on n nodes.
  * @author Sean A. Irvine
  */
-public class A007333 implements Sequence {
+public class A007333 extends Sequence1 {
 
   private long mN = 0;
 

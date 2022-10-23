@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020487 Antiharmonic numbers: numbers n such that sigma_1(n) divides sigma_2(n).
  * @author Sean A. Irvine
  */
-public class A020487 implements Sequence {
+public class A020487 extends Sequence1 {
 
   private long mN = 0;
 

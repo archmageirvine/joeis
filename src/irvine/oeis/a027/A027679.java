@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027679 When squared gives number composed of digits {2,4,8} with each of these digits appearing at least once.
  * @author Sean A. Irvine
  */
-public class A027679 implements Sequence {
+public class A027679 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

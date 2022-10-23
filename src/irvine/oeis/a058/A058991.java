@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058991 Smallest number not a power of two whose reversal of its n-th power is a prime.
  * @author Sean A. Irvine
  */
-public class A058991 implements Sequence {
+public class A058991 extends Sequence1 {
 
   private long mN = 0;
 

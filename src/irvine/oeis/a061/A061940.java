@@ -1,13 +1,13 @@
 package irvine.oeis.a061;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A061940 Numbers n such that n divides the (right) concatenation of all numbers &lt;= n written in base 11 (most significant digit on right).
  * @author Sean A. Irvine
  */
-public class A061940 implements Sequence {
+public class A061940 extends Sequence1 {
 
   private long mN = 0;
   private final StringBuilder mBase11 = new StringBuilder();

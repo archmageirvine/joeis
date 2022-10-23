@@ -3,13 +3,13 @@ package irvine.oeis.a067;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A067858 J_n(n), where J is the Jordan function, J_n(n) = n^n product{p|n}(1 - 1/p^n), the product is over the distinct primes, p, dividing n.
  * @author Georg Fischer
  */
-public class A067858 implements Sequence {
+public class A067858 extends Sequence1 {
 
   protected long mN;
   

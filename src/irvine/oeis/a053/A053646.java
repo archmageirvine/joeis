@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053646 Distance to nearest power of 2.
  * @author Georg Fischer
  */
-public class A053646 implements Sequence {
+public class A053646 extends Sequence1 {
 
   protected long mN = 0L;
 

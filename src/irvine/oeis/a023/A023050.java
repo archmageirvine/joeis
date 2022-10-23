@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023050 Sum of two coprime cubes in at least three ways.
  * @author Sean A. Irvine
  */
-public class A023050 implements Sequence {
+public class A023050 extends Sequence1 {
 
   private final TreeMap<Z, Integer> mCounts = new TreeMap<>();
   private long mX = 1;

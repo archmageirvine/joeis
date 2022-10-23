@@ -2,13 +2,13 @@ package irvine.oeis.a091;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A091956 Number of increasing subsequences that can be made from the sequence of successive primes.
  * @author Sean A. Irvine
  */
-public class A091956 implements Sequence {
+public class A091956 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

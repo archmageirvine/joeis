@@ -2,14 +2,14 @@ package irvine.oeis.a047;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A047997 Triangle of numbers a(n,k) = number of balance positions when k equal weights are placed at a k-subset of the points {-n, -(n-1), ..., n-1, n} on a centrally pivoted rod.
  *
  * @author Sean A. Irvine
  */
-public class A047997 implements Sequence {
+public class A047997 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

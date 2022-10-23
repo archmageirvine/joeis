@@ -2,13 +2,14 @@ package irvine.oeis.a205;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a204.A204922;
 
 /**
  * A205556 Positions of multiples of 2 in A204922 (differences of Fibonacci numbers).
  * @author Georg Fischer
  */
-public class A205556 implements Sequence {
+public class A205556 extends Sequence1 {
 
   private int mK;
   private Sequence mSeq;

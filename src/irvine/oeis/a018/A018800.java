@@ -2,13 +2,13 @@ package irvine.oeis.a018;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A018800 Smallest prime that begins with n.
  * @author Sean A. Irvine
  */
-public class A018800 implements Sequence {
+public class A018800 extends Sequence1 {
 
   private Fast mPrime = new Fast();
   private long mN = 0;

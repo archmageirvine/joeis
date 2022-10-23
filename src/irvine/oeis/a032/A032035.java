@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032035 Number of increasing rooted 2,3 cacti (triangular cacti with bridges) with n-1 nodes.
  * @author Sean A. Irvine
  */
-public class A032035 implements Sequence {
+public class A032035 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
 

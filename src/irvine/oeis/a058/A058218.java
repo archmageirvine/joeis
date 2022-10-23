@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058218 Positive integers that cannot be represented in the form n=5|ab|+a+b for any choice of nonzero integers a and b (positive or negative).
  * @author Sean A. Irvine
  */
-public class A058218 implements Sequence {
+public class A058218 extends Sequence1 {
 
   private long mN = -1;
 

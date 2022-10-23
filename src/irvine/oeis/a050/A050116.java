@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000032;
 
 /**
  * A050116 Numbers that are the product of two distinct Lucas numbers.
  * @author Sean A. Irvine
  */
-public class A050116 implements Sequence {
+public class A050116 extends Sequence1 {
 
   private final MemorySequence mLucas = MemorySequence.cachedSequence(new A000032());
   private final TreeSet<Z> mA = new TreeSet<>();

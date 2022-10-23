@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023113 Squares that remain square when the digit 6 is appended.
  * @author Sean A. Irvine
  */
-public class A023113 implements Sequence {
+public class A023113 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

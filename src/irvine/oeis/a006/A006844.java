@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006844 a(1)=4, a(2)=5; thereafter a(n) is smallest number that is greater than a(n-1) and having a unique representation as a(j) + a(k) for j&lt;k.
  * @author Sean A. Irvine
  */
-public class A006844 implements Sequence {
+public class A006844 extends Sequence1 {
 
   private long mN = 3;
   private final HashSet<Long> mTerms = new HashSet<>();

@@ -8,13 +8,13 @@ import org.sat4j.specs.TimeoutException;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059756 Erd\u0151s-Woods numbers: the length of an interval of consecutive integers with property that every element has a factor in common with one of the endpoints.
  * @author Sean A. Irvine
  */
-public class A059756 implements Sequence {
+public class A059756 extends Sequence1 {
 
   // After Bertram Felgenhauer
 

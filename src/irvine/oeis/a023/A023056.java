@@ -2,6 +2,7 @@ package irvine.oeis.a023;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001597;
 import irvine.util.RuntimeUtils;
 
@@ -9,7 +10,7 @@ import irvine.util.RuntimeUtils;
  * A023056 a(n) is least k such that k and k+n are adjacent nontrivial powers of positive integers, or 0 if no such k apparently exists.
  * @author Sean A. Irvine
  */
-public class A023056 implements Sequence {
+public class A023056 extends Sequence1 {
 
   private static final int MAX_TERMS = RuntimeUtils.isTest() ? 10000 : 100000;
   private Z mN = Z.ZERO;

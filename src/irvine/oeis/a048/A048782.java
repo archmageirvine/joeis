@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048782 Smallest positive number of "triangular" shuffles of n(n+1)/2 cards needed to restore them to their original order.
  * @author Sean A. Irvine
  */
-public class A048782 implements Sequence {
+public class A048782 extends Sequence1 {
 
   private int mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a011;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011753 Smallest number beginning with n and having n different prime divisors (which may be repeated).
  * @author Sean A. Irvine
  */
-public class A011753 implements Sequence {
+public class A011753 extends Sequence1 {
 
   // This is too slow for more than a few terms
 

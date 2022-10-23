@@ -3,14 +3,14 @@ package irvine.oeis.a061;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A061433 Largest n-digit square.
  * a(n) = floor(sqrt(10^n-1))^2
  * @author Georg Fischer
  */
-public class A061433 implements Sequence {
+public class A061433 extends Sequence1 {
 
   private int mN = 0;
 

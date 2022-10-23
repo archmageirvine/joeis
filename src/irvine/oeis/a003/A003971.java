@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003971 Inverse M\u00f6bius transform of A003960.
  * @author Sean A. Irvine
  */
-public class A003971 implements Sequence {
+public class A003971 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055049 Numbers of the form 5^(2*i+1)*(5*j+-2).
  * @author Sean A. Irvine
  */
-public class A055049 implements Sequence {
+public class A055049 extends Sequence1 {
 
   private final TreeSet<Long> mA = new TreeSet<>();
   private long mN = 10;

@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001261 Number of permutations of length n with 5 consecutive ascending pairs.
  * @author Sean A. Irvine
  */
-public class A001261 implements Sequence {
+public class A001261 extends Sequence1 {
 
   private long mN = -4;
   private Z mB = Z.ZERO;

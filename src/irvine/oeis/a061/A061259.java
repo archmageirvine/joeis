@@ -2,13 +2,13 @@ package irvine.oeis.a061;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A061259 a(n)=Sum_{d|n} d*numbpart(d), where numbpart(d)=number of partitions of d, cf. A000041.
  * @author Sean A. Irvine
  */
-public class A061259 implements Sequence {
+public class A061259 extends Sequence1 {
 
   private int mN = 0;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050795 Numbers n such that n^2 - 1 is expressible as the sum of two nonzero squares in at least one way.
  * @author Sean A. Irvine
  */
-public class A050795 implements Sequence {
+public class A050795 extends Sequence1 {
 
   private long mN = 2;
 

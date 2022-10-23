@@ -5,13 +5,13 @@ import irvine.math.cr.ComputableReals;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050255 A Diaconis-Mosteller approximation to the Birthday problem function.
  * @author Sean A. Irvine
  */
-public class A050255 implements Sequence {
+public class A050255 extends Sequence1 {
 
   private static final CR LN2 = CR.TWO.log();
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

@@ -3,13 +3,13 @@ package irvine.oeis.a175;
 import irvine.factor.prime.Fast;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A175303 a(n) = number of finite sequences using numbers drawn from (1,2,3,...,n), using each number at most once, where each number in a finite sequence is not coprime to the previous number, and each finite sequence must continued if possible. (See example.).
  * @author Sean A. Irvine
  */
-public class A175303 implements Sequence {
+public class A175303 extends Sequence1 {
 
   private int mN = 0;
   private long mPrev = 0;

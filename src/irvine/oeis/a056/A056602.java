@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A056602 Numbers A such that there is an equation of the form (A = Product of m + 1 primes) = (B = Product of m primes) + (C = Product of m primes), where A*B*C is a primorial number (A002110).
  * @author Sean A. Irvine
  */
-public class A056602 implements Sequence {
+public class A056602 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final Fast mPrime = new Fast();

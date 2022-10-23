@@ -2,13 +2,13 @@ package irvine.oeis.a071;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A071941 Nonprimes for which floor(2^n/n) is even.
  * @author Georg Fischer
  */
-public class A071941 implements Sequence {
+public class A071941 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

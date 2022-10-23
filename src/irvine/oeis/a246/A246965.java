@@ -3,13 +3,14 @@ package irvine.oeis.a246;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a138.A138918;
 
 /**
  * A246965 Numbers n such that 19*n-(n+19) is a prime.
  * @author Georg Fischer
  */
-public class A246965 implements Sequence {
+public class A246965 extends Sequence1 {
 
   final Sequence mA138918 = new A138918();
   @Override

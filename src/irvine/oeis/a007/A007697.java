@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007697 Smallest odd number expressible in at least n ways as p+2*m^2 where p is 1 or a prime and m &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A007697 implements Sequence {
+public class A007697 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

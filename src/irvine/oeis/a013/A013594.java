@@ -3,13 +3,13 @@ package irvine.oeis.a013;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013594 Smallest order of cyclotomic polynomial containing n or -n as a coefficient.
  * @author Sean A. Irvine
  */
-public class A013594 implements Sequence {
+public class A013594 extends Sequence1 {
 
   private static final int MAX_COEFF = 1000000; // Way more terms than we can hope to do by this method
   private static final Z ZMAX_COEFF = Z.valueOf(MAX_COEFF);

@@ -8,13 +8,14 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008284;
 
 /**
  * A055889 CIK transform of partition triangle A008284.
  * @author Sean A. Irvine
  */
-public class A055889 implements Sequence {
+public class A055889 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING_Y = new PolynomialRingField<>("y", Rationals.SINGLETON);
   private static final PolynomialRingField<Polynomial<Q>> RING = new PolynomialRingField<>(RING_Y);

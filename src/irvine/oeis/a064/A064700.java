@@ -3,13 +3,13 @@ package irvine.oeis.a064;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A064700 Numbers k that are divisible by the multiplicative digital root of k. 
  * @author Georg Fischer
  */
-public class A064700 implements Sequence {
+public class A064700 extends Sequence1 {
 
   protected long mN;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a317;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014577;
 
 /**
  * A317331 Indices m for which A058304(m) = 1.
  * @author Georg Fischer
  */
-public class A317331 implements Sequence {
+public class A317331 extends Sequence1 {
 
   final Sequence mA014577 = new A014577();
   protected long mN;

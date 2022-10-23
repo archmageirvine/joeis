@@ -2,12 +2,13 @@ package irvine.oeis.a009;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009041 Ordered legs of Pythagorean triangles.
  * @author Sean A. Irvine
  */
-public class A009041 implements Sequence {
+public class A009041 extends Sequence1 {
 
   private final Sequence mSeqA = new A009004();
   private final Sequence mSeqB = new A009012();

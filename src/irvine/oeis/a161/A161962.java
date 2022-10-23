@@ -3,12 +3,13 @@ package irvine.oeis.a161;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001836;
 /**
  * A161962 Odd numbers k such that phi(k) &lt; phi(k+1).
  * @author Georg Fischer
  */
-public class A161962 implements Sequence {
+public class A161962 extends Sequence1 {
 
   private final Sequence mA001836 = new A001836();
   @Override

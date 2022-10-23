@@ -1,13 +1,13 @@
 package irvine.oeis.a155;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A155507 Emirps with digits 1 and 9 only.
  * @author Sean A. Irvine
  */
-public class A155507 implements Sequence {
+public class A155507 extends Sequence1 {
 
   private long mCurrent = 0;
   private long mCurrentLimit = 8;

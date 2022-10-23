@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003003 Size of the largest subset of the numbers [1...n] which doesn't contain a 4-term arithmetic progression.
  * @author Sean A. Irvine
  */
-public class A003003 implements Sequence {
+public class A003003 extends Sequence1 {
 
   private int mN = 0;
   private int mMax = 0;

@@ -1,13 +1,13 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035094 Smallest prime of form (n!)*k + 1.
  * @author Sean A. Irvine
  */
-public class A035094 implements Sequence {
+public class A035094 extends Sequence1 {
 
   private Z mF = Z.ONE;
   private long mN = 0;

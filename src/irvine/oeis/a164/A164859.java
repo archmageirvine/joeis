@@ -1,13 +1,13 @@
 package irvine.oeis.a164;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A164859 a(1)=1. a(n) = the smallest positive integer that, when written in binary, contains both binary a(n-1) and binary n as (possibly overlapping) substrings.
  * @author Sean A. Irvine
  */
-public class A164859 implements Sequence {
+public class A164859 extends Sequence1 {
 
   private Z mPrev = Z.ONE;
   private long mN = 0;

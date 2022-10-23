@@ -3,13 +3,14 @@ package irvine.oeis.a070;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a016.A016014;
 
 /**
  * A070846 Smallest prime == 1 (mod 2n).
  * @author Georg Fischer
  */
-public class A070846 implements Sequence {
+public class A070846 extends Sequence1 {
 
   final Sequence mA016014 = new A016014();
   protected long mN;

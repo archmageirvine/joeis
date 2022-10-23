@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008923 Euler's family of solutions to n = x^4 + y^4 = z^4 + w^4.
  * @author Sean A. Irvine
  */
-public class A008923 implements Sequence {
+public class A008923 extends Sequence1 {
 
   private long mA = 0;
   private long mB = 0;

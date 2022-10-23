@@ -2,13 +2,13 @@ package irvine.oeis.a081;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A081988 Product of digits + 1 is a prime.
  * @author Georg Fischer
  */
-public class A081988 implements Sequence {
+public class A081988 extends Sequence1 {
 
   private Z mK = Z.ZERO;
 

@@ -2,14 +2,14 @@ package irvine.oeis.a002;
 
 import irvine.math.group.GaussianIntegers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A002607 Glaisher's chi_8(n).
  * @author Sean A. Irvine
  */
-public class A002607 implements Sequence {
+public class A002607 extends Sequence1 {
 
   private static final GaussianIntegers GI = GaussianIntegers.SINGLETON;
   private int mN = 0;

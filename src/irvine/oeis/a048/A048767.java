@@ -4,7 +4,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000720;
 
@@ -12,7 +12,7 @@ import irvine.oeis.a000.A000720;
  * A048767 If n = Product (p_j^k_j) then a(n) = Product ( prime(k_j)^pi(p_j) ) where pi is A000720.
  * @author Sean A. Irvine
  */
-public class A048767 implements Sequence {
+public class A048767 extends Sequence1 {
 
   private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A000040());
   private final MemorySequence mPi = MemorySequence.cachedSequence(new A000720());

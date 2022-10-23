@@ -4,13 +4,13 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048743 Triangle a(n,k) = k!*C(n-1,k-1)*Stirling_2(n,k), 1&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
-public class A048743 implements Sequence {
+public class A048743 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

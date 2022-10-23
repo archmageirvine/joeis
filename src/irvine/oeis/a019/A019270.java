@@ -1,14 +1,14 @@
 package irvine.oeis.a019;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
  * A019270 A self-descriptive sequence: positions of vowels in "one, three, seven,...".
  * @author Sean A. Irvine
  */
-public class A019270 implements Sequence {
+public class A019270 extends Sequence1 {
 
   private final StringBuilder mBuilder = new StringBuilder();
   private int mPos = 2;

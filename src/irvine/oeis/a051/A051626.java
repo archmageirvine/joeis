@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051626 Period of decimal representation of 1/n, or 0 if 1/n terminates.
  * @author Sean A. Irvine
  */
-public class A051626 implements Sequence {
+public class A051626 extends Sequence1 {
 
   protected Z mN = Z.ZERO;
 

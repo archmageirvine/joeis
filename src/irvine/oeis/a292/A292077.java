@@ -3,6 +3,7 @@ package irvine.oeis.a292;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000265;
 import irvine.oeis.a007.A007814;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007814;
  * A292077 a(n) = 0 if n=1; a(n) = 1-a(n-2) if n is odd; a(n) = 1-a(n/2) if n is even.
  * @author Georg Fischer
  */
-public class A292077 implements Sequence {
+public class A292077 extends Sequence1 {
 
   final Sequence mA000265 = new A000265();
   final Sequence mA007814 = new A007814();

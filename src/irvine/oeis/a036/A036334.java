@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036334 Number of composite numbers whose juxtaposition of prime factors has length n.
  * @author Sean A. Irvine
  */
-public class A036334 implements Sequence {
+public class A036334 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

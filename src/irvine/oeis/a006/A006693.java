@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006693 Modified Engel expansion of 3/7.
  * @author Sean A. Irvine
  */
-public class A006693 implements Sequence {
+public class A006693 extends Sequence1 {
 
   // Modified Engel expansion
 

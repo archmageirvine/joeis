@@ -3,13 +3,14 @@ package irvine.oeis.a081;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a013.A013928;
 
 /**
  * A081239 #{(i,j): mu(i)*mu(j) = 0, 1&lt;=i,j&lt;=n}, where mu=A008683 (Moebius function).
  * @author Georg Fischer
  */
-public class A081239 implements Sequence {
+public class A081239 extends Sequence1 {
 
   final Sequence mA013928 = new A013928();
   protected long mN;

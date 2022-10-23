@@ -1,14 +1,14 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A046231 Numbers whose cube is palindromic in base 4.
  * @author Sean A. Irvine
  */
-public class A046231 implements Sequence {
+public class A046231 extends Sequence1 {
 
   private long mN = -1;
 

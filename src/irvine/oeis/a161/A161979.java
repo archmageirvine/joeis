@@ -1,13 +1,13 @@
 package irvine.oeis.a161;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A161979 a(1)=1. a(n) = the smallest integer &gt; a(n-1) containing {the string made by reversing the order of the binary digits of n, and removing leading 0's} as a substring when a(n) is written in binary.
  * @author Sean A. Irvine
  */
-public class A161979 implements Sequence {
+public class A161979 extends Sequence1 {
 
   private long mN = 0;
   private Z mA = Z.ONE;

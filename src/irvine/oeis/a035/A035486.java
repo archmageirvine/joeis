@@ -1,13 +1,13 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035486 Kimberling's expulsion array read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A035486 implements Sequence {
+public class A035486 extends Sequence1 {
 
   protected long k(final long i, final long j) {
     long i1 = i;

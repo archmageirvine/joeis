@@ -6,13 +6,13 @@ import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056223 Hankel transform of partition numbers (A000041).
  * @author Sean A. Irvine
  */
-public class A056223 implements Sequence {
+public class A056223 extends Sequence1 {
 
   private int mN = 0;
   final DefaultMatrix<Q> mMat = new DefaultMatrix<>(0, 0, Q.ZERO);

@@ -1,13 +1,13 @@
 package irvine.oeis.a110;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A110370 Floor[ (digits n times n) divided by digits (n times 1)].
  * @author Georg Fischer
  */
-public class A110370 implements Sequence {
+public class A110370 extends Sequence1 {
 
   private int mN = 0;
   private final StringBuilder mDen = new StringBuilder();

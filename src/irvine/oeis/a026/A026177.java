@@ -1,14 +1,14 @@
 package irvine.oeis.a026;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A026177 For n &gt;= 2, let h=floor(n/2), L=n-h, R=n+h; then a(R)=n if n odd or a(L) already defined, otherwise a(L)=n.
  * @author Sean A. Irvine
  */
-public class A026177 implements Sequence {
+public class A026177 extends Sequence1 {
 
   private final LongDynamicLongArray mA = new LongDynamicLongArray();
   {

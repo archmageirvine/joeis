@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002644 Numbers n such that (n^2 + n + 1)/21 is prime.
  * @author Sean A. Irvine
  */
-public class A002644 implements Sequence {
+public class A002644 extends Sequence1 {
 
   private Z mN = Z.SIX;
 

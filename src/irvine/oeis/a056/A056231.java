@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056231 Form an array with 3 rows: row 1 begins with 1; all rows are increasing; each entry is sum of 2 entries above it; each number appears at most once; smallest unused number is appended to first row if possible. Sequence gives row 1.
  * @author Sean A. Irvine
  */
-public class A056231 implements Sequence {
+public class A056231 extends Sequence1 {
 
   protected final long[] mA = new long[3];
   protected final TreeSet<Long> mUsed = new TreeSet<>();

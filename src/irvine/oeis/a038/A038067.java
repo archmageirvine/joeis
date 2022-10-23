@@ -4,14 +4,14 @@ package irvine.oeis.a038;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038067 Product_{k&gt;=1} (1 + x^k)^a(k) = 1 + 2x.
  * Dirichlet convolution of A038063 with the characteristic function of powers of 2 (A209229).
  * @author Georg Fischer
  */
-public class A038067 implements Sequence {
+public class A038067 extends Sequence1 {
 
   protected MemorySequence mSeq = MemorySequence.cachedSequence(new A038063());
   protected int mN = 0;

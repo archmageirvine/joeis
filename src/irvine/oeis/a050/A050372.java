@@ -3,13 +3,14 @@ package irvine.oeis.a050;
 import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 
 /**
  * A050372 Number of ways to factor n into distinct composite factors.
  * @author Sean A. Irvine
  */
-public class A050372 implements Sequence {
+public class A050372 extends Sequence1 {
 
   private long mN = 0;
 

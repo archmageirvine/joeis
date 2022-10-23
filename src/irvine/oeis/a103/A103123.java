@@ -4,14 +4,14 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A103123 1/4-Smith numbers.
  * Copied from A006753.
  * @author Georg Fischer
  */
-public class A103123 implements Sequence {
+public class A103123 extends Sequence1 {
 
   private Z mN;
   private int mNum; // numerator of factor

@@ -3,6 +3,7 @@ package irvine.oeis.a273;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001221;
 import irvine.oeis.a007.A007875;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007875;
  * A273711 The Hadamard product of omega(n) and A007875(n).
  * @author Georg Fischer
  */
-public class A273711 implements Sequence {
+public class A273711 extends Sequence1 {
 
   final Sequence mA001221 = new A001221();
   final Sequence mA007875 = new A007875();

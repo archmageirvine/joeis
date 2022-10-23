@@ -5,13 +5,13 @@ import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056882 Number of n-celled polyominoes without holes, symmetric about diagonal 2.
  * @author Sean A. Irvine
  */
-public class A056882 implements Sequence {
+public class A056882 extends Sequence1 {
 
   private final ParallelHunter mHunter = new ParallelHunter(6,
     () -> new Hunter(Lattices.Z2, true),

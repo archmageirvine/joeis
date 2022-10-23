@@ -3,14 +3,14 @@ package irvine.oeis.a038;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A038527 Same as A038528, except you may rearrange the digits before applying f; sequence gives n such that f(f(f(...(n)))) = 0 or empty.
  * @author Sean A. Irvine
  */
-public class A038527 implements Sequence {
+public class A038527 extends Sequence1 {
 
   private long mN = 0;
 

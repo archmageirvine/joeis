@@ -3,13 +3,14 @@ package irvine.oeis.a308;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a016.A016035;
 
 /**
  * A308473 Sum of numbers &lt; n which have common prime factors with n.
  * @author Georg Fischer
  */
-public class A308473 implements Sequence {
+public class A308473 extends Sequence1 {
 
   final Sequence mA016035 = new A016035();
   protected long mN;

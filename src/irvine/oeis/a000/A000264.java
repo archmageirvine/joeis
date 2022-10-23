@@ -7,13 +7,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000264 Number of 3-edge-connected rooted cubic maps with 2n nodes and a distinguished Hamiltonian cycle.
  * @author Sean A. Irvine
  */
-public class A000264 implements Sequence {
+public class A000264 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 

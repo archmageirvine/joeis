@@ -3,13 +3,13 @@ package irvine.oeis.a035;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035504 Numbers that eventually reach 1 under "x -&gt; sum of cubes of digits of x".
  * @author Sean A. Irvine
  */
-public class A035504 implements Sequence {
+public class A035504 extends Sequence1 {
 
   private long mN = 0;
   private final long[] mCache = new long[1000000]; // Remembers the result for small values

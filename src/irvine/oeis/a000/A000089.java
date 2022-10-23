@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000089 Number of solutions to x^2 + 1 == 0 (mod n).
  * @author Sean A. Irvine
  */
-public class A000089 implements Sequence {
+public class A000089 extends Sequence1 {
 
   private long mN = 0;
 

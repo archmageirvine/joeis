@@ -3,6 +3,7 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a048.A048050;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a048.A048050;
  * A054014 Chowla function of n read modulo (the number of divisors of n).
  * @author Georg Fischer
  */
-public class A054014 implements Sequence {
+public class A054014 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA048050 = new A048050();

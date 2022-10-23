@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000955 A sequence satisfying (a(2n+1) + 1)^3 = Sum_{k=1..2n+1} a(k)^3.
  * @author Sean A. Irvine
  */
-public class A000955 implements Sequence {
+public class A000955 extends Sequence1 {
 
   private Z mOdd = null;
   private Z mEven = null;

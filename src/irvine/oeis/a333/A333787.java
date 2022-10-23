@@ -3,6 +3,7 @@ package irvine.oeis.a333;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003958;
 import irvine.oeis.a006.A006519;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006519;
  * A333787 Fully multiplicative with a(2) = 2 and a(p) = p-1 for odd primes p.
  * @author Georg Fischer
  */
-public class A333787 implements Sequence {
+public class A333787 extends Sequence1 {
 
   final Sequence mA003958 = new A003958();
   final Sequence mA006519 = new A006519();

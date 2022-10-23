@@ -1,13 +1,13 @@
 package irvine.oeis.a145;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A145180 Continued cotangent recurrence a(n+1) = a(n)^3 + 3*a(n) and a(1) = 6.
  * @author Georg Fischer
  */
-public class A145180 implements Sequence {
+public class A145180 extends Sequence1 {
 
   private int mN;
   private Z mParm;

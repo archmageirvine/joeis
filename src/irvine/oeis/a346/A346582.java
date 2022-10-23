@@ -4,13 +4,13 @@ package irvine.oeis.a346;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A346582 a(n) = (1/(8*n)) * Sum_{d|n} mu(n/d) * binomial(8*d,d).
  * @author Georg Fischer
  */
-public class A346582 implements Sequence {
+public class A346582 extends Sequence1 {
 
   private int mN = 0;
 

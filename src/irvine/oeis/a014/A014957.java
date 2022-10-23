@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014957 Positive integers k that divide 16^k - 1.
  * @author Sean A. Irvine
  */
-public class A014957 implements Sequence {
+public class A014957 extends Sequence1 {
 
   private long mN = 0;
 

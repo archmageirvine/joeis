@@ -2,13 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004783 3!(2n-4)!/n!(n-1)! is an integer.
  * @author Sean A. Irvine
  */
-public class A004783 implements Sequence {
+public class A004783 extends Sequence1 {
 
   private Q mA = Q.THREE;
   private long mN = 1;

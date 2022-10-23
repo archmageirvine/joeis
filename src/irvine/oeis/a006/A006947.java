@@ -12,14 +12,14 @@ import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A006947 Two-rowed truncated monotone triangles.
  * @author Sean A. Irvine
  */
-public class A006947 implements Sequence {
+public class A006947 extends Sequence1 {
 
   // After Doron Zeilberger, ROBBINS Maple package
 

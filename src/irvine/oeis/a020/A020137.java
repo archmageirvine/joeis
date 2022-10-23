@@ -1,13 +1,13 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020137 Pseudoprimes to base 8.
  * @author Sean A. Irvine
  */
-public class A020137 implements Sequence {
+public class A020137 extends Sequence1 {
 
   private Z mN = Z.SEVEN;
 

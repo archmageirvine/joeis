@@ -3,13 +3,13 @@ package irvine.oeis.a028;
 import irvine.math.LongUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028415 Numerator of Sum_{k=1..n} 1/phi(k).
  * @author Sean A. Irvine
  */
-public class A028415 implements Sequence {
+public class A028415 extends Sequence1 {
 
   private Q mSum = Q.ZERO;
   private long mN = 0;

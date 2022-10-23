@@ -3,13 +3,13 @@ package irvine.oeis.a019;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019547 Squares which are a decimal concatenation of two or more squares.
  * @author Sean A. Irvine
  */
-public class A019547 implements Sequence {
+public class A019547 extends Sequence1 {
 
   private final TreeSet<Long> mConcatOfSquares = new TreeSet<>();
   private long mN = -1;

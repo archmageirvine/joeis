@@ -1,14 +1,14 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A028504 Palindromes of form k*(k+2); or palindromes 1 less than a square.
  * @author Sean A. Irvine
  */
-public class A028504 implements Sequence {
+public class A028504 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
   

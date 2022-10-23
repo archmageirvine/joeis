@@ -3,13 +3,14 @@ package irvine.oeis.a165;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a037.A037074;
 
 /**
  * A165280 If p and q are twin primes then pq + 1 is always divisible by 3, except for (p,q)=(3,5). Sequence gives values of (pq + 1)/3.
  * @author Georg Fischer
  */
-public class A165280 implements Sequence {
+public class A165280 extends Sequence1 {
 
   final Sequence mA037074 = new A037074();
   /** Construct the sequence. */

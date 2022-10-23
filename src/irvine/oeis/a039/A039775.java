@@ -5,13 +5,13 @@ import java.util.TreeSet;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039775 Number of new fractions m/n, where m is prime, (m,n)=1 and "new" means the value of mn has not occurred before.
  * @author Sean A. Irvine
  */
-public class A039775 implements Sequence {
+public class A039775 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final TreeSet<Long> mSeen = new TreeSet<>();

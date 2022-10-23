@@ -3,13 +3,14 @@ package irvine.oeis.a103;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000139;
 
 /**
  * A103938 Number of rooted non-separable n-edge maps in the plane (planar with a distinguished outside face).
  * @author Georg Fischer
  */
-public class A103938 implements Sequence {
+public class A103938 extends Sequence1 {
 
   final Sequence mA000139 = new A000139();
   protected long mN;

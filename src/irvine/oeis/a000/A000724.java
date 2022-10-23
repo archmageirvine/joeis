@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000724 Invertible Boolean functions of n variables.
  * @author Sean A. Irvine
  */
-public class A000724 implements Sequence {
+public class A000724 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

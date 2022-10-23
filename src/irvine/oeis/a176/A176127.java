@@ -1,13 +1,13 @@
 package irvine.oeis.a176;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A176127 The number of permutations of {1,2,...,n,1,2,...,n} with the property that there are k numbers between the two k's in the set for k=1,...,n.
  * @author Sean A. Irvine
  */
-public class A176127 implements Sequence {
+public class A176127 extends Sequence1 {
 
   // Some algorithms for computing this sequence as discussed in "Counting Skolem Sequences",
   // A. Assarpour, A, Bar-Noy, O. Liu, 2017.

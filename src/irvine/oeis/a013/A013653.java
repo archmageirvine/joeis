@@ -3,13 +3,13 @@ package irvine.oeis.a013;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013653 Period of continued fraction for sqrt(n) contains exactly two 1's and they are not consecutive.
  * @author Sean A. Irvine
  */
-public class A013653 implements Sequence {
+public class A013653 extends Sequence1 {
 
   private long mN = 1;
 

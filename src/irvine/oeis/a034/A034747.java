@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034747 Dirichlet convolution of Fibonacci numbers with sigma(n).
  * @author Sean A. Irvine
  */
-public class A034747 implements Sequence {
+public class A034747 extends Sequence1 {
 
   private int mN = 0;
 

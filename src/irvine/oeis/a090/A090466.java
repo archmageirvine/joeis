@@ -3,13 +3,13 @@ package irvine.oeis.a090;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A090466 Regular figurative or polygonal numbers of order greater than 2.
  * @author Sean A. Irvine
  */
-public class A090466 implements Sequence {
+public class A090466 extends Sequence1 {
 
   private final TreeSet<Z> mPriority = new TreeSet<>();
   private int mN = 3;

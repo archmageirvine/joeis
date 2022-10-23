@@ -3,13 +3,14 @@ package irvine.oeis.a089;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a095.A095278;
 
 /**
  * A089986 Numbers n such that 4n + 7 is prime.
  * @author Georg Fischer
  */
-public class A089986 implements Sequence {
+public class A089986 extends Sequence1 {
 
   final Sequence mA095278 = new A095278();
   @Override

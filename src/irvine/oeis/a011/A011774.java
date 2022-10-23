@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011774 Nonprimes n that divide sigma(n) + phi(n).
  * @author Sean A. Irvine
  */
-public class A011774 implements Sequence {
+public class A011774 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

@@ -2,13 +2,13 @@ package irvine.oeis.a069;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A069014 Integers n at which the difference between e^(Pi*sqrt(n)) and its nearest integer is a new minimum.
  * @author Sean A. Irvine
  */
-public class A069014 implements Sequence {
+public class A069014 extends Sequence1 {
 
   private CR mBest = CR.ONE;
   private long mN = 0;

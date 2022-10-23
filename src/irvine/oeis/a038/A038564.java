@@ -3,13 +3,13 @@ package irvine.oeis.a038;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038564 In the list of divisors of n, each digit 1-9 appears equally often.
  * @author Sean A. Irvine
  */
-public class A038564 implements Sequence {
+public class A038564 extends Sequence1 {
 
   private long mN = 54022;
 

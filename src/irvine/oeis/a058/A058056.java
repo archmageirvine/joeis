@@ -2,14 +2,14 @@ package irvine.oeis.a058;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 
 /**
  * A058056 a(n) = p is the smallest prime such that p = n + h(n)^2 and p is the first prime following h(n)^2. The smallest immediate post-square primes with distance n = p - h(n)^2.
  * @author Sean A. Irvine
  */
-public class A058056 implements Sequence {
+public class A058056 extends Sequence1 {
 
   private final DynamicArray<Z> mA = new DynamicArray<>();
   private final Fast mPrime = new Fast();

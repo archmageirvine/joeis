@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024179 Integer part of ((4th elementary symmetric function of 2,3,...,n+4)/(2+3+...+n+4)).
  * @author Sean A. Irvine
  */
-public class A024179 implements Sequence {
+public class A024179 extends Sequence1 {
 
   private long mN = 0;
 

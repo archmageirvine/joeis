@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058936 Decomposition of Stirling's S(n,2) based on associated numeric partitions.
  * @author Sean A. Irvine
  */
-public class A058936 implements Sequence {
+public class A058936 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

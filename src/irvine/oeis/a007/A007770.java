@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007770 Happy numbers: numbers whose trajectory under iteration of sum of squares of digits map (see A003132) includes 1.
  * @author Sean A. Irvine
  */
-public class A007770 implements Sequence {
+public class A007770 extends Sequence1 {
 
   private static final int CACHE_BITS = 20;
   private Z mN = Z.ZERO;

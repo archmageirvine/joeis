@@ -3,13 +3,14 @@ package irvine.oeis.a122;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a020.A020914;
 
 /**
  * A122437 Allowable values of the "dropping time" of the Collatz (3x+1) iteration.
  * @author Georg Fischer
  */
-public class A122437 implements Sequence {
+public class A122437 extends Sequence1 {
 
   final Sequence mA020914 = new A020914();
   protected long mN;

@@ -3,13 +3,13 @@ package irvine.oeis.a013;
 import irvine.factor.prime.Fast;
 import irvine.factor.prime.Prime;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013607 a(n) = 6^n-prevprime(6^n).
  * @author Sean A. Irvine
  */
-public class A013607 implements Sequence {
+public class A013607 extends Sequence1 {
 
   private Prime mPrime = new Fast();
   private Z mA = Z.ONE;

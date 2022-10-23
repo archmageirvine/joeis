@@ -3,12 +3,13 @@ package irvine.oeis.a094;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a120.A120875;
 /**
  * A094949 Phi(m)*sigma(m), where m is the product of exactly two primes that differ by 2, where phi=A000010, sigma=A000203.
  * @author Georg Fischer
  */
-public class A094949 implements Sequence {
+public class A094949 extends Sequence1 {
 
   private final Sequence mA120875 = new A120875();
   @Override

@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A129700 Number of n-step self-avoiding paths on octant grid starting at octant origin.
  * @author Sean A. Irvine
  */
-public class A129700 implements Sequence {
+public class A129700 extends Sequence1 {
 
   private int mN = -1;
   private final long mC = Lattices.Z2.neighbour(Lattices.Z2.origin(), 0);

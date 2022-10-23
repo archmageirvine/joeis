@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050944 Numbers k such that sigma(k) &gt; sigma(k+1) &gt; sigma(k+2) &gt; sigma(k+3).
  * @author Sean A. Irvine
  */
-public class A050944 implements Sequence {
+public class A050944 extends Sequence1 {
 
   private long mN = 43;
 

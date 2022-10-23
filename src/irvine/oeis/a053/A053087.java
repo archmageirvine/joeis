@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053087 Lowest j for which 2^j kara n is defined.
  * @author Sean A. Irvine
  */
-public class A053087 implements Sequence {
+public class A053087 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

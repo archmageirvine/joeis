@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A002564 Number of different ways one can attack all squares on an n X n chessboard using the minimal number of queens.
  * @author Sean A. Irvine
  */
-public class A002564 implements Sequence {
+public class A002564 extends Sequence1 {
 
   // This code uses a fairly simple backtracking approach to enumerate
   // all possible placements forming a dominating set, up to the minimum

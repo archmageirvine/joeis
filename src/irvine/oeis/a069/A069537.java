@@ -2,13 +2,13 @@ package irvine.oeis.a069;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A069537 Multiples of 2 whose digit sum is 2.
  * @author Georg Fischer
  */
-public class A069537 implements Sequence {
+public class A069537 extends Sequence1 {
 
   private Z mN;
   private int mBase;

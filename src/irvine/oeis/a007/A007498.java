@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007498 Unique period lengths of primes mentioned in A007615.
  * @author Sean A. Irvine
  */
-public class A007498 implements Sequence {
+public class A007498 extends Sequence1 {
 
   private int mN = 0;
 

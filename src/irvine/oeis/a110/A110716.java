@@ -1,13 +1,13 @@
 package irvine.oeis.a110;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A110716 Beginning with 3, concatenation of n successive numbers such that every partial concatenation is a prime.
  * @author Sean A. Irvine
  */
-public class A110716 implements Sequence {
+public class A110716 extends Sequence1 {
 
   private int mN = 0;
   private String mS = initial();

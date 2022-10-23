@@ -1,14 +1,14 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
  * A005224 T is the first, fourth, eleventh, ... letter in this sentence, not counting spaces or commas (Aronson's sequence).
  * @author Sean A. Irvine
  */
-public class A005224 implements Sequence {
+public class A005224 extends Sequence1 {
 
   private final StringBuilder mA = new StringBuilder();
   private final String mLetter;

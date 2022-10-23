@@ -3,13 +3,14 @@ package irvine.oeis.a076;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006450;
 
 /**
  * A076241 Remainder when 2nd order prime pp(n)=A006450(n) is divided by n.
  * @author Georg Fischer
  */
-public class A076241 implements Sequence {
+public class A076241 extends Sequence1 {
 
   final Sequence mA006450 = new A006450();
   protected long mN;

@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003062 Beginnings of periodic unitary aliquot sequences.
  * @author Sean A. Irvine
  */
-public class A003062 implements Sequence {
+public class A003062 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

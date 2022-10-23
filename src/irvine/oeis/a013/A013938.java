@@ -1,13 +1,13 @@
 package irvine.oeis.a013;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013938 a(n) = Sum_{k=1..n} floor(n/k^4).
  * @author Sean A. Irvine
  */
-public class A013938 implements Sequence {
+public class A013938 extends Sequence1 {
 
   private long mN = 0;
 

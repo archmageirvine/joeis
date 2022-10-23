@@ -3,6 +3,7 @@ package irvine.oeis.a066;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002025;
 import irvine.oeis.a002.A002046;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002046;
  * A066539 Difference between larger and smaller terms of n-th amicable pair.
  * @author Georg Fischer
  */
-public class A066539 implements Sequence {
+public class A066539 extends Sequence1 {
 
   final Sequence mA002025 = new A002025();
   final Sequence mA002046 = new A002046();

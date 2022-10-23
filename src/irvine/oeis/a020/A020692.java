@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020692 Numbers of form 7 x^2 + 10 y^2.
  * @author Sean A. Irvine
  */
-public class A020692 implements Sequence {
+public class A020692 extends Sequence1 {
 
   private long mN = -1;
 

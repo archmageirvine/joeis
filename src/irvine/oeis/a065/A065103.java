@@ -2,13 +2,13 @@ package irvine.oeis.a065;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A065103 A level 11 weight 5 form.
  * @author Sean A. Irvine
  */
-public class A065103 implements Sequence {
+public class A065103 extends Sequence1 {
 
   private static final Z Z11 = Z.valueOf(11);
   private long mN = 0;

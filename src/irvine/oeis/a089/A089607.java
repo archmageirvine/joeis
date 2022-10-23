@@ -4,13 +4,14 @@ package irvine.oeis.a089;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002425;
 
 /**
  * A089607 a(n)=((-1)^(n+1)*A002425(n)) modulo 4.
  * @author Georg Fischer
  */
-public class A089607 implements Sequence {
+public class A089607 extends Sequence1 {
 
   final Sequence mA002425 = new A002425();
   protected long mN;

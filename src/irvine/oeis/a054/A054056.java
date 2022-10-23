@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054056 Numbers of form 29+n^2+n or 29+2*n^2.
  * @author Sean A. Irvine
  */
-public class A054056 implements Sequence {
+public class A054056 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   {

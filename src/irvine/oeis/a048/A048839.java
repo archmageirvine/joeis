@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048839 Numbers n dividing P(n)!, where P(n) is the largest prime factor of n.
  * @author Sean A. Irvine
  */
-public class A048839 implements Sequence {
+public class A048839 extends Sequence1 {
 
   private long mN = 1;
 

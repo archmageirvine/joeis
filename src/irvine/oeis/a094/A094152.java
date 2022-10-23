@@ -3,13 +3,13 @@ package irvine.oeis.a094;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.EuclidMullinSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A094152 a(n) is the position of prime 7 in the Euclid-Mullin (EM) sequence of type A000945, if it were started with prime(n) instead of 2.
  * @author Sean A. Irvine
  */
-public class A094152 implements Sequence {
+public class A094152 extends Sequence1 {
 
   private long mP = 1;
   private final Fast mPrime = new Fast();

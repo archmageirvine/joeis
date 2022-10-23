@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A117544 Least k such that Phi(n,k), the n-th cyclotomic polynomial evaluated at k, is prime.
  * @author Sean A. Irvine
  */
-public class A117544 implements Sequence {
+public class A117544 extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = 0;

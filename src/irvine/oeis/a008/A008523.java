@@ -1,14 +1,14 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
  * A008523 Numbers that do not contain the letter 't'.
  * @author Sean A. Irvine
  */
-public class A008523 implements Sequence {
+public class A008523 extends Sequence1 {
 
   private int mN = -1;
 

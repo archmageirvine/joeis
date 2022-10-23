@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054374 Discriminant of Hermite polynomials.
  * @author Sean A. Irvine
  */
-public class A054374 implements Sequence {
+public class A054374 extends Sequence1 {
 
   private int mN = 0;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037809 Number of i such that d(i) &lt;= d(i-1), where Sum_{i=0..m} d(i)*2^i is the base-2 representation of n.
  * @author Sean A. Irvine
  */
-public class A037809 implements Sequence {
+public class A037809 extends Sequence1 {
 
   private long mN = 0;
 

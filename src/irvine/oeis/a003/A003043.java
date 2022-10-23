@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003043 Number of Hamiltonian paths (or Gray codes) on n-cube with a marked starting node.
  * @author Sean A. Irvine
  */
-public class A003043 implements Sequence {
+public class A003043 extends Sequence1 {
 
   private int mN = 0;
   private long mCount = 0;

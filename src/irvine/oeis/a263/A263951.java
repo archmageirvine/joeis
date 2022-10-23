@@ -3,13 +3,14 @@ package irvine.oeis.a263;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a048.A048161;
 
 /**
  * A263951 Square numbers in A070552.
  * @author Georg Fischer
  */
-public class A263951 implements Sequence {
+public class A263951 extends Sequence1 {
 
   final Sequence mA048161 = new A048161();
   @Override

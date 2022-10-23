@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006686 Octavan primes: primes of the form p = x^8 + y^8.
  * @author Sean A. Irvine
  */
-public class A006686 implements Sequence {
+public class A006686 extends Sequence1 {
 
   private final TreeSet<Z> mPriority = new TreeSet<>();
   private long mX = 0;

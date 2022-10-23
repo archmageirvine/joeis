@@ -3,13 +3,14 @@ package irvine.oeis.a060;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a031.A031367;
 
 /**
  * A060280 Number of orbits of length n under the map whose periodic points are counted by A001350.
  * @author Georg Fischer
  */
-public class A060280 implements Sequence {
+public class A060280 extends Sequence1 {
 
   final Sequence mA031367 = new A031367();
   protected long mN;

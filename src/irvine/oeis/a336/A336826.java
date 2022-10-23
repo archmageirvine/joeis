@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A336826 Bogot\u00e1 numbers: numbers k such that k = m*p(m) where p(m) is the digital product of m.
  * @author Sean A. Irvine
  */
-public class A336826 implements Sequence {
+public class A336826 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mN = Z.ZERO;

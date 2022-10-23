@@ -3,14 +3,14 @@ package irvine.oeis.a004;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A004050 Numbers of the form 2^j + 3^k, for j and k &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A004050 implements Sequence {
+public class A004050 extends Sequence1 {
 
   protected int mBase1; 
   protected int mBase2;

@@ -3,13 +3,13 @@ package irvine.oeis.a043;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A043549 Least k for which the integers floor(2*k/m) for m=2,3,...,n are distinct.
  * @author Sean A. Irvine
  */
-public class A043549 implements Sequence {
+public class A043549 extends Sequence1 {
 
   private long mK = 1;
   private long mN = 0;

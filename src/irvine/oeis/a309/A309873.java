@@ -3,13 +3,14 @@ package irvine.oeis.a309;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007814;
 
 /**
  * A309873 Period-doubling turn sequence, +1 when the 2-adic valuation of n is even or -1 when odd.
  * @author Georg Fischer
  */
-public class A309873 implements Sequence {
+public class A309873 extends Sequence1 {
 
   final Sequence mA007814 = new A007814();
   @Override

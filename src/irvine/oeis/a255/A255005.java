@@ -3,6 +3,7 @@ package irvine.oeis.a255;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007605;
 import irvine.oeis.a053.A053666;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a053.A053666;
  * A255005 a(n) = the digit sum of prime(n) + the digit product of prime(n).
  * @author Georg Fischer
  */
-public class A255005 implements Sequence {
+public class A255005 extends Sequence1 {
 
   final Sequence mA007605 = new A007605();
   final Sequence mA053666 = new A053666();

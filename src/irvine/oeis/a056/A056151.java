@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056151 Distribution of maximum inversion table entry.
  * @author Sean A. Irvine
  */
-public class A056151 implements Sequence {
+public class A056151 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

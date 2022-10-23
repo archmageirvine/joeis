@@ -3,13 +3,13 @@ package irvine.oeis.a057;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057868 Denominator of "modified Bernoulli number" b(2n) = Bernoulli(2*n)/(2*n*n!).
  * @author Sean A. Irvine
  */
-public class A057868 implements Sequence {
+public class A057868 extends Sequence1 {
 
   private final BernoulliSequence mB = new BernoulliSequence(1);
   private long mN = 0;

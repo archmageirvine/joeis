@@ -1,14 +1,14 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 
 /**
  * A018820 Numbers k that are the sum of m nonzero squares for all 1 &lt;= m &lt;= k - 14.
  * @author Sean A. Irvine
  */
-public class A018820 implements Sequence {
+public class A018820 extends Sequence1 {
 
   // Track values of k such that n (array index) is representable as sum of k squares
   private final DynamicArray<boolean[]> mRepresentations = new DynamicArray<>();

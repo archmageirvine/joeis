@@ -4,13 +4,13 @@ package irvine.oeis.a188;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A188318 a(n) = [n*r] - [k*r] - [n*r-k*r], where r=1/sqrt(2), k=4, [ ]=floor.
  * @author Georg Fischer
  */
-public class A188318 implements Sequence {
+public class A188318 extends Sequence1 {
   private long mN = 0;
   private static final CR R = CR.ONE.divide(CR.SQRT2);
   private static final CR K = CR.FOUR;

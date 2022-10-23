@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005074 Sum of primes = 2 mod 3 dividing n.
  * @author Sean A. Irvine
  */
-public class A005074 implements Sequence {
+public class A005074 extends Sequence1 {
 
   private long mN = 0;
 

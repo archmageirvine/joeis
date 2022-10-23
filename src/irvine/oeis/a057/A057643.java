@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057643 Least common multiple of all (k+1)'s, where the k's are the positive divisors of n.
  * @author Sean A. Irvine
  */
-public class A057643 implements Sequence {
+public class A057643 extends Sequence1 {
 
   private long mN = 0;
 

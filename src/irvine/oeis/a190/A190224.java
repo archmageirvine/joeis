@@ -4,13 +4,13 @@ package irvine.oeis.a190;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A190224 a(n) = [n*u + n*v] - [n*u] - [n*v], where u=sin(Pi/3), v=cos(Pi/3), and []=floor.
  * @author Georg Fischer
  */
-public class A190224 implements Sequence {
+public class A190224 extends Sequence1 {
   private long mN = 0;
   private static final CR U = CR.PI.divide(CR.THREE).sin();
   private static final CR V = CR.PI.divide(CR.THREE).cos();

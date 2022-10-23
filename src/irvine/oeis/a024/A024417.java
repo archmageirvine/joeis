@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024417 s(n,a(n)) = max{s(n,k): k=1,2,...,n}, n &gt;= 1, where s(n,k) = Stirling numbers of the second kind.
  * @author Sean A. Irvine
  */
-public class A024417 implements Sequence {
+public class A024417 extends Sequence1 {
 
   private long mN = 0;
 

@@ -4,13 +4,13 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006855 Maximum number of edges in an n-node squarefree graph, or, in a graph containing no 4-cycle, or no C_4.
  * @author Sean A. Irvine
  */
-public class A006855 implements Sequence, GraphProcessor {
+public class A006855 extends Sequence1 implements GraphProcessor {
 
   // This is not competitive
 

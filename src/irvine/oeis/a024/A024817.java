@@ -3,13 +3,13 @@ package irvine.oeis.a024;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024817 a(n) = [ 1/(2*t(n+1) - t(n) - t(n+2)) ], where t(n) = tan(Pi/2 - 1/n) satisfies n-1 &lt; t(n) &lt; n for all n &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A024817 implements Sequence {
+public class A024817 extends Sequence1 {
 
   private long mN = 0;
 

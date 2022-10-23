@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A010331 Numbers that are expressible as C(m,5) + C(n,5) in at least 2 ways.
  * @author Sean A. Irvine
  */
-public class A010331 implements Sequence {
+public class A010331 extends Sequence1 {
 
   private long mN = 5;
   private final TreeMap<Z, Integer> mCount = new TreeMap<>();

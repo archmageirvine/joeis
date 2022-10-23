@@ -3,6 +3,7 @@ package irvine.oeis.a067;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001705;
 import irvine.oeis.a062.A062119;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a062.A062119;
  * A067318 Total number of transpositions in all permutations of n letters.
  * @author Georg Fischer
  */
-public class A067318 implements Sequence {
+public class A067318 extends Sequence1 {
 
   final Sequence mA001705 = new A001705();
   final Sequence mA062119 = new A062119();

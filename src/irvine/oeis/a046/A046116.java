@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046116 Numbers n such that no Paley-type Hadamard matrix of order n exists.
  * @author Sean A. Irvine
  */
-public class A046116 implements Sequence {
+public class A046116 extends Sequence1 {
 
   private long mN = 88;
 

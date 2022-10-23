@@ -5,13 +5,13 @@ package irvine.oeis.a190;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A190248 a(n) = [nu+nv+nw]-[nu]-[nv]-[nw], where u=(1+sqrt(5))/2, v=u^2, w=u^3, []=floor.
  * @author Georg Fischer
  */
-public class A190248 implements Sequence {
+public class A190248 extends Sequence1 {
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
   private long mN = 0;
   private static final CR U = CR.ONE.add(CR.FIVE.sqrt()).divide(CR.TWO);

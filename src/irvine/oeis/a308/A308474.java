@@ -3,13 +3,13 @@ package irvine.oeis.a308;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A308474 a(n) = Sum_{k=1..n^2, gcd(n,k) = 1} k.
  * @author Georg Fischer
  */
-public class A308474 implements Sequence {
+public class A308474 extends Sequence1 {
 
   private int mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a107;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A107650 Numbers n such that both numbers n/(d_1*d_2* ...*d_k) and n/(d_1+d_2+ ... +d_k) are prime, where d_1 d_2 ... d_k is the decimal expansion of n.
  * @author Sean A. Irvine
  */
-public class A107650 implements Sequence {
+public class A107650 extends Sequence1 {
 
   private long mN = 11132;
   private final Fast mPrime = new Fast();

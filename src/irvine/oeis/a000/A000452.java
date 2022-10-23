@@ -1,14 +1,14 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A000452 The greedy sequence of integers which avoids 3-term geometric progressions.
  * @author Sean A. Irvine
  */
-public class A000452 implements Sequence {
+public class A000452 extends Sequence1 {
 
   private long mN = 0;
   private final DynamicIntArray mEliminated = new DynamicIntArray();

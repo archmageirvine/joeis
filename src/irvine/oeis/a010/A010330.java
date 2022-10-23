@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A010330 Numbers k such that C(k,3) = C(x,3) + C(y,3) is solvable.
  * @author Sean A. Irvine
  */
-public class A010330 implements Sequence {
+public class A010330 extends Sequence1 {
 
   private long mN = 3;
   private final TreeSet<Z> mExpressible = new TreeSet<>();

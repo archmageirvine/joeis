@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050802 Squares expressible as the sum of two positive cubes in at least one way.
  * @author Sean A. Irvine
  */
-public class A050802 implements Sequence {
+public class A050802 extends Sequence1 {
 
   private long mN = 2;
 

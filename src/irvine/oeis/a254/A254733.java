@@ -3,13 +3,14 @@ package irvine.oeis.a254;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a019.A019555;
 
 /**
  * A254733 a(n) is the least k &gt; n such that n divides k^3.
  * @author Georg Fischer
  */
-public class A254733 implements Sequence {
+public class A254733 extends Sequence1 {
 
   final Sequence mA019555 = new A019555();
   protected long mN;

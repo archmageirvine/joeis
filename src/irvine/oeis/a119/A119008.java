@@ -5,13 +5,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.MatrixField;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A119008 Number of n X n real symmetric (0,1)-matrices with determinant = 1.
  * @author Sean A. Irvine
  */
-public class A119008 implements Sequence {
+public class A119008 extends Sequence1 {
   
   // This is a direct but expensive way of constructing this sequence.
   // It iterates over all symmetric matrices.

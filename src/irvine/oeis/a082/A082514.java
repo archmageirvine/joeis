@@ -4,6 +4,7 @@ package irvine.oeis.a082;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a000.A000720;
 
@@ -11,7 +12,7 @@ import irvine.oeis.a000.A000720;
  * A082514 a(n) = pi(n) + tau(n).
  * @author Georg Fischer
  */
-public class A082514 implements Sequence {
+public class A082514 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA000720 = new A000720();

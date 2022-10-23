@@ -1,14 +1,14 @@
 package irvine.oeis.a322;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A322469 Irregular table: row i = 1, 2, 3, ... starts with 4*i - 1; then, as long as the number is divisible by 3, the next two terms are the result of dividing it by 3, then multiplying it by 2.
  *
  * @author Georg Fischer
  */
-public class A322469 implements Sequence {
+public class A322469 extends Sequence1 {
 
   protected long mN; // current index
   protected long mRow; // current row number

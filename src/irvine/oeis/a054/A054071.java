@@ -3,14 +3,14 @@ package irvine.oeis.a054;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.Sort;
 
 /**
  * A054071 Position of 1 in the permutation of 1,2,...,n obtained by ordering the fractional parts {h*sqrt(2)} for h=1,2,...,n.
  * @author Sean A. Irvine
  */
-public class A054071 implements Sequence {
+public class A054071 extends Sequence1 {
 
   private static final double SQRT2 = Math.sqrt(2);
   private long[] mP = new long[0];

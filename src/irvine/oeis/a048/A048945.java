@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048945 Numbers whose product of divisors is a fourth power.
  * @author Sean A. Irvine
  */
-public class A048945 implements Sequence {
+public class A048945 extends Sequence1 {
 
   // After Charles R Greathouse IV
 

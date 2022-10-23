@@ -2,13 +2,14 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
  * A038663 [ n/F_2 ] + [ n/F_3 ] + [ n/F_4 ] +..., F_n=Fibonacci numbers.
  * @author Sean A. Irvine
  */
-public class A038663 implements Sequence {
+public class A038663 extends Sequence1 {
 
   private long mN = 0;
 

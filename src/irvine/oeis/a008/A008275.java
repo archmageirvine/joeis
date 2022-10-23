@@ -2,13 +2,13 @@ package irvine.oeis.a008;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008275 Triangle read by rows of Stirling numbers of first kind, s(n,k), n &gt;= 1, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
-public class A008275 implements Sequence {
+public class A008275 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

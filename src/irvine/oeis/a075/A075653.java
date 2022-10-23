@@ -3,13 +3,14 @@ package irvine.oeis.a075;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008472;
 
 /**
  * A075653 a(n) = n + sopf(n), where sopf is the sum of the distinct prime factors of n (A008472).
  * @author Georg Fischer
  */
-public class A075653 implements Sequence {
+public class A075653 extends Sequence1 {
 
   final Sequence mA008472 = new A008472();
   protected long mN;

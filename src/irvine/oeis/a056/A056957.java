@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056957 In repeated iterations of function m-&gt;m/2 if m even, m-&gt;3m-1 if m odd, a(n) is minimum value achieved if starting from n.
  * @author Sean A. Irvine
  */
-public class A056957 implements Sequence {
+public class A056957 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

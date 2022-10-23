@@ -2,13 +2,13 @@ package irvine.oeis.a092;
 
 import irvine.math.q.BernoulliSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A092221 Numbers k such that numerator of Bernoulli(2*k) is divisible by 59, the second irregular prime.
  * @author Georg Fischer
  */
-public class A092221 implements Sequence {
+public class A092221 extends Sequence1 {
 
   protected final BernoulliSequence mBern;
   private int mN;

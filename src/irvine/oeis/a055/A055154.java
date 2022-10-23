@@ -2,14 +2,14 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055154 Triangle read by rows: T(n,k) = number of k-covers of a labeled n-set, k=1..2^n-1.
  * T(n,k) = Sum_{j=0..n} (-1)^j*C(n, j)*C(2^(n-j)-1, k), k=1..2^n-1.
  * @author Georg Fischer
  */
-public class A055154 implements Sequence {
+public class A055154 extends Sequence1 {
 
   private int mRow;
   private int mCol;

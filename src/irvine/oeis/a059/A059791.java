@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059791 Numbers n such that floor(phi^n) is prime, where phi = golden ratio.
  * @author Sean A. Irvine
  */
-public class A059791 implements Sequence {
+public class A059791 extends Sequence1 {
 
   private long mN = 1;
 

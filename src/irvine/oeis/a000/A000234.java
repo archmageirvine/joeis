@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000234 Partitions into non-integral powers (see Comments for precise definition).
  * @author Sean A. Irvine
  */
-public class A000234 implements Sequence {
+public class A000234 extends Sequence1 {
 
   private static final double THIRD = 1.0 / 3.0;
 

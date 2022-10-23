@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046149 Smallest n-digit number with maximal multiplicative persistence A014553.
  * @author Sean A. Irvine
  */
-public class A046149 implements Sequence {
+public class A046149 extends Sequence1 {
 
   private static final long[] SMALL = {0, 77, 679, 6788, 68889, 168889, 2677889, 26888999, 126888999,
     3778888999L, 13778888999L, 113778888999L, 1113778888999L, 11113778888999L};

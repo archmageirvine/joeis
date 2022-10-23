@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014665 Number of new fractions m/n &lt; 1, where (m,n)=1 and "new" means the value of m*n has not occurred before.
  * @author Sean A. Irvine
  */
-public class A014665 implements Sequence {
+public class A014665 extends Sequence1 {
 
   private final TreeSet<Z> mSeen = new TreeSet<>();
   private long mDen = 0;

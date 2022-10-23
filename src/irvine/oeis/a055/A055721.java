@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import irvine.factor.factor.Jaguar;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055721 Numbers n such that sigma_2(n)/n &gt; sigma_2(k)/k for all k &lt; n.
  * @author Sean A. Irvine
  */
-public class A055721 implements Sequence {
+public class A055721 extends Sequence1 {
 
   private Q mBest = Q.ZERO;
   private long mN = 0;

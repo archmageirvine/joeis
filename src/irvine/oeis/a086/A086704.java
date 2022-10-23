@@ -3,6 +3,7 @@ package irvine.oeis.a086;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001359;
 import irvine.oeis.a006.A006512;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006512;
  * A086704 Greater of the twin primes raised to their lesser twins.
  * @author Georg Fischer
  */
-public class A086704 implements Sequence {
+public class A086704 extends Sequence1 {
 
   final Sequence mA001359 = new A001359();
   final Sequence mA006512 = new A006512();

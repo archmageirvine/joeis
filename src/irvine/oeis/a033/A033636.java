@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033636 a(n) = (n-1)! * Product_{i=1..n-1} ((2*n)!-2*i-1).
  * @author Sean A. Irvine
  */
-public class A033636 implements Sequence {
+public class A033636 extends Sequence1 {
 
   private Z mF = Z.ONE;
   private Z mF2 = Z.ONE;

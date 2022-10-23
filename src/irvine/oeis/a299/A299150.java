@@ -3,6 +3,7 @@ package irvine.oeis.a299;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006519;
 import irvine.oeis.a046.A046644;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a046.A046644;
  * A299150 Denominators of the positive solution to n = Sum_{d|n} a(d) * a(n/d).
  * @author Georg Fischer
  */
-public class A299150 implements Sequence {
+public class A299150 extends Sequence1 {
 
   final Sequence mA006519 = new A006519();
   final Sequence mA046644 = new A046644();

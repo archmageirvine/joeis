@@ -3,6 +3,7 @@ package irvine.oeis.a134;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002260;
 import irvine.oeis.a003.A003056;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a003.A003056;
  * A134483 Triangle read by rows: T(n,k) = 2n + k - 2; 1 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
-public class A134483 implements Sequence {
+public class A134483 extends Sequence1 {
 
   final Sequence mA002260 = new A002260();
   final Sequence mA003056 = new A003056();

@@ -3,13 +3,13 @@ package irvine.oeis.a036;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036241 a(1)=1, a(2)=2, a(3)=3; for n &gt;= 3, a(n) is smallest number such that all a(i) for 1 &lt;= i &lt;= n are distinct, all a(i)+a(j) for 1 &lt;= i &lt; j &lt;= n are distinct and all a(i)+a(j)+a(k) for 1 &lt;= i &lt; j &lt; k &lt;= n are distinct.
  * @author Sean A. Irvine
  */
-public class A036241 implements Sequence {
+public class A036241 extends Sequence1 {
 
   private final TreeSet<Z> mA1 = new TreeSet<>();
   private final TreeSet<Z> mA2 = new TreeSet<>();

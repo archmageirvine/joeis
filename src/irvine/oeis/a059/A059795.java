@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059795 Numbers n such that n^2 starts with the reverse of n.
  * @author Sean A. Irvine
  */
-public class A059795 implements Sequence {
+public class A059795 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,13 +2,14 @@ package irvine.oeis.a024;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a020.A020882;
 
 /**
  * A024357 Consider primitive Pythagorean triangles (A^2 + B^2 = C^2, (A, B) = 1, A &lt;= B); sequence gives values of AUBUC, sorted.
  * @author Sean A. Irvine
  */
-public class A024357 implements Sequence {
+public class A024357 extends Sequence1 {
 
   // Not a strict union due to repeated elements
   private final Sequence mASeq = new A024355();

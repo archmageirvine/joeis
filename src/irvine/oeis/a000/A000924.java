@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import irvine.math.LongUtils;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000924 Class number of Q(sqrt(-n)), n squarefree.
  * @author Sean A. Irvine
  */
-public class A000924 implements Sequence {
+public class A000924 extends Sequence1 {
 
   private long mN = 0;
 

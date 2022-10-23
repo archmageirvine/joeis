@@ -5,14 +5,14 @@ import java.util.TreeMap;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A054753 Numbers which are the product of a prime and the square of a different prime (p^2 * q).
  * @author Sean A. Irvine
  */
-public class A054753 implements Sequence {
+public class A054753 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final TreeMap<Long, Pair<Long, Long>> mA = new TreeMap<>();

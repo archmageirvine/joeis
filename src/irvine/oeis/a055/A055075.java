@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055075 Numbers expressible as the sum of no more than 5 squares of composite numbers, allowing repetitions.
  * @author Sean A. Irvine
  */
-public class A055075 implements Sequence {
+public class A055075 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 15;

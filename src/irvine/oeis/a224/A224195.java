@@ -3,12 +3,13 @@ package irvine.oeis.a224;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a081.A081118;
 /**
  * A224195 Ordered sequence of numbers of form (2^n - 1)*2^m + 1 where n &gt;= 1, m &gt;= 1.
  * @author Georg Fischer
  */
-public class A224195 implements Sequence {
+public class A224195 extends Sequence1 {
 
   private final Sequence mA081118 = new A081118();
   @Override

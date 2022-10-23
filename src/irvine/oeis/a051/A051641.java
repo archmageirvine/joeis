@@ -6,14 +6,14 @@ import java.util.TreeMap;
 import irvine.math.MutableInteger;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A051641 Palindromic binomial coefficients C(n,k) for k &gt;= 2.
  * @author Sean A. Irvine
  */
-public class A051641 implements Sequence {
+public class A051641 extends Sequence1 {
 
   private final TreeMap<Z, MutableInteger> mPriority = new TreeMap<>();
   private long mN = 2;

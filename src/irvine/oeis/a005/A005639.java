@@ -5,14 +5,14 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 
 /**
  * A005639 Number of self-converse oriented graphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A005639 implements Sequence {
+public class A005639 extends Sequence1 {
 
   private int mN = 0;
 

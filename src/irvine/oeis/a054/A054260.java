@@ -6,14 +6,14 @@ import java.util.List;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A054260 Smallest prime that contains all of the first n primes as substrings.
  * @author Sean A. Irvine
  */
-public class A054260 implements Sequence {
+public class A054260 extends Sequence1 {
 
   protected final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final Fast mPrime = new Fast();

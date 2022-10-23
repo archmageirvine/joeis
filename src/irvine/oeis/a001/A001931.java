@@ -8,14 +8,14 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
 /**
  * A001931 Number of fixed 3-dimensional polycubes with n cells; lattice animals in the simple cubic lattice (6 nearest neighbors), face-connected cubes.
  * @author Sean A. Irvine
  */
-public class A001931 implements Sequence {
+public class A001931 extends Sequence1 {
 
   // Based on 2D version at https://rosettacode.org/wiki/Free_polyominoes_enumeration#Java
   // Not designed to be competitive with leading programs for this problem

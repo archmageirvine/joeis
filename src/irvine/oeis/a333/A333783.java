@@ -3,6 +3,7 @@ package irvine.oeis.a333;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001065;
 import irvine.oeis.a006.A006022;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006022;
  * A333783 a(n) = sigma(n) - A332993(n).
  * @author Georg Fischer
  */
-public class A333783 implements Sequence {
+public class A333783 extends Sequence1 {
 
   final Sequence mA001065 = new A001065();
   final Sequence mA006022 = new A006022();

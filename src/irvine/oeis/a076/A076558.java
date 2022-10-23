@@ -3,13 +3,14 @@ package irvine.oeis.a076;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001221;
 import irvine.oeis.a051.A051904;
 /**
  * A076558 a(n) = r * min(e_1, ..., e_r), where n = p_1^e_1 . .... p_r^e_r is the canonical prime factorization of n, a(1) = 0.
  * @author Georg Fischer
  */
-public class A076558 implements Sequence {
+public class A076558 extends Sequence1 {
 
   private final Sequence mA001221 = new A001221();
   private final Sequence mA051904 = new A051904();

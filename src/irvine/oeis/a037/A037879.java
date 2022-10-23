@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037879 a(n) = (1/2)*Sum{|d(i)-e(i)|} where Sum{d(i)*2^i} is the base-2 representation of n and {e(i)} are digits {d(i)} in nondecreasing order.
  * @author Sean A. Irvine
  */
-public class A037879 implements Sequence {
+public class A037879 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a157;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A157908 Nonprimes whose digits are all square.
  * @author Georg Fischer
  */
-public class A157908 implements Sequence {
+public class A157908 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

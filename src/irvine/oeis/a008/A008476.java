@@ -3,13 +3,13 @@ package irvine.oeis.a008;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008476 If n = Product (p_j^k_j) then a(n) = Sum (k_j^p_j).
  * @author Sean A. Irvine
  */
-public class A008476 implements Sequence {
+public class A008476 extends Sequence1 {
 
   private long mN = 0;
 

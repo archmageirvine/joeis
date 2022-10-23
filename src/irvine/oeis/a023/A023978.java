@@ -3,13 +3,13 @@ package irvine.oeis.a023;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023978 Sum of exponents in prime-power factorization of multinomial coefficient M(3n; n,n,n).
  * @author Sean A. Irvine
  */
-public class A023978 implements Sequence {
+public class A023978 extends Sequence1 {
 
   private long mN = 0;
 

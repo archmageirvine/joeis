@@ -2,13 +2,13 @@ package irvine.oeis.a018;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A018205 Let m=n+1; a(n) is the least positive integer s, not a multiple of m, such that if 1&lt;=d&lt;=m and (d,m)=1, then d divides one of the numbers s-m, s-2m, ..., s-m[ s/m ].
  * @author Sean A. Irvine
  */
-public class A018205 implements Sequence {
+public class A018205 extends Sequence1 {
 
   private long mN = 1;
 

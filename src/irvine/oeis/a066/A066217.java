@@ -3,13 +3,13 @@ package irvine.oeis.a066;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A066217 Numbers not ending in 0 which are the product of two substrings of themselves. The substrings may be equal, but each must be greater than 1.
  * @author Sean A. Irvine
  */
-public class A066217 implements Sequence {
+public class A066217 extends Sequence1 {
 
   private long mN = 24;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020641 a(n)-th prime is sum of first k primes for some k.
  * @author Sean A. Irvine
  */
-public class A020641 implements Sequence {
+public class A020641 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mA = Z.ZERO;

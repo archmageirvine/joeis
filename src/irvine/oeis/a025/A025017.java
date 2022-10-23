@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025017 a(n) = least 2k such that p is the least prime in a Goldbach partition of 2k, where p = prime(n).
  * @author Sean A. Irvine
  */
-public class A025017 implements Sequence {
+public class A025017 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

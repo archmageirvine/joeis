@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002255 Numbers n such that 7*4^n + 1 is prime.
  * @author Sean A. Irvine
  */
-public class A002255 implements Sequence {
+public class A002255 extends Sequence1 {
 
   private long mN = 0;
   private Z mM = Z.SEVEN;

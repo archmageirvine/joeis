@@ -4,13 +4,13 @@ package irvine.oeis.a308;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A308943 a(n) = Product_{d|n} binomial(n,d).
  * @author Georg Fischer
  */
-public class A308943 implements Sequence {
+public class A308943 extends Sequence1 {
 
   private int mN = 0;
 

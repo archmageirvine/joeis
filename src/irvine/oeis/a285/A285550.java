@@ -3,13 +3,14 @@ package irvine.oeis.a285;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a019.A019544;
 
 /**
  * A285550 Numbers k such that the digits of k^2 are squares.
  * @author Georg Fischer
  */
-public class A285550 implements Sequence {
+public class A285550 extends Sequence1 {
 
   final Sequence mA019544 = new A019544();
   @Override

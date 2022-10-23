@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005652 Sum of 2 terms is never a Fibonacci number.
  * @author Sean A. Irvine
  */
-public class A005652 implements Sequence {
+public class A005652 extends Sequence1 {
 
   private static final CR SQRT5 = CR.FIVE.sqrt();
   private static final CR PHI = SQRT5.add(CR.ONE).divide(CR.TWO);

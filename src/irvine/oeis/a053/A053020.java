@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053020 Numbers which, when expressed as a sum of distinct primes with maximum product, use a non-maximal number of primes.
  * @author Sean A. Irvine
  */
-public class A053020 implements Sequence {
+public class A053020 extends Sequence1 {
 
   // This is very slow...
 

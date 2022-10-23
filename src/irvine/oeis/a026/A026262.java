@@ -2,13 +2,13 @@ package irvine.oeis.a026;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A026262 Beginning with the natural numbers, swap [ k*sqrt(5) ] and [ (k/4)*(5 + sqrt(5)) ], for all k &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A026262 implements Sequence {
+public class A026262 extends Sequence1 {
 
   private static final CR SQRT5 = CR.FIVE.sqrt();
   private long mA = 0;

@@ -3,13 +3,14 @@ package irvine.oeis.a214;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038049;
 
 /**
  * A214225 E.g.f. satisfies: A(x) = x/(1 - tanh(A(x))).
  * @author Georg Fischer
  */
-public class A214225 implements Sequence {
+public class A214225 extends Sequence1 {
 
   final Sequence mA038049 = new A038049();
   @Override

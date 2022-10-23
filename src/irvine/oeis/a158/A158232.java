@@ -1,13 +1,13 @@
 package irvine.oeis.a158;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A158232 Numbers which yield primes when "13" is prefixed or appended: N natural number is a member of the sequence, if P="13N" (prefixed 13) and A="N13" (appended 13) are prime.
  * @author Georg Fischer
  */
-public class A158232 implements Sequence {
+public class A158232 extends Sequence1 {
 
   private int mN = 0;
 

@@ -4,13 +4,13 @@ import irvine.math.MemoryFunction1;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058926 Number of independent dominating sets in recursive trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A058926 implements Sequence {
+public class A058926 extends Sequence1 {
 
   private int mN = 0;
 

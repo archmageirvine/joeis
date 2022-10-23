@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A051045 Number of distinct resistances possible for n resistors with resistances 1, 2, ..., n, each connected in series or parallel to the previous one.
  * @author Sean A. Irvine
  */
-public class A051045 implements Sequence {
+public class A051045 extends Sequence1 {
 
   // Brute force, all permutations, all arrangements
 

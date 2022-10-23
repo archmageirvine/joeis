@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046844 Primes of form n*2^n+(n+1).
@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class A046844 implements Sequence {
+public class A046844 extends Sequence1 {
 
   private int mN = -1;
 

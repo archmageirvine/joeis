@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006243 Extracting a square root.
  * @author Sean A. Irvine
  */
-public class A006243 implements Sequence {
+public class A006243 extends Sequence1 {
 
   private Z mA = null;
 

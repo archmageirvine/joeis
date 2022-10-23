@@ -3,13 +3,14 @@ package irvine.oeis.a097;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 
 /**
  * A097454 a(n) = (number of nonprimes &lt;= n) - (number of primes &lt;= n).
  * @author Georg Fischer
  */
-public class A097454 implements Sequence {
+public class A097454 extends Sequence1 {
 
   final Sequence mA000720 = new A000720();
   protected long mN;

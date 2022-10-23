@@ -2,13 +2,13 @@ package irvine.oeis.a153;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A153429 Numbers k such that k! is equal to the sum of two consecutive primes.
  * @author Sean A. Irvine
  */
-public class A153429 implements Sequence {
+public class A153429 extends Sequence1 {
 
   private long mN = 3;
   private Z mF = Z.SIX;

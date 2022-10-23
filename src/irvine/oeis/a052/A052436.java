@@ -11,13 +11,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.SelfAvoidingCycler;
 import irvine.math.lattice.Walker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052436 Number of canonical polygons of n sides.
  * @author Sean A. Irvine
  */
-public class A052436 implements Sequence {
+public class A052436 extends Sequence1 {
 
   // Uses the canonicalization procedure described by Lars Blomberg
 

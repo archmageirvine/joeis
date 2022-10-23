@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034118 Fractional part of cube root of a(n) starts with digit 2.
  * @author Sean A. Irvine
  */
-public class A034118 implements Sequence {
+public class A034118 extends Sequence1 {
 
   private Z mN = Z.ONE;
 

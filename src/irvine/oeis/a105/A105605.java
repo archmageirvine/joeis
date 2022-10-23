@@ -3,13 +3,13 @@ package irvine.oeis.a105;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A105605 An Aitken-like array: see Comments for definition.
  * @author Sean A. Irvine
  */
-public class A105605 implements Sequence {
+public class A105605 extends Sequence1 {
 
   private ArrayList<Integer> mCurrent = new ArrayList<>();
   private int mPositionInRow = 0;

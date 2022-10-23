@@ -1,13 +1,13 @@
 package irvine.oeis.a103;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A103528 Sum_{k = 1..n-1 such that n == k (mod 2^k)} 2^(k-1).
  * @author Georg Fischer
  */
-public class A103528 implements Sequence {
+public class A103528 extends Sequence1 {
 
   private int mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001914 Cyclic numbers: 10 is a quadratic residue modulo p and class of mantissa is 2.
  * @author Sean A. Irvine
  */
-public class A001914 implements Sequence {
+public class A001914 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.ONE;

@@ -3,13 +3,13 @@ package irvine.oeis.a035;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035332 Smallest number not the concatenation of consecutive earlier terms.
  * @author Sean A. Irvine
  */
-public class A035332 implements Sequence {
+public class A035332 extends Sequence1 {
 
   private final TreeSet<Long> mForbidden = new TreeSet<>();
   private long mN = 0;

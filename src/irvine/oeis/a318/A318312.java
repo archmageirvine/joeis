@@ -3,13 +3,14 @@ package irvine.oeis.a318;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008481;
 
 /**
  * A318312 Multiplicative with a(p^e) = 2^A000041(e).
  * @author Georg Fischer
  */
-public class A318312 implements Sequence {
+public class A318312 extends Sequence1 {
 
   final Sequence mA008481 = new A008481();
   @Override

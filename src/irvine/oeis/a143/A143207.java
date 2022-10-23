@@ -3,12 +3,13 @@ package irvine.oeis.a143;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051037;
 /**
  * A143207 Numbers with distinct prime factors 2, 3, and 5.
  * @author Georg Fischer
  */
-public class A143207 implements Sequence {
+public class A143207 extends Sequence1 {
 
   private final Sequence mA051037 = new A051037();
   @Override

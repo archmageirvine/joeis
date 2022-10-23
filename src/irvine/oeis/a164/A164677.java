@@ -3,6 +3,7 @@ package irvine.oeis.a164;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001511;
 import irvine.oeis.a034.A034947;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a034.A034947;
  * A164677 For a binary reflected Gray code, the (Hamming/Euclidean) distance between 2 subsequent points x and y is 1, say in coordinate k. If y has a 1 in coordinate k and x has a 0, than (x,y) is indicated by k, if it is the other way around, (x,y) is indicated by -k. The sequence has a fractal character such that G(d+1) = G(d) d+1 R(G(d)) where R(G(d)) alters d --&gt; -d and leaves all other numbers invariant.
  * @author Georg Fischer
  */
-public class A164677 implements Sequence {
+public class A164677 extends Sequence1 {
 
   final Sequence mA001511 = new A001511();
   final Sequence mA034947 = new A034947();

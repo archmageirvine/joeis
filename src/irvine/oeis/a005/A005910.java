@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005910 Truncated octahedral numbers: 16*n^3 - 33*n^2 + 24*n - 6.
  * @author Sean A. Irvine
  */
-public class A005910 implements Sequence {
+public class A005910 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

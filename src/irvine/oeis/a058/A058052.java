@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058052 Sum of the distances between the 2^n vertices in the De Bruijn Graphs on words of length n on alphabet {0,1}.
  * @author Sean A. Irvine
  */
-public class A058052 implements Sequence {
+public class A058052 extends Sequence1 {
 
   // After Michael S. Branicky
 

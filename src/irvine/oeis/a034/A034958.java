@@ -2,14 +2,14 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007504;
 
 /**
  * A034958 Divide primes into groups with prime(n) elements and add together.
  * @author Sean A. Irvine
  */
-public class A034958 implements Sequence {
+public class A034958 extends Sequence1 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A007504());
   private int mN = 0;

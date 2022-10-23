@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000978 Wagstaff numbers: numbers k such that (2^k + 1)/3 is prime.
  * @author Sean A. Irvine
  */
-public class A000978 implements Sequence {
+public class A000978 extends Sequence1 {
 
   private static final long[] KNOWN_CASES = {3, 5, 7, 11, 13, 17, 19, 23, 31, 43, 61, 79, 101, 127, 167, 191, 199, 313, 347, 701, 1709, 2617, 3539, 5807, 10501, 10691, 11279, 12391, 14479, 42737, 83339, 95369, 117239, 127031, 138937, 141079, 267017, 269987, 374321, 986191, 4031399};
 

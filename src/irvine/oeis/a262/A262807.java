@@ -3,13 +3,14 @@ package irvine.oeis.a262;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a070.A070826;
 import irvine.oeis.a071.A071148;
 /**
  * A262807 a(n) = (Product_{k=1..n} prime(k+1)) mod (Sum_{k=1..n} prime(k+1)) where prime(k) is the k-th prime number.
  * @author Georg Fischer
  */
-public class A262807 implements Sequence {
+public class A262807 extends Sequence1 {
 
   private final Sequence mA070826 = new A070826();
   private final Sequence mA071148 = new A071148();

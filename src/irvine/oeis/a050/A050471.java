@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050471 a(n) = sum_{d|n, n/d=1 mod 4} d^3 - sum_{d|n, n/d=3 mod 4} d^3.
  * @author Sean A. Irvine
  */
-public class A050471 implements Sequence {
+public class A050471 extends Sequence1 {
 
   private long mN = 0;
 

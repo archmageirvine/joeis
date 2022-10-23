@@ -3,13 +3,14 @@ package irvine.oeis.a139;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000668;
 
 /**
  * A139257 Twice Mersenne primes A000668(n).
  * @author Georg Fischer
  */
-public class A139257 implements Sequence {
+public class A139257 extends Sequence1 {
 
   final Sequence mA000668 = new A000668();
   @Override

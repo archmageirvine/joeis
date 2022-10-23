@@ -3,13 +3,14 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008834;
 
 /**
  * A053150 Cube root of largest cube dividing n.
  * @author Georg Fischer
  */
-public class A053150 implements Sequence {
+public class A053150 extends Sequence1 {
 
   final Sequence mA008834 = new A008834();
   @Override

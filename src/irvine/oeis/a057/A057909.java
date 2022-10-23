@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057909 Numbers k such that 4^k + k is prime.
  * @author Sean A. Irvine
  */
-public class A057909 implements Sequence {
+public class A057909 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private long mN = 0;

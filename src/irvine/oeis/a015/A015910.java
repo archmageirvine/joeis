@@ -2,14 +2,14 @@ package irvine.oeis.a015;
 // manually 2021-09-29
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015910 a(n) = 2^n mod n. 
  * @author Sean A. Irvine
  * @author Georg Fischer
  */
-public class A015910 implements Sequence {
+public class A015910 extends Sequence1 {
 
   protected Z mN;
   protected Z mParm;

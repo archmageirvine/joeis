@@ -3,13 +3,14 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008620;
 
 /**
  * A052380 a(n) = D is the smallest distance (D) between 2 non-overlapping prime twins differing by d=2n; these twins are [p,p+d] or [p+D,p+D+d] and p &gt; 3.
  * @author Georg Fischer
  */
-public class A052380 implements Sequence {
+public class A052380 extends Sequence1 {
 
   final Sequence mA008620 = new A008620();
 

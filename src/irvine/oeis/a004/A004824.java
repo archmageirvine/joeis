@@ -2,13 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004824 Denominator of 2^n*(3*n-3)!/( ((n-1)!)^3 * (2*n)! ).
  * @author Sean A. Irvine
  */
-public class A004824 implements Sequence {
+public class A004824 extends Sequence1 {
 
   private Q mA = Q.ONE;
   private long mN = 0;

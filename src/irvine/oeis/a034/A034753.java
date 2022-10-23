@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034753 Dirichlet convolution of 3^(n-1) with sigma(n).
  * @author Sean A. Irvine
  */
-public class A034753 implements Sequence {
+public class A034753 extends Sequence1 {
 
   private int mN = 0;
 

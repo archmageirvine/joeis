@@ -2,13 +2,13 @@ package irvine.oeis.a145;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A145609 Numerator of the polynomial A_l(x) = sum_{d=1..l-1} x^(l-d)/d for index l=2n+1 evaluated at x=1.
  * @author Georg Fischer
  */
-public class A145609 implements Sequence {
+public class A145609 extends Sequence1 {
 
   private int mN;
   private Z mX;

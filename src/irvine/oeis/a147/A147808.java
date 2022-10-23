@@ -3,13 +3,13 @@ package irvine.oeis.a147;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A147808 Sum of n-digit numbers which are balanced: the first [n/2] digits have the same sum as the last [n/2] digits.
  * @author Sean A. Irvine
  */
-public class A147808 implements Sequence {
+public class A147808 extends Sequence1 {
 
   private int mN = 0;
   private Z[] mS1 = {Z.ZERO, Z.ONE, Z.ONE, Z.ONE, Z.ONE, Z.ONE, Z.ONE, Z.ONE, Z.ONE, Z.ONE};

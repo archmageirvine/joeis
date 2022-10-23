@@ -4,14 +4,14 @@ import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A058241 Number of sets of n positive integers that can be placed along a circle such that the set of sums of adjacent integers forms { 1, 2, ..., n^2-n+1 }.
  * @author Sean A. Irvine
  */
-public class A058241 implements Sequence {
+public class A058241 extends Sequence1 {
 
   // To generate exactly all of 1, 2, .., n^2-n+1 every number in the circle must be distinct;
   // because there are n sums of 1 terms, n sums of 2 terms. n sums of 3 terms, and so on up

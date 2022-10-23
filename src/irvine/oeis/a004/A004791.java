@@ -2,13 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004791 Numbers k &gt;= 2 such that if 1 &lt;= j &lt; k then fractional part of log k &gt; fractional part of log j.
  * @author Sean A. Irvine
  */
-public class A004791 implements Sequence {
+public class A004791 extends Sequence1 {
 
   private long mN = 1;
   private CR mLast = CR.ZERO;

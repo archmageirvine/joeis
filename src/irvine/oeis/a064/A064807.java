@@ -3,13 +3,13 @@ package irvine.oeis.a064;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A064807 Numbers which are divisible by their digital root (A010888). 
  * @author Georg Fischer
  */
-public class A064807 implements Sequence {
+public class A064807 extends Sequence1 {
 
   protected long mN;
 

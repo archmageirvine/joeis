@@ -3,13 +3,14 @@ package irvine.oeis.a068;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a056.A056700;
 
 /**
  * A068814 Primes with a 2 followed by (possibly zero) 1's.
  * @author Georg Fischer
  */
-public class A068814 implements Sequence {
+public class A068814 extends Sequence1 {
 
   final Sequence mA056700 = new A056700();
   @Override

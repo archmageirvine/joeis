@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A105072 Number of permutations on [n] whose local maxima are in ascending order.
  * E.g.f.: exp((6*x-1+exp(2*x))/4)
  * @author Georg Fischer
  */
-public class A105072 implements Sequence {
+public class A105072 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

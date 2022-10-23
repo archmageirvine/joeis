@@ -3,13 +3,14 @@ package irvine.oeis.a229;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001221;
 
 /**
  * A229109 a(n) = n plus the number of its distinct prime factors.
  * @author Georg Fischer
  */
-public class A229109 implements Sequence {
+public class A229109 extends Sequence1 {
 
   final Sequence mA001221 = new A001221();
   protected long mN;

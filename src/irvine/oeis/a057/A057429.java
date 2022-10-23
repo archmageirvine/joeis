@@ -2,14 +2,14 @@ package irvine.oeis.a057;
 
 import irvine.math.group.GaussianIntegers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A057429 Numbers n such that (1+i)^n - 1 times its conjugate is prime.
  * @author Sean A. Irvine
  */
-public class A057429 implements Sequence {
+public class A057429 extends Sequence1 {
 
   private static final GaussianIntegers G = GaussianIntegers.SINGLETON;
   private static final Pair<Z, Z> C0 = new Pair<>(Z.ONE, Z.ONE);

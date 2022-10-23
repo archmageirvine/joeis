@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006354 Expansion of a cusp form of weight 8 for Gamma_1(6).
  * @author Sean A. Irvine
  */
-public class A006354 implements Sequence {
+public class A006354 extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> Z2 = RING.monomial(Z.ONE, 2);

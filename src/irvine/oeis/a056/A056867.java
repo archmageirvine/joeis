@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056867 Nilpotent numbers: n such that every group of order n is nilpotent.
  * @author Sean A. Irvine
  */
-public class A056867 implements Sequence {
+public class A056867 extends Sequence1 {
 
   private long mN = 0;
 

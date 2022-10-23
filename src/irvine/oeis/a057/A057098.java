@@ -8,14 +8,14 @@ import java.util.TreeMap;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
 /**
  * A057098 Shortest side of a Pythagorean triangle (ordered by the product of the sides).
  * @author Sean A. Irvine
  */
-public class A057098 implements Sequence {
+public class A057098 extends Sequence1 {
 
   // Cf. A057096.
 

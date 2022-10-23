@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055618 a(n) = A*10^(4*n-1) + B with A = 990*(10^(4*n)-1)/9999 and B = 990000*(10^(4*n-4)-1)/9999 + 100.
  * @author Sean A. Irvine
  */
-public class A055618 implements Sequence {
+public class A055618 extends Sequence1 {
 
   private long mN = 0;
 

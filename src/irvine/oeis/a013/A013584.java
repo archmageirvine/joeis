@@ -3,13 +3,13 @@ package irvine.oeis.a013;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013584 Smallest m such that 0!+1!+...+(m-1)! is divisible by n, or 0 if no such m exists.
  * @author Sean A. Irvine
  */
-public class A013584 implements Sequence {
+public class A013584 extends Sequence1 {
 
   private int mN = 0;
   private Z mF = Z.ONE;

@@ -2,13 +2,13 @@ package irvine.oeis.a071;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A071261 Smallest k such that |p(k)-c(k)| is an n-digit number where p(k) is the k-th prime and c(k) is the k-th composite number.
  * @author Sean A. Irvine
  */
-public class A071261 implements Sequence {
+public class A071261 extends Sequence1 {
 
   private Z mP = Z.TWO;
   private Z mC = Z.FOUR;

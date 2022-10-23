@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicIntArray;
 
@@ -11,7 +11,7 @@ import irvine.util.array.DynamicIntArray;
  * A028688 Sorted factorial and k-factorial numbers (numbers of form k-1 excluded).
  * @author Sean A. Irvine
  */
-public class A028688 implements Sequence {
+public class A028688 extends Sequence1 {
 
   // k-factorials here are like F(k, m) = prod_{j..m} (k^j-1)
 

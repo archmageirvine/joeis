@@ -3,6 +3,7 @@ package irvine.oeis.a306;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a001.A001221;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001221;
  * A306345 Absolute difference between the number of prime divisors and the number of composite divisors of n.
  * @author Georg Fischer
  */
-public class A306345 implements Sequence {
+public class A306345 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA001221 = new A001221();

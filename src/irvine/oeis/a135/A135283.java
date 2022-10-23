@@ -3,13 +3,14 @@ package irvine.oeis.a135;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001359;
 import irvine.oeis.a054.A054735;
 /**
  * A135283 Sum of staircase twin primes according to the rule: top + bottom + next top.
  * @author Georg Fischer
  */
-public class A135283 implements Sequence {
+public class A135283 extends Sequence1 {
 
   private final Sequence mA001359 = new A001359();
   private final Sequence mA054735 = new A054735();

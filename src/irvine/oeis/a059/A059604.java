@@ -6,13 +6,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059604 Coefficients of polynomials (n-1)!*P(n,k), P(n,k) = Sum_{i=0..n} Stirling2(n,i)*binomial(k+i-1,k).
  * @author Sean A. Irvine
  */
-public class A059604 implements Sequence {
+public class A059604 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = 0;

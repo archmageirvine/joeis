@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046441 Never reaches a prime under "Sum of digits raised to its digits' powers" procedure.
  * @author Sean A. Irvine
  */
-public class A046441 implements Sequence {
+public class A046441 extends Sequence1 {
 
   private long mN = 0;
 

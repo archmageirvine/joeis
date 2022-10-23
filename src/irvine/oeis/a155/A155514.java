@@ -1,14 +1,14 @@
 package irvine.oeis.a155;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A155514 Larger of emirps (pairs) with digits 0 and 1 only.
  * @author Sean A. Irvine
  */
-public class A155514 implements Sequence {
+public class A155514 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a061;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006093;
 
 /**
  * A061286 Smallest integer for which the number of divisors is the n-th prime.
  * @author Georg Fischer
  */
-public class A061286 implements Sequence {
+public class A061286 extends Sequence1 {
 
   final Sequence mA006093 = new A006093();
   @Override

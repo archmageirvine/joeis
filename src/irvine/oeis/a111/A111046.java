@@ -3,13 +3,14 @@ package irvine.oeis.a111;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a040.A040040;
 
 /**
  * A111046 Difference between squares of twin prime pairs.
  * @author Georg Fischer
  */
-public class A111046 implements Sequence {
+public class A111046 extends Sequence1 {
 
   final Sequence mA040040 = new A040040();
   @Override

@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
 /**
  * A034703 Numbers of the form binomial(a+b+c, a) + binomial(a+b+c, b) + binomial(a+b+c, c), with a,b,c &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A034703 implements Sequence {
+public class A034703 extends Sequence1 {
 
   private Z mPrev = Z.ZERO;
 

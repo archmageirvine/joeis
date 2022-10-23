@@ -3,11 +3,12 @@ package irvine.oeis.a173;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 /**
  * A173893 (Average of twin balanced prime pairs)/10.
  * @author Georg Fischer
  */
-public class A173893 implements Sequence {
+public class A173893 extends Sequence1 {
 
   private final Sequence mA173892 = new A173892();
   @Override

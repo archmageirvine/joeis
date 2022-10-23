@@ -3,14 +3,15 @@ package irvine.oeis.a007;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.recur.LinearRecurrence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A007629 Repfigit (REPetitive FIbonacci-like diGIT) numbers (or Keith numbers).
  * @author Sean A. Irvine
  */
-public class A007629 implements Sequence {
+public class A007629 extends Sequence1 {
 
   private Z mN = Z.TEN;
   // Members so we can reuse the space

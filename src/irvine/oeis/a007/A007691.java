@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007691 Multiply-perfect numbers: n divides sigma(n).
  * @author Sean A. Irvine
  */
-public class A007691 implements Sequence {
+public class A007691 extends Sequence1 {
 
   private long mN = 0;
 

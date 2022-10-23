@@ -3,13 +3,13 @@ package irvine.oeis.a036;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036382 Odd split numbers: have a nontrivial factorization n=ab with a and b coprime, so that L(a) + L(b) &lt;= L(n), where L(x) = A029837(x) = ceiling(log_2(x)).
  * @author Sean A. Irvine
  */
-public class A036382 implements Sequence {
+public class A036382 extends Sequence1 {
 
   private long mN = 19;
 

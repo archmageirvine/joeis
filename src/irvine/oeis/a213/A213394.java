@@ -3,6 +3,7 @@ package irvine.oeis.a213;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000027;
 import irvine.oeis.a053.A053666;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a053.A053666;
  * A213394 The difference between n and the product of the digits of the n-th prime.
  * @author Georg Fischer
  */
-public class A213394 implements Sequence {
+public class A213394 extends Sequence1 {
 
   final Sequence mA000027 = new A000027();
   final Sequence mA053666 = new A053666();

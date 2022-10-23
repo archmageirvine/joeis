@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001474 w such that w^3+x^3+y^3+z^3=0, w&gt;|x|&gt;|y|&gt;|z|, is soluble.
  * @author Sean A. Irvine
  */
-public class A001474 implements Sequence {
+public class A001474 extends Sequence1 {
 
   private long mN = 5;
 

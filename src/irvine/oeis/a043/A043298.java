@@ -2,13 +2,13 @@ package irvine.oeis.a043;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A043298 Numbers n such that B(6*n) has denominator 42 where B(2k) are the Bernoulli numbers.
  * @author Sean A. Irvine
  */
-public class A043298 implements Sequence {
+public class A043298 extends Sequence1 {
 
   private long mN = 0;
 

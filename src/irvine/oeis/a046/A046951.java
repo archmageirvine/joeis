@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046951 a(n) is the number of squares dividing n.
  * @author Sean A. Irvine
  */
-public class A046951 implements Sequence {
+public class A046951 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059017 Smallest n-digit prime whose square is a concatenation of two n-digit primes (no leading zeros allowed), 0 if no such prime.
  * @author Sean A. Irvine
  */
-public class A059017 implements Sequence {
+public class A059017 extends Sequence1 {
 
   // After Max Alekseyev
 

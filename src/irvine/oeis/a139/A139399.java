@@ -1,13 +1,13 @@
 package irvine.oeis.a139;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A139399 Number of steps to reach a cycle in Collatz problem.
  * @author Sean A. Irvine
  */
-public class A139399 implements Sequence {
+public class A139399 extends Sequence1 {
 
   protected Z mN = Z.ZERO;
 

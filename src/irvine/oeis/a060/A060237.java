@@ -1,13 +1,13 @@
 package irvine.oeis.a060;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A060237 a(n) = n!^2 * Sum_{m=1..n}( Sum_{k=1..m} 1/(k*m) ).
  * @author Sean A. Irvine
  */
-public class A060237 implements Sequence {
+public class A060237 extends Sequence1 {
 
   private Z mPrev = Z.ZERO;
   private Z mF = Z.ONE;

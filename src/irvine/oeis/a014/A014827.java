@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014827 a(1)=1, a(n) = 5*a(n-1) + n.
  * @author Sean A. Irvine
  */
-public class A014827 implements Sequence {
+public class A014827 extends Sequence1 {
 
   private Z mA = Z.ONE;
   protected long mN = 0;

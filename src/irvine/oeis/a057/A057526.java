@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057526 Number of applications of f to reduce n to 1, where f(k) is the integer among k/2,(k-1)/4, (k+1)/4.
  * @author Sean A. Irvine
  */
-public class A057526 implements Sequence {
+public class A057526 extends Sequence1 {
 
   private long mN = 0;
 

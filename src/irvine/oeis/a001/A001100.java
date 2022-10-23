@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001100 Triangle read by rows: T(n,k) = number of permutations of length n with exactly k rising or falling successions, for n &gt;= 1, 0 &lt;= k &lt;= n-1.
  * @author Sean A. Irvine
  */
-public class A001100 implements Sequence {
+public class A001100 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private Polynomial<Z> mA = RING.one();

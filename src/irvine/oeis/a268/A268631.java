@@ -3,13 +3,14 @@ package irvine.oeis.a268;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006579;
 
 /**
  * A268631 Number of ordered pairs (a,b) of positive integers less than n with the property that n divides ab.
  * @author Georg Fischer
  */
-public class A268631 implements Sequence {
+public class A268631 extends Sequence1 {
 
   final Sequence mA006579 = new A006579();
   protected long mN;

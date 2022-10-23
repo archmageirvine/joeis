@@ -2,13 +2,13 @@ package irvine.oeis.a030;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030989 6-automorphic numbers: final digits of 6n^2 agree with n.
  * @author Sean A. Irvine
  */
-public class A030989 implements Sequence {
+public class A030989 extends Sequence1 {
 
   private int mN = 0;
   private Z mF = Z.ONE;

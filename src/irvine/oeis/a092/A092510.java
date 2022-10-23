@@ -3,13 +3,14 @@ package irvine.oeis.a092;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001414;
 import irvine.oeis.a063.A063655;
 /**
  * A092510 Difference between smallest semiperimeter (see A063655) and its integer log (see A001414).
  * @author Georg Fischer
  */
-public class A092510 implements Sequence {
+public class A092510 extends Sequence1 {
 
   private final Sequence mA001414 = new A001414();
   private final Sequence mA063655 = new A063655();

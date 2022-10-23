@@ -3,13 +3,13 @@ package irvine.oeis.a071;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A071894 Largest positive primitive root (&lt;p) of n-th prime p.
  * @author Sean A. Irvine
  */
-public class A071894 implements Sequence {
+public class A071894 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   protected Z mP = Z.ONE;

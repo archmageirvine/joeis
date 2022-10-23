@@ -3,13 +3,14 @@ package irvine.oeis.a336;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003973;
 
 /**
  * A336841 Prime-shifted analog of A094471: a(n) = A336845(n) - A003973(n).
  * @author Georg Fischer
  */
-public class A336841 implements Sequence {
+public class A336841 extends Sequence1 {
 
   final Sequence mA003973 = new A003973();
   final Sequence mA336845 = new A336845();

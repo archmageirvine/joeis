@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000137 Series-parallel numbers.
  * @author Sean A. Irvine
  */
-public class A000137 implements Sequence {
+public class A000137 extends Sequence1 {
 
   private final A000084 mS84 = new A000084();
   private final ArrayList<Z> mA84 = new ArrayList<>();

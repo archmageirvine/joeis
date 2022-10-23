@@ -4,13 +4,13 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A068934 Triangular array C(n, r) = number of connected r-regular graphs with n nodes, 0 &lt;= r &lt; n.
  * @author Sean A. Irvine
  */
-public class A068934 implements Sequence {
+public class A068934 extends Sequence1 {
 
   // Uses direct enumeration -- better methods are known
 

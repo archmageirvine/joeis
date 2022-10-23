@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046871 Numbers n such that sigma(2,n) divides sigma(4,n).
  * @author Sean A. Irvine
  */
-public class A046871 implements Sequence {
+public class A046871 extends Sequence1 {
 
   private long mN = 0;
 

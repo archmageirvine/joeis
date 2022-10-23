@@ -3,13 +3,14 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 
 /**
  * A065864 Remainder when n is divided by the number of nonprimes not exceeding n.
  * @author Georg Fischer
  */
-public class A065864 implements Sequence {
+public class A065864 extends Sequence1 {
 
   final Sequence mA000720 = new A000720();
   protected long mN;

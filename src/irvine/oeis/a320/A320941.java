@@ -3,6 +3,7 @@ package irvine.oeis.a320;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a001.A001157;
 import irvine.oeis.a001.A001158;
@@ -11,7 +12,7 @@ import irvine.oeis.a001.A001158;
  * A320941 Expansion of Sum_{k&gt;=1} x^k*(1 + x^k)/(1 - x^k)^4.
  * @author Georg Fischer
  */
-public class A320941 implements Sequence {
+public class A320941 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA001157 = new A001157();

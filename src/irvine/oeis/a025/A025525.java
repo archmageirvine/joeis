@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025525 Largest number that is not the sum of distinct numbers of form k^2 + n.
  * @author Sean A. Irvine
  */
-public class A025525 implements Sequence {
+public class A025525 extends Sequence1 {
 
   private long mN = 0;
 

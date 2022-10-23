@@ -3,13 +3,14 @@ package irvine.oeis.a144;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a067.A067970;
 
 /**
  * A144411 Odd nonprime gaps adjusted to be {2,1,0,-1}: a(n)=A067970(n)/2-2.
  * @author Georg Fischer
  */
-public class A144411 implements Sequence {
+public class A144411 extends Sequence1 {
 
   final Sequence mA067970 = new A067970();
   @Override

@@ -2,13 +2,13 @@ package irvine.oeis.a206;
 // manually 2021-08-15
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A206786 Remainder of n^340 divided by 341.
  * @author Georg Fischer
  */
-public class A206786 implements Sequence {
+public class A206786 extends Sequence1 {
 
   protected int mN;
 

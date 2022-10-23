@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000147 Number of trees of diameter 5.
  * @author Sean A. Irvine
  */
-public class A000147 implements Sequence {
+public class A000147 extends Sequence1 {
 
   private int mN = -2;
   private final A000065 mA65 = new A000065();

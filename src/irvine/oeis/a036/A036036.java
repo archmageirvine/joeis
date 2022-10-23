@@ -5,13 +5,13 @@ import java.util.TreeSet;
 import irvine.math.Comparators;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036036 Triangle read by rows in which row n lists all the parts of all reversed partitions of n, sorted first by length and then lexicographically.
  * @author Sean A. Irvine
  */
-public class A036036 implements Sequence {
+public class A036036 extends Sequence1 {
 
   private int mN = 0;
   private final TreeSet<int[]> mA = new TreeSet<>(Comparators.COLEXICOGRAPHIC);

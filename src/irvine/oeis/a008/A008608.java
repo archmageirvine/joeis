@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008608 Number of n X n upper triangular matrices A of nonnegative integers such that a_1i + a_2i + ... + a_{i-1,i} - a_ii - a_{i,i+1} - ... - a_in = -1.
  * @author Sean A. Irvine
  */
-public class A008608 implements Sequence {
+public class A008608 extends Sequence1 {
 
   // After Alois P. Heinz
 

@@ -5,13 +5,13 @@ import irvine.math.Mobius;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A338657 a(n) = Sum_{d|n} mu(d) * binomial(d+n/d-1, d).
  * @author Georg Fischer
  */
-public class A338657 implements Sequence {
+public class A338657 extends Sequence1 {
 
   private int mN = 0;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a162;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A162700 Numbers k which are concatenations k = x//y such that y^2 - x^2 = k.
  * @author Sean A. Irvine
  */
-public class A162700 implements Sequence {
+public class A162700 extends Sequence1 {
 
   private long mN = 47;
 

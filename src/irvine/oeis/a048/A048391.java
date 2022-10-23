@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048391 Replacing digits d in decimal expansion of n with d^3 yields a square.
  * @author Sean A. Irvine
  */
-public class A048391 implements Sequence {
+public class A048391 extends Sequence1 {
 
   private long mN = -1;
 

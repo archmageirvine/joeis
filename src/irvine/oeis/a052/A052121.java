@@ -9,13 +9,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052121 Triangle of coefficients of polynomials enumerating trees with n labeled nodes by inversions.
  * @author Sean A. Irvine
  */
-public class A052121 implements Sequence {
+public class A052121 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Polynomial<Q> mRow = null;

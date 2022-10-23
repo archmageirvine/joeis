@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053804 Numbers where the difference of consecutive fifth powers is "close" to another fifth power: let m = k^5 - (k-1)^5; sequence lists the numbers k where m - floor(m^(1/5))^5 &lt; floor(sqrt(k))^5.
  * @author Sean A. Irvine
  */
-public class A053804 implements Sequence {
+public class A053804 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

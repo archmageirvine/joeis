@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001969 Evil numbers: nonnegative integers with an even number of 1's in their binary expansion.
  * @author Sean A. Irvine
  */
-public class A001969 implements Sequence {
+public class A001969 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

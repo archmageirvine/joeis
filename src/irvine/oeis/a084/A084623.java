@@ -3,13 +3,14 @@ package irvine.oeis.a084;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007814;
 
 /**
  * A084623 Numerator of 2^(n-1)/n.
  * @author Georg Fischer
  */
-public class A084623 implements Sequence {
+public class A084623 extends Sequence1 {
 
   final Sequence mA007814 = new A007814();
   protected long mN;

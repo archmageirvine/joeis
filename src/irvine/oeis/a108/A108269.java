@@ -3,13 +3,14 @@ package irvine.oeis.a108;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a036.A036554;
 
 /**
  * A108269 Numbers of the form (2*m - 1)*4^k where m &gt;= 1, k &gt;= 1.
  * @author Georg Fischer
  */
-public class A108269 implements Sequence {
+public class A108269 extends Sequence1 {
 
   final Sequence mA036554 = new A036554();
   @Override

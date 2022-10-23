@@ -2,13 +2,13 @@ package irvine.oeis.a346;
 // manually holink/holos at 2021-12-08 21:32
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A346972 a(1)=1, a(2)=4, a(n) = (n*a(n-1) - (n-1)*a(n-2)) mod (n+1).
  * @author Georg Fischer
  */
-public class A346972 implements Sequence {
+public class A346972 extends Sequence1 {
 
   private int mN = 0;
   private Z mA_1 = Z.FOUR;

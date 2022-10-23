@@ -1,13 +1,13 @@
 package irvine.oeis.a091;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A091824 Numbers p such that ((p-1)!*2^(p-1) + 1)/p is a prime.
  * @author Sean A. Irvine
  */
-public class A091824 implements Sequence {
+public class A091824 extends Sequence1 {
 
   private int mN = 0;
   private Z mF = Z.ONE;

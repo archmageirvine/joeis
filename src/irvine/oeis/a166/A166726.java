@@ -2,13 +2,13 @@ package irvine.oeis.a166;
 // manually 2021-08-08
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A166726 Nonnegative integers with English names ending in "o".
  * @author Georg Fischer
  */
-public class A166726 implements Sequence {
+public class A166726 extends Sequence1 {
 
   protected long mK;
 

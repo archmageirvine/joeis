@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056524 Palindromes with even number of digits.
  * @author Sean A. Irvine
  */
-public class A056524 implements Sequence {
+public class A056524 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007540 Wilson primes: primes p such that (p-1)! == -1 (mod p^2).
  * @author Sean A. Irvine
  */
-public class A007540 implements Sequence {
+public class A007540 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 4;

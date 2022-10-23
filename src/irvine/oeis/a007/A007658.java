@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007658 Numbers n such that (3^n + 1)/4 is prime.
  * @author Sean A. Irvine
  */
-public class A007658 implements Sequence {
+public class A007658 extends Sequence1 {
 
   private Z mT = Z.NINE;
   private int mN = 2;

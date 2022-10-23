@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028832 Number of distinct integers in period of continued fraction for sqrt(n), or 0 if n is a square.
  * @author Sean A. Irvine
  */
-public class A028832 implements Sequence {
+public class A028832 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

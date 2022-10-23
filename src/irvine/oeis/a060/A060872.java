@@ -3,13 +3,14 @@ package irvine.oeis.a060;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038548;
 
 /**
  * A060872 Sum of d*d' over all unordered pairs (d,d') with d*d' = n.
  * @author Georg Fischer
  */
-public class A060872 implements Sequence {
+public class A060872 extends Sequence1 {
 
   final Sequence mA038548 = new A038548();
   protected long mN;

@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002068 Wilson remainders: a(n) = ((p-1)!+1)/p mod p, where p = prime(n).
  * @author Sean A. Irvine
  */
-public class A002068 implements Sequence {
+public class A002068 extends Sequence1 {
 
   private long mP = 1;
   private final Fast mPrime = new Fast();

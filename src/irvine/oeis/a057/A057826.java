@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057826 Greatest number with totient 2n (or zero when no such number exists).
  * @author Sean A. Irvine
  */
-public class A057826 implements Sequence {
+public class A057826 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

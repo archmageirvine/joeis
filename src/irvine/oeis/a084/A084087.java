@@ -2,13 +2,13 @@ package irvine.oeis.a084;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A084087 Numbers k not divisible by 3 such that the exponent of the highest power of 2 dividing k is even.
  * @author Georg Fischer
  */
-public class A084087 implements Sequence {
+public class A084087 extends Sequence1 {
 
   private int mN = 0;
 

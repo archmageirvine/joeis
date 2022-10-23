@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033147 Numbers k such that the decimal expansion of k! begins with k.
  * @author Sean A. Irvine
  */
-public class A033147 implements Sequence {
+public class A033147 extends Sequence1 {
 
   private long mN = 0;
   private Z mF = Z.ONE;

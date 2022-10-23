@@ -8,13 +8,13 @@ import java.util.List;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046523 Smallest number with same prime signature as n.
  * @author Sean A. Irvine
  */
-public class A046523 implements Sequence {
+public class A046523 extends Sequence1 {
 
   private final HashMap<List<Integer>, Z> mLeastBySignature = new HashMap<>();
   private long mN = 0;

@@ -2,14 +2,14 @@ package irvine.oeis.a034;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A034276 Smallest prime that generates a prime pyramid of height n.
  * @author Sean A. Irvine
  */
-public class A034276 implements Sequence {
+public class A034276 extends Sequence1 {
 
   private final DynamicLongArray mA = new DynamicLongArray();
   private final Fast mPrime = new Fast();

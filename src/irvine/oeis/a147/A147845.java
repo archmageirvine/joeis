@@ -3,13 +3,14 @@ package irvine.oeis.a147;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033045;
 
 /**
  * A147845 Odd positive integers a(n) such that for every odd integer m&gt;=7 there exists a unique representation of the form m=a(p)+2a(q)+4a(r).
  * @author Georg Fischer
  */
-public class A147845 implements Sequence {
+public class A147845 extends Sequence1 {
 
   final Sequence mA033045 = new A033045();
   @Override

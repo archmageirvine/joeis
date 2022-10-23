@@ -2,14 +2,14 @@ package irvine.oeis.a048;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A048995 Numbers that are not the sum of the nontrivial factors (excluding 1 and n) of some natural number.
  * @author Sean A. Irvine
  */
-public class A048995 implements Sequence {
+public class A048995 extends Sequence1 {
 
   private final LongDynamicBooleanArray mA = new LongDynamicBooleanArray();
   private long mN = 0;

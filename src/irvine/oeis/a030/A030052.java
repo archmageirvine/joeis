@@ -6,14 +6,14 @@ import java.util.List;
 import java.util.Map;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A030052 Smallest number whose n-th power is a sum of distinct smaller positive n-th powers.
  * @author Sean A. Irvine
  */
-public class A030052 implements Sequence {
+public class A030052 extends Sequence1 {
 
   // This uses a time-memory trade off.  All possible sums of small values
   // are precomputed, then a backtracking search for larger values.

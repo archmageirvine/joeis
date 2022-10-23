@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007175 Number of simplicial 4-clusters with n cells.
  * @author Sean A. Irvine
  */
-public class A007175 implements Sequence {
+public class A007175 extends Sequence1 {
 
   // After Robert A. Russell
 

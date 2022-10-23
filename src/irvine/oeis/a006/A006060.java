@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006060 Triangular star numbers.
  * @author Sean A. Irvine
  */
-public class A006060 implements Sequence {
+public class A006060 extends Sequence1 {
 
   private Z mA = null;
   private Z mB = null;

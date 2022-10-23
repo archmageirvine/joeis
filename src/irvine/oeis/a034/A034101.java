@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034101 Numbers whose fractional part of square root starts with digit 5.
  * @author Sean A. Irvine
  */
-public class A034101 implements Sequence {
+public class A034101 extends Sequence1 {
 
   private Z mN = Z.ONE;
 

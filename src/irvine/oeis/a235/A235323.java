@@ -3,13 +3,14 @@ package irvine.oeis.a235;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008472;
 
 /**
  * A235323 Squared sum of the distinct prime factors of n, i.e., sopf(n)^2.
  * @author Georg Fischer
  */
-public class A235323 implements Sequence {
+public class A235323 extends Sequence1 {
 
   final Sequence mA008472 = new A008472();
   @Override

@@ -3,13 +3,13 @@ package irvine.oeis.a031;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A031360 Number of symmetrically inequivalent coincidence rotations of index 2n-1 in lattice D_4.
  * @author Sean A. Irvine
  */
-public class A031360 implements Sequence {
+public class A031360 extends Sequence1 {
 
   private long mN = -1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a163;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A163382 a(n) = the (decimal equivalent of the) smallest integer that can be made by rotating the binary digits of n any number of positions to the left or right, where a(n) in binary must contain the same number of digits (without any leading 0's) as n written in binary.
  * @author Sean A. Irvine
  */
-public class A163382 implements Sequence {
+public class A163382 extends Sequence1 {
 
   private long mN = 0;
   private long mL = 1;

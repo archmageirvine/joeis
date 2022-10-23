@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053548 Number of ternary Lyndon words of length n with trace 0 and subtrace 0 over GF(3).
  * @author Sean A. Irvine
  */
-public class A053548 implements Sequence {
+public class A053548 extends Sequence1 {
 
   private int mN = 0;
 

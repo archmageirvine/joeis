@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054034 Numbers n such that n^2 contains exactly 6 different digits.
  * @author Sean A. Irvine
  */
-public class A054034 implements Sequence {
+public class A054034 extends Sequence1 {
 
   private Z mN = Z.valueOf(321);
 

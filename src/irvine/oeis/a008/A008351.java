@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008351 a(n) is the concatenation of a(n-1) and a(n-2) with a(1)=1, a(2)=2.
  * @author Sean A. Irvine
  */
-public class A008351 implements Sequence {
+public class A008351 extends Sequence1 {
 
   private String mA = null;
   private String mB = null;

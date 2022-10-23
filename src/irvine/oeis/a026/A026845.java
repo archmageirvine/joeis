@@ -2,13 +2,13 @@ package irvine.oeis.a026;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A026845 Sum_{mu a partition of n} (f^mu/n!)^{-2} where f^mu is the number of standard Young tableaux of shape mu.
  * @author Sean A. Irvine
  */
-public class A026845 implements Sequence {
+public class A026845 extends Sequence1 {
 
   private Z mF = Z.ONE;
   private int mN = 0;

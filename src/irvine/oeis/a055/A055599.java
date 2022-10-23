@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055599 Triangle T(n,k)r read by rows, giving the number of n X n binary matrices with no zero rows or columns and with k=0..n^2 ones.
  * @author Sean A. Irvine
  */
-public class A055599 implements Sequence {
+public class A055599 extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C1 = Polynomial.create(1, 1);

@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001128 Reverse digits of previous term and multiply by previous term.
  * @author Sean A. Irvine
  */
-public class A001128 implements Sequence {
+public class A001128 extends Sequence1 {
 
   private Z mS = null;
 

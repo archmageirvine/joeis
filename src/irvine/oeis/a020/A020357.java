@@ -4,13 +4,13 @@ import java.util.List;
 
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020357 Numbers k such that the continued fraction for sqrt(k) has period 18.
  * @author Sean A. Irvine
  */
-public class A020357 implements Sequence {
+public class A020357 extends Sequence1 {
 
   private Z mN = Z.valueOf(138);
 

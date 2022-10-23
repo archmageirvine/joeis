@@ -3,13 +3,14 @@ package irvine.oeis.a166;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023206;
 
 /**
  * A166009 Primes of the form 7 + 2*p, where p is a prime.
  * @author Georg Fischer
  */
-public class A166009 implements Sequence {
+public class A166009 extends Sequence1 {
 
   final Sequence mA023206 = new A023206();
   @Override

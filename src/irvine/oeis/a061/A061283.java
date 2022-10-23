@@ -3,12 +3,13 @@ package irvine.oeis.a061;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a016.A016017;
 /**
  * A061283 Smallest number with exactly 2n-1 divisors.
  * @author Georg Fischer
  */
-public class A061283 implements Sequence {
+public class A061283 extends Sequence1 {
 
   private final Sequence mA016017 = new A016017();
 

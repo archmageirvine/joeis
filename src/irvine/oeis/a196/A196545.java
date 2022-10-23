@@ -4,14 +4,14 @@ import java.util.HashMap;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 
 /**
  * A196545 Number of weakly ordered plane trees with n leaves.
  * @author Sean A. Irvine
  */
-public class A196545 implements Sequence {
+public class A196545 extends Sequence1 {
 
   private final HashMap<Integer, Z> mCache = new HashMap<>();
   private int mN = 0;

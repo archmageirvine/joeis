@@ -3,13 +3,14 @@ package irvine.oeis.a174;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a047.A047836;
 
 /**
  * A174973 Numbers whose divisors increase by a factor of 2 or less.
  * @author Georg Fischer
  */
-public class A174973 implements Sequence {
+public class A174973 extends Sequence1 {
 
   final Sequence mA047836 = new A047836();
   @Override

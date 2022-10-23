@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002297 Numerator of (2/Pi)*Integral_{0..inf} (sin x / x)^n dx.
  * @author Sean A. Irvine
  */
-public class A002297 implements Sequence {
+public class A002297 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

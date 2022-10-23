@@ -5,13 +5,13 @@ import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054395 Numbers n such that there are precisely 2 groups of order n.
  * @author Sean A. Irvine
  */
-public class A054395 implements Sequence {
+public class A054395 extends Sequence1 {
 
   // After Gheorghe Coserea
 

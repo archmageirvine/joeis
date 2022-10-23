@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051574 a(n) = number of k, 1&lt;=k&lt;=n, such that (n*k) divides binomial(n,k).
  * @author Sean A. Irvine
  */
-public class A051574 implements Sequence {
+public class A051574 extends Sequence1 {
 
   private long mN = 0;
 

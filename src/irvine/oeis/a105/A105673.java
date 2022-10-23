@@ -3,13 +3,14 @@ package irvine.oeis.a105;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002654;
 
 /**
  * A105673 One-half of theta series of square lattice (or half the number of ways of writing n &gt; 0 as a sum of 2 squares), without the constant term, which is 1/2.
  * @author Georg Fischer
  */
-public class A105673 implements Sequence {
+public class A105673 extends Sequence1 {
 
   final Sequence mA002654 = new A002654();
   @Override

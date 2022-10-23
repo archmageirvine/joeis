@@ -3,13 +3,14 @@ package irvine.oeis.a340;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001597;
 
 /**
  * A340588 Squares of perfect powers.
  * @author Georg Fischer
  */
-public class A340588 implements Sequence {
+public class A340588 extends Sequence1 {
 
   final Sequence mA001597 = new A001597();
   @Override

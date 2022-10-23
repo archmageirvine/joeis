@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052148 Integers n &lt; (reversal of n) such that (reversal of n) + 1 is divisible by n-1.
  * @author Sean A. Irvine
  */
-public class A052148 implements Sequence {
+public class A052148 extends Sequence1 {
 
   private Z mN = Z.valueOf(11);
 

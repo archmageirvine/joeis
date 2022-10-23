@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045911 Neither a cube nor the sum of a nonnegative cube and a prime.
  * @author Sean A. Irvine
  */
-public class A045911 implements Sequence {
+public class A045911 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mN = Z.EIGHT;

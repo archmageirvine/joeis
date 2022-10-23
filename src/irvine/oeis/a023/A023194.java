@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023194 Numbers whose sum of divisors is prime.
  * @author Sean A. Irvine
  */
-public class A023194 implements Sequence {
+public class A023194 extends Sequence1 {
 
   private long mN = 0;
 

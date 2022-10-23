@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045877 Rotating digits of a(n)^2 right once still yields a square.
  * @author Sean A. Irvine
  */
-public class A045877 implements Sequence {
+public class A045877 extends Sequence1 {
 
   private long mN = 0;
 

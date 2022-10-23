@@ -3,13 +3,13 @@ package irvine.oeis.a010;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A010027 Triangle read by rows: T(n,k) is the number of permutations of [n] having k consecutive ascending pairs (0 &lt;= k &lt;= n-1).
  * @author Sean A. Irvine
  */
-public class A010027 implements Sequence {
+public class A010027 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.graph.GraphUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046742 Triangle of number of connected graphs with k &gt;= 1 edges and n nodes (2 &lt;= n &lt;= k+1).
  * @author Sean A. Irvine
  */
-public class A046742 implements Sequence {
+public class A046742 extends Sequence1 {
 
   private int mVertices = 1;
   private int mEdges = 0;

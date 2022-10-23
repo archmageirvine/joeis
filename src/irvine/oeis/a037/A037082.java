@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037082 Primes of the form n!!! + 1.
  * @author Sean A. Irvine
  */
-public class A037082 implements Sequence {
+public class A037082 extends Sequence1 {
 
   private final Z[] mA = new Z[3];
   private long mN = 0;

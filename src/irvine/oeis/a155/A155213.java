@@ -3,6 +3,7 @@ package irvine.oeis.a155;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a038.A038194;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a038.A038194;
  * A155213 a(n) = floor(prime(n)/9).
  * @author Georg Fischer
  */
-public class A155213 implements Sequence {
+public class A155213 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA038194 = new A038194();

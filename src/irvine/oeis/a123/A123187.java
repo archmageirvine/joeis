@@ -2,13 +2,13 @@ package irvine.oeis.a123;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A123187 Triangle of coefficients in expansion of (1+13x)^n.
  * @author Georg Fischer
  */
-public class A123187 implements Sequence {
+public class A123187 extends Sequence1 {
 
   private int mN = -1;
   private int mM = 0;

@@ -4,13 +4,13 @@ import java.util.TreeMap;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058084 Smallest m such that binomial(m,k) = n for some k.
  * @author Sean A. Irvine
  */
-public class A058084 implements Sequence {
+public class A058084 extends Sequence1 {
 
   private final TreeMap<Z, Long> mA = new TreeMap<>();
   private long mM = -1;

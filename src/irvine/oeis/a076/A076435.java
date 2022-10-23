@@ -6,13 +6,13 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.Multigraph;
 import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A076435 Number of strongly regular simple graphs on n nodes.
  * @author Sean A. Irvine
  */
-public class A076435 implements Sequence {
+public class A076435 extends Sequence1 {
 
   private static final class StronglyRegular extends ParallelGenerateGraphsSequence {
 

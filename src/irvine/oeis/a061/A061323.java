@@ -3,14 +3,14 @@ package irvine.oeis.a061;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A061323 Primes with 10 as smallest positive primitive root.
  * Copied from A001126.
  * @author Georg Fischer
  */
-public class A061323 implements Sequence {
+public class A061323 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

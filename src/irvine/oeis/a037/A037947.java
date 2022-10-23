@@ -5,6 +5,7 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004009;
 import irvine.oeis.a013.A013973;
 
@@ -12,7 +13,7 @@ import irvine.oeis.a013.A013973;
  * A037947 Coefficients of unique normalized cusp form Delta_26 of weight 26 for full modular group.
  * @author Sean A. Irvine
  */
-public class A037947 implements Sequence {
+public class A037947 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final Sequence mE4Seq = new A004009();

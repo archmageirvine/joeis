@@ -2,13 +2,13 @@ package irvine.oeis.a008;
 
 import irvine.math.q.HarmonicSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008380 4*(2n-1)!*H(2n), where H(n) = Sum 1/i are harmonic numbers.
  * @author Sean A. Irvine
  */
-public class A008380 implements Sequence {
+public class A008380 extends Sequence1 {
 
   private final HarmonicSequence mH = new HarmonicSequence();
   private Z mF = Z.FOUR;

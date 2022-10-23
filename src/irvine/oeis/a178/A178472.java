@@ -3,13 +3,14 @@ package irvine.oeis.a178;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000740;
 
 /**
  * A178472 Number of compositions (ordered partitions) of n where the gcd of the part sizes is not 1.
  * @author Georg Fischer
  */
-public class A178472 implements Sequence {
+public class A178472 extends Sequence1 {
 
   final Sequence mA000740 = new A000740();
   protected long mN;

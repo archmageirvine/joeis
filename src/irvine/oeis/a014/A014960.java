@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014960 Integers n such that n divides 24^n - 1.
  * @author Sean A. Irvine
  */
-public class A014960 implements Sequence {
+public class A014960 extends Sequence1 {
 
   private long mN = 0;
   private Z mA = Z.ONE;

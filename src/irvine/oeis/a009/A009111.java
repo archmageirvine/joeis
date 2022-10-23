@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009111 List of ordered areas of Pythagorean triangles.
  * @author Sean A. Irvine
  */
-public class A009111 implements Sequence {
+public class A009111 extends Sequence1 {
 
   private final TreeMap<Long, Integer> mAreas = new TreeMap<>();
   private long mC = 4;

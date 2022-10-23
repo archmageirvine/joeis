@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037125 Irregular triangle: row n is 1, 2, 3, 4, .., prime(n).
  * @author Sean A. Irvine
  */
-public class A037125 implements Sequence {
+public class A037125 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

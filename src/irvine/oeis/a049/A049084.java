@@ -3,6 +3,7 @@ package irvine.oeis.a049;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 import irvine.oeis.a010.A010051;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a010.A010051;
  * A049084 a(n) = pi(n) if n is prime, otherwise 0.
  * @author Georg Fischer
  */
-public class A049084 implements Sequence {
+public class A049084 extends Sequence1 {
 
   final Sequence mA000720 = new A000720();
   final Sequence mA010051 = new A010051();

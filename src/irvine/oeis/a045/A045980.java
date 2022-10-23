@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045980 Numbers of the form x^3 + y^3 or x^3 - y^3.
  * @author Sean A. Irvine
  */
-public class A045980 implements Sequence {
+public class A045980 extends Sequence1 {
 
   private long mN = -1;
 

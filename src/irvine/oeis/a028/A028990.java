@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028990 Largest palindromic prime with 2n-1 digits.
  * @author Sean A. Irvine
  */
-public class A028990 implements Sequence {
+public class A028990 extends Sequence1 {
 
   private int mN = -1;
 

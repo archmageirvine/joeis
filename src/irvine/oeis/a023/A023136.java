@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.group.IntegersMod;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023136 Number of cycles of function f(x) = 4x mod n.
  * @author Sean A. Irvine
  */
-public class A023136 implements Sequence {
+public class A023136 extends Sequence1 {
 
   private long mN = 0;
 

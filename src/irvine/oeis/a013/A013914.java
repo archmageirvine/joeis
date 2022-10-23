@@ -8,13 +8,13 @@ import irvine.math.cc.ComputableComplexField;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013914 Number of distinct nonzero absolute values of Sum_{j=1..n} sigma_j * exp(i * Pi * j / n) where sigma_j = +- 1.
  * @author Sean A. Irvine
  */
-public class A013914 implements Sequence {
+public class A013914 extends Sequence1 {
 
   private static final int DIGITS_ACCURACY = 50; // should be plenty
   private static final ComputableComplexField CCF = ComputableComplexField.SINGLETON;

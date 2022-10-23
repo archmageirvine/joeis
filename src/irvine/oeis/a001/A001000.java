@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001000 a(n) = least m such that if a/b &lt; c/d where a,b,c,d are integers in [0,n], then a/b &lt; k/m &lt; c/d for some integer k.
  * @author Sean A. Irvine
  */
-public class A001000 implements Sequence {
+public class A001000 extends Sequence1 {
 
   private long mN = 0;
 

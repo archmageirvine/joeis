@@ -3,13 +3,13 @@ package irvine.oeis.a037;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037303 Numbers whose base-2 and base-5 expansions have the same digit sum.
  * @author Georg Fischer
  */
-public class A037303 implements Sequence {
+public class A037303 extends Sequence1 {
 
   protected int mN;
   protected int mBase1;

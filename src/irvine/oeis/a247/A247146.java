@@ -3,13 +3,14 @@ package irvine.oeis.a247;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a034.A034729;
 
 /**
  * A247146 As a binary numeral, the bit 2^(m-1) of a(n) is 1 iff m is a proper divisor of n.
  * @author Georg Fischer
  */
-public class A247146 implements Sequence {
+public class A247146 extends Sequence1 {
 
   final Sequence mA034729 = new A034729();
   protected long mN;

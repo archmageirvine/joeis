@@ -3,13 +3,14 @@ package irvine.oeis.a347;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018804;
 import irvine.oeis.a101.A101035;
 /**
  * A347095 Sum of Pillai's arithmetical function (A018804) and its Dirichlet inverse.
  * @author Georg Fischer
  */
-public class A347095 implements Sequence {
+public class A347095 extends Sequence1 {
 
   private final Sequence mA018804 = new A018804();
   private final Sequence mA101035 = new A101035();

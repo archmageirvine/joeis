@@ -3,13 +3,13 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A088855 Triangle read by rows: number of symmetric Dyck paths of semilength n with k peaks. 
  * @author Georg Fischer
  */
-public class A088855 implements Sequence {
+public class A088855 extends Sequence1 {
 
   protected long mN;
   protected long mK;

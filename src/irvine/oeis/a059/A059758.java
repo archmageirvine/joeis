@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059758 Undulating palindromic primes: numbers that are prime, palindromic in base 10, and the digits alternate: ababab... with a != b.
  * @author Sean A. Irvine
  */
-public class A059758 implements Sequence {
+public class A059758 extends Sequence1 {
 
   private static final int[] A = {1, 3, 7, 9};
   private final TreeSet<Z> mA = new TreeSet<>();

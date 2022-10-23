@@ -5,13 +5,13 @@ import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000228 Number of hexagonal polyominoes (or hexagonal polyforms, or planar polyhexes) with n cells.
  * @author Sean A. Irvine
  */
-public class A000228 implements Sequence {
+public class A000228 extends Sequence1 {
 
   private final ParallelHunter mHunter = new ParallelHunter(6,
     () -> new Hunter(Lattices.HEXAGONAL, true),

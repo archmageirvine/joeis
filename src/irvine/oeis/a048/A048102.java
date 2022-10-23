@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048102 Numbers k such that if k = Product p_i^e_i then p_i=e_i for all i.
  * @author Sean A. Irvine
  */
-public class A048102 implements Sequence {
+public class A048102 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final TreeSet<Z> mDone = new TreeSet<>();

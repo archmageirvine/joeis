@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.LongUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006841 Permutation arrays of period n.
@@ -38,7 +38,7 @@ import irvine.oeis.Sequence;
  * @author Matthias Engelhardt
  * @author Sean A. Irvine
  */
-public class A006841 implements Sequence {
+public class A006841 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

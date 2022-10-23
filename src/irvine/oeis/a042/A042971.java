@@ -2,13 +2,13 @@ package irvine.oeis.a042;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A042971 a(n) = (C(2n, n)/2 - (2^(n-1) + ((n+1) mod 2)*C(n-1, n/2-1)))/2.
  * @author Sean A. Irvine
  */
-public class A042971 implements Sequence {
+public class A042971 extends Sequence1 {
 
   private int mN = 0;
 

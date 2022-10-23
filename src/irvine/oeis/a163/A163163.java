@@ -3,13 +3,14 @@ package irvine.oeis.a163;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007503;
 
 /**
  * A163163 a(n) = sigma(n) + tau(n) - n.
  * @author Georg Fischer
  */
-public class A163163 implements Sequence {
+public class A163163 extends Sequence1 {
 
   final Sequence mA007503 = new A007503();
   protected long mN;

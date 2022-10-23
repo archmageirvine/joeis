@@ -3,13 +3,14 @@ package irvine.oeis.a139;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000043;
 
 /**
  * A139307 (2^(2p - 1)) - 1, where p is A000043(n).
  * @author Georg Fischer
  */
-public class A139307 implements Sequence {
+public class A139307 extends Sequence1 {
 
   final Sequence mA000043 = new A000043();
   @Override

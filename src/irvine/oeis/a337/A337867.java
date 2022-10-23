@@ -5,14 +5,14 @@ import java.util.Collection;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A337867 Number of polyfetts (or polifetti) with n cells, identifying mirror images.
  * @author George Sicherman
  * @author Sean A. Irvine (Java port)
  */
-public class A337867 implements Sequence {
+public class A337867 extends Sequence1 {
 
   private static final int MAX = 100;
   private static final int[] REFL_BITS = {

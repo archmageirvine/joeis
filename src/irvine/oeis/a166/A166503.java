@@ -3,13 +3,14 @@ package irvine.oeis.a166;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038692;
 
 /**
  * A166503 Numbers k with property that k^2 is the concatenation of two or more prime numbers.
  * @author Georg Fischer
  */
-public class A166503 implements Sequence {
+public class A166503 extends Sequence1 {
 
   final Sequence mA038692 = new A038692();
   @Override

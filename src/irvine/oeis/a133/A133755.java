@@ -4,13 +4,13 @@ package irvine.oeis.a133;
 import irvine.math.Mobius;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A133755 Number of positive integers less than n/3 that are coprime to n.
  * @author Georg Fischer
  */
-public class A133755 implements Sequence {
+public class A133755 extends Sequence1 {
 
   private int mN = 0;
 

@@ -3,6 +3,7 @@ package irvine.oeis.a225;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000070;
 import irvine.oeis.a000.A000142;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000142;
  * A225108 Number of pairs (x,y) of elements x of the symmetric group S_{n-1} and y of the symmetric group S_{n} that commute. Here the symmetric group S_{n-m} is to be thought of as the subgroup of the symmetric group S_n which stabilizes n-m+1,n-m+2,...n.
  * @author Georg Fischer
  */
-public class A225108 implements Sequence {
+public class A225108 extends Sequence1 {
 
   final Sequence mA000070 = new A000070();
   final Sequence mA000142 = new A000142();

@@ -3,13 +3,14 @@ package irvine.oeis.a346;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001157;
 import irvine.oeis.a001.A001227;
 /**
  * A346759 a(n) = Sum_{d|n} floor(d^2/4).
  * @author Georg Fischer
  */
-public class A346759 implements Sequence {
+public class A346759 extends Sequence1 {
 
   private final Sequence mA001157 = new A001157();
   private final Sequence mA001227 = new A001227();

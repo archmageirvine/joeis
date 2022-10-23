@@ -3,13 +3,13 @@ package irvine.oeis.a023;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023797 Katadromes: digits in base 16 are in strict descending order.
  * @author Sean A. Irvine
  */
-public class A023797 implements Sequence {
+public class A023797 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   {

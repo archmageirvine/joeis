@@ -3,13 +3,13 @@ package irvine.oeis.a344;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A344195 a(n) = Sum_{k=1..n} tau(gcd(k,n))^(n/gcd(k,n)), where tau(n) is the number of divisors of n.
  * @author Georg Fischer
  */
-public class A344195 implements Sequence {
+public class A344195 extends Sequence1 {
 
   private int mN = 0;
 

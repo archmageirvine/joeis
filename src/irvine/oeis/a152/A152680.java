@@ -4,13 +4,14 @@ package irvine.oeis.a152;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002144;
 
 /**
  * A152680 a(n) = 4*A005098(n) = A002144(n) - 1.
  * @author Georg Fischer
  */
-public class A152680 implements Sequence {
+public class A152680 extends Sequence1 {
 
   final Sequence mA002144 = new A002144();
   @Override

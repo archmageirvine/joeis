@@ -5,14 +5,14 @@ import java.util.TreeSet;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
  * A031122 Integers that appear as ratios of Fibonacci numbers F(kn)/F(k), but omitting Fibonacci numbers F(n)/F(1) and Lucas numbers F(2n)/F(n).
  * @author Sean A. Irvine
  */
-public class A031122 implements Sequence {
+public class A031122 extends Sequence1 {
 
   // Heuristic, but will detect if an error is ever made
 

@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003638 Number of classes per genus in quadratic field with discriminant -4n, -n == 2,3( mod 4).
  * @author Sean A. Irvine
  */
-public class A003638 implements Sequence {
+public class A003638 extends Sequence1 {
 
   long mN = 0;
 

@@ -1,14 +1,14 @@
 package irvine.oeis.a164;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A164861 Odd positive integers that are not palindromes when written in binary.
  * @author Georg Fischer
  */
-public class A164861 implements Sequence {
+public class A164861 extends Sequence1 {
 
   private long mN = -1;
 

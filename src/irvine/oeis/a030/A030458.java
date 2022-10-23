@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030458 Primes formed by concatenating n with n+1.
  * @author Sean A. Irvine
  */
-public class A030458 implements Sequence {
+public class A030458 extends Sequence1 {
 
   private long mN = 0;
 

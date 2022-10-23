@@ -3,13 +3,14 @@ package irvine.oeis.a155;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a029.A029707;
 
 /**
  * A155752 Where 2's occur in the prime differences A001223.
  * @author Georg Fischer
  */
-public class A155752 implements Sequence {
+public class A155752 extends Sequence1 {
 
   final Sequence mA029707 = new A029707();
   @Override

@@ -3,13 +3,14 @@ package irvine.oeis.a173;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a089.A089071;
 
 /**
  * A173965 Averages of four consecutive cubes.
  * @author Georg Fischer
  */
-public class A173965 implements Sequence {
+public class A173965 extends Sequence1 {
 
   final Sequence mA089071 = new A089071();
   protected long mN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004235 10*log(n) rounded to nearest integer.
  * @author Sean A. Irvine
  */
-public class A004235 implements Sequence {
+public class A004235 extends Sequence1 {
 
   private long mN = 0;
 

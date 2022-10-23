@@ -3,13 +3,14 @@ package irvine.oeis.a176;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005384;
 
 /**
  * A176045 Numbers n such that n-1 and 2*n-1 are both prime.
  * @author Georg Fischer
  */
-public class A176045 implements Sequence {
+public class A176045 extends Sequence1 {
 
   final Sequence mA005384 = new A005384();
   @Override

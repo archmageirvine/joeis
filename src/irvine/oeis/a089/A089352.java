@@ -2,13 +2,13 @@ package irvine.oeis.a089;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A089352 Numbers that are divisible by the sum of their distinct prime factors (A008472).
  * @author Sean A. Irvine
  */
-public class A089352 implements Sequence {
+public class A089352 extends Sequence1 {
 
   private long mN = 1;
 

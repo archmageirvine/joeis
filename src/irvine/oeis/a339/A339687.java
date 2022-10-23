@@ -3,13 +3,13 @@ package irvine.oeis.a339;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A339687 a(n) = Sum_{d|n} 7^(d-1).
  * @author Georg Fischer
  */
-public class A339687 implements Sequence {
+public class A339687 extends Sequence1 {
 
   private int mN = 0;
 

@@ -3,12 +3,13 @@ package irvine.oeis.a300;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a010.A010848;
 /**
  * A300720 Difference between A010848 and its M\u00f6bius transform.
  * @author Georg Fischer
  */
-public class A300720 implements Sequence {
+public class A300720 extends Sequence1 {
 
   private final Sequence mA010848 = new A010848();
   private final Sequence mA300718 = new A300718();

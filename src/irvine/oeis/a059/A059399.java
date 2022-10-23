@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059399 Triangular hopscotch.
  * @author Sean A. Irvine
  */
-public class A059399 implements Sequence {
+public class A059399 extends Sequence1 {
 
   private long mN = 0;
   private long mS = 0;

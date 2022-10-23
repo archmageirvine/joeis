@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006286 Numbers not of form p + 2^x + 2^y.
  * @author Sean A. Irvine
  */
-public class A006286 implements Sequence {
+public class A006286 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

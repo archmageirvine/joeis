@@ -1,13 +1,13 @@
 package irvine.oeis.a307;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A307096 Positive integers m such that for any positive integer k the last k bits of the binary expansion of m is not a multiple of 3.
  * @author Sean A. Irvine
  */
-public class A307096 implements Sequence {
+public class A307096 extends Sequence1 {
 
   private long mN = -1;
 

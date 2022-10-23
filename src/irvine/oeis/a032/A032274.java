@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032274 Number of labeled series-reduced dyslexic mobiles (polygon rooted trees) with n leaves (root has degree 0 or &gt;=2).
  * @author Sean A. Irvine
  */
-public class A032274 implements Sequence {
+public class A032274 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C1 = RING.create(Arrays.asList(Q.ZERO, Q.THREE, Q.HALF.negate()));

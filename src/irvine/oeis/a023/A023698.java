@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023698 Numbers with exactly 7 1's in ternary expansion.
  * @author Sean A. Irvine
  */
-public class A023698 implements Sequence {
+public class A023698 extends Sequence1 {
 
   private long mN = 0;
 

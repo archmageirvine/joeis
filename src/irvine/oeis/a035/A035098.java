@@ -2,13 +2,13 @@ package irvine.oeis.a035;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035098 Near-Bell numbers: partitions of an n-multiset with multiplicities 1, 1, 1, ..., 1, 2.
  * @author Sean A. Irvine
  */
-public class A035098 implements Sequence {
+public class A035098 extends Sequence1 {
 
   private long mN = -2;
 

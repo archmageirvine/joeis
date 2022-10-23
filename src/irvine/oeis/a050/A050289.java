@@ -5,14 +5,14 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A050289 Zeroless pandigital numbers: numbers containing the digits 1-9 (each appearing at least once) and no 0's.
  * @author Sean A. Irvine
  */
-public class A050289 implements Sequence {
+public class A050289 extends Sequence1 {
 
   // Uses a permutation approach with increasing numbers of (extra) digits.
   // At any time, there can be more than one Permutation engine in play, with

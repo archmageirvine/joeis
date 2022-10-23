@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034710 Positive numbers for which the sum of digits equals the product of digits.
  * @author Sean A. Irvine
  */
-public class A034710 implements Sequence {
+public class A034710 extends Sequence1 {
 
   private long mN = 0;
   

@@ -1,13 +1,13 @@
 package irvine.oeis.a009;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009005 All natural numbers except 1, 2 and 4.
  * @author Sean A. Irvine
  */
-public class A009005 implements Sequence {
+public class A009005 extends Sequence1 {
 
   private Z mN = Z.TWO;
 

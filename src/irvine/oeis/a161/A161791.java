@@ -3,13 +3,13 @@ package irvine.oeis.a161;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A161791 Numbers k such that if k = a*b, then a+b = reversal(k) for some integers a,b &gt; 1.
  * @author Sean A. Irvine
  */
-public class A161791 implements Sequence {
+public class A161791 extends Sequence1 {
 
   private long mN = 3;
 

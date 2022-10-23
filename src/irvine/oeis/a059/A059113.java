@@ -9,13 +9,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059113 Numbers that are the sum of the divisors of two distinct coprime squares.
  * @author Sean A. Irvine
  */
-public class A059113 implements Sequence {
+public class A059113 extends Sequence1 {
 
   private final TreeMap<Z, List<Long>> mA = new TreeMap<>();
   private long mN = 2;

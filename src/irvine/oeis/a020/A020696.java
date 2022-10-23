@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020696 Let a,b,c,...k be all divisors of n; a(n) = (a+1)*(b+1)*...*(k+1).
  * @author Sean A. Irvine
  */
-public class A020696 implements Sequence {
+public class A020696 extends Sequence1 {
 
   private long mN = 0;
 

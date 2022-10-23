@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006027 Number of directed column-convex polyominoes with perimeter 2n+2.
  * @author Sean A. Irvine
  */
-public class A006027 implements Sequence {
+public class A006027 extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C1 = Polynomial.create(-2, 2);

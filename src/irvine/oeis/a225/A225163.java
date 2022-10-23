@@ -2,13 +2,13 @@ package irvine.oeis.a225;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A225163 Denominators of the sequence s(n) of the sum resp. product of fractions f(n) defined recursively by f(1) = 3/1; f(n+1) is chosen so that the sum and the product of the first n terms of the sequence are equal.
  * @author Georg Fischer
  */
-public class A225163 implements Sequence {
+public class A225163 extends Sequence1 {
 
   private int mN;
   private int mNum;

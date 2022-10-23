@@ -3,13 +3,13 @@ package irvine.oeis.a052;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052099 Smallest nonzero square with n distinct digits each occurring exactly n times.
  * @author Sean A. Irvine
  */
-public class A052099 implements Sequence {
+public class A052099 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002230 Primes with record values of the least positive primitive root.
  * @author Sean A. Irvine
  */
-public class A002230 implements Sequence {
+public class A002230 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.ONE;

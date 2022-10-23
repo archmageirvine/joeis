@@ -3,13 +3,13 @@ package irvine.oeis.a028;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028352 A Golomb-like recurrence that decreases infinitely often.
  * @author Sean A. Irvine
  */
-public class A028352 implements Sequence {
+public class A028352 extends Sequence1 {
 
   private static final CR LOG_THREE = CR.THREE.log();
   private long mN = 0;

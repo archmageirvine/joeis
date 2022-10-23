@@ -3,6 +3,7 @@ package irvine.oeis.a275;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002025;
 import irvine.oeis.a002.A002046;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002046;
  * A275315 Average of amicable pairs (x,y), ordered by the smaller value x given in A002025.
  * @author Georg Fischer
  */
-public class A275315 implements Sequence {
+public class A275315 extends Sequence1 {
 
   final Sequence mA002025 = new A002025();
   final Sequence mA002046 = new A002046();

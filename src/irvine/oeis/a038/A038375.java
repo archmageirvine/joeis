@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038375 Maximal number of spanning paths in a tournament on n nodes.
  * @author Sean A. Irvine
  */
-public class A038375 implements Sequence {
+public class A038375 extends Sequence1 {
 
   // Cf. https://codegolf.stackexchange.com/questions/203179/spanning-paths-in-a-tournament-on-n-nodes
 

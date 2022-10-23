@@ -2,14 +2,14 @@ package irvine.oeis.a014;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003422;
 
 /**
  * A014619 Exponential generating function is -f(x) * int(exp(exp(-t)-1),t,0,x) where f(x) = exp(1-x-exp(-x)) is an exponential generating function for A014182.
  * @author Sean A. Irvine
  */
-public class A014619 implements Sequence {
+public class A014619 extends Sequence1 {
 
   private long mN = 1;
 

@@ -3,6 +3,7 @@ package irvine.oeis.a137;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a001.A001358;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001358;
  * A137701 a(n) = semiprime(n)^prime(n).
  * @author Georg Fischer
  */
-public class A137701 implements Sequence {
+public class A137701 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA001358 = new A001358();

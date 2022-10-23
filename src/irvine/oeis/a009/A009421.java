@@ -1,13 +1,13 @@
 package irvine.oeis.a009;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009421 Cubes, not ending in 0, formed by concatenating other cubes.
  * @author Sean A. Irvine
  */
-public class A009421 implements Sequence {
+public class A009421 extends Sequence1 {
 
   private Z mN = Z.valueOf(21);
 

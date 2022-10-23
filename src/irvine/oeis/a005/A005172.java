@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005172 Number of labeled rooted trees of subsets of an n-set.
  * @author Sean A. Irvine
  */
-public class A005172 implements Sequence {
+public class A005172 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

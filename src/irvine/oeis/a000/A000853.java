@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000853 Number of n-input 2-output switching networks under action of complementing group C(2,n) on inputs and S(2) and C(2,2) on outputs.
  * @author Sean A. Irvine
  */
-public class A000853 implements Sequence {
+public class A000853 extends Sequence1 {
 
   private int mN = 0;
 

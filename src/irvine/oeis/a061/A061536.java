@@ -3,13 +3,14 @@ package irvine.oeis.a061;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046992;
 
 /**
  * A061536 a(1) = 1 and a(n) = a(n-1) + (the number of primes &lt;= n) for n &gt; 1.
  * @author Georg Fischer
  */
-public class A061536 implements Sequence {
+public class A061536 extends Sequence1 {
 
   final Sequence mA046992 = new A046992();
   @Override

@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002480 Numbers of form 2x^2 + 3y^2.
  * @author Sean A. Irvine
  */
-public class A002480 implements Sequence {
+public class A002480 extends Sequence1 {
 
   private long mN = -1;
 

@@ -6,13 +6,13 @@ import java.util.Iterator;
 import irvine.math.polynomial.IrreduciblePolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002475 Numbers k such that x^k + x + 1 is irreducible over GF(2).
  * @author Sean A. Irvine
  */
-public class A002475 implements Sequence {
+public class A002475 extends Sequence1 {
 
   // This is very slow...
 

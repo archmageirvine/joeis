@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038770 Numbers divisible by at least one of their digits.
  * @author Sean A. Irvine
  */
-public class A038770 implements Sequence {
+public class A038770 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

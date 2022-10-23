@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051833 Primes of form (2*10^(5n) - 10^(4n) + 2*10^(3n) + 10^(2n) + 10^n + 1)/3.
  * @author Sean A. Irvine
  */
-public class A051833 implements Sequence {
+public class A051833 extends Sequence1 {
 
   private int mN = -1;
 

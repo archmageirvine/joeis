@@ -4,13 +4,13 @@ import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057866 Sum_{k&gt;=1} 1/(tanh(k*Pi) * k^(4n-1)) = Pi^(4n-1)*A057866(n)/A057867(n).
  * @author Sean A. Irvine
  */
-public class A057866 implements Sequence {
+public class A057866 extends Sequence1 {
 
   private final BernoulliSequence mB = new BernoulliSequence(0);
   private int mN = -1;

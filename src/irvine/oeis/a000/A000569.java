@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000569 Number of graphical partitions of 2n.
  * @author Sean A. Irvine
  */
-public class A000569 implements Sequence {
+public class A000569 extends Sequence1 {
 
   // Using recurrence derived by Barnes and Savage
 

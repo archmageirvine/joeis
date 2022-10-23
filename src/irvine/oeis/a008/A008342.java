@@ -1,7 +1,7 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicIntArray;
 
@@ -9,7 +9,7 @@ import irvine.util.array.DynamicIntArray;
  * A008342 Minimal number of shift, add and subtract operations to multiply by n.
  * @author Sean A. Irvine
  */
-public class A008342 implements Sequence {
+public class A008342 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final DynamicIntArray mMin = new DynamicIntArray();

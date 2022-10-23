@@ -3,13 +3,14 @@ package irvine.oeis.a092;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046133;
 
 /**
  * A092216 Primes of the form p + 12 where p is a prime.
  * @author Georg Fischer
  */
-public class A092216 implements Sequence {
+public class A092216 extends Sequence1 {
 
   final Sequence mA046133 = new A046133();
   @Override

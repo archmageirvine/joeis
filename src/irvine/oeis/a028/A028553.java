@@ -1,14 +1,14 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A028553 Numbers k such that k*(k+3) is a palindrome.
  * @author Sean A. Irvine
  */
-public class A028553 implements Sequence {
+public class A028553 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
   

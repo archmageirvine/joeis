@@ -3,6 +3,7 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003958;
 import irvine.oeis.a023.A023900;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a023.A023900;
  * A326297 If n = Product (p_j^k_j) then a(n) = Product ((p_j - 1)^(k_j - 1)).
  * @author Georg Fischer
  */
-public class A326297 implements Sequence {
+public class A326297 extends Sequence1 {
 
   final Sequence mA003958 = new A003958();
   final Sequence mA023900 = new A023900();

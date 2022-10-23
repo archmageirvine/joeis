@@ -3,6 +3,7 @@ package irvine.oeis.a167;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a008.A008475;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a008.A008475;
  * A167515 The sum over the divisors of n, except the maximum-prime-power divisors collected in A008475.
  * @author Georg Fischer
  */
-public class A167515 implements Sequence {
+public class A167515 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA008475 = new A008475();

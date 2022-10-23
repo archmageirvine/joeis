@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056032 Trimorphic but not bimorphic nor automorphic.
  * @author Sean A. Irvine
  */
-public class A056032 implements Sequence {
+public class A056032 extends Sequence1 {
 
   private long mMod = 10;
   private long mN = 1;

@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020493 Numbers n such that d(n) (number of divisors) divides phi(n) (Euler function) divides sigma(n) (sum of divisors).
  * @author Sean A. Irvine
  */
-public class A020493 implements Sequence {
+public class A020493 extends Sequence1 {
 
   private long mN = 0;
 

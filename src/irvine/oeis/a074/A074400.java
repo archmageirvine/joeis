@@ -3,13 +3,14 @@ package irvine.oeis.a074;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 
 /**
  * A074400 Sum of the even divisors of 2n.
  * @author Georg Fischer
  */
-public class A074400 implements Sequence {
+public class A074400 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   @Override

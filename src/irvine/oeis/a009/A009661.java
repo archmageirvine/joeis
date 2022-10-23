@@ -1,13 +1,13 @@
 package irvine.oeis.a009;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009661 Smallest number m such that m^m+1 is divisible by n.
  * @author Sean A. Irvine
  */
-public class A009661 implements Sequence {
+public class A009661 extends Sequence1 {
 
   private long mN = 0;
 

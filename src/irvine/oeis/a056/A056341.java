@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056341 Number of bracelets of length n using a maximum of six different colored beads.
  * @author Sean A. Irvine
  */
-public class A056341 implements Sequence {
+public class A056341 extends Sequence1 {
 
   private long mN = 0;
 

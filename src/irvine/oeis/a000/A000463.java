@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000463 n followed by n^2.
  * @author Sean A. Irvine
  */
-public class A000463 implements Sequence {
+public class A000463 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   private boolean mSquareNext = false;

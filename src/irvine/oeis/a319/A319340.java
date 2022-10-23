@@ -3,6 +3,7 @@ package irvine.oeis.a319;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051953;
 import irvine.oeis.a318.A318833;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a318.A318833;
  * A319340 Sum of Euler totient function and its Dirichlet inverse: a(n) = A000010(n) + A023900(n).
  * @author Georg Fischer
  */
-public class A319340 implements Sequence {
+public class A319340 extends Sequence1 {
 
   final Sequence mA051953 = new A051953();
   final Sequence mA318833 = new A318833();

@@ -6,13 +6,13 @@ import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A253901 a(n) = Product_{d divides n} ((d-1)!)^moebius(n/d).
  * @author Georg Fischer
  */
-public class A253901 implements Sequence {
+public class A253901 extends Sequence1 {
 
   private int mN = 0;
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;

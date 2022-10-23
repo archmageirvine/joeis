@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051239 Number of ways to arrange integers 1 through n so that the sum of each adjacent pair is prime, not counting reversals.
  * @author Sean A. Irvine
  */
-public class A051239 implements Sequence {
+public class A051239 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

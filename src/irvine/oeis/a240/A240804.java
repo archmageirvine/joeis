@@ -3,12 +3,13 @@ package irvine.oeis.a240;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a070.A070826;
 /**
  * A240804 a(n) = -2 + product of first n odd primes.
  * @author Georg Fischer
  */
-public class A240804 implements Sequence {
+public class A240804 extends Sequence1 {
 
   private final Sequence mA070826 = new A070826();
   /** Construct the sequence. */

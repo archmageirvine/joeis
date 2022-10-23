@@ -3,13 +3,14 @@ package irvine.oeis.a084;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 
 /**
  * A084302 Remainder of tau(n) modulo 6.
  * @author Georg Fischer
  */
-public class A084302 implements Sequence {
+public class A084302 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   @Override

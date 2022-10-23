@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038838 Numbers that are divisible by the square of an odd prime.
  * @author Sean A. Irvine
  */
-public class A038838 implements Sequence {
+public class A038838 extends Sequence1 {
 
   private Z mN = Z.EIGHT;
 

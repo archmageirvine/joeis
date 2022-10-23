@@ -5,13 +5,13 @@ import java.util.HashSet;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A352568 Take n equally spaced points on circle, connect them by a path with n-1 line segments; sequence gives number of distinct multisets of segment lengths.
  * @author Sean A. Irvine
  */
-public class A352568 implements Sequence {
+public class A352568 extends Sequence1 {
 
   protected final HashSet<List<Integer>> mA = new HashSet<>();
   protected int mN = 0;

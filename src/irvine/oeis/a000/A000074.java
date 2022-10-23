@@ -1,14 +1,14 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A000074 Number of odd integers &lt;= 2^n of form x^2 + y^2.
  * @author Sean A. Irvine
  */
-public class A000074 implements Sequence {
+public class A000074 extends Sequence1 {
 
   private int mN = 0;
   private final long mA, mB;

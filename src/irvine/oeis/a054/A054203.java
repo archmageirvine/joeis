@@ -2,14 +2,14 @@ package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A054203 Smallest primes followed by n consecutive (unequal) prime differences, each divided by 6.
  * @author Sean A. Irvine
  */
-public class A054203 implements Sequence {
+public class A054203 extends Sequence1 {
 
   private final DynamicLongArray mFirst = new DynamicLongArray();
   private final Fast mPrime = new Fast();

@@ -3,13 +3,14 @@ package irvine.oeis.a086;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003473;
 
 /**
  * A086324 Number of n X n circulant singular matrices over GF(2).
  * @author Georg Fischer
  */
-public class A086324 implements Sequence {
+public class A086324 extends Sequence1 {
 
   final Sequence mA003473 = new A003473();
   protected long mN;

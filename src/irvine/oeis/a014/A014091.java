@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014091 Numbers that are the sum of 2 primes.
  * @author Sean A. Irvine
  */
-public class A014091 implements Sequence {
+public class A014091 extends Sequence1 {
 
   // Assumes Goldbach conjecture
 

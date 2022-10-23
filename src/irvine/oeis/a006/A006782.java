@@ -3,14 +3,14 @@ package irvine.oeis.a006;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
  * A006782 Number of polygons of length 4n on L-lattice.
  * @author Sean A. Irvine
  */
-public class A006782 implements Sequence {
+public class A006782 extends Sequence1 {
 
   // L-lattice is infinite plane like this
   //

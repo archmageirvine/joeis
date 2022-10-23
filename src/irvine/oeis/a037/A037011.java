@@ -4,13 +4,13 @@ import irvine.math.group.GaloisField;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037011 Baum-Sweet cubic sequence.
  * @author Sean A. Irvine
  */
-public class A037011 implements Sequence {
+public class A037011 extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(new GaloisField(2));
   private Polynomial<Z> mA = RING.zero();

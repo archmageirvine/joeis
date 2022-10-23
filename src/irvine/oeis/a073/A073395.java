@@ -3,6 +3,7 @@ package irvine.oeis.a073;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001414;
 import irvine.oeis.a008.A008472;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a008.A008472;
  * A073395 Product of sums of prime factors of n: with and without repetition.
  * @author Georg Fischer
  */
-public class A073395 implements Sequence {
+public class A073395 extends Sequence1 {
 
   final Sequence mA001414 = new A001414();
   final Sequence mA008472 = new A008472();

@@ -3,13 +3,14 @@ package irvine.oeis.a304;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006530;
 import irvine.oeis.a051.A051903;
 /**
  * A304180 If n = Product (p_j^k_j) then a(n) = max{p_j}^max{k_j}.
  * @author Georg Fischer
  */
-public class A304180 implements Sequence {
+public class A304180 extends Sequence1 {
 
   private final Sequence mA006530 = new A006530();
   private final Sequence mA051903 = new A051903();

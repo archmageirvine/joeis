@@ -3,6 +3,7 @@ package irvine.oeis.a118;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002144;
 import irvine.oeis.a002.A002145;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002145;
  * A118480 (n-th 4k+1 prime minus n-th 4k+3 prime less two)/4.
  * @author Georg Fischer
  */
-public class A118480 implements Sequence {
+public class A118480 extends Sequence1 {
 
   final Sequence mA002144 = new A002144();
   final Sequence mA002145 = new A002145();

@@ -2,14 +2,14 @@ package irvine.oeis.a039;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039832 Numbers k such that k and k+1 both have 4 divisors.
  * @author Sean A. Irvine
  * @author Georg Fischer
  */
-public class A039832 implements Sequence {
+public class A039832 extends Sequence1 {
 
   protected Z mParm;
   protected boolean mPrev; // whether mN-1 had mParm divisors

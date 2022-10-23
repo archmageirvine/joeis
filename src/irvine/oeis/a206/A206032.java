@@ -3,13 +3,13 @@ package irvine.oeis.a206;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A206032 a(n) = Product_{d|n} sigma(d) where sigma = A000203.
  * @author Georg Fischer
  */
-public class A206032 implements Sequence {
+public class A206032 extends Sequence1 {
 
   private int mN = 0;
 

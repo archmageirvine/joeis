@@ -3,13 +3,13 @@ package irvine.oeis.a063;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A063831 Sum of cubes of divisors is a square.
  * @author Sean A. Irvine
  */
-public class A063831 implements Sequence {
+public class A063831 extends Sequence1 {
 
   private long mN = 0;
 

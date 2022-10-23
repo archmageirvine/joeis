@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034587 Fibonacci iteration starting with (1, a(n)) leads to a "nine digits anagram".
  * @author Sean A. Irvine
  */
-public class A034587 implements Sequence {
+public class A034587 extends Sequence1 {
 
   private static final int NINE_DIGITS = 0b1111111110;
   private long mN = 717;

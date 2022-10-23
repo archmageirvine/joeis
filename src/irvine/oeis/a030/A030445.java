@@ -5,13 +5,13 @@ import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030445 Number of one-sided n-celled polyknights.
  * @author Sean A. Irvine
  */
-public class A030445 implements Sequence {
+public class A030445 extends Sequence1 {
 
   private int mN = 0;
   private final ParallelHunter mHunter = new ParallelHunter(6, () -> new Hunter(Lattices.KNIGHT, true) {

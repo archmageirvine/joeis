@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A089005 Number of partitions of n-set with at least one even block.
  * E.g.f.: exp(sinh(x))*(exp(cosh(x)-1)-1)
  * @author Georg Fischer
  */
-public class A089005 implements Sequence {
+public class A089005 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

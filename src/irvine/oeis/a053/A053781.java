@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053781 Numbers k that divide the sum of the first k composite numbers.
  * @author Sean A. Irvine
  */
-public class A053781 implements Sequence {
+public class A053781 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

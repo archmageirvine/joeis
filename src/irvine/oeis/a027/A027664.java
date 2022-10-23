@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027664 a(n)/10000000 gives sqrt(n) to 7 places.
  * @author Sean A. Irvine
  */
-public class A027664 implements Sequence {
+public class A027664 extends Sequence1 {
 
   private static final CR CR10000000 = CR.valueOf(10000000);
   private long mN = 0;

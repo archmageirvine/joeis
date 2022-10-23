@@ -3,14 +3,14 @@ package irvine.oeis.a203;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018252;
 
 /**
  * A203530 a(n) = Product_{1 &lt;= i &lt; j &lt;= n} (c(i) + c(j)); c = A002808 = composite numbers.
  * @author Georg Fischer
  */
-public class A203530 implements Sequence {
+public class A203530 extends Sequence1 {
 
   protected int mN = 0;
   private final MemorySequence mA018252 = MemorySequence.cachedSequence(new A018252());

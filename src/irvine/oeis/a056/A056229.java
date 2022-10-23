@@ -6,14 +6,14 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 
 /**
  * A056229 Hankel transform of Euler totient function (A000010).
  * @author Sean A. Irvine
  */
-public class A056229 implements Sequence {
+public class A056229 extends Sequence1 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A000010());
   private int mN = 0;

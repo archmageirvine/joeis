@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045856 Numbers whose square has initial digit '2'.
  * @author Sean A. Irvine
  */
-public class A045856 implements Sequence {
+public class A045856 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

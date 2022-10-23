@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024155 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, a+b+c=n that are right triangles.
  * @author Sean A. Irvine
  */
-public class A024155 implements Sequence {
+public class A024155 extends Sequence1 {
 
   private long mN = 0;
 

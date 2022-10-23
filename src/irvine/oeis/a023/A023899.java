@@ -5,13 +5,13 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023899 Integer values of divisor balance: Sum_{d divides k} {d / phi(d)} for numbers k in A023898.
  * @author Sean A. Irvine
  */
-public class A023899 implements Sequence {
+public class A023899 extends Sequence1 {
 
   private long mN = 0;
 

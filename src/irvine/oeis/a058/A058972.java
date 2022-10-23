@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058972 For a rational number p/q let f(p/q) = sum of aliquot divisors of p+q divided by number of divisors of p+q; sequence gives numbers k such that, starting at k/1 and iterating f, an integer is eventually reached.
  * @author Sean A. Irvine
  */
-public class A058972 implements Sequence {
+public class A058972 extends Sequence1 {
 
   private long mN = 0;
 

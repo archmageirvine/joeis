@@ -5,13 +5,13 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003814 Numbers k such that the continued fraction for sqrt(k) has odd period length.
  * @author Sean A. Irvine
  */
-public class A003814 implements Sequence {
+public class A003814 extends Sequence1 {
 
   private long mN = 1;
 

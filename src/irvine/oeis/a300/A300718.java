@@ -3,13 +3,14 @@ package irvine.oeis.a300;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 
 /**
  * A300718 M\u00f6bius transform of A010848, number of numbers k &lt;= n such that at least one prime factor of n is not a prime factor of k.
  * @author Georg Fischer
  */
-public class A300718 implements Sequence {
+public class A300718 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA300717 = new A300717();

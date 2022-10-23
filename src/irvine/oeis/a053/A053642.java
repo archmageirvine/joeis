@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053642 Rotate one binary digit to the left, calculate, then rotate one binary digit to the right.
  * @author Georg Fischer
  */
-public class A053642 implements Sequence {
+public class A053642 extends Sequence1 {
 
   protected long mN = 0L;
 

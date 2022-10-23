@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037224 Number of permutations p of {1,2,3...,n} that are fixed points under the operation of first reversing p, then taking the inverse.
  * @author Sean A. Irvine
  */
-public class A037224 implements Sequence {
+public class A037224 extends Sequence1 {
 
   private int mN = 0;
   private Z mF = Z.TWO;

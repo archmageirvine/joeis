@@ -3,13 +3,14 @@ package irvine.oeis.a134;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000043;
 
 /**
  * A134708 Even superperfect numbers divided by 2.
  * @author Georg Fischer
  */
-public class A134708 implements Sequence {
+public class A134708 extends Sequence1 {
 
   final Sequence mA000043 = new A000043();
   @Override

@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006606 Nonperiodic autocorrelation functions of length n.
  * @author Sean A. Irvine
  */
-public class A006606 implements Sequence {
+public class A006606 extends Sequence1 {
 
   private final TreeSet<short[]> mUnique = new TreeSet<>((a, b) -> {
     assert a.length == b.length;

@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053094 Primes found after n iterations in A053093.
  * @author Sean A. Irvine
  */
-public class A053094 implements Sequence {
+public class A053094 extends Sequence1 {
 
   private int mN = 0;
   private Z mM = Z.SEVEN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A010786 Floor-factorial numbers: a(n) = Product_{k=1..n} floor(n/k).
  * @author Sean A. Irvine
  */
-public class A010786 implements Sequence {
+public class A010786 extends Sequence1 {
 
   private long mN = 0;
 

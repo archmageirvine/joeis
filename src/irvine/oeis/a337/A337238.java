@@ -3,13 +3,14 @@ package irvine.oeis.a337;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a031.A031443;
 
 /**
  * A337238 Number k such that k and k+1 are both digitally balanced numbers in base 2 (A031443).
  * @author Georg Fischer
  */
-public class A337238 implements Sequence {
+public class A337238 extends Sequence1 {
 
   final Sequence mA031443 = new A031443();
   @Override

@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.math.LongUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002784 A problem in parity.
  * @author Sean A. Irvine
  */
-public class A002784 implements Sequence {
+public class A002784 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

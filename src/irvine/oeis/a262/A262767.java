@@ -3,12 +3,13 @@ package irvine.oeis.a262;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a063.A063655;
 /**
  * A262767 Minimum perimeter of a rectangle with area n and integer sides.
  * @author Georg Fischer
  */
-public class A262767 implements Sequence {
+public class A262767 extends Sequence1 {
 
   private final Sequence mA063655 = new A063655();
   @Override

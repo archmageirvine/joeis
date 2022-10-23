@@ -3,13 +3,13 @@ package irvine.oeis.a092;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A092625 Numbers with exactly three prime digits.
  * @author Georg Fischer
  */
-public class A092625 implements Sequence {
+public class A092625 extends Sequence1 {
 
   private long mN = 221;
 

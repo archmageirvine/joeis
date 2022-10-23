@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037279 If n is composite, replace n with the concatenation of its proper divisors, otherwise a(n) = n.
  * @author Sean A. Irvine
  */
-public class A037279 implements Sequence {
+public class A037279 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

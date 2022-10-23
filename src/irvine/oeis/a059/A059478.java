@@ -7,13 +7,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.IrreduciblePolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059478 Arrange irreducible polynomials over GF(2) in lexicographic order and write down the order of each polynomial.
  * @author Sean A. Irvine
  */
-public class A059478 implements Sequence {
+public class A059478 extends Sequence1 {
 
   private static final PolynomialRingField<Z> FLD = new PolynomialRingField<>(new GaloisField(2));
   private final Iterator<Polynomial<Z>> mPolys = IrreduciblePolynomials.iterator();

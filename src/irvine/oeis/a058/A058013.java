@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058013 Smallest prime p such that (n+1)^p - n^p is prime.
  * @author Sean A. Irvine
  */
-public class A058013 implements Sequence {
+public class A058013 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mN = Z.ONE;

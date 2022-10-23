@@ -3,13 +3,13 @@ package irvine.oeis.a342;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A342435 a(n) = Sum_{k=1..n} gcd(k,n)^(gcd(k,n) - 2).
  * @author Georg Fischer
  */
-public class A342435 implements Sequence {
+public class A342435 extends Sequence1 {
 
   private int mN = 0;
 

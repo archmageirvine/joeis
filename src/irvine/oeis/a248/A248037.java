@@ -1,7 +1,7 @@
 package irvine.oeis.a248;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.Date;
 
 /**
@@ -35,7 +35,7 @@ import irvine.util.string.Date;
  * @author Sean A. Irvine
  * @author David Consiglio, Jr.
  */
-public class A248037 implements Sequence {
+public class A248037 extends Sequence1 {
 
   private static final long MAX_INTERMEDIATE = (Long.MAX_VALUE - 1) / 3;
   private static final int PRECOMPUTE = 1000000;

@@ -2,13 +2,13 @@ package irvine.oeis.a042;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A042947 Gilda's numbers: numbers k such that if a Fibonacci sequence is formed with first term = a certain absolute value between decimal digits in k (A007953) and second term = sum of decimal digits in k (A040997), then k itself occurs as a term in the sequence.
  * @author Sean A. Irvine
  */
-public class A042947 implements Sequence {
+public class A042947 extends Sequence1 {
 
   private long mN = -1;
 

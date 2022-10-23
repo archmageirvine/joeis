@@ -4,12 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051999 Minimal value w such that A051953(w) = w - phi(w) is prime and w has n prime divisors.
  * @author Sean A. Irvine
  */
-public class A051999 implements Sequence {
+public class A051999 extends Sequence1 {
 
   private MemorySequence mSeq = new MemorySequence() {
     private final Sequence mA = new A051953();

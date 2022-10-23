@@ -3,13 +3,14 @@ package irvine.oeis.a129;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a034.A034460;
 
 /**
  * A129468 Unitary abundance of n.
  * @author Georg Fischer
  */
-public class A129468 implements Sequence {
+public class A129468 extends Sequence1 {
 
   final Sequence mA034460 = new A034460();
   protected long mN;

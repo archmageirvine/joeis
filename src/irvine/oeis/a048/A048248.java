@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048248 Possible traces of n-step walks on 1-D lattice, ignoring translations.
  * @author Sean A. Irvine
  */
-public class A048248 implements Sequence {
+public class A048248 extends Sequence1 {
 
   private int mN = 0;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038871 Triangle read by rows: T(n,k) = number of orbits of order k under doubling map which remain in a semicircle, with k dividing n.
  * @author Sean A. Irvine
  */
-public class A038871 implements Sequence {
+public class A038871 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

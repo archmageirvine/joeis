@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011776 a(1) = 1; for n &gt; 1, a(n) is defined by the property that n^a(n) divides n! but n^(a(n)+1) does not.
  * @author Sean A. Irvine
  */
-public class A011776 implements Sequence {
+public class A011776 extends Sequence1 {
 
   private long mN = 0;
   private Z mF = Z.ONE;

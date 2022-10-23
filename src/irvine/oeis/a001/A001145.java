@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001145 Describe the previous term! (method A - initial term is 7).
  * @author Sean A. Irvine
  */
-public class A001145 implements Sequence {
+public class A001145 extends Sequence1 {
 
   private Z mPrev = null;
 

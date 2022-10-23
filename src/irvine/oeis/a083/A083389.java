@@ -5,13 +5,13 @@ import java.util.Arrays;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A083389 Numbers n such that the number formed by the digits of 2n sorted in descending order is equal to the sum of the divisors of n after the digits of each divisor have been sorted in descending order (all zeros dropped).
  * @author Sean A. Irvine
  */
-public class A083389 implements Sequence {
+public class A083389 extends Sequence1 {
 
   private long mN = 36;
   private final StringBuilder mBuffer = new StringBuilder();

@@ -3,13 +3,14 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007147;
 
 /**
  * A059736 A class of polytopal spheres.
  * @author Georg Fischer
  */
-public class A059736 implements Sequence {
+public class A059736 extends Sequence1 {
 
   final Sequence mA007147 = new A007147();
   protected long mN;

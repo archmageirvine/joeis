@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001320 Number of self-complementary Boolean functions of n variables: see Comments for precise definition.
  * @author Sean A. Irvine
  */
-public class A001320 implements Sequence {
+public class A001320 extends Sequence1 {
 
   private int mN = 0;
 

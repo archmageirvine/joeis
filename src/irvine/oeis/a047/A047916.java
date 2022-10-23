@@ -3,13 +3,13 @@ package irvine.oeis.a047;
 import irvine.math.LongUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A047916 Triangular array read by rows: a(n,k) = phi(n/k)*(n/k)^k*k! if k|n else 0 (1&lt;=k&lt;=n).
  * @author Sean A. Irvine
  */
-public class A047916 implements Sequence {
+public class A047916 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   protected int mN = 0;

@@ -3,13 +3,13 @@ package irvine.oeis.a203;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A203426 Reciprocal of Vandermonde determinant of (1/4,1/6,...,1/(2n+2)).
  * @author Georg Fischer
  */
-public class A203426 implements Sequence {
+public class A203426 extends Sequence1 {
 
   private int mN = 0;
 

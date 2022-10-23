@@ -3,6 +3,7 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a008.A008833;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a008.A008833;
  * A326054 a(n) = A326053(n) - n, where A326053 gives the sum of all other divisors of n except the largest square divisor.
  * @author Georg Fischer
  */
-public class A326054 implements Sequence {
+public class A326054 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA008833 = new A008833();

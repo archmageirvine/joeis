@@ -4,13 +4,13 @@ import irvine.math.IntegerUtils;
 import irvine.math.Mobius;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054664 Number of 4-ary Lyndon words of length n with trace 0 mod 4.
  * @author Sean A. Irvine
  */
-public class A054664 implements Sequence {
+public class A054664 extends Sequence1 {
 
   private int mN = 0;
 

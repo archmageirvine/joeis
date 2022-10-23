@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054904 x = a(n) is the smallest composite number such that sigma(x+6n) = sigma(x)+6n, where sigma = A000203.
  * @author Sean A. Irvine
  */
-public class A054904 implements Sequence {
+public class A054904 extends Sequence1 {
 
   private long mN = 0;
 

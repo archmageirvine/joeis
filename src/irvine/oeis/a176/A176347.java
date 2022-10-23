@@ -3,6 +3,7 @@ package irvine.oeis.a176;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001358;
 import irvine.oeis.a068.A068318;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a068.A068318;
  * A176347 n-th semiprime minus sum of its prime factors.
  * @author Georg Fischer
  */
-public class A176347 implements Sequence {
+public class A176347 extends Sequence1 {
 
   final Sequence mA001358 = new A001358();
   final Sequence mA068318 = new A068318();

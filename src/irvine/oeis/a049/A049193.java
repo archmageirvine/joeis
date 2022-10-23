@@ -1,13 +1,13 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049193 Start with 1. Convert to base 3, describe it in base 3, convert to base 10.
  * @author Sean A. Irvine
  */
-public class A049193 implements Sequence {
+public class A049193 extends Sequence1 {
 
   private Z mA = null;
 

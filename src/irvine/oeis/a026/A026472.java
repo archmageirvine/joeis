@@ -1,13 +1,13 @@
 package irvine.oeis.a026;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A026472 {3, 7} together with the numbers congruent to {1, 2} mod 12.
  * @author Sean A. Irvine
  */
-public class A026472 implements Sequence {
+public class A026472 extends Sequence1 {
 
   // Using the empirical definition of Ralf Stephan
 

@@ -1,14 +1,14 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicShortArray;
 
 /**
  * A001212 a(n) = solution to the postage stamp problem with n denominations and 2 stamps.
  * @author Sean A. Irvine
  */
-public class A001212 implements Sequence {
+public class A001212 extends Sequence1 {
 
   private final DynamicShortArray mRepresentations = new DynamicShortArray();
   private int mDenominations = 0;

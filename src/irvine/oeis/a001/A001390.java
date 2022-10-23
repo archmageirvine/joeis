@@ -3,13 +3,13 @@ package irvine.oeis.a001;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001390 Smallest multiplicative generator for quadratic residues mod prime(n).
  * @author Sean A. Irvine
  */
-public class A001390 implements Sequence {
+public class A001390 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

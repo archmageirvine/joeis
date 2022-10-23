@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034733 Dirichlet convolution of b_n=2^(n-1) with itself.
  * @author Sean A. Irvine
  */
-public class A034733 implements Sequence {
+public class A034733 extends Sequence1 {
 
   private int mN = 0;
 

@@ -2,14 +2,14 @@ package irvine.oeis.a068;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 
 /**
  * A068652 Numbers such that every cyclic permutation is a prime.
  * @author Sean A. Irvine
  */
-public class A068652 implements Sequence {
+public class A068652 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.ONE;

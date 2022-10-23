@@ -3,13 +3,14 @@ package irvine.oeis.a336;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a030.A030194;
 
 /**
  * A336531 A sieve: start with the positive integers. Let a(1)=1. Mark out the following numbers: a(1)+1, a(1)+1+2, a(1)+1+2+3, a(1)+1+2+3+4, ... . The next integer in the list not marked out is 3, so a(2)=3. Mark out the following numbers: a(2)+1, a(2)+1+2, a(2)+1+2+3, a(2)+1+2+3+4, ... . Repeat the procedure for a(3), a(4), a(5), ... .
  * @author Georg Fischer
  */
-public class A336531 implements Sequence {
+public class A336531 extends Sequence1 {
 
   final Sequence mA030194 = new A030194();
   @Override

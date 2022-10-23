@@ -3,6 +3,7 @@ package irvine.oeis.a191;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a022.A022839;
 import irvine.oeis.a108.A108598;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a108.A108598;
  * A191340 (A022839 mod 2)+(A108598 mod 2).
  * @author Georg Fischer
  */
-public class A191340 implements Sequence {
+public class A191340 extends Sequence1 {
 
   final Sequence mA022839 = new A022839();
   final Sequence mA108598 = new A108598();

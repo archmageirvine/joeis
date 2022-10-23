@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007602 Numbers that are divisible by the product of their digits.
  * @author Sean A. Irvine
  */
-public class A007602 implements Sequence {
+public class A007602 extends Sequence1 {
 
   private long mN = 0;
 

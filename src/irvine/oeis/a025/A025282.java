@@ -2,7 +2,7 @@ package irvine.oeis.a025;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 import irvine.util.string.StringUtils;
 
@@ -10,7 +10,7 @@ import irvine.util.string.StringUtils;
  * A025282 Smallest number requiring n Fibonacci numbers to build using + and *.
  * @author Sean A. Irvine
  */
-public class A025282 implements Sequence {
+public class A025282 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final LongDynamicByteArray mComplexity = new LongDynamicByteArray();

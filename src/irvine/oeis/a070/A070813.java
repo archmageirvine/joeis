@@ -3,13 +3,14 @@ package irvine.oeis.a070;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000215;
 
 /**
  * A070813 Fermat primes minus 3.
  * @author Georg Fischer
  */
-public class A070813 implements Sequence {
+public class A070813 extends Sequence1 {
 
   final Sequence mA000215 = new A000215();
   @Override

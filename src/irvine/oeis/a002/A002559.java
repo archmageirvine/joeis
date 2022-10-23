@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002559 Markoff (or Markov) numbers: union of positive integers x, y, z satisfying x^2 + y^2 + z^2 = 3*x*y*z.
  * @author Sean A. Irvine
  */
-public class A002559 implements Sequence {
+public class A002559 extends Sequence1 {
 
   private final ArrayList<Z> mMarkov = new ArrayList<>();
   private final TreeSet<Z> mNewValues = new TreeSet<>();

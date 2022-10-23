@@ -4,14 +4,14 @@ package irvine.oeis.a159;
 import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A159553 a(n) = Sum_{k=0..n} binomial(n,k) * gcd(n,k).
  * For the purpose of this sequence, gcd(n, 0) = n.
  * @author Georg Fischer
  */
-public class A159553 implements Sequence {
+public class A159553 extends Sequence1 {
 
   private int mN = 0;
 

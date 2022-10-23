@@ -3,12 +3,13 @@ package irvine.oeis.a115;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a096.A096936;
 /**
  * A115979 Expansion of (1 - theta_4(q)*theta_4(q^3))/2 in powers of q.
  * @author Georg Fischer
  */
-public class A115979 implements Sequence {
+public class A115979 extends Sequence1 {
 
   private final Sequence mA096936 = new A096936();
   protected long mN;

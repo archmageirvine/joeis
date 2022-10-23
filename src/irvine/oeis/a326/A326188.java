@@ -3,12 +3,13 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A326188 a(n) = A001065(n) - A003557(n), where A001065(n) = the sum of proper divisors of n, and A003557(n) = n divided by its largest squarefree divisor.
  * @author Georg Fischer
  */
-public class A326188 implements Sequence {
+public class A326188 extends Sequence1 {
 
   final Sequence mA326187 = new A326187();
   protected long mN;

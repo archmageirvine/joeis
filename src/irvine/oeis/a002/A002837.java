@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002837 Numbers k such that k^2 - k + 41 is prime.
  * @author Sean A. Irvine
  */
-public class A002837 implements Sequence {
+public class A002837 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

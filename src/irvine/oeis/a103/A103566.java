@@ -2,13 +2,14 @@ package irvine.oeis.a103;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a039.A039701;
 
 /**
  * A103566 Sum of the primes &gt; 5 modulo 3.
  * @author Georg Fischer
  */
-public class A103566 implements Sequence {
+public class A103566 extends Sequence1 {
 
   private int mN;
   private Sequence mSeq;

@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A083759 Primes arising in A083758.
  * @author Sean A. Irvine
  */
-public class A083759 implements Sequence {
+public class A083759 extends Sequence1 {
 
   private final HashSet<Long> mUsed = new HashSet<>();
   {

@@ -3,13 +3,14 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000190;
 
 /**
  * A053166 Smallest positive integer for which n divides a(n)^4.
  * @author Georg Fischer
  */
-public class A053166 implements Sequence {
+public class A053166 extends Sequence1 {
 
   final Sequence mA000190 = new A000190();
   protected long mN;

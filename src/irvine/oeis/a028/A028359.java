@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028359 Two-bell analog of A028355.
  * @author Sean A. Irvine
  */
-public class A028359 implements Sequence {
+public class A028359 extends Sequence1 {
 
   private long mN = 0;
   private int mM = 0;

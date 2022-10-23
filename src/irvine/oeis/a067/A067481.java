@@ -1,13 +1,13 @@
 package irvine.oeis.a067;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A067481 Powers of 3 with initial digit 3.
  * @author Georg Fischer
  */
-public class A067481 implements Sequence {
+public class A067481 extends Sequence1 {
 
   private int mBase;
   private int mDigit;

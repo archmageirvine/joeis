@@ -3,13 +3,14 @@ package irvine.oeis.a124;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000043;
 
 /**
  * A124477 Numbers k such that 24k+7 is a Mersenne prime (A000668).
  * @author Georg Fischer
  */
-public class A124477 implements Sequence {
+public class A124477 extends Sequence1 {
 
   final Sequence mA000043 = new A000043();
   /** Construct the sequence. */

@@ -3,13 +3,13 @@ package irvine.oeis.a057;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057531 Numbers whose sum of digits and number of divisors are equal.
  * @author Sean A. Irvine
  */
-public class A057531 implements Sequence {
+public class A057531 extends Sequence1 {
 
   private long mN = 0;
 

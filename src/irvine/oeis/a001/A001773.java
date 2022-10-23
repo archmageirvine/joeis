@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001773 Numbers k such that 13*2^k - 1 is prime.
  * @author Sean A. Irvine
  */
-public class A001773 implements Sequence {
+public class A001773 extends Sequence1 {
 
   private Z mP = Z.valueOf(13 * 2);
   private long mN = 1;

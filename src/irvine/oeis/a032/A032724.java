@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032724 Numbers k such that k prefixed by '8' and followed by '7' is prime.
  * @author Sean A. Irvine
  */
-public class A032724 implements Sequence {
+public class A032724 extends Sequence1 {
 
   private long mN = -1;
 

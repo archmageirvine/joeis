@@ -3,12 +3,13 @@ package irvine.oeis.a318;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007814;
 /**
  * A318656 The 2-adic valuation of ratio A318649(n)/A318512(n); a(n) = 2*A007814(n) - A046645(n).
  * @author Georg Fischer
  */
-public class A318656 implements Sequence {
+public class A318656 extends Sequence1 {
 
   private final Sequence mA007814 = new A007814();
   private final Sequence mA318440 = new A318440();

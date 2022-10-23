@@ -2,13 +2,13 @@ package irvine.oeis.a105;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A105290 Numbers n such that prime(n+1) == 4 (mod n).
  * @author Sean A. Irvine
  */
-public class A105290 implements Sequence {
+public class A105290 extends Sequence1 {
 
   private long mN = 0;
   private long mSP = 7;

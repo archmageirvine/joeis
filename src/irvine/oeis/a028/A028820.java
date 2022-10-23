@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028820 Squares with digits in nondecreasing order.
  * @author Sean A. Irvine
  */
-public class A028820 implements Sequence {
+public class A028820 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

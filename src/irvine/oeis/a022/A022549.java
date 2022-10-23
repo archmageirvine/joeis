@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A022549 Sum of a square and a nonnegative cube.
  * @author Sean A. Irvine
  */
-public class A022549 implements Sequence {
+public class A022549 extends Sequence1 {
 
   private long mN = -1;
 

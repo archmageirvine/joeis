@@ -2,14 +2,14 @@ package irvine.oeis.a037;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A037183 Smallest number that is palindromic (with at least 2 digits) in n bases.
  * @author Sean A. Irvine
  */
-public class A037183 implements Sequence {
+public class A037183 extends Sequence1 {
 
   private final DynamicLongArray mFirsts = new DynamicLongArray();
   private int mN = 0;

@@ -3,14 +3,14 @@ package irvine.oeis.a066;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 
 /**
  * A066780 a(n) = Product_{k=1..n} sigma(k); sigma(k) is the sum of the positive divisors of n.
  * @author Georg Fischer
  */
-public class A066780 implements Sequence {
+public class A066780 extends Sequence1 {
 
   private int mN = 0;
   private final MemorySequence mSeq = MemorySequence.cachedSequence(new A000203());

@@ -3,13 +3,14 @@ package irvine.oeis.a134;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004214;
 
 /**
  * A134739 Cubes of (positive numbers that are not the sum of three nonzero squares), that is, the terms of A004214, cubed.
  * @author Georg Fischer
  */
-public class A134739 implements Sequence {
+public class A134739 extends Sequence1 {
 
   final Sequence mA004214 = new A004214();
   @Override

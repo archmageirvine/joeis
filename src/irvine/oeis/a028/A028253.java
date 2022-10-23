@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028253 n mod Fibonacci(n).
  * @author Sean A. Irvine
  */
-public class A028253 implements Sequence {
+public class A028253 extends Sequence1 {
 
   private long mN = 0;
 

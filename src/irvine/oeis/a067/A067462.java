@@ -1,13 +1,13 @@
 package irvine.oeis.a067;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A067462 a(n) = (1! + 2! + ... + (n-1)!) mod n.
  * @author Sean A. Irvine
  */
-public class A067462 implements Sequence {
+public class A067462 extends Sequence1 {
 
   private long mN = 0;
 

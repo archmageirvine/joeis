@@ -3,13 +3,14 @@ package irvine.oeis.a307;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a276.A276518;
 
 /**
  * A307949 Number of (undirected) Hamiltonian paths in the n-transposition graph.
  * @author Georg Fischer
  */
-public class A307949 implements Sequence {
+public class A307949 extends Sequence1 {
 
   final Sequence mA276518 = new A276518();
   @Override

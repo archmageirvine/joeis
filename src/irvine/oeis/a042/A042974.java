@@ -2,13 +2,13 @@ package irvine.oeis.a042;
 // manually 2021-03-04
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A042974 n 1's followed by a 2.
  * @author Georg Fischer
  */
-public class A042974 implements Sequence {
+public class A042974 extends Sequence1 {
 
   private int mLen1; // length of current block of 1's
   private int mCount1; // index in current block of 1's

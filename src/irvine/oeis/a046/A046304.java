@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046304 Divisible by at least 5 primes (counted with multiplicity).
  * @author Sean A. Irvine
  */
-public class A046304 implements Sequence {
+public class A046304 extends Sequence1 {
 
   private long mN = 31;
 

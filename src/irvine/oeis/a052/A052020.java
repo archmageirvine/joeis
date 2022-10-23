@@ -3,13 +3,13 @@ package irvine.oeis.a052;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052020 Sum of digits of k is a prime proper factor of k.
  * @author Sean A. Irvine
  */
-public class A052020 implements Sequence {
+public class A052020 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 11;

@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007457 Number of (j,k): j+k=n, (j,n)=(k,n)=1, j,k squarefree.
  * @author Sean A. Irvine
  */
-public class A007457 implements Sequence {
+public class A007457 extends Sequence1 {
 
   private long mN = 0;
 

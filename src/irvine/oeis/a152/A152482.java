@@ -3,13 +3,14 @@ package irvine.oeis.a152;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014092;
 
 /**
  * A152482 Even numbers which are not the sum of 2 even semiprimes.
  * @author Georg Fischer
  */
-public class A152482 implements Sequence {
+public class A152482 extends Sequence1 {
 
   final Sequence mA014092 = new A014092();
   @Override

@@ -6,13 +6,13 @@ import java.util.Set;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059751 Grimm numbers (2): a(n) = largest k so that for each composite m in {n+1, n+2, ..., n+k} there corresponds a different divisor d_m with 1 &lt; d_m &lt; m.
  * @author Sean A. Irvine
  */
-public class A059751 implements Sequence {
+public class A059751 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

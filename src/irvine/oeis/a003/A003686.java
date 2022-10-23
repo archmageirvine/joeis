@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003686 Number of genealogical 1-2 rooted trees of height n.
  * @author Sean A. Irvine
  */
-public class A003686 implements Sequence {
+public class A003686 extends Sequence1 {
 
   private Z mA = null;
   private Z mB = null;

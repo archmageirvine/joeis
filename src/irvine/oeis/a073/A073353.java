@@ -3,13 +3,14 @@ package irvine.oeis.a073;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007947;
 
 /**
  * A073353 Sum of n and its squarefree kernel.
  * @author Georg Fischer
  */
-public class A073353 implements Sequence {
+public class A073353 extends Sequence1 {
 
   final Sequence mA007947 = new A007947();
   protected long mN;

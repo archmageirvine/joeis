@@ -3,13 +3,14 @@ package irvine.oeis.a060;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a011.A011776;
 
 /**
  * A060067 Largest power of n which divides n!.
  * @author Georg Fischer
  */
-public class A060067 implements Sequence {
+public class A060067 extends Sequence1 {
 
   final Sequence mA011776 = new A011776();
   protected long mN;

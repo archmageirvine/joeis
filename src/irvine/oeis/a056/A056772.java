@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056772 Numbers n such that phi(n+4) = phi(n) + 4.
  * @author Sean A. Irvine
  */
-public class A056772 implements Sequence {
+public class A056772 extends Sequence1 {
 
   private long mN = 2;
 

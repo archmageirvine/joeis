@@ -2,6 +2,7 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000988;
 import irvine.oeis.a234.A234006;
@@ -13,7 +14,7 @@ import irvine.oeis.a234.A234008;
  * a(n) = 2*A000988(n) - M(n) -2*(R90(n) + R180(n))
  * @author jmason
  */
-public class A001071 implements Sequence {
+public class A001071 extends Sequence1 {
 
   private int mN = 0;
   private final Sequence mA000988 = new SkipSequence(new A000988(), 1); // valid for all values of n

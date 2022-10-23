@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A164649 Numbers n such that sigma(n)/phi(n) = 36/25.
  * @author Sean A. Irvine
  */
-public class A164649 implements Sequence {
+public class A164649 extends Sequence1 {
 
   private static final Z TWENTY_FIVE = Z.valueOf(25);
   private static final Z THIRTY_SIX = Z.valueOf(36);

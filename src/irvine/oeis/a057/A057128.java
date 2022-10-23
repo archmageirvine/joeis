@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057128 Numbers n such that -3 is a square mod n.
  * @author Sean A. Irvine
  */
-public class A057128 implements Sequence {
+public class A057128 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

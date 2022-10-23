@@ -3,14 +3,14 @@ package irvine.oeis.a051;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A051213 Numbers of the form 2^x-y^2 &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A051213 implements Sequence {
+public class A051213 extends Sequence1 {
 
   // Uses a heuristic, but any failure will be (eventually) detected
 

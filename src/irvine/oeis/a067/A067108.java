@@ -1,13 +1,13 @@
 package irvine.oeis.a067;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A067108 a(n) = a number with 2n digits with first n digits odd and the rest even, in cyclic increasing order.
  * @author Georg Fischer
  */
-public class A067108 implements Sequence {
+public class A067108 extends Sequence1 {
 
   private final int[] mOdds = {1, 3, 5, 7, 9};
   private final int[] mEves = {2, 4, 6, 8, 0};

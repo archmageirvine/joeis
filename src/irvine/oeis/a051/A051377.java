@@ -3,13 +3,13 @@ package irvine.oeis.a051;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051377 a(1)=1; for n &gt; 1, a(n) = sum of exponential divisors (or e-divisors) of n.
  * @author Sean A. Irvine
  */
-public class A051377 implements Sequence {
+public class A051377 extends Sequence1 {
 
   protected long mN = 0;
 

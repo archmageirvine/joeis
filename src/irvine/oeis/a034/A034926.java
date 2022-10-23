@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034926 Numbers n such that 101^n-100 is prime.
  * @author Sean A. Irvine
  */
-public class A034926 implements Sequence {
+public class A034926 extends Sequence1 {
 
   private Z mT = Z.valueOf(10201);
   private int mN = 2;

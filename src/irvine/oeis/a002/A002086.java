@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002086 Number of circulant tournaments on 2n+1 nodes up to Cayley isomorphism.
  * @author Sean A. Irvine
  */
-public class A002086 implements Sequence {
+public class A002086 extends Sequence1 {
 
   // After Andrew Howroyd
 

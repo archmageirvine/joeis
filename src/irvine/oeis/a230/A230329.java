@@ -3,6 +3,7 @@ package irvine.oeis.a230;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a100.A100484;
 import irvine.oeis.a217.A217622;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a217.A217622;
  * A230329 Prime(prime(2*n)) - 2*prime(n).
  * @author Georg Fischer
  */
-public class A230329 implements Sequence {
+public class A230329 extends Sequence1 {
 
   final Sequence mA100484 = new A100484();
   final Sequence mA217622 = new A217622();

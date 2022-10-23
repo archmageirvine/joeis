@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058333 Number of 3 X 3 matrices with elements from [0,...,(n-1)] satisfying the condition that the middle element of each row or column is the difference of the two end elements (in absolute value).
  * @author Sean A. Irvine
  */
-public class A058333 implements Sequence {
+public class A058333 extends Sequence1 {
 
   // After Michael S. Branicky
 

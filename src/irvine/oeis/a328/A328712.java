@@ -3,6 +3,7 @@ package irvine.oeis.a328;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a024.A024362;
 import irvine.oeis.a046.A046080;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a046.A046080;
  * A328712 Number of non-primitive Pythagorean triples with hypotenuse n.
  * @author Georg Fischer
  */
-public class A328712 implements Sequence {
+public class A328712 extends Sequence1 {
 
   final Sequence mA024362 = new A024362();
   final Sequence mA046080 = new A046080();

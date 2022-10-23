@@ -3,13 +3,14 @@ package irvine.oeis.a296;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023645;
 
 /**
  * A296966 Sum of all the parts in the partitions of n into two distinct parts such that the smaller part divides the larger.
  * @author Georg Fischer
  */
-public class A296966 implements Sequence {
+public class A296966 extends Sequence1 {
 
   final Sequence mA023645 = new A023645();
   protected long mN;

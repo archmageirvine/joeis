@@ -3,6 +3,7 @@ package irvine.oeis.a196;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a048.A048691;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a048.A048691;
  * A196524 a(n) = phi(n)*tau(n^2).
  * @author Georg Fischer
  */
-public class A196524 implements Sequence {
+public class A196524 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA048691 = new A048691();

@@ -1,13 +1,13 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015974 Numbers k that divide 4^k + 1, k not a power of 5.
  * @author Sean A. Irvine
  */
-public class A015974 implements Sequence {
+public class A015974 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   private Z mT = Z.ONE;

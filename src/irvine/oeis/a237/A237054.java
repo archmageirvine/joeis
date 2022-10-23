@@ -1,13 +1,13 @@
 package irvine.oeis.a237;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A237054 a(1)=1, a(n) = (a(n-1) + n) XOR n.
  * @author Georg Fischer
  */
-public class A237054 implements Sequence {
+public class A237054 extends Sequence1 {
 
   private int mN = 0;
   private Z mAn1 = Z.ONE;

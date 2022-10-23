@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046076 Indices of binary undulants; numbers n such that 2^n contains the alternating sequence of digits 010... or 101...
  * @author Sean A. Irvine
  */
-public class A046076 implements Sequence {
+public class A046076 extends Sequence1 {
 
   private static final Z Z100 = Z.valueOf(100);
   private int mN = 102;

@@ -1,14 +1,14 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A003324 A nonrepetitive sequence.
  * @author Sean A. Irvine
  */
-public class A003324 implements Sequence {
+public class A003324 extends Sequence1 {
 
   private long mN = -1;
   private final LongDynamicByteArray mSeq = new LongDynamicByteArray();

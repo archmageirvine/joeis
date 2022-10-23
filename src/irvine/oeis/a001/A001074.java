@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001074 Numbers m such that Sum_{k=0..m-1} exp(2*Pi*i*k^3/m) != 0.
  * @author Sean A. Irvine
  */
-public class A001074 implements Sequence {
+public class A001074 extends Sequence1 {
 
   private int mN = 0;
 

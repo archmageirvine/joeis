@@ -1,14 +1,14 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
  * A001462 Golomb's sequence: a(n) is the number of times n occurs, starting with a(1) = 1.
  * @author Sean A. Irvine
  */
-public class A001462 implements Sequence {
+public class A001462 extends Sequence1 {
 
   private long mN = 0;
   private final LongDynamicIntArray mA = new LongDynamicIntArray();

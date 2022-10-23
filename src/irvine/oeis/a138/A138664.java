@@ -1,13 +1,13 @@
 package irvine.oeis.a138;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A138664 a(n) = number of positive integers k, k &lt;= n, where the number of one's in the binary representation of each k divides n.
  * @author Sean A. Irvine
  */
-public class A138664 implements Sequence {
+public class A138664 extends Sequence1 {
 
   private long mN = 0;
 

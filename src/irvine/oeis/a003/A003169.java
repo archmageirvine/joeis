@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003169 Number of 2-line arrays; or number of P-graphs with 2n edges.
  * @author Sean A. Irvine
  */
-public class A003169 implements Sequence {
+public class A003169 extends Sequence1 {
 
   private long mN = 0;
 

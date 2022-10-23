@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000274 Number of permutations of length n with 2 consecutive ascending pairs.
  * @author Sean A. Irvine
  */
-public class A000274 implements Sequence {
+public class A000274 extends Sequence1 {
 
   private long mN = 0;
   private Z mA = Z.ZERO;

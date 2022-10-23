@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007185 Automorphic numbers ending in digit 5: a(n) = 5^(2^n) mod 10^n.
  * @author Sean A. Irvine
  */
-public class A007185 implements Sequence {
+public class A007185 extends Sequence1 {
 
   private Z mMod = Z.ONE;
   private Z mA = null;

@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.CollectionUtils;
 
 /**
  * A044918 Positive integers whose base-2 run lengths form a palindrome.
  * @author Sean A. Irvine
  */
-public class A044918 implements Sequence {
+public class A044918 extends Sequence1 {
 
   private long mN = 0;
 

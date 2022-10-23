@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004124 Discriminant of n-th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A004124 implements Sequence {
+public class A004124 extends Sequence1 {
 
   private int mN = 0;
 

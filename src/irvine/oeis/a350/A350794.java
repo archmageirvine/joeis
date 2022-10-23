@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A350794 Number of digraphs on n unlabeled nodes with a global source and sink.
  * @author Sean A. Irvine
  */
-public class A350794 implements Sequence {
+public class A350794 extends Sequence1 {
 
   private int mN = 0;
 

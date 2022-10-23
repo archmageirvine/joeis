@@ -1,13 +1,13 @@
 package irvine.oeis.a031;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A031140 Position of rightmost 0 in 2^n increases.
  * @author Sean A. Irvine
  */
-public class A031140 implements Sequence {
+public class A031140 extends Sequence1 {
 
   private Z mMod = Z.TEN.pow(20);
   private Z mT = null;

@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A092487 a(n) = least k such that {n+1, n+2, n+3, ... n+k} has a subset the product of whose members with n is a square.
  * @author Sean A. Irvine
  */
-public class A092487 implements Sequence {
+public class A092487 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import org.apfloat.Apfloat;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000694 Related to population of numbers of form x^2 + y^2.
  * @author Sean A. Irvine
  */
-public class A000694 implements Sequence {
+public class A000694 extends Sequence1 {
 
   private static final int PRECISION = 500;
   private static final Apfloat HALF = new Apfloat("0.5", PRECISION);

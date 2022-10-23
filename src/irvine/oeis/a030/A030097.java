@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030097 Numbers k such that k^2 has only even digits.
  * @author Sean A. Irvine
  */
-public class A030097 implements Sequence {
+public class A030097 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

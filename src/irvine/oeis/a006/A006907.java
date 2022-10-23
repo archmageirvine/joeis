@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.partitions.MurnaghanNakayama;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006907 Number of zeros in character table of symmetric group S_n.
  * @author Sean A. Irvine
  */
-public class A006907 implements Sequence {
+public class A006907 extends Sequence1 {
 
   private int mN = 0;
 

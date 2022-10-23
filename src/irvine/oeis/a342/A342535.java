@@ -3,13 +3,13 @@ package irvine.oeis.a342;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A342535 a(n) = Sum_{k=1..n} phi(gcd(k, n))^3.
  * @author Georg Fischer
  */
-public class A342535 implements Sequence {
+public class A342535 extends Sequence1 {
 
   private int mN = 0;
 

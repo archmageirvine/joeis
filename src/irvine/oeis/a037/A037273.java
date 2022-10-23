@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.math.z.Z;
 import irvine.oeis.HomePrimeSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037273 Number of steps to reach a prime under "replace n with concatenation of its prime factors", or -1 if no prime is ever reached.
  * @author Sean A. Irvine
  */
-public class A037273 implements Sequence {
+public class A037273 extends Sequence1 {
 
   private long mN = 0;
 

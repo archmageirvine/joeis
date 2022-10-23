@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034027 Numbers of the form x^2+2y^2 with x &gt;= y &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A034027 implements Sequence {
+public class A034027 extends Sequence1 {
 
   private long mN = -1;
 

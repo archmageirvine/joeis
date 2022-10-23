@@ -3,13 +3,13 @@ package irvine.oeis.a001;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001599 Harmonic or Ore numbers: numbers n such that the harmonic mean of the divisors of n is an integer.
  * @author Sean A. Irvine
  */
-public class A001599 implements Sequence {
+public class A001599 extends Sequence1 {
 
   private long mN = 0;
 

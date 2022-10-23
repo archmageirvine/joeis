@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038692 Square numbers that are concatenations of two or more prime numbers.
  * @author Sean A. Irvine
  */
-public class A038692 implements Sequence {
+public class A038692 extends Sequence1 {
 
   private long mN = 4;
 

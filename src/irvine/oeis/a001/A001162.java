@@ -1,14 +1,14 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
  * A001162 Numbers containing an odd number of letters.
  * @author Sean A. Irvine
  */
-public class A001162 implements Sequence {
+public class A001162 extends Sequence1 {
 
   private int mN = -1;
 

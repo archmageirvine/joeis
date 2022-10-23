@@ -3,13 +3,14 @@ package irvine.oeis.a089;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a086.A086303;
 
 /**
  * A089559 Nonnegative numbers n such that 2*n + 15 is prime.
  * @author Georg Fischer
  */
-public class A089559 implements Sequence {
+public class A089559 extends Sequence1 {
 
   final Sequence mA086303 = new A086303();
   @Override

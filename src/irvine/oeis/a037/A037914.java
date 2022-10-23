@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037914 a(n) is the least base b&gt;=2 such that the number of distinct digits in the base b representation of n is maximized.
  * @author Sean A. Irvine
  */
-public class A037914 implements Sequence {
+public class A037914 extends Sequence1 {
 
   private int mN = 0;
 

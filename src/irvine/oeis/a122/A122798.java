@@ -3,13 +3,14 @@ package irvine.oeis.a122;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045929;
 
 /**
  * A122798 A P_5-stuttered arithmetic progression with a(n+1) = a(n) if n is a pentagonal number, a(n+1) = a(n)+4 otherwise.
  * @author Georg Fischer
  */
-public class A122798 implements Sequence {
+public class A122798 extends Sequence1 {
 
   final Sequence mA045929 = new A045929();
   protected long mN;

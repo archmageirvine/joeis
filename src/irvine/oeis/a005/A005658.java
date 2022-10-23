@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005658 If n appears so do 2n, 3n+2, 6n+3.
  * @author Sean A. Irvine
  */
-public class A005658 implements Sequence {
+public class A005658 extends Sequence1 {
 
   private final TreeSet<Z> mPriority = new TreeSet<>();
   {

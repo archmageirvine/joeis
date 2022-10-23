@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001284 Numbers of form m*k with m+1 &lt;= k &lt;= 2m-1.
  * @author Sean A. Irvine
  */
-public class A001284 implements Sequence {
+public class A001284 extends Sequence1 {
 
   private long mN = 5;
 

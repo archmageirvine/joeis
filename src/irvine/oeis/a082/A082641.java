@@ -5,13 +5,13 @@ import java.util.Arrays;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A082641 Triangle T(n,k) (n &gt;= 1, 1 &lt;= k &lt;= n) read by rows, where T(n,k) = number of basic invariants of degree k for the cyclic group of order and degree n.
  * @author Sean A. Irvine
  */
-public class A082641 implements Sequence {
+public class A082641 extends Sequence1 {
 
   // Multisets on elements {1,2,...,n} such that sum of elements in a set is 0 mod n;
   // and no subset is has sum 0 mod n.

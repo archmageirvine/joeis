@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005242 A self-generating sequence.
  * @author Sean A. Irvine
  */
-public class A005242 implements Sequence {
+public class A005242 extends Sequence1 {
 
   private final HashSet<Long> mExcluded = new HashSet<>();
   private long mA = 0;

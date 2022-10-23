@@ -4,13 +4,13 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059340 Triangle T(n,k) of numbers with e.g.f. exp((exp((1+x)*y)-1)/(1+x)), k=0..n-1.
  * @author Sean A. Irvine
  */
-public class A059340 implements Sequence {
+public class A059340 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

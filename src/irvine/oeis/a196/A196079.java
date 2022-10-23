@@ -3,6 +3,7 @@ package irvine.oeis.a196;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002181;
 import irvine.oeis.a006.A006511;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006511;
  * A196079 Difference between the largest and smallest inverse of totient function.
  * @author Georg Fischer
  */
-public class A196079 implements Sequence {
+public class A196079 extends Sequence1 {
 
   final Sequence mA002181 = new A002181();
   final Sequence mA006511 = new A006511();

@@ -2,13 +2,14 @@ package irvine.oeis.a202;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023110;
 
 /**
  * A202303 Drop the last digit of A023110(n).
  * @author Georg Fischer
  */
-public class A202303 implements Sequence {
+public class A202303 extends Sequence1 {
 
   private final Sequence mSeq;
   private final int mBase;

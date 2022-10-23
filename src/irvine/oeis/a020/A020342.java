@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020342 Vampire numbers: (definition 1): n has a nontrivial factorization using n's digits.
  * @author Sean A. Irvine
  */
-public class A020342 implements Sequence {
+public class A020342 extends Sequence1 {
 
   private Z mN = Z.valueOf(125);
 

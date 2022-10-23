@@ -2,13 +2,14 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a169.A169985;
 
 /**
  * A038669 [ n/2 ]+[ n/3 ]+[ n/4 ]+[ n/7 ]+[ n/11 ]+[ n/18 ]+[ n/29 ]+[ n/47 ]+[ n/76 ]+[ n/123 ]+[ n/199 ]+... (using Lucas numbers A000032).
  * @author Sean A. Irvine
  */
-public class A038669 implements Sequence {
+public class A038669 extends Sequence1 {
 
   private long mN = 0;
 

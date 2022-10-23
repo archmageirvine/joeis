@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.group.Monster;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014810 Multiplicity of trivial character in V_n, where V = Sum V_n is the graded module for the Monster simple group.
  * @author Sean A. Irvine
  */
-public class A014810 implements Sequence {
+public class A014810 extends Sequence1 {
 
   private int mN = 0;
 

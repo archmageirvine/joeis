@@ -3,6 +3,7 @@ package irvine.oeis.a068;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001222;
 import irvine.oeis.a020.A020639;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a020.A020639;
  * A068794 In prime factorization of n replace all primes with the least prime factor of n; a(1)=1.
  * @author Georg Fischer
  */
-public class A068794 implements Sequence {
+public class A068794 extends Sequence1 {
 
   final Sequence mA001222 = new A001222();
   final Sequence mA020639 = new A020639();

@@ -1,14 +1,14 @@
 package irvine.oeis.a067;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A067107 Smallest number whose sum of digits is n!.
  * a(n) = concatenation of (n! mod 9 ) and ( n! div 9 ) nines.
  * @author Georg Fischer
  */
-public class A067107 implements Sequence {
+public class A067107 extends Sequence1 {
 
   private int mN = 0;
   private Z mF = Z.ONE;

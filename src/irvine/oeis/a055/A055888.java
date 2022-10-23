@@ -5,13 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008284;
 
 /**
  * A055888 Invert transform of partition triangle A008284.
  * @author Sean A. Irvine
  */
-public class A055888 implements Sequence {
+public class A055888 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING_Y = new PolynomialRingField<>("y", IntegerField.SINGLETON);
   private static final PolynomialRingField<Polynomial<Z>> RING = new PolynomialRingField<>(RING_Y);

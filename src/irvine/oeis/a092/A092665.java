@@ -1,13 +1,13 @@
 package irvine.oeis.a092;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A092665 Absolute value of difference between counts of uninterrupted runs of 10 primes in A092663 and A092664.
  * @author Sean A. Irvine
  */
-public class A092665 implements Sequence {
+public class A092665 extends Sequence1 {
 
   private final A092663 mA = new A092663();
   private final A092664 mB = new A092664();

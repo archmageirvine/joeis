@@ -2,13 +2,14 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a031.A031926;
 
 /**
  * A052353 First primes of A031926 (lesser of 8-twins) with increasing distance to the next 8-twin.
  * @author Sean A. Irvine
  */
-public class A052353 implements Sequence {
+public class A052353 extends Sequence1 {
 
   private long mN = 6;
 

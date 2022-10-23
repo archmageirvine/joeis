@@ -3,13 +3,14 @@ package irvine.oeis.a110;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008864;
 
 /**
  * A110833 a(n) = (prime(n)+1)^2.
  * @author Georg Fischer
  */
-public class A110833 implements Sequence {
+public class A110833 extends Sequence1 {
 
   final Sequence mA008864 = new A008864();
   @Override

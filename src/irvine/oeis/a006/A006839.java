@@ -5,13 +5,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006839 Minimum of largest partial quotient of continued fraction for k/n, (k,n) = 1.
  * @author Sean A. Irvine
  */
-public class A006839 implements Sequence {
+public class A006839 extends Sequence1 {
 
   private long mN = 0;
 

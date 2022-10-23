@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003620 Number of iterations until 3n reaches 153 under x goes to sum of cubes of digits map.
  * @author Sean A. Irvine
  */
-public class A003620 implements Sequence {
+public class A003620 extends Sequence1 {
 
   private static final long[] DIGIT_CUBES = {0, 1, 8, 27, 64, 125, 216, 343, 512, 729};
   private long mN = 0;

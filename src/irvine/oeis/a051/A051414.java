@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051414 a(n+1) = a(n) + sum of digits of a(n)^3.
  * @author Sean A. Irvine
  */
-public class A051414 implements Sequence {
+public class A051414 extends Sequence1 {
 
   private Z mA = null;
 

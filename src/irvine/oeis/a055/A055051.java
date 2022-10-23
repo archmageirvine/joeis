@@ -4,12 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055051 Numbers of the form 2^(2i+1)*(8j+7), 2^(2i+1)*(16j+6) or 2^(2i+1)*(4j+3).
  * @author Sean A. Irvine
  */
-public class A055051 implements Sequence {
+public class A055051 extends Sequence1 {
 
   private final Sequence mASeq = new A055039();
   private final Sequence mBSeq = new Sequence() {

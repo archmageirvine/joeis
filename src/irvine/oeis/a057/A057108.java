@@ -3,6 +3,7 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002034;
 import irvine.oeis.a006.A006530;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006530;
  * A057108 Difference between the smallest number S(n) with S(n)! a multiple of n and the largest prime factor of n [taking a(1)=0].
  * @author Georg Fischer
  */
-public class A057108 implements Sequence {
+public class A057108 extends Sequence1 {
 
   final Sequence mA002034 = new A002034();
   final Sequence mA006530 = new A006530();

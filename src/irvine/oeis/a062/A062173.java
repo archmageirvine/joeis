@@ -1,13 +1,13 @@
 package irvine.oeis.a062;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A062173 a(n) = 2^(n-1) mod n.
  * @author Georg Fischer
  */
-public class A062173 implements Sequence {
+public class A062173 extends Sequence1 {
 
   private long mN;
   private Z mParm;

@@ -5,13 +5,13 @@ import irvine.math.lattice.Lattice;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038729 Configurations of linear chains in a 6-dimensional hypercubic lattice.
  * @author Sean A. Irvine
  */
-public class A038729 implements Sequence {
+public class A038729 extends Sequence1 {
 
   private static final Lattice Z6 = Lattices.hypercubic(6);
   private final SelfAvoidingWalker mWalker = new ExactContactsWalker(Z6, 0);

@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036688 Number of distinct n-digit suffixes of base-10 squares not containing the digit 0.
  * @author Sean A. Irvine
  */
-public class A036688 implements Sequence {
+public class A036688 extends Sequence1 {
 
   // Empirical, do not use to extend sequence
 

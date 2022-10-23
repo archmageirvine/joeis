@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020666 a(n)^n is the least n-th power containing every digit.
  * @author Sean A. Irvine
  */
-public class A020666 implements Sequence {
+public class A020666 extends Sequence1 {
 
   private int mN = 0;
 

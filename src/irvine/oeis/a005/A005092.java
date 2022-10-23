@@ -2,6 +2,7 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
@@ -9,7 +10,7 @@ import irvine.oeis.a000.A000045;
  * A005092 Sum of Fibonacci numbers 1,2,3,5,... that divide n.
  * @author Sean A. Irvine
  */
-public class A005092 implements Sequence {
+public class A005092 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

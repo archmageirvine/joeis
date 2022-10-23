@@ -3,13 +3,13 @@ package irvine.oeis.a001;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001583 Artiads: the primes p == 1 (mod 5) for which Fibonacci((p-1)/5) is divisible by p.
  * @author Sean A. Irvine
  */
-public class A001583 implements Sequence {
+public class A001583 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 210;

@@ -3,6 +3,7 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033676;
 import irvine.oeis.a033.A033677;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a033.A033677;
  * A056737 Minimum nonnegative integer m such that n = k*(k+m) for some positive integer k.
  * @author Georg Fischer
  */
-public class A056737 implements Sequence {
+public class A056737 extends Sequence1 {
 
   final Sequence mA033676 = new A033676();
   final Sequence mA033677 = new A033677();

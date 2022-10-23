@@ -2,13 +2,13 @@ package irvine.oeis.a030;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030996 Concatenation of n consecutive primes starting with the prime a(n) is a prime.
  * @author Sean A. Irvine
  */
-public class A030996 implements Sequence {
+public class A030996 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN = 0;

@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050977 Haupt-exponents of 5 modulo integers relatively prime to 5.
  * @author Sean A. Irvine
  */
-public class A050977 implements Sequence {
+public class A050977 extends Sequence1 {
 
   private long mN = 1;
 

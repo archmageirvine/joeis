@@ -3,13 +3,14 @@ package irvine.oeis.a102;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023515;
 
 /**
  * A102770 (p*q - 1)/2 where p and q are consecutive odd primes.
  * @author Georg Fischer
  */
-public class A102770 implements Sequence {
+public class A102770 extends Sequence1 {
 
   final Sequence mA023515 = new A023515();
   /** Construct the sequence. */

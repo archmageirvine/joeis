@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050498 Arithmetic progressions of at least 4 terms with common difference 6 having the same value of phi(x) start at these numbers.
  * @author Sean A. Irvine
  */
-public class A050498 implements Sequence {
+public class A050498 extends Sequence1 {
 
   // It is likely these are all = 0 (mod 6),
   // but we try evey value here

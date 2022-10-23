@@ -3,13 +3,14 @@ package irvine.oeis.a298;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038822;
 
 /**
  * A298009 a(n) = f(n-1,n)+(n-1)*k, n&gt;=1, where the function f(a,b) gives the number of prime numbers in the range [a*k,b*k[ with k=10^p. For this sequence we use p=2.
  * @author Georg Fischer
  */
-public class A298009 implements Sequence {
+public class A298009 extends Sequence1 {
 
   final Sequence mA038822 = new A038822();
   protected long mN;

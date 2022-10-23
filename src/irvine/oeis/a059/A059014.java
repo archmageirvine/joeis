@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059014 Numbers that have an even number of 0's and an odd number of 1's in binary expansion.
  * @author Sean A. Irvine
  */
-public class A059014 implements Sequence {
+public class A059014 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

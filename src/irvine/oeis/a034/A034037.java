@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034037 Numbers that are primitively represented by (x^2+xy+2y^2 with x &gt;= 0, y &gt;= 0).
  * @author Sean A. Irvine
  */
-public class A034037 implements Sequence {
+public class A034037 extends Sequence1 {
 
   private final TreeSet<Z> mForms = new TreeSet<>();
   private long mX = 0;

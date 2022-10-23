@@ -1,13 +1,13 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049305 Numbers k such that k is a substring of 7^k.
  * @author Sean A. Irvine
  */
-public class A049305 implements Sequence {
+public class A049305 extends Sequence1 {
 
   private long mN = 0;
   private Z mT = Z.ONE;

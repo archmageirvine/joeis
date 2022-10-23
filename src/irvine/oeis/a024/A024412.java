@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024412 Ordered Stirling numbers s(n,k) of the second kind.
  * @author Sean A. Irvine
  */
-public class A024412 implements Sequence {
+public class A024412 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   {

@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A000232 Construct a triangle as in A036262. Sequence is one less than the position of the first number larger than 2 in the n-th row (n-th difference).
  * @author Sean A. Irvine
  */
-public class A000232 implements Sequence {
+public class A000232 extends Sequence1 {
 
   private int mN = 0;
   private long mP = 1;

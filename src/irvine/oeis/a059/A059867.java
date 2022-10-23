@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059867 Number of irreducible representations of the symmetric group S_n that have odd degree.
  * @author Sean A. Irvine
  */
-public class A059867 implements Sequence {
+public class A059867 extends Sequence1 {
 
   private long mN = 0;
 

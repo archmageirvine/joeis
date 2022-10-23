@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051004 Numbers divisible both by their individual digits and by the sum of their digits.
  * @author Sean A. Irvine
  */
-public class A051004 implements Sequence {
+public class A051004 extends Sequence1 {
 
   private long mN = 0;
 

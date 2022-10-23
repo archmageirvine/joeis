@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000535 Card matching: coefficients B[n,2] of t^2 in the reduced hit polynomial A[n,n,n](t).
  * @author Sean A. Irvine
  */
-public class A000535 implements Sequence {
+public class A000535 extends Sequence1 {
 
   private int mN = 0;
 

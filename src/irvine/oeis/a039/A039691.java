@@ -1,13 +1,13 @@
 package irvine.oeis.a039;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039691 If n=x1x2...xm in base 10, n belongs to the sequence iff x1x2..xm*11=y1y2...ym and xm..x2x1*11=ym...y2y1.
  * @author Sean A. Irvine
  */
-public class A039691 implements Sequence {
+public class A039691 extends Sequence1 {
 
   private long mN = -1;
 

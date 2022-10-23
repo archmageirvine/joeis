@@ -3,13 +3,14 @@ package irvine.oeis.a320;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001863;
 
 /**
  * A320064 The number of F_2 graphs on { 1, 2, ..., n } with a unique cycle of weight 1, which corresponds to the number of reflectable bases of the root system of type D_n.
  * @author Georg Fischer
  */
-public class A320064 implements Sequence {
+public class A320064 extends Sequence1 {
 
   final Sequence mA001863 = new A001863();
   protected long mN;

@@ -4,13 +4,14 @@ import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002113;
 
 /**
  * A057943 Numbers k such that the smallest palindromic pseudoprime to base k is 101101.
  * @author Sean A. Irvine
  */
-public class A057943 implements Sequence {
+public class A057943 extends Sequence1 {
 
   private static final long PALIN = 101101; // Not a prime.
   private long mN = 1;

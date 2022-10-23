@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057475 Number of k, 1 &lt;= k &lt;= n, such that gcd(n,k) = gcd(n+1,k) = 1.
  * @author Sean A. Irvine
  */
-public class A057475 implements Sequence {
+public class A057475 extends Sequence1 {
 
   private long mN = 0;
 

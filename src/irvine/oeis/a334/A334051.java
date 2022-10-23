@@ -3,13 +3,14 @@ package irvine.oeis.a334;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a020.A020900;
 
 /**
  * A334051 The difference between the number of prime numbers in the ranges (1, p_n] and (p_n, 2*p_n], where p_n is the n-th prime.
  * @author Georg Fischer
  */
-public class A334051 implements Sequence {
+public class A334051 extends Sequence1 {
 
   final Sequence mA020900 = new A020900();
   protected long mN;

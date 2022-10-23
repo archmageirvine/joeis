@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A022338 Index of 5^n within sequence of numbers of form 3^i*5^j.
  * @author Sean A. Irvine
  */
-public class A022338 implements Sequence {
+public class A022338 extends Sequence1 {
 
   private static final CR LOG = CR.FIVE.log().divide(CR.THREE.log());
   private long mN = -1;

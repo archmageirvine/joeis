@@ -2,13 +2,13 @@ package irvine.oeis.a008;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008367 Composite but smallest prime factor &gt;= 17.
  * @author Sean A. Irvine
  */
-public class A008367 implements Sequence {
+public class A008367 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 287;

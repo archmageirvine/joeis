@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006530 Gpf(n): greatest prime dividing n, for n &gt;= 2; a(1)=1.
  * @author Sean A. Irvine
  */
-public class A006530 implements Sequence {
+public class A006530 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

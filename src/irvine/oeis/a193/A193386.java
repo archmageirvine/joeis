@@ -3,13 +3,14 @@ package irvine.oeis.a193;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a062.A062821;
 
 /**
  * A193386 Number of even divisors of phi(n).
  * @author Georg Fischer
  */
-public class A193386 implements Sequence {
+public class A193386 extends Sequence1 {
 
   final Sequence mA062821 = new A062821();
   final Sequence mA193453 = new A193453();

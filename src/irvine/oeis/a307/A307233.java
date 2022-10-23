@@ -3,13 +3,14 @@ package irvine.oeis.a307;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a130.A130032;
 
 /**
  * A307233 a(n) = Product_{k=1..n} (k^2 + k + 1) mod n.
  * @author Georg Fischer
  */
-public class A307233 implements Sequence {
+public class A307233 extends Sequence1 {
 
   final Sequence mA130032 = new A130032();
   protected long mN;

@@ -3,13 +3,13 @@ package irvine.oeis.a324;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A324981 a(n) = Product_{d|n} (d*pod(d)) where pod(k) = the product of the divisors of k (A007955).
  * @author Georg Fischer
  */
-public class A324981 implements Sequence {
+public class A324981 extends Sequence1 {
 
   private int mN = 0;
 

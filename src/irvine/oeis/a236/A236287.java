@@ -3,6 +3,7 @@ package irvine.oeis.a236;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a000.A000203;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000203;
  * A236287 a(n) = sigma(n)^tau(n), where tau(n) = A000005(n) = the number of divisors of n and sigma(n) = A000203(n) = the sum of divisors of n.
  * @author Georg Fischer
  */
-public class A236287 implements Sequence {
+public class A236287 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA000203 = new A000203();

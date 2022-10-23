@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038642 Least k such that k-th and (k+1)-st term of A038593 are the first consecutive pair that differ by n.
  * @author Sean A. Irvine
  */
-public class A038642 implements Sequence {
+public class A038642 extends Sequence1 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A038593());
   private long mN = 0;

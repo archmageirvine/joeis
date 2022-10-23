@@ -3,13 +3,14 @@ package irvine.oeis.a345;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a069.A069290;
 /**
  * A345320 Sum of the divisors of n whose square does not divide n.
  * @author Georg Fischer
  */
-public class A345320 implements Sequence {
+public class A345320 extends Sequence1 {
 
   private final Sequence mA000203 = new A000203();
   private final Sequence mA069290 = new A069290();

@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A022891 n-th prime p(k) such that p(k) + p(k+6) = p(k+2) + p(k+4).
  * @author Sean A. Irvine
  */
-public class A022891 implements Sequence {
+public class A022891 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

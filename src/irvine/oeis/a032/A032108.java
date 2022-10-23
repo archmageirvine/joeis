@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032108 Number of reversible strings with n labeled beads of 3 colors.
  * @author Sean A. Irvine
  */
-public class A032108 implements Sequence {
+public class A032108 extends Sequence1 {
 
   private long mN = 0;
   private Z mA = Z.THREE;

@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037088 Triangle read by rows: T(n,k) is number of numbers x, 2^n &lt;= x &lt; 2^(n+1), with k prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
-public class A037088 implements Sequence {
+public class A037088 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049283 a(n) is the smallest k such that phi(k)=n, where phi is Euler's totient function.
  * @author Sean A. Irvine
  */
-public class A049283 implements Sequence {
+public class A049283 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

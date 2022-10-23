@@ -5,13 +5,13 @@ import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A234012 Number of unbiased free polyominoes with 2n squares.
  * @author jmason
  */
-public class A234012 implements Sequence {
+public class A234012 extends Sequence1 {
 
   private int mN = 0;
   private final ParallelHunter mHunter = new ParallelHunter(7, () -> new Hunter(Lattices.Z2, true) {

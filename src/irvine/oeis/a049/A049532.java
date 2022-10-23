@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049532 Numbers k such that k^2 + 1 is not squarefree.
  * @author Sean A. Irvine
  */
-public class A049532 implements Sequence {
+public class A049532 extends Sequence1 {
 
   private long mN = 6;
 

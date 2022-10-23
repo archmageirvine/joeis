@@ -3,13 +3,13 @@ package irvine.oeis.a032;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032937 Numbers k whose base-2 representation Sum_{i=0..m} d(i)*2^(m-i) has d(i)=0 for all odd i, excluding 0. Here m is the position of the leading bit of k.
  * @author Sean A. Irvine
  */
-public class A032937 implements Sequence {
+public class A032937 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mLimit = Z.valueOf(base());

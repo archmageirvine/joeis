@@ -3,13 +3,14 @@ package irvine.oeis.a228;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002131;
 
 /**
  * A228274 a(n) = Sum_{d|n, n/d odd} n * d.
  * @author Georg Fischer
  */
-public class A228274 implements Sequence {
+public class A228274 extends Sequence1 {
 
   final Sequence mA002131 = new A002131();
   protected long mN;

@@ -3,14 +3,14 @@ package irvine.oeis.a057;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A057897 Numbers which can be written as m^k-k, with m, k &gt; 1.
  * @author Sean A. Irvine
  */
-public class A057897 implements Sequence {
+public class A057897 extends Sequence1 {
 
   private static final class State extends Pair<Integer, Integer> implements Comparable<State> {
 

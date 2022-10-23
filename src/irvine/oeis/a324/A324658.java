@@ -3,12 +3,13 @@ package irvine.oeis.a324;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A324658 a(n) = n - A324659(n), where A324659(n) is half of bitwise-AND of 2*n and sigma(n).
  * @author Georg Fischer
  */
-public class A324658 implements Sequence {
+public class A324658 extends Sequence1 {
 
   final Sequence mA324659 = new A324659();
   protected long mN;

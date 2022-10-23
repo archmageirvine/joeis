@@ -5,13 +5,13 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002785 Number of self-complementary oriented graphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A002785 implements Sequence {
+public class A002785 extends Sequence1 {
 
   // After Pab Ter
 

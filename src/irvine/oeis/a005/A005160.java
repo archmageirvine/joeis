@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005160 Number of alternating sign n X n matrices invariant under a quarter turn.
  * @author Sean A. Irvine
  */
-public class A005160 implements Sequence {
+public class A005160 extends Sequence1 {
 
   // An explicit search, we use 1, 2, 3 to denote the values in the matrix
   // reserving 0 for an unfilled cell.  Simple search that attempts to

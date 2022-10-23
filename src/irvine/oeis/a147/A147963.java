@@ -1,13 +1,13 @@
 package irvine.oeis.a147;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A147963 a(n) = number of n-digit numbers not divisible by any of their digits.
  * @author Sean A. Irvine
  */
-public class A147963 implements Sequence {
+public class A147963 extends Sequence1 {
 
   private long mLimit = 1;
 

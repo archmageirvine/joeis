@@ -6,7 +6,7 @@ import java.util.Set;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000670;
 import irvine.util.array.DynamicArray;
 
@@ -14,7 +14,7 @@ import irvine.util.array.DynamicArray;
  * A344900 a(n) is the number of well-formed formulas (wffs) of zeroth-order logic containing n characters (see comments).
  * @author Sean A. Irvine
  */
-public class A344900 implements Sequence {
+public class A344900 extends Sequence1 {
 
   // There is a complication arising from ignoring the outer most set of
   // parentheses. mWff1 tracks wff that do not need parentheses, while

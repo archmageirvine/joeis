@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011772 Smallest number m such that m(m+1)/2 is divisible by n.
  * @author Sean A. Irvine
  */
-public class A011772 implements Sequence {
+public class A011772 extends Sequence1 {
 
   private long mN = 0;
 

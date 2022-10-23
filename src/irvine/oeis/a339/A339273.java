@@ -3,13 +3,14 @@ package irvine.oeis.a339;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000404;
 
 /**
  * A339273 Sums of two nonzero even squares.
  * @author Georg Fischer
  */
-public class A339273 implements Sequence {
+public class A339273 extends Sequence1 {
 
   final Sequence mA000404 = new A000404();
   @Override

@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.group.QuadraticFieldUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039958 Class number of maximal order in real quadratic field of radicand n.
  * @author Sean A. Irvine
  */
-public class A039958 implements Sequence {
+public class A039958 extends Sequence1 {
 
   private long mN = 0;
 

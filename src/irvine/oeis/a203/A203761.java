@@ -1,13 +1,13 @@
 package irvine.oeis.a203;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A203761 a(n)=f(a(n-1)+1,a(n-2),a(n-3)), where f(x,y,z)=yz+zx+xy and a(1)=0, a(2)=0, a(3)=1.
  * @author Georg Fischer
  */
-public class A203761 implements Sequence {
+public class A203761 extends Sequence1 {
 
   private int mN;
   private int mAdd1;

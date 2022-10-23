@@ -3,13 +3,14 @@ package irvine.oeis.a278;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045920;
 
 /**
  * A278291 Numbers n such that n-1 has the same number of prime factors as n (with multiplicity).
  * @author Georg Fischer
  */
-public class A278291 implements Sequence {
+public class A278291 extends Sequence1 {
 
   final Sequence mA045920 = new A045920();
   @Override

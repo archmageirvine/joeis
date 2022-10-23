@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053558 Primes formed by concatenating n consecutive increasing numbers starting with a prime and ending with the next consecutive prime.
  * @author Sean A. Irvine
  */
-public class A053558 implements Sequence {
+public class A053558 extends Sequence1 {
 
   private Z mP = Z.ONE;
   private final Fast mPrime = new Fast();

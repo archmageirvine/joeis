@@ -3,13 +3,14 @@ package irvine.oeis.a176;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001157;
 
 /**
  * A176030 a(n) = n^(sigma_2(n)).
  * @author Georg Fischer
  */
-public class A176030 implements Sequence {
+public class A176030 extends Sequence1 {
 
   final Sequence mA001157 = new A001157();
   protected long mN;

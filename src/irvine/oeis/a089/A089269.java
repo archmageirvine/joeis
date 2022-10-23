@@ -2,13 +2,13 @@ package irvine.oeis.a089;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A089269 Squarefree numbers congruent to 1 or 2 mod 4.
  * @author Sean A. Irvine
  */
-public class A089269 implements Sequence {
+public class A089269 extends Sequence1 {
 
   long mN = 0;
 

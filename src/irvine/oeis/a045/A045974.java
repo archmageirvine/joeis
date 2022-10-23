@@ -7,14 +7,14 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008578;
 
 /**
  * A045974 If m = p_i^e_i, n=Product p_j^f_j, set G_m(n) = Product p_{j+i}^{f_j*e_i}; extend G_m to all m by multiplicativity; sequence gives a(n)=G_n(n).
  * @author Sean A. Irvine
  */
-public class A045974 implements Sequence {
+public class A045974 extends Sequence1 {
 
   private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A008578());
   private final Map<Z, Integer> mInverseP = new TreeMap<>();

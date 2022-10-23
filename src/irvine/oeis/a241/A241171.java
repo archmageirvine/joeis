@@ -2,13 +2,13 @@ package irvine.oeis.a241;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A241171 Triangle read by rows: Joffe's central differences of zero, T(n,k), 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
-public class A241171 implements Sequence {
+public class A241171 extends Sequence1 {
 
   protected Z joffeDifference(final int n, final int k) {
     Z s = Z.ZERO;

@@ -3,13 +3,14 @@ package irvine.oeis.a316;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007949;
 
 /**
  * A316505 a(n) is the smallest number k &gt; 1 such that k^n - 1 is divisible by 3^n.
  * @author Georg Fischer
  */
-public class A316505 implements Sequence {
+public class A316505 extends Sequence1 {
 
   final Sequence mA007949 = new A007949();
   protected long mN;

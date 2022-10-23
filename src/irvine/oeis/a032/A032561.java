@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032561 Numbers k whose decimal representation, read as a base-15 value and divided by k, yields an integer.
  * @author Sean A. Irvine
  */
-public class A032561 implements Sequence {
+public class A032561 extends Sequence1 {
 
   private long mN = 0;
 

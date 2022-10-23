@@ -3,6 +3,7 @@ package irvine.oeis.a232;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a111.A111932;
 import irvine.oeis.a121.A121443;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a121.A121443;
  * A232356 Expansion of 2/9 * c(q) * c(q^2) - q * (psi(q) * psi(q^3))^2 in powers of q where psi() is a Ramanujan theta function and c(q) is a cubic AGM theta function.
  * @author Georg Fischer
  */
-public class A232356 implements Sequence {
+public class A232356 extends Sequence1 {
 
   final Sequence mA111932 = new A111932();
   final Sequence mA121443 = new A121443();

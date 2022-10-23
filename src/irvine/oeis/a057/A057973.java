@@ -7,13 +7,13 @@ import irvine.math.lattice.Lattice;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.Polybrick;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057973 Number of polybricks: number of ways to arrange n 1 X 2 "bricks" in a wall (see illustrations).
  * @author Sean A. Irvine
  */
-public class A057973 implements Sequence {
+public class A057973 extends Sequence1 {
 
   private static final Lattice L = Lattices.Z2;
   private static final int NEIGHBOURS = L.neighbourCount(L.origin());

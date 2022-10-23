@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000523 a(n) = floor(log_2(n)).
  * @author Sean A. Irvine
  */
-public class A000523 implements Sequence {
+public class A000523 extends Sequence1 {
 
   private Z mR = Z.ZERO;
   private long mLim = 2;

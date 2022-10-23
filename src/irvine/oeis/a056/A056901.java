@@ -2,14 +2,14 @@ package irvine.oeis.a056;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A056901 Least semiperimeter s of primitive Pythagorean triangle with inradius n.
  * @author Sean A. Irvine
  */
-public class A056901 implements Sequence {
+public class A056901 extends Sequence1 {
 
   private final LongDynamicLongArray mSemiperimeter = new LongDynamicLongArray();
   private long mC = 4;

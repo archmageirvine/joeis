@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001051 Number of subgroups of order n in orthogonal group O(3).
  * @author Sean A. Irvine
  */
-public class A001051 implements Sequence {
+public class A001051 extends Sequence1 {
 
   private static final Z[] SEQ = {Z.SEVEN, Z.ONE, Z.FIVE, Z.ONE};
 

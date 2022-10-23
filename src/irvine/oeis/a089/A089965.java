@@ -3,13 +3,14 @@ package irvine.oeis.a089;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005383;
 
 /**
  * A089965 Both n + 1 and n/2 + 1 are primes.
  * @author Georg Fischer
  */
-public class A089965 implements Sequence {
+public class A089965 extends Sequence1 {
 
   final Sequence mA005383 = new A005383();
   @Override

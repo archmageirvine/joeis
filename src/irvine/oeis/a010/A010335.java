@@ -4,13 +4,13 @@ import java.util.List;
 
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A010335 Central term in continued fraction for sqrt(n) is [ sqrt(n) ].
  * @author Sean A. Irvine
  */
-public class A010335 implements Sequence {
+public class A010335 extends Sequence1 {
 
   private Z mN = Z.TWO;
 

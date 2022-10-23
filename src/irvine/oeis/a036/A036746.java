@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036746 Numbers with "long" representations in Roman notation: given by last n letters from ...MMMDCCCLXXXVIII.
  * @author Sean A. Irvine
  */
-public class A036746 implements Sequence {
+public class A036746 extends Sequence1 {
 
   private static final long[] SMALL = {1, 2, 3, 8, 18, 28, 38, 88, 188, 288, 388};
   private int mN = -1;

@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046881 Smallest number that is sum of 2 positive distinct n-th powers in 2 different ways.
  * @author Sean A. Irvine
  */
-public class A046881 implements Sequence {
+public class A046881 extends Sequence1 {
 
   private int mN = 0;
 

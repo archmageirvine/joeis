@@ -2,14 +2,14 @@ package irvine.oeis.a036;
 
 import irvine.math.group.GaussianIntegers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A036842 Smallest leg in right triangle with relatively prime sides and hypotenuse 5^n.
  * @author Sean A. Irvine
  */
-public class A036842 implements Sequence {
+public class A036842 extends Sequence1 {
 
   private static final Pair<Z, Z> C = new Pair<>(Z.THREE, Z.FOUR);
   private Pair<Z, Z> mA = GaussianIntegers.SINGLETON.one();

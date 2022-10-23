@@ -3,6 +3,7 @@ package irvine.oeis.a308;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a000.A000217;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000217;
  * A308084 a(n) = n*(n-1)*d(n)/4, where d(n)=A000005(n) is the number of divisors of n.
  * @author Georg Fischer
  */
-public class A308084 implements Sequence {
+public class A308084 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA000217 = new A000217();

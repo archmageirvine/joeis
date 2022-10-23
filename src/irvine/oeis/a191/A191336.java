@@ -4,6 +4,7 @@ package irvine.oeis.a191;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a022.A022838;
 import irvine.oeis.a054.A054406;
 
@@ -11,7 +12,7 @@ import irvine.oeis.a054.A054406;
  * A191336 (A022838 mod 2)+(A054406 mod 2).
  * @author Georg Fischer
  */
-public class A191336 implements Sequence {
+public class A191336 extends Sequence1 {
 
   final Sequence mA022838 = new A022838();
   final Sequence mA054406 = new A054406();

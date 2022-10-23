@@ -3,13 +3,14 @@ package irvine.oeis.a078;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a027.A027434;
 
 /**
  * A078633 Smallest number of sticks of length 1 needed to construct n squares with sides of length 1.
  * @author Georg Fischer
  */
-public class A078633 implements Sequence {
+public class A078633 extends Sequence1 {
 
   final Sequence mA027434 = new A027434();
   protected long mN;

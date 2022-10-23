@@ -3,6 +3,7 @@ package irvine.oeis.a104;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a002.A002322;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002322;
  * A104194 a(n) = phi(n) - CarmichaelLambda(n).
  * @author Georg Fischer
  */
-public class A104194 implements Sequence {
+public class A104194 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA002322 = new A002322();

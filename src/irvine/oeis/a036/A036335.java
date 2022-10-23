@@ -3,13 +3,13 @@ package irvine.oeis.a036;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036335 Total number of composite numbers with n digits and n prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
-public class A036335 implements Sequence {
+public class A036335 extends Sequence1 {
 
   private int mN = 0;
   private long mLimit = 1;

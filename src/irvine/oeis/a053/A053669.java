@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053669 Smallest prime not dividing n.
  * @author Sean A. Irvine
  */
-public class A053669 implements Sequence {
+public class A053669 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

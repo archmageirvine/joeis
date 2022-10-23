@@ -3,13 +3,13 @@ package irvine.oeis.a049;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049330 Numerator of (1/Pi)*Integral_{x=0..infinity} (sin(x)/x)^n dx.
  * @author Sean A. Irvine
  */
-public class A049330 implements Sequence {
+public class A049330 extends Sequence1 {
 
   private Z mF = Z.FOUR;
   private long mN = 0;

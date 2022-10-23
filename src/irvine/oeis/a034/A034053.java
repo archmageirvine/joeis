@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034053 Numbers with multiplicative digital root value 6.
  * @author Sean A. Irvine
  */
-public class A034053 implements Sequence {
+public class A034053 extends Sequence1 {
 
   private long mN = -1;
 

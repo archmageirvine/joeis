@@ -1,14 +1,14 @@
 package irvine.oeis.a087;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A087369 Smallest palindromic square multiple of the n-th palindrome.
  * @author Sean A. Irvine
  */
-public class A087369 implements Sequence {
+public class A087369 extends Sequence1 {
 
   private long mN = 0;
 

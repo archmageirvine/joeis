@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048936 Subset of vampire numbers A014575 having exactly two representations of the desired form.
  * @author Sean A. Irvine
  */
-public class A048936 implements Sequence {
+public class A048936 extends Sequence1 {
 
   private Z mN = Z.valueOf(1259);
   private Z mJump = Z.valueOf(10000);

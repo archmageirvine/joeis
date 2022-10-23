@@ -3,6 +3,7 @@ package irvine.oeis.a163;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a004.A004125;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a004.A004125;
  * A163180 a(n) = tau(n) + Sum_{k=1..n} (n mod k).
  * @author Georg Fischer
  */
-public class A163180 implements Sequence {
+public class A163180 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA004125 = new A004125();

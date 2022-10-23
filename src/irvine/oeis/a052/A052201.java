@@ -1,13 +1,13 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052201 Equivalent of the Kurepa hypothesis for left factorial.
  * @author Sean A. Irvine
  */
-public class A052201 implements Sequence {
+public class A052201 extends Sequence1 {
 
   private Z mA = Z.FOUR;
   private Z mB = Z.valueOf(15);

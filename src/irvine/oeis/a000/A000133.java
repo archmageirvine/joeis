@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000133 Number of Boolean functions of n variables.
  * @author Sean A. Irvine
  */
-public class A000133 implements Sequence {
+public class A000133 extends Sequence1 {
 
   private int mN = 0;
 

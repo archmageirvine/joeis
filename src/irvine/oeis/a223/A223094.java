@@ -3,13 +3,14 @@ package irvine.oeis.a223;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000136;
 import irvine.oeis.a000.A000682;
 /**
  * A223094 Number of foldings of n labeled stamps in which leaf n is inwards.
  * @author Georg Fischer
  */
-public class A223094 implements Sequence {
+public class A223094 extends Sequence1 {
 
   private final Sequence mA000136 = new A000136();
   private final Sequence mA000682 = new A000682();

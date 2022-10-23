@@ -3,13 +3,14 @@ package irvine.oeis.a066;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 
 /**
  * A066781 a(n) = 2^phi(n).
  * @author Georg Fischer
  */
-public class A066781 implements Sequence {
+public class A066781 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   @Override

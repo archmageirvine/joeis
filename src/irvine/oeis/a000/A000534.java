@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000534 Numbers that are not the sum of 4 nonzero squares.
  * @author Sean A. Irvine
  */
-public class A000534 implements Sequence {
+public class A000534 extends Sequence1 {
 
   private static final int[] SMALL = {0, 1, 2, 3, 5, 6, 8, 9, 11, 14, 17, 24, 29, 32, 41, 56, 96, 128};
 

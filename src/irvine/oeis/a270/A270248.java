@@ -3,13 +3,14 @@ package irvine.oeis.a270;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003136;
 
 /**
  * A270248 Even L\u00f6schian numbers.
  * @author Georg Fischer
  */
-public class A270248 implements Sequence {
+public class A270248 extends Sequence1 {
 
   final Sequence mA003136 = new A003136();
   @Override

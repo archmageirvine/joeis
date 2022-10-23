@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007807 A variation on Euclid: a(n)=g(n)-1, where g(0)=0, g(1)=1, g(n+1)=g(n)(g(n-1)+1).
  * @author Sean A. Irvine
  */
-public class A007807 implements Sequence {
+public class A007807 extends Sequence1 {
 
   private Z mA = Z.ZERO;
   private Z mB = null;

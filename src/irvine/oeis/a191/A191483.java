@@ -3,13 +3,14 @@ package irvine.oeis.a191;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a089.A089269;
 
 /**
  * A191483 Even discriminants of imaginary quadratic fields, negated.
  * @author Georg Fischer
  */
-public class A191483 implements Sequence {
+public class A191483 extends Sequence1 {
 
   final Sequence mA089269 = new A089269();
   @Override

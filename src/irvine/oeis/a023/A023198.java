@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023198 Numbers k such that sigma(k) &gt;= 4*k.
  * @author Sean A. Irvine
  */
-public class A023198 implements Sequence {
+public class A023198 extends Sequence1 {
 
   private Z mN = Z.valueOf(27719);
 

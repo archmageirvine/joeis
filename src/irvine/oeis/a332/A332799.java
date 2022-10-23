@@ -3,13 +3,14 @@ package irvine.oeis.a332;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008366;
 
 /**
  * A332799 Numbers whose smallest prime factor is 17.
  * @author Georg Fischer
  */
-public class A332799 implements Sequence {
+public class A332799 extends Sequence1 {
 
   final Sequence mA008366 = new A008366();
   @Override

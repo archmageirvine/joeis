@@ -3,6 +3,7 @@ package irvine.oeis.a178;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a003.A003068;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a003.A003068;
  * A178907 n-th prime + n-th problime (third definition).
  * @author Georg Fischer
  */
-public class A178907 implements Sequence {
+public class A178907 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA003068 = new A003068();

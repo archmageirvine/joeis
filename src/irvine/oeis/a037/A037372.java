@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037372 Positive numbers k such that every base-2 digit of k is a base-3 digit of k.
@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  * Assertion: <code>base1 &lt; base2</code>.
  * @author Georg Fischer
  */
-public class A037372 implements Sequence {
+public class A037372 extends Sequence1 {
 
   protected Z mN;
   protected int mBase1;

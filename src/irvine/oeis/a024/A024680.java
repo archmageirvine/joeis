@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024680 Number of ways prime(n) is a sum of 3 odd nonprimes r,s,t satisfying 1 &lt;= r &lt; s &lt; t.
  * @author Sean A. Irvine
  */
-public class A024680 implements Sequence {
+public class A024680 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

@@ -3,13 +3,14 @@ package irvine.oeis.a289;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a013.A013955;
 
 /**
  * A289744 Coefficients in expansion of q*E'_8 where E_8 is the Eisenstein Series (A008410).
  * @author Georg Fischer
  */
-public class A289744 implements Sequence {
+public class A289744 extends Sequence1 {
 
   final Sequence mA013955 = new A013955();
   protected long mN;

@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001236 Differences of reciprocals of unity.
  * @author Sean A. Irvine
  */
-public class A001236 implements Sequence {
+public class A001236 extends Sequence1 {
 
   private int mN = 1;
   private Z mF = Z.ONE;

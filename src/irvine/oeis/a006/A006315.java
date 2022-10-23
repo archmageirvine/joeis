@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006315 Numbers n such that n^32 + 1 is prime.
  * @author Sean A. Irvine
  */
-public class A006315 implements Sequence {
+public class A006315 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

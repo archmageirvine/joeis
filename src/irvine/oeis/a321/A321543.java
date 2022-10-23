@@ -4,13 +4,13 @@ import java.util.function.Function;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A321543 a(n) = Sum_{d|n} (-1)^(d-1)*d^2.
  * @author Georg Fischer
  */
-public class A321543 implements Sequence {
+public class A321543 extends Sequence1 {
 
   protected int mK;
   protected Function<Integer, Z> mF;

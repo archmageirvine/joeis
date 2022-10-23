@@ -6,13 +6,13 @@ import java.util.HashMap;
 import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035470 Number of ways to break {1,2,3,...n} into sets with equal sums.
  * @author Sean A. Irvine
  */
-public class A035470 implements Sequence {
+public class A035470 extends Sequence1 {
 
   // After Alois P. Heinz
 

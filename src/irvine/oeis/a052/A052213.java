@@ -5,13 +5,13 @@ import java.util.Arrays;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052213 Numbers k with prime signature(k) = prime signature(k+1).
  * @author Sean A. Irvine
  */
-public class A052213 implements Sequence {
+public class A052213 extends Sequence1 {
 
   private long mN = 1;
 

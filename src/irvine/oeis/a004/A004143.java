@@ -3,14 +3,14 @@ package irvine.oeis.a004;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A004143 From the powers that be.
  * @author Sean A. Irvine
  */
-public class A004143 implements Sequence {
+public class A004143 extends Sequence1 {
 
   private int mN = 0;
   private int mM1 = 0;

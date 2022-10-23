@@ -1,14 +1,14 @@
 package irvine.oeis.a083;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A083458 Numbers n such that n^5 + 1 is a palindrome.
  * @author Georg Fischer
  */
-public class A083458 implements Sequence {
+public class A083458 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

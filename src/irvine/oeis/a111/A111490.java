@@ -3,13 +3,14 @@ package irvine.oeis.a111;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004125;
 
 /**
  * A111490 Antidiagonal sums of the numerical array defined by M(n,k) = 1 + (k-1) mod n.
  * @author Georg Fischer
  */
-public class A111490 implements Sequence {
+public class A111490 extends Sequence1 {
 
   final Sequence mA004125 = new A004125();
   protected long mN;

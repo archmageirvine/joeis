@@ -1,14 +1,14 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A002779 Palindromic squares.
  * @author Sean A. Irvine
  */
-public class A002779 implements Sequence {
+public class A002779 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

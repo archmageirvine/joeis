@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045864 Number of root quadruples with entry -n for integer Apollonian circle packings.
  * @author Sean A. Irvine
  */
-public class A045864 implements Sequence {
+public class A045864 extends Sequence1 {
 
   // After Michel Marcus
 

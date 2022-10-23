@@ -3,6 +3,7 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006519;
 import irvine.oeis.a096.A096268;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a096.A096268;
  * A088839 Numerator of sigma(4n)/sigma(n).
  * @author Georg Fischer
  */
-public class A088839 implements Sequence {
+public class A088839 extends Sequence1 {
 
   final Sequence mA006519 = new A006519();
   final Sequence mA096268 = new A096268();

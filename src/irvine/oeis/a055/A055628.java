@@ -3,14 +3,14 @@ package irvine.oeis.a055;
 import irvine.factor.prime.Fast;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055628 Primes p whose period of the reciprocal 1/p is (p-1)/3.
  * Partly copied form A002371
  * @author Georg Fischer
  */
-public class A055628 implements Sequence {
+public class A055628 extends Sequence1 {
 
   protected Z mDiv; // divisor
   private final Fast mFastPrime = new Fast();

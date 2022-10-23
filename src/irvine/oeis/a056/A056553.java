@@ -3,13 +3,14 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008835;
 import irvine.oeis.a053.A053167;
 /**
  * A056553 Smallest 4th-power divisible by n divided by largest 4th-power which divides n.
  * @author Georg Fischer
  */
-public class A056553 implements Sequence {
+public class A056553 extends Sequence1 {
 
   private final Sequence mA008835 = new A008835();
   private final Sequence mA053167 = new A053167();

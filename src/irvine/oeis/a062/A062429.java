@@ -4,13 +4,13 @@ package irvine.oeis.a062;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A062429 Integer part of log(n^n)^((1 - 1/n)^(1/n)).
  * @author Georg Fischer
  */
-public class A062429 implements Sequence {
+public class A062429 extends Sequence1 {
 
   private int mN = 0;
 

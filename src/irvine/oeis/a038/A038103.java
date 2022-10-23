@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038103 Numbers k such that k is a substring of its base-3 representation.
  * @author Sean A. Irvine
  */
-public class A038103 implements Sequence {
+public class A038103 extends Sequence1 {
 
   private long mN = -1;
 

@@ -3,12 +3,13 @@ package irvine.oeis.a076;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a050.A050436;
 /**
  * A076239 Remainder when 3rd-order composite ccc(n) = A050436(n) is divided by n.
  * @author Georg Fischer
  */
-public class A076239 implements Sequence {
+public class A076239 extends Sequence1 {
 
   private final Sequence mA050436 = new A050436();
   protected long mN;

@@ -5,6 +5,7 @@ import java.util.HashMap;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a007.A007305;
 import irvine.oeis.a038.A038566;
@@ -15,7 +16,7 @@ import irvine.oeis.a047.A047679;
  * A054427 Permutation of natural numbers: maps the fractions A038567/A038566 to the right side (n/m &gt; 1) of Stern-Brocot tree.
  * @author Sean A. Irvine
  */
-public class A054427 implements Sequence {
+public class A054427 extends Sequence1 {
 
   private final HashMap<Q, Long> mSternBrocotMap = new HashMap<>();
   private long mSternBrocotMapIndex = 0;

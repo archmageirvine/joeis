@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056155 Positive integer k, 1 &lt;= k &lt;= n, which maximizes k^(n+1-k).
  * @author Sean A. Irvine
  */
-public class A056155 implements Sequence {
+public class A056155 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,12 +3,13 @@ package irvine.oeis.a347;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a322.A322577;
 /**
  * A347093 Sum of A322577 (convolution of Dedekind psi with Euler phi) and its Dirichlet inverse.
  * @author Georg Fischer
  */
-public class A347093 implements Sequence {
+public class A347093 extends Sequence1 {
 
   private final Sequence mA322577 = new A322577();
   private final Sequence mA347092 = new A347092();

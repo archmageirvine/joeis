@@ -3,13 +3,14 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008835;
 
 /**
  * A053165 4th-power-free part of n.
  * @author Georg Fischer
  */
-public class A053165 implements Sequence {
+public class A053165 extends Sequence1 {
 
   final Sequence mA008835 = new A008835();
   protected long mN;

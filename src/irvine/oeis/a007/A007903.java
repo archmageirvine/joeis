@@ -4,14 +4,14 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A007903 The number of distinct principal ideals in the semigroup of binary relations on an n-set.
  * @author Sean A. Irvine
  */
-public class A007903 implements Sequence {
+public class A007903 extends Sequence1 {
 
   private long mCount = 0;
   private int mN = 0;

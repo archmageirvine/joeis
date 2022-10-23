@@ -3,13 +3,14 @@ package irvine.oeis.a068;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a060.A060819;
 
 /**
  * A068219 Denominators of coefficients in log(1+x)*(1+x)^(1/3) power series.
  * @author Georg Fischer
  */
-public class A068219 implements Sequence {
+public class A068219 extends Sequence1 {
 
   final Sequence mA060819 = new A060819();
   @Override

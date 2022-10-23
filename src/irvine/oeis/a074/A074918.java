@@ -2,13 +2,13 @@ package irvine.oeis.a074;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A074918 Highly imperfect numbers: n sets a record for the value of abs(sigma(n)-2*n) (absolute value of A033879).
  * @author Sean A. Irvine
  */
-public class A074918 implements Sequence {
+public class A074918 extends Sequence1 {
 
   private Z mA = Z.ZERO;
   private long mN = 0;

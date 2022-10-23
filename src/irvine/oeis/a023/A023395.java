@@ -3,13 +3,13 @@ package irvine.oeis.a023;
 import irvine.factor.prime.Fast;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023395 Only Fermat number divisible by A023394(n) is 2^2^a(n) + 1.
  * @author Sean A. Irvine
  */
-public class A023395 implements Sequence {
+public class A023395 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

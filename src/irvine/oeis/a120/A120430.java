@@ -3,13 +3,14 @@ package irvine.oeis.a120;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006549;
 
 /**
  * A120430 Greater of prime powers that differ by 1. In other words, numbers n such that n-1 and n are prime powers.
  * @author Georg Fischer
  */
-public class A120430 implements Sequence {
+public class A120430 extends Sequence1 {
 
   final Sequence mA006549 = new A006549();
   @Override

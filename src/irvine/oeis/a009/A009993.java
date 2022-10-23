@@ -3,13 +3,13 @@ package irvine.oeis.a009;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009993 Numbers whose decimal digits are in strictly increasing order.
  * @author Sean A. Irvine
  */
-public class A009993 implements Sequence {
+public class A009993 extends Sequence1 {
 
   private final TreeSet<Z> mSeq = new TreeSet<>();
 

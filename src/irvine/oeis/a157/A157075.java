@@ -3,13 +3,14 @@ package irvine.oeis.a157;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008846;
 
 /**
  * A157075 Positive integers n for which the Diophantine equation x^2 + y^2 = n^2/2 has relatively prime solutions.
  * @author Georg Fischer
  */
-public class A157075 implements Sequence {
+public class A157075 extends Sequence1 {
 
   final Sequence mA008846 = new A008846();
   @Override

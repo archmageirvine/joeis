@@ -1,13 +1,13 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049415 Number of squares (of positive integers) with n digits.
  * @author Sean A. Irvine
  */
-public class A049415 implements Sequence {
+public class A049415 extends Sequence1 {
 
   private Z mT = Z.ONE;
 

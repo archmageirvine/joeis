@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import java.time.Year;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056958 Number of days in months of Coptic calendar.
  * @author Sean A. Irvine
  */
-public class A056958 implements Sequence {
+public class A056958 extends Sequence1 {
 
   private static final Z Z30 = Z.valueOf(30);
   private long mN = 0;

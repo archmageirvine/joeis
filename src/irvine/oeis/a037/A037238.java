@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037238 x -&gt; 5x - 1 if x odd, else x -&gt; x/2.
  * @author Sean A. Irvine
  */
-public class A037238 implements Sequence {
+public class A037238 extends Sequence1 {
 
   private Z mA = null;
 

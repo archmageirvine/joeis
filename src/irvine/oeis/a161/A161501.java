@@ -1,14 +1,14 @@
 package irvine.oeis.a161;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A161501 a(n) is the smallest positive integer that is a palindrome when represented in binary, and is made by appending some number (zero or more) of binary digits on the right of n's binary representation.
  * @author Sean A. Irvine
  */
-public class A161501 implements Sequence {
+public class A161501 extends Sequence1 {
 
   private long mN = 0;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004629 Squares written in base 11. (Next term contains a nondecimal digit.).
  * @author Sean A. Irvine
  */
-public class A004629 implements Sequence {
+public class A004629 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

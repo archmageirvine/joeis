@@ -3,13 +3,14 @@ package irvine.oeis.a138;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008457;
 
 /**
  * A138503 a(n) = Sum_{d|n} (-1)^(d-1)*d^3.
  * @author Georg Fischer
  */
-public class A138503 implements Sequence {
+public class A138503 extends Sequence1 {
 
   final Sequence mA008457 = new A008457();
   protected long mN;

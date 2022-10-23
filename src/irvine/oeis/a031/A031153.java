@@ -1,13 +1,13 @@
 package irvine.oeis.a031;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A031153 Numbers k such that k^2 contains only digits {1,2,5}.
  * @author Sean A. Irvine
  */
-public class A031153 implements Sequence {
+public class A031153 extends Sequence1 {
 
   private static final long[] STEP = {4, 4, 2};
   private Z mN = Z.NEG_ONE;

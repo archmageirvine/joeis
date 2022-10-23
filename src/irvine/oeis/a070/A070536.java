@@ -3,13 +3,14 @@ package irvine.oeis.a070;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006530;
 import irvine.oeis.a051.A051664;
 /**
  * A070536 Number of terms in n-th cyclotomic polynomial minus largest prime factor of n; a(1)=1 by convention.
  * @author Georg Fischer
  */
-public class A070536 implements Sequence {
+public class A070536 extends Sequence1 {
 
   private final Sequence mA006530 = new A006530();
   private final Sequence mA051664 = new A051664();

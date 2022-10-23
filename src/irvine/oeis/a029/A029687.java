@@ -4,15 +4,15 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.cons.DecimalExpansionSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.SkipSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A029687 n-th digit after decimal point of 7th root of n.
  * @author Sean A. Irvine
  */
-public class A029687 implements Sequence {
+public class A029687 extends Sequence1 {
 
   private static final CR ONE_SEVENTH = CR.valueOf(new Q(1, 7));
   private long mN = 0;

@@ -3,13 +3,13 @@ package irvine.oeis.a029;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A029940 a(n) = Product_{d|n} phi(d).
  * @author Sean A. Irvine
  */
-public class A029940 implements Sequence {
+public class A029940 extends Sequence1 {
 
   private long mN = 0;
 

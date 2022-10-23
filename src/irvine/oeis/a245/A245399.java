@@ -2,13 +2,14 @@ package irvine.oeis.a245;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a024.A024638;
 
 /**
  * A245399 Number of nonnegative integers with property that their base 6/5 expansion (see A024638) has n digits.
  * @author Georg Fischer
  */
-public class A245399 implements Sequence {
+public class A245399 extends Sequence1 {
 
   private Z mLim = Z.TEN;
   private int mCount = 0;

@@ -4,13 +4,13 @@ import java.io.Serializable;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002129 Generalized sum of divisors function: excess of sum of odd divisors of n over sum of even divisors of n.
  * @author Sean A. Irvine
  */
-public class A002129 implements Sequence, Serializable {
+public class A002129 extends Sequence1 implements Serializable {
 
   private long mN = 0;
 

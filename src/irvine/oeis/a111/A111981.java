@@ -3,13 +3,14 @@ package irvine.oeis.a111;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a029.A029708;
 
 /**
  * A111981 Numbers n such that 2n-1 and 2n+3 are consecutive primes.
  * @author Georg Fischer
  */
-public class A111981 implements Sequence {
+public class A111981 extends Sequence1 {
 
   final Sequence mA029708 = new A029708();
   @Override

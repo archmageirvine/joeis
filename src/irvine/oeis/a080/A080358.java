@@ -4,14 +4,14 @@ package irvine.oeis.a080;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A080358 Value of Vandermonde determinant for the first n prime numbers: V[p(1),...,p(n)].
  * @author Georg Fischer
  */
-public class A080358 implements Sequence {
+public class A080358 extends Sequence1 {
 
   protected int mN = 0;
   private final MemorySequence mA000040 = MemorySequence.cachedSequence(new PrependSequence(new A000040(), 1));

@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058190 Number of increasing geometric progressions ending in n (in the positive integers), excluding those of length 1 or 2.
  * @author Sean A. Irvine
  */
-public class A058190 implements Sequence {
+public class A058190 extends Sequence1 {
 
   // After Antti Karttunen
 

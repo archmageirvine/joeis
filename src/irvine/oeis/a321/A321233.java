@@ -3,13 +3,14 @@ package irvine.oeis.a321;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001863;
 
 /**
  * A321233 a(n) is the number of reflectable bases of the root system of type D_n.
  * @author Georg Fischer
  */
-public class A321233 implements Sequence {
+public class A321233 extends Sequence1 {
 
   final Sequence mA001863 = new A001863();
   protected long mN;

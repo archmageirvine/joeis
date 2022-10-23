@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058994 Numbers m such that 7^m reversed is prime.
  * @author Sean A. Irvine
  */
-public class A058994 implements Sequence {
+public class A058994 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private int mN = 0;

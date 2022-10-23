@@ -3,13 +3,14 @@ package irvine.oeis.a178;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a035.A035321;
 
 /**
  * A178637 a(n) = sum of divisors d of n such that d is not equal to p^k where p = prime, k &gt;=1.
  * @author Georg Fischer
  */
-public class A178637 implements Sequence {
+public class A178637 extends Sequence1 {
 
   final Sequence mA035321 = new A035321();
   @Override

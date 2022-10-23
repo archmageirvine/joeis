@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038847 Odd numbers that are differences between two positive cubes.
  * @author Sean A. Irvine
  */
-public class A038847 implements Sequence {
+public class A038847 extends Sequence1 {
 
   private Z mN = Z.FIVE;
 

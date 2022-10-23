@@ -3,13 +3,14 @@ package irvine.oeis.a256;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004125;
 
 /**
  * A256532 Product of n and the sum of remainders of n mod k, for k = 1, 2, 3, ..., n.
  * @author Georg Fischer
  */
-public class A256532 implements Sequence {
+public class A256532 extends Sequence1 {
 
   final Sequence mA004125 = new A004125();
   protected long mN;

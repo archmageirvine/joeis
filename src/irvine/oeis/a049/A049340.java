@@ -4,13 +4,13 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049340 Triangle read by rows: T(n,k) is the number of planar graphs with n &gt;= 1 nodes and 0 &lt;= k &lt;= binomial(n,2) edges, all degrees even.
  * @author Sean A. Irvine
  */
-public class A049340 implements Sequence, GraphProcessor {
+public class A049340 extends Sequence1 implements GraphProcessor {
 
   private int mN = 0;
   private int mM = 0;

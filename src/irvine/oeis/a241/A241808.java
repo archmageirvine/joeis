@@ -3,13 +3,14 @@ package irvine.oeis.a241;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a153.A153974;
 
 /**
  * A241808 Numbers k such that (2*k)^3 - 3 is prime.
  * @author Georg Fischer
  */
-public class A241808 implements Sequence {
+public class A241808 extends Sequence1 {
 
   final Sequence mA153974 = new A153974();
   @Override

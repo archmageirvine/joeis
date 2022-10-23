@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037047 Starting at n, "say what you see"; sequence gives number of primes obtained before first composite number appears.
  * @author Sean A. Irvine
  */
-public class A037047 implements Sequence {
+public class A037047 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

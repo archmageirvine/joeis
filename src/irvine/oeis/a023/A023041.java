@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023041 w such that w^3 = x^3+y^3+z^3, x&gt;y&gt;z&gt;=0, is soluble (primitive solutions).
  * @author Sean A. Irvine
  */
-public class A023041 implements Sequence {
+public class A023041 extends Sequence1 {
 
   private long mN = 5;
 

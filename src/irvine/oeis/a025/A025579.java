@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025579 a(1)=1, a(2)=2, a(n) = 4*3^(n-3) for n &gt;= 3.
  * @author Sean A. Irvine
  */
-public class A025579 implements Sequence {
+public class A025579 extends Sequence1 {
 
   private Z mA = null;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023730 Numbers with a single 2 in their base 5 expansion.
  * @author Sean A. Irvine
  */
-public class A023730 implements Sequence {
+public class A023730 extends Sequence1 {
 
   private long mN = 0;
 

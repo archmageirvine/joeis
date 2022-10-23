@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014121 Numbers of form |2^i-3^j|.
  * @author Sean A. Irvine
  */
-public class A014121 implements Sequence {
+public class A014121 extends Sequence1 {
 
   // Heuristic
 

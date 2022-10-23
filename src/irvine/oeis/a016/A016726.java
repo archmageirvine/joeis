@@ -2,13 +2,13 @@ package irvine.oeis.a016;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A016726 Smallest k such that 1, 4, 9, ..., n^2 are distinct mod k.
  * @author Sean A. Irvine
  */
-public class A016726 implements Sequence {
+public class A016726 extends Sequence1 {
 
   private static final int[] SMALL = {1, 2, 6, 9};
   private final Fast mPrime = new Fast();

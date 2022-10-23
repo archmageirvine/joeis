@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005793 Number of O_1^{2+}(Z)-orbits of Lorentzian modular group.
  * @author Sean A. Irvine
  */
-public class A005793 implements Sequence {
+public class A005793 extends Sequence1 {
 
   // After Michael Somos
 

@@ -4,13 +4,14 @@ import java.util.LinkedList;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001223;
 
 /**
  * A053597 Let prime(i) = i-th prime (A000040), let d(i) = prime(i+1)-prime(i) (A001223); a(n) = number of distinct numbers among d(n), d(n+1), d(n+2), ... before first duplicate is encountered.
  * @author Sean A. Irvine
  */
-public class A053597 implements Sequence {
+public class A053597 extends Sequence1 {
 
   private final Sequence mD = new A001223();
   private final LinkedList<Z> mA = new LinkedList<>();

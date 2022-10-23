@@ -4,13 +4,13 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052217 Numbers whose sum of digits is 3.
  * @author Sean A. Irvine
  */
-public class A052217 implements Sequence {
+public class A052217 extends Sequence1 {
 
   private final TreeMap<Z, Integer> mA = new TreeMap<>();
   {

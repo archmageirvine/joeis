@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028845 Iterated product of digits of n is a nonzero square.
  * @author Sean A. Irvine
  */
-public class A028845 implements Sequence {
+public class A028845 extends Sequence1 {
 
   private long mN = 0;
 

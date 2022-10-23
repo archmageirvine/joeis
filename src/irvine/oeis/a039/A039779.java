@@ -3,13 +3,13 @@ package irvine.oeis.a039;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039779 Numbers k such that phi(k) is equal to A008473(k).
  * @author Sean A. Irvine
  */
-public class A039779 implements Sequence {
+public class A039779 extends Sequence1 {
 
   private long mN = 0;
 

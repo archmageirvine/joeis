@@ -1,14 +1,14 @@
 package irvine.oeis.a234;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import jmason.poly.Rot180MidSideCounter;
 
 /**
  * A234010 Free polyominoes with 2n squares, having 180-degree rotational symmetry about a square mid-side.
  * @author jmason
  */
-public class A234010 implements Sequence {
+public class A234010 extends Sequence1 {
 
   private int mMax = 0;
 

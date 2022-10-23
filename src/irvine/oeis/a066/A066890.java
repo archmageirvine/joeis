@@ -3,13 +3,14 @@ package irvine.oeis.a066;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023042;
 
 /**
  * A066890 Cubes that are the sum of three distinct positive cubes.
  * @author Georg Fischer
  */
-public class A066890 implements Sequence {
+public class A066890 extends Sequence1 {
 
   final Sequence mA023042 = new A023042();
   @Override

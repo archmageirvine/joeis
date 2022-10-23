@@ -3,13 +3,13 @@ package irvine.oeis.a284;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A284926 a(n) = Sum_{d|n} (-1)^(n/d+1)*d^5.
  * @author Georg Fischer
  */
-public class A284926 implements Sequence {
+public class A284926 extends Sequence1 {
 
   private int mN = 0;
 

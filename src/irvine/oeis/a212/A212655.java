@@ -3,13 +3,14 @@ package irvine.oeis.a212;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a165.A165949;
 
 /**
  * A212655 Denominator of Bernoulli(2*n,1/2) / Period of length 2: repeat 12, 60.
  * @author Georg Fischer
  */
-public class A212655 implements Sequence {
+public class A212655 extends Sequence1 {
 
   final Sequence mA165949 = new A165949();
   protected long mN;

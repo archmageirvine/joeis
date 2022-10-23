@@ -6,13 +6,13 @@ import irvine.math.group.MatrixField;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048954 Wendt determinant of n-th circulant matrix C(n).
  * @author Sean A. Irvine
  */
-public class A048954 implements Sequence {
+public class A048954 extends Sequence1 {
 
   private int mN = 0;
 

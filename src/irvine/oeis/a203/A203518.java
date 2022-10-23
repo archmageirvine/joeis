@@ -3,14 +3,14 @@ package irvine.oeis.a203;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
  * A203518 a(n) = Product_{2 &lt;= i &lt; j &lt;= n+1} (F(i) + F(j)), where F = A000045 (Fibonacci numbers).
  * @author Georg Fischer
  */
-public class A203518 implements Sequence {
+public class A203518 extends Sequence1 {
 
   protected int mN = 0;
   private final MemorySequence mA000045 = MemorySequence.cachedSequence(new A000045());

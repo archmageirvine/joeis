@@ -3,13 +3,13 @@ package irvine.oeis.a081;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A081369 Binomial(n^2, n) reduced mod n^2.
  * @author Georg Fischer
  */
-public class A081369 implements Sequence {
+public class A081369 extends Sequence1 {
 
   protected Z mN;
 

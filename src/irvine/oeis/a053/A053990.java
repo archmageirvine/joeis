@@ -3,13 +3,13 @@ package irvine.oeis.a053;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053990 Numbers of the form x*(x + 1)*y*(y + 1) ("bipronics") where x and y are distinct.
  * @author Sean A. Irvine
  */
-public class A053990 implements Sequence {
+public class A053990 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   {

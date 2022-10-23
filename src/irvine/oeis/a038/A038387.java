@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038387 a(n) is the smallest number such that the arithmetic mean (A) and geometric mean (G) of n and a(n) are both integers.
  * @author Sean A. Irvine
  */
-public class A038387 implements Sequence {
+public class A038387 extends Sequence1 {
 
   // After Andrew Howroyd
 

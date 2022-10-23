@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007468 Sum of next n primes.
  * @author Sean A. Irvine
  */
-public class A007468 implements Sequence {
+public class A007468 extends Sequence1 {
 
   protected long mN = -1;
   private final Fast mPrime = new Fast();

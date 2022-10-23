@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055482 There exists some k&gt;0 such that n is the product of (k + digits of n).
  * @author Sean A. Irvine
  */
-public class A055482 implements Sequence {
+public class A055482 extends Sequence1 {
 
   private long mN = 11;
 

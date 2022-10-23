@@ -3,13 +3,14 @@ package irvine.oeis.a115;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a059.A059376;
 
 /**
  * A115224 Number of 3 X 3 symmetric matrices over Z(n) having determinant 1.
  * @author Georg Fischer
  */
-public class A115224 implements Sequence {
+public class A115224 extends Sequence1 {
 
   final Sequence mA059376 = new A059376();
   protected long mN;

@@ -3,13 +3,14 @@ package irvine.oeis.a121;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003159;
 
 /**
  * A121539 Numbers whose binary expansion ends in an even number of 1's.
  * @author Georg Fischer
  */
-public class A121539 implements Sequence {
+public class A121539 extends Sequence1 {
 
   final Sequence mA003159 = new A003159();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027862 Primes of the form j^2 + (j+1)^2.
  * @author Sean A. Irvine
  */
-public class A027862 implements Sequence {
+public class A027862 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

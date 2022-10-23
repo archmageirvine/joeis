@@ -1,13 +1,13 @@
 package irvine.oeis.a077;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A077363 Smallest n-digit square whose external digits as well as internal digits form a square, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
-public class A077363 implements Sequence {
+public class A077363 extends Sequence1 {
 
   private int mN = 0;
 

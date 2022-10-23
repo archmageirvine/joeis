@@ -3,12 +3,13 @@ package irvine.oeis.a153;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a244.A244048;
 /**
  * A153485 Sum of all aliquot divisors of all positive integers &lt;= n.
  * @author Georg Fischer
  */
-public class A153485 implements Sequence {
+public class A153485 extends Sequence1 {
 
   private final Sequence mA244048 = new A244048();
   /** Construct the sequence. */

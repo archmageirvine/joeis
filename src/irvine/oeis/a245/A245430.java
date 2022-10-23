@@ -1,13 +1,13 @@
 package irvine.oeis.a245;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A245430 Number of nonnegative integers with property that their base 9/5 expansion (see A024653) has n digits.
  * @author Sean A. Irvine
  */
-public class A245430 implements Sequence {
+public class A245430 extends Sequence1 {
 
   private Z mSum = Z.ZERO;
 

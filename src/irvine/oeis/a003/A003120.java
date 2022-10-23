@@ -10,13 +10,13 @@ import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003120 Number of rooted trees with n nodes and omega-valency 1.
  * @author Sean A. Irvine
  */
-public class A003120 implements Sequence {
+public class A003120 extends Sequence1 {
 
   // After N. J. A. Sloane
 

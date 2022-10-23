@@ -5,13 +5,14 @@ import java.util.ArrayList;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000166;
 
 /**
  * A123513 Triangle read by rows: T(n,k) is the number of permutations of [n] having k small descents (n &gt;= 1; 0 &lt;= k &lt;= n-1). A small descent in a permutation (x_1,x_2,...,x_n) is a position i such that x_i - x_(i+1) = 1.
  * @author Sean A. Irvine
  */
-public class A123513 implements Sequence {
+public class A123513 extends Sequence1 {
 
   private final Sequence mA = new A000166();
   private final ArrayList<Z> mB = new ArrayList<>();

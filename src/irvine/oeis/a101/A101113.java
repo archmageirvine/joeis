@@ -3,6 +3,7 @@ package irvine.oeis.a101;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000688;
 import irvine.oeis.a034.A034444;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a034.A034444;
  * A101113 Let t(G) = number of unitary factors of the Abelian group G. Then a(n) = sum t(G) over all Abelian groups G of order exactly n.
  * @author Georg Fischer
  */
-public class A101113 implements Sequence {
+public class A101113 extends Sequence1 {
 
   final Sequence mA000688 = new A000688();
   final Sequence mA034444 = new A034444();

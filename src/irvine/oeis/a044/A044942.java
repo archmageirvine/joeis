@@ -1,13 +1,13 @@
 package irvine.oeis.a044;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A044942 Number of runs of odd length in the base-2 representation of n.
  * @author Sean A. Irvine
  */
-public class A044942 implements Sequence {
+public class A044942 extends Sequence1 {
 
   private long mN = 0;
 

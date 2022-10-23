@@ -8,14 +8,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.transform.BhjTransformSequence;
 
 /**
  * A035357 Number of increasing asymmetric rooted polygonal cacti with bridges (mixed Husimi trees).
  * @author Sean A. Irvine
  */
-public class A035357 implements Sequence {
+public class A035357 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private Polynomial<Z> mA = RING.empty();

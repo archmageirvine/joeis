@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001988 Let p be the n-th odd prime. a(n) is the least prime congruent to 7 modulo 8 such that Legendre(-a(n), q) = -Legendre(-1, q) for all odd primes q &lt;= p.
  * @author Sean A. Irvine
  */
-public class A001988 implements Sequence {
+public class A001988 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.THREE;

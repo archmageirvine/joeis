@@ -3,13 +3,14 @@ package irvine.oeis.a177;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001359;
 
 /**
  * A177139 Numbers n such that (3*n-4, 3*n-2) is a twin prime pair.
  * @author Georg Fischer
  */
-public class A177139 implements Sequence {
+public class A177139 extends Sequence1 {
 
   final Sequence mA001359 = new A001359();
   /** Construct the sequence. */

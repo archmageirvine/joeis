@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034882 Product of consecutive factorials.
  * @author Sean A. Irvine
  */
-public class A034882 implements Sequence {
+public class A034882 extends Sequence1 {
 
   private static final class State implements Comparable<State> {
     final Z mValue;

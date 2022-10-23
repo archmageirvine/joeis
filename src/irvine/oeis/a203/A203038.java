@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A203038 E.g.f.: 1 - (1-x)^(1/(1 + log(1-x))).
  * E.g.f.: 1 - (1-x)^(1/(1 + log(1-x)))
  * @author Georg Fischer
  */
-public class A203038 implements Sequence {
+public class A203038 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

@@ -3,13 +3,14 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007949;
 
 /**
  * A065335 3-exponents to represent 3-smooth numbers (A065332).
  * @author Georg Fischer
  */
-public class A065335 implements Sequence {
+public class A065335 extends Sequence1 {
 
   final Sequence mA007949 = new A007949();
   final Sequence mA065333 = new A065333();

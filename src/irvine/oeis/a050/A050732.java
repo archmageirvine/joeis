@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050732 Numbers of form 2^k (for values of k see A050723) containing no pair of consecutive equal digits (probably finite).
  * @author Sean A. Irvine
  */
-public class A050732 implements Sequence {
+public class A050732 extends Sequence1 {
 
   private Z mT = null;
 

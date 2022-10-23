@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.factor.prime.Fast;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007885 Numbers n such that balanced sequences exist with n distinct elements.
  * @author Sean A. Irvine
  */
-public class A007885 implements Sequence {
+public class A007885 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

@@ -7,13 +7,13 @@ import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007151 Number of planted evolutionary trees of magnitude n.
  * @author Sean A. Irvine
  */
-public class A007151 implements Sequence, Serializable {
+public class A007151 extends Sequence1 implements Serializable {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

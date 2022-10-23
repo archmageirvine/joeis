@@ -3,13 +3,14 @@ package irvine.oeis.a129;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a065.A065091;
 import irvine.oeis.a071.A071904;
 /**
  * A129146 a(n) = n-th odd prime minus n-th odd composite number.
  * @author Georg Fischer
  */
-public class A129146 implements Sequence {
+public class A129146 extends Sequence1 {
 
   private final Sequence mA065091 = new A065091();
   private final Sequence mA071904 = new A071904();

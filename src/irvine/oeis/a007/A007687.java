@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007687 Number of 4-colorings of cyclic group of order n.
  * @author Sean A. Irvine
  */
-public class A007687 implements Sequence {
+public class A007687 extends Sequence1 {
 
   // After Andrey Zabolotskiy
 

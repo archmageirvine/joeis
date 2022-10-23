@@ -1,14 +1,14 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.Roman;
 
 /**
  * A057226 Number of different symbols needed to express n as a Roman numeral.
  * @author Sean A. Irvine
  */
-public class A057226 implements Sequence {
+public class A057226 extends Sequence1 {
 
   private int mN = 0;
 

@@ -6,14 +6,14 @@ import java.util.TreeMap;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A000705 n-th superior highly composite number A002201(n) is product of first n terms of this sequence.
  * @author Sean A. Irvine
  */
-public class A000705 implements Sequence {
+public class A000705 extends Sequence1 {
 
   private long mPrime = 1;
   private final Fast mP = new Fast();

@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023755 Plaindromes: numbers whose digits in base 14 are in nondecreasing order.
  * @author Sean A. Irvine
  */
-public class A023755 implements Sequence {
+public class A023755 extends Sequence1 {
 
   private long mN = -1;
 

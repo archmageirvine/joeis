@@ -3,12 +3,13 @@ package irvine.oeis.a346;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005171;
 /**
  * A346483 Sum of A005171 (characteristic function of nonprimes) and its Dirichlet inverse.
  * @author Georg Fischer
  */
-public class A346483 implements Sequence {
+public class A346483 extends Sequence1 {
 
   private final Sequence mA005171 = new A005171();
   private final Sequence mA346482 = new A346482();

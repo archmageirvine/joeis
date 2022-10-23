@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045913 Kaprekar numbers: numbers k such that k = q + r and k^2 = q*10^m + r, for some m &gt;= 1, q &gt;= 0 and 0 &lt;= r &lt; 10^m. Here q and r must both have the same number of digits.
  * @author Sean A. Irvine
  */
-public class A045913 implements Sequence {
+public class A045913 extends Sequence1 {
 
   private long mN = 0;
   private long mSkip = 10;

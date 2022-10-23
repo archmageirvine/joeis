@@ -3,6 +3,7 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005228;
 import irvine.oeis.a030.A030124;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a030.A030124;
  * A056738 Positions where 2's occur in A056731.
  * @author Georg Fischer
  */
-public class A056738 implements Sequence {
+public class A056738 extends Sequence1 {
 
   final Sequence mA005228 = new A005228();
   final Sequence mA030124 = new A030124();

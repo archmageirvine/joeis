@@ -3,13 +3,14 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000396;
 
 /**
  * A133052 Cubes of perfect numbers.
  * @author Georg Fischer
  */
-public class A133052 implements Sequence {
+public class A133052 extends Sequence1 {
 
   final Sequence mA000396 = new A000396();
   @Override

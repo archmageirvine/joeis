@@ -3,13 +3,14 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003586;
 
 /**
  * A065119 n-th cyclotomic polynomial is a trinomial.
  * @author Georg Fischer
  */
-public class A065119 implements Sequence {
+public class A065119 extends Sequence1 {
 
   final Sequence mA003586 = new A003586();
   @Override

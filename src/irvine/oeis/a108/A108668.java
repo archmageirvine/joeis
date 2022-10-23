@@ -1,13 +1,13 @@
 package irvine.oeis.a108;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A108668 Self-erasure surviving integers in the concatenation of all nonnegative integers.
  * @author Sean A. Irvine
  */
-public class A108668 implements Sequence {
+public class A108668 extends Sequence1 {
 
   private static final int START = 0x10;
   private static final int INVISIBLE = 0x20;

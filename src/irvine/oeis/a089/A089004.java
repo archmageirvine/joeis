@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A089004 Number of partitions of an n-element set that have at least one odd block.
  * E.g.f.: exp(cosh(x)-1)*(exp(sinh(x))-1)
  * @author Georg Fischer
  */
-public class A089004 implements Sequence {
+public class A089004 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A077215 Prime power with largest index that divides the product of composite numbers between successive primes with a(1) = a(2) = 1.
  * @author Sean A. Irvine
  */
-public class A077215 implements Sequence {
+public class A077215 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

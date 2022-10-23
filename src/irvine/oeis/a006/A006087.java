@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006087 Unitary harmonic means H(n) of the unitary harmonic numbers (A006086).
  * @author Sean A. Irvine
  */
-public class A006087 implements Sequence {
+public class A006087 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

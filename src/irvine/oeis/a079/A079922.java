@@ -2,13 +2,13 @@ package irvine.oeis.a079;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A079922 Solution to the Dancing School Problem with n girls and n+3 boys: f(n,3).
  * @author Georg Fischer
  */
-public class A079922 implements Sequence {
+public class A079922 extends Sequence1 {
 
   protected int mN; // current index
   protected int mP; // parameter

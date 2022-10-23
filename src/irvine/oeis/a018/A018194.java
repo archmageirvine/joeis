@@ -2,6 +2,7 @@ package irvine.oeis.a018;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002034;
 import irvine.util.array.LongDynamicLongArray;
 
@@ -9,7 +10,7 @@ import irvine.util.array.LongDynamicLongArray;
  * A018194 Number of steps for S(S(..S(n)..)) to converge, where S is the Kempner function A002034.
  * @author Sean A. Irvine
  */
-public class A018194 implements Sequence {
+public class A018194 extends Sequence1 {
 
   private final Sequence mA2034 = new A002034();
   private final LongDynamicLongArray mA = new LongDynamicLongArray();

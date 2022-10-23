@@ -7,13 +7,13 @@ import java.util.HashSet;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007072 First column of array associated with monotonic justified array.
  * @author Sean A. Irvine
  */
-public class A007072 implements Sequence {
+public class A007072 extends Sequence1 {
 
   // Steps each possible Fibonacci sequence.  Let (a,b) denote the Fibonacci sequence
   // starting with a and b.  We order all possible Fibonacci sequences according to

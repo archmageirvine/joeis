@@ -2,13 +2,13 @@ package irvine.oeis.a138;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A138561 Start with the list {1}; for each n &gt;= 1, append p(n) primes followed by c(n) composite numbers, where p(n) is the n-th prime and c(n) is the n-th composite number.
  * @author Sean A. Irvine
  */
-public class A138561 implements Sequence {
+public class A138561 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.ONE;

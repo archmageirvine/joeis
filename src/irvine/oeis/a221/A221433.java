@@ -3,13 +3,13 @@ package irvine.oeis.a221;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A221433 Number of nX3 1..(max n,3) arrays with each row and column having unrepeated values.
  * @author Sean A. Irvine
  */
-public class A221433 implements Sequence {
+public class A221433 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

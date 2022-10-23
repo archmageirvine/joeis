@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024552 a(n) = [ n/{n*sqrt(5)} ], where {x} := x - [ x ].
  * @author Sean A. Irvine
  */
-public class A024552 implements Sequence {
+public class A024552 extends Sequence1 {
 
   private static final CR SQRT5 = CR.FIVE.sqrt();
   private long mN = 0;

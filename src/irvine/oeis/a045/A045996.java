@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045996 Number of triangles in an n X n grid (or geoplane).
  * @author Sean A. Irvine
  */
-public class A045996 implements Sequence {
+public class A045996 extends Sequence1 {
 
   protected long mN = 0;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048978 Light numbers, those whose mean sum of divisors &lt;= mean running sum of divisors of all previous n.
  * @author Sean A. Irvine
  */
-public class A048978 implements Sequence {
+public class A048978 extends Sequence1 {
 
   private long mN = 1;
   private Z mSumSigma1 = Z.ONE;

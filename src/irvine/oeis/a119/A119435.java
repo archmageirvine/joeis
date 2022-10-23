@@ -1,14 +1,14 @@
 package irvine.oeis.a119;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A119435 a(n) = (binary reversal of n)-th integer among those positive integers not occurring earlier in the sequence.
  * @author Sean A. Irvine
  */
-public class A119435 implements Sequence {
+public class A119435 extends Sequence1 {
 
   private long mN = 0;
   private final LongDynamicBooleanArray mUsed = new LongDynamicBooleanArray();

@@ -3,6 +3,7 @@ package irvine.oeis.a063;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018804;
 import irvine.oeis.a029.A029935;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a029.A029935;
  * A063754 Dirichlet convolution of totient and cototient.
  * @author Georg Fischer
  */
-public class A063754 implements Sequence {
+public class A063754 extends Sequence1 {
 
   final Sequence mA018804 = new A018804();
   final Sequence mA029935 = new A029935();

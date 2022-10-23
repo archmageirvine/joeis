@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048669 The Jacobsthal function g(n): maximal gap in a list of all the integers relatively prime to n.
  * @author Sean A. Irvine
  */
-public class A048669 implements Sequence {
+public class A048669 extends Sequence1 {
 
   // After M. F. Hasler
 

@@ -3,13 +3,14 @@ package irvine.oeis.a220;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051924;
 
 /**
  * A220956 (Binomial(2n, n) - binomial(2n - 2, n - 1)) (mod n^2) - n - 2.
  * @author Georg Fischer
  */
-public class A220956 implements Sequence {
+public class A220956 extends Sequence1 {
 
   final Sequence mA051924 = new A051924();
   protected long mN;

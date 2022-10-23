@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051347 Numbers that are the sum of two (possibly negative) cubes in at least 2 ways.
  * @author Sean A. Irvine
  */
-public class A051347 implements Sequence {
+public class A051347 extends Sequence1 {
 
   private long mN = 90;
 

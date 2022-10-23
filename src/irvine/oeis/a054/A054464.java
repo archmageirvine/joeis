@@ -5,13 +5,13 @@ import java.util.List;
 
 import irvine.math.z.QuadraticCongruence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054464 Numbers n such that Sum_{k=1..n} d(k) is an integer where d(k) is the decimal fraction 0.k (e.g. d(999)=0.999).
  * @author Sean A. Irvine
  */
-public class A054464 implements Sequence {
+public class A054464 extends Sequence1 {
 
   private final List<Z> mA = new ArrayList<>();
   private int mN = 0;

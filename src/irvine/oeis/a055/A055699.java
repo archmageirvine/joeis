@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055699 Numbers n such that n | (sigma_5(n) - phi(n)^5).
  * @author Sean A. Irvine
  */
-public class A055699 implements Sequence {
+public class A055699 extends Sequence1 {
 
   private long mN = 0;
 

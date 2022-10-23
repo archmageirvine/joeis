@@ -3,13 +3,13 @@ package irvine.oeis.a050;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050252 Number of digits in the prime factorization of n (counting terms of the form p^1 as p).
  * @author Sean A. Irvine
  */
-public class A050252 implements Sequence {
+public class A050252 extends Sequence1 {
 
   private long mN = 0;
 

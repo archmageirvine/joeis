@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007943 Concatenation of sequence (1,3,..,2n-1,2n,2n-2,..,2).
  * @author Sean A. Irvine
  */
-public class A007943 implements Sequence {
+public class A007943 extends Sequence1 {
 
   private long mN = 0;
 

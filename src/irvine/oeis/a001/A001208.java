@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001208 a(n) = solution to the postage stamp problem with 3 denominations and n stamps.
  * @author Sean A. Irvine
  */
-public class A001208 implements Sequence {
+public class A001208 extends Sequence1 {
 
   // After R. J. Mathar
 

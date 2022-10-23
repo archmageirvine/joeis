@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052210 Numbers n such that n^3 starts with n itself (in base 10).
  * @author Sean A. Irvine
  */
-public class A052210 implements Sequence {
+public class A052210 extends Sequence1 {
 
   // After Arkadiusz Wesolowski
 

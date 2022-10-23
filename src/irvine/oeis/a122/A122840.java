@@ -1,13 +1,13 @@
 package irvine.oeis.a122;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A122840 a(n) is the number of 0's at the end of n when n is written in base 10.
  * @author Georg Fischer
  */
-public class A122840 implements Sequence {
+public class A122840 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

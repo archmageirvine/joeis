@@ -2,13 +2,13 @@ package irvine.oeis.a033;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033810 Number of people needed so that probability of at least two sharing a birthday out of n possible days is at least 50%.
  * @author Sean A. Irvine
  */
-public class A033810 implements Sequence {
+public class A033810 extends Sequence1 {
 
   // Known to be correct for n <= 10^18
 

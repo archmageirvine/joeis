@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000885 Number of twin prime pairs &lt; square of n-th prime.
  * @author Sean A. Irvine
  */
-public class A000885 implements Sequence {
+public class A000885 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

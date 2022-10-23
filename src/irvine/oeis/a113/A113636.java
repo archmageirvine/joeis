@@ -3,13 +3,14 @@ package irvine.oeis.a113;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014684;
 
 /**
  * A113636 In the sequence of positive integers add 1 to each nonprime number.
  * @author Georg Fischer
  */
-public class A113636 implements Sequence {
+public class A113636 extends Sequence1 {
 
   final Sequence mA014684 = new A014684();
   @Override

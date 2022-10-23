@@ -1,13 +1,13 @@
 package irvine.oeis.a135;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A135027 Numbers k such that the sum of the digits of k^2 is 10. Multiples of 10 are omitted.
  * @author Sean A. Irvine
  */
-public class A135027 implements Sequence {
+public class A135027 extends Sequence1 {
 
   private long mN = 7;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));

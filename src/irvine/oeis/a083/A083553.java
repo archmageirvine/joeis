@@ -3,13 +3,14 @@ package irvine.oeis.a083;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a037.A037165;
 
 /**
  * A083553 Product of prime(n+1)-1 and prime(n)-1.
  * @author Georg Fischer
  */
-public class A083553 implements Sequence {
+public class A083553 extends Sequence1 {
 
   final Sequence mA037165 = new A037165();
   @Override

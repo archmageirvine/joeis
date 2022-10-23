@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057948 S-primes: let S = {1,5,9, ... 4i+1, ...}; then an S-prime is in S but is not divisible by any members of S except itself and 1.
  * @author Sean A. Irvine
  */
-public class A057948 implements Sequence {
+public class A057948 extends Sequence1 {
 
   private long mN = 1;
 

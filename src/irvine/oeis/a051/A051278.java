@@ -6,13 +6,13 @@ import java.util.TreeMap;
 import irvine.factor.factor.Jaguar;
 import irvine.math.MutableInteger;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051278 Numbers n such that n = k/d(k) has a unique solution, where d(k) = number of divisors of k.
  * @author Sean A. Irvine
  */
-public class A051278 implements Sequence {
+public class A051278 extends Sequence1 {
 
   private final TreeMap<Long, MutableInteger> mSeen = new TreeMap<>();
   private long mM = 1;

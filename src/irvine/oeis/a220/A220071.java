@@ -3,6 +3,7 @@ package irvine.oeis.a220;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006666;
 import irvine.oeis.a006.A006667;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006667;
  * A220071 Difference between number of halving steps and number of tripling steps needed to reach 1 in '3x+1' problem.
  * @author Georg Fischer
  */
-public class A220071 implements Sequence {
+public class A220071 extends Sequence1 {
 
   final Sequence mA006666 = new A006666();
   final Sequence mA006667 = new A006667();

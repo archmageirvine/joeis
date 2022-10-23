@@ -1,13 +1,13 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A029544 Near Cullen numbers: k such that (k+1)*2^k + 1 is prime.
  * @author Sean A. Irvine
  */
-public class A029544 implements Sequence {
+public class A029544 extends Sequence1 {
 
   private int mN = -1;
 

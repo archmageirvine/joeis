@@ -1,14 +1,14 @@
 package irvine.oeis.a109;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A109812 a(1)=1; thereafter a(n) = smallest positive integer not among the earlier terms of the sequence such that a(n) and a(n-1) have no common 1-bits in their binary representations.
  * @author Sean A. Irvine
  */
-public class A109812 implements Sequence {
+public class A109812 extends Sequence1 {
 
   private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
   private long mA = 0;

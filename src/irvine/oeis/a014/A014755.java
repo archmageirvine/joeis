@@ -3,13 +3,13 @@ package irvine.oeis.a014;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014755 3 and -3 are both 4th powers (one implies other) mod these primes p=1 mod 8.
  * @author Sean A. Irvine
  */
-public class A014755 implements Sequence {
+public class A014755 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 192;

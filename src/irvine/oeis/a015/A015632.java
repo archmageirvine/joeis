@@ -2,13 +2,13 @@ package irvine.oeis.a015;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015632 Number of ordered triples of integers from [ 1,n ] with no common factors between pairs.
  * @author Sean A. Irvine
  */
-public class A015632 implements Sequence {
+public class A015632 extends Sequence1 {
 
   private long mN = start() - 1;
   private Z mA = Z.ZERO;

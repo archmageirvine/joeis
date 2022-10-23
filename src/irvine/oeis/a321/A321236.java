@@ -4,13 +4,13 @@ package irvine.oeis.a321;
 import irvine.math.Mobius;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A321236 a(n) = Sum_{d|n} mu(d)^2*d^n.
  * @author Georg Fischer
  */
-public class A321236 implements Sequence {
+public class A321236 extends Sequence1 {
 
   private int mN = 0;
 

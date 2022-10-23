@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007513 a(n) = initial prime of n consecutive primes such that first and last have same digit sum.
  * @author Sean A. Irvine
  */
-public class A007513 implements Sequence {
+public class A007513 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

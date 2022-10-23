@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002630 Number of permutations of length n with two 3-sequences.
  * @author Sean A. Irvine
  */
-public class A002630 implements Sequence {
+public class A002630 extends Sequence1 {
 
   // After Tani Akinari
 

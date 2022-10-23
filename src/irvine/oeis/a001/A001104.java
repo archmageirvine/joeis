@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001104 Numbers n such that n / product of digits of n is a square.
  * @author Sean A. Irvine
  */
-public class A001104 implements Sequence {
+public class A001104 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

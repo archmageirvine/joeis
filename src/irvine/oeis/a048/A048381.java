@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048381 Numbers k such that replacing each nonzero digit d with the d-th prime (replacing each 0 digit with a 1) yields a prime.
  * @author Sean A. Irvine
  */
-public class A048381 implements Sequence {
+public class A048381 extends Sequence1 {
 
   private long mN = 0;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007756 Number of irreducible indecomposable spherical curves with n crossings (only ordinary double points), the circle is oriented, the sphere is not oriented (OU case).
  * @author Sean A. Irvine
  */
-public class A007756 implements Sequence {
+public class A007756 extends Sequence1 {
 
   // Based on C code at https://github.com/j2b2/TaitCurves
   // C code by J. Betrema

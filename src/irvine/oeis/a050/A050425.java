@@ -1,14 +1,14 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A050425 Numbers for which in base 2 the least number of digits that can be removed to leave a base 2 palindromic number (beginning with 1) is 1.
  * @author Sean A. Irvine
  */
-public class A050425 implements Sequence {
+public class A050425 extends Sequence1 {
 
   private long mN = 1;
 

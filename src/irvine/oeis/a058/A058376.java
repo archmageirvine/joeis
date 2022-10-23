@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058376 Where the race of the count of final nonzero digit of k! changes, starting at k=2.
  * @author Sean A. Irvine
  */
-public class A058376 implements Sequence {
+public class A058376 extends Sequence1 {
 
   private Z mF = Z.ONE;
   private long mN = 1;

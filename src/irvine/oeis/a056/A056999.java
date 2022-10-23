@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056999 Number of days in months of Persian calendar.
  * @author Sean A. Irvine
  */
-public class A056999 implements Sequence {
+public class A056999 extends Sequence1 {
 
   private static final int[] MONTH_LENGTHS = {31, 31, 31, 31, 31, 31, 30, 30, 30, 30, 30, 29};
   private long mN = 474; // Offset year

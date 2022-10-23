@@ -1,13 +1,13 @@
 package irvine.oeis.a166;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A166320 Numbers which are proper divisors of the number obtained by cyclic right-shift by 2 positions.
  * @author Sean A. Irvine
  */
-public class A166320 implements Sequence {
+public class A166320 extends Sequence1 {
 
   private long mN = 142856;
   private long mLimit = 1000000;

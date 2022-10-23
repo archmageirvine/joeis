@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053378 a(n) contains n digits (either '5' or '8') and is divisible by 2^n.
  * @author Sean A. Irvine
  */
-public class A053378 implements Sequence {
+public class A053378 extends Sequence1 {
 
   private Z mA = Z.ZERO;
   private Z mT = Z.ONE;

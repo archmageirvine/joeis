@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037159 Consider the trajectory of n under the iteration of a map which sends x to 3x - sigma(x) if this is &gt;= 0; otherwise the iteration stops. The sequence gives values of n which eventually reach 0.
  * @author Sean A. Irvine
  */
-public class A037159 implements Sequence {
+public class A037159 extends Sequence1 {
 
   private static final long HEURISTIC_MULTIPLIER = 1000;
   private Z mN = Z.valueOf(81);

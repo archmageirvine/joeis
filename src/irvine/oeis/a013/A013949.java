@@ -1,14 +1,14 @@
 package irvine.oeis.a013;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A013949 Start with 1, apply 1-&gt;12, 21-&gt;21, 22-&gt;21, 2-&gt;2 (for final 2), take limit.
  * @author Sean A. Irvine
  */
-public class A013949 implements Sequence {
+public class A013949 extends Sequence1 {
 
   private final LongDynamicBooleanArray mA = new LongDynamicBooleanArray();
   private long mD = 1;

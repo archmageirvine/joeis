@@ -1,13 +1,13 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052056 Numbers k such that k! starts with its largest prime substring.
  * @author Sean A. Irvine
  */
-public class A052056 implements Sequence {
+public class A052056 extends Sequence1 {
 
   private long mN = 0;
   private Z mF = Z.ONE;

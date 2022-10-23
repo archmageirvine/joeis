@@ -4,13 +4,13 @@ import irvine.factor.prime.Fast;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000921 Primes p of the form 3k+1 such that Sum_{x=1..p} cos(2*Pi*x^3/p) &gt;  sqrt(p).
  * @author Sean A. Irvine
  */
-public class A000921 implements Sequence {
+public class A000921 extends Sequence1 {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
   private long mP = 5;

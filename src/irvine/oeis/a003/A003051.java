@@ -5,12 +5,13 @@ import java.util.List;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003051 Number of inequivalent sublattices of index n in hexagonal lattice, where two sublattices are equivalent if they are related by a rotation or reflection preserving the hexagonal lattice.
  * @author Sean A. Irvine
  */
-public class A003051 implements Sequence {
+public class A003051 extends Sequence1 {
 
   private final Sequence mBSeq = new A003050();
   private final List<Z> mB = new ArrayList<>();

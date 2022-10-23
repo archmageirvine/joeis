@@ -5,13 +5,13 @@ import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A331238 Triangle T(n, k) of the number of trees of order n with cutting number k &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A331238 implements Sequence, GraphProcessor {
+public class A331238 extends Sequence1 implements GraphProcessor {
 
   private int mN = 0;
   private int mM = 0;

@@ -3,12 +3,13 @@ package irvine.oeis.a163;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005843;
 /**
  * A163395 a(n) = (n-th even nonprime)^(n-th even number).
  * @author Georg Fischer
  */
-public class A163395 implements Sequence {
+public class A163395 extends Sequence1 {
 
   private final Sequence mA005843 = new A005843();
   private final Sequence mA163300 = new A163300();

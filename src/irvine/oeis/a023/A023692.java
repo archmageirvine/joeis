@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023692 Numbers with a single 1 in their ternary expansion.
  * @author Sean A. Irvine
  */
-public class A023692 implements Sequence {
+public class A023692 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a075;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007814;
 
 /**
  * A075101 Numerator of 2^n/n.
  * @author Georg Fischer
  */
-public class A075101 implements Sequence {
+public class A075101 extends Sequence1 {
 
   final Sequence mA007814 = new A007814();
   protected long mN;

@@ -3,6 +3,7 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a007.A007947;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007947;
  * A326142 Sum of all other divisors of n except its largest squarefree divisor: a(n) = sigma(n) - A007947(n).
  * @author Georg Fischer
  */
-public class A326142 implements Sequence {
+public class A326142 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA007947 = new A007947();

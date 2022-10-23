@@ -6,14 +6,14 @@ import java.util.TreeMap;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A036471 Four numbers (a,b,c,d) with a&lt;b&lt;c&lt;d that satisfy sigma(a) = sigma(b) = sigma(c) = sigma(d) = a+b+c+d are called an amicable quadruple. We order these quadruples according to the common value of sigma. The values of (a, b, c, d, sigma) are in (this sequence, A036472, A036473, A036474, A116148) respectively.
  * @author Sean A. Irvine
  */
-public class A036471 implements Sequence {
+public class A036471 extends Sequence1 {
 
   // This is a fairly hard set of sequences -- you need a lot of RAM to run this,
   // but it is capable of reproducing the sequence

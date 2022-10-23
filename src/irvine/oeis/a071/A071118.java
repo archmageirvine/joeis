@@ -3,13 +3,14 @@ package irvine.oeis.a071;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002618;
 
 /**
  * A071118 Size of the automorphism group of the group Z X Z_n.
  * @author Georg Fischer
  */
-public class A071118 implements Sequence {
+public class A071118 extends Sequence1 {
 
   final Sequence mA002618 = new A002618();
   @Override

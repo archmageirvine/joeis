@@ -3,13 +3,14 @@ package irvine.oeis.a173;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a053.A053829;
 
 /**
  * A173528 a(n) = 1 + sum of digits of n-1 written in base 8.
  * @author Georg Fischer
  */
-public class A173528 implements Sequence {
+public class A173528 extends Sequence1 {
 
   final Sequence mA053829 = new A053829();
   @Override

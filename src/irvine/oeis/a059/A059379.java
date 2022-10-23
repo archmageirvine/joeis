@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059379 Array of values of Jordan function J_k(n) read by antidiagonals (version 1).
  * @author Sean A. Irvine
  */
-public class A059379 implements Sequence {
+public class A059379 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

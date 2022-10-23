@@ -3,13 +3,13 @@ package irvine.oeis.a023;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023975 First bit in fractional part of binary expansion of 8th root of n.
  * @author Sean A. Irvine
  */
-public class A023975 implements Sequence {
+public class A023975 extends Sequence1 {
 
   private static final CR R = CR.EIGHT.inverse();
   private long mN = 0;

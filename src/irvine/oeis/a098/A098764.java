@@ -3,6 +3,7 @@ package irvine.oeis.a098;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001223;
 import irvine.oeis.a001.A001747;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001747;
  * A098764 a(n) = 3p - q where p and q are consecutive primes.
  * @author Georg Fischer
  */
-public class A098764 implements Sequence {
+public class A098764 extends Sequence1 {
 
   final Sequence mA001223 = new A001223();
   final Sequence mA001747 = new A001747();

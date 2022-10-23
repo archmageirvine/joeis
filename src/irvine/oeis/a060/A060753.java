@@ -3,6 +3,7 @@ package irvine.oeis.a060;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a038.A038111;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a038.A038111;
  * A060753 Denominator of 1*2*4*6*...*(prime(n-1)-1) / (2*3*5*7*...*prime(n-1)).
  * @author Georg Fischer
  */
-public class A060753 implements Sequence {
+public class A060753 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA038111 = new A038111();

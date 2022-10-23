@@ -7,15 +7,15 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PairSumSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051693 Square array read by antidiagonals: a(n,k) = sum of two positive regular n-polytopic numbers (i.e., a(n,k) = binomial(x,n) + binomial(y,n) for some x,y &gt;= n).
  * @author Sean A. Irvine
  */
-public class A051693 implements Sequence {
+public class A051693 extends Sequence1 {
 
-  private static final class NGonalSequence implements Sequence {
+  private static final class NGonalSequence extends Sequence1 {
     private final long mM;
     private long mN;
 

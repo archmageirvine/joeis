@@ -4,13 +4,13 @@ import java.util.List;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003639 Number of classes per genus in Q(sqrt -n), n squarefree.
  * @author Sean A. Irvine
  */
-public class A003639 implements Sequence {
+public class A003639 extends Sequence1 {
 
   private long mN = 0;
 

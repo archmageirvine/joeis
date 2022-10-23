@@ -3,13 +3,13 @@ package irvine.oeis.a089;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A089781 Successive coprime numbers with distinct successive differences: gcd(a(k+1),a(k)) = gcd(a(m+1),a(m)) = 1 and a(k+1)-a(k) = a(m+1)-a(m) &lt;==&gt; m=k.
  * @author Sean A. Irvine
  */
-public class A089781 implements Sequence {
+public class A089781 extends Sequence1 {
 
   private Z mPrev = null;
   private Z mMinDelta = Z.ZERO;

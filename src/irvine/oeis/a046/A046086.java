@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046086 Smallest member 'a' of the primitive Pythagorean triples (a,b,c) ordered by increasing c, then b.
  * @author Sean A. Irvine
  */
-public class A046086 implements Sequence {
+public class A046086 extends Sequence1 {
 
   private long mC = 4;
   private long mB = 4;

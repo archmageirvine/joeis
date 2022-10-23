@@ -3,13 +3,14 @@ package irvine.oeis.a325;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a048.A048250;
 
 /**
  * A325313 a(n) = A048250(n) - n, where A048250(n) is the sum of squarefree divisors of n.
  * @author Georg Fischer
  */
-public class A325313 implements Sequence {
+public class A325313 extends Sequence1 {
 
   final Sequence mA048250 = new A048250();
   protected long mN;

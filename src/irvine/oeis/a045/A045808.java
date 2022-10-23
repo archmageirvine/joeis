@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045808 8-ish numbers (end in 67, 69, 81, 83).
  * @author Sean A. Irvine
  */
-public class A045808 implements Sequence {
+public class A045808 extends Sequence1 {
 
   private static final long[] STEPS = {84, 2, 12, 2};
   private long mN = -17;

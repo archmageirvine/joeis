@@ -3,13 +3,14 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046953;
 
 /**
  * A059324 Numbers n such that 6n + 5 is composite.
  * @author Georg Fischer
  */
-public class A059324 implements Sequence {
+public class A059324 extends Sequence1 {
 
   final Sequence mA046953 = new A046953();
   @Override

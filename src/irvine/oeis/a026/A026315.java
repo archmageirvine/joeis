@@ -3,13 +3,13 @@ package irvine.oeis.a026;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A026315 |sin(n)| &lt; |sin(n+1)|.
  * @author Sean A. Irvine
  */
-public class A026315 implements Sequence {
+public class A026315 extends Sequence1 {
 
   private long mN = -1;
 

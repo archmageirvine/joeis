@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034898 n-th term of A034897 is an a(n)-hyperperfect number.
  * @author Sean A. Irvine
  */
-public class A034898 implements Sequence {
+public class A034898 extends Sequence1 {
 
   private long mN = 5;
 

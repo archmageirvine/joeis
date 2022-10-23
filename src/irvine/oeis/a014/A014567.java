@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014567 Numbers k such that k and sigma(k) are relatively prime, where sigma(k) = sum of divisors of k (A000203).
  * @author Sean A. Irvine
  */
-public class A014567 implements Sequence {
+public class A014567 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

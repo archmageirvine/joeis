@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056138 Number of ways in which n can be the shorter leg (shortest side) of an integer-sided right triangle.
  * @author Sean A. Irvine
  */
-public class A056138 implements Sequence {
+public class A056138 extends Sequence1 {
 
   private long mN = 0;
 

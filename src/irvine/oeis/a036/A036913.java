@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036913 Sparsely totient numbers; numbers n such that m &gt; n implies phi(m) &gt; phi(n).
  * @author Sean A. Irvine
  */
-public class A036913 implements Sequence {
+public class A036913 extends Sequence1 {
 
   private Z mMax = Z.ZERO;
   private long mN = 0;

@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054220 Concatenation of n in base 2 up to base 10 is divisible by at least one of these base b numbers, all numbers interpreted as decimals.
  * @author Sean A. Irvine
  */
-public class A054220 implements Sequence {
+public class A054220 extends Sequence1 {
 
   private long mN = 0;
 

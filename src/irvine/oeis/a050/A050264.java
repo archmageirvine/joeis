@@ -3,13 +3,13 @@ package irvine.oeis.a050;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050264 Weak veryprimes.
  * @author Sean A. Irvine
  */
-public class A050264 implements Sequence {
+public class A050264 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 1;

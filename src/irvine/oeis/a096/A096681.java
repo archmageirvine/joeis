@@ -1,13 +1,13 @@
 package irvine.oeis.a096;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A096681 Least k such that decimal representation of k*n contains only digits 0 and 2.
  * @author Georg Fischer
  */
-public class A096681 implements Sequence {
+public class A096681 extends Sequence1 {
 
   private int mN;
   private final String mPattern;

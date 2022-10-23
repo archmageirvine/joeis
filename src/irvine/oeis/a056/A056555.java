@@ -3,13 +3,14 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000190;
 
 /**
  * A056555 Smallest number k (k&gt;0) such that n*k is a perfect 4th power.
  * @author Georg Fischer
  */
-public class A056555 implements Sequence {
+public class A056555 extends Sequence1 {
 
   final Sequence mA000190 = new A000190();
   protected long mN;

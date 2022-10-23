@@ -3,13 +3,14 @@ package irvine.oeis.a129;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a010.A010051;
 import irvine.oeis.a164.A164292;
 /**
  * A129950 Indicator function of twin primes: 1 if n is a twin prime member, 0 if not prime, -1 else (isolated prime or 2).
  * @author Georg Fischer
  */
-public class A129950 implements Sequence {
+public class A129950 extends Sequence1 {
 
   private final Sequence mA010051 = new A010051();
   private final Sequence mA164292 = new A164292();

@@ -3,6 +3,7 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001222;
 import irvine.oeis.a008.A008472;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a008.A008472;
  * A088865 (Sum of distinct prime factors)^(sum of prime exponents).
  * @author Georg Fischer
  */
-public class A088865 implements Sequence {
+public class A088865 extends Sequence1 {
 
   final Sequence mA001222 = new A001222();
   final Sequence mA008472 = new A008472();

@@ -3,13 +3,14 @@ package irvine.oeis.a289;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a013.A013961;
 
 /**
  * A289746 Coefficients in expansion of -q*E'_14 where E_14 is the Eisenstein Series (A058550).
  * @author Georg Fischer
  */
-public class A289746 implements Sequence {
+public class A289746 extends Sequence1 {
 
   final Sequence mA013961 = new A013961();
   protected long mN;

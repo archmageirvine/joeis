@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050434 Primes whose next higher prime is 100 greater.
  * @author Sean A. Irvine
  */
-public class A050434 implements Sequence {
+public class A050434 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mN = Z.valueOf(396727);

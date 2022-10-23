@@ -3,13 +3,13 @@ package irvine.oeis.a052;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052396 (+2)-sigma perfect numbers: numbers k such that (+2)sigma(k) = 2*k, where (+2)sigma(k) = A107758(k).
  * @author Sean A. Irvine
  */
-public class A052396 implements Sequence {
+public class A052396 extends Sequence1 {
 
   private Z mN = Z.ONE;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007913;
 
 /**
  * A055491 Smallest square divisible by n divided by largest square which divides n.
  * @author Georg Fischer
  */
-public class A055491 implements Sequence {
+public class A055491 extends Sequence1 {
 
   final Sequence mA007913 = new A007913();
   @Override

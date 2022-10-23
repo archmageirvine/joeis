@@ -4,13 +4,13 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A243846 Numbers for which the nozero power-sequence of n falls into a loop.
  * @author Sean A. Irvine
  */
-public class A243846 implements Sequence {
+public class A243846 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   private final Set<Z> mSeen = new TreeSet<>();

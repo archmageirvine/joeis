@@ -3,13 +3,13 @@ package irvine.oeis.a040;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A040997 Absolute value of first digit of n minus sum of other digits of n.
  * @author Georg Fischer
  */
-public class A040997 implements Sequence {
+public class A040997 extends Sequence1 {
 
   private int mN = 0;
 

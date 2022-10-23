@@ -3,13 +3,14 @@ package irvine.oeis.a164;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 
 /**
  * A164028 The n-th composite minus 3.
  * @author Georg Fischer
  */
-public class A164028 implements Sequence {
+public class A164028 extends Sequence1 {
 
   final Sequence mA002808 = new A002808();
   @Override

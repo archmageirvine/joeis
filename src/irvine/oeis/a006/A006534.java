@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import jmason.poly.Polyiamond;
 import jmason.poly.PolyiamondCounter;
 
@@ -11,7 +11,7 @@ import jmason.poly.PolyiamondCounter;
  * A006534 Number of one-sided triangular polyominoes (n-iamonds) with n cells; turning over not allowed, holes are allowed.
  * @author jmason
  */
-public class A006534 implements Sequence {
+public class A006534 extends Sequence1 {
 
   private int mN = 0;
   private List<Polyiamond> mPrevList = null;

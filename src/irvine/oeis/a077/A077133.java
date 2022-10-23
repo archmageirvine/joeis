@@ -3,12 +3,13 @@ package irvine.oeis.a077;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A077133 Difference between the sum of odd-indexed primes and even-indexed primes.
  * @author Georg Fischer
  */
-public class A077133 implements Sequence {
+public class A077133 extends Sequence1 {
 
   final Sequence mA077126 = new A077126();
   final Sequence mA077131 = new A077131();

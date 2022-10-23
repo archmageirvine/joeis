@@ -2,14 +2,14 @@ package irvine.oeis.a233;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A233772 Triangle read by rows in which row n lists n together with the proper divisors of n multiplied by -1 in increasing order.
  * Copied from A056538.
  * @author Georg Fischer
  */
-public class A233772 implements Sequence {
+public class A233772 extends Sequence1 {
 
   private long mN = 0;
   private int mM = 0;

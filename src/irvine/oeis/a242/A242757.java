@@ -3,13 +3,14 @@ package irvine.oeis.a242;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001359;
 
 /**
  * A242757 Partial sums of the number of integers between successive twin prime pairs.
  * @author Georg Fischer
  */
-public class A242757 implements Sequence {
+public class A242757 extends Sequence1 {
 
   final Sequence mA001359 = new A001359();
   protected long mN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025032 Numbers with an increasing number of non-residues (moduli).
  * @author Sean A. Irvine
  */
-public class A025032 implements Sequence {
+public class A025032 extends Sequence1 {
 
   private long mN = 0;
   private long mMax = -1;

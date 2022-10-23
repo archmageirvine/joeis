@@ -3,13 +3,13 @@ package irvine.oeis.a153;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A153980 Positive integers n equal to the sum of all the different integers formed by the digits of n (n itself excluded), keeping the order of the digits.
  * @author Sean A. Irvine
  */
-public class A153980 implements Sequence {
+public class A153980 extends Sequence1 {
 
   private Z mN = Z.valueOf(259145);
 

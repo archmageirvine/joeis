@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056733 Each number is the sum of the cubes of its 3 sections.
  * @author Sean A. Irvine
  */
-public class A056733 implements Sequence {
+public class A056733 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private long mN = 10;

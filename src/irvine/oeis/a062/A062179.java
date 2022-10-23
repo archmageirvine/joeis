@@ -2,13 +2,13 @@ package irvine.oeis.a062;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A062179 Harmonic mean of digits is an integer.
  * @author Georg Fischer
  */
-public class A062179 implements Sequence {
+public class A062179 extends Sequence1 {
 
   private long mN = 0;
 

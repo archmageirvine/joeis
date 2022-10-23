@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051675 "Second factorials": Product_{k=1..n} k^(k^2).
  * @author Sean A. Irvine
  */
-public class A051675 implements Sequence {
+public class A051675 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private long mN = 0;

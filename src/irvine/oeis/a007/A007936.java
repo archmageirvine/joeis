@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007936 Some permutation of digits is a square.
  * @author Sean A. Irvine
  */
-public class A007936 implements Sequence {
+public class A007936 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   private final HashSet<String> mSortedSquares = new HashSet<>();

@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045577 Numbers k that divide 4^k + 2^k or 8^k + 4^k.
  * @author Sean A. Irvine
  */
-public class A045577 implements Sequence {
+public class A045577 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

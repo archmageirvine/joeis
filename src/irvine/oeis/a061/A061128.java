@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A061128 Number of degree-n permutations of order exactly 30.
  * E.g.f.: - exp(x) + exp(x + 1/2*x^2) + exp(x + 1/3*x^3) + exp(x + 1/5*x^5) - exp(x + 1/2*x^2 + 1/3*x^3 + 1/6*x^6) - exp(x + 1/2*x^2 + 1/5*x^5 + 1/10*x^10) - exp(x + 1/3*x^3 + 1/5*x^5 + 1/15*x^15) + exp(x + 1/2*x^2 + 1/3*x^3 + 1/5*x^5 + 1/6*x^6 + 1/10*x^10 + 1/15*x^15 + 1/30*x^30)
  * @author Georg Fischer
  */
-public class A061128 implements Sequence {
+public class A061128 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

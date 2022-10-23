@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038133 From a subtractive Goldbach conjecture: odd primes that are not cluster primes.
  * @author Sean A. Irvine
  */
-public class A038133 implements Sequence {
+public class A038133 extends Sequence1 {
 
   protected final Fast mPrime = new Fast();
   private long mP = 95;

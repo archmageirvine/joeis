@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007923 Lengths increase by 1, digits cycle through positive digits.
  * @author Sean A. Irvine
  */
-public class A007923 implements Sequence {
+public class A007923 extends Sequence1 {
 
   private int mM = -1;
   private int mN = 0;

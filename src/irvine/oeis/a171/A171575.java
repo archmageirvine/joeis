@@ -3,13 +3,14 @@ package irvine.oeis.a171;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008578;
 import irvine.oeis.a163.A163300;
 /**
  * A171575 n-th noncomposite number plus n-th even nonprime number.
  * @author Georg Fischer
  */
-public class A171575 implements Sequence {
+public class A171575 extends Sequence1 {
 
   private final Sequence mA008578 = new A008578();
   private final Sequence mA163300 = new A163300();

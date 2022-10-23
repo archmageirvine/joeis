@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020299 Strong pseudoprimes to base 73.
  * @author Sean A. Irvine
  */
-public class A020299 implements Sequence {
+public class A020299 extends Sequence1 {
 
   private Z mN = Z.SEVEN;
   private final Fast mPrime = new Fast();

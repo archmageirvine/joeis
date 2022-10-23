@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055631 Sum of Euler's totient function phi of distinct primes dividing n.
  * @author Sean A. Irvine
  */
-public class A055631 implements Sequence {
+public class A055631 extends Sequence1 {
 
   private long mN = 0;
 

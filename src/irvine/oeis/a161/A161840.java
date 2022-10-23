@@ -3,12 +3,13 @@ package irvine.oeis.a161;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a072.A072670;
 /**
  * A161840 Number of noncentral divisors of n.
  * @author Georg Fischer
  */
-public class A161840 implements Sequence {
+public class A161840 extends Sequence1 {
 
   private final Sequence mA072670 = new A072670();
   @Override

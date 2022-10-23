@@ -3,13 +3,14 @@ package irvine.oeis.a136;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001182;
 
 /**
  * A136514 Number of unit square lattice cells inside half-plane (two adjacent quadrants) of origin centered circle of radius n.
  * @author Georg Fischer
  */
-public class A136514 implements Sequence {
+public class A136514 extends Sequence1 {
 
   final Sequence mA001182 = new A001182();
   @Override

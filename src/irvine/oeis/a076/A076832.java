@@ -10,13 +10,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A076832 Triangle T(n,k), read by rows, giving the total number of inequivalent binary linear [n,i] codes with no column of zeros, summed for i &lt;= k (n &gt;= 1, 1 &lt;= k &lt;= n).
  * @author Sean A. Irvine
  */
-public class A076832 implements Sequence {
+public class A076832 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final List<CycleIndex> mCycleIndices = new ArrayList<>();

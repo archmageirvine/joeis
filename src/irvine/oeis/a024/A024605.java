@@ -3,14 +3,14 @@ package irvine.oeis.a024;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A024605 Number in position n when the numbers i^2 - i*j + j^2 (1 &lt;= i &lt;= j) are arranged in nondecreasing order.
  * @author Sean A. Irvine
  */
-public class A024605 implements Sequence {
+public class A024605 extends Sequence1 {
 
   private static Z eval(final Pair<Long, Long> a) {
     final Z l = Z.valueOf(a.left());

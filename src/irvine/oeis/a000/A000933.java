@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000933 Genus of complete graph on n nodes.
  * @author Sean A. Irvine
  */
-public class A000933 implements Sequence {
+public class A000933 extends Sequence1 {
 
   private long mN = 0;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052192 Smallest a(n) for which n*a(n) has no isolated digits.
  * @author Sean A. Irvine
  */
-public class A052192 implements Sequence {
+public class A052192 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

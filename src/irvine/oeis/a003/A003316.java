@@ -5,13 +5,13 @@ import java.util.Arrays;
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003316 Sum of lengths of longest increasing subsequences of all permutations of n elements.
  * @author Sean A. Irvine
  */
-public class A003316 implements Sequence {
+public class A003316 extends Sequence1 {
 
   // After Alois P. Heinz
 

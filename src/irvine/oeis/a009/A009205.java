@@ -3,13 +3,13 @@ package irvine.oeis.a009;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009205 a(n) = gcd(d(n), sigma(n)).
  * @author Sean A. Irvine
  */
-public class A009205 implements Sequence {
+public class A009205 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

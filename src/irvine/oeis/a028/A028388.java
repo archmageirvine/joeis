@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028388 Good primes (version 2): prime(n) such that prime(n)^2 &gt; prime(n-i)*prime(n+i) for all 1 &lt;= i &lt;= n-1.
  * @author Sean A. Irvine
  */
-public class A028388 implements Sequence {
+public class A028388 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

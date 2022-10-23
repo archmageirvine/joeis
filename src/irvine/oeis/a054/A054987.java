@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054987 Smallest composite x such that sigma(x+2^n) = sigma(x) + 2^n.
  * @author Sean A. Irvine
  */
-public class A054987 implements Sequence {
+public class A054987 extends Sequence1 {
 
   private int mN = 0;
 

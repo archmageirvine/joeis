@@ -2,14 +2,14 @@ package irvine.oeis.a164;
 // manually compseq at 2021-09-17
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A164386 Numbers which are not 1 larger than a nonzero square.
  * Almost a complement of A002522: 1, 3, 4, 6, 7, 8, 9, 11 
  * @author Georg Fischer
  */
-public class A164386 implements Sequence {
+public class A164386 extends Sequence1 {
     
   protected int mK; // number with this property
   protected int mRoot; // root of next square

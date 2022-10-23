@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045951 Number of solutions to product_A+product_B=product_C where A,B,C is a partition of {1,2,...n}.
  * @author Sean A. Irvine
  */
-public class A045951 implements Sequence {
+public class A045951 extends Sequence1 {
 
   // Actually it seems you have to pretend that "1" is included in each
   // set -- this is not quite the same thing as saying that empty set

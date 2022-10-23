@@ -2,14 +2,14 @@ package irvine.oeis.a058;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A058233 Primes p such that p#+1 is divisible by the next prime after p.
  * @author Sean A. Irvine
  */
-public class A058233 implements Sequence {
+public class A058233 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final Fast mPrime = new Fast();

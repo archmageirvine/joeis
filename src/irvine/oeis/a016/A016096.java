@@ -2,13 +2,13 @@ package irvine.oeis.a016;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A016096 a(n+1) = a(n) + sum of its digits, with a(1) = 9.
  * @author Sean A. Irvine
  */
-public class A016096 implements Sequence {
+public class A016096 extends Sequence1 {
 
   private Z mA = null;
 

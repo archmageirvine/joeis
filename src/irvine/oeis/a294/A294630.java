@@ -3,11 +3,12 @@ package irvine.oeis.a294;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 /**
  * A294630 Partial sums of A294629.
  * @author Georg Fischer
  */
-public class A294630 implements Sequence {
+public class A294630 extends Sequence1 {
 
   private final Sequence mA294017 = new A294017();
   @Override

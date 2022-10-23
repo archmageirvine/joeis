@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024509 Numbers that are the sum of 2 nonzero squares, including repetitions.
  * @author Sean A. Irvine
  */
-public class A024509 implements Sequence {
+public class A024509 extends Sequence1 {
 
   private long mN = 1;
   private long mC = 0;

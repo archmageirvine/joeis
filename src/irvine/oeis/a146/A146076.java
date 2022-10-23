@@ -3,6 +3,7 @@ package irvine.oeis.a146;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a000.A000593;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000593;
  * A146076 Sum of even divisors of n.
  * @author Georg Fischer
  */
-public class A146076 implements Sequence {
+public class A146076 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA000593 = new A000593();

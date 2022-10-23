@@ -5,13 +5,13 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.nauty.Multigraph;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A134818 Number of unlabeled connected loopless multigraphs with n nodes of degree 4 or less and with at most triple edges.
  * @author Sean A. Irvine
  */
-public class A134818 implements Sequence, GraphProcessor {
+public class A134818 extends Sequence1 implements GraphProcessor {
 
   private int mN = 0;
   private Multigraph mMultigraph = null;

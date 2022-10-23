@@ -1,13 +1,13 @@
 package irvine.oeis.a070;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A070885 a(n) = (3/2)*a(n-1) if a(n-1) is even; (3/2)*(a(n-1)+1) if a(n-1) is odd.
  * @author Sean A. Irvine
  */
-public class A070885 implements Sequence {
+public class A070885 extends Sequence1 {
 
   private Z mA = null;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002796 Numbers that are divisible by each nonzero digit.
  * @author Sean A. Irvine
  */
-public class A002796 implements Sequence {
+public class A002796 extends Sequence1 {
 
   private long mN = 0;
   @Override

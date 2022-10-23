@@ -2,6 +2,7 @@ package irvine.oeis.a031;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007376;
 import irvine.util.array.LongDynamicIntArray;
 
@@ -9,7 +10,7 @@ import irvine.util.array.LongDynamicIntArray;
  * A031297 a(n) is the least k such that the base-10 representation of n begins at s(k), where s=A007376.
  * @author Sean A. Irvine
  */
-public class A031297 implements Sequence {
+public class A031297 extends Sequence1 {
 
   private final LongDynamicIntArray mA = new LongDynamicIntArray();
   private long mM;

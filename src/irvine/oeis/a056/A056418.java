@@ -2,13 +2,14 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002729;
 
 /**
  * A056418 Number of step cyclic shifted sequences using exactly five different symbols.
  * @author Sean A. Irvine
  */
-public class A056418 implements Sequence {
+public class A056418 extends Sequence1 {
 
   private final Sequence mA = new A056413();
   private final Sequence mB = new A056412();

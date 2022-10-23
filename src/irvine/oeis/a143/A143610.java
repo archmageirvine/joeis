@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A143610 Numbers of the form p^2*q^3, where p,q are distinct primes.
  * @author Sean A. Irvine
  */
-public class A143610 implements Sequence {
+public class A143610 extends Sequence1 {
 
   // Squbes
   private final TreeSet<Z> mPriority = new TreeSet<>();

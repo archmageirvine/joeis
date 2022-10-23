@@ -7,13 +7,13 @@ import irvine.math.group.GaloisField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.IrreduciblePolynomials;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059006 Numbers k such that x^k + x^2 + 1 is irreducible over GF(7).
  * @author Sean A. Irvine
  */
-public class A059006 implements Sequence {
+public class A059006 extends Sequence1 {
 
   private static final GaloisField GF7 = new GaloisField(7);
   private static final PolynomialRingField<Z> GF7X = new PolynomialRingField<>(GF7);

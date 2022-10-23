@@ -3,13 +3,14 @@ package irvine.oeis.a319;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a029.A029742;
 
 /**
  * A319441 Cubes of non-palindromic numbers.
  * @author Georg Fischer
  */
-public class A319441 implements Sequence {
+public class A319441 extends Sequence1 {
 
   final Sequence mA029742 = new A029742();
   @Override

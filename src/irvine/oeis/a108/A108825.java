@@ -1,13 +1,13 @@
 package irvine.oeis.a108;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A108825 Numbers n such that n divides the sum of the digits of n!.
  * @author Sean A. Irvine
  */
-public class A108825 implements Sequence {
+public class A108825 extends Sequence1 {
 
   private long mN = 0;
   private Z mF = Z.ONE;

@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006575 Number of primitive (aperiodic, or Lyndon) asymmetric rhythm cycles: ones having no nontrivial shift automorphism.
  * @author Sean A. Irvine
  */
-public class A006575 implements Sequence {
+public class A006575 extends Sequence1 {
 
   private int mN = 0;
 

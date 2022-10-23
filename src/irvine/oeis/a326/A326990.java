@@ -3,13 +3,14 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000593;
 
 /**
  * A326990 Sum of odd divisors of n that are greater than 1.
  * @author Georg Fischer
  */
-public class A326990 implements Sequence {
+public class A326990 extends Sequence1 {
 
   final Sequence mA000593 = new A000593();
   @Override

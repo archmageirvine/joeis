@@ -3,12 +3,13 @@ package irvine.oeis.a128;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a053.A053638;
 /**
  * A128093 a(n) = smallest multiple of n which is &gt;= 2^n.
  * @author Georg Fischer
  */
-public class A128093 implements Sequence {
+public class A128093 extends Sequence1 {
 
   private final Sequence mA053638 = new A053638();
   protected long mN;

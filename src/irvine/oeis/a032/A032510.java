@@ -2,13 +2,13 @@ package irvine.oeis.a032;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032510 Scan decimal expansion of Pi until all n-digit strings have been seen; a(n) is last string seen.
  * @author Sean A. Irvine
  */
-public class A032510 implements Sequence {
+public class A032510 extends Sequence1 {
 
   private final CR mA = getCR();
   private int mDigits = 1000;

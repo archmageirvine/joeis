@@ -1,13 +1,13 @@
 package irvine.oeis.a336;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A336327 Period of orbit of Post's tag system ({0,1},{(0,0),(1,01101)},3,100^n).
  * @author Sean A. Irvine
  */
-public class A336327 implements Sequence {
+public class A336327 extends Sequence1 {
 
   private static final class Post {
 

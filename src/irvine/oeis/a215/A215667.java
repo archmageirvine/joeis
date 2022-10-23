@@ -3,13 +3,14 @@ package irvine.oeis.a215;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a141.A141849;
 
 /**
  * A215667 22n+1 is prime.
  * @author Georg Fischer
  */
-public class A215667 implements Sequence {
+public class A215667 extends Sequence1 {
 
   final Sequence mA141849 = new A141849();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038682 Sixth powers ending nontrivially in a nonzero sixth power.
  * @author Sean A. Irvine
  */
-public class A038682 implements Sequence {
+public class A038682 extends Sequence1 {
 
   private long mN = 2;
 

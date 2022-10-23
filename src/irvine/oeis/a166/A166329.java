@@ -3,13 +3,14 @@ package irvine.oeis.a166;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006094;
 
 /**
  * A166329 Products of squares of 2 successive primes.
  * @author Georg Fischer
  */
-public class A166329 implements Sequence {
+public class A166329 extends Sequence1 {
 
   final Sequence mA006094 = new A006094();
   @Override

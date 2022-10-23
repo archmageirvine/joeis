@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000884 Number of switching networks with C(2,n) acting on the domain and AG(3,2) acting on the domain.
  * @author Sean A. Irvine
  */
-public class A000884 implements Sequence {
+public class A000884 extends Sequence1 {
 
   private static final Z Z42 = Z.valueOf(42);
   private static final Z Z92 = Z.valueOf(92);

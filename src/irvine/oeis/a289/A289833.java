@@ -3,13 +3,14 @@ package irvine.oeis.a289;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000594;
 
 /**
  * A289833 Fourier coefficients of -q*(Delta/q)' where Delta is the normalized unique weight-twelve cusp form for the full modular group (the generating function of Ramanujan's tau function).
  * @author Georg Fischer
  */
-public class A289833 implements Sequence {
+public class A289833 extends Sequence1 {
 
   final Sequence mA000594 = new A000594();
   protected long mN;

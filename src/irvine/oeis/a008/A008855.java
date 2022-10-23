@@ -4,13 +4,13 @@ import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008855 Triangle T(n,k), n&gt;=1, read by rows, where T(n,k) is the number of lattice polygons with area n and perimeter 2*k.
  * @author Sean A. Irvine
  */
-public class A008855 implements Sequence {
+public class A008855 extends Sequence1 {
 
   private long[] mPerimCounts = new long[0];
   private int mN = 3;

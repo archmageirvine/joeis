@@ -9,13 +9,13 @@ import irvine.math.polynomial.RationalFunctionField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050203 a(n) is the coefficient of the term a^(-n) in the asymptotic series for the least positive zero of the generalized Rogers-Ramanujan continued fraction.
  * @author Sean A. Irvine
  */
-public class A050203 implements Sequence {
+public class A050203 extends Sequence1 {
 
   // After Kok Seng Chua
 

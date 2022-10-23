@@ -5,13 +5,13 @@ import irvine.math.group.IntegersModMul;
 import irvine.math.q.Q;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003473 Generalized Euler phi function (for p=2).
  * @author Sean A. Irvine
  */
-public class A003473 implements Sequence {
+public class A003473 extends Sequence1 {
 
   protected int mN = 0;
 

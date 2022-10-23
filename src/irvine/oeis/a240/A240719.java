@@ -1,13 +1,13 @@
 package irvine.oeis.a240;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A240719 Numbers k such that 2^k == 1 (mod (k+1)^2).
  * @author Georg Fischer
  */
-public class A240719 implements Sequence {
+public class A240719 extends Sequence1 {
 
   private int mK = 0;
 

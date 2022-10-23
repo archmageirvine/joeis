@@ -2,13 +2,14 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002113;
 
 /**
  * A056544 Smallest palindrome containing the digits of n as a subsequence.
  * @author Sean A. Irvine
  */
-public class A056544 implements Sequence {
+public class A056544 extends Sequence1 {
 
   private long mN = 0;
 

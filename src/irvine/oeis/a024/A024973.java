@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024973 Sum of three distinct positive cubes, including repetitions (first differs from A024975 at 1009).
  * @author Sean A. Irvine
  */
-public class A024973 implements Sequence {
+public class A024973 extends Sequence1 {
 
   private long mN = 2;
   private long mC = 0;

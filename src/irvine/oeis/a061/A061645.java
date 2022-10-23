@@ -3,12 +3,13 @@ package irvine.oeis.a061;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000043;
 /**
  * A061645 a(n) is the number of divisors of n-th even perfect number.
  * @author Georg Fischer
  */
-public class A061645 implements Sequence {
+public class A061645 extends Sequence1 {
 
   private final Sequence mA000043 = new A000043();
 

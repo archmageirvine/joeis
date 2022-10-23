@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007960 Positive numbers k with the property that some permutation of the digits of k is a triangular number.
  * @author Sean A. Irvine
  */
-public class A007960 implements Sequence {
+public class A007960 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   private final HashSet<String> mSortedTriangular = new HashSet<>();

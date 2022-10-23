@@ -1,7 +1,7 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 import irvine.util.string.StringUtils;
 
@@ -9,7 +9,7 @@ import irvine.util.string.StringUtils;
  * A052059 Least k such that the longest palindromic substring (without leading zeros) contained in 2^k has length n.
  * @author Sean A. Irvine
  */
-public class A052059 implements Sequence {
+public class A052059 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final DynamicIntArray mLengths = new DynamicIntArray();

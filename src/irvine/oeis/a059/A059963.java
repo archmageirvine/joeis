@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059963 Triangle T(n,k) giving number of ways of placing n nonattacking queens on n X n board with the queen on the first row fixed at column k, 1&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
-public class A059963 implements Sequence {
+public class A059963 extends Sequence1 {
 
   // A simple backtracking implementation.
   // Don't expect to break any records using this :-)

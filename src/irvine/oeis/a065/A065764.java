@@ -4,13 +4,13 @@ package irvine.oeis.a065;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A065764 Sum of divisors of square numbers.
  * @author Georg Fischer
  */
-public class A065764 implements Sequence {
+public class A065764 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

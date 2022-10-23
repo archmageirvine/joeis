@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006245 Number of primitive sorting networks on n elements; also number of rhombic tilings of a 2n-gon.
  * @author Sean A. Irvine
  */
-public class A006245 implements Sequence {
+public class A006245 extends Sequence1 {
 
   // After Matthew J. Samuel
 

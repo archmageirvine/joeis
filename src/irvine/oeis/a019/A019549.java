@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019549 Primes formed by concatenating other primes.
  * @author Sean A. Irvine
  */
-public class A019549 implements Sequence {
+public class A019549 extends Sequence1 {
 
   private final TreeSet<String> mConcatOfPrimes = new TreeSet<>();
   private final Fast mPrime = new Fast();

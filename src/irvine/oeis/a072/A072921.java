@@ -3,14 +3,14 @@ package irvine.oeis.a072;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A072921 a(1)=1; a(n) = a(n-1) + [sum of all decimal digits present so far in the sequence].
  * <code>a(1)=1, a(2)=2; a(n+1)=2*a(n)-a(n-1)+sod(a(n))</code> (sod = "sum of digits"): 1, 2, 5, 13, 25
  * @author Georg Fischer
  */
-public class A072921 implements Sequence {
+public class A072921 extends Sequence1 {
 
   private final Z mStart;
   private Z mA1;

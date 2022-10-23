@@ -3,14 +3,14 @@ package irvine.oeis.a028;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A028308 Form a triangle with n numbers in top row; all other numbers are the product of their parents. The numbers must be positive and distinct and the final number is to be minimized.
  * @author Sean A. Irvine
  */
-public class A028308 implements Sequence {
+public class A028308 extends Sequence1 {
 
   // Incrementally chooses elements for the top row.
   // Maintain last element of each subsequent row (sufficient to compute total or back up).

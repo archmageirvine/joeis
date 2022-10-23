@@ -1,14 +1,14 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A030074 Squares which are palindromes in base 14.
  * @author Sean A. Irvine
  */
-public class A030074 implements Sequence {
+public class A030074 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

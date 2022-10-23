@@ -3,13 +3,13 @@ package irvine.oeis.a032;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032988 Numbers k such that if d,e are consecutive digits of k in base 6, then |d-e| &gt;= 4.
  * @author Sean A. Irvine
  */
-public class A032988 implements Sequence {
+public class A032988 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
 

@@ -3,13 +3,14 @@ package irvine.oeis.a064;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004202;
 
 /**
  * A064801 Take 1, skip 2, take 2, skip 3, take 3, etc.
  * @author Georg Fischer
  */
-public class A064801 implements Sequence {
+public class A064801 extends Sequence1 {
 
   final Sequence mA004202 = new A004202();
   @Override

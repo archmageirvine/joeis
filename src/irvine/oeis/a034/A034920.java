@@ -7,13 +7,13 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.SmallDenseMatrix;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034920 Maximal consecutive determinant of n X n persymmetric matrix with entries {-1,0,+1}.
  * @author Sean A. Irvine
  */
-public class A034920 implements Sequence {
+public class A034920 extends Sequence1 {
 
   private static final Z[] ELEMENTS = {Z.NEG_ONE, Z.ZERO, Z.ONE};
   private int mN = 0;

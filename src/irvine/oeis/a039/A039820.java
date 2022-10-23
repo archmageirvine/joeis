@@ -2,13 +2,13 @@ package irvine.oeis.a039;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039820 Numbers whose square contains the same digit more than 2/3 of the time and does not end in 0.
  * @author Sean A. Irvine
  */
-public class A039820 implements Sequence {
+public class A039820 extends Sequence1 {
 
   private long mN = 0;
 

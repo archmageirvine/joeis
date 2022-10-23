@@ -5,13 +5,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.ChebyshevPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054375 Table of resultants for Chebyshev polynomials T_k(x) and T_n(x).
  * @author Sean A. Irvine
  */
-public class A054375 implements Sequence {
+public class A054375 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final ChebyshevPolynomials mChebyshevPolynomials = new ChebyshevPolynomials(1);

@@ -3,6 +3,7 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a001.A001511;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001511;
  * A326987 Number of nonpowers of 2 dividing n.
  * @author Georg Fischer
  */
-public class A326987 implements Sequence {
+public class A326987 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA001511 = new A001511();

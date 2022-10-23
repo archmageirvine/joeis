@@ -3,13 +3,14 @@ package irvine.oeis.a067;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a048.A048161;
 
 /**
  * A067755 Even legs of Pythagorean triangles whose other leg and hypotenuse are both prime.
  * @author Georg Fischer
  */
-public class A067755 implements Sequence {
+public class A067755 extends Sequence1 {
 
   final Sequence mA048161 = new A048161();
   @Override

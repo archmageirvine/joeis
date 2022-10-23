@@ -3,13 +3,13 @@ package irvine.oeis.a024;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024408 Perimeters of more than one primitive Pythagorean triangle.
  * @author Sean A. Irvine
  */
-public class A024408 implements Sequence {
+public class A024408 extends Sequence1 {
 
   protected long mN = 0;
 

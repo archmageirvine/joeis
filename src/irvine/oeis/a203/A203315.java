@@ -3,14 +3,14 @@ package irvine.oeis.a203;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A203315 Vandermonde determinant of the first n odd primes.
  * @author Georg Fischer
  */
-public class A203315 implements Sequence {
+public class A203315 extends Sequence1 {
 
   private int mN = 0;
   private final MemorySequence mA000040 = MemorySequence.cachedSequence(new A000040());

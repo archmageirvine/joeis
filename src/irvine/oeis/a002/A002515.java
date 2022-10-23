@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002515 Lucasian primes: p == 3 (mod 4) with 2*p+1 prime.
  * @author Sean A. Irvine
  */
-public class A002515 implements Sequence {
+public class A002515 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

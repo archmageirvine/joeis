@@ -3,13 +3,14 @@ package irvine.oeis.a060;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a080.A080846;
 
 /**
  * A060236 If n mod 3 = 0 then a(n) = a(n/3), otherwise a(n) = n mod 3.
  * @author Georg Fischer
  */
-public class A060236 implements Sequence {
+public class A060236 extends Sequence1 {
 
   final Sequence mA080846 = new A080846();
   @Override

@@ -3,13 +3,14 @@ package irvine.oeis.a109;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005228;
 
 /**
  * A109592 Sequence and first differences include all even numbers exactly once and no odd numbers.
  * @author Georg Fischer
  */
-public class A109592 implements Sequence {
+public class A109592 extends Sequence1 {
 
   final Sequence mA005228 = new A005228();
   @Override

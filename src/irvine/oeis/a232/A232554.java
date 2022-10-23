@@ -3,13 +3,14 @@ package irvine.oeis.a232;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046655;
 
 /**
  * A232554 Square numbers whose sum of square divisors is also square.
  * @author Georg Fischer
  */
-public class A232554 implements Sequence {
+public class A232554 extends Sequence1 {
 
   final Sequence mA046655 = new A046655();
   @Override

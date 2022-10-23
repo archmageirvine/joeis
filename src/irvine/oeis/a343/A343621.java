@@ -3,12 +3,13 @@ package irvine.oeis.a343;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a174.A174973;
 /**
  * A343621 Numbers k such that the largest Dyck path of the symmetric representation of sigma(k) does not touch the largest Dyck path of the symmetric representation of sigma(k+1).
  * @author Georg Fischer
  */
-public class A343621 implements Sequence {
+public class A343621 extends Sequence1 {
 
   private final Sequence mA174973 = new A174973();
   /** Construct the sequence. */

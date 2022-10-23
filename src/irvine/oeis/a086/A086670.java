@@ -3,6 +3,7 @@ package irvine.oeis.a086;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a001.A001227;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001227;
  * A086670 Sum of floor(d/2) where d is a divisor of n.
  * @author Georg Fischer
  */
-public class A086670 implements Sequence {
+public class A086670 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA001227 = new A001227();

@@ -3,13 +3,13 @@ package irvine.oeis.a039;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039944 Undulating palindromic primes of form ABABAB...BA with alternating prime and nonprime digits.
  * @author Sean A. Irvine
  */
-public class A039944 implements Sequence {
+public class A039944 extends Sequence1 {
 
   private static final long[] A = {2, 3, 5, 7};
   private static final long[] B = {0, 1, 4, 6, 8, 9};

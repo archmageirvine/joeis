@@ -3,13 +3,14 @@ package irvine.oeis.a121;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 
 /**
  * A121048 a(n) = n + phi(n), for Euler totient function phi(n).
  * @author Georg Fischer
  */
-public class A121048 implements Sequence {
+public class A121048 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   protected long mN;

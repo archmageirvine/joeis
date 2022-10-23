@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050798 Numbers n such that m = n^2 + 1 is expressible as the sum of two nonzero squares in exactly two ways.
  * @author Sean A. Irvine
  */
-public class A050798 implements Sequence {
+public class A050798 extends Sequence1 {
 
   private long mN = 0;
 

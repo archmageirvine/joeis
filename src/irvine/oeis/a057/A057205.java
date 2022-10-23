@@ -7,14 +7,14 @@ import java.util.List;
 import java.util.Locale;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.io.StreamProcessor;
 
 /**
  * A057205 Primes congruent to 3 modulo 4 generated recursively: a(n) = Min_{p, prime; p mod 4 = 3; p|4Q-1}, where Q is the product of all previous terms in the sequence. The initial term is 3.
  * @author Sean A. Irvine
  */
-public class A057205 implements Sequence {
+public class A057205 extends Sequence1 {
 
   private final List<String> mLines;
   {

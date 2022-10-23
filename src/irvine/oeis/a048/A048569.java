@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048569 Values of k for which the number of divisors of the central binomial coefficient C(k, floor(k/2)) exceeds the number of divisors of all other binomial coefficients C(k,j).
  * @author Sean A. Irvine
  */
-public class A048569 implements Sequence {
+public class A048569 extends Sequence1 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
   private long mN = 0;

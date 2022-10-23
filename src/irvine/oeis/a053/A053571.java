@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053571 Sum of totient functions over arguments running through numbers unrelated to n.
  * @author Sean A. Irvine
  */
-public class A053571 implements Sequence {
+public class A053571 extends Sequence1 {
 
   private long mN = 0;
 

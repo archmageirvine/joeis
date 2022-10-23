@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020685 Numbers of form 5 x^2 + 6 y^2.
  * @author Sean A. Irvine
  */
-public class A020685 implements Sequence {
+public class A020685 extends Sequence1 {
 
   private long mN = -1;
 

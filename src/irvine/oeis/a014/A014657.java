@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014657 Numbers m that divide 2^k + 1 for some nonnegative k.
  * @author Sean A. Irvine
  */
-public class A014657 implements Sequence {
+public class A014657 extends Sequence1 {
 
   private long mN = 0;
 

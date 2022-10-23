@@ -3,6 +3,7 @@ package irvine.oeis.a176;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014574;
 import irvine.oeis.a078.A078571;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a078.A078571;
  * A176915 Average of n-th twin prime pair minus total number of prime factors of average of n-th twin prime pair.
  * @author Georg Fischer
  */
-public class A176915 implements Sequence {
+public class A176915 extends Sequence1 {
 
   final Sequence mA014574 = new A014574();
   final Sequence mA078571 = new A078571();

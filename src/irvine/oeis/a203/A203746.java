@@ -3,14 +3,14 @@ package irvine.oeis.a203;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
  * A203746 Vandermonde sequence using x^2 + y^2 applied to the Fibonacci numbers (1,2,3,5,...,F(n+1)), where F=A000045.
  * @author Georg Fischer
  */
-public class A203746 implements Sequence {
+public class A203746 extends Sequence1 {
 
   protected int mN = 0;
   private final MemorySequence mA000045 = MemorySequence.cachedSequence(new A000045());

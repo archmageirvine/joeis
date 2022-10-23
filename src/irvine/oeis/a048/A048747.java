@@ -5,13 +5,13 @@ import java.util.TreeSet;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048747 Factor composite n, divide sum of divisors by number of divisors; append n to sequence if quotient is integral and not previously seen.
  * @author Sean A. Irvine
  */
-public class A048747 implements Sequence {
+public class A048747 extends Sequence1 {
 
   private final TreeSet<Z> mSeen = new TreeSet<>();
   private long mN = 5;

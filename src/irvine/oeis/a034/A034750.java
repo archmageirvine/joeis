@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034750 Dirichlet convolution of Fibonacci numbers with Bell numbers.
  * @author Sean A. Irvine
  */
-public class A034750 implements Sequence {
+public class A034750 extends Sequence1 {
 
   private int mN = 0;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030175 When squared gives number composed of digits {1,2,3}.
  * @author Sean A. Irvine
  */
-public class A030175 implements Sequence {
+public class A030175 extends Sequence1 {
 
   // No square ends with 2 or 3.
   // n^2 only ends with 1, if n ends with 1 or 9

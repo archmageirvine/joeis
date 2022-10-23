@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A077208 Rearrangement of squarefree numbers such that a(k) begins with the end of a(k-1).
  * @author Sean A. Irvine
  */
-public class A077208 implements Sequence {
+public class A077208 extends Sequence1 {
 
   private final HashSet<Z> mUsed = new HashSet<>();
   private Z mPrev = null;

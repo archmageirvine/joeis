@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057557 Lexicographic ordering of NxNxN, where N={1,2,3,...}.
  * @author Sean A. Irvine
  */
-public class A057557 implements Sequence {
+public class A057557 extends Sequence1 {
 
   private long mN = 2;
   private long mM = 1;

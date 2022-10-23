@@ -3,13 +3,14 @@ package irvine.oeis.a190;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a187.A187285;
 
 /**
  * A190302 Smallest number h such that the decimal expansion of n*h starts with 1.
  * @author Georg Fischer
  */
-public class A190302 implements Sequence {
+public class A190302 extends Sequence1 {
 
   final Sequence mA187285 = new A187285();
   protected long mN;

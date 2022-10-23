@@ -3,6 +3,7 @@ package irvine.oeis.a243;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a010.A010846;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a010.A010846;
  * A243822 Number of "semidivisors" of n, numbers m &lt; n that do not divide n but divide n^e for some integer e &gt; 1.
  * @author Georg Fischer
  */
-public class A243822 implements Sequence {
+public class A243822 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA010846 = new A010846();

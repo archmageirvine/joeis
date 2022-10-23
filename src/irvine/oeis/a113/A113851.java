@@ -3,13 +3,14 @@ package irvine.oeis.a113;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005117;
 
 /**
  * A113851 Numbers whose prime factors are raised to the sixth power.
  * @author Georg Fischer
  */
-public class A113851 implements Sequence {
+public class A113851 extends Sequence1 {
 
   final Sequence mA005117 = new A005117();
   /** Construct the sequence. */

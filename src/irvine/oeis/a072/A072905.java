@@ -3,6 +3,7 @@ package irvine.oeis.a072;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000188;
 import irvine.oeis.a007.A007913;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007913;
  * A072905 a(n) is the least k &gt; n such that k*n is a square.
  * @author Georg Fischer
  */
-public class A072905 implements Sequence {
+public class A072905 extends Sequence1 {
 
   final Sequence mA000188 = new A000188();
   final Sequence mA007913 = new A007913();

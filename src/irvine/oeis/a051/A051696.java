@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051696 Greatest common divisor of n! and n^n.
  * @author Sean A. Irvine
  */
-public class A051696 implements Sequence {
+public class A051696 extends Sequence1 {
 
   private Z mF = Z.ONE;
   private int mN = 0;

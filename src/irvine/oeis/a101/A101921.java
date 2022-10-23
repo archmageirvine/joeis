@@ -3,13 +3,14 @@ package irvine.oeis.a101;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007814;
 
 /**
  * A101921 a(2n) = a(n) + 2n - 1, a(2n+1) = 4n.
  * @author Georg Fischer
  */
-public class A101921 implements Sequence {
+public class A101921 extends Sequence1 {
 
   final Sequence mA007814 = new A007814();
   protected long mN;

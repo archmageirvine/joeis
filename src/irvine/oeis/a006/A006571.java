@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006571 Expansion of q*Product_{k&gt;=1} (1-q^k)^2*(1-q^(11*k))^2.
  * @author Sean A. Irvine
  */
-public class A006571 implements Sequence {
+public class A006571 extends Sequence1 {
 
   private static final int CHUNK = 1000;
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);

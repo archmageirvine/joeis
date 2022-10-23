@@ -3,13 +3,14 @@ package irvine.oeis.a307;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a070.A070940;
 
 /**
  * A307313 a(n) is the denominator of n/2^(length of the binary representation of n).
  * @author Georg Fischer
  */
-public class A307313 implements Sequence {
+public class A307313 extends Sequence1 {
 
   final Sequence mA070940 = new A070940();
   @Override

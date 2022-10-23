@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045784 Squares with initial digit '1'.
  * @author Sean A. Irvine
  */
-public class A045784 implements Sequence {
+public class A045784 extends Sequence1 {
 
   // Smarter than trying each number in turn ...
 

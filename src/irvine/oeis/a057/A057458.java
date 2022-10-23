@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057458 Number of k, 1 &lt;= k &lt;= n, where {k (n+1-k) + 1} is prime.
  * @author Sean A. Irvine
  */
-public class A057458 implements Sequence {
+public class A057458 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 1;

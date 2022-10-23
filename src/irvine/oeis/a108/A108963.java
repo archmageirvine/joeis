@@ -1,13 +1,13 @@
 package irvine.oeis.a108;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A108963 Smallest prime == 1 (mod f(n)), where f(n) = concatenation n,(n-1),...,3,2,1,2,3,...(n-1),n.
  * @author Sean A. Irvine
  */
-public class A108963 implements Sequence {
+public class A108963 extends Sequence1 {
 
   private int mN = 0;
 

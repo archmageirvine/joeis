@@ -3,6 +3,7 @@ package irvine.oeis.a163;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000041;
 import irvine.oeis.a029.A029837;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a029.A029837;
  * A163295 Binary order of n plus number of partitions of n-1.
  * @author Georg Fischer
  */
-public class A163295 implements Sequence {
+public class A163295 extends Sequence1 {
 
   final Sequence mA000041 = new A000041();
   final Sequence mA029837 = new A029837();

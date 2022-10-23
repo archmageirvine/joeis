@@ -1,13 +1,13 @@
 package irvine.oeis.a019;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019434 Fermat primes: primes of the form 2^(2^k) + 1, for some k &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A019434 implements Sequence {
+public class A019434 extends Sequence1 {
 
   private int mN = -1;
 

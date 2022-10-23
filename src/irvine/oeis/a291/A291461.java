@@ -3,13 +3,14 @@ package irvine.oeis.a291;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006887;
 
 /**
  * A291461 Kaprekar triples: q^3 = x*10^2n + y*10^n + z, with q = x + y + z and 10^n &gt; q &gt; 10^(n-1) (q = 1 allowed for n = 1).
  * @author Georg Fischer
  */
-public class A291461 implements Sequence {
+public class A291461 extends Sequence1 {
 
   final Sequence mA006887 = new A006887();
   @Override

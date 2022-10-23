@@ -3,12 +3,13 @@ package irvine.oeis.a068;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a052.A052055;
 /**
  * A068394 Numbers k such that the k-th digit of Pi and the k-th digit of e are the same.
  * @author Georg Fischer
  */
-public class A068394 implements Sequence {
+public class A068394 extends Sequence1 {
 
   private final Sequence mA052055 = new A052055();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050720 Number of nonzero palindromes of length n containing the digit '0'.
  * @author Sean A. Irvine
  */
-public class A050720 implements Sequence {
+public class A050720 extends Sequence1 {
 
   private int mN = 1;
 

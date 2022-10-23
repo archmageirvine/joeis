@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036940 Smallest n-digit prime containing only digits 3 and 4, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
-public class A036940 implements Sequence {
+public class A036940 extends Sequence1 {
 
   private int mLen = 0;
   private final char mLo;

@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059676 Numbers n such that n*5^n - 1 is prime.
  * @author Sean A. Irvine
  */
-public class A059676 implements Sequence {
+public class A059676 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private long mN = 0;

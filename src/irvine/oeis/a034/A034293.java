@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034293 Numbers n such that 2^n does not contain the digit 2 (probably finite).
  * @author Sean A. Irvine
  */
-public class A034293 implements Sequence {
+public class A034293 extends Sequence1 {
 
   private int mN = -1;
 

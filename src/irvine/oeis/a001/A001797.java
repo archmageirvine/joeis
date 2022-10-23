@@ -3,13 +3,13 @@ package irvine.oeis.a001;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001797 Coefficients of Legendre polynomials.
  * @author Sean A. Irvine
  */
-public class A001797 implements Sequence {
+public class A001797 extends Sequence1 {
 
   private int mN = 0;
 

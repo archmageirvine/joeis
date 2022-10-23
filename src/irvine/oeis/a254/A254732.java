@@ -3,6 +3,7 @@ package irvine.oeis.a254;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000188;
 import irvine.oeis.a019.A019554;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a019.A019554;
  * A254732 a(n) is the least k &gt; n such that n divides k^2.
  * @author Georg Fischer
  */
-public class A254732 implements Sequence {
+public class A254732 extends Sequence1 {
 
   final Sequence mA000188 = new A000188();
   final Sequence mA019554 = new A019554();

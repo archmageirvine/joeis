@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046390 Squarefree odd numbers with exactly 4 distinct prime factors.
  * @author Sean A. Irvine
  */
-public class A046390 implements Sequence {
+public class A046390 extends Sequence1 {
 
   private long mN = 1153;
 

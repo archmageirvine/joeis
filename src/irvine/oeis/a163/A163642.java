@@ -5,13 +5,13 @@ import java.util.HashSet;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A163642 a(n) = the smallest composite positive integer that is not yet in the sequence and that is coprime to n.
  * @author Sean A. Irvine
  */
-public class A163642 implements Sequence {
+public class A163642 extends Sequence1 {
 
   private long mN = 0;
   private final HashSet<Z> mSeen = new HashSet<>();

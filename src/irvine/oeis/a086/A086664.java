@@ -3,13 +3,14 @@ package irvine.oeis.a086;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008475;
 
 /**
  * A086664 n - {sum of prime power components of n}.
  * @author Georg Fischer
  */
-public class A086664 implements Sequence {
+public class A086664 extends Sequence1 {
 
   final Sequence mA008475 = new A008475();
   protected long mN;

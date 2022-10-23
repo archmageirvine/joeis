@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001743 Numbers in which every digit contains at least one loop (version 1).
  * @author Sean A. Irvine
  */
-public class A001743 implements Sequence {
+public class A001743 extends Sequence1 {
 
   private long mN = -1;
 

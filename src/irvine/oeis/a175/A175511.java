@@ -3,6 +3,7 @@ package irvine.oeis.a175;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001358;
 import irvine.oeis.a100.A100484;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a100.A100484;
  * A175511 n-th even semiprime minus n-th semiprime.
  * @author Georg Fischer
  */
-public class A175511 implements Sequence {
+public class A175511 extends Sequence1 {
 
   final Sequence mA001358 = new A001358();
   final Sequence mA100484 = new A100484();

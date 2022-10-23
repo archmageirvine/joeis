@@ -3,14 +3,14 @@ package irvine.oeis.a057;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A057896 Nonnegative numbers that can be written as m^k - m (with m and k nonnegative) in more than one way.
  * @author Sean A. Irvine
  */
-public class A057896 implements Sequence {
+public class A057896 extends Sequence1 {
 
   private static final class State extends Pair<Integer, Integer> implements Comparable<State> {
 

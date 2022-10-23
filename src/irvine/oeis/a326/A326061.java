@@ -3,6 +3,7 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a032.A032742;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a032.A032742;
  * A326061 Sum of all other divisors of n except the largest proper divisor. a(1) = 0 by convention.
  * @author Georg Fischer
  */
-public class A326061 implements Sequence {
+public class A326061 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA032742 = new A032742();

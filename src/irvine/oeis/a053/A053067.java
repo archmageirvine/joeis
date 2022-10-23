@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053067 a(n) is the concatenation of next n numbers (omit leading 0's).
  * @author Sean A. Irvine
  */
-public class A053067 implements Sequence {
+public class A053067 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

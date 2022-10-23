@@ -3,13 +3,13 @@ package irvine.oeis.a015;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015732 Even numbers k such that d(k) | phi(k).
  * @author Sean A. Irvine
  */
-public class A015732 implements Sequence {
+public class A015732 extends Sequence1 {
 
   private Z mN = Z.SIX;
 

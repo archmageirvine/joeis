@@ -3,13 +3,14 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023219;
 
 /**
  * A088555 Primes of the form 5*p + 6 where p is a prime.
  * @author Georg Fischer
  */
-public class A088555 implements Sequence {
+public class A088555 extends Sequence1 {
 
   final Sequence mA023219 = new A023219();
   @Override

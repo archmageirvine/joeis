@@ -3,13 +3,13 @@ package irvine.oeis.a022;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A022956 Unique increasing sequence satisfying a(n) = a(n-4) + c(n-4); where c( ) is complement of a( ).
  * @author Sean A. Irvine
  */
-public class A022956 implements Sequence {
+public class A022956 extends Sequence1 {
 
   private final TreeSet<Z> mSeen = new TreeSet<>();
   private Z mC = Z.ZERO;

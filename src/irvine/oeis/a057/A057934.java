@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057934 Number of prime factors of 10^n + 1 (counted with multiplicity).
  * @author Georg Fischer
  */
-public class A057934 implements Sequence {
+public class A057934 extends Sequence1 {
 
   private final int mBase;
   private Z mPow;

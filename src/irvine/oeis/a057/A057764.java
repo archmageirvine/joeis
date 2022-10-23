@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057764 Triangle T(n,k) = number of nonzero elements of multiplicative order k in Galois field GF(2^n) (n &gt;= 1, 1 &lt;= k &lt;= 2^n-1).
  * @author Sean A. Irvine
  */
-public class A057764 implements Sequence {
+public class A057764 extends Sequence1 {
 
   private int mN = 0;
   private long mM = 0;

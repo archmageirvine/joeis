@@ -3,6 +3,7 @@ package irvine.oeis.a323;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a046.A046692;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a046.A046692;
  * A323403 Sum of sigma and its Dirichlet inverse: a(n) = A000203(n) + A046692(n).
  * @author Georg Fischer
  */
-public class A323403 implements Sequence {
+public class A323403 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA046692 = new A046692();

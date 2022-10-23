@@ -5,7 +5,7 @@ package irvine.oeis.a038;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000584;
 
 
@@ -13,7 +13,7 @@ import irvine.oeis.a000.A000584;
  * A038993 Sublattices of index n in generic 6-dimensional lattice.
  * @author Georg Fischer
  */
-public class A038993 implements Sequence {
+public class A038993 extends Sequence1 {
 
   private final MemorySequence mSeq1 = MemorySequence.cachedSequence(new A038992());
   private final MemorySequence mSeq2 = MemorySequence.cachedSequence(new A000584());

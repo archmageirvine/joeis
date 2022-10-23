@@ -3,13 +3,14 @@ package irvine.oeis.a173;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033451;
 
 /**
  * A173892 Numbers k such that k and k+6 are both balanced primes.
  * @author Georg Fischer
  */
-public class A173892 implements Sequence {
+public class A173892 extends Sequence1 {
 
   final Sequence mA033451 = new A033451();
   @Override

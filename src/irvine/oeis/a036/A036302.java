@@ -5,13 +5,14 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a020.A020450;
 
 /**
  * A036302 Composite numbers k such that the digits of the prime factors of k are either 1 or 2.
  * @author Sean A. Irvine
  */
-public class A036302 implements Sequence {
+public class A036302 extends Sequence1 {
 
   private final MemorySequence mP = MemorySequence.cachedSequence(sourcePrimes());
   private final TreeSet<Z> mA = new TreeSet<>();

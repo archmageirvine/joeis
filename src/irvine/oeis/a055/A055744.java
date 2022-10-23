@@ -5,13 +5,13 @@ import java.util.Arrays;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055744 Numbers k such that k and phi(k) have same prime factors.
  * @author Sean A. Irvine
  */
-public class A055744 implements Sequence {
+public class A055744 extends Sequence1 {
 
   private long mN = -2;
 

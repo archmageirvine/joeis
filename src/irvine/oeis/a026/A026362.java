@@ -3,13 +3,13 @@ package irvine.oeis.a026;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A026362 a(n) = a(m) if a(m) has already occurred exactly once and n = a(m)+2m-1, else a(n) = least positive integer that has not yet occurred.
  * @author Sean A. Irvine
  */
-public class A026362 implements Sequence {
+public class A026362 extends Sequence1 {
 
   private final TreeMap<Long, Long> mFixed = new TreeMap<>();
   private long mN = 0;

@@ -1,13 +1,13 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052383 Numbers without 1 as a digit.
  * @author Sean A. Irvine
  */
-public class A052383 implements Sequence {
+public class A052383 extends Sequence1 {
 
   private long mN = -1;
 

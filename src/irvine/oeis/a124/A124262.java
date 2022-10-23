@@ -1,13 +1,13 @@
 package irvine.oeis.a124;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A124262 a(1) = 2; for n &gt; 1, a(n) is largest prime &lt; 10*a(n-1).
  * @author Georg Fischer
  */
-public class A124262 implements Sequence {
+public class A124262 extends Sequence1 {
 
   private Z mA;
   private long mMult;

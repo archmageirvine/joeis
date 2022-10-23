@@ -2,13 +2,13 @@ package irvine.oeis.a124;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A124940 Numbers n such that n and n+3 are 3-almost primes.
  * @author Georg Fischer
  */
-public class A124940 implements Sequence {
+public class A124940 extends Sequence1 {
 
   private int mCount;
   private int mN;

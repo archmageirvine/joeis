@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054774 Numbers of the form 2^i*5^j where i+j is odd.
  * @author Sean A. Irvine
  */
-public class A054774 implements Sequence {
+public class A054774 extends Sequence1 {
 
   private final TreeSet<Z> mPriority = new TreeSet<>();
   {

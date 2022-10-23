@@ -4,13 +4,13 @@ import irvine.math.IntegerUtils;
 import irvine.math.Mobius;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054665 Number of 6-ary Lyndon words with trace 0 mod 6.
  * @author Sean A. Irvine
  */
-public class A054665 implements Sequence {
+public class A054665 extends Sequence1 {
 
   private int mN = 0;
 

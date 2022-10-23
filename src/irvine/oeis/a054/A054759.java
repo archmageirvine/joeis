@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054759 Number of Eulerian orientations of the n X n square lattice (with wrap-around), i.e., number of arrow configurations on n X n grid that satisfy the square ice rule.
  * @author Sean A. Irvine
  */
-public class A054759 implements Sequence {
+public class A054759 extends Sequence1 {
 
   // Too slow to be useful ...
 

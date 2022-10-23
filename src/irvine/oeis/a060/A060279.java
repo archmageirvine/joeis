@@ -3,13 +3,14 @@ package irvine.oeis.a060;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007106;
 
 /**
  * A060279 Number of labeled rooted trees with all 2n nodes of odd degree.
  * @author Georg Fischer
  */
-public class A060279 implements Sequence {
+public class A060279 extends Sequence1 {
 
   final Sequence mA007106 = new A007106();
   protected long mN;

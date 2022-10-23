@@ -3,13 +3,14 @@ package irvine.oeis.a161;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a094.A094820;
 
 /**
  * A161842 Partial sums of A161841.
  * @author Georg Fischer
  */
-public class A161842 implements Sequence {
+public class A161842 extends Sequence1 {
 
   final Sequence mA094820 = new A094820();
   @Override

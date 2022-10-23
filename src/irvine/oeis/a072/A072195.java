@@ -3,13 +3,14 @@ package irvine.oeis.a072;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001222;
 
 /**
  * A072195 Replace all prime factors p of n with n/p.
  * @author Georg Fischer
  */
-public class A072195 implements Sequence {
+public class A072195 extends Sequence1 {
 
   final Sequence mA001222 = new A001222();
   protected long mN;

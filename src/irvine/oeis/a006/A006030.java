@@ -1,14 +1,14 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A006030 Palindromic tetrahedral numbers.
  * @author Sean A. Irvine
  */
-public class A006030 implements Sequence {
+public class A006030 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

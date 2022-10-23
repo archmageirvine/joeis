@@ -3,6 +3,7 @@ package irvine.oeis.a104;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023201;
 import irvine.oeis.a046.A046117;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a046.A046117;
  * A104010 Sum of two successive sexy primes.
  * @author Georg Fischer
  */
-public class A104010 implements Sequence {
+public class A104010 extends Sequence1 {
 
   final Sequence mA023201 = new A023201();
   final Sequence mA046117 = new A046117();

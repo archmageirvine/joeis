@@ -3,6 +3,7 @@ package irvine.oeis.a066;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a024.A024816;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a024.A024816;
  * A066859 Product of sums of divisors and non-divisors.
  * @author Georg Fischer
  */
-public class A066859 implements Sequence {
+public class A066859 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA024816 = new A024816();

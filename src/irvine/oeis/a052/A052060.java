@@ -3,14 +3,14 @@ package irvine.oeis.a052;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A052060 Numbers n such that the digits of 2^n occur with the same frequency.
  * @author Sean A. Irvine
  */
-public class A052060 implements Sequence {
+public class A052060 extends Sequence1 {
 
   private int mN = -1;
   private Z mA = Z.ONE;

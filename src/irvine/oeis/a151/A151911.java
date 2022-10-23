@@ -3,6 +3,7 @@ package irvine.oeis.a151;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000578;
 import irvine.oeis.a001.A001248;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001248;
  * A151911 Abs(square of n-th prime minus cube of n-1).
  * @author Georg Fischer
  */
-public class A151911 implements Sequence {
+public class A151911 extends Sequence1 {
 
   final Sequence mA000578 = new A000578();
   final Sequence mA001248 = new A001248();

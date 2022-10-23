@@ -3,12 +3,13 @@ package irvine.oeis.a078;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a027.A027856;
 /**
  * A078884 Greater member p of a twin prime pair such that p-1 is 3-smooth.
  * @author Georg Fischer
  */
-public class A078884 implements Sequence {
+public class A078884 extends Sequence1 {
 
   private final Sequence mA027856 = new A027856();
   @Override

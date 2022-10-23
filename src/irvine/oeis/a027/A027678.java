@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027678 Squares composed of digits {2,4,8}.
  * @author Sean A. Irvine
  */
-public class A027678 implements Sequence {
+public class A027678 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

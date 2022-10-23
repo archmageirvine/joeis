@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057104 The non-octal numbers: numbers containing an 8 or 9 (they cannot be mistaken for octal numbers).
  * @author Sean A. Irvine
  */
-public class A057104 implements Sequence {
+public class A057104 extends Sequence1 {
 
   private long mN = 7;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a062;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A062634 Numbers k such that every divisor of k contains the digit 1.
  * @author Georg Fischer
  */
-public class A062634 implements Sequence {
+public class A062634 extends Sequence1 {
 
   private int mN;
   private int mDigit;

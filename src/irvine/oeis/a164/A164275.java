@@ -3,6 +3,7 @@ package irvine.oeis.a164;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007510;
 import irvine.oeis.a014.A014574;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a014.A014574;
  * A164275 The absolute value of (the n-th isolated composite minus the n-th isolated prime).
  * @author Georg Fischer
  */
-public class A164275 implements Sequence {
+public class A164275 extends Sequence1 {
 
   final Sequence mA007510 = new A007510();
   final Sequence mA014574 = new A014574();

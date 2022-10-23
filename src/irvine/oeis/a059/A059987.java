@@ -2,14 +2,14 @@ package irvine.oeis.a059;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A059987 Lucky numbers generated from primes.
  * @author Sean A. Irvine
  */
-public class A059987 implements Sequence {
+public class A059987 extends Sequence1 {
 
   // Cf. A000959
 

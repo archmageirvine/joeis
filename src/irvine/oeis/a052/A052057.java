@@ -1,14 +1,14 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A052057 Numbers k such that the decimal expansion of 2^k contains no palindromic substring except single digits.
  * @author Sean A. Irvine
  */
-public class A052057 implements Sequence {
+public class A052057 extends Sequence1 {
 
   private static final String[] QUICK = {"00", "11", "22", "33", "44", "55", "66", "77", "88", "99"};
   private int mN = -1;

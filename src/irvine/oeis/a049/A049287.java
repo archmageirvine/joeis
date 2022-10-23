@@ -8,13 +8,13 @@ import irvine.math.nauty.Nauty;
 import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049287 Number of nonisomorphic circulant graphs, i.e., undirected Cayley graphs for the cyclic group of order n.
  * @author Sean A. Irvine
  */
-public class A049287 implements Sequence {
+public class A049287 extends Sequence1 {
 
   private int mN = 0;
   protected final HashSet<Graph> mCanons = new HashSet<>();

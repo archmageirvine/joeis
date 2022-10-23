@@ -3,6 +3,7 @@ package irvine.oeis.a328;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a024.A024361;
 import irvine.oeis.a046.A046079;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a046.A046079;
  * A328708 Number of non-primitive Pythagorean triples with leg n.
  * @author Georg Fischer
  */
-public class A328708 implements Sequence {
+public class A328708 extends Sequence1 {
 
   final Sequence mA024361 = new A024361();
   final Sequence mA046079 = new A046079();

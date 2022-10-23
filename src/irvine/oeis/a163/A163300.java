@@ -3,13 +3,14 @@ package irvine.oeis.a163;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a087.A087156;
 
 /**
  * A163300 Zero together with the even nonprimes.
  * @author Georg Fischer
  */
-public class A163300 implements Sequence {
+public class A163300 extends Sequence1 {
 
   final Sequence mA087156 = new A087156();
   @Override

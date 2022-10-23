@@ -1,14 +1,14 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A003996 Sum of distinct nonzero squares in more than one way.
  * @author Sean A. Irvine
  */
-public class A003996 implements Sequence {
+public class A003996 extends Sequence1 {
 
   private final LongDynamicByteArray mA = new LongDynamicByteArray();
   private long mB = 0;

@@ -3,13 +3,13 @@ package irvine.oeis.a037;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037916 Concatenate exponents in prime factorization of n.
  * @author Sean A. Irvine
  */
-public class A037916 implements Sequence {
+public class A037916 extends Sequence1 {
 
   private long mN = 0;
 

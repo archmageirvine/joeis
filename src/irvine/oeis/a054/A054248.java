@@ -3,12 +3,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a123.A123753;
 /**
  * A054248 Binary entropy: a(n) = n + min { a(k)+a(n-k) : 1 &lt;= k &lt;= n-1 }.
  * @author Georg Fischer
  */
-public class A054248 implements Sequence {
+public class A054248 extends Sequence1 {
 
   private final Sequence mA123753 = new A123753();
   protected long mN;

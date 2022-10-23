@@ -3,13 +3,14 @@ package irvine.oeis.a284;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007931;
 
 /**
  * A284633 Numbers n with digits 3 and 6 only.
  * @author Georg Fischer
  */
-public class A284633 implements Sequence {
+public class A284633 extends Sequence1 {
 
   final Sequence mA007931 = new A007931();
   @Override

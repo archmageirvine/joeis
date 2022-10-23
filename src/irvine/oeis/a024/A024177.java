@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024177 a(n) = floor ( (2nd elementary symmetric function of 2,3,...,n+2)/(2+3+...+n+2) ).
  * @author Sean A. Irvine
  */
-public class A024177 implements Sequence {
+public class A024177 extends Sequence1 {
 
   private long mN = 0;
 

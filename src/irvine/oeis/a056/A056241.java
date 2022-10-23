@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056241 Triangle T(n,k) = number of k-part order-consecutive partitions of n (1&lt;=k&lt;=n).
  * @author Sean A. Irvine
  */
-public class A056241 implements Sequence {
+public class A056241 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

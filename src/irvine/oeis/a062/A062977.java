@@ -3,13 +3,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051903;
 import irvine.oeis.a051.A051904;
 /**
  * A062977 Difference between largest and smallest positive exponent in prime factorization of n; a(1) = 0 by convention.
  * @author Georg Fischer
  */
-public class A062977 implements Sequence {
+public class A062977 extends Sequence1 {
 
   private final Sequence mA051903 = new A051903();
   private final Sequence mA051904 = new A051904();

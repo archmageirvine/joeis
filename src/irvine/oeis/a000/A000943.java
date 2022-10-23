@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000943 Number of combinatorial types of simplicial n-dimensional polytopes with n+3 nodes.
  * @author Sean A. Irvine
  */
-public class A000943 implements Sequence {
+public class A000943 extends Sequence1 {
 
   private int mN = 4;
 

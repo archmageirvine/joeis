@@ -3,13 +3,14 @@ package irvine.oeis.a086;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002251;
 
 /**
  * A086482 Beginning with 1, the smallest number not included earlier such that the n-th partial product is an n-th power; or the geometric mean of the first n terms is an integer.
  * @author Georg Fischer
  */
-public class A086482 implements Sequence {
+public class A086482 extends Sequence1 {
 
   final Sequence mA002251 = new A002251();
   @Override

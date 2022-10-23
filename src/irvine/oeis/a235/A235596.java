@@ -3,13 +3,14 @@ package irvine.oeis.a235;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000248;
 
 /**
  * A235596 Second column of triangle in A235595.
  * @author Georg Fischer
  */
-public class A235596 implements Sequence {
+public class A235596 extends Sequence1 {
 
   final Sequence mA000248 = new A000248();
   @Override

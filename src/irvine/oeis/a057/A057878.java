@@ -3,13 +3,13 @@ package irvine.oeis.a057;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057878 Primes with 2 distinct digits that remain prime (no leading zeros allowed) after deleting all occurrences of its digits d.
  * @author Sean A. Irvine
  */
-public class A057878 implements Sequence {
+public class A057878 extends Sequence1 {
 
   // Digits 0, 4, 6, 8, 9 can never occur.
   // Digits 2, 3, 5, 7 can appear at most once.

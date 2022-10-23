@@ -2,12 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037137 Numbers n such that A037134(n) = A037135(n) &gt; 0.
  * @author Sean A. Irvine
  */
-public class A037137 implements Sequence {
+public class A037137 extends Sequence1 {
 
   private final Sequence mA = new A037134();
   private final Sequence mB = new A037135();

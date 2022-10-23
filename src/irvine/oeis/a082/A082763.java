@@ -1,14 +1,14 @@
 package irvine.oeis.a082;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A082763 Roman numeral contains an asymmetric symbol (L).
  * <code>a(n)=floor((n-1)/50)*100+40+(n-1)%50</code>
  * @author Georg Fischer
  */
-public class A082763 implements Sequence {
+public class A082763 extends Sequence1 {
 
   private int mN = 0;
 

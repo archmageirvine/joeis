@@ -1,13 +1,13 @@
 package irvine.oeis.a061;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A061751 Numbers k such that k! is divisible by (k+1)^3.
  * @author Georg Fischer
  */
-public class A061751 implements Sequence {
+public class A061751 extends Sequence1 {
 
   private int mN;
   private final int mAdd;

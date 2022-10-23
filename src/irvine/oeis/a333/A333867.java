@@ -1,7 +1,7 @@
 package irvine.oeis.a333;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 import irvine.util.array.LongDynamicLongArray;
 
@@ -9,7 +9,7 @@ import irvine.util.array.LongDynamicLongArray;
  * A333867 Table with T(1,1) = 1; for n&gt;1, T(n,k) is the number of k's in rows 1 through n-1.
  * @author Sean A. Irvine
  */
-public class A333867 implements Sequence {
+public class A333867 extends Sequence1 {
 
   private final DynamicLongArray mA = new DynamicLongArray();
   private final DynamicLongArray mB = new DynamicLongArray();

@@ -7,14 +7,14 @@ import java.util.TreeMap;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000961;
 
 /**
  * A003424 Primes of form (p^x - 1)/(p^y - 1), p prime.
  * @author Sean A. Irvine
  */
-public class A003424 implements Sequence {
+public class A003424 extends Sequence1 {
 
   // We are after primes, q, of the form q = (p^r - 1) / (p^d - 1), where p is also prime.
   // It can be proven that r must be a prime power and that d must be the penultimate

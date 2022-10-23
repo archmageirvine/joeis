@@ -3,13 +3,14 @@ package irvine.oeis.a284;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a034.A034699;
 
 /**
  * A284600 a(n) = n/(largest prime power dividing n).
  * @author Georg Fischer
  */
-public class A284600 implements Sequence {
+public class A284600 extends Sequence1 {
 
   final Sequence mA034699 = new A034699();
   protected long mN;

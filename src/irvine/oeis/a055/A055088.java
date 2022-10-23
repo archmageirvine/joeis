@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055088 Triangle of generalized Legendre symbols L(a/b), with 1's for quadratic residues and 0's for quadratic non-residues.
  * @author Sean A. Irvine
  */
-public class A055088 implements Sequence {
+public class A055088 extends Sequence1 {
 
   private long mN = 1;
   private long mM = 0;

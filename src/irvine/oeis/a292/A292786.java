@@ -3,6 +3,7 @@ package irvine.oeis.a292;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a001.A001615;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001615;
  * A292786 a(n) = psi(n) - phi(n).
  * @author Georg Fischer
  */
-public class A292786 implements Sequence {
+public class A292786 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA001615 = new A001615();

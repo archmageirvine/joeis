@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028940 a(n) = numerator of the X-coordinate of n*P where P is the generator [0,0] for rational points on the curve y^2 + y = x^3 - x.
  * @author Sean A. Irvine
  */
-public class A028940 implements Sequence {
+public class A028940 extends Sequence1 {
 
   private Q mX = null;
   private Q mY = Q.ZERO;

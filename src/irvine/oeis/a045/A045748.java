@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045748 a(n) is the number consisting of the last n digits (although any leading 0's among those last n digits are omitted) of Sum_{j=1..k} j! for all sufficiently large k.
  * @author Sean A. Irvine
  */
-public class A045748 implements Sequence {
+public class A045748 extends Sequence1 {
 
   private Z mF = Z.ONE;
   private Z mS = Z.ONE;

@@ -3,13 +3,14 @@ package irvine.oeis.a230;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a010.A010061;
 
 /**
  * A230301 Positive numbers not of the form m + wt(m-1), m &gt;= 1.
  * @author Georg Fischer
  */
-public class A230301 implements Sequence {
+public class A230301 extends Sequence1 {
 
   final Sequence mA010061 = new A010061();
   @Override

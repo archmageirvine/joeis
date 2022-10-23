@@ -3,13 +3,14 @@ package irvine.oeis.a191;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003961;
 
 /**
  * A191002 Completely multiplicative function with a(prime(k)) = prime(k)*prime(k+1).
  * @author Georg Fischer
  */
-public class A191002 implements Sequence {
+public class A191002 extends Sequence1 {
 
   final Sequence mA003961 = new A003961();
   protected long mN;

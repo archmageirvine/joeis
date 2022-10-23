@@ -3,6 +3,7 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001248;
 import irvine.oeis.a030.A030078;
 import irvine.oeis.a050.A050997;
@@ -11,7 +12,7 @@ import irvine.oeis.a050.A050997;
  * A133062 a(n) = 5*p^5 - 3*p^3 + 2*p^2 with p = prime(n).
  * @author Georg Fischer
  */
-public class A133062 implements Sequence {
+public class A133062 extends Sequence1 {
 
   final Sequence mA001248 = new A001248();
   final Sequence mA030078 = new A030078();

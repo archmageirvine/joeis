@@ -9,13 +9,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007146 Number of unlabeled simple connected bridgeless graphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A007146 implements Sequence {
+public class A007146 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private Polynomial<Q> mD = RING.zero();

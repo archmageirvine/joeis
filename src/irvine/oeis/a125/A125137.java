@@ -3,13 +3,14 @@ package irvine.oeis.a125;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051674;
 
 /**
  * A125137 a(n) = p^p + 1, where p = prime(n).
  * @author Georg Fischer
  */
-public class A125137 implements Sequence {
+public class A125137 extends Sequence1 {
 
   final Sequence mA051674 = new A051674();
   @Override

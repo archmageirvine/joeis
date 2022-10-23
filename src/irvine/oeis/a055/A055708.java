@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055708 Numbers n such that n - 1 | sigma(n).
  * @author Sean A. Irvine
  */
-public class A055708 implements Sequence {
+public class A055708 extends Sequence1 {
 
   private long mN = 1;
 

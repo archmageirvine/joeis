@@ -2,14 +2,14 @@ package irvine.oeis.a057;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A057710 Positive integers k with exactly 2 aliquot sequence predecessors. In other words, there are exactly two solutions x for which s(x) = n. The function s(x) here is the sum of all proper divisors of x (A001065).
  * @author Sean A. Irvine
  */
-public class A057710 implements Sequence {
+public class A057710 extends Sequence1 {
 
   private final LongDynamicByteArray mCount = new LongDynamicByteArray();
   private long mN = 0;

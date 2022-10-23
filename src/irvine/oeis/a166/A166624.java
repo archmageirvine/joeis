@@ -3,13 +3,14 @@ package irvine.oeis.a166;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a165.A165824;
 
 /**
  * A166624 Totally multiplicative sequence with a(p) = 3p for prime p.
  * @author Georg Fischer
  */
-public class A166624 implements Sequence {
+public class A166624 extends Sequence1 {
 
   final Sequence mA165824 = new A165824();
   protected long mN;

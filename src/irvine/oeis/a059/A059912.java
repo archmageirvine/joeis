@@ -7,13 +7,13 @@ import java.util.TreeSet;
 import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059912 Triangle T(n,k) of orders of n degree irreducible polynomials over GF(2) listed in ascending order, k=1..A059499(n).
  * @author Sean A. Irvine
  */
-public class A059912 implements Sequence {
+public class A059912 extends Sequence1 {
 
   // After Alois P. Heinz
 

@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003050 Number of primitive sublattices of index n in hexagonal lattice: triples x,y,z from Z/nZ with x+y+z = 0, discarding any triple that can be obtained from another by multiplying by a unit and permuting.
  * @author Sean A. Irvine
  */
-public class A003050 implements Sequence {
+public class A003050 extends Sequence1 {
 
   private static final int[] C2 = {2, 1, 0, 1, 1, 1, 0, 1};
   private long mN = 0;

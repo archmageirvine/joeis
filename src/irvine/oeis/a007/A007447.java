@@ -5,14 +5,14 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A007447 Logarithm of e.g.f. for primes.
  * @author Sean A. Irvine
  */
-public class A007447 implements Sequence {
+public class A007447 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final A000040 mPrimes = new A000040();

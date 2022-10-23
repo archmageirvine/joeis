@@ -3,12 +3,13 @@ package irvine.oeis.a339;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a024.A024670;
 /**
  * A339994 Sums of two distinct nonzero even cubes.
  * @author Georg Fischer
  */
-public class A339994 implements Sequence {
+public class A339994 extends Sequence1 {
 
   private final Sequence mA024670 = new A024670();
   @Override

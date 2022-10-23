@@ -3,13 +3,13 @@ package irvine.oeis.a106;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A106133 Numbers k such that the k-th semiprime == 8 (mod k).
  * @author Sean A. Irvine
  */
-public class A106133 implements Sequence {
+public class A106133 extends Sequence1 {
 
   private long mN = 0;
   private long mSearch = 1;

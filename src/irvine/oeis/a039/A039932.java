@@ -2,13 +2,13 @@ package irvine.oeis.a039;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039932 Smallest number k for which k, 2k, ... nk all contain the digit 1.
  * @author Sean A. Irvine
  */
-public class A039932 implements Sequence {
+public class A039932 extends Sequence1 {
 
   private Z mPrev = Z.ZERO;
   private int mN = 0;

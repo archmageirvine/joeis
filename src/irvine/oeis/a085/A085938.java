@@ -1,13 +1,13 @@
 package irvine.oeis.a085;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A085938 a(n) is the (n+1)-digit number in which the first digit is 1 and the subsequent digits increase by steps of n (mod 10).
  * @author Georg Fischer
  */
-public class A085938 implements Sequence {
+public class A085938 extends Sequence1 {
 
   private int mN = 0;
 

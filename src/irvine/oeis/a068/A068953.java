@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A068953 Number of bases B (2 &lt;= B &lt;= n) such that every digit of n in base B is 0 or 1.
  * @author Sean A. Irvine
  */
-public class A068953 implements Sequence {
+public class A068953 extends Sequence1 {
 
   private int mN = 0;
 

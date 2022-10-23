@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001754 Lah numbers: a(n) = n!*binomial(n-1,2)/6.
  * @author Sean A. Irvine
  */
-public class A001754 implements Sequence {
+public class A001754 extends Sequence1 {
 
   private long mN = 0;
   private Z mF = Z.ONE;

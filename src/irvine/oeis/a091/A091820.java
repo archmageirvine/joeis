@@ -3,13 +3,13 @@ package irvine.oeis.a091;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A091820 Number of ways to reach a sum of n by a down-only cascade through Pascal's Triangle, starting at C(0,0)=1 at the apex and shifting left or right by exactly one position at each step.
  * @author Sean A. Irvine
  */
-public class A091820 implements Sequence {
+public class A091820 extends Sequence1 {
 
   private int mN = 0;
   private final ArrayList<int[]> mPascal = new ArrayList<>();

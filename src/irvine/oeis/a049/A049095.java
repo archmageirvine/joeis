@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049095 Numbers k such that 2^k + 1 is squarefree.
  * @author Sean A. Irvine
  */
-public class A049095 implements Sequence {
+public class A049095 extends Sequence1 {
 
   private int mN = 0;
 

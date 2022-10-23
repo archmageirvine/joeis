@@ -6,13 +6,13 @@ import java.util.Map;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020473 Egyptian fractions: number of partitions of 1 into reciprocals of positive integers &lt;= n.
  * @author Sean A. Irvine
  */
-public class A020473 implements Sequence {
+public class A020473 extends Sequence1 {
 
   // Too slow to be useful
 

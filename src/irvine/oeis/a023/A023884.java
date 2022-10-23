@@ -3,13 +3,13 @@ package irvine.oeis.a023;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023884 Average of divisors except itself is an integer.
  * @author Sean A. Irvine
  */
-public class A023884 implements Sequence {
+public class A023884 extends Sequence1 {
 
   private long mN = 1;
 

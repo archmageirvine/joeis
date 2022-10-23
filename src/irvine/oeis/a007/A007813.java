@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007813 Number of planar Steinhaus graphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A007813 implements Sequence {
+public class A007813 extends Sequence1 {
 
   private static final Z Z26 = Z.valueOf(26);
   private int mN = 0;

@@ -6,13 +6,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.factor.util.InfinitaryAliquotSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004607 Infinitary sociable numbers (smallest member of cycle).
  * @author Sean A. Irvine
  */
-public class A004607 implements Sequence {
+public class A004607 extends Sequence1 {
 
   // Note this sequence appears to list members without a proof that certain other
   // numbers are not members.  The complete chain for some numbers, the smallest

@@ -3,13 +3,13 @@ package irvine.oeis.a321;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A321014 Number of divisors of n which are greater than 3.
  * @author Georg Fischer
  */
-public class A321014 implements Sequence {
+public class A321014 extends Sequence1 {
 
   private int mN = 0;
 

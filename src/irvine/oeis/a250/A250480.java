@@ -3,6 +3,7 @@ package irvine.oeis.a250;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005171;
 import irvine.oeis.a020.A020639;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a020.A020639;
  * A250480 a(1) = 0, and for n &gt; 1: if n is a prime, a(n) = n, otherwise a(n) = A020639(n) - 1, where A020639(n) gives the least prime dividing n.
  * @author Georg Fischer
  */
-public class A250480 implements Sequence {
+public class A250480 extends Sequence1 {
 
   final Sequence mA005171 = new A005171();
   final Sequence mA020639 = new A020639();

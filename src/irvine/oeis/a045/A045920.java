@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045920 Numbers n such that factorizations of n and n+1 have the same number of primes (including multiplicities).
  * @author Sean A. Irvine
  */
-public class A045920 implements Sequence {
+public class A045920 extends Sequence1 {
 
   private long mN = 1;
 

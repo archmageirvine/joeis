@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057227 Smallest member of smallest set S(n) of positive integers containing n which satisfies "k is in S, iff 2k-1 is in S, iff 4k is in S".
  * @author Sean A. Irvine
  */
-public class A057227 implements Sequence {
+public class A057227 extends Sequence1 {
 
   private long mN = 0;
 

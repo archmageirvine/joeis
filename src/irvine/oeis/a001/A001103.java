@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001103 Numbers n such that (n / product of digits of n) is 1 or a prime.
  * @author Sean A. Irvine
  */
-public class A001103 implements Sequence {
+public class A001103 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

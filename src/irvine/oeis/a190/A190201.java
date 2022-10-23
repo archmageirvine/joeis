@@ -4,13 +4,13 @@ package irvine.oeis.a190;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A190201 a(n) = [n*u+n*v]-[n*u]-[n*v], where u=sqrt(5), v=1/u, and []=floor.
  * @author Georg Fischer
  */
-public class A190201 implements Sequence {
+public class A190201 extends Sequence1 {
   private long mN = 0;
   private static final CR U = CR.FIVE.sqrt();
   private static final CR V = CR.ONE.divide(U);

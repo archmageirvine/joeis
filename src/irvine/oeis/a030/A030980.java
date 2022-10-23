@@ -2,13 +2,13 @@ package irvine.oeis.a030;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030980 Number of planted noncrossing bushes with n nodes; i.e., rooted noncrossing trees with n nodes, root degree 1 and no nonroot nodes of degree 1.
  * @author Sean A. Irvine
  */
-public class A030980 implements Sequence {
+public class A030980 extends Sequence1 {
 
   private int mN = 0;
 

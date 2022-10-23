@@ -2,13 +2,14 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a031.A031930;
 
 /**
  * A052355 First prime from A031930 (=lesser of 12-twins) with increasing distance to the next 12-twin.
  * @author Sean A. Irvine
  */
-public class A052355 implements Sequence {
+public class A052355 extends Sequence1 {
 
   private long mN = 10;
 

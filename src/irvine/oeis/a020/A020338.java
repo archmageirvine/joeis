@@ -1,13 +1,13 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020338 Doublets: base-10 representation is the juxtaposition of two identical strings.
  * @author Sean A. Irvine
  */
-public class A020338 implements Sequence {
+public class A020338 extends Sequence1 {
 
   private final long mBase;
   private long mN = 0;

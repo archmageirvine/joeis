@@ -3,13 +3,13 @@ package irvine.oeis.a246;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A246133 Binomial(2n, n) - 2 mod n^3.
  * @author Georg Fischer
  */
-public class A246133 implements Sequence {
+public class A246133 extends Sequence1 {
 
   protected Z mN;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054411 Numbers k such that Sum_{j} p_j = Sum_{j} e_j where Product_{j} p_j^(e_j) is the prime factorization of k.
  * @author Sean A. Irvine
  */
-public class A054411 implements Sequence {
+public class A054411 extends Sequence1 {
 
   private long mN = 0;
 

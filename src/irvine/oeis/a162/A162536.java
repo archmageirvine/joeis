@@ -1,13 +1,13 @@
 package irvine.oeis.a162;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A162536 a(n) is the smallest positive multiple k of n such that every length of the runs of 0's and 1's in the binary representation of k divides n.
  * @author Sean A. Irvine
  */
-public class A162536 implements Sequence {
+public class A162536 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a330;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a138.A138137;
 
 /**
  * A330242 Sum of largest emergent parts of the partitions of n.
  * @author Georg Fischer
  */
-public class A330242 implements Sequence {
+public class A330242 extends Sequence1 {
 
   final Sequence mA138137 = new A138137();
   protected long mN;

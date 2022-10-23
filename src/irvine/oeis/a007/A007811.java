@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007811 Numbers n for which 10n+1, 10n+3, 10n+7 and 10n+9 are primes.
  * @author Sean A. Irvine
  */
-public class A007811 implements Sequence {
+public class A007811 extends Sequence1 {
 
   private long mN = 0;
 

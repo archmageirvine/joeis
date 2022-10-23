@@ -1,13 +1,13 @@
 package irvine.oeis.a110;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A110792 Copies of 7,3 and 1 cyclically such that every partial concatenation is a prime.
  * @author Sean A. Irvine
  */
-public class A110792 implements Sequence {
+public class A110792 extends Sequence1 {
 
   private final long[] mCandidates = candidates();
   private int mCandPos = -1;

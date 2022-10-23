@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 import irvine.factor.factor.Jaguar;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058274 An approximation to sigma_{5/2}(n): ceiling( sum_{d|n} d^(5/2) ).
  * @author Sean A. Irvine
  */
-public class A058274 implements Sequence {
+public class A058274 extends Sequence1 {
 
   private long mN = 0;
 

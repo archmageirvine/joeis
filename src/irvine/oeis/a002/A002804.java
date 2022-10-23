@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002804 (Presumed) solution to Waring's problem: g(n) = 2^n + floor((3/2)^n) - 2.
  * @author Sean A. Irvine
  */
-public class A002804 implements Sequence {
+public class A002804 extends Sequence1 {
 
   private Z mThrees = Z.ONE;
   private Z mTwos = Z.ONE;

@@ -5,13 +5,13 @@ import java.util.Set;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057765 Number of factorable subsets of a 1 X n uniform grid.
  * @author Sean A. Irvine
  */
-public class A057765 implements Sequence {
+public class A057765 extends Sequence1 {
 
   protected int mN = 0;
   private long mLim = 0;

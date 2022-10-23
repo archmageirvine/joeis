@@ -4,13 +4,13 @@ import irvine.math.LongUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005419 Number of nonequivalent dissections of a polygon into n heptagons by nonintersecting diagonals up to rotation and reflection.
  * @author Sean A. Irvine
  */
-public class A005419 implements Sequence {
+public class A005419 extends Sequence1 {
 
   private long mN = 0;
 

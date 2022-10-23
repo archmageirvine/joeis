@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A022548 Initial members of prime nonuplets (p, p+4, p+10, p+12, p+18, p+22, p+24, p+28, p+30).
  * @author Sean A. Irvine
  */
-public class A022548 implements Sequence {
+public class A022548 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.valueOf(88788);

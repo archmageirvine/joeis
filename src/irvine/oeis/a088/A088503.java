@@ -3,13 +3,14 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002384;
 
 /**
  * A088503 Numbers n such that (n^2 + 3)/4 is prime.
  * @author Georg Fischer
  */
-public class A088503 implements Sequence {
+public class A088503 extends Sequence1 {
 
   final Sequence mA002384 = new A002384();
   @Override

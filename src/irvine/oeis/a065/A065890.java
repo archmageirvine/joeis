@@ -3,13 +3,14 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014689;
 
 /**
  * A065890 Number of composites less than the n-th prime.
  * @author Georg Fischer
  */
-public class A065890 implements Sequence {
+public class A065890 extends Sequence1 {
 
   final Sequence mA014689 = new A014689();
   @Override

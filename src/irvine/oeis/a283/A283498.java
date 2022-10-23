@@ -3,13 +3,13 @@ package irvine.oeis.a283;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A283498 a(n) = Sum_{d|n} d^(d+1).
  * @author Georg Fischer
  */
-public class A283498 implements Sequence {
+public class A283498 extends Sequence1 {
 
   private int mN = 0;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a026.A026898;
 
 /**
  * A062810 a(n) = Sum_{i=1..n} i^(n - i) + (n - i)^i.
  * @author Georg Fischer
  */
-public class A062810 implements Sequence {
+public class A062810 extends Sequence1 {
 
   final Sequence mA026898 = new A026898();
   @Override

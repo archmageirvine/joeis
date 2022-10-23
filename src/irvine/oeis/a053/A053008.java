@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A053008 Primes from products of split even-digit primes.
  * @author Sean A. Irvine
  */
-public class A053008 implements Sequence {
+public class A053008 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final Fast mPrime = new Fast();

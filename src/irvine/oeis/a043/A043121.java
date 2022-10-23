@@ -3,13 +3,13 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A043121 Numbers k such that 1 and 2 occur juxtaposed in the base-6 representation of k but not of k-1.
  * @author Georg Fischer
  */
-public class A043121 implements Sequence {
+public class A043121 extends Sequence1 {
 
   private static final String P12 = String.valueOf(1) + String.valueOf(2);
   private static final String P21 = String.valueOf(2) + String.valueOf(1);

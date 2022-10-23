@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007951 Ternary sieve: delete every 3rd number, then every 9th, 27th, etc.
  * @author Sean A. Irvine
  */
-public class A007951 implements Sequence {
+public class A007951 extends Sequence1 {
 
   // We don't actually want to do this as a real "sieve".
   // Instead using something more incremental but still fast

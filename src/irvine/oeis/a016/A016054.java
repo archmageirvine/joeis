@@ -1,13 +1,13 @@
 package irvine.oeis.a016;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A016054 Numbers n such that (13^n - 1)/12 is prime.
  * @author Sean A. Irvine
  */
-public class A016054 implements Sequence {
+public class A016054 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private long mN = 0;

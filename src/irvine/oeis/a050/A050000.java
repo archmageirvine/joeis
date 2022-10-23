@@ -4,13 +4,13 @@ package irvine.oeis.a050;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050000 a(n) = floor(a(n-1)/2) if this is not among 0, a(1), ..., a(n-2); otherwise a(n) = 3*a(n-1).
  * @author Georg Fischer
  */
-public class A050000 implements Sequence {
+public class A050000 extends Sequence1 {
 
   protected final TreeSet<Z> mA; // remembers which terms are already in the sequence
   protected int mN; // current index n

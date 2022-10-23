@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
 /**
  * A055592 Longest side of congruent triangles with integer sides and positive integer area, ordered by longest side, then second longest side and finally shortest side.
  * @author Sean A. Irvine
  */
-public class A055592 implements Sequence {
+public class A055592 extends Sequence1 {
 
   static final class Triangle extends Triple<Long> implements Comparable<Triangle> {
 

@@ -3,6 +3,7 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007947;
 import irvine.oeis.a071.A071773;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a071.A071773;
  * A055231 Powerfree part of n: product of primes that divide n only once.
  * @author Georg Fischer
  */
-public class A055231 implements Sequence {
+public class A055231 extends Sequence1 {
 
   final Sequence mA007947 = new A007947();
   final Sequence mA071773 = new A071773();

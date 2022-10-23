@@ -3,14 +3,14 @@ package irvine.oeis.a007;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A007763 Number of pairs of length n permutations achievable by double-ended priority queue.
  * @author Sean A. Irvine
  */
-public class A007763 implements Sequence {
+public class A007763 extends Sequence1 {
 
   private int mN = 0;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a023;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023052 Perfect Digital Invariants: numbers that are the sum of some fixed power of their digits.
  * @author Sean A. Irvine
  */
-public class A023052 implements Sequence {
+public class A023052 extends Sequence1 {
 
   // Not fast enough to be competitive
 

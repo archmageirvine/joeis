@@ -3,6 +3,7 @@ package irvine.oeis.a293;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006530;
 import irvine.oeis.a007.A007947;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007947;
  * A293810 The truncated kernel function of n: the product of distinct primes dividing n, but excluding the largest prime divisor of n.
  * @author Georg Fischer
  */
-public class A293810 implements Sequence {
+public class A293810 extends Sequence1 {
 
   final Sequence mA006530 = new A006530();
   final Sequence mA007947 = new A007947();

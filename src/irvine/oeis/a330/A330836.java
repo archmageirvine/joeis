@@ -3,13 +3,14 @@ package irvine.oeis.a330;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a133.A133049;
 import irvine.oeis.a139.A139306;
 /**
  * A330836 Numbers of the form 2^(2*p-1)*3*M_p^2, where p &gt; 2 is a Mersenne exponent, A000043, and M_p is the corresponding Mersenne prime, A000668.
  * @author Georg Fischer
  */
-public class A330836 implements Sequence {
+public class A330836 extends Sequence1 {
 
   private final Sequence mA133049 = new A133049();
   private final Sequence mA139306 = new A139306();

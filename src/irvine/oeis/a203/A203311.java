@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
@@ -11,7 +11,7 @@ import irvine.oeis.a000.A000045;
  * A203311 Vandermonde determinant of (1,2,3,...,F(n+1)), where F=A000045 (Fibonacci numbers).
  * @author Georg Fischer
  */
-public class A203311 implements Sequence {
+public class A203311 extends Sequence1 {
 
   private int mN = 0;
   private final MemorySequence mA000045 = MemorySequence.cachedSequence(new SkipSequence(new A000045(), 1));

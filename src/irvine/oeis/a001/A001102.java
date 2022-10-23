@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001102 Numbers k such that k / (sum of digits of k) is a square.
  * @author Sean A. Irvine
  */
-public class A001102 implements Sequence {
+public class A001102 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

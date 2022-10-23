@@ -5,13 +5,13 @@ import java.util.List;
 
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056825 Numbers such that no smaller positive integer has the same maximal palindrome in the periodic part of the simple continued fraction for its square root.
  * @author Sean A. Irvine
  */
-public class A056825 implements Sequence {
+public class A056825 extends Sequence1 {
 
   private final HashSet<String> mSeen = new HashSet<>();
   private Z mN = Z.ZERO;

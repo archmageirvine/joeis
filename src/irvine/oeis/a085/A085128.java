@@ -3,13 +3,14 @@ package irvine.oeis.a085;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002473;
 
 /**
  * A085128 Multiples of 5 which are members of A002473. Or multiples of 5 with the largest prime divisor &lt;= 7.
  * @author Georg Fischer
  */
-public class A085128 implements Sequence {
+public class A085128 extends Sequence1 {
 
   final Sequence mA002473 = new A002473();
   @Override

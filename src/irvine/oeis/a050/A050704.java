@@ -3,13 +3,13 @@ package irvine.oeis.a050;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050704 Composite numbers k with the property that k minus the sum of the prime factors of k is prime.
  * @author Sean A. Irvine
  */
-public class A050704 implements Sequence {
+public class A050704 extends Sequence1 {
 
   private long mN = 5;
 

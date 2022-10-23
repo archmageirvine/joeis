@@ -3,13 +3,13 @@ package irvine.oeis.a027;
 import irvine.math.MemoryFunction2;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027834 Number of labeled strongly connected n-state 2-input automata.
  * @author Sean A. Irvine
  */
-public class A027834 implements Sequence {
+public class A027834 extends Sequence1 {
 
   static final class SFunction extends MemoryFunction2<Integer, Z> {
     

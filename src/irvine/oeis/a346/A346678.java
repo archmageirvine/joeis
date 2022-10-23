@@ -2,13 +2,13 @@ package irvine.oeis.a346;
 // manually 2021-08-15
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A346678 Positive numbers whose squares end in exactly two identical digits.
  * @author Georg Fischer
  */
-public class A346678 implements Sequence {
+public class A346678 extends Sequence1 {
 
   protected int mN;
 

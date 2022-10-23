@@ -2,13 +2,13 @@ package irvine.oeis.a033;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033433 a(n) = floor(10000/sqrt(n)).
  * @author Sean A. Irvine
  */
-public class A033433 implements Sequence {
+public class A033433 extends Sequence1 {
 
   private static final CR NUM = CR.valueOf(10000);
   private long mN = 0;

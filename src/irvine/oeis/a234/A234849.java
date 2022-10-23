@@ -5,13 +5,13 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A234849 Positions of records in iterated MD5 applied to empty string.
  * @author Sean A. Irvine
  */
-public class A234849 implements Sequence {
+public class A234849 extends Sequence1 {
 
   private static final String HEX = "0123456789abcdef";
   private static final MessageDigest MD5;

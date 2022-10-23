@@ -3,13 +3,13 @@ package irvine.oeis.a050;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050695 Composite numbers k such that none of the prime factors of k is a substring of k.
  * @author Sean A. Irvine
  */
-public class A050695 implements Sequence {
+public class A050695 extends Sequence1 {
 
   private long mN = 3;
 

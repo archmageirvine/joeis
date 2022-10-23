@@ -3,13 +3,14 @@ package irvine.oeis.a069;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003586;
 
 /**
  * A069353 Numbers of form 2^i*3^j - 1 with i, j &gt;= 0.
  * @author Georg Fischer
  */
-public class A069353 implements Sequence {
+public class A069353 extends Sequence1 {
 
   final Sequence mA003586 = new A003586();
   @Override

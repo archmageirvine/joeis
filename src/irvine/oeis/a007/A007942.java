@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007942 Decimal concatenation of sequence (n, n-1, ..., 2, 1, 2, ..., n-1, n).
  * @author Sean A. Irvine
  */
-public class A007942 implements Sequence {
+public class A007942 extends Sequence1 {
 
   private long mN = 0;
 

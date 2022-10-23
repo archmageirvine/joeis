@@ -2,13 +2,13 @@ package irvine.oeis.a008;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008507 Number of odd composite numbers less than n-th odd prime.
  * @author Sean A. Irvine
  */
-public class A008507 implements Sequence {
+public class A008507 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mOddComposites = Z.ZERO;

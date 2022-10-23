@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058529 Numbers whose prime factors are all congruent to +1 or -1 modulo 8.
  * @author Sean A. Irvine
  */
-public class A058529 implements Sequence {
+public class A058529 extends Sequence1 {
 
   private long mN = 0;
 

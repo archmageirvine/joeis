@@ -3,6 +3,7 @@ package irvine.oeis.a111;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a006.A006094;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006094;
  * A111071 Difference between the product of two consecutive primes and the next prime.
  * @author Georg Fischer
  */
-public class A111071 implements Sequence {
+public class A111071 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA006094 = new A006094();

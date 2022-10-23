@@ -3,13 +3,14 @@ package irvine.oeis.a166;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004125;
 
 /**
  * A166248 a(n) is the absolute value of n minus sum of all the remainders modulo the numbers below n.
  * @author Georg Fischer
  */
-public class A166248 implements Sequence {
+public class A166248 extends Sequence1 {
 
   final Sequence mA004125 = new A004125();
   protected long mN;

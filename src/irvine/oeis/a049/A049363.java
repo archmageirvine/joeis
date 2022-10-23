@@ -1,13 +1,13 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049363 a(1) = 1; for n&gt;1, smallest digitally balanced number in base n.
  * @author Sean A. Irvine
  */
-public class A049363 implements Sequence {
+public class A049363 extends Sequence1 {
 
   private long mN = 0;
 

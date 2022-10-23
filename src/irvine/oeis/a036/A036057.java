@@ -6,13 +6,13 @@ import java.util.LinkedList;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036057 Friedman numbers: can be written in a nontrivial way using their digits and the operations + - * / ^ and concatenation of digits (but not of results).
  * @author Sean A. Irvine
  */
-public class A036057 implements Sequence {
+public class A036057 extends Sequence1 {
 
   // This implementation was based on existing code for solving the 4,4,4,4 problem.
   // It likely contains some legacy functionality not needed here.

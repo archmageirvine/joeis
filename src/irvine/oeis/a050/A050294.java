@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050294 Maximum cardinality of a 3-fold-free subset of {1, 2, ..., n}.
  * @author Sean A. Irvine
  */
-public class A050294 implements Sequence {
+public class A050294 extends Sequence1 {
 
   private long mN = 0;
 

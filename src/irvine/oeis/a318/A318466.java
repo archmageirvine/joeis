@@ -3,12 +3,13 @@ package irvine.oeis.a318;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a224.A224880;
 /**
  * A318466 a(n) = 2*n OR A000203(n), where OR is bitwise-or (A003986) and A000203 = sum of divisors.
  * @author Georg Fischer
  */
-public class A318466 implements Sequence {
+public class A318466 extends Sequence1 {
 
   private final Sequence mA224880 = new A224880();
   private final Sequence mA318468 = new A318468();

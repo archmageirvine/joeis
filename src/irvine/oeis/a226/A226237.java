@@ -3,13 +3,14 @@ package irvine.oeis.a226;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045917;
 
 /**
  * A226237 Sum of the parts in the Goldbach partitions of 2n.
  * @author Georg Fischer
  */
-public class A226237 implements Sequence {
+public class A226237 extends Sequence1 {
 
   final Sequence mA045917 = new A045917();
   protected long mN;

@@ -7,13 +7,13 @@ import irvine.math.graph.GraphUtils;
 import irvine.math.group.IntegerField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049387 Number of rooted unlabeled strongly connected digraphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A049387 implements Sequence {
+public class A049387 extends Sequence1 {
 
   private int mN = 0;
 

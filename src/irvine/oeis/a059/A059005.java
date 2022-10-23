@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059005 Primes whose reversal is a tenth power.
  * @author Sean A. Irvine
  */
-public class A059005 implements Sequence {
+public class A059005 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final int mPower;

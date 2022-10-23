@@ -3,13 +3,14 @@ package irvine.oeis.a085;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014673;
 
 /**
  * A085393 Difference between the largest and the smallest prime factor of the greatest proper divisor of n.
  * @author Georg Fischer
  */
-public class A085393 implements Sequence {
+public class A085393 extends Sequence1 {
 
   final Sequence mA014673 = new A014673();
   final Sequence mA085392 = new A085392();

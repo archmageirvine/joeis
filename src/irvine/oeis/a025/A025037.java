@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025037 Number of partitions of { 1, 2, ..., 5n } into sets of size 5.
  * @author Sean A. Irvine
  */
-public class A025037 implements Sequence {
+public class A025037 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private long mN = 0;

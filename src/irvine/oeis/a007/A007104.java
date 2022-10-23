@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.MatrixField;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007104 Number of elements (a b, c d) in GL(2,Z) with det = -1, trace n and 0 &lt;= a &lt;= {b, c} &lt;= d.
  * @author Sean A. Irvine
  */
-public class A007104 implements Sequence {
+public class A007104 extends Sequence1 {
 
   protected static final MatrixField<Z> MAT = new MatrixField<>(2, IntegerField.SINGLETON);
   private long mN = 0;

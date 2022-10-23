@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034011 Related to curves y^2=x^5-n.
  * @author Sean A. Irvine
  */
-public class A034011 implements Sequence {
+public class A034011 extends Sequence1 {
 
   private long mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001182 Number of cells of square lattice of edge 1/n inside quadrant of unit circle centered at 0.
  * @author Sean A. Irvine
  */
-public class A001182 implements Sequence {
+public class A001182 extends Sequence1 {
 
   private long mN = 0;
 

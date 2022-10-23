@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045765 n - d(n) never takes these values, where d(n) = A000005(n).
  * @author Sean A. Irvine
  */
-public class A045765 implements Sequence {
+public class A045765 extends Sequence1 {
 
   // Heuristic, any failure will eventually be detected and reported
 

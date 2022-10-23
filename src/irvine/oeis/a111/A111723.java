@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A111723 Number of partitions of an n-set with an odd number of blocks of size 1.
  * E.g.f.: sinh(x)*exp(exp(x)-1-x)
  * @author Georg Fischer
  */
-public class A111723 implements Sequence {
+public class A111723 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

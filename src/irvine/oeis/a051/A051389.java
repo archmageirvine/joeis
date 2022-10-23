@@ -7,13 +7,13 @@ import java.util.TreeSet;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051389 Number of rational resistances requiring exactly n 1-ohm resistors in series or parallel.
  * @author Sean A. Irvine
  */
-public class A051389 implements Sequence {
+public class A051389 extends Sequence1 {
 
   private final TreeSet<Q> mSeen = new TreeSet<>();
   private final ArrayList<Set<Q>> mSolutions = new ArrayList<>();

@@ -5,13 +5,13 @@ import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingCycler;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001337 Number of n-step polygons on f.c.c. lattice.
  * @author Sean A. Irvine
  */
-public class A001337 implements Sequence {
+public class A001337 extends Sequence1 {
 
   private int mN = 0;
   private final long mC = Lattices.FCC.neighbour(Lattices.FCC.origin(), 0);

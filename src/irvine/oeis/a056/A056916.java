@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056916 Product of the orders of the elements in a cyclic group with n elements.
  * @author Sean A. Irvine
  */
-public class A056916 implements Sequence {
+public class A056916 extends Sequence1 {
 
   private long mN = 0;
 

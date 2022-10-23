@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000976 Period of 1 / n! in base 10.
  * @author Sean A. Irvine
  */
-public class A000976 implements Sequence {
+public class A000976 extends Sequence1 {
 
   private int mN = 0;
   private Z mF = Z.ONE;

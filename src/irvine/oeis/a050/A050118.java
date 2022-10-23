@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000032;
 
@@ -13,7 +13,7 @@ import irvine.oeis.a000.A000032;
  * A050118 Numbers that are the product of two Lucas numbers.
  * @author Sean A. Irvine
  */
-public class A050118 implements Sequence {
+public class A050118 extends Sequence1 {
 
   // Reorder initial terms, so that they are sorted
   private final MemorySequence mLucas = MemorySequence.cachedSequence(new PrependSequence(new SkipSequence(new A000032(), 2), 1, 2));

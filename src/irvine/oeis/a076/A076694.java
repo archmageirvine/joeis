@@ -3,13 +3,14 @@ package irvine.oeis.a076;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008472;
 
 /**
  * A076694 a(n) = n - sum of the distinct prime factors of n.
  * @author Georg Fischer
  */
-public class A076694 implements Sequence {
+public class A076694 extends Sequence1 {
 
   final Sequence mA008472 = new A008472();
   protected long mN;

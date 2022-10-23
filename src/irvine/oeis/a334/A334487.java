@@ -3,6 +3,7 @@ package irvine.oeis.a334;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007732;
 import irvine.oeis.a007.A007733;
 import irvine.oeis.a007.A007736;
@@ -11,7 +12,7 @@ import irvine.oeis.a007.A007736;
  * A334487 a(n) = p(n, 2)*p(n, 5)/p(n, 10) where p(n, b) is the period of repeating digits of 1/n in base b.
  * @author Georg Fischer
  */
-public class A334487 implements Sequence {
+public class A334487 extends Sequence1 {
 
   final Sequence mA007732 = new A007732();
   final Sequence mA007733 = new A007733();

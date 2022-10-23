@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036921 Numbers n such that digit sum of n equals digit sum of 'juxtaposition' and 'sum' of its prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
-public class A036921 implements Sequence {
+public class A036921 extends Sequence1 {
 
   private Z mN = Z.THREE;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053738 If k is in sequence then 2*k and 2*k+1 are not (and 1 is in the sequence); numbers with an odd number of digits in binary.
  * @author Georg Fischer
  */
-public class A053738 implements Sequence {
+public class A053738 extends Sequence1 {
 
   protected Z mN = Z.ZERO;
 

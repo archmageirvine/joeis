@@ -6,13 +6,13 @@ import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingCycler;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A010570 Number of 2n-step 6-dimensional closed paths on 6-d cubic lattice.
  * @author Sean A. Irvine
  */
-public class A010570 implements Sequence {
+public class A010570 extends Sequence1 {
 
   private static final Lattice Z6 = Lattices.hypercubic(6);
   private int mN = 0;

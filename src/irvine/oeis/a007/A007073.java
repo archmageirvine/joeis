@@ -6,13 +6,13 @@ import java.util.List;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007073 First column of array associated with lexicographically justified array.
  * @author Sean A. Irvine
  */
-public class A007073 implements Sequence {
+public class A007073 extends Sequence1 {
 
   // Similar to A007072 except the ordering of the Fibonacci sequences is
   // different.  Here we consider Fibonacci sequences starting (a,b) with b<a

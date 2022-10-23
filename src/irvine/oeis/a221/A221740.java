@@ -3,12 +3,13 @@ package irvine.oeis.a221;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051846;
 /**
  * A221740 a(n) = -4*((n-1)*(n+1)^(n+1)+1)/(((-1)^n-3)*n^3).
  * @author Georg Fischer
  */
-public class A221740 implements Sequence {
+public class A221740 extends Sequence1 {
 
   private final Sequence mA051846 = new A051846();
   protected long mN = 0;

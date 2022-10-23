@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055812 a(n) and floor(a(n)/5) are both squares; i.e., squares which remain squares when written in base 5 and last digit is removed.
  * @author Georg Fischer
  */
-public class A055812 implements Sequence {
+public class A055812 extends Sequence1 {
 
   private Z mK;
   private int mDiv;

@@ -3,13 +3,13 @@ package irvine.oeis.a339;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A339688 a(n) = Sum_{d|n} 8^(d-1).
  * @author Georg Fischer
  */
-public class A339688 implements Sequence {
+public class A339688 extends Sequence1 {
 
   private int mN = 0;
 

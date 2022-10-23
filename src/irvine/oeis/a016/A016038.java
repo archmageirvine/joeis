@@ -1,13 +1,13 @@
 package irvine.oeis.a016;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A016038 Strictly non-palindromic numbers: n is not palindromic in any base b with 2 &lt;= b &lt;= n-2.
  * @author Sean A. Irvine
  */
-public class A016038 implements Sequence {
+public class A016038 extends Sequence1 {
 
   private final int[] mWork = new int[64]; // plenty of space for now
   private long mN = -1;

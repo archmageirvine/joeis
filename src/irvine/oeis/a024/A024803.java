@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024803 Numbers that are the sum of 3 distinct nonzero squares, including repetitions.
  * @author Sean A. Irvine
  */
-public class A024803 implements Sequence {
+public class A024803 extends Sequence1 {
 
   private long mN = 13;
   private long mC = 0;

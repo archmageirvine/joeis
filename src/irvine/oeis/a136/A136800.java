@@ -3,11 +3,12 @@ package irvine.oeis.a136;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 /**
  * A136800 Number of composites in prime gaps of size 3 or larger, in order of appearance.
  * @author Georg Fischer
  */
-public class A136800 implements Sequence {
+public class A136800 extends Sequence1 {
 
   private final Sequence mA136798 = new A136798();
   private final Sequence mA136799 = new A136799();

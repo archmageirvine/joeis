@@ -3,13 +3,14 @@ package irvine.oeis.a110;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a066.A066049;
 
 /**
  * A110558 Numbers n such that (n^2-8)/8 is prime.
  * @author Georg Fischer
  */
-public class A110558 implements Sequence {
+public class A110558 extends Sequence1 {
 
   final Sequence mA066049 = new A066049();
   @Override

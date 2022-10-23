@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000033 Coefficients of m\u00e9nage hit polynomials.
  * @author Sean A. Irvine
  */
-public class A000033 implements Sequence {
+public class A000033 extends Sequence1 {
 
   private final MemoryFactorial mFactorial = MemoryFactorial.SINGLETON;
   protected int mN = 0;

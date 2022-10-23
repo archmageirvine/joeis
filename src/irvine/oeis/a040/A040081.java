@@ -1,13 +1,13 @@
 package irvine.oeis.a040;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A040081 Riesel problem: a(n) = smallest m &gt;= 0 such that n*2^m-1 is prime, or -1 if no such prime exists.
  * @author Sean A. Irvine
  */
-public class A040081 implements Sequence {
+public class A040081 extends Sequence1 {
 
   private long mN = 0;
 

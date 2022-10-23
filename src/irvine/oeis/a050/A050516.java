@@ -5,13 +5,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050516 Increments in arithmetic progression of at least 5 terms having the same value of phi in A050515.
  * @author Sean A. Irvine
  */
-public class A050516 implements Sequence {
+public class A050516 extends Sequence1 {
 
   private Z mN = Z.valueOf(353639);
   private final ArrayList<Z> mD = new ArrayList<>();

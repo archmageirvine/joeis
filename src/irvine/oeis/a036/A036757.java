@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036757 Number of tree-like heptagonal systems.
  * @author Sean A. Irvine
  */
-public class A036757 implements Sequence {
+public class A036757 extends Sequence1 {
 
   private static final Z C1 = Z.valueOf(713264163292482871L);
   private static final Z C2 = Z.valueOf(-152996351532211558L);

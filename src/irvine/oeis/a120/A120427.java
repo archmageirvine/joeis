@@ -3,13 +3,14 @@ package irvine.oeis.a120;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a020.A020888;
 
 /**
  * A120427 For each y &gt;= 1 there are only finitely many values of x &gt;= 1 such that x-y and x+y are both squares; list all such pairs (x,y) with gcd(x,y) = 1 ordered by values of y; sequence gives y values.
  * @author Georg Fischer
  */
-public class A120427 implements Sequence {
+public class A120427 extends Sequence1 {
 
   final Sequence mA020888 = new A020888();
   @Override

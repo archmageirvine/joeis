@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048169 n is divisible by the cube of the number of unitary divisors of n (A034444).
  * @author Sean A. Irvine
  */
-public class A048169 implements Sequence {
+public class A048169 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

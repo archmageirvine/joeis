@@ -2,13 +2,13 @@ package irvine.oeis.a060;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A060003 Odd numbers not of the form p + 2*k^2, k&gt;0, p prime.
  * @author Sean A. Irvine
  */
-public class A060003 implements Sequence {
+public class A060003 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

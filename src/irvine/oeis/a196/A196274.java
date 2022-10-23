@@ -3,13 +3,14 @@ package irvine.oeis.a196;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a067.A067970;
 
 /**
  * A196274 Half of the gaps A067970 between odd nonprimes A014076.
  * @author Georg Fischer
  */
-public class A196274 implements Sequence {
+public class A196274 extends Sequence1 {
 
   final Sequence mA067970 = new A067970();
   @Override

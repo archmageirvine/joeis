@@ -3,13 +3,14 @@ package irvine.oeis.a247;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023242;
 
 /**
  * A247010 Primes p such that (p-3)/2 and 2*p+3 are both prime.
  * @author Georg Fischer
  */
-public class A247010 implements Sequence {
+public class A247010 extends Sequence1 {
 
   final Sequence mA023242 = new A023242();
   @Override

@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058890 Smallest number of nodes in a graph whose automorphism group is cyclic of order n.
  * @author Sean A. Irvine
  */
-public class A058890 implements Sequence {
+public class A058890 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046964 Sin(n) decreases monotonically to -1.
  * @author Sean A. Irvine
  */
-public class A046964 implements Sequence {
+public class A046964 extends Sequence1 {
 
   private CR mBest = CR.TWO;
   private long mN = 0;

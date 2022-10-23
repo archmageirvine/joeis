@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054689 6 consecutive primes differ by 2n or more starting at a(n).
  * @author Sean A. Irvine
  */
-public class A054689 implements Sequence {
+public class A054689 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 2;

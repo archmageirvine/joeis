@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056917 Numbers n such that sigma(n)-phi(n) is a perfect square.
  * @author Sean A. Irvine
  */
-public class A056917 implements Sequence {
+public class A056917 extends Sequence1 {
 
   private long mN = 0;
 

@@ -7,13 +7,13 @@ import irvine.math.group.GaloisField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.IrreduciblePolynomials;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058334 Numbers n such that the trinomial x^n + x + 1 is irreducible over GF(5).
  * @author Sean A. Irvine
  */
-public class A058334 implements Sequence {
+public class A058334 extends Sequence1 {
 
   private static final GaloisField GF5 = new GaloisField(5);
   private static final PolynomialRingField<Z> GF5X = new PolynomialRingField<>(GF5);

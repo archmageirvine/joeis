@@ -1,13 +1,13 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A029475 Numbers k that divide the (left) concatenation of all numbers &lt;= k written in base 6 (most significant digit on left).
  * @author Sean A. Irvine
  */
-public class A029475 implements Sequence {
+public class A029475 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   private Z mA = Z.ZERO;

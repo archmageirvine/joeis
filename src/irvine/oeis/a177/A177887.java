@@ -3,13 +3,14 @@ package irvine.oeis.a177;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a009.A009112;
 
 /**
  * A177887 The areas of Pythagorean triangles divided by 6.
  * @author Georg Fischer
  */
-public class A177887 implements Sequence {
+public class A177887 extends Sequence1 {
 
   final Sequence mA009112 = new A009112();
   @Override

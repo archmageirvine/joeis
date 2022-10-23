@@ -1,13 +1,13 @@
 package irvine.oeis.a019;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019522 Concatenate cubes.
  * @author Sean A. Irvine
  */
-public class A019522 implements Sequence {
+public class A019522 extends Sequence1 {
 
   private long mN = 0;
   private final StringBuilder mS = new StringBuilder();

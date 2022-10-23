@@ -9,14 +9,14 @@ import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A159907 Numbers n with half-integral abundancy index, sigma(n)/n = k+1/2 with integer k.
  * @author Sean A. Irvine
  * @author Robert Gerbicz
  */
-public class A159907 implements Sequence {
+public class A159907 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final PrimeDivision mFactor = new PrimeDivision();

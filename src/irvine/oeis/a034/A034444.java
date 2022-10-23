@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034444 a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
  * @author Sean A. Irvine
  */
-public class A034444 implements Sequence {
+public class A034444 extends Sequence1 {
 
   protected Z mN = Z.ZERO;
 

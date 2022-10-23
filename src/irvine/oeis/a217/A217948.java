@@ -3,12 +3,13 @@ package irvine.oeis.a217;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051733;
 /**
  * A217948 List of numbers 2n for which the riffle permutation permutes all except the first and last of the 2n cards.
  * @author Georg Fischer
  */
-public class A217948 implements Sequence {
+public class A217948 extends Sequence1 {
 
   private final Sequence mA051733 = new A051733();
   @Override

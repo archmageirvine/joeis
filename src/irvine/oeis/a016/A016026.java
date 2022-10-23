@@ -1,13 +1,13 @@
 package irvine.oeis.a016;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A016026 Smallest base relative to which n is palindromic.
  * @author Sean A. Irvine
  */
-public class A016026 implements Sequence {
+public class A016026 extends Sequence1 {
 
   private final int[] mWork = new int[64]; // plenty of space for now
   private long mN = 0;

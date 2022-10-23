@@ -3,13 +3,13 @@ package irvine.oeis.a016;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A016274 Numbers k where the fractional part of tan(k) decreases monotonically to 0.
  * @author Sean A. Irvine
  */
-public class A016274 implements Sequence {
+public class A016274 extends Sequence1 {
 
   // Actually ordinary IEEE double precision arithmetic is sufficient for known
   // terms up to at least 8984683956L.  But more careful here for later terms ...

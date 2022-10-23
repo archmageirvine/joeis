@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011540 Numbers that contain a digit 0.
  * @author Sean A. Irvine
  */
-public class A011540 implements Sequence {
+public class A011540 extends Sequence1 {
 
   private long mN = -1;
 

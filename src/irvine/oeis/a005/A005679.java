@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005679 A squarefree (or Thue-Morse) ternary sequence: closed under a-&gt;abc, b-&gt;ac, c-&gt;b.
  * @author Sean A. Irvine
  */
-public class A005679 implements Sequence {
+public class A005679 extends Sequence1 {
 
   private StringBuilder mSeq = new StringBuilder("213");
   private int mPos = -1;

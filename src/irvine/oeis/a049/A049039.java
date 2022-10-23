@@ -1,13 +1,13 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049039 Geometric Connell sequence: 1 odd, 2 even, 4 odd, 8 even, ...
  * @author Sean A. Irvine
  */
-public class A049039 implements Sequence {
+public class A049039 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

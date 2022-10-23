@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058345 a(1) = 1; a(n+1) = lcm(Sum_{k=1..n} a(k), Product_{k=1..n} a(k)).
  * @author Sean A. Irvine
  */
-public class A058345 implements Sequence {
+public class A058345 extends Sequence1 {
 
   private Z mProd = Z.ONE;
   private Z mSum = null;

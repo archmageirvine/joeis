@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028374 Curved numbers: numbers that have only curved digits (0, 2, 3, 5, 6, 8, 9).
  * @author Sean A. Irvine
  */
-public class A028374 implements Sequence {
+public class A028374 extends Sequence1 {
 
   private long mN = -1;
 

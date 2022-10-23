@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000435 Normalized total height of all nodes in all rooted trees with n labeled nodes.
  * @author Sean A. Irvine
  */
-public class A000435 implements Sequence {
+public class A000435 extends Sequence1 {
 
   private int mN = 0;
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

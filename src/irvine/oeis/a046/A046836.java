@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046836 Internal digits of n^2 include digits of n as substring.
  * @author Sean A. Irvine
  */
-public class A046836 implements Sequence {
+public class A046836 extends Sequence1 {
 
   private Z mN = Z.valueOf(49);
 

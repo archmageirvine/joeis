@@ -3,6 +3,7 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a046.A046951;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a046.A046951;
  * A056595 Number of nonsquare divisors of n.
  * @author Georg Fischer
  */
-public class A056595 implements Sequence {
+public class A056595 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA046951 = new A046951();

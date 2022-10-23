@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A323189 Number of n-step point-symmetrical self-avoiding walks on the square lattice.
  * @author Sean A. Irvine
  */
-public class A323189 implements Sequence {
+public class A323189 extends Sequence1 {
 
   private final long mX1 = Lattices.Z2.toPoint(1, 0);
 

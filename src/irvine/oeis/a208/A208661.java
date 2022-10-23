@@ -3,14 +3,14 @@ package irvine.oeis.a208;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A208661 Number of paths through the subset array of {1,2,...,n} that have range a subset of {1,2}; see Comments at A208650.
  * (2^n)*Product[Binomial[n - 1, i], {i, 1, n - 1}]
  * @author Georg Fischer
  */
-public class A208661 implements Sequence {
+public class A208661 extends Sequence1 {
 
   private int mN = 0;
 

@@ -5,6 +5,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000959;
 import irvine.oeis.a045.A045954;
 
@@ -12,7 +13,7 @@ import irvine.oeis.a045.A045954;
  * A057747 Number of decompositions of 2n-1 into sum of a lucky number and an even-lucky-number (from A045954).
  * @author Sean A. Irvine
  */
-public class A057747 implements Sequence {
+public class A057747 extends Sequence1 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A000959());
   private final Sequence mBSeq = new A045954();

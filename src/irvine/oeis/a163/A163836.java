@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A163836 Composites whose largest prime factor is equal to the sum of all the other prime factors (with repetition).
  * @author Sean A. Irvine
  */
-public class A163836 implements Sequence {
+public class A163836 extends Sequence1 {
 
   private long mN = 3;
   private final Fast mPrime = new Fast();

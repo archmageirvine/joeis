@@ -3,6 +3,7 @@ package irvine.oeis.a187;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a007.A007955;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007955;
  * A187680 a(n) = (product of divisors of n) mod (sum of divisors of n).
  * @author Georg Fischer
  */
-public class A187680 implements Sequence {
+public class A187680 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA007955 = new A007955();

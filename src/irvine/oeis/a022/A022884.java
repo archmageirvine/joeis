@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A022884 Numbers k such that prime(k) + prime(k+3) = prime(k+1) + prime(k+2).
  * @author Sean A. Irvine
  */
-public class A022884 implements Sequence {
+public class A022884 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

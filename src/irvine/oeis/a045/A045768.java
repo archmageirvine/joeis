@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045768 Numbers k such that sigma(k) == 2 (mod k).
  * @author Sean A. Irvine
  */
-public class A045768 implements Sequence {
+public class A045768 extends Sequence1 {
 
   private long mN = 0;
 

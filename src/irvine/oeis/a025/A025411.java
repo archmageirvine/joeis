@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025411 Numbers that are the sum of 4 distinct positive cubes.
  * @author Sean A. Irvine
  */
-public class A025411 implements Sequence {
+public class A025411 extends Sequence1 {
 
   private long mN = 1;
 

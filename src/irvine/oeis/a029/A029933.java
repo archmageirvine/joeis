@@ -3,13 +3,13 @@ package irvine.oeis.a029;
 import irvine.factor.factor.Jaguar;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A029933 Numerator of n * Product_{d|n} (1 + 1/d).
  * @author Sean A. Irvine
  */
-public class A029933 implements Sequence {
+public class A029933 extends Sequence1 {
 
   private long mN = 0;
 

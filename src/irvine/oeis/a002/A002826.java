@@ -2,6 +2,7 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008827;
 import irvine.oeis.a246.A246069;
 import irvine.oeis.a246.A246137;
@@ -11,7 +12,7 @@ import irvine.oeis.a246.A246417;
  * A002826 Number of precomplete Post functions of n variables.
  * @author Sean A. Irvine
  */
-public class A002826 implements Sequence {
+public class A002826 extends Sequence1 {
 
   private long mN = 0;
   private final Sequence mR1 = new A002824(); // n >= 2

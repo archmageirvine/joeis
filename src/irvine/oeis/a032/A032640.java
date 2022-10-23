@@ -3,14 +3,14 @@ package irvine.oeis.a032;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000959;
 
 /**
  * A032640 Numbers k such that k concatenated with itself is a lucky number.
  * @author Sean A. Irvine
  */
-public class A032640 implements Sequence {
+public class A032640 extends Sequence1 {
 
   private final A000959 mLucky = new A000959();
   private final TreeSet<Z> mLuckyNumbers = new TreeSet<>();

@@ -4,14 +4,14 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 
 /**
  * A056239 If n = Product_{k &gt;= 1} (p_k)^(c_k) where p_k is k-th prime and c_k &gt;= 0 then a(n) = Sum_{k &gt;= 1} k*c_k.
  * @author Sean A. Irvine
  */
-public class A056239 implements Sequence {
+public class A056239 extends Sequence1 {
 
   private final MemorySequence mPrimePi = MemorySequence.cachedSequence(new A000720());
   private long mN = 0;

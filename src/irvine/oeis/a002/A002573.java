@@ -3,14 +3,14 @@ package irvine.oeis.a002;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A002573 Restricted partitions.
  * @author Sean A. Irvine
  */
-public class A002573 implements Sequence {
+public class A002573 extends Sequence1 {
 
   private int mN = 0;
   private final HashMap<Pair<Long, Long>, Z> mV = new HashMap<>();

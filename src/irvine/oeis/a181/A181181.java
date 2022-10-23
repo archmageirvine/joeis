@@ -3,13 +3,13 @@ package irvine.oeis.a181;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A181181 Product of the first n zero-free positive numbers with digital sum n.
  * @author Georg Fischer
  */
-public class A181181 implements Sequence {
+public class A181181 extends Sequence1 {
 
   private int mN = 0;
 

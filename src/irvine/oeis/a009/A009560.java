@@ -2,13 +2,13 @@ package irvine.oeis.a009;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009560 Numbers k that divide the sum of all primes &lt;= k.
  * @author Sean A. Irvine
  */
-public class A009560 implements Sequence {
+public class A009560 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 2;

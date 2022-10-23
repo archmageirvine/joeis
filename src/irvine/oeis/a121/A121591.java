@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A121591 Expansion of (eta(q^5) / eta(q))^6 in powers of q.
  * @author Sean A. Irvine
  */
-public class A121591 implements Sequence {
+public class A121591 extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> X5 = Polynomial.create(0, 0, 0, 0, 0, 1);

@@ -3,13 +3,13 @@ package irvine.oeis.a033;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033631 Numbers k such that sigma(phi(k)) = sigma(k) where sigma is the sum of divisors function A000203 and phi is the Euler totient function A000010.
  * @author Sean A. Irvine
  */
-public class A033631 implements Sequence {
+public class A033631 extends Sequence1 {
 
   private long mN = 0;
 

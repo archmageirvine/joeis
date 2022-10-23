@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002465 Number of ways to place n nonattacking bishops on an n X n board.
  * @author Sean A. Irvine
  */
-public class A002465 implements Sequence {
+public class A002465 extends Sequence1 {
 
   private int mN = 0;
 

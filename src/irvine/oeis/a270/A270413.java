@@ -3,13 +3,14 @@ package irvine.oeis.a270;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023194;
 
 /**
  * A270413 Numbers n such that sigma(n-1) is a prime.
  * @author Georg Fischer
  */
-public class A270413 implements Sequence {
+public class A270413 extends Sequence1 {
 
   final Sequence mA023194 = new A023194();
   @Override

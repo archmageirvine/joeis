@@ -2,13 +2,13 @@ package irvine.oeis.a158;
 
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A158138 Number of nondecreasing integer sequences of length 4 with sum zero and sum of absolute values 2n.
  * @author Georg Fischer
  */
-public class A158138 implements Sequence {
+public class A158138 extends Sequence1 {
 
   private int mLen;
   private int mN;

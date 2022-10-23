@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037905 a(n) = 9 - (floor(n*Pi) mod 9).
  * @author Sean A. Irvine
  */
-public class A037905 implements Sequence {
+public class A037905 extends Sequence1 {
 
   private long mN = 0;
 

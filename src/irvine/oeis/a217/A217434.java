@@ -3,13 +3,14 @@ package irvine.oeis.a217;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006530;
 import irvine.oeis.a007.A007947;
 /**
  * A217434 n divided by the product of all its prime divisors smaller than the largest prime divisor.
  * @author Georg Fischer
  */
-public class A217434 implements Sequence {
+public class A217434 extends Sequence1 {
 
   private final Sequence mA006530 = new A006530();
   private final Sequence mA007947 = new A007947();

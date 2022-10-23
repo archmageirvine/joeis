@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A153741 Number of elements in wreath product C_2 \u2240 S_n that alternate up/not-up with respect to a weak product ordering.
  * E.g.f.: (1 + sin(x) + x*cos(x))/(cos(x) - x*sin(x))
  * @author Georg Fischer
  */
-public class A153741 implements Sequence {
+public class A153741 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

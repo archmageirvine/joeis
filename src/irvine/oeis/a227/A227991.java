@@ -3,12 +3,13 @@ package irvine.oeis.a227;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A227991 Highest power of 3 dividing prime(n)+1.
  * @author Georg Fischer
  */
-public class A227991 implements Sequence {
+public class A227991 extends Sequence1 {
 
   final Sequence mA227990 = new A227990();
   @Override

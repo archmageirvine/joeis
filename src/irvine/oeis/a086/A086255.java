@@ -2,13 +2,13 @@ package irvine.oeis.a086;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A086255 a(n) is the first prime for which floor(a(n)/p) is prime for all p among the first n primes.
  * @author Sean A. Irvine
  */
-public class A086255 implements Sequence {
+public class A086255 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mPrev = 5;

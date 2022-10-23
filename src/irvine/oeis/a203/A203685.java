@@ -3,13 +3,13 @@ package irvine.oeis.a203;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A203685 Vandermonde sequence using x^2 + xy + y^2 applied to (1,2,6,...,n!).
  * @author Georg Fischer
  */
-public class A203685 implements Sequence {
+public class A203685 extends Sequence1 {
 
   protected int mN = 0;
   protected static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;

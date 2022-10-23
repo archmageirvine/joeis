@@ -3,13 +3,14 @@ package irvine.oeis.a105;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003010;
 
 /**
  * A105850 a(n+1) = a(n)^2 - 2^(2^n+1) with a(1) = 8.
  * @author Georg Fischer
  */
-public class A105850 implements Sequence {
+public class A105850 extends Sequence1 {
 
   final Sequence mA003010 = new A003010();
   protected long mN;

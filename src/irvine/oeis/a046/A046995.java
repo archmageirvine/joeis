@@ -5,13 +5,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046995 Greek-key tours on a 4 X n board; i.e., self-avoiding walks on 4 X n grid starting in top left corner.
  * @author Sean A. Irvine
  */
-public class A046995 implements Sequence {
+public class A046995 extends Sequence1 {
 
   private int mN = 0;
 

@@ -3,12 +3,13 @@ package irvine.oeis.a139;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A139234 First differences of even superperfect numbers A061652.
  * @author Georg Fischer
  */
-public class A139234 implements Sequence {
+public class A139234 extends Sequence1 {
 
   final Sequence mA139231 = new A139231();
   @Override

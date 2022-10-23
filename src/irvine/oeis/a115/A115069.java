@@ -3,13 +3,14 @@ package irvine.oeis.a115;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005088;
 
 /**
  * A115069 a(n) = 3^b(n), where b(n) is #{primes p=1 mod 3 dividing n}.
  * @author Georg Fischer
  */
-public class A115069 implements Sequence {
+public class A115069 extends Sequence1 {
 
   final Sequence mA005088 = new A005088();
   @Override

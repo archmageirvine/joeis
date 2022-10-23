@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005835 Pseudoperfect (or semiperfect) numbers n: some subset of the proper divisors of n sums to n.
  * @author Sean A. Irvine
  */
-public class A005835 implements Sequence {
+public class A005835 extends Sequence1 {
 
   private long mN = 5;
 

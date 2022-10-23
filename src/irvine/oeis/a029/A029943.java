@@ -1,13 +1,13 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A029943 Substring of both its square and its cube.
  * @author Sean A. Irvine
  */
-public class A029943 implements Sequence {
+public class A029943 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001748 a(n) = 3 * prime(n).
  * @author Sean A. Irvine
  */
-public class A001748 implements Sequence {
+public class A001748 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mN = Z.ONE;

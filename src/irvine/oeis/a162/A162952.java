@@ -2,13 +2,13 @@ package irvine.oeis.a162;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A162952 A positive integer n is included if n and the number of divisors of n contain the same number of 1's in their binary representations.
  * @author Sean A. Irvine
  */
-public class A162952 implements Sequence {
+public class A162952 extends Sequence1 {
 
   private long mN = 0;
   protected Z mD;

@@ -2,13 +2,13 @@ package irvine.oeis.a178;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A178814 (n^(p-1) - 1)/p^2 mod p, where p is the first prime that divides (n^(p-1) - 1)/p.
  * @author Sean A. Irvine
  */
-public class A178814 implements Sequence {
+public class A178814 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

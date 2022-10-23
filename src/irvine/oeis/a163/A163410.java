@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A163410 A positive integer is included if it is a palindrome when written in binary, and it is not divisible by any primes that are not binary palindromes.
  * @author Sean A. Irvine
  */
-public class A163410 implements Sequence {
+public class A163410 extends Sequence1 {
 
   private long mN = -1;
   private final Fast mPrime = new Fast();

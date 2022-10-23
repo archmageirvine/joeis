@@ -11,13 +11,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034295 Number of different ways to divide an n X n square into sub-squares, considering only the list of parts.
  * @author Sean A. Irvine
  */
-public class A034295 implements Sequence {
+public class A034295 extends Sequence1 {
 
   // After Alois P. Heinz
 

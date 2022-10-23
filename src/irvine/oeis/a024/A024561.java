@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024561 a(n) = [ sum of 1/{k*sqrt(6)} ] for k = 1,2,...,n, where {x} := x - [ x ].
  * @author Sean A. Irvine
  */
-public class A024561 implements Sequence {
+public class A024561 extends Sequence1 {
 
   private static final CR SQRT6 = CR.SIX.sqrt();
   private long mN = 0;

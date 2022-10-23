@@ -3,13 +3,13 @@ package irvine.oeis.a071;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A071887 Conjectured values of n whose trajectory under map x -&gt; A002487(x)*A002487(x+1) does not go into a cycle.
  * @author Sean A. Irvine
  */
-public class A071887 implements Sequence {
+public class A071887 extends Sequence1 {
 
   private static final int ITERATIONS = Integer.parseInt(System.getProperty("a071887.iterations", "50"));
 

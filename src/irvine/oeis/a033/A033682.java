@@ -2,13 +2,13 @@ package irvine.oeis.a033;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033682 Numbers of the form (q^2+(q+1)^2)*(r^2+(r+1)^2), q,r &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A033682 implements Sequence {
+public class A033682 extends Sequence1 {
 
   private long mN = 23;
   

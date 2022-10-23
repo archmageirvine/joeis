@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007861 Mahonian statistics on S_n which split (a(n)=n!.a(n-1)^n).
  * @author Sean A. Irvine
  */
-public class A007861 implements Sequence {
+public class A007861 extends Sequence1 {
 
   private int mN = 0;
   private Z mF = Z.ONE;

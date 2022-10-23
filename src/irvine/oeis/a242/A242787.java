@@ -1,13 +1,13 @@
 package irvine.oeis.a242;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A242787 Numbers n such that (n^n-2)/(n-2) is an integer.
  * @author Georg Fischer
  */
-public class A242787 implements Sequence {
+public class A242787 extends Sequence1 {
 
   private int mN;
   private final int mNum;

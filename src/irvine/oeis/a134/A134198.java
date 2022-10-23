@@ -3,13 +3,14 @@ package irvine.oeis.a134;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002322;
 import irvine.oeis.a051.A051903;
 /**
  * A134198 Number of distinct sequences {i^k mod n; i &gt;= 0} with k &gt;= 0.
  * @author Georg Fischer
  */
-public class A134198 implements Sequence {
+public class A134198 extends Sequence1 {
 
   private final Sequence mA002322 = new A002322();
   private final Sequence mA051903 = new A051903();

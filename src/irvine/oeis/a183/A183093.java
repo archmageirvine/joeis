@@ -3,6 +3,7 @@ package irvine.oeis.a183;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a005.A005361;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a005.A005361;
  * A183093 a(1) = 0; thereafter, a(n) = number of divisors d of n such that if d = Product_(i) (p_i^e_i) then all e_i &lt;= 1.
  * @author Georg Fischer
  */
-public class A183093 implements Sequence {
+public class A183093 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA005361 = new A005361();

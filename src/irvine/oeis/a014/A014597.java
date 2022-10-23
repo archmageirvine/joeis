@@ -1,7 +1,7 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
 import irvine.util.string.StringUtils;
 
@@ -9,7 +9,7 @@ import irvine.util.string.StringUtils;
  * A014597 Numbers k such that k^2 is a sum of distinct factorials.
  * @author Sean A. Irvine
  */
-public class A014597 implements Sequence {
+public class A014597 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final LongDynamicArray<Z> mSums = new LongDynamicArray<>();

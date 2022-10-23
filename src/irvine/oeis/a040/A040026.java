@@ -1,13 +1,13 @@
 package irvine.oeis.a040;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A040026 If n=r*2^s, r odd, then a(n)=t*r, where t is smallest (in magnitude) number such that 1=t*r+u*2^s.
  * @author Sean A. Irvine
  */
-public class A040026 implements Sequence {
+public class A040026 extends Sequence1 {
 
   private long mN = 0;
 

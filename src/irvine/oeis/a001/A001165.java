@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001165 Position of first even digit after decimal point in sqrt(n).
  * @author Sean A. Irvine
  */
-public class A001165 implements Sequence {
+public class A001165 extends Sequence1 {
 
   private static final Z HUNDRED = Z.valueOf(100);
 

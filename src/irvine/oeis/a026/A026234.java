@@ -3,6 +3,7 @@ package irvine.oeis.a026;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a018.A018252;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a018.A018252;
  * A026234 In the sequence of positive integers, swap the k-th prime and k-th nonprime, for k = 1,2,3,...
  * @author Sean A. Irvine
  */
-public class A026234 implements Sequence {
+public class A026234 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final Sequence mSeqPrimes = new A000040();

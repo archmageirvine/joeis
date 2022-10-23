@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000430 Primes and squares of primes.
  * @author Sean A. Irvine
  */
-public class A000430 implements Sequence {
+public class A000430 extends Sequence1 {
 
   private Z mN = Z.ONE;
   private final Fast mPrime = new Fast();

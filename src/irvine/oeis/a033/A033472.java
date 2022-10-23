@@ -7,13 +7,13 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033472 Number of n-vertex labeled graphs that are gracefully labeled trees.
  * @author Sean A. Irvine
  */
-public class A033472 implements Sequence {
+public class A033472 extends Sequence1 {
 
   // After Noam D. Elkies
 

@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036576 a(n) is the least number not of the form floor(k^2/n).
  * @author Sean A. Irvine
  */
-public class A036576 implements Sequence {
+public class A036576 extends Sequence1 {
 
   private long mN = 0;
 

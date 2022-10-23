@@ -7,13 +7,13 @@ import java.util.List;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032450 Period of finite sequence g(n) related to Poulet's Conjecture.
  * @author Sean A. Irvine
  */
-public class A032450 implements Sequence {
+public class A032450 extends Sequence1 {
 
   private long mN = 0;
   private List<Z> mNextTerms = Collections.emptyList();

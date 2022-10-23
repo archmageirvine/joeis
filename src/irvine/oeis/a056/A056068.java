@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056068 Numbers k such that k! is divisible by the square of (f+d)!^2 for d = 0, 1 and 2 (and possibly larger d), where f = floor(k/2).
  * @author Sean A. Irvine
  */
-public class A056068 implements Sequence {
+public class A056068 extends Sequence1 {
 
   private int mN = 0;
   private Z mF = Z.ONE;

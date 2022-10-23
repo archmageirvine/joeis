@@ -3,13 +3,13 @@ package irvine.oeis.a013;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013933 Numbers k such that the sum of the first k nonsquarefree numbers is nonsquarefree.
  * @author Sean A. Irvine
  */
-public class A013933 implements Sequence {
+public class A013933 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

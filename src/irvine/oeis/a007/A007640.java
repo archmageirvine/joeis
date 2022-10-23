@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007640 Numbers k such that 2*k^2 - 2*k + 19 is composite.
  * @author Sean A. Irvine
  */
-public class A007640 implements Sequence {
+public class A007640 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

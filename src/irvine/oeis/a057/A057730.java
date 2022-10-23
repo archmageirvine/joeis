@@ -4,13 +4,13 @@ import irvine.math.lattice.Canons;
 import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057730 Number of polyominoes (A000105) with perimeter 2n.
  * @author Sean A. Irvine
  */
-public class A057730 implements Sequence {
+public class A057730 extends Sequence1 {
 
   private final long[] mPerimeterCounts = new long[1000];
   private int mLeastChange = 0;

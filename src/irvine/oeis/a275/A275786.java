@@ -3,13 +3,13 @@ package irvine.oeis.a275;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A275786 a(n) = Product_{d|n} T(d) where T(x) = x*(x+1)/2 = A000217(x) = x-th triangular number.
  * @author Georg Fischer
  */
-public class A275786 implements Sequence {
+public class A275786 extends Sequence1 {
 
   private int mN = 0;
 

@@ -3,6 +3,7 @@ package irvine.oeis.a229;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a000.A000203;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000203;
  * A229335 Sum of sums of elements of subsets of divisors of n.
  * @author Georg Fischer
  */
-public class A229335 implements Sequence {
+public class A229335 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA000203 = new A000203();

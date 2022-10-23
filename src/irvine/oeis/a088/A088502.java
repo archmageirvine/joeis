@@ -3,13 +3,14 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002328;
 
 /**
  * A088502 Numbers n such that (n^2 - 5)/4 is prime.
  * @author Georg Fischer
  */
-public class A088502 implements Sequence {
+public class A088502 extends Sequence1 {
 
   final Sequence mA002328 = new A002328();
   @Override

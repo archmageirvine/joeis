@@ -3,13 +3,13 @@ package irvine.oeis.a052;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052021 Sum of digits of n is the largest prime factor of n.
  * @author Sean A. Irvine
  */
-public class A052021 implements Sequence {
+public class A052021 extends Sequence1 {
 
   private long mN = 1;
 

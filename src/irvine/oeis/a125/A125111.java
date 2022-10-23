@@ -3,13 +3,14 @@ package irvine.oeis.a125;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a022.A022544;
 
 /**
  * A125111 Cubes which do not have a partition as the sum of 2 squares.
  * @author Georg Fischer
  */
-public class A125111 implements Sequence {
+public class A125111 extends Sequence1 {
 
   final Sequence mA022544 = new A022544();
   @Override

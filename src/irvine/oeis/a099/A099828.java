@@ -2,13 +2,13 @@ package irvine.oeis.a099;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A099828 Numerator of the generalized harmonic number H(n,5) = Sum_{k=1..n} 1/k^5.
  * @author Georg Fischer
  */
-public class A099828 implements Sequence {
+public class A099828 extends Sequence1 {
 
   private int mN = 0;
   private int mExpon; // exponent of k in the denominator

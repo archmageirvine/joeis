@@ -2,14 +2,14 @@ package irvine.oeis.a163;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A163127 a(1)=1. a(n) is the number of integers k, 1 &lt;= k &lt;= n-1, where gcd(a(k), n-k) &gt;= 2.
  * @author Sean A. Irvine
  */
-public class A163127 implements Sequence {
+public class A163127 extends Sequence1 {
 
   private final LongDynamicLongArray mSeq = new LongDynamicLongArray();
 

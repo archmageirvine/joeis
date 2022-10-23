@@ -3,13 +3,13 @@ package irvine.oeis.a064;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A064704 Numbers beginning and ending with their multiplicative digital root. 
  * @author Georg Fischer
  */
-public class A064704 implements Sequence {
+public class A064704 extends Sequence1 {
 
   protected long mN;
 

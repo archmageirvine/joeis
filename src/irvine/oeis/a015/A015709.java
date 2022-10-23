@@ -3,13 +3,13 @@ package irvine.oeis.a015;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015709 Composite n such that phi(n) * sigma(n) is one less than a square.
  * @author Sean A. Irvine
  */
-public class A015709 implements Sequence {
+public class A015709 extends Sequence1 {
 
   private Z mN = Z.FIVE;
 

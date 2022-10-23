@@ -1,13 +1,13 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A010784 Numbers with distinct decimal digits.
  * @author Sean A. Irvine
  */
-public class A010784 implements Sequence {
+public class A010784 extends Sequence1 {
 
   private long mN = -1;
 

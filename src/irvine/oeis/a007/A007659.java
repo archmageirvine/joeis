@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.factor.prime.Fast;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007659 Primes p such that Ramanujan number tau(p) is divisible by p.
  * @author Sean A. Irvine
  */
-public class A007659 implements Sequence {
+public class A007659 extends Sequence1 {
 
   // Too slow to be useful ...
 

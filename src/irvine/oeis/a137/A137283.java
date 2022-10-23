@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A137283 Palindromic primes consisting only of 3's and two 2's.
  * @author Sean A. Irvine
  */
-public class A137283 implements Sequence {
+public class A137283 extends Sequence1 {
 
   private final ArrayList<Z> mCache = new ArrayList<>();
 

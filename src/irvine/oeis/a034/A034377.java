@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034377 Squares that remain a square if a suitably chosen digit is dropped.
  * @author Sean A. Irvine
  */
-public class A034377 implements Sequence {
+public class A034377 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

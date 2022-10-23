@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037023 Triangle in which row n has the first n digits of sqrt(n) (rounded).
  * @author Sean A. Irvine
  */
-public class A037023 implements Sequence {
+public class A037023 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

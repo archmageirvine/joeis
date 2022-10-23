@@ -3,6 +3,7 @@ package irvine.oeis.a162;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000396;
 import irvine.oeis.a000.A000668;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000668;
  * A162385 Alternating sum from the n-th Mersenne prime up to the n-th perfect number.
  * @author Georg Fischer
  */
-public class A162385 implements Sequence {
+public class A162385 extends Sequence1 {
 
   final Sequence mA000396 = new A000396();
   final Sequence mA000668 = new A000668();

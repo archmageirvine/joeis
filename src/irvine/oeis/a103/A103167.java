@@ -2,13 +2,13 @@ package irvine.oeis.a103;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A103167 a(n) = 2^n mod reverse(2^n).
  * @author Georg Fischer
  */
-public class A103167 implements Sequence {
+public class A103167 extends Sequence1 {
 
   private int mN;
 

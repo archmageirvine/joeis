@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024447 Sum of the products of the primes taken 2 at a time from the first n primes.
  * @author Sean A. Irvine
  */
-public class A024447 implements Sequence {
+public class A024447 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mA = null;

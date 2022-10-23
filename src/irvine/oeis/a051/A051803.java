@@ -3,13 +3,13 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051803 Numbers with nonzero multiplicative digital root 1. 
  * @author Georg Fischer
  */
-public class A051803 implements Sequence {
+public class A051803 extends Sequence1 {
 
   protected Z mN;
   protected Z mParm;

@@ -1,13 +1,13 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A047210 Largest square modulo n.
  * @author Georg Fischer
  */
-public class A047210 implements Sequence {
+public class A047210 extends Sequence1 {
 
   protected int mExpon; // exponent
   protected int mN;

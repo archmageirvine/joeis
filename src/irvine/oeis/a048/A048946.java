@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048946 Numbers k such that the product of divisors of k is a fifth power.
  * @author Sean A. Irvine
  */
-public class A048946 implements Sequence {
+public class A048946 extends Sequence1 {
 
   // After Charles R Greathouse IV
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050686 Number of palindromes of length n and containing the digit 1 (or any other fixed nonzero digit).
  * @author Sean A. Irvine
  */
-public class A050686 implements Sequence {
+public class A050686 extends Sequence1 {
 
   private int mN = 1;
 

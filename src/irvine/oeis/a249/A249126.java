@@ -3,6 +3,7 @@ package irvine.oeis.a249;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a011.A011543;
 import irvine.oeis.a011.A011545;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a011.A011545;
  * A249126 Product of the first n digits of Pi (treated as a number) and the first n digits of e (treated as a number).
  * @author Georg Fischer
  */
-public class A249126 implements Sequence {
+public class A249126 extends Sequence1 {
 
   final Sequence mA011543 = new A011543();
   final Sequence mA011545 = new A011545();

@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046524 Number of coverings of Klein bottle with n lists.
  * @author Sean A. Irvine
  */
-public class A046524 implements Sequence {
+public class A046524 extends Sequence1 {
 
   private long mN = 0;
 

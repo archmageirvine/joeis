@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034181 Numbers n with property that rotating digits of n right gives kn - 1 for some k &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A034181 implements Sequence {
+public class A034181 extends Sequence1 {
 
   private long mN = 13;
   private long mMul = 10;

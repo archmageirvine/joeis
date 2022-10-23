@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001191 Digits of positive squares.
  * @author Sean A. Irvine
  */
-public class A001191 implements Sequence {
+public class A001191 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   private String mToDo = "";

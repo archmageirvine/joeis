@@ -4,13 +4,14 @@ package irvine.oeis.a074;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001221;
 
 /**
  * A074816 a(n) = 3^A001221(n) = 3^omega(n).
  * @author Georg Fischer
  */
-public class A074816 implements Sequence {
+public class A074816 extends Sequence1 {
 
   final Sequence mA001221 = new A001221();
   @Override

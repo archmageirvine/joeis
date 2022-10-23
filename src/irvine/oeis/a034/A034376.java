@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034376 Cubes with all digits even.
  * @author Sean A. Irvine
  */
-public class A034376 implements Sequence {
+public class A034376 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

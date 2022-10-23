@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002441 Squares written in base 8.
  * @author Sean A. Irvine
  */
-public class A002441 implements Sequence {
+public class A002441 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008508;
 
 /**
  * A053726 "Flag numbers": number of dots that can be arranged in successive rows of K, K-1, K, K-1, K, ..., K-1, K (assuming there is a total of L &gt; 1 rows of size K &gt; 1).
  * @author Georg Fischer
  */
-public class A053726 implements Sequence {
+public class A053726 extends Sequence1 {
 
   final Sequence mA008508 = new A008508();
   protected long mN;

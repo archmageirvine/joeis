@@ -5,13 +5,13 @@ import irvine.math.polynomial.QPolynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055379 16*a(n) gives theta series of the shadow of the 24-dimensional odd Leech lattice.
  * @author Sean A. Irvine
  */
-public class A055379 implements Sequence {
+public class A055379 extends Sequence1 {
 
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
   private static final Z Z16 = Z.valueOf(16);

@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046709 Irrational unitary phi amicable number: numbers b such that uphi(a) = uphi(b) = 2*(a^2-b^2)^(1/2) where uphi = A047994.
  * @author Sean A. Irvine
  */
-public class A046709 implements Sequence {
+public class A046709 extends Sequence1 {
 
   // Ordering of terms here unclear.
   // Perhaps always divisible by 2^4.3^2.5^2.7 ?

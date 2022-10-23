@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002021 Pile of coconuts problem: (n-1)(n^n - 1), n even; n^n - n + 1, n odd.
  * @author Sean A. Irvine
  */
-public class A002021 implements Sequence {
+public class A002021 extends Sequence1 {
 
   private int mN = 0;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a270;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a236.A236206;
 
 /**
  * A270299 Numbers which are representable as a sum of eleven but no fewer consecutive nonnegative integers.
  * @author Georg Fischer
  */
-public class A270299 implements Sequence {
+public class A270299 extends Sequence1 {
 
   final Sequence mA236206 = new A236206();
   @Override

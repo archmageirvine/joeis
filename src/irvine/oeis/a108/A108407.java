@@ -3,13 +3,14 @@ package irvine.oeis.a108;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a062.A062854;
 
 /**
  * A108407 Number of added unique known entries when going from the n X n to the (n+1) X (n+1) multiplication table.
  * @author Georg Fischer
  */
-public class A108407 implements Sequence {
+public class A108407 extends Sequence1 {
 
   final Sequence mA062854 = new A062854();
   protected long mN;

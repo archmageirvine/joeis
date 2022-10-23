@@ -2,13 +2,13 @@ package irvine.oeis.a029;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A029511 Numbers n such that n divides the (right) concatenation of all numbers &lt;= n written in base 18 (most significant digit on right).
  * @author Sean A. Irvine
  */
-public class A029511 implements Sequence {
+public class A029511 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   private Z mA = Z.ZERO;

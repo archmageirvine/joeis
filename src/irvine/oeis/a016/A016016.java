@@ -2,14 +2,14 @@ package irvine.oeis.a016;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A016016 Number of iterations of Reverse and Add which lead to a palindrome, or -1 if no palindrome is ever reached.
  * @author Sean A. Irvine
  */
-public class A016016 implements Sequence {
+public class A016016 extends Sequence1 {
 
   private long mN = 0;
 

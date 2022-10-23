@@ -3,13 +3,14 @@ package irvine.oeis.a074;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003617;
 
 /**
  * A074490 n-th power of the smallest n-digit prime.
  * @author Georg Fischer
  */
-public class A074490 implements Sequence {
+public class A074490 extends Sequence1 {
 
   final Sequence mA003617 = new A003617();
   protected long mN;

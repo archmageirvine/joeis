@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005244 A self-generating sequence: start with 2 and 3, take all products of any 2 previous elements, subtract 1 and adjoin them to the sequence.
  * @author Sean A. Irvine
  */
-public class A005244 implements Sequence {
+public class A005244 extends Sequence1 {
 
   private final HashSet<Z> mSet = new HashSet<>();
   private final ArrayList<Z> mA = new ArrayList<>();

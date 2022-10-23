@@ -3,13 +3,13 @@ package irvine.oeis.a045;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045412 a(1)=3; for n &gt; 1, a(n) = a(n-1) + 1 if n is already in the sequence, a(n) = a(n-1) + 3 otherwise.
  * @author Sean A. Irvine
  */
-public class A045412 implements Sequence {
+public class A045412 extends Sequence1 {
 
   private Z mN = Z.ONE;
   private Z mPrev = Z.THREE;

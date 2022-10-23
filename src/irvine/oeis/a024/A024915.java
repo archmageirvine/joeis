@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024915 Number of positions in which 2n semi-queens may be placed on an 2n X 2n toroidal board, with only one semi-queen attacking another semi-queen; also, number of interval method wirings for a cryptographic rotor of size 2n.
  * @author Sean A. Irvine
  */
-public class A024915 implements Sequence {
+public class A024915 extends Sequence1 {
 
   // A technique for doing this search is described at
   // http://web.archive.org/web/20041212165407/http://home.ecn.ab.ca/~jsavard/crypto/ro020302.htm

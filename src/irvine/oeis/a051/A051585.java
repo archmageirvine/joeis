@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051585 Number of integer-sided triangles of area 6n.
  * @author Sean A. Irvine
  */
-public class A051585 implements Sequence {
+public class A051585 extends Sequence1 {
 
   // After Charles R Greathouse IV
 

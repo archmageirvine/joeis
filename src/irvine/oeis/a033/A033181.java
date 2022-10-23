@@ -3,13 +3,13 @@ package irvine.oeis.a033;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033181 Absolute Euler pseudoprimes: odd composite numbers n such that a^((n-1)/2) == +-1 (mod n) for every a coprime to n.
  * @author Sean A. Irvine
  */
-public class A033181 implements Sequence {
+public class A033181 extends Sequence1 {
 
   private Z mN = Z.valueOf(1725);
 

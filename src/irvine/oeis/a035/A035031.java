@@ -2,13 +2,13 @@ package irvine.oeis.a035;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035031 For n &gt;= 6, max( prevprime(n), 2*prevprime(floor((n-1)/2))).
  * @author Sean A. Irvine
  */
-public class A035031 implements Sequence {
+public class A035031 extends Sequence1 {
 
   private static final Z[] SMALL = {null, Z.ONE, Z.TWO, Z.TWO, Z.THREE, Z.THREE};
   private final Fast mPrime = new Fast();

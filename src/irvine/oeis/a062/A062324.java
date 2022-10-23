@@ -3,13 +3,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a045.A045637;
 
 /**
  * A062324 p and p^2 + 4 are both prime.
  * @author Georg Fischer
  */
-public class A062324 implements Sequence {
+public class A062324 extends Sequence1 {
 
   final Sequence mA045637 = new A045637();
   @Override

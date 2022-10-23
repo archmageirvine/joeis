@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048612 Find smallest pair (x,y) such that x^2-y^2 = 11...1 (n times) = (10^n-1)/9; sequence gives value of y.
  * @author Sean A. Irvine
  */
-public class A048612 implements Sequence {
+public class A048612 extends Sequence1 {
 
   // After Chai Wah Wu
 

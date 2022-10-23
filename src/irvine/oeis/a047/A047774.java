@@ -2,14 +2,14 @@ package irvine.oeis.a047;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001764;
 
 /**
  * A047774 Number of dissectable polyhedra with symmetry of type C.
  * @author Sean A. Irvine
  */
-public class A047774 implements Sequence {
+public class A047774 extends Sequence1 {
 
   // This could de done without memory of the results, but this is easier
 

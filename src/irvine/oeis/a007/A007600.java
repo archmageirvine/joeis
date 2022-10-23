@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007600 Minimal number of subsets in a separating family for a set of n elements.
  * @author Sean A. Irvine
  */
-public class A007600 implements Sequence {
+public class A007600 extends Sequence1 {
 
   private long mN = 0;
 

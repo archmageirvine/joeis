@@ -3,6 +3,7 @@ package irvine.oeis.a227;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 import irvine.oeis.a051.A051027;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a051.A051027;
  * A227758 a(n) = sigma(sigma(n)) - sigma(n) - n, where sigma(n) = A000203(n) = sum of the divisors of n.
  * @author Georg Fischer
  */
-public class A227758 implements Sequence {
+public class A227758 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   final Sequence mA051027 = new A051027();

@@ -3,13 +3,13 @@ package irvine.oeis.a032;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032849 Numbers whose base-2 representation Sum_{i=0..m} d(i)*2^i has d(m) &lt;= d(m-1) &gt;= d(m-2) &lt;= ...
  * @author Sean A. Irvine
  */
-public class A032849 implements Sequence {
+public class A032849 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mLimit = Z.valueOf(base());

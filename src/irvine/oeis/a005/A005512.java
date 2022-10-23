@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005512 Number of series-reduced labeled trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A005512 implements Sequence {
+public class A005512 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

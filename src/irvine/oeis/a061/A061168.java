@@ -3,13 +3,14 @@ package irvine.oeis.a061;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001855;
 
 /**
  * A061168 Partial sums of floor(log_2(k)) (= A000523(k)).
  * @author Georg Fischer
  */
-public class A061168 implements Sequence {
+public class A061168 extends Sequence1 {
 
   final Sequence mA001855 = new A001855();
   protected long mN;

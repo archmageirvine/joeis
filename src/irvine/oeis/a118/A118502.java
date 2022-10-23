@@ -1,13 +1,13 @@
 package irvine.oeis.a118;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A118502 Numbers k that divide floor((4/3)^k).
  * @author Sean A. Irvine
  */
-public class A118502 implements Sequence {
+public class A118502 extends Sequence1 {
 
   private long mN = 0;
   private Z mNum = Z.ONE;

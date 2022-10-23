@@ -3,13 +3,14 @@ package irvine.oeis.a138;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000961;
 
 /**
  * A138929 Twice the prime powers A000961.
  * @author Georg Fischer
  */
-public class A138929 implements Sequence {
+public class A138929 extends Sequence1 {
 
   final Sequence mA000961 = new A000961();
   @Override

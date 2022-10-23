@@ -1,13 +1,13 @@
 package irvine.oeis.a094;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A094096 Min{m: n = Sum((m mod (1+k*L(n)!))*2^(k-1): 1&lt;=k&lt;=L(n))}, where L(n) = length of binary representation of n, cf. A070939, A000142.
  * @author Sean A. Irvine
  */
-public class A094096 implements Sequence {
+public class A094096 extends Sequence1 {
 
   private static final long[] FACTORIAL = new long[21];
   static {

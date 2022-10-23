@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054658 Primes beginning 1, 3, 7, 9 whose reversals are nonprimes.
  * @author Sean A. Irvine
  */
-public class A054658 implements Sequence {
+public class A054658 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.valueOf(17);

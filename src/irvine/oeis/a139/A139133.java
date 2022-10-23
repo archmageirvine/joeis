@@ -1,14 +1,14 @@
 package irvine.oeis.a139;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
  * A139133 A self-descriptive sequence: positions of consonants in "two, one, five, seven, nine, eleven, thirteen, fifteen, ...".
  * @author Sean A. Irvine
  */
-public class A139133 implements Sequence {
+public class A139133 extends Sequence1 {
 
   private final StringBuilder mBuilder = new StringBuilder();
   private int mPos = 0;

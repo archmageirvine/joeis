@@ -2,13 +2,13 @@ package irvine.oeis.a130;
 
 import irvine.math.z.Z;
 import irvine.oeis.SemiprimeSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A130827 Least k &gt;= 1 such that k^n+n is semiprime, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
-public class A130827 implements Sequence {
+public class A130827 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;

@@ -1,13 +1,13 @@
 package irvine.oeis.a039;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039501 Iterations of "n-&gt;n/2 if n even, n-&gt;3n-1 if n odd" (A001281) starting at these numbers reach 5.
  * @author Sean A. Irvine
  */
-public class A039501 implements Sequence {
+public class A039501 extends Sequence1 {
 
   private static final Z Z17 = Z.valueOf(17);
   private Z mN = Z.FOUR;

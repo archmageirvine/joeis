@@ -3,13 +3,13 @@ package irvine.oeis.a001;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001605 Indices of prime Fibonacci numbers.
  * @author Sean A. Irvine
  */
-public class A001605 implements Sequence {
+public class A001605 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 2;

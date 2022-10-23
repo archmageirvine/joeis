@@ -3,13 +3,14 @@ package irvine.oeis.a334;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001069;
 
 /**
  * A334789 a(n) = 2^log_2*(n) where log_2*(n) = A001069(n) is the number of log_2(log_2(...log_2(n))) iterations needed to reach &lt; 2.
  * @author Georg Fischer
  */
-public class A334789 implements Sequence {
+public class A334789 extends Sequence1 {
 
   final Sequence mA001069 = new A001069();
   @Override

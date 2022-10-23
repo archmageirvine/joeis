@@ -3,13 +3,14 @@ package irvine.oeis.a162;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001221;
 
 /**
  * A162641 Number of even exponents in canonical prime factorization of n.
  * @author Georg Fischer
  */
-public class A162641 implements Sequence {
+public class A162641 extends Sequence1 {
 
   final Sequence mA001221 = new A001221();
   final Sequence mA162642 = new A162642();

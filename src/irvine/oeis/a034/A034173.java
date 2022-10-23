@@ -5,13 +5,13 @@ import java.util.Arrays;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034173 a(n) is minimal such that prime factorizations of a(n), ..., a(n)+n-1 have same exponents.
  * @author Sean A. Irvine
  */
-public class A034173 implements Sequence {
+public class A034173 extends Sequence1 {
 
   private int mN = 0;
   private long mM = 0;

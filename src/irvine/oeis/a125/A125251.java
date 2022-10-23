@@ -3,12 +3,13 @@ package irvine.oeis.a125;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051779;
 /**
  * A125251 a(n)=sqrt(A051779(n+2)-1)/30.
  * @author Georg Fischer
  */
-public class A125251 implements Sequence {
+public class A125251 extends Sequence1 {
 
   private final Sequence mA051779 = new A051779();
   /** Construct the sequence. */

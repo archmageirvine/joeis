@@ -3,13 +3,14 @@ package irvine.oeis.a089;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a035.A035263;
 
 /**
  * A089608 a(n) = ((-1)^(n+1)*A002425(n)) modulo 6.
  * @author Georg Fischer
  */
-public class A089608 implements Sequence {
+public class A089608 extends Sequence1 {
 
   final Sequence mA035263 = new A035263();
   @Override

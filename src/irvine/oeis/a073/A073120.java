@@ -3,13 +3,13 @@ package irvine.oeis.a073;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A073120 Areas of Pythagorean (or right) triangles with integer sides of the form (2mn, m^2 - n^2, m^2 + n^2).
  * @author Sean A. Irvine
  */
-public class A073120 implements Sequence {
+public class A073120 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mN = Z.TWO;

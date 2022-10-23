@@ -3,6 +3,7 @@ package irvine.oeis.a305;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a024.A024675;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a024.A024675;
  * A305748 Distance of a prime number from the average of the next two consecutive prime numbers.
  * @author Georg Fischer
  */
-public class A305748 implements Sequence {
+public class A305748 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA024675 = new A024675();

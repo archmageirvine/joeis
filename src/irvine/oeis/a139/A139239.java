@@ -3,12 +3,13 @@ package irvine.oeis.a139;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A139239 First differences of Mersenne numbers A001348, divided by 2.
  * @author Georg Fischer
  */
-public class A139239 implements Sequence {
+public class A139239 extends Sequence1 {
 
   final Sequence mA139238 = new A139238();
   @Override

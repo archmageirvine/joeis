@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033809 Smallest m&gt;0 such that (2n-1)2^m+1 is prime, or -1 if no such value exists.
  * @author Sean A. Irvine
  */
-public class A033809 implements Sequence {
+public class A033809 extends Sequence1 {
 
   private long mN = -1;
 

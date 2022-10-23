@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020653 Denominators in a certain bijection from positive integers to positive rationals.
  * @author Sean A. Irvine
  */
-public class A020653 implements Sequence {
+public class A020653 extends Sequence1 {
 
   private long mN = 1;
   private long mM = 0;

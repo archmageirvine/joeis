@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000218 Take sum of squares of digits of previous term; start with 3.
  * @author Sean A. Irvine
  */
-public class A000218 implements Sequence {
+public class A000218 extends Sequence1 {
 
   private static final int[] PSEQ = {3, 9, 81, 65, 61};
   private static final int[] SEQ = {37, 58, 89, 145, 42, 20, 4, 16};

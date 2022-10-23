@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045811 In the list of divisors of n (in base 3), each digit 0-2 appears equally often.
  * @author Sean A. Irvine
  */
-public class A045811 implements Sequence {
+public class A045811 extends Sequence1 {
 
   private long mN = 0;
 

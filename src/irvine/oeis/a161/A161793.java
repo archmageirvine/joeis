@@ -1,13 +1,13 @@
 package irvine.oeis.a161;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A161793 If b(n) is the number of 0's in the binary representation of n, then the positive integer n is included if n = k^b(n), for some k = integer.
  * @author Sean A. Irvine
  */
-public class A161793 implements Sequence {
+public class A161793 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

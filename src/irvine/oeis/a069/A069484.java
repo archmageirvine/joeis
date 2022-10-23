@@ -3,12 +3,13 @@ package irvine.oeis.a069;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a048.A048851;
 /**
  * A069484 a(n) = prime(n+1)^2 + prime(n)^2.
  * @author Georg Fischer
  */
-public class A069484 implements Sequence {
+public class A069484 extends Sequence1 {
 
   private final Sequence mA048851 = new A048851();
   /** Construct the sequence. */

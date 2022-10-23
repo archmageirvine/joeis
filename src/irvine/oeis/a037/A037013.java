@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037013 Reading binary expansion from right to left, run lengths strictly decrease.
  * @author Sean A. Irvine
  */
-public class A037013 implements Sequence {
+public class A037013 extends Sequence1 {
 
   private long mN = -1;
 

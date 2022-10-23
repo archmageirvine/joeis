@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049010 Mean divisor of n differs by &lt;= 1 from mean divisor of all numbers from 1 to n-1.
  * @author Sean A. Irvine
  */
-public class A049010 implements Sequence {
+public class A049010 extends Sequence1 {
 
   private long mN = 1;
   private Z mSumSigma1 = Z.ONE;

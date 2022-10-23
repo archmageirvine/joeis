@@ -3,13 +3,13 @@ package irvine.oeis.a050;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050998 Inequivalent solutions to Langford (or Langford-Skolem) problem of arranging the numbers 1,1,2,2,3,3,...,n,n so that there is one number between the two 1's, two numbers between the two 2's, ..., n numbers between the two n's, listed by length and lexicographic order.
  * @author Sean A. Irvine
  */
-public class A050998 implements Sequence {
+public class A050998 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private int mStep = 1;

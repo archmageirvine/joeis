@@ -4,14 +4,14 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 
 /**
  * A002572 Number of partitions of 1 into n powers of 1/2; or (according to one definition of "binary") the number of binary rooted trees.
  * @author Sean A. Irvine
  */
-public class A002572 implements Sequence {
+public class A002572 extends Sequence1 {
 
   // Based on pari code by Joerg Arndt
   // Uses g.f. as given in the Elsholtz/Heuberger/Prodinger reference

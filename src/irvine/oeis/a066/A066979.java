@@ -1,13 +1,13 @@
 package irvine.oeis.a066;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A066979 a(n) = floor(n!/2^n).
  * @author Georg Fischer
  */
-public class A066979 implements Sequence {
+public class A066979 extends Sequence1 {
 
   private int mN = 0;
   private Z mFact = Z.ONE;

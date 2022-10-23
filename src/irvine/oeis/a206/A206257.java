@@ -3,13 +3,14 @@ package irvine.oeis.a206;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018844;
 
 /**
  * A206257 Values of S(1) such that any Mersenne prime with an odd exponent p divides S(p-2), where S(n) == S(n-1)^2 - 2 (mod M(p)).
  * @author Georg Fischer
  */
-public class A206257 implements Sequence {
+public class A206257 extends Sequence1 {
 
   final Sequence mA018844 = new A018844();
   @Override

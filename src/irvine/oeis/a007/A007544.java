@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007544 Frequency of n-th largest distance in N times N times N grid, N &gt; n.
  * @author Sean A. Irvine
  */
-public class A007544 implements Sequence {
+public class A007544 extends Sequence1 {
 
   // There is probably a formula for this.
 

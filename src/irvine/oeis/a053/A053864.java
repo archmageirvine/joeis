@@ -3,13 +3,13 @@ package irvine.oeis.a053;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053864 A second order generalization of the Mobius function of n.
  * @author Sean A. Irvine
  */
-public class A053864 implements Sequence {
+public class A053864 extends Sequence1 {
 
   private final int mK;
   private long mN = 0;

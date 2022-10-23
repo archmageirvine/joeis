@@ -5,13 +5,13 @@ import java.util.Arrays;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046734 Period of A000213 mod n.
  * @author Sean A. Irvine
  */
-public class A046734 implements Sequence {
+public class A046734 extends Sequence1 {
 
   // After Charles R Greathouse IV
 

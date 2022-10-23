@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003664 a(n) is smallest number larger than a(n-1) and not = a(j)+a(k), j&lt;k.
  * @author Sean A. Irvine
  */
-public class A003664 implements Sequence {
+public class A003664 extends Sequence1 {
 
   private long mN = 1;
 

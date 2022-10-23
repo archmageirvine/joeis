@@ -3,6 +3,7 @@ package irvine.oeis.a163;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a035.A035100;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a035.A035100;
  * A163293 a(n) = n-th prime minus (number of bits in binary expansion of n-th prime).
  * @author Georg Fischer
  */
-public class A163293 implements Sequence {
+public class A163293 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA035100 = new A035100();

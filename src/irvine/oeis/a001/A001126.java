@@ -3,13 +3,13 @@ package irvine.oeis.a001;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001126 Primes with 7 as smallest primitive root.
  * @author Sean A. Irvine
  */
-public class A001126 implements Sequence {
+public class A001126 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

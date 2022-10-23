@@ -3,6 +3,7 @@ package irvine.oeis.a048;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 import irvine.oeis.a001.A001221;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001221;
  * A048865 a(n) is the number of primes in the reduced residue system mod n.
  * @author Georg Fischer
  */
-public class A048865 implements Sequence {
+public class A048865 extends Sequence1 {
 
   final Sequence mA000720 = new A000720();
   final Sequence mA001221 = new A001221();

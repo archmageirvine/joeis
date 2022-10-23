@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050622 Numbers m that are divisible by 2^k, where k is the digit length of m.
  * @author Sean A. Irvine
  */
-public class A050622 implements Sequence {
+public class A050622 extends Sequence1 {
 
   // After Robert Israel
 

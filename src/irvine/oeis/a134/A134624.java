@@ -3,13 +3,13 @@ package irvine.oeis.a134;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A134624 a(1) = 1. a(n) = the smallest integer which is &gt; a(n-1) and is different from and not coprime to A134623(n-1).
  * @author Sean A. Irvine
  */
-public class A134624 implements Sequence {
+public class A134624 extends Sequence1 {
 
   private final TreeSet<Z> mA134624 = new TreeSet<>();
   private Z mA134623 = null;

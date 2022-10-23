@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002908 High temperature expansion of -u/J in odd powers of v = tanh(J/kT), where u is energy per site of the spin-1/2 Ising model on square lattice with nearest-neighbor interaction J at temperature T.
  * @author Sean A. Irvine
  */
-public class A002908 implements Sequence {
+public class A002908 extends Sequence1 {
 
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> NUM = RING.multiply(RING.monomial(Q.FOUR, 1), RING.oneMinusXToTheN(2));

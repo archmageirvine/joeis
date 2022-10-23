@@ -1,13 +1,13 @@
 package irvine.oeis.a026;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A026806 a(n) = number of numbers k such that only one partition of n has least part k.
  * @author Sean A. Irvine
  */
-public class A026806 implements Sequence {
+public class A026806 extends Sequence1 {
 
   private long mN = 0;
 

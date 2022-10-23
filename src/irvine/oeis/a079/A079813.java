@@ -3,13 +3,14 @@ package irvine.oeis.a079;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a118.A118175;
 
 /**
  * A079813 n 0's followed by n 1's.
  * @author Georg Fischer
  */
-public class A079813 implements Sequence {
+public class A079813 extends Sequence1 {
 
   final Sequence mA118175 = new A118175();
   @Override

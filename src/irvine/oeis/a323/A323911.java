@@ -3,13 +3,14 @@ package irvine.oeis.a323;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033879;
 
 /**
  * A323911 Sum of deficiency of n (A033879) and its Dirichlet inverse.
  * @author Georg Fischer
  */
-public class A323911 implements Sequence {
+public class A323911 extends Sequence1 {
 
   final Sequence mA033879 = new A033879();
   final Sequence mA323910 = new A323910();

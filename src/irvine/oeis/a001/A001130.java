@@ -4,13 +4,13 @@ import java.util.HashMap;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001130 Number of graphical basis partitions of 2n.
  * @author Sean A. Irvine
  */
-public class A001130 implements Sequence {
+public class A001130 extends Sequence1 {
 
   private long mN = 0;
 

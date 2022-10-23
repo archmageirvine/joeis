@@ -3,13 +3,14 @@ package irvine.oeis.a075;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046388;
 
 /**
  * A075819 Even squarefree numbers with exactly 3 prime factors.
  * @author Georg Fischer
  */
-public class A075819 implements Sequence {
+public class A075819 extends Sequence1 {
 
   final Sequence mA046388 = new A046388();
   @Override

@@ -3,6 +3,7 @@ package irvine.oeis.a160;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004709;
 import irvine.oeis.a005.A005117;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a005.A005117;
  * A160813 a(n) = n-th squarefree number plus n-th cubefree number.
  * @author Georg Fischer
  */
-public class A160813 implements Sequence {
+public class A160813 extends Sequence1 {
 
   final Sequence mA004709 = new A004709();
   final Sequence mA005117 = new A005117();

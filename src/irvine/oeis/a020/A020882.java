@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020882 Ordered hypotenuses (with multiplicity) of primitive Pythagorean triangles.
  * @author Sean A. Irvine
  */
-public class A020882 implements Sequence {
+public class A020882 extends Sequence1 {
 
   private long mC = 4;
   private long mB = 4;

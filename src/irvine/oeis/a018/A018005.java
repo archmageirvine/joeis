@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A018005 Smallest number whose cube has n digits.
  * @author Sean A. Irvine
  */
-public class A018005 implements Sequence {
+public class A018005 extends Sequence1 {
 
   private Z mN = null;
 

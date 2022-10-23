@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055265 a(n) is the smallest positive integer not already in the sequence such that a(n)+a(n-1) is prime, starting with a(1)=1.
  * @author Sean A. Irvine
  */
-public class A055265 implements Sequence {
+public class A055265 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final TreeSet<Z> mSeen = new TreeSet<>();

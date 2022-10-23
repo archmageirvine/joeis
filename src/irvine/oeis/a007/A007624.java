@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007624 Numbers m such that the product of proper divisors of m = m^k, k&gt;1.
  * @author Sean A. Irvine
  */
-public class A007624 implements Sequence {
+public class A007624 extends Sequence1 {
 
   private long mN = 11;
 

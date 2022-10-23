@@ -3,6 +3,7 @@ package irvine.oeis.a069;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007425;
 import irvine.oeis.a007.A007429;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007429;
  * A069913 a(n) = Sum_{d|n} (d-1)*tau(n/d).
  * @author Georg Fischer
  */
-public class A069913 implements Sequence {
+public class A069913 extends Sequence1 {
 
   final Sequence mA007425 = new A007425();
   final Sequence mA007429 = new A007429();

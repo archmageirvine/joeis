@@ -3,13 +3,13 @@ package irvine.oeis.a027;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027564 Numbers not of form abcd + abce + abde + acde + bcde for 1 &lt;= a &lt;= b &lt;= c &lt;= d &lt;= e.
  * @author Sean A. Irvine
  */
-public class A027564 implements Sequence {
+public class A027564 extends Sequence1 {
 
   // After Robert Israel
 

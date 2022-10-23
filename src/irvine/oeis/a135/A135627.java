@@ -3,13 +3,14 @@ package irvine.oeis.a135;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000396;
 
 /**
  * A135627 Perfect numbers minus 1.
  * @author Georg Fischer
  */
-public class A135627 implements Sequence {
+public class A135627 extends Sequence1 {
 
   final Sequence mA000396 = new A000396();
   @Override

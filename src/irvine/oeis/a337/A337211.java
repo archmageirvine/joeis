@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A337211 Numbers k such that b(k) &lt; b(j) for all j &lt; k where b(k) = Min_{sqrt(n) - Sum_{i} sqrt(c_i) &gt; 0 with c_i being unique integers}.
  * @author Sean A. Irvine
  */
-public class A337211 implements Sequence {
+public class A337211 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private CR mBest = CR.TWO;

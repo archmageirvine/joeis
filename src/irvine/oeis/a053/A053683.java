@@ -3,6 +3,7 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000879;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000879;
  * A053683 Number of nonprimes &lt;= prime(n)^2.
  * @author Georg Fischer
  */
-public class A053683 implements Sequence {
+public class A053683 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA000879 = new A000879();

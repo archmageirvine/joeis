@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055881 a(n) = largest m such that m! divides n.
  * @author Sean A. Irvine
  */
-public class A055881 implements Sequence {
+public class A055881 extends Sequence1 {
 
   private long mN = 0;
   private final long[] mFactorial = new long[20];

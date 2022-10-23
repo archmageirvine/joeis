@@ -1,13 +1,13 @@
 package irvine.oeis.a060;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A060030 If the numbers a(1)...a(n) contain a hole, then a(n+1) is the largest hole; otherwise a(n+1) = a(n-1) + a(n).
  * @author Sean A. Irvine
  */
-public class A060030 implements Sequence {
+public class A060030 extends Sequence1 {
 
   private static final long[] SMALL = {1, 2, 3, 5, 4, 9};
   private int mN = 0;

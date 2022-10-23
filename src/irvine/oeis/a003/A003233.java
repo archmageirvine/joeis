@@ -2,6 +2,7 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001950;
 import irvine.util.array.LongDynamicArray;
 
@@ -9,7 +10,7 @@ import irvine.util.array.LongDynamicArray;
  * A003233 Numbers k such that A003231(A001950(k)) = A001950(A003231(k)).
  * @author Sean A. Irvine
  */
-public class A003233 implements Sequence {
+public class A003233 extends Sequence1 {
 
   private final Sequence mA1950 = new A001950();
   private final Sequence mA3231 = new A003231();

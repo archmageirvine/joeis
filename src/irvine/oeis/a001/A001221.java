@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001221 Number of distinct primes dividing n (also called omega(n)).
  * @author Sean A. Irvine
  */
-public class A001221 implements Sequence {
+public class A001221 extends Sequence1 {
 
   protected long mN = 0;
 

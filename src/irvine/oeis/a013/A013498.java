@@ -2,13 +2,13 @@ package irvine.oeis.a013;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013498 Number of permutations in S_n with a certain property.
  * @author Sean A. Irvine
  */
-public class A013498 implements Sequence {
+public class A013498 extends Sequence1 {
 
   private long mN = 0;
 

@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicLongArray;
 
@@ -9,7 +9,7 @@ import irvine.util.array.DynamicLongArray;
  * A051242 Array T by antidiagonals; T(n,k)=k-th binary number d(1),...,d(j) for which exactly n digits d(i) satisfy d(i)=d(j+1-i) (n=0,1,2,...; k=1,2,3,..).
  * @author Sean A. Irvine
  */
-public class A051242 implements Sequence {
+public class A051242 extends Sequence1 {
 
   private DynamicArray<DynamicLongArray> mA = new DynamicArray<>();
   private int mN = -1;

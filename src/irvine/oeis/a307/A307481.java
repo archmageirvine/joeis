@@ -3,13 +3,13 @@ package irvine.oeis.a307;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A307481 Numbers that can be expressed as x+2y+z such that x, y, z, x+y, y+z, and x+2y+z are all positive squares.
  * @author Sean A. Irvine
  */
-public class A307481 implements Sequence {
+public class A307481 extends Sequence1 {
 
   private final TreeSet<Z> mS = new TreeSet<>();
   private Z mZ = Z.ZERO;

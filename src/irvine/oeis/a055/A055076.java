@@ -3,13 +3,14 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a162.A162642;
 
 /**
  * A055076 Multiplicity of Max{gcd(d, n/d)} when d runs over divisors of n.
  * @author Georg Fischer
  */
-public class A055076 implements Sequence {
+public class A055076 extends Sequence1 {
 
   final Sequence mA162642 = new A162642();
   @Override

@@ -2,13 +2,13 @@ package irvine.oeis.a035;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035119 Related to A045720 and A035101.
  * @author Sean A. Irvine
  */
-public class A035119 implements Sequence {
+public class A035119 extends Sequence1 {
 
   private int mN = 0;
   private Z mF = Z.TWO;

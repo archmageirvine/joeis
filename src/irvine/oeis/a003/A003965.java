@@ -5,14 +5,14 @@ import java.util.HashMap;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
  * A003965 Fully multiplicative with a(prime(k)) = Fibonacci(k+2).
  * @author Sean A. Irvine
  */
-public class A003965 implements Sequence {
+public class A003965 extends Sequence1 {
 
   private long mN = 0;
   private final HashMap<Z, Z> mPrimeToIndex = new HashMap<>();

@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049106 Ratio from A049102.
  * @author Sean A. Irvine
  */
-public class A049106 implements Sequence {
+public class A049106 extends Sequence1 {
 
   private long mN = 0;
 

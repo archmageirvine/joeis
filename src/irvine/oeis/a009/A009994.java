@@ -1,13 +1,13 @@
 package irvine.oeis.a009;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009994 Numbers with digits in nondecreasing order.
  * @author Sean A. Irvine
  */
-public class A009994 implements Sequence {
+public class A009994 extends Sequence1 {
 
   private long mN = -1;
 

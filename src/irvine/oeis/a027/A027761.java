@@ -3,13 +3,13 @@ package irvine.oeis.a027;
 import irvine.factor.prime.Fast;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027761 Numerator of sum_{p prime, p-1 divides 2*n} 1/p.
  * @author Sean A. Irvine
  */
-public class A027761 implements Sequence {
+public class A027761 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

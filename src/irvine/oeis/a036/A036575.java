@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036575 a(n) = least number not of form [ (a^2/n) ] + [ (b^2)/n ].
  * @author Sean A. Irvine
  */
-public class A036575 implements Sequence {
+public class A036575 extends Sequence1 {
 
   private long mN = 0;
 

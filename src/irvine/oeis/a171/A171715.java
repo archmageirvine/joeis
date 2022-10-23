@@ -3,6 +3,7 @@ package irvine.oeis.a171;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003627;
 import irvine.oeis.a007.A007645;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007645;
  * A171715 Absolute value of (n-th prime of form 3*m-1 minus n-th prime of form 3*k+1/2+-1/2).
  * @author Georg Fischer
  */
-public class A171715 implements Sequence {
+public class A171715 extends Sequence1 {
 
   final Sequence mA003627 = new A003627();
   final Sequence mA007645 = new A007645();

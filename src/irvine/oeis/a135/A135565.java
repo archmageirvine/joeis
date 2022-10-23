@@ -3,6 +3,7 @@ package irvine.oeis.a135;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007569;
 import irvine.oeis.a007.A007678;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007678;
  * A135565 Number of line segments in regular n-gon with all diagonals drawn.
  * @author Georg Fischer
  */
-public class A135565 implements Sequence {
+public class A135565 extends Sequence1 {
 
   final Sequence mA007569 = new A007569();
   final Sequence mA007678 = new A007678();

@@ -3,13 +3,14 @@ package irvine.oeis.a175;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000142;
 
 /**
  * A175985 a(1) = 1, for n &gt;= 2: a(n) = (a(n-1)+1)^(n-1) - 1.
  * @author Georg Fischer
  */
-public class A175985 implements Sequence {
+public class A175985 extends Sequence1 {
 
   final Sequence mA000142 = new A000142();
   @Override

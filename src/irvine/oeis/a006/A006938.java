@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006938 Convert the last term from decimal to binary!.
  * @author Sean A. Irvine
  */
-public class A006938 implements Sequence {
+public class A006938 extends Sequence1 {
 
   protected Z mA;
 

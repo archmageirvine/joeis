@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011760 Elevator buttons in U.S.A.: Positive integers except 13.
  * @author Sean A. Irvine
  */
-public class A011760 implements Sequence {
+public class A011760 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a072;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008837;
 
 /**
  * A072205 a(n) = (p^2 - p + 2)/2 for p = prime(n); number of squares modulo p^2.
  * @author Georg Fischer
  */
-public class A072205 implements Sequence {
+public class A072205 extends Sequence1 {
 
   final Sequence mA008837 = new A008837();
   @Override

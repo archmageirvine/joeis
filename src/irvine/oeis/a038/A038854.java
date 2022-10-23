@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038854 Numbers that are divisible by 10 and are differences between two cubes in at least one way.
  * @author Sean A. Irvine
  */
-public class A038854 implements Sequence {
+public class A038854 extends Sequence1 {
 
   private Z mN = Z.valueOf(1320);
 

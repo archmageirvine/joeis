@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046843 Numbers k such that k*2^k - k - 1 is prime.
  * @author Sean A. Irvine
  */
-public class A046843 implements Sequence {
+public class A046843 extends Sequence1 {
 
   private int mN = -1;
 

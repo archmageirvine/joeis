@@ -1,14 +1,14 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A014644 Form array starting with {1,1}; then i-th term in a row gives number of i's in next row; sequence is formed from final term in each row.
  * @author Sean A. Irvine
  */
-public class A014644 implements Sequence {
+public class A014644 extends Sequence1 {
 
   // This is only good for a few terms
 

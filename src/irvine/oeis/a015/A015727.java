@@ -3,13 +3,13 @@ package irvine.oeis.a015;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015727 Numbers n such that phi(n) * sigma(n) + 4 is a perfect square.
  * @author Sean A. Irvine
  */
-public class A015727 implements Sequence {
+public class A015727 extends Sequence1 {
 
   private Z mN = Z.SEVEN;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032663 Primes that are the smallest decimal concatenations of n with n + (0,1,2,3,...).
  * @author Sean A. Irvine
  */
-public class A032663 implements Sequence {
+public class A032663 extends Sequence1 {
 
   private long mN = -1;
 

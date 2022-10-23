@@ -3,13 +3,13 @@ package irvine.oeis.a145;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A145748 Numbers n such that phi(n+1)-phi(n)=sigma(n+1)-sigma(n).
  * @author Sean A. Irvine
  */
-public class A145748 implements Sequence {
+public class A145748 extends Sequence1 {
 
   private long mN = 1;
   private Z mPrevSigma = Z.ONE;

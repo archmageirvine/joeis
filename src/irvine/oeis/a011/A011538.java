@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011538 Numbers that contain an 8.
  * @author Sean A. Irvine
  */
-public class A011538 implements Sequence {
+public class A011538 extends Sequence1 {
 
   private long mN = 7;
 

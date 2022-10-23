@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034690 Sum of digits of all the divisors of n.
  * @author Sean A. Irvine
  */
-public class A034690 implements Sequence {
+public class A034690 extends Sequence1 {
 
   private long mN = 0;
 

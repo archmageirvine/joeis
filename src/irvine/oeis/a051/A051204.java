@@ -3,13 +3,13 @@ package irvine.oeis.a051;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051204 Nonnegative numbers of the form x^2-2^y.
  * @author Sean A. Irvine
  */
-public class A051204 implements Sequence {
+public class A051204 extends Sequence1 {
 
   // Uses a heuristic, but any failure will be (eventually) detected
 

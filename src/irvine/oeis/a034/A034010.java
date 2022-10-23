@@ -5,13 +5,13 @@ import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingCycler;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034010 Number of 2n-step self avoiding closed walks on square grid, restricted to a quadrant and passing through origin.
  * @author Sean A. Irvine
  */
-public class A034010 implements Sequence {
+public class A034010 extends Sequence1 {
 
   private int mN = 0;
   private final long mC = Lattices.Z2.neighbour(Lattices.Z2.origin(), 0);

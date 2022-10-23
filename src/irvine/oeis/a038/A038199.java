@@ -3,13 +3,13 @@ package irvine.oeis.a038;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038199 Row sums of triangle T(m,n) = number of solutions to 1 &lt;= a(1) &lt; a(2) &lt; ... &lt; a(m) &lt;= n, where gcd(a(1), a(2), ..., a(m), n) = 1, in A020921.
  * @author Sean A. Irvine
  */
-public class A038199 implements Sequence {
+public class A038199 extends Sequence1 {
 
   private int mN = 0;
 

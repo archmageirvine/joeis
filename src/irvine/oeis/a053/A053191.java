@@ -3,13 +3,14 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 
 /**
  * A053191 a(n) = n^2 * phi(n).
  * @author Georg Fischer
  */
-public class A053191 implements Sequence {
+public class A053191 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   protected long mN;

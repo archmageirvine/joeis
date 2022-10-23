@@ -3,13 +3,14 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a047.A047948;
 
 /**
  * A053070 Primes p such that p-6, p and p+6 are consecutive primes.
  * @author Georg Fischer
  */
-public class A053070 implements Sequence {
+public class A053070 extends Sequence1 {
 
   final Sequence mA047948 = new A047948();
   @Override

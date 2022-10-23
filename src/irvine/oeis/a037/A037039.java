@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037039 Least k such that 4*n*k+1 is a prime.
  * @author Sean A. Irvine
  */
-public class A037039 implements Sequence {
+public class A037039 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

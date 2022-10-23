@@ -3,13 +3,14 @@ package irvine.oeis.a322;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a285.A285329;
 
 /**
  * A322590 Lexicographically earliest such positive sequence a that a(i) = a(j) =&gt; A007947(i) = A007947(j) for all i, j.
  * @author Georg Fischer
  */
-public class A322590 implements Sequence {
+public class A322590 extends Sequence1 {
 
   final Sequence mA285329 = new A285329();
   @Override

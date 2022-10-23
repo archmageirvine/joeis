@@ -3,12 +3,13 @@ package irvine.oeis.a134;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a061.A061652;
 /**
  * A134710 a(n) = n-th even superperfect number divided by 2^n.
  * @author Georg Fischer
  */
-public class A134710 implements Sequence {
+public class A134710 extends Sequence1 {
 
   private final Sequence mA061652 = new A061652();
   protected long mN;

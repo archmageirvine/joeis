@@ -1,14 +1,14 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A003109 a(n) = number of special even permutations of 2*n+1.
  * @author Sean A. Irvine
  */
-public class A003109 implements Sequence {
+public class A003109 extends Sequence1 {
 
   // Cf. A006609 same code without need for determining even/odd
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));

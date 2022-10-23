@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 import irvine.factor.factor.Jaguar;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058268 An approximation to sigma_{1/2}(n): ceiling( sum_{d|n} sqrt(d) ).
  * @author Sean A. Irvine
  */
-public class A058268 implements Sequence {
+public class A058268 extends Sequence1 {
 
   private long mN = 0;
 

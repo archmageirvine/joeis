@@ -1,13 +1,13 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020462 Primes that contain digits 3 and 5 only.
  * @author Sean A. Irvine
  */
-public class A020462 implements Sequence {
+public class A020462 extends Sequence1 {
 
   private long mN = 0;
 

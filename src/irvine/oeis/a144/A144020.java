@@ -3,13 +3,14 @@ package irvine.oeis.a144;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000408;
 
 /**
  * A144020 Numbers of the form 1+i^2+j^2+k^2 with 1 &lt;= i &lt;= j &lt;= k.
  * @author Georg Fischer
  */
-public class A144020 implements Sequence {
+public class A144020 extends Sequence1 {
 
   final Sequence mA000408 = new A000408();
   @Override

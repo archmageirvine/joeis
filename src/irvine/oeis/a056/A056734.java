@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056734 Positive numbers k such that, in base 3, 2^k and 2^(k+1) have the same number of digits and the same number of 0's.
  * @author Sean A. Irvine
  */
-public class A056734 implements Sequence {
+public class A056734 extends Sequence1 {
 
   private Z mA = Z.TWO;
   private int[] mCnts = ZUtils.digitCounts(mA, 3);

@@ -4,13 +4,13 @@ import irvine.math.graph.CountIndependentSets;
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027683 Number of independent vertex sets of the n X n torus grid graph.
  * @author Sean A. Irvine
  */
-public class A027683 implements Sequence {
+public class A027683 extends Sequence1 {
 
   // This is only good for a small number of terms
 

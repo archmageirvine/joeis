@@ -5,13 +5,14 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003814;
 
 /**
  * A031399 Numbers n with no 4k+3 factors such that Pell equation x^2 - n y^2 = -1 insoluble.
  * @author Sean A. Irvine
  */
-public class A031399 implements Sequence {
+public class A031399 extends Sequence1 {
 
   private final Sequence mA = new ComplementSequence(new A003814(), Z.TWO);
 

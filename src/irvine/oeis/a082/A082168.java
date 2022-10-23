@@ -4,13 +4,14 @@ package irvine.oeis.a082;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006690;
 
 /**
  * A082168 A006690(n)/n^3.
  * @author Georg Fischer
  */
-public class A082168 implements Sequence {
+public class A082168 extends Sequence1 {
 
   final Sequence mA006690 = new A006690();
   protected long mN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027867 Primes of the form n^2 + (n+1)^2 + (n+2)^2 + (n+3)^2 + (n+4)^2 + (n+5)^2.
  * @author Sean A. Irvine
  */
-public class A027867 implements Sequence {
+public class A027867 extends Sequence1 {
 
   private Z mN = Z.ONE;
 

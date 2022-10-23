@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053578 Values of cototient function for A053577.
  * @author Sean A. Irvine
  */
-public class A053578 implements Sequence {
+public class A053578 extends Sequence1 {
 
   private long mN = 1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028918 (3n+1)!/(4*(3n-1)).
  * @author Sean A. Irvine
  */
-public class A028918 implements Sequence {
+public class A028918 extends Sequence1 {
 
   private Z mA = Z.THREE;
   private long mN = 0;

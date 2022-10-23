@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028437 Golc sequence in base 7. Left to right concatenation of n,int(log_7(n)),int(log_7(int(log_7(n)))),... in base7.
  * @author Sean A. Irvine
  */
-public class A028437 implements Sequence {
+public class A028437 extends Sequence1 {
 
   private static final CR BASE_LOG = CR.SEVEN.log();
   private long mN = 0;

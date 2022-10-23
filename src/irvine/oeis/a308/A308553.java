@@ -1,13 +1,13 @@
 package irvine.oeis.a308;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A308553 Numbers k such that 5^(k+3) + 3^(k+2) + 2^(k+1) + 1 is prime.
  * @author Sean A. Irvine
  */
-public class A308553 implements Sequence {
+public class A308553 extends Sequence1 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.THREE;

@@ -3,13 +3,14 @@ package irvine.oeis.a073;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001222;
 
 /**
  * A073093 Number of prime power divisors of n.
  * @author Georg Fischer
  */
-public class A073093 implements Sequence {
+public class A073093 extends Sequence1 {
 
   final Sequence mA001222 = new A001222();
   @Override

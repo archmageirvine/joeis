@@ -3,13 +3,14 @@ package irvine.oeis.a228;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000041;
 
 /**
  * A228816 Sum of all parts of all partitions of n that contain 1 as a part.
  * @author Georg Fischer
  */
-public class A228816 implements Sequence {
+public class A228816 extends Sequence1 {
 
   final Sequence mA000041 = new A000041();
   protected long mN;

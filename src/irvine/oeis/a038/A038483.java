@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038483 Sums of 4 distinct powers of 7.
  * @author Sean A. Irvine
  */
-public class A038483 implements Sequence {
+public class A038483 extends Sequence1 {
 
   private Z mN = null;
 

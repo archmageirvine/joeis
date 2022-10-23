@@ -3,13 +3,13 @@ package irvine.oeis.a019;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019507 Droll numbers: sum of even prime divisors equals sum of odd prime divisors.
  * @author Sean A. Irvine
  */
-public class A019507 implements Sequence {
+public class A019507 extends Sequence1 {
 
   private long mN = 70;
 

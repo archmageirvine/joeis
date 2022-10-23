@@ -3,13 +3,14 @@ package irvine.oeis.a308;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a193.A193346;
 
 /**
  * A308586 Number of (undirected) Hamiltonian paths on the n X n X n grid graph.
  * @author Georg Fischer
  */
-public class A308586 implements Sequence {
+public class A308586 extends Sequence1 {
 
   final Sequence mA193346 = new A193346();
   @Override

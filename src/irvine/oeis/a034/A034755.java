@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034755 Dirichlet convolution of 3^(n-1) with Catalan numbers.
  * @author Sean A. Irvine
  */
-public class A034755 implements Sequence {
+public class A034755 extends Sequence1 {
 
   private int mN = 0;
 

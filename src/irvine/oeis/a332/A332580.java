@@ -1,14 +1,14 @@
 package irvine.oeis.a332;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A332580 a(n) = minimal positive k such that the concatenation of the decimal digits of n,n+1,...,n+k is divisible by n+k+1, or -1 if no such k exists.
  * @author Sean A. Irvine
  */
-public class A332580 implements Sequence {
+public class A332580 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private long mN = -0;

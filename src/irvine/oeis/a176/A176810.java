@@ -3,13 +3,14 @@ package irvine.oeis.a176;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006512;
 
 /**
  * A176810 Semiprimes of the form 2 * (greater of twin primes).
  * @author Georg Fischer
  */
-public class A176810 implements Sequence {
+public class A176810 extends Sequence1 {
 
   final Sequence mA006512 = new A006512();
   @Override

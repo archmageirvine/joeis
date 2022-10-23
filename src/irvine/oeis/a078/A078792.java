@@ -10,13 +10,13 @@ import irvine.math.nauty.NautySet;
 import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A078792 Number of unlabeled 3-trees on n vertices.
  * @author Sean A. Irvine
  */
-public class A078792 implements Sequence {
+public class A078792 extends Sequence1 {
 
   // There might be a better way, I made this by accident while trying to make A00109
 

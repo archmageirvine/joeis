@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054437 Maximal subscripts within generalized Fibonacci sequence containing n.
  * @author Sean A. Irvine
  */
-public class A054437 implements Sequence {
+public class A054437 extends Sequence1 {
 
   private long mN = 0;
 

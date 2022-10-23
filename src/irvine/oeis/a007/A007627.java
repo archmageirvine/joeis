@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007627 Primitive modest numbers.
  * @author Sean A. Irvine
  */
-public class A007627 implements Sequence {
+public class A007627 extends Sequence1 {
 
   private long mN = 12;
 

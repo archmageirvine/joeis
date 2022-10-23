@@ -3,6 +3,7 @@ package irvine.oeis.a075;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002024;
 import irvine.oeis.a002.A002260;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002260;
  * A075363 Triangle read by rows, in which n-th row gives n smallest powers of n.
  * @author Georg Fischer
  */
-public class A075363 implements Sequence {
+public class A075363 extends Sequence1 {
 
   final Sequence mA002024 = new A002024();
   final Sequence mA002260 = new A002260();

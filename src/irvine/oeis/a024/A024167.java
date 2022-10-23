@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024167 a(n) = n!*(1 - 1/2 + 1/3 - ... + c/n), where c = (-1)^(n+1).
  * @author Sean A. Irvine
  */
-public class A024167 implements Sequence {
+public class A024167 extends Sequence1 {
 
   private long mN = 0;
   private Z mA = Z.ZERO;

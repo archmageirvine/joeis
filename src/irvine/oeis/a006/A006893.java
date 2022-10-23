@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006893 Smallest number whose representation requires n triangular numbers with greedy algorithm; also number of 1-2 rooted trees of height n.
  * @author Sean A. Irvine
  */
-public class A006893 implements Sequence {
+public class A006893 extends Sequence1 {
 
   private Z mA = null;
 

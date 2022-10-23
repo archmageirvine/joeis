@@ -3,13 +3,13 @@ package irvine.oeis.a027;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027839 Number of subgroups of index n in fundamental group of a certain fiber space.
  * @author Sean A. Irvine
  */
-public class A027839 implements Sequence {
+public class A027839 extends Sequence1 {
 
   private final MemorySequence mA = new A027837();
   private int mN = 0;

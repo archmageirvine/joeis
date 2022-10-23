@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import irvine.math.z.QuadraticCongruence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054465 Numbers k such that Sum_{j=1..k} d(j) is an integer where d(j) is the decimal fraction 0.2j (e.g., d(14) = 0.28).
  * @author Sean A. Irvine
  */
-public class A054465 implements Sequence {
+public class A054465 extends Sequence1 {
 
   private final ArrayList<Z> mA = new ArrayList<>();
   private int mN = 0;

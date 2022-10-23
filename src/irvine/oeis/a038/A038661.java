@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038661 First gap of n in sequence A038593 (lower terms).
  * @author Sean A. Irvine
  */
-public class A038661 implements Sequence {
+public class A038661 extends Sequence1 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A038593());
   private long mN = 0;

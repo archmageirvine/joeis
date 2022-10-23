@@ -3,13 +3,13 @@ package irvine.oeis.a039;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039766 Numbers k such that gcd(phi(k), k-1) = number of divisors of k.
  * @author Sean A. Irvine
  */
-public class A039766 implements Sequence {
+public class A039766 extends Sequence1 {
 
   private long mN = 0;
 

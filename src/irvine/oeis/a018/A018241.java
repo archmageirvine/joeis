@@ -3,13 +3,13 @@ package irvine.oeis.a018;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A018241 Number of simple allowable sequences on 1..n.
  * @author Sean A. Irvine
  */
-public class A018241 implements Sequence {
+public class A018241 extends Sequence1 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

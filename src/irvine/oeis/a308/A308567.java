@@ -3,13 +3,14 @@ package irvine.oeis.a308;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038698;
 
 /**
  * A308567 Consider the second least-significant bits of the first n prime numbers: a(n) equals the number of zeros minus the number of ones.
  * @author Georg Fischer
  */
-public class A308567 implements Sequence {
+public class A308567 extends Sequence1 {
 
   final Sequence mA038698 = new A038698();
   @Override

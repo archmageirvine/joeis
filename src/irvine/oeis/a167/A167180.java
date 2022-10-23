@@ -3,6 +3,7 @@ package irvine.oeis.a167;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 import irvine.oeis.a014.A014689;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a014.A014689;
  * A167180 a(n) = pi(n) plus the number of nonprimes less than prime(n).
  * @author Georg Fischer
  */
-public class A167180 implements Sequence {
+public class A167180 extends Sequence1 {
 
   final Sequence mA000720 = new A000720();
   final Sequence mA014689 = new A014689();

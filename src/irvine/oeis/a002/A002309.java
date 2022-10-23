@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002309 Sum of first n fourth powers of odd numbers.
  * @author Sean A. Irvine
  */
-public class A002309 implements Sequence {
+public class A002309 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

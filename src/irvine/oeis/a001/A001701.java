@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001701 Generalized Stirling numbers.
  * @author Sean A. Irvine
  */
-public class A001701 implements Sequence {
+public class A001701 extends Sequence1 {
 
   private long mN = 0;
 

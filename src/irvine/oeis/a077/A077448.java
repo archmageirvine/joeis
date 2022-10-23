@@ -3,13 +3,14 @@ package irvine.oeis.a077;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a030.A030229;
 
 /**
  * A077448 Numbers k such that Sum_{d|k} mu(d)*mu(k/d)^2 = +1.
  * @author Georg Fischer
  */
-public class A077448 implements Sequence {
+public class A077448 extends Sequence1 {
 
   final Sequence mA030229 = new A030229();
   @Override

@@ -3,13 +3,13 @@ package irvine.oeis.a001;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001245 Numbers that are the sum of 4 cubes in more than 1 way.
  * @author Sean A. Irvine
  */
-public class A001245 implements Sequence {
+public class A001245 extends Sequence1 {
 
   private final HashMap<Z, Integer> mCount = new HashMap<>();
   private long mN = 80;

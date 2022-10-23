@@ -1,13 +1,13 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A020459 Primes that contain digits 2 and 7 only.
  * @author Sean A. Irvine
  */
-public class A020459 implements Sequence {
+public class A020459 extends Sequence1 {
 
   private long mN = 0;
 

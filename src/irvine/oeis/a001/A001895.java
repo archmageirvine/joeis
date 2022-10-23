@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001895 Number of rooted planar 2-trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A001895 implements Sequence {
+public class A001895 extends Sequence1 {
 
   private static final Q EIGHTH = new Q(1, 8);
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);

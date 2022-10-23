@@ -3,6 +3,7 @@ package irvine.oeis.a297;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000010;
 import irvine.oeis.a000.A000203;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000203;
  * A297159 a(n) = 3*n - 2*phi(n) - sigma(n); Difference between the deficiency of n and its Moebius-transform.
  * @author Georg Fischer
  */
-public class A297159 implements Sequence {
+public class A297159 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA000203 = new A000203();

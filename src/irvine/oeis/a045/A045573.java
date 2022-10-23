@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045573 Still numbers when turned upside down (only uses digits 0125689, with no final 0's).
  * @author Sean A. Irvine
  */
-public class A045573 implements Sequence {
+public class A045573 extends Sequence1 {
 
   private static final char[] DIGITS = {'0', '1', '2', '5', '6', '8', '9'};
   private long mN = 0;

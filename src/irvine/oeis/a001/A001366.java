@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001366 Maximal number of unattacked squares with n queens on n X n board (answers for n &gt;= 17 only probable).
  * @author Sean A. Irvine
  */
-public class A001366 implements Sequence {
+public class A001366 extends Sequence1 {
 
   // This code uses a fairly simple backtracking approach.
   // Its only good for a few terms.

@@ -3,14 +3,14 @@ package irvine.oeis.a056;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A056710 Near-repdigit primes such that all digits are equal except for an end-digit.
  * @author Sean A. Irvine
  */
-public class A056710 implements Sequence {
+public class A056710 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private int mN = 1;

@@ -3,13 +3,14 @@ package irvine.oeis.a174;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007583;
 
 /**
  * A174736 Number of nodes with index 2^2k in a dyadic tree build alternatively with the schema "l" between the index 2^2k and 2^(2k+1) - 1, and the schema "^" between the index 2^(2k+1) and 2^(2k+2) - 1.
  * @author Georg Fischer
  */
-public class A174736 implements Sequence {
+public class A174736 extends Sequence1 {
 
   final Sequence mA007583 = new A007583();
   @Override

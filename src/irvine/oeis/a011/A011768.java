@@ -3,13 +3,13 @@ package irvine.oeis.a011;
 import irvine.math.LongUtils;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A011768 Number of Barlow packings that repeat after exactly n layers.
  * @author Sean A. Irvine
  */
-public class A011768 implements Sequence {
+public class A011768 extends Sequence1 {
 
   // After N. J. A. Sloane
 

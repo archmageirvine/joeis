@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059874 The lexicographically earliest sequence of binary encodings of solutions satisfying the equation p_i = (1+mod(i,2))*p_{i-1} +- p_{i-2} +- p_{i-3} +- ... +- 2 + 1, where p_i is the i-th prime number.
  * @author Sean A. Irvine
  */
-public class A059874 implements Sequence {
+public class A059874 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 1;

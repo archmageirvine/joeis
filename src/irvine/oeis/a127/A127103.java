@@ -2,13 +2,13 @@ package irvine.oeis.a127;
 // manually 2021-09-29
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A127103 Numbers n such that n^2 divides 3^n-1. 
  * @author Georg Fischer
  */
-public class A127103 implements Sequence {
+public class A127103 extends Sequence1 {
 
   protected int mN;
   protected int mParm1;

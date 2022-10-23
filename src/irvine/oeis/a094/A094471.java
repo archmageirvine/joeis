@@ -4,6 +4,7 @@ package irvine.oeis.a094;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a000.A000203;
 
@@ -11,7 +12,7 @@ import irvine.oeis.a000.A000203;
  * A094471 a(n) = n*tau(n) - sigma(n) = n*A000005(n) - A000203(n).
  * @author Georg Fischer
  */
-public class A094471 implements Sequence {
+public class A094471 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA000203 = new A000203();

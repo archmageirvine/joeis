@@ -3,13 +3,14 @@ package irvine.oeis.a092;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001043;
 
 /**
  * A092949 Numbers of the form prime(n+1) + prime(n) + 1.
  * @author Georg Fischer
  */
-public class A092949 implements Sequence {
+public class A092949 extends Sequence1 {
 
   final Sequence mA001043 = new A001043();
   @Override

@@ -2,6 +2,7 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000006;
 import irvine.oeis.a000.A000040;
 import irvine.util.array.LongDynamicArray;
@@ -10,7 +11,7 @@ import irvine.util.array.LongDynamicArray;
  * A056893 Smallest prime with square excess of n.
  * @author Sean A. Irvine
  */
-public class A056893 implements Sequence {
+public class A056893 extends Sequence1 {
 
   private final LongDynamicArray<Z> mSmallest = new LongDynamicArray<>();
   private final Sequence mA000006 = new A000006();

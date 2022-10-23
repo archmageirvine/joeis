@@ -6,14 +6,14 @@ import java.util.Map;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
  * A000644 Number of loops of length 4n on square grid that turn at each step and return to start in original direction.
  * @author Sean A. Irvine
  */
-public class A000644 implements Sequence {
+public class A000644 extends Sequence1 {
 
   private static final int N = 1;
   private static final int S = 2;

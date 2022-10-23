@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056744 a(n) is the smallest number which when written in binary contains as substrings the binary expansions of 1..n.
  * @author Sean A. Irvine
  */
-public class A056744 implements Sequence {
+public class A056744 extends Sequence1 {
 
   private int mN = 0;
   private int mBestLength = 0;

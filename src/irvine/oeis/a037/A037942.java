@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037942 Numbers of the form x^2 + y^2 with x &gt;= 0, y &gt;= 0, gcd(x,y)=1, with multiplicity.
  * @author Sean A. Irvine
  */
-public class A037942 implements Sequence {
+public class A037942 extends Sequence1 {
 
   private long mN = 0;
   private long mCount = 0;

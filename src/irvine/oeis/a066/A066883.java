@@ -3,13 +3,14 @@ package irvine.oeis.a066;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a054.A054272;
 /**
  * A066883 Number of primes in the interval [p(n), p(n)^2] minus p(n), where p(n) is the n-th prime.
  * @author Georg Fischer
  */
-public class A066883 implements Sequence {
+public class A066883 extends Sequence1 {
 
   private final Sequence mA000040 = new A000040();
   private final Sequence mA054272 = new A054272();

@@ -3,13 +3,14 @@ package irvine.oeis.a213;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003714;
 
 /**
  * A213540 Numbers k such that k AND k*2 = 2, where AND is the bitwise AND operator.
  * @author Georg Fischer
  */
-public class A213540 implements Sequence {
+public class A213540 extends Sequence1 {
 
   final Sequence mA003714 = new A003714();
   @Override

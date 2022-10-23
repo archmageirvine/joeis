@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034304 Nonprime; becomes prime if any digit is deleted (zeros not allowed in the number).
  * @author Sean A. Irvine
  */
-public class A034304 implements Sequence {
+public class A034304 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 21;

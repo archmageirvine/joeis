@@ -3,6 +3,7 @@ package irvine.oeis.a163;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a014.A014076;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a014.A014076;
  * A163504 a(n) = abs(n-th prime minus n-th odd nonprime).
  * @author Georg Fischer
  */
-public class A163504 implements Sequence {
+public class A163504 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA014076 = new A014076();

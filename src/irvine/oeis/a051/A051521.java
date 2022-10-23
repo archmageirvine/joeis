@@ -2,14 +2,14 @@ package irvine.oeis.a051;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
  * A051521 Number of ways to represent n as k/d(k), where d(k) = A000005(k) is the number of divisors of k.
  * @author Sean A. Irvine
  */
-public class A051521 implements Sequence {
+public class A051521 extends Sequence1 {
 
   private final LongDynamicIntArray mA = new LongDynamicIntArray();
   private long mN = 0;

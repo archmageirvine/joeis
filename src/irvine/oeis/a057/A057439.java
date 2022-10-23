@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 import irvine.util.string.StringUtils;
 
@@ -12,7 +12,7 @@ import irvine.util.string.StringUtils;
  * A057439 Values of S from sequence A007773.
  * @author Sean A. Irvine
  */
-public class A057439 implements Sequence {
+public class A057439 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final TreeSet<Long> mDone = new TreeSet<>();

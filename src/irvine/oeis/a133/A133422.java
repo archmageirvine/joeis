@@ -1,13 +1,13 @@
 package irvine.oeis.a133;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A133422 Number of steps to reach 1 under repeated applications of the "7x+1" map of A133421, or -1 if 1 is never reached.
  * @author Sean A. Irvine
  */
-public class A133422 implements Sequence {
+public class A133422 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

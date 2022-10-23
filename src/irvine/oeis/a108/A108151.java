@@ -1,13 +1,13 @@
 package irvine.oeis.a108;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A108151 a(n) = n^2 + 3*n + 1 if prime or 0 if composite.
  * @author Georg Fischer
  */
-public class A108151 implements Sequence {
+public class A108151 extends Sequence1 {
 
   private int mN = 0;
 

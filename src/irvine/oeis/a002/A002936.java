@@ -1,14 +1,14 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.UnimplementedException;
 
 /**
  * A002936 Solid partitions of n, distinct along rows.
  * @author Sean A. Irvine
  */
-public class A002936 implements Sequence { //}, MultidimensionalIntegerPartition.PartitionUser {
+public class A002936 extends Sequence1 { //}, MultidimensionalIntegerPartition.PartitionUser {
 
 //  private int mN = 0;
 //  private long mCount = 0;

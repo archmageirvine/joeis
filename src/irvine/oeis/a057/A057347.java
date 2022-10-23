@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057347 Leap years in the Islamic calendar starting year 1 AH (Anno Hegirae) = 622 CE (Common Era or AD). There are 11 leap years in a 30 year cycle.
  * @author Sean A. Irvine
  */
-public class A057347 implements Sequence {
+public class A057347 extends Sequence1 {
 
   private Z mN = Z.valueOf(-4);
 

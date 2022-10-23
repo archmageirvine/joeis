@@ -3,13 +3,14 @@ package irvine.oeis.a191;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a061.A061397;
 
 /**
  * A191558 a(n) = 0 if n prime, otherwise n.
  * @author Georg Fischer
  */
-public class A191558 implements Sequence {
+public class A191558 extends Sequence1 {
 
   final Sequence mA061397 = new A061397();
   protected long mN;

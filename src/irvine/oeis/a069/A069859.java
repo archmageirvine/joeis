@@ -3,6 +3,7 @@ package irvine.oeis.a069;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006530;
 import irvine.oeis.a020.A020639;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a020.A020639;
  * A069859 (Largest prime factor of n) modulo (smallest prime factor of n).
  * @author Georg Fischer
  */
-public class A069859 implements Sequence {
+public class A069859 extends Sequence1 {
 
   final Sequence mA006530 = new A006530();
   final Sequence mA020639 = new A020639();

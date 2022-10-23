@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001826 Number of divisors of n of the form 4k+1.
  * @author Sean A. Irvine
  */
-public class A001826 implements Sequence {
+public class A001826 extends Sequence1 {
 
   private long mN = 0;
 

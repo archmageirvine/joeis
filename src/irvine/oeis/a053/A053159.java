@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053159 Numbers n such that n+cototient(n) is a power of 2.
  * @author Sean A. Irvine
  */
-public class A053159 implements Sequence {
+public class A053159 extends Sequence1 {
 
   private long mN = 0;
 

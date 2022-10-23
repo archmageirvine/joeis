@@ -3,6 +3,7 @@ package irvine.oeis.a180;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 import irvine.oeis.a001.A001844;
 import irvine.oeis.a175.A175110;
@@ -11,7 +12,7 @@ import irvine.oeis.a175.A175110;
  * A180270 Integers of the form (k^12 - k^8 - k^4 + 1)/512.
  * @author Georg Fischer
  */
-public class A180270 implements Sequence {
+public class A180270 extends Sequence1 {
 
   final Sequence mA000217 = new A000217();
   final Sequence mA001844 = new A001844();

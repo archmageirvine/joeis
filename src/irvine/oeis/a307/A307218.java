@@ -1,13 +1,13 @@
 package irvine.oeis.a307;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A307218 Numbers x with k digits in base 2 (MSD(x)_2 = d_1, LSD(x)_2 = d_k) that are equal to the product of the positions of 1's (see examples and formula).
  * @author Sean A. Irvine
  */
-public class A307218 implements Sequence {
+public class A307218 extends Sequence1 {
 
   private long mN = 0;
 

@@ -5,13 +5,13 @@ import java.util.GregorianCalendar;
 import java.util.concurrent.TimeUnit;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A009734 Days in a one-month gym membership starting at n-th day of year [ days from Jan 01 to Feb 01, Jan 02 to Feb 02, ... ].
  * @author Sean A. Irvine
  */
-public class A009734 implements Sequence {
+public class A009734 extends Sequence1 {
 
   // Sequence does not specify if is a leap year
   // Also seems to start one day earlier than I would expect

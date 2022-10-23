@@ -1,13 +1,13 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049067 LaBar's conjecture (steps to return n to 1 after division by 3 and, if needed, multiplication by 2, addition of 1 or 2).
  * @author Sean A. Irvine
  */
-public class A049067 implements Sequence {
+public class A049067 extends Sequence1 {
 
   // Based on the program in the OEIS entry
 

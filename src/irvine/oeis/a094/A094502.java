@@ -3,12 +3,13 @@ package irvine.oeis.a094;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a048.A048947;
 /**
  * A094502 a(n) = A000203(A046528(n)): sigma of those numbers whose sigma is a power of 2, in order of appearance.
  * @author Georg Fischer
  */
-public class A094502 implements Sequence {
+public class A094502 extends Sequence1 {
 
   private final Sequence mA048947 = new A048947();
   @Override

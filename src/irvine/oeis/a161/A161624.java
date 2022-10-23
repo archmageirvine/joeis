@@ -3,6 +3,7 @@ package irvine.oeis.a161;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 import irvine.oeis.a034.A034953;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a034.A034953;
  * A161624 Sum of all numbers from n to n-th prime.
  * @author Georg Fischer
  */
-public class A161624 implements Sequence {
+public class A161624 extends Sequence1 {
 
   final Sequence mA000217 = new A000217();
   final Sequence mA034953 = new A034953();

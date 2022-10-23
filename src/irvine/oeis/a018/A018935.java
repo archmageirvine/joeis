@@ -2,13 +2,13 @@ package irvine.oeis.a018;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A018935 Consider smallest m such that m^2 = x1^2 + ... + xn^2 with 0 &lt; x1 &lt; ... &lt; xn. Sequence gives values of m.
  * @author Sean A. Irvine
  */
-public class A018935 implements Sequence {
+public class A018935 extends Sequence1 {
 
   private int mN = 0;
   private long mSumSquares;

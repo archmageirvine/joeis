@@ -3,14 +3,14 @@ package irvine.oeis.a056;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A056728 Palindromic primes using only two distinct digits and only the exterior digit is different.
  * @author Sean A. Irvine
  */
-public class A056728 implements Sequence {
+public class A056728 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private int mN = 0;

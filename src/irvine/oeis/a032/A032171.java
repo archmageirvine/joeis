@@ -6,13 +6,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032171 Number of rooted compound windmills (mobiles) of n nodes with no symmetries.
  * @author Sean A. Irvine
  */
-public class A032171 implements Sequence {
+public class A032171 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private Polynomial<Q> mA = RING.one();

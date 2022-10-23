@@ -3,6 +3,7 @@ package irvine.oeis.a228;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001511;
 import irvine.oeis.a006.A006519;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006519;
  * A228367 n-th element of the ruler function plus the highest power of 2 dividing n.
  * @author Georg Fischer
  */
-public class A228367 implements Sequence {
+public class A228367 extends Sequence1 {
 
   final Sequence mA001511 = new A001511();
   final Sequence mA006519 = new A006519();

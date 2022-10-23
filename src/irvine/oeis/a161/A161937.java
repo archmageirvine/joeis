@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A161937 The number of indirect isometries that are derangements of the (n-1)-dimensional facets of an n-cube.
  * E.g.f.: x*exp(-x) / (1 - 2*x)
  * @author Georg Fischer
  */
-public class A161937 implements Sequence {
+public class A161937 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

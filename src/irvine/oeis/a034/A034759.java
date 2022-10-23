@@ -3,14 +3,14 @@ package irvine.oeis.a034;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008578;
 
 /**
  * A034759 Dirichlet convolution of primes (with 1) with themselves.
  * @author Sean A. Irvine
  */
-public class A034759 implements Sequence {
+public class A034759 extends Sequence1 {
 
   private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A008578());
   private int mN = 0;

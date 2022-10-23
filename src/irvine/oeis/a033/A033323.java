@@ -4,13 +4,13 @@ import irvine.math.lattice.ExactContactsWalker;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033323 Configurations of linear chains in a square lattice.
  * @author Sean A. Irvine
  */
-public class A033323 implements Sequence {
+public class A033323 extends Sequence1 {
 
   private final SelfAvoidingWalker mWalker = new ExactContactsWalker(Lattices.Z2, 2);
   private final long mX1 = Lattices.Z2.toPoint(1, 0);

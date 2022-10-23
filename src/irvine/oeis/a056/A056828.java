@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001694;
 
 /**
  * A056828 Numbers that are not the sum of at most three powerful (1) numbers.
  * @author Sean A. Irvine
  */
-public class A056828 implements Sequence {
+public class A056828 extends Sequence1 {
 
   private final MemorySequence mPowerful = MemorySequence.cachedSequence(new A001694());
   private final TreeSet<Z> mA = new TreeSet<>();

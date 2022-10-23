@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057012 Number of conjugacy classes of subgroups of index 6 in free group of rank n.
  * @author Sean A. Irvine
  */
-public class A057012 implements Sequence {
+public class A057012 extends Sequence1 {
 
   private static final int[] BASES = {720, 120, 36, 24, 18, 16, 12, 9, 8, 6, 4, 3, 2};
   private static final int[] MULTS = {6, -6, -3, 6, 6, -6, 12, -3, 4, -3, -9, -3, 5};

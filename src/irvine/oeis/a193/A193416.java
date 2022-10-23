@@ -3,12 +3,13 @@ package irvine.oeis.a193;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007818;
 /**
  * A193416 Minimum surface area of polycubes with volume n.
  * @author Georg Fischer
  */
-public class A193416 implements Sequence {
+public class A193416 extends Sequence1 {
 
   private final Sequence mA007818 = new A007818();
   protected long mN;

@@ -3,13 +3,13 @@ package irvine.oeis.a015;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015799 phi(n) + 8 | sigma(n).
  * @author Sean A. Irvine
  */
-public class A015799 implements Sequence {
+public class A015799 extends Sequence1 {
 
   private long mN = 21;
 

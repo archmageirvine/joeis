@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049865 Number of iterations of unitary totient function (A047994) required to reach 1 from n.
  * @author Sean A. Irvine
  */
-public class A049865 implements Sequence {
+public class A049865 extends Sequence1 {
 
   protected long mN = 0;
 

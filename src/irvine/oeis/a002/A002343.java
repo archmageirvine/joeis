@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002343 Least positive integer y such that p=(x^2-5y^2)/4 where p is the n-th odd prime such that 5 is a square mod p.
  * @author Sean A. Irvine
  */
-public class A002343 implements Sequence {
+public class A002343 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

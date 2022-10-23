@@ -1,13 +1,13 @@
 package irvine.oeis.a308;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A308709 Start with 3, divide by 3, multiply by 2, multiply by 3, multiply by 2, repeat.
  * @author Georg Fischer
  */
-public class A308709 implements Sequence {
+public class A308709 extends Sequence1 {
 
   protected long mN; // current index
   protected int mState; // automaton state for flattening of while loops

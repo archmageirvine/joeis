@@ -3,13 +3,14 @@ package irvine.oeis.a079;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001248;
 
 /**
  * A079705 3p^2 where p runs through the primes.
  * @author Georg Fischer
  */
-public class A079705 implements Sequence {
+public class A079705 extends Sequence1 {
 
   final Sequence mA001248 = new A001248();
   @Override

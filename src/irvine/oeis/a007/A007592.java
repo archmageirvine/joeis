@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007592 Hyperperfect numbers: k = m*(sigma(k) - k - 1) + 1 for some m &gt; 1.
  * @author Sean A. Irvine
  */
-public class A007592 implements Sequence {
+public class A007592 extends Sequence1 {
 
   private long mN = 20;
 

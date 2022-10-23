@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037285 Replace n with concatenation of its nontrivial odd divisors.
  * @author Sean A. Irvine
  */
-public class A037285 implements Sequence {
+public class A037285 extends Sequence1 {
 
   private long mN = 0;
 

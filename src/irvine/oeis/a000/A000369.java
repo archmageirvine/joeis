@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000369 Triangle of numbers related to triangle A049213; generalization of Stirling numbers of second kind A008277, Bessel triangle A001497.
  * @author Sean A. Irvine
  */
-public class A000369 implements Sequence {
+public class A000369 extends Sequence1 {
 
   private int mRow = 1;
   private int mPos = 1;

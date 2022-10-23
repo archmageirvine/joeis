@@ -3,13 +3,14 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000961;
 
 /**
  * A056798 Prime powers with even nonnegative exponents.
  * @author Georg Fischer
  */
-public class A056798 implements Sequence {
+public class A056798 extends Sequence1 {
 
   final Sequence mA000961 = new A000961();
   @Override

@@ -3,13 +3,14 @@ package irvine.oeis.a086;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a022.A022328;
 import irvine.oeis.a022.A022329;
 /**
  * A086417 Sum of divisors of 3-smooth numbers.
  * @author Georg Fischer
  */
-public class A086417 implements Sequence {
+public class A086417 extends Sequence1 {
 
   private final Sequence mA022328 = new A022328();
   private final Sequence mA022329 = new A022329();

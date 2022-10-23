@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A031175 Shortest edge c of (measured by the longest edge) primitive Euler bricks (a, b, c, sqrt(a^2 + b^2), sqrt(b^2 + c^2), sqrt(a^2 + c^2) are integers).
  * @author Sean A. Irvine
  */
-public class A031175 implements Sequence {
+public class A031175 extends Sequence1 {
 
   private final TreeSet<Z> mC = new TreeSet<>();
   private long mN = 239;

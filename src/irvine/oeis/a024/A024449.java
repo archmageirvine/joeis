@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024449 4th elementary symmetric function of the first n+3 primes.
  * @author Sean A. Irvine
  */
-public class A024449 implements Sequence {
+public class A024449 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mSum = Z.ZERO;

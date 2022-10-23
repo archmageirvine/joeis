@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007594 Smallest n-hyperperfect number: m such that m=n(sigma(m)-m-1)+1; or 0 if no such number exists.
  * @author Sean A. Irvine
  */
-public class A007594 implements Sequence {
+public class A007594 extends Sequence1 {
 
   private long mN = 0;
 

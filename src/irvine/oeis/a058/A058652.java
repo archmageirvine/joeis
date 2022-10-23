@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058652 Squarefree n such that sigma(phi(n)) = phi(sigma(n)).
  * @author Sean A. Irvine
  */
-public class A058652 implements Sequence {
+public class A058652 extends Sequence1 {
 
   private long mN = 0;
 

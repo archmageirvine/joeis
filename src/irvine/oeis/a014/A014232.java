@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014232 Primes of form 3^m - 2.
  * @author Sean A. Irvine
  */
-public class A014232 implements Sequence {
+public class A014232 extends Sequence1 {
 
   private Z mT = Z.ONE;
 

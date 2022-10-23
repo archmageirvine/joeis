@@ -1,14 +1,14 @@
 package irvine.oeis.a161;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A161502 a(n) is the smallest number of binary digits that when appended to the right side of the binary representation of n, forms a binary palindrome.
  * @author Sean A. Irvine
  */
-public class A161502 implements Sequence {
+public class A161502 extends Sequence1 {
 
   private long mN = 0;
 

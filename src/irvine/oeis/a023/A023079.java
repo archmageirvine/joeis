@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023079 k and 2k are anagrams in base 9 (written in base 9).
  * @author Sean A. Irvine
  */
-public class A023079 implements Sequence {
+public class A023079 extends Sequence1 {
 
   private long mN = 0;
 

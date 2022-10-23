@@ -3,13 +3,14 @@ package irvine.oeis.a138;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001248;
 
 /**
  * A138693 Numbers of the form 110 + p^2. (where p is a prime).
  * @author Georg Fischer
  */
-public class A138693 implements Sequence {
+public class A138693 extends Sequence1 {
 
   final Sequence mA001248 = new A001248();
   @Override

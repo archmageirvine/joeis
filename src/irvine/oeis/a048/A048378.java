@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048378 Divisible by the concatenation of its first digit-differences (leading zeros allowed).
  * @author Sean A. Irvine
  */
-public class A048378 implements Sequence {
+public class A048378 extends Sequence1 {
 
   private long mN = 9;
 

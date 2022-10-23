@@ -3,6 +3,7 @@ package irvine.oeis.a202;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002618;
 import irvine.oeis.a008.A008966;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a008.A008966;
  * A202535 a(n) = n*phi(n)*abs( mobius(n) ).
  * @author Georg Fischer
  */
-public class A202535 implements Sequence {
+public class A202535 extends Sequence1 {
 
   final Sequence mA002618 = new A002618();
   final Sequence mA008966 = new A008966();

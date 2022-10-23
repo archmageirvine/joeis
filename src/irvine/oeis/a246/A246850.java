@@ -3,13 +3,14 @@ package irvine.oeis.a246;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a025.A025052;
 
 /**
  * A246850 Even numbers which cannot be represented by the surface area of an n1 X n2 X n3 block.
  * @author Georg Fischer
  */
-public class A246850 implements Sequence {
+public class A246850 extends Sequence1 {
 
   final Sequence mA025052 = new A025052();
   @Override

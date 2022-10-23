@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007569 Number of nodes in regular n-gon with all diagonals drawn.
  * @author Sean A. Irvine
  */
-public class A007569 implements Sequence {
+public class A007569 extends Sequence1 {
 
   // After T. D. Noe
 

@@ -3,13 +3,14 @@ package irvine.oeis.a136;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007530;
 
 /**
  * A136721 Prime quadruples: 3rd term.
  * @author Georg Fischer
  */
-public class A136721 implements Sequence {
+public class A136721 extends Sequence1 {
 
   final Sequence mA007530 = new A007530();
   @Override

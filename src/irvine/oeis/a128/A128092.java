@@ -3,13 +3,14 @@ package irvine.oeis.a128;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000799;
 
 /**
  * A128092 a(n) = largest multiple of n which is &lt;= 2^n.
  * @author Georg Fischer
  */
-public class A128092 implements Sequence {
+public class A128092 extends Sequence1 {
 
   final Sequence mA000799 = new A000799();
   protected long mN;

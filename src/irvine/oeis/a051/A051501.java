@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051501 Bertrand primes III: a(n+1) is the smallest prime &gt; 2^a(n).
  * @author Sean A. Irvine
  */
-public class A051501 implements Sequence {
+public class A051501 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mA = null;

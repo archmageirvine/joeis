@@ -5,14 +5,14 @@ import java.util.TreeSet;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A039999 Number of permutations of digits of n which yield distinct primes.
  * @author Sean A. Irvine
  */
-public class A039999 implements Sequence {
+public class A039999 extends Sequence1 {
 
   protected final Fast mPrime = new Fast();
   private long mN = 0;

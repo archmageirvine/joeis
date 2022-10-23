@@ -3,13 +3,14 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000188;
 
 /**
  * A057918 Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
  * @author Georg Fischer
  */
-public class A057918 implements Sequence {
+public class A057918 extends Sequence1 {
 
   final Sequence mA000188 = new A000188();
   @Override

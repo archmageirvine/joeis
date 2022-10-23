@@ -1,14 +1,14 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A057341 Occurrences of most frequently occurring number in 1-to-n 4-dimensional multiplication table.
  * @author Sean A. Irvine
  */
-public class A057341 implements Sequence {
+public class A057341 extends Sequence1 {
 
   private final LongDynamicLongArray mCounts = new LongDynamicLongArray();
   private long mMax = 0;

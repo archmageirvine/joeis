@@ -4,13 +4,13 @@ import irvine.math.Mobius;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057793 Integer nearest Riemann(10^n), where Riemann(x) = Sum of ( mu(k)/k * Integral Log( x^(1/k) ) for k = 1 to infinity.
  * @author Sean A. Irvine
  */
-public class A057793 implements Sequence {
+public class A057793 extends Sequence1 {
 
   private static final long HEURISTIC_TERMS = 120; // same as limit used in Mathematica code
   private Z mA = Z.ONE;

@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036345 Divisible by its 'even' sum of prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
-public class A036345 implements Sequence {
+public class A036345 extends Sequence1 {
 
   private long mN = 1;
 

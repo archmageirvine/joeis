@@ -4,13 +4,13 @@ package irvine.oeis.a333;
 import irvine.math.LongUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A333465 a(n) = Sum_{k=1..n} ceiling(n/k) * gcd(n,k).
  * @author Georg Fischer
  */
-public class A333465 implements Sequence {
+public class A333465 extends Sequence1 {
 
   private int mN = 0;
 

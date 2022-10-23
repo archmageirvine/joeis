@@ -4,13 +4,13 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008685 Lengths of months in the Gregorian calendar.
  * @author Sean A. Irvine
  */
-public class A008685 implements Sequence {
+public class A008685 extends Sequence1 {
 
   private int mYear = 2000;
   private int mMonth = 11;

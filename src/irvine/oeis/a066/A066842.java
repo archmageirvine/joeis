@@ -3,13 +3,13 @@ package irvine.oeis.a066;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A066842 a(n) = Product_{k|n} k^k; product is over the positive divisors, k, of n.
  * @author Georg Fischer
  */
-public class A066842 implements Sequence {
+public class A066842 extends Sequence1 {
 
   private int mN = 0;
 

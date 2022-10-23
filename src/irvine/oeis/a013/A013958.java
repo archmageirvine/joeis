@@ -2,13 +2,13 @@ package irvine.oeis.a013;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013958 a(n) = sigma_10(n), the sum of the 10th powers of the divisors of n.
  * @author Sean A. Irvine
  */
-public class A013958 implements Sequence {
+public class A013958 extends Sequence1 {
 
   private long mN = 0;
 

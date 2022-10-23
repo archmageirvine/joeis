@@ -3,13 +3,13 @@ package irvine.oeis.a024;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024425 [ max{S(n,m)/max{C(n-1,m-1)} ] for m = 1,2,...,n; S(n,m) are Stirling numbers of second kind.
  * @author Sean A. Irvine
  */
-public class A024425 implements Sequence {
+public class A024425 extends Sequence1 {
 
   private int mN = 0;
 

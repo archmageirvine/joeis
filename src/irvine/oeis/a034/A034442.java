@@ -6,13 +6,13 @@ import java.util.Collections;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034442 Arrange digits of primes in ascending order (omitting any that contain 0's), then sort list.
  * @author Sean A. Irvine
  */
-public class A034442 implements Sequence {
+public class A034442 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final ArrayList<Z> mA = new ArrayList<>();

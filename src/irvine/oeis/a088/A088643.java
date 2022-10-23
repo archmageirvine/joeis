@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A088643 Triangle read by rows: row n &gt;= 1 is obtained as follows. Start with n, next term is always largest number m with 1 &lt;= m &lt; n which has not yet appeared in that row and such that m + previous term in the row is a prime. Stop when no further m can be found.
  * @author Sean A. Irvine
  */
-public class A088643 implements Sequence {
+public class A088643 extends Sequence1 {
 
   private long mN = 0;
   private long mA = 1;

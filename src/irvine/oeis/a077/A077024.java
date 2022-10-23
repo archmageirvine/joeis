@@ -2,13 +2,13 @@ package irvine.oeis.a077;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A077024 a(n) = Sum_{k=1..n} floor(n/k + 1/2).
  * @author Georg Fischer
  */
-public class A077024 implements Sequence {
+public class A077024 extends Sequence1 {
 
   private int mN;
 

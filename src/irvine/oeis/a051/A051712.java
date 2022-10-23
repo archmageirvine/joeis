@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051712 Numerator of b(n)-b(n+1), where b(n) = n/((n+1)(n+2)) = A026741/A045896.
  * @author Sean A. Irvine
  */
-public class A051712 implements Sequence {
+public class A051712 extends Sequence1 {
 
   private long mN = 0;
 

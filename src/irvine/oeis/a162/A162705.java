@@ -3,14 +3,14 @@ package irvine.oeis.a162;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A162705 Numbers that are the sum of two reversed consecutive primes in more than one way.
  * @author Sean A. Irvine
  */
-public class A162705 implements Sequence {
+public class A162705 extends Sequence1 {
 
   private final LongDynamicByteArray mC = new LongDynamicByteArray();
   private final Fast mPrime = new Fast();

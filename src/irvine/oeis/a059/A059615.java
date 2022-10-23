@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059615 a(n) is the number of non-parallel lines determined by a pair of vertices (extreme points) in the polytope of real n X n doubly stochastic matrices. The vertices are the n! permutation matrices.
  * @author Sean A. Irvine
  */
-public class A059615 implements Sequence {
+public class A059615 extends Sequence1 {
 
   private int mN = 0;
 

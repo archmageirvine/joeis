@@ -4,13 +4,13 @@ import java.util.function.Function;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A321821 a(n) = Sum_{d|n, d==1 mod 4} d^5 - Sum_{d|n, d==3 mod 4} d^5.
  * @author Georg Fischer
  */
-public class A321821 implements Sequence {
+public class A321821 extends Sequence1 {
 
   protected int mK;
   protected Function<Integer, Z> mF;

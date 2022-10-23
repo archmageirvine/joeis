@@ -3,12 +3,13 @@ package irvine.oeis.a297;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a049.A049591;
 /**
  * A297150 Let b(k) denote A292081(k); the sequence lists numbers b(2n) where for all m &gt; n, b(2m) &gt; b(2n).
  * @author Georg Fischer
  */
-public class A297150 implements Sequence {
+public class A297150 extends Sequence1 {
 
   private final Sequence mA049591 = new A049591();
   @Override

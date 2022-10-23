@@ -5,13 +5,13 @@ import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002218 Number of unlabeled nonseparable graphs (or blocks) with n nodes.
  * @author Sean A. Irvine
  */
-public class A002218 implements Sequence {
+public class A002218 extends Sequence1 {
 
   // After Andrew Howroyd
 

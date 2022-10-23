@@ -3,13 +3,14 @@ package irvine.oeis.a060;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a036.A036690;
 
 /**
  * A060800 a(n) = p^2 + p + 1 where p runs through the primes.
  * @author Georg Fischer
  */
-public class A060800 implements Sequence {
+public class A060800 extends Sequence1 {
 
   final Sequence mA036690 = new A036690();
   @Override

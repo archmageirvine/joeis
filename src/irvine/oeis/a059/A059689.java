@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059689 List consisting of all functions from [1,2,3,...,n] into [1,2,3,...,n] for n=1,2,3,... (written out in full) in lexicographic order.
  * @author Sean A. Irvine
  */
-public class A059689 implements Sequence {
+public class A059689 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

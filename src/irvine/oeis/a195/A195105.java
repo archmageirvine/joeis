@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A195105 E.g.f.: sqrt(cos(x)^6 + sin(x)^6).
  * E.g.f.: sqrt(cos(x)^6 + sin(x)^6), even powers
  * @author Georg Fischer
  */
-public class A195105 implements Sequence {
+public class A195105 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

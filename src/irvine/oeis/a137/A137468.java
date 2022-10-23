@@ -1,13 +1,13 @@
 package irvine.oeis.a137;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A137468 Fifth powers whose digits are all odd.
  * @author Sean A. Irvine
  */
-public class A137468 implements Sequence {
+public class A137468 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private long mN = -1;

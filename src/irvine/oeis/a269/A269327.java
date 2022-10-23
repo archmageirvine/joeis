@@ -3,13 +3,14 @@ package irvine.oeis.a269;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
  * A269327 a(n) = 7^prime(n).
  * @author Georg Fischer
  */
-public class A269327 implements Sequence {
+public class A269327 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001476 Numbers that are not the sum of distinct positive cubes.
  * @author Sean A. Irvine
  */
-public class A001476 implements Sequence {
+public class A001476 extends Sequence1 {
 
   private int mN = 1;
   private final boolean[] mExpressible = new boolean[12759];

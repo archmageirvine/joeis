@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006601 Numbers k such that k, k+1, k+2 and k+3 have the same number of divisors.
  * @author Sean A. Irvine
  */
-public class A006601 implements Sequence {
+public class A006601 extends Sequence1 {
 
   private long mN = 1;
   protected final long[] mA;

@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054740 Cototient(n)/totient(n) when this is an integer.
  * @author Sean A. Irvine
  */
-public class A054740 implements Sequence {
+public class A054740 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,12 +3,13 @@ package irvine.oeis.a153;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a104.A104275;
 /**
  * A153045 Numbers k such that 2*k-11 is not a prime.
  * @author Georg Fischer
  */
-public class A153045 implements Sequence {
+public class A153045 extends Sequence1 {
 
   private final Sequence mA104275 = new A104275();
   /** Construct the sequence. */

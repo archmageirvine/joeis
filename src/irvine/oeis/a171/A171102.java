@@ -5,14 +5,14 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
  * A171102 Pandigital numbers: numbers containing the digits 0-9. Version 2: each digit appears at least once.
  * @author Sean A. Irvine
  */
-public class A171102 implements Sequence {
+public class A171102 extends Sequence1 {
 
   // Uses a permutation approach with increasing numbers of (extra) digits.
   // At any time, there can be more than one Permutation engine in play, with

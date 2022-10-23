@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049605 Smallest k&gt;1 such that k divides sigma(k*n).
  * @author Sean A. Irvine
  */
-public class A049605 implements Sequence {
+public class A049605 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

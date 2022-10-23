@@ -3,13 +3,14 @@ package irvine.oeis.a120;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a037.A037074;
 
 /**
  * A120875 Product of twin primes minus 1.
  * @author Georg Fischer
  */
-public class A120875 implements Sequence {
+public class A120875 extends Sequence1 {
 
   final Sequence mA037074 = new A037074();
   @Override

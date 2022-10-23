@@ -1,14 +1,14 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
  * A018890 Numbers whose smallest expression as a sum of positive cubes requires exactly 7 cubes.
  * @author Sean A. Irvine
  */
-public class A018890 implements Sequence {
+public class A018890 extends Sequence1 {
 
   // This sequence is known to be finite. In fact, last term is likely 8042.
 

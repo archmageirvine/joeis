@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007733 Period of binary representation of 1/n. Also, multiplicative order of 2 modulo the odd part of n (= A000265(n)).
  * @author Sean A. Irvine
  */
-public class A007733 implements Sequence {
+public class A007733 extends Sequence1 {
 
   protected long mN = 0;
 

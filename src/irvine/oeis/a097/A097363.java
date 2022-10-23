@@ -2,14 +2,14 @@ package irvine.oeis.a097;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A097363 Positive integers n such that 2n-13 is prime.
  *
  * @author Karsten Knuth
  */
-public class A097363 implements Sequence {
+public class A097363 extends Sequence1 {
 
     private final Fast mPrime = new Fast();
     private long mN = 0;

@@ -6,13 +6,13 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048249 Number of distinct values produced from sums and products of n unity arguments.
  * @author Sean A. Irvine
  */
-public class A048249 implements Sequence {
+public class A048249 extends Sequence1 {
 
   private final ArrayList<Set<Z>> mA = new ArrayList<>();
 

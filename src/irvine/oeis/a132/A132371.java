@@ -1,13 +1,13 @@
 package irvine.oeis.a132;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A132371 a(n) = n! - Sum_{j=1..n-1} j!.
  * @author Georg Fischer
  */
-public class A132371 implements Sequence {
+public class A132371 extends Sequence1 {
 
   private int mN;
   private Z mFact;

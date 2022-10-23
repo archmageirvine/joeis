@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005819 Number of words of length n in a certain language.
  * @author Sean A. Irvine
  */
-public class A005819 implements Sequence {
+public class A005819 extends Sequence1 {
 
   private long mN = 0;
 

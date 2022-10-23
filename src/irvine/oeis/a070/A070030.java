@@ -3,13 +3,14 @@ package irvine.oeis.a070;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a158.A158074;
 
 /**
  * A070030 Number of closed Knight's tours on a 3 X 2n board.
  * @author Georg Fischer
  */
-public class A070030 implements Sequence {
+public class A070030 extends Sequence1 {
 
   final Sequence mA158074 = new A158074();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014368 a(n) = bc, where n = C(b,2)+C(c,1), b&gt;c&gt;=0.
  * @author Sean A. Irvine
  */
-public class A014368 implements Sequence {
+public class A014368 extends Sequence1 {
 
   private long mN = 1;
   private long mM = 0;

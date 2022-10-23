@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003630 Inert rational primes in Q[sqrt(3)].
  * @author Sean A. Irvine
  */
-public class A003630 implements Sequence {
+public class A003630 extends Sequence1 {
 
   private Z mP = Z.THREE;
   private final Fast mPrime = new Fast();

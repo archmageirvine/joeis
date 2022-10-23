@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000127 Maximal number of regions obtained by joining n points around a circle by straight lines. Also number of regions in 4-space formed by n-1 hyperplanes.
  * @author Sean A. Irvine
  */
-public class A000127 implements Sequence {
+public class A000127 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

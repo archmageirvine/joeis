@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036412 Number of empty intervals when fractional_part(i*e) for i = 1, ..., n is plotted along [ 0, 1 ] subdivided into n equal regions.
  * @author Sean A. Irvine
  */
-public class A036412 implements Sequence {
+public class A036412 extends Sequence1 {
 
   private int mN = 0;
 

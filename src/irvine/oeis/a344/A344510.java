@@ -3,13 +3,14 @@ package irvine.oeis.a344;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018804;
 
 /**
  * A344510 a(n) = Sum_{k=1..n} k * gcd(k,n).
  * @author Georg Fischer
  */
-public class A344510 implements Sequence {
+public class A344510 extends Sequence1 {
 
   final Sequence mA018804 = new A018804();
   protected long mN;

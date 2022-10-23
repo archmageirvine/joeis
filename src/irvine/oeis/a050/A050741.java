@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050741 Numbers k such that the decimal expansion of k^2 contains no pair of consecutive equal digits.
  * @author Sean A. Irvine
  */
-public class A050741 implements Sequence {
+public class A050741 extends Sequence1 {
 
   private long mN = -1;
 

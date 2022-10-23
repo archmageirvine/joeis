@@ -3,13 +3,13 @@ package irvine.oeis.a038;
 import irvine.math.LongUtils;
 import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038540 a(n) = number of modules with n elements over the ring of integers in the real quadratic field of discriminant 40.
  * @author Sean A. Irvine
  */
-public class A038540 implements Sequence {
+public class A038540 extends Sequence1 {
 
   private final long mD;
   private int mN = 0;

@@ -1,13 +1,13 @@
 package irvine.oeis.a078;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A078273 Smallest multiple of n other than n using only the digits of n (no limit on frequency).
  * @author Sean A. Irvine
  */
-public class A078273 implements Sequence {
+public class A078273 extends Sequence1 {
 
   private long mN = 0;
 

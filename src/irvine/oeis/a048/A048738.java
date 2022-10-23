@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048738 Number of self-avoiding walks on square lattice rotated by Pi/4, with wedge angle Pi/2.
  * @author Sean A. Irvine
  */
-public class A048738 implements Sequence {
+public class A048738 extends Sequence1 {
 
   private int mN = 0;
   private final long mC = Lattices.Z2.neighbour(Lattices.Z2.origin(), 0);

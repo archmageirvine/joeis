@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002643 Numbers k such that (k^2 + k + 1)/19 is prime.
  * @author Sean A. Irvine
  */
-public class A002643 implements Sequence {
+public class A002643 extends Sequence1 {
 
   private Z mN = Z.SIX;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015943 (2^(2n)+n) mod (2n).
  * @author Sean A. Irvine
  */
-public class A015943 implements Sequence {
+public class A015943 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

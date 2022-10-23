@@ -4,13 +4,13 @@ package irvine.oeis.a056;
 import irvine.math.Mobius;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056275 Number of primitive (aperiodic) word structures of length n using a 4-ary alphabet.
  * @author Georg Fischer
  */
-public class A056275 implements Sequence {
+public class A056275 extends Sequence1 {
 
   private int mN = 0;
 

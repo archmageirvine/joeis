@@ -3,6 +3,7 @@ package irvine.oeis.a100;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000720;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000720;
  * A100486 a(n) = pi(n) + n-th prime, where pi(n) = A000720(n) is the prime counting function.
  * @author Georg Fischer
  */
-public class A100486 implements Sequence {
+public class A100486 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA000720 = new A000720();

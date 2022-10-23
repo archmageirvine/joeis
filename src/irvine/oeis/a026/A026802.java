@@ -2,13 +2,13 @@ package irvine.oeis.a026;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A026802 Number of partitions of n in which the least part is 9.
  * @author Sean A. Irvine
  */
-public class A026802 implements Sequence {
+public class A026802 extends Sequence1 {
 
   private int mN = -9;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a013;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013592 Orders of cyclotomic polynomials containing a coefficient the absolute value of which is &gt;= 4.
  * @author Sean A. Irvine
  */
-public class A013592 implements Sequence {
+public class A013592 extends Sequence1 {
 
   private int mN = 1364;
 

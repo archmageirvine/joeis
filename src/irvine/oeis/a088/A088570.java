@@ -3,13 +3,14 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000002;
 
 /**
  * A088570 Sum of terms in n-th block of Kolakoski sequence.
  * @author Georg Fischer
  */
-public class A088570 implements Sequence {
+public class A088570 extends Sequence1 {
 
   final Sequence mA000002 = new A000002();
   protected long mN;

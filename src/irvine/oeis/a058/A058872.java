@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058872 Number of 2-colored labeled graphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A058872 implements Sequence {
+public class A058872 extends Sequence1 {
 
   private int mN = -1;
 

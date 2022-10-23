@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058988 For a rational number p/q let f(p/q) = p*q divided by number of divisors of p+q; a(n) is obtained by iterating f, starting at n/1, until an integer is reached, or if no integer is ever reached then a(n) = 0.
  * @author Sean A. Irvine
  */
-public class A058988 implements Sequence {
+public class A058988 extends Sequence1 {
 
   private long mN = 0;
 

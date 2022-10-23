@@ -3,13 +3,14 @@ package irvine.oeis.a113;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005117;
 
 /**
  * A113852 Numbers whose prime factors are raised to the seventh power.
  * @author Georg Fischer
  */
-public class A113852 implements Sequence {
+public class A113852 extends Sequence1 {
 
   final Sequence mA005117 = new A005117();
   /** Construct the sequence. */

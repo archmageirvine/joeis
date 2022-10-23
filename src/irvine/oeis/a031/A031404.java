@@ -4,13 +4,13 @@ import java.util.List;
 
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A031404 Numbers k such that the continued fraction for sqrt(k) has even period 2*m and the m-th term of the periodic part is 1.
  * @author Sean A. Irvine
  */
-public class A031404 implements Sequence {
+public class A031404 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

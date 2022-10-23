@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048122 a(1) = 1, a(2) = 2, a(n) = a(n-1)^3 - a(n-2)^3.
  * @author Sean A. Irvine
  */
-public class A048122 implements Sequence {
+public class A048122 extends Sequence1 {
 
   private Z mA = null;
   private Z mB = null;

@@ -5,13 +5,13 @@ import java.util.HashSet;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036233 Inverse Colombian function.
  * @author Sean A. Irvine
  */
-public class A036233 implements Sequence {
+public class A036233 extends Sequence1 {
 
   private static final class State {
     private final HashSet<Long> mMembers = new HashSet<>();

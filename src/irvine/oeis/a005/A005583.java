@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005583 Coefficients of Chebyshev polynomials.
  * @author Sean A. Irvine
  */
-public class A005583 implements Sequence {
+public class A005583 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

@@ -1,14 +1,14 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A050430 Length of longest palindromic subword of (n base 2).
  * @author Sean A. Irvine
  */
-public class A050430 implements Sequence {
+public class A050430 extends Sequence1 {
 
   private long mN = 0;
 

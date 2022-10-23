@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A175753 Numbers with 46 divisors.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class A175753 implements Sequence {
+public class A175753 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final Fast mPrime = new Fast();

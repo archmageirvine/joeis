@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054784 Integers n such that sigma(2n) - sigma(n) is a power of 2, where sigma is the sum of the divisors of n.
  * @author Sean A. Irvine
  */
-public class A054784 implements Sequence {
+public class A054784 extends Sequence1 {
 
   private long mN = 0;
 

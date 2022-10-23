@@ -3,13 +3,14 @@ package irvine.oeis.a071;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003136;
 
 /**
  * A071336 Number of vertices of Goldberg-Casper-Klug pseudo-icosahedra.
  * @author Georg Fischer
  */
-public class A071336 implements Sequence {
+public class A071336 extends Sequence1 {
 
   final Sequence mA003136 = new A003136();
   /** Construct the sequence. */

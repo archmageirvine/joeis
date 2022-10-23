@@ -5,13 +5,13 @@ import irvine.math.LongUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005036 Number of nonequivalent dissections of a polygon into n quadrilaterals by nonintersecting diagonals up to rotation and reflection.
  * @author Sean A. Irvine
  */
-public class A005036 implements Sequence {
+public class A005036 extends Sequence1 {
 
   private int mN = 0;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003991 Multiplication table read by antidiagonals: T(i,j) = i*j, i&gt;=1, j&gt;=1.
  * @author Sean A. Irvine
  */
-public class A003991 implements Sequence {
+public class A003991 extends Sequence1 {
 
   private long mRow = 0;
   private long mCol = 0;

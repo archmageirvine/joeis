@@ -3,13 +3,14 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000111;
 
 /**
  * A065619 Expansion of e.g.f. x * (tan(x) + sec(x)).
  * @author Georg Fischer
  */
-public class A065619 implements Sequence {
+public class A065619 extends Sequence1 {
 
   final Sequence mA000111 = new A000111();
   protected long mN;

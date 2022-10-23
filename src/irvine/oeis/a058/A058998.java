@@ -2,14 +2,14 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A058998 Least exponent k for which n^k reversed (leading zeros are not allowed) is a prime, or 0 if impossible.
  * @author Sean A. Irvine
  */
-public class A058998 implements Sequence {
+public class A058998 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private long mN = 0;

@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003621 Number of iterations until n reaches 1 or 4 under x goes to sum of squares of digits map.
  * @author Sean A. Irvine
  */
-public class A003621 implements Sequence {
+public class A003621 extends Sequence1 {
 
   private static final long[] DIGIT_SQUARES = {0, 1, 4, 9, 16, 25, 36, 49, 64, 81};
   private long mN = 0;

@@ -2,7 +2,7 @@ package irvine.oeis.a073;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A073675 Rearrangement of natural numbers such that a(n) is the smallest proper divisor of n not included earlier but if no such divisor exists then a(n) is the smallest proper multiple of n not included earlier, subject always to the condition that a(n) is not equal to n.
@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  * If valuation(n, 2) is even, a(n) = 2n; otherwise a(n)=n/2.
  * @author Georg Fischer
  */
-public class A073675 implements Sequence {
+public class A073675 extends Sequence1 {
 
   private int mN;
 

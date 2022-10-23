@@ -6,13 +6,13 @@ import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005889 Theta series of hexagonal close-packing with respect to triangle between octahedra.
  * @author Sean A. Irvine
  */
-public class A005889 implements Sequence {
+public class A005889 extends Sequence1 {
 
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
   private static final Q TWO_THIRDS = new Q(2, 3);

@@ -2,13 +2,13 @@ package irvine.oeis.a039;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039951 a(n) is the smallest prime p such that p^2 divides n^(p-1) - 1.
  * @author Sean A. Irvine
  */
-public class A039951 implements Sequence {
+public class A039951 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mN = Z.ZERO;

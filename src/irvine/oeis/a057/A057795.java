@@ -3,13 +3,13 @@ package irvine.oeis.a057;
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057795 Sum k!, where sum is over positive integers k &lt;= n with gcd(k,n) = 1.
  * @author Sean A. Irvine
  */
-public class A057795 implements Sequence {
+public class A057795 extends Sequence1 {
 
   private int mN = 0;
 

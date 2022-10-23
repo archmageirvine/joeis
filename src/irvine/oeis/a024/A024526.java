@@ -2,14 +2,14 @@ package irvine.oeis.a024;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008578;
 
 /**
  * A024526 a(n) = Sum_{0 &lt;= i &lt; j &lt;= n} (prime(j) - prime(i))^2, where prime(0) = 1.
  * @author Sean A. Irvine
  */
-public class A024526 implements Sequence {
+public class A024526 extends Sequence1 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A008578());
   private Z mSum = Z.ZERO;

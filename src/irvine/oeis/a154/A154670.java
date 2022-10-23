@@ -3,12 +3,13 @@ package irvine.oeis.a154;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a037.A037073;
 /**
  * A154670 Averages of twin prime pairs k such that k*2 and k/2 are squares.
  * @author Georg Fischer
  */
-public class A154670 implements Sequence {
+public class A154670 extends Sequence1 {
 
   private final Sequence mA037073 = new A037073();
   @Override

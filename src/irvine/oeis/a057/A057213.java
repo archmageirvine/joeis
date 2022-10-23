@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057213 Second term of continued fraction for exp(n).
  * @author Sean A. Irvine
  */
-public class A057213 implements Sequence {
+public class A057213 extends Sequence1 {
 
   private long mN = 0;
 

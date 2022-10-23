@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055779 Number of fat trees on n labeled vertices.
  * @author Sean A. Irvine
  */
-public class A055779 implements Sequence {
+public class A055779 extends Sequence1 {
 
   private int mN = 0;
 

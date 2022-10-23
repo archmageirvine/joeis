@@ -3,14 +3,14 @@ package irvine.oeis.a284;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A284116 a(n) = largest number of distinct words arising in Post's tag system {00, 1101} applied to a binary word w, over all starting words w of length n, or a(n) = -1 if there is a word w with an unbounded trajectory.
  * @author Sean A. Irvine
  */
-public class A284116 implements Sequence {
+public class A284116 extends Sequence1 {
 
   private int mN = 0;
 

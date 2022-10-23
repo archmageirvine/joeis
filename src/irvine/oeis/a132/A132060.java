@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A132060 Row sums of triangle A132056 (S2(8), Stirling2 generalization).
  * E.g.f.: exp(-1+(1-7*x)^(-1/7)) - 1
  * @author Georg Fischer
  */
-public class A132060 implements Sequence {
+public class A132060 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

@@ -5,14 +5,14 @@ import java.util.Collections;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.Roman;
 
 /**
  * A003588 Roman numerals with 1 letter, in alphabetical order; then those with 2 letters, etc.
  * @author Sean A. Irvine
  */
-public class A003588 implements Sequence {
+public class A003588 extends Sequence1 {
 
   private final List<String> mRoman = new ArrayList<>();
   private int mDigits = 0;

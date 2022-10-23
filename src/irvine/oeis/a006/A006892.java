@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006892 Representation as a sum of squares requires n squares with greedy algorithm.
  * @author Sean A. Irvine
  */
-public class A006892 implements Sequence {
+public class A006892 extends Sequence1 {
 
   private long mN = 0;
   private Z mA = Z.THREE;

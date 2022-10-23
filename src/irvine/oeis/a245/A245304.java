@@ -3,13 +3,14 @@ package irvine.oeis.a245;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a022.A022006;
 
 /**
  * A245304 Numbers m such that m+1, m+3, m+7, m+9 and m+13 are all primes.
  * @author Georg Fischer
  */
-public class A245304 implements Sequence {
+public class A245304 extends Sequence1 {
 
   final Sequence mA022006 = new A022006();
   @Override

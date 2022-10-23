@@ -2,13 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004082 Numbers k such that sin(k-1) &lt;= 0 and sin(k) &gt; 0.
  * @author Sean A. Irvine
  */
-public class A004082 implements Sequence {
+public class A004082 extends Sequence1 {
 
   private long mN = 0;
 

@@ -3,6 +3,7 @@ package irvine.oeis.a173;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002822;
 import irvine.oeis.a008.A008578;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a008.A008578;
  * A173386 The absolute values of n-th natural noncomposite number minus n-th number k such that 6*k-+1 is a twin prime pair.
  * @author Georg Fischer
  */
-public class A173386 implements Sequence {
+public class A173386 extends Sequence1 {
 
   final Sequence mA002822 = new A002822();
   final Sequence mA008578 = new A008578();

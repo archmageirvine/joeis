@@ -3,13 +3,14 @@ package irvine.oeis.a240;
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014664;
 
 /**
  * A240657 Least k such that 2^k == -1 (mod prime(n)), or 0 if no such k exists.
  * @author Georg Fischer
  */
-public class A240657 implements Sequence {
+public class A240657 extends Sequence1 {
 
   private int mN;
   private Sequence mSeq;

@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002647 Sextan primes: p = (x^6 + y^6 )/(x^2 + y^2 ).
  * @author Sean A. Irvine
  */
-public class A002647 implements Sequence {
+public class A002647 extends Sequence1 {
 
   private final TreeSet<Z> mP = new TreeSet<>();
   private Z mX = Z.ZERO;

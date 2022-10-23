@@ -6,13 +6,13 @@ import java.util.LinkedList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059095 List consisting of the representation of n in base 3 using digits -1, 0, 1.
  * @author Sean A. Irvine
  */
-public class A059095 implements Sequence {
+public class A059095 extends Sequence1 {
 
   private final LinkedList<Integer> mA = new LinkedList<>();
   private long mN = 0;

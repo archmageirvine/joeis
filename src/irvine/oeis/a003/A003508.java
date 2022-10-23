@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003508 a(1) = 1; for n&gt;1, a(n) = a(n-1) + 1 + sum of distinct prime factors of a(n-1) that are &lt; a(n-1).
  * @author Sean A. Irvine
  */
-public class A003508 implements Sequence {
+public class A003508 extends Sequence1 {
 
   private Z mA = null;
 

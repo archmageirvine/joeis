@@ -3,6 +3,7 @@ package irvine.oeis.a268;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a007.A007652;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007652;
  * A268185 a(n) = prime(n) + last digit of prime(n).
  * @author Georg Fischer
  */
-public class A268185 implements Sequence {
+public class A268185 extends Sequence1 {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA007652 = new A007652();

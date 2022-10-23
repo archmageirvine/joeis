@@ -3,13 +3,13 @@ package irvine.oeis.a024;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A024424 a(n) = greatest residue of S(n,m) mod C(n-1,m-1), for m = 1,2,...,n; S(n,m) are Stirling numbers of second kind.
  * @author Sean A. Irvine
  */
-public class A024424 implements Sequence {
+public class A024424 extends Sequence1 {
 
   private int mN = 0;
 

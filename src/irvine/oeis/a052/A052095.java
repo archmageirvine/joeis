@@ -3,13 +3,13 @@ package irvine.oeis.a052;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A052095 a(n)^2 is a square whose decimal expansion digits occur with an exact frequency of 3.
  * @author Sean A. Irvine
  */
-public class A052095 implements Sequence {
+public class A052095 extends Sequence1 {
 
   private Z mN = Z.valueOf(10010);
 

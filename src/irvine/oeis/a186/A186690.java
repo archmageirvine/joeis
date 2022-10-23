@@ -3,13 +3,14 @@ package irvine.oeis.a186;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002131;
 
 /**
  * A186690 Expansion of - (1/8) theta_3''(0, q) / theta_3(0, q) in powers of q.
  * @author Georg Fischer
  */
-public class A186690 implements Sequence {
+public class A186690 extends Sequence1 {
 
   final Sequence mA002131 = new A002131();
   protected long mN;

@@ -3,12 +3,13 @@ package irvine.oeis.a152;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a065.A065608;
 /**
  * A152770 Sum of proper divisors minus the number of proper divisors of n: a(n) = sigma(n) - n - d(n) + 1.
  * @author Georg Fischer
  */
-public class A152770 implements Sequence {
+public class A152770 extends Sequence1 {
 
   private final Sequence mA065608 = new A065608();
   protected long mN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045878 Numbers k such that rotating digits of k^2 left once still yields a square.
  * @author Sean A. Irvine
  */
-public class A045878 implements Sequence {
+public class A045878 extends Sequence1 {
 
   private long mN = 0;
 

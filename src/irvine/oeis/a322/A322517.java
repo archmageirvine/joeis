@@ -2,13 +2,13 @@ package irvine.oeis.a322;
 // manually 2021-01-18
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A322517 Primes of form 1357913579... .
  * @author Georg Fischer
  */
-public class A322517 implements Sequence {
+public class A322517 extends Sequence1 {
   protected String mConst1; // sequence of digits
   protected int mPos; // position in mConst1
   protected String mTerm; // last valid term

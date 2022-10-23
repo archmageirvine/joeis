@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051957 a(n) = smallest number &gt; a(n-1) such that a(1)*a(2)*...*a(n) - 1 is a prime.
  * @author Sean A. Irvine
  */
-public class A051957 implements Sequence {
+public class A051957 extends Sequence1 {
 
   private Z mProd = Z.ONE;
   private Z mPrev = Z.TWO;

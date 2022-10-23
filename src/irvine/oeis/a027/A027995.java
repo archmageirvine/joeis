@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027995 a(n)=Sum{T(n,k)*T(n,k+1)}, 0&lt;=k&lt;=2n-1, T given by A027926.
  * @author Sean A. Irvine
  */
-public class A027995 implements Sequence {
+public class A027995 extends Sequence1 {
 
   private long mN = 0;
 

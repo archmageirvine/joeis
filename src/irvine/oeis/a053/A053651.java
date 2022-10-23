@@ -9,14 +9,14 @@ import irvine.math.group.GeneralLinearGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A053651 Number of nonisomorphic cyclic subgroups of general linear group GL(n,2).
  * @author Sean A. Irvine
  */
-public class A053651 implements Sequence {
+public class A053651 extends Sequence1 {
 
   private int mN = 0;
   private final Ring<Z> mFld;

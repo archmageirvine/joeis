@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000755 No-3-in-line problem on n X n grid: total number of ways of placing 2n points on n X n grid so no 3 are in a line. No symmetries are taken into account.
  * @author Sean A. Irvine
  */
-public class A000755 implements Sequence {
+public class A000755 extends Sequence1 {
 
   // This is not a very competitive implementation.
   // Among other things it takes no account of symmetry.

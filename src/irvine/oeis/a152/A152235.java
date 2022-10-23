@@ -2,13 +2,13 @@ package irvine.oeis.a152;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A152235 Largest squarefree number dividing the number of divisors n.
  * @author Sean A. Irvine
  */
-public class A152235 implements Sequence {
+public class A152235 extends Sequence1 {
 
   private long mN = 0;
 

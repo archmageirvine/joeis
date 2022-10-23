@@ -1,13 +1,13 @@
 package irvine.oeis.a096;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A096096 a(1) = 1, a(2) = 2, a(n+2) = a(n)#*#a(n+1) where #*# stands for digit-wise product of a(n) and a(n+1).
  * @author Sean A. Irvine
  */
-public class A096096 implements Sequence {
+public class A096096 extends Sequence1 {
 
   private String mA = null;
   private String mB = null;

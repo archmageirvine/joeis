@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034722 Products of successive Fibonacci numbers.
  * @author Sean A. Irvine
  */
-public class A034722 implements Sequence {
+public class A034722 extends Sequence1 {
 
   private static final class State implements Comparable<State> {
     final Z mValue;

@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014953 Numbers k such that k divides s(k), where s(1)=1, s(j) = s(j-1) + j*13^(j-1).
  * @author Sean A. Irvine
  */
-public class A014953 implements Sequence {
+public class A014953 extends Sequence1 {
 
   private long mN = 0;
   private Z mA = Z.ONE;

@@ -1,14 +1,14 @@
 package irvine.oeis.a126;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A126971 Left border of array in A105605.
  * @author Sean A. Irvine
  */
-public class A126971 implements Sequence {
+public class A126971 extends Sequence1 {
 
   private LongDynamicByteArray mCurrent = new LongDynamicByteArray();
 

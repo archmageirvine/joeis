@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055509 Number of odd primes in sequence obtained in 3x+1 (or Collatz) problem starting at n.
  * @author Sean A. Irvine
  */
-public class A055509 implements Sequence {
+public class A055509 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

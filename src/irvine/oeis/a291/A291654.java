@@ -4,13 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A291654 Number of distinct values in the prime tree starting with n.
  * @author Sean A. Irvine
  */
-public class A291654 implements Sequence {
+public class A291654 extends Sequence1 {
 
   private long mN = 0;
 

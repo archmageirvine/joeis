@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004137 Maximal number of edges in a graceful graph on n nodes.
  * @author Sean A. Irvine
  */
-public class A004137 implements Sequence {
+public class A004137 extends Sequence1 {
 
   // After Klaus Nagel
 

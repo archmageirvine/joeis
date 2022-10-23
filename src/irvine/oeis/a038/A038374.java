@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038374 Length of longest contiguous block of 1's in binary expansion of n.
  * @author Sean A. Irvine
  */
-public class A038374 implements Sequence {
+public class A038374 extends Sequence1 {
 
   private long mN = 0;
 

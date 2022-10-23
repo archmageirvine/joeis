@@ -3,13 +3,13 @@ package irvine.oeis.a039;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039697 a(n) = Sum(p_j) * Sum(k_j) where n = Product(p_j^k_j).
  * @author Sean A. Irvine
  */
-public class A039697 implements Sequence {
+public class A039697 extends Sequence1 {
 
   private long mN = 0;
 

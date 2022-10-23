@@ -7,13 +7,13 @@ import irvine.math.polynomial.IrreduciblePolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058947 Coefficients of primitive irreducible polynomials over GF(2) listed in lexicographic order.
  * @author Sean A. Irvine
  */
-public class A058947 implements Sequence {
+public class A058947 extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final GaloisField mFld;

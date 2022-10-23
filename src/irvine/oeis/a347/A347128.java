@@ -3,13 +3,14 @@ package irvine.oeis.a347;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003557;
 import irvine.oeis.a018.A018804;
 /**
  * A347128 a(n) = A018804(n) / A003557(n), where A018804 is Pillai's arithmetical function.
  * @author Georg Fischer
  */
-public class A347128 implements Sequence {
+public class A347128 extends Sequence1 {
 
   private final Sequence mA003557 = new A003557();
   private final Sequence mA018804 = new A018804();

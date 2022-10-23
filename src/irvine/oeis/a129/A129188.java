@@ -3,13 +3,14 @@ package irvine.oeis.a129;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a064.A064799;
 
 /**
  * A129188 n + n-th prime + n-th composite.
  * @author Georg Fischer
  */
-public class A129188 implements Sequence {
+public class A129188 extends Sequence1 {
 
   final Sequence mA064799 = new A064799();
   protected long mN;

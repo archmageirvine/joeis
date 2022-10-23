@@ -6,13 +6,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054050 Number of nonisomorphic binary n-state automata.
  * @author Sean A. Irvine
  */
-public class A054050 implements Sequence, Serializable {
+public class A054050 extends Sequence1 implements Serializable {
 
   private int mN = 0;
 

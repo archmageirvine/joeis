@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007622 Consider Leibniz's harmonic triangle (A003506) and look at the non-boundary terms. Sequence gives numbers appearing in denominators, sorted.
  * @author Sean A. Irvine
  */
-public class A007622 implements Sequence {
+public class A007622 extends Sequence1 {
 
   private final TreeSet<Z> mSeq = new TreeSet<>();
   private Z mNextUpdate = Z.ZERO;

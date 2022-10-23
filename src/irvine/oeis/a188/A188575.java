@@ -3,13 +3,13 @@ package irvine.oeis.a188;
 import irvine.math.MemoryFunctionInt3;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A188575 Number of non-complete compositions of n.
  * @author Georg Fischer
  */
-public class A188575 implements Sequence {
+public class A188575 extends Sequence1 {
 
   private int mN = 0;
 

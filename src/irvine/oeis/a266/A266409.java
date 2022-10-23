@@ -3,13 +3,14 @@ package irvine.oeis.a266;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003309;
 
 /**
  * A266409 a(n) = (A003309(n+2)-1) / 2; numbers n such that 2n+1 is a Ludic number (in A003309).
  * @author Georg Fischer
  */
-public class A266409 implements Sequence {
+public class A266409 extends Sequence1 {
 
   final Sequence mA003309 = new A003309();
   /** Construct the sequence. */

@@ -3,12 +3,13 @@ package irvine.oeis.a262;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A262683 Characteristic function for A182859.
  * @author Georg Fischer
  */
-public class A262683 implements Sequence {
+public class A262683 extends Sequence1 {
 
   final Sequence mA262684 = new A262684();
   @Override

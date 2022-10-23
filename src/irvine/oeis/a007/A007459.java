@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007459 Higgs's primes: a(n+1) = smallest prime &gt; a(n) such that a(n+1)-1 divides the product (a(1)...a(n))^2.
  * @author Sean A. Irvine
  */
-public class A007459 implements Sequence {
+public class A007459 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mS = Z.ONE;

@@ -2,13 +2,13 @@ package irvine.oeis.a015;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A015876 Numbers k such that sigma(k) = sigma(k+8).
  * @author Sean A. Irvine
  */
-public class A015876 implements Sequence {
+public class A015876 extends Sequence1 {
 
   private Z mSigmaA = Jaguar.factor(1).sigma();
   private Z mSigmaB = Jaguar.factor(2).sigma();

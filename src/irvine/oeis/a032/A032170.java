@@ -5,14 +5,14 @@ import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004146;
 
 /**
  * A032170 "CHK" (necklace, identity, unlabeled) transform of 1, 2, 3, 4, ...
  * @author Sean A. Irvine
  */
-public class A032170 implements Sequence {
+public class A032170 extends Sequence1 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A004146());
   private int mN = 0;

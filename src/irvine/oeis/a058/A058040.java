@@ -4,14 +4,14 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A058040 Numbers k such that if p_1,p_2,...,p_m, m&gt;1, are the prime factors of k, then there is some b&gt;0 such that k = Sum_{i=1..m} b^(p_i).
  * @author Sean A. Irvine
  */
-public class A058040 implements Sequence {
+public class A058040 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private long mN = 0;

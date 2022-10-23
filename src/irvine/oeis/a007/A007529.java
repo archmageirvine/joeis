@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007529 Prime triples: p; p+2 or p+4; p+6 all prime.
  * @author Sean A. Irvine
  */
-public class A007529 implements Sequence {
+public class A007529 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP = 4;

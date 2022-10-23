@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034838 Numbers k that are divisible by every digit of k.
  * @author Sean A. Irvine
  */
-public class A034838 implements Sequence {
+public class A034838 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058906 Inconsummate numbers in base 11: no number is this multiple of the sum of its digits (in base 11).
  * @author Sean A. Irvine
  */
-public class A058906 implements Sequence {
+public class A058906 extends Sequence1 {
 
   private static final long HEURISTIC = 250;
   private final int mBase;

@@ -1,14 +1,14 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 
 /**
  * A018799 Smallest nonnegative integer m such that m! begins with n in base 10.
  * @author Sean A. Irvine
  */
-public class A018799 implements Sequence {
+public class A018799 extends Sequence1 {
 
   private DynamicArray<String> mCache = new DynamicArray<>();
   {

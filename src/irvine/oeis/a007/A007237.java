@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007237 Number of triangles with integer sides and area = n times perimeter.
  * @author Sean A. Irvine
  */
-public class A007237 implements Sequence {
+public class A007237 extends Sequence1 {
 
   private long mN = 0;
 

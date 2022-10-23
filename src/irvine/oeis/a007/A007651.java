@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007651 Describe the previous term! (method B - initial term is 1).
  * @author Sean A. Irvine
  */
-public class A007651 implements Sequence {
+public class A007651 extends Sequence1 {
 
   private static String lookAndSayFreqLast(final String n) {
     final StringBuilder sb = new StringBuilder();

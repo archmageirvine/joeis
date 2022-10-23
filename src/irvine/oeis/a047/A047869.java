@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A047869 Subsets of an 8-element set in order by number of elements in each subset.
  * @author Sean A. Irvine
  */
-public class A047869 implements Sequence {
+public class A047869 extends Sequence1 {
 
   private Z[] mA = new Z[256];
   {

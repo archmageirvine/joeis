@@ -3,14 +3,14 @@ package irvine.oeis.a061;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A061432 a(n) = smallest n-digit square.
  * a(n) = ceil(sqrt(10^n))^2
  * @author Georg Fischer
  */
-public class A061432 implements Sequence {
+public class A061432 extends Sequence1 {
 
   private int mN = -1;
 

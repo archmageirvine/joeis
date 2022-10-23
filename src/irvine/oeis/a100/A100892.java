@@ -3,13 +3,14 @@ package irvine.oeis.a100;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038712;
 
 /**
  * A100892 a(n) = (2*n-1) XOR (2*n+1), bitwise.
  * @author Georg Fischer
  */
-public class A100892 implements Sequence {
+public class A100892 extends Sequence1 {
 
   final Sequence mA038712 = new A038712();
   @Override

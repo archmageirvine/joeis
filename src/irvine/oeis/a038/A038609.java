@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038609 Numbers that are the sum of 2 different primes.
  * @author Sean A. Irvine
  */
-public class A038609 implements Sequence {
+public class A038609 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final TreeSet<Long> mA = new TreeSet<>();

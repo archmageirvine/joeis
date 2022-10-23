@@ -1,13 +1,13 @@
 package irvine.oeis.a157;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A157502 Even numbers without the squares.
  * @author Georg Fischer
  */
-public class A157502 implements Sequence {
+public class A157502 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   private int mK = 2;

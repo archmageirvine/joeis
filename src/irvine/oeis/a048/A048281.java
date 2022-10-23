@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048281 Beginning of first run of consecutive quadratic residues mod prime(n) of longest length.
  * @author Sean A. Irvine
  */
-public class A048281 implements Sequence {
+public class A048281 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.ONE;

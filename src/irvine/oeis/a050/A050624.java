@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050624 Let b(n) = A050623(n) = smallest n-digit number divisible by 3^n; sequence gives b(n)/3^n.
  * @author Sean A. Irvine
  */
-public class A050624 implements Sequence {
+public class A050624 extends Sequence1 {
 
   private Z mT = Z.ONE;
   private Z mA = null;

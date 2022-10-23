@@ -2,13 +2,13 @@ package irvine.oeis.a091;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A091113 Nonprimes of the form 4*k+1.
  * @author Georg Fischer
  */
-public class A091113 implements Sequence {
+public class A091113 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private int mN;

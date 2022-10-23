@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051913 Numbers n such that phi(n)/phi(phi(n)) = 3.
  * @author Sean A. Irvine
  */
-public class A051913 implements Sequence {
+public class A051913 extends Sequence1 {
 
   private Z mN = Z.SIX;
 

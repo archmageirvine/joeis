@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057533 Values of n for which iteration of Chowla's function loops.
  * @author Sean A. Irvine
  */
-public class A057533 implements Sequence {
+public class A057533 extends Sequence1 {
 
   private long mN = 47;
 

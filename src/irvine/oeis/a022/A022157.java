@@ -3,13 +3,13 @@ package irvine.oeis.a022;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A022157 a(n) = n^2 - phi(n)*tau(n)^2.
  * @author Sean A. Irvine
  */
-public class A022157 implements Sequence {
+public class A022157 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

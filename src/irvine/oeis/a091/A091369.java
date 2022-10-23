@@ -2,13 +2,13 @@ package irvine.oeis.a091;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A091369 a(n) = Sum_{i=1..n} phi(i)*ceiling(n/i).
  * @author Sean A. Irvine
  */
-public class A091369 implements Sequence {
+public class A091369 extends Sequence1 {
 
   private long mN = 0;
 

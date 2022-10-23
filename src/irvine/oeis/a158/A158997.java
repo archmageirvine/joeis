@@ -1,14 +1,14 @@
 package irvine.oeis.a158;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A158997 Palindromes of the form m*reversal(m)+1 where m &gt;= reversal(m), sorted on m.
  * @author Sean A. Irvine
  */
-public class A158997 implements Sequence {
+public class A158997 extends Sequence1 {
 
   private long mN = 0;
 

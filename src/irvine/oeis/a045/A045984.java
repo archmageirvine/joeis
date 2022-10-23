@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045984 a(n) = smallest number m such that factorizations of n consecutive integers starting at m have same number of primes (counted with multiplicity).
  * @author Sean A. Irvine
  */
-public class A045984 implements Sequence {
+public class A045984 extends Sequence1 {
 
   private long mN = 0;
   private long mK = 1;

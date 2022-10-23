@@ -3,14 +3,14 @@ package irvine.oeis.a058;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A058264 Smallest prime p of two consecutive primes, p &lt; q, such that gcd( p-1, q-1 ) = 2n.
  * @author Sean A. Irvine
  */
-public class A058264 implements Sequence {
+public class A058264 extends Sequence1 {
 
   private final LongDynamicLongArray mFirsts = new LongDynamicLongArray();
   private final Fast mPrime = new Fast();

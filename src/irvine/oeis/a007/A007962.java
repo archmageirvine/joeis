@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007962 a(n) is the largest odd number k such that 9, 11, ..., k are sums of 3 of first n odd primes.
  * @author Sean A. Irvine
  */
-public class A007962 implements Sequence {
+public class A007962 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 9;

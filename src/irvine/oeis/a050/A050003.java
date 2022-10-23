@@ -3,12 +3,13 @@ package irvine.oeis.a050;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050003 Numbers k such that A050000(k) &gt; A050000(k+1).
  * @author Georg Fischer
  */
-public class A050003 implements Sequence {
+public class A050003 extends Sequence1 {
 
   protected int mN;
   protected Sequence mSeq;

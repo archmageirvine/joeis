@@ -3,13 +3,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a111.A111333;
 
 /**
  * A062875 Records in A046112 (or A006339).
  * @author Georg Fischer
  */
-public class A062875 implements Sequence {
+public class A062875 extends Sequence1 {
 
   final Sequence mA111333 = new A111333();
   @Override

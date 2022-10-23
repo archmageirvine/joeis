@@ -2,14 +2,14 @@ package irvine.oeis.a275;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A275161 Number of sides of a polygon formed by tiling n squares in a spiral.
  * <code>if(sqrtint(4*n+1)^2\4==n, 4, 6)</code>
  * @author Georg Fischer
  */
-public class A275161 implements Sequence {
+public class A275161 extends Sequence1 {
 
   protected int mN = 0;
 

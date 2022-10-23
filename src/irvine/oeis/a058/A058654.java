@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058654 The sum of a prime and a nonzero square.
  * @author Sean A. Irvine
  */
-public class A058654 implements Sequence {
+public class A058654 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 2;

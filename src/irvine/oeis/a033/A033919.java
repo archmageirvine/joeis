@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033919 Odd k for which k+2^m is composite for all m &lt; k.
  * @author Sean A. Irvine
  */
-public class A033919 implements Sequence {
+public class A033919 extends Sequence1 {
 
   private int mN = 771;
 

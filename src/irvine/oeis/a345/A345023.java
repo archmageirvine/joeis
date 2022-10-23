@@ -3,13 +3,14 @@ package irvine.oeis.a345;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000070;
 import irvine.oeis.a327.A327329;
 /**
  * A345023 a(n) is the surface area of the symmetric tower described in A221529 which is a polycube whose successive terraces are the symmetric representation of sigma A000203(i) (from i = 1 to n) starting from the top and the levels of these terraces are the partition numbers A000041(h-1) (from h = 1 to n) starting from the base.
  * @author Georg Fischer
  */
-public class A345023 implements Sequence {
+public class A345023 extends Sequence1 {
 
   private final Sequence mA000070 = new A000070();
   private final Sequence mA327329 = new A327329();

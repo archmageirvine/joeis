@@ -3,13 +3,13 @@ package irvine.oeis.a116;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A116477 a(n) = Sum_{1&lt;=k&lt;=n, gcd(k,n)=1} floor(n/k).
  * @author Georg Fischer
  */
-public class A116477 implements Sequence {
+public class A116477 extends Sequence1 {
 
   private int mN = 0;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a038;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038841 Concatenation of prime factors of n is a cube.
  * @author Sean A. Irvine
  */
-public class A038841 implements Sequence {
+public class A038841 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final Z[] mWork = new Z[100]; // 2^100 way higher than we will need

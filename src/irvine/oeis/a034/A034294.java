@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034294 Numbers k not ending in 0 such that for some base b, k_b is the reverse of k_10 (where k_b denotes k written in base b).
  * @author Sean A. Irvine
  */
-public class A034294 implements Sequence {
+public class A034294 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

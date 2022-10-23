@@ -2,7 +2,7 @@ package irvine.oeis.a020;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001390;
 import irvine.util.array.LongDynamicLongArray;
 
@@ -10,7 +10,7 @@ import irvine.util.array.LongDynamicLongArray;
  * A020638 Least inverse of A001390, or 0 if no inverse exists.
  * @author Sean A. Irvine
  */
-public class A020638 implements Sequence {
+public class A020638 extends Sequence1 {
 
   // This could do with a better way of detecting 0s which occur at
   // 8, 16, 27, 32 (i.e. perhaps p^b, b >= 3, but I don't know for sure).

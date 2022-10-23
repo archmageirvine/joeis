@@ -3,6 +3,7 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a023.A023811;
 import irvine.oeis.a028.A028310;
 import irvine.oeis.a199.A199969;
@@ -11,7 +12,7 @@ import irvine.oeis.a199.A199969;
  * A051846 Digits 1..n in strict descending order n..1 interpreted in base n+1.
  * @author Georg Fischer
  */
-public class A051846 implements Sequence {
+public class A051846 extends Sequence1 {
 
   final Sequence mA023811 = new A023811();
   final Sequence mA028310 = new A028310();

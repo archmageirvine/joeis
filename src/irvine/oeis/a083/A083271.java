@@ -3,13 +3,14 @@ package irvine.oeis.a083;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038040;
 
 /**
  * A083271 a(n) = n*tau(n) + 1.
  * @author Georg Fischer
  */
-public class A083271 implements Sequence {
+public class A083271 extends Sequence1 {
 
   final Sequence mA038040 = new A038040();
   @Override

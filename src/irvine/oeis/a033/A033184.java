@@ -2,13 +2,13 @@ package irvine.oeis.a033;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033184 Catalan triangle A009766 transposed.
  * @author Sean A. Irvine
  */
-public class A033184 implements Sequence {
+public class A033184 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

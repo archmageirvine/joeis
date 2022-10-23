@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A193838 Size k of smallest square of k X k lattice points from which n points with distinct mutual distances can be chosen.
  * @author Sean A. Irvine
  */
-public class A193838 implements Sequence {
+public class A193838 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mSize = 0;

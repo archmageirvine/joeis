@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008856 Numbers n such that n^3 and n have same last 2 digits.
  * @author Sean A. Irvine
  */
-public class A008856 implements Sequence {
+public class A008856 extends Sequence1 {
 
   private static final long[] ADD = {0, 1, 24, 25, 49, 51, 75, 76, 99};
   private long mN = -1;

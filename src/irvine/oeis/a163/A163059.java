@@ -3,6 +3,7 @@ package irvine.oeis.a163;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001359;
 import irvine.oeis.a016.A016813;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a016.A016813;
  * A163059 An alternating sum from 4*n-3 up to the smaller of the n-th twin primes.
  * @author Georg Fischer
  */
-public class A163059 implements Sequence {
+public class A163059 extends Sequence1 {
 
   final Sequence mA001359 = new A001359();
   final Sequence mA016813 = new A016813();

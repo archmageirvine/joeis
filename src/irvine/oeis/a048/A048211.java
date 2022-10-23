@@ -7,14 +7,14 @@ import java.util.Set;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A048211 Number of distinct resistances that can be produced from a circuit of n equal resistors using only series and parallel combinations.
  * @author Sean A. Irvine
  */
-public class A048211 implements Sequence {
+public class A048211 extends Sequence1 {
 
   protected final ArrayList<Set<Pair<Long, Long>>> mKnown = new ArrayList<>();
 

@@ -2,14 +2,14 @@ package irvine.oeis.a015;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A015126 Least k such that phi(k) = phi(n).
  * @author Sean A. Irvine
  */
-public class A015126 implements Sequence {
+public class A015126 extends Sequence1 {
 
   private final LongDynamicLongArray mLeast = new LongDynamicLongArray();
   private long mN = 0;

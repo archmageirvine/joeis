@@ -3,13 +3,14 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046132;
 
 /**
  * A088762 Numbers n such that (2n-1, 2n+3) is a cousin prime pair.
  * @author Georg Fischer
  */
-public class A088762 implements Sequence {
+public class A088762 extends Sequence1 {
 
   final Sequence mA046132 = new A046132();
   @Override

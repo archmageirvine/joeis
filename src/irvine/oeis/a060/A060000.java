@@ -1,13 +1,13 @@
 package irvine.oeis.a060;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A060000 If the numbers a(1)...a(n) contain a hole, then a(n+1) is the smallest hole; otherwise a(n+1) = a(n-1) + a(n).
  * @author Sean A. Irvine
  */
-public class A060000 implements Sequence {
+public class A060000 extends Sequence1 {
 
   // After Alfred Heiligenbrunner
 

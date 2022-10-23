@@ -2,13 +2,13 @@ package irvine.oeis.a019;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A019423 Numbers whose sum of divisors is a fifth power.
  * @author Sean A. Irvine
  */
-public class A019423 implements Sequence {
+public class A019423 extends Sequence1 {
 
   private long mN = 0;
 

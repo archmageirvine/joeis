@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030494 If n is even, 2(n/2 + 1)! - 1; if n is odd, ((n + 1)/2 + 1)! - 1.
  * @author Sean A. Irvine
  */
-public class A030494 implements Sequence {
+public class A030494 extends Sequence1 {
 
   private Z mF = Z.ONE;
   private int mN = 0;

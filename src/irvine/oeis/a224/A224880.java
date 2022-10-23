@@ -3,13 +3,14 @@ package irvine.oeis.a224;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000203;
 
 /**
  * A224880 a(n) = 2n + sum of divisors of n.
  * @author Georg Fischer
  */
-public class A224880 implements Sequence {
+public class A224880 extends Sequence1 {
 
   final Sequence mA000203 = new A000203();
   protected long mN;

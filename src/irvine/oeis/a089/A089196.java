@@ -3,13 +3,14 @@ package irvine.oeis.a089;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a032.A032742;
 
 /**
  * A089196 Floor(n / (smallest prime factor of n+1)).
  * @author Georg Fischer
  */
-public class A089196 implements Sequence {
+public class A089196 extends Sequence1 {
 
   final Sequence mA032742 = new A032742();
   /** Construct the sequence. */

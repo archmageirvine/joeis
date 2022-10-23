@@ -1,13 +1,13 @@
 package irvine.oeis.a204;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A204520 Numbers such that floor(a(n)^2 / 5) is a square.
  * @author Georg Fischer
  */
-public class A204520 implements Sequence {
+public class A204520 extends Sequence1 {
 
   private Z mK;
   private int mDiv;

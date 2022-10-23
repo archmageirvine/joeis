@@ -3,13 +3,13 @@ package irvine.oeis.a112;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A112399 a(n) = Sum_{k=1..n, gcd(k,n)=1} mu(k), where mu(k) = A008683(k) (the Moebius function).
  * @author Georg Fischer
  */
-public class A112399 implements Sequence {
+public class A112399 extends Sequence1 {
 
   private int mN = 0;
 

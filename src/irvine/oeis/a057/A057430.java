@@ -1,14 +1,14 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.time.BadiDate;
 
 /**
  * A057430 Number of days in months of Baha'i calendar.
  * @author Sean A. Irvine
  */
-public class A057430 implements Sequence {
+public class A057430 extends Sequence1 {
 
   private static final Z Z19 = Z.valueOf(19);
   private int mYear = 174;

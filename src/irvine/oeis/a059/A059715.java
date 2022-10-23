@@ -5,13 +5,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059715 Number of multi-directed animals on the triangular lattice.
  * @author Sean A. Irvine
  */
-public class A059715 implements Sequence {
+public class A059715 extends Sequence1 {
 
   // After Jean-Fran&ccedil;ois Alcover
 

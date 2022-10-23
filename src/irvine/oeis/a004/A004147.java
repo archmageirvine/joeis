@@ -3,14 +3,14 @@ package irvine.oeis.a004;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A004147 Number of n-state Turing machines which halt.
  * @author Sean A. Irvine
  */
-public class A004147 implements Sequence {
+public class A004147 extends Sequence1 {
 
   private int mN = 0;
   private boolean[] mReachableWorkspace = null;

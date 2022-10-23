@@ -3,13 +3,14 @@ package irvine.oeis.a167;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007510;
 
 /**
  * A167277 Largest nonprime&lt;n-th single (or isolated or non-twin) prime.
  * @author Georg Fischer
  */
-public class A167277 implements Sequence {
+public class A167277 extends Sequence1 {
 
   final Sequence mA007510 = new A007510();
   @Override

@@ -3,13 +3,13 @@ package irvine.oeis.a049;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A049837 Triangular array T read by rows: T(n,k)=number of distinct numbers that appear when Euclidean algorithm acts on n,k, for k=1,2,...,n; n=1,2,3,...
  * @author Sean A. Irvine
  */
-public class A049837 implements Sequence {
+public class A049837 extends Sequence1 {
 
   private long mN = 0;
   private long mM = 0;

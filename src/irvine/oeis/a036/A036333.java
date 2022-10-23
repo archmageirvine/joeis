@@ -3,13 +3,13 @@ package irvine.oeis.a036;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036333 Composite numbers n such that juxtaposition of prime factors of n has length 9.
  * @author Sean A. Irvine
  */
-public class A036333 implements Sequence {
+public class A036333 extends Sequence1 {
 
   // In theory this could be done with A036328.build(9), but that would use a
   // lot of memory as it would generate the entire sequence up front.

@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046665 Largest prime divisor of n - smallest prime divisor of n (a(1)=0).
  * @author Sean A. Irvine
  */
-public class A046665 implements Sequence {
+public class A046665 extends Sequence1 {
 
   private long mN = 0;
 

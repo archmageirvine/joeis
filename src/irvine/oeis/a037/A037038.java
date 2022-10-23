@@ -3,13 +3,13 @@ package irvine.oeis.a037;
 import irvine.factor.prime.Fast;
 import irvine.factor.prime.Prime;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037038 Number of primes between n and 4n+1.
  * @author Sean A. Irvine
  */
-public class A037038 implements Sequence {
+public class A037038 extends Sequence1 {
 
   private Prime mPrime = new Fast();
   private long mPi = 0;

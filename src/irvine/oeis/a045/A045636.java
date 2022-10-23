@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045636 Numbers of the form p^2 + q^2, with p and q primes.
  * @author Sean A. Irvine
  */
-public class A045636 implements Sequence {
+public class A045636 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final Fast mPrime = new Fast();

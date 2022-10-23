@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000469 1 together with products of 2 or more distinct primes.
  * @author Sean A. Irvine
  */
-public class A000469 implements Sequence {
+public class A000469 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

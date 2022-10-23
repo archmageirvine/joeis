@@ -4,13 +4,13 @@ package irvine.oeis.a188;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A188027 [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=9, [ ]=floor.
  * @author Georg Fischer
  */
-public class A188027 implements Sequence {
+public class A188027 extends Sequence1 {
   private long mN = 0;
   private static final CR R = CR.ONE.add((CR.FIVE).sqrt()).divide(CR.TWO);
   private static final CR K = CR.NINE;

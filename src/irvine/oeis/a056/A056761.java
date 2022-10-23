@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056761 Odd numbers less than the cube of their number of divisors.
  * @author Sean A. Irvine
  */
-public class A056761 implements Sequence {
+public class A056761 extends Sequence1 {
 
   private static final Z LAST = Z.valueOf(883575);
   private Z mN = Z.ONE;

@@ -3,13 +3,13 @@ package irvine.oeis.a039;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039788 phi(a(n)) is equal to the product of (the sum of prime factors and the sum of exponents) of (a(n)).
  * @author Sean A. Irvine
  */
-public class A039788 implements Sequence {
+public class A039788 extends Sequence1 {
 
   private long mN = 7;
 

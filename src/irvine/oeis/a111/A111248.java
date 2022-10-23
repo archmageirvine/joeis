@@ -3,6 +3,7 @@ package irvine.oeis.a111;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001616;
 import irvine.oeis.a001.A001617;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001617;
  * A111248 Dimension of the space of weight 2 modular forms for Gamma_0(n).
  * @author Georg Fischer
  */
-public class A111248 implements Sequence {
+public class A111248 extends Sequence1 {
 
   final Sequence mA001616 = new A001616();
   final Sequence mA001617 = new A001617();

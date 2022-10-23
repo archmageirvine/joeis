@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A030465 Numbers k such that k concatenated with k+1 is a square.
  * @author Sean A. Irvine
  */
-public class A030465 implements Sequence {
+public class A030465 extends Sequence1 {
 
   // Last digit of n must be 0, 3, 4, 5, 8, or 9.
 

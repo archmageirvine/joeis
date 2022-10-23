@@ -2,7 +2,7 @@ package irvine.oeis.a195;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A195770 Positive integers a for which there is a 1-Pythagorean triple (a,b,c) satisfying a&lt;=b.
@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  * k-Pythagorean triples are defined by <code>c^2 = a^2 + b^2 + k*a*b</code>.
  * @author Georg Fischer
  */
-public class A195770 implements Sequence {
+public class A195770 extends Sequence1 {
 
   protected long mA; // the shortest leg
   protected long mA2; // mA^2

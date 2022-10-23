@@ -2,13 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A004611 Divisible only by primes congruent to 1 mod 3.
  * @author Sean A. Irvine
  */
-public class A004611 implements Sequence {
+public class A004611 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

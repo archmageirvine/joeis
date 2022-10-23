@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002466 A jumping problem.
  * @author Sean A. Irvine
  */
-public class A002466 implements Sequence {
+public class A002466 extends Sequence1 {
 
   private long mN = 0;
   private Z mA = Z.ONE;

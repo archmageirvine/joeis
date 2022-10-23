@@ -3,14 +3,14 @@ package irvine.oeis.a175;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001615;
 
 /**
  * A175836 a(n) = Product_{i=1..n} psi(i) where psi is the Dedekind psi function (A001615).
  * @author Georg Fischer
  */
-public class A175836 implements Sequence {
+public class A175836 extends Sequence1 {
 
   private int mN = 0;
   private final MemorySequence mSeq = MemorySequence.cachedSequence(new A001615());

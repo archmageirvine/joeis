@@ -6,13 +6,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A010029 Irregular triangle read by rows: T(n,k) (n&gt;=1, 0 &lt;= k &lt;= floor(n/2)) = number of permutations of 1..n with exactly floor(n/2) - k runs of consecutive pairs up.
  * @author Sean A. Irvine
  */
-public class A010029 implements Sequence {
+public class A010029 extends Sequence1 {
 
   private static final PolynomialRingField<Z> Y_RING = new PolynomialRingField<>("y", IntegerField.SINGLETON);
   private static final Polynomial<Z> Y0N = Y_RING.negate(Y_RING.one());

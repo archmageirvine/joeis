@@ -3,13 +3,14 @@ package irvine.oeis.a270;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a229.A229829;
 
 /**
  * A270297 Numbers which are representable as a sum of seven but no fewer consecutive nonnegative integers.
  * @author Georg Fischer
  */
-public class A270297 implements Sequence {
+public class A270297 extends Sequence1 {
 
   final Sequence mA229829 = new A229829();
   @Override

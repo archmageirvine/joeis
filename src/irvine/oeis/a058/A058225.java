@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058225 Numbers that are inconsummate to some base.
  * @author Sean A. Irvine
  */
-public class A058225 implements Sequence {
+public class A058225 extends Sequence1 {
 
   // Cf. A003634
   private static final long HEURISTIC_LIMIT = 10; // Is this provably enough?

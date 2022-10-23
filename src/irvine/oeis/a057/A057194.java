@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057194 a(1) = 1; a(n+1) = (Product_{k=1..n} a(k)) * Sum_{k=1..n} a(k).
  * @author Sean A. Irvine
  */
-public class A057194 implements Sequence {
+public class A057194 extends Sequence1 {
 
   private Z mA = null;
   private Z mSum = Z.ZERO;

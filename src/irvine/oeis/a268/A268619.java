@@ -3,13 +3,14 @@ package irvine.oeis.a268;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a060.A060165;
 
 /**
  * A268619 a(n) = (1/n^2) * Sum_{d|n} moebius(n/d)*binomial(2*d,d).
  * @author Georg Fischer
  */
-public class A268619 implements Sequence {
+public class A268619 extends Sequence1 {
 
   final Sequence mA060165 = new A060165();
   protected long mN;

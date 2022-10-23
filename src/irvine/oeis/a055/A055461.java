@@ -3,13 +3,14 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004736;
 
 /**
  * A055461 Square decrescendo subsequences: triangle T(n,k) = (n-k)^2, n &gt;= 1, 0 &lt;= k &lt; n.
  * @author Georg Fischer
  */
-public class A055461 implements Sequence {
+public class A055461 extends Sequence1 {
 
   final Sequence mA004736 = new A004736();
   @Override

@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036336 Smallest positive integer with n digits and exactly n prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
-public class A036336 implements Sequence {
+public class A036336 extends Sequence1 {
 
   private final PrimeDivision mPrimeDivision = new PrimeDivision(1000000);
   private long mN = 0;

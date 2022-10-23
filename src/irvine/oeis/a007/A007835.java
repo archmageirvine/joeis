@@ -11,14 +11,14 @@ import irvine.math.nauty.DirectedGraph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
  * A007835 Number of unordered sets of pairs (in-degree, out-degree) for nodes of directed trees on n unlabeled nodes (the edges are directed in arbitrary directions, the tree is unrooted).
  * @author Sean A. Irvine
  */
-public class A007835 implements Sequence, GraphProcessor {
+public class A007835 extends Sequence1 implements GraphProcessor {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private DigraphCheck mDigraph = null;

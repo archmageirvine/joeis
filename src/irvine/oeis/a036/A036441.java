@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036441 a(n+1) = next number having largest prime dividing a(n) as a factor, with a(1) = 2.
  * @author Sean A. Irvine
  */
-public class A036441 implements Sequence {
+public class A036441 extends Sequence1 {
 
   private Z mA = null;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a153;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005479;
 
 /**
  * A153867 Primes which are the sum of four consecutive Fibonacci numbers.
  * @author Georg Fischer
  */
-public class A153867 implements Sequence {
+public class A153867 extends Sequence1 {
 
   final Sequence mA005479 = new A005479();
   /** Construct the sequence. */

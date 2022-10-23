@@ -8,13 +8,13 @@ import irvine.math.nauty.NautySet;
 import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003400 Number of asymmetric (not necessarily connected) graphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A003400 implements Sequence, GraphProcessor {
+public class A003400 extends Sequence1 implements GraphProcessor {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final long[] mWorkspace = new long[100];

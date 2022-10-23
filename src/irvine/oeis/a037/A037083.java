@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037083 Numbers n such that n!!! + 1 is prime (0 is included by convention).
  * @author Sean A. Irvine
  */
-public class A037083 implements Sequence {
+public class A037083 extends Sequence1 {
 
   private final Z[] mA = new Z[3];
   private long mN = -1;

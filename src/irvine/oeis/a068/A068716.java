@@ -3,12 +3,13 @@ package irvine.oeis.a068;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a067.A067280;
 /**
  * A068716 a(n) = 1 if x^2 + 1 = n * y^2 has infinitely many solutions in integers (x,y), otherwise a(n) = 0.
  * @author Georg Fischer
  */
-public class A068716 implements Sequence {
+public class A068716 extends Sequence1 {
 
   private final Sequence mA067280 = new A067280();
   @Override

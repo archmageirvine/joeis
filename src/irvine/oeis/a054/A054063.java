@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054063 Least k for which the integers Floor(k/(log(m+1))) for m=1,2,...,n are distinct.
  * @author Sean A. Irvine
  */
-public class A054063 implements Sequence {
+public class A054063 extends Sequence1 {
 
   private long mN = 0;
   private long mK = 1;

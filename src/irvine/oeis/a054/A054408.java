@@ -1,14 +1,14 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A054408 a(n) = smallest positive integer not already in sequence such that the partial sum a(1)+...+a(n) is prime.
  * @author Sean A. Irvine
  */
-public class A054408 implements Sequence {
+public class A054408 extends Sequence1 {
 
   private final LongDynamicBooleanArray mEvenUsed = new LongDynamicBooleanArray();
   private Z mSum = Z.ZERO;

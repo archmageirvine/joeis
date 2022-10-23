@@ -2,14 +2,14 @@ package irvine.oeis.a229;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A229547 Numbers n such that n - product_of_digits(n) is a palindrome.
  * @author Georg Fischer
  */
-public class A229547 implements Sequence {
+public class A229547 extends Sequence1 {
 
   private Z mK = Z.NEG_ONE;
 

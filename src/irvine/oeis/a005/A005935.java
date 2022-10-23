@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005935 Pseudoprimes to base 3.
  * @author Sean A. Irvine
  */
-public class A005935 implements Sequence {
+public class A005935 extends Sequence1 {
 
   private long mN = 90;
   private final Fast mPrime = new Fast();

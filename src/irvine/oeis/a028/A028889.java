@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028889 Numbers whose iterated product of digits is a power of 2.
  * @author Sean A. Irvine
  */
-public class A028889 implements Sequence {
+public class A028889 extends Sequence1 {
 
   private long mN = 0;
 

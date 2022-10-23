@@ -7,13 +7,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A034289 Squares which can be rearranged into squares with the same number of digits.
  * @author Sean A. Irvine
  */
-public class A034289 implements Sequence {
+public class A034289 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mLim = Z.valueOf(100);

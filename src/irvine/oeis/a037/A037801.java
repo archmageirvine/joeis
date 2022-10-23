@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A037801 Number of i such that d(i)&lt;d(i-1), where Sum{d(i)*3^i: i=0,1,...,m} is base 3 representation of n.
  * @author Sean A. Irvine
  */
-public class A037801 implements Sequence {
+public class A037801 extends Sequence1 {
 
   private long mN = 0;
 

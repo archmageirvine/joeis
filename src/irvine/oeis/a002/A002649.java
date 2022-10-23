@@ -4,13 +4,13 @@ import java.util.HashSet;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002649 Quintan primes: p = (x^5 - y^5 )/(x - y).
  * @author Sean A. Irvine
  */
-public class A002649 implements Sequence {
+public class A002649 extends Sequence1 {
 
   private final HashSet<Z> mSeen = new HashSet<>();
   private final TreeSet<Z> mP = new TreeSet<>();

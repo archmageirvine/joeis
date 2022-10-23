@@ -3,13 +3,14 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051953;
 
 /**
  * A053650 Cototient function of n^2.
  * @author Georg Fischer
  */
-public class A053650 implements Sequence {
+public class A053650 extends Sequence1 {
 
   final Sequence mA051953 = new A051953();
   protected long mN;

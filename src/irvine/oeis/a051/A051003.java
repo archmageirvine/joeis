@@ -3,13 +3,13 @@ package irvine.oeis.a051;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A051003 Beastly (or hateful) numbers: numbers containing the string 666 in their decimal expansion.
  * @author Sean A. Irvine
  */
-public class A051003 implements Sequence {
+public class A051003 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   {

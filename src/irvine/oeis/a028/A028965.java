@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028965 Six consecutive integers with increasing values of sigma start at these numbers; i.e., sigma(x) &lt; sigma(x+1) &lt;  ... &lt; sigma(x+5).
  * @author Sean A. Irvine
  */
-public class A028965 implements Sequence {
+public class A028965 extends Sequence1 {
 
   private long mN = 36721680;
   private Z[] mA = new Z[6];

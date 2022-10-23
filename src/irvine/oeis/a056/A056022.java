@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056022 Numbers k such that k^6 == 1 (mod 7^2).
  * @author Georg Fischer
  */
-public class A056022 implements Sequence {
+public class A056022 extends Sequence1 {
 
   protected Z mN;
   protected Z mMod;

@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A054548 Triangular array giving number of labeled graphs on n unisolated nodes and k=0...n*(n-1)/2 edges.
  * @author Sean A. Irvine
  */
-public class A054548 implements Sequence {
+public class A054548 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

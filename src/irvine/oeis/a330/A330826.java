@@ -3,6 +3,7 @@ package irvine.oeis.a330;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000051;
 import irvine.oeis.a019.A019434;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a019.A019434;
  * A330826 Numbers of the form 2^((2^n)+1)*F_n, where F_n is a Fermat prime, A019434.
  * @author Georg Fischer
  */
-public class A330826 implements Sequence {
+public class A330826 extends Sequence1 {
 
   final Sequence mA000051 = new A000051();
   final Sequence mA019434 = new A019434();

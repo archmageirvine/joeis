@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003458 Erd\u0151s-Selfridge function: a(n) is the least number m &gt; n+1 such that the least prime factor of binomial(m, n) is &gt; n.
  * @author Sean A. Irvine
  */
-public class A003458 implements Sequence {
+public class A003458 extends Sequence1 {
 
   private long mN = 0;
 

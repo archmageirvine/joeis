@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025349 Numbers that are the sum of 3 distinct nonzero squares in 3 or more ways.
  * @author Sean A. Irvine
  */
-public class A025349 implements Sequence {
+public class A025349 extends Sequence1 {
 
   private long mN = 1;
 

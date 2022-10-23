@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A061060 Write product of first n primes as x*y with x&lt;y and x maximal; sequence gives value of y-x.
  * @author Sean A. Irvine
  */
-public class A061060 implements Sequence {
+public class A061060 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private final ArrayList<Z> mPrimeList = new ArrayList<>();

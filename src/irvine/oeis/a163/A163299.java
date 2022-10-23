@@ -3,6 +3,7 @@ package irvine.oeis.a163;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 import irvine.oeis.a029.A029837;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a029.A029837;
  * A163299 a(n) = (the number of divisors of n)^(the binary order of n).
  * @author Georg Fischer
  */
-public class A163299 implements Sequence {
+public class A163299 extends Sequence1 {
 
   final Sequence mA000005 = new A000005();
   final Sequence mA029837 = new A029837();

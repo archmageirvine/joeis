@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045972 a(1)=9; if n = Product p_i^e_i, n &gt; 1, then a(n) = Product p_{i+2}^{e_i+1}.
  * @author Sean A. Irvine
  */
-public class A045972 implements Sequence {
+public class A045972 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

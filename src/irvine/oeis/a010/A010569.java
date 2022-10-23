@@ -5,13 +5,13 @@ import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingCycler;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A010569 Number of 2n-step 5-dimensional closed paths on 5-d cubic lattice.
  * @author Sean A. Irvine
  */
-public class A010569 implements Sequence {
+public class A010569 extends Sequence1 {
 
   private int mN = 0;
   private final long mC = Lattices.Z5.neighbour(Lattices.Z5.origin(), 0);

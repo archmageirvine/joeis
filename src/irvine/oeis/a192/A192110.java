@@ -3,13 +3,13 @@ package irvine.oeis.a192;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A192110 Monotonic ordering of nonnegative differences 2^i - 3^j, for 40 &gt;= i &gt;= 0, j &gt;= 0.
  * @author Georg Fischer
  */
-public class A192110 implements Sequence {
+public class A192110 extends Sequence1 {
 
   //protected long mBasei;
   //protected long mBasej;

@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000709 Related to population of numbers of form x^2 + y^2.
  * @author Sean A. Irvine
  */
-public class A000709 implements Sequence {
+public class A000709 extends Sequence1 {
 
   private int mN = -1;
 

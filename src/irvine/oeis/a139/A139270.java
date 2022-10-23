@@ -3,13 +3,14 @@ package irvine.oeis.a139;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018252;
 
 /**
  * A139270 Twice nonprime numbers.
  * @author Georg Fischer
  */
-public class A139270 implements Sequence {
+public class A139270 extends Sequence1 {
 
   final Sequence mA018252 = new A018252();
   @Override

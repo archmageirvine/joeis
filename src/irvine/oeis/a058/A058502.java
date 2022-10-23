@@ -11,6 +11,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a053.A053290;
 import irvine.util.Pair;
@@ -19,7 +20,7 @@ import irvine.util.Pair;
  * A058502 Number of cyclic subgroups of Chevalley group A_n(3) (the group of nonsingular n X n matrices over GF(3)).
  * @author Sean A. Irvine
  */
-public class A058502 implements Sequence {
+public class A058502 extends Sequence1 {
 
   private int mN = 0;
   private final Ring<Z> mFld;

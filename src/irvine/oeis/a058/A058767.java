@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058767 Numbers k such that k*2^(k/2) + 1 is prime.
  * @author Sean A. Irvine
  */
-public class A058767 implements Sequence {
+public class A058767 extends Sequence1 {
 
   private int mN = 0;
 

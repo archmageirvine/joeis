@@ -3,12 +3,13 @@ package irvine.oeis.a126;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a049.A049417;
 /**
  * A126168 Sum of the proper infinitary divisors of n.
  * @author Georg Fischer
  */
-public class A126168 implements Sequence {
+public class A126168 extends Sequence1 {
 
   private final Sequence mA049417 = new A049417();
   protected long mN;

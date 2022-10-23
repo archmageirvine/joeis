@@ -3,6 +3,7 @@ package irvine.oeis.a279;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001158;
 import irvine.oeis.a005.A005064;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a005.A005064;
  * A279290 Sum of cubes of nonprime divisors of n.
  * @author Georg Fischer
  */
-public class A279290 implements Sequence {
+public class A279290 extends Sequence1 {
 
   final Sequence mA001158 = new A001158();
   final Sequence mA005064 = new A005064();

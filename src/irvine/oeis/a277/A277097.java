@@ -3,13 +3,14 @@ package irvine.oeis.a277;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007652;
 
 /**
  * A277097 a(n) = 5 - (prime(n) mod 10).
  * @author Georg Fischer
  */
-public class A277097 implements Sequence {
+public class A277097 extends Sequence1 {
 
   final Sequence mA007652 = new A007652();
   @Override

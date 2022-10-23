@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027443 For n != 1 mod 3, we can write 3/(2n+1) = 1/a + 1/b + 1/c with a&gt;b&gt;c&gt;0, a,b,c distinct and odd; sequence gives smallest such a, or 1 if n = 1 mod 3.
  * @author Sean A. Irvine
  */
-public class A027443 implements Sequence {
+public class A027443 extends Sequence1 {
 
   private long mN = 0;
 

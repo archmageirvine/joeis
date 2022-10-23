@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A058813 Unlabeled (i.e., equivalent to their 1-0 complement) binary necklaces sorted in ascending lexicographic order and read as binary numbers.
  * @author Sean A. Irvine
  */
-public class A058813 implements Sequence {
+public class A058813 extends Sequence1 {
 
   private final TreeSet<Long> mA = new TreeSet<>();
   private int mN = 0;

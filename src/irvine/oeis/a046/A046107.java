@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046107 Triangle of prime numbers in which n-th row lists all primes p such that 1/p has decimal period n, n &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A046107 implements Sequence {
+public class A046107 extends Sequence1 {
 
   private final TreeSet<Z> mSeen = new TreeSet<>();
   private final TreeSet<Z> mA = new TreeSet<>();

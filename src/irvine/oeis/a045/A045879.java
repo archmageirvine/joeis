@@ -7,13 +7,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045879 Numbers whose square contains the same digits as some other square.
  * @author Sean A. Irvine
  */
-public class A045879 implements Sequence {
+public class A045879 extends Sequence1 {
 
   private long mN = 12;
   private Z mLim = Z.valueOf(100);

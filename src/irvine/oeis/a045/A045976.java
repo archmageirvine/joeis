@@ -5,13 +5,13 @@ import irvine.math.cc.ComputableComplexField;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A045976 A product related to n-th roots of 1.
  * @author Sean A. Irvine
  */
-public class A045976 implements Sequence {
+public class A045976 extends Sequence1 {
 
   private static final ComputableComplexField CCF = ComputableComplexField.SINGLETON;
   private static final CC TAU_I = CCF.multiply(CC.I, CR.TAU);

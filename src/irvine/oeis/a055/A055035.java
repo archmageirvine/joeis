@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055035 Degree of minimal polynomial of sin(Pi/n) over the rationals.
  * @author Sean A. Irvine
  */
-public class A055035 implements Sequence {
+public class A055035 extends Sequence1 {
 
   private long mN;
 

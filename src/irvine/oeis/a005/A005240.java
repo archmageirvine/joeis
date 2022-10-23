@@ -5,14 +5,14 @@ import java.util.Set;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A005240 P-positions in Epstein's Put or Take a Square game.
  * @author Sean A. Irvine
  */
-public class A005240 implements Sequence {
+public class A005240 extends Sequence1 {
 
   // loop = 0, p = 1, n = -1
   private LongDynamicByteArray mState = new LongDynamicByteArray();

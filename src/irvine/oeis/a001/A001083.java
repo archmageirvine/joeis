@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A001083 Length of one version of Kolakoski sequence {A000002(i)} at n-th growth stage.
  * @author Sean A. Irvine
  */
-public class A001083 implements Sequence {
+public class A001083 extends Sequence1 {
 
   private String mS = "";
 

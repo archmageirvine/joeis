@@ -3,13 +3,13 @@ package irvine.oeis.a032;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032982 Numbers with the property that all pairs of consecutive base-5 digits differ by more than 2.
  * @author Sean A. Irvine
  */
-public class A032982 implements Sequence {
+public class A032982 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
 

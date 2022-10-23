@@ -2,13 +2,13 @@ package irvine.oeis.a279;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A279768 Numbers n such that the sum of digits of 8n equals 16.
  * @author Georg Fischer
  */
-public class A279768 implements Sequence {
+public class A279768 extends Sequence1 {
 
   private Z mN;
   private int mBase;

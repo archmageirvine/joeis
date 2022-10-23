@@ -1,14 +1,14 @@
 package irvine.oeis.a164;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A164302 a(n) = 2* (the n-th positive (odd) integer that is a palindrome when written in base 2).
  * @author Sean A. Irvine
  */
-public class A164302 implements Sequence {
+public class A164302 extends Sequence1 {
 
   private long mN = 0;
 

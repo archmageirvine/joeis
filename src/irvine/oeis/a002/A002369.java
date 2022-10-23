@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.UnimplementedException;
 
 //import java.util.ArrayList;
@@ -11,7 +11,7 @@ import irvine.oeis.UnimplementedException;
  * A002369 Number of ways of folding a strip of n rectangular stamps.
  * @author Sean A. Irvine
  */
-public class A002369 implements Sequence {
+public class A002369 extends Sequence1 {
 
   // Possibly erroneous form of A056780
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023401 If any even power of 2 ends with k 1's and 4's, they must be the first k terms of this sequence in reverse order.
  * @author Sean A. Irvine
  */
-public class A023401 implements Sequence {
+public class A023401 extends Sequence1 {
 
   private Z mA = Z.ZERO;
   private Z mT = Z.ONE;

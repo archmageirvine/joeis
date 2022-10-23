@@ -3,6 +3,7 @@ package irvine.oeis.a097;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000015;
 import irvine.oeis.a031.A031218;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a031.A031218;
  * A097106 a(n) = (Smallest prime power &gt;= n) - (greatest prime power &lt;= n).
  * @author Georg Fischer
  */
-public class A097106 implements Sequence {
+public class A097106 extends Sequence1 {
 
   final Sequence mA000015 = new A000015();
   final Sequence mA031218 = new A031218();

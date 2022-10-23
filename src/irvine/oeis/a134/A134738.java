@@ -3,13 +3,14 @@ package irvine.oeis.a134;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004215;
 
 /**
  * A134738 Cubes which are not the sum of three squares.
  * @author Georg Fischer
  */
-public class A134738 implements Sequence {
+public class A134738 extends Sequence1 {
 
   final Sequence mA004215 = new A004215();
   @Override

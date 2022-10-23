@@ -3,13 +3,13 @@ package irvine.oeis.a333;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A333493 a(n) = Sum_{k=1..n} (-1)^(k+1) * lcm(n,k) / gcd(n,k).
  * @author Georg Fischer
  */
-public class A333493 implements Sequence {
+public class A333493 extends Sequence1 {
 
   private int mN = 0;
 

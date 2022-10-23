@@ -3,14 +3,14 @@ package irvine.oeis.a034;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038548;
 
 /**
  * A034836 Number of ways to write n as n = x*y*z with 1 &lt;= x &lt;= y &lt;= z.
  * @author Sean A. Irvine
  */
-public class A034836 implements Sequence {
+public class A034836 extends Sequence1 {
 
   // After Rick L. Shepherd
 

@@ -3,13 +3,14 @@ package irvine.oeis.a097;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033044;
 
 /**
  * A097253 Numbers whose set of base 7 digits is {0,6}.
  * @author Georg Fischer
  */
-public class A097253 implements Sequence {
+public class A097253 extends Sequence1 {
 
   final Sequence mA033044 = new A033044();
   @Override

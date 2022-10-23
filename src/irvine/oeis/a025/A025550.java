@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A025550 a(n) = ( 1/1 + 1/3 + 1/5 + ... + 1/(2*n-1) )*LCM(1, 3, 5, ..., 2*n-1).
  * @author Sean A. Irvine
  */
-public class A025550 implements Sequence {
+public class A025550 extends Sequence1 {
 
   private Z mL = Z.ONE;
   private Q mA = Q.ZERO;

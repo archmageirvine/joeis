@@ -2,14 +2,14 @@ package irvine.oeis.a047;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A047993 Number of balanced partitions of n: the largest part equals the number of parts.
  *
  * @author Sean A. Irvine
  */
-public class A047993 implements Sequence {
+public class A047993 extends Sequence1 {
 
   private int mN = 0;
 

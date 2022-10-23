@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007833 Number of point-labeled reduced two-graphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A007833 implements Sequence {
+public class A007833 extends Sequence1 {
 
   private int mN = 0;
 

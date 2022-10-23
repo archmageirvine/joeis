@@ -4,13 +4,13 @@ import java.util.Iterator;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A081463 Numbers which when multiplied by their final digit have products with same digital sequence except that last is first. Numbers obtained by concatenating a term any number of times with itself also have the defining property and are omitted.
  * @author Sean A. Irvine
  */
-public class A081463 implements Sequence {
+public class A081463 extends Sequence1 {
 
   private Z f(final long digit) {
     final StringBuilder v = new StringBuilder();

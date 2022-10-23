@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053193 Cototient of odd numbers.
  * @author Sean A. Irvine
  */
-public class A053193 implements Sequence {
+public class A053193 extends Sequence1 {
 
   private Z mN = Z.ONE;
   

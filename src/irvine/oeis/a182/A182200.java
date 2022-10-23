@@ -3,13 +3,14 @@ package irvine.oeis.a182;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a066.A066872;
 
 /**
  * A182200 a(n) = prime(n)^2-3.
  * @author Georg Fischer
  */
-public class A182200 implements Sequence {
+public class A182200 extends Sequence1 {
 
   final Sequence mA066872 = new A066872();
   @Override

@@ -4,13 +4,13 @@ package irvine.oeis.a064;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A064840 a(n) = tau(n)*sigma(n).
  * @author Georg Fischer
  */
-public class A064840 implements Sequence {
+public class A064840 extends Sequence1 {
 
   protected long mN = 0;
   

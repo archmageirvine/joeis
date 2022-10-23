@@ -3,13 +3,14 @@ package irvine.oeis.a208;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a016.A016777;
 
 /**
  * A208148 Number of n state 1 dimensional radius-1 totalistic cellular automata.
  * @author Georg Fischer
  */
-public class A208148 implements Sequence {
+public class A208148 extends Sequence1 {
 
   final Sequence mA016777 = new A016777();
   protected long mN;

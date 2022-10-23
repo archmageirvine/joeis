@@ -3,13 +3,14 @@ package irvine.oeis.a243;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a061.A061395;
 
 /**
  * A243291 Difference between n and the index of its largest prime factor: a(n) = n - A061395(n).
  * @author Georg Fischer
  */
-public class A243291 implements Sequence {
+public class A243291 extends Sequence1 {
 
   final Sequence mA061395 = new A061395();
   protected long mN;

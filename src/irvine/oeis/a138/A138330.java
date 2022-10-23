@@ -3,13 +3,14 @@ package irvine.oeis.a138;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007069;
 
 /**
  * A138330 Beatty discrepancy (defined in A138253) giving the closeness of the pair (A136497,A136498) to the Beatty pair (A001951,A001952).
  * @author Georg Fischer
  */
-public class A138330 implements Sequence {
+public class A138330 extends Sequence1 {
 
   final Sequence mA007069 = new A007069();
   protected long mN;

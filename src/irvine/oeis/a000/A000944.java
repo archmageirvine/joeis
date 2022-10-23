@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.plantri.Plantri;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000944 Number of polyhedra (or 3-connected simple planar graphs) with n nodes.
  * @author Sean A. Irvine
  */
-public class A000944 implements Sequence {
+public class A000944 extends Sequence1 {
 
   private int mN = 0;
 

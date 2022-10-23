@@ -3,13 +3,13 @@ package irvine.oeis.a038;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038037 Number of labeled rooted compound windmills (mobiles) with n nodes.
  * @author Sean A. Irvine
  */
-public class A038037 implements Sequence {
+public class A038037 extends Sequence1 {
 
   private long mN = 0;
 

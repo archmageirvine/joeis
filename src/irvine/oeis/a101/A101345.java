@@ -3,13 +3,14 @@ package irvine.oeis.a101;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000201;
 
 /**
  * A101345 a(n) = Knuth's Fibonacci (or circle) product "2 o n".
  * @author Georg Fischer
  */
-public class A101345 implements Sequence {
+public class A101345 extends Sequence1 {
 
   final Sequence mA000201 = new A000201();
   protected long mN;

@@ -3,13 +3,13 @@ package irvine.oeis.a077;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A077407 In base 3, records for the number of Reverse and Add! steps needed to reach a palindrome.
  * @author Sean A. Irvine
  */
-public class A077407 implements Sequence {
+public class A077407 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   protected long mN = -1;

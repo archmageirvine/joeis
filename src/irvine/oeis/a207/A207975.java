@@ -4,14 +4,14 @@ import java.util.Arrays;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A207975 Triangle where row n consists of a sequence of n positive integers g(1) &lt; g(2) &lt; ... &lt; g(n) with the minimal sum such that A001222(g(i)+g(j)) = A001222(g(i)) + A001222(g(j)) for all 1 &lt;= i &lt; j &lt;= n.
  * @author Sean A. Irvine
  */
-public class A207975 implements Sequence {
+public class A207975 extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;

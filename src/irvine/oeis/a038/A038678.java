@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038678 Squares ending in a different nonzero square.
  * @author Sean A. Irvine
  */
-public class A038678 implements Sequence {
+public class A038678 extends Sequence1 {
 
   private long mN = 6;
 

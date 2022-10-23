@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038450 Sums of 8 distinct powers of 10.
  * @author Sean A. Irvine
  */
-public class A038450 implements Sequence {
+public class A038450 extends Sequence1 {
 
   private Z mN = null;
 

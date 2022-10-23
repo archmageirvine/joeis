@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014991 a(n) = (1 - (-9)^n)/10.
  * @author Sean A. Irvine
  */
-public class A014991 implements Sequence {
+public class A014991 extends Sequence1 {
 
   private Z mT = Z.ONE;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023144 Numbers k such that prime(k) == 2 (mod k).
  * @author Sean A. Irvine
  */
-public class A023144 implements Sequence {
+public class A023144 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

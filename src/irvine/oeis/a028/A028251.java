@@ -3,13 +3,13 @@ package irvine.oeis.a028;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028251 Sequence arising in multiprocessor page migration.
  * @author Sean A. Irvine
  */
-public class A028251 implements Sequence {
+public class A028251 extends Sequence1 {
 
   private long mN = 0;
 

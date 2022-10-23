@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055143 The first n digits of the juxtaposition of the base-2 numbers converted to decimal.
  * @author Georg Fischer
  */
-public class A055143 implements Sequence {
+public class A055143 extends Sequence1 {
 
   private int mN;
   private int mBase;

@@ -4,14 +4,14 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A059753 Minimal degree of a height one multiple of (x-1)^n.
  * @author Sean A. Irvine
  */
-public class A059753 implements Sequence {
+public class A059753 extends Sequence1 {
 
   // This is a simple exhaustive search. Only good for a few terms.
 

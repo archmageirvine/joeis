@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003685 Number of Hamiltonian paths in P_3 X P_n.
  * @author Sean A. Irvine
  */
-public class A003685 implements Sequence {
+public class A003685 extends Sequence1 {
 
   private static final Z Z23 = Z.valueOf(23);
   private static final Z Z25 = Z.valueOf(25);

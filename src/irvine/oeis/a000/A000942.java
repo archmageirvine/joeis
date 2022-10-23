@@ -9,7 +9,7 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 import irvine.util.Point;
 
@@ -17,7 +17,7 @@ import irvine.util.Point;
  * A000942 Number of free planar polyenoids with n nodes.
  * @author Sean A. Irvine
  */
-public class A000942 implements Sequence, GraphProcessor {
+public class A000942 extends Sequence1 implements GraphProcessor {
 
   // Step 1: Generate all tri-valent trees with n nodes
   // Step 2: For each tree generate all possible embeddings in hexagonal lattice

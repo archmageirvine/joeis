@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A008366 Smallest prime factor is &gt;= 17.
  * @author Sean A. Irvine
  */
-public class A008366 implements Sequence {
+public class A008366 extends Sequence1 {
 
   private long mN = -1;
 

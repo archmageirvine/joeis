@@ -1,14 +1,14 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
  * A058230 Numbers k such that the product of the lengths of the words in the name of k in American English is equal to k.
  * @author Sean A. Irvine
  */
-public class A058230 implements Sequence {
+public class A058230 extends Sequence1 {
 
   private int mN = 3;
 

@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A035352 Number of increasing rooted polygonal cacti with bridges (mixed Husimi trees) with n nodes.
  * @author Sean A. Irvine
  */
-public class A035352 implements Sequence {
+public class A035352 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C2 = RING.create(Collections.singletonList(Q.TWO));

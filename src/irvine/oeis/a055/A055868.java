@@ -1,14 +1,14 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055868 Fifth column of triangle A055864.
  * a(i)=0 for i=1..4; a(n)= n^4*(n+1)^(n-5), n &gt;= 5.
  * @author Georg Fischer
  */
-public class A055868 implements Sequence {
+public class A055868 extends Sequence1 {
 
   protected int mN = 0;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059519 Number of partitions of n all of whose subpartitions sum to distinct values. Partition(n) = [a, b, c...] where 2n = 2^a + 2^b + 2^c + ...
  * @author Sean A. Irvine
  */
-public class A059519 implements Sequence {
+public class A059519 extends Sequence1 {
 
   private long mN = 0;
   private final int[] mBits = new int[64];

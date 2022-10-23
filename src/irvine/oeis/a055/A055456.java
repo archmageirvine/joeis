@@ -1,14 +1,14 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A055456 a(n) is the smallest number which is not the sum of exactly 1 or of n earlier terms.
  * @author Sean A. Irvine
  */
-public class A055456 implements Sequence {
+public class A055456 extends Sequence1 {
 
   private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
   private long mN = 0;

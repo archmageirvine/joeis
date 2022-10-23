@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048393 Replacing digits d in decimal expansion of n with d^3 yields a prime.
  * @author Sean A. Irvine
  */
-public class A048393 implements Sequence {
+public class A048393 extends Sequence1 {
 
   private long mN = -1;
 

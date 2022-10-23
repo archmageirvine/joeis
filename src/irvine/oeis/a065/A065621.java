@@ -3,12 +3,13 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a048.A048724;
 /**
  * A065621 Reversing binary representation of n. Converting sum of powers of 2 in binary representation of a(n) to alternating sum gives n.
  * @author Georg Fischer
  */
-public class A065621 implements Sequence {
+public class A065621 extends Sequence1 {
 
   private final Sequence mA048724 = new A048724();
   protected long mN;

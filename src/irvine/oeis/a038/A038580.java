@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038580 Primes with indices that are primes with prime indices.
  * @author Sean A. Irvine
  */
-public class A038580 implements Sequence {
+public class A038580 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mP0 = 0;

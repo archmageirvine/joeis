@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057159 Numbers k that divide s(k-1), where s(1) = 1, s(k) = s(k-1) + (k+1)*3^k.
  * @author Sean A. Irvine
  */
-public class A057159 implements Sequence {
+public class A057159 extends Sequence1 {
 
   private long mN = 3;
 

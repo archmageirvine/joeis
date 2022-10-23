@@ -3,13 +3,13 @@ package irvine.oeis.a028;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028927 Numbers represented by quadratic form with Gram matrix [ 3, 1; 1, 5 ].
  * @author Sean A. Irvine
  */
-public class A028927 implements Sequence {
+public class A028927 extends Sequence1 {
 
   // 3x^2 + 5y^2 +/- 2xy, with x >= 0, y >= 0
 

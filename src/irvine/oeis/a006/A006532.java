@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A006532 Numbers whose sum of divisors is a square.
  * @author Sean A. Irvine
  */
-public class A006532 implements Sequence {
+public class A006532 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

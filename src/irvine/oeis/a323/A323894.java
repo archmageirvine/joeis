@@ -3,12 +3,13 @@ package irvine.oeis.a323;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a048.A048673;
 /**
  * A323894 Sum of A048673 and its Dirichlet inverse, A323893.
  * @author Georg Fischer
  */
-public class A323894 implements Sequence {
+public class A323894 extends Sequence1 {
 
   private final Sequence mA048673 = new A048673();
   private final Sequence mA323893 = new A323893();

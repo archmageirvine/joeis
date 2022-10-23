@@ -3,13 +3,14 @@ package irvine.oeis.a055;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000587;
 
 /**
  * A055925 Exponential reciprocal of A055924.
  * @author Sean A. Irvine
  */
-public class A055925 implements Sequence {
+public class A055925 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

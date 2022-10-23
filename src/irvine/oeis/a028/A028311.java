@@ -5,14 +5,14 @@ import java.util.BitSet;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A028311 Odd numbers k such that {1..k-1} can be partitioned into disjoint sets I, J with 2I == -J (mod k) such that I, J are unions of cyclotomic cosets mod k.
  * @author Sean A. Irvine
  */
-public class A028311 implements Sequence {
+public class A028311 extends Sequence1 {
 
   // Could be done with the Group framework
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));

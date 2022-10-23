@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000128 A nonlinear binomial sum.
  * @author Sean A. Irvine
  */
-public class A000128 implements Sequence {
+public class A000128 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   private final A000045 mFib = new A000045();

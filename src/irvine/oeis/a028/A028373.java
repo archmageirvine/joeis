@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A028373 Numbers that have only the straight digits {1, 4, 7}.
  * @author Sean A. Irvine
  */
-public class A028373 implements Sequence {
+public class A028373 extends Sequence1 {
 
   private long mN = 0;
 

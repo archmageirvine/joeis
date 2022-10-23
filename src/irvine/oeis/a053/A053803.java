@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A053803 Numbers where the difference of consecutive cubes is "close" to another cube: let A = x^3 - (x-1)^3, sequence is the x's where A - int(A^(1/3))^3 &lt; int(x^(1/2))^3.
  * @author Sean A. Irvine
  */
-public class A053803 implements Sequence {
+public class A053803 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

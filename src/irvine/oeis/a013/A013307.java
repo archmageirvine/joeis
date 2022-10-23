@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013307 Numerator of [x^n] in the Taylor series arccosh(exp(x) - tan(x)) = x - x^2/6 - x^3/72 - 43*x^4/432 - 221*x^5/10368 - 89513*x^6/2177280 - ...
  * @author Sean A. Irvine
  */
-public class A013307 implements Sequence {
+public class A013307 extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 0;

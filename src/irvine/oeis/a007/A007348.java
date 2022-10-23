@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A007348 Primes for which -10 is a primitive root.
  * @author Sean A. Irvine
  */
-public class A007348 implements Sequence {
+public class A007348 extends Sequence1 {
 
   protected Z mParm;
   protected Z mParmNeg;

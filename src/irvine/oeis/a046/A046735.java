@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A046735 Nontrivial (i.e., having no nontrivial factors with this property) integers which do not divide any terms of A000213.
  * @author Sean A. Irvine
  */
-public class A046735 implements Sequence {
+public class A046735 extends Sequence1 {
 
   // After Charles R Greathouse IV
 

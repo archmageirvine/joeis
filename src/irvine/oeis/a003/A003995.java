@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003995 Sum of (any number of) distinct squares: of form r^2 + s^2 + t^2 + ... with 0 &lt;= r &lt; s &lt; t &lt; ...
  * @author Sean A. Irvine
  */
-public class A003995 implements Sequence {
+public class A003995 extends Sequence1 {
 
   private static final long[] SEQ = {
     0, 1, 4, 5, 9, 10, 13, 14, 16, 17, 20, 21, 25, 26, 29, 30, 34, 35, 36, 37, 38, 39, 40, 41, 42, 45, 46, 49, 50,

@@ -3,13 +3,14 @@ package irvine.oeis.a172;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000169;
 
 /**
  * A172165 A simple sequence a(n) = n + n^(n-1).
  * @author Georg Fischer
  */
-public class A172165 implements Sequence {
+public class A172165 extends Sequence1 {
 
   final Sequence mA000169 = new A000169();
   protected long mN;

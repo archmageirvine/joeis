@@ -3,13 +3,14 @@ package irvine.oeis.a060;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007522;
 
 /**
  * A060108 Sequence of sums based on primes = 7 mod 8.
  * @author Georg Fischer
  */
-public class A060108 implements Sequence {
+public class A060108 extends Sequence1 {
 
   final Sequence mA007522 = new A007522();
   @Override

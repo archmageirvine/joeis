@@ -1,14 +1,14 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A028386 Numbers k such that k*(3k-1)/2 is a pentagonal palindrome.
  * @author Sean A. Irvine
  */
-public class A028386 implements Sequence {
+public class A028386 extends Sequence1 {
 
   private Z mN = Z.ZERO;
   

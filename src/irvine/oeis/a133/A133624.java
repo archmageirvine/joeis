@@ -3,13 +3,13 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A133624 Binomial(n+p, n) mod n, where p=4.
  * @author Georg Fischer
  */
-public class A133624 implements Sequence {
+public class A133624 extends Sequence1 {
 
   protected Z mN;
 

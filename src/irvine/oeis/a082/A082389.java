@@ -4,13 +4,13 @@ package irvine.oeis.a082;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A082389 a(n) = floor((n+2)*phi) - floor((n+1)*phi) where phi=(1+sqrt(5))/2.
  * @author Georg Fischer
  */
-public class A082389 implements Sequence {
+public class A082389 extends Sequence1 {
   private long mN = 0;
 
   @Override

@@ -3,13 +3,13 @@ package irvine.oeis.a211;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A211932 a(n) = Sum_{ m=1..n and gcd(n,m)&gt;1 } tau(m), tau(m)=A000005(m).
  * @author Georg Fischer
  */
-public class A211932 implements Sequence {
+public class A211932 extends Sequence1 {
 
   private int mN = 0;
 

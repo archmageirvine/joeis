@@ -3,13 +3,13 @@ package irvine.oeis.a074;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A074031 Number of degree-n irreducible polynomials over GF(4) with trace 0 and subtrace 0.
  * @author Sean A. Irvine
  */
-public class A074031 implements Sequence {
+public class A074031 extends Sequence1 {
 
   // After Andrey Zabolotskiy
 

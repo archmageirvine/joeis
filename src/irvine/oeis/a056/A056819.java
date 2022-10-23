@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A056819 a(n) = Product_{k|n} (n+1-k).
  * @author Georg Fischer
  */
-public class A056819 implements Sequence {
+public class A056819 extends Sequence1 {
 
   protected int mN = 0;
 

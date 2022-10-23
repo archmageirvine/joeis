@@ -5,14 +5,14 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
  * A001058 1-digit numbers in reverse alphabetical order, then 2-digit numbers, etc.
  * @author Sean A. Irvine
  */
-public class A001058 implements Sequence {
+public class A001058 extends Sequence1 {
 
   private static class MyComparator implements Comparator<Z>, Serializable {
     @Override

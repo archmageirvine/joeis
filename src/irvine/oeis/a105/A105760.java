@@ -2,14 +2,14 @@ package irvine.oeis.a105;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A105760 Nonnegative numbers k such that 2k+7 is prime.
  *
  * @author Karsten Knuth
  */
-public class A105760 implements Sequence {
+public class A105760 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

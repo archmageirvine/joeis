@@ -3,12 +3,13 @@ package irvine.oeis.a296;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033879;
 /**
  * A296074 Sum of deficiencies of the proper divisors of n.
  * @author Georg Fischer
  */
-public class A296074 implements Sequence {
+public class A296074 extends Sequence1 {
 
   private final Sequence mA033879 = new A033879();
   private final Sequence mA296075 = new A296075();

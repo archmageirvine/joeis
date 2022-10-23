@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A057763 Least nonnegative square root of 5 mod n for n in A057762.
  * @author Sean A. Irvine
  */
-public class A057763 implements Sequence {
+public class A057763 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

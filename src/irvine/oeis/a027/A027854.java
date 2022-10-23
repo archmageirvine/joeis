@@ -3,13 +3,13 @@ package irvine.oeis.a027;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027854 Mutinous numbers: n &gt; 1 such that n/p^k &gt; p, where p is the largest prime dividing n and p^k is the highest power of p dividing n.
  * @author Sean A. Irvine
  */
-public class A027854 implements Sequence {
+public class A027854 extends Sequence1 {
 
   private long mN = 11;
 

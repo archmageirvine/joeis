@@ -1,14 +1,14 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A056533 Even sieve: start with natural numbers, remove every 2nd term, remove every 4th term from what remains, remove every 6th term from what remains, etc.
  * @author Sean A. Irvine
  */
-public class A056533 implements Sequence {
+public class A056533 extends Sequence1 {
 
   private final DynamicIntArray mDownCounts = new DynamicIntArray();
   {

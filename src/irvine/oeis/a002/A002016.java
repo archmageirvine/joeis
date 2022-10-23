@@ -1,14 +1,14 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000292;
 
 /**
  * A002016 Number of first n tetrahedral numbers (A000292) that are relatively prime to n.
  * @author Sean A. Irvine
  */
-public class A002016 implements Sequence {
+public class A002016 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A023062 Numbers k such that k and 3*k are anagrams in base 5 (written in base 5).
  * @author Sean A. Irvine
  */
-public class A023062 implements Sequence {
+public class A023062 extends Sequence1 {
 
   private long mN = 0;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A050764 Numbers of form k^k (for values of k see A050763) containing no pair of consecutive equal digits (probably finite).
  * @author Sean A. Irvine
  */
-public class A050764 implements Sequence {
+public class A050764 extends Sequence1 {
 
   private long mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a139;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A139052 Array read by rows: row n lists the first two primes with n digits.
  * @author Sean A. Irvine
  */
-public class A139052 implements Sequence {
+public class A139052 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mB = null;

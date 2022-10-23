@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A055702 Numbers n such that n | Sigma_8(n) + Phi(n)^8.
  * @author Sean A. Irvine
  */
-public class A055702 implements Sequence {
+public class A055702 extends Sequence1 {
 
   private long mN = 0;
 

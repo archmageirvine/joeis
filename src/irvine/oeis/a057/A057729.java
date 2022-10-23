@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import jmason.poly.Polyiamond;
 import jmason.poly.PolyiamondCounter;
 
@@ -11,7 +11,7 @@ import jmason.poly.PolyiamondCounter;
  * A057729 Number of triangular polyominoes (or polyiamonds) [A000577] with perimeter n.
  * @author Sean A. Irvine
  */
-public class A057729 implements Sequence {
+public class A057729 extends Sequence1 {
 
   private int mM = 0;
   private int mN = 0;

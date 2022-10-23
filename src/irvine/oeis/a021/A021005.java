@@ -2,14 +2,14 @@ package irvine.oeis.a021;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a037.A037074;
 
 /**
  * A021005 Let q_k=p(p+2) be product of k-th pair of twin primes; sequence gives values of p such that (q_k)^2 &gt; q_{k-i}q_{k+i} for all 1 &lt;= i &lt;= k-1.
  * @author Sean A. Irvine
  */
-public class A021005 implements Sequence {
+public class A021005 extends Sequence1 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A037074());
   private int mN = -1;

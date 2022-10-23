@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A014263 Numbers that contain even digits only.
  * @author Sean A. Irvine
  */
-public class A014263 implements Sequence {
+public class A014263 extends Sequence1 {
 
   private long mN = -2;
 

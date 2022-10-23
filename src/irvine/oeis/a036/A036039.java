@@ -7,13 +7,13 @@ import irvine.math.Comparators;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A036039 Irregular triangle of multinomial coefficients of integer partitions read by rows (in Abramowitz and Stegun ordering) giving the coefficients of the cycle index polynomials for the symmetric groups S_n.
  * @author Sean A. Irvine
  */
-public class A036039 implements Sequence {
+public class A036039 extends Sequence1 {
 
   private final TreeSet<int[]> mA = new TreeSet<>(Comparators.LEXICOGRAPHIC);
   private int mN = 0;

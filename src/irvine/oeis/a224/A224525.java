@@ -3,13 +3,14 @@ package irvine.oeis.a224;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002541;
 
 /**
  * A224525 Number of idempotent 3 X 3 0..n matrices of rank 1.
  * @author Georg Fischer
  */
-public class A224525 implements Sequence {
+public class A224525 extends Sequence1 {
 
   final Sequence mA002541 = new A002541();
   protected long mN;

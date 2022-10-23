@@ -2,13 +2,13 @@ package irvine.oeis.a013;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A013698 a(n) = binomial(3*n+2, n-1).
  * @author Sean A. Irvine
  */
-public class A013698 implements Sequence {
+public class A013698 extends Sequence1 {
 
   private long mN = 0;
 

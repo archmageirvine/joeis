@@ -2,13 +2,13 @@ package irvine.oeis.a039;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A039700 Numbers k such that the largest power of 3 dividing k equals 3^omega(k).
  * @author Sean A. Irvine
  */
-public class A039700 implements Sequence {
+public class A039700 extends Sequence1 {
 
   private long mN = -1;
 

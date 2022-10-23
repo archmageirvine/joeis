@@ -3,12 +3,13 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051293;
 /**
  * A065795 Number of subsets of {1,2,...,n} that contain the average of their elements.
  * @author Georg Fischer
  */
-public class A065795 implements Sequence {
+public class A065795 extends Sequence1 {
 
   private final Sequence mA051293 = new A051293();
   protected long mN;

@@ -3,13 +3,14 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a048.A048050;
 
 /**
  * A054013 Chowla function of n read modulo n.
  * @author Georg Fischer
  */
-public class A054013 implements Sequence {
+public class A054013 extends Sequence1 {
 
   final Sequence mA048050 = new A048050();
   protected long mN;

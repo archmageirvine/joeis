@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 import irvine.util.array.LongDynamicBooleanArray;
 
@@ -9,7 +9,7 @@ import irvine.util.array.LongDynamicBooleanArray;
  * A002960 The square sieve.
  * @author Sean A. Irvine
  */
-public class A002960 implements Sequence {
+public class A002960 extends Sequence1 {
 
   // Start with
   //    1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,...

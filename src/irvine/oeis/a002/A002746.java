@@ -2,14 +2,14 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 
 /**
  * A002746 Sum of logarithmic numbers.
  * @author Sean A. Irvine
  */
-public class A002746 implements Sequence {
+public class A002746 extends Sequence1 {
 
   private long mN = 0;
 

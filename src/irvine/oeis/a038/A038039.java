@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A038039 a(n) = Sum_{d|n} (2^d*3^(n/d)).
  * @author Sean A. Irvine
  */
-public class A038039 implements Sequence {
+public class A038039 extends Sequence1 {
 
   private int mN = 0;
 

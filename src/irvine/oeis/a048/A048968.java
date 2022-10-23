@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A048968 Numbers k such that sigma(k) / d(k) is prime.
  * @author Sean A. Irvine
  */
-public class A048968 implements Sequence {
+public class A048968 extends Sequence1 {
 
   private long mN = 2;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A059469 Numbers that are the products of distinct substrings of themselves.
  * @author Sean A. Irvine
  */
-public class A059469 implements Sequence {
+public class A059469 extends Sequence1 {
 
   private long mN = 109;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a042;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A042943 Numbers k such that binomial(2^k, k) is divisible by binomial(2^k, 2).
  * @author Sean A. Irvine
  */
-public class A042943 implements Sequence {
+public class A042943 extends Sequence1 {
 
   private int mN = 0;
 

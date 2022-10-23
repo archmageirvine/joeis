@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A033553 3-Kn\u00f6del numbers or D-numbers: numbers n &gt; 3 such that n | k^(n-2)-k for all k with gcd(k, n) = 1.
  * @author Sean A. Irvine
  */
-public class A033553 implements Sequence {
+public class A033553 extends Sequence1 {
 
   // After Max Alekseyev
 

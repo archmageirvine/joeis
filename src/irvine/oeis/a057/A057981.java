@@ -6,13 +6,13 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057981 Number of singular n X n (-1,0,1)-matrices.
  * @author Sean A. Irvine
  */
-public class A057981 implements Sequence {
+public class A057981 extends Sequence0 {
 
   private int mN = -1;
 

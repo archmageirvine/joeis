@@ -3,13 +3,14 @@ package irvine.oeis.a183;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 
 /**
  * A183011 (24n - 1)p(n): traces of partition class polynomials, with a(0) = -1.
  * @author Georg Fischer
  */
-public class A183011 implements Sequence {
+public class A183011 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   final Sequence mA183010 = new A183010();

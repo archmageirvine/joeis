@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001791 a(n) = binomial coefficient C(2n, n-1).
  * @author Sean A. Irvine
  */
-public class A001791 implements Sequence {
+public class A001791 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = null;

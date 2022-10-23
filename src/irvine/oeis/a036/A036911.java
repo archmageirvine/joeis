@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036911 a(n) = (binomial(4*n, 2*n) + (-1)^n*binomial(2*n, n)^2)/2.
  * @author Sean A. Irvine
  */
-public class A036911 implements Sequence {
+public class A036911 extends Sequence0 {
 
   private long mN = -1;
 

@@ -7,13 +7,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A080018 Triangle of coefficients of polynomials P(n; x) = Permanent(M), where M=[m(i,j)] is n X n matrix defined by m(i,j)=x if -1&lt;=i-j&lt;=1 else m(i,j)=1.
  * @author Sean A. Irvine
  */
-public class A080018 implements Sequence {
+public class A080018 extends Sequence0 {
 
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private Polynomial<Z> mP = null;

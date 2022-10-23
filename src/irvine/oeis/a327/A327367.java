@@ -3,6 +3,7 @@ package irvine.oeis.a327;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006125;
 import irvine.oeis.a006.A006129;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006129;
  * A327367 Number of labeled simple graphs with n vertices, at least one of which is isolated.
  * @author Georg Fischer
  */
-public class A327367 implements Sequence {
+public class A327367 extends Sequence0 {
 
   final Sequence mA006125 = new A006125();
   final Sequence mA006129 = new A006129();

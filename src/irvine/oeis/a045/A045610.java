@@ -5,13 +5,13 @@ import java.util.TreeSet;
 import irvine.math.LongUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045610 Number of different energy states of n positive and n negative charges on a string.
  * @author Sean A. Irvine
  */
-public class A045610 implements Sequence {
+public class A045610 extends Sequence0 {
 
   private int mN = -1;
 

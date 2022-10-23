@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053462 Number of positive squarefree integers less than 10^n.
  * @author Sean A. Irvine
  */
-public class A053462 implements Sequence {
+public class A053462 extends Sequence0 {
 
   private long mN = 0;
   private long mLim = 1;

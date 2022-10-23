@@ -3,6 +3,7 @@ package irvine.oeis.a232;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000120;
 import irvine.oeis.a159.A159918;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a159.A159918;
  * A232243 a(n) = wt(n^2) - wt(n), where wt(n) = A000120(n) is the binary weight function.
  * @author Georg Fischer
  */
-public class A232243 implements Sequence {
+public class A232243 extends Sequence0 {
 
   final Sequence mA000120 = new A000120();
   final Sequence mA159918 = new A159918();

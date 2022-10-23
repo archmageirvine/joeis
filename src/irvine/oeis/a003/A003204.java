@@ -6,7 +6,7 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import jmason.poly.CoordSet2T;
 import jmason.poly.Polyiamond;
 import jmason.poly.UniquenessTester;
@@ -15,7 +15,7 @@ import jmason.poly.UniquenessTester;
  * A003204 Cluster series for honeycomb.
  * @author Sean A. Irvine
  */
-public class A003204 implements Sequence {
+public class A003204 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C = RING.oneMinusXToTheN(1);

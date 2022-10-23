@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055203 Number of different relations between n intervals on a line.
  * @author Sean A. Irvine
  */
-public class A055203 implements Sequence {
+public class A055203 extends Sequence0 {
 
   protected long mN = -1;
 

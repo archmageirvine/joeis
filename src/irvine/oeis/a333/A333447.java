@@ -1,14 +1,14 @@
 package irvine.oeis.a333;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A333447 a(n) is the integer corresponding to a bit-string representation of the von Neumann ordinal representation of n, with largest sets listed first, and with '{' represented by the bit 1, '}' represented by the bit zero, and ignoring commas.
  * a(0) = 2, a(n) = 2^(2^(n+1)-1) - 2^(2^(n)-1) + a(n-1)*(2^(2^(n)-1) + 1).
  * @author Georg Fischer
  */
-public class A333447 implements Sequence {
+public class A333447 extends Sequence0 {
 
   private int mN;
   private Z mA;

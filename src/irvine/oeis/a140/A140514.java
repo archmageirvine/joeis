@@ -3,6 +3,7 @@ package irvine.oeis.a140;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000931;
 import irvine.oeis.a010.A010060;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a010.A010060;
  * A140514 a(n) = Padovan(n+4) - ThueMorse(n).
  * @author Georg Fischer
  */
-public class A140514 implements Sequence {
+public class A140514 extends Sequence0 {
 
   final Sequence mA000931 = new A000931();
   final Sequence mA010060 = new A010060();

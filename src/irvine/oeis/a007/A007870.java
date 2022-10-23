@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007870 Determinant of character table of symmetric group S_n.
  * @author Sean A. Irvine
  */
-public class A007870 implements Sequence {
+public class A007870 extends Sequence0 {
 
   private int mN = -1;
 

@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A337001 a(n) = n! * Sum_{k=0..n} k^3 / k!.
  * E.g.f.: x * (1 + 3*x + x^2) * exp(x) / (1 - x)
  * @author Georg Fischer
  */
-public class A337001 implements Sequence {
+public class A337001 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

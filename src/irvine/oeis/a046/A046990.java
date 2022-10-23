@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046990 Numerators of Taylor series for log(1/cos(x)). Also from log(cos(x)).
  * @author Sean A. Irvine
  */
-public class A046990 implements Sequence {
+public class A046990 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -2;

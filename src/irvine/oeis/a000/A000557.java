@@ -4,13 +4,13 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000557 Expansion of e.g.f.: 1/(1-2*sinh(x)).
  * @author Sean A. Irvine
  */
-public class A000557 implements Sequence {
+public class A000557 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

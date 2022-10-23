@@ -3,6 +3,7 @@ package irvine.oeis.a340;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004086;
 import irvine.oeis.a007.A007953;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007953;
  * A340479 a(n) = R(n) + digsum(n).
  * @author Georg Fischer
  */
-public class A340479 implements Sequence {
+public class A340479 extends Sequence0 {
 
   final Sequence mA004086 = new A004086();
   final Sequence mA007953 = new A007953();

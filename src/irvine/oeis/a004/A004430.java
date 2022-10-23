@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004430 Geometric mean of digits of n (rounded up).
  * @author Sean A. Irvine
  */
-public class A004430 implements Sequence {
+public class A004430 extends Sequence0 {
 
   private long mN = -1;
 

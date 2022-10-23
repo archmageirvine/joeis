@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006605 Number of modes of connections of 2n points.
  * @author Sean A. Irvine
  */
-public class A006605 implements Sequence {
+public class A006605 extends Sequence0 {
 
   private long mN = -1;
 

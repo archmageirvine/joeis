@@ -3,13 +3,14 @@ package irvine.oeis.a247;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000982;
 
 /**
  * A247014 Number of binary centrosymmetric matrices of size n X n.
  * @author Georg Fischer
  */
-public class A247014 implements Sequence {
+public class A247014 extends Sequence0 {
 
   final Sequence mA000982 = new A000982();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005773 Number of directed animals of size n (or directed n-ominoes in standard position).
  * @author Sean A. Irvine
  */
-public class A005773 implements Sequence {
+public class A005773 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.ONE;

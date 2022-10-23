@@ -3,6 +3,7 @@ package irvine.oeis.a268;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000984;
 import irvine.oeis.a114.A114496;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a114.A114496;
  * A268543 The diagonal of 1/(1 - (y + z + x z + x w + x y w)).
  * @author Georg Fischer
  */
-public class A268543 implements Sequence {
+public class A268543 extends Sequence0 {
 
   final Sequence mA000984 = new A000984();
   final Sequence mA114496 = new A114496();

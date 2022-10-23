@@ -2,13 +2,13 @@ package irvine.oeis.a010;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010754 Sum along upward diagonal of Pascal triangle to halfway point.
  * @author Sean A. Irvine
  */
-public class A010754 implements Sequence {
+public class A010754 extends Sequence0 {
 
   private long mN = -1;
 

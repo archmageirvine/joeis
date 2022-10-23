@@ -3,13 +3,14 @@ package irvine.oeis.a151;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a028.A028945;
 
 /**
  * A151502 a(n) = A006720(n)^4 (fourth powers of Somos-4 sequence).
  * @author Georg Fischer
  */
-public class A151502 implements Sequence {
+public class A151502 extends Sequence0 {
 
   final Sequence mA028945 = new A028945();
   @Override

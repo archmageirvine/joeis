@@ -3,14 +3,14 @@ package irvine.oeis.a265;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A265157 Number of 2's in the base-3 representation of 2^n - 1.
  * @author Georg Fischer
  */
-public class A265157 implements Sequence {
+public class A265157 extends Sequence0 {
 
   protected int mN = -1;
   

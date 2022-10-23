@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038093 Number of nodes in largest rooted identity tree of height n.
  * @author Sean A. Irvine
  */
-public class A038093 implements Sequence {
+public class A038093 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private int mN = -1;

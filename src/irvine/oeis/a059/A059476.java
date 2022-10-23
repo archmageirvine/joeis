@@ -3,12 +3,13 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005130;
 /**
  * A059476 Number of 4n X 4n quarter-turn symmetric alternating-sign matrices (QTSASM's).
  * @author Georg Fischer
  */
-public class A059476 implements Sequence {
+public class A059476 extends Sequence0 {
 
   private final Sequence mA005130 = new A005130();
   private final Sequence mA059475 = new A059475();

@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007843 Least positive integer k for which 2^n divides k!.
  * @author Sean A. Irvine
  */
-public class A007843 implements Sequence {
+public class A007843 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 1;

@@ -4,6 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000108;
 import irvine.oeis.a038.A038776;
 import irvine.util.array.LongDynamicBooleanArray;
@@ -12,7 +13,7 @@ import irvine.util.array.LongDynamicBooleanArray;
  * A057542 Maximum cycle length in each permutation between A038776(1) and A038776(A000108(n)).
  * @author Sean A. Irvine
  */
-public class A057542 implements Sequence {
+public class A057542 extends Sequence0 {
 
   private final Sequence mCounter;
   private final MemorySequence mA;

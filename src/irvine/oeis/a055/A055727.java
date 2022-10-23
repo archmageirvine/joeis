@@ -2,13 +2,14 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000959;
 
 /**
  * A055727 Number of lucky 4,6 triples &lt;= 10^n.
  * @author Sean A. Irvine
  */
-public class A055727 implements Sequence {
+public class A055727 extends Sequence0 {
 
   private final Sequence mLucky26 = new A000959() {
 

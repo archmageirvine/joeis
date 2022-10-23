@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003099 a(n) = Sum_{k=0..n} binomial(n,k^2).
  * @author Sean A. Irvine
  */
-public class A003099 implements Sequence {
+public class A003099 extends Sequence0 {
 
   private long mN = -1;
 

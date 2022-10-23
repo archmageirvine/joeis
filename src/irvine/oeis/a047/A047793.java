@@ -2,13 +2,13 @@ package irvine.oeis.a047;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A047793 a(n) = Sum_{k=0..n} |Stirling1(n,k)*Stirling2(n,k)|.
  * @author Sean A. Irvine
  */
-public class A047793 implements Sequence {
+public class A047793 extends Sequence0 {
 
   private long mN = -1;
 

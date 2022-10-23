@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A296543 Expansion of e.g.f. tanh(exp(x)-1).
  * E.g.f.: sinh(exp(x)-1)/cosh(exp(x)-1)
  * @author Georg Fischer
  */
-public class A296543 implements Sequence {
+public class A296543 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

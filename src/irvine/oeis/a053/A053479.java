@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053479 Circle numbers (version 6): a(n) = number of points (i+j/2,j*sqrt(3)/2), i,j integers (triangular grid) contained in a circle of diameter n, centered at (1/2, 1/(2*sqrt(3))).
  * @author Sean A. Irvine
  */
-public class A053479 implements Sequence {
+public class A053479 extends Sequence0 {
 
   // After R. J. Mathar
 

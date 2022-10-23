@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020071 a(n) = floor( Gamma(n+5/8)/Gamma(5/8) ).
  * @author Sean A. Irvine
  */
-public class A020071 implements Sequence {
+public class A020071 extends Sequence0 {
 
   private static final Q C = new Q(5, 8);
   private int mN = -2;

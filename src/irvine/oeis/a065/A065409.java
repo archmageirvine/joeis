@@ -1,13 +1,13 @@
 package irvine.oeis.a065;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A065409 Fennessey-Larcombe-French sequence.
  * @author Sean A. Irvine
  */
-public class A065409 implements Sequence {
+public class A065409 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.EIGHT;

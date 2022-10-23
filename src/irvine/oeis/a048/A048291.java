@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048291 Number of {0,1} n X n matrices with no zero rows or columns.
  * @author Sean A. Irvine
  */
-public class A048291 implements Sequence {
+public class A048291 extends Sequence0 {
 
   private int mN = -1;
 

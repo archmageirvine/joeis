@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001524 Number of stacks, or arrangements of n pennies in contiguous rows, each touching 2 in row below.
  * @author Sean A. Irvine
  */
-public class A001524 implements Sequence {
+public class A001524 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;

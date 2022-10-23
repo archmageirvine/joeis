@@ -6,13 +6,13 @@ import irvine.math.polynomial.QPolynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028573 Expansion of theta_3(z)*theta_3(4z)+theta_2(z)*theta_2(4z).
  * @author Sean A. Irvine
  */
-public class A028573 implements Sequence {
+public class A028573 extends Sequence0 {
 
   private static final QPolynomialRingField<Z> RING = new QPolynomialRingField<>(IntegerField.SINGLETON);
   private Q mN = Q.ONE_QUARTER.negate();

@@ -5,13 +5,13 @@ import irvine.math.polynomial.FibonacciPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020551 5th Fibonacci polynomial evaluated at x = n!.
  * @author Sean A. Irvine
  */
-public class A020551 implements Sequence {
+public class A020551 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> F5 = FibonacciPolynomials.fibonacciPolynomial(5);

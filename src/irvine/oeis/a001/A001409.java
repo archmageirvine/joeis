@@ -5,13 +5,13 @@ import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingCycler;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001409 Number of 2n-step polygons on cubic lattice.
  * @author Sean A. Irvine
  */
-public class A001409 implements Sequence {
+public class A001409 extends Sequence0 {
 
   private int mN = -2;
   private final long mC = Lattices.Z3.neighbour(Lattices.Z3.origin(), 0);

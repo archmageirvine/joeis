@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A022932 a(n) is the number of powers Pi^m between e^n and e^(n+1).
  * @author Sean A. Irvine
  */
-public class A022932 implements Sequence {
+public class A022932 extends Sequence0 {
 
   private static final CR LOG = CR.PI.log().inverse();
   private long mN = -1;

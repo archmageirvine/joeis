@@ -4,13 +4,14 @@ import irvine.math.z.Z;
 import irvine.oeis.DifferenceSequence;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004481;
 
 /**
  * A046874 Row/column pre-periods of Sprague-Grundy values of Wythoff's Game.
  * @author Sean A. Irvine
  */
-public class A046874 implements Sequence {
+public class A046874 extends Sequence0 {
 
   private final A004481 mWythoff = new A004481();
   private Z mN = Z.NEG_ONE;

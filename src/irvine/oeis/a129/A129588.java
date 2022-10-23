@@ -3,13 +3,14 @@ package irvine.oeis.a129;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a008.A008438;
 
 /**
  * A129588 Expansion of q^-1 * theta_2(q)^4 in powers of q^2.
  * @author Georg Fischer
  */
-public class A129588 implements Sequence {
+public class A129588 extends Sequence0 {
 
   final Sequence mA008438 = new A008438();
   @Override

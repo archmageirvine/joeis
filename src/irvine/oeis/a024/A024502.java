@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A024502 a(n) = floor(C(2n,n)/2^n).
  * @author Sean A. Irvine
  */
-public class A024502 implements Sequence {
+public class A024502 extends Sequence0 {
 
   private int mN = -1;
 

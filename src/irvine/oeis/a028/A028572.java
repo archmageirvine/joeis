@@ -3,13 +3,13 @@ package irvine.oeis.a028;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028572 Expansion of theta_3(z)*theta_3(2z) + theta_2(z)*theta_2(2z) in powers of q^(1/4).
  * @author Sean A. Irvine
  */
-public class A028572 implements Sequence {
+public class A028572 extends Sequence0 {
 
   private long mN = -1;
   

@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A060628 Triangle of coefficients in expansion of elliptic function sn(u) in powers of u and k.
  * @author Sean A. Irvine
  */
-public class A060628 implements Sequence {
+public class A060628 extends Sequence0 {
 
   // Using approach described by Peter Bala
 

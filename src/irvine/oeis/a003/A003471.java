@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003471 Number of permutations with no hits on 2 main diagonals.
  * @author Sean A. Irvine
  */
-public class A003471 implements Sequence {
+public class A003471 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

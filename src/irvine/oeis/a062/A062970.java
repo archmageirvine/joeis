@@ -3,13 +3,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001923;
 
 /**
  * A062970 a(n) = 1 + Sum_{j=1..n} j^j.
  * @author Georg Fischer
  */
-public class A062970 implements Sequence {
+public class A062970 extends Sequence0 {
 
   final Sequence mA001923 = new A001923();
   @Override

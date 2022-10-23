@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006251 Number of n-element posets which are unions of 2 chains.
  * @author Sean A. Irvine
  */
-public class A006251 implements Sequence {
+public class A006251 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> A = RING.create(Arrays.asList(Q.ZERO, Q.FOUR));

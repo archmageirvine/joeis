@@ -3,13 +3,14 @@ package irvine.oeis.a185;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000330;
 
 /**
  * A185995 a(n) = 2^(C(2n+2,3)/4).
  * @author Georg Fischer
  */
-public class A185995 implements Sequence {
+public class A185995 extends Sequence0 {
 
   final Sequence mA000330 = new A000330();
   @Override

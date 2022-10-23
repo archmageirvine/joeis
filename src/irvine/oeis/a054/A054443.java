@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054443 Third convolution of A001405 (central binomial numbers).
  * @author Sean A. Irvine
  */
-public class A054443 implements Sequence {
+public class A054443 extends Sequence0 {
 
   private int mN = -1;
 

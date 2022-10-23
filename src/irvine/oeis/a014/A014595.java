@@ -5,12 +5,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014595 Conjectured dimensions of spaces of weight systems of chord diagrams.
  * @author Sean A. Irvine
  */
-public class A014595 implements Sequence {
+public class A014595 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;

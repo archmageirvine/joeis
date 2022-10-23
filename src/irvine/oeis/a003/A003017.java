@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003017 Expansion of 1/(1 - x*exp(x) + x^2*exp(2*x) - x^3*exp(3*x)).
  * @author Sean A. Irvine
  */
-public class A003017 implements Sequence {
+public class A003017 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> B = RING.multiply(RING.x(), Q.TWO);

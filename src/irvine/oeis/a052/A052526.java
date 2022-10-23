@@ -3,13 +3,13 @@ package irvine.oeis.a052;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052526 Number of labeled rooted trees with n leaves in which the degrees of the root and all internal nodes are &gt;= 3.
  * @author Sean A. Irvine
  */
-public class A052526 implements Sequence {
+public class A052526 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001118 Differences of 0; labeled ordered partitions into 5 parts.
  * @author Sean A. Irvine
  */
-public class A001118 implements Sequence {
+public class A001118 extends Sequence0 {
 
   private Z mFive = Z.ONE;
   private Z mFour = Z.FIVE;

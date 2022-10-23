@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A037128 a(n) = nextprime(3^n) - nextprime(2^n).
  * @author Sean A. Irvine
  */
-public class A037128 implements Sequence {
+public class A037128 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mT = null;

@@ -1,13 +1,13 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010857 Constant sequence: a(n) = 18.
  * @author Sean A. Irvine
  */
-public class A010857 implements Sequence {
+public class A010857 extends Sequence0 {
 
   private static final Z EIGHTEEN = Z.valueOf(18);
 

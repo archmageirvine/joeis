@@ -9,13 +9,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059446 Triangle T(n,k) = coefficient of x^n*y^k/(n!*k!) in 1/(1-x-y-x*y), read by rows in order 00, 10, 01, 20, 11, 02, ...
  * @author Sean A. Irvine
  */
-public class A059446 implements Sequence {
+public class A059446 extends Sequence0 {
 
   private static final Polynomial<Polynomial<Q>> DEN = new PolynomialRingField<>(new PolynomialRingField<>(Rationals.SINGLETON)).create(Arrays.asList(Polynomial.create(Q.ONE, Q.NEG_ONE), Polynomial.create(Q.NEG_ONE, Q.NEG_ONE)));
   private Polynomial<Polynomial<Q>> mEgf;

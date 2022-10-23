@@ -2,13 +2,13 @@ package irvine.oeis.a039;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A039797 Triangle of numbers of Dyck paths.
  * @author Sean A. Irvine
  */
-public class A039797 implements Sequence {
+public class A039797 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

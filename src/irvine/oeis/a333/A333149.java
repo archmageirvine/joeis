@@ -3,6 +3,7 @@ package irvine.oeis.a333;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000009;
 import irvine.oeis.a032.A032020;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a032.A032020;
  * A333149 Number of strict compositions of n that are neither increasing nor decreasing.
  * @author Georg Fischer
  */
-public class A333149 implements Sequence {
+public class A333149 extends Sequence0 {
 
   final Sequence mA000009 = new A000009();
   final Sequence mA032020 = new A032020();

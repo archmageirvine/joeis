@@ -3,13 +3,13 @@ package irvine.oeis.a037;
 import irvine.factor.prime.Fast;
 import irvine.factor.prime.Prime;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A037036 Least k such that 2^n+1-k is a prime.
  * @author Sean A. Irvine
  */
-public class A037036 implements Sequence {
+public class A037036 extends Sequence0 {
 
   private Prime mPrime = new Fast();
   private Z mA = null;

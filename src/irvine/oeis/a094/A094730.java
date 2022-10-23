@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A094730 Number of connected ordered 3-element multiantichains on a labeled n-set.
  * E.g.f.: exp(7*x) - 6*exp(5*x) + 3*exp(4*x) + 17*exp(3*x) - 30*exp(2*x) + 21*exp(x) - 6
  * @author Georg Fischer
  */
-public class A094730 implements Sequence {
+public class A094730 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

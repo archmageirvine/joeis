@@ -4,13 +4,13 @@ package irvine.oeis.a327;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A327205 a(n) = [(2n+2)r] - [(n+2)r] - [nr], where [ ] = floor and r = sqrt(2).
  * @author Georg Fischer
  */
-public class A327205 implements Sequence {
+public class A327205 extends Sequence0 {
   private long mN = -1;
   private static final CR R = CR.SQRT2;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a021;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A021012 Triangle of coefficients in expansion of x^n in terms of Laguerre polynomials L_n(x).
  * @author Sean A. Irvine
  */
-public class A021012 implements Sequence {
+public class A021012 extends Sequence0 {
 
   private Z mF = Z.ONE;
   private int mN = -1;

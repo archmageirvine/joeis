@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059009 Numbers having an odd number of zeros in their binary expansion.
  * @author Sean A. Irvine
  */
-public class A059009 implements Sequence {
+public class A059009 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

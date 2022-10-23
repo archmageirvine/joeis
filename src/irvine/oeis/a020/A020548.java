@@ -6,13 +6,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020548 3rd Euler polynomial evaluated at x=n! (multiplied by 4).
  * @author Sean A. Irvine
  */
-public class A020548 implements Sequence {
+public class A020548 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> E3 = EulerPolynomials.eulerPolynomial(3);

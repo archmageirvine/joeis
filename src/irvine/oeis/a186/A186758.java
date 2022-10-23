@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A186758 Number of permutations of {1,2,...,n} with no increasing cycles of length &gt;=2. A cycle (b(1), b(2), ...) is said to be increasing if, when written with its smallest element in the first position, it satisfies b(1)&lt;b(2)&lt;b(3)&lt;... .
  * E.g.f.: exp(1+x-exp(x))/(1-x)
  * @author Georg Fischer
  */
-public class A186758 implements Sequence {
+public class A186758 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

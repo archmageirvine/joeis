@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A009564 E.g.f. sin(x^2)/2, coefficients of x^(4*n + 2).
  * @author Sean A. Irvine
  */
-public class A009564 implements Sequence {
+public class A009564 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> X2 = RING.monomial(Q.ONE, 2);

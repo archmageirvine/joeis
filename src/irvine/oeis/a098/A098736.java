@@ -3,13 +3,14 @@ package irvine.oeis.a098;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007954;
 
 /**
  * A098736 a(n) = product of n and all its digits.
  * @author Georg Fischer
  */
-public class A098736 implements Sequence {
+public class A098736 extends Sequence0 {
 
   final Sequence mA007954 = new A007954();
   protected long mN;

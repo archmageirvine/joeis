@@ -3,13 +3,14 @@ package irvine.oeis.a294;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a014.A014140;
 
 /**
  * A294790 Subtract n from partial sums of partial sums of Catalan numbers.
  * @author Georg Fischer
  */
-public class A294790 implements Sequence {
+public class A294790 extends Sequence0 {
 
   final Sequence mA014140 = new A014140();
   protected long mN;

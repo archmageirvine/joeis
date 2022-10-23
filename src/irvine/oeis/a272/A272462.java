@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A272462 E.g.f.: (sin(3^2*x) + sin(4^2*x)) / sin(5^2*x).
  * E.g.f.: (cos(3^2*x) + cos(4^2*x))/(1 + cos(5^2*x)), even powers
  * @author Georg Fischer
  */
-public class A272462 implements Sequence {
+public class A272462 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

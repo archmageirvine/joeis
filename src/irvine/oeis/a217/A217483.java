@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A217483 Alternating sums of the numbers in sequence A080253.
  * E.g.f.: exp(x)/(2-exp(2*x)) - (1/2)*exp(-x)*log(1/(2-exp(2*x)))
  * @author Georg Fischer
  */
-public class A217483 implements Sequence {
+public class A217483 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

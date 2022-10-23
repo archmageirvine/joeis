@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056557 Second tetrahedral coordinate.
  * @author Sean A. Irvine
  */
-public class A056557 implements Sequence {
+public class A056557 extends Sequence0 {
 
   private long[] mN = null;
 

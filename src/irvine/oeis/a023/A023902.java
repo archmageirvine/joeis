@@ -6,13 +6,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A023902 Theta series of A_11 lattice.
  * @author Sean A. Irvine
  */
-public class A023902 implements Sequence {
+public class A023902 extends Sequence0 {
 
   // After Robert Harley
 

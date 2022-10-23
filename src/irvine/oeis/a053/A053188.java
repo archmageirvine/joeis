@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053188 Distance from n to nearest square.
  * @author Sean A. Irvine
  */
-public class A053188 implements Sequence {
+public class A053188 extends Sequence0 {
 
   private long mN = -1;
 

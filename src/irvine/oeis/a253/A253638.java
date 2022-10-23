@@ -3,14 +3,14 @@ package irvine.oeis.a253;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A253638 Number of zeros in the decimal expansion of 5^n.
  * @author Georg Fischer
  */
-public class A253638 implements Sequence {
+public class A253638 extends Sequence0 {
 
   protected int mN = -1;
   

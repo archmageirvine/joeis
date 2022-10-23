@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007431 a(n) = Sum_{d|n} phi(d)*mu(n/d).
  * @author Sean A. Irvine
  */
-public class A007431 implements Sequence {
+public class A007431 extends Sequence0 {
 
   private long mN = -1;
 

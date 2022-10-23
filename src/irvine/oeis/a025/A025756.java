@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025756 3rd order Vatalan numbers (generalization of Catalan numbers).
  * @author Sean A. Irvine
  */
-public class A025756 implements Sequence {
+public class A025756 extends Sequence0 {
 
   private long mN = -1;
 

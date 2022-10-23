@@ -3,6 +3,7 @@ package irvine.oeis.a309;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000312;
 import irvine.oeis.a001.A001563;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001563;
  * A309472 a(n) = n^n - n * n!.
  * @author Georg Fischer
  */
-public class A309472 implements Sequence {
+public class A309472 extends Sequence0 {
 
   final Sequence mA000312 = new A000312();
   final Sequence mA001563 = new A001563();

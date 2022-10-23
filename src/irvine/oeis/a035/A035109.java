@@ -3,13 +3,13 @@ package irvine.oeis.a035;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035109 Numerators in expansion of a certain Dirichlet series.
  * @author Sean A. Irvine
  */
-public class A035109 implements Sequence {
+public class A035109 extends Sequence0 {
 
   private long mN = 0;
 

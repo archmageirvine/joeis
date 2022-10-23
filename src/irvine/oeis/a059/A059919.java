@@ -3,13 +3,14 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a011.A011764;
 
 /**
  * A059919 Generalized Fermat numbers: 3^(2^n)+1, n &gt;= 0.
  * @author Georg Fischer
  */
-public class A059919 implements Sequence {
+public class A059919 extends Sequence0 {
 
   final Sequence mA011764 = new A011764();
   @Override

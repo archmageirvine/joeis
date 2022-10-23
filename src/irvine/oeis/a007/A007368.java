@@ -2,14 +2,14 @@ package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
  * A007368 Smallest k such that sigma(x) = k has exactly n solutions.
  * @author Sean A. Irvine
  */
-public class A007368 implements Sequence {
+public class A007368 extends Sequence0 {
 
   private final LongDynamicIntArray mA = new LongDynamicIntArray();
   private long mN = -1;

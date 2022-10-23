@@ -3,13 +3,14 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002884;
 import irvine.oeis.a053.A053290;
 /**
  * A065498 Number of invertible n X n matrices mod 6 (i.e., over the ring Z_6).
  * @author Georg Fischer
  */
-public class A065498 implements Sequence {
+public class A065498 extends Sequence0 {
 
   private final Sequence mA002884 = new A002884();
   private final Sequence mA053290 = new A053290();

@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004525 One even followed by three odd.
  * @author Sean A. Irvine
  */
-public class A004525 implements Sequence {
+public class A004525 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
   private int mCount = 0;

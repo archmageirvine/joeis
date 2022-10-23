@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001533 a(n) = (8n+1)*(8n+7).
  * @author Sean A. Irvine
  */
-public class A001533 implements Sequence {
+public class A001533 extends Sequence0 {
 
   private long mN = -7;
 

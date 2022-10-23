@@ -3,13 +3,14 @@ package irvine.oeis.a136;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a023.A023036;
 
 /**
  * A136244 Least positive integer k such that 2k can be expressed as the sum of two primes in exactly n ways.
  * @author Georg Fischer
  */
-public class A136244 implements Sequence {
+public class A136244 extends Sequence0 {
 
   final Sequence mA023036 = new A023036();
   @Override

@@ -1,14 +1,14 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.German;
 
 /**
  * A037199 Number of consonants in n (in German).
  * @author Sean A. Irvine
  */
-public class A037199 implements Sequence {
+public class A037199 extends Sequence0 {
 
   private static final String VOWELS = "aeiou\u00FC\u00F6";
   private int mN = -1;

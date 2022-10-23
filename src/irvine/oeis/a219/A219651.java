@@ -3,13 +3,14 @@ package irvine.oeis.a219;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a034.A034968;
 
 /**
  * A219651 a(n) = n minus (sum of digits in factorial base expansion of n).
  * @author Georg Fischer
  */
-public class A219651 implements Sequence {
+public class A219651 extends Sequence0 {
 
   final Sequence mA034968 = new A034968();
   protected long mN;

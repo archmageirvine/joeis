@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055161 n has digits in descending order and n=a+b where a has the digits of n in another order and b has the digits of n in ascending order (perhaps with leading zeros).
  * @author Sean A. Irvine
  */
-public class A055161 implements Sequence {
+public class A055161 extends Sequence0 {
 
   private Z mN = Z.valueOf(494);
 

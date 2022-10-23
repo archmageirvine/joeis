@@ -3,13 +3,13 @@ package irvine.oeis.a099;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A099121 Number of orbits of the wreath product of S_n with S_n on n X n matrices over {0,1,2}.
  * @author Georg Fischer
  */
-public class A099121 implements Sequence {
+public class A099121 extends Sequence0 {
 
   private int mN = -1;
 

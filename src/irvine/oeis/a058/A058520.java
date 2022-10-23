@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058520 Sequences of B-trees of order 3 with n labeled leaves.
  * @author Sean A. Irvine
  */
-public class A058520 implements Sequence {
+public class A058520 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> M = Polynomial.create(0, 0, 1, 1);

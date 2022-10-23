@@ -3,14 +3,14 @@ package irvine.oeis.a320;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A320394 Number of ones in binary expansion n^5.
  * @author Georg Fischer
  */
-public class A320394 implements Sequence {
+public class A320394 extends Sequence0 {
 
   protected int mN = -1;
   

@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054675 Nearest integer to tan(n)^n.
  * @author Sean A. Irvine
  */
-public class A054675 implements Sequence {
+public class A054675 extends Sequence0 {
 
   private long mN = -1;
 

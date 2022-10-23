@@ -3,12 +3,13 @@ package irvine.oeis.a103;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004011;
 /**
  * A103640 Expansion of theta_4(q)^4 - theta_2(q)^4, where theta_2 and theta_4 are the Jacobi theta series.
  * @author Georg Fischer
  */
-public class A103640 implements Sequence {
+public class A103640 extends Sequence0 {
 
   private final Sequence mA004011 = new A004011();
   protected long mN;

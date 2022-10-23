@@ -3,13 +3,13 @@ package irvine.oeis.a027;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027671 Number of necklaces with n beads of 3 colors, allowing turning over.
  * @author Sean A. Irvine
  */
-public class A027671 implements Sequence {
+public class A027671 extends Sequence0 {
 
   private int mN = -1;
 

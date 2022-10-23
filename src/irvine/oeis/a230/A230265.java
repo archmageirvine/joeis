@@ -3,13 +3,14 @@ package irvine.oeis.a230;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a036.A036281;
 
 /**
  * A230265 Denominators of eta(2*n)/Pi^(2*n), where eta(n) is the Dirichlet eta function.
  * @author Georg Fischer
  */
-public class A230265 implements Sequence {
+public class A230265 extends Sequence0 {
 
   final Sequence mA036281 = new A036281();
   @Override

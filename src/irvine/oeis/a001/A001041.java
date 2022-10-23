@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001041 a(0)=12; thereafter a(n) = 12 times the product of the first n primes.
  * @author Sean A. Irvine
  */
-public class A001041 implements Sequence {
+public class A001041 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mP = null;

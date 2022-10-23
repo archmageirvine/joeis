@@ -3,13 +3,13 @@ package irvine.oeis.a309;
 import irvine.math.cr.CR;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A309076 The Zeckendorf representation of n read as a NegaFibonacci representation.
  * @author Sean A. Irvine
  */
-public class A309076 implements Sequence {
+public class A309076 extends Sequence0 {
 
   private static final CR LN_PHI = CR.PHI.log();
   private static final CR SQRT5 = CR.FIVE.sqrt();

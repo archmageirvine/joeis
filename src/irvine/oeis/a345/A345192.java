@@ -3,13 +3,14 @@ package irvine.oeis.a345;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a011.A011782;
 import irvine.oeis.a025.A025047;
 /**
  * A345192 Number of non-alternating compositions of n.
  * @author Georg Fischer
  */
-public class A345192 implements Sequence {
+public class A345192 extends Sequence0 {
 
   private final Sequence mA011782 = new A011782();
   private final Sequence mA025047 = new A025047();

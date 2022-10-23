@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006333 From the enumeration of corners.
  * @author Sean A. Irvine
  */
-public class A006333 implements Sequence {
+public class A006333 extends Sequence0 {
 
   private long mN = -1;
 

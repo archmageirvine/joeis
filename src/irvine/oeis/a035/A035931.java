@@ -1,13 +1,13 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035931 Number of steps to reach 0 under "k-&gt;max product of two numbers whose concatenation is k".
  * @author Sean A. Irvine
  */
-public class A035931 implements Sequence {
+public class A035931 extends Sequence0 {
 
   private long mN = -1;
 

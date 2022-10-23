@@ -1,13 +1,13 @@
 package irvine.oeis.a009;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A009966 Powers of 22.
  * @author Sean A. Irvine
  */
-public class A009966 implements Sequence {
+public class A009966 extends Sequence0 {
 
   private Z mA = null;
 

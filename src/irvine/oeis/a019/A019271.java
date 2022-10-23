@@ -1,14 +1,14 @@
 package irvine.oeis.a019;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.English;
 
 /**
  * A019271 A self-descriptive sequence: positions of consonants in "zero, two, four, ...".
  * @author Sean A. Irvine
  */
-public class A019271 implements Sequence {
+public class A019271 extends Sequence0 {
 
   private final StringBuilder mBuilder = new StringBuilder();
   private int mPos = 0;

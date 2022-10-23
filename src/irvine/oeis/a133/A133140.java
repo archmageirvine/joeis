@@ -3,13 +3,14 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a094.A094373;
 
 /**
  * A133140 a(0) = 2, a(n) = 2^n + 2 for n&gt;=1.
  * @author Georg Fischer
  */
-public class A133140 implements Sequence {
+public class A133140 extends Sequence0 {
 
   final Sequence mA094373 = new A094373();
   @Override

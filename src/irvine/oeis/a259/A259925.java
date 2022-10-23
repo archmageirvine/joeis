@@ -3,13 +3,14 @@ package irvine.oeis.a259;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a165.A165900;
 
 /**
  * A259925 a(n) = (n^2 - n - 1)^n.
  * @author Georg Fischer
  */
-public class A259925 implements Sequence {
+public class A259925 extends Sequence0 {
 
   final Sequence mA165900 = new A165900();
   protected long mN;

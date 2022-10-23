@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049695 Array T read by diagonals; T(i,j) is the number of nonnegative slopes of lines determined by 2 lattice points in [ 0,i ] X [ 0,j ] if i &gt; 0; T(0,j)=1 if j &gt; 0; T(0,0)=0.
  * @author Sean A. Irvine
  */
-public class A049695 implements Sequence {
+public class A049695 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

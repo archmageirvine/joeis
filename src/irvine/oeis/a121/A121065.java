@@ -1,7 +1,7 @@
 package irvine.oeis.a121;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicByteArray;
 import irvine.util.string.English;
 
@@ -9,7 +9,7 @@ import irvine.util.string.English;
  * A121065 a(n) is the smallest number in English which contains n letter 'E's.
  * @author Sean A. Irvine
  */
-public class A121065 implements Sequence {
+public class A121065 extends Sequence0 {
 
   private int mN = -1;
   private final DynamicByteArray mCache = new DynamicByteArray();

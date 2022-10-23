@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004231 Ackermann's sequence: n^^n := n^n^n^...^n (with n n's).
  * @author Sean A. Irvine
  */
-public class A004231 implements Sequence {
+public class A004231 extends Sequence0 {
 
   private int mN = -1;
 

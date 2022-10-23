@@ -3,13 +3,14 @@ package irvine.oeis.a115;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001523;
 import irvine.oeis.a011.A011782;
 /**
  * A115981 The number of compositions of n which cannot be viewed as stacks.
  * @author Georg Fischer
  */
-public class A115981 implements Sequence {
+public class A115981 extends Sequence0 {
 
   private final Sequence mA001523 = new A001523();
   private final Sequence mA011782 = new A011782();

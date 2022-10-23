@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034946 Successive approximations to 11-adic integer sqrt(3).
  * @author Sean A. Irvine
  */
-public class A034946 implements Sequence {
+public class A034946 extends Sequence0 {
 
   private Z mM = Z.valueOf(11);
   private Z mPrev = null;

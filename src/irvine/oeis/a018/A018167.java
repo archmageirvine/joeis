@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018167 Powers of fifth root of 18 rounded up.
  * @author Sean A. Irvine
  */
-public class A018167 implements Sequence {
+public class A018167 extends Sequence0 {
 
   private Z mN = null;
 

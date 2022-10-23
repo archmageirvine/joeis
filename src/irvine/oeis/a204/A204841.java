@@ -3,6 +3,7 @@ package irvine.oeis.a204;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000165;
 import irvine.oeis.a010.A010050;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a010.A010050;
  * A204841 (2n)! - 2^n*n!.
  * @author Georg Fischer
  */
-public class A204841 implements Sequence {
+public class A204841 extends Sequence0 {
 
   final Sequence mA000165 = new A000165();
   final Sequence mA010050 = new A010050();

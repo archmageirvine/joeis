@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057946 Bad hexadecimal notation for n: write n in hexadecimal notation, replacing digit ten with "10", digit eleven with "11", ... and digit fifteen with "15".
  * @author Sean A. Irvine
  */
-public class A057946 implements Sequence {
+public class A057946 extends Sequence0 {
 
   private long mN = -1;
 

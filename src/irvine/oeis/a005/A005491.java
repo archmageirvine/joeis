@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005491 a(n) = n^3 + 3n + 1.
  * @author Sean A. Irvine
  */
-public class A005491 implements Sequence {
+public class A005491 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

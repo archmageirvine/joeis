@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004663 Powers of 3 written in base 9.
  * @author Sean A. Irvine
  */
-public class A004663 implements Sequence {
+public class A004663 extends Sequence0 {
 
   private Z mN = null;
 

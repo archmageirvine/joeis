@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001195 Int(n*log((14/11)*n^(10/9))).
  * @author Sean A. Irvine
  */
-public class A001195 implements Sequence {
+public class A001195 extends Sequence0 {
 
   private static final double LOG_CONST = Math.log(14) - Math.log(11);
 

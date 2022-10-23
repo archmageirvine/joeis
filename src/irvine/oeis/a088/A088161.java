@@ -3,6 +3,7 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006257;
 import irvine.oeis.a038.A038572;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a038.A038572;
  * A088161 n rotated one binary place to the right less n rotated one binary place to the left.
  * @author Georg Fischer
  */
-public class A088161 implements Sequence {
+public class A088161 extends Sequence0 {
 
   final Sequence mA006257 = new A006257();
   final Sequence mA038572 = new A038572();

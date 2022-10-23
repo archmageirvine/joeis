@@ -3,6 +3,7 @@ package irvine.oeis.a295;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 import irvine.oeis.a000.A000726;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000726;
  * A295341 The number of partitions of n in which at least one part is a multiple of 3.
  * @author Georg Fischer
  */
-public class A295341 implements Sequence {
+public class A295341 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   final Sequence mA000726 = new A000726();

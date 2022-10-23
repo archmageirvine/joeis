@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000587 Rao Uppuluri-Carpenter numbers (or complementary Bell numbers): e.g.f. = exp(1 - exp(x)).
  * @author Sean A. Irvine
  */
-public class A000587 implements Sequence {
+public class A000587 extends Sequence0 {
 
   private long mN = -1;
 

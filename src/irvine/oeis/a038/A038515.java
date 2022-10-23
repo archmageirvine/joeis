@@ -5,13 +5,13 @@ import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingCycler;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038515 Number of self-avoiding walks on a tetrahedral (diamond) net, having 2n steps and forming a closed loop.
  * @author Sean A. Irvine
  */
-public class A038515 implements Sequence {
+public class A038515 extends Sequence0 {
 
   private int mN = -2;
   private final long mC = Lattices.DIAMOND.neighbour(Lattices.DIAMOND.origin(), 0);

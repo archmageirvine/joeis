@@ -5,13 +5,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.WreathExponentiation;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A255016 Number of toroidal n X n binary arrays, allowing rotation and/or reflection of rows and/or columns as well as matrix transposition.
  * @author Sean A. Irvine
  */
-public class A255016 implements Sequence {
+public class A255016 extends Sequence0 {
 
   private static final CycleIndex Z2 = SymmetricGroup.create(2).cycleIndex();
   private int mN = -1;

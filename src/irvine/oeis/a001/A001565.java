@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001565 3rd differences of factorial numbers.
  * @author Sean A. Irvine
  */
-public class A001565 implements Sequence {
+public class A001565 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.ONE;

@@ -2,14 +2,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A062033 Binary expansion of n does not contain 1-bits at even positions. Integers whose base 4 representation consists of only 0's and 2s.
  * Integers whose base 4 representation consists of only 0&apos;s and 2s.
  * @author Georg Fischer
  */
-public class A062033 implements Sequence {
+public class A062033 extends Sequence0 {
 
   private long mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034814 Concatenations C1 and C2 are both prime (see the comment lines).
  * @author Sean A. Irvine
  */
-public class A034814 implements Sequence {
+public class A034814 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = 7;

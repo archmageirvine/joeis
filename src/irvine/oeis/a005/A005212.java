@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005212 n! if n is odd otherwise 0 (from the Taylor series for sin x).
  * @author Sean A. Irvine
  */
-public class A005212 implements Sequence {
+public class A005212 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.ONE;

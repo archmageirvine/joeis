@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001273 Smallest number that takes n steps to reach 1 under iteration of sum-of-squares-of-digits map (= smallest "happy number" of height n).
  * @author Sean A. Irvine
  */
-public class A001273 implements Sequence {
+public class A001273 extends Sequence0 {
 
   private static final long[] SMALL = {1, 10, 13, 23, 19, 7, 356, 78999};
 

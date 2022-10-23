@@ -3,13 +3,14 @@ package irvine.oeis.a073;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003096;
 
 /**
  * A073015 a(n) is such that 2 = sqrt(1+sqrt(1+sqrt(1+....sqrt(a(n))....))) where there are n sqrt's.
  * @author Georg Fischer
  */
-public class A073015 implements Sequence {
+public class A073015 extends Sequence0 {
 
   final Sequence mA003096 = new A003096();
   @Override

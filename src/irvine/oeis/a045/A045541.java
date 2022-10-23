@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045541 Square previous term and then delete digits of previous term.
  * @author Sean A. Irvine
  */
-public class A045541 implements Sequence {
+public class A045541 extends Sequence0 {
 
   private Z mA = null;
 

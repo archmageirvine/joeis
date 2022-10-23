@@ -7,14 +7,14 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.SelfAvoidingCycler;
 import irvine.math.lattice.Walker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Pair;
 
 /**
  * A038516 Total number of different legs traversed by all loops of length 2n in A038515.
  * @author Sean A. Irvine
  */
-public class A038516 implements Sequence, Accumulator {
+public class A038516 extends Sequence0 implements Accumulator {
 
   private final HashSet<Pair<Long, Long>> mSeen = new HashSet<>();
   private int mN = -2;

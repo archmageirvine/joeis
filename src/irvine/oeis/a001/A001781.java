@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001781 Expansion of 1/((1+x)*(1-x)^10).
  * @author Sean A. Irvine
  */
-public class A001781 implements Sequence {
+public class A001781 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

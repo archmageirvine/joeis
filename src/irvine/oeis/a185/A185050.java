@@ -2,13 +2,13 @@ package irvine.oeis.a185;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A185050 Least k such that G(k) &gt; 3 - 1/2^n, where G(k) is the sum of the first k terms of the geometric series 1 + 2/3 + (2/3)^2 + ....
  * @author Georg Fischer
  */
-public class A185050 implements Sequence {
+public class A185050 extends Sequence0 {
 
   private int mK = 1;
   private int mN = -1;

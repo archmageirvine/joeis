@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001115 Maximal number of pairwise relatively prime polynomials of degree n over GF(2).
  * @author Sean A. Irvine
  */
-public class A001115 implements Sequence {
+public class A001115 extends Sequence0 {
 
   private final ArrayList<Z> mP = new ArrayList<>();
   private int mN = -1;

@@ -6,13 +6,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003211 Cluster series for cubic lattice.
  * @author Sean A. Irvine
  */
-public class A003211 implements Sequence {
+public class A003211 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C = RING.oneMinusXToTheN(1);

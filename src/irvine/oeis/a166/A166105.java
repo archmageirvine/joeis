@@ -3,13 +3,14 @@ package irvine.oeis.a166;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002065;
 
 /**
  * A166105 Quadratic recurrence from Sylvester's sequence, but starting with a(0)=1 and a(1)=2.
  * @author Georg Fischer
  */
-public class A166105 implements Sequence {
+public class A166105 extends Sequence0 {
 
   final Sequence mA002065 = new A002065();
   @Override

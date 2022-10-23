@@ -2,14 +2,14 @@ package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A054262 Start with the prime 11; next prime must exceed previous prime and start with last digit of previous prime.
  * @author Sean A. Irvine
  */
-public class A054262 implements Sequence {
+public class A054262 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mA = null;

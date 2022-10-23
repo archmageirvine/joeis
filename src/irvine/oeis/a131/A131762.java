@@ -3,13 +3,14 @@ package irvine.oeis.a131;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000120;
 
 /**
  * A131762 Number of 1s in the 1's complement of the 32-bit binary representation of n.
  * @author Georg Fischer
  */
-public class A131762 implements Sequence {
+public class A131762 extends Sequence0 {
 
   final Sequence mA000120 = new A000120();
   @Override

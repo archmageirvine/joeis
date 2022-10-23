@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007608 Nonnegative integers in base -4.
  * @author Sean A. Irvine
  */
-public class A007608 implements Sequence {
+public class A007608 extends Sequence0 {
 
   private long mN = -1;
 

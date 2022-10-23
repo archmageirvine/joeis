@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A240559 a(n) = -2^n*(E(n, 1/2) + E(n, 1) + (n mod 2)*2*(E(n+1, 1/2) + E(n+1, 1))), where E(n, x) are the Euler polynomials.
  * E.g.f.: (1 - sech(x)) * (1 - tanh(x))
  * @author Georg Fischer
  */
-public class A240559 implements Sequence {
+public class A240559 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

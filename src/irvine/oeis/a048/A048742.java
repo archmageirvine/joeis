@@ -3,6 +3,7 @@ package irvine.oeis.a048;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000110;
 import irvine.oeis.a000.A000142;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000142;
  * A048742 a(n) = n! - (n-th Bell number).
  * @author Georg Fischer
  */
-public class A048742 implements Sequence {
+public class A048742 extends Sequence0 {
 
   final Sequence mA000110 = new A000110();
   final Sequence mA000142 = new A000142();

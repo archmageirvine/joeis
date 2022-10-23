@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005061 a(n) = 4^n - 3^n.
  * @author Sean A. Irvine
  */
-public class A005061 implements Sequence {
+public class A005061 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = Z.ONE;

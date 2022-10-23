@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051697 Closest prime to n (break ties by taking the smaller prime).
  * @author Sean A. Irvine
  */
-public class A051697 implements Sequence {
+public class A051697 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

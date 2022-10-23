@@ -3,13 +3,14 @@ package irvine.oeis.a136;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a033.A033917;
 
 /**
  * A136461 Expansion of e.g.f.: A(x) = -(1 + LambertW(-log(1+x))/log(1+x))/x.
  * @author Georg Fischer
  */
-public class A136461 implements Sequence {
+public class A136461 extends Sequence0 {
 
   final Sequence mA033917 = new A033917();
   protected long mN;

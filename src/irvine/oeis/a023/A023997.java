@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A023997 Number of block permutations on an n-set.
  * @author Sean A. Irvine
  */
-public class A023997 implements Sequence {
+public class A023997 extends Sequence0 {
 
   private long mN = -1;
 

@@ -3,14 +3,14 @@ package irvine.oeis.a268;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A268643 Number of 1's in decimal representation of n.
  * @author Georg Fischer
  */
-public class A268643 implements Sequence {
+public class A268643 extends Sequence0 {
 
   protected int mN = -1;
   

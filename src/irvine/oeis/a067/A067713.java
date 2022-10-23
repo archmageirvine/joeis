@@ -3,13 +3,14 @@ package irvine.oeis.a067;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a014.A014563;
 
 /**
  * A067713 a(n+1) is the smallest square &gt; a(n) such that the digits of a(n) are all (with multiplicity) contained in the digits of a(n+1), with a(0)=1.
  * @author Georg Fischer
  */
-public class A067713 implements Sequence {
+public class A067713 extends Sequence0 {
 
   final Sequence mA014563 = new A014563();
   @Override

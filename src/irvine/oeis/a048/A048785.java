@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048785 a(0) = 0; a(n) = tau(n^3), where tau = number of divisors (A000005).
  * @author Sean A. Irvine
  */
-public class A048785 implements Sequence {
+public class A048785 extends Sequence0 {
 
   private long mN = -1;
 

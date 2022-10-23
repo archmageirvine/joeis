@@ -3,13 +3,14 @@ package irvine.oeis.a283;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005187;
 
 /**
  * A283208 Minimal exponent integer sequence associated with Vietoris sequence.
  * @author Georg Fischer
  */
-public class A283208 implements Sequence {
+public class A283208 extends Sequence0 {
 
   final Sequence mA005187 = new A005187();
   /** Construct the sequence. */

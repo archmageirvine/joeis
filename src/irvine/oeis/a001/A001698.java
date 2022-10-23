@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001698 a(n) = ceiling(sqrt( 2*Pi )^n).
  * @author Sean A. Irvine
  */
-public class A001698 implements Sequence {
+public class A001698 extends Sequence0 {
 
   private static final CR SQRT_TAU = CR.TAU.sqrt();
   private CR mX = null;

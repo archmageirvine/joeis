@@ -3,13 +3,13 @@ package irvine.oeis.a045;
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045997 Number of iterations required to reach stationary value when applying repeatedly applying d, the number of divisors function, to n!.
  * @author Sean A. Irvine
  */
-public class A045997 implements Sequence {
+public class A045997 extends Sequence0 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
   private final FactorSequence mFS = new FactorSequence();

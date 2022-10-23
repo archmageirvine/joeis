@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A241209 a(n) = E(n) - E(n+1), where E(n) are the Euler numbers A122045(n).
  * E.g.f.: exp(x)/cosh(x)^2
  * @author Georg Fischer
  */
-public class A241209 implements Sequence {
+public class A241209 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

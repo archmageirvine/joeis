@@ -6,14 +6,14 @@ import java.util.function.Function;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Quadruple;
 
 /**
  * A046128 Smallest side a of scalene integer Heronian triangles sorted by increasing c and b.
  * @author Sean A. Irvine
  */
-public class A046128 implements Sequence {
+public class A046128 extends Sequence0 {
 
   private final TreeSet<Quadruple<Z>> mA = new TreeSet<>(
     Comparator.comparing((Function<Quadruple<Z>, Z>) Quadruple::c)

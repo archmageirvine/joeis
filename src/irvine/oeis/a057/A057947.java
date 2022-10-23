@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057947 n has ambiguous representations in "bad hexadecimal": numbers with the digit 1 followed by a digit less than 6.
  * @author Sean A. Irvine
  */
-public class A057947 implements Sequence {
+public class A057947 extends Sequence0 {
 
   private long mN = 9;
 

@@ -4,13 +4,13 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013703 Series(W(exp(1)*(1+x)), x) = sum( a[ n ]/(2^(2*n)*n!), n=0..infinity), where W is the Lambert W function.
  * @author Sean A. Irvine
  */
-public class A013703 implements Sequence {
+public class A013703 extends Sequence0 {
 
   // After Paolo Bonzini
 

@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001936 Expansion of q^(-1/4) * (eta(q^4) / eta(q))^2 in powers of q.
  * @author Sean A. Irvine
  */
-public class A001936 implements Sequence {
+public class A001936 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private Polynomial<Z> mNum = RING.one();

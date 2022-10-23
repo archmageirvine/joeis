@@ -5,13 +5,13 @@ import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008424 Theta series of {D_9}* lattice.
  * @author Sean A. Irvine
  */
-public class A008424 implements Sequence {
+public class A008424 extends Sequence0 {
 
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
 

@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053187 Square nearest to n.
  * @author Sean A. Irvine
  */
-public class A053187 implements Sequence {
+public class A053187 extends Sequence0 {
 
   private long mN = -1;
 

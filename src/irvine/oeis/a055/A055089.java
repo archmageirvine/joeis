@@ -5,14 +5,14 @@ import java.util.TreeSet;
 
 import irvine.math.Comparators;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
  * A055089 List of all finite permutations in reversed colexicographic ordering.
  * @author Sean A. Irvine
  */
-public class A055089 implements Sequence {
+public class A055089 extends Sequence0 {
 
   private int mN = 1;
   private int mM = -1;

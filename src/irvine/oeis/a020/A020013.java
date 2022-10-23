@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020013 Nearest integer to Gamma(n + 2/11)/Gamma(2/11).
  * @author Sean A. Irvine
  */
-public class A020013 implements Sequence {
+public class A020013 extends Sequence0 {
 
   private static final Q C = new Q(2, 11);
   private int mN = -2;

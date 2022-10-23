@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001499 Number of n X n matrices with exactly 2 1's in each row and column, other entries 0.
  * @author Sean A. Irvine
  */
-public class A001499 implements Sequence {
+public class A001499 extends Sequence0 {
 
   private Z mA = Z.ZERO;
   private Z mB = Z.ZERO;

@@ -2,13 +2,13 @@ package irvine.oeis.a012;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A012000 Expansion of 1/sqrt(1 - 4*x + 16*x^2).
  * @author Sean A. Irvine
  */
-public class A012000 implements Sequence {
+public class A012000 extends Sequence0 {
 
   private long mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058547 Lexicographical-support sequence T(n,k), n,k nonnegative: total number of checks required by a "lexicographical" algorithm to find out which rows and columns of each of the n by k zero-one matrices are nonzero.
  * @author Sean A. Irvine
  */
-public class A058547 implements Sequence {
+public class A058547 extends Sequence0 {
 
   private int mN = 0;
   private int mM = 0;

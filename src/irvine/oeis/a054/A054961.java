@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054961 Maximal number of binary vectors of length n such that the unions (or bitwise ORs) of any 2 distinct vectors are all distinct.
  * @author Sean A. Irvine
  */
-public class A054961 implements Sequence {
+public class A054961 extends Sequence0 {
 
   private int mN = -1;
   private int mLimit = 0;

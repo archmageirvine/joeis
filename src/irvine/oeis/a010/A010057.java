@@ -1,13 +1,13 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010057 a(n) = 1 if n is a cube, else 0.
  * @author Sean A. Irvine
  */
-public class A010057 implements Sequence {
+public class A010057 extends Sequence0 {
 
   private long mNext = 0;
   private long mM = 0;

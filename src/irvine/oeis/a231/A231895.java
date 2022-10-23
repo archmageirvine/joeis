@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A231895 a(n) = 2*A000111(n+1) + A000111(n).
  * E.g.f.: 1+(sec(x)+tan(x)+1)*(sec(x)+tan(x))
  * @author Georg Fischer
  */
-public class A231895 implements Sequence {
+public class A231895 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

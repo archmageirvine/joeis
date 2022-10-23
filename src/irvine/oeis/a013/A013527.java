@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013527 Numerator of [x^(2n)] of the Taylor expansion sec(cosec(x)-cot(x)) = 1+ x^2/8 +13*x^4/384 +397*x^6/46080 +4453*x^8/2064384 + ... .
  * @author Sean A. Irvine
  */
-public class A013527 implements Sequence {
+public class A013527 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> X2 = RING.multiply(RING.x(), Q.HALF);

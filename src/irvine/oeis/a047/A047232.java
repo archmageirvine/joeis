@@ -1,13 +1,13 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A047232 Smallest k &gt; n where n is a 4th power modulo k.
  * @author Sean A. Irvine
  */
-public class A047232 implements Sequence {
+public class A047232 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

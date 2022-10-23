@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018029 Powers of cube root of 18 rounded up.
  * @author Sean A. Irvine
  */
-public class A018029 implements Sequence {
+public class A018029 extends Sequence0 {
 
   private Z mN = null;
 

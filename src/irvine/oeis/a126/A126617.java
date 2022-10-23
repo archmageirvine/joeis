@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A126617 a(n) = Sum_{i=0..n} (-2)^(n-i)*B(i)*binomial(n,i) where B(n) = Bell numbers A000110(n).
  * E.g.f.: exp(exp(x)-2*x-1)
  * @author Georg Fischer
  */
-public class A126617 implements Sequence {
+public class A126617 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

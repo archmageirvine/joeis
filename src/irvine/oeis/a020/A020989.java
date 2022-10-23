@@ -1,13 +1,13 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020989 a(n) = (5*4^n - 2)/3.
  * @author Sean A. Irvine
  */
-public class A020989 implements Sequence {
+public class A020989 extends Sequence0 {
 
   private Z mA = null;
 

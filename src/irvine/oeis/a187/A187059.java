@@ -3,13 +3,14 @@ package irvine.oeis.a187;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000788;
 import irvine.oeis.a249.A249154;
 /**
  * A187059 The exponent of highest power of 2 dividing the product of the elements of the n-th row of Pascal's triangle (A001142).
  * @author Georg Fischer
  */
-public class A187059 implements Sequence {
+public class A187059 extends Sequence0 {
 
   private final Sequence mA000788 = new A000788();
   private final Sequence mA249154 = new A249154();

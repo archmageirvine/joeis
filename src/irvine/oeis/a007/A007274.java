@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.Walker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007274 Walks on hexagonal lattice using each point at most twice.
  * @author Sean A. Irvine
  */
-public class A007274 implements Sequence {
+public class A007274 extends Sequence0 {
 
   private final long mC = Lattices.HEXAGONAL.neighbour(Lattices.HEXAGONAL.origin(), 0);
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new Walker(Lattices.HEXAGONAL) {

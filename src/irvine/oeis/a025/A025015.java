@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025015 Central decanomial coefficients: largest coefficient of (1 + x + ... + x^9)^n.
  * @author Sean A. Irvine
  */
-public class A025015 implements Sequence {
+public class A025015 extends Sequence0 {
 
   private long mN = -1;
 

@@ -4,13 +4,13 @@ import irvine.factor.prime.Fast;
 import irvine.math.IntegerUtils;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051704 Maximal value of products of partitions of n into powers of distinct primes (powers of 1 and 2 excluded).
  * @author Sean A. Irvine
  */
-public class A051704 implements Sequence {
+public class A051704 extends Sequence0 {
 
   private static final Z[] SMALL_CASES = {Z.ONE, Z.ZERO, Z.ZERO, Z.THREE, Z.ZERO, Z.FIVE, Z.ZERO};
   private final Fast mPrime = new Fast();

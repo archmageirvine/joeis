@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003705 E.g.f. tan(sin(x)) (odd powers only).
  * @author Sean A. Irvine
  */
-public class A003705 implements Sequence {
+public class A003705 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private Z mF = Z.ONE;

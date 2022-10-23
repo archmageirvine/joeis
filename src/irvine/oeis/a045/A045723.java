@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045723 Number of configurations, excluding reflections and black-white interchanges, of n black and n white beads on a string.
  * @author Sean A. Irvine
  */
-public class A045723 implements Sequence {
+public class A045723 extends Sequence0 {
 
   private int mN = -1;
 

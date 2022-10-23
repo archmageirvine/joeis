@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicLongArray;
 
@@ -14,7 +14,7 @@ import irvine.util.array.DynamicLongArray;
  * A033863 Least number of Sort-then-add persistence n.
  * @author Sean A. Irvine
  */
-public class A033863 implements Sequence {
+public class A033863 extends Sequence0 {
 
   // Some values (e.g. 316) appear to not terminate, so we cannot simply run
   // each number until a solution is found.  Also, the sequences is not

@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007489 a(n) = Sum_{k=1..n} k!.
  * @author Sean A. Irvine
  */
-public class A007489 implements Sequence {
+public class A007489 extends Sequence0 {
 
   private long mN = -1;
   private Z mSum = Z.ZERO;

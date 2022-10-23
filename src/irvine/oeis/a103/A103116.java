@@ -4,13 +4,14 @@ package irvine.oeis.a103;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005598;
 
 /**
  * A103116 a(n) = Sum_{i=1..n} (n-i+1)*phi(i).
  * @author Georg Fischer
  */
-public class A103116 implements Sequence {
+public class A103116 extends Sequence0 {
 
   final Sequence mA005598 = new A005598();
   @Override

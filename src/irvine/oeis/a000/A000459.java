@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000459 Number of multiset permutations of {1, 1, 2, 2, ..., n, n} with no fixed points.
  * @author Sean A. Irvine
  */
-public class A000459 implements Sequence {
+public class A000459 extends Sequence0 {
 
   protected int mN = -1;
   private Z mA = null;

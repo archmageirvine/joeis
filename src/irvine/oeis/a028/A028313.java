@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028313 Elements in the 5-Pascal triangle (by row).
  * @author Sean A. Irvine
  */
-public class A028313 implements Sequence {
+public class A028313 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

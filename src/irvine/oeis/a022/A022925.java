@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A022925 Number of 5^m between 2^n and 2^(n+1).
  * @author Sean A. Irvine
  */
-public class A022925 implements Sequence {
+public class A022925 extends Sequence0 {
 
   private static final CR LOG = CR.TWO.log().divide(CR.FIVE.log());
   private long mN = -1;

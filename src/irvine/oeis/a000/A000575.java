@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000575 Tenth column of quintinomial coefficients.
  * @author Sean A. Irvine
  */
-public class A000575 implements Sequence {
+public class A000575 extends Sequence0 {
 
   private long mN = -1;
 

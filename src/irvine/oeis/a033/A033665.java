@@ -1,14 +1,14 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A033665 Number of 'Reverse and Add' steps needed to reach a palindrome starting at n, or -1 if n never reaches a palindrome.
  * @author Sean A. Irvine
  */
-public class A033665 implements Sequence {
+public class A033665 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

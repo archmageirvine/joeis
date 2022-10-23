@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A032231 "DGK" (bracelet, element, unlabeled) transform of 2,2,2,2,...
  * @author Sean A. Irvine
  */
-public class A032231 implements Sequence {
+public class A032231 extends Sequence0 {
 
   protected static final PolynomialRingField<Q> Y_RING = new PolynomialRingField<>("y", Rationals.SINGLETON);
   protected static final PolynomialRingField<Polynomial<Q>> RING = new PolynomialRingField<>(Y_RING);

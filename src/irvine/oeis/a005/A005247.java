@@ -2,6 +2,7 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000032;
 import irvine.oeis.a000.A000045;
 
@@ -9,7 +10,7 @@ import irvine.oeis.a000.A000045;
  * A005247 a(n) = 3*a(n-2) - a(n-4), a(0)=2, a(1)=1, a(2)=3, a(3)=2. Alternates Lucas (A000032) and Fibonacci (A000045) sequences for even and odd n.
  * @author Sean A. Irvine
  */
-public class A005247 implements Sequence {
+public class A005247 extends Sequence0 {
 
   private final Sequence mLucas = new A000032();
   private final Sequence mFibo = new A000045();

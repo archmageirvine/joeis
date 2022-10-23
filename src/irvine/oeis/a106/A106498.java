@@ -9,13 +9,13 @@ import irvine.math.polynomial.HararyMultiply;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A106498 Triangle read by rows: T(n,k) = number of unlabeled bicolored graphs with isolated nodes allowed having 2n nodes and k edges, with n nodes of each color. Here n &gt;= 0, 0 &lt;= k &lt;= n^2.
  * @author Sean A. Irvine
  */
-public class A106498 implements Sequence {
+public class A106498 extends Sequence0 {
 
   private Polynomial<Q> mP = new Polynomial<>(Q.ZERO, Q.ONE, Collections.singletonList(Q.ONE));
   private int mN = 0;

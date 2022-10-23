@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A012869 Numerator of [x^(2n+1)] in the Taylor series arccos(cot(x)*arcsinh(x))= x-x^3/15 +4*x^5/75 -2098*x^7/70875 +2969*x^9/141750 -35380322*x^11/2280403125 +...
  * @author Sean A. Irvine
  */
-public class A012869 implements Sequence {
+public class A012869 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

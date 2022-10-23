@@ -1,13 +1,13 @@
 package irvine.oeis.a026;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A026375 a(n) = Sum_{k=0..n} binomial(n,k)*binomial(2*k,k).
  * @author Sean A. Irvine
  */
-public class A026375 implements Sequence {
+public class A026375 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.THREE;

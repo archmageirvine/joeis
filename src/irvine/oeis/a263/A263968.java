@@ -3,6 +3,7 @@ package irvine.oeis.a263;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000556;
 import irvine.oeis.a000.A000557;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000557;
  * A263968 a(n) = Li_{-n}(phi) + Li_{-n}(1-phi), where Li_n(x) is the polylogarithm, phi=(1+sqrt(5))/2 is the golden ratio.
  * @author Georg Fischer
  */
-public class A263968 implements Sequence {
+public class A263968 extends Sequence0 {
 
   final Sequence mA000556 = new A000556();
   final Sequence mA000557 = new A000557();

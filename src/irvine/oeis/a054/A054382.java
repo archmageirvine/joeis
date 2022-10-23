@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054382 James Joyce's "Ulysses" sequence: number of digits in n^(n^n).
  * @author Sean A. Irvine
  */
-public class A054382 implements Sequence {
+public class A054382 extends Sequence0 {
 
   private static final CR LOG10 = CR.TEN.log();
   private int mN = -1;

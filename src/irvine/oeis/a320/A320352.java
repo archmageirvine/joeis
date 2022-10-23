@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A320352 Expansion of e.g.f. (exp(x) - 1)/(exp(x) - exp(2*x) + 1).
  * E.g.f.: (1 + sinh(x) - cosh(x))/(1 - 2*sinh(x))
  * @author Georg Fischer
  */
-public class A320352 implements Sequence {
+public class A320352 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

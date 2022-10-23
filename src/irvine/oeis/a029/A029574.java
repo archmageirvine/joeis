@@ -1,13 +1,13 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A029574 Number of permutations of an n-set containing a 7-cycle.
  * @author Sean A. Irvine
  */
-public class A029574 implements Sequence {
+public class A029574 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.ONE;

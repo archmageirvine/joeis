@@ -6,13 +6,13 @@ import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005929 Theta series of hexagonal net with respect to midpoint of edge.
  * @author Sean A. Irvine
  */
-public class A005929 implements Sequence {
+public class A005929 extends Sequence0 {
 
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
   private static final Q THREE_QUARTERS = new Q(3, 4);

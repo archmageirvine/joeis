@@ -1,14 +1,14 @@
 package irvine.oeis.a102;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A102370 "Sloping binary numbers": write numbers in binary under each other (right-justified), read diagonals in upward direction, convert to decimal.
  * read diagonals in upward direction, convert to decimal.
  * @author Georg Fischer
  */
-public class A102370 implements Sequence {
+public class A102370 extends Sequence0 {
 
   private long mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034067 Decimal part of a(n)^(1/2) starts with n so that a(n)&lt;a(n+1).
  * @author Sean A. Irvine
  */
-public class A034067 implements Sequence {
+public class A034067 extends Sequence0 {
 
   private long mN = -1;
   private long mT = 10;

@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028920 Pit harvesting sequence for winning solitaire Tchoukaillon (or Mancala).
  * @author Sean A. Irvine
  */
-public class A028920 implements Sequence {
+public class A028920 extends Sequence0 {
 
   // After David W. Wilson
 

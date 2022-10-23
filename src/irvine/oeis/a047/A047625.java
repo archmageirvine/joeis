@@ -3,13 +3,13 @@ package irvine.oeis.a047;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A047625 Floor( Pi * (3/2)^n ).
  * @author Sean A. Irvine
  */
-public class A047625 implements Sequence {
+public class A047625 extends Sequence0 {
 
   private Q mA = null;
 

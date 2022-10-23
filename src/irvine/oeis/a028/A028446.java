@@ -3,13 +3,13 @@ package irvine.oeis.a028;
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028446 Number of perfect matchings in graph P_{2n} X P_{2n} X P_{2n}.
  * @author Sean A. Irvine
  */
-public class A028446 implements Sequence {
+public class A028446 extends Sequence0 {
 
   // This is only capable of getting 3 terms and a(3) takes a fair amount of time.
 

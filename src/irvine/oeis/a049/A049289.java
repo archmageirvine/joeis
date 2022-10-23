@@ -8,13 +8,13 @@ import irvine.math.nauty.Nauty;
 import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049289 Number of nonisomorphic self-complementary circulant graphs (Cayley graphs for the cyclic group) of order 4n+1.
  * @author Sean A. Irvine
  */
-public class A049289 implements Sequence {
+public class A049289 extends Sequence0 {
 
   private int mN = -3;
   private final HashSet<Graph> mCanons = new HashSet<>();

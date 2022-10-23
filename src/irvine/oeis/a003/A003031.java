@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003031 Denominators of expansion of Fresnel integral S(z).
  * @author Sean A. Irvine
  */
-public class A003031 implements Sequence {
+public class A003031 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.TWO;

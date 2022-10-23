@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005713 Define strings S(0)=0, S(1)=11, S(n) = S(n-1)S(n-2); iterate.
  * @author Sean A. Irvine
  */
-public class A005713 implements Sequence {
+public class A005713 extends Sequence0 {
 
   private String mA = "0";
   private String mB = "11";

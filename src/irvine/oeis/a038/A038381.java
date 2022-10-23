@@ -2,14 +2,14 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002212;
 
 /**
  * A038381 Number of perifusenes with one internal vertex and symmetry point group C_s.
  * @author Sean A. Irvine
  */
-public class A038381 implements Sequence {
+public class A038381 extends Sequence0 {
 
   private static final Z[] SMALL = {Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ONE, Z.FOUR};
   private final MemorySequence mU = MemorySequence.cachedSequence(new A002212());

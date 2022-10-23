@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053556 Denominator of Sum_{k=0..n} (-1)^k/k!.
  * @author Sean A. Irvine
  */
-public class A053556 implements Sequence {
+public class A053556 extends Sequence0 {
 
   private int mN = -1;
   private Q mA = Q.ZERO;

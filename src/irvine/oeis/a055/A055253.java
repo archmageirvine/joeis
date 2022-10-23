@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055253 Number of even digits in 2^n.
  * @author Georg Fischer
  */
-public class A055253 implements Sequence {
+public class A055253 extends Sequence0 {
 
   private int mN = -1;
 

@@ -3,6 +3,7 @@ package irvine.oeis.a116;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000108;
 import irvine.oeis.a000.A000248;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000248;
  * A116072 Central terms of triangle A116071, which equals Pascal's triangle to the matrix power of Pascal's triangle.
  * @author Georg Fischer
  */
-public class A116072 implements Sequence {
+public class A116072 extends Sequence0 {
 
   final Sequence mA000108 = new A000108();
   final Sequence mA000248 = new A000248();

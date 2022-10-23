@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005477 2^(n-1)*(2^n-1)*product( 2^j+1, j =1..n-1).
  * @author Sean A. Irvine
  */
-public class A005477 implements Sequence {
+public class A005477 extends Sequence0 {
 
   private int mN = 0;
   private Z mP = Z.ONE;

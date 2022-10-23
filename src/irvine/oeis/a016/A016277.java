@@ -1,13 +1,13 @@
 package irvine.oeis.a016;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A016277 Expansion of 1/((1-2x)(1-3x)(1-8x)).
  * @author Sean A. Irvine
  */
-public class A016277 implements Sequence {
+public class A016277 extends Sequence0 {
 
   private Z mA = Z.FIVE;
   private Z mB = Z.NINE;

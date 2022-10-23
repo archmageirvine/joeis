@@ -3,14 +3,14 @@ package irvine.oeis.a046;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A046300 Smallest integer k such that 2^n is the largest power of two that is contained in 2^k as a proper substring.
  * @author Sean A. Irvine
  */
-public class A046300 implements Sequence {
+public class A046300 extends Sequence0 {
 
   private final ArrayList<String> mS = new ArrayList<>();
   private Z mA = Z.ONE;

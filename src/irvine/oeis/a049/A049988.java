@@ -4,14 +4,14 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000217;
 
 /**
  * A049988 Number of nondecreasing arithmetic progressions of positive integers with sum n.
  * @author Sean A. Irvine
  */
-public class A049988 implements Sequence {
+public class A049988 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> X1 = RING.oneMinusXToTheN(1);

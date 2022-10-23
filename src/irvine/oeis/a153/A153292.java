@@ -4,13 +4,13 @@ package irvine.oeis.a153;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A153292 G.f.: A(x) = F(x*F(x)^2) where F(x) = 1 + x*F(x)^3 is the g.f. of A001764.
  * @author Georg Fischer
  */
-public class A153292 implements Sequence {
+public class A153292 extends Sequence0 {
 
   protected int mN = -1;
 

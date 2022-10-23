@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059490 Expansion of generating function A_{QT}^(1)(4n;2).
  * @author Sean A. Irvine
  */
-public class A059490 implements Sequence {
+public class A059490 extends Sequence0 {
 
   private int mN = -1;
 

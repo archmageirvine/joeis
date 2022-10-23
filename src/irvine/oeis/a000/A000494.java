@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000494 Nearest integer to sin(n).
  * @author Sean A. Irvine
  */
-public class A000494 implements Sequence {
+public class A000494 extends Sequence0 {
 
   private long mN = -1;
 

@@ -4,14 +4,14 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A058223 Tree of Meeussen sequences read across rows.
  * @author Sean A. Irvine
  */
-public class A058223 implements Sequence {
+public class A058223 extends Sequence0 {
 
   private final LinkedList<long[]> mA = new LinkedList<>();
   {

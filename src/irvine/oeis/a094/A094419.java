@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A094419 Generalized ordered Bell numbers Bo(6,n).
  * E.g.f.: 1/(7 - 6*exp(x))
  * @author Georg Fischer
  */
-public class A094419 implements Sequence {
+public class A094419 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

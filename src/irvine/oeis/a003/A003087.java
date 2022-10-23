@@ -10,14 +10,14 @@ import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.polynomial.MultivariateMonomialOperation;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Pair;
 
 /**
  * A003087 Number of acyclic digraphs with n unlabeled nodes.
  * @author Sean A. Irvine
  */
-public class A003087 implements Sequence {
+public class A003087 extends Sequence0 {
 
   // See pp. 191-194, Graphical Enumeration by Harary and Palmer
 

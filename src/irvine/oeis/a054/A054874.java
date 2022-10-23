@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054874 a(n) = 2^(sum of a(i) where i&lt;n).
  * @author Sean A. Irvine
  */
-public class A054874 implements Sequence {
+public class A054874 extends Sequence0 {
 
   private Z mA = null;
 

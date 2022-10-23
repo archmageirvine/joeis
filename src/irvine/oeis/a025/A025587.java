@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025587 '3x+1' record-setters (blowup factor).
  * @author Sean A. Irvine
  */
-public class A025587 implements Sequence {
+public class A025587 extends Sequence0 {
 
   private Z mN = Z.ZERO;
   private Q mMax = Q.ZERO;

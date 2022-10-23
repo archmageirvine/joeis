@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007043 Number of noncommutative SL(2,C)-invariants of degree n in 5 variables.
  * @author Sean A. Irvine
  */
-public class A007043 implements Sequence {
+public class A007043 extends Sequence0 {
 
   private int mN = -1;
   private Z mA = Z.ONE;

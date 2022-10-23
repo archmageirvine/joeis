@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000097 Number of partitions of n if there are two kinds of 1's and two kinds of 2's.
  * @author Sean A. Irvine
  */
-public class A000097 implements Sequence {
+public class A000097 extends Sequence0 {
 
   private int mN = 0;
   private final MemorySequence mS70 = MemorySequence.cachedSequence(new A000070());

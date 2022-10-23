@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A012292 Expansion of e.g.f. arctanh(sin(x)*exp(x)) = x+2/2!*x^2+4/3!*x^3+24/4!*x^4+180/5!*x^5...
  * @author Sean A. Irvine
  */
-public class A012292 implements Sequence {
+public class A012292 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

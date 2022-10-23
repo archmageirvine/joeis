@@ -2,13 +2,13 @@ package irvine.oeis.a326;
 // manually 2021-06-13
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A326501 a(n) = Sum_{k=0..n} (-k)^k.
  * @author Georg Fischer
  */
-public class A326501 implements Sequence {
+public class A326501 extends Sequence0 {
 
   private Z mAn;
   private int mN;

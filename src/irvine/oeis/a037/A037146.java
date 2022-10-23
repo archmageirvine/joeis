@@ -6,6 +6,7 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004016;
 import irvine.oeis.a007.A007332;
 
@@ -13,7 +14,7 @@ import irvine.oeis.a007.A007332;
  * A037146 Numerators of Fourier coefficients of Eisenstein series of degree 2 and weight 10 when evaluated at Gram(A_2)*z.
  * @author Sean A. Irvine
  */
-public class A037146 implements Sequence {
+public class A037146 extends Sequence0 {
 
   private static final PolynomialRing<Q> RING = new PolynomialRing<>(Rationals.SINGLETON);
   private static final Q Q120 = new Q(120);

@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A279358 Exponential transform of the cubes A000578.
  * E.g.f.: exp(exp(x)*(x+3*x^2+x^3))
  * @author Georg Fischer
  */
-public class A279358 implements Sequence {
+public class A279358 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

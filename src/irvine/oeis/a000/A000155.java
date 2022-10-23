@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import java.math.BigDecimal;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000155 Nearest integer to modified Bessel function K_n(1).
  * @author Sean A. Irvine
  */
-public class A000155 implements Sequence {
+public class A000155 extends Sequence0 {
 
   private static final BigDecimal HALF = new BigDecimal("0.5");
   private int mN = 0;

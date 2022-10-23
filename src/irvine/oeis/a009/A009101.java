@@ -2,13 +2,13 @@ package irvine.oeis.a009;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A009101 Fixed point when iterating the function f on n, where f(x) = x + product of digits of x.
  * @author Sean A. Irvine
  */
-public class A009101 implements Sequence {
+public class A009101 extends Sequence0 {
 
   private long mN = -1;
 

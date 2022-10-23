@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014220 Next prime after n^3.
  * @author Sean A. Irvine
  */
-public class A014220 implements Sequence {
+public class A014220 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mN = Z.NEG_ONE;

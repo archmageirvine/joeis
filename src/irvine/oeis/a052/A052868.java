@@ -3,13 +3,13 @@ package irvine.oeis.a052;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052868 E.g.f.: LambertW(x/(-1+x))/x*(-1+x).
  * @author Sean A. Irvine
  */
-public class A052868 implements Sequence {
+public class A052868 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

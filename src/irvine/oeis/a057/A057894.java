@@ -5,6 +5,7 @@ import java.util.HashMap;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005351;
 import irvine.oeis.a005.A005352;
 
@@ -12,7 +13,7 @@ import irvine.oeis.a005.A005352;
  * A057894 Negabinary numbral "primes".
  * @author Sean A. Irvine
  */
-public class A057894 implements Sequence {
+public class A057894 extends Sequence0 {
 
   private long mN = -1;
   private long mR = -1;

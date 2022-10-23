@@ -3,6 +3,7 @@ package irvine.oeis.a096;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000009;
 import irvine.oeis.a010.A010815;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a010.A010815;
  * A096791 Number of partitions of n into distinct parts with even number of even parts.
  * @author Georg Fischer
  */
-public class A096791 implements Sequence {
+public class A096791 extends Sequence0 {
 
   final Sequence mA000009 = new A000009();
   final Sequence mA010815 = new A010815();

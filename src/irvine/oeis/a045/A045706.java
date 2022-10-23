@@ -6,7 +6,7 @@ import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
@@ -14,7 +14,7 @@ import irvine.oeis.a000.A000045;
  * A045706 Number of ways n can be written as a sum of a square of a Fibonacci number and a cube of a Fibonacci number; F(1) = F(2) = 1 are considered the same.
  * @author Sean A. Irvine
  */
-public class A045706 implements Sequence {
+public class A045706 extends Sequence0 {
 
   // Change 0, 1, 1, 2, 3, 5, ... to 0, 1, 2, 3, 5, ...
   private final MemorySequence mFibo = MemorySequence.cachedSequence(new PrependSequence(new SkipSequence(new A000045(), 2), 0));

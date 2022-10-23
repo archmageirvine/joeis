@@ -6,13 +6,13 @@ import java.util.List;
 import irvine.math.group.IntegerField;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007079 Number of labeled regular tournaments with 2n+1 nodes.
  * @author Sean A. Irvine
  */
-public class A007079 implements Sequence {
+public class A007079 extends Sequence0 {
 
   private int mN = -1;
 

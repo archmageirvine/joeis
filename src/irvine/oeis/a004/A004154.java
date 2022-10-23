@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004154 Omit trailing zeros from factorial numbers.
  * @author Sean A. Irvine
  */
-public class A004154 implements Sequence {
+public class A004154 extends Sequence0 {
 
   private Z mF = Z.ONE;
   private long mN = -1;

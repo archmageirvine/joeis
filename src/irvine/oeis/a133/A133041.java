@@ -3,13 +3,14 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 
 /**
  * A133041 Sum of n and partition number of n.
  * @author Georg Fischer
  */
-public class A133041 implements Sequence {
+public class A133041 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   protected long mN;

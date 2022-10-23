@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008293 Triangle of coefficients in expansion of D^n (tan x) in powers of tan x.
  * @author Sean A. Irvine
  */
-public class A008293 implements Sequence {
+public class A008293 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> DTAN = Polynomial.create(1, 0, 1);

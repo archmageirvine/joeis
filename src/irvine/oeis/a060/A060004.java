@@ -2,14 +2,14 @@ package irvine.oeis.a060;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A060004 a(n) = least odd number which can be represented in the form p + 2*k^2, k&gt;0, in n different ways.
  * @author Sean A. Irvine
  */
-public class A060004 implements Sequence {
+public class A060004 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private final DynamicLongArray mFirsts = new DynamicLongArray();

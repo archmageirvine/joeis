@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.NonadjacentWalker;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A336907 Number of n-step self-avoiding walks on the f.c.c. lattice with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
-public class A336907 implements Sequence {
+public class A336907 extends Sequence0 {
 
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new NonadjacentWalker(Lattices.FCC));
   private final long mC = Lattices.FCC.neighbour(Lattices.FCC.origin(), 0);

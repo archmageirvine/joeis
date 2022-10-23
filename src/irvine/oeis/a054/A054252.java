@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054252 Triangle T(n,k) of n X n binary matrices with k=0..n^2 ones under action of dihedral group of the square D_4.
  * @author Sean A. Irvine
  */
-public class A054252 implements Sequence {
+public class A054252 extends Sequence0 {
 
   private static final PolynomialRing<Q> RING = new PolynomialRing<>(Rationals.SINGLETON);
   private static final Q ONE_EIGHTH = new Q(1, 8);

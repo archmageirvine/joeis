@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005187 a(n) = a(floor(n/2)) + n; also denominators in expansion of 1/sqrt(1-x) are 2^a(n); also 2n - number of 1's in binary expansion of 2n.
  * @author Sean A. Irvine
  */
-public class A005187 implements Sequence {
+public class A005187 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

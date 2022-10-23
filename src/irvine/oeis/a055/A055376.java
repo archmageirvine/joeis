@@ -6,13 +6,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055376 CIK transform of Pascal's triangle A007318.
  * @author Sean A. Irvine
  */
-public class A055376 implements Sequence {
+public class A055376 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private Polynomial<Z> mRow = null;

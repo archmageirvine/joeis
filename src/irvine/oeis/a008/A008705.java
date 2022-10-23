@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008705 Coefficient of x^n in (Product_{m=1..n}(1-x^m))^n.
  * @author Sean A. Irvine
  */
-public class A008705 implements Sequence {
+public class A008705 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;

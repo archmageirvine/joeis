@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051576 Order of Burnside group B(3,n) of exponent 3 and rank n.
  * @author Sean A. Irvine
  */
-public class A051576 implements Sequence {
+public class A051576 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

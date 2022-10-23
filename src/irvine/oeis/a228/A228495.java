@@ -3,6 +3,7 @@ package irvine.oeis.a228;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000035;
 import irvine.oeis.a010.A010060;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a010.A010060;
  * A228495 Characteristic function of the odd odious numbers (A092246).
  * @author Georg Fischer
  */
-public class A228495 implements Sequence {
+public class A228495 extends Sequence0 {
 
   final Sequence mA000035 = new A000035();
   final Sequence mA010060 = new A010060();

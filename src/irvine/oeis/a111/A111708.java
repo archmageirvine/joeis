@@ -1,13 +1,13 @@
 package irvine.oeis.a111;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A111708 a(n) = n concatenated with 9's complement of n.
  * @author Georg Fischer
  */
-public class A111708 implements Sequence {
+public class A111708 extends Sequence0 {
 
   private int mN;
 

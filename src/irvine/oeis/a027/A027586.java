@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027586 Sequence satisfies T^2(a)=a, where T is defined below.
  * @author Sean A. Irvine
  */
-public class A027586 implements Sequence {
+public class A027586 extends Sequence0 {
 
   private Polynomial<Z> mA = Polynomial.create(0, 1, 2, 3, 3, 5, 6);
   private int mN = 0;

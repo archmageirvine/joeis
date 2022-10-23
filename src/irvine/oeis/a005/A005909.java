@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005909 a(n) = [ tau*a(n-1) ] + [ tau*a(n-2) ].
  * @author Sean A. Irvine
  */
-public class A005909 implements Sequence {
+public class A005909 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

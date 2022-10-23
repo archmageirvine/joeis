@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059487 Number of 2-enumeration of 4n X 4n quarter-turn symmetric alternating-sign matrices.
  * @author Sean A. Irvine
  */
-public class A059487 implements Sequence {
+public class A059487 extends Sequence0 {
 
   private int mN = -1;
 

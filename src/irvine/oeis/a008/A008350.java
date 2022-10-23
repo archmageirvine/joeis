@@ -6,13 +6,13 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008350 Number of orbits of norm 2n vectors in E_8 lattice.
  * @author Sean A. Irvine
  */
-public class A008350 implements Sequence {
+public class A008350 extends Sequence0 {
 
   // After Noam D. Elkies
 

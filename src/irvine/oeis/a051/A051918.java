@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051918 Start with n, apply k-&gt;2k+1 until reach new record prime; sequence gives number of steps needed.
  * @author Sean A. Irvine
  */
-public class A051918 implements Sequence {
+public class A051918 extends Sequence0 {
 
   private Z mP = Z.ONE;
   private long mN = -1;

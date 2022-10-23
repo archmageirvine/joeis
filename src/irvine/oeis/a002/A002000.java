@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002000 a(n+1) = a(n)*(a(n)^2 - 3) with a(0) = 7.
  * @author Sean A. Irvine
  */
-public class A002000 implements Sequence {
+public class A002000 extends Sequence0 {
 
   private Z mA = null;
 

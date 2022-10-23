@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053632 Irregular triangle read by rows giving coefficients in expansion of Product_{k=1..n} (1 + x^k).
  * @author Sean A. Irvine
  */
-public class A053632 implements Sequence {
+public class A053632 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = 0;

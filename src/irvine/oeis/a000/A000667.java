@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000667 Boustrophedon transform of all-1's sequence.
  * @author Sean A. Irvine
  */
-public class A000667 implements Sequence {
+public class A000667 extends Sequence0 {
 
   private long mN = -1;
 

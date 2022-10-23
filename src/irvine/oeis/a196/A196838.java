@@ -4,13 +4,13 @@ import irvine.math.polynomial.BernoulliPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A196838 Numerators of coefficients of Bernoulli polynomials with rising powers of the variable.
  * @author Sean A. Irvine
  */
-public class A196838 implements Sequence {
+public class A196838 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

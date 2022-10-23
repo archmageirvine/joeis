@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003235 a(n) = Sum_{k=0..n} (-1)^(n-k) C(n,k)*C(k^2,n).
  * @author Sean A. Irvine
  */
-public class A003235 implements Sequence {
+public class A003235 extends Sequence0 {
 
   private long mN = -1;
 

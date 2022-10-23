@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001613 Delete all odd digits from n.
  * @author Sean A. Irvine
  */
-public class A001613 implements Sequence {
+public class A001613 extends Sequence0 {
 
   private long mN = -1;
 

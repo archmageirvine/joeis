@@ -1,13 +1,13 @@
 package irvine.oeis.a197;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A197870 Expansion of false theta series variation of Ramanujan theta function psi(x).
  * @author Sean A. Irvine
  */
-public class A197870 implements Sequence {
+public class A197870 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A029758 Number of AVL trees of height n.
  * @author Sean A. Irvine
  */
-public class A029758 implements Sequence {
+public class A029758 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

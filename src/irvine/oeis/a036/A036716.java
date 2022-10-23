@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036716 a(n)=number of Gaussian integers z=a+bi satisfying n-1/2&lt;|z|&lt;=n+1/2, a&gt;=0, 0&lt;=b&lt;=a.
  * @author Sean A. Irvine
  */
-public class A036716 implements Sequence {
+public class A036716 extends Sequence0 {
 
   private long mN = -1;
 

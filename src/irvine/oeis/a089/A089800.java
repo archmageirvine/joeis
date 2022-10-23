@@ -3,13 +3,14 @@ package irvine.oeis.a089;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005369;
 
 /**
  * A089800 Expansion of Jacobi theta function theta_2(q)/q^(1/4).
  * @author Georg Fischer
  */
-public class A089800 implements Sequence {
+public class A089800 extends Sequence0 {
 
   final Sequence mA005369 = new A005369();
   @Override

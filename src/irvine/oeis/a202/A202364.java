@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A202364 Number of n-permutations with at least one cycle of length &gt;=4.
  * E.g.f.: 1/(1-x) - exp(x + x^2/2 + x^3/3)
  * @author Georg Fischer
  */
-public class A202364 implements Sequence {
+public class A202364 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

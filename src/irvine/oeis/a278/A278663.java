@@ -3,6 +3,7 @@ package irvine.oeis.a278;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001867;
 import irvine.oeis.a027.A027376;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a027.A027376;
  * A278663 Number of periodic necklaces with n beads of 3 colors.
  * @author Georg Fischer
  */
-public class A278663 implements Sequence {
+public class A278663 extends Sequence0 {
 
   final Sequence mA001867 = new A001867();
   final Sequence mA027376 = new A027376();

@@ -1,13 +1,13 @@
 package irvine.oeis.a017;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A017922 Powers of sqrt(6) rounded down.
  * @author Sean A. Irvine
  */
-public class A017922 implements Sequence {
+public class A017922 extends Sequence0 {
 
   private Z mN = null;
 

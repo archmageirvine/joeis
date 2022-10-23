@@ -4,13 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005692 Shortest wins at Beanstalk.
  * @author Sean A. Irvine
  */
-public class A005692 implements Sequence {
+public class A005692 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

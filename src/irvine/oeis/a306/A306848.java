@@ -2,13 +2,13 @@ package irvine.oeis.a306;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A306848 Product of first n odd nonprimes, a(n) = Product_{k=1..n) A071904(k).
  * @author Sean A. Irvine
  */
-public class A306848 implements Sequence {
+public class A306848 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

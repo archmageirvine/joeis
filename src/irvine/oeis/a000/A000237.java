@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.transform.BikTransformSequence;
 import irvine.oeis.transform.EulerTransformSequence;
 
@@ -12,7 +12,7 @@ import irvine.oeis.transform.EulerTransformSequence;
  * A000237 Number of mixed Husimi trees with n nodes; or rooted polygonal cacti with bridges.
  * @author Sean A. Irvine
  */
-public class A000237 implements Sequence {
+public class A000237 extends Sequence0 {
 
   // Thanks to Christian Bower for helping me get this working.
 

@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048680 Nonnegative integers A001477 expanded with rewrite 0-&gt;0, 01-&gt;1, then interpreted as Zeckendorffian expansions (as numbers of Fibonacci number system).
  * @author Sean A. Irvine
  */
-public class A048680 implements Sequence {
+public class A048680 extends Sequence0 {
 
   // After Charles R Greathouse IV
 

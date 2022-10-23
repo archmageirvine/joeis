@@ -3,12 +3,13 @@ package irvine.oeis.a171;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A171451 a(n) = 2^C(n, 2) * 2^floor(n/3).
  * @author Georg Fischer
  */
-public class A171451 implements Sequence {
+public class A171451 extends Sequence0 {
 
   final Sequence mA171452 = new A171452();
   @Override

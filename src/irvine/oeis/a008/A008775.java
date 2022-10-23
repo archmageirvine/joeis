@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008775 Expansion of e.g.f. 2/(1 + cos x * cosh x) in powers of x^4.
  * @author Sean A. Irvine
  */
-public class A008775 implements Sequence {
+public class A008775 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private Z mF = Z.TWO;

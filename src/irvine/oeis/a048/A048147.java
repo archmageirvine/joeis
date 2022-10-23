@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048147 Array T read by diagonals; T(i,j) = i^2 + j^2.
  * @author Sean A. Irvine
  */
-public class A048147 implements Sequence {
+public class A048147 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

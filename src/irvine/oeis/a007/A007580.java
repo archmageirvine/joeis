@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007580 Number of Young tableaux of height &lt;= 8.
  * @author Sean A. Irvine
  */
-public class A007580 implements Sequence {
+public class A007580 extends Sequence0 {
 
   // After Alois P. Heinz
 

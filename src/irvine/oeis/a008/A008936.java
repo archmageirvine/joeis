@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008936 Expansion of (1 - 2*x -x^4)/(1 - 2*x)^2 in powers of x.
  * @author Sean A. Irvine
  */
-public class A008936 implements Sequence {
+public class A008936 extends Sequence0 {
 
   private int mN = -1;
   private Z mA = null;

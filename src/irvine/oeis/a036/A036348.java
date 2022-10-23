@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036348 Parity of 'even number' and its sum of prime factors differs (counted with multiplicity).
  * @author Sean A. Irvine
  */
-public class A036348 implements Sequence {
+public class A036348 extends Sequence0 {
 
   private long mN = 0;
 

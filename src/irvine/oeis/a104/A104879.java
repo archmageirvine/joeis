@@ -3,12 +3,13 @@ package irvine.oeis.a104;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a103.A103439;
 /**
  * A104879 Row sums of a sum-of-powers triangle.
  * @author Georg Fischer
  */
-public class A104879 implements Sequence {
+public class A104879 extends Sequence0 {
 
   private final Sequence mA103439 = new A103439();
   @Override

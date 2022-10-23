@@ -1,13 +1,13 @@
 package irvine.oeis.a135;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A135292 a(n) = 5^n * 4^(n^2).
  * @author Georg Fischer
  */
-public class A135292 implements Sequence {
+public class A135292 extends Sequence0 {
 
   protected long mBaseA; // baseA
   protected long mBaseB2; // baseB^2

@@ -1,13 +1,13 @@
 package irvine.oeis.a026;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A026933 Self-convolution of array T given by A008288.
  * @author Sean A. Irvine
  */
-public class A026933 implements Sequence {
+public class A026933 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

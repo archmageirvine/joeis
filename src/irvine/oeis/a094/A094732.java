@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A094732 Number of connected ordered 5-element multiantichains on a labeled n-set.
  * E.g.f.: exp(31*x) - 20*exp(23*x) + 60*exp(19*x) + 20*exp(17*x) + 5*exp(16*x) - 95*exp(15*x) - 120*exp(14*x) + 150*exp(13*x) + 180*exp(12*x) - 420*exp(11*x) - 110*exp(10*x) + 620*exp(9*x) + 160*exp(8*x) - 690*exp(7*x) + 840*exp(6*x) - 936*exp(5*x) - 1140*exp(4*x) + 3560*exp(3*x) - 3010*exp(2*x) + 1095*exp(x) - 150
  * @author Georg Fischer
  */
-public class A094732 implements Sequence {
+public class A094732 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

@@ -3,13 +3,14 @@ package irvine.oeis.a069;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003132;
 import irvine.oeis.a118.A118881;
 /**
  * A069816 a(n) = (sum of digits of n)^2 - (sum of digits^2 of n).
  * @author Georg Fischer
  */
-public class A069816 implements Sequence {
+public class A069816 extends Sequence0 {
 
   private final Sequence mA003132 = new A003132();
   private final Sequence mA118881 = new A118881();

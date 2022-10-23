@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A296730 Expansion of e.g.f. arctanh(x*cos(x)) (odd powers only).
  * E.g.f.: arctanh(x*cos(x)), odd powers
  * @author Georg Fischer
  */
-public class A296730 implements Sequence {
+public class A296730 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

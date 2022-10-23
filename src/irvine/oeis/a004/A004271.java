@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004271 1, 3 and the nonnegative even numbers.
  * @author Sean A. Irvine
  */
-public class A004271 implements Sequence {
+public class A004271 extends Sequence0 {
 
   private long mN = -1;
 

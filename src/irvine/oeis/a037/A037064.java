@@ -3,13 +3,13 @@ package irvine.oeis.a037;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A037064 a(n)-th prime is the smallest prime containing exactly n 6's.
  * @author Sean A. Irvine
  */
-public class A037064 implements Sequence {
+public class A037064 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private int mN = -1;

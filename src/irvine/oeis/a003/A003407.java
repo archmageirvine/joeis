@@ -3,14 +3,14 @@ package irvine.oeis.a003;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicArray;
 
 /**
  * A003407 Number of permutations of [n] with no 3-term arithmetic progression.
  * @author Sean A. Irvine
  */
-public class A003407 implements Sequence {
+public class A003407 extends Sequence0 {
 
   private LongDynamicArray<int[]> mSoln = new LongDynamicArray<>();
   private int mN = -1;

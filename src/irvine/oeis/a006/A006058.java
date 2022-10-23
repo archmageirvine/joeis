@@ -2,14 +2,14 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000798;
 
 /**
  * A006058 Number of connected labeled T_4-topologies with n points.
  * @author Sean A. Irvine
  */
-public class A006058 implements Sequence {
+public class A006058 extends Sequence0 {
 
   private long mN = -1;
 

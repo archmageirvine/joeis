@@ -5,13 +5,13 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056886 Determinant of the n X n Hankel matrix whose entries are s_2 (i+j), 0 &lt;= i, j &lt; n, where s_2 is the sum of the base-2 bits.
  * @author Sean A. Irvine
  */
-public class A056886 implements Sequence {
+public class A056886 extends Sequence0 {
 
   private int mN = -1;
 

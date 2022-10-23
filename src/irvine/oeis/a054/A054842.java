@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054842 If n = a + 10 * b + 100 * c + 1000 * d + ... then a(n) = (2^a) * (3^b) * (5^c) * (7^d) * ...
  * @author Sean A. Irvine
  */
-public class A054842 implements Sequence {
+public class A054842 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

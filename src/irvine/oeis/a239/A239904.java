@@ -3,6 +3,7 @@ package irvine.oeis.a239;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000120;
 import irvine.oeis.a014.A014081;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a014.A014081;
  * A239904 a(n) = n - wt(n) + (number of times 11 appears in binary expansion of n).
  * @author Georg Fischer
  */
-public class A239904 implements Sequence {
+public class A239904 extends Sequence0 {
 
   final Sequence mA000120 = new A000120();
   final Sequence mA014081 = new A014081();

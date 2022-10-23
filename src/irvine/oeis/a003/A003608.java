@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003608 Add 4, then reverse digits; start with 0.
  * @author Sean A. Irvine
  */
-public class A003608 implements Sequence {
+public class A003608 extends Sequence0 {
 
   private Z mA = Z.valueOf(-4);
 

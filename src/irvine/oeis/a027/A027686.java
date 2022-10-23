@@ -8,13 +8,13 @@ import java.util.List;
 import java.util.Map;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027686 Number of ways to transform say (((((((ab)c)d)e)f)g)h) to (a(b(c(d(e(f(gh))))))) where there are n multiplications (hence n+1 variables) by repeatedly applying the one-way associative law ((xy)z) -&gt; (x(yz)).
  * @author Sean A. Irvine
  */
-public class A027686 implements Sequence {
+public class A027686 extends Sequence0 {
 
   // After Alois P. Heinz
 

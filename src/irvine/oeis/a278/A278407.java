@@ -3,13 +3,14 @@ package irvine.oeis.a278;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000009;
 
 /**
  * A278407 G.f.: x^2 * f''(x), where f(x) = Product_{k&gt;=1} (1 + x^k).
  * @author Georg Fischer
  */
-public class A278407 implements Sequence {
+public class A278407 extends Sequence0 {
 
   final Sequence mA000009 = new A000009();
   protected long mN;

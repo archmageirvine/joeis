@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055655 Efficient representation of n in "square base" where xyz means 9x+4y+z and z&lt;4, y&lt;9 and x&lt;16 etc.
  * @author Sean A. Irvine
  */
-public class A055655 implements Sequence {
+public class A055655 extends Sequence0 {
 
   // After M. F. Hasler
 

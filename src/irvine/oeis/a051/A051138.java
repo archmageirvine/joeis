@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051138 Divisibility sequence associated with elliptic curve y^2 + y = x^3 - x and point (1, 0).
  * @author Sean A. Irvine
  */
-public class A051138 implements Sequence {
+public class A051138 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

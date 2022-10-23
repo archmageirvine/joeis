@@ -3,13 +3,14 @@ package irvine.oeis.a233;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a080.A080791;
 
 /**
  * A233272 a(n) = n + 1 + number of nonleading zeros in binary representation of n (A080791).
  * @author Georg Fischer
  */
-public class A233272 implements Sequence {
+public class A233272 extends Sequence0 {
 
   final Sequence mA080791 = new A080791();
   protected long mN;

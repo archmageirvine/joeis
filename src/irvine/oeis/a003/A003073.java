@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003073 A nonlinear recurrence.
  * @author Sean A. Irvine
  */
-public class A003073 implements Sequence {
+public class A003073 extends Sequence0 {
 
   private int mN = -1;
 

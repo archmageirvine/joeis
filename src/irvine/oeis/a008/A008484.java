@@ -2,13 +2,13 @@ package irvine.oeis.a008;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008484 Number of partitions of n into parts &gt;= 4.
  * @author Sean A. Irvine
  */
-public class A008484 implements Sequence {
+public class A008484 extends Sequence0 {
 
   private int mN = -1;
 

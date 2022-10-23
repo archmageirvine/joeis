@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028966 Norms of vectors in the a.c.c. lattice, divided by 2.
  * @author Sean A. Irvine
  */
-public class A028966 implements Sequence {
+public class A028966 extends Sequence0 {
 
   private long mN = -1;
 

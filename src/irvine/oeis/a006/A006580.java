@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006580 a(n) = Sum_{k=1..n-1} lcm(k,n-k).
  * @author Sean A. Irvine
  */
-public class A006580 implements Sequence {
+public class A006580 extends Sequence0 {
 
   private long mN = -1;
 

@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030201 Expansion of eta(q^3)*eta(q^21).
  * @author Sean A. Irvine
  */
-public class A030201 implements Sequence {
+public class A030201 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> X3 = RING.monomial(Z.ONE, 3);

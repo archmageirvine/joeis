@@ -5,13 +5,13 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007769 Number of chord diagrams with n chords; number of pairings on a necklace.
  * @author Sean A. Irvine
  */
-public class A007769 implements Sequence {
+public class A007769 extends Sequence0 {
 
   private int mN = -1;
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

@@ -3,13 +3,14 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005867;
 
 /**
  * A057857 Number of residue classes modulo n-th primorial number which contain a prime.
  * @author Georg Fischer
  */
-public class A057857 implements Sequence {
+public class A057857 extends Sequence0 {
 
   final Sequence mA005867 = new A005867();
   protected long mN;

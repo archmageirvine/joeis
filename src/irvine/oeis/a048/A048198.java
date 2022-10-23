@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048198 Number of primes between successive n's, where n mod 10 = 5.
  * @author Sean A. Irvine
  */
-public class A048198 implements Sequence {
+public class A048198 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

@@ -4,14 +4,14 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Point;
 
 /**
  * A051602 a(n) is the maximal number of squares that can be formed from n points in the plane.
  * @author Sean A. Irvine
  */
-public class A051602 implements Sequence {
+public class A051602 extends Sequence0 {
 
   // Heuristics:
   //

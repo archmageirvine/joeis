@@ -5,13 +5,13 @@ import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingCycler;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A039618 Number of 2n-step self-avoiding closed walks on first octant of 3-dimensional cubic lattice, passing through origin.
  * @author Sean A. Irvine
  */
-public class A039618 implements Sequence {
+public class A039618 extends Sequence0 {
 
   private int mN = -2;
   private final long mC = Lattices.Z3.neighbour(Lattices.Z3.origin(), 0);

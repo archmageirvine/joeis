@@ -5,13 +5,13 @@ import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054365 Number of unlabeled 5-gonal cacti having n polygons.
  * @author Sean A. Irvine
  */
-public class A054365 implements Sequence {
+public class A054365 extends Sequence0 {
 
   private int mN = -1;
 

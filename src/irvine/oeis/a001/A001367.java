@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001367 Solution to f(2) = 1, f(n) = sqrt(n) f(sqrt(n)) + n at values n = 2^2^i.
  * @author Sean A. Irvine
  */
-public class A001367 implements Sequence {
+public class A001367 extends Sequence0 {
 
   private int mN = -1;
   private Z mA = Z.ONE;

@@ -2,14 +2,14 @@ package irvine.oeis.a037;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
 
 /**
  * A037093 "Sloping binary representation" of Fibonacci numbers, slope = +1.
  * @author Sean A. Irvine
  */
-public class A037093 implements Sequence {
+public class A037093 extends Sequence0 {
 
   private final MemorySequence mFibo = MemorySequence.cachedSequence(new A000045());
   private int mN = -1;

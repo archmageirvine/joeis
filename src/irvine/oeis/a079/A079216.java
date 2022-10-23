@@ -4,13 +4,13 @@ import irvine.math.IntegerUtils;
 import irvine.math.partitions.IntegerComposition;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A079216 Square array A(n&gt;=0,k&gt;=1) (listed antidiagonally: A(0,1)=1, A(1,1)=1, A(0,2)=1, A(2,1)=2, A(1,2)=1, A(0,3)=1, A(3,1)=3, ...) giving the number of n-edge general plane trees fixed by k-fold application of Catalan Automorphisms A057511/A057512 (Deep rotation of general parenthesizations/plane trees).
  * @author Sean A. Irvine
  */
-public class A079216 implements Sequence {
+public class A079216 extends Sequence0 {
 
   private int mN = 0;
   private int mM = 0;

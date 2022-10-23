@@ -3,13 +3,14 @@ package irvine.oeis.a168;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a032.A032741;
 
 /**
  * A168014 Sum of all parts of all partitions of n into equal parts that do not contain 1 as a part.
  * @author Georg Fischer
  */
-public class A168014 implements Sequence {
+public class A168014 extends Sequence0 {
 
   final Sequence mA032741 = new A032741();
   protected long mN;

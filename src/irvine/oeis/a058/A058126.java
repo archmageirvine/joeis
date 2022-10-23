@@ -3,6 +3,7 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000290;
 import irvine.oeis.a000.A000312;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000312;
  * A058126 a(n) = n^n - n^2 with 0^0=1.
  * @author Georg Fischer
  */
-public class A058126 implements Sequence {
+public class A058126 extends Sequence0 {
 
   final Sequence mA000290 = new A000290();
   final Sequence mA000312 = new A000312();

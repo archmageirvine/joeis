@@ -2,13 +2,13 @@ package irvine.oeis.a039;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A039622 Number of n X n Young tableaux.
  * @author Sean A. Irvine
  */
-public class A039622 implements Sequence {
+public class A039622 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000757 Number of cyclic permutations of [n] with no i-&gt;i+1 (mod n).
  * @author Sean A. Irvine
  */
-public class A000757 implements Sequence {
+public class A000757 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ZERO;

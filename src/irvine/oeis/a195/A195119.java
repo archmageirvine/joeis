@@ -3,6 +3,7 @@ package irvine.oeis.a195;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001951;
 import irvine.oeis.a005.A005843;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a005.A005843;
  * A195119 a(n) = 2*n - floor(n*sqrt(2)).
  * @author Georg Fischer
  */
-public class A195119 implements Sequence {
+public class A195119 extends Sequence0 {
 
   final Sequence mA001951 = new A001951();
   final Sequence mA005843 = new A005843();

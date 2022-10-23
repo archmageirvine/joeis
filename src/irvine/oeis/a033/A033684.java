@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A033684 1 iff n is a square not divisible by 3.
  * @author Sean A. Irvine
  */
-public class A033684 implements Sequence {
+public class A033684 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 1;

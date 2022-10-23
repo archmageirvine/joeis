@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004670 Theta series of extremal even unimodular lattice in dimension 32.
  * @author Sean A. Irvine
  */
-public class A004670 implements Sequence {
+public class A004670 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Z Z960 = Z.valueOf(960);

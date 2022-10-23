@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025485 Number of iterations of function f(k) = ceiling(sqrt(k))^2 - k on n required to force n &lt;= 2.
  * @author Sean A. Irvine
  */
-public class A025485 implements Sequence {
+public class A025485 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

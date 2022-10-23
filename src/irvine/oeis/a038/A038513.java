@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038513 Numbers with three not necessarily distinct prime factors with smallest prime &gt;=5.
  * @author Sean A. Irvine
  */
-public class A038513 implements Sequence {
+public class A038513 extends Sequence0 {
 
   private Z mN = Z.valueOf(124);
 

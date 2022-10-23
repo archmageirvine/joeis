@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003303 Numerators of spin-wave coefficients for cubic lattice.
  * @author Sean A. Irvine
  */
-public class A003303 implements Sequence {
+public class A003303 extends Sequence0 {
 
   private Q mA = Q.ZERO;
   private Q mB = Q.ZERO;

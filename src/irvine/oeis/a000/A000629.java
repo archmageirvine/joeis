@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000629 Number of necklaces of partitions of n+1 labeled beads.
  * @author Sean A. Irvine
  */
-public class A000629 implements Sequence {
+public class A000629 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

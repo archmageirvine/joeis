@@ -4,13 +4,13 @@ import irvine.math.z.BellNumbers;
 import irvine.math.z.Integers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059849 Number of pairs of partitions of {1,2,...,n} whose meet is the partition {{1}, {2}, ..., {n}}.
  * @author Sean A. Irvine
  */
-public class A059849 implements Sequence {
+public class A059849 extends Sequence0 {
 
   private int mN = -1;
 

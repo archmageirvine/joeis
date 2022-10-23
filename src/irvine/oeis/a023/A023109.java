@@ -2,7 +2,7 @@ package irvine.oeis.a023;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicArray;
 import irvine.util.array.LongDynamicIntArray;
 import irvine.util.string.StringUtils;
@@ -11,7 +11,7 @@ import irvine.util.string.StringUtils;
  * A023109 a(0) = 0. For n &gt; 0, smallest non-palindromic number k such that the smallest palindrome in the Reverse and Add! trajectory of k is reached after exactly n iterations.
  * @author Sean A. Irvine
  */
-public class A023109 implements Sequence {
+public class A023109 extends Sequence0 {
 
   private final LongDynamicIntArray mIterations = new LongDynamicIntArray();
   private final LongDynamicArray<Z> mValue = new LongDynamicArray<>();

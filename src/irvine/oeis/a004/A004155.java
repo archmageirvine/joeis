@@ -2,13 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004155 Sum of digits of n-th odd number.
  * @author Sean A. Irvine
  */
-public class A004155 implements Sequence {
+public class A004155 extends Sequence0 {
 
   private long mN = -1;
 

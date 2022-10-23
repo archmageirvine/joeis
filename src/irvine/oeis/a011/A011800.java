@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011800 Number of labeled forests of n nodes each component of which is a path.
  * @author Sean A. Irvine
  */
-public class A011800 implements Sequence {
+public class A011800 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.ONE;

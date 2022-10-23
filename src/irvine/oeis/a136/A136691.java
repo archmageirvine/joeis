@@ -1,14 +1,14 @@
 package irvine.oeis.a136;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A136691 Final nonzero digit of n! in base 4.
  * Works for non-prime bases, but is much slower than A136690.
  * @author Georg Fischer
  */
-public class A136691 implements Sequence {
+public class A136691 extends Sequence0 {
 
   private int mN;
   private final int mBase;

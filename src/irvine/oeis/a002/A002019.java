@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002019 a(n) = a(n-1) - (n-1)(n-2)a(n-2).
  * @author Sean A. Irvine
  */
-public class A002019 implements Sequence {
+public class A002019 extends Sequence0 {
 
   private long mN = -2;
   private Z mA = Z.ZERO;

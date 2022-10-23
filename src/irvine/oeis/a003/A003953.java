@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003953 Expansion of g.f.: (1+x)/(1-10*x).
  * @author Sean A. Irvine
  */
-public class A003953 implements Sequence {
+public class A003953 extends Sequence0 {
 
   private Z mA = null;
 

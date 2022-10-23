@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048678 Binary expansion of nonnegative integers expanded to "Zeckendorffian format" with rewrite rules 0-&gt;0, 1-&gt;01.
  * @author Sean A. Irvine
  */
-public class A048678 implements Sequence {
+public class A048678 extends Sequence0 {
 
   private long mN = -1;
 

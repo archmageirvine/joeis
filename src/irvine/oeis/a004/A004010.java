@@ -5,13 +5,13 @@ import irvine.math.group.QPolynomialRingField;
 import irvine.math.polynomial.QPolynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004010 Theta series of 12-dimensional Coxeter-Todd lattice K_12.
  * @author Sean A. Irvine
  */
-public class A004010 implements Sequence {
+public class A004010 extends Sequence0 {
 
   private static final QPolynomialRingField<Z> RING = new QPolynomialRingField<>(IntegerField.SINGLETON);
   private static final Z Z18 = Z.valueOf(18);

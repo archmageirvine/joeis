@@ -3,13 +3,14 @@ package irvine.oeis.a345;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003242;
 import irvine.oeis.a025.A025047;
 /**
  * A345195 Number of non-alternating anti-run compositions of n.
  * @author Georg Fischer
  */
-public class A345195 implements Sequence {
+public class A345195 extends Sequence0 {
 
   private final Sequence mA003242 = new A003242();
   private final Sequence mA025047 = new A025047();

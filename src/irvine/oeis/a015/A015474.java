@@ -1,13 +1,13 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A015474 q-Fibonacci numbers for q=3.
  * @author Sean A. Irvine
  */
-public class A015474 implements Sequence {
+public class A015474 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

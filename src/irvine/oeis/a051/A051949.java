@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051949 Differences of two factorial numbers.
  * @author Sean A. Irvine
  */
-public class A051949 implements Sequence {
+public class A051949 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final TreeSet<Z> mA = new TreeSet<>();

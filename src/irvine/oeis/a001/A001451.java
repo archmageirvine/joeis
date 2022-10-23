@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001451 a(n) = (5*n)!/((3*n)!*n!*n!).
  * @author Sean A. Irvine
  */
-public class A001451 implements Sequence {
+public class A001451 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

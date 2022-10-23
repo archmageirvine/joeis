@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A338212 a(n) is the number of fixed polyominoes with sprawl n.
  * @author Sean A. Irvine
  */
-public class A338212 implements Sequence {
+public class A338212 extends Sequence0 {
 
   private int mN = -1;
   private final ArrayList<long[]> mPerimeterCounts = new ArrayList<>();

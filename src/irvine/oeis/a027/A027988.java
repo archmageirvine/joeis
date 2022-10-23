@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027988 Greatest number in row n of array T given by A027926.
  * @author Sean A. Irvine
  */
-public class A027988 implements Sequence {
+public class A027988 extends Sequence0 {
 
   private long mN = -1;
 

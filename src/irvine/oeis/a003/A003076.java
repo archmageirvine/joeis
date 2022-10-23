@@ -1,14 +1,14 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002193;
 
 /**
  * A003076 n-th digit after decimal point of square root of n.
  * @author Sean A. Irvine
  */
-public class A003076 implements Sequence {
+public class A003076 extends Sequence0 {
 
   private int mN = -1;
 

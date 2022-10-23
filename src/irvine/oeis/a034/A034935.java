@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034935 Successive approximations to 5-adic integer sqrt(-1).
  * @author Sean A. Irvine
  */
-public class A034935 implements Sequence {
+public class A034935 extends Sequence0 {
 
   private Z mM = null;
   private Z mPrev = Z.NEG_ONE;

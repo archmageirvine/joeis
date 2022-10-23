@@ -2,13 +2,13 @@ package irvine.oeis.a259;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A259195 Number of partitions of n into five primes.
  * @author Sean A. Irvine
  */
-public class A259195 implements Sequence {
+public class A259195 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

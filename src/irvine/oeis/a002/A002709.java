@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002709 Triangulations of the disk G_{n,0}.
  * @author Sean A. Irvine
  */
-public class A002709 implements Sequence {
+public class A002709 extends Sequence0 {
 
   private long mN = 0;
 

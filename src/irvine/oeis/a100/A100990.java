@@ -3,13 +3,13 @@ package irvine.oeis.a100;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A100990 a(n) = n^21 mod 100.
  * @author Georg Fischer
  */
-public class A100990 implements Sequence {
+public class A100990 extends Sequence0 {
 
   private int mN = 0;
   private final Z mExp = Z.valueOf(21);

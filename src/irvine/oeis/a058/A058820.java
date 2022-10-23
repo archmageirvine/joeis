@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058820 a(0) = 1, a(1) = 5; for n &gt;= 2 a(n) is the number of degree-n monic reducible polynomials over GF(5), i.e., a(n) = 5^n - A001692(n).
  * @author Georg Fischer
  */
-public class A058820 implements Sequence {
+public class A058820 extends Sequence0 {
 
   private int mN = -1;
 

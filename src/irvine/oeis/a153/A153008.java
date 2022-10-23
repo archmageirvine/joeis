@@ -3,6 +3,7 @@ package irvine.oeis.a153;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000108;
 import irvine.oeis.a001.A001006;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001006;
  * A153008 Catalan number A000108(n) minus Motzkin number A001006(n).
  * @author Georg Fischer
  */
-public class A153008 implements Sequence {
+public class A153008 extends Sequence0 {
 
   final Sequence mA000108 = new A000108();
   final Sequence mA001006 = new A001006();

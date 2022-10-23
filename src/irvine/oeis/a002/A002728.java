@@ -4,13 +4,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.HararyMultiply;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002728 Number of n X (n+2) binary matrices.
  * @author Sean A. Irvine
  */
-public class A002728 implements Sequence {
+public class A002728 extends Sequence0 {
 
   private int mN = -1;
 

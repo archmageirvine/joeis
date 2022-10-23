@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007398 Add 7, then reverse digits.
  * @author Sean A. Irvine
  */
-public class A007398 implements Sequence {
+public class A007398 extends Sequence0 {
 
   private Z mA = null;
 

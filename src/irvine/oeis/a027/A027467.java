@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027467 Triangle whose (n,k)-th entry is 15^(n-k)*binomial(n,k).
  * @author Sean A. Irvine
  */
-public class A027467 implements Sequence {
+public class A027467 extends Sequence0 {
 
   private static final Z Z15 = Z.valueOf(15);
   private int mN = -1;

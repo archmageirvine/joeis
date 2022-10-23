@@ -3,6 +3,7 @@ package irvine.oeis.a247;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000296;
 import irvine.oeis.a005.A005043;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a005.A005043;
  * A247491 Number of crossing partitions of {1,2,...,n} that contain no singletons.
  * @author Georg Fischer
  */
-public class A247491 implements Sequence {
+public class A247491 extends Sequence0 {
 
   final Sequence mA000296 = new A000296();
   final Sequence mA005043 = new A005043();

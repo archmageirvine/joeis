@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002717 a(n) = floor(n(n+2)(2n+1)/8).
  * @author Sean A. Irvine
  */
-public class A002717 implements Sequence {
+public class A002717 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

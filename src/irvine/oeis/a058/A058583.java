@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058583 Max_{k=0..n} k!*|Stirling1(n,k)|.
  * @author Sean A. Irvine
  */
-public class A058583 implements Sequence {
+public class A058583 extends Sequence0 {
 
   private int mN = -1;
 

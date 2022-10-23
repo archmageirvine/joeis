@@ -3,13 +3,14 @@ package irvine.oeis.a277;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a074.A074635;
 
 /**
  * A277060 a(n) = 1/2 * Sum_{k=0..n} (binomial(n,k) * binomial(n+k,k+1))^2 for n &gt;= 0.
  * @author Georg Fischer
  */
-public class A277060 implements Sequence {
+public class A277060 extends Sequence0 {
 
   final Sequence mA074635 = new A074635();
   protected long mN;

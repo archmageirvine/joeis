@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A327885 Number of set partitions of [n] such that at least one of the block sizes is 2.
  * E.g.f.: exp(exp(x)-1) - exp(exp(x)-1-x^2/2)
  * @author Georg Fischer
  */
-public class A327885 implements Sequence {
+public class A327885 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

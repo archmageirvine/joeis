@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051726 Numerator of n(n-1)(n-2)/720.
  * @author Sean A. Irvine
  */
-public class A051726 implements Sequence {
+public class A051726 extends Sequence0 {
 
   private long mN = -1;
 

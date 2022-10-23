@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006480 De Bruijn's S(3,n): (3n)!/(n!)^3.
  * @author Sean A. Irvine
  */
-public class A006480 implements Sequence {
+public class A006480 extends Sequence0 {
 
   private long mN = -1;
 

@@ -3,6 +3,7 @@ package irvine.oeis.a235;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 import irvine.oeis.a002.A002095;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002095;
  * A235945 Number of partitions of n containing at least one prime.
  * @author Georg Fischer
  */
-public class A235945 implements Sequence {
+public class A235945 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   final Sequence mA002095 = new A002095();

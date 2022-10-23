@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001819 Central factorial numbers: second right-hand column of triangle A008955.
  * @author Sean A. Irvine
  */
-public class A001819 implements Sequence {
+public class A001819 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ZERO;

@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002146 Smallest prime == 7 (mod 8) where Q(sqrt(-p)) has class number 2n+1.
  * @author Sean A. Irvine
  */
-public class A002146 implements Sequence {
+public class A002146 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

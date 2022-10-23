@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A173385 The number of permutations that avoid the pattern 122'1', that is, out of four consecutive elements in a permutation we never have the situation that the first two elements form an ascent while the last two elements form a descent.
  * E.g.f.: (1/2)+(1/4)*tan(x)*(1+exp(2*x) + 2*exp(x)*sin(x)) + (1/2)*exp(x)*cos(x)
  * @author Georg Fischer
  */
-public class A173385 implements Sequence {
+public class A173385 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

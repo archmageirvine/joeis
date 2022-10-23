@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A033962 Trajectory of 1 under map n-&gt;9n+1 if n odd, n-&gt;n/2 if n even.
  * @author Sean A. Irvine
  */
-public class A033962 implements Sequence {
+public class A033962 extends Sequence0 {
 
   private Z mA;
   private Z mStart;

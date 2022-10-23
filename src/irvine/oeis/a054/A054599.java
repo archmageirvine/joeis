@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054599 a(n) = Sum_{d|n} d*2^(n/d - 1).
  * @author Sean A. Irvine
  */
-public class A054599 implements Sequence {
+public class A054599 extends Sequence0 {
 
   private int mN = -1;
 

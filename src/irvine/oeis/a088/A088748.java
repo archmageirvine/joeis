@@ -3,13 +3,14 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005811;
 
 /**
  * A088748 a(n) = 1 + Sum_{k=0..n-1} 2 * A014577(k) - 1.
  * @author Georg Fischer
  */
-public class A088748 implements Sequence {
+public class A088748 extends Sequence0 {
 
   final Sequence mA005811 = new A005811();
   @Override

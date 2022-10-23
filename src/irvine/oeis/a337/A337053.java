@@ -3,13 +3,14 @@ package irvine.oeis.a337;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000587;
 
 /**
  * A337053 a(n) = exp(2) * Sum_{i&gt;=0} Sum_{j&gt;=0} (-1)^(i+j) * (i*j)^n / (i! * j!).
  * @author Georg Fischer
  */
-public class A337053 implements Sequence {
+public class A337053 extends Sequence0 {
 
   final Sequence mA000587 = new A000587();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048471 Array T read by diagonals: T(k,n) = 2^(k-1) * (3^n - 1) + 1.
  * @author Sean A. Irvine
  */
-public class A048471 implements Sequence {
+public class A048471 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

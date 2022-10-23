@@ -1,13 +1,13 @@
 package irvine.oeis.a009;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A009940 a(n) = n!*L_{n}(1), where L_{n}(x) is the n-th Laguerre polynomial.
  * @author Sean A. Irvine
  */
-public class A009940 implements Sequence {
+public class A009940 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

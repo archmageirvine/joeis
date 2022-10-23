@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007585 10-gonal (or decagonal) pyramidal numbers: a(n) = n*(n + 1)*(8*n - 5)/6.
  * @author Sean A. Irvine
  */
-public class A007585 implements Sequence {
+public class A007585 extends Sequence0 {
 
   private long mN = 0;
 

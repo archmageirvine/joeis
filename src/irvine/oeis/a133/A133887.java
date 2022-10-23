@@ -3,13 +3,13 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A133887 Binomial(n+7,n) mod 7^2.
  * @author Georg Fischer
  */
-public class A133887 implements Sequence {
+public class A133887 extends Sequence0 {
 
   protected Z mN;
 

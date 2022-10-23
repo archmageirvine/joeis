@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007273 Inverse of 1155th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A007273 implements Sequence {
+public class A007273 extends Sequence0 {
 
   private final int mN;
   private Polynomial<Z> mA = null;

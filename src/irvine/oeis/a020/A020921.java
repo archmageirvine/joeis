@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020921 Triangle read by rows: T(m,n) = number of solutions to 1 &lt;= a(1) &lt; a(2) &lt; ... &lt; a(m) &lt;= n, where gcd( a(1), a(2), ..., a(m), n) = 1.
  * @author Sean A. Irvine
  */
-public class A020921 implements Sequence {
+public class A020921 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

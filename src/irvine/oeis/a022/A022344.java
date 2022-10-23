@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A022344 Allan Wechsler's "J determinant" sequence.
  * @author Sean A. Irvine
  */
-public class A022344 implements Sequence {
+public class A022344 extends Sequence0 {
 
   private long mN = -1;
 

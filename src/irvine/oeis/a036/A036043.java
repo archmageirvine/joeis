@@ -1,14 +1,14 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a008.A008284;
 
 /**
  * A036043 Irregular triangle read by rows: row n (n &gt;= 0) gives number of parts in all partitions of n (in Abramowitz and Stegun order).
  * @author Sean A. Irvine
  */
-public class A036043 implements Sequence {
+public class A036043 extends Sequence0 {
 
   private final A008284 mByParts = new A008284();
   private long mN = -1;

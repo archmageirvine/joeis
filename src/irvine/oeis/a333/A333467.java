@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A333467 Array read by antidiagonals: T(n,k) is the number of k-regular multigraphs on n labeled nodes, loops allowed, n &gt;= 0, k &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A333467 implements Sequence {
+public class A333467 extends Sequence0 {
 
   // After Alois P. Heinz
 

@@ -3,13 +3,14 @@ package irvine.oeis.a279;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003056;
 
 /**
  * A279891 Triangle read by rows, T(n,k) = 2*n, with n&gt;=k&gt;=0.
  * @author Georg Fischer
  */
-public class A279891 implements Sequence {
+public class A279891 extends Sequence0 {
 
   final Sequence mA003056 = new A003056();
   @Override

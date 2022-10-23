@@ -3,13 +3,14 @@ package irvine.oeis.a102;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000120;
 
 /**
  * A102393 A wicked evil sequence.
  * @author Georg Fischer
  */
-public class A102393 implements Sequence {
+public class A102393 extends Sequence0 {
 
   final Sequence mA000120 = new A000120();
   protected long mN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a234;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A234692 Decimal value of the bitmap of active segments in 7-segment display of the number n, variant 2 ("abcdefg" scheme: bits represent segments in clockwise order).
  * @author Georg Fischer
  */
-public class A234692 implements Sequence {
+public class A234692 extends Sequence0 {
 
   private static final Z[] DIGIT_COUNTS = {
     Z.valueOf(63),

@@ -5,13 +5,13 @@ import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034317 Decimal part of a(n)^(1/11) starts with reversal of its integer part: first term of runs.
  * @author Sean A. Irvine
  */
-public class A034317 implements Sequence {
+public class A034317 extends Sequence0 {
 
   private static final CR ONE_ELEVENTH = CR.valueOf(new Q(1, 11));
   private boolean mStartOfRun = true;

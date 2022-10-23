@@ -4,6 +4,7 @@ package irvine.oeis.a185;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002457;
 import irvine.oeis.a003.A003046;
 
@@ -11,7 +12,7 @@ import irvine.oeis.a003.A003046;
  * A185149 a(n) = 3^n*A003046(n+1)/A002457(n).
  * @author Georg Fischer
  */
-public class A185149 implements Sequence {
+public class A185149 extends Sequence0 {
 
   final Sequence mA002457 = new A002457();
   final Sequence mA003046 = new A003046();

@@ -5,13 +5,13 @@ import java.util.Set;
 
 import irvine.math.Cell;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A249795 Self-avoiding walks with n steps on the truncated trihexagonal tiling or (4,6,12) lattice.
  * @author Sean A. Irvine
  */
-public class A249795 implements Sequence {
+public class A249795 extends Sequence0 {
 
   // Truncated trihexagonal tiling walks (kisrhombille dual).
 

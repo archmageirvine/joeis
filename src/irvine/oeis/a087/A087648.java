@@ -2,13 +2,13 @@ package irvine.oeis.a087;
 
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A087648 a(n) = (1/2)*(Bell(n+2)+Bell(n+1)-Bell(n)).
  * @author Georg Fischer
  */
-public class A087648 implements Sequence {
+public class A087648 extends Sequence0 {
 
   protected int mN = -1;
 

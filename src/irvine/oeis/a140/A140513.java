@@ -3,13 +3,14 @@ package irvine.oeis.a140;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a137.A137688;
 
 /**
  * A140513 Repeat 2^n n times.
  * @author Georg Fischer
  */
-public class A140513 implements Sequence {
+public class A140513 extends Sequence0 {
 
   final Sequence mA137688 = new A137688();
   @Override

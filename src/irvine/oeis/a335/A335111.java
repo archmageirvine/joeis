@@ -3,6 +3,7 @@ package irvine.oeis.a335;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000023;
 import irvine.oeis.a122.A122803;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a122.A122803;
  * A335111 a(n) = n! * Sum_{k=0..n-1} (-2)^k / k!.
  * @author Georg Fischer
  */
-public class A335111 implements Sequence {
+public class A335111 extends Sequence0 {
 
   final Sequence mA000023 = new A000023();
   final Sequence mA122803 = new A122803();

@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008550 Table T(n,k), n&gt;=0 and k&gt;=0, read by antidiagonals: the k-th column given by the k-th Narayana polynomial.
  * @author Sean A. Irvine
  */
-public class A008550 implements Sequence {
+public class A008550 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> NUM = RING.create(Collections.singletonList(Q.TWO));

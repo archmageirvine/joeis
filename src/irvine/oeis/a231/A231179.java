@@ -3,6 +3,7 @@ package irvine.oeis.a231;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000111;
 import irvine.oeis.a000.A000660;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000660;
  * A231179 Boustrophedon transform of nonnegative integers, cf. A001477.
  * @author Georg Fischer
  */
-public class A231179 implements Sequence {
+public class A231179 extends Sequence0 {
 
   final Sequence mA000111 = new A000111();
   final Sequence mA000660 = new A000660();

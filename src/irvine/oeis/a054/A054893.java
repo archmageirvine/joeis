@@ -3,13 +3,14 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a053.A053737;
 
 /**
  * A054893 Floor[n/4] + floor[n/16] + floor[n/64] + floor[n/256] + ....
  * @author Georg Fischer
  */
-public class A054893 implements Sequence {
+public class A054893 extends Sequence0 {
 
   final Sequence mA053737 = new A053737();
   protected long mN;

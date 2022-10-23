@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011873 a(n) = floor(n(n-1)/20).
  * @author Sean A. Irvine
  */
-public class A011873 implements Sequence {
+public class A011873 extends Sequence0 {
 
   private long mN = -1;
 

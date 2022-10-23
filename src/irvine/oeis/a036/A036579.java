@@ -3,13 +3,13 @@ package irvine.oeis.a036;
 import java.util.LinkedList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036579 Ternary Thue-Morse sequence: closed under a-&gt;abc, b-&gt;ac, c-&gt;b.
  * @author Sean A. Irvine
  */
-public class A036579 implements Sequence {
+public class A036579 extends Sequence0 {
 
   private final LinkedList<Integer> mA = new LinkedList<>();
 

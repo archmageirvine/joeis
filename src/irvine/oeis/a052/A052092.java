@@ -1,13 +1,13 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052092 Lengths of the palindromic primes from Honaker's sequence A053600.
  * @author Sean A. Irvine
  */
-public class A052092 implements Sequence {
+public class A052092 extends Sequence0 {
 
   private StringBuilder mA = null;
 

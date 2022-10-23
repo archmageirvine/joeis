@@ -3,13 +3,14 @@ package irvine.oeis.a077;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000093;
 
 /**
  * A077121 Number of integer squares &lt;= n^3.
  * @author Georg Fischer
  */
-public class A077121 implements Sequence {
+public class A077121 extends Sequence0 {
 
   final Sequence mA000093 = new A000093();
   @Override

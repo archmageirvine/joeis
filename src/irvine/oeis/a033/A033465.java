@@ -2,13 +2,13 @@ package irvine.oeis.a033;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A033465 First differences of sequence {1/(n^2+1)} (numerators).
  * @author Sean A. Irvine
  */
-public class A033465 implements Sequence {
+public class A033465 extends Sequence0 {
 
   private long mN = -1;
 

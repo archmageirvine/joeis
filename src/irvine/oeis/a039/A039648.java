@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A039648 Number of n-step self-avoiding paths on the first octant of a 3-dimensional cubic lattice, starting at the origin.
  * @author Sean A. Irvine
  */
-public class A039648 implements Sequence {
+public class A039648 extends Sequence0 {
 
   private int mN = -1;
   private final long mC = Lattices.Z3.neighbour(Lattices.Z3.origin(), 0);

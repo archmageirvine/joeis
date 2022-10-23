@@ -1,13 +1,13 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035327 Write n in binary, interchange 0's and 1's, convert back to decimal.
  * @author Sean A. Irvine
  */
-public class A035327 implements Sequence {
+public class A035327 extends Sequence0 {
 
   private long mN = -1;
   private long mT = 1;

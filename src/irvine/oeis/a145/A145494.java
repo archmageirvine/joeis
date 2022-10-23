@@ -3,12 +3,13 @@ package irvine.oeis.a145;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A145494 Coefficients of certain power series associated with Atkin polynomials (see Kaneko-Zagier reference for precise definition).
  * @author Georg Fischer
  */
-public class A145494 implements Sequence {
+public class A145494 extends Sequence0 {
 
   final Sequence mA145492 = new A145492();
   final Sequence mA145493 = new A145493();

@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030103 Base 4 reversal of n (written in base 10).
  * @author Sean A. Irvine
  */
-public class A030103 implements Sequence {
+public class A030103 extends Sequence0 {
 
   private long mN = -1;
 

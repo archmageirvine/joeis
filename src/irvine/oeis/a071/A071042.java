@@ -3,13 +3,14 @@ package irvine.oeis.a071;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001316;
 
 /**
  * A071042 Number of 0's in n-th row of triangle in A070886.
  * @author Georg Fischer
  */
-public class A071042 implements Sequence {
+public class A071042 extends Sequence0 {
 
   final Sequence mA001316 = new A001316();
   protected long mN;

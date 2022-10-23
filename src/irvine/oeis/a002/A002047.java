@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002047 Number of 3 X (2n+1) zero-sum arrays with entries -n,..,0,..,n.
  * @author Sean A. Irvine
  */
-public class A002047 implements Sequence {
+public class A002047 extends Sequence0 {
 
   // Hexagonal grid has size n + 1
   // We are to chose 2n+1 values, such that no two are on the same row,

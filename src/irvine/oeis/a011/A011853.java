@@ -2,13 +2,13 @@ package irvine.oeis.a011;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011853 [ binomial(n,7)/7 ].
  * @author Sean A. Irvine
  */
-public class A011853 implements Sequence {
+public class A011853 extends Sequence0 {
 
   private long mN = -1;
 

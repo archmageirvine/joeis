@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049022 Recurring combinations: a(n) = C(a(n-1),a(n-2)).
  * @author Sean A. Irvine
  */
-public class A049022 implements Sequence {
+public class A049022 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

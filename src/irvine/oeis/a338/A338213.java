@@ -6,13 +6,13 @@ import irvine.math.lattice.Canons;
 import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A338213 a(n) is the number of free polyominoes with sprawl n.
  * @author Sean A. Irvine
  */
-public class A338213 implements Sequence {
+public class A338213 extends Sequence0 {
 
   private int mN = -1;
   private final ArrayList<long[]> mPerimeterCounts = new ArrayList<>();

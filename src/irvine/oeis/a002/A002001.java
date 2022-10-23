@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002001 a(n) = 3*4^(n-1), n&gt;0; a(0)=1.
  * @author Sean A. Irvine
  */
-public class A002001 implements Sequence {
+public class A002001 extends Sequence0 {
 
   private Z mA = null;
 

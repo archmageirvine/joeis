@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000993 Number of distinct quadratic residues mod 10^n; also number of distinct n-digit endings of base-10 squares.
  * @author Sean A. Irvine
  */
-public class A000993 implements Sequence {
+public class A000993 extends Sequence0 {
 
   private static final Z EIGHTY_THREE = Z.valueOf(83);
   private int mN = -2;

@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001794 Negated coefficients of Chebyshev T polynomials: [x^n](-T(n+6, x)), n &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A001794 implements Sequence {
+public class A001794 extends Sequence0 {
 
   private int mN = -1;
 

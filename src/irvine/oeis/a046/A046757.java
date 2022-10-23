@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046757 Triangle of coefficients of certain polynomials (exponents in decreasing order).
  * @author Sean A. Irvine
  */
-public class A046757 implements Sequence {
+public class A046757 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

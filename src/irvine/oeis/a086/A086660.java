@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A086660 Stirling transform of Hermite numbers: Sum_{k=0..n} Stirling2(n,k) * HermiteH(k,0).
  * E.g.f.: exp(-(exp(x)-1)^2)
  * @author Georg Fischer
  */
-public class A086660 implements Sequence {
+public class A086660 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

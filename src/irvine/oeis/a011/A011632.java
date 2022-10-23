@@ -3,13 +3,13 @@ package irvine.oeis.a011;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011632 28th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A011632 implements Sequence {
+public class A011632 extends Sequence0 {
 
   private final int mN;
   private Z[] mA = null;

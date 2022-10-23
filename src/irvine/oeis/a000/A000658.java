@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000658 Strehl's sequence "C_n^(3)".
  * @author Sean A. Irvine
  */
-public class A000658 implements Sequence {
+public class A000658 extends Sequence0 {
 
   private int mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A023106 a(n) is a power of the sum of its digits.
  * @author Sean A. Irvine
  */
-public class A023106 implements Sequence {
+public class A023106 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007097 Primeth recurrence: a(n+1) = a(n)-th prime.
  * @author Sean A. Irvine
  */
-public class A007097 implements Sequence {
+public class A007097 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mP = null;

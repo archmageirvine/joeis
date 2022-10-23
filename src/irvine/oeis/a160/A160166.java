@@ -3,6 +3,7 @@ package irvine.oeis.a160;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001318;
 import irvine.oeis.a153.A153006;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a153.A153006;
  * A160166 Toothpick number A153006(n) minus generalized pentagonal number A001318(n).
  * @author Georg Fischer
  */
-public class A160166 implements Sequence {
+public class A160166 extends Sequence0 {
 
   final Sequence mA001318 = new A001318();
   final Sequence mA153006 = new A153006();

@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018796 Smallest square that begins with n.
  * @author Sean A. Irvine
  */
-public class A018796 implements Sequence {
+public class A018796 extends Sequence0 {
 
   private long mN = -1;
 

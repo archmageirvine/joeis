@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006237 Complexity of tensor sum of n graphs; or spanning trees on n-cube.
  * @author Sean A. Irvine
  */
-public class A006237 implements Sequence {
+public class A006237 extends Sequence0 {
 
   private int mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054688 Number of nonnegative integer n X n matrices with sum of elements equal to n; polynomial symmetric functions of matrix of order n.
  * @author Sean A. Irvine
  */
-public class A054688 implements Sequence {
+public class A054688 extends Sequence0 {
 
   private long mN = -1;
 

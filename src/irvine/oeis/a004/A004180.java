@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004180 Omit 5's from n.
  * @author Sean A. Irvine
  */
-public class A004180 implements Sequence {
+public class A004180 extends Sequence0 {
 
   private long mN = -1;
 

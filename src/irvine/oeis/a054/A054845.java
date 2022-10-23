@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054845 Number of ways of representing n as the sum of one or more consecutive primes.
  * @author Sean A. Irvine
  */
-public class A054845 implements Sequence {
+public class A054845 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

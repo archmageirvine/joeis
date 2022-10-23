@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A032783 Integer quotients n(n+1)(n+2)...(n+9) / (n+(n+1)+(n+2)+...+(n+9)).
  * @author Sean A. Irvine
  */
-public class A032783 implements Sequence {
+public class A032783 extends Sequence0 {
 
   private long mN = -1;
 

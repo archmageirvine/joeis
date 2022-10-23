@@ -2,13 +2,13 @@ package irvine.oeis.a008;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008310 Triangle of coefficients of Chebyshev polynomials T_n(x).
  * @author Sean A. Irvine
  */
-public class A008310 implements Sequence {
+public class A008310 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

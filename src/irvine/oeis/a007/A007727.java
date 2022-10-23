@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007727 Number of 2n-bead black-white strings with n black beads and fundamental period 2n.
  * @author Sean A. Irvine
  */
-public class A007727 implements Sequence {
+public class A007727 extends Sequence0 {
 
   protected long mN = -1;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006467 Continued fraction for Sum_{n&gt;=0} (-1)^n/3^(2^n).
  * @author Sean A. Irvine
  */
-public class A006467 implements Sequence {
+public class A006467 extends Sequence0 {
 
   private int[] mS = {0, 4, 2};
   private int mN = -1;

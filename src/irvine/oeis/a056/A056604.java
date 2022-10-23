@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056604 a(0)=1; thereafter a(n) = lcm(1, 2, 3, 4, ..., prime(n)).
  * @author Sean A. Irvine
  */
-public class A056604 implements Sequence {
+public class A056604 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mA = null;

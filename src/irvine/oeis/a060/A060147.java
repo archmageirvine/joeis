@@ -2,6 +2,7 @@ package irvine.oeis.a060;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006017;
 
 /**
@@ -9,7 +10,7 @@ import irvine.oeis.a006.A006017;
  * a(2^e) = A006017(e), a(p^e) = 0 otherwise.
  * @author Georg Fischer
  */
-public class A060147 implements Sequence {
+public class A060147 extends Sequence0 {
 
   private int mN;
   private long mP2; // powers of 2

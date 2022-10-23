@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051052 a(n) = binomial(n, floor(n/5)).
  * @author Sean A. Irvine
  */
-public class A051052 implements Sequence {
+public class A051052 extends Sequence0 {
 
   private long mN = -1;
 

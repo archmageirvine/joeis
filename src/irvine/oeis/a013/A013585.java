@@ -3,13 +3,13 @@ package irvine.oeis.a013;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013585 Smallest m such that 1!+...+m! is divisible by 2n+1, or 0 if no such m exists.
  * @author Sean A. Irvine
  */
-public class A013585 implements Sequence {
+public class A013585 extends Sequence0 {
 
   private int mN = -1;
   private Z mF = Z.ONE;

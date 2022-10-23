@@ -7,13 +7,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a033.A033762;
 
 /**
  * A004046 Theta series of extremal 3-modular even 24-dimensional lattice with minimal norm 6 and det = 3^12.
  * @author Sean A. Irvine
  */
-public class A004046 implements Sequence {
+public class A004046 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 

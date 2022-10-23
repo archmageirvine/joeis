@@ -3,13 +3,14 @@ package irvine.oeis.a115;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a026.A026430;
 
 /**
  * A115384 Partial sums of Thue-Morse numbers A010060.
  * @author Georg Fischer
  */
-public class A115384 implements Sequence {
+public class A115384 extends Sequence0 {
 
   final Sequence mA026430 = new A026430();
   protected long mN;

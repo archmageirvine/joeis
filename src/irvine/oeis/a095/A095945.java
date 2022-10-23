@@ -3,13 +3,14 @@ package irvine.oeis.a095;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005589;
 
 /**
  * A095945 a(n) = n + number of letters in the English name of n.
  * @author Georg Fischer
  */
-public class A095945 implements Sequence {
+public class A095945 extends Sequence0 {
 
   final Sequence mA005589 = new A005589();
   protected long mN;

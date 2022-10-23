@@ -4,13 +4,13 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006679 Number of planted binary phylogenetic trees with n labels.
  * @author Sean A. Irvine
  */
-public class A006679 implements Sequence {
+public class A006679 extends Sequence0 {
 
   private int mN = -1;
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

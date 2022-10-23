@@ -3,13 +3,13 @@ package irvine.oeis.a168;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A168427 3^n mod 30.
  * @author Georg Fischer
  */
-public class A168427 implements Sequence {
+public class A168427 extends Sequence0 {
 
   private int mN = 0;
   private final Z mBase = Z.THREE;

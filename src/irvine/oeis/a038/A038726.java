@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.NonadjacentWalker;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038726 The number of n-step self-avoiding walks in a 5-dimensional hypercubic lattice with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
-public class A038726 implements Sequence {
+public class A038726 extends Sequence0 {
 
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new NonadjacentWalker(Lattices.Z5));
   private final long mC = Lattices.Z5.neighbour(Lattices.Z5.origin(), 0);

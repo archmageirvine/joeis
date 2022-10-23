@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A337041 a(n) = exp(-1/5) * Sum_{k&gt;=0} (5*k - 1)^n / (5^k * k!).
  * E.g.f.: exp((exp(5*x)-1)/5-x)
  * @author Georg Fischer
  */
-public class A337041 implements Sequence {
+public class A337041 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

@@ -5,13 +5,13 @@ package irvine.oeis.a032;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A032637 a(n) = floor(Pi^n / e).
  * @author Georg Fischer
  */
-public class A032637 implements Sequence {
+public class A032637 extends Sequence0 {
 
   private long mN = -1;
 

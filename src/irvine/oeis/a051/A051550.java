@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051550 Numerators in expansion of 1/(10+sqrt(36+x)).
  * @author Sean A. Irvine
  */
-public class A051550 implements Sequence {
+public class A051550 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C0 = RING.create(Arrays.asList(Q.ONE, new Q(1, 36)));

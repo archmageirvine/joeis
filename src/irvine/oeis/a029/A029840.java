@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A029840 Expansion of Product_{m&gt;=1} ((1+q^(2*m-1))/(1+q^(2*m)))^3.
  * @author Sean A. Irvine
  */
-public class A029840 implements Sequence {
+public class A029840 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;

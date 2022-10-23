@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036083 Expansion of (-1+1/(1-5*x)^5)/(25*x); related to A036071.
  * @author Sean A. Irvine
  */
-public class A036083 implements Sequence {
+public class A036083 extends Sequence0 {
 
   private int mN = -1;
   private Z mT = null;

@@ -5,7 +5,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A104725 Number of complementing systems of subsets of {0, 1, ..., n-1}.
@@ -30,7 +30,7 @@ The Maple program:
   end proc: 
   seq(a(n), n=0..90);
 */
-public class A104725 implements Sequence {
+public class A104725 extends Sequence0 {
 
   private int mN = -1; // offset 0
 

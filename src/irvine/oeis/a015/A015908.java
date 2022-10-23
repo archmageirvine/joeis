@@ -1,13 +1,13 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A015908 First odd k&gt;n such that k | n^k + n (or 0 if n=2^m).
  * @author Sean A. Irvine
  */
-public class A015908 implements Sequence {
+public class A015908 extends Sequence0 {
 
   private int mN = -1;
 

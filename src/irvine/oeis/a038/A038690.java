@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038690 a(n)^2 is smallest square containing the string 'n'.
  * @author Sean A. Irvine
  */
-public class A038690 implements Sequence {
+public class A038690 extends Sequence0 {
 
   private long mN = -1;
 

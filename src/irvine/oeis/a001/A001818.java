@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001818 Squares of double factorials: (1*3*5*...*(2n-1))^2 = ((2*n-1)!!)^2.
  * @author Sean A. Irvine
  */
-public class A001818 implements Sequence {
+public class A001818 extends Sequence0 {
 
   private long mN = -3;
   private Z mA = Z.ONE;

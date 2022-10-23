@@ -3,13 +3,14 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005156;
 
 /**
  * A059492 Expansion of generating function A_{UO}^(1)(8n).
  * @author Georg Fischer
  */
-public class A059492 implements Sequence {
+public class A059492 extends Sequence0 {
 
   final Sequence mA005156 = new A005156();
   @Override

@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014180 Sum_{k = 0..n} binomial(n,k)^3*binomial(n+k,k)^2.
  * @author Sean A. Irvine
  */
-public class A014180 implements Sequence {
+public class A014180 extends Sequence0 {
 
   private long mN = -1;
 

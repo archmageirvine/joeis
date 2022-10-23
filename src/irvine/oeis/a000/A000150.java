@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000150 Number of dissections of an n-gon, rooted at an exterior edge, asymmetric with respect to that edge.
  * @author Sean A. Irvine
  */
-public class A000150 implements Sequence {
+public class A000150 extends Sequence0 {
 
   private final A000108 mC1 = new A000108();
   private final A000108 mC2 = new A000108();

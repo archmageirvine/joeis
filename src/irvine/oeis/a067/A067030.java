@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A067030 Numbers of the form k + reverse(k) for at least one k.
  * @author Sean A. Irvine
  */
-public class A067030 implements Sequence {
+public class A067030 extends Sequence0 {
 
   private final TreeSet<Long> mValues = new TreeSet<>();
   private long mN = -1;

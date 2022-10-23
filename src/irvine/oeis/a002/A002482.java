@@ -5,13 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000122;
 
 /**
  * A002482 Theta series of Borcherds' 27-dimensional unimodular lattice U_27.
  * @author Sean A. Irvine
  */
-public class A002482 implements Sequence {
+public class A002482 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Z Z54 = Z.valueOf(54);

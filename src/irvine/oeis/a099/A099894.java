@@ -3,13 +3,14 @@ package irvine.oeis.a099;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a048.A048298;
 
 /**
  * A099894 XOR BINOMIAL transform of A038712.
  * @author Georg Fischer
  */
-public class A099894 implements Sequence {
+public class A099894 extends Sequence0 {
 
   final Sequence mA048298 = new A048298();
   /** Construct the sequence. */

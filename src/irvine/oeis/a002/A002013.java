@@ -5,13 +5,13 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002013 Filaments with n square cells.
  * @author Sean A. Irvine
  */
-public class A002013 implements Sequence {
+public class A002013 extends Sequence0 {
 
   static class Animal {
 

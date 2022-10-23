@@ -3,13 +3,13 @@ package irvine.oeis.a342;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A342845 Number of distinct even numbers visible as proper substrings of n.
  * @author Sean A. Irvine
  */
-public class A342845 implements Sequence {
+public class A342845 extends Sequence0 {
 
   private long mN = -1;
 

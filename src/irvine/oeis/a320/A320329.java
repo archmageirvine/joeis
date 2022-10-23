@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A320329 Row sums of A174790.
  * E.g.f.: 1/sqrt(1 - 4*x) + exp(x)*(1 + x) + 1/(2*x - 1)
  * @author Georg Fischer
  */
-public class A320329 implements Sequence {
+public class A320329 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

@@ -7,13 +7,14 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000364;
 
 /**
  * A007779 Coefficients of asymptotic expansion of Ramanujan false theta series.
  * @author Sean A. Irvine
  */
-public class A007779 implements Sequence {
+public class A007779 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Q QUARTER = Q.ONE_QUARTER;

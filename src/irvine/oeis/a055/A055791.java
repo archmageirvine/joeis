@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.group.Monster;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055791 Table giving multiplicity of k-th irreducible character of Monster simple group in n-th head character, read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A055791 implements Sequence {
+public class A055791 extends Sequence0 {
 
   private int mN = 0;
   private int mM = 0;

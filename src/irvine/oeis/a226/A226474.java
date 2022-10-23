@@ -3,12 +3,13 @@ package irvine.oeis.a226;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a051.A051023;
 /**
  * A226474 Central terms of triangles A226463 and A226464.
  * @author Georg Fischer
  */
-public class A226474 implements Sequence {
+public class A226474 extends Sequence0 {
 
   private final Sequence mA051023 = new A051023();
   @Override

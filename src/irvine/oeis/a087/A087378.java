@@ -3,13 +3,14 @@ package irvine.oeis.a087;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000230;
 
 /**
  * A087378 Smallest k such that both k-n and k+n are primes and there are no primes between them.
  * @author Georg Fischer
  */
-public class A087378 implements Sequence {
+public class A087378 extends Sequence0 {
 
   final Sequence mA000230 = new A000230();
   protected long mN;

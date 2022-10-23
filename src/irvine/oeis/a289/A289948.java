@@ -4,13 +4,13 @@ package irvine.oeis.a289;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A289948 a(n) = Sum_{k=0..n} k!^3.
  * @author Georg Fischer
  */
-public class A289948 implements Sequence {
+public class A289948 extends Sequence0 {
 
   private int mN = -1;
 

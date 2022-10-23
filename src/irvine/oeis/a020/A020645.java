@@ -1,13 +1,13 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020645 Least positive integer k for which 4^n divides k!.
  * @author Sean A. Irvine
  */
-public class A020645 implements Sequence {
+public class A020645 extends Sequence0 {
 
   private Z mF = Z.ONE;
   private long mN = -1;

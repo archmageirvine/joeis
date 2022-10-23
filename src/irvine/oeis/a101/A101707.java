@@ -3,6 +3,7 @@ package irvine.oeis.a101;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000025;
 import irvine.oeis.a000.A000041;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000041;
  * A101707 Number of partitions of n having positive odd rank (the rank of a partition is the largest part minus the number of parts).
  * @author Georg Fischer
  */
-public class A101707 implements Sequence {
+public class A101707 extends Sequence0 {
 
   final Sequence mA000025 = new A000025();
   final Sequence mA000041 = new A000041();

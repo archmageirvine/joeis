@@ -4,13 +4,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.HararyMultiply;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053391 Number of cycle types of direct products of two degree-n permutations.
  * @author Sean A. Irvine
  */
-public class A053391 implements Sequence {
+public class A053391 extends Sequence0 {
 
   private int mN = -1;
 

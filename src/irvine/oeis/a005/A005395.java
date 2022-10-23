@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005395 Leading term of Stirling's approximation to n!, sqrt(2*Pi)*n^(n+(1/2))/e^n, rounded up.
  * @author Sean A. Irvine
  */
-public class A005395 implements Sequence {
+public class A005395 extends Sequence0 {
 
   private static final ComputableReals C = ComputableReals.SINGLETON;
   private long mN = -1;

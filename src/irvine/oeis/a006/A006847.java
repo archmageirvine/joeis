@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006847 Number of extreme points of the set of n X n symmetric doubly-stochastic matrices.
  * @author Sean A. Irvine
  */
-public class A006847 implements Sequence {
+public class A006847 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

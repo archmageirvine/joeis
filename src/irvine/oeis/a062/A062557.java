@@ -3,13 +3,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005369;
 
 /**
  * A062557 2n-1 1's followed by a 2.
  * @author Georg Fischer
  */
-public class A062557 implements Sequence {
+public class A062557 extends Sequence0 {
 
   final Sequence mA005369 = new A005369();
   /** Construct the sequence. */

@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049751 Array T read by diagonals; T(i,j)=number of directions from (0,0) to lattice points in closed disk with radius (0,0)-to-(i,j).
  * @author Sean A. Irvine
  */
-public class A049751 implements Sequence {
+public class A049751 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

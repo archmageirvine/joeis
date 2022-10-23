@@ -3,6 +3,7 @@ package irvine.oeis.a261;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003242;
 import irvine.oeis.a011.A011782;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a011.A011782;
  * A261983 Number of compositions of n such that at least two adjacent parts are equal.
  * @author Georg Fischer
  */
-public class A261983 implements Sequence {
+public class A261983 extends Sequence0 {
 
   final Sequence mA003242 = new A003242();
   final Sequence mA011782 = new A011782();

@@ -4,13 +4,13 @@ package irvine.oeis.a306;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A306789 a(n) = Product_{k=0..n} binomial(n + k, n).
  * @author Georg Fischer
  */
-public class A306789 implements Sequence {
+public class A306789 extends Sequence0 {
 
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN = -1;

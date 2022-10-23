@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014257 Product of digits of 2^n.
  * @author Sean A. Irvine
  */
-public class A014257 implements Sequence {
+public class A014257 extends Sequence0 {
 
   private Z mA = null;
 

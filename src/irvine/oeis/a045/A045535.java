@@ -3,13 +3,13 @@ package irvine.oeis.a045;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045535 Least negative pseudosquare modulo the first n odd primes.
  * @author Sean A. Irvine
  */
-public class A045535 implements Sequence {
+public class A045535 extends Sequence0 {
 
   // After M. F. Hasler
 

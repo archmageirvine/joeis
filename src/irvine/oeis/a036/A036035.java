@@ -6,13 +6,13 @@ import irvine.factor.prime.Fast;
 import irvine.math.Comparators;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036035 Least integer of each prime signature, in graded (reflected or not) colexicographic order of exponents.
  * @author Sean A. Irvine
  */
-public class A036035 implements Sequence {
+public class A036035 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private int mN = -1;

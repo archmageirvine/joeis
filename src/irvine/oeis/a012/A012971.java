@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A012971 Expansion of e.g.f.: sech(arctan(x)+log(x+1))=1-4/2!*x^2+6/3!*x^3+77/4!*x^4-340/5!*x^5...
  * @author Sean A. Irvine
  */
-public class A012971 implements Sequence {
+public class A012971 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

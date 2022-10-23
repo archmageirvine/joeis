@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.group.IntegersMod;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053447 Multiplicative order of 4 mod 2n+1.
  * @author Sean A. Irvine
  */
-public class A053447 implements Sequence {
+public class A053447 extends Sequence0 {
 
   protected Z mN = Z.NEG_ONE;
 

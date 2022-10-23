@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A023053 Number of noncrossing rooted trees with n nodes on a circle that do not have leaves at level 1.
  * @author Sean A. Irvine
  */
-public class A023053 implements Sequence {
+public class A023053 extends Sequence0 {
 
   private long mN = -1;
 

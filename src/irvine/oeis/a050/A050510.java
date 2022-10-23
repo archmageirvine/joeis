@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A050510 Golden rectangular box numbers: a(n) = n*A007067(n)*A007067(A007067(n)).
  * @author Sean A. Irvine
  */
-public class A050510 implements Sequence {
+public class A050510 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

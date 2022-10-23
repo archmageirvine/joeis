@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013455 Expansion of e.g.f. sec(tan(x) - tanh(x)) (even-indexed coefficients only).
  * @author Sean A. Irvine
  */
-public class A013455 implements Sequence {
+public class A013455 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -2;

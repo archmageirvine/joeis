@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055778 Number of 1's in the base-phi representation of n.
  * @author Sean A. Irvine
  */
-public class A055778 implements Sequence {
+public class A055778 extends Sequence0 {
 
   private static final int ACCURACY = -100;
   private static final CR LOG_PHI_INV = CR.PHI.log().inverse();

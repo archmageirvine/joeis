@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055004 Boris Stechkin's function.
  * @author Sean A. Irvine
  */
-public class A055004 implements Sequence {
+public class A055004 extends Sequence0 {
 
   private int mN = -1;
 

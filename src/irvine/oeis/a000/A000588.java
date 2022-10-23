@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000588 a(n) = 7*binomial(2n,n-3)/(n+4).
  * @author Sean A. Irvine
  */
-public class A000588 implements Sequence {
+public class A000588 extends Sequence0 {
 
   private long mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049057 First element r of (-1)sigma sociable triple (r,s,t): s=(-1)sigma(r), t=(-1)sigma(s), r=(-1)sigma(t), where if x=Product p(i)^r(i), then (-1)sigma(x)=Product(-1+(Sum p(i)^s(i), s(i)=1 to r(i))).
  * @author Sean A. Irvine
  */
-public class A049057 implements Sequence {
+public class A049057 extends Sequence0 {
 
   private Z mN = Z.valueOf(19);
 

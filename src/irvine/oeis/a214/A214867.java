@@ -3,6 +3,7 @@ package irvine.oeis.a214;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002110;
 import irvine.oeis.a006.A006954;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006954;
  * A214867 Quotients of (first) primorial numbers and denominators of Bernoulli numbers B 0, B 1, B 2, B 4, B 6,... .
  * @author Georg Fischer
  */
-public class A214867 implements Sequence {
+public class A214867 extends Sequence0 {
 
   final Sequence mA002110 = new A002110();
   final Sequence mA006954 = new A006954();

@@ -6,13 +6,13 @@ import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005925 Theta series of diamond.
  * @author Sean A. Irvine
  */
-public class A005925 implements Sequence {
+public class A005925 extends Sequence0 {
 
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
 

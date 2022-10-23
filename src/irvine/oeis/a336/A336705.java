@@ -5,14 +5,14 @@ import java.util.Collection;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Point;
 
 /**
  * A336705 Coordination sequence for the half-Manhattan lattice.
  * @author Sean A. Irvine
  */
-public class A336705 implements Sequence {
+public class A336705 extends Sequence0 {
 
   private static final Point ORIGIN = new Point(0, 0);
   private final HashSet<Point> mSeen = new HashSet<>();

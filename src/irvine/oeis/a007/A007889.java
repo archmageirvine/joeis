@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007889 Number of intransitive (or alternating, or Stanley) trees: vertices are [0,n] and for no i&lt;j&lt;k are both (i,j) and (j,k) edges.
  * @author Sean A. Irvine
  */
-public class A007889 implements Sequence {
+public class A007889 extends Sequence0 {
 
   private int mN = 0;
 

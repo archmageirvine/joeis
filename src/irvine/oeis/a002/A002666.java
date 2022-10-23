@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002666 Continued cotangent for square root of 2.
  * @author Sean A. Irvine
  */
-public class A002666 implements Sequence {
+public class A002666 extends Sequence0 {
 
   private CR mB = null;
 

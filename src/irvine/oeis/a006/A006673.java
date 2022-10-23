@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006673 E.g.f. is the logarithmic derivative of e.g.f. for Pell numbers [1, 0, 1, 2, 5, ...].
  * @author Sean A. Irvine
  */
-public class A006673 implements Sequence {
+public class A006673 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

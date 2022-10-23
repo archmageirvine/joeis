@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.factor.factor.Jaguar;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048874 Almost-cubes: numbers n such that n/s(n) &gt;= k/s(k) for all k&lt;n, where s(m) is the least surface area of a rectangular parallelepiped with integer side lengths and volume m.
  * @author Sean A. Irvine
  */
-public class A048874 implements Sequence {
+public class A048874 extends Sequence0 {
 
   private long mN = 0;
   private Q mBest = Q.ZERO;

@@ -1,13 +1,13 @@
 package irvine.oeis.a262;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A262438 Number of digits of hexadecimal representation of n.
  * @author Sean A. Irvine
  */
-public class A262438 implements Sequence {
+public class A262438 extends Sequence0 {
 
   private long mN = -1;
   private long mLim = 16;

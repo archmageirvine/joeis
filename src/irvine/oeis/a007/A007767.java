@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
@@ -9,7 +9,7 @@ import irvine.util.array.LongDynamicLongArray;
  * @author Evegeny Kapun
  * @author Sean A. Irvine
  */
-public class A007767 implements Sequence {
+public class A007767 extends Sequence0 {
 
   // Made incremental and higher precision by Sean A. Irvine
 

@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import irvine.factor.prime.Fast;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055739 [e^n]-th Prime.
  * @author Sean A. Irvine
  */
-public class A055739 implements Sequence {
+public class A055739 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

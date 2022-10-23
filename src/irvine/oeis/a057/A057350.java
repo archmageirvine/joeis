@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057350 Days in months in the Hebrew calendar starting from Nisan 5760 (Spring 2000 CE).
@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
  * @author David Greve
  * @author Sean A. Irvine
  */
-public class A057350 implements Sequence {
+public class A057350 extends Sequence0 {
 
   // The code is freely usable for non-profit purposes when this Copyright notice is included.
 

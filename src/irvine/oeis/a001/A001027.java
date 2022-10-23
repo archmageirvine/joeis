@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001027 Powers of 18.
  * @author Sean A. Irvine
  */
-public class A001027 implements Sequence {
+public class A001027 extends Sequence0 {
 
   private Z mN = null;
 

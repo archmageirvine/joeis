@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007564 Shifts left when INVERT transform applied thrice.
  * @author Sean A. Irvine
  */
-public class A007564 implements Sequence {
+public class A007564 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.ONE;

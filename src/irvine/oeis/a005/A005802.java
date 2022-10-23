@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005802 Number of permutations in S_n with longest increasing subsequence of length &lt;= 3 (i.e., 1234-avoiding permutations); vexillary permutations (i.e., 2143-avoiding).
  * @author Sean A. Irvine
  */
-public class A005802 implements Sequence {
+public class A005802 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

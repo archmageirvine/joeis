@@ -3,12 +3,13 @@ package irvine.oeis.a243;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a054.A054895;
 /**
  * A243758 a(n) = Product_{i=1..n} A234959(i).
  * @author Georg Fischer
  */
-public class A243758 implements Sequence {
+public class A243758 extends Sequence0 {
 
   private final Sequence mA054895 = new A054895();
   @Override

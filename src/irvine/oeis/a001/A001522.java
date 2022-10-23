@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001522 Number of n-stacks with strictly receding walls, or the number of Type A partitions of n in the sense of Auluck (1951).
  * @author Sean A. Irvine
  */
-public class A001522 implements Sequence {
+public class A001522 extends Sequence0 {
 
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   protected int mN = -1;

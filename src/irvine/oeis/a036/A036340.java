@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036340 Concatenation of prime p and nextprime(p) is prime -&gt; cycles of 3 steps possible.
  * @author Sean A. Irvine
  */
-public class A036340 implements Sequence {
+public class A036340 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mP = 466;

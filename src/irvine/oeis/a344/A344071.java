@@ -5,13 +5,13 @@ import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingCycler;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A344071 Number of 2n-step self-avoiding cycles on the Laves graph.
  * @author Sean A. Irvine
  */
-public class A344071 implements Sequence {
+public class A344071 extends Sequence0 {
 
   private int mN = -2;
   private final long mC = Lattices.HYDROGEN_PEROXIDE.neighbour(Lattices.HYDROGEN_PEROXIDE.origin(), 0);

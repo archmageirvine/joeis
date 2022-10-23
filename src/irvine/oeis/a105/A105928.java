@@ -4,13 +4,14 @@ package irvine.oeis.a105;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000166;
 
 /**
  * A105928 a(n) = ((n^3 - 4n + 1)*A000166(n) + (-1)^(n+1)*(n-1)^2) / 6.
  * @author Georg Fischer
  */
-public class A105928 implements Sequence {
+public class A105928 extends Sequence0 {
 
   final Sequence mA000166 = new A000166();
   protected long mN;

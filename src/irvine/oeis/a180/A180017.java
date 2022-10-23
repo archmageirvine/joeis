@@ -3,6 +3,7 @@ package irvine.oeis.a180;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000120;
 import irvine.oeis.a053.A053735;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a053.A053735;
  * A180017 Difference of sums of digits of n in ternary and in binary.
  * @author Georg Fischer
  */
-public class A180017 implements Sequence {
+public class A180017 extends Sequence0 {
 
   final Sequence mA000120 = new A000120();
   final Sequence mA053735 = new A053735();

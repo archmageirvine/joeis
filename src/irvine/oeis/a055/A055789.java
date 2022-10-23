@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import irvine.math.cr.CR;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055789 a(n) = binomial(n, round(sqrt(n))).
  * @author Sean A. Irvine
  */
-public class A055789 implements Sequence {
+public class A055789 extends Sequence0 {
 
   private long mN = -1;
 

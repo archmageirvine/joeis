@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002109 Hyperfactorials: Product_{k = 1..n} k^k.
  * @author Sean A. Irvine
  */
-public class A002109 implements Sequence {
+public class A002109 extends Sequence0 {
 
   private int mN = -1;
   private Z mA = Z.ONE;

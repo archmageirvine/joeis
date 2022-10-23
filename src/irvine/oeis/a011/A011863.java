@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011863 Nearest integer to (n/2)^4.
  * @author Sean A. Irvine
  */
-public class A011863 implements Sequence {
+public class A011863 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

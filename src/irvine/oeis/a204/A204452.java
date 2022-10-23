@@ -4,6 +4,7 @@ package irvine.oeis.a204;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a014.A014330;
 import irvine.oeis.a203.A203577;
 
@@ -11,7 +12,7 @@ import irvine.oeis.a203.A203577;
  * A204452 A014330 - A203577. Difference between the exponential convolution of A000108 (Catalan) with itself and the corresponding exponential half-convolution.
  * @author Georg Fischer
  */
-public class A204452 implements Sequence {
+public class A204452 extends Sequence0 {
 
   final Sequence mA014330 = new A014330();
   final Sequence mA203577 = new A203577();

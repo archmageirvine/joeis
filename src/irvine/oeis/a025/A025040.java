@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025040 Number of partitions of { 1, 2, ..., 8n } into sets of size 8.
  * @author Sean A. Irvine
  */
-public class A025040 implements Sequence {
+public class A025040 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private long mN = -1;

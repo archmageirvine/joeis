@@ -3,13 +3,14 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004086;
 
 /**
  * A056964 a(n) = n + reversal of digits of n.
  * @author Georg Fischer
  */
-public class A056964 implements Sequence {
+public class A056964 extends Sequence0 {
 
   final Sequence mA004086 = new A004086();
   protected long mN;

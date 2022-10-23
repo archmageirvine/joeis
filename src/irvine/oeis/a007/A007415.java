@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007415 Expand sin x / exp x = x-x^2+x^3/3-x^5/30+... and invert nonzero coefficients.
  * @author Sean A. Irvine
  */
-public class A007415 implements Sequence {
+public class A007415 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.ONE;

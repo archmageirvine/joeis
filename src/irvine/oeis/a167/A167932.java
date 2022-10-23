@@ -3,6 +3,7 @@ package irvine.oeis.a167;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000009;
 import irvine.oeis.a032.A032741;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a032.A032741;
  * A167932 Number of partitions of n such that all parts are equal or all parts are distinct.
  * @author Georg Fischer
  */
-public class A167932 implements Sequence {
+public class A167932 extends Sequence0 {
 
   final Sequence mA000009 = new A000009();
   final Sequence mA032741 = new A032741();

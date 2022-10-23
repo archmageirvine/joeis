@@ -4,13 +4,13 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000556 Expansion of exp(-x) / (1 - exp(x) + exp(-x)).
  * @author Sean A. Irvine
  */
-public class A000556 implements Sequence {
+public class A000556 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

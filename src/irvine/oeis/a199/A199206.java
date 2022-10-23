@@ -3,13 +3,14 @@ package irvine.oeis.a199;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a034.A034939;
 
 /**
  * A199206 a(n) = (1+(A034939(n))^2)/5^n.
  * @author Georg Fischer
  */
-public class A199206 implements Sequence {
+public class A199206 extends Sequence0 {
 
   final Sequence mA034939 = new A034939();
   protected long mN;

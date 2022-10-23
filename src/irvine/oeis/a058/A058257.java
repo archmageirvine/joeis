@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058257 Triangle read by rows: this is a variant of A008280 in which 2 rows go from left to right, 2 from right to left, 2 from left to right, etc.
  * @author Sean A. Irvine
  */
-public class A058257 implements Sequence {
+public class A058257 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

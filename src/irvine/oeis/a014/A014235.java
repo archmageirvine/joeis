@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014235 Number of n X n matrices with entries 0 and 1 and no 2 X 2 submatrix of form [ 1 1; 1 0 ].
  * @author Sean A. Irvine
  */
-public class A014235 implements Sequence {
+public class A014235 extends Sequence0 {
 
   private long mN = -1;
 

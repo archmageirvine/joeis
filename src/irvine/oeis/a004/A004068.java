@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004068 Number of atoms in a decahedron with n shells.
  * @author Sean A. Irvine
  */
-public class A004068 implements Sequence {
+public class A004068 extends Sequence0 {
 
   protected long mN = -1;
 

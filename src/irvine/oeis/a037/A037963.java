@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A037963 a(n) = n^2*(n+1)*(3*n^2 + 7*n - 2)*(n+5)!/11520.
  * @author Sean A. Irvine
  */
-public class A037963 implements Sequence {
+public class A037963 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.valueOf(24);

@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A022852 Integer nearest n * e, where e is the natural log base.
  * @author Sean A. Irvine
  */
-public class A022852 implements Sequence {
+public class A022852 extends Sequence0 {
 
   private long mN = -1;
 

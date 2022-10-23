@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056206 Smallest prime p such that p + 2^n is also a prime.
  * @author Sean A. Irvine
  */
-public class A056206 implements Sequence {
+public class A056206 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mA = null;

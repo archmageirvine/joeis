@@ -5,13 +5,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035942 Number of partitions of n into distinct prime power parts (1 and 2 excluded).
  * @author Sean A. Irvine
  */
-public class A035942 implements Sequence {
+public class A035942 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final Fast mPrime = new Fast();

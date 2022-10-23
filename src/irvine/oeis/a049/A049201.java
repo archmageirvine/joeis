@@ -3,13 +3,13 @@ package irvine.oeis.a049;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049201 If n is not composite, a(n) = n followed by 1; if n is composite, a(n) = concatenation of prime factors of n.
  * @author Sean A. Irvine
  */
-public class A049201 implements Sequence {
+public class A049201 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

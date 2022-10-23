@@ -2,13 +2,13 @@ package irvine.oeis.a019;
 
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A019329 Cyclotomic polynomials at x=11.
  * @author Sean A. Irvine
  */
-public class A019329 implements Sequence {
+public class A019329 extends Sequence0 {
 
   private int mN = -1;
 

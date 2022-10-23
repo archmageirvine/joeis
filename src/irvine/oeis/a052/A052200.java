@@ -1,13 +1,13 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052200 Number of n-state, 2-symbol, d+ in {LEFT, RIGHT}, 5-tuple (q, s, q+, s+, d+) (halting or not) Turing machines.
  * @author Sean A. Irvine
  */
-public class A052200 implements Sequence {
+public class A052200 extends Sequence0 {
 
   private long mN = -1;
 

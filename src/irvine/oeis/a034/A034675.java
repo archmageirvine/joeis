@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034675 Sum of n-th powers of divisors of 144.
  * @author Sean A. Irvine
  */
-public class A034675 implements Sequence {
+public class A034675 extends Sequence0 {
 
   private static final Z[] DIVISORS = ZUtils.toZ(1, 2, 3, 4, 6, 8, 9, 12, 16, 18, 24, 36, 48, 72, 144);
   private int mN = -1;

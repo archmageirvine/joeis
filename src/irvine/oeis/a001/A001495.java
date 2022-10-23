@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001495 Number of symmetric 0-1 (n+1) X (n+1) matrices with row sums 2 and first row starting 1,1 for n &gt; 0, a(0)=1.
  * @author Sean A. Irvine
  */
-public class A001495 implements Sequence {
+public class A001495 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> NUM = RING.create(Arrays.asList(Q.ZERO, new Q(-2), Q.THREE, Q.ONE));

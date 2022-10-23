@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059486 3-enumeration of 2n+1 X 2n+1 vertically symmetric alternating-sign matrices.
  * @author Sean A. Irvine
  */
-public class A059486 implements Sequence {
+public class A059486 extends Sequence0 {
 
   private int mN = -1;
 

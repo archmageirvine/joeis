@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006895 Parenthesized one way gives the powers of 2: (1), (2), (1+3), ..., another way the powers of 3: (1), (2+1), (3+6), ....
  * @author Sean A. Irvine
  */
-public class A006895 implements Sequence {
+public class A006895 extends Sequence0 {
 
   private Z mA = null;
   private Z mTwoPower = Z.TWO;

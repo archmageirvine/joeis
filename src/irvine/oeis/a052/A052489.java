@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052489 Largest number that is n times sum of its decimal digits.
  * @author Sean A. Irvine
  */
-public class A052489 implements Sequence {
+public class A052489 extends Sequence0 {
 
   // After Michel Marcus
 

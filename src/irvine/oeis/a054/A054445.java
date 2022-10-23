@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054445 Triangle read by rows giving partial row sums of triangle A033184(n,m), n &gt;= m &gt;= 1 (Catalan triangle).
  * @author Sean A. Irvine
  */
-public class A054445 implements Sequence {
+public class A054445 extends Sequence0 {
 
   private long mN = 0;
   private long mM = 0;

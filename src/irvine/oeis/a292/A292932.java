@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A292932 Number of quasitrivial semigroups on an arbitrary n-element set.
  * E.g.f.: 1/(3 + x - 2*exp(x))
  * @author Georg Fischer
  */
-public class A292932 implements Sequence {
+public class A292932 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

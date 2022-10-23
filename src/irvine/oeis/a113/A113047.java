@@ -3,13 +3,14 @@ package irvine.oeis.a113;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001764;
 
 /**
  * A113047 a(n) = C(3n,n)/(2n+1) mod 3.
  * @author Georg Fischer
  */
-public class A113047 implements Sequence {
+public class A113047 extends Sequence0 {
 
   final Sequence mA001764 = new A001764();
   @Override

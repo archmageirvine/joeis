@@ -3,13 +3,14 @@ package irvine.oeis.a087;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000296;
 
 /**
  * A087650 a(n) = Sum_{k=0..n} (-1)^(n-k)*Bell(k).
  * @author Georg Fischer
  */
-public class A087650 implements Sequence {
+public class A087650 extends Sequence0 {
 
   final Sequence mA000296 = new A000296();
   protected long mN;

@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035378 Coefficients in expansion of Sum_{k&gt;=0} Product_{j=1..k} (1-x^j) about x = -1.
  * @author Sean A. Irvine
  */
-public class A035378 implements Sequence {
+public class A035378 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C = Polynomial.create(-1, 1);

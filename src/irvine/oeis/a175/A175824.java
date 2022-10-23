@@ -3,6 +3,7 @@ package irvine.oeis.a175;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001025;
 import irvine.oeis.a004.A004171;
 import irvine.oeis.a024.A024036;
@@ -11,7 +12,7 @@ import irvine.oeis.a024.A024036;
  * A175824 Maximum unsigned integer that can be stored in n bytes.
  * @author Georg Fischer
  */
-public class A175824 implements Sequence {
+public class A175824 extends Sequence0 {
 
   final Sequence mA001025 = new A001025();
   final Sequence mA004171 = new A004171();

@@ -3,14 +3,14 @@ package irvine.oeis.a050;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
 
 /**
  * A050615 Products of distinct terms of Fibonacci(2^(i+2)): a(n) = Product_{i=0..floor(log_2(n+1))} F(2^(i+2))^bit(n,i).
  * @author Sean A. Irvine
  */
-public class A050615 implements Sequence {
+public class A050615 extends Sequence0 {
 
   private final MemorySequence mL = MemorySequence.cachedSequence(new A000045());
   private int mN = -1;

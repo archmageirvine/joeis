@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052807 E.g.f.: -LambertW(log(1-x)).
  * @author Sean A. Irvine
  */
-public class A052807 implements Sequence {
+public class A052807 extends Sequence0 {
 
   private int mN = -1;
 

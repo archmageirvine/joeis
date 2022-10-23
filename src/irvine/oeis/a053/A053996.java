@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053996 Number of bases of n-dimensional vector space over GF(4).
  * @author Sean A. Irvine
  */
-public class A053996 implements Sequence {
+public class A053996 extends Sequence0 {
 
   private int mN = -1;
   private Z mA = Z.ONE;

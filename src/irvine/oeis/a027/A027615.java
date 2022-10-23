@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027615 Number of 1's when n is written in base -2.
  * @author Sean A. Irvine
  */
-public class A027615 implements Sequence {
+public class A027615 extends Sequence0 {
 
   private long mN = -1;
 

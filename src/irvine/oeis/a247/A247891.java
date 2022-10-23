@@ -1,13 +1,13 @@
 package irvine.oeis.a247;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A247891 a(n) is Gray-coded in base 4 into n.
  * @author Georg Fischer
  */
-public class A247891 implements Sequence {
+public class A247891 extends Sequence0 {
 
   private long mN = -1;
 

@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045761 Define polynomials Pn by P0 = 0, P1 = x, P2 = P1 + P0, P3 = P2 * P1, P4 = P3 + P2, etc. alternately adding or multiplying. For even n &gt; 2k, then first k coefficients of Pn remain unchanged and their values are the first k terms of the sequence.
  * @author Sean A. Irvine
  */
-public class A045761 implements Sequence {
+public class A045761 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private Polynomial<Z> mA = RING.x();

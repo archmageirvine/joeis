@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A050749 Squares containing no pair of consecutive equal digits.
  * @author Sean A. Irvine
  */
-public class A050749 implements Sequence {
+public class A050749 extends Sequence0 {
 
   private long mN = -1;
 

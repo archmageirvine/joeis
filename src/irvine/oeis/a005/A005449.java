@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005449 Second pentagonal numbers: a(n) = n*(3*n + 1)/2.
  * @author Sean A. Irvine
  */
-public class A005449 implements Sequence {
+public class A005449 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

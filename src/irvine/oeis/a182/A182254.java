@@ -3,6 +3,7 @@ package irvine.oeis.a182;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000142;
 import irvine.oeis.a002.A002110;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002110;
  * A182254 Primorial(n) mod n!.
  * @author Georg Fischer
  */
-public class A182254 implements Sequence {
+public class A182254 extends Sequence0 {
 
   final Sequence mA000142 = new A000142();
   final Sequence mA002110 = new A002110();

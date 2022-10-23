@@ -4,13 +4,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057969 5 x n binary matrices without unit columns up to row and column permutations.
  * @author Sean A. Irvine
  */
-public class A057969 implements Sequence {
+public class A057969 extends Sequence0 {
 
   private int mN = -1;
 

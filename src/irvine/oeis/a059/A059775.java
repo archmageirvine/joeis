@@ -4,13 +4,13 @@ import irvine.math.IntegerUtils;
 import irvine.math.LongUtils;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059775 From solution to a counting problem.
  * @author Sean A. Irvine
  */
-public class A059775 implements Sequence {
+public class A059775 extends Sequence0 {
 
   private int mN = 1;
 

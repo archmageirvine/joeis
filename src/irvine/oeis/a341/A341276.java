@@ -3,6 +3,7 @@ package irvine.oeis.a341;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006218;
 import irvine.oeis.a028.A028896;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a028.A028896;
  * A341276 a(n) = 1 + 3*n*(n+1) - Sum_{k=1..n} d(k), where d(k) is the number of divisors of k.
  * @author Georg Fischer
  */
-public class A341276 implements Sequence {
+public class A341276 extends Sequence0 {
 
   final Sequence mA006218 = new A006218();
   final Sequence mA028896 = new A028896();

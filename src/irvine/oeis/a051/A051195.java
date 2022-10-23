@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051195 T(2n+2,n), array T as in A050186; a count of aperiodic binary words.
  * @author Sean A. Irvine
  */
-public class A051195 implements Sequence {
+public class A051195 extends Sequence0 {
 
   private long mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005161 Number of alternating sign 2n+1 X 2n+1 matrices symmetric with respect to both horizontal and vertical axes.
  * @author Sean A. Irvine
  */
-public class A005161 implements Sequence {
+public class A005161 extends Sequence0 {
 
   // Conjectured formula
 

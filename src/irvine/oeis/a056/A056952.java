@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056952 Numerators of continued fraction for alternating factorial.
  * @author Sean A. Irvine
  */
-public class A056952 implements Sequence {
+public class A056952 extends Sequence0 {
 
   private Z mA = Z.ZERO;
   private Z mB = Z.ONE;

@@ -3,13 +3,14 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007953;
 
 /**
  * A057147 a(n) = n times sum of digits of n.
  * @author Georg Fischer
  */
-public class A057147 implements Sequence {
+public class A057147 extends Sequence0 {
 
   final Sequence mA007953 = new A007953();
   protected long mN;

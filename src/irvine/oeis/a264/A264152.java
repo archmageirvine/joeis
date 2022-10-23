@@ -3,6 +3,7 @@ package irvine.oeis.a264;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001813;
 import irvine.oeis.a006.A006882;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006882;
  * A264152 a(n) = (2^floor(n+n/2)/sqrt(Pi)^mod(n+1,2))*Gamma(n+1/2)/Gamma(n/2+1).
  * @author Georg Fischer
  */
-public class A264152 implements Sequence {
+public class A264152 extends Sequence0 {
 
   final Sequence mA001813 = new A001813();
   final Sequence mA006882 = new A006882();

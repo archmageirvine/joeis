@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005985 Length of longest trail (i.e., path with all distinct edges) on the edges of an n-cube.
  * @author Sean A. Irvine
  */
-public class A005985 implements Sequence {
+public class A005985 extends Sequence0 {
 
   private int mN = -1;
 

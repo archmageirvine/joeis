@@ -2,13 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004730 Numerator of n!!/(n+1)!! (cf. A006882).
  * @author Sean A. Irvine
  */
-public class A004730 implements Sequence {
+public class A004730 extends Sequence0 {
 
   private Q mF = Q.ONE;
   private long mN = 0;

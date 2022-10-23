@@ -3,12 +3,13 @@ package irvine.oeis.a346;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004128;
 /**
  * A346502 a(n) = 3n - (sum of digits of 3n in base 3).
  * @author Georg Fischer
  */
-public class A346502 implements Sequence {
+public class A346502 extends Sequence0 {
 
   private final Sequence mA004128 = new A004128();
   @Override

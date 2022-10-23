@@ -3,13 +3,14 @@ package irvine.oeis.a259;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a008.A008793;
 
 /**
  * A259049 Number of self-complementary plane partitions in a (2n)-cube.
  * @author Georg Fischer
  */
-public class A259049 implements Sequence {
+public class A259049 extends Sequence0 {
 
   final Sequence mA008793 = new A008793();
   @Override

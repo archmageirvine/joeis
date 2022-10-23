@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020064 Integer part of Gamma(n+8/9)/Gamma(8/9).
  * @author Sean A. Irvine
  */
-public class A020064 implements Sequence {
+public class A020064 extends Sequence0 {
 
   private static final Q C = new Q(8, 9);
   private int mN = -2;

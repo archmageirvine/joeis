@@ -3,6 +3,7 @@ package irvine.oeis.a119;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000079;
 import irvine.oeis.a001.A001146;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001146;
  * A119562 Let F(n) = 2^(2^n) + 1 = the n-th Fermat number, M(n) = 2^n - 1 = the n-th Mersenne number. Then a(n) = F(n) - M(n) + 1 = 2^(2^n) + 1 - (2^n - 1) + 1 = 2^(2^n) - 2^n + 3.
  * @author Georg Fischer
  */
-public class A119562 implements Sequence {
+public class A119562 extends Sequence0 {
 
   final Sequence mA000079 = new A000079();
   final Sequence mA001146 = new A001146();

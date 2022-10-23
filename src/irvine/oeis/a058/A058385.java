@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058385 Number of essentially parallel series-parallel networks with n unlabeled edges, multiple edges not allowed.
  * @author Sean A. Irvine
  */
-public class A058385 implements Sequence {
+public class A058385 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> C = Polynomial.create(1, -1, 1);

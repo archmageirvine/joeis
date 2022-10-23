@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025416 Least sum of 4 nonzero squares in exactly n ways.
  * @author Sean A. Irvine
  */
-public class A025416 implements Sequence {
+public class A025416 extends Sequence0 {
 
   private long mN = -1;
 

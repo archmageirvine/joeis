@@ -1,13 +1,13 @@
 package irvine.oeis.a065;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A065440 a(n) = (n-1)^n.
  * @author Georg Fischer
  */
-public class A065440 implements Sequence {
+public class A065440 extends Sequence0 {
 
   private int mN = -1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a017;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A017990 Powers of cube root of 5 rounded up.
  * @author Sean A. Irvine
  */
-public class A017990 implements Sequence {
+public class A017990 extends Sequence0 {
 
   private Z mN = null;
 

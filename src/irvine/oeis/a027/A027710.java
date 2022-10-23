@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027710 Number of ways of placing n labeled balls into n unlabeled (but 3-colored) boxes.
  * @author Sean A. Irvine
  */
-public class A027710 implements Sequence {
+public class A027710 extends Sequence0 {
 
   private long mN = -1;
 

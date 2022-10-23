@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059576 Summatory Pascal triangle T(n,k) (0 &lt;= k &lt;= n) read by rows. Top entry is 1. Each entry is the sum of the parallelogram above it.
  * @author Sean A. Irvine
  */
-public class A059576 implements Sequence {
+public class A059576 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

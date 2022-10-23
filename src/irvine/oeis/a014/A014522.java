@@ -3,14 +3,14 @@ package irvine.oeis.a014;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a068.A068465;
 
 /**
  * A014522 Nearest integer to Gamma(n+3/4).
  * @author Sean A. Irvine
  */
-public class A014522 implements Sequence {
+public class A014522 extends Sequence0 {
 
   private Z mF = Z.ONE;
   private Z mT = Z.ONE;

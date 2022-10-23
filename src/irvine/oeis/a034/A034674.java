@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034674 Sum of n-th powers of divisors of 128.
  * @author Sean A. Irvine
  */
-public class A034674 implements Sequence {
+public class A034674 extends Sequence0 {
 
   private static final Z[] DIVISORS = ZUtils.toZ(1, 2, 4, 8, 16, 32, 64, 128);
   private int mN = -1;

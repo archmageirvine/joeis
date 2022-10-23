@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020561 Number of ordered oriented multigraphs on n labeled arcs (with loops).
  * @author Sean A. Irvine
  */
-public class A020561 implements Sequence {
+public class A020561 extends Sequence0 {
 
   private int mN = -1;
 

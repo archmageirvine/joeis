@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057119 Iterative "rewrite" sequence of binary plane trees.
  * @author Sean A. Irvine
  */
-public class A057119 implements Sequence {
+public class A057119 extends Sequence0 {
 
   private Z mA = null;
 

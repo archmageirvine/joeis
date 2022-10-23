@@ -3,13 +3,14 @@ package irvine.oeis.a220;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a120.A120738;
 
 /**
  * A220853 Denominators of the fraction (30*n+7) * binomial(2*n,n)^2 * 2F1([1/2 - n/2, -n/2], [1], 64)/(-256)^n, where 2F1 is the hypergeometric function.
  * @author Georg Fischer
  */
-public class A220853 implements Sequence {
+public class A220853 extends Sequence0 {
 
   final Sequence mA120738 = new A120738();
   @Override

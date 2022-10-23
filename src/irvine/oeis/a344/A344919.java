@@ -3,13 +3,14 @@ package irvine.oeis.a344;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000217;
 import irvine.oeis.a000.A000312;
 /**
  * A344919 a(n) = n^n - n*(n + 1) / 2.
  * @author Georg Fischer
  */
-public class A344919 implements Sequence {
+public class A344919 extends Sequence0 {
 
   private final Sequence mA000217 = new A000217();
   private final Sequence mA000312 = new A000312();

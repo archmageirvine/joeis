@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057301 Binary counter with bit positions permuted in increasing length cycles: 0;2,1;5,3,4;9,6,7,8,...
  * @author Sean A. Irvine
  */
-public class A057301 implements Sequence {
+public class A057301 extends Sequence0 {
 
   private long mN = -1;
 

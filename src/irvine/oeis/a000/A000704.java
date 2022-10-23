@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000704 Number of degree-n even permutations of order dividing 2.
  * @author Sean A. Irvine
  */
-public class A000704 implements Sequence {
+public class A000704 extends Sequence0 {
 
   private long mN = -1;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a266;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a170.A170896;
 
 /**
  * A266536 Total number of ON cells after n-th stage in a 90 degree sector of the cellular automaton of A170896.
  * @author Georg Fischer
  */
-public class A266536 implements Sequence {
+public class A266536 extends Sequence0 {
 
   final Sequence mA170896 = new A170896();
   /** Construct the sequence. */

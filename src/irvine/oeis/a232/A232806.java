@@ -3,13 +3,14 @@ package irvine.oeis.a232;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002065;
 
 /**
  * A232806 a(n) = a(n-1)^2/2 + 5/2,  a(0) = 1.
  * @author Georg Fischer
  */
-public class A232806 implements Sequence {
+public class A232806 extends Sequence0 {
 
   final Sequence mA002065 = new A002065();
   @Override

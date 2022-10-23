@@ -4,13 +4,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.CycleIndexReadBigN;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A129427 Number of isomorphism classes of 3-regular multigraphs of order 2n, loops allowed.
  * @author Sean A. Irvine
  */
-public class A129427 implements Sequence {
+public class A129427 extends Sequence0 {
 
   private static final CycleIndex Z2 = SymmetricGroup.create(2).cycleIndex();
   private static final CycleIndex Z3 = SymmetricGroup.create(3).cycleIndex();

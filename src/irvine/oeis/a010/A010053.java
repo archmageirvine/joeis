@@ -1,13 +1,13 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010053 a(n) = 4^n*(2*n+1)!*(n!)^2/(n+1).
  * @author Sean A. Irvine
  */
-public class A010053 implements Sequence {
+public class A010053 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.ONE;

@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002492 Sum of the first n even squares: 2*n*(n+1)*(2*n+1)/3.
  * @author Sean A. Irvine
  */
-public class A002492 implements Sequence {
+public class A002492 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

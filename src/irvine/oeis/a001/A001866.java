@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001866 Number of connected graphs with n nodes and n edges.
  * @author Sean A. Irvine
  */
-public class A001866 implements Sequence {
+public class A001866 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

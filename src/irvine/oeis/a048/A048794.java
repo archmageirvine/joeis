@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048794 Subsets of natural numbers arranged in standard statistical (or Yates) order.
  * @author Sean A. Irvine
  */
-public class A048794 implements Sequence {
+public class A048794 extends Sequence0 {
 
   private long mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a306;
 // manually prodsim/prodsi2 at 2021-11-28 10:55
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A306907 a(n) = Product_{i=0..n, j=0..n, k=0..n} (i*j*k + 1).
  * @author Georg Fischer
  */
-public class A306907 implements Sequence {
+public class A306907 extends Sequence0 {
 
   protected int mN = -1;
 

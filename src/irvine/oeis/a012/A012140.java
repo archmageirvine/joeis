@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A012140 arcsinh(arcsin(arctanh(x)))=x+2/3!*x^3+32/5!*x^5+1336/7!*x^7...
  * @author Sean A. Irvine
  */
-public class A012140 implements Sequence {
+public class A012140 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

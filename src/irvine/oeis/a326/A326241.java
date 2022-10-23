@@ -4,7 +4,7 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A326241 Number of degree-n even permutations of order dividing 12.
@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class A326241 implements Sequence {
+public class A326241 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

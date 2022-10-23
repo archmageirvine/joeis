@@ -6,6 +6,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a002.A002212;
 
@@ -13,7 +14,7 @@ import irvine.oeis.a002.A002212;
  * A044046 Nonisomorphic catacondensed monoheptafusenes (see reference for precise definition).
  * @author Sean A. Irvine
  */
-public class A044046 implements Sequence {
+public class A044046 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final Sequence mUSeq = new PrependSequence(new SkipSequence(new A002212(), 1), Z.ZERO);

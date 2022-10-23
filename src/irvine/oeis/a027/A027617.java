@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027617 Number of permutations of n elements containing a 3-cycle.
  * @author Sean A. Irvine
  */
-public class A027617 implements Sequence {
+public class A027617 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ZERO;

@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A308951 Number of principal reversible magic squares of order 4n.
  * @author Sean A. Irvine
  */
-public class A308951 implements Sequence {
+public class A308951 extends Sequence0 {
 
   protected long mN = -1;
 

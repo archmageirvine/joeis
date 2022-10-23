@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048833 Number of starting positions of Nim with 2n pieces such that 2nd player wins. Partitions of 2n such that xor-sum of partitions is 0.
  * @author Sean A. Irvine
  */
-public class A048833 implements Sequence {
+public class A048833 extends Sequence0 {
 
   private int mN = -1;
 

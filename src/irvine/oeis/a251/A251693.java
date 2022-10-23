@@ -1,13 +1,13 @@
 package irvine.oeis.a251;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A251693 a(n) = (n+1) * (2*n+1)^(n-2) * 3^n.
  * @author Georg Fischer
  */
-public class A251693 implements Sequence {
+public class A251693 extends Sequence0 {
 
   protected int mMult;
   protected int mN;

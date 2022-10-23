@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Eulerian2;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007347 Maximal Eulerian numbers of second kind.
  * @author Sean A. Irvine
  */
-public class A007347 implements Sequence {
+public class A007347 extends Sequence0 {
 
   private long mN = -1;
 

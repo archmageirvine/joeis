@@ -3,6 +3,7 @@ package irvine.oeis.a263;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001405;
 import irvine.oeis.a003.A003418;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a003.A003418;
  * A263673 a(n) = lcm{1,2,...,n} / binomial(n,floor(n/2)).
  * @author Georg Fischer
  */
-public class A263673 implements Sequence {
+public class A263673 extends Sequence0 {
 
   final Sequence mA001405 = new A001405();
   final Sequence mA003418 = new A003418();

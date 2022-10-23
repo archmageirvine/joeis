@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036973 (7*n^3+4*n^2+4*n)*binomial(2*n,n)/30.
  * @author Sean A. Irvine
  */
-public class A036973 implements Sequence {
+public class A036973 extends Sequence0 {
 
   private long mN = -1;
 

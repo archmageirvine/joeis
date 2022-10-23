@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014015 Denominators of sign-alternating Egyptian fraction expansion of e - 2.
  * @author Sean A. Irvine
  */
-public class A014015 implements Sequence {
+public class A014015 extends Sequence0 {
 
   // Alternating Egyptian expansion
 

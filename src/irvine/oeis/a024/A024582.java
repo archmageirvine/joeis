@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A024582 a(n) = floor( a(n-1)/(Pi - 3) ) with n&gt;0, a(0)=1.
  * @author Sean A. Irvine
  */
-public class A024582 implements Sequence {
+public class A024582 extends Sequence0 {
 
   private static final CR C = CR.PI.subtract(CR.THREE);
   private Z mA = null;

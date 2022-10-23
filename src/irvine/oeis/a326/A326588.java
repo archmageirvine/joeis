@@ -3,13 +3,14 @@ package irvine.oeis.a326;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a026.A026816;
 
 /**
  * A326588 Sum of all the parts in the partitions of n into 10 parts.
  * @author Georg Fischer
  */
-public class A326588 implements Sequence {
+public class A326588 extends Sequence0 {
 
   final Sequence mA026816 = new A026816();
   protected long mN;

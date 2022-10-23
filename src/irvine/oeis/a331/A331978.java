@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A331978 E.g.f.: -log(2 - cosh(x)) (even powers only).
  * E.g.f.: -log(2 - cosh(x)), even powers
  * @author Georg Fischer
  */
-public class A331978 implements Sequence {
+public class A331978 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

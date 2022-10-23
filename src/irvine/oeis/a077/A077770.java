@@ -3,6 +3,7 @@ package irvine.oeis.a077;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000328;
 import irvine.oeis.a051.A051132;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a051.A051132;
  * A077770 Number of ordered pairs of integers (x,y) with n^2 &lt; x^2 + y^2 &lt; (n+1)^2; number of lattice points between circles of radii n and n+1.
  * @author Georg Fischer
  */
-public class A077770 implements Sequence {
+public class A077770 extends Sequence0 {
 
   final Sequence mA000328 = new A000328();
   final Sequence mA051132 = new A051132();

@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035301 Expansion of Sum_{n&gt;=0} (q^n / Product_{k=1..n+5} (1 - q^k)).
  * @author Sean A. Irvine
  */
-public class A035301 implements Sequence {
+public class A035301 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;

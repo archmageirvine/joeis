@@ -3,12 +3,13 @@ package irvine.oeis.a085;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a062.A062206;
 /**
  * A085526 a(n) = n^(2n+1).
  * @author Georg Fischer
  */
-public class A085526 implements Sequence {
+public class A085526 extends Sequence0 {
 
   private final Sequence mA062206 = new A062206();
   protected long mN;

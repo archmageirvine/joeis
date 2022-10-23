@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051502 Number of asymmetric types of Boolean functions of n variables under action of complementing group C(n,2).
  * @author Sean A. Irvine
  */
-public class A051502 implements Sequence {
+public class A051502 extends Sequence0 {
 
   private int mN = -1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004128 a(n) = Sum_{k=1..n} floor(3*n/3^k).
  * @author Sean A. Irvine
  */
-public class A004128 implements Sequence {
+public class A004128 extends Sequence0 {
 
   private long mN = -1;
 

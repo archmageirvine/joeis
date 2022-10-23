@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053840 (Sum of digits of n written in base 5) modulo 5.
  * @author Georg Fischer
  */
-public class A053840 implements Sequence {
+public class A053840 extends Sequence0 {
 
   protected long mN;
   protected long mBase;

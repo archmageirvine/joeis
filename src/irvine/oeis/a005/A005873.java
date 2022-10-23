@@ -1,14 +1,14 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.UnimplementedException;
 
 /**
  * A005873 Theta series of hexagonal close-packing with respect to tetrahedral hole.
  * @author Sean A. Irvine
  */
-public class A005873 implements Sequence {
+public class A005873 extends Sequence0 {
 
   // Formula (67) in Sloane paper, but does not seem to reproduce sequence
 

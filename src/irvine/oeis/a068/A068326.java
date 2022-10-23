@@ -3,14 +3,14 @@ package irvine.oeis.a068;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a031.A031974;
 
 /**
  * A068326 a(n) = Product_{k=1..n} A031974(k).
  * @author Georg Fischer
  */
-public class A068326 implements Sequence {
+public class A068326 extends Sequence0 {
 
   private int mN = -1;
   private final MemorySequence mSeq = MemorySequence.cachedSequence(new A031974());

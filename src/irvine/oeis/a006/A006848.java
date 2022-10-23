@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006848 Number of extreme points of the set of n X n symmetric doubly-substochastic matrices.
  * @author Sean A. Irvine
  */
-public class A006848 implements Sequence {
+public class A006848 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> E_NUM = RING.create(Arrays.asList(Q.ZERO, new Q(-3), Q.NEG_ONE, Q.TWO, Q.ONE));

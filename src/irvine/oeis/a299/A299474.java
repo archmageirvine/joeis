@@ -3,13 +3,14 @@ package irvine.oeis.a299;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 
 /**
  * A299474 a(n) = 4*p(n), where p(n) is the number of partitions of n.
  * @author Georg Fischer
  */
-public class A299474 implements Sequence {
+public class A299474 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   @Override

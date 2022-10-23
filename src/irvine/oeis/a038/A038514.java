@@ -3,13 +3,13 @@ package irvine.oeis.a038;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038514 Primes corresponding to A046411.
  * @author Sean A. Irvine
  */
-public class A038514 implements Sequence {
+public class A038514 extends Sequence0 {
 
   private long mN = 5;
 

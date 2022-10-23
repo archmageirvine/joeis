@@ -2,13 +2,13 @@ package irvine.oeis.a167;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A167859 a(n) = 4^n * Sum_{k=0..n} binomial(2*k, k)^2 / 4^k.
  * @author Sean A. Irvine
  */
-public class A167859 implements Sequence {
+public class A167859 extends Sequence0 {
 
   private int mN = 0;
 

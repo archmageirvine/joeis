@@ -1,13 +1,13 @@
 package irvine.oeis.a354;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A354902 a(n) = 2*n^2 - 6*n + 11 for n &gt; 1 with a(0)=1 and a(1)=3.
  * @author Georg Fischer
  */
-public class A354902 implements Sequence {
+public class A354902 extends Sequence0 {
 
   private int mN = -1;
 

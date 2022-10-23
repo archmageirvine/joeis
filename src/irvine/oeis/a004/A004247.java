@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004247 Multiplication table read by antidiagonals: T(i,j) = i*j (i&gt;=0, j&gt;=0). Alternatively, multiplication triangle read by rows: P(i,j) = j*(i-j) (i&gt;=0, 0&lt;=j&lt;=i).
  * @author Sean A. Irvine
  */
-public class A004247 implements Sequence {
+public class A004247 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

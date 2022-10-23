@@ -3,6 +3,7 @@ package irvine.oeis.a331;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000009;
 import irvine.oeis.a000.A000700;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000700;
  * A331848 Number of partitions of n into odd parts with some part repeated.
  * @author Georg Fischer
  */
-public class A331848 implements Sequence {
+public class A331848 extends Sequence0 {
 
   final Sequence mA000009 = new A000009();
   final Sequence mA000700 = new A000700();

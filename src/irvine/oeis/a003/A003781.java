@@ -5,13 +5,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003781 Expansion of theta series of {E_7}* lattice in powers of q^(1/2).
  * @author Sean A. Irvine
  */
-public class A003781 implements Sequence {
+public class A003781 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> NEG_X = Polynomial.create(0, -1);

@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003002 Size of the largest subset of the numbers [1...n] which does not contain a 3-term arithmetic progression.
  * @author Sean A. Irvine
  */
-public class A003002 implements Sequence {
+public class A003002 extends Sequence0 {
 
   private int mN = -1;
   private int mMax = 0;

@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A146526 a(n) = the smallest positive integer m with exactly n (no more, no fewer) distinct primes represented in binary as substrings within the binary representation of m.
  * @author Sean A. Irvine
  */
-public class A146526 implements Sequence {
+public class A146526 extends Sequence0 {
 
   private static final int MAX_TERMS = 1000;
   private final Fast mPrime = new Fast();

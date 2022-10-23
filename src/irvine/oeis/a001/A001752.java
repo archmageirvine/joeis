@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001752 Expansion of 1/((1+x)*(1-x)^5).
  * @author Sean A. Irvine
  */
-public class A001752 implements Sequence {
+public class A001752 extends Sequence0 {
 
   private Z mN = Z.TWO;
 

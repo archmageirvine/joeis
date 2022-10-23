@@ -1,13 +1,13 @@
 package irvine.oeis.a016;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A016169 a(n) = 7^n - 6^n.
  * @author Sean A. Irvine
  */
-public class A016169 implements Sequence {
+public class A016169 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

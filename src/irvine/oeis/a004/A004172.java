@@ -8,14 +8,14 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a028.A028296;
 
 /**
  * A004172 Triangle of coefficients of Euler polynomials E_2n(x) (exponents in increasing order).
  * @author Sean A. Irvine
  */
-public class A004172 implements Sequence {
+public class A004172 extends Sequence0 {
 
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> E1 = RING.create(Arrays.asList(Q.HALF.negate(), Q.ONE));

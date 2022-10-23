@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003569 a(n) = least positive number m such that 4^m == +1 or -1 mod 2n + 1, with a(0) = 0 by convention.
  * @author Sean A. Irvine
  */
-public class A003569 implements Sequence {
+public class A003569 extends Sequence0 {
 
   private long mN = -1;
   private long mS = 4;

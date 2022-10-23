@@ -3,13 +3,14 @@ package irvine.oeis.a061;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a021.A021559;
 
 /**
  * A061105 Smallest number whose digital sum is n^3.
  * @author Georg Fischer
  */
-public class A061105 implements Sequence {
+public class A061105 extends Sequence0 {
 
   final Sequence mA021559 = new A021559();
   final Sequence mA061263 = new A061263();

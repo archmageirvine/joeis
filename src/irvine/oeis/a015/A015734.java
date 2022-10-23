@@ -3,13 +3,13 @@ package irvine.oeis.a015;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A015734 Odd n such that d(n) does not divide phi(n).
  * @author Sean A. Irvine
  */
-public class A015734 implements Sequence {
+public class A015734 extends Sequence0 {
 
   private Z mN = Z.valueOf(23);
 

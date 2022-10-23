@@ -3,12 +3,13 @@ package irvine.oeis.a292;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a048.A048735;
 /**
  * A292272 a(n) = n - A048735(n) = n - (n AND floor(n/2)).
  * @author Georg Fischer
  */
-public class A292272 implements Sequence {
+public class A292272 extends Sequence0 {
 
   private final Sequence mA048735 = new A048735();
   protected long mN;

@@ -2,13 +2,13 @@ package irvine.oeis.a010;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010075 a(n) = sum of base-8 digits of a(n-1) + sum of base-8 digits of a(n-2).
  * @author Sean A. Irvine
  */
-public class A010075 implements Sequence {
+public class A010075 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

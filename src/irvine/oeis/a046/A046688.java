@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046688 Antidiagonals of square array in which k-th row (k&gt;0) is an arithmetic progression of difference 2^(k-1).
  * @author Sean A. Irvine
  */
-public class A046688 implements Sequence {
+public class A046688 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001311 Final 2 digits of 6^n.
  * @author Sean A. Irvine
  */
-public class A001311 implements Sequence {
+public class A001311 extends Sequence0 {
 
   private static final Z[] SEQ = {Z.ONE,
                                   Z.SIX,

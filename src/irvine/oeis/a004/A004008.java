@@ -5,13 +5,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004008 Expansion of theta series of E_7 lattice in powers of q^2.
  * @author Sean A. Irvine
  */
-public class A004008 implements Sequence {
+public class A004008 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> NEGX = RING.negate(RING.x());

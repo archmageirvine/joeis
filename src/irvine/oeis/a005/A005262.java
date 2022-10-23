@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005262 a(n) = floor((7*2^(n+1)-9*n-10)/3).
  * @author Sean A. Irvine
  */
-public class A005262 implements Sequence {
+public class A005262 extends Sequence0 {
 
   private int mN = -1;
 

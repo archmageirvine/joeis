@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030214 Expansion of eta(q^7)*eta(q^17).
  * @author Sean A. Irvine
  */
-public class A030214 implements Sequence {
+public class A030214 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> X7 = RING.monomial(Z.ONE, 7);

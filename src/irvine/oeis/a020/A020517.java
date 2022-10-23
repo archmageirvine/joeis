@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020517 9th cyclotomic polynomial evaluated at powers of 2.
  * @author Sean A. Irvine
  */
-public class A020517 implements Sequence {
+public class A020517 extends Sequence0 {
 
   private int mN = -1;
 

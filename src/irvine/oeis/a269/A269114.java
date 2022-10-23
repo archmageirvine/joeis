@@ -3,6 +3,7 @@ package irvine.oeis.a269;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a014.A014608;
 import irvine.oeis.a268.A268847;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a268.A268847;
  * A269114 Number of sequences with 4 copies each of 1,2,...,n avoiding the pattern 12...n.
  * @author Georg Fischer
  */
-public class A269114 implements Sequence {
+public class A269114 extends Sequence0 {
 
   final Sequence mA014608 = new A014608();
   final Sequence mA268847 = new A268847();

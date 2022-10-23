@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058231 A Somos-8 sequence.
  * @author Sean A. Irvine
  */
-public class A058231 implements Sequence {
+public class A058231 extends Sequence0 {
 
   private static final long[] U = {314101616640L, 25442230947840L, 235226865664L, -181502208, -16L};
   private static final Z[] INIT = {

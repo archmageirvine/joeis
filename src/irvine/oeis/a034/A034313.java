@@ -5,13 +5,13 @@ import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034313 Decimal part of a(n)^(1/7) starts with reversal of its integer part: first term of runs.
  * @author Sean A. Irvine
  */
-public class A034313 implements Sequence {
+public class A034313 extends Sequence0 {
 
   private static final CR ONE_SEVENTH = CR.valueOf(new Q(1, 7));
   private boolean mStartOfRun = true;

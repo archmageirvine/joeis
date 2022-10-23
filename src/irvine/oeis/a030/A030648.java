@@ -2,13 +2,13 @@ package irvine.oeis.a030;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030648 Dimensions of multiples of minimal representation of complex Lie algebra E6.
  * @author Sean A. Irvine
  */
-public class A030648 implements Sequence {
+public class A030648 extends Sequence0 {
 
   private long mN = 2;
 

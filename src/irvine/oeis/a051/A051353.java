@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051353 a(n) = a(n-1) + n^2 if n prime else a(n-1) - n.
  * @author Sean A. Irvine
  */
-public class A051353 implements Sequence {
+public class A051353 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mA = Z.ZERO;

@@ -1,13 +1,13 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A029575 Number of permutations of an n-set containing an 8-cycle.
  * @author Sean A. Irvine
  */
-public class A029575 implements Sequence {
+public class A029575 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.ONE;

@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001091 a(n) = 8*a(n-1) - a(n-2); a(0) = 1, a(1) = 4.
  * @author Sean A. Irvine
  */
-public class A001091 implements Sequence {
+public class A001091 extends Sequence0 {
 
   private Z mA = Z.valueOf(31);
   private Z mB = Z.FOUR;

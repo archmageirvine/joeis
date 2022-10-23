@@ -3,13 +3,14 @@ package irvine.oeis.a168;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000078;
 
 /**
  * A168088 a(n) = 2^tetranacci(n).
  * @author Georg Fischer
  */
-public class A168088 implements Sequence {
+public class A168088 extends Sequence0 {
 
   final Sequence mA000078 = new A000078();
   @Override

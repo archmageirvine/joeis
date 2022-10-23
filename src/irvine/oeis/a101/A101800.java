@@ -3,13 +3,14 @@ package irvine.oeis.a101;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a009.A009940;
 import irvine.oeis.a055.A055209;
 /**
  * A101800 a(n)= abs(det[A000166(i+j+1)]), i,j=0...n, is the absolute value of the Hankel determinant of order n+1 of the derangements numbers, cf. A000166.
  * @author Georg Fischer
  */
-public class A101800 implements Sequence {
+public class A101800 extends Sequence0 {
 
   private final Sequence mA009940 = new A009940();
   private final Sequence mA055209 = new A055209();

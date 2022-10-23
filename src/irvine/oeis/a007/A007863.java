@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007863 Number of hybrid binary trees with n internal nodes.
  * @author Sean A. Irvine
  */
-public class A007863 implements Sequence {
+public class A007863 extends Sequence0 {
 
   private long mN = -1;
 

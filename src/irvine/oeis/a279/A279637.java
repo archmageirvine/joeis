@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A279637 Exponential transform of the fourth powers A000583.
  * E.g.f.: exp(exp(x)*(x^4+6*x^3+7*x^2+x))
  * @author Georg Fischer
  */
-public class A279637 implements Sequence {
+public class A279637 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

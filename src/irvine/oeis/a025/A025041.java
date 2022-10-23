@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025041 Number of partitions of { 1, 2, ..., 9n } into sets of size 9.
  * @author Sean A. Irvine
  */
-public class A025041 implements Sequence {
+public class A025041 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private long mN = -1;

@@ -3,13 +3,14 @@ package irvine.oeis.a159;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a091.A091904;
 
 /**
  * A159277 Ways to write the identity as a product of n 3-cycles in symmetric group S_4.
  * @author Georg Fischer
  */
-public class A159277 implements Sequence {
+public class A159277 extends Sequence0 {
 
   final Sequence mA091904 = new A091904();
   @Override

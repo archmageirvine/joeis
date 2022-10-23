@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005351 Base -2 representation for n regarded as base 2, then evaluated.
  * @author Sean A. Irvine
  */
-public class A005351 implements Sequence {
+public class A005351 extends Sequence0 {
 
   private long mN = -1;
 

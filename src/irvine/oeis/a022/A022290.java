@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A022290 Replace 2^k in binary expansion of n with Fibonacci(k+2).
  * @author Sean A. Irvine
  */
-public class A022290 implements Sequence {
+public class A022290 extends Sequence0 {
 
   private static final Z[] FIBONACCI = new Z[Long.SIZE];
   static {

@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002707 Number of ternary trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A002707 implements Sequence {
+public class A002707 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

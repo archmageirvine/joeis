@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049505 a(n) = Product_{1&lt;=i&lt;=j&lt;=n} (i+j+n-1)/(i+j-1), number of symmetric plane partitions in n-cube.
  * @author Sean A. Irvine
  */
-public class A049505 implements Sequence {
+public class A049505 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

@@ -3,13 +3,14 @@ package irvine.oeis.a168;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002620;
 
 /**
  * A168493 a(n) = 3^floor(n^2/2).
  * @author Georg Fischer
  */
-public class A168493 implements Sequence {
+public class A168493 extends Sequence0 {
 
   final Sequence mA002620 = new A002620();
   @Override

@@ -3,11 +3,12 @@ package irvine.oeis.a127;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 /**
  * A127943 a(n) = 2^binomial(n+1,2)/A046161(n).
  * @author Georg Fischer
  */
-public class A127943 implements Sequence {
+public class A127943 extends Sequence0 {
 
   private final Sequence mA127944 = new A127944();
   @Override

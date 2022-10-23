@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046431 Sum of digits of a(n) raised to its digits powers is prime.
  * @author Sean A. Irvine
  */
-public class A046431 implements Sequence {
+public class A046431 extends Sequence0 {
 
   private long mN = 9;
 

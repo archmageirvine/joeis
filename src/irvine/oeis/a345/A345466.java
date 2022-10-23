@@ -3,13 +3,13 @@ package irvine.oeis.a345;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A345466 a(n) = Product_{k=1..n} binomial(n, floor(n/k)).
  * @author Georg Fischer
  */
-public class A345466 implements Sequence {
+public class A345466 extends Sequence0 {
 
   private int mN = -1;
 

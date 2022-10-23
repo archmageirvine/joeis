@@ -2,13 +2,13 @@ package irvine.oeis.a019;
 
 import irvine.math.factorial.BinarySplitFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A019437 a(n) = a(n-1)!/a(n-2)!; a(0) = 1, a(1) = 3.
  * @author Sean A. Irvine
  */
-public class A019437 implements Sequence {
+public class A019437 extends Sequence0 {
 
   private final BinarySplitFactorial mF = new BinarySplitFactorial();
   private Z mA = null;

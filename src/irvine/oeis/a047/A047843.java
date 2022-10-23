@@ -2,13 +2,13 @@ package irvine.oeis.a047;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A047843 Describe n: give frequency of each digit, by increasing size; mention also missing digits between the smallest and largest one.
  * @author Sean A. Irvine
  */
-public class A047843 implements Sequence {
+public class A047843 extends Sequence0 {
 
   private long mN = -1;
 

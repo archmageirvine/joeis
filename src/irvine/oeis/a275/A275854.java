@@ -3,13 +3,14 @@ package irvine.oeis.a275;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000124;
 
 /**
  * A275854 Number of labeled directed graphs on n nodes (allowing self loops) such that the out-degree of each node is at most 2.
  * @author Georg Fischer
  */
-public class A275854 implements Sequence {
+public class A275854 extends Sequence0 {
 
   final Sequence mA000124 = new A000124();
   protected long mN;

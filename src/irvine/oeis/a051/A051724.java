@@ -3,13 +3,14 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a109.A109053;
 
 /**
  * A051724 Numerator of n/12.
  * @author Georg Fischer
  */
-public class A051724 implements Sequence {
+public class A051724 extends Sequence0 {
 
   final Sequence mA109053 = new A109053();
   @Override

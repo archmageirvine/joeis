@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005901 Number of points on surface of cuboctahedron (or icosahedron): a(0) = 1; for n &gt; 0, a(n) = 10n^2 + 2. Also coordination sequence for f.c.c. or A_3 or D_3 lattice.
  * @author Sean A. Irvine
  */
-public class A005901 implements Sequence {
+public class A005901 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

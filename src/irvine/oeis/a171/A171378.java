@@ -4,13 +4,14 @@ package irvine.oeis.a171;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006046;
 
 /**
  * A171378 a(n) = (n+1)^2 - A006046(n+1).
  * @author Georg Fischer
  */
-public class A171378 implements Sequence {
+public class A171378 extends Sequence0 {
 
   final Sequence mA006046 = new A006046();
   protected long mN;

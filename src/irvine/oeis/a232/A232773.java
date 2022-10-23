@@ -3,13 +3,13 @@ package irvine.oeis.a232;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A232773 Permanent of the n X n matrix with numbers 1,2,...,n^2 in order across rows.
  * @author Georg Fischer
  */
-public class A232773 implements Sequence {
+public class A232773 extends Sequence0 {
 
   private int mN = -1;
   

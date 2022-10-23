@@ -3,13 +3,13 @@ package irvine.oeis.a308;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A308941 a(n) = Product_{k=1..n} |Stirling1(n,k)| * k!.
  * @author Georg Fischer
  */
-public class A308941 implements Sequence {
+public class A308941 extends Sequence0 {
 
   private int mN = -1;
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;

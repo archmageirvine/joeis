@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003504 a(0)=a(1)=1; thereafter a(n+1) = (1/n)*Sum_{k=0..n} a(k)^2 (a(n) is not always integral!).
  * @author Sean A. Irvine
  */
-public class A003504 implements Sequence {
+public class A003504 extends Sequence0 {
 
   private Z mS = Z.TWO;
   private int mN = -1;

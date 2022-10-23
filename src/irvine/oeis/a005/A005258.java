@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005258 Ap\u00e9ry numbers: a(n) = Sum_{k=0..n} binomial(n,k)^2 * binomial(n+k,k).
  * @author Sean A. Irvine
  */
-public class A005258 implements Sequence {
+public class A005258 extends Sequence0 {
 
   private Z mA = Z.ZERO;
   private Z mB = Z.ONE;

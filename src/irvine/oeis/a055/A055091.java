@@ -5,14 +5,14 @@ import java.util.TreeSet;
 
 import irvine.math.Comparators;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
  * A055091 Minimum number of transpositions needed to represent each permutation given in reversed colexicographic ordering A055089.
  * @author Sean A. Irvine
  */
-public class A055091 implements Sequence {
+public class A055091 extends Sequence0 {
 
   private int mN = 1;
   private final TreeSet<int[]> mReverseColex = new TreeSet<>(Comparators.REVERSE_COLEXICOGRAPHIC);

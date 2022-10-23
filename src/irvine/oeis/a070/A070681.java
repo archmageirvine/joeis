@@ -2,13 +2,13 @@ package irvine.oeis.a070;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A070681 Smallest m in range 1..phi(2n+1) such that 6^m == 1 mod 2n+1, or 0 if no such number exists.
  * @author Georg Fischer
  */
-public class A070681 implements Sequence {
+public class A070681 extends Sequence0 {
 
   private int mN;
   private final Z mBase;

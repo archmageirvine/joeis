@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008217 a(n) = floor(n/4)*floor((n+1)/4).
  * @author Sean A. Irvine
  */
-public class A008217 implements Sequence {
+public class A008217 extends Sequence0 {
 
   private long mN = -1;
 

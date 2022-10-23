@@ -3,13 +3,14 @@ package irvine.oeis.a141;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a157.A157818;
 
 /**
  * A141459 a(n) = Product_{p-1 divides n} p, where p is an odd prime.
  * @author Georg Fischer
  */
-public class A141459 implements Sequence {
+public class A141459 extends Sequence0 {
 
   final Sequence mA157818 = new A157818();
   protected long mN;

@@ -2,13 +2,13 @@ package irvine.oeis.a026;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A026034 T(n,[ n/2 ]), where T is defined in A026022.
  * @author Sean A. Irvine
  */
-public class A026034 implements Sequence {
+public class A026034 extends Sequence0 {
 
   private long mN = -1;
 

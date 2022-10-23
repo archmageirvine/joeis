@@ -3,14 +3,14 @@ package irvine.oeis.a059;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001187;
 
 /**
  * A059166 Number of n-node connected labeled graphs without endpoints.
  * @author Sean A. Irvine
  */
-public class A059166 implements Sequence {
+public class A059166 extends Sequence0 {
 
   private final MemorySequence mC = MemorySequence.cachedSequence(new A001187());
   private int mN = -1;

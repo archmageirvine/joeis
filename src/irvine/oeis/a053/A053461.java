@@ -3,13 +3,13 @@ package irvine.oeis.a053;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053461 a(0) = 0; a(n) = a(n-1)-n^2 if positive and new, otherwise a(n) = a(n-1)+n^2.
  * @author Sean A. Irvine
  */
-public class A053461 implements Sequence {
+public class A053461 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ZERO;

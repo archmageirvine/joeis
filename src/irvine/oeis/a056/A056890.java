@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056890 Denominators of continued fraction for left factorial.
  * @author Sean A. Irvine
  */
-public class A056890 implements Sequence {
+public class A056890 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.NEG_ONE;

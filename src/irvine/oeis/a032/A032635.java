@@ -2,13 +2,13 @@ package irvine.oeis.a032;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A032635 a(n) = floor(n^2 / e).
  * @author Sean A. Irvine
  */
-public class A032635 implements Sequence {
+public class A032635 extends Sequence0 {
 
   private long mN = -1;
 

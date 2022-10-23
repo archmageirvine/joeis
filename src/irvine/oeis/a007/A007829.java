@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007829 From random walks on complete directed triangle.
  * @author Sean A. Irvine
  */
-public class A007829 implements Sequence {
+public class A007829 extends Sequence0 {
 
   private static final int VERTICES = 3;
   private static final int EDGES = 2 * VERTICES;

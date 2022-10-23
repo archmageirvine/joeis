@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059710 Dimension of space of invariants of n-th tensor power of 7-dimensional irreducible representation of G_2. Also the number of n-leaf, otherwise trivalent graphs in a disk such that all faces have at least 6 sides.
  * @author Sean A. Irvine
  */
-public class A059710 implements Sequence {
+public class A059710 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

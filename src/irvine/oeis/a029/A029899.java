@@ -3,13 +3,13 @@ package irvine.oeis.a029;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A029899 Number of strategic configurations in 3 X n Chomp rectangle.
  * @author Sean A. Irvine
  */
-public class A029899 implements Sequence {
+public class A029899 extends Sequence0 {
 
   private static final int BITS_PER_VALUE = 21;
   protected final TreeSet<Long> mPPositions = new TreeSet<>();

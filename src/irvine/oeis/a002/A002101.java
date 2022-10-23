@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002101 Nearest integer to 4 * Pi * n^3 / 3.
  * @author Sean A. Irvine
  */
-public class A002101 implements Sequence {
+public class A002101 extends Sequence0 {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
   private static final CR CONST = CR.PI.shiftLeft(2).divide(CR.THREE);

@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055634 2-adic factorial function.
  * @author Sean A. Irvine
  */
-public class A055634 implements Sequence {
+public class A055634 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private int mN = -1;

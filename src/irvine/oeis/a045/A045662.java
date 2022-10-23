@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045662 Number of 2n-bead balanced binary strings of fundamental period 2n, rotationally equivalent to reverse.
  * @author Sean A. Irvine
  */
-public class A045662 implements Sequence {
+public class A045662 extends Sequence0 {
 
   private int mN = -1;
 

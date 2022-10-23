@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A023969 a(n) = round(sqrt(n)) - floor(sqrt(n)).
  * @author Sean A. Irvine
  */
-public class A023969 implements Sequence {
+public class A023969 extends Sequence0 {
 
   private long mN = -1;
 

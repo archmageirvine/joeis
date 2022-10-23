@@ -5,13 +5,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034285 Decimal part of a(n)^(1/10) starts with a 'nine digits' anagram.
  * @author Sean A. Irvine
  */
-public class A034285 implements Sequence {
+public class A034285 extends Sequence0 {
 
   private static final CR C = CR.valueOf(1000000000);
   private static final CR ONE_TENTH = CR.valueOf(new Q(1, 10));

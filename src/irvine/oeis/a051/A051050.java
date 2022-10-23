@@ -6,13 +6,13 @@ import irvine.math.q.HalfCentralBinomialSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051050 Numerator of the probability that the convex hull of n+2 randomly chosen points in the unit ball B^n has n+1 vertices.
  * @author Sean A. Irvine
  */
-public class A051050 implements Sequence {
+public class A051050 extends Sequence0 {
 
   private final HalfCentralBinomialSequence mB = new HalfCentralBinomialSequence();
   private final ArrayList<Q> mOddHalfBinomial = new ArrayList<>();

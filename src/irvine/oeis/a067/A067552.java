@@ -3,6 +3,7 @@ package irvine.oeis.a067;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004159;
 import irvine.oeis.a007.A007953;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007953;
  * A067552 a(n) = SumOfDigits(n)^2 - SumOfDigits(n^2), where SumOfDigits = A007953.
  * @author Georg Fischer
  */
-public class A067552 implements Sequence {
+public class A067552 extends Sequence0 {
 
   final Sequence mA004159 = new A004159();
   final Sequence mA007953 = new A007953();

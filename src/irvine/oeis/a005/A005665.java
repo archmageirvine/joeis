@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005665 Tower of Hanoi with 3 pegs and cyclic moves only (clockwise).
  * @author Sean A. Irvine
  */
-public class A005665 implements Sequence {
+public class A005665 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

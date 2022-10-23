@@ -3,13 +3,13 @@ package irvine.oeis.a052;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052873 E.g.f. satisfies: A(x) = exp(x*A(x)/(1 - x*A(x))).
  * @author Sean A. Irvine
  */
-public class A052873 implements Sequence {
+public class A052873 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036777 Number of labeled rooted trees with a degree constraint (described in the comments below).
  * @author Sean A. Irvine
  */
-public class A036777 implements Sequence {
+public class A036777 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Q Q6 = Q.SIX;

@@ -1,13 +1,13 @@
 package irvine.oeis.a074;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A074890 Decimal form of binary integers produced by a modified version of Wolfram's Rule 30 one-dimensional cellular automaton.
  * @author Georg Fischer
  */
-public class A074890 implements Sequence {
+public class A074890 extends Sequence0 {
 
   protected Z mBase10;
 

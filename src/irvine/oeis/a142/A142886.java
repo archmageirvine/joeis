@@ -5,13 +5,13 @@ import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A142886 Number of polyominoes with n cells that have the symmetry group D_8.
  * @author Sean A. Irvine
  */
-public class A142886 implements Sequence {
+public class A142886 extends Sequence0 {
 
   private final ParallelHunter mHunter = new ParallelHunter(6,
     () -> new Hunter(Lattices.Z2, true),

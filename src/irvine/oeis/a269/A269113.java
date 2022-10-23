@@ -3,6 +3,7 @@ package irvine.oeis.a269;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a014.A014606;
 import irvine.oeis.a047.A047910;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a047.A047910;
  * A269113 Number of sequences with 3 copies each of 1,2,...,n avoiding the pattern 12...n.
  * @author Georg Fischer
  */
-public class A269113 implements Sequence {
+public class A269113 extends Sequence0 {
 
   final Sequence mA014606 = new A014606();
   final Sequence mA047910 = new A047910();

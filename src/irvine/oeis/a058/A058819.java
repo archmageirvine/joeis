@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058819 a(0) = 1, a(1) = 4; for n &gt;= 2 a(n) is the number of degree-n monic reducible polynomials over GF(4), i.e., a(n) = 4^n - A027377(n).
  * @author Georg Fischer
  */
-public class A058819 implements Sequence {
+public class A058819 extends Sequence0 {
 
   private int mN = -1;
 

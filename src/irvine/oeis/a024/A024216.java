@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A024216 a(n) = n-th elementary symmetric function of the first n+1 positive integers congruent to 1 mod 3.
  * @author Sean A. Irvine
  */
-public class A024216 implements Sequence {
+public class A024216 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

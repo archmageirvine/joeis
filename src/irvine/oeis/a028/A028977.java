@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028977 Theta series of 8-d 6-modular lattice G_2 tensor F_4 (or A_2 tensor D_4) with det 1296 and minimal norm 4 in powers of q^2.
  * @author Sean A. Irvine
  */
-public class A028977 implements Sequence {
+public class A028977 extends Sequence0 {
 
   // After Michael Somos
 

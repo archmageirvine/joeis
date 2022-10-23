@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001196 Double-bitters: only even length runs in binary expansion.
  * @author Sean A. Irvine
  */
-public class A001196 implements Sequence {
+public class A001196 extends Sequence0 {
 
   private long mN = -1;
 

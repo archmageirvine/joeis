@@ -1,13 +1,13 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020896 Positive numbers k such that k = x^5 + y^5 has a solution in nonzero integers x, y.
  * @author Sean A. Irvine
  */
-public class A020896 implements Sequence {
+public class A020896 extends Sequence0 {
 
   private Z mN = Z.ONE;
 

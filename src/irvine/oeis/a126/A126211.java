@@ -3,14 +3,14 @@ package irvine.oeis.a126;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A126211 Number of 9's in decimal expansion of 9^n.
  * @author Georg Fischer
  */
-public class A126211 implements Sequence {
+public class A126211 extends Sequence0 {
 
   protected int mN = -1;
   

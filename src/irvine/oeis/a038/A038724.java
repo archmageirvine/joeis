@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038724 Each term describes the ordinal number of its position in the sequence, by a summation of the numerals in that ordinal number and then by the differences between each contiguous pair of the numerals in the order in which they appear.
  * @author Sean A. Irvine
  */
-public class A038724 implements Sequence {
+public class A038724 extends Sequence0 {
 
   private long mN = -1;
 

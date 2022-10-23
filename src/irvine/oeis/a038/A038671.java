@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038671 Number of nonnegative solutions of x1^2 + x2^2 + ... + x5^2 = n.
  * @author Sean A. Irvine
  */
-public class A038671 implements Sequence {
+public class A038671 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private Polynomial<Z> mA = RING.one();

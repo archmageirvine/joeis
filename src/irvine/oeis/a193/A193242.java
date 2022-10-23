@@ -3,13 +3,14 @@ package irvine.oeis.a193;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a051.A051920;
 
 /**
  * A193242 a(n) = (C(n, floor(n/2)) + 2)^n for n &gt;= 0.
  * @author Georg Fischer
  */
-public class A193242 implements Sequence {
+public class A193242 extends Sequence0 {
 
   final Sequence mA051920 = new A051920();
   protected long mN;

@@ -4,13 +4,14 @@ package irvine.oeis.a165;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002326;
 
 /**
  * A165781 a(n) = (2^A002326(n)-1)/(2*n+1).
  * @author Georg Fischer
  */
-public class A165781 implements Sequence {
+public class A165781 extends Sequence0 {
 
   final Sequence mA002326 = new A002326();
   protected long mN;

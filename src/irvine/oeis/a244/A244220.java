@@ -3,12 +3,13 @@ package irvine.oeis.a244;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A244220 Binary complement of Greedy Catalan Base reduced modulo 2: a(n) = 1 - (A014418(n) modulo 2).
  * @author Georg Fischer
  */
-public class A244220 implements Sequence {
+public class A244220 extends Sequence0 {
 
   final Sequence mA244221 = new A244221();
   @Override

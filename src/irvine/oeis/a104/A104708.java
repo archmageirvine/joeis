@@ -3,6 +3,7 @@ package irvine.oeis.a104;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 import irvine.oeis.a000.A000085;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000085;
  * A104708 Product of number of involutions on n letters and number of partitions of n.
  * @author Georg Fischer
  */
-public class A104708 implements Sequence {
+public class A104708 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   final Sequence mA000085 = new A000085();

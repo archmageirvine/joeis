@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.Trailer;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006819 Trails of length n on cubic lattice.
  * @author Sean A. Irvine
  */
-public class A006819 implements Sequence {
+public class A006819 extends Sequence0 {
 
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new Trailer(Lattices.Z3));
   private final long mC = Lattices.Z3.neighbour(Lattices.Z3.origin(), 0);

@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A012994 cosh(arctan(x)+arcsin(x))=1+4/2!*x^2+8/4!*x^4+310/6!*x^6+4600/8!*x^8...
  * @author Sean A. Irvine
  */
-public class A012994 implements Sequence {
+public class A012994 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -2;

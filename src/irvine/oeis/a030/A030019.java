@@ -2,13 +2,13 @@ package irvine.oeis.a030;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030019 Number of labeled spanning trees in the complete hypergraph on n vertices (all hyperedges having cardinality 2 or greater).
  * @author Sean A. Irvine
  */
-public class A030019 implements Sequence {
+public class A030019 extends Sequence0 {
 
   private int mN = -1;
 

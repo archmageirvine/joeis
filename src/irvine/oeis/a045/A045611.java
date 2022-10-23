@@ -5,13 +5,13 @@ import java.util.HashSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045611 Number of different energy states of n positive and n negative charges on a necklace. Different sets of distances between n points chosen from 2n equally spaced points on a circle.
  * @author Sean A. Irvine
  */
-public class A045611 implements Sequence {
+public class A045611 extends Sequence0 {
 
   private int mN = -1;
 

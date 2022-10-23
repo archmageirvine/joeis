@@ -3,13 +3,14 @@ package irvine.oeis.a070;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004185;
 
 /**
  * A070196 a(n)=n plus the sorted version of the base-10 digits of n.
  * @author Georg Fischer
  */
-public class A070196 implements Sequence {
+public class A070196 extends Sequence0 {
 
   final Sequence mA004185 = new A004185();
   protected long mN;

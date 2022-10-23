@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008776 Pisot sequences E(2,6), L(2,6), P(2,6), T(2,6).
  * @author Sean A. Irvine
  */
-public class A008776 implements Sequence {
+public class A008776 extends Sequence0 {
 
   private Z mA = null;
 

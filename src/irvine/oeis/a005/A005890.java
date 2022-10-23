@@ -6,13 +6,13 @@ import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005890 Theta series of hexagonal close-packing with respect to center of triangle between two layers.
  * @author Sean A. Irvine
  */
-public class A005890 implements Sequence {
+public class A005890 extends Sequence0 {
 
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
   private static final Q TWO_NINTHS = new Q(2, 9);

@@ -1,13 +1,13 @@
 package irvine.oeis.a083;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A083362 Square table, read by antidiagonals, of least distinct positive integers such that the sum of any two consecutive terms in any row is a square number.
  * @author Sean A. Irvine
  */
-public class A083362 implements Sequence {
+public class A083362 extends Sequence0 {
 
   /**
    * Direct computation of numbers in this sequence.

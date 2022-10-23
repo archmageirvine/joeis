@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058955 Let S(t) = 1 + s_1*t + s_2*t^2 + ... satisfy S' = -S/(2 + S); sequence gives numerators of s_n.
  * @author Sean A. Irvine
  */
-public class A058955 implements Sequence {
+public class A058955 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final Polynomial<Q> mA = RING.empty();

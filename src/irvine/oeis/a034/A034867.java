@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034867 Triangle of odd-numbered terms in rows of Pascal's triangle.
  * @author Sean A. Irvine
  */
-public class A034867 implements Sequence {
+public class A034867 extends Sequence0 {
 
   private long mN = 0;
   private long mM = 0;

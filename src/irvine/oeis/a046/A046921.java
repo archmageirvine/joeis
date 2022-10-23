@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046921 Number of ways to express 2n+1 as p+2a^2; p = 1 or prime, a &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A046921 implements Sequence {
+public class A046921 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

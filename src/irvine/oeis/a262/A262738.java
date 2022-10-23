@@ -4,13 +4,13 @@ package irvine.oeis.a262;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A262738 O.g.f. exp( Sum_{n &gt;= 1} A211419(n)*x^n/n ).
  * @author Georg Fischer
  */
-public class A262738 implements Sequence {
+public class A262738 extends Sequence0 {
 
   private int mN = -1;
 

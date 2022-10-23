@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046268 Largest prime substring in 2^n (or 0 if none exist).
  * @author Sean A. Irvine
  */
-public class A046268 implements Sequence {
+public class A046268 extends Sequence0 {
 
   private Z mA = null;
 

@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010576 Number of n-step self-avoiding walks on 5-d cubic lattice.
  * @author Sean A. Irvine
  */
-public class A010576 implements Sequence {
+public class A010576 extends Sequence0 {
 
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new SelfAvoidingWalker(Lattices.Z5));
   private final long mC = Lattices.Z5.neighbour(Lattices.Z5.origin(), 0);

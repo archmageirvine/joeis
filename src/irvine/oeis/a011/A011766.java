@@ -3,13 +3,13 @@ package irvine.oeis.a011;
 import java.time.Year;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011766 Number of days in A.D. years from 100*n through 100*n + 99.
  * @author Sean A. Irvine
  */
-public class A011766 implements Sequence {
+public class A011766 extends Sequence0 {
 
   private int mN = -1;
 

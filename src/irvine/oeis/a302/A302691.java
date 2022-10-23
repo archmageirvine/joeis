@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A302691 Number of broken alternating permutations of n things.
  * E.g.f.: (cos(x)-sin(x)+x-1)/(sin(x)-1)
  * @author Georg Fischer
  */
-public class A302691 implements Sequence {
+public class A302691 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

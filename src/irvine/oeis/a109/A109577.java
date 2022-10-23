@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A109577 E.g.f.: 2x/[1-exp(-2x)+2exp(-x)].
  * E.g.f.: 2*x/(1-exp(-2*x)+2*exp(-x))
  * @author Georg Fischer
  */
-public class A109577 implements Sequence {
+public class A109577 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A346033 a(n) is the smallest integer k &gt; 0 such that 10^(-n-1) &lt; |sin(k) - round(sin(k))| &lt; 10^(-n).
  * @author Sean A. Irvine
  */
-public class A346033 implements Sequence {
+public class A346033 extends Sequence0 {
 
   private final DynamicLongArray mFirsts = new DynamicLongArray();
   private final ArrayList<CR> mLimits = new ArrayList<>();

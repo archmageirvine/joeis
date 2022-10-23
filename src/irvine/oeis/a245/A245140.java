@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A245140 E.g.f.: (cosh(2*x) + sinh(2*x)*cosh(x)) / (cosh(x) - sinh(x)*cosh(2*x)).
  * E.g.f.: (cosh(x)*cosh(2*x) + sinh(x) + sinh(2*x)) / (1 - sinh(x)*sinh(2*x))
  * @author Georg Fischer
  */
-public class A245140 implements Sequence {
+public class A245140 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

@@ -5,13 +5,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007865 Number of sum-free subsets of {1, ..., n}.
  * @author Sean A. Irvine
  */
-public class A007865 implements Sequence {
+public class A007865 extends Sequence0 {
 
   private Set<Set<Integer>> mS = Collections.singleton(Collections.emptySet());
   private int mN = -1;

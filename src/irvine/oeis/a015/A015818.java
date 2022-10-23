@@ -1,13 +1,13 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A015818 Number of solutions of +- 1 +- 2 +- ... +- (n-1) +- n = 0 in which the partial sums +- 1 +- ... +- k (1&lt;=k&lt;=n) are all distinct.
  * @author Sean A. Irvine
  */
-public class A015818 implements Sequence {
+public class A015818 extends Sequence0 {
 
   // Probably could save another factor of 2 here in time by symmetry
 

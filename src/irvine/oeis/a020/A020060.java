@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020060 a(n) = floor( Gamma(n+9/10)/Gamma(9/10) ).
  * @author Sean A. Irvine
  */
-public class A020060 implements Sequence {
+public class A020060 extends Sequence0 {
 
   private static final Q C = new Q(9, 10);
   private int mN = -2;

@@ -1,14 +1,14 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.English;
 
 /**
  * A052360 Number of characters in the English name of n, including spaces and hyphens.
  * @author Sean A. Irvine
  */
-public class A052360 implements Sequence {
+public class A052360 extends Sequence0 {
 
   private int mN = -1;
 

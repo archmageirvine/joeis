@@ -3,6 +3,7 @@ package irvine.oeis.a090;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004355;
 import irvine.oeis.a016.A016921;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a016.A016921;
  * A090969 a(n) = 1/Integral_{x=0..1} (x^5 - x^6)^n.
  * @author Georg Fischer
  */
-public class A090969 implements Sequence {
+public class A090969 extends Sequence0 {
 
   final Sequence mA004355 = new A004355();
   final Sequence mA016921 = new A016921();

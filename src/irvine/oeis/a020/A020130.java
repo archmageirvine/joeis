@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020130 Ceiling of GAMMA(n+1/5)/GAMMA(1/5).
  * @author Sean A. Irvine
  */
-public class A020130 implements Sequence {
+public class A020130 extends Sequence0 {
 
   private static final Q C = new Q(1, 5);
   private int mN = -2;

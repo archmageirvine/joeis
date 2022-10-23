@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001965 u-pile count for the 4-Wythoff game with i=2.
  * @author Sean A. Irvine
  */
-public class A001965 implements Sequence {
+public class A001965 extends Sequence0 {
 
   private static final CR N = CR.FIVE.sqrt().subtract(CR.ONE);
   private long mN = -1;

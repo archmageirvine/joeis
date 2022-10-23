@@ -1,13 +1,13 @@
 package irvine.oeis.a084;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A084275 Pseudo-random numbers: MS C 6.0 version.
  * @author Sean A. Irvine
  */
-public class A084275 implements Sequence {
+public class A084275 extends Sequence0 {
 
   private long mN = 1;
 

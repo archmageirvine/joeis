@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020930 Expansion of 1/(1-4*x)^(19/2).
  * @author Sean A. Irvine
  */
-public class A020930 implements Sequence {
+public class A020930 extends Sequence0 {
 
   private long mN = -1;
 

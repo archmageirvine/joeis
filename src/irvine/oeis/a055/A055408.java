@@ -5,13 +5,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055408 Number of points in N^9 of norm &lt;= n.
  * @author Sean A. Irvine
  */
-public class A055408 implements Sequence {
+public class A055408 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> C1 = Polynomial.create(512, -512);

@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045539 Multiply by 5 and reverse.
  * @author Sean A. Irvine
  */
-public class A045539 implements Sequence {
+public class A045539 extends Sequence0 {
 
   private Z mA = null;
 

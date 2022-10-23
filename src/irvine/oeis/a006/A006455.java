@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicLongArray;
 import irvine.util.array.LongDynamicIntArray;
 import irvine.util.array.LongDynamicLongArray;
@@ -10,7 +10,7 @@ import irvine.util.array.LongDynamicLongArray;
  * A006455 Number of partial orders on {1,2,...,n} that are contained in the usual linear order (i.e., xRy =&gt; x&lt;y).
  * @author Sean A. Irvine
  */
-public class A006455 implements Sequence {
+public class A006455 extends Sequence0 {
 
   // After Knuth's cweb POSET program
 

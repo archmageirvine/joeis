@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A080527 Expansion of e.g.f. exp(3*cosh(x))/e^3 (even powers only).
  * E.g.f.: exp(3*cosh(x)-3), even powers
  * @author Georg Fischer
  */
-public class A080527 implements Sequence {
+public class A080527 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

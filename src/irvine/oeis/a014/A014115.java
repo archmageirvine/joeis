@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014115 Order of a certain Clifford group in dimension 2^n (the automorphism group of the Barnes-Wall lattice for n != 3).
  * @author Sean A. Irvine
  */
-public class A014115 implements Sequence {
+public class A014115 extends Sequence0 {
 
   protected int mN = -1;
 

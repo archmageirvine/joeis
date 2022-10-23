@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005573 Number of walks on cubic lattice (starting from origin and not going below xy plane).
  * @author Sean A. Irvine
  */
-public class A005573 implements Sequence {
+public class A005573 extends Sequence0 {
 
   private long mN = 0;
   private Z mA = Z.ZERO;

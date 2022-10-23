@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028967 Theta series of a.c.c. lattice.
  * @author Sean A. Irvine
  */
-public class A028967 implements Sequence {
+public class A028967 extends Sequence0 {
 
   private long mN = -1;
 

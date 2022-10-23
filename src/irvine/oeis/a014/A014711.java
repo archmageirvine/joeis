@@ -5,13 +5,13 @@ import irvine.math.polynomial.QPolynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014711 Theta series of 16-dimensional 2-modular lattice with min norm 3 and det 256 (the "odd Barnes-Wall lattice").
  * @author Sean A. Irvine
  */
-public class A014711 implements Sequence {
+public class A014711 extends Sequence0 {
 
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;

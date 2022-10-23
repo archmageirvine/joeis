@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027618 c(i,j) is cost of evaluation of edit distance of two strings with lengths i and j, when you use recursion (every call has a unit cost, other computations are free); sequence gives c(n,n).
  * @author Sean A. Irvine
  */
-public class A027618 implements Sequence {
+public class A027618 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ZERO;

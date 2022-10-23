@@ -3,13 +3,14 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001006;
 
 /**
  * A133053 Squares of Motzkin numbers.
  * @author Georg Fischer
  */
-public class A133053 implements Sequence {
+public class A133053 extends Sequence0 {
 
   final Sequence mA001006 = new A001006();
   @Override

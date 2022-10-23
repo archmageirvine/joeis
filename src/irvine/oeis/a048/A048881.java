@@ -4,13 +4,14 @@ package irvine.oeis.a048;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000120;
 
 /**
  * A048881 a(n) = A000120(n+1) - 1 = wt(n+1) - 1.
  * @author Georg Fischer
  */
-public class A048881 implements Sequence {
+public class A048881 extends Sequence0 {
 
   final Sequence mA000120 = new A000120();
   /** Construct the sequence. */

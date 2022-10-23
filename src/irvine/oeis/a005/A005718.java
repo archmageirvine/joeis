@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005718 Quadrinomial coefficients: C(2+n,n) + C(3+n,n) + C(4+n,n).
  * @author Sean A. Irvine
  */
-public class A005718 implements Sequence {
+public class A005718 extends Sequence0 {
 
   private long mN = -1;
 

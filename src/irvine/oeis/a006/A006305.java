@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006305 Taylor series related to one in Ramanujan's Lost Notebook.
  * @author Sean A. Irvine
  */
-public class A006305 implements Sequence {
+public class A006305 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> C = RING.pow(RING.oneMinusXToTheN(1), 2);

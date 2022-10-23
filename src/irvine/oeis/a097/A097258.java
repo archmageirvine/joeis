@@ -3,13 +3,14 @@ package irvine.oeis.a097;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a033.A033048;
 
 /**
  * A097258 Numbers whose set of base 12 digits is {0,B}, where B base 12 = 11 base 10.
  * @author Georg Fischer
  */
-public class A097258 implements Sequence {
+public class A097258 extends Sequence0 {
 
   final Sequence mA033048 = new A033048();
   @Override

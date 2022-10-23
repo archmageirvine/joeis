@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A303913 Array read by antidiagonals: T(n,k) is the number of (planar) unlabeled asymmetric k-ary cacti having n polygons.
  * @author Sean A. Irvine
  */
-public class A303913 implements Sequence {
+public class A303913 extends Sequence0 {
 
   private long mN = 0;
   private long mM = 0;

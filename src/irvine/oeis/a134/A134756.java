@@ -3,13 +3,14 @@ package irvine.oeis.a134;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a010.A010815;
 
 /**
  * A134756 Coefficients of a q-series of Zagier related to the Dedekind eta function.
  * @author Georg Fischer
  */
-public class A134756 implements Sequence {
+public class A134756 extends Sequence0 {
 
   final Sequence mA010815 = new A010815();
   protected long mN;

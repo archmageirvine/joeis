@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055943 Smallest k &gt;1 such that k | Sigma(k) - n.
  * @author Sean A. Irvine
  */
-public class A055943 implements Sequence {
+public class A055943 extends Sequence0 {
 
   private long mN = -1;
 

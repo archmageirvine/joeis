@@ -3,13 +3,14 @@ package irvine.oeis.a206;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a047.A047656;
 
 /**
  * A206601 3^(n(n+1)/2) - 1.
  * @author Georg Fischer
  */
-public class A206601 implements Sequence {
+public class A206601 extends Sequence0 {
 
   final Sequence mA047656 = new A047656();
   /** Construct the sequence. */

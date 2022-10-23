@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038571 Number of times n must be differentiated to reach 0.
  * @author Sean A. Irvine
  */
-public class A038571 implements Sequence {
+public class A038571 extends Sequence0 {
 
   private long mN = -1;
 

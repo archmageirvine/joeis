@@ -2,13 +2,13 @@ package irvine.oeis.a074;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A074476 Largest prime factor of 3^n + 1.
  * @author Georg Fischer
  */
-public class A074476 implements Sequence {
+public class A074476 extends Sequence0 {
 
   private Z mN;
   private int mBase;

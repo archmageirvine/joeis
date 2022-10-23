@@ -2,13 +2,14 @@ package irvine.oeis.a026;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001285;
 
 /**
  * A026491 a(n) = least k &gt; a(n-1) such that A001285(k-1) = A001285(n-1) for n &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A026491 implements Sequence {
+public class A026491 extends Sequence0 {
 
   private final Sequence mA = new A001285();
   private final Sequence mB = new A001285();

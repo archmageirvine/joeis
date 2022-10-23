@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A328785 Expansion of q^(-1/3) * (1/3) * b(q)*c(q)/a(q)^2 in powers of q where a(), b(), c() are cubic AGM functions.
  * @author Sean A. Irvine
  */
-public class A328785 implements Sequence {
+public class A328785 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> Z16 = RING.monomial(Z.valueOf(16), 1);

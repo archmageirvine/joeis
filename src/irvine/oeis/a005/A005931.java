@@ -6,13 +6,13 @@ import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005931 Theta series of the coset of the E_7 lattice in its dual.
  * @author Sean A. Irvine
  */
-public class A005931 implements Sequence {
+public class A005931 extends Sequence0 {
 
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
   private static final Z Z56 = Z.valueOf(56);

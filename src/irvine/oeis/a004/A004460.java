@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004460 Nimsum n + 19.
  * @author Sean A. Irvine
  */
-public class A004460 implements Sequence {
+public class A004460 extends Sequence0 {
 
   private long mN = -1;
 

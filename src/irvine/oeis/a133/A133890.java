@@ -3,13 +3,13 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A133890 Binomial(n+10,n) mod 10.
  * @author Georg Fischer
  */
-public class A133890 implements Sequence {
+public class A133890 extends Sequence0 {
 
   protected Z mN;
 

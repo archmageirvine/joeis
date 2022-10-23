@@ -3,12 +3,13 @@ package irvine.oeis.a064;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a048.A048766;
 /**
  * A064524 Number of noncubes &lt;= n.
  * @author Georg Fischer
  */
-public class A064524 implements Sequence {
+public class A064524 extends Sequence0 {
 
   private final Sequence mA048766 = new A048766();
   protected long mN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000266 Expansion of e.g.f. exp(-x^2/2) / (1-x).
  * @author Sean A. Irvine
  */
-public class A000266 implements Sequence {
+public class A000266 extends Sequence0 {
 
   private int mN = -1;
   private Z mA = Z.ONE;

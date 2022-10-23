@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007680 a(n) = (2n+1)*n!.
  * @author Sean A. Irvine
  */
-public class A007680 implements Sequence {
+public class A007680 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.ONE;

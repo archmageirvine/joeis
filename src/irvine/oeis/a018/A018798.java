@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018798 Smallest 4th power that begins with n.
  * @author Sean A. Irvine
  */
-public class A018798 implements Sequence {
+public class A018798 extends Sequence0 {
 
   private long mN = -1;
 

@@ -3,12 +3,13 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a048.A048762;
 /**
  * A055400 Cube excess: difference between n and largest cube &lt;= n.
  * @author Georg Fischer
  */
-public class A055400 implements Sequence {
+public class A055400 extends Sequence0 {
 
   private final Sequence mA048762 = new A048762();
   protected long mN;

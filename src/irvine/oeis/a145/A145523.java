@@ -2,13 +2,14 @@ package irvine.oeis.a145;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 
 /**
  * A145523 Least integer k &gt; 0 such that A000041(k) is divisible by 2^n.
  * @author Sean A. Irvine
  */
-public class A145523 implements Sequence {
+public class A145523 extends Sequence0 {
 
   private final Sequence mA41 = new A000041();
   {

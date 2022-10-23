@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A050949 e expressed in base Pi: e = Sum a(i)*Pi^(-i), i=0,1,2,...
  * @author Sean A. Irvine
  */
-public class A050949 implements Sequence {
+public class A050949 extends Sequence0 {
 
   private CR mA = CR.E;
 

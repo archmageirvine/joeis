@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058124 n^(n^n)-(n^n)^n with 0^0=1.
  * @author Sean A. Irvine
  */
-public class A058124 implements Sequence {
+public class A058124 extends Sequence0 {
 
   private long mN = -1;
 

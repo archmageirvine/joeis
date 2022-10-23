@@ -2,13 +2,13 @@ package irvine.oeis.a331;
 
 import irvine.math.polynomial.PalmerSymPowerCycleIndex;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A331508 Array read by antidiagonals: A(n,k) is the number of nonisomorphic T_0 n-regular set multipartitions (multisets of sets) on a k-set.
  * @author Sean A. Irvine
  */
-public class A331508 implements Sequence {
+public class A331508 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

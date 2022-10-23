@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013163 Expansion of e.g.f.: arctanh(arctanh(x)+log(x+1))=2*x-1/2!*x^2+20/3!*x^3-54/4!*x^4...
  * @author Sean A. Irvine
  */
-public class A013163 implements Sequence {
+public class A013163 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

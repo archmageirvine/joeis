@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028380 a_n = - sum_{i=1..n-1} C(i+1, n-i) (-1)^(n-i) a_i.
  * @author Sean A. Irvine
  */
-public class A028380 implements Sequence {
+public class A028380 extends Sequence0 {
 
   // Using interpretation of R. J. Mathar
   // Do not use this to extend the sequence

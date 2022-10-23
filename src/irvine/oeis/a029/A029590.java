@@ -2,13 +2,14 @@ package irvine.oeis.a029;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a120.A120944;
 
 /**
  * A029590 For n&gt;0, a(n) is the least quasi-Carmichael number to base n; a(0) = least composite squarefree integer.
  * @author Sean A. Irvine
  */
-public class A029590 implements Sequence {
+public class A029590 extends Sequence0 {
 
   private long mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002667 Continued cotangent for Pi.
  * @author Sean A. Irvine
  */
-public class A002667 implements Sequence {
+public class A002667 extends Sequence0 {
 
   private CR mB = null;
 

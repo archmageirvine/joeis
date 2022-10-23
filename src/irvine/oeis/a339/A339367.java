@@ -3,6 +3,7 @@ package irvine.oeis.a339;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a033.A033461;
 import irvine.oeis.a276.A276516;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a276.A276516;
  * A339367 Number of partitions of n into an odd number of distinct squares.
  * @author Georg Fischer
  */
-public class A339367 implements Sequence {
+public class A339367 extends Sequence0 {
 
   final Sequence mA033461 = new A033461();
   final Sequence mA276516 = new A276516();

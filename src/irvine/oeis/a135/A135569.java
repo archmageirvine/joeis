@@ -3,13 +3,14 @@ package irvine.oeis.a135;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000120;
 
 /**
  * A135569 a(n) = S2(n)*2^n; where S2(n) is digit sum of n, n in binary notation.
  * @author Georg Fischer
  */
-public class A135569 implements Sequence {
+public class A135569 extends Sequence0 {
 
   final Sequence mA000120 = new A000120();
   protected long mN;

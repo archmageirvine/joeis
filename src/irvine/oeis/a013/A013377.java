@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013377 sin(sin(x)-arcsinh(x)) = -8/5!*x^5+224/7!*x^7-11024/9!*x^9...
  * @author Sean A. Irvine
  */
-public class A013377 implements Sequence {
+public class A013377 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

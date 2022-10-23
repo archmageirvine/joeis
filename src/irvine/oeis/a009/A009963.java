@@ -2,13 +2,13 @@ package irvine.oeis.a009;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A009963 Triangle of numbers n!(n-1)!...(n-k+1)!/(1!2!...k!).
  * @author Sean A. Irvine
  */
-public class A009963 implements Sequence {
+public class A009963 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

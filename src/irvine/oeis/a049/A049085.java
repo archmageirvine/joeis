@@ -5,13 +5,13 @@ import java.util.List;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049085 Irregular table T(n,k) = maximal part of the k-th partition of n, when listed in Abramowitz-Stegun order (as in A036043).
  * @author Sean A. Irvine
  */
-public class A049085 implements Sequence {
+public class A049085 extends Sequence0 {
 
   private int mN = 0;
   private int mM = -1;

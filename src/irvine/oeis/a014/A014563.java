@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014563 a(n+1) is the smallest number &gt; a(n) such that the digits of a(n)^2 are all (with multiplicity) contained in the digits of a(n+1)^2, with a(0)=1.
  * @author Sean A. Irvine
  */
-public class A014563 implements Sequence {
+public class A014563 extends Sequence0 {
 
   private Z mA = null;
 

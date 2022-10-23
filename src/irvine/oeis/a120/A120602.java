@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A120602 G.f. satisfies: 31*A(x) = 30 + 125*x + A(x)^6, starting with [1,5,15].
  * @author Georg Fischer
  */
-public class A120602 implements Sequence {
+public class A120602 extends Sequence0 {
 
   private int mN;
   private final int mFa;

@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A272468 E.g.f.: ( (sin(2*x) + sin(3*x)) / sin(5*x) )^(1/6).
  * E.g.f.: ( (cos(2*x) + cos(3*x)) / (1 + cos(5*x)) )^(1/6), even powers
  * @author Georg Fischer
  */
-public class A272468 implements Sequence {
+public class A272468 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

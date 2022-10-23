@@ -3,13 +3,14 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a011.A011371;
 import irvine.oeis.a054.A054861;
 /**
  * A088244 Number of 3-smooth divisors of n!.
  * @author Georg Fischer
  */
-public class A088244 implements Sequence {
+public class A088244 extends Sequence0 {
 
   private final Sequence mA011371 = new A011371();
   private final Sequence mA054861 = new A054861();

@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059976 Number of 3 X 3 determinants with elements from {0,...,n} and having the value zero.
  * @author Sean A. Irvine
  */
-public class A059976 implements Sequence {
+public class A059976 extends Sequence0 {
 
   private long mN = -1;
 

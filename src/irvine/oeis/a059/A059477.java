@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059477 3-enumeration of n X n alternating-sign matrices.
  * @author Sean A. Irvine
  */
-public class A059477 implements Sequence {
+public class A059477 extends Sequence0 {
 
   private int mN = -1;
 

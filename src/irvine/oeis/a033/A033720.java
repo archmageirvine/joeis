@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A033720 Product theta3(q^d); d | 8.
  * @author Sean A. Irvine
  */
-public class A033720 implements Sequence {
+public class A033720 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;

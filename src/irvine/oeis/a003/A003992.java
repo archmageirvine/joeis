@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003992 Square array read by upwards antidiagonals: T(n,k) = n^k for n &gt;= 0, k &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A003992 implements Sequence {
+public class A003992 extends Sequence0 {
 
   private int mRow = -1;
   private int mCol = -1;

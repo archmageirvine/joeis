@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005164 Number of alternating sign 2n+1 X 2n+1 matrices invariant under all symmetries of the square.
  * @author Sean A. Irvine
  */
-public class A005164 implements Sequence {
+public class A005164 extends Sequence0 {
 
   // An explicit search, we use 1, 2, 3 to denote the values in the matrix
   // reserving 0 for an unfilled cell.  Simple search that attempts to

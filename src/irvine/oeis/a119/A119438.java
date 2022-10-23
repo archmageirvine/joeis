@@ -3,13 +3,14 @@ package irvine.oeis.a119;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a018.A018808;
 
 /**
  * A119438 Number of sets of points determined by the intersection of a line with an n X n grid of points.
  * @author Georg Fischer
  */
-public class A119438 implements Sequence {
+public class A119438 extends Sequence0 {
 
   final Sequence mA018808 = new A018808();
   protected long mN;

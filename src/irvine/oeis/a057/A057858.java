@@ -3,12 +3,13 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002110;
 /**
  * A057858 Number of residue classes modulo n-th primorial number which contain only composite numbers.
  * @author Georg Fischer
  */
-public class A057858 implements Sequence {
+public class A057858 extends Sequence0 {
 
   private final Sequence mA002110 = new A002110();
   private final Sequence mA057857 = new A057857();

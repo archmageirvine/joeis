@@ -3,13 +3,14 @@ package irvine.oeis.a178;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005260;
 
 /**
  * A178824 a(n) = Sum_{k=0..n} binomial(n,k)^4/(n+1).
  * @author Georg Fischer
  */
-public class A178824 implements Sequence {
+public class A178824 extends Sequence0 {
 
   final Sequence mA005260 = new A005260();
   protected long mN;

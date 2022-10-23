@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014120 Smallest number of persistence n over product-of-nonzero-digits function.
  * @author Sean A. Irvine
  */
-public class A014120 implements Sequence {
+public class A014120 extends Sequence0 {
 
   private static final long[] SMALL_CASES = {0, 10, 25, 39, 77, 679};
   private int mN = -1;

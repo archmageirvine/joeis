@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002137 Number of n X n symmetric matrices with nonnegative integer entries, trace 0 and all row sums 2.
  * @author Sean A. Irvine
  */
-public class A002137 implements Sequence {
+public class A002137 extends Sequence0 {
 
   private Z mA = Z.NEG_ONE;
   private Z mB = Z.ZERO;

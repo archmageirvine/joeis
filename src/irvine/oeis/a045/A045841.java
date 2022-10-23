@@ -4,14 +4,14 @@ import java.util.Arrays;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
  * A045841 Number of distinct odd numbers formed from the digits of n.
  * @author Sean A. Irvine
  */
-public class A045841 implements Sequence {
+public class A045841 extends Sequence0 {
 
   private long mN = -1;
 

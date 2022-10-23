@@ -6,14 +6,14 @@ import java.util.TreeSet;
 import irvine.math.Comparators;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
  * A055092 Order of each permutation given in reversed colexicographic ordering A055089, i.e., the least common multiple of their cycle lengths.
  * @author Sean A. Irvine
  */
-public class A055092 implements Sequence {
+public class A055092 extends Sequence0 {
 
   private int mN = 1;
   private final TreeSet<int[]> mReverseColex = new TreeSet<>(Comparators.REVERSE_COLEXICOGRAPHIC);

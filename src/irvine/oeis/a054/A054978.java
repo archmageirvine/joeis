@@ -5,13 +5,14 @@ import java.util.List;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000959;
 
 /**
  * A054978 Obtained from sequence of lucky numbers (A000959) by taking iterated absolute value differences of terms and extracting the leading diagonal.
  * @author Sean A. Irvine
  */
-public class A054978 implements Sequence {
+public class A054978 extends Sequence0 {
 
   private final Sequence mLucky = new A000959();
   private final List<Z> mDiagonal = new ArrayList<>();

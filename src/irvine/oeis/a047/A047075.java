@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000108;
 
 /**
  * A047075 All differences C(j)-C(i), j&gt;i, of Catalan numbers A000108.
  * @author Sean A. Irvine
  */
-public class A047075 implements Sequence {
+public class A047075 extends Sequence0 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final MemorySequence mCatalan = MemorySequence.cachedSequence(new A000108());

@@ -3,13 +3,14 @@ package irvine.oeis.a082;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a025.A025480;
 
 /**
  * A082392 Expansion of (1/x) * sum(k&gt;=0, x^2^k/(1-2x^2^(k+1))).
  * @author Georg Fischer
  */
-public class A082392 implements Sequence {
+public class A082392 extends Sequence0 {
 
   final Sequence mA025480 = new A025480();
   @Override

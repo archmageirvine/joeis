@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027858 Triangle of "Harmonic Coefficients" T(n,k), read by rows: (Sum_{i=1..n} T(n,i) * k^i) * k! / ((n+k)! * n!) = (Sum_{i=1..k} (1/i-1/(i+n)) = n * (Sum_{i=1..k} 1/(i*(i+n)))).
  * @author Sean A. Irvine
  */
-public class A027858 implements Sequence {
+public class A027858 extends Sequence0 {
 
   private int mN = 0;
   private int mM = 0;

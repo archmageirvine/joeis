@@ -2,13 +2,13 @@ package irvine.oeis.a015;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A015030 q-Catalan numbers (binomial version) for q=2.
  * @author Sean A. Irvine
  */
-public class A015030 implements Sequence {
+public class A015030 extends Sequence0 {
 
   private long mN = -1;
   private Z mT = Z.ONE;

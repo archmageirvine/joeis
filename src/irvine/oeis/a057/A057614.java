@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057614 a(n+1) = a(n)/2 if 2|a(n), a(n)/3 if 3|a(n), a(n)/5 if 5|a(n), a(n)/7 if 7|a(n), otherwise 11*a(n)+1.
  * @author Sean A. Irvine
  */
-public class A057614 implements Sequence {
+public class A057614 extends Sequence0 {
 
   private long mN = 0;
 

@@ -8,13 +8,13 @@ import irvine.math.nauty.NautySet;
 import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006903 Number of triangle-free trivalent (or cubic) graphs with 2n labeled nodes.
  * @author Sean A. Irvine
  */
-public class A006903 implements Sequence, GraphProcessor {
+public class A006903 extends Sequence0 implements GraphProcessor {
 
   // Cf. A014371
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018896 a(n) = ( a(n-1)*a(n-7) + a(n-4)^2 ) / a(n-8); a(0) = ... = a(7) = 1.
  * @author Sean A. Irvine
  */
-public class A018896 implements Sequence {
+public class A018896 extends Sequence0 {
 
   private final Z[] mA = new Z[8];
 

@@ -4,12 +4,13 @@ package irvine.oeis.a188;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A188527 a(n) = A188526(n) / 7.
  * @author Georg Fischer
  */
-public class A188527 implements Sequence {
+public class A188527 extends Sequence0 {
 
   final Sequence mA188526 = new A188526();
   @Override

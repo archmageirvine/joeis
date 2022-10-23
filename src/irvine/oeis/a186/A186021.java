@@ -3,6 +3,7 @@ package irvine.oeis.a186;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000110;
 import irvine.oeis.a040.A040000;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a040.A040000;
  * A186021 a(n) = Bell(n)*(2 - 0^n).
  * @author Georg Fischer
  */
-public class A186021 implements Sequence {
+public class A186021 extends Sequence0 {
 
   final Sequence mA000110 = new A000110();
   final Sequence mA040000 = new A040000();

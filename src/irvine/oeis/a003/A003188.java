@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003188 Decimal equivalent of Gray code for n.
  * @author Sean A. Irvine
  */
-public class A003188 implements Sequence {
+public class A003188 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

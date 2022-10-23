@@ -4,13 +4,13 @@ import java.util.LinkedList;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010906 Inverse Aronson transform of squares.
  * @author Sean A. Irvine
  */
-public class A010906 implements Sequence {
+public class A010906 extends Sequence0 {
 
   private LinkedList<Z> mList = new LinkedList<>();
   private long mN = -1;

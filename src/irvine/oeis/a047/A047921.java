@@ -4,14 +4,14 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002628;
 
 /**
  * A047921 Triangle of numbers a(n,k) = number of permutations on n letters containing k 3-sequences (n &gt;= 0, 0&lt;=k&lt;=max(0,n-2)).
  * @author Sean A. Irvine
  */
-public class A047921 implements Sequence {
+public class A047921 extends Sequence0 {
 
   private final MemorySequence mCol0 = MemorySequence.cachedSequence(new A002628());
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

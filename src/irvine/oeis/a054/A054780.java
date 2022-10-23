@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054780 Number of n-covers of a labeled n-set.
  * @author Sean A. Irvine
  */
-public class A054780 implements Sequence {
+public class A054780 extends Sequence0 {
 
   private int mN = -1;
 

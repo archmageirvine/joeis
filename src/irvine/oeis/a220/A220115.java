@@ -3,6 +3,7 @@ package irvine.oeis.a220;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000120;
 import irvine.oeis.a007.A007895;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007895;
  * A220115 a(n) = A000120(n) - A007895(n), the number of 1's in binary expansion of n minus the number of terms in Zeckendorf representation of n.
  * @author Georg Fischer
  */
-public class A220115 implements Sequence {
+public class A220115 extends Sequence0 {
 
   final Sequence mA000120 = new A000120();
   final Sequence mA007895 = new A007895();

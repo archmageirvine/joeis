@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000138 Expansion of e.g.f. exp(-x^4/4)/(1-x).
  * @author Sean A. Irvine
  */
-public class A000138 implements Sequence {
+public class A000138 extends Sequence0 {
 
   private final MemoryFactorial mFactorial = MemoryFactorial.SINGLETON;
   private Z mA = Z.ONE;

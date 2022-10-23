@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018247 The 10-adic integer x = ...8212890625 satisfying x^2 = x.
  * @author Sean A. Irvine
  */
-public class A018247 implements Sequence {
+public class A018247 extends Sequence0 {
 
   private Z mA = Z.FIVE;
   private Z mT = Z.ONE;

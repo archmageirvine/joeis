@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import chesspresso.move.IllegalMoveException;
 import chesspresso.position.Position;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048987 Number of possible chess games at the end of the n-th ply.
  * @author Sean A. Irvine
  */
-public class A048987 implements Sequence {
+public class A048987 extends Sequence0 {
 
   // Starting point was example code at https://luckytoilet.wordpress.com/tag/chesspresso/
 

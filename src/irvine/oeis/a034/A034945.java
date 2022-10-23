@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034945 Successive approximations to 7-adic integer sqrt(2).
  * @author Sean A. Irvine
  */
-public class A034945 implements Sequence {
+public class A034945 extends Sequence0 {
 
   private Z mM = Z.SEVEN;
   private Z mPrev = null;

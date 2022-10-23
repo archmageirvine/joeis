@@ -3,13 +3,13 @@ package irvine.oeis.a013;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013595 Irregular triangle read by rows: coefficients of cyclotomic polynomial Phi_n(x) (exponents in increasing order).
  * @author Sean A. Irvine
  */
-public class A013595 implements Sequence {
+public class A013595 extends Sequence0 {
 
   private Polynomial<Z> mCyclotomicPolynomial = Polynomial.create(0, 1);
   private int mN = 0;

@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000209 Nearest integer to tan n.
  * @author Sean A. Irvine
  */
-public class A000209 implements Sequence {
+public class A000209 extends Sequence0 {
 
   private static final double TOLERANCE = 0.000000001;
   private long mN = -1;

@@ -3,13 +3,14 @@ package irvine.oeis.a168;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001591;
 
 /**
  * A168089 a(n) = 2^pentanacci(n).
  * @author Georg Fischer
  */
-public class A168089 implements Sequence {
+public class A168089 extends Sequence0 {
 
   final Sequence mA001591 = new A001591();
   @Override

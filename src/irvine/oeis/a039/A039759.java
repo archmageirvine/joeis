@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A039759 Number of edges in the Hasse diagrams for the B-analogs of the partition lattices.
  * @author Sean A. Irvine
  */
-public class A039759 implements Sequence {
+public class A039759 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> TWO_X = RING.monomial(Q.TWO, 1);

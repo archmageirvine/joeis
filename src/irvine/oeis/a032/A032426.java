@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A032426 Sum_{n&gt;=0} a(n)/10^n = exp(1).
  * @author Sean A. Irvine
  */
-public class A032426 implements Sequence {
+public class A032426 extends Sequence0 {
 
   // From Simon Plouffe:
   //

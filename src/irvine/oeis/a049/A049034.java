@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049034 Scaled sums of odd reciprocals.
  * @author Sean A. Irvine
  */
-public class A049034 implements Sequence {
+public class A049034 extends Sequence0 {
 
   private long mN = -1;
   private Q mSum = Q.ZERO;

@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007825 Number of n step self-avoiding walks on 3 X infinity grid starting from (0,1).
  * @author Sean A. Irvine
  */
-public class A007825 implements Sequence {
+public class A007825 extends Sequence0 {
 
   // Coordinate of a point is (x,y).
   // The six neighbours of (x,y) are (x+1,y), (x-1,y), (x,y+1), (x,y-1).

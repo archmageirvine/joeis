@@ -3,6 +3,7 @@ package irvine.oeis.a249;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000142;
 import irvine.oeis.a000.A000244;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000244;
  * A249945 a(n) = n! + 3^n.
  * @author Georg Fischer
  */
-public class A249945 implements Sequence {
+public class A249945 extends Sequence0 {
 
   final Sequence mA000142 = new A000142();
   final Sequence mA000244 = new A000244();

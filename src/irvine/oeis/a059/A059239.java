@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059239 Numerators of coefficients of asymptotic expansion related to iterated sine function.
  * @author Sean A. Irvine
  */
-public class A059239 implements Sequence {
+public class A059239 extends Sequence0 {
 
   private final BernoulliSequence mB = new BernoulliSequence(0);
   private int mN = -1;

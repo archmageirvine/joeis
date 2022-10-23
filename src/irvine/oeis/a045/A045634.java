@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045634 Number of ways in which n can be partitioned as a sum of a square and cube.
  * @author Sean A. Irvine
  */
-public class A045634 implements Sequence {
+public class A045634 extends Sequence0 {
 
   private long mN = -1;
 

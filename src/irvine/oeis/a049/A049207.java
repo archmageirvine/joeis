@@ -1,13 +1,13 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049207 Array T(m,n) of products of pronic numbers m(m+1) * n(n+1) read by antidiagonals ("bipronics").
  * @author Sean A. Irvine
  */
-public class A049207 implements Sequence {
+public class A049207 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

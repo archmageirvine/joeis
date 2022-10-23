@@ -5,13 +5,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000270 For n &gt;= 2, a(n) = b(n+1)+b(n)+b(n-1), where the b(i) are the m\u00e9nage numbers A000179; a(0)=a(1)=1.
  * @author Sean A. Irvine
  */
-public class A000270 implements Sequence {
+public class A000270 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> DEN = Polynomial.create(1, 2, 1);

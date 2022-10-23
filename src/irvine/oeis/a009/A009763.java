@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A009763 a(n) is (n+1)!*(n+2)! times coefficient of x^n in (log(1-x))^-1.
  * @author Sean A. Irvine
  */
-public class A009763 implements Sequence {
+public class A009763 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> NEG_X = RING.negate(RING.x());

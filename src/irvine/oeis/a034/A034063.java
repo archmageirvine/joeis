@@ -4,13 +4,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034063 Decimal part of a(n)^(1/8) starts with n (8th powers excluded).
  * @author Sean A. Irvine
  */
-public class A034063 implements Sequence {
+public class A034063 extends Sequence0 {
 
   private static final CR C = CR.valueOf(new Q(1, 8));
   private long mN = -1;

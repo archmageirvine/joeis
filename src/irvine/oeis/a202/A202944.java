@@ -1,13 +1,13 @@
 package irvine.oeis.a202;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A202944  G.f.: Sum_{n&gt;=0} (n+1)*(n+2)/2 * 2^(n*(n-1)) * x^n.
  * @author Georg Fischer
  */
-public class A202944 implements Sequence {
+public class A202944 extends Sequence0 {
 
   private int mN = -1;
 

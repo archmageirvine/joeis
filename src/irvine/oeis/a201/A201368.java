@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A201368 E.g.f.: 4*exp(4*x) / (5 - exp(4*x)).
  * E.g.f.: 4*exp(4*x) / (5 - exp(4*x))
  * @author Georg Fischer
  */
-public class A201368 implements Sequence {
+public class A201368 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

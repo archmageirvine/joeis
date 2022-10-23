@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052249 Triangle T(n,k) (n &gt;= 1, k &gt;= 1) giving dimension of bigrading of Connes-Moscovici noncocommutative algebra.
  * @author Sean A. Irvine
  */
-public class A052249 implements Sequence {
+public class A052249 extends Sequence0 {
 
   private int mN = 0;
   private int mM = 0;

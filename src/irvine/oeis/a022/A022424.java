@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A022424 Solution a( ) of the complementary equation a(n) = b(n-1) + b(n-2), where a(0) = 1, a(1) = 2; see Comments.
  * @author Sean A. Irvine
  */
-public class A022424 implements Sequence {
+public class A022424 extends Sequence0 {
 
   private final TreeSet<Long> mS = new TreeSet<>();
   private final long mA0;

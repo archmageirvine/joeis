@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006287 Sum of squares of digits of ternary representation of n.
  * @author Sean A. Irvine
  */
-public class A006287 implements Sequence {
+public class A006287 extends Sequence0 {
 
   private long mN = -1;
 

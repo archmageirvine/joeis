@@ -6,13 +6,13 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A178446 Number of perfect matchings in the Triangle Graph of order n, reduced by the spire vertex if n mod 4 equals 1 or 2.
  * @author Sean A. Irvine
  */
-public class A178446 implements Sequence {
+public class A178446 extends Sequence0 {
 
   // After Alois P. Heinz
 

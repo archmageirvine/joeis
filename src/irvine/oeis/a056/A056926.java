@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056926 a(n) = sqrt(n) if n is a square, otherwise 1.
  * @author Sean A. Irvine
  */
-public class A056926 implements Sequence {
+public class A056926 extends Sequence0 {
 
   private long mN = -1;
 

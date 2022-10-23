@@ -3,13 +3,13 @@ package irvine.oeis.a004;
 import java.io.Serializable;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004396 One even number followed by two odd numbers.
  * @author Sean A. Irvine
  */
-public class A004396 implements Sequence, Serializable {
+public class A004396 extends Sequence0 implements Serializable {
 
   private Z mN = Z.NEG_ONE;
   private int mCount = 0;

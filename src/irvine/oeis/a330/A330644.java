@@ -3,13 +3,14 @@ package irvine.oeis.a330;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000701;
 
 /**
  * A330644 Number of non-self-conjugate partitions of n.
  * @author Georg Fischer
  */
-public class A330644 implements Sequence {
+public class A330644 extends Sequence0 {
 
   final Sequence mA000701 = new A000701();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034968 Minimal number of factorials that add to n.
  * @author Sean A. Irvine
  */
-public class A034968 implements Sequence {
+public class A034968 extends Sequence0 {
 
   private long mN = -1;
 

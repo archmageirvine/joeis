@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046825 Numerator of Sum_{k=0..n} 1/binomial(n,k).
  * @author Sean A. Irvine
  */
-public class A046825 implements Sequence {
+public class A046825 extends Sequence0 {
 
   private long mN = -1;
 

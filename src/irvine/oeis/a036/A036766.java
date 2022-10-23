@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036766 Number of ordered rooted trees with n non-root nodes and all outdegrees &lt;= four.
  * @author Sean A. Irvine
  */
-public class A036766 implements Sequence {
+public class A036766 extends Sequence0 {
 
   private long mN = 0;
 

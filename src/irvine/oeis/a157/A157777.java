@@ -5,14 +5,14 @@ package irvine.oeis.a157;
 import irvine.math.polynomial.EulerPolynomials;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A157777 Numerator of Euler(n, 13/32).
  * @author Georg Fischer
  */
-public class A157777 implements Sequence {
+public class A157777 extends Sequence0 {
 
   private int mN = -1;
   private final Q mFract = new Q(13, 32);

@@ -2,12 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054352 Lengths of successive generations of the Kolakoski sequence A000002.
  * @author Sean A. Irvine
  */
-public class A054352 implements Sequence {
+public class A054352 extends Sequence0 {
 
   private final Sequence mA = new A054353();
   private long mS = 1;

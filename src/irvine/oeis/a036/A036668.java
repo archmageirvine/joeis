@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036668 Hati numbers: of form 2^i*3^j*k, i+j even, (k,6)=1.
  * @author Sean A. Irvine
  */
-public class A036668 implements Sequence {
+public class A036668 extends Sequence0 {
 
   private final TreeMap<Z, Long> mPriority = new TreeMap<>();
   {

@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051490 a(n) = n^(n+2)*(n+2)^n.
  * @author Sean A. Irvine
  */
-public class A051490 implements Sequence {
+public class A051490 extends Sequence0 {
 
   private int mN = -1;
 

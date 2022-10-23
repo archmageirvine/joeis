@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006721 Somos-5 sequence: a(n) = (a(n-1) * a(n-4) + a(n-2) * a(n-3)) / a(n-5), with a(0) = a(1) = a(2) = a(3) = a(4) = 1.
  * @author Sean A. Irvine
  */
-public class A006721 implements Sequence {
+public class A006721 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

@@ -1,14 +1,14 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.English;
 
 /**
  * A037196 Number of vowels in the American English name of n.
  * @author Sean A. Irvine
  */
-public class A037196 implements Sequence {
+public class A037196 extends Sequence0 {
 
   private static final String VOWELS = "aeiou";
   private int mN = -1;

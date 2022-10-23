@@ -3,6 +3,7 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000312;
 import irvine.oeis.a000.A000670;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000670;
  * A133286 a(n) is the difference by which n^n overestimates the value of (1/2) Sum_{k&gt;=0} k^n/2^k.
  * @author Georg Fischer
  */
-public class A133286 implements Sequence {
+public class A133286 extends Sequence0 {
 
   final Sequence mA000312 = new A000312();
   final Sequence mA000670 = new A000670();

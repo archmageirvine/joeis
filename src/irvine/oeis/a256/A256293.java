@@ -1,13 +1,13 @@
 package irvine.oeis.a256;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A256293 Apply the transformation 0 -&gt; 1 -&gt; 2 -&gt; 0 to the digits of n written in base 3, then convert back to base 10.
  * @author Georg Fischer
  */
-public class A256293 implements Sequence {
+public class A256293 extends Sequence0 {
 
   private int mN;
   private final int mBase;

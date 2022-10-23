@@ -3,12 +3,13 @@ package irvine.oeis.a346;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005828;
 /**
  * A346625 a(0) = 8; for n &gt; 0, a(n) = a(n-1)^2 - 2.
  * @author Georg Fischer
  */
-public class A346625 implements Sequence {
+public class A346625 extends Sequence0 {
 
   private final Sequence mA005828 = new A005828();
   @Override

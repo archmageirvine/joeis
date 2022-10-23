@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008057 Smallest sum of an addition chain for 2n+1.
  * @author Sean A. Irvine
  */
-public class A008057 implements Sequence {
+public class A008057 extends Sequence0 {
 
   // Note method of Charles R. Greathouse IV is much faster than this
 

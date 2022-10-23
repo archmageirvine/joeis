@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046090 Consider all Pythagorean triples (X,X+1,Z) ordered by increasing Z; sequence gives X+1 values.
  * @author Sean A. Irvine
  */
-public class A046090 implements Sequence {
+public class A046090 extends Sequence0 {
 
   private Z mA = Z.valueOf(-3);
   private Z mB = Z.ZERO;

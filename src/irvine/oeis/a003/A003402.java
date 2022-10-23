@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003402 G.f.: 1/((1-x)*(1-x^2)*(1-x^3)^2*(1-x^4)*(1-x^5)).
  * @author Sean A. Irvine
  */
-public class A003402 implements Sequence {
+public class A003402 extends Sequence0 {
 
   private Z mA = Z.ZERO;
   private Z mB0 = Z.ZERO;

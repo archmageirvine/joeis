@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.math.LongUtils;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046145 Smallest primitive root modulo n, or 0 if no root exists.
  * @author Sean A. Irvine
  */
-public class A046145 implements Sequence {
+public class A046145 extends Sequence0 {
 
   private long mN = -1;
 

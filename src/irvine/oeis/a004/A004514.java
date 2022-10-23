@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004514 Generalized nim sum n + n in base 4.
  * @author Sean A. Irvine
  */
-public class A004514 implements Sequence {
+public class A004514 extends Sequence0 {
 
   private int r(final String s, final int n) {
     return n < 0 ? 0 : s.charAt(n) - '0';

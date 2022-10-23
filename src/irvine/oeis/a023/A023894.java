@@ -5,13 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000040;
 
 /**
  * A023894 Number of partitions of n into prime power parts (1 excluded).
  * @author Sean A. Irvine
  */
-public class A023894 implements Sequence {
+public class A023894 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;

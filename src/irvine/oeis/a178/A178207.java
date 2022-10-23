@@ -3,6 +3,7 @@ package irvine.oeis.a178;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000120;
 import irvine.oeis.a008.A008586;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a008.A008586;
  * A178207 a(n) = 4*n - 2*A000120(n) + 1 where A000120(n) = number of nonzero digits in the binary representation of n.
  * @author Georg Fischer
  */
-public class A178207 implements Sequence {
+public class A178207 extends Sequence0 {
 
   final Sequence mA000120 = new A000120();
   final Sequence mA008586 = new A008586();

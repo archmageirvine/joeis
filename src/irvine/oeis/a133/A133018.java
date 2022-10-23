@@ -3,13 +3,14 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 
 /**
  * A133018 Partition number of n, raised to power n.
  * @author Georg Fischer
  */
-public class A133018 implements Sequence {
+public class A133018 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   protected long mN;

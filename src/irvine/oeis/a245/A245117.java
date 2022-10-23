@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A245117 E.g.f.: (cos(2*x) + sin(2*x)*exp(x)) / (cos(2*x)*exp(x) - sin(2*x)).
  * E.g.f.: (cos(2*x) + sin(2*x)*exp(x)) / (cos(2*x)*exp(x) - sin(2*x))
  * @author Georg Fischer
  */
-public class A245117 implements Sequence {
+public class A245117 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

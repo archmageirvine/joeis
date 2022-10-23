@@ -10,13 +10,13 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002890 Low temperature series for spin-1/2 Ising partition function on 2D square lattice.
  * @author Sean A. Irvine
  */
-public class A002890 implements Sequence {
+public class A002890 extends Sequence0 {
 
   // Some documentation on the approach taken here is in a002890.tex
 

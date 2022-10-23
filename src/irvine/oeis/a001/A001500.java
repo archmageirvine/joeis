@@ -7,13 +7,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001500 Number of stochastic matrices of integers: n X n arrays of nonnegative integers with all row and column sums equal to 3.
  * @author Sean A. Irvine
  */
-public class A001500 implements Sequence {
+public class A001500 extends Sequence0 {
 
   // This whole generation is ugly and my confidence is not that great that
   // this formula works for higher terms, but it is listed as correct on

@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018104 Powers of fourth root of 20 rounded up.
  * @author Sean A. Irvine
  */
-public class A018104 implements Sequence {
+public class A018104 extends Sequence0 {
 
   private Z mN = null;
 

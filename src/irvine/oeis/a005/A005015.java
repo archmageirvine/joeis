@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005015 a(n) = 11*2^n.
  * @author Sean A. Irvine
  */
-public class A005015 implements Sequence {
+public class A005015 extends Sequence0 {
 
   private Z mA = null;
 

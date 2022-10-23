@@ -3,13 +3,14 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 
 /**
  * A133042 Cubes of partition numbers.
  * @author Georg Fischer
  */
-public class A133042 implements Sequence {
+public class A133042 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   @Override

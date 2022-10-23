@@ -2,6 +2,7 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000290;
 import irvine.oeis.a000.A000415;
 import irvine.oeis.a000.A000419;
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000419;
  * A002828 Least number of squares that add up to n.
  * @author Sean A. Irvine
  */
-public class A002828 implements Sequence {
+public class A002828 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
   private final Sequence mSquares1 = new A000290();

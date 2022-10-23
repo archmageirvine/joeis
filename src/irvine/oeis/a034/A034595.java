@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034595 Concatenation of 'nextprime(a(n)) and a(n)' and 'a(n) and nextprime(a(n))' are both prime.
  * @author Sean A. Irvine
  */
-public class A034595 implements Sequence {
+public class A034595 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

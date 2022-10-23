@@ -3,13 +3,13 @@ package irvine.oeis.a052;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052803 Expansion of e.g.f. (-1 + sqrt(1 + 4*log(1-x)))/(2*log(1-x)).
  * @author Sean A. Irvine
  */
-public class A052803 implements Sequence {
+public class A052803 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

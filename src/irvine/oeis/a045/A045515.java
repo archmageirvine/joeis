@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.RationalUnityExtension;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045515 Number of conjugacy classes of elements of order n in 2.E_7(C).
  * @author Sean A. Irvine
  */
-public class A045515 implements Sequence {
+public class A045515 extends Sequence0 {
 
   private static final RationalUnityExtension E2 = new RationalUnityExtension(2);
   private static final PolynomialRingField<Polynomial<Q>> RING = new PolynomialRingField<>(E2);

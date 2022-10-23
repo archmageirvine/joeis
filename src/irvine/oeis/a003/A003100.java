@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003100 Decimal Gray code for n.
  * @author Sean A. Irvine
  */
-public class A003100 implements Sequence {
+public class A003100 extends Sequence0 {
 
   private long mN = -1;
 

@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A196834 Row sums of Sheffer triangle A193685 (5-restricted Stirling2 numbers).
  * E.g.f.: exp(exp(x)+5*x-1)
  * @author Georg Fischer
  */
-public class A196834 implements Sequence {
+public class A196834 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

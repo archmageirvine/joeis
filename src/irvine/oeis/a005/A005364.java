@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005364 Hoggatt sequence with parameter d=6.
  * @author Sean A. Irvine
  */
-public class A005364 implements Sequence {
+public class A005364 extends Sequence0 {
 
   private long mN = -1;
 

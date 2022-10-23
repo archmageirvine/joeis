@@ -10,13 +10,14 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006351;
 
 /**
  * A036654 Triangle of series-parallel numbers.
  * @author Sean A. Irvine
  */
-public class A036654 implements Sequence {
+public class A036654 extends Sequence0 {
 
   // There must be a better way than this.
 

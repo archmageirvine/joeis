@@ -3,12 +3,13 @@ package irvine.oeis.a254;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a228.A228495;
 /**
  * A254377 Characteristic function of A230709: a(n) = 1 if n is either evil (A001969) or even odious (A128309), otherwise 0 (when n is odd odious).
  * @author Georg Fischer
  */
-public class A254377 implements Sequence {
+public class A254377 extends Sequence0 {
 
   private final Sequence mA228495 = new A228495();
   @Override

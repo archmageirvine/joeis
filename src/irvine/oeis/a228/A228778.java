@@ -3,13 +3,14 @@ package irvine.oeis.a228;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a063.A063896;
 
 /**
  * A228778 a(n) = 2^Fibonacci(n) + 1.
  * @author Georg Fischer
  */
-public class A228778 implements Sequence {
+public class A228778 extends Sequence0 {
 
   final Sequence mA063896 = new A063896();
   @Override

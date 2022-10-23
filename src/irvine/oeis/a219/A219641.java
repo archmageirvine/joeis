@@ -3,13 +3,14 @@ package irvine.oeis.a219;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007895;
 
 /**
  * A219641 a(n) = n minus (number of 1's in Zeckendorf expansion of n).
  * @author Georg Fischer
  */
-public class A219641 implements Sequence {
+public class A219641 extends Sequence0 {
 
   final Sequence mA007895 = new A007895();
   protected long mN;

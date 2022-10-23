@@ -3,6 +3,7 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000142;
 import irvine.oeis.a034.A034841;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a034.A034841;
  * A057599 a(n) = (n^2)!/(n!)^(n+1); number of ways of dividing n^2 labeled items into n unlabeled boxes of n items each.
  * @author Georg Fischer
  */
-public class A057599 implements Sequence {
+public class A057599 extends Sequence0 {
 
   final Sequence mA000142 = new A000142();
   final Sequence mA034841 = new A034841();

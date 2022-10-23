@@ -5,13 +5,13 @@ import irvine.math.group.QPolynomialRingField;
 import irvine.math.polynomial.QPolynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004537 Theta series of 23-dimensional shorter Leech lattice.
  * @author Sean A. Irvine
  */
-public class A004537 implements Sequence {
+public class A004537 extends Sequence0 {
 
   private static final QPolynomialRingField<Z> RING = new QPolynomialRingField<>(IntegerField.SINGLETON);
   private static final Z Z46 = Z.valueOf(46);

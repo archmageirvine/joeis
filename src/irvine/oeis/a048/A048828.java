@@ -2,7 +2,7 @@ package irvine.oeis.a048;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a014.A014221;
 import irvine.oeis.a038.A038081;
 
@@ -10,7 +10,7 @@ import irvine.oeis.a038.A038081;
  * A048828 Number of identity (asymmetric) trees of width n.
  * @author Sean A. Irvine
  */
-public class A048828 implements Sequence {
+public class A048828 extends Sequence0 {
 
   private final MemorySequence mB = MemorySequence.cachedSequence(new A038081());
   private final MemorySequence mC = MemorySequence.cachedSequence(new A014221());

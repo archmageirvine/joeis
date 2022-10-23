@@ -2,13 +2,13 @@ package irvine.oeis.a008;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008653 Theta series of direct sum of 2 copies of hexagonal lattice.
  * @author Sean A. Irvine
  */
-public class A008653 implements Sequence {
+public class A008653 extends Sequence0 {
 
   private long mN = -1;
 

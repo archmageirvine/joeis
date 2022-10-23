@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055982 a(n+1) = a(n) converted to base 10 from base 11.
  * @author Georg Fischer
  */
-public class A055982 implements Sequence {
+public class A055982 extends Sequence0 {
 
   protected Z mAn;
   protected int mSrcBase;

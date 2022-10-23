@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A094351 Rearrangement of integers such that a(0)!*a(1)!*...*a(n)! + 1 is prime.
  * @author Sean A. Irvine
  */
-public class A094351 implements Sequence {
+public class A094351 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Z mProd = Z.ONE;

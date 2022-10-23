@@ -5,14 +5,14 @@ import java.util.TreeSet;
 
 import irvine.math.MemoryFunction;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Pair;
 
 /**
  * A051014 Number of nondividing sets on {1,2,...,n}.
  * @author Sean A. Irvine
  */
-public class A051014 implements Sequence {
+public class A051014 extends Sequence0 {
 
   // After Alois P. Heinz
 

@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A022919 Multinomial coefficients(TOP, BOTTOM), where TOP = n^2, BOTTOM = ( 1 3 5 ... 2n-1 ).
  * @author Sean A. Irvine
  */
-public class A022919 implements Sequence {
+public class A022919 extends Sequence0 {
 
   private int mN = -1;
 

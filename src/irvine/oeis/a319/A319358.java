@@ -3,13 +3,14 @@ package irvine.oeis.a319;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002283;
 
 /**
  * A319358 a(n) = (10^n - 1)^9.
  * @author Georg Fischer
  */
-public class A319358 implements Sequence {
+public class A319358 extends Sequence0 {
 
   final Sequence mA002283 = new A002283();
   @Override

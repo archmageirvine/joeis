@@ -5,13 +5,13 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007154 Spectrum of the free Kleene algebra on n free variables.
  * @author Sean A. Irvine
  */
-public class A007154 implements Sequence {
+public class A007154 extends Sequence0 {
 
   // A ternary logic problem.
   // Each step of the sequence we introduce one more variable into the expressions.

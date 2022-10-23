@@ -4,13 +4,13 @@ import irvine.math.polynomial.BernoulliPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053382 Triangle T(n,k) giving numerator of coefficient of x^(n-k) in Bernoulli polynomial B(n, x), n &gt;= 0, 0&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
-public class A053382 implements Sequence {
+public class A053382 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030456 a(0) = 2; a(n) is smallest prime containing a(n-1) as substring.
  * @author Sean A. Irvine
  */
-public class A030456 implements Sequence {
+public class A030456 extends Sequence0 {
 
   private Z mA = null;
 

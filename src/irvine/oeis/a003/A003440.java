@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003440 Number of binary vectors with restricted repetitions.
  * @author Sean A. Irvine
  */
-public class A003440 implements Sequence {
+public class A003440 extends Sequence0 {
 
   private long mN = -1;
 

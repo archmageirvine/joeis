@@ -7,13 +7,13 @@ import irvine.math.group.MultivariatePolynomialField;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001978 Number of partitions of 3n-1 into n nonnegative integers each no more than 6.
  * @author Sean A. Irvine
  */
-public class A001978 implements Sequence {
+public class A001978 extends Sequence0 {
 
   private static final MultivariatePolynomialField<Z> RING = new MultivariatePolynomialField<>(IntegerField.SINGLETON, 2);
   private static final MultivariatePolynomial<Z> NUM = RING.one();

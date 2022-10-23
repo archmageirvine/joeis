@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.WreathExponentiation;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034195 Number of binary codes of length 10 with n words.
  * @author Sean A. Irvine
  */
-public class A034195 implements Sequence {
+public class A034195 extends Sequence0 {
 
   private final int mBase;
   private final int mLength;

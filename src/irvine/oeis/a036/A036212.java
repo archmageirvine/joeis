@@ -4,13 +4,13 @@ import java.util.TreeMap;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036212 When the 'Summarize preceding term' sequence gets into a cycle.
  * @author Sean A. Irvine
  */
-public class A036212 implements Sequence {
+public class A036212 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

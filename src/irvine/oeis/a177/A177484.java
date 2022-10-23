@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A177484 The number of permutations having one non-overlapping occurrence of 122'1'.
  * E.g.f.: (1/2 + 1/2*exp(x)*cos(x) + 1/4*(1 + exp(2*x) + 2*exp(x)*sin(x)) * tan(x)) * (1 + (-1 + x)*(1/2 + 1/2*exp(x)*cos(x) + 1/4*(1 + exp(2*x) + 2*exp(x)*sin(x))*tan(x)))
  * @author Georg Fischer
  */
-public class A177484 implements Sequence {
+public class A177484 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

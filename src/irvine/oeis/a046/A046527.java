@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046527 A triangle related to A000108 (Catalan) and A000302 (powers of 4).
  * @author Sean A. Irvine
  */
-public class A046527 implements Sequence {
+public class A046527 extends Sequence0 {
 
   protected int mN = -1;
   protected int mM = 0;

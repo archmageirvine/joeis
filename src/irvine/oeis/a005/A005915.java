@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005915 Hexagonal prism numbers: a(n) = (n + 1)*(3*n^2 + 3*n + 1).
  * @author Sean A. Irvine
  */
-public class A005915 implements Sequence {
+public class A005915 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

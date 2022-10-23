@@ -3,6 +3,7 @@ package irvine.oeis.a184;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000607;
 import irvine.oeis.a048.A048165;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a048.A048165;
  * A184199 Number of partitions of n into an odd number of primes.
  * @author Georg Fischer
  */
-public class A184199 implements Sequence {
+public class A184199 extends Sequence0 {
 
   final Sequence mA000607 = new A000607();
   final Sequence mA048165 = new A048165();

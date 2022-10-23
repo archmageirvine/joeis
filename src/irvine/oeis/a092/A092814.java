@@ -4,13 +4,13 @@ package irvine.oeis.a092;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A092814 Schmidt's problem sum for r = 4.
  * @author Georg Fischer
  */
-public class A092814 implements Sequence {
+public class A092814 extends Sequence0 {
 
   private int mN = -1;
 

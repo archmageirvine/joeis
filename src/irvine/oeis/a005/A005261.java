@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005261 a(n) = Sum_{k = 0..n} C(n,k)^5.
  * @author Sean A. Irvine
  */
-public class A005261 implements Sequence {
+public class A005261 extends Sequence0 {
 
   private long mN = -1;
 

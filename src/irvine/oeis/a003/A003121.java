@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003121 Strict sense ballot numbers: n candidates, k-th candidate gets k votes.
  * @author Sean A. Irvine
  */
-public class A003121 implements Sequence {
+public class A003121 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

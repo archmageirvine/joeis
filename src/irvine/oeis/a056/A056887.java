@@ -6,14 +6,14 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a010.A010060;
 
 /**
  * A056887 Determinant of n X n Hankel matrix whose entries are t(i+j), 0 &lt;= i, j &lt; n, where t is the Thue-Morse sequence.
  * @author Sean A. Irvine
  */
-public class A056887 implements Sequence {
+public class A056887 extends Sequence0 {
 
   private final MemorySequence mThueMorse = MemorySequence.cachedSequence(new A010060());
   private int mN = -1;

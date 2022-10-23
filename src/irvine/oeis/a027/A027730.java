@@ -9,13 +9,13 @@ import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027730 Number of independent subsets of nodes in graph formed from n-fold subdivision of tetrahedron.
  * @author Sean A. Irvine
  */
-public class A027730 implements Sequence {
+public class A027730 extends Sequence0 {
 
   private int mN = -1;
 

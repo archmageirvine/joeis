@@ -1,13 +1,13 @@
 package irvine.oeis.a062;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A062971 a(n) = (2*n)^n.
  * @author Georg Fischer
  */
-public class A062971 implements Sequence {
+public class A062971 extends Sequence0 {
 
   protected int mN = -1;
 

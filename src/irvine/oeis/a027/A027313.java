@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027313 a(n) = Sum_{k=0..2n} (k+1) * A026323(n, 2n-k).
  * @author Sean A. Irvine
  */
-public class A027313 implements Sequence {
+public class A027313 extends Sequence0 {
 
   private Z mA = Z.ONE;
 

@@ -1,14 +1,14 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.English;
 
 /**
  * A005606 Position of first letter of n (in English) in alphabet.
  * @author Sean A. Irvine
  */
-public class A005606 implements Sequence {
+public class A005606 extends Sequence0 {
 
   private int mN = -1;
 

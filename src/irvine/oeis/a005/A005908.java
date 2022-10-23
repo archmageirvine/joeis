@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005908 a(n) = floor( phi*a(n-1) ) + floor( phi*a(n-2) ), where phi is the golden ratio.
  * @author Sean A. Irvine
  */
-public class A005908 implements Sequence {
+public class A005908 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

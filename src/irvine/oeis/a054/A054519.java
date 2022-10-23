@@ -3,13 +3,14 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006218;
 
 /**
  * A054519 Number of increasing arithmetic progressions of nonnegative integers ending in n, including those of length 1 or 2.
  * @author Georg Fischer
  */
-public class A054519 implements Sequence {
+public class A054519 extends Sequence0 {
 
   final Sequence mA006218 = new A006218();
   @Override

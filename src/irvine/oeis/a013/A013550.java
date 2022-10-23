@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013550 Numerator of the coefficient of [x^n] in the Taylor expansion exp(cot(x) - cosech(x)).
  * @author Sean A. Irvine
  */
-public class A013550 implements Sequence {
+public class A013550 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A228997 Total sum of the 7th powers of lengths of ascending runs in all permutations of [n].
  * E.g.f.: (exp(x)*(42*x^5+210*x^4+280*x^3+126*x-126)+x+126)/(x-1)^2
  * @author Georg Fischer
  */
-public class A228997 implements Sequence {
+public class A228997 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

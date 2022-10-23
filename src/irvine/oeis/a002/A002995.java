@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002995 Number of unlabeled planar trees (also called plane trees) with n nodes.
  * @author Sean A. Irvine
  */
-public class A002995 implements Sequence {
+public class A002995 extends Sequence0 {
 
   private long mN = -1;
 

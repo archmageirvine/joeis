@@ -7,14 +7,14 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a008.A008683;
 
 /**
  * A056227 Hankel transform of Moebius function A008683.
  * @author Sean A. Irvine
  */
-public class A056227 implements Sequence {
+public class A056227 extends Sequence0 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new PrependSequence(new A008683(), -1));
   private int mN = 0;

@@ -4,13 +4,13 @@ import irvine.math.lattice.Canons;
 import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A338211 Triangle of coefficients of perimeter polynomials for free polyominoes.
  * @author Sean A. Irvine
  */
-public class A338211 implements Sequence {
+public class A338211 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

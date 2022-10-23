@@ -3,14 +3,14 @@ package irvine.oeis.a059;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001678;
 
 /**
  * A059123 Number of homeomorphically irreducible rooted trees (also known as series-reduced rooted trees, or rooted trees without nodes of degree 2) with n &gt;= 1 nodes.
  * @author Sean A. Irvine
  */
-public class A059123 implements Sequence {
+public class A059123 extends Sequence0 {
 
   private final A001678 mA1678 = new A001678();
   private final ArrayList<Z> mSeq = new ArrayList<>();

@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000660 Boustrophedon transform of 1,1,2,3,4,5,...
  * @author Sean A. Irvine
  */
-public class A000660 implements Sequence {
+public class A000660 extends Sequence0 {
 
   private int mN = -1;
 

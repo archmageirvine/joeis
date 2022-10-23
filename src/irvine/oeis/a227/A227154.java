@@ -1,13 +1,13 @@
 package irvine.oeis.a227;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A227154 Product of digits+1 of n in factorial base.
  * @author Georg Fischer
  */
-public class A227154 implements Sequence {
+public class A227154 extends Sequence0 {
 
   private long mN = -1;
 

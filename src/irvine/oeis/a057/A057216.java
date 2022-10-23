@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057216 To get next term, multiply by 17, add 1 and discard any prime factors &lt; 17.
  * @author Sean A. Irvine
  */
-public class A057216 implements Sequence {
+public class A057216 extends Sequence0 {
 
   private static final long[] SMALL = {3, 5, 7, 11, 13};
   private Z mA = null;

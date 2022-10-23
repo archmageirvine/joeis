@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048570 Triangle T(n,k) = number of divisors of binomial(n,k).
  * @author Sean A. Irvine
  */
-public class A048570 implements Sequence {
+public class A048570 extends Sequence0 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
   private long mN = -1;

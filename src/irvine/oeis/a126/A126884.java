@@ -3,13 +3,14 @@ package irvine.oeis.a126;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006125;
 
 /**
  * A126884 a(n) = (2^0)*(2^1)*(2^2)*(2^3)...(2^n)+1 = 2^T_n+1 (cf. A000217).
  * @author Georg Fischer
  */
-public class A126884 implements Sequence {
+public class A126884 extends Sequence0 {
 
   final Sequence mA006125 = new A006125();
   /** Construct the sequence. */

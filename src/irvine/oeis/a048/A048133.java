@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048133 Least number which becomes prime or 4 after exactly n iterations of f(x) = sum of prime factors of x.
  * @author Sean A. Irvine
  */
-public class A048133 implements Sequence {
+public class A048133 extends Sequence0 {
 
   private int mN = -1;
 

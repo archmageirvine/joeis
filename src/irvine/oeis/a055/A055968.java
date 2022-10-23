@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055968 Product_{i=1..n} (i-1)!*(i+2*n-1)!/(i+n-1)!.
  * @author Sean A. Irvine
  */
-public class A055968 implements Sequence {
+public class A055968 extends Sequence0 {
 
   private int mN = -1;
 

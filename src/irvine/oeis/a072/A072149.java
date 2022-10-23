@@ -3,13 +3,13 @@ package irvine.oeis.a072;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A072149 Coordination sequence for AlPO_4-11 structure with respect to node (X) where decagon and two hexagons meet.
  * @author Sean A. Irvine
  */
-public class A072149 implements Sequence {
+public class A072149 extends Sequence0 {
 
   // This is quite tricky. It is based on counting path length in an infinite
   // graph based loosely on the decagon.  We implement it by growing the "graph"

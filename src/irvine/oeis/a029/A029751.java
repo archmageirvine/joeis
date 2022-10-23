@@ -2,13 +2,13 @@ package irvine.oeis.a029;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A029751 Average theta series of odd unimodular lattices in dimension 12.
  * @author Sean A. Irvine
  */
-public class A029751 implements Sequence {
+public class A029751 extends Sequence0 {
 
   private long mN = -1;
 

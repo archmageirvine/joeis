@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A009764 Tan(x)^2 = sum(n&gt;=0, a(n)*x^(2*n)/(2*n)! ).
  * @author Sean A. Irvine
  */
-public class A009764 implements Sequence {
+public class A009764 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -2;

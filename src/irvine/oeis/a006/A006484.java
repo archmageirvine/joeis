@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006484 a(n) = n*(n + 1)*(n^2 - 3*n + 5)/6.
  * @author Sean A. Irvine
  */
-public class A006484 implements Sequence {
+public class A006484 extends Sequence0 {
 
   private long mN = -1;
 

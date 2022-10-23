@@ -3,13 +3,14 @@ package irvine.oeis.a213;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002812;
 
 /**
  * A213680 a(n) = 2*a(n-1)^2/3-3 with a(0)=6.
  * @author Georg Fischer
  */
-public class A213680 implements Sequence {
+public class A213680 extends Sequence0 {
 
   final Sequence mA002812 = new A002812();
   @Override

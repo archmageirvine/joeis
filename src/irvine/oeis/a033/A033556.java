@@ -2,13 +2,13 @@ package irvine.oeis.a033;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A033556 a(n+1) = 2a(n) - {largest prime &lt; a(n)}.
  * @author Sean A. Irvine
  */
-public class A033556 implements Sequence {
+public class A033556 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mA = null;

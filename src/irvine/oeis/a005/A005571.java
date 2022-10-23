@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005571 Number of walks on cubic lattice.
  * @author Sean A. Irvine
  */
-public class A005571 implements Sequence {
+public class A005571 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a018;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018926 Number of ways to partition an n-cube into subcubes (without reducing isomorphic cases); number of labeled squashed n-cubes; ways to make a tautology from disjoint terms with n Boolean variables; number of Rivest compression schemes for n-bit retrieval.
  * @author Sean A. Irvine
  */
-public class A018926 implements Sequence {
+public class A018926 extends Sequence0 {
 
   // Uses the sub-cubes of n-cubes definition.  Brute force, does every arrangement
   // making no attempt to account for possible symmetries.

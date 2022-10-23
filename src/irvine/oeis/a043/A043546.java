@@ -13,13 +13,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A043546 Coefficients of asymptotic expansion of return probability for random walk in d-dimensional cubic lattice as a function of d.
  * @author Sean A. Irvine
  */
-public class A043546 implements Sequence {
+public class A043546 extends Sequence0 {
 
   private static final MultivariatePolynomialField<Q> RING = new MultivariatePolynomialField<>(Rationals.SINGLETON, 2);
   private static final PolynomialRingField<Z> RINGZ = new PolynomialRingField<>(IntegerField.SINGLETON);

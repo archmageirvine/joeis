@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import irvine.math.q.Q;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006232 Numerators of Cauchy numbers of first type.
  * @author Sean A. Irvine
  */
-public class A006232 implements Sequence {
+public class A006232 extends Sequence0 {
 
   private long mN = -1;
 

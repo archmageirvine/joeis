@@ -1,13 +1,13 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A029757 a(n) = 5^n mod 2^n.
  * @author Sean A. Irvine
  */
-public class A029757 implements Sequence {
+public class A029757 extends Sequence0 {
 
   private int mN = -1;
 

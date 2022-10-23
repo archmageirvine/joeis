@@ -3,12 +3,13 @@ package irvine.oeis.a254;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A254651 Characteristic function of A254614, numbers that are either odd or evil (or both).
  * @author Georg Fischer
  */
-public class A254651 implements Sequence {
+public class A254651 extends Sequence0 {
 
   final Sequence mA254379 = new A254379();
   @Override

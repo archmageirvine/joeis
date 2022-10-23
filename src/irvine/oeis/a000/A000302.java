@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000302 Powers of 4: a(n) = 4^n.
  * @author Sean A. Irvine
  */
-public class A000302 implements Sequence {
+public class A000302 extends Sequence0 {
 
   protected int mN = -2;
 

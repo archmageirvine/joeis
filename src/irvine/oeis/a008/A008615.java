@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008615 a(n) = floor(n/2) - floor(n/3).
  * @author Sean A. Irvine
  */
-public class A008615 implements Sequence {
+public class A008615 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

@@ -3,6 +3,7 @@ package irvine.oeis.a063;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000007;
 import irvine.oeis.a000.A000118;
 import irvine.oeis.a000.A000122;
@@ -13,7 +14,7 @@ import irvine.oeis.a005.A005875;
  * A063730 Number of solutions to w^2 + x^2 + y^2 + z^2 = n in positive integers.
  * @author Georg Fischer
  */
-public class A063730 implements Sequence {
+public class A063730 extends Sequence0 {
 
   final Sequence mA000007 = new A000007();
   final Sequence mA000118 = new A000118();

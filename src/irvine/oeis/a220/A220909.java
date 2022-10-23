@@ -3,13 +3,14 @@ package irvine.oeis.a220;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 
 /**
  * A220909 The second crank moment function M_2(n).
  * @author Georg Fischer
  */
-public class A220909 implements Sequence {
+public class A220909 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   protected long mN;

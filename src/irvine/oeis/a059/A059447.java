@@ -7,14 +7,14 @@ import java.util.TreeMap;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A059447 Smallest number that takes n steps to get to 1 under the map f(n)=sigma(n)-n, the sum of the proper divisors.
  * @author Sean A. Irvine
  */
-public class A059447 implements Sequence {
+public class A059447 extends Sequence0 {
 
   // Certain numbers like 276 have an unknown (but high) number of steps.
   // Therefore, we cannot simply compute the number of steps for each number in turn.

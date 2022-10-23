@@ -5,14 +5,14 @@ package irvine.oeis.a156;
 import irvine.math.polynomial.EulerPolynomials;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A156315 Numerator of Euler(n, 4/11).
  * @author Georg Fischer
  */
-public class A156315 implements Sequence {
+public class A156315 extends Sequence0 {
 
   private int mN = -1;
   private final Q mFract = new Q(4, 11);

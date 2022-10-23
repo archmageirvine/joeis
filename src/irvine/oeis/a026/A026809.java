@@ -1,13 +1,13 @@
 package irvine.oeis.a026;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A026809 a(n) = 3^n*(3^n-1)*(3^n-2)/6.
  * @author Sean A. Irvine
  */
-public class A026809 implements Sequence {
+public class A026809 extends Sequence0 {
 
   private Z mT = null;
 

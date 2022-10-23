@@ -4,14 +4,14 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a023.A023900;
 
 /**
  * A045653 Number of 2n-bead balanced binary strings, rotationally equivalent to reverse.
  * @author Sean A. Irvine
  */
-public class A045653 implements Sequence {
+public class A045653 extends Sequence0 {
 
   private final MemorySequence mC = MemorySequence.cachedSequence(new A023900());
   private int mN = -1;

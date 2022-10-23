@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036740 a(n) = (n!)^n.
  * @author Sean A. Irvine
  */
-public class A036740 implements Sequence {
+public class A036740 extends Sequence0 {
 
   private Z mF = Z.ONE;
   private int mN = -1;

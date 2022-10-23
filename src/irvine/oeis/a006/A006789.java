@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006789 Bessel numbers: the number of nonoverlapping partitions of an n-set into equivalence classes.
  * @author Sean A. Irvine
  */
-public class A006789 implements Sequence {
+public class A006789 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> X1 = Polynomial.create(1, 1);

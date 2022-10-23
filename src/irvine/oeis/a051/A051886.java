@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051886 a(n) is the minimal prime p such that 2^n * p + 1 is prime.
  * @author Sean A. Irvine
  */
-public class A051886 implements Sequence {
+public class A051886 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private int mN = -1;

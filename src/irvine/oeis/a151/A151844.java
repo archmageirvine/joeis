@@ -1,13 +1,13 @@
 package irvine.oeis.a151;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A151844 If A151843 is regarded as a triangle then the rows converge to this sequence.
  * @author Georg Fischer
  */
-public class A151844 implements Sequence {
+public class A151844 extends Sequence0 {
 
   private int mISeq; // index in mSeq
   private int mLo; // lower bound of range

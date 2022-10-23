@@ -3,13 +3,14 @@ package irvine.oeis.a256;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006046;
 
 /**
  * A256256 Total number of ON cells after n generations of cellular automaton on triangular grid, starting from a node, in which every 60-degree wedge looks like the Sierpi\u0144ski's triangle.
  * @author Georg Fischer
  */
-public class A256256 implements Sequence {
+public class A256256 extends Sequence0 {
 
   final Sequence mA006046 = new A006046();
   @Override

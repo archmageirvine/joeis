@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003014 Expansion of e.g.f.: 1 + x*exp(x) + x^2*exp(2*x) + x^3*exp(3*x).
  * @author Sean A. Irvine
  */
-public class A003014 implements Sequence {
+public class A003014 extends Sequence0 {
 
   private long mN = -1;
   private int mA = -2;

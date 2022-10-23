@@ -1,13 +1,13 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010842 Expansion of e.g.f.: exp(2*x)/(1-x).
  * @author Sean A. Irvine
  */
-public class A010842 implements Sequence {
+public class A010842 extends Sequence0 {
 
   private int mN = -1;
   private Z mA = Z.ONE;

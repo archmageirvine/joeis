@@ -4,13 +4,13 @@ package irvine.oeis.a062;
 import irvine.math.cr.CR;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A062453 Integer part of log(n!)^sqrt(n).
  * @author Georg Fischer
  */
-public class A062453 implements Sequence {
+public class A062453 extends Sequence0 {
 
   private int mN = -1;
 

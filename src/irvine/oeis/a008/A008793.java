@@ -2,13 +2,13 @@ package irvine.oeis.a008;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008793 The problem of the calissons: number of ways to tile hexagon of edge n with diamonds of side 1. Also number of plane partitions whose Young diagrams fit inside an n X n X n box.
  * @author Sean A. Irvine
  */
-public class A008793 implements Sequence {
+public class A008793 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

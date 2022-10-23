@@ -1,14 +1,14 @@
 package irvine.oeis.a126;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A126605 Final three digits of 2^n.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class A126605 implements Sequence {
+public class A126605 extends Sequence0 {
 
   private long mN = -1;
 

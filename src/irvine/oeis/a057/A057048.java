@@ -4,13 +4,14 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a017.A017911;
 
 /**
  * A057048 a(n) = A017911(n+1) = round(sqrt(2)^(n+1)).
  * @author Georg Fischer
  */
-public class A057048 implements Sequence {
+public class A057048 extends Sequence0 {
 
   final Sequence mA017911 = new A017911();
   /** Construct the sequence. */

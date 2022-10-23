@@ -1,13 +1,13 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A047943 Number of 8-colorings of an n X n grid, up to rotational symmetry.
  * @author Sean A. Irvine
  */
-public class A047943 implements Sequence {
+public class A047943 extends Sequence0 {
 
   private int mN = -1;
 

@@ -2,14 +2,14 @@ package irvine.oeis.a000;
 // manually 2021-09-29
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000301 a(n) = a(n-1)*a(n-2) with a(0) = 1, a(1) = 2; also a(n) = 2^Fibonacci(n).
  * @author Sean A. Irvine
  * @author Georg Fischer
  */
-public class A000301 implements Sequence {
+public class A000301 extends Sequence0 {
 
   protected Z mParm;
 

@@ -5,13 +5,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004103 Number of nets on n unlabeled nodes.
  * @author Sean A. Irvine
  */
-public class A004103 implements Sequence {
+public class A004103 extends Sequence0 {
 
   private int mN = -1;
 

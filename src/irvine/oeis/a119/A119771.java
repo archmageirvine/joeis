@@ -1,13 +1,13 @@
 package irvine.oeis.a119;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A119771 Product of n^2 and n-th tetrahedral number: n^3*(n+1)*(n+2)/6.
  * @author Georg Fischer
  */
-public class A119771 implements Sequence {
+public class A119771 extends Sequence0 {
 
   private int mN = -1;
 

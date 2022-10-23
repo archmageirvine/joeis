@@ -5,14 +5,14 @@ import java.util.TreeSet;
 
 import irvine.math.Comparators;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
  * A055093 Number of moved (non-fixed) elements in each permutation given in reversed colexicographic ordering A055089, i.e., the sum of their cycle lengths (excluding the 1-cycles, i.e., fixed elements).
  * @author Sean A. Irvine
  */
-public class A055093 implements Sequence {
+public class A055093 extends Sequence0 {
 
   private int mN = 1;
   private final TreeSet<int[]> mReverseColex = new TreeSet<>(Comparators.REVERSE_COLEXICOGRAPHIC);

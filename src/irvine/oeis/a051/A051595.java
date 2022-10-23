@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051595 Minimal elements of pairs of "(-1)sigma amicable numbers", sorted by their minimal elements.
  * @author Sean A. Irvine
  */
-public class A051595 implements Sequence {
+public class A051595 extends Sequence0 {
 
   private Z mN = Z.valueOf(429551);
 

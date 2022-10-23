@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057687 Trajectory of 29 under the `29x+1' map.
  * @author Sean A. Irvine
  */
-public class A057687 implements Sequence {
+public class A057687 extends Sequence0 {
 
   private long mN = 0;
 

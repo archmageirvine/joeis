@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059358 Coefficients in expansion of Sum_{n &gt;= 1} x^n/(1-x^n)^4.
  * @author Sean A. Irvine
  */
-public class A059358 implements Sequence {
+public class A059358 extends Sequence0 {
 
   private long mN = -1;
 

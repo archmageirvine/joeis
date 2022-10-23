@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002485 Numerators of convergents to Pi.
  * @author Sean A. Irvine
  */
-public class A002485 implements Sequence {
+public class A002485 extends Sequence0 {
 
   private final Convergents mC = new Convergents(CR.PI);
   private long mN = -1;

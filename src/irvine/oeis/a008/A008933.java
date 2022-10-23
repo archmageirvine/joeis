@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008933 Number of strictly increasing addition chains of length n.
  * @author Sean A. Irvine
  */
-public class A008933 implements Sequence {
+public class A008933 extends Sequence0 {
 
   private long mCount = 0;
   private int mN = -1;

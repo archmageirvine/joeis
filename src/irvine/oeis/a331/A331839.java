@@ -3,6 +3,7 @@ package irvine.oeis.a331;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000302;
 import irvine.oeis.a010.A010050;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a010.A010050;
  * A331839 a(n) = (4^(n + 1) - 2)*(2*n)!.
  * @author Georg Fischer
  */
-public class A331839 implements Sequence {
+public class A331839 extends Sequence0 {
 
   final Sequence mA000302 = new A000302();
   final Sequence mA010050 = new A010050();

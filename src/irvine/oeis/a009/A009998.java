@@ -1,13 +1,13 @@
 package irvine.oeis.a009;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A009998 Triangle in which j-th entry in i-th row is (j+1)^(i-j).
  * @author Sean A. Irvine
  */
-public class A009998 implements Sequence {
+public class A009998 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

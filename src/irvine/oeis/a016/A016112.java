@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A016112 Smallest prime whose digit product is n, if possible; otherwise 0 if n is a prime &gt; 7 or 1 if n has a prime factor &gt; 7.
  * @author Sean A. Irvine
  */
-public class A016112 implements Sequence {
+public class A016112 extends Sequence0 {
 
   // This sequence seems a little weird.
   // a(2) = 2, a(3) = 3, a(5) = 5, and a(7) = 7,

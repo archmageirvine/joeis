@@ -1,13 +1,13 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010751 Up once, down twice, up three times, down four times, ...
  * @author Sean A. Irvine
  */
-public class A010751 implements Sequence {
+public class A010751 extends Sequence0 {
 
   private long mA = 1;
   private long mSteps = 2;

@@ -1,13 +1,13 @@
 package irvine.oeis.a019;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A019464 Multiply by 1, add 1, multiply by 2, add 2, etc., start with 1.
  * @author Sean A. Irvine
  */
-public class A019464 implements Sequence {
+public class A019464 extends Sequence0 {
 
   private Z mA = null;
   private boolean mAdd = false;

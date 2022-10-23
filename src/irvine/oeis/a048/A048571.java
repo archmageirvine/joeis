@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048571 Triangle read by rows: T(n,k) = number of distinct prime factors of C(n,k).
  * @author Sean A. Irvine
  */
-public class A048571 implements Sequence {
+public class A048571 extends Sequence0 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
   private long mN = -1;

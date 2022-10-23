@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007183 Maximal splittance of a planar graph with n nodes.
  * @author Sean A. Irvine
  */
-public class A007183 implements Sequence {
+public class A007183 extends Sequence0 {
 
   private long mN = 0;
 

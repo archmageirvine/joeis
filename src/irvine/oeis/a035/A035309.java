@@ -6,13 +6,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035309 Triangle read by rows giving number of ways to glue sides of a 2n-gon so as to produce a surface of genus g.
  * @author Sean A. Irvine
  */
-public class A035309 implements Sequence {
+public class A035309 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> HALF_X = RING.divide(RING.x(), Q.TWO);

@@ -3,13 +3,14 @@ package irvine.oeis.a169;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007953;
 
 /**
  * A169805 Twice the sum of the digits of n.
  * @author Georg Fischer
  */
-public class A169805 implements Sequence {
+public class A169805 extends Sequence0 {
 
   final Sequence mA007953 = new A007953();
   @Override

@@ -3,6 +3,7 @@ package irvine.oeis.a125;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000108;
 import irvine.oeis.a011.A011782;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a011.A011782;
  * A125107 Subtract compositions (A011782) from Catalan numbers (A000108).
  * @author Georg Fischer
  */
-public class A125107 implements Sequence {
+public class A125107 extends Sequence0 {
 
   final Sequence mA000108 = new A000108();
   final Sequence mA011782 = new A011782();

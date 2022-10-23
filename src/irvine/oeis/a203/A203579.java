@@ -3,13 +3,14 @@ package irvine.oeis.a203;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a014.A014335;
 
 /**
  * A203579 Exponential (or binomial) convolution of A000032 (Lucas) with itself, divided by 2.
  * @author Georg Fischer
  */
-public class A203579 implements Sequence {
+public class A203579 extends Sequence0 {
 
   final Sequence mA014335 = new A014335();
   @Override

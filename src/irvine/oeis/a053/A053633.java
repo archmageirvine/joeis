@@ -4,13 +4,13 @@ import irvine.math.IntegerUtils;
 import irvine.math.LongUtils;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053633 Triangular array T(n,k) giving coefficients in expansion of Product_{j=1..n} (1+x^j) mod x^(n+1)-1.
  * @author Sean A. Irvine
  */
-public class A053633 implements Sequence {
+public class A053633 extends Sequence0 {
 
   private int mN = 1;
   private int mM = -1;

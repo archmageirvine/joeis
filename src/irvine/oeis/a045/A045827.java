@@ -4,15 +4,17 @@ package irvine.oeis.a045;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005872;
 
 /**
  * A045827 a(n) = A005872(n)/6.
  * @author Georg Fischer
  */
-public class A045827 implements Sequence {
+public class A045827 extends Sequence0 {
 
   final Sequence mA005872 = new A005872();
+
   @Override
   public Z next() {
     return mA005872.next().divide(Z.SIX);

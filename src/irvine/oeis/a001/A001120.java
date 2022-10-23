@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001120 a(0) = a(1) = 1; for n &gt; 1, a(n) = n*a(n-1) + (-1)^n.
  * @author Sean A. Irvine
  */
-public class A001120 implements Sequence {
+public class A001120 extends Sequence0 {
 
   private Z mPrev = Z.TWO;
   private long mN = -1;

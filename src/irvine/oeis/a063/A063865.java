@@ -1,14 +1,14 @@
 package irvine.oeis.a063;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicArray;
 
 /**
  * A063865 Number of solutions to +- 1 +- 2 +- 3 +- ... +- n = 0.
  * @author Sean A. Irvine
  */
-public class A063865 implements Sequence {
+public class A063865 extends Sequence0 {
 
   private DynamicArray<Z> mA = new DynamicArray<>();
   private int mN = -1;

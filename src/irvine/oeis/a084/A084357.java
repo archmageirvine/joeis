@@ -4,7 +4,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A084357 Number of sets of sets of lists.
@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
  *
  * @author Georg Fischer
  */
-public class A084357 implements Sequence {
+public class A084357 extends Sequence0 {
 
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN = -1;

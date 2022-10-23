@@ -1,13 +1,13 @@
 package irvine.oeis.a254;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A254429 a(0) = 0; for n &gt;= 0, a(n+1) = 2^a(n) + 1.
  * @author Georg Fischer
  */
-public class A254429 implements Sequence {
+public class A254429 extends Sequence0 {
 
   private int mN;
   private Z mA;

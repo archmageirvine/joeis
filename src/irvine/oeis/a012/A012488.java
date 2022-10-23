@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A012488 tanh(cos(x)*arcsin(x))=x-4/3!*x^3+60/5!*x^5-2056/7!*x^7+127376/9!*x^9...
  * @author Sean A. Irvine
  */
-public class A012488 implements Sequence {
+public class A012488 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

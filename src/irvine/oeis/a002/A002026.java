@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002026 Generalized ballot numbers (first differences of Motzkin numbers).
  * @author Sean A. Irvine
  */
-public class A002026 implements Sequence {
+public class A002026 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ZERO;

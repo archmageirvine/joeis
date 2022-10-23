@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014085 Number of primes between n^2 and (n+1)^2.
  * @author Sean A. Irvine
  */
-public class A014085 implements Sequence {
+public class A014085 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

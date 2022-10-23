@@ -4,14 +4,14 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001057;
 
 /**
  * A019570 Zeroth row of infinite Latin square.
  * @author Sean A. Irvine
  */
-public class A019570 implements Sequence {
+public class A019570 extends Sequence0 {
 
   // The original algorithm is described in terms of two lists List I and List II,
   // starting with all the integers, and thereafter removing integers according to

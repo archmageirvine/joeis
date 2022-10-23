@@ -3,6 +3,7 @@ package irvine.oeis.a262;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000217;
 import irvine.oeis.a003.A003422;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a003.A003422;
  * A262376 a(n) = Sum_{k=0..n} (k! - k).
  * @author Georg Fischer
  */
-public class A262376 implements Sequence {
+public class A262376 extends Sequence0 {
 
   final Sequence mA000217 = new A000217();
   final Sequence mA003422 = new A003422();

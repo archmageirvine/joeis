@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007012 a(n) is number of k for which C(n,k) is not divisible by n.
  * @author Sean A. Irvine
  */
-public class A007012 implements Sequence {
+public class A007012 extends Sequence0 {
 
   private long mN = -1;
 

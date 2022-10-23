@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056993 a(n) is the smallest k &gt;= 2 such that k^(2^n)+1 is prime, or -1 if no such k exists.
  * @author Sean A. Irvine
  */
-public class A056993 implements Sequence {
+public class A056993 extends Sequence0 {
 
   private int mN = -1;
 

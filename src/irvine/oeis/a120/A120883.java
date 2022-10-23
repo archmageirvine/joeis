@@ -3,13 +3,13 @@ package irvine.oeis.a120;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A120883 (1/4)*number of lattice points with odd indices in a square lattice inside a circle around the origin with radius 2*n.
  * @author Sean A. Irvine
  */
-public class A120883 implements Sequence {
+public class A120883 extends Sequence0 {
 
   private long mN = -1;
 

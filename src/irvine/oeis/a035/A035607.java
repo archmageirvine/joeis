@@ -2,13 +2,13 @@ package irvine.oeis.a035;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035607 Table a(d,m) of number of points of L1 norm m in cubic lattice Z^d, read by antidiagonals (d &gt;= 1, m &gt;= 0).
  * @author Sean A. Irvine
  */
-public class A035607 implements Sequence {
+public class A035607 extends Sequence0 {
 
   private int mN = 0;
   private int mM = 0;

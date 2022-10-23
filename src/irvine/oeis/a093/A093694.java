@@ -3,6 +3,7 @@ package irvine.oeis.a093;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 import irvine.oeis.a006.A006128;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006128;
  * A093694 Number of one-element transitions from the partitions of n to the partitions of n+1 for labeled parts.
  * @author Georg Fischer
  */
-public class A093694 implements Sequence {
+public class A093694 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   final Sequence mA006128 = new A006128();

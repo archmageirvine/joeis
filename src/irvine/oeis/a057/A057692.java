@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057692 Smallest prime which produces exactly n+1 different primes after n applications of the A048376 transform.
  * @author Sean A. Irvine
  */
-public class A057692 implements Sequence {
+public class A057692 extends Sequence0 {
 
   private static final String[] EXPANSIONS = {
     "",

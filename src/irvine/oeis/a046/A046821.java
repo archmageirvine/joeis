@@ -3,14 +3,14 @@ package irvine.oeis.a046;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A046821 Number of 1's in binary expansion of 5n+1.
  * @author Georg Fischer
  */
-public class A046821 implements Sequence {
+public class A046821 extends Sequence0 {
 
   protected int mN = -1;
   

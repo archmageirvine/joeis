@@ -3,6 +3,7 @@ package irvine.oeis.a282;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000110;
 import irvine.oeis.a005.A005494;
 import irvine.oeis.a186.A186021;
@@ -10,7 +11,7 @@ import irvine.oeis.a186.A186021;
  * A282179 E.g.f.: exp(exp(x) - 1)*(exp(3*x) - 2*exp(x) + 1).
  * @author Georg Fischer
  */
-public class A282179 implements Sequence {
+public class A282179 extends Sequence0 {
 
   private final Sequence mA000110 = new A000110();
   private final Sequence mA005494 = new A005494();

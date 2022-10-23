@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001803 Numerators in expansion of (1 - x)^(-3/2).
  * @author Sean A. Irvine
  */
-public class A001803 implements Sequence {
+public class A001803 extends Sequence0 {
 
   private long mN = -2;
   private Q mA = Q.ONE;

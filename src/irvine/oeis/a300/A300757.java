@@ -3,13 +3,14 @@ package irvine.oeis.a300;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a048.A048291;
 
 /**
  * A300757 Number of {0,1} n X n matrices with at least one zero row or column.
  * @author Georg Fischer
  */
-public class A300757 implements Sequence {
+public class A300757 extends Sequence0 {
 
   final Sequence mA048291 = new A048291();
   protected long mN;

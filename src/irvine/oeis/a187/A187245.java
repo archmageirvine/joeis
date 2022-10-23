@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A187245 Number of permutations of [n] having no cycle with 2 alternating runs (it is assumed that the smallest element of the cycle is in the first position).
  * E.g.f.: exp((4*exp(x)-exp(2*x)-3-2*x)/4)/(1-x)
  * @author Georg Fischer
  */
-public class A187245 implements Sequence {
+public class A187245 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

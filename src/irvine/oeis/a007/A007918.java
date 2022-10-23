@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007918 Least prime &gt;= n (version 1 of the "next prime" function).
  * @author Sean A. Irvine
  */
-public class A007918 implements Sequence {
+public class A007918 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   protected Z mN = Z.NEG_ONE;

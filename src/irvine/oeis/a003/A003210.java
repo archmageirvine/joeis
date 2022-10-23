@@ -6,13 +6,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003210 Cluster series for b.c.c. lattice.
  * @author Sean A. Irvine
  */
-public class A003210 implements Sequence {
+public class A003210 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C = RING.oneMinusXToTheN(1);

@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030060 Third derivative of Catalan generating function/3!.
  * @author Sean A. Irvine
  */
-public class A030060 implements Sequence {
+public class A030060 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.FIVE;

@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058053 Number of 3-rowed binary matrices with n ones and no zero columns, up to row and column permutation.
  * @author Sean A. Irvine
  */
-public class A058053 implements Sequence {
+public class A058053 extends Sequence0 {
 
   private int mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034877 Rows of (Pascal's triangle - Losanitsch's triangle) (n &gt;= 0, k &gt;= 0).
  * @author Sean A. Irvine
  */
-public class A034877 implements Sequence {
+public class A034877 extends Sequence0 {
 
   private final A034851 mA = new A034851();
   private long mN = 1;

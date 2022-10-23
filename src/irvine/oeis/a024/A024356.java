@@ -6,13 +6,13 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A024356 Determinant of Hankel matrix of the first 2n-1 prime numbers.
  * @author Sean A. Irvine
  */
-public class A024356 implements Sequence {
+public class A024356 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private int mN = -1;

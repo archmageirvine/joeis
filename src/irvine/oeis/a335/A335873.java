@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A335873 Total number of points in all permutations of [n] that are fixed or reflected.
  * E.g.f.: 2*x/(1-x) - (log(1+x) - log(1-x))/2
  * @author Georg Fischer
  */
-public class A335873 implements Sequence {
+public class A335873 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

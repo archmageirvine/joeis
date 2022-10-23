@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036652 Number of bicentered 6-valent trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A036652 implements Sequence {
+public class A036652 extends Sequence0 {
 
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mC = 0;

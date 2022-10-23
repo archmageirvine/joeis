@@ -2,14 +2,14 @@ package irvine.oeis.a146;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A146305 Array T(n,m) = 2*(2m+3)!*(4n+2m+1)!/(m!*(m+2)!*n!*(3n+2m+3)!) read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A146305 implements Sequence {
+public class A146305 extends Sequence0 {
 
   protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 

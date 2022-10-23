@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002212;
 import irvine.oeis.a039.A039658;
 import irvine.oeis.a039.A039660;
@@ -14,7 +14,7 @@ import irvine.oeis.a055.A055879;
  * A045907 Catafusenes (see reference for precise definition).
  * @author Sean A. Irvine
  */
-public class A045907 implements Sequence {
+public class A045907 extends Sequence0 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A002212());
   private final MemorySequence mM = MemorySequence.cachedSequence(new PrependSequence(new A055879(), 0));

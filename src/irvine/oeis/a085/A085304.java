@@ -1,14 +1,14 @@
 package irvine.oeis.a085;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A085304 Least number of 4th powers required to represent n!.
  * @author Sean A. Irvine
  */
-public class A085304 implements Sequence {
+public class A085304 extends Sequence0 {
 
   private boolean containsZero(final LongDynamicByteArray a, final long limit) {
     for (long k = 0; k < limit; ++k) {

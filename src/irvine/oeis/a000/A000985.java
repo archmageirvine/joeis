@@ -8,13 +8,13 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000985 Number of n X n symmetric matrices with nonnegative entries and all row sums 2.
  * @author Sean A. Irvine
  */
-public class A000985 implements Sequence {
+public class A000985 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

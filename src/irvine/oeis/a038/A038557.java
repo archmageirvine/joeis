@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038557 Periodic derivative of n in base 3.
  * @author Sean A. Irvine
  */
-public class A038557 implements Sequence {
+public class A038557 extends Sequence0 {
 
   private long mN = -1;
 

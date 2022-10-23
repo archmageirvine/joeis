@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A061140 Number of degree-n odd permutations of order exactly 8.
@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class A061140 implements Sequence {
+public class A061140 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   static final Polynomial<Q> C4N = Polynomial.create(Q.ZERO, Q.ONE, Q.HALF.negate(), Q.ZERO, Q.ONE_QUARTER.negate());

@@ -2,13 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004166 Sum of digits of 3^n.
  * @author Georg Fischer
  */
-public class A004166 implements Sequence {
+public class A004166 extends Sequence0 {
 
   protected long mBase;
   protected Z mTerm;

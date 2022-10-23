@@ -1,13 +1,13 @@
 package irvine.oeis.a063;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A063009 Write n in binary then square as if written in base 10.
  * @author Georg Fischer
  */
-public class A063009 implements Sequence {
+public class A063009 extends Sequence0 {
 
   private int mN;
 

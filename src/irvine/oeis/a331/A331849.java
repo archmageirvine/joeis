@@ -3,6 +3,7 @@ package irvine.oeis.a331;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000586;
 import irvine.oeis.a000.A000607;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000607;
  * A331849 Number of partitions of n into prime parts with some part repeated.
  * @author Georg Fischer
  */
-public class A331849 implements Sequence {
+public class A331849 extends Sequence0 {
 
   final Sequence mA000586 = new A000586();
   final Sequence mA000607 = new A000607();

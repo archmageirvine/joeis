@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038851 Divisible by 3 (and 9) and are differences between two cubes in at least one way.
  * @author Sean A. Irvine
  */
-public class A038851 implements Sequence {
+public class A038851 extends Sequence0 {
 
   private Z mN = Z.valueOf(54);
 

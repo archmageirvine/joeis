@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000047 Number of integers &lt;= 2^n of form x^2 - 2y^2.
  * @author Sean A. Irvine
  */
-public class A000047 implements Sequence {
+public class A000047 extends Sequence0 {
 
   private long mLastResult = 0;
   private long mN = 1;

@@ -3,13 +3,13 @@ package irvine.oeis.a054;
 import irvine.factor.prime.Fast;
 import irvine.math.partitions.DistinctPartsPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054656 Number of primes &lt;= n which do not appear in any partitions of n into distinct primes.
  * @author Sean A. Irvine
  */
-public class A054656 implements Sequence {
+public class A054656 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private int mN = -1;

@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006769 Elliptic divisibility sequence associated with elliptic curve "37a1": y^2 + y = x^3 - x and multiples of the point (0,0).
  * @author Sean A. Irvine
  */
-public class A006769 implements Sequence {
+public class A006769 extends Sequence0 {
 
   private final Z[] mA = {Z.ZERO, Z.ONE, Z.ONE, Z.NEG_ONE, Z.ONE};
   private long mN = -1;

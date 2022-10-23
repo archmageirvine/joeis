@@ -1,13 +1,13 @@
 package irvine.oeis.a016;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A016249 Expansion of 1/((1-x)*(1-7*x)*(1-8*x)).
  * @author Sean A. Irvine
  */
-public class A016249 implements Sequence {
+public class A016249 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

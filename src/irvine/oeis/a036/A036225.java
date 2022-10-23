@@ -4,13 +4,13 @@ import java.util.TreeMap;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036225 Length of cycle the 'summarize the previous term' sequence gets into.
  * @author Sean A. Irvine
  */
-public class A036225 implements Sequence {
+public class A036225 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

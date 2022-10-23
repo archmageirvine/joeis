@@ -2,13 +2,13 @@ package irvine.oeis.a026;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A026352 a(n) = floor(n*tau)+n+1.
  * @author Sean A. Irvine
  */
-public class A026352 implements Sequence {
+public class A026352 extends Sequence0 {
 
   private long mN = -1;
 

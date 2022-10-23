@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002397 a(n) = n! * lcm({1, 2, .. n + 1}).
  * @author Sean A. Irvine
  */
-public class A002397 implements Sequence {
+public class A002397 extends Sequence0 {
 
   private Z mF = Z.ONE;
   private Z mLcm = Z.ONE;

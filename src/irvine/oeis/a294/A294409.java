@@ -3,6 +3,7 @@ package irvine.oeis.a294;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000312;
 import irvine.oeis.a002.A002426;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002426;
  * A294409 a(n) = n! * [x^n] exp(n*x)*BesselI(0,2*n*x).
  * @author Georg Fischer
  */
-public class A294409 implements Sequence {
+public class A294409 extends Sequence0 {
 
   final Sequence mA000312 = new A000312();
   final Sequence mA002426 = new A002426();

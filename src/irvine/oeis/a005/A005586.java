@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005586 a(n) = n*(n+4)*(n+5)/6.
  * @author Sean A. Irvine
  */
-public class A005586 implements Sequence {
+public class A005586 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

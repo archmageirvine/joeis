@@ -3,13 +3,14 @@ package irvine.oeis.a186;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000111;
 
 /**
  * A186365 Number of fixed points in all cycle-up-down permutations of {1,2,...,n}.
  * @author Georg Fischer
  */
-public class A186365 implements Sequence {
+public class A186365 extends Sequence0 {
 
   final Sequence mA000111 = new A000111();
   protected long mN;

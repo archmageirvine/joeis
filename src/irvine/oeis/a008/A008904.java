@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008904 a(n) is the final nonzero digit of n!.
  * @author Sean A. Irvine
  */
-public class A008904 implements Sequence {
+public class A008904 extends Sequence0 {
 
   // After W. Bomfin
 

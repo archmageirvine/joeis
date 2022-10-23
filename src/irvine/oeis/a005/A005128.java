@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005128 Number of k for which n does not divide Stirling_2 subset numbers S(n, k).
  * @author Sean A. Irvine
  */
-public class A005128 implements Sequence {
+public class A005128 extends Sequence0 {
 
   private long mN = -1;
 

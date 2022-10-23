@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058232 a(n) = (a(n-1)a(n-5) + a(n-2)a(n-4) + a(n-3)^2)/a(n-6).
  * @author Sean A. Irvine
  */
-public class A058232 implements Sequence {
+public class A058232 extends Sequence0 {
 
   private static final long[] INIT = {0, 1, 0, 1, 1, -1, -1, 0, 0, 1, -1, -1, -1, -2, 1};
   private final Z[] mA = new Z[INIT.length];

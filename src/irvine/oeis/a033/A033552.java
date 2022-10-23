@@ -5,6 +5,7 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000108;
 
@@ -12,7 +13,7 @@ import irvine.oeis.a000.A000108;
  * A033552 Number of partitions into Catalan numbers.
  * @author Sean A. Irvine
  */
-public class A033552 implements Sequence {
+public class A033552 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;

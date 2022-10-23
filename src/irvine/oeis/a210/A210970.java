@@ -3,6 +3,7 @@ package irvine.oeis.a210;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000217;
 import irvine.oeis.a006.A006128;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006128;
  * A210970 Total area of the shadows of the three views of a three-dimensional version of the shell model of partitions with n shells.
  * @author Georg Fischer
  */
-public class A210970 implements Sequence {
+public class A210970 extends Sequence0 {
 
   final Sequence mA000217 = new A000217();
   final Sequence mA006128 = new A006128();

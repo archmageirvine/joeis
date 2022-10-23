@@ -1,13 +1,13 @@
 package irvine.oeis.a213;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A213542 a(n) = k AND k^k, where k=2*n+1, AND is the bitwise AND operator.
  * @author Georg Fischer
  */
-public class A213542 implements Sequence {
+public class A213542 extends Sequence0 {
 
   protected int mN = -1;
 

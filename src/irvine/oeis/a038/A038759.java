@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038759 a(n) = ceiling(sqrt(n))*floor(sqrt(n)).
  * @author Sean A. Irvine
  */
-public class A038759 implements Sequence {
+public class A038759 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

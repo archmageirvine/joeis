@@ -3,13 +3,14 @@ package irvine.oeis.a123;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004134;
 
 /**
  * A123854 Denominators in an asymptotic expansion for the cubic recurrence sequence A123851.
  * @author Georg Fischer
  */
-public class A123854 implements Sequence {
+public class A123854 extends Sequence0 {
 
   final Sequence mA004134 = new A004134();
   @Override

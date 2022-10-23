@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046693 Size of smallest subset S of N={0,1,2,...,n} such that S-S=N, where S-S={abs(i-j) | i,j in S}.
  * @author Sean A. Irvine
  */
-public class A046693 implements Sequence {
+public class A046693 extends Sequence0 {
 
   // This is a genuine search and will only be good for a few terms.
   // Formulas are known that work for the initial terms of this sequence.

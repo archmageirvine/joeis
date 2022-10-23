@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059832 A ternary tribonacci triangle: form the triangle as follows: start with 3 single values: 1, 2, 3. Each succeeding row is a concatenation of the previous 3 rows.
  * @author Sean A. Irvine
  */
-public class A059832 implements Sequence {
+public class A059832 extends Sequence0 {
 
   private long[] mA = null;
   private long[] mB = null;

@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000605 Number of points of norm &lt;= n in cubic lattice.
  * @author Sean A. Irvine
  */
-public class A000605 implements Sequence {
+public class A000605 extends Sequence0 {
 
   private long mN = -1;
 

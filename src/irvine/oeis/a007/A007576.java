@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007576 Number of solutions to k_1 + 2*k_2 + ... + n*k_n = 0, where k_i are from {-1,0,1}, i=1..n.
  * @author Sean A. Irvine
  */
-public class A007576 implements Sequence {
+public class A007576 extends Sequence0 {
 
   private int mN = -1;
 

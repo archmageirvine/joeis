@@ -1,13 +1,13 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049727 Array T read by diagonals; T(i,j)=number of lattice points in triangle (possibly degenerate) with vertices (0,0),(i,0),(i,j).
  * @author Sean A. Irvine
  */
-public class A049727 implements Sequence {
+public class A049727 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

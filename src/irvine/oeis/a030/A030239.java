@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030239 a(n) is the smallest number k such that k*2^(2^n) + 1 is prime.
  * @author Sean A. Irvine
  */
-public class A030239 implements Sequence {
+public class A030239 extends Sequence0 {
 
   private int mN = -1;
 

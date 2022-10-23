@@ -6,13 +6,13 @@ import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035019 Sizes of successive shells in hexagonal (or A_2) lattice.
  * @author Sean A. Irvine
  */
-public class A035019 implements Sequence {
+public class A035019 extends Sequence0 {
 
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;

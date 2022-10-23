@@ -4,13 +4,13 @@ import irvine.math.group.GaloisField;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048631 Xfactorials - like factorials but use carryless GF(2)[ X ] polynomial multiplication.
  * @author Sean A. Irvine
  */
-public class A048631 implements Sequence {
+public class A048631 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(new GaloisField(2));
   private long mN = -1;

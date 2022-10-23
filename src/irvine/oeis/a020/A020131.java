@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020131 Ceiling of GAMMA(n+3/4)/GAMMA(3/4).
  * @author Sean A. Irvine
  */
-public class A020131 implements Sequence {
+public class A020131 extends Sequence0 {
 
   private static final Q C = new Q(3, 4);
   private int mN = -2;

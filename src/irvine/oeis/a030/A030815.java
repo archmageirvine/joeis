@@ -3,13 +3,13 @@ package irvine.oeis.a030;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030815 a(n) = floor(exp(14/23) * n!).
  * @author Sean A. Irvine
  */
-public class A030815 implements Sequence {
+public class A030815 extends Sequence0 {
 
   private static final CR EXP14_23 = CR.valueOf(new Q(14, 23)).exp();
   private Z mF = Z.ONE;

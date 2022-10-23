@@ -2,13 +2,13 @@ package irvine.oeis.a033;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A033542 a(n) = 2*(n^2)!* Product_{k = 1..n-1} k!/(n+k)!.
  * @author Sean A. Irvine
  */
-public class A033542 implements Sequence {
+public class A033542 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

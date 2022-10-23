@@ -3,13 +3,13 @@ package irvine.oeis.a037;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A037060 a(n)-th prime is the smallest prime containing exactly n 4's.
  * @author Sean A. Irvine
  */
-public class A037060 implements Sequence {
+public class A037060 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private int mN = -1;

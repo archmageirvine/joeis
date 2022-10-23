@@ -3,6 +3,7 @@ package irvine.oeis.a299;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000078;
 import irvine.oeis.a001.A001631;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001631;
  * A299399 a(n) = a(n-1)*a(n-2)*a(n-3)*a(n-4); a(0..3) = (1, 1, 2, 3).
  * @author Georg Fischer
  */
-public class A299399 implements Sequence {
+public class A299399 extends Sequence0 {
 
   final Sequence mA000078 = new A000078();
   final Sequence mA001631 = new A001631();

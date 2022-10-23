@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002783 2*(3^n - 2^n) + 1.
  * @author Sean A. Irvine
  */
-public class A002783 implements Sequence {
+public class A002783 extends Sequence0 {
 
   private Z mTwos = Z.ONE;
   private Z mThrees = Z.ONE;

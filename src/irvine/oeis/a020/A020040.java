@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020040 a(n) = round( Gamma(n+1/5)/Gamma(1/5) ).
  * @author Sean A. Irvine
  */
-public class A020040 implements Sequence {
+public class A020040 extends Sequence0 {
 
   private static final Q C = new Q(1, 5);
   private int mN = -2;

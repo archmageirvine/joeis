@@ -2,13 +2,13 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A062329 A062329 a(n) = (sum of digits of n) - (product of digits of n).
  * @author Georg Fischer
  */
-public class A062329 implements Sequence {
+public class A062329 extends Sequence0 {
 
   private long mN = -1;
 

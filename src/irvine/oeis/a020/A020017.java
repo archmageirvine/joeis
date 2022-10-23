@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020017 Nearest integer to Gamma(n + 3/10)/Gamma(3/10).
  * @author Sean A. Irvine
  */
-public class A020017 implements Sequence {
+public class A020017 extends Sequence0 {
 
   private static final Q C = new Q(3, 10);
   private int mN = -2;

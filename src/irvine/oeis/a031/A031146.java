@@ -1,14 +1,14 @@
 package irvine.oeis.a031;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A031146 Exponent of the least power of 2 having exactly n zeros in its decimal representation.
  * @author Sean A. Irvine
  */
-public class A031146 implements Sequence {
+public class A031146 extends Sequence0 {
 
   private final DynamicIntArray mSmallest = new DynamicIntArray();
   private int mN = -1;

@@ -3,6 +3,7 @@ package irvine.oeis.a229;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 import irvine.oeis.a011.A011782;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a011.A011782;
  * A229936 Sum of all parts of all compositions of n with at least two parts in increasing order.
  * @author Georg Fischer
  */
-public class A229936 implements Sequence {
+public class A229936 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   final Sequence mA011782 = new A011782();

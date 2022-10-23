@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a210.A210696;
 
 
@@ -9,7 +9,7 @@ import irvine.oeis.a210.A210696;
  * A002710 Triangulations of the disk G_{n,1}.
  * @author Sean A. Irvine
  */
-public class A002710 implements Sequence {
+public class A002710 extends Sequence0 {
 
   protected final A210696 mA = new A210696();
   private int mN = -1;

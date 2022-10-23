@@ -2,13 +2,13 @@ package irvine.oeis.a033;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A033467 Partial sums of sequence {1/(i^2+1): i=0..n} (numerators).
  * @author Sean A. Irvine
  */
-public class A033467 implements Sequence {
+public class A033467 extends Sequence0 {
 
   private long mN = -1;
   private Q mSum = Q.ZERO;

@@ -3,13 +3,14 @@ package irvine.oeis.a334;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a019.A019565;
 
 /**
  * A334110 The squares of squarefree numbers (A062503), ordered lexicographically according to their prime factors. a(n) = Product_{k in I} prime(k+1)^2, where I are the indices of nonzero binary digits in n = Sum_{k in I} 2^k.
  * @author Georg Fischer
  */
-public class A334110 implements Sequence {
+public class A334110 extends Sequence0 {
 
   final Sequence mA019565 = new A019565();
   @Override

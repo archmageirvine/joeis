@@ -3,14 +3,14 @@ package irvine.oeis.a052;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
  * A052484 Let P = all numbers that can be obtained by permuting the digits of n and possibly adding or omitting zeros; a(n) = |n-q| where q in P is the closest number to n different from n (a(n)=0 if no such q exists).
  * @author Sean A. Irvine
  */
-public class A052484 implements Sequence {
+public class A052484 extends Sequence0 {
 
   private long mN = -1;
 

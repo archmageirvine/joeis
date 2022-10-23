@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038393 Number of 4n-step self-avoiding closed paths on first quadrant grid, passing through origin, symmetric about line y = x.
  * @author Sean A. Irvine
  */
-public class A038393 implements Sequence {
+public class A038393 extends Sequence0 {
 
   // Compute paths of length 2n such that the final point is on the line y=x
   // and no other point (except the origin) is on y=x.  Thus on reflection

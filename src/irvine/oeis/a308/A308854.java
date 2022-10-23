@@ -3,13 +3,14 @@ package irvine.oeis.a308;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a259.A259195;
 
 /**
  * A308854 Sum of all the parts in the partitions of n into 5 primes.
  * @author Georg Fischer
  */
-public class A308854 implements Sequence {
+public class A308854 extends Sequence0 {
 
   final Sequence mA259195 = new A259195();
   protected long mN;

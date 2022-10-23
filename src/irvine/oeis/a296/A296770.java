@@ -3,6 +3,7 @@ package irvine.oeis.a296;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002457;
 import irvine.oeis.a008.A008549;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a008.A008549;
  * A296770 Row sums of A050158.
  * @author Georg Fischer
  */
-public class A296770 implements Sequence {
+public class A296770 extends Sequence0 {
 
   final Sequence mA002457 = new A002457();
   final Sequence mA008549 = new A008549();

@@ -3,14 +3,14 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A065719 Number of 8's in decimal expansion of 2^n.
  * @author Georg Fischer
  */
-public class A065719 implements Sequence {
+public class A065719 extends Sequence0 {
 
   protected int mN = -1;
   

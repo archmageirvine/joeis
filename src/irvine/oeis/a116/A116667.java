@@ -2,13 +2,13 @@ package irvine.oeis.a116;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A116667 Greatest digit not used in n (or 10 if n is pandigital).
  * @author Georg Fischer
  */
-public class A116667 implements Sequence {
+public class A116667 extends Sequence0 {
 
   private long mN = -1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a079;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A079896 Discriminants of indefinite binary quadratic forms.
  * @author Sean A. Irvine
  */
-public class A079896 implements Sequence {
+public class A079896 extends Sequence0 {
 
   private Z mN = Z.FOUR;
 

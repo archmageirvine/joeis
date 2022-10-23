@@ -3,6 +3,7 @@ package irvine.oeis.a176;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000120;
 import irvine.oeis.a023.A023416;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a023.A023416;
  * A176893 a(n) = 2^(number of zeros in binary expansion of n) * 3^(numbers of ones in binary expansion of n).
  * @author Georg Fischer
  */
-public class A176893 implements Sequence {
+public class A176893 extends Sequence0 {
 
   final Sequence mA000120 = new A000120();
   final Sequence mA023416 = new A023416();

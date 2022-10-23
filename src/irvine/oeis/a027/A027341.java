@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027341 Number of partitions of n that do not contain 7 as a part.
  * @author Sean A. Irvine
  */
-public class A027341 implements Sequence {
+public class A027341 extends Sequence0 {
 
   private int mN = -1;
 

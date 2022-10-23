@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004272 1, 3, 5 and the even numbers.
  * @author Sean A. Irvine
  */
-public class A004272 implements Sequence {
+public class A004272 extends Sequence0 {
 
   private long mN = -1;
 

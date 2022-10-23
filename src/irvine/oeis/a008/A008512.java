@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008512 Number of points on the surface of 5-dimensional cube.
  * @author Sean A. Irvine
  */
-public class A008512 implements Sequence {
+public class A008512 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

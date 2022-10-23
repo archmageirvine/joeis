@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038665 Convolution of A007054 (super ballot numbers) with A000984 (central binomial coefficients).
  * @author Sean A. Irvine
  */
-public class A038665 implements Sequence {
+public class A038665 extends Sequence0 {
 
   private long mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001953 a(n) = floor((n + 1/2) * sqrt(2)).
  * @author Sean A. Irvine
  */
-public class A001953 implements Sequence {
+public class A001953 extends Sequence0 {
 
   private long mN = -1;
 

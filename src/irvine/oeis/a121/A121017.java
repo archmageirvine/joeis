@@ -3,6 +3,7 @@ package irvine.oeis.a121;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000110;
 import irvine.oeis.a000.A000670;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000670;
  * A121017 Stirling transform of A104600.
  * @author Georg Fischer
  */
-public class A121017 implements Sequence {
+public class A121017 extends Sequence0 {
 
   final Sequence mA000110 = new A000110();
   final Sequence mA000670 = new A000670();

@@ -1,13 +1,13 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035222 Number of squares that appear as substrings in n.
  * @author Sean A. Irvine
  */
-public class A035222 implements Sequence {
+public class A035222 extends Sequence0 {
 
   private long mN = -1;
 

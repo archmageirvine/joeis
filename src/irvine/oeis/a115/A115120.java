@@ -3,6 +3,7 @@ package irvine.oeis.a115;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005648;
 import irvine.oeis.a045.A045628;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a045.A045628;
  * A115120 Number of imprimitive (periodic) 2n-bead black-white reversible necklaces with n black beads.
  * @author Georg Fischer
  */
-public class A115120 implements Sequence {
+public class A115120 extends Sequence0 {
 
   final Sequence mA005648 = new A005648();
   final Sequence mA045628 = new A045628();

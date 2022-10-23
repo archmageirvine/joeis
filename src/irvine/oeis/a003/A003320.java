@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003320 a(n) = max_{k=0..n} k^(n-k).
  * @author Sean A. Irvine
  */
-public class A003320 implements Sequence {
+public class A003320 extends Sequence0 {
 
   private int mN = -1;
 

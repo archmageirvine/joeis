@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056564 Number of times primes can be produced by taking the absolute difference between the n-th triangular number and another triangular number.
  * @author Sean A. Irvine
  */
-public class A056564 implements Sequence {
+public class A056564 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

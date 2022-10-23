@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002720 Number of partial permutations of an n-set; number of n X n binary matrices with at most one 1 in each row and column.
  * @author Sean A. Irvine
  */
-public class A002720 implements Sequence {
+public class A002720 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.TWO;

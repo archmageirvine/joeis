@@ -3,6 +3,7 @@ package irvine.oeis.a081;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a033.A033999;
 import irvine.oeis.a209.A209229;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a209.A209229;
  * A081729 Expansion of Sum(k&gt;=0, x^(2^k)) + 1/(1+x). First differences of A007456 (gossip sequence) for n&gt;1.
  * @author Georg Fischer
  */
-public class A081729 implements Sequence {
+public class A081729 extends Sequence0 {
 
   final Sequence mA033999 = new A033999();
   final Sequence mA209229 = new A209229();

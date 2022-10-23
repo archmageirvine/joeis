@@ -3,6 +3,7 @@ package irvine.oeis.a321;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000142;
 import irvine.oeis.a000.A000217;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000217;
  * A321581 a(n) is the sum of first n natural numbers raised to the product of first n natural numbers.
  * @author Georg Fischer
  */
-public class A321581 implements Sequence {
+public class A321581 extends Sequence0 {
 
   final Sequence mA000142 = new A000142();
   final Sequence mA000217 = new A000217();

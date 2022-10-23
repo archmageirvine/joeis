@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020080 a(n) = floor( Gamma(n + 5/6)/Gamma(5/6) ).
  * @author Sean A. Irvine
  */
-public class A020080 implements Sequence {
+public class A020080 extends Sequence0 {
 
   private static final Q C = new Q(5, 6);
   private int mN = -2;

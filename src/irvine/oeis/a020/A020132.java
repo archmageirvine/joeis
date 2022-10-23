@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020132 Ceiling of GAMMA(n+1/4)/GAMMA(1/4).
  * @author Sean A. Irvine
  */
-public class A020132 implements Sequence {
+public class A020132 extends Sequence0 {
 
   private int mN = -2;
   private Q mA = Q.ONE;

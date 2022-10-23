@@ -3,13 +3,13 @@ package irvine.oeis.a049;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049399 A generalized difference set on the set of all integers (lambda = 2).
  * @author Sean A. Irvine
  */
-public class A049399 implements Sequence {
+public class A049399 extends Sequence0 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final TreeSet<Z> mDiffs = new TreeSet<>();

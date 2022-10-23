@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A091345 Exponential convolution of A069321(n) with itself, where we set A069321(0)=0.
  * E.g.f.: (exp(x)-1)^2 / (2-exp(x))^4
  * @author Georg Fischer
  */
-public class A091345 implements Sequence {
+public class A091345 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

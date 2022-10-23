@@ -2,7 +2,7 @@ package irvine.oeis.a038;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038568 Numerators in canonical bijection from positive integers to positive rationals.
@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  * 1/1, 1/2, 2/1, 1/3, 3/1, 2/3, 3/2, 1/4, 4/1, 3/4, 4/3
  * @author Georg Fischer
  */
-public class A038568 implements Sequence {
+public class A038568 extends Sequence0 {
 
   protected long mNum = 0;
   protected long mDen = 1;

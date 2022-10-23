@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000606 Number of nonnegative solutions to x^2 + y^2 + z^2 &lt;= n.
  * @author Sean A. Irvine
  */
-public class A000606 implements Sequence {
+public class A000606 extends Sequence0 {
 
   private long mN = -1;
 

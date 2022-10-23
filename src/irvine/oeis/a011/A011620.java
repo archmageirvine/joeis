@@ -2,13 +2,13 @@ package irvine.oeis.a011;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011620 Legendre symbol (n,191).
  * @author Sean A. Irvine
  */
-public class A011620 implements Sequence {
+public class A011620 extends Sequence0 {
 
   private long mN = -1;
 

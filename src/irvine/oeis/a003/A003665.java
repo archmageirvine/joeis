@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003665 a(n) = 2^(n-1)*( 2^n + (-1)^n ).
  * @author Sean A. Irvine
  */
-public class A003665 implements Sequence {
+public class A003665 extends Sequence0 {
 
   private int mN = -1;
 

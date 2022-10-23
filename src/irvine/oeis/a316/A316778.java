@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A316778 a(n) = exp(-1/2) * Sum_{k&gt;=0} H_n(k) / (k!*2^k), where H_n(x) is n-th Hermite polynomial.
  * E.g.f.: exp(exp(2*x)/2 - x^2 - 1/2)
  * @author Georg Fischer
  */
-public class A316778 implements Sequence {
+public class A316778 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

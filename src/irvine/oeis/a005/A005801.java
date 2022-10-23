@@ -4,14 +4,14 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000182;
 
 /**
  * A005801 Generalized tangent numbers of type 3^(2n+1).
  * @author Sean A. Irvine
  */
-public class A005801 implements Sequence {
+public class A005801 extends Sequence0 {
 
   private final MemorySequence mA000182 = MemorySequence.cachedSequence(new PrependSequence(new A000182(), 0));
   private Z mA = Z.THREE;

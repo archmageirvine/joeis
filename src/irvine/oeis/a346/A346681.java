@@ -4,13 +4,13 @@ package irvine.oeis.a346;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A346681 a(n) = Sum_{k=0..n} (-1)^(n-k) * binomial(5*k,k) / (4*k + 1).
  * @author Georg Fischer
  */
-public class A346681 implements Sequence {
+public class A346681 extends Sequence0 {
 
   private int mN = -1;
 

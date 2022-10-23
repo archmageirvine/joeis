@@ -3,13 +3,13 @@ package irvine.oeis.a108;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A108812 11^n mod 50.
  * @author Georg Fischer
  */
-public class A108812 implements Sequence {
+public class A108812 extends Sequence0 {
 
   private int mN = 0;
   private final Z mBase = Z.valueOf(11);

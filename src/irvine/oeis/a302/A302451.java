@@ -3,13 +3,14 @@ package irvine.oeis.a302;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000120;
 
 /**
  * A302451 a(n) = [x^n] Product_{k&gt;=0} (1 + n*x^(2^k)).
  * @author Georg Fischer
  */
-public class A302451 implements Sequence {
+public class A302451 extends Sequence0 {
 
   final Sequence mA000120 = new A000120();
   protected long mN;

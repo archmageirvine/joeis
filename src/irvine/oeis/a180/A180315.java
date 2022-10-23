@@ -3,6 +3,7 @@ package irvine.oeis.a180;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000367;
 import irvine.oeis.a002.A002445;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002445;
  * A180315 AbsoluteValue(Numerator(Bernoulli(2n))) mod denominator(Bernoulli(2n)).
  * @author Georg Fischer
  */
-public class A180315 implements Sequence {
+public class A180315 extends Sequence0 {
 
   final Sequence mA000367 = new A000367();
   final Sequence mA002445 = new A002445();

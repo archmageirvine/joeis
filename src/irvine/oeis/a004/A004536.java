@@ -5,13 +5,13 @@ import irvine.math.group.QPolynomialRingField;
 import irvine.math.polynomial.QPolynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004536 Theta series of 15-dimensional unimodular lattice A15+.
  * @author Sean A. Irvine
  */
-public class A004536 implements Sequence {
+public class A004536 extends Sequence0 {
 
   private static final QPolynomialRingField<Z> RING = new QPolynomialRingField<>(IntegerField.SINGLETON);
   private static final Z Z30 = Z.valueOf(30);

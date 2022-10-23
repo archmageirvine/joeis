@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A245503 Number of endofunctions f on [n] such that f^7(i) = f(i) for all i in [n].
  * E.g.f.: exp(x*exp(x)+x^2*exp(x)^2/2+x^3*exp(x)^3/3+x^6*exp(x)^6/6)
  * @author Georg Fischer
  */
-public class A245503 implements Sequence {
+public class A245503 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

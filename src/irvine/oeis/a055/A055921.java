@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055921 Array giving susceptibility of 2-dimensional Ising model for 1 particle excitation (read by antidiagonals).
  * @author Sean A. Irvine
  */
-public class A055921 implements Sequence {
+public class A055921 extends Sequence0 {
 
   /* A(x, y)=(1-x^2)*(1-y^2)/(1-x-y-xy)^2 * (1 - 16*x^2*y^2/((1-x^2)^2*(1-y^2)^2))^(1/4) */
 

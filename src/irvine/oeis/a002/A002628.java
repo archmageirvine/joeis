@@ -3,14 +3,14 @@ package irvine.oeis.a002;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000166;
 
 /**
  * A002628 Number of permutations of length n without 3-sequences.
  * @author Sean A. Irvine
  */
-public class A002628 implements Sequence {
+public class A002628 extends Sequence0 {
 
   private final MemorySequence mD = MemorySequence.cachedSequence(new A000166());
   private int mN = -1;

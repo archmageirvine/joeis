@@ -4,13 +4,14 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a014.A014486;
 
 /**
  * A057520 a(n) = A014486(n)/2. In binary expansion there is one more 1 than 0 and reading from the left (the most significant bit) to right, the number of 0's never exceed the number of 1's.
  * @author Georg Fischer
  */
-public class A057520 implements Sequence {
+public class A057520 extends Sequence0 {
 
   final Sequence mA014486 = new A014486();
   @Override

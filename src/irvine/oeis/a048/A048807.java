@@ -7,12 +7,13 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048807 Matrix square of A048804.
  * @author Sean A. Irvine
  */
-public class A048807 implements Sequence {
+public class A048807 extends Sequence0 {
 
   private final Sequence mSeq;
   private final DefaultMatrix<Q> mA = new DefaultMatrix<>(0, 0, Q.ZERO);

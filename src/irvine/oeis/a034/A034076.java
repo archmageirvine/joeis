@@ -4,13 +4,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034076 a(0)=2; a(n) is the smallest k &gt; a(n-1) such that the fractional part of k^(1/11) starts with n.
  * @author Sean A. Irvine
  */
-public class A034076 implements Sequence {
+public class A034076 extends Sequence0 {
 
   private static final CR C = CR.valueOf(new Q(1, 11));
   private long mN = -1;

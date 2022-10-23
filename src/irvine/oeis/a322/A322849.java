@@ -3,6 +3,7 @@ package irvine.oeis.a322;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a065.A065710;
 import irvine.oeis.a065.A065712;
 import irvine.oeis.a065.A065715;
@@ -12,7 +13,7 @@ import irvine.oeis.a065.A065719;
  * A322849 Number of times 2^k (for k &lt; 4) appears as a substring within 2^n.
  * @author Georg Fischer
  */
-public class A322849 implements Sequence {
+public class A322849 extends Sequence0 {
 
   final Sequence mA065710 = new A065710();
   final Sequence mA065712 = new A065712();

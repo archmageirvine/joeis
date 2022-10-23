@@ -3,6 +3,7 @@ package irvine.oeis.a331;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 import irvine.oeis.a002.A002774;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002774;
  * A331197 Number of nonnegative integer matrices with 2 distinct columns and any number of nonzero rows with each column sum being n and rows in nonincreasing lexicographic order.
  * @author Georg Fischer
  */
-public class A331197 implements Sequence {
+public class A331197 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   final Sequence mA002774 = new A002774();

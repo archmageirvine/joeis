@@ -3,12 +3,13 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a048.A048760;
 /**
  * A053186 Square excess of n: difference between n and largest square &lt;= n.
  * @author Georg Fischer
  */
-public class A053186 implements Sequence {
+public class A053186 extends Sequence0 {
 
   private final Sequence mA048760 = new A048760();
   protected long mN;

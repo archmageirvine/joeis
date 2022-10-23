@@ -4,14 +4,14 @@ import java.util.HashMap;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Point;
 
 /**
  * A097474 Triangle T(n,k) read by rows: see formula lines for definition.
  * @author Sean A. Irvine
  */
-public class A097474 implements Sequence {
+public class A097474 extends Sequence0 {
 
   private int mN = -1;
   private int mK = 0;

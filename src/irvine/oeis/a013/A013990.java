@@ -11,14 +11,14 @@ import java.util.TreeSet;
 
 import irvine.math.OrderedPair;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A013990 Number of edge-disjoint paths between opposite corners of n X n grid.
  * @author Sean A. Irvine
  */
-public class A013990 implements Sequence {
+public class A013990 extends Sequence0 {
 
   // Based loosely on the description at http://keithlynch.net/DanHoey/95.txt
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));

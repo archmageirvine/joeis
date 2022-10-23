@@ -2,13 +2,13 @@ package irvine.oeis.a093;
 // manually floor at 2021-09-01 16:25
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A093392 [n/25] + [(n+1)/25] + [(n+2)/25] + [(n+3)/25] + [(n+4)/25].
  * @author Georg Fischer
  */
-public class A093392 implements Sequence {
+public class A093392 extends Sequence0 {
 
   protected long mN;
   

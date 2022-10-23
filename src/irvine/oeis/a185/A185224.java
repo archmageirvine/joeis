@@ -3,13 +3,14 @@ package irvine.oeis.a185;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a008.A008484;
 
 /**
  * A185224 Number of disconnected 2-regular simple graphs on n vertices with girth at least 4.
  * @author Georg Fischer
  */
-public class A185224 implements Sequence {
+public class A185224 extends Sequence0 {
 
   final Sequence mA008484 = new A008484();
   final Sequence mA185114 = new A185114();

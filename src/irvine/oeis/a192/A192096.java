@@ -3,13 +3,14 @@ package irvine.oeis.a192;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a022.A022567;
 
 /**
  * A192096 Maximum number of tatami tilings of any m-by-m square region with exactly n horizontal dimers and m monomers.
  * @author Georg Fischer
  */
-public class A192096 implements Sequence {
+public class A192096 extends Sequence0 {
 
   final Sequence mA022567 = new A022567();
   @Override

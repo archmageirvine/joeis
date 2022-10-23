@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002999 Expansion of (1+x*exp(x))^2.
  * @author Sean A. Irvine
  */
-public class A002999 implements Sequence {
+public class A002999 extends Sequence0 {
 
   private int mN = -1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007798 Expected number of random moves in Tower of Hanoi problem with n disks starting with a randomly chosen position and ending at a position with all disks on the same peg.
  * @author Sean A. Irvine
  */
-public class A007798 implements Sequence {
+public class A007798 extends Sequence0 {
 
   private Z mFives = null;
   private Z mThrees = Z.TWO;

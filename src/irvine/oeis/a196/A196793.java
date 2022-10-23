@@ -1,14 +1,14 @@
 package irvine.oeis.a196;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A196793 a(n) = T(n,n), array T given by A047848.
  * a(n) = ((n+3)^n+n+1)/(n+2).
  * @author Georg Fischer
  */
-public class A196793 implements Sequence {
+public class A196793 extends Sequence0 {
 
   protected int mN = -1;
 

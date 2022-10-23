@@ -2,13 +2,14 @@ package irvine.oeis.a023;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
 
 /**
  * A023183 a(n) = least k such that Fibonacci(k) ends with n, or -1 if there are none.
  * @author Sean A. Irvine
  */
-public class A023183 implements Sequence {
+public class A023183 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 10;

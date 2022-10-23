@@ -6,13 +6,13 @@ import java.util.List;
 import irvine.math.api.Set;
 import irvine.math.set.IntegerSet;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000372 Dedekind numbers or Dedekind's problem: number of monotone Boolean functions of n variables, number of antichains of subsets of an n-set, number of elements in a free distributive lattice on n generators, number of Sperner families.
  * @author Sean A. Irvine
  */
-public class A000372 implements Sequence {
+public class A000372 extends Sequence0 {
 
   // Only good for about 7 terms
 

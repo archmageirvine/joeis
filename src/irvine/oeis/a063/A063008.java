@@ -3,13 +3,13 @@ package irvine.oeis.a063;
 import irvine.factor.prime.Fast;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A063008 Canonical partition sequence (see A080577) encoded by prime factorization. The partition [p1,p2,p3,...] with p1 &gt;= p2 &gt;= p3 &gt;= ... is encoded as 2^p1 * 3^p2 * 5^p3 * ... .
  * @author Sean A. Irvine
  */
-public class A063008 implements Sequence {
+public class A063008 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private int mN = 1;

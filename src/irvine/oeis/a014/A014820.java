@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014820 a(n) = (1/3)*(n^2 + 2*n + 3)*(n+1)^2.
  * @author Sean A. Irvine
  */
-public class A014820 implements Sequence {
+public class A014820 extends Sequence0 {
 
   private long mN = 0;
 

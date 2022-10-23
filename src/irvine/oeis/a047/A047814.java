@@ -1,13 +1,13 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A047814 Largest prime substring of n, or 0 if no such substring exists.
  * @author Sean A. Irvine
  */
-public class A047814 implements Sequence {
+public class A047814 extends Sequence0 {
 
   private long mN = -1;
   private int mDigits = 1;

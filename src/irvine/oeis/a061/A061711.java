@@ -1,13 +1,13 @@
 package irvine.oeis.a061;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A061711 a(n) = n!*n^n.
  * @author Georg Fischer
  */
-public class A061711 implements Sequence {
+public class A061711 extends Sequence0 {
 
   protected int mN = -1;
   protected Z mF = Z.ONE;

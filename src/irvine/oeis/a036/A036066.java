@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036066 The summarize Lucas sequence: summarize the previous two terms, start with 1, 3.
  * @author Sean A. Irvine
  */
-public class A036066 implements Sequence {
+public class A036066 extends Sequence0 {
 
   private final Z mA0;
   private final Z mB0;

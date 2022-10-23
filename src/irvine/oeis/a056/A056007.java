@@ -3,6 +3,7 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000079;
 import irvine.oeis.a017.A017912;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a017.A017912;
  * A056007 Difference between 2^n and largest square strictly less than 2^n.
  * @author Georg Fischer
  */
-public class A056007 implements Sequence {
+public class A056007 extends Sequence0 {
 
   final Sequence mA000079 = new A000079();
   final Sequence mA017912 = new A017912();

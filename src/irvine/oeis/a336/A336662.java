@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.NonadjacentWalker;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A336662 Number of n-step self-avoiding walks on the Manhattan lattice with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
-public class A336662 implements Sequence {
+public class A336662 extends Sequence0 {
 
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new NonadjacentWalker(Lattices.MANHATTAN, Lattices.Z2));
   private final long mC = Lattices.MANHATTAN.neighbour(Lattices.MANHATTAN.origin(), 0);

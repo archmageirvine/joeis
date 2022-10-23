@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001617;
 import irvine.util.array.DynamicIntArray;
 
@@ -11,7 +11,7 @@ import irvine.util.array.DynamicIntArray;
  * A054728 a(n) is the smallest level N such that genus of modular curve X_0(N) is n (or -1 if no such curve exists).
  * @author Sean A. Irvine
  */
-public class A054728 implements Sequence {
+public class A054728 extends Sequence0 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A001617());
   private final DynamicIntArray mInv = new DynamicIntArray();

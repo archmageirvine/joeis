@@ -3,14 +3,14 @@ package irvine.oeis.a336;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Point;
 
 /**
  * A336742 Number of self-avoiding cycles of length 2n on the half-Manhattan lattice.
  * @author Sean A. Irvine
  */
-public class A336742 implements Sequence {
+public class A336742 extends Sequence0 {
 
   private int mN = -2;
   private long mCount = 0;

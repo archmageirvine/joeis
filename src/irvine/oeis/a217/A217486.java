@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A217486 Binomial convolution of the numbers in sequence A080253.
  * E.g.f.: exp(2*x)/(2-exp(2*x))^2
  * @author Georg Fischer
  */
-public class A217486 implements Sequence {
+public class A217486 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

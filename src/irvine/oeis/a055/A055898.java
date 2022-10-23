@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055898 Triangle: Number of directed site animals on a square lattice with n+1 total sites and k sites supported in one particular way.
  * @author Sean A. Irvine
  */
-public class A055898 implements Sequence {
+public class A055898 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

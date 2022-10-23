@@ -3,13 +3,14 @@ package irvine.oeis.a060;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002262;
 
 /**
  * A060510 Alternating with hexagonal stutters: if n is hexagonal (2k^2 - k, i.e., A000384) then a(n)=a(n-1), otherwise a(n) = 1 - a(n-1).
  * @author Georg Fischer
  */
-public class A060510 implements Sequence {
+public class A060510 extends Sequence0 {
 
   final Sequence mA002262 = new A002262();
   @Override

@@ -3,13 +3,14 @@ package irvine.oeis.a228;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007088;
 
 /**
  * A228071 Write n in binary and interpret as a decimal number; a(n) is this quantity minus n.
  * @author Georg Fischer
  */
-public class A228071 implements Sequence {
+public class A228071 extends Sequence0 {
 
   final Sequence mA007088 = new A007088();
   protected long mN;

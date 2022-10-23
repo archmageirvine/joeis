@@ -3,13 +3,14 @@ package irvine.oeis.a097;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a033.A033049;
 
 /**
  * A097259 Numbers whose set of base 13 digits is {0,C}, where C base 13 = 12 base 10.
  * @author Georg Fischer
  */
-public class A097259 implements Sequence {
+public class A097259 extends Sequence0 {
 
   final Sequence mA033049 = new A033049();
   @Override

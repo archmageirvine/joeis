@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001467 Denominators of an expansion for Pi.
  * @author Sean A. Irvine
  */
-public class A001467 implements Sequence {
+public class A001467 extends Sequence0 {
 
   private CR mX = CR.PI;
 

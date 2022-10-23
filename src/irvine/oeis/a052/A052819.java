@@ -3,13 +3,13 @@ package irvine.oeis.a052;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052819 E.g.f. equals the series reversion of x + x*log(1-x).
  * @author Sean A. Irvine
  */
-public class A052819 implements Sequence {
+public class A052819 extends Sequence0 {
 
   private int mN = -1;
 

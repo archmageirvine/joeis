@@ -2,13 +2,13 @@ package irvine.oeis.a011;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011548 Decimal expansion of sqrt(2) rounded to n places.
  * @author Sean A. Irvine
  */
-public class A011548 implements Sequence {
+public class A011548 extends Sequence0 {
 
   private Z mA = null;
 

@@ -3,12 +3,13 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000244;
 /**
  * A056577 Difference between 3^n and highest power of 2 less than or equal to 3^n.
  * @author Georg Fischer
  */
-public class A056577 implements Sequence {
+public class A056577 extends Sequence0 {
 
   private final Sequence mA000244 = new A000244();
   private final Sequence mA056576 = new A056576();

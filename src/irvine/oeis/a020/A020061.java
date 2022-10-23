@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020061 Integer part of GAMMA(n+7/10)/GAMMA(7/10).
  * @author Sean A. Irvine
  */
-public class A020061 implements Sequence {
+public class A020061 extends Sequence0 {
 
   private static final Q C = new Q(7, 10);
   private int mN = -2;

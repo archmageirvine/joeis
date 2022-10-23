@@ -1,14 +1,14 @@
 package irvine.oeis.a165;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A165956 a(0) = 1. For n &gt;=1, a(n) = the number of earlier terms that, when written in binary, are substrings in binary n.
  * @author Sean A. Irvine
  */
-public class A165956 implements Sequence {
+public class A165956 extends Sequence0 {
 
   private final LongDynamicLongArray mSeq = new LongDynamicLongArray();
   private long mN = -1;

@@ -2,13 +2,13 @@ package irvine.oeis.a060;
 
 import irvine.games.RubikCube;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A060010 Number of 2n-move sequences on the 3 X 3 X 3 Rubik's Cube (only quarter-twists count as moves) that leave the cube unchanged.
  * @author Sean A. Irvine
  */
-public class A060010 implements Sequence {
+public class A060010 extends Sequence0 {
 
   private int mN = -2;
   private long mCount = 0;

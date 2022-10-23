@@ -3,13 +3,14 @@ package irvine.oeis.a309;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007306;
 
 /**
  * A309256 a(n) = n + 1 - Sum_{k=0..n} (Stirling2(n,k) mod 2).
  * @author Georg Fischer
  */
-public class A309256 implements Sequence {
+public class A309256 extends Sequence0 {
 
   final Sequence mA007306 = new A007306();
   protected long mN;

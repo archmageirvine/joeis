@@ -3,14 +3,14 @@ package irvine.oeis.a160;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A160383 Number of 3's in base-4 representation of n.
  * @author Georg Fischer
  */
-public class A160383 implements Sequence {
+public class A160383 extends Sequence0 {
 
   protected int mN = -1;
   

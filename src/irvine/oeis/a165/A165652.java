@@ -3,6 +3,7 @@ package irvine.oeis.a165;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a008.A008483;
 import irvine.oeis.a179.A179184;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a179.A179184;
  * A165652 Number of disconnected 2-regular graphs on n vertices.
  * @author Georg Fischer
  */
-public class A165652 implements Sequence {
+public class A165652 extends Sequence0 {
 
   final Sequence mA008483 = new A008483();
   final Sequence mA179184 = new A179184();

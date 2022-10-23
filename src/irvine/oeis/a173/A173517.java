@@ -3,6 +3,7 @@ package irvine.oeis.a173;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a010.A010052;
 import irvine.oeis.a028.A028391;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a028.A028391;
  * A173517 a(n) = k if n is the k-th nonsquare, zero otherwise.
  * @author Georg Fischer
  */
-public class A173517 implements Sequence {
+public class A173517 extends Sequence0 {
 
   final Sequence mA010052 = new A010052();
   final Sequence mA028391 = new A028391();

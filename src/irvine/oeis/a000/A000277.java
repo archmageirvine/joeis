@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000277 3*n - 2*floor(sqrt(4*n+5)) + 5.
  * @author Sean A. Irvine
  */
-public class A000277 implements Sequence {
+public class A000277 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055657 If a(n) is prime, a(n+1) = a(n) followed by a 1; if a(n) is composite, a(n+1) = concatenation of distinct prime factors of a(n).
  * @author Sean A. Irvine
  */
-public class A055657 implements Sequence {
+public class A055657 extends Sequence0 {
 
   private Z mA = null;
 

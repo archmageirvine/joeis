@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001579 a(n) = 3^n + 5^n + 6^n.
  * @author Sean A. Irvine
  */
-public class A001579 implements Sequence {
+public class A001579 extends Sequence0 {
 
   private Z mThree = null;
   private Z mFive = Z.ONE;

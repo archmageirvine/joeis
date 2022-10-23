@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007744 Expansion of (1+6*x)/(1-4*x)^(7/2).
  * @author Sean A. Irvine
  */
-public class A007744 implements Sequence {
+public class A007744 extends Sequence0 {
 
   private long mN = -1;
 

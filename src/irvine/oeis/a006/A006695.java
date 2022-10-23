@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006695 a(2n)=2*a(2n-2)^2-1, a(2n+1)=2a(2n)-1, a(0)=2.
  * @author Sean A. Irvine
  */
-public class A006695 implements Sequence {
+public class A006695 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

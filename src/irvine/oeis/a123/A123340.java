@@ -1,13 +1,13 @@
 package irvine.oeis.a123;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A123340 Least m such that 2^n+3^m is prime.
  * @author Georg Fischer
  */
-public class A123340 implements Sequence {
+public class A123340 extends Sequence0 {
 
   private int mN;
   private Z mBase1;

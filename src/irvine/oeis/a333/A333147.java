@@ -3,13 +3,14 @@ package irvine.oeis.a333;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000009;
 
 /**
  * A333147 Number of compositions of n that are either strictly increasing or strictly decreasing.
  * @author Georg Fischer
  */
-public class A333147 implements Sequence {
+public class A333147 extends Sequence0 {
 
   final Sequence mA000009 = new A000009();
   @Override

@@ -2,13 +2,13 @@ package irvine.oeis.a015;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A015884 A modified Pierce-type expansion for Pi: Pi = a(0) + Sum_{n&gt;=1} (-1)^floor(n/2)/(Product_{i=1..n} a(i)).
  * @author Sean A. Irvine
  */
-public class A015884 implements Sequence {
+public class A015884 extends Sequence0 {
 
   // Modified Pierce expansion
 

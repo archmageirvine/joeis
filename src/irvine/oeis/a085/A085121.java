@@ -5,13 +5,13 @@ import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A085121 Number of ways of writing n as the sum of three odd squares.
  * @author Sean A. Irvine
  */
-public class A085121 implements Sequence {
+public class A085121 extends Sequence0 {
 
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
   private Q mN = Q.ONE_QUARTER.negate();

@@ -5,13 +5,13 @@ import irvine.math.graph.GraphUtils;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035512 Number of unlabeled strongly connected digraphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A035512 implements Sequence {
+public class A035512 extends Sequence0 {
 
   private int mN = -1;
 

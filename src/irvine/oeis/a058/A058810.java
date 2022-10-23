@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058810 The sequence lambda(n,n), where lambda is defined in A055203.
  * @author Sean A. Irvine
  */
-public class A058810 implements Sequence {
+public class A058810 extends Sequence0 {
 
   private long mN = -1;
 

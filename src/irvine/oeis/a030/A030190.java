@@ -3,13 +3,13 @@ package irvine.oeis.a030;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030190 Binary Champernowne sequence (or word): write the numbers 0,1,2,3,4,... in base 2 and juxtapose.
  * @author Georg Fischer
  */
-public class A030190 implements Sequence {
+public class A030190 extends Sequence0 {
  
   private String mS = "";
   private int mPos = 0;

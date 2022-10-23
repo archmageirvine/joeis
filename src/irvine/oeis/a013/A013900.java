@@ -1,13 +1,13 @@
 package irvine.oeis.a013;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013900 a(n) = 21^(5*n + 3).
  * @author Sean A. Irvine
  */
-public class A013900 implements Sequence {
+public class A013900 extends Sequence0 {
 
   private Z mA = null;
 

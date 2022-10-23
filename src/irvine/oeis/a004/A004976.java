@@ -3,13 +3,13 @@ package irvine.oeis.a004;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004976 a(n) = floor(n*phi^3), where phi=(1+sqrt(5))/2.
  * @author Sean A. Irvine
  */
-public class A004976 implements Sequence {
+public class A004976 extends Sequence0 {
 
   private static final CR PHI = ComputableReals.SINGLETON.pow(CR.PHI, 3);
 

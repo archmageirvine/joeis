@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011887 [ n(n-1)(n-2)/5 ].
  * @author Sean A. Irvine
  */
-public class A011887 implements Sequence {
+public class A011887 extends Sequence0 {
 
   private long mN = -1;
 

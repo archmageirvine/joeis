@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018185 Powers of fifth root of 24 rounded up.
  * @author Sean A. Irvine
  */
-public class A018185 implements Sequence {
+public class A018185 extends Sequence0 {
 
   private Z mN = null;
 

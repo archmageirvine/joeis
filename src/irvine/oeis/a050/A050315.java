@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A050315 Main diagonal of A050314.
  * @author Sean A. Irvine
  */
-public class A050315 implements Sequence {
+public class A050315 extends Sequence0 {
 
   private long mN = -1;
 

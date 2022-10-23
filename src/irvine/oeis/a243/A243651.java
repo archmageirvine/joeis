@@ -2,13 +2,13 @@ package irvine.oeis.a243;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A243651 Nonnegative integers of the form x^2+11y^2.
  * @author Sean A. Irvine
  */
-public class A243651 implements Sequence {
+public class A243651 extends Sequence0 {
 
   private long mN = -1;
 

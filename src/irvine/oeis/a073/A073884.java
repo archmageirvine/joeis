@@ -2,13 +2,13 @@ package irvine.oeis.a073;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A073884 a(1) =2. Let S(k) = sum of k terms. If S(n) is prime then a(n+1) is the smallest prime not included earlier else a(n+1) is the smallest composite number not included earlier.
  * @author Sean A. Irvine
  */
-public class A073884 implements Sequence {
+public class A073884 extends Sequence0 {
 
   private Z mP = Z.TWO;
   private Z mC = Z.THREE;

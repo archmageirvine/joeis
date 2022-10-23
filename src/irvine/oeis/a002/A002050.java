@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002050 Number of simplices in barycentric subdivision of n-simplex.
  * @author Sean A. Irvine
  */
-public class A002050 implements Sequence {
+public class A002050 extends Sequence0 {
 
   private int mN = -1;
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

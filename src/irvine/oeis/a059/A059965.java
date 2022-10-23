@@ -7,14 +7,14 @@ import java.util.TreeMap;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Triple;
 
 /**
  * A059965 For m&gt;0, each n+m &gt; 5 is expressed as Sum_{k = x,y,z}(pk)_m where (pk)_m is a prime with x &lt;= y &lt;= z; a(n) = largest m such that (pk)_1 = (pk)_2 = ... = (pk)_m.
  * @author Sean A. Irvine
  */
-public class A059965 implements Sequence {
+public class A059965 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private final TreeMap<Long, List<Triple<Long>>> mCache = new TreeMap<>();

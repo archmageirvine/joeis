@@ -3,6 +3,7 @@ package irvine.oeis.a237;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a011.A011782;
 import irvine.oeis.a015.A015128;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a015.A015128;
  * A237047 Number of compositions of n minus the number of overpartitions of n.
  * @author Georg Fischer
  */
-public class A237047 implements Sequence {
+public class A237047 extends Sequence0 {
 
   final Sequence mA011782 = new A011782();
   final Sequence mA015128 = new A015128();

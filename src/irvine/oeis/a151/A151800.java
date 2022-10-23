@@ -3,13 +3,14 @@ package irvine.oeis.a151;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007918;
 
 /**
  * A151800 Least prime &gt; n (version 2 of the "next prime" function).
  * @author Georg Fischer
  */
-public class A151800 implements Sequence {
+public class A151800 extends Sequence0 {
 
   final Sequence mA007918 = new A007918();
   /** Construct the sequence. */

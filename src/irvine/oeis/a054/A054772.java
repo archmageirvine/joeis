@@ -4,13 +4,13 @@ import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054772 Triangle T(n,k) of n X n binary matrices with k=0..n^2 ones, up to rotational symmetry.
  * @author Sean A. Irvine
  */
-public class A054772 implements Sequence {
+public class A054772 extends Sequence0 {
 
   private int mN = 0;
   private int mM = -1;

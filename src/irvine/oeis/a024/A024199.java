@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A024199 a(n) = (2n-1)!! * Sum_{k=0..n-1}(-1)^k/(2k+1).
  * @author Sean A. Irvine
  */
-public class A024199 implements Sequence {
+public class A024199 extends Sequence0 {
 
   private Z mA = Z.ZERO;
   private Z mF = Z.ONE;

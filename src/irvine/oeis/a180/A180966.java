@@ -4,14 +4,14 @@ package irvine.oeis.a180;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A180966 Hankel transform of A123164.
  * 2^C(n, 2)*Sum_{k=0..floor(n/2)} C(n-k,k)*(-2)^k*4^(n-2*k).
  * @author Georg Fischer
  */
-public class A180966 implements Sequence {
+public class A180966 extends Sequence0 {
 
   private int mN = -1;
 

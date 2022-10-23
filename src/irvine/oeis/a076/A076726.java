@@ -3,13 +3,14 @@ package irvine.oeis.a076;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000670;
 
 /**
  * A076726 a(n) = Sum_{k&gt;=0} k^n/2^k.
  * @author Georg Fischer
  */
-public class A076726 implements Sequence {
+public class A076726 extends Sequence0 {
 
   final Sequence mA000670 = new A000670();
   @Override

@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A191416 E.g.f. 1/(1-sin(x))^x.
  * E.g.f.: 1/(1-sin(x))^x
  * @author Georg Fischer
  */
-public class A191416 implements Sequence {
+public class A191416 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001957 u-pile positions in the 3-Wythoff game with i=1.
  * @author Sean A. Irvine
  */
-public class A001957 implements Sequence {
+public class A001957 extends Sequence0 {
 
   private static final CR N = CR.valueOf(13).sqrt().subtract(CR.ONE).divide(CR.TWO);
   private static final CR THIRD = CR.THREE.inverse();

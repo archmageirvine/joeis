@@ -5,14 +5,14 @@ import java.util.TreeSet;
 
 import irvine.math.Comparators;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
  * A055090 Number of cycles (excluding fixed points) of the n-th finite permutation in reversed colexicographic ordering (A055089).
  * @author Sean A. Irvine
  */
-public class A055090 implements Sequence {
+public class A055090 extends Sequence0 {
 
   private int mN = 1;
   private final TreeSet<int[]> mReverseColex = new TreeSet<>(Comparators.REVERSE_COLEXICOGRAPHIC);

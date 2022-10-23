@@ -2,14 +2,14 @@ package irvine.oeis.a034;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A034175 a(n) is minimal such that a(n)+a(n-1) is a square and a(n) is not in {a(0), ..., a(n-1)}.
  * @author Sean A. Irvine
  */
-public class A034175 implements Sequence {
+public class A034175 extends Sequence0 {
 
   private final LongDynamicBooleanArray mUsed = new LongDynamicBooleanArray();
   private long mPrev = -1;

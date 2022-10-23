@@ -3,14 +3,14 @@ package irvine.oeis.a007;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000002;
 
 /**
  * A007782 Number of factors in the infinite word formed by the Kolakoski sequence A000002.
  * @author Sean A. Irvine
  */
-public class A007782 implements Sequence {
+public class A007782 extends Sequence0 {
 
   private final TreeSet<Z> mSeen = new TreeSet<>();
   private int mN = -1;

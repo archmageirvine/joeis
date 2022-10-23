@@ -3,13 +3,14 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a053.A053836;
 
 /**
  * A054900 (n) = floor(n/16) + floor(n/256) + floor(n/4096) + floor(n/65536) + ....
  * @author Georg Fischer
  */
-public class A054900 implements Sequence {
+public class A054900 extends Sequence0 {
 
   final Sequence mA053836 = new A053836();
   protected long mN;

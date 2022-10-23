@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A037139 Deficient numbers n such that n-s(n)-s(n-s(n)) = s(s(n))-s(n) or s(n-s(n))-n+s(n) = s(n)-s(s(n)).
  * @author Sean A. Irvine
  */
-public class A037139 implements Sequence {
+public class A037139 extends Sequence0 {
 
   private Z mN = Z.valueOf(99);
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a131;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A131118 a(4n) = -n^2, a(4n+1) = n^2, a(4n+2) = 1-n^2, a(4n+3) = n*(n+1).
  * @author Sean A. Irvine
  */
-public class A131118 implements Sequence {
+public class A131118 extends Sequence0 {
 
   private long mN = -1;
 

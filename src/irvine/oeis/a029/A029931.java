@@ -1,13 +1,13 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A029931 If 2n = Sum 2^e_i, a(n) = Sum e_i.
  * @author Sean A. Irvine
  */
-public class A029931 implements Sequence {
+public class A029931 extends Sequence0 {
 
   private long mN = -1;
 

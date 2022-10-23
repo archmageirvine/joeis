@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038830 Number of primes between n*10^10 and (n+1)*10^10.
  * @author Sean A. Irvine
  */
-public class A038830 implements Sequence {
+public class A038830 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -10000000000L;

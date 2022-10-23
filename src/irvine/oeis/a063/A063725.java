@@ -3,6 +3,7 @@ package irvine.oeis.a063;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000007;
 import irvine.oeis.a000.A000122;
 import irvine.oeis.a004.A004018;
@@ -11,7 +12,7 @@ import irvine.oeis.a004.A004018;
  * A063725 Number of ordered pairs (x,y) of positive integers such that x^2 + y^2 = n.
  * @author Georg Fischer
  */
-public class A063725 implements Sequence {
+public class A063725 extends Sequence0 {
 
   final Sequence mA000007 = new A000007();
   final Sequence mA000122 = new A000122();

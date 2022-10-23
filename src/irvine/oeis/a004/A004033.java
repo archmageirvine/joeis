@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004033 Theta series of lattice A_2 tensor E_8 (dimension 16, det. 6561, min. norm 4). Also theta series of Eisenstein version of E_8 lattice.
  * @author Sean A. Irvine
  */
-public class A004033 implements Sequence {
+public class A004033 extends Sequence0 {
 
   // After Michael Somos
 

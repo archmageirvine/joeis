@@ -2,13 +2,13 @@ package irvine.oeis.a033;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A033820 Triangle read by rows: T(k,j) = ((2*j+1)/(k+1))*binomial(2*j,j)*binomial(2*k-2*j,k-j).
  * @author Sean A. Irvine
  */
-public class A033820 implements Sequence {
+public class A033820 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

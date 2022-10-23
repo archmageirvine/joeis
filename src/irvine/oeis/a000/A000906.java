@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000906 Exponential generating function: 2*(1+3*x)/(1-2*x)^(7/2).
  * @author Sean A. Irvine
  */
-public class A000906 implements Sequence {
+public class A000906 extends Sequence0 {
 
   private Z mDF = Z.ONE;
   private long mN = 1;

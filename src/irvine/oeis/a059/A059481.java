@@ -3,13 +3,14 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a027.A027555;
 
 /**
  * A059481 Triangle T(n,k) = binomial(n+k-1,k), 0 &lt;= k &lt;= n, read by rows.
  * @author Georg Fischer
  */
-public class A059481 implements Sequence {
+public class A059481 extends Sequence0 {
 
   final Sequence mA027555 = new A027555();
   @Override

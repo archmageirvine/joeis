@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028394 Iterate the map in A006369 starting at 8.
  * @author Sean A. Irvine
  */
-public class A028394 implements Sequence {
+public class A028394 extends Sequence0 {
 
   private Z mA = null;
 

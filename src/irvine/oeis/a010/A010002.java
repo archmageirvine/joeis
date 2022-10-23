@@ -1,13 +1,13 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010002 a(0) = 1, a(n) = 9*n^2 + 2 for n&gt;0.
  * @author Sean A. Irvine
  */
-public class A010002 implements Sequence {
+public class A010002 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

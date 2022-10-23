@@ -2,14 +2,14 @@ package irvine.oeis.a089;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A089309 Write n in binary; a(n) = length of the rightmost run of 1's.
  * a(n) = if (n==0, 0, valuation(n/2^valuation(n, 2)+1, 2));
  * @author Georg Fischer
  */
-public class A089309 implements Sequence {
+public class A089309 extends Sequence0 {
 
   private int mN;
 

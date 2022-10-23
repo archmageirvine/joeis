@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055502 a(0)=0, a(1)=2, a(n) = smallest prime &gt; a(n-1)+a(n-2).
  * @author Sean A. Irvine
  */
-public class A055502 implements Sequence {
+public class A055502 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mA = null;

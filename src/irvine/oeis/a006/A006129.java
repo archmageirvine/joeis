@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006129 a(0), a(1), a(2), ... satisfy Sum_{k=0..n} a(k)*binomial(n,k) = 2^binomial(n,2), for n &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A006129 implements Sequence {
+public class A006129 extends Sequence0 {
 
   private int mN = -1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000194 n appears 2n times, for n &gt;= 1; also nearest integer to square root of n.
  * @author Sean A. Irvine
  */
-public class A000194 implements Sequence {
+public class A000194 extends Sequence0 {
 
   private Z mN = null;
   private Z mCountDown = Z.ZERO;

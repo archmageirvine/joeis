@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008269 Number of strings on n symbols in Stockhausen problem.
  * @author Sean A. Irvine
  */
-public class A008269 implements Sequence {
+public class A008269 extends Sequence0 {
 
   private long mN = 0;
   private Z mA = Z.ONE;

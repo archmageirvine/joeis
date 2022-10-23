@@ -1,13 +1,13 @@
 package irvine.oeis.a243;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A243658 a(0)=0; thereafter a(n) = noz(n+a(n-1)), where noz(n) = A004719(n).
  * @author Georg Fischer
  */
-public class A243658 implements Sequence {
+public class A243658 extends Sequence0 {
 
   private int mN = -1;
   private Z mA = Z.ZERO;

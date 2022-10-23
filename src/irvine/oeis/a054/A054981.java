@@ -8,7 +8,7 @@ import irvine.math.nauty.MultigraphColour;
 import irvine.math.nauty.VertexColour;
 import irvine.math.nauty.VertexColourProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
@@ -16,7 +16,7 @@ import irvine.util.string.StringUtils;
  * A054981 Number of certain connected weighted pseudo-graphs.
  * @author Sean A. Irvine
  */
-public class A054981 implements Sequence, GraphProcessor {
+public class A054981 extends Sequence0 implements GraphProcessor {
 
   // The approach taken here uses colouring to deal with the loops
   // (thanks to Brendan McKay for suggesting this idea).

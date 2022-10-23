@@ -2,14 +2,14 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000110;
 
 /**
  * A005494 3-Bell numbers: E.g.f.: exp(3*z + exp(z) - 1).
  * @author Sean A. Irvine
  */
-public class A005494 implements Sequence {
+public class A005494 extends Sequence0 {
 
   private int mN = -1;
 

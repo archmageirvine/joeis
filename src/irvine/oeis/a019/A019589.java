@@ -4,14 +4,14 @@ import java.util.Arrays;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
  * A019589 Number of nondecreasing sequences that are differences of two permutations of 1,2,...,n.
  * @author Sean A. Irvine
  */
-public class A019589 implements Sequence {
+public class A019589 extends Sequence0 {
 
   // After Bert Dobbelaere
 

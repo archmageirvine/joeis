@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Triple;
 import irvine.util.string.StringUtils;
 
@@ -11,7 +11,7 @@ import irvine.util.string.StringUtils;
  * A059915 A sequence f(n) of positive integers is called an F-sequence (in memory of Fibonacci) if it satisfies f(0)=0, f(1)=1, f(2)=2 and for all n &gt; 2, either f(n) = f(n-1) + f(n-2) or f(n) = f(n-1) + f(n-3). A positive integer is called an F-number if it occurs in any F-sequence. Sequence gives numbers which are not F-numbers.
  * @author Sean A. Irvine
  */
-public class A059915 implements Sequence {
+public class A059915 extends Sequence0 {
 
   private static final class State extends Triple<Z> implements Comparable<State> {
 

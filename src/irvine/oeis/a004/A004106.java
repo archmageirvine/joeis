@@ -5,13 +5,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004106 Number of line-self-dual nets (or edge-self-dual nets) with n nodes.
  * @author Sean A. Irvine
  */
-public class A004106 implements Sequence {
+public class A004106 extends Sequence0 {
 
   private int mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a133;
 // manually at 2021-07-04
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A133058 a(0) = a(1) = 1; for n &gt; 1, a(n) = a(n-1) + n + 1 if a(n-1) and n are coprime, otherwise a(n) = a(n-1)/gcd(a(n-1),n).
  * @author Georg Fischer
  */
-public class A133058 implements Sequence {
+public class A133058 extends Sequence0 {
 
   private Z mAn1;
   protected int mN;

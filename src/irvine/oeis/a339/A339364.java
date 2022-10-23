@@ -3,6 +3,7 @@ package irvine.oeis.a339;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001156;
 import irvine.oeis.a292.A292520;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a292.A292520;
  * A339364 Number of partitions of n into an even number of squares.
  * @author Georg Fischer
  */
-public class A339364 implements Sequence {
+public class A339364 extends Sequence0 {
 
   final Sequence mA001156 = new A001156();
   final Sequence mA292520 = new A292520();

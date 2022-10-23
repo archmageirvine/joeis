@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048763 Smallest cube &gt;= n.
  * @author Sean A. Irvine
  */
-public class A048763 implements Sequence {
+public class A048763 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

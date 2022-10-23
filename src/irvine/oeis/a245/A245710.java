@@ -3,12 +3,13 @@ package irvine.oeis.a245;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a115.A115384;
 /**
  * A245710 Number of nonzero evil numbers &lt;= n, see A001969.
  * @author Georg Fischer
  */
-public class A245710 implements Sequence {
+public class A245710 extends Sequence0 {
 
   private final Sequence mA115384 = new A115384();
   protected long mN;

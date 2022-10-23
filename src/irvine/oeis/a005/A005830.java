@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005830 a(n) = floor(tau*a(n-1)) + a(n-2) where tau is the golden ratio.
  * @author Sean A. Irvine
  */
-public class A005830 implements Sequence {
+public class A005830 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

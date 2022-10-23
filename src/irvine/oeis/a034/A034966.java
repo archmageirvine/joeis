@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034966 Number of different values of i^2 + j^2 + k^2 for i,j,k in [ 0,n ] (or [ -n,n ]).
  * @author Sean A. Irvine
  */
-public class A034966 implements Sequence {
+public class A034966 extends Sequence0 {
 
   private TreeSet<Long> mSeen = new TreeSet<>();
   private long mN = -1;

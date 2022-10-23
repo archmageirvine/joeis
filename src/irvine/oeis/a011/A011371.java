@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011371 a(n) = n minus (number of 1's in binary expansion of n). Also highest power of 2 dividing n!.
  * @author Sean A. Irvine
  */
-public class A011371 implements Sequence {
+public class A011371 extends Sequence0 {
 
   private long mN = -1;
 

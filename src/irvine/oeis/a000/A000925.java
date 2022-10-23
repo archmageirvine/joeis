@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000925 Number of ordered ways of writing n as a sum of 2 squares of nonnegative integers.
  * @author Sean A. Irvine
  */
-public class A000925 implements Sequence {
+public class A000925 extends Sequence0 {
 
   private long mN = -1;
 

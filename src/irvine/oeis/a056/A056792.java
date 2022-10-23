@@ -3,6 +3,7 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000120;
 import irvine.oeis.a070.A070939;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a070.A070939;
  * A056792 Minimal number of steps to get from 0 to n by (a) adding 1 or (b) multiplying by 2.
  * @author Georg Fischer
  */
-public class A056792 implements Sequence {
+public class A056792 extends Sequence0 {
 
   final Sequence mA000120 = new A000120();
   final Sequence mA070939 = new A070939();

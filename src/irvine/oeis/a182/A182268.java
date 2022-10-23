@@ -5,14 +5,14 @@ package irvine.oeis.a182;
 import irvine.math.polynomial.EulerPolynomials;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A182268 Denominator of Euler(n, 3/14).
  * @author Georg Fischer
  */
-public class A182268 implements Sequence {
+public class A182268 extends Sequence0 {
 
   private int mN = -1;
   private final Q mFract = new Q(3, 14);

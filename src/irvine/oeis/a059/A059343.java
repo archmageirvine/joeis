@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.math.polynomial.HermitePolynomials;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059343 Triangle of nonzero coefficients of Hermite polynomials H_n(x) in increasing powers of x.
  * @author Sean A. Irvine
  */
-public class A059343 implements Sequence {
+public class A059343 extends Sequence0 {
 
   private final HermitePolynomials mH = new HermitePolynomials();
   private int mN = -1;

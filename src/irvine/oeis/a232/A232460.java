@@ -3,13 +3,14 @@ package irvine.oeis.a232;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000215;
 
 /**
  * A232460 a(n) = 2^(2^n) - 5.
  * @author Georg Fischer
  */
-public class A232460 implements Sequence {
+public class A232460 extends Sequence0 {
 
   final Sequence mA000215 = new A000215();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a269;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A269174 Formula for Wolfram's Rule 124 cellular automaton: a(n) = (n OR 2n) AND ((n XOR 2n) OR (n XOR 4n)).
  * @author Georg Fischer
  */
-public class A269174 implements Sequence {
+public class A269174 extends Sequence0 {
 
   protected int mN = -1;
 

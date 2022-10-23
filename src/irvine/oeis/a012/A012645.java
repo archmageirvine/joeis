@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A012645 sech(arcsinh(x)*cos(x))=1-1/2!*x^2+21/4!*x^4-765/6!*x^6+53193/8!*x^8...
  * @author Sean A. Irvine
  */
-public class A012645 implements Sequence {
+public class A012645 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -2;

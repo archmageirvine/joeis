@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001060 a(n) = a(n-1) + a(n-2) with a(0)=2, a(1)=5. Sometimes called the Evangelist Sequence.
  * @author Sean A. Irvine
  */
-public class A001060 implements Sequence {
+public class A001060 extends Sequence0 {
 
   private Z mA = Z.NEG_ONE;
   private Z mB = Z.THREE;

@@ -3,13 +3,13 @@ package irvine.oeis.a139;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A139733 9^n mod 8^n.
  * @author Georg Fischer
  */
-public class A139733 implements Sequence {
+public class A139733 extends Sequence0 {
 
   private int mN = 0;
   private final Z mBase = Z.NINE;

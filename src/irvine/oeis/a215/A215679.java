@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A215679 n-th derivative of sech(x)^sinh(x) at x=0.
  * E.g.f.: sech(x)^sinh(x)
  * @author Georg Fischer
  */
-public class A215679 implements Sequence {
+public class A215679 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000466 a(n) = 4*n^2 - 1.
  * @author Sean A. Irvine
  */
-public class A000466 implements Sequence {
+public class A000466 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

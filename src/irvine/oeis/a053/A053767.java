@@ -3,13 +3,14 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a051.A051349;
 
 /**
  * A053767 Sum of first n composite numbers.
  * @author Georg Fischer
  */
-public class A053767 implements Sequence {
+public class A053767 extends Sequence0 {
 
   final Sequence mA051349 = new A051349();
   /** Construct the sequence. */

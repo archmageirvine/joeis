@@ -5,14 +5,14 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A293146 a(n) = n! * [x^n] exp(x/(1 - n*x)).
  * a(n) = n! * Sum_{k=1..n} n^(n-k) * binomial(n-1,k-1)/k! for n &gt; 0.
  * @author Georg Fischer
  */
-public class A293146 implements Sequence {
+public class A293146 extends Sequence0 {
 
   private int mN = -1;
 

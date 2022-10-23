@@ -2,13 +2,13 @@ package irvine.oeis.a033;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A033917 Coefficients of iterated exponential function defined by y(x) = x^y(x) for e^-e &lt; x &lt; e^(1/e), expanded about x=1.
  * @author Sean A. Irvine
  */
-public class A033917 implements Sequence {
+public class A033917 extends Sequence0 {
 
   private int mN = -1;
 

@@ -6,14 +6,14 @@ import java.util.Map;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicArray;
 
 /**
  * A003271 Smallest number that requires n iterations of the unitary totient function (A047994) to reach 1.
  * @author Sean A. Irvine
  */
-public class A003271 implements Sequence {
+public class A003271 extends Sequence0 {
 
   private final Map<Z, Z> mUnitaryPhi = new HashMap<>();
   private final DynamicArray<Z> mSmallest = new DynamicArray<>();

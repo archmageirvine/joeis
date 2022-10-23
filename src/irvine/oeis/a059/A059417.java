@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059417 Start with 1; square; add 2; subtract 1; repeat.
  * @author Sean A. Irvine
  */
-public class A059417 implements Sequence {
+public class A059417 extends Sequence0 {
 
   private Z mA = null;
   private int mN = -1;

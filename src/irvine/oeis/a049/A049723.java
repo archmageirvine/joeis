@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049723 Array T read by diagonals; T(i,j)=number of lattice points (x,y) in closed right half-plane and circle with radius (0,0)-to-(i,j).
  * @author Sean A. Irvine
  */
-public class A049723 implements Sequence {
+public class A049723 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

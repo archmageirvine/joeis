@@ -2,14 +2,14 @@ package irvine.oeis.a008;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003725;
 
 /**
  * A008405 n-th derivative of x^(1/x) at x=1.
  * @author Sean A. Irvine
  */
-public class A008405 implements Sequence {
+public class A008405 extends Sequence0 {
 
   private long mN = -1;
 

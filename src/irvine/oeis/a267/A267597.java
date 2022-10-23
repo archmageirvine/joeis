@@ -5,14 +5,14 @@ import java.util.HashSet;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A267597 Number of sum-product knapsack partitions of n. Number of integer partitions y of n such that every sum of products of the parts of a multiset partition of any submultiset of y is distinct.
  * @author Sean A. Irvine
  */
-public class A267597 implements Sequence {
+public class A267597 extends Sequence0 {
 
   private int mN = -1;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));

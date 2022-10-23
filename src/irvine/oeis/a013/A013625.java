@@ -2,13 +2,13 @@ package irvine.oeis.a013;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013625 Triangle of coefficients in expansion of (4+7x)^n.
  * @author Sean A. Irvine
  */
-public class A013625 implements Sequence {
+public class A013625 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

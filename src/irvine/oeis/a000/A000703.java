@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000703 Chromatic number (or Heawood number) of nonorientable surface with n crosscaps.
  * @author Sean A. Irvine
  */
-public class A000703 implements Sequence {
+public class A000703 extends Sequence0 {
 
   private long mN = -1;
 

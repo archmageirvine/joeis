@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.math.LongUtils;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059743 Number of points of norm^2 &lt;= n^2 in the square lattice that are visible from the origin.
  * @author Sean A. Irvine
  */
-public class A059743 implements Sequence {
+public class A059743 extends Sequence0 {
 
   private long mN = -1;
 

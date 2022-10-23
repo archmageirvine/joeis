@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001505 a(n) = (4n+1)(4n+2)(4n+3).
  * @author Sean A. Irvine
  */
-public class A001505 implements Sequence {
+public class A001505 extends Sequence0 {
 
   private Z mN = Z.valueOf(-3);
 

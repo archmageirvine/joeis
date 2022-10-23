@@ -9,14 +9,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.transform.EulerTransformSequence;
 
 /**
  * A000677 Number of bicentered trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A000677 implements Sequence, Serializable {
+public class A000677 extends Sequence0 implements Serializable {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> NUM = Polynomial.create(0, 0, 1);

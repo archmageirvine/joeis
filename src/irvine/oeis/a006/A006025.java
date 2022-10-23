@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006025 Number of labeled mating digraphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A006025 implements Sequence {
+public class A006025 extends Sequence0 {
 
   private int mN = -1;
 

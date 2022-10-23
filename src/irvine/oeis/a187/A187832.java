@@ -3,6 +3,7 @@ package irvine.oeis.a187;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002162;
 import irvine.oeis.a020.A020761;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a020.A020761;
  * A187832 Integral from 1/2 to 1 of (1-x)/x dx.
  * @author Georg Fischer
  */
-public class A187832 implements Sequence {
+public class A187832 extends Sequence0 {
 
   final Sequence mA002162 = new A002162();
   final Sequence mA020761 = new A020761();

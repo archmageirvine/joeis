@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001850 Central Delannoy numbers: a(n) = Sum_{k=0..n} C(n,k)*C(n+k,k).
  * @author Sean A. Irvine
  */
-public class A001850 implements Sequence {
+public class A001850 extends Sequence0 {
 
   private long mN = -1;
 

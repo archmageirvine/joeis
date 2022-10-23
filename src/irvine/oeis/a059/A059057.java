@@ -5,13 +5,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059057 Penrice Christmas gift numbers, Card-matching numbers (Dinner-Diner matching numbers).
  * @author Sean A. Irvine
  */
-public class A059057 implements Sequence {
+public class A059057 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C1 = Polynomial.create(-1, 1);

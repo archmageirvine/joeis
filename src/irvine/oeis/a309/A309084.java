@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A309084 a(n) = exp(3) * Sum_{k&gt;=0} (-3)^k*k^n/k!.
  * E.g.f.: exp(3*(1 - exp(x)))
  * @author Georg Fischer
  */
-public class A309084 implements Sequence {
+public class A309084 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

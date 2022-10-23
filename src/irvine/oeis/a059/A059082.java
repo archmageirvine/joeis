@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059082 Number of 6-element T_0-antichains on a labeled n-set, n = 0, ..., 64.
  * @author Sean A. Irvine
  */
-public class A059082 implements Sequence {
+public class A059082 extends Sequence0 {
 
   private static final int[][] PARMS = {
     {1, 64},

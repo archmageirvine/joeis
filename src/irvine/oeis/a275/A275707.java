@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A275707 Number of partial functions f:{1,2,...,n}-&gt;{1,2,...,n} such that every element in the domain of definition of f is mapped to a fixed point or to an element that is undefined by f.
  * E.g.f.: exp(2*x*exp(x))
  * @author Georg Fischer
  */
-public class A275707 implements Sequence {
+public class A275707 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

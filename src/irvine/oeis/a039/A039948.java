@@ -3,14 +3,14 @@ package irvine.oeis.a039;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
 
 /**
  * A039948 A triangle related to A000045 (Fibonacci numbers).
  * @author Sean A. Irvine
  */
-public class A039948 implements Sequence {
+public class A039948 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final MemorySequence mFibo = MemorySequence.cachedSequence(new A000045());

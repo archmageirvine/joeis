@@ -3,13 +3,14 @@ package irvine.oeis.a050;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a094.A094267;
 
 /**
  * A050603 A001511 with every term repeated.
  * @author Georg Fischer
  */
-public class A050603 implements Sequence {
+public class A050603 extends Sequence0 {
 
   final Sequence mA094267 = new A094267();
   protected long mN;

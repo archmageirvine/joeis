@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013466 sec(arctan(x)-arctanh(x))=1+160/6!*x^6+691200/10!*x^10+19712000/12!*x^12...
  * @author Sean A. Irvine
  */
-public class A013466 implements Sequence {
+public class A013466 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -2;

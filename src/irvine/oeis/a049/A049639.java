@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049639 Array T read by diagonals; T(i,j) = number of lines passing through (i,j) and at least two other lattice points (h,k) satisfying 0&lt;=h&lt;=i, 0&lt;=k&lt;=j.
  * @author Sean A. Irvine
  */
-public class A049639 implements Sequence {
+public class A049639 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

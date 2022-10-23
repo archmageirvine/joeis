@@ -1,14 +1,14 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A059252 Hilbert's Hamiltonian walk on N X N projected onto x axis: m(3).
  * @author Sean A. Irvine
  */
-public class A059252 implements Sequence {
+public class A059252 extends Sequence0 {
 
   private final DynamicIntArray mM = new DynamicIntArray();
   private final DynamicIntArray mM0 = new DynamicIntArray();

@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007899 Coordination sequence for hexagonal close-packing.
  * @author Sean A. Irvine
  */
-public class A007899 implements Sequence {
+public class A007899 extends Sequence0 {
 
   private long mN = -1;
 

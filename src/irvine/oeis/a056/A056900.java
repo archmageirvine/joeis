@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056900 Numbers n where 36n^2+36n+11 is prime.
  * @author Sean A. Irvine
  */
-public class A056900 implements Sequence {
+public class A056900 extends Sequence0 {
 
   private long mN = -1;
 

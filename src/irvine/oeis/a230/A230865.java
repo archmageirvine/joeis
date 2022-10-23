@@ -3,13 +3,14 @@ package irvine.oeis.a230;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a053.A053824;
 
 /**
  * A230865 a(n) = n + (sum of digits in base-5 representation of n).
  * @author Georg Fischer
  */
-public class A230865 implements Sequence {
+public class A230865 extends Sequence0 {
 
   final Sequence mA053824 = new A053824();
   protected long mN;

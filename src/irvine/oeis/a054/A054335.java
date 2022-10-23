@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054335 A convolution triangle of numbers based on A000984 (central binomial coefficients of even order).
  * @author Sean A. Irvine
  */
-public class A054335 implements Sequence {
+public class A054335 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

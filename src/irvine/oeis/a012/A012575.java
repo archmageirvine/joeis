@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A012575 tan(arcsinh(x)*log(x+1))=2/2!*x^2-3/3!*x^3+4/4!*x^4-20/5!*x^5...
  * @author Sean A. Irvine
  */
-public class A012575 implements Sequence {
+public class A012575 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036775 a(n) is the number of labeled rooted trees on a set of size n where each node has at most 3 neighbors that are further away from the root than the node itself.
  * @author Sean A. Irvine
  */
-public class A036775 implements Sequence {
+public class A036775 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Q Q6 = Q.SIX;

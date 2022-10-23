@@ -3,13 +3,13 @@ package irvine.oeis.a008;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008958 Triangle of central factorial numbers 4^k T(2n+1, 2n+1-2k).
  * @author Sean A. Irvine
  */
-public class A008958 implements Sequence {
+public class A008958 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

@@ -3,12 +3,13 @@ package irvine.oeis.a080;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A080530 Number of nucleons in longest known radioactive decay series ending with Lead 207 ("actinium series"), reversed.
  * @author Georg Fischer
  */
-public class A080530 implements Sequence {
+public class A080530 extends Sequence0 {
 
   final Sequence mA080534 = new A080534();
   final Sequence mA080538 = new A080538();

@@ -3,13 +3,14 @@ package irvine.oeis.a157;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006720;
 
 /**
  * A157005 A Somos-4 variant.
  * @author Georg Fischer
  */
-public class A157005 implements Sequence {
+public class A157005 extends Sequence0 {
 
   final Sequence mA006720 = new A006720();
   protected long mN;

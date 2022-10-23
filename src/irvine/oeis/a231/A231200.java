@@ -3,11 +3,12 @@ package irvine.oeis.a231;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 /**
  * A231200 Boustrophedon transform of even numbers.
  * @author Georg Fischer
  */
-public class A231200 implements Sequence {
+public class A231200 extends Sequence0 {
 
   private final Sequence mA231179 = new A231179();
   @Override

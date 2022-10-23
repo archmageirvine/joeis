@@ -1,13 +1,13 @@
 package irvine.oeis.a039;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A039941 Alternately add and multiply.
  * @author Sean A. Irvine
  */
-public class A039941 implements Sequence {
+public class A039941 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

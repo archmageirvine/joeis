@@ -1,13 +1,13 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A015109 Triangle of Gaussian (or q-binomial) coefficients for q = -2.
  * @author Sean A. Irvine
  */
-public class A015109 implements Sequence {
+public class A015109 extends Sequence0 {
 
   private int mN = -1;
   private int mM = -1;

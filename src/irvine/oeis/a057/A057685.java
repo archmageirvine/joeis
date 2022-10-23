@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057685 Trajectory of 19 under the `19x+1' map.
  * @author Sean A. Irvine
  */
-public class A057685 implements Sequence {
+public class A057685 extends Sequence0 {
 
   private long mN = 0;
 

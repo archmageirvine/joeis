@@ -2,13 +2,13 @@ package irvine.oeis.a010;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010756 Sum along upward diagonal of Pascal triangle from (but not including) center.
  * @author Sean A. Irvine
  */
-public class A010756 implements Sequence {
+public class A010756 extends Sequence0 {
 
   private long mN = -1;
 

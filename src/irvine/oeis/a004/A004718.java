@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004718 The Danish composer Per N\u00f8rg\u00e5rd's "infinity sequence", invented in an attempt to unify in a perfect way repetition and variation: a(2n) = -a(n), a(2n+1) = a(n) + 1, a(0) = 0.
  * @author Sean A. Irvine
  */
-public class A004718 implements Sequence {
+public class A004718 extends Sequence0 {
 
   private long mN = -1;
 

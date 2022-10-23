@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038667 Minimal value of |product(A) - product(B)| where A and B are a partition of {1,2,3,...,n}.
  * @author Sean A. Irvine
  */
-public class A038667 implements Sequence {
+public class A038667 extends Sequence0 {
 
   // After Alois P. Heinz
 

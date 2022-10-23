@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006153 E.g.f.: 1/(1-x*exp(x)).
  * @author Sean A. Irvine
  */
-public class A006153 implements Sequence {
+public class A006153 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

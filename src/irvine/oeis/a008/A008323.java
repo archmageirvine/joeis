@@ -4,13 +4,13 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008323 Number of simple connected regular bipartite graphs with 2n nodes.
  * @author Sean A. Irvine
  */
-public class A008323 implements Sequence {
+public class A008323 extends Sequence0 {
 
   static class RegularConnectedBipartiteGenerator extends ParallelGenerateGraphsSequence {
 

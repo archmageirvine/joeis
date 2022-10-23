@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004134 Denominators in expansion of (1-x)^{-1/4} are 2^a(n).
  * @author Sean A. Irvine
  */
-public class A004134 implements Sequence {
+public class A004134 extends Sequence0 {
 
   private long mN = -1;
 

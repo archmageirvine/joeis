@@ -2,13 +2,13 @@ package irvine.oeis.a029;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A029800 n, n^2 and n^3 all have same digits.
  * @author Sean A. Irvine
  */
-public class A029800 implements Sequence {
+public class A029800 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

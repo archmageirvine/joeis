@@ -7,13 +7,13 @@ import irvine.factor.prime.Fast;
 import irvine.math.Comparators;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059901 Partitions encoded by prime factorization. The partition [P1+P2+P3+...] with P1&gt;=P2&gt;=P3&gt;=... is encoded as 2^P1 * 3^P2 * 5^P3 *...
  * @author Sean A. Irvine
  */
-public class A059901 implements Sequence {
+public class A059901 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private final TreeSet<int[]> mPart = new TreeSet<>(Comparators.LEXICOGRAPHIC);

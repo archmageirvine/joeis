@@ -3,13 +3,14 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007953;
 
 /**
  * A054899 a(n) = Sum_{k&gt;0} floor(n/10^k).
  * @author Georg Fischer
  */
-public class A054899 implements Sequence {
+public class A054899 extends Sequence0 {
 
   final Sequence mA007953 = new A007953();
   protected long mN;

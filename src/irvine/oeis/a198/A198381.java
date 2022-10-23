@@ -3,6 +3,7 @@ package irvine.oeis.a198;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000070;
 import irvine.oeis.a006.A006128;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006128;
  * A198381 Total number of parts greater than 1 in all partitions of n minus the number of partitions of n into parts each less than n.
  * @author Georg Fischer
  */
-public class A198381 implements Sequence {
+public class A198381 extends Sequence0 {
 
   final Sequence mA000070 = new A000070();
   final Sequence mA006128 = new A006128();

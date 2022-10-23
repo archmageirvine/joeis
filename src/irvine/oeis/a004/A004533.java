@@ -5,13 +5,13 @@ import irvine.math.polynomial.QPolynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004533 Theta series of 12-dimensional unimodular lattice {D_12}^{+}.
  * @author Sean A. Irvine
  */
-public class A004533 implements Sequence {
+public class A004533 extends Sequence0 {
 
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;

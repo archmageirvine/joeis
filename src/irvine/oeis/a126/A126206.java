@@ -3,14 +3,14 @@ package irvine.oeis.a126;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A126206 Number of 4's in the decimal expansion of 4^n.
  * @author Georg Fischer
  */
-public class A126206 implements Sequence {
+public class A126206 extends Sequence0 {
 
   protected int mN = -1;
   

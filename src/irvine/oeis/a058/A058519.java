@@ -6,13 +6,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058519 Number of directed cycles of B-trees of order 3 with n labeled leaves.
  * @author Sean A. Irvine
  */
-public class A058519 implements Sequence {
+public class A058519 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> M = Polynomial.create(Q.ZERO, Q.ZERO, Q.ONE, Q.ONE);

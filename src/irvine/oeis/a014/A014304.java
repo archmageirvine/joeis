@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014304 Expansion of e.g.f. 1/sqrt(exp(x)*(2-exp(x))).
  * @author Sean A. Irvine
  */
-public class A014304 implements Sequence {
+public class A014304 extends Sequence0 {
 
   private int mN = -1;
 

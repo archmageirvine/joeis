@@ -3,13 +3,14 @@ package irvine.oeis.a091;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000670;
 
 /**
  * A091346 Binomial convolution of A069321(n), where A069321(0)=0, with the sequence of all 1's alternating in sign.
  * @author Georg Fischer
  */
-public class A091346 implements Sequence {
+public class A091346 extends Sequence0 {
 
   final Sequence mA000670 = new A000670();
   protected long mN;

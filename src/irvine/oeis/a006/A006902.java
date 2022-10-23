@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006902 a(n) = (2n)! * Sum_{k=0..n} (-1)^k * binomial(n,k) / (n+k)!.
  * @author Sean A. Irvine
  */
-public class A006902 implements Sequence {
+public class A006902 extends Sequence0 {
 
   private int mN = -1;
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053791 Number of walks of length n on the square lattice that start from (0,0) and do not touch the nonpositive real axis once they have left their starting point.
  * @author Sean A. Irvine
  */
-public class A053791 implements Sequence {
+public class A053791 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C = RING.monomial(Q.FOUR, 1);

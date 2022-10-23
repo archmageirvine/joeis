@@ -1,13 +1,13 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A047858 Array T read by diagonals; n-th difference of (T(k,n),T(k,n-1),...,T(k,0)) is k+n, for n=1,2,3,...; k=0,1,2,...
  * @author Sean A. Irvine
  */
-public class A047858 implements Sequence {
+public class A047858 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

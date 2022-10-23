@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A223899 Poly-Cauchy numbers of the second kind hat c_n^(-2).
  * E.g.f.: (1 - log(1 + x) * (3 - log(1 + x))) / (1 + x)
  * @author Georg Fischer
  */
-public class A223899 implements Sequence {
+public class A223899 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

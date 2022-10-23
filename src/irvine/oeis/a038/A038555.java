@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038555 Derivative of n in base 3.
  * @author Sean A. Irvine
  */
-public class A038555 implements Sequence {
+public class A038555 extends Sequence0 {
 
   private long mN = -1;
 

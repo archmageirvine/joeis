@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A024581 a(n) = integer nearest e*a(n-1), where a(0) = 1.
  * @author Sean A. Irvine
  */
-public class A024581 implements Sequence {
+public class A024581 extends Sequence0 {
 
   private Z mA = null;
 

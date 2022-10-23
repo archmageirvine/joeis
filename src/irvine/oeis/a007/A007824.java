@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007824 a(n) = f(a(n-1)), with f(m) = Sum i*b(i)*2^(i-1), m = Sum b(i)*2^i, and starting value 16.
  * @author Sean A. Irvine
  */
-public class A007824 implements Sequence {
+public class A007824 extends Sequence0 {
 
   private Z mA = null;
 

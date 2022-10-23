@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A037217 Expansion of ( Sum_{k&gt;=0} k*q^(k^2) )^8.
  * @author Sean A. Irvine
  */
-public class A037217 implements Sequence {
+public class A037217 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private Polynomial<Z> mA = RING.zero();

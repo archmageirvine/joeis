@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056208 Primes p+2^n arising in A056206.
  * @author Sean A. Irvine
  */
-public class A056208 implements Sequence {
+public class A056208 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mA = null;

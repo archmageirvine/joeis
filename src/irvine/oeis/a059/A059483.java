@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059483 Triangle T(n,k) = number of fixed 2 X n polyominoes with k cells = coefficient of x^n*y^k in (1+x*y)/(1-x*y-x*y^2-x^2*y^3)-1, read by rows in order 00, 10, 01, 20, 11, 02, ...
  * @author Sean A. Irvine
  */
-public class A059483 implements Sequence {
+public class A059483 extends Sequence0 {
 
   private static final PolynomialRingField<Q> INNER = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final PolynomialRingField<Polynomial<Q>> RING = new PolynomialRingField<>(INNER);

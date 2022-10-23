@@ -3,6 +3,7 @@ package irvine.oeis.a295;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005721;
 import irvine.oeis.a005.A005809;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a005.A005809;
  * A295870 a(n) = binomial(3n,n)*CQC(n), where CQC(n) = A005721(n) = A005190(2n) is a central quadrinomial coefficient.
  * @author Georg Fischer
  */
-public class A295870 implements Sequence {
+public class A295870 extends Sequence0 {
 
   final Sequence mA005721 = new A005721();
   final Sequence mA005809 = new A005809();

@@ -4,13 +4,13 @@ package irvine.oeis.a091;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A091087 a(n) = floor(r*n) + floor(n/r), where r=sqrt(2).
  * @author Georg Fischer
  */
-public class A091087 implements Sequence {
+public class A091087 extends Sequence0 {
   private long mN = -1;
 
   @Override

@@ -3,6 +3,7 @@ package irvine.oeis.a078;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000605;
 import irvine.oeis.a016.A016725;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a016.A016725;
  * A078183 Number of solutions to x^2 + y^2 + z^2 &lt; n^2; number of lattice points inside a sphere of radius n.
  * @author Georg Fischer
  */
-public class A078183 implements Sequence {
+public class A078183 extends Sequence0 {
 
   final Sequence mA000605 = new A000605();
   final Sequence mA016725 = new A016725();

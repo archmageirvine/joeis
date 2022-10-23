@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055207 Sum of n-th powers of digits of n.
  * @author Georg Fischer
  */
-public class A055207 implements Sequence {
+public class A055207 extends Sequence0 {
 
   private long mN = -1;
 

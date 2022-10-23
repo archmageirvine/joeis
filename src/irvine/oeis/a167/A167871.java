@@ -2,13 +2,13 @@ package irvine.oeis.a167;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A167871 a(n) = 64^n * Sum_{k=0..n} binomial(2*k,k)^3 / 64^k.
  * @author Sean A. Irvine
  */
-public class A167871 implements Sequence {
+public class A167871 extends Sequence0 {
 
   private int mN = 0;
 

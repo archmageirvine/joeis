@@ -2,13 +2,13 @@ package irvine.oeis.a259;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A259992 Irregular triangle read by rows: T(n,k) = number of Havender tableaux of height 2 with n columns and k empty squares (n &gt;= 0, 0 &lt;= k &lt;= 2*n).
  * @author Sean A. Irvine
  */
-public class A259992 implements Sequence {
+public class A259992 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

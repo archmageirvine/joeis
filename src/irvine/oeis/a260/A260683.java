@@ -3,14 +3,14 @@ package irvine.oeis.a260;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A260683 Number of 2's in the expansion of 2^n in base 3.
  * @author Georg Fischer
  */
-public class A260683 implements Sequence {
+public class A260683 extends Sequence0 {
 
   protected int mN = -1;
   

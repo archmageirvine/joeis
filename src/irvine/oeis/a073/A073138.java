@@ -3,13 +3,14 @@ package irvine.oeis.a073;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a038.A038573;
 import irvine.oeis.a080.A080100;
 /**
  * A073138 Largest number having in its binary representation the same number of 0's and 1's as n.
  * @author Georg Fischer
  */
-public class A073138 implements Sequence {
+public class A073138 extends Sequence0 {
 
   private final Sequence mA038573 = new A038573();
   private final Sequence mA080100 = new A080100();

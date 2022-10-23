@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006366 Number of cyclically symmetric plane partitions in the n-cube; also number of 2n X 2n half-turn symmetric alternating sign matrices divided by number of n X n alternating sign matrices.
  * @author Sean A. Irvine
  */
-public class A006366 implements Sequence {
+public class A006366 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

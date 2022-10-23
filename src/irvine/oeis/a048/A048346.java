@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048346 a(n)^2 is the smallest square containing exactly n 1's in its decimal notation.
  * @author Sean A. Irvine
  */
-public class A048346 implements Sequence {
+public class A048346 extends Sequence0 {
 
   private int mN = -1;
 

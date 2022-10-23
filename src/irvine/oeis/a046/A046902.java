@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046902 Clark's triangle: left border = 0 1 1 1..., right border = multiples of 6; other entries = sum of 2 entries above.
  * @author Sean A. Irvine
  */
-public class A046902 implements Sequence {
+public class A046902 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

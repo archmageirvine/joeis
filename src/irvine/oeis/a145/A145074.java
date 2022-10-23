@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A145074 Coefficient of x^(4^n) in Q(x)^(n+1) where Q(x) = Sum_{k&gt;=0} (x^(4^k) + x^(2*4^k) + x^(3*4^k)).
  * @author Sean A. Irvine
  */
-public class A145074 implements Sequence {
+public class A145074 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 

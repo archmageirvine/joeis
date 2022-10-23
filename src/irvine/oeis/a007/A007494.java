@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007494 Numbers that are congruent to 0 or 2 mod 3.
  * @author Sean A. Irvine
  */
-public class A007494 implements Sequence {
+public class A007494 extends Sequence0 {
 
   private long mN = -1;
   private long mAdd = 1;

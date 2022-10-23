@@ -2,13 +2,13 @@ package irvine.oeis.a079;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A079405 Number of dots in primes in Braille.
  * @author Sean A. Irvine
  */
-public class A079405 implements Sequence {
+public class A079405 extends Sequence0 {
 
   private static final int[] BRAILLE_DOTS = {3, 1, 2, 2, 3, 2, 3, 4, 3, 2};
 

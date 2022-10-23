@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014402 Numbers found in denominators of expansion of Airy function Ai(x).
  * @author Sean A. Irvine
  */
-public class A014402 implements Sequence {
+public class A014402 extends Sequence0 {
 
   protected int mN = -1;
   private int mM = 1;

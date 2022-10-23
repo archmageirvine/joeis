@@ -3,13 +3,14 @@ package irvine.oeis.a097;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a033.A033052;
 
 /**
  * A097262 Numbers whose set of base 16 digits is {0,F}, where F base 16 = 15 base 10.
  * @author Georg Fischer
  */
-public class A097262 implements Sequence {
+public class A097262 extends Sequence0 {
 
   final Sequence mA033052 = new A033052();
   @Override

@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056176 Sum of a(n) terms of 1/k^(1/4) first exceeds n.
  * @author Georg Fischer
  */
-public class A056176 implements Sequence {
+public class A056176 extends Sequence0 {
 
   private final CR mExp; // exponent of k
   private int mN = -1;

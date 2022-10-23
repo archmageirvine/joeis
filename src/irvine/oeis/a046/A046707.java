@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046707 a(n) = n!*Sum_{k=0..n/2} n^(2k)/(2k)!.
  * @author Sean A. Irvine
  */
-public class A046707 implements Sequence {
+public class A046707 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

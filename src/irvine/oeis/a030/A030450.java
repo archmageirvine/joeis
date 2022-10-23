@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030450 Related to number of elements in the free band (idempotent semigroup) on n generators.
  * @author Sean A. Irvine
  */
-public class A030450 implements Sequence {
+public class A030450 extends Sequence0 {
 
   private int mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005558 a(n) is the number of n-step walks on square lattice such that 0 &lt;= y &lt;= x at each step.
  * @author Sean A. Irvine
  */
-public class A005558 implements Sequence {
+public class A005558 extends Sequence0 {
 
   private long mN = -1;
 

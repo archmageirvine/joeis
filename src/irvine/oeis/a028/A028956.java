@@ -3,13 +3,13 @@ package irvine.oeis.a028;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028956 Theta series of quadratic form (or lattice) with Gram matrix [ 4, 1; 1, 4 ].
  * @author Sean A. Irvine
  */
-public class A028956 implements Sequence {
+public class A028956 extends Sequence0 {
 
   // After Michael Somos
 

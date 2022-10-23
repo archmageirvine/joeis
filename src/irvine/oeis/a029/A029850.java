@@ -7,13 +7,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A029850 Number of self-converse groupoids.
  * @author Sean A. Irvine
  */
-public class A029850 implements Sequence {
+public class A029850 extends Sequence0 {
 
   private int mN = -1;
 

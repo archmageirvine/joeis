@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005798 Expansion of (theta_2(q)/theta_3(q))^4/16 in powers of q.
  * @author Sean A. Irvine
  */
-public class A005798 implements Sequence {
+public class A005798 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> X2 = RING.monomial(Z.ONE, 2);

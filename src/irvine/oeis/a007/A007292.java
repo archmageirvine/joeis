@@ -1,14 +1,14 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.Hungarian;
 
 /**
  * A007292 Number of letters in n (in Hungarian).
  * @author Sean A. Irvine
  */
-public class A007292 implements Sequence {
+public class A007292 extends Sequence0 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = -1;

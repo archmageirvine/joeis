@@ -3,13 +3,14 @@ package irvine.oeis.a131;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001333;
 
 /**
  * A131037 Sequence A001333 with last digits set to zero.
  * @author Georg Fischer
  */
-public class A131037 implements Sequence {
+public class A131037 extends Sequence0 {
 
   final Sequence mA001333 = new A001333();
   final Sequence mA131707 = new A131707();

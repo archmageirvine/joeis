@@ -3,6 +3,7 @@ package irvine.oeis.a167;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a032.A032741;
 import irvine.oeis.a047.A047967;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a047.A047967;
  * A167930 Number of partitions of n in which some but not all parts are equal.
  * @author Georg Fischer
  */
-public class A167930 implements Sequence {
+public class A167930 extends Sequence0 {
 
   final Sequence mA032741 = new A032741();
   final Sequence mA047967 = new A047967();

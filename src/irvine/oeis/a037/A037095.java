@@ -2,14 +2,14 @@ package irvine.oeis.a037;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000244;
 
 /**
  * A037095 "Sloping binary representation" of powers of 3 (A000244), slope = -1.
  * @author Sean A. Irvine
  */
-public class A037095 implements Sequence {
+public class A037095 extends Sequence0 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A000244());
   private int mN = -1;

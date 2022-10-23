@@ -3,6 +3,7 @@ package irvine.oeis.a275;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a008.A008619;
 import irvine.oeis.a057.A057977;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a057.A057977;
  * A275329 a(n) = (2+[n/2])*n!/((1+[n/2])*[n/2]!^2).
  * @author Georg Fischer
  */
-public class A275329 implements Sequence {
+public class A275329 extends Sequence0 {
 
   final Sequence mA008619 = new A008619();
   final Sequence mA057977 = new A057977();

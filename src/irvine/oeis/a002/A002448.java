@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002448 Expansion of Jacobi theta function theta_4(x).
  * @author Sean A. Irvine
  */
-public class A002448 implements Sequence {
+public class A002448 extends Sequence0 {
 
   private static final Z NEG_TWO = Z.valueOf(-2);
   private long mN = -1;

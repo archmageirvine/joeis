@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A090336 Odd-indexed terms of the first binomial transform equals 1 and the even-indexed terms of the third binomial transform equals 1, with a(0)=1.
  * E.g.f.: 2*(1+sinh(2*x))/(1+exp(4*x))
  * @author Georg Fischer
  */
-public class A090336 implements Sequence {
+public class A090336 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

@@ -3,6 +3,7 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005130;
 import irvine.oeis.a006.A006366;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006366;
  * A059475 Number of 2n X 2n half-turn symmetric alternating-sign matrices (HTSASM's).
  * @author Georg Fischer
  */
-public class A059475 implements Sequence {
+public class A059475 extends Sequence0 {
 
   final Sequence mA005130 = new A005130();
   final Sequence mA006366 = new A006366();

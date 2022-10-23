@@ -6,13 +6,13 @@ import irvine.math.polynomial.QPolynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004535 Theta series of 14-dimensional unimodular lattice (E7+E7)+.
  * @author Sean A. Irvine
  */
-public class A004535 implements Sequence {
+public class A004535 extends Sequence0 {
 
   private static final QPolynomialRingField<Z> RING = new QPolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;

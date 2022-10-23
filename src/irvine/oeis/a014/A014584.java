@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.MemoryFunction1;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014584 Number of Hamiltonian paths in a 5 X n grid starting at the lower left corner and finishing in the upper right corner.
  * @author Sean A. Irvine
  */
-public class A014584 implements Sequence {
+public class A014584 extends Sequence0 {
 
   private final class FFunction extends MemoryFunction1<Z> {
     @Override

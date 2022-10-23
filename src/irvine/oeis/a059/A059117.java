@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059117 Square array of lambda(k,n), where lambda is defined in A055203. Number of ways of placing n identifiable positive intervals with a total of exactly k starting and/or finishing points.
  * @author Sean A. Irvine
  */
-public class A059117 implements Sequence {
+public class A059117 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

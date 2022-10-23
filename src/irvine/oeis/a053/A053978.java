@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
@@ -12,7 +12,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
  * A053978 Continued fraction expansion of limit_{m-&gt;infinity} [r_m], where r_1=1, r_{m+1}= r_1 + 1/(r_2 + 1/(r_3 +...1/(r_{m-1} + 1/r_m)...)).
  * @author Sean A. Irvine
  */
-public class A053978 implements Sequence {
+public class A053978 extends Sequence0 {
 
   private int mN = -1;
   private final ArrayList<CR> mR = new ArrayList<>();

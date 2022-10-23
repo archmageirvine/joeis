@@ -3,13 +3,14 @@ package irvine.oeis.a329;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a262.A262033;
 
 /**
  * A329964 a(n) = (n!/floor(1+n/2)!)^2.
  * @author Georg Fischer
  */
-public class A329964 implements Sequence {
+public class A329964 extends Sequence0 {
 
   final Sequence mA262033 = new A262033();
   @Override

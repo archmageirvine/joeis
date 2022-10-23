@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025165 a(n) = H_n(1) / 2^floor(n/2) where H_n is the n-th Hermite polynomial.
  * @author Sean A. Irvine
  */
-public class A025165 implements Sequence {
+public class A025165 extends Sequence0 {
 
   // After G. C. Greubel
 

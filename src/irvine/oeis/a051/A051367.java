@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051367 Number of 5-element families of an n-element set such that every 4 members of the family have a nonempty intersection.
  * @author Sean A. Irvine
  */
-public class A051367 implements Sequence {
+public class A051367 extends Sequence0 {
 
   private static final int[][] C = {
     {1, 32},

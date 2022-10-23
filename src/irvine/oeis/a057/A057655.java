@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057655 The circle problem: number of points (x,y) in square lattice with x^2 + y^2 &lt;= n.
  * @author Sean A. Irvine
  */
-public class A057655 implements Sequence {
+public class A057655 extends Sequence0 {
 
   private long mN = -1;
 

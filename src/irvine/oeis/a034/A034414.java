@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034414 Leading term in extremal weight enumerator of doubly-even binary self-dual code of length 24n.
  * @author Sean A. Irvine
  */
-public class A034414 implements Sequence {
+public class A034414 extends Sequence0 {
 
   private long mN = -1;
 

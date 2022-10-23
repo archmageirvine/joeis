@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059848 As a square table by antidiagonals, the n-digit number which in base k starts 1010101...
  * @author Sean A. Irvine
  */
-public class A059848 implements Sequence {
+public class A059848 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006048 Number of entries in first n rows of Pascal's triangle not divisible by 3.
  * @author Sean A. Irvine
  */
-public class A006048 implements Sequence {
+public class A006048 extends Sequence0 {
 
   private long mC = 0;
   private long mRow = -1;

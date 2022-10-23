@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A061131 Number of degree-n even permutations of order dividing 8.
@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class A061131 implements Sequence {
+public class A061131 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C8P = Polynomial.create(Q.ZERO, Q.ONE, Q.HALF, Q.ZERO, Q.ONE_QUARTER, Q.ZERO, Q.ZERO, Q.ZERO, new Q(1, 8));

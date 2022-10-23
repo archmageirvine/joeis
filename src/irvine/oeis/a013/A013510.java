@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013510 arcsinh(sec(x)-sech(x))=2/2!*x^2+2/6!*x^6+65762/10!*x^10...
  * @author Sean A. Irvine
  */
-public class A013510 implements Sequence {
+public class A013510 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -2;

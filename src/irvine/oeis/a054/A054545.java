@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054545 Number of labeled digraphs on n unisolated nodes (inverse binomial transform of A053763).
  * @author Sean A. Irvine
  */
-public class A054545 implements Sequence {
+public class A054545 extends Sequence0 {
 
   private int mN = -1;
 

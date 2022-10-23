@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005351;
 import irvine.oeis.a005.A005352;
 
@@ -11,7 +12,7 @@ import irvine.oeis.a005.A005352;
  * A057892 Negabinary numbral addition table read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A057892 implements Sequence {
+public class A057892 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

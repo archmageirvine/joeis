@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001858 Number of forests of trees on n labeled nodes.
  * @author Sean A. Irvine
  */
-public class A001858 implements Sequence {
+public class A001858 extends Sequence0 {
 
   private final ArrayList<Z> mSeq = new ArrayList<>();
 

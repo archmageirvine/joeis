@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002427 Numerator of (2n+1) B_{2n}, where B_n are the Bernoulli numbers.
  * @author Sean A. Irvine
  */
-public class A002427 implements Sequence {
+public class A002427 extends Sequence0 {
 
   private final BernoulliSequence mB = new BernoulliSequence(0);
   private Z mN = Z.NEG_ONE;

@@ -1,14 +1,14 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A046260 Largest palindromic substring in 2^n.
  * @author Sean A. Irvine
  */
-public class A046260 implements Sequence {
+public class A046260 extends Sequence0 {
 
   private Z mA = null;
 

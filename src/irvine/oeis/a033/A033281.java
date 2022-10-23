@@ -2,13 +2,13 @@ package irvine.oeis.a033;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A033281 Number of diagonal dissections of a convex (n+9)-gon into n+1 regions.
  * @author Sean A. Irvine
  */
-public class A033281 implements Sequence {
+public class A033281 extends Sequence0 {
 
   private long mN = -1;
 

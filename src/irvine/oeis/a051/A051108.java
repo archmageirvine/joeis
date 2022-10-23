@@ -1,14 +1,14 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.English;
 
 /**
  * A051108 Numbers described with a single word in American English.
  * @author Sean A. Irvine
  */
-public class A051108 implements Sequence {
+public class A051108 extends Sequence0 {
 
   private int mN = -1;
 

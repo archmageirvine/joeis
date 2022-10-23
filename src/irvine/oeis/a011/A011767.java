@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011767 From studying monochromatic solutions to x3-x2=x2-x1+2n.
  * @author Sean A. Irvine
  */
-public class A011767 implements Sequence {
+public class A011767 extends Sequence0 {
 
   private int mN = -2;
   private long mRes = 1;

@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014430 Subtract 1 from Pascal's triangle, read by rows.
  * @author Sean A. Irvine
  */
-public class A014430 implements Sequence {
+public class A014430 extends Sequence0 {
 
   private long mN = 1;
   private long mM = 0;

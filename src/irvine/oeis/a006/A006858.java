@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006858 Expansion of x*(1 + x)*(1 + 6*x + x^2)/(1 - x)^7.
  * @author Sean A. Irvine
  */
-public class A006858 implements Sequence {
+public class A006858 extends Sequence0 {
 
   private long mN = -1;
 

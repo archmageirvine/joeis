@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006942 Number of segments used to represent n on calculator display, variant 5: digits '6', '7' and '9' use 6, 3 and 6 segments, respectively.
  * @author Sean A. Irvine
  */
-public class A006942 implements Sequence {
+public class A006942 extends Sequence0 {
 
   private static final int[] SEGMENTS = {6, 2, 5, 5, 4, 5, 6, 3, 7, 6};
   private long mN = -1;

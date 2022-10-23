@@ -3,13 +3,13 @@ package irvine.oeis.a047;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A047798 a(n) = Sum_{k=0..n} C(n,k)*Stirling2(n,k)^2.
  * @author Sean A. Irvine
  */
-public class A047798 implements Sequence {
+public class A047798 extends Sequence0 {
 
   private long mN = -1;
 

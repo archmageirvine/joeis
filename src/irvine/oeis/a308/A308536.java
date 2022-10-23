@@ -3,13 +3,14 @@ package irvine.oeis.a308;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000587;
 
 /**
  * A308536 Expansion of e.g.f. exp(1 - exp(2*x)).
  * @author Georg Fischer
  */
-public class A308536 implements Sequence {
+public class A308536 extends Sequence0 {
 
   final Sequence mA000587 = new A000587();
   protected long mN;

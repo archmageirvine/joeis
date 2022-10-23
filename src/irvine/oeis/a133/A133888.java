@@ -3,13 +3,13 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A133888 Binomial(n+8,n) mod 8.
  * @author Georg Fischer
  */
-public class A133888 implements Sequence {
+public class A133888 extends Sequence0 {
 
   protected Z mN;
 

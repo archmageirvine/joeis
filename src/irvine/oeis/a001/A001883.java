@@ -5,13 +5,13 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001883 Number of permutations s of {1,2,...,n} such that |s(i)-i|&gt;1 for each i=1,2,...,n.
  * @author Sean A. Irvine
  */
-public class A001883 implements Sequence {
+public class A001883 extends Sequence0 {
 
   private int mN = -1;
 

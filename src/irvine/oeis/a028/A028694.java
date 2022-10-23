@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028694 25-factorial numbers.
  * @author Sean A. Irvine
  */
-public class A028694 implements Sequence {
+public class A028694 extends Sequence0 {
 
   private Z mT = null;
   private Z mA = Z.ONE;

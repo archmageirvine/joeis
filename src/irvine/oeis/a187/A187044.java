@@ -3,13 +3,14 @@ package irvine.oeis.a187;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a193.A193361;
 
 /**
  * A187044 Row sums of number triangle A070895.
  * @author Georg Fischer
  */
-public class A187044 implements Sequence {
+public class A187044 extends Sequence0 {
 
   final Sequence mA193361 = new A193361();
   /** Construct the sequence. */

@@ -3,13 +3,14 @@ package irvine.oeis.a278;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006128;
 
 /**
  * A278355 a(n) = sum of the perimeters of the Ferrers boards of the partitions of n. Also, sum of the perimeters of the diagrams of the regions of the set of partitions of n.
  * @author Georg Fischer
  */
-public class A278355 implements Sequence {
+public class A278355 extends Sequence0 {
 
   final Sequence mA006128 = new A006128();
   @Override

@@ -3,14 +3,14 @@ package irvine.oeis.a251;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A251583 a(n) = 3^(n-1) * (n+1)^(n-3) * (n+3).
  * <code>A251585  parm3  A251583  5  "16*n^3 + 87*n^2 + 172*n + 125"  a(n) = 5^(n-3) * (n+1)^(n-5) * (16*n^3 + 87*n^2 + 172*n + 125).  nonn,  0..312  nyi  _Paul D. Hanna_, Dec 06 2014</code>
  * @author Georg Fischer
  */
-public class A251583 implements Sequence {
+public class A251583 extends Sequence0 {
 
   private int mN;
   private int mBase;

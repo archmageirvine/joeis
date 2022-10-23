@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027422 Triangle T00, T10, T11, T20, T21, T22, etc. where Tmn = number of distinct products ij with m-n&lt;=i,j&lt;=m.
  * @author Sean A. Irvine
  */
-public class A027422 implements Sequence {
+public class A027422 extends Sequence0 {
 
   private final ArrayList<TreeSet<Long>> mSeen = new ArrayList<>();
   private int mN = -1;

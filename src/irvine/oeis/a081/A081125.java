@@ -1,13 +1,13 @@
 package irvine.oeis.a081;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A081125 a(n) = n! / floor(n/2)!.
  * @author Georg Fischer
  */
-public class A081125 implements Sequence {
+public class A081125 extends Sequence0 {
 
   protected int mN;
   protected Z mFact;

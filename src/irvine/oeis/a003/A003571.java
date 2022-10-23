@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003571 Order of 3 mod 3n+1.
  * @author Sean A. Irvine
  */
-public class A003571 implements Sequence {
+public class A003571 extends Sequence0 {
 
   private long mN = -2;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a218;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007840;
 
 /**
  * A218817 Number of rooted factorizations of n-permutations into ordered cycles.
  * @author Georg Fischer
  */
-public class A218817 implements Sequence {
+public class A218817 extends Sequence0 {
 
   final Sequence mA007840 = new A007840();
   protected long mN;

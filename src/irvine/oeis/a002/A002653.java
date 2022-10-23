@@ -5,13 +5,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002653 Expansion of (theta_3(z)*theta_3(7z)+theta_2(z)*theta_2(7z))^3.
  * @author Sean A. Irvine
  */
-public class A002653 implements Sequence {
+public class A002653 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;

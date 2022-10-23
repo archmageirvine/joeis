@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058927 Numerators of series related to triangular cacti.
  * @author Sean A. Irvine
  */
-public class A058927 implements Sequence {
+public class A058927 extends Sequence0 {
 
   private int mN = -1;
   private Z mDen = Z.ONE;

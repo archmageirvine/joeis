@@ -2,13 +2,13 @@ package irvine.oeis.a011;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011270 Hybrid binary rooted trees with n nodes whose root is labeled by "n".
  * @author Sean A. Irvine
  */
-public class A011270 implements Sequence {
+public class A011270 extends Sequence0 {
 
   private long mN = -2;
 

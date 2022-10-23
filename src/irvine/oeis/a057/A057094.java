@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057094 Coefficient triangle for certain polynomials (rising powers).
  * @author Sean A. Irvine
  */
-public class A057094 implements Sequence {
+public class A057094 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

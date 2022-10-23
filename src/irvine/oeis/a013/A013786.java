@@ -1,13 +1,13 @@
 package irvine.oeis.a013;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013786 a(n) = 7^(4*n + 1).
  * @author Sean A. Irvine
  */
-public class A013786 implements Sequence {
+public class A013786 extends Sequence0 {
 
   private Z mA = null;
 

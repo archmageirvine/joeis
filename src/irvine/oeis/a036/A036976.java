@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036976 Becomes a prime if a 1 is inserted before each digit.
  * @author Sean A. Irvine
  */
-public class A036976 implements Sequence {
+public class A036976 extends Sequence0 {
 
   private long mN = -1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005701 Number of exterior points formed by extending diagonals of n-gon in general position.
  * @author Sean A. Irvine
  */
-public class A005701 implements Sequence {
+public class A005701 extends Sequence0 {
 
   private long mN = 0;
 

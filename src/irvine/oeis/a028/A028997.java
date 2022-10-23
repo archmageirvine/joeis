@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028997 Theta series of quadratic form with Gram matrix [ 4, 1, 0, 1; 1, 4, 1, 0; 0, 1, 4, -1; 1, 0, -1, 4 ].
  * @author Sean A. Irvine
  */
-public class A028997 implements Sequence {
+public class A028997 extends Sequence0 {
 
   // After Michael Somos
 

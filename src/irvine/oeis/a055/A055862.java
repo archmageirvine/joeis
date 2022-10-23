@@ -1,14 +1,14 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055862 Fourth column of triangle A055858.
  * a(i)=0, i=0, 1, 2; a(n)= (n^2)*(n+1)^(n-2), n &gt;= 3.
  * @author Georg Fischer
  */
-public class A055862 implements Sequence {
+public class A055862 extends Sequence0 {
 
   protected int mN = -1;
 

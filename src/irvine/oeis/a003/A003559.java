@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003559 Least number m such that 3^m = +- 1 mod 3n + 1.
  * @author Sean A. Irvine
  */
-public class A003559 implements Sequence {
+public class A003559 extends Sequence0 {
 
   private final long mS;
   private long mN = 1;

@@ -3,13 +3,14 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a038.A038507;
 import irvine.oeis.a051.A051301;
 /**
  * A056111 Highest proper factor of n!+1.
  * @author Georg Fischer
  */
-public class A056111 implements Sequence {
+public class A056111 extends Sequence0 {
 
   private final Sequence mA038507 = new A038507();
   private final Sequence mA051301 = new A051301();

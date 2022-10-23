@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007284 Horizontally symmetric numbers.
  * @author Sean A. Irvine
  */
-public class A007284 implements Sequence {
+public class A007284 extends Sequence0 {
 
   private static final long[] INCREMENTS = {2, 1, 2, 5};
   private Z mN = Z.valueOf(-2);

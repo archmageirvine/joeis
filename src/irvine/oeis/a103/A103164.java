@@ -1,13 +1,13 @@
 package irvine.oeis.a103;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A103164 Integers but with the primes squared.
  * @author Georg Fischer
  */
-public class A103164 implements Sequence {
+public class A103164 extends Sequence0 {
 
   private int mN;
 

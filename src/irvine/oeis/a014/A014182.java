@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014182 Expansion of e.g.f. exp(1-x-exp(-x)).
  * @author Sean A. Irvine
  */
-public class A014182 implements Sequence {
+public class A014182 extends Sequence0 {
 
   private long mN = -1;
 

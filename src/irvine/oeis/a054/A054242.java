@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054242 Triangle read by rows: row n (n&gt;=0) gives the number of partitions of (n,0), (n-1,1), (n-2,2), ..., (0,n) respectively into sums of distinct pairs.
  * @author Sean A. Irvine
  */
-public class A054242 implements Sequence {
+public class A054242 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING_Y = new PolynomialRing<>(Integers.SINGLETON);
   private static final PolynomialRing<Polynomial<Z>> RING_X = new PolynomialRing<>(RING_Y);

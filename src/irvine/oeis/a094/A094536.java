@@ -3,13 +3,14 @@ package irvine.oeis.a094;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003000;
 
 /**
  * A094536 Number of binary words of length n that are not "bifix-free".
  * @author Georg Fischer
  */
-public class A094536 implements Sequence {
+public class A094536 extends Sequence0 {
 
   final Sequence mA003000 = new A003000();
   protected long mN;

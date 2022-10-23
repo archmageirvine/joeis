@@ -3,13 +3,14 @@ package irvine.oeis.a090;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000367;
 
 /**
  * A090629 a(n) = abs(numerator of 2n-th Bernoulli number) modulo 3.
  * @author Georg Fischer
  */
-public class A090629 implements Sequence {
+public class A090629 extends Sequence0 {
 
   final Sequence mA000367 = new A000367();
   @Override

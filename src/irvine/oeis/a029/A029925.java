@@ -1,13 +1,13 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A029925 Convert n from degrees Celsius to Fahrenheit.
  * @author Sean A. Irvine
  */
-public class A029925 implements Sequence {
+public class A029925 extends Sequence0 {
 
   private Z mN = Z.valueOf(307);
 

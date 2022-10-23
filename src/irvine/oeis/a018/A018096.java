@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018096 Powers of fourth root of 18 rounded down.
  * @author Sean A. Irvine
  */
-public class A018096 implements Sequence {
+public class A018096 extends Sequence0 {
 
   private Z mN = null;
 

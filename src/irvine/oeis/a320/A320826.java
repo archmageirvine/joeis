@@ -3,12 +3,13 @@ package irvine.oeis.a320;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A320826 Expansion of x*(1 - 4*x)^(3/2)/(3*x - 1)^2.
  * @author Georg Fischer
  */
-public class A320826 implements Sequence {
+public class A320826 extends Sequence0 {
 
   final Sequence mA320825 = new A320825();
   final Sequence mA320827 = new A320827();

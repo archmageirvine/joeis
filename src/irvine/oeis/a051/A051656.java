@@ -3,13 +3,14 @@ package irvine.oeis.a051;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
 
 /**
  * A051656 Sum_{i=0..n} (C(n,i) mod 2)*Fibonacci(2*i).
  * @author Sean A. Irvine
  */
-public class A051656 implements Sequence {
+public class A051656 extends Sequence0 {
 
   private long mN = -1;
 

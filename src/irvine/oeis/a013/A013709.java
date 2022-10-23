@@ -1,13 +1,13 @@
 package irvine.oeis.a013;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013709 a(n) = 4^(2n+1).
  * @author Sean A. Irvine
  */
-public class A013709 implements Sequence {
+public class A013709 extends Sequence0 {
 
   private Z mA = null;
 

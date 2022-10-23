@@ -5,13 +5,13 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A337155 a(n) = 5^n * (n!)^2 * Sum_{k=0..n} 1 / ((-5)^k * (k!)^2).
  * @author Georg Fischer
  */
-public class A337155 implements Sequence {
+public class A337155 extends Sequence0 {
 
   private int mN = -1;
 

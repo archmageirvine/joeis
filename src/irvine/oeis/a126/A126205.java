@@ -3,14 +3,14 @@ package irvine.oeis.a126;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A126205 Number of 3's in decimal expansion of 3^n, with n&gt;=0.
  * @author Georg Fischer
  */
-public class A126205 implements Sequence {
+public class A126205 extends Sequence0 {
 
   protected int mN = -1;
   

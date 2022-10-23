@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000674 Boustrophedon transform of 1, 2, 2, 2, 2, ...
  * @author Sean A. Irvine
  */
-public class A000674 implements Sequence {
+public class A000674 extends Sequence0 {
 
   private int mN = -1;
   private Z[] mPrev = null;

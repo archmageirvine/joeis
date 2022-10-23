@@ -3,13 +3,13 @@ package irvine.oeis.a045;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045887 Number of distinct even numbers visible as proper subsequences of n.
  * @author Sean A. Irvine
  */
-public class A045887 implements Sequence {
+public class A045887 extends Sequence0 {
 
   private long mN = -1;
   private final TreeSet<Long> mA = new TreeSet<>();

@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056162 a(n) = Sum_{k=0..n} (k!)^(n-k).
  * @author Georg Fischer
  */
-public class A056162 implements Sequence {
+public class A056162 extends Sequence0 {
 
   private int mN = -1;
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;

@@ -6,13 +6,13 @@ import java.util.List;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035935 Smallest number that always takes at least n steps to reach 0 under "k -&gt; any product of 2 numbers whose concatenation is k".
  * @author Sean A. Irvine
  */
-public class A035935 implements Sequence {
+public class A035935 extends Sequence0 {
 
   private final List<TreeSet<Integer>> mSteps = new ArrayList<>();
   {

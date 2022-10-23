@@ -3,13 +3,14 @@ package irvine.oeis.a151;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a130.A130665;
 
 /**
  * A151920 a(n) = (Sum_{i=1..n+1} 3^wt(i))/3, where wt() = A000120().
  * @author Georg Fischer
  */
-public class A151920 implements Sequence {
+public class A151920 extends Sequence0 {
 
   final Sequence mA130665 = new A130665();
   /** Construct the sequence. */

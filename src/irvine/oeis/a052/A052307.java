@@ -5,13 +5,13 @@ import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052307 Triangle read by rows: T(n,k) = number of bracelets (reversible necklaces) with n beads, k of which are black and n - k are white.
  * @author Sean A. Irvine
  */
-public class A052307 implements Sequence {
+public class A052307 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

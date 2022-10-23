@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008327 Triangle read by rows: T(n,k) is the number of simple regular bipartite graphs with 2n nodes and degree k, (0 &lt;= k &lt;= n).
  * @author Sean A. Irvine
  */
-public class A008327 implements Sequence {
+public class A008327 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

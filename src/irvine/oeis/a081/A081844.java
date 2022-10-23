@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.group.IntegersMod;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A081844 Number of irreducible factors of x^(2n+1) - 1 over GF(2).
  * @author Sean A. Irvine
  */
-public class A081844 implements Sequence {
+public class A081844 extends Sequence0 {
 
   private long mN = -1;
 

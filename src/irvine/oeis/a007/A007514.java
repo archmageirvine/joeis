@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007514 Pi = Sum_{n &gt;= 0} a(n)/n!.
  * @author Sean A. Irvine
  */
-public class A007514 implements Sequence {
+public class A007514 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.ONE;

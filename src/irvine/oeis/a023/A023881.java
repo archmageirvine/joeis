@@ -6,13 +6,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A023881 Number of partitions in expanding space: sigma(n,q) is the sum of the q-th powers of the divisors of n.
  * @author Sean A. Irvine
  */
-public class A023881 implements Sequence {
+public class A023881 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private Polynomial<Q> mP = RING.zero();

@@ -3,13 +3,14 @@ package irvine.oeis.a211;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001205;
 
 /**
  * A211774 Number of rooted 2-regular labeled graphs on n nodes.
  * @author Georg Fischer
  */
-public class A211774 implements Sequence {
+public class A211774 extends Sequence0 {
 
   final Sequence mA001205 = new A001205();
   protected long mN;

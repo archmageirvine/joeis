@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034057 Decimal part of a(n)^(1/2) starts with n (squares excluded).
  * @author Sean A. Irvine
  */
-public class A034057 implements Sequence {
+public class A034057 extends Sequence0 {
 
   private long mN = -1;
   private long mT = 10;

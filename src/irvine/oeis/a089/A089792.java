@@ -3,12 +3,13 @@ package irvine.oeis.a089;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a054.A054861;
 /**
  * A089792 a(n) = n-(exponent of highest power of 3 dividing n!).
  * @author Georg Fischer
  */
-public class A089792 implements Sequence {
+public class A089792 extends Sequence0 {
 
   private final Sequence mA054861 = new A054861();
   protected long mN;

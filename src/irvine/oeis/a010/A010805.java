@@ -1,13 +1,13 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010805 17th powers: a(n) = n^17.
  * @author Sean A. Irvine
  */
-public class A010805 implements Sequence {
+public class A010805 extends Sequence0 {
 
   private long mN = -1;
 

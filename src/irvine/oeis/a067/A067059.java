@@ -2,14 +2,14 @@ package irvine.oeis.a067;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A067059 Square array read by antidiagonals of partitions which half fill an n*k box, i.e., partitions of floor(nk/2) or ceiling(nk/2) into up to n positive integers, each no more than k.
  *
  * @author Sean A. Irvine
  */
-public class A067059 implements Sequence {
+public class A067059 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

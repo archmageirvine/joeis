@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046989 Denominators of Taylor series expansion in powers of x^2 of log(x/sin x).
  * @author Sean A. Irvine
  */
-public class A046989 implements Sequence {
+public class A046989 extends Sequence0 {
 
   private final BernoulliSequence mB = new BernoulliSequence(1);
   private int mN = -1;

@@ -1,13 +1,13 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052752 a(n) = (3*n+1)^(n-1).
  * @author Georg Fischer
  */
-public class A052752 implements Sequence {
+public class A052752 extends Sequence0 {
 
   protected int mN = -1;
 

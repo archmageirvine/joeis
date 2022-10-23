@@ -1,13 +1,13 @@
 package irvine.oeis.a029;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A029948 Smallest prime containing n-th square as substring.
  * @author Sean A. Irvine
  */
-public class A029948 implements Sequence {
+public class A029948 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

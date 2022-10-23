@@ -3,13 +3,13 @@ package irvine.oeis.a138;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A138589 a(n) = 5^n mod 4^n.
  * @author Georg Fischer
  */
-public class A138589 implements Sequence {
+public class A138589 extends Sequence0 {
 
   private int mN = 0;
   private final Z mBase = Z.FIVE;

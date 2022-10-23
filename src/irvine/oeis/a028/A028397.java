@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028397 Start at n and iterate the map in A006368; a(n) is the smallest number in the trajectory.
  * @author Sean A. Irvine
  */
-public class A028397 implements Sequence {
+public class A028397 extends Sequence0 {
 
   private static final int HEURISTIC_BIT_LENGTH = 1000;
   private long mN = -1;

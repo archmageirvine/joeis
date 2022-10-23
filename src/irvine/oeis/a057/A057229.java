@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057229 a(n) = a*b = x*y with (a-b) = (x+y) = A020882(n) (a&gt;b, a&gt;0, b&gt;0, x&gt;0, y&gt;0), gcd(a, b) = gcd(x, y) = 1.
  * @author Sean A. Irvine
  */
-public class A057229 implements Sequence {
+public class A057229 extends Sequence0 {
 
   private long mC = 4;
   private final TreeSet<Z> mA = new TreeSet<>();

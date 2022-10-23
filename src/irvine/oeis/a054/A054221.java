@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Triple;
 
 /**
  * A054221 Consider all integer triples (i,j,k), j,k&gt;0, with binomial(i+2,3)=binomial(j+2,3)+k^3, ordered by increasing i; sequence gives i values.
  * @author Sean A. Irvine
  */
-public class A054221 implements Sequence {
+public class A054221 extends Sequence0 {
 
   // After Bert Dobbelaere
 

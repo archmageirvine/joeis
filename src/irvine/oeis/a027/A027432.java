@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027432 Related to sorting procedure studied by West: number of permutations that are both sorted (i.e., obtainable as output of the sorting procedure) and one-stack sortable.
  * @author Sean A. Irvine
  */
-public class A027432 implements Sequence {
+public class A027432 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.ONE;

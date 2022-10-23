@@ -3,13 +3,14 @@ package irvine.oeis.a132;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007318;
 import irvine.oeis.a103.A103451;
 /**
  * A132047 3*A007318 - 2*A103451 as infinite lower triangular matrices.
  * @author Georg Fischer
  */
-public class A132047 implements Sequence {
+public class A132047 extends Sequence0 {
 
   private final Sequence mA007318 = new A007318();
   private final Sequence mA103451 = new A103451();

@@ -5,13 +5,13 @@ import java.util.HashSet;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002185 Smallest primitive factor of 2^(2n+1) + 1.
  * @author Sean A. Irvine
  */
-public class A002185 implements Sequence {
+public class A002185 extends Sequence0 {
 
   private final HashSet<Z> mSeen = new HashSet<>();
   private int mN = -1;

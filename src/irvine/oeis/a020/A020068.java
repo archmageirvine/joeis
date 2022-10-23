@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020068 a(n) = floor( Gamma(n+2/9) / Gamma(2/9) ).
  * @author Sean A. Irvine
  */
-public class A020068 implements Sequence {
+public class A020068 extends Sequence0 {
 
   private static final Q C = new Q(2, 9);
   private int mN = -2;

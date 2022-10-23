@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010815 From Euler's Pentagonal Theorem: coefficient of q^n in Product_{m&gt;=1} (1 - q^m).
  * @author Sean A. Irvine
  */
-public class A010815 implements Sequence {
+public class A010815 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;

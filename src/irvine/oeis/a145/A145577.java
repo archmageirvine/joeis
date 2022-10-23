@@ -4,13 +4,14 @@ package irvine.oeis.a145;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a045.A045944;
 
 /**
  * A145577 A045944 mod 9. Period 9: repeat 0,5,7,6,2,4,3,8,1.
  * @author Georg Fischer
  */
-public class A145577 implements Sequence {
+public class A145577 extends Sequence0 {
 
   final Sequence mA045944 = new A045944();
   @Override

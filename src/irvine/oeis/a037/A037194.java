@@ -1,14 +1,14 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.French;
 
 /**
  * A037194 Number of vowels in n (in French).
  * @author Sean A. Irvine
  */
-public class A037194 implements Sequence {
+public class A037194 extends Sequence0 {
 
   private static final String VOWELS = "aeiou\u00E9";
   private int mN = -1;

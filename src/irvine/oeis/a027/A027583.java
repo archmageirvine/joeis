@@ -5,14 +5,14 @@ import java.util.TreeSet;
 
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence0;
 import irvine.oeis.transform.PartitionTransformSequence;
-import irvine.oeis.Sequence;
 
 /**
  * A027583 Sequence satisfies T(a)=a, where T is defined below.
  * @author Sean A. Irvine
  */
-public class A027583 implements Sequence {
+public class A027583 extends Sequence0 {
 
   // After Robert Israel
 

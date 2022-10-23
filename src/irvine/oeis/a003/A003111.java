@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003111 Number of complete mappings of the cyclic group Z_{2n+1}.
  * @author Sean A. Irvine
  */
-public class A003111 implements Sequence {
+public class A003111 extends Sequence0 {
 
   protected int mN = -1;
   private long mCount = 0;

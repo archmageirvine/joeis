@@ -6,14 +6,14 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.RationalUnityExtension;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A182825 E.g.f. 1/(cos(sqrt(3)*x) - sin(sqrt(3)*x)/sqrt(3)).
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class A182825 implements Sequence {
+public class A182825 extends Sequence0 {
 
   // Construct field like Q[sqrt(3)]; i.e., extension of rationals such that t^2=3
   private static final RationalUnityExtension Q3 = new RationalUnityExtension("t", 2, Q.THREE);

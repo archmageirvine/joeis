@@ -3,6 +3,7 @@ package irvine.oeis.a121;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a024.A024429;
 import irvine.oeis.a024.A024430;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a024.A024430;
  * A121869 Monthly Problem 10791, first expression.
  * @author Georg Fischer
  */
-public class A121869 implements Sequence {
+public class A121869 extends Sequence0 {
 
   final Sequence mA024429 = new A024429();
   final Sequence mA024430 = new A024430();

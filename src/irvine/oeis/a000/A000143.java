@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000143 Number of ways of writing n as a sum of 8 squares.
  * @author Sean A. Irvine
  */
-public class A000143 implements Sequence {
+public class A000143 extends Sequence0 {
 
   private long mN = -1;
 

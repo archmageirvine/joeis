@@ -1,13 +1,13 @@
 package irvine.oeis.a017;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A017927 Powers of sqrt(7) rounded up.
  * @author Sean A. Irvine
  */
-public class A017927 implements Sequence {
+public class A017927 extends Sequence0 {
 
   private Z mN = null;
 

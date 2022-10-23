@@ -7,13 +7,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A039924 G.f.: Sum_{k&gt;=0} x^(k^2)*(-1)^k/(Product_{i=1..k} 1-x^i).
  * @author Sean A. Irvine
  */
-public class A039924 implements Sequence {
+public class A039924 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;

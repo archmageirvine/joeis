@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011558 Expansion of (x + x^3)/(1 + x + ... + x^4) mod 2.
  * @author Sean A. Irvine
  */
-public class A011558 implements Sequence {
+public class A011558 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

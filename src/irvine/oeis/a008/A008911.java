@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008911 a(n) = n^2*(n^2 - 1)/6.
  * @author Sean A. Irvine
  */
-public class A008911 implements Sequence {
+public class A008911 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

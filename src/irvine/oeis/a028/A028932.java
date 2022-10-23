@@ -3,13 +3,13 @@ package irvine.oeis.a028;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028932 Triangular array of winning positions in Tchoukaillon (or Mancala) solitaire.
  * @author Sean A. Irvine
  */
-public class A028932 implements Sequence {
+public class A028932 extends Sequence0 {
 
   // See also A028931.
 

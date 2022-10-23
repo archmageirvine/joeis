@@ -3,6 +3,7 @@ package irvine.oeis.a262;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000670;
 import irvine.oeis.a032.A032011;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a032.A032011;
  * A262047 Number of ordered partitions of [n] such that at least two parts have the same size.
  * @author Georg Fischer
  */
-public class A262047 implements Sequence {
+public class A262047 extends Sequence0 {
 
   final Sequence mA000670 = new A000670();
   final Sequence mA032011 = new A032011();

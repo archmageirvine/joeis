@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052173 Another version of the Catalan triangle A008315.
  * @author Sean A. Irvine
  */
-public class A052173 implements Sequence {
+public class A052173 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

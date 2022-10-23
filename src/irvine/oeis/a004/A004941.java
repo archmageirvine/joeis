@@ -3,13 +3,13 @@ package irvine.oeis.a004;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004941 Nearest integer to n*phi^6, where phi is the golden ratio, A001622.
  * @author Sean A. Irvine
  */
-public class A004941 implements Sequence {
+public class A004941 extends Sequence0 {
 
   private static final CR PHI_POWER = ComputableReals.SINGLETON.pow(CR.PHI, 6);
 

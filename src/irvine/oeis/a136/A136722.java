@@ -3,6 +3,7 @@ package irvine.oeis.a136;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001349;
 import irvine.oeis.a011.A011782;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a011.A011782;
  * A136722 Number of preferential arrangements (or hierarchical orderings) on the connected graphs on n unlabeled nodes.
  * @author Georg Fischer
  */
-public class A136722 implements Sequence {
+public class A136722 extends Sequence0 {
 
   final Sequence mA001349 = new A001349();
   final Sequence mA011782 = new A011782();

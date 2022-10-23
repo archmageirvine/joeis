@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A143405 Number of forests of labeled rooted trees of height at most 1, with n labels, where any root may contain &gt;= 1 labels, also row sums of A143395, A143396 and A143397.
  * E.g.f.: exp(exp(x)*(exp(x)-1))
  * @author Georg Fischer
  */
-public class A143405 implements Sequence {
+public class A143405 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

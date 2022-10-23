@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006007 4-dimensional analog of centered polygonal numbers: a(n) = n(n+1)*(n^2+n+4)/12.
  * @author Sean A. Irvine
  */
-public class A006007 implements Sequence {
+public class A006007 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

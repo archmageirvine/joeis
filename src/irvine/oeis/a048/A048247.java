@@ -5,13 +5,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048247 Every prime occurs to this power in some factorial.
  * @author Sean A. Irvine
  */
-public class A048247 implements Sequence {
+public class A048247 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final Fast mPrime = new Fast();

@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058885 a(n) = smallest k such that k! ends in 2^n, not counting the trailing zeros.
  * @author Sean A. Irvine
  */
-public class A058885 implements Sequence {
+public class A058885 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = Z.TEN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004117 Numerators of expansion of (1-x)^(-1/3).
  * @author Sean A. Irvine
  */
-public class A004117 implements Sequence {
+public class A004117 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.ONE;

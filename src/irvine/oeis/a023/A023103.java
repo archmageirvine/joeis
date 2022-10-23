@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A023103 (10^n)-th digit of infinite string 12345678910111213141516...
  * @author Sean A. Irvine
  */
-public class A023103 implements Sequence {
+public class A023103 extends Sequence0 {
 
   // After Robert G. Wilson v
 

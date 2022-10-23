@@ -1,13 +1,13 @@
 package irvine.oeis.a178;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A178465 Expansion of -2*x^2*(-3-2*x+x^2-x^3-2*x^4+x^5)  /  ( (1+x)^2*(x-1)^4 ).
  * @author Sean A. Irvine
  */
-public class A178465 implements Sequence {
+public class A178465 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

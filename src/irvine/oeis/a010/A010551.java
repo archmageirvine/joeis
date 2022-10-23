@@ -1,13 +1,13 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010551 Multiply successively by 1,1,2,2,3,3,4,4,..., n &gt;= 1, a(0) = 1.
  * @author Sean A. Irvine
  */
-public class A010551 implements Sequence {
+public class A010551 extends Sequence0 {
 
   private Z mA = null;
   private long mN = 1;

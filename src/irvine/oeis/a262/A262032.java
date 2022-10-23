@@ -3,6 +3,7 @@ package irvine.oeis.a262;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000142;
 import irvine.oeis.a000.A000722;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000722;
  * A262032 a(n) = (2^n)! / n!.
  * @author Georg Fischer
  */
-public class A262032 implements Sequence {
+public class A262032 extends Sequence0 {
 
   final Sequence mA000142 = new A000142();
   final Sequence mA000722 = new A000722();

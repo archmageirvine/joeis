@@ -1,14 +1,14 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A002721 Number of 3 X 3 X 3 arrays M_ijk (1 &lt;= i,j,k &lt;= 3) with entries satisfying 0 &lt;= M_ijk &lt;= n and all line sums equal to n.
  * @author Sean A. Irvine
  */
-public class A002721 implements Sequence {
+public class A002721 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A022030 For even n, a(n+2) is the greatest integer such that a(n+2)/a(n+1) &lt; a(n+1)/a(n); for odd n, the least integer such that a(n+2)/a(n+1) &gt; a(n+1)/a(n); a(0) = 4, a(1) = 16.
  * @author Sean A. Irvine
  */
-public class A022030 implements Sequence {
+public class A022030 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

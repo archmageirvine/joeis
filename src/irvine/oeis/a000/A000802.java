@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000802 Maximal number of states in the minimal deterministic finite automaton accepting a language over a binary alphabet consisting of some words of length n.
  * @author Sean A. Irvine
  */
-public class A000802 implements Sequence {
+public class A000802 extends Sequence0 {
 
   private int mN = -1;
 

@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003405 G.f.: (1 + x^4 + x^7 + 2*x^8 + x^9 + x^12 + x^16)/Product_{i=1..8} (1 - x^i).
  * @author Sean A. Irvine
  */
-public class A003405 implements Sequence {
+public class A003405 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;

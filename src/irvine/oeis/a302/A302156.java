@@ -3,6 +3,7 @@ package irvine.oeis.a302;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000079;
 import irvine.oeis.a006.A006939;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006939;
  * A302156 a(n) = Product_{k=1..n} prime(k+1)^(n-k+1).
  * @author Georg Fischer
  */
-public class A302156 implements Sequence {
+public class A302156 extends Sequence0 {
 
   final Sequence mA000079 = new A000079();
   final Sequence mA006939 = new A006939();

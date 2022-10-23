@@ -5,13 +5,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054669 Triangular array T(n,k) giving the number of labeled even graphs with n nodes and k edges for n &gt;= 0 and 0 &lt;= k &lt;= n*(n-1-[0 == n mod 2])/2 (with no trailing zeros).
  * @author Sean A. Irvine
  */
-public class A054669 implements Sequence {
+public class A054669 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private Polynomial<Z> mA = RING.one();

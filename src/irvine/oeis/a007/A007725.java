@@ -4,13 +4,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007725 Number of spanning trees of Aztec diamonds of order n.
  * @author Sean A. Irvine
  */
-public class A007725 implements Sequence {
+public class A007725 extends Sequence0 {
 
   private int mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028270 Central elements in 3-Pascal triangle A028262 (by row).
  * @author Sean A. Irvine
  */
-public class A028270 implements Sequence {
+public class A028270 extends Sequence0 {
 
   private long mN = -1;
 

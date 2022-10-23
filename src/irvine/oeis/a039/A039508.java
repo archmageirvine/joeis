@@ -3,13 +3,13 @@ package irvine.oeis.a039;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A039508 Conjecturally, number of minimum points of '3x+(2n+1)' problem.
  * @author Sean A. Irvine
  */
-public class A039508 implements Sequence {
+public class A039508 extends Sequence0 {
 
   // Heuristic
   private static final long MAX = 100000;

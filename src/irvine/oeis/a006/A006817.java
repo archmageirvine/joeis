@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.Trailer;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006817 Trails of length n on square lattice.
  * @author Sean A. Irvine
  */
-public class A006817 implements Sequence {
+public class A006817 extends Sequence0 {
 
   private final long mC = Lattices.Z2.neighbour(Lattices.Z2.origin(), 0);
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new Trailer(Lattices.Z2));

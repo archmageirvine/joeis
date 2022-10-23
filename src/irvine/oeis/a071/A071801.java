@@ -3,6 +3,7 @@ package irvine.oeis.a071;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000984;
 import irvine.oeis.a001.A001405;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001405;
  * A071801 a(n) = binomial(2n, n) - binomial(n, floor(n/2))^2.
  * @author Georg Fischer
  */
-public class A071801 implements Sequence {
+public class A071801 extends Sequence0 {
 
   final Sequence mA000984 = new A000984();
   final Sequence mA001405 = new A001405();

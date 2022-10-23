@@ -4,13 +4,13 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006924 Number of connected trivalent graphs with 2n nodes and girth exactly 4.
  * @author Sean A. Irvine
  */
-public class A006924 implements Sequence, GraphProcessor {
+public class A006924 extends Sequence0 implements GraphProcessor {
 
   private int mN = -2;
   protected long mCount = 0;

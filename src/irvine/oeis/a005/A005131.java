@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005131 A generalized continued fraction for Euler's number e.
  * @author Sean A. Irvine
  */
-public class A005131 implements Sequence {
+public class A005131 extends Sequence0 {
 
   private long mN = -1;
 

@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058561 A 3-way generalization of series-parallel networks with n labeled edges.
  * @author Sean A. Irvine
  */
-public class A058561 implements Sequence {
+public class A058561 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C1 = RING.onePlusXToTheN(1);

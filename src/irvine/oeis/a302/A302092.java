@@ -3,6 +3,7 @@ package irvine.oeis.a302;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000110;
 import irvine.oeis.a004.A004098;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a004.A004098;
  * A302092 Product of n-th Bell number and n-th Bell number written backwards.
  * @author Georg Fischer
  */
-public class A302092 implements Sequence {
+public class A302092 extends Sequence0 {
 
   final Sequence mA000110 = new A000110();
   final Sequence mA004098 = new A004098();

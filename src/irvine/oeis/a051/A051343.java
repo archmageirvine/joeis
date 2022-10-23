@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051343 Number of ways of writing n as a sum of 3 nonnegative cubes (counted naively).
  * @author Sean A. Irvine
  */
-public class A051343 implements Sequence {
+public class A051343 extends Sequence0 {
 
   private long mN = -1;
 

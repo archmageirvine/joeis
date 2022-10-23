@@ -4,7 +4,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a146.A146305;
 
 
@@ -12,7 +12,7 @@ import irvine.oeis.a146.A146305;
  * A210696 Triangulations of the disk, G_{1,n}.
  * @author Sean A. Irvine
  */
-public class A210696 implements Sequence {
+public class A210696 extends Sequence0 {
 
   // Based on existing Maple program in OEIS entry (by R. J. Mathar)
 

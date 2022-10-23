@@ -3,13 +3,14 @@ package irvine.oeis.a134;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a036.A036555;
 
 /**
  * A134660 Number of odd coefficients in (1 + x + x^2 + x^3)^n.
  * @author Georg Fischer
  */
-public class A134660 implements Sequence {
+public class A134660 extends Sequence0 {
 
   final Sequence mA036555 = new A036555();
   @Override

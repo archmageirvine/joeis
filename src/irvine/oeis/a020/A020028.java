@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020028 Nearest integer to Gamma(n + 1/8)/Gamma(1/8).
  * @author Sean A. Irvine
  */
-public class A020028 implements Sequence {
+public class A020028 extends Sequence0 {
 
   private static final Q C = new Q(1, 8);
   private int mN = -2;

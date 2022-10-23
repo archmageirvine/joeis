@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058185 Numbers (written in decimal) which appear the same when written in base 5 and base 10/2.
  * @author Sean A. Irvine
  */
-public class A058185 implements Sequence {
+public class A058185 extends Sequence0 {
 
   private long mN = -1;
 

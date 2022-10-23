@@ -3,6 +3,7 @@ package irvine.oeis.a261;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a011.A011782;
 import irvine.oeis.a032.A032020;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a032.A032020;
  * A261982 Number of compositions of n with some part repeated.
  * @author Georg Fischer
  */
-public class A261982 implements Sequence {
+public class A261982 extends Sequence0 {
 
   final Sequence mA011782 = new A011782();
   final Sequence mA032020 = new A032020();

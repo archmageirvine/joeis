@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048379 Apply the transformation 0-&gt;1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;7-&gt;8-&gt;9-&gt;0 to digits of n.
  * @author Sean A. Irvine
  */
-public class A048379 implements Sequence {
+public class A048379 extends Sequence0 {
 
   private long mN = -1;
 

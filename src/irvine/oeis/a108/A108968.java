@@ -1,14 +1,14 @@
 package irvine.oeis.a108;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.English;
 
 /**
  * A108968 Self-ranked numbers.
  * @author Sean A. Irvine
  */
-public class A108968 implements Sequence {
+public class A108968 extends Sequence0 {
 
   private static final String[] CODE = new String[26];
   static {

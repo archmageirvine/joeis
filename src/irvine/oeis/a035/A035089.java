@@ -1,13 +1,13 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035089 Smallest prime of form 2^n*k + 1.
  * @author Sean A. Irvine
  */
-public class A035089 implements Sequence {
+public class A035089 extends Sequence0 {
 
   private int mN = -1;
 

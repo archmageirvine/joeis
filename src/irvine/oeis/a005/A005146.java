@@ -6,13 +6,13 @@ import java.util.List;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005146 Numerators of numbers occurring in continued fraction connected with expansion of gamma function.
  * @author Sean A. Irvine
  */
-public class A005146 implements Sequence {
+public class A005146 extends Sequence0 {
 
   // After P. Luschny
 

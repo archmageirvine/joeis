@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A024430 Expansion of e.g.f. cosh(exp(x)-1).
  * @author Sean A. Irvine
  */
-public class A024430 implements Sequence {
+public class A024430 extends Sequence0 {
 
   private int mN = -1;
 

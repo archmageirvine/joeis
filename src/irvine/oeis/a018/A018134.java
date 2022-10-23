@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018134 Powers of fifth root of 7 rounded up.
  * @author Sean A. Irvine
  */
-public class A018134 implements Sequence {
+public class A018134 extends Sequence0 {
 
   private Z mN = null;
 

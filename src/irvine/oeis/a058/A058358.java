@@ -5,13 +5,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058358 Coefficients in the series (1 + x + 4x^4 + 6x^6 + 8x^8 + 9x^9 + 10x^10 + 12x^12 + 14x^14 + ... )/(1 - 2x^2 - 3x^3 - 5x^5 - 7x^7 - 11x^11 - 13x^13 - ... ).
  * @author Sean A. Irvine
  */
-public class A058358 implements Sequence {
+public class A058358 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final Fast mPrime = new Fast();

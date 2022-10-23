@@ -3,6 +3,7 @@ package irvine.oeis.a075;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000142;
 import irvine.oeis.a000.A000272;
 import irvine.oeis.a000.A000312;
@@ -11,7 +12,7 @@ import irvine.oeis.a000.A000312;
  * A075473 n^n + n! - 2*(n+1)^(n-1).
  * @author Georg Fischer
  */
-public class A075473 implements Sequence {
+public class A075473 extends Sequence0 {
 
   final Sequence mA000142 = new A000142();
   final Sequence mA000272 = new A000272();

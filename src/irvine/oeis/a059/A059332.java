@@ -2,14 +2,14 @@ package irvine.oeis.a059;
 // manually 2021-06-13
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059332 Determinant of n X n matrix A defined by A[i,j] = (i+j-1)! for 1 &lt;= i,j &lt;= n.
  * Recurrence: a(n) = a(n-1)*(n!)*(n-1)! for n &gt;= 2.
  * @author Georg Fischer
  */
-public class A059332 implements Sequence {
+public class A059332 extends Sequence0 {
 
   private Z mFact;
   private Z mAn;

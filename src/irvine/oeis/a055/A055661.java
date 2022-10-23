@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055661 Tower of Hanoi positions (A055662) converted from base 3 to base 10.
  * @author Sean A. Irvine
  */
-public class A055661 implements Sequence {
+public class A055661 extends Sequence0 {
 
   private long mN = -1;
 

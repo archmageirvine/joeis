@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A032265 Number of ways to partition n labeled elements into pie slices of at least 2 elements allowing the pie to be turned over.
  * @author Sean A. Irvine
  */
-public class A032265 implements Sequence {
+public class A032265 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C1 = RING.onePlusXToTheN(1);

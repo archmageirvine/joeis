@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005460 a(n) = (3*n+4)*(n+3)!/24.
  * @author Sean A. Irvine
  */
-public class A005460 implements Sequence {
+public class A005460 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.TWO;

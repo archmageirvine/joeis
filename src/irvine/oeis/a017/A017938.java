@@ -2,13 +2,13 @@ package irvine.oeis.a017;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A017938 Powers of sqrt(11) rounded to nearest integer.
  * @author Sean A. Irvine
  */
-public class A017938 implements Sequence {
+public class A017938 extends Sequence0 {
 
   private Z mN = null;
 

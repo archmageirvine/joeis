@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036214 Bit-reversing masks for 2n bits.
  * @author Sean A. Irvine
  */
-public class A036214 implements Sequence {
+public class A036214 extends Sequence0 {
 
   private int mN = -1;
 

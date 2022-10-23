@@ -2,13 +2,13 @@ package irvine.oeis.a030;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030134 a(n)^2 has last digit equal to the sum of the other digits.
  * @author Sean A. Irvine
  */
-public class A030134 implements Sequence {
+public class A030134 extends Sequence0 {
 
   private Z mN = Z.valueOf(26);
 

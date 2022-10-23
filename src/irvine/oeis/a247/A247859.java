@@ -3,13 +3,14 @@ package irvine.oeis.a247;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003046;
 
 /**
  * A247859 The product of the first n Catalan numbers and 2^(n^2).
  * @author Georg Fischer
  */
-public class A247859 implements Sequence {
+public class A247859 extends Sequence0 {
 
   final Sequence mA003046 = new A003046();
   protected long mN;

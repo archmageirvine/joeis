@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038370 Smallest prime with "n^2" as central digit(s).
  * @author Sean A. Irvine
  */
-public class A038370 implements Sequence {
+public class A038370 extends Sequence0 {
 
   private long mN = -1;
 

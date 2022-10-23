@@ -3,13 +3,14 @@ package irvine.oeis.a321;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002829;
 
 /**
  * A321425 Number of connected labeled almost cubic graphs on 2n nodes.
  * @author Georg Fischer
  */
-public class A321425 implements Sequence {
+public class A321425 extends Sequence0 {
 
   final Sequence mA002829 = new A002829();
   protected long mN;

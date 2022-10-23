@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005814 Number of 3-regular (trivalent) labeled graphs on 2n vertices with multiple edges and loops allowed.
  * @author Sean A. Irvine
  */
-public class A005814 implements Sequence {
+public class A005814 extends Sequence0 {
 
   private final Z[] mA = {Z.ONE, Z.TWO, Z.valueOf(47), Z.valueOf(4720)};
   private long mN = -1;

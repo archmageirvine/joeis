@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018851 a(n)^2 is smallest square beginning with n.
  * @author Sean A. Irvine
  */
-public class A018851 implements Sequence {
+public class A018851 extends Sequence0 {
 
   private long mN = -1;
 

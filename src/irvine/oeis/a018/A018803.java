@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018803 Number of ways to color cells of an n X n square with 2 colors so that no subsquare of side &gt; 1 has all corners same color.
  * @author Sean A. Irvine
  */
-public class A018803 implements Sequence {
+public class A018803 extends Sequence0 {
 
   // This sequence is known to be finite, in fact n=15 onwards has no solution.
   // While could just implement FiniteSequence here, this code is an honest attempt to

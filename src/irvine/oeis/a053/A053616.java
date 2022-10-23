@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053616 Pyramidal sequence: distance to nearest triangular number.
  * @author Sean A. Irvine
  */
-public class A053616 implements Sequence {
+public class A053616 extends Sequence0 {
 
   private long mN = -1;
 

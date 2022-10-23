@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004992 a(n) = (3^n/n!) * Product_{k=0..n-1} (3*k + 5).
  * @author Sean A. Irvine
  */
-public class A004992 implements Sequence {
+public class A004992 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private long mN = -1;

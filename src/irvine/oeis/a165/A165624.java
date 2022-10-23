@@ -3,13 +3,14 @@ package irvine.oeis.a165;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a107.A107583;
 
 /**
  * A165624 a(n) = 3^(3^n)/(3^n)^3.
  * @author Georg Fischer
  */
-public class A165624 implements Sequence {
+public class A165624 extends Sequence0 {
 
   final Sequence mA107583 = new A107583();
   @Override

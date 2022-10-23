@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006974 Coefficients of Chebyshev T polynomials: a(n) = A053120(n+8, n), n &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A006974 implements Sequence {
+public class A006974 extends Sequence0 {
 
   private int mN = 0;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a144;
 
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A144646 a(n) = Bell(n) - 2^n + n.
  * @author Georg Fischer
  */
-public class A144646 implements Sequence {
+public class A144646 extends Sequence0 {
 
   protected int mN = -1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003607 Location of 0's when natural numbers are listed in binary.
  * @author Sean A. Irvine
  */
-public class A003607 implements Sequence {
+public class A003607 extends Sequence0 {
 
   private String mS = "";
   private long mN = -1;

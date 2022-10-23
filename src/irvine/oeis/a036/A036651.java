@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036651 Number of centered 6-valent trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A036651 implements Sequence {
+public class A036651 extends Sequence0 {
 
   private static final PolynomialRing<Q> RING = new PolynomialRing<>(Rationals.SINGLETON);
   private static final CycleIndex S4 = SymmetricGroup.create(5).cycleIndex();

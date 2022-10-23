@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046469 Obtainable by applying +, * and exponentiation to its own digits.
  * @author Sean A. Irvine
  */
-public class A046469 implements Sequence {
+public class A046469 extends Sequence0 {
 
   private static final double LIMIT = 1L << 31;
   private long mN = -1;

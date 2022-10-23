@@ -3,6 +3,7 @@ package irvine.oeis.a127;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000088;
 import irvine.oeis.a000.A000273;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000273;
  * A127909 Number of different digraphs on n unlabeled nodes which are not graphs.
  * @author Georg Fischer
  */
-public class A127909 implements Sequence {
+public class A127909 extends Sequence0 {
 
   final Sequence mA000088 = new A000088();
   final Sequence mA000273 = new A000273();

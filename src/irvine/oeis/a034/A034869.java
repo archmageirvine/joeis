@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034869 Right half of Pascal's triangle.
  * @author Sean A. Irvine
  */
-public class A034869 implements Sequence {
+public class A034869 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

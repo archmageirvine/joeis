@@ -1,14 +1,14 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.English;
 
 /**
  * A005589 Number of letters in the US English name of n, excluding spaces and hyphens.
  * @author Sean A. Irvine
  */
-public class A005589 implements Sequence {
+public class A005589 extends Sequence0 {
 
   private int mN = -1;
 

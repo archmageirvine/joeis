@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A215583 n-th derivative of cosh(x)^sin(x) at x=0.
  * E.g.f.: cosh(x)^sin(x)
  * @author Georg Fischer
  */
-public class A215583 implements Sequence {
+public class A215583 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A213324 Number of permutations of n objects such that no five-element subset is preserved.
  * E.g.f.: ((x^2/2+2*x^3/3+7*x^4/24)*exp(-x-x^2/2-x^3/3-x^4/4-x^5/5)+x*exp(-x-x^2/2-x^4/4-x^5/5)+exp(-x-x^2/2-x^5/5)+exp(-x-x^3/3-x^5/5)-exp(-x-x^2/2-x^3/3-x^5/5))/(1-x)
  * @author Georg Fischer
  */
-public class A213324 implements Sequence {
+public class A213324 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

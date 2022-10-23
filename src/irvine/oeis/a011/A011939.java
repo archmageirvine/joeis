@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011939 [ n(n-1)(n-2)(n-3)/29 ].
  * @author Sean A. Irvine
  */
-public class A011939 implements Sequence {
+public class A011939 extends Sequence0 {
 
   private long mN = -1;
 

@@ -3,6 +3,7 @@ package irvine.oeis.a081;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000984;
 import irvine.oeis.a003.A003462;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a003.A003462;
  * A081670 3^n-1+C(2n,n).
  * @author Georg Fischer
  */
-public class A081670 implements Sequence {
+public class A081670 extends Sequence0 {
 
   final Sequence mA000984 = new A000984();
   final Sequence mA003462 = new A003462();

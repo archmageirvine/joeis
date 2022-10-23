@@ -3,12 +3,13 @@ package irvine.oeis.a066;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a018.A018789;
 /**
  * A066369 Number of subsets of {1, ..., n} with no four terms in arithmetic progression.
  * @author Georg Fischer
  */
-public class A066369 implements Sequence {
+public class A066369 extends Sequence0 {
 
   private final Sequence mA018789 = new A018789();
   protected long mN;

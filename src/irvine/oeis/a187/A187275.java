@@ -1,13 +1,13 @@
 package irvine.oeis.a187;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A187275 a(n) = (n/4)*5^(n/2)*((1+sqrt(5))^2+(-1)^n*(1-sqrt(5))^2).
  * @author Sean A. Irvine
  */
-public class A187275 implements Sequence {
+public class A187275 extends Sequence0 {
 
   private Z mFives = Z.ONE;
   private int mN = -1;

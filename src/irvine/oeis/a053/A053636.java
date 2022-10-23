@@ -3,13 +3,13 @@ package irvine.oeis.a053;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053636 a(n) = Sum_{odd d|n} phi(d)*2^(n/d).
  * @author Sean A. Irvine
  */
-public class A053636 implements Sequence {
+public class A053636 extends Sequence0 {
 
   private int mN = -1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014082 Number of occurrences of '111' in binary expansion of n.
  * @author Sean A. Irvine
  */
-public class A014082 implements Sequence {
+public class A014082 extends Sequence0 {
 
   private long mN = -1;
 

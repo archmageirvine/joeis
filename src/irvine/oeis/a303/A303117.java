@@ -3,6 +3,7 @@ package irvine.oeis.a303;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001037;
 import irvine.oeis.a027.A027376;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a027.A027376;
  * A303117 a(n) is the number of cyclic permutations with at most two descents.
  * @author Georg Fischer
  */
-public class A303117 implements Sequence {
+public class A303117 extends Sequence0 {
 
   final Sequence mA001037 = new A001037();
   final Sequence mA027376 = new A027376();

@@ -3,6 +3,7 @@ package irvine.oeis.a233;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002110;
 import irvine.oeis.a036.A036691;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a036.A036691;
  * A233438 Primorial(n) mod compositorial(n), that is, A002110(n) mod A036691(n).
  * @author Georg Fischer
  */
-public class A233438 implements Sequence {
+public class A233438 extends Sequence0 {
 
   final Sequence mA002110 = new A002110();
   final Sequence mA036691 = new A036691();

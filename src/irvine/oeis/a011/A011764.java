@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011764 a(n) = 3^(2^n) (or: write in base 3, read in base 9).
  * @author Sean A. Irvine
  */
-public class A011764 implements Sequence {
+public class A011764 extends Sequence0 {
 
   private int mN = -1;
 

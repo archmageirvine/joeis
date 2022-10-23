@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059045 Square array T(n,k) read by antidiagonals where T(0,k) = 0 and T(n,k) = 1 + 2k + 3k^2 + ... + n*k^(n-1).
  * @author Sean A. Irvine
  */
-public class A059045 implements Sequence {
+public class A059045 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

@@ -3,13 +3,13 @@ package irvine.oeis.a070;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A070714 n^7 mod 33.
  * @author Georg Fischer
  */
-public class A070714 implements Sequence {
+public class A070714 extends Sequence0 {
 
   private int mN = 0;
   private final Z mExp = Z.SEVEN;

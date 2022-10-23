@@ -3,13 +3,14 @@ package irvine.oeis.a327;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007245;
 
 /**
  * A327959 Expansion of (-j(1/2 + t))^(1/3) * q^(1/3) in powers of q = exp(2 Pi i t) where j is the modular j-function.
  * @author Georg Fischer
  */
-public class A327959 implements Sequence {
+public class A327959 extends Sequence0 {
 
   final Sequence mA007245 = new A007245();
   protected long mN;

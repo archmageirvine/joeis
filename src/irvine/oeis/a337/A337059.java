@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A337059 E.g.f.: 1 / (2 + x^3/6 - exp(x)).
  * E.g.f.: 1 / (2 + x^3/6 - exp(x))
  * @author Georg Fischer
  */
-public class A337059 implements Sequence {
+public class A337059 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

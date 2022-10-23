@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A259533 Number of restricted barred preferential arrangements of an n-set having 3 bars in which 3 fixed sections are restricted sections and 1 section is a free section.
  * E.g.f.: exp(3*x)/(2-exp(x))
  * @author Georg Fischer
  */
-public class A259533 implements Sequence {
+public class A259533 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

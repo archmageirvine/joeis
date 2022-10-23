@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002186 Sprague-Grundy values for the game of Kayles (octal games .77 and .771).
  * @author Sean A. Irvine
  */
-public class A002186 implements Sequence {
+public class A002186 extends Sequence0 {
 
   private static final int[] SEQ = {
     0, 1, 2, 3, 1, 4, 3, 2, 1, 4, 2, 6,

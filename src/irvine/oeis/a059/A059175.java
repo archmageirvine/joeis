@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059175 For a rational number p/q let f(p/q) = p*q divided by the sum of digits of p and q; a(n) is obtained by iterating f, starting at n/1, until an integer is reached, or if no integer is ever reached then a(n) = 0.
  * @author Sean A. Irvine
  */
-public class A059175 implements Sequence {
+public class A059175 extends Sequence0 {
 
   private long mN = -1;
 

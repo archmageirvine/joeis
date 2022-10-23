@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004701 Expansion of e.g.f. 1/(4 - exp(x) - exp(2*x) - exp(3*x)).
  * @author Sean A. Irvine
  */
-public class A004701 implements Sequence {
+public class A004701 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final Polynomial<Q> mA = RING.monomial(new Q(terms()), 0);

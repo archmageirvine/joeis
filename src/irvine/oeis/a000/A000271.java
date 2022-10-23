@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000271 Sums of m\u00e9nage numbers.
  * @author Sean A. Irvine
  */
-public class A000271 implements Sequence {
+public class A000271 extends Sequence0 {
 
   private Z mA = Z.ZERO;
   private Z mB = Z.ZERO;

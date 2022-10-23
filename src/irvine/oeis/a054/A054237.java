@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054237 Pair addition table cast as diagonal numbers.
  * @author Sean A. Irvine
  */
-public class A054237 implements Sequence {
+public class A054237 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

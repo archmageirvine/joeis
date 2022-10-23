@@ -3,6 +3,7 @@ package irvine.oeis.a098;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000178;
 import irvine.oeis.a006.A006125;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006125;
  * A098695 a(n) = 2^(n(n-1)/2) * Product_{k=1..n} k!.
  * @author Georg Fischer
  */
-public class A098695 implements Sequence {
+public class A098695 extends Sequence0 {
 
   final Sequence mA000178 = new A000178();
   final Sequence mA006125 = new A006125();

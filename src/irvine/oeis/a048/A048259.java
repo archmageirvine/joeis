@@ -5,14 +5,14 @@ import java.util.HashSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Triple;
 
 /**
  * A048259 Number of distinct solutions to x + y + z = 0 (mod n), where two solutions are equivalent if one can be obtained from the other by multiplying by units in Z/nZ and permuting x,y,z.
  * @author Sean A. Irvine
  */
-public class A048259 implements Sequence {
+public class A048259 extends Sequence0 {
 
   private long mN = -1;
 

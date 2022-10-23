@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053459 Open disk numbers (version 4): a(n) is the number of points (i+j/2,j*sqrt(3)/2), i,j integers (triangular grid) contained in an open disk of diameter n, centered at (1/2,0).
  * @author Sean A. Irvine
  */
-public class A053459 implements Sequence {
+public class A053459 extends Sequence0 {
 
   private long mN = -1;
 

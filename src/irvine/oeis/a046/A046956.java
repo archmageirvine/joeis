@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046956 Numbers k where tan(k) decreases monotonically to 0 (or cot(k) increases).
  * @author Sean A. Irvine
  */
-public class A046956 implements Sequence {
+public class A046956 extends Sequence0 {
 
   private CR mBest = CR.TWO;
   private long mN = 0;

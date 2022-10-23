@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046945 Number of self-avoiding walks of length n on hypertriangular lattice.
  * @author Sean A. Irvine
  */
-public class A046945 implements Sequence {
+public class A046945 extends Sequence0 {
 
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new SelfAvoidingWalker(Lattices.HYPERTRIANGULAR));
   private final long mC = Lattices.HYPERTRIANGULAR.neighbour(Lattices.HYPERTRIANGULAR.origin(), 0);

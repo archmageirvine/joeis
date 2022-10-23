@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005045 Number of restricted 3 X 3 matrices with row and column sums n.
  * @author Sean A. Irvine
  */
-public class A005045 implements Sequence {
+public class A005045 extends Sequence0 {
 
   private long mN = -1;
 

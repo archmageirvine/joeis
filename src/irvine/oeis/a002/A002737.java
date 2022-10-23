@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002737 a(n) = Sum_{j=0..n} (n+j)*binomial(n+j,j).
  * @author Sean A. Irvine
  */
-public class A002737 implements Sequence {
+public class A002737 extends Sequence0 {
 
   // Using conjectured formula of Zerinvary Lajos
 

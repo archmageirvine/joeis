@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051255 Number of cyclically symmetric transpose complement plane partitions in a 2n X 2n X 2n box.
  * @author Sean A. Irvine
  */
-public class A051255 implements Sequence {
+public class A051255 extends Sequence0 {
 
   private long mN = -1;
 

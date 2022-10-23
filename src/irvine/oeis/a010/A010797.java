@@ -1,13 +1,13 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010797 n!.(n+1)!.(n+2)! / 2!.3!.
  * @author Sean A. Irvine
  */
-public class A010797 implements Sequence {
+public class A010797 extends Sequence0 {
 
   private long mN = 2;
   private Z mF0 = Z.ONE;

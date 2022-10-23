@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013531 Numerator of [x^(2n+1)] in the Taylor expansion arcsin(cosec(x) - cosech(x)) = x/3 + x^3/162 + 5*x^5/1134 + 19*x^7/76545 + 13793*x^9/218245104 + ...
  * @author Sean A. Irvine
  */
-public class A013531 implements Sequence {
+public class A013531 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

@@ -3,13 +3,13 @@ package irvine.oeis.a052;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052499 If n is in the sequence then so are 2n and 4n-1.
  * @author Sean A. Irvine
  */
-public class A052499 implements Sequence {
+public class A052499 extends Sequence0 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   {

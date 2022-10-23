@@ -4,13 +4,13 @@ import irvine.factor.prime.Fast;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052130 a(n) is the number of numbers between 1 and 2^m with m-n prime factors (counted with multiplicity), for m sufficiently large.
  * @author Sean A. Irvine
  */
-public class A052130 implements Sequence {
+public class A052130 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

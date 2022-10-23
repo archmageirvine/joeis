@@ -2,13 +2,13 @@ package irvine.oeis.a154;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A154869 A triangular sequence: T(n,m) = t1(n,m) + t1(n,n-m) where t1(n,m) = -Sum_{j=0..m+1} (-1)^j * t0(n + 2, j) * (m - j + 1)^(n + 1) and t0(n,m) = Sum_{j=0..m+1} (-1)^j * binomial(n + 2, j) * (m - j + 1)^(n + 1).
  * @author Sean A. Irvine
  */
-public class A154869 implements Sequence {
+public class A154869 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

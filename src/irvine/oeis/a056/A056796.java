@@ -4,13 +4,13 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056796 Minimal number of steps to get from 0 to n when there are 3 kinds of step: add 1, multiply by 2, multiply by 3.
  * @author Sean A. Irvine
  */
-public class A056796 implements Sequence {
+public class A056796 extends Sequence0 {
 
   private final TreeMap<Long, Integer> mA = new TreeMap<>();
   {

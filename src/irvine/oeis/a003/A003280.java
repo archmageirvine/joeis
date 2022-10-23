@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import irvine.math.api.RationalSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003280 Numerators of coefficients of Green function for cubic lattice.
  * @author Sean A. Irvine
  */
-public class A003280 implements Sequence {
+public class A003280 extends Sequence0 {
 
   // After Herman Jamke
 

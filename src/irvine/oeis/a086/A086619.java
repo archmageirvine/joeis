@@ -2,14 +2,14 @@ package irvine.oeis.a086;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A086619 Product of first n terms of the binomial transform of the Catalan numbers (A007317).
  * <code>MMA: Table[Product[Sum[Binomial[m, k]*Binomial[2*k, k]/(k+1), {k, 0, m}], {m, 0, n}], {n, 0, 12}].</code>
  * @author Georg Fischer
  */
-public class A086619 implements Sequence {
+public class A086619 extends Sequence0 {
 
   private int mN = -1;
 

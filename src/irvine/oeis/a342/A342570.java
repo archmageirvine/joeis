@@ -3,7 +3,7 @@ package irvine.oeis.a342;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a039.A039658;
 import irvine.oeis.a055.A055879;
 
@@ -11,7 +11,7 @@ import irvine.oeis.a055.A055879;
  * A342570 Number of catafusenes with 2n hexagons and D_{2h}(a) symmetry.
  * @author Sean A. Irvine
  */
-public class A342570 implements Sequence {
+public class A342570 extends Sequence0 {
 
   private final MemorySequence mM = MemorySequence.cachedSequence(new PrependSequence(new A055879(), 0));
   private final MemorySequence mL = MemorySequence.cachedSequence(new PrependSequence(new A039658(), 0));

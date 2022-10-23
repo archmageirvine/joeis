@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018080 Powers of fourth root of 12 rounded up.
  * @author Sean A. Irvine
  */
-public class A018080 implements Sequence {
+public class A018080 extends Sequence0 {
 
   private Z mN = null;
 

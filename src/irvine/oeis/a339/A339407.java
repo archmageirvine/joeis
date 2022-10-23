@@ -3,6 +3,7 @@ package irvine.oeis.a339;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001935;
 import irvine.oeis.a261.A261734;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a261.A261734;
  * A339407 Number of partitions of n into an odd number of parts that are not multiples of 4.
  * @author Georg Fischer
  */
-public class A339407 implements Sequence {
+public class A339407 extends Sequence0 {
 
   final Sequence mA001935 = new A001935();
   final Sequence mA261734 = new A261734();

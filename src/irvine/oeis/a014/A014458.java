@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014458 Theta series of quadratic form with Gram matrix [ 2, 1, 0; 1, 4, 1; 0, 1, 2 ].
  * @author Sean A. Irvine
  */
-public class A014458 implements Sequence {
+public class A014458 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = -2;

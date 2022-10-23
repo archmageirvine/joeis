@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001112 A continued fraction.
  * @author Sean A. Irvine
  */
-public class A001112 implements Sequence {
+public class A001112 extends Sequence0 {
 
   private static final long[] CF = {1, 2, 1, 2, 12, 2, 1, 2, 1, 24};
 

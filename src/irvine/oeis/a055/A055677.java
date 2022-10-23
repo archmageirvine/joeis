@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055677 Smallest k &gt; n where n is a 6th power modulo k.
  * @author Sean A. Irvine
  */
-public class A055677 implements Sequence {
+public class A055677 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

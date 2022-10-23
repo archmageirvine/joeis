@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A279643 Exponential transform of the tenth powers A008454.
  * E.g.f.: exp(exp(x)*(x^10+45*x^9+750*x^8+5880*x^7+22827*x^6+42525*x^5 +34105*x^4 +9330*x^3 +511*x^2+x))
  * @author Georg Fischer
  */
-public class A279643 implements Sequence {
+public class A279643 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

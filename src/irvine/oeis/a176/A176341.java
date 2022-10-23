@@ -3,13 +3,14 @@ package irvine.oeis.a176;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a032.A032445;
 
 /**
  * A176341 a(n) = the location of the first appearance of the decimal expansion of n in the decimal expansion of Pi.
  * @author Georg Fischer
  */
-public class A176341 implements Sequence {
+public class A176341 extends Sequence0 {
 
   final Sequence mA032445 = new A032445();
   @Override

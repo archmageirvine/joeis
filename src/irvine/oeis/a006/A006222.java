@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006222 11*n^2 + 11*n + 3.
  * @author Sean A. Irvine
  */
-public class A006222 implements Sequence {
+public class A006222 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

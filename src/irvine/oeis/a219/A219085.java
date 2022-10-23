@@ -2,13 +2,13 @@ package irvine.oeis.a219;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A219085 a(n) = floor((n + 1/2)^3).
  * @author Georg Fischer
  */
-public class A219085 implements Sequence {
+public class A219085 extends Sequence0 {
 
   protected int mN = -1;
   protected final int mParm;

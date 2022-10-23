@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A215682 n-th derivative of sec(x)^tanh(x) at x=0.
  * E.g.f.: sec(x)^tanh(x)
  * @author Georg Fischer
  */
-public class A215682 implements Sequence {
+public class A215682 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013532 Numerator of [x^(2n+1)] in the Taylor series tan(cosec(x)-cosech(x)) = x/3 +x^3/81 +949*x^5/204120 +2647*x^7/5511240+... .
  * @author Sean A. Irvine
  */
-public class A013532 implements Sequence {
+public class A013532 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

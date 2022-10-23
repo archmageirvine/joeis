@@ -3,6 +3,7 @@ package irvine.oeis.a323;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000587;
 import irvine.oeis.a001.A001861;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001861;
  * A323632 Stirling transform of Jacobsthal numbers (A001045).
  * @author Georg Fischer
  */
-public class A323632 implements Sequence {
+public class A323632 extends Sequence0 {
 
   final Sequence mA000587 = new A000587();
   final Sequence mA001861 = new A001861();

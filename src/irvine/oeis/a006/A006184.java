@@ -3,14 +3,14 @@ package irvine.oeis.a006;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicArray;
 
 /**
  * A006184 Number of cycles in the complement of a path.
  * @author Sean A. Irvine
  */
-public class A006184 implements Sequence {
+public class A006184 extends Sequence0 {
 
   // Based on C++ code at https://comeoncodeon.wordpress.com/2010/06/07/number-of-cycles-in-a-graph/
 

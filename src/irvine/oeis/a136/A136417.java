@@ -3,13 +3,14 @@ package irvine.oeis.a136;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a017.A017910;
 
 /**
  * A136417 Number of squares &lt;= 2^n.
  * @author Georg Fischer
  */
-public class A136417 implements Sequence {
+public class A136417 extends Sequence0 {
 
   final Sequence mA017910 = new A017910();
   @Override

@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051862 Perturbation expansion in quantum field theory: scalar case in 6 spacetime dimensions.
  * @author Sean A. Irvine
  */
-public class A051862 implements Sequence {
+public class A051862 extends Sequence0 {
 
   // After F. Chapoton
 

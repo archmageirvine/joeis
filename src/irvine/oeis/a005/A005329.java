@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005329 a(n) = Product_{i=1..n} (2^i - 1). Also called 2-factorial numbers.
  * @author Sean A. Irvine
  */
-public class A005329 implements Sequence {
+public class A005329 extends Sequence0 {
 
   protected int mN = -1;
   private Z mA = Z.ONE;

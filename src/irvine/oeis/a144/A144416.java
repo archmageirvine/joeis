@@ -4,13 +4,13 @@ import irvine.math.MemoryFunctionInt3;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A144416 a(n) is the total number of partitions of [1, 2, ..., k] into exactly n blocks, each of size 1, 2 or 3, for 0 &lt;= k &lt;= 3n.
  * @author Georg Fischer
  */
-public class A144416 implements Sequence {
+public class A144416 extends Sequence0 {
 
   private int mN;
   private int mParm;

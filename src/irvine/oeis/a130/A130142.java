@@ -6,13 +6,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A130142 Let f denote the map that replaces k with the concatenation of its proper divisors, written in decreasing order, each divisor being written in base 10 with its digits in reverse order. Then a(n) = first prime reached when starting at 2n+1 and iterating f.
  * @author Sean A. Irvine
  */
-public class A130142 implements Sequence {
+public class A130142 extends Sequence0 {
 
   private static final Fast PRIME = new Fast();
   private static final String[] VALUES = {

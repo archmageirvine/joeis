@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055378 Table read by antidiagonals: T(n,k) = n^trinv(k)+n^(k-((trinv(k)*(trinv(k)-1))/2)) where trinv (k) = floor((1+sqrt(1+8*k))/2) and with 0^0 = 1.
  * @author Sean A. Irvine
  */
-public class A055378 implements Sequence {
+public class A055378 extends Sequence0 {
 
   private long mN = 0;
   private long mM = -1;

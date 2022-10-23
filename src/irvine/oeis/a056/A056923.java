@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056923 Write the integers in groups: 0; 1,2; 3,4,5; 6,7,8,9; ... and form the product of the members of each group.
  * @author Sean A. Irvine
  */
-public class A056923 implements Sequence {
+public class A056923 extends Sequence0 {
 
   private int mN = -1;
 

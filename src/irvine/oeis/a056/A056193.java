@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056193 Goodstein sequence starting with 4: to calculate a(n+1), write a(n) in the hereditary representation in base n+2, then bump the base to n+3, then subtract 1.
  * @author Sean A. Irvine
  */
-public class A056193 implements Sequence {
+public class A056193 extends Sequence0 {
 
   private long mN = 1;
   private Z mA = null;

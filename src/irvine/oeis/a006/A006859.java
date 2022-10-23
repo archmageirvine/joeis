@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006859 From paths in the plane.
  * @author Sean A. Irvine
  */
-public class A006859 implements Sequence {
+public class A006859 extends Sequence0 {
 
   private long mN = -1;
 

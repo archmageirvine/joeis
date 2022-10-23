@@ -2,13 +2,13 @@ package irvine.oeis.a041;
 // manually 2021-03-04
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A041012 Concatenate the next a(n) integers to get the n+1 term.
  * @author Georg Fischer
  */
-public class A041012 implements Sequence {
+public class A041012 extends Sequence0 {
 
   private int mN; // current number to be concerned
   private int mLimit;

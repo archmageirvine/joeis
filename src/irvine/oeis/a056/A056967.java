@@ -1,14 +1,14 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A056967 Write what is described (putting a leading zero on numbers which have an odd number of digits).
  * @author Sean A. Irvine
  */
-public class A056967 implements Sequence {
+public class A056967 extends Sequence0 {
 
   private long mN = -1;
 

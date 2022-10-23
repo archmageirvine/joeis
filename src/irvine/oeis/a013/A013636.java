@@ -3,13 +3,13 @@ package irvine.oeis.a013;
 import irvine.factor.prime.Fast;
 import irvine.factor.prime.Prime;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013636 n*nextprime(n).
  * @author Sean A. Irvine
  */
-public class A013636 implements Sequence {
+public class A013636 extends Sequence0 {
 
   private Prime mPrime = new Fast();
   private long mN = -1;

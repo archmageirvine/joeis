@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A022850 Integer nearest n*x, where x = sqrt(7).
  * @author Sean A. Irvine
  */
-public class A022850 implements Sequence {
+public class A022850 extends Sequence0 {
 
   private static final CR N = CR.SEVEN.sqrt();
   private long mN = -1;

@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006121 Sum of Gaussian binomial coefficients [ n,k ] for q=7.
  * @author Sean A. Irvine
  */
-public class A006121 implements Sequence {
+public class A006121 extends Sequence0 {
 
   private int mN = -1;
 

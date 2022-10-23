@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055788 Number of symmetric types of (5,2n)-hypergraphs under action of complementing group C(5,2).
  * @author Sean A. Irvine
  */
-public class A055788 implements Sequence {
+public class A055788 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final int[][] GF = {

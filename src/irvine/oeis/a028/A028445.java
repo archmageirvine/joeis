@@ -1,14 +1,14 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A028445 Number of cubefree words of length n on two letters.
  * @author Sean A. Irvine
  */
-public class A028445 implements Sequence {
+public class A028445 extends Sequence0 {
 
   // After M. F. Hasler
 

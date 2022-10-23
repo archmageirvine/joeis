@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046521 Array T(i,j) = binomial(-1/2-i,j)*(-4)^j, i,j &gt;= 0 read by antidiagonals going down.
  * @author Sean A. Irvine
  */
-public class A046521 implements Sequence {
+public class A046521 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

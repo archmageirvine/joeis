@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A187739 G.f.: Sum_{n&gt;=0} (3*n+2)^n * x^n / (1 + (3*n+2)*x)^n.
  * E.g.f.: (2 - 2*x - 3*x^2) / (2*(1-3*x)^2)
  * @author Georg Fischer
  */
-public class A187739 implements Sequence {
+public class A187739 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

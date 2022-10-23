@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A035617 Number of winning length n strings with a 3-symbol alphabet in "same game".
  * @author Sean A. Irvine
  */
-public class A035617 implements Sequence {
+public class A035617 extends Sequence0 {
 
   private final List<LongDynamicBooleanArray> mWinning = new ArrayList<>();
   private long mLimit = 1;

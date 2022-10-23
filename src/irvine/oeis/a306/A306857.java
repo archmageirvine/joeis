@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A306857 Expansion of e.g.f. (sec(x) + tan(x))/(2 - exp(x)).
  * E.g.f.: (sec(x) + tan(x))/(2 - exp(x))
  * @author Georg Fischer
  */
-public class A306857 implements Sequence {
+public class A306857 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

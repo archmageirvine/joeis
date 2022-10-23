@@ -3,13 +3,14 @@ package irvine.oeis.a127;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007088;
 
 /**
  * A127906 a(n) = (n in base 10) * (n in base 2).
  * @author Georg Fischer
  */
-public class A127906 implements Sequence {
+public class A127906 extends Sequence0 {
 
   final Sequence mA007088 = new A007088();
   protected long mN;

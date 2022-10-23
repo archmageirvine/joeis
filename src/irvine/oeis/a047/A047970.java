@@ -1,13 +1,13 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A047970 Antidiagonal sums of nexus numbers (A047969).
  * @author Sean A. Irvine
  */
-public class A047970 implements Sequence {
+public class A047970 extends Sequence0 {
 
   private int mN = -1;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005118 Number of simple allowable sequences on 1..n containing the permutation 12...n.
  * @author Sean A. Irvine
  */
-public class A005118 implements Sequence {
+public class A005118 extends Sequence0 {
 
   private MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

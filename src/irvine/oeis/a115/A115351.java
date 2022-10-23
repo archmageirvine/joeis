@@ -3,6 +3,7 @@ package irvine.oeis.a115;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 import irvine.oeis.a000.A000085;
 import irvine.oeis.a000.A000142;
@@ -12,7 +13,7 @@ import irvine.oeis.a005.A005651;
  * A115351 Sum of interior Multinomial Coefficient components.
  * @author Georg Fischer
  */
-public class A115351 implements Sequence {
+public class A115351 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   final Sequence mA000085 = new A000085();

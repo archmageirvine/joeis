@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059049 Number of 6-element ordered T_0-antichains on an unlabeled n-set; T_1-hypergraphs on 6 labeled nodes with n (not necessary empty) distinct hyperedges (n=0,1,...,64).
  * @author Sean A. Irvine
  */
-public class A059049 implements Sequence {
+public class A059049 extends Sequence0 {
 
   private static final long[][] PARMS = {
     {1, 64},

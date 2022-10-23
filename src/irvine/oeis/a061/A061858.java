@@ -3,13 +3,14 @@ package irvine.oeis.a061;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004247;
 import irvine.oeis.a048.A048720;
 /**
  * A061858 Differences between the ordinary multiplication table A004247 and the carryless multiplication table for GF(2)[X] polynomials A048720, i.e., the effect of the carry bits in binary multiplication.
  * @author Georg Fischer
  */
-public class A061858 implements Sequence {
+public class A061858 extends Sequence0 {
 
   private final Sequence mA004247 = new A004247();
   private final Sequence mA048720 = new A048720();

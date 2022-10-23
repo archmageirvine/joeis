@@ -3,6 +3,7 @@ package irvine.oeis.a339;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a023.A023361;
 import irvine.oeis.a106.A106507;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a106.A106507;
  * A339417 Number of compositions (ordered partitions) of n into an odd number of triangular numbers.
  * @author Georg Fischer
  */
-public class A339417 implements Sequence {
+public class A339417 extends Sequence0 {
 
   final Sequence mA023361 = new A023361();
   final Sequence mA106507 = new A106507();

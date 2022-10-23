@@ -3,6 +3,7 @@ package irvine.oeis.a098;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001935;
 import irvine.oeis.a010.A010054;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a010.A010054;
  * A098491 Number of partitions of n with parts occurring at most thrice and an even number of parts. Row sums of A098489.
  * @author Georg Fischer
  */
-public class A098491 implements Sequence {
+public class A098491 extends Sequence0 {
 
   final Sequence mA001935 = new A001935();
   final Sequence mA010054 = new A010054();

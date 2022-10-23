@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020030 Nearest integer to Gamma(n + 5/7)/Gamma(5/7).
  * @author Sean A. Irvine
  */
-public class A020030 implements Sequence {
+public class A020030 extends Sequence0 {
 
   private static final Q C = new Q(5, 7);
   private int mN = -2;

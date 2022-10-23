@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004198 Table of x AND y, where (x,y) = (0,0),(0,1),(1,0),(0,2),(1,1),(2,0),...
  * @author Sean A. Irvine
  */
-public class A004198 implements Sequence {
+public class A004198 extends Sequence0 {
 
   private long mRow = -1;
   private long mCol = -1;

@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030001 Smallest power of 2 whose decimal expansion contains n.
  * @author Sean A. Irvine
  */
-public class A030001 implements Sequence {
+public class A030001 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005521 1 + (sum of first n odd primes - n)/2.
  * @author Sean A. Irvine
  */
-public class A005521 implements Sequence {
+public class A005521 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mSum = Z.ZERO;

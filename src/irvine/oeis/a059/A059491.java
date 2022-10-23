@@ -3,13 +3,14 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005130;
 
 /**
  * A059491 Expansion of generating function A_{QT}^(1)(4n;3).
  * @author Georg Fischer
  */
-public class A059491 implements Sequence {
+public class A059491 extends Sequence0 {
 
   final Sequence mA005130 = new A005130();
   protected long mN;

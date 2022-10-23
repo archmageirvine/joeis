@@ -1,14 +1,14 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicArray;
 
 /**
  * A018871 Smallest fifth power that begins with n.
  * @author Sean A. Irvine
  */
-public class A018871 implements Sequence {
+public class A018871 extends Sequence0 {
 
   private DynamicArray<String> mCache = new DynamicArray<>();
   private int mN = -1;

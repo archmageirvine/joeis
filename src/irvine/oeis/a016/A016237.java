@@ -1,13 +1,13 @@
 package irvine.oeis.a016;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A016237 Expansion of 1/((1-x)(1-5x)(1-10x)).
  * @author Sean A. Irvine
  */
-public class A016237 implements Sequence {
+public class A016237 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

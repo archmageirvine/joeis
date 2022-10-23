@@ -3,13 +3,13 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053667 Product of digits of n^2.
  * @author Georg Fischer
  */
-public class A053667 implements Sequence {
+public class A053667 extends Sequence0 {
 
   protected long mN = -1;
 

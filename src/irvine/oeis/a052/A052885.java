@@ -3,13 +3,13 @@ package irvine.oeis.a052;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052885 E.g.f. A(x) is inverse to F(x) = x*exp(-x)/(1+x).
  * @author Sean A. Irvine
  */
-public class A052885 implements Sequence {
+public class A052885 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

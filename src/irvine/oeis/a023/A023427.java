@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A023427 Number of Dyck n-paths with ascents and descents of length equal to 1 (mod 4).
  * @author Sean A. Irvine
  */
-public class A023427 implements Sequence {
+public class A023427 extends Sequence0 {
 
   private Z[] mA = {Z.ONE, Z.ONE, Z.ONE, Z.ONE, Z.ONE, Z.TWO, Z.FOUR, Z.SEVEN};
   private int mN = -1;

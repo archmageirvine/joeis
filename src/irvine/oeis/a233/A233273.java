@@ -3,6 +3,7 @@ package irvine.oeis.a233;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005408;
 import irvine.oeis.a080.A080791;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a080.A080791;
  * A233273 Bisection of A233272: a(n) = A233272(2n+1).
  * @author Georg Fischer
  */
-public class A233273 implements Sequence {
+public class A233273 extends Sequence0 {
 
   final Sequence mA005408 = new A005408();
   final Sequence mA080791 = new A080791();

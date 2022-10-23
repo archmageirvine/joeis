@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046944 Number of self-avoiding walks of length n on the Laves graph.
  * @author Sean A. Irvine
  */
-public class A046944 implements Sequence {
+public class A046944 extends Sequence0 {
 
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new SelfAvoidingWalker(Lattices.HYDROGEN_PEROXIDE));
   private final long mC = Lattices.HYDROGEN_PEROXIDE.neighbour(Lattices.HYDROGEN_PEROXIDE.origin(), 0);

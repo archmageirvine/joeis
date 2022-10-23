@@ -2,14 +2,14 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a173.A173018;
 
 /**
  * A007338 Multiplicative encoding of the Eulerian number triangle.
  * @author Sean A. Irvine
  */
-public class A007338 implements Sequence {
+public class A007338 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private final A173018 mEulerian = new A173018();

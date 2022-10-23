@@ -5,13 +5,13 @@ import java.util.Map;
 
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057647 Number of walks of length n on the upper-right part of the hexagonal lattice.
  * @author Sean A. Irvine
  */
-public class A057647 implements Sequence {
+public class A057647 extends Sequence0 {
 
   protected HashMap<Long, Z> mCounts = new HashMap<>();
 

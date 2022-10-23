@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A074051 For each n there are uniquely determined numbers a(n) and b(n) and a polynomial p_n(x) such that for all integers m we have Sum_{i=1..m}i^n(i+1)! = a(n)*Sum_{i=1..m} (i+1)! + p_n(m)*(m+2)! + b(n). The sequence b(n) is A074052.
  * E.g.f.: exp(1 - 2*x - exp(-x))
  * @author Georg Fischer
  */
-public class A074051 implements Sequence {
+public class A074051 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

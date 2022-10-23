@@ -2,14 +2,14 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
  * A000954 Conjecturally largest even integer which is an unordered sum of two primes in exactly n ways.
  * @author Sean A. Irvine
  */
-public class A000954 implements Sequence {
+public class A000954 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   protected final LongDynamicIntArray mCount = new LongDynamicIntArray();

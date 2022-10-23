@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006442 Expansion of 1/sqrt(1 - 10*x + x^2).
  * @author Sean A. Irvine
  */
-public class A006442 implements Sequence {
+public class A006442 extends Sequence0 {
 
   private int mN = -1;
 

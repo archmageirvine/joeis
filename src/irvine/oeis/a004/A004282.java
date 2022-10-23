@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004282 a(n) = n*(n+1)^2*(n+2)^2/12.
  * @author Sean A. Irvine
  */
-public class A004282 implements Sequence {
+public class A004282 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

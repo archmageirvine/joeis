@@ -1,13 +1,13 @@
 package irvine.oeis.a128;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A128542 a(n) = ((2n)^(2n) - 1)/((2n+1)*(2n-1)).
  * @author Georg Fischer
  */
-public class A128542 implements Sequence {
+public class A128542 extends Sequence0 {
 
   private int mN = -1;
 

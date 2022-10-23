@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001887 Number of permutations p of {1,2,...,n} such that p(i) - i &lt; 0 or p(i) - i &gt; 2 for all i.
  * @author Sean A. Irvine
  */
-public class A001887 implements Sequence {
+public class A001887 extends Sequence0 {
 
   private final Z[] mSeq = {
     Z.ONE,

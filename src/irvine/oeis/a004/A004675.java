@@ -8,13 +8,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004675 Theta series of extremal even unimodular lattice in dimension 72.
  * @author Sean A. Irvine
  */
-public class A004675 implements Sequence {
+public class A004675 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Z Z720 = Z.valueOf(720);

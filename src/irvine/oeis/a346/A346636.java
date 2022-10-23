@@ -4,13 +4,13 @@ import irvine.math.IntegerUtils;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A346636 a(n) is the number of quadruples (a_1, a_2, a_3, a_4) having all terms in {1,...,n} such that there exists a quadrilateral with these side lengths.
  * @author Sean A. Irvine
  */
-public class A346636 implements Sequence {
+public class A346636 extends Sequence0 {
 
   private Z mSum = Z.ZERO;
   private int mN = -1;

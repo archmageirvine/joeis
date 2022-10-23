@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014609 a(n) = (5n)!/(5!^n).
  * @author Sean A. Irvine
  */
-public class A014609 implements Sequence {
+public class A014609 extends Sequence0 {
 
   private Z mA = null;
   private long mN = 0;

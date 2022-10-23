@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001448 a(n) = binomial(4n,2n) or (4*n)!/((2*n)!*(2*n)!).
  * @author Sean A. Irvine
  */
-public class A001448 implements Sequence {
+public class A001448 extends Sequence0 {
 
   private long mN = -2;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055014 Sum of 5th powers of digits of n.
  * @author Sean A. Irvine
  */
-public class A055014 implements Sequence {
+public class A055014 extends Sequence0 {
 
   private long mN = -1;
 

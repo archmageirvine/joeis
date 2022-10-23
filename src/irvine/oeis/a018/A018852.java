@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018852 a(n)^3 is smallest cube beginning with n.
  * @author Sean A. Irvine
  */
-public class A018852 implements Sequence {
+public class A018852 extends Sequence0 {
 
   private long mN = -1;
 

@@ -3,6 +3,7 @@ package irvine.oeis.a061;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007953;
 import irvine.oeis.a007.A007954;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007954;
  * A061762 a(n) = (sum of digits of n) + (product of digits of n).
  * @author Georg Fischer
  */
-public class A061762 implements Sequence {
+public class A061762 extends Sequence0 {
 
   final Sequence mA007953 = new A007953();
   final Sequence mA007954 = new A007954();

@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038544 a(n) = Sum_{i=0..10^n} i^3.
  * @author Sean A. Irvine
  */
-public class A038544 implements Sequence {
+public class A038544 extends Sequence0 {
 
   private long mN = -1;
 

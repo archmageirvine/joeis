@@ -3,13 +3,14 @@ package irvine.oeis.a079;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001586;
 
 /**
  * A079858 E.g.f. 1/(cos(2*x) - sin(2*x)).
  * @author Georg Fischer
  */
-public class A079858 implements Sequence {
+public class A079858 extends Sequence0 {
 
   final Sequence mA001586 = new A001586();
   protected long mN;

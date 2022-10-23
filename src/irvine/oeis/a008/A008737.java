@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008737 a(n) = floor(n/6)*ceiling(n/6).
  * @author Sean A. Irvine
  */
-public class A008737 implements Sequence {
+public class A008737 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001846 Centered 4-dimensional orthoplex numbers (crystal ball sequence for 4-dimensional cubic lattice).
  * @author Sean A. Irvine
  */
-public class A001846 implements Sequence {
+public class A001846 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

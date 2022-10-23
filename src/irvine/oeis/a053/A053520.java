@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053520 Denominators of successive convergents to continued fraction 1/(2+2/(3+3/(4+4/(5+5/(6+6/(7+7/(8+8/9+...))))))).
  * @author Sean A. Irvine
  */
-public class A053520 implements Sequence {
+public class A053520 extends Sequence0 {
 
   private Z mH0 = Z.ONE;
   private Z mK0 = Z.TWO;

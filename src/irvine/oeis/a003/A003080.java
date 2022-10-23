@@ -4,20 +4,20 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.transform.EulerTransformSequence;
 
 /**
  * A003080 Number of rooted triangular cacti with 2n+1 nodes (n triangles).
  * @author Sean A. Irvine
  */
-public class A003080 implements Sequence {
+public class A003080 extends Sequence0 {
 
   static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   protected int mN = -1;
   protected Polynomial<Z> mB = null;
 
-  private static final class PolynomialSequence implements Sequence {
+  private static final class PolynomialSequence extends Sequence0 {
 
     private final Polynomial<Z> mP;
     private int mN = -1;

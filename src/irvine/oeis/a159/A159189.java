@@ -5,14 +5,14 @@ package irvine.oeis.a159;
 import irvine.math.polynomial.BernoulliPolynomials;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A159189 Denominator of Bernoulli(n, 1/11).
  * @author Georg Fischer
  */
-public class A159189 implements Sequence {
+public class A159189 extends Sequence0 {
 
   private int mN = -1;
   private final Q mFract = new Q(1, 11);

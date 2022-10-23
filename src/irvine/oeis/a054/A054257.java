@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054257 Concatenation of n in base 10 down up to base 2 is prime, all numbers are interpreted as decimals.
  * @author Sean A. Irvine
  */
-public class A054257 implements Sequence {
+public class A054257 extends Sequence0 {
 
   private long mN = 0;
 

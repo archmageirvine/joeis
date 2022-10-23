@@ -5,14 +5,14 @@ package irvine.oeis.a158;
 import irvine.math.polynomial.BernoulliPolynomials;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A158788 Numerator of Bernoulli(n, -7/8).
  * @author Georg Fischer
  */
-public class A158788 implements Sequence {
+public class A158788 extends Sequence0 {
 
   private int mN = -1;
   private final Q mFract = new Q(-7, 8);

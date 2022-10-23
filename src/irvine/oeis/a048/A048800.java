@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048800 E.g.f. satisfies A(x) = 1 + x * A(x / (1 - x)).
  * @author Sean A. Irvine
  */
-public class A048800 implements Sequence {
+public class A048800 extends Sequence0 {
 
   private Z mF = Z.ONE;
   private int mN = -2;

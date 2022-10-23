@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003264 Floor((-4n)/Bernoulli(2n)).
  * @author Sean A. Irvine
  */
-public class A003264 implements Sequence {
+public class A003264 extends Sequence0 {
 
   private final BernoulliSequence mBernoulliSequence = new BernoulliSequence(0);
   private long mN = -2;

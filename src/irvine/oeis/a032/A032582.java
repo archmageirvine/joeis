@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A032582 Quotient of 'base-25' division described in A032581.
  * @author Sean A. Irvine
  */
-public class A032582 implements Sequence {
+public class A032582 extends Sequence0 {
 
   private long mN = 0;
 

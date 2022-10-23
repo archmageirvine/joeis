@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059959 Distance of 2^n from its nearest prime neighbor and in case of a tie, choose the smaller.
  * @author Sean A. Irvine
  */
-public class A059959 implements Sequence {
+public class A059959 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mA = null;

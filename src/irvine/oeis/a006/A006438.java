@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006438 Expansion of e.g.f. 1/sqrt(1-8x+x^2).
  * @author Sean A. Irvine
  */
-public class A006438 implements Sequence {
+public class A006438 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = null;

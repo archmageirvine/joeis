@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048581 Numerators of b(n) = (1/16^n)*(4/(8*n+1) - 2/(8*n+4) - 1/(8*n+5) - 1/(8*n+6)).
  * @author Sean A. Irvine
  */
-public class A048581 implements Sequence {
+public class A048581 extends Sequence0 {
 
   private int mN = -1;
 

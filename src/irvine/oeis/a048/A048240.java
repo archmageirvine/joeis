@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048240 Number of new colors that can be mixed with n units of yellow, blue, red.
  * @author Sean A. Irvine
  */
-public class A048240 implements Sequence {
+public class A048240 extends Sequence0 {
 
   private long mN = -1;
 

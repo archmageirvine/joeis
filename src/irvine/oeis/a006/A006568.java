@@ -2,14 +2,14 @@ package irvine.oeis.a006;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicArray;
 
 /**
  * A006568 Denominators of generalized Bernoulli numbers.
  * @author Sean A. Irvine
  */
-public class A006568 implements Sequence {
+public class A006568 extends Sequence0 {
 
   private final DynamicArray<Q> mC = new DynamicArray<>();
   private Z mF = Z.ONE;

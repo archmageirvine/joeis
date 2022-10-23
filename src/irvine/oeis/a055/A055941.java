@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055941 a(n) = Sum_{j=0..k-1} (i(j) - j) where n = Sum_{j=0..k-1} 2^i(j).
  * @author Sean A. Irvine
  */
-public class A055941 implements Sequence {
+public class A055941 extends Sequence0 {
 
   private long mN = -1;
 

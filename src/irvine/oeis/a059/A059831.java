@@ -6,13 +6,13 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059831 Determinant of Wilkinson's eigenvalue test matrix of order 2n+1.
  * @author Sean A. Irvine
  */
-public class A059831 implements Sequence {
+public class A059831 extends Sequence0 {
 
   private int mN = -1;
 

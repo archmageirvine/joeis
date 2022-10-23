@@ -2,13 +2,13 @@ package irvine.oeis.a026;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A026005 a(n) = T(4*n,n), where T = Catalan triangle (A008315).
  * @author Sean A. Irvine
  */
-public class A026005 implements Sequence {
+public class A026005 extends Sequence0 {
 
   private long mN = -1;
 

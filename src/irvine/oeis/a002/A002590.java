@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002590 Largest prime factor of 16^n + 1.
  * @author Sean A. Irvine
  */
-public class A002590 implements Sequence {
+public class A002590 extends Sequence0 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = -4;

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001678;
 import irvine.oeis.a059.A059123;
 
@@ -11,7 +11,7 @@ import irvine.oeis.a059.A059123;
  * A000014 Number of series-reduced trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A000014 implements Sequence {
+public class A000014 extends Sequence0 {
 
   private final A059123 mA59123 = new A059123();
   private final A001678 mA1678 = new A001678();

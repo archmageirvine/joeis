@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003982 Table read by rows: 1 if x = y, 0 otherwise, where (x,y) = (0,0),(0,1),(1,0),(0,2),(1,1),(2,0),...
  * @author Sean A. Irvine
  */
-public class A003982 implements Sequence {
+public class A003982 extends Sequence0 {
 
   private long mN = 0;
   private long mZeros = 0;

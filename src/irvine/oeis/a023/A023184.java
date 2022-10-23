@@ -2,13 +2,14 @@ package irvine.oeis.a023;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
 
 /**
  * A023184 Least Fibonacci number ending with n.
  * @author Sean A. Irvine
  */
-public class A023184 implements Sequence {
+public class A023184 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 10;

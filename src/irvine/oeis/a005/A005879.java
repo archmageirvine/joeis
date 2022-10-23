@@ -3,14 +3,14 @@ package irvine.oeis.a005;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004013;
 
 /**
  * A005879 Theta series of D_4 lattice with respect to deep hole.
  * @author Sean A. Irvine
  */
-public class A005879 implements Sequence {
+public class A005879 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 

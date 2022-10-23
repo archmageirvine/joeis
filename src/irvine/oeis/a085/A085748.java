@@ -4,14 +4,14 @@ package irvine.oeis.a085;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A085748 G.f.: 1/(1-G001190), where G001190 = x + x^2 + x^3 + 2x^4 + 3x^5 + ... is the g.f. for the Wedderburn-Etherington numbers A001190.
  * a(n) = binomial(A053644(n),n-A053644(n)).
  * @author Georg Fischer
  */
-public class A085748 implements Sequence {
+public class A085748 extends Sequence0 {
 
   private int mN;
   private ArrayList<Z> mA;

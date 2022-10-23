@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A012838 sec(sec(x)*tanh(x))=1+1/2!*x^2+9/4!*x^4+297/6!*x^6+14385/8!*x^8...
  * @author Sean A. Irvine
  */
-public class A012838 implements Sequence {
+public class A012838 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -2;

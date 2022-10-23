@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002898 Number of n-step closed paths on hexagonal lattice.
  * @author Sean A. Irvine
  */
-public class A002898 implements Sequence {
+public class A002898 extends Sequence0 {
 
   private int mN = -1;
   private Z mA = Z.ONE;

@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000681 Number of n X n matrices with nonnegative entries and every row and column sum 2.
  * @author Sean A. Irvine
  */
-public class A000681 implements Sequence {
+public class A000681 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

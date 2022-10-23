@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002239 9th powers written backwards.
  * @author Sean A. Irvine
  */
-public class A002239 implements Sequence {
+public class A002239 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

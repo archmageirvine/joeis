@@ -7,13 +7,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058812 Irregular triangle of rows of numbers in increasing order. Row 1 = {1}. Row m + 1 contains all numbers k such that phi(k) is in row m.
  * @author Sean A. Irvine
  */
-public class A058812 implements Sequence {
+public class A058812 extends Sequence0 {
 
   private Set<Z> mA = null;
   private TreeSet<Z> mB = new TreeSet<>();

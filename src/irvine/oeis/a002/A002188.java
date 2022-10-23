@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002188 Sprague-Grundy values for Grundy's game.
  * @author Sean A. Irvine
  */
-public class A002188 implements Sequence {
+public class A002188 extends Sequence0 {
 
   private int mN = -1;
 

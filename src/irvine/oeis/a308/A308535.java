@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A308535 Expansion of e.g.f. 1/(1 - x)^log(1 + x) (even powers only).
  * E.g.f.: 1/(1 - x)^log(1 + x), even powers
  * @author Georg Fischer
  */
-public class A308535 implements Sequence {
+public class A308535 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

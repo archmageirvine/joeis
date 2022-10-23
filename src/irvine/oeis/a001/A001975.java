@@ -7,13 +7,13 @@ import irvine.math.group.MultivariatePolynomialField;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001975 Number of partitions of floor(5n/2) into n nonnegative integers each no more than 5.
  * @author Sean A. Irvine
  */
-public class A001975 implements Sequence {
+public class A001975 extends Sequence0 {
 
   private static final MultivariatePolynomialField<Z> RING = new MultivariatePolynomialField<>(IntegerField.SINGLETON, 2);
   private static final MultivariatePolynomial<Z> NUM = RING.one();

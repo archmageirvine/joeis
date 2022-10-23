@@ -3,13 +3,14 @@ package irvine.oeis.a282;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001468;
 
 /**
  * A282162 Difference sequence of the upper Wythoff sequence, A001950, with 2 prepended.
  * @author Georg Fischer
  */
-public class A282162 implements Sequence {
+public class A282162 extends Sequence0 {
 
   final Sequence mA001468 = new A001468();
   @Override

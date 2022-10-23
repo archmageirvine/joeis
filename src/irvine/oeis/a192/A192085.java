@@ -3,14 +3,14 @@ package irvine.oeis.a192;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A192085 Number of ones in the binary expansion of n^3.
  * @author Georg Fischer
  */
-public class A192085 implements Sequence {
+public class A192085 extends Sequence0 {
 
   protected int mN = -1;
   

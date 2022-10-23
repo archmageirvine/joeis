@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A323296 Number of 3-uniform hypergraphs spanning n labeled vertices where no two edges have exactly one vertex in common.
  * E.g.f.: exp(-x^2/2 - x^3/3 + 5*x^4/24 + x^2*exp(x)/2)
  * @author Georg Fischer
  */
-public class A323296 implements Sequence {
+public class A323296 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

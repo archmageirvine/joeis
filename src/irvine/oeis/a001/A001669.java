@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000405;
 
 /**
  * A001669 Number of 7-level labeled rooted trees with n leaves.
  * @author Sean A. Irvine
  */
-public class A001669 implements Sequence {
+public class A001669 extends Sequence0 {
 
   private int mN = -1;
   private final A000405 mA405 = new A000405();

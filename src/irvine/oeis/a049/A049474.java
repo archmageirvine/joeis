@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049474 a(n) = ceiling(n/sqrt(2)).
  * @author Sean A. Irvine
  */
-public class A049474 implements Sequence {
+public class A049474 extends Sequence0 {
 
   private long mN = -1;
 

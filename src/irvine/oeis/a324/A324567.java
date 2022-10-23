@@ -3,13 +3,13 @@ package irvine.oeis.a324;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A324567 a(n) = Product_{i=0..n, j=0..n} (binomial(2*i, j) + binomial(2*j, i)).
  * @author Georg Fischer
  */
-public class A324567 implements Sequence {
+public class A324567 extends Sequence0 {
 
   private int mN = -1;
 

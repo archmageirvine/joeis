@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048377 Append d digits d after each digit d in decimal expansion of n.
  * @author Sean A. Irvine
  */
-public class A048377 implements Sequence {
+public class A048377 extends Sequence0 {
 
   private static final String[] EXPANSIONS = {
     "0",

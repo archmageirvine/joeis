@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054673 Nearest integer to n^sin(n).
  * @author Sean A. Irvine
  */
-public class A054673 implements Sequence {
+public class A054673 extends Sequence0 {
 
   private long mN = -1;
 

@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.NonadjacentWalker;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A174319 Number of n-step walks on cubic lattice (no points repeated, no adjacent points unless consecutive in path).
  * @author Sean A. Irvine
  */
-public class A174319 implements Sequence {
+public class A174319 extends Sequence0 {
 
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new NonadjacentWalker(Lattices.Z3));
   private final long mC = Lattices.Z3.neighbour(Lattices.Z3.origin(), 0);

@@ -3,6 +3,7 @@ package irvine.oeis.a153;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000110;
 import irvine.oeis.a006.A006789;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006789;
  * A153820 Bell number A000110(n) minus Bessel number A006789(n).
  * @author Georg Fischer
  */
-public class A153820 implements Sequence {
+public class A153820 extends Sequence0 {
 
   final Sequence mA000110 = new A000110();
   final Sequence mA006789 = new A006789();

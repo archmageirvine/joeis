@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014395 Number of multigraphs with 5 nodes and n edges.
  * @author Sean A. Irvine
  */
-public class A014395 implements Sequence {
+public class A014395 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final CycleIndex mCycleIndex = multigraphCycleIndex(nodes());

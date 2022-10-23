@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A279639 Exponential transform of the sixth powers A001014.
  * E.g.f.: exp(exp(x)*(x^6+15*x^5+65*x^4+90*x^3+31*x^2+x))
  * @author Georg Fischer
  */
-public class A279639 implements Sequence {
+public class A279639 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

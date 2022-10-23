@@ -3,13 +3,14 @@ package irvine.oeis.a216;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000166;
 
 /**
  * A216239 Total number of inversions in all derangement permutations of [n].
  * @author Georg Fischer
  */
-public class A216239 implements Sequence {
+public class A216239 extends Sequence0 {
 
   final Sequence mA000166 = new A000166();
   protected long mN;

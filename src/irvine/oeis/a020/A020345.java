@@ -2,13 +2,14 @@ package irvine.oeis.a020;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
 
 /**
  * A020345 Smallest Fibonacci number beginning with n.
  * @author Sean A. Irvine
  */
-public class A020345 implements Sequence {
+public class A020345 extends Sequence0 {
 
   private long mN = -1;
 

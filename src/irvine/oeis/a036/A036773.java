@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036773 Number of labeled rooted trees with a degree constraint: ((5*n)!/(120^n)) * C(5*n+1, n).
  * @author Sean A. Irvine
  */
-public class A036773 implements Sequence {
+public class A036773 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.ONE;

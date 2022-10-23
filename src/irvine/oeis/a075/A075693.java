@@ -3,6 +3,7 @@ package irvine.oeis.a075;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a018.A018247;
 import irvine.oeis.a018.A018248;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a018.A018248;
  * A075693 Difference between 10-adic numbers defined in A018248 &amp; A018247.
  * @author Georg Fischer
  */
-public class A075693 implements Sequence {
+public class A075693 extends Sequence0 {
 
   final Sequence mA018247 = new A018247();
   final Sequence mA018248 = new A018248();

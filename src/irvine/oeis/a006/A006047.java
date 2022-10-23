@@ -1,14 +1,14 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicArray;
 
 /**
  * A006047 Number of entries in n-th row of Pascal's triangle not divisible by 3.
  * @author Sean A. Irvine
  */
-public class A006047 implements Sequence {
+public class A006047 extends Sequence0 {
 
   private final LongDynamicArray<Z> mA = new LongDynamicArray<>();
   {

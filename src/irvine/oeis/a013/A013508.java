@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013508 cos(sec(x)-sech(x))=1-12/4!*x^4-5152/8!*x^8-7351872/12!*x^12...
  * @author Sean A. Irvine
  */
-public class A013508 implements Sequence {
+public class A013508 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -4;

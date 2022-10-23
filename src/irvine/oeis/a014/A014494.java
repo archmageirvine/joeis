@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014494 Even triangular numbers.
  * @author Sean A. Irvine
  */
-public class A014494 implements Sequence {
+public class A014494 extends Sequence0 {
 
   private long mN = -1;
 

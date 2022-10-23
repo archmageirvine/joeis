@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003011 Number of permutations of up to n kinds of objects, where each kind of object can occur at most two times.
  * @author Sean A. Irvine
  */
-public class A003011 implements Sequence {
+public class A003011 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

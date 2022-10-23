@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027584 Sequence satisfies T^2(a)=a, where T is defined below.
  * @author Sean A. Irvine
  */
-public class A027584 implements Sequence {
+public class A027584 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private Polynomial<Z> mA = Polynomial.create(0, 1, 2, 3, 4, 5);

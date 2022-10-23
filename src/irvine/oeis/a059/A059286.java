@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059286 Triangle T(n,k) (0 &lt;= k &lt;= n) with e.g.f. exp(x*y/(1-y)).
  * @author Sean A. Irvine
  */
-public class A059286 implements Sequence {
+public class A059286 extends Sequence0 {
 
   private Polynomial<Polynomial<Q>> mEgf;
   private int mN = -1;

@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000107 Number of rooted trees with n nodes and a single labeled node; pointed rooted trees; vertebrates.
  * @author Sean A. Irvine
  */
-public class A000107 implements Sequence {
+public class A000107 extends Sequence0 {
 
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final A000081 mSeq = new A000081();

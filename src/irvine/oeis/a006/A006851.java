@@ -3,14 +3,14 @@ package irvine.oeis.a006;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Quadruple;
 
 /**
  * A006851 Trails of length n on honeycomb lattice.
  * @author Sean A. Irvine
  */
-public class A006851 implements Sequence {
+public class A006851 extends Sequence0 {
 
   // After Alois P. Heinz
 

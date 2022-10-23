@@ -1,13 +1,13 @@
 package irvine.oeis.a308;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A308595 a(n) is the number of pentagonal polyiamonds of all orders less than or equal to n.
  * @author Sean A. Irvine
  */
-public class A308595 implements Sequence {
+public class A308595 extends Sequence0 {
 
   // After Walter Trump
 

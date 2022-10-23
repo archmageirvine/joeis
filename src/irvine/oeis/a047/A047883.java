@@ -1,13 +1,13 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A047883 Squares on unbounded chessboard for which the least number of knight's moves from corner (0,0) is n.
  * @author Sean A. Irvine
  */
-public class A047883 implements Sequence {
+public class A047883 extends Sequence0 {
 
   private static final int[] SMALL = {0, 2, 9, 20, 27, 32};
   private int mN = 0;

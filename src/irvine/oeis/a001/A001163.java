@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001163 Stirling's formula: numerators of asymptotic series for Gamma function.
  * @author Sean A. Irvine
  */
-public class A001163 implements Sequence {
+public class A001163 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

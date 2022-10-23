@@ -3,14 +3,14 @@ package irvine.oeis.a086;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A086014 Number of 6's in decimal expansion of n^2.
  * @author Georg Fischer
  */
-public class A086014 implements Sequence {
+public class A086014 extends Sequence0 {
 
   protected int mN = -1;
   

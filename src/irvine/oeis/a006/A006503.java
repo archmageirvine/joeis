@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006503 a(n) = n*(n+1)*(n+8)/6.
  * @author Sean A. Irvine
  */
-public class A006503 implements Sequence {
+public class A006503 extends Sequence0 {
 
   private long mN = -1;
 

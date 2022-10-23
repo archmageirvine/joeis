@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056966 In binary: write what is described (putting a leading zero on numbers which have an odd number of binary digits).
  * @author Sean A. Irvine
  */
-public class A056966 implements Sequence {
+public class A056966 extends Sequence0 {
 
   private long mN = -1;
 

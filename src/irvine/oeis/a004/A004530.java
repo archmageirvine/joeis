@@ -4,13 +4,13 @@ import irvine.math.polynomial.QPolynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004530 Expansion of (theta_2(0, x) + theta_3(0, x) + theta_4(0, x)) / 2 in powers of x^(1/4).
  * @author Sean A. Irvine
  */
-public class A004530 implements Sequence {
+public class A004530 extends Sequence0 {
 
   private static final Q QUARTER = Q.ONE_QUARTER;
   private Q mN = QUARTER.negate();

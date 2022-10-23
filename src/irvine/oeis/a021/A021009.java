@@ -3,13 +3,13 @@ package irvine.oeis.a021;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A021009 Triangle of coefficients of Laguerre polynomials n!*L_n(x) (rising powers of x).
  * @author Sean A. Irvine
  */
-public class A021009 implements Sequence {
+public class A021009 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045654 Number of 2n-bead balanced binary strings, rotationally equivalent to complement.
  * @author Sean A. Irvine
  */
-public class A045654 implements Sequence {
+public class A045654 extends Sequence0 {
 
   private int mN = -1;
 

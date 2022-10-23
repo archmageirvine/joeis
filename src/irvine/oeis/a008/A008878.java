@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008878 3x+1 sequence starting at 39.
  * @author Sean A. Irvine
  */
-public class A008878 implements Sequence {
+public class A008878 extends Sequence0 {
 
   private Z mA = null;
 

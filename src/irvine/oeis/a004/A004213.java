@@ -2,13 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004213 Shifts one place left under 4th-order binomial transform.
  * @author Sean A. Irvine
  */
-public class A004213 implements Sequence {
+public class A004213 extends Sequence0 {
 
   private long mN = -1;
 

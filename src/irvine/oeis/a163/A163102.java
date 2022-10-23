@@ -1,13 +1,13 @@
 package irvine.oeis.a163;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A163102 a(n) = n^2*(n+1)^2/2.
  * @author Sean A. Irvine
  */
-public class A163102 implements Sequence {
+public class A163102 extends Sequence0 {
 
   private long mN = -1;
 

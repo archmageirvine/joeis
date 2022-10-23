@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027869 Number of 0's in n!.
  * @author Sean A. Irvine
  */
-public class A027869 implements Sequence {
+public class A027869 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.ONE;

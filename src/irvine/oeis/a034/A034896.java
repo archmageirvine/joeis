@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034896 Number of solutions to a^2 + b^2 + 3*c^2 + 3*d^2 = n.
  * @author Sean A. Irvine
  */
-public class A034896 implements Sequence {
+public class A034896 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;

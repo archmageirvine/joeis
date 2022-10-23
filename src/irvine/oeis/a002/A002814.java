@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002814 For n &gt; 1: a(n) = a(n-1)^3 + 3a(n-1)^2 - 3; a(0) = 1, a(1) = 2.
  * @author Sean A. Irvine
  */
-public class A002814 implements Sequence {
+public class A002814 extends Sequence0 {
 
   private Z mA = null;
 

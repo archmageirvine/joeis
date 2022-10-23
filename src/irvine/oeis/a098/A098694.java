@@ -3,13 +3,13 @@ package irvine.oeis.a098;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A098694 Double-superfactorials: a(n) = Product_{k=1..n} (2k)!.
  * @author Georg Fischer
  */
-public class A098694 implements Sequence {
+public class A098694 extends Sequence0 {
 
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN = -1;

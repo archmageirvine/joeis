@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002802 a(n) = (2*n+3)!/(6*n!*(n+1)!).
  * @author Sean A. Irvine
  */
-public class A002802 implements Sequence {
+public class A002802 extends Sequence0 {
 
   private int mN = -1;
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A032777 Floor( n(n+1)(n+2)...(n+7) / (n+(n+1)+(n+2)+...+(n+7)) ).
  * @author Sean A. Irvine
  */
-public class A032777 implements Sequence {
+public class A032777 extends Sequence0 {
 
   private long mN = -1;
 

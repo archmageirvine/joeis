@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055473 Powers of ten written in base 2.
  * @author Sean A. Irvine
  */
-public class A055473 implements Sequence {
+public class A055473 extends Sequence0 {
 
   private int mBase;
   private Z mN = null;

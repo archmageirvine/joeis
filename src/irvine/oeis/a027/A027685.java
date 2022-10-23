@@ -4,13 +4,13 @@ import irvine.math.graph.CountIndependentSets;
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027685 Number of independent subsets of 4^n torus graph.
  * @author Sean A. Irvine
  */
-public class A027685 implements Sequence {
+public class A027685 extends Sequence0 {
 
   // This is only good for a small number of terms
 

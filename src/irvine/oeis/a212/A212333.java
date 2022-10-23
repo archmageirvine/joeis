@@ -3,13 +3,14 @@ package irvine.oeis.a212;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000326;
 
 /**
  * A212333 n-th power of the n-th pentagonal number.
  * @author Georg Fischer
  */
-public class A212333 implements Sequence {
+public class A212333 extends Sequence0 {
 
   final Sequence mA000326 = new A000326();
   protected long mN;

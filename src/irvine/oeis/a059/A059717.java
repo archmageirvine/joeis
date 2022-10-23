@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059717 Start with decimal expansion of n; if all digits have the same parity, stop; otherwise write down the number formed by the even digits and the number formed by the odd digits and add them; repeat.
  * @author Sean A. Irvine
  */
-public class A059717 implements Sequence {
+public class A059717 extends Sequence0 {
 
   private long mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a088;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A088079 Diagonal T(n,n) of the triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, in which row n contains n+1 consecutive integers T(n,k+1)=T(n,k)+1 such that T(n,k) is divisible by a k-th power.
  * @author Sean A. Irvine
  */
-public class A088079 implements Sequence {
+public class A088079 extends Sequence0 {
 
   protected int mN = -1;
   private long mPrev = 0;

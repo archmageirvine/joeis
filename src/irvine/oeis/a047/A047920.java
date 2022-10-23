@@ -1,13 +1,13 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A047920 Triangular array formed from successive differences of factorial numbers.
  * @author Sean A. Irvine
  */
-public class A047920 implements Sequence {
+public class A047920 extends Sequence0 {
 
   private int mN = -1;
   private Z[] mRow = {Z.ONE};

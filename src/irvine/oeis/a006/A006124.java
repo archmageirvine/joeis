@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006124 a(n) = 3 + n/2 + 7*n^2/2.
  * @author Sean A. Irvine
  */
-public class A006124 implements Sequence {
+public class A006124 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

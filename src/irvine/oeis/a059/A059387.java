@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059387 Jordan function J_n(6) (see A059379).
  * @author Georg Fischer
  */
-public class A059387 implements Sequence {
+public class A059387 extends Sequence0 {
 
   protected long mN;
   

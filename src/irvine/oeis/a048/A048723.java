@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048723 Binary "exponentiation" without carries: {0..y}^{0..x}, where y (column index) is binary encoding of GF(2)-polynomial and x (row index) is the exponent.
  * @author Sean A. Irvine
  */
-public class A048723 implements Sequence {
+public class A048723 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

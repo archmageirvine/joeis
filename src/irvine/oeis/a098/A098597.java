@@ -3,6 +3,7 @@ package irvine.oeis.a098;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000108;
 import irvine.oeis.a048.A048881;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a048.A048881;
  * A098597 Numerator of Catalan(n)/2^(2n+1). Also, numerators of (2n-1)!!/(n+1)!. Odd part of the n-th Catalan number.
  * @author Georg Fischer
  */
-public class A098597 implements Sequence {
+public class A098597 extends Sequence0 {
 
   final Sequence mA000108 = new A000108();
   final Sequence mA048881 = new A048881();

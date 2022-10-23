@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A032312 "EGJ" (unordered, element, labeled) transform of 2,2,2,2...
  * @author Sean A. Irvine
  */
-public class A032312 implements Sequence {
+public class A032312 extends Sequence0 {
 
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private Z mF = Z.ONE;

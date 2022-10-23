@@ -2,13 +2,13 @@ package irvine.oeis.a047;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A047224 Smallest k&gt;n where n is a square modulo k.
  * @author Sean A. Irvine
  */
-public class A047224 implements Sequence {
+public class A047224 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

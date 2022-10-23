@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002037 Product of all primes up to 3^n.
  * @author Sean A. Irvine
  */
-public class A002037 implements Sequence {
+public class A002037 extends Sequence0 {
 
   private Z mP = Z.ONE;
   private Z mProd = null;

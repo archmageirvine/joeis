@@ -3,14 +3,14 @@ package irvine.oeis.a051;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A051120 Start with 1; at n-th step, write down what is in the sequence so far.
  * @author Sean A. Irvine
  */
-public class A051120 implements Sequence {
+public class A051120 extends Sequence0 {
 
   private final LongDynamicLongArray mCounts = new LongDynamicLongArray();
   private final ArrayList<Long> mA = new ArrayList<>();

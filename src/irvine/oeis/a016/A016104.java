@@ -1,13 +1,13 @@
 package irvine.oeis.a016;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A016104 2^2^2^ ... 2^w (with n 2's), where w = 1.92878.....
  * @author Sean A. Irvine
  */
-public class A016104 implements Sequence {
+public class A016104 extends Sequence0 {
 
   private Z mA = null;
 

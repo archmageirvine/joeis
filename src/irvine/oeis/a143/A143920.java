@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A143920 E.g.f. satisfies: A(x) = 1 + x*exp(2*Integral A(x) dx).
  * E.g.f.: (1+exp(2*x)) / (1+exp(2*x)*(1-2*x))
  * @author Georg Fischer
  */
-public class A143920 implements Sequence {
+public class A143920 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

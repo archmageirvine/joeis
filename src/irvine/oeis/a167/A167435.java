@@ -3,13 +3,14 @@ package irvine.oeis.a167;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a247.A247560;
 
 /**
  * A167435 Hankel transform of A084076.
  * @author Georg Fischer
  */
-public class A167435 implements Sequence {
+public class A167435 extends Sequence0 {
 
   final Sequence mA247560 = new A247560();
   protected long mN;

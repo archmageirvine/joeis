@@ -5,13 +5,13 @@ import java.util.Collections;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030066 Speak the numbers pausing after every component.
  * @author Sean A. Irvine
  */
-public class A030066 implements Sequence {
+public class A030066 extends Sequence0 {
 
   // This is a pretty dumb sequence
 

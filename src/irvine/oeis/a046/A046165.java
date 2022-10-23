@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046165 Number of minimal covers of n objects.
  * @author Sean A. Irvine
  */
-public class A046165 implements Sequence {
+public class A046165 extends Sequence0 {
 
   private int mN = -1;
 

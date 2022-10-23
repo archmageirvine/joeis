@@ -3,14 +3,14 @@ package irvine.oeis.a015;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A015810 k is the first integer such that phi(k+n) | sigma(k)+n.
  * @author Sean A. Irvine
  */
-public class A015810 implements Sequence {
+public class A015810 extends Sequence0 {
 
   private final LongDynamicLongArray mSigma = new LongDynamicLongArray();
   private final LongDynamicLongArray mPhi = new LongDynamicLongArray();

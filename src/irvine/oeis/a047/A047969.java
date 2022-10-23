@@ -1,13 +1,13 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A047969 Square array of nexus numbers a(n,k) = (n+1)^(k+1) - n^(k+1) (n &gt;= 0, k &gt;= 0) read by upwards antidiagonals.
  * @author Sean A. Irvine
  */
-public class A047969 implements Sequence {
+public class A047969 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

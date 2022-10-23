@@ -1,13 +1,13 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010120 Smallest start for a '3x+1' sequence containing 2^n.
  * @author Sean A. Irvine
  */
-public class A010120 implements Sequence {
+public class A010120 extends Sequence0 {
 
   private Z mM = null;
   private Z mPrev = Z.ONE;

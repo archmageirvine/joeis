@@ -3,6 +3,7 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a027.A027871;
 import irvine.oeis.a047.A047656;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a047.A047656;
  * A053290 Number of nonsingular n X n matrices over GF(3).
  * @author Georg Fischer
  */
-public class A053290 implements Sequence {
+public class A053290 extends Sequence0 {
 
   private final Sequence mA027871 = new A027871();
   private final Sequence mA047656 = new A047656();

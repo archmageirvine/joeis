@@ -3,13 +3,14 @@ package irvine.oeis.a274;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a232.A232714;
 
 /**
  * A274179 Expansion of f(x^1, x^6) in powers of x where f() is Ramanujan's general theta function.
  * @author Georg Fischer
  */
-public class A274179 implements Sequence {
+public class A274179 extends Sequence0 {
 
   final Sequence mA232714 = new A232714();
   @Override

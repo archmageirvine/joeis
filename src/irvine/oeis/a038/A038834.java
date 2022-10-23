@@ -2,14 +2,14 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006852;
 
 /**
  * A038834 Past of komet 'k2' (A038807).
  * @author Sean A. Irvine
  */
-public class A038834 implements Sequence {
+public class A038834 extends Sequence0 {
 
   private final MemorySequence mSeq = MemorySequence.cachedSequence(new A006852());
   private int mA = 0;

@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046654 Nearest integer to Sum_{k=1..n} log(k) = log(n!).
  * @author Sean A. Irvine
  */
-public class A046654 implements Sequence {
+public class A046654 extends Sequence0 {
 
   private CR mSum = CR.ZERO;
   private long mN = -1;

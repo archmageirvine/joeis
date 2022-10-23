@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002775 a(n) = n^2 * n!.
  * @author Sean A. Irvine
  */
-public class A002775 implements Sequence {
+public class A002775 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.ONE;

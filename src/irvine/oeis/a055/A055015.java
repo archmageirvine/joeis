@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055015 Sum of 6th powers of digits of n.
  * @author Sean A. Irvine
  */
-public class A055015 implements Sequence {
+public class A055015 extends Sequence0 {
 
   private long mN = -1;
 

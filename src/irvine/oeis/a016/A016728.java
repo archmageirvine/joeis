@@ -1,13 +1,13 @@
 package irvine.oeis.a016;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A016728 Number of integer points (x,y,z) at distance &lt;= 0.5 from sphere of radius n.
  * @author Sean A. Irvine
  */
-public class A016728 implements Sequence {
+public class A016728 extends Sequence0 {
 
   // There is probably a much better way to do this ...
 

@@ -3,6 +3,7 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
 import irvine.oeis.a004.A004091;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a004.A004091;
  * A133022 Product of n-th Fibonacci number and n-th Fibonacci number written backwards.
  * @author Georg Fischer
  */
-public class A133022 implements Sequence {
+public class A133022 extends Sequence0 {
 
   final Sequence mA000045 = new A000045();
   final Sequence mA004091 = new A004091();

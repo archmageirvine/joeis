@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013250 cos(log(x+1)-arctan(x))=1-3/4!*x^4+40/5!*x^5-250/6!*x^6+840/7!*x^7...
  * @author Sean A. Irvine
  */
-public class A013250 implements Sequence {
+public class A013250 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

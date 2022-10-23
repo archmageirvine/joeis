@@ -3,13 +3,14 @@ package irvine.oeis.a099;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002620;
 
 /**
  * A099202 2^floor(n^2/2).
  * @author Georg Fischer
  */
-public class A099202 implements Sequence {
+public class A099202 extends Sequence0 {
 
   final Sequence mA002620 = new A002620();
   @Override

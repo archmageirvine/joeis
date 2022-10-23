@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002909 Low temperature energy function for square lattice.
  * @author Sean A. Irvine
  */
-public class A002909 implements Sequence {
+public class A002909 extends Sequence0 {
 
   // Cf. A002908.
 

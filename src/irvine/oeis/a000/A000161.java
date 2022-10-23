@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000161 Number of partitions of n into 2 squares.
  * @author Sean A. Irvine
  */
-public class A000161 implements Sequence {
+public class A000161 extends Sequence0 {
 
   private long mN = -1;
 

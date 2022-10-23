@@ -3,13 +3,14 @@ package irvine.oeis.a317;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a036.A036469;
 
 /**
  * A317910 Expansion of -1/(1 - x)^2 + (1/(1 - x))*Product_{k&gt;=1} (1 + x^k).
  * @author Georg Fischer
  */
-public class A317910 implements Sequence {
+public class A317910 extends Sequence0 {
 
   final Sequence mA036469 = new A036469();
   protected long mN;

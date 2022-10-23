@@ -3,6 +3,7 @@ package irvine.oeis.a133;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000244;
 import irvine.oeis.a002.A002416;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a002.A002416;
  * A133460 3^n*2^(n^2).
  * @author Georg Fischer
  */
-public class A133460 implements Sequence {
+public class A133460 extends Sequence0 {
 
   final Sequence mA000244 = new A000244();
   final Sequence mA002416 = new A002416();

@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000168 a(n) = 2*3^n*(2*n)!/(n!*(n+2)!).
  * @author Sean A. Irvine
  */
-public class A000168 implements Sequence {
+public class A000168 extends Sequence0 {
 
   private final A000108 mSeq = new A000108();
   private long mN = -1;

@@ -4,13 +4,13 @@ import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014505 Number of digraphs with unlabeled (non-isolated) nodes and n labeled edges.
  * @author Sean A. Irvine
  */
-public class A014505 implements Sequence {
+public class A014505 extends Sequence0 {
 
   private Z mF = Z.ONE;
   private int mN = -1;

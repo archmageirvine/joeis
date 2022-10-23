@@ -3,13 +3,14 @@ package irvine.oeis.a098;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a020.A020556;
 
 /**
  * A098631 Consider the family of directed multigraphs enriched by the species of parts. Sequence gives number of those multigraphs with n labeled arcs.
  * @author Georg Fischer
  */
-public class A098631 implements Sequence {
+public class A098631 extends Sequence0 {
 
   final Sequence mA020556 = new A020556();
   protected long mN;

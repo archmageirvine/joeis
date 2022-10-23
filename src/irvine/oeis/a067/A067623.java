@@ -3,13 +3,14 @@ package irvine.oeis.a067;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004128;
 
 /**
  * A067623 Consider the power series (x+1)^(1/3)=1+x/3-x^2/9+5x^3/81+...; sequence gives denominators of coefficients.
  * @author Georg Fischer
  */
-public class A067623 implements Sequence {
+public class A067623 extends Sequence0 {
 
   final Sequence mA004128 = new A004128();
   @Override

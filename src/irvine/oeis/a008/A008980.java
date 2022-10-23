@@ -2,13 +2,13 @@ package irvine.oeis.a008;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008980 Number of immersions of the oriented circle into the oriented plane with n double points.
  * @author Sean A. Irvine
  */
-public class A008980 implements Sequence {
+public class A008980 extends Sequence0 {
 
   // Based on Pascal program allcurve.pas.
   // Original documentation:

@@ -3,13 +3,13 @@ package irvine.oeis.a035;
 import irvine.factor.prime.Fast;
 import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035198 From a Dirichlet series.
  * @author Sean A. Irvine
  */
-public class A035198 implements Sequence {
+public class A035198 extends Sequence0 {
 
   private int mN = 0;
   private int mMax = 100;

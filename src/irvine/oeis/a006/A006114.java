@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006114 Gaussian binomial coefficient [ 2n,n ] for q=5.
  * @author Sean A. Irvine
  */
-public class A006114 implements Sequence {
+public class A006114 extends Sequence0 {
 
   private int mN = -1;
 

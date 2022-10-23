@@ -2,13 +2,13 @@ package irvine.oeis.a029;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A029915 Convert n from yards to meters.
  * @author Sean A. Irvine
  */
-public class A029915 implements Sequence {
+public class A029915 extends Sequence0 {
 
   private static final Q YARDS_TO_METRES = new Q(9144, 10000);
   private Z mN = Z.NEG_ONE;

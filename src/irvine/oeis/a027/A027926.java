@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027926 Triangular array T read by rows: T(n,0) = T(n,2n) = 1 for n &gt;= 0; T(n,1) = 1 for n &gt;= 1; T(n,k) = T(n-1,k-2) + T(n-1,k-1) for k = 2..2n-1, n &gt;= 2.
  * @author Sean A. Irvine
  */
-public class A027926 implements Sequence {
+public class A027926 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

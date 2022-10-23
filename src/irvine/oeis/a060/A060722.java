@@ -1,13 +1,13 @@
 package irvine.oeis.a060;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A060722 a(n) = 3^(n^2).
  * @author Georg Fischer
  */
-public class A060722 implements Sequence {
+public class A060722 extends Sequence0 {
 
   protected long mBase2; // base^2
   protected Z mPrev;

@@ -3,13 +3,13 @@ package irvine.oeis.a203;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A203306 Vandermonde determinant of (1!, 2!, 3!, ..., n!).
  * @author Georg Fischer
  */
-public class A203306 implements Sequence {
+public class A203306 extends Sequence0 {
 
   private int mN = -1;
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;

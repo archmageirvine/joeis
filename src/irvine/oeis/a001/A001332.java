@@ -3,13 +3,13 @@ package irvine.oeis.a001;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001332 a(n) = Bernoulli(2*n) * (2*n + 1)!.
  * @author Sean A. Irvine
  */
-public class A001332 implements Sequence {
+public class A001332 extends Sequence0 {
 
   private final BernoulliSequence mB = new BernoulliSequence(0);
   private int mN = 0;

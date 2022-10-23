@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.q.BernoulliSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006863 Denominator of B_{2n}/(-4n), where B_m are the Bernoulli numbers.
  * @author Sean A. Irvine
  */
-public class A006863 implements Sequence {
+public class A006863 extends Sequence0 {
 
   private final BernoulliSequence mB = new BernoulliSequence(1);
   private long mN = 4;

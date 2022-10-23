@@ -3,6 +3,7 @@ package irvine.oeis.a049;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000142;
 import irvine.oeis.a034.A034386;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a034.A034386;
  * A049614 n! divided by its squarefree kernel.
  * @author Georg Fischer
  */
-public class A049614 implements Sequence {
+public class A049614 extends Sequence0 {
 
   final Sequence mA000142 = new A000142();
   final Sequence mA034386 = new A034386();

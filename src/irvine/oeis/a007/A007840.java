@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007840 Number of factorizations of permutations of n letters into ordered cycles.
  * @author Sean A. Irvine
  */
-public class A007840 implements Sequence {
+public class A007840 extends Sequence0 {
 
   protected int mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058878 Triangle T(n,k) is the number of labeled graphs of even degree with n nodes and k edges (n &gt;= 0, 0 &lt;= k &lt;= n(n-1)/2).
  * @author Sean A. Irvine
  */
-public class A058878 implements Sequence {
+public class A058878 extends Sequence0 {
 
   private int mN = 0;
   private int mM = -1;

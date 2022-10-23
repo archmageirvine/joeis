@@ -3,13 +3,14 @@ package irvine.oeis.a162;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001791;
 
 /**
  * A162551 a(n) = 2 * C(2*n,n-1).
  * @author Georg Fischer
  */
-public class A162551 implements Sequence {
+public class A162551 extends Sequence0 {
 
   final Sequence mA001791 = new A001791();
   @Override

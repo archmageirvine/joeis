@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035343 Triangle of coefficients in expansion of (1 + x + x^2 + x^3 + x^4)^n.
  * @author Sean A. Irvine
  */
-public class A035343 implements Sequence {
+public class A035343 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C = Polynomial.create(1, 1, 1, 1, 1);

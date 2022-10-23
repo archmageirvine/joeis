@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000076 Number of integers &lt;= 2^n of form 4 x^2 + 4 x y + 5 y^2.
  * @author Sean A. Irvine
  */
-public class A000076 implements Sequence {
+public class A000076 extends Sequence0 {
 
   private int mN = -1;
   private long mPrev = 0;

@@ -6,13 +6,13 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.nauty.Multigraph;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003088 Number of unilateral digraphs with n unlabeled nodes.
  * @author Sean A. Irvine
  */
-public class A003088 implements Sequence, GraphProcessor {
+public class A003088 extends Sequence0 implements GraphProcessor {
 
   // There are hints in Robinson's work that this sequence could be doable by the cycle index method.
 

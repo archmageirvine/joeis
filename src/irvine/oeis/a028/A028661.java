@@ -6,13 +6,13 @@ import irvine.math.polynomial.QPolynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028661 Expansion of (theta_3(z)*theta_3(24z)+theta_2(z)*theta_2(24z)) in powers of q^(1/4).
  * @author Sean A. Irvine
  */
-public class A028661 implements Sequence {
+public class A028661 extends Sequence0 {
 
   private static final QPolynomialRingField<Z> RING = new QPolynomialRingField<>(IntegerField.SINGLETON);
   private Q mN = Q.ONE_QUARTER.negate();

@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001665 Number of self-avoiding n-step walks on Kagome lattice.
  * @author Sean A. Irvine
  */
-public class A001665 implements Sequence {
+public class A001665 extends Sequence0 {
 
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new SelfAvoidingWalker(Lattices.KAGOME));
   private final long mC = Lattices.KAGOME.toPoint(1, 1);

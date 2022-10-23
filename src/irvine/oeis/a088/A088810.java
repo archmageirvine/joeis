@@ -3,13 +3,14 @@ package irvine.oeis.a088;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007865;
 import irvine.oeis.a050.A050291;
 /**
  * A088810 Number of subsets of {1, ..., n} that are double-free but not sum-free.
  * @author Georg Fischer
  */
-public class A088810 implements Sequence {
+public class A088810 extends Sequence0 {
 
   private final Sequence mA007865 = new A007865();
   private final Sequence mA050291 = new A050291();

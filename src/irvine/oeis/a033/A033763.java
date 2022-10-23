@@ -6,13 +6,13 @@ import irvine.math.polynomial.QPolynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A033763 Product t2(q^d); d | 4, where t2 = theta2(q)/(2*q^(1/4)).
  * @author Sean A. Irvine
  */
-public class A033763 implements Sequence {
+public class A033763 extends Sequence0 {
 
   private static final QPolynomialRingField<Z> RING = new QPolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -2;

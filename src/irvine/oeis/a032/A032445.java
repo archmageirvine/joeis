@@ -2,13 +2,13 @@ package irvine.oeis.a032;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A032445 Number the digits of the decimal expansion of Pi: 3 is the first, 1 is the second, 4 is the third and so on; a(n) gives the starting position of the first occurrence of n.
  * @author Sean A. Irvine
  */
-public class A032445 implements Sequence {
+public class A032445 extends Sequence0 {
 
   private static final CR PI0 = CR.PI.divide(CR.TEN); // So we can ignore the period
   private int mDigits = 1000;

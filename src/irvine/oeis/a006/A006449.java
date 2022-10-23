@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import irvine.math.z.Binomial;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006449 Row sums of Fibonacci-Pascal triangle in A045995.
  * @author Sean A. Irvine
  */
-public class A006449 implements Sequence {
+public class A006449 extends Sequence0 {
 
   private int mN = -1;
 

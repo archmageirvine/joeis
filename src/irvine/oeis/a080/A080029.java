@@ -1,14 +1,14 @@
 package irvine.oeis.a080;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A080029 a(n) is taken to be the smallest positive integer not already present which is consistent with the condition "n is a member of the sequence if and only if a(n) is a multiple of 3".
  * <code>a(3m)=6m, a(3m+1)=3m+2, a(3m+2)=6m+3</code>.
  * @author Georg Fischer
  */
-public class A080029 implements Sequence {
+public class A080029 extends Sequence0 {
 
   private int mN = -1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002716 An infinite coprime sequence defined by recursion.
  * @author Sean A. Irvine
  */
-public class A002716 implements Sequence {
+public class A002716 extends Sequence0 {
 
   private Z mQ = null;
   private Z mP = null;

@@ -2,13 +2,13 @@ package irvine.oeis.a033;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A033673 Trajectory of 79 under map x-&gt;x + (x-with-digits-reversed).
  * @author Sean A. Irvine
  */
-public class A033673 implements Sequence {
+public class A033673 extends Sequence0 {
 
   private Z mA = null;
   

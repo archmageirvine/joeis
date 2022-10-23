@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001842 Expansion of Sum_{n&gt;=0} x^(4*n+3)/(1 - x^(4*n+3)).
  * @author Sean A. Irvine
  */
-public class A001842 implements Sequence {
+public class A001842 extends Sequence0 {
 
   private long mN = -1;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a036;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036493 Largest number having binary order n (A029837) and of which the number of divisors is maximal in that range of g(k) = n.
  * @author Sean A. Irvine
  */
-public class A036493 implements Sequence {
+public class A036493 extends Sequence0 {
 
   private Z mLim = null;
   private Z mA = Z.ONE;

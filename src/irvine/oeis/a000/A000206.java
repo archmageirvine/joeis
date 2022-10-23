@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000206 Even sequences with period 2n.
  * @author Sean A. Irvine
  */
-public class A000206 implements Sequence {
+public class A000206 extends Sequence0 {
 
   private int mN = -1;
   private final A000011 mStep1 = new A000011();

@@ -1,13 +1,13 @@
 package irvine.oeis.a113;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A113873 a(3n) = a(3n-1) + a(3n-2), a(3n+1) = 2n*a(3n) + a(3n-1), a(3n+2) = a(3n+1) + a(3n).
  * @author Sean A. Irvine
  */
-public class A113873 implements Sequence {
+public class A113873 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ZERO;

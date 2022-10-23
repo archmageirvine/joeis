@@ -3,6 +3,7 @@ package irvine.oeis.a178;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004427;
 import irvine.oeis.a008.A008592;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a008.A008592;
  * A178359 Rounded up arithmetic mean of digits of n appended to n, cf. A004427.
  * @author Georg Fischer
  */
-public class A178359 implements Sequence {
+public class A178359 extends Sequence0 {
 
   final Sequence mA004427 = new A004427();
   final Sequence mA008592 = new A008592();

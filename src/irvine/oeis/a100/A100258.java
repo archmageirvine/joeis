@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A100258 Triangle of coefficients of normalized Legendre polynomials, with increasing exponents.
  * @author Sean A. Irvine
  */
-public class A100258 implements Sequence {
+public class A100258 extends Sequence0 {
 
   private static final PolynomialRing<Q> RING = new PolynomialRing<>(Rationals.SINGLETON);
   private Polynomial<Q> mA = null;

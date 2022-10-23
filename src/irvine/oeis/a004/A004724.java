@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004724 Delete all 5's from the sequence of nonnegative integers.
  * @author Sean A. Irvine
  */
-public class A004724 implements Sequence {
+public class A004724 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

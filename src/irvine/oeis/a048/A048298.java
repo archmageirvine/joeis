@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048298 a(n) = n if n=2^i with i=0,1,2,3,...; else a(n) = 0.
  * @author Sean A. Irvine
  */
-public class A048298 implements Sequence {
+public class A048298 extends Sequence0 {
 
   private long mN = -1;
   private long mT = 1;

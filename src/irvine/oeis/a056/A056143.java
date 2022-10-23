@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056143 Concatenate ... floor[n/100], floor[n/10], n.
  * @author Sean A. Irvine
  */
-public class A056143 implements Sequence {
+public class A056143 extends Sequence0 {
 
   private long mN = -1;
 

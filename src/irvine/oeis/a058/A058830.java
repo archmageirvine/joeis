@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058830 Number of labeled n-node 4-valent graphs containing a single double edge.
  * @author Sean A. Irvine
  */
-public class A058830 implements Sequence {
+public class A058830 extends Sequence0 {
 
   private final List<Z> mA = new ArrayList<>();
   private final List<Z> mB = new ArrayList<>();

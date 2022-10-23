@@ -3,13 +3,14 @@ package irvine.oeis.a280;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004090;
 
 /**
  * A280185 a(n) = n - A004090(n), where A004090 is the sum of digits of the Fibonacci numbers A000045.
  * @author Georg Fischer
  */
-public class A280185 implements Sequence {
+public class A280185 extends Sequence0 {
 
   final Sequence mA004090 = new A004090();
   protected long mN;

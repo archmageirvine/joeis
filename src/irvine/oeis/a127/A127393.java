@@ -3,13 +3,14 @@ package irvine.oeis.a127;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001938;
 
 /**
  * A127393 Expansion of k/q^(1/2) in powers of q, where k is the elliptic function defined by sqrt(k) = theta_2/theta_3.
  * @author Georg Fischer
  */
-public class A127393 implements Sequence {
+public class A127393 extends Sequence0 {
 
   final Sequence mA001938 = new A001938();
   @Override

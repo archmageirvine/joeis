@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054860 Number of ways of writing 2n+1 as p + q + r where p, q, r are primes with p &lt;= q &lt;= r.
  * @author Sean A. Irvine
  */
-public class A054860 implements Sequence {
+public class A054860 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

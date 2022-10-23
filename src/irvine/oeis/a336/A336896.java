@@ -3,13 +3,14 @@ package irvine.oeis.a336;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a032.A032153;
 
 /**
  * A336896 Sum of the leftmost parts in all compositions of n into distinct parts.
  * @author Georg Fischer
  */
-public class A336896 implements Sequence {
+public class A336896 extends Sequence0 {
 
   final Sequence mA032153 = new A032153();
   protected long mN;

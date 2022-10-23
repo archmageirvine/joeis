@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000539 Sum of 5th powers: 0^5 + 1^5 + 2^5 + ... + n^5.
  * @author Sean A. Irvine
  */
-public class A000539 implements Sequence {
+public class A000539 extends Sequence0 {
 
   private long mN = -1;
   private Z mS = Z.ZERO;

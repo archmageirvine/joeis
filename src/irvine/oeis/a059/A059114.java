@@ -4,13 +4,13 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059114 Triangle T(n,m)= Sum_{i=0..n} L'(n,i)*Product_{j=1..m} (i-j+1), read by rows.
  * @author Sean A. Irvine
  */
-public class A059114 implements Sequence {
+public class A059114 extends Sequence0 {
 
   private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
   private int mN = -1;

@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000248 Expansion of e.g.f. exp(x*exp(x)).
  * @author Sean A. Irvine
  */
-public class A000248 implements Sequence {
+public class A000248 extends Sequence0 {
 
   protected int mN = -1;
 

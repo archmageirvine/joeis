@@ -2,13 +2,13 @@ package irvine.oeis.a182;
 // manually 2021-09-02
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A182660 a(2^(k+1)) = k; 0 everywhere else. 
  * @author Georg Fischer
  */
-public class A182660 implements Sequence {
+public class A182660 extends Sequence0 {
 
   protected long mN = -1;
 

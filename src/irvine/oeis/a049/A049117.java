@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049117 Smallest number which when Euler phi function is repeatedly applied have not reached a power of 2 in n steps.
  * @author Sean A. Irvine
  */
-public class A049117 implements Sequence {
+public class A049117 extends Sequence0 {
 
   private long mN = 0;
   private long mM = 3;

@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038810 a(n) is the number of ways to write the number n as dk...di...d2d1d0 where digit di represents di * (di+1)^i, restricting di to 0..9.
  * @author Sean A. Irvine
  */
-public class A038810 implements Sequence {
+public class A038810 extends Sequence0 {
 
   private long mN = -1;
 

@@ -2,14 +2,14 @@ package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A001172 Smallest even number that is an unordered sum of two odd primes in exactly n ways.
  * @author Sean A. Irvine
  */
-public class A001172 implements Sequence {
+public class A001172 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private final LongDynamicLongArray mCount = new LongDynamicLongArray();

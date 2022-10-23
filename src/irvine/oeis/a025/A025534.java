@@ -3,13 +3,13 @@ package irvine.oeis.a025;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025534 a(n) = (1/C(n,0) + 1/C(n,1) + ... + 1/C(n,k))*L, where k = [ n/2 ], L = LCM{C(n,0), C(n,1),..., C(n,n)}.
  * @author Sean A. Irvine
  */
-public class A025534 implements Sequence {
+public class A025534 extends Sequence0 {
 
   private long mN = -1;
 

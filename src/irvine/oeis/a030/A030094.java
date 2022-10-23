@@ -1,14 +1,14 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A030094 Product of n with 666 is palindromic.
  * @author Sean A. Irvine
  */
-public class A030094 implements Sequence {
+public class A030094 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

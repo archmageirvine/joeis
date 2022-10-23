@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005148 Sequence of coefficients arising in connection with a rapidly converging series for Pi.
  * @author Sean A. Irvine
  */
-public class A005148 implements Sequence {
+public class A005148 extends Sequence0 {
 
   // After Broadhurst
 

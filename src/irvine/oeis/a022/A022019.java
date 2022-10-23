@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A022019 Define the sequence S(a(0), a(1)) by a(n+2) is the least integer such that a(n+2)/a(n+1) &gt; a(n+1)/a(n) for n &gt;= 0 . This is S(2,32).
  * @author Sean A. Irvine
  */
-public class A022019 implements Sequence {
+public class A022019 extends Sequence0 {
 
   // After Robert Israel
 

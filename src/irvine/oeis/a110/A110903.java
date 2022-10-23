@@ -3,6 +3,7 @@ package irvine.oeis.a110;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000142;
 import irvine.oeis.a006.A006882;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006882;
  * A110903 Difference between the factorial of n and the double factorial of n.
  * @author Georg Fischer
  */
-public class A110903 implements Sequence {
+public class A110903 extends Sequence0 {
 
   final Sequence mA000142 = new A000142();
   final Sequence mA006882 = new A006882();

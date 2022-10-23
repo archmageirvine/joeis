@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058051 a(n) = F(F(F(n))), where F is a Fibonacci number (A000045).
  * @author Sean A. Irvine
  */
-public class A058051 implements Sequence {
+public class A058051 extends Sequence0 {
 
   private int mN = -1;
 

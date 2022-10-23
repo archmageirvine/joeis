@@ -3,13 +3,14 @@ package irvine.oeis.a259;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000194;
 
 /**
  * A259361 n occurs 2n+2 times.
  * @author Georg Fischer
  */
-public class A259361 implements Sequence {
+public class A259361 extends Sequence0 {
 
   final Sequence mA000194 = new A000194();
   /** Construct the sequence. */

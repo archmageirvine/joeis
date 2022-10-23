@@ -3,12 +3,13 @@ package irvine.oeis.a078;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000605;
 /**
  * A078184 Number of solutions to n^2 &lt; x^2 + y^2 + z^2 &lt; (n+1)^2; number of lattice points between spheres of radii n and n+1.
  * @author Georg Fischer
  */
-public class A078184 implements Sequence {
+public class A078184 extends Sequence0 {
 
   private final Sequence mA000605 = new A000605();
   private final Sequence mA078183 = new A078183();

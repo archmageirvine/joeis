@@ -4,13 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001997 Number of different shapes formed by bending a piece of wire of length n in the plane.
  * @author Sean A. Irvine
  */
-public class A001997 implements Sequence {
+public class A001997 extends Sequence0 {
 
   private HashSet<String> mWire = null;
 

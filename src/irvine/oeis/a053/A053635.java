@@ -3,13 +3,14 @@ package irvine.oeis.a053;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000031;
 
 /**
  * A053635 a(n) = Sum_{d|n} phi(d)*2^(n/d).
  * @author Georg Fischer
  */
-public class A053635 implements Sequence {
+public class A053635 extends Sequence0 {
 
   final Sequence mA000031 = new A000031();
   protected long mN;

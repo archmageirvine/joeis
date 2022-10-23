@@ -1,13 +1,13 @@
 package irvine.oeis.a105;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A105529 Given a list of ternary numbers, interpret each as a ternary modular Gray code number, then convert to decimal.
  * @author Sean A. Irvine
  */
-public class A105529 implements Sequence {
+public class A105529 extends Sequence0 {
 
   private long mN = -1;
 

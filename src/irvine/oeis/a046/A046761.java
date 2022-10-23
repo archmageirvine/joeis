@@ -3,13 +3,13 @@ package irvine.oeis.a046;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046761 Largest number that is equal to sum of n-th powers of its digits.
  * @author Sean A. Irvine
  */
-public class A046761 implements Sequence {
+public class A046761 extends Sequence0 {
 
   // Too slow to be useful, there must be a better way
 

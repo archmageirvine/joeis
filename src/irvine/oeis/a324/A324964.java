@@ -4,13 +4,14 @@ package irvine.oeis.a324;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000139;
 
 /**
  * A324964 a(n) = A000139(n) mod 2; Characteristic function of odd fibbinary numbers (A022341).
  * @author Georg Fischer
  */
-public class A324964 implements Sequence {
+public class A324964 extends Sequence0 {
 
   final Sequence mA000139 = new A000139();
   @Override

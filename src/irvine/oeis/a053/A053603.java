@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053603 Number of ways to write n as an ordered sum of two nonzero triangular numbers.
  * @author Sean A. Irvine
  */
-public class A053603 implements Sequence {
+public class A053603 extends Sequence0 {
 
   private long mN = -6;
 

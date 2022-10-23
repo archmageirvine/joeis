@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000695 Moser-de Bruijn sequence: sums of distinct powers of 4.
  * @author Sean A. Irvine
  */
-public class A000695 implements Sequence {
+public class A000695 extends Sequence0 {
 
   private long mN = -1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051711 a(0) = 1; for n &gt; 0, a(n) = n!*4^n/2.
  * @author Sean A. Irvine
  */
-public class A051711 implements Sequence {
+public class A051711 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.TWO;

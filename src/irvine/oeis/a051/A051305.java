@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051305 Number of 5-element proper antichains of an n-element set.
  * @author Sean A. Irvine
  */
-public class A051305 implements Sequence {
+public class A051305 extends Sequence0 {
 
   private static final int[][] C = {
     {1, 32},

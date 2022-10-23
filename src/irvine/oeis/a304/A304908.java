@@ -3,13 +3,14 @@ package irvine.oeis.a304;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a023.A023359;
 
 /**
  * A304908 Expansion of x * (d/dx) 1/(1 - Sum_{k&gt;=0} x^(2^k)).
  * @author Georg Fischer
  */
-public class A304908 implements Sequence {
+public class A304908 extends Sequence0 {
 
   final Sequence mA023359 = new A023359();
   protected long mN;

@@ -3,13 +3,14 @@ package irvine.oeis.a092;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000120;
 
 /**
  * A092391 a(n) = n + wt(n), where wt(n) = A000120(n) = binary weight of n.
  * @author Georg Fischer
  */
-public class A092391 implements Sequence {
+public class A092391 extends Sequence0 {
 
   final Sequence mA000120 = new A000120();
   protected long mN;

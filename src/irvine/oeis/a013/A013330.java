@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013330 E.g.f.: tan(exp(x)-sec(x))=x+3/3!*x^3-4/4!*x^4+37/5!*x^5-180/6!*x^6...
  * @author Sean A. Irvine
  */
-public class A013330 implements Sequence {
+public class A013330 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

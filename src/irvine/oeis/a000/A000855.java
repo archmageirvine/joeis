@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000855 Final two digits of 2^n.
  * @author Sean A. Irvine
  */
-public class A000855 implements Sequence {
+public class A000855 extends Sequence0 {
 
   private static final Z[] SEQ = {
     Z.FOUR,

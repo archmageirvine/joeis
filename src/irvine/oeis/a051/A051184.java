@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051184 Number of 7-element intersecting families of an n-element set.
  * @author Sean A. Irvine
  */
-public class A051184 implements Sequence {
+public class A051184 extends Sequence0 {
 
   private static final int[][] C = {
     {1, 128},

@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051154 a(n) = 1 + 2^k + 4^k where k = 3^n.
  * @author Sean A. Irvine
  */
-public class A051154 implements Sequence {
+public class A051154 extends Sequence0 {
 
   private Z mT = null;
 

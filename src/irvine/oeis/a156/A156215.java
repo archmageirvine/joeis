@@ -3,13 +3,14 @@ package irvine.oeis.a156;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a058.A058490;
 
 /**
  * A156215 Expansion of (chi(q^3) / chi(q))^6 + q / (chi(q^3) / chi(q))^6 in powers of q where chi() is a Ramanujan theta function.
  * @author Georg Fischer
  */
-public class A156215 implements Sequence {
+public class A156215 extends Sequence0 {
 
   final Sequence mA058490 = new A058490();
   protected long mN;

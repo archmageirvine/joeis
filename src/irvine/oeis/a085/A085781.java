@@ -3,13 +3,13 @@ package irvine.oeis.a085;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A085781 a(n) = 2*binomial(2*n+1,n+1) - 2^n.
  * @author Georg Fischer
  */
-public class A085781 implements Sequence {
+public class A085781 extends Sequence0 {
 
   private int mN = -1;
 

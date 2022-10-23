@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.ZeroSpacedSequence;
 import irvine.oeis.a004.A004016;
 import irvine.oeis.a007.A007332;
@@ -14,7 +14,7 @@ import irvine.oeis.a007.A007332;
  * A037150 Fourier coefficients of Eisenstein series of degree 2 and weight 6 when evaluated at Gram(A_2)*z.
  * @author Sean A. Irvine
  */
-public class A037150 implements Sequence {
+public class A037150 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Z Z72 = Z.valueOf(72);

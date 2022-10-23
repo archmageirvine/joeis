@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A138910 Inverse binomial transform of A138909.
  * E.g.f.: (x+1)/(exp(x)-x*exp(2*x))
  * @author Georg Fischer
  */
-public class A138910 implements Sequence {
+public class A138910 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

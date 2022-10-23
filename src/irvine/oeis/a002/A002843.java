@@ -3,14 +3,14 @@ package irvine.oeis.a002;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Point;
 
 /**
  * A002843 Number of partitions of n into parts 1/2, 3/4, 7/8, 15/16, etc.
  * @author Sean A. Irvine
  */
-public class A002843 implements Sequence {
+public class A002843 extends Sequence0 {
 
   private int mN = -1;
   private final HashMap<Point, Z> mV = new HashMap<>();

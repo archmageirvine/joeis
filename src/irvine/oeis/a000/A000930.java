@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000930 Narayana's cows sequence: a(0) = a(1) = a(2) = 1; thereafter a(n) = a(n-1) + a(n-3).
  * @author Sean A. Irvine
  */
-public class A000930 implements Sequence {
+public class A000930 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.ZERO;

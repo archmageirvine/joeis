@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045998 Binary Gleichniszahlen-Reihe (BGR) sequence: describe previous term (cf. A005150), reduce number of digits seen mod 2 (then for the purposes of this data-base, discard leading zeros).
  * @author Sean A. Irvine
  */
-public class A045998 implements Sequence {
+public class A045998 extends Sequence0 {
 
   private String mA = null;
 

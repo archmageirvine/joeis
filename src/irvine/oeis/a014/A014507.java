@@ -3,13 +3,13 @@ package irvine.oeis.a014;
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014507 Number of digraphs with loops, having unlabeled (non-isolated) nodes and n labeled edges.
  * @author Sean A. Irvine
  */
-public class A014507 implements Sequence {
+public class A014507 extends Sequence0 {
 
   private int mN = -1;
 

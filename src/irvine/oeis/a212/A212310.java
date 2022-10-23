@@ -1,13 +1,13 @@
 package irvine.oeis.a212;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A212310 a(n) = n! mod 4^n.
  * @author Georg Fischer
  */
-public class A212310 implements Sequence {
+public class A212310 extends Sequence0 {
 
   private int mN = -1;
   private Z mFact = Z.ONE;

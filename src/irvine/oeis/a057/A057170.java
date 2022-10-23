@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057170 2-enumeration of 2n X 2n half-turn symmetric alternating-sign matrices.
  * @author Sean A. Irvine
  */
-public class A057170 implements Sequence {
+public class A057170 extends Sequence0 {
 
   private int mN = -1;
 

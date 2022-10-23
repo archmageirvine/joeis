@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A331406 Array read by antidiagonals: A(n,m) is the number of ways to place non-adjacent counters on the black squares of a 2n-1 X 2m-1 checker board.
  * @author Sean A. Irvine
  */
-public class A331406 implements Sequence {
+public class A331406 extends Sequence0 {
 
   // After Andrew Howroyd
 

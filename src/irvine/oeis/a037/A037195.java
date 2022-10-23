@@ -1,14 +1,14 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.English;
 
 /**
  * A037195 Number of consonants in the American English name of n.
  * @author Sean A. Irvine
  */
-public class A037195 implements Sequence {
+public class A037195 extends Sequence0 {
 
   private static final String VOWELS = "aeiouy";
   private int mN = -1;

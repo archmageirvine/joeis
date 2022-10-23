@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057874 Sets of three composites in bidirectional 'sum of prime factors' progression/retrogression.
  * @author Sean A. Irvine
  */
-public class A057874 implements Sequence {
+public class A057874 extends Sequence0 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private long mN = 94;

@@ -1,14 +1,14 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A000018 Number of positive integers &lt;= 2^n of form x^2 + 16*y^2.
  * @author Sean A. Irvine
  */
-public class A000018 implements Sequence {
+public class A000018 extends Sequence0 {
 
   private int mN = -1;
   private final long mA, mB;

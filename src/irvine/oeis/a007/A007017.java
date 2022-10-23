@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007017 Number of motifs in triangular window of side n.
  * @author Sean A. Irvine
  */
-public class A007017 implements Sequence {
+public class A007017 extends Sequence0 {
 
   private Z[] mCounts = {Z.ONE, Z.ONE};
   private int mN = 0;

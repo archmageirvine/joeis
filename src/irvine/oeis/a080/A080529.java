@@ -3,12 +3,13 @@ package irvine.oeis.a080;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A080529 Number of nucleons in longest known radioactive decay series ending with Lead 206 ("uranium series"), reversed.
  * @author Georg Fischer
  */
-public class A080529 implements Sequence {
+public class A080529 extends Sequence0 {
 
   final Sequence mA080533 = new A080533();
   final Sequence mA080537 = new A080537();

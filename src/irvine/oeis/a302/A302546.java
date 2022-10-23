@@ -3,13 +3,14 @@ package irvine.oeis.a302;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001315;
 
 /**
  * A302546 a(n) = Sum_{k = 1...n} 2^binomial(n, k).
  * @author Georg Fischer
  */
-public class A302546 implements Sequence {
+public class A302546 extends Sequence0 {
 
   final Sequence mA001315 = new A001315();
   @Override

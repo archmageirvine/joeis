@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055960 n + reversal of base 11 digits of n (written in base 10).
  * @author Georg Fischer
  */
-public class A055960 implements Sequence {
+public class A055960 extends Sequence0 {
 
   protected Z mN;
   protected int mBase;

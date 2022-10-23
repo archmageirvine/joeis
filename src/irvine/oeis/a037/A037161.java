@@ -5,13 +5,13 @@ import java.util.TreeSet;
 import irvine.math.LongUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A037161 Well-order the rational numbers; take numerators.
  * @author Sean A. Irvine
  */
-public class A037161 implements Sequence {
+public class A037161 extends Sequence0 {
 
   private final TreeSet<Q> mA = new TreeSet<>();
   private long mN = 0;

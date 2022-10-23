@@ -3,13 +3,14 @@ package irvine.oeis.a155;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000079;
 import irvine.oeis.a062.A062206;
 /**
  * A155957 a(n) = (2*n^2)^n.
  * @author Georg Fischer
  */
-public class A155957 implements Sequence {
+public class A155957 extends Sequence0 {
 
   private final Sequence mA000079 = new A000079();
   private final Sequence mA062206 = new A062206();

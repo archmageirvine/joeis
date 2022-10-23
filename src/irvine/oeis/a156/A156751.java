@@ -5,14 +5,14 @@ package irvine.oeis.a156;
 import irvine.math.polynomial.EulerPolynomials;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A156751 Numerator of Euler(n, 3/20).
  * @author Georg Fischer
  */
-public class A156751 implements Sequence {
+public class A156751 extends Sequence0 {
 
   private int mN = -1;
   private final Q mFract = new Q(3, 20);

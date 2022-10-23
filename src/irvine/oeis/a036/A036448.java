@@ -1,14 +1,14 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.English;
 
 /**
  * A036448 Smallest positive number containing n e's when spelled out in US English.
  * @author Sean A. Irvine
  */
-public class A036448 implements Sequence {
+public class A036448 extends Sequence0 {
 
   private int mN = -1;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000377 Expansion of f(-q^3) * f(-q^8) * chi(-q^12) / chi(-q) in powers of q where chi(), f() are Ramanujan theta functions.
  * @author Sean A. Irvine
  */
-public class A000377 implements Sequence {
+public class A000377 extends Sequence0 {
 
   long mN = -1;
 

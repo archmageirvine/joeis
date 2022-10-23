@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A037214 Expansion of ( Sum_{k&gt;=0} k*q^(k^2) )^2.
  * @author Sean A. Irvine
  */
-public class A037214 implements Sequence {
+public class A037214 extends Sequence0 {
 
   private long mN = -1;
 

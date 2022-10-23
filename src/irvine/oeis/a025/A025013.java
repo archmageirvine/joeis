@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025013 Central octonomial coefficients: largest coefficient of (1+x+...+x^7)^n.
  * @author Sean A. Irvine
  */
-public class A025013 implements Sequence {
+public class A025013 extends Sequence0 {
 
   private long mN = -1;
 

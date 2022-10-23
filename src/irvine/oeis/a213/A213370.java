@@ -3,12 +3,13 @@ package irvine.oeis.a213;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a048.A048735;
 /**
  * A213370 a(n) = n AND 2*n, where AND is the bitwise AND operator.
  * @author Georg Fischer
  */
-public class A213370 implements Sequence {
+public class A213370 extends Sequence0 {
 
   private final Sequence mA048735 = new A048735();
   @Override

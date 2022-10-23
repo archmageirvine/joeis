@@ -1,13 +1,13 @@
 package irvine.oeis.a031;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A031972 a(n) = Sum_{k=1..n} n^k.
  * @author Sean A. Irvine
  */
-public class A031972 implements Sequence {
+public class A031972 extends Sequence0 {
 
   private int mN = -1;
 

@@ -1,14 +1,14 @@
 package irvine.oeis.a130;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.English;
 
 /**
  * A130677 Write the English name of 2^n and replace each letter with its rank in the alphabet.
  * @author Sean A. Irvine
  */
-public class A130677 implements Sequence {
+public class A130677 extends Sequence0 {
 
   private int mN = 1;
   private String mS = "";

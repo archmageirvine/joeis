@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003422 Left factorials: !n = Sum_{k=0..n-1} k!.
  * @author Sean A. Irvine
  */
-public class A003422 implements Sequence {
+public class A003422 extends Sequence0 {
 
   protected long mN = -2;
   private Z mF = Z.ONE;

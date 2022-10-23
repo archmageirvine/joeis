@@ -3,13 +3,14 @@ package irvine.oeis.a211;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006128;
 
 /**
  * A211978 Total number of parts in all partitions of n plus the sum of largest parts of all partitions of n.
  * @author Georg Fischer
  */
-public class A211978 implements Sequence {
+public class A211978 extends Sequence0 {
 
   final Sequence mA006128 = new A006128();
   @Override

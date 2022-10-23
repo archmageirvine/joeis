@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006943 Rows of Sierpi\u0144ski's triangle (Pascal's triangle mod 2).
  * @author Sean A. Irvine
  */
-public class A006943 implements Sequence {
+public class A006943 extends Sequence0 {
 
   private int mN = -1;
 

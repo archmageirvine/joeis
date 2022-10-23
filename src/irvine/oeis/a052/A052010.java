@@ -1,13 +1,13 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052010 Smallest k such that the sum of the digits of n each raised to k-th power is greater than n, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
-public class A052010 implements Sequence {
+public class A052010 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

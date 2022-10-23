@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000064 Partial sums of (unordered) ways of making change for n cents using coins of 1, 2, 5, 10 cents.
  * @author Sean A. Irvine
  */
-public class A000064 implements Sequence {
+public class A000064 extends Sequence0 {
 
   final Z[] mA = new Z[19];
   int mHead = 0;

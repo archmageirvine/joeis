@@ -3,13 +3,14 @@ package irvine.oeis.a165;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001477;
 import irvine.oeis.a048.A048761;
 /**
  * A165776 n + (least square &gt; n), i.e., n + A048761(n+1).
  * @author Georg Fischer
  */
-public class A165776 implements Sequence {
+public class A165776 extends Sequence0 {
 
   private final Sequence mA001477 = new A001477();
   private final Sequence mA048761 = new A048761();

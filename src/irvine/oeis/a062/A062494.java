@@ -4,13 +4,13 @@ package irvine.oeis.a062;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A062494 Integer part of Product_{j=1..n-1} (n-j)^log(j).
  * @author Georg Fischer
  */
-public class A062494 implements Sequence {
+public class A062494 extends Sequence0 {
 
   private int mN = -1;
 

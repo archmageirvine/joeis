@@ -1,14 +1,14 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicByteArray;
 
 /**
  * A001468 There are a(n) 2's between successive 1's.
  * @author Sean A. Irvine
  */
-public class A001468 implements Sequence {
+public class A001468 extends Sequence0 {
 
   private final DynamicByteArray mSeq = new DynamicByteArray();
   {

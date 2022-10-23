@@ -3,13 +3,13 @@ package irvine.oeis.a018;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018034 Powers of cube root of 20 rounded to nearest integer.
  * @author Sean A. Irvine
  */
-public class A018034 implements Sequence {
+public class A018034 extends Sequence0 {
 
   private Z mN = null;
 

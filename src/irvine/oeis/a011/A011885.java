@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011885 [ n(n-1)/32 ].
  * @author Sean A. Irvine
  */
-public class A011885 implements Sequence {
+public class A011885 extends Sequence0 {
 
   private long mN = -1;
 

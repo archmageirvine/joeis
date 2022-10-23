@@ -3,13 +3,13 @@ package irvine.oeis.a025;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025539 a(n) = (Sum{1/C(i,j)})*LCM{C(i,j)}, 0 &lt;= j &lt;= i &lt;= n.
  * @author Sean A. Irvine
  */
-public class A025539 implements Sequence {
+public class A025539 extends Sequence0 {
 
   private long mN = -1;
   private Z mL = Z.ONE;

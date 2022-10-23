@@ -1,14 +1,14 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A059261 Hilbert's Hamiltonian walk on N X N projected onto the first diagonal: M(3) (sum of the sequences A059252 and A059253).
  * @author Sean A. Irvine
  */
-public class A059261 implements Sequence {
+public class A059261 extends Sequence0 {
 
   private final DynamicIntArray mM = new DynamicIntArray();
   private int mK = -1;

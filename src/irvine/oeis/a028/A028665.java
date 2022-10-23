@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028665 Galois numbers for p=3; order of group AGL(n,3).
  * @author Sean A. Irvine
  */
-public class A028665 implements Sequence {
+public class A028665 extends Sequence0 {
 
   private int mN = start() - 1;
 

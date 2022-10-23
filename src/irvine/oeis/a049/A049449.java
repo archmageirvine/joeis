@@ -3,6 +3,7 @@ package irvine.oeis.a049;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007305;
 import irvine.oeis.a007.A007306;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007306;
  * A049449 Product of numerator and denominator of fractions in Farey tree A007305/A007306.
  * @author Georg Fischer
  */
-public class A049449 implements Sequence {
+public class A049449 extends Sequence0 {
 
   final Sequence mA007305 = new A007305();
   final Sequence mA007306 = new A007306();

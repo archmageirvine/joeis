@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049735 Array T(i,j) is the number of lattice points (x,y) in circle with radius (0,0)-to-(i,j), read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A049735 implements Sequence {
+public class A049735 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

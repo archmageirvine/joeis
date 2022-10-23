@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014390 Final 2 digits of 7^n.
  * @author Sean A. Irvine
  */
-public class A014390 implements Sequence {
+public class A014390 extends Sequence0 {
 
   private long mA = 43;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003600 Maximal number of pieces obtained by slicing a torus (or a bagel) with n cuts: (n^3 + 3*n^2 + 8*n)/6 (n &gt; 0).
  * @author Sean A. Irvine
  */
-public class A003600 implements Sequence {
+public class A003600 extends Sequence0 {
 
   private long mN = -1;
   @Override

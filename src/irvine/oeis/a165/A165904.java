@@ -3,13 +3,14 @@ package irvine.oeis.a165;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006720;
 
 /**
  * A165904 Somos-4 recurrence with a(i)=2^i for 0&lt;=i&lt;=3.
  * @author Georg Fischer
  */
-public class A165904 implements Sequence {
+public class A165904 extends Sequence0 {
 
   final Sequence mA006720 = new A006720();
   protected long mN;

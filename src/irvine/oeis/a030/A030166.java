@@ -3,14 +3,14 @@ package irvine.oeis.a030;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.Chinese;
 
 /**
  * A030166 Number of strokes in Chinese characters for n; also number of strokes in Japanese kanji characters for n.
  * @author Sean A. Irvine
  */
-public class A030166 implements Sequence {
+public class A030166 extends Sequence0 {
 
   private static final HashMap<Character, Integer> STROKES = new HashMap<>();
   static {

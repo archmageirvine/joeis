@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001604 Odd-indexed terms of A124297.
  * @author Sean A. Irvine
  */
-public class A001604 implements Sequence {
+public class A001604 extends Sequence0 {
 
   /* Compute (a+b*sqrt(5))^n as res[0] + res[1] * sqrt(5). */
   static Z[] sqrt5binomial(final long a, final long b, final int n) {

@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A275385 Number of labeled functional digraphs on n nodes with only odd sized cycles and such that every vertex is at a distance of at most 1 from a cycle.
  * E.g.f.: sqrt((1 + x*exp(x))/(1 - x*exp(x)))
  * @author Georg Fischer
  */
-public class A275385 implements Sequence {
+public class A275385 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

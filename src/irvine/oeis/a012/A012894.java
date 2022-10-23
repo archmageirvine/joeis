@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A012894 tanh(sin(x)+log(x+1))=2*x-1/2!*x^2-15/3!*x^3+42/4!*x^4+397/5!*x^5...
  * @author Sean A. Irvine
  */
-public class A012894 implements Sequence {
+public class A012894 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

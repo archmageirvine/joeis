@@ -2,13 +2,13 @@ package irvine.oeis.a102;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A102119 Iccanobirt numbers (9 of 15): a(n) = R(a(n-1) + a(n-2) + R(a(n-3))), where R is the digit reversal function A004086.
  * @author Georg Fischer
  */
-public class A102119 implements Sequence {
+public class A102119 extends Sequence0 {
 
   protected int mN = -1;
   protected Z mA = Z.ONE; // a(n-1)

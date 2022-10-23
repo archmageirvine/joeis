@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055530 The recurrence b(k) = 10*b(k-1) + k^n with b(0)=0 has b(k)/10^k converging to a(n)/9^(n+1).
  * @author Sean A. Irvine
  */
-public class A055530 implements Sequence {
+public class A055530 extends Sequence0 {
 
   private int mN = -1;
   private Z mA = Z.ONE;

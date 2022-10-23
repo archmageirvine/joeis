@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005166 a(0) = 1; a(n) = (1 + a(0)^3 + ... + a(n-1)^3)/n (not always integral!).
  * @author Sean A. Irvine
  */
-public class A005166 implements Sequence {
+public class A005166 extends Sequence0 {
 
   private long mN = -1;
   private Z mS = Z.ONE;

@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053504 Number of degree-n permutations of order dividing 24.
  * E.g.f.: exp(x + x^2/2 + x^3/3 + x^4/4 + x^6/6 + x^8/8 + x^12/12 + x^24/24)
  * @author Georg Fischer
  */
-public class A053504 implements Sequence {
+public class A053504 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

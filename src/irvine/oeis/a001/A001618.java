@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001618 Nearest integer to 2*n*log(n).
  * @author Sean A. Irvine
  */
-public class A001618 implements Sequence {
+public class A001618 extends Sequence0 {
 
   private long mN = -1;
 

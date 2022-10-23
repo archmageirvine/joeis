@@ -3,13 +3,13 @@ package irvine.oeis.a056;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056940 Number of antichains (or order ideals) in the poset 4*m*n or plane partitions with at most m rows and n columns and entries &lt;= 4.
  * @author Sean A. Irvine
  */
-public class A056940 implements Sequence {
+public class A056940 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

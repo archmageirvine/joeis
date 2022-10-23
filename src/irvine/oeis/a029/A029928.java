@@ -2,13 +2,13 @@ package irvine.oeis.a029;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A029928 Convert n from statute miles to nautical miles.
  * @author Sean A. Irvine
  */
-public class A029928 implements Sequence {
+public class A029928 extends Sequence0 {
 
   private static final Q STATUTE_MILES_TO_NAUTICAL_MILES = new Q(50292, 57875);
   private Z mN = Z.NEG_ONE;

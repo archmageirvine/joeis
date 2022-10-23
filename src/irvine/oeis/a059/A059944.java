@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059944 Denominators of Maclaurin series coefficients for 2*cos(x/sqrt(3) + arctan(-sqrt(3))) = cos(x/sqrt(3)) + sqrt(3)*sin(x/sqrt(3)).
  * @author Sean A. Irvine
  */
-public class A059944 implements Sequence {
+public class A059944 extends Sequence0 {
 
   private Z mF = Z.ONE;
   private long mN = -1;

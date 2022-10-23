@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.math.r.Constants;
 import irvine.math.r.LambertW;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002505 Nearest integer to the n-th Gram point.
  * @author Sean A. Irvine
  */
-public class A002505 implements Sequence {
+public class A002505 extends Sequence0 {
 
   private static final double INV8E = 1.0 / (8 * Math.E);
   private long mN = -1;

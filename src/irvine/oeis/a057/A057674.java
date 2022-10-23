@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057674 Primes -p+2^n with smallest p prime, arising in A057674.
  * @author Sean A. Irvine
  */
-public class A057674 implements Sequence {
+public class A057674 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mN = Z.ONE;

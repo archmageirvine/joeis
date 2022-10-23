@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030283 a(0) = 0; for n&gt;0, a(n) is the smallest number greater than a(n-1) which does not use any digit used by a(n-1).
  * @author Sean A. Irvine
  */
-public class A030283 implements Sequence {
+public class A030283 extends Sequence0 {
 
   private Z mA = null;
 

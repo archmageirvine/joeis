@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001465 Number of degree-n odd permutations of order 2.
  * @author Sean A. Irvine
  */
-public class A001465 implements Sequence {
+public class A001465 extends Sequence0 {
 
   private long mN = -1;
 

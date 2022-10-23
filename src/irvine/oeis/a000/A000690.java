@@ -8,14 +8,14 @@ import org.apfloat.Apfloat;
 import org.apfloat.ApfloatMath;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.io.IOUtils;
 
 /**
  * A000690 Landau's approximation to population of x^2 + y^2 &lt;= 2^n.
  * @author Sean A. Irvine
  */
-public class A000690 implements Sequence {
+public class A000690 extends Sequence0 {
 
   // This cheats quite a lot by using a large precomputed value for the
   // Landau-Ramanujan constant.  This value was computed by

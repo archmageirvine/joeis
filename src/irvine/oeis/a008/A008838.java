@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008838 a(n) = floor(n/8)*ceiling(n/8).
  * @author Sean A. Irvine
  */
-public class A008838 implements Sequence {
+public class A008838 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

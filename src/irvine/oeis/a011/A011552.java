@@ -2,13 +2,13 @@ package irvine.oeis.a011;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011552 Decimal expansion of phi rounded to n places.
  * @author Sean A. Irvine
  */
-public class A011552 implements Sequence {
+public class A011552 extends Sequence0 {
 
   private Z mA = null;
 

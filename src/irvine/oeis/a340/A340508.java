@@ -3,13 +3,14 @@ package irvine.oeis.a340;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a226.A226034;
 
 /**
  * A340508 Let ped(n) denote the number of partitions of n in which the even parts are distinct (A001935); a(n) = ped(9*n+7).
  * @author Georg Fischer
  */
-public class A340508 implements Sequence {
+public class A340508 extends Sequence0 {
 
   final Sequence mA226034 = new A226034();
   @Override

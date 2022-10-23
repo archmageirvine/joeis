@@ -6,13 +6,13 @@ import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008655 Theta series of direct sum of 4 copies of hexagonal lattice.
  * @author Sean A. Irvine
  */
-public class A008655 implements Sequence {
+public class A008655 extends Sequence0 {
 
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
   private Q mN = Q.NEG_ONE;

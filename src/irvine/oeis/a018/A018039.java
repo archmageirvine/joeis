@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018039 Powers of cube root of 22 rounded down.
  * @author Sean A. Irvine
  */
-public class A018039 implements Sequence {
+public class A018039 extends Sequence0 {
 
   private Z mN = null;
 

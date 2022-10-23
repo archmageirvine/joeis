@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006046 Total number of odd entries in first n rows of Pascal's triangle: a(0) = 0, a(1) = 1, a(2k) = 3*a(k), a(2k+1) = 2*a(k) + a(k+1). For n&gt;0, a(n) = Sum_{i=0..n-1} 2^wt(i).
  * @author Sean A. Irvine
  */
-public class A006046 implements Sequence {
+public class A006046 extends Sequence0 {
 
   private long mN = -1;
 

@@ -3,12 +3,13 @@ package irvine.oeis.a154;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a103.A103451;
 /**
  * A154325 Triangle with interior all 2's and borders 1.
  * @author Georg Fischer
  */
-public class A154325 implements Sequence {
+public class A154325 extends Sequence0 {
 
   private final Sequence mA103451 = new A103451();
   @Override

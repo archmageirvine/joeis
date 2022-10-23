@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025439 Number of partitions of n into 6 distinct squares.
  * @author Sean A. Irvine
  */
-public class A025439 implements Sequence {
+public class A025439 extends Sequence0 {
 
   private long mN = -1;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a109;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a106.A106610;
 
 /**
  * A109050 a(n) = lcm(n, 9).
  * @author Georg Fischer
  */
-public class A109050 implements Sequence {
+public class A109050 extends Sequence0 {
 
   final Sequence mA106610 = new A106610();
   @Override

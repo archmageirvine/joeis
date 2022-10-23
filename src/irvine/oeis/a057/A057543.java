@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057543 Maximum cycle length (orbit size) in the rotation permutation of 2n non-crossing handshakes.
  * @author Sean A. Irvine
  */
-public class A057543 implements Sequence {
+public class A057543 extends Sequence0 {
 
   private long mN = -1;
 

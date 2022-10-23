@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036989 Read binary expansion of n from the right; keep track of the excess of 1's over 0's that have been seen so far; sequence gives 1 + maximum(excess of 1's over 0's).
  * @author Sean A. Irvine
  */
-public class A036989 implements Sequence {
+public class A036989 extends Sequence0 {
 
   private long mN = -1;
 

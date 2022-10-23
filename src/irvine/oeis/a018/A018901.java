@@ -2,13 +2,13 @@ package irvine.oeis.a018;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018901 Central hexanomial coefficients: largest coefficient of (1 + x + ... + x^5)^n.
  * @author Sean A. Irvine
  */
-public class A018901 implements Sequence {
+public class A018901 extends Sequence0 {
 
   private long mN = -1;
 

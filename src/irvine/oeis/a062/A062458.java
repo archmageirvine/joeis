@@ -3,13 +3,13 @@ package irvine.oeis.a062;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A062458 Nearest integer to (n+1)^(n+1)/n^n.
  * @author Georg Fischer
  */
-public class A062458 implements Sequence {
+public class A062458 extends Sequence0 {
 
   private int mN = -1;
 

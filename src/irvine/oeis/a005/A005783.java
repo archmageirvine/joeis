@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005783 Number of 3-covers of an n-set.
  * @author Sean A. Irvine
  */
-public class A005783 implements Sequence {
+public class A005783 extends Sequence0 {
 
   private int mN = -1;
 

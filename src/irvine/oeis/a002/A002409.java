@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002409 a(n) = 2^n*C(n+6,6). Number of 6D hypercubes in an (n+6)-dimensional hypercube.
  * @author Sean A. Irvine
  */
-public class A002409 implements Sequence {
+public class A002409 extends Sequence0 {
 
   private int mN = -1;
 

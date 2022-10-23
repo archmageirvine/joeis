@@ -2,13 +2,13 @@ package irvine.oeis.a122;
 
 import irvine.math.polynomial.BarSymmetricGroupCycleIndex;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A122082 Number of unlabeled bicolored graphs on 2n nodes which are invariant when the two color classes are interchanged.
  * @author Sean A. Irvine
  */
-public class A122082 implements Sequence {
+public class A122082 extends Sequence0 {
 
   private int mN = -1;
 

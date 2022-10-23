@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A333804 (1/16) times the number of permutations p of [n+2] such that |p(i+n) - p(i)| &lt;&gt; n for i in {1,2}.
  * E.g.f.: 1/(2*x-2)-1/(8*(x-1)^3)+log(1-x)*(1-x)/2+(5*x+3)/8
  * @author Georg Fischer
  */
-public class A333804 implements Sequence {
+public class A333804 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

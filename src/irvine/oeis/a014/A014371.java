@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014371 Number of trivalent connected simple graphs with 2n nodes and girth at least 4.
  * @author Sean A. Irvine
  */
-public class A014371 implements Sequence {
+public class A014371 extends Sequence0 {
 
   private int mN = -2;
 

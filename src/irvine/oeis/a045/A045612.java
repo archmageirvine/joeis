@@ -5,13 +5,13 @@ import java.util.HashSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045612 Number of different energy states between two stacked necklaces, each of n positive and n negative charges.
  * @author Sean A. Irvine
  */
-public class A045612 implements Sequence {
+public class A045612 extends Sequence0 {
 
   private int mN = -1;
 

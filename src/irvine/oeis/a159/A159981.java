@@ -3,13 +3,14 @@ package irvine.oeis.a159;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000108;
 
 /**
  * A159981 Catalan numbers read modulo 4.
  * @author Georg Fischer
  */
-public class A159981 implements Sequence {
+public class A159981 extends Sequence0 {
 
   final Sequence mA000108 = new A000108();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a337;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A337770 a(0)=1; a(n) is the leading digit of a(n-1) multiplied by n concatenated with the remaining digits of a(n-1).
  * @author Georg Fischer
  */
-public class A337770 implements Sequence {
+public class A337770 extends Sequence0 {
 
   private int mN = -1;
   private Z mA = Z.ONE;

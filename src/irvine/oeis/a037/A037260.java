@@ -5,13 +5,13 @@ import java.util.List;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A037260 a()=A037260 and its first [ A037261 ], 2nd [ A037262 ] and 3rd [ A037263 ] differences together include every number at most once and are monotonic and minimal.
  * @author Sean A. Irvine
  */
-public class A037260 implements Sequence {
+public class A037260 extends Sequence0 {
 
   private final TreeSet<Z> mSeen = new TreeSet<>();
   private final List<Z> mA0 = new ArrayList<>();

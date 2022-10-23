@@ -3,6 +3,7 @@ package irvine.oeis.a080;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002530;
 import irvine.oeis.a090.A090932;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a090.A090932;
  * A080599 Expansion of e.g.f.: 2/(2-2*x-x^2).
  * @author Georg Fischer
  */
-public class A080599 implements Sequence {
+public class A080599 extends Sequence0 {
 
   final Sequence mA002530 = new A002530();
   final Sequence mA090932 = new A090932();

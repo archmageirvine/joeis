@@ -3,13 +3,14 @@ package irvine.oeis.a330;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000700;
 
 /**
  * A330373 Sum of all parts of all self-conjugate partitions of n.
  * @author Georg Fischer
  */
-public class A330373 implements Sequence {
+public class A330373 extends Sequence0 {
 
   final Sequence mA000700 = new A000700();
   protected long mN;

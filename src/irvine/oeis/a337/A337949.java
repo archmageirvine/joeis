@@ -1,13 +1,13 @@
 package irvine.oeis.a337;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A337949 a(n) = 2^(n*(n-1)/2) + 2^(n*(n+1)/2) for n &gt; 0, with a(0) = 1.
  * @author Georg Fischer
  */
-public class A337949 implements Sequence {
+public class A337949 extends Sequence0 {
 
   private int mN;
   private Z mBase;

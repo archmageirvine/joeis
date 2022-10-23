@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A024486 a(n) = (1/(2n+1))*Multinomial(3n; n,n,n).
  * @author Sean A. Irvine
  */
-public class A024486 implements Sequence {
+public class A024486 extends Sequence0 {
 
   private int mN = -1;
 

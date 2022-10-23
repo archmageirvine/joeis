@@ -3,14 +3,14 @@ package irvine.oeis.a081;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A081603 Number of 2's in ternary representation of n.
  * @author Georg Fischer
  */
-public class A081603 implements Sequence {
+public class A081603 extends Sequence0 {
 
   protected int mN = -1;
   

@@ -3,13 +3,13 @@ package irvine.oeis.a027;
 import irvine.math.q.Q;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027643 Numerators of poly-Bernoulli numbers B_n^(k) with k=2.
  * @author Sean A. Irvine
  */
-public class A027643 implements Sequence {
+public class A027643 extends Sequence0 {
 
   private long mN = -1;
 

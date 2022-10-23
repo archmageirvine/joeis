@@ -3,13 +3,14 @@ package irvine.oeis.a118;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007953;
 
 /**
  * A118880 a(n) is the cube of the sum of digits of n.
  * @author Georg Fischer
  */
-public class A118880 implements Sequence {
+public class A118880 extends Sequence0 {
 
   final Sequence mA007953 = new A007953();
   @Override

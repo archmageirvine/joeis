@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053591 Closed 3-dimensional ball numbers (version 1): a(n)= number of integer points (i,j,k) contained in a closed ball of diameter n, centered at (0,0,0).
  * @author Sean A. Irvine
  */
-public class A053591 implements Sequence {
+public class A053591 extends Sequence0 {
 
   private long mN = -1;
 

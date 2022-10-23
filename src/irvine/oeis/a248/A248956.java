@@ -3,13 +3,14 @@ package irvine.oeis.a248;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a036.A036469;
 
 /**
  * A248956 Number of polynomials a_k*x^k + ... + a_1*x + a_0 with k &gt; 0, integer coefficients and only non-multiple positive integer roots and a_0 = p^n (p is a prime).
  * @author Georg Fischer
  */
-public class A248956 implements Sequence {
+public class A248956 extends Sequence0 {
 
   final Sequence mA036469 = new A036469();
   @Override

@@ -3,6 +3,7 @@ package irvine.oeis.a175;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a011.A011371;
 import irvine.oeis.a022.A022559;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a022.A022559;
  * A175417 Exponent of 2 minus sum of all other exponents, in the prime power factorization of n!.
  * @author Georg Fischer
  */
-public class A175417 implements Sequence {
+public class A175417 extends Sequence0 {
 
   final Sequence mA011371 = new A011371();
   final Sequence mA022559 = new A022559();

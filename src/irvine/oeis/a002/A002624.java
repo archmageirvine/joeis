@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002624 Expansion of (1-x)^(-3) * (1-x^2)^(-2).
  * @author Sean A. Irvine
  */
-public class A002624 implements Sequence {
+public class A002624 extends Sequence0 {
 
   private Z mN = Z.ZERO;
 

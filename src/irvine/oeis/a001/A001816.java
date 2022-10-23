@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001816 Coefficients of x^n in Hermite polynomial H_{n+4}.
  * @author Sean A. Irvine
  */
-public class A001816 implements Sequence {
+public class A001816 extends Sequence0 {
 
   private long mN = 3;
   private Z mA = Z.valueOf(12);

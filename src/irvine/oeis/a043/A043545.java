@@ -1,13 +1,13 @@
 package irvine.oeis.a043;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A043545 (Maximal base-2 digit of n) - (minimal base-2 digit of n).
  * @author Sean A. Irvine
  */
-public class A043545 implements Sequence {
+public class A043545 extends Sequence0 {
 
   private int mN = -1;
   private long mM = 0;

@@ -4,13 +4,13 @@ import java.util.Comparator;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A039988 k th digit of a(n) is the number of different digits within 1 of k (not including k).
  * @author Sean A. Irvine
  */
-public class A039988 implements Sequence {
+public class A039988 extends Sequence0 {
 
   private final TreeSet<String> mA = new TreeSet<>(Comparator.comparingInt(String::length).thenComparing(o -> o));
   {

@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A240677 a(n) = 6*Zeta(1-n)*n*(2^n-1) - Zeta(-n)*(n+1)*(2^(n+2)-2), for n = 0 the limit is understood.
  * E.g.f.: -2*exp(x)*(2*x+exp(x)*(3*x-1)-1)/(exp(x)+1)^2
  * @author Georg Fischer
  */
-public class A240677 implements Sequence {
+public class A240677 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

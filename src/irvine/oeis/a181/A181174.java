@@ -3,6 +3,7 @@ package irvine.oeis.a181;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000217;
 import irvine.oeis.a001.A001045;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001045;
  * A181174 The "Row2" sums of the powers-of-2 triangle A000079.
  * @author Georg Fischer
  */
-public class A181174 implements Sequence {
+public class A181174 extends Sequence0 {
 
   final Sequence mA000217 = new A000217();
   final Sequence mA001045 = new A001045();

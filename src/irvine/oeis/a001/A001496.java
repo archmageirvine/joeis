@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001496 Number of 4 X 4 matrices with nonnegative integer entries and row and column sums equal to n.
  * @author Sean A. Irvine
  */
-public class A001496 implements Sequence {
+public class A001496 extends Sequence0 {
 
   private long mN = 2;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027388 Write digits for n, count endpoints (version 3).
  * @author Sean A. Irvine
  */
-public class A027388 implements Sequence {
+public class A027388 extends Sequence0 {
 
   private static final int[] ENDPOINTS = {0, 2, 2, 2, 2, 2, 1, 4, 0, 1};
   private long mN = -1;

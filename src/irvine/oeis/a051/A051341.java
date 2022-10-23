@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051341 A simple 2-dimensional array, read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A051341 implements Sequence {
+public class A051341 extends Sequence0 {
 
   // Example 5.2 in A. V. Mikhalev and A. A. Nechaev
 

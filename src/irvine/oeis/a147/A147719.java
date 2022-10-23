@@ -3,13 +3,14 @@ package irvine.oeis.a147;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a141.A141479;
 
 /**
  * A147719 A141479(n+1)/3.
  * @author Georg Fischer
  */
-public class A147719 implements Sequence {
+public class A147719 extends Sequence0 {
 
   final Sequence mA141479 = new A141479();
   /** Construct the sequence. */

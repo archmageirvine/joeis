@@ -6,13 +6,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051706 Number of different tennis scores after n points have been played.
  * @author Sean A. Irvine
  */
-public class A051706 implements Sequence {
+public class A051706 extends Sequence0 {
 
   // See https://en.wikipedia.org/wiki/Tennis_scoring_system
 

@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000846 a(n) = C(3n,n) - C(2n,n).
  * @author Sean A. Irvine
  */
-public class A000846 implements Sequence {
+public class A000846 extends Sequence0 {
 
   private int mN = -1;
   @Override

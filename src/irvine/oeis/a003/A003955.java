@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003955 a(n) = (2*n + 4) * (1*3*5*...*(2*n+1))^2.
  * @author Sean A. Irvine
  */
-public class A003955 implements Sequence {
+public class A003955 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private long mN = -1;

@@ -1,13 +1,13 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020648 Least positive integer k for which 9^n divides k!.
  * @author Sean A. Irvine
  */
-public class A020648 implements Sequence {
+public class A020648 extends Sequence0 {
 
   private Z mF = Z.ONE;
   private long mN = -1;

@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030530 n appears A070939(n) times.
  * @author Sean A. Irvine
  */
-public class A030530 implements Sequence {
+public class A030530 extends Sequence0 {
 
   private Z mN = Z.ZERO;
   private long mCount = 1;

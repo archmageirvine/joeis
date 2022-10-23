@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053484 Numerators in expansion of exp(2x)/(1-x).
  * @author Sean A. Irvine
  */
-public class A053484 implements Sequence {
+public class A053484 extends Sequence0 {
 
   private Q mA = Q.ZERO;
   private Z mF = Z.ONE;

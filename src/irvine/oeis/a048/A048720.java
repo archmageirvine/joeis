@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048720 Multiplication table {0..i} X {0..j} of binary polynomials (polynomials over GF(2)) interpreted as binary vectors, then written in base 10; or, binary multiplication without carries.
  * @author Sean A. Irvine
  */
-public class A048720 implements Sequence {
+public class A048720 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

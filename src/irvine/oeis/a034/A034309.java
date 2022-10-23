@@ -4,13 +4,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034309 Decimal part of a(n)^(1/3) starts with reversal of its integer part: first term of runs.
  * @author Sean A. Irvine
  */
-public class A034309 implements Sequence {
+public class A034309 extends Sequence0 {
 
   private boolean mStartOfRun = true;
   private Z mN = Z.TEN;

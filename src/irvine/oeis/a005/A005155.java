@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005155 Number of degree sequences of n-node graphs.
  * @author Sean A. Irvine
  */
-public class A005155 implements Sequence {
+public class A005155 extends Sequence0 {
 
   // After Michael Somos
 

@@ -2,14 +2,14 @@ package irvine.oeis.a114;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A114478 Triangle read by rows; n-th row begins with n and contains n nonprimes greater than n and not already used.
  * @author Sean A. Irvine
  */
-public class A114478 implements Sequence {
+public class A114478 extends Sequence0 {
 
   private final DynamicLongArray mUsed = new DynamicLongArray();
   private final Fast mPrime = new Fast();

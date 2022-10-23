@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018023 Powers of cube root of 16 rounded up.
  * @author Sean A. Irvine
  */
-public class A018023 implements Sequence {
+public class A018023 extends Sequence0 {
 
   private Z mN = null;
 

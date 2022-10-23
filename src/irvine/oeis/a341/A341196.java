@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A341196 a(n) = Sum_{k=0..n} k^4 * (n-k)! * binomial(n,k)^2.
  * E.g.f.: x*(1+4*x-5*x^2+x^3)*exp(x/(1-x))/(1-x)^5
  * @author Georg Fischer
  */
-public class A341196 implements Sequence {
+public class A341196 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

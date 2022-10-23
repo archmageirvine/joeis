@@ -1,13 +1,13 @@
 package irvine.oeis.a013;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013999 From applying the "rational mean" to the number e.
  * @author Sean A. Irvine
  */
-public class A013999 implements Sequence {
+public class A013999 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

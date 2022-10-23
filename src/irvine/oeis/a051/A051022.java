@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051022 Interpolate 0's between each pair of digits of n.
  * @author Sean A. Irvine
  */
-public class A051022 implements Sequence {
+public class A051022 extends Sequence0 {
 
   private long mN = -1;
 

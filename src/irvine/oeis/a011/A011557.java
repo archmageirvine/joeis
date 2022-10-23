@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011557 Powers of 10: a(n) = 10^n.
  * @author Sean A. Irvine
  */
-public class A011557 implements Sequence {
+public class A011557 extends Sequence0 {
 
   private Z mA = null;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000495 Nearest integer to sinh(n).
  * @author Sean A. Irvine
  */
-public class A000495 implements Sequence {
+public class A000495 extends Sequence0 {
 
   private long mN = -1;
 

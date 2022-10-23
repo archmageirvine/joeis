@@ -3,13 +3,13 @@ package irvine.oeis.a057;
 import irvine.math.LongUtils;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057082 The next smallest pair of numbers is taken so that a(2n-1)/a(2n) converges to Pi.
  * @author Sean A. Irvine
  */
-public class A057082 implements Sequence {
+public class A057082 extends Sequence0 {
 
   private static final CR PI1 = CR.PI.add(CR.ONE);
   private long mN = 1;

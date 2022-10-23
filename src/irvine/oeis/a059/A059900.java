@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059900 Successively interleaved alternate bits in binary expansion of n gives vector of exponents in prime factorization of a(n).
  * @author Sean A. Irvine
  */
-public class A059900 implements Sequence {
+public class A059900 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

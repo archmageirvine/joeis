@@ -3,13 +3,14 @@ package irvine.oeis.a240;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a057.A057977;
 
 /**
  * A240558 a(n) = 2^n*n!/((floor(n/2)+1)*floor(n/2)!^2).
  * @author Georg Fischer
  */
-public class A240558 implements Sequence {
+public class A240558 extends Sequence0 {
 
   final Sequence mA057977 = new A057977();
   protected long mN;

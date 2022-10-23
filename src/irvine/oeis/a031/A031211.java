@@ -1,13 +1,13 @@
 package irvine.oeis.a031;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A031211 Periods of sum of 8th powers of digits iterated until the sequence becomes periodic.
  * @author Sean A. Irvine
  */
-public class A031211 implements Sequence {
+public class A031211 extends Sequence0 {
 
   private long mN = -1;
 

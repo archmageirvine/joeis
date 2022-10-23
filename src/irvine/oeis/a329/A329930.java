@@ -3,6 +3,7 @@ package irvine.oeis.a329;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000142;
 import irvine.oeis.a000.A000254;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000254;
  * A329930 a(n) = n!^2*(Sum_{k=1..n} 1/k).
  * @author Georg Fischer
  */
-public class A329930 implements Sequence {
+public class A329930 extends Sequence0 {
 
   final Sequence mA000142 = new A000142();
   final Sequence mA000254 = new A000254();

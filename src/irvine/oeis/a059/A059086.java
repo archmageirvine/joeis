@@ -5,13 +5,13 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Integers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059086 Number of labeled T_0-hypergraphs with n distinct hyperedges (empty hyperedge included).
  * @author Sean A. Irvine
  */
-public class A059086 implements Sequence {
+public class A059086 extends Sequence0 {
 
   private int mN = -1;
 

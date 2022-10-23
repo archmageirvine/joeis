@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054054 Smallest digit of n.
  * @author Sean A. Irvine
  */
-public class A054054 implements Sequence {
+public class A054054 extends Sequence0 {
 
   private long mN = -1;
 

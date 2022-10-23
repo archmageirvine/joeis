@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001084 a(n) = 20*a(n-1) - a(n-2) with a(0) = 0, a(1) = 3.
  * @author Sean A. Irvine
  */
-public class A001084 implements Sequence {
+public class A001084 extends Sequence0 {
 
   private Z mA = Z.valueOf(-60);
   private Z mB = Z.valueOf(-3);

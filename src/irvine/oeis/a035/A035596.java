@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035596 Number of points of L1 norm 2n in Barnes-Wall lattice BW_16.
  * @author Sean A. Irvine
  */
-public class A035596 implements Sequence {
+public class A035596 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> NUM1 = RING.add(RING.add(RING.pow(RING.onePlusXToTheN(2), 16),

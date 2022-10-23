@@ -3,14 +3,14 @@ package irvine.oeis.a097;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A097660 Number of zeros in decimal representation of 1001^n.
  * @author Georg Fischer
  */
-public class A097660 implements Sequence {
+public class A097660 extends Sequence0 {
 
   protected int mN = -1;
   

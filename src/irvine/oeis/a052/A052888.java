@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052888 E.g.f. is series reversion of log(1+x)*exp(-x).
  * @author Sean A. Irvine
  */
-public class A052888 implements Sequence {
+public class A052888 extends Sequence0 {
 
   private int mN = -1;
 

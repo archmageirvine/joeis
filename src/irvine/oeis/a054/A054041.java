@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054041 Sum of a(n) terms of 1/k^(1/3) first exceeds n.
  * @author Sean A. Irvine
  */
-public class A054041 implements Sequence {
+public class A054041 extends Sequence0 {
 
   private long mN = -1;
   private CR mSum = CR.ONE;

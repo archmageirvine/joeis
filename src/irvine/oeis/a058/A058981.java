@@ -4,13 +4,13 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058981 Improperly Reduced Fibonacci Sequence: begin with a(0) = 0, a(1) = 1 and a(n) = [ a(n-1) + a(n-2) ] / a(k). a(k) is the first (not necessarily the greatest) term including 1 which divides a(n-1) + a(n-2) not previously used.
  * @author Sean A. Irvine
  */
-public class A058981 implements Sequence {
+public class A058981 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001297 Stirling numbers of the second kind S(n+3, n).
  * @author Sean A. Irvine
  */
-public class A001297 implements Sequence {
+public class A001297 extends Sequence0 {
 
   private long mN = -1;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a304;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a032.A032020;
 
 /**
  * A304797 Expansion of x * (d/dx) Sum_{k&gt;=0} k!*x^(k*(k+1)/2)/Product_{j=1..k} (1 - x^j).
  * @author Georg Fischer
  */
-public class A304797 implements Sequence {
+public class A304797 extends Sequence0 {
 
   final Sequence mA032020 = new A032020();
   protected long mN;

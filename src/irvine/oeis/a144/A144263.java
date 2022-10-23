@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A144263 Number of ways of placing n labeled balls into n unlabeled (but7-colored) boxes.
  * E.g.f.: exp(7*(exp(x)-1))
  * @author Georg Fischer
  */
-public class A144263 implements Sequence {
+public class A144263 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

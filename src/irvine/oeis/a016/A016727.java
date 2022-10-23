@@ -2,13 +2,13 @@ package irvine.oeis.a016;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A016727 Number of inequivalent solutions to x^2+y^2+z^2 = n^2.
  * @author Sean A. Irvine
  */
-public class A016727 implements Sequence {
+public class A016727 extends Sequence0 {
 
   // Cf. A000164.
 

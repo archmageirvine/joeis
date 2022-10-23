@@ -3,13 +3,14 @@ package irvine.oeis.a172;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a027.A027642;
 
 /**
  * A172282 Squares of Bernoulli number denominators A027642.
  * @author Georg Fischer
  */
-public class A172282 implements Sequence {
+public class A172282 extends Sequence0 {
 
   final Sequence mA027642 = new A027642();
   @Override

@@ -2,13 +2,14 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000959;
 
 /**
  * A057610 Smallest lucky number with a decimal expansion starting n, n-1, ..., 2, 1.
  * @author Sean A. Irvine
  */
-public class A057610 implements Sequence {
+public class A057610 extends Sequence0 {
 
   private int mN = 0;
 

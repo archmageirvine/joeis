@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051801 Product of the nonzero digits of n.
  * @author Georg Fischer
  */
-public class A051801 implements Sequence {
+public class A051801 extends Sequence0 {
 
   private int mN = -1;
   private int mBase;

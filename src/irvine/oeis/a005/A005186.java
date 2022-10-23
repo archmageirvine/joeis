@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005186 a(n) is the number of integers m which take n steps to reach 1 in '3x+1' problem.
  * @author Sean A. Irvine
  */
-public class A005186 implements Sequence {
+public class A005186 extends Sequence0 {
 
   // After T. D. Noe
 

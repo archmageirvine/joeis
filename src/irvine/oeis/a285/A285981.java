@@ -3,6 +3,7 @@ package irvine.oeis.a285;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003242;
 import irvine.oeis.a032.A032020;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a032.A032020;
  * A285981 Number of Carlitz compositions having at least two identical parts.
  * @author Georg Fischer
  */
-public class A285981 implements Sequence {
+public class A285981 extends Sequence0 {
 
   final Sequence mA003242 = new A003242();
   final Sequence mA032020 = new A032020();

@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014203 Sum {i^2+j^2+k^2}, i^2+j^2+k^2 &lt;= n.
  * @author Sean A. Irvine
  */
-public class A014203 implements Sequence {
+public class A014203 extends Sequence0 {
 
   private long mN = -1;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.math.z.Integers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059588 a(n)=Sum_{i=0..n} |stirling1(n,i)|*2^(2^i).
  * @author Sean A. Irvine
  */
-public class A059588 implements Sequence {
+public class A059588 extends Sequence0 {
 
   private int mN = -1;
 

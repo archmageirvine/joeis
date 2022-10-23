@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014484 Expansion of (1+2x)/(1-2x)^4 (E.g.f.).
  * @author Sean A. Irvine
  */
-public class A014484 implements Sequence {
+public class A014484 extends Sequence0 {
 
   private int mN = -1;
   private Z mF = Z.ONE;

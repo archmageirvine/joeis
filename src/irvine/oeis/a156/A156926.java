@@ -2,14 +2,14 @@ package irvine.oeis.a156;
 // manually 2021-06-13
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A156926 Row sums of the FP2 polynomials of A156925.
  * Recurrence: a(n) = -2*n!*a(n-1)*(-1)^n.
  * @author Georg Fischer
  */
-public class A156926 implements Sequence {
+public class A156926 extends Sequence0 {
 
   private Z mFact;
   private Z mAn;

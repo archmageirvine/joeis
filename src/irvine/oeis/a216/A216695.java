@@ -3,13 +3,14 @@ package irvine.oeis.a216;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a032.A032020;
 
 /**
  * A216695 Number of compositions (ordered partitions) of n into at least 2 distinct positive parts.
  * @author Georg Fischer
  */
-public class A216695 implements Sequence {
+public class A216695 extends Sequence0 {
 
   final Sequence mA032020 = new A032020();
   @Override

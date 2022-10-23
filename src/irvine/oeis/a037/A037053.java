@@ -1,14 +1,14 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A037053 Smallest prime containing exactly n 0's.
  * @author Sean A. Irvine
  */
-public class A037053 implements Sequence {
+public class A037053 extends Sequence0 {
 
   // Conjecture: at most 3 non-zero digits needed
 

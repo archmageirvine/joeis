@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.q.BernoulliSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001897 Denominators of cosecant numbers: -2*(2^(2*n-1)-1)*Bernoulli(2*n).
  * @author Sean A. Irvine
  */
-public class A001897 implements Sequence {
+public class A001897 extends Sequence0 {
 
   private final BernoulliSequence mB = new BernoulliSequence(0);
   private int mN = -2;

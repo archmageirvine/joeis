@@ -3,13 +3,14 @@ package irvine.oeis.a305;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a009.A009444;
 
 /**
  * A305990 E.g.f.: (1+x) / (exp(-x) - x).
  * @author Georg Fischer
  */
-public class A305990 implements Sequence {
+public class A305990 extends Sequence0 {
 
   final Sequence mA009444 = new A009444();
   protected long mN;

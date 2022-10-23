@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059204 Number of non-unimodal permutations of n items (i.e., those which do not simply go up for the first part and then down for the rest, but at some point go down then up).
  * E.g.f.: (1+x)/(2*(1-x))-exp(2*x)/2
  * @author Georg Fischer
  */
-public class A059204 implements Sequence {
+public class A059204 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

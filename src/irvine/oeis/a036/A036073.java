@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036073 Triangle of coefficients arising in calculation of A002872 and A002874 (sorting numbers).
  * @author Sean A. Irvine
  */
-public class A036073 implements Sequence {
+public class A036073 extends Sequence0 {
 
   private static final PolynomialRingField<Q> Y_RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final PolynomialRingField<Polynomial<Q>> X_RING = new PolynomialRingField<>(Y_RING);

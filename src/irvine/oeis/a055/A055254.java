@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055254 Number of odd digits in 2^n.
  * @author Georg Fischer
  */
-public class A055254 implements Sequence {
+public class A055254 extends Sequence0 {
 
   private int mN = -1;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a032;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A032139 "CFK" (necklace, size, unlabeled) transform of 2,2,2,2...
  * @author Sean A. Irvine
  */
-public class A032139 implements Sequence {
+public class A032139 extends Sequence0 {
 
   private final ArrayList<Z> mA = new ArrayList<>();
 

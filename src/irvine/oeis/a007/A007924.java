@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007924 The number n written using the greedy algorithm in the base where the values of the places are 1 and primes.
  * @author Sean A. Irvine
  */
-public class A007924 implements Sequence {
+public class A007924 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

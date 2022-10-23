@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018218 Sum(C(j)*(n-j)*4^(n-j-1),j=0..n-1), C = Catalan numbers.
  * @author Sean A. Irvine
  */
-public class A018218 implements Sequence {
+public class A018218 extends Sequence0 {
 
   private Z mA = Z.ZERO;
   private Z mB = Z.ONE;

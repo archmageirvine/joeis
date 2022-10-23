@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034894 Dropping any digit gives 0, 1 or a composite number.
  * @author Sean A. Irvine
  */
-public class A034894 implements Sequence {
+public class A034894 extends Sequence0 {
 
   private Z mN = Z.ZERO;
 

@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A178963 E.g.f.: (3+2*sqrt(3)*exp(x/2)*sin(sqrt(3)*x/2))/(exp(-x)+2*exp(x/2)*cos(sqrt(3)*x/2)).
  * @author Sean A. Irvine
  */
-public class A178963 implements Sequence {
+public class A178963 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> X_HALF = RING.monomial(Q.HALF, 1);

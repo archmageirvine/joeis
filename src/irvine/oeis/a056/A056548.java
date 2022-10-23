@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056548 a(n) = Sum_{k&gt;=1} round(n/k) where round(1/2) = 0.
  * @author Sean A. Irvine
  */
-public class A056548 implements Sequence {
+public class A056548 extends Sequence0 {
 
   private long mN = -1;
 

@@ -3,6 +3,7 @@ package irvine.oeis.a115;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000013;
 import irvine.oeis.a000.A000048;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000048;
  * A115118 Number of imprimitive (periodic) n-bead binary necklaces with beads of 2 colors where the colors may be swapped but turning over is not allowed.
  * @author Georg Fischer
  */
-public class A115118 implements Sequence {
+public class A115118 extends Sequence0 {
 
   final Sequence mA000013 = new A000013();
   final Sequence mA000048 = new A000048();

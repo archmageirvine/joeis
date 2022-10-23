@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025176 a(n) = Jacobi P-Polynomial P_n(alpha=1, beta=1, x=sqrt(2)) multiplied by 2^(n/2+floor(n/2)) and divided by n+1.
  * @author Sean A. Irvine
  */
-public class A025176 implements Sequence {
+public class A025176 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.TWO;

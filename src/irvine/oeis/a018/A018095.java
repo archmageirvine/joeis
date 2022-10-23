@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018095 Powers of fourth root of 17 rounded up.
  * @author Sean A. Irvine
  */
-public class A018095 implements Sequence {
+public class A018095 extends Sequence0 {
 
   private Z mN = null;
 

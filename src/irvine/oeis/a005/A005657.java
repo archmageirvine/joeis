@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005657 a(n) = floor( tan(n)^2 ).
  * @author Sean A. Irvine
  */
-public class A005657 implements Sequence {
+public class A005657 extends Sequence0 {
 
   private long mN = -1;
 

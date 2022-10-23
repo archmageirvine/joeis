@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045512 If decimal expansion of n is ab...d, a(n) = a^a + b^b + ... + d^d (ignoring any 0's).
  * @author Sean A. Irvine
  */
-public class A045512 implements Sequence {
+public class A045512 extends Sequence0 {
 
   private long mN = -1;
 

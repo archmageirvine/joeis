@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A050535 Number of multigraphs on infinite set of nodes with n edges.
  * @author Sean A. Irvine
  */
-public class A050535 implements Sequence {
+public class A050535 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> DEN = RING.oneMinusXToTheN(1);

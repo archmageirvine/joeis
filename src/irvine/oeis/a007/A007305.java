@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007305 Numerators of Farey (or Stern-Brocot) tree fractions.
  * @author Sean A. Irvine
  */
-public class A007305 implements Sequence {
+public class A007305 extends Sequence0 {
 
   // Stern-Brocot tree
 

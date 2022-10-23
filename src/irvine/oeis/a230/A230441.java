@@ -3,6 +3,7 @@ package irvine.oeis.a230;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 import irvine.oeis.a015.A015128;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a015.A015128;
  * A230441 Number of overpartitions of n minus the number of partitions of n.
  * @author Georg Fischer
  */
-public class A230441 implements Sequence {
+public class A230441 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   final Sequence mA015128 = new A015128();

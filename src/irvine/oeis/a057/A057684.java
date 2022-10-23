@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057684 Trajectory of 13 under the '13x+1' map.
  * @author Sean A. Irvine
  */
-public class A057684 implements Sequence {
+public class A057684 extends Sequence0 {
 
   private long mN = 0;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a256;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006128;
 
 /**
  * A256010 Product of n and the total number of parts in all partitions of n. Also, product of n and the sum of largest parts of all partitions of n.
  * @author Georg Fischer
  */
-public class A256010 implements Sequence {
+public class A256010 extends Sequence0 {
 
   final Sequence mA006128 = new A006128();
   protected long mN;

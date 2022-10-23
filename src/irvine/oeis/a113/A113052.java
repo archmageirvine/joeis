@@ -3,13 +3,13 @@ package irvine.oeis.a113;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A113052 Binomial(5n,n)/(4n+1) mod 5.
  * @author Georg Fischer
  */
-public class A113052 implements Sequence {
+public class A113052 extends Sequence0 {
 
   protected Z mN;
 

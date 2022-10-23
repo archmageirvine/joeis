@@ -3,13 +3,13 @@ package irvine.oeis.a036;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036155 19^n mod 191.
  * @author Georg Fischer
  */
-public class A036155 implements Sequence {
+public class A036155 extends Sequence0 {
 
   private int mN = 0;
   private final Z mBase = Z.valueOf(19);

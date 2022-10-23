@@ -1,13 +1,13 @@
 package irvine.oeis.a009;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A009947 Sequence of nonnegative integers, but insert n/2 after every even number n.
  * @author Sean A. Irvine
  */
-public class A009947 implements Sequence {
+public class A009947 extends Sequence0 {
 
   private long mN = -1;
   private boolean mHalve = false;

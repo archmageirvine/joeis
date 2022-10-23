@@ -4,13 +4,14 @@ package irvine.oeis.a268;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006068;
 
 /**
  * A268716 a(n) = 2*A006068(n); main diagonal of A268714.
  * @author Georg Fischer
  */
-public class A268716 implements Sequence {
+public class A268716 extends Sequence0 {
 
   final Sequence mA006068 = new A006068();
   @Override

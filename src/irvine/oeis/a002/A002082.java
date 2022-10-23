@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002082 2nd differences are periodic.
  * @author Sean A. Irvine
  */
-public class A002082 implements Sequence {
+public class A002082 extends Sequence0 {
 
   private static final long[] SECOND_DIFFS = {4, 2, 2, 4, 0, 6, 8, 8, 6, 0};
 

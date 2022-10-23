@@ -3,6 +3,7 @@ package irvine.oeis.a282;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 import irvine.oeis.a035.A035294;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a035.A035294;
  * A282893 The difference between the number of partitions of 2n into odd parts (A000009) and the number of partitions of 2n into even parts (A035363).
  * @author Georg Fischer
  */
-public class A282893 implements Sequence {
+public class A282893 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   final Sequence mA035294 = new A035294();

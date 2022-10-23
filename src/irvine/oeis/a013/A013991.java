@@ -1,13 +1,13 @@
 package irvine.oeis.a013;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013991 Number of edge-disjoint paths between opposite corners of a 2 X n grid.
  * @author Sean A. Irvine
  */
-public class A013991 implements Sequence {
+public class A013991 extends Sequence0 {
 
   // Works out potential extensions of existing terms, here
   // mA0, mA1, mA2 count arrangements with a single path

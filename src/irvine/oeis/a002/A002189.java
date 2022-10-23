@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002189 Pseudo-squares: a(n) = the least nonsquare positive integer which is 1 mod 8 and is a (nonzero) quadratic residue modulo the first n odd primes.
  * @author Sean A. Irvine
  */
-public class A002189 implements Sequence {
+public class A002189 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.ONE;

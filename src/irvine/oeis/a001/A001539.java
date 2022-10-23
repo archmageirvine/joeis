@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001539 a(n) = (4*n+1)*(4*n+3).
  * @author Sean A. Irvine
  */
-public class A001539 implements Sequence {
+public class A001539 extends Sequence0 {
 
   private long mN = -3;
 

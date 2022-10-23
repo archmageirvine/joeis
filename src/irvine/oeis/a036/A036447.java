@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036447 Double and reverse digits.
  * @author Sean A. Irvine
  */
-public class A036447 implements Sequence {
+public class A036447 extends Sequence0 {
 
   private Z mA = null;
 

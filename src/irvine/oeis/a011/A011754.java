@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011754 Number of ones in the binary expansion of 3^n.
  * @author Sean A. Irvine
  */
-public class A011754 implements Sequence {
+public class A011754 extends Sequence0 {
 
   private Z mA = null;
 

@@ -3,6 +3,7 @@ package irvine.oeis.a339;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002095;
 import irvine.oeis.a302.A302236;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a302.A302236;
  * A339395 Number of partitions of n into an even number of nonprime parts.
  * @author Georg Fischer
  */
-public class A339395 implements Sequence {
+public class A339395 extends Sequence0 {
 
   final Sequence mA002095 = new A002095();
   final Sequence mA302236 = new A302236();

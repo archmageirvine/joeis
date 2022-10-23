@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058518 Number of forests of B-trees of order 3 with n labeled leaves.
  * @author Sean A. Irvine
  */
-public class A058518 implements Sequence {
+public class A058518 extends Sequence0 {
 
   // Using maple can get egf for combstruct like this:
   // combstruct[gfeqns]({B=Union(Z, Subst(M, B)), M=Union(Prod(Z, Z), Prod(Z, Z, Z)), C=PowerSet(B)},unlabeled,z);

@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A292749 Number of 6-good trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A292749 implements Sequence {
+public class A292749 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C = RING.subtract(RING.exp(RING.x(), 6), RING.one());

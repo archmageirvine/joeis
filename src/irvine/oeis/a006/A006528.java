@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006528 a(n) = (n^4 + n^2 + 2*n)/4.
  * @author Sean A. Irvine
  */
-public class A006528 implements Sequence {
+public class A006528 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a067;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a039.A039622;
 
 /**
  * A067700 a(n) = 2*(n^2)!*Product_{k=0..n-1} k!/(n+k)!.
  * @author Georg Fischer
  */
-public class A067700 implements Sequence {
+public class A067700 extends Sequence0 {
 
   final Sequence mA039622 = new A039622();
   @Override

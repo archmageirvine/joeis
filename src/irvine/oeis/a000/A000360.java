@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000360 Distribution of nonempty triangles inside a fractal rep-4-tile.
  * @author Sean A. Irvine
  */
-public class A000360 implements Sequence {
+public class A000360 extends Sequence0 {
 
   private final ArrayList<Z> mA = new ArrayList<>();
   private int mN = -1;

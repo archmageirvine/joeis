@@ -2,13 +2,13 @@ package irvine.oeis.a018;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018794 Number of subsets of { 1, ..., n } containing an A.P. of length 9.
  * @author Sean A. Irvine
  */
-public class A018794 implements Sequence {
+public class A018794 extends Sequence0 {
 
   // After David Nacin
 

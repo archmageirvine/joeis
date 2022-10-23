@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053175 Catalan-Larcombe-French sequence.
  * @author Sean A. Irvine
  */
-public class A053175 implements Sequence {
+public class A053175 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.EIGHT;

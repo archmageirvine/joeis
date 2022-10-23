@@ -7,13 +7,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.HomePrimeSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A037941 Trajectory of 48 under prime factor concatenation procedure.
  * @author Sean A. Irvine
  */
-public class A037941 implements Sequence {
+public class A037941 extends Sequence0 {
 
   // This is annoying because it wants the terms broken out
   private HomePrimeSequence mHomePrimeSequence = null;

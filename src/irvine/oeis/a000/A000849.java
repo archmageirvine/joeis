@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000849 Number of primes &lt;= product of first n primes, A002110(n).
  * @author Sean A. Irvine
  */
-public class A000849 implements Sequence {
+public class A000849 extends Sequence0 {
 
   private long mP = 0;
   private long mProd = 1;

@@ -3,12 +3,13 @@ package irvine.oeis.a048;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048896 a(n) = 2^(A000120(n+1) - 1), n &gt;= 0.
  * @author Georg Fischer
  */
-public class A048896 implements Sequence {
+public class A048896 extends Sequence0 {
 
   final Sequence mA048881 = new A048881();
   @Override

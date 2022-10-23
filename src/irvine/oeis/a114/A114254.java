@@ -1,13 +1,13 @@
 package irvine.oeis.a114;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A114254 Sum of all terms on the two principal diagonals of a 2n+1 X 2n+1 square spiral.
  * @author Sean A. Irvine
  */
-public class A114254 implements Sequence {
+public class A114254 extends Sequence0 {
 
   /**
    * Compute sequence at <code>2*n+1</code>.

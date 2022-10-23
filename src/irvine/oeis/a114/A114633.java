@@ -3,13 +3,14 @@ package irvine.oeis.a114;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a087.A087208;
 
 /**
  * A114633 a(n) = (n+1)*(n+2)/2 * Sum_{k=0..floor(n/2)} n!/(n-2*k)!.
  * @author Georg Fischer
  */
-public class A114633 implements Sequence {
+public class A114633 extends Sequence0 {
 
   final Sequence mA087208 = new A087208();
   protected long mN;

@@ -2,13 +2,13 @@ package irvine.oeis.a088;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A088576 Position of the first location of n in the decimal expansion of e.
  * @author Sean A. Irvine
  */
-public class A088576 implements Sequence {
+public class A088576 extends Sequence0 {
 
   private static final CR E10 = CR.E.divide(CR.TEN);
   private int mM = 100;

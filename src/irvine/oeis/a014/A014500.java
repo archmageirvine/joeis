@@ -7,14 +7,14 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a020.A020556;
 
 /**
  * A014500 Number of graphs with unlabeled (non-isolated) nodes and n labeled edges.
  * @author Sean A. Irvine
  */
-public class A014500 implements Sequence {
+public class A014500 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> A = RING.create(Arrays.asList(Q.ZERO, Q.HALF));

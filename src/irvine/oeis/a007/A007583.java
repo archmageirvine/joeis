@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007583 a(n) = (2^(2*n + 1) + 1)/3.
  * @author Sean A. Irvine
  */
-public class A007583 implements Sequence {
+public class A007583 extends Sequence0 {
 
   private int mN = -1;
 

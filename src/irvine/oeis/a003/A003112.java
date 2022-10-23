@@ -7,13 +7,13 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.r.Constants;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003112 Permanent of Schur's matrix of order 2n+1.
  * @author Sean A. Irvine
  */
-public class A003112 implements Sequence {
+public class A003112 extends Sequence0 {
 
   // This implementation is slow and might eventually lose accuracy. It is correct for at least n <= 12
 

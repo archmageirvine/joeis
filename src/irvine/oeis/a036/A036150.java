@@ -3,13 +3,13 @@ package irvine.oeis.a036;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036150 a(n) = 2^n mod 163.
  * @author Georg Fischer
  */
-public class A036150 implements Sequence {
+public class A036150 extends Sequence0 {
 
   private int mN = 0;
   private final Z mBase = Z.TWO;

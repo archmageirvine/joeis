@@ -3,13 +3,14 @@ package irvine.oeis.a106;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000034;
 import irvine.oeis.a001.A001316;
 /**
  * A106524 Interleave A038573(n+1) and 2*A038573(n+1).
  * @author Georg Fischer
  */
-public class A106524 implements Sequence {
+public class A106524 extends Sequence0 {
 
   private final Sequence mA000034 = new A000034();
   private final Sequence mA001316 = new A001316();

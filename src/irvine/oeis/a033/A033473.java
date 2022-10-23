@@ -3,13 +3,13 @@ package irvine.oeis.a033;
 import irvine.math.polynomial.BernoulliPolynomials;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A033473 Numerator of (2*n+1)!*8*Bernoulli(2*n,1/2).
  * @author Sean A. Irvine
  */
-public class A033473 implements Sequence {
+public class A033473 extends Sequence0 {
 
   private int mN = -2;
   private Z mF = Z.EIGHT;

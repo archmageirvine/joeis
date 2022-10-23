@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001470 Number of degree-n permutations of order dividing 3.
  * @author Sean A. Irvine
  */
-public class A001470 implements Sequence {
+public class A001470 extends Sequence0 {
 
   private Z mA = Z.ZERO;
   private Z mB = Z.ZERO;

@@ -3,13 +3,14 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a053.A053830;
 
 /**
  * A054898 a(n) = Sum_{k&gt;0} floor(n/9^k).
  * @author Georg Fischer
  */
-public class A054898 implements Sequence {
+public class A054898 extends Sequence0 {
 
   final Sequence mA053830 = new A053830();
   protected long mN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036299 Binary Fibonacci (or rabbit) sequence.
  * @author Sean A. Irvine
  */
-public class A036299 implements Sequence {
+public class A036299 extends Sequence0 {
 
   private String mA = null;
   private String mB = null;

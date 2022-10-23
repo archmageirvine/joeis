@@ -1,14 +1,14 @@
 package irvine.oeis.a136;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A136690 Final nonzero digit of n! in base 3.
  * Caution, works for prime bases only!
  * @author Georg Fischer
  */
-public class A136690 implements Sequence {
+public class A136690 extends Sequence0 {
 
   private long mN;
   private long mBase;

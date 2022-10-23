@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055895 Inverse Moebius transform of powers of 2.
  * @author Sean A. Irvine
  */
-public class A055895 implements Sequence {
+public class A055895 extends Sequence0 {
 
   private int mN = -1;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a055;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055516 Largest integer k such that k | Phi(k) + d(k) + n.
  * @author Sean A. Irvine
  */
-public class A055516 implements Sequence {
+public class A055516 extends Sequence0 {
 
   // Heuristic: DO NOT USE TO EXTEND SEQUENCE
   // This will NOT detect if the heuristic has failed

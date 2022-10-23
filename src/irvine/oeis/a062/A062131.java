@@ -2,7 +2,7 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
@@ -10,7 +10,7 @@ import irvine.util.string.StringUtils;
  * Limit = 1024
  * @author Georg Fischer
  */
-public class A062131 implements Sequence {
+public class A062131 extends Sequence0 {
 
   private long mN = -1;
 

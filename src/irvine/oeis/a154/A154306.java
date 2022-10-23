@@ -1,13 +1,13 @@
 package irvine.oeis.a154;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A154306 a(n) = (n+1)^3*(3+n)!/6.
  * @author Sean A. Irvine
  */
-public class A154306 implements Sequence {
+public class A154306 extends Sequence0 {
 
   private int mN = 0;
   private Z mF = Z.TWO;

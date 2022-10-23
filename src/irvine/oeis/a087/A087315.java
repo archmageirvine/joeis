@@ -3,14 +3,14 @@ package irvine.oeis.a087;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000040;
 
 /**
  * A087315 a(n) = Product_{k=1..n} prime(k)^prime(n-k+1).
  * @author Georg Fischer
  */
-public class A087315 implements Sequence {
+public class A087315 extends Sequence0 {
 
   private int mN = -1;
   private MemorySequence mSeq = MemorySequence.cachedSequence(new A000040());

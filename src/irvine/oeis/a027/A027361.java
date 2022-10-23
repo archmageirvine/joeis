@@ -1,14 +1,14 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.UnimplementedException;
 
 /**
  * A027361 Number of "sorted permutations": permutations that can occur as the output of the sorting procedure described by Knuth.
  * @author Sean A. Irvine
  */
-public class A027361 implements Sequence {
+public class A027361 extends Sequence0 {
 
   // I cannot reproduce the terms of this sequence.  The equations in the Bousquet-Melou
   // paper appear to reproduce other sequences which can be themselves reproduced by

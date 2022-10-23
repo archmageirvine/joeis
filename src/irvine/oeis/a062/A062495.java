@@ -4,13 +4,13 @@ package irvine.oeis.a062;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A062495 Nearest integer to Product_{j=1..n-1} (n-j)^log(j).
  * @author Georg Fischer
  */
-public class A062495 implements Sequence {
+public class A062495 extends Sequence0 {
 
   private int mN = -1;
 

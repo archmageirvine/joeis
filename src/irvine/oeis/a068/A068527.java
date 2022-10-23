@@ -3,12 +3,13 @@ package irvine.oeis.a068;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a048.A048761;
 /**
  * A068527 Difference between smallest square &gt;= n and n.
  * @author Georg Fischer
  */
-public class A068527 implements Sequence {
+public class A068527 extends Sequence0 {
 
   private final Sequence mA048761 = new A048761();
   protected long mN;

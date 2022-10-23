@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056048 Number of 5-antichain covers of a labeled n-set.
  * @author Sean A. Irvine
  */
-public class A056048 implements Sequence {
+public class A056048 extends Sequence0 {
 
   private static final long[] MULTIPLIERS = {0, 24, -100, 50, 210, -210, 60, -205, 40, 240, 20, -240, 120, 150, -120, -110, 10, 20, 0, 60, 0, 0, 0, -20, 0, 0, 0, 0, 0, 0, 0, 1};
   private long mN = -1;

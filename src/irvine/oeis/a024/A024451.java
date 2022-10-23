@@ -3,13 +3,13 @@ package irvine.oeis.a024;
 import irvine.factor.prime.Fast;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A024451 a(n) is the numerator of Sum_{i = 1..n} 1/prime(i).
  * @author Sean A. Irvine
  */
-public class A024451 implements Sequence {
+public class A024451 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Q mSum = null;

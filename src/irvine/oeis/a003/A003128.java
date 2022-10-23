@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003128 Number of driving-point impedances of an n-terminal network.
  * @author Sean A. Irvine
  */
-public class A003128 implements Sequence {
+public class A003128 extends Sequence0 {
 
   private long mN = -1;
 

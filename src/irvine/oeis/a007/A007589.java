@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007589 Dodecahedral surface numbers: a(0)=0, a(1)=1, a(2)=20, thereafter 2*((3*n-7)^2 + 21).
  * @author Sean A. Irvine
  */
-public class A007589 implements Sequence {
+public class A007589 extends Sequence0 {
 
   private int mN = -1;
 

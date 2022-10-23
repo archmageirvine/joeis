@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A032745 Super-5 Numbers (5 * n^5 contains substring '55555' in its decimal expansion).
  * @author Sean A. Irvine
  */
-public class A032745 implements Sequence {
+public class A032745 extends Sequence0 {
 
   private long mN = 4601;
 

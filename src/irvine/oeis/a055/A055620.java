@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055620 Digits of an idempotent 6-adic number.
  * @author Sean A. Irvine
  */
-public class A055620 implements Sequence {
+public class A055620 extends Sequence0 {
 
   private Z mA = Z.FOUR;
   private Z mT = Z.ONE;

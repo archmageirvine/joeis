@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046445 Smallest composite with n prime factors that are distinct in length.
  * @author Sean A. Irvine
  */
-public class A046445 implements Sequence {
+public class A046445 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mT = null;

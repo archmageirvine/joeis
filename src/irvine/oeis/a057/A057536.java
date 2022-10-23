@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057536 Minimal number of coins needed to pay n Euro-cents using the Euro currency.
  * @author Sean A. Irvine
  */
-public class A057536 implements Sequence {
+public class A057536 extends Sequence0 {
 
   private static final long[] COINS = {50000, 20000, 10000, 5000, 2000, 1000, 500, 200, 100, 50, 20, 10, 5, 2, 1};
   private long mN = -1;

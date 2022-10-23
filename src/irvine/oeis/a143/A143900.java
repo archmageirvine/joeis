@@ -3,6 +3,7 @@ package irvine.oeis.a143;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001858;
 import irvine.oeis.a006.A006125;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006125;
  * A143900 Number of simple graphs on n labeled nodes containing at least one cycle subgraph, also row sums of A143899.
  * @author Georg Fischer
  */
-public class A143900 implements Sequence {
+public class A143900 extends Sequence0 {
 
   final Sequence mA001858 = new A001858();
   final Sequence mA006125 = new A006125();

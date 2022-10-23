@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A232475 Number of preferential arrangements of n labeled elements when at least k=4 elements per rank are required.
  * E.g.f.: 1/(2 + x - exp(x) + x^2/2 + x^3/6)
  * @author Georg Fischer
  */
-public class A232475 implements Sequence {
+public class A232475 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

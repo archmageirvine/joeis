@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055590 a(n) = 3^(sum of a(i) where i&lt;n).
  * @author Sean A. Irvine
  */
-public class A055590 implements Sequence {
+public class A055590 extends Sequence0 {
 
   private Z mA = null;
 

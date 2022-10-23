@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034092 Number of partitions of n into 3 distinct parts from [ 1,39 ].
  * @author Sean A. Irvine
  */
-public class A034092 implements Sequence {
+public class A034092 extends Sequence0 {
 
   private int[] mC = count();
   private int mN = 0;

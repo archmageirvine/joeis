@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054387 Numerators of coefficients of 1/2^(2n+1) in Newton's series for Pi.
  * @author Sean A. Irvine
  */
-public class A054387 implements Sequence {
+public class A054387 extends Sequence0 {
 
   private Z mF = Z.ONE;
   private int mN = -1;

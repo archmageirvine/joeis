@@ -5,13 +5,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A009838 Expansion of e.g.f.: tanh(x)/(1+x).
  * @author Sean A. Irvine
  */
-public class A009838 implements Sequence {
+public class A009838 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> DEN = RING.onePlusXToTheN(1);

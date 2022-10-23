@@ -4,14 +4,14 @@ import java.util.HashMap;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Point;
 
 /**
  * A162663 Table by antidiagonals, T(n,k) is the number of partitions of {1..(nk)} that are invariant under a permutation consisting of n k-cycles.
  * @author Sean A. Irvine
  */
-public class A162663 implements Sequence {
+public class A162663 extends Sequence0 {
 
   private final HashMap<Point, Z> mU = new HashMap<>();
 

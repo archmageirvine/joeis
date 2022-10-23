@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000179 M\u00e9nage numbers: a(0) = 1, a(1) = -1, and for n &gt;= 2, a(n) = number of permutations s of [0, ..., n-1] such that s(i) != i and s(i) != i+1 (mod n) for all i.
  * @author Sean A. Irvine
  */
-public class A000179 implements Sequence {
+public class A000179 extends Sequence0 {
 
   protected long mN = -1;
   private Z mA = Z.ZERO;

@@ -5,13 +5,13 @@ import java.util.HashSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002873 The maximal number of partitions of {1..2n} that are invariant under a permutation consisting of n 2-cycles, and which have the same number of nonempty parts.
  * @author Sean A. Irvine
  */
-public class A002873 implements Sequence {
+public class A002873 extends Sequence0 {
 
   // This supposedly easy sequence is very hard to understand.
   // The following implementation is based on the description in the example

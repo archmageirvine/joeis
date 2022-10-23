@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001996 Number of partitions of n into parts 2, 3, 4, 5, 6, 7.
  * @author Sean A. Irvine
  */
-public class A001996 implements Sequence {
+public class A001996 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> DEN = Polynomial.create(1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, 0, 0, 0, 1, 0, 2, 0, 2, 0, 1, 0, 0, 0, -2, 0, -2, 0, -2, 0, -2, 0, 0, 0, 1, 0, 2, 0, 2, 0, 1, 0, 0, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, 0, 1);

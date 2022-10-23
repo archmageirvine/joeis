@@ -1,14 +1,14 @@
 package irvine.oeis.a228;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A228474 Number of steps required to reach zero in the wrecker ball sequence starting with n: On the k-th step (k = 1, 2, 3, ...) move a distance of k in the direction of zero. If the result has occurred before, move a distance of k away from zero instead. Set a(n) = -1 if 0 is never reached.
  * @author Sean A. Irvine
  */
-public class A228474 implements Sequence {
+public class A228474 extends Sequence0 {
 
   private long mN = -1;
 

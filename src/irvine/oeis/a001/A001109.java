@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001109 a(n)^2 is a triangular number: a(n) = 6*a(n-1) - a(n-2) with a(0)=0, a(1)=1.
  * @author Sean A. Irvine
  */
-public class A001109 implements Sequence {
+public class A001109 extends Sequence0 {
 
   private Z mA = Z.valueOf(-6);
   private Z mB = Z.NEG_ONE;

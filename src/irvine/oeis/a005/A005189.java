@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005189 Number of n-term 2-sided generalized Fibonacci sequences.
  * @author Sean A. Irvine
  */
-public class A005189 implements Sequence {
+public class A005189 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

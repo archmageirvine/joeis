@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058402 Coefficient triangle of polynomials (rising powers) related to Pell number convolutions. Companion triangle is A058403.
  * @author Sean A. Irvine
  */
-public class A058402 implements Sequence {
+public class A058402 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> X1 = Polynomial.create(1, 1);

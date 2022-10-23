@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013144 arctan(tanh(x)+arctan(x))=2*x-20/3!*x^3+1128/5!*x^5-158112/7!*x^7...
  * @author Sean A. Irvine
  */
-public class A013144 implements Sequence {
+public class A013144 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

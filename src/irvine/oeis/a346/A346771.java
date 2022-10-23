@@ -3,12 +3,13 @@ package irvine.oeis.a346;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000296;
 /**
  * A346771 G.f. A(x) satisfies: A(x) = 1 + x * A(x/(1 - x)) / (1 - x^2).
  * @author Georg Fischer
  */
-public class A346771 implements Sequence {
+public class A346771 extends Sequence0 {
 
   private final Sequence mA000296 = new A000296();
   protected long mN;

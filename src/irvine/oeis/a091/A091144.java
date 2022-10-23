@@ -3,6 +3,7 @@ package irvine.oeis.a091;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002061;
 import irvine.oeis.a014.A014062;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a014.A014062;
  * A091144 a(n) = binomial(n^2, n)/(1+(n-1)*n).
  * @author Georg Fischer
  */
-public class A091144 implements Sequence {
+public class A091144 extends Sequence0 {
 
   final Sequence mA002061 = new A002061();
   final Sequence mA014062 = new A014062();

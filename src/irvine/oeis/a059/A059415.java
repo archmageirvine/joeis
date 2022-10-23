@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059415 Numerators of sequence arising from Apery's proof that zeta(3) is irrational.
  * @author Sean A. Irvine
  */
-public class A059415 implements Sequence {
+public class A059415 extends Sequence0 {
 
   private static final Z Z34 = Z.valueOf(34);
   private int mN = -2;

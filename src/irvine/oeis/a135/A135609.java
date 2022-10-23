@@ -3,6 +3,7 @@ package irvine.oeis.a135;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000312;
 import irvine.oeis.a001.A001044;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001044;
  * A135609 a(n) = (n!)^2 - n^n.
  * @author Georg Fischer
  */
-public class A135609 implements Sequence {
+public class A135609 extends Sequence0 {
 
   final Sequence mA000312 = new A000312();
   final Sequence mA001044 = new A001044();

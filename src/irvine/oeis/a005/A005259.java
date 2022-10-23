@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005259 Apery (Ap\u00e9ry) numbers: Sum_{k=0..n} (binomial(n,k)*binomial(n+k,k))^2.
  * @author Sean A. Irvine
  */
-public class A005259 implements Sequence {
+public class A005259 extends Sequence0 {
 
   private Z mA = Z.ZERO;
   private Z mB = Z.ONE;

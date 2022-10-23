@@ -3,13 +3,14 @@ package irvine.oeis.a272;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000806;
 
 /**
  * A272261 Number of one-to-one functions f from [n] to [2n] where f(x) may not be equal to x or to 2n+1-x.
  * @author Georg Fischer
  */
-public class A272261 implements Sequence {
+public class A272261 extends Sequence0 {
 
   final Sequence mA000806 = new A000806();
   protected long mN;

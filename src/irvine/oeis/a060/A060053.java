@@ -5,13 +5,13 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A060053 Number of r-bicoverings (or restricted proper 2-covers) of an n-set.
  * @author Sean A. Irvine
  */
-public class A060053 implements Sequence {
+public class A060053 extends Sequence0 {
 
   private static final Q NEG_HALF = Q.HALF.negate();
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

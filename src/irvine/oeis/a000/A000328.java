@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000328 Number of points of norm &lt;= n^2 in square lattice.
  * @author Sean A. Irvine
  */
-public class A000328 implements Sequence {
+public class A000328 extends Sequence0 {
 
   // Method due to Max Alekseyev
 

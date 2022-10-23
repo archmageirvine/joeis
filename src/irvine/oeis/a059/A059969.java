@@ -3,13 +3,14 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005589;
 
 /**
  * A059969 a(n) = n times the number of letters in n (in English).
  * @author Georg Fischer
  */
-public class A059969 implements Sequence {
+public class A059969 extends Sequence0 {
 
   final Sequence mA005589 = new A005589();
   protected long mN;

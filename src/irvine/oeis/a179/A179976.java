@@ -1,13 +1,13 @@
 package irvine.oeis.a179;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A179976 a(n) = 2^(2n+1) mod (2n+1).
  * @author Georg Fischer
  */
-public class A179976 implements Sequence {
+public class A179976 extends Sequence0 {
 
   private int mN = -1;
 

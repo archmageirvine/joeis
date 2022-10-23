@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001156;
 
 /**
  * A045842 Expansion of Product_{k&gt;=0} 1/(1 - x^(k+1))^A001156(k).
  * @author Sean A. Irvine
  */
-public class A045842 implements Sequence {
+public class A045842 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final MemorySequence mA = MemorySequence.cachedSequence(new A001156());

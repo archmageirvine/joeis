@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054739 Number of inequivalent n X n matrices over GF(3) under action of dihedral group of the square D_4.
  * @author Sean A. Irvine
  */
-public class A054739 implements Sequence {
+public class A054739 extends Sequence0 {
 
   private long mN = -1;
 

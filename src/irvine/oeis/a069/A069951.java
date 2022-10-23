@@ -1,14 +1,14 @@
 package irvine.oeis.a069;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A069951 Continued fraction expansion of the number e^(2/3).
  * If <code>k&gt;0 a(5k)=a(5k+1)=1, a(5k+2)=9k+1, a(5k+3)=36k+18, a(5k+4)=9k+7</code>.
  * @author Georg Fischer
  */
-public class A069951 implements Sequence {
+public class A069951 extends Sequence0 {
 
   private int mN = 0;
   private long mK;

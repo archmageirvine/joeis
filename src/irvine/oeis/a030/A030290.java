@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030290 a(n) is the smallest k &gt; a(n-1) such that k^3 has no digit in common with a(n-1)^3.
  * @author Sean A. Irvine
  */
-public class A030290 implements Sequence {
+public class A030290 extends Sequence0 {
 
   private Z mA = null;
   private int mN = 1;

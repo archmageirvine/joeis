@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027695 Number of primitive polynomials of degree n over GF(4).
  * @author Sean A. Irvine
  */
-public class A027695 implements Sequence {
+public class A027695 extends Sequence0 {
 
   private int mN = -1;
 

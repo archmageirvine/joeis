@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001526 a(n) = (7n+1)*(7n+6).
  * @author Sean A. Irvine
  */
-public class A001526 implements Sequence {
+public class A001526 extends Sequence0 {
 
   private Z mN = Z.valueOf(-6);
 

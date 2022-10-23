@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000902 Expansion of e.g.f. (1/2)*(exp(2*x + x^2) + 1).
  * @author Sean A. Irvine
  */
-public class A000902 implements Sequence {
+public class A000902 extends Sequence0 {
 
   private long mN = 0;
   private Z mA = null;

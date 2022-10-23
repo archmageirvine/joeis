@@ -5,13 +5,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046676 Expansion of 1 + Sum_{k&gt;=1} x^(p_1+p_2+...+p_k)/((1-x)*(1-x^2)*(1-x^3)*...*(1-x^k)) (where p_i are the primes).
  * @author Sean A. Irvine
  */
-public class A046676 implements Sequence {
+public class A046676 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final Fast mPrime = new Fast();

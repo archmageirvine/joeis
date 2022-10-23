@@ -1,13 +1,13 @@
 package irvine.oeis.a226;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A226134 The partial digital sums of n from left to right mod 10 give the digits of a(n).
  * @author Georg Fischer
  */
-public class A226134 implements Sequence {
+public class A226134 extends Sequence0 {
 
   private long mN = -1;
 

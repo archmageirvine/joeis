@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036550 a(n) = T(0,n) + T(1,n-1) + ... + T(n,0), array T given by A048471.
  * @author Sean A. Irvine
  */
-public class A036550 implements Sequence {
+public class A036550 extends Sequence0 {
 
   private int mN = 1;
   private Z mT = Z.ONE;

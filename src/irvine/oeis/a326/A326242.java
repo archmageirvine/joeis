@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A326242 Number of degree-n odd permutations of order dividing 12.
@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
-public class A326242 implements Sequence {
+public class A326242 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   static final Polynomial<Q> C1 = Polynomial.create(Q.ZERO, Q.ONE, Q.HALF, Q.ONE_THIRD, Q.ONE_QUARTER, Q.ZERO, new Q(1, 6), Q.ZERO, Q.ZERO, Q.ZERO, Q.ZERO, Q.ZERO, new Q(1, 12));

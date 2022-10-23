@@ -3,14 +3,14 @@ package irvine.oeis.a126;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A126208 Number of 6's in decimal expansion of 6^n.
  * @author Georg Fischer
  */
-public class A126208 implements Sequence {
+public class A126208 extends Sequence0 {
 
   protected int mN = -1;
   

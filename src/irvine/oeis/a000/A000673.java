@@ -9,13 +9,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000673 Number of bicentered 3-valent (or boron, or binary) trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A000673 implements Sequence, Serializable {
+public class A000673 extends Sequence0 implements Serializable {
 
   private static final CycleIndex CYCLE_INDEX = SymmetricGroup.create(2).cycleIndex();
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);

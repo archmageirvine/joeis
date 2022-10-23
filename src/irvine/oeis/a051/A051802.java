@@ -3,13 +3,13 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051802 Nonzero multiplicative digital root of n. 
  * @author Georg Fischer
  */
-public class A051802 implements Sequence {
+public class A051802 extends Sequence0 {
 
   protected long mN; // current index
   

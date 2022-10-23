@@ -4,14 +4,14 @@ import java.util.HashSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A006016 The nim value for the game of Sym with n tails and 1 head.
  * @author Sean A. Irvine
  */
-public class A006016 implements Sequence {
+public class A006016 extends Sequence0 {
 
   // Use bit 0 to track if the value has been computed
   private LongDynamicLongArray mCache = new LongDynamicLongArray();

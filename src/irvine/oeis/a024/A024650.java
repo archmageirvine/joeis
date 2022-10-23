@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A024650 n written in fractional base 9/2.
  * @author Sean A. Irvine
  */
-public class A024650 implements Sequence {
+public class A024650 extends Sequence0 {
 
   private long mN = -1;
 

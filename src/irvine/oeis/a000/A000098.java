@@ -2,13 +2,14 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicArray;
 
 /**
  * A000098 Number of partitions of n if there are two kinds of 1, two kinds of 2 and two kinds of 3.
  * @author Sean A. Irvine
  */
-public class A000098 implements Sequence {
+public class A000098 extends Sequence0 {
 
   private long mN = 0;
   private final LongDynamicArray<Z> mA97 = new LongDynamicArray<>();

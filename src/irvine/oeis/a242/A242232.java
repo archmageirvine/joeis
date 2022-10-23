@@ -1,13 +1,13 @@
 package irvine.oeis.a242;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A242232 a(n) = 2*a(n-1)^2 - 1, a(0)=6.
  * @author Georg Fischer
  */
-public class A242232 implements Sequence {
+public class A242232 extends Sequence0 {
 
   private Z mA;
 

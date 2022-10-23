@@ -3,13 +3,14 @@ package irvine.oeis.a169;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a010.A010052;
 
 /**
  * A169695 a(n) = 1 if n is a square, otherwise a(n) = 2.
  * @author Georg Fischer
  */
-public class A169695 implements Sequence {
+public class A169695 extends Sequence0 {
 
   final Sequence mA010052 = new A010052();
   @Override

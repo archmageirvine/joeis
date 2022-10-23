@@ -4,13 +4,13 @@ package irvine.oeis.a327;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A327219 a(n) = [(2n+4)r] - [(n+4)r] - [nr], where [ ] = floor and r = (1+sqrt(5))/2.
  * @author Georg Fischer
  */
-public class A327219 implements Sequence {
+public class A327219 extends Sequence0 {
   private long mN = -1;
   private static final CR R = CR.ONE.add((CR.FIVE).sqrt()).divide(CR.TWO);
 

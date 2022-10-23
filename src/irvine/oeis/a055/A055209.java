@@ -3,13 +3,14 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000178;
 
 /**
  * A055209 a(n) = Product_{i=0..n} i!^2.
  * @author Georg Fischer
  */
-public class A055209 implements Sequence {
+public class A055209 extends Sequence0 {
 
   final Sequence mA000178 = new A000178();
   @Override

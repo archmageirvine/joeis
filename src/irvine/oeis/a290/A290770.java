@@ -3,13 +3,14 @@ package irvine.oeis.a290;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002109;
 
 /**
  * A290770 a(n) = Product_{k=1..n} k^(2*k).
  * @author Georg Fischer
  */
-public class A290770 implements Sequence {
+public class A290770 extends Sequence0 {
 
   final Sequence mA002109 = new A002109();
   @Override

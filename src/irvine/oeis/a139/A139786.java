@@ -3,13 +3,13 @@ package irvine.oeis.a139;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A139786 a(n) = 7^n mod 6^n.
  * @author Georg Fischer
  */
-public class A139786 implements Sequence {
+public class A139786 extends Sequence0 {
 
   private int mN = 0;
   private final Z mBase = Z.SEVEN;

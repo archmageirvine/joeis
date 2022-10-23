@@ -4,13 +4,13 @@ import irvine.math.MemoryFunctionInt3;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A253095 Moments of 4-step random walk in 4 dimensions.
  * @author Georg Fischer
  */
-public class A253095 implements Sequence {
+public class A253095 extends Sequence0 {
 
   private int mN;
   private int mStep;

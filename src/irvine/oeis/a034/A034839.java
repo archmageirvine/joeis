@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034839 Triangular array formed by taking every other term of each row of Pascal's triangle.
  * @author Sean A. Irvine
  */
-public class A034839 implements Sequence {
+public class A034839 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

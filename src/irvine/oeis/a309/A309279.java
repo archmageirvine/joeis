@@ -5,13 +5,13 @@ import java.util.Set;
 
 import irvine.math.Cell;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A309279 Langton's ant on a truncated trihexagonal tiling: number of black cells after n moves of the ant when starting on a dodecagon.
  * @author Sean A. Irvine
  */
-public class A309279 implements Sequence {
+public class A309279 extends Sequence0 {
 
   // Truncated trihexagonal tiling
 

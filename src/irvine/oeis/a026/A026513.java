@@ -1,13 +1,13 @@
 package irvine.oeis.a026;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A026513 a(n) = t(2+3n), where t = A001285 (Thue-Morse sequence).
  * @author Sean A. Irvine
  */
-public class A026513 implements Sequence {
+public class A026513 extends Sequence0 {
 
   private long mN = -1;
 

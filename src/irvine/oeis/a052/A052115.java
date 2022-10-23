@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052115 Number of nonnegative integer pairs (i,j) with binomial(i+r,r) + binomial(j+r,r) &lt;= binomial(n+r,r), r=2.
  * @author Sean A. Irvine
  */
-public class A052115 implements Sequence {
+public class A052115 extends Sequence0 {
 
   // After Michel Marcus
 

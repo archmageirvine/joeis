@@ -2,13 +2,13 @@ package irvine.oeis.a015;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A015886 a(n) = smallest number k such that sigma(k + n) = sigma(k) + n, or -1 if no such number exists.
  * @author Sean A. Irvine
  */
-public class A015886 implements Sequence {
+public class A015886 extends Sequence0 {
 
   private long mN = -1;
 

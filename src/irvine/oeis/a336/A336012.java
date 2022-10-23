@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A336012 a(n) is the number of chains from {} to a top element in the poset of even sized subsets of {1,2,...,n} ordered by inclusion.
  * E.g.f.: 1/(2-cosh(x))*(1+x)
  * @author Georg Fischer
  */
-public class A336012 implements Sequence {
+public class A336012 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

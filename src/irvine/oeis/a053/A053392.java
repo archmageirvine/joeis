@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053392 a(n) is the concatenation of the sums of every pair of consecutive digits of n (with a(n) = 0 for 0 &lt;= n &lt;= 9).
  * @author Sean A. Irvine
  */
-public class A053392 implements Sequence {
+public class A053392 extends Sequence0 {
 
   private long mN = -1;
 

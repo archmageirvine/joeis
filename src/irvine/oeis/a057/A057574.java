@@ -1,14 +1,14 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A057574 Maximal numbers of codewords in mixed code with n binary coordinates and 1 ternary coordinate with Hamming distance 3.
  * @author Sean A. Irvine
  */
-public class A057574 implements Sequence {
+public class A057574 extends Sequence0 {
 
   private static final class Codeword {
     private final long mBinary;

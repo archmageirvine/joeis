@@ -5,13 +5,13 @@ import irvine.math.graph.GraphUtils;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A350489 Number of strongly connected oriented graphs on n unlabeled nodes.
  * @author Sean A. Irvine
  */
-public class A350489 implements Sequence {
+public class A350489 extends Sequence0 {
 
   private int mN = -1;
 

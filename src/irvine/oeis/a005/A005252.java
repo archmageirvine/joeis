@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005252 a(n) = Sum_{k=0..floor(n/4)} binomial(n-2k,2k).
  * @author Sean A. Irvine
  */
-public class A005252 implements Sequence {
+public class A005252 extends Sequence0 {
 
   private long mN = -1;
 

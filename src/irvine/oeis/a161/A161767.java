@@ -2,13 +2,13 @@ package irvine.oeis.a161;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A161767 a(0)=0, a(1)=2. For n &gt;=2, a(n) = the smallest integer &gt;= a(n-1)+2 with exactly (a(n-1)-a(n-2)) divisors.
  * @author Sean A. Irvine
  */
-public class A161767 implements Sequence {
+public class A161767 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

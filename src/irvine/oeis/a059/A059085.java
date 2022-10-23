@@ -3,13 +3,13 @@ package irvine.oeis.a059;
 import irvine.math.z.Integers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059085 Number of labeled n-node T_0-hypergraphs without multiple hyperedges (empty hyperedge included).
  * @author Sean A. Irvine
  */
-public class A059085 implements Sequence {
+public class A059085 extends Sequence0 {
 
   private int mN = -1;
 

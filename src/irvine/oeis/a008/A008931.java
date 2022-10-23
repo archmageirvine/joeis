@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008931 Expansion of (2/(1+sqrt(1-36*x)))^(1/3).
  * @author Sean A. Irvine
  */
-public class A008931 implements Sequence {
+public class A008931 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private long mN = -1;

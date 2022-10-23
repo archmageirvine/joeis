@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057836 Integers with 2 or more pairs of consecutive anti-divisors.
  * @author Sean A. Irvine
  */
-public class A057836 implements Sequence {
+public class A057836 extends Sequence0 {
 
   private long mN = 21;
 

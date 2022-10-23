@@ -2,13 +2,13 @@ package irvine.oeis.a061;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A061233 Pierce expansion for 4 - Pi.
  * @author Sean A. Irvine
  */
-public class A061233 implements Sequence {
+public class A061233 extends Sequence0 {
 
   // Alternating Engel expansion
 

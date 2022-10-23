@@ -3,14 +3,14 @@ package irvine.oeis.a126;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A126210 Number of 8's in decimal expansion of 8^n.
  * @author Georg Fischer
  */
-public class A126210 implements Sequence {
+public class A126210 extends Sequence0 {
 
   protected int mN = -1;
   

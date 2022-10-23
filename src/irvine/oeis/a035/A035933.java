@@ -1,13 +1,13 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035933 Smallest number that takes n steps to reach 0 under "k-&gt;min product of 2 numbers whose concatenation is k".
  * @author Sean A. Irvine
  */
-public class A035933 implements Sequence {
+public class A035933 extends Sequence0 {
 
   private static final Z Z100 = Z.valueOf(100);
 

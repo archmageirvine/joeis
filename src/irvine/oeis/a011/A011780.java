@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011780 Expansion of 1/(1-2*x)^3/(1-x^2)^2.
  * @author Sean A. Irvine
  */
-public class A011780 implements Sequence {
+public class A011780 extends Sequence0 {
 
   private int mN = -1;
 

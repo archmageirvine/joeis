@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025192 a(0)=1; a(n) = 2*3^(n-1) for n &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A025192 implements Sequence {
+public class A025192 extends Sequence0 {
 
   private Z mA = null;
 

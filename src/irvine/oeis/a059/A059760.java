@@ -4,14 +4,14 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059760 a(n) is the number of edges (one-dimensional faces) in the convex polytope of real n X n doubly stochastic matrices.
  * a(n) = 1/2* n! * Sum_{k=2...n} C(n,k)*(k-1)!.
  * @author Georg Fischer
  */
-public class A059760 implements Sequence {
+public class A059760 extends Sequence0 {
 
   private int mN = -1;
 

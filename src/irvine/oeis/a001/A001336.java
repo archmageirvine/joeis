@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001336 Number of n-step self-avoiding walks on f.c.c. lattice.
  * @author Sean A. Irvine
  */
-public class A001336 implements Sequence {
+public class A001336 extends Sequence0 {
 
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new SelfAvoidingWalker(Lattices.FCC));
   private final long mC = Lattices.FCC.neighbour(Lattices.FCC.origin(), 0);

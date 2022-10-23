@@ -3,13 +3,14 @@ package irvine.oeis.a143;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006352;
 
 /**
  * A143337 Expansion of K(k) * (6 * E(k) - (1 + 4*k'^2) * K(k)) / (Pi/2)^2 in powers of q where E(k), K(k) are complete elliptic integrals and q = exp(-Pi * K(k') / K(k)).
  * @author Georg Fischer
  */
-public class A143337 implements Sequence {
+public class A143337 extends Sequence0 {
 
   final Sequence mA006352 = new A006352();
   protected long mN;

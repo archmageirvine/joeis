@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000433 n written in base where place values are positive cubes.
  * @author Sean A. Irvine
  */
-public class A000433 implements Sequence {
+public class A000433 extends Sequence0 {
 
   private long mN = -1;
 

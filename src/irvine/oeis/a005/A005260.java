@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005260 a(n) = Sum_{k = 0..n} binomial(n,k)^4.
  * @author Sean A. Irvine
  */
-public class A005260 implements Sequence {
+public class A005260 extends Sequence0 {
 
   private long mN = -1;
 

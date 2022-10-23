@@ -5,13 +5,13 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.SmallDenseMatrix;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A307651 a(n) is the determinant of the Vandermonde matrix of the digits of n.
  * @author Sean A. Irvine
  */
-public class A307651 implements Sequence {
+public class A307651 extends Sequence0 {
 
   private long mN = -1;
 

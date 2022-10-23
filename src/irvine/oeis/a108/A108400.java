@@ -3,6 +3,7 @@ package irvine.oeis.a108;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000178;
 import irvine.oeis.a006.A006125;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006125;
  * A108400 a(n) = Product_{k = 0..n} (2^k * k!).
  * @author Georg Fischer
  */
-public class A108400 implements Sequence {
+public class A108400 extends Sequence0 {
 
   final Sequence mA000178 = new A000178();
   final Sequence mA006125 = new A006125();

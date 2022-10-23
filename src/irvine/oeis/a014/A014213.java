@@ -3,13 +3,13 @@ package irvine.oeis.a014;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014213 Floor((e/2)^n).
  * @author Sean A. Irvine
  */
-public class A014213 implements Sequence {
+public class A014213 extends Sequence0 {
 
   private static final CR E2 = CR.E.divide(CR.TWO);
   private long mN = -1;

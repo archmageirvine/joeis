@@ -1,14 +1,14 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A050812 Number of times n is palindromic in bases b, 2 &lt;= b &lt;= 10.
  * @author Sean A. Irvine
  */
-public class A050812 implements Sequence {
+public class A050812 extends Sequence0 {
 
   private long mN = -1;
 

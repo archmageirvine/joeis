@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053576 Smallest number whose Euler totient is divisible by 2^n.
  * @author Sean A. Irvine
  */
-public class A053576 implements Sequence {
+public class A053576 extends Sequence0 {
 
   private int mN = -1;
 

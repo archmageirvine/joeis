@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002462 Coefficients of Legendre polynomials.
  * @author Sean A. Irvine
  */
-public class A002462 implements Sequence {
+public class A002462 extends Sequence0 {
 
   // Method of Ruperto Corso
 

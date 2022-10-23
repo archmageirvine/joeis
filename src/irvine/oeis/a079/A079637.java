@@ -2,13 +2,13 @@ package irvine.oeis.a079;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A079637 Smallest prime p with audioactive "echo" of at least n, that is, the finite sequence p_0 = p, p_1 = LookAndSay(p_0), ..., p_n = LookAndSay(p_(n-1)) consists entirely of primes.
  * @author Sean A. Irvine
  */
-public class A079637 implements Sequence {
+public class A079637 extends Sequence0 {
 
   private long mN = -1;
   private long mPrev = 2;

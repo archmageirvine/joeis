@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036224 Expansion of (-1+1/(1-6*x)^6)/(36*x); related to A036084.
  * @author Sean A. Irvine
  */
-public class A036224 implements Sequence {
+public class A036224 extends Sequence0 {
 
   private int mN = -1;
   private Z mT = null;

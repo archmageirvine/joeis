@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008785 a(n) = (n+4)^n.
  * @author Sean A. Irvine
  */
-public class A008785 implements Sequence {
+public class A008785 extends Sequence0 {
 
   private int mN = -1;
 

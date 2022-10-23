@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000661 Shifts 2 places left under boustrophedon transform.
  * @author Sean A. Irvine
  */
-public class A000661 implements Sequence {
+public class A000661 extends Sequence0 {
 
   private int mN = -1;
 

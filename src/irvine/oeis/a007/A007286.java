@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007286 E.g.f.: (sin x + cos 2x) / cos 3x.
  * @author Sean A. Irvine
  */
-public class A007286 implements Sequence {
+public class A007286 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> X2 = RING.create(Arrays.asList(Q.ZERO, Q.TWO));

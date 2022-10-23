@@ -1,14 +1,14 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A037063 Smallest prime containing exactly n 5's.
  * @author Sean A. Irvine
  */
-public class A037063 implements Sequence {
+public class A037063 extends Sequence0 {
 
   private static final char[] LAST = {'1', '3', '7', '9'};
   private int mN = -1;

@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034058 Decimal part of a(n)^(1/3) starts with n (cubes excluded).
  * @author Sean A. Irvine
  */
-public class A034058 implements Sequence {
+public class A034058 extends Sequence0 {
 
   private long mN = -1;
   private long mT = 10;

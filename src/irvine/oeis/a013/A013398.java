@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013398 exp(arcsin(x)-tan(x))=1-1/3!*x^3-7/5!*x^5+10/6!*x^6-47/7!*x^7...
  * @author Sean A. Irvine
  */
-public class A013398 implements Sequence {
+public class A013398 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

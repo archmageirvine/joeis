@@ -3,13 +3,14 @@ package irvine.oeis.a097;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001951;
 
 /**
  * A097508 Differences between floor(n*sqrt(2)) and n.
  * @author Georg Fischer
  */
-public class A097508 implements Sequence {
+public class A097508 extends Sequence0 {
 
   final Sequence mA001951 = new A001951();
   protected long mN;

@@ -3,13 +3,14 @@ package irvine.oeis.a325;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a010.A010054;
 import irvine.oeis.a074.A074909;
 /**
  * A325191 Number of integer partitions of n such that the difference between the length of the minimal triangular partition containing and the maximal triangular partition contained in the Young diagram is 1.
  * @author Georg Fischer
  */
-public class A325191 implements Sequence {
+public class A325191 extends Sequence0 {
 
   private final Sequence mA010054 = new A010054();
   private final Sequence mA074909 = new A074909();

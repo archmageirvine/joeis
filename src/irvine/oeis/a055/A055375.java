@@ -6,6 +6,7 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a007.A007318;
 
@@ -13,7 +14,7 @@ import irvine.oeis.a007.A007318;
  * A055375 Euler transform of Pascal's triangle A007318.
  * @author Sean A. Irvine
  */
-public class A055375 implements Sequence {
+public class A055375 extends Sequence0 {
 
   private Polynomial<Polynomial<Z>> mGf = null;
   private int mN = -1;

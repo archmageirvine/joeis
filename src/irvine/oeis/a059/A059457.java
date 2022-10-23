@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059457 Numerator of Sum_{k=0..n} (-1)^k/(3*k+1).
  * @author Sean A. Irvine
  */
-public class A059457 implements Sequence {
+public class A059457 extends Sequence0 {
 
   private long mN = -1;
   private Q mSum = Q.ZERO;

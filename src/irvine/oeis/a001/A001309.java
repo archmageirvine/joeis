@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001309 Order of real Clifford group L_n connected with Barnes-Wall lattices in dimension 2^n.
  * @author Sean A. Irvine
  */
-public class A001309 implements Sequence {
+public class A001309 extends Sequence0 {
 
   private int mN = -1;
 

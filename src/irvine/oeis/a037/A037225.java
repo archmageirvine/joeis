@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A037225 a(n) = phi(2n+1).
  * @author Sean A. Irvine
  */
-public class A037225 implements Sequence {
+public class A037225 extends Sequence0 {
 
   protected Z mN = Z.NEG_ONE;
 

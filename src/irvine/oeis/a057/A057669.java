@@ -10,13 +10,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057669 Triangle T(n,k) of number of minimal 3-covers of an unlabeled n+3-set that cover k points of that set uniquely (k=3,..,n+3).
  * @author Sean A. Irvine
  */
-public class A057669 implements Sequence {
+public class A057669 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> TWO = RING.monomial(Q.TWO, 0);

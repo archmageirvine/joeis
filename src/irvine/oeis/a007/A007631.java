@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007631 Number of solutions to non-attacking reflecting queens problem.
  * @author Sean A. Irvine
  */
-public class A007631 implements Sequence {
+public class A007631 extends Sequence0 {
 
   private int mN = -1;
   private long mCount = 0;

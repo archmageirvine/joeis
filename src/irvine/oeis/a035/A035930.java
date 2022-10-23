@@ -1,13 +1,13 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035930 Maximal product of any two numbers whose concatenation is n.
  * @author Sean A. Irvine
  */
-public class A035930 implements Sequence {
+public class A035930 extends Sequence0 {
 
   private static final Z Z100 = Z.valueOf(100);
   private long mN = -1;

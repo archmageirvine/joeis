@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007761 (n+1) * a(n+1) - 2 (68*n^2+68*n+27) * a(n) + 6 * n * (772*n^2+35) * a(n-1) - 2 * (2*n-1)^2 * (68*n^2-68*n+27) * a(n-2) + (2*n-1)^2 * (n-1) * (2*n-3)^2 * a(n-3) = 0.
  * @author Sean A. Irvine
  */
-public class A007761 implements Sequence {
+public class A007761 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

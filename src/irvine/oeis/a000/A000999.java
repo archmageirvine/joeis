@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000999 5-adic valuation of binomial(2*n,n): largest k such that 5^k divides binomial(2*n, n).
  * @author Sean A. Irvine
  */
-public class A000999 implements Sequence {
+public class A000999 extends Sequence0 {
 
   private long mN = -1;
 

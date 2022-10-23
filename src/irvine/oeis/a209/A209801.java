@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A209801 The number of partitions of the set [n] where each element can be colored 1 or 2 avoiding the patterns 1^11^2 in the equality sense.
  * E.g.f.: exp( (1+x)*exp(x) - 1 )
  * @author Georg Fischer
  */
-public class A209801 implements Sequence {
+public class A209801 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

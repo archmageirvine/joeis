@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051054 a(n) = Sum_{k=1..n} C(n, floor(n/k)).
  * @author Sean A. Irvine
  */
-public class A051054 implements Sequence {
+public class A051054 extends Sequence0 {
 
   private long mN = -1;
 

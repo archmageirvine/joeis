@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001076 Denominators of continued fraction convergents to sqrt(5).
  * @author Sean A. Irvine
  */
-public class A001076 implements Sequence {
+public class A001076 extends Sequence0 {
 
   private Z mA = Z.valueOf(-4);
   private Z mB = Z.ONE;

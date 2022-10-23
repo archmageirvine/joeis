@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000122;
 import irvine.oeis.a010.A010054;
 
@@ -13,7 +13,7 @@ import irvine.oeis.a010.A010054;
  * A028930 Theta series of quadratic form (or lattice) with Gram matrix [ 4, 1; 1, 6 ].
  * @author Sean A. Irvine
  */
-public class A028930 implements Sequence {
+public class A028930 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final MemorySequence mPhi = MemorySequence.cachedSequence(new A000122());

@@ -3,13 +3,14 @@ package irvine.oeis.a160;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006046;
 
 /**
  * A160722 Number of "ON" cells at n-th stage in a certain 2-dimensional cellular automaton based on Sierpinski triangles (see Comments for precise definition).
  * @author Georg Fischer
  */
-public class A160722 implements Sequence {
+public class A160722 extends Sequence0 {
 
   final Sequence mA006046 = new A006046();
   protected long mN;

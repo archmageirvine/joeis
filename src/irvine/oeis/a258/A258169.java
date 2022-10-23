@@ -3,13 +3,14 @@ package irvine.oeis.a258;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001353;
 
 /**
  * A258169 a(n) = a(n-1)^4/a(n-2) with a(0)=1, a(1)=2.
  * @author Georg Fischer
  */
-public class A258169 implements Sequence {
+public class A258169 extends Sequence0 {
 
   final Sequence mA001353 = new A001353();
   @Override

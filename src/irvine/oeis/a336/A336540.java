@@ -4,13 +4,13 @@ package irvine.oeis.a336;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A336540 G.f. A(x) satisfies: A(x) = 1 + x * A(x)^4 * (2 + A(x)).
  * @author Georg Fischer
  */
-public class A336540 implements Sequence {
+public class A336540 extends Sequence0 {
 
   private int mN = -1;
 

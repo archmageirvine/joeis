@@ -3,13 +3,14 @@ package irvine.oeis.a074;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a033.A033844;
 import irvine.oeis.a051.A051439;
 /**
  * A074325 Difference between (1+2^n)-th and (2^n)-th primes. Also number of terms in blocks of A073798.
  * @author Georg Fischer
  */
-public class A074325 implements Sequence {
+public class A074325 extends Sequence0 {
 
   private final Sequence mA033844 = new A033844();
   private final Sequence mA051439 = new A051439();

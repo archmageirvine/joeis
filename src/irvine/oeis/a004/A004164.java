@@ -2,13 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004164 Sum of digits of n^3.
  * @author Sean Irvine
  */
-public class A004164 implements Sequence {
+public class A004164 extends Sequence0 {
 
   protected long mN;
   protected long mExp;

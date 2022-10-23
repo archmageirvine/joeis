@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056902 Numbers n where 36n^2+24n+7 is prime (sorted by absolute values with negatives before positives).
  * @author Sean A. Irvine
  */
-public class A056902 implements Sequence {
+public class A056902 extends Sequence0 {
 
   private boolean mFirst = true;
   private long mN = 0;

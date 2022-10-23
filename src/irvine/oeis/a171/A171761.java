@@ -3,6 +3,7 @@ package irvine.oeis.a171;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000244;
 import irvine.oeis.a006.A006156;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006156;
  * A171761 Number of ternary squareful words of length n.
  * @author Georg Fischer
  */
-public class A171761 implements Sequence {
+public class A171761 extends Sequence0 {
 
   final Sequence mA000244 = new A000244();
   final Sequence mA006156 = new A006156();

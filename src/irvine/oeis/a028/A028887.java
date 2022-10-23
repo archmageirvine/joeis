@@ -2,13 +2,13 @@ package irvine.oeis.a028;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028887 Theta series of 4-dimensional 5-modular lattice with det 25 and minimal norm 2.
  * @author Sean A. Irvine
  */
-public class A028887 implements Sequence {
+public class A028887 extends Sequence0 {
 
   private long mN = -1;
 

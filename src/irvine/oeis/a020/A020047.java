@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020047 a(n) = floor(Gamma(n+7/12)/Gamma(7/12)).
  * @author Sean A. Irvine
  */
-public class A020047 implements Sequence {
+public class A020047 extends Sequence0 {
 
   private static final Q C = new Q(7, 12);
   private int mN = -2;

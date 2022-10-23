@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002119 Bessel polynomial y_n(-2).
  * @author Sean A. Irvine
  */
-public class A002119 implements Sequence {
+public class A002119 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002740 Number of tree-rooted bridgeless planar maps with two vertices and n faces.
  * @author Sean A. Irvine
  */
-public class A002740 implements Sequence {
+public class A002740 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

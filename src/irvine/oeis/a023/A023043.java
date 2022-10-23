@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A023043 6th differences of factorial numbers.
  * @author Sean A. Irvine
  */
-public class A023043 implements Sequence {
+public class A023043 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.valueOf(265);

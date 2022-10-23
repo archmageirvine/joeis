@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036236 Least inverse of A015910: smallest integer k &gt; 0 such that 2^k mod k = n, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
-public class A036236 implements Sequence {
+public class A036236 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

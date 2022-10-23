@@ -6,13 +6,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000998 From a differential equation.
  * @author Sean A. Irvine
  */
-public class A000998 implements Sequence {
+public class A000998 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final ArrayList<Polynomial<Z>> mProducts = new ArrayList<>();

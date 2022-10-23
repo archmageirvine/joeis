@@ -1,13 +1,13 @@
 package irvine.oeis.a012;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A012244 a(n+2) = (2n+3)*a(n+1) + (n+1)^2*a(n), a(0) = 1, a(1) = 1.
  * @author Sean A. Irvine
  */
-public class A012244 implements Sequence {
+public class A012244 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

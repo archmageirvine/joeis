@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A281454 Exponential transform of the 4-dimensional figurate numbers (A002417).
  * E.g.f.: exp(exp(x)*x*(6 + 18*x + 9*x^2 + x^3)/6)
  * @author Georg Fischer
  */
-public class A281454 implements Sequence {
+public class A281454 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

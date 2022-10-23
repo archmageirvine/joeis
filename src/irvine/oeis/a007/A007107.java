@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007107 Number of labeled 2-regular digraphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A007107 implements Sequence {
+public class A007107 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = null;

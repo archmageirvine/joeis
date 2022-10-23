@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000480 a(n) = floor(cos(n)).
  * @author Sean A. Irvine
  */
-public class A000480 implements Sequence {
+public class A000480 extends Sequence0 {
 
   private long mN = -1;
 

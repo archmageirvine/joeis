@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A050799 Values of n^2 - 1 resulting from A050795.
  * @author Sean A. Irvine
  */
-public class A050799 implements Sequence {
+public class A050799 extends Sequence0 {
 
   private long mN = 2;
 

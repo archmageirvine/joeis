@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001559 a(0) = 1, a(1) = 4; thereafter a(n)*(2n + 10) - a(n-1)*(11n + 35) + a(n-2)*(8n + 2) + a(n-3)*(15n + 7) + a(n-4)*(4n - 2) = 0.
  * @author Sean A. Irvine
  */
-public class A001559 implements Sequence {
+public class A001559 extends Sequence0 {
 
   private Z mA = Z.ZERO;
   private Z mB = Z.ZERO;

@@ -2,13 +2,13 @@ package irvine.oeis.a087;
 
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A087989 a(n) = M(n!), the value of Mertens's function at the n-th factorial.
  * @author Sean A. Irvine
  */
-public class A087989 implements Sequence {
+public class A087989 extends Sequence0 {
 
   private long mF = 1;
   private long mN = -1;

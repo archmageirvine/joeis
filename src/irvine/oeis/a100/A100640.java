@@ -5,13 +5,13 @@ import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A100640 Triangle read by rows: numerators of Cotesian numbers C(n,k) (0 &lt;= k &lt;= n).
  * @author Sean A. Irvine
  */
-public class A100640 implements Sequence {
+public class A100640 extends Sequence0 {
 
   private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
 

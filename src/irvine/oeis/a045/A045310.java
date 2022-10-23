@@ -1,14 +1,14 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045310 Number of matchings in n-cube.
  * @author Hugo van der Sanden (C implementation)
  * @author Sean A. Irvine
  */
-public class A045310 implements Sequence {
+public class A045310 extends Sequence0 {
 
   // Based on https://github.com/hvds/seq/blob/master/part/find2c.c
 

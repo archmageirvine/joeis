@@ -1,13 +1,13 @@
 package irvine.oeis.a105;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A105333 a(n) = n*(n+1)/2 mod 16.
  * @author Georg Fischer
  */
-public class A105333 implements Sequence {
+public class A105333 extends Sequence0 {
 
   private int mN;
   private Z mMod;

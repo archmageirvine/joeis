@@ -1,14 +1,14 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
  * A014489 Positions of involutions (permutations whose square is the identity) in reverse colexicographic order (A055089/A195663).
  * @author Sean A. Irvine
  */
-public class A014489 implements Sequence {
+public class A014489 extends Sequence0 {
 
   private int mN = 0;
   private long mM = 0;

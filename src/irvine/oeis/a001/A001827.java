@@ -3,13 +3,13 @@ package irvine.oeis.a001;
 import irvine.math.partitions.NonnegativeIntegerComposition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001827 Related to partially ordered sets.
  * @author Sean A. Irvine
  */
-public class A001827 implements Sequence {
+public class A001827 extends Sequence0 {
 
   private int mN = -1;
 

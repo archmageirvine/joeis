@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058321 Number of x such that phi(x) = 2^n.
  * @author Sean A. Irvine
  */
-public class A058321 implements Sequence {
+public class A058321 extends Sequence0 {
 
   private Z mN = null;
 

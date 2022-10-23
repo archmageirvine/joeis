@@ -3,6 +3,7 @@ package irvine.oeis.a339;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003108;
 import irvine.oeis.a292.A292560;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a292.A292560;
  * A339369 Number of partitions of n into an odd number of cubes.
  * @author Georg Fischer
  */
-public class A339369 implements Sequence {
+public class A339369 extends Sequence0 {
 
   final Sequence mA003108 = new A003108();
   final Sequence mA292560 = new A292560();

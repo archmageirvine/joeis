@@ -1,13 +1,13 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035044 Exchange 2 and 3.
  * @author Sean A. Irvine
  */
-public class A035044 implements Sequence {
+public class A035044 extends Sequence0 {
 
   private long mN = -1;
 

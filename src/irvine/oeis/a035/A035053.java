@@ -7,6 +7,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a007.A007563;
 
@@ -14,7 +15,7 @@ import irvine.oeis.a007.A007563;
  * A035053 Number of connected graphs on n unlabeled nodes where every block is a complete graph.
  * @author Sean A. Irvine
  */
-public class A035053 implements Sequence {
+public class A035053 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;

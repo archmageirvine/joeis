@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001512 a(n) = (5*n+1)*(5*n+2)*(5*n+3)*(5*n+4).
  * @author Sean A. Irvine
  */
-public class A001512 implements Sequence {
+public class A001512 extends Sequence0 {
 
   private Z mN = Z.valueOf(-4);
 

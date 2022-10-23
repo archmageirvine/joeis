@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002620 Quarter-squares: a(n) = floor(n/2)*ceiling(n/2). Equivalently, a(n) = floor(n^2/4).
  * @author Sean A. Irvine
  */
-public class A002620 implements Sequence {
+public class A002620 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

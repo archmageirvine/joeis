@@ -2,13 +2,13 @@ package irvine.oeis.a192;
 
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A192570 a(n) = floor(sqrt(Bell(n))).
  * @author Georg Fischer
  */
-public class A192570 implements Sequence {
+public class A192570 extends Sequence0 {
 
   protected int mN = -1;
 

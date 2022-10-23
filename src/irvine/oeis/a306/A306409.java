@@ -3,6 +3,7 @@ package irvine.oeis.a306;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006134;
 import irvine.oeis.a307.A307354;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a307.A307354;
  * A306409 a(n) = -Sum_{0&lt;=i&lt;j&lt;=n} (-1)^(i+j) * (i+j)!/(i!*j!).
  * @author Georg Fischer
  */
-public class A306409 implements Sequence {
+public class A306409 extends Sequence0 {
 
   final Sequence mA006134 = new A006134();
   final Sequence mA307354 = new A307354();

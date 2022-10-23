@@ -3,13 +3,13 @@ package irvine.oeis.a034;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034840 Concatenation of 3 or more numbers in arithmetic progression.
  * @author Sean A. Irvine
  */
-public class A034840 implements Sequence {
+public class A034840 extends Sequence0 {
 
   private static final class State implements Comparable<State> {
     private final Z mValue;

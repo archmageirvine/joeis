@@ -1,14 +1,14 @@
 package irvine.oeis.a193;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.triangle.Triangle;
 
 /**
  * A193673 Triangle given by p(n,k)=(coefficient of x^(n-k) in (1/2) ((x+3)^n+(x+1)^n)), 0&lt;=k&lt;=n.
  * @author Georg Fischer
  */
-public class A193673 implements Sequence {
+public class A193673 extends Sequence0 {
 
   private Z[] mLine = new Z[0];
   private Triangle mTri = new Triangle();

@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002474 Denominators of coefficients of odd powers of x of the expansion of Bessel function J_1(x).
  * @author Sean A. Irvine
  */
-public class A002474 implements Sequence {
+public class A002474 extends Sequence0 {
 
   private int mN = -1;
   private Z mF = Z.TWO;

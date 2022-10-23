@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036606 Triangle of coefficients of generating function of 4-ary rooted trees of height at most n.
  * @author Sean A. Irvine
  */
-public class A036606 implements Sequence {
+public class A036606 extends Sequence0 {
 
   protected static final PolynomialRing<Q> RING = new PolynomialRing<>(Rationals.SINGLETON);
   private final CycleIndex mSym;

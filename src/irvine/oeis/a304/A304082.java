@@ -4,13 +4,14 @@ package irvine.oeis.a304;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006952;
 
 /**
  * A304082 a(n) = 3^n - A006952(n).
  * @author Georg Fischer
  */
-public class A304082 implements Sequence {
+public class A304082 extends Sequence0 {
 
   final Sequence mA006952 = new A006952();
   protected long mN;

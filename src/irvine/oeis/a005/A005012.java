@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005012 Shifts one place left under 6th-order binomial transform.
  * @author Sean A. Irvine
  */
-public class A005012 implements Sequence {
+public class A005012 extends Sequence0 {
 
   private long mN = -1;
 

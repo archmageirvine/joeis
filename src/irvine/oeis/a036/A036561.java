@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036561 Nicomachus triangle read by rows, T(n, k) = 2^(n - k)*3^k, for 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
-public class A036561 implements Sequence {
+public class A036561 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

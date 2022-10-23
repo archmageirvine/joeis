@@ -2,14 +2,14 @@ package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A054267 Sum of composite numbers between prime p and nextprime(p) is palindromic with restriction 'p + 1 &lt;&gt; sum'.
  * @author Sean A. Irvine
  */
-public class A054267 implements Sequence {
+public class A054267 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = 3;

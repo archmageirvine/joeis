@@ -5,13 +5,13 @@ import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053572 Maximal number of spanning trees in a planar graph with n nodes.
  * @author Sean A. Irvine
  */
-public class A053572 implements Sequence, GraphProcessor {
+public class A053572 extends Sequence0 implements GraphProcessor {
 
   private int mN = -1;
   private Z mMax = Z.ZERO;

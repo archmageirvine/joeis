@@ -1,13 +1,13 @@
 package irvine.oeis.a070;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A070939 Length of binary representation of n.
  * @author Georg Fischer
  */
-public class A070939 implements Sequence {
+public class A070939 extends Sequence0 {
 
   protected long mN; // current index
   protected long mPow2; // next power of 2

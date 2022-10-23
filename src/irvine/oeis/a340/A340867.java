@@ -3,13 +3,14 @@ package irvine.oeis.a340;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a008.A008347;
 
 /**
  * A340867 a(n) = (prime(n) - a(n-1)) mod 4; a(0)=0.
  * @author Georg Fischer
  */
-public class A340867 implements Sequence {
+public class A340867 extends Sequence0 {
 
   final Sequence mA008347 = new A008347();
   @Override

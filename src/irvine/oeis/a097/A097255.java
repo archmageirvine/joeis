@@ -3,13 +3,14 @@ package irvine.oeis.a097;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a033.A033046;
 
 /**
  * A097255 Numbers whose set of base 9 digits is {0,8}.
  * @author Georg Fischer
  */
-public class A097255 implements Sequence {
+public class A097255 extends Sequence0 {
 
   final Sequence mA033046 = new A033046();
   @Override

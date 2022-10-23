@@ -3,11 +3,12 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 /**
  * A058125 n^(n^n)/(n^n)^n with 0^0=1.
  * @author Georg Fischer
  */
-public class A058125 implements Sequence {
+public class A058125 extends Sequence0 {
 
   private final Sequence mA058126 = new A058126();
   protected long mN;

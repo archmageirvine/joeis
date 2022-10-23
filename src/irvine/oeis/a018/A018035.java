@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018035 Powers of cube root of 20 rounded up.
  * @author Sean A. Irvine
  */
-public class A018035 implements Sequence {
+public class A018035 extends Sequence0 {
 
   private Z mN = null;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a070;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A070496 a(n) = n^3 mod 34.
  * @author Georg Fischer
  */
-public class A070496 implements Sequence {
+public class A070496 extends Sequence0 {
 
   private int mN = 0;
   private final Z mExp = Z.THREE;

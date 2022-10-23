@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A258114 E.g.f.: Sum_{n&gt;=0} x^n * cosh(n*x).
  * E.g.f.: (1 - x*cosh(x)) / (1 - 2*x*cosh(x) + x^2)
  * @author Georg Fischer
  */
-public class A258114 implements Sequence {
+public class A258114 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

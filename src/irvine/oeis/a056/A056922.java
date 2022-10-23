@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056922 Denominators of continued fraction for alternating factorial.
  * @author Sean A. Irvine
  */
-public class A056922 implements Sequence {
+public class A056922 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.ONE;

@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006390 Number of unrooted loopless planar n-edge maps.
  * @author Sean A. Irvine
  */
-public class A006390 implements Sequence {
+public class A006390 extends Sequence0 {
 
   private long mN = -1;
 

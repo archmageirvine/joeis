@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A122835 Number of topologies on n labeled elements in which no element belongs to any pair of noncomparable members of the topology.
  * E.g.f.: (3/4) / (1 - exp(x)/2) - exp(x)/2
  * @author Georg Fischer
  */
-public class A122835 implements Sequence {
+public class A122835 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

@@ -3,13 +3,14 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000194;
 
 /**
  * A056847 Nearest integer to n - sqrt(n).
  * @author Georg Fischer
  */
-public class A056847 implements Sequence {
+public class A056847 extends Sequence0 {
 
   final Sequence mA000194 = new A000194();
   protected long mN;

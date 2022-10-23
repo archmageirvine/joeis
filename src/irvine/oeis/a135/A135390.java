@@ -3,13 +3,14 @@ package irvine.oeis.a135;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002896;
 
 /**
  * A135390 Number of walks from origin to (1,0,0) in a cubic lattice.
  * @author Georg Fischer
  */
-public class A135390 implements Sequence {
+public class A135390 extends Sequence0 {
 
   final Sequence mA002896 = new A002896();
   /** Construct the sequence. */

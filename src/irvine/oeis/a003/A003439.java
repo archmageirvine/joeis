@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003439 Number of 6 X 6 stochastic matrices of integers: all rows and columns sum to n.
  * @author Sean A. Irvine
  */
-public class A003439 implements Sequence {
+public class A003439 extends Sequence0 {
 
   private static final Q[] EHRHART = {
     Q.ONE,

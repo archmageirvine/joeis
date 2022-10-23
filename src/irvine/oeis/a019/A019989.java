@@ -4,13 +4,13 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A019989 Indices n such that A307672(2*n) = 0.
  * @author Sean A. Irvine
  */
-public class A019989 implements Sequence {
+public class A019989 extends Sequence0 {
 
   private Set<Z> mA = new TreeSet<>();
   private Set<Z> mB = new TreeSet<>();

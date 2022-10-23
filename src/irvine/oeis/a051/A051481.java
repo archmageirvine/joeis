@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051481 a(n+1) = a(n)^2 + n*(n+3)*a(n).
  * @author Sean A. Irvine
  */
-public class A051481 implements Sequence {
+public class A051481 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private long mN = -1;

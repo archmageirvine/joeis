@@ -3,13 +3,14 @@ package irvine.oeis.a036;
 import irvine.math.z.Z;
 import irvine.oeis.DifferenceSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000040;
 
 /**
  * A036277 Position of first term &gt; 2 in n-th row of Gilbreath array shown in A036262.
  * @author Sean A. Irvine
  */
-public class A036277 implements Sequence {
+public class A036277 extends Sequence0 {
 
   private int mN = -1;
 

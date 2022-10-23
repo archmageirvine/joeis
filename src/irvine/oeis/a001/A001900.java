@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001900 Successive numerators of Wallis's approximation to Pi/2 (unreduced).
  * @author Sean A. Irvine
  */
-public class A001900 implements Sequence {
+public class A001900 extends Sequence0 {
 
   private long mN = -1;
   private Z mP = Z.ONE;

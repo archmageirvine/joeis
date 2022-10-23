@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A322419 Number of n-step self-avoiding walks on L-lattice.
  * @author Sean A. Irvine
  */
-public class A322419 implements Sequence {
+public class A322419 extends Sequence0 {
 
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new SelfAvoidingWalker(Lattices.L));
   private final long mX1 = Lattices.L.neighbour(Lattices.L.origin(), 0);

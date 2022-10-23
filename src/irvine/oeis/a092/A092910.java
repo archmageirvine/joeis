@@ -3,13 +3,14 @@ package irvine.oeis.a092;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007400;
 
 /**
  * A092910 a(n) is the (3n+2)-th component of the continued fraction for sum(k&gt;=0,2^(-k!)).
  * @author Georg Fischer
  */
-public class A092910 implements Sequence {
+public class A092910 extends Sequence0 {
 
   final Sequence mA007400 = new A007400();
   /** Construct the sequence. */

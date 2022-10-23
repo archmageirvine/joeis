@@ -3,13 +3,14 @@ package irvine.oeis.a247;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000110;
 
 /**
  * A247452 a(n)=3^n*Bell(n).
  * @author Georg Fischer
  */
-public class A247452 implements Sequence {
+public class A247452 extends Sequence0 {
 
   final Sequence mA000110 = new A000110();
   protected long mN;

@@ -4,13 +4,13 @@ package irvine.oeis.a032;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A032615 a(n) = floor(n/Pi).
  * @author Georg Fischer
  */
-public class A032615 implements Sequence {
+public class A032615 extends Sequence0 {
   private long mN = -1;
 
   @Override

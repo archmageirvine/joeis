@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002038 Numbers dividing A002037(i) and larger than A002037(i-1), for some i&gt;0.
  * @author Sean A. Irvine
  */
-public class A002038 implements Sequence {
+public class A002038 extends Sequence0 {
 
   // After M. F. Hasler
 

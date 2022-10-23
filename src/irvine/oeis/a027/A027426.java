@@ -3,13 +3,13 @@ package irvine.oeis.a027;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027426 Number of distinct products ijk with 0 &lt;= i,j,k &lt;= n.
  * @author Sean A. Irvine
  */
-public class A027426 implements Sequence {
+public class A027426 extends Sequence0 {
 
   private final TreeSet<Long> mSeen = new TreeSet<>();
   private long mN = -1;

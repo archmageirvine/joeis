@@ -2,13 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048761 Smallest square greater than or equal to n.
  * @author Sean A. Irvine
  */
-public class A048761 implements Sequence {
+public class A048761 extends Sequence0 {
 
   private long mN = -1;
 

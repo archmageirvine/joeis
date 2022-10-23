@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006629 Self-convolution 4th power of A001764, which enumerates ternary trees.
  * @author Sean A. Irvine
  */
-public class A006629 implements Sequence {
+public class A006629 extends Sequence0 {
 
   private long mN = 1;
   @Override

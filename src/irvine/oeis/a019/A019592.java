@@ -1,14 +1,14 @@
 package irvine.oeis.a019;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A019592 From George Gilbert's marks problem: jumping 3 marks at a time (initial positions).
  * @author Sean A. Irvine
  */
-public class A019592 implements Sequence {
+public class A019592 extends Sequence0 {
 
   // Each entry points to next node in the circle.  Those with index < mN are original points
   protected final LongDynamicLongArray mNextPosition = new LongDynamicLongArray();

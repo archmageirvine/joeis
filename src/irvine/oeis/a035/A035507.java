@@ -2,13 +2,13 @@ package irvine.oeis.a035;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035507 Inverse Stolarsky array read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A035507 implements Sequence {
+public class A035507 extends Sequence0 {
 
   private static final CR HALF_TAU = CR.PHI.divide(CR.TWO);
   private long mN = 0;

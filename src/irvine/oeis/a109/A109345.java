@@ -1,13 +1,13 @@
 package irvine.oeis.a109;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A109345 a(n) = 5^((n^2 - n)/2).
  * @author Georg Fischer
  */
-public class A109345 implements Sequence {
+public class A109345 extends Sequence0 {
 
   private int mN = -1;
   private Z mBase;

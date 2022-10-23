@@ -3,6 +3,7 @@ package irvine.oeis.a306;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000219;
 import irvine.oeis.a005.A005987;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a005.A005987;
  * A306098 Number of equivalence classes, modulo transposition, of non-symmetric plane partitions of n.
  * @author Georg Fischer
  */
-public class A306098 implements Sequence {
+public class A306098 extends Sequence0 {
 
   final Sequence mA000219 = new A000219();
   final Sequence mA005987 = new A005987();

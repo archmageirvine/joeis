@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001501 Number of n X n 0-1 matrices with all column and row sums equal to 3.
  * @author Sean A. Irvine
  */
-public class A001501 implements Sequence {
+public class A001501 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Z mSixPower = Z.ONE;

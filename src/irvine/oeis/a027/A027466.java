@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027466 Triangle whose (i,j)-th entry is binomial(i,j)*7^(i-j).
  * @author Sean A. Irvine
  */
-public class A027466 implements Sequence {
+public class A027466 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

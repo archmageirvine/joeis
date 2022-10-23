@@ -3,6 +3,7 @@ package irvine.oeis.a327;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 import irvine.oeis.a000.A000079;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000079;
  * A327550 Number of compositions of partitions of 2n with exactly n compositions.
  * @author Georg Fischer
  */
-public class A327550 implements Sequence {
+public class A327550 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   final Sequence mA000079 = new A000079();

@@ -3,13 +3,13 @@ package irvine.oeis.a048;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048563 a(n+1) is next smallest nontrivial cube beginning with a(n), initial cube is 1.
  * @author Sean A. Irvine
  */
-public class A048563 implements Sequence {
+public class A048563 extends Sequence0 {
 
   private Z mA = null;
   private final Z mStart;

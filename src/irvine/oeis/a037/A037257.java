@@ -5,13 +5,13 @@ import java.util.List;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A037257 a() = 1,3,... [ A037257 ], differences = 2,... [ A037258 ] and 2nd differences [ A037259 ] are disjoint and monotonic; adjoin next free number to 2nd differences unless it would produce a duplicate in which case ignore.
  * @author Sean A. Irvine
  */
-public class A037257 implements Sequence {
+public class A037257 extends Sequence0 {
 
   private final TreeSet<Z> mSeen = new TreeSet<>();
   private final List<Z> mA0 = new ArrayList<>();

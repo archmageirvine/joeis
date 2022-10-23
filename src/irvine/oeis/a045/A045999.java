@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045999 Length of n-th term of binary Gleichniszahlen-Reihe (BGR) sequence A045998.
  * @author Sean A. Irvine
  */
-public class A045999 implements Sequence {
+public class A045999 extends Sequence0 {
 
   private String mA = null;
 

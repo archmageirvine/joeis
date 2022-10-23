@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025014 Central "nonomial" coefficient: largest coefficient of (1+x+...+x^8)^n.
  * @author Sean A. Irvine
  */
-public class A025014 implements Sequence {
+public class A025014 extends Sequence0 {
 
   private long mN = -1;
 

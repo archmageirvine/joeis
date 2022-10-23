@@ -4,14 +4,14 @@ import java.util.LinkedList;
 
 import irvine.math.MutableInteger;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Pair;
 
 /**
  * A037988 Critical values in Conway's game of one-dimensional phutball.
  * @author Sean A. Irvine
  */
-public class A037988 implements Sequence {
+public class A037988 extends Sequence0 {
 
   // Based on Eric Angelini's comment
 

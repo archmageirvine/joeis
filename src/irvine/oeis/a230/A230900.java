@@ -3,13 +3,14 @@ package irvine.oeis.a230;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000032;
 
 /**
  * A230900 a(n) = 2^Lucas(n).
  * @author Georg Fischer
  */
-public class A230900 implements Sequence {
+public class A230900 extends Sequence0 {
 
   final Sequence mA000032 = new A000032();
   @Override

@@ -3,6 +3,7 @@ package irvine.oeis.a292;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000312;
 import irvine.oeis.a001.A001147;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001147;
  * A292784 a(n) = n! * [x^n] 1/sqrt(1 - 2*n*x).
  * @author Georg Fischer
  */
-public class A292784 implements Sequence {
+public class A292784 extends Sequence0 {
 
   final Sequence mA000312 = new A000312();
   final Sequence mA001147 = new A001147();

@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.RationalUnityExtension;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006846 Hammersley's polynomial p_n(1).
  * @author Sean A. Irvine
  */
-public class A006846 implements Sequence {
+public class A006846 extends Sequence0 {
 
   private static final RationalUnityExtension SQRT3 = new RationalUnityExtension("t", 2, Q.THREE);
   private static final PolynomialRingField<Polynomial<Q>> RING = new PolynomialRingField<>(SQRT3);

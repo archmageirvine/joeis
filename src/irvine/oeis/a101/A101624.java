@@ -1,14 +1,14 @@
 package irvine.oeis.a101;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A101624 Stern-Jacobsthal numbers.
  * a(0)=1, a(1)=1, a(n) = a(n-1) XOR (a(n-2)*2).
  * @author Georg Fischer
  */
-public class A101624 implements Sequence {
+public class A101624 extends Sequence0 {
 
   protected int mN;
   protected Z mAn1;

@@ -1,14 +1,14 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A050782 Smallest positive multiplier m such that m*n is palindromic (or zero if no such m exists).
  * @author Sean A. Irvine
  */
-public class A050782 implements Sequence {
+public class A050782 extends Sequence0 {
 
   private long mN = -1;
 

@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008774 Theta series of (probably nonexistent) exceptionally good 16-dimensional sphere packing.
  * @author Sean A. Irvine
  */
-public class A008774 implements Sequence {
+public class A008774 extends Sequence0 {
 
   // After Michael Somos
 

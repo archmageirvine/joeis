@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006630 From generalized Catalan numbers.
  * @author Sean A. Irvine
  */
-public class A006630 implements Sequence {
+public class A006630 extends Sequence0 {
 
   private long mN = -1;
   @Override

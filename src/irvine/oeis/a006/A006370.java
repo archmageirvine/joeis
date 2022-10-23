@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006370 The Collatz or 3x+1 map: a(n) = n/2 if n is even, 3n + 1 if n is odd.
  * @author Sean A. Irvine
  */
-public class A006370 implements Sequence {
+public class A006370 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

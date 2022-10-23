@@ -5,14 +5,14 @@ import java.util.List;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
 
 /**
  * A035517 Triangular array read by rows, formed from Zeckendorf expansion of integers: repeatedly subtract the largest Fibonacci number you can until nothing remains. Row n give Z. expansion of n.
  * @author Sean A. Irvine
  */
-public class A035517 implements Sequence {
+public class A035517 extends Sequence0 {
 
   private final MemorySequence mFibo = MemorySequence.cachedSequence(new A000045());
   private final List<Z> mA = new ArrayList<>();

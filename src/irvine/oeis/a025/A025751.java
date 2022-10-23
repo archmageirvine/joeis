@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025751 6th-order Patalan numbers (generalization of Catalan numbers).
  * @author Sean A. Irvine
  */
-public class A025751 implements Sequence {
+public class A025751 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

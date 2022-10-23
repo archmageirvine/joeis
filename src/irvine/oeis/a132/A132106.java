@@ -3,13 +3,14 @@ package irvine.oeis.a132;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000196;
 import irvine.oeis.a006.A006218;
 /**
  * A132106 a(n) = 1 + floor(sqrt(n)) + Sum_{i=1..n} floor(n/i).
  * @author Georg Fischer
  */
-public class A132106 implements Sequence {
+public class A132106 extends Sequence0 {
 
   private final Sequence mA000196 = new A000196();
   private final Sequence mA006218 = new A006218();

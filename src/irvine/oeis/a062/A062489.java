@@ -4,13 +4,13 @@ package irvine.oeis.a062;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A062489 Nearest integer to (Product(n^((1 + log(i))/(1 + i^2)), {i, 1, n})).
  * @author Georg Fischer
  */
-public class A062489 implements Sequence {
+public class A062489 extends Sequence0 {
 
   private int mN = -1;
 

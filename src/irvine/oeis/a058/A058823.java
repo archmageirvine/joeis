@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058823 a(0) = 1, a(1) = 8; for n &gt;= 2 a(n) is the number of degree-n monic reducible polynomials over GF(8), i.e., a(n) = 8^n - A027380(n).
  * @author Georg Fischer
  */
-public class A058823 implements Sequence {
+public class A058823 extends Sequence0 {
 
   private int mN = -1;
 

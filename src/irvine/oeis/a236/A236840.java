@@ -3,13 +3,14 @@ package irvine.oeis.a236;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005811;
 
 /**
  * A236840 n minus number of runs in the binary expansion of n: a(n) = n - A005811(n).
  * @author Georg Fischer
  */
-public class A236840 implements Sequence {
+public class A236840 extends Sequence0 {
 
   final Sequence mA005811 = new A005811();
   protected long mN;

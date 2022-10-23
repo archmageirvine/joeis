@@ -3,13 +3,14 @@ package irvine.oeis.a097;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a033.A033042;
 
 /**
  * A097251 Numbers whose set of base 5 digits is {0,4}.
  * @author Georg Fischer
  */
-public class A097251 implements Sequence {
+public class A097251 extends Sequence0 {
 
   final Sequence mA033042 = new A033042();
   @Override

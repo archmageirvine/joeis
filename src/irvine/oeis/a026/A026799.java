@@ -2,13 +2,13 @@ package irvine.oeis.a026;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A026799 Number of partitions of n in which the least part is 6.
  * @author Sean A. Irvine
  */
-public class A026799 implements Sequence {
+public class A026799 extends Sequence0 {
 
   private int mN = -1;
 

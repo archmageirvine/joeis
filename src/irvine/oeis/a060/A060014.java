@@ -3,13 +3,13 @@ package irvine.oeis.a060;
 import irvine.math.IntegerUtils;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A060014 Sum of orders of all permutations of n letters.
  * @author Sean A. Irvine
  */
-public class A060014 implements Sequence {
+public class A060014 extends Sequence0 {
 
   private int mN = -1;
 

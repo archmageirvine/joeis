@@ -3,6 +3,7 @@ package irvine.oeis.a138;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007778;
 import irvine.oeis.a028.A028387;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a028.A028387;
  * A138748 a(n) = (n+(n+1)) + (n*(n+1)) + (n^(n+1)).
  * @author Georg Fischer
  */
-public class A138748 implements Sequence {
+public class A138748 extends Sequence0 {
 
   final Sequence mA007778 = new A007778();
   final Sequence mA028387 = new A028387();

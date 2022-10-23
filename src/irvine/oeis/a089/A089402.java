@@ -3,13 +3,14 @@ package irvine.oeis.a089;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000108;
 
 /**
  * A089402 Number of cycles in range [A014137(n-1)..A014138(n-1)] of permutation A089864.
  * @author Georg Fischer
  */
-public class A089402 implements Sequence {
+public class A089402 extends Sequence0 {
 
   final Sequence mA000108 = new A000108();
   final Sequence mA089408 = new A089408();

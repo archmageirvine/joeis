@@ -7,13 +7,13 @@ import java.util.List;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035934 Smallest number that can be made to take n steps to reach 0 under "k -&gt; any product of 2 numbers whose concatenation is k".
  * @author Sean A. Irvine
  */
-public class A035934 implements Sequence {
+public class A035934 extends Sequence0 {
 
   private final List<Set<Integer>> mSteps = new ArrayList<>();
   {

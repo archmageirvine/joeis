@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A024420 a(n) = n! * Sum_{j=0..floor(n/2)} (-1)^j/binomial(n,j).
  * @author Sean A. Irvine
  */
-public class A024420 implements Sequence {
+public class A024420 extends Sequence0 {
 
   private Z mF = Z.ONE;
   private int mN = -1;

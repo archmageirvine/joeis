@@ -3,13 +3,13 @@ package irvine.oeis.a057;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057881 Primes with 5 distinct digits that remain prime (no leading zeros allowed) after deleting all occurrences of its digits d.
  * @author Sean A. Irvine
  */
-public class A057881 implements Sequence {
+public class A057881 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mP = 37000;

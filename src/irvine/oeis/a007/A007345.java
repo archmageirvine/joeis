@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007345 Number of Havender tableaux of height 2 with n columns.
  * @author Sean A. Irvine
  */
-public class A007345 implements Sequence {
+public class A007345 extends Sequence0 {
 
   private int mN = -1;
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

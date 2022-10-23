@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051116 Number of monotone Boolean functions of n variables with 8 mincuts.
  * @author Sean A. Irvine
  */
-public class A051116 implements Sequence {
+public class A051116 extends Sequence0 {
 
   private static final int[][] C = {
     {1, 256},

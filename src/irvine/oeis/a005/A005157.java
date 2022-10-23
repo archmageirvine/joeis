@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005157 Number of totally symmetric plane partitions that fit in an n X n X n box.
  * @author Sean A. Irvine
  */
-public class A005157 implements Sequence {
+public class A005157 extends Sequence0 {
 
   private int mN = -1;
 

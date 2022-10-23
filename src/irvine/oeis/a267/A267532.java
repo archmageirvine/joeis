@@ -3,6 +3,7 @@ package irvine.oeis.a267;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000680;
 import irvine.oeis.a006.A006902;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a006.A006902;
  * A267532 Number of words on {1,1,2,2,...,n,n} with longest increasing subsequence of length &lt; n.
  * @author Georg Fischer
  */
-public class A267532 implements Sequence {
+public class A267532 extends Sequence0 {
 
   final Sequence mA000680 = new A000680();
   final Sequence mA006902 = new A006902();

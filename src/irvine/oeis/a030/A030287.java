@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030287 a(n) is the smallest k &gt; a(n-1) such that k^2 has no digit in common with a(n-1)^2.
  * @author Sean A. Irvine
  */
-public class A030287 implements Sequence {
+public class A030287 extends Sequence0 {
 
   private Z mA = null;
 

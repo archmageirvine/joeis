@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A273031 Expansion of e.g.f.: (sin(x) + sin(6*x)) / sin(7*x), even-indexed terms only.
  * E.g.f.: (cos(x) + cos(6*x)) / (1 + cos(7*x)), even powers
  * @author Georg Fischer
  */
-public class A273031 implements Sequence {
+public class A273031 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

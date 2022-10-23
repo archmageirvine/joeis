@@ -1,13 +1,13 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A047889 Number of permutations in S_n with longest increasing subsequence of length &lt;= 4.
  * @author Sean A. Irvine
  */
-public class A047889 implements Sequence {
+public class A047889 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.ONE;

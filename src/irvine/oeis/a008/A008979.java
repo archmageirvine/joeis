@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008979 a(n) = (6n)!/(n!)^6.
  * @author Sean A. Irvine
  */
-public class A008979 implements Sequence {
+public class A008979 extends Sequence0 {
 
   private int mN = -1;
   private Z mF = Z.ONE;

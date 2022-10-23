@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001769 Expansion of 1/((1+x)*(1-x)^7).
  * @author Sean A. Irvine
  */
-public class A001769 implements Sequence {
+public class A001769 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

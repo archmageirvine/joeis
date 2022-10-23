@@ -2,13 +2,13 @@ package irvine.oeis.a022;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A022923 Number of 2^m between 7^n and 7^(n+1).
  * @author Sean A. Irvine
  */
-public class A022923 implements Sequence {
+public class A022923 extends Sequence0 {
 
   private static final CR LOG = CR.SEVEN.log().divide(CR.TWO.log());
   private long mN = -1;

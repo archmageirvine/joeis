@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A048528 Primes expressible in two ways as the sum of an integer plus its digit sum.
  * @author Sean A. Irvine
  */
-public class A048528 implements Sequence {
+public class A048528 extends Sequence0 {
 
   // Based on A048521.
 

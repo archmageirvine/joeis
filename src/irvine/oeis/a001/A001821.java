@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001821 Central factorial numbers.
  * @author Sean A. Irvine
  */
-public class A001821 implements Sequence {
+public class A001821 extends Sequence0 {
 
   private long mN = 3;
 

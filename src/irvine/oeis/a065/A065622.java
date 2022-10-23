@@ -3,6 +3,7 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000079;
 import irvine.oeis.a002.A002380;
 import irvine.oeis.a005.A005061;
@@ -11,7 +12,7 @@ import irvine.oeis.a005.A005061;
  * A065622 Numerator of 1 - (3/4)^n - frac((3/2)^n)), where frac(x) = x - floor(x).
  * @author Georg Fischer
  */
-public class A065622 implements Sequence {
+public class A065622 extends Sequence0 {
 
   final Sequence mA000079 = new A000079();
   final Sequence mA002380 = new A002380();

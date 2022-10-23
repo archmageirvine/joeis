@@ -3,13 +3,13 @@ package irvine.oeis.a045;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045870 Number of times the digits are repeated in A045869.
  * @author Sean A. Irvine
  */
-public class A045870 implements Sequence {
+public class A045870 extends Sequence0 {
 
   private long mN = 1;
 

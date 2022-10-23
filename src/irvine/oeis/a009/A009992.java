@@ -1,13 +1,13 @@
 package irvine.oeis.a009;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A009992 Powers of 48: a(n) = 48^n.
  * @author Sean A. Irvine
  */
-public class A009992 implements Sequence {
+public class A009992 extends Sequence0 {
 
   private Z mA = null;
 

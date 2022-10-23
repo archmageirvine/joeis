@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014681 Fix 0; exchange even and odd numbers.
  * @author Sean A. Irvine
  */
-public class A014681 implements Sequence {
+public class A014681 extends Sequence0 {
 
   private long mN = -1;
 

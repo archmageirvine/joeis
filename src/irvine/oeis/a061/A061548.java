@@ -3,6 +3,7 @@ package irvine.oeis.a061;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001316;
 import irvine.oeis.a001.A001448;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a001.A001448;
  * A061548 Numerator of probability that there is no error when average of n numbers is computed, assuming errors of +1, -1 are possible and they each occur with p = 1/4.
  * @author Georg Fischer
  */
-public class A061548 implements Sequence {
+public class A061548 extends Sequence0 {
 
   final Sequence mA001316 = new A001316();
   final Sequence mA001448 = new A001448();

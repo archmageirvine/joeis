@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002984 a(0) = 1; for n &gt; 0, a(n) = a(n-1) + floor(sqrt(a(n-1))).
  * @author Sean A. Irvine
  */
-public class A002984 implements Sequence {
+public class A002984 extends Sequence0 {
 
   private Z mN = null;
 

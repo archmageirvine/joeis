@@ -3,13 +3,13 @@ package irvine.oeis.a001;
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001671 Powers of e rounded up.
  * @author Sean A. Irvine
  */
-public class A001671 implements Sequence {
+public class A001671 extends Sequence0 {
 
   private static final CR E = UnaryCRFunction.EXP.execute(CR.ONE);
   private CR mE = null;

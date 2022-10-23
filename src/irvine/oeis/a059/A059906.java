@@ -1,13 +1,13 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059906 Index of second half of decomposition of integers into pairs based on A000695.
  * @author Sean A. Irvine
  */
-public class A059906 implements Sequence {
+public class A059906 extends Sequence0 {
 
   private long mN = -1;
 

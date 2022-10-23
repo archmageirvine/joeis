@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A013015 Expansion of e.g.f.: arcsin(sinh(x)+log(x+1))=2*x-1/2!*x^2+11/3!*x^3-30/4!*x^4+463/5!*x^5...
  * @author Sean A. Irvine
  */
-public class A013015 implements Sequence {
+public class A013015 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

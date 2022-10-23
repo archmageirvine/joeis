@@ -3,13 +3,13 @@ package irvine.oeis.a138;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A138670 Indices of 0's in Stewart's choral sequence.
  * @author Sean A. Irvine
  */
-public class A138670 implements Sequence {
+public class A138670 extends Sequence0 {
 
   private static final class State implements Comparable<State> {
     private final long mN;

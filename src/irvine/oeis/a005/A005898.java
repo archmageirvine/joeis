@@ -1,14 +1,14 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005898 Centered cube numbers: n^3 + (n+1)^3.
  * @author Sean A. Irvine
  * @author Georg Fischer
  */
-public class A005898 implements Sequence {
+public class A005898 extends Sequence0 {
 
   protected int mExpon; // exponent 
   private long mN = 0; // always n + 1

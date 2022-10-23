@@ -5,13 +5,13 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Integers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A059203 Number of n-block T_0-covers of a labeled set.
  * @author Sean A. Irvine
  */
-public class A059203 implements Sequence {
+public class A059203 extends Sequence0 {
 
   private int mN = -1;
 

@@ -3,6 +3,7 @@ package irvine.oeis.a248;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003046;
 import irvine.oeis.a005.A005118;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a005.A005118;
  * A248330 The product of the first n Catalan numbers and the number of standard Young tableaux of shape(1,2,...,n).
  * @author Georg Fischer
  */
-public class A248330 implements Sequence {
+public class A248330 extends Sequence0 {
 
   final Sequence mA003046 = new A003046();
   final Sequence mA005118 = new A005118();

@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001847 Crystal ball sequence for 5-dimensional cubic lattice.
  * @author Sean A. Irvine
  */
-public class A001847 implements Sequence {
+public class A001847 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

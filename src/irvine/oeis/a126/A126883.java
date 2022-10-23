@@ -3,13 +3,14 @@ package irvine.oeis.a126;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006125;
 
 /**
  * A126883 a(n) = (2^0)*(2^1)*(2^2)*(2^3)...(2^n)-1 = 2^T(n) - 1 where T(n) = A000217(n) is the n-th triangular number.
  * @author Georg Fischer
  */
-public class A126883 implements Sequence {
+public class A126883 extends Sequence0 {
 
   final Sequence mA006125 = new A006125();
   /** Construct the sequence. */

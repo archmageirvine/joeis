@@ -5,13 +5,13 @@ import irvine.math.group.QPolynomialRingField;
 import irvine.math.polynomial.QPolynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028625 Expansion of (theta_3(z)*theta_3(15z)+theta_2(z)*theta_2(15z)).
  * @author Sean A. Irvine
  */
-public class A028625 implements Sequence {
+public class A028625 extends Sequence0 {
 
   private static final QPolynomialRingField<Z> RING = new QPolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;

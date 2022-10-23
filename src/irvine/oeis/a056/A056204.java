@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056204 Number of n X 5 binary matrices under row and column permutations and column complementations.
  * @author Sean A. Irvine
  */
-public class A056204 implements Sequence {
+public class A056204 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final long[] NUM = {1, 231, 20, 520, 60, 80, 720, 160, 320, 240, 480, 240, 384, 384};

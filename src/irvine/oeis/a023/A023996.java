@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A023996 Triangle of numbers T(n,k), where T(n,k) is the number of sets S = {a_1, a_2, ..., a_k}, with 1 &lt; a_i &lt; a_j &lt;= n such that no a_j divides the product of all the others.
  * @author Sean A. Irvine
  */
-public class A023996 implements Sequence {
+public class A023996 extends Sequence0 {
 
   private int mN = 0;
   private int mM = -1;

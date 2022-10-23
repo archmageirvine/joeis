@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A064135 Number of divisors of 10^n + 1 that are relatively prime to 10^m + 1 for all 0 &lt; m &lt; n.
  * @author Sean A. Irvine
  */
-public class A064135 implements Sequence {
+public class A064135 extends Sequence0 {
 
   private final ArrayList<Z> mPowersPlusOne = new ArrayList<>();
   private Z mPrev = Z.ONE;

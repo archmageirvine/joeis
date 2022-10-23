@@ -5,13 +5,13 @@ import irvine.math.polynomial.QPolynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014713 Theta series of shadow of lattice described in A014711.
  * @author Sean A. Irvine
  */
-public class A014713 implements Sequence {
+public class A014713 extends Sequence0 {
 
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;

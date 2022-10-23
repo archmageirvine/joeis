@@ -3,13 +3,13 @@ package irvine.oeis.a214;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A214039 a(n) = a(n-1) - floor((a(n-2) + a(n-3))/2), with a(n)=n for n &lt; 3.
  * @author Georg Fischer
  */
-public class A214039 implements Sequence {
+public class A214039 extends Sequence0 {
 
   private int mN = -1;
   private Z mAn3 = Z.ZERO;

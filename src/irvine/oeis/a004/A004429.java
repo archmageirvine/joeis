@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004429 Geometric mean of digits of n (rounded to nearest integer).
  * @author Sean A. Irvine
  */
-public class A004429 implements Sequence {
+public class A004429 extends Sequence0 {
 
   private long mN = -1;
 

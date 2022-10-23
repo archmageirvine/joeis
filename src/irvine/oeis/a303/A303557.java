@@ -3,6 +3,7 @@ package irvine.oeis.a303;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002110;
 import irvine.oeis.a011.A011782;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a011.A011782;
  * A303557 a(0) = 1; a(n) = 2^(n-1)*prime(n)#, where prime(n)# is the product of first n primes.
  * @author Georg Fischer
  */
-public class A303557 implements Sequence {
+public class A303557 extends Sequence0 {
 
   final Sequence mA002110 = new A002110();
   final Sequence mA011782 = new A011782();

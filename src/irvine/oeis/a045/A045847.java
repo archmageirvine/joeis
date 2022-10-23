@@ -6,13 +6,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045847 Matrix whose (i,j)-th entry is number of representations of j as a sum of i squares of nonnegative integers; read by diagonals.
  * @author Sean A. Irvine
  */
-public class A045847 implements Sequence {
+public class A045847 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final ArrayList<Polynomial<Z>> mRows = new ArrayList<>();

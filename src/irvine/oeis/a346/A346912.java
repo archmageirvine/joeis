@@ -3,12 +3,13 @@ package irvine.oeis.a346;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000123;
 /**
  * A346912 a(0) = 1; a(n) = a(n-1) + a(floor(n/2)) + 1.
  * @author Georg Fischer
  */
-public class A346912 implements Sequence {
+public class A346912 extends Sequence0 {
 
   private final Sequence mA000123 = new A000123();
   @Override

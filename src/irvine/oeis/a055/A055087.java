@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055087 Integers 0..n then 0..n then 0..n+1 then 0..n+1 etc.
  * @author Sean A. Irvine
  */
-public class A055087 implements Sequence {
+public class A055087 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

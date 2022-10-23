@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036489 Nearest integer to n^(7/2).
  * @author Sean A. Irvine
  */
-public class A036489 implements Sequence {
+public class A036489 extends Sequence0 {
 
   private long mN = -1;
 

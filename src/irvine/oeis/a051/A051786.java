@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051786 Propp's cubic recurrence: a(0)=a(1)=a(2)=a(3)=1; for n&gt;3, a(n)=(1+a(n-1)*a(n-2)*a(n-3))/a(n-4).
  * @author Sean A. Irvine
  */
-public class A051786 implements Sequence {
+public class A051786 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

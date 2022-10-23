@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003143 a(2*n) = floor( 17*2^n/14 ), a(2*n+1) = floor( 12*2^n/7 ).
  * @author Sean A. Irvine
  */
-public class A003143 implements Sequence {
+public class A003143 extends Sequence0 {
 
   private int mN = -1;
   @Override

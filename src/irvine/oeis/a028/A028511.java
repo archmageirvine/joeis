@@ -4,13 +4,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028511 q-expansion of character of vertex-operator superalgebra of rank 23.5 on which Baby Monster group acts.
  * @author Sean A. Irvine
  */
-public class A028511 implements Sequence {
+public class A028511 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Z Z47 = Z.valueOf(47);

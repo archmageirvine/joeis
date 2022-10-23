@@ -6,13 +6,13 @@ import java.util.List;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052456 Number of magic series of order n.
  * @author Sean A. Irvine
  */
-public class A052456 implements Sequence {
+public class A052456 extends Sequence0 {
 
   // After Robert Gerbicz
   // (Note this could perhaps be made incremental!)

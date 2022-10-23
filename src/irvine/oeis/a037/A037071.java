@@ -1,14 +1,14 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A037071 Smallest prime containing exactly n 9's.
  * @author Sean A. Irvine
  */
-public class A037071 implements Sequence {
+public class A037071 extends Sequence0 {
 
   private int mN = -1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A032744 Super-4 Numbers (4 * n^4 contains substring '4444' in its decimal expansion).
  * @author Sean A. Irvine
  */
-public class A032744 implements Sequence {
+public class A032744 extends Sequence0 {
 
   private long mN = 1167;
 

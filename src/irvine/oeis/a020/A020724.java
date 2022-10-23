@@ -1,13 +1,13 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020724 G.f.: 1/((1-6*x)*(1-9*x)*(1-12*x)).
  * @author Sean A. Irvine
  */
-public class A020724 implements Sequence {
+public class A020724 extends Sequence0 {
 
   private Z mA = Z.valueOf(12);
   private Z mB = Z.valueOf(18);

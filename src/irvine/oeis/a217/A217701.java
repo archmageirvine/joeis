@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000166;
 
 /**
@@ -11,7 +11,7 @@ import irvine.oeis.a000.A000166;
  * a(n) = Sum_{k=0..n} C(n,k)*D_{n-k}*n^k, where D_n = A000166(n).
  * @author Georg Fischer
  */
-public class A217701 implements Sequence {
+public class A217701 extends Sequence0 {
 
   private int mN = -1;
   private MemorySequence mSeq = MemorySequence.cachedSequence(new A000166());

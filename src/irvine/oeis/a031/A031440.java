@@ -2,13 +2,13 @@ package irvine.oeis.a031;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A031440 a(0)=3 and for n&gt;0 a(n) is the greatest prime factor of a(n-1)^2 - 2.
  * @author Sean A. Irvine
  */
-public class A031440 implements Sequence {
+public class A031440 extends Sequence0 {
 
   private Z mA = null;
 

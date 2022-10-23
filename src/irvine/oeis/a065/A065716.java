@@ -3,14 +3,14 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A065716 Number of 5's in decimal expansion of 2^n.
  * @author Georg Fischer
  */
-public class A065716 implements Sequence {
+public class A065716 extends Sequence0 {
 
   protected int mN = -1;
   

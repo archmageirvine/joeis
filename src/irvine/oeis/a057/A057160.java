@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057160 Smallest value of k for which the expression k*2^(2^n-1)-1 is prime.
  * @author Sean A. Irvine
  */
-public class A057160 implements Sequence {
+public class A057160 extends Sequence0 {
 
   private int mN = -1;
 

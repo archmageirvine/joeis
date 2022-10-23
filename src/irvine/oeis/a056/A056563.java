@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056563 Number of primes which are the difference between two triangular numbers, where the larger is the n-th triangular number.
  * @author Sean A. Irvine
  */
-public class A056563 implements Sequence {
+public class A056563 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

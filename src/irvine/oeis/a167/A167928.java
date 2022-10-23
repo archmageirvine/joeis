@@ -3,6 +3,7 @@ package irvine.oeis.a167;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002865;
 import irvine.oeis.a032.A032741;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a032.A032741;
  * A167928 Number of partitions of n that do not contain 1 as a part and whose parts are not the same divisor of n.
  * @author Georg Fischer
  */
-public class A167928 implements Sequence {
+public class A167928 extends Sequence0 {
 
   final Sequence mA002865 = new A002865();
   final Sequence mA032741 = new A032741();

@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006873 Number of alternating 4-signed permutations.
  * @author Sean A. Irvine
  */
-public class A006873 implements Sequence {
+public class A006873 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> THREE_X = RING.create(Arrays.asList(Q.ZERO, Q.THREE));

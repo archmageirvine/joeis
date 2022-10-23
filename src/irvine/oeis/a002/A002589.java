@@ -3,14 +3,14 @@ package irvine.oeis.a002;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002589 Largest primitive factor of 2^(2n+1) + 1.
  *
  * @author Sean A. Irvine
  */
-public class A002589 implements Sequence {
+public class A002589 extends Sequence0 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = -1;

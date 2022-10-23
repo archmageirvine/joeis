@@ -2,13 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049687 Array T read by diagonals: T(i,j)=number of lines passing through (0,0) and at least one other lattice point (h,k) satisfying 0&lt;=h&lt;=i, 0&lt;=k&lt;=j.
  * @author Sean A. Irvine
  */
-public class A049687 implements Sequence {
+public class A049687 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

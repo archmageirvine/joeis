@@ -3,13 +3,14 @@ package irvine.oeis.a108;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004186;
 
 /**
  * A108782 Difference between n and the largest number with the same digit set as n.
  * @author Georg Fischer
  */
-public class A108782 implements Sequence {
+public class A108782 extends Sequence0 {
 
   final Sequence mA004186 = new A004186();
   protected long mN;

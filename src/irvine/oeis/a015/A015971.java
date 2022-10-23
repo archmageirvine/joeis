@@ -2,13 +2,13 @@ package irvine.oeis.a015;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A015971 k is the first integer such that phi(k + n) | sigma(k).
  * @author Sean A. Irvine
  */
-public class A015971 implements Sequence {
+public class A015971 extends Sequence0 {
 
   private long mN = -1;
 

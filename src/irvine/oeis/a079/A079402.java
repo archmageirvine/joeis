@@ -3,13 +3,14 @@ package irvine.oeis.a079;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a039.A039622;
 
 /**
  * A079402 Number of permutations of n^2 distinct integers free of any monotonic increasing or decreasing (n+1)-subsequence.
  * @author Georg Fischer
  */
-public class A079402 implements Sequence {
+public class A079402 extends Sequence0 {
 
   final Sequence mA039622 = new A039622();
   @Override

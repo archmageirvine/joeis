@@ -2,14 +2,14 @@ package irvine.oeis.a055;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicLongArray;
 
 /**
  * A055108 Largest odd number that can be represented in exactly n ways as p+2*i^2 where p is 1 or a prime and i &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A055108 implements Sequence {
+public class A055108 extends Sequence0 {
 
   // Uses a heuristic. Any failure will eventually be detected.
 

@@ -2,13 +2,13 @@ package irvine.oeis.a029;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A029821 Average theta series of odd unimodular lattices of dimension 20 (multiplied by 31).
  * @author Sean A. Irvine
  */
-public class A029821 implements Sequence {
+public class A029821 extends Sequence0 {
 
   // After Michael Somos
 

@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057503 Signature-permutation of a Catalan Automorphism: Deutsch's 1998 bijection on Dyck paths.
  * @author Sean A. Irvine
  */
-public class A057503 implements Sequence {
+public class A057503 extends Sequence0 {
 
   private int mN = -1;
   private final MemorySequence mA057164 = MemorySequence.cachedSequence(new A057164());

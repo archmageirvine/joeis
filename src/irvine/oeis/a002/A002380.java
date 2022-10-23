@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002380 a(n) = 3^n reduced modulo 2^n.
  * @author Sean A. Irvine
  */
-public class A002380 implements Sequence {
+public class A002380 extends Sequence0 {
 
   private Z mT = Z.ONE;
   private Z mA = Z.ZERO;

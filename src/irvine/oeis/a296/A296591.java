@@ -3,13 +3,13 @@ package irvine.oeis.a296;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A296591 a(n) = Product_{k=0..n} (n + k)!.
  * @author Georg Fischer
  */
-public class A296591 implements Sequence {
+public class A296591 extends Sequence0 {
 
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN = -1;

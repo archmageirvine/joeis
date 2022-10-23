@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005220 Number of Dyck paths of knight moves.
  * @author Sean A. Irvine
  */
-public class A005220 implements Sequence {
+public class A005220 extends Sequence0 {
 
   private long mN = -1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004956 a(n) = ceiling(n*phi), where phi is the golden ratio, A001622.
  * @author Sean A. Irvine
  */
-public class A004956 implements Sequence {
+public class A004956 extends Sequence0 {
 
   private long mN = -1;
 

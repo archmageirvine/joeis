@@ -1,14 +1,14 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.Italian;
 
 /**
  * A053069 Numbers that in Italian begin with the letter "d".
  * @author Sean A. Irvine
  */
-public class A053069 implements Sequence {
+public class A053069 extends Sequence0 {
 
   private int mN = 1;
 

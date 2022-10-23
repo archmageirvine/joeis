@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045900 Hypothetical numbers of terms in general expressions for coefficients of Lovelock Lagrangians.
  * @author Sean A. Irvine
  */
-public class A045900 implements Sequence {
+public class A045900 extends Sequence0 {
 
   private static final Z[] SMALL = {Z.ONE, Z.ONE, Z.THREE, Z.EIGHT};
   private int mN = -1;

@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
 
 /**
  * A049997 Numbers of the form Fibonacci(i)*Fibonacci(j).
  * @author Sean A. Irvine
  */
-public class A049997 implements Sequence {
+public class A049997 extends Sequence0 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final MemorySequence mFibo = MemorySequence.cachedSequence(new A000045());

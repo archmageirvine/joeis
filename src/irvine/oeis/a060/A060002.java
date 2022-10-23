@@ -6,13 +6,13 @@ import java.util.TreeSet;
 import irvine.math.Comparators;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A060002 Digitized partition numbers: numbers with (weakly) increasing digits ordered by sum of their digits then by the numbers themselves.
  * @author Sean A. Irvine
  */
-public class A060002 implements Sequence {
+public class A060002 extends Sequence0 {
 
   private final TreeSet<int[]> mPart = new TreeSet<>(Comparators.LEXICOGRAPHIC);
   private int mN = -1;

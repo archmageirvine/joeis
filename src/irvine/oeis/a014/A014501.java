@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014501 Number of graphs with loops, having unlabeled (non-isolated) nodes and n labeled edges.
  * @author Sean A. Irvine
  */
-public class A014501 implements Sequence {
+public class A014501 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> A = RING.create(Arrays.asList(Q.NEG_ONE, Q.HALF));

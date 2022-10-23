@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004654 Powers of 2 written in base 15. (Next term contains a non-decimal character.).
  * @author Sean A. Irvine
  */
-public class A004654 implements Sequence {
+public class A004654 extends Sequence0 {
 
   private Z mN = null;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049501 Major index of n, first definition.
  * @author Sean A. Irvine
  */
-public class A049501 implements Sequence {
+public class A049501 extends Sequence0 {
 
   private long mN = -1;
 

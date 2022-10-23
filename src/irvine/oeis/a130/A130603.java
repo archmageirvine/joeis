@@ -1,13 +1,13 @@
 package irvine.oeis.a130;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A130603 a(0)=0, a(n) = the n-th positive integer that is coprime to (a(n-1)+1).
  * @author Sean A. Irvine
  */
-public class A130603 implements Sequence {
+public class A130603 extends Sequence0 {
 
   private long mN = -1;
   private Z mPrev = Z.ZERO;

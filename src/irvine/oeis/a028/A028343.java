@@ -6,13 +6,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028343 Expansion of Product_{i&gt;=1} (1-x^i)^(1/i); also of exp(- Sum_{n&gt;=1}(d(n)*x^n/n)) where d(n) is the number of divisors of n.
  * @author Sean A. Irvine
  */
-public class A028343 implements Sequence {
+public class A028343 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private Polynomial<Q> mA = RING.zero();

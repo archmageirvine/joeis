@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A217388 Alternating sums of the ordered Bell numbers (number of preferential arrangements) A000670.
  * E.g.f.: 1/(2-exp(x))-exp(-x)*log(1/(2-exp(x)))
  * @author Georg Fischer
  */
-public class A217388 implements Sequence {
+public class A217388 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

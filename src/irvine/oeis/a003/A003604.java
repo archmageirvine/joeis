@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003604 Number of primes &lt;= n!.
  * @author Sean A. Irvine
  */
-public class A003604 implements Sequence {
+public class A003604 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mF = Z.ONE;

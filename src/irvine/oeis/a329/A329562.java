@@ -3,13 +3,14 @@ package irvine.oeis.a329;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007953;
 
 /**
  * A329562 a(n) = 2^(sum of digits of n).
  * @author Georg Fischer
  */
-public class A329562 implements Sequence {
+public class A329562 extends Sequence0 {
 
   final Sequence mA007953 = new A007953();
   @Override

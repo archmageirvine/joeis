@@ -1,13 +1,13 @@
 package irvine.oeis.a082;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A082042 (n^2+1)n!.
  * @author Sean A. Irvine
  */
-public class A082042 implements Sequence {
+public class A082042 extends Sequence0 {
 
   private Z mF = Z.ONE;
   private long mN = -1;

@@ -1,13 +1,13 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055642 Number of digits in decimal expansion of n.
  * @author Sean A. Irvine
  */
-public class A055642 implements Sequence {
+public class A055642 extends Sequence0 {
 
   private long mN = -1;
 

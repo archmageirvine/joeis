@@ -5,13 +5,13 @@ package irvine.oeis.a177;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A177738 a(n) = floor( (x^n - x^(-n)) / (x - x^(-1)) ) where x = Pi-2.
  * @author Georg Fischer
  */
-public class A177738 implements Sequence {
+public class A177738 extends Sequence0 {
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
   private static final CR X = CR.PI.subtract(CR.TWO);
   private long mN = -1;

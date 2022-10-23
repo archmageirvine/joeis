@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
 
 /**
  * A020908 Number of terms in Zeckendorf representation of 2^n.
  * @author Sean A. Irvine
  */
-public class A020908 implements Sequence {
+public class A020908 extends Sequence0 {
 
   private final A000045 mFiboSeq = new A000045();
   private final ArrayList<Z> mFibo = new ArrayList<>();

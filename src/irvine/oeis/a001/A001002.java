@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001002 Number of dissections of a convex (n+2)-gon into triangles and quadrilaterals by nonintersecting diagonals.
  * @author Sean A. Irvine
  */
-public class A001002 implements Sequence {
+public class A001002 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

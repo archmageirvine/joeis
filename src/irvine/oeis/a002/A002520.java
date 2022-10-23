@@ -5,13 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000122;
 
 /**
  * A002520 Theta series of 28-dimensional unimodular lattice with no roots and with no parity vector of norm 4.
  * @author Sean A. Irvine
  */
-public class A002520 implements Sequence {
+public class A002520 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Z Z56 = Z.valueOf(56);

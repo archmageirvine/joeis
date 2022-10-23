@@ -1,13 +1,13 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010802 14th powers: a(n) = n^14.
  * @author Sean A. Irvine
  */
-public class A010802 implements Sequence {
+public class A010802 extends Sequence0 {
 
   private long mN = -1;
 

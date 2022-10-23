@@ -2,13 +2,13 @@ package irvine.oeis.a031;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A031286 Additive persistence: number of summations of digits needed to obtain a single digit (the additive digital root).
  * @author Sean A. Irvine
  */
-public class A031286 implements Sequence {
+public class A031286 extends Sequence0 {
 
   private long mN = -1;
 

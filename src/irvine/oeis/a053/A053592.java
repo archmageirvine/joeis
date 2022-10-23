@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053592 Open 3-dimensional ball numbers (version 1): a(n) is the number of integer points (i,j,k) contained in an open ball of diameter n, centered at (0,0,0).
  * @author Sean A. Irvine
  */
-public class A053592 implements Sequence {
+public class A053592 extends Sequence0 {
 
   private long mN = -1;
 

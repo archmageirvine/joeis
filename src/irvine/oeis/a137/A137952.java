@@ -3,13 +3,13 @@ package irvine.oeis.a137;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A137952 G.f. satisfies A(x) = 1 + x*(1 + x*A(x)^3)^2.
  * @author Georg Fischer
  */
-public class A137952 implements Sequence {
+public class A137952 extends Sequence0 {
 
   private int mN;
   private final long mParm1;

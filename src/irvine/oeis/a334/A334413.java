@@ -3,13 +3,14 @@ package irvine.oeis.a334;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006340;
 
 /**
  * A334413 First differences of A101803.
  * @author Georg Fischer
  */
-public class A334413 implements Sequence {
+public class A334413 extends Sequence0 {
 
   final Sequence mA006340 = new A006340();
   @Override

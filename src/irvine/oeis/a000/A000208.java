@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000208 Number of even sequences with period 2n.
  * @author Sean A. Irvine
  */
-public class A000208 implements Sequence {
+public class A000208 extends Sequence0 {
 
   private boolean mEven = false;
   private final A000013 mStep1 = new A000013();

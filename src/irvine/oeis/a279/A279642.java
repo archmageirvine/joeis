@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A279642 Exponential transform of the ninth powers A001017.
  * E.g.f.: exp(exp(x)*(x^9+36*x^8+462*x^7+2646*x^6+6951*x^5+7770*x^4 +3025*x^3 +255*x^2+x))
  * @author Georg Fischer
  */
-public class A279642 implements Sequence {
+public class A279642 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

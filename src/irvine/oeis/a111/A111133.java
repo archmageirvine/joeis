@@ -3,13 +3,14 @@ package irvine.oeis.a111;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000009;
 
 /**
  * A111133 Number of partitions of n into at least two distinct parts.
  * @author Georg Fischer
  */
-public class A111133 implements Sequence {
+public class A111133 extends Sequence0 {
 
   final Sequence mA000009 = new A000009();
   @Override

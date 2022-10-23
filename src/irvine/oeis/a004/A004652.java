@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004652 Expansion of x*(1+x^2+x^4)/((1-x)*(1-x^2)*(1-x^3)).
  * @author Sean A. Irvine
  */
-public class A004652 implements Sequence {
+public class A004652 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

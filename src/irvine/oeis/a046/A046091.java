@@ -6,12 +6,13 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046091 Number of connected planar graphs with n edges.
  * @author Sean A. Irvine
  */
-public class A046091 implements Sequence {
+public class A046091 extends Sequence0 {
 
   private static class MySequence extends ParallelGenerateGraphsSequence {
 

@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A024505 a (n) = [C (2 n, n)/2^(n + 2)].
  * @author Sean A. Irvine
  */
-public class A024505 implements Sequence {
+public class A024505 extends Sequence0 {
 
   private int mN = -1;
 

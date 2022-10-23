@@ -1,13 +1,13 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052091 Left parts needed for the construction of the palindromic prime pyramid starting with 2.
  * @author Sean A. Irvine
  */
-public class A052091 implements Sequence {
+public class A052091 extends Sequence0 {
 
   private StringBuilder mA = null;
 

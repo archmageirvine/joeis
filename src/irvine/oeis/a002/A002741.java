@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002741 Logarithmic numbers: expansion of the e.g.f. -log(1-x) * e^(-x).
  * @author Sean A. Irvine
  */
-public class A002741 implements Sequence {
+public class A002741 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

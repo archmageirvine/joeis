@@ -1,13 +1,13 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A008893 Number of equilateral triangles formed by triples of points taken from a hexagonal chunk of side n in the hexagonal lattice.
  * @author Sean A. Irvine
  */
-public class A008893 implements Sequence {
+public class A008893 extends Sequence0 {
 
   private long mN = -1;
 

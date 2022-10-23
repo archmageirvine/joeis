@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004727 Delete all 8's from the sequence of nonnegative integers.
  * @author Sean A. Irvine
  */
-public class A004727 implements Sequence {
+public class A004727 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

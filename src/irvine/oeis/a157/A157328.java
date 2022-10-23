@@ -3,13 +3,14 @@ package irvine.oeis.a157;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a064.A064062;
 
 /**
  * A157328 Expansion of 1/(1-2x*c(4x)) with c(x) g.f. of Catalan numbers (A000108).
  * @author Georg Fischer
  */
-public class A157328 implements Sequence {
+public class A157328 extends Sequence0 {
 
   final Sequence mA064062 = new A064062();
   protected long mN;

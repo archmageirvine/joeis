@@ -3,13 +3,14 @@ package irvine.oeis.a194;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a159.A159795;
 
 /**
  * A194811 Number of grid points that are covered after n-th stage of A139250 version "Tree", starting with a(0) = 1 and assuming the toothpicks have length 4, 3, and 2.
  * @author Georg Fischer
  */
-public class A194811 implements Sequence {
+public class A194811 extends Sequence0 {
 
   final Sequence mA159795 = new A159795();
   @Override

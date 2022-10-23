@@ -5,14 +5,14 @@ import java.util.function.Function;
 import irvine.math.Mobius;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054718 Number of ternary sequences with primitive period n.
  * a(n) = Sum_{d|n} mu(d)*3^(n/d).
  * @author Georg Fischer
  */
-public class A054718 implements Sequence {
+public class A054718 extends Sequence0 {
 
   protected Z mBase;
   protected int mN;

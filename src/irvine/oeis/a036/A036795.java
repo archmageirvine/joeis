@@ -3,13 +3,14 @@ package irvine.oeis.a036;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001906;
 
 /**
  * A036795 Integers that can be decomposed into sums of different Fibonacci numbers of even argument.
  * @author Sean A. Irvine
  */
-public class A036795 implements Sequence {
+public class A036795 extends Sequence0 {
 
   private Z mN = Z.ZERO;
   private final MemorySequence mF2 = MemorySequence.cachedSequence(source());

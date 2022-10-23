@@ -5,13 +5,13 @@ import irvine.math.group.QPolynomialRingField;
 import irvine.math.polynomial.QPolynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003782 Coefficients of Jacobi Eisenstein series of index 1 and weight 6.
  * @author Sean A. Irvine
  */
-public class A003782 implements Sequence {
+public class A003782 extends Sequence0 {
 
   private static final QPolynomialRingField<Z> RING = new QPolynomialRingField<>(IntegerField.SINGLETON);
   private static final Z Z11 = Z.valueOf(11);

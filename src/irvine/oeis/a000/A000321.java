@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000321 H_n(-1/2), where H_n(x) is Hermite polynomial of degree n.
  * @author Sean A. Irvine
  */
-public class A000321 implements Sequence {
+public class A000321 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.NEG_ONE;

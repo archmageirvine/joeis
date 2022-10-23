@@ -7,14 +7,14 @@ import java.util.HashSet;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Triple;
 
 /**
  * A003142 Largest subset of 3 X 3 X ... X 3 cube (in n dimensions) with no 3 points collinear.
  * @author Sean A. Irvine
  */
-public class A003142 implements Sequence {
+public class A003142 extends Sequence0 {
 
   private int mN = -1;
   private int mLimit = 1;

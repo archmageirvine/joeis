@@ -3,13 +3,13 @@ package irvine.oeis.a322;
 import irvine.math.padic.PAdic;
 import irvine.math.padic.PAdicField;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A322561 Digits of one of the two 17-adic integers sqrt(2) that is related to A322559.
  * @author Sean A. Irvine
  */
-public class A322561 implements Sequence {
+public class A322561 extends Sequence0 {
 
   private final PAdic mA = new PAdicField(17).sqrt(PAdic.create(17, 2));
   private int mN = -1;

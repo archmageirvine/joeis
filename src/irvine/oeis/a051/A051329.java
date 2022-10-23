@@ -3,13 +3,14 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a053.A053735;
 
 /**
  * A051329 A generalized Thue-Morse sequence.
  * @author Georg Fischer
  */
-public class A051329 implements Sequence {
+public class A051329 extends Sequence0 {
 
   final Sequence mA053735 = new A053735();
   @Override

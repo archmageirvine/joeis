@@ -3,13 +3,14 @@ package irvine.oeis.a106;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a109.A109051;
 
 /**
  * A106611 a(n) = numerator of n/(n+10).
  * @author Georg Fischer
  */
-public class A106611 implements Sequence {
+public class A106611 extends Sequence0 {
 
   final Sequence mA109051 = new A109051();
   @Override

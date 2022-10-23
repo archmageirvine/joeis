@@ -3,6 +3,7 @@ package irvine.oeis.a122;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 import irvine.oeis.a000.A000712;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a000.A000712;
  * A122768 Number of combinations which can be taken from the integer partitions of n. Total number of cases in the (n,m)-fragmentation process.
  * @author Georg Fischer
  */
-public class A122768 implements Sequence {
+public class A122768 extends Sequence0 {
 
   final Sequence mA000041 = new A000041();
   final Sequence mA000712 = new A000712();

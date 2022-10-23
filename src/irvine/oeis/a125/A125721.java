@@ -3,6 +3,7 @@ package irvine.oeis.a125;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000142;
 import irvine.oeis.a027.A027423;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a027.A027423;
  * A125721 a(n)=2*n!/d(n!); d(m)=A000005(m) is the number of divisors of m.
  * @author Georg Fischer
  */
-public class A125721 implements Sequence {
+public class A125721 extends Sequence0 {
 
   final Sequence mA000142 = new A000142();
   final Sequence mA027423 = new A027423();

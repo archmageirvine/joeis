@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006252 Expansion of e.g.f. 1/(1 - log(1+x)).
  * @author Sean A. Irvine
  */
-public class A006252 implements Sequence {
+public class A006252 extends Sequence0 {
 
   private long mN = -1;
 

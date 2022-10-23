@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005903 Number of points on surface of dodecahedron: 30n^2 + 2 for n &gt; 0.
  * @author Sean A. Irvine
  */
-public class A005903 implements Sequence {
+public class A005903 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

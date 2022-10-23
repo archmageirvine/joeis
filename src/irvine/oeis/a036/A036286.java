@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A036286 Periodic vertical binary vectors of Fibonacci numbers, topmost bits being most significant.
  * @author Sean A. Irvine
  */
-public class A036286 implements Sequence {
+public class A036286 extends Sequence0 {
 
   private int mN = -1;
   private int mLimit = 0;

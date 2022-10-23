@@ -5,13 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004016;
 
 /**
  * A033668 Theta series of 4-dimensional lattice A_2 tensor A2, with det 81, minimal norm 4.
  * @author Sean A. Irvine
  */
-public class A033668 implements Sequence {
+public class A033668 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final Sequence mA2 = new A004016();

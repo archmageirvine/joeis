@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001594 a(n) = 6^n + n^6.
  * @author Sean A. Irvine
  */
-public class A001594 implements Sequence {
+public class A001594 extends Sequence0 {
 
   private long mN = -1;
   private Z mT = Z.ONE;

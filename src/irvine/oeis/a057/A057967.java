@@ -10,13 +10,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057967 Triangle T(n,k) of numbers of minimal 4-covers of an unlabeled n+4-set that cover k points of that set uniquely (k=4,..,n+4).
  * @author Sean A. Irvine
  */
-public class A057967 implements Sequence {
+public class A057967 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> TWO = RING.monomial(Q.TWO, 0);

@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A120368 a(n) = number of sequences (a_1, a_2, ..., a_n) in {1,2,...,n} such that the range {a_1, a_2, ..., a_n} is an interval.
  * E.g.f.: (3-2*exp(x)+x*exp(x))/(exp(x)-2)^2
  * @author Georg Fischer
  */
-public class A120368 implements Sequence {
+public class A120368 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

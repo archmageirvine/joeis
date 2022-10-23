@@ -3,13 +3,14 @@ package irvine.oeis.a231;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a009.A009454;
 
 /**
  * A231530 Real part of Product_{k=1..n} (k+i), where i is the imaginary unit.
  * @author Georg Fischer
  */
-public class A231530 implements Sequence {
+public class A231530 extends Sequence0 {
 
   final Sequence mA009454 = new A009454();
   protected long mN;

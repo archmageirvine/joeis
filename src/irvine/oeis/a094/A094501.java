@@ -3,13 +3,13 @@ package irvine.oeis.a094;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A094501 Smallest number that requires n iterations of the sum of digits of the divisors (A034690) to reach 15.
  * @author Sean A. Irvine
  */
-public class A094501 implements Sequence {
+public class A094501 extends Sequence0 {
 
   // Apart from the first iteration the following should be way large
   // enough for most cases.

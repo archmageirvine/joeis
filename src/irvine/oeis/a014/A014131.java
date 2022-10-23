@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014131 a(n) = 2*a(n-1) if n odd else 2*a(n-1) + 6.
  * @author Sean A. Irvine
  */
-public class A014131 implements Sequence {
+public class A014131 extends Sequence0 {
 
   private Z mA = null;
   private long mN = 0;

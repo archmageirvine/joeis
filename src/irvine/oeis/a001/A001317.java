@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001317 Sierpi\u0144ski's triangle (Pascal's triangle mod 2) converted to decimal.
  * @author Sean A. Irvine
  */
-public class A001317 implements Sequence {
+public class A001317 extends Sequence0 {
 
   private Z mA = null;
 

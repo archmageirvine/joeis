@@ -2,13 +2,13 @@ package irvine.oeis.a231;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A231503 a(n) = Sum_{i=0..n} digsum_3(i)^2, where digsum_3(i) = A053735(i).
  * @author Georg Fischer
  */
-public class A231503 implements Sequence {
+public class A231503 extends Sequence0 {
 
   protected long mBase;
   protected int mPow;

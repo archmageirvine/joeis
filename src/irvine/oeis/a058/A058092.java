@@ -6,13 +6,13 @@ import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058092 McKay-Thompson series of class 9a for the Monster group.
  * @author Sean A. Irvine
  */
-public class A058092 implements Sequence {
+public class A058092 extends Sequence0 {
 
   protected  static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> X3 = RING.monomial(Q.ONE, 3);

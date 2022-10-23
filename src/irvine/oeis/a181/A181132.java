@@ -3,13 +3,14 @@ package irvine.oeis.a181;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a059.A059015;
 
 /**
  * A181132 a(0)=0; thereafter a(n) = total number of 0's in binary expansions of 1, ..., n.
  * @author Georg Fischer
  */
-public class A181132 implements Sequence {
+public class A181132 extends Sequence0 {
 
   final Sequence mA059015 = new A059015();
   @Override

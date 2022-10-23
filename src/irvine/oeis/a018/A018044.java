@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018044 Powers of cube root of 23 rounded up.
  * @author Sean A. Irvine
  */
-public class A018044 implements Sequence {
+public class A018044 extends Sequence0 {
 
   private Z mN = null;
 

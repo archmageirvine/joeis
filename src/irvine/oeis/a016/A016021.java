@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A016021 Number of permutations of {1,2,...,n} in which each element follows its proper divisors.
  * @author Sean A. Irvine
  */
-public class A016021 implements Sequence {
+public class A016021 extends Sequence0 {
 
   private final long[] mDivisorSets = new long[64];
   private TreeMap<Long, Z> mCounts = new TreeMap<>();

@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A159662 Any number of necklaces made from n distinct colored beads then linearly arranged in a display case.
  * E.g.f.: 1/(1-x/2-x^2/4+log(1-x)/2)
  * @author Georg Fischer
  */
-public class A159662 implements Sequence {
+public class A159662 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

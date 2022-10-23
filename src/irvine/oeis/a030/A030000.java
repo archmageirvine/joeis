@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A030000 a(n) is the smallest nonnegative number k such that the decimal expansion of 2^k contains the string n.
  * @author Sean A. Irvine
  */
-public class A030000 implements Sequence {
+public class A030000 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

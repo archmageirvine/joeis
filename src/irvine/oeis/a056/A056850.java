@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A056850 Minimal absolute difference of 3^n and 2^k.
  * @author Sean A. Irvine
  */
-public class A056850 implements Sequence {
+public class A056850 extends Sequence0 {
 
   private Z mN = null;
 

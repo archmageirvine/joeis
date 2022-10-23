@@ -1,13 +1,13 @@
 package irvine.oeis.a009;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A009714 a(n) = Product_{i=0..8} floor((n+i)/9).
  * @author Sean A. Irvine
  */
-public class A009714 implements Sequence {
+public class A009714 extends Sequence0 {
 
   private long mN = -1;
 

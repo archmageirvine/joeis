@@ -7,13 +7,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A263190 G.f. satisfies: [x^(n-1)] A(x)^(n^2) = (n!)^2 for n&gt;=1.
  * @author Sean A. Irvine
  */
-public class A263190 implements Sequence {
+public class A263190 extends Sequence0 {
 
 private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);

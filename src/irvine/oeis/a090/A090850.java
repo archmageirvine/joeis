@@ -2,13 +2,13 @@ package irvine.oeis.a090;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A090850 Clark's triangle with f=6 read by row.
  * @author Sean A. Irvine
  */
-public class A090850 implements Sequence {
+public class A090850 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

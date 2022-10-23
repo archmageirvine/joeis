@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A058067 Number of polynomial functions from Z to Z/nZ.
  * @author Sean A. Irvine
  */
-public class A058067 implements Sequence {
+public class A058067 extends Sequence0 {
 
   private long mN = -1;
 

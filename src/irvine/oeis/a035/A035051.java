@@ -2,13 +2,13 @@ package irvine.oeis.a035;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035051 Number of labeled rooted connected graphs where every block is a complete graph.
  * @author Sean A. Irvine
  */
-public class A035051 implements Sequence {
+public class A035051 extends Sequence0 {
 
   private int mN = -1;
 

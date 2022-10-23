@@ -3,13 +3,13 @@ package irvine.oeis.a027;
 import irvine.math.graph.CountIndependentSets;
 import irvine.math.graph.GraphFactory;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027667 Number of independent subsets of nodes of 3^n cube (P_3 X ... X P_3).
  * @author Sean A. Irvine
  */
-public class A027667 implements Sequence {
+public class A027667 extends Sequence0 {
 
   private int mN = -1;
 

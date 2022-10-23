@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003016 Number of occurrences of n as an entry in rows &lt;= n of Pascal's triangle (A007318).
  * @author Sean A. Irvine
  */
-public class A003016 implements Sequence {
+public class A003016 extends Sequence0 {
 
   private Z[] mPascal = null;
   private Z mN = Z.NEG_ONE;

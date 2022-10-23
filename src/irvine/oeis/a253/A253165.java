@@ -3,13 +3,14 @@ package irvine.oeis.a253;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a012.A012393;
 
 /**
  * A253165 a(n) = (-1)^n*2^(6*n+3)*(zeta(-2*n-1,1/2) - zeta(-2*n-1,1)), where zeta(a,z) is the generalized Riemann zeta function.
  * @author Georg Fischer
  */
-public class A253165 implements Sequence {
+public class A253165 extends Sequence0 {
 
   final Sequence mA012393 = new A012393();
   /** Construct the sequence. */

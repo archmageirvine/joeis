@@ -1,13 +1,13 @@
 package irvine.oeis.a061;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A061511 a(0) = 0; a(n) is obtained by incrementing each digit of a(n-1) by 1.
  * @author Georg Fischer
  */
-public class A061511 implements Sequence {
+public class A061511 extends Sequence0 {
 
   private Z mA0;
   private int mIncr;

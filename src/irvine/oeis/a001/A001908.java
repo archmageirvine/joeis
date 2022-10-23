@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001908 E.g.f. exp(-x)/(1-5*x).
  * @author Sean A. Irvine
  */
-public class A001908 implements Sequence {
+public class A001908 extends Sequence0 {
 
   private int mN = -1;
 

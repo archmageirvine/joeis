@@ -3,14 +3,14 @@ package irvine.oeis.a028;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
  * A028306 Triangle read by rows of numbers of permutations eliminating just card k out of n in game of Mousetrap.
  * @author Sean A. Irvine
  */
-public class A028306 implements Sequence {
+public class A028306 extends Sequence0 {
 
   // Cf. A007710
 

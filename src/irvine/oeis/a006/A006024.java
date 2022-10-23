@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006024 Number of labeled mating graphs with n nodes. Also called point-determining graphs.
  * @author Sean A. Irvine
  */
-public class A006024 implements Sequence {
+public class A006024 extends Sequence0 {
 
   private int mN = -1;
 

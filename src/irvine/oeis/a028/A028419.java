@@ -3,14 +3,14 @@ package irvine.oeis.a028;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Triple;
 
 /**
  * A028419 Congruence classes of triangles which can be drawn using lattice points in n X n grid as vertices.
  * @author Sean A. Irvine
  */
-public class A028419 implements Sequence {
+public class A028419 extends Sequence0 {
 
   // After Martin Renner
 

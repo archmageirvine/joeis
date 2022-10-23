@@ -3,14 +3,14 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A062756 Number of 1's in ternary (base-3) expansion of n.
  * @author Georg Fischer
  */
-public class A062756 implements Sequence {
+public class A062756 extends Sequence0 {
 
   protected int mN = -1;
   

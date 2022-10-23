@@ -2,13 +2,13 @@ package irvine.oeis.a108;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A108299 Triangle read by rows, 0 &lt;= k &lt;= n: T(n,k) = binomial(n-[(k+1)/2],[k/2])*(-1)^[(k+1)/2].
  * @author Sean A. Irvine
  */
-public class A108299 implements Sequence {
+public class A108299 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

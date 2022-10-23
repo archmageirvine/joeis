@@ -1,14 +1,14 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
  * A037067 Smallest prime containing exactly n 7's.
  * @author Sean A. Irvine
  */
-public class A037067 implements Sequence {
+public class A037067 extends Sequence0 {
 
   private int mN = -1;
 

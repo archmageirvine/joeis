@@ -3,13 +3,14 @@ package irvine.oeis.a283;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a048.A048291;
 
 /**
  * A283624 Number of {0,1} n X n matrices with no rows or columns in which all entries are the same.
  * @author Georg Fischer
  */
-public class A283624 implements Sequence {
+public class A283624 extends Sequence0 {
 
   final Sequence mA048291 = new A048291();
   protected long mN;

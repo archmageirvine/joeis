@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A004664 n! + n^2.
  * @author Sean A. Irvine
  */
-public class A004664 implements Sequence {
+public class A004664 extends Sequence0 {
 
   private Z mF = Z.ONE;
   private Z mN = Z.NEG_ONE;

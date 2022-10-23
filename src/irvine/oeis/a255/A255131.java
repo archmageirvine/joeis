@@ -3,13 +3,14 @@ package irvine.oeis.a255;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002828;
 
 /**
  * A255131 n minus the least number of squares that add up to n: a(n) = n - A002828(n).
  * @author Georg Fischer
  */
-public class A255131 implements Sequence {
+public class A255131 extends Sequence0 {
 
   final Sequence mA002828 = new A002828();
   protected long mN;

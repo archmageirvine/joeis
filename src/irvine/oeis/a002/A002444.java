@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002444 Denominator in Feinler's formula for unsigned Bernoulli number |B_{2n}|.
  * @author Sean A. Irvine
  */
-public class A002444 implements Sequence {
+public class A002444 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -2;

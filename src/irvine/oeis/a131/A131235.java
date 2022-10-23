@@ -8,13 +8,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A131235 Triangle read by rows: T(n,k) is number of (n-k) X k matrices, k=0..n, with nonnegative integer entries and every row and column sum &lt;= 2.
  * @author Sean A. Irvine
  */
-public class A131235 implements Sequence {
+public class A131235 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING_Y = new PolynomialRingField<>("y", Rationals.SINGLETON);
   private static final PolynomialRingField<Polynomial<Q>> RING_X = new PolynomialRingField<>(RING_Y);

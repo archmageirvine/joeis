@@ -4,14 +4,14 @@ import java.util.Arrays;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
  * A045843 Number of distinct even numbers formed from the digits of n.
  * @author Sean A. Irvine
  */
-public class A045843 implements Sequence {
+public class A045843 extends Sequence0 {
 
   private long mN = -1;
 

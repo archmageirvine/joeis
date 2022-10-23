@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057673 Smallest prime p such that |2^n - p| is a prime.
  * @author Sean A. Irvine
  */
-public class A057673 implements Sequence {
+public class A057673 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mN = null;

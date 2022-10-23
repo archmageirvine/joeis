@@ -3,13 +3,14 @@ package irvine.oeis.a158;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a126.A126966;
 
 /**
  * A158495 Expansion of ((1-4x)+sqrt(1-4x))/(2(1-2x)).
  * @author Georg Fischer
  */
-public class A158495 implements Sequence {
+public class A158495 extends Sequence0 {
 
   final Sequence mA126966 = new A126966();
   protected long mN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a296;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A296374 a(0) = 3; a(n) = a(n-1)*(a(n-1)^2 - 3*a(n-1) + 4)/2.
  * @author Georg Fischer
  */
-public class A296374 implements Sequence {
+public class A296374 extends Sequence0 {
 
   private int mN;
   private Z mA;

@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046000 a(n) is the largest number m equal to the sum of digits of m^n.
  * @author Sean A. Irvine
  */
-public class A046000 implements Sequence {
+public class A046000 extends Sequence0 {
 
   // After Jean-Fran&ccedil;ois Alcover
 

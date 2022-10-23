@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014314 Number of up steps in all length n left factors of Dyck paths.
  * @author Sean A. Irvine
  */
-public class A014314 implements Sequence {
+public class A014314 extends Sequence0 {
 
   private Z mA = Z.ZERO;
   private Z mB = Z.ONE;

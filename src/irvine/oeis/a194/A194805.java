@@ -3,13 +3,14 @@ package irvine.oeis.a194;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a084.A084376;
 
 /**
  * A194805 Number of parts that are visible in one of the three views of the section model of partitions version "tree" with n sections.
  * @author Georg Fischer
  */
-public class A194805 implements Sequence {
+public class A194805 extends Sequence0 {
 
   final Sequence mA084376 = new A084376();
   @Override

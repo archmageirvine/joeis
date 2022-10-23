@@ -3,13 +3,14 @@ package irvine.oeis.a256;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001316;
 
 /**
  * A256257 6 times numbers of Gould's sequence A001316.
  * @author Georg Fischer
  */
-public class A256257 implements Sequence {
+public class A256257 extends Sequence0 {
 
   final Sequence mA001316 = new A001316();
   @Override

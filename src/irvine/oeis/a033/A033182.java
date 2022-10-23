@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A033182 Number of pairs (p,q) such that 5*p + 6*q = n.
  * @author Sean A. Irvine
  */
-public class A033182 implements Sequence {
+public class A033182 extends Sequence0 {
 
   private long mN = -1;
 

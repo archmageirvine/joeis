@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A052880 Expansion of e.g.f.: LambertW(1-exp(x))/(1-exp(x)).
  * @author Sean A. Irvine
  */
-public class A052880 implements Sequence {
+public class A052880 extends Sequence0 {
 
   private int mN = -1;
 

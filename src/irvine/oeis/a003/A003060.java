@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003060 Smallest number with reciprocal of period length n in decimal (base 10).
  * @author Sean A. Irvine
  */
-public class A003060 implements Sequence {
+public class A003060 extends Sequence0 {
 
   private long mN = -1;
   private Z mTen = Z.ONE;

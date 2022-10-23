@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001492 Clock chimes with a quarter-hour bell.
  * @author Sean A. Irvine
  */
-public class A001492 implements Sequence {
+public class A001492 extends Sequence0 {
 
   private long mN = 0;
 

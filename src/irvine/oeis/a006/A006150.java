@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006150 Number of Dyck paths.
  * @author Sean A. Irvine
  */
-public class A006150 implements Sequence {
+public class A006150 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

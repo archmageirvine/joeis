@@ -3,6 +3,7 @@ package irvine.oeis.a071;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000085;
 import irvine.oeis.a057.A057693;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a057.A057693;
  * A071007 Number of permutations in the symmetric group S_n such that the maximal cycle has length exactly 3.
  * @author Georg Fischer
  */
-public class A071007 implements Sequence {
+public class A071007 extends Sequence0 {
 
   final Sequence mA000085 = new A000085();
   final Sequence mA057693 = new A057693();

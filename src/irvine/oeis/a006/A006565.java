@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006565 Number of ways to color vertices of a hexagon using &lt;= n colors, allowing only rotations.
  * @author Sean A. Irvine
  */
-public class A006565 implements Sequence {
+public class A006565 extends Sequence0 {
 
   private long mN = -1;
 

@@ -2,14 +2,14 @@ package irvine.oeis.a045;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002212;
 
 /**
  * A045908 Number of catafusenes with C_{2v}(b) symmetry (see reference for precise definition).
  * @author Sean A. Irvine
  */
-public class A045908 implements Sequence {
+public class A045908 extends Sequence0 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A002212());
   private int mN = -1;

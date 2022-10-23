@@ -3,11 +3,12 @@ package irvine.oeis.a344;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 /**
  * A344261 Number of n-step walks from one of the vertices with degree 3 to itself on the four-vertex diamond graph.
  * @author Georg Fischer
  */
-public class A344261 implements Sequence {
+public class A344261 extends Sequence0 {
 
   private final Sequence mA344236 = new A344236();
   protected long mN;

@@ -1,13 +1,13 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A028353 Coefficient of x^(2*n+1) in arctanh(x)/sqrt(1-x^2), multiplied by (2*n+1)!.
  * @author Sean A. Irvine
  */
-public class A028353 implements Sequence {
+public class A028353 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

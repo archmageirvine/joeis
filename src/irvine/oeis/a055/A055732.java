@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055732 Number of primes &lt;= 7^n.
  * @author Sean A. Irvine
  */
-public class A055732 implements Sequence {
+public class A055732 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mLimit = 1;

@@ -3,13 +3,14 @@ package irvine.oeis.a194;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a057.A057520;
 
 /**
  * A194045 Numbers whose binary expansion is a preorder traversal of a binary tree.
  * @author Georg Fischer
  */
-public class A194045 implements Sequence {
+public class A194045 extends Sequence0 {
 
   final Sequence mA057520 = new A057520();
   @Override

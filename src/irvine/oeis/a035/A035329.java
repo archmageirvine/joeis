@@ -1,13 +1,13 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035329 a(n) = n*(2*n+5)*(2*n+7).
  * @author Sean A. Irvine
  */
-public class A035329 implements Sequence {
+public class A035329 extends Sequence0 {
 
   private long mN = -1;
 

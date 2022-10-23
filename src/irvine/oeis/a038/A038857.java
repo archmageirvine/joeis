@@ -1,13 +1,13 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038857 Numbers ending with '2' that are the difference of two positive cubes.
  * @author Sean A. Irvine
  */
-public class A038857 implements Sequence {
+public class A038857 extends Sequence0 {
 
   private Z mN = Z.valueOf(142);
 

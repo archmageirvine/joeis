@@ -3,13 +3,13 @@ package irvine.oeis.a039;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A039760 Triangle of D-analogs of Stirling numbers of the 2nd kind.
  * @author Sean A. Irvine
  */
-public class A039760 implements Sequence {
+public class A039760 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

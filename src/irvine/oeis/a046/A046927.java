@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A046927 Number of ways to express 2n+1 as p+2q where p and q are primes.
  * @author Sean A. Irvine
  */
-public class A046927 implements Sequence {
+public class A046927 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

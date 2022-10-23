@@ -3,13 +3,13 @@ package irvine.oeis.a051;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A051287 Triangular array T read by rows: T(n,k)=P(n,k,|n-2k|), where P(n,k,c)=number of vectors (x(1),x(2,),...,x(n)) of k 1's and n-k 0's such that x(i)=x(n+1-i) for exactly c values of i.
  * @author Sean A. Irvine
  */
-public class A051287 implements Sequence {
+public class A051287 extends Sequence0 {
 
   private final ArrayList<long[][]> mCounts = new ArrayList<>();
   private int mN = -1;

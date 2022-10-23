@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007966 First factor in happy factorization of n.
  * @author Sean A. Irvine
  */
-public class A007966 implements Sequence {
+public class A007966 extends Sequence0 {
 
   private long mN = -1;
 

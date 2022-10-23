@@ -2,13 +2,13 @@ package irvine.oeis.a102;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A102670 Number of digits &gt;= 2 in the decimal representations of all integers from 0 to n.
  * @author Georg Fischer
  */
-public class A102670 implements Sequence {
+public class A102670 extends Sequence0 {
 
   private int mN;
   private final int mGeDigit;

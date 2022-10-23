@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055674 a(n) = least nonnegative integer h such that (n,h) is not collinear with any 2 points in the set S(n-1) := {(m,a(m)), (m,b(m)): m = 0,1,...,n-1} for n &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A055674 implements Sequence {
+public class A055674 extends Sequence0 {
 
   private final List<Long> mA = new ArrayList<>();
   protected final List<Long> mB = new ArrayList<>();

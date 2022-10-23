@@ -5,13 +5,13 @@ import java.util.HashSet;
 import chesspresso.move.IllegalMoveException;
 import chesspresso.position.Position;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A019319 Number of possible chess diagrams after n plies.
  * @author Sean A. Irvine
  */
-public class A019319 implements Sequence {
+public class A019319 extends Sequence0 {
 
   // Cf. A048987
 

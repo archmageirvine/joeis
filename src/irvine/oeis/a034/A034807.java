@@ -2,13 +2,13 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034807 Triangle T(n,k) of coefficients of Lucas (or Cardan) polynomials.
  * @author Sean A. Irvine
  */
-public class A034807 implements Sequence {
+public class A034807 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

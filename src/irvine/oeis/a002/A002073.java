@@ -7,13 +7,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002073 Numerators of coefficients in an asymptotic expansion of the confluent hypergeometric function F(1-b; 2; 4b).
  * @author Sean A. Irvine
  */
-public class A002073 implements Sequence {
+public class A002073 extends Sequence0 {
 
   private static final PolynomialRingField<Q> FIELD = new PolynomialRingField<>(Rationals.SINGLETON);
 

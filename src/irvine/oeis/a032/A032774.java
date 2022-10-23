@@ -1,13 +1,13 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A032774 a(n) = floor( n*(n+1)*(n+2)*...*(n+6) / (n+(n+1)+(n+2)+...+(n+6)) ).
  * @author Sean A. Irvine
  */
-public class A032774 implements Sequence {
+public class A032774 extends Sequence0 {
 
   private long mN = -1;
 

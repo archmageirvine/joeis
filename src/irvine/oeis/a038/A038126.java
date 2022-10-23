@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038126 a(n) = floor( sqrt(2*Pi)*n ) (a Beatty sequence).
  * @author Sean A. Irvine
  */
-public class A038126 implements Sequence {
+public class A038126 extends Sequence0 {
 
   private static final CR C = CR.TAU.sqrt();
   private long mN = -1;

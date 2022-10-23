@@ -1,14 +1,14 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A059125 A self-generated dragon-like folding sequence.
  * @author Sean A. Irvine
  */
-public class A059125 implements Sequence {
+public class A059125 extends Sequence0 {
 
   private final LongDynamicBooleanArray mA = new LongDynamicBooleanArray();
   private long mR = 1;

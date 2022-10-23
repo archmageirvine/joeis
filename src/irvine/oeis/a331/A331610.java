@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A331610 E.g.f.: exp(1 / (1 - tan(x)) - 1).
  * E.g.f.: exp(sin(x) / (cos(x) - sin(x)))
  * @author Georg Fischer
  */
-public class A331610 implements Sequence {
+public class A331610 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

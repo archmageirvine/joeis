@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014205 (1/12)*(n+5)*(n+1)*n^2.
  * @author Sean A. Irvine
  */
-public class A014205 implements Sequence {
+public class A014205 extends Sequence0 {
 
   private long mN = -1;
 

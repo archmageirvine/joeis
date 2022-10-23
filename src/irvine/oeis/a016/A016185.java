@@ -1,13 +1,13 @@
 package irvine.oeis.a016;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A016185 a(n) = 9^n - 8^n.
  * @author Sean A. Irvine
  */
-public class A016185 implements Sequence {
+public class A016185 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

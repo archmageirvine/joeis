@@ -2,13 +2,13 @@ package irvine.oeis.a039;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A039708 a(n) = min{m: Sum_{x=0..m} binomial(n,x) &gt;= 0.95*2^n}.
  * @author Sean A. Irvine
  */
-public class A039708 implements Sequence {
+public class A039708 extends Sequence0 {
 
   private static final Z Z95 = Z.valueOf(95);
   private int mN = -1;

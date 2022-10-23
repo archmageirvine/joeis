@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A005920 Tricapped prism numbers.
  * @author Sean A. Irvine
  */
-public class A005920 implements Sequence {
+public class A005920 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

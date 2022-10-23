@@ -3,12 +3,13 @@ package irvine.oeis.a247;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a016.A016098;
 /**
  * A247494 Number of crossing partitions of {1,2,...,n} that contain singletons.
  * @author Georg Fischer
  */
-public class A247494 implements Sequence {
+public class A247494 extends Sequence0 {
 
   private final Sequence mA016098 = new A016098();
   private final Sequence mA247491 = new A247491();

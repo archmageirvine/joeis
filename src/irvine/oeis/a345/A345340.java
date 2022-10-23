@@ -3,12 +3,13 @@ package irvine.oeis.a345;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a097.A097861;
 /**
  * A345340 The number of squares with vertices from the vertices of the n-dimensional hypercube.
  * @author Georg Fischer
  */
-public class A345340 implements Sequence {
+public class A345340 extends Sequence0 {
 
   private final Sequence mA097861 = new A097861();
   protected long mN;

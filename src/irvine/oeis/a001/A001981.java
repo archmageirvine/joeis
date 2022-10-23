@@ -7,13 +7,13 @@ import irvine.math.group.MultivariatePolynomialField;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001981 Restricted partitions.
  * @author Sean A. Irvine
  */
-public class A001981 implements Sequence {
+public class A001981 extends Sequence0 {
 
   private static final MultivariatePolynomialField<Z> RING = new MultivariatePolynomialField<>(IntegerField.SINGLETON, 2);
   private static final MultivariatePolynomial<Z> NUM = RING.one();

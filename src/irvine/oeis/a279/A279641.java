@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A279641 Exponential transform of the eighth powers A001016.
  * E.g.f.: exp(exp(x)*(x^8+28*x^7+266*x^6+1050*x^5+1701*x^4+966*x^3 +127*x^2 +x))
  * @author Georg Fischer
  */
-public class A279641 implements Sequence {
+public class A279641 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

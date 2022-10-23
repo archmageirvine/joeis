@@ -1,13 +1,13 @@
 package irvine.oeis.a060;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A060011 Schizophrenic sequence: these are the repeating digits in the decimal expansion of sqrt(f(2n+1)), where f(m) = A014824(m).
  * @author Sean A. Irvine
  */
-public class A060011 implements Sequence {
+public class A060011 extends Sequence0 {
 
   // After K. S. Brown
   // See https://www.mathpages.com/home/kmath404.htm

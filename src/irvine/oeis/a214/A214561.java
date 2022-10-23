@@ -3,14 +3,14 @@ package irvine.oeis.a214;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 
 /**
  * A214561 Number of 1's in binary expansion of n^n.
  * @author Georg Fischer
  */
-public class A214561 implements Sequence {
+public class A214561 extends Sequence0 {
 
   protected int mN = -1;
   

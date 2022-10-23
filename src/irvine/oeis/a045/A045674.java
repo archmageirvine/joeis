@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045674 Number of 2n-bead balanced binary necklaces which are equivalent to their reverse, complement and reversed complement.
  * @author Sean A. Irvine
  */
-public class A045674 implements Sequence {
+public class A045674 extends Sequence0 {
 
   // After Andrew Howroyd
 

@@ -2,14 +2,14 @@ package irvine.oeis.a034;
 // manually 2021-09-29
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A034939 a(n) is smallest number such that a(n)^2 + 1 is divisible by 5^n. 
  * @author Sean A. Irvine
  * @author Georg Fischer
  */
-public class A034939 implements Sequence {
+public class A034939 extends Sequence0 {
 
   protected Z mParm1;
   protected Z mParm2;

@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011842 a(n) = floor(n(n-1)(n-2)/24).
  * @author Sean A. Irvine
  */
-public class A011842 implements Sequence {
+public class A011842 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

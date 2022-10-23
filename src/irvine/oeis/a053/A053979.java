@@ -7,13 +7,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053979 Triangle T(n,k) giving number of rooted maps regardless of genus with n edges and k nodes (n &gt;= 0, k = 1..n+1).
  * @author Sean A. Irvine
  */
-public class A053979 implements Sequence {
+public class A053979 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> X1 = Polynomial.create(1, 1);

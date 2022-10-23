@@ -3,13 +3,14 @@ package irvine.oeis.a246;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a213.A213624;
 
 /**
  * A246833 Expansion of psi(-x)^2 * psi(x^4) in powers of x where psi() is a Ramanujan theta function.
  * @author Georg Fischer
  */
-public class A246833 implements Sequence {
+public class A246833 extends Sequence0 {
 
   final Sequence mA213624 = new A213624();
   protected long mN;

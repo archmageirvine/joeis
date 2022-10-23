@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A045330 Lesser of the smallest pair of consecutive numbers divisible by an n-th power, but not both divisible by an (n+1)-st power.
  * @author Sean A. Irvine
  */
-public class A045330 implements Sequence {
+public class A045330 extends Sequence0 {
 
   private int mN = 0;
 

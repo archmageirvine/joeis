@@ -2,13 +2,13 @@ package irvine.oeis.a011;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A011846 a(n) = floor( binomial(n,9)/10 ).
  * @author Sean A. Irvine
  */
-public class A011846 implements Sequence {
+public class A011846 extends Sequence0 {
 
   private long mN = -1;
 

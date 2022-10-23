@@ -4,13 +4,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.HararyMultiply;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002725 Number of incidence matrices: n X (n+1) binary matrices under row and column permutations.
  * @author Sean A. Irvine
  */
-public class A002725 implements Sequence {
+public class A002725 extends Sequence0 {
 
   private int mN = -1;
 

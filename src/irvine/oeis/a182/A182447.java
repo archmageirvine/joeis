@@ -4,13 +4,13 @@ package irvine.oeis.a182;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A182447 a(n) = Sum_{k = 0..n} C(n,k)^10.
  * @author Georg Fischer
  */
-public class A182447 implements Sequence {
+public class A182447 extends Sequence0 {
 
   private int mN = -1;
 

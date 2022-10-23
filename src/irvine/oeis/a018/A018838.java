@@ -1,13 +1,13 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018838 Minimum number of steps for a knight to reach (n,n) on an infinite chessboard.
  * @author Sean A. Irvine
  */
-public class A018838 implements Sequence {
+public class A018838 extends Sequence0 {
 
   private static final int[] SMALL_CASES = {0, 2, 4};
   private long mN = -1;

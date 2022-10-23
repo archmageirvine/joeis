@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007452 Expand cos x / exp x and invert nonzero coefficients.
  * @author Sean A. Irvine
  */
-public class A007452 implements Sequence {
+public class A007452 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.ONE;

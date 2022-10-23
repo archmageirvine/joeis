@@ -9,13 +9,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A350753 Triangle read by rows: T(n,k) is the number of unlabeled strongly connected digraphs with n arcs and k vertices, n &gt;= 0, k = 1..n+1.
  * @author Sean A. Irvine
  */
-public class A350753 implements Sequence {
+public class A350753 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

@@ -3,13 +3,13 @@ package irvine.oeis.a037;
 import irvine.factor.prime.Fast;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A037028 Prime closest to e^n.
  * @author Sean A. Irvine
  */
-public class A037028 implements Sequence {
+public class A037028 extends Sequence0 {
 
   private static final int TOLERANCE = -64; // in bits
   private final Fast mPrime = new Fast();

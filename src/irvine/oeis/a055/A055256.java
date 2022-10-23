@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A055256 Number of odd digits in 3^n.
  * @author Georg Fischer
  */
-public class A055256 implements Sequence {
+public class A055256 extends Sequence0 {
 
   private int mN = -1;
 

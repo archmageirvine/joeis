@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A038373 Number of n-step self-avoiding paths on quadrant grid starting at quadrant origin.
  * @author Sean A. Irvine
  */
-public class A038373 implements Sequence {
+public class A038373 extends Sequence0 {
 
   private int mN = -1;
   private final long mC = Lattices.Z2.neighbour(Lattices.Z2.origin(), 0);

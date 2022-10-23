@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001688 4th forward differences of factorial numbers A000142.
  * @author Sean A. Irvine
  */
-public class A001688 implements Sequence {
+public class A001688 extends Sequence0 {
 
   private long mN = -1;
   private Z mF = Z.ONE;

@@ -1,13 +1,13 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014569 Super-3 Numbers (3n^3 contains substring '333' in its decimal expansion).
  * @author Sean A. Irvine
  */
-public class A014569 implements Sequence {
+public class A014569 extends Sequence0 {
 
   private Z mN = Z.valueOf(260);
 

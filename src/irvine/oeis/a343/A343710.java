@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A343710 a(n) = 1 + 4 * Sum_{k=0..n-1} binomial(n,k) * (n-k-1)! * a(k).
  * E.g.f.: exp(x) / (1 + 4 * log(1 - x))
  * @author Georg Fischer
  */
-public class A343710 implements Sequence {
+public class A343710 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

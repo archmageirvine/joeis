@@ -7,13 +7,13 @@ import org.apfloat.ApfloatMath;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000691 Ramanujan's approximation to population of x^2 + y^2 &lt;= 2^n.
  * @author Sean A. Irvine
  */
-public class A000691 implements Sequence {
+public class A000691 extends Sequence0 {
 
   private static final int PRECISION = 500;
   private static final int TERMS = 5000;

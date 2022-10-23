@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049702 Array T read by diagonals; T(i,j)=number of directions determined by 2 lattice points in [ 0,i ]x[ 0,j ].
  * @author Sean A. Irvine
  */
-public class A049702 implements Sequence {
+public class A049702 extends Sequence0 {
 
   private long mN = -1;
   private long mM = 0;

@@ -2,13 +2,13 @@ package irvine.oeis.a027;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027465 Cube of lower triangular normalized binomial matrix.
  * @author Sean A. Irvine
  */
-public class A027465 implements Sequence {
+public class A027465 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

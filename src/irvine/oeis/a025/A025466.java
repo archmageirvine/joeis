@@ -1,13 +1,13 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A025466 Number of partitions of n into 4 distinct nonnegative cubes.
  * @author Sean A. Irvine
  */
-public class A025466 implements Sequence {
+public class A025466 extends Sequence0 {
 
   private long mN = -1;
 

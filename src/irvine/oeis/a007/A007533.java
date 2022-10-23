@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007533 a(n) = (5n+1)^2 + 4n+1.
  * @author Sean A. Irvine
  */
-public class A007533 implements Sequence {
+public class A007533 extends Sequence0 {
 
   private long mN = -1;
 

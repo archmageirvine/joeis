@@ -1,13 +1,13 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A035319 Number of rooted maps of genus n with one vertex and one face; the maps are considered on orientable surfaces and contain 2n edges.
  * @author Sean A. Irvine
  */
-public class A035319 implements Sequence {
+public class A035319 extends Sequence0 {
 
   private long mN = -1;
   private Z mA = Z.ONE;

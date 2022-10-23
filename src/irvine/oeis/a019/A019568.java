@@ -3,13 +3,13 @@ package irvine.oeis.a019;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A019568 a(n) = smallest k &gt;= 1 such that {1^n, 2^n, 3^n, ..., k^n} can be partitioned into two sets with equal sum.
  * @author Sean A. Irvine
  */
-public class A019568 implements Sequence {
+public class A019568 extends Sequence0 {
 
   private int mN = -1;
 

@@ -1,14 +1,14 @@
 package irvine.oeis.a104;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A104356 Smallest m such that A104350(m) has exactly n trailing zeros in decimal representation.
  * a(n) = if n=0 then 1 else (if n&lt;5 then 5*n else 2^n).
  * @author Georg Fischer
  */
-public class A104356 implements Sequence {
+public class A104356 extends Sequence0 {
 
   private int mN;
 

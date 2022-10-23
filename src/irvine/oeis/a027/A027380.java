@@ -3,13 +3,13 @@ package irvine.oeis.a027;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A027380 Number of irreducible polynomials of degree n over GF(8); dimensions of free Lie algebras.
  * @author Sean A. Irvine
  */
-public class A027380 implements Sequence {
+public class A027380 extends Sequence0 {
 
   private int mN = -1;
 

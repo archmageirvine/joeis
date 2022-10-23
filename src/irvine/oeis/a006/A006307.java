@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006307 Number of ways writing 2^n as unordered sums of 2 primes.
  * @author Sean A. Irvine
  */
-public class A006307 implements Sequence {
+public class A006307 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private Z mN = Z.ZERO;

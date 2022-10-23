@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.math.q.Q;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002790 Denominators of Cauchy numbers of second type (= Bernoulli numbers B_n^{(n)}).
  * @author Sean A. Irvine
  */
-public class A002790 implements Sequence {
+public class A002790 extends Sequence0 {
 
   int mN = -1;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a245;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A245805 a(n) = 12^n mod 11^n.
  * @author Georg Fischer
  */
-public class A245805 implements Sequence {
+public class A245805 extends Sequence0 {
 
   private int mN = 0;
   private final Z mBase = Z.valueOf(12);

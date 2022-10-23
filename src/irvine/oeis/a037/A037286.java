@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A037286 Replace 2n+1 with concatenation of its divisors.
  * @author Sean A. Irvine
  */
-public class A037286 implements Sequence {
+public class A037286 extends Sequence0 {
 
   private long mN = -1;
 

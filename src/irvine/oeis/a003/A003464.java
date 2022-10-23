@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A003464 a(n) = (6^n - 1)/5.
  * @author Sean A. Irvine
  */
-public class A003464 implements Sequence {
+public class A003464 extends Sequence0 {
 
   private Z mA = null;
 

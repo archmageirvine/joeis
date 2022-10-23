@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A020483 Least prime p such that p+2n is also prime.
  * @author Sean A. Irvine
  */
-public class A020483 implements Sequence {
+public class A020483 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   protected long mN = -2;

@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A033921 Largest proper substring of 2^n that is a power of 2 (0 if none).
  * @author Sean A. Irvine
  */
-public class A033921 implements Sequence {
+public class A033921 extends Sequence0 {
 
   private int mN = -1;
 

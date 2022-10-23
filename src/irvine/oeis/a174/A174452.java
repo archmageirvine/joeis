@@ -3,13 +3,13 @@ package irvine.oeis.a174;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A174452 a(n) = n^2 mod 1000.
  * @author Georg Fischer
  */
-public class A174452 implements Sequence {
+public class A174452 extends Sequence0 {
 
   private int mN = 0;
   private final Z mExp = Z.TWO;

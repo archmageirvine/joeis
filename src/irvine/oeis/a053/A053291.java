@@ -1,13 +1,13 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A053291 Nonsingular n X n matrices over GF(4).
  * @author Sean A. Irvine
  */
-public class A053291 implements Sequence {
+public class A053291 extends Sequence0 {
 
   private int mN = -1;
 

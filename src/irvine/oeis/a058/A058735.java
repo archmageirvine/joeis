@@ -12,14 +12,14 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000669;
 
 /**
  * A058735 Triangle of coefficients in expansion of enumerators for series-reduced rooted trees by lines at the root.
  * @author Sean A. Irvine
  */
-public class A058735 implements Sequence {
+public class A058735 extends Sequence0 {
 
   // Roughly: T(n,k) = [x^n-k] Z(Sn; b1, ..., bn) where bk = Sum_{d|n} d * A000669(d) * x^(n/d)
 

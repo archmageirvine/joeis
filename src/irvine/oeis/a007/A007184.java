@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007184 a(n) = Product_{k=0..n-1} (2^(2^k - 1) + 1)^C(n,k).
  * @author Sean A. Irvine
  */
-public class A007184 implements Sequence {
+public class A007184 extends Sequence0 {
 
   private int mN = -1;
 

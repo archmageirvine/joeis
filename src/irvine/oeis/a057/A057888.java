@@ -3,14 +3,14 @@ package irvine.oeis.a057;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.string.Japanese;
 
 /**
  * A057888 In Japanese: 1-digit numbers in a-i-u-e-o order, then 2-digit numbers in a-i-u-e-o order, etc.
  * @author Sean A. Irvine
  */
-public class A057888 implements Sequence {
+public class A057888 extends Sequence0 {
 
   private final TreeMap<String, Integer> mA = new TreeMap<>();
   private int mN = 0;

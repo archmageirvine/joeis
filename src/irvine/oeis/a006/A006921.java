@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A006921 Diagonals of Pascal's triangle mod 2 interpreted as binary numbers.
  * @author Sean A. Irvine
  */
-public class A006921 implements Sequence {
+public class A006921 extends Sequence0 {
 
   private static long binomialMod2(final long n, final long r) {
     if (r == 0) {

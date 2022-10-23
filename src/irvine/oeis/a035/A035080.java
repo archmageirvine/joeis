@@ -5,13 +5,14 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007561;
 
 /**
  * A035080 Number of asymmetric connected graphs where every block is a complete graph.
  * @author Sean A. Irvine
  */
-public class A035080 implements Sequence {
+public class A035080 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;

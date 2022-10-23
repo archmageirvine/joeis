@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A057269 a(n-1)+k=a(n) =&gt; a(n)^k=a(n+1).
  * @author Georg Fischer
  */
-public class A057269 implements Sequence {
+public class A057269 extends Sequence0 {
 
   private int mN = -1;
   ;

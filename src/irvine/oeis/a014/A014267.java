@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A014267 Number of rooted trees on n nodes with forbidden limbs.
  * @author Sean A. Irvine
  */
-public class A014267 implements Sequence {
+public class A014267 extends Sequence0 {
 
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> NUM = Polynomial.create(0, 1, 0, 0, 0, 0, 0, -1, -1, 0, 0, 0, 0, 1);

@@ -3,18 +3,18 @@ package irvine.oeis.a081;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 import irvine.oeis.a024.A024702;
 
 /**
  * A081115 (p^2 - 1)/12 where p &gt; 3 runs through the primes.
  * @author Georg Fischer
  */
-public class A081115 implements Sequence {
+public class A081115 extends Sequence3 {
 
   final Sequence mA024702 = new A024702();
   @Override
   public Z next() {
     return Z.TWO.multiply(mA024702.next());
   }
-
 }

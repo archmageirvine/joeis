@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A002301 a(n) = n! / 3.
  * @author Sean A. Irvine
  */
-public class A002301 implements Sequence {
+public class A002301 extends Sequence3 {
 
   private Z mF = Z.TWO;
   private long mN = 2;

@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A001841 Related to Zarankiewicz's problem.
  * @author Sean A. Irvine
  */
-public class A001841 implements Sequence {
+public class A001841 extends Sequence3 {
 
   private long mN = 2;
 

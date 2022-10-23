@@ -3,13 +3,13 @@ package irvine.oeis.a126;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A126269 Numbers n such that hcl(n,n) &lt; hcl(n,n-1) where hcl(n,i) is the Huffman code length; see comments.
  * @author Sean A. Irvine
  */
-public class A126269 implements Sequence {
+public class A126269 extends Sequence3 {
 
   // There are conjectured formulas for this which are fast,
   // but we do it explicitly here to demonstrate the Huffman process.

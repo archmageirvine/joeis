@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A055525 Shortest other side of a Pythagorean triangle having n as length of one of the three sides.
  * @author Sean A. Irvine
  */
-public class A055525 implements Sequence {
+public class A055525 extends Sequence3 {
 
   private long mN = 2;
 

@@ -3,13 +3,13 @@ package irvine.oeis.a013;
 import irvine.math.z.Binomial;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A013980 Number of commutative elements in Coxeter group F_n.
  * @author Sean A. Irvine
  */
-public class A013980 implements Sequence {
+public class A013980 extends Sequence3 {
 
   private int mN = 2;
 

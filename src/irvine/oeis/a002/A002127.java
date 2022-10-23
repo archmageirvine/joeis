@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A002127 MacMahon's generalized sum of divisors function.
  * @author Sean A. Irvine
  */
-public class A002127 implements Sequence {
+public class A002127 extends Sequence3 {
 
   private long mN = 2;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A003878 n^4+(9/2)*n^3+n^2-(9/2)*n+1.
  * @author Sean A. Irvine
  */
-public class A003878 implements Sequence {
+public class A003878 extends Sequence3 {
 
   private Z mN = Z.NEG_ONE;
 

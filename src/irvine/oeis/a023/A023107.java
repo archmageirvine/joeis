@@ -3,13 +3,13 @@ package irvine.oeis.a023;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A023107 Largest integer in which every prefix is prime in base n (written in base 10).
  * @author Sean A. Irvine
  */
-public class A023107 implements Sequence {
+public class A023107 extends Sequence3 {
 
   private int mBase = 2;
 

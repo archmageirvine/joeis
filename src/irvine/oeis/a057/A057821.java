@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A057821 a(n) is the least nonnegative integer k such that 2^n - k is a safe prime.
  * @author Sean A. Irvine
  */
-public class A057821 implements Sequence {
+public class A057821 extends Sequence3 {
 
   private int mN = 2;
 

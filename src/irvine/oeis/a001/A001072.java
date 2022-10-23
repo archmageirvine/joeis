@@ -4,13 +4,13 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A001072 Number of minimally 2-edge-connected non-isomorphic graphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A001072 implements Sequence, GraphProcessor {
+public class A001072 extends Sequence3 implements GraphProcessor {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 2;

@@ -8,13 +8,13 @@ import irvine.math.nauty.NautySet;
 import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A054595 Number of labeled 2-connected minimally 2-edge-connected graphs by nodes.
  * @author Sean A. Irvine
  */
-public class A054595 implements Sequence, GraphProcessor {
+public class A054595 extends Sequence3 implements GraphProcessor {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 2;

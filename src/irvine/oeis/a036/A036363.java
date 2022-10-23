@@ -1,13 +1,13 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A036363 Line-labeled 2-trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A036363 implements Sequence {
+public class A036363 extends Sequence3 {
 
   private int mN = 2;
   private Z mF = Z.THREE;

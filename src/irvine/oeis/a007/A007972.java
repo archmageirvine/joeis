@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A007972 Number of permutations that are 2 "block reversals" away from 12...n.
  * @author Sean A. Irvine
  */
-public class A007972 implements Sequence {
+public class A007972 extends Sequence3 {
 
   // Much simpler conjectured formulas exist, this is brute force.
 

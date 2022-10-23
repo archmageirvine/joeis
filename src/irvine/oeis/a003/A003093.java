@@ -8,14 +8,14 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 import irvine.oeis.a120.A120348;
 
 /**
  * A003093 Number of planar 2-trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A003093 implements Sequence {
+public class A003093 extends Sequence3 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final A003092 mP = new A003092();

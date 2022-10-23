@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A025133 4th elementary symmetric function of C(n,0), C(n,1), ..., C(n,n).
  * @author Sean A. Irvine
  */
-public class A025133 implements Sequence {
+public class A025133 extends Sequence3 {
 
   private long mN = 2;
 

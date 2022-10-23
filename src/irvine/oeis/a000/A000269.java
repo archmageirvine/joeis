@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A000269 Number of trees with n nodes, 3 of which are labeled.
  * @author Sean A. Irvine
  */
-public class A000269 implements Sequence {
+public class A000269 extends Sequence3 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final A000081 mSeq = new A000081();

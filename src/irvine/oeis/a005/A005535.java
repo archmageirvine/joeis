@@ -5,13 +5,13 @@ import irvine.math.nauty.DirectedGraph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A005535 Number of semi-regular digraphs (with loops) on n unlabeled nodes with each node having out-degree 3.
  * @author Sean A. Irvine
  */
-public class A005535 implements Sequence, GraphProcessor {
+public class A005535 extends Sequence3 implements GraphProcessor {
 
   // The paper in the OEIS entry describes a cycle index approach, but I could not discover all the detail.
   // Cf. A003286.

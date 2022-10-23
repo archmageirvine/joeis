@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A006600 Total number of triangles visible in regular n-gon with all diagonals drawn.
  * @author Sean A. Irvine
  */
-public class A006600 implements Sequence {
+public class A006600 extends Sequence3 {
 
   // After T. D. Noe
 

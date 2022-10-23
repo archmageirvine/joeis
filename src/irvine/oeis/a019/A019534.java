@@ -5,13 +5,13 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A019534 Let I_c(n,d) be the maximal number of independent sets in d-regular simple connected graphs with n nodes; sequence gives I_c(2n,5).
  * @author Sean A. Irvine
  */
-public class A019534 implements Sequence, GraphProcessor {
+public class A019534 extends Sequence3 implements GraphProcessor {
 
   private long mMax = 0;
   private int mN = 4;

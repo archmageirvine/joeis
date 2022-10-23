@@ -4,13 +4,13 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A003317 Number of unlabeled minimally 2-connected graphs with n nodes (also called "blocks").
  * @author Sean A. Irvine
  */
-public class A003317 implements Sequence, GraphProcessor {
+public class A003317 extends Sequence3 implements GraphProcessor {
 
   // This works but is really slow
 

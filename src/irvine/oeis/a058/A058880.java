@@ -3,13 +3,13 @@ package irvine.oeis.a058;
 import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A058880 a(n) = (1/(2n)) * Sum_{d|n} phi(d) * 2^(2n/d) + (2^((n-4)/2), if n is even).
  * @author Sean A. Irvine
  */
-public class A058880 implements Sequence {
+public class A058880 extends Sequence3 {
 
   private int mN = 2;
 

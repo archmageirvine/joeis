@@ -1,13 +1,13 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A015266 Gaussian binomial coefficient [ n,3 ] for q = -2.
  * @author Sean A. Irvine
  */
-public class A015266 implements Sequence {
+public class A015266 extends Sequence3 {
 
   private Z mQ = Z.valueOf(q()).square().multiply(q());
 

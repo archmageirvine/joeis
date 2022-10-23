@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A002348 Degree of rational Poncelet porism of n-gon.
  * @author Sean A. Irvine
  */
-public class A002348 implements Sequence {
+public class A002348 extends Sequence3 {
 
   private long mN = 2;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A014837 Sum of all the digits of n in every base from 2 to n-1.
  * @author Sean A. Irvine
  */
-public class A014837 implements Sequence {
+public class A014837 extends Sequence3 {
 
   protected long mN = 2;
 

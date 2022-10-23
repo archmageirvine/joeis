@@ -4,13 +4,13 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A001623 Number of 3 X n reduced (normalized) Latin rectangles.
  * @author Sean A. Irvine
  */
-public class A001623 implements Sequence {
+public class A001623 extends Sequence3 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 2;

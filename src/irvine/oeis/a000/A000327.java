@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A000327 Number of partitions into non-integral powers.
  * @author Sean A. Irvine
  */
-public class A000327 implements Sequence {
+public class A000327 extends Sequence3 {
 
   // Method due to R. J. Mathar
 

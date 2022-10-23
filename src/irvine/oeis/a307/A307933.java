@@ -3,13 +3,14 @@ package irvine.oeis.a307;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 import irvine.oeis.a124.A124352;
 
 /**
  * A307933 Number of (undirected) Hamiltonian paths in the n-antiprism graph.
  * @author Georg Fischer
  */
-public class A307933 implements Sequence {
+public class A307933 extends Sequence3 {
 
   final Sequence mA124352 = new A124352();
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A001805 a(n) = n! * binomial(n,3).
  * @author Sean A. Irvine
  */
-public class A001805 implements Sequence {
+public class A001805 extends Sequence3 {
 
   private long mN = 2;
   private Z mA = Z.SIX;

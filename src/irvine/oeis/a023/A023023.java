@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A023023 Number of partitions of n into 3 unordered relatively prime parts.
  * @author Sean A. Irvine
  */
-public class A023023 implements Sequence {
+public class A023023 extends Sequence3 {
 
   private long mN = 2;
 

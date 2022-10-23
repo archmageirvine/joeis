@@ -1,13 +1,13 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A015909 Inverse of A015908, that is, k is the first occurrence for which n | k^n + k.
  * @author Sean A. Irvine
  */
-public class A015909 implements Sequence {
+public class A015909 extends Sequence3 {
 
   private int mN = 2;
 

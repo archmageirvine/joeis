@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.plantri.Plantri;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A007021 Number of 4-connected simplicial polyhedra with n nodes.
  * @author Sean A. Irvine
  */
-public class A007021 implements Sequence {
+public class A007021 extends Sequence3 {
 
   private int mN = 2;
 

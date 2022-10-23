@@ -3,13 +3,13 @@ package irvine.oeis.a005;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A005782 Number of n-gons in cubic curve.
  * @author Sean A. Irvine
  */
-public class A005782 implements Sequence {
+public class A005782 extends Sequence3 {
 
   // After Michel Marcus
 

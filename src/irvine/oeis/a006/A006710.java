@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A006710 Expansion of eta(q^10)^12/(eta(q^2)^4*eta(q^5)^8) in powers of q.
  * @author Sean A. Irvine
  */
-public class A006710 implements Sequence {
+public class A006710 extends Sequence3 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> X2 = RING.monomial(Z.ONE, 2);

@@ -1,13 +1,13 @@
 package irvine.oeis.a011;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A011975 Covering numbers C(n,3,2).
  * @author Sean A. Irvine
  */
-public class A011975 implements Sequence {
+public class A011975 extends Sequence3 {
 
   private long mN = 2;
 

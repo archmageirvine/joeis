@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A006743 Number of convex polygons of length 2n on honeycomb, or EG-convex polyominoes.
  * @author Sean A. Irvine
  */
-public class A006743 implements Sequence {
+public class A006743 extends Sequence3 {
 
   private final Z[] mA = {Z.ONE, Z.ZERO, Z.THREE, Z.TWO, Z.TEN, Z.valueOf(14), Z.valueOf(40), Z.valueOf(74)};
   private int mN = 2;

@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A003468 Number of minimal 3-covers of a labeled n-set.
  * @author Sean A. Irvine
  */
-public class A003468 implements Sequence {
+public class A003468 extends Sequence3 {
 
   private Z mSeven = Z.valueOf(49);
   private Z mSix = Z.valueOf(108);

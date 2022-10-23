@@ -6,13 +6,13 @@ import java.util.List;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A003636 Number of classes per genus in quadratic field with discriminant -n.
  * @author Sean A. Irvine
  */
-public class A003636 implements Sequence {
+public class A003636 extends Sequence3 {
 
   // Based on Pari code by Rick L. Shepherd
 

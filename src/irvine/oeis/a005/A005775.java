@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A005775 Number of compact-rooted directed animals of size n having 3 source points.
  * @author Sean A. Irvine
  */
-public class A005775 implements Sequence {
+public class A005775 extends Sequence3 {
 
   private Z mA = Z.ZERO;
   private Z mB = Z.ONE;

@@ -5,13 +5,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A182661 Expansion of x^3*exp(-x)/(3*(1-x)).
  * @author Georg Fischer
  */
-public class A182661 implements Sequence {
+public class A182661 extends Sequence3 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 2;

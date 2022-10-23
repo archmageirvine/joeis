@@ -6,13 +6,13 @@ import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A002484 Number of m\u00e9nage permutations.
  * @author Sean A. Irvine
  */
-public class A002484 implements Sequence {
+public class A002484 extends Sequence3 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 2;

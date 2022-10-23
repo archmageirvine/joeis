@@ -2,13 +2,13 @@ package irvine.oeis.a030;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A030983 Number of rooted noncrossing trees with n nodes such that root has degree 1 and the child of the root has degree at least 2.
  * @author Sean A. Irvine
  */
-public class A030983 implements Sequence {
+public class A030983 extends Sequence3 {
 
   private long mN = 2;
 

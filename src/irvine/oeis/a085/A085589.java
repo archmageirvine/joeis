@@ -3,13 +3,13 @@ package irvine.oeis.a085;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A085589 Maximal cycle lengths in a certain class of one-dimensional cellular automata.
  * @author Sean A. Irvine
  */
-public class A085589 implements Sequence {
+public class A085589 extends Sequence3 {
 
   protected int mN = 2;
 

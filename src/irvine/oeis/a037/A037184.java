@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A037184 Functional digraphs with 1 node not in the image.
  * @author Sean A. Irvine
  */
-public class A037184 implements Sequence {
+public class A037184 extends Sequence3 {
 
   private long mN = 2;
   private Z mA = Z.SIX;

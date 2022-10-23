@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A007419 Largest number not the sum of distinct n-th-order polygonal numbers.
  * @author Sean A. Irvine
  */
-public class A007419 implements Sequence {
+public class A007419 extends Sequence3 {
 
   private long mN = 2;
 

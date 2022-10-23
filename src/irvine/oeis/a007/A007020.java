@@ -9,13 +9,13 @@ import irvine.math.plantri.Plantri;
 import irvine.math.plantri.PlantriGraphProcessor;
 import irvine.math.plantri.PlantriGraphState;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A007020 Maximal planar degree sequences with n nodes.
  * @author Sean A. Irvine
  */
-public class A007020 implements Sequence, PlantriGraphProcessor {
+public class A007020 extends Sequence3 implements PlantriGraphProcessor {
 
   private int mN = 2;
   private final HashSet<List<Integer>> mUniqueDegreeSequences = new HashSet<>();

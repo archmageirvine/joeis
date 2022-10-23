@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A005714 Coefficient of x^6 in expansion of (1+x+x^2)^n.
  * @author Sean A. Irvine
  */
-public class A005714 implements Sequence {
+public class A005714 extends Sequence3 {
 
   private long mN = 2;
 

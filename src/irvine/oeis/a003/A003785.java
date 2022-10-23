@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A003785 Coefficients of Jacobi cusp form of index 1 and weight 12.
  * @author Sean A. Irvine
  */
-public class A003785 implements Sequence {
+public class A003785 extends Sequence3 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> X2 = Polynomial.create(0, 0, 1);

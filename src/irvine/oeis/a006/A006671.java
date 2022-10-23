@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A006671 Edge-distinguishing chromatic number of cycle with n nodes.
  * @author Sean A. Irvine
  */
-public class A006671 implements Sequence {
+public class A006671 extends Sequence3 {
 
   private long mN = 2;
   private long mR = 0;

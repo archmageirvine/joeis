@@ -5,13 +5,13 @@ import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingCycler;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A005397 Number of n-step polygons on Kagome lattice.
  * @author Sean A. Irvine
  */
-public class A005397 implements Sequence {
+public class A005397 extends Sequence3 {
 
   private int mN = 2;
   private final long mC = Lattices.KAGOME.neighbour(Lattices.KAGOME.origin(), 0);

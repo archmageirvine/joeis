@@ -3,13 +3,14 @@ package irvine.oeis.a301;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 import irvine.oeis.a037.A037155;
 
 /**
  * A301427 Least nonnegative integer k such that n! - n - k is prime.
  * @author Georg Fischer
  */
-public class A301427 implements Sequence {
+public class A301427 extends Sequence3 {
 
   final Sequence mA037155 = new A037155();
   protected long mN;

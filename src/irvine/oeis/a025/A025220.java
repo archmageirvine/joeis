@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A025220 [ 3rd elementary symmetric function of {sqrt(k+1)} ], k = 1,2,...,n.
  * @author Sean A. Irvine
  */
-public class A025220 implements Sequence {
+public class A025220 extends Sequence3 {
 
   private long mN = 3;
   private CR mSum = CR.ZERO;

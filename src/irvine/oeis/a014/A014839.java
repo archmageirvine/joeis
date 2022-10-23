@@ -2,14 +2,14 @@ package irvine.oeis.a014;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 import irvine.oeis.a246.A246655;
 
 /**
  * A014839 Sum of all the digits of n in every prime-power base from 2 to n-1.
  * @author Sean A. Irvine
  */
-public class A014839 implements Sequence {
+public class A014839 extends Sequence3 {
 
   private long mN = 2;
 

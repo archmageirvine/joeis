@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A006556 Number of different cycles of digits in the decimal expansions of 1/p, 2/p, ..., (p-1)/p where p = n-th prime different from 2 or 5.
  * @author Sean A. Irvine
  */
-public class A006556 implements Sequence {
+public class A006556 extends Sequence3 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

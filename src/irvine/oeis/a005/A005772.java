@@ -6,13 +6,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A005772 Number of permutations of length n with 2 cycle lengths.
  * @author Sean A. Irvine
  */
-public class A005772 implements Sequence {
+public class A005772 extends Sequence3 {
 
   // After Alois P. Heinz
 

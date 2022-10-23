@@ -2,13 +2,13 @@ package irvine.oeis.a033;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A033282 Triangle read by rows: T(n, k) is the number of diagonal dissections of a convex n-gon into k+1 regions.
  * @author Sean A. Irvine
  */
-public class A033282 implements Sequence {
+public class A033282 extends Sequence3 {
 
   private long mN = 2;
   private long mM = 0;

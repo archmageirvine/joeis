@@ -1,14 +1,14 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 import irvine.util.string.English;
 
 /**
  * A001166 Smallest natural number requiring n letters in English.
  * @author Sean A. Irvine
  */
-public class A001166 implements Sequence {
+public class A001166 extends Sequence3 {
 
   private int mN = 2;
 

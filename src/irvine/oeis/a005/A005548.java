@@ -4,13 +4,13 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A005548 Number of n-step self-avoiding walks on f.c.c. lattice from (0,0,0) to (2,2,2).
  * @author Sean A. Irvine
  */
-public class A005548 implements Sequence {
+public class A005548 extends Sequence3 {
 
   // We set this up to search from (2,2,2) to (0,0,0)
 

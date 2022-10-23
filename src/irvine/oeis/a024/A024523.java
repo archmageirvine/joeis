@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A024523 a(n) = 3rd elementary symmetric function of {1, p(1), p(2), ..., p(n-1)}, where p(0) = 1.
  * @author Sean A. Irvine
  */
-public class A024523 implements Sequence {
+public class A024523 extends Sequence3 {
 
   private final Fast mPrime = new Fast();
   private Z mSum = Z.ZERO;

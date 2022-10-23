@@ -1,13 +1,13 @@
 package irvine.oeis.a343;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A343085 a(n) is the smallest number that is the sum of n positive cubes in four ways.
  * @author Sean A. Irvine
  */
-public class A343085 implements Sequence {
+public class A343085 extends Sequence3 {
 
   private long mN = 2;
 

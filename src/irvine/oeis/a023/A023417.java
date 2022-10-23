@@ -2,13 +2,13 @@ package irvine.oeis.a023;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A023417 Numerator of n*(n-3)*(3*n^2-6*n+2)/(3*(n-1)*(n-2)).
  * @author Sean A. Irvine
  */
-public class A023417 implements Sequence {
+public class A023417 extends Sequence3 {
 
   private Z mN = Z.TWO;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A006234 a(n) = n*3^(n-4).
  * @author Sean A. Irvine
  */
-public class A006234 implements Sequence {
+public class A006234 extends Sequence3 {
 
   private long mN = 2;
   private Z mThrees = Z.ONE;

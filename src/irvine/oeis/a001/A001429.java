@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 import irvine.oeis.a000.A000081;
 import irvine.oeis.a027.A027852;
 import irvine.oeis.a068.A068051;
@@ -12,7 +13,7 @@ import irvine.oeis.a068.A068051;
  * A001429 Number of n-node connected unicyclic graphs.
  * @author Sean A. Irvine
  */
-public class A001429 implements Sequence, Serializable {
+public class A001429 extends Sequence3 implements Serializable {
 
   private final Sequence mA000081 = new A000081();
   private final Sequence mA027852 = new A027852();

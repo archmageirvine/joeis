@@ -3,13 +3,13 @@ package irvine.oeis.a126;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A126676 Product_{i=3..n} |Stirling_1(i,3)|.
  * @author Georg Fischer
  */
-public class A126676 implements Sequence {
+public class A126676 extends Sequence3 {
 
   private int mN = 2;
 

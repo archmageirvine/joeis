@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A002373 Smallest prime in decomposition of 2n into sum of two odd primes.
  * @author Sean A. Irvine
  */
-public class A002373 implements Sequence {
+public class A002373 extends Sequence3 {
 
   private final Fast mPrime = new Fast();
   private long mN = 2;

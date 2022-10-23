@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A006546 Number of elements (a b, c d) in SL(2,Z) with trace n and 0 &lt;= a &lt;= {b, c} &lt;= d.
  * @author Sean A. Irvine
  */
-public class A006546 implements Sequence {
+public class A006546 extends Sequence3 {
 
   private long mN = 2;
 

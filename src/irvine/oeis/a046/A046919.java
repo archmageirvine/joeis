@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A046919 Maximal coefficient of polynomial p(n), with p(3)=1, p(n) = (1 - t^(2*n - 4))*(1 - t^(2*n - 3))*p(n - 1)/((1 - t^(n - 3))*(1 - t^n)).
  * @author Sean A. Irvine
  */
-public class A046919 implements Sequence {
+public class A046919 extends Sequence3 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private Polynomial<Z> mA = RING.one();

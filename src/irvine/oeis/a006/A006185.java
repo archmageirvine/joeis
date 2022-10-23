@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A006185 Number of pair-coverings with largest block size 3.
  * @author Sean A. Irvine
  */
-public class A006185 implements Sequence {
+public class A006185 extends Sequence3 {
 
   private long mN = 2;
 

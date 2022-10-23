@@ -8,13 +8,13 @@ import irvine.math.nauty.NautySet;
 import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A006714 Number of trivalent bipartite labeled graphs with 2n labeled nodes.
  * @author Sean A. Irvine
  */
-public class A006714 implements Sequence, GraphProcessor {
+public class A006714 extends Sequence3 implements GraphProcessor {
 
   private int mN = 4;
   private Z mFactorial = Z.valueOf(24);

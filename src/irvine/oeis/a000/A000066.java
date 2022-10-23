@@ -4,13 +4,13 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A000066 Smallest number of vertices in trivalent graph with girth (shortest cycle) = n.
  * @author Sean A. Irvine
  */
-public class A000066 implements Sequence, GraphProcessor {
+public class A000066 extends Sequence3 implements GraphProcessor {
 
   private int mN = 2;
   private int mM = 2;

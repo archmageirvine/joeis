@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A005564 Number of n-step walks on square lattice in the first quadrant which finish at distance n-3 from the x-axis.
  * @author Sean A. Irvine
  */
-public class A005564 implements Sequence {
+public class A005564 extends Sequence3 {
 
   private Z mN = Z.TWO;
 

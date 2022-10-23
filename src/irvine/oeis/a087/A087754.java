@@ -3,13 +3,14 @@ package irvine.oeis.a087;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 import irvine.oeis.a034.A034602;
 
 /**
  * A087754 a(n) = (C(2p,p)-2) / p^3, where p = prime(n).
  * @author Georg Fischer
  */
-public class A087754 implements Sequence {
+public class A087754 extends Sequence3 {
 
   final Sequence mA034602 = new A034602();
   @Override

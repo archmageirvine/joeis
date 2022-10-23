@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A001789 a(n) = binomial(n,3)*2^(n-3).
  * @author Sean A. Irvine
  */
-public class A001789 implements Sequence {
+public class A001789 extends Sequence3 {
 
   private int mN = 2;
 

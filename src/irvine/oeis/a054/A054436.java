@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A054436 Smallest area of a Pythagorean triangle with n as length of a leg.
  * @author Sean A. Irvine
  */
-public class A054436 implements Sequence {
+public class A054436 extends Sequence3 {
 
   protected long mN = 2;
 

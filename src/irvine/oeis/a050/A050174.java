@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A050174 T(n,k) = S(n,k,k-2), 1&lt;=k&lt;=n-2, n &gt;= 3, array S as in A050157.
  * @author Sean A. Irvine
  */
-public class A050174 implements Sequence {
+public class A050174 extends Sequence3 {
 
   private int mN = 2;
   private int mM = 2;

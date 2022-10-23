@@ -4,13 +4,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A000432 Series-parallel numbers.
  * @author Sean A. Irvine
  */
-public class A000432 implements Sequence {
+public class A000432 extends Sequence3 {
 
   // Expansion is in terms of A^(3) on p.143 of Riordan's book
   // Effective g.f. is 4(2+S)(1+S)/(1-S)^5 where S is g.f. for A000084

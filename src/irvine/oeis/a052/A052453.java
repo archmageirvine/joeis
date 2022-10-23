@@ -4,13 +4,13 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A052453 Number of nonisomorphic (3,n) cage graphs.
  * @author Sean A. Irvine
  */
-public class A052453 implements Sequence, GraphProcessor {
+public class A052453 extends Sequence3 implements GraphProcessor {
 
   private int mN = 2;
   private int mM = 2;

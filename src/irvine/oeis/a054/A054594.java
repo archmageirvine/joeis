@@ -8,13 +8,13 @@ import irvine.math.nauty.NautySet;
 import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A054594 Number of labeled minimally 2-connected graphs by nodes.
  * @author Sean A. Irvine
  */
-public class A054594 implements Sequence, GraphProcessor {
+public class A054594 extends Sequence3 implements GraphProcessor {
 
   // This works but is really slow, cf. A003317
 

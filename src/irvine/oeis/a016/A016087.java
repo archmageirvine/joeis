@@ -1,13 +1,13 @@
 package irvine.oeis.a016;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A016087 First nontrivial or multidigital Armstrong number to base n.
  * @author Sean A. Irvine
  */
-public class A016087 implements Sequence {
+public class A016087 extends Sequence3 {
 
   private long mN = 2;
 

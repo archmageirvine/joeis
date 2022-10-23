@@ -1,14 +1,14 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 import irvine.util.array.DynamicArray;
 
 /**
  * A000345 Number of partitions into non-integral powers.
  * @author Sean A. Irvine
  */
-public class A000345 implements Sequence {
+public class A000345 extends Sequence3 {
 
   private static final int HIGH_PRECISION_POWER = 1024; // 2^10
   private static final Z POWER = Z.ONE.shiftLeft(HIGH_PRECISION_POWER);

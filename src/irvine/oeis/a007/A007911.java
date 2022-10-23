@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A007911 a(n) = (n-1)!! - (n-2)!!.
  * @author Sean A. Irvine
  */
-public class A007911 implements Sequence {
+public class A007911 extends Sequence3 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.ONE;

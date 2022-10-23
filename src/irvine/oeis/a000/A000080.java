@@ -6,13 +6,13 @@ import java.util.List;
 
 import irvine.graph.Graph;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A000080 Number of nonisomorphic minimal triangle graphs.
  * @author Sean A. Irvine
  */
-public class A000080 implements Sequence {
+public class A000080 extends Sequence3 {
 
   protected static class Triangle {
     final int mA, mB, mC;

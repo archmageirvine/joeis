@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A002141 Class numbers of quadratic fields.
  * @author Sean A. Irvine
  */
-public class A002141 implements Sequence {
+public class A002141 extends Sequence3 {
 
   private final Fast mPrime = new Fast();
   private long mNp = 3;

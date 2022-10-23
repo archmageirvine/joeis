@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A051778 Triangle read by rows, where row (n) = n mod (n-1), n mod (n-2), n mod (n-3), ...n mod 2.
  * @author Sean A. Irvine
  */
-public class A051778 implements Sequence {
+public class A051778 extends Sequence3 {
 
   private Z mN = Z.TWO;
   private Z mM = Z.TWO;

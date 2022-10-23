@@ -3,14 +3,14 @@ package irvine.oeis.a040;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 import irvine.util.Permutation;
 
 /**
  * A040018 (Number of permutations of {1,2,...,n} for which sums of adjacent numbers are all distinct)/2n.
  * @author Sean A. Irvine
  */
-public class A040018 implements Sequence {
+public class A040018 extends Sequence3 {
 
   private int mN = 2;
 

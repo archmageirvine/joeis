@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A020649 Least quadratic nonresidue modulo n (with n &gt;= 3).
  * @author Sean A. Irvine
  */
-public class A020649 implements Sequence {
+public class A020649 extends Sequence3 {
 
   private long mN = 2;
 

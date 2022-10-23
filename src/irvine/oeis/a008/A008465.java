@@ -2,13 +2,13 @@ package irvine.oeis.a008;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A008465 2^(2n-6) * C(n,3) - 2^(n-2) * C(n,4).
  * @author Sean A. Irvine
  */
-public class A008465 implements Sequence {
+public class A008465 extends Sequence3 {
 
   private int mN = 2;
 

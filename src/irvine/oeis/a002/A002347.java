@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A002347 Consider all primes of form p = (x^2 + 11y^2 )/4; sequence gives values of y.
  * @author Sean A. Irvine
  */
-public class A002347 implements Sequence {
+public class A002347 extends Sequence3 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.ONE;

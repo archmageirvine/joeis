@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A024433 a(n) = difference between greatest two Stirling numbers S(n,k) of second kind, for k = 1,2,...,n.
  * @author Sean A. Irvine
  */
-public class A024433 implements Sequence {
+public class A024433 extends Sequence3 {
 
   private long mN = 2;
 

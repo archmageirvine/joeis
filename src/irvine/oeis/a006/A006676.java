@@ -3,13 +3,13 @@ package irvine.oeis.a006;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A006676 Number of paths through an array.
  * @author Sean A. Irvine
  */
-public class A006676 implements Sequence {
+public class A006676 extends Sequence3 {
 
   private int mN = 2;
 

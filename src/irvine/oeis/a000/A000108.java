@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000108 Catalan numbers: C(n) = binomial(2n,n)/(n+1) = (2n)!/(n!(n+1)!).
  * @author Sean A. Irvine
  */
-public class A000108 implements Sequence {
+public class A000108 extends Sequence0 {
 
   protected long mN = -1;
   private Z mC = Z.ONE;

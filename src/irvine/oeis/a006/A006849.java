@@ -13,6 +13,7 @@ public class A006849 extends A005159 {
   private boolean mEven = true;
 
   {
+    setOffset(1);
     super.next();
   }
 

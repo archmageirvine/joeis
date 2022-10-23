@@ -22,9 +22,10 @@ public class A003822 extends A000108 {
   private static final Polynomial<Z> DEN1 = Polynomial.create(1, -4, 5, -3);
   private static final Polynomial<Z> NUM2 = Polynomial.create(1, 0, 0, -1, -1);
   private static final Polynomial<Z> DEN2 = Polynomial.create(1, -1, -1, 0, 0, 1);
-  private List<Z> mCatalan = new ArrayList<>();
+  private final List<Z> mCatalan = new ArrayList<>();
 
   {
+    setOffset(3);
     super.next();
   }
 

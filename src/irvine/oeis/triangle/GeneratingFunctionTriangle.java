@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * Generating functions with 2 variables yielding a (lower left) triangle.
@@ -23,20 +23,13 @@ import irvine.oeis.SequenceWithOffset;
  * <code>mDen[0]</code> must be +1.
  * @author Georg Fischer
  */
-public class GeneratingFunctionTriangle implements SequenceWithOffset {
+public class GeneratingFunctionTriangle extends AbstractSequence {
 
-  private int mOffset; // first index
   protected ArrayList<Z> mNum; // coefficients of the numerator   polynomial
   protected ArrayList<Z> mDen; // coefficients of the denominator polynomial
   protected int mIndex; // index of next term to be generated
   protected int mTriX; // current triangle index = exponent for x 
   protected int mTriY; // current triangle index = exponent for y
-
-  /**
-   * Empty constructor.
-   */
-  protected GeneratingFunctionTriangle() {
-  }
 
   /**
    * Construct a new rational integer polynomial generating function sequence.
@@ -45,7 +38,7 @@ public class GeneratingFunctionTriangle implements SequenceWithOffset {
    * @param den coefficients of denominator polynomial in triangular order
    */
   public GeneratingFunctionTriangle(final int offset, final Z[] num, final Z[] den) {
-    mOffset = offset;
+    super(offset);
     mNum = new ArrayList<>(num.length + 128); // will extend in 'next'
     int itri = 0;
     int ix = 0;
@@ -135,19 +128,6 @@ public class GeneratingFunctionTriangle implements SequenceWithOffset {
    */
   public GeneratingFunctionTriangle(final int offset, final String num, final String den) {
     this(offset, ZUtils.toZ(num), ZUtils.toZ(den));
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
-
-  /**
-   * Modify the offset after construction.
-   * @param offset first valid term has this index
-   */
-  public void setOffset(final int offset) {
-    mOffset = offset;
   }
 
   /**

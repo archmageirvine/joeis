@@ -13,6 +13,6 @@ public class A060059 extends A060058 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(0, ++mN, k -> get(mN, k));
+    return Integers.SINGLETON.sum(0, ++mN, k -> mA.get(mN, k));
   }
 }

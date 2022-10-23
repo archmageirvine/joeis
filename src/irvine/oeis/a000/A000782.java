@@ -9,6 +9,9 @@ import irvine.math.z.Z;
 public class A000782 extends A000108 {
 
   private Z mPrev = super.next();
+  {
+    setOffset(1);
+  }
 
   @Override
   public Z next() {

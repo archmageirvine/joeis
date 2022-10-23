@@ -10,6 +10,9 @@ import irvine.oeis.a000.A000108;
 public class A039970 extends A000108 {
 
   private boolean mIsZero = true;
+  {
+    setOffset(1);
+  }
 
   @Override
   public Z next() {

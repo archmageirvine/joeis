@@ -10,22 +10,21 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence3;
 
 /**
  * A059530 Triangle T(n,k) of k-block T_0-tricoverings of an n-set, n &gt;= 3, k = 0..2*n.
  * @author Sean A. Irvine
  */
-public class A059530 implements Sequence {
+public class A059530 extends Sequence3 {
 
-  private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
+  protected static final MemoryFactorial F = MemoryFactorial.SINGLETON;
   private static final Q NEG_HALF = new Q(-1, 2);
   private int mN = 2;
   private int mM = 4;
   private Polynomial<Polynomial<Q>> mEgf = null;
 
-  private Polynomial<Polynomial<Q>> get(final int n) {
-    final int m = 2 * n;
+  protected Polynomial<Polynomial<Q>> get(final int n, final int m) {
     final DegreeLimitedPolynomialRingField<Q> inner = new DegreeLimitedPolynomialRingField<>("y", Rationals.SINGLETON, n + 1);
     final PolynomialRingField<Polynomial<Q>> ring = new PolynomialRingField<>(inner);
     Polynomial<Polynomial<Q>> sum = ring.zero();
@@ -51,7 +50,7 @@ public class A059530 implements Sequence {
     if (++mM > 2 * mN) {
       ++mN;
       mM = 0;
-      mEgf = get(mN);
+      mEgf = get(mN, 2 * mN);
     }
     return mEgf.coeff(mM).coeff(mN).multiply(F.factorial(mN)).toZ();
   }

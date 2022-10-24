@@ -22,7 +22,7 @@ public class A005201 extends A005200 {
   public Z next() {
     super.next();
     ++mN;
-    final Polynomial<Z> f2 = RING.create(this).substitutePower(2);
+    final Polynomial<Z> f2 = RING.create(toList()).substitutePower(2);
     final Polynomial<Z> t = RING.create(mT);
     final Polynomial<Z> g = RING.subtract(RING.multiply(t, RING.subtract(RING.one(), f2), mN), f2);
     return g.coeff(mN);

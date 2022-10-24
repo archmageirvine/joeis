@@ -16,6 +16,6 @@ public class A052342 extends MemorySequence {
     if (n <= 1) {
       return Z.ONE;
     }
-    return StirlingBernoulliTransform.transform(this);
+    return StirlingBernoulliTransform.transform(toList());
   }
 }

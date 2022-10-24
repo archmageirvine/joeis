@@ -1,9 +1,8 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.CycleTransformSequence;
-import irvine.oeis.FiniteSequence;
 import irvine.oeis.MemorySequence;
+import irvine.oeis.transform.CycleTransformSequence;
 
 /**
  * A032201 Number of rooted compound windmills with n nodes and leaves of 2 colors.
@@ -16,7 +15,7 @@ public class A032201 extends MemorySequence {
     if (size() < 2) {
       return Z.TWO;
     }
-    final CycleTransformSequence cts = new CycleTransformSequence(new FiniteSequence(this), 0);
+    final CycleTransformSequence cts = new CycleTransformSequence(toFiniteSequence(), 0);
     for (int k = 0; k < size(); ++k) {
       cts.next();
     }

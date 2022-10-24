@@ -15,7 +15,7 @@ public class A033667 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    if (isEmpty()) {
+    if (size() == 0) {
       return Z.ONE;
     }
     final String s = Long.toString(size(), base());

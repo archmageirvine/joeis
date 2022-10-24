@@ -16,7 +16,7 @@ public class A003659 extends MemorySequence {
       add(Z.ONE);
       return Z.ONE;
     } else {
-      return Stirling2TransformSequence.stirling2(this);
+      return Stirling2TransformSequence.stirling2(toList());
     }
   }
 }

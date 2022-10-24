@@ -24,8 +24,8 @@ public class A028930 extends Sequence0 {
   public Z next() {
     mPhi.next();
     mPsi.next();
-    final Polynomial<Z> phi = RING.create(mPhi);
-    final Polynomial<Z> psi = RING.create(mPsi);
+    final Polynomial<Z> phi = RING.create(mPhi.toList());
+    final Polynomial<Z> psi = RING.create(mPsi.toList());
     ++mN;
     final Polynomial<Z> a = RING.multiply(phi.substitutePower(2, mN), phi.substitutePower(46, mN), mN);
     final Polynomial<Z> b = RING.multiply(RING.multiply(psi, psi.substitutePower(23, mN), mN), Z.TWO).shift(3);

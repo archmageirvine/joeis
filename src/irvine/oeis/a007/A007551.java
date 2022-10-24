@@ -23,7 +23,7 @@ public class A007551 extends MemorySequence {
     if (size() < 2) {
       return Z.ONE;
     } else {
-      mInner.add(MobiusTransformSequence.mobiusTransform(this));
+      mInner.add(MobiusTransformSequence.mobiusTransform(toList()));
       return MobiusTransformSequence.mobiusTransform(mInner);
     }
   }

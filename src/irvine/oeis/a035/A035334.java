@@ -33,10 +33,10 @@ public class A035334 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    if (isEmpty()) {
+    if (size() == 0) {
       return Z.ONE;
     }
-    while (contains(Z.valueOf(mLeastUnused))) {
+    while (toList().contains(Z.valueOf(mLeastUnused))) {
       ++mLeastUnused;
     }
     final int cnt = get(size() - 1).intValueExact();
@@ -55,7 +55,7 @@ public class A035334 extends MemorySequence {
     computeForbidden(0L, forbidden, cnt, 0, limit);
     long res = 0;
     while (++res < limit) {
-      if (!forbidden.isSet(res) && !contains(Z.valueOf(res))) {
+      if (!forbidden.isSet(res) && !toList().contains(Z.valueOf(res))) {
         return Z.valueOf(res);
       }
     }

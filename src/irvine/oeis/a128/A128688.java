@@ -21,7 +21,7 @@ public class A128688 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    if (isEmpty()) {
+    if (size() == 0) {
       return Z.ONE;
     }
     Z m = get(size() - 1).add(1).divide2().multiply2(); // round up to even

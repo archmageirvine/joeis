@@ -18,6 +18,6 @@ public class A032143 extends MemorySequence {
     if (size() < 4) {
       return Z.ONE;
     }
-    return A032010.cfk(this).get(size() - 1);
+    return A032010.cfk(toList()).get(size() - 1);
   }
 }

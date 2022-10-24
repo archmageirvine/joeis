@@ -16,7 +16,7 @@ public class A026417 extends A026416 {
         return t;
       } else {
         // Evilness to handle the 2 we don't want here
-        remove(t);
+        toList().remove(t);
         mForbidden.remove(t);
       }
     }

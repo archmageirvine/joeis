@@ -1,8 +1,8 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.InverseBinomialTransformSequence;
 import irvine.oeis.MemorySequence;
+import irvine.oeis.transform.InverseBinomialTransformSequence;
 
 /**
  * A010747 Shifts 6 places left under inverse binomial transform.
@@ -15,7 +15,7 @@ public class A010747 extends MemorySequence {
     if (size() < 6) {
       return Z.valueOf(1L << size());
     } else {
-      return InverseBinomialTransformSequence.inverseBinomial(this, size() - 5);
+      return InverseBinomialTransformSequence.inverseBinomial(toList(), size() - 5);
     }
   }
 }

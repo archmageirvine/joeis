@@ -20,7 +20,7 @@ public class A037100 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    if (isEmpty()) {
+    if (size() == 0) {
       return Z.FOUR;
     }
     Z n = get(size() - 1).add(1); // odd

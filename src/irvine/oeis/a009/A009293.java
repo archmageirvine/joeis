@@ -19,7 +19,7 @@ public class A009293 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    if (isEmpty()) {
+    if (size() == 0) {
       mFutureMembers.add(Z.FOUR.add(add()));
       return Z.TWO;
     }

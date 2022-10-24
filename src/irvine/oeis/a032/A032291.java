@@ -1,10 +1,9 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.DikTransformSequence;
-import irvine.oeis.FiniteSequence;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.transform.DikTransformSequence;
 
 /**
  * A032291 Shifts left 2 places under "DIK" (bracelet, indistinct, unlabeled) transform.
@@ -17,7 +16,7 @@ public class A032291 extends MemorySequence {
     if (size() < 2) {
       return Z.ONE;
     }
-    final Sequence s = new DikTransformSequence(new FiniteSequence(this), 0);
+    final Sequence s = new DikTransformSequence(toFiniteSequence(), 0);
     for (int k = 1; k < size(); ++k) {
       s.next();
     }

@@ -18,7 +18,7 @@ public class A006961 extends A001190 {
   public Z next() {
     super.next();
     final int n = size() - 1;
-    final Polynomial<Z> t = RING.create(this);
+    final Polynomial<Z> t = RING.create(toList());
     Polynomial<Z> g = RING.one();
     for (int k = 1; k <= n; ++k) {
       g = RING.multiply(g, RING.subtract(RING.one(), t.substitutePower(k, mN)), mN);

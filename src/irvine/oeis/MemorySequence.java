@@ -1,6 +1,8 @@
 package irvine.oeis;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
@@ -10,8 +12,9 @@ import irvine.math.z.Z;
  * for implementing sequences that depend on many earlier terms.
  * @author Sean A. Irvine
  */
-public abstract class MemorySequence extends ArrayList<Z> implements Sequence {
+public abstract class MemorySequence implements Iterable<Z>, Sequence {
 
+  private final List<Z> mTerms = new ArrayList<>();
   private final int mOffset;
   private final int mNumInitialTerms;
   private int mPos = 0;
@@ -25,7 +28,7 @@ public abstract class MemorySequence extends ArrayList<Z> implements Sequence {
     mOffset = offset;
     mNumInitialTerms = initialTerms.length;
     for (final long t : initialTerms) {
-      add(Z.valueOf(t));
+      mTerms.add(Z.valueOf(t));
     }
   }
 
@@ -50,7 +53,7 @@ public abstract class MemorySequence extends ArrayList<Z> implements Sequence {
    * @return polynomial
    */
   public Polynomial<Z> polynomial() {
-    return new Polynomial<>(Z.ZERO, Z.ONE, this);
+    return new Polynomial<>(Z.ZERO, Z.ONE, mTerms);
   }
 
   protected abstract Z computeNext();
@@ -59,16 +62,20 @@ public abstract class MemorySequence extends ArrayList<Z> implements Sequence {
   public Z next() {
     if (mPos < mNumInitialTerms) {
       // These terms are preloaded into the list
-      return super.get(mPos++);
+      return mTerms.get(mPos++);
     }
     final Z t = computeNext();
-    add(t);
+    mTerms.add(t);
     return t;
   }
 
-  @Override
+  /**
+   * Get the specified term.
+   * @param n term index
+   * @return term
+   */
   public Z get(final int n) {
-    return super.get(n - mOffset);
+    return mTerms.get(n - mOffset);
   }
 
   /**
@@ -79,10 +86,35 @@ public abstract class MemorySequence extends ArrayList<Z> implements Sequence {
    */
   public Z a(final int n) {
     final int m = n - mOffset;
-    while (m >= size()) {
-      add(computeNext());
+    while (m >= mTerms.size()) {
+      mTerms.add(computeNext());
     }
     return get(n); // NOTE: This really does need to be n
+  }
+
+  /**
+   * Explicitly add a term into the sequence. Usually only used during construction
+   * of the sequence.
+   * @param value term to add
+   */
+  public void add(final Z value) {
+    mTerms.add(value);
+  }
+
+  /**
+   * Remove the term with the specified index.
+   * @param n index of term to remove
+   */
+  public void remove(final int n) {
+    mTerms.remove(n);
+  }
+
+  /**
+   * The current number of terms.
+   * @return number of terms
+   */
+  public int size() {
+    return mTerms.size();
   }
 
   /**
@@ -91,6 +123,27 @@ public abstract class MemorySequence extends ArrayList<Z> implements Sequence {
    */
   public int getOffset() {
     return mOffset;
+  }
+
+  @Override
+  public Iterator<Z> iterator() {
+    return mTerms.iterator();
+  }
+
+  /**
+   * Return the current list of terms in this memory sequence.
+   * @return the terms
+   */
+  public List<Z> toList() {
+    return mTerms;
+  }
+
+  /**
+   * Return a finite sequence containing the current terms.
+   * @return finite sequence.
+   */
+  public FiniteSequence toFiniteSequence() {
+    return new FiniteSequence(mTerms);
   }
 
   /**

@@ -22,7 +22,7 @@ public class A007055 extends MemorySequence {
   @Override
   protected Z computeNext() {
     Z sum = mS.next();
-    if (isEmpty()) {
+    if (size() == 0) {
       return Z.ONE;
     }
     final int n = size();

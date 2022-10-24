@@ -1,8 +1,8 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.ChjTransformSequence;
 import irvine.oeis.MemorySequence;
+import irvine.oeis.transform.ChjTransformSequence;
 
 /**
  * A032333 Shifts left under "CHJ" (necklace, identity, labeled) transform.
@@ -16,6 +16,6 @@ public class A032333 extends MemorySequence {
     if (n < 2) {
       return Z.ONE;
     }
-    return ChjTransformSequence.chj(this).get(n - 1);
+    return ChjTransformSequence.chj(toList()).get(n - 1);
   }
 }

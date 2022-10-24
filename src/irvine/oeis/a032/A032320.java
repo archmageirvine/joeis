@@ -18,7 +18,7 @@ public class A032320 extends A032318 {
     }
     add(Z.ZERO);
     mF = mF.multiply(n);
-    final Z res = egj(this).coeff(n).multiply(mF).toZ();
+    final Z res = egj(toList()).coeff(n).multiply(mF).toZ();
     remove(n);
     return res;
   }

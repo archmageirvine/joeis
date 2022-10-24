@@ -13,12 +13,12 @@ public class A007469 extends MemorySequence {
   @Override
   protected Z computeNext() {
     if (size() <= 3) {
-      if (isEmpty()) {
+      if (size() == 0) {
         add(Z.ONE);
       }
       return Z.ONE;
     } else {
-      return Stirling2TransformSequence.stirling2(this, size() - 2);
+      return Stirling2TransformSequence.stirling2(toList(), size() - 2);
     }
   }
 }

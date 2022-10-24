@@ -44,6 +44,6 @@ public class A032318 extends MemorySequence {
       return Z.TWO;
     }
     mF = mF.multiply(n - 1);
-    return egj(this).coeff(n - 1).multiply(mF).toZ();
+    return egj(toList()).coeff(n - 1).multiply(mF).toZ();
   }
 }

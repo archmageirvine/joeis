@@ -74,6 +74,6 @@ public class BhjTransformSequence implements Sequence {
   @Override
   public Z next() {
     mA.next(); // ensure sufficient terms in underlying sequence
-    return bhj(mA).get(++mN);
+    return bhj(mA.toList()).get(++mN);
   }
 }

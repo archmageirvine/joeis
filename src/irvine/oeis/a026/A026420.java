@@ -15,7 +15,7 @@ public class A026420 extends A026416 {
       if (!Z.ONE.equals(t) && !Z.THREE.equals(t)) {
         return t;
       } else {
-        remove(t);
+        toList().remove(t);
         mForbidden.remove(t);
         mForbidden.remove(Z.SIX);
       }

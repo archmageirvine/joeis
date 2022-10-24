@@ -15,7 +15,7 @@ public class A051788 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    if (isEmpty()) {
+    if (size() == 0) {
       return Z.ONE;
     } else if (size() == 1) {
       mDifferences.add(Z.TWO);

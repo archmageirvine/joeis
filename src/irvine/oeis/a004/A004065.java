@@ -14,7 +14,7 @@ public class A004065 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    if (isEmpty()) {
+    if (size() == 0) {
       return Z.ONE;
     }
     Z sum = Z.ZERO;

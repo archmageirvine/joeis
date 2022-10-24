@@ -17,7 +17,7 @@ public class A032084 extends MemorySequence {
       return Z.TWO;
     }
     add(Z.ZERO);
-    final Z t = BhjTransformSequence.bhj(this).get(n);
+    final Z t = BhjTransformSequence.bhj(toList()).get(n);
     remove(n);
     return t;
   }

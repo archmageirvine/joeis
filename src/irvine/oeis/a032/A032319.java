@@ -17,6 +17,6 @@ public class A032319 extends A032318 {
       return Z.ONE;
     }
     mF = mF.multiply(n - 2);
-    return egj(this).coeff(n - 2).multiply(mF).toZ();
+    return egj(toList()).coeff(n - 2).multiply(mF).toZ();
   }
 }

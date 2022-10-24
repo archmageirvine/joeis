@@ -30,7 +30,7 @@ public class A007548 extends MemorySequence {
     if (n < 3) {
       return Z.ONE;
     } else {
-      return exponentialTransform(this, this, n - 3);
+      return exponentialTransform(toList(), toList(), n - 3);
     }
   }
 }

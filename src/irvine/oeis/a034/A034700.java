@@ -23,7 +23,7 @@ public class A034700 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    if (isEmpty()) {
+    if (size() == 0) {
       return Z.FIVE;
     }
     Z p = get(size() - 1);

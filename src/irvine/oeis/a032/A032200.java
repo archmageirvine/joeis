@@ -1,9 +1,8 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.CycleTransformSequence;
-import irvine.oeis.FiniteSequence;
 import irvine.oeis.MemorySequence;
+import irvine.oeis.transform.CycleTransformSequence;
 
 /**
  * A032200 Number of rooted compound windmills (mobiles) of n nodes.
@@ -16,7 +15,7 @@ public class A032200 extends MemorySequence {
     if (size() < 2) {
       return Z.ONE;
     }
-    final CycleTransformSequence cts = new CycleTransformSequence(new FiniteSequence(this), 0);
+    final CycleTransformSequence cts = new CycleTransformSequence(toFiniteSequence(), 0);
     for (int k = 0; k < size(); ++k) {
       cts.next();
     }

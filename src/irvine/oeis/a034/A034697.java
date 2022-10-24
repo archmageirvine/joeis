@@ -12,7 +12,7 @@ public class A034697 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    if (isEmpty()) {
+    if (size() == 0) {
       return Z.ONE;
     }
     Z sum = Z.ONE;

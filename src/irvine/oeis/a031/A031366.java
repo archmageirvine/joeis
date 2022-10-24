@@ -27,7 +27,7 @@ public class A031366 extends Sequence1 {
       // Regenerate (progressively bigger chunks each time)
       mMaxOrd =  2 * mN;
       mL1.a(mMaxOrd); // force computation of underlying series
-      final DirichletSeries l1 = DirichletSeries.fromList(mL1);
+      final DirichletSeries l1 = DirichletSeries.fromList(mL1.toList());
       final DirichletSeries l1Shift = l1.shift();
       final DirichletSeries l1i = l1.inverse(mMaxOrd);
       final DirichletSeries l1i2 = l1i.scale(2, mMaxOrd);

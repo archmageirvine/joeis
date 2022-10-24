@@ -15,8 +15,8 @@ public class A034701 extends MemorySequence {
     outer:
     while (true) {
       n = n.add(1);
-      if (!contains(n)) {
-        if (!isEmpty()) {
+      if (!toList().contains(n)) {
+        if (!(size() == 0)) {
           final Z prev = get(size() - 1);
           for (int k = 0; k < size() - 1; ++k) {
             if (prev.add(get(k)).equals(n)) {

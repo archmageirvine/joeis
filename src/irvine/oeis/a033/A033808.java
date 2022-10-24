@@ -30,7 +30,7 @@ public class A033808 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    if (isEmpty()) {
+    if (size() == 0) {
       return Z.ZERO;
     }
     Z b = get(size() - 1);

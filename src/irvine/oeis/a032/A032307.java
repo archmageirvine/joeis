@@ -18,6 +18,6 @@ public class A032307 extends MemorySequence {
     if (size() <= 3) {
       return Z.ONE;
     }
-    return A032306.efk(this).coeff(size() - 2);
+    return A032306.efk(toList()).coeff(size() - 2);
   }
 }

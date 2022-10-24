@@ -13,7 +13,7 @@ public class A007470 extends MemorySequence {
   private class InnerSequence extends MemorySequence {
     @Override
     protected Z computeNext() {
-      return isEmpty() ? Z.ONE : Stirling2TransformSequence.stirling2(A007470.this);
+      return size() == 0 ? Z.ONE : Stirling2TransformSequence.stirling2(A007470.this.toList());
     }
   }
 
@@ -22,11 +22,11 @@ public class A007470 extends MemorySequence {
   @Override
   protected Z computeNext() {
     mInnerSequence.next();
-    if (isEmpty()) {
+    if (size() == 0) {
       add(Z.ONE);
       return Z.ONE;
     } else {
-      return Stirling2TransformSequence.stirling2(mInnerSequence);
+      return Stirling2TransformSequence.stirling2(mInnerSequence.toList());
     }
   }
 }

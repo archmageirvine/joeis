@@ -24,6 +24,6 @@ public class A056753 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    return isEmpty() ? Z.ONE : f(1, 1, 1, 1);
+    return size() == 0 ? Z.ONE : f(1, 1, 1, 1);
   }
 }

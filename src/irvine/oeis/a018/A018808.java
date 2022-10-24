@@ -33,6 +33,6 @@ public class A018808 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    return isEmpty() ? Z.ZERO : mL1.get(size()).multiply2().subtract(get(size() - 1)).add(mR1.get(size()));
+    return size() == 0 ? Z.ZERO : mL1.get(size()).multiply2().subtract(get(size() - 1)).add(mR1.get(size()));
   }
 }

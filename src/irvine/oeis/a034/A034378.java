@@ -17,7 +17,7 @@ public class A034378 extends MemorySequence {
       return true; // becomes 0
     }
     for (int k = 0; k < s.length(); ++k) {
-      if (contains(new Z(s.substring(0, k) + s.substring(k + 1)))) {
+      if (toList().contains(new Z(s.substring(0, k) + s.substring(k + 1)))) {
         return true;
       }
     }

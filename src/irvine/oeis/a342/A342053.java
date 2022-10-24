@@ -183,7 +183,7 @@ public class A342053 implements Sequence {
 
   Polynomial<Z> jgf(final int n) {
     mJ.a(n); // Force enough terms
-    return INNER.create(mJ);
+    return INNER.create(mJ.toList());
   }
 
 

@@ -21,7 +21,7 @@ public class A025242 extends MemorySequence {
 
   @Override
   public Z next() {
-    if (isEmpty()) {
+    if (size() == 0) {
       add(Z.ONE);
       return Z.TWO;
     }

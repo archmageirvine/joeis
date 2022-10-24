@@ -16,6 +16,6 @@ public class A032081 extends MemorySequence {
     if (n < 3) {
       return Z.ONE;
     }
-    return BhjTransformSequence.bhj(this).get(n - 1);
+    return BhjTransformSequence.bhj(toList()).get(n - 1);
   }
 }

@@ -15,7 +15,7 @@ public class A010672 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    if (isEmpty()) {
+    if (size() == 0) {
       return Z.ZERO;
     }
     Z n = get(size() - 1);

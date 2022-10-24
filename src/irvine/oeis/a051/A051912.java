@@ -15,7 +15,7 @@ public class A051912 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    if (isEmpty()) {
+    if (size() == 0) {
       mSums.add(Z.ZERO);
       return Z.ZERO;
     }

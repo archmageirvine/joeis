@@ -25,7 +25,7 @@ public class MultiplicativeClosureSequence extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    if (isEmpty()) {
+    if (size() == 0) {
       return Z.ONE;
     }
     if (mA.isEmpty() || mA.first().compareTo(mP) >= 0) {

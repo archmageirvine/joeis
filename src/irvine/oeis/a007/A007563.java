@@ -3,8 +3,8 @@ package irvine.oeis.a007;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.EulerTransformSequence;
 import irvine.oeis.MemorySequence;
+import irvine.oeis.transform.EulerTransformSequence;
 
 /**
  * A007563 Number of rooted connected graphs where every block is a complete graph.
@@ -22,7 +22,7 @@ public class A007563 extends MemorySequence {
     if (size() < 1) {
       return Z.ZERO;
     } else {
-      mInner.add(EulerTransformSequence.eulerTransform(this, size()));
+      mInner.add(EulerTransformSequence.eulerTransform(toList(), size()));
       return EulerTransformSequence.eulerTransform(mInner, mInner.size() - 1);
     }
   }

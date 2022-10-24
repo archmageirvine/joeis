@@ -94,7 +94,7 @@ public class ChjTransformSequence implements Sequence {
   @Override
   public Z next() {
     mA.next(); // ensure sufficient terms in underlying sequence
-    return chj(mA).get(++mN);
+    return chj(mA.toList()).get(++mN);
   }
 
   /**

@@ -32,6 +32,6 @@ public class A032306 extends MemorySequence {
     if (size() <= 2) {
       return Z.TWO;
     }
-    return efk(this).coeff(size() - 1);
+    return efk(toList()).coeff(size() - 1);
   }
 }

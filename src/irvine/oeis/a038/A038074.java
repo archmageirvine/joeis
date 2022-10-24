@@ -1,7 +1,6 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.FiniteSequence;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.transform.WeighTransformSequence;
 
@@ -20,7 +19,7 @@ public class A038074 extends MemorySequence {
     if (size() == 1) {
       return Z.ONE;
     }
-    final WeighTransformSequence wt = new WeighTransformSequence(new FiniteSequence(this));
+    final WeighTransformSequence wt = new WeighTransformSequence(toFiniteSequence());
     for (int k = 1; k < size(); ++k) {
       wt.next();
     }

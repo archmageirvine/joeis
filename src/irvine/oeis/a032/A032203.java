@@ -1,9 +1,8 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.CycleTransformSequence;
-import irvine.oeis.FiniteSequence;
 import irvine.oeis.MemorySequence;
+import irvine.oeis.transform.CycleTransformSequence;
 
 /**
  * A032203 Number of series-reduced planted compound windmills with n leaves.
@@ -18,7 +17,7 @@ public class A032203 extends MemorySequence {
       return Z.ONE;
     }
     add(Z.ZERO); // placeholder
-    final CycleTransformSequence cts = new CycleTransformSequence(new FiniteSequence(this), 0);
+    final CycleTransformSequence cts = new CycleTransformSequence(toFiniteSequence(), 0);
     remove(n);
     for (int k = 0; k <= n; ++k) {
       cts.next();

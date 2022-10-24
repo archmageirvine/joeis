@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A003983 Array read by antidiagonals with T(n,k) = min(n,k).
  * @author Sean A. Irvine
  */
-public class A003983 implements Sequence {
+public class A003983 extends Sequence1 {
 
   private long mRow = 0;
   private long mCol = 0;

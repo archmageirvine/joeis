@@ -9,6 +9,10 @@ import irvine.oeis.a003.A003983;
  */
 public class A004197 extends A003983 {
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     return super.next().subtract(1);

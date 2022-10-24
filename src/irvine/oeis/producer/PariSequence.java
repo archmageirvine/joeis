@@ -7,13 +7,13 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * Produce a sequence from a PARI program.
  * @author Sean A. Irvine
  */
-public class PariSequence implements SequenceWithOffset, Closeable {
+public class PariSequence extends AbstractSequence implements Closeable {
 
   // todo This should be considered preliminary
   //  - it needs to handle more styles of PARI programs
@@ -33,9 +33,9 @@ public class PariSequence implements SequenceWithOffset, Closeable {
    * @param pariProgram PARI program
    */
   public PariSequence(final String pariProgram) {
+    super(0);
     final ProcessBuilder pb = new ProcessBuilder(PariProducer.PARI_COMMAND, "--fast", "--quiet");
     try {
-      
       mProc = pb.start();
       new DrainStreamThread(mProc.getErrorStream(), mVerbose);
       mOut = new PrintWriter(mProc.getOutputStream());
@@ -46,6 +46,7 @@ public class PariSequence implements SequenceWithOffset, Closeable {
     //System.out.println("Sending: " + pariProgram);
     mHeader = new Header(pariProgram);
     final int offset = mHeader.getOffset();
+    setOffset(offset);
     final String programType = mHeader.getType();
     mOut.println(pariProgram); // Send the program to PARI
     switch (programType) {
@@ -89,11 +90,6 @@ public class PariSequence implements SequenceWithOffset, Closeable {
     } catch (final IOException e) {
       throw new UnsupportedOperationException("PARI failed to produce more terms", e);
     }
-  }
-
-  @Override
-  public int getOffset() {
-    return mHeader.getOffset();
   }
 
   @Override

@@ -23,7 +23,7 @@ public class A060096 extends RationalTriangle {
     } else if (m == 0) {
       Q sum = Q.ZERO;
       for (int j = 0; j < n; ++j) {
-        sum = sum.add(get(n - 1, j).divide(2 * (j + 1)));
+        sum = sum.add(get(n - 1, j).divide(2L * (j + 1)));
       }
       return sum.multiply(-n);
     } else {

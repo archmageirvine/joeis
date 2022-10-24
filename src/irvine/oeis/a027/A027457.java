@@ -12,6 +12,7 @@ public class A027457 extends A003418 {
 
   private final HarmonicSequence mH = new HarmonicSequence();
   {
+    setOffset(1);
     super.next();
   }
 

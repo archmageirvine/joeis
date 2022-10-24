@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A002808 The composite numbers: numbers n of the form x*y for x &gt; 1 and y &gt; 1.
  * @author Sean A. Irvine
  */
-public class A002808 implements Sequence {
+public class A002808 extends Sequence1 {
 
   protected Z mN = Z.THREE;
 

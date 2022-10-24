@@ -14,6 +14,7 @@ public class A006508 extends A002808 {
   private Z mCompositeCount = Z.ZERO;
 
   protected A006508(final long start) {
+    setOffset(0);
     mStart = start;
   }
 

@@ -70,7 +70,13 @@ public class A059744 extends A002778 {
   /*
   The most interesting family recognised by Keith are the "asymmetric root" family. Their roots are always non-palindromic with at least seven digits, and an odd number of digits in those roots. In this family the root is of the form 1(x)0[9]9[0]1(x)'1, where (x) represents a string of at least one of the digits 0 and 1, while [0] and [9] are strings of zero or more 0s and 9s respectively. The string (x)' is the same as (x) but with the order of digits reversed. The first few members of this family include: 1109111^2 = 1230127210321, 110091011^2 = 1212003070300121, 111091111^2 = 12341234943214321, and so on.
    */
-  private boolean isAsymmetricRootFamily(final String p) {
+
+  /**
+   * Test for a square palindrome belonging to the asymmetric family.
+   * @param p palindrome to test
+   * @return true if an asymmetric palindrome
+   */
+  public static boolean isAsymmetricRootFamily(final String p) {
     if (p.length() < 7 || (p.length() & 1) == 0) {
       return false;
     }

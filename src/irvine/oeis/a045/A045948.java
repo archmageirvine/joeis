@@ -13,6 +13,7 @@ public class A045948 extends A003418 {
 
   private final Sequence mA = new A034386();
   {
+    setOffset(1);
     next(); // skip 0th term
   }
 

@@ -17,6 +17,9 @@ public class A037299 extends A002808 {
 
   private final List<Z> mA = new ArrayList<>();
   private int mM = 0;
+  {
+    setOffset(0);
+  }
 
   @Override
   public Z next() {

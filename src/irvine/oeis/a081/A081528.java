@@ -10,16 +10,13 @@ import irvine.oeis.a003.A003418;
  * @author Georg Fischer
  */
 public class A081528 extends A003418 {
+
   private int mN = 0;
   
   /** Construct the sequence. */
   public A081528() {
-    super();
-    int bOffset = -1;
-    while (bOffset < mN) {
-      ++bOffset;
-      super.next();
-    }
+    setOffset(1);
+    super.next();
   }
 
   @Override

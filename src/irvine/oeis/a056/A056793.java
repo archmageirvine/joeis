@@ -12,6 +12,7 @@ public class A056793 extends A003418 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
   {
+    setOffset(1);
     super.next();
   }
 

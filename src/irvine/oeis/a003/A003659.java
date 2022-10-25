@@ -10,6 +10,10 @@ import irvine.oeis.transform.Stirling2TransformSequence;
  */
 public class A003659 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   @Override
   protected Z computeNext() {
     if (size() == 0) {

@@ -12,6 +12,10 @@ import irvine.util.array.LongDynamicBooleanArray;
  */
 public class A035334 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   // Uses a heuristic, but will detect if it ever fails
 
   private long[] mTerms;

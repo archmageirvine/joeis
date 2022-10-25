@@ -14,6 +14,7 @@ public class A007551 extends MemorySequence {
 
   private final ArrayList<Z> mInner = new ArrayList<>();
   {
+    setOffset(1);
     mInner.add(Z.ONE);
     add(Z.ONE);
   }

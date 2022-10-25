@@ -26,6 +26,7 @@ public class A032834 extends MemorySequence {
     mParm1 = parm1;
     mParm2 = parm2;
     add(Z.ZERO);
+    setOffset(1);
   }
 
   @Override

@@ -10,6 +10,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A045648 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   // After Alois P. Heinz
 
   @Override

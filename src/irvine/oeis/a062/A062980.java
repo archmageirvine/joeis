@@ -11,5 +11,6 @@ public class A062980 extends A172455 {
   /** Construct the sequence. */
   public A062980() {
     super(6, -8, 1);
+    setOffset(0);
   }
 }

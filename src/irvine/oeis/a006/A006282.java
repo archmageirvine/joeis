@@ -26,6 +26,7 @@ public class A006282 extends MemorySequence {
   private final CFunction mC = new CFunction();
 
   {
+    setOffset(1);
     add(null); // 0th element
   }
 

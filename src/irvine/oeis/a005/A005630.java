@@ -11,6 +11,7 @@ public class A005630 extends A005629 {
 
   private final A000628 mA628 = new A000628();
   {
+    setOffset(1);
     mA628.next();
   }
 

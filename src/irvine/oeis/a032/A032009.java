@@ -17,6 +17,7 @@ public class A032009 extends MemorySequence {
   private static final PolynomialRingField<Polynomial<Q>> RING = new PolynomialRingField<>(Y_RING);
 
   {
+    setOffset(1);
     add(null); // seq starts at 1
   }
 

@@ -11,6 +11,10 @@ import irvine.math.z.Z;
  */
 public class A038080 extends A038079 {
 
+  {
+    setOffset(0);
+  }
+
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final Polynomial<Z> mB = RING.empty();
   private int mN = -1;

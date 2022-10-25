@@ -20,6 +20,7 @@ public class A000151 extends MemorySequence {
   protected int mN = 0;
 
   {
+    setOffset(1);
     add(null);
   }
 

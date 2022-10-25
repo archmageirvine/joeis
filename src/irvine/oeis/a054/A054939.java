@@ -14,6 +14,7 @@ public class A054939 extends A001187 {
   private final Sequence mF = new A000142();
   private boolean mEven = false;
   {
+    setOffset(1);
     super.next();
   }
 

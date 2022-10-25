@@ -20,6 +20,7 @@ public class A032160 extends MemorySequence {
   private static final Polynomial<Polynomial<Q>> C = RING.monomial(Y_RING.create(Arrays.asList(Q.NEG_ONE, Q.ONE)), 0);
 
   {
+    setOffset(1);
     add(null); // seq starts at 1
   }
 

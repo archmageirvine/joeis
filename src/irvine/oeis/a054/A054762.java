@@ -10,6 +10,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A054762 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private  boolean test(final long u, final long m) {
     for (long k = 0; k < m; ++k) {
       if (LongUtils.modPow(k, 3, m) == u) {

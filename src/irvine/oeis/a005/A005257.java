@@ -12,6 +12,7 @@ public class A005257 extends MemorySequence {
   // Using conjectured formulas of Layman
 
   {
+    setOffset(1);
     add(Z.ZERO);
   }
 

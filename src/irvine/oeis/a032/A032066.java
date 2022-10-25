@@ -23,6 +23,7 @@ public class A032066 extends MemorySequence {
   private final List<Z> mBfk = new ArrayList<>();
 
   {
+    setOffset(1);
     add(null);
     mBfk.add(null);
   }

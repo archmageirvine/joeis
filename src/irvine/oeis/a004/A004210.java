@@ -10,6 +10,10 @@ import irvine.util.array.LongDynamicBooleanArray;
  */
 public class A004210 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private final LongDynamicBooleanArray mUsed = new LongDynamicBooleanArray();
   private long mN = 0;
 

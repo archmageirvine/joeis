@@ -16,6 +16,7 @@ public class A032207 extends A000081 {
   private int mN = -1;
   private final Polynomial<Z> mB = RING.empty();
   {
+    setOffset(11);
     for (int k = 0; k < 11; ++k) {
       next();
     }

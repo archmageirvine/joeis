@@ -17,6 +17,7 @@ public class A013922 extends A001187 {
   private Polynomial<Q> mC = RING.zero();
   protected Z mF = Z.ONE;
   {
+    setOffset(1);
     super.next(); /// n == 0
   }
 

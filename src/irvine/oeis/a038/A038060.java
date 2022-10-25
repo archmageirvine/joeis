@@ -16,6 +16,7 @@ public class A038060 extends A038059 {
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final ArrayList<Z> mB = new ArrayList<>();
   {
+    setOffset(0);
     mB.add(Z.ZERO);
   }
   private int mN = -1;

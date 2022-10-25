@@ -10,6 +10,10 @@ import irvine.util.array.LongDynamicByteArray;
  */
 public class A003044 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private final LongDynamicByteArray mReps = new LongDynamicByteArray();
 
   protected int numReps() {

@@ -18,6 +18,7 @@ public class A032057 extends MemorySequence {
   private static final Polynomial<Polynomial<Q>> Y1 = RING.monomial(Y_RING.negate(Y_RING.oneMinusXToTheN(1)), 0);
 
   {
+    setOffset(1);
     add(null); // seq starts at 1
   }
 

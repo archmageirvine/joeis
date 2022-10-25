@@ -11,6 +11,7 @@ public class A007604 extends MemorySequence {
 
   private int mOdd = 1;
   {
+    setOffset(1);
     add(Z.ONE);
   }
 

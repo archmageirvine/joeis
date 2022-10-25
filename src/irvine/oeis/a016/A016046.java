@@ -10,6 +10,10 @@ import irvine.util.array.DynamicArray;
  */
 public class A016046 extends A007448 {
 
+  {
+    setOffset(1);
+  }
+
   private final DynamicArray<Z> mFirst = new DynamicArray<>();
   private int mN = 0;
   private Z mPrev = super.next();

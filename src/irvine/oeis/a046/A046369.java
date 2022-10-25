@@ -10,6 +10,10 @@ import irvine.oeis.a033.A033620;
  */
 public class A046369 extends A033620 {
 
+  {
+    setOffset(0);
+  }
+
   protected int targetOmega() {
     return 3;
   }

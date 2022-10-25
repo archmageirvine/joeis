@@ -13,6 +13,7 @@ public class A004208 extends MemorySequence {
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   {
+    setOffset(1);
     add(null);
   }
 

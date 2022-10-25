@@ -13,6 +13,7 @@ public class A317825 extends A068915 {
   /** Construct the sequence */
   public A317825() {
     super(1, 2, 1);
+    setOffset(1);
   }
 
   @Override

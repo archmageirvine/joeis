@@ -19,6 +19,7 @@ public class A007549 extends MemorySequence {
   private final ArrayList<Q> mCoeffs = new ArrayList<>();
   private Z mF = Z.ONE;
   {
+    setOffset(1);
     mCoeffs.add(Q.ZERO);
     add(Z.ZERO);
   }

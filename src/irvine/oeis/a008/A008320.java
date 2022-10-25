@@ -11,6 +11,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A008320 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private final TreeSet<Z> mSumSquares = new TreeSet<>();
 
   @Override

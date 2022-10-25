@@ -11,6 +11,7 @@ public class A025256 extends MemorySequence {
 
   private static final Z[] SMALL = {Z.ONE, Z.ONE, Z.THREE};
   {
+    setOffset(1);
     add(null); // 0th
   }
 

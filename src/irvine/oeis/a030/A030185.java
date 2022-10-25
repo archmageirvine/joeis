@@ -22,6 +22,7 @@ public class A030185 extends MemorySequence {
   private final Polynomial<Z> mU = RING.empty(); // = x * A000521(x)
 
   {
+    setOffset(1);
     next(); // skip leading 0
   }
 

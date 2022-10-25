@@ -12,6 +12,7 @@ public class A058301 extends A002083 {
   private int mN = -1;
   private int mM = -1;
   {
+    setOffset(0);
     super.next();
     super.next();
     super.next();

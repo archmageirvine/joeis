@@ -14,6 +14,7 @@ public class A035049 extends MemorySequence {
   // After Alois P. Heinz
 
   {
+    setOffset(1);
     add(Z.ZERO); // a(0)=0 is not in OEIS
   }
 

@@ -12,5 +12,6 @@ public class A033620 extends MultiplicativeClosureSequence {
   /** Construct the sequence. */
   public A033620() {
     super(new A002385());
+    setOffset(1);
   }
 }

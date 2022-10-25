@@ -10,6 +10,10 @@ import irvine.oeis.transform.CycleTransformSequence;
  */
 public class A032202 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   @Override
   protected Z computeNext() {
     if (size() < 3) {

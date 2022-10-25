@@ -14,6 +14,7 @@ public class A000525 extends A000081 {
   private static final Z Z79 = Z.valueOf(79);
 
   {
+    setOffset(4);
     super.next();
     super.next();
     super.next();

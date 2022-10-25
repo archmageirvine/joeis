@@ -10,21 +10,15 @@ import irvine.oeis.a005.A005628;
  * @author Georg Fischer
  */
 public class A261336 extends A005628 {
-  private int mN = 0;
-  
+
   /** Construct the sequence. */
   public A261336() {
-    super();
-    int bOffset = -1;
-    while (bOffset < mN) {
-      ++bOffset;
-      super.next();
-    }
+    setOffset(1);
+    super.next();
   }
 
   @Override
   public Z next() {
-    ++mN;
     return super.next().divide2();
   }
 }

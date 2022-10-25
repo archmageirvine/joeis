@@ -6,6 +6,10 @@ package irvine.oeis.a046;
  */
 public class A046402 extends A046401 {
 
+  {
+    setOffset(0);
+  }
+
   @Override
   protected int targetOmega() {
     return 4;

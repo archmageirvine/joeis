@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A024965 extends A024945 {
 
+  {
+    setOffset(4);
+  }
+
   @Override
   protected Z c() {
     return Z.ONE;

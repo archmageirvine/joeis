@@ -12,6 +12,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A004979 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private Z mPrev = null;
   private final Set<Z> mSeenDiff = new HashSet<>();
 

@@ -10,6 +10,7 @@ import irvine.util.array.LongDynamicLongArray;
 public class A020948 extends A020944 {
 
   {
+    setOffset(1);
     super.next();
   }
 

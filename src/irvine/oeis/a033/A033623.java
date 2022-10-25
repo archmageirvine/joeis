@@ -11,6 +11,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A033623 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private final TreeSet<Z> mForbidden = new TreeSet<>();
   private Z mN = Z.ZERO;
 

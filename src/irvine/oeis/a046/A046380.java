@@ -9,6 +9,10 @@ import irvine.util.string.StringUtils;
  */
 public class A046380 extends A046369 {
 
+  {
+    setOffset(1);
+  }
+
   @Override
   protected int targetOmega() {
     return 6;

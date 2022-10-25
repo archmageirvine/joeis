@@ -15,6 +15,7 @@ public class A000368 extends A000081 {
 
   /** Construct the sequence. */
   public A000368() {
+    setOffset(4);
     mR = RING.create(Arrays.asList(super.next(), super.next(), super.next(), super.next(), super.next()));
   }
 

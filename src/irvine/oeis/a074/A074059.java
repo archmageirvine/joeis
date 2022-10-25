@@ -20,6 +20,7 @@ public class A074059 extends MemorySequence {
     mN = 0;
     add(Z.ONE);
     mA_1 = Z.ONE;
+    setOffset(1);
   }
 
   @Override

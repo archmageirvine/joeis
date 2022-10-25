@@ -12,6 +12,7 @@ public class A000524 extends A000081 {
   private static final Polynomial<Z> TWO = Polynomial.create(2);
 
   {
+    setOffset(2);
     super.next();
     super.next();
   }

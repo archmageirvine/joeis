@@ -10,6 +10,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A036567 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private static final Q C = new Q(5, 2);
 
   private boolean isOk(final Z m) {

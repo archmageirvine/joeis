@@ -18,6 +18,7 @@ public class A344613 extends A001190 {
   
   /** Construct the sequence. */
   public A344613() {
+    setOffset(1);
     mN = 0;
     super.next(); // skip a(0)
     mA085748 = new A085748();

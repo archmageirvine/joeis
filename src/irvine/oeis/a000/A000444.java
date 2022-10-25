@@ -11,6 +11,7 @@ public class A000444 extends A000081 {
 
   private static final Polynomial<Z> NINE = Polynomial.create(9);
   {
+    setOffset(3);
     super.next();
     super.next();
     super.next();

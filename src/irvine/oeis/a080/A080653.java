@@ -10,6 +10,7 @@ import irvine.oeis.a007.A007378;
 public class A080653 extends A007378 {
 
   {
+    setOffset(1);
     next();
   }
 

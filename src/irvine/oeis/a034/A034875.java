@@ -9,6 +9,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A034875 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private boolean is(final Z n, final int index) {
     if (n.isZero()) {
       return true;

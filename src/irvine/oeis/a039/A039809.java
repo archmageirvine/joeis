@@ -12,6 +12,10 @@ import irvine.oeis.a008.A008284;
  */
 public class A039809 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private final Sequence mPartTriangle = new SkipSequence(new A008284(), 1);
 
   @Override

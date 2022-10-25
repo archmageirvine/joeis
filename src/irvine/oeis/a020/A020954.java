@@ -9,6 +9,10 @@ import irvine.util.array.LongDynamicLongArray;
  */
 public class A020954 extends A020952 {
 
+  {
+    setOffset(1);
+  }
+
   private final LongDynamicLongArray mA = new LongDynamicLongArray();
   private long mN = 0;
   private long mK = -1;

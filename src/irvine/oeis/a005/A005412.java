@@ -12,6 +12,7 @@ public class A005412 extends MemorySequence {
   // After Michael Somos
 
   {
+    setOffset(1);
     add(null);
   }
 

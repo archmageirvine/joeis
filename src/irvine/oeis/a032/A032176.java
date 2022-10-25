@@ -18,6 +18,7 @@ public class A032176 extends A004111 {
   private final Polynomial<Z> mA = RING.empty();
   private int mN = -1;
   {
+    setOffset(1);
     next();
   }
 

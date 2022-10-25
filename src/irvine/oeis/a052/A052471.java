@@ -9,6 +9,10 @@ import irvine.oeis.a000.A000081;
  */
 public class A052471 extends A000081 {
 
+  {
+    setOffset(1);
+  }
+
   // After Alois P. Heinz
 
   private int mN = 0;

@@ -24,6 +24,7 @@ public class A036365 extends A045648 {
   private static final Polynomial<Z> NEG_X4 = RING.negate(RING.x()).shift(3);
   private final Polynomial<Z> mC = RING.empty();
   {
+    setOffset(3);
     mC.add(Z.ZERO);
     for (int k = 1; k < 3; ++k) {
       mC.add(super.next());

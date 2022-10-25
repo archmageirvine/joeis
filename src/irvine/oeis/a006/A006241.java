@@ -13,6 +13,7 @@ public class A006241 extends MemorySequence {
   // The formula a(p^3)=3+3^p in (4.4) should be a(p^2)=2+2^p.
 
   {
+    setOffset(1);
     add(null); // 0th term
   }
 

@@ -11,6 +11,7 @@ import irvine.oeis.transform.WeighTransformSequence;
 public class A038073 extends MemorySequence {
 
   {
+    setOffset(1);
     add(Z.ZERO);
   }
 

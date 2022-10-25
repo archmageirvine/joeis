@@ -15,6 +15,7 @@ public class A002955 extends MemorySequence {
   private final ArrayList<Z> mCache = new ArrayList<>();
 
   {
+    setOffset(1);
     add(Z.ZERO); // 0th term, needed for A002988, A002989
   }
 

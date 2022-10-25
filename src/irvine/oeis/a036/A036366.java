@@ -20,6 +20,7 @@ public class A036366 extends A004111 {
 
   private final Polynomial<Z> mA = RING.empty();
   {
+    setOffset(3);
     for (int k = 0; k < 3; ++k) {
       mA.add(super.next());
     }

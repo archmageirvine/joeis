@@ -13,6 +13,7 @@ public class A008555 extends MemorySequence {
 
   private final A000129 mPell = new A000129();
   {
+    setOffset(1);
     add(mPell.next());
   }
 

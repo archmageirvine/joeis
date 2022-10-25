@@ -9,6 +9,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A052349 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private boolean isOk(final Z m, final int k) {
     if (m.isProbablePrime()) {
       return false;

@@ -19,6 +19,7 @@ public class A032235 extends MemorySequence {
   protected static final Polynomial<Q> T = Y_RING.monomial(Q.ONE, 1);
 
   {
+    setOffset(1);
     add(null);
   }
 

@@ -9,6 +9,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A001202 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private int mN = -1;
 
   @Override

@@ -14,6 +14,7 @@ public class A000198 extends MemorySequence {
   private int mN = 0;
 
   {
+    setOffset(1);
     add(null);
   }
 

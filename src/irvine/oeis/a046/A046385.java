@@ -12,6 +12,10 @@ import irvine.util.string.StringUtils;
  */
 public class A046385 extends A033620 {
 
+  {
+    setOffset(0);
+  }
+
   private final LongDynamicArray<Z> mA = new LongDynamicArray<>();
   private long mN = -1;
 

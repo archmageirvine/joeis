@@ -11,6 +11,7 @@ import irvine.math.z.Z;
 public class A013923 extends A013922 {
 
   {
+    setOffset(3);
     super.next();
   }
   private Polynomial<Q> mB = RING.monomial(new Q(super.next(), mF), mN);

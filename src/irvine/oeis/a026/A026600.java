@@ -9,6 +9,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A026600 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private static final Z[] W = {Z.ONE, Z.TWO, Z.THREE};
 
   @Override

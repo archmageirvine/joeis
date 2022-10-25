@@ -12,6 +12,10 @@ import irvine.oeis.a052.A052328;
  */
 public class A002991 extends A052328 {
 
+  {
+    setOffset(0);
+  }
+
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
   @Override

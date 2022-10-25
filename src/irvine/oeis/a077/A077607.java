@@ -17,6 +17,7 @@ public class A077607 extends MemorySequence {
 
   /** Construct the sequence. */
   public A077607() {
+    setOffset(1);
     add(Z.ZERO);
   }
 

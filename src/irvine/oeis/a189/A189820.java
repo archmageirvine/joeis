@@ -13,6 +13,7 @@ public class A189820 extends MemorySequence {
 
   /** Construct the sequence. */
   public A189820() {
+    setOffset(1);
     mN = -1;
     next(); // skip a(0)
   }

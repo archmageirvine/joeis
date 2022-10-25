@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A052302 extends A052300 {
 
+  {
+    setOffset(0);
+  }
+
   // After Alois P. Heinz
 
   private int mN = -1;

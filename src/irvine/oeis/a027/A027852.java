@@ -14,6 +14,10 @@ import irvine.oeis.a000.A000081;
  */
 public class A027852 extends A000081 {
 
+  {
+    setOffset(1);
+  }
+
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final ArrayList<Z> mSeq = new ArrayList<>();
   private int mN = 0;

@@ -9,6 +9,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A051484 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private Z mM = Z.ONE;
 
   private boolean contains(final Z n) {

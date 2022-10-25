@@ -13,6 +13,7 @@ public class A000485 extends A000081 {
   private static final Z Z19 = Z.valueOf(19);
 
   {
+    setOffset(4);
     super.next();
     super.next();
     super.next();

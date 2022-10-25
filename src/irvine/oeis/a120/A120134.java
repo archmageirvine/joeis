@@ -30,6 +30,7 @@ public class A120134 extends MemorySequence {
     mAdd = add;
     mDiv = div;
     add(Z.ZERO); // a(0) does not exist
+    setOffset(1);
   }
 
   @Override

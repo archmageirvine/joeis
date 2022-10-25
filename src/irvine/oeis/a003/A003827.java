@@ -141,6 +141,7 @@ public class A003827 extends MemorySequence {
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final Sequence mAll = new A005130();
   {
+    setOffset(3);
     mAll.next();
     mAll.next();
     mAll.next();

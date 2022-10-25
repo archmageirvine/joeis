@@ -11,6 +11,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A175498 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private final HashSet<Z> mUsed = new HashSet<>();
 
   @Override

@@ -10,6 +10,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A007683 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   @Override

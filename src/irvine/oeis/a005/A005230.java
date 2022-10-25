@@ -13,6 +13,7 @@ public class A005230 extends MemorySequence {
   private final A002024 mLim = new A002024();
 
   {
+    setOffset(1);
     add(null);
   }
 

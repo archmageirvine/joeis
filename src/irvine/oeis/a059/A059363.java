@@ -12,6 +12,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A059363 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private final ArrayList<Long> mOmegas = new ArrayList<>(); // precomputed omega for sequence values
 
   private boolean isOk(final long m, final long omegaM) {

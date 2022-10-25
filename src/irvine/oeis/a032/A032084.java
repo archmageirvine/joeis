@@ -10,6 +10,10 @@ import irvine.oeis.transform.BhjTransformSequence;
  */
 public class A032084 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   @Override
   protected Z computeNext() {
     final int n = size();

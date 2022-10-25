@@ -14,6 +14,7 @@ public class A322583 extends MemorySequence {
 
   protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   {
+    setOffset(1);
     add(Z.ZERO); // 0 unused
   }
 

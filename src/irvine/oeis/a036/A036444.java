@@ -13,6 +13,7 @@ import irvine.util.string.StringUtils;
 public class A036444 extends MemorySequence {
 
   {
+    setOffset(2);
     add(null); // 0
     add(null); // 1
   }

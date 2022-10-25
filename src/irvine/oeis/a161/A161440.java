@@ -25,6 +25,7 @@ public class A161440 extends A160700 {
   public A161440(final int parm) {
     mParm = Z.valueOf(parm);
     mK = -1;
+    setOffset(1);
   }
   
   @Override

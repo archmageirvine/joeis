@@ -14,6 +14,10 @@ import irvine.oeis.a002.A002854;
  */
 public class A007126 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private final Sequence mA88 = new A000088();
   private final Sequence mA2854 = new A002854();
   private final ArrayList<Z> mT = new ArrayList<>();

@@ -12,6 +12,10 @@ import irvine.oeis.Sequence;
  */
 public class A001624 extends MemorySequence {
 
+  {
+    setOffset(2);
+  }
+
   private int mN = -1;
   private int mGammaN = -1;
   protected Z mGamma = null;

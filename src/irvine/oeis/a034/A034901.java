@@ -10,6 +10,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A034901 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private boolean isQuadraticResidue(final Z m) {
     for (final Z t : this) {
       if (!ZUtils.isQuadraticResidue(m, t)) {

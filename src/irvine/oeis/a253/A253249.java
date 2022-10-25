@@ -15,6 +15,7 @@ public class A253249 extends A002033 {
    * Construct the sequence
    */
   public A253249() {
+    setOffset(1);
     mN = 0;
   }
 

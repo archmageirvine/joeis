@@ -15,6 +15,7 @@ public class A338046 extends MemorySequence {
 
   /** Construct the sequence. */
   public A338046() {
+    setOffset(1);
     next();
   }
 

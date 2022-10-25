@@ -10,7 +10,15 @@ import irvine.oeis.transform.Stirling2TransformSequence;
  */
 public class A007470 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private class InnerSequence extends MemorySequence {
+
+  {
+    setOffset(1);
+  }
     @Override
     protected Z computeNext() {
       return size() == 0 ? Z.ONE : Stirling2TransformSequence.stirling2(A007470.this.toList());

@@ -15,6 +15,7 @@ public class A000526 extends A000081 {
   private static final Z Z204 = Z.valueOf(204);
 
   {
+    setOffset(5);
     super.next();
     super.next();
     super.next();

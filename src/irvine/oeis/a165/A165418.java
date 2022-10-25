@@ -13,6 +13,7 @@ public class A165418 extends MemorySequence {
 
   private int mN = 0;
   {
+    setOffset(1);
     add(Z.ZERO);
   }
 

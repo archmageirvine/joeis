@@ -18,6 +18,7 @@ public class A032318 extends MemorySequence {
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private Z mF = Z.ONE;
   {
+    setOffset(1);
     add(Z.ZERO);
   }
 

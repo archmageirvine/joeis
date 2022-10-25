@@ -11,6 +11,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A051788 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private final TreeSet<Z> mDifferences = new TreeSet<>();
 
   @Override

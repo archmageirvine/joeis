@@ -37,6 +37,7 @@ public class A052300 extends MemorySequence {
   }
 
   {
+    setOffset(1);
     add(Z.ZERO); // 0
   }
 }

@@ -20,6 +20,7 @@ public class A015718 extends A000009 {
   private int mM = 0;
 
   {
+    setOffset(1);
     super.next();
   }
 

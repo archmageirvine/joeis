@@ -15,6 +15,7 @@ public class A067824 extends A002033 {
    * Construct the sequence
    */
   public A067824() {
+    setOffset(1);
     mN = 0;
   }
 

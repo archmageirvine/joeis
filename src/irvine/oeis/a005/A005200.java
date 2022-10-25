@@ -15,6 +15,7 @@ import irvine.oeis.a000.A000081;
 public class A005200 extends MemorySequence {
 
   {
+    setOffset(1);
     add(Z.ZERO); // Start sequence from 1
   }
 

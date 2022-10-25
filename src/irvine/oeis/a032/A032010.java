@@ -22,6 +22,7 @@ public class A032010 extends MemorySequence {
   private List<Z> mAfk = new ArrayList<>();
 
   {
+    setOffset(1);
     add(null); // seq starts at 1
     mAfk.add(null);
   }

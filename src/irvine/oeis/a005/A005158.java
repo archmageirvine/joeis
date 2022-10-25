@@ -13,6 +13,7 @@ public class A005158 extends MemorySequence {
   // Conjectured formula
 
   {
+    setOffset(1);
     add(null);
   }
 

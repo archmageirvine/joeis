@@ -9,6 +9,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A175481 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private int mN = -1;
 
   private long bb(final long a, final long b) {

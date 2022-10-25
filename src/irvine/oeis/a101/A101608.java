@@ -10,6 +10,7 @@ import irvine.oeis.MemorySequence;
 public class A101608 extends MemorySequence {
 
   {
+    setOffset(1);
     add(null);
   }
 

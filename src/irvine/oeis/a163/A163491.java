@@ -12,6 +12,7 @@ public class A163491 extends MemorySequence {
 
   /** Construct the sequence. */
   public A163491() {
+    setOffset(1);
     add(Z.ZERO);
   }
 

@@ -14,6 +14,7 @@ public class A052326 extends A052325 {
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final Polynomial<Z> mB = RING.empty();
   {
+    setOffset(0);
    mB.add(Z.ZERO);
   }
   private int mN = -1;

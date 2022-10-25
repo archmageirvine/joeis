@@ -20,6 +20,7 @@ public class StanleySequence extends MemorySequence {
    * @param initialTerms initial terms
    */
   public StanleySequence(final Z... initialTerms) {
+    setOffset(1);
     mNumInitialTerms = initialTerms.length;
     mLast = initialTerms[mNumInitialTerms - 1];
     for (final Z v : initialTerms) {

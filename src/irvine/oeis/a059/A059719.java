@@ -19,6 +19,7 @@ public class A059719 extends MemorySequence {
 
   protected A059719(final long start) {
     mStart = Z.valueOf(start);
+    setOffset(1);
   }
 
   /** Construct the sequence. */

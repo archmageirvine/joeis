@@ -12,6 +12,7 @@ public class A051680 extends MemorySequence {
   // After Jean-Fran&ccedil;ois Alcover
 
   {
+    setOffset(1);
     add(null);
   }
 

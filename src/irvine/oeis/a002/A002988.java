@@ -11,6 +11,10 @@ import irvine.math.z.Z;
  */
 public class A002988 extends A002955 {
 
+  {
+    setOffset(0);
+  }
+
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
   @Override

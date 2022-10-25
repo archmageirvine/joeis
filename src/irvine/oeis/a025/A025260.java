@@ -11,6 +11,7 @@ public class A025260 extends MemorySequence {
 
   private static final Z[] SMALL = {Z.TWO, Z.valueOf(-2), Z.ONE};
   {
+    setOffset(1);
     add(null); // 0th
   }
 

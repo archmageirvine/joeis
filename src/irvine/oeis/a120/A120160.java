@@ -31,6 +31,7 @@ public class A120160 extends MemorySequence {
     mStart = Z.valueOf(start);
     mDiv = Z.valueOf(div);
     add(Z.ZERO); // a(0) does not exist
+    setOffset(1);
   }
 
   @Override

@@ -12,5 +12,6 @@ public class A005487 extends StanleySequence {
   /** Construct the sequence. */
   public A005487() {
     super(Z.ZERO, Z.FOUR);
+    setOffset(0);
   }
 }

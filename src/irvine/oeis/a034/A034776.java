@@ -11,6 +11,10 @@ import irvine.oeis.a002.A002033;
  */
 public class A034776 extends A002033 {
 
+  {
+    setOffset(1);
+  }
+
   // There must be a better way of doing this sequence ...
 
   private static final int HEURISTIC_SIZE = 3;

@@ -16,6 +16,7 @@ public class A034800 extends A008295 {
   private static final Polynomial<Q> HALF = RING_Y.create(Collections.singletonList(Q.HALF));
   protected Polynomial<Polynomial<Q>> mT = RING_X.zero();
   {
+    setOffset(1);
     ++mN;
   }
 

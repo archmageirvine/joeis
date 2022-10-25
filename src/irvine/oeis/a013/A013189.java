@@ -14,6 +14,7 @@ public class A013189 extends MemorySequence {
   private int mS = 0;
   private long mSRemaining = 0;
   {
+    setOffset(1);
     add(Z.ONE);
   }
 

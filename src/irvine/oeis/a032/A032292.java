@@ -11,6 +11,10 @@ import irvine.oeis.transform.DikTransformSequence;
  */
 public class A032292 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   @Override
   protected Z computeNext() {
     if (size() == 0) {

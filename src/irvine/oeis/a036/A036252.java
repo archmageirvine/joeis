@@ -12,6 +12,10 @@ import irvine.oeis.a029.A029857;
  */
 public class A036252 extends A029857 {
 
+  {
+    setOffset(0);
+  }
+
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final Polynomial<Z> mB = RING.empty();
   private final Polynomial<Z> mB2 = RING.empty();

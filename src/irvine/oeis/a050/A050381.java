@@ -10,6 +10,10 @@ import irvine.oeis.transform.EulerTransformSequence;
  */
 public class A050381 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   @Override
   protected Z computeNext() {
     final int n = size();

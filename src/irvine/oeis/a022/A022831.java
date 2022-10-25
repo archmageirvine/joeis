@@ -12,6 +12,7 @@ public class A022831 extends MemorySequence {
 
   private final Fast mPrime = new Fast();
   {
+    setOffset(1);
     add(Z.ZERO);
   }
 

@@ -29,6 +29,7 @@ public class A003606 extends MemorySequence {
   private final GFunction mG = new GFunction();
 
   {
+    setOffset(1);
     add(Z.ONE);
   }
 

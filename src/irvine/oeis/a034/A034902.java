@@ -10,6 +10,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A034902 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private final Fast mPrime = new Fast();
 
   private boolean isSquare(final Z p) {

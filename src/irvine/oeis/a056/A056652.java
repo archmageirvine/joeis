@@ -13,5 +13,6 @@ public class A056652 extends MultiplicativeClosureSequence {
   public A056652() {
     super(new A000668());
     next(); // skip 1
+    setOffset(1);
   }
 }

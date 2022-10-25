@@ -9,26 +9,21 @@ import irvine.oeis.MemorySequence;
  */
 public class A172455 extends MemorySequence {
 
-  private int mA; // S(a,b,c)
-  private int mB;
-  private int mC;
+  private final int mA; // S(a,b,c)
+  private final int mB;
+  private final int mC;
 
   /** Construct the sequence. */
   public A172455() {
     this(6, -4, -1);
   }
 
-  /**
-   * Generic constructor with parameters
-   * @param a
-   * @param b
-   * @param c
-   */
-  public A172455(final int a, final int b, final int c) {
+  protected A172455(final int a, final int b, final int c) {
     mA = a;
     mB = b;
     mC = c;
     next(); // skip a(0)
+    setOffset(1);
   }
 
   /* a(n) = (6*n - 4) * a(n-1) - Sum_{k=1..n-1} a(k) * a(n-k) if n>1. */

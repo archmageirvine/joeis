@@ -13,6 +13,7 @@ public class A046805 extends MemorySequence {
   // After Robert Israel
 
   {
+    setOffset(1);
     add(null);
   }
 

@@ -13,6 +13,7 @@ public class A029856 extends MemorySequence {
   // After Alois P. Heinz
 
   {
+    setOffset(1);
     add(null); // 0th
   }
 

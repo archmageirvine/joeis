@@ -17,6 +17,7 @@ public class A007546 extends MemorySequence {
   private long mPP = 1;
 
   {
+    setOffset(1);
     add(null);
     mP.set(0, 0);
   }

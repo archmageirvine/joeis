@@ -11,6 +11,10 @@ import irvine.oeis.MemorySequence;
  */
 public class A034795 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private final Fast mPrime = new Fast();
 
   @Override

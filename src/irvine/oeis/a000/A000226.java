@@ -22,6 +22,7 @@ public class A000226 extends A000081 {
 
   /** Construct the sequence. */
   public A000226() {
+    setOffset(3);
     mR = RING.create(Arrays.asList(new Q(super.next()), new Q(super.next()), new Q(super.next()), new Q(super.next())));
   }
 

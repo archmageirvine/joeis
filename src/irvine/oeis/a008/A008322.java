@@ -13,6 +13,7 @@ public class A008322 extends MemorySequence {
 
   private final TreeSet<Z> mSumSquares = new TreeSet<>();
   {
+    setOffset(1);
     mSumSquares.add(Z.NINE);
   }
 

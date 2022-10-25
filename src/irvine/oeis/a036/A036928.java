@@ -14,6 +14,7 @@ public class A036928 extends MultiplicativeClosureSequence {
   public A036928() {
     super(new A020449());
     next(); // skip 1
+    setOffset(1);
   }
 
   @Override

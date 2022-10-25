@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A022834 extends A022831 {
 
+  {
+    setOffset(0);
+  }
+
   @Override
   protected Z first() {
     return Z.THREE;

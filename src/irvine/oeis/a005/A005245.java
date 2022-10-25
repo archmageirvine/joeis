@@ -14,6 +14,7 @@ public class A005245 extends MemorySequence {
   // After Alois P. Heinz
 
   {
+    setOffset(1);
     add(null);
   }
 

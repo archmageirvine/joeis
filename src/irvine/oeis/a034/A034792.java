@@ -12,6 +12,10 @@ import irvine.oeis.a000.A000217;
  */
 public class A034792 extends MemorySequence {
 
+  {
+    setOffset(1);
+  }
+
   private Sequence mT = new SkipSequence(new A000217(), 1);
 
   private boolean isCoprime(final Z t) {

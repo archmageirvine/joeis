@@ -4,38 +4,25 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.SequenceWithOffset;
 
 /**
  * A166699 Totally multiplicative sequence with a(p) = a(p-1) + 2 for prime p.
  * If n = Product p(k)^e(k) then a(n) = Product (a(p(k)-1)+2)^e(k).
  * @author Georg Fischer
  */
-public class A166699 extends MemorySequence implements SequenceWithOffset {
+public class A166699 extends MemorySequence {
 
-  private int mN;
-  private int mOffset;
-  private int mParm;
+  private final int mParm;
 
   /** Construct the sequence. */
   public A166699() {
     this(1, 2);
   }
 
-  /**
-   * Generic constructor with parameters
-   * @param parm
-   */
-  public A166699(final int offset, final int parm) {
-    mN = 0;
-    mOffset = offset;
+  protected A166699(final int offset, final int parm) {
     mParm = parm;
     super.add(Z.ZERO);
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
+    setOffset(offset);
   }
 
   @Override

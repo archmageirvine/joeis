@@ -1,5 +1,7 @@
 package irvine.math.z;
 
+import java.util.Arrays;
+
 /**
  * Conversion to byte array.
  *
@@ -29,6 +31,10 @@ final class ZByteArray {
       b[i] = (byte) v;
       v >>>= 8;
       k -= 8;
+    }
+    // Evil but rare correction (e.g. for -128)
+    if (b[0] == -1 && b.length > 1 && b[1] < 0) {
+      return Arrays.copyOfRange(b, 1, b.length);
     }
     return b;
   }

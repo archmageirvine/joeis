@@ -11,7 +11,6 @@ import irvine.math.z.Z;
 public class StanleySequence extends MemorySequence {
 
   private final TreeSet<Z> mForbidden = new TreeSet<>();
-  private final int mNumInitialTerms;
   private Z mLast;
   private int mInitialTerms = 0;
 
@@ -20,13 +19,13 @@ public class StanleySequence extends MemorySequence {
    * @param initialTerms initial terms
    */
   public StanleySequence(final Z... initialTerms) {
-    setOffset(1);
-    mNumInitialTerms = initialTerms.length;
-    mLast = initialTerms[mNumInitialTerms - 1];
+    int numInitialTerms = initialTerms.length;
+    mLast = initialTerms[numInitialTerms - 1];
     for (final Z v : initialTerms) {
       updateForbidden(v);
       add(v);
     }
+    setOffset(1);
   }
 
   private void updateForbidden(final Z n) {
@@ -48,7 +47,6 @@ public class StanleySequence extends MemorySequence {
 
   @Override
   public Z next() {
-    final int n = mInitialTerms++;
-    return mInitialTerms < mNumInitialTerms ? a(n) : super.next();
+    return a(mInitialTerms++);
   }
 }

@@ -39,6 +39,7 @@ import irvine.oeis.AbstractSequence;
 public class HolonomicRecurrence extends AbstractSequence {
   static int sDebug = 0;
 
+  private final int mOffset;
   protected Z[] mInitTerms; // initial terms for a(n)
   protected int mNDist; // d >= 0 if a(n+d) is the highest and next element to be computed (0 <= d <= k).
   protected int mMaxDegree; // maximum degree of polynomials in n; = 0 for linear recurrences
@@ -56,6 +57,7 @@ public class HolonomicRecurrence extends AbstractSequence {
    */
   protected HolonomicRecurrence(final int offset) {
     super(offset);
+    mOffset = offset;
     mNDist = 0;
     mPolyList = new ArrayList<>(16);
     mInitTerms = new Z[] { Z.ONE };
@@ -72,6 +74,7 @@ public class HolonomicRecurrence extends AbstractSequence {
    */
   public HolonomicRecurrence(final int offset, final ArrayList<Z[]> polyList, final Z[] initTerms, final int nDist) {
     super(offset);
+    mOffset = offset;
     mNDist = nDist;
     mPolyList = polyList;
     mInitTerms = initTerms.length == 0 ? new Z[] { Z.ONE } : Arrays.copyOf(initTerms, initTerms.length);
@@ -102,6 +105,7 @@ public class HolonomicRecurrence extends AbstractSequence {
    */
   public HolonomicRecurrence(final int offset, final String matrix, final String initTerms, final int nDist) {
     super(offset);
+    mOffset = offset;
     mNDist = nDist;
     int start = 0;
     while (matrix.charAt(start) == '[') {
@@ -209,7 +213,7 @@ public class HolonomicRecurrence extends AbstractSequence {
    */
   protected void initialize() {
     mGfType = 0; // normally it is an ordinary g.f.
-    mN = getOffset() - 1;
+    mN = mOffset - 1;
     mMaxDegree = 1;
     int k = mPolyList.size() - 1;
     mBufSize = k + 2; // at least 1
@@ -249,8 +253,8 @@ public class HolonomicRecurrence extends AbstractSequence {
     int ibuf; // index in mBuffer
     final Z result;
     ++mN;
-    if (mN - getOffset() < mInitTerms.length) {
-      result = mInitTerms[mN - getOffset()];
+    if (mN - mOffset < mInitTerms.length) {
+      result = mInitTerms[mN - mOffset];
     } else {
       final int nd = mN - mNDist;
       mNdPowers[1] = Z.valueOf(nd);

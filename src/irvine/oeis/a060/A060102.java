@@ -5,7 +5,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A060097.
+ * A060102 Bisection of triangle A060098: even-indexed members of column sequences of A060098 (not counting leading zeros).
  * @author Sean A. Irvine
  */
 public class A060102 extends Sequence0 {

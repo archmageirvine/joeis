@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060068.
+ * A060072 a(n) = (n^(n-1) - 1)/(n-1) for n&gt;1, a(1) = 0.
  * @author Sean A. Irvine
  */
 public class A060072 extends Sequence1 {

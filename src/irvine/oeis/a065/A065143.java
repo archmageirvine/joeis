@@ -7,7 +7,7 @@ import irvine.oeis.a199.A199572;
 
 
 /**
- * A065143 a(n) = Sum_{k=0..n} stirling2(n,k)*(1+(-1)^k)*2^k/2.
+ * A065143 a(n) = Sum_{k=0..n} Stirling2(n,k)*(1+(-1)^k)*2^k/2.
  * @author Georg Fischer
  */
 public class A065143 extends Stirling2TransformSequence {

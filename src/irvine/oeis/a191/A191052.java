@@ -4,7 +4,7 @@ package irvine.oeis.a191;
 import irvine.oeis.prime.KroneckerForm;
 
 /**
- * A191052 Primes that are squares mod 87.
+ * A191052 Primes p that have Kronecker symbol (p|87) = 1.
  * @author Georg Fischer
  */
 public class A191052 extends KroneckerForm {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060097.
+ * A060109 Numbers in Morse code, with 1 for a dot, 2 for a dash and 0 between digits/letters.
  * @author Sean A. Irvine
  */
 public class A060109 extends Sequence0 {

@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.math.z.Z;
 
 /**
- * A060068.
+ * A060077 Fifth column of triangle A060074.
  * @author Sean A. Irvine
  */
 public class A060077 extends A060058 {

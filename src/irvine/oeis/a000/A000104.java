@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A000104 Number of n-celled polyominoes without holes.
+ * A000104 Number of n-celled free polyominoes without holes.
  * @author Sean A. Irvine
  */
 public class A000104 extends Sequence0 {

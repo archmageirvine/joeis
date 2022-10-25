@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A189422 E.g.f. exp(sin(x)-sin(x)^2).
+ * A189422 Expansion of e.g.f. exp(sin(x)-sin(x)^2).
  * E.g.f.: exp(sin(x)-sin(x)^2)
  * @author Georg Fischer
  */

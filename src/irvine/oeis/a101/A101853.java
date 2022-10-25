@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A101853 a(n) = n*(20+15*n+n^2)/6.
+ * A101853 a(n) = n*(20 + 15*n + n^2)/6.
  * @author Sean A. Irvine
  */
 public class A101853 extends LinearRecurrence {

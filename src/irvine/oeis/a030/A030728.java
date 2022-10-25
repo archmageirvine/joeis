@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
 /**
- * A030728 Row 2, where, at stage k&gt;1, write i in row 1 and j in row 2, where i is the number of j's in rows 1 and 2, for j=1,2,...,m, where m=max number in row 1 from stages 1 to k-1; stage 1 is 3 in row 1.
+ * A030728 The second list after the following procedure: starting with a list [3] and an empty list, repeatedly add the distinct values already in both lists in ascending order to the second list and add the corresponding frequencies of those values to the first list.
  * @author Sean A. Irvine
  */
 public class A030728 extends A030727 {

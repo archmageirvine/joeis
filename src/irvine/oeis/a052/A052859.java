@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A052859 A simple grammar.
+ * A052859 Expansion of e.g.f.: exp(exp(2*x) - 2*exp(x) + 1).
  * @author Sean A. Irvine
  */
 public class A052859 extends MemorySequence {

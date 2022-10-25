@@ -4,7 +4,7 @@ package irvine.oeis.a355;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A355752 a(n) = 3*(2*n - 1)*( 3*(2*n - 1)^3 + 1) / 2 for n &gt; 0.
+ * A355752 a(n) = 3*(2*n - 1)*( 3*(2*n - 1)^3 + 1) / 2.
  * @author Georg Fischer
  */
 public class A355752 extends HolonomicRecurrence {

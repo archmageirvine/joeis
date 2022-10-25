@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RecordPositionSequence;
 
 /**
- * A011778 Numbers n where A011776(n) grows.
+ * A011778 Numbers k where A011776(k) grows.
  * @author Sean A. Irvine
  */
 public class A011778 extends RecordPositionSequence {

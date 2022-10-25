@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A082679 Number of Lego towers, one piece per floor, where every floor is perpendicular to the one below it (so we have a kind of 3-dimensional zigzag pattern).
+ * A082679 Number of LEGO towers, one piece per floor, where every floor is perpendicular to the one below it (so we have a kind of 3-dimensional zigzag pattern).
  * @author Georg Fischer
  */
 public class A082679 extends GeneratingFunctionSequence {

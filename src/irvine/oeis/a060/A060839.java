@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A060839 Number of solutions to x^3 == 1 mod n.
+ * A060839 Number of solutions to x^3 == 1 (mod n).
  * @author Georg Fischer
  */
 public class A060839 extends MultiplicativeSequence {

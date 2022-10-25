@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A059583 Each c(i) is "multiply" (*) or "divide" (/); a(n) is number of choices for c(1),..,c(n) so that 1 c(1) 2 c(2) 3 c(3) 5,.., c(n) n-th prime is " remainder = 1 ".
+ * A059583 Each c(i) is "multiply" (*) or "divide" (/); a(n) is number of choices for c(1),..,c(n) so that the reduced fraction 1 c(1) 2 c(2) 3 c(3) 5 ... c(n) prime(n) is equal to (k*m+1)/m for a positive integer m and a nonnegative integer k.
  * @author Sean A. Irvine
  */
 public class A059583 extends Sequence1 {

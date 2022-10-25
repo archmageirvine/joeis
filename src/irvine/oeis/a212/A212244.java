@@ -4,7 +4,7 @@ package irvine.oeis.a212;
 import irvine.oeis.a210.A210286;
 
 /**
- * A212244 Number of (w,x,y,z) with all terms in {1,...,n} and w+n=xyz.
+ * A212244 Number of (w,x,y,z) with all terms in {1,...,n} and w + n = x*y*z.
  * @author Georg Fischer
  */
 public class A212244 extends A210286 {

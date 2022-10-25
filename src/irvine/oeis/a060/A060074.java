@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.math.z.Z;
 
 /**
- * A060068.
+ * A060074 Triangle A060058 by diagonals.
  * @author Sean A. Irvine
  */
 public class A060074 extends A060058 {

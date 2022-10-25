@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060068.
+ * A060083 Coefficients of even-indexed Euler polynomials (rising powers without zeros).
  * @author Sean A. Irvine
  */
 public class A060083 extends Sequence0 {

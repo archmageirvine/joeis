@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A127589 Primes of the form 16k+5.
+ * A127589 Primes of the form 16k + 5.
  * @author Georg Fischer
  */
 public class A127589 extends PrimeSubsequence {

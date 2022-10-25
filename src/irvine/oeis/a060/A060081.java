@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060068.
+ * A060081 Exponential Riordan array (sech(x), tanh(x)).
  * @author Sean A. Irvine
  */
 public class A060081 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A217347 Numbers n such that 3^n - 10 is prime.
+ * A217347 Numbers k such that 3^k - 10 is prime.
  * @author Georg Fischer
  */
 public class A217347 extends PrimePositionSubsequence {

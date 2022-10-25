@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A060087.
+ * A060090 Number of ordered bicoverings of an unlabeled n-set.
  * @author Sean A. Irvine
  */
 public class A060090 extends A060092 {

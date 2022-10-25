@@ -4,7 +4,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 
 /**
- * A023517 Greatest prime divisor of p(n)*p(n-1) - 1.
+ * A023517 Greatest prime divisor of prime(n)*prime(n-1) - 1.
  * @author Sean A. Irvine
  */
 public class A023517 extends A023515 {

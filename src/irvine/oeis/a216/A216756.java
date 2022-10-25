@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A216756 Floor(e^e^(n/e^gamma)).
+ * A216756 a(n) = floor(e^e^(n/e^gamma)).
  * @author Georg Fischer
  */
 public class A216756 extends FloorSequence {

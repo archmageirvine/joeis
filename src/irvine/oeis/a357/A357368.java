@@ -6,7 +6,7 @@ import irvine.oeis.a089.A089026;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
- * A357368 allocated for Peter Luschny.
+ * A357368 Triangle read by rows. Convolution triangle of the prime indicator sequence A089026.
  * @author Georg Fischer
  */
 public class A357368 extends PartitionTransformTriangle {

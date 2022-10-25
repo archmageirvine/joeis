@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A053461 a(0) = 0; a(n) = a(n-1)-n^2 if positive and new, otherwise a(n) = a(n-1)+n^2.
+ * A053461 a(0) = 0; a(n) = a(n-1) - n^2 if positive and new, otherwise a(n) = a(n-1) + n^2.
  * @author Sean A. Irvine
  */
 public class A053461 extends Sequence0 {

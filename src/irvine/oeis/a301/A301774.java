@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A301774 Number of chordless cycles in the (2n+1)-prism graph.
+ * A301774 Number of odd chordless cycles in the (2n+1)-prism graph.
  * @author Georg Fischer
  */
 public class A301774 extends LinearRecurrence {

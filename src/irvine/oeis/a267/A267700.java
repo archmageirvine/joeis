@@ -6,7 +6,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a038.A038573;
 
 /**
- * A267700 "Tree" sequence in a 90 degree sector of the cellular automaton of A160720.
+ * A267700 "Tree" sequence in a 90-degree sector of the cellular automaton of A160720.
  * @author Georg Fischer
  */
 public class A267700 extends PartialSumSequence {

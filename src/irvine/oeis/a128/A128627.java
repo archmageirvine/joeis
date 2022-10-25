@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002865;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
- * A128627 Triangular array illustrating the application of cyclic partitions to the computation of partitions of an integer into parts of k kinds. (cf. A060850).
+ * A128627 Triangle read by rows. Convolution triangle based on A002865.
  * @author Georg Fischer
  */
 public class A128627 extends PartitionTransformTriangle {

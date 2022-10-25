@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060068.
+ * A060082 Coefficients of even-indexed Euler polynomials (falling powers without zeros).
  * @author Sean A. Irvine
  */
 public class A060082 extends Sequence0 {

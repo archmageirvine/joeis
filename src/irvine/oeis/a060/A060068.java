@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A060068.
+ * A060068 Divide n! by largest power of n which will leave the result an integer.
  * @author Sean A. Irvine
  */
 public class A060068 extends A000142 {

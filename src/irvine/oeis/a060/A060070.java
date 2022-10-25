@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a059.A059530;
 
 /**
- * A060068.
+ * A060070 Number of T_0-tricoverings of an n-set.
  * @author Sean A. Irvine
  */
 public class A060070 extends A059530 {

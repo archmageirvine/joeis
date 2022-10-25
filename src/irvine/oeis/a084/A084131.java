@@ -4,7 +4,7 @@ package irvine.oeis.a084;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A084131 a(n)=10a(n-1)-17a(n-2), a(0)=0,a(1)=5.
+ * A084131 a(n) = 10*a(n-1) - 17*a(n-2), a(0) = 1, a(1) = 5.
  * @author Georg Fischer
  */
 public class A084131 extends HolonomicRecurrence {

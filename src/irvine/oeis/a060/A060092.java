@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A060087.
+ * A060092 Triangle T(n,k) of k-block ordered bicoverings of an unlabeled n-set, n &gt;= 2, k = 3..n+floor(n/2).
  * @author Sean A. Irvine
  */
 public class A060092 extends Sequence2 {

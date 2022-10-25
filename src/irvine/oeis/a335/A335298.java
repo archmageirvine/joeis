@@ -7,7 +7,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A335298 a(n) is the squared distance between the points P(n) and P(0) on a plane, n&gt;=0, such that the distance between P(n) and P(n+1) is n+1 and, going from P(n) to P(n+2), a 90-degree-left-turn is taken in P(n+1).
+ * A335298 a(n) is the squared distance between the points P(n) and P(0) on a plane, n &gt;= 0, such that the distance between P(n) and P(n+1) is n+1 and, going from P(n) to P(n+2), a 90-degree left turn is taken in P(n+1).
  * @author Georg Fischer
  */
 public class A335298 extends HolonomicRecurrence {

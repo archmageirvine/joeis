@@ -5,7 +5,7 @@ package irvine.oeis.a275;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A275049 Diagonal of the rational function 1/(1-(wxz + xyz + wy + xy + z)) [even-indexed terms only].
+ * A275049 Diagonal of the rational function 1/(1 - (w*x*z + x*y*z + w*y + x*y + z)) [even-indexed terms only].
  * @author Georg Fischer
  */
 public class A275049 extends HolonomicRecurrence {

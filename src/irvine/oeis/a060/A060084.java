@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060068.
+ * A060084 a(n) is the least prime not a primitive root of n-th prime.
  * @author Sean A. Irvine
  */
 public class A060084 extends Sequence1 {

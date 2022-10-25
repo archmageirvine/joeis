@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002778;
 import irvine.oeis.a059.A059744;
 
 /**
- * A060087.
+ * A060087 Numbers n such that n^2 is a palindromic square with an asymmetric root.
  * @author Sean A. Irvine
  */
 public class A060087 extends FilterSequence {

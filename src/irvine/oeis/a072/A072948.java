@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A072948 Number of permutations p of (1,2,3,...,2n) such that sum(k=1,2n,abs(k-p(k)))=2n.
+ * A072948 Number of permutations p of {1,2,3,...,2n} such that Sum_{k=1..2n} abs(k-p(k)) = 2n.
  * @author Sean A. Irvine
  */
 public class A072948 extends Sequence1 {

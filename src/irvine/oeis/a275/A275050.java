@@ -4,7 +4,7 @@ package irvine.oeis.a275;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A275050 Diagonal of the rational function 1/(1-(wxz + wyz + xyz + wy + xy + z)) [even-indexed terms only].
+ * A275050 Diagonal of the rational function 1/(1 - (w*x*z + w*y*z + x*y*z + w*y + x*y + z)) [even-indexed terms only].
  * (9*(n-1)*(2*n-1)*(693*n^3-1554*n^2+989*n-160)*a(n-1)+(6*(33*n-8))*(3*n-4)*(2*n-1)*(2*n-3)*(3*n-5)*a(n-2))-a(n)*((n-1)*(33*n-41)*n^3)
  * @author Georg Fischer
  */

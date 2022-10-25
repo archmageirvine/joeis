@@ -6,7 +6,7 @@ import irvine.oeis.recur.PaddingSequence;
 
 
 /**
- * A117589 See Comments line.
+ * A117589 Periodic with period 8: repeat 0, 1, 3, 7, 15, 14, 12, 8.
  * @author Georg Fischer
  */
 public class A117589 extends PaddingSequence {

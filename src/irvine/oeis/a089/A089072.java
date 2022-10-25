@@ -5,7 +5,7 @@ import irvine.oeis.a095.A095887;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A089072 Triangle read by rows: T(n,k) = k^n, n&gt;=1, 1&lt;=k&lt;=n.
+ * A089072 Triangle read by rows: T(n,k) = k^n, n &gt;= 1, 1 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A089072 extends Transpose {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a059.A059530;
 
 /**
- * A060068.
+ * A060069 Number of n-block T_0-tricoverings.
  * @author Sean A. Irvine
  */
 public class A060069 extends A059530 {

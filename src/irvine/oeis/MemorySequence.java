@@ -12,11 +12,11 @@ import irvine.math.z.Z;
  * for implementing sequences that depend on many earlier terms.
  * @author Sean A. Irvine
  */
-public abstract class MemorySequence implements Iterable<Z>, Sequence {
+public abstract class MemorySequence extends AbstractSequence implements Iterable<Z>, Sequence {
 
   private final List<Z> mTerms = new ArrayList<>();
-  private final int mOffset;
   private final int mNumInitialTerms;
+  private final int mOffset;
   private int mPos = 0;
 
   /**
@@ -25,6 +25,7 @@ public abstract class MemorySequence implements Iterable<Z>, Sequence {
    * @param initialTerms initial terms (starting at offset)
    */
   public MemorySequence(final int offset, final long... initialTerms) {
+    super(offset);
     mOffset = offset;
     mNumInitialTerms = initialTerms.length;
     for (final long t : initialTerms) {
@@ -37,6 +38,7 @@ public abstract class MemorySequence implements Iterable<Z>, Sequence {
    * @param offset the offset
    */
   public MemorySequence(final int offset) {
+    super(offset);
     mOffset = offset;
     mNumInitialTerms = 0;
   }
@@ -115,14 +117,6 @@ public abstract class MemorySequence implements Iterable<Z>, Sequence {
    */
   public int size() {
     return mTerms.size();
-  }
-
-  /**
-   * Get the offset for this sequence.
-   * @return offset
-   */
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

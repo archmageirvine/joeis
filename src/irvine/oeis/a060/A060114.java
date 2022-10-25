@@ -8,7 +8,7 @@ import irvine.oeis.a014.A014137;
 import irvine.oeis.a057.A057505;
 
 /**
- * A057507 Number of cycles in range [A014137(n-1)..A014138(n-1)] of permutation A057505/A057506.
+ * A060114 Least common multiple of all cycle sizes in range [A014137(n-1)..A014138(n-1)] of permutation A057505/A057506.
  * @author Sean A. Irvine
  */
 public class A060114 extends A014137 {

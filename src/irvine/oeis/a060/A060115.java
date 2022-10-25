@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.SelfQuotientSequence;
 
 /**
- * A060115.
+ * A060115 First quotients of A060113.
  * @author Sean A. Irvine
  */
 public class A060115 extends SelfQuotientSequence {

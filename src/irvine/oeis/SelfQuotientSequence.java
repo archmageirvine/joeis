@@ -25,6 +25,16 @@ public class SelfQuotientSequence extends AbstractSequence {
 
   /**
    * Create the quotient sequence of a sequence.
+   * The factor is 1.
+   * @param offset sequence offset
+   * @param seq underlying sequence
+   */
+  public SelfQuotientSequence(final int offset, final Sequence seq) {
+    this(offset, seq, 1);
+  }
+
+  /**
+   * Create the quotient sequence of a sequence.
    * @param offset for the sequence
    * @param seq underlying sequence
    */

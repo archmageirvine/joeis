@@ -17,7 +17,7 @@ public class A002516 extends MemorySequence {
     }
     final int t = n / 2;
     if ((n & 1) == 0) {
-      return get(t).multiply2();
+      return a(t).multiply2();
     }
     // Note t == (n-1)/2
     final long v = 2 * t - 5;

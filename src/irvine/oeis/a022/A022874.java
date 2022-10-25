@@ -20,7 +20,7 @@ public class A022874 extends MemorySequence {
       return n == 1 ? Z.ONE : Z.TWO;
     }
     Z sum = Z.ZERO;
-    final Z num = get(n - 1);
+    final Z num = a(n - 1);
     for (final Z a : this) {
       sum = sum.add(num.divide(a));
     }

@@ -22,7 +22,7 @@ public class A006701 extends MemorySequence {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      sum = sum.add(Binomial.binomial(mN, k).multiply(mFibonacci.a(k)).multiply(get(mN - k)));
+      sum = sum.add(Binomial.binomial(mN, k).multiply(mFibonacci.a(k)).multiply(a(mN - k)));
     }
     return sum;
   }

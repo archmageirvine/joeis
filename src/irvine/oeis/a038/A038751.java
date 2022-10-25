@@ -18,15 +18,15 @@ public class A038751 extends MemorySequence {
     } else if (mN == 1) {
       return Z.ONE;
     } else if ((mN & 1) == 0) {
-      Z s = get(mN / 2).multiply(get(mN / 2).add(1)).divide2();
+      Z s = a(mN / 2).multiply(a(mN / 2).add(1)).divide2();
       for (int k = 1, j = size() - 1; k < mN / 2; ++k, --j) {
-        s = s.add(get(k).multiply(get(j)));
+        s = s.add(a(k).multiply(a(j)));
       }
       return s;
     } else {
       Z s = Z.ZERO;
       for (int k = 1, j = size() - 1; k < (mN - 1) / 2; ++k, --j) {
-        s = s.add(get(k).multiply(get(j)));
+        s = s.add(a(k).multiply(a(j)));
       }
       return s;
     }

@@ -26,7 +26,7 @@ public class A006790 extends MemorySequence {
     mA55.add(mSeq.next());
     Z sum = Z.ZERO;
     for (int j = 1; j <= n; ++j) {
-      sum = sum.add(Binomial.binomial(n - 1, j - 1).multiply(mA55.get(j - 1)).multiply(get(n - j)));
+      sum = sum.add(Binomial.binomial(n - 1, j - 1).multiply(mA55.get(j - 1)).multiply(a(n - j)));
     }
     return sum;
   }

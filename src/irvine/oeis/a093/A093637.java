@@ -26,7 +26,7 @@ public class A093637 extends MemorySequence {
     while ((p = part.next()) != null) {
       Z prod = Z.ONE;
       for (final int k : p) {
-        prod = prod.multiply(get(k));
+        prod = prod.multiply(a(k));
       }
       sum = sum.add(prod);
     }

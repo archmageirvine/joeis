@@ -36,7 +36,7 @@ public class A024945 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 1; k <= (n + 2) / 4; ++k) {
-      sum = sum.add(get(2 * k - 1).multiply(get(n - 2 * k + 1)));
+      sum = sum.add(a(2 * k - 1).multiply(a(n - 2 * k + 1)));
     }
     return sum;
   }

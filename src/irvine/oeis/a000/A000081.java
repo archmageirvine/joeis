@@ -26,7 +26,7 @@ public class A000081 extends MemorySequence {
       sum = Z.ONE;
     } else {
       for (final Z t : Jaguar.factor(k).divisors()) {
-        sum = sum.add(t.multiply(get(t.intValue())));
+        sum = sum.add(t.multiply(a(t.intValue())));
       }
     }
     mS.set(k, sum);
@@ -43,7 +43,7 @@ public class A000081 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 1; k < n; ++k) {
-      sum = sum.add(get(n - k).multiply(sum(k)));
+      sum = sum.add(a(n - k).multiply(sum(k)));
     }
     return sum.divide(n - 1);
   }

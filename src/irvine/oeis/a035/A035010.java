@@ -24,7 +24,7 @@ public class A035010 extends MemorySequence {
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       if (d > 1 && d < n) {
-        res = res.subtract(get(d).multiply(Binomial.catalan(n / d - 1)));
+        res = res.subtract(a(d).multiply(Binomial.catalan(n / d - 1)));
       }
     }
     return res;

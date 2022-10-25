@@ -12,10 +12,10 @@ public class A000060 extends A000151 {
   public Z next() {
     Z r = super.next();
     if ((mN & 1) == 0) {
-      r = r.add(get(mN / 2));
+      r = r.add(a(mN / 2));
     }
     for (int k = 1; k < mN; ++k) {
-      r = r.subtract(get(k).multiply(get(mN - k)));
+      r = r.subtract(a(k).multiply(a(mN - k)));
     }
     return r;
   }

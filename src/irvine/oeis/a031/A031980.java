@@ -22,7 +22,7 @@ public class A031980 extends MemorySequence {
     if (size() == 0) {
       return Z.ONE;
     }
-    Z t = get(size() - 1);
+    Z t = a(size() - 1);
     while (true) {
       t = t.add(1);
       if (!mForbidden.remove(t)) {

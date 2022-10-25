@@ -23,7 +23,7 @@ public class A052284 extends MemorySequence {
     Z sum = Z.ZERO;
     for (int j = 1; j <= n; ++j) {
       if (!mPrime.isPrime(j)) {
-        sum = sum.add(get(n - j));
+        sum = sum.add(a(n - j));
       }
     }
     return sum;

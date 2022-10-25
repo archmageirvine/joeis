@@ -20,7 +20,7 @@ public class A002955 extends MemorySequence {
   }
 
   protected Z b(final int n) {
-    return get(n).subtract(n == 2 ? 1 : 0);
+    return a(n).subtract(n == 2 ? 1 : 0);
   }
 
   private Z sum(final int n) {
@@ -41,7 +41,7 @@ public class A002955 extends MemorySequence {
     }
     Z s = sum(size() - 1);
     for (int k = 1; k < size() - 1; ++k) {
-      s = s.add(sum(k).multiply(get(size() - k)));
+      s = s.add(sum(k).multiply(a(size() - k)));
     }
     return s.divide(size() - 1);
   }

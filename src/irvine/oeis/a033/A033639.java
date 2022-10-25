@@ -22,7 +22,8 @@ public class A033639 extends MemorySequence {
     int m = n;
     Z sum = Z.ZERO;
     while (n != 0) {
-      sum = sum.add(get(--m).multiply(n % base()));
+      final int n1 = --m;
+      sum = sum.add(a(n1).multiply(n % base()));
       n /= base();
     }
     return sum;

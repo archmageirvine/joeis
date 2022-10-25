@@ -17,7 +17,7 @@ public class A051734 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 0; k < n; ++k) {
-      sum = sum.signedAdd((k & 1) == 0, get(k).multiply(Math.min(k + 1, n - k)));
+      sum = sum.signedAdd((k & 1) == 0, a(k).multiply(Math.min(k + 1, n - k)));
     }
     return sum;
   }

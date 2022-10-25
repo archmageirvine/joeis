@@ -21,7 +21,7 @@ public class A051295 extends MemorySequence {
       if (k > 1) {
         f = f.multiply(k);
       }
-      sum = sum.add(f.multiply(get(n - 1 - k)));
+      sum = sum.add(f.multiply(a(n - 1 - k)));
     }
     return sum;
   }

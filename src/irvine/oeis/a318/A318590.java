@@ -21,7 +21,7 @@ public class A318590 extends MemorySequence {
       if (n == 0) {
         return Z.ONE;
       }
-      return get(n / 2).add(mA054919.a(n / 2)).add(mA054921.a(n)).subtract(mA054921.a(n / 2)).divide2();
+      return a(n / 2).add(mA054919.a(n / 2)).add(mA054921.a(n)).subtract(mA054921.a(n / 2)).divide2();
     } else {
       return mA054921.a(n).divide2();
     }

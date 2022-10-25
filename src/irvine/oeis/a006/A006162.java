@@ -26,7 +26,7 @@ public class A006162 extends MemorySequence {
       case 4:
         return Z.THREE;
       default:
-        return get(get(n - 1).intValueExact() - 2).add(get(n + 2 - get(n - 1).intValueExact()));
+        return a(a(n - 1).intValueExact() - 2).add(a(n + 2 - a(n - 1).intValueExact()));
     }
   }
 }

@@ -26,7 +26,7 @@ public class A005119 extends MemorySequence {
     final Z f = mF.factorial(n - 2);
     Z s = Z.ZERO;
     for (int k = 1; k < n; ++k) {
-      s = s.signedAdd((k & 1) == 1, f.multiply(Binomial.binomial(n - k + 1, k + 1)).multiply(get(n - k - 1)).divide(mF.factorial(n - k - 1)));
+      s = s.signedAdd((k & 1) == 1, f.multiply(Binomial.binomial(n - k + 1, k + 1)).multiply(a(n - k - 1)).divide(mF.factorial(n - k - 1)));
     }
     return s;
   }

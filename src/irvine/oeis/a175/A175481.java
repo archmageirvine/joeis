@@ -43,7 +43,7 @@ public class A175481 extends MemorySequence {
     } else {
       s = 0;
       for (int k = 0; k < mN; ++k) {
-        s += b(mN, get(k).longValue());
+        s += b(mN, a(k).longValue());
       }
     }
     return Z.valueOf(s);

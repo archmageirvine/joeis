@@ -24,13 +24,13 @@ public class A101608 extends MemorySequence {
     final int n = size();
     switch (n & 3) {
       case 0:
-        return Z.valueOf(f(get(n / 2).intValue()));
+        return Z.valueOf(f(a(n / 2).intValue()));
       case 1:
         return Z.valueOf((n >>> 2) % 3 + 1);
       case 2:
         return Z.valueOf(((n >>> 2) + 1) % 3 + 1);
       default: // 3
-        return Z.valueOf(f(get(n >> 1).intValue()));
+        return Z.valueOf(f(a(n >> 1).intValue()));
     }
   }
 }

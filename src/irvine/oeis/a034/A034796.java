@@ -19,7 +19,7 @@ public class A034796 extends MemorySequence {
     if (size() == 0) {
       return Z.ONE;
     }
-    final Z prev = get(size() - 1);
+    final Z prev = a(size() - 1);
     Z n = prev;
     while (true) {
       n = n.add(1);

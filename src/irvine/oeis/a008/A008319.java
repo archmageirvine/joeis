@@ -28,7 +28,7 @@ public class A008319 extends MemorySequence {
   private void insertNewSquares(final Z sum, final int k) {
     if (k < size() && Z892.compareTo(sum) > 0) {
       // Include element k in the sum
-      final Z t = sum.add(get(k).square());
+      final Z t = sum.add(a(k).square());
       addSquare(t);
       insertNewSquares(t, k + 1);
       // Don't use element k

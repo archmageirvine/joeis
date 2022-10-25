@@ -11,6 +11,6 @@ public class A052327 extends A002955 {
 
   @Override
   protected Z b(final int n) {
-    return get(n).subtract(n == 4 ? 1 : 0);
+    return a(n).subtract(n == 4 ? 1 : 0);
   }
 }

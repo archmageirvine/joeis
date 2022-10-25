@@ -26,7 +26,7 @@ public class A032004 extends MemorySequence {
     Q kf = Q.ONE;
     for (int k = 1; k < size(); ++k) {
       kf = kf.divide(k);
-      final Q kf2 = new Q(get(k)).multiply(kf);
+      final Q kf2 = new Q(a(k)).multiply(kf);
       final Polynomial<Q> t1 = Y_RING.monomial(kf2, 1);
       final Polynomial<Polynomial<Q>> u = RING.onePlusXToTheN(t1, k);
       prod = RING.multiply(prod, u, size());

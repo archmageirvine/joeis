@@ -17,7 +17,7 @@ public class A000699 extends MemorySequence {
     } else {
       Z s = Z.ZERO;
       for (int k = 1; k < n; ++k) {
-        s = s.add(get(k).multiply(get(n - k)));
+        s = s.add(a(k).multiply(a(n - k)));
       }
       return s.multiply(n - 1);
     }

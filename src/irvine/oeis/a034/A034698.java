@@ -30,7 +30,7 @@ public class A034698 extends MemorySequence {
     if (size() == 0) {
       return Z.TWO;
     }
-    Z p = get(size() - 1);
+    Z p = a(size() - 1);
     while (true) {
       p = mPrime.nextPrime(p);
       if (isSquares(p)) {

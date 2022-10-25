@@ -23,7 +23,7 @@ public class A051680 extends MemorySequence {
       return Z.ONE;
     }
     final Z t = Z.THREE.pow(n - 1);
-    return get(n - 1).multiply(t.multiply(3).subtract(1))
+    return a(n - 1).multiply(t.multiply(3).subtract(1))
       .signedAdd((n & 1) == 0, Z.THREE.pow((n - 3) * (long) n / 2 + 1))
       .multiply(t);
   }

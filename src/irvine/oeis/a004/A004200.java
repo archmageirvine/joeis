@@ -29,7 +29,7 @@ public class A004200 extends MemorySequence {
     } else if (q == 3 || q == 6 || r == 4 || r == 13 || s == 8 || s == 25) {
       return Z.THREE;
     } else if (r == 0 || r == 1) {
-      return get((n + 1) / 2);
+      return a((n + 1) / 2);
     } else {
       return Z.FIVE;
     }

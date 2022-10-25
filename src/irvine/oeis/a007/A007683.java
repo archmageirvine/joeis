@@ -24,7 +24,7 @@ public class A007683 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 1; k < n; ++k) {
-      sum = sum.add(get(k - 1).multiply(mF.factorial(n + k)).divide(mF.factorial(2 * k)));
+      sum = sum.add(a(k - 1).multiply(mF.factorial(n + k)).divide(mF.factorial(2 * k)));
     }
     return sum.negate();
   }

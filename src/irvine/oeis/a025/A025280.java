@@ -35,7 +35,7 @@ public class A025280 extends A005245 {
       for (final Z d : Jaguar.factor(gcd).divisors()) {
         final int dd = d.intValueExact();
         if (dd > 1) {
-          min = min.min(get(nn.root(dd).intValueExact()).add(get(dd)));
+          min = min.min(a(nn.root(dd).intValueExact()).add(a(dd)));
         }
       }
     }

@@ -20,7 +20,7 @@ public class A005229 extends MemorySequence {
     if (n <= 2) {
       return Z.ONE;
     }
-    final int v = get(n - 2).intValueExact();
-    return get(v).add(get(n - v));
+    final int v = a(n - 2).intValueExact();
+    return a(v).add(a(n - v));
   }
 }

@@ -18,6 +18,6 @@ public class A037458 extends MemorySequence {
   @Override
   protected Z computeNext() {
     final int n = size();
-    return n == 1 ? Z.ONE : Z.valueOf(n).subtract(get(n - IntegerUtils.sqrt(n)));
+    return n == 1 ? Z.ONE : Z.valueOf(n).subtract(a(n - IntegerUtils.sqrt(n)));
   }
 }

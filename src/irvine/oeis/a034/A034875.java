@@ -21,7 +21,7 @@ public class A034875 extends MemorySequence {
       return false;
     }
     Z t = Z.ONE;
-    final Z v = get(index);
+    final Z v = a(index);
     while (t.compareTo(n) <= 0) {
       if (is(n.subtract(t), index - 1)) {
         return true;
@@ -39,7 +39,7 @@ public class A034875 extends MemorySequence {
     if (size() == 0) {
       return Z.ONE;
     }
-    Z m = get(size() - 1);
+    Z m = a(size() - 1);
     while (true) {
       m = m.add(1);
       if (!is(m, size() - 1)) {

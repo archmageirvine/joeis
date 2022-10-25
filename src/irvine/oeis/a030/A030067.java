@@ -21,8 +21,8 @@ public class A030067 extends MemorySequence {
       return Z.ONE;
     }
     if ((n & 1) == 0) {
-      return get(n / 2);
+      return a(n / 2);
     }
-    return get(n - 1).add(get(n - 2));
+    return a(n - 1).add(a(n - 2));
   }
 }

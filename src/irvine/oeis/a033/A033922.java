@@ -19,7 +19,7 @@ public class A033922 extends MemorySequence {
     int n = size();
     while (n != 0) {
       if ((n & 1) == 1) {
-        c = c.add(get(t));
+        c = c.add(a(t));
       }
       ++t;
       n /= 2;

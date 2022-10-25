@@ -16,6 +16,6 @@ public class A010097 extends MemorySequence {
       return Z.ZERO;
     }
     final String s = Integer.toBinaryString(n);
-    return new Z('1' + get(s.length() - 1).toString(2) + s.substring(1), 2);
+    return new Z('1' + a(s.length() - 1).toString(2) + s.substring(1), 2);
   }
 }

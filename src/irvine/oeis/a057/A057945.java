@@ -19,7 +19,7 @@ public class A057945 extends MemorySequence {
     if (n == 0) {
       return mA.next();
     } else {
-      return get(mA.next().intValueExact()).add(1);
+      return a(mA.next().intValueExact()).add(1);
     }
   }
 }

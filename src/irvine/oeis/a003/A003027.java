@@ -24,7 +24,7 @@ public class A003027 extends MemorySequence {
     final int n = size();
     Z s = Z.ZERO;
     for (int k = 1; k < n; ++k) {
-      s = s.add(Binomial.binomial(n, k).multiply(k).multiply(get(k)).shiftLeft(b(n - k)));
+      s = s.add(Binomial.binomial(n, k).multiply(k).multiply(a(k)).shiftLeft(b(n - k)));
     }
     return Z.ONE.shiftLeft(b(n)).subtract(s.divide(n));
   }

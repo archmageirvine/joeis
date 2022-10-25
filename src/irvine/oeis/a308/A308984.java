@@ -15,13 +15,13 @@ public class A308984 extends MemorySequence {
     if (n < 2) {
       return Z.valueOf(n);
     }
-    final Z prev = get(n - 1);
+    final Z prev = a(n - 1);
     for (int m = n - 2; m >= 0; --m) {
-      if (get(m).equals(prev)) {
+      if (a(m).equals(prev)) {
         return prev.add(n - 1).subtract(m);
       }
     }
     // prev did not occur any earlier
-    return prev.subtract(get(n - 2)).abs();
+    return prev.subtract(a(n - 2)).abs();
   }
 }

@@ -28,9 +28,9 @@ public class A005536 extends MemorySequence {
     final int n = size();
     final int m = n / 2;
     if ((n & 1) == 0) {
-      return Z.valueOf(m).subtract(get(m)).subtract(get(m - 1));
+      return Z.valueOf(m).subtract(a(m)).subtract(a(m - 1));
     } else {
-      return Z.valueOf(m + 1).subtract(get(m).multiply2());
+      return Z.valueOf(m + 1).subtract(a(m).multiply2());
     }
   }
 }

@@ -22,7 +22,7 @@ public class A034795 extends MemorySequence {
     if (size() == 0) {
       return Z.TWO;
     }
-    final Z prev = get(size() - 1);
+    final Z prev = a(size() - 1);
     Z p = prev;
     while (true) {
       p = mPrime.nextPrime(p);

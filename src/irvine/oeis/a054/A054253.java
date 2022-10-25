@@ -22,7 +22,7 @@ public class A054253 extends MemorySequence {
     }
     Z max = Z.ZERO;
     for (int k = 1; k < n; ++k) {
-      max = max.max(get(k).multiply(get(n - k)));
+      max = max.max(a(k).multiply(a(n - k)));
     }
     return max.add(n);
   }

@@ -17,7 +17,7 @@ public class A006159 extends MemorySequence {
   @Override
   protected Z computeNext() {
     final int n = size();
-    return n < 5 ? Z.ONE : get(get(n - 4).intValueExact()).add(get(n - get(n - 4).intValueExact()));
+    return n < 5 ? Z.ONE : a(a(n - 4).intValueExact()).add(a(n - a(n - 4).intValueExact()));
   }
 
 }

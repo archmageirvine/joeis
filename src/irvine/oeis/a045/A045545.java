@@ -19,7 +19,7 @@ public class A045545 extends MemorySequence {
     Z sum = Z.ZERO;
     for (int k = 0; k < n; ++k) {
       if (LongUtils.gcd(k, n) == 1) {
-        sum = sum.add(get(k));
+        sum = sum.add(a(k));
       }
     }
     return sum;

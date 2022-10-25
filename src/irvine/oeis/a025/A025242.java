@@ -16,9 +16,9 @@ public class A025242 extends MemorySequence {
   @Override
   protected Z computeNext() {
     final int n = size();
-    Z sum = get(n - 1);
+    Z sum = a(n - 1);
     for (int k = 2; k < n; ++k) {
-      sum = sum.add(get(k).multiply(get(n - 1 - k)));
+      sum = sum.add(a(k).multiply(a(n - 1 - k)));
     }
     return sum;
   }

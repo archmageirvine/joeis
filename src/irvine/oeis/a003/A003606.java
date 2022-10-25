@@ -38,7 +38,7 @@ public class A003606 extends MemorySequence {
     final int n = size();
     Z s = Z.ZERO;
     for (int k = 0; k < n; ++k) {
-      s = s.add(get(k).multiply(mG.get(n - k)));
+      s = s.add(a(k).multiply(mG.get(n - k)));
     }
     return s.divide(n);
   }

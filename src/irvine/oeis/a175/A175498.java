@@ -26,10 +26,10 @@ public class A175498 extends MemorySequence {
       Z s = Z.TWO;
       while (true) {
         if (!mUsed.contains(s)) {
-          final Z delta = s.subtract(get(size() - 1));
+          final Z delta = s.subtract(a(size() - 1));
           boolean ok = true;
           for (int k = 1; k < size(); ++k) {
-            if (get(k).subtract(get(k - 1)).equals(delta)) {
+            if (a(k).subtract(a(k - 1)).equals(delta)) {
               ok = false;
               break;
             }

@@ -15,6 +15,6 @@ public class A006997 extends MemorySequence {
     if (n == 0) {
       return Z.ZERO;
     }
-    return get(n / 3).multiply(3).add(n % 3).divide2();
+    return a(n / 3).multiply(3).add(n % 3).divide2();
   }
 }

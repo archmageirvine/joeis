@@ -17,7 +17,7 @@ public class A049299 extends MemorySequence {
     }
     Z prod = Z.ONE;
     for (int k = 0; k < n; ++k) {
-      prod = prod.multiply(get(k).add(get(n - 1 - k)));
+      prod = prod.multiply(a(k).add(a(n - 1 - k)));
     }
     return prod;
   }

@@ -21,7 +21,7 @@ public class A032151 extends A032138 {
     for (int k = 1; k < size(); ++k) {
       kf = kf.divide(k);
       final Polynomial<Q> t1 = Y_RING.monomial(kf, 1);
-      final Polynomial<Polynomial<Q>> u = RING.powz(RING.onePlusXToTheN(t1, k), get(k), size());
+      final Polynomial<Polynomial<Q>> u = RING.powz(RING.onePlusXToTheN(t1, k), a(k), size());
       prod = RING.multiply(prod, u, size());
     }
     return prod;

@@ -25,11 +25,11 @@ public class A004300 extends MemorySequence {
     }
     Z t = Z.ZERO;
     for (int k = 1; k <= n - 2; ++k) {
-      t = t.add(get(k).multiply(get(n - k)));
+      t = t.add(a(k).multiply(a(n - k)));
     }
     final Sequence s = new SkipSequence(new A000699(), 1);
     for (int k = 1; k <= n / 2; ++k) {
-      t = t.add(get(n - 2 * k).multiply(s.next()).multiply(2L * n - 4L * k - 1));
+      t = t.add(a(n - 2 * k).multiply(s.next()).multiply(2L * n - 4L * k - 1));
     }
     return t;
   }

@@ -21,6 +21,6 @@ public class A005510 extends MemorySequence {
   @Override
   protected Z computeNext() {
     final int n = size();
-    return n == 1 ? start() : Z.ONE.add(get(n / 2).multiply(get((n + 1) / 2)));
+    return n == 1 ? start() : Z.ONE.add(a(n / 2).multiply(a((n + 1) / 2)));
   }
 }

@@ -22,11 +22,11 @@ public class A006166 extends MemorySequence {
         final int m = n / 3;
         switch (n % 3) {
           case 0:
-            return get(m).multiply(3);
+            return a(m).multiply(3);
           case 1:
-            return get(m + 1).add(get(m).multiply2());
+            return a(m + 1).add(a(m).multiply2());
           default:
-            return get(m + 1).multiply(2).add(get(m));
+            return a(m + 1).multiply(2).add(a(m));
         }
     }
   }

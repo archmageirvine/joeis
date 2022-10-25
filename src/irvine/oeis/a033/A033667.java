@@ -21,7 +21,7 @@ public class A033667 extends MemorySequence {
     final String s = Long.toString(size(), base());
     Z sum = Z.ZERO;
     for (int m = 0; m < s.length(); ++m) {
-      sum = sum.add(get(m).multiply(s.charAt(m) - '0'));
+      sum = sum.add(a(m).multiply(s.charAt(m) - '0'));
     }
     return sum;
   }

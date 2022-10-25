@@ -25,7 +25,7 @@ public class A051788 extends MemorySequence {
       mDifferences.add(Z.TWO);
       return Z.THREE;
     }
-    Z n = get(size() - 1);
+    Z n = a(size() - 1);
     while (true) {
       n = n.add(1);
       boolean ok = true;

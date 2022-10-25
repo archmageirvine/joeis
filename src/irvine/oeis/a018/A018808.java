@@ -14,7 +14,7 @@ public class A018808 extends MemorySequence {
   private MemoryFunction1<Z> mL1 = new MemoryFunction1<Z>() {
     @Override
     protected Z compute(final int n) {
-      return n <= 1 ? Z.ZERO : A018808.this.get(n - 1).multiply2().subtract(get(n - 1)).add(r2(n));
+      return n <= 1 ? Z.ZERO : a(n - 1).multiply2().subtract(get(n - 1)).add(r2(n));
     }
   };
 
@@ -33,6 +33,6 @@ public class A018808 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    return size() == 0 ? Z.ZERO : mL1.get(size()).multiply2().subtract(get(size() - 1)).add(mR1.get(size()));
+    return size() == 0 ? Z.ZERO : mL1.get(size()).multiply2().subtract(a(size() - 1)).add(mR1.get(size()));
   }
 }

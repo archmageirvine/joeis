@@ -35,7 +35,7 @@ public class A002608 extends MemorySequence {
     }
     boolean sign = false;
     for (int k = 3, j = 2; n - j >= 0; k += 2, j += k - 1, sign = !sign) {
-      final Z h = get((n - j) / 2).multiply(k).multiply(32);
+      final Z h = a((n - j) / 2).multiply(k).multiply(32);
       sum = sum.signedAdd(sign, h);
     }
     return sum.divide(-32);

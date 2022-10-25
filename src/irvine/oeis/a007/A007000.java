@@ -19,7 +19,7 @@ public class A007000 extends MemorySequence {
     final A005092 seq = new A005092();
     Z sum = Z.ZERO;
     for (int k = 1; k <= n; ++k) {
-      sum = sum.add(seq.next().add(1).multiply(get(n - k)));
+      sum = sum.add(seq.next().add(1).multiply(a(n - k)));
     }
     return sum.divide(n);
   }

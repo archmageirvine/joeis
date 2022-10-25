@@ -15,7 +15,7 @@ public class A054687 extends MemorySequence {
     final int n = size();
     Z sum = Z.ONE;
     for (int k = 0; k < n; ++k) {
-      sum = sum.add(Binomial.binomial(n - 1, k).multiply(get(k)).multiply(get(n - 1 - k)));
+      sum = sum.add(Binomial.binomial(n - 1, k).multiply(a(k)).multiply(a(n - 1 - k)));
     }
     return sum;
   }

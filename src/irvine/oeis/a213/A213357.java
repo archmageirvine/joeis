@@ -18,7 +18,7 @@ public class A213357 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 1; k <= n; ++k) {
-      sum = sum.add(get(k - 1).multiply(k).multiply(Stirling.secondKind(n, k)));
+      sum = sum.add(a(k - 1).multiply(k).multiply(Stirling.secondKind(n, k)));
     }
     return sum;
   }

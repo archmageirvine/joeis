@@ -17,10 +17,10 @@ public class A005355 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 1; k < n; ++k) {
-      sum = sum.add(get(k).multiply(get(n - k)));
+      sum = sum.add(a(k).multiply(a(n - k)));
     }
     if ((n & 1) == 1) {
-      sum = sum.subtract(get(n / 2));
+      sum = sum.subtract(a(n / 2));
     }
     return sum;
   }

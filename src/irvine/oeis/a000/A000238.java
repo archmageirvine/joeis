@@ -12,7 +12,7 @@ public class A000238 extends A000151 {
     Z s = Z.ZERO;
     final int n = mN;
     for (int k = 1; k < n; ++k) {
-      s = s.add(get(k).multiply(get(n - k)));
+      s = s.add(a(k).multiply(a(n - k)));
     }
     return s;
   }

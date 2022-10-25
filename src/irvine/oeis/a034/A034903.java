@@ -28,7 +28,7 @@ public class A034903 extends MemorySequence {
     if (size() == 0) {
       return Z.ONE;
     }
-    Z m = get(size() - 1);
+    Z m = a(size() - 1);
     while (true) {
       m = m.add(1);
       if (!m.isSquare() && isQuadraticResidue(m)) {

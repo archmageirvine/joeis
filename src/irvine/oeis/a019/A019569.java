@@ -42,7 +42,7 @@ public class A019569 extends MemorySequence {
     int prevPi = 0;
     for (final Z pp : fs.toZArray()) {
       final int pi = inversePi(pp.longValueExact());
-      sum = sum.add(get(fs.getExponent(pp))).add(get(pi - prevPi)).add(1);
+      sum = sum.add(a(fs.getExponent(pp))).add(a(pi - prevPi)).add(1);
       prevPi = pi;
     }
     return sum;

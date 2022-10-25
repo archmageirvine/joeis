@@ -33,7 +33,7 @@ public class A032834 extends MemorySequence {
   protected Z computeNext() {
     final int n = size();
     return (n & 1) == 0
-      ? get(n / 2 - 1).multiply(10).add(mParm2)
-      : get((n - 1) / 2).multiply(10).add(mParm1);
+      ? a(n / 2 - 1).multiply(10).add(mParm2)
+      : a((n - 1) / 2).multiply(10).add(mParm1);
   }
 }

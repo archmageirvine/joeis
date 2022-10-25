@@ -36,7 +36,7 @@ public class A006241 extends MemorySequence {
         for (final Z dd : Jaguar.factor(n).divisors()) {
           final int d = dd.intValue();
           if (d != 1) {
-            sum = sum.add(get(n / d).pow(d));
+            sum = sum.add(a(n / d).pow(d));
           }
         }
         return sum;

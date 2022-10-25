@@ -15,7 +15,7 @@ public class A045691 extends MemorySequence {
     if (n <= 2) {
       return n == 0 ? Z.ZERO : Z.ONE;
     }
-    return get(n - 1).multiply2().signedAdd((n & 1) == 1, get(n / 2));
+    return a(n - 1).multiply2().signedAdd((n & 1) == 1, a(n / 2));
   }
 }
 

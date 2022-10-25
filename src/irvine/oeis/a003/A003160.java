@@ -20,6 +20,6 @@ public class A003160 extends MemorySequence {
     if (n < 2) {
       return Z.ONE;
     }
-    return Z.valueOf(n).subtract(get(get(n - 1).intValueExact())).subtract(get(get(n - 2).intValueExact()));
+    return Z.valueOf(n).subtract(a(a(n - 1).intValueExact())).subtract(a(a(n - 2).intValueExact()));
   }
 }

@@ -20,14 +20,14 @@ public class A001190 extends MemorySequence {
     } else if ((mN & 1) == 0) {
       Z s = Z.ZERO;
       for (int k = 1, j = size() - 1; k < mN / 2; ++k, --j) {
-        s = s.add(get(k).multiply(get(j)));
+        s = s.add(a(k).multiply(a(j)));
       }
-      final Z t = get(mN / 2);
+      final Z t = a(mN / 2);
       return s.add(t.multiply(t.add(1)).divide2());
     } else {
       Z s = Z.ZERO;
       for (int k = 1, j = size() - 1; k <= mN / 2; ++k, --j) {
-        s = s.add(get(k).multiply(get(j)));
+        s = s.add(a(k).multiply(a(j)));
       }
       return s;
     }

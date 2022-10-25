@@ -24,7 +24,7 @@ public class A002033 extends MemorySequence {
       for (final Z d : Jaguar.factor(n).divisors()) {
         final int dd = d.intValue();
         if (dd != n) {
-          s = s.add(get(dd));
+          s = s.add(a(dd));
         }
       }
       return s;

@@ -22,7 +22,7 @@ public class A001063 extends MemorySequence {
       Z s = Z.ZERO;
       final Z fn = mF.factorial(n - 1);
       for (int k = 0; k < n; ++k) {
-        s = s.add(fn.divide(mF.factorial(k)).multiply(Binomial.binomial(n - 2, k - 1)).multiply(get(k)));
+        s = s.add(fn.divide(mF.factorial(k)).multiply(Binomial.binomial(n - 2, k - 1)).multiply(a(k)));
       }
       return s;
     }

@@ -26,7 +26,7 @@ public class A039809 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 0; k < n; ++k) {
-      sum = sum.add(get(k).multiply(mPartTriangle.next()));
+      sum = sum.add(a(k).multiply(mPartTriangle.next()));
     }
     mPartTriangle.next(); // skip last value in row
     return sum;

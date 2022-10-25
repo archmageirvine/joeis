@@ -23,7 +23,7 @@ public class A005256 extends MemorySequence {
     if (n == 2) {
       return Z.THREE;
     }
-    return get(n - 1).multiply2().subtract(get((n - 3) / 2));
+    return a(n - 1).multiply2().subtract(a((n - 3) / 2));
   }
 }
 

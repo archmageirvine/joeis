@@ -24,7 +24,7 @@ public class A050365 extends MemorySequence {
     }
     DirichletSeries series = DirichletSeries.ONE;
     for (int k = 2; k < n; ++k) {
-      series = series.multiply(DirichletSeries.zetaNum(k, n, Z.ONE).pow(get(k).intValueExact(), n), n);
+      series = series.multiply(DirichletSeries.zetaNum(k, n, Z.ONE).pow(a(k).intValueExact(), n), n);
     }
     return series.coeff(n - 1);
   }

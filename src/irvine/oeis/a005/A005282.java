@@ -36,7 +36,7 @@ public class A005282 extends MemorySequence {
       mSums.add(mFirst.add(mSecond));
       return mSecond;
     }
-    Z n = get(size() - 1);
+    Z n = a(size() - 1);
     while (true) {
       n = n.add(1);
       boolean ok = true;

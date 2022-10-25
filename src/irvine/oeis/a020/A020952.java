@@ -16,9 +16,9 @@ public class A020952 extends MemorySequence {
       return n == 0 ? Z.TWO : Z.ONE;
     }
     if ((n & 1) == 0) {
-      return get(n / 2).add(get(n / 2 - 1));
+      return a(n / 2).add(a(n / 2 - 1));
     } else {
-      return get(n / 2);
+      return a(n / 2);
     }
   }
 }

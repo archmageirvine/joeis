@@ -30,7 +30,7 @@ public class A006164 extends MemorySequence {
       case 6:
         return Z.FIVE;
       default:
-        return get(get(n - 1).intValueExact() - 4).add(get(n + 4 - get(n - 1).intValueExact()));
+        return a(a(n - 1).intValueExact() - 4).add(a(n + 4 - a(n - 1).intValueExact()));
     }
   }
 }

@@ -24,7 +24,7 @@ public class A001192 extends MemorySequence {
     }
     long u = 1;
     for (int k = 0; k < mN; ++k) {
-      final Z t = Binomial.binomial(p + u - k, mN - k).multiply(get(k));
+      final Z t = Binomial.binomial(p + u - k, mN - k).multiply(a(k));
       s = s.signedAdd(((mN - k) & 1) == 1, t);
       u <<= 1;
     }

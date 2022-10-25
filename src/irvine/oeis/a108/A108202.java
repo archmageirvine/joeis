@@ -19,7 +19,7 @@ public class A108202 extends MemorySequence {
     if ((n & 1) == 0) {
       return mSeq.next();
     } else {
-      return get(n / 2);
+      return a(n / 2);
     }
   }
 }

@@ -23,6 +23,6 @@ public class A059964 extends MemorySequence {
       return Z.ONE;
     }
     final int p = (int) mPrime.prevPrime(n);
-    return get(n - p).add(get(n + 1 - p));
+    return a(n - p).add(a(n + 1 - p));
   }
 }

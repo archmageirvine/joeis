@@ -14,7 +14,7 @@ public class A007379 extends MemorySequence {
     final int n = size();
     switch (n & 7) {
       case 0:
-        return n == 0 ? Z.ZERO : get(2 * (n / 8)).multiply(4);
+        return n == 0 ? Z.ZERO : a(2 * (n / 8)).multiply(4);
       case 1:
         return Z.valueOf(n + 1);
       case 2:
@@ -22,7 +22,7 @@ public class A007379 extends MemorySequence {
       case 3:
         return Z.valueOf(n + 2);
       case 4:
-        return get(n / 4).multiply(4);
+        return a(n / 4).multiply(4);
       case 5:
         return Z.valueOf(4L * (n - 5) + 12);
       case 6:

@@ -26,6 +26,6 @@ public class A003071 extends MemorySequence {
       b <<= 1;
       ++a;
     }
-    return get(s).add(Z.ONE.shiftLeft(a)).add(Integer.bitCount(s) - 1);
+    return a(s).add(Z.ONE.shiftLeft(a)).add(Integer.bitCount(s) - 1);
   }
 }

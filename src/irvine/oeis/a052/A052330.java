@@ -28,7 +28,8 @@ public class A052330 extends MemorySequence {
       }
       mM = 0;
     }
-    final Z t = get(mM++).multiply(mB);
+    final int n1 = mM++;
+    final Z t = a(n1).multiply(mB);
     mSeen.add(t);
     return t;
   }

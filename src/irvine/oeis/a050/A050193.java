@@ -20,9 +20,9 @@ public class A050193 extends MemorySequence {
     if (n <= 3) {
       return Z.ONE;
     } else if (n % 3 == 0) {
-      return get(n - 1).add(get(n - 2)).subtract(get(n / 3));
+      return a(n - 1).add(a(n - 2)).subtract(a(n / 3));
     } else {
-      return get(n - 1).add(get(n - 2));
+      return a(n - 1).add(a(n - 2));
     }
   }
 }

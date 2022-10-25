@@ -15,9 +15,9 @@ public class A006696 extends MemorySequence {
       return Z.ZERO;
     }
     final int n = size();
-    Z m = get(n - 1).add(n).multiply2();
+    Z m = a(n - 1).add(n).multiply2();
     for (int k = 2; k <= n; ++k) {
-      m = m.min(get(k - 1).add(get(n - k).add(n).shiftLeft(k)));
+      m = m.min(a(k - 1).add(a(n - k).add(n).shiftLeft(k)));
     }
     return m;
   }

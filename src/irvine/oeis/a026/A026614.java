@@ -20,10 +20,12 @@ public class A026614 extends A026600 {
       mM = 0;
       return Z.ONE;
     }
-    final Z target = get(++mN);
+    final int n1 = ++mN;
+    final Z target = a(n1);
     while (true) {
       super.next();
-      if (get(++mM).equals(target)) {
+      final int n = ++mM;
+      if (a(n).equals(target)) {
         return Z.valueOf(mM + 1);
       }
     }

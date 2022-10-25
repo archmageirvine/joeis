@@ -31,7 +31,7 @@ public class A006950 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 1; k <= n; ++k) {
-      sum = sum.signedAdd((k & 1) != 0, get(n - k).multiply(a2129(k)));
+      sum = sum.signedAdd((k & 1) != 0, a(n - k).multiply(a2129(k)));
     }
     return sum.divide(n);
   }

@@ -20,7 +20,7 @@ public class A058374 extends MemorySequence {
     if (n == 0) {
       return Z.ONE;
     }
-    return Integers.SINGLETON.sum(0, n - 1, k -> get(k).pow(get(n - 1 - k)));
+    return Integers.SINGLETON.sum(0, n - 1, k -> a(k).pow(a(n - 1 - k)));
   }
 }
 

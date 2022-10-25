@@ -20,7 +20,7 @@ public class A005749 extends A005613 {
     super.next();
     Z sum = Z.ZERO;
     for (int k = 0; k <= n; ++k) {
-      sum = sum.add(Binomial.binomial(n, k).multiply(get(n - k)));
+      sum = sum.add(Binomial.binomial(n, k).multiply(a(n - k)));
     }
     return sum;
   }

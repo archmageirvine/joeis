@@ -14,6 +14,6 @@ public class A050292 extends MemorySequence {
     if (size() == 0) {
       return Z.ZERO;
     }
-    return Z.valueOf(size()).subtract(get(size() / 2));
+    return Z.valueOf(size()).subtract(a(size() / 2));
   }
 }

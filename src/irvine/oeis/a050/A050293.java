@@ -21,6 +21,6 @@ public class A050293 extends MemorySequence {
       return Z.TWO;
     }
     final int k = LongUtils.valuation(n, 3);
-    return get(n - 1).multiply(Fibonacci.fibonacci(k + 3)).divide(Fibonacci.fibonacci(k + 2));
+    return a(n - 1).multiply(Fibonacci.fibonacci(k + 3)).divide(Fibonacci.fibonacci(k + 2));
   }
 }

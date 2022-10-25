@@ -27,7 +27,7 @@ public class A008555 extends MemorySequence {
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       if (d < n) {
-        pell = pell.divide(get(d));
+        pell = pell.divide(a(d));
       }
     }
     return pell;

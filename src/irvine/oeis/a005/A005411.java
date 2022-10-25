@@ -23,8 +23,8 @@ public class A005411 extends MemorySequence {
     }
     Z s = Z.ZERO;
     for (int j = 1; j < n; ++j) {
-      s = s.add(get(j).multiply(get(n - j)));
+      s = s.add(a(j).multiply(a(n - j)));
     }
-    return s.add(get(n - 1).multiply(2 * n - 4));
+    return s.add(a(n - 1).multiply(2 * n - 4));
   }
 }

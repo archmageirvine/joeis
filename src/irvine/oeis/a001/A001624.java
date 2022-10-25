@@ -42,7 +42,7 @@ public class A001624 extends MemorySequence {
 
   private Z gamma() {
     if (++mGammaN > 0) {
-      mGamma = delta(mGammaN + 1).add(epsilon(mGammaN).multiply2()).add(get(mGammaN - 1).multiply(2L * mGammaN));
+      mGamma = delta(mGammaN + 1).add(epsilon(mGammaN).multiply2()).add(a(mGammaN - 1).multiply(2L * mGammaN));
     } else {
       mGamma = Z.TWO;
     }
@@ -52,7 +52,7 @@ public class A001624 extends MemorySequence {
   @Override
   protected Z computeNext() {
     if (++mN > 0) {
-      return delta(mN + 1).add(delta(mN)).add(epsilon(mN)).add(get(mN - 1).add(gamma()).multiply(mN));
+      return delta(mN + 1).add(delta(mN)).add(epsilon(mN)).add(a(mN - 1).add(gamma()).multiply(mN));
     }
     return Z.ONE;
   }

@@ -18,7 +18,7 @@ public class A010672 extends MemorySequence {
     if (size() == 0) {
       return Z.ZERO;
     }
-    Z n = get(size() - 1);
+    Z n = a(size() - 1);
     while (true) {
       n = n.add(1);
       boolean ok = true;

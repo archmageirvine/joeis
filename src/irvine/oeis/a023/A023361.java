@@ -18,7 +18,7 @@ public class A023361 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int t, k = 1; (t = A000217.triangular(k).intValueExact()) <= n; ++k) {
-      sum = sum.add(get(n - t));
+      sum = sum.add(a(n - t));
     }
     return sum;
   }

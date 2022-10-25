@@ -135,7 +135,7 @@ public class A036444 extends MemorySequence {
     int upperBound = mN * mN;
     for (int k = 2; k < mN; ++k) {
       if (mN % k == 0) {
-        upperBound = Math.min(upperBound, get(mN / k).intValue());
+        upperBound = Math.min(upperBound, a(mN / k).intValue());
       }
     }
     if (mVerbose) {

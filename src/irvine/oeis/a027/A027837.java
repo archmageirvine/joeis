@@ -21,7 +21,7 @@ public class A027837 extends MemorySequence {
     Z sum = Z.ZERO;
     for (int k = 1; k < n; ++k) {
       f = f.multiply(k * (long) k);
-      sum = sum.add(f.multiply(get(n - k)));
+      sum = sum.add(f.multiply(a(n - k)));
     }
     return f.multiply(n).multiply(n).multiply(n).subtract(sum);
   }

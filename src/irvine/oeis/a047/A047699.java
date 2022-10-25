@@ -23,7 +23,7 @@ public class A047699 extends MemorySequence {
     do {
       a = a.add(1);
     } while (mForbidden.contains(a));
-    a = a.add(get(size() - 1));
+    a = a.add(a(size() - 1));
     for (final Z v : this) {
       mForbidden.add(a.add(v));
       mForbidden.add(a.subtract(v));

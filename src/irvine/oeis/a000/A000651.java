@@ -24,7 +24,7 @@ public class A000651 extends MemorySequence {
         sum = sum.add(mF.factorial(2 * k).divide(mF.factorial(k)).divide(mF.factorial(k + 1)));
       }
       for (int k = 0; k <= n - 2; ++k) {
-        sum = sum.add(Binomial.binomial(n + k - 1, k).multiply2().subtract(Binomial.binomial(n + k, k)).multiply(get(n - 1 - k)));
+        sum = sum.add(Binomial.binomial(n + k - 1, k).multiply2().subtract(Binomial.binomial(n + k, k)).multiply(a(n - 1 - k)));
       }
       return sum;
     }

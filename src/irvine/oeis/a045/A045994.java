@@ -20,7 +20,7 @@ public class A045994 extends MemorySequence {
     }
     Z sum = mMotzkin.a(n);
     for (int k = 1; k < n; ++k) {
-      sum = sum.add(mMotzkin.a(k).multiply(get(n - k - 1)));
+      sum = sum.add(mMotzkin.a(k).multiply(a(n - k - 1)));
     }
     return sum;
   }

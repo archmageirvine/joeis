@@ -20,11 +20,11 @@ public class A058081 extends MemorySequence {
     if (n == 0) {
       return Z.ONE;
     }
-    Q a = new Q(get(0));
-    Q b = new Q(get(n - 1));
+    Q a = new Q(a(0));
+    Q b = new Q(a(n - 1));
     for (int k = 1; k < n; ++k) {
-      a = a.reciprocal().add(get(k));
-      b = b.reciprocal().add(get(n - k - 1));
+      a = a.reciprocal().add(a(k));
+      b = b.reciprocal().add(a(n - k - 1));
     }
     return A058027.continuedFractionSum(a.add(b));
   }

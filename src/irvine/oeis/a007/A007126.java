@@ -34,7 +34,7 @@ public class A007126 extends MemorySequence {
     final int n = size();
     Z sum = mA88.next();
     for (int k = 0; k < n; ++k) {
-      sum = sum.subtract(get(k).multiply(t(n - k)));
+      sum = sum.subtract(a(k).multiply(t(n - k)));
     }
     return sum;
   }

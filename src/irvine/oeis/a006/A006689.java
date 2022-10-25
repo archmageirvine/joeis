@@ -26,7 +26,7 @@ public class A006689 extends MemorySequence {
     Z f = Z.ONE;
     for (int k = 1; k < n; ++k) {
       f = f.multiply(k);
-      sum = sum.add(new Q(zn.pow(2 * k).multiply(get(n - k)), f));
+      sum = sum.add(new Q(zn.pow(2 * k).multiply(a(n - k)), f));
     }
     return new Q(zn.pow(2 * n), f).subtract(sum).toZ();
   }

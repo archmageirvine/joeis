@@ -23,7 +23,7 @@ public class A024735 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 0; k < (n + 2) / 4; ++k) {
-      sum = sum.add(get(2 * k).multiply(get(n - 2 * k - 1)));
+      sum = sum.add(a(2 * k).multiply(a(n - 2 * k - 1)));
     }
     return sum;
   }

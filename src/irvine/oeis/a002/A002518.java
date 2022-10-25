@@ -14,7 +14,7 @@ public class A002518 extends MemorySequence {
     final int n = size();
     switch (n % 5) {
     case 0:
-      return n == 0 ? Z.ZERO : get(n / 5).multiply(5);
+      return n == 0 ? Z.ZERO : a(n / 5).multiply(5);
     case 1:
     case 3:
       return Z.valueOf(n + 1);

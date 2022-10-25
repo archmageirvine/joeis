@@ -11,7 +11,7 @@ public class A010060 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    return size() == 0 ? Z.ZERO : get(size() / 2).add(size()).mod(Z.TWO);
+    return size() == 0 ? Z.ZERO : a(size() / 2).add(size()).mod(Z.TWO);
   }
 }
 

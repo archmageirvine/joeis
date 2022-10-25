@@ -23,11 +23,11 @@ public class A002121 extends MemorySequence {
     case 2:
       return Z.NEG_ONE;
     default:
-      Z s = get(n - 2).negate();
+      Z s = a(n - 2).negate();
       long p = 2;
       while ((p = mPrime.nextPrime(p)) <= n) {
         final int pp = (int) p;
-        s = s.add(get(n - pp));
+        s = s.add(a(n - pp));
       }
       return s;
     }

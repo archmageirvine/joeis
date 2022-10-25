@@ -23,7 +23,7 @@ public class A030193 extends MemorySequence {
     if (size() == 0) {
       return Z.ZERO;
     }
-    Z m = get(size() - 1);
+    Z m = a(size() - 1);
     do {
       m = m.add(1);
     } while (isSquareDifference(m));

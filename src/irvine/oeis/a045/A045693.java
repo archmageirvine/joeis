@@ -20,7 +20,7 @@ public class A045693 extends MemorySequence {
     if (n <= 4) {
       return n == 3 ? Z.ONE : Z.ZERO;
     }
-    final Z t = get(n - 1).multiply2();
-    return (n & 1) == 0 ? t.add(get(n / 2)).subtract(get(n / 2 + 1)) : t.add(get((n + 1) / 2));
+    final Z t = a(n - 1).multiply2();
+    return (n & 1) == 0 ? t.add(a(n / 2)).subtract(a(n / 2 + 1)) : t.add(a((n + 1) / 2));
   }
 }

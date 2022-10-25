@@ -26,7 +26,7 @@ public class A033923 extends MemorySequence {
     int t = 0;
     int n = size();
     while (n != 0) {
-      c = c.add(get(t).multiply(n % base()));
+      c = c.add(a(t).multiply(n % base()));
       ++t;
       n /= base();
     }

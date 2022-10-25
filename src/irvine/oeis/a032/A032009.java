@@ -24,7 +24,7 @@ public class A032009 extends MemorySequence {
   protected Polynomial<Polynomial<Q>> product() {
     Polynomial<Polynomial<Q>> prod = RING.one();
     for (int k = 1; k < size(); ++k) {
-      final Q kf2 = new Q(get(k));
+      final Q kf2 = new Q(a(k));
       final Polynomial<Q> t1 = Y_RING.monomial(kf2, 1);
       final Polynomial<Polynomial<Q>> u = RING.onePlusXToTheN(t1, k);
       prod = RING.multiply(prod, u, size());

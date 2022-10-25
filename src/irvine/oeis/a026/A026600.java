@@ -18,6 +18,6 @@ public class A026600 extends MemorySequence {
   @Override
   protected Z computeNext() {
     final int n = size();
-    return W[n <= 2 ? n : (int) get(n / 3).add(n + 2).mod(3)];
+    return W[n <= 2 ? n : (int) a(n / 3).add(n + 2).mod(3)];
   }
 }

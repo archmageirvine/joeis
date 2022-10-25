@@ -21,7 +21,7 @@ public class A022861 extends MemorySequence {
       return n == 0 ? Z.ONE : Z.TWO;
     }
     Q sum = Q.ZERO;
-    final Z num = get(n - 1);
+    final Z num = a(n - 1);
     for (final Z a : this) {
       sum = sum.add(new Q(num, a));
     }

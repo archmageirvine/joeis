@@ -24,9 +24,9 @@ public class A003661 extends MemorySequence {
     } else if (n == 3) {
       return Z.FOUR;
     } else if ((n & 1) == 1) {
-      return get(n / 2 + 1).multiply2().add(1);
+      return a(n / 2 + 1).multiply2().add(1);
     } else {
-      return get(n / 2).add(get(n / 2 + 1));
+      return a(n / 2).add(a(n / 2 + 1));
     }
   }
 }

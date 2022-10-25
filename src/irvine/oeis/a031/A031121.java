@@ -29,7 +29,7 @@ public class A031121 extends Sequence1 {
   public Z next() {
     final Z fn = mFibo.a(++mN);
     for (final Z d : Jaguar.factor(mN).divisors()) {
-      final Z r = fn.divide(mFibo.get(d.intValue()));
+      final Z r = fn.divide(mFibo.a(d.intValue()));
       if (!mDone.contains(r)) {
         mQ.add(r);
       }

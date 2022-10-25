@@ -20,6 +20,6 @@ public class A019310 extends MemorySequence {
     if (n <= 2) {
       return n == 1 ? Z.ZERO : Z.TWO;
     }
-    return get(n - 1).multiply2().signedAdd((n & 1) == 0, get((n + 1) / 2));
+    return a(n - 1).multiply2().signedAdd((n & 1) == 0, a((n + 1) / 2));
   }
 }

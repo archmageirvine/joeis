@@ -30,9 +30,9 @@ public class A007400 extends MemorySequence {
           case 7:
             return Z.FOUR;
           case 1:
-            return get((n + 1) / 2);
+            return a((n + 1) / 2);
           case 2:
-            return get((n + 2) / 2);
+            return a((n + 2) / 2);
           default:
             final int n16 = n & 15;
             if (n16 == 5 || n16 == 14) {

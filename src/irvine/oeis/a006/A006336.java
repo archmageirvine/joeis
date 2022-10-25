@@ -20,7 +20,7 @@ public class A006336 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    return size() == 0 ? Z.ONE : get(size() - 1).add(get(mSeq.next().intValueExact() - 1));
+    return size() == 0 ? Z.ONE : a(size() - 1).add(a(mSeq.next().intValueExact() - 1));
   }
 }
 

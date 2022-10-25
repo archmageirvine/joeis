@@ -25,7 +25,7 @@ public class A019591 extends MemorySequence {
     }
     final HashSet<Long> s = new HashSet<>();
     for (int k = 1; k < (n + 1) / 2; ++k) {
-      s.add(get(k).or(get(n - k)).longValueExact());
+      s.add(a(k).or(a(n - k)).longValueExact());
     }
     return Z.valueOf(LongUtils.mex(s));
   }

@@ -20,7 +20,7 @@ public class A030018 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 0; k < n; ++k) {
-      sum = sum.subtract(mPrimes.a(n - k).multiply(get(k)));
+      sum = sum.subtract(mPrimes.a(n - k).multiply(a(k)));
     }
     return sum;
   }

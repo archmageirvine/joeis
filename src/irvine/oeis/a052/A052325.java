@@ -29,7 +29,7 @@ public class A052325 extends MemorySequence {
       }
       Z sum = Z.ZERO;
       for (int j = 0; j <= n / m; ++j) {
-        final Z t = Binomial.binomial(A052325.this.get(m).subtract(m == 3 ? 1 : 0), Z.valueOf(j)).multiply(get(n - m * j, m - 1));
+        final Z t = Binomial.binomial(a(m).subtract(m == 3 ? 1 : 0), Z.valueOf(j)).multiply(get(n - m * j, m - 1));
         sum = sum.add(t);
       }
       return sum;

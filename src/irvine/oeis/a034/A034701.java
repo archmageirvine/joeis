@@ -21,9 +21,9 @@ public class A034701 extends MemorySequence {
       n = n.add(1);
       if (!toList().contains(n)) {
         if (!(size() == 0)) {
-          final Z prev = get(size() - 1);
+          final Z prev = a(size() - 1);
           for (int k = 0; k < size() - 1; ++k) {
-            if (prev.add(get(k)).equals(n)) {
+            if (prev.add(a(k)).equals(n)) {
               continue outer;
             }
           }

@@ -22,7 +22,7 @@ public class A000992 extends MemorySequence {
     Z sum = Z.ZERO;
     final int lim = size() / 2;
     for (int k = 1, j = size() - 1; k <= lim; ++k, --j) {
-      sum = sum.add(get(j).multiply(get(k)));
+      sum = sum.add(a(j).multiply(a(k)));
     }
     return sum;
   }

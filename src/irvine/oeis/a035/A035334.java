@@ -43,7 +43,7 @@ public class A035334 extends MemorySequence {
     while (toList().contains(Z.valueOf(mLeastUnused))) {
       ++mLeastUnused;
     }
-    final int cnt = get(size() - 1).intValueExact();
+    final int cnt = a(size() - 1).intValueExact();
     if (mLeastUnused < cnt) {
       // We have an unused number that is smaller than the number of terms in the sum,
       // so it must automatically be the smallest unrepresentable number
@@ -51,7 +51,7 @@ public class A035334 extends MemorySequence {
     }
     mTerms = new long[size()];
     for (int k = 0; k < size(); ++k) {
-      mTerms[k] = get(k).longValueExact();
+      mTerms[k] = a(k).longValueExact();
     }
     Arrays.sort(mTerms);
     final LongDynamicBooleanArray forbidden = new LongDynamicBooleanArray();

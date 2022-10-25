@@ -21,7 +21,7 @@ public class A007604 extends MemorySequence {
     if (n == 1) {
       return Z.ONE;
     } else {
-      final Z a = get(n - 1).add(get(n - 1 - mOdd));
+      final Z a = a(n - 1).add(a(n - 1 - mOdd));
       if (a.isOdd()) {
         ++mOdd;
       }

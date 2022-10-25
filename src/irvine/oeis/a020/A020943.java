@@ -21,9 +21,9 @@ public class A020943 extends MemorySequence {
       return Z.valueOf(n - 1);
     }
     if ((n & 1) == 0) {
-      return get(n / 2).add(get(n / 2 - 1));
+      return a(n / 2).add(a(n / 2 - 1));
     } else {
-      return get(n - 1).subtract(get(n - 2)).abs();
+      return a(n - 1).subtract(a(n - 2)).abs();
     }
   }
 }

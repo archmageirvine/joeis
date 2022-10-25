@@ -20,7 +20,7 @@ public class A128688 extends MemorySequence {
     if (k == size()) {
       return true;
     }
-    return isOk(m.add(get(k)), k + 1) && isOk(m, k + 1);
+    return isOk(m.add(a(k)), k + 1) && isOk(m, k + 1);
   }
 
   @Override
@@ -28,7 +28,7 @@ public class A128688 extends MemorySequence {
     if (size() == 0) {
       return Z.ONE;
     }
-    Z m = get(size() - 1).add(1).divide2().multiply2(); // round up to even
+    Z m = a(size() - 1).add(1).divide2().multiply2(); // round up to even
     do {
       m = m.add(2);
     } while (!isOk(m, 0));

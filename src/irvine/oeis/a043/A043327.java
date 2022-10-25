@@ -18,8 +18,8 @@ public class A043327 extends MemorySequence {
     }
     CR sum = CR.ZERO;
     for (int k = n - 1; k > 0; k -= 2) {
-      sum = sum.add(CR.valueOf(get(k).multiply(get(k - 1))).sqrt());
+      sum = sum.add(CR.valueOf(a(k).multiply(a(k - 1))).sqrt());
     }
-    return get(n - 1).add(sum.floor());
+    return a(n - 1).add(sum.floor());
   }
 }

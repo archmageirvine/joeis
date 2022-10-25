@@ -39,7 +39,7 @@ public class A001678 extends MemorySequence {
         t.add(Z.ZERO);
       }
       t.add(Z.NEG_ONE);
-      final Polynomial<Z> p = RING.powz(RING.create(t), get(mN - 1), LIMIT);
+      final Polynomial<Z> p = RING.powz(RING.create(t), a(mN - 1), LIMIT);
       mDen = RING.multiply(mDen, p, LIMIT);
     }
 

@@ -23,9 +23,9 @@ public class A000009 extends MemorySequence {
     int s;
     while ((s = k * k) <= n) {
       if ((k & 1) == 0) {
-        sum = sum.subtract(get(n - s));
+        sum = sum.subtract(a(n - s));
       } else {
-        sum = sum.add(get(n - s));
+        sum = sum.add(a(n - s));
       }
       ++k;
     }

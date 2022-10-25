@@ -25,7 +25,7 @@ public class A049075 extends MemorySequence {
     }
     final ArrayList<Z> b = new ArrayList<>();
     for (int k = 1; k < n; ++k) {
-      b.add(get(k).subtract((k & 3) == 0 ? get(k / 2) : Z.ZERO));
+      b.add(a(k).subtract((k & 3) == 0 ? a(k / 2) : Z.ZERO));
     }
     return EulerTransformSequence.eulerTransform(b, n - 1);
   }

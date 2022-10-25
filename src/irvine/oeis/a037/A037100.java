@@ -27,7 +27,7 @@ public class A037100 extends MemorySequence {
     if (size() == 0) {
       return Z.FOUR;
     }
-    Z n = get(size() - 1).add(1); // odd
+    Z n = a(size() - 1).add(1); // odd
     while (true) {
       n = n.add(2);
       if (isOk(n)) {

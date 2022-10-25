@@ -19,6 +19,6 @@ public class A032346 extends MemorySequence {
     add(Z.ZERO);
     final Z t = InverseBinomialTransformSequence.inverseBinomial(toList(), n + 1);
     remove(n);
-    return get(n - 1).subtract(t);
+    return a(n - 1).subtract(t);
   }
 }

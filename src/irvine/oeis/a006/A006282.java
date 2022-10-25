@@ -36,7 +36,7 @@ public class A006282 extends MemorySequence {
     if (n == 1) {
       return Z.ZERO;
     }
-    return get((n + 1) / 2).add(get(n / 2)).add(mC.get((n + 1) / 2, n / 2));
+    return a((n + 1) / 2).add(a(n / 2)).add(mC.get((n + 1) / 2, n / 2));
   }
 
 }

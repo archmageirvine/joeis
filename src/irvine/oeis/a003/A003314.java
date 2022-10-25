@@ -19,6 +19,6 @@ public class A003314 extends MemorySequence {
     if (n == 0) {
       return Z.ZERO;
     }
-    return get((n + 1) / 2 - 1).add(get(n - (n + 1) / 2)).add(n + 1);
+    return a((n + 1) / 2 - 1).add(a(n - (n + 1) / 2)).add(n + 1);
   }
 }

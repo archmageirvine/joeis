@@ -17,6 +17,6 @@ public class A055873 extends MemorySequence {
     if (n == 0) {
       return Z.ONE;
     }
-    return Integers.SINGLETON.sum(1, Jaguar.factor(n).sigma0().intValueExact(), k -> get(n - k));
+    return Integers.SINGLETON.sum(1, Jaguar.factor(n).sigma0().intValueExact(), k -> a(n - k));
   }
 }

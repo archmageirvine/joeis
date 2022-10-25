@@ -22,7 +22,7 @@ public class A004208 extends MemorySequence {
     final int n = size();
     Z t = mF.doubleFactorial(2 * n - 1).multiply(n);
     for (int k = 1; k < n; ++k) {
-      t = t.subtract(get(k).multiply(mF.doubleFactorial(2 * n - 2 * k - 1)));
+      t = t.subtract(a(k).multiply(mF.doubleFactorial(2 * n - 2 * k - 1)));
     }
     return t;
   }

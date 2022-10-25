@@ -21,11 +21,11 @@ public class A000423 extends MemorySequence {
     } else if (n == 1) {
       return Z.THREE;
     } else {
-      final Z prev = get(n - 1);
+      final Z prev = a(n - 1);
       Z biggest = prev.square();
       for (int k = 0; k < n; ++k) {
         for (int j = k + 1; j < n; ++j) {
-          final Z p = get(k).multiply(get(j));
+          final Z p = a(k).multiply(a(j));
           if (p.compareTo(prev) > 0 && p.compareTo(biggest) < 0) {
             biggest = p;
           }

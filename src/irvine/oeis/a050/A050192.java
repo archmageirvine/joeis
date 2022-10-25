@@ -22,9 +22,9 @@ public class A050192 extends MemorySequence {
     } else if (n == 2) {
       return Z.ZERO;
     } else if ((n & 1) == 0) {
-      return get(n - 1).add(get(n - 2)).subtract(get(n / 2));
+      return a(n - 1).add(a(n - 2)).subtract(a(n / 2));
     } else {
-      return get(n - 1).add(get(n - 2));
+      return a(n - 1).add(a(n - 2));
     }
   }
 }

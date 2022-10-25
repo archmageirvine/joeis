@@ -22,7 +22,7 @@ public class A005121 extends MemorySequence {
     }
     Z s = Z.ZERO;
     for (int k = 1; k < n; ++k) {
-      s = s.add(Stirling.secondKind(n, k).multiply(get(k - 1)));
+      s = s.add(Stirling.secondKind(n, k).multiply(a(k - 1)));
     }
     return s;
   }

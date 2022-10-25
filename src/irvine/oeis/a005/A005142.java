@@ -25,7 +25,7 @@ public class A005142 extends MemorySequence {
       mA2.next();
       return Z.ONE;
     } else if ((n & 1) == 0) {
-      return get(n / 2).add(mB.next()).add(mA1.next()).subtract(mA2.next()).divide2();
+      return a(n / 2).add(mB.next()).add(mA1.next()).subtract(mA2.next()).divide2();
     } else {
       return mA1.next().divide2();
     }

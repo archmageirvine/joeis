@@ -19,9 +19,9 @@ public class A058939 extends MemorySequence {
     }
     final int m = n / 2;
     if ((n & 1) == 1) {
-      return get(m + 2).multiply(get(m).pow(3)).subtract(get(m - 1).multiply(get(m + 1).pow(3)));
+      return a(m + 2).multiply(a(m).pow(3)).subtract(a(m - 1).multiply(a(m + 1).pow(3)));
     } else {
-      return get(m + 2).multiply(get(m - 1).square()).subtract(get(m - 2).multiply(get(m + 1).square())).multiply(get(m)).divide(get(2));
+      return a(m + 2).multiply(a(m - 1).square()).subtract(a(m - 2).multiply(a(m + 1).square())).multiply(a(m)).divide(a(2));
     }
   }
 }

@@ -36,6 +36,6 @@ public class A022446 extends MemorySequence {
   @Override
   protected Z computeNext() {
     final int n = size();
-    return n != 1 && !mPrime.isPrime(n) ? get(compositePi(n)) : Z.valueOf(primePi(n) + 1);
+    return n != 1 && !mPrime.isPrime(n) ? a(compositePi(n)) : Z.valueOf(primePi(n) + 1);
   }
 }

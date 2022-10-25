@@ -24,10 +24,10 @@ public class A033623 extends MemorySequence {
       mN = mN.add(1);
     } while (mForbidden.contains(mN));
     for (int k = 0; k < size(); ++k) {
-      final Z a = get(k).xor(mN);
+      final Z a = a(k).xor(mN);
       mForbidden.add(a);
       for (int j = k + 1; j < size(); ++j) {
-        mForbidden.add(a.xor(get(j)));
+        mForbidden.add(a.xor(a(j)));
       }
     }
     mForbidden.add(mN);

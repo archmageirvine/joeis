@@ -14,7 +14,7 @@ public class A002125 extends A002124 {
     Z s = Z.ZERO;
     final int n = size() - 1;
     for (int t = 0; t <= n; ++t) {
-      s = s.add(get(t).multiply(get(n - t)));
+      s = s.add(a(t).multiply(a(n - t)));
     }
     return s;
   }

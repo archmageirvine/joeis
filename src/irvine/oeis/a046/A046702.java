@@ -20,7 +20,7 @@ public class A046702 extends MemorySequence {
     if (n <= 3) {
       return Z.ONE;
     }
-    return get(n - get(n - 1).intValueExact()).add(get(n - 1 - get(n - 2).intValueExact())).add(get(n - 2 - get(n - 3).intValueExact()));
+    return a(n - a(n - 1).intValueExact()).add(a(n - 1 - a(n - 2).intValueExact())).add(a(n - 2 - a(n - 3).intValueExact()));
   }
 }
 

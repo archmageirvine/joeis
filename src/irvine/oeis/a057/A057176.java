@@ -16,7 +16,7 @@ public class A057176 extends MemorySequence {
     if (n == 0) {
       return Z.ONE;
     }
-    return Integers.SINGLETON.sum(0, (int) get(n - 1).mod(n), k -> get(k));
+    return Integers.SINGLETON.sum(0, (int) a(n - 1).mod(n), k -> a(k));
   }
 }
 

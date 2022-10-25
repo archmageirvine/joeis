@@ -20,7 +20,7 @@ public class A023360 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int p = 2; p <= n; p = (int) mPrime.nextPrime(p)) {
-      sum = sum.add(get(n - p));
+      sum = sum.add(a(n - p));
     }
     return sum;
   }

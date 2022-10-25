@@ -15,7 +15,7 @@ public class A005206 extends MemorySequence {
     if (n == 0) {
       return Z.ZERO;
     }
-    return Z.valueOf(n).subtract(get(get(n - 1).intValueExact()));
+    return Z.valueOf(n).subtract(a(a(n - 1).intValueExact()));
   }
 }
 

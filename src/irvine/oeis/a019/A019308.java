@@ -15,6 +15,6 @@ public class A019308 extends MemorySequence {
     if (n == 0) {
       return Z.ONE;
     }
-    return get(n - 1).multiply(3).subtract((n & 1) == 0 ? get(n / 2) : Z.ZERO);
+    return a(n - 1).multiply(3).subtract((n & 1) == 0 ? a(n / 2) : Z.ZERO);
   }
 }

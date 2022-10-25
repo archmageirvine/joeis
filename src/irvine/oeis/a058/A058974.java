@@ -29,6 +29,6 @@ public class A058974 extends MemorySequence {
       return Z.ZERO;
     }
     final Z sopfr = sumDistrinctPrimeFactors(n);
-    return sopfr.add(get(sopfr.intValueExact()));
+    return sopfr.add(a(sopfr.intValueExact()));
   }
 }

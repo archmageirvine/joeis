@@ -24,6 +24,6 @@ public class A020903 extends MemorySequence {
       return Z.valueOf(n);
     }
     final long t = (LongUtils.sqrt(8L * n + 1) - 1) / 2;
-    return get((int) (n + 1 - t * (t + 1) / 2));
+    return a((int) (n + 1 - t * (t + 1) / 2));
   }
 }

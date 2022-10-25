@@ -15,7 +15,7 @@ public class A054390 extends MemorySequence {
     if (n < 3) {
       return Z.ONE;
     }
-    return n % 3 == 0 ? get(n / 3).add(get(n / 3 - 1)) : get(n / 3);
+    return n % 3 == 0 ? a(n / 3).add(a(n / 3 - 1)) : a(n / 3);
   }
 }
 

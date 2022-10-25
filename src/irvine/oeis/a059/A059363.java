@@ -20,7 +20,7 @@ public class A059363 extends MemorySequence {
 
   private boolean isOk(final long m, final long omegaM) {
     for (int k = size() - 1; k >= 0; --k) {
-      final long v = get(k).longValueExact();
+      final long v = a(k).longValueExact();
       final long a = mOmegas.get(k);
       final long b = Jaguar.factor(m + v).bigOmega();
       if (a + omegaM != b) {
@@ -37,7 +37,7 @@ public class A059363 extends MemorySequence {
       mOmegas.add(0L);
       return Z.ONE;
     }
-    long m = get(n - 1).longValueExact();
+    long m = a(n - 1).longValueExact();
     while (true) {
       final long omegaM = Jaguar.factor(++m).bigOmega();
       if (isOk(m, omegaM)) {

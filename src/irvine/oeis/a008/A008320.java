@@ -22,7 +22,7 @@ public class A008320 extends MemorySequence {
     if (size() == 0) {
       return Z.ONE;
     }
-    Z res = get(size() - 1).add(1);
+    Z res = a(size() - 1).add(1);
     while (mSumSquares.contains(res)) {
       mSumSquares.remove(res);
       res = res.add(1);

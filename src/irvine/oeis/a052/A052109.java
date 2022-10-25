@@ -23,9 +23,9 @@ public class A052109 extends MemorySequence {
     final Z zn = Z.valueOf(n);
     Z sum = Z.ZERO;
     for (int k = 1; k < n; ++k) {
-      final Z t = zn.subtract(get(k));
+      final Z t = zn.subtract(a(k));
       if (t.signum() > 0) {
-        sum = sum.add(get(t.intValueExact()));
+        sum = sum.add(a(t.intValueExact()));
       }
     }
     return sum;

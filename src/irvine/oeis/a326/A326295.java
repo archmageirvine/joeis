@@ -19,7 +19,7 @@ public class A326295 extends MemorySequence {
     final StringBuilder sb = new StringBuilder();
     sb.append(n + 1);
     for (int k = n - 1; k >= 0; --k) {
-      sb.append(get(k));
+      sb.append(a(k));
     }
     return new Z(sb);
   }

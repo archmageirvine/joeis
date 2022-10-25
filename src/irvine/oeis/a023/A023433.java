@@ -15,9 +15,9 @@ public class A023433 extends MemorySequence {
     if (n == 0) {
       return Z.ONE;
     }
-    Z sum = get(n - 1);
+    Z sum = a(n - 1);
     for (int k = 2; k <= n - 3; ++k) {
-      sum = sum.add(get(k).multiply(get(n - 3 - k)));
+      sum = sum.add(a(k).multiply(a(n - 3 - k)));
     }
     return sum;
   }

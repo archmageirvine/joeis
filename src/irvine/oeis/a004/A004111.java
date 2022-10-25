@@ -22,7 +22,7 @@ public class A004111 extends MemorySequence {
     }
     Polynomial<Z> p = RING.one();
     for (int k = 1; k < mN; ++k) {
-      p = RING.multiply(p, RING.pow(RING.onePlusXToTheN(k), get(k), mN - 1), mN - 1);
+      p = RING.multiply(p, RING.pow(RING.onePlusXToTheN(k), a(k), mN - 1), mN - 1);
     }
     return p.coeff(mN - 1);
   }

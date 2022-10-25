@@ -15,6 +15,6 @@ public class A007302 extends MemorySequence {
       return Z.ZERO;
     }
     final int n = size();
-    return (n & 1) == 0 ? get(n / 2) : get((n + 1) / 4).add(1);
+    return (n & 1) == 0 ? a(n / 2) : a((n + 1) / 4).add(1);
   }
 }

@@ -26,7 +26,7 @@ public class A005230 extends MemorySequence {
     Z sum = Z.ZERO;
     final int l = mLim.next().intValue();
     for (int k = 1; k <= l; ++k) {
-      sum = sum.add(get(n - k));
+      sum = sum.add(a(n - k));
     }
     return sum;
   }

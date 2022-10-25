@@ -32,7 +32,8 @@ public class PairSumSequence implements Sequence {
         int t = 0;
         Z u;
         do {
-          u = mSeq.get(t++);
+          final int n = t++;
+          u = mSeq.a(n);
           mA.add(mT.add(u));
         } while (!u.equals(mT));
         mT = mSeq.next();

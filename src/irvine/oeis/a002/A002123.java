@@ -29,7 +29,7 @@ public class A002123 extends MemorySequence {
       long p = 2;
       while ((p = mPrime.nextPrime(p)) <= n) {
         final int pp = (int) p;
-        s = s.add(get(n - pp));
+        s = s.add(a(n - pp));
       }
       return s;
     }

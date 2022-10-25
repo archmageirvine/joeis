@@ -42,18 +42,18 @@ public class A000198 extends MemorySequence {
       return Z.THREE.pow((t * 7 - 5) / 2).multiply(7);
     }
     if (mN % 3 == 0) {
-      return Z.THREE.pow(mN / 3).multiply(get(mN / 3));
+      return Z.THREE.pow(mN / 3).multiply(a(mN / 3));
     }
     t = mN % 9;
     if (t == 1 || t == 2 || t == 4) {
-      return get(mN - 1);
+      return a(mN - 1);
     }
     if (t == 8) {
-      return get(mN - 1).max(get(5).multiply(get(mN - 5)));
+      return a(mN - 1).max(a(5).multiply(a(mN - 5)));
     }
     if (t == 5) {
-      return get(2).multiply(get(mN - 2)).max(get(5).multiply(get(mN - 5))).max(get(7).multiply(get(mN - 7)));
+      return a(2).multiply(a(mN - 2)).max(a(5).multiply(a(mN - 5))).max(a(7).multiply(a(mN - 7)));
     }
-    return get(7).multiply(get(mN - 7));
+    return a(7).multiply(a(mN - 7));
   }
 }

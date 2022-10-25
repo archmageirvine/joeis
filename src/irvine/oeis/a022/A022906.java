@@ -30,7 +30,7 @@ public class A022906 extends MemorySequence {
     mMax = Z.ZERO;
     mMin = Z.valueOf(n);
     for (int k = 0; k < n - 1; ++k) {
-      final Z ak = get(n - k - 1).add(get(k));
+      final Z ak = a(n - k - 1).add(a(k));
       mMax = mMax.max(ak);
       mMin = mMin.min(ak);
     }

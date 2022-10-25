@@ -18,7 +18,7 @@ public class A030040 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 0; k <= CR.valueOf(n - 1).divide(CR.PHI).floor().intValueExact(); ++k) {
-      sum = sum.add(get(k).multiply(get(n - 1 - k)));
+      sum = sum.add(a(k).multiply(a(n - 1 - k)));
     }
     return sum;
   }

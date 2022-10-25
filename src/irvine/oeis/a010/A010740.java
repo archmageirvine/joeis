@@ -16,9 +16,9 @@ public class A010740 extends MemorySequence {
     if (n < 3) {
       return Z.ONE;
     } else {
-      Z sum = get(n - 3);
+      Z sum = a(n - 3);
       for (int k = 0; k < n; ++k) {
-        sum = sum.subtract(Binomial.binomial(n, k).multiply(get(k)));
+        sum = sum.subtract(Binomial.binomial(n, k).multiply(a(k)));
       }
       return sum;
     }

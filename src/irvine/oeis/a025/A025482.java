@@ -15,10 +15,10 @@ public class A025482 extends MemorySequence {
     if (n == 0) {
       return Z.ZERO;
     }
-    if (n % 3 == 0 && get(n / 3).mod(3) == 0) {
-      return get(n / 3).divide(3);
+    if (n % 3 == 0 && a(n / 3).mod(3) == 0) {
+      return a(n / 3).divide(3);
     }
-    return get(n - 1).add(1);
+    return a(n - 1).add(1);
   }
 }
 

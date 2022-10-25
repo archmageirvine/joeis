@@ -17,7 +17,7 @@ public class A003258 extends A003231 {
     while (n >= mS.size()) {
       mS.next();
     }
-    return mS.get(n);
+    return mS.a(n);
   }
 
   @Override

@@ -21,7 +21,7 @@ public class A019509 extends MemorySequence {
     final A000217 triangle = new A000217();
     triangle.next();
     for (int f = triangle.next().intValueExact(); f <= n; f = triangle.next().intValueExact()) {
-      moves.add(get(n - f).longValueExact());
+      moves.add(a(n - f).longValueExact());
     }
     return Z.valueOf(LongUtils.mex(moves));
   }

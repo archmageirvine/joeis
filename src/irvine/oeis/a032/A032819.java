@@ -18,7 +18,7 @@ public class A032819 extends MemorySequence {
   protected Z computeNext() {
     final int n = size();
     return (n & 1) == 0
-      ? get(n / 2 - 1).multiply(7).add(4)
-      : get((n - 1) / 2).multiply(7).add(1);
+      ? a(n / 2 - 1).multiply(7).add(4)
+      : a((n - 1) / 2).multiply(7).add(1);
   }
 }

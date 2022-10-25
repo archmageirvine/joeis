@@ -22,7 +22,7 @@ public class A028342 extends MemorySequence {
     Z sum = Z.ZERO;
     final Z f = mF.factorial(n - 1);
     for (int k = 0; k < n; ++k) {
-      sum = sum.add(f.multiply(Jaguar.factor(k + 1).sigma0()).multiply(get(n - k - 1)).divide(mF.factorial(n - k - 1)));
+      sum = sum.add(f.multiply(Jaguar.factor(k + 1).sigma0()).multiply(a(n - k - 1)).divide(mF.factorial(n - k - 1)));
     }
     return sum;
   }

@@ -12,7 +12,7 @@ public class A005255 extends MemorySequence {
   @Override
   protected Z computeNext() {
     final int n = size();
-    return n <= 2 ? Z.valueOf(n) : get(n - 1).multiply2().subtract(get(n - 2 - (n - 1) / 2));
+    return n <= 2 ? Z.valueOf(n) : a(n - 1).multiply2().subtract(a(n - 2 - (n - 1) / 2));
   }
 }
 

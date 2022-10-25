@@ -22,7 +22,7 @@ public class A019307 extends Sequence0 {
       if (k >= mA.size()) {
         mA.next();
       }
-      if (mA.get(k).intValue() == mN) {
+      if (mA.a(k).intValue() == mN) {
         return Z.valueOf(k);
       }
       ++k;

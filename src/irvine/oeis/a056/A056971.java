@@ -12,7 +12,7 @@ import irvine.oeis.MemorySequence;
 public class A056971 extends MemorySequence {
 
   private Z f(final int n, final int f) {
-    return get(f).multiply(get(n - 1 - f)).multiply(Binomial.binomial(n - 1, f));
+    return a(f).multiply(a(n - 1 - f)).multiply(Binomial.binomial(n - 1, f));
   }
 
   @Override

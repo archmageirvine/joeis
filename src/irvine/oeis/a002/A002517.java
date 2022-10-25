@@ -14,7 +14,7 @@ public class A002517 extends MemorySequence {
     final int n = size();
     switch (n % 3) {
     case 0:
-      return n == 0 ? Z.ZERO : get(n / 3).multiply(3);
+      return n == 0 ? Z.ZERO : a(n / 3).multiply(3);
     case 1:
       return Z.valueOf(n + 1);
     default: /* 2 */

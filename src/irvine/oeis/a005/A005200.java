@@ -37,7 +37,7 @@ public class A005200 extends MemorySequence {
     final int n = size();
     Z sum = getT(n);
     for (int k = 0; k < n; ++k) {
-      sum = sum.add(getT(n - k).subtract(getT(n - 2 * k)).multiply(get(k)));
+      sum = sum.add(getT(n - k).subtract(getT(n - 2 * k)).multiply(a(k)));
     }
     return sum;
   }

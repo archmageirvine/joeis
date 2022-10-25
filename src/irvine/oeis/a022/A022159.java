@@ -48,9 +48,9 @@ public class A022159 extends MemorySequence {
       return j == 0 ? aa(1).square() : b(aa(1).intValueExact());
     }
     if ((j & 1) == 1) {
-      return b(get(j - 2).intValueExact());
+      return b(a(j - 2).intValueExact());
     } else {
-      return aa(get(j - 1).intValueExact());
+      return aa(a(j - 1).intValueExact());
     }
   }
 }

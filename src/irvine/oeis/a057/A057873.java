@@ -23,7 +23,7 @@ public class A057873 extends MemorySequence {
     } else {
       Q sum = Q.ZERO;
       for (int k = 1; k < n; ++k) {
-        sum = sum.add(new Q(get(n - k), get(k)));
+        sum = sum.add(new Q(a(n - k), a(k)));
       }
       Q p0 = sum;
       Q p1 = Q.ONE;

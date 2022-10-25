@@ -17,8 +17,8 @@ public class A007599 extends MemorySequence {
     }
     int a = n - 2;
     for (int k = 0; k < n / 2; ++k) {
-      a = get(a).intValueExact();
+      a = a(a).intValueExact();
     }
-    return get(n - 1).add(a);
+    return a(n - 1).add(a);
   }
 }

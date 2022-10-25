@@ -19,7 +19,7 @@ public class A051296 extends MemorySequence {
     Z f = Z.ONE;
     for (int k = 1; k <= n; ++k) {
       f = f.multiply(k);
-      sum = sum.add(f.multiply(get(n - k)));
+      sum = sum.add(f.multiply(a(n - k)));
     }
     return sum;
   }

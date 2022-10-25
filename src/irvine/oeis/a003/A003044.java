@@ -27,7 +27,7 @@ public class A003044 extends MemorySequence {
     if (n <= 2 * numReps()) {
       r = n;
     } else {
-      long last = get(size() - 1).add(1).longValueExact();
+      long last = a(size() - 1).add(1).longValueExact();
       while (mReps.get(last) != numReps()) {
         ++last;
       }

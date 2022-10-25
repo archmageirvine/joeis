@@ -20,7 +20,7 @@ public class A014587 extends MemorySequence {
     int r = 1;
     int f = 1;
     while (f <= n) {
-      moves.add(get(n - f).longValueExact());
+      moves.add(a(n - f).longValueExact());
       f *= ++r;
     }
     return Z.valueOf(LongUtils.mex(moves));

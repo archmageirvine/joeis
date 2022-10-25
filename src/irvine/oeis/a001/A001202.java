@@ -20,7 +20,7 @@ public class A001202 extends MemorySequence {
     if (++mN == 0) {
       return Z.ZERO;
     }
-    return (mN & 1) == 0 ? get(mN / 2).multiply(10) : get(mN / 2).add(1);
+    return (mN & 1) == 0 ? a(mN / 2).multiply(10) : a(mN / 2).add(1);
   }
 }
 

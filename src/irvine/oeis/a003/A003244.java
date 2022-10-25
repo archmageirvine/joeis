@@ -19,7 +19,8 @@ public class A003244 extends A003241 {
   @Override
   public Z next() {
     final Z a = super.next();
-    mA3238 = RING.add(mA3238, RING.monomial(get(++mN), mN));
+    final int n = ++mN;
+    mA3238 = RING.add(mA3238, RING.monomial(a(n), mN));
     return a.subtract(RING.subtract(RING.pow(mA3238, 2, mN), mA3238.substitutePower(2, mN)).coeff(mN).divide2());
   }
 }

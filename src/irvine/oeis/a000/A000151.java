@@ -57,7 +57,7 @@ public class A000151 extends MemorySequence {
       final int lim = (mN + k - 1) / k;
       for (int j = 1; j < lim; ++j) {
         final int e = j * k;
-        coeffs[e] = coeffs[e].add(new Q(get(j), zk));
+        coeffs[e] = coeffs[e].add(new Q(a(j), zk));
       }
     }
     for (int k = 0; k < mN; ++k) {

@@ -20,8 +20,8 @@ public class A005613 extends MemorySequence {
     Z t = Z.TWO;
     for (int p = 1; p < n; ++p) {
       t = t.multiply2();
-      sum = sum.signedAdd((p & 1) == 1, Binomial.binomial(n, p).multiply(get(n - p)).multiply(t.add(1)));
+      sum = sum.signedAdd((p & 1) == 1, Binomial.binomial(n, p).multiply(a(n - p)).multiply(t.add(1)));
     }
-    return sum.signedAdd((n & 1) == 1, get(1).multiply(Z.ONE.shiftLeft(n).add(1)));
+    return sum.signedAdd((n & 1) == 1, a(1).multiply(Z.ONE.shiftLeft(n).add(1)));
   }
 }

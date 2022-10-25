@@ -69,9 +69,9 @@ public class A019511 extends MemorySequence {
       mSumCubes.add(Z.ONE);
       mSumCubes.add(Z.TWO);
       for (int k = 2; k < n; ++k) {
-        augment2(get(k));
+        augment2(a(k));
       }
-      while (!mSumCubes.isEmpty() && mSumCubes.first().compareTo(get(n - 1)) <= 0) {
+      while (!mSumCubes.isEmpty() && mSumCubes.first().compareTo(a(n - 1)) <= 0) {
         mSumCubes.pollFirst();
       }
     }

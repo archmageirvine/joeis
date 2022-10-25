@@ -25,7 +25,7 @@ public class A002987 extends MemorySequence {
     while (true) {
       boolean ok = true;
       for (int j = size() - 1; j >= 1; --j) {
-        if (k.mod(j) != get(n - j).mod(j)) {
+        if (k.mod(j) != a(n - j).mod(j)) {
           ok = false;
           break;
         }

@@ -39,6 +39,6 @@ public class A051293 extends MemorySequence {
     if (n < 1) {
       return Z.ZERO;
     }
-    return get(n - 1).add(mB.get(n)).subtract(1);
+    return a(n - 1).add(mB.get(n)).subtract(1);
   }
 }

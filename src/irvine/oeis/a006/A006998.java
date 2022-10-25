@@ -15,6 +15,6 @@ public class A006998 extends MemorySequence {
     if (n <= 2) {
       return Z.valueOf(n);
     }
-    return get(2 * n / 3).add(get((2 * n + 1) / 3));
+    return a(2 * n / 3).add(a((2 * n + 1) / 3));
   }
 }

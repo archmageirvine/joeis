@@ -20,7 +20,7 @@ public class A003319 extends MemorySequence {
     }
     Z s = Z.ZERO;
     for (int j = 1; j < n; ++j) {
-      s = s.add(get(j + 1).multiply(mF.factorial(n - j)));
+      s = s.add(a(j + 1).multiply(mF.factorial(n - j)));
     }
     return mF.factorial(n).multiply(n).subtract(s);
   }

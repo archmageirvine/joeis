@@ -26,7 +26,7 @@ public class A056198 extends MemorySequence {
     }
     Polynomial<Z> den = RING.one();
     for (int k = 1; k < n; ++k) {
-      den = RING.multiply(den, RING.pow(RING.oneMinusXToTheN(k), get(k), n), n);
+      den = RING.multiply(den, RING.pow(RING.oneMinusXToTheN(k), a(k), n), n);
     }
     return RING.coeff(RING.one(), den, n);
   }

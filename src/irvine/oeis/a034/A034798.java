@@ -21,7 +21,7 @@ public class A034798 extends MemorySequence {
     int k = 0;
     while (u != 0) {
       if ((u & 1) == 1) {
-        t.add(get(k).longValueExact());
+        t.add(a(k).longValueExact());
       }
       u >>>= 1;
       ++k;

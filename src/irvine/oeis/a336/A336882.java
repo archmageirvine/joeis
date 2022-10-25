@@ -36,7 +36,7 @@ public class A336882 extends MemorySequence {
       mLeast = mLeast.add(2);
     }
     final int i = n - mM;
-    final Z res = get(i).multiply(mLeast);
+    final Z res = a(i).multiply(mLeast);
     mFutureForbidden.add(res);
     return res;
   }

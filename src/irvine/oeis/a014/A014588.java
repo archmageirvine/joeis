@@ -21,7 +21,7 @@ public class A014588 extends MemorySequence {
     final A000045 fibo = new A000045();
     fibo.next();
     for (int f = fibo.next().intValueExact(); f <= n; f = fibo.next().intValueExact()) {
-      moves.add(get(n - f).longValueExact());
+      moves.add(a(n - f).longValueExact());
     }
     return Z.valueOf(LongUtils.mex(moves));
   }

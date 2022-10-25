@@ -19,6 +19,6 @@ public class A005413 extends A005412 {
     if (n < 2) {
       return Z.ONE;
     }
-    return get(n).add(get(n - 1).multiply(2L * n)).multiply(n - 1);
+    return a(n).add(a(n - 1).multiply(2L * n)).multiply(n - 1);
   }
 }

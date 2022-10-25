@@ -155,7 +155,7 @@ public class A003827 extends MemorySequence {
     final int n = size();
     Z r = mAll.next().subtract(mF.factorial(n));
     for (int k = 1; k <= n - 3; ++k) {
-      final Z t = Binomial.binomial(n, k).square().multiply(mF.factorial(k)).multiply(get(n - k));
+      final Z t = Binomial.binomial(n, k).square().multiply(mF.factorial(k)).multiply(a(n - k));
       r = r.subtract(t);
     }
     return r;

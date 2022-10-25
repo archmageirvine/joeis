@@ -27,7 +27,7 @@ public class A046805 extends MemorySequence {
     int vMax = 1;
     for (int a = s; a > vMax; --a) {
       for (int b = a; b <= n / a; ++b) {
-        final Z t = get(n - a * b);
+        final Z t = a(n - a * b);
         final int v = t == null ? a : Math.min(a, t.intValueExact());
         if (v > vMax) {
           vMax = v;

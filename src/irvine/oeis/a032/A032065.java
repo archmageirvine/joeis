@@ -26,7 +26,7 @@ public class A032065 extends MemorySequence {
     Polynomial<Polynomial<Q>> prod = RING.one();
     final Polynomial<Q> t1 = Y_RING.monomial(Q.ONE, 1);
     for (int k = 1; k < size(); ++k) {
-      final Polynomial<Polynomial<Q>> u = RING.powz(RING.onePlusXToTheN(t1, k), get(k), size());
+      final Polynomial<Polynomial<Q>> u = RING.powz(RING.onePlusXToTheN(t1, k), a(k), size());
       prod = RING.multiply(prod, u, size());
     }
     return prod;
@@ -38,6 +38,6 @@ public class A032065 extends MemorySequence {
       return Z.ONE;
     }
     final Polynomial<Polynomial<Q>> v = RING.add(Y1, product());
-    return Y_RING.eval(Y_RING.serlaplace(v.coeff(size() - 1)), Q.ONE).add(get(size() - 1)).toZ().divide2();
+    return Y_RING.eval(Y_RING.serlaplace(v.coeff(size() - 1)), Q.ONE).add(a(size() - 1)).toZ().divide2();
   }
 }

@@ -12,7 +12,7 @@ public class A007989 extends MemorySequence {
   private boolean isAcceptable(final int n, final Z m) {
     // We are trying to find a(n), m is the current candidate
     for (int k = 0; k < n; ++k) {
-      final Z ak = get(k);
+      final Z ak = a(k);
       if (Z.valueOf(n - k).mod(ak).isZero() && m.mod(ak).isZero()) {
         return false;
       }
@@ -26,7 +26,7 @@ public class A007989 extends MemorySequence {
       return Z.TWO;
     }
     final int n = size();
-    Z m = get(n - 1);
+    Z m = a(n - 1);
     while (true) {
       m = m.add(1);
       if (isAcceptable(n, m)) {

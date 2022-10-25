@@ -29,6 +29,6 @@ public class A014418 extends MemorySequence {
       mPrev = x;
       mCatalan = mC.next().intValueExact();
     }
-    return Z.TEN.pow(x.subtract(1)).add(get(n - mCatalan));
+    return Z.TEN.pow(x.subtract(1)).add(a(n - mCatalan));
   }
 }

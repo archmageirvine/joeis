@@ -21,7 +21,7 @@ public class A034697 extends MemorySequence {
     }
     Z sum = Z.ONE;
     for (final Z p : Jaguar.factor(size()).toZArray()) {
-      sum = sum.add(get(p.intValue() - 1));
+      sum = sum.add(a(p.intValue() - 1));
     }
     return sum;
   }

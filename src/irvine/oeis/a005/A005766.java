@@ -19,9 +19,9 @@ public class A005766 extends MemorySequence {
     final int n = size();
     final int m = n / 2;
     if ((n & 1) == 0) {
-      return get(m).add(m * m);
+      return a(m).add(m * m);
     } else {
-      return get(m).add(m * (m + 2));
+      return a(m).add(m * (m + 2));
     }
   }
 }

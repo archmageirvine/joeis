@@ -47,7 +47,7 @@ public class A007546 extends MemorySequence {
     if (n == 1) {
       return f(2);
     }
-    Z sum = get(n - 1);
+    Z sum = a(n - 1);
     for (long i = p(n - 1) + 1; i <= p(n); ++i) {
       sum = sum.add(f(i));
     }

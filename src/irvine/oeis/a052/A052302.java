@@ -23,7 +23,7 @@ public class A052302 extends A052300 {
     }
     Z sum = super.next();
     for (int j = 0; j < mN; ++j) {
-      sum = sum.subtract(get(j).multiply(get(mN - j)));
+      sum = sum.subtract(a(j).multiply(a(mN - j)));
     }
     return sum;
   }

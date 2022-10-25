@@ -21,7 +21,7 @@ public class A165418 extends MemorySequence {
     Z sum = Z.ZERO;
     for (final Z v : set) {
       final int vv = v.intValue();
-      sum = sum.add(vv >= size() ? Z.ONE : get(vv));
+      sum = sum.add(vv >= size() ? Z.ONE : a(vv));
     }
     return sum;
   }

@@ -21,7 +21,7 @@ public class A022829 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 2; k <= n; ++k) {
-      sum = sum.add(get((2 * n + k) / (2 * k)));
+      sum = sum.add(a((2 * n + k) / (2 * k)));
     }
     return sum;
   }

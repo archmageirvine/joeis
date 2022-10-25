@@ -19,7 +19,7 @@ public class A007479 extends MemorySequence {
       case 0:
       case 2:
       case 4:
-        return get(n / 2).multiply2();
+        return a(n / 2).multiply2();
       case 1:
       case 3:
         return Z.valueOf(n + 2);

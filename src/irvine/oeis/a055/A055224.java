@@ -20,7 +20,7 @@ public class A055224 extends MemorySequence {
     }
     long cnt = 0;
     for (int k = 0; k < size(); ++k) {
-      if (get(size() - k - 1).mod(get(k)).isZero()) {
+      if (a(size() - k - 1).mod(a(k)).isZero()) {
         ++cnt;
       }
     }

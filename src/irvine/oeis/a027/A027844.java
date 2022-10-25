@@ -23,7 +23,7 @@ public class A027844 extends A001001 {
     if ((mN & 1) == 0) {
       a = a.add(super.next()).add(mA.a(mN / 2));
       if ((mN & 3) == 0) {
-        a = a.subtract(mA.get(mN / 4).multiply2());
+        a = a.subtract(mA.a(mN / 4).multiply2());
       }
     }
     return a;

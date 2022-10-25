@@ -19,8 +19,8 @@ public class A004001 extends MemorySequence {
     if (n < 2) {
       return Z.ONE;
     } else {
-      final int m = get(n - 1).intValueExact();
-      return get(m - 1).add(get(n - m));
+      final int m = a(n - 1).intValueExact();
+      return a(m - 1).add(a(n - m));
     }
   }
 }

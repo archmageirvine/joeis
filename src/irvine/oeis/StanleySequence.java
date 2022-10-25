@@ -48,6 +48,7 @@ public class StanleySequence extends MemorySequence {
 
   @Override
   public Z next() {
-    return mInitialTerms < mNumInitialTerms ? get(mInitialTerms++) : super.next();
+    final int n = mInitialTerms++;
+    return mInitialTerms < mNumInitialTerms ? a(n) : super.next();
   }
 }

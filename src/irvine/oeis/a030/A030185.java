@@ -32,7 +32,7 @@ public class A030185 extends MemorySequence {
     mU.add(mUSeq.next());
     Polynomial<Z> s = mT;
     for (int k = 0; k < size(); ++k) {
-      s = RING.subtract(s, RING.series(RING.monomial(get(k), k), RING.pow(mU, k, size()), size()));
+      s = RING.subtract(s, RING.series(RING.monomial(a(k), k), RING.pow(mU, k, size()), size()));
     }
     return s.coeff(size());
   }

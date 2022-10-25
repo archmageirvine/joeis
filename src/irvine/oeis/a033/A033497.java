@@ -18,7 +18,7 @@ public class A033497 extends MemorySequence {
   @Override
   protected Z computeNext() {
     final int n = size();
-    return n <= INITIAL.length ? INITIAL[n - 1] : get(n - 1).multiply2().add(get(n / 2));
+    return n <= INITIAL.length ? INITIAL[n - 1] : a(n - 1).multiply2().add(a(n / 2));
   }
 }
 

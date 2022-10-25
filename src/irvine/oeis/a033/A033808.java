@@ -17,10 +17,10 @@ public class A033808 extends MemorySequence {
   private boolean isOk(final Z n) {
     final int s = size();
     for (int k = 0; k < s; ++k) {
-      if (!mSeen.add(new Q(n.subtract(get(k)), Z.valueOf(s - k)))) {
+      if (!mSeen.add(new Q(n.subtract(a(k)), Z.valueOf(s - k)))) {
         // Not ok, unwind
         for (int j = 0; j < k; ++j) {
-          mSeen.remove(new Q(n.subtract(get(j)), Z.valueOf(s - j)));
+          mSeen.remove(new Q(n.subtract(a(j)), Z.valueOf(s - j)));
         }
         return false;
       }
@@ -33,7 +33,7 @@ public class A033808 extends MemorySequence {
     if (size() == 0) {
       return Z.ZERO;
     }
-    Z b = get(size() - 1);
+    Z b = a(size() - 1);
     do {
       b = b.add(1);
     } while (!isOk(b));

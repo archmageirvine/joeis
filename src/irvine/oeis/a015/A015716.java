@@ -25,7 +25,7 @@ public class A015716 extends A000009 {
     }
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN / mM; ++k) {
-      sum = sum.signedAdd((k & 1) == 1, get(mN - k * mM));
+      sum = sum.signedAdd((k & 1) == 1, a(mN - k * mM));
     }
     return sum;
   }

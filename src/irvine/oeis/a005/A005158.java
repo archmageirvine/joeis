@@ -24,9 +24,9 @@ public class A005158 extends MemorySequence {
       return Z.ONE;
     }
     if ((n & 1) == 1) {
-      return get(n - 1).multiply(Binomial.binomial(3 * (n - 1) / 2, (n - 1) / 2)).divide(Binomial.binomial(n - 1, (n - 1) / 2));
+      return a(n - 1).multiply(Binomial.binomial(3 * (n - 1) / 2, (n - 1) / 2)).divide(Binomial.binomial(n - 1, (n - 1) / 2));
     } else {
-      return get(n - 1).multiply(4).multiply(Binomial.binomial(3 * n / 2, n / 2)).divide(3).divide(Binomial.binomial(n, n / 2));
+      return a(n - 1).multiply(4).multiply(Binomial.binomial(3 * n / 2, n / 2)).divide(3).divide(Binomial.binomial(n, n / 2));
     }
   }
 }

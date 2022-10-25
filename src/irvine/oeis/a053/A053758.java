@@ -19,7 +19,7 @@ public class A053758 extends MemorySequence {
     if (n <= 4) {
       return Z.ONE;
     }
-    final int t = get(n - 5).intValueExact();
-    return get(t + 2).add(get(n - t));
+    final int t = a(n - 5).intValueExact();
+    return a(t + 2).add(a(n - t));
   }
 }

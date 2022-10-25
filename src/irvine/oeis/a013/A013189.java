@@ -20,7 +20,7 @@ public class A013189 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    if (++mSRemaining >= get(mS).longValueExact()) {
+    if (++mSRemaining >= a(mS).longValueExact()) {
       ++mS;
       mSRemaining = 0;
       mN2 = Z.valueOf(++mN).square();

@@ -23,7 +23,7 @@ public class A002610 extends MemorySequence {
     }
     for (int k = 2; m - k * k >= 0; k += 2) {
       final int c = m - k * k;
-      sum = sum.signedAdd((k & 2) != 0, get(c / 4).multiply(k == 0 ? 1 : 2));
+      sum = sum.signedAdd((k & 2) != 0, a(c / 4).multiply(k == 0 ? 1 : 2));
     }
     return sum;
   }

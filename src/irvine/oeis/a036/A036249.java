@@ -36,7 +36,7 @@ public class A036249 extends MemorySequence {
     if (size() == 0) {
       return Z.ZERO;
     }
-    return get(size() - 1).add(mB.getValue(size() - 1));
+    return a(size() - 1).add(mB.getValue(size() - 1));
   }
 }
 

@@ -60,6 +60,6 @@ public class A051026 extends MemorySequence {
     if (n == 0) {
       return Z.ONE;
     }
-    return mPrime.isPrime(n) ? get(n - 1).multiply2().subtract(1) : Z.TWO.add(mSB.get(n));
+    return mPrime.isPrime(n) ? a(n - 1).multiply2().subtract(1) : Z.TWO.add(mSB.get(n));
   }
 }

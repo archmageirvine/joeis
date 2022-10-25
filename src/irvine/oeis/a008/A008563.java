@@ -23,7 +23,7 @@ public class A008563 extends MemorySequence {
     Z sum = Z.ZERO;
     final long m = 4 * n + 2;
     for (int k = 0; k < n; ++k) {
-      sum = sum.add(Binomial.binomial(m, 4 * k + 3).multiply(get(k)).multiply(get(n - 1 - k)));
+      sum = sum.add(Binomial.binomial(m, 4 * k + 3).multiply(a(k)).multiply(a(n - 1 - k)));
     }
     return sum;
   }

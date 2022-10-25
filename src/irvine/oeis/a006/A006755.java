@@ -19,7 +19,7 @@ public class A006755 extends MemorySequence {
     if (n < INITIAL.length) {
       return Z.valueOf(INITIAL[n]);
     }
-    return get(n - 1).multiply2().subtract(get(n - 1 - (int) Math.floor(0.5 + Math.sqrt(2L * (n - 2)))));
+    return a(n - 1).multiply2().subtract(a(n - 1 - (int) Math.floor(0.5 + Math.sqrt(2L * (n - 2)))));
   }
 }
 

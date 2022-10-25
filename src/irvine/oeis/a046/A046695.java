@@ -24,7 +24,7 @@ public class A046695 extends MemorySequence {
     }
     final TreeSet<Long> s = new TreeSet<>();
     for (int k = 1; k <= n / 2; ++k) {
-      s.add(get(k).longValueExact() ^ get(n - k).longValueExact());
+      s.add(a(k).longValueExact() ^ a(n - k).longValueExact());
     }
     return Z.valueOf(LongUtils.mex(s));
   }

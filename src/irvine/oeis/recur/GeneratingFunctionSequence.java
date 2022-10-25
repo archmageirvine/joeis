@@ -25,9 +25,11 @@ public class GeneratingFunctionSequence extends AbstractSequence {
   protected int mIndex = 0; // index of next term to be generated
   protected int mGfType; // type of the g.f.: 0 = ordinary, 1 = exponential, 2 = dirichlet ...
   protected Z mFactorial; // accumulate n! here
+  private final int mOffset;
 
   protected GeneratingFunctionSequence() {
     super(0);
+    mOffset = 0;
     mIndex = 0;
   }
 
@@ -40,6 +42,7 @@ public class GeneratingFunctionSequence extends AbstractSequence {
    */
   public GeneratingFunctionSequence(final int offset, final Z[] num, final Z[] den) {
     super(offset);
+    mOffset = offset;
     mIndex = 0;
     mNum = Arrays.copyOf(num, num.length); // copy because this class modifies num
     mDen = Arrays.copyOf(den, den.length);
@@ -96,6 +99,7 @@ public class GeneratingFunctionSequence extends AbstractSequence {
    */
   public GeneratingFunctionSequence(final int offset, final String num, final String den) {
     super(offset);
+    mOffset = offset;
     mIndex = 0;
     mNum = ZUtils.toZ(num);
     mDen = ZUtils.toZ(den);
@@ -142,7 +146,7 @@ public class GeneratingFunctionSequence extends AbstractSequence {
 
   @Override
   public Z next() {
-    while (mIndex < getOffset()) { // skip over leading coefficients
+    while (mIndex < mOffset) { // skip over leading coefficients
       iterate();
     } // while
     return iterate();

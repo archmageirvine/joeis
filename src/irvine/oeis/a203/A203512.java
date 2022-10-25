@@ -11,6 +11,6 @@ public class A203512 extends SelfQuotientSequence {
 
   /** Construct the sequence. */
   public A203512() {
-    super(new A203511(), 1);
+    super(0, new A203511(), 1);
   }
 }

@@ -22,16 +22,25 @@ public class SelfQuotientSequence extends AbstractSequence {
   public SelfQuotientSequence(final Sequence seq) {
     this(seq, 1);
   }
-  
+
+  /**
+   * Create the quotient sequence of a sequence.
+   * @param offset for the sequence
+   * @param seq underlying sequence
+   */
+  public SelfQuotientSequence(final int offset, final Sequence seq, final long mult) {
+    super(offset);
+    mSeq = seq;
+    mPrev = seq.next();
+    mMult = mult;
+  }
+
   /**
    * Create the quotient sequence of a sequence.
    * @param seq underlying sequence
    */
   public SelfQuotientSequence(final Sequence seq, final long mult) {
-    super(0);
-    mSeq = seq;
-    mPrev = seq.next();
-    mMult = mult;
+    this(1, seq, mult);
   }
 
   @Override

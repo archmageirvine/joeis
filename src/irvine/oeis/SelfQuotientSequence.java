@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  * <code>mult</code> is an optional, constant factor.
  * @author Georg Fischer
  */
-public class SelfQuotientSequence implements Sequence {
+public class SelfQuotientSequence extends AbstractSequence {
 
   protected final Sequence mSeq;
   protected Z mPrev;
@@ -28,6 +28,7 @@ public class SelfQuotientSequence implements Sequence {
    * @param seq underlying sequence
    */
   public SelfQuotientSequence(final Sequence seq, final long mult) {
+    super(0);
     mSeq = seq;
     mPrev = seq.next();
     mMult = mult;

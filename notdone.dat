@@ -2055,3 +2055,4 @@ A060017 Number of n-feedback edge set obstructions.
 A060040 Square array T(n,k) (n >= 2, k >= 1) giving smallest positive integer m such that any set of m points in general position in R^n contains k points in convex position, read by antidiagonals.
 A060066 Number of tame meanders with 2n crossings
 A060089 Dimensions of graded algebra associated with meanders
+A060111 Dimensions of graded algebra associated with meanders

@@ -15,7 +15,6 @@ import irvine.oeis.recur.GeneratingFunctionSequence;
 public class A157052 extends GeneratingFunctionSequence {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private int mOffset;
 
   /** Construct the sequence. */
   public A157052() {
@@ -28,7 +27,7 @@ public class A157052 extends GeneratingFunctionSequence {
    * @param parm parameter "of absolute value"
    */
   public A157052(final int offset, final int parm) {
-    mOffset = offset;
+    setOffset(offset);
     final Polynomial<Z> den = RING.pow(RING.oneMinusXToTheN(1), parm + 1);
     Polynomial<Z> num = RING.zero();
     for (int i = 1; i <= parm - 1; ++i) {
@@ -45,9 +44,5 @@ public class A157052 extends GeneratingFunctionSequence {
     }
     next();
     next();
-  }
-
-  public int getOffset() {
-    return mOffset;
   }
 }

@@ -16,9 +16,9 @@ public class A005282 extends MemorySequence {
   private final Z mSecond;
 
   protected A005282(final Z first, final Z second) {
-    super(1);
     mFirst = first;
     mSecond = second;
+    setOffset(1);
   }
 
   /** Construct the sequence. */

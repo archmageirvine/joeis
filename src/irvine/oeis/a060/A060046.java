@@ -9,6 +9,9 @@ import irvine.math.z.Z;
 public class A060046 extends A060047 {
 
   private int mN = 8;
+  {
+    setOffset(9);
+  }
 
   @Override
   public Z next() {

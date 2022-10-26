@@ -11,6 +11,6 @@ import irvine.oeis.triangle.Transpose;
 public class A144401 extends Transpose {
 
   public A144401() {
-    super(new A202191());
+    super(1, new A202191());
   }
 }

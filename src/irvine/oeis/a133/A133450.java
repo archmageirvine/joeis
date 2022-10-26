@@ -10,6 +10,10 @@ import irvine.oeis.a056.A056929;
  */
 public class A133450 extends A056929 {
 
+  {
+    setOffset(1);
+  }
+
   @Override
   public Z next() {
     final Z result = super.next();

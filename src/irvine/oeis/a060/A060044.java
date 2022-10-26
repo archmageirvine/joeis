@@ -12,6 +12,9 @@ public class A060044 extends A003056 {
   private int mN = 0;
   private int mM = super.next().intValueExact() + 1;
   protected Z mSum = null;
+  {
+    setOffset(1);
+  }
 
   protected void search(final int remaining, final int remainingParts, final Z prod, final int sign, final int m) {
     if (remainingParts == 0) {

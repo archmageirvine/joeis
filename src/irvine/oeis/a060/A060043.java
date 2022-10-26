@@ -13,6 +13,9 @@ public class A060043 extends A003056 {
   private int mN = 0;
   private int mM = super.next().intValueExact() + 1;
   private Z mSum = null;
+  {
+    setOffset(1);
+  }
 
   private void search(final int remaining, final int remainingParts, final Z prod, final int m) {
     if (remainingParts == 0) {

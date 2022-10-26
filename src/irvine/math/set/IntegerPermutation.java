@@ -169,4 +169,12 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
     }
     return k + 1;
   }
+
+  /**
+   * Size of the permutation.
+   * @return size
+   */
+  public int size() {
+    return mPerm.length;
+  }
 }

@@ -21,7 +21,7 @@ public class A214627 extends PrimeSubsequence {
   @Override
   public Z next() {
     while (true) {
-      Z result = super.next();
+      final Z result = super.next();
       if (!result.equals(mP)) {
         mP = result;
         return result;

@@ -19,8 +19,7 @@ public class StanleySequence extends MemorySequence {
    * @param initialTerms initial terms
    */
   public StanleySequence(final Z... initialTerms) {
-    int numInitialTerms = initialTerms.length;
-    mLast = initialTerms[numInitialTerms - 1];
+    mLast = initialTerms[initialTerms.length - 1];
     for (final Z v : initialTerms) {
       updateForbidden(v);
       add(v);

@@ -10,6 +10,7 @@ import irvine.oeis.triangle.Transpose;
  */
 public class A064282 extends Transpose {
 
+  /** Construct the sequence. */
   public A064282() {
     super(new A127898());
   }

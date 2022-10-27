@@ -12,7 +12,7 @@ public class A243112 extends RecordPositionSubsequence {
 
   /** Construct the sequence. */
   public A243112() {
-    super(new A055941(), 0);
+    super(0, new A055941());
   }
 
   @Override

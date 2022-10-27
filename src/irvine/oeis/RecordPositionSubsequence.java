@@ -13,13 +13,12 @@ public class RecordPositionSubsequence extends PositionSubsequence {
 
   /**
    * Creates a record position sequence of another sequence.
-   * @param seq underlying sequence
    * @param offset index of first term of the underlying sequence.
+   * @param seq underlying sequence
    */
-  public RecordPositionSubsequence(final Sequence seq, final int offset) {
-    super(seq, offset);
-    // A265913(1) -80561663527802406257321747 has current minimal 1st term
-    mMax = new Z("-9999999999999999999999999999999999999999999999999999999999999999"); // 64 digits
+  public RecordPositionSubsequence(final int offset, final Sequence seq) {
+    super(offset, seq);
+    mMax = null;
   }
 
   /**
@@ -30,7 +29,7 @@ public class RecordPositionSubsequence extends PositionSubsequence {
    */
   @Override
   public boolean isOk(final Z term) {
-    if (term.compareTo(mMax) > 0) {
+    if (mMax == null || term.compareTo(mMax) > 0) {
       mMax = term;
       return true;
     } else {

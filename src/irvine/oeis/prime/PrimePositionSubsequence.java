@@ -18,7 +18,7 @@ public class PrimePositionSubsequence extends PositionSubsequence {
    * @param start index of first term of the underlying sequence.
    */
   public PrimePositionSubsequence(final Sequence seq, final int start) {
-    super(seq, start);
+    super(start, seq);
   }
 
   /**

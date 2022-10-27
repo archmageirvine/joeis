@@ -13,12 +13,12 @@ public class PositionSubsequence extends Subsequence implements SequenceWithOffs
 
   /**
    * Creates sequence of the indices of the terms in another sequence that fulfill some condition.
+   * @param offset offset of <code>seq</code>
    * @param seq underlying sequence
-   * @param start offset of <code>seq</code>
    */
-  public PositionSubsequence(final Sequence seq, final int start) {
+  public PositionSubsequence(final int offset, final Sequence seq) {
     super(seq);
-    mN = start - 1;
+    mN = offset - 1;
   }
 
   @Override

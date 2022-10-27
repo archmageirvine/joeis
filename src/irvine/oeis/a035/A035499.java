@@ -11,7 +11,7 @@ public class A035499 extends PositionSubsequence {
 
   /** Construct the sequence. */
   public A035499() {
-    super(new A035492(), 0);
+    super(0, new A035492());
   }
 
   @Override

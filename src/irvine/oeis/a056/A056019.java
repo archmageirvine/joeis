@@ -17,6 +17,7 @@ public class A056019 extends A055089 {
   private List<int[]> mA = Collections.singletonList(new int[0]);
   private long mOffset = 0;
   {
+    mReverseColex.clear();
     mReverseColex.add(new int[0]); // Handle identity
   }
 

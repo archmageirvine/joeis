@@ -11,6 +11,9 @@ import irvine.util.string.StringUtils;
 public class A046807 extends A007623 {
 
   private long mM = -1;
+  {
+    setOffset(1);
+  }
 
   @Override
   public Z next() {

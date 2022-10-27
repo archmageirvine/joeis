@@ -20,11 +20,9 @@ import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
  * @author Pablo Mayrgundter
  * @author Sean A. Irvine
  */
-@SuppressWarnings("RedundantCast")
 public class CliFlagsTest extends TestCase {
 
   protected CliFlags mFlags;
@@ -35,7 +33,6 @@ public class CliFlagsTest extends TestCase {
     mFlags = new CliFlags();
     mFlags.setInvalidFlagHandler(null);
   }
-
 
   /** Used by JUnit (called before each test method)  */
   @Override

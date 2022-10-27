@@ -17,7 +17,10 @@ public class A055089 extends Sequence0 {
   private int mN = 1;
   private int mM = -1;
   protected final TreeSet<int[]> mReverseColex = new TreeSet<>(Comparators.REVERSE_COLEXICOGRAPHIC);
-  private int[] mCurrentPerm = {0}; // Handle identity as special case
+  {
+    mReverseColex.add(new int[] {0});
+  }
+  private int[] mCurrentPerm = {}; // Handle identity as special case
 
   protected void step() {
     final Permutation perm = new Permutation(++mN);

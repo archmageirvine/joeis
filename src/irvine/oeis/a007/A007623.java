@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007623 Integers written in factorial base.
  * @author Sean A. Irvine
  */
-public class A007623 implements Sequence {
+public class A007623 extends Sequence0 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Z mN = Z.NEG_ONE;

@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import irvine.math.IntegerUtils;
+import irvine.math.z.Z;
 
 /**
  * Hold a permutation of integers.  These permutations start at 0 rather
@@ -176,5 +177,27 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
    */
   public int size() {
     return mPerm.length;
+  }
+
+  /**
+   * Return the order of this permutation (least common multiple of cycle lengths).
+   * @return order of permutation
+   */
+  public Z order() {
+    final boolean[] seen = new boolean[size()];
+    Z lcm = Z.ONE;
+    for (int k = 0; k < mPerm.length; ++k) {
+      if (!seen[k]) {
+        int j = k;
+        int len = 0;
+        do {
+          ++len;
+          seen[j] = true;
+          j = mPerm[j];
+        } while (!seen[j]);
+        lcm = lcm.lcm(Z.valueOf(len));
+      }
+    }
+    return lcm;
   }
 }

@@ -21,7 +21,7 @@ public class A055092 extends Sequence0 {
     mReverseColex.add(new int[1]); // Handle identity as special case
   }
 
-  static int lcm(final int[] p) {
+  static int lcmPerm(final int[] p) {
     final boolean[] seen = new boolean[p.length];
     int lcm = 1;
     for (int k = 0; k < p.length; ++k) {
@@ -50,6 +50,6 @@ public class A055092 extends Sequence0 {
         }
       }
     }
-    return Z.valueOf(lcm(mReverseColex.pollFirst()));
+    return Z.valueOf(lcmPerm(mReverseColex.pollFirst()));
   }
 }

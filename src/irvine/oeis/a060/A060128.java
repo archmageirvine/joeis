@@ -4,7 +4,7 @@ import irvine.math.set.IntegerPermutation;
 import irvine.math.z.Z;
 
 /**
- * A060128.
+ * A060128 a(n) is the number of disjoint cycles (excluding 1-cycles, i.e., fixed elements) in the n-th permutation of A060117 and A060118.
  * @author Sean A. Irvine
  */
 public class A060128 extends A060117 {

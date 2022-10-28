@@ -3,7 +3,7 @@ package irvine.math;
 import java.util.HashMap;
 
 /**
- * Definition of a three argument function that remembers previously computed results.
+ * Definition of a two argument function that remembers previously computed results.
  * @author Sean A. Irvine
  * @param <R> result type
  */

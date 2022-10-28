@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.InverseSequence;
 
 /**
- * A060126.
+ * A060126 Positions of permutations of A055089 in the permutation sequence A060117.
  * @author Sean A. Irvine
  */
 public class A060126 extends InverseSequence {

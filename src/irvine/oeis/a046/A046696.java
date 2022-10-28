@@ -1,12 +1,12 @@
 package irvine.oeis.a046;
 
-import irvine.oeis.PositionSequence;
+import irvine.oeis.FilterPositionSequence;
 
 /**
  * A046696 Nim-value of 0 for Couples-are-Forever occurs for these heap sizes.
  * @author Sean A. Irvine
  */
-public class A046696 extends PositionSequence {
+public class A046696 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A046696() {

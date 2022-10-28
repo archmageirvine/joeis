@@ -1,13 +1,13 @@
 package irvine.oeis.a056;
 
-import irvine.oeis.PositionSequence;
+import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a055.A055229;
 
 /**
  * A056196 Numbers n such that A055229(n) = 2.
  * @author Sean A. Irvine
  */
-public class A056196 extends PositionSequence {
+public class A056196 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A056196() {

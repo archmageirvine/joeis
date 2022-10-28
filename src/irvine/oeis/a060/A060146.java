@@ -9,6 +9,10 @@ import irvine.oeis.Sequence1;
  */
 public class A060146 extends Sequence1 {
 
+  // Simple exhaustive search.
+  // Avoids using Q directly.
+  // The "den" part could safely to done as long for mN <= 20
+
   private int mN = 0;
   private long mCount = 0;
   private boolean[] mUsed = null;

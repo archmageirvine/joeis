@@ -1,12 +1,12 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.PositionSequence;
+import irvine.oeis.FilterPositionSequence;
 
 /**
  * A054729 Numbers n such that genus of modular curve X_0(N) is never equal to n.
  * @author Sean A. Irvine
  */
-public class A054729 extends PositionSequence {
+public class A054729 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A054729() {

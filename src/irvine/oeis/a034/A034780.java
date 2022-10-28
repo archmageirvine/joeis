@@ -1,12 +1,12 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.PositionSequence;
+import irvine.oeis.FilterPositionSequence;
 
 /**
  * A034780 Numbers k such that A034693(k) = 4.
  * @author Sean A. Irvine
  */
-public class A034780 extends PositionSequence {
+public class A034780 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A034780() {

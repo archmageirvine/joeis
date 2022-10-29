@@ -2,13 +2,13 @@ package irvine.oeis.a014;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.oeis.UnimplementedException;
+import irvine.oeis.UnimplementedSequence;
 
 /**
  * A014423 From table of maximal epacts e(p) and corresponding primes p, for x_1=2, x_{m+1} = (x_m)^2+1; sequence gives e(p).
  * @author Sean A. Irvine
  */
-public class A014423 extends Sequence1 {
+public class A014423 extends Sequence1 implements UnimplementedSequence {
 
 //  private final Fast mPrime = new Fast();
 //  private long mP = 1;
@@ -67,7 +67,7 @@ public class A014423 extends Sequence1 {
 
   @Override
   public Z next() {
-    throw new UnimplementedException();
+    return null;
   }
 }
 

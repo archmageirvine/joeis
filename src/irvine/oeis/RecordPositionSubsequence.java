@@ -14,10 +14,11 @@ public class RecordPositionSubsequence extends FilterPositionSequence {
   /**
    * Creates a record position sequence of another sequence.
    * @param offset index of first term of the underlying sequence.
+   * @param start start index
    * @param seq underlying sequence
    */
-  public RecordPositionSubsequence(final int offset, final Sequence seq) {
-    super(offset, seq, new Predicate<>() {
+  public RecordPositionSubsequence(final int offset, final int start, final Sequence seq) {
+    super(offset, start, seq, new Predicate<>() {
 
       private Z mMax = null;
 
@@ -30,5 +31,14 @@ public class RecordPositionSubsequence extends FilterPositionSequence {
         return false;
       }
     });
+  }
+
+  /**
+   * Creates a record position sequence of another sequence.
+   * @param start index of first term of the underlying sequence.
+   * @param seq underlying sequence
+   */
+  public RecordPositionSubsequence(final int start, final Sequence seq) {
+    this(1, start, seq);
   }
 }

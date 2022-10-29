@@ -66,8 +66,9 @@ public abstract class SemiprimeSequence implements Sequence {
   /**
    * Generate the semiprime sequence from the given starting position.
    * @param args sequence to generate and optional start term
+   * @throws UnimplementedException if the sequence is not implemented
    */
-  public static void main(final String[] args) {
+  public static void main(final String[] args) throws UnimplementedException {
     final SemiprimeSequence seq = (SemiprimeSequence) SequenceFactory.sequence(args[0]);
     seq.mVerbose = true;
     if (args.length > 1) {

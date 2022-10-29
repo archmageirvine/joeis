@@ -2,16 +2,16 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.oeis.UnimplementedException;
+import irvine.oeis.UnimplementedSequence;
 
 /**
  * A058655 Decimal expansion of area under the curve 1/Gamma(x) from zero to infinity.
  * @author Sean A. Irvine
  */
-public class A058655 extends Sequence1 {
+public class A058655 extends Sequence1 implements UnimplementedSequence {
   @Override
   public Z next() {
-    throw new UnimplementedException();
+    return null;
   }
 }
 

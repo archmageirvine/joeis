@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
-import irvine.oeis.UnimplementedException;
+import irvine.oeis.UnimplementedSequence;
 
 /**
  * A046858 Irregular triangle read by rows: T(n,k) = number of directed graphs-with-loops with n nodes and k arcs (n &gt;= 0, 0 &lt;= k &lt;= n^2.
  * @author Sean A. Irvine
  */
-public class A046858 extends Sequence0 {
+public class A046858 extends Sequence0 implements UnimplementedSequence {
 
   // Following matches Harary, "Linear, Directed, Rooted, and Connected Graphs", see pp. 452-453
 //  private static CycleIndex orderedPairSymmetricCycleIndex(final int p) {
@@ -60,6 +60,6 @@ public class A046858 extends Sequence0 {
    // System.out.println(ci2);
    // System.out.println(znp.applyOnePlusXToTheN());
     // return Z.ZERO;
-    throw new UnimplementedException();
+    return null;
   }
 }

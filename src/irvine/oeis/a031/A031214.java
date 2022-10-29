@@ -5,6 +5,7 @@ import irvine.oeis.DeadSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.SequenceFactory;
+import irvine.oeis.UnimplementedException;
 
 /**
  * A031214 Initial term of sequence An.
@@ -20,7 +21,11 @@ public class A031214 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Sequence sequence = SequenceFactory.sequence(SequenceFactory.getCanonicalId("A" + ++mN));
-    return sequence instanceof DeadSequence ? Z.valueOf(DEADS[++mDeadIndex]) : sequence.next();
+    try {
+      final Sequence sequence = SequenceFactory.sequence(SequenceFactory.getCanonicalId("A" + ++mN));
+      return sequence instanceof DeadSequence ? Z.valueOf(DEADS[++mDeadIndex]) : sequence.next();
+    } catch (final UnimplementedException e) {
+      throw new UnsupportedOperationException("Stalled at " + mN);
+    }
   }
 }

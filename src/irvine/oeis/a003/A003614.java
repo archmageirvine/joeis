@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.oeis.UnimplementedException;
+import irvine.oeis.UnimplementedSequence;
 
 /**
  * A003614 Symmetries in unrooted (1,4) trees on 3n-1 vertices.
  * @author Sean A. Irvine
  */
-public class A003614 extends Sequence1 {
+public class A003614 extends Sequence1 implements UnimplementedSequence {
 
   // todo I suspect Eqn (1.2.16) in paper is incorrect
   // Note I've tried to do this twice now. This time I used the newer MultivariatePolynomial
@@ -16,7 +16,7 @@ public class A003614 extends Sequence1 {
 
   @Override
   public Z next() {
-    throw new UnimplementedException();
+    return null;
   }
 
 //  protected static final MultivariatePolynomialField<Q> RING = new MultivariatePolynomialField<>(Rationals.SINGLETON, 2);

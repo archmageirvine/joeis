@@ -29,7 +29,7 @@ public final class Timing {
         } catch (final OutOfMemoryError e) {
           System.out.println(key + " MEMORY ERROR");
         }
-      } catch (final UnsupportedOperationException e) {
+      } catch (final UnimplementedException e) {
         // too bad
       }
     }

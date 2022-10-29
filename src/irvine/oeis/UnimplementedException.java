@@ -1,8 +1,8 @@
 package irvine.oeis;
 
 /**
- * Exception for an OEIS sequence have a sequence file, but no actual implementation.
+ * Exception used to indicate that no implementation of a sequence could be found.
  * @author Sean A. Irvine
  */
-public class UnimplementedException extends RuntimeException {
+public class UnimplementedException extends Exception {
 }

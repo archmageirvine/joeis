@@ -71,7 +71,7 @@ public final class Report {
         if (seq instanceof PariSequence) {
           ++pari;
         }
-      } catch (final UnsupportedOperationException e) {
+      } catch (final UnimplementedException e) {
         // too bad
       }
     }

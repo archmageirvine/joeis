@@ -2,6 +2,7 @@ package irvine.oeis;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.channels.Channels;
 
@@ -49,12 +50,10 @@ public final class OffsetInspector {
             final String[] parms = line.split("\\s+");
             final String aNumber = parms[0];
             final int offset = Integer.parseInt(parms[1]);
-            final String superClass = parms[2];
+            final String superClass = parms.length > 2 ? parms[2] : "";
             try {
               final Sequence seq = SequenceFactory.sequence(aNumber);
-              if (seq == null) {
-                System.out.println("# " + aNumber + " nyi");
-              } else if (seq instanceof SequenceWithOffset) {
+              if (seq instanceof SequenceWithOffset) {
                 final SequenceWithOffset seqWO = (SequenceWithOffset) seq;
                 final int seqOffset = seqWO.getOffset();
                 if (seqOffset == offset) {
@@ -64,13 +63,15 @@ public final class OffsetInspector {
                   System.out.println(aNumber + "\t" + seqOffset + " -> " + offset + "\t" + superClass);
                 }
               }
-            } catch (final Exception exc) {
+            } catch (final UnimplementedException exc) {
+              //System.out.println("# " + aNumber + " nyi");
+            } catch (final RuntimeException exc) {
               System.out.println("#?? " + aNumber + ": " + exc.getMessage());
             }
           } // is not a comment
         } // while ! eof
       }
-    } catch (final Exception exc) {
+    } catch (final RuntimeException | IOException exc) {
       System.err.println(exc.getMessage());
     }
     System.out.println("# " + String.format("%6d", total) + " sequences in jOEIS");

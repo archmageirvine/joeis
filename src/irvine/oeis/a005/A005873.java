@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
-import irvine.oeis.UnimplementedException;
+import irvine.oeis.UnimplementedSequence;
 
 /**
  * A005873 Theta series of hexagonal close-packing with respect to tetrahedral hole.
  * @author Sean A. Irvine
  */
-public class A005873 extends Sequence0 {
+public class A005873 extends Sequence0 implements UnimplementedSequence {
 
   // Formula (67) in Sloane paper, but does not seem to reproduce sequence
 
@@ -50,6 +50,6 @@ public class A005873 extends Sequence0 {
 //    final QPolynomial<Z> m = RING.add(d, j);
 //    //System.out.println("m=" + m);
 //    return m.coeff(mN);
-    throw new UnimplementedException();
+    return null;
   }
 }

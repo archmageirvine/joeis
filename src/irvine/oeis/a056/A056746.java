@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.oeis.UnimplementedException;
+import irvine.oeis.UnimplementedSequence;
 
 /**
  * A056746 Raw solutions to Hi-Q puzzle with n holes on a side, any initial peg removed.
  * @author Sean A. Irvine
  */
-public class A056746 extends Sequence1 {
+public class A056746 extends Sequence1 implements UnimplementedSequence {
 
 //  private static final int[] DELTAX = {-1, 1, 0, 0};
 //  private static final int[] DELTAY = {0, 0, -1, 1};
@@ -81,6 +81,6 @@ public class A056746 extends Sequence1 {
 
   @Override
   public Z next() {
-    throw new UnimplementedException();
+    return null;
   }
 }

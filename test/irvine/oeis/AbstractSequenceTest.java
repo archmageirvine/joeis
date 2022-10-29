@@ -80,18 +80,18 @@ public class AbstractSequenceTest extends TestCase {
       final String aNumber = "A" + seqId;
       final int termsToExamine = Math.min(parts.length, TEST_TERMS.getOrDefault(aNumber, Integer.MAX_VALUE));
       if (termsToExamine > 0) {
-        final Sequence seq = SequenceFactory.sequence(aNumber);
-        if (!(seq instanceof DeadSequence)) {
-          try {
+        try {
+          final Sequence seq = SequenceFactory.sequence(aNumber);
+          if (!(seq instanceof DeadSequence)) {
             for (int k = 0; k < termsToExamine; ++k) {
               assertEquals("a(" + (k + 1) + ")", parts[k], seq.next().toString());
             }
-          } catch (final UnimplementedException e) {
-            // ok, these ones get a free pass
           }
-        }
-        if (seq instanceof Closeable) {
-          ((Closeable) seq).close();
+          if (seq instanceof Closeable) {
+            ((Closeable) seq).close();
+          }
+        } catch (final UnimplementedException e) {
+          // ok, these ones get a free pass
         }
       }
     }

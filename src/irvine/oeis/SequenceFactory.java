@@ -87,12 +87,12 @@ public final class SequenceFactory {
    * @param aNumber A-number identifier in the form <code>A000001</code>
    * @param producer the Producer to use
    * @return sequence for A-number
-   * @exception UnsupportedOperationException for an unknown A-number.
+   * @exception UnimplementedException for an unknown A-number.
    */
-  public static Sequence sequence(final String aNumber, final Producer producer) {
+  public static Sequence sequence(final String aNumber, final Producer producer) throws UnimplementedException {
     final Sequence seq = producer.getSequence(aNumber);
-    if (seq == null) {
-      throw new UnsupportedOperationException("No implementation of the sequence was found");
+    if (seq == null || seq instanceof UnimplementedSequence) {
+      throw new UnimplementedException();
     }
     return seq;
   }
@@ -103,9 +103,9 @@ public final class SequenceFactory {
    *
    * @param aNumber A-number identifier in the form <code>A000001</code>
    * @return sequence for A-number
-   * @exception UnsupportedOperationException for an unknown A-number.
+   * @exception UnimplementedException for an unknown A-number.
    */
-  public static Sequence sequence(final String aNumber) {
+  public static Sequence sequence(final String aNumber) throws UnimplementedException {
     return sequence(aNumber, sProducer);
   }
 
@@ -507,10 +507,10 @@ public final class SequenceFactory {
       if (generated) {
         System.err.println("Implementation limits exceeded, cannot generate further terms for " + seqId + "\n" + e.getMessage());
       } else {
-        System.err.println("Sorry " + seqId + " is not yet implemented");
+        throw e;
       }
     } catch (final UnimplementedException e) {
-      System.err.println("Sorry " + seqId + " is not yet implemented");
+      System.err.println("Sorry, " + seqId + " is not yet implemented");
     }
   }
 

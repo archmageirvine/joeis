@@ -8,6 +8,7 @@ import irvine.math.z.Z;
  * A sequence consisting of the positions of consecutive records in another sequence.
  * Derived from <code>RecordPositionSequence</code>.
  * @author Georg Fischer
+ * @author Sean A. Irvine
  */
 public class FilterPositionSequence extends FilterSequence {
 

@@ -1,5 +1,7 @@
 package irvine.oeis;
 
+import java.util.function.Predicate;
+
 import irvine.math.z.Z;
 
 /**
@@ -7,9 +9,7 @@ import irvine.math.z.Z;
  * In contrast to {@link RecordSequence}, this class does not compare the absolute value.
  * @author Georg Fischer
  */
-public class RecordPositionSubsequence extends PositionSubsequence {
-
-  protected Z mMax; 
+public class RecordPositionSubsequence extends FilterPositionSequence {
 
   /**
    * Creates a record position sequence of another sequence.
@@ -17,23 +17,18 @@ public class RecordPositionSubsequence extends PositionSubsequence {
    * @param seq underlying sequence
    */
   public RecordPositionSubsequence(final int offset, final Sequence seq) {
-    super(offset, seq);
-    mMax = null;
-  }
+    super(offset, seq, new Predicate<>() {
 
-  /**
-   * Defines the condition for the inclusion of a term of the underlying sequence
-   * into this subsequence.
-   * @param term term of the underlying sequence
-   * @return true if the term should be included, false otherwise.
-   */
-  @Override
-  public boolean isOk(final Z term) {
-    if (mMax == null || term.compareTo(mMax) > 0) {
-      mMax = term;
-      return true;
-    } else {
-      return false;
-    }
+      private Z mMax = null;
+
+      @Override
+      public boolean test(final Z z) {
+        if (mMax == null || z.compareTo(mMax) > 0) {
+          mMax = z;
+          return true;
+        }
+        return false;
+      }
+    });
   }
 }

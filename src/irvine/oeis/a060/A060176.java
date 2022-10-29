@@ -7,13 +7,13 @@ import irvine.oeis.a008.A008578;
 import irvine.oeis.triangle.AntidiagonalSequence;
 
 /**
- * A060175 Table T(n,k) by antidiagonals of exponent of largest power of k-th prime which divides n.
+ * A060176 Table T(n,k) by antidiagonals of value of largest power of k-th prime which divides n.
  * @author Sean A. Irvine
  */
-public class A060175 extends AntidiagonalSequence {
+public class A060176 extends AntidiagonalSequence {
 
   /** Construct the sequence. */
-  public A060175() {
+  public A060176() {
     super(1, new MemoryFunctionInt2<>() {
       private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A008578());
 
@@ -25,7 +25,7 @@ public class A060175 extends AntidiagonalSequence {
           n /= p;
           ++cnt;
         }
-        return Z.valueOf(cnt);
+        return mPrimes.a(m).pow(cnt);
       }
     });
   }

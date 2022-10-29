@@ -14,6 +14,6 @@ public class A287373 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A287373() {
-    super(0, 1, new A101666(), 0);
+    super(1, 1, new A101666(), 0);
   }
 }

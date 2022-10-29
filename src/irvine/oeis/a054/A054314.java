@@ -15,6 +15,6 @@ public class A054314 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A054314() {
-    super(0, 1, new A001620(), 8);
+    super(1, 1, new A001620(), 8);
   }
 }

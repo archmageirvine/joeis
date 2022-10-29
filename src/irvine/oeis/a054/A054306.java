@@ -8,13 +8,12 @@ import irvine.oeis.a001.A001620;
 
 /**
  * A054306 Positions of 0's in the decimal expansion of Euler's constant.
- *
  * @author Georg Fischer
  */
 public class A054306 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A054306() {
-    super(0, 1, new A001620(), 0);
+    super(1, 1, new A001620(), 0);
   }
 }

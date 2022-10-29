@@ -103,7 +103,7 @@ public class PartitionTransformTriangle extends BaseTriangle {
       return mLastRow[k];
     }
     // else if (n < mRow) {
-    return get(n)[k];
+    return mRows.get(n)[k];
   }
 
   @Override

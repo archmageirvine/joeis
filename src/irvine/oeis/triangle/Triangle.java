@@ -16,8 +16,9 @@ import irvine.oeis.Sequence;
  * and in the last row with <code>mLastRow[k - j]</code> for <code>j=1..k</code>.
  * @author Georg Fischer
  */
-public class Triangle extends ArrayList<Z[]> implements Sequence {
+public class Triangle implements Sequence {
 
+  protected final ArrayList<Z[]> mRows = new ArrayList<>();
   protected int mRow; // current row index n
   protected int mCol; // current column index k
   protected Z[] mLastRow; // = get(mRow)
@@ -102,7 +103,7 @@ public class Triangle extends ArrayList<Z[]> implements Sequence {
     } else if (n == mRow && k <= mCol) {
       return mLastRow[k];
     } else if (n < mRow) {
-      return get(n)[k];
+      return mRows.get(n)[k];
     } else {
       return compute(n, k);
     }
@@ -113,8 +114,8 @@ public class Triangle extends ArrayList<Z[]> implements Sequence {
    */
   protected void addRow() {
     ++mRow;
-    add(new Z[mRow + 1]);
-    mLastRow = get(mRow);
+    mRows.add(new Z[mRow + 1]);
+    mLastRow = mRows.get(mRow);
     mCol = 0;
   }
 

@@ -81,8 +81,8 @@ public abstract class BaseTriangle extends Triangle implements SequenceWithOffse
   protected void addRow() {
     ++mRow;
     mRowLen = mSizeFct.apply(mRow);
-    add(new Z[mRowLen]);
-    mLastRow = get(mRow);
+    mRows.add(new Z[mRowLen]);
+    mLastRow = mRows.get(mRow);
     mCol = 0;
   }
 
@@ -93,7 +93,7 @@ public abstract class BaseTriangle extends Triangle implements SequenceWithOffse
    * @return <code>n + 1</code> for <code>tabl</code> triangles, or some other value for irregular (<code>tabf</code>) triangles
    */
   protected int getRowLength(final int n) {
-    return get(n).length;
+    return mRows.get(n).length;
   }
 
   /**

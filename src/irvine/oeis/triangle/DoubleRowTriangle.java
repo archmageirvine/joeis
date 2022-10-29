@@ -50,7 +50,7 @@ public class DoubleRowTriangle extends Triangle {
     } else if (n == mRow && k <= mCol) {
       return mLastRow[k];
     } else if (n < mRow) {
-      return get(n)[k];
+      return mRows.get(n)[k];
     } else {
       // System.err.println("assertion failed in DoubleRowTriangle.get(" + n + ", " + k + "), mIn=" + mIn);
       return Z.ZERO;
@@ -72,8 +72,8 @@ public class DoubleRowTriangle extends Triangle {
   protected void addRow() {
     ++mRow;
     mHalf = mRow >> 1;
-    add(new Z[mHalf + 1]);
-    mLastRow = get(mRow);
+    mRows.add(new Z[mHalf + 1]);
+    mLastRow = mRows.get(mRow);
     mCol = 0;
   }
 

@@ -11,7 +11,7 @@ import irvine.math.z.Z;
  */
 public class FilterPositionSequence extends FilterSequence {
 
-  protected long mN; // current index
+  private long mN; // current index
 
   /**
    * Creates a sequence of the positions where a digit occurs in another sequence.

@@ -28,9 +28,9 @@ public class AntidiagonalSequence extends AbstractSequence {
   public Z next() {
     if (++mM > mN) {
       ++mN;
-      mM = 0;
+      mM = getOffset();
     }
-    return mT.get(mM, mN - mM);
+    return mT.get(mM, mN + getOffset() - mM);
   }
 }
 

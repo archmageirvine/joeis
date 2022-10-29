@@ -15,7 +15,6 @@ public class A134257 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A134257() {
-    super(0, new A049541(), 7);
-    ++mN;
+    super(0, 1, new A049541(), 7);
   }
 }

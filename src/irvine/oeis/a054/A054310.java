@@ -8,14 +8,12 @@ import irvine.oeis.a001.A001620;
 
 /**
  * A054310 Positions of 4's in the decimal expansion of Euler's constant.
- *
  * @author Georg Fischer
  */
 public class A054310 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A054310() {
-    super(0, new A001620(), 4);
-    ++mN;
+    super(0, 1, new A001620(), 4);
   }
 }

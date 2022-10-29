@@ -13,7 +13,6 @@ public class A189719 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A189719() {
-    super(0, new A189718(), 0);
-    ++mN;
+    super(0, 1, new A189718(), 0);
   }
 }

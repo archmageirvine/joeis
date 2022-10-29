@@ -1,6 +1,6 @@
 package irvine.oeis;
 
-import java.util.function.Function;
+import java.util.function.Predicate;
 
 import irvine.math.z.Z;
 
@@ -9,11 +9,9 @@ import irvine.math.z.Z;
  * Derived from <code>RecordPositionSequence</code>.
  * @author Georg Fischer
  */
-public class FilterPositionSequence extends AbstractSequence {
+public class FilterPositionSequence extends FilterSequence {
 
-  protected final Sequence mSeq; // the underlying sequence
   protected long mN; // current index
-  private final Function<Z, Boolean> mPredicate;
 
   /**
    * Creates a sequence of the positions where a digit occurs in another sequence.
@@ -22,11 +20,19 @@ public class FilterPositionSequence extends AbstractSequence {
    * @param start offset of <code>seq</code>
    * @param predicate condition for accepting terms
    */
-  public FilterPositionSequence(final int offset, final int start, final Sequence seq, final Function<Z, Boolean> predicate) {
-    super(offset);
-    mSeq = seq;
-    mPredicate = predicate;
+  public FilterPositionSequence(final int offset, final int start, final Sequence seq, final Predicate<Z> predicate) {
+    super(offset, seq, predicate);
     mN = start - 1;
+  }
+
+  /**
+   * Creates a sequence of the positions where a digit occurs in another sequence.
+   * @param seq underlying sequence
+   * @param start offset of <code>seq</code>
+   * @param predicate condition for accepting terms
+   */
+  public FilterPositionSequence(final int start, final Sequence seq, final Predicate<Z> predicate) {
+    this(1, start, seq, predicate);
   }
 
   /**
@@ -65,7 +71,7 @@ public class FilterPositionSequence extends AbstractSequence {
   public Z next() {
     while (true) {
       ++mN;
-      if (mPredicate.apply(mSeq.next())) {
+      if (mPredicate.test(mSeq.next())) {
         return Z.valueOf(mN);
       }
     }

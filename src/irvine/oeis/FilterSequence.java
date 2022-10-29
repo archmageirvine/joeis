@@ -1,6 +1,6 @@
 package irvine.oeis;
 
-import java.util.function.Function;
+import java.util.function.Predicate;
 
 import irvine.math.z.Z;
 import irvine.util.string.StringUtils;
@@ -12,18 +12,18 @@ import irvine.util.string.StringUtils;
 public class FilterSequence extends AbstractSequence {
 
   /** Odd terms. */
-  public static final Function<Z, Boolean> ODD = Z::isOdd;
+  public static final Predicate<Z> ODD = Z::isOdd;
   /** Even terms. */
-  public static final Function<Z, Boolean> EVEN = Z::isEven;
+  public static final Predicate<Z> EVEN = Z::isEven;
   /** Prime terms. */
-  public static final Function<Z, Boolean> PRIME = Z::isProbablePrime;
+  public static final Predicate<Z> PRIME = Z::isProbablePrime;
   /** Nonzero terms. */
-  public static final Function<Z, Boolean> NONZERO = k -> !k.isZero();
+  public static final Predicate<Z> NONZERO = k -> !k.isZero();
   /** Palindromic terms. */
-  public static final Function<Z, Boolean> PALINDROME = k -> StringUtils.isPalindrome(k.toString());
+  public static final Predicate<Z> PALINDROME = k -> StringUtils.isPalindrome(k.toString());
 
-  private final Sequence mSeq;
-  private final Function<Z, Boolean> mPredicate;
+  protected final Sequence mSeq;
+  protected final Predicate<Z> mPredicate;
 
   /**
    * Filter.
@@ -31,7 +31,7 @@ public class FilterSequence extends AbstractSequence {
    * @param seq underlying sequence
    * @param predicate predicate used for filtering
    */
-  public FilterSequence(final int offset, final Sequence seq, final Function<Z, Boolean> predicate) {
+  public FilterSequence(final int offset, final Sequence seq, final Predicate<Z> predicate) {
     super(offset);
     mSeq = seq;
     mPredicate = predicate;
@@ -43,7 +43,7 @@ public class FilterSequence extends AbstractSequence {
    * @param seq first sequence
    * @param predicate combination operation
    */
-  public FilterSequence(final Sequence seq, final Function<Z, Boolean> predicate) {
+  public FilterSequence(final Sequence seq, final Predicate<Z> predicate) {
     this(seq instanceof SequenceWithOffset ? ((SequenceWithOffset) seq).getOffset() : 1, seq, predicate);
   }
 
@@ -51,7 +51,7 @@ public class FilterSequence extends AbstractSequence {
   public Z next() {
     while (true) {
       final Z t = mSeq.next();
-      if (t == null || mPredicate.apply(t)) {
+      if (t == null || mPredicate.test(t)) {
         return t;
       }
     }

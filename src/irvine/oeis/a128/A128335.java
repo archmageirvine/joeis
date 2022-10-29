@@ -16,13 +16,6 @@ public class A128335 extends PrimePositionSubsequence {
   
   /** Construct the sequence. */
   public A128335() {
-    super("[[0],[-20],[9],[-1]]", "[2, 9]", 0);
+    super("[[0],[-20],[9],[-1]]", "[2, 9]", 0, primeDivTest(9));
   }
-
-  @Override
-  public boolean isOk(final Z term) {
-    final Z[] quotRem = term.divideAndRemainder(DIV);
-    return quotRem[1].equals(Z.ZERO) && quotRem[0].isProbablePrime();
-  }
-
 }

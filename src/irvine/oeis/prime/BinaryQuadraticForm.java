@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
@@ -24,8 +24,9 @@ import irvine.util.Pair;
  * <code>mColMix[y], mColMax[y]</code> give the lower and upper <code>x</code> indexes for the entries that have already been stored in the TreeMap.
  * @author Georg Fischer
  */
-public class BinaryQuadraticForm extends TreeMap<Z, Pair<Integer, Integer>> implements SequenceWithOffset {
+public class BinaryQuadraticForm extends Sequence1 {
 
+  private final TreeMap<Z, Pair<Integer, Integer>> mMap = new TreeMap<>();
   protected int mA; // factor of x^2
   protected int mB; // factor of x*y, maybe 0 or negative
   protected int mC; // factor of y^2
@@ -81,9 +82,9 @@ public class BinaryQuadraticForm extends TreeMap<Z, Pair<Integer, Integer>> impl
    */
   protected Z addEntry(final int x, final int y) {
     final Z result = Z.valueOf(mA).multiply(x * (long) x).add(mB * (long) x * y).add(mC * (long) y * y);
-    final Pair<Integer, Integer> pair = get(result);
+    final Pair<Integer, Integer> pair = mMap.get(result);
     if (pair == null) { // new key
-      put(result, new Pair<>(x, y));
+      mMap.put(result, new Pair<>(x, y));
 //      if (sDebug >= 3) {
 //        System.out.println("# add new @[" + x + "," + y + "]\t" + result);
 //      }
@@ -91,7 +92,7 @@ public class BinaryQuadraticForm extends TreeMap<Z, Pair<Integer, Integer>> impl
       //final int x0 = pair.left();
       final int y0 = pair.right();
       if (y > y0) { // replace by the new one that is more to the right
-        put(result, new Pair<>(x, y));
+        mMap.put(result, new Pair<>(x, y));
       }
 //      if (sDebug >= 3) {
 //        System.out.println("# modify @[" + x + "," + y + "]\t" + result);
@@ -101,15 +102,10 @@ public class BinaryQuadraticForm extends TreeMap<Z, Pair<Integer, Integer>> impl
   }
 
   @Override
-  public int getOffset() {
-    return 1;
-  }
-
-  @Override
   public Z next() {
     while (true) {
       // find next result and its coordinates
-      final Map.Entry<Z, Pair<Integer, Integer>> entry = pollFirstEntry();
+      final Map.Entry<Z, Pair<Integer, Integer>> entry = mMap.pollFirstEntry();
       final Z result = entry.getKey();
       final Pair<Integer, Integer> pair = entry.getValue();
       final int x0 = pair.left();

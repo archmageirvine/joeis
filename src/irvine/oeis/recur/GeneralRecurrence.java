@@ -6,7 +6,6 @@ import java.util.function.Function;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.SequenceWithOffset;
 
 /**
  * A recurrence equation set for <code>a(n)</code> depending on <code>a(f(n)), f(n) &lt; n</code>.
@@ -14,9 +13,8 @@ import irvine.oeis.SequenceWithOffset;
  * for <code>[a(n)], [a(2*n), a(2*n+1)], [a(3*n), a(3*n+1), a(3*n+2)]</code> and so on.
  * @author Georg Fischer
  */
-public class GeneralRecurrence extends MemorySequence implements SequenceWithOffset {
+public class GeneralRecurrence extends MemorySequence {
 
-  protected int mOffset; // first index of sequence, only used for b-files
   protected final ArrayList<Function<Integer, Z>> mLambda; // tuple of lambda expressions
 
   /**
@@ -26,7 +24,6 @@ public class GeneralRecurrence extends MemorySequence implements SequenceWithOff
    */
   public GeneralRecurrence(final int offset, final long... initTerms) {
     super(offset, initTerms);
-    mOffset = offset;
     mLambda = new ArrayList<>();
     initialize();
   }
@@ -38,7 +35,6 @@ public class GeneralRecurrence extends MemorySequence implements SequenceWithOff
    */
   public GeneralRecurrence(final int offset, final long[] initTerms, final Function<Integer, Z>[] lambda) {
     super(offset, initTerms);
-    mOffset = offset;
     mLambda = new ArrayList<>();
     mLambda.addAll(Arrays.asList(lambda));
   }
@@ -50,11 +46,6 @@ public class GeneralRecurrence extends MemorySequence implements SequenceWithOff
    */
   protected void initialize() {
     mLambda.add(n -> a(n - 1).multiply(a(n - 3)).add(a(n - 2).square()).divide(a(n - 4))); // (1,1) Somos-4
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

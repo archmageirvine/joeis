@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.AntidiagonalSequence;
 
 /**
- * A060151.
+ * A060155 Table T(n,k) by antidiagonals of floor[n^k/k] [n,k &gt;= 1].
  * @author Sean A. Irvine
  */
 public class A060155 extends AntidiagonalSequence {

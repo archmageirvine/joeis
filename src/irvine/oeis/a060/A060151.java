@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a039.A039960;
 
 /**
- * A060151.
+ * A060151 Number of base n digits required to write n!.
  * @author Sean A. Irvine
  */
 public class A060151 extends A039960 {

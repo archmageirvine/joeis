@@ -2060,3 +2060,4 @@ A060134 Positions of permutations produced by the transposition sequence A060135
 A060135 Sequence of adjacent transpositions (a[n] a[n]+1), which, when starting from the identity permutation and applied successively, produce a Hamiltonian circuit through all permutations of S_4, in such a way that S_{n-1} is always traversed before the rest of S_n. Furthermore, each subsequence from the first to the (n!-1)-th term is palindromic.
 A060148 Number of forest meanders with 2n crossings
 A060149 Number of homogeneous generators of degree n for graded algebra associated with meanders
+A060159 Initial term of a series of exactly n consecutive Harshad or Niven numbers (a Harshad number is such that is divided by the sum of its digits).

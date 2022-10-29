@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a059.A059970;
 
 /**
- * A060151.
+ * A060152 Nim-factorial(a(n))=1.
  * @author Sean A. Irvine
  */
 public class A060152 extends FilterPositionSequence {

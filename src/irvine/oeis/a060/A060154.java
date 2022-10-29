@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.AntidiagonalSequence;
 
 /**
- * A060151.
+ * A060154 Table T(n,k) by antidiagonals of n^k mod k [n,k &gt;= 1].
  * @author Sean A. Irvine
  */
 public class A060154 extends AntidiagonalSequence {

@@ -283,6 +283,15 @@ public final class IntegerPartition {
   }
 
   /**
+   * Test if this partition (in count form) is even.
+   * @param c partition in count form
+   * @return true iff the partition is even
+   */
+  public static boolean isEven(final int[] c) {
+    return (IntegerUtils.sum(c) & 1) != (c.length & 1);
+  }
+
+  /**
    * Print all integer partitions of given argument.
    * @param args arguments
    */

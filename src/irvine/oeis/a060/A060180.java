@@ -1,30 +1,33 @@
 package irvine.oeis.a060;
 
+import java.util.HashSet;
+
 import irvine.math.IntegerUtils;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A060015 Sum of orders of all even permutations of n letters.
+ * A060180.
  * @author Sean A. Irvine
  */
-public class A060015 extends Sequence1 {
+public class A060180 extends Sequence1 {
 
   private int mN = 0;
 
   @Override
   public Z next() {
-    Z res = Z.ZERO;
     final IntegerPartition part = new IntegerPartition(++mN);
     int[] p;
     final int[] c = new int[mN + 1];
+    final HashSet<Z> seen = new HashSet<>();
     while ((p = part.next()) != null) {
       IntegerPartition.toCountForm(p, c);
       if (IntegerPartition.isEven(c)) {
-        res = res.add(IntegerPartition.permCount(p, 1).multiply(IntegerUtils.lcm(p)));
+        seen.add(IntegerUtils.lcm(p));
       }
     }
-    return res;
+    return ZUtils.sum(seen);
   }
 }

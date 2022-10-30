@@ -106,7 +106,7 @@ public final class Report {
       final String offsetsFile = (String) flags.getValue(OFFSETS_FLAG);
       final int outOfRange = loadOffSetInformation(offsetsFile, offsets, verbose);
       if (verbose) {
-        StringUtils.message("Loaded offset information from " + offsetsFile + " (" + outOfRange + " skipped due to out of range)");
+        StringUtils.message("Loaded offset information from \"" + offsetsFile + "\" (" + outOfRange + " skipped due to out of range)");
       }
     }
 
@@ -123,7 +123,7 @@ public final class Report {
     for (int a = 1; a < MAX_ID; ++a) {
       final String aNumber = SequenceFactory.getCanonicalId("A" + a);
       if (verbose && a % 10000 == 0) {
-        StringUtils.message(aNumber);
+        StringUtils.message("Processing " + aNumber);
       }
       try {
         final long t = System.currentTimeMillis();

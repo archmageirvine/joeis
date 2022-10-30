@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.math.z.Z;
 
 /**
- * A060184.
+ * A060185 Generalized sum of divisors function: second diagonal of A060184.
  * @author Sean A. Irvine
  */
 public class A060185 extends A060184 {

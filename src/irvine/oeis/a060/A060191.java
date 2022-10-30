@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060184.
+ * A060191 Union_i p(4i), p(4i+1), where p(k) = k-th prime.
  * @author Sean A. Irvine
  */
 public class A060191 extends Sequence0 {

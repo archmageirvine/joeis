@@ -1,15 +1,15 @@
-package irvine.oeis.a049;
+package irvine.oeis.a060;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005384;
-import irvine.oeis.a006.A006988;
+import irvine.oeis.a033.A033844;
 
 /**
- * A049040 Number of Sophie Germain primes &lt;= prime(10^n).
+ * A060200 Number of Sophie Germain primes &lt;= Prime[2^n].
  * @author Sean A. Irvine
  */
-public class A049040 extends A006988 {
+public class A060200 extends A033844 {
 
   private final Sequence mSophieGermain = new A005384();
   private Z mP = mSophieGermain.next();

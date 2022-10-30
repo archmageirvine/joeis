@@ -9,7 +9,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A060180.
+ * A060180 Sum of distinct orders of degree-n even permutations.
  * @author Sean A. Irvine
  */
 public class A060180 extends Sequence1 {

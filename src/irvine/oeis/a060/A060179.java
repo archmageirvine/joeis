@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a008.A008578;
 
 /**
- * A060179.
+ * A060179 Sum of distinct orders of degree-n permutations.
  * @author Sean A. Irvine
  */
 public class A060179 extends Sequence0 {

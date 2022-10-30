@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060180.
+ * A060181 Number of permutations in the symmetric group S_n whose order is 1 or prime.
  * @author Sean A. Irvine
  */
 public class A060181 extends Sequence1 {

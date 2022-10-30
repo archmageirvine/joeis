@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060184.
+ * A060184 Triangle of generalized sum of divisors function, read by rows.
  * @author Sean A. Irvine
  */
 public class A060184 extends Sequence1 {

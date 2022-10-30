@@ -13,6 +13,10 @@ import irvine.oeis.a000.A000040;
  */
 public class A036262 extends A000040 {
 
+  {
+    setOffset(0);
+  }
+
   private List<Z> mDiagonal = Collections.emptyList();
   private int mN = 0;
 

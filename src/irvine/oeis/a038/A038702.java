@@ -19,9 +19,10 @@ public class A038702 extends A000040 {
 
   /**
    * Generic constructor with parameters
-   * @param expon
+   * @param expon exponent
    */
   public A038702(final int expon) {
+    setOffset(2);
     mExpon = expon;
   }
 

@@ -10,6 +10,9 @@ import irvine.oeis.a000.A000040;
 public class A008347 extends A000040 {
 
   private Z mA = null;
+  {
+    setOffset(0);
+  }
 
   @Override
   public Z next() {

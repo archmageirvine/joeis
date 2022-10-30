@@ -12,6 +12,10 @@ import irvine.util.Permutation;
  */
 public class A052494 extends A000040 {
 
+  {
+    setOffset(2);
+  }
+
   @Override
   public Z next() {
     final String prime = super.next().toString();

@@ -12,6 +12,10 @@ import irvine.util.array.DynamicLongArray;
  */
 public class A037950 extends A000040 {
 
+  {
+    setOffset(0);
+  }
+
   private final DynamicLongArray mSigma = new DynamicLongArray();
 
   private long sigma(final int n) {

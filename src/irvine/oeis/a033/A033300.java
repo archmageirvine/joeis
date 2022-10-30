@@ -9,6 +9,10 @@ import irvine.oeis.a000.A000040;
  */
 public class A033300 extends A000040 {
 
+  {
+    setOffset(0);
+  }
+
   private Z mN = Z.ZERO;
   private Z mSafePrime = Z.ZERO;
 

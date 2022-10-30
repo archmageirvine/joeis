@@ -11,6 +11,7 @@ import irvine.oeis.a060.A060205;
 public class A056852 extends A060205 {
 
   {
+    setOffset(2);
     super.next(); // skip prime(1)=2
   }
 

@@ -25,6 +25,7 @@ public class A060822 extends A000040 {
    * @param lambda lambda expression for the number derived from the prime
    */
   public A060822(final int offset, final BiFunction<Integer, Integer, Z> lambda) {
+    setOffset(offset);
     mN = 0;
     while (mN + 1 < offset) {
       ++mN;

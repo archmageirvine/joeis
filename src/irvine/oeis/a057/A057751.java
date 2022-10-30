@@ -13,6 +13,10 @@ import irvine.oeis.a000.A000040;
  */
 public class A057751 extends A000040 {
 
+  {
+    setOffset(0);
+  }
+
   private final Iterator<Polynomial<Z>> mPolynomialIterator = IrreduciblePolynomials.iterator();
   private Polynomial<Z> mP = mPolynomialIterator.next();
 

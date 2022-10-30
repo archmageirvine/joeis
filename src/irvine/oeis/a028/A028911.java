@@ -12,6 +12,10 @@ import irvine.math.z.Z;
  */
 public class A028911 extends A028906 {
 
+  {
+    setOffset(0);
+  }
+
   private final List<Z> mList = new ArrayList<>();
   private int mLength = 0;
   private int mPos = -1;

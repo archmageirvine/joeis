@@ -10,6 +10,6 @@ public class A059790 extends Combiner {
 
   /** Construct the sequence. */
   public A059790() {
-    super(new A059787(), new A059789(), MIN);
+    super(0, new A059787(), new A059789(), MIN);
   }
 }

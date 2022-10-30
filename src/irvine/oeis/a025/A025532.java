@@ -10,6 +10,10 @@ import irvine.oeis.a001.A001222;
  */
 public class A025532 extends A025528 {
 
+  {
+    setOffset(0);
+  }
+
   private final Sequence mA = new A001222();
 
   @Override

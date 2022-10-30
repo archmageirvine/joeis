@@ -10,6 +10,10 @@ import irvine.oeis.a000.A000040;
  */
 public class A046440 extends A000040 {
 
+  {
+    setOffset(0);
+  }
+
   private boolean is(Z n) {
     Z sum = Z.ZERO;
     while (!n.isZero()) {

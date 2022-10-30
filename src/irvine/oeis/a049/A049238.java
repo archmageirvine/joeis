@@ -10,6 +10,10 @@ import irvine.oeis.a065.A065091;
  */
 public class A049238 extends A065091 {
 
+  {
+    setOffset(2);
+  }
+
   @Override
   public Z next() {
     return Jaguar.factor(super.next().subtract(2)).sigma0();

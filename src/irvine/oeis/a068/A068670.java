@@ -10,11 +10,15 @@ import irvine.oeis.a000.A000040;
  */
 public class A068670 extends A000040 {
 
+  {
+    setOffset(0);
+  }
+
   private long mSum = 0;
 
   @Override
   public Z next() {
-    final Z result = Z.valueOf(mSum); 
+    final Z result = Z.valueOf(mSum);
     mSum += super.next().toString().length();
     return result;
   }

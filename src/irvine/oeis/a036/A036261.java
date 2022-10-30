@@ -6,6 +6,10 @@ package irvine.oeis.a036;
  */
 public class A036261 extends A036262 {
 
+  {
+    setOffset(1);
+  }
+
   @Override
   protected int min() {
     return 1;

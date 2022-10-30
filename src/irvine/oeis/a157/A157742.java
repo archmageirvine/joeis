@@ -10,8 +10,12 @@ import irvine.oeis.a006.A006094;
  */
 public class A157742 extends A006094 {
 
+  {
+    setOffset(0);
+  }
+
   protected int mN;
-  
+
   /** Construct the sequence. */
   public A157742() {
     mN = -1;

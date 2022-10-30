@@ -18,6 +18,7 @@ public class A101264 extends A000040 {
 
   /** Construct the sequence. */
   public A101264() {
+    setOffset(0);
     mN = -1;
     super.next(); // skip the 2
     mExpect = super.next().intValue(); // = 3

@@ -16,6 +16,7 @@ public class A052229 extends A000040 {
   private final MemorySequence mA052180 = MemorySequence.cachedSequence(new A052180()); // offset 2
   private final MemorySequence mPrimePi = MemorySequence.cachedSequence(new A000720()); // offset 1
   {
+    setOffset(3);
     super.next();
     super.next();
   }

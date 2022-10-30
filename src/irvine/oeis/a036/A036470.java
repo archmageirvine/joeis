@@ -11,6 +11,10 @@ import irvine.util.array.LongDynamicBooleanArray;
  */
 public class A036470 extends A000040 {
 
+  {
+    setOffset(0);
+  }
+
   private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
   private long mN = 1;
   private long mCount = 0;

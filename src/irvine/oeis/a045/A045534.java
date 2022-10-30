@@ -9,6 +9,10 @@ import irvine.oeis.a000.A000040;
  */
 public class A045534 extends A000040 {
 
+  {
+    setOffset(0);
+  }
+
   private static final long[] SMALL = {1, 4, 8, 16, 16, 16, 16, 16};
   private int mN = 0;
 

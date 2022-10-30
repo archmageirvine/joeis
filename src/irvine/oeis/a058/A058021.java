@@ -9,6 +9,10 @@ import irvine.oeis.a051.A051451;
  */
 public class A058021 extends A051451 {
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     final Z t = mPrime.prevPrime(super.next());

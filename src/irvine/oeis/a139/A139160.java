@@ -24,6 +24,7 @@ public class A139160 extends A000040 {
    * @param parm the constant
    */
   public A139160(int offset, final int parm) {
+    setOffset(offset);
     while (offset > 1) {
       super.next();
       --offset;

@@ -12,8 +12,6 @@ import irvine.oeis.a000.A000040;
  */
 public class A238693 extends A000040 {
 
-  protected int mPn;
-
   /** Construct the sequence. */
   public A238693() {
     this(3);
@@ -24,8 +22,8 @@ public class A238693 extends A000040 {
    * @param pn number of first prime
    */
   public A238693(final int offset) {
-    mPn = offset;
-    for (int ip = 1; ip < mPn; ++ip) {
+    setOffset(offset);
+    for (int ip = 1; ip < offset; ++ip) {
       super.next();
     }
   }
@@ -34,8 +32,8 @@ public class A238693 extends A000040 {
   public Z next() {
     final int p = super.next().intValue();
     Q sum = Q.ZERO;
-    for (int i = 1; i <= p - 2 * mPn + 1; ++i) {
-      sum = sum.add(new Q(Z.ONE.shiftLeft(i - 1).multiply(Binomial.binomial(i + mPn - 2, mPn - 1)), Z.valueOf(p)));
+    for (int i = 1; i <= p - 2 * getOffset() + 1; ++i) {
+      sum = sum.add(new Q(Z.ONE.shiftLeft(i - 1).multiply(Binomial.binomial(i + getOffset() - 2, getOffset() - 1)), Z.valueOf(p)));
     }
     return sum.num();
   }

@@ -11,6 +11,10 @@ import irvine.oeis.a000.A000720;
  */
 public class A060197 extends Sequence1 {
 
+  {
+    setOffset(0);
+  }
+
   private final MemorySequence mPi = MemorySequence.cachedSequence(new A000720());
   private int mN = 0;
 

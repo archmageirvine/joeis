@@ -10,6 +10,10 @@ import irvine.util.array.LongDynamicArray;
  */
 public class A057775 extends A000040 {
 
+  {
+    setOffset(0);
+  }
+
   private final LongDynamicArray<Z> mLeast = new LongDynamicArray<>();
   private long mN = -1;
 

@@ -10,6 +10,10 @@ import irvine.math.z.Z;
  */
 public class A028912 extends A028906 {
 
+  {
+    setOffset(0);
+  }
+
   private final TreeSet<Z> mSet = new TreeSet<>();
   private int mLength = 0;
   private Z mPrev = super.next();

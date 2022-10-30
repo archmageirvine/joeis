@@ -13,20 +13,21 @@ import irvine.oeis.a000.A000720;
 public class A109555 extends A000040 {
 
   private int mN; // current index
-  private Z mResidue;
+  private final Z mResidue;
   private Z mPrimeN1;
-  private Sequence mSeq;
+  private final Sequence mSeq;
 
   /** Construct the sequence. */
   public A109555() {
-    this(0);
+    this(1, 0);
   }
 
   /**
    * Generic constructor with parameter
    * @param residue desired residue
    */
-  public A109555(final int residue) {
+  public A109555(final int offset, final int residue) {
+    setOffset(offset);
     mN = 0;
     mResidue = Z.valueOf(residue);
     mSeq = new A000720();

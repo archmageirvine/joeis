@@ -9,6 +9,10 @@ import irvine.oeis.a000.A000040;
  */
 public class A047975 extends A000040 {
 
+  {
+    setOffset(0);
+  }
+
   private Z mP = super.next();
 
   protected Z select(final Z gap, final Z p1, final Z p3) {

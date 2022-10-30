@@ -12,6 +12,10 @@ import irvine.util.array.DynamicLongArray;
  */
 public class A037949 extends A000040 {
 
+  {
+    setOffset(0);
+  }
+
 //  private final MemorySequence mSigma = MemorySequence.cachedSequence(new PrependSequence(new A000203(), 0));
 //
 //  private Z tau16(final Z n) {

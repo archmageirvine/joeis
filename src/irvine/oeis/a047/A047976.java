@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A047976 extends A047975 {
 
+  {
+    setOffset(1);
+  }
+
   @Override
   protected Z select(final Z gap, final Z p1, final Z p3) {
     return p1;

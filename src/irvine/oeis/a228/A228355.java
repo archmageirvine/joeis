@@ -16,6 +16,7 @@ public class A228355 extends A000040 {
 
   /** Construct the sequence. */
   public A228355() {
+    setOffset(0);
     mS = "";
     mPos = 0;
   }

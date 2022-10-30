@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A031935 extends A031934 {
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     return super.next().add(16);

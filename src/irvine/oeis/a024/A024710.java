@@ -10,6 +10,7 @@ import irvine.math.z.Z;
 public class A024710 extends A024702 {
 
   {
+    setOffset(4);
     super.next();
   }
 

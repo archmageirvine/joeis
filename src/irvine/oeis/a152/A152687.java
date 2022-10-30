@@ -12,7 +12,7 @@ public class A152687 extends PartialProductSequence {
 
   /** Construct the sequence. */
   public A152687() {
-    super(new A152686());
+    super(1, new A152686());
     next();
   }
 }

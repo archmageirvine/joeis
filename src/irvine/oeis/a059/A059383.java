@@ -10,6 +10,6 @@ public class A059383 extends PartialProductSequence {
 
   /** Construct the sequence. */
   public A059383() {
-    super(new A059377());
+    super(1, new A059377());
   }
 }

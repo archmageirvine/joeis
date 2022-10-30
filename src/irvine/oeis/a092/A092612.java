@@ -12,6 +12,6 @@ public class A092612 extends PartialProductSequence {
 
   /** Construct the sequence. */
   public A092612() {
-    super(new A030432());
+    super(1, new A030432());
   }
 }

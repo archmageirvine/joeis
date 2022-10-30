@@ -14,12 +14,8 @@ public class A152653 extends A000178 {
   
   /** Construct the sequence. */
   public A152653() {
-    super();
-    int bOffset = -1;
-    while (bOffset < mN) {
-      ++bOffset;
-      super.next();
-    }
+    setOffset(1);
+    super.next();
   }
 
   @Override

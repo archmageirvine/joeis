@@ -11,6 +11,9 @@ import irvine.oeis.a000.A000217;
 public class A048644 extends A048641 {
 
   private final Sequence mA = new A000217();
+  {
+    setOffset(0);
+  }
 
   @Override
   public Z next() {

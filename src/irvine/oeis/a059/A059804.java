@@ -13,6 +13,9 @@ public class A059804 extends A024450 {
 
   private static final long[] SMALL = {1, 3, 9, 39, 87, 215, 391, 711, 1326, 1975, 2925, 4256, 5696, 7537, 9774, 12488, 16322};
   private int mN = 0;
+  {
+    setOffset(2);
+  }
 
   @Override
   public Z next() {

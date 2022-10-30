@@ -11,6 +11,7 @@ import irvine.util.string.StringUtils;
 public class A038583 extends A007504 {
 
   {
+    setOffset(1);
     super.next(); // skip 0
   }
 

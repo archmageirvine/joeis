@@ -17,6 +17,7 @@ public class A046285 extends A007504 {
   private final Sequence mLucky = new A000959();
   private final TreeSet<Z> mL = new TreeSet<>();
   {
+    setOffset(1);
     super.next(); // skip 0
     mL.add(mLucky.next());
   }

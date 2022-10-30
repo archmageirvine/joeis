@@ -12,6 +12,6 @@ public class A319087 extends PartialSumSequence {
 
   /** Construct the sequence. */
   public A319087() {
-    super(new A053191());
+    super(1, new A053191());
   }
 }

@@ -9,6 +9,10 @@ import irvine.math.z.Z;
  */
 public class A053789 extends A053790 {
 
+  {
+    setOffset(1);
+  }
+
   @Override
   public Z next() {
     final Z[] t = Jaguar.factor(super.next()).toZArray();

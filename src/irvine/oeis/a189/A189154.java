@@ -17,6 +17,7 @@ public class A189154 extends A008937 {
     mN = 0;
     super.next();
     super.next();
+    setOffset(1);
   }
 
   @Override

@@ -13,7 +13,7 @@ public class A102066 extends PartialSumSequence {
 
   /** Construct the sequence. */
   public A102066() {
-    super(new A000040());
+    super(1, new A000040());
   }
 
   @Override

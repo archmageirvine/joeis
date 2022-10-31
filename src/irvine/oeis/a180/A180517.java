@@ -1,16 +1,14 @@
 package irvine.oeis.a180;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.a000.A000040;
 
 /**
  * A180517 Primes that become a different prime under the mapping 0 &lt;=&gt; 2.
  * @author Georg Fischer
  */
-public class A180517 extends A000040 implements SequenceWithOffset {
+public class A180517 extends A000040 {
 
-  private final int mOffset;
   private final char mDigit1;
   private final char mDigit2;
   private final StringBuilder mSB = new StringBuilder(32);
@@ -27,14 +25,9 @@ public class A180517 extends A000040 implements SequenceWithOffset {
    * @param digit2 replace this with <code>digit1</code>
    */
   public A180517(final int offset, final int digit1, final int digit2) {
-    mOffset = offset;
+    setOffset(offset);
     mDigit1 = Character.forDigit(digit1, 10);
     mDigit2 = Character.forDigit(digit2, 10);
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

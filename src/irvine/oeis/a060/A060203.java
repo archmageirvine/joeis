@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002476;
 
 /**
- * A060203.
+ * A060203 Least cube root of unity mod p, greater than 1, where p is the n-th prime congruent to 1 mod 3.
  * @author Sean A. Irvine
  */
 public class A060203 extends Sequence1 {

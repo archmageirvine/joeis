@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000330;
 
 /**
- * A060204.
+ * A060204 Square pyramorphic numbers: suppose the k-th square pyramidal number S(k) (A000330) ends in k; sequence gives value of S(k).
  * @author Sean A. Irvine
  */
 public class A060204 extends A000330 {

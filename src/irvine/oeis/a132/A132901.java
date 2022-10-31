@@ -1,18 +1,16 @@
 package irvine.oeis.a132;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.a000.A000040;
 
 /**
  * A132901 Numbers formed by concatenating 11 consecutive prime numbers.
  * @author Georg Fischer
  */
-public class A132901 extends A000040 implements SequenceWithOffset {
+public class A132901 extends A000040 {
 
   private int mN;
   private final int mCount;
-  protected int mOffset;
   private int[] mLengths; // ring buffer
   private final StringBuilder mSb = new StringBuilder();
 
@@ -27,14 +25,9 @@ public class A132901 extends A000040 implements SequenceWithOffset {
    * @param count number of primes to be concatenated
    */
   public A132901(final int offset, final int count) {
-    mOffset = offset;
+    setOffset(offset);
     mN = -1; // != offset, -> mN mod count = index in ring buffer mLengths
     mCount = count;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

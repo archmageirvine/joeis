@@ -9,10 +9,6 @@ import irvine.oeis.a202.A202342;
  */
 public class A020942 extends A202342 {
 
-  {
-    setOffset(1);
-  }
-
   // Conjecture
 
   private long mN = -1;

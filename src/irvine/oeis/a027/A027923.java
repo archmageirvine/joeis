@@ -16,6 +16,7 @@ public class A027923 extends A000330 {
   private long mK = -1;
 
   {
+    setOffset(1);
     super.next();
   }
 

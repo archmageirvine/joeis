@@ -10,7 +10,7 @@ import irvine.oeis.a160.A160700;
  */
 public class A161440 extends A160700 {
     
-  private Z mParm;
+  private final Z mParm;
   protected int mK;
   
   /** Construct the sequence. */

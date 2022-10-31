@@ -14,6 +14,7 @@ public class A059774 extends A000330 {
   private static final long[] SMALL = {1, 3, 9, 21, 40, 75, 120, 189};
   private int mN = 0;
   {
+    setOffset(2);
     super.next();
   }
 

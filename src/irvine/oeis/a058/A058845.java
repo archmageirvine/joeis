@@ -12,7 +12,6 @@ public class A058845 extends A071148 {
 
   private long mN = 0;
   {
-    setOffset(1);
   }
 
   @Override

@@ -10,7 +10,6 @@ public class A048449 extends A048448 {
 
   private Z mB = Z.ZERO;
   {
-    setOffset(0);
     super.next();
   }
   private Z mC = super.next();

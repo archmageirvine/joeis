@@ -24,7 +24,8 @@ public class MetaProducer implements Producer {
       new ReaderProducer(),
       new JavaProducer(),
       new PariProducer(),
-      new GapProducer()
+      new GapProducer(),
+      new PseudoProducer()
     );
   }
 
@@ -52,6 +53,11 @@ public class MetaProducer implements Producer {
         case "pari":
         case "gp":
           prods[++k] = new PariProducer();
+          break;
+        case "oeis":
+        case "pseudo":
+        case "ps":
+          prods[++k] = new PseudoProducer();
           break;
         default:
           throw new RuntimeException("Unknown producer type: \"" + s + "\"");

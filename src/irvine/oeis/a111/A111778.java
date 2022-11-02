@@ -1,6 +1,5 @@
 package irvine.oeis.a111;
 
-import irvine.math.z.Z;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**

@@ -42,10 +42,6 @@ public class CliFlagsTest extends TestCase {
 
   private static final String LS = System.lineSeparator();
 
-  public void testNoExitNow() {
-    assertFalse(CliFlags.EXIT_OK);
-  }
-
   public void testRemaining() {
     mFlags.registerRequired("boolean", Boolean.class, "", "");
     assertTrue(!mFlags.setFlags(new String[] {
@@ -364,6 +360,10 @@ public class CliFlagsTest extends TestCase {
     @Override
     public void handleInvalidFlags(final CliFlags f) {
       throw new ArithmeticException();
+    }
+
+    @Override
+    public void setExitOk(final boolean exitOk) {
     }
   }
 

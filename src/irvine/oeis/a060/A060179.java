@@ -23,7 +23,7 @@ public class A060179 extends Sequence0 {
   private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
 
     @Override
-    protected Z compute(int n, final int i) {
+    protected Z compute(final int n, final int i) {
       if (i * n == 0) {
         return Z.ONE;
       }

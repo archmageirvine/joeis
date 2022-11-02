@@ -17,7 +17,7 @@ public class A060192 extends Sequence0 {
   @Override
   public Z next() {
     if (mP == 2) {
-      mP =3;
+      mP = 3;
     } else {
       mStep = 4 - mStep;
       for (int k = 0; k < mStep; ++k) {

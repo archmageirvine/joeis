@@ -101,6 +101,12 @@ public final class CliFlags {
      * @param flags a <code>CliFlags</code>.
      */
     void handleInvalidFlags(final CliFlags flags);
+
+    /**
+     * Set whether the flag handler is allowed to call <code>System.exit()</code>.
+     * @param exitOk true iff <code>System.exit()</code> may be called/
+     */
+    void setExitOk(final boolean exitOk);
   }
 
   private static class FlagCountException extends IllegalArgumentException {
@@ -735,49 +741,55 @@ public final class CliFlags {
 
 
 
-  /**
-   * True if the default InvalidFlagHandler is permitted to call
-   * System.exit. This will be set to false if this class is loaded as
-   * part of JUnit tests. (To prevent any tests of main from exiting the tests).
-   */
-  public static final boolean EXIT_OK;
-  static {
-    boolean exitOk = true;
-    for (StackTraceElement[] trace : Thread.getAllStackTraces().values()) {
-      for (int i = 0; i < trace.length && exitOk; ++i) {
-        if (trace[i].getClassName().startsWith("junit")) {
-          exitOk = false;
-          break;
-        }
-      }
-    }
-    EXIT_OK = exitOk;
-  }
-
   /** The default invalid flag handler. */
   public static final InvalidFlagHandler DEFAULT_INVALID_FLAG_HANDLER = new InvalidFlagHandler() {
-      @Override
-      public void handleInvalidFlags(final CliFlags flags) {
-        final int errorCode;
-        if (flags.isSet(HELP_FLAG)) {
-          flags.printUsage();
-          errorCode = 0;
-        } else {
-          final WrappingStringBuffer wb = new WrappingStringBuffer();
-          wb.setWrapWidth(DEFAULT_WIDTH);
-          flags.appendUsageHeader(wb);
-          flags.appendParseMessage(wb);
-          wb.append(LS + "Try '" + LONG_FLAG_PREFIX + HELP_FLAG + "' for more information");
-          System.err.println(wb.toString());
-          errorCode = 1;
-        }
-        if (!EXIT_OK) {
-          throw new IllegalArgumentException("Exit with: " + errorCode);
-        }
-        System.exit(errorCode);
-      }
-    };
 
+    /**
+     * True if the default InvalidFlagHandler is permitted to call
+     * System.exit. This will be set to false if this class is loaded as
+     * part of JUnit tests. (To prevent any tests of main from exiting the tests).
+     */
+    private boolean mExitOk;
+    {
+      // Note subsequent calls to setExitOk() can override this determination
+      boolean exitOk = true;
+      for (StackTraceElement[] trace : Thread.getAllStackTraces().values()) {
+        for (int i = 0; i < trace.length && exitOk; ++i) {
+          if (trace[i].getClassName().startsWith("junit")) {
+            exitOk = false;
+            break;
+          }
+        }
+      }
+      mExitOk = exitOk;
+    }
+
+    @Override
+    public void handleInvalidFlags(final CliFlags flags) {
+      final int errorCode;
+      if (flags.isSet(HELP_FLAG)) {
+        flags.printUsage();
+        errorCode = 0;
+      } else {
+        final WrappingStringBuffer wb = new WrappingStringBuffer();
+        wb.setWrapWidth(DEFAULT_WIDTH);
+        flags.appendUsageHeader(wb);
+        flags.appendParseMessage(wb);
+        wb.append(LS + "Try '" + LONG_FLAG_PREFIX + HELP_FLAG + "' for more information");
+        System.err.println(wb);
+        errorCode = 1;
+      }
+      if (!mExitOk) {
+        throw new IllegalArgumentException("Exit with: " + errorCode);
+      }
+      System.exit(errorCode);
+    }
+
+    @Override
+    public void setExitOk(final boolean exitOk) {
+      mExitOk = exitOk;
+    }
+  };
 
   private static final String SHORT_FLAG_PREFIX = "-";
 

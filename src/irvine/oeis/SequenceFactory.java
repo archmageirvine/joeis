@@ -399,9 +399,12 @@ public final class SequenceFactory {
   /**
    * Generate terms from specified sequence, writing one term per line.
    * @param args sequence identifier
+   * @param out stream where to write the output
+   * @param exitOk whether the flag validator may call <code>System.exit()</code>
    * @throws IOException if an I/O error occurs.
    */
-  public static void main(final String[] args) throws IOException {
+  public static void process(final String[] args, final OutputStream out, final boolean exitOk) throws IOException {
+    CliFlags.DEFAULT_INVALID_FLAG_HANDLER.setExitOk(exitOk);
     final CliFlags flags = new CliFlags("SequenceFactory", "Generate terms for an OEIS sequence.");
     flags.registerOptional('B', B_FILE, "Output in b-file format");
     flags.registerOptional('D', DATA, "Output in a format suitable for pasting into a DATA line");
@@ -429,9 +432,7 @@ public final class SequenceFactory {
     final String seqId = getCanonicalId(flags.getAnonymousValue(0).toString());
     boolean generated = false;
     final long numberOfTerms = getEffectiveMax(flags, TERMS);
-    // We use our own version of output stream here, so that we can better detect closed pipes
-    // Does what it can to ensure terms are flushed to output as soon as possible
-    try (final OutputStream out = new BufferedOutputStream(new FileOutputStream(FileDescriptor.out))) {
+    try {
       final Sequence seq = sequence(seqId);
       final int offset = getOffset(flags, seq);
       try {
@@ -514,4 +515,16 @@ public final class SequenceFactory {
     }
   }
 
+  /**
+   * Generate terms from specified sequence, writing one term per line.
+   * @param args sequence identifier
+   * @throws IOException if an I/O error occurs.
+   */
+  public static void main(final String[] args) throws IOException {
+    // We use our own version of output stream here, so that we can better detect closed pipes
+    // Does what it can to ensure terms are flushed to output as soon as possible
+    try (final OutputStream out = new BufferedOutputStream(new FileOutputStream(FileDescriptor.out))) {
+      process(args, out, true);
+    }
+  }
 }

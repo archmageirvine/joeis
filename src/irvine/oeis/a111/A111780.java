@@ -4,14 +4,14 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A111602 Third column (m=2) of unsigned triangle A111595.
+ * A111780 Seventh column (m=6) of unsigned triangle A111595.
  * @author Georg Fischer
  */
-public class A111602 extends HolonomicRecurrence {
+public class A111780 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
-  public A111602() {
-    super(2, "[[0],[-1, 1],[2],[2,-1]]", "1", 0);
+  public A111780() {
+    super(6, "[[0],[-1, 1],[6],[6,-1]]", "1", 0);
     setGfType(1);
   }
 }

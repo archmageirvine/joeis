@@ -10,6 +10,10 @@ import irvine.util.string.StringUtils;
  */
 public class A055391 extends A000032 {
 
+  {
+    setOffset(1);
+  }
+
   @Override
   public Z next() {
     while (true) {

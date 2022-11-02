@@ -10,6 +10,7 @@ import irvine.oeis.a000.A000032;
 public class A039647 extends A000032 {
 
   {
+    setOffset(1);
     super.next();
   }
   private Z mF = Z.ONE;

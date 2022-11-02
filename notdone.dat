@@ -2063,3 +2063,6 @@ A060149 Number of homogeneous generators of degree n for graded algebra associat
 A060159 Initial term of a series of exactly n consecutive Harshad or Niven numbers (a Harshad number is such that is divided by the sum of its digits).
 A060174 Dimensions of graded algebra associated with forest meanders
 A060198 Dimensions of graded algebra associated with forest meanders
+A060241 Triangle T(n,k) in which n-th row gives degrees of irreducible representations of alternating group A_n
+A060246 Triangle whose rows are the degrees of the irreducible representations of the groups PSL(2,p) as p runs through the primes.
+A060247 Triangle whose rows are the degrees of the irreducible representations of the groups PSL(2,q) as q runs through the primes and prime powers.

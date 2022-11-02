@@ -14,6 +14,7 @@ public class A014243 extends A000032 {
   private final Sequence mNotLucas = new A090946();
 
   {
+    setOffset(1);
     next();
     next();
   }

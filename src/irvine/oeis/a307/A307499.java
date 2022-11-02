@@ -11,6 +11,7 @@ public class A307499 extends A000032 {
 
   private Z mP = null;
   {
+    setOffset(1);
     while (mP == null) {
       final Z t = super.next();
       if (t.isProbablePrime()) {

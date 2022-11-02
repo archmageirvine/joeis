@@ -15,6 +15,7 @@ public class A272318 extends A000032 {
   /** Construct the sequence. */
   public A272318() {
     mN = 0;
+    setOffset(1);
     super.next(); // skip a(0)
   }
 

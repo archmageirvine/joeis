@@ -20,6 +20,9 @@ public class A328815 extends A000032 {
   private int mBest = Integer.MAX_VALUE;
   private int[] mA = null;
   private int[] mB = null;
+  {
+    setOffset(1);
+  }
 
   private boolean isSumsPrime(final int[] t, final int s, final int u) {
     for (int k = 0; k < s; ++k) {

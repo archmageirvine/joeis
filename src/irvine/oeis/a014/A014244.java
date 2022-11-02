@@ -15,6 +15,7 @@ public class A014244 extends A000032 {
   private final Sequence mNotLucas = new ComplementSequence(new SkipSequence(new A000032(), 2), Z.ONE);
 
   {
+    setOffset(1);
     super.next();
     super.next();
   }

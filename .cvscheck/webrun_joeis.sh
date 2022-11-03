@@ -40,7 +40,7 @@ export LINKAGE_OPTS="--alltests"
 export FINDBUGS_OPTS="-pluginList ${HOME}/java_apps/spotbugs-3.1.0-RC5/lib/fb-contrib-7.0.5.sb.jar"
 
 # 'sh-peepingdave.sh' removed 2020-11-13
-COLUMN_SEQUENCE=('cleancodedirs' 'compilemodules' 'localtests')
+COLUMN_SEQUENCE=('cleancodedirs' 'compilemodules' 'localtests' 'sh-report.sh')
 export COLUMN_SEQUENCE
 
 if [ "$1" ]; then

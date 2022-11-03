@@ -2,11 +2,10 @@ package irvine.oeis.prime;
 
 import irvine.oeis.FilterSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.Subsequence;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A {@link Subsequence} consisting of the primes in the underlying sequence.
+ * A sequence consisting of the primes in the underlying sequence.
  * @author Georg Fischer
  */
 public class PrimeSubsequence extends FilterSequence {

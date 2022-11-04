@@ -5,6 +5,7 @@
   <property name="test.dir" value="test"/>
   <property name="internal.dir" value="internal"/>
   <property name="build.dir" value="build.tmp"/>
+  <property name="doc.dir" value="build.tmp/docs"/>
   <property name="lib.dir" value="lib"/>
   <property name="tools.dir" value="tools"/>
 
@@ -235,6 +236,10 @@
       <arg file="${src.dir}"/>
       <arg file="${test.dir}"/>
     </java>
+  </target>
+  
+  <target name="javadoc" description="generate documentation">
+    <javadoc sourcepath="${src.dir}" excludepackagenames="irvine.oeis.a[0-9][0-9][0-9].*" destdir="${doc.dir}"/>
   </target>
 
 </project>

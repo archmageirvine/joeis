@@ -7,13 +7,13 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 
 /**
- * A287878.
+ * A sequence arising in the concatenation of the prime factors of a number.
  * @author Sean A. Irvine
  */
 public class AlonsoSequence implements Sequence {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private HashSet<Z> mSeen = new HashSet<>();
+  private final HashSet<Z> mSeen = new HashSet<>();
   private Z mA = null;
   private final Z mStart;
   private final int mBase;

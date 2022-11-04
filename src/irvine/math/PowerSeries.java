@@ -12,13 +12,12 @@ import irvine.math.z.Z;
  * An object class for doing simple operations on power
  * series (actually Laurent series: index is the valuation).
  * Derived from <code>moonshine.py</code> of
- * David A. Madore <david.madore@ens.fr> - 2007-07-31 - Public Domain
+ * David A. Madore <code>david.madore@ens.fr</code> - 2007-07-31 - Public Domain
  * Cf. <a href="https://web.archive.org/web/20130925003421/http://mathforum.org/kb/thread.jspa?forumID=253&threadID=1602206&messageID=5836094">math forum</a>
  * @author Georg Fischer
  */
 public class PowerSeries extends ArrayList<Z> {
   private int mIndex;
-  //private static int sDebug = 0;
 
   /**
    * Empty constructor.

@@ -17,7 +17,7 @@ public class PseudoProducer implements Producer {
       return new PseudoSequence(aNumber);
     } catch (final RuntimeException exc) {
       if (mVerbose) {
-        String env = System.getenv("BFPATH");
+        final String env = System.getenv("BFPATH");
         System.err.println("PseudoProducer: BFPATH=" + env + ", A-number=" + aNumber + " could not be read: " + exc.getMessage());
         exc.printStackTrace();
       }

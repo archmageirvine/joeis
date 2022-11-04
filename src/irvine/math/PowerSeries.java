@@ -13,7 +13,7 @@ import irvine.math.z.Z;
  * series (actually Laurent series: index is the valuation).
  * Derived from <code>moonshine.py</code> of
  * David A. Madore <code>david.madore@ens.fr</code> - 2007-07-31 - Public Domain
- * Cf. <a href="https://web.archive.org/web/20130925003421/http://mathforum.org/kb/thread.jspa?forumID=253&threadID=1602206&messageID=5836094">math forum</a>
+ * Cf. <a href="https://web.archive.org/web/20130925003421/http://mathforum.org/kb/thread.jspa?forumID=253&amp;threadID=1602206&amp;messageID=5836094">math forum</a>
  * @author Georg Fischer
  */
 public class PowerSeries extends ArrayList<Z> {
@@ -131,7 +131,7 @@ public class PowerSeries extends ArrayList<Z> {
   /**
    * Return a given coefficient
    * @param k index (exponent) of the coefficient in the series
-   * @return coefficient of exponent <code>k<</code>
+   * @return coefficient of exponent <code>k</code>
    */
   public Z getCoeff(final int k) {
     Z result = Z.ZERO;

@@ -24,8 +24,7 @@ public class A015889 extends Sequence1 {
 
   /**
    * Constructor with parameters
-   *
-   * @param exp exponent
+   * @param list terms
    */
   public A015889(final int... list) {
     mConst = Z.valueOf(list[0]);
@@ -39,29 +38,9 @@ public class A015889 extends Sequence1 {
     mK = Z.ZERO;
   }
 
-//  public Z next2() {
-//    while (true) {
-//      mK = mK.add(1);
-//      Z sum = mConst;
-//      for (int i = 0; i < mLen; ++i) {
-//        mPows[i] = mPows[i].multiply(mList[i]);
-//        sum = sum.add(mPows[i]);
-//      }
-//      if (sum.mod(mK).isZero()) {
-//        return mK;
-//      }
-//    }
-//  }
-
   @Override
   public Z next() {
     while (true) {
-/*
-      mN = mN.add(1);
-      if (Z.TEN.modPow(mN, mN).add(Z.NINE.modPow(mN, mN)).mod(mN).isZero()) {
-        return mN;
-      }
-*/
       mK = mK.add(1);
       Z sum = mConst;
       for (int i = 0; i < mLen; ++i) {

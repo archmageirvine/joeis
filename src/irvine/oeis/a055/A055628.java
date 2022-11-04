@@ -23,7 +23,7 @@ public class A055628 extends Sequence1 {
 
   /**
    * Generic constructor with parameters
-   * @param den divisor
+   * @param div divisor
    */
   public A055628(final int div) {
     mDiv = Z.valueOf(div);

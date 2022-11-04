@@ -24,14 +24,6 @@ public class A035679 extends A035536 {
     super(offset, kMod, mult, modules);
   }
 
-  /**
-   * Recursively evaluate all partitions and accumulate information for the condition
-   * @param n number to be partitioned
-   * @param i nesting level
-   * @param t first accumulator
-   * @param s second accumulator
-   * @return number of partitions of n with this condition
-   */
   @Override
   protected Z compute(final int n, final int i, final int[] cn) {
     Z result;
@@ -44,9 +36,10 @@ public class A035679 extends A035536 {
         result = get(n, i - 1, cn);
         final int h = i % mKMod;
         boolean relevant = false;
-        for (int ic = 0; ! relevant && ic < mLen; ++ic) {
+        for (int ic = 0; ic < mLen; ++ic) {
           if (h == mModules[ic]) {
             relevant = true;
+            break;
           }
         }
         if (relevant) {

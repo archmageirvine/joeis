@@ -16,7 +16,6 @@ public class A161051 extends A161026 {
    * Generic constructor with parameters.
    * @param offset first index
    * @param appears how often every part appears
-   * @param parm2 second parameter of recursive function
    */
   public A161051(final int offset, final int appears) {
     super(offset, appears, 0, n -> 1 << n);

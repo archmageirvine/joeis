@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 
 /**
  * A sequence comprising the inverse Weigh transform of another sequence.
- * From <code>weighouti</code> in the OEIS {@link https://oeis.org/transforms.txt Maple transforms} collection.
+ * From <code>weighouti</code> in the OEIS <a href="https://oeis.org/transforms.txt">Maple transforms</a> collection.
  * @author Georg Fischer
  */
 public class InverseWeighTransform implements Sequence {

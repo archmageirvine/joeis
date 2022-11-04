@@ -60,12 +60,7 @@ public class A079922 extends Sequence1 {
     return (m & 1) == 0 ? sum : -sum;
   }
 
-  /**
-   * Compute the function f 
-   * @param g first parameter
-   * @param h second parameter
-   */
-  /*  
+  /*
         cf. http://www.jaapspies.nl/oeis/ds.sage
         m = g
         n = m + h

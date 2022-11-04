@@ -18,11 +18,10 @@ public class A145502 extends Sequence1 {
 
   /**
    * Generic constructor with parameters
-   * @param parm
+   * @param start start position
    */
   public A145502(final int start) {
     mA = Z.valueOf(start);
-    ;
   }
 
   @Override

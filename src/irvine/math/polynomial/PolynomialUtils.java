@@ -276,10 +276,9 @@ public final class PolynomialUtils {
    * Perform a shift of the inner variable of a bivariate polynomial.
    * @param ring ring for outer polynomial
    * @param t polynomial
-   * @param power power to substitute
-   * @param n degree limit
+   * @param shift amount to shift
    * @param <T> type of element
-   * @return substituted polynomial
+   * @return shifted polynomial
    */
   public static <T> Polynomial<Polynomial<T>> innerShift(final PolynomialRing<Polynomial<T>> ring, final Polynomial<Polynomial<T>> t, final int shift) {
     final Polynomial<Polynomial<T>> subs = ring.empty();

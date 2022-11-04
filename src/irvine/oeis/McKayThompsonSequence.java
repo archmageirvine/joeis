@@ -11,8 +11,8 @@ import irvine.math.z.Z;
 /**
  * McKay-Thompson series for the monster group.
  * Derived from <code>moonshine.py</code> of
- * David A. Madore <david.madore@ens.fr> - 2007-07-31 - Public Domain
- * Cf. <a href="https://web.archive.org/web/20130925003421/http://mathforum.org/kb/thread.jspa?forumID=253&threadID=1602206&messageID=5836094">math forum</a>
+ * David A. Madore <code>david.madore@ens.fr</code> - 2007-07-31 - Public Domain
+ * Cf. <a href="https://web.archive.org/web/20130925003421/http://mathforum.org/kb/thread.jspa?forumID=253&amp;threadID=1602206&amp;messageID=5836094">math forum</a>
  * @author Georg Fischer
  * <br>
  * The Python program computes the coefficients of the Moonshine

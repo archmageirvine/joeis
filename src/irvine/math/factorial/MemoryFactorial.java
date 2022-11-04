@@ -32,7 +32,7 @@ public final class MemoryFactorial extends MemoryFunction2<Integer, Z> implement
    * @param n a non-negative integer
    * @return <code>n</code>!
    * @exception IllegalArgumentException if <code>n</code> &lt; 0.
-   * @exception ArithmeticException if <code>n<</code> is too large for this implementation.
+   * @exception ArithmeticException if <code>n</code> is too large for this implementation.
    */
   public Z factorial(final Z n) {
     return MF.factorial(n.intValueExact());

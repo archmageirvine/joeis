@@ -20,7 +20,7 @@ public class A090171 extends Triangle {
   /**
    * Generic constructor with parameters
    * @param inits initial terms
-   * @param modulo whether to take a modulus at the end
+   * @param modulus whether to take a modulus at the end
    */
   protected A090171(final String inits, final int modulus) {
     super(inits);

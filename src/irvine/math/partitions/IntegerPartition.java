@@ -230,7 +230,7 @@ public final class IntegerPartition {
   /**
    * Concatenates two sorted small vectors, preserving order.
    * Used exclusively for combining two partitions.
-   * For example: <code>merge([4,1,1], [6,3]) => [6,4,3,1,1]</code>.
+   * For example: <code>merge([4,1,1], [6,3]) =&gt; [6,4,3,1,1]</code>.
    * @param p1 first partition
    * @param p2 second partition
    * @return merged partition

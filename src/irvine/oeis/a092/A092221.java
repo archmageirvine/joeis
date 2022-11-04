@@ -21,7 +21,7 @@ public class A092221 extends Sequence1 {
 
   /**
    * Generic constructor with parameters
-   * @param base
+   * @param div base
    */
   public A092221(final int div) {
     mDiv = div;

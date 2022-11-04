@@ -7,7 +7,7 @@ import irvine.oeis.transform.GeneralizedEulerTransform;
 
 /**
  * A341153 Number of partitions of 2*n into exactly n squarefree parts.
- * G.f.: <code>Product_{k>=1} 1 / (1 - mu(k+1)^2 * x^k)</code>.
+ * G.f.: <code>Product_{k&gt;=1} 1 / (1 - mu(k+1)^2 * x^k)</code>.
  * @author Georg Fischer
  */
 public class A341153 extends GeneralizedEulerTransform {

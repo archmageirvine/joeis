@@ -18,7 +18,6 @@ public class A161240 extends A161026 {
    * Generic constructor with parameters.
    * @param offset first index
    * @param appears how often every part appears
-   * @param parm2 second parameter of recursive function
    */
   public A161240(final int offset, final int appears) {
     super(offset, appears, 1, n -> Binomial.binomial(n, n / 2).intValue());

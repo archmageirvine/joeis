@@ -19,7 +19,7 @@ public class A238693 extends A000040 {
 
   /**
    * Generic constructor with parameters
-   * @param pn number of first prime
+   * @param offset sequence offset
    */
   public A238693(final int offset) {
     setOffset(offset);

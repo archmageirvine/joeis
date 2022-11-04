@@ -29,7 +29,6 @@ public class FoldedContinuedFraction extends ArrayList<Z> implements SequenceWit
    * Construct the sequence for a Liouville constant.
    * @param offset first index
    * @param m Liouville's constant base number (see section III of the paper)
-   * @param inits initial terms
    */
   public FoldedContinuedFraction(final int offset, final int m) {
     this(offset, k -> Z.valueOf(m).pow(MemoryFactorial.SINGLETON.factorial(k + 1).multiply(k)), 0, m - 1, m + 1);

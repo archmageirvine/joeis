@@ -18,7 +18,6 @@ public class OrdersFiniteGroupSequence<T> implements Sequence {
   /**
    * Construct the sequence.
    * @param group the group to get counts for
-   * @param <T> the type of the group
    */
   public OrdersFiniteGroupSequence(final Group<T> group) {
     mGroup = group;

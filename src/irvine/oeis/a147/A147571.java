@@ -9,7 +9,6 @@ import irvine.oeis.a051.A051037;
  */
 public class A147571 extends A051037 {
 
-  private int mN;
   private Z mProd;
 
   /** Construct the sequence. */
@@ -19,14 +18,13 @@ public class A147571 extends A051037 {
 
   /**
    * Generic constructor with parameters
-   * @param prod
+   * @param list divisor list
    */
   public A147571(final int[] list) {
     super(list);
-    mN = 0;
     mProd = Z.ONE;
-    for (int i = 0; i < list.length; ++i) {
-      mProd = mProd.multiply(list[i]);
+    for (final int j : list) {
+      mProd = mProd.multiply(j);
     }
   }
 

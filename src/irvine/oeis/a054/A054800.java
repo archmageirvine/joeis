@@ -9,8 +9,8 @@ import irvine.oeis.prime.ConsecutiveSequence;
  */
 public class A054800 extends ConsecutiveSequence {
 
-  protected int mCompSig; // signature, comparision operator: -1 for weak, 0 for balanced, 1 for strong
-  protected int mCompLen; // number of comparisions
+  protected int mCompSig; // signature, comparison operator: -1 for weak, 0 for balanced, 1 for strong
+  protected int mCompLen; // number of comparisons
 
   /** Construct the sequence. */
   public A054800() {
@@ -20,8 +20,8 @@ public class A054800 extends ConsecutiveSequence {
   /**
    * Generic constructor with parameters
    * @param termNo which term is selected: 1st, 2nd ...
-   * @param comp: 0 = balanced, 1 &gt; strong, -1 &lt; weak
-   * @param tuple: 4 quartet, 5 quintet ...
+   * @param compSig 0 = balanced, 1 &gt; strong, -1 &lt; weak
+   * @param tuple 4 quartet, 5 quintet, ...
    */
   public A054800(final int termNo, final int compSig, final int tuple) {
     super(termNo);

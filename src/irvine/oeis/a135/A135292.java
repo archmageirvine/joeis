@@ -23,7 +23,7 @@ public class A135292 extends Sequence0 {
   /**
    * Generic constructor with parameters
    * @param baseA first number to be exponentiated
-   * @param baseb second number to be exponentiated
+   * @param baseB second number to be exponentiated
    */
   public A135292(final int baseA, final int baseB) {
     mBaseA = baseA;

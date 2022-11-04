@@ -7,7 +7,7 @@ import irvine.oeis.SequenceWithOffset;
 
 /**
  * Generate the rows of a triangle T(n,k).
- * In contrast to {@link #Triangle}, this class handles offsets, row and column shifts.
+ * In contrast to {@link Triangle}, this class handles offsets, row and column shifts.
  * @author Georg Fischer
  */
 public abstract class BaseTriangle extends Triangle implements SequenceWithOffset {

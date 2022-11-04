@@ -18,7 +18,7 @@ public class A219162 extends Sequence0 {
 
   /**
    * Generic constructor with parameters
-   * @param parm
+   * @param start start position
    */
   public A219162(final int start) {
     mA = Z.valueOf(start);

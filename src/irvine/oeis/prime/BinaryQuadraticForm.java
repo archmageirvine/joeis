@@ -10,7 +10,7 @@ import irvine.util.Pair;
 
 /**
  * A sequence of nonnegative numbers represented by a binary quadratic form <code>a*x^2 + b*x*y + c*y^2</code>.
- * <code>x</code> and <code>y</code> may be &gt=; 0 or any integer, and the numbers may be primes only.
+ * <code>x</code> and <code>y</code> may be &gt;= 0 or any integer, and the numbers may be primes only.
  *
  * The algorithm operates on a matrix with rows for <code>-max &lt;= x &lt;= max</code> and columns for <code>0 &lt;= y &lt;= max</code>.
  * The matrix elements to be investigated are stored in a {@link TreeMap}.

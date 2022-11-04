@@ -29,7 +29,7 @@ public class A047161 implements Sequence {
    * @param num numerator of fraction
    * @param den denominator of fraction
    * @param add additional term a for n
-   * @param divisor of (n+a)
+   * @param div divisor of (n+a)
    */
   public A047161(final int offset, final int num, final int den, final int add, final int div) {
     mN = offset - 1;

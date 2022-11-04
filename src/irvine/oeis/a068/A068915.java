@@ -42,8 +42,6 @@ public class A068915 extends MemorySequence {
 
   /**
    * Circumvent the restriction that <code>a(n)</code> cannot be used in the constructor.
-   * @param funcf lambda expression for false modulus condition
-   * @param funct lambda expression for true modulus condition
    */
   protected void initialize() {
     mFuncF = n -> a((n - 1) / 2).add(super.a((n - 1) / 2 + 1));

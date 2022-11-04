@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 
 /**
  * A055070 Third column of triangle A055864.
- * <code>a(1)=0= a(2); a(n)= n^2*(n+1)^(n-3), n >= 3</code>.
+ * <code>a(1)=0= a(2); a(n)= n^2*(n+1)^(n-3), n &gt;= 3</code>.
  * @author Georg Fischer
  */
 public class A055070 extends Sequence1 {

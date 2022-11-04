@@ -25,8 +25,7 @@ public class A045509 extends Sequence1 {
 
   /**
    * Generic constructor for similar sequences.
-   * @param seq underlying sequence for palindrome generation
-   * @param radix number system base
+   * @param dig1 digit
    */
   public A045509(final int dig1) {
     mDig1 = Z.valueOf(dig1);

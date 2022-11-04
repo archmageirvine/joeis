@@ -8,8 +8,8 @@ import irvine.oeis.Sequence;
 /**
  * A018195 Possible numbers of complements of topologies on 4 points.
  * The following table shows the terms.
+ * <a href="http://dx.doi.org/10.1016/0012-365X(95)00004-G">Topologies</a>
  * <pre>
- * # <http://dx.doi.org/10.1016/0012-365X(95)00004-G>
  * # Corollary 3.9. The possible numbers of complements of topologies on n points are
  * m   =1  m-1 ^2
  * 4   1   3   4   7       12      14      15      16      |   2^2     3*4?    2*7?            2^3-1   2^4

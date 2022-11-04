@@ -23,8 +23,8 @@ public class A037408 extends Sequence1 {
   
   /**
    * Constructor with parameters
-   * @param base modulo base
-   * @param incr additive term
+   * @param base1 first base
+   * @param base2 second base
    */
   protected A037408(final int base1, final int base2) {
     assert base1 < base2;

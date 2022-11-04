@@ -11,7 +11,7 @@ public class Negate extends AbstractPAdic {
 
   /**
    * Negation.
-   * @param number.
+   * @param n number to negate.
    */
   public Negate(final PAdic n) {
     mA = n;

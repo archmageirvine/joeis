@@ -256,7 +256,7 @@ public final class StringUtils {
 
   /**
    * Test if the supplied string is cube free.
-   * @param s string to test
+   * @param v string to test
    * @return true iff string is cube free
    */
   public static boolean isCubeFreeWord(final String v) {

@@ -7,7 +7,7 @@ import irvine.oeis.triangle.RationalTriangle;
 
 /**
  * A273169 Numerators of coefficient triangle for integrated even powers of cos(x) in terms of x and sin(2*m*x).
- * R(n , 0) = (1/2^(2*n))*(binomial(2*n,n) and R(n, m) = (1/2^(2*n))*binomial(2*n, n-m)/m for m = 1, ..., n, n &gt= 0
+ * R(n , 0) = (1/2^(2*n))*(binomial(2*n,n) and R(n, m) = (1/2^(2*n))*binomial(2*n, n-m)/m for m = 1, ..., n, n &gt;= 0
  * @author Georg Fischer
  */
 public class A273169 extends RationalTriangle {

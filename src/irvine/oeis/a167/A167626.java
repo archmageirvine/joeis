@@ -20,8 +20,7 @@ public class A167626 extends Sequence1 {
 
   /**
    * Generic constructor with parameters
-   * @param base base to be raised to power <code>mN</code>
-   * @param add add this to the expression
+   * @param ending add this to the expression
    */
   public A167626(final long ending) {
     mAdd10 = ending < 10 ? 10 : (ending < 100 ? 100 : 1000);

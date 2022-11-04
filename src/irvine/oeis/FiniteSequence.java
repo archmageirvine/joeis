@@ -16,7 +16,6 @@ public class FiniteSequence extends ArrayList<Z> implements Sequence {
 
   /**
    * Construct an empty sequence.
-   * @param seq the values
    */
   public FiniteSequence() {
     super();

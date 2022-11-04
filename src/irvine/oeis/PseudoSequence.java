@@ -55,8 +55,6 @@ public class PseudoSequence implements Sequence, Closeable {
         mLineReader = new BufferedReader(new InputStreamReader(new FileInputStream(file), StandardCharsets.UTF_8));
       }
     } catch (final RuntimeException | IOException exc) {
-      System.err.println("PseudoSequence: BFPATH=" + bFilePath + ", file \"" + bFilePath + fileName + "\" could not be read");
-      exc.printStackTrace();
       throw new RuntimeException("Cannot read b-file for " + aNumber + ": " + exc.getMessage());
     }
   }

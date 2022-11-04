@@ -239,7 +239,8 @@
   </target>
   
   <target name="javadoc" description="generate documentation">
-    <javadoc sourcepath="${src.dir}" excludepackagenames="irvine.oeis.a[0-9][0-9][0-9].*" destdir="${doc.dir}"/>
+    <!-- Ideally I would want to exlcude on a[0-9][0-9][0-9] packages, but I could not write that regexp -->
+    <javadoc sourcepath="${src.dir}" excludepackagenames="irvine.oeis.a*" destdir="${doc.dir}"/>
   </target>
 
 </project>

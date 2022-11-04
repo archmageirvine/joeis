@@ -21,7 +21,7 @@ resultsfile=${WEB}/${out}
 echo "Starting report.sh run at $(date)" >"${resultsfile}"
 echo >>"${resultsfile}"
 
-"${JAVA_HOME}/bin/java" irvine.oeis.Report  >>"${resultsfile}" 2>&1
+"${JAVA_HOME}/bin/java" irvine.oeis.Report --offsets "${CODEHOME}/.cvscheck/an_offset.tmp" >>"${resultsfile}" 2>&1
 
 fails=$(grep -c -E 'WARNING' <"${resultsfile}")
 

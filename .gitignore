@@ -42,3 +42,4 @@ src/irvine/factor/project/em/mesh
 src/irvine/factor/dist/*.out
 oeis_done.dat
 pari
+.cvscheck/an_offset.tmp

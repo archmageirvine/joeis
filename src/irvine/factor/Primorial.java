@@ -1,13 +1,12 @@
-package irvine.factor.project.primorial;
+package irvine.factor;
 
 import irvine.factor.factor.CachedFactorizer;
 import irvine.factor.factor.FactorDbFactorizer;
 import irvine.factor.factor.Factorizer;
-import irvine.math.z.Z;
-
 import irvine.factor.prime.Fast;
-import irvine.math.z.ZUtils;
 import irvine.factor.util.FactorSequence;
+import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 
 /**
  * Generate factorizations of the primorial numbers. Backed by

@@ -1,10 +1,10 @@
 package irvine.factor.script;
 
-import irvine.factor.project.smarandache.Smarandache;
-import irvine.math.z.Z;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+
+import irvine.factor.Smarandache;
+import irvine.math.z.Z;
 
 /**
  * Produces a file containing the primitive factors of reversed Smarandache

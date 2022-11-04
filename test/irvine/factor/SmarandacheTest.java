@@ -1,4 +1,4 @@
-package irvine.factor.project.smarandache;
+package irvine.factor;
 
 import irvine.math.z.Z;
 import junit.framework.TestCase;

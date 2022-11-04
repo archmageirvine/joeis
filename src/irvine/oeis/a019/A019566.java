@@ -1,6 +1,6 @@
 package irvine.oeis.a019;
 
-import irvine.factor.project.smarandache.Smarandache;
+import irvine.factor.Smarandache;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 

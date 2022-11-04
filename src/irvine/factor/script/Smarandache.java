@@ -1,9 +1,9 @@
 package irvine.factor.script;
 
-import irvine.math.z.Z;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+
+import irvine.math.z.Z;
 
 /**
  * Produces a file containing the primitive factors of Smarandache numbers.
@@ -42,7 +42,7 @@ public final class Smarandache {
           System.err.println("WARNING: Couldn't parse: " + line);
           continue;
         }
-        Z n = irvine.factor.project.smarandache.Smarandache.smarandacheZ(sm).makeOdd();
+        Z n = irvine.factor.Smarandache.smarandacheZ(sm).makeOdd();
         final String[] factors = line.substring(space + 1).split("\\.");
         final StringBuilder sb = new StringBuilder();
         for (String f : factors) {

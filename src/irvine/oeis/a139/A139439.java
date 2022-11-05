@@ -10,7 +10,7 @@ import irvine.oeis.a002.A002110;
 public class A139439 extends A002110 {
 
   private int mK;
-  private int mParm;
+  private final int mParm;
 
   /** Construct the sequence. */
   public A139439() {
@@ -24,6 +24,7 @@ public class A139439 extends A002110 {
   public A139439(final int parm) {
     mK = 0;
     mParm = parm;
+    setOffset(1);
     super.next(); // skip primorial(1)
   }
 

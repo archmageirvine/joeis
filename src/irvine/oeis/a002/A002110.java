@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A002110 Primorial numbers (first definition): product of first n primes. Sometimes written prime(n)#.
  * @author Sean A. Irvine
  */
-public class A002110 implements Sequence {
+public class A002110 extends Sequence0 {
 
   protected final Fast mPrime = new Fast();
   protected long mP = 0;

@@ -45,7 +45,6 @@ public class PseudoSequence implements Sequence, Closeable {
     final String fileName = "b" + aNumber.substring(1) + ".txt";
     final String bFilePath = getBaseUri();
     try {
-      System.out.println("PseudoSequence: read from \"" + bFilePath + fileName + "\"");
       if (bFilePath.matches("(https?|ftp|file)\\:\\/\\/.*")) { // URI format
         final String fullUri = bFilePath + fileName;
         mLineReader = new BufferedReader(new InputStreamReader(new URL(fullUri).openStream(), StandardCharsets.UTF_8));

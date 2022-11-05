@@ -14,7 +14,8 @@ public class A079135 extends A002110 {
 
   /** Construct the sequence. */
   public A079135() {
-super.next();
+    setOffset(2);
+    super.next();
   }
   
   @Override

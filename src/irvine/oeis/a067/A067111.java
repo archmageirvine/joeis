@@ -14,6 +14,7 @@ public class A067111 extends A002110 {
   private Sequence mSeq = new A007504();
 
   {
+    setOffset(1);
     super.next(); // skip leading 1
     mSeq.next(); // skip the leading 0
   }

@@ -13,6 +13,7 @@ public class A038773 extends A002110 {
 
   private final MemorySequence mComposites = MemorySequence.cachedSequence(new A002808());
   {
+    setOffset(1);
     super.next();
   }
 

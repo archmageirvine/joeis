@@ -15,6 +15,7 @@ public class A115964 extends A002110 {
   /** Construct the sequence. */
   public A115964() {
     mN = 0;
+    setOffset(1);
     super.next();
   }
 

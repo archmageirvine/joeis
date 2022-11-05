@@ -11,6 +11,7 @@ import irvine.oeis.a002.A002110;
 public class A054641 extends A002110 {
 
   {
+    setOffset(1);
     super.next();
   }
   private final PrimeDivision mFactor = new PrimeDivision();

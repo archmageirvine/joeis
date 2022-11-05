@@ -13,6 +13,7 @@ public class A038768 extends A002110 {
   private Fast mPrime = new Fast();
   private Z mP = Z.TWO;
   {
+    setOffset(1);
     super.next();
   }
 

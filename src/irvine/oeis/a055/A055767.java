@@ -16,6 +16,7 @@ public class A055767 extends A002110 {
   private Z mA = mASeq.next();
   private int mK = 0;
   {
+    setOffset(1);
     super.next();
   }
 

@@ -12,6 +12,7 @@ public class A051838 extends A002110 {
   private Z mSum = Z.ZERO;
   private long mN = 0;
   {
+    setOffset(1);
     super.next();
   }
 

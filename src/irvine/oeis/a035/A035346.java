@@ -14,6 +14,7 @@ public class A035346 extends A002110 {
   private long mP = 2;
   private long mN = 0;
   {
+    setOffset(1);
     super.next();
   }
 

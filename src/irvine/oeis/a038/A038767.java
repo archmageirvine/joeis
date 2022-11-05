@@ -10,9 +10,12 @@ import irvine.oeis.a002.A002110;
  */
 public class A038767 extends A002110 {
 
-  private Fast mPrime = new Fast();
+  private final Fast mPrime = new Fast();
   private Z mP = Z.ONE;
   private long mN = -1;
+  {
+    setOffset(1);
+  }
 
   @Override
   public Z next() {

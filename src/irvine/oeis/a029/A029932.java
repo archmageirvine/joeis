@@ -22,7 +22,7 @@ public class A029932 extends Sequence1 {
       Z l = Z.ONE;
       do {
         l = mPrime.nextPrime(l);
-      } while (!ZUtils.testPrimitiveRoot(l, mP));
+      } while (!ZUtils.isPrimitiveRoot(l, mP));
       if (l.compareTo(mLeast) > 0) {
         mLeast = l;
         return mP;

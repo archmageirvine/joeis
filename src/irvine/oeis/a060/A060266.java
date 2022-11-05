@@ -2,20 +2,20 @@ package irvine.oeis.a060;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
- * A060264 First prime after 2n.
+ * A060266 Difference between 2n and the following prime.
  * @author Sean A. Irvine
  */
-public class A060264 extends Sequence0 {
+public class A060266 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
-  private long mN = -2;
+  private long mN = 0;
 
   @Override
   public Z next() {
     mN += 2;
-    return Z.valueOf(mPrime.nextPrime(mN));
+    return Z.valueOf(mPrime.nextPrime(mN) - mN);
   }
 }

@@ -13,7 +13,6 @@ import java.util.List;
 
 /**
  * Various string utility functions.
- *
  * @author Sean A. Irvine
  */
 public final class StringUtils {
@@ -21,7 +20,7 @@ public final class StringUtils {
   private StringUtils() { }
 
   /**
-   * A string comprising of the same character repeated a number of times.
+   * A string comprising the same character repeated a number of times.
    * @param c character to repeat
    * @param count number of instances
    * @return string with repeated character

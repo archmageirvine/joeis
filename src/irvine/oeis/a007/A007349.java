@@ -13,7 +13,7 @@ public class A007349 extends A007348 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (ZUtils.testPrimitiveRoot(Z.TEN, t)) {
+      if (ZUtils.isPrimitiveRoot(Z.TEN, t)) {
         return t;
       }
     }

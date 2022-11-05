@@ -555,7 +555,7 @@ public final class ZUtils {
    * @param n modulus
    * @return true if <code>r</code> is a primitive root of <code>n</code>
    */
-  public static boolean testPrimitiveRoot(final Z r, final Z n) {
+  public static boolean isPrimitiveRoot(final Z r, final Z n) {
     final Z phi = Euler.phi(n);
     for (final Z pi : Jaguar.factor(phi).toZArray()) {
       if (Z.ONE.equals(r.modPow(phi.divide(pi), n))) {

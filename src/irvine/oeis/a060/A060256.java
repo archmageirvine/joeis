@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
 /**
- * A060255.
+ * A060256 Smallest multiple a(n) of n-th primorial q(n) such that a(n)*q(n)-1 and a(n)*q(n)+1 are a pair of twin primes.
  * @author Sean A. Irvine
  */
 public class A060256 extends A002110 {

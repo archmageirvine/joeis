@@ -35,7 +35,7 @@ public class A007348 extends Sequence1 {
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      if (mP.gcd(mParm).equals(Z.ONE) && ZUtils.testPrimitiveRoot(mParmNeg, mP)) {
+      if (mP.gcd(mParm).equals(Z.ONE) && ZUtils.isPrimitiveRoot(mParmNeg, mP)) {
         return mP;
       }
     }

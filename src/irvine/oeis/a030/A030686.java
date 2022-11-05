@@ -11,6 +11,7 @@ public class A030686 extends A000290 {
 
   private static final long[] STEPS = {1, 1, 3, 1, 1, 3};
   {
+    setOffset(1);
     super.next();
   }
 

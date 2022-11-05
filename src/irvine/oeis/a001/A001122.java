@@ -18,7 +18,7 @@ public class A001122 extends Sequence1 {
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      if (ZUtils.testPrimitiveRoot(Z.TWO, mP)) {
+      if (ZUtils.isPrimitiveRoot(Z.TWO, mP)) {
         return mP;
       }
     }

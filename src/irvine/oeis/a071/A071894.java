@@ -20,7 +20,7 @@ public class A071894 extends Sequence1 {
     Z r = mP;
     while (true) {
       r = r.subtract(1);
-      if (ZUtils.testPrimitiveRoot(r, mP)) {
+      if (ZUtils.isPrimitiveRoot(r, mP)) {
         return r;
       }
     }

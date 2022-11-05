@@ -9,6 +9,10 @@ import irvine.oeis.a000.A000290;
  */
 public class A048425 extends A000290 {
 
+  {
+    setOffset(1);
+  }
+
   protected int overlap() {
     return 1;
   }

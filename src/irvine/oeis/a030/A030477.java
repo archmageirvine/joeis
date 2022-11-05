@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A030477 extends A030476 {
 
+  {
+    setOffset(1);
+  }
+
   @Override
   public Z next() {
     return super.next().sqrt();

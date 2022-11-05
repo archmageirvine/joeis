@@ -82,4 +82,10 @@ public class StringUtilsTest extends TestCase {
     assertFalse(StringUtils.is26Upper("'E"));
     assertFalse(StringUtils.is26Upper("E?"));
   }
+
+  public void testRep() {
+    assertEquals("", StringUtils.rep('#', 0));
+    assertEquals("#", StringUtils.rep('#', 1));
+    assertEquals("#####", StringUtils.rep('#', 5));
+  }
 }

@@ -28,12 +28,9 @@ public final class LongUtils {
    * Compute <code>a^e</code>. Does not check for overflow.
    * @param a base
    * @param e exponent
-   * @return <code>a^e mod n</code>
+   * @return <code>a^e</code>
    */
   public static long pow(long a, long e) {
-    if (a < 0) {
-      throw new IllegalArgumentException("Base can only be nonnegative in this implementation");
-    }
     if (a == 1 || e == 0) {
       return 1;
     } else if (a == 0) {

@@ -88,4 +88,24 @@ public class StringUtilsTest extends TestCase {
     assertEquals("#", StringUtils.rep('#', 1));
     assertEquals("#####", StringUtils.rep('#', 5));
   }
+
+  public void test() {
+    assertTrue(StringUtils.isPalindrome(null));
+    assertTrue(StringUtils.isPalindrome(" "));
+    assertTrue(StringUtils.isPalindrome("A"));
+    assertTrue(StringUtils.isPalindrome("*"));
+    assertTrue(StringUtils.isPalindrome("-"));
+    assertTrue(StringUtils.isPalindrome("--"));
+    assertTrue(StringUtils.isPalindrome("ee"));
+    assertTrue(StringUtils.isPalindrome("e!e"));
+    assertTrue(StringUtils.isPalindrome("e!!e"));
+    assertTrue(StringUtils.isPalindrome("e!%!e"));
+    assertTrue(StringUtils.isPalindrome("e!Z!e"));
+    assertTrue(StringUtils.isPalindrome("e!ABCCBA!e"));
+    assertTrue(StringUtils.isPalindrome("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"));
+    assertFalse(StringUtils.isPalindrome("AB"));
+    assertFalse(StringUtils.isPalindrome("ABC"));
+    assertFalse(StringUtils.isPalindrome("AAC"));
+    assertFalse(StringUtils.isPalindrome("ABCA"));
+  }
 }

@@ -16,7 +16,7 @@ import irvine.util.string.StringUtils;
  */
 public class A060273 extends Sequence1 {
 
-  private static final int SWITCH_OVER_BITS = 30;
+  private static final int SWITCH_OVER_BITS = 32;
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
@@ -38,7 +38,7 @@ public class A060273 extends Sequence1 {
     if (value < 0) {
       return;
     }
-    if (value < 1 << SWITCH_OVER_BITS) {
+    if (value < 1L << SWITCH_OVER_BITS) {
       mSeen.set(value);
     } else {
       mBigSeen.add(value);

@@ -11,10 +11,10 @@ import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A060273 Hard numbers: a(n) = smallest number m with f(m) = n, where f(m) is the smallest number of digits that are needed to construct m using only 1's, 2's and any number of +, -, *, ^ signs, allowing concatenation of the digits.
+ * A060274.
  * @author Sean A. Irvine
  */
-public class A060273 extends Sequence1 {
+public class A060274 extends Sequence1 {
 
   private static final int SWITCH_OVER_BITS = 32;
 
@@ -57,17 +57,6 @@ public class A060273 extends Sequence1 {
       check(s, 1);
       check(s, 2);
     } else {
-      // First construct any possible concatenations not previously seen
-      for (long digits = 0; digits < 1L << mN; ++digits) {
-        long m = 0;
-        long d = digits;
-        for (int j = 0; j < mN; ++j) {
-          m *= 10;
-          m += (d & 1) == 0 ? 1 : 2;
-          d >>>= 1;
-        }
-        check(s, m);
-      }
       // Form new values from all possible previous pairings
       for (int k = 1; 2 * k <= mN; ++k) {
         for (final long a : mSets.get(k)) {

@@ -22,7 +22,7 @@ public class A060275 extends Sequence1 {
       for (long a = 1; a < mN; ++a) {
         final long m = mN - a;
         for (long b = 1; b <= a && b < m; ++b) {
-          final long c = mN - a - b;
+          final long c = m - b;
           if (c <= b && !seen.add(a * b * c)) {
             return Z.valueOf(mN);
           }

@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
 public class A002371 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
-  private Z mP = Z.ONE;
+  protected Z mP = Z.ONE;
 
   @Override
   public Z next() {

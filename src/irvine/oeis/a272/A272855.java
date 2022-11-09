@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A272855 Ramanujan&apos;s gamma-series.
+ * A272855 Ramanujan's gamma-series.
  * @author Georg Fischer
  */
 public class A272855 extends HolonomicRecurrence {

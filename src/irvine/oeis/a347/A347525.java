@@ -4,7 +4,7 @@ package irvine.oeis.a347;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A347525 Number of minimum dominating sets in the n-Andr√°sfai graph.
+ * A347525 Number of minimum dominating sets in the n-Andr\u00e1sfai graph.
  * @author Georg Fischer
  */
 public class A347525 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a354;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A354228 Number of partitions of the multigraph G_n (defined below) into &quot;strokes&quot;.
+ * A354228 Number of partitions of the multigraph G_n (defined below) into "strokes".
  * @author Georg Fischer
  */
 public class A354228 extends GeneratingFunctionSequence {

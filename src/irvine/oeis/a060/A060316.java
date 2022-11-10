@@ -1,34 +1,35 @@
 package irvine.oeis.a060;
 
+import java.util.Arrays;
+
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
-import irvine.util.array.LongDynamicBooleanArray;
+import irvine.oeis.Sequence0;
 
 /**
- * A060315 a(1)=1; a(n) is the smallest positive integer that cannot be obtained from the integers {0, 1, ..., n-1} using each number at most once and the operators +, -, *, /.
+ * A060316 a(n) is the smallest natural number we cannot obtain from n, n+1, n+2, n+3, n+4, n+5 and the operators +, -, *, /, using each number only once.
  * @author Sean A. Irvine
  */
-public class A060315 extends Sequence1 {
+public class A060316 extends Sequence0 {
 
-  private static final long LIMIT = 1L << 29;
-  private int mN = 0;
-  private long mMask = 0;
-  private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
+  private static final int LIMIT = 1 << 11; // Largest known term is 1642
+  private static final int MAX_ADD = 5;
+  private static final long MASK = 0b111111;
+  private int mN = -1;
+  private final boolean[] mSeen = new boolean[LIMIT];
   private long[] mStack = null;
-  private long mM = 1;
 
   private void mark(final long value) {
-    if (value > 0 && value <= LIMIT) {
-      mSeen.set(value);
+    if (value >= 0 && value < LIMIT) {
+      mSeen[(int) value] = true;
     }
   }
 
   private void search(final int sp, final long used) {
-    if (used != mMask) {
+    if (used != MASK) {
       // There is at least one unused number
-      for (int k = 0; k < mN; ++k) {
+      for (int k = 0; k <= MAX_ADD; ++k) {
         if ((used & (1L << k)) == 0) {
-          mStack[sp + 1] = k;
+          mStack[sp + 1] = mN + k;
           search(sp + 1, used | (1L << k));
         }
       }
@@ -63,26 +64,26 @@ public class A060315 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    mMask = (1L << mN) - 1;
-    mStack = new long[mN + 1];
+    Arrays.fill(mSeen, false);
+    mStack = new long[MAX_ADD + 1];
     // First two items must be numbers
-    for (int k = 0; k < mN; ++k) {
-      mStack[0] = k;
-      mark(k);
-      for (int j = 0; j < mN; ++j) {
+    for (int k = 0; k <= MAX_ADD; ++k) {
+      mStack[0] = k + mN;
+      mark(k + mN);
+      for (int j = 0; j <= MAX_ADD; ++j) {
         if (j != k) {
-          mStack[1] = j;
-          mark(j);
+          mStack[1] = j + mN;
+          mark(j + mN);
           search(1, (1L << j) + (1L << k));
         }
       }
     }
-    // As n increases, the smallest unrepresentable number cannot ever decrease
-    while (mSeen.isSet(mM)) {
-      if (++mM > LIMIT) {
+    int u = 0;
+    while (mSeen[u]) {
+      if (++u == mSeen.length) {
         throw new UnsupportedOperationException("Increase LIMIT to search harder");
       }
     }
-    return Z.valueOf(mM);
+    return Z.valueOf(u);
   }
 }

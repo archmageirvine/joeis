@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A189488 E.g.f. exp(x*exp(x)+x^2*exp(2*x)+x^3*exp(3*x)).
+ * A189488 Expansion of e.g.f. exp(x*exp(x)+x^2*exp(2*x)+x^3*exp(3*x)).
  * E.g.f.: exp(x*exp(x)+x^2*exp(2*x)+x^3*exp(3*x))
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000521;
 
 /**
- * A288837 Coefficients in expansion of 691*E_12/Delta where Delta is the generating function of Ramanujan&apos;s tau function (A000594).
+ * A288837 Coefficients in expansion of 691*E_12/Delta where Delta is the generating function of Ramanujan's tau function (A000594).
  * @author Georg Fischer
  */
 public class A288837 extends A000521 {

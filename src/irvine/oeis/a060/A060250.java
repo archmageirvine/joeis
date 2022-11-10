@@ -5,7 +5,7 @@ import irvine.oeis.a054.A054990;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A060250 The smallest k! + 1 with exactly n prime factors (with multiplicity).
+ * A060250 The smallest k such that k! + 1 has exactly n prime factors (with multiplicity).
  * @author Sean A. Irvine
  */
 public class A060250 extends A054990 {

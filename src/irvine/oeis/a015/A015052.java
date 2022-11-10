@@ -4,7 +4,7 @@ package irvine.oeis.a015;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A015052 Smallest positive integer for which n divides a(n)^5.
+ * A015052 a(n) is the smallest positive integer m such that m^5 is divisible by n.
  * @author Georg Fischer
  */
 public class A015052 extends MultiplicativeSequence {

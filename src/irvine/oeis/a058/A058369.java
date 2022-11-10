@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A058369 Numbers n such that n and n^2 have same digit sum.
+ * A058369 Numbers k such that k and k^2 have same digit sum.
  * @author Sean A. Irvine
  */
 public class A058369 extends Sequence1 {

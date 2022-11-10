@@ -4,7 +4,7 @@ package irvine.oeis.a089;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A089665 a(n) = S2(n, 2), where S2(n, t) = Sum_{k=0..n} k^t *(Sum_{j=0..k} binomial(n,j))^2.
+ * A089665 a(n) = S2(n,2), where S2(n, t) = Sum_{k=0..n} k^t *(Sum_{j=0..k} binomial(n,j))^2.
  * @author Georg Fischer
  */
 public class A089665 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A174403 Expansion of (1-2x-2x^2-sqrt(1-4x-4x^2+8x^3+4x^4))/(2x^2).
+ * A174403 Expansion of (1-2*x-2*x^2-sqrt(1-4*x-4*x^2+8*x^3+4*x^4))/(2*x^2).
  * @author Georg Fischer
  */
 public class A174403 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.recur.PaddingSequence;
 
 
 /**
- * A183918 Characteristic sequence for cos(2Pi/n) being rational.
+ * A183918 Characteristic sequence for cos(2*Pi/n) being rational.
  * @author Georg Fischer
  */
 public class A183918 extends PaddingSequence {

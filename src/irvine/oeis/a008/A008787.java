@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A008787 a(n) = (n+6)^n.
+ * A008787 a(n) = (n + 6)^n.
  * @author Sean A. Irvine
  */
 public class A008787 extends Sequence0 {

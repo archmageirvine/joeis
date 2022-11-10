@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A051845 Table in which n-th row gives all permutations of digits 1..n interpreted in base n+1.
+ * A051845 Triangle T(n,k) read by rows, in which row n gives all permutations of digits 1..n interpreted in base n+1.
  * @author Sean A. Irvine
  */
 public class A051845 extends Sequence1 {

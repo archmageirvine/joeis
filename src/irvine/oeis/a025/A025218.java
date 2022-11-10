@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A025218 [ Sum{sqrt(k+1)} ], k = 1,2,...,n.
+ * A025218 a(n) = floor( Sum_{k=1..n} sqrt(k+1) ).
  * @author Sean A. Irvine
  */
 public class A025218 extends Sequence1 {

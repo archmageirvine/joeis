@@ -5,7 +5,7 @@ package irvine.oeis.a340;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A340615 a(n) = k/2 if k is even, otherwise (3k+1)/2, where k = n+floor((n+1)/5).
+ * A340615 a(n) = k/2 if k is even, otherwise (3k+1)/2, where k = n + floor((n+1)/5).
  * Lin.rec. signature: (0, 0, 0, 0, 2, 0, 0, 0, 0,-1)
  * @author Georg Fischer
  */

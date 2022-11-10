@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 import irvine.math.z.Z;
 
 /**
- * A047079 a(n) = Sum_{i=0..floor(n/2)} A047072(i,n-2i).
+ * A047079 a(n) = Sum_{i=0..floor(n/2)} A047072(i, n-2*i).
  * @author Sean A. Irvine
  */
 public class A047079 extends A047072 {

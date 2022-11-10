@@ -20,12 +20,14 @@ public class A045551 extends Sequence1 {
   public Z next() {
     while (true) {
       mF = mF.multiply(++mN);
-      while (true) {
-        final Z[] qr = mF.divideAndRemainder(Z.TEN);
-        if (Z.ZERO.equals(qr[1])) {
-          mF = qr[0];
-        } else {
-          break;
+      if (mN % 5 == 0) {
+        while (true) {
+          final Z[] qr = mF.divideAndRemainder(Z.TEN);
+          if (Z.ZERO.equals(qr[1])) {
+            mF = qr[0];
+          } else {
+            break;
+          }
         }
       }
       if (mF.mod(100) == digits()) {

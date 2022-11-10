@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.PartialProductSequence;
 
 /**
- * A060194 Partial products of A060193.
+ * A060194 Partial products of A060192.
  * @author Sean A. Irvine
  */
 public class A060194 extends PartialProductSequence {

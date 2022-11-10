@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.UnimplementedSequence;
 
 /**
- * A056746 Raw solutions to Hi-Q puzzle with n holes on a side, any initial peg removed.
+ * A056746 Number of raw solutions to Hi-Q puzzle with n holes on a side, any initial peg removed.
  * @author Sean A. Irvine
  */
 public class A056746 extends Sequence1 implements UnimplementedSequence {

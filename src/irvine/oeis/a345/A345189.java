@@ -4,7 +4,7 @@ package irvine.oeis.a345;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A345189 Number of rows with the value &quot;false&quot; in the Kleene truth tables of all bracketed formulae with n distinct propositions p1, ..., pn connected by the binary connective of implication.
+ * A345189 Number of rows with the value "false" in the Kleene truth tables of all bracketed formulae with n distinct propositions p1, ..., pn connected by the binary connective of implication.
  * @author Georg Fischer
  */
 public class A345189 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A174227 Expansion of (1-10x+sqrt((1-10x)(1-14x))/(2x).
+ * A174227 Expansion of -(10*x + sqrt((1-10*x)*(1-14*x)))/(2*x).
  * @author Georg Fischer
  */
 public class A174227 extends HolonomicRecurrence {

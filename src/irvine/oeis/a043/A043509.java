@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A043509 Numbers having one 5 in base 10.
+ * A043509 Numbers having exactly one 5 in base 10.
  * @author Georg Fischer
  */
 public class A043509 extends RunsBaseSequence {

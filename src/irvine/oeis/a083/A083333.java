@@ -4,7 +4,7 @@ package irvine.oeis.a083;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A083333 a(n)=10a(n-2)-16a(n-4).
+ * A083333 a(n) = 10*a(n-2) - 16*a(n-4) for n&gt;=4, with a(0)=a(1)=1, a(2)=6, a(3)=10.
  * @author Georg Fischer
  */
 public class A083333 extends GeneratingFunctionSequence {

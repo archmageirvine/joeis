@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a142.A142710;
 
 /**
- * A147586 A142710/2.
+ * A147586 a(n) = A142710(n)/2.
  * @author Georg Fischer
  */
 public class A147586 extends Sequence0 {

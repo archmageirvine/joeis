@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A091037 Second column (k=5) of array A090214 ((4, 4)-Stirling2) divided by 4*4!=96.
+ * A091037 Second column (k=5) of array A090214 ((4,4)-Stirling2) divided by 4*4!=96.
  * @author Georg Fischer
  */
 public class A091037 extends HolonomicRecurrence {

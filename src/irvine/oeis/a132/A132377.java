@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 
 /**
- * A132377 PrimePi(n)^n.
+ * A132377 a(n) = PrimePi(n)^n.
  * @author Georg Fischer
  */
 public class A132377 extends Sequence1 {

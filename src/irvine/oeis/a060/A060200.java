@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005384;
 import irvine.oeis.a033.A033844;
 
 /**
- * A060200 Number of Sophie Germain primes &lt;= Prime[2^n].
+ * A060200 Number of Sophie Germain primes &lt;= prime(2^n).
  * @author Sean A. Irvine
  */
 public class A060200 extends A033844 {

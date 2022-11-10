@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A002083 Narayana-Zidek-Capell numbers: a(2n) = 2a(2n-1), a(2n+1) = 2a(2n) - a(n).
+ * A002083 Narayana-Zidek-Capell numbers: a(n) = 1 for n &lt;= 2. Otherwise a(2n) = 2a(2n-1), a(2n+1) = 2a(2n) - a(n).
  * @author Sean A. Irvine
  */
 public class A002083 extends MemorySequence {

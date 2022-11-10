@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000108;
 
 /**
- * A028302 prime(n)*Catalan(n).
+ * A028302 a(n) = prime(n)*Catalan(n).
  * @author Sean A. Irvine
  */
 public class A028302 extends A000040 {

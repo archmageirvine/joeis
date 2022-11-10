@@ -4,7 +4,7 @@ package irvine.oeis.a196;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A196864 G.f. A(x) satisfies: A(x)^3 + A(-x)^3 = 2 and A(x)^-3 - A(-x)^-3 = -18*x.
+ * A196864  G.f. A(x) satisfies: A(x)^3 + A(-x)^3 = 2 and A(x)^-3 - A(-x)^-3 = -18*x.
  * @author Georg Fischer
  */
 public class A196864 extends HolonomicRecurrence {

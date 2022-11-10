@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002321;
 
 /**
- * A181587 If n is even, a(n) = 0, if n is odd, a(n) = A002321(n), where A002321 is Mertens&apos;s function.
+ * A181587 If n is even, a(n) = 0, if n is odd, a(n) = A002321(n), where A002321 is Mertens's function.
  * @author Georg Fischer
  */
 public class A181587 extends A002321 {

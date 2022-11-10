@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A003720 E.g.f. tan(tan(tan(x))).
+ * A003720 Expansion of e.g.f. tan(tan(tan(x))).
  * @author Sean A. Irvine
  */
 public class A003720 extends Sequence0 {

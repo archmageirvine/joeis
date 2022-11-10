@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060275 At least two unordered triples of positive numbers have sum n and equal products.
+ * A060275 At least two ordered triples of positive numbers have sum n and equal products.
  * @author Sean A. Irvine
  */
 public class A060275 extends Sequence1 {

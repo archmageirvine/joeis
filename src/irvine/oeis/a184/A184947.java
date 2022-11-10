@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A184947 E.g.f. exp(x)*(1-x)^(-x).
+ * A184947 Expansion of e.g.f. exp(x)*(1-x)^(-x).
  * E.g.f.: exp(x)*(1-x)^(-x)
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A190171 Number of peakless Motzkin paths of length n having no UHD&apos;s starting at level 0; here U=(1, 1), H=(1, 0), and D=(1,-1).
+ * A190171 Number of peakless Motzkin paths of length n having no UHD's starting at level 0; here U=(1,1), H=(1,0), and D=(1,-1).
  * @author Georg Fischer
  */
 public class A190171 extends HolonomicRecurrence {

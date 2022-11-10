@@ -4,7 +4,7 @@ package irvine.oeis.a046;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A046163 Reduced denominators of (n-1)^2/(n^2+n+1). Arises in Routh's theorem.
+ * A046163 Reduced denominators of (n-1)^2/(n^2 + n + 1).
  * @author Georg Fischer
  */
 public class A046163 extends GeneratingFunctionSequence {

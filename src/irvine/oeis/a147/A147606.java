@@ -4,7 +4,7 @@ package irvine.oeis.a147;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A147606 G.f.: 1/(1 - x - 2 x^2 + x^3 + 3 x^4 - 5 x^6 + 3 x^8 + x^9 - 2 x^10 - x^11 + x^12).
+ * A147606 Expansion of g.f.: 1/((1 - x - x^2 + x^4 - x^6)*(1 - x^2 + x^4 + x^5 - x^6)).
  * @author Georg Fischer
  */
 public class A147606 extends GeneratingFunctionSequence {

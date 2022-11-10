@@ -6,7 +6,7 @@ package irvine.oeis.a128;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A128386 Expansion of c(3x^2)/(1-x*c(3x^2)), c(x) the g.f. of A000108.
+ * A128386 Expansion of c(3*x^2)/(1-x*c(3*x^2)), c(x) the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A128386 extends HolonomicRecurrence {

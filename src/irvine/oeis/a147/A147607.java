@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A147607 G.f.: 1/(1 - 4 x^2 + 4 x^4 + 4 x^6 - 11 x^8 + 4 x^10 + 4 x^12 - 4 x^14 + x^16).
+ * A147607 Expansion of g.f.: 1/((1 - 2*x^2 + x^4 + 2*x^6 - x^8)*(1 - 2*x^2 - x^4 + 2*x^6 - x^8)).
  * @author Sean A. Irvine
  */
 public class A147607 extends LinearRecurrence {

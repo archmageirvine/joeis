@@ -11,7 +11,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A060274 Hard numbers: a(n) = smallest number m with f(m) = n, where f(m) is the smallest number of digits that are needed to construct m using only 1's, 2's and any number of +, -, *, ^ signs, not allowing concatenation of the digits.
+ * A060274 Hard numbers: a(n) = smallest positive number m with f(m) = n, where f(m) is the smallest number of digits that are needed to construct m using only 1's, 2's and any number of +, -, *, ^ signs, not allowing concatenation of the digits.
  * @author Sean A. Irvine
  */
 public class A060274 extends Sequence1 {

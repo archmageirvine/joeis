@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A137398 Let S be a strictly monotonic sequence of length 2n and let p and q be subsequences of S each of length n such that the least element belongs to p and every element of S belongs to either p or q. The number of ways to select p such that for any index i the
+ * A137398 Let S be a strictly monotonic sequence of length 2n and let p and q be subsequences of S each of length n such that the least element belongs to p and every element of S belongs to either p or q. The number of ways to select p such that for any index i the exchange of p(i) and q(i) makes at least one of p and q non-monotonic, is given by a(n).
  * @author Georg Fischer
  */
 public class A137398 extends HolonomicRecurrence {

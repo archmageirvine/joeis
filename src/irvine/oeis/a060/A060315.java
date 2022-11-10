@@ -24,7 +24,6 @@ public class A060315 extends Sequence1 {
   }
 
   private void search(final int sp, final long used) {
-    //System.out.println(mN + " " + Arrays.toString(Arrays.copyOfRange(mStack, 0, sp + 1)) + " " + Long.toBinaryString(used));
     if (used != mMask) {
       // There is at least one unused number
       for (int k = 0; k < mN; ++k) {

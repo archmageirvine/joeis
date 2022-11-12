@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A054684 Sum of digits is odd.
+ * A054684 Numbers whose sum of digits is odd.
  * @author Sean A. Irvine
  */
 public class A054684 extends Sequence1 {

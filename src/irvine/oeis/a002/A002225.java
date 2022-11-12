@@ -15,13 +15,24 @@ public class A002225 extends Sequence1 {
   // There must be a better way...
 
   private final Fast mPrime = new Fast();
-  private Z mP = Z.valueOf(31);
+  private final Z mPowerResidue;
+  private Z mP;
   private int mN = 0;
 
-  private HashSet<Z> cubicResidues(final Z q) {
+  protected A002225(final Z p, final long firstTerm) {
+    mPowerResidue = p;
+    mP = Z.valueOf(firstTerm - 1);
+  }
+
+  /** Construct the sequence. */
+  public A002225() {
+    this(Z.THREE, 31);
+  }
+
+  private HashSet<Z> residues(final Z q) {
     final HashSet<Z> residues = new HashSet<>();
     for (Z x = Z.ONE; x.compareTo(q) < 0; x = x.add(1)) {
-      residues.add(x.modPow(Z.THREE, q));
+      residues.add(x.modPow(mPowerResidue, q));
     }
     return residues;
   }
@@ -30,8 +41,8 @@ public class A002225 extends Sequence1 {
   public Z next() {
     ++mN;
     while (true) {
-      if (mP.mod(Z.THREE).equals(Z.ONE)) {
-        final HashSet<Z> residues = cubicResidues(mP);
+      if (mP.mod(mPowerResidue).equals(Z.ONE)) {
+        final HashSet<Z> residues = residues(mP);
         Z p = Z.ONE;
         boolean ok = true;
         for (int k = 0; k < mN; ++k) {

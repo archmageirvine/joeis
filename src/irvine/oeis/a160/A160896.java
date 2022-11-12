@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 // DO NOT EDIT here!
 
 /**
- * A160896 ((2^b-1)/phi(n))*Sum_{d|n} Moebius(n/d)*d^(b-1) for b = 6.
+ * A160896 a(n) = ((2^b-1)/phi(n))*Sum_{d|n} Moebius(n/d)*d^(b-1) for b = 6.
  * @author Georg Fischer
  */
 public class A160896 extends A160890 {

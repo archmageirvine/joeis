@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A214682 Remove 2s that do not contribute to a factor of 4 from the prime factorization of n.
+ * A214682 Remove 2's that do not contribute to a factor of 4 from the prime factorization of n.
  * @author Georg Fischer
  */
 public class A214682 extends MultiplicativeSequence {

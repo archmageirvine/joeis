@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030086 Primes such that digits of p do not appear in p^2.
+ * A030086 Primes p whose digits do not appear in p^2.
  * @author Sean A. Irvine
  */
 public class A030086 extends A000040 {

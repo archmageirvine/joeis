@@ -74,15 +74,27 @@ public class MetaProducer implements Producer {
     Collections.addAll(mProducerList, producers);
   }
 
+  private Producer mLastProducer = null;
+
   @Override
   public Sequence getSequence(final String aNumber) {
     for (final Producer p : mProducerList) {
       final Sequence seq = p.getSequence(aNumber);
       if (seq != null) {
+        mLastProducer = p;
         return seq;
       }
     }
     // None of the Producers could handle this aNumber
+    mLastProducer = null;
     return null;
+  }
+
+  /**
+   * Return the producer that was used in the most recent call to <code>getSequence</code>.
+   * @return producer (or null)
+   */
+  public Producer getLastProducer() {
+    return mLastProducer;
   }
 }

@@ -54,7 +54,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(TanTest.class);
     suite.addTestSuite(UnaryCRFunctionTest.class);
     suite.addTestSuite(ZetaTest.class);
-    suite.addTestSuite(ZPolynomialTest.class);
+    suite.addTestSuite(ZPolynomialFunctionTest.class);
     return suite;
   }
 

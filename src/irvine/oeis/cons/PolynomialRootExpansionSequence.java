@@ -1,7 +1,7 @@
 package irvine.oeis.cons;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.ZPolynomial;
+import irvine.math.cr.ZPolynomialFunction;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
@@ -20,7 +20,7 @@ public class PolynomialRootExpansionSequence extends DecimalExpansionSequence {
    * @param base base to report expansion in
    */
   protected PolynomialRootExpansionSequence(final Polynomial<Z> poly, final CR lo, final CR hi, final int base) {
-    super(0, new ZPolynomial(poly).inverseMonotone(lo, hi).execute(CR.ZERO), base);
+    super(0, new ZPolynomialFunction(poly).inverseMonotone(lo, hi).execute(CR.ZERO), base);
   }
 
   /**
@@ -33,7 +33,7 @@ public class PolynomialRootExpansionSequence extends DecimalExpansionSequence {
    * @param base base to report expansion in
    */
   protected PolynomialRootExpansionSequence(final int offset, final Polynomial<Z> poly, final CR lo, final CR hi, final int base) {
-    super(offset, new ZPolynomial(poly).inverseMonotone(lo, hi).execute(CR.ZERO), base);
+    super(offset, new ZPolynomialFunction(poly).inverseMonotone(lo, hi).execute(CR.ZERO), base);
   }
 
   /**
@@ -45,7 +45,7 @@ public class PolynomialRootExpansionSequence extends DecimalExpansionSequence {
    * @param hi upper bound
    */
   protected PolynomialRootExpansionSequence(final int offset, final Polynomial<Z> poly, final CR lo, final CR hi) {
-    super(offset, new ZPolynomial(poly).inverseMonotone(lo, hi).execute(CR.ZERO), 10);
+    super(offset, new ZPolynomialFunction(poly).inverseMonotone(lo, hi).execute(CR.ZERO), 10);
   }
 
   /**

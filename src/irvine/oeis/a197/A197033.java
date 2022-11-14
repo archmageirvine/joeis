@@ -1,7 +1,7 @@
 package irvine.oeis.a197;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.ZPolynomial;
+import irvine.math.cr.ZPolynomialFunction;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
@@ -39,7 +39,7 @@ public class A197033 extends DecimalExpansionSequence {
    */
   private static CR getCR(final int m2, final int h, final int k, final String lo) {
     final Polynomial<Z> poly = A197032.getPolynomial(m2, h, k);
-    final CR ct = new ZPolynomial(poly).inverseMonotone(CR.valueOf(lo), CR.valueOf(lo).add(CR.valueOf("0.1"))).execute(CR.ZERO);
+    final CR ct = new ZPolynomialFunction(poly).inverseMonotone(CR.valueOf(lo), CR.valueOf(lo).add(CR.valueOf("0.1"))).execute(CR.ZERO);
     final CR cm = CR.valueOf(m2).divide(CR.valueOf(A197032.MF2));
     final CR ch = CR.valueOf(h);
     final CR ck = CR.valueOf(k);

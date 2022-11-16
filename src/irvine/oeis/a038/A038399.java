@@ -11,6 +11,7 @@ public class A038399 extends A000045 {
 
   private final StringBuilder mS = new StringBuilder();
   {
+    setOffset(1);
     super.next();
   }
 

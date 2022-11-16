@@ -19,6 +19,7 @@ public class A007552 extends A000045 {
   private int mN = 0;
   private Z mF = Z.ONE;
   {
+    setOffset(1);
     mCoeffs.add(Q.ZERO);
     super.next();
     super.next();

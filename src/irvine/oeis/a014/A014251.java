@@ -14,6 +14,7 @@ public class A014251 extends A000045 {
 
   private final Sequence mA = new ComplementSequence(new SkipSequence(new A000045(), 4), Z.ONE);
   {
+    setOffset(1);
     super.next();
     super.next();
     super.next();

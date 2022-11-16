@@ -55,6 +55,7 @@ public class A005620 extends A000045 {
   }
 
   {
+    setOffset(1);
     super.next();
     super.next();
   }

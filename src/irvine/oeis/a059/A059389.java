@@ -15,6 +15,7 @@ public class A059389 extends A000045 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   {
+    setOffset(1);
     super.next();
     mA.add(Z.TWO); // avoid need for isEmpty check later
   }

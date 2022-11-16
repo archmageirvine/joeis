@@ -13,6 +13,7 @@ public class A053055 extends A000045 {
   // Due to low importance, I retained Dale's change here.
 
   {
+    setOffset(1);
     super.next();
   }
   private boolean mForward = false;

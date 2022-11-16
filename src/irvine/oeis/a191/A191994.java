@@ -15,6 +15,7 @@ public class A191994 extends A000071 {
   private Sequence mSeq = new A003266();
 
   {
+    setOffset(1);
     super.next();
     next();
   }

@@ -10,6 +10,7 @@ public class A030617 extends A030604 {
 
   private Z mSum = Z.ZERO;
   {
+    setOffset(1);
     super.next();
     super.next();
   }

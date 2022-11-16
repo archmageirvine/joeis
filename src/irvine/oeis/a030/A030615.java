@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A030615 extends A030604 {
 
+  {
+    setOffset(1);
+  }
+
   @Override
   public Z next() {
     while (!Z.THREE.equals(super.next())) {

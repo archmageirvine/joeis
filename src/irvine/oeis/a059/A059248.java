@@ -12,6 +12,7 @@ public class A059248 extends A000045 {
 
   private Q mSum = Q.ZERO;
   {
+    setOffset(1);
     super.next();
   }
 

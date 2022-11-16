@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A052006 extends A052005 {
 
+  {
+    setOffset(0);
+  }
+
   private Z mA = super.next();
   private Z mSum = Z.ZERO;
 

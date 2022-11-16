@@ -10,6 +10,10 @@ import irvine.oeis.a000.A000045;
  */
 public class A073116 extends A000045 {
 
+  {
+    setOffset(1);
+  }
+
   private static final int[] INITS = {0, 1, 5, 1};
   private int mN;
 

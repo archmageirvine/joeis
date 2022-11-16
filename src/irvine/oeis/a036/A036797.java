@@ -12,6 +12,10 @@ import irvine.oeis.a000.A000045;
  */
 public class A036797 extends A000045 {
 
+  {
+    setOffset(1);
+  }
+
   private final TreeSet<Z> mA = new TreeSet<>();
 
   @Override

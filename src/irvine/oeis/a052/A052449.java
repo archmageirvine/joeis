@@ -10,11 +10,16 @@ import irvine.oeis.a003.A003266;
  * @author Georg Fischer
  */
 public class A052449 extends A003266 {
+
+  {
+    setOffset(1);
+  }
   private int mN = 0;
   
   /** Construct the sequence. */
   public A052449() {
     super();
+    setOffset(1);
     int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;

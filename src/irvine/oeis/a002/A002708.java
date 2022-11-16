@@ -12,6 +12,7 @@ public class A002708 extends A000045 {
   private Z mN = Z.ZERO;
 
   {
+    setOffset(1);
     super.next();
   }
 

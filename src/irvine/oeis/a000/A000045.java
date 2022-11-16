@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import java.io.Serializable;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000045 Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1. Studied by Indian scholars before Fibonacci - see Comments.
  * @author Sean A. Irvine
  */
-public class A000045 implements Sequence, Serializable {
+public class A000045 extends Sequence0 implements Serializable {
 
   private Z mA = Z.NEG_ONE;
   private Z mB = Z.ONE;

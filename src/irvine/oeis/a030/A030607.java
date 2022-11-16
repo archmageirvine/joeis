@@ -10,6 +10,7 @@ public class A030607 extends A030604 {
 
   private long mN = 0;
   {
+    setOffset(1);
     super.next();
     super.next();
   }

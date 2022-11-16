@@ -13,6 +13,7 @@ public class A050937 extends A000045 {
   private final Fast mPrime = new Fast();
   private long mN = 1;
   {
+    setOffset(1);
     super.next();
     super.next();
   }

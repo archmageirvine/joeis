@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A138391 extends A138385 {
 
+  {
+    setOffset(1);
+  }
+
   private Z mBest = Z.NEG_ONE;
   private long mN = -1;
 

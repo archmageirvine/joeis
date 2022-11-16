@@ -6,6 +6,10 @@ package irvine.oeis.a045;
  */
 public class A045731 extends A045725 {
 
+  {
+    setOffset(0);
+  }
+
   @Override
   protected String prefix() {
     return "7";

@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A195304.
+ * A195304 Decimal expansion of shortest length of segment from side AB through centroid to side AC in right triangle ABC with sidelengths (a,b,c)=(3,4,5).
  * @author Sean A. Irvine
  */
 public class A195304 extends DecimalExpansionSequence {
@@ -52,11 +52,11 @@ public class A195304 extends DecimalExpansionSequence {
       }
     };
 
-    System.out.println("f(0)=" + f.execute(CR.ZERO));
-    System.out.println("f(1)=" + f.execute(CR.ONE));
-    System.out.println("Df(0)=" + df.execute(CR.ZERO));
-    System.out.println("Df(1)=" + df.execute(CR.ONE));
-    System.out.println("Df(1.183642761)=" + df.execute(CR.valueOf(1.183642761))); // should be almost 0 for a=3, b=4
+//    System.out.println("f(0)=" + f.execute(CR.ZERO));
+//    System.out.println("f(1)=" + f.execute(CR.ONE));
+//    System.out.println("Df(0)=" + df.execute(CR.ZERO));
+//    System.out.println("Df(1)=" + df.execute(CR.ONE));
+//    System.out.println("Df(1.183642761)=" + df.execute(CR.valueOf(1.183642761))); // should be almost 0 for a=3, b=4
 
     /*
       Of the following solutions, apparently 1.18... is the one we want:
@@ -66,7 +66,7 @@ public class A195304 extends DecimalExpansionSequence {
 
     // Note: These bounds for the root of the derivative (1,1.5) may need to be parameters
     final CR x = df.inverseMonotone(CR.ONE, CR.valueOf(1.5)).execute(CR.ZERO);
-    System.out.println("root(Df) = " + x);
+    //System.out.println("root(Df) = " + x);
     return f.execute(x).sqrt();
   }
 

@@ -11,6 +11,7 @@ public class A057862 extends A000045 {
 
   private Z mA = Z.ONE;
   {
+    setOffset(1);
     super.next();
   }
 

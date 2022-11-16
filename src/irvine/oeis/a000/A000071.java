@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A000071 extends A000045 {
 
+  {
+    setOffset(1);
+  }
+
   /** Construct the sequence. */
   public A000071() {
     super.next();

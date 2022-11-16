@@ -13,6 +13,7 @@ import irvine.util.Pair;
 public class A005621 extends A000045 {
 
   {
+    setOffset(1);
     super.next();
     super.next();
   }

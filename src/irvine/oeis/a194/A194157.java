@@ -13,6 +13,7 @@ public class A194157 extends A000045 {
   private Z mProd = Z.ONE;
 
   {
+    setOffset(1);
     super.next();
   }
 

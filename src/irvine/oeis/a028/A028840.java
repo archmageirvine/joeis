@@ -15,6 +15,7 @@ public class A028840 extends A000045 {
   private final TreeSet<Long> mFibo = new TreeSet<>();
   private long mN = -1;
   {
+    setOffset(1);
     mFibo.add(0L);
   }
 

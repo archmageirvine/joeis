@@ -9,6 +9,10 @@ import irvine.oeis.a000.A000045;
  */
 public class A005205 extends A000045 {
 
+  {
+    setOffset(1);
+  }
+
   private Z mA = Z.ZERO;
   private Z mB = null;
 

@@ -14,6 +14,7 @@ public class A014241 extends A000045 {
   private final Sequence mNotFibo = new ComplementSequence(new A000045());
 
   {
+    setOffset(1);
     super.next();
     super.next();
   }

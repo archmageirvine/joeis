@@ -12,6 +12,7 @@ public class A060001 extends A000045 {
 
   final BinarySplitFactorial mF = new BinarySplitFactorial();
   {
+    setOffset(1);
     super.next();
   }
 

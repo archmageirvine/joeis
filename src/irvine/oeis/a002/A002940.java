@@ -13,6 +13,7 @@ public class A002940 extends A000045 {
   private Z mB = Z.ZERO;
   private Z mC = Z.ZERO;
   {
+    setOffset(1);
     super.next();
     super.next();
   }

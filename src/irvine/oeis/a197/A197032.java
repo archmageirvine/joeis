@@ -22,7 +22,7 @@ public class A197032 extends PolynomialRootExpansionSequence {
   /**
    * Generic constructor with parameters.
    * @param offset first index
-   * @param m2 slope * MF2
+   * @param m2 slope * <code>MF2</code>
    * @param h point (x-coordinate)
    * @param k point (y-coordinate)
    * @param lo lower bound for root searching interval (upper bound is lo + 0.1)
@@ -33,7 +33,7 @@ public class A197032 extends PolynomialRootExpansionSequence {
 
   /**
    * Compute the polynomial.
-   * @param m2 slope * MF2
+   * @param m2 slope * <code>MF2</code>
    * @param h point (x-coordinate)
    * @param k point (y-coordinate)
    * @return Polynomial in <code>t</code> with coefficients

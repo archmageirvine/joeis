@@ -14,13 +14,13 @@ public class A197033 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A197033() {
-    this(1, 1 * A197032.MF2, 2, 1, "2.3");
+    this(1, A197032.MF2, 2, 1, "2.3");
   }
 
   /**
    * Generic constructor with parameters.
    * @param offset first index
-   * @param m2 slope * MF2
+   * @param m2 slope * <code>MF2</code>
    * @param h point (x-coordinate)
    * @param k point (y-coordinate)
    * @param lo lower bound for root searching interval for t (upper bound is lo + 0.1)
@@ -31,7 +31,7 @@ public class A197033 extends DecimalExpansionSequence {
 
   /**
    * Compute the constant.
-   * @param m2 slope * MF2
+   * @param m2 slope * <code>MF2</code>
    * @param h point (x-coordinate)
    * @param k point (y-coordinate)
    * @param lo lower bound for root searching interval for t (upper bound is lo + 0.1)

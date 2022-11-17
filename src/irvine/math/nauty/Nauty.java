@@ -152,7 +152,7 @@ public class Nauty {
       numcells[0] = 1;
     } else {
       ptn[mN - 1] = 0;
-      numcells[0] = 0;
+      //numcells[0] = 0;
       for (int i = 0; i < mN; ++i) {
         if (ptn[i] != 0) {
           ptn[i] = NAUTY_INFINITY;

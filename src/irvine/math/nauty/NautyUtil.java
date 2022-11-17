@@ -99,7 +99,7 @@ final class NautyUtil {
    *  contains those points are fixed by perm, while mcr contains the set of
    *  those points which are least in their orbits.
    */
-  static void fmperm(final int[] perm, final long[] w, final int fix, final int mcr, final int n) {
+  static synchronized void fmperm(final int[] perm, final long[] w, final int fix, final int mcr, final int n) {
     w[fix] = 0;
     w[mcr] = 0;
     for (int i = n; --i >= 0; ) {
@@ -171,8 +171,8 @@ final class NautyUtil {
    *  Note that the dreadnaut I command generates a call to  this procedure
    *  with level = mMinInvarLevel = mMaxInvarLevel = 0.
    */
-  // WARNING: This is not thread safe, due to WORKPERM
-  static void doRef(final Graph g, final int[] lab, final int[] ptn, final int level, final int[] numCells,
+  // WARNING: This is not thread safe, due to WORKPERM, hence sychronized added
+  static synchronized void doRef(final Graph g, final int[] lab, final int[] ptn, final int level, final int[] numCells,
                   final int[] qinvar, final int[] invar, final NautySet active, final int[] code,
                   final DispatchVec dispatchVec,
                   final InvarProc invarProc,

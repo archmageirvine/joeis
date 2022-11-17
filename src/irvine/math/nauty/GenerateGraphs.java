@@ -18,7 +18,7 @@ public class GenerateGraphs {
   private static final int WORDSIZE = 64;
   static final int MAXM = (MAXN + WORDSIZE - 1) / WORDSIZE;
   private static final int MIN_SPLIT_LEVEL = 6;
-  static int sMultiplicity;
+  static int sMultiplicity = 0;
 
   private final StatsBlk mNautyStats = new StatsBlk();
   private final int mMod;
@@ -86,7 +86,7 @@ public class GenerateGraphs {
   /* make the level data for each level */
   void makeLevelData(final boolean restricted) {
     for (int n = 1; n < mMaxN; ++n) {
-      final int nn = mMaxDeg <= n ? mMaxDeg : n;
+      final int nn = Math.min(mMaxDeg, n);
       int ncj = 1;
       int nxsets = 1;
       for (int j = 1; j <= nn; ++j) {
@@ -481,7 +481,7 @@ public class GenerateGraphs {
   /* extend from n to n+1 -- version for restricted graphs */
   private void spaExtend(final Graph g, final int[] deg, final int ne, final boolean rigid, int xlb, final int xub, final MakeH makeh) {
     final int n = g.order();
-    mNodesByLevel[n]++;
+    ++mNodesByLevel[n];
 
     final int dmax = deg[n - 1];
     final int dcrit = mMinDeg - mMaxN + n;

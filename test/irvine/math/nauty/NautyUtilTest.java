@@ -9,22 +9,9 @@ import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class NautyUtilTest extends TestCase {
-
-  public void testMash() {
-    assertEquals(27468, NautyUtil.mash(42, 21));
-    assertEquals(27489, NautyUtil.mash(42, 42));
-    assertEquals(27421, NautyUtil.mash(0, 0));
-  }
-
-  public void testCleanup() {
-    assertEquals(0, NautyUtil.cleanup(0));
-    assertEquals(42, NautyUtil.cleanup(42));
-    assertEquals(1, NautyUtil.cleanup(Integer.MAX_VALUE));
-  }
 
   public void testNextElement() {
     assertEquals(32, NautyUtil.nextElement(0xCCCCCCCCL, -1));

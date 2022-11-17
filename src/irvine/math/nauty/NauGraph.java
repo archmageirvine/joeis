@@ -265,7 +265,7 @@ class NauGraph extends DefaultDispatchVec {
       active.clear(split1);
       for (split2 = split1; ptn[split2] > level; ++split2) {
       }
-      longcode = NautyUtil.mash(longcode, split1 + split2);
+      longcode = DoRef.mash(longcode, split1 + split2);
       if (split1 == split2) {
         // trivial splitting cell
         final long gptr = ((SmallGraph) g).getEdgeVector(lab[split1]);
@@ -290,7 +290,7 @@ class NauGraph extends DefaultDispatchVec {
           }
           if (c2 >= cell1 && c1 <= cell2) {
             ptn[c2] = level;
-            longcode = NautyUtil.mash(longcode, c2);
+            longcode = DoRef.mash(longcode, c2);
             ++numcells[0];
             if (active.isSet(cell1) || c2 - cell1 >= cell2 - c1) {
               active.set(c1);
@@ -311,7 +311,7 @@ class NauGraph extends DefaultDispatchVec {
         for (int i = split1; i <= split2; ++i) {
           workset0 |= GenerateGraphs.BIT[lab[i]];
         }
-        longcode = NautyUtil.mash(longcode, split2 - split1 + 1);
+        longcode = DoRef.mash(longcode, split2 - split1 + 1);
         int cell2;
         for (int cell1 = 0; cell1 < g.order(); cell1 = cell2 + 1) {
           for (cell2 = cell1; ptn[cell2] > level; ++cell2) {
@@ -337,7 +337,7 @@ class NauGraph extends DefaultDispatchVec {
             count[i] = cnt;
           }
           if (bmin == bmax) {
-            longcode = NautyUtil.mash(longcode, bmin + cell1);
+            longcode = DoRef.mash(longcode, bmin + cell1);
             continue;
           }
           int c1 = cell1;
@@ -346,7 +346,7 @@ class NauGraph extends DefaultDispatchVec {
             if (mBucket[i] != 0) {
               final int c2 = c1 + mBucket[i];
               mBucket[i] = c1;
-              longcode = NautyUtil.mash(longcode, i + c1);
+              longcode = DoRef.mash(longcode, i + c1);
               if (c2 - c1 > maxcell) {
                 maxcell = c2 - c1;
                 maxpos = c1;
@@ -378,8 +378,8 @@ class NauGraph extends DefaultDispatchVec {
       }
     }
 
-    longcode = NautyUtil.mash(longcode, numcells[0]);
-    code[0] = NautyUtil.cleanup(longcode);
+    longcode = DoRef.mash(longcode, numcells[0]);
+    code[0] = DoRef.cleanup(longcode);
   }
 
   /*

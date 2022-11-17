@@ -12,6 +12,7 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(DirectedGraphTest.class);
+    suite.addTestSuite(DoRefTest.class);
     suite.addTestSuite(GenerateGraphsCliTest.class);
     suite.addTestSuite(GenerateGraphsTest.class);
     suite.addTestSuite(GenGraphsAutomProcBTest.class);

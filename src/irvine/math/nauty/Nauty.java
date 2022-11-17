@@ -65,6 +65,7 @@ public class Nauty {
 
   private final int[] mWorkPerm = new int[MAXN];   /* various scratch uses */
   private final NautySet mFixedPts = new NautySet(MAXN);      /* points which were explicitly fixed to get current node */
+  private final DoRef mDoRef = new DoRef();
   private final int[] mFirstLab = new int[MAXN];   /* label from first leaf */
   private final int[] mCanonLab = new int[MAXN];   /* label from bsf leaf */
   private final int[] mFirstCode = new int[MAXN + 2];      /* codes for first leaf */
@@ -234,7 +235,7 @@ public class Nauty {
     ++mStats.mNumNodes;
 
     // refine partition
-    NautyUtil.doRef(mG, lab, ptn, level, numcells, qinvar, mWorkPerm, mActive, refcode, mDispatch, mInvarProc, mMinInvarLevel, mMaxInvarLevel, mInvarArg, mDigraph);
+    mDoRef.doRef(mG, lab, ptn, level, numcells, qinvar, mWorkPerm, mActive, refcode, mDispatch, mInvarProc, mMinInvarLevel, mMaxInvarLevel, mInvarArg, mDigraph);
     mFirstCode[level] = refcode[0];
     if (qinvar[0] > 0) {
       //++mInvApplics;
@@ -350,7 +351,7 @@ public class Nauty {
     ++mStats.mNumNodes;
 
     // refine partition
-    NautyUtil.doRef(mG, lab, ptn, level, numcells, qinvar, mWorkPerm, mActive, refcode, mDispatch, mInvarProc, mMinInvarLevel, mMaxInvarLevel, mInvarArg, mDigraph);
+    mDoRef.doRef(mG, lab, ptn, level, numcells, qinvar, mWorkPerm, mActive, refcode, mDispatch, mInvarProc, mMinInvarLevel, mMaxInvarLevel, mInvarArg, mDigraph);
     final int code = refcode[0];
     if (qinvar[0] > 0) {
       //++mInvApplics;
@@ -547,7 +548,7 @@ public class Nauty {
         if (mFmPtr == mWorkTop) {
           mFmPtr -= 2;
         }
-        NautyUtil.fmperm(mWorkPerm, mWorkspace, mFmPtr, mFmPtr + 1, mN);
+        mDoRef.fmperm(mWorkPerm, mWorkspace, mFmPtr, mFmPtr + 1, mN);
         mFmPtr += 2;
         mStats.mNumOrbits = NautyUtil.orbJoin(mOrbits, mWorkPerm, mN);
         ++mStats.mNumGenerators;
@@ -561,7 +562,7 @@ public class Nauty {
         if (mFmPtr == mWorkTop) {
           mFmPtr -= 2;
         }
-        NautyUtil.fmperm(mWorkPerm, mWorkspace, mFmPtr, mFmPtr + 1, mN);
+        mDoRef.fmperm(mWorkPerm, mWorkspace, mFmPtr, mFmPtr + 1, mN);
         mFmPtr += 2;
         final int save = mStats.mNumOrbits;
         mStats.mNumOrbits = NautyUtil.orbJoin(mOrbits, mWorkPerm, mN);

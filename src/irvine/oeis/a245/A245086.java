@@ -5,7 +5,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A245086 Central values of the n-th discrete Chebyshev polynomials of order 2n.
- * sumrecursion((-1)^k*binomial(n,k)*binomial(2*n - k,n)*binomial(n + k,n),k,a(n));
+ * <code>sumrecursion((-1)^k*binomial(n,k)*binomial(2*n - k,n)*binomial(n + k,n),k,a(n));</code>
  * @author Georg Fischer
  */
 public class A245086 extends HolonomicRecurrence {

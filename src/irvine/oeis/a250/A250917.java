@@ -5,7 +5,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A250917 E.g.f.: exp( x*C(x)^3 ) where C(x) = (1 - sqrt(1-4*x))/(2*x) is the g.f. of the Catalan numbers, A000108.
- * sumrecursion( n!/k! * binomial(2*n+k-1,n-k) * 3*k/(n+2*k),k,a(n));
+ * <code>sumrecursion( n!/k! * binomial(2*n+k-1,n-k) * 3*k/(n+2*k),k,a(n));</code>
  * @author Georg Fischer
  */
 public class A250917 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A241587 Coefficients in an expansion of the trace of the log of the adjacency operator on the infinite grid Z x Z.
- * sumrecursion(n*(-3)^(n-k)*(n+k)^(-1)*binomial(n+k, 2*k)*binomial(2*k,k)^2,k,a(n));
+ * <code>sumrecursion(n*(-3)^(n-k)*(n+k)^(-1)*binomial(n+k, 2*k)*binomial(2*k,k)^2,k,a(n));</code>
  * @author Georg Fischer
  */
 public class A241587 extends HolonomicRecurrence {

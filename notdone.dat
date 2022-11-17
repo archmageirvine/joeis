@@ -2066,3 +2066,4 @@ A060198 Dimensions of graded algebra associated with forest meanders
 A060241 Triangle T(n,k) in which n-th row gives degrees of irreducible representations of alternating group A_n
 A060246 Triangle whose rows are the degrees of the irreducible representations of the groups PSL(2,p) as p runs through the primes.
 A060247 Triangle whose rows are the degrees of the irreducible representations of the groups PSL(2,q) as q runs through the primes and prime powers.
+A060387 Numbers k such that x^4 + y^4 = k * z^4 is solvable in nonzero integers x,y,z.

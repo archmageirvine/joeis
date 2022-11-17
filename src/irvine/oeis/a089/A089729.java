@@ -7,7 +7,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A089729 Decimal expansion of Levy's constant 12*log(2)/Pi^2.
- * Formula: log(8)/asin(1)^2
+ * Formula: <code>log(8)/asin(1)^2</code>
  * @author Georg Fischer
  */
 public class A089729 extends DecimalExpansionSequence {

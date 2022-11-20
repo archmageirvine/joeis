@@ -4,7 +4,7 @@ import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 
 /**
- * A060393.
+ * A060393 Values of k associated with A060380.
  * @author Sean A. Irvine
  */
 public class A060393 extends A060380 {

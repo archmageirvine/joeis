@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A060376 If 10^n can be written as x*y where the digits of x and y are all nonzero, then let a(n) = smallest such x, otherwise a(n) = -1.
+ * A060392 Let f(m) = smallest prime that divides k^2 + k + m for k = 0,1,2,...; sequence gives smallest m &gt;= 0 such that f(m) is the n-th prime.
  * @author Sean A. Irvine
  */
 public class A060392 extends PrependSequence {

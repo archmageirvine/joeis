@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
- * A060393.
+ * A060403 Each term is the previous term plus the number of letters in the previous number, as conventionally spelled out in American English.
  * @author Sean A. Irvine
  */
 public class A060403 extends Sequence1 {

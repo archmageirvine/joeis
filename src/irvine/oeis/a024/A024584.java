@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A024584 Floor(1/frac(n*Pi)).
+ * A024584 a(n) = floor(1/frac(n*Pi)).
  * @author Sean A. Irvine
  */
 public class A024584 extends Sequence1 {

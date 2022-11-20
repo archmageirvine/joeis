@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A186695 A Galton triangle: T(n,k) = (2k-1)*(T(n-1,k)+T(n-1,k-1)): a type B analog of the ordered Bell numbers A019538.
+ * A186695 A Galton triangle: T(n,k) = (2k-1)*(T(n-1,k) + T(n-1,k-1)): a type B analog of the ordered Bell numbers A019538.
  * @author Georg Fischer
  */
 public class A186695 extends Triangle {

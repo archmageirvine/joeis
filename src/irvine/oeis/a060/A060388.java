@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A060388.
+ * A060388 Decimal expansion of alpha(2) = Sum_{i&gt;0} prime(i)*2^(-i^2).
  * @author Sean A. Irvine
  */
 public class A060388 extends DecimalExpansionSequence {

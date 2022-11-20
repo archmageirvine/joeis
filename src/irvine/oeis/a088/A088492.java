@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005185;
 
 /**
- * A088492 a(2n+1)=2n+1, a(2n) = floor(2*n/A005185(n)), a weighted inverse of Hofstadter&apos;s Q-sequence.
+ * A088492 a(2n+1)=2n+1, a(2n) = floor(2*n/A005185(n)), a weighted inverse of Hofstadter's Q-sequence.
  * @author Georg Fischer
  */
 public class A088492 extends A005185 {

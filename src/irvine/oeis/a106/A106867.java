@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.prime.BinaryQuadraticForm;
 
 /**
- * A106867 Primes of the form 2*x^2+x*y+3*y^2.
+ * A106867 Primes of the form 2*x^2 + x*y + 3*y^2.
  * @author Georg Fischer
  */
 public class A106867 extends BinaryQuadraticForm {

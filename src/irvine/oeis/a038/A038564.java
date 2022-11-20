@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A038564 In the list of divisors of n, each digit 1-9 appears equally often.
+ * A038564 Numbers whose list of divisors includes each digit 1-9 equally often.
  * @author Sean A. Irvine
  */
 public class A038564 extends Sequence1 {

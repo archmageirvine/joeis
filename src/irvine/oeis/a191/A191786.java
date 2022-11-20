@@ -4,7 +4,7 @@ package irvine.oeis.a191;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A191786 Number of length n left factors of Dyck paths having no triple-rises (triple-rise = three consecutive (1, 1)-steps).
+ * A191786 Number of length n left factors of Dyck paths having no triple-rises (triple-rise = three consecutive (1,1)-steps).
  * @author Georg Fischer
  */
 public class A191786 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000045;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A060378 Even-odd sieve.
+ * A060390 Fibonacci sieve: using Fibonacci numbers, strike out every 2nd, 3rd, 5th, 8th, 13th, 21st, 34th... of those remaining.
  * @author Sean A. Irvine
  */
 public class A060390 extends A000045 {

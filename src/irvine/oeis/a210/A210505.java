@@ -4,7 +4,7 @@ package irvine.oeis.a210;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A210505 Numbers n for which 2*n+7, 4*n+7, 6*n+7, 8*n+7, 10*n+7 and 12*n+7 are primes.
+ * A210505 Numbers k for which 2*k+7, 4*k+7, 6*k+7, 8*k+7, 10*k+7 and 12*k+7 are primes.
  * @author Georg Fischer
  */
 public class A210505 extends PrimeConditionListSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A037137 Numbers n such that A037134(n) = A037135(n) &gt; 0.
+ * A037137 Numbers k such that A037134(k) = A037135(k) &gt; 0.
  * @author Sean A. Irvine
  */
 public class A037137 extends Sequence1 {

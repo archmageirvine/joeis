@@ -4,7 +4,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 
 /**
- * A060393.
+ * A060398 Values of k associated with A060397.
  * @author Sean A. Irvine
  */
 public class A060398 extends A060380 {

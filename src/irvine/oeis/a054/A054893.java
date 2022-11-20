@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a053.A053737;
 
 /**
- * A054893 Floor[n/4] + floor[n/16] + floor[n/64] + floor[n/256] + ....
+ * A054893 a(n) = floor(n/4) + floor(n/16) + floor(n/64) + floor(n/256) + ....
  * @author Georg Fischer
  */
 public class A054893 extends Sequence0 {

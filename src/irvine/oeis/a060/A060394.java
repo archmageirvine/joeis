@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A060376 If 10^n can be written as x*y where the digits of x and y are all nonzero, then let a(n) = smallest such x, otherwise a(n) = -1.
+ * A060394 Values of k associated with A060392.
  * @author Sean A. Irvine
  */
 public class A060394 extends PrependSequence {

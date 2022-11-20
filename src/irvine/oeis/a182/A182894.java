@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A182894 Number of weighted lattice paths in L_n having no (1, 0)-steps at level 0. The members of L_n  are paths of weight n that start at (0, 0) , end on the horizontal axis and whose steps are of the following four kinds: an (1, 0)-step with weight 1, an (1, 0)-step
+ * A182894 Number of weighted lattice paths in L_n having no (1,0)-steps at level 0. The members of L_n  are paths of weight n that start at (0,0) , end on the horizontal axis and whose steps are of the following four kinds: an (1,0)-step with weight 1, an (1,0)-step with weight 2, a (1,1)-step with weight 2, and a (1,-1)-step with weight 1. The weight of a path is the sum of the weights of its steps.
  * @author Georg Fischer
  */
 public class A182894 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A108020 Numbers n whose binary representation is 1100, n times.
+ * A108020 a(n) is the number whose binary representation is the concatenation of n strings of the four digits "1100".
  * @author Sean A. Irvine
  */
 public class A108020 extends LinearRecurrence {

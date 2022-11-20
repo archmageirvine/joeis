@@ -4,7 +4,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 
 /**
- * A060393.
+ * A060395 Smallest prime that divides k^2 + k + n for k = 0, 1, 2, ....
  * @author Sean A. Irvine
  */
 public class A060395 extends A060380 {

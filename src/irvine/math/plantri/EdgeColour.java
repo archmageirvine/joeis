@@ -32,7 +32,7 @@ final class EdgeColour {
     col1 += (long) d1 + ((long) d2 << 10);
     col2 += (long) d2 + ((long) d1 << 10);
 
-    final long bestcol = col1 < col2 ? col1 : col2;
+    final long bestcol = Math.min(col1, col2);
 
     int numGood = 0;
     if (col1 == bestcol) {

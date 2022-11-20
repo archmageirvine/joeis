@@ -4,7 +4,7 @@ package irvine.oeis.a128;
 import irvine.oeis.a033.A033981;
 
 /**
- * A128122 Numbers k such that 2^k == 6 (mod k).
+ * A128122 Numbers m such that 2^m == 6 (mod m).
  * @author Georg Fischer
  */
 public class A128122 extends A033981 {

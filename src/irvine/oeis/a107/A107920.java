@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A107920 Lucas and Lehmer numbers with parameters (1+-sqrt(-7))/2.
+ * A107920 Lucas and Lehmer numbers with parameters (1 +- sqrt(-7))/2.
  * @author Sean A. Irvine
  */
 public class A107920 extends LinearRecurrence {

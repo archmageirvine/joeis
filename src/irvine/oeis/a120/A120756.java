@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A120756 a(n) = leftmost term of M^n * [1,0,0,0,0,0] where M is the 6 X 6 matrix [1,2,3,4,5,6; 2,3,1,5,6,4; 3,1,2,6,4,5; 4,6,5,1,3,2; 5,4,6,2,1,3; 6,5,4,3,2,1].
+ * A120756 Expansion of g.f. x*(1 +82*x +366*x^2 -189*x^3)/((1+3*x)*(1+9*x)*(1-21*x)).
  * @author Georg Fischer
  */
 public class A120756 extends LinearRecurrence {

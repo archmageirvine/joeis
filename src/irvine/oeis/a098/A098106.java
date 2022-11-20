@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A098106 Hankel transform of sequence (b(n)) where b(n)=sum(i=0,n,binomial(2*i,i)).
+ * A098106 Hankel transform of sequence (b(n)) where b(n) = Sum_{i=0..n} binomial(2*i,i).
  * @author Georg Fischer
  */
 public class A098106 extends HolonomicRecurrence {

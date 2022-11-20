@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A128440 Array T by antidiagonals: T(n,k)=Floor(k*t^n) where t=golden ratio=(1+sqrt(5))/2.
+ * A128440 Array T(n,k) = floor(k*t^n) where t = golden ratio = (1 + sqrt(5))/2, read by descending antidiagonals.
  *
  * @author Georg Fischer
  */

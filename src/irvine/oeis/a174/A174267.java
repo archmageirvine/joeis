@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A174267 Primes p such that 5^p-4 is also prime.
+ * A174267 Primes p such that 5^p - 4 is also prime.
  *
  * @author Georg Fischer
  */

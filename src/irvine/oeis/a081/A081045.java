@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A081045 10th binomial transform of (1,9,0,0,0,0,0,.....).
+ * A081045 10th binomial transform of (1,9,0,0,0,0,0,...).
  * @author Sean A. Irvine
  */
 public class A081045 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a240;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A240722 Expansion of log&apos;((-1-sqrt(1-8*x)+sqrt(2+2*sqrt(1-8*x)+8*x))/(4*x)).
+ * A240722 Expansion of log'((-1-sqrt(1-8*x)+sqrt(2+2*sqrt(1-8*x)+8*x))/(4*x)).
  * @author Georg Fischer
  */
 public class A240722 extends HolonomicRecurrence {

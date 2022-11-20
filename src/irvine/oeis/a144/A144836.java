@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A144836 a(n) = round(phi^(4^n)) where phi is the golden ratio.
+ * A144836 a(n) = Lucas(4^n).
  * @author Georg Fischer
  */
 public class A144836 extends FloorSequence {

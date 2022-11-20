@@ -8,6 +8,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
  */
 public class A131259 extends HolonomicRecurrence {
 
+  /** Construct the sequence. */
   public A131259() {
     super(0, "[0, 1, 0,-3, 0, 3, 0,-1]", "0, 0, 1,-2", 0);
   }

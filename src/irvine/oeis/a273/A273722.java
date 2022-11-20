@@ -4,7 +4,7 @@ package irvine.oeis.a273;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A273722 The number of valleys of width 1 (i.e., DHU configurations, where U=(0, 1), H(1, 0), D=(0,-1)) in all bargraphs of semiperimeter n (n&gt;=2).
+ * A273722 The number of valleys of width 1 (i.e., DHU configurations, where U=(0,1), H(1,0), D=(0,-1)) in all bargraphs of semiperimeter n (n&gt;=2).
  * @author Georg Fischer
  */
 public class A273722 extends HolonomicRecurrence {

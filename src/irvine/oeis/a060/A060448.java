@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A060448.
+ * A060448 Each c(i) is "multiply" (*) or "divide" (/); d(1) = 1 &lt; d(2) &lt; ... &lt; d(m) = n are the divisors of n; a(n) is number of choices for c(1), ..., c(m-1) so that d(1) c(1) d(2) c(2) d(3), .., c(m-1) d(m) is an integer.
  * @author Sean A. Irvine
  */
 public class A060448 extends Sequence1 {

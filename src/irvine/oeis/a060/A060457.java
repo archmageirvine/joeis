@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060448.
+ * A060457 Number of solutions to y^2 + y = x^3 - x^2 modulo n.
  * @author Sean A. Irvine
  */
 public class A060457 extends Sequence1 {

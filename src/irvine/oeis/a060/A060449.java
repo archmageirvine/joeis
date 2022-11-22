@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060448.
+ * A060449 Generalized Mills numbers: a(n) = floor(c^(b^n)) where c=4.4, b=1.179.
  * @author Sean A. Irvine
  */
 public class A060449 extends Sequence1 {

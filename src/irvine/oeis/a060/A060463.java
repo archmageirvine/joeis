@@ -13,24 +13,24 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060448.
+ * A060463 Number of open positions in the game Fair Share and Varied Pairs starting with n tokens.
  * @author Sean A. Irvine
  */
 public class A060463 extends Sequence1 {
 
   private int mN = -1;
 
-  private boolean isSmashable(final Map<List<Integer>, Integer> partitionToIndex, final List<Integer> state, final boolean[] seen) {
+  private boolean isPPosition(final Map<List<Integer>, Integer> partitionToIndex, final List<Integer> partition, final boolean[] seen) {
     // Fair shares
-    for (int k = 2; k <= state.size(); ++k) {
-      if (state.get(k - 1) > 0) {
+    for (int k = 2; k <= partition.size(); ++k) {
+      if (partition.get(k - 1) > 0) {
         for (int j = 2; j <= k; ++j) {
           if (k % j == 0) {
             // k can be split evenly into j piles of size k / j
-            final ArrayList<Integer> s = new ArrayList<>(state);
-            s.set(k - 1, state.get(k - 1) - 1); // remove one pile of size k
+            final ArrayList<Integer> s = new ArrayList<>(partition);
+            s.set(k - 1, partition.get(k - 1) - 1); // remove one pile of size k
             final int t = k / j - 1;
-            s.set(t, state.get(t) + j); // add j piles of size k / j
+            s.set(t, partition.get(t) + j); // add j piles of size k / j
             if (!seen[partitionToIndex.get(s)]) {
               return false;
             }
@@ -39,15 +39,16 @@ public class A060463 extends Sequence1 {
       }
     }
     // Varied pairs
-    for (int k = 1; k <= state.size(); ++k) {
-      if (state.get(k - 1) > 0) {
-        for (int j = k + 1; j <= state.size(); ++j) {
-          if (state.get(j - 1) > 0) {
-            final ArrayList<Integer> s = new ArrayList<>(state);
+    for (int k = 1; k <= partition.size(); ++k) {
+      if (partition.get(k - 1) > 0) {
+        for (int j = k + 1; j <= partition.size(); ++j) {
+          // j > k because piles must be a different sizes
+          if (partition.get(j - 1) > 0) {
+            final ArrayList<Integer> s = new ArrayList<>(partition);
             final int i = k + j - 1;
-            s.set(i, state.get(i) + 1);
-            s.set(k - 1, state.get(k - 1) - 1);
-            s.set(j - 1, state.get(j - 1) - 1);
+            s.set(i, partition.get(i) + 1); // add one pile of size k + j
+            s.set(k - 1, partition.get(k - 1) - 1); // remove one pile of size k
+            s.set(j - 1, partition.get(j - 1) - 1); // remove one pile of size j
             if (!seen[partitionToIndex.get(s)]) {
               return false;
             }
@@ -60,7 +61,7 @@ public class A060463 extends Sequence1 {
 
   @Override
   public Z next() {
-    if (++mN <= 10) {
+    if (++mN <= 10) { // Efficiency, only the n==0 case really needs this shortcut
       return Z.ZERO;
     }
     // Possible states are the partitions of mN.
@@ -97,29 +98,32 @@ public class A060463 extends Sequence1 {
     while (true) {
       // Compute next set of remoteness N-positions
       final Set<Integer> nPositions = new HashSet<>();
-      for (final int state : pPositions) {
-        // Find every possible state that can lead to this state
-        final List<Integer> counts = indexToPartition[state];
+      for (final int partition : pPositions) {
+        // Find every possible partition that can lead to this partition
+        final List<Integer> counts = indexToPartition[partition];
+        // Fair shares
         for (int k = 1; k <= counts.size(); ++k) {
           final int j = counts.get(k - 1);
           for (int i = 2; i <= j; ++i) {
-            // combine i piles of size k
+            // Combine i piles of size k into one pile of size i * k
             final ArrayList<Integer> s = new ArrayList<>(counts);
-            s.set(k - 1, counts.get(k - 1) - i);
+            s.set(k - 1, counts.get(k - 1) - i); // remove i piles of size k
             final int t = i * k - 1;
-            s.set(t, counts.get(t) + 1);
+            s.set(t, counts.get(t) + 1); // add 1 pile of size i * k
             nPositions.add(partitionToIndex.get(s));
           }
         }
+        // Varied pairs
         for (int k = 3; k <= counts.size(); ++k) {
-          // split a pile of size k into smaller piles of different size
+          // Split a pile of size k into smaller piles of k = j + i, i > j
           if (counts.get(k - 1) > 0) {
             for (int j = 1; 2 * j < k; ++j) {
               final int i = k - j; // split k = j + i, j != i
+              assert i > j;
               final ArrayList<Integer> s = new ArrayList<>(counts);
-              s.set(k - 1, counts.get(k - 1) - 1);
-              s.set(j - 1, counts.get(j - 1) + 1);
-              s.set(i - 1, counts.get(i - 1) + 1);
+              s.set(k - 1, counts.get(k - 1) - 1); // remove 1 pile of size k
+              s.set(j - 1, counts.get(j - 1) + 1); // add 1 pile of size j
+              s.set(i - 1, counts.get(i - 1) + 1); // add 1 pile of size j
               nPositions.add(partitionToIndex.get(s));
             }
           }
@@ -140,7 +144,7 @@ public class A060463 extends Sequence1 {
       for (int k = 0; k < seen.length; ++k) {
         if (!seen[k]) {
           final List<Integer> state = indexToPartition[k];
-          if (isSmashable(partitionToIndex, state, seen)) {
+          if (isPPosition(partitionToIndex, state, seen)) {
             pPositions.add(k);
           }
         }
@@ -157,6 +161,7 @@ public class A060463 extends Sequence1 {
         break;
       }
     }
+    // Anything that was never seen as a P-position or N-position is an O-position
     long cnt = 0;
     for (final boolean v : seen) {
       if (!v) {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060448.
+ * A060462 Integers k such that k! is divisible by k*(k+1)/2.
  * @author Sean A. Irvine
  */
 public class A060462 extends Sequence1 {

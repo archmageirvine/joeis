@@ -2071,3 +2071,6 @@ A060407	Maximal number of pairwise edge-disjoint monochromatic K_3's in a K_n fo
 A060438 Triangle T(n,k), 1 <= k <= n, giving maximal size of binary code of length n and covering radius k.
 A060439 Triangle T(n,k), 1 <= k <= n, giving maximal size of ternary code of length n and covering radius k
 A060440 Triangle T(n,k), 1 <= k <= n, giving maximal size of code of length n and covering radius k over alphabet of size 4
+A060450 Triangle T(n,k) (1 <= k <= n) giving smallest covering radius of any [n,k] binary linear code
+A060451 Triangle T(m,R) (1 <= R <= m) giving shortest possible length n of an [n,n-m] binary linear code with covering radius R.
+A060454 Consider the line segment in R^n from the origin to the point v = (1,4,9,...,n^2); let d = squared distance to this line from the closest point of Z^n (excluding the endpoints). Sequence gives d times v.v.

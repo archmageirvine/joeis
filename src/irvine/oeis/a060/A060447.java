@@ -18,38 +18,37 @@ public class A060447 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    final ArrayList<Integer> players = new ArrayList<>();
+    final ArrayList<Integer> state = new ArrayList<>();
     for (int k = 0; k < mN; ++k) {
-      players.add(1);
+      state.add(1);
     }
     int donationPos = -1;
-    int playerPos = -1;
+    int statePos = -1;
     int droppedPlayers = 0;
     int zeroCounts = 0;
     while (true) {
       if (++donationPos == DONATIONS.length) {
         donationPos = 0;
       }
-      if (++playerPos == players.size()) {
+      if (++statePos == state.size()) {
         if (droppedPlayers == 0 && ++zeroCounts > HEURISTIC) {
           // Solution appears to be stable
-          return Z.valueOf(players.size());
+          return Z.valueOf(state.size());
         }
         droppedPlayers = 0;
-        playerPos = 0;
+        statePos = 0;
       }
-      //System.out.println(players + " pos=" + playerPos);
-      final int nextPlayer = (playerPos + 1) % players.size();
-      final int donation = Math.min(players.get(playerPos), DONATIONS[donationPos]);
-      players.set(nextPlayer, donation + players.get(nextPlayer));
-      if (donation == players.get(playerPos)) {
+      final int nextPlayer = (statePos + 1) % state.size();
+      final int donation = Math.min(state.get(statePos), DONATIONS[donationPos]);
+      state.set(nextPlayer, donation + state.get(nextPlayer));
+      if (donation == state.get(statePos)) {
         // player is eliminated
-        players.remove(playerPos);
+        state.remove(statePos);
         ++droppedPlayers;
-        // Note playerPos effectively increased by this deletion, so compensate
-        --playerPos;
+        // Note statePos effectively increased by this deletion, so compensate
+        --statePos;
       } else {
-        players.set(playerPos, players.get(playerPos) - donation);
+        state.set(statePos, state.get(statePos) - donation);
       }
     }
   }

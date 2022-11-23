@@ -10,13 +10,13 @@ import java.util.Set;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A060463 Number of open positions in the game Fair Share and Varied Pairs starting with n tokens.
  * @author Sean A. Irvine
  */
-public class A060463 extends Sequence1 {
+public class A060463 extends Sequence0 {
 
   private int mN = -1;
 

@@ -72,7 +72,7 @@ public class A195304 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A195304(final long a, final long b) {
-    super(0, build(a, b));
+    super(1, build(a, b));
   }
 
   /** Construct the sequence. */

@@ -1,13 +1,13 @@
 package irvine.oeis.a060;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A060445 "Dropping time" in 3x+1 problem starting at 2n+1 (number of steps to reach a lower number than starting value). Also called glide(2n+1).
  * @author Sean A. Irvine
  */
-public class A060445 extends Sequence1 {
+public class A060445 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
 

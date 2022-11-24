@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060205;
 
 /**
- * A098640 2^p + 1 where p is prime.
+ * A098640 a(n) = 2^p + 1 where p is the n-th prime.
  * @author Georg Fischer
  */
 public class A098640 extends A060205 {

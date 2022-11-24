@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A005451 Define b(n) = ( (n-1)*(n^2-3*n+1)*b(n-1) - (n-2)^3*b(n-2) )/(n*(n-3)); b(2) = b(3) = 1; sequence gives denominators of b(n).
+ * A005451 Denominator of (1 + Gamma(n))/n.
  * @author Sean A. Irvine
  */
 public class A005451 extends Sequence2 {

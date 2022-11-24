@@ -216,7 +216,7 @@ public final class PolynomialUtils {
   private static final PolynomialRingField<Z> ZX = new PolynomialRingField<>("y", IntegerField.SINGLETON);
   /** Polynomial field over the rationals. */
   public static final PolynomialRingField<Q> QX = new PolynomialRingField<>("y", Rationals.SINGLETON);
-  /** Bivariate polynomial over the rationals. */
+  /** Bivariate polynomials over the rationals. */
   public static final PolynomialRingField<Polynomial<Q>> QXX = new PolynomialRingField<>(QX);
   private static final PolynomialRingField<Polynomial<Z>> ZXX = new PolynomialRingField<>(ZX);
 
@@ -349,5 +349,19 @@ public final class PolynomialUtils {
     final PolynomialRingField<E> ring = new PolynomialRingField<>(fld);
     final Polynomial<E> sum = ring.sum(1, n, i -> ring.divide(deepSubstitute(ring, p.truncate(n / i), i), fld.coerce(i)));
     return ring.exp(sum, n);
+  }
+
+  /**
+   * Lift a polynomial over a single variable to a polynomial over two variables with the supplied
+   * polynomial becoming the outer variable.
+   * @param p polynomial
+   * @return lifted polynomial
+   */
+  public static Polynomial<Polynomial<Q>> lift(final Polynomial<Q> p) {
+    final Polynomial<Polynomial<Q>> res = QXX.empty();
+    for (final Q e : p) {
+      res.add(QX.monomial(e, 0));
+    }
+    return res;
   }
 }

@@ -4,7 +4,7 @@ import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A018785 Entries of A001273 with trailing 9's stripped (at n=13 term becomes periodic with period 49).
+ * A018785 Terms of A001273 with trailing 9's stripped (at n=13 term becomes periodic with period 49).
  * @author Sean A. Irvine
  */
 public class A018785 extends PrependSequence {

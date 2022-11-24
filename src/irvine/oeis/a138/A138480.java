@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A138480 Autobiographical numbers: the first digit specifies how many 0 in the number, the next digit specifies how many 1, etc. This version is not limited to 10 digits.
+ * A138480 Autobiographical numbers: the first digit specifies how many 0's in the number, the next digit specifies how many 1's, etc. This version is not limited to 10 digits.
  * @author Georg Fischer
  */
 public class A138480 extends FiniteSequence {

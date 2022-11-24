@@ -25,6 +25,16 @@ public class FiniteSequence extends ArrayList<Z> implements Sequence {
    * Construct the sequence.
    * @param seq the values
    */
+  public FiniteSequence(final int... seq) {
+    for (final long t : seq) {
+      add(Z.valueOf(t));
+    }
+  }
+
+  /**
+   * Construct the sequence.
+   * @param seq the values
+   */
   public FiniteSequence(final long... seq) {
     for (final long t : seq) {
       add(Z.valueOf(t));

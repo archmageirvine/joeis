@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A054683 Numbers n such that sum of digits is even.
+ * A054683 Numbers whose sum of digits is even.
  * @author Sean A. Irvine
  */
 public class A054683 extends Sequence1 {

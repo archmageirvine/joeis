@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A164131 Numbers n such that n^2 == 2 (mod 31).
+ * A164131 Numbers k such that k^2 == 2 (mod 31).
  * @author Sean A. Irvine
  */
 public class A164131 extends LinearRecurrence {

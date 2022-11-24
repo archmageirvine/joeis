@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000037;
 import irvine.oeis.a013.A013929;
 
 /**
- * A051144 Nonsquarefree nonsquares: each entry has a square factor but is not a perfect square itself.
+ * A051144 Nonsquarefree nonsquares: each term has a square factor but is not a perfect square itself.
  * @author Sean A. Irvine
  */
 public class A051144 extends IntersectionSequence {

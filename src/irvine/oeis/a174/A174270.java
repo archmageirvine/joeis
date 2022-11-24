@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A174270 Primes p such that 17^p-16 is also prime.
+ * A174270 Primes p such that 17^p - 16 is also prime.
  *
  * @author Georg Fischer
  */

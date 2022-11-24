@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A109023 3-almost primes (A014612) whose digit reversal is different and also has 3 prime factors (with multiplicity). "Emirp Tsolma-3.".
+ * A109023 3-almost primes (A014612) whose digit reversal is different and also has 3 prime factors (with multiplicity). "Emirp Tsomla-3.".
  * @author Georg Fischer
  */
 public class A109023 extends Sequence1 {

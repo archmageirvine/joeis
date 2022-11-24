@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005450 Numerator of (1+Gamma[n])/n.
+ * A005450 Numerator of (1 + Gamma(n))/n.
  * @author Sean A. Irvine
  */
 public class A005450 extends Sequence1 {

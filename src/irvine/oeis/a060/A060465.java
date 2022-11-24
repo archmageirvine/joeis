@@ -9,7 +9,7 @@ import irvine.math.z.Z;
  */
 public class A060465 extends A060464 {
 
-  private Z check(final Z x3, final long y, final long z, final Z n) {
+  static Z check(final Z x3, final long y, final long z, final Z n) {
     final Z x = x3.root(3);
     if (x3.auxiliary() != 1 || x.bitLength() > 63) {
       return null;

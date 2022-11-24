@@ -1,6 +1,5 @@
 package irvine.oeis.a060;
 
-import irvine.math.LongUtils;
 import irvine.math.z.Z;
 
 /**
@@ -8,19 +7,6 @@ import irvine.math.z.Z;
  * @author Sean A. Irvine
  */
 public class A060467 extends A060464 {
-
-  private Z check(final Z x3, final long y, final long z, final Z n) {
-    final Z x = x3.root(3);
-    if (x3.auxiliary() != 1 || x.bitLength() > 63) {
-      return null;
-    }
-    final long lx = x.longValue();
-    if (Math.abs(lx) > y) {
-      return null;
-    }
-    final long d = Math.abs(LongUtils.gcd(lx, y, z));
-    return d == 1 || n.mod(d) != 0 ? x : null;
-  }
 
   @Override
   public Z next() {
@@ -39,19 +25,19 @@ public class A060467 extends A060464 {
       final Z pz3 = n.add(z3);
       for (long y = 0; y <= z; ++y) {
         final Z y3 = Z.valueOf(y).pow(3);
-        final Z x1 = check(nz3.subtract(y3), y, z, n);
+        final Z x1 = A060465.check(nz3.subtract(y3), y, z, n);
         if (x1 != null) {
           return Z.valueOf(z);
         }
-        final Z x2 = check(nz3.add(y3), y, z, n);
+        final Z x2 = A060465.check(nz3.add(y3), y, z, n);
         if (x2 != null) {
           return Z.valueOf(z);
         }
-        final Z x3 = check(pz3.subtract(y3), y, z, n);
+        final Z x3 = A060465.check(pz3.subtract(y3), y, z, n);
         if (x3 != null) {
           return Z.valueOf(-z);
         }
-        final Z x4 = check(pz3.add(y3), y, z, n);
+        final Z x4 = A060465.check(pz3.add(y3), y, z, n);
         if (x4 != null) {
           return Z.valueOf(-z);
         }

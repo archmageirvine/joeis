@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A095698 Number of permutations of {1, 2, 3,...,n} where, for 1 &lt; i &lt;= n,
+ * A095698 Number of permutations of {1,2,3,...,n} where, for 1 &lt; i &lt;= n, the i-th number has maximized sum of the i-1 absolute differences from all previous numbers of the permutation.
  * the i-th number has maximized sum of the i-1 absolute differences from all previous numbers of the permutation.
  * @author Georg Fischer
  */

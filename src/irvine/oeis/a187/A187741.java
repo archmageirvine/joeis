@@ -12,6 +12,7 @@ public class A187741 extends Sequence0 {
 
   private int mN = -1;
 
+  /** Construct the sequence. */
   public Z next() {
     // a(2*n) = (n+1)!/2,  a(2*n-1) = n!,  for n>0 with a(0)=1.
     ++mN;

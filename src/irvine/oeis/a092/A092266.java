@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002894;
 
 /**
- * A092266 Expansion of (1+4x)/AGM(1+4x, 1-4x) where AGM denotes the arithmetic-geometric mean.
+ * A092266 Expansion of (1+4x)/AGM(1+4x,1-4x) where AGM denotes the arithmetic-geometric mean.
  * @author Georg Fischer
  */
 public class A092266 extends A002894 {

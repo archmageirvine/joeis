@@ -9,9 +9,9 @@ import irvine.oeis.a007.A007530;
  */
 public class A136162 extends A007530 {
 
+  private static final int[] INCR = new int[]{8, 0, 2, 6};
   private int mN = 0;
   private Z mA;
-  private static final int[] mIncr = new int[]{8, 0, 2, 6};
 
   @Override
   public Z next() {
@@ -20,6 +20,6 @@ public class A136162 extends A007530 {
     if ((mN & 3) == 1) {
       mA = super.next();
     }
-    return mA.add(mIncr[mN & 3]);
+    return mA.add(INCR[mN & 3]);
   }
 }

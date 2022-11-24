@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A258213 Number of permutations of {1, 2, 3,...,n} such that no even numbers are adjacent.
+ * A258213 Number of permutations of {1,2,3,...,n} such that no even numbers are adjacent.
  * @author Georg Fischer
  */
 public class A258213 extends HolonomicRecurrence {

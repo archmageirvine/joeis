@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A113549 a(n) = product of n successive numbers up to n, if n is even a(n) = n*(n-1)*.. = n!,
+ * A113549 a(n) = product of n successive numbers up to n, if n is even a(n) = n*(n-1)*.. = n!,if n is odd a(n) = n(n+1)(n+2)... 'n' terms.
  * if n is odd a(n) = n(n+1)(n+2)... &apos;n&apos; terms.
  * @author Georg Fischer
  */

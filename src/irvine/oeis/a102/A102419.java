@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060445;
 
 /**
- * A102419 &quot;Dropping time&quot; in 3x+1 problem starting at n (number of steps to reach a lower number than starting value);
+ * A102419 "Dropping time" in 3x+1 problem starting at n (number of steps to reach a lower number than starting value); a(1) = 0 by convention. Also called glide(n).
  * a(1) = 0 by convention. Also called glide(n).
  * @author Georg Fischer
  */

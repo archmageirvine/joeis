@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A118192 Antidiagonal sums of triangle A118185: a(n) = Sum_{k=0..[n/2]} 4^(k*(n-2*k)) for n&gt;=0.
+ * A118192 Antidiagonal sums of triangle A118190: a(n) = Sum_{k=0..floor(n/2)} 5^(k*(n-2*k)) for n&gt;=0.
  * @author Georg Fischer
  */
 public class A118192 extends Sequence0 {

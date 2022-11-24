@@ -12,6 +12,7 @@ public class A155160 extends Sequence0 {
 
   private int mN = -1;
 
+  /** Construct the sequence. */
   public Z next() {
     ++mN;
     return Z.ONE.shiftLeft(mN).multiply(MemoryFactorial.SINGLETON.doubleFactorial(mN + 3));

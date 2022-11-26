@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A005451 Denominator of (1 + Gamma(n))/n.
+ * A005451 a(n)=1 if n is a prime number, otherwise a(n)=n.
  * @author Sean A. Irvine
  */
 public class A005451 extends Sequence2 {

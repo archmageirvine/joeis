@@ -1,0 +1,22 @@
+package irvine.oeis.a060;
+
+import irvine.math.IntegerUtils;
+import irvine.math.z.Z;
+
+/**
+ * A060500 a(n) = number of drops in the n-th permutation of list A060118; the average of digits (where "digits" may eventually obtain also any values &gt; 9) in each siteswap pattern A060496(n).
+ * @author Sean A. Irvine
+ */
+public class A060500 extends A060117 {
+
+  private int mN = -1;
+
+  @Override
+  public Z next() {
+    if (++mN == 0) {
+      return Z.ZERO;
+    }
+    final int [] ss = permUnrank3R(mN).toSiteSwap();
+    return Z.valueOf(IntegerUtils.sum(ss) / ss.length);
+  }
+}

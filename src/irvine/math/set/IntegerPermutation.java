@@ -200,4 +200,17 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
     }
     return lcm;
   }
+
+  /**
+   * Return the site swap representation of this permutation.
+   * @return site swap representation
+   */
+  public int[] toSiteSwap() {
+    final IntegerPermutation inv = inverse();
+    final int[] a = new int[size()];
+    for (int k = 0; k < a.length; ++k) {
+      a[k] = (inv.image(k) + a.length - k) % a.length;
+    }
+    return a;
+  }
 }

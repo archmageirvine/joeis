@@ -5,7 +5,7 @@ import irvine.oeis.a008.A008683;
 import irvine.oeis.transform.BinomialTransform;
 
 /**
- * A124839 Inverse binomial transform of the Mobius sequence mu(n), A008683.
+ * A124839 Inverse binomial transform of the Moebius sequence {mu(k), k &gt;= 1}, A008683.
  * @author Georg Fischer
  */
 public class A124839 extends BinomialTransform {

@@ -16,7 +16,7 @@ public class A060500 extends A060117 {
     if (++mN == 0) {
       return Z.ZERO;
     }
-    final int [] ss = permUnrank3R(mN).toSiteSwap();
+    final int[] ss = permUnrank3R(mN).toSiteSwap();
     return Z.valueOf(IntegerUtils.sum(ss) / ss.length);
   }
 }

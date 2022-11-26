@@ -9,10 +9,28 @@ import irvine.oeis.a000.A000203;
  */
 public class A144613 extends A000203 {
 
+  protected int mN = 0;
+  private int mMult;
+
+  /** Construct the sequence. */
+  public A144613() {
+    this(3);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param mult
+   */
+  public A144613(final int mult) {
+    mMult = mult;
+  }
+
   @Override
   public Z next() {
-    super.next();
-    super.next();
+    ++mN;
+    for (int i = mMult; i > 1; --i) {
+      super.next();
+    }
     return super.next();
   }
 }

@@ -20,7 +20,12 @@ public class JavaProducer implements Producer {
     }
     try {
       return (Sequence) Class.forName("irvine.oeis.a" + aNumber.substring(1, 4) + '.' + aNumber).getDeclaredConstructor().newInstance();
-    } catch (final ClassNotFoundException | IllegalAccessException | InstantiationException | NoSuchMethodException | InvocationTargetException e) {
+    } catch (final InvocationTargetException e) {
+      // Catch a failure during construction due to Java exception during construction
+      // In this situation, code for the sequence exists, but for some reason could not be used.
+      // Rather than silently hide this error, pass it back up the chain.
+      throw new RuntimeException(e.getTargetException());
+    } catch (final ClassNotFoundException | IllegalAccessException | InstantiationException | NoSuchMethodException e) {
       if (mVerbose) {
         StringUtils.message("No Java implementation was found for " + aNumber);
       }

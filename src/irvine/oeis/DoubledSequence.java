@@ -12,7 +12,7 @@ public class DoubledSequence extends AbstractSequence {
   private int mN; // 
   private int mILen;
   private Z mA;
-  private Z[] mInits;
+  private final Z[] mInits;
 
   /**
    * Double another sequence.

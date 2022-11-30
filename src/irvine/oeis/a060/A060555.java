@@ -12,44 +12,22 @@ import irvine.oeis.Sequence1;
 public class A060555 extends Sequence1 {
 
   private long mN = 0;
-  private long mT = 1;
   private final ArrayList<Long> mA = new ArrayList<>();
-
-  private boolean isRep(long n) {
-    if (n < 11) {
-      return false;
-    }
-    final long d = n % 10;
-    n /= 10;
-    while (n != 0) {
-      if (n % 10 != d) {
-        return false;
-      }
-      n /= 10;
-    }
-    return true;
-  }
 
   @Override
   public Z next() {
-    if (++mN == mT) {
-      // Power of 10 add at end
-      mA.add(0, mN);
-      mT *= 10;
-    } else {
-      final long prev = isRep(mN) ? mN / 10 : mN - 1;
-      for (int k = 0; k < mA.size(); ++k) {
-        if (mA.get(k) == prev) {
-          mA.add(k + 1, mN);
-          break;
-        }
+    ++mN;
+    String best = A060554.cat(mA, 0, mN);
+    int bestPos = 0;
+    for (int k = 1; k <= mA.size(); ++k) {
+      final String s = A060554.cat(mA, k, mN);
+      if (s.compareTo(best) < 0) {
+        bestPos = k;
+        best = s;
       }
     }
-    final StringBuilder sb = new StringBuilder();
-    for (final long v : mA) {
-      sb.append(v);
-    }
-    return new Z(sb);
+    mA.add(bestPos, mN);
+    return new Z(best);
   }
 }
 

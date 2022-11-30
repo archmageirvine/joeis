@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A214992 Power floor sequence of sqrt(5).
+ * A214999 Power floor sequence of sqrt(5).
  * @author Georg Fischer
  */
 public class A214999 extends Sequence0 {

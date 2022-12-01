@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence1;
 
 /**
  * A005451 a(n)=1 if n is a prime number, otherwise a(n)=n.
  * @author Sean A. Irvine
  */
-public class A005451 extends Sequence2 {
+public class A005451 extends Sequence1 {
 
   private int mN = 0;
   private Z mF = Z.ONE;

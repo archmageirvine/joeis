@@ -11,6 +11,12 @@ public class A128280 extends A055265 {
 
   private int mN = -1;
 
+
+  @Override
+  public int getOffset() {
+    return 0;
+  }
+
   @Override
   public Z next() {
     // a(2n-1) = A055265(2n-1) + 1, a(2n) = A055265(2n) - 1, for all n >= 1.

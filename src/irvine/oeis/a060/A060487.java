@@ -58,6 +58,11 @@ public class A060487 extends A188445 {
   }
 
   @Override
+  public int getOffset() {
+    return 3;
+  }
+
+  @Override
   public Z next() {
     if (--mM < 0) {
       ++mN;

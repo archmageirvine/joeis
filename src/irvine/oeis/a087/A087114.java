@@ -17,6 +17,11 @@ public class A087114 extends A008324 {
   }
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   public Z next() {
     //  * a(2*n + 1) = 1, a(2*n) = A008324(n).
     ++mN;

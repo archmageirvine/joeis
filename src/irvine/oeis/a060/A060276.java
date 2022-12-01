@@ -16,6 +16,11 @@ public class A060276 extends MemorySequence {
   private final TreeSet<Z> mSums = new TreeSet<>();
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   protected Z computeNext() {
     if (size() == 0) {
       mSums.add(Z.SIX);

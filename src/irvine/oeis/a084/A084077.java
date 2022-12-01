@@ -5,7 +5,7 @@ package irvine.oeis.a084;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A084077 Length of list created by n substitutions k -&gt; Range[ -Abs[k+1], Abs[k-1]] starting with {1}.
+ * A084077 Length of list created by n substitutions k -&gt; Range(-abs(k+1), abs(k-1)) starting with {1}.
  * @author Georg Fischer
  */
 public class A084077 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A181447 Numbers n such that 3 is the largest prime factor of n^2 - 1.
+ * A181447 Numbers k such that 3 is the largest prime factor of k^2 - 1.
  * <code>is(n)=n=n^2-1; forprime(p=2, 13, n/=p^valuation(n, p)); n&gt;1 &amp;&amp; 17^valuation(n, 17)==n</code>.
  * @author Georg Fischer
  */

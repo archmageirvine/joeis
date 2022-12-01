@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A013921 Composite numbers that are equal to the sum of first k composites for some k.
+ * A013921 Composite numbers that are equal to the sum of the first k composites for some k.
  * @author Sean A. Irvine
  */
 public class A013921 extends Sequence1 {

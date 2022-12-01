@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A176951 Let p = prime(n). Then a(n) = Fibonacci(p+1)/p if this is integer,
+ * A176951 Let p = prime(n). Then a(n) = Fibonacci(p+1)/p if this is integer, otherwise a(n) = Fibonacci(p-1)/p if this is integer, and fall back to a(n)=0 if both are non-integer.
  * otherwise a(n) = Fibonacci(p-1)/p if this is integer,
  * and fall back to a(n)=0 if both are non-integer.
  * @author Georg Fischer

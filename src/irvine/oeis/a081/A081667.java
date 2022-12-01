@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A081667 a(n) = Fibonacci(binomial(n+2, 2))
+ * A081667 a(n) = Fibonacci(binomial(n+2,2)).
  * @author Georg Fischer
  */
 public class A081667 extends Sequence0 {

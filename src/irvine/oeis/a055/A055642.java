@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A055642 Number of digits in decimal expansion of n.
+ * A055642 Number of digits in the decimal expansion of n.
  * @author Sean A. Irvine
  */
 public class A055642 extends Sequence0 {

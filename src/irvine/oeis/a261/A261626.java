@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A261626 a(n) = Fibonacci(n!) - Fibonacci(n)!
+ * A261626 a(n) = Fibonacci(n!) - Fibonacci(n)!.
  * @author Georg Fischer
  */
 public class A261626 extends Sequence0 {

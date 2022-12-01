@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060565.
+ * A060568 Number of primes between n and R(n) where R(n) (A004086) is the digit reversal of n.
  * @author Sean A. Irvine
  */
 public class A060568 extends Sequence1 {

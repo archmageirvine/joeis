@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000045;
 
 /**
- * A325174 a(n) = Fibonacci(n) * A004018(n) for n>=1 with a(0)=1, where A004018(n) is the number of ways of writing n as a sum of 2 squares.
+ * A325174 a(n) = Fibonacci(n)^n mod prime(n).
  * @author Georg Fischer
  */
 public class A325174 extends A000045 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A247338 a(n) = Lucas(n) concatenated with Fibonacci(n).
+ * A247338 a(n) = Fibonacci(n) concatenated with Lucas(n).
  * @author Georg Fischer
  */
 public class A247338 extends Sequence0 {

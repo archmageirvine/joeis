@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A215052 a(n) = (binomial(n, 5) - floor(n/5)) / 5.
+ * A215052 a(n) = (binomial(n,5) - floor(n/5)) / 5.
  * Recurrence: -n*(n^2+2*n+17)*a(n) + (5*n^2+15*n+60)*(a(n-1) + a(n-2) + a(n-3) + a(n-4)) + (n+3)*(n^2+4*n+20)*a(n-5) = 0
  * @author Georg Fischer
  */

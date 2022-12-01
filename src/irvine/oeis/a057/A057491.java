@@ -5,7 +5,7 @@ package irvine.oeis.a057;
 import irvine.oeis.a015.A015889;
 
 /**
- * A057491 Numbers n such that n | 12^n + 11^n + 10^n + 9^n + 8^n + 7^n + 6^n + 5^n.
+ * A057491 Numbers k such that k | 12^k + 11^k + 10^k + 9^k + 8^k + 7^k + 6^k + 5^k.
  *
  * @author Georg Fischer
  */

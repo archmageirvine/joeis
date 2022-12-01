@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002475;
 
 /**
- * A057476 Numbers n such that x^n + x^6 + 1 is irreducible over GF(2).
+ * A057476 Numbers k such that x^k + x^6 + 1 is irreducible over GF(2).
  * @author Sean A. Irvine
  */
 public class A057476 extends A002475 {

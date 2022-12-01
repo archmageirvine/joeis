@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A099326 Expansion of ((1-2x)sqrt(1+2x)+sqrt(1-2x))/(2(1-2x)^(5/2)).
+ * A099326 Expansion of ((1-2x)*sqrt(1+2x) + sqrt(1-2x))/(2*(1-2x)^(5/2)).
  * Recurrence: n*(n-2)*a(n) +2*(-n^2+3)*a(n-1) -4*(n-1)*(n-4)*a(n-2) +8*(n-1)*(n-2)*a(n-3)=0.
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A063680 Solutions to sigma(n)+7 = sigma(n+7).
+ * A063680 Solutions to sigma(k) + 7 = sigma(k+7).
  *
  * @author Georg Fischer
  */

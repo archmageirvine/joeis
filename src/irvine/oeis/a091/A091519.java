@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A091519 G.f.: sum(k&gt;=0, 2^k*t*(1+t)/(1-t)^3, t=x^2^k).
+ * A091519 G.f.: Sum_{k&gt;=0} (2^k*t*(1+t)/(1-t)^3, t=x^2^k).
  * a(n)=2*n*n-n*n/2^valuation(n, 2).
  * @author Georg Fischer
  */

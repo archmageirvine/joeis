@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002475;
 
 /**
- * A057460 Numbers n such that x^n + x^2 + 1 is irreducible over GF(2).
+ * A057460 Numbers k such that x^k + x^2 + 1 is irreducible over GF(2).
  * @author Sean A. Irvine
  */
 public class A057460 extends A002475 {

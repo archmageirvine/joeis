@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A197190 a(n) = a(n) = Lucas(phi(n^2)).
+ * A197190 a(0) = 2, a(n) = Lucas(phi(n^2)) for n &gt; 0.
  * @author Georg Fischer
  */
 public class A197190 extends Sequence0 {

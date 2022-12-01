@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060563.
+ * A060563 First n digits after decimal point in the expansion of sqrt(n), or 0 if n is a square. Leading zeros omitted.
  * @author Sean A. Irvine
  */
 public class A060563 extends Sequence1 {

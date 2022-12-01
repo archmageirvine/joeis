@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A113753 Fibonacci(n+1) + prime(n).
+ * A113753 a(n) = Fibonacci(n-1) + prime(n).
  * @author Georg Fischer
  */
 public class A113753 extends A000040 {

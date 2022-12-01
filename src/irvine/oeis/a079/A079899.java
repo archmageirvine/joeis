@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
- * A079899 a(1) = 1; a(n) = Fibonacci(n) - Fibonacci(n-1)* a(n-1) if n > 1.
+ * A079899 a(1) = 1; a(n) = Fibonacci(n) - Fibonacci(n-1)* a(n-1) if n &gt; 1.
  * @author Georg Fischer
  */
 public class A079899 extends Sequence1 {

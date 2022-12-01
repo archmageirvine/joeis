@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002475;
 
 /**
- * A057478 Numbers n such that x^n + x^8 + 1 is irreducible over GF(2).
+ * A057478 Numbers k such that x^k + x^8 + 1 is irreducible over GF(2).
  * @author Sean A. Irvine
  */
 public class A057478 extends A002475 {

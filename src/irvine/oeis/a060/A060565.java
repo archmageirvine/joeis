@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060565.
+ * A060565 Follow trajectory of 2n+1 in the '3x+1' problem until a lower number is reached; A060445 gives number of steps for this to happen. Sequence gives the first lower number that is reached.
  * @author Sean A. Irvine
  */
 public class A060565 extends Sequence1 {

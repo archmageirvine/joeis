@@ -1,7 +1,7 @@
 package irvine.oeis.a036;
 
 /**
- * A036076 E.g.f.: exp((exp(p*x)-p-1)/p+exp(x)) for p=6.
+ * A036076 Expansion of e.g.f. exp((exp(p*x)-p-1)/p+exp(x)) for p=6.
  * @author Sean A. Irvine
  */
 public class A036076 extends A036074 {

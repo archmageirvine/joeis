@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A216134 Numbers n such that T_n and 2*T_n + 1 are triangular.
+ * A216134 Numbers k such that 2 * A000217(k) + 1 is triangular.
  * @author Sean A. Irvine
  */
 public class A216134 extends LinearRecurrence {

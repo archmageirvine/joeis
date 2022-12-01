@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A273397 Fibonacci(Catalan(n)).
+ * A273397 a(n) = Fibonacci(Catalan(n)).
  * @author Georg Fischer
  */
 public class A273397 extends A000108 {

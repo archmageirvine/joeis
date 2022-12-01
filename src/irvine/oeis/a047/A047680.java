@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A047680 Order of cyclic group of diffeomorphism classes of exotic (4n-1)-spheres which bound parallelizable manifolds, for n &gt;= 2.
+ * A047680 a(n) = 2^(2*n-2) * (2^(2*n-1)-1) * numerator(|Bernoulli(4*n)|/n).
  * @author Sean A. Irvine
  */
 public class A047680 extends Sequence1 {

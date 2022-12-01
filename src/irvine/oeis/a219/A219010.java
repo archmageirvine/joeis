@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A219010 a(n) = Lucas(2*5^n).
+ * A219010 Numerators in a product expansion for sqrt(5).
  * @author Georg Fischer
  */
 public class A219010 extends Sequence0 {

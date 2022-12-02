@@ -15,10 +15,10 @@ public class A060595 extends Sequence3 {
   private int[][][][] mX;
   private long mCnt = 0;
 
-  boolean testValid(int a, int b, int c, int d) {
+  boolean testValid(final int a, final int b, final int c, final int d) {
     int i, j, k, l, m;
     for (int e = 0; e < d; ++e) {
-      if (e == a || e == b || e == c || e == d) {
+      if (e == a || e == b || e == c) {
         continue;
       }
       if (e < a) {

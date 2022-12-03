@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.AntidiagonalSequence;
 
 /**
- * A060589.
+ * A358349 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A358349 extends AntidiagonalSequence {

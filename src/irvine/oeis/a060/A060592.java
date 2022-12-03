@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060592.
+ * A060592 Square table by antidiagonals of minimum number of moves between two positions in the Tower of Hanoi (with three pegs: 0,1,2), where with position n written in base 3, xyz means smallest disk is on peg z, second smallest is on peg y, third smallest on peg x, etc. and leading zeros indicate largest disks are all on peg 0.
  * @author Sean A. Irvine
  */
 public class A060592 extends Sequence0 {

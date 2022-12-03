@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A048298 a(n) = n if n=2^i with i=0,1,2,3,...; else a(n) = 0.
+ * A048298 a(n) = n if n=2^i for i &gt;= 0, otherwise a(n) = 0.
  * @author Sean A. Irvine
  */
 public class A048298 extends Sequence0 {

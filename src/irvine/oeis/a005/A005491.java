@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A005491 a(n) = n^3 + 3n + 1.
+ * A005491 a(n) = n^3 + 3*n + 1.
  * @author Sean A. Irvine
  */
 public class A005491 extends Sequence0 {

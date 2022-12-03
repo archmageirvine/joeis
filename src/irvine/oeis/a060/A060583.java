@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A060589.
+ * A060583 A ternary code related to the Tower of Hanoi.
  * @author Sean A. Irvine
  */
 public class A060583 extends MemorySequence {

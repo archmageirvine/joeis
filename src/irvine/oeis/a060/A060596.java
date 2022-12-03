@@ -1,11 +1,14 @@
 package irvine.oeis.a060;
 
+import java.util.Arrays;
+
+import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.util.array.MultidimensionalIntArray;
 
 /**
- * A060589.
+ * A060596 Number of tilings of the 4-dimensional zonotope constructed from D vectors.
  * @author Sean A. Irvine
  */
 public class A060596 extends AbstractSequence {
@@ -64,42 +67,41 @@ public class A060596 extends AbstractSequence {
     return true;
   }
 
-  void recFill2(int a, int b, int c, int d, int e) {
-    if (a == b) {
-      a = 0;
-      ++b;
-      if (b == c) {
-        b = 1;
-        ++c;
-        if (c == d) {
-          c = 2;
-          ++d;
-          if (d == e) {
-            d = 3;
-            ++e;
-          }
-        }
+  void recFill2(final int n, final int... v) {
+    for (int k = 1; k < v.length; ++k) {
+      if (v[k - 1] == v[k]) {
+        v[k - 1] = k - 1;
+        ++v[k];
+      } else {
+        break;
       }
     }
-    if (e == mN) {
+    if (v[v.length - 1] == n) {
       ++mCnt;
     } else {
-      for (int v = -1; v <= 1; v += 2) {
-        mX.set(new int[] {a, b, c, d, e}, v);
-        if (testValid(a, b, c, d, e)) {
-          recFill2(a + 1, b, c, d, e);
+      for (int u = -1; u <= 1; u += 2) {
+        mX.set(v, u);
+        if (testValid(v)) {
+          final int[] vv = Arrays.copyOf(v, v.length);
+          ++vv[0];
+          recFill2(n, vv);
         }
-        mX.set(new int[] {a, b, c, d, e}, 0);
+        mX.set(v, 0);
       }
     }
   }
 
+  protected Z count(final int d, final int n) {
+    mCnt = 0;
+    final int[] t = new int[d];
+    Arrays.fill(t, n);
+    mX = new MultidimensionalIntArray(t);
+    recFill2(n, IntegerUtils.identity(new int[d]));
+    return Z.valueOf(mCnt);
+  }
+
   @Override
   public Z next() {
-    ++mN;
-    mCnt = 0;
-    mX = new MultidimensionalIntArray(mN, mN, mN, mN, mN);
-    recFill2(0, 1, 2, 3, 4);
-    return Z.valueOf(mCnt);
+    return count(5, ++mN);
   }
 }

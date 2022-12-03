@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007501;
 
 /**
- * A117872 Parity of the iterated triangular numbers, using &quot;2&quot; as a seed.
+ * A117872 Parity of the iterated triangular numbers, using "2" as a seed.
  * @author Georg Fischer
  */
 public class A117872 extends A007501 {

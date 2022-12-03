@@ -9,7 +9,7 @@ import irvine.oeis.a051.A051626;
 import irvine.oeis.a051.A051628;
 
 /**
- * A056055 Integers &gt; 1 where the decimal expansion of 1/n contains n as a string (if 1/n is finite, trailing zeros do not count).
+ * A056055 Integers k &gt; 1 such that the decimal expansion of 1/k contains k as a string. (If the decimal expansion terminates, trailing zeros do not count.).
  * @author Sean A. Irvine
  */
 public class A056055 extends Sequence1 {

@@ -46,7 +46,7 @@ public final class Connect4Board implements Comparable<Connect4Board> {
   }
 
   /**
-   * Test if the supplied array is in the least of the two reflections.
+   * Test if the supplied array is the least of the two reflections.
    * @param board board
    * @return true iff is the least to the two orderings
    */

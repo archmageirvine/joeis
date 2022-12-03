@@ -15,7 +15,7 @@ public class A006245 extends Sequence1 {
   // After Matthew J. Samuel
 
   private int mN = 0;
-  private HashMap<String, Z> mCache = new HashMap<>();
+  private final HashMap<String, Z> mCache = new HashMap<>();
 
   private Z classes(final int[] perm, final int spot, final int negs) {
     Z sums = Z.ZERO;

@@ -2075,3 +2075,4 @@ A060450 Triangle T(n,k) (1 <= k <= n) giving smallest covering radius of any [n,
 A060451 Triangle T(m,R) (1 <= R <= m) giving shortest possible length n of an [n,n-m] binary linear code with covering radius R.
 A060454 Consider the line segment in R^n from the origin to the point v = (1,4,9,...,n^2); let d = squared distance to this line from the closest point of Z^n (excluding the endpoints). Sequence gives d times v.v.
 A060564	Number of elliptic curves (up to isogeny) of conductor n.
+A060570 Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here d=2 and D varies

@@ -10,6 +10,7 @@ import irvine.oeis.triangle.AntidiagonalSequence;
  */
 public class A358349 extends AntidiagonalSequence {
 
+  /** Construct the sequence. */
   public A358349() {
     super(1, new MemoryFunctionInt2<>() {
       @Override

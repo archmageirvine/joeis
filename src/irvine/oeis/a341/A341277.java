@@ -38,7 +38,7 @@ public class A341277 extends Sequence0 {
     final int k = mN / 4;
     int result = 4 * k * k * k;
     switch (mN % 4) { // Theorem 2, eqn. (1)
-      case 0: // m(4k    ) = (4k^3 + 15k^2 + 41k − 12)/3;
+      case 0: // m(4k    ) = (4k^3 + 15k^2 + 41k - 12)/3;
         result += 15 * k * k + 41 * k - 12;
         break;
       case 1: // m(4k + 1) = (4k^3 + 18k^2 + 50k     )/3;

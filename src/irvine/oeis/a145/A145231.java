@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
 public class A145231 extends Sequence0 {
 
   private int mOffset;
-  private int mBase;
+  private final int mBase;
   private int mProd;
 
   /** Construct the sequence. */
@@ -21,7 +21,7 @@ public class A145231 extends Sequence0 {
 
   /**
    * Generic constructor with parameters
-   * @param offset fírst index
+   * @param offset first index
    * @param base take a power of this
    */
   public A145231(final int offset, final int base) {

@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.math.z.Z;
 
 /**
- * A060637.
+ * A060637 Triangle T(n,k) (0 &lt;= k &lt;= n) giving number of tilings of the k-dimensional zonotope constructed from n vectors.
  * @author Sean A. Irvine
  */
 public class A060637 extends A060596 {

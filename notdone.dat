@@ -2077,3 +2077,11 @@ A060454 Consider the line segment in R^n from the origin to the point v = (1,4,9
 A060564	Number of elliptic curves (up to isogeny) of conductor n.
 A060570 Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here d=2 and D varies.
 A060608 Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here d=3 and D varies.
+A060612 Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here d=4 and D varies
+A060614 Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here d=5 and D varies.
+A060616 Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here d=6 and D varies.
+A060617 Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here d=7 and D varies.
+A060618 Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here d=8 and D varies.
+A060619 Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here d=9 and D varies.
+A060621 Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here the codimension D-d is equal to 3 and d varies.
+A060622	Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here the codimension D-d is equal to 4 and d varies.

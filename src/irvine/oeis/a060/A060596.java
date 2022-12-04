@@ -1,11 +1,11 @@
 package irvine.oeis.a060;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.util.array.MultidimensionalIntArray;
 
 /**
  * A060596 Number of tilings of the 4-dimensional zonotope constructed from D vectors.
@@ -22,10 +22,10 @@ public class A060596 extends AbstractSequence {
 
   private static final int ALLOWED_CHANGES = 1;
   private int mN = 3;
-  private MultidimensionalIntArray mX;
+  private final HashMap<String, Integer> mX = new HashMap<>();
   private long mCnt = 0;
 
-  boolean testValid(final int... v) {
+  private boolean testValid(final int... v) {
     final int[] i = new int[v.length + 1];
     final int[] s = new int[i.length];
     final int[] c = new int[v.length];
@@ -52,10 +52,11 @@ public class A060596 extends AbstractSequence {
           }
           c[j] = i[h++];
         }
-        s[k] = mX.get(c);
-        if (s[k] == 0) {
+        final Integer t = mX.get(Arrays.toString(c));
+        if (t == null || t == 0) {
           continue outer;
         }
+        s[k] = t;
       }
       int changes = 0;
       for (int j = 1; j < s.length; ++j) {
@@ -67,7 +68,7 @@ public class A060596 extends AbstractSequence {
     return true;
   }
 
-  void recFill2(final int n, final int... v) {
+  private void recFill2(final int n, final int... v) {
     for (int k = 1; k < v.length; ++k) {
       if (v[k - 1] == v[k]) {
         v[k - 1] = k - 1;
@@ -80,22 +81,21 @@ public class A060596 extends AbstractSequence {
       ++mCnt;
     } else {
       for (int u = -1; u <= 1; u += 2) {
-        mX.set(v, u);
+        final String key = Arrays.toString(v);
+        mX.put(key, u);
         if (testValid(v)) {
           final int[] vv = Arrays.copyOf(v, v.length);
           ++vv[0];
           recFill2(n, vv);
         }
-        mX.set(v, 0);
+        mX.remove(key);
       }
     }
   }
 
   protected Z count(final int d, final int n) {
     mCnt = 0;
-    final int[] t = new int[d];
-    Arrays.fill(t, n);
-    mX = new MultidimensionalIntArray(t);
+    mX.clear();
     recFill2(n, IntegerUtils.identity(new int[d]));
     return Z.valueOf(mCnt);
   }

@@ -1,5 +1,4 @@
 package irvine.oeis.a088;
-// manually 2021-06-22
 
 import irvine.math.z.Z;
 import irvine.oeis.a001.A001850;
@@ -9,9 +8,11 @@ import irvine.oeis.a001.A001850;
  * @author Georg Fischer
  */
 public class A088917 extends A001850 {
-    
+
   @Override
   public Z next() {
-    return super.next().mod(Z.THREE);
+    // a(n) = A001850(n)-3*floor(A001850(n)/3).
+    final Z a1850 = super.next();
+    return a1850.subtract(a1850.divide(3).multiply(3));
   }
 }

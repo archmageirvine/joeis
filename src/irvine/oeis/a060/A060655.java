@@ -191,9 +191,9 @@ public class A060655 extends Sequence1 {
     // For other rectangles we also have to consider r.x == used.y abd r.y == used.x axes
     final int w = rectangles.getX(0);
     final int h = rectangles.getY(0);
-    // todo (sx,sy) should be restricted to upper-left quadrant
-    for (int sy = 0; sy <= side - h; ++sy) {
-      for (int sx = 0; sx <= side - w; ++sx) {
+    // WLOG (w,h) should have left corner in upper left quadrant
+    for (int sy = 0; sy <= Math.min(side - h, side / 2); ++sy) {
+      for (int sx = 0; sx <= Math.min(side - w, side / 2); ++sx) {
         place(used, sx, sy, w, h, 1);
         final boolean res = attemptSolution(rectangles, used, 1);
         unplace(used, sx, sy, w, h);

@@ -26,7 +26,7 @@ public class A002147 extends Sequence0 {
     while (mP < 10 * (mBiggest.get(mN) + 1)) {
       mP = mPrime.nextPrime(mP);
       if ((mP & 7) == 7) {
-        final long cn = LongUtils.classNumber(-mP) / 2;
+        final long cn = LongUtils.hurwitzClassNumber(-mP) / 2;
         if (cn < mN) {
           throw new RuntimeException("Earlier term for " + cn + " is incorrect!");
         }

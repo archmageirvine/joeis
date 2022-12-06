@@ -1,5 +1,6 @@
 package irvine.oeis.a014;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000003;
 
@@ -18,6 +19,6 @@ public class A014600 extends A000003 {
   public Z next() {
     mD -= mDelta;
     mDelta = 4 - mDelta;
-    return Z.valueOf(classNumber(mD));
+    return Z.valueOf(LongUtils.classNumber(mD));
   }
 }

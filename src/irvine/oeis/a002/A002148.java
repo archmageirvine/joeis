@@ -20,7 +20,7 @@ public class A002148 extends Sequence0 {
     long p = 2;
     while (true) {
       p = mPrime.nextPrime(p);
-      if ((p & 7) == 3 && LongUtils.classNumber(-p) == mN) {
+      if ((p & 7) == 3 && LongUtils.hurwitzClassNumber(-p) == mN) {
         return Z.valueOf(p);
       }
     }

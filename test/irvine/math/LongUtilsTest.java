@@ -6,11 +6,9 @@ import java.util.Random;
 
 import irvine.math.z.ZUtils;
 import junit.framework.TestCase;
-//import irvine.util.time.Timer;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class LongUtilsTest extends TestCase {
@@ -65,11 +63,6 @@ public class LongUtilsTest extends TestCase {
     }
   }
 
-
-  /**
-   * Test the Jacobi function
-   *
-   */
   public void testJacobi1() {
     final Random r = new Random();
     // check error on second argument even
@@ -493,5 +486,15 @@ public class LongUtilsTest extends TestCase {
     assertEquals(1, LongUtils.kronecker(-15, 2));
     assertEquals(-1, LongUtils.kronecker(5, 2));
     assertEquals(-1, LongUtils.kronecker(5, 3));
+  }
+
+  public void testHurwitzClassNumber() {
+    assertEquals(16, LongUtils.hurwitzClassNumber(-351));
+    assertEquals(16, LongUtils.hurwitzClassNumber(-399));
+  }
+
+  public void testClassNumber() {
+    assertEquals(12, LongUtils.classNumber(-351));
+    assertEquals(16, LongUtils.classNumber(-399));
   }
 }

@@ -54,7 +54,7 @@ public class A034011 extends Sequence1 {
         final long v2 = v2a[0];
         final long a2 = v2a[1];
         if (v2 == 8 || (v2 & 1) == 1 || a2 % 4 == -1) {
-          if (isOk(mN) && LongUtils.classNumber(4 * mN) % 5 != 0 && LongUtils.classNumber(4 * 5 * mN) % 5 != 0) {
+          if (isOk(mN) && LongUtils.hurwitzClassNumber(4 * mN) % 5 != 0 && LongUtils.hurwitzClassNumber(4 * 5 * mN) % 5 != 0) {
             return Z.valueOf(-mN);
           }
         }

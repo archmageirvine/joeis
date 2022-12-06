@@ -2,6 +2,7 @@ package irvine.oeis.producer;
 
 import irvine.oeis.PseudoSequence;
 import irvine.oeis.Sequence;
+import irvine.util.string.StringUtils;
 
 /**
  * A special Producer that handles reading a sequence from a b-file directory.
@@ -17,9 +18,7 @@ public class PseudoProducer implements Producer {
       return new PseudoSequence(aNumber);
     } catch (final RuntimeException exc) {
       if (mVerbose) {
-        final String env = System.getenv("BFPATH");
-        System.err.println("PseudoProducer: BFPATH=" + env + ", A-number=" + aNumber + " could not be read: " + exc.getMessage());
-        exc.printStackTrace();
+        StringUtils.message("PseudoProducer: BFPATH=" + System.getenv("BFPATH") + ", A-number=" + aNumber + " could not be read.");
       }
       return null;
     }

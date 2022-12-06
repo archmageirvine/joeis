@@ -1,5 +1,6 @@
 package irvine.oeis.a029;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000003;
 
@@ -15,7 +16,7 @@ public class A029724 extends A000003 {
   public Z next() {
     while (true) {
       mN += 8;
-      final int h = (int) classNumber(-mN);
+      final int h = (int) LongUtils.classNumber(-mN);
       final Z t = Z.ONE.shiftLeft(h + 2).subtract(mN);
       if (t.isSquare()) {
         return Z.valueOf(mN);

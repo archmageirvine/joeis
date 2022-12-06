@@ -393,42 +393,6 @@ public final class LongUtils {
     return sum;
   }
 
-  // Faster heuristic algorithms are known
-
-  /**
-   * Algorithm 5.3.5 in Cohen, A Course in Computational Algebraic Number Theory
-   * @param discriminant the discriminant
-   * @return the class number
-   */
-  public static long classNumber(final long discriminant) {
-    assert discriminant < 0; // Handling discriminant > 0 looks very hard
-    long h = 1;
-    long b = discriminant & 1;
-    final long bound = (long) Math.sqrt(Math.abs(discriminant) / 3.0);
-    while (true) {
-      final long q = (b * b - discriminant) / 4;
-      long a = b;
-      do {
-        if (a <= 1) {
-          a = 1;
-        } else {
-          if (q % a == 0) {
-            if (a == b || a * a == q || b == 0) {
-              ++h;
-            } else {
-              h += 2;
-            }
-          }
-        }
-        ++a;
-      } while (a * a <= q);
-      b += 2;
-      if (b > bound) {
-        return h;
-      }
-    }
-  }
-
   /**
    * Read numbers from a stream into an array.  Empty lines or lines starting
    * with <code>#</code> are ignored. Behaviour on out of range numbers is
@@ -823,4 +787,60 @@ public final class LongUtils {
     }
     return CollectionUtils.isPalindrome(digits);
   }
+
+  /**
+   * Compute the class number for a discriminant.
+   * @param discriminant the discriminant
+   * @return class number
+   */
+  public static long classNumber(final long discriminant) {
+    long h = 1;
+    final long bLimit = sqrt(-discriminant / 3);
+    for (long b = discriminant & 1; b <= bLimit; b += 2) {
+      final long q = (b * b - discriminant) / 4;
+      for (long a = b <= 1 ? 2 : b; a * a <= q; ++a) {
+        if (q % a == 0 && gcd(q / a, a, b) == 1) {
+          h += a == b || b == 0 || a * a == q ? 1 : 2;
+        }
+      }
+    }
+    return h;
+  }
+
+  // Faster heuristic algorithms are known
+
+  /**
+   * Algorithm 5.3.5 in Cohen, A Course in Computational Algebraic Number Theory
+   * @param discriminant the discriminant
+   * @return the class number
+   */
+  public static long hurwitzClassNumber(final long discriminant) {
+    assert discriminant < 0; // Handling discriminant > 0 looks very hard
+    long h = 1;
+    long b = discriminant & 1;
+    final long bound = (long) Math.sqrt(Math.abs(discriminant) / 3.0);
+    while (true) {
+      final long q = (b * b - discriminant) / 4;
+      long a = b;
+      do {
+        if (a <= 1) {
+          a = 1;
+        } else {
+          if (q % a == 0) {
+            if (a == b || a * a == q || b == 0) {
+              ++h;
+            } else {
+              h += 2;
+            }
+          }
+        }
+        ++a;
+      } while (a * a <= q);
+      b += 2;
+      if (b > bound) {
+        return h;
+      }
+    }
+  }
+
 }

@@ -455,5 +455,20 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
   public Group<Pair<E, E>> derivedSubgroup() {
     return new DerivedSubgroup<>(this);
   }
+
+  @Override
+  public Z numberConjugacyClasses() {
+    if (isAbelian()) {
+      return size();
+    }
+    if (isInfinite()) {
+      throw new UnsupportedOperationException();
+    }
+    Z sum = Z.ZERO;
+    for (final E g : this) {
+      sum = sum.add(centralizer(g).size());
+    }
+    return sum.divide(size());
+  }
 }
 

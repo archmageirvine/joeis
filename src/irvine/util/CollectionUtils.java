@@ -1,5 +1,6 @@
 package irvine.util;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -12,7 +13,8 @@ import java.util.Map;
  */
 public final class CollectionUtils {
 
-  private CollectionUtils() { }
+  private CollectionUtils() {
+  }
 
   @SuppressWarnings({"unchecked", "rawtypes"})
   private static void forceSort(final List<?> list) {
@@ -86,4 +88,32 @@ public final class CollectionUtils {
     }
     return true;
   }
+
+  // see https://stackoverflow.com/questions/714108/cartesian-product-of-an-arbitrary-number-of-sets
+  /**
+   * Cartesian product of lists.
+   * @param lists input lists
+   * @param <T> type of element
+   * @return product
+   */
+  public static <T> List<List<T>> cartesianProduct(final List<List<T>> lists) {
+    final List<List<T>> resultLists = new ArrayList<>();
+    if (lists.isEmpty()) {
+      resultLists.add(new ArrayList<>());
+      return resultLists;
+    } else {
+      final List<T> firstList = lists.get(0);
+      final List<List<T>> remainingLists = cartesianProduct(lists.subList(1, lists.size()));
+      for (final T condition : firstList) {
+        for (final List<T> remainingList : remainingLists) {
+          final ArrayList<T> resultList = new ArrayList<>();
+          resultList.add(condition);
+          resultList.addAll(remainingList);
+          resultLists.add(resultList);
+        }
+      }
+    }
+    return resultLists;
+  }
+
 }

@@ -19,7 +19,7 @@ public class A002143 extends Sequence1 {
     while (true) {
       mP = mPrime.nextPrime(mP);
       if ((mP & 3) == 3) {
-        return Z.valueOf(LongUtils.classNumber(-mP));
+        return Z.valueOf(LongUtils.hurwitzClassNumber(-mP));
       }
     }
   }

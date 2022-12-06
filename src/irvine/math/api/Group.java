@@ -8,7 +8,6 @@ import irvine.util.Pair;
 
 /**
  * Definition of a group and associated operations.
- *
  * @author Sean A. Irvine
  * @param <E> element type
  */
@@ -47,7 +46,7 @@ public interface Group<E> extends Set<E> {
    * @param b second element
    * @return <code>a-b</code>
    * @exception IllegalArgumentException if supplied elements are not in the
-   * group (or in some cases, if they cannot be coerced into members of the
+   * group, (or in some cases) if they cannot be coerced into members of the
    * group. This may be thrown for null arguments.
    * @exception NullPointerException may be thrown for null arguments.
    */
@@ -274,4 +273,10 @@ public interface Group<E> extends Set<E> {
    * @return derived subgroup.
    */
   Group<Pair<E, E>> derivedSubgroup();
+
+  /**
+   * Return the number of conjugacy classes in the group.
+   * @return number of conjugacy classes
+   */
+  Z numberConjugacyClasses();
 }

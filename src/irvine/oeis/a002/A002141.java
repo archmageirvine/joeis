@@ -29,7 +29,7 @@ public class A002141 extends Sequence3 {
         }
       }
       if (ok) {
-        return Z.valueOf(LongUtils.classNumber(-mNp));
+        return Z.valueOf(LongUtils.hurwitzClassNumber(-mNp));
       }
       do {
         mNp += 2;

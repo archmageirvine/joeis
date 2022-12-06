@@ -19,7 +19,7 @@ public class A191410 extends A003657 {
       return Z.ZERO;
     }
     mM = super.next().longValueExact();
-    return Z.valueOf(LongUtils.classNumber(-mN));
+    return Z.valueOf(LongUtils.hurwitzClassNumber(-mN));
   }
 }
 

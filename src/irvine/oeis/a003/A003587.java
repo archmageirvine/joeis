@@ -15,9 +15,14 @@ public class A003587 extends Sequence1 {
 
   @Override
   public Z next() {
+    if (mDigits > 15) {
+      return null;
+    }
     while (true) {
-      if (++mN > mDigits * 1000) {
-        ++mDigits;
+      if (++mN > Math.min(3999, mDigits * 1000)) {
+        if (++mDigits > 15) {
+          return null;
+        }
         mN = 1;
       }
       if (Roman.roman(mN).length() == mDigits) {

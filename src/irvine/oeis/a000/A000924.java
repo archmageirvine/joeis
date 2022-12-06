@@ -19,6 +19,6 @@ public class A000924 extends Sequence1 {
       // do nothing
     }
     final long n = -mN;
-    return Z.valueOf(LongUtils.classNumber((n & 3) == 1 ? n : 4 * n));
+    return Z.valueOf(LongUtils.hurwitzClassNumber((n & 3) == 1 ? n : 4 * n));
   }
 }

@@ -14,16 +14,16 @@ public class A060448 extends Sequence1 {
   private long mN = 0;
 
   private boolean is(final long[] d, final long selector) {
-    long u = 1;
-    long v = 1;
+    Z u = Z.ONE;
+    Z v = Z.ONE;
     for (int k = 0; k < d.length; ++k) {
       if ((selector & (1L << k)) != 0) {
-        u *= d[k];
+        u = u.multiply(d[k]);
       } else {
-        v *= d[k];
+        v = v.multiply(d[k]);
       }
     }
-    return v % u == 0;
+    return v.mod(u).isZero();
   }
 
   @Override

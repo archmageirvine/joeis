@@ -19,7 +19,7 @@ public final class GroupUtils {
 
   /**
    * An exhaustive test for commutativity in the group.  In general this should
-   * not be called directly.  Instead use <code>group.isAbelian()</code> which
+   * not be called directly.  Instead, use <code>group.isAbelian()</code> which
    * in most cases is much more efficient.
    * @param <T> type of group
    * @param group group to test

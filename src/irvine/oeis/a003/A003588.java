@@ -20,11 +20,16 @@ public class A003588 extends Sequence1 {
 
   @Override
   public Z next() {
+    if (mDigits > 15) {
+      return null;
+    }
     if (mM >= mRoman.size()) {
-      ++mDigits;
+      if (++mDigits > 15) {
+        return null;
+      }
       mRoman.clear();
       mM = 0;
-      for (int k = 1; k <= mDigits * 1000; ++k) {
+      for (int k = 1; k <= Math.min(3999, mDigits * 1000); ++k) {
         final String roman = Roman.roman(k);
         if (roman.length() == mDigits) {
           mRoman.add(roman);

@@ -1,5 +1,6 @@
 package irvine.oeis.a014;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000003;
 
@@ -14,6 +15,6 @@ public class A014599 extends A000003 {
   @Override
   public Z next() {
     mD -= 4;
-    return Z.valueOf(classNumber(mD));
+    return Z.valueOf(LongUtils.classNumber(mD));
   }
 }

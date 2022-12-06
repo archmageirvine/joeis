@@ -12,6 +12,6 @@ public class A001991 extends A001990 {
   @Override
   public Z next() {
     final Z np = super.next().multiply(8);
-    return Z.valueOf(LongUtils.classNumber(-np.longValueExact()));
+    return Z.valueOf(LongUtils.hurwitzClassNumber(-np.longValueExact()));
   }
 }

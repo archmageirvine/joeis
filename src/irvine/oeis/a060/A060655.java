@@ -1,13 +1,13 @@
 package irvine.oeis.a060;
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.TreeSet;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.Sort;
+import irvine.util.string.StringUtils;
 
 /**
  * A060655.
@@ -24,9 +24,16 @@ public class A060655 extends Sequence1 {
   //   Task 4b: place given rectangle and continue search etc.
   //   Task 4c: if a given placement is complete, report success updating bounds appropriately
 
+  /*
+   * Maximum number of rectangle sets to be considered.
+   * Such sets are ordered by total area, and experience indicates the best solution can be
+   * expected to be found within the first few possibilities.
+   */
+  private static final int HEURISTIC_MAX_RECTANGLE_SETS = 1000;
+
   private static class RectangleSet implements Comparable<RectangleSet> {
-    private int[] mX;
-    private int[] mY;
+    private final int[] mX;
+    private final int[] mY;
 
     private RectangleSet(final int n) {
       mX = new int[n];
@@ -102,8 +109,8 @@ public class A060655 extends Sequence1 {
   }
 
   private int mN = 0;
-  private int mMinimalSquareSide = 0;
-  private final Collection<RectangleSet> mRectangleSets = new TreeSet<>();
+  private final TreeSet<RectangleSet> mRectangleSets = new TreeSet<>();
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
 
   private boolean isNotUsed(final long set, final int length) {
     return (set & (1L << (length - 1))) == 0;
@@ -115,6 +122,9 @@ public class A060655 extends Sequence1 {
       final RectangleSet copy = new RectangleSet(rectangles);
       copy.sort(); // Sorts rectangles by decreasing area -- useful later
       mRectangleSets.add(copy);
+      if (mRectangleSets.size() > HEURISTIC_MAX_RECTANGLE_SETS) {
+        mRectangleSets.pollLast();
+      }
       return;
     }
     // Find least unused length (such a length must exist)
@@ -175,7 +185,9 @@ public class A060655 extends Sequence1 {
   private boolean attemptSolution(final RectangleSet rectangles, final int[][] used, final int r) {
     if (r == mN) {
       // Success! All rectangles are placed withing the square
-      System.out.println(Arrays.deepToString(used));
+      if (mVerbose) {
+        StringUtils.message(mN + " new best solution has side " + used.length + ": " + Arrays.deepToString(used));
+      }
       return true;
     }
     final int w = rectangles.getX(r);
@@ -185,7 +197,7 @@ public class A060655 extends Sequence1 {
   }
 
   private boolean attemptSolution(final int side, final RectangleSet rectangles) {
-    System.out.println("Attempting to fit into square with side " + side);
+    //System.out.println("Attempting to fit into square with side " + side);
     final int[][] used = new int[side][side]; // use int rather than boolean, so we have a record of where individual rectangles are
     // WLOG we can assume first rectangle is place with r.x == used.x and r.y == used.y axes
     // For other rectangles we also have to consider r.x == used.y abd r.y == used.x axes
@@ -212,8 +224,10 @@ public class A060655 extends Sequence1 {
     }
     mRectangleSets.clear();
     generateRectangleSets(new RectangleSet(mN), 0, 0L, 1);
-    System.out.println("#rectangle sets: " + mRectangleSets.size());
-    mMinimalSquareSide = Integer.MAX_VALUE;
+    if (mVerbose) {
+      StringUtils.message(mN + " there " + mRectangleSets.size() + " different sets of rectangles to consider");
+    }
+    int minimalSquareSide = Integer.MAX_VALUE;
     for (final RectangleSet r : mRectangleSets) {
       final int maxSide = r.maxSide();
       final int totalArea = Math.max(r.totalArea(), maxSide * maxSide);
@@ -223,14 +237,16 @@ public class A060655 extends Sequence1 {
       }
       // It is only worth attempting solution if the side is smaller than
       // the currently best know solution.
-      if (side < mMinimalSquareSide) {
-        System.out.println("area=" + totalArea + " minimum size of square is " + side);
-        while (side < mMinimalSquareSide && !attemptSolution(side, r)) {
+      if (side < minimalSquareSide) {
+        if (mVerbose) {
+          StringUtils.message(mN + " considering a rectangle set with total area " + totalArea);
+        }
+        while (side < minimalSquareSide && !attemptSolution(side, r)) {
           ++side;
         }
-        mMinimalSquareSide = side;
+        minimalSquareSide = side;
       }
     }
-    return Z.valueOf(mMinimalSquareSide);
+    return Z.valueOf(minimalSquareSide);
   }
 }

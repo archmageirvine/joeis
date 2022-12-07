@@ -31,7 +31,7 @@ public class A060655 extends Sequence1 {
    */
   private static final int HEURISTIC_MAX_RECTANGLE_SETS = 1000;
 
-  private static class RectangleSet implements Comparable<RectangleSet> {
+  private static final class RectangleSet implements Comparable<RectangleSet> {
     private final int[] mX;
     private final int[] mY;
 

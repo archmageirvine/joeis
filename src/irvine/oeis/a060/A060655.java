@@ -274,4 +274,14 @@ public class A060655 extends Sequence1 {
     }
     return Z.valueOf(minimalSquareSide);
   }
+
+  /**
+   * Run this calculation for a specified number of rectangles.
+   * @param args value of n
+   */
+  public static void main(final String[] args) {
+    final A060655 seq = new A060655();
+    seq.mN = Integer.parseInt(args[0]) - 1;
+    System.out.println(seq.next());
+  }
 }

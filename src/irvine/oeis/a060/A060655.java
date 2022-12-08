@@ -127,7 +127,7 @@ public class A060655 extends Sequence1 {
       }
       return;
     }
-    // Find least unused length (such a length must exist)
+    // Find the least unused length (such a length must exist)
     for (int k = least; true; ++k) {
       if (isNotUsed(used, k)) {
         // Consider each possible longer unused length
@@ -156,6 +156,13 @@ public class A060655 extends Sequence1 {
   }
 
   private boolean canPlace(final int[][] used, final int sx, final int sy, final int w, final int h) {
+    // Check corners first (only for efficiency)
+    final int tx = sx + w - 1;
+    final int ty = sy + h - 1;
+    if (used[ty][tx] != 0 || used[ty][sx] != 0 || used[sy][tx] != 0) {
+      return false;
+    }
+    // Check entire square
     for (int k = sy; k < sy + h; ++k) {
       for (int j = sx; j < sx + w; ++j) {
         if (used[k][j] != 0) {
@@ -166,55 +173,74 @@ public class A060655 extends Sequence1 {
     return true;
   }
 
-  private boolean attemptSolution(final RectangleSet rectangles, final int[][] used, final int r, final int w, final int h) {
-    for (int sy = 0; sy <= used.length - h; ++sy) {
-      for (int sx = 0; sx <= used.length - w; ++sx) {
-        if (canPlace(used, sx, sy, w, h)) {
-          place(used, sx, sy, w, h, r + 1);
-          final boolean res = attemptSolution(rectangles, used, r + 1);
+  // Attempt solution by consider each empty cell of used[][] in turn.
+  // For each such cell, try and play a currently unused rectangle in both orientations.
+  // This proved much faster an earlier approach which tried each rectangle in turn
+  // at each place where it could be located
+
+  private boolean attemptSolution(final RectangleSet rectangles, final int[][] used, final int r, final int x, final int y, final int availableArea, final int requiredArea, final long rSet) {
+    if (requiredArea > availableArea || y >= used.length) {
+      return false;
+    }
+    if (r == mN) {
+      // All rectangles successfully place
+      assert requiredArea == 0;
+      if (mVerbose) {
+        StringUtils.message(mN + " new best solution has side " + used.length + ": " + Arrays.deepToString(used));
+      }
+      return true;
+    }
+
+    int sx = x;
+    int sy = y;
+    if (sx == used.length) {
+      if (++sy == used.length) {
+        return false;
+      }
+      sx = 0;
+    }
+    while (used[sy][sx] > 0) {
+      if (++sx == used.length) {
+        if (++sy == used.length) {
+          return false;
+        }
+        sx = 0;
+      }
+    }
+    // (sx,sy) is start position within the grid and unused
+    // Try playing each unused rectangle in turn
+    for (int k = 0; k < mN; ++k) {
+      if ((rSet & (1L << k)) == 0) {
+        // Try rectangle[k]
+        final int w = rectangles.getX(k);
+        final int h = rectangles.getY(k);
+        final int a = w * h;
+        if (sx + w <= used.length && sy + h <= used.length && canPlace(used, sx, sy, w, h)) {
+          place(used, sx, sy, w, h, k + 1);
+          final boolean res = attemptSolution(rectangles, used, r + 1, sx + w, sy, availableArea - a, requiredArea - a, rSet | (1L << k));
           unplace(used, sx, sy, w, h);
+          if (res) {
+            return true;
+          }
+        }
+        if (sx + h <= used.length && sy + w <= used.length && canPlace(used, sx, sy, h, w)) {
+          place(used, sx, sy, h, w, k + 1);
+          final boolean res = attemptSolution(rectangles, used, r + 1, sx + h, sy, availableArea - a, requiredArea - a, rSet | (1L << k));
+          unplace(used, sx, sy, h, w);
           if (res) {
             return true;
           }
         }
       }
     }
-    return false;
-  }
-
-  private boolean attemptSolution(final RectangleSet rectangles, final int[][] used, final int r) {
-    if (r == mN) {
-      // Success! All rectangles are placed withing the square
-      if (mVerbose) {
-        StringUtils.message(mN + " new best solution has side " + used.length + ": " + Arrays.deepToString(used));
-      }
-      return true;
-    }
-    final int w = rectangles.getX(r);
-    final int h = rectangles.getY(r);
-    //System.out.println("Trying to play rectangle (" + w + "," + h + ") into " + Arrays.deepToString(used));
-    return attemptSolution(rectangles, used, r, w, h) || attemptSolution(rectangles, used, r, h, w);
+    // Alternative we can leave this cell empty
+    return attemptSolution(rectangles, used, r, sx + 1, sy, availableArea - 1, requiredArea, rSet);
   }
 
   private boolean attemptSolution(final int side, final RectangleSet rectangles) {
-    //System.out.println("Attempting to fit into square with side " + side);
     final int[][] used = new int[side][side]; // use int rather than boolean, so we have a record of where individual rectangles are
-    // WLOG we can assume first rectangle is place with r.x == used.x and r.y == used.y axes
-    // For other rectangles we also have to consider r.x == used.y abd r.y == used.x axes
-    final int w = rectangles.getX(0);
-    final int h = rectangles.getY(0);
-    // WLOG (w,h) should have left corner in upper left quadrant
-    for (int sy = 0; sy <= Math.min(side - h, side / 2); ++sy) {
-      for (int sx = 0; sx <= Math.min(side - w, side / 2); ++sx) {
-        place(used, sx, sy, w, h, 1);
-        final boolean res = attemptSolution(rectangles, used, 1);
-        unplace(used, sx, sy, w, h);
-        if (res) {
-          return true;
-        }
-      }
-    }
-    return false;
+    final int requiredArea = rectangles.totalArea();
+    return attemptSolution(rectangles, used, 0, 0, 0, side * side, requiredArea, 0L);
   }
 
   @Override
@@ -235,8 +261,7 @@ public class A060655 extends Sequence1 {
       if (side * side < totalArea) {
         ++side;
       }
-      // It is only worth attempting solution if the side is smaller than
-      // the currently best know solution.
+      // It is only worth attempting solution if the side is smaller than the currently best know solution.
       if (side < minimalSquareSide) {
         if (mVerbose) {
           StringUtils.message(mN + " considering a rectangle set with total area " + totalArea);

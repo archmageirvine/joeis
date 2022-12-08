@@ -1,12 +1,11 @@
 package irvine.oeis.a060;
 
 import java.util.Arrays;
-import java.util.TreeSet;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.array.Sort;
+import irvine.util.Permutation;
 import irvine.util.string.StringUtils;
 
 /**
@@ -29,7 +28,6 @@ public class A060655 extends Sequence1 {
    * Such sets are ordered by total area, and experience indicates the best solution can be
    * expected to be found within the first few possibilities.
    */
-  private static final int HEURISTIC_MAX_RECTANGLE_SETS = 1000;
 
   private static final class RectangleSet implements Comparable<RectangleSet> {
     private final int[] mX;
@@ -38,11 +36,6 @@ public class A060655 extends Sequence1 {
     private RectangleSet(final int n) {
       mX = new int[n];
       mY = new int[n];
-    }
-
-    private RectangleSet(final RectangleSet r) {
-      mX = Arrays.copyOf(r.mX, r.mX.length);
-      mY = Arrays.copyOf(r.mY, r.mY.length);
     }
 
     private void set(final int k, final int x, final int y) {
@@ -57,31 +50,6 @@ public class A060655 extends Sequence1 {
         area += mX[k] * mY[k];
       }
       return area;
-    }
-
-    private int maxSide() {
-      int max = 0;
-      for (final int y : mY) {
-        if (y > max) {
-          max = y;
-        }
-      }
-      return max;
-    }
-
-    private void sort() {
-      final int[] area =  new int[mX.length];
-      for (int k = 0; k < area.length; ++k) {
-        area[k] = mX[k] * mY[k];
-      }
-      final int[] pos = IntegerUtils.identity(new int[area.length]);
-      Sort.sort(area, pos);
-      final int[] origX = Arrays.copyOf(mX, mX.length);
-      final int[] origY = Arrays.copyOf(mY, mY.length);
-      for (int k = area.length - 1, j = 0; k >= 0; --k, ++j) {
-        mX[j] = origX[pos[k]];
-        mY[j] = origY[pos[k]];
-      }
     }
 
     private int getX(final int n) {
@@ -109,39 +77,7 @@ public class A060655 extends Sequence1 {
   }
 
   private int mN = 0;
-  private final TreeSet<RectangleSet> mRectangleSets = new TreeSet<>();
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-
-  private boolean isNotUsed(final long set, final int length) {
-    return (set & (1L << (length - 1))) == 0;
-  }
-
-  private void generateRectangleSets(final RectangleSet rectangles, final int r, final long used, final int least) {
-    if (r == mN) {
-      // We have generated all the rectangles, store the result
-      final RectangleSet copy = new RectangleSet(rectangles);
-      copy.sort(); // Sorts rectangles by decreasing area -- useful later
-      mRectangleSets.add(copy);
-      if (mRectangleSets.size() > HEURISTIC_MAX_RECTANGLE_SETS) {
-        mRectangleSets.pollLast();
-      }
-      return;
-    }
-    // Find the least unused length (such a length must exist)
-    for (int k = least; true; ++k) {
-      if (isNotUsed(used, k)) {
-        // Consider each possible longer unused length
-        for (int j = k + 1; j <= 2 * mN; ++j) {
-          if (isNotUsed(used, j)) {
-            // (k,j) is a rectangle
-            rectangles.set(r, k, j);
-            generateRectangleSets(rectangles, r + 1, used + (1L << (k - 1)) + (1L << (j - 1)), k + 1);
-          }
-        }
-        break;
-      }
-    }
-  }
 
   private void place(final int[][] used, final int sx, final int sy, final int w, final int h, final int c) {
     for (int k = sy; k < sy + h; ++k) {
@@ -248,15 +184,17 @@ public class A060655 extends Sequence1 {
     if (++mN > 32) {
       throw new UnsupportedOperationException();
     }
-    mRectangleSets.clear();
-    generateRectangleSets(new RectangleSet(mN), 0, 0L, 1);
-    if (mVerbose) {
-      StringUtils.message(mN + " there " + mRectangleSets.size() + " different sets of rectangles to consider");
-    }
+
     int minimalSquareSide = Integer.MAX_VALUE;
-    for (final RectangleSet r : mRectangleSets) {
-      final int maxSide = r.maxSide();
-      final int totalArea = Math.max(r.totalArea(), maxSide * maxSide);
+
+    // Generate rectangle sets in approx increasing area, definitely starting with the smallest
+    final Permutation perm = new Permutation(mN);
+    int[] p;
+    while ((p = perm.next()) != null) {
+      int totalArea = 0;
+      for (int k = 0; k < mN; ++k) {
+        totalArea += (k + 1) * (2 * mN - p[k]);
+      }
       int side = IntegerUtils.sqrt(totalArea);
       if (side * side < totalArea) {
         ++side;
@@ -265,6 +203,10 @@ public class A060655 extends Sequence1 {
       if (side < minimalSquareSide) {
         if (mVerbose) {
           StringUtils.message(mN + " considering a rectangle set with total area " + totalArea);
+        }
+        final RectangleSet r = new RectangleSet(mN);
+        for (int k = 0; k < mN; ++k) {
+          r.set(k, k + 1, 2 * mN - p[k]);
         }
         while (side < minimalSquareSide && !attemptSolution(side, r)) {
           ++side;

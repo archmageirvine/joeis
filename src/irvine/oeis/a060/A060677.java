@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
+import irvine.math.cr.CR;
 import irvine.math.lattice.Animal;
 import irvine.math.lattice.Lattice;
 import irvine.math.lattice.Lattices;
@@ -26,6 +27,23 @@ public class A060677 extends Sequence1 {
   private static final Lattice L = Lattices.Z2;
   private List<Animal> mAnimals = new ArrayList<>();
 
+  private static String toTikz(final long x, final long y, final String modifier) {
+    return "\\draw" + modifier + " (" + x + "," + y + ") -- (" + (x + 1) + "," + y + ") -- (" + (x + 1) + "," + (y + 1) + ") -- (" + x + "," + (y + 1) + ") -- cycle;";
+  }
+
+  private static String toTikz(final Animal animal) {
+    final StringBuilder sb = new StringBuilder();
+    sb.append("\\arabic{cnt}.\\addtocounter{cnt}{1}\\begin{tikzpicture}[scale=0.25]\n");
+    for (final long point : animal.points()) {
+      final long x = L.ordinate(point, 0);
+      final long y = L.ordinate(point, 1);
+      sb.append(toTikz(x, y, "[fill=lightgray]")).append('\n');
+      sb.append(toTikz(x, y, "")).append('\n');
+    }
+    sb.append("\\end{tikzpicture}");
+    return sb.toString();
+  }
+
   private boolean isLinearA(final Animal animal, final double m, final double b) {
     for (final long pt : animal.points()) {
       final long x = L.ordinate(pt, 0);
@@ -41,7 +59,19 @@ public class A060677 extends Sequence1 {
     return true;
   }
 
-  private static final double EPS = 1E-8; //100 * Double.MIN_NORMAL;
+  private boolean isLinearA(final Animal animal, final CR m, final CR b) {
+    for (final long pt : animal.points()) {
+      final long x = L.ordinate(pt, 0);
+      final long y = L.ordinate(pt, 1);
+      if (m.multiply(x).add(b).floor().intValueExact() != y && m.multiply(x + 1).add(b).floor().intValueExact() != y) {
+        return false;
+      }
+    }
+    //System.out.println("Accepting: " + animal.toString(L));
+    return true;
+  }
+
+  private static final double EPS = 1E-6; //100 * Double.MIN_NORMAL;
   //private static final double[] DELTA_X = {EPS, EPS, 1 - EPS, 1 - EPS};
   private static final double[] DELTA_X = {0, 0, 1, 1};
   private static final double[] DELTA_Y = {EPS, 1 - EPS, EPS, 1 - EPS};
@@ -56,9 +86,11 @@ public class A060677 extends Sequence1 {
         final double dx = tx + DELTA_X[j] - DELTA_X[k];
         final double dy = ty + DELTA_Y[j] - DELTA_Y[k];
         final double m = dy / dx;
-        final double b = DELTA_Y[k] - m * DELTA_X[k];
-        if (isLinearA(animal, m, b)) {
-          return true;
+        if (Double.isFinite(m)) {
+          final double b = DELTA_Y[k] - m * DELTA_X[k];
+          if (isLinearA(animal, CR.valueOf(m), CR.valueOf(b))) {
+            return true;
+          }
         }
       }
     }
@@ -71,15 +103,20 @@ public class A060677 extends Sequence1 {
             final double dx = tx + k - l;
             final double dy = ty + j - i;
             final double m = dy / dx;
-            final double b = j - m * k;
-            if (isLinearA(animal, m, b)) {
-              return true;
+            if (Double.isFinite(m)) {
+              final double b = j - m * k;
+              if (isLinearA(animal, CR.valueOf(m), CR.valueOf(b))) {
+                return true;
+              }
             }
           }
         }
       }
     }
-    System.out.println("Final rejection for: " + animal.toString(L));
+    if (animal.size() >= 10) {
+      //System.out.println("Final rejection for: " + animal.toString(L));
+      System.out.println(toTikz(animal));
+    }
     return false;
   }
 

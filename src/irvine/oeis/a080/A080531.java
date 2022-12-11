@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A080531 Number of nucleons in longest known radioactive decay series ending with Lead 208 (&quot;thorium series&quot;), reversed.
+ * A080531 Number of nucleons in longest known radioactive decay series ending with Lead 208 ("thorium series"), reversed.
  * @author Georg Fischer
  */
 public class A080531 extends AbstractSequence {

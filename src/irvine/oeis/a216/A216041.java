@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000081;
 import irvine.oeis.a000.A000108;
 
 /**
- * A216041 Number of redundant function representations of x^x^...^x with n x&apos;s and parentheses inserted in all possible ways.
+ * A216041 Number of redundant function representations of x^x^...^x with n x's and parentheses inserted in all possible ways.
  * @author Georg Fischer
  */
 public class A216041 extends AbstractSequence {

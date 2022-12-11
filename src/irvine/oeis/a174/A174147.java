@@ -7,7 +7,7 @@ import irvine.oeis.a055.A055631;
 import irvine.oeis.a173.A173557;
 
 /**
- * A174147 a(n) = n-th sum{p-1|p is prime and divisor of n} plus n-th product{p-1|p is prime and divisor of n}
+ * A174147 a(n) = n-th sum{p-1|p is prime and divisor of n} plus n-th product{p-1|p is prime and divisor of n}.
  * @author Georg Fischer
  */
 public class A174147 extends AbstractSequence {

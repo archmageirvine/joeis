@@ -7,7 +7,7 @@ import irvine.oeis.a057.A057077;
 import irvine.oeis.a091.A091868;
 
 /**
- * A176113 Determinant of n X n matrix whose (i,j)-th element is (i+j)^(n-1)
+ * A176113 Determinant of n X n matrix whose (i,j)-th element is (i+j)^(n-1).
  * @author Georg Fischer
  */
 public class A176113 extends AbstractSequence {

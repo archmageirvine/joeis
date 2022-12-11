@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000108;
 import irvine.oeis.a000.A000272;
 
 /**
- * A331799 Normalized volume of the Caracol flow polytope. Also equal to the number of &quot;unified diagrams&quot; of the Caracol graph (see Section 4.3 and Section 5 in Benedetti et al. reference).
+ * A331799 Normalized volume of the Caracol flow polytope. Also equal to the number of "unified diagrams" of the Caracol graph (see Section 4.3 and Section 5 in Benedetti et al. reference).
  * @author Georg Fischer
  */
 public class A331799 extends AbstractSequence {

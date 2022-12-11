@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a003.A003602;
 
 /**
- * A349135 Sum of Kimberling&apos;s paraphrases (A003602) and its Dirichlet inverse.
+ * A349135 Sum of Kimberling's paraphrases (A003602) and its Dirichlet inverse.
  * @author Georg Fischer
  */
 public class A349135 extends AbstractSequence {

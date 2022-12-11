@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.a035.A035116;
 
 /**
- * A110601 a(n) = phi(n)*tau(n)^2, where phi is Euler&apos;s totient function and tau(n) is the number of divisors of n.
+ * A110601 a(n) = phi(n)*tau(n)^2, where phi is Euler's totient function and tau(n) is the number of divisors of n.
  * @author Georg Fischer
  */
 public class A110601 extends AbstractSequence {

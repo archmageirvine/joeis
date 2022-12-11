@@ -5,18 +5,18 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060657 Odd values of the sum-of-divisors function sigma (A000203) (without repetitions).
+ * A060660 Sigma(x) = n has exactly four solutions.
  * @author Sean A. Irvine
  */
-public class A060657 extends Sequence1 {
+public class A060660 extends Sequence1 {
 
-  private Z mN = Z.NEG_ONE;
+  private Z mN = Z.valueOf(94);
 
   @Override
   public Z next() {
     while (true) {
       mN = mN.add(2);
-      if (!InverseSigma.countInverseSigma(mN).isZero()) {
+      if (InverseSigma.countInverseSigma(mN).equals(Z.FOUR)) {
         return mN;
       }
     }

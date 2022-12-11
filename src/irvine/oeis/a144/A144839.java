@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A144839 a(n) = round(phi^(7^n)) where phi = 1.6180339887498948482... = (sqrt(5)+1)/2.
+ * A144839 a(n) = Lucas(7^n).
  *
  * @author Georg Fischer
  */

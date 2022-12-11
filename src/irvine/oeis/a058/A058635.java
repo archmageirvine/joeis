@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001566;
 
 /**
- * A058635 a(n) = (2^n)-th Fibonacci number.
+ * A058635 a(n) = Fibonacci(2^n).
  * @author Sean A. Irvine
  */
 public class A058635 extends A001566 {

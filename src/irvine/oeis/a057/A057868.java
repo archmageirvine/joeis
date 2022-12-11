@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A057868 Denominator of "modified Bernoulli number" b(2n) = Bernoulli(2*n)/(2*n*n!).
+ * A057868 Denominator of "modified Bernoulli number" b(2n) = Bernoulli(2*n)/(4*n*(2*n)!).
  * @author Sean A. Irvine
  */
 public class A057868 extends Sequence1 {

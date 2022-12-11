@@ -4,7 +4,7 @@ import irvine.math.z.InverseSigma;
 import irvine.math.z.Z;
 
 /**
- * A002191 Possible values for sum of divisors of n.
+ * A002192 Least integer with A000203(a(n)) = A002191(n), where A002191 = range of the sum-of-divisors function A000203.
  * @author Sean A. Irvine
  */
 public class A002192 extends A002191 {

@@ -13,7 +13,7 @@ import irvine.util.array.DynamicArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A000105 Number of free polyominoes (or square animals) with n cells.
+ * A060659 a(n) = smallest number of squares on a checkerboard that has exactly n domino tilings.
  * @author Sean A. Irvine
  */
 public class A060659 implements Sequence {

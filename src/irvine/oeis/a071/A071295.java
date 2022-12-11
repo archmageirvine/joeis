@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000120;
 import irvine.oeis.a023.A023416;
 
 /**
- * A071295 Product of numbers of 0&apos;s and 1&apos;s in binary representation of n.
+ * A071295 Product of numbers of 0's and 1's in binary representation of n.
  * @author Georg Fischer
  */
 public class A071295 extends AbstractSequence {

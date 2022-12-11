@@ -7,7 +7,7 @@ import irvine.oeis.a141.A141044;
 import irvine.oeis.a141.A141459;
 
 /**
- * A306821 Inverse binomial transform of the &quot;original&quot; Bernoulli numbers [A164555(n)/A027642(n)] with 1 and 1/2 swapped. Denominators.
+ * A306821 Inverse binomial transform of the "original" Bernoulli numbers [A164555(n)/A027642(n)] with 1 and 1/2 swapped. Denominators.
  * @author Georg Fischer
  */
 public class A306821 extends AbstractSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000120;
 import irvine.oeis.a014.A014081;
 
 /**
- * A069010 Number of runs of 1&apos;s in the binary representation of n.
+ * A069010 Number of runs of 1's in the binary representation of n.
  * @author Georg Fischer
  */
 public class A069010 extends AbstractSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001146;
 import irvine.oeis.a019.A019434;
 
 /**
- * A330825 Numbers of the form 2^(2^n)*F_n, where F_n is a Fermat prime, A019434.
+ * A330825 Numbers of the form 2^(2^k)*F_k, where F_k is a Fermat prime, A019434.
  * @author Georg Fischer
  */
 public class A330825 extends AbstractSequence {

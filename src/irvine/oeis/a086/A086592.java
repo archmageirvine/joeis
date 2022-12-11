@@ -7,7 +7,7 @@ import irvine.oeis.a020.A020650;
 import irvine.oeis.a020.A020651;
 
 /**
- * A086592 Denominators in left-hand half of Kepler&apos;s tree of fractions.
+ * A086592 Denominators in left-hand half of Kepler's tree of fractions.
  * @author Georg Fischer
  */
 public class A086592 extends AbstractSequence {

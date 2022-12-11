@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A006089.
+ * A006089 Coefficients of elliptic function cn.
  * @author Sean A. Irvine
  */
 public class A006089 extends Sequence2 {

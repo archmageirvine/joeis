@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002828;
 import irvine.oeis.a053.A053610;
 
 /**
- * A062535 Don&apos;t be greedy! Difference between number of squares needed to sum to n using the greedy algorithm and using the best such sum.
+ * A062535 Don't be greedy! Difference between number of squares needed to sum to n using the greedy algorithm and using the best such sum.
  * @author Georg Fischer
  */
 public class A062535 extends AbstractSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060655.
+ * A060658 Even numbers n such that sigma(x) = n has no solution.
  * @author Sean A. Irvine
  */
 public class A060658 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A045379 E.g.f.: exp(4*z + exp(z) - 1).
+ * A045379 Expansion of e.g.f.: exp(4*z + exp(z) - 1).
  * @author Sean A. Irvine
  */
 public class A045379 extends MemorySequence {

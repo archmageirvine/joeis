@@ -7,7 +7,7 @@ import irvine.oeis.a024.A024447;
 import irvine.oeis.a024.A024450;
 
 /**
- * A357251 a(n) = Sum_{1&lt;=i&lt;=j&lt;=n} prime(i)*prime(j)
+ * A357251 a(n) = Sum_{1&lt;=i&lt;=j&lt;=n} prime(i)*prime(j).
  * @author Georg Fischer
  */
 public class A357251 extends AbstractSequence {

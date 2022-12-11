@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a103.A103391;
 
 /**
- * A353369 Sum of A103391 (&quot;even fractal sequence&quot;) and its Dirichlet inverse.
+ * A353369 Sum of A103391 ("even fractal sequence") and its Dirichlet inverse.
  * @author Georg Fischer
  */
 public class A353369 extends AbstractSequence {

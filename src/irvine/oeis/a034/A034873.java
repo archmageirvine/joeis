@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A034873 Primes in which digit occur in runs of at least 2.
+ * A034873 Primes in which each digit occurs in runs of at least 2.
  * @author Sean A. Irvine
  */
 public class A034873 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000108;
 
 /**
- * A293501 Number of unlabeled semiorders on n points and having dimension 3
+ * A293501 Number of unlabeled semiorders on n points and having dimension 3.
  * @author Georg Fischer
  */
 public class A293501 extends AbstractSequence {

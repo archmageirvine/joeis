@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066149 Primes with an odd number of 0&apos;s in binary expansion.
+ * A066149 Primes with an odd number of 0's in binary expansion.
  * @author Georg Fischer
  */
 public class A066149 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000984;
 import irvine.oeis.a004.A004981;
 
 /**
- * A208890 a(n) = A000984(n)*A004981(n), the term-wise product of the coefficients in (1-4*x)^(-1/2) and (1-8*x)^(-1/4).
+ * A208890  a(n) = A000984(n)*A004981(n), the term-wise product of the coefficients in (1-4*x)^(-1/2) and (1-8*x)^(-1/4).
  * @author Georg Fischer
  */
 public class A208890 extends AbstractSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000010;
 
 /**
- * A297117 M√∂bius transform of A011371, n minus (number of 1&apos;s in binary expansion of n).
+ * A297117 M\u00f6bius transform of A011371, n minus (number of 1's in binary expansion of n).
  * @author Georg Fischer
  */
 public class A297117 extends AbstractSequence {

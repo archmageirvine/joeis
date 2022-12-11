@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.AntidiagonalSequence;
 
 /**
- * A358349 allocated for Sean A. Irvine.
+ * A358349 A puzzle array read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A358349 extends AntidiagonalSequence {

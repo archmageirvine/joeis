@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A144838 a(n) = round(phi^(6^n)) where phi = 1.6180339887498948482... = (sqrt(5)+1)/2.
+ * A144838 a(n) = Lucas(6^n).
  *
  * @author Georg Fischer
  */

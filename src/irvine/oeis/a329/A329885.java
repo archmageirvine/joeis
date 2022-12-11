@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002322;
 import irvine.oeis.a051.A051903;
 
 /**
- * A329885 a(n) = A051903(n) mod A002322(n), where A051903 gives the maximal prime exponent of n, and A002322 is Carmichael&apos;s lambda (also known as psi).
+ * A329885 a(n) = A051903(n) mod A002322(n), where A051903 gives the maximal prime exponent of n, and A002322 is Carmichael's lambda (also known as psi).
  * @author Georg Fischer
  */
 public class A329885 extends Sequence1 {

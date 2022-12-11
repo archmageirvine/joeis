@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066148 Primes with an even number of 0&apos;s in binary expansion.
+ * A066148 Primes with an even number of 0's in binary expansion.
  * @author Georg Fischer
  */
 public class A066148 extends Sequence1 {

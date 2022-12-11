@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A131071 12-note scale in Hertz (without decimals).
+ * A131071 12-note scale in Hertz (rounded to integers).
  * @author Georg Fischer
  */
 public class A131071 extends NoncomputableSequence {

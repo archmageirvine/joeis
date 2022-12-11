@@ -9,7 +9,7 @@ import irvine.util.Permutation;
 import irvine.util.string.StringUtils;
 
 /**
- * A060655.
+ * A060655 Pack n integer-sided rectangles into the smallest possible square so that no sides of the rectangle are the same. Sequence gives the side of the smallest square.
  * @author Sean A. Irvine
  */
 public class A060655 extends Sequence1 {

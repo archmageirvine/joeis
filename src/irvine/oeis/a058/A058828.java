@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A058828 Numbers n such that 6^n + n is prime.
+ * A058828 Numbers k such that 6^k + k is prime.
  * @author Sean A. Irvine
  */
 public class A058828 extends Sequence1 {

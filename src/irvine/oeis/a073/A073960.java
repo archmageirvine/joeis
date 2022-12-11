@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002884;
 import irvine.oeis.a006.A006951;
 
 /**
- * A073960 Number of commuting elements: number of ordered pairs g, h in the group GL(n, 2) such that gh = hg.
+ * A073960 Number of commuting elements: number of ordered pairs g, h in the group GL(n,2) such that gh = hg.
  * @author Georg Fischer
  */
 public class A073960 extends Sequence1 {

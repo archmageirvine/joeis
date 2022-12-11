@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A340466 Primes whose binary expansion contains more 1&apos;s than 0&apos;s but at least one 0.
+ * A340466 Primes whose binary expansion contains more 1's than 0's but at least one 0.
  * @author Georg Fischer
  */
 public class A340466 extends Sequence1 {

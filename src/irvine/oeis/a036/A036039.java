@@ -15,7 +15,7 @@ import irvine.oeis.Sequence1;
  */
 public class A036039 extends Sequence1 {
 
-  private final TreeSet<int[]> mA = new TreeSet<>(Comparators.LEXICOGRAPHIC);
+  private final TreeSet<int[]> mA = new TreeSet<>(Comparators.ABRAHAM_STEGUN);
   private int mN = 0;
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int[] mC;

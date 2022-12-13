@@ -3,6 +3,7 @@ package irvine.oeis.a049;
 import java.util.ArrayList;
 import java.util.List;
 
+import irvine.math.Comparators;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -29,7 +30,7 @@ public class A049085 extends Sequence0 {
       while ((p = part.next()) != null) {
         mA.add(p);
       }
-      mA.sort(IntegerPartition.ABRAHAM_STEGUN_SORT);
+      mA.sort(Comparators.ABRAHAM_STEGUN);
       mM = 0;
     }
     return Z.valueOf(mA.get(mM)[0]);

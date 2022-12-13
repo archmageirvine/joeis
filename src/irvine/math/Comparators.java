@@ -25,20 +25,23 @@ public final class Comparators {
     return 0;
   };
 
-  /** Comparator for colexicographic ordering of integer arrays. */
-  public static final Comparator<int[]> COLEXICOGRAPHIC = (a, b) -> {
-    final int c = Integer.compare(a.length, b.length);
+  /** Comparator to sort partitions in Abraham-Stegun order. */
+  public static final Comparator<int[]> ABRAHAM_STEGUN = (p1, p2) -> {
+    final int c = Integer.compare(p1.length, p2.length);
     if (c != 0) {
       return c;
     }
-    for (int k = a.length - 1; k >= 0; --k) {
-      final int ck = Integer.compare(a[k], b[k]);
-      if (ck != 0) {
-        return ck;
+    for (int k = p1.length - 1; k >= 0; --k) {
+      final int d = Integer.compare(p1[k], p2[k]);
+      if (d != 0) {
+        return d;
       }
     }
     return 0;
   };
+
+  /** Comparator for colexicographic ordering of integer arrays. */
+  public static final Comparator<int[]> COLEXICOGRAPHIC = ABRAHAM_STEGUN;
 
   /** Comparator for reverse colexicographic ordering of integer arrays. */
   public static final Comparator<int[]> REVERSE_COLEXICOGRAPHIC = (a, b) -> {

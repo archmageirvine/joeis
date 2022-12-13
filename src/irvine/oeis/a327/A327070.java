@@ -13,7 +13,7 @@ import irvine.oeis.a006.A006129;
 public class A327070 extends AbstractSequence {
 
   private int mN = -1;
-  private final static Z[] INITS = {Z.ONE, Z.ZERO};
+  private static final Z[] INITS = {Z.ONE, Z.ZERO};
   private final A006129 mSeq1 = new A006129();
   private final A001187 mSeq2 = new A001187();
 
@@ -25,6 +25,6 @@ public class A327070 extends AbstractSequence {
   @Override
   public Z next() {
     final Z result = mSeq1.next().subtract(mSeq2.next());
-    return (++mN < 2) ? INITS[mN] : result;
+    return ++mN < 2 ? INITS[mN] : result;
   }
 }

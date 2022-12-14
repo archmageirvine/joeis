@@ -1,6 +1,7 @@
 package irvine.oeis.a263;
 
 import irvine.math.api.Matrix;
+import irvine.math.group.IntegersMod;
 import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Integers;
@@ -36,22 +37,18 @@ public class A263101 extends AbstractSequence {
     return RING.pow(M0111, n).get(0, 1);
   }
 
-  private Matrix<Z> p(final Matrix<Z> m, final Z n, final Z k) {
+  private Matrix<Z> p(final MatrixRing<Z> ring, final Matrix<Z> m, final Z n) {
     if (n.isZero()) {
       return M1001;
     }
-    final Matrix<Z> result = (!n.testBit(0)) ? RING.pow(p(m, n.divide2(), k), 2) : RING.multiply(p(m, n.subtract(1), k), m);
-    for (int i = 0; i < 2; ++i) {
-      for (int j = 0; j < 2; ++j) {
-        result.set(i, j, result.get(i, j).mod(k));
-      }
-    }
-    return result;
+    return !n.testBit(0) ? ring.pow(p(ring, m, n.divide2()), 2) : ring.multiply(p(ring, m, n.subtract(1)), m);
   }
 
   @Override
   public Z next() {
     ++mN;
-    return p(M0111, f(mN), f(mN)).get(0, 1);
+    final Z fn = f(mN);
+    final MatrixRing<Z> ring = new MatrixRing<>(2, new IntegersMod(fn));
+    return p(ring, M0111, fn).get(0, 1);
   }
 }

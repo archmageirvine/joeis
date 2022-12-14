@@ -101,15 +101,167 @@ public class A060677 extends Sequence1 {
       return new CR[] {CR.ZERO, CR.HALF};
     }
 
-//    final double m = ty / (double) tx;
-//    for (final long pt : pts) {
-//      final long x = L.ordinate(pt, 0);
-//      final long y = L.ordinate(pt, 1);
-//      if (Math.floor(m * x - 1) > y || Math.ceil(m * (x + 1) + 1) < y) {
-//        return null;
-//      }
-//    }
-//    return new CR[] {CR.valueOf(m), CR.ZERO};
+    // todo the following is much smarter -- but doesn't deal with the missing problem at 10
+    if (animal.size() >= 5 /*&& animal.toString(L).equals("(0,0),(0,1),(1,1),(2,1),(2,2),(3,2),(4,2),(4,3),(5,3),(5,4)")*/) {
+      final long x1 = L.ordinate(pts[1], 0);
+      final long y1 = L.ordinate(pts[1], 1);
+      final long xm1 = L.ordinate(pts[pts.length - 2], 0);
+      final long ym1 = L.ordinate(pts[pts.length - 2], 1);
+      if (x1 == 0 && ym1 == ty) {
+        // #   ---> ##
+        // #
+
+        // L
+        double ml = 0;
+        double bl = 1;
+        // H
+        double mh = 1;
+        double bh = 1;
+        for (int k = 1; k < pts.length; ++k) {
+          final long xk = L.ordinate(pts[k], 0);
+          final long yk = L.ordinate(pts[k], 1);
+          if (xk > 1 && ml * xk + bl < yk) {
+            // Slope of L needs to be revised up
+            ml = (yk - 1) / (double) (xk - 1);
+            bl = -ml;
+          }
+          if (mh * xk + bh > yk) {
+            // Slope of H needs to be revised down
+            mh = yk / (double) xk;
+            bh = 1;
+          }
+          System.out.println(animal.toString(L) + " L: " + k + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl));
+          System.out.println(animal.toString(L) + " H: " + k + " " + DoubleUtils.NF5.format(mh) + "x+" + DoubleUtils.NF5.format(bh));
+        }
+        final double mf = 0.5 * (ml + mh);
+        final double bf = 0.5 * (bl + bh);
+        System.out.println(((isLinearA(animal, mf, bf)) ? "ACCEPTED: " : "REJECTED: ") + animal.toString(L) + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl) + " (" + DoubleUtils.NF5.format(ml * tx + bl) + " cf. " + DoubleUtils.NF5.format(mh * tx + bh) + ")");
+        if (isLinearA(animal, mf, bf)) {
+          return new CR[] {CR.valueOf(mf), CR.valueOf(bf)};
+        }
+//        if (ml * tx + bl > mh * tx + bh) {
+//          return null;
+//        }
+//        return new CR[] {CR.valueOf(ml), CR.valueOf(bl)};
+      }
+      if (x1 == 0 && ym1 != ty) {
+        //          #
+        // #   ---> #
+        // #
+        System.out.println("Case 2");
+
+        // L
+        double ml = 0;
+        double bl = 1;
+        // H
+        double mh = 1;
+        double bh = 1;
+        for (int k = 1; k < pts.length; ++k) {
+          final long xk = L.ordinate(pts[k], 0);
+          final long yk = L.ordinate(pts[k], 1);
+          if (xk > 1) {
+            if (ml * xk + bl < yk) {
+              // Slope of L needs to be revised up
+              ml = (yk - 1) / (double) xk;
+              bl = 1 - ml;
+            }
+            if (mh * xk + bh > yk + 1) {
+              // Slope of H needs to be revised down
+              mh = yk / (double) xk;
+              bh = 1;
+            }
+          }
+          System.out.println(animal.toString(L) + " L: " + k + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl));
+          System.out.println(animal.toString(L) + " H: " + k + " " + DoubleUtils.NF5.format(mh) + "x+" + DoubleUtils.NF5.format(bh));
+        }
+        final double mf = 0.5 * (ml + mh);
+        final double bf = 0.5 * (bl + bh);
+        System.out.println(((isLinearA(animal, mf, bf)) ? "ACCEPTED: " : "REJECTED: ") + animal.toString(L) + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl) + " (" + DoubleUtils.NF5.format(ml * tx + bl) + " cf. " + DoubleUtils.NF5.format(mh * tx + bh) + ")");
+        if (isLinearA(animal, mf, bf)) {
+          return new CR[] {CR.valueOf(mf), CR.valueOf(bf)};
+        }
+//        if (ml * tx + bl > mh * tx + bh) {
+//          return null;
+//        }
+      }
+      if (x1 != 0 && ym1 != ty) {
+        //           #
+        // ##   ---> #
+
+        // L
+        double ml = 0;
+        double bl = 0;
+        // H
+        double mh = 0;
+        double bh = 1;
+        for (int k = 1; k < pts.length; ++k) {
+          final long xk = L.ordinate(pts[k], 0);
+          final long yk = L.ordinate(pts[k], 1);
+          if (xk > 1) {
+            if (ml * xk + bl < yk) {
+              // Slope of L needs to be revised up
+              ml = yk / (double) (xk - 1);
+              bl = -ml;
+            }
+            if (mh * xk + bh > yk + 1) {
+              // Slope of H needs to be revised down
+              mh = (yk - 1) / (double) xk;
+              bh = -mh;
+            }
+          }
+          System.out.println(animal.toString(L) + " L: " + k + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl));
+          System.out.println(animal.toString(L) + " H: " + k + " " + DoubleUtils.NF5.format(mh) + "x+" + DoubleUtils.NF5.format(bh));
+        }
+        final double mf = 0.5 * (ml + mh);
+        final double bf = 0.5 * (bl + bh);
+        System.out.println(((isLinearA(animal, mf, bf)) ? "ACCEPTED: " : "REJECTED: ") + animal.toString(L) + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl) + " (" + DoubleUtils.NF5.format(ml * tx + bl) + " cf. " + DoubleUtils.NF5.format(mh * tx + bh) + ")");
+        if (isLinearA(animal, mf, bf)) {
+          return new CR[] {CR.valueOf(mf), CR.valueOf(bf)};
+        }
+//        if (ml * tx + bl > mh * tx + bh) {
+//          return null;
+//        }
+      }
+      if (x1 != 0 && ym1 == ty) {
+        //           ##
+        // ##   --->
+
+        // L
+        double ml = 0;
+        double bl = 0;
+        // H
+        double mh = 0;
+        double bh = 1;
+        for (int k = 1; k < pts.length; ++k) {
+          final long xk = L.ordinate(pts[k], 0);
+          final long yk = L.ordinate(pts[k], 1);
+          if (xk > 1) {
+            if (ml * xk + bl < yk) {
+              // Slope of L needs to be revised up
+              ml = yk / (double) (xk - 1);
+              bl = -ml;
+            }
+            if (mh * xk + bh > yk + 1) {
+              // Slope of H needs to be revised down
+              mh = yk / (double) (xk - 1);
+              bh = -mh;
+            }
+          }
+          System.out.println(animal.toString(L) + " L: " + k + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl));
+          System.out.println(animal.toString(L) + " H: " + k + " " + DoubleUtils.NF5.format(mh) + "x+" + DoubleUtils.NF5.format(bh));
+        }
+        final double mf = 0.5 * (ml + mh);
+        final double bf = 0.5 * (bl + bh);
+        System.out.println(((isLinearA(animal, mf, bf)) ? "ACCEPTED: " : "REJECTED: ") + animal.toString(L) + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl) + " (" + DoubleUtils.NF5.format(ml * tx + bl) + " cf. " + DoubleUtils.NF5.format(mh * tx + bh) + ")");
+        if (isLinearA(animal, mf, bf)) {
+          return new CR[] {CR.valueOf(mf), CR.valueOf(bf)};
+        }
+//        if (ml * tx + bl > mh * tx + bh) {
+//          return null;
+//        }
+      }
+    }
+
 
     // Try making lines for each corner of origin to each corner of (tx, ty)
     for (int k = 0; k < DELTA_X.length; ++k) {
@@ -144,10 +296,6 @@ public class A060677 extends Sequence1 {
         }
       }
     }
-    if (mVerbose && animal.size() == 10) {
-      //System.out.println("Final rejection for: " + animal.toString(L));
-      StringUtils.message(toTikz(animal, null, null, 0));
-    }
     return null;
   }
 
@@ -181,6 +329,10 @@ public class A060677 extends Sequence1 {
             StringUtils.message(toTikz(a, la[0], la[1], x + 1));
           }
           linearAnimals.add(a);
+        } else if (mVerbose && a.size() == 10) {
+          if (!canons.contains(L.freeCanonical(a))) {
+            StringUtils.message(toTikz(a, null, null, 0));
+          }
         }
         final Animal b = new Animal(animal, L.toPoint(x, y + 1));
         final CR[] lb = isLinear(b);
@@ -189,6 +341,10 @@ public class A060677 extends Sequence1 {
             StringUtils.message(toTikz(b, lb[0], lb[1], x));
           }
           linearAnimals.add(b);
+        } else if (mVerbose && b.size() == 10) {
+          if (!canons.contains(L.freeCanonical(b))) {
+            StringUtils.message(toTikz(b, null, null, 0));
+          }
         }
       }
       mAnimals = linearAnimals;

@@ -1,24 +1,15 @@
 package irvine.oeis.a060;
 
-import irvine.math.z.InverseSigma;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.a007.A007370;
 
 /**
  * A060665 Sigma(x) = n has exactly nine solutions.
  * @author Sean A. Irvine
  */
-public class A060665 extends Sequence1 {
+public class A060665 extends A007370 {
 
-  private Z mN = Z.valueOf(358);
-
-  @Override
-  public Z next() {
-    while (true) {
-      mN = mN.add(2);
-      if (InverseSigma.countInverseSigma(mN).equals(Z.NINE)) {
-        return mN;
-      }
-    }
+  /** Construct the sequence. */
+  public A060665() {
+    super(9);
   }
 }

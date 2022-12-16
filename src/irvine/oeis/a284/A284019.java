@@ -7,7 +7,7 @@ import irvine.oeis.a004.A004001;
 import irvine.oeis.a005.A005185;
 
 /**
- * A284019 The &quot;Hofstadter chaotic heart&quot; sequence: a(n) = A004001(n) - A005185(n).
+ * A284019 The "Hofstadter chaotic heart" sequence: a(n) = A004001(n) - A005185(n).
  * @author Georg Fischer
  */
 public class A284019 extends AbstractSequence {

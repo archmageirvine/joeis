@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a059.A059169;
 
 /**
- * A070106
+ * A070106 Number of integer triangles with perimeter n which are obtuse and isosceles.
  * @author Georg Fischer
  */
 public class A070106 extends AbstractSequence {

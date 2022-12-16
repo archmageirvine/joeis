@@ -7,7 +7,7 @@ import irvine.oeis.a003.A003418;
 import irvine.oeis.a025.A025529;
 
 /**
- * A175455 a(n) = H(n) * (lcm(1, 2,...,n))^2, where H(n) = harmonic numbers (1/1 + 1/2 + ... + 1/n).
+ * A175455 a(n) = H(n) * (lcm(1,2,...,n))^2, where H(n) = harmonic numbers (1/1 + 1/2 + ... + 1/n).
  * @author Georg Fischer
  */
 public class A175455 extends AbstractSequence {

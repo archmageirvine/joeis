@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000203;
 import irvine.oeis.a049.A049820;
 
 /**
- * A236288
+ * A236288 a(n) = sigma(n)^n / sigma(n)^tau(n), where tau(n) = A000005(n) = the number of divisors of n and sigma(n) = A000203(n) = the sum of divisors of n.
  * @author Georg Fischer
  */
 public class A236288 extends AbstractSequence {

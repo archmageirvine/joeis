@@ -7,7 +7,7 @@ import irvine.oeis.a011.A011782;
 import irvine.oeis.a088.A088218;
 
 /**
- * A108958 Number of unordered pairs of distinct length-n binary words having the same number of 1&apos;s.
+ * A108958 Number of unordered pairs of distinct length-n binary words having the same number of 1's.
  * @author Georg Fischer
  */
 public class A108958 extends AbstractSequence {

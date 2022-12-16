@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002260;
 import irvine.oeis.a101.A101688;
 
 /**
- * A187881 Triangle read by rows: the n-th column consists of n n&apos;s followed by 0&apos;s.
+ * A187881 Triangle read by rows: the n-th column consists of n n's followed by 0's.
  * @author Georg Fischer
  */
 public class A187881 extends AbstractSequence {

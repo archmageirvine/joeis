@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000479;
 import irvine.oeis.a002.A002860;
 
 /**
- * A344664 a(n) is the number of preference profiles in the stable marriage problem with n men and n women where both the men&apos;s and the women&apos;s preferences form a Latin square when arranged in a matrix. In addition, it is possible to arrange all people into n man-w
+ * A344664 a(n) is the number of preference profiles in the stable marriage problem with n men and n women where both the men's and the women's preferences form a Latin square when arranged in a matrix. In addition, it is possible to arrange all people into n man-woman couples such that they rank each other first.
  * @author Georg Fischer
  */
 public class A344664 extends AbstractSequence {

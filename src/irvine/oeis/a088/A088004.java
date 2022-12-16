@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000720;
 import irvine.oeis.a002.A002321;
 
 /**
- * A088004 &quot;Truncated Mertens function&quot;: values of -1 at primes are left out, that is, summatory Moebius when argument runs through nonprimes.
+ * A088004 "Truncated Mertens function": values of -1 at primes are left out, that is, summatory Moebius when argument runs through nonprimes.
  * @author Georg Fischer
  */
 public class A088004 extends AbstractSequence {

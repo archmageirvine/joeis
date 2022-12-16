@@ -1,9 +1,8 @@
 package irvine.oeis.a007;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.z.InverseSigma;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A007370 Numbers k such that sigma(x) = k has a unique solution.
@@ -11,26 +10,23 @@ import irvine.util.array.LongDynamicByteArray;
  */
 public class A007370 extends Sequence1 {
 
-  private final LongDynamicByteArray mA = new LongDynamicByteArray();
   private long mN = 0;
-  private long mS = 0;
+  private final Z mTarget;
 
-  protected int select() {
-    return 1;
+  protected A007370(final long target) {
+    mTarget = Z.valueOf(target);
+  }
+
+  /** Construct the sequence. */
+  public A007370() {
+    this(1);
   }
 
   @Override
   public Z next() {
     while (true) {
       ++mN;
-      while (mN >= mS || mN >= mA.length()) {
-        final long sigma = Jaguar.factor(++mS).sigma().longValueExact();
-        final byte b = mA.get(sigma);
-        if (b <= select()) {
-          mA.set(sigma, (byte) (b + 1));
-        }
-      }
-      if (mA.get(mN) == select()) {
+      if (InverseSigma.countInverseSigma(Z.valueOf(mN), 1).equals(mTarget)) {
         return Z.valueOf(mN);
       }
     }

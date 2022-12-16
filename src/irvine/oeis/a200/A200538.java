@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001006;
 import irvine.oeis.a001.A001045;
 
 /**
- * A200538 Product of Jacobsthal and Motzkin numbers: a(n) = A001045(n+1)*A001006(n).
+ * A200538  Product of Jacobsthal and Motzkin numbers: a(n) = A001045(n+1)*A001006(n).
  * @author Georg Fischer
  */
 public class A200538 extends AbstractSequence {

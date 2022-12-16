@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A277078 Triangular array similar to A255935 but with 0&apos;s and 2&apos;s swapped in the trailing diagonal. The columns alternate in signs.
+ * A277078 Triangular array similar to A255935 but with 0's and 2's swapped in the trailing diagonal. The columns alternate in signs.
  * @author Georg Fischer
  */
 public class A277078 extends BaseTriangle {

@@ -39,7 +39,8 @@ public class A060677 extends Sequence1 {
     for (final long point : animal.points()) {
       final long x = L.ordinate(point, 0);
       final long y = L.ordinate(point, 1);
-      sb.append(toTikz(x, y, "[fill=lightgray]")).append(toTikz(x, y, ""));
+      final String color = m == null ? "red!60" : "lightgray";
+      sb.append(toTikz(x, y, "[fill=" + color + "]")).append(toTikz(x, y, ""));
     }
     if (m != null) {
       sb.append("\\clip(0,0) rectangle (")
@@ -47,12 +48,51 @@ public class A060677 extends Sequence1 {
         .append(",")
         .append(animal.extent(L, 1) + 1)
         .append("); ")
-        .append("\\draw[color=red](0,")
+        .append("\\draw[color=green](0,")
         .append(DoubleUtils.NF5.format(b.doubleValue()))
         .append(") -- (")
         .append(tx + 1)
         .append(',')
         .append(DoubleUtils.NF5.format(m.multiply(tx + 1).add(b)))
+        .append(");");
+    }
+    sb.append("\\end{tikzpicture}");
+    return sb.toString();
+  }
+
+  private static String toTikz(final Animal animal, final String color, final double m1, final double c1, final double m2, final double c2, final long tx) {
+    final StringBuilder sb = new StringBuilder();
+    if ("lightgray".equals(color)) {
+      sb.append("\\arabic{cnt}.\\addtocounter{cnt}{1}");
+    }
+    sb.append("\\begin{tikzpicture}[scale=0.25]");
+    for (final long point : animal.points()) {
+      final long x = L.ordinate(point, 0);
+      final long y = L.ordinate(point, 1);
+      sb.append(toTikz(x, y, "[fill=" + color + "]")).append(toTikz(x, y, ""));
+    }
+    sb.append("\\clip(0,0) rectangle (")
+      .append(tx + 1)
+      .append(",")
+      .append(animal.extent(L, 1) + 1)
+      .append("); ")
+      ;
+    if (Double.isFinite(c1)) {
+      sb.append("\\draw[color=green](0,")
+        .append(DoubleUtils.NF5.format(c1))
+        .append(") -- (")
+        .append(tx + 1)
+        .append(',')
+        .append(DoubleUtils.NF5.format(m1 * (tx + 1) + c1))
+        .append(");");
+    }
+    if (Double.isFinite(c2)) {
+      sb.append("\\draw[color=blue](0,")
+        .append(DoubleUtils.NF5.format(c2))
+        .append(") -- (")
+        .append(tx + 1)
+        .append(',')
+        .append(DoubleUtils.NF5.format(m2 * (tx + 1) + c2))
         .append(");");
     }
     sb.append("\\end{tikzpicture}");
@@ -72,6 +112,55 @@ public class A060677 extends Sequence1 {
     }
     //System.out.println("Accepting: " + animal.toString(L));
     return true;
+  }
+
+  private void plotMinMax(final Animal animal, final String color) {
+    final long[] pts = animal.points();
+    final long sx0 = L.ordinate(pts[0], 0);
+    final long sy0 = L.ordinate(pts[0], 1);
+    final long sx1 = L.ordinate(pts[1], 0);
+    final long sy1 = L.ordinate(pts[1], 1);
+    final long tx0 = L.ordinate(pts[pts.length - 1], 0);
+    final long ty0 = L.ordinate(pts[pts.length - 1], 1);
+    final long tx1 = L.ordinate(pts[pts.length - 2], 0);
+    final long ty1 = L.ordinate(pts[pts.length - 2], 1);
+
+    final double minM, maxM, minC, maxC;
+    if (sy0 == sy1) {
+      if (ty0 == ty1) {
+        //           ##
+        // ##   --->
+        minM = (ty0 - (sy0 + 1)) / (double) (tx0 - sx1);
+        minC = 1 - minM;
+        maxM = (ty0 + 1 - sy0) / (double) (tx0 - sx1);
+        maxC = -maxM;
+      } else {
+        //           #
+        // ##   ---> #
+        minM = (ty0 - (sy0 + 1)) / (double) ((tx1 + 1) - sx1);
+        minC = 1 - minM;
+        maxM = (ty0 - sy0) / (double) (tx0 - sx1);
+        maxC = -maxM;
+      }
+    } else {
+      if (ty0 == ty1) {
+        // #   ---> ##
+        // #
+        minM = (ty0 - sy1) / (double) (tx0 - sx1);
+        minC = 1;
+        maxM = ((ty0 + 1) - sy1) / (double) (tx0 - (sx1 + 1));
+        maxC = 1 - maxM;
+      } else {
+        //          #
+        // #   ---> #
+        // #
+        minM = (ty0 - sy1) / (double) ((tx0 + 1) - sx1);
+        minC = 1;
+        maxM = (ty0 - sy1) / (double) (tx0 - (sx0 + 1));
+        maxC = 1.0 - maxM;
+      }
+    }
+    StringUtils.message(toTikz(animal, color, minM, minC, maxM, maxC, tx0));
   }
 
   private boolean isLinearA(final Animal animal, final CR m, final CR b) {
@@ -148,7 +237,49 @@ public class A060677 extends Sequence1 {
         //          #
         // #   ---> #
         // #
-        System.out.println("Case 2");
+        System.out.println("Case 2, Littin method");
+
+        double bestMinM = 0;
+        double bestMaxM = 1;
+
+        for (int j = 1; j < pts.length - 1; ++j) {
+          final long xj = L.ordinate(pts[j], 0);
+          final long xj1 = L.ordinate(pts[j + 1], 0);
+          if (xj == xj1) {
+            long minStartX = xj;
+            long minStartY = L.ordinate(pts[j], 1);
+            long maxStartX = minStartX + 1;
+            long maxStartY = minStartY;
+
+            for (int k = j + 1; k < pts.length - 1; ++k) {
+              final long xk = L.ordinate(pts[k], 0);
+              final long xk1 = L.ordinate(pts[k + 1], 0);
+              if (xk == xk1) {
+                // A vertical step occurs at k
+                final long y = L.ordinate(pts[k + 1], 1);
+                final double minM = (y - minStartY) / (double) (xk + 1 - minStartX);
+                final double maxM = (y - maxStartY) / (double) (xk - maxStartX);
+                System.out.println("min slope from (" + minStartX + "," + minStartY + ") to (" + (xk + 1) + "," + y + ") is " + DoubleUtils.NF5.format(minM));
+                System.out.println("max slope from (" + maxStartX + "," + maxStartY + ") to (" + xk + "," + y + ") is " + DoubleUtils.NF5.format(maxM));
+                if (minM > bestMinM) {
+                  bestMinM = minM;
+                }
+                if (maxM < bestMaxM) {
+                  bestMaxM = maxM;
+                }
+              }
+            }
+          }
+        }
+        System.out.println(animal.toString(L) + " global min slope: " + DoubleUtils.NF5.format(bestMinM));
+        System.out.println(animal.toString(L) + " global max slope: " + DoubleUtils.NF5.format(bestMaxM));
+        if (bestMinM < bestMaxM) {
+          System.out.println("LITTIN ACCEPT");
+          return bestMinM < bestMaxM ? new CR[] {CR.valueOf(bestMinM), CR.ZERO} : null;
+        } else {
+          System.out.println("LITTIN REJECT");
+        }
+
 
         // L
         double ml = 0;
@@ -178,6 +309,7 @@ public class A060677 extends Sequence1 {
         final double bf = 0.5 * (bl + bh);
         System.out.println(((isLinearA(animal, mf, bf)) ? "ACCEPTED: " : "REJECTED: ") + animal.toString(L) + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl) + " (" + DoubleUtils.NF5.format(ml * tx + bl) + " cf. " + DoubleUtils.NF5.format(mh * tx + bh) + ")");
         if (isLinearA(animal, mf, bf)) {
+          System.out.println("#####" + animal.toString(L) + " was rejected by LITTIN by accepted here");
           return new CR[] {CR.valueOf(mf), CR.valueOf(bf)};
         }
 //        if (ml * tx + bl > mh * tx + bh) {
@@ -306,7 +438,7 @@ public class A060677 extends Sequence1 {
       if (mVerbose) {
         StringUtils.message("\\section*{$n=1$}");
         StringUtils.message("\\setcounter{cnt}{1}");
-        StringUtils.message("\\arabic{cnt}.\\addtocounter{cnt}{1}\\begin{tikzpicture}[scale=0.25]\\draw[fill=lightgray] (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\draw (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\clip(0,0) rectangle (1,1); \\draw[color=red](0,0.5) -- (1,0.5);\\end{tikzpicture}");
+        StringUtils.message("\\arabic{cnt}.\\addtocounter{cnt}{1}\\begin{tikzpicture}[scale=0.25]\\draw[fill=lightgray] (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\draw (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\clip(0,0) rectangle (1,1); \\draw[color=blue](0,0.5) -- (1,0.5);\\end{tikzpicture}");
       }
       return Z.ONE;
     } else {
@@ -326,24 +458,24 @@ public class A060677 extends Sequence1 {
         final CR[] la = isLinear(a);
         if (la != null) {
           if (canons.add(L.freeCanonical(a)) && mVerbose) {
-            StringUtils.message(toTikz(a, la[0], la[1], x + 1));
+            plotMinMax(a, "lightgray");
           }
           linearAnimals.add(a);
-        } else if (mVerbose && a.size() == 10) {
+        } else if (mVerbose && a.size() >= 9) {
           if (!canons.contains(L.freeCanonical(a))) {
-            StringUtils.message(toTikz(a, null, null, 0));
+            plotMinMax(a, "red!60");
           }
         }
         final Animal b = new Animal(animal, L.toPoint(x, y + 1));
         final CR[] lb = isLinear(b);
         if (lb != null) {
           if (canons.add(L.freeCanonical(b)) && mVerbose) {
-            StringUtils.message(toTikz(b, lb[0], lb[1], x));
+            plotMinMax(b, "lightgray");
           }
           linearAnimals.add(b);
-        } else if (mVerbose && b.size() == 10) {
+        } else if (mVerbose && b.size() >= 9) {
           if (!canons.contains(L.freeCanonical(b))) {
-            StringUtils.message(toTikz(b, null, null, 0));
+            plotMinMax(b, "red!60");
           }
         }
       }

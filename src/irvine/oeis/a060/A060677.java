@@ -180,7 +180,7 @@ public class A060677 extends Sequence1 {
   private static final double[] DELTA_X = {0, 0, 1, 1};
   private static final double[] DELTA_Y = {EPS, 1 - EPS, EPS, 1 - EPS};
 
-  private CR[] isLinear(final Animal animal) {
+  CR[] isLinear(final Animal animal) {
     final long[] pts = animal.points();
     final long tx = L.ordinate(pts[pts.length - 1], 0);
     final long ty = L.ordinate(pts[pts.length - 1], 1);
@@ -242,42 +242,37 @@ public class A060677 extends Sequence1 {
         double bestMinM = 0;
         double bestMaxM = 1;
 
-        for (int j = 1; j < pts.length - 1; ++j) {
-          final long xj = L.ordinate(pts[j], 0);
-          final long xj1 = L.ordinate(pts[j + 1], 0);
-          if (xj == xj1) {
-            long minStartX = xj;
-            long minStartY = L.ordinate(pts[j], 1);
-            long maxStartX = minStartX + 1;
-            long maxStartY = minStartY;
+        long minStartX = L.ordinate(pts[1], 0);
+        long minStartY = L.ordinate(pts[1], 1);
+        long maxStartX = minStartX + 1;
+        long maxStartY = minStartY;
 
-            for (int k = j + 1; k < pts.length - 1; ++k) {
-              final long xk = L.ordinate(pts[k], 0);
-              final long xk1 = L.ordinate(pts[k + 1], 0);
-              if (xk == xk1) {
-                // A vertical step occurs at k
-                final long y = L.ordinate(pts[k + 1], 1);
-                final double minM = (y - minStartY) / (double) (xk + 1 - minStartX);
-                final double maxM = (y - maxStartY) / (double) (xk - maxStartX);
-                System.out.println("min slope from (" + minStartX + "," + minStartY + ") to (" + (xk + 1) + "," + y + ") is " + DoubleUtils.NF5.format(minM));
-                System.out.println("max slope from (" + maxStartX + "," + maxStartY + ") to (" + xk + "," + y + ") is " + DoubleUtils.NF5.format(maxM));
-                if (minM > bestMinM) {
-                  bestMinM = minM;
-                }
-                if (maxM < bestMaxM) {
-                  bestMaxM = maxM;
-                }
-              }
+        for (int k = 2; k < pts.length - 1; ++k) {
+          final long xk = L.ordinate(pts[k], 0);
+          final long xk1 = L.ordinate(pts[k + 1], 0);
+          if (xk == xk1) {
+            // A vertical step occurs at k
+            final long y = L.ordinate(pts[k + 1], 1);
+            final double minM = (y - minStartY) / (double) (xk + 1 - minStartX);
+            final double maxM = (y - maxStartY) / (double) (xk - maxStartX);
+            System.out.println("min slope from (" + minStartX + "," + minStartY + ") to (" + (xk + 1) + "," + y + ") is " + DoubleUtils.NF5.format(minM));
+            System.out.println("max slope from (" + maxStartX + "," + maxStartY + ") to (" + xk + "," + y + ") is " + DoubleUtils.NF5.format(maxM));
+            if (minM > bestMinM) {
+              bestMinM = minM;
+            }
+            if (maxM < bestMaxM) {
+              bestMaxM = maxM;
             }
           }
         }
-        System.out.println(animal.toString(L) + " global min slope: " + DoubleUtils.NF5.format(bestMinM));
-        System.out.println(animal.toString(L) + " global max slope: " + DoubleUtils.NF5.format(bestMaxM));
+        System.out.println(animal.toString(L) + " maximum min-slope: " + DoubleUtils.NF5.format(bestMinM));
+        System.out.println(animal.toString(L) + " minimum max-slope: " + DoubleUtils.NF5.format(bestMaxM));
         if (bestMinM < bestMaxM) {
           System.out.println("LITTIN ACCEPT");
           return bestMinM < bestMaxM ? new CR[] {CR.valueOf(bestMinM), CR.ZERO} : null;
         } else {
-          System.out.println("LITTIN REJECT");
+          System.out.println("LITTIN REJECT: " + animal.toString(L));
+//          return null;
         }
 
 

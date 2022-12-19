@@ -4,7 +4,7 @@ package irvine.oeis.a232;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A232621 The number of indecomposable domino tilings of the 5 X (2n) board.
+ * A232621 The number of vertically fault-free domino tilings of the 5 X (2n) board.
  * @author Georg Fischer
  */
 public class A232621 extends GeneratingFunctionSequence {

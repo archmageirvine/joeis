@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060691.
+ * A060691 Expansion of AGM(1,1-8x) (where AGM denotes the arithmetic-geometric mean).
  * @author Sean A. Irvine
  */
 public class A060691 extends Sequence0 {

@@ -4,7 +4,7 @@ import irvine.oeis.a005.A005187;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
- * A318446 Inverse Möbius transform of A005187: a(n) = Sum_{d|n} A005187(d).
+ * A318446 Inverse M\u00f6bius transform of A005187: a(n) = Sum_{d|n} A005187(d).
  * @author Georg Fischer
  */
 public class A318446 extends InverseMobiusTransformSequence {

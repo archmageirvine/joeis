@@ -4,13 +4,13 @@ import java.util.HashSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence1;
 
 /**
  * A060683 Numbers for which the differences between consecutive divisors (ordered by size) are distinct.
  * @author Sean A. Irvine
  */
-public class A060683 extends Sequence2 {
+public class A060683 extends Sequence1 {
 
   private long mN = 0;
 
@@ -18,7 +18,7 @@ public class A060683 extends Sequence2 {
     Z prev = Z.ZERO;
     final HashSet<Z> diffs = new HashSet<>();
     for (final Z d : Jaguar.factor(n).divisorsSorted()) {
-      if (!prev.isZero() && ! diffs.add(d.subtract(prev))) {
+      if (!prev.isZero() && !diffs.add(d.subtract(prev))) {
         return false;
       }
       prev = d;

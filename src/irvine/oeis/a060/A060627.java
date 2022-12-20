@@ -5,13 +5,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.a007.A007504;
+import irvine.oeis.Sequence1;
 
 /**
  * A060627 1 + Sum_{n &gt;= 1} Sum_{k = 0..n-1} (-1)^n*T(n,k)*y^(2*k)*x^(2*n)/(2*n)! = JacobiCN(x,y).
  * @author Sean A. Irvine
  */
-public class A060627 extends A007504 {
+public class A060627 extends Sequence1 {
 
   private int mN = 0;
   private int mM = 0;

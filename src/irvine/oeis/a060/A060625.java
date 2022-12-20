@@ -14,7 +14,7 @@ public class A060625 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A060625() {
-    super(new CR() {
+    super(0, new CR() {
 
       private final Sequence mS = new A023532();
       private Z mA = Z.ZERO;

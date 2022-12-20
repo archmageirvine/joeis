@@ -2086,3 +2086,5 @@ A060621 Number of flips between the d-dimensional tilings of the unary zonotope 
 A060622	Number of flips between the d-dimensional tilings of the unary zonotope Z(D,d). Here the codimension D-d is equal to 4 and d varies.
 A060631 Number of independent sets in an n-dimensional hypercube modulo symmetries of the hypercube.
 A060638 Triangle T(n,k) (0 <= k <= n) giving number of edges in the "flip graph" whose nodes are tilings of the k-dimensional zonotope constructed from n vectors
+A060694 A triangle related to rooted trees.
+A060699 a(n) = floor(A^(C^n)), where A = 2.084551112207285611..., C = 1.221

@@ -1,6 +1,7 @@
 package irvine.oeis.a060;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
@@ -180,14 +181,85 @@ public class A060677 extends Sequence1 {
   private static final double[] DELTA_X = {0, 0, 1, 1};
   private static final double[] DELTA_Y = {EPS, 1 - EPS, EPS, 1 - EPS};
 
+  private int[] layerLengths(final Animal animal) {
+    final long[] pts = animal.points();
+    final long ty = L.ordinate(pts[pts.length - 1], 1);
+
+    if (ty == 0) {
+      return new int[] {animal.size()};
+    }
+
+    final int[] layerLengths = new int[(int) ty + 1];
+    for (int k = 0, i = 0, j = 0; k < layerLengths.length; ++k) {
+      while (j < pts.length && L.ordinate(pts[j], 1) == k) {
+        ++j;
+      }
+      layerLengths[k] = j - i;
+      i = j;
+    }
+    return layerLengths;
+  }
+
+  boolean isLinearD(final Animal animal) {
+    final long[] pts = animal.points();
+    final long tx = L.ordinate(pts[pts.length - 1], 0);
+    final long ty = L.ordinate(pts[pts.length - 1], 1);
+
+    // Deal with trivial cases: every animal (according to our construction method) with at most two layers is linear.
+    if (ty <= 1 || tx == 1) {
+      return true;
+    }
+
+    // Find first vertical step -- must exist due to avoid
+    int k = 1;
+    while (L.ordinate(pts[k], 1) == 0) {
+      ++k;
+    }
+    int s = k;
+    while (k < pts.length) {
+      final long y = L.ordinate(pts[k], 1);
+      final int t = k;
+      while (++k < pts.length && L.ordinate(pts[k], 1) == y) {
+        ++k;
+      }
+      // Next layer runs from [t .. (k-1)]
+      final int len = k - t;
+      if (Math.abs(len - s) > 2) {
+        return false;
+      }
+    }
+    return true;
+  }
+
   CR[] isLinear(final Animal animal) {
     final long[] pts = animal.points();
     final long tx = L.ordinate(pts[pts.length - 1], 0);
     final long ty = L.ordinate(pts[pts.length - 1], 1);
 
-    // Deal with trivial case of a straight line (makes the picture nicer)
-    if (ty == 0 || tx == 0) {
+    if (ty <= 0 || tx == 0) {
+      return new CR[] {CR.ZERO, CR.HALF}; // todo not right for vertical!
+    }
+    final int[] layerLengths = layerLengths(animal);
+    // Deal with trivial cases
+    if (layerLengths.length <= 2) {
+      // todo note this equation is not right in general!
       return new CR[] {CR.ZERO, CR.HALF};
+    }
+    // Deal with internal layers
+    int maxLayerLength = 0;
+    int minLayerLength = Integer.MAX_VALUE;
+    for (int k = 1; k < layerLengths.length - 1; ++k) {
+      final int l = layerLengths[k];
+      if (l > maxLayerLength) {
+        maxLayerLength = l;
+      }
+      if (l < minLayerLength) {
+        minLayerLength = l;
+      }
+    }
+    if (maxLayerLength - minLayerLength > 2) {
+      System.out.println("LL reject: " + animal.toString(L) + " " + Arrays.toString(layerLengths));
+      return null; // Certainly impossible
     }
 
     // todo the following is much smarter -- but doesn't deal with the missing problem at 10
@@ -269,7 +341,7 @@ public class A060677 extends Sequence1 {
         System.out.println(animal.toString(L) + " minimum max-slope: " + DoubleUtils.NF5.format(bestMaxM));
         if (bestMinM < bestMaxM) {
           System.out.println("LITTIN ACCEPT");
-          return bestMinM < bestMaxM ? new CR[] {CR.valueOf(bestMinM), CR.ZERO} : null;
+         // return bestMinM < bestMaxM ? new CR[] {CR.valueOf(bestMinM), CR.ZERO} : null;
         } else {
           System.out.println("LITTIN REJECT: " + animal.toString(L));
 //          return null;

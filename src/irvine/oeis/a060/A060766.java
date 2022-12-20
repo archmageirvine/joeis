@@ -12,7 +12,7 @@ public class A060766 extends Sequence2 {
 
   protected long mN = 1;
 
-  private Z lcmDelta(final Z... t) {
+  static Z lcmDelta(final Z... t) {
     Z lcm = Z.ONE;
     Z prev = null;
     for (final Z v : t) {

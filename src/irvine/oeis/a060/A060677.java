@@ -528,9 +528,15 @@ public class A060677 extends Sequence1 {
             plotMinMax(a, "lightgray");
           }
           linearAnimals.add(a);
+          if (a.size() == 12) {
+            System.out.println("LAYERS: True " + Arrays.toString(layerLengths(a)));
+          }
         } else if (mVerbose && a.size() >= 9) {
           if (!canons.contains(L.freeCanonical(a))) {
             plotMinMax(a, "red!60");
+            if (a.size() == 12) {
+              System.out.println("LAYERS: False " + Arrays.toString(layerLengths(a)));
+            }
           }
         }
         final Animal b = new Animal(animal, L.toPoint(x, y + 1));
@@ -540,9 +546,15 @@ public class A060677 extends Sequence1 {
             plotMinMax(b, "lightgray");
           }
           linearAnimals.add(b);
+          if (b.size() == 12) {
+            System.out.println("LAYERS: True " + Arrays.toString(layerLengths(b)));
+          }
         } else if (mVerbose && b.size() >= 9) {
           if (!canons.contains(L.freeCanonical(b))) {
             plotMinMax(b, "red!60");
+            if (b.size() == 12) {
+              System.out.println("LAYERS: False " + Arrays.toString(layerLengths(b)));
+            }
           }
         }
       }

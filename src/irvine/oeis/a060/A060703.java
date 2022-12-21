@@ -3,13 +3,13 @@ package irvine.oeis.a060;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A060703 Negative values of 2*x*y^4 + x^2*y^3 - 2*x^3*y*2 - x^4*y - y^5 + 2*y for x,y &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A060703 extends Sequence1 {
+public class A060703 extends Sequence0 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mX = Z.NEG_ONE;

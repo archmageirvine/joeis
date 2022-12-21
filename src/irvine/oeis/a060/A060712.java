@@ -1,13 +1,13 @@
 package irvine.oeis.a060;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A060712 Smallest number whose digit sum is 3^n.
  * @author Sean A. Irvine
  */
-public class A060712 extends Sequence1 {
+public class A060712 extends Sequence0 {
 
   // After Harry J. Smith
 

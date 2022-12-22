@@ -33,6 +33,7 @@ public class A060677 extends Sequence1 {
   private static final Lattice L = Lattices.Z2;
   private static final CR MAX_M = CR.valueOf(1000);
   private static final int ACCURACY = -128; // in bits
+  private static final String LINE_COLOR = "black!30!green";
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private List<Animal> mAnimals = new ArrayList<>();
 
@@ -175,7 +176,7 @@ public class A060677 extends Sequence1 {
     for (final long point : animal.points()) {
       final long x = L.ordinate(point, 0);
       final long y = L.ordinate(point, 1);
-      sb.append(toTikz(x, y, "[fill=lightgray]")).append(toTikz(x, y, "[line width=0.1mm]"));
+      sb.append(toTikz(x, y, "[fill=gray!20]")).append(toTikz(x, y, "[line width=0.1mm]"));
     }
     if (range != null) {
       final long tx = animal.extent(L, 0);
@@ -186,7 +187,7 @@ public class A060677 extends Sequence1 {
         .append(",")
         .append(animal.extent(L, 1) + 1)
         .append("); ")
-        .append("\\draw[color=green](0,")
+        .append("\\draw[color=").append(LINE_COLOR).append("](0,")
         .append(DoubleUtils.NF5.format(c.doubleValue()))
         .append(") -- (")
         .append(tx + 1)
@@ -225,7 +226,7 @@ public class A060677 extends Sequence1 {
       if (mVerbose) {
         StringUtils.message("\\section*{$n=1$}");
         StringUtils.message("\\setcounter{cnt}{1}");
-        StringUtils.message("\\arabic{cnt}.\\addtocounter{cnt}{1}\\begin{tikzpicture}[scale=0.25]\\draw[fill=lightgray] (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\draw (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\clip(0,0) rectangle (1,1); \\draw[color=green](0,0.5) -- (1,0.5);\\end{tikzpicture}");
+        StringUtils.message("\\arabic{cnt}.\\addtocounter{cnt}{1}\\begin{tikzpicture}[scale=0.25]\\draw[fill=gray!20] (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\draw (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\clip(0,0) rectangle (1,1); \\draw[color=" + LINE_COLOR + "](0,0.5) -- (1,0.5);\\end{tikzpicture}");
       }
       return Z.ONE;
     } else {

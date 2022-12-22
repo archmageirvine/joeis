@@ -4,7 +4,7 @@ package irvine.oeis.a088;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A088305 a(0) = 1, a(n) = Fibonacci(2*n). It has the property: a(n) = 1*a(n-1) + 2*a(n-2) + 3*a(n-3) + 4*a(n-4) + ...
+ * A088305 a(0) = 1, a(n) = Fibonacci(2*n). It has the property that a(n) = 1*a(n-1) + 2*a(n-2) + 3*a(n-3) + 4*a(n-4) + ...
  * @author Georg Fischer
  */
 public class A088305 extends HolonomicRecurrence {

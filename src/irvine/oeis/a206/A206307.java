@@ -5,7 +5,7 @@ package irvine.oeis.a206;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A206307 a(n) = ((2n+2)(2n+3)-1) * a(n-1) + 2n(2n+1) * a(n-2), a(0)=0, a(1)=6.
+ * A206307 a(n) = ((2*n+2)*(2*n+3) - 1)*a(n-1) + 2*n*(2*n+1)*a(n-2), a(0)=0, a(1)=6.
  * @author Georg Fischer
  */
 public class A206307 extends HolonomicRecurrence {

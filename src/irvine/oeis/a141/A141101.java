@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a031.A031215;
 
 /**
- * A141101 a(n) = prime(2n) - 2n.
+ * A141101 a(n) = prime(2*n) - 2*n.
  * @author Georg Fischer
  */
 public class A141101 extends A031215 {

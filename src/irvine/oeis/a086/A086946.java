@@ -5,7 +5,7 @@ package irvine.oeis.a086;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A086946 a(n) = k where R(k+6) = 2.
+ * A086946 Numbers k such that reverse(k+6) = 2.
  * @author Georg Fischer
  */
 public class A086946 extends HolonomicRecurrence {

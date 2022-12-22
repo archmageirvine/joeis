@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A029787 Numbers n such that digits of n^2 are not present in n^3.
+ * A029787 Numbers k such k^2 and k^3 do not have any common digits.
  * @author Sean A. Irvine
  */
 public class A029787 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A088055 a(n) = (n^(n+1)-1)/(n-1) - 1 - n!*n^n, or A031972(n) - A061711(n): sums of geometric progressions minus products of arithmetic progressions.
+ * A088055 a(n) = n!*n^n - ((n^(n+1)-1)/(n-1) - 1) for n&gt;1 with a(1)=0.
  * @author Georg Fischer
  */
 public class A088055 extends Sequence1 {

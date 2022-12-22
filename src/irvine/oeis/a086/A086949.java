@@ -5,7 +5,7 @@ package irvine.oeis.a086;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A086949 a(n) = k where R(k+9) = 5.
+ * A086949 Numbers k such that reverse(k+9) = 5.
  * @author Georg Fischer
  */
 public class A086949 extends HolonomicRecurrence {

@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002162;
 import irvine.oeis.a020.A020761;
 
 /**
- * A187832 Integral from 1/2 to 1 of (1-x)/x dx.
+ * A187832 Decimal expansion of integral from 1/2 to 1 of (1-x)/x dx.
  * @author Georg Fischer
  */
 public class A187832 extends Sequence0 {

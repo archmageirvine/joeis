@@ -6,7 +6,7 @@ package irvine.oeis.a130;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A130619 Let M(n) = {{n, 0, 1}, {1, 0, 0}, {0, 1, 0}}, then a(n) is the upper-right term of M(n)*M(n-1)*...*M(1) (empty matrix product yields the identity).
+ * A130619 Let M(n) = {{n, 0, 1}, {1, 0, 0}, {0, 1, 0}}, then a(n) is the upper-right term of M(n)*M(n-1)*...*M(1).
  * @author Georg Fischer
  */
 public class A130619 extends HolonomicRecurrence {

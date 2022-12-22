@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a053.A053184;
 
 /**
- * A136243 Numbers n among A008864 such that n^2 - n - 1 is prime.
+ * A136243 Numbers k in A008864 such that k^2 - k - 1 is prime.
  * @author Georg Fischer
  */
 public class A136243 extends A053184 {

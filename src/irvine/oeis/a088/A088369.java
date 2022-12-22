@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A088369 E.g.f.: 1/(1-x-x^2)^x.
+ * A088369 Expansion of e.g.f.: 1/(1-x-x^2)^x.
  * E.g.f.: 1/(1-x-x^2)^x
  * @author Georg Fischer
  */

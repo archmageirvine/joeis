@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000203;
 import irvine.oeis.a159.A159077;
 
 /**
- * A178636 If n = Product (p_i^k_i) for i = 1, \u2026, j then a(n) is the sum of the divisors d that are not in the set {1, p_1^k_1, p_2^k_2, \u2026, p_j^k_j}.
+ * A178636 If n = Product (p_i^k_i) for i = 1, ..., j then a(n) is the sum of the divisors d that are not in the set {1, p_1^k_1, p_2^k_2, ..., p_j^k_j}.
  * @author Georg Fischer
  */
 public class A178636 extends AbstractSequence {

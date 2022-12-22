@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.BeattySequence;
 
 /**
- * A108587 Floor(n/(1-sin(1))).
+ * A108587 a(n) = floor(n/(1-sin(1))).
  * @author Georg Fischer
  */
 public class A108587 extends BeattySequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A102000 Sequence generated from a lattice packing matrix.
+ * A102000 a(0),...,a(3) = 1, 2, 4, 8; thereafter a(n) = a(n-1) + 2*a(n-2) + 4*a(n-3) + 8*a(n-4), n&gt;3.
  * @author Sean A. Irvine
  */
 public class A102000 extends LinearRecurrence {

@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a051.A051674;
 
 /**
- * A101340 a(n) = prime(n)^prime(n)+prime(n).
+ * A101340 a(n) = p^p + p, with p = prime(n).
  * @author Georg Fischer
  */
 public class A101340 extends Sequence1 {

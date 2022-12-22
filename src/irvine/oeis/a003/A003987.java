@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A003987 Table of n XOR m (or Nim-sum of n and m) read by antidiagonals, i.e., with entries in the order (n,m) = (0,0), (0,1), (1,0), (0,2), (1,1), (2,0), ...
+ * A003987 Table of n XOR m (or Nim-sum of n and m) read by antidiagonals with m&gt;=0, n&gt;=0.
  * @author Sean A. Irvine
  */
 public class A003987 extends Sequence0 {

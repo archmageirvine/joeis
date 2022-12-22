@@ -6,7 +6,7 @@ package irvine.oeis.a103;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A103626 Four interleaved sequences (1,1,1,1,1,1....), (1,2,3,5,8,12,...), (1,2,4,6,10,16,..) and (1,2,4,7,11,18,..) each with recurrence b(n) = b(n-1)+b(n-2)+b(n-3)-2*b(n-4).
+ * A103626 Expansion of (1 + x + x^2 + x^3 + x^5 + x^6 + x^7 - x^8 + x^10 + x^11 - 2*x^12 - x^13 - x^14)/(1 - x^4 - x^8 - x^12 + 2*x^16).
  * @author Georg Fischer
  */
 public class A103626 extends HolonomicRecurrence {

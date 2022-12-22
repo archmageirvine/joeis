@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a255.A255212;
 
 /**
- * A063014 Number of solutions to n^2=b^2+c^2 [with c&gt;=b&gt;=0].
+ * A063014 Number of solutions to n^2 = b^2 + c^2 (with c &gt;= b &gt;= 0).
  * @author Georg Fischer
  */
 public class A063014 extends A255212 {

@@ -4,7 +4,7 @@ package irvine.oeis.a151;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A151403 Number of walks within N^2 (the first quadrant of Z^2) starting at (0,0), ending on the vertical axis and consisting of 2 n steps taken from {(-1, 0), (-1, 1), (1, 0), (1, 1)}.
+ * A151403 Number of walks within N^2 (the first quadrant of Z^2) starting at (0,0), ending on the vertical axis and consisting of 2*n steps taken from {(-1, 0), (-1, 1), (1, 0), (1, 1)}.
  * @author Georg Fischer
  */
 public class A151403 extends HolonomicRecurrence {

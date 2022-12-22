@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a051.A051349;
 
 /**
- * A060697 The sum of the first n composite numbers plus 1 is a prime.
+ * A060697 The sum of the first a(n) composite numbers plus 1 is a prime.
  * @author Sean A. Irvine
  */
 public class A060697 extends FilterPositionSequence {

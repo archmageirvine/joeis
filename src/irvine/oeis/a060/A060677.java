@@ -4,11 +4,10 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
-import irvine.math.cr.CR;
-import irvine.math.cr.ComputableReals;
 import irvine.math.lattice.Animal;
 import irvine.math.lattice.Lattice;
 import irvine.math.lattice.Lattices;
+import irvine.math.q.Q;
 import irvine.math.r.DoubleUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -31,7 +30,7 @@ public class A060677 extends Sequence1 {
   // Detection of linear animals based on Python code by Richard Littin.
 
   private static final Lattice L = Lattices.Z2;
-  private static final CR MAX_M = CR.valueOf(1000);
+  private static final Q MAX_M = new Q(1000);
   private static final int ACCURACY = -128; // in bits
   private static final String LINE_COLOR = "black!30!green";
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
@@ -58,16 +57,17 @@ public class A060677 extends Sequence1 {
   }
 
   private static final class Line implements Comparable<Line> {
-    private final CR mM;
-    private final CR mC;
-    private final CR mT;
+    private final Q mM;
+    private final Q mC;
+    private final double mT;
 
     private Line(final Point p1, final Point p2) {
       final int x = p1.left() - p2.left();
       final int y = p1.right() - p2.right();
-      mM = x == 0 ? MAX_M : CR.valueOf(y).divide(CR.valueOf(x));
-      mC = CR.valueOf(p1.right()).subtract(mM.multiply(p1.left()));
-      mT = ComputableReals.SINGLETON.acos(CR.valueOf(x).divide(CR.valueOf(x * x + y * y).sqrt()));
+      mM = x == 0 ? MAX_M : new Q(y, x);
+      mC = new Q(p1.right()).subtract(mM.multiply(p1.left()));
+      mT = Math.acos(x / Math.sqrt(x * x + y * y));
+      //mT = ComputableReals.SINGLETON.acos(CR.valueOf(x).divide(CR.valueOf(x * x + y * y).sqrt()));
     }
 
     @Override
@@ -76,17 +76,19 @@ public class A060677 extends Sequence1 {
         return false;
       }
       final Line other = (Line) obj;
-      return mM.compareTo(other.mM, ACCURACY) == 0 && mC.compareTo(other.mC, ACCURACY) == 0;
+      return mM.equals(other.mM) && mC.equals(other.mC);
     }
 
     @Override
     public int compareTo(final Line other) {
-      return mT.compareTo(other.mT, ACCURACY);
+      //return mT.compareTo(other.mT, ACCURACY);
+      return Double.compare(mT, other.mT);
     }
 
     @Override
     public String toString() {
-      return mM.toString(4) + " x " + (mC.signum() < 0 ? "-" : "+") + mC.abs().toString(4) + " (" + mT.toString(4) + ")";
+      //return mM + " x " + (mC.signum() < 0 ? "-" : "+") + mC.abs() + " (" + mT.toString(4) + ")";
+      return mM + " x " + (mC.signum() < 0 ? "-" : "+") + mC.abs() + " (" + DoubleUtils.NF4.format(Math.toDegrees(mT)) + ")";
     }
   }
 
@@ -100,7 +102,8 @@ public class A060677 extends Sequence1 {
     }
 
     private boolean isValid() {
-      return mMinimum.mT.compareTo(mMaximum.mT, ACCURACY) < 0;
+      //return mMinimum.mT.compareTo(mMaximum.mT, ACCURACY) < 0;
+      return mMinimum.mT < mMaximum.mT;
     }
 
     @Override
@@ -180,8 +183,8 @@ public class A060677 extends Sequence1 {
     }
     if (range != null) {
       final long tx = animal.extent(L, 0);
-      final CR m = range.mMaximum.mM.add(range.mMinimum.mM).divide(CR.TWO);
-      final CR c = range.mMaximum.mC.add(range.mMinimum.mC).divide(CR.TWO);
+      final Q m = range.mMaximum.mM.add(range.mMinimum.mM).divide(2);
+      final Q c = range.mMaximum.mC.add(range.mMinimum.mC).divide(2);
       sb.append("\\clip(0,0) rectangle (")
         .append(tx + 1)
         .append(",")

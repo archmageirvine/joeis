@@ -1,22 +1,24 @@
 package irvine.oeis.a060;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
 import irvine.math.cr.CR;
+import irvine.math.cr.ComputableReals;
 import irvine.math.lattice.Animal;
 import irvine.math.lattice.Lattice;
 import irvine.math.lattice.Lattices;
 import irvine.math.r.DoubleUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.util.Pair;
 import irvine.util.string.StringUtils;
 
 /**
  * A060677 Number of linear n-celled polyominoes, those with the property that a line can be drawn that intersects the interior of every cell.
  * @author Sean A. Irvine
+ * @author Richard Littin
  */
 public class A060677 extends Sequence1 {
 
@@ -26,162 +28,177 @@ public class A060677 extends Sequence1 {
   // increasing x or y by one cell.  However, we do need to avoid generating
   // symmetric duplicates.
 
+  // Detection of linear animals based on Python code by Richard Littin.
+
   private static final Lattice L = Lattices.Z2;
+  private static final CR MAX_M = CR.valueOf(1000);
+  private static final int ACCURACY = -128; // in bits
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private List<Animal> mAnimals = new ArrayList<>();
+
+  private static final class Point extends Pair<Integer, Integer> {
+    private Point(final int x, final int y) {
+      super(x, y);
+    }
+  }
+
+  private static final class Segment {
+    private final Point mP1;
+    private final Point mP2;
+    private Segment(final Point p1, final Point p2) {
+      mP1 = p1;
+      mP2 = p2;
+    }
+
+    @Override
+    public String toString() {
+      return "[" + mP1 + " - " + mP2 + "]";
+    }
+  }
+
+  private static final class Line implements Comparable<Line> {
+    private final CR mM;
+    private final CR mC;
+    private final CR mT;
+
+    private Line(final Point p1, final Point p2) {
+      final int x = p1.left() - p2.left();
+      final int y = p1.right() - p2.right();
+      mM = x == 0 ? MAX_M : CR.valueOf(y).divide(CR.valueOf(x));
+      mC = CR.valueOf(p1.right()).subtract(mM.multiply(p1.left()));
+      mT = ComputableReals.SINGLETON.acos(CR.valueOf(x).divide(CR.valueOf(x * x + y * y).sqrt()));
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof Line)) {
+        return false;
+      }
+      final Line other = (Line) obj;
+      return mM.compareTo(other.mM, ACCURACY) == 0 && mC.compareTo(other.mC, ACCURACY) == 0;
+    }
+
+    @Override
+    public int compareTo(final Line other) {
+      return mT.compareTo(other.mT, ACCURACY);
+    }
+
+    @Override
+    public String toString() {
+      return mM.toString(4) + " x " + (mC.signum() < 0 ? "-" : "+") + mC.abs().toString(4) + " (" + mT.toString(4) + ")";
+    }
+  }
+
+  static class Range {
+    private final Line mMinimum;
+    private final Line mMaximum;
+
+    private Range(final Line l1, final Line l2) {
+      mMinimum = l1;
+      mMaximum = l2;
+    }
+
+    private boolean isValid() {
+      return mMinimum.mT.compareTo(mMaximum.mT, ACCURACY) < 0;
+    }
+
+    @Override
+    public String toString() {
+      return "(" + mMinimum + " : " + mMaximum + ")";
+    }
+
+    private Range reduce(final Range other) {
+      return new Range(
+        mMinimum.compareTo(other.mMinimum) > 0 ? mMinimum : other.mMinimum,
+        mMaximum.compareTo(other.mMaximum) < 0 ? mMaximum : other.mMaximum
+      );
+    }
+  }
+
+  /**
+   * Test if the specified animal is linear, returning a range for a proof of linearity
+   * or null if the animal is not linear. Note this method assumes the animal is entirely
+   * within first quadrant with first cell <code>(0,0)</code> and that all layers overlap
+   * by precisely one cell.  Be very careful attempting to apply this outside of this class.
+   * @param animal the animal
+   * @return linear status
+   */
+  Range isLinear(final Animal animal) {
+    final int[] pieces = layerLengths(animal);
+    if (pieces.length == 1) {
+      final Line l1 = new Line(new Point(0, 0), new Point(pieces[0], 1));
+      final Line l2 = new Line(new Point(0, 1), new Point(pieces[0], 0));
+      return new Range(l1, l2);
+    }
+    final List<Segment> segments = new ArrayList<>();
+    int x = 0;
+    int y = 0;
+    if (pieces[0] > 1) {
+      segments.add(new Segment(new Point(1, 1), new Point(1, 0)));
+    }
+    for (final int p : pieces) {
+      assert p > 0;
+      if (y != 0) {
+        segments.add(new Segment(new Point(x, y), new Point(x + 1, y)));
+      }
+      ++y;
+      x += p - 1;
+    }
+    if (pieces[pieces.length - 1] > 1) {
+      segments.add(new Segment(new Point(x, y), new Point(x, y - 1)));
+    }
+    Range animalRange = null;
+    for (int i = 0; i < segments.size() - 1; ++i) {
+      for (int j = 0; j <= i; ++j) {
+        final Segment si = segments.get(i + 1);
+        final Segment sj = segments.get(j);
+        final Line l1 = new Line(si.mP1, sj.mP2);
+        final Line l2 = new Line(si.mP2, sj.mP1);
+        final Range r = l1.compareTo(l2) < 0 ? new Range(l1, l2) : new Range(l2, l1);
+        animalRange = animalRange == null ? r : animalRange.reduce(r);
+        if (!animalRange.isValid()) {
+          return null;
+        }
+      }
+    }
+    return animalRange;
+    //return animalRange.isValid();
+  }
 
   private static String toTikz(final long x, final long y, final String modifier) {
     return "\\draw" + modifier + " (" + x + "," + y + ") -- (" + (x + 1) + "," + y + ") -- (" + (x + 1) + "," + (y + 1) + ") -- (" + x + "," + (y + 1) + ") -- cycle;";
   }
 
-  private static String toTikz(final Animal animal, final CR m, final CR b, final long tx) {
+  private static String toTikz(final Animal animal, final Range range) {
     final StringBuilder sb = new StringBuilder();
     sb.append("\\arabic{cnt}.\\addtocounter{cnt}{1}\\begin{tikzpicture}[scale=0.25]");
     for (final long point : animal.points()) {
       final long x = L.ordinate(point, 0);
       final long y = L.ordinate(point, 1);
-      final String color = m == null ? "red!60" : "lightgray";
-      sb.append(toTikz(x, y, "[fill=" + color + "]")).append(toTikz(x, y, ""));
+      sb.append(toTikz(x, y, "[fill=lightgray]")).append(toTikz(x, y, "[line width=0.1mm]"));
     }
-    if (m != null) {
+    if (range != null) {
+      final long tx = animal.extent(L, 0);
+      final CR m = range.mMaximum.mM.add(range.mMinimum.mM).divide(CR.TWO);
+      final CR c = range.mMaximum.mC.add(range.mMinimum.mC).divide(CR.TWO);
       sb.append("\\clip(0,0) rectangle (")
         .append(tx + 1)
         .append(",")
         .append(animal.extent(L, 1) + 1)
         .append("); ")
         .append("\\draw[color=green](0,")
-        .append(DoubleUtils.NF5.format(b.doubleValue()))
+        .append(DoubleUtils.NF5.format(c.doubleValue()))
         .append(") -- (")
         .append(tx + 1)
         .append(',')
-        .append(DoubleUtils.NF5.format(m.multiply(tx + 1).add(b)))
+        .append(DoubleUtils.NF5.format(m.multiply(tx + 1).add(c)))
         .append(");");
     }
     sb.append("\\end{tikzpicture}");
     return sb.toString();
   }
 
-  private static String toTikz(final Animal animal, final String color, final double m1, final double c1, final double m2, final double c2, final long tx) {
-    final StringBuilder sb = new StringBuilder();
-    if ("lightgray".equals(color)) {
-      sb.append("\\arabic{cnt}.\\addtocounter{cnt}{1}");
-    }
-    sb.append("\\begin{tikzpicture}[scale=0.25]");
-    for (final long point : animal.points()) {
-      final long x = L.ordinate(point, 0);
-      final long y = L.ordinate(point, 1);
-      sb.append(toTikz(x, y, "[fill=" + color + "]")).append(toTikz(x, y, ""));
-    }
-    sb.append("\\clip(0,0) rectangle (")
-      .append(tx + 1)
-      .append(",")
-      .append(animal.extent(L, 1) + 1)
-      .append("); ")
-      ;
-    if (Double.isFinite(c1)) {
-      sb.append("\\draw[color=green](0,")
-        .append(DoubleUtils.NF5.format(c1))
-        .append(") -- (")
-        .append(tx + 1)
-        .append(',')
-        .append(DoubleUtils.NF5.format(m1 * (tx + 1) + c1))
-        .append(");");
-    }
-    if (Double.isFinite(c2)) {
-      sb.append("\\draw[color=blue](0,")
-        .append(DoubleUtils.NF5.format(c2))
-        .append(") -- (")
-        .append(tx + 1)
-        .append(',')
-        .append(DoubleUtils.NF5.format(m2 * (tx + 1) + c2))
-        .append(");");
-    }
-    sb.append("\\end{tikzpicture}");
-    return sb.toString();
-  }
-
-  private boolean isLinearA(final Animal animal, final double m, final double b) {
-    for (final long pt : animal.points()) {
-      final long x = L.ordinate(pt, 0);
-      final long y = L.ordinate(pt, 1);
-      if (Math.floor(m * x + b) != y && Math.floor(m * (x + 1) + b) != y) {
-//        if (animal.size() == 8 && animal.toString(L).equals("(0,0),(1,0),(2,0),(2,1),(3,1),(3,2),(4,2),(5,2)")) {
-//          System.out.println("Rejecting: " + animal.toString(L) + " at x=" + x + " with y = " + m + " * x + " + b);
-//        }
-        return false;
-      }
-    }
-    //System.out.println("Accepting: " + animal.toString(L));
-    return true;
-  }
-
-  private void plotMinMax(final Animal animal, final String color) {
-    final long[] pts = animal.points();
-    final long sx0 = L.ordinate(pts[0], 0);
-    final long sy0 = L.ordinate(pts[0], 1);
-    final long sx1 = L.ordinate(pts[1], 0);
-    final long sy1 = L.ordinate(pts[1], 1);
-    final long tx0 = L.ordinate(pts[pts.length - 1], 0);
-    final long ty0 = L.ordinate(pts[pts.length - 1], 1);
-    final long tx1 = L.ordinate(pts[pts.length - 2], 0);
-    final long ty1 = L.ordinate(pts[pts.length - 2], 1);
-
-    final double minM, maxM, minC, maxC;
-    if (sy0 == sy1) {
-      if (ty0 == ty1) {
-        //           ##
-        // ##   --->
-        minM = (ty0 - (sy0 + 1)) / (double) (tx0 - sx1);
-        minC = 1 - minM;
-        maxM = (ty0 + 1 - sy0) / (double) (tx0 - sx1);
-        maxC = -maxM;
-      } else {
-        //           #
-        // ##   ---> #
-        minM = (ty0 - (sy0 + 1)) / (double) ((tx1 + 1) - sx1);
-        minC = 1 - minM;
-        maxM = (ty0 - sy0) / (double) (tx0 - sx1);
-        maxC = -maxM;
-      }
-    } else {
-      if (ty0 == ty1) {
-        // #   ---> ##
-        // #
-        minM = (ty0 - sy1) / (double) (tx0 - sx1);
-        minC = 1;
-        maxM = ((ty0 + 1) - sy1) / (double) (tx0 - (sx1 + 1));
-        maxC = 1 - maxM;
-      } else {
-        //          #
-        // #   ---> #
-        // #
-        minM = (ty0 - sy1) / (double) ((tx0 + 1) - sx1);
-        minC = 1;
-        maxM = (ty0 - sy1) / (double) (tx0 - (sx0 + 1));
-        maxC = 1.0 - maxM;
-      }
-    }
-    StringUtils.message(toTikz(animal, color, minM, minC, maxM, maxC, tx0));
-  }
-
-  private boolean isLinearA(final Animal animal, final CR m, final CR b) {
-    for (final long pt : animal.points()) {
-      final long x = L.ordinate(pt, 0);
-      final long y = L.ordinate(pt, 1);
-      if (m.multiply(x).add(b).floor().intValueExact() != y && m.multiply(x + 1).add(b).floor().intValueExact() != y) {
-        return false;
-      }
-    }
-    //System.out.println("Accepting: " + animal.toString(L));
-    return true;
-  }
-
-  private static final double EPS = 1E-6; //100 * Double.MIN_NORMAL;
-  //private static final double[] DELTA_X = {EPS, EPS, 1 - EPS, 1 - EPS};
-  private static final double[] DELTA_X = {0, 0, 1, 1};
-  private static final double[] DELTA_Y = {EPS, 1 - EPS, EPS, 1 - EPS};
-
-  private int[] layerLengths(final Animal animal) {
+  private static int[] layerLengths(final Animal animal) {
     final long[] pts = animal.points();
     final long ty = L.ordinate(pts[pts.length - 1], 1);
 
@@ -200,303 +217,6 @@ public class A060677 extends Sequence1 {
     return layerLengths;
   }
 
-  boolean isLinearD(final Animal animal) {
-    final long[] pts = animal.points();
-    final long tx = L.ordinate(pts[pts.length - 1], 0);
-    final long ty = L.ordinate(pts[pts.length - 1], 1);
-
-    // Deal with trivial cases: every animal (according to our construction method) with at most two layers is linear.
-    if (ty <= 1 || tx == 1) {
-      return true;
-    }
-
-    // Find first vertical step -- must exist due to avoid
-    int k = 1;
-    while (L.ordinate(pts[k], 1) == 0) {
-      ++k;
-    }
-    int s = k;
-    while (k < pts.length) {
-      final long y = L.ordinate(pts[k], 1);
-      final int t = k;
-      while (++k < pts.length && L.ordinate(pts[k], 1) == y) {
-        ++k;
-      }
-      // Next layer runs from [t .. (k-1)]
-      final int len = k - t;
-      if (Math.abs(len - s) > 2) {
-        return false;
-      }
-    }
-    return true;
-  }
-
-  CR[] isLinear(final Animal animal) {
-    final long[] pts = animal.points();
-    final long tx = L.ordinate(pts[pts.length - 1], 0);
-    final long ty = L.ordinate(pts[pts.length - 1], 1);
-
-    if (ty <= 0 || tx == 0) {
-      return new CR[] {CR.ZERO, CR.HALF}; // todo not right for vertical!
-    }
-    final int[] layerLengths = layerLengths(animal);
-    // Deal with trivial cases
-    if (layerLengths.length <= 2) {
-      // todo note this equation is not right in general!
-      return new CR[] {CR.ZERO, CR.HALF};
-    }
-    // Deal with internal layers
-    int maxLayerLength = 0;
-    int minLayerLength = Integer.MAX_VALUE;
-    for (int k = 1; k < layerLengths.length - 1; ++k) {
-      final int l = layerLengths[k];
-      if (l > maxLayerLength) {
-        maxLayerLength = l;
-      }
-      if (l < minLayerLength) {
-        minLayerLength = l;
-      }
-    }
-    if (maxLayerLength - minLayerLength > 2) {
-      System.out.println("LL reject: " + animal.toString(L) + " " + Arrays.toString(layerLengths));
-      return null; // Certainly impossible
-    }
-
-    // todo the following is much smarter -- but doesn't deal with the missing problem at 10
-    if (animal.size() >= 5 /*&& animal.toString(L).equals("(0,0),(0,1),(1,1),(2,1),(2,2),(3,2),(4,2),(4,3),(5,3),(5,4)")*/) {
-      final long x1 = L.ordinate(pts[1], 0);
-      final long y1 = L.ordinate(pts[1], 1);
-      final long xm1 = L.ordinate(pts[pts.length - 2], 0);
-      final long ym1 = L.ordinate(pts[pts.length - 2], 1);
-      if (x1 == 0 && ym1 == ty) {
-        // #   ---> ##
-        // #
-
-        // L
-        double ml = 0;
-        double bl = 1;
-        // H
-        double mh = 1;
-        double bh = 1;
-        for (int k = 1; k < pts.length; ++k) {
-          final long xk = L.ordinate(pts[k], 0);
-          final long yk = L.ordinate(pts[k], 1);
-          if (xk > 1 && ml * xk + bl < yk) {
-            // Slope of L needs to be revised up
-            ml = (yk - 1) / (double) (xk - 1);
-            bl = -ml;
-          }
-          if (mh * xk + bh > yk) {
-            // Slope of H needs to be revised down
-            mh = yk / (double) xk;
-            bh = 1;
-          }
-          System.out.println(animal.toString(L) + " L: " + k + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl));
-          System.out.println(animal.toString(L) + " H: " + k + " " + DoubleUtils.NF5.format(mh) + "x+" + DoubleUtils.NF5.format(bh));
-        }
-        final double mf = 0.5 * (ml + mh);
-        final double bf = 0.5 * (bl + bh);
-        System.out.println(((isLinearA(animal, mf, bf)) ? "ACCEPTED: " : "REJECTED: ") + animal.toString(L) + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl) + " (" + DoubleUtils.NF5.format(ml * tx + bl) + " cf. " + DoubleUtils.NF5.format(mh * tx + bh) + ")");
-        if (isLinearA(animal, mf, bf)) {
-          return new CR[] {CR.valueOf(mf), CR.valueOf(bf)};
-        }
-//        if (ml * tx + bl > mh * tx + bh) {
-//          return null;
-//        }
-//        return new CR[] {CR.valueOf(ml), CR.valueOf(bl)};
-      }
-      if (x1 == 0 && ym1 != ty) {
-        //          #
-        // #   ---> #
-        // #
-        System.out.println("Case 2, Littin method");
-
-        double bestMinM = 0;
-        double bestMaxM = 1;
-
-        long minStartX = L.ordinate(pts[1], 0);
-        long minStartY = L.ordinate(pts[1], 1);
-        long maxStartX = minStartX + 1;
-        long maxStartY = minStartY;
-
-        for (int k = 2; k < pts.length - 1; ++k) {
-          final long xk = L.ordinate(pts[k], 0);
-          final long xk1 = L.ordinate(pts[k + 1], 0);
-          if (xk == xk1) {
-            // A vertical step occurs at k
-            final long y = L.ordinate(pts[k + 1], 1);
-            final double minM = (y - minStartY) / (double) (xk + 1 - minStartX);
-            final double maxM = (y - maxStartY) / (double) (xk - maxStartX);
-            System.out.println("min slope from (" + minStartX + "," + minStartY + ") to (" + (xk + 1) + "," + y + ") is " + DoubleUtils.NF5.format(minM));
-            System.out.println("max slope from (" + maxStartX + "," + maxStartY + ") to (" + xk + "," + y + ") is " + DoubleUtils.NF5.format(maxM));
-            if (minM > bestMinM) {
-              bestMinM = minM;
-            }
-            if (maxM < bestMaxM) {
-              bestMaxM = maxM;
-            }
-          }
-        }
-        System.out.println(animal.toString(L) + " maximum min-slope: " + DoubleUtils.NF5.format(bestMinM));
-        System.out.println(animal.toString(L) + " minimum max-slope: " + DoubleUtils.NF5.format(bestMaxM));
-        if (bestMinM < bestMaxM) {
-          System.out.println("LITTIN ACCEPT");
-         // return bestMinM < bestMaxM ? new CR[] {CR.valueOf(bestMinM), CR.ZERO} : null;
-        } else {
-          System.out.println("LITTIN REJECT: " + animal.toString(L));
-//          return null;
-        }
-
-
-        // L
-        double ml = 0;
-        double bl = 1;
-        // H
-        double mh = 1;
-        double bh = 1;
-        for (int k = 1; k < pts.length; ++k) {
-          final long xk = L.ordinate(pts[k], 0);
-          final long yk = L.ordinate(pts[k], 1);
-          if (xk > 1) {
-            if (ml * xk + bl < yk) {
-              // Slope of L needs to be revised up
-              ml = (yk - 1) / (double) xk;
-              bl = 1 - ml;
-            }
-            if (mh * xk + bh > yk + 1) {
-              // Slope of H needs to be revised down
-              mh = yk / (double) xk;
-              bh = 1;
-            }
-          }
-          System.out.println(animal.toString(L) + " L: " + k + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl));
-          System.out.println(animal.toString(L) + " H: " + k + " " + DoubleUtils.NF5.format(mh) + "x+" + DoubleUtils.NF5.format(bh));
-        }
-        final double mf = 0.5 * (ml + mh);
-        final double bf = 0.5 * (bl + bh);
-        System.out.println(((isLinearA(animal, mf, bf)) ? "ACCEPTED: " : "REJECTED: ") + animal.toString(L) + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl) + " (" + DoubleUtils.NF5.format(ml * tx + bl) + " cf. " + DoubleUtils.NF5.format(mh * tx + bh) + ")");
-        if (isLinearA(animal, mf, bf)) {
-          System.out.println("#####" + animal.toString(L) + " was rejected by LITTIN by accepted here");
-          return new CR[] {CR.valueOf(mf), CR.valueOf(bf)};
-        }
-//        if (ml * tx + bl > mh * tx + bh) {
-//          return null;
-//        }
-      }
-      if (x1 != 0 && ym1 != ty) {
-        //           #
-        // ##   ---> #
-
-        // L
-        double ml = 0;
-        double bl = 0;
-        // H
-        double mh = 0;
-        double bh = 1;
-        for (int k = 1; k < pts.length; ++k) {
-          final long xk = L.ordinate(pts[k], 0);
-          final long yk = L.ordinate(pts[k], 1);
-          if (xk > 1) {
-            if (ml * xk + bl < yk) {
-              // Slope of L needs to be revised up
-              ml = yk / (double) (xk - 1);
-              bl = -ml;
-            }
-            if (mh * xk + bh > yk + 1) {
-              // Slope of H needs to be revised down
-              mh = (yk - 1) / (double) xk;
-              bh = -mh;
-            }
-          }
-          System.out.println(animal.toString(L) + " L: " + k + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl));
-          System.out.println(animal.toString(L) + " H: " + k + " " + DoubleUtils.NF5.format(mh) + "x+" + DoubleUtils.NF5.format(bh));
-        }
-        final double mf = 0.5 * (ml + mh);
-        final double bf = 0.5 * (bl + bh);
-        System.out.println(((isLinearA(animal, mf, bf)) ? "ACCEPTED: " : "REJECTED: ") + animal.toString(L) + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl) + " (" + DoubleUtils.NF5.format(ml * tx + bl) + " cf. " + DoubleUtils.NF5.format(mh * tx + bh) + ")");
-        if (isLinearA(animal, mf, bf)) {
-          return new CR[] {CR.valueOf(mf), CR.valueOf(bf)};
-        }
-//        if (ml * tx + bl > mh * tx + bh) {
-//          return null;
-//        }
-      }
-      if (x1 != 0 && ym1 == ty) {
-        //           ##
-        // ##   --->
-
-        // L
-        double ml = 0;
-        double bl = 0;
-        // H
-        double mh = 0;
-        double bh = 1;
-        for (int k = 1; k < pts.length; ++k) {
-          final long xk = L.ordinate(pts[k], 0);
-          final long yk = L.ordinate(pts[k], 1);
-          if (xk > 1) {
-            if (ml * xk + bl < yk) {
-              // Slope of L needs to be revised up
-              ml = yk / (double) (xk - 1);
-              bl = -ml;
-            }
-            if (mh * xk + bh > yk + 1) {
-              // Slope of H needs to be revised down
-              mh = yk / (double) (xk - 1);
-              bh = -mh;
-            }
-          }
-          System.out.println(animal.toString(L) + " L: " + k + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl));
-          System.out.println(animal.toString(L) + " H: " + k + " " + DoubleUtils.NF5.format(mh) + "x+" + DoubleUtils.NF5.format(bh));
-        }
-        final double mf = 0.5 * (ml + mh);
-        final double bf = 0.5 * (bl + bh);
-        System.out.println(((isLinearA(animal, mf, bf)) ? "ACCEPTED: " : "REJECTED: ") + animal.toString(L) + " " + DoubleUtils.NF5.format(ml) + "x+" + DoubleUtils.NF5.format(bl) + " (" + DoubleUtils.NF5.format(ml * tx + bl) + " cf. " + DoubleUtils.NF5.format(mh * tx + bh) + ")");
-        if (isLinearA(animal, mf, bf)) {
-          return new CR[] {CR.valueOf(mf), CR.valueOf(bf)};
-        }
-//        if (ml * tx + bl > mh * tx + bh) {
-//          return null;
-//        }
-      }
-    }
-
-
-    // Try making lines for each corner of origin to each corner of (tx, ty)
-    for (int k = 0; k < DELTA_X.length; ++k) {
-      for (int j = 0; j < DELTA_X.length; ++j) {
-        final double dx = tx + DELTA_X[j] - DELTA_X[k];
-        final double dy = ty + DELTA_Y[j] - DELTA_Y[k];
-        final double m = dy / dx;
-        if (Double.isFinite(m)) {
-          final double b = DELTA_Y[k] - m * DELTA_X[k];
-          if (isLinearA(animal, CR.valueOf(m), CR.valueOf(b))) {
-            return new CR[] {CR.valueOf(m), CR.valueOf(b)};
-          }
-        }
-      }
-    }
-    // Try a harder search picking points all over start and end cells
-    final double prec = 0.1;
-    for (double k = prec; k < 1; k += prec) {
-      for (double j = prec; j < 1; j += prec) {
-        for (double l = prec; l < 1; l += prec) {
-          for (double i = prec; i < 1; i += prec) {
-            final double dx = tx + k - l;
-            final double dy = ty + j - i;
-            final double m = dy / dx;
-            if (Double.isFinite(m)) {
-              final double b = j - m * k;
-              if (isLinearA(animal, CR.valueOf(m), CR.valueOf(b))) {
-                return new CR[] {CR.valueOf(m), CR.valueOf(b)};
-              }
-            }
-          }
-        }
-      }
-    }
-    return null;
-  }
 
   @Override
   public Z next() {
@@ -505,7 +225,7 @@ public class A060677 extends Sequence1 {
       if (mVerbose) {
         StringUtils.message("\\section*{$n=1$}");
         StringUtils.message("\\setcounter{cnt}{1}");
-        StringUtils.message("\\arabic{cnt}.\\addtocounter{cnt}{1}\\begin{tikzpicture}[scale=0.25]\\draw[fill=lightgray] (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\draw (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\clip(0,0) rectangle (1,1); \\draw[color=blue](0,0.5) -- (1,0.5);\\end{tikzpicture}");
+        StringUtils.message("\\arabic{cnt}.\\addtocounter{cnt}{1}\\begin{tikzpicture}[scale=0.25]\\draw[fill=lightgray] (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\draw (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\clip(0,0) rectangle (1,1); \\draw[color=green](0,0.5) -- (1,0.5);\\end{tikzpicture}");
       }
       return Z.ONE;
     } else {
@@ -522,40 +242,20 @@ public class A060677 extends Sequence1 {
         final long x = L.ordinate(pt, 0);
         final long y = L.ordinate(pt, 1);
         final Animal a = new Animal(animal, L.toPoint(x + 1, y));
-        final CR[] la = isLinear(a);
-        if (la != null) {
+        final Range rangeA = isLinear(a);
+        if (rangeA != null) {
           if (canons.add(L.freeCanonical(a)) && mVerbose) {
-            plotMinMax(a, "lightgray");
+            StringUtils.message(toTikz(a, rangeA));
           }
           linearAnimals.add(a);
-          if (a.size() == 12) {
-            System.out.println("LAYERS: True " + Arrays.toString(layerLengths(a)));
-          }
-        } else if (mVerbose && a.size() >= 9) {
-          if (!canons.contains(L.freeCanonical(a))) {
-            plotMinMax(a, "red!60");
-            if (a.size() == 12) {
-              System.out.println("LAYERS: False " + Arrays.toString(layerLengths(a)));
-            }
-          }
         }
         final Animal b = new Animal(animal, L.toPoint(x, y + 1));
-        final CR[] lb = isLinear(b);
-        if (lb != null) {
+        final Range rangeB = isLinear(b);
+        if (rangeB != null) {
           if (canons.add(L.freeCanonical(b)) && mVerbose) {
-            plotMinMax(b, "lightgray");
+            StringUtils.message(toTikz(b, rangeB));
           }
           linearAnimals.add(b);
-          if (b.size() == 12) {
-            System.out.println("LAYERS: True " + Arrays.toString(layerLengths(b)));
-          }
-        } else if (mVerbose && b.size() >= 9) {
-          if (!canons.contains(L.freeCanonical(b))) {
-            plotMinMax(b, "red!60");
-            if (b.size() == 12) {
-              System.out.println("LAYERS: False " + Arrays.toString(layerLengths(b)));
-            }
-          }
         }
       }
       mAnimals = linearAnimals;

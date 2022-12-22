@@ -1,6 +1,5 @@
 package irvine.oeis.a060;
 
-import irvine.math.cr.CR;
 import irvine.math.lattice.Animal;
 import irvine.math.lattice.Lattice;
 import irvine.math.lattice.Lattices;
@@ -27,11 +26,11 @@ public class A060677Test extends TestCase {
       animal = new Animal(animal, L.toPoint(x, y));
     }
     final A060677 seq = new A060677();
-    final CR[] line = seq.isLinear(animal);
+    final A060677.Range range = seq.isLinear(animal);
     if (state) {
-      assertNotNull(animal.toString(L), line);
+      assertNotNull(animal.toString(L), range);
     } else {
-      assertNull(animal.toString(L), line);
+      assertNull(animal.toString(L), range);
     }
   }
 

@@ -30,8 +30,6 @@ public class A060677 extends Sequence1 {
   // Detection of linear animals based on Python code by Richard Littin.
 
   private static final Lattice L = Lattices.Z2;
-  private static final Q MAX_M = new Q(1000);
-  private static final int ACCURACY = -128; // in bits
   private static final String LINE_COLOR = "black!30!green";
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private List<Animal> mAnimals = new ArrayList<>();
@@ -57,17 +55,22 @@ public class A060677 extends Sequence1 {
   }
 
   private static final class Line implements Comparable<Line> {
-    private final Q mM;
+    private final Q mM; // null indicates a vertical line
     private final Q mC;
-    private final double mT;
+//    private final double mT;
 
     private Line(final Point p1, final Point p2) {
       final int x = p1.left() - p2.left();
       final int y = p1.right() - p2.right();
-      mM = x == 0 ? MAX_M : new Q(y, x);
-      mC = new Q(p1.right()).subtract(mM.multiply(p1.left()));
-      mT = Math.acos(x / Math.sqrt(x * x + y * y));
-      //mT = ComputableReals.SINGLETON.acos(CR.valueOf(x).divide(CR.valueOf(x * x + y * y).sqrt()));
+      if (x == 0) {
+        // Vertical
+        mM = null;
+        mC = null;
+      } else {
+        mM = new Q(y, x);
+        mC = new Q(p1.right()).subtract(mM.multiply(p1.left()));
+      }
+//      mT = Math.atan2(y, x);
     }
 
     @Override
@@ -81,14 +84,33 @@ public class A060677 extends Sequence1 {
 
     @Override
     public int compareTo(final Line other) {
-      //return mT.compareTo(other.mT, ACCURACY);
-      return Double.compare(mT, other.mT);
+      if (mM == null) {
+        if (other.mM == null) {
+          return 0;
+        }
+        return other.mM.signum() < 0 ? -1 : 1;
+      }
+      if (mM.equals(other.mM)) {
+        return 0;
+      }
+      final int sign1 = mM.signum();
+      if (other.mM == null) {
+        return sign1 >= 0 ? -1 : 1;
+      }
+      final int sign2 = other.mM.signum();
+      if (sign1 >= 0) {
+        return sign2 < 0 || mM.compareTo(other.mM) <= 0 ? -1 : 1;
+      } else {
+        return mM.compareTo(other.mM) < 0 ? 1 : -1;
+      }
     }
 
     @Override
     public String toString() {
-      //return mM + " x " + (mC.signum() < 0 ? "-" : "+") + mC.abs() + " (" + mT.toString(4) + ")";
-      return mM + " x " + (mC.signum() < 0 ? "-" : "+") + mC.abs() + " (" + DoubleUtils.NF4.format(Math.toDegrees(mT)) + ")";
+      if (mM == null) {
+        return "vertical";
+      }
+      return mM + " x " + (mC.signum() < 0 ? "-" : "+") + mC.abs();
     }
   }
 
@@ -102,8 +124,7 @@ public class A060677 extends Sequence1 {
     }
 
     private boolean isValid() {
-      //return mMinimum.mT.compareTo(mMaximum.mT, ACCURACY) < 0;
-      return mMinimum.mT < mMaximum.mT;
+      return mMinimum.compareTo(mMaximum) < 0;
     }
 
     @Override
@@ -195,7 +216,7 @@ public class A060677 extends Sequence1 {
         .append(") -- (")
         .append(tx + 1)
         .append(',')
-        .append(DoubleUtils.NF5.format(m.multiply(tx + 1).add(c)))
+        .append(DoubleUtils.NF5.format(m.multiply(tx + 1).add(c).doubleValue()))
         .append(");");
     }
     sb.append("\\end{tikzpicture}");

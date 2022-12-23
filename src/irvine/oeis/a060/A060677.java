@@ -74,15 +74,6 @@ public class A060677 extends Sequence1 {
     }
 
     @Override
-    public boolean equals(final Object obj) {
-      if (!(obj instanceof Line)) {
-        return false;
-      }
-      final Line other = (Line) obj;
-      return mM.equals(other.mM) && mC.equals(other.mC);
-    }
-
-    @Override
     public int compareTo(final Line other) {
       if (mM == null) {
         if (other.mM == null) {
@@ -114,7 +105,7 @@ public class A060677 extends Sequence1 {
     }
   }
 
-  static class Range {
+  static final class Range {
     private final Line mMinimum;
     private final Line mMaximum;
 
@@ -196,7 +187,7 @@ public class A060677 extends Sequence1 {
 
   private static String toTikz(final Animal animal, final Range range) {
     final StringBuilder sb = new StringBuilder();
-    sb.append("\\arabic{cnt}.\\addtocounter{cnt}{1}\\begin{tikzpicture}[scale=0.25]");
+    sb.append("\\item \\begin{tikzpicture}[scale=0.25]");
     for (final long point : animal.points()) {
       final long x = L.ordinate(point, 0);
       final long y = L.ordinate(point, 1);
@@ -204,20 +195,38 @@ public class A060677 extends Sequence1 {
     }
     if (range != null) {
       final long tx = animal.extent(L, 0);
-      final Q m = range.mMaximum.mM.add(range.mMinimum.mM).divide(2);
-      final Q c = range.mMaximum.mC.add(range.mMinimum.mC).divide(2);
+      final Q m, c;
+      if (range.mMinimum.mM == null || range.mMaximum.mM == null) {
+        if (range.mMaximum.mM != null) {
+          m = range.mMaximum.mM;
+          c = range.mMaximum.mC;
+        } else if (range.mMinimum.mM != null) {
+          m = range.mMinimum.mM;
+          c = range.mMinimum.mC;
+        } else {
+          m = new Q(1000);
+          c = new Q(1000);
+        }
+      } else {
+        m = range.mMaximum.mM.add(range.mMinimum.mM).divide(2);
+        c = range.mMaximum.mC.add(range.mMinimum.mC).divide(2);
+      }
       sb.append("\\clip(0,0) rectangle (")
         .append(tx + 1)
         .append(",")
         .append(animal.extent(L, 1) + 1)
-        .append("); ")
-        .append("\\draw[color=").append(LINE_COLOR).append("](0,")
-        .append(DoubleUtils.NF5.format(c.doubleValue()))
-        .append(") -- (")
-        .append(tx + 1)
-        .append(',')
-        .append(DoubleUtils.NF5.format(m.multiply(tx + 1).add(c).doubleValue()))
-        .append(");");
+        .append("); ");
+      if ("(0,0),(1,0),(1,1)".equals(animal.toString(L))) {
+        sb.append("\\draw[color=").append(LINE_COLOR).append("](0,-0.2) -- (2,1.2);");
+      } else {
+        sb.append("\\draw[color=").append(LINE_COLOR).append("](0,")
+          .append(DoubleUtils.NF5.format(c.doubleValue()))
+          .append(") -- (")
+          .append(tx + 1)
+          .append(',')
+          .append(DoubleUtils.NF5.format(m.multiply(tx + 1).add(c).doubleValue()))
+          .append(");");
+      }
     }
     sb.append("\\end{tikzpicture}");
     return sb.toString();
@@ -248,17 +257,16 @@ public class A060677 extends Sequence1 {
     if (mAnimals.isEmpty()) {
       mAnimals.add(new Animal(L.origin()));
       if (mVerbose) {
-        StringUtils.message("\\section*{$n=1$}");
-        StringUtils.message("\\setcounter{cnt}{1}");
-        StringUtils.message("\\arabic{cnt}.\\addtocounter{cnt}{1}\\begin{tikzpicture}[scale=0.25]\\draw[fill=gray!20] (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\draw (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\clip(0,0) rectangle (1,1); \\draw[color=" + LINE_COLOR + "](0,0.5) -- (1,0.5);\\end{tikzpicture}");
+        StringUtils.message("\\subsection*{Linear animals with 1 cell}");
+        StringUtils.message("\\begin{enumerate}\\item\\begin{tikzpicture}[scale=0.25]\\draw[fill=gray!20] (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\draw (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;\\clip(0,0) rectangle (1,1); \\draw[color=" + LINE_COLOR + "](0,0.5) -- (1,0.5);\\end{tikzpicture}\\end{enumerate}");
       }
       return Z.ONE;
     } else {
       // Track canons separately from the main list, because the canonicalization
       // procedure can mess with the order in which points are added.
       if (mVerbose) {
-        StringUtils.message("\\section*{$n=" + (mAnimals.get(0).size() + 1) + "$}");
-        StringUtils.message("\\setcounter{cnt}{1}");
+        StringUtils.message("\\subsection*{Linear animals with " + (mAnimals.get(0).size() + 1) + " cells}");
+        StringUtils.message("\\begin{enumerate}");
       }
       final HashSet<Animal> canons = new HashSet<>();
       final List<Animal> linearAnimals = new ArrayList<>();
@@ -282,6 +290,9 @@ public class A060677 extends Sequence1 {
           }
           linearAnimals.add(b);
         }
+      }
+      if (mVerbose) {
+        StringUtils.message("\\end{enumerate}");
       }
       mAnimals = linearAnimals;
       return Z.valueOf(canons.size());

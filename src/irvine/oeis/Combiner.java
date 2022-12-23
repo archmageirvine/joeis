@@ -20,6 +20,8 @@ public class Combiner extends AbstractSequence {
   public static final BiFunction<Z, Z, Z> DIVIDE = Z::divide;
   /** Power. */
   public static final BiFunction<Z, Z, Z> POW = Z::pow;
+  /** Greatest common divisor. */
+  public static final BiFunction<Z, Z, Z> GCD = Z::gcd;
   /** Average: <code>(a+b)/2</code>. */
   public static final BiFunction<Z, Z, Z> AVERAGE = (a, b) -> a.add(b).divide2();
   /** Minimum. */

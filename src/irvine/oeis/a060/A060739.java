@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060739.
+ * A060739 a(n) = (-1)^(n(n-1)/2) * Product_{k=0,...,n-1} (n+k-1)!/((k!)^2 * (n-1-k)!).
  * @author Sean A. Irvine
  */
 public class A060739 extends Sequence0 {

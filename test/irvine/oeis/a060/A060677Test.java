@@ -26,11 +26,11 @@ public class A060677Test extends TestCase {
       animal = new Animal(animal, L.toPoint(x, y));
     }
     final A060677 seq = new A060677();
-    final A060677.Range range = seq.isLinear(animal);
+    final double[] line = seq.isLinear(animal);
     if (state) {
-      assertNotNull(animal.toString(L), range);
+      assertNotNull(animal.toString(L), line);
     } else {
-      assertNull(animal.toString(L), range);
+      assertNull(animal.toString(L), line);
     }
   }
 

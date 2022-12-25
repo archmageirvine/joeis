@@ -1,6 +1,7 @@
 package irvine.oeis.a060;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 
@@ -26,8 +27,21 @@ public class A060677 extends Sequence1 {
   // In fact, we can always extend either by taking the last point and
   // increasing x or y by one cell.  However, we do need to avoid generating
   // symmetric duplicates.
-
-  // Detection of linear animals based on Python code by Richard Littin.
+  //
+  // Some care is needed checking the animal is linear, especially given the
+  // requirement that the line passes through the interior of each cell.
+  // Detection of linear animals based on Python code by Richard Littin,
+  // where the minimum and maximum possible slopes of each layer and pair
+  // of layers is used to determine whether a line is possible.  This
+  // procedure by itself does not produce a final line, but given the bounds
+  // constructed during the process it is possible to demonstrate a specific
+  // line meeting the criteria.
+  //
+  // Care has been taken to do the detection of a line in exact arithmetic
+  // (although testing indicates ordinary floating-point arithmetic is
+  // sufficient for all the terms of the OEIS Data line).  The actual
+  // demonstration of a line is done here with floating-point, but that is
+  // only used to construct the pictures in the associated document.
 
   private static final Lattice L = Lattices.Z2;
   private static final String LINE_COLOR = "black!30!green";
@@ -136,15 +150,19 @@ public class A060677 extends Sequence1 {
    * or null if the animal is not linear. Note this method assumes the animal is entirely
    * within first quadrant with first cell <code>(0,0)</code> and that all layers overlap
    * by precisely one cell.  Be very careful attempting to apply this outside of this class.
+   * Note that although this method returns a floating-point description of a line within
+   * the linear animal (if possible), this is merely a convenience for plotting, the actual
+   * detection of the line is not dependent on floating-point arithmetic.
    * @param animal the animal
-   * @return linear status
+   * @return linear status (either the <code>m</code> and <code>c</code> values for a line
+   * or <code>null</code> if no line is possible).
    */
-  Range isLinear(final Animal animal) {
+  double[] isLinear(final Animal animal) {
     final int[] pieces = layerLengths(animal);
     if (pieces.length == 1) {
       final Line l1 = new Line(new Point(0, 0), new Point(pieces[0], 1));
       final Line l2 = new Line(new Point(0, 1), new Point(pieces[0], 0));
-      return new Range(l1, l2);
+      return getALine(new Range(l1, l2), Collections.singletonList(new Segment(new Point(0, 0), new Point(pieces[0], 1))));
     }
     final List<Segment> segments = new ArrayList<>();
     int x = 0;
@@ -177,15 +195,55 @@ public class A060677 extends Sequence1 {
         }
       }
     }
-    return animalRange;
-    //return animalRange.isValid();
+    return getALine(animalRange, segments);
   }
 
   private static String toTikz(final long x, final long y, final String modifier) {
     return "\\draw" + modifier + " (" + x + "," + y + ") -- (" + (x + 1) + "," + y + ") -- (" + (x + 1) + "," + (y + 1) + ") -- (" + x + "," + (y + 1) + ") -- cycle;";
   }
 
-  private static String toTikz(final Animal animal, final Range range) {
+  private static double[] getALine(final Range range, final List<Segment> segments) {
+    if (range == null) {
+      return null;
+    }
+    final Q m;
+    if (range.mMinimum.mM == null || range.mMaximum.mM == null) {
+      if (range.mMaximum.mM != null) {
+        m = range.mMaximum.mM;
+      } else if (range.mMinimum.mM != null) {
+        m = range.mMinimum.mM;
+      } else {
+        m = new Q(1000);
+      }
+    } else {
+      m = range.mMaximum.mM.add(range.mMinimum.mM).divide(2);
+    }
+    // This is only used for plotting so floating-point is fine
+    final double aveLineM = m.doubleValue();
+    double maxMinC = Double.NaN;
+    double minMaxC = Double.NaN;
+    for (final Segment s : segments) {
+      final double c1 = s.mP1.right().doubleValue() - aveLineM * s.mP1.left().doubleValue();
+      final double c2 = s.mP2.right().doubleValue() - aveLineM * s.mP2.left().doubleValue();
+      final double minC, maxC;
+      if (c1 < c2) {
+        minC = c1;
+        maxC = c2;
+      } else {
+        minC = c2;
+        maxC = c1;
+      }
+      if (Double.isNaN(maxMinC) || minC > maxMinC) {
+        maxMinC = minC;
+      }
+      if (Double.isNaN(minMaxC) || maxC < minMaxC) {
+        minMaxC = maxC;
+      }
+    }
+    return new double[] {aveLineM, (maxMinC + minMaxC) / 2};
+  }
+
+  private static String toTikz(final Animal animal, final double[] line) {
     final StringBuilder sb = new StringBuilder();
     sb.append("\\item \\begin{tikzpicture}[scale=0.25]");
     for (final long point : animal.points()) {
@@ -193,24 +251,8 @@ public class A060677 extends Sequence1 {
       final long y = L.ordinate(point, 1);
       sb.append(toTikz(x, y, "[fill=gray!20]")).append(toTikz(x, y, "[line width=0.1mm]"));
     }
-    if (range != null) {
+    if (line != null) {
       final long tx = animal.extent(L, 0);
-      final Q m, c;
-      if (range.mMinimum.mM == null || range.mMaximum.mM == null) {
-        if (range.mMaximum.mM != null) {
-          m = range.mMaximum.mM;
-          c = range.mMaximum.mC;
-        } else if (range.mMinimum.mM != null) {
-          m = range.mMinimum.mM;
-          c = range.mMinimum.mC;
-        } else {
-          m = new Q(1000);
-          c = new Q(1000);
-        }
-      } else {
-        m = range.mMaximum.mM.add(range.mMinimum.mM).divide(2);
-        c = range.mMaximum.mC.add(range.mMinimum.mC).divide(2);
-      }
       sb.append("\\clip(0,0) rectangle (")
         .append(tx + 1)
         .append(",")
@@ -220,11 +262,11 @@ public class A060677 extends Sequence1 {
         sb.append("\\draw[color=").append(LINE_COLOR).append("](0,-0.2) -- (2,1.2);");
       } else {
         sb.append("\\draw[color=").append(LINE_COLOR).append("](0,")
-          .append(DoubleUtils.NF5.format(c.doubleValue()))
+          .append(DoubleUtils.NF5.format(line[1]))
           .append(") -- (")
           .append(tx + 1)
           .append(',')
-          .append(DoubleUtils.NF5.format(m.multiply(tx + 1).add(c).doubleValue()))
+          .append(DoubleUtils.NF5.format(line[0] * (tx + 1) + line[1]))
           .append(");");
       }
     }
@@ -275,18 +317,18 @@ public class A060677 extends Sequence1 {
         final long x = L.ordinate(pt, 0);
         final long y = L.ordinate(pt, 1);
         final Animal a = new Animal(animal, L.toPoint(x + 1, y));
-        final Range rangeA = isLinear(a);
-        if (rangeA != null) {
+        final double[] lineA = isLinear(a);
+        if (lineA != null) {
           if (canons.add(L.freeCanonical(a)) && mVerbose) {
-            StringUtils.message(toTikz(a, rangeA));
+            StringUtils.message(toTikz(a, lineA));
           }
           linearAnimals.add(a);
         }
         final Animal b = new Animal(animal, L.toPoint(x, y + 1));
-        final Range rangeB = isLinear(b);
-        if (rangeB != null) {
+        final double[] lineB = isLinear(b);
+        if (lineB != null) {
           if (canons.add(L.freeCanonical(b)) && mVerbose) {
-            StringUtils.message(toTikz(b, rangeB));
+            StringUtils.message(toTikz(b, lineB));
           }
           linearAnimals.add(b);
         }

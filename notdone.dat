@@ -2088,3 +2088,4 @@ A060631 Number of independent sets in an n-dimensional hypercube modulo symmetri
 A060638 Triangle T(n,k) (0 <= k <= n) giving number of edges in the "flip graph" whose nodes are tilings of the k-dimensional zonotope constructed from n vectors
 A060694 A triangle related to rooted trees.
 A060699 a(n) = floor(A^(C^n)), where A = 2.084551112207285611..., C = 1.221
+A060748 a(n) is the smallest m such that the elliptic curve x^3 + y^3 = m has rank n, or -1 if no such m exists

@@ -4,7 +4,7 @@ package irvine.oeis.a089;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A089134 The matrix sequence made by the lowest fifth power Pisot that is similar to the 5 Bonacci ( Pentafibonacci ).
+ * A089134 a(n) = -a(n-1) - a(n-2) + a(n-3) - a(n-5).
  * @author Georg Fischer
  */
 public class A089134 extends GeneratingFunctionSequence {

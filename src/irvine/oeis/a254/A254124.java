@@ -4,7 +4,7 @@ package irvine.oeis.a254;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A254124 The number of tilings of a 3 X n rectangle using integer length rectangles with at least one side of length 1, i.e., tiles are 1X1, 1X2, ..., 1Xn, 2X1, 3X1.
+ * A254124 The number of tilings of a 3 X n rectangle using integer length rectangles with at least one side of length 1, i.e., tiles are 1 X 1, 1 X 2, ..., 1 X n, 2 X 1, 3 X 1.
  * @author Georg Fischer
  */
 public class A254124 extends GeneratingFunctionSequence {

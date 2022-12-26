@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A082046 A symmetric square array of numbers, read by antidiagonals.
+ * A082046 Square array, A(n, k) = (k*n)^2 + 3*k*n + 1, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A082046 extends UpperLeftTriangle {

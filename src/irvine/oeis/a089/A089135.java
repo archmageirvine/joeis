@@ -4,7 +4,7 @@ package irvine.oeis.a089;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A089135 Alternating 5 Bonacci and 5th power Pisot in a matrix recursive sequence.
+ * A089135 a(n) = -a(n-2) + 2*a(n-4) - a(n-10).
  * @author Georg Fischer
  */
 public class A089135 extends GeneratingFunctionSequence {

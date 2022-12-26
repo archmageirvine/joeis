@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A054038 Numbers n such that n^2 contains every digit at least once.
+ * A054038 Numbers k such that k^2 contains every digit at least once.
  * @author Sean A. Irvine
  */
 public class A054038 extends Sequence1 {

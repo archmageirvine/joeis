@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A082110 Array T(n,k) = k^2*n^2+5*k*n+1, read by antidiagonals.
+ * A082110 Array A(n,k) = (k*n)^2 + 5*(k*n) + 1, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A082110 extends UpperLeftTriangle {

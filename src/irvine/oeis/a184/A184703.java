@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.a183.A183953;
 
 /**
- * A184703 T(n,k)=Number of strings of numbers x(i=1..n) in 0..k with sum i*x(i) equal to k*n.
+ * A184703 T(n,k) is the number of strings of numbers x(i=1..n) in 0..k with sum i*x(i) equal to k*n.
  * @author Georg Fischer
  */
 public class A184703 extends A183953 {

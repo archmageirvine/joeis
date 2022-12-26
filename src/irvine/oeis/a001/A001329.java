@@ -23,7 +23,7 @@ public class A001329 implements Sequence {
     Z sum = Z.ZERO;
     for (int d = 1; d < j.length; ++d) {
       if (m % d == 0) {
-        sum = sum.add(d * j[d]);
+        sum = sum.add((long) d * j[d]);
       }
     }
     return sum;
@@ -37,7 +37,7 @@ public class A001329 implements Sequence {
     Z prod = Z.ONE;
     for (int r = 1; r < j.length; ++r) {
       for (int s = 1; s < j.length; ++s) {
-        prod = prod.multiply(innerSum(j, IntegerUtils.lcm(r, s)).pow(scale() * j[r] * j[s] * IntegerUtils.gcd(r, s)));
+        prod = prod.multiply(innerSum(j, IntegerUtils.lcm(r, s)).pow((long) scale() * j[r] * j[s] * IntegerUtils.gcd(r, s)));
       }
     }
     return prod;

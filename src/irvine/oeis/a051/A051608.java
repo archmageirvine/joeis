@@ -6,7 +6,7 @@ package irvine.oeis.a051;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A051608 a(n) = (3*n+8)!!!/8!!!, related to A008544(n+1) ((3*n+2)!!! triple factorials).
+ * A051608 a(n) = (3*n+8)!!!/8!!!.
  * @author Georg Fischer
  */
 public class A051608 extends HolonomicRecurrence {

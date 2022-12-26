@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A129557 Numbers k&gt;0 such that k^2 is a centered pentagonal number (A005891).
+ * A129557 Numbers k &gt; 0 such that k^2 is a centered pentagonal number (A005891).
  * @author Sean A. Irvine
  */
 public class A129557 extends LinearRecurrence {

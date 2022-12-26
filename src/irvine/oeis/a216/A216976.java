@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A216976 Numbers n such that n^5+2 is prime.
+ * A216976 Numbers k such that k^5+2 is prime.
  * @author Georg Fischer
  */
 public class A216976 extends PrimePositionSubsequence {

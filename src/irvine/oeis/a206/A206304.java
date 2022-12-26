@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A206304 E.g.f. is series reversion of x-log(1+x)^2.
+ * A206304 E.g.f. is series reversion of x - log(1+x)^2.
  * E.g.f.: 0
  * @author Georg Fischer
  */

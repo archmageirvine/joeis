@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A032742 a(1) = 1; for n &gt; 1, a(n) = largest proper divisor of n.
+ * A032742 a(1) = 1; for n &gt; 1, a(n) = largest proper divisor of n (that is, for n&gt;1, maximum divisor d of n in range 1 &lt;= d &lt; n).
  * @author Sean A. Irvine
  */
 public class A032742 extends Sequence1 {

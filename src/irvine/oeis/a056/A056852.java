@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060205;
 
 /**
- * A056852 (p^p + 1)/(p + 1) where p is prime.
+ * A056852 a(n) = (p^p + 1)/(p + 1), where p = prime(n).
  * @author Georg Fischer
  */
 public class A056852 extends A060205 {

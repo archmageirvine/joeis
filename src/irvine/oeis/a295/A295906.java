@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A295906 Number of (not necessarily maximum) cliques in the n X n king graph.
+ * A295906 Number of (not necessarily maximal) cliques in the n X n king graph.
  * @author Georg Fischer
  */
 public class A295906 extends LinearRecurrence {

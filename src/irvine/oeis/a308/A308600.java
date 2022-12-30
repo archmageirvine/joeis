@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A308600 Number of (not necessarily maximum) cliques in the n X n antelope graph.
+ * A308600 Number of (not necessarily maximal) cliques in the n X n antelope graph.
  * @author Georg Fischer
  */
 public class A308600 extends HolonomicRecurrence {

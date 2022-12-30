@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A078712 Series expansion of (-3-2*x)/(1+x-x^3) in powers of x.
+ * A078712 Series expansion of (-3 - 2*x)/(1 + x - x^3) in powers of x.
  * @author Sean A. Irvine
  */
 public class A078712 extends LinearRecurrence {

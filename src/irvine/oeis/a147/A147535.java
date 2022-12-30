@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A147535 A counting vertex substitution vector matrix Markov 3x3 with characteristic polynomial:24 - 26 x + 9 x^2 - x^3.
+ * A147535 a(n) = 2*4^n+4*3^n-2^n.
  * @author Georg Fischer
  */
 public class A147535 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A295932 Number of (not necessarily maximum) cliques in the n-Sierpinski carpet graph.
+ * A295932 Number of (not necessarily maximal) cliques in the n-Sierpinski carpet graph.
  * @author Georg Fischer
  */
 public class A295932 extends LinearRecurrence {

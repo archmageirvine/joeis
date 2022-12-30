@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A120469 14 X 14 face centered cubic bonding Matrix Markov.
+ * A120469 Expansion of a rational g.f., see formula.
  * @author Sean A. Irvine
  */
 public class A120469 extends LinearRecurrence {

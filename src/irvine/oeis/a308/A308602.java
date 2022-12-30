@@ -6,7 +6,7 @@ package irvine.oeis.a308;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A308602 Number of (not necessarily maximum) cliques in the n-cycle graph.
+ * A308602 Number of (not necessarily maximal) cliques in the n-cycle graph.
  * @author Georg Fischer
  */
 public class A308602 extends HolonomicRecurrence {

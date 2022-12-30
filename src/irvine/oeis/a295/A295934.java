@@ -6,7 +6,7 @@ package irvine.oeis.a295;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A295934 Number of (not necessarily maximum) cliques in the n-odd graph.
+ * A295934 Number of (not necessarily maximal) cliques in the n-odd graph.
  * @author Georg Fischer
  */
 public class A295934 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A295921 Number of (not necessarily maximum) cliques in the n-folded cube graph.
+ * A295921 Number of (not necessarily maximal) cliques in the n-folded cube graph.
  * @author Georg Fischer
  */
 public class A295921 extends GeneratingFunctionSequence {

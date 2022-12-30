@@ -6,7 +6,7 @@ package irvine.oeis.a119;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A119515 Pattern Matrix of alternating sign 5 X 5 Matrix Markov with low ratio and characteristic polynomial: x^5+5*x^4+20*x^3+20*x^2+5*x+1.
+ * A119515 Expansion of x*(x^3+2*x^2+3*x-1)/(x+1)^5.
  * @author Georg Fischer
  */
 public class A119515 extends GeneratingFunctionSequence {

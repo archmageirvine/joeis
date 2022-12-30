@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A107332 The (1,3)-entry of the matrix M^n, where M is the 5x5 matrix [[0,1,0,0,0],[0,0,1,0,0],[0,0,0,1,0],[0,0,0,0,1],[1,0,-1,1,1]].
+ * A107332 Expansion of x^2*(-1+x+x^2)/(-1+x+x^2-x^3+x^5).
  * @author Sean A. Irvine
  */
 public class A107332 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A295903 Number of (not necessarily maximum) cliques in the n X n queen graph.
+ * A295903 Number of (not necessarily maximal) cliques in the n X n queen graph.
  * @author Georg Fischer
  */
 public class A295903 extends GeneratingFunctionSequence {

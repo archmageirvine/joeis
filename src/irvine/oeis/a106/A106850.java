@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A106850 4 X 4 vector Markov sequence with characteristic polynomial: x^4-10*x^3+25*x^2-9.
+ * A106850 Expansion of 3*x^2*(2*x^2+9*x-2)/((3*x^2-5*x+1)*(3*x^2+5*x-1)).
  * @author Sean A. Irvine
  */
 public class A106850 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A024522 a(n) = 2nd elementary symmetric function of {1, p(1), p(2), ..., p(n-1)}, where p(0) = 1.
+ * A024522 a(n) = 2nd elementary symmetric function of {1, prime(1), prime(2), ..., prime(n-1)}, where prime(0) = 1.
  * @author Sean A. Irvine
  */
 public class A024522 extends Sequence2 {

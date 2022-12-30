@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A120723 Let M be the 8 X 8 matrix M = {{0, 1, 1, 0, 0, 1, 0, 0}, {1, 0, 0, 1, 1, 0, 0, 0}, {1, 0, 0, 1, 0, 1, 1, 0}, {0, 1, 1, 0, 1, 0, 1, 0}, {0, 1, 0, 1, 0, 1, 0, 1}, {1, 0, 1, 0, 1, 0, 0, 1}, {0, 0, 1, 1, 0, 0, 0, 1}, {0, 0, 0, 0, 1, 1, 1, 0}}; let v[1] = [Fibonacci[1], ..., Fibonacci[8]]; let v[n] = M.v[n - 1]; then a(n) = v[n][[1]].
+ * A120723 Expansion of x*(1+3*x)*(1+6*x+16*x^2)/((1-x)*(1+2*x)*(1-3*x-2*x^2)).
  * @author Georg Fischer
  */
 public class A120723 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a073;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A073530 a(0) = 1; for n&gt;0 a(n)=sum(binomial(n,k)*binomial(n+k,k+1)*binomial(n+k,k),k=0..n)/n.
+ * A073530 a(n) = (1/n)*Sum_{k=0..n} binomial(n, k)*binomial(n+k, k+1)*binomial(n+k, k) with a(0) = 1.
  * @author Georg Fischer
  */
 public class A073530 extends HolonomicRecurrence {

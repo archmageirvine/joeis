@@ -46,6 +46,14 @@ public class CC extends Number implements Comparable<CC> {
   }
 
   /**
+   * Construct the complex number <code>n+0i</code>.
+   * @param x double value
+   */
+  public CC(final long x) {
+    this(CR.valueOf(x), CR.ZERO);
+  }
+
+  /**
    * The real part of this complex number.
    * @return real part
    */

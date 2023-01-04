@@ -2089,3 +2089,7 @@ A060638 Triangle T(n,k) (0 <= k <= n) giving number of edges in the "flip graph"
 A060694 A triangle related to rooted trees.
 A060699 a(n) = floor(A^(C^n)), where A = 2.084551112207285611..., C = 1.221
 A060748 a(n) is the smallest m such that the elliptic curve x^3 + y^3 = m has rank n, or -1 if no such m exists
+A060754 Absolute values of a certain cubic form at integer points.
+A060782 Degree of the curve C(n) relative to a triangle ABC with side lengths a, b and c, given by (x^n- b^n)(y^n-c^n)(z^n-a^n)=(x^n-c^n)(y^n-a^n)(z^n-b^n) where x, y and z denote the distances from the variable point to vertices A, B and C respectively.
+A060793 Orders of finite perfect groups (groups such that G = G' where G' is the commutator subgroup of G).
+A060838 Rank of elliptic curve x^3 + y^3 = n

@@ -13,22 +13,30 @@ public class A001694 extends Sequence1 {
 
   private long mN = 0;
 
+  /**
+   * Test if the given number is powerful.
+   * @param n number to test
+   * @return true iff powerful
+   */
+  public static boolean isPowerful(final Z n) {
+    final FactorSequence fs = Jaguar.factor(n);
+    for (final Z f : fs.toZArray()) {
+      if (fs.getExponent(f) == 1) {
+        return false;
+      }
+    }
+    return true;
+  }
+
   @Override
   public Z next() {
     if (++mN == 1) {
       return Z.ONE;
     }
     while (true) {
-      final FactorSequence fs = Jaguar.factor(mN);
-      boolean ok = true;
-      for (final Z f : fs.toZArray()) {
-        if (fs.getExponent(f) == 1) {
-          ok = false;
-          break;
-        }
-      }
-      if (ok) {
-        return Z.valueOf(mN);
+      final Z n = Z.valueOf(mN);
+      if (isPowerful(n)) {
+        return n;
       }
       ++mN;
     }

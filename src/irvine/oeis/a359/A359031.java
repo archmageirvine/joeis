@@ -2,13 +2,13 @@ package irvine.oeis.a359;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence0;
 
 /**
  * A359031 allocated for Bence Bern\u00e1th.
  * @author Sean A. Irvine
  */
-public class A359031 extends Sequence2 {
+public class A359031 extends Sequence0 {
 
   private final long[] mCounts = new long[10];
   private long mPrev = 0;

@@ -2094,3 +2094,5 @@ A060782 Degree of the curve C(n) relative to a triangle ABC with side lengths a,
 A060793 Orders of finite perfect groups (groups such that G = G' where G' is the commutator subgroup of G).
 A060838 Rank of elliptic curve x^3 + y^3 = n
 A060938 Maximal degree of an irreducible representation of a group with n elements.
+A060942 a(n) is the largest integer m such that m is divisible by every integer in the interval 1 <= x <= m^(1/n)
+A060950 Rank of elliptic curve y^2 = x^3 + n

@@ -20,7 +20,7 @@ public class A005316 implements Sequence {
   // Java implementation based on a C# implementation by Andrew Howroyd.
   // https://oeis.org/A005316/a005316.cs.txt
   // Original documentation for C# version follows.
-  // Note some of the functionality discussed is not present in this Java version.
+  // Note some functionality discussed is not present in this Java version.
 
   /* Author: Andrew Howroyd. (c) 2015
      Terms of use: You may freely use this software for personal, open source, educational or commercial use.

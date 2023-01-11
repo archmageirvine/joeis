@@ -7,7 +7,7 @@ import irvine.oeis.recur.PeriodicSequence;
 
 
 /**
- * A045836 Half of Theta series of b.c.c. lattice with respect to long edge.
+ * A045836 Half of theta series of b.c.c. lattice with respect to long edge.
  * @author Georg Fischer
  */
 public class A045836 extends EulerTransform {

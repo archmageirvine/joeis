@@ -6,7 +6,7 @@ package irvine.oeis.a104;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A104547 Number of Schroeder paths of length 2n having no UHD, UHHD, UHHHD, ..., where U=(1,1),D=(1,-1), H=(2,0).
+ * A104547 Number of Schroeder paths of length 2n having no UHD, UHHD, UHHHD, ..., where U=(1,1), D=(1,-1), H=(2,0).
  * @author Georg Fischer
  */
 public class A104547 extends HolonomicRecurrence {

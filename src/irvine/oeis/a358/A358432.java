@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.Pair;
 
 /**
- * A358432 allocated for Eugen Ionascu.
+ * A358432 Nonnegative integers m which can be represented using only 0's and 1's in the complex base 1+i, i.e., m = c(0) + c(1)*(1+i) + c(2)*(1+i)^2 + ... where each coefficient c(k) is either 0 or 1.
  * @author Sean A. Irvine
  */
 public class A358432 extends Sequence2 {

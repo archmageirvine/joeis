@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008683;
 
 /**
- * A156277 Numbers appearing at every third row in the third column of A156241.
+ * A156277 Dirichlet inverse of A011655, characteristic function of numbers that are not multiples of 3; Numbers appearing at every third row in the third column of A156241.
  * @author Georg Fischer
  */
 public class A156277 extends A008683 {

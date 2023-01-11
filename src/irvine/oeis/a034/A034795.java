@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.MemorySequence;
 
 /**
- * A034795 a(n-1) is a square mod a(n) and prime.
+ * A034795 a(n) is the least prime &gt; a(n-1) that is a quadratic residue mod a(n-1).
  * @author Sean A. Irvine
  */
 public class A034795 extends MemorySequence {

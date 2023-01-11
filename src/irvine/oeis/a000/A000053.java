@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A000053 Local stops on New York City Broadway line (IRT #1) subway.
+ * A000053 Local stops on New York City 1 Train (Broadway-7 Avenue Local) subway.
  * @author Sean A. Irvine
  */
 public class A000053 extends FiniteSequence {

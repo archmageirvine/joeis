@@ -11,7 +11,7 @@ import irvine.oeis.a002.A002486;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A356665 allocated for Daniel Mondot.
+ * A356665 Number of correct decimal digits of the approximation of Pi obtained from the continued fraction convergents A002485(n)/A002486(n).
  * @author Sean A. Irvine
  */
 public class A356665 extends Sequence2 {

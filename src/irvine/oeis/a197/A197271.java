@@ -5,7 +5,7 @@ package irvine.oeis.a197;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A197271 a(n) = 10/((3*n+1)*(3*n+2))*binomial(4*n,n).
+ * A197271 a(n) = (10 / ((3*n+1)*(3*n+2))) * binomial(4*n, n).
  * @author Georg Fischer
  */
 public class A197271 extends HolonomicRecurrence {

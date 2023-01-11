@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A110287 17*2^n.
+ * A110287 a(n) = 17*2^n.
  * @author Georg Fischer
  */
 public class A110287 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a206;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A206372 14*4^n - 1.
+ * A206372 a(n) = 14 * 4^n - 1.
  * @author Georg Fischer
  */
 public class A206372 extends HolonomicRecurrence {

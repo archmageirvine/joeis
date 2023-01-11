@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060822;
 
 /**
- * A110295 a(n) = prime(n)*2^(n-1).
+ * A110295 a(n) = 2^(n-1) * prime(n).
  * @author Georg Fischer
  */
 public class A110295 extends A060822 {

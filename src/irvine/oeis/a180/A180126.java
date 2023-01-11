@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A180126 For numbers x &gt;= a(n), PrimePi(n,x) &gt; PrimePi(n-1,x), where PrimePi(n,x) is the number of n-almost prime numbers &lt;= x.
+ * A180126 a(n) is the least k such that for numbers x &gt;= k, PrimePi(n,x) &gt; PrimePi(n-1,x), where PrimePi(n,x) is the number of n-almost-primes &lt;= x.
  *
  * @author Georg Fischer
  */

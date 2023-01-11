@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a126.A126966;
 
 /**
- * A158495 Expansion of ((1-4x)+sqrt(1-4x))/(2(1-2x)).
+ * A158495 Expansion of ((1-4*x) + sqrt(1-4*x))/(2*(1-2*x)).
  * @author Georg Fischer
  */
 public class A158495 extends Sequence0 {

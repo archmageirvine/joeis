@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A047858 Array T read by diagonals; n-th difference of (T(k,n),T(k,n-1),...,T(k,0)) is k+n, for n=1,2,3,...; k=0,1,2,...
+ * A047858 T(n, k) = 2^(k-1)*(k + 2*n) - n + 1, array read by descending antidiagonals.
  * @author Sean A. Irvine
  */
 public class A047858 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A134517 Primes of form 24n-1.
+ * A134517 Primes of the form 24*k - 1.
  * @author Georg Fischer
  */
 public class A134517 extends PrimeSubsequence {

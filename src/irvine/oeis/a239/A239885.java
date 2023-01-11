@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a060.A060822;
 
 /**
- * A239885 a(n) = prime(n)*2^(n-2).
+ * A239885 a(n) = 2^(n-2) * prime(n).
  * @author Georg Fischer
  */
 public class A239885 extends PrependSequence {

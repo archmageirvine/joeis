@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a022.A022567;
 
 /**
- * A192096 Maximum number of tatami tilings of any m-by-m square region with exactly n horizontal dimers and m monomers.
+ * A192096 Maximum number of tatami tilings of any m X m square region with exactly n horizontal dimers and m monomers.
  * @author Georg Fischer
  */
 public class A192096 extends Sequence0 {

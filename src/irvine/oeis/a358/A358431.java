@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A358431 allocated for Aidan Clarke.
+ * A358431 a(0) = 1; a(n+1) = 1 if a(n) &gt; n, otherwise a(n+1) = a(n) + a(a(n)).
  * @author Sean A. Irvine
  */
 public class A358431 extends MemorySequence {

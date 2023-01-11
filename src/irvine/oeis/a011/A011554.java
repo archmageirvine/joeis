@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A011554 Express stops with numerical values for A-train in Manhattan.
+ * A011554 Stops with numerical values for A Train (8 Avenue express) in Manhattan.
  * @author Sean A. Irvine
  */
 public class A011554 extends FiniteSequence {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A039830 Number of different coefficient values in expansion of Product (1-q^1+q^2-..+(-q)^i), i=1 to n.
+ * A039830 Number of different coefficient values in expansion of Product_{i=1..n} (1-q^1+q^2-...+(-q)^i).
  * @author Sean A. Irvine
  */
 public class A039830 extends Sequence1 {

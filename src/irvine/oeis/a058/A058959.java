@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A058959 Numbers n such that 3^n - 4 is prime.
+ * A058959 Numbers k such that 3^k - 4 is prime.
  * @author Georg Fischer
  */
 public class A058959 extends PrimePositionSubsequence {

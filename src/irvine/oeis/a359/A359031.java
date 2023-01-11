@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A359031 allocated for Bence Bern\u00e1th.
+ * A359031 a(n+1) gives the number of occurrences of the mode of the digits of a(n) among all the digits of [a(0), a(1), ..., a(n)], with a(0)=0.
  * @author Sean A. Irvine
  */
 public class A359031 extends Sequence0 {

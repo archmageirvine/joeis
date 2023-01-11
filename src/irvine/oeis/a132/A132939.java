@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001006;
 import irvine.oeis.a118.A118385;
 
 /**
- * A132939 Concatenation of first n Motzkin numbers.
+ * A132939 Concatenate Motzkin numbers (A001006).
  * @author Georg Fischer
  */
 public class A132939 extends A118385 {

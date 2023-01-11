@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A006948 Zero-entropy permutations of length n.
+ * A006948 Number of zero-entropy permutations of length n.
  * @author Sean A. Irvine
  */
 public class A006948 extends Sequence1 {

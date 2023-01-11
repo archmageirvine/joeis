@@ -6,7 +6,7 @@ package irvine.oeis.a308;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A308607 Number of (not necessarily maximum) cliques in the wheel graph on n vertices.
+ * A308607 Number of (not necessarily maximal) cliques in the wheel graph on n vertices.
  * @author Georg Fischer
  */
 public class A308607 extends HolonomicRecurrence {

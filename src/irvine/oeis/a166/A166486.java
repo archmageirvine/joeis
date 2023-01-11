@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A166486 Periodic sequence [0,1,1,1] of length 4.
+ * A166486 Periodic sequence [0,1,1,1] of length 4; Characteristic function of numbers that are not multiples of 4.
  * @author Sean A. Irvine
  */
 public class A166486 extends LinearRecurrence {

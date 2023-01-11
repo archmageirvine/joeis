@@ -5,7 +5,7 @@ package irvine.oeis.a138;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A138783 n(n-1)(27n^2 - 67n + 74)n!/24.
+ * A138783 a(n) = n*(n - 1)*(27*n^2 - 67*n + 74)*n!/24.
  * @author Georg Fischer
  */
 public class A138783 extends HolonomicRecurrence {

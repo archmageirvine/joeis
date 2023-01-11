@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A291916 Number of (not necessarily maximum) cliques in the n-Fibonacci cube graph.
+ * A291916 Number of (not necessarily maximal) cliques in the n-Fibonacci cube graph.
  * @author Sean A. Irvine
  */
 public class A291916 extends LinearRecurrence {

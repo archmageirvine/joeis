@@ -6,7 +6,7 @@ package irvine.oeis.a162;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A162477 Expansion of (1/(1-x)^2)*c(x/(1-x)^4), c(x) the g.f. of A000108.
+ * A162477 Expansion of (1/(1-x)^2)*c(x/(1-x)^4) where c(x) is the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A162477 extends HolonomicRecurrence {

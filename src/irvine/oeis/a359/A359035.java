@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A359035 allocated for Neal Gersh Tolunsky.
+ * A359035 a(n+1) is the smallest number not already used which can be written as the product of two numbers with the same difference as a(n) and a(n-1); a(1)=1 and a(2)=2.
  * @author Sean A. Irvine
  */
 public class A359035 extends Sequence1 {

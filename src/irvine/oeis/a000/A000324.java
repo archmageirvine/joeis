@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A000324 A nonlinear recurrence: a(n) = a(n-1)^2 - 4*a(n-1) + 4 (for n&gt;1).
+ * A000324 A nonlinear recurrence: a(0) = 1, a(1) = 5, a(n) = a(n-1)^2 - 4*a(n-1) + 4 for n&gt;1.
  * @author Sean A. Irvine
  */
 public class A000324 extends Sequence0 {

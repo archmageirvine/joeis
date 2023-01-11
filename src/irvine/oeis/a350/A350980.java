@@ -4,7 +4,7 @@ package irvine.oeis.a350;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A350980 a(0)=17, a(1)=4700, thereafter a(n) = 254*a(n-1)-a(n-2)+378.
+ * A350980 a(0) = 17, a(1) = 4700, thereafter a(n) = 254*a(n-1) - a(n-2) + 378.
  * @author Georg Fischer
  */
 public class A350980 extends HolonomicRecurrence {

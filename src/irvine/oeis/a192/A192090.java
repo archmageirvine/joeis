@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A192090 Number of tatami tilings of a 4 by n grid (with monomers allowed).
+ * A192090 Number of tatami tilings of a 4 X n grid (with monomers allowed).
  * @author Georg Fischer
  */
 public class A192090 extends GeneratingFunctionSequence {

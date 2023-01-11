@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000105;
 
 /**
- * A006765 Number of polyominoes with n cells.
+ * A006765 Number of strictly 2-dimensional polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A006765 extends A000105 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A158523 Moebius transform of negate primes in factorization of n.
+ * A158523 Moebius transform of negated primes in factorization of n.
  * @author Georg Fischer
  */
 public class A158523 extends MultiplicativeSequence {

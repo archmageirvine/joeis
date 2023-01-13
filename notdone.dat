@@ -2102,3 +2102,4 @@ A060953 Rank of elliptic curve y^2 = x^3 + n*x
 A060955 Highest degree of an irreducible representation of the alternating group A_n of degree n
 A060966 Number of nonisomorphic circulant oriented graphs (i.e., Cayley graphs for the cyclic group) of order n
 A060972 Triangle giving numbers of closed plane meanders.
+A060989	Number of nice error bases of degree n with a non-Abelian index group.

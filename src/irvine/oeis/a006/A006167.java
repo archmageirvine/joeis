@@ -4,15 +4,15 @@ import java.util.ArrayList;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.transform.EulerTransformSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001037;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A006167 Number of factorization patterns of polynomials of degree n over F_2.
  * @author Sean A. Irvine
  */
-public class A006167 extends EulerTransformSequence {
+public class A006167 extends EulerTransform {
 
   /** Construct the sequence. */
   public A006167() {
@@ -20,7 +20,7 @@ public class A006167 extends EulerTransformSequence {
   }
 
   protected A006167(final Sequence underSequence) {
-    super(new Sequence() {
+    super(1, new Sequence() {
       private final ArrayList<Z> mA = new ArrayList<>();
       private Z mN = Z.ZERO;
 

@@ -9,6 +9,11 @@ import irvine.math.z.Z;
 public class A027653 extends A027652 {
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   public Z next() {
     while (true) {
       final Z t = super.next();

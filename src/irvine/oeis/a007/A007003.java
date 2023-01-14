@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.transform.EulerTransformSequence;
 import irvine.oeis.a000.A000670;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A007003 Euler transform of numbers of preferential arrangements.
  * @author Sean A. Irvine
  */
-public class A007003 extends EulerTransformSequence {
+public class A007003 extends EulerTransform {
 
   /** Construct the sequence. */
   public A007003() {

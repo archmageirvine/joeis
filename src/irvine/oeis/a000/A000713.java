@@ -1,30 +1,16 @@
 package irvine.oeis.a000;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.oeis.transform.EulerTransformSequence;
+import irvine.oeis.recur.PaddingSequence;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A000713 EULER transform of 3, 2, 2, 2, 2, 2, 2, 2, ...
  * @author Sean A. Irvine
  */
-public class A000713 extends EulerTransformSequence {
-
-  private static final class MySequence implements Sequence {
-    private boolean mFirst = true;
-
-    @Override
-    public Z next() {
-      if (mFirst) {
-        mFirst = false;
-        return Z.THREE;
-      }
-      return Z.TWO;
-    }
-  }
+public class A000713 extends EulerTransform {
 
   /** Construct this sequence. */
   public A000713() {
-    super(new MySequence(), 0);
+    super(0, new PaddingSequence(new long[] {3}, new long[] {2}), 1);
   }
 }

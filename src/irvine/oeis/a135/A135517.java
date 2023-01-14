@@ -13,6 +13,11 @@ public class A135517 extends A135416 {
   private final A135416 mSeq = new A135416(2, 5);
 
   @Override
+  public int getOffset() {
+    return 0;
+  }
+
+  @Override
   public Z next() {
     ++mN;
     return (mN == 0) ? Z.ONE : mSeq.next();

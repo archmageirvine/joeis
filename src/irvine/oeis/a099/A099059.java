@@ -11,7 +11,12 @@ import irvine.oeis.a000.A000594;
  * @author Georg Fischer
  */
 public class A099059 extends A000594 {
-  
+
+  @Override
+  public int getOffset() {
+    return 0;
+  }
+
   @Override
   public Z next() {
     final Z result = super.next();

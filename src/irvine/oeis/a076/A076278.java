@@ -10,17 +10,18 @@ import irvine.oeis.a033.A033995;
  */
 public class A076278 extends A033995 {
 
-  protected int mN;
-  
   /** Construct the sequence. */
   public A076278() {
-    mN = 0;
     super.next();
   }
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   public Z next() {
-    ++mN;
     return super.next().subtract(1);
   }
 }

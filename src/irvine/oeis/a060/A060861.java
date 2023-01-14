@@ -4,14 +4,14 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicArray;
 
 /**
  * A060861 Least number of the form x^2 + y^3 (x, y nonnegative) in exactly n ways.
  * @author Sean A. Irvine
  */
-public class A060861 extends Sequence1 {
+public class A060861 extends Sequence0 {
 
   private final TreeMap<Z, Integer> mA = new TreeMap<>();
   private final DynamicArray<Z> mFirsts = new DynamicArray<>();

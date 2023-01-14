@@ -20,6 +20,11 @@ public class A027652 extends A134414 {
   private final Polynomial<Z> mA = RING.empty();
 
   @Override
+  public int getOffset() {
+    return -1;
+  }
+
+  @Override
   public Z next() {
     mA.add(super.next());
     mE4x4.add((mN & 3) == 0 ? mE4.next() : Z.ZERO);

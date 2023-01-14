@@ -1,17 +1,15 @@
 package irvine.oeis.a005;
 
-import irvine.math.z.Z;
-import irvine.oeis.transform.EulerTransformSequence;
-import irvine.oeis.FiniteSequence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A005993 Expansion of (1+x^2)/((1-x)^2*(1-x^2)^2).
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A005993 extends EulerTransformSequence {
+public class A005993 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A005993() {
-    super(new FiniteSequence(Z.TWO, Z.THREE, Z.ZERO, Z.NEG_ONE), 0);
+    super(0, "[[0],[-1],[2],[1],[-4],[1],[2],[-1]]", "1,2,6", 0);
   }
 }

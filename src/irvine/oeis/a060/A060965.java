@@ -11,6 +11,11 @@ import irvine.oeis.a000.A000040;
 public class A060965 extends A000040 {
 
   @Override
+  public int getOffset() {
+    return 0;
+  }
+
+  @Override
   public Z next() {
     long cnt = 1; // pt at infinity
     final long p = super.next().longValueExact();

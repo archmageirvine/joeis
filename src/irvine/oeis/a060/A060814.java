@@ -2,13 +2,13 @@ package irvine.oeis.a060;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A060814 Numbers whose cubes contain more than half the same digit and do not end in 0.
  * @author Sean A. Irvine
  */
-public class A060814 extends Sequence1 {
+public class A060814 extends Sequence0 {
 
   private long mN = -1;
 

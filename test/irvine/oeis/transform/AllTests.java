@@ -14,7 +14,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(BikTransformSequenceTest.class);
     suite.addTestSuite(CycleTransformSequenceTest.class);
     suite.addTestSuite(DikTransformSequenceTest.class);
-    suite.addTestSuite(EulerTransformSequenceTest.class);
+    suite.addTestSuite(EulerTransformTest.class);
     suite.addTestSuite(InverseMobiusTransformSequenceTest.class);
     suite.addTestSuite(LyndonTransformSequenceTest.class);
     suite.addTestSuite(WittTransformSequenceTest.class);

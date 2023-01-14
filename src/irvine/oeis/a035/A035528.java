@@ -1,10 +1,9 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.EulerTransformSequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a027.A027656;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A035528 Euler transform of A027656(n-1).
@@ -14,7 +13,7 @@ public class A035528 extends PrependSequence {
 
   /** Construct the sequence. */
   public A035528() {
-    super(new SkipSequence(new EulerTransformSequence(new A027656(), 0), 1), Z.ZERO);
+    super(new EulerTransform(new A027656()), Z.ZERO);
   }
 }
 

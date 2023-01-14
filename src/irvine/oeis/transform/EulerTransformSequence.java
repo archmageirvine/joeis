@@ -6,14 +6,12 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.group.IntegerField;
-import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
-import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A sequence comprising the Euler transform of another sequence.
@@ -21,7 +19,6 @@ import irvine.oeis.Sequence;
  */
 public class EulerTransformSequence implements Sequence {
 
-  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final Sequence mSeq;
   protected final ArrayList<Z> mTerms = new ArrayList<>();
   private int mN = -1;
@@ -54,31 +51,13 @@ public class EulerTransformSequence implements Sequence {
     this(seq, skip, null);
   }
 
-  private static Polynomial<Z> product(final List<Z> seq, final int degreeLimit) {
-    Polynomial<Z> prod = RING.one();
-    for (int k = 0; k < seq.size(); ++k) {
-      prod = RING.multiply(prod, RING.pow(RING.oneMinusXToTheN(k + 1), seq.get(k), degreeLimit), degreeLimit);
-    }
-    return prod;
-  }
-
-  /**
-   * The next term in an Euler transform.
-   * @param seq current sequence terms
-   * @param n term number
-   * @return next term of Euler transform
-   */
-  public static Z eulerTransform(final List<Z> seq, final int n) {
-    return RING.coeff(RING.one(), product(seq, n), n);
-  }
-
   // The following version attempts to run faster by only recomputing
   // the entire sequence when the current degree limit (which increases as
   // powers of 2) is exceeded.
 
   private static final int DEFAULT_DEGREE_LIMIT = 1 << 5;
   private int mDegreeLimit = DEFAULT_DEGREE_LIMIT;
-  private Polynomial<Z> mDen = RING.one();
+  private Polynomial<Z> mDen = EulerTransform.RING.one();
   private Polynomial<Z> mEulerTransform = null;
   private int mNextSeqIndex = 0;
 
@@ -87,24 +66,24 @@ public class EulerTransformSequence implements Sequence {
     // to have sufficient terms needed to determine
     boolean changed = false;
     if (n == 1) {
-      mDen = product(seq, mDegreeLimit);
+      mDen = EulerTransform.product(seq, mDegreeLimit);
       mNextSeqIndex = seq.size();
       changed = true;
     } else if (n >= mDegreeLimit) {
       // Complete recomputation to extract higher terms is needed
       mDegreeLimit *= 2;
-      mDen = product(seq, mDegreeLimit);
+      mDen = EulerTransform.product(seq, mDegreeLimit);
       mNextSeqIndex = seq.size();
       changed = true;
     }
     while (mNextSeqIndex < seq.size()) {
       // If the underlying sequence has another term then add it into the mix
-      mDen = RING.multiply(mDen, RING.pow(RING.oneMinusXToTheN(mNextSeqIndex + 1), seq.get(mNextSeqIndex), mDegreeLimit), mDegreeLimit);
+      mDen = EulerTransform.RING.multiply(mDen, EulerTransform.RING.pow(EulerTransform.RING.oneMinusXToTheN(mNextSeqIndex + 1), seq.get(mNextSeqIndex), mDegreeLimit), mDegreeLimit);
       ++mNextSeqIndex;
       changed = true;
     }
     if (changed) {
-      mEulerTransform = RING.series(RING.one(), mDen, mDegreeLimit); // Finally extract the transformed value
+      mEulerTransform = EulerTransform.RING.series(EulerTransform.RING.one(), mDen, mDegreeLimit); // Finally extract the transformed value
     }
     return mEulerTransform.coeff(n);
   }

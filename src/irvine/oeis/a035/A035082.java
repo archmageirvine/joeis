@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.transform.BikTransformSequence;
-import irvine.oeis.transform.EulerTransformSequence;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A035082 Number of rooted polygonal cacti (Husimi graphs) with n nodes.
@@ -27,7 +27,7 @@ public class A035082 extends Sequence0 {
       mA.add(Z.valueOf(n));
     } else {
       final Polynomial<Z> t = RING.subtract(RING.subtract(BikTransformSequence.bik(mA), RING.one()), mA);
-      final Sequence et = new SkipSequence(new EulerTransformSequence(new FiniteSequence(t), 1, Z.ZERO), n);
+      final Sequence et = new SkipSequence(new EulerTransform(0, new SkipSequence(new FiniteSequence(t), 1), 0, 0), n);
       mA.add(et.next());
     }
     return mA.coeff(n);

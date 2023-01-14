@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
+import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.transform.BikTransformSequence;
 import irvine.oeis.transform.EulerTransformSequence;
@@ -24,7 +25,7 @@ public class A000237 extends Sequence0 {
       mA.add(Z.ZERO);
       return Z.ZERO;
     }
-    final EulerTransformSequence et = new EulerTransformSequence(new BikTransformSequence(new FiniteSequence(mA), 1), 1);
+    final Sequence et = new EulerTransformSequence(new BikTransformSequence(new FiniteSequence(mA), 1), 1);
     for (int k = 1; k < mA.size(); ++k) {
       et.next();
     }

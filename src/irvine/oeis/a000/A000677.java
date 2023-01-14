@@ -10,7 +10,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.Sequence0;
-import irvine.oeis.transform.EulerTransformSequence;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A000677 Number of bicentered trees with n nodes.
@@ -37,7 +37,7 @@ public class A000677 extends Sequence0 implements Serializable {
     Arrays.fill(r, Z.ONE);
     r[0] = Z.ZERO;
     for (int h = 1; h < m; ++h) {
-      final EulerTransformSequence et = new EulerTransformSequence(new FiniteSequence(s), 0);
+      final EulerTransform et = new EulerTransform(new FiniteSequence(s), 1);
       final Z[] b = new Z[m];
       for (int k = 0; k < m; ++k) {
         b[k] = et.next();

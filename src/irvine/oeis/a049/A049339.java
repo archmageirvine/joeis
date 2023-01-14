@@ -10,6 +10,6 @@ public class A049339 extends EulerTransform {
 
   /** Construct the sequence. */
   public A049339() {
-    super(new A049365());
+    super(1, new A049365());
   }
 }

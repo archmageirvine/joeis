@@ -12,6 +12,6 @@ public class A007864 extends EulerTransform {
 
   /** Construct the sequence. */
   public A007864() {
-    super(0, new SkipSequence(new A001156(), 2));
+    super(1, new SkipSequence(new A001156(), 2));
   }
 }

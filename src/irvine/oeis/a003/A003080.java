@@ -6,7 +6,8 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
-import irvine.oeis.transform.EulerTransformSequence;
+import irvine.oeis.SkipSequence;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A003080 Number of rooted triangular cacti with 2n+1 nodes (n triangles).
@@ -40,7 +41,7 @@ public class A003080 extends Sequence0 {
       mB = RING.x();
     } else {
       final Polynomial<Z> e = RING.divide(RING.add(mB.substitutePower(2, mN), RING.pow(mB, 2, mN)), Z.TWO);
-      final Sequence euler = new EulerTransformSequence(new PolynomialSequence(e), 1);
+      final Sequence euler = new EulerTransform(new SkipSequence(new PolynomialSequence(e), 1), 1);
       for (int k = 1; k < mN; ++k) {
         euler.next();
       }

@@ -4,7 +4,8 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.transform.EulerTransformSequence;
+import irvine.oeis.SkipSequence;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A340811 Array read by antidiagonals: T(n,k) is the number of unlabeled k-gonal 2-trees with n polygons, n &gt;= 0, k &gt;= 2.
@@ -21,7 +22,7 @@ public class A340811 extends A340812 {
 
   private Polynomial<Z> shiftedEulerTransform(final Polynomial<Z> t) {
     final Polynomial<Z> res = RING.empty();
-    final Sequence et = new EulerTransformSequence(new FiniteSequence(t), 1);
+    final Sequence et = new EulerTransform(new SkipSequence(new FiniteSequence(t), 1), 1);
     for (int j = 0; j <= t.degree(); ++j) {
       res.add(et.next());
     }

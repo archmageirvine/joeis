@@ -17,6 +17,11 @@ public class A000550 extends A000235 {
   private int mN = -1;
 
   @Override
+  public int getOffset() {
+    return 8;
+  }
+
+  @Override
   public Z next() {
     do {
       mA = RING.add(mA, RING.monomial(super.next(), ++mN));

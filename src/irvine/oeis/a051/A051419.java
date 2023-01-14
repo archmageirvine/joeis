@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A051419 Alternative version of A000053.
+ * A051419 Local stops on New York City 1 Train (Broadway-7 Avenue Local) subway, but with 33rd St instead of 34th St.
  * @author Georg Fischer
  */
 public class A051419 extends FiniteSequence {

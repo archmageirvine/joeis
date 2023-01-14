@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A000976 Period of 1 / n! in base 10.
+ * A000976 Period of 1/n! in base 10.
  * @author Sean A. Irvine
  */
 public class A000976 extends Sequence1 {

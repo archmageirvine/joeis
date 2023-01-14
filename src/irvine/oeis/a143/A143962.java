@@ -6,7 +6,7 @@ import irvine.oeis.a066.A066247;
 import irvine.oeis.transform.BinomialTransform;
 
 /**
- * A143962 Binomial transform of A066247.
+ * A143962 Binomial transform of A066247 (characteristic function of composite numbers).
  * @author Georg Fischer
  */
 public class A143962 extends BinomialTransform {

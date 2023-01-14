@@ -7,7 +7,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a006.A006939;
 
 /**
- * A071627 Terms of Chernoff sequence A006939 divided by n!.
+ * A071627 Terms of Chernoff sequence A006939 divided by (n + 1)!.
  * @author Georg Fischer
  */
 public class A071627 extends AbstractSequence {

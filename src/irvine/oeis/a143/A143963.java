@@ -6,7 +6,7 @@ import irvine.oeis.a012.A012245;
 import irvine.oeis.transform.BinomialTransform;
 
 /**
- * A143963 Binomial transform of A012245.
+ * A143963 Binomial transform of A012245 (characteristic function of factorial numbers).
  * @author Georg Fischer
  */
 public class A143963 extends BinomialTransform {

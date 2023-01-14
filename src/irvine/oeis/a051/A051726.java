@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A051726 Numerator of n(n-1)(n-2)/720.
+ * A051726 Numerator of n*(n-1)*(n-2)/720.
  * @author Sean A. Irvine
  */
 public class A051726 extends Sequence0 {

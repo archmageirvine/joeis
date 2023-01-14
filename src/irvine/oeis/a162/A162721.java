@@ -4,7 +4,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 
 /**
- * A162721 A positive integer n is included if when n is represented in binary, it contains the binary representation of every distinct prime dividing n as substrings, without overlapping of the substrings.
+ * A162721 A positive integer k is included if, when k is represented in binary, it contains the binary representation of every distinct prime dividing k as substrings, without overlapping of the substrings.
  * @author Sean A. Irvine
  */
 public class A162721 extends A162722 {

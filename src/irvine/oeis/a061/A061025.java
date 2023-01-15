@@ -4,21 +4,22 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A061024 a(n) = (prime(n)!)^2.
+ * A061025 a(n) = prime(n)! * prime(n+1)!.
  * @author Sean A. Irvine
  */
-public class A061024 extends A000040 {
+public class A061025 extends A000040 {
 
-  private Z mF2 = Z.ONE;
-  private long mM = 2;
+  private Z mF = super.next(); // 2
+  private long mM = 3;
 
   @Override
   public Z next() {
+    final Z t = mF;
     final long p = super.next().longValueExact();
     while (mM <= p) {
-      mF2 = mF2.multiply(mM * mM);
+      mF = mF.multiply(mM);
       ++mM;
     }
-    return mF2;
+    return t.multiply(mF);
   }
 }

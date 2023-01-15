@@ -6,7 +6,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A061010.
+ * A061014 a(n) is the smallest number k such that k! contains k exactly n times.
  * @author Sean A. Irvine
  */
 public class A061014 extends A000142 {

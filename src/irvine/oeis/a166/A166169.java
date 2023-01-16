@@ -1,4 +1,4 @@
-package irvine.oeis.a247;
+package irvine.oeis.a166;
 
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
@@ -14,7 +14,6 @@ public class A166169 extends Sequence1 {
 
   @Override
   public Z next() {
-    ++mN;
-    return Fibonacci.lucas(mN * mN);
+    return Fibonacci.lucas(++mN * mN);
   }
 }

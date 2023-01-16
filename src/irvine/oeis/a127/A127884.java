@@ -1,4 +1,4 @@
-package irvine.oeis.a121;
+package irvine.oeis.a127;
 
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;

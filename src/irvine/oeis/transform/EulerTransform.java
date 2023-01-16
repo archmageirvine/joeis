@@ -95,11 +95,12 @@ public class EulerTransform extends AbstractSequence {
 
   /**
    * Create a new sequence with additional terms at the front.
-   * @param preTerms additional terms to be prepended;
+   * @param offset first index
+   * @param preTerm one additional term to be prepended;
    */
-  public EulerTransform(final long... preTerms) {
-    this(0);
-    mPreTerms = ZUtils.toZ(preTerms);
+  public EulerTransform(final int offset, final long preTerm) {
+    this(offset);
+    mPreTerms = new Z[] {Z.valueOf(preTerm)};
   }
 
   /**

@@ -13,6 +13,11 @@ public class A061025 extends A000040 {
   private long mM = 3;
 
   @Override
+  public int getOffset() {
+    return 2;
+  }
+
+  @Override
   public Z next() {
     final Z t = mF;
     final long p = super.next().longValueExact();

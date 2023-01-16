@@ -11,10 +11,10 @@ import irvine.oeis.Sequence1;
 public class A359212 extends Sequence1 {
 
   private int mN;
-  private int mMul1;
-  private int mAdd1;
-  private int mMul2;
-  private int mAdd2;
+  private final int mMul1;
+  private final int mAdd1;
+  private final int mMul2;
+  private final int mAdd2;
 
   /** Construct the sequence. */
   public A359212() {
@@ -23,9 +23,9 @@ public class A359212 extends Sequence1 {
 
   /**
    * Generic constructor with parameters
-   * @param mul1 first multiplicator
+   * @param mul1 first multiplicand
    * @param add1 first addition
-   * @param mul2 second mutliplicator
+   * @param mul2 second multiplicand
    * @param add2 second addition
    */
   public A359212(final int mul1, final int add1, final int mul2, final int add2) {

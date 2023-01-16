@@ -12,7 +12,7 @@ public class A095074 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.ONE;
-  private int mDist;
+  private final int mDist;
 
   /** Construct the sequence. */
   public A095074() {
@@ -22,7 +22,7 @@ public class A095074 extends Sequence1 {
 
   /**
    * Generic constructor with parameters
-   * @param dist distance bitween bit counts
+   * @param dist distance between bit counts
    */
   public A095074(final int dist) {
     mDist = dist;

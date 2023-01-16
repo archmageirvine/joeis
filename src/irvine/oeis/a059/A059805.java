@@ -29,7 +29,7 @@ public class A059805 extends Sequence1 {
   /**
    * Generic constructor with parameter.
    * @param seq underlying sequence
-   * @param skip number of leading terms to be skipped in <em>seq</em>
+   * @param skip number of leading terms to be skipped in <code>seq</code>
    * @param tuple number of digits (2=pair, 3=triple)
    * @param slide how far the sequence moves at each step (usually either 1 or <code>tuple</code>
    */

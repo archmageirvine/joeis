@@ -8,12 +8,14 @@ import irvine.math.z.Z;
  */
 public class A060468 extends A060005 {
 
-  {
-    super.next();
-  }
+  private boolean mFirst = true;
 
   @Override
   public Z next() {
+    if (mFirst) {
+      mFirst = false;
+      return super.next();
+    }
     return super.next().multiply2();
   }
 }

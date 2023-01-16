@@ -6,7 +6,8 @@ if [ ! "${HOME}" ]; then
     export HOME=/home/${LOGNAME}
 fi
 
-export JAVA=/usr/local/java/jdk
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
+export JAVA=/usr/lib/jvm/java-11-openjdk-amd64/
 export SYSNAME=cvscheck_joeis
 
 export WEB=${HOME}/public_html/cvscheck_joeis

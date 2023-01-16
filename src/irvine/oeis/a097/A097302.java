@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 
 /**
  * A097302 Denominators of rationals used in the Euler-Maclaurin type derivation of Stirling's formula for N!.
- * @author Georg Fischere
+ * @author Georg Fischer
  */
 public class A097302 extends Sequence0 {
 

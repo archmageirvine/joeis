@@ -1,0 +1,46 @@
+package irvine.oeis.a359;
+
+import irvine.factor.prime.Fast;
+import irvine.math.z.Z;
+import irvine.oeis.a001.A001223;
+
+/**
+ * A061030.
+ * @author Sean A. Irvine
+ */
+public class A359354 extends A001223 {
+
+  private static final int MAX = 100; // Way more than we can ever find with this code
+  private final long[] mGaps = new long[MAX];
+  private int mN = -1;
+  private long mP = 3;
+  private long mPi = 2;
+  private final Fast mPrime = new Fast();
+
+  private boolean is() {
+    if (mN < 2) {
+      return true;
+    }
+    long q = mP;
+    long r = mPrime.nextPrime(q);
+    long s = r - q;
+    for (int k = 1; k < mN; ++k) {
+      q = r;
+      r = mPrime.nextPrime(q);
+      if (r - q != s * mGaps[k]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  @Override
+  public Z next() {
+    mGaps[++mN] = super.next().longValueExact();
+    while (!is()) {
+      mP = mPrime.nextPrime(mP);
+      ++mPi;
+    }
+    return Z.valueOf(mPi);
+  }
+}

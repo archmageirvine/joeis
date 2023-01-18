@@ -188,6 +188,9 @@ public final class ComputableComplexField extends AbstractField<CC> implements E
   public CC pow(final CR base, final CC exponent) {
     final CR c = exponent.im();
     final CR b = exponent.re();
+    if (base.signum() < 0) {
+      return exp(multiply(exponent, log(new CC(base))));
+    }
     final CR ab = ComputableReals.SINGLETON.pow(base, b);
     if (c == CR.ZERO) {
       // Avoid trig in case where both values are real
@@ -206,6 +209,7 @@ public final class ComputableComplexField extends AbstractField<CC> implements E
    */
   @Override
   public CC pow(final CC base, final CC exponent) {
+    //return exp(multiply(exponent, log(base)));
     final CR a = base.re();
     final CR b = base.im();
     if (b == CR.ZERO) {

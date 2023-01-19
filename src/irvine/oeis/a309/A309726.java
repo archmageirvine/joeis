@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A309726 Numbers n such that n^2 - 12 is prime.
+ * A309726 Numbers k such that k^2 - 12 is prime.
  * @author Georg Fischer
  */
 public class A309726 extends PrimePositionSubsequence {

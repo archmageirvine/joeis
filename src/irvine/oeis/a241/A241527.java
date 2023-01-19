@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A241527 n^3 + (3^n+1)/2.
+ * A241527 a(n) = n^3 + (3^n+1)/2.
  * @author Sean A. Irvine
  */
 public class A241527 extends LinearRecurrence {

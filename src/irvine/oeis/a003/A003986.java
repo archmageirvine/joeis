@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A003986 Table of x OR y, where (x,y) = (0,0), (0,1), (1,0), (0,2), (1,1), (2,0), ...
+ * A003986 Table T(n,k) = n OR k read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A003986 extends Sequence0 {

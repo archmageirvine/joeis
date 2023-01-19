@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a061.A061286;
 
 /**
- * A278741 Odd numbers n such that tau(n-1) is a prime.
+ * A278741 Odd numbers k such that tau(k-1) is a prime.
  * @author Georg Fischer
  */
 public class A278741 extends A061286 {

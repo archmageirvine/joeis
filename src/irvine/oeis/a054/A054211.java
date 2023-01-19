@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A054211 Numbers n such that n concatenated with n-1 is prime.
+ * A054211 Numbers k such that k concatenated with k-1 is prime.
  * @author Sean A. Irvine
  */
 public class A054211 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001272 Numbers n such that n! - (n-1)! + (n-2)! - (n-3)! + ... - (-1)^n*1! is prime.
+ * A001272 Numbers k such that k! - (k-1)! + (k-2)! - (k-3)! + ... - (-1)^k*1! is prime.
  * @author Sean A. Irvine
  */
 public class A001272 extends FiniteSequence {

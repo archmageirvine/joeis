@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A359187.
+ * A359187 allocated for Marco Rip\u00e0.
  * @author Sean A. Irvine
  */
 public class A359187 extends DecimalExpansionSequence {

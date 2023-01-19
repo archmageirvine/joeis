@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002957 Numbers n such that 2*10^n - 1 is prime.
+ * A002957 Numbers k such that 2*10^k - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A002957 extends Sequence1 {

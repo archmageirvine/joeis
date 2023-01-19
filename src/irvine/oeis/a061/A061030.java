@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A061030.
+ * A061030 Factorial splitting: write n! = x*y*z with x&lt;y&lt;z and x maximal; sequence gives value of x.
  * @author Sean A. Irvine
  */
 public class A061030 extends Sequence3 {

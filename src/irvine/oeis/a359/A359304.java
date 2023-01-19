@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002378;
 
 /**
- * A359304 allocated for Massimo Kofler.
+ * A359304 Oblong numbers which are products of five distinct primes.
  * @author Sean A. Irvine
  */
 public class A359304 extends A002378 {

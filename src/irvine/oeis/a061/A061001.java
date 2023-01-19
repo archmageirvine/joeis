@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a060.A060999;
 
 /**
- * A061001 x.x, x = first n terms of A060999.
+ * A061001 Partial sums of the squares of the terms of A060999.
  * @author Sean A. Irvine
  */
 public class A061001 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A034091 Records for sum of proper divisors function.
+ * A034091 Records for sum of proper divisors function A001065.
  * @author Sean A. Irvine
  */
 public class A034091 extends Sequence1 {

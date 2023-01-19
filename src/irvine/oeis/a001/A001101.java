@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A001101 Moran numbers: n such that (n / sum of digits of n) is prime.
+ * A001101 Moran numbers: k such that k/(sum of digits of k) is prime.
  * @author Sean A. Irvine
  */
 public class A001101 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A060299 n consecutive nonprimes.
+ * A060299 Triangle T(m,n), 1 &lt;= n &lt;= m, read by rows: row m lists the first m consecutive composite numbers that are not in previous rows.
  * @author Sean A. Irvine
  */
 public class A060299 extends A002808 {

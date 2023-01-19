@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A046029 Numbers n such that (n!)^2 + 1 is prime.
+ * A046029 Numbers k such that (k!)^2 + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A046029 extends A000142 {

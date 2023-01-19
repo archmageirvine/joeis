@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000796;
 
 /**
- * A047777 Primes seen in decimal expansion of Pi (disregarding the decimal period) contiguous, smallest and distinct.
+ * A047777 Primes seen in the decimal expansion of Pi (disregarding the decimal point) that are contiguous, smallest and distinct.
  * @author Sean A. Irvine
  */
 public class A047777 extends A000796 {

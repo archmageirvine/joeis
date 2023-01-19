@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A359115 allocated for Tamas Sandor Nagy.
+ * A359115 a(n) is the smallest odd prime not already in the sequence such that when the terms a(1)..a(n) are concatenated, the result is the reverse of a prime.
  * @author Sean A. Irvine
  */
 public class A359115 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001223;
 
 /**
- * A061030.
+ * A359354 allocated for Andres Cicuttin.
  * @author Sean A. Irvine
  */
 public class A359354 extends A001223 {
@@ -23,7 +23,7 @@ public class A359354 extends A001223 {
     }
     long q = mP;
     long r = mPrime.nextPrime(q);
-    long s = r - q;
+    final long s = r - q;
     for (int k = 1; k < mN; ++k) {
       q = r;
       r = mPrime.nextPrime(q);

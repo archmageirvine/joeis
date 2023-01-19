@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A224848.
+ * A224848 Reverse concatenation of the square of first a(n) integers gives a prime.
  * @author Sean A. Irvine
  */
 public class A224848 extends Sequence1 {

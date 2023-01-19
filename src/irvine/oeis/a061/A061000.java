@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000578;
 import irvine.oeis.a060.A060999;
 
 /**
- * A061000 x.v where x = first n terms of A060999, v = [1,8,27,...,n^3].
+ * A061000 a(n) = Sum_{k=1..n} A060999(k) * k^3.
  * @author Sean A. Irvine
  */
 public class A061000 extends Sequence1 {

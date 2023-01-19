@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A036347 Parity of n and its sum of prime factors differs (counted with multiplicity).
+ * A036347 Numbers k for which the parity of k and the parity of sopfr(k) differ, where sopfr is the sum of prime factors with repetition.
  * @author Sean A. Irvine
  */
 public class A036347 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A036348 Parity of 'even number' and its sum of prime factors differs (counted with multiplicity).
+ * A036348 Even numbers whose number of odd prime factors is odd (when counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A036348 extends Sequence0 {

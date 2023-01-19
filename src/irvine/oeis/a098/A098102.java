@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060205;
 
 /**
- * A098102 Numbers of the form 2^(p - 1) - 1 where p is prime.
+ * A098102 a(n) = 2^(prime(n) - 1) - 1 where prime(n) is the n-th prime.
  * @author Georg Fischer
  */
 public class A098102 extends A060205 {

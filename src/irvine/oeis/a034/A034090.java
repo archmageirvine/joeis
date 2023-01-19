@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A034090 Numbers whose sum of proper divisors exceeds that of all smaller numbers.
+ * A034090 Numbers k whose sum of proper divisors (A001065(k)) exceeds that of all smaller numbers.
  * @author Sean A. Irvine
  */
 public class A034090 extends Sequence1 {

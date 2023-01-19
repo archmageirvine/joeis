@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.math.z.Z;
 
 /**
- * A061030.
+ * A061033 Factorial splitting: write n! = x*y*z with x&lt;y&lt;z and x maximal and z is minimal; sequence gives value of z-x.
  * @author Sean A. Irvine
  */
 public class A061033 extends A061030 {

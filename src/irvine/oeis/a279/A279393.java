@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002972;
 import irvine.oeis.a002.A002973;
 
 /**
- * A279393 Bisection of primes congruent to 1 modulo 4 (A002144), depending on the corresponding sum of the A002972 and 2*A002973 entries being congruent to 1 modulo 4 or not.
+ * A279393 Bisection of primes congruent to 1 modulo 4 (A002144), depending on the corresponding sum of the A002972 and 2*A002973 entries being congruent to 1 modulo 4 or not. Here we give the second case.
  * Here we give the second case.
  * @author Georg Fischer
  */

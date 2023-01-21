@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A110139 Floor(n/2)^floor(n/2).
+ * A110139 a(n) = floor(n/2)^floor(n/2).
  * @author Georg Fischer
  */
 public class A110139 extends FloorSequence {

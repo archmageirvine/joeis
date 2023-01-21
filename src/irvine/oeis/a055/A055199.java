@@ -9,20 +9,15 @@ import irvine.oeis.a000.A000796;
  */
 public class A055199 extends A000796 {
 
-  private long mLim = -1;
+  private long mLim = 0;
   private long mM = 0;
-
-  @Override
-  public int getOffset() {
-    return -1;
+  {
+    super.next();
+    setOffset(0);
   }
 
   @Override
   public Z next() {
-    if (mLim < 0) {
-      mLim = 0;
-      return super.next();
-    }
     mLim = mLim == 0 ? 1 : mLim * 10;
     while (++mM < mLim) {
       super.next();

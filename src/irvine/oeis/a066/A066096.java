@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a001.A001468;
 
 /**
- * A066096 Duplicate values in A060143.
+ * A066096 a(n) = floor(n*phi), where phi = (1 + sqrt(5))/2.
  * @author Sean A. Irvine
  */
 public class A066096 extends PartialSumSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A046804 Primes p modulo t where t = terminal digit of p.
+ * A046804 a(n) = p mod (p mod 10) where p = prime(n).
  * @author Sean A. Irvine
  */
 public class A046804 extends A000040 {

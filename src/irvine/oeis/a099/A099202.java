@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002620;
 
 /**
- * A099202 2^floor(n^2/2).
+ * A099202 a(n) = 2^floor(n^2/2).
  * @author Georg Fischer
  */
 public class A099202 extends Sequence0 {

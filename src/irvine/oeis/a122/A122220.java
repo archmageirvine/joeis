@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060822;
 
 /**
- * A122220 a(n) = (prime(n)^6-prime(n)^2))/20.
+ * A122220 a(n) = (prime(n)^6 - prime(n)^2))/20.
  * @author Georg Fischer
  */
 public class A122220 extends A060822 {

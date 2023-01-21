@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a034.A034947;
 
 /**
- * A119972 Flag n when the first difference of the decimal encoding of the Gray code is negative.
+ * A119972 a(n) = n * A034947(n).
  * @author Georg Fischer
  */
 public class A119972 extends AbstractSequence {

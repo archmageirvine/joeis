@@ -3,7 +3,7 @@ package irvine.oeis.a206;
 
 import irvine.oeis.recur.HolonomicRecurrence;
 /**
- * A206373 (14*4^n + 1)/3.
+ * A206373 a(n) = (14*4^n + 1)/3.
  * radtorec((5-6*x)/(1-x)/(1-4*x))
  * @author Georg Fischer
  */

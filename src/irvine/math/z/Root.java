@@ -64,7 +64,7 @@ final class Root {
   }
 
   /**
-   * Compute the <code>n</code>th root of this integer. In addition
+   * Compute the <code>n</code>th root of this integer. Also,
    * the auxiliary is set to 1 for a perfect <code>n</code>th root
    * and 0 otherwise.
    *

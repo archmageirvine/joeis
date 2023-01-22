@@ -1,7 +1,7 @@
 package irvine.oeis.a058;
 
+import irvine.math.ContinuedFractionUtils;
 import irvine.math.q.HarmonicSequence;
-import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -13,21 +13,8 @@ public class A058027 extends Sequence1 {
 
   private final HarmonicSequence mH = new HarmonicSequence();
 
-  static Z continuedFractionSum(Q n) {
-    Z sum = Z.ZERO;
-    while (true) {
-      final Z t = n.toZ();
-      sum = sum.add(t);
-      n = n.subtract(t);
-      if (Q.ZERO.equals(n)) {
-        return sum;
-      }
-      n = n.reciprocal();
-    }
-  }
-
   @Override
   public Z next() {
-    return continuedFractionSum(mH.nextQ());
+    return ContinuedFractionUtils.continuedFractionSum(mH.nextQ());
   }
 }

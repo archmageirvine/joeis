@@ -186,7 +186,7 @@ public final class Jaguar {
    * Set the verbosity level.
    * @param verbose true if verbose
    */
-  public static void setVerbose(boolean verbose) {
+  public static void setVerbose(final boolean verbose) {
     FACTOR_DB.setVerbose(verbose);
     CHEETAH.setVerbose(verbose);
     TILLMAN.setVerbose(verbose);

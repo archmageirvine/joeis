@@ -1,5 +1,6 @@
 package irvine.oeis.a058;
 
+import irvine.math.ContinuedFractionUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
@@ -24,6 +25,6 @@ public class A058082 extends MemorySequence {
     for (int k = 1; k < n; ++k) {
       b = b.reciprocal().add(a(n - k - 1));
     }
-    return A058027.continuedFractionSum(b.add(b.reciprocal()));
+    return ContinuedFractionUtils.continuedFractionSum(b.add(b.reciprocal()));
   }
 }

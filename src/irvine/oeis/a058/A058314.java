@@ -1,5 +1,6 @@
 package irvine.oeis.a058;
 
+import irvine.math.ContinuedFractionUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.a006.A006882;
@@ -16,6 +17,6 @@ public class A058314 extends A006882 {
   public Z next() {
     final Z t = mA;
     mA = super.next();
-    return A058027.continuedFractionSum(new Q(mA, t));
+    return ContinuedFractionUtils.continuedFractionSum(new Q(mA, t));
   }
 }

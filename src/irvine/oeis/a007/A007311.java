@@ -20,6 +20,7 @@ public class A007311 extends A000110 {
   {
     mP.add(Z.ZERO);
     super.next();
+    setOffset(1);
   }
 
   @Override

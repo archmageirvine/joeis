@@ -1,5 +1,6 @@
 package irvine.oeis.a058;
 
+import irvine.math.ContinuedFractionUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -20,6 +21,6 @@ public class A058299 extends Sequence0 {
       mF = mF.multiply(mN);
     }
     mSum = mSum.add(new Q(Z.ONE, mF));
-    return A058027.continuedFractionSum(mSum);
+    return ContinuedFractionUtils.continuedFractionSum(mSum);
   }
 }

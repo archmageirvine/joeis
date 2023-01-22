@@ -2,15 +2,15 @@ package irvine.oeis.a036;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A036347 Numbers k for which the parity of k and the parity of sopfr(k) differ, where sopfr is the sum of prime factors with repetition.
  * @author Sean A. Irvine
  */
-public class A036347 extends Sequence0 {
+public class A036347 extends Sequence1 {
 
-  private long mN = 5;
+  private long mN = 0;
 
   @Override
   public Z next() {

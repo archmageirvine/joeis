@@ -9,7 +9,7 @@ import irvine.math.z.Z;
  */
 public final class ContinuedFractionUtils {
 
-  private ContinuedFractionUtils() {}
+  private ContinuedFractionUtils() { }
 
   /**
    * The sum of the terms in the continued fraction expansion of a rational number.

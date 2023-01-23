@@ -13,7 +13,7 @@ public class A061144 extends Sequence1 {
 
   private long mN = 0;
 
-  private long triangleArea(long a1, long a2, long b1, long b2, long c1, long c2) {
+  private long triangleArea(final long a1, final long a2, final long b1, final long b2, final long c1, final long c2) {
     final long sd1 = (b1 - a1) * (b1 - a1) + (b2 - a2) * (b2 - a2);
     final long sd2 = (c1 - b1) * (c1 - b1) + (c2 - b2) * (c2 - b2);
     final long sd3 = (a1 - c1) * (a1 - c1) + (a2 - c2) * (a2 - c2);

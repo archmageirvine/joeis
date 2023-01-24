@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.transform.EulerTransform;
+import irvine.oeis.transform.EulerTransformUtils;
 
 /**
  * A049075 Eigensequence of a power series transformation.
@@ -27,6 +27,6 @@ public class A049075 extends MemorySequence {
     for (int k = 1; k < n; ++k) {
       b.add(a(k).subtract((k & 3) == 0 ? a(k / 2) : Z.ZERO));
     }
-    return EulerTransform.eulerTransform(b, n - 1);
+    return EulerTransformUtils.eulerTransform(b, n - 1);
   }
 }

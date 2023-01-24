@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.transform.EulerTransform;
+import irvine.oeis.transform.EulerTransformUtils;
 
 /**
  * A007562 Number of planted trees where non-root, non-leaf nodes an even distance from root are of degree 2.
@@ -23,8 +23,8 @@ public class A007562 extends MemorySequence {
     if (size() < 1) {
       return Z.ONE;
     } else {
-      mInner.add(EulerTransform.eulerTransform(toList(), size() - 1));
-      return EulerTransform.eulerTransform(mInner, mInner.size() - 2);
+      mInner.add(EulerTransformUtils.eulerTransform(toList(), size() - 1));
+      return EulerTransformUtils.eulerTransform(mInner, mInner.size() - 2);
     }
   }
 }

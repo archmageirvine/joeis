@@ -6,7 +6,7 @@ import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a242.A242249;
-import irvine.oeis.transform.EulerTransform;
+import irvine.oeis.transform.EulerTransformUtils;
 
 /**
  * A340814 Array read by antidiagonals: T(n,k) is the number of unlabeled oriented edge-rooted k-gonal 2-trees with n oriented polygons, n &gt;= 0, k &gt;= 2.
@@ -27,7 +27,7 @@ public class A340814 extends MemoryFunction2<Integer, Z> implements Sequence {
     for (int j = 1; j <= n; ++j) {
       col.add(mA.get(j, k + 1));
     }
-    return EulerTransform.eulerTransform(col, n);
+    return EulerTransformUtils.eulerTransform(col, n);
   }
 
   @Override

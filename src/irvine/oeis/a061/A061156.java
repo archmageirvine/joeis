@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.math.z.Z;
 
 /**
- * A061155.
+ * A061156 Exponent values m resulting from A061155.
  * @author Sean A. Irvine
  */
 public class A061156 extends A061155 {

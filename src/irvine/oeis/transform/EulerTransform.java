@@ -4,11 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.List;
 
-import irvine.math.group.IntegerField;
-import irvine.math.group.PolynomialRingField;
-import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
@@ -25,25 +21,6 @@ import irvine.oeis.recur.PeriodicSequence;
  * @author Georg Fischer
  */
 public class EulerTransform extends AbstractSequence {
-
-  static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  static Polynomial<Z> product(final List<Z> seq, final int degreeLimit) {
-    Polynomial<Z> prod = RING.one();
-    for (int k = 0; k < seq.size(); ++k) {
-      prod = RING.multiply(prod, RING.pow(RING.oneMinusXToTheN(k + 1), seq.get(k), degreeLimit), degreeLimit);
-    }
-    return prod;
-  }
-
-  /**
-   * The next term in an Euler transform.
-   * @param seq current sequence terms
-   * @param n term number
-   * @return next term of Euler transform
-   */
-  public static Z eulerTransform(final List<Z> seq, final int n) {
-    return RING.coeff(RING.one(), product(seq, n), n);
-  }
 
   protected Sequence mSeq;
   protected final ArrayList<Z> mAs = new ArrayList<>(); // underlying sequence

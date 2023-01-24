@@ -2,7 +2,7 @@ package irvine.oeis.a050;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.transform.EulerTransform;
+import irvine.oeis.transform.EulerTransformUtils;
 
 /**
  * A050381 Number of series-reduced planted trees with n leaves of 2 colors.
@@ -20,6 +20,6 @@ public class A050381 extends MemorySequence {
     if (n == 0) {
       return Z.TWO;
     }
-    return EulerTransform.eulerTransform(toList(), n + 1);
+    return EulerTransformUtils.eulerTransform(toList(), n + 1);
   }
 }

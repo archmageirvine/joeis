@@ -2107,3 +2107,4 @@ A061027 Stirling interpolation of f'(x) by (2n+1)-st differences
 A061064 Maximal number of zeros in the character table of a group with n elements
 A061188 Triangle of coefficients of polynomials (rising powers) useful for convolutions of A000032(n+1), n >= 0 (Lucas numbers).
 A061189 Triangle of coefficients of polynomials (rising powers) useful for convolutions of A000204(n+1), n >= 0 (Lucas numbers).
+A061207 Number of subgroups of index n of the braid group on 3 strands <a,b|aba=bab>= <c,d|c^2=d^3>, the fundamental group of the complement of a trefoil knot.

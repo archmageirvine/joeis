@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060238 det(M) where M is an n X n matrix with M[i,j] = lcm(i,j).
+ * A060238 a(n) = det(M) where M is an n X n matrix with M[i,j] = lcm(i,j).
  * @author Sean A. Irvine
  */
 public class A060238 extends Sequence1 {

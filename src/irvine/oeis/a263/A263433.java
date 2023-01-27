@@ -4,7 +4,7 @@ package irvine.oeis.a263;
 import irvine.oeis.transform.EtaProductSequence;
 
 /**
- * A263433 Expansion of f(x, x) * f(x^2, x^4)^2 in powers of x where f(, ) is Ramanujan&apos;s general theta function.
+ * A263433 Expansion of f(x, x) * f(x^2, x^4)^2 in powers of x where f(, ) is Ramanujan's general theta function.
  * Eta product <code>eta(q^2)^3*eta(q^6)^4/eta(q)^2/eta(q^12)^2</code>
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
- * A061155 n.2^m+1 is prime for exactly one exponent m in the range 0&lt;=m&lt;=n.
+ * A061155 Numbers k such that k*2^m+1 is prime for exactly one exponent m in the range 0&lt;=m&lt;=k.
  * @author Sean A. Irvine
  */
 public class A061155 extends Sequence0 {

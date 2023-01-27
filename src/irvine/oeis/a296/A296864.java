@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A296864 Numbers n whose base-4 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
+ * A296864 Numbers whose base-4 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
  * @author Georg Fischer
  */
 public class A296864 extends RunsBaseSequence {

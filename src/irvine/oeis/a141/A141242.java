@@ -8,7 +8,7 @@ import irvine.oeis.a009.A009087;
 
 
 /**
- * A141242 a(n) is the number of divisors of the n-th positive integer with a prime number of divisors. In other words a(n) is the number of divisors of A009087(n).
+ * A141242 a(n) is the number of divisors of the n-th positive integer with a prime number of divisors. In other words, a(n) is the number of divisors of A009087(n).
  * Formula: <code>a(n) = A000005(A009087(n)).</code>
  * @author Georg Fischer
  */

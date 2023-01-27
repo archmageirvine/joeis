@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A061153 n.2^m+1 are composites for all exponents m in the range 0&lt;=m&lt;=n.
+ * A061153 Numbers k such that k*2^m+1 are composites for all exponents m in the range 0&lt;=m&lt;=k.
  * @author Sean A. Irvine
  */
 public class A061153 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A359311 allocated for Saish S. Kambali.
+ * A359311 Number of Catalan paths (nonnegative, starting and ending at 0, step +/-1) of 2*n steps which reach at least 6 at some point.
  * @author Sean A. Irvine
  */
 public class A359311 extends Sequence1 {

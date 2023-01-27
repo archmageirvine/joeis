@@ -4,7 +4,7 @@ import irvine.oeis.a189.A189089;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A359540 allocated for Wolfe Padawer.
+ * A359540 Decimal expansion of arccosh(Pi).
  * @author Sean A. Irvine
  */
 public class A359540 extends DecimalExpansionSequence {

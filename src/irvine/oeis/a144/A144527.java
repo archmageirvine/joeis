@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000055;
 
 /**
- * A144527 A000055(n) - 2.
+ * A144527 a(n) = A000055(n) - 2.
  * @author Georg Fischer
  */
 public class A144527 extends A000055 {

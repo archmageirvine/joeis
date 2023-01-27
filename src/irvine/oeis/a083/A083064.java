@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A083064 Square number array T(n,k)=(k(k+2)^n+1)/(k+1) read by antidiagonals.
+ * A083064 Square number array T(n,k) = (k*(k+2)^n+1)/(k+1) read by antidiagonals.
  * @author Georg Fischer
  */
 public class A083064 extends UpperLeftTriangle {

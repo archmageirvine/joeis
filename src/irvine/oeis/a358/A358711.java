@@ -3,7 +3,7 @@ package irvine.oeis.a358;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A358711 allocated for Marc Morgenegg.
+ * A358711 Autobiographical numbers: let the k-th digit count the k-th nonnegative integer (A001477(k)) (possibly overlapping) occurrences in the term.
  * @author Sean A. Irvine
  */
 public class A358711 extends FiniteSequence {

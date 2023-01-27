@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A296891 Numbers n whose base-13 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
+ * A296891 Numbers whose base-13 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
  * @author Georg Fischer
  */
 public class A296891 extends RunsBaseSequence {

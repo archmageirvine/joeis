@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A359187 allocated for Marco Rip\u00e0.
+ * A359187 Decimal expansion of the real part of (-sqrt(2))^^9, where ^^ indicates tetration or hyper-4 (e.g., 2^^4 = 2^(2^(2^2)).
  * @author Sean A. Irvine
  */
 public class A359187 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A359533 allocated for Stefano Spezia.
+ * A359533 Decimal expansion of Sum_{k&gt;=0} (-1/64)^k*binomial(2*k, k)^3*(4*k + 1)*H_k, where H_k is the k-th harmonic number (negated).
  * @author Sean A. Irvine
  */
 public class A359533 extends DecimalExpansionSequence {

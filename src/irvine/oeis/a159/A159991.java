@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A159991 Powers of 60.
+ * A159991 Powers of 60: a(n) = 60^n.
  * @author Georg Fischer
  */
 public class A159991 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A296877 Numbers n whose base-8 digits d(m), d(m-1), ..., d(0) have #(pits) &gt; #(peaks); see Comments.
+ * A296877 Numbers whose base-8 digits d(m), d(m-1), ..., d(0) have #(pits) &gt; #(peaks); see Comments.
  * @author Georg Fischer
  */
 public class A296877 extends RunsBaseSequence {

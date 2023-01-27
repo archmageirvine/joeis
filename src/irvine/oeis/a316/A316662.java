@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.transform.EtaProductSequence;
 
 /**
- * A316662 Expansion of f(x, x^2) * psi(x^3)^3 in powers of x where psi() is a Ramanujan theta function and f(, ) is Ramanujan&apos;s general theta function.
+ * A316662 Expansion of f(x, x^2) * psi(x^3)^3 in powers of x where psi() is a Ramanujan theta function and f(, ) is Ramanujan's general theta function.
  * Eta product <code>eta(q^2)*eta(q^6)^5/eta(q)/eta(q^3)</code>
  * @author Georg Fischer
  */

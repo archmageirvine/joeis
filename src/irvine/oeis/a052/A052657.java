@@ -4,7 +4,7 @@ package irvine.oeis.a052;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A052657 E.g.f. x^2/((1-x)^2*(1+x)).
+ * A052657 Expansion of e.g.f. x^2/((1-x)^2*(1+x)).
  * Recurrence: n*(n-1)^2*a(n-2)+n*a(n-1)-(n-2)*a(n)=0.
  * @author Georg Fischer
  */

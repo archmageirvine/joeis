@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A061200.
+ * A061211 Largest number m such that m is the n-th power of the sum of its digits.
  * @author Sean A. Irvine
  */
 public class A061211 extends Sequence1 {

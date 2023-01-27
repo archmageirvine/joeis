@@ -5,7 +5,7 @@ package irvine.oeis.a240;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A240721 Expansion of -(4*x+sqrt(1-8*x)-1)/(sqrt(1-8*x)*(4*x^2+x)+8*x^2-x).
+ * A240721 Expansion of -(4*x + sqrt(1-8*x) - 1)/(sqrt(1-8*x)*(4*x^2+x) + 8*x^2 - x).
  * Recurrence: -(n+1)*(3*n-2)*a(n)+(21*n^2-5*n-2)*a(n-1)+4*(3*n+1)*(2*n-1)*a(n-2)=0
  * @author Georg Fischer
  */

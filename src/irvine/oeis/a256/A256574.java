@@ -4,7 +4,7 @@ package irvine.oeis.a256;
 import irvine.oeis.transform.EtaProductSequence;
 
 /**
- * A256574 Expansion of chi(x) * psi(-x^3) * psi(x^48) in powers of x where psi(), chi() are Ramanujan theta functions
+ * A256574 Expansion of chi(x) * psi(-x^3) * psi(x^48) in powers of x where psi(), chi() are Ramanujan theta functions.
  * Eta product <code>eta(q^2)^2*eta(q^3)*eta(q^12)*eta(q^96)^2/eta(q)/eta(q^4)/eta(q^6)/eta(q^48)</code>
  * @author Georg Fischer
  */

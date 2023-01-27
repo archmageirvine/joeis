@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A296906 Numbers n whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
+ * A296906 Numbers whose base-60 digits d(m), d(m-1), ..., d(0) have #(pits) = #(peaks); see Comments.
  * @author Georg Fischer
  */
 public class A296906 extends RunsBaseSequence {

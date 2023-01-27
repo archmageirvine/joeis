@@ -3,7 +3,7 @@ package irvine.oeis.a163;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A163250 The number of nonisomorphic complete simple games with n voters of two different types.
+ * A163250 a(n) = A000045(n+6) - (n^2 + 4*n + 8).
  * @author Sean A. Irvine
  */
 public class A163250 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A011844 [ C(n,7)/8 ].
+ * A011844 a(n) = floor(C(n,7)/8).
  * @author Sean A. Irvine
  */
 public class A011844 extends Sequence0 {

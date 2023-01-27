@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A359510 allocated for M. F. Hasler.
+ * A359510 Numbers that can't be written as a palindromic product, i.e., such that the concatenation of all digits of the factors yields a palindrome.
  * @author Sean A. Irvine
  */
 public class A359510 extends Sequence1 {

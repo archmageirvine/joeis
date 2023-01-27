@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061198.
+ * A061199 Upper right triangle read by columns where T(n,k), with k &gt;= n, is the number of partitions of k where no part appears more than n times; also partitions of k where no parts are multiples of (n+1).
  * @author Sean A. Irvine
  */
 public class A061199 extends Sequence0 {

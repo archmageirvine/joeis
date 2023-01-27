@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061200.
+ * A061200 tau_5(n) = number of ordered 5-factorizations of n.
  * @author Sean A. Irvine
  */
 public class A061200 extends Sequence1 {

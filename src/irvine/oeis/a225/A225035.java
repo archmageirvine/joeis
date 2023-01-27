@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.Permutation;
 
 /**
- * A225035 Primes such that at least one nontrivial permutation of its digits is prime.
+ * A225035 Primes such that there is a nontrivial rearrangement of the digits which is a prime.
  * @author Sean A. Irvine
  */
 public class A225035 extends A000040 {

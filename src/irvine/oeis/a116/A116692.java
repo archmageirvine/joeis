@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a010.A010785;
 
 /**
- * A116692 Primes with only one distinct decimal digit.
+ * A116692 Primes with only one distinct decimal digit. Also called repunit primes or repdigit primes.
  *
  * @author Georg Fischer
  */

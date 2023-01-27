@@ -1,21 +1,20 @@
 package irvine.oeis.a014;
 
-import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.a007.A007245;
+import irvine.oeis.a000.A000521;
 
 /**
  * A014708 Coefficients of the modular function J = j - 744.
  * @author Sean A. Irvine
  */
-public class A014708 extends A007245 {
+public class A014708 extends A000521 {
 
-  private final Polynomial<Z> mA7245 = Polynomial.create(new long[0]);
+  private int mN = -2;
 
   @Override
   public Z next() {
-    mA7245.add(super.next());
-    return mN == 1 ? Z.ZERO : RING.pow(mA7245, 3, mN).coeff(mN);
+    final Z result = super.next();
+    return (++mN == 0) ? Z.ZERO : result;
   }
 }
 

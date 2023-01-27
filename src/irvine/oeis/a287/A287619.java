@@ -1,5 +1,5 @@
 package irvine.oeis.a287;
-// manually etaprod at 2023-01-22
+// manually etaprod at 2023-01-25
 
 import irvine.oeis.transform.EtaProductSequence;
 
@@ -12,6 +12,6 @@ public class A287619 extends EtaProductSequence {
 
   /** Construct the sequence. */
   public A287619() {
-    super(0, "[2,2;78,2;1,-1;39,-1]", "-1/1", 1);
+    super(0, "[78,2;2,2;39,-1;1,-1]", "-5");
   }
 }

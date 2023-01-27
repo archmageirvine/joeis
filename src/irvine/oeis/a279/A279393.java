@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002972;
 import irvine.oeis.a002.A002973;
 
 /**
- * A279393 Bisection of primes congruent to 1 modulo 4 (A002144), depending on the corresponding sum of the A002972 and 2*A002973 entries being congruent to 1 modulo 4 or not. Here we give the second case.
+ * A279393 Bisection of primes congruent to 1 modulo 4 (A002144), depending on the corresponding sum of the A002972 and 2*A002973 entries being congruent to 1 modulo 4 or not.
  * Here we give the second case.
  * @author Georg Fischer
  */
@@ -18,7 +18,6 @@ public class A279393 extends Sequence1 {
   private final A002972 mSeq2 = new A002972();
   private final A002973 mSeq3 = new A002973();
 
-  @Override
   public Z next() {
     while (true) {
       final Z a1 = mSeq1.next();

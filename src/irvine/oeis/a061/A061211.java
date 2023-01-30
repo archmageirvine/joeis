@@ -19,9 +19,7 @@ public class A061211 extends Sequence1 {
   public Z next() {
     ++mN;
     long max = 1;
-    // todo this is the wrong branch of LambertW!
-    final long limit = Math.round(Math.exp(-LambertW.w(-Math.log(10) / (4.5 * mN)))) + 900;
-    System.out.println("lim=" + limit);
+    final long limit = Math.round(Math.exp(-LambertW.wNeg1(-Math.log(10) / (4.5 * mN)))) + 900;
     for (long m = 1; m <= limit; ++m) {
       if (ZUtils.digitSum(Z.valueOf(m).pow(mN)) == m) {
         max = m;

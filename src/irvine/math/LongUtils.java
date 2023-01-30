@@ -222,6 +222,16 @@ public final class LongUtils {
   }
 
   /**
+   * Test if the given value is a square.
+   * @param n number to test
+   * @return true iff the number is a square
+   */
+  public static boolean isSquare(final long n) {
+    final long s = sqrt(n);
+    return s * s == n;
+  }
+
+  /**
    * Compute the number of bits in <code>a</code>. The
    * absolute value of <code>a</code> is considered.
    * @param a number to take logarithm of.

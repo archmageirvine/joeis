@@ -54,7 +54,7 @@ public class EtaProductSequence extends AbstractSequence {
     this(offset, epsig);
     int pqfNum = -1; // defaults
     int pqfDen = 1;
-    int slashPos = pqf.indexOf('/');
+    final int slashPos = pqf.indexOf('/');
     try {
       pqfNum = Integer.parseInt(slashPos < 0 ? pqf : pqf.substring(0, slashPos));
       pqfDen = slashPos < 0 ? 1 : Integer.parseInt(pqf.substring(slashPos + 1));

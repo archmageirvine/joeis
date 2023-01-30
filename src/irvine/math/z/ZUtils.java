@@ -11,6 +11,7 @@ import java.util.Random;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
+import irvine.math.LongUtils;
 import irvine.util.CollectionUtils;
 import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicIntArray;
@@ -169,6 +170,23 @@ public final class ZUtils {
   }
 
   /**
+   * Compute the sum of the given powers of the digits in an integer.
+   * @param v integer
+   * @param base the base
+   * @param power power to apply to each digit
+   * @return sum of squares of digits
+   */
+  public static long digitSumPower(long v, final long base, final int power) {
+    long sum = 0;
+    while (v != 0) {
+      final long t = v % base;
+      sum += LongUtils.pow(t, power);
+      v /= base;
+    }
+    return sum;
+  }
+
+  /**
    * Compute the sum of the squares of the digits in an integer.
    * @param v integer
    * @param base the base
@@ -191,11 +209,22 @@ public final class ZUtils {
    * @return sum of squares of digits
    */
   public static long digitSumSquares(Z v, final int base) {
+    return digitSumPower(v, 10, 2);
+  }
+
+  /**
+   * Compute the sum of the squares of the digits in an integer.
+   * @param v integer
+   * @param base the base
+   * @param power power to apply to each digit
+   * @return sum of squares of digits
+   */
+  public static long digitSumPower(Z v, final int base, final int power) {
     final Z bp = basePower(base);
     long sum = 0;
     while (!v.isZero()) {
       final Z[] qr = v.divideAndRemainder(bp);
-      sum += digitSumSquares(qr[1].longValue(), base);
+      sum += digitSumPower(qr[1].longValue(), base, power);
       v = qr[0];
     }
     return sum;

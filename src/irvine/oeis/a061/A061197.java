@@ -14,7 +14,7 @@ public class A061197 extends AntidiagonalSequence {
   public A061197() {
     super(0, new MemoryFunctionInt2<>() {
       @Override
-      protected Z compute(int n, final int m) {
+      protected Z compute(final int n, final int m) {
         if (n < 0 || m < 0) {
           return Z.ZERO;
         }

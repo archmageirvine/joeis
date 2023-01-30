@@ -17,7 +17,7 @@ import irvine.oeis.Sequence0;
 public class A039754 extends Sequence0 {
 
   private static final CycleIndex Z2 = SymmetricGroup.create(2).cycleIndex();
-  private Polynomial<Q> mA = new PolynomialRing<>(Rationals.SINGLETON).one();
+  private Polynomial<Q> mA = new PolynomialRing<>(Rationals.SINGLETON).onePlusXToTheN(1);
   private int mN = 0;
   private int mM = -1;
 

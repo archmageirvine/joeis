@@ -14,7 +14,7 @@ public class A014708 extends A000521 {
   @Override
   public Z next() {
     final Z result = super.next();
-    return (++mN == 0) ? Z.ZERO : result;
+    return ++mN == 0 ? Z.ZERO : result;
   }
 }
 

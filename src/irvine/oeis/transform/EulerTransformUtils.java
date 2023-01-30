@@ -13,7 +13,7 @@ import irvine.math.z.Z;
  * in situations where the <code>EulerTransform</code> class cannot be used.
  * @author Sean A. Irvine
  */
-public class EulerTransformUtils {
+public final class EulerTransformUtils {
 
   private EulerTransformUtils() { }
 

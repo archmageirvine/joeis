@@ -18,6 +18,7 @@ public class A279393 extends Sequence1 {
   private final A002972 mSeq2 = new A002972();
   private final A002973 mSeq3 = new A002973();
 
+  @Override
   public Z next() {
     while (true) {
       final Z a1 = mSeq1.next();

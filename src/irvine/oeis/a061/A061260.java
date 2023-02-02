@@ -30,7 +30,7 @@ public class A061260 extends Sequence1 {
       if (i < 1 || p < 1) {
         return Z.ZERO;
       }
-      return Integers.SINGLETON.sum(0, Math.min(n/ i, p),
+      return Integers.SINGLETON.sum(0, Math.min(n / i, p),
         j -> mB.get(n - i * j, i - 1, p - j).multiply(Binomial.binomial(IntegerPartition.partitions(i).add(j - 1), Z.valueOf(j)))
       );
     }

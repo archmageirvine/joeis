@@ -208,8 +208,8 @@ public final class ZUtils {
    * @param base the base
    * @return sum of squares of digits
    */
-  public static long digitSumSquares(Z v, final int base) {
-    return digitSumPower(v, 10, 2);
+  public static long digitSumSquares(final Z v, final int base) {
+    return digitSumPower(v, base, 2);
   }
 
   /**

@@ -1,5 +1,7 @@
 package irvine.oeis.a288;
 
+import java.util.HashMap;
+
 import irvine.factor.factor.Jaguar;
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
@@ -17,6 +19,43 @@ public class A288212 extends Sequence1 {
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final PrimeDivision mPrimeDivision = new PrimeDivision(10000000);
 
+  // Hard cases, but where the lpf is confidently known
+  private final HashMap<Z, Z> mHardCases = new HashMap<>();
+  {
+    mHardCases.put(new Z("1658151461612523934210160786231756703739801964685320323733936052636851061474243883100399686061583204219852341749971939932416275560056149605385015871113416466747381335194676015641415828470961339307286193009169155965829268282261446065385232041870905269704417986426614690675720116641"), Z.valueOf(121229832887L));
+    mHardCases.put(new Z("201017424592621072090585574452276395646818160109275658388329807511909889880431149802943417384152995038218692598164711414946027160264549348997496469348922208887419031710513504988315839001611299896460009519984004436452321276232044652949615355713727632673674256380095533239756746848651347939681"), Z.valueOf(104661860755129L));
+  }
+
+  private Z lpf(final Z u) {
+    try {
+      final Z lpf = Jaguar.factor(u).leastPrimeFactor();
+      if (mVerbose) {
+        StringUtils.message(mN + " jaguar " + lpf + " is lpf of " + u);
+      }
+      return lpf;
+    } catch (final UnsupportedOperationException e) {
+      // We only require lpf, sometimes we can get it this way even if the entire factorization is unknown
+      final FactorSequence fs = new FactorSequence(u);
+      mPrimeDivision.factor(fs);
+      final Z[] p = fs.toZArray();
+      if (p.length > 0 && p[0].isProbablePrime()) {
+        if (mVerbose) {
+          StringUtils.message(mN + " trial " + p[0] + " is lpf of " + u);
+        }
+        return p[0];
+      } else {
+        final Z lpf = mHardCases.get(u);
+        if (lpf != null) {
+          if (mVerbose) {
+            StringUtils.message(mN + " special " + lpf + " is lpf of " + u);
+          }
+          return lpf;
+        }
+        throw e;
+      }
+    }
+  }
+
   @Override
   public Z next() {
     mN = mN.add(2);
@@ -26,26 +65,7 @@ public class A288212 extends Sequence1 {
     Z t = mN;
     Z u;
     while (!(u = t.add(1)).isProbablePrime()) {
-      try {
-        final Z lpf = Jaguar.factor(u).leastPrimeFactor();
-        if (mVerbose) {
-          StringUtils.message(mN + " " + lpf + " is lpf of " + u);
-        }
-        t = t.multiply(lpf);
-      } catch (final UnsupportedOperationException e) {
-        // We only require lpf, sometimes we can get it this way even if the entire factorization is unknown
-        final FactorSequence fs = new FactorSequence(u);
-        mPrimeDivision.factor(fs);
-        final Z[] p = fs.toZArray();
-        if (p.length > 0 && p[0].isProbablePrime()) {
-          if (mVerbose) {
-            StringUtils.message(mN + " " + p[0] + " is lpf of " + u);
-          }
-          t = t.multiply(p[0]);
-        } else {
-          throw e;
-        }
-      }
+      t = t.multiply(lpf(u));
     }
     return u;
   }

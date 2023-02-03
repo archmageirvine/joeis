@@ -6,7 +6,7 @@ import irvine.oeis.Subsequence;
 import irvine.oeis.a061.A061039;
 
 /**
- * A146762 Numbers in A061039 ending with 0.
+ * A146762 Terms of A061039 that are multiple of 10, in the order in which they appear.
  * @author Georg Fischer
  */
 public class A146762 extends Subsequence {

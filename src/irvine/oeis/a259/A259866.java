@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.oeis.a050.A050528;
 
 /**
- * A259866 Primes of the form 3*10^n + 1.
+ * A259866 Primes of the form 3*10^k + 1.
  * @author Georg Fischer
  */
 public class A259866 extends A050528 {

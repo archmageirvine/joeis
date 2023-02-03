@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 /**
- * A187323 Floor(n/2)+floor(n/3)+floor(n/4).
+ * A187323 a(n) = floor(n/2) + floor(n/3) + floor(n/4).
  * @author Georg Fischer
  */
 public class A187323 extends FloorSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A359610 allocated for Jos\u00e9 Hern\u00e1ndez.
+ * A359610 Numbers k such that the sum of the 5th powers of the digits of k is prime.
  * @author Sean A. Irvine
  */
 public class A359610 extends Sequence1 {

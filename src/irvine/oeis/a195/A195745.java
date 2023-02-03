@@ -4,7 +4,7 @@ package irvine.oeis.a195;
 import irvine.oeis.a050.A050528;
 
 /**
- * A195745 Primes of the form 15*2^n + 1.
+ * A195745 Primes of the form 15*2^k + 1.
  * @author Georg Fischer
  */
 public class A195745 extends A050528 {

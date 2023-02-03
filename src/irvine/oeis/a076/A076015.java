@@ -4,7 +4,7 @@ package irvine.oeis.a076;
 import irvine.oeis.triangle.RowSumSequence;
 
 /**
- * A076015 Row sums of triangle A076014.
+ * A076015 Sum of the (n-1)-th powers of the first n integers.
  * @author Georg Fischer
  */
 public class A076015 extends RowSumSequence {

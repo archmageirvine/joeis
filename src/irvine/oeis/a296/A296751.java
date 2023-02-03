@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A296751 Numbers n whose base-13 digits d(m), d(m-1), ..., d(0) have #(rises) &gt; #(falls); see Comments.
+ * A296751 Numbers whose base-13 digits d(m), d(m-1), ..., d(0) have #(rises) &gt; #(falls); see Comments.
  * @author Georg Fischer
  */
 public class A296751 extends RunsBaseSequence {

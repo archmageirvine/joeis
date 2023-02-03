@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A358535 allocated for Michael De Vlieger.
+ * A358535 a(1) = 1; let S(n) = Sum_{j=1..n-1} a(j) and let T(n) = Sum_{j=1..n-1} d(a(j)) where d(n) = A000005(n). a(n) = least novel k such that (T(n)+d(k)) | (S(n)+k).
  * @author Sean A. Irvine
  */
 public class A358535 extends Sequence1 {

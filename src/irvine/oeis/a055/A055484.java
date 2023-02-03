@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A055484 Number of unlabeled 3-element intersecting families (with not necessary distinct sets) of an n-element set.
+ * A055484 Number of unlabeled 3-element intersecting families (with not necessarily distinct sets) of an n-element set.
  * @author Georg Fischer
  */
 public class A055484 extends GeneratingFunctionSequence {

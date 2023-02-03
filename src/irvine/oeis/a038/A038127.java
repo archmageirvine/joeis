@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.BeattySequence;
 
 /**
- * A038127 a(n) = floor(n*2^sqrt(2)).
+ * A038127 A Beatty sequence: a(n) = floor(n*2^sqrt(2)).
  * @author Georg Fischer
  */
 public class A038127 extends BeattySequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061276.
+ * A061280 Smallest base b &gt;= 2 for which b^n contains n as a substring.
  * @author Sean A. Irvine
  */
 public class A061280 extends Sequence1 {

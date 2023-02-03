@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A278471 Numbers n such that 10^n - 2001 is prime.
+ * A278471 Numbers k such that 10^k - 2001 is prime.
  * @author Georg Fischer
  */
 public class A278471 extends PrimePositionSubsequence {

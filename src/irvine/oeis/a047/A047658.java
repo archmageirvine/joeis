@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000796;
 
 /**
- * A047658 Numbers n such that the initial n digits in decimal portion of Pi form a prime number.
+ * A047658 Numbers k such that the initial k digits in decimal portion of Pi form a prime number.
  * @author Sean A. Irvine
  */
 public class A047658 extends A000796 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A008686 Dates at weekly intervals from Jan 01.
+ * A008686 Dates at weekly intervals from Jan 01 of a non-Leap Year.
  * @author Sean A. Irvine
  */
 public class A008686 extends Sequence1 {

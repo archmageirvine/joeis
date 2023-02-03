@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A061281.
+ * A061281 Side of n-th equilateral triangle enclosing at least one point located at integer distances from the vertices.
  * @author Sean A. Irvine
  */
 public class A061281 extends Sequence1 {

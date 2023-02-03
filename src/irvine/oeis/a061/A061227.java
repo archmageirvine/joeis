@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A061227 a(n) = p + R{p} where R{p} is the digit reversal of n-th prime p.
+ * A061227 a(n) = p + R(p) where R(p) is the digit reversal of n-th prime p.
  * @author Georg Fischer
  */
 public class A061227 extends A000040 {

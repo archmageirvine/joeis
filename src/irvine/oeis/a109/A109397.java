@@ -5,7 +5,7 @@ package irvine.oeis.a109;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A109397 Numbers n such that 22 * 10^n + 1 is prime.
+ * A109397 Numbers k such that 22 * 10^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A109397 extends PowerFactorPrimeSequence {

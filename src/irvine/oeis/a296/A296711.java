@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A296711 Numbers n whose base-9 digits d(m), d(m-1), ..., d(0) have #(rises) &lt; #(falls); see Comments.
+ * A296711 Numbers whose base-9 digits d(m), d(m-1), ..., d(0) have #(rises) &lt; #(falls); see Comments.
  * @author Georg Fischer
  */
 public class A296711 extends RunsBaseSequence {

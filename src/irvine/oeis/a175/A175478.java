@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A175478 Decimal expansion of (log(3))^2.
+ * A175478 Decimal expansion of log(3)^2.
  * @author Georg Fischer
  */
 public class A175478 extends DecimalExpansionSequence {

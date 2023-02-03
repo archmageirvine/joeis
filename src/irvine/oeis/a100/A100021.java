@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a098.A098764;
 
 /**
- * A100021 Numbers of the form 3prime(n) - prime(n+1) - 3.
+ * A100021 a(n) = 3*prime(n) - prime(n+1) - 3.
  * @author Georg Fischer
  */
 public class A100021 extends A098764 {

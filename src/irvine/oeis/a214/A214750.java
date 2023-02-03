@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060035;
 
 /**
- * A214750 Least m&gt;0 such that n-m divides n^2+m^2.
+ * A214750 Least m &gt; 0 such that n - m divides n^2 + m^2.
  * @author Georg Fischer
  */
 public class A214750 extends A060035 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a139.A139174;
 
 /**
- * A181892 (n!/4-1)^2.
+ * A181892 a(n) = (n!/4-1)^2.
  * @author Georg Fischer
  */
 public class A181892 implements Sequence {

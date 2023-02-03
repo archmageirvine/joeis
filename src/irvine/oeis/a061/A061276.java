@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061276.
+ * A061276 Numbers that are sums of repdigits of their digits.
  * @author Sean A. Irvine
  */
 public class A061276 extends Sequence1 {

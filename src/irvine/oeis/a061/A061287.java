@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A061281.
+ * A061287 Integer part of square root of n-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A061287 extends A000045 {

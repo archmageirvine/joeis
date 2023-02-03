@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A359069 allocated for Kevin P. Thompson.
+ * A359069 Smallest prime p such that p^(2n-1) - 1 is the product of 2n-1 distinct primes.
  * @author Sean A. Irvine
  */
 public class A359069 extends Sequence1 {

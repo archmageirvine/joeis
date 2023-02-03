@@ -4,7 +4,7 @@ package irvine.oeis.a339;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A339468 The number of n-faced polyhedra formed when an truncated tetrahedron is internally cut by all the planes defined by any three of its vertices.
+ * A339468 The number of n-faced polyhedra formed when a truncated tetrahedron is internally cut by all the planes defined by any three of its vertices.
  * @author Georg Fischer
  */
 public class A339468 extends FiniteSequence {

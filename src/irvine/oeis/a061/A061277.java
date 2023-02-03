@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A061276.
+ * A061277 Numbers which have more different digits than their squares.
  * @author Sean A. Irvine
  */
 public class A061277 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A059050 Number of 7-element ordered T_0-antichains on an unlabeled n-set; T_1-hypergraphs on 7 labeled nodes with n (not necessary empty) distinct hyperedges (n=0,1,...,128).
+ * A059050 Number of 7-element ordered T_0-antichains on an unlabeled n-set; T_1-hypergraphs on 7 labeled nodes with n (not necessarily empty) distinct hyperedges (n=0,1,...,128).
  * @author Sean A. Irvine
  */
 public class A059050 extends Sequence0 {

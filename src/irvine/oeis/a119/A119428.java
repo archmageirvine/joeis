@@ -1,6 +1,5 @@
 package irvine.oeis.a119;
 
-import irvine.math.z.Z;
 import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.transform.EulerTransform;
 
@@ -12,6 +11,6 @@ public class A119428 extends EulerTransform {
 
   /** Construct the sequence. */
   public A119428() {
-    super(0, new PeriodicSequence(1, 1, 0, 0,-2, 0, 0, 1, 1,-2), 1);
+    super(0, new PeriodicSequence(1, 1, 0, 0, -2, 0, 0, 1, 1, -2), 1);
   }
 }

@@ -31,8 +31,8 @@ public class EtaProductSequence extends AbstractSequence {
   /**
    * Construct an eta product sequence from String parameters.
    * @param offset first valid term has this index
-   * @param epsig list of pairs (q, e) as a String of the form "[q0,e0;q1,e1;q2,e2]".
-   * Since the leading power of q factor is not specified, it is asumed to be "-1/1", 
+   * @param epsig list of pairs (q, e) as a String of the form <code>"[q0,e0;q1,e1;q2,e2]"</code>.
+   * Since the leading power of q factor is not specified, it is assumed to be "-1/1",
    * that is there is no shifting or zero insertion.
    */
   public EtaProductSequence(final int offset, final String epsig) {
@@ -45,7 +45,7 @@ public class EtaProductSequence extends AbstractSequence {
   /**
    * Construct an eta product sequence from String parameters.
    * @param offset first valid term has this index
-   * @param epsig list of pairs (q, e) as a String of the form "[q0,e0;q1,e1;q2,e2]".
+   * @param epsig list of pairs (q, e) as a String of the form <code>"[q0,e0;q1,e1;q2,e2]"</code>.
    * @param pqf leading power of q factor
    * Since there is an explicit leading power of q factor, that may result 
    * in a shift and/or insertion of zeros.
@@ -68,7 +68,7 @@ public class EtaProductSequence extends AbstractSequence {
    * Configure the class by computing the period for the Euler transform.
    */
   protected void configure() {
-    final String[] pairs = mEPSig.replaceAll("[\\[\\]]", "").split("[\\;\\/\\|]"); // pair separator may be ";", "/" or "|"
+    final String[] pairs = mEPSig.replaceAll("[\\[\\]]", "").split("[;/|]"); // pair separator may be ";", "/" or "|"
     final int noPairs = pairs.length;
     mQpowers = new int[noPairs];
     mEpowers = new int[noPairs];
@@ -76,7 +76,7 @@ public class EtaProductSequence extends AbstractSequence {
     for (int ip = 0; ip < noPairs; ++ip) {
       mQpowers[ip] = 1;
       mEpowers[ip] = 1;
-      final String[] pair = pairs[ip].split("\\,");
+      final String[] pair = pairs[ip].split(",");
       try {
         mQpowers[ip] = Integer.parseInt(pair[0]);
         mEpowers[ip] = Integer.parseInt(pair[1]);
@@ -89,7 +89,7 @@ public class EtaProductSequence extends AbstractSequence {
     Arrays.fill(mPeriod, 0);
     for (int ip = 0; ip < noPairs; ++ip) {
       for (int j = mQpowers[ip]; j <= lcm; j += mQpowers[ip]) {
-        mPeriod[j - 1] += -mEpowers[ip]; // eta = period[-1]
+        mPeriod[j - 1] -= mEpowers[ip]; // eta = period[-1]
       }
     }
     int innerProd = 0;
@@ -135,7 +135,7 @@ public class EtaProductSequence extends AbstractSequence {
 
   /**
    * Get the eta product signature.
-   * @return a String of the form ""[q0,e0;q1,e1;q2,e2]""
+   * @return a String of the form <code>"[q0,e0;q1,e1;q2,e2]"</code>
    */
   public String getEPSig() {
     if (!mIsConfigured) {
@@ -244,11 +244,11 @@ public class EtaProductSequence extends AbstractSequence {
       }
     } // while args
     final EtaProductSequence eps = new EtaProductSequence(0, epsig, pqf);
-    eps.setDebug(debug);
+    setDebug(debug);
     System.out.println("EPSIG=" + eps.getEPSig() + ", PreTerms=" + eps.getPreTerms());
     System.out.println("pqs specified: " + eps.getPqfSpec() + ", calculated: " + eps.mPqfCalc);
     final long[] period = eps.getPeriod();
-    final int plen = period.length > 0x100 ? 0x100 : period.length; // show the first 256 only
+    final int plen = Math.min(period.length, 0x100); // show the first 256 only
     System.out.print("period of length " + period.length + ": [");
     for (int i = 0; i < plen; ++i) {
       if (i > 0) {

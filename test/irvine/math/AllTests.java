@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(ByteUtilsTest.class);
     suite.addTestSuite(IntegerUtilsTest.class);
+    suite.addTestSuite(LongOrderedPairTest.class);
     suite.addTestSuite(LongUtilsTest.class);
     suite.addTestSuite(MobiusTest.class);
     suite.addTestSuite(MutableIntegerTest.class);

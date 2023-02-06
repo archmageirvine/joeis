@@ -1,5 +1,8 @@
 package irvine.oeis.a002;
 
+import java.util.HashMap;
+import java.util.Locale;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.string.English;
@@ -11,9 +14,15 @@ import irvine.util.string.Roman;
  */
 public class A002904 extends Sequence1 {
 
-  // Sequence is ambiguous from 35 -> IIV onwards.  You get what you get :-)
-
   private int mN = 0;
+
+  // We require a strict interpretation here
+  private final HashMap<String, Integer> mToArabic = new HashMap<>();
+  {
+    for (int k = 1; k < 5000; ++k) {
+      mToArabic.put(Roman.roman(k), k);
+    }
+  }
 
   @Override
   public Z next() {
@@ -28,10 +37,7 @@ public class A002904 extends Sequence1 {
     if (roman.length() == 0) {
       return Z.ZERO;
     }
-    try {
-      return Z.valueOf(Roman.parse(roman.toString()));
-    } catch (final IllegalArgumentException e) {
-      return Z.ZERO;
-    }
+    final Integer arabic = mToArabic.get(roman.toString().toUpperCase(Locale.getDefault()));
+    return arabic == null ? Z.ZERO : Z.valueOf(arabic);
   }
 }

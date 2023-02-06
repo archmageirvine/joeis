@@ -17,7 +17,6 @@ public final class Roman {
 
   /**
    * Parse a Roman numeral.
-   *
    * @param roman Roman numeral
    * @return value
    */
@@ -45,7 +44,6 @@ public final class Roman {
 
   /**
    * Convert a number to Roman numerals.
-   *
    * @param number number to convert
    * @return Roman representation
    */

@@ -17,7 +17,7 @@ public class A061115 extends Sequence1 {
     ++mN;
     final StringBuilder sb = new StringBuilder();
     for (int k = 1; k <= mN; ++k) {
-      sb.append(Stirling.firstKind(mN, k));
+      sb.append(Stirling.firstKind(mN, k).abs());
     }
     return new Z(sb);
   }

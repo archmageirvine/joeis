@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000040;
 
 /**
- * A359734.
+ * A359734 allocated for M. F. Hasler.
  * @author Sean A. Irvine
  */
 public class A359734 extends Sequence0 {

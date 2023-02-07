@@ -15,7 +15,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A061289.
+ * A061289 Consider a network of triangles consisting of an equilateral triangle divided into n^2 equilateral triangles plus a circle connecting the vertices of the main triangle. Sequence gives minimal number of corner turns required to trace the network in one continuous line.
  * @author Sean A. Irvine
  */
 public class A061289 extends Sequence1 {
@@ -66,18 +66,21 @@ public class A061289 extends Sequence1 {
       return; // No better than what is already known
     }
     if (used.size() == mEdgeCount) {
-      mBest = turns;
-      if (mVerbose) {
-        StringUtils.message("New best is " + mBest);
+      if (p == L.origin()) {
+        mBest = turns;
+        if (mVerbose) {
+          StringUtils.message("New best is " + mBest);
+        }
       }
       return;
     }
     for (final long q : mNeighbours.get(p)) {
       final LongOrderedPair e = new LongOrderedPair(p, q);
-      final Set<LongOrderedPair> u = new HashSet<>(used);
-      u.add(e);
       final long d = q - p;
-      search(u, q, d, d == delta ? turns : turns + 1);
+      final Set<LongOrderedPair> u = new HashSet<>(used);
+      if (u.add(e)) { // Avoid any repeated work (heuristic)
+        search(u, q, d, d == delta ? turns : turns + 1);
+      }
     }
   }
 
@@ -91,8 +94,11 @@ public class A061289 extends Sequence1 {
     mNeighbours = buildNeighbours(pts);
     mEdgeCount = buildEdges(mNeighbours).size();
     System.out.println("Number of edges: " + mEdgeCount);
-    mBest = 17; //Integer.MAX_VALUE; // todo sensible upper bound
-    search(new HashSet<>(), L.origin(), 42 /* an impossible delta */, 0);
+    mBest = 25; //Integer.MAX_VALUE; // todo sensible upper bound
+    final long p = mNeighbours.get(L.origin()).get(0); // Break initial symmetry
+    final HashSet<LongOrderedPair> seen = new HashSet<>();
+    seen.add(new LongOrderedPair(p, L.origin()));
+    search(seen, p, p - L.origin(), 1);
     return Z.valueOf(mBest);
   }
 

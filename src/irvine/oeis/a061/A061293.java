@@ -5,15 +5,15 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061294 a(n) = floor( n^Pi ).
+ * A061293 a(n) = floor( n^e ), e = 2.718281828...
  * @author Sean A. Irvine
  */
-public class A061294 extends Sequence1 {
+public class A061293 extends Sequence1 {
 
   private long mN = 0;
 
   @Override
   public Z next() {
-    return CR.valueOf(++mN).pow(CR.PI).floor();
+    return CR.valueOf(++mN).pow(CR.E).floor();
   }
 }

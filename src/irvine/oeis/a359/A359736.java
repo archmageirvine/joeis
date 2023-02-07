@@ -3,7 +3,7 @@ package irvine.oeis.a359;
 import irvine.math.z.Z;
 
 /**
- * A359734.
+ * A359736 allocated for M. F. Hasler.
  * @author Sean A. Irvine
  */
 public class A359736 extends A359734 {

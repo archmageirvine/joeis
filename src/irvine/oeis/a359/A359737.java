@@ -3,7 +3,7 @@ package irvine.oeis.a359;
 import irvine.math.z.Fibonacci;
 
 /**
- * A359734.
+ * A359737 allocated for M. F. Hasler.
  * @author Sean A. Irvine
  */
 public class A359737 extends A359734 {

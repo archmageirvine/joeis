@@ -19,7 +19,7 @@ public class A359533 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A359533() {
-    super(CR.TWO.log().multiply(4).divide(CR.PI)
+    super(0, CR.TWO.log().multiply(4).divide(CR.PI)
       .subtract(ONE_EIGHTH.gamma().multiply(THREE_EIGHTH.gamma())
         .divide(ONE_QUARTER.gamma().multiply(THREE_QUARTER.gamma())).square()
         .divide(CR.PI.multiply(CR.SQRT2).multiply(6)))

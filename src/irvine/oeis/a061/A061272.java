@@ -13,6 +13,6 @@ public class A061272 extends FilterSequence {
 
   /** Construct the sequence. */
   public A061272() {
-    super(new A000290(), k -> (ZUtils.syn(k) & 0b0111101100) == 0 && LongUtils.isSquare(ZUtils.digitSumSquares(k)));
+    super(1, new A000290(), k -> (ZUtils.syn(k) & 0b0111101100) == 0 && LongUtils.isSquare(ZUtils.digitSumSquares(k)));
   }
 }

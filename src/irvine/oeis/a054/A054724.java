@@ -2,15 +2,15 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A054724 Triangle of numbers of inequivalent Boolean functions of n variables with exactly k nonzero values (atoms) under action of complementing group.
  * @author Sean A. Irvine
  */
-public class A054724 extends Sequence1 {
+public class A054724 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
   private long mM = 1;
 
   @Override

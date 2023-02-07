@@ -1,14 +1,14 @@
 package irvine.oeis.a359;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
  * A359336 allocated for Valentin Bakoev.
  * @author Sean A. Irvine
  */
-public class A359336 extends Sequence0 {
+public class A359336 extends Sequence1 {
 
   // Probably not the best way of dealing with 1s, but gets the job done
 

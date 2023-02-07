@@ -13,6 +13,11 @@ public class A289210 extends A066395 {
   private int mN = -1;
 
   @Override
+  public int getOffset() {
+    return 0;
+  }
+
+  @Override
   public Z next() {
     return (++mN == 0) ? Z.ONE : super.next().multiply(-1728);
   }

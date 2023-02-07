@@ -1,7 +1,7 @@
 package irvine.oeis.a145;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000005;
 
 /**
@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000005;
  * a(0) = 1; for n &gt;= 1, a(n) = 4*A000005(n).
  * @author Georg Fischer
  */
-public class A145154 extends Sequence1 {
+public class A145154 extends Sequence0 {
 
   private int mN = -1;
   private final A000005 mSeq = new A000005();

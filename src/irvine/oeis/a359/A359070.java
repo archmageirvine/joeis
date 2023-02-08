@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A359070 allocated for Kevin P. Thompson.
+ * A359070 Smallest k &gt; 1 such that k^n - 1 is the product of n distinct primes.
  * @author Sean A. Irvine
  */
 public class A359070 extends Sequence1 {

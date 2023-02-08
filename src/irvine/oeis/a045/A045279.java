@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A045279 Numbers n with property that in base 5 representation the numbers of 2's and 4's are 0 and 2, respectively.
+ * A045279 Numbers whose base-5 representation contains no 2's and exactly two 4's.
  * @author Georg Fischer
  */
 public class A045279 extends RunsBaseSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A081823 Decimal expansion of the elementary charge e in coulomb (C).
+ * A081823 Decimal expansion of the elementary charge e in coulombs (C).
  * @author Sean A. Irvine
  * @author Georg Fischer
  */

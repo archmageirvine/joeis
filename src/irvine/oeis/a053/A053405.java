@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053405 Definition: A kara B = C, where C is the least nonnegative integer such that: C * B &gt;= A and C * (B-1) &lt; A. Sequence gives smallest a such that n kara a is undefined.
+ * A053405 Definition: A kara B = C, where C is the least nonnegative integer such that C * B &gt;= A and C * (B-1) &lt; A. a(n) is the smallest k such that n kara k is undefined.
  * @author Sean A. Irvine
  */
 public class A053405 implements Sequence {

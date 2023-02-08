@@ -6,7 +6,7 @@ package irvine.oeis.a085;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A085456 Sum(Sum a(j)a(i-j),(j=0,..,i)),(i=0,..,n)=(-7)^n.
+ * A085456 Sum_{i=0..n} Sum_{j=0..i} a(j) * a(i-j) = (-7)^n.
  * @author Georg Fischer
  */
 public class A085456 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A261125 a(n) = (2^(n-1))!*a(n-1), a(1)=1.
+ * A261125 a(n) = (2^(n-1))!*a(n-1) for n&gt;=1, a(0) = 1.
  * @author Georg Fischer
  */
 public class A261125 extends Sequence0 {

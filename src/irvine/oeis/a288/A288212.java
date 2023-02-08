@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A288212 Start with 2n, and if 2n+1 is composite, multiply by the smallest factor of 2n+1; if that number plus 1 is composite, multiply by the smallest factor of that number plus 1; continue until you have a number where z+1 is prime; this is the final z+1, or 0 if sequence diverges.
+ * A288212 Start with k=2*n, and until k+1 is prime, apply the map k -&gt; k*(least prime factor of (k+1)); then a(n) = k+1, or 0 if k+1 never reaches a prime.
  * @author Sean A. Irvine
  */
 public class A288212 extends Sequence1 {

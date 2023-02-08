@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007895;
 
 /**
- * A020899 Odd number of terms in Zeckendorf representation of n (write n as a sum of non-consecutive distinct Fibonacci numbers).
+ * A020899 Numbers k with an odd number of terms in their Zeckendorf representation (write k as a sum of non-consecutive distinct Fibonacci numbers).
  * @author Sean A. Irvine
  */
 public class A020899 extends A007895 {

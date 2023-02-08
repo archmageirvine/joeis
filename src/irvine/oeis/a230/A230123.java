@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A230123 Lowest number of the form 11*m+1 with exactly n prime factors, counted with multiplicity.
+ * A230123 Smallest number of the form 11*m+1 with exactly n prime factors, counted with multiplicity.
  * <code>a(n) = a(n-10)*2^10</code>
  * @author Georg Fischer
  */

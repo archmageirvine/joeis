@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A004664 n! + n^2.
+ * A004664 a(n) = n! + n^2.
  * @author Sean A. Irvine
  */
 public class A004664 extends Sequence0 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053087 Lowest j for which 2^j kara n is defined.
+ * A053087 a(n) is the smallest j for which 2^j kara n is defined (see A053405).
  * @author Sean A. Irvine
  */
 public class A053087 extends Sequence1 {

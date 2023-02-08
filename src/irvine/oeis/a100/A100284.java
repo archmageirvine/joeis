@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A100284 Expansion of (1-4x-x^2)/((1-x)(1-4x-5x^2)).
+ * A100284 Expansion of (1-4*x-x^2)/((1-x)*(1-4*x-5*x^2)).
  * @author Sean A. Irvine
  */
 public class A100284 extends LinearRecurrence {

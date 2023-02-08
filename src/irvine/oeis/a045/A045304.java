@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A045304 Numbers whose base-5 representation contains three 3's and no 4's.
+ * A045304 Numbers whose base-5 representation contains exactly three 3's and no 4's.
  * @author Georg Fischer
  */
 public class A045304 extends RunsBaseSequence {

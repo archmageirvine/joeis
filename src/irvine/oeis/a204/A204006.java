@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A204006 Symmetric matrix based on f(i,j)=min{2i+j-2,i+2j-2}, by antidiagonals.
+ * A204006 Symmetric matrix based on f(i,j) = min{2i+j-2,i+2j-2}, by antidiagonals.
  * @author Georg Fischer
  */
 public class A204006 extends UpperLeftTriangle {

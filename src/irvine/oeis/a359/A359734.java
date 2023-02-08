@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000040;
 
 /**
- * A359734 allocated for M. F. Hasler.
+ * A359734 Lexicographically earliest sequence of distinct nonnegative integers such that the sequence A051699(a(n)) (distance from the nearest prime) has the same sequence of digits.
  * @author Sean A. Irvine
  */
 public class A359734 extends Sequence0 {

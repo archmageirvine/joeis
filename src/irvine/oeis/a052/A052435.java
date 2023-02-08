@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A052435 a(n) = round(li(n) - pi(n)), where li is the logarithmic integral and pi(x) is the number of primes up to x.
+ * A052435 a(n) = round(li(n) - pi(n)), where li is the logarithmic integral and pi(x) is the number of primes &lt;= x.
  * @author Sean A. Irvine
  */
 public class A052435 extends A000720 {

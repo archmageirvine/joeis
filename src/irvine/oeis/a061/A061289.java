@@ -87,14 +87,9 @@ public class A061289 extends Sequence1 {
   @Override
   public Z next() {
     final Set<Long> pts = buildTriangles(++mN);
-    for (final long p : pts) {
-      System.out.print(L.toString(p) + ", ");
-    }
-    System.out.println();
     mNeighbours = buildNeighbours(pts);
     mEdgeCount = buildEdges(mNeighbours).size();
-    System.out.println("Number of edges: " + mEdgeCount);
-    mBest = 25; //Integer.MAX_VALUE; // todo sensible upper bound
+    mBest = mEdgeCount;
     final long p = mNeighbours.get(L.origin()).get(0); // Break initial symmetry
     final HashSet<LongOrderedPair> seen = new HashSet<>();
     seen.add(new LongOrderedPair(p, L.origin()));

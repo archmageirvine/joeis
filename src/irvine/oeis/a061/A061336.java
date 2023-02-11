@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A061336.
+ * A061336 Smallest number of triangular numbers which sum to n.
  * @author Sean A. Irvine
  */
 public class A061336 extends Sequence0 {

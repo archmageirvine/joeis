@@ -2108,3 +2108,4 @@ A061064 Maximal number of zeros in the character table of a group with n element
 A061188 Triangle of coefficients of polynomials (rising powers) useful for convolutions of A000032(n+1), n >= 0 (Lucas numbers).
 A061189 Triangle of coefficients of polynomials (rising powers) useful for convolutions of A000204(n+1), n >= 0 (Lucas numbers).
 A061207 Number of subgroups of index n of the braid group on 3 strands <a,b|aba=bab>= <c,d|c^2=d^3>, the fundamental group of the complement of a trefoil knot.
+A061342 Period of the stationary component of the pattern which a row of n cells becomes in Conway's Game of Life.

@@ -80,6 +80,8 @@ public final class QuadraticCongruence {
     if (e == 1) {
       return solve(a, p);
     }
+    final Z pe = p.pow(e);
+    a = a.mod(pe);
     if (a.isZero()) {
       final TreeSet<Z> res = new TreeSet<>();
       res.add(Z.ZERO);
@@ -94,12 +96,16 @@ public final class QuadraticCongruence {
         return a.mod(4) == 1 ? MOD4 : Collections.emptySet();
       }
       if (Z.FOUR.equals(a)) { // todo remove this ugly special case?
-        return Arrays.asList(Z.TWO, Z.SIX);
-      }
-      if (a.mod(8) != 1) {
-        return Collections.emptySet();
+        final ArrayList<Z> res = new ArrayList<>();
+        for (Z t = Z.TWO; t.compareTo(pe) < 0; t = t.add(4)) {
+          res.add(t);
+        }
+        return res;
       }
       if (e == 3) {
+        if (a.mod(8) != 1) {
+          return Collections.emptySet();
+        }
         return MOD8;
       }
 
@@ -108,7 +114,6 @@ public final class QuadraticCongruence {
       if (prev.isEmpty()) {
         return prev;
       }
-      final Z pe = p.pow(e);
       final TreeSet<Z> res = new TreeSet<>();
       for (final Z x : prev) {
           final Z pe1 = p.pow(e - 1);
@@ -131,7 +136,6 @@ public final class QuadraticCongruence {
     if (prev.isEmpty()) {
       return prev;
     }
-    final Z pe = p.pow(e);
     for (final Z x : prev) {
       final Z pe1 = p.pow(e - 1);
       final Z x2 = x.multiply2();

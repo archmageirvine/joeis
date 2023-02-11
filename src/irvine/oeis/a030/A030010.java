@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
-import irvine.oeis.transform.InverseEulerTransform;
 import irvine.oeis.a000.A000040;
+import irvine.oeis.transform.InverseEulerTransform;
 
 /**
  * A030010 Inverse Euler transform of primes.
@@ -11,7 +11,7 @@ public class A030010 extends InverseEulerTransform {
 
   /** Construct the sequence. */
   public A030010() {
-    super(new A000040(), 0);
+    super(1, new A000040(), 0);
     next();
   }
 }

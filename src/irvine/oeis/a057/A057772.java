@@ -12,7 +12,7 @@ public class A057772 extends InverseEulerTransform {
 
   /** Construct the sequence. */
   public A057772() {
-    super(new SkipSequence(new A000016(), 1));
+    super(1, new SkipSequence(new A000016(), 1));
   }
 }
 

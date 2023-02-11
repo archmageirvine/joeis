@@ -10,7 +10,7 @@ public class A053515 extends InverseEulerTransform {
 
   /** Construct the sequence. */
   public A053515() {
-    super(new A053468(), 0);
+    super(1, new A053468(), 0);
     next();
   }
 }

@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
 
@@ -15,7 +16,7 @@ import irvine.oeis.Sequence;
  * A sequence comprising the inverse Euler transform of another sequence.
  * @author Georg Fischer
  */
-public class InverseEulerTransform implements Sequence {
+public class InverseEulerTransform extends AbstractSequence {
 
   private Sequence mSeq;
   //private final ArrayList<Z> mAs = new ArrayList<>(); // underlying sequence
@@ -30,6 +31,16 @@ public class InverseEulerTransform implements Sequence {
    * initializes the internal properties
    */
   public InverseEulerTransform() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset;
+   * initializes the internal properties
+   * @param offset first index
+   */
+  public InverseEulerTransform(final int offset) {
+    super(offset);
     mIn = 0;
     mN = 0;
     //mAs.add(Z.ZERO); // [0] is not returned
@@ -40,24 +51,43 @@ public class InverseEulerTransform implements Sequence {
 
   /**
    * Create a new sequence with no additional terms at the front.
-   *
    * @param seq main sequence
    */
   public InverseEulerTransform(final Sequence seq) {
-    this();
+    this(0, seq);
+  }
+
+  /**
+   * Create a new sequence with no additional terms at the front.
+   * @param offset first index
+   * @param seq main sequence
+   */
+  public InverseEulerTransform(final int offset, final Sequence seq) {
+    this(offset);
     mSeq = seq;
   }
 
   /**
    * Creates a new inverse Euler transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
-   *
-   * @param seq      underlying sequence
-   * @param skip     number of terms to skip in sequence
+   * @param seq underlying sequence
+   * @param skip number of terms to skip in sequence
    * @param preTerms additional terms to be prepended to the result - usually there is a leading one.
    */
   public InverseEulerTransform(final Sequence seq, final int skip, final Z... preTerms) {
-    this(seq);
+    this(0, seq, skip, preTerms);
+  }
+
+  /**
+   * Creates a new inverse Euler transform sequence of the given sequence, skipping
+   * the specified number of terms in advance.
+   * @param offset first index
+   * @param seq underlying sequence
+   * @param skip number of terms to skip in sequence
+   * @param preTerms additional terms to be prepended to the result - usually there is a leading one.
+   */
+  public InverseEulerTransform(final int offset, final Sequence seq, final int skip, final Z... preTerms) {
+    this(offset, seq);
     for (int k = 0; k < skip; ++k) {
       seq.next();
     }
@@ -67,24 +97,45 @@ public class InverseEulerTransform implements Sequence {
   /**
    * Creates a new inverse Euler transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
-   *
-   * @param seq      underlying sequence
-   * @param skip     number of terms to skip in sequence
+   * @param seq underlying sequence
+   * @param skip number of terms to skip in sequence
    * @param preTerms additional terms to be prepended to the result - usually there is a leading one.
    */
   public InverseEulerTransform(final Sequence seq, final int skip, final long... preTerms) {
-    this(seq, skip, ZUtils.toZ(preTerms));
+    this(0, seq, skip, ZUtils.toZ(preTerms));
+  }
+
+  /**
+   * Creates a new inverse Euler transform sequence of the given sequence, skipping
+   * the specified number of terms in advance.
+   * @param offset first index
+   * @param seq underlying sequence
+   * @param skip number of terms to skip in sequence
+   * @param preTerms additional terms to be prepended to the result - usually there is a leading one.
+   */
+  public InverseEulerTransform(final int offset, final Sequence seq, final int skip, final long... preTerms) {
+    this(offset, seq, skip, ZUtils.toZ(preTerms));
   }
 
   /**
    * Creates a new inverse Euler transform sequence of the given sequence, skipping
    * the specified number of terms in advance. A one is prepended.
-   *
-   * @param seq  underlying sequence
+   * @param seq underlying sequence
    * @param skip number of terms to skip in sequence
    */
   public InverseEulerTransform(final Sequence seq, final int skip) {
     this(seq, skip, Z.ONE);
+  }
+
+  /**
+   * Creates a new inverse Euler transform sequence of the given sequence, skipping
+   * the specified number of terms in advance. A one is prepended.
+   * @param offset first index
+   * @param seq underlying sequence
+   * @param skip number of terms to skip in sequence
+   */
+  public InverseEulerTransform(final int offset, final Sequence seq, final int skip) {
+    this(offset, seq, skip, Z.ONE);
   }
 
   @Override

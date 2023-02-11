@@ -11,6 +11,6 @@ public class A057007 extends InverseEulerTransform {
 
   /** Construct the sequence. */
   public A057007() {
-    super(new A160446());
+    super(1, new A160446());
   }
 }

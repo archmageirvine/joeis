@@ -14,8 +14,14 @@ import irvine.oeis.a002.A002218;
 public class A052442 extends A001349 {
 
   private final Sequence mA = new PrependSequence(new SkipSequence(new A002218(), 2), 1, 0);
+
   {
     super.next();
+  }
+
+  @Override
+  public int getOffset() {
+    return 1;
   }
 
   @Override

@@ -1,13 +1,13 @@
 package irvine.oeis.a061;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A061364 Pseudo-random numbers: a (very weak) pseudo-random number generator from the second edition of the C book.
  * @author Sean A. Irvine
  */
-public class A061364 extends Sequence1 {
+public class A061364 extends Sequence0 {
 
   private int mN = 1;
 

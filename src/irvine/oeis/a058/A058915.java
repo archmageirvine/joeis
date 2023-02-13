@@ -14,9 +14,15 @@ public class A058915 extends A001349 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final Polynomial<Z> mF = RING.empty();
+
   {
     mF.add(Z.ZERO);
     super.next();
+  }
+
+  @Override
+  public int getOffset() {
+    return 6;
   }
 
   @Override

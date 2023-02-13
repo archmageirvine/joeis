@@ -2,13 +2,13 @@ package irvine.oeis.a067;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A067050 Triangle T(n,r), n&gt;=0, r=n, n-1, ..., 1, 0; where T(n,r) = product of all possible sums of r numbers chosen from [1..n].
  * @author Sean A. Irvine
  */
-public class A067050 extends Sequence1 {
+public class A067050 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

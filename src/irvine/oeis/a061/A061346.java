@@ -12,6 +12,11 @@ public class A061346 extends A061345 {
   private Z mN = Z.NEG_ONE;
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   public Z next() {
     while (true) {
       mN = mN.add(2);

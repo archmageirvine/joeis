@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a056.A056924;
 
 /**
- * A061408.
+ * A061409 For each y &gt;= 1 there are only finitely many values of x &gt;= 1 such that x-y and x+y are both positive squares; list all such pairs (x,y) ordered by values of y; sequence gives x values.
  * @author Sean A. Irvine
  */
 public class A061409 extends A056924 {

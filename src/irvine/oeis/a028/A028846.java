@@ -1,7 +1,6 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -10,16 +9,15 @@ import irvine.oeis.Sequence1;
  */
 public class A028846 extends Sequence1 {
 
-  private long mN = 0;
+  private long mN = 3;
+  private long mLim = 8;
 
   @Override
   public Z next() {
-    while (true) {
-      final long n = ++mN;
-      final long u = ZUtils.digitProduct(n);
-      if (u != 0 && (u & (u - 1)) == 0) {
-        return Z.valueOf(mN);
-      }
+    if (++mN == mLim) {
+      mLim *= 4;
+      mN = mLim / 2;
     }
+    return new Z(Long.toString(mN, 4).substring(1).replace('3', '8').replace('2', '4').replace('1', '2').replace('0', '1'));
   }
 }

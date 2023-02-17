@@ -4,7 +4,7 @@ import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 
 /**
- * A061301.
+ * A061443 Lucas Aurifeuillian primitive part B of Lucas(n) is prime.
  * @author Sean A. Irvine
  */
 public class A061443 extends A061447 {

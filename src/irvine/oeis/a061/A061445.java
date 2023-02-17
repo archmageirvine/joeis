@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.math.z.Z;
 
 /**
- * A061301.
+ * A061445 Composite numbers n such that primitive part of Lucas(n) (see A061447) is prime.
  * @author Sean A. Irvine
  */
 public class A061445 extends A061447 {

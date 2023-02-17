@@ -3,6 +3,7 @@ package irvine.oeis;
 import java.util.function.Predicate;
 
 import irvine.math.z.Z;
+import irvine.util.string.StringUtils;
 
 /**
  * A sequence consisting of the positions of consecutive records in another sequence.
@@ -12,6 +13,7 @@ import irvine.math.z.Z;
  */
 public class FilterPositionSequence extends FilterSequence {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private long mN; // current index
 
   /**
@@ -74,6 +76,9 @@ public class FilterPositionSequence extends FilterSequence {
       ++mN;
       if (mPredicate.test(mSeq.next())) {
         return Z.valueOf(mN);
+      }
+      if (mVerbose && mN % 1000 == 0) {
+        StringUtils.message("Search completed to " + mN);
       }
     }
   }

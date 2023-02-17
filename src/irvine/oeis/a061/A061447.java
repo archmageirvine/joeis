@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061301.
+ * A061447 Primitive part of Lucas(n).
  * @author Sean A. Irvine
  */
 public class A061447 extends Sequence1 {

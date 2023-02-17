@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061301.
+ * A061448 a(1) = 2; a(n+1) = smallest prime &gt; a(n) with leading digit equal to final digit of a(n).
  * @author Sean A. Irvine
  */
 public class A061448 extends Sequence1 {

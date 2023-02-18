@@ -32,7 +32,7 @@ public class A061490 extends A003285 {
       if (is(++k, mN)) {
         return Z.valueOf(k);
       }
-      if (mVerbose && k % 1000 == 0) {
+      if (mVerbose && k % 100000 == 0) {
         StringUtils.message("n=" + mN + " search completed to " + k);
       }
     }

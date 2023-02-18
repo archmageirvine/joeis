@@ -19,8 +19,8 @@ public class A060032 extends Sequence0 {
   @Override
   public Z next() {
     final Z result = new Z(mAn);
-    mAn = mAn.replaceAll("1", "ana").replaceAll("2", "ann");
-    mAn = mAn.replaceAll("a", "1").replaceAll("n", "2");
+    mAn = mAn.replace("1", "ana").replace("2", "ann");
+    mAn = mAn.replace("a", "1").replace("n", "2");
     return result;
   }
 }

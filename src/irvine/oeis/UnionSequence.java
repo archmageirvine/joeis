@@ -49,29 +49,33 @@ public class UnionSequence extends AbstractSequence {
     this(1, a, b);
   }
 
+  private Z update(final Z t, final Sequence seq) {
+    Z u;
+    do {
+      u = seq.next();
+    } while (t.equals(u));
+    return u;
+  }
+
   @Override
   public Z next() {
     final Z t;
     if (mNextA == null) {
       t = mNextB;
-      mNextB = mSeqB.next();
+      mNextB = update(t, mSeqB);
     } else if (mNextB == null) {
       t = mNextA;
-      mNextA = mSeqA.next();
+      mNextA = update(t, mSeqA);
     } else if (mNextA.equals(mNextB)) {
       t = mNextA;
-      do {
-        mNextB = mSeqB.next();
-      } while (t.equals(mNextB));
-      do {
-        mNextA = mSeqA.next();
-      } while (t.equals(mNextA));
+      mNextA = update(t, mSeqA);
+      mNextB = update(t, mSeqB);
     } else if (mNextA.compareTo(mNextB) < 0) {
       t = mNextA;
-      mNextA = mSeqA.next();
+      mNextA = update(t, mSeqA);
     } else {
       t = mNextB;
-      mNextB = mSeqB.next();
+      mNextB = update(t, mSeqB);
     }
     return t;
   }

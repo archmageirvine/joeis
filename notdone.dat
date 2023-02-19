@@ -2109,3 +2109,6 @@ A061188 Triangle of coefficients of polynomials (rising powers) useful for convo
 A061189 Triangle of coefficients of polynomials (rising powers) useful for convolutions of A000204(n+1), n >= 0 (Lucas numbers).
 A061207 Number of subgroups of index n of the braid group on 3 strands <a,b|aba=bab>= <c,d|c^2=d^3>, the fundamental group of the complement of a trefoil knot.
 A061342 Period of the stationary component of the pattern which a row of n cells becomes in Conway's Game of Life.
+A061491 a(1) = 1, a(n) = least number such that the concatenation a(n)a(n-1)...a(1) is a cube
+A061492 a(1) = 8, a(n) = least number such that the concatenation a(n)a(n-1)...a(1) is a cube
+A061494 Relative class number h- of cyclotomic field Q(zeta_n) where n runs through positive integers not congruent to 2 (mod 4) [A042965, but omitting the initial 0].

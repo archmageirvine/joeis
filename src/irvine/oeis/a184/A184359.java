@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A184359 Recurrence: Sum_{n&gt;=0} a(n-k)*a(k) = (n+1)!^2/2^n.
+ * A184359  Recurrence: Sum_{n&gt;=0} a(n-k)*a(k) = (n+1)!^2/2^n.
  * @author Georg Fischer
  */
 public class A184359 extends RootSequence {

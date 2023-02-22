@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061584.
+ * A061535 a(n) = a(n-1) + the number of primes &lt;= a(n-1).
  * @author Sean A. Irvine
  */
 public class A061535 extends Sequence1 {

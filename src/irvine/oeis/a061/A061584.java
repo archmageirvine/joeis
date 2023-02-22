@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061584.
+ * A061584 a(1) = 1, a(n)= number obtained by replacing each digit of a(n-1) with six times its value.
  * @author Sean A. Irvine
  */
 public class A061584 extends Sequence1 {

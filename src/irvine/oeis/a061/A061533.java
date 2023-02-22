@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.math.z.Z;
 
 /**
- * A061584.
+ * A061533 Limiting sequence of digits in A061584, starting with least significant digit.
  * @author Sean A. Irvine
  */
 public class A061533 extends A061584 {

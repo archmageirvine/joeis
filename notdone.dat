@@ -2112,3 +2112,4 @@ A061342 Period of the stationary component of the pattern which a row of n cells
 A061491 a(1) = 1, a(n) = least number such that the concatenation a(n)a(n-1)...a(1) is a cube
 A061492 a(1) = 8, a(n) = least number such that the concatenation a(n)a(n-1)...a(1) is a cube
 A061494 Relative class number h- of cyclotomic field Q(zeta_n) where n runs through positive integers not congruent to 2 (mod 4) [A042965, but omitting the initial 0].
+A061530 Number of complete "rational" games of n X n tic-tac-toe: for n > 2 these are games that are a theoretical draw after each move.

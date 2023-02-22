@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001864;
 
 /**
- * A061538.
+ * A061540 Number of connected labeled graphs with n nodes and n+1 edges.
  * @author Sean A. Irvine
  */
 public class A061540 extends A001864 {

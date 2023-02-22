@@ -1,21 +1,19 @@
-package irvine.oeis.a048;
+package irvine.oeis.a061;
 
+import java.util.Map;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A048200 Minimal length pair-exchange / set-rotate sequence to reverse n distinct ordered elements.
+ * A061545 Minimal XR-sequences of A048200(n).
  * @author Sean A. Irvine
  */
-public class A048200 extends Sequence1 {
+public class A061545 extends Sequence1 {
 
-  // Brute force, breadth first search.
-  // We represent states as a long, using 4-bits per element.
-  // This means we can run out to n=16 (in theory).
-  // Do a breadth first search looking for the target.
-  // An exchange should not be followed by an exchange.
+  // Cf. A084200.
 
   private static final int BITS_PER_ELEMENT = 4;
   private static final long MASK1 = (1L << BITS_PER_ELEMENT) - 1;
@@ -48,35 +46,37 @@ public class A048200 extends Sequence1 {
     if (start == target) {
       return Z.ZERO;
     }
-    //System.out.println(Long.toHexString(start) + " :: " + Long.toHexString(target));
     final TreeSet<Long> seen = new TreeSet<>();
-    TreeSet<Long> current = new TreeSet<>();
-    TreeSet<Long> next = new TreeSet<>();
-    current.add(start);
+    TreeMap<Long, Long> current = new TreeMap<>();
+    TreeMap<Long, Long> next = new TreeMap<>();
+    current.put(start, 1L);
     seen.add(start);
-    int steps = 0;
+    long solutions = 0;
     while (true) {
-      ++steps;
-      for (final long s : current) {
+      if (solutions > 0) {
+        return Z.valueOf(solutions);
+      }
+      for (final Map.Entry<Long, Long> e : current.entrySet()) {
+        final long s = e.getKey();
+        final long v = e.getValue();
         final long r = rotate(s);
-        //System.out.println(Long.toHexString(s) + " -> " + Long.toHexString(r));
         if (r == target) {
-          return Z.valueOf(steps);
+          solutions += v;
         }
-        if (seen.add(r)) {
-          next.add(r);
+        if (!seen.contains(r)) {
+          next.merge(r, v, Long::sum);
         }
         final long x = exchange(s);
-        //System.out.println(Long.toHexString(s) + " <> " + Long.toHexString(x));
         if (x == target) {
-          return Z.valueOf(steps);
+          solutions += v;
         }
-        if (seen.add(x)) {
-          next.add(x);
+        if (!seen.contains(x)) {
+          next.merge(x, v, Long::sum);
         }
       }
       current = next;
-      next = new TreeSet<>();
+      seen.addAll(next.keySet());
+      next = new TreeMap<>();
     }
   }
 }

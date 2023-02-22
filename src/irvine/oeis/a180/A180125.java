@@ -7,7 +7,7 @@ import irvine.oeis.a035.A035263;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A180125 Self-convolution of period-doubling sequence A035263
+ * A180125 Self-convolution of period-doubling sequence A035263.
  * @author Georg Fischer
  */
 public class A180125 extends RootSequence {

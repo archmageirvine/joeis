@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005810;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A208977 Self-convolution square-root of A005810, where A005810(n) = binomial(4*n,n).
+ * A208977  Self-convolution square-root of A005810, where A005810(n) = binomial(4*n,n).
  * @author Georg Fischer
  */
 public class A208977 extends RootSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061538.
+ * A061539 Number of signed permutations in B_n which correspond to smooth Schubert varieties. These permutations avoid the following patterns: (-2 -1) (1 2 -3) (1 -2 -3) (-1 2 -3) (2 -1 -3) (-2 1 -3) (3 -2 1) (2 -4 3 1) (-2 -4 3 1) (3412) (3 4 -1 2) (-3 4 1 2) (4 1 3 -2) (4 -1 3 -2) (4 2 3 1) (4 2 3 -1) (-4 2 3 1).
  * @author Sean A. Irvine
  */
 public class A061539 extends Sequence0 {

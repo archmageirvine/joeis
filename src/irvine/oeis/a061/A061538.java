@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a048.A048105;
 
 /**
- * A061538.
+ * A061538 Product of all divisors of n, divided by product of unitary divisors; or equivalently product of non-unitary divisors of n.
  * @author Sean A. Irvine
  */
 public class A061538 extends Sequence1 {

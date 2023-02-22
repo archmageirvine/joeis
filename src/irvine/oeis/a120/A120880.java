@@ -6,7 +6,7 @@ import irvine.oeis.a039.A039966;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A120880 G.f. satisfies: A(x) = A(x^3)*(1 + 2*x + x^2); thus a(n) = 2^A062756(n), where A062756(n) is the number of 1&apos;s in the ternary expansion of n.
+ * A120880 G.f. satisfies: A(x) = A(x^3)*(1 + 2*x + x^2); thus a(n) = 2^A062756(n), where A062756(n) is the number of 1's in the ternary expansion of n.
  * @author Georg Fischer
  */
 public class A120880 extends RootSequence {

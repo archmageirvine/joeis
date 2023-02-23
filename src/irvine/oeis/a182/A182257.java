@@ -1,17 +1,18 @@
 package irvine.oeis.a182;
+// manually egypfr at 2023-02-23 11:27
 
+import irvine.math.cr.CR;
+import irvine.oeis.EgyptianFractionSequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.a001.A001466;
 
 /**
  * A182257 Denominators of Egyptian fraction expansion of Pi.
- * In contrast to A001466, there are 3 additional ones.
  * @author Georg Fischer
  */
-  public class A182257 extends PrependSequence {
+public class A182257 extends PrependSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A182257() {
-    super(new A001466(), 1, 1, 1);
+    super(1, new EgyptianFractionSequence(CR.PI), 1, 1, 1);
   }
 }

@@ -1,8 +1,6 @@
 package irvine.oeis.transform;
 
 import irvine.math.q.Q;
-import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
 import irvine.oeis.ConstantFactorSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
@@ -11,9 +9,7 @@ import irvine.oeis.SkipSequence;
  * Take the square root (or some other fractional exponent) of another sequence by using Euler and inverse Euler transform.
  * @author Georg Fischer
  */
-public class RootSequence extends AbstractSequence {
-
-  private final EulerTransform mET;
+public class RootSequence extends EulerTransform {
 
   /**
    * Construct the sequence.
@@ -22,8 +18,7 @@ public class RootSequence extends AbstractSequence {
    * @param exponent take the sequence to this power
    */
   public RootSequence(final int offset, final Sequence seq, final Q exponent) {
-    super(offset);
-    mET = new EulerTransform(offset, new ConstantFactorSequence(new InverseEulerTransform(seq), exponent), 1);
+    super(offset, new ConstantFactorSequence(new InverseEulerTransform(seq), exponent), 1);
   }
 
   /**
@@ -36,18 +31,13 @@ public class RootSequence extends AbstractSequence {
     this(offset, seq, new Q(num, den));
   }
 
-  @Override
-  public Z next() {
-    return mET.next();
-  }
-
   /**
    * Main method: compute some convolution power of a sequence
    * @param args command line arguments:
    * <ul>
    * <li>-a A-number</li>
-   * <li>-f multiply all terms by this factor (default 1")</li>
-   * <li>-n number of terms (default 32")</li>
+   * <li>-f multiply all terms by this factor (default 1)</li>
+   * <li>-n number of terms (default 32)</li>
    * <li>-o offset, first index (default 0) </li>
    * <li>-q power, maybe a fraction (default "1/2")</li>
    * <li>-s skip this number of terms in the underlying sequence (default 1)</li>
@@ -69,7 +59,7 @@ public class RootSequence extends AbstractSequence {
         if (opt.equals("-d")) {
           debug = Integer.parseInt(args[iarg++]);
         } else if (opt.equals("-a")) {
-          aSeqNo = args[iarg++]; // remove whitespace
+          aSeqNo = args[iarg++];
           mSeq = (Sequence) Class.forName("irvine.oeis.a" + aSeqNo.substring(1, 4) + '.' + aSeqNo)
             .getDeclaredConstructor().newInstance();
         } else if (opt.equals("-f")) {
@@ -91,7 +81,7 @@ public class RootSequence extends AbstractSequence {
           System.err.println("??? invalid option: \"" + opt + "\"");
         }
       } catch (final Exception exc) { // take default
-        System.err.println("wrong option: " + args[iarg - 1] + ", mesage: " + exc.getMessage());
+        System.err.println("wrong option: " + args[iarg - 1] + ", message: " + exc.getMessage());
       }
     } // while args
 

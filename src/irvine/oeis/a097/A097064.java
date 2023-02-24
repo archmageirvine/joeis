@@ -4,7 +4,7 @@ package irvine.oeis.a097;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A097064 Expansion of (1-4x+6x^2)/(1-2x)^2.
+ * A097064 Expansion of (1 - 4*x + 6*x^2)/(1 - 2*x)^2.
  * @author Georg Fischer
  */
 public class A097064 extends GeneratingFunctionSequence {

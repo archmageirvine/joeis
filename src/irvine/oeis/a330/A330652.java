@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A330652 Decimal expansion of (phi^phi - 1/phi)/2.
+ * A330652 Decimal expansion of (phi^phi - 1/phi)/2, where phi = (1 + sqrt(5))/2 = A001622.
  * Formula: (phi^phi-1/phi)/2
  * @author Georg Fischer
  */

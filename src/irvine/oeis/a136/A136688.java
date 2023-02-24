@@ -4,7 +4,7 @@ package irvine.oeis.a136;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A136688 Triangular sequence of q-Fibonacci polynomials for s=2: F(x,n) = x*F(x,n-1) + s*F(x,n-2).
+ * A136688 Triangle of polynomials F(x,n) = x*F(x,n-1) + 2*F(x,n-2).
  * @author Georg Fischer
  */
 public class A136688 extends GeneratingFunctionTriangle {

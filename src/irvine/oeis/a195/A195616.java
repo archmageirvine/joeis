@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A195616 Denominators a(n) of Pythagorean approximations b(n)/a(n) to 3.
+ * A195616 Denominators of Pythagorean approximations to 3.
  * @author Sean A. Irvine
  */
 public class A195616 extends LinearRecurrence {

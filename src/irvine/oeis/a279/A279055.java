@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001044;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A279055 Convolution of squares of factorial numbers (A000142).
+ * A279055 Self-convolution of squares of factorial numbers (A001044).
  * @author Georg Fischer
  */
 public class A279055 extends RootSequence {

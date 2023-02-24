@@ -5,7 +5,7 @@ import irvine.oeis.a003.A003285;
 import irvine.util.string.StringUtils;
 
 /**
- * A061490 Smallest number which when iterated n times under A003285(n) gives a square.
+ * A061490 Smallest number which when iterated n times under A003285 gives a square.
  * @author Sean A. Irvine
  */
 public class A061490 extends A003285 {

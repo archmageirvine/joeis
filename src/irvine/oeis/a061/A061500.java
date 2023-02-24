@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
 /**
- * A061500 Integer part of arithmetic mean of distinct numbers that can be formed from the nonzero digits of n.
+ * A061500 Integer part of arithmetic mean of distinct nonzero numbers that can be formed from the digits of n.
  * @author Sean A. Irvine
  */
 public class A061500 extends A061497 {

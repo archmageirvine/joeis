@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A061552.
+ * A061555 Integer part of sigma(n!)/n!.
  * @author Sean A. Irvine
  */
 public class A061555 extends A000142 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A086714 a(1)=4, a(n)=a(n-1)*(a(n-1)-1)/2.
+ * A086714 a(1) = 4, a(n) = a(n-1)*(a(n-1) - 1)/2.
  * <code>a(n)=(a(n-1)*(a(n-1)-1))/2</code>
  * @author Georg Fischer
  */

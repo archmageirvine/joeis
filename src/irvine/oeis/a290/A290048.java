@@ -6,7 +6,7 @@ import irvine.oeis.a013.A013973;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A290048 Coefficients in expansion of E_6*Delta^2 where Delta is the generating function of Ramanujan&apos;s tau function (A000594).
+ * A290048 Coefficients in expansion of E_6*Delta^2 where Delta is the generating function of Ramanujan's tau function (A000594).
  * @author Georg Fischer
  */
 public class A290048 extends ConvolutionProduct {

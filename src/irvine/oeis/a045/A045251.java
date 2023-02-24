@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A045251 Numbers n with property that in base 5 representation the numbers of 1's and 4's are 1 and 0, respectively.
+ * A045251 Numbers whose base-5 representation contains exactly one 1 and no 4's.
  * @author Georg Fischer
  */
 public class A045251 extends RunsBaseSequence {

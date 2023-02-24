@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A166151 (5n^2 + 5n - 6)/2.
+ * A166151 a(n) = (5*n^2 + 5*n - 6)/2.
  * @author Sean A. Irvine
  */
 public class A166151 extends LinearRecurrence {

@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A061497 Product of all distinct numbers formed that can be formed from the nonzero digits of n.
+ * A061497 Product of all distinct nonzero numbers that can be formed from the digits of n.
  * @author Sean A. Irvine
  */
 public class A061497 extends Sequence1 {

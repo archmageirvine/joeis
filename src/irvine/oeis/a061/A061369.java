@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061369 a(n) = smallest square in the arithmetic progression {nk+1 : k &gt;= 0}.
+ * A061369 a(n) = smallest square in the arithmetic progression {nk+1 : k &gt; 0}.
  * @author Sean A. Irvine
  */
 public class A061369 extends Sequence1 {

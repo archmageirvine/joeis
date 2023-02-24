@@ -4,7 +4,7 @@ package irvine.oeis.a078;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A078819 140*C(2n,n)/(n+4).
+ * A078819 a(n) = 140*C(2n,n)/(n+4).
  * 140*binomial(2*n,n)/(n+4)
  * @author Georg Fischer
  */

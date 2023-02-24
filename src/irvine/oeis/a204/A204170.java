@@ -5,7 +5,7 @@ import irvine.oeis.a203.A203991;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A204170 Array:  row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of (i*j), as in A003991.
+ * A204170 Array read by rows:  row n lists the coefficients of the characteristic polynomial of the n-th principal submatrix of (i*j), as in A003991.
  * @author Georg Fischer
  */
 public class A204170 extends A203991 {

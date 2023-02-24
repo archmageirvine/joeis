@@ -5,7 +5,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a053.A053850;
 
 /**
- * A353569 a(n) = 1 if n is an odd number divisible by a square, otherwise 0.
+ * A353569 a(n) = 1 if n is an odd number divisible by a square &gt; 1, otherwise 0.
  * @author Georg Fischer
  */
 public class A353569 extends CharacteristicFunction {

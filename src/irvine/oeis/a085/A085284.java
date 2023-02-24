@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A085284 C(n+3,3)n^3/4.
+ * A085284 a(n) = C(n+3,3)*n^3/4.
  * @author Sean A. Irvine
  */
 public class A085284 extends LinearRecurrence {

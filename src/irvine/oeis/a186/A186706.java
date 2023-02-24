@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A186706 Decimal expansion of the Integral of Dedekind Eta(x*I) from x = 0 ... Infinity.
+ * A186706 Decimal expansion of the Integral of Dedekind Eta(x*I) from x = 0..infinity.
  * Formula: Pi/sqrt(75)
  * @author Georg Fischer
  */

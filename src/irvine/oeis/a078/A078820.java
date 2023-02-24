@@ -4,7 +4,7 @@ package irvine.oeis.a078;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A078820 20*C(2n,n)*(2n+1)/(n+4).
+ * A078820 a(n) = 20*C(2n,n)*(2n+1)/(n+4).
  * 20*binomial(2*n,n)*(2*n+1)/(n+4)
  * @author Georg Fischer
  */

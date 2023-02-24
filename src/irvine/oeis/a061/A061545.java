@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061545 Minimal XR-sequences of A048200(n).
+ * A061545 Number of pair-exchange / set-rotate sequences achieving the minimum length of A048200(n).
  * @author Sean A. Irvine
  */
 public class A061545 extends Sequence1 {

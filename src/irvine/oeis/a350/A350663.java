@@ -4,7 +4,7 @@ package irvine.oeis.a350;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A350663 Numerators of Conway&apos;s POLYGAME.
+ * A350663 Numerators of Conway's POLYGAME.
  * @author Georg Fischer
  */
 

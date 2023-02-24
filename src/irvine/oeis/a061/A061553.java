@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061552.
+ * A061553 Sum of absolute values of coefficients of expansion of (1-x)(1-x^2)(1-x^3)...(1-x^n).
  * @author Sean A. Irvine
  */
 public class A061553 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
 /**
- * A061499 Integer part of geometric mean of distinct numbers that can be formed from the nonzero digits of n.
+ * A061499 Integer part of geometric mean of the distinct nonzero numbers that can be formed from the digits of n.
  * @author Sean A. Irvine
  */
 public class A061499 extends A061497 {

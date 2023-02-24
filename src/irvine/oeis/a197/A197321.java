@@ -4,7 +4,7 @@ package irvine.oeis.a197;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A197321 Binomial(n+10, 10)*8^n.
+ * A197321 a(n) = binomial(n+10, 10)*8^n.
  * @author Georg Fischer
  */
 public class A197321 extends GeneratingFunctionSequence {

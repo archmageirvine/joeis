@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001223;
 
 /**
- * A359354 allocated for Andres Cicuttin.
+ * A359354 Position of the first subsequence of n primes that differs from the first n primes, but where the relative distances among their elements coincide with those of the subsequence of first n primes except for a scale factor.
  * @author Sean A. Irvine
  */
 public class A359354 extends A001223 {

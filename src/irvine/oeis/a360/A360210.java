@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a068.A068869;
 
 /**
- * A360210 allocated for Alexander R. Povolotsky.
+ * A360210 Indices of squares in A068869.
  * @author Sean A. Irvine
  */
 public class A360210 extends FilterPositionSequence {

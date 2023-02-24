@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000273 Number of directed graphs (or digraphs) with n nodes.
+ * A000273 Number of unlabeled simple digraphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A000273 implements Sequence {

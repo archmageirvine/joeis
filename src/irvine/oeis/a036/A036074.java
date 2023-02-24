@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A036074 E.g.f.: exp((exp(p*x) - p - 1)/p + exp(x)) for p=4.
+ * A036074 Expansion of e.g.f. exp((exp(p*x) - p - 1)/p + exp(x)) for p=4.
  * @author Sean A. Irvine
  */
 public class A036074 extends Sequence0 {

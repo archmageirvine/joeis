@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001513 a(n) = (6n+1)*(6n+5).
+ * A001513 a(n) = (6*n+1)*(6*n+5).
  * @author Sean A. Irvine
  */
 public class A001513 extends Sequence0 {

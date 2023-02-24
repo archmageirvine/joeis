@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A165508 Numbers n such that 10^n + 111 is prime.
+ * A165508 Numbers k such that 10^k + 111 is prime.
  * @author Georg Fischer
  */
 public class A165508 extends PrimePositionSubsequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061552.
+ * A061552 Number of 1324-avoiding permutations of length n.
  * @author Sean A. Irvine
  */
 public class A061552 extends Sequence0 {

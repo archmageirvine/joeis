@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A045939 Numbers n such that factorizations of n through n+2 have the same number of primes (including multiplicities).
+ * A045939 Numbers m such that the factorizations of m..m+2 have the same number of primes (including multiplicities).
  * @author Sean A. Irvine
  */
 public class A045939 extends Sequence1 {

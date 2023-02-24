@@ -5,7 +5,7 @@ import irvine.oeis.Sequence2;
 
 
 /**
- * A002698 Coefficients of Chebyshev polynomials: n(2n-3)2^(2n-5).
+ * A002698 Coefficients of Chebyshev polynomials: n*(2*n-3)*2^(2*n-5).
  * @author Sean A. Irvine
  */
 public class A002698 extends Sequence2 {

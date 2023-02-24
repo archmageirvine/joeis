@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060905 E.g.f.: exp(x*exp(x) + 1/2*x^2*exp(x)^2).
+ * A060905 Expansion of e.g.f. exp(x*exp(x) + 1/2*x^2*exp(x)^2).
  * E.g.f.: exp(x*exp(x)+1/2*x^2*exp(x)^2)
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 
 
 /**
- * A065710 Number of 2's in decimal expansion of 2^n.
+ * A065710 Number of 2's in the decimal expansion of 2^n.
  * @author Georg Fischer
  */
 public class A065710 extends Sequence0 {

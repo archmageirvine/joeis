@@ -90,7 +90,7 @@ public class ConvolutionProduct extends EulerTransform {
     for (int is = 0; is < seqLen; ++is) {
       String seqNo = seqNos[is];
       final int dashPos = seqNo.indexOf('-');
-      Sequence seq;
+      final Sequence seq;
       try {
         if (dashPos < 0) {
           seq = (Sequence) Class.forName("irvine.oeis.a" + seqNo.substring(1, 4) + '.' + seqNo)

@@ -34,7 +34,7 @@ public class A036275 extends A051626 {
       n = n.subtract(b[k]);
     }
     // Skip over any preperiod
-    while (!Arrays.equals(a, b)) {
+    while (!Arrays.equals(a, b) || a[0] == 0) {
       System.arraycopy(a, 1, a, 0, a.length - 1);
       a[a.length - 1] = b[0];
       System.arraycopy(b, 1, b, 0, b.length - 1);

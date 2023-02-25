@@ -19,7 +19,7 @@ public class SumOfLikePowersSequence extends AbstractSequence {
   // possible terms involving mM^p and add them into the set mA.
   // Depending on parameters we might sometimes compute beforehand more
   // terms than strictly necessary.
-  // Finally we return (and remove) the first element from mA.
+  // Finally, we return (and remove) the first element from mA.
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final ArrayList<Z> mPowers = new ArrayList<>(); // for efficiency, caching powers

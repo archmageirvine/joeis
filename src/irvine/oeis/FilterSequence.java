@@ -17,6 +17,8 @@ public class FilterSequence extends AbstractSequence {
   public static final Predicate<Z> EVEN = Z::isEven;
   /** Prime terms. */
   public static final Predicate<Z> PRIME = Z::isProbablePrime;
+  /** Nonprime terms. */
+  public static final Predicate<Z> NONPRIME = k -> !k.isProbablePrime();
   /** Zero terms. */
   public static final Predicate<Z> ZERO = Z::isZero;
   /** Nonzero terms. */

@@ -498,4 +498,34 @@ public final class IntegerUtils {
     }
     return cnt;
   }
+
+  /**
+   * Increment an array of values up to a maximum value.
+   * @param a array
+   * @param min minimum value
+   * @param max maximum value
+   * @return true if incrementing was successful
+   */
+  public static boolean bump(final int[] a, final int min, final int max) {
+    for (int k = a.length - 1; k >= 0; --k) {
+      if (++a[k] <= max) {
+        return true;
+      }
+      a[k] = min;
+    }
+    return false;
+  }
+
+  /**
+   * Compute the greatest common divisor of an array of values.
+   * @param a list of values
+   * @return greatest common divisor
+   */
+  public static int gcd(final int... a) {
+    int g = a[0];
+    for (int k = 1; k < a.length; ++k) {
+      g = gcd(g, a[k]);
+    }
+    return g;
+  }
 }

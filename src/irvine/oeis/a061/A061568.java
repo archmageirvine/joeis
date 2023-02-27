@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007504;
 
 /**
- * A060284.
+ * A061568 Number of primes &lt;= sum of first n primes.
  * @author Sean A. Irvine
  */
 public class A061568 extends A007504 {

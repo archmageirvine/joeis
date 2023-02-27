@@ -32,7 +32,7 @@ public class A051037 extends Sequence1 {
   @Override
   public Z next() {
     final Z r = mPriority.pollFirst();
-    for (int i : mPrimes) {
+    for (final int i : mPrimes) {
       mPriority.add(r.multiply(i));
     }
     return r;

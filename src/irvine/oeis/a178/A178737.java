@@ -6,7 +6,7 @@ import irvine.oeis.a010.A010816;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A178737 Coefficients in expansion of Jacobi theta_1&apos;&apos;&apos;(0).
+ * A178737 Coefficients in expansion of Jacobi theta_1'''(0).
  * @author Georg Fischer
  */
 public class A178737 extends ConvolutionProduct {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060284.
+ * A061565 Floor( product_{k = 1..n} k^(1/k) ).
  * @author Sean A. Irvine
  */
 public class A061565 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060284.
+ * A061575 Number of planar planted trees with n non-root nodes and without isolated 2-valent nodes.
  * @author Sean A. Irvine
  */
 public class A061575 extends Sequence0 {

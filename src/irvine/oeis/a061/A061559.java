@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061559.
+ * A061559 Array read by antidiagonals: T(k,d) = number of different hyperplanes in d-space with integer coefficients in set {-k,...,-1,0,1,...,k}.
  * @author Sean A. Irvine
  */
 public class A061559 extends Sequence1 {

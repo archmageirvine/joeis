@@ -5,7 +5,7 @@ import irvine.oeis.a010.A010054;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A281490 Expansion of f(x, x^3) * f(x, x^8) in powers of x where f(, ) is Ramanujan&apos;s general theta function.
+ * A281490 Expansion of f(x, x^3) * f(x, x^8) in powers of x where f(, ) is Ramanujan's general theta function.
  * @author Georg Fischer
  */
 public class A281490 extends ConvolutionProduct {

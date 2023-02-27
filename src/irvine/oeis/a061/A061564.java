@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a036.A036275;
 
 /**
- * A060284.
+ * A061564 Numbers k such that the repeating part of the decimal expansion of 1/k (omitting leading or trailing zeros) forms a prime number.
  * @author Sean A. Irvine
  */
 public class A061564 extends A036275 {

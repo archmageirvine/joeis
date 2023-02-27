@@ -8,7 +8,7 @@ import irvine.oeis.a046.A046746;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A117586 Coefficients of q in series expansion of Zagier&apos;s identity.
+ * A117586 Coefficients of q in series expansion of Zagier's identity.
  * @author Georg Fischer
  */
 public class A117586 extends ConvolutionProduct {

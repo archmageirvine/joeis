@@ -2113,3 +2113,38 @@ A061491 a(1) = 1, a(n) = least number such that the concatenation a(n)a(n-1)...a
 A061492 a(1) = 8, a(n) = least number such that the concatenation a(n)a(n-1)...a(1) is a cube
 A061494 Relative class number h- of cyclotomic field Q(zeta_n) where n runs through positive integers not congruent to 2 (mod 4) [A042965, but omitting the initial 0].
 A061530 Number of complete "rational" games of n X n tic-tac-toe: for n > 2 these are games that are a theoretical draw after each move.
+A061605 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061606 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061607 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061608 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061609 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061610 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061611 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061612 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061613 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061614 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061615 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061616 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061617 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061618 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061619 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061620 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061621 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061622 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061623 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061624 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061625 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061626 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061627 Disk domain wall degeneracies for brane I in the O(K) -> P^1 X P^1 geometry
+A061628 Disk degeneracies for brane I or brane II in the O(K) -> P^2 geometry
+A061629 Disk degeneracies for brane I or brane II in the O(K) -> P^2 geometry
+A061630 Disk degeneracies for brane I or brane II in the O(K) -> P^2 geometry
+A061631 Disk degeneracies for brane I or brane II in the O(K) -> P^2 geometry
+A061632 Disk degeneracies for brane I or brane II in the O(K) -> P^2 geometry
+A061633 Disk degeneracies for brane I or brane II in the O(K) -> P^2 geometry
+A061634 Disk degeneracies for brane I or brane II in the O(K) -> P^2 geometry
+A061635 Disk degeneracies for brane I or brane II in the O(K) -> P^2 geometry
+A061636 Disk degeneracies for brane I or brane II in the O(K) -> P^2 geometry
+A061637 Disk degeneracies for brane I or brane II in the O(K) -> P^2 geometry
+A061642 Decimal expansion of Hardy-Littlewood constant for prime quadruples.
+A061653 Relative class number h- of cyclotomic field Q(zeta_n)

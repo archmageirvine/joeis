@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a003.A003172;
 
 /**
- * A060284.
+ * A061574 Simple quadratic fields (i.e., with a unique prime factorization).
  * @author Sean A. Irvine
  */
 public class A061574 extends PrependSequence {

@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A061670.
+ * A061672 Smallest positive number formed by a set of digits whose product = sum of the digits.
  * @author Sean A. Irvine
  */
 public class A061672 extends Sequence1 {

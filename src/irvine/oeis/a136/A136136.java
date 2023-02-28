@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A136137 a(n+1)=sopfr(3a(n)+1), with sopfr=A001414. Finishes with 17 (fixed point).
+ * A136136 a(n+1)=sopfr(2a(n)+1), with sopfr=A001414. Finishes with 10 (fixed point).
  * @author Georg Fischer
  */
 public class A136136 extends Sequence1 {

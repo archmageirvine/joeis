@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061670.
+ * A360661 allocated for Ilya Gutkovskiy.
  * @author Sean A. Irvine
  */
 public class A360661 extends Sequence1 {

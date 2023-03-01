@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A152037 Convolution of A007318 (Pascal's sequence) with itself .
+ * A152037 Convolution of A007318 (Pascal&apos;s sequence) with itself .
  * @author Georg Fischer
  */
 public class A152037 extends RootSequence {

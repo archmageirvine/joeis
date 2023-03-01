@@ -4,7 +4,7 @@ package irvine.oeis.a357;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A357748 Numbers in the lyrics of the Rolling Stones song "2000 Light Years From Home" in the order in which they appear.
+ * A357748 Numbers in the lyrics of the Rolling Stones song &quot;2000 Light Years From Home&quot; in the order in which they appear.
  * @author Georg Fischer
  */
 

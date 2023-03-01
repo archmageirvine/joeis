@@ -4,7 +4,7 @@ package irvine.oeis.a358;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A358445 Euler's 4 X 4 magic square of squares.
+ * A358445 Euler&apos;s 4 X 4 magic square of squares.
  * @author Georg Fischer
  */
 

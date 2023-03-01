@@ -4,7 +4,7 @@ package irvine.oeis.a348;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A348269 A 5 X 5 pandiagonal magic square read by rows: the entries have digits which are only 0's and 1's and form a magic square in any base b &gt;= 2.
+ * A348269 A 5 X 5 pandiagonal magic square read by rows: the entries have digits which are only 0&apos;s and 1&apos;s and form a magic square in any base b &gt;= 2.
  * @author Georg Fischer
  */
 

@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A112222 Coefficients of replicable function number "126a".
+ * A112222 Coefficients of replicable function number &quot;126a&quot;.
  * @author Georg Fischer
  */
 public class A112222 extends RootSequence {

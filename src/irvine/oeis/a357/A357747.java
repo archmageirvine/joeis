@@ -4,7 +4,7 @@ package irvine.oeis.a357;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A357747 Distances in the lyrics of the Rolling Stones song "2000 Light Years From Home".
+ * A357747 Distances in the lyrics of the Rolling Stones song &quot;2000 Light Years From Home&quot;.
  * @author Georg Fischer
  */
 

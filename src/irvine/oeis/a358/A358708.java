@@ -4,7 +4,7 @@ package irvine.oeis.a358;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A358708 Starting from 1, successively take the smallest "Choix de Bruxelles" (A323286) which is not already in the sequence.
+ * A358708 Starting from 1, successively take the smallest &quot;Choix de Bruxelles&quot; (A323286) which is not already in the sequence.
  * @author Georg Fischer
  */
 

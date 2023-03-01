@@ -4,7 +4,7 @@ package irvine.oeis.a351;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A351831 Vector in the 26-dimensional even Lorentzian unimodular lattice II_25,1 used to construct the Leech lattice.
+ * A351831 Vector in the 26-dimensional even Lorentzian unimodular lattice II_25, 1 used to construct the Leech lattice.
  * @author Georg Fischer
  */
 

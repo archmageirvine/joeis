@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A244560 Expansion of f(-x^1, -x^7)^2 in powers of x where f() is Ramanujan's two-variable theta function.
+ * A244560 Expansion of f(-x^1, -x^7)^2 in powers of x where f() is Ramanujan&apos;s two-variable theta function.
  * @author Georg Fischer
  */
 public class A244560 extends RootSequence {

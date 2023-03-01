@@ -4,7 +4,7 @@ package irvine.oeis.a350;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A350555 Numerators of Conway's PIGAME.
+ * A350555 Numerators of Conway&apos;s PIGAME.
  * @author Georg Fischer
  */
 

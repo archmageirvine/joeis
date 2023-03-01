@@ -4,7 +4,7 @@ package irvine.oeis.a347;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A347933 Positive integers that can't be written in the form a+b+c for some positive integers a, b, and c satisfying gcd(a,b)=1, gcd(a,c)&gt;1, and gcd(b,c)&gt;1.
+ * A347933 Positive integers that can&apos;t be written in the form a+b+c for some positive integers a, b, and c satisfying gcd(a,b)=1, gcd(a,c)&gt;1, and gcd(b,c)&gt;1.
  * @author Georg Fischer
  */
 

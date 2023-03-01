@@ -10,10 +10,8 @@ import irvine.oeis.Sequence1;
  */
 public class A136136 extends Sequence1 {
 
-  private long mN;
-  private int mC;
+  private final int mC;
   private Z mA;
-  private boolean mFini;
 
   /** Construct the sequence. */
   public A136136() {
@@ -25,20 +23,16 @@ public class A136136 extends Sequence1 {
    * @param c constant factor for previous term
    */
   public A136136(final int c) {
-    mN = 0;
     mC = c;
     mA = Z.ONE;
-    mFini = false;
   }
 
   @Override
   public Z next() {
-    ++mN;
-    Z result = mA;
+    final Z result = mA;
     if (mA != null) {
       mA = Jaguar.factor(mA.multiply(mC).add(1)).sopfr();
       if (mA.equals(result)) {
-        mFini = true;
         mA = null;
       }
     }

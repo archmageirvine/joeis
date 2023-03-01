@@ -4,7 +4,7 @@ package irvine.oeis.a359;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A359383 Allan W. Johnson, Jr.'s 4 X 4 magic square of squares.
+ * A359383 Allan W. Johnson, Jr.&apos;s 4 X 4 magic square of squares.
  * @author Georg Fischer
  */
 

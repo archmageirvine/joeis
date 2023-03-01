@@ -1,6 +1,7 @@
 package irvine.oeis.a020;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -11,15 +12,6 @@ import irvine.oeis.Sequence1;
 public class A020342 extends Sequence1 {
 
   private Z mN = Z.valueOf(125);
-
-  private boolean isZero(final int... s) {
-    for (final int v : s) {
-      if (v != 0) {
-        return false;
-      }
-    }
-    return true;
-  }
 
   private boolean isOk(final int[] s, Z v) {
     boolean ok = true;
@@ -41,7 +33,7 @@ public class A020342 extends Sequence1 {
 
   private boolean isVampire(final Z n, final Z[] div, final int pos, final int[] syndrome) {
     if (Z.ONE.equals(n)) {
-      return isZero(syndrome);
+      return IntegerUtils.isZero(syndrome);
     }
     for (int k = pos; k < div.length; ++k) {
       final Z[] qr = n.divideAndRemainder(div[k]);

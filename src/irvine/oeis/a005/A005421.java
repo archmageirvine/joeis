@@ -14,7 +14,7 @@ import irvine.oeis.Sequence1;
  */
 public class A005421 extends Sequence1 {
 
-  private HashSet<Z> mSeen = new HashSet<>();
+  private final HashSet<Z> mSeen = new HashSet<>();
   private final ArrayList<Set<Z>> mByComplexity = new ArrayList<>();
   private int mN = 1;
 

@@ -1,8 +1,10 @@
 package irvine.oeis.a046;
 
+import java.util.List;
+
 import irvine.math.z.Z;
 import irvine.oeis.a007.A007623;
-import irvine.util.string.StringUtils;
+import irvine.util.CollectionUtils;
 
 /**
  * A046807 Palindromes in factorial base.
@@ -19,8 +21,8 @@ public class A046807 extends A007623 {
   public Z next() {
     while (true) {
       ++mM;
-      final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
+      final List<Z> t = factorialBase(Z.valueOf(mM));
+      if (CollectionUtils.isPalindrome(t)) {
         return Z.valueOf(mM);
       }
     }

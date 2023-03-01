@@ -14,7 +14,7 @@ public class A003786 extends Sequence1 {
 
   // WARNING This sequence is poorly defined for what happens after 400 years.
 
-  private final GregorianCalendar mCal = new GregorianCalendar(1999, Calendar.DECEMBER, 25);
+  private final GregorianCalendar mCal = new GregorianCalendar(2021, Calendar.DECEMBER, 25);
 
   @Override
   public Z next() {

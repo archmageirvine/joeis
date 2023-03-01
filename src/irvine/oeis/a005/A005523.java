@@ -9,8 +9,13 @@ import irvine.oeis.a246.A246655;
  */
 public class A005523 extends A246655 {
 
+  private int mN = 0;
+
   @Override
   public Z next() {
+    if (++mN == 44) {
+      throw new UnsupportedOperationException(); // Hasse bound fails
+    }
     final Z q = super.next();
     return q.add(1).add(q.multiply(4).sqrt()); // Hasse theorem (upper bound)
   }

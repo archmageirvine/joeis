@@ -14,7 +14,7 @@ public class A114478 extends Sequence0 {
   private final DynamicLongArray mUsed = new DynamicLongArray();
   private final Fast mPrime = new Fast();
   private long mSmallestUnused = 1;
-  private int mRow = 0;
+  private int mRow = -1;
   private int mPositionInRow = 0;
 
   private boolean used(final long n) {

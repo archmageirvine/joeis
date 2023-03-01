@@ -9,11 +9,6 @@ import irvine.oeis.a001.A001187;
  */
 public class A054592 extends A001187 {
 
-  {
-    setOffset(1);
-    super.next();
-  }
-
   @Override
   public Z next() {
     return Z.ONE.shiftLeft(mN * (mN + 1) / 2).subtract(super.next());

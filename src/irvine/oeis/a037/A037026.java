@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A037026 B-trees of order 4 with n leaves.
+ * A037026 Number of B-trees of order 4 with n leaves.
  * @author Sean A. Irvine
  */
 public class A037026 extends Sequence0 {

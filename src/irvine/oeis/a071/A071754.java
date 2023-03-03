@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a040.A040051;
 
 /**
- * A071754 Sum(k=0,n, pp(k)) where pp(k) is the parity of p(k) the k-th partition number = A040051(k).
+ * A071754 a(n) = Sum_{k=0..n} pp(k)) where pp(k) is the parity of p(k) the k-th partition number = A040051(k).
  * @author Sean A. Irvine
  */
 public class A071754 extends PartialSumSequence {

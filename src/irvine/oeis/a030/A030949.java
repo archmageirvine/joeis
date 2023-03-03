@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A030949 [ exp(7/10)*n! ].
+ * A030949 a(n) = floor( exp(7/10)*n! ).
  * @author Sean A. Irvine
  */
 public class A030949 extends Sequence1 {

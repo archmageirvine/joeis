@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000188;
 
 /**
- * A057918 Number of pairs of numbers (a,b) each less than n where (a,b,n) is in geometric progression.
+ * A057918 Number of pairs of numbers (r,s) each less than n such that (r,s,n) is in geometric progression.
  * @author Georg Fischer
  */
 public class A057918 extends Sequence1 {

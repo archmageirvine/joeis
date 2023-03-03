@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a165.A165247;
 
 /**
- * A104482 Number of distinct prime divisors of 11...119 (with n 1&apos;s).
+ * A104482 Number of distinct prime divisors of 11...119 (with n 1's).
  * @author Georg Fischer
  */
 public class A104482 extends A165247 {

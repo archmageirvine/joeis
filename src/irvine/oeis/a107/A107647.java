@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000073;
 
 /**
- * A107647 Euler&apos;s totient function applied to tribonacci numbers.
+ * A107647 Euler's totient function applied to tribonacci numbers.
  * @author Georg Fischer
  */
 public class A107647 extends A000073 {

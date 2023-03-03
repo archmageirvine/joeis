@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002182;
 
 /**
- * A063072 Sum of divisors of Ramanujan&apos;s highly composite numbers, or sigma(A002182(n)).
+ * A063072 Sum of divisors of Ramanujan's highly composite numbers, or sigma(A002182(n)).
  * @author Georg Fischer
  */
 public class A063072 extends A002182 {

@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A050535 Number of multigraphs on infinite set of nodes with n edges.
+ * A050535 Number of loopless multigraphs on infinite set of nodes with n edges.
  * @author Sean A. Irvine
  */
 public class A050535 extends Sequence0 {

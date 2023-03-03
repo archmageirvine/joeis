@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003418;
 
 /**
- * A124052 a(n) = sigma(lcm(1, 2,...,n)) = A000203(A003418(n)).
+ * A124052 a(n) = sigma(lcm(1,2,...,n)) = A000203(A003418(n)).
  * @author Georg Fischer
  */
 public class A124052 extends A003418 {

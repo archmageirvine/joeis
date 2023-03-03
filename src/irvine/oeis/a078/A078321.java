@@ -5,7 +5,7 @@ import irvine.math.z.Euler;
 import irvine.math.z.Z;
 
 /**
- * A078321 Euler&apos;s totient of n*rad(n)+1, where rad=A007947 (squarefree kernel).
+ * A078321 Euler's totient of n*rad(n)+1, where rad=A007947 (squarefree kernel).
  * @author Georg Fischer
  */
 public class A078321 extends A078310 {

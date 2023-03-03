@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a173.A173426;
 
 /**
- * A075024 a(n) is the largest prime divisor of the number A173426(n) = concatenate(1, 2,...,n-1,n,n-1,..., 2, 1).
+ * A075024 a(n) is the largest prime divisor of the number A173426(n) = concatenate(1,2,...,n-1,n,n-1,...,2,1).
  * @author Georg Fischer
  */
 public class A075024 extends A173426 {

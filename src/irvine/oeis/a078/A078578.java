@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a014.A014574;
 
 /**
- * A078578 Euler&apos;s totient of the average of n-th twin prime pair.
+ * A078578 Euler's totient of the average of n-th twin prime pair.
  * @author Georg Fischer
  */
 public class A078578 extends A014574 {

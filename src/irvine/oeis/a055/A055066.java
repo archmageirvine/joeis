@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005747;
 
 /**
- * A055066 Number of 7-covers of an n-set.
+ * A055066 Number of 7-covers of an unlabeled n-set.
  * @author Sean A. Irvine
  */
 public class A055066 extends Sequence0 {

@@ -4,7 +4,7 @@ package irvine.oeis.a194;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A194115 Sum{floor(j*sqrt(12) : 1&lt;=j&lt;=n}; n-th partial sum of Beatty sequence for sqrt(12).
+ * A194115 Sum{floor(j*sqrt(12)) : 1&lt;=j&lt;=n}; n-th partial sum of Beatty sequence for sqrt(12).
  * @author Sean A. Irvine
  */
 public class A194115 extends PartialSumSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001597;
 
 /**
- * A076402 Euler&apos;s totient of n-th perfect power.
+ * A076402 Euler's totient of n-th perfect power.
  * @author Georg Fischer
  */
 public class A076402 extends A001597 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a173.A173811;
 
 /**
- * A105973 Number of distinct prime divisors of 88...883 (with n 8&apos;s).
+ * A105973 Number of distinct prime divisors of 88...883 (with n 8's).
  * @author Georg Fischer
  */
 public class A105973 extends A173811 {

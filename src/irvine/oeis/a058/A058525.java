@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A058525 Numbers z by which not all integers y, 0 &lt;= y &lt; 2^64, can be divided using "high multiplication" followed by a right shift.
+ * A058525 Odd numbers z by which not all integers y, 0 &lt;= y &lt; 2^64, can be divided using "high multiplication" followed by a right shift.
  * @author Sean A. Irvine
  */
 public class A058525 extends Sequence0 {

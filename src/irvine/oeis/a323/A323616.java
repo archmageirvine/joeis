@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a053.A053287;
 
 /**
- * A323616 a(n) is the largest prime factor of phi(2^n-1), where phi is Euler&apos;s totient.
+ * A323616 a(n) is the largest prime factor of phi(2^n-1), where phi is Euler's totient.
  * @author Georg Fischer
  */
 public class A323616 extends A053287 {

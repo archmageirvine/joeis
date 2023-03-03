@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A061701 Smallest number m such that GCD of d(m^2) and d(m) is 2n+1.
+ * A061701 Smallest number m such that GCD of d(m^2) and d(m) is 2n+1 where d(m) is the number of divisors of m.
  * @author Sean A. Irvine
  */
 public class A061701 extends A061680 {

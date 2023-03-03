@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002388;
 import irvine.oeis.a103.A103812;
 
 /**
- * A104932 Primes from merging of 9 successive digits in decimal expansion of (Pi^2).
+ * A104932 Primes from merging of 9 successive digits in decimal expansion of Pi^2.
  * @author Georg Fischer
  */
 public class A104932 extends A103812 {

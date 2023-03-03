@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 /**
- * A245333 Decimal expansion of the 6th Du Bois Reymond constant.
+ * A245333 Decimal expansion of the 6th du Bois-Reymond constant.
  * Formula: (1/32)*(exp(6)-6*exp(4)+3*exp(2)-98)
  * @author Georg Fischer
  */

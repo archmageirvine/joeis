@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007302;
 
 /**
- * A280737 a(n) = A007302(n)-1.
+ * A280737 a(n) = A007302(n) - 1.
  * @author Georg Fischer
  */
 public class A280737 extends A007302 {

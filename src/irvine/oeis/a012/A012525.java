@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012525 arcsin(sinh(x)*sin(x))=2/2!*x^2+112/6!*x^6+252032/10!*x^10...
+ * A012525 arcsin(sinh(x)*sin(x)) = 2/2!*x^2+112/6!*x^6+252032/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A012525 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a006.A006879;
 
 /**
- * A228114 Difference between the number of primes with n digits (A006879) and the difference of consecutive integers nearest to Riemann(10^n) (see A228113)                                             .
+ * A228114 Difference between the number of primes with n digits (A006879) and the difference of consecutive integers nearest to Riemann(10^n) (see A228113).
  * @author Georg Fischer
  */
 public class A228114 extends AbstractSequence {

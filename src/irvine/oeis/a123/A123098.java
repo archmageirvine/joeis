@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007188;
 
 /**
- * A123098 Multiplicative encoding of triangle formed by reading Pascal&apos;s triangle mod 2 (A047999).
+ * A123098 Multiplicative encoding of triangle formed by reading Pascal's triangle mod 2 (A047999).
  * @author Georg Fischer
  */
 public class A123098 extends A007188 {

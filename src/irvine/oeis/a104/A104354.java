@@ -5,7 +5,7 @@ import irvine.math.z.Euler;
 import irvine.math.z.Z;
 
 /**
- * A104354 Euler&apos;s totient of A104350(n).
+ * A104354 Euler's totient of A104350(n).
  * @author Georg Fischer
  */
 public class A104354 extends A104350 {

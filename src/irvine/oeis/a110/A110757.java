@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000422;
 
 /**
- * A110757 a(n) = number of divisors of N, where N = reverse concatenation of 1, 2, 3,...,n.
+ * A110757 a(n) = number of divisors of N, where N = reverse concatenation of 1,2,3,...,n.
  * @author Georg Fischer
  */
 public class A110757 extends A000422 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002473;
 
 /**
- * A086296 Euler&apos;s totient of 7-smooth numbers.
+ * A086296 Euler's totient of 7-smooth numbers.
  * @author Georg Fischer
  */
 public class A086296 extends A002473 {

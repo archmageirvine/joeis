@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a014.A014105;
 
 /**
- * A199423 Greatest prime factor of n and 2*n+1
+ * A199423 Greatest prime factor of n and 2*n+1.
  * @author Georg Fischer
  */
 public class A199423 extends A014105 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A336961 E.g.f.: exp(x * (2 + x) * exp(x)).
+ * A336961 Expansion of e.g.f. exp(x * (2 + x) * exp(x)).
  * E.g.f.: exp(x * (2 + x) * exp(x))
  * @author Georg Fischer
  */

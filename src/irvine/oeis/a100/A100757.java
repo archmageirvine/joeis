@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a061.A061113;
 
 /**
- * A100757 Smallest prime factor of the concatenation of terms of the n-th row of the Stirling&apos;s number of the second kind.
+ * A100757 Smallest prime factor of the concatenation of terms of the n-th row of the Stirling's number of the second kind.
  * @author Georg Fischer
  */
 public class A100757 extends A061113 {

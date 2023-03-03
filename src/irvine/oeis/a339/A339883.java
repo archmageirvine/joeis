@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a050.A050498;
 
 /**
- * A339883 Values of Euler&apos;s totient phi for A050498.
+ * A339883 Values of Euler's totient phi for A050498.
  * @author Georg Fischer
  */
 public class A339883 extends A050498 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003726;
 
 /**
- * A278043 Number of 1&apos;s in tribonacci representation of n (cf. A278038).
+ * A278043 Number of 1's in tribonacci representation of n (cf. A278038).
  * @author Georg Fischer
  */
 public class A278043 extends A003726 {

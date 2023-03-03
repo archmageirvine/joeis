@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003602;
 
 /**
- * A349137 a(n) = phi(A003602(n)), where A003602 is Kimberling&apos;s paraphrases, and phi is Euler totient function.
+ * A349137 a(n) = phi(A003602(n)), where A003602 is Kimberling's paraphrases, and phi is Euler totient function.
  * @author Georg Fischer
  */
 public class A349137 extends A003602 {

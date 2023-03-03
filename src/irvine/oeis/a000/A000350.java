@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000350 Numbers n such that Fibonacci(n) ends with n.
+ * A000350 Numbers m such that Fibonacci(m) ends with m.
  * @author Sean A. Irvine
  */
 public class A000350 extends A000045 {

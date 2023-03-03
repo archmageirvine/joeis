@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004042;
 
 /**
- * A087026 Euler&apos;s totient of n-th cyclic number.
+ * A087026 Euler's totient of n-th cyclic number.
  * @author Georg Fischer
  */
 public class A087026 extends A004042 {

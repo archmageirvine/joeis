@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003418;
 
 /**
- * A279506 Total number of 1&apos;s in the binary expansion of A003418.
+ * A279506 Total number of 1's in the binary expansion of A003418.
  * @author Georg Fischer
  */
 public class A279506 extends A003418 {

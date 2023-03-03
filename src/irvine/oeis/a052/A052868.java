@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A052868 E.g.f.: LambertW(x/(-1+x))/x*(-1+x).
+ * A052868 Expansion of e.g.f. LambertW(x/(-1+x))/x*(-1+x).
  * @author Sean A. Irvine
  */
 public class A052868 extends Sequence0 {

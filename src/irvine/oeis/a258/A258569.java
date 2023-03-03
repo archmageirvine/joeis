@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a036.A036967;
 
 /**
- * A258569 Smallest prime factors of 4-full numbers.
+ * A258569 Smallest prime factors of 4-full numbers, a(1)=1.
  * @author Georg Fischer
  */
 public class A258569 extends A036967 {

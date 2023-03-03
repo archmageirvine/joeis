@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003418;
 
 /**
- * A217863 a(n) = phi(lcm(1, 2, 3,...,n)), where phi is Euler&apos;s totient function.
+ * A217863 a(n) = phi(lcm(1,2,3,...,n)), where phi is Euler's totient function.
  * @author Georg Fischer
  */
 public class A217863 extends A003418 {

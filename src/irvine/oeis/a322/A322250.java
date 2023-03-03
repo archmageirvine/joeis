@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000265;
 
 /**
- * A322250 Take binary expansion of 2n-1 and delete the trailing block of 1&apos;s, except if the number is 11...1, leave a single 1.
+ * A322250 Take binary expansion of 2n-1 and delete the trailing block of 1's, except if the number is 11...1, leave a single 1.
  * @author Georg Fischer
  */
 public class A322250 extends A000265 {

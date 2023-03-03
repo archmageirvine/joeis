@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a036.A036991;
 
 /**
- * A350346 Binary numbers such that when read from right to left, the number of 0&apos;s never exceeds the number of 1&apos;s.
+ * A350346 Binary numbers such that when read from right to left, the number of 0's never exceeds the number of 1's.
  * @author Georg Fischer
  */
 public class A350346 extends A036991 {

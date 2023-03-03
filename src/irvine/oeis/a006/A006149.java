@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A006149 Number of Dyck paths.
+ * A006149 Number of 3-tuples (p_1, p_2, p_3) of Dyck paths of semilength n, such that each p_i is never below p_{i-1}.
  * @author Sean A. Irvine
  */
 public class A006149 extends Sequence0 {

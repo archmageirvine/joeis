@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046752 Triangle of number of homeomorphically irreducible stars with n edges and m nodes.
+ * A046752 Triangle read by rows: T(n,k) is the number of unlabeled nonseparable (or 2-connected) loopless multigraphs with n edges on k nodes and degree &gt;= 3 at each node, n &gt;= 3, 2 &lt;= k &lt;= floor(2*n/3).
  * @author Sean A. Irvine
  */
 public class A046752 extends MemoryFunction2<Integer, Set<Multigraph>> implements Sequence {

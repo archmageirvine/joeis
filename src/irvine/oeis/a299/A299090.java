@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a051.A051903;
 
 /**
- * A299090 Number of &quot;digits&quot; in the binary representation of the multiset of prime factors of n.
+ * A299090 Number of "digits" in the binary representation of the multiset of prime factors of n.
  * @author Georg Fischer
  */
 public class A299090 extends A051903 {

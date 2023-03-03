@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006530;
 
 /**
- * A360559 allocated for Luca Onnis.
+ * A360559 Alternating partial sum of A006530.
  * @author Sean A. Irvine
  */
 public class A360559 extends A006530 {

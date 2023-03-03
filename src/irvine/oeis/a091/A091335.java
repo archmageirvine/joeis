@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000058;
 
 /**
- * A091335 Number of prime divisors of n-th term of Sylvester&apos;s sequence A000058.
+ * A091335 Number of prime divisors of n-th term of Sylvester's sequence A000058.
  * @author Georg Fischer
  */
 public class A091335 extends A000058 {

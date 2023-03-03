@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A005785 Number of 5-covers of an n-set.
+ * A005785 Number of 5-covers of an unlabeled n-set.
  * @author Sean A. Irvine
  */
 public class A005785 extends Sequence0 {

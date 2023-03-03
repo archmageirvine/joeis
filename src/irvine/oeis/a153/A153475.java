@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a061.A061652;
 
 /**
- * A153475 Sum of first n even superperfect numbers A061652.
+ * A153475 Sum of the first n even superperfect numbers (A061652).
  * @author Georg Fischer
  */
 public class A153475 extends PartialSumSequence {

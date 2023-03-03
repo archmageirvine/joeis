@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a011.A011545;
 
 /**
- * A089288 Euler&apos;s totient of floor(Pi*10^n), Pi=3.14....
+ * A089288 Euler's totient of floor(Pi*10^n), Pi=3.14....
  * @author Georg Fischer
  */
 public class A089288 extends A011545 {

@@ -5,7 +5,7 @@ import irvine.math.z.Euler;
 import irvine.math.z.Z;
 
 /**
- * A104371 Euler&apos;s totient of A104365(n) = A104350(n) + 1.
+ * A104371 Euler's totient of A104365(n) = A104350(n) + 1.
  * @author Georg Fischer
  */
 public class A104371 extends A104365 {

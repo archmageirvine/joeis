@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a006.A006879;
 
 /**
- * A228066 Difference between the number of primes with n digits (A006879) and the difference of consecutive integers nearest to (10^n)/log(10^n) (see A228065).
+ * A228066 a(n) = A006879(n) - A228065(n).
  * @author Georg Fischer
  */
 public class A228066 extends AbstractSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a032.A032924;
 
 /**
- * A082555 Primes whose base 3 representation does not contain a 0.
+ * A082555 Primes whose base-3 representation does not contain a 0.
  *
  * @author Georg Fischer
  */

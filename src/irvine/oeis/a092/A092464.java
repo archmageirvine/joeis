@@ -4,7 +4,7 @@ package irvine.oeis.a092;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A092464 Numbers n congruent to 4 or 9 mod 13.
+ * A092464 Numbers congruent to 4 or 9 mod 13.
  * @author Georg Fischer
  */
 public class A092464 extends GeneratingFunctionSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005747 Number of n-covers of a 6-set.
+ * A005747 Number of n-covers of an unlabeled 6-set.
  * @author Sean A. Irvine
  */
 public class A005747 extends Sequence1 {

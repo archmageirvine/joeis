@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A138430 (prime(n)^5 - prime(n))/30.
+ * A138430 a(n) = (prime(n)^5 - prime(n))/30.
  * @author Georg Fischer
  */
 public class A138430 extends A000040 {

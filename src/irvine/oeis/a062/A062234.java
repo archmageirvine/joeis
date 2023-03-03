@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a001.A001223;
 
 /**
- * A062234 a(n) = 2*prime(n) - prime(n+1).
+ * A062234 From Bertrand's postulate: a(n) = 2*prime(n) - prime(n+1).
  * @author Georg Fischer
  */
 public class A062234 extends Sequence1 {

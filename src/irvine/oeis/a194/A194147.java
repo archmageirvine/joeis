@@ -4,7 +4,7 @@ package irvine.oeis.a194;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A194147 Sum{floor(j*(-1+sqrt(6)) : 1&lt;=j&lt;=n}; n-th partial sum of Beatty sequence for -1+sqrt(6).
+ * A194147 Sum{floor(j*(-1+sqrt(6))) : 1&lt;=j&lt;=n}; n-th partial sum of Beatty sequence for -1+sqrt(6).
  * @author Sean A. Irvine
  */
 public class A194147 extends PartialSumSequence {

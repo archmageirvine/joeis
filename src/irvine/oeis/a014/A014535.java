@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A014535 B-trees of order 3 with n leaves.
+ * A014535 Number of B-trees of order 3 with n leaves.
  * @author Sean A. Irvine
  */
 public class A014535 extends MemorySequence {

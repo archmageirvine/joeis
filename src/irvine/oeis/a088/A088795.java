@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A088795 Fibonacci(n) as n runs through the quarter-squares.
+ * A088795 a(n) = -1/16-3*n^2/8+17*n/12+n^3/12+(-1)^n/16.
  * @author Georg Fischer
  */
 public class A088795 extends HolonomicRecurrence {

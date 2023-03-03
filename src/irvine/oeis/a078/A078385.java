@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a055.A055394;
 
 /**
- * A078385 Euler&apos;s totient of numbers which can be written as sum of a positive square and a positive cube.
+ * A078385 Euler's totient of numbers which can be written as sum of a positive square and a positive cube.
  * @author Georg Fischer
  */
 public class A078385 extends A055394 {

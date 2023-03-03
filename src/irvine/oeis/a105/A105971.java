@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a067.A067275;
 
 /**
- * A105971 Number of distinct prime divisors of 66...667 (with n 6&apos;s).
+ * A105971 Number of distinct prime divisors of 66...667 (with n 6's).
  * @author Georg Fischer
  */
 public class A105971 extends A067275 {

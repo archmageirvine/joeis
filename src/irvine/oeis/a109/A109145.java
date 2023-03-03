@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002272;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A109145 G.f.: 32nd root of theta series of Quebbemann&apos;s 32-dimensional lattice (cf. A002272).
+ * A109145 G.f.: 32nd root of theta series of Quebbemann's 32-dimensional lattice (cf. A002272).
  * @author Georg Fischer
  */
 public class A109145 extends RootSequence {

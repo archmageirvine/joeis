@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000720;
 
 /**
- * A100486 a(n) = pi(n) + n-th prime, where pi(n) = A000720(n) is the prime counting function.
+ * A100486 a(n) = pi(n) + prime(n).
  * @author Georg Fischer
  */
 public class A100486 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A062545 Continued fraction for the 2nd Du Bois-Reymond constant.
+ * A062545 Continued fraction for the 2nd du Bois-Reymond constant.
  * @author Georg Fischer
  */
 public class A062545 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a173.A173806;
 
 /**
- * A104564 Number of distinct prime divisors of 77...771 (with n 7&apos;s).
+ * A104564 Number of distinct prime divisors of 77...771 (with n 7's).
  * @author Georg Fischer
  */
 public class A104564 extends A173806 {

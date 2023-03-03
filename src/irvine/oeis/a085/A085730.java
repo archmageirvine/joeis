@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A085730 Euler&apos;s totient function applied to the sequence of prime powers.
+ * A085730 Euler's totient function applied to the sequence of prime powers.
  * @author Georg Fischer
  */
 public class A085730 extends A000961 {

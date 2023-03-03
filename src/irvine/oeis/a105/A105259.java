@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a170.A170955;
 
 /**
- * A105259 Number of distinct prime divisors of 99..91 (with n 9&apos;s).
+ * A105259 Number of distinct prime divisors of 99..91 (with n 9's).
  * @author Georg Fischer
  */
 public class A105259 extends A170955 {

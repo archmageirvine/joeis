@@ -4,7 +4,7 @@ package irvine.oeis.a331;
 import irvine.oeis.a062.A062845;
 
 /**
- * A331841 Name?
+ * A331841 When expressed in base 2 and then interpreted in base 5, is a multiple of the original number.
  * @author Georg Fischer
  */
 public class A331841 extends A062845 {

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A207528 Decimal expansion of 4th Du Bois Reymond constant.
+ * A207528 Decimal expansion of 4th du Bois-Reymond constant.
  * Formula: (e^4-4*e^2-25)/8
  * @author Georg Fischer
  */

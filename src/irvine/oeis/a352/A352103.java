@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003796;
 
 /**
- * A352103 a(n) is the maximal (or lazy) tribonacci representation of n using a binary system of vectors not containing three consecutive 0&apos;s.
+ * A352103 a(n) is the maximal (or lazy) tribonacci representation of n using a binary system of vectors not containing three consecutive 0's.
  * @author Georg Fischer
  */
 public class A352103 extends A003796 {

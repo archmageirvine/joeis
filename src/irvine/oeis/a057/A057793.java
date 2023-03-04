@@ -12,7 +12,11 @@ import irvine.oeis.Sequence1;
  */
 public class A057793 extends Sequence1 {
 
-  private static final long HEURISTIC_TERMS = 120; // same as limit used in Mathematica code
+  // WARNING: DO NOT USE TO EXTEND THE SEQUENCE
+
+  // These heuristics are sufficient for at least the first 100 terms
+  private static final long HEURISTIC_TERMS = 300;
+  private static final int EXTRA_PRECISION = 5;
   private Z mA = Z.ONE;
 
   private CR riemann(final Z x) {
@@ -20,13 +24,14 @@ public class A057793 extends Sequence1 {
     return new CR() {
       @Override
       protected Z approximate(final int precision) {
+        final int p = precision - EXTRA_PRECISION;
         final CR z = CR.valueOf(x);
         Z sum = Z.ZERO;
         long k = 0;
         while (true) {
           final int mu = Mobius.mobius(++k);
           if (mu != 0) {
-            final Z li = z.pow(new Q(1, k)).li().divide(CR.valueOf(k)).getApprox(precision);
+            final Z li = z.pow(new Q(1, k)).li().divide(CR.valueOf(k)).getApprox(p);
             if (li.isZero()) {
               break;
             }
@@ -36,7 +41,7 @@ public class A057793 extends Sequence1 {
             break;
           }
         }
-        return sum;
+        return sum.shiftRight(EXTRA_PRECISION);
       }
     };
   }

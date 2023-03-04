@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  */
 public class A057154 extends A057153 {
 
-  private long mM = 4;
+  private Z mM = Z.FOUR;
   {
     super.next();
   }
@@ -16,12 +16,12 @@ public class A057154 extends A057153 {
   @Override
   public Z next() {
     while (true) {
-      ++mM;
-      while (mA.get(mA.size() - 1) < mM) {
+      mM = mM.add(1);
+      while (mA.get(mA.size() - 1).compareTo(mM) < 0) {
         super.next();
       }
       if (!mUsed.contains(mM)) {
-        return Z.valueOf(mM);
+        return mM;
       }
     }
   }

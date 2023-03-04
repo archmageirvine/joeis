@@ -12,15 +12,15 @@ import irvine.oeis.Sequence1;
  */
 public class A057153 extends Sequence1 {
 
-  protected final ArrayList<Long> mA = new ArrayList<>();
-  protected final TreeSet<Long> mUsed = new TreeSet<>();
+  protected final ArrayList<Z> mA = new ArrayList<>();
+  protected final TreeSet<Z> mUsed = new TreeSet<>();
 
-  private boolean isOk(long s) {
+  private boolean isOk(Z s) {
     if (mUsed.contains(s)) {
       return false;
     }
     for (int k = mA.size() - 1; k >= 0; --k) {
-      s += mA.get(k);
+      s = s.add(mA.get(k));
       if (mUsed.contains(s)) {
         return false;
       }
@@ -31,23 +31,23 @@ public class A057153 extends Sequence1 {
   @Override
   public Z next() {
     if (mUsed.isEmpty()) {
-      mA.add(1L);
-      mUsed.add(1L);
+      mA.add(Z.ONE);
+      mUsed.add(Z.ONE);
     } else {
-      long s = mA.get(mA.size() - 1);
-      while (!isOk(++s)) {
-        // do nothing
-      }
+      Z s = mA.get(mA.size() - 1);
+      do {
+        s = s.add(1);
+      } while (!isOk(s));
       mUsed.add(s);
-      long t = s;
+      Z t = s;
       for (int k = mA.size() - 1; k >= 0; --k) {
-        t += mA.get(k);
+        t = t.add(mA.get(k));
         mA.set(k, t);
         mUsed.add(t);
       }
       mA.add(s);
     }
-    return Z.valueOf(mA.get(0));
+    return mA.get(0);
   }
 }
 

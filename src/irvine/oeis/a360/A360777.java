@@ -68,4 +68,14 @@ public class A360777 extends Sequence2 {
       }
     }
   }
+
+  /**
+   * Main program.
+   * @param args term to compute
+   */
+  public static void main(final String... args) {
+    final A360777 seq = new A360777();
+    seq.mN = Integer.parseInt(args[0]) - 1;
+    System.out.println(seq.next());
+  }
 }

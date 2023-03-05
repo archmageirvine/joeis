@@ -52,14 +52,14 @@ public class A360777 extends Sequence2 {
           if (best == null || t.compareTo(best) < 0) {
             best = t;
             if (mVerbose) {
-              StringUtils.message("n=" + mN + " solution <= " + r + " |seen|=" + seen.size());
+              StringUtils.message("n = " + mN + " solution <= " + r + " |seen| = " + seen.size());
             }
           }
         }
       }
       sums.set(sums.length(), p); // start a new sum
       if (mVerbose && m % 10000 == 0) {
-        StringUtils.message("n=" + mN + " search complete to " + m);
+        StringUtils.message("n = " + mN + " search complete to rank = " + m + " polygonal = " + p);
       }
     }
   }

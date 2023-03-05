@@ -40,8 +40,8 @@ public class A360777 extends Sequence2 {
     Z best = null;
     while (true) {
       final Z p = polygonal(mN, ++m);
-      if (p.equals(best)) {
-        return Z.valueOf(m);
+      if (best != null && p.multiply2().compareTo(best) > 0) {
+        return isPolygonal(mN, best);
       }
       seen.remove(p); // no longer need this entry
       for (int k = 0; k < sums.length(); ++k) {

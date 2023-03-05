@@ -44,7 +44,7 @@ public class A360777 extends Sequence2 {
       if (best != null && p.multiply2().compareTo(best) > 0) {
         return isPolygonal(mN, best);
       }
-      seen.remove(p); // no longer need this entry
+      seen.remove(p); // no longer need this entry (if it exists)
       final List<Z> newSums = new ArrayList<>();
       for (final Z s : sums) {
         final Z t = s.add(p);
@@ -56,7 +56,7 @@ public class A360777 extends Sequence2 {
           if (best == null || t.compareTo(best) < 0) {
             best = t;
             if (mVerbose) {
-              StringUtils.message("n = " + mN + " solution <= " + r + " |seen| = " + seen.size());
+              StringUtils.message("n = " + mN + " solution <= " + r + " #seen = " + seen.size());
             }
           }
         }
@@ -64,7 +64,7 @@ public class A360777 extends Sequence2 {
       sums = newSums;
       sums.add(p); // start a new sum
       if (mVerbose && m % 10000 == 0) {
-        StringUtils.message("n = " + mN + " search complete to rank = " + m + " polygonal = " + p);
+        StringUtils.message("n = " + mN + " search complete to rank = " + m + " #seen = " + seen.size());
       }
     }
   }

@@ -1,10 +1,11 @@
 package irvine.oeis.a360;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
-import irvine.util.array.DynamicArray;
 import irvine.util.string.StringUtils;
 
 /**
@@ -35,7 +36,7 @@ public class A360777 extends Sequence2 {
       return Z.NINE;
     }
     final HashSet<Z> seen = new HashSet<>();
-    final DynamicArray<Z> sums = new DynamicArray<>();
+    List<Z> sums = new ArrayList<>();
     long m = 0;
     Z best = null;
     while (true) {
@@ -44,9 +45,12 @@ public class A360777 extends Sequence2 {
         return isPolygonal(mN, best);
       }
       seen.remove(p); // no longer need this entry
-      for (int k = 0; k < sums.length(); ++k) {
-        final Z t = sums.get(k).add(p);
-        sums.set(k, t);
+      final List<Z> newSums = new ArrayList<>();
+      for (final Z s : sums) {
+        final Z t = s.add(p);
+        if (best == null || t.compareTo(best) <= 0) {
+          newSums.add(t);
+        }
         final Z r = isPolygonal(mN, t);
         if (r != null && !seen.add(t)) {
           if (best == null || t.compareTo(best) < 0) {
@@ -57,7 +61,8 @@ public class A360777 extends Sequence2 {
           }
         }
       }
-      sums.set(sums.length(), p); // start a new sum
+      sums = newSums;
+      sums.add(p); // start a new sum
       if (mVerbose && m % 10000 == 0) {
         StringUtils.message("n = " + mN + " search complete to rank = " + m + " polygonal = " + p);
       }

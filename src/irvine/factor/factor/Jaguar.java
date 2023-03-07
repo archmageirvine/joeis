@@ -66,7 +66,7 @@ public final class Jaguar {
       }
       FACTOR_DB.factor(fs);
       if (!fs.isComplete()) {
-        throw new UnsupportedOperationException("Unfactored: " + fs);
+        throw new UnsupportedOperationException("Unfactored: " + FactorSequence.toString(fs));
       }
     }
     return fs;
@@ -98,7 +98,7 @@ public final class Jaguar {
       fs = new FactorSequence(n);
       FACTOR_DB.factor(fs);
       if (!fs.isComplete()) {
-        throw new UnsupportedOperationException("Unfactored: " + n + " -> " + fs);
+        throw new UnsupportedOperationException("Unfactored: " + n + " -> " + FactorSequence.toString(fs));
       }
     }
     return fs;

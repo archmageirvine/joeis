@@ -5,24 +5,20 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Factorizer;
 import irvine.factor.factor.PrimeDivision;
-import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.IntegerUtils;
 
 /**
  * Routines relating to the Euler totient function.
- *
  * @author Sean A. Irvine
  */
 public class Euler {
 
-  private static final Fast PRIME = new Fast();
   private static final Factorizer FACTOR = new PrimeDivision();
 
   /**
    * Compute the Euler phi function of an isolated integer.  This is
    * fast enough if you only want to do a few values.
-   *
    * @param n number to compute phi of
    * @return Euler totient value
    * @exception UnsupportedOperationException if the computation fails.
@@ -33,7 +29,7 @@ public class Euler {
     if (n.signum() < 1) {
       throw new IllegalArgumentException();
     }
-    if (PRIME.isPrime(n)) {
+    if (n.isProbablePrime()) {
       return n.subtract(Z.ONE);
     }
     final FactorSequence fs = new FactorSequence(n);
@@ -42,6 +38,19 @@ public class Euler {
       throw new UnsupportedOperationException();
     }
     return fs.phi();
+  }
+
+  /**
+   * Compute the Euler phi function of an isolated integer.  This is
+   * fast enough if you only want to do a few values.
+   * @param n number to compute phi of
+   * @return Euler totient value
+   * @exception UnsupportedOperationException if the computation fails.
+   * @exception IllegalArgumentException if <code>n</code> in less than 1.
+   * @exception NullPointerException if <code>n</code> is null.
+   */
+  public static Z phi(final long n) {
+    return phi(Z.valueOf(n));
   }
 
   private final int[] mPhi;

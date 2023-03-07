@@ -6,7 +6,6 @@ import irvine.oeis.transform.RootSequence;
 
 /**
  * A289209 Coefficients in expansion of E_4^3/E_6^2.
- * (k=288) <--.
  * @author Georg Fischer
  */
 public class A289209 extends RootSequence {

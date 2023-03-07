@@ -5,6 +5,7 @@ import java.util.Arrays;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.a051.A051626;
+import irvine.oeis.a061.A061564;
 
 /**
  * A036275 The periodic part of the decimal expansion of 1/n. Any initial 0's are to be placed at end of cycle.
@@ -34,7 +35,8 @@ public class A036275 extends A051626 {
       n = n.subtract(b[k]);
     }
     // Skip over any preperiod
-    while (!Arrays.equals(a, b) || a[0] == 0) {
+    final boolean hack = this instanceof A061564;
+    while (!Arrays.equals(a, b) || (hack && a[0] == 0)) {
       System.arraycopy(a, 1, a, 0, a.length - 1);
       a[a.length - 1] = b[0];
       System.arraycopy(b, 1, b, 0, b.length - 1);

@@ -1016,7 +1016,7 @@ public class Z extends Number implements Comparable<Z> {
   /**
    * Apply the extended Euclidean algorithm.  Returns the gcd of <code>this</code>
    * and <code>b</code>, together with numbers <code>u</code> and
-   * <code>v</code> such that <code>d=this * u+b * v</code>.
+   * <code>v</code> such that <code>d=this*u + b*v</code>.
    * @param b second number
    * @return three integers <code>(gcd, u, v)</code>
    */

@@ -10,6 +10,7 @@ import irvine.oeis.a036.A036275;
  * @author Georg Fischer
  */
 public class A270392 extends A036275 {
+
   @Override
   public Z next() {
     return Z.valueOf(ZUtils.digitSum(super.next()));

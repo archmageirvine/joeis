@@ -80,4 +80,14 @@ public class QuadraticCongruenceTest extends TestCase {
   public void testBugA061361() {
     assertEquals("[2458, 310042, 2189958, 2497542, 2502458, 2810042, 4689958, 4997542, 5002458, 5310042, 7189958, 7497542, 7502458, 7810042, 9689958, 9997542]", QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.valueOf(-6041764), Z.valueOf(10000000)).toString());
   }
+
+  public void testBugA061839() {
+    assertEquals("[0, 5, 10, 15, 20]", QuadraticCongruence.solve(Z.ZERO, Z.FIVE, 2).toString());
+    assertEquals("[0, 25, 50, 75, 100]", QuadraticCongruence.solve(Z.ZERO, Z.FIVE, 3).toString());
+    assertEquals("[10, 15, 35, 40, 60, 65, 85, 90, 110, 115]", QuadraticCongruence.solve(Z.valueOf(100), Z.FIVE, 3).toString());
+    assertEquals("[0, 5, 10, 15, 20]", QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.ZERO, Z.valueOf(25)).toString());
+    assertEquals("[0, 5, 10, 15, 20]", QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.ZERO, Z.FIVE, 2).toString());
+    assertEquals("[0, 5, 10, 15, 20]", QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.valueOf(-100), Z.valueOf(25)).toString());
+    assertEquals("[10, 15, 35, 40, 60, 65, 85, 90, 110, 115]", QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.valueOf(-100), Z.FIVE, 3).toString());
+  }
 }

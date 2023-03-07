@@ -21,7 +21,7 @@ public class A002218 extends Sequence1 {
   @Override
   public Z next() {
     if (++mN == 1) {
-      return Z.ONE;
+      return Z.ZERO;
     }
     final Polynomial<CycleIndex> g = CombinatorialSpecies.graphSeries(mN);
     final Polynomial<CycleIndex> gc = CombinatorialSpecies.sLog(g);

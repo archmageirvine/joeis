@@ -80,16 +80,24 @@ public final class QuadraticCongruence {
     if (e == 1) {
       return solve(a, p);
     }
-    final Z pe = p.pow(e);
+    final Z pe1 = p.pow(e - 1);
+    final Z pe = pe1.multiply(p);
     a = a.mod(pe);
     if (a.isZero()) {
       final TreeSet<Z> res = new TreeSet<>();
-      res.add(Z.ZERO);
-      res.add(p.pow(e - 1));
+      Z soln = Z.ZERO;
+      do {
+        assert soln.modSquare(pe).isZero();
+        res.add(soln);
+        soln = soln.add(pe1).mod(pe);
+      } while (!soln.isZero());
+      if (VERBOSE) {
+        System.out.println(StringUtils.rep(' ', sIndent) + "Returning with " + res);
+      }
       return res;
     }
     if (a.signum() < 0) {
-      a = a.add(p.pow(e));
+      a = a.add(pe);
     }
     if (Z.TWO.equals(p)) {
       if (e == 2) {
@@ -111,12 +119,8 @@ public final class QuadraticCongruence {
 
       // Hensel Lemma
       final Collection<Z> prev = solve(a, p, e - 1);
-      if (prev.isEmpty()) {
-        return prev;
-      }
       final TreeSet<Z> res = new TreeSet<>();
       for (final Z x : prev) {
-          final Z pe1 = p.pow(e - 1);
           final Z x2 = x.multiply2();
           final Z[] euc = x2.extendedGcd(pe1);
           final Z z = x.subtract(x.square().subtract(a).multiply(euc[1])).mod(pe);
@@ -130,26 +134,24 @@ public final class QuadraticCongruence {
         System.out.println(StringUtils.rep(' ', sIndent) + "Returning from Hensel with " + res);
       }
       return res;
-    }
-    // Hensel Lemma
-    final Collection<Z> prev = solve(a, p, e - 1);
-    if (prev.isEmpty()) {
-      return prev;
-    }
-    for (final Z x : prev) {
-      final Z pe1 = p.pow(e - 1);
-      final Z x2 = x.multiply2();
-      final Z[] euc = x2.extendedGcd(pe1);
-      final Z z = x.subtract(x.square().subtract(a).multiply(euc[1])).mod(pe);
+    } else {
+      // p is an odd prime
+      // Hensel Lemma
       final TreeSet<Z> res = new TreeSet<>();
-      res.add(z);
-      res.add(pe.subtract(z));
+      for (final Z x : solve(a, p, e - 1)) {
+        final Z x2 = x.multiply2();
+        final Z f = x.square().subtract(a);
+        final Z[] euc = x2.extendedGcd(pe1);
+        final Z z = x.subtract(f.multiply(euc[1])).mod(pe);
+        //System.out.println("Expanding: " + x + " egxd -> " + Arrays.toString(euc) + " -> " + z + " " + pe.subtract(z).mod(pe));
+        res.add(z);
+        res.add(pe.subtract(z).mod(pe));
+      }
       if (VERBOSE) {
-        System.out.println(StringUtils.rep(' ', sIndent) + "Returning from Hensel with " + res);
+        System.out.println(StringUtils.rep(' ', sIndent) + "Returning with " + res);
       }
       return res;
     }
-    return Collections.emptySet();
   }
 
   private static Collection<Z> lift(final Collection<Z> res, Z lift, final Z a, final Z b, final Z c, final Z p, final Z pe) {
@@ -192,6 +194,9 @@ public final class QuadraticCongruence {
     if (VERBOSE) {
       System.out.println(StringUtils.rep(' ', sIndent) + "Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + p + "^" + e + ") with discriminant " + d + " jacobi=" + d.jacobi(pe));
     }
+
+    // todo the following shortcut does not work properly?
+    // todo commenting it out does seem to work, but it then way too slow
     if (b.mod(pe).isZero() && Z.ONE.equals(a)) {
       if (VERBOSE) {
         System.out.println(StringUtils.rep(' ', sIndent) + "Using b=0 shortcut");

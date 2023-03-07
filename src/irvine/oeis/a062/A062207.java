@@ -1,27 +1,18 @@
 package irvine.oeis.a062;
-// manually dersimpln at 2021-08-25 11:05
 
 import irvine.math.z.Z;
-import irvine.oeis.a013.A013499;
+import irvine.oeis.Sequence0;
 
 /**
  * A062207 a(n) = 2*n^n-1.
- * @author Georg Fischer
+ * @author Sean A. Irvine
  */
-public class A062207 extends A013499 {
+public class A062207 extends Sequence0 {
 
-  protected int mN;
+  private long mN = -1;
   
-  /** Construct the sequence. */
-  public A062207() {
-    mN = 0;
-    super.next();
-    super.next();
-  }
-
   @Override
   public Z next() {
-    ++mN;
-    return mN == 1 ? Z.ONE : super.next().subtract(1);
+    return Z.valueOf(++mN).pow(mN).multiply2().subtract(1);
   }
 }

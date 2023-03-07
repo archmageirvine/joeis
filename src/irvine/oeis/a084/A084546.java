@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 public class A084546 implements Sequence {
 
   private int mN = 0;
-  private int mM = 0;
+  private int mM = -1;
 
   protected Z t(final int n, final int m) {
     return Binomial.binomial((long) n * (n - 1) / 2, m);

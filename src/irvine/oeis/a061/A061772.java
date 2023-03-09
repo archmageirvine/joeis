@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061772 a(n) is the number of n-digit multiples of n.
  * @author Sean A. Irvine
  */
 public class A061772 extends Sequence1 {

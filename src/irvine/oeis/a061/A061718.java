@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061718 a(n) = (n*(n+1)/2)^n.
  * @author Sean A. Irvine
  */
 public class A061718 extends Sequence1 {

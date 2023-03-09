@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046116 Numbers n such that no Paley-type Hadamard matrix of order n exists.
+ * A046116 Numbers k such that no Paley-type Hadamard matrix of order k exists.
  * @author Sean A. Irvine
  */
 public class A046116 extends Sequence1 {

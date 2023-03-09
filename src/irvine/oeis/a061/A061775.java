@@ -9,7 +9,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000720;
 
 /**
- * A061715.
+ * A061775 Number of nodes in rooted tree with Matula-Goebel number n.
  * @author Sean A. Irvine
  */
 public class A061775 extends MemorySequence {

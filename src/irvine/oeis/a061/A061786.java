@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061786 Number of distinct sums i^2 + j^2 for 1&lt;=i&lt;=j&lt;=n.
  * @author Sean A. Irvine
  */
 public class A061786 extends Sequence1 {

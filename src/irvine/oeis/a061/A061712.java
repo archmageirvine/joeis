@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A061707.
+ * A061712 Smallest prime with Hamming weight n (i.e., with exactly n 1's when written in binary).
  * @author Sean A. Irvine
  */
 public class A061712 extends Sequence1 {

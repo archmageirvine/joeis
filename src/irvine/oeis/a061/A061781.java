@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061781 Number of distinct sums p(i) + p(j) for 1&lt;=i&lt;=j&lt;=n, p(k) = k-th prime.
  * @author Sean A. Irvine
  */
 public class A061781 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060010 Number of 2n-move sequences on the 3 X 3 X 3 Rubik's Cube (only quarter-twists count as moves) that leave the cube unchanged.
+ * A061713 Number of closed walks of length n on a 3 X 3 X 3 Rubik's Cube.
  * @author Sean A. Irvine
  */
 public class A061713 extends Sequence0 {

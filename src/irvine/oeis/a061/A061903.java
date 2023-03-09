@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A061715.
+ * A061903 Number of distinct elements of the iterative cycle: n -&gt; sum of digits of n^2.
  * @author Sean A. Irvine
  */
 public class A061903 extends Sequence0 {

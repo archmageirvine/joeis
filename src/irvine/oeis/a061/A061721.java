@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061721 Number of zeros in the character table of the dihedral group with 2n elements.
  * @author Sean A. Irvine
  */
 public class A061721 extends Sequence1 {

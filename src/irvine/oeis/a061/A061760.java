@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061760 Least multiple of n that is greater than n, not equal to a power of 10 times n and contains all the digits of n.
  * @author Sean A. Irvine
  */
 public class A061760 extends Sequence1 {

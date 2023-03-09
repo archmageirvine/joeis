@@ -5,7 +5,7 @@ import irvine.oeis.PartialProductSequence;
 import irvine.oeis.a005.A005448;
 
 /**
- * A140701 Product of first n centered triangular numbers.
+ * A140701 Partial products of A005448.
  * @author Georg Fischer
  */
 public class A140701 extends PartialProductSequence {

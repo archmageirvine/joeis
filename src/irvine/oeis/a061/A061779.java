@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A061715.
+ * A061779 Primes p such that q-p = 22, where q is the next prime after p.
  * @author Sean A. Irvine
  */
 public class A061779 extends A000040 {

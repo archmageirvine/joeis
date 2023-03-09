@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A061715.
+ * A061783 Luhn primes: primes p such that p + (p reversed) is also a prime.
  * @author Sean A. Irvine
  */
 public class A061783 extends A000040 {

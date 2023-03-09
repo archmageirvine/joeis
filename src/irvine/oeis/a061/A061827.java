@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061674.
+ * A061827 Number of partitions of n into parts which are the digits of n.
  * @author Sean A. Irvine
  */
 public class A061827 extends Sequence1 {

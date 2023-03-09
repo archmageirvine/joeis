@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061707.
+ * A061708 Smallest number whose square has (2n - 1)^2 divisors.
  * @author Sean A. Irvine
  */
 public class A061708 extends Sequence1 {

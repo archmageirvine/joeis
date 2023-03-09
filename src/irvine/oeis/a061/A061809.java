@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061809 When cubed gives number composed just of the digits 1, 2, 3, 4.
  * @author Sean A. Irvine
  */
 public class A061809 extends Sequence1 {

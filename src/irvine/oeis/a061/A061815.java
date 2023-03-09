@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061396.
+ * A061815 G.f. A(x) satisfies A(x) = 1+Sum_{j=0 to infinity} ((1 + x^(j+1)*A(x))^a_j-1).
  * @author Sean A. Irvine
  */
 public class A061815 extends Sequence0 {

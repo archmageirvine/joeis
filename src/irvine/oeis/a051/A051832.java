@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A051832 Numbers n such that (2*10^(5*n) - 10^(4*n) + 2*10^(3*n) + 10^(2*n) + 10^n + 1)/3 is prime.
+ * A051832 Numbers k such that (2*10^(5*k) - 10^(4*k) + 2*10^(3*k) + 10^(2*k) + 10^k + 1)/3 is prime.
  * @author Sean A. Irvine
  */
 public class A051832 extends Sequence1 {

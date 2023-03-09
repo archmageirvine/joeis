@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061795 Number of distinct sums phi(i) + phi(j) for 1 &lt;= i &lt;= j &lt;= n, phi(k) = A000010(k).
  * @author Sean A. Irvine
  */
 public class A061795 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061807 Smallest positive multiple of n containing only even digits.
  * @author Sean A. Irvine
  */
 public class A061807 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061808 a(n) is the smallest number with all digits odd that is divisible by 2n-1.
  * @author Sean A. Irvine
  */
 public class A061808 extends Sequence1 {

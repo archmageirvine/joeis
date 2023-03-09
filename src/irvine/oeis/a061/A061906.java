@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A061674.
+ * A061906 Obtain m by omitting trailing zeros from n; a(n) = smallest k such that k*m is a palindrome.
  * @author Sean A. Irvine
  */
 public class A061906 extends Sequence0 {

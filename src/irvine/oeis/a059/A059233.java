@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.array.DynamicByteArray;
 
 /**
- * A059233 Number of rows in which n appears in Pascal's triangle (A007318).
+ * A059233 Number of rows in which n appears in Pascal's triangle A007318.
  * @author Sean A. Irvine
  */
 public class A059233 extends Sequence2 {

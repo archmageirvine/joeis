@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A061674.
+ * A061835 a(1) = 5; a(n) = smallest power of 5 (larger than a(n-1)) with a(n-1) forming its final digits.
  * @author Sean A. Irvine
  */
 public class A061835 extends Sequence1 {

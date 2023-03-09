@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061805 Smallest number that has digits in order ...123...901... and is divisible by n. If no such number exists then a(n) = 0.
  * @author Sean A. Irvine
  */
 public class A061805 extends Sequence1 {

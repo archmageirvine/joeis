@@ -6,7 +6,7 @@ package irvine.oeis.a276;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A276509 Numbers n in base 10 such that the digits of 2 + n are the digits of 2n written in reverse order.
+ * A276509 Numbers k in base 10 such that the digits of 2 + k are the digits of 2k written in reverse order.
  * @author Georg Fischer
  */
 public class A276509 extends GeneratingFunctionSequence {

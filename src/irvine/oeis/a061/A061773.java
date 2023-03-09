@@ -11,7 +11,7 @@ import irvine.oeis.a000.A000081;
 import irvine.oeis.a008.A008578;
 
 /**
- * A061715.
+ * A061773 Triangle in which n-th row lists Matula-Goebel numbers for all rooted trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A061773 extends Sequence1 {

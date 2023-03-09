@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000005;
 
 /**
- * A061715.
+ * A061799 Smallest number with at least n divisors.
  * @author Sean A. Irvine
  */
 public class A061799 extends A000005 {

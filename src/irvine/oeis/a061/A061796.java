@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061796 Number of distinct sums sigma(i) + sigma(j) for 1&lt;=i&lt;=j&lt;=n, where sigma(k) = A000203(k).
  * @author Sean A. Irvine
  */
 public class A061796 extends Sequence1 {

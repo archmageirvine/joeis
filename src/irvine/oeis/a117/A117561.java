@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A117561 Floor(n*(n^3-n-3)/(2*(n-1))).
+ * A117561 a(n) = floor(n*(n^3-n-3)/(2*(n-1))).
  * @author Georg Fischer
  */
 public class A117561 extends GeneratingFunctionSequence {

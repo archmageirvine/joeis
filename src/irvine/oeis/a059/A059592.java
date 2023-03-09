@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A059592 Square-full part of n^2+1.
+ * A059592 Square-full part of n^2 + 1.
  * @author Sean A. Irvine
  */
 public class A059592 extends Sequence0 {

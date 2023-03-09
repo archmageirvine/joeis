@@ -9,7 +9,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.string.StringUtils;
 
 /**
- * A061715.
+ * A360777 allocated for Ilya Gutkovskiy.
  * @author Sean A. Irvine
  */
 public class A360777 extends Sequence2 {

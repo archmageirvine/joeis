@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A126563 Numbers n such that the ratio of A117731(n) and A082687(n) is composite.
+ * A126563 Numbers k such that the ratio of A117731(k) and A082687(k) is composite.
  *
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061715.
+ * A061729 Start with 0; to get next term reverse digits and add 1 to each digit (9's get replaced by 10's).
  * @author Sean A. Irvine
  */
 public class A061729 extends Sequence0 {

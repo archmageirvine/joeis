@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061764 n! is divisible by (n+1)^12.
  * @author Sean A. Irvine
  */
 public class A061764 extends Sequence1 {

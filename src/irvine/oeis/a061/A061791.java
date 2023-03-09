@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061791 Number of distinct sums i^3 + j^3 for 1&lt;=i&lt;=j&lt;=n.
  * @author Sean A. Irvine
  */
 public class A061791 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061674.
+ * A061836 a(n) = smallest k&gt;0 such that k+n divides k!.
  * @author Sean A. Irvine
  */
 public class A061836 extends Sequence0 {

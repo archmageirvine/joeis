@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061768 k is the least number such that k! is divisible by (k+1)^n.
  * @author Sean A. Irvine
  */
 public class A061768 extends Sequence1 {

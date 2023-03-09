@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A048528 Primes expressible in two ways as the sum of an integer plus its digit sum.
+ * A048528 Primes expressible in two ways as the sum of an integer and its digit sum.
  * @author Sean A. Irvine
  */
 public class A048528 extends Sequence0 {

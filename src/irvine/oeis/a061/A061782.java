@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061782 a(n) = smallest positive number m such that m*n is a triangular number.
  * @author Sean A. Irvine
  */
 public class A061782 extends Sequence1 {

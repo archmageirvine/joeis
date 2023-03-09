@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Triple;
 
 /**
- * A002134 Generalized divisor function. Partitions of n using only 3 types of piles.
+ * A002134 Generalized divisor function. Number of partitions of n with exactly three part sizes.
  * @author Sean A. Irvine
  */
 public class A002134 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061717 Binary order of n^n.
  * @author Sean A. Irvine
  */
 public class A061717 extends Sequence1 {

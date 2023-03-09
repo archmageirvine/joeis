@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061784 Number of sums prime(i) + prime(j) that occur more than once for 1 &lt;= i &lt;= j &lt;= n, where prime(k) = k-th prime.
  * @author Sean A. Irvine
  */
 public class A061784 extends Sequence1 {

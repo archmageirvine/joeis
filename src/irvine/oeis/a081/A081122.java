@@ -4,7 +4,7 @@ package irvine.oeis.a081;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A081122 10th binomial transform of (1,1,0,0,0,0,......).
+ * A081122 10th binomial transform of (1,1,0,0,0,0,...).
  * @author Georg Fischer
  */
 public class A081122 extends GeneratingFunctionSequence {

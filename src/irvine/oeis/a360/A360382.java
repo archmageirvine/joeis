@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A360382 allocated for Zhining Yang.
+ * A360382 Least integer m whose n-th power can be written as a sum of four distinct positive n-th powers.
  * @author Sean A. Irvine
  */
 public class A360382 extends Sequence1 {

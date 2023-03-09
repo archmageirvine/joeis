@@ -4,7 +4,7 @@ package irvine.oeis.a081;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A081109 9th binomial transform of (1,1,0,0,0,0,0,....).
+ * A081109 9th binomial transform of (1,1,0,0,0,0,0,...).
  * @author Georg Fischer
  */
 public class A081109 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a022.A022844;
 
 /**
- * A061715.
+ * A061812 Numbers k such that floor(Pi*k) is a square.
  * @author Sean A. Irvine
  */
 public class A061812 extends FilterPositionSequence {

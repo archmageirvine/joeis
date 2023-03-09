@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A199714 A puzzle - explanation is not known.
+ * A199714 A puzzle by Ron Hoeflin.
  * @author Georg Fischer
  */
 public class A199714 extends NoncomputableSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061788 a(n) = Sum_{k=1..n} (2k)^(2k).
  * @author Sean A. Irvine
  */
 public class A061788 extends Sequence1 {

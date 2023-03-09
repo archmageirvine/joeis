@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003422;
 
 /**
- * A061674.
+ * A061834 a(n) = binomial(n,2) * !n.
  * @author Sean A. Irvine
  */
 public class A061834 extends A003422 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061715 Numbers which are sandwiched between two numbers having the same ordered canonical form.
  * @author Sean A. Irvine
  */
 public class A061715 extends Sequence1 {

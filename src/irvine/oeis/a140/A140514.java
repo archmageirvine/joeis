@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000931;
 import irvine.oeis.a010.A010060;
 
 /**
- * A140514 a(n) = Padovan(n+4) - ThueMorse(n).
+ * A140514 a(n) = A000931(n+4) - A010060(n).
  * @author Georg Fischer
  */
 public class A140514 extends Sequence0 {

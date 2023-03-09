@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061715.
+ * A061794 Number of distinct sums d(i) + d(j) for 1&lt;=i&lt;=j&lt;=n, d(k) = A000005(k) = number of divisors function.
  * @author Sean A. Irvine
  */
 public class A061794 extends Sequence1 {

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Set;
 import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
@@ -52,7 +53,7 @@ public final class QuadraticCongruence {
   }
 
   /**
-   * Solve <code>x^2=a (mod p)</code>
+   * Solve <code>x^2=a (mod p^e)</code>
    * @param a constant
    * @param p modulus
    * @return solutions
@@ -135,7 +136,6 @@ public final class QuadraticCongruence {
       }
       return res;
     } else {
-      // p is an odd prime
       // Hensel Lemma
       final TreeSet<Z> res = new TreeSet<>();
       for (final Z x : solve(a, p, e - 1)) {
@@ -164,6 +164,92 @@ public final class QuadraticCongruence {
       }
       lift = lift.add(p);
     } while (lift.compareTo(pe) < 0);
+    return res;
+  }
+
+  // Based on Alpertron's code
+  private static Set<Z> solveQuadraticEqModPowerOfP(final Z a, final Z b, final Z c, final Z prime, final int expon) {
+    Z discriminant = b.square().subtract(a.multiply(c).multiply(4));
+    final Z pe = prime.pow(expon);
+    // Number of bits of square root of discriminant to compute: expon + bits_a + 1,
+    // where bits_a is the number of least significant bits of a set to zero.
+    // To compute the square root, compute the inverse of sqrt, so only multiplications are used.
+    // f(x) = invsqrt(x), f_{n+1}(x) = f_n * (3 - x*f_n^2)/2
+    // Get maximum power of prime which divide ValA.
+    Z aOdd = a;
+    int bitsAZero = 0;
+    while (true) {
+      Z tmp1 = aOdd.mod(prime);
+      if (aOdd.signum() == -1) {
+        aOdd = aOdd.add(prime);
+      }
+      if (!tmp1.isZero()) {
+        break;
+      }
+      aOdd = aOdd.divide(prime);
+      ++bitsAZero;
+    }
+    discriminant = discriminant.mod(pe);
+    // Get maximum power of prime which divide discriminant.
+    int deltaZeros;
+    if (discriminant.isZero()) {      // Discriminant is zero.
+      deltaZeros = expon;
+    } else {      // Discriminant is not zero.
+      deltaZeros = 0;
+      while (discriminant.mod(prime).isZero()) {
+        discriminant = discriminant.divide(prime);
+        ++deltaZeros;
+      }
+    }
+    if (((deltaZeros & 1) != 0) && (deltaZeros < expon)) {
+      // If delta is of type m*prime^n where m is not multiple of prime
+      // and n is odd, there is no solution, so go out.
+      return Collections.emptySet();
+    }
+    deltaZeros >>= 1;
+    // Compute inverse of -2*A (mod prime^(expon - deltaZeros)).
+    final Z ped = prime.pow(expon - deltaZeros);
+    final Z inv = ped.subtract(aOdd.modMultiply(Z.TWO, ped)).modInverse(ped);
+    Z sqrRoot;
+    if (discriminant.isZero()) {     // Discriminant is zero.
+      sqrRoot = Z.ZERO;
+    } else {      // Discriminant is not zero.
+      // Find number of digits of square root to compute.
+      final int nbrBitsSquareRoot = expon + bitsAZero - deltaZeros;
+      final Z ps = prime.pow(nbrBitsSquareRoot);
+      discriminant = discriminant.mod(ps);
+      if (discriminant.signum() < 0) {
+        discriminant = discriminant.add(ps);
+      }
+      if (discriminant.mod(prime).jacobi(prime) != 1) {
+        return Collections.emptySet(); // Not a quadratic residue, so go out.
+      }
+      // Compute square root of discriminant.
+      sqrRoot = solve(discriminant, prime, expon).iterator().next();
+      //sqrRoot = discriminant.modSqrt(ped);
+      // Multiply by square root of discriminant by prime^deltaZeros.
+      sqrRoot = sqrRoot.multiply(prime.pow(deltaZeros));
+    }
+    final TreeSet<Z> res = new TreeSet<>();
+    final int correctBits = expon - deltaZeros;
+    Z q = prime.pow(correctBits);
+    // Compute x = (b + sqrt(discriminant)) / (-2a) and x = (b - sqrt(discriminant)) / (-2a)
+    final Z[] qr1 = b.add(sqrRoot).divideAndRemainder(prime.pow(bitsAZero));
+    if (qr1[1].isZero()) {
+      Z soln1 = qr1[0].modMultiply(inv, q);
+      do {
+        res.add(soln1);
+        soln1 = soln1.add(q);
+      } while (soln1.compareTo(pe) <= 0);
+    }
+    final Z[] qr2 = b.subtract(sqrRoot).divideAndRemainder(prime.pow(bitsAZero));
+    if (qr2[1].isZero()) {
+      Z soln2 = qr2[0].modMultiply(inv, q);
+      do {
+        res.add(soln2);
+        soln2 = soln2.add(q);
+      } while (soln2.compareTo(pe) <= 0);
+    }
     return res;
   }
 
@@ -197,14 +283,19 @@ public final class QuadraticCongruence {
 
     // todo the following shortcut does not work properly?
     // todo commenting it out does seem to work, but it then way too slow
-    if (b.mod(pe).isZero() && Z.ONE.equals(a)) {
-      if (VERBOSE) {
-        System.out.println(StringUtils.rep(' ', sIndent) + "Using b=0 shortcut");
+    if (b.mod(pe).isZero() && Z.ONE.equals(a) && !Z.TWO.equals(p)) {
+      if (!Z.TWO.equals(p) && !a.mod(p).isZero()) {
+        return solveQuadraticEqModPowerOfP(a, b, c, p, e);
+      } else {
+        if (VERBOSE) {
+          System.out.println(StringUtils.rep(' ', sIndent) + "Using b=0 shortcut");
+        }
+        sIndent += 2;
+        final Collection<Z> res = solve(pe.subtract(c), p, e);
+        System.out.println(StringUtils.rep(' ', sIndent) + res + " cf. " + solveQuadraticEqModPowerOfP(a, b, c, p, e));
+        sIndent -= 2;
+        return res;
       }
-      sIndent += 2;
-      final Collection<Z> res = solve(pe.subtract(c), p, e);
-      sIndent -= 2;
-      return res;
     }
 
     if (Z.TWO.equals(p)) {
@@ -313,4 +404,5 @@ public final class QuadraticCongruence {
     final Z n = new Z(args[3]);
     System.out.println(solve(a, b, c, n));
   }
+
 }

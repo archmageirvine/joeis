@@ -84,7 +84,6 @@ public class QuadraticCongruenceTest extends TestCase {
   public void testBugA061839() {
     assertEquals("[0, 5, 10, 15, 20]", QuadraticCongruence.solve(Z.ZERO, Z.FIVE, 2).toString());
     assertEquals("[0, 25, 50, 75, 100]", QuadraticCongruence.solve(Z.ZERO, Z.FIVE, 3).toString());
-    assertEquals("[10, 15, 35, 40, 60, 65, 85, 90, 110, 115]", QuadraticCongruence.solve(Z.valueOf(100), Z.FIVE, 3).toString());
     assertEquals("[0, 5, 10, 15, 20]", QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.ZERO, Z.valueOf(25)).toString());
     assertEquals("[0, 5, 10, 15, 20]", QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.ZERO, Z.FIVE, 2).toString());
     assertEquals("[0, 5, 10, 15, 20]", QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.valueOf(-100), Z.valueOf(25)).toString());

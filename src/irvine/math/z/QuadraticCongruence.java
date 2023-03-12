@@ -31,7 +31,7 @@ public final class QuadraticCongruence {
 
   /**
    * Solve <code>x^2=a (mod p)</code>
-   * @param a constant
+   * @param a ant
    * @param p modulus
    * @return solutions
    */
@@ -54,7 +54,7 @@ public final class QuadraticCongruence {
 
   /**
    * Solve <code>x^2=a (mod p^e)</code>
-   * @param a constant
+   * @param a ant
    * @param p modulus
    * @return solutions
    */
@@ -122,14 +122,14 @@ public final class QuadraticCongruence {
       final Collection<Z> prev = solve(a, p, e - 1);
       final TreeSet<Z> res = new TreeSet<>();
       for (final Z x : prev) {
-          final Z x2 = x.multiply2();
-          final Z[] euc = x2.extendedGcd(pe1);
-          final Z z = x.subtract(x.square().subtract(a).multiply(euc[1])).mod(pe);
-          if (z.square().subtract(a).mod(pe).isZero()) {
-            // todo this check should be unnecessary ??
-            res.add(z);
-            res.add(pe.subtract(z));
-          }
+        final Z x2 = x.multiply2();
+        final Z[] euc = x2.extendedGcd(pe1);
+        final Z z = x.subtract(x.square().subtract(a).multiply(euc[1])).mod(pe);
+        if (z.square().subtract(a).mod(pe).isZero()) {
+          // todo this check should be unnecessary ??
+          res.add(z);
+          res.add(pe.subtract(z));
+        }
       }
       if (VERBOSE) {
         System.out.println(StringUtils.rep(' ', sIndent) + "Returning from Hensel with " + res);
@@ -281,8 +281,6 @@ public final class QuadraticCongruence {
       System.out.println(StringUtils.rep(' ', sIndent) + "Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + p + "^" + e + ") with discriminant " + d + " jacobi=" + d.jacobi(pe));
     }
 
-    // todo the following shortcut does not work properly?
-    // todo commenting it out does seem to work, but it then way too slow
     if (b.mod(pe).isZero() && Z.ONE.equals(a) && !Z.TWO.equals(p)) {
       if (!Z.TWO.equals(p) && !a.mod(p).isZero()) {
         return solveQuadraticEqModPowerOfP(a, b, c, p, e);
@@ -292,7 +290,6 @@ public final class QuadraticCongruence {
         }
         sIndent += 2;
         final Collection<Z> res = solve(pe.subtract(c), p, e);
-        System.out.println(StringUtils.rep(' ', sIndent) + res + " cf. " + solveQuadraticEqModPowerOfP(a, b, c, p, e));
         sIndent -= 2;
         return res;
       }
@@ -312,26 +309,27 @@ public final class QuadraticCongruence {
       return res;
     }
 
-    final int jacobi = d.jacobi(pe);
-    switch (jacobi) {
-      case -1:
-        return Collections.emptySet();
-      case 0:
-        return lift(new ArrayList<>(), p.subtract(b).modMultiply(a.multiply2().extendedGcd(pe)[1], p), a, b, c, p, pe);
-      default: // 1
-        // May not work because 2a in 2^k problematic
-        final TreeSet<Z> res = new TreeSet<>();
-        final Z[] euc = a.multiply2().extendedGcd(pe);
-        sIndent += 2;
-        for (final Z s : solve(d, p, e)) {
-          res.add(s.subtract(b).modMultiply(euc[1], pe));
-          if (VERBOSE) {
-            System.out.println(StringUtils.rep(' ', sIndent) + "after processing solution " + s + " res is now: " + res);
-          }
-        }
-        sIndent -= 2;
-        return res;
-    }
+    return solveQuadraticEqModPowerOfP(a, b, c, p, e);
+//    final int jacobi = d.jacobi(pe);
+//    switch (jacobi) {
+//      case -1:
+//        return Collections.emptySet();
+//      case 0:
+//        return lift(new ArrayList<>(), p.subtract(b).modMultiply(a.multiply2().extendedGcd(pe)[1], p), a, b, c, p, pe);
+//      default: // 1
+//        // May not work because 2a in 2^k problematic
+//        final TreeSet<Z> res = new TreeSet<>();
+//        final Z[] euc = a.multiply2().extendedGcd(pe);
+//        sIndent += 2;
+//        for (final Z s : solve(d, p, e)) {
+//          res.add(s.subtract(b).modMultiply(euc[1], pe));
+//          if (VERBOSE) {
+//            System.out.println(StringUtils.rep(' ', sIndent) + "after processing solution " + s + " res is now: " + res);
+//          }
+//        }
+//        sIndent -= 2;
+//        return res;
+//    }
   }
 
   /**
@@ -405,4 +403,95 @@ public final class QuadraticCongruence {
     System.out.println(solve(a, b, c, n));
   }
 
+//  private static Set<Z> SolveQuadraticEqModPowerOf2(final int exponent, int factorIndex, Z pValA, Z pValB, Z pValC) {
+//    int expon = exponent;
+//    // ax^2 + bx + c = 0 (mod 2^expon)
+//    // This follows the paper Complete solving the quadratic equation mod 2^n
+//    // of Dehnavi, Shamsabad and Rishakani.
+//    // Get odd part of A, B and C and number of bits to zero.
+//    Z ValAOdd = pValA.makeOdd();
+//    long bitsAZero = pValA.auxiliary();
+//    Z ValBOdd = pValB.makeOdd(); // todo not used?
+//    long bitsBZero = pValB.auxiliary();
+//    Z ValCOdd = pValC.makeOdd();
+//    int bitsCZero = (int) pValC.auxiliary();
+//
+//    if ((bitsAZero > 0) && (bitsBZero > 0) && (bitsCZero > 0)) {
+//      long minExpon = bitsAZero;
+//      if (minExpon < bitsBZero) {
+//        minExpon = bitsBZero;
+//      }
+//      if (minExpon < bitsCZero) {
+//        minExpon = bitsCZero;
+//      }
+//      bitsAZero -= minExpon;
+//      bitsBZero -= minExpon;
+//      bitsCZero -= minExpon;
+//      expon -= minExpon;
+//    }
+//    if (((bitsAZero == 0) && (bitsBZero == 0) && (bitsCZero == 0)) ||
+//      ((bitsAZero > 0) && (bitsBZero > 0) && (bitsCZero == 0))) {
+//      return Collections.emptySet();   // No solutions, so go out.
+//    }
+//    if ((bitsAZero == 0) && (bitsBZero > 0)) {           // The solution in this case requires square root.
+//      // compute s = ((b/2)^2 - a*c)/a^2, q = odd part of s,
+//      // r = maximum exponent of power of 2 that divides s.
+//      Z tmp1 = pValB.divide2().square().subtract(pValA.multiply(pValC));
+//      Z K1 = Z.ONE.shiftLeft(expon).subtract(1);
+//      ValCOdd = tmp1.and(K1); // (b/2) - a*c mod 2^n
+//      //ComputeInversePower2(ValAOdd.limbs, tmp2.limbs, tmp1.limbs);
+//      Z tmp2 = ValAOdd.modInverse(Z.ONE.shiftLeft(expon));
+//      ValCOdd = ValCOdd.multiply(tmp2).and(K1);  // ((b/2) - a*c)/a mod 2^n
+//      ValCOdd = ValCOdd.multiply(tmp2).and(K1);  // ((b/2) - a*c)/a^2 mod 2^n
+//      Z sqrRoot;
+//      if (ValCOdd.isZero()) {         // s = 0, so its square root is also zero.
+//        sqrRoot = Z.ZERO;
+//        expon -= expon / 2;
+//      } else {
+//        //DivideBigNbrByMaxPowerOf2(&bitsCZero, ValCOdd.limbs, &ValCOdd.nbrLimbs);
+//        ValCOdd = ValCOdd.shiftRight(bitsCZero);
+//        // At this moment, bitsCZero = r and ValCOdd = q.
+//        if ((!ValCOdd.and(Z.SEVEN).equals(Z.ONE) || (bitsCZero & 1) == 1)) {
+//          return Collections.emptySet();          // q != 1 or p2(r) == 0, so go out.
+//        }
+//        if (expon < 2) {                        // Modulus is 2.
+//          sqrRoot = bitsCZero > 0 ? Z.ZERO : Z.ONE;
+//        } else {
+//          // Compute sqrRoot as the square root of ValCOdd.
+//          expon -= bitsCZero / 2;
+//          //ComputeSquareRootModPowerOf2(expon, bitsCZero);
+//          sqrRoot = solve(ValCOdd, Z.TWO, expon).iterator().next();
+//          expon--;
+//          if (expon == (bitsCZero / 2)) {
+//            expon++;
+//          }
+//        }
+//      }
+//      // x = sqrRoot - b/2a.
+//      K1 = Z.ONE.shiftLeft(expon).subtract(1);
+//      //ComputeInversePower2(ValAOdd.limbs, tmp2.limbs, tmp1.limbs);
+//      tmp2 = ValAOdd.modInverse(Z.ONE.shiftLeft(expon));
+//      tmp1 = pValB.divide2().multiply(tmp2).negate().and(K1); // -b / 2a mod 2^expon
+//      Z soln1 = tmp1.add(sqrRoot).and(K1);
+//      Z soln2 = tmp1.subtract(sqrRoot).and(K1);
+//    } else if ((bitsAZero == 0) && (bitsBZero == 0)) {
+//      Z Quadr = pValA.multiply2(); // 2a
+//      Z Linear = pValB; // b
+//      Z Const = pValC.divide2(); // c / 2
+//      Z soln1 = findQuadraticSolution(common.quad.Solution1[factorIndex], expon - 1).multiply2();
+//
+//      Quadr = pValA.multiply2();
+//      Linear = Quadr.add(pValB); // 2a+b
+//      Const = pValA.add(pValB).add(pValC).divide2(); // (a+b+c)/2
+//      Z soln2 = findQuadraticSolution(common.quad.Solution2[factorIndex], expon - 1).multiply2().subtract(1);
+//    } else {
+//      Quadr = pValA;
+//      Linear = pValB;
+//      Const = pValC;
+//      Z soln1 = findQuadraticSolution(common.quad.Solution1[factorIndex], expon);
+//      sol2Invalid = true;
+//    }
+//    final Z Q = Z.ONE.shiftLeft(expon);
+//    return res;
+//  }
 }

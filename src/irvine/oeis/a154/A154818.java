@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A154818 Numbers n such that n^4 contains every digit exactly twice.
+ * A154818 Numbers k such that k^4 contains every digit exactly twice.
  * @author Georg Fischer
  */
 public class A154818 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a267;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A267309 Number of discrete vectors with integral components and integral length &lt;= n in a 3-dimensional vectorspace (Partial sums of A267651).
+ * A267309 Number of discrete vectors with integral components and integral length &lt;= n in a 3-dimensional vectorspace (Partial sums of A016725).
  * @author Sean A. Irvine
  */
 public class A267309 extends PartialSumSequence {

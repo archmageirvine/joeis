@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061859.
+ * A061897 Square table by antidiagonals of number of routes of length 2k+n on the sides of a 2n-gon from a point to its opposite point.
  * @author Sean A. Irvine
  */
 public class A061897 extends Sequence0 {

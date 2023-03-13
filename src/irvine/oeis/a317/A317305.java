@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a174.A174973;
 
 /**
- * A317305 Sum of divisors of the numbers whose divisors increase by a factor of 2 or less.
+ * A317305 Sum of divisors of the n-th number whose divisors increase by a factor of 2 or less.
  * @author Georg Fischer
  */
 public class A317305 extends A174973 {

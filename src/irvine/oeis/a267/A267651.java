@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a016.A016725;
 
 /**
- * A267651 Number of ways to write n^2 as a sum of three squares: a(n) = A005875(n^2).
+ * A267651 Duplicate of A016725.
  * Same as A016725 for n &gt; 0. 
  * @author Georg Fischer
  */

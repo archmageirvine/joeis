@@ -14,7 +14,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A061859.
+ * A061863 Numbers that are the product of the squares of some subset of their digits.
  * @author Sean A. Irvine
  */
 public class A061863 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
- * A061859.
+ * A061901 Number of distinct numbers that can be formed from the digits of n.
  * @author Sean A. Irvine
  */
 public class A061901 extends Sequence0 {

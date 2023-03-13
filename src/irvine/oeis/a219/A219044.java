@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A219044 Numbers n such that 3^n + 26 is prime.
+ * A219044 Numbers k such that 3^k + 26 is prime.
  * @author Georg Fischer
  */
 public class A219044 extends PrimePositionSubsequence {

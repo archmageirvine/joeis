@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061859.
+ * A061865 Triangle in which the k-th item in the n-th row (both starting from 1) is the number of ways in which we can add k distinct integers from 1 to n, in such a way that the sum is divisible by k.
  * @author Sean A. Irvine
  */
 public class A061865 extends Sequence1 {

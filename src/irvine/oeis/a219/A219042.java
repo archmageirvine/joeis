@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A219042 Numbers n such that 3^n + 22 is prime.
+ * A219042 Numbers k such that 3^k + 22 is prime.
  * @author Georg Fischer
  */
 public class A219042 extends PrimePositionSubsequence {

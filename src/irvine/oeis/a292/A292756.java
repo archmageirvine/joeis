@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A292756 E.g.f.: exp(x)*(tan(x)+sec(x))^2.
+ * A292756 Expansion of e.g.f. exp(x)*(tan(x)+sec(x))^2.
  * E.g.f.: exp(x)*(tan(x)+sec(x))^2
  * @author Georg Fischer
  */

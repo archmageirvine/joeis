@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A061859.
+ * A061864 Odd numbers that are the sum of two numbers with the same digits.
  * @author Sean A. Irvine
  */
 public class A061864 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.recur.PaddingSequence;
 
 
 /**
- * A246578 G.f.: (Product_{r&gt;=1} (1 - x^r))*x^(k^2)/Product_{i=1..k} ((1-x^i)^2) with k=4.
+ * A246578 Expansion of g.f. (Product_{r&gt;=1} (1 - x^r))*x^(k^2)/Product_{i=1..k} ((1-x^i)^2) with k=4.
  * @author Georg Fischer
  */
 public class A246578 extends EulerTransform {

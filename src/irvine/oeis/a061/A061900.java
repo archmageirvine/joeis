@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000217;
 
 /**
- * A061859.
+ * A061900 Triangular numbers that are not squarefree.
  * @author Sean A. Irvine
  */
 public class A061900 extends FilterSequence {

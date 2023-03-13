@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a065.A065091;
 
 /**
- * A061847.
+ * A061847 Circulant self-complementary undirected p^2-graphs up to rotations only, indexed by odd primes p.
  * @author Sean A. Irvine
  */
 public class A061847 extends A065091 {

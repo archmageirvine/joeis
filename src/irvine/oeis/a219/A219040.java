@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A219040 Numbers n such that 3^n + 20 is prime.
+ * A219040 Numbers k such that 3^k + 20 is prime.
  * @author Georg Fischer
  */
 public class A219040 extends PrimePositionSubsequence {

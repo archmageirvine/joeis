@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A061859.
+ * A061899 Fibonacci numbers that are not squarefree.
  * @author Sean A. Irvine
  */
 public class A061899 extends FilterSequence {

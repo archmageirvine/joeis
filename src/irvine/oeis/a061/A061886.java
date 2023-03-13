@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a060.A060984;
 
 /**
- * A061859.
+ * A061886 Largest square less than or equal to sum of previous terms.
  * @author Sean A. Irvine
  */
 public class A061886 extends DifferenceSequence {

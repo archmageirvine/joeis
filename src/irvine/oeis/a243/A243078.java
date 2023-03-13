@@ -8,7 +8,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A243078 Numbers n such that n!3 - 3^2 is prime, where n!3 = n!!! is a triple factorial number (A007661).
+ * A243078 Numbers k such that k!3 - 3^2 is prime, where k!3 = k!!! is a triple factorial number (A007661).
  * @author Georg Fischer
  */
 public class A243078 extends PrimePositionSubsequence {

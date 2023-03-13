@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A057438 a(1) = 1; a(n+1) = product_{k = 1 to n} [a(k)] *sum_{j = 1 to n} [1/a(j)].
+ * A057438 a(1) = 1; a(n+1) = (Product_{k = 1..n} [a(k)]) * (Sum_{j = 1..n} [1/a(j)]).
  * @author Sean A. Irvine
  */
 public class A057438 extends Sequence1 {

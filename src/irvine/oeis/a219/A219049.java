@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A219049 Numbers n such that 3^n -32 is prime.
+ * A219049 Numbers k such that 3^k - 32 is prime.
  * @author Georg Fischer
  */
 public class A219049 extends PrimePositionSubsequence {

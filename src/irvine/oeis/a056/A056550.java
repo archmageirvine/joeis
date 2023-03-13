@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000203;
 
 /**
- * A056550 Numbers n such that sum_{k=1..n} sigma(k) is divisible by n, where sigma(k) = sum of divisors of k (A000203).
+ * A056550 Numbers k such that Sum_{j=1..k} sigma(j) is divisible by k, where sigma(j) = sum of divisors of j (A000203).
  * @author Sean A. Irvine
  */
 public class A056550 extends A000203 {

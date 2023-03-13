@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061849.
+ * A061850 Squares whose consecutive digits vary by at most 1.
  * @author Sean A. Irvine
  */
 public class A061850 extends Sequence0 {

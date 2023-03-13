@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a100.A100706;
 
 /**
- * A180027 Partial sums of sigma_A100706(n).
+ * A180027 Partial sums of A100706.
  * @author Sean A. Irvine
  */
 public class A180027 extends PartialSumSequence {

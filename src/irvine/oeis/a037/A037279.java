@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A037279 If n is composite, replace n with the concatenation of its proper divisors, otherwise a(n) = n.
+ * A037279 If n is composite, replace n with the concatenation of its nontrivial divisors, otherwise a(n) = n.
  * @author Sean A. Irvine
  */
 public class A037279 extends Sequence1 {

@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 
 /**
- * A061859.
+ * A061898 Swap each prime in factorization of n with "neighbor" prime.
  * @author Sean A. Irvine
  */
 public class A061898 extends Sequence1 {

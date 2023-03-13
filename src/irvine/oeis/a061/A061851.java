@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006995;
 
 /**
- * A061849.
+ * A061851 Digital representation of n contains only 1's and 0's, is palindromic and contains no singleton 1's or 0's.
  * @author Sean A. Irvine
  */
 public class A061851 extends A006995 {

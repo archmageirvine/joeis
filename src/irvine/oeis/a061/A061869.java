@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000290;
 
 /**
- * A061859.
+ * A061869 Squares whose sum of digits as well as product of digits is a square (allowing zero).
  * @author Sean A. Irvine
  */
 public class A061869 extends A000290 {

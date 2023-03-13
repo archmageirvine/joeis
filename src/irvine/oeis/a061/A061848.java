@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a065.A065091;
 
 /**
- * A061848.
+ * A061848 An intermediate sequence for nonisomorphic circulant self-complementary undirected p^2-graphs, indexed by odd primes p.
  * @author Sean A. Irvine
  */
 public class A061848 extends A065091 {

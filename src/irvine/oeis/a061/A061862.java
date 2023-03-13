@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061859.
+ * A061862 Powerful numbers (2a): a sum of nonnegative powers of its digits.
  * @author Sean A. Irvine
  */
 public class A061862 extends Sequence1 {

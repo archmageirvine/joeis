@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061859.
+ * A061861 First two significant digits of 1/n written in decimal.
  * @author Sean A. Irvine
  */
 public class A061861 extends Sequence1 {

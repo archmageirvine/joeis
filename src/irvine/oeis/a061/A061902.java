@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 
 /**
- * A061859.
+ * A061902 Number of digits in n-th term of A061482.
  * @author Sean A. Irvine
  */
 public class A061902 extends A061482 {

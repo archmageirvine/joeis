@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A292757 E.g.f.: exp(x)*(1+tan(x))/((1-tan(x))*(tan(x)+sec(x))).
+ * A292757 Expansion of e.g.f. exp(x)*(1+tan(x))/((1-tan(x))*(tan(x)+sec(x))).
  * E.g.f.: exp(x)*(1+tan(x))/((1-tan(x))*(tan(x)+sec(x)))
  * @author Georg Fischer
  */

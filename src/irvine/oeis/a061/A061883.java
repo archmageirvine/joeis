@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a060.A060985;
 
 /**
- * A061859.
+ * A061883 Largest triangular number less than or equal to sum of previous terms with a(0)=1.
  * @author Sean A. Irvine
  */
 public class A061883 extends DifferenceSequence {

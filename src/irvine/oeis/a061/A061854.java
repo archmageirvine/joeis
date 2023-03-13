@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061849.
+ * A061854 Nondiving binary sequences: numbers which in base 2 have at least the same number of 1's as 0's and reading the binary expansion from left (msb) to right (least significant bit), the number of 0's never exceeds the number of 1's.
  * @author Sean A. Irvine
  */
 public class A061854 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A061859.
+ * A061889 a(n) = number of solutions to x_1 + x_2 + ... + x_n = x_{n+1} where each x_i is a factorial.
  * @author Sean A. Irvine
  */
 public class A061889 extends Sequence2 {

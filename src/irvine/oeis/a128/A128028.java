@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A128028 Numbers n such that (13^n - 3^n)/10 is prime.
+ * A128028 Numbers k such that (13^k - 3^k)/10 is prime.
  * @author Georg Fischer
  */
 public class A128028 extends PrimePositionSubsequence {

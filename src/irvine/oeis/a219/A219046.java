@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A219046 Numbers n such that 3^n + 28 is prime.
+ * A219046 Numbers k such that 3^k + 28 is prime.
  * @author Georg Fischer
  */
 public class A219046 extends PrimePositionSubsequence {

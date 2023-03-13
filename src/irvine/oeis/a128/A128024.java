@@ -5,7 +5,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A128024 Numbers n such that (7^n - 3^n)/4 is prime.
+ * A128024 Numbers k such that (7^k - 3^k)/4 is prime.
  * @author Georg Fischer
  */
 public class A128024 extends PrimePositionSubsequence {

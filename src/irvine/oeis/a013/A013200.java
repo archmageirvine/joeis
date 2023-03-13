@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A013200 log(sec(x)+arctanh(x))=x+1/3!*x^3+13/5!*x^5-48/6!*x^6+677/7!*x^7...
+ * A013200 Expansion of e.g.f. log(sec(x)+arctanh(x)).
  * @author Sean A. Irvine
  */
 public class A013200 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a065.A065091;
 
 /**
- * A061849.
+ * A061849 Non-Cayley-isomorphic circulant self-complementary undirected p^2-graphs, indexed by odd primes p.
  * @author Sean A. Irvine
  */
 public class A061849 extends A065091 {

@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A187819 Numbers n such that (9^n + 8^n)/17 is prime.
+ * A187819 Numbers k such that (9^k + 8^k)/17 is prime.
  * @author Georg Fischer
  */
 public class A187819 extends PrimePositionSubsequence {

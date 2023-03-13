@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a014.A014486;
 
 /**
- * A061849.
+ * A061855 Symmetric totally balanced binary sequences: those terms of A014486 which are equal to their reversed complement.
  * @author Sean A. Irvine
  */
 public class A061855 extends FilterSequence {

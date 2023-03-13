@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061839 a(n+1) is the smallest square ending with a(n), initial term is 5.
+ * A061857 Triangle in which the k-th item in the n-th row (both starting from 1) is the number of ways in which we can add 2 distinct integers from 1 to n in such a way that the sum is divisible by k.
  * @author Sean A. Irvine
  */
 public class A061857 extends Sequence1 {

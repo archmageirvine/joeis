@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A219050 Numbers n such that 3^n + 34 is prime.
+ * A219050 Numbers k such that 3^k + 34 is prime.
  * @author Georg Fischer
  */
 public class A219050 extends PrimePositionSubsequence {

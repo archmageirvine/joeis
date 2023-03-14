@@ -3,20 +3,23 @@ package irvine.oeis.a074;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007504;
 
 /**
  * A074370 Sum of the divisors of Sum_{i=1..n} prime(i).
  * @author Georg Fischer
  */
-public class A074370 extends A007504 {
+public class A074370 extends Sequence1 {
+
+  private final A007504 mSeq = new A007504();
 
   {
-    super.next();
+    mSeq.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).sigma();
+    return Jaguar.factor(mSeq.next()).sigma();
   }
 }

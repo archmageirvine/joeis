@@ -3,15 +3,19 @@ package irvine.oeis.a117;
 
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003622;
 
 /**
  * A117722 a(n) = A000045(A003622(n)).
  * @author Georg Fischer
  */
-public class A117722 extends A003622 {
+public class A117722 extends Sequence0 {
+
+  private final A003622 mSeq = new A003622();
+
   @Override
   public Z next() {
-    return Fibonacci.fibonacci(super.next().intValue());
+    return Fibonacci.fibonacci(mSeq.next().intValue());
   }
 }

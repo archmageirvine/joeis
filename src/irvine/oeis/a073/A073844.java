@@ -3,20 +3,23 @@ package irvine.oeis.a073;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a057.A057137;
 
 /**
  * A073844 a(1) = 1, a(n) = largest prime divisor of A057137(n).
  * @author Georg Fischer
  */
-public class A073844 extends A057137 {
+public class A073844 extends Sequence1 {
+
+  private final A057137 mSeq = new A057137();
 
   {
-    super.next();
+    mSeq.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).largestPrimeFactor();
+    return Jaguar.factor(mSeq.next()).largestPrimeFactor();
   }
 }

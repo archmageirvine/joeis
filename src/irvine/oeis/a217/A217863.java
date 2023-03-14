@@ -3,21 +3,24 @@ package irvine.oeis.a217;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003418;
 
 /**
  * A217863 a(n) = phi(lcm(1,2,3,...,n)), where phi is Euler's totient function.
  * @author Georg Fischer
  */
-public class A217863 extends A003418 {
+public class A217863 extends Sequence1 {
+
+  private final A003418 mSeq = new A003418();
 
   {
-    super.next();
+    mSeq.next();
   }
 
 
   @Override
   public Z next() {
-    return Euler.phi(super.next());
+    return Euler.phi(mSeq.next());
   }
 }

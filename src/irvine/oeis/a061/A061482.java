@@ -11,6 +11,10 @@ import irvine.oeis.MemorySequence;
 public class A061482 extends MemorySequence {
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
   protected Z computeNext() {
     final int n = size();
     if (n < 2) {

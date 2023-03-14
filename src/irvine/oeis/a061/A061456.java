@@ -10,6 +10,11 @@ import irvine.oeis.a060.A060032;
 public class A061456 extends A060032 {
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   public Z next() {
     final String t = super.next().toString();
     Z r = Z.ZERO;

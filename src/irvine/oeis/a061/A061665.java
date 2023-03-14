@@ -5,13 +5,13 @@ import java.util.Arrays;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A061665 Numbers n whose digits in their prime factorization are the same as those of the prime factorization of n+1.
  * @author Sean A. Irvine
  */
-public class A061665 extends Sequence1 {
+public class A061665 extends Sequence0 {
 
   private long mN = 8762;
 

@@ -23,7 +23,7 @@ public class A061839 extends Sequence1 {
       final TreeSet<Z> solns = new TreeSet<>(QuadraticCongruence.solve(Z.ONE, Z.ZERO, mA.negate(), mMod));
       while (true) {
         final Z s = solns.pollFirst();
-        Z sq = s.square();
+        final Z sq = s.square();
         if (sq.compareTo(mA) <= 0) {
           solns.add(s.add(mMod));
         } else {

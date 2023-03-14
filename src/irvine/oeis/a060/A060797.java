@@ -1,6 +1,7 @@
 package irvine.oeis.a060;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a002.A002110;
 
 /**
@@ -8,9 +9,10 @@ import irvine.oeis.a002.A002110;
  * @author Sean A. Irvine
  * @author Georg Fischer
  */
-public class A060797 extends A002110 {
+public class A060797 extends AbstractSequence {
 
   private int mRoot;
+  private final A002110 mSeq = new A002110();
 
   /** Construct the sequence. */
   public A060797() {
@@ -23,14 +25,15 @@ public class A060797 extends A002110 {
    * @param root take this root of A002110(n)
    */
   public A060797(final int offset, final int root) {
+    super(offset);
     mRoot = root;
     if (offset == 1) {
-      super.next();
+      mSeq.next();
     }
   }
 
   @Override
   public Z next() {
-    return super.next().root(mRoot);
+    return mSeq.next().root(mRoot);
   }
 }

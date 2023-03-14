@@ -3,15 +3,19 @@ package irvine.oeis.a104;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a165.A165247;
 
 /**
  * A104482 Number of distinct prime divisors of 11...119 (with n 1's).
  * @author Georg Fischer
  */
-public class A104482 extends A165247 {
+public class A104482 extends Sequence0 {
+
+  private final A165247 mSeq = new A165247();
+
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(super.next()).omega());
+    return Z.valueOf(Jaguar.factor(mSeq.next()).omega());
   }
 }

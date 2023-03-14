@@ -179,7 +179,7 @@ public final class QuadraticCongruence {
     Z aOdd = a;
     int bitsAZero = 0;
     while (true) {
-      Z tmp1 = aOdd.mod(prime);
+      final Z tmp1 = aOdd.mod(prime);
       if (aOdd.signum() == -1) {
         aOdd = aOdd.add(prime);
       }
@@ -232,7 +232,7 @@ public final class QuadraticCongruence {
     }
     final TreeSet<Z> res = new TreeSet<>();
     final int correctBits = expon - deltaZeros;
-    Z q = prime.pow(correctBits);
+    final Z q = prime.pow(correctBits);
     // Compute x = (b + sqrt(discriminant)) / (-2a) and x = (b - sqrt(discriminant)) / (-2a)
     final Z[] qr1 = b.add(sqrRoot).divideAndRemainder(prime.pow(bitsAZero));
     if (qr1[1].isZero()) {

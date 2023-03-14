@@ -3,20 +3,23 @@ package irvine.oeis.a067;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a244.A244174;
 
 /**
  * A067437 Number of distinct prime factors in binomial(2*n,n)+1.
  * @author Georg Fischer
  */
-public class A067437 extends A244174 {
+public class A067437 extends Sequence1 {
+
+  private final A244174 mSeq = new A244174();
 
   {
-    super.next();
+    mSeq.next();
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(super.next()).omega());
+    return Z.valueOf(Jaguar.factor(mSeq.next()).omega());
   }
 }

@@ -3,19 +3,22 @@ package irvine.oeis.a069;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence2;
 
 /**
  * A069460 Greatest prime factor of prime(n)^n - 1.
  * @author Georg Fischer
  */
-public class A069460 extends A069459 {
+public class A069460 extends Sequence2 {
+
+  private final A069459 mSeq = new A069459();
 
   {
-    super.next();
+    mSeq.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).largestPrimeFactor();
+    return Jaguar.factor(mSeq.next()).largestPrimeFactor();
   }
 }

@@ -12,7 +12,6 @@ public class A079584 extends A000142 {
 
   /** Construct the sequence. */
   public A079584() {
-    setOffset(1);
     super.next();
   }
   

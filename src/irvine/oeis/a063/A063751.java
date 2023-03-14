@@ -10,6 +10,12 @@ import irvine.oeis.a002.A002477;
  * @author Georg Fischer
  */
 public class A063751 extends A002477 {
+
+  @Override
+  public int getOffset() {
+    return 0;
+  }
+
   @Override
   public Z next() {
     return Jaguar.factor(super.next()).phi();

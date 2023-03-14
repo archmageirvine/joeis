@@ -3,20 +3,23 @@ package irvine.oeis.a219;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000032;
 
 /**
  * A219188 Sum of prime divisors (with repetition) of Lucas(n).
  * @author Georg Fischer
  */
-public class A219188 extends A000032 {
+public class A219188 extends Sequence1 {
+
+  private final A000032 mSeq = new A000032();
 
   {
-    super.next();
+    mSeq.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).sopfr();
+    return Jaguar.factor(mSeq.next()).sopfr();
   }
 }

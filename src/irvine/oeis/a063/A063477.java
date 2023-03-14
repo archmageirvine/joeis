@@ -16,6 +16,11 @@ public class A063477 extends A000045 {
   }
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   public Z next() {
     return Jaguar.factor(super.next()).sigma();
   }

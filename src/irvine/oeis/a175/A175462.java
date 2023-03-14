@@ -3,16 +3,19 @@ package irvine.oeis.a175;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004770;
 
 /**
  * A175462 Number of divisors of integers of form 5 + 8n.
  * @author Georg Fischer
  */
-public class A175462 extends A004770 {
+public class A175462 extends Sequence0 {
+
+  private final A004770 mSeq = new A004770();
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).sigma0();
+    return Jaguar.factor(mSeq.next()).sigma0();
   }
 }

@@ -24,7 +24,7 @@ public class A061816 extends Sequence0 {
       m = m.divide(10);
     }
     while (true) {
-      Z t = m.multiply(++k);
+      final Z t = m.multiply(++k);
       if (ZUtils.isPalindrome(t, 10)) {
         return t;
       }

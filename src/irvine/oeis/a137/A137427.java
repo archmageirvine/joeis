@@ -3,20 +3,23 @@ package irvine.oeis.a137;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a069.A069891;
 
 /**
  * A137427 Squarefree part of partial sum of squarefree part of n.
  * @author Georg Fischer
  */
-public class A137427 extends A069891 {
+public class A137427 extends Sequence1 {
+
+  private final A069891 mSeq = new A069891();
 
   {
-    super.next();
+    mSeq.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).core();
+    return Jaguar.factor(mSeq.next()).core();
   }
 }

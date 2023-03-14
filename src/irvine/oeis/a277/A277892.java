@@ -3,20 +3,23 @@ package irvine.oeis.a277;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a048.A048675;
 
 /**
  * A277892 a(n) = A001222(A048675(n)).
  * @author Georg Fischer
  */
-public class A277892 extends A048675 {
+public class A277892 extends Sequence2 {
+
+  private final A048675 mSeq = new A048675();
 
   {
-    super.next();
+    mSeq.next();
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(super.next()).bigOmega());
+    return Z.valueOf(Jaguar.factor(mSeq.next()).bigOmega());
   }
 }

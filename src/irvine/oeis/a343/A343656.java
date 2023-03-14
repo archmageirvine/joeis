@@ -3,16 +3,19 @@ package irvine.oeis.a343;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a009.A009998;
 
 /**
  * A343656 Array read by antidiagonals where A(n,k) is the number of divisors of n^k.
  * @author Georg Fischer
  */
-public class A343656 extends A009998 {
+public class A343656 extends Sequence1 {
+
+  private final A009998 mSeq = new A009998();
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).sigma0();
+    return Jaguar.factor(mSeq.next()).sigma0();
   }
 }

@@ -3,20 +3,23 @@ package irvine.oeis.a078;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a001.A001158;
 
 /**
  * A078552 Largest prime dividing sigma(3,n).
  * @author Georg Fischer
  */
-public class A078552 extends A001158 {
+public class A078552 extends Sequence2 {
+
+  private final A001158 mSeq = new A001158();
 
   {
-    super.next();
+    mSeq.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).largestPrimeFactor();
+    return Jaguar.factor(mSeq.next()).largestPrimeFactor();
   }
 }

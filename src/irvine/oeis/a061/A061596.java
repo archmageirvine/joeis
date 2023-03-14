@@ -3,13 +3,13 @@ package irvine.oeis.a061;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A061596 Product of digits + 1 is prime, product of digits - 1 is prime, sum of digits + 1 is prime and sum of digits - 1 is prime.
  * @author Sean A. Irvine
  */
-public class A061596 extends Sequence1 {
+public class A061596 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = 3;

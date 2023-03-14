@@ -16,8 +16,14 @@ public class A061775 extends MemorySequence {
 
   private final Fast mPrime = new Fast();
   private final MemorySequence mPrimePi = MemorySequence.cachedSequence(new PrependSequence(new A000720(), 0));
+
   {
     add(null); // 0th unused
+  }
+
+  @Override
+  public int getOffset() {
+    return 1;
   }
 
   @Override

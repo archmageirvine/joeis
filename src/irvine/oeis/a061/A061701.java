@@ -16,6 +16,11 @@ public class A061701 extends A061680 {
   private long mM = 0;
 
   @Override
+  public int getOffset() {
+    return 0;
+  }
+
+  @Override
   public Z next() {
     ++mN;
     while (mFirst.get(mN) == 0) {

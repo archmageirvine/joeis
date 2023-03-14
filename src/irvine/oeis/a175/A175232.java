@@ -3,21 +3,24 @@ package irvine.oeis.a175;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a001.A001923;
 
 /**
  * A175232 The smallest prime divisor of 1 + 2^2 + 3^3 + ... + n^n.
  * @author Georg Fischer
  */
-public class A175232 extends A001923 {
+public class A175232 extends Sequence2 {
+
+  private final A001923 mSeq = new A001923();
 
   {
-    super.next();
-    super.next();
+    mSeq.next();
+    mSeq.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).leastPrimeFactor();
+    return Jaguar.factor(mSeq.next()).leastPrimeFactor();
   }
 }

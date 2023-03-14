@@ -6,17 +6,18 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
 
 /**
  * A061864 Odd numbers that are the sum of two numbers with the same digits.
  * @author Sean A. Irvine
  */
-public class A061864 extends Sequence1 {
+public class A061864 extends Sequence0 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final TreeMap<Z, Integer> mSeeds = new TreeMap<>();
+
   {
     for (int k = 1; k < 10; ++k) {
       mSeeds.put(Z.valueOf(k), k);

@@ -12,7 +12,7 @@ public class A061890 extends FilterSequence {
 
   /** Construct the sequence. */
   public A061890() {
-    super(new A007504(), Z::isSquare);
+    super(1, new A007504(), Z::isSquare);
     next();
   }
 }

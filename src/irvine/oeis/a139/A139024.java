@@ -3,20 +3,23 @@ package irvine.oeis.a139;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a127.A127986;
 
 /**
  * A139024 Number of distinct prime factors of n! + 2^n - 1.
  * @author Georg Fischer
  */
-public class A139024 extends A127986 {
+public class A139024 extends Sequence1 {
+
+  private final A127986 mSeq = new A127986();
 
   {
-    super.next();
+    mSeq.next();
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(super.next()).omega());
+    return Z.valueOf(Jaguar.factor(mSeq.next()).omega());
   }
 }

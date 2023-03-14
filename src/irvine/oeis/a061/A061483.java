@@ -2,13 +2,13 @@ package irvine.oeis.a061;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A061483 Numerator of 1 + 1/2 + 2/3 + 3/4 + ... + (n-1)/n.
  * @author Sean A. Irvine
  */
-public class A061483 extends Sequence0 {
+public class A061483 extends Sequence1 {
 
   private Q mA = Q.ONE;
   private long mN = -2;

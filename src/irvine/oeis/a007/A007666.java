@@ -45,5 +45,4 @@ public class A007666 extends Sequence1 {
       }
     }
   }
-
 }

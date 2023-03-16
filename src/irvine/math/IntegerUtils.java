@@ -152,22 +152,6 @@ public final class IntegerUtils {
   }
 
   /**
-   * Compute the number of leading zeros in an integer.  On my machine
-   * this is faster than the built-in function.
-   *
-   * @param x value to count leading zeros of
-   * @return number of leading zeros
-   */
-  public static int nlz(final int x) {
-    if (x < 0) {
-      return 0;
-    } else {
-      final double d = x + 0.5;
-      return 1054 - (int) (Double.doubleToRawLongBits(d) >>> 52);
-    }
-  }
-
-  /**
    * Compute the greatest common denominator of two integers.
    *
    * @param a first integer
@@ -266,7 +250,7 @@ public final class IntegerUtils {
   }
 
   /**
-   * Return a string representation of a two dimensional integer array.
+   * Return a string representation of a two-dimensional integer array.
    * @param array array to get in string form
    * @return string representation
    */
@@ -393,19 +377,6 @@ public final class IntegerUtils {
       return suckInNumbers(r);
     } catch (final IOException e) {
       throw new RuntimeException(e);
-    }
-  }
-
-  /**
-   * Parse a value as decimal or hexadecimal depending on <code>0x</code> prefix.
-   * @param s string to parse
-   * @return value
-   */
-  public static int parseValue(final String s) {
-    if (s.startsWith("0x")) {
-      return Integer.parseInt(s.substring(2), 16);
-    } else {
-      return Integer.parseInt(s);
     }
   }
 

@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Random;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
@@ -380,21 +379,6 @@ public final class LongUtils {
     }
   }
 
-  private static final Random RANDOM = new Random(42);
-
-  /**
-   * Fill the array for random long values.  The seed for the first call to this
-   * function is always 42.  Hence a deterministic sequence of random values
-   * can be produced if this method is called in the same order in a different
-   * execution.
-   * @param v array to fill
-   */
-  public static void random(final long[] v) {
-    for (int i = 0; i < v.length; ++i) {
-      v[i] = RANDOM.nextLong();
-    }
-  }
-
   /**
    * Sum the contents of an arbitrary dimensioned primitive int or Integer array.
    * @param structure array
@@ -476,7 +460,6 @@ public final class LongUtils {
 
   /**
    * Return a 64-character string containing the binary value of <code>n</code>.
-   *
    * @param n number
    * @return padded binary form
    */

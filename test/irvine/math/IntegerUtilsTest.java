@@ -560,15 +560,6 @@ public class IntegerUtilsTest extends TestCase {
     }
   }
 
-  public void testNlzActual() {
-    assertEquals(32, IntegerUtils.nlz(0));
-    final Random r = new Random();
-    for (int k = 1; k < 10000; ++k) {
-      final int x = r.nextInt();
-      assertEquals(Integer.numberOfLeadingZeros(x), IntegerUtils.nlz(x));
-    }
-  }
-
   public void testGcd() {
     assertEquals(0, IntegerUtils.gcd(0, 0));
     assertEquals(42, IntegerUtils.gcd(0, 42));

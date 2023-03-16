@@ -418,17 +418,6 @@ public class LongUtilsTest extends TestCase {
     assertEquals(-23, suck[1]);
   }
 
-  public void testRandom() {
-    final long[] v = new long[3];
-    LongUtils.random(v);
-    assertTrue(v[0] != 0);
-    assertTrue(v[1] != 0);
-    assertTrue(v[2] != 0);
-    assertTrue(v[1] != v[0]);
-    assertTrue(v[1] != v[2]);
-    assertTrue(v[2] != v[0]);
-  }
-
   public void testMax() {
     assertEquals(10, LongUtils.max(10, 1));
     assertEquals(10, LongUtils.max(10, 10));

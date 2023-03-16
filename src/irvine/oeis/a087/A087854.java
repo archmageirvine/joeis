@@ -1,8 +1,8 @@
 package irvine.oeis.a087;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.z.Euler;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
@@ -31,7 +31,7 @@ public class A087854 extends Triangle {
     Z sum = Z.ZERO;
     for (final Z zd : Jaguar.factor(n).divisors()) {
       final int d = zd.intValue();
-      sum = sum.add(Stirling.secondKind(n / d, k).multiply(LongUtils.phi(d)));
+      sum = sum.add(Stirling.secondKind(n / d, k).multiply(Euler.phiAsLong(d)));
     }
     return sum.multiply(FACTORIAL.factorial(k)).divide(n);
   }

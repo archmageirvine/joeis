@@ -1,8 +1,8 @@
 package irvine.oeis.a006;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -23,7 +23,7 @@ public class A006390 extends Sequence0 {
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final long d = dd.longValue();
       if (d != mN) {
-        sum = sum.add(Binomial.binomial(4 * d, d).multiply(LongUtils.phi(mN / d)));
+        sum = sum.add(Binomial.binomial(4 * d, d).multiply(Euler.phiAsLong(mN / d)));
       }
     }
     sum = sum.add((mN & 1) == 0 ? Binomial.binomial(2 * mN, (mN - 2) / 2) : Binomial.binomial(2 * mN, (mN - 1) / 2).multiply(2 * mN).divide(mN + 1));

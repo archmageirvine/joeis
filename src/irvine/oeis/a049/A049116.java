@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.math.LongUtils;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A049116 extends Sequence1 {
     long n = ++mN;
     long max = (n & (n - 1)) == 0 ? n : 0;
     while (n != 1) {
-      n = LongUtils.phi(n);
+      n = Euler.phiAsLong(n);
       if ((n & (n - 1)) == 0) {
         max = Long.max(max, n);
       }

@@ -1,10 +1,10 @@
 package irvine.oeis.a052;
 
-import irvine.math.LongUtils;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.a050.A050383;
 
@@ -25,7 +25,7 @@ public class A052853 extends A050383 {
     mC.add(new Q(super.next().negate()));
     Q sum = Q.ZERO;
     for (int j = 1; j <= mN; ++j) {
-      sum = sum.add(RING.log1p(mC.substitutePower(j, mN), mN).coeff(mN).multiply(new Q(LongUtils.phi(j), j)));
+      sum = sum.add(RING.log1p(mC.substitutePower(j, mN), mN).coeff(mN).multiply(new Q(Euler.phiAsLong(j), j)));
     }
     return sum.negate().toZ();
   }

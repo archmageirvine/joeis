@@ -2,6 +2,7 @@ package irvine.oeis.a002;
 
 import irvine.math.LongUtils;
 import irvine.math.q.Q;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -49,7 +50,7 @@ public class A002729 implements Sequence {
         }
       }
     }
-    return s.divide(p).divide(LongUtils.phi(p));
+    return s.divide(p).divide(Euler.phiAsLong(p));
   }
 
   @Override

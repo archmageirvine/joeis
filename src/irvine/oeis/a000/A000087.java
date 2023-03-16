@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
@@ -48,12 +48,12 @@ public class A000087 extends Sequence1 {
     for (final Z d : Jaguar.factor(mN).divisors()) {
       final long dd = d.longValue();
       if (dd != mN && dd != 1) {
-        r = r.add(binomial3(dd).multiply(LongUtils.phi(mN / dd)));
+        r = r.add(binomial3(dd).multiply(Euler.phiAsLong(mN / dd)));
       }
     }
     // trivial divisor
     if (mN > 1) {
-      r = r.add(Z.THREE.multiply(LongUtils.phi(mN)));
+      r = r.add(Z.THREE.multiply(Euler.phiAsLong(mN)));
     }
     return r.divide(3 * mN);
   }

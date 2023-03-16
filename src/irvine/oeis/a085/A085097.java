@@ -2,6 +2,7 @@ package irvine.oeis.a085;
 
 import irvine.math.LongUtils;
 import irvine.math.Mobius;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -32,6 +33,6 @@ public class A085097 extends Sequence1 {
   public Z next() {
     ++mN;
     final long g = mN / LongUtils.gcd(mN, mM);
-    return Z.valueOf(LongUtils.phi(mN) * Mobius.mobius(g) / LongUtils.phi(g));
+    return Z.valueOf(Euler.phiAsLong(mN) * Mobius.mobius(g) / Euler.phiAsLong(g));
   }
 }

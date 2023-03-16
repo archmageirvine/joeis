@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
-import irvine.math.LongUtils;
 import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.PolynomialRingField;
@@ -12,6 +11,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -66,7 +66,7 @@ public class A007888 extends Sequence1 {
         final int dp = d / IntegerUtils.gcd(d, l);
         final int mobius = Mobius.mobius(dp);
         if (mobius != 0) {
-          final Q phi = new Q(LongUtils.phi(k / l), LongUtils.phi(dp));
+          final Q phi = new Q(Euler.phiAsLong(k / l), Euler.phiAsLong(dp));
           res = RING.signedAdd(mobius > 0, res, RING.monomial(phi, k - l));
         }
       }
@@ -104,7 +104,7 @@ public class A007888 extends Sequence1 {
                   final Polynomial<Q> betaPow = RING.pow(beta, s, mN - k * pow);
                   final Q chi = chi(h, s).divide(mF.factorial(s)).multiply(mobius);
                   final Q u = new Q(k, m).pow(pow);
-                  final Q c = chi.divide(m * (long) m).multiply(LongUtils.phi(d)).multiply(u);
+                  final Q c = chi.divide(m * (long) m).multiply(Euler.phiAsLong(d)).multiply(u);
                   final Polynomial<Q> t = RING.multiply(betaPow, c).shift(k * pow).truncate(mN);
                   gf = RING.add(gf, t);
                 }

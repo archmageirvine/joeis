@@ -4,6 +4,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -30,7 +31,7 @@ public class A005040 extends Sequence1 {
     for (final Z s : Jaguar.factor(d).divisors()) {
       final long ss = s.longValueExact();
       if (ss > 2) {
-        a = a.add(new Q(Binomial.binomial((4 * mN + 1) / ss, (mN - 1) / ss), Z.valueOf(4 * mN + 1)).multiply(LongUtils.phi(ss)));
+        a = a.add(new Q(Binomial.binomial((4 * mN + 1) / ss, (mN - 1) / ss), Z.valueOf(4 * mN + 1)).multiply(Euler.phiAsLong(ss)));
       }
     }
     return a.toZ().divide2();

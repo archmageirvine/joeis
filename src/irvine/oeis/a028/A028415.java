@@ -1,7 +1,7 @@
 package irvine.oeis.a028;
 
-import irvine.math.LongUtils;
 import irvine.math.q.Q;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +20,8 @@ public class A028415 extends Sequence1 {
 
   @Override
   public Z next() {
-    mSum = mSum.add(new Q(1L, LongUtils.phi(++mN)));
+    long n = ++mN;
+    mSum = mSum.add(new Q(1L, Euler.phiAsLong(n)));
     return select(mSum);
   }
 }

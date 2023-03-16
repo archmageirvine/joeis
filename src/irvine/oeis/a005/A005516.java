@@ -3,6 +3,7 @@ package irvine.oeis.a005;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -25,7 +26,7 @@ public class A005516 implements Sequence {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(LongUtils.gcd(mN, mK)).divisors()) {
       final int d = dd.intValueExact();
-      sum = sum.add(Binomial.binomial(mN / d, mK / d).multiply(LongUtils.phi(d)));
+      sum = sum.add(Binomial.binomial(mN / d, mK / d).multiply(Euler.phiAsLong(d)));
     }
     sum = sum.divide(mN);
     sum = sum.add(Binomial.binomial(((mN & 1) == 1 ? mN - 1 : mN - ((mK & 1) == 1 ? 2 : 0)) / 2, mK / 2));

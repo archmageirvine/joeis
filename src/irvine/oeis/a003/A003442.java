@@ -5,7 +5,6 @@ import java.util.HashMap;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
-import irvine.math.LongUtils;
 import irvine.math.MemoryFunction2;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.PolynomialRingField;
@@ -14,6 +13,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Pair;
@@ -87,7 +87,7 @@ public class A003442 implements Sequence {
         final int start = (Math.max(3, sumA) + dp - 1) / dp;
         for (int m = start; m <= n; ++m) {
           if (sumA <= m) {
-            Q c = new Q(mF.factorial(m - 1).multiply(LongUtils.phi(dp)), mF.factorial(m - sumA).multiply(dp));
+            Q c = new Q(mF.factorial(m - 1).multiply(Euler.phiAsLong(dp)), mF.factorial(m - sumA).multiply(dp));
             Polynomial<Q> v = RING.one();
             for (int i = 1; i < a.length; ++i) {
               if (a[i] > 0) {

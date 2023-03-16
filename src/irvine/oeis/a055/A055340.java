@@ -1,11 +1,11 @@
 package irvine.oeis.a055;
 
-import irvine.math.LongUtils;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -25,7 +25,7 @@ public class A055340 extends Sequence1 {
   private void step() {
     Polynomial<Polynomial<Q>> sum = RING.zero();
     for (int k = 1; k <= mN; ++k) {
-      sum = RING.add(sum, RING.multiply(RING.log1p(RING.negate(PolynomialUtils.innerSubstitute(RING, mGf.substitutePower(k, mN), k, mN)), mN), RING_Y.monomial(new Q(LongUtils.phi(k), k), 0)));
+      sum = RING.add(sum, RING.multiply(RING.log1p(RING.negate(PolynomialUtils.innerSubstitute(RING, mGf.substitutePower(k, mN), k, mN)), mN), RING_Y.monomial(new Q(Euler.phiAsLong(k), k), 0)));
     }
     mGf = RING.subtract(Y, sum).shift(1);
   }

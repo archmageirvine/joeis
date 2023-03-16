@@ -1,7 +1,7 @@
 package irvine.oeis.a011;
 
-import irvine.math.LongUtils;
 import irvine.math.Mobius;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -28,7 +28,7 @@ public class A011768 extends Sequence1 {
       Z sum = Z.valueOf(n).shiftLeft(n / 2);
       for (int d = 1; d <= n / 2; ++d) {
         if ((n / 2) % d == 0) {
-          sum = sum.add(Z.valueOf(LongUtils.phi(2L * d)).shiftLeft(n / 2 / d));
+          sum = sum.add(Z.valueOf(Euler.phiAsLong(2L * d)).shiftLeft(n / 2 / d));
         }
       }
       return sum;
@@ -43,7 +43,7 @@ public class A011768 extends Sequence1 {
       Z sum = Z.ZERO;
       for (int d = 1; d <= k; ++d) {
         if (k % d == 0) {
-          sum = sum.add(a(k, d).multiply(LongUtils.phi(d)));
+          sum = sum.add(a(k, d).multiply(Euler.phiAsLong(d)));
         }
       }
       t[k] = sum.add(e(k)).divide(4 * k);

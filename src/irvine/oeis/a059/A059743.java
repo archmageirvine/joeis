@@ -2,6 +2,7 @@ package irvine.oeis.a059;
 
 import irvine.math.LongUtils;
 import irvine.math.cr.CR;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -38,7 +39,7 @@ public class A059743 extends Sequence0 {
     Z sum = Z.ZERO;
     final CR t = CR.valueOf(mN).divide(CR.SQRT2);
     for (long k = 1; k <= t.floor().longValueExact(); ++k) {
-      sum = sum.add(LongUtils.phi(k));
+      sum = sum.add(Euler.phiAsLong(k));
     }
     for (long k = t.ceil().longValueExact(); k < mN; ++k) {
       sum = sum.add(b(k, LongUtils.sqrt(mN * mN - k * k)));

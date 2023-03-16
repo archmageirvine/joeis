@@ -3,7 +3,6 @@ package irvine.oeis.a342;
 import java.util.Arrays;
 import java.util.function.BiFunction;
 
-import irvine.math.LongUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.IntegerField;
@@ -12,6 +11,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
+import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
@@ -143,7 +143,7 @@ public class A342053 implements Sequence {
     final Polynomial<Polynomial<Z>> b = bgfRaise(invHelp(n / 2, ring.add(ring.one(), makeSquareBgfTr((s, q) -> mE2.apply(s, 0, q + 1), m / 2, n / 2, 1).shift(1)), fi).shift(1), 2);
     final Polynomial<Polynomial<Z>> c = PolynomialUtils.innerShift(ring, bgfRaise(invHelp(n / 2, makeSquareBgfTr((s, q) -> mE2.apply(s, 1, q + 1), m / 2, n / 2, 1).shift(1), fi).shift(1), 2), 1);
     final Polynomial<Polynomial<Z>> d = ring.multiply(bgfRaise(invHelp(n / 3, makeSquareBgfTr(mE3, m / 3, n / 3, 1), fi).shift(1), 3), TWO);
-    final Polynomial<Polynomial<Z>> e = PolynomialUtils.innerShift(ring, ring.sum(3, m, k -> ring.multiply(bgfRaise(bgfTrim(gr, m / k + 1, n / k + 1), k), Polynomial.create(LongUtils.phi(k)))), 1);
+    final Polynomial<Polynomial<Z>> e = PolynomialUtils.innerShift(ring, ring.sum(3, m, k -> ring.multiply(bgfRaise(bgfTrim(gr, m / k + 1, n / k + 1), k), Polynomial.create(Euler.phiAsLong((long) k)))), 1);
     final Polynomial<Polynomial<Z>> p = ring.add(a, b, c, d, e);
     return ring.integrate(ring.subtract(p.shift(-1), ring.x())).truncate(m);
   }

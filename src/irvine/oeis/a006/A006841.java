@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
-import irvine.math.LongUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -80,7 +80,7 @@ public class A006841 extends Sequence1 {
     for (int d = 1; d <= mN; d++) {
       if (mN % d == 0) {
         final int i = mN / d;
-        final Z t = Z.valueOf(LongUtils.phi(i)).square().multiply(Z.valueOf(i).pow(d)).multiply(mF.factorial(d));
+        final Z t = Z.valueOf(Euler.phiAsLong(i)).square().multiply(Z.valueOf(i).pow(d)).multiply(mF.factorial(d));
         wk1 = wk1.add(t);
       }
     }
@@ -121,7 +121,7 @@ public class A006841 extends Sequence1 {
     wk1 = Z.ZERO;
     for (int d = 1; d <= mN; d++) {
       if (mN % d == 0) {   // Take only factors of n
-        final Z numerator = mF.factorial(d).multiply(mN).multiply(LongUtils.phi(mN / d));
+        final Z numerator = mF.factorial(d).multiply(mN).multiply(Euler.phiAsLong(mN / d));
         if (((mN / d) & 1) == 1) {
           Z subSum = Z.ZERO;
           for (int l = 0; 2 * l <= d; l++) {

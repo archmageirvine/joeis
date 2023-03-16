@@ -2,7 +2,6 @@ package irvine.oeis.a288;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
-import irvine.math.LongUtils;
 import irvine.math.MemoryFunction;
 import irvine.math.group.IntegersModMul;
 import irvine.math.group.SymmetricGroup;
@@ -43,7 +42,7 @@ public class A288620 extends MemoryFunction<Integer, CycleIndex> implements Sequ
         ci.add(mm);
       }
     }
-    ci.multiply(new Q(1, LongUtils.phi(n)));
+    ci.multiply(new Q(1, Euler.phiAsLong((long) n)));
     return ci;
   }
 

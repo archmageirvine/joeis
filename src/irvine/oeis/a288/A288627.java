@@ -4,6 +4,7 @@ import irvine.math.LongUtils;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.util.Pair;
 
@@ -56,7 +57,7 @@ public class A288627 extends A288620 {
       rmm.setCoefficient(mm.getCoefficient());
       res.add(rmm);
     }
-    res.multiply(new Q(1, LongUtils.phi(n) * n));
+    res.multiply(new Q(1, Euler.phiAsLong((long) n) * n));
     return res;
   }
 }

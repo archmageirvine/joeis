@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
-import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -33,7 +33,7 @@ public class A006384 implements Sequence {
     for (int k = 1; k < mN; ++k) {
       three = three.multiply(Z.THREE);
       if (mN % k == 0) {
-        s = s.add(three.multiply(LongUtils.phi(mN / k)).multiply(Binomial.binomial(2 * k, k)));
+        s = s.add(three.multiply(Euler.phiAsLong(mN / k)).multiply(Binomial.binomial(2 * k, k)));
       }
     }
     s = s.add(three.multiply(Z.THREE).multiply(Binomial.binomial(2 * mN, mN)).multiply2().divide((mN + 1L) * (mN + 2L)));

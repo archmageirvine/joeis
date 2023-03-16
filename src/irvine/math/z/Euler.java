@@ -3,9 +3,8 @@ package irvine.math.z;
 import java.util.Arrays;
 import java.util.TreeSet;
 
-import irvine.factor.factor.Factorizer;
-import irvine.factor.factor.PrimeDivision;
-import irvine.factor.util.FactorSequence;
+import irvine.factor.factor.Jaguar;
+import irvine.factor.prime.Fast;
 import irvine.math.IntegerUtils;
 
 /**
@@ -14,11 +13,13 @@ import irvine.math.IntegerUtils;
  */
 public class Euler {
 
-  private static final Factorizer FACTOR = new PrimeDivision();
+  private static final int TABLE_BITS = 16;
+  private static final int TABLE_LIMIT = 1 << TABLE_BITS;
+  private static final Euler FIXED_TABLE = new Euler(TABLE_LIMIT);
+  private static final Fast PRIME = new Fast();
 
   /**
-   * Compute the Euler phi function of an isolated integer.  This is
-   * fast enough if you only want to do a few values.
+   * Compute the Euler phi function of an isolated integer.
    * @param n number to compute phi of
    * @return Euler totient value
    * @exception UnsupportedOperationException if the computation fails.
@@ -32,34 +33,88 @@ public class Euler {
     if (n.isProbablePrime()) {
       return n.subtract(Z.ONE);
     }
-    final FactorSequence fs = new FactorSequence(n);
-    FACTOR.factor(fs);
-    if (!fs.isComplete()) {
-      throw new UnsupportedOperationException();
+    if (n.bitLength() < Long.SIZE) {
+      return phi(n.longValue());
     }
-    return fs.phi();
+    return Jaguar.factor(n).phi();
   }
 
   /**
-   * Compute the Euler phi function of an isolated integer.  This is
-   * fast enough if you only want to do a few values.
+   * Compute the Euler phi function of an isolated integer.
    * @param n number to compute phi of
    * @return Euler totient value
    * @exception UnsupportedOperationException if the computation fails.
    * @exception IllegalArgumentException if <code>n</code> in less than 1.
-   * @exception NullPointerException if <code>n</code> is null.
+   */
+  public static long phiAsLong(final long n) {
+    if (n < 1) {
+      throw new IllegalArgumentException();
+    }
+    if (n <= TABLE_LIMIT) {
+      return FIXED_TABLE.phi((int) n);
+    }
+    // Handle powers of 2
+    if ((n & -n) == n) {
+      return n / 2;
+    }
+    // Handle even part
+    long m = n;
+    long two = 1;
+    while ((m & 1) == 0) {
+      two <<= 1;
+      m >>>= 1;
+    }
+    if (two > 1) {
+      two >>>= 1;
+    }
+    // Handle 3
+    long three = 1;
+    while (m % 3 == 0) {
+      three *= 3;
+      m /= 3;
+    }
+    if (three > 1) {
+      three /= 3;
+      three <<= 1;
+    }
+    // Handle 5
+    long five = 1;
+    while (m % 5 == 0) {
+      five *= 5;
+      m /= 5;
+    }
+    if (five > 1) {
+      five /= 5;
+      five <<= 2;
+    }
+    long phi = two * three * five;
+    if (PRIME.isPrime(n)) {
+      // Handle prime
+      return (m - 1) * phi;
+    } else if (m <= TABLE_LIMIT) {
+      return FIXED_TABLE.phi((int) m) * phi;
+    }
+    // It's generally better to look up the entire factorization, hence using n rather than m here.
+    return Jaguar.factor(n).phi().longValueExact();
+  }
+
+  /**
+   * Compute the Euler phi function of an isolated integer.
+   * @param n number to compute phi of
+   * @return Euler totient value
+   * @exception UnsupportedOperationException if the computation fails.
+   * @exception IllegalArgumentException if <code>n</code> in less than 1.
    */
   public static Z phi(final long n) {
-    return phi(Z.valueOf(n));
+    return Z.valueOf(phiAsLong(n));
   }
 
   private final int[] mPhi;
 
   /**
    * Precompute Euler phi function for all values up to the limit.  This will
-   * use extreme memory for large limits. For isolated values used the static
+   * use extreme memory for large limits. For isolated values use the static
    * method or <code>LongUtils.phi()</code>.
-   *
    * @param limit largest value
    */
   public Euler(final int limit) {
@@ -94,7 +149,6 @@ public class Euler {
 
   /**
    * Return the totient of <code>n</code> assuming in range.
-   *
    * @param n index
    * @return Euler totient value
    */
@@ -104,7 +158,6 @@ public class Euler {
 
   /**
    * Find solutions to the equation <code>phi(n) = m</code>.
-   *
    * @param m euler value
    * @return set of solutions
    */

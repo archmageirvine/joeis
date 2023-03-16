@@ -1,10 +1,10 @@
 package irvine.oeis.a052;
 
-import irvine.math.LongUtils;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -23,7 +23,7 @@ public class A052815 extends Sequence0 {
     Polynomial<Q> res = RING.zero();
     for (int d = 1; d <= n; ++d) {
       final Polynomial<Q> s = RING.log(t.substitutePower(d, n), n);
-      res = RING.add(res, RING.multiply(s, new Q(LongUtils.phi(d), d)));
+      res = RING.add(res, RING.multiply(s, new Q(Euler.phiAsLong(d), d)));
     }
     return res;
   }

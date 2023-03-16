@@ -1,6 +1,6 @@
 package irvine.oeis.a015;
 
-import irvine.math.LongUtils;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
@@ -16,7 +16,8 @@ public class A015126 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long phi = LongUtils.phi(++mN);
+    long n = ++mN;
+    final long phi = Euler.phiAsLong(n);
     if (mLeast.get(phi) == 0) {
       mLeast.set(phi, mN);
     }

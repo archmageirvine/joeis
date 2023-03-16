@@ -10,6 +10,7 @@ import irvine.oeis.a050.A050498;
  * @author Georg Fischer
  */
 public class A339883 extends A050498 {
+
   @Override
   public Z next() {
     return Euler.phi(super.next());

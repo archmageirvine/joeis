@@ -1,11 +1,11 @@
 package irvine.oeis.a055;
 
-import irvine.math.LongUtils;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
@@ -54,7 +54,7 @@ public class A055889 extends Sequence1 {
       mGf = RING.zero();
       for (int s = 1; s <= mN; ++s) {
         final Polynomial<Polynomial<Q>> subs = PolynomialUtils.innerSubstitute(RING, mA.substitutePower(s, mN), s, mN);
-        mGf = RING.add(mGf, RING.multiply(RING.log1p(subs, mN), RING_Y.monomial(new Q(LongUtils.phi(s), s), 0)));
+        mGf = RING.add(mGf, RING.multiply(RING.log1p(subs, mN), RING_Y.monomial(new Q(Euler.phiAsLong(s), s), 0)));
       }
       //System.out.println("a:" + mA);
       //System.out.println("g:" + mGf);

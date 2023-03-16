@@ -7,7 +7,6 @@ import java.util.Collection;
 import java.util.Random;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.util.CollectionUtils;
 import irvine.util.io.IOUtils;
@@ -324,67 +323,6 @@ public final class LongUtils {
     x |= x >> 32;
     return x + 1;
     */
-  }
-
-  private static final Fast PRIME = new Fast();
-
-  /**
-   * Return Euler phi function of a positive long.
-   * @param n parameter
-   * @return phi(n)
-   * @throws IllegalArgumentException if <code>n</code> is less than 1.
-   */
-  public static long phi(long n) {
-    if (n < 1) {
-      throw new IllegalArgumentException();
-    }
-    // Handle powers of 2
-    if ((n & -n) == n) {
-      return n == 1 ? 1 : n / 2;
-    }
-    // Handle even part
-    long two = 1;
-    while ((n & 1) == 0) {
-      two <<= 1;
-      n >>>= 1;
-    }
-    if (two > 1) {
-      two >>>= 1;
-    }
-    // Handle 3
-    long three = 1;
-    while (n % 3 == 0) {
-      three *= 3;
-      n /= 3;
-    }
-    if (three > 1) {
-      three /= 3;
-      three <<= 1;
-    }
-    // Handle 5
-    long five = 1;
-    while (n % 5 == 0) {
-      five *= 5;
-      n /= 5;
-    }
-    if (five > 1) {
-      five /= 5;
-      five <<= 2;
-    }
-    long r;
-    if (PRIME.isPrime(n)) {
-      // Handle prime
-      r = n - 1;
-    } else {
-      // Otherwise exhaustive search whatever is left
-      r = 0;
-      for (long k = 1; k <= n; ++k) {
-        if (gcd(k, n) == 1) {
-          ++r;
-        }
-      }
-    }
-    return r * two * three * five;
   }
 
   /**

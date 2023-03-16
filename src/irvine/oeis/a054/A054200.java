@@ -2,8 +2,8 @@ package irvine.oeis.a054;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
-import irvine.math.LongUtils;
 import irvine.math.Mobius;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -27,7 +27,7 @@ public class A054200 extends Sequence1 {
       final int g = IntegerUtils.gcd(dd, 3);
       final int dg = dd / g;
       if ((dd & 1) == 1) {
-        final Z t = Z.valueOf(LongUtils.phi(dd) / LongUtils.phi(dg)).shiftLeft(mN / dd);
+        final Z t = Z.valueOf(Euler.phiAsLong(dd) / Euler.phiAsLong(dg)).shiftLeft(mN / dd);
         sum = ZUtils.mobiusAdd(Mobius.mobius(dg), sum, t);
       }
     }

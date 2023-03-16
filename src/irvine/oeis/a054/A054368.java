@@ -1,8 +1,8 @@
 package irvine.oeis.a054;
 
 import irvine.math.IntegerUtils;
-import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
+import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -20,8 +20,8 @@ public class A054368 extends Sequence0 {
     if (++mN == 0) {
       return Z.ONE;
     }
-    final Z a = Integers.SINGLETON.sumdiv(mN, d -> Binomial.binomial(6L * d, d).multiply(LongUtils.phi(mN / d)));
-    final Z b = Integers.SINGLETON.sumdiv(IntegerUtils.gcd(mN - 1, 6), d -> Binomial.binomial(6L * mN / d, (mN - 1) / d).multiply(LongUtils.phi(d)));
+    final Z a = Integers.SINGLETON.sumdiv(mN, d -> Binomial.binomial(6L * d, d).multiply(Euler.phiAsLong(mN / d)));
+    final Z b = Integers.SINGLETON.sumdiv(IntegerUtils.gcd(mN - 1, 6), d -> Binomial.binomial(6L * mN / d, (mN - 1) / d).multiply(Euler.phiAsLong((long) d)));
     return a.add(b).divide(6L * mN).subtract(Binomial.binomial(6L * mN, mN).divide(5L * mN + 1));
   }
 }

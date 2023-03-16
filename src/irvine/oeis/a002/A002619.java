@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,7 +22,7 @@ public class A002619 extends Sequence1 {
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValueExact();
       final long m = mN / d;
-      final long phi = LongUtils.phi(m);
+      final long phi = Euler.phiAsLong(m);
       final Z t = Z.valueOf(m).pow(d).multiply(phi * phi).multiply(mF.factorial(d));
       sum = sum.add(t);
     }

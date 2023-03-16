@@ -1,8 +1,8 @@
 package irvine.oeis.a003;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -21,7 +21,7 @@ public class A003239 implements Sequence {
     }
     Z s = Z.ZERO;
     for (final Z d : Jaguar.factor(mN).divisors()) {
-      s = s.add(Binomial.binomial(d.multiply2(), d).multiply(LongUtils.phi(mN / d.longValueExact())));
+      s = s.add(Binomial.binomial(d.multiply2(), d).multiply(Euler.phiAsLong(mN / d.longValueExact())));
     }
     return s.divide(2 * mN);
   }

@@ -4,6 +4,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -29,7 +30,7 @@ public class A055561 extends Sequence1 {
   }
 
   private boolean is(final long n) {
-    final long p = LongUtils.gcd(n, LongUtils.phi(n));
+    final long p = LongUtils.gcd(n, Euler.phiAsLong(n));
     if (mPrime.isPrime(p)) {
       return n % (p * p) == 0 && mPrime.isPrime(LongUtils.gcd(p + 1, n));
     }

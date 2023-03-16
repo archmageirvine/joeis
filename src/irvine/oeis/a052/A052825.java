@@ -2,11 +2,11 @@ package irvine.oeis.a052;
 
 import java.util.Arrays;
 
-import irvine.math.LongUtils;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -25,7 +25,7 @@ public class A052825 extends Sequence0 {
     ++mN;
     Polynomial<Q> sum = RING.zero();
     for (int j = 1; j <= mN; ++j) {
-      sum = RING.add(sum, RING.multiply(RING.log(RING.series(RING.oneMinusXToTheN(j), RING.oneMinusXToTheN(Q.TWO, j), mN), mN), new Q(LongUtils.phi(j), j)));
+      sum = RING.add(sum, RING.multiply(RING.log(RING.series(RING.oneMinusXToTheN(j), RING.oneMinusXToTheN(Q.TWO, j), mN), mN), new Q(Euler.phiAsLong(j), j)));
     }
     return RING.coeff(sum.shift(1), X1, mN).toZ().negate();
   }

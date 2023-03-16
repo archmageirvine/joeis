@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.math.LongUtils;
+import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -15,6 +15,6 @@ public class A056665 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sumdiv(++mN, d -> Z.valueOf(mN).pow(mN / d).multiply(LongUtils.phi(d))).divide(mN);
+    return Integers.SINGLETON.sumdiv(++mN, d -> Z.valueOf(mN).pow(mN / d).multiply(Euler.phiAsLong((long) d))).divide(mN);
   }
 }

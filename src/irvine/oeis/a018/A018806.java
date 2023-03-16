@@ -1,6 +1,6 @@
 package irvine.oeis.a018;
 
-import irvine.math.LongUtils;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A018806 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     for (long k = 1; k <= mN; ++k) {
-      sum = sum.add(Z.valueOf(mN / k).square().multiply(LongUtils.phi(k)));
+      sum = sum.add(Z.valueOf(mN / k).square().multiply(Euler.phiAsLong(k)));
     }
     return sum;
   }

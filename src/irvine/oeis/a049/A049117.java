@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.math.LongUtils;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -19,7 +19,7 @@ public class A049117 extends Sequence0 {
     }
     long cnt = 0;
     while (true) {
-      n = LongUtils.phi(n);
+      n = Euler.phiAsLong(n);
       ++cnt;
       if ((n & (n - 1)) == 0) {
         return cnt;

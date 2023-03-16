@@ -2,6 +2,7 @@ package irvine.oeis.a056;
 
 import irvine.math.LongUtils;
 import irvine.math.q.Q;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -47,7 +48,7 @@ public class A056411 extends Sequence1 {
         }
       }
     }
-    return sum.divide(n).divide(LongUtils.phi(n));
+    return sum.divide(n).divide(Euler.phiAsLong(n));
   }
 
   @Override

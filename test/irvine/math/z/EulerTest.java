@@ -16,19 +16,9 @@ public class EulerTest extends TestCase {
     } catch (final NullPointerException e) {
       // ok
     }
-    try {
-      Euler.phi(Z.ZERO);
-      fail();
-    } catch (final IllegalArgumentException e) {
-      // ok
-    }
-    try {
-      Euler.phi(Z.NEG_ONE);
-      fail();
-    } catch (final IllegalArgumentException e) {
-      // ok
-    }
+    assertEquals(Z.ZERO, Euler.phi(Z.ZERO));
     assertEquals(Z.ONE, Euler.phi(Z.ONE));
+    assertEquals(Z.ONE, Euler.phi(Z.NEG_ONE));
     assertEquals(Z.ONE, Euler.phi(Z.TWO));
     assertEquals(Z.TWO, Euler.phi(Z.THREE));
     assertEquals(Z.TWO, Euler.phi(Z.FOUR));
@@ -43,23 +33,12 @@ public class EulerTest extends TestCase {
   }
 
   private static final long[] PHI = {
-    1, 1, 2, 2, 4, 2, 6, 4, 6, 4, 10, 4, 12, 6, 8, 8, 16, 6, 18, 8, 12, 10, 22, 8, 20, 12, 18, 12, 28, 8, 30, 16, 20, 16, 24, 12, 36, 18, 24, 16, 40, 12, 42, 20, 24, 22, 46, 16, 42, 20, 32, 24, 52, 18, 40, 24, 36, 28, 58, 16, 60, 30, 36, 32, 48, 20, 66, 32, 44};
+    0, 1, 1, 2, 2, 4, 2, 6, 4, 6, 4, 10, 4, 12, 6, 8, 8, 16, 6, 18, 8, 12, 10, 22, 8, 20, 12, 18, 12, 28, 8, 30, 16, 20, 16, 24, 12, 36, 18, 24, 16, 40, 12, 42, 20, 24, 22, 46, 16, 42, 20, 32, 24, 52, 18, 40, 24, 36, 28, 58, 16, 60, 30, 36, 32, 48, 20, 66, 32, 44};
 
   public void testPhiAsLong() {
-    try {
-      Euler.phiAsLong(0);
-      fail();
-    } catch (final IllegalArgumentException e) {
-      // ok
-    }
-    try {
-      Euler.phiAsLong(-1);
-      fail();
-    } catch (final IllegalArgumentException e) {
-      // ok
-    }
     for (int k = 0; k < PHI.length; ++k) {
-      assertEquals(PHI[k], Euler.phiAsLong(k + 1));
+      assertEquals(PHI[k], Euler.phiAsLong(k));
+      assertEquals(PHI[k], Euler.phiAsLong(-k));
     }
   }
 }

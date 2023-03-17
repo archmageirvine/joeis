@@ -23,12 +23,11 @@ public class Euler {
    * @param n number to compute phi of
    * @return Euler totient value
    * @exception UnsupportedOperationException if the computation fails.
-   * @exception IllegalArgumentException if <code>n</code> in less than 1.
    * @exception NullPointerException if <code>n</code> is null.
    */
   public static Z phi(final Z n) {
     if (n.signum() < 1) {
-      throw new IllegalArgumentException();
+      return n.isZero() ? Z.ZERO : phi(n.negate());
     }
     if (n.isProbablePrime()) {
       return n.subtract(Z.ONE);
@@ -48,7 +47,7 @@ public class Euler {
    */
   public static long phiAsLong(final long n) {
     if (n < 1) {
-      throw new IllegalArgumentException();
+      return n == 0 ? 0 : phiAsLong(-n);
     }
     if (n <= TABLE_LIMIT) {
       return FIXED_TABLE.phi((int) n);

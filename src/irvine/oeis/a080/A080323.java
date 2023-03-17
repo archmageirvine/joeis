@@ -6,21 +6,21 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A080847 a(n) = mu(n)+2, where mu is the Moebius function (A008683).
+ * A080323 a(n) = mu(n)^n, where mu is the Moebius function (A008683).
  * @author Georg Fischer
  */
-public class A080847 extends AbstractSequence {
+public class A080323 extends AbstractSequence {
 
   private int mN = 0;
 
   /** Construct the sequence. */
-  public A080847() {
+  public A080323() {
     super(1);
   }
 
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(Mobius.mobius(mN)).add(2);
+    return Z.valueOf(Mobius.mobius(mN)).pow(mN);
   }
 }

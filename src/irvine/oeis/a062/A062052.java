@@ -9,14 +9,24 @@ import irvine.oeis.Sequence1;
  */
 public class A062052 extends Sequence1 {
 
-  private long mN = 3;
+  private long mN = 1;
+  private final long mTarget;
+
+  protected A062052(final long target) {
+    mTarget = target;
+  }
+
+  /** Construct the sequence. */
+  public A062052() {
+    this(2);
+  }
 
   private boolean is(final long n) {
     Z m = Z.valueOf(n);
     long cnt = 0;
     while (true) {
       m = m.makeOdd();
-      if (++cnt > 2) {
+      if (++cnt > mTarget) {
         return false;
       }
       if (Z.ONE.equals(m)) {
@@ -24,7 +34,7 @@ public class A062052 extends Sequence1 {
       }
       m = m.multiply(3).add(1);
     }
-    return cnt == 2;
+    return cnt == mTarget;
   }
 
   @Override

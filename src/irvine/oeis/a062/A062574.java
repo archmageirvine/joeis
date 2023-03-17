@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.prime.PrimePositionSubsequence;
 
 /**
- * A062574 Numbers k such that 8^k - 7^k is prime.
+ * A062574 Numbers k such that 8^k - 7^k is prime or a strong pseudoprime.
  * @author Georg Fischer
  */
 public class A062574 extends PrimePositionSubsequence {

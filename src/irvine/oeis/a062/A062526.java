@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.a030.A030000;
 
 /**
- * A062526 9^a(n) is smallest power of 9 containing the string &apos;n&apos;.
+ * A062526 9^a(n) is smallest power of 9 containing the string 'n'.
  * @author Georg Fischer
  */
 public class A062526 extends A030000 {

@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.a030.A030000;
 
 /**
- * A062522 5^a(n) is smallest nonnegative power of 5 containing the string &apos;n&apos;.
+ * A062522 5^a(n) is smallest nonnegative power of 5 containing the string 'n'.
  * @author Georg Fischer
  */
 public class A062522 extends A030000 {

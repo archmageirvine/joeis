@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061850.
+ * A062017 Numbers with all even digits which can be factored into two numbers (&gt; 1) one with all odd digits and the other with all even digits.
  * @author Sean A. Irvine
  */
 public class A062017 extends Sequence1 {

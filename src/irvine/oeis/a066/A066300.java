@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A066300 Number of n X n matrices with exactly 2 1&apos;s in each row, other entries 0.
+ * A066300 Number of n X n matrices with exactly 2 1's in each row, other entries 0.
  * @author Georg Fischer
  */
 public class A066300 extends AbstractSequence {

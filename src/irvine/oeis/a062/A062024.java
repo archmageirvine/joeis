@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061850.
+ * A062024 a(n) = ((n+1)^n + (n-1)^n)/2.
  * @author Sean A. Irvine
  */
 public class A062024 extends Sequence0 {

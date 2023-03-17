@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062538 Primes of form 4n!+1.
+ * A062538 Primes of form 4*n! + 1.
  * @author Georg Fischer
  */
 public class A062538 extends Sequence1 {

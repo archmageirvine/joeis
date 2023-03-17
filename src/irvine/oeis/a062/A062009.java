@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A061850.
+ * A062009 a(n) = floor(Sum_{k=1..n} sqrt(prime(k))).
  * @author Sean A. Irvine
  */
 public class A062009 extends A000040 {

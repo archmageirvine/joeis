@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A080586 A run of 3*2^n 1&apos;s followed by a run of 3*2^n 2&apos;s, for n=0, 1, 2, ...
+ * A080586 A run of 3*2^n 1's followed by a run of 3*2^n 2's, for n=0, 1, 2, ...
  * @author Georg Fischer
  */
 public class A080586 extends Sequence0 {

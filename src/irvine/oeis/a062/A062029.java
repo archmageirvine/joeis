@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061850.
+ * A062029 Group even numbers into (2), (4,6), (8,10,12), (14,16,18,20), ...; a(n) = product of n-th group.
  * @author Sean A. Irvine
  */
 public class A062029 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
 /**
- * A061850.
+ * A062049 Integer part of geometric mean of first n primes.
  * @author Sean A. Irvine
  */
 public class A062049 extends A002110 {

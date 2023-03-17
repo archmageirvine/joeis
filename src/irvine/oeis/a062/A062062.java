@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061850.
+ * A062062 Smallest increasing sequence where each term is coprime to preceding three terms.
  * @author Sean A. Irvine
  */
 public class A062062 extends Sequence1 {

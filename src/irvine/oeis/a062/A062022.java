@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007504;
 import irvine.oeis.a024.A024450;
 
 /**
- * A061850.
+ * A062022 a(n) = Sum_{k=1..n} Sum_{j=1..k} (prime(k) - prime(j))^2.
  * @author Sean A. Irvine
  */
 public class A062022 extends A024450 {

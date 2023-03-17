@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061850.
+ * A062052 Numbers with 2 odd integers in their Collatz (or 3x+1) trajectory.
  * @author Sean A. Irvine
  */
 public class A062052 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.a030.A030000;
 
 /**
- * A062524 7^a(n) is smallest nonnegative power of 7 containing the string &apos;n&apos;.
+ * A062524 7^a(n) is smallest nonnegative power of 7 containing the string 'n'.
  * @author Georg Fischer
  */
 public class A062524 extends A030000 {

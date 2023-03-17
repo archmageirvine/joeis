@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061850.
+ * A062013 a(1) = 3, a(n) = a(n-1)^2 + 1.
  * @author Sean A. Irvine
  */
 public class A062013 extends Sequence1 {

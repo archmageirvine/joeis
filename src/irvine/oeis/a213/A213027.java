@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A213027 Number A(n,k) of 3n-length k-ary words, either empty or beginning with the first letter of the alphabet,
+ * A213027 Number A(n,k) of 3n-length k-ary words, either empty or beginning with the first letter of the alphabet, that can be built by repeatedly inserting triples of identical letters into the initially empty word; square array A(n,k), n&gt;=0, k&gt;=0, by antidiagonals.
  * that can be built by repeatedly inserting triples of identical letters into the initially empty word;
  * square array A(n,k), n&gt;=0, k&gt;=0, by antidiagonals.
  * @author Georg Fischer

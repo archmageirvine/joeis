@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061850.
+ * A062063 a(n) is the smallest number greater than a(n-1) that is coprime to the last four terms of the sequence, with a(1) = 1, a(2) = 2, a(3) = 3, and a(4) = 5.
  * @author Sean A. Irvine
  */
 public class A062063 extends Sequence1 {

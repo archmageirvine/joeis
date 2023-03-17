@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061850.
+ * A062031 Group odd numbers into (1), (3,5,7), (9,11,13,15,17), ...; a(n) = product of n-th group.
  * @author Sean A. Irvine
  */
 public class A062031 extends Sequence1 {

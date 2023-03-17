@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061850.
+ * A062016 Numbers with all odd digits which can be factored into two numbers &gt; 1 with odd digits.
  * @author Sean A. Irvine
  */
 public class A062016 extends Sequence1 {

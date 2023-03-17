@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.a030.A030000;
 
 /**
- * A062521 4^a(n) is smallest nonnegative power of 4 containing the string &apos;n&apos;.
+ * A062521 4^a(n) is smallest nonnegative power of 4 containing the string 'n'.
  * @author Georg Fischer
  */
 public class A062521 extends A030000 {

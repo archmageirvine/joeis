@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061850.
+ * A062042 a(1) = 2, a(n) = least number greater than a(n-1) such that a(n-1) + a(n) is a prime.
  * @author Sean A. Irvine
  */
 public class A062042 extends Sequence1 {

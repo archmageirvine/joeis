@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A061850.
+ * A062047 Sum of odd numbers between consecutive primes.
  * @author Sean A. Irvine
  */
 public class A062047 extends A000040 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A061850.
+ * A062039 a(0) = 1; a(n+1) = a(n) - n if a(n) &gt; n, otherwise a(n+1) = a(n) + a(a(n)).
  * @author Sean A. Irvine
  */
 public class A062039 extends MemorySequence {

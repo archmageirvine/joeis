@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006337;
 
 /**
- * A080763 Exchange 1&apos;s and 2&apos;s in the eta-sequence A006337.
+ * A080763 Exchange 1's and 2's in the eta-sequence A006337.
  * @author Georg Fischer
  */
 public class A080763 extends A006337 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061850.
+ * A062044 Primes arising in A062042.
  * @author Sean A. Irvine
  */
 public class A062044 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061850.
+ * A062020 a(n) = Sum_{i=1..n} Sum_{j=1..i} (prime(i) - prime(j)).
  * @author Sean A. Irvine
  */
 public class A062020 extends Sequence0 {

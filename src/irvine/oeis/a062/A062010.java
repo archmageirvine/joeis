@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061850.
+ * A062010 Let n = Sum_i d_i*10^i (0 &lt;= d_i &lt;= 9) be the decimal expansion of n. Then n is in the sequence if Sum_i d_i*b^i divides n for some base b &gt;= 2 in the range max d_i &lt; b &lt; 10.
  * @author Sean A. Irvine
  */
 public class A062010 extends Sequence1 {

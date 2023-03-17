@@ -87,7 +87,7 @@ public class Euler {
       five /= 5;
       five <<= 2;
     }
-    long phi = two * three * five;
+    final long phi = two * three * five;
     if (PRIME.isPrime(n)) {
       // Handle prime
       return (m - 1) * phi;

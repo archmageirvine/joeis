@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,17 +15,12 @@ public class A050498 extends Sequence1 {
 
   private Z mN = Z.valueOf(71);
 
-  private Z phi(final Z n) {
-    //return Euler.phi(n);
-    return Jaguar.factor(n).phi();
-  }
-
   @Override
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      final Z phi = phi(mN);
-      if (phi.equals(phi(mN.add(6))) && phi.equals(phi(mN.add(12))) && phi.equals(phi(mN.add(18)))) {
+      final Z phi = Euler.phi(mN);
+      if (phi.equals(Euler.phi(mN.add(6))) && phi.equals(Euler.phi(mN.add(12))) && phi.equals(Euler.phi(mN.add(18)))) {
         return mN;
       }
     }

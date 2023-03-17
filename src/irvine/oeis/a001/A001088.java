@@ -15,8 +15,7 @@ public class A001088 extends Sequence1 {
 
   @Override
   public Z next() {
-    long n = ++mN;
-    mP = mP.multiply(Euler.phiAsLong(n));
+    mP = mP.multiply(Euler.phiAsLong(++mN));
     return mP;
   }
 }

@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -21,7 +21,7 @@ public class A049506 extends Sequence1 {
       mA = Z.FIVE;
       return Z.FIVE;
     } else {
-      final Z t = Z.ONE.shiftLeft(Jaguar.factor(mA).phi().intValueExact()).subtract(3);
+      final Z t = Z.ONE.shiftLeft(Euler.phi(mA).intValueExact()).subtract(3);
       mA = mA.multiply(t);
       return t;
     }

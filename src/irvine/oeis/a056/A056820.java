@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002064;
 
@@ -12,7 +12,7 @@ public class A056820 extends A002064 {
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).phi();
+    return Euler.phi(super.next());
   }
 }
 

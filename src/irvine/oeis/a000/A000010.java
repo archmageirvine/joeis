@@ -14,8 +14,7 @@ public class A000010 implements Sequence {
 
   @Override
   public Z next() {
-    long n = ++mN;
-    return Z.valueOf(Euler.phiAsLong(n));
+    return Z.valueOf(Euler.phiAsLong(++mN));
   }
 }
 

@@ -20,8 +20,7 @@ public class A046147 extends Sequence2 {
   @Override
   public Z next() {
     while (mA.isEmpty()) {
-      long n = ++mN;
-      final Z phi = Z.valueOf(Euler.phiAsLong(n));
+      final Z phi = Z.valueOf(Euler.phiAsLong(++mN));
       final IntegersModMul rn = new IntegersModMul(mN);
       for (long q = 1; q <= mN; ++q) {
         if (LongUtils.gcd(q, mN) == 1 && rn.order(Z.valueOf(q)).equals(phi)) {

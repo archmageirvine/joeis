@@ -1,7 +1,7 @@
 package irvine.oeis.a039;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A039772 extends Sequence1 {
   public Z next() {
     while (true) {
       mN += 2;
-      final long phi = Jaguar.factor(mN).phi().longValueExact();
+      final long phi = Euler.phiAsLong(mN);
       if (phi != mN - 1 && LongUtils.gcd(phi, mN - 1) > 1) {
         return Z.valueOf(mN);
       }

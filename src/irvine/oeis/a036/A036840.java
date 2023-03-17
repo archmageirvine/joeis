@@ -4,6 +4,7 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.q.Q;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -24,7 +25,7 @@ public class A036840 extends Sequence1 {
     Z m = mN;
     while (seen.add(m)) {
       if (phi) {
-        m = Jaguar.factor(m).phi();
+        m = Euler.phi(m);
         phi = false;
       } else {
         m = Jaguar.factor(m).sigma();
@@ -37,7 +38,7 @@ public class A036840 extends Sequence1 {
     long cnt = 0;
     do {
       if (phi) {
-        m = Jaguar.factor(m).phi();
+        m = Euler.phi(m);
         phi = false;
       } else {
         m = Jaguar.factor(m).sigma();

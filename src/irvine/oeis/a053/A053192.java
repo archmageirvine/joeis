@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,6 +15,6 @@ public class A053192 extends Sequence1 {
   @Override
   public Z next() {
     final Z n3 = Z.valueOf(++mN).pow(3);
-    return n3.subtract(Jaguar.factor(n3).phi());
+    return n3.subtract(Euler.phi(n3));
   }
 }

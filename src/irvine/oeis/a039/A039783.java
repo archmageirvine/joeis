@@ -2,6 +2,7 @@ package irvine.oeis.a039;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +18,7 @@ public class A039783 extends Sequence1 {
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(mN);
-      final Z phi = Jaguar.factor(++mN).phi();
+      final Z phi = Euler.phi(++mN);
       Z prod = Z.ONE;
       for (final Z p : fs.toZArray()) {
         prod = prod.multiply(Z.valueOf(fs.getExponent(p)).pow(p));

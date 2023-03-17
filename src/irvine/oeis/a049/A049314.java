@@ -2,6 +2,7 @@ package irvine.oeis.a049;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -27,7 +28,7 @@ public class A049314 extends MemoryFunction1<Z> implements Sequence {
       }
       Z sum = Z.ZERO;
       for (final Z d : Jaguar.factor(n).divisors()) {
-        sum = sum.add(Jaguar.factor(d).phi().multiply(q().pow(n / d.intValueExact())));
+        sum = sum.add(Euler.phi(d).multiply(q().pow(n / d.intValueExact())));
       }
       return sum.divide(n).subtract(1);
     }

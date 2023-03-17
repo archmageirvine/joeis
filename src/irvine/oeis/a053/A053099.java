@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
@@ -19,7 +19,7 @@ public class A053099 extends A002110 {
   public Z next() {
     Z s = super.next();
     while (!Z.ONE.equals(s.makeOdd())) {
-      s = Jaguar.factor(s).phi();
+      s = Euler.phi(s);
     }
     return Z.valueOf(s.auxiliary());
   }

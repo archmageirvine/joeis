@@ -3,6 +3,7 @@ package irvine.oeis.a039;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -24,7 +25,7 @@ public class A039786 extends Sequence1 {
       for (final Z p : fs.toZArray()) {
         prod = prod.multiply(p).multiply(fs.getExponent(p));
       }
-      if (prod.equals(Jaguar.factor(mN).phi())) {
+      if (prod.equals(Euler.phi(mN))) {
         return Z.valueOf(mN);
       }
     }

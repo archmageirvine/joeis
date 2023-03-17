@@ -18,8 +18,7 @@ public class A053049 extends Sequence1 {
     long m = 0;
     long sum = 0;
     do {
-      long n = ++m;
-      sum += Euler.phiAsLong(n);
+      sum += Euler.phiAsLong(++m);
       sum %= mN;
     } while (sum != 0);
     return Z.valueOf(m);

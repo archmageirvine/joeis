@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,7 +15,7 @@ public class A056772 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Jaguar.factor(++mN + 4).phi().equals(Jaguar.factor(mN).phi().add(4))) {
+      if (Euler.phiAsLong(++mN + 4) == Euler.phiAsLong(mN) + 4) {
         return Z.valueOf(mN);
       }
     }

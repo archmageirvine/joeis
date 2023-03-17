@@ -16,8 +16,7 @@ public class A015126 extends Sequence1 {
 
   @Override
   public Z next() {
-    long n = ++mN;
-    final long phi = Euler.phiAsLong(n);
+    final long phi = Euler.phiAsLong(++mN);
     if (mLeast.get(phi) == 0) {
       mLeast.set(phi, mN);
     }

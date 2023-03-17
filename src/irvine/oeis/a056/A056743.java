@@ -1,7 +1,7 @@
 package irvine.oeis.a056;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -25,6 +25,6 @@ public class A056743 extends Sequence0 {
       mP = mPrime.nextPrime(mP);
       mN = mN.shiftLeft((int) (mP - q));
     }
-    return Jaguar.factor(mN.subtract(1)).phi().divide(mP);
+    return Euler.phi(mN.subtract(1)).divide(mP);
   }
 }

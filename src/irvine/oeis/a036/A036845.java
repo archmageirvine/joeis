@@ -3,6 +3,7 @@ package irvine.oeis.a036;
 import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +24,7 @@ public class A036845 extends Sequence1 {
     Z m = mN;
     while (seen.add(m)) {
       if (phi) {
-        m = Jaguar.factor(m).phi();
+        m = Euler.phi(m);
         phi = false;
       } else {
         m = Jaguar.factor(m).sigma();

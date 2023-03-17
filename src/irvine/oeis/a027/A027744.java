@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -17,6 +17,6 @@ public class A027744 extends Sequence0 {
     if (++mN == 0) {
       return Z.ONE;
     }
-    return Jaguar.factor(Z.ONE.shiftLeft(3 * mN).subtract(1)).phi().divide(mN);
+    return Euler.phi(Z.ONE.shiftLeft(3 * mN).subtract(1)).divide(mN);
   }
 }

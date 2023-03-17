@@ -20,8 +20,7 @@ public class A028415 extends Sequence1 {
 
   @Override
   public Z next() {
-    long n = ++mN;
-    mSum = mSum.add(new Q(1L, Euler.phiAsLong(n)));
+    mSum = mSum.add(new Q(1L, Euler.phiAsLong(++mN)));
     return select(mSum);
   }
 }

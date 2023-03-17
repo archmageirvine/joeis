@@ -15,8 +15,7 @@ public class A049237 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      long n = ++mN;
-      final long phi = Euler.phiAsLong(n);
+      final long phi = Euler.phiAsLong(++mN);
       if (mN % phi == 0) {
         return Z.valueOf(mN / phi);
       }

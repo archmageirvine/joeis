@@ -19,7 +19,7 @@ public class Euler {
   private static final Fast PRIME = new Fast();
 
   /**
-   * Compute the Euler phi function of an isolated integer.
+   * Compute the Euler phi function of an integer.
    * @param n number to compute phi of
    * @return Euler totient value
    * @exception UnsupportedOperationException if the computation fails.
@@ -39,7 +39,7 @@ public class Euler {
   }
 
   /**
-   * Compute the Euler phi function of an isolated integer.
+   * Compute the Euler phi function of an integer.
    * @param n number to compute phi of
    * @return Euler totient value
    * @exception UnsupportedOperationException if the computation fails.
@@ -98,7 +98,7 @@ public class Euler {
   }
 
   /**
-   * Compute the Euler phi function of an isolated integer.
+   * Compute the Euler phi function of an integer.
    * @param n number to compute phi of
    * @return Euler totient value
    * @exception UnsupportedOperationException if the computation fails.
@@ -112,8 +112,8 @@ public class Euler {
 
   /**
    * Precompute Euler phi function for all values up to the limit.  This will
-   * use extreme memory for large limits. For isolated values use the static
-   * method or <code>LongUtils.phi()</code>.
+   * use extreme memory for large limits. In most cases it is simpler to use
+   * the static method in this class.
    * @param limit largest value
    */
   public Euler(final int limit) {

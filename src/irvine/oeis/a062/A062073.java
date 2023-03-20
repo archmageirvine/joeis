@@ -23,7 +23,7 @@ public class A062073 extends DecimalExpansionSequence {
         Z prod = one;
         long k = 0;
         while (true) {
-          Z t = A.pow(++k).getApprox(prec);
+          final Z t = A.pow(++k).getApprox(prec);
           if (t.isZero()) {
             return CR.scale(prod, -EXTRA_PRECISION);
           }

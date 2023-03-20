@@ -22,7 +22,7 @@ public class A062104 extends Sequence0 {
       if (r == 2) {
         return Z.ONE;
       }
-      return get(r - 1, c - 1).add(get(r - 1, c)).add(get(r - 1, c + 1)).add(r == 4 ?  1: 0);
+      return get(r - 1, c - 1).add(get(r - 1, c)).add(get(r - 1, c + 1)).add(r == 4 ? 1 : 0);
     }
   };
 

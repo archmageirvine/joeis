@@ -2150,3 +2150,5 @@ A061642 Decimal expansion of Hardy-Littlewood constant for prime quadruples.
 A061653 Relative class number h- of cyclotomic field Q(zeta_n)
 A061710 Number of maximal chains in the Bruhat order of S_n
 A062038 Triangular array T(n,k) giving number of alternating link diagrams with n >= 0 crossings, k = 0..[n/2] connected components and two external legs.
+A062133 Triangle of coefficients of polynomials (rising powers) useful for convolutions of A001333(n+1), n >= 0 (associated Pell numbers).
+A001334 Triangle of coefficients of polynomials (rising powers) useful for convolutions of A001333(n+1), n >= 0 (associated Pell numbers).

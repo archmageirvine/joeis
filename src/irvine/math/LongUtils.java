@@ -294,7 +294,7 @@ public final class LongUtils {
    * @return <code>lcm(a,b)</code>
    */
   public static long lcm(final long a, final long b) {
-    return (a / gcd(a, b)) * b;
+    return a == 0 ? 0 : (a / gcd(a, b)) * b;
   }
 
   /**

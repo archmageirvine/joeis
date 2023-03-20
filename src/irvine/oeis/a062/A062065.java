@@ -1,4 +1,4 @@
-package irvine.oeis.a051;
+package irvine.oeis.a062;
 
 import java.util.TreeSet;
 
@@ -6,10 +6,10 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A051912 a(n) is the smallest integer such that the sum of any three ordered terms a(k), k &lt;= n, is unique.
+ * A062065 a(1) = 1; for n &gt;= 1, a(n+1) is smallest number such that the sums of any one, two or three of a(1), ..., a(n) are distinct (repetitions not allowed).
  * @author Sean A. Irvine
  */
-public class A051912 extends MemorySequence {
+public class A062065 extends MemorySequence {
 
   private final TreeSet<Z> mSums = new TreeSet<>();
 
@@ -19,15 +19,15 @@ public class A051912 extends MemorySequence {
     }
     for (final Z a : this) {
       final Z an = a.add(n);
-      if (mSums.contains(an.add(n))) {
+      if (mSums.contains(an)) {
         return false;
       }
       for (final Z b : this) {
-        if (mSums.contains(an.add(b))) {
-          return false;
-        }
         if (b.equals(a)) {
           break;
+        }
+        if (mSums.contains(an.add(b))) {
+          return false;
         }
       }
     }
@@ -37,24 +37,24 @@ public class A051912 extends MemorySequence {
   @Override
   protected Z computeNext() {
     if (size() == 0) {
-      mSums.add(Z.ZERO);
-      return Z.ZERO;
+      mSums.add(Z.ONE);
+      return Z.ONE;
     }
     Z n = a(size() - 1);
     while (true) {
       n = n.add(1);
       if (isOk(n)) {
-        mSums.add(n.multiply(3));
         for (final Z a : this) {
           final Z an = a.add(n);
-          mSums.add(an.add(n)); // a + 2n
           for (final Z b : this) {
-            mSums.add(an.add(b));
             if (b.equals(a)) {
               break;
             }
+            mSums.add(an.add(b));
           }
+          mSums.add(an); // a + n
         }
+        mSums.add(n);
         return n;
       }
     }

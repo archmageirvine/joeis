@@ -10,6 +10,5 @@ public class A061826 extends A061810 {
   /** Construct the sequence. */
   public A061826() {
     super(1, 7, "[02468]+");
-    super.next();
   }
 }

@@ -1,0 +1,22 @@
+package irvine.oeis.a062;
+
+import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
+import irvine.oeis.a000.A000217;
+
+/**
+ * A062099 Triangular numbers whose sum of digits is a triangular number.
+ * @author Sean A. Irvine
+ */
+public class A062099 extends A000217 {
+
+  @Override
+  public Z next() {
+    while (true) {
+      final Z t = super.next();
+      if (ZUtils.isTriangular(Z.valueOf(ZUtils.digitSum(t)))) {
+        return t;
+      }
+    }
+  }
+}

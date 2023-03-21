@@ -24,7 +24,7 @@ public class A129645 extends Sequence1 {
       mB.add(Z.ONE);
     } else {
       mPrev = mPrev.multiply(mB.get(mN++)).add(1);
-      Collections.addAll(mB, Jaguar.factor(mPrev).divisors());
+      Collections.addAll(mB, Jaguar.factor(mPrev).divisorsSorted());
     }
     return mPrev;
   }

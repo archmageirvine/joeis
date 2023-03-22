@@ -1,4 +1,4 @@
-package irvine.oeis.a263;
+package irvine.oeis.a126;
 
 import irvine.math.z.Z;
 import irvine.oeis.a262.A262809;
@@ -7,13 +7,13 @@ import irvine.oeis.a262.A262809;
  * A062204.
  * @author Sean A. Irvine
  */
-public class A263064 extends A262809 {
+public class A126086 extends A262809 {
 
   private int mN = -1;
 
   @Override
   public Z next() {
-    return t(++mN, 4);
+    return t(++mN, 3);
   }
 }
 

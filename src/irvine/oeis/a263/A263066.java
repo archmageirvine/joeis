@@ -7,13 +7,13 @@ import irvine.oeis.a262.A262809;
  * A062204.
  * @author Sean A. Irvine
  */
-public class A263064 extends A262809 {
+public class A263066 extends A262809 {
 
   private int mN = -1;
 
   @Override
   public Z next() {
-    return t(++mN, 4);
+    return t(++mN, 6);
   }
 }
 

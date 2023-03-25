@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A165149 a(n) = (3*9^n-5^n)/2.
+ * A165149 a(n) = (3*9^n - 5^n)/2.
  * @author Georg Fischer
  */
 public class A165149 extends GeneratingFunctionSequence {

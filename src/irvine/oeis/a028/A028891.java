@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A028891 Iterated product of digits of n is a Fibonacci number.
+ * A028891 Iterated product of digits of n is a positive Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A028891 extends Sequence0 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A008365 Smallest prime factor is &gt;= 13.
+ * A008365 13-rough numbers: positive integers that have no prime factors less than 13.
  * @author Sean A. Irvine
  */
 public class A008365 extends Sequence1 {

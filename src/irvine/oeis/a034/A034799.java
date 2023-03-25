@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008295;
 
 /**
- * A034799 Triangle of number of labeled trees by number of nodes and number of labels.
+ * A034799 Triangle read by rows: T(n,k) is the number of partially labeled trees with n nodes, k of which are labeled, 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A034799 extends A008295 {

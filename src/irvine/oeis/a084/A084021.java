@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a061.A061601;
 
 /**
- * A084021 Product of n and its 9&apos;s complement.
+ * A084021 Product of n and its 9's complement.
  * @author Georg Fischer
  */
 public class A084021 extends AbstractSequence {

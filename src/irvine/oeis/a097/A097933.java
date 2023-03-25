@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a091.A091998;
 
 /**
- * A097933 Primes such that p divides 3^((p-1)/2) - 1.
+ * A097933 Primes p that divide 3^((p-1)/2) - 1.
  *
  * @author Georg Fischer
  */

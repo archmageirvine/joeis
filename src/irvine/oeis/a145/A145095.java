@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a282.A282050;
 
 /**
- * A145095 Coefficients in expansion of Eisenstein series -q*E&apos;_6.
+ * A145095 Coefficients in expansion of Eisenstein series -q*E'_6.
  * @author Georg Fischer
  */
 public class A145095 extends Sequence1 {

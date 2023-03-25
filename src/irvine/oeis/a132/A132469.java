@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A132469 a(n) = (2^(5n)-1)/31.
+ * A132469 a(n) = (2^(5*n) - 1)/31.
  * @author Sean A. Irvine
  */
 public class A132469 extends LinearRecurrence {

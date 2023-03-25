@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a292.A292272;
 
 /**
- * A213064 Bitwise AND of 2n with the one&apos;s-complement of n.
+ * A213064 Bitwise AND of 2n with the one's-complement of n.
  * @author Georg Fischer
  */
 public class A213064 extends AbstractSequence {

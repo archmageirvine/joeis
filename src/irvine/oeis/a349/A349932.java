@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a035.A035327;
 
 /**
- * A349932 Product of n and its binary ones&apos; complement.
+ * A349932 Product of n and its binary ones' complement.
  * @author Georg Fischer
  */
 public class A349932 extends AbstractSequence {

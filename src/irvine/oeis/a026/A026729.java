@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A026729 Square array of binomial coefficients T(n,k) = binomial(n,k), n &gt;= 0, k &gt;= 0, read by antidiagonals.
+ * A026729 Square array of binomial coefficients T(n,k) = binomial(n,k), n &gt;= 0, k &gt;= 0, read by downward antidiagonals.
  * @author Sean A. Irvine
  */
 public class A026729 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a051.A051382;
 
 /**
- * A249721 Numbers whose base-3 representation consists entirely of 0&apos;s and 2&apos;s, except possibly for a single pair of adjacent 1&apos;s among them.
+ * A249721 Numbers whose base-3 representation consists entirely of 0's and 2's, except possibly for a single pair of adjacent 1's among them.
  * @author Georg Fischer
  */
 public class A249721 extends AbstractSequence {

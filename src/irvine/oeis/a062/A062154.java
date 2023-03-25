@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A062135.
+ * A062154 Number T(n,m) of n X m matrices over {0,1,2} with all row and column sums equal to 1 or 2, m=0,..,2*n.
  * @author Sean A. Irvine
  */
 public class A062154 extends Sequence0 {

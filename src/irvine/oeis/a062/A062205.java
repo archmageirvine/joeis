@@ -1,7 +1,7 @@
 package irvine.oeis.a062;
 
 /**
- * A062204.
+ * A062205 Number of alignments of n strings of length 4.
  * @author Sean A. Irvine
  */
 public class A062205 extends A062204 {

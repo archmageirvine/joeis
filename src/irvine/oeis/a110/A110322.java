@@ -6,7 +6,7 @@ package irvine.oeis.a110;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A110322 Row sums of a number triangle related to the Jacobsthal numbers.
+ * A110322 Row sums of A110321, a number triangle related to the Jacobsthal numbers.
  * @author Georg Fischer
  */
 public class A110322 extends HolonomicRecurrence {

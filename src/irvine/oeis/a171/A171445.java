@@ -7,7 +7,7 @@ import irvine.oeis.recur.PaddingSequence;
 
 
 /**
- * A171445 Sequence whose G.f is given by f(z)=(1+z)^(24)/(1-z).
+ * A171445 Expansion of g.f. (1+z)^(24)/(1-z).
  * @author Georg Fischer
  */
 public class A171445 extends EulerTransform {

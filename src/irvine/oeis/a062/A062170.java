@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.math.z.Z;
 
 /**
- * A062170.
+ * A062170 Maximum value of factorials mod n.
  * @author Sean A. Irvine
  */
 public class A062170 extends A062169 {

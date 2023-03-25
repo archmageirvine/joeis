@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A013317 Expansion of e.g.f.: tanh(exp(x)-cos(x))=x+2/2!*x^2-1/3!*x^3-24/4!*x^4-123/5!*x^5...
+ * A013317 Expansion of e.g.f.: tanh(exp(x) - cos(x)) = x + (2/2!)*x^2 - (1/3!)*x^3 - (24/4!)*x^4 - (123/5!)*x^5 + ...
  * @author Sean A. Irvine
  */
 public class A013317 extends Sequence0 {

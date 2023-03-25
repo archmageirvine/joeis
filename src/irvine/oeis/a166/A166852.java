@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A166852 Numbers n such that n^n + 3 is prime.
+ * A166852 Numbers k such that k^k + 3 is prime.
  *
  * @author Georg Fischer
  */

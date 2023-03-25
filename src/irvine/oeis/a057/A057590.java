@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A057590 Numbers of the form n*(n^3+-1)/2.
+ * A057590 Numbers of the form k*(k^3 +- 1)/2.
  * @author Sean A. Irvine
  */
 public class A057590 extends LinearRecurrence {

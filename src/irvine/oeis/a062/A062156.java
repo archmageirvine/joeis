@@ -4,7 +4,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
 
 /**
- * A062135.
+ * A062156 Number of n X n matrices over {0,1,2} with all row and column sums equal to 1 or 2.
  * @author Sean A. Irvine
  */
 public class A062156 extends A062154 {

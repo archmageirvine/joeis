@@ -5,7 +5,7 @@ import irvine.oeis.a094.A094728;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A105020 Array read by antidiagonals: row n (n &gt;= 0) contains the numbers m^2-n^2, m &gt;= n+1.
+ * A105020 Array read by antidiagonals: row n (n &gt;= 0) contains the numbers m^2 - n^2, m &gt;= n+1.
  * @author Georg Fischer
  */
 public class A105020 extends Transpose {

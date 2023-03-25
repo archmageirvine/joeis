@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A253380 Numbers n such that 17^n+4 is prime.
+ * A253380 Numbers k such that 17^k + 4 is prime.
  * @author Georg Fischer
  */
 public class A253380 extends PrimePositionSubsequence {

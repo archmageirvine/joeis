@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A084624 floor(C(n+5,5)/C(n+2,2)).
+ * A084624 a(n) = floor(C(n+5,5)/C(n+2,2)).
  * @author Sean A. Irvine
  */
 public class A084624 extends LinearRecurrence {

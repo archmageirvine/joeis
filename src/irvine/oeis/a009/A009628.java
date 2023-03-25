@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A009628 Expansion of sinh(x)/(1+x).
+ * A009628 Expansion of e.g.f.: sinh(x)/(1+x).
  * @author Sean A. Irvine
  */
 public class A009628 extends Sequence0 {

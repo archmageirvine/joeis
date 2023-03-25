@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A013564 E.g.f. arcsinh(log(x+1)/exp(x)).
+ * A013564 Expansion of e.g.f. arcsinh(log(x+1)/exp(x)).
  * @author Sean A. Irvine
  */
 public class A013564 extends Sequence1 {

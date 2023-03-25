@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a063.A063171;
 
 /**
- * A071152 ŇĀukasiewicz words for the rooted plane binary trees (interpretation d in Stanley&apos;s exercise 19) with the last leaf implicit, i.e., these words are given without the last trailing zero, except for the null tree which is encoded as 0.
+ * A071152 \u0141ukasiewicz words for the rooted plane binary trees (interpretation d in Stanley's exercise 19) with the last leaf implicit, i.e., these words are given without the last trailing zero, except for the null tree which is encoded as 0.
  * @author Georg Fischer
  */
 public class A071152 extends AbstractSequence {

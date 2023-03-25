@@ -3,7 +3,7 @@ package irvine.oeis.a252;
 
 import irvine.oeis.NoncomputableSequence;
 /**
- * A252852 Decimal expansion of Boltzmann constant in Hz K^-1.
+ * A252852 Decimal expansion of the Boltzmann constant in Hz/K according to the 2019 SI system.
  * @author Georg Fischer
  */
 public class A252852 extends NoncomputableSequence {

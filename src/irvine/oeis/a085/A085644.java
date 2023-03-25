@@ -4,7 +4,7 @@ package irvine.oeis.a085;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A085644 a(1) = 1; a(n+1) = a(n)*2n+2n+1.
+ * A085644 a(0) = 1; a(n+1) = a(n)*2n + 2n + 1.
  * Recurrence: a(n)=2*(n-1)*a(n-1)+2*n-1
  * @author Georg Fischer
  */

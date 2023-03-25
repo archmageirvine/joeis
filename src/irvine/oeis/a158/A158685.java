@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A158685 32*(32*n^2+1).
+ * A158685 a(n) = 32*(32*n^2+1).
  * @author Sean A. Irvine
  */
 public class A158685 extends LinearRecurrence {

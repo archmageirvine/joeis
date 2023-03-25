@@ -8,7 +8,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a062.A062204;
 
 /**
- * A062204.
+ * A262809 Number A(n,k) of lattice paths from {n}^k to {0}^k using steps that decrement one or more components by one; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A262809 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A049504 Product_{i = 0..n-1} ((3*i+1)!*(6*i)!*(2*i)!)/((4*i)!*(4*i+1)!).
+ * A049504 a(n) = Product_{i = 0..n-1} ((3*i+1)!*(6*i)!*(2*i)!)/((4*i)!*(4*i+1)!).
  * @author Sean A. Irvine
  */
 public class A049504 extends Sequence0 {

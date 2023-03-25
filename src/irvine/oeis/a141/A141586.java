@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062204.
+ * A141586 Strongly refactorable numbers: numbers n such that if n is divisible by d, it is divisible by the number of divisors of d.
  * @author Sean A. Irvine
  */
 public class A141586 extends Sequence1 {

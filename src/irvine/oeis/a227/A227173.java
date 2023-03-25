@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A227173 Numbers n such that (138^n + 137^n)/275 is prime.
+ * A227173 Numbers k such that (138^k + 137^k)/275 is prime.
  * @author Georg Fischer
  */
 public class A227173 extends PrimePositionSubsequence {

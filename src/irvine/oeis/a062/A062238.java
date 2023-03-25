@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A062204.
+ * A062238 Composite numbers which contain their largest proper divisor as a substring.
  * @author Sean A. Irvine
  */
 public class A062238 extends A002808 {

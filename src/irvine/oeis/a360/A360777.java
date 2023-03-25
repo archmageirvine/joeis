@@ -9,7 +9,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.string.StringUtils;
 
 /**
- * A360777 allocated for Ilya Gutkovskiy.
+ * A360777 a(n) is the index of the least n-gonal number that is the sum of two or more consecutive nonzero n-gonal numbers in more than one way, or -1 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A360777 extends Sequence2 {

@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A105037 a(0) = 0, a(1) = 4, a(2) = 6, a(3) = 98, for n&gt;3 a(n) = 22*a(n-2) - a(n-4) + 10.
+ * A105037 a(n) = 22*a(n-2) - a(n-4) + 10, for n &gt; 3, with a(0) = 0, a(1) = 4, a(2) = 6, a(3) = 98.
  * @author Georg Fischer
  */
 public class A105037 extends HolonomicRecurrence {

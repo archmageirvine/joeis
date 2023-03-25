@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A062204.
+ * A062241 Smallest integer &gt;= 2 that is not the sum of 2 positive integers whose prime factors are all &lt;= p(n), the n-th prime.
  * @author Sean A. Irvine
  */
 public class A062241 extends Sequence0 {

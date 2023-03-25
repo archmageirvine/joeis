@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A062204.
+ * A062204 Number of alignments of n strings of length 7.
  * @author Sean A. Irvine
  */
 public class A062204 extends Sequence0 {

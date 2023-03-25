@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A171218 a(n) = sum(A109613(k)*A005843(n-k): 0&lt;=k&lt;=n).
+ * A171218 a(n) = Sum_{k=0..n} A109613(k)*A005843(n-k).
  * @author Sean A. Irvine
  */
 public class A171218 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a335;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A335344 E.g.f.: exp(x^2/(2*(1 - x)^2)).
+ * A335344 Expansion of e.g.f. exp(x^2/(2*(1 - x)^2)).
  * Recurrence: a(n)=-(n-1)*(3*n-7)*a(n-2)+3*(n-1)*a(n-1)+(n-1)*(n-2)*(n-3)*a(n-3)
  * @author Georg Fischer
  */

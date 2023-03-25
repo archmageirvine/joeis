@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a006.A006855;
 
 /**
- * A191965 A problem of Zarankiewicz: maximal number of 1&apos;s in a symmetric n X n matrix of 0&apos;s and 1&apos;s with 0&apos;s on the main diagonal and no &quot;rectangle&quot; with 1&apos;s at the four corners.
+ * A191965 A problem of Zarankiewicz: maximal number of 1's in a symmetric n X n matrix of 0's and 1's with 0's on the main diagonal and no "rectangle" with 1's at the four corners.
  * @author Georg Fischer
  */
 public class A191965 extends AbstractSequence {

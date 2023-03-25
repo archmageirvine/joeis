@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A171441 Expansion of (1+x)^6/(1-x).
+ * A171441 Expansion of g.f. (1+x)^6/(1-x).
  * @author Georg Fischer
  */
 public class A171441 extends GeneratingFunctionSequence {

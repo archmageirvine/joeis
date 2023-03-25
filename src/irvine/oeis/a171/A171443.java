@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A171443 Expansion of (1+x)^8/(1-x).
+ * A171443 Expansion of g.f. (1+x)^8/(1-x).
  * @author Georg Fischer
  */
 public class A171443 extends GeneratingFunctionSequence {

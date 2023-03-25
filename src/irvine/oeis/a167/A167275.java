@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a001.A001316;
 
 /**
- * A167275 Row sums of triangle A167274 (a variant of Gould&apos;s sequence A001316).
+ * A167275 Row sums of triangle A167274 (a variant of Gould's sequence A001316).
  * @author Georg Fischer
  */
 public class A167275 extends AbstractSequence {

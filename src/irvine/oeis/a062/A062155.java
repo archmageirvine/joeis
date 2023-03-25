@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.math.z.Z;
 
 /**
- * A062135.
+ * A062155 Number of n-row matrices over {0,1,2} with all row and column sums equal to 1 or 2.
  * @author Sean A. Irvine
  */
 public class A062155 extends A062154 {

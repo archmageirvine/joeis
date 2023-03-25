@@ -6,7 +6,7 @@ import irvine.oeis.PartialProductSequence;
 import irvine.oeis.a000.A000124;
 
 /**
- * A128814 a(0)=1, a(n)= Product(k*(k+1)/2+1, k=1..n).
+ * A128814 a(0)=1, a(n)= Product_{k=1..n} k*(k+1)/2+1.
  * @author Georg Fischer
  */
 public class A128814 extends PartialProductSequence {

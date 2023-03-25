@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a034.A034851;
 
 /**
- * A062135.
+ * A062135 Odd-numbered columns of Losanitsch triangle A034851 formatted as triangle with an additional first column.
  * @author Sean A. Irvine
  */
 public class A062135 extends A034851 {

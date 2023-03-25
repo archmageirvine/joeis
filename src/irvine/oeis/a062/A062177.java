@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062170.
+ * A062177 Shifts left when MASKCONVolved with itself.
  * @author Sean A. Irvine
  */
 public class A062177 extends Sequence1 {

@@ -5,7 +5,7 @@ package irvine.oeis.a198;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A198070 Round((n+1/n)^5).
+ * A198070 a(n) = round((n+1/n)^5).
  * @author Georg Fischer
  */
 public class A198070 extends HolonomicRecurrence {

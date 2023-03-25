@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002144;
 import irvine.oeis.a002.A002145;
 
 /**
- * A118480 (n-th 4k+1 prime minus n-th 4k+3 prime less two)/4.
+ * A118480 (n-th 4k+1 prime minus n-th 4k+3 prime minus two)/4.
  * @author Georg Fischer
  */
 public class A118480 extends Sequence1 {

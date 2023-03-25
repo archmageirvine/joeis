@@ -5,7 +5,7 @@ package irvine.oeis.a201;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A201640 Sum_{k=1..n} k*binomial(n,k)^3*(n^2+n-k*n-k+k^2)/((n-k+1)^2*n).
+ * A201640 a(n) = Sum_{k=1..n} k*binomial(n, k)^3*(n^2 + n - k*n - k + k^2)/((n - k + 1)^2*n).
  * @author Georg Fischer
  */
 public class A201640 extends HolonomicRecurrence {

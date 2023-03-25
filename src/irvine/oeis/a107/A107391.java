@@ -5,7 +5,7 @@ package irvine.oeis.a107;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A107391 Expansion of sin(x)^2 * sinh(x)^2.
+ * A107391 Expansion of e.g.f. sin(x)^2 * sinh(x)^2.
  * @author Georg Fischer
  */
 public class A107391 extends HolonomicRecurrence {

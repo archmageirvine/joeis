@@ -5,7 +5,7 @@ import irvine.oeis.NestedSequence;
 import irvine.oeis.a057.A057501;
 
 /**
- * A082315 Permutation A057501 applied twice (&quot;squared&quot;).
+ * A082315 Permutation A057501 applied twice ("squared").
  * @author Georg Fischer
  */
 public class A082315 extends NestedSequence {

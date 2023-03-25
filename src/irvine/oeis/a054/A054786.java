@@ -6,7 +6,7 @@ import irvine.oeis.NumericalAronsonSequence;
 import irvine.oeis.a008.A008588;
 
 /**
- * A054786 Earliest sequence with a(a(n))=6n.
+ * A054786 Earliest sequence with a(a(n)) = 6n.
  * @author Georg Fischer
  */
 public class A054786 extends NumericalAronsonSequence {

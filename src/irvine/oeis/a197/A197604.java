@@ -3,7 +3,7 @@ package irvine.oeis.a197;
 // DO NOT EDIT here!
 
 /**
- * A197604 Floor((n+1/n)^5).
+ * A197604 a(n) = floor((n+1/n)^5).
  * @author Georg Fischer
  */
 public class A197604 extends A197602 {

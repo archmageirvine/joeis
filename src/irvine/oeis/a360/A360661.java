@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A360661 allocated for Ilya Gutkovskiy.
+ * A360661 Number of factorizations of n into a prime number of factors &gt; 1.
  * @author Sean A. Irvine
  */
 public class A360661 extends Sequence1 {

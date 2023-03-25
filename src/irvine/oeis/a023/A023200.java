@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000040;
  */
 public class A023200 extends A000040 {
 
-  private long mAdd;
+  private final long mAdd;
 
   /** Construct the sequence. */
   public A023200() {
@@ -22,7 +22,6 @@ public class A023200 extends A000040 {
    */
   public A023200(final long add) {
     mAdd = add;
-    ;
   }
 
   @Override

@@ -13,15 +13,19 @@ public class A008477 extends Sequence1 {
 
   protected long mN = 0;
 
-  @Override
-  public Z next() {
+  protected Z f(final long n) {
     Z prod = Z.ONE;
-    if (++mN > 1) {
-      final FactorSequence fs = Jaguar.factor(mN);
+    if (n > 1) {
+      final FactorSequence fs = Jaguar.factor(n);
       for (final Z p : fs.toZArray()) {
         prod = prod.multiply(Z.valueOf(fs.getExponent(p)).pow(p));
       }
     }
     return prod;
+  }
+
+  @Override
+  public Z next() {
+    return f(++mN);
   }
 }

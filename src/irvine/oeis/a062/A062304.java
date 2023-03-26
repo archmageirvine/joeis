@@ -1,0 +1,28 @@
+package irvine.oeis.a062;
+
+import irvine.factor.prime.Fast;
+import irvine.math.Mobius;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A062296.
+ * @author Sean A. Irvine
+ */
+public class A062304 extends Sequence1 {
+
+  private final Fast mPrime = new Fast();
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    while (true) {
+      mN += 2;
+      final long t = mN - Mobius.mobius(mN);
+      if (mPrime.isPrime(t)) {
+        return Z.valueOf(t);
+      }
+    }
+  }
+}
+

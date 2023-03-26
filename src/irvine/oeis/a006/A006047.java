@@ -17,7 +17,7 @@ public class A006047 extends Sequence0 {
     mA.set(2, Z.THREE);
   }
   private long mM = 0;
-  private long mN = -1;
+  protected long mN = -1;
 
   @Override
   public Z next() {

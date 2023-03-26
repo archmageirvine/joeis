@@ -2158,3 +2158,4 @@ A062166 Number of ways of placing n nonattacking torus queens on 2n+1 X 2n+1 boa
 A062167 Number of permutations with at most 2 queens on any torus diagonal, solutions congruent on the torus count only once.
 A062168 Number of permutations with at most 2 queens on any torus diagonal, solutions similar on the torus count only once.
 A062240 Number of subgroups of Chevalley group A_n(2) (the group of nonsingular n X n matrices over GF(2) ).
+A062297 Number of distinct Abelian subgroups of the symmetric group S_n

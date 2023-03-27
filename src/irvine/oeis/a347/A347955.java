@@ -8,7 +8,7 @@ import irvine.oeis.a003.A003415;
 import irvine.oeis.a003.A003602;
 
 /**
- * A347955 Dirichlet convolution of A003415 (arithmetic derivative) with A003602 (Kimberling&apos;s paraphrases).
+ * A347955 Dirichlet convolution of A003415 (arithmetic derivative) with A003602 (Kimberling's paraphrases).
  * @author Georg Fischer
  */
 public class A347955 extends AbstractSequence {

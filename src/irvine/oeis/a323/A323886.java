@@ -8,7 +8,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a004.A004718;
 
 /**
- * A323886 Dirichlet inverse of A004718, Per N?rg?rd&apos;s &quot;infinity sequence&quot;.
+ * A323886 Dirichlet inverse of A004718, Per N\u00f8rg\u00e5rd's "infinity sequence".
  * @author Georg Fischer
  */
 public class A323886 extends AbstractSequence {

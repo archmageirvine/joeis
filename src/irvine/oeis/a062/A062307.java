@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008477;
 
 /**
- * A062296.
+ * A062307 Numbers n such that n = A008477(A008477(n)) and n is not A008478.
  * @author Sean A. Irvine
  */
 public class A062307 extends A008477 {

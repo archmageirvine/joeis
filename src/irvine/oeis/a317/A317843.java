@@ -8,7 +8,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a002.A002487;
 
 /**
- * A317843 Dirichlet inverse of Stern&apos;s diatomic sequence (A002487).
+ * A317843 Dirichlet inverse of Stern's diatomic sequence (A002487).
  * @author Georg Fischer
  */
 public class A317843 extends AbstractSequence {

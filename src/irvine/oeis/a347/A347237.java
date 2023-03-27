@@ -8,7 +8,7 @@ import irvine.oeis.a003.A003972;
 import irvine.oeis.a061.A061019;
 
 /**
- * A347237 M√∂bius transform of A347236.
+ * A347237 M\u00f6bius transform of A347236.
  * @author Georg Fischer
  */
 public class A347237 extends AbstractSequence {

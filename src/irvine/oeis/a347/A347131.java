@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.a003.A003415;
 
 /**
- * A347131 a(n) = Sum_{d|n} phi(n/d) * A003415(d), where A003415 is the arithmetic derivative and phi is Euler totient function
+ * A347131 a(n) = Sum_{d|n} phi(n/d) * A003415(d), where A003415 is the arithmetic derivative and phi is Euler totient function.
  * @author Georg Fischer
  */
 public class A347131 extends AbstractSequence {

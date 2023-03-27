@@ -7,7 +7,7 @@ import irvine.oeis.DirichletConvolutionSequence;
 import irvine.oeis.a000.A000265;
 
 /**
- * A349448 Dirichlet convolution of A000265 (odd part of n) with A349134 (Dirichlet inverse of Kimberling&apos;s paraphrases).
+ * A349448 Dirichlet convolution of A000265 (odd part of n) with A349134 (Dirichlet inverse of Kimberling's paraphrases).
  * @author Georg Fischer
  */
 public class A349448 extends AbstractSequence {

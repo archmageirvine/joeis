@@ -8,7 +8,7 @@ import irvine.oeis.a003.A003602;
 import irvine.oeis.a008.A008836;
 
 /**
- * A349375 Dirichlet convolution of Kimberling&apos;s paraphrases (A003602) with Liouville&apos;s lambda.
+ * A349375 Dirichlet convolution of Kimberling's paraphrases (A003602) with Liouville's lambda.
  * @author Georg Fischer
  */
 public class A349375 extends AbstractSequence {

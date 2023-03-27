@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A062296.
+ * A062306 Number of ways writing 2^n as a sum of two nonprime numbers.
  * @author Sean A. Irvine
  */
 public class A062306 extends Sequence0 {

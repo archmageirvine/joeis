@@ -7,7 +7,7 @@ import irvine.oeis.DirichletConvolutionSequence;
 import irvine.oeis.a003.A003415;
 
 /**
- * A349380 Dirichlet convolution of A003415 (arithmetic derivative of n) with A349134 (Dirichlet inverse of Kimberling&apos;s paraphrases).
+ * A349380 Dirichlet convolution of A003415 (arithmetic derivative of n) with A349134 (Dirichlet inverse of Kimberling's paraphrases).
  * @author Georg Fischer
  */
 public class A349380 extends AbstractSequence {

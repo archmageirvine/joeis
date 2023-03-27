@@ -8,7 +8,7 @@ import irvine.oeis.a003.A003602;
 import irvine.oeis.a023.A023900;
 
 /**
- * A349373 Dirichlet convolution of Kimberling&apos;s paraphrases (A003602) with Dirichlet inverse of Euler phi (A023900).
+ * A349373 Dirichlet convolution of Kimberling's paraphrases (A003602) with Dirichlet inverse of Euler phi (A023900).
  * @author Georg Fischer
  */
 public class A349373 extends AbstractSequence {

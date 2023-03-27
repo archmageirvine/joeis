@@ -7,7 +7,7 @@ import irvine.oeis.DirichletInverseSequence;
 import irvine.oeis.a061.A061347;
 
 /**
- * A117997 Sum_{d|n} a(d) = n for n = 3^m (m &gt;= 0) and for other n the sum is zero; i.e., the M√∂bius transform of [1, 0, 3, 0, 0, 0, 0, 0, 9, 0,...].
+ * A117997 Sum_{d|n} a(d) = n for n = 3^m (m &gt;= 0) and for other n the sum is zero; i.e., the M\u00f6bius transform of [1, 0, 3, 0, 0, 0, 0, 0, 9, 0,...].
  * @author Georg Fischer
  */
 public class A117997 extends AbstractSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.a008.A008836;
 import irvine.oeis.a342.A342001;
 
 /**
- * A347395 Dirichlet convolution of Liouville&apos;s lambda (A008836) with A342001, where A342001(n) = A003415(n)/A003557(n).
+ * A347395 Dirichlet convolution of Liouville's lambda (A008836) with A342001, where A342001(n) = A003415(n)/A003557(n).
  * @author Georg Fischer
  */
 public class A347395 extends AbstractSequence {

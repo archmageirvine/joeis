@@ -7,7 +7,7 @@ import irvine.oeis.DirichletConvolutionSequence;
 import irvine.oeis.a000.A000027;
 
 /**
- * A349432 Dirichlet convolution of A000027 (the identity function) with A349134 (Dirichlet inverse of Kimberling&apos;s paraphrases).
+ * A349432 Dirichlet convolution of A000027 (the identity function) with A349134 (Dirichlet inverse of Kimberling's paraphrases).
  * @author Georg Fischer
  */
 public class A349432 extends AbstractSequence {

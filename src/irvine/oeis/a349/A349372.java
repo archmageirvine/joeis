@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.a003.A003602;
 
 /**
- * A349372 Dirichlet convolution of Kimberling&apos;s paraphrases (A003602) with tau (number of divisors, A000005).
+ * A349372 Dirichlet convolution of Kimberling's paraphrases (A003602) with tau (number of divisors, A000005).
  * @author Georg Fischer
  */
 public class A349372 extends AbstractSequence {

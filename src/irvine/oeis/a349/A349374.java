@@ -8,7 +8,7 @@ import irvine.oeis.a003.A003602;
 import irvine.oeis.a007.A007913;
 
 /**
- * A349374 Dirichlet convolution of Kimberling&apos;s paraphrases (A003602) with squarefree part of n (A007913).
+ * A349374 Dirichlet convolution of Kimberling's paraphrases (A003602) with squarefree part of n (A007913).
  * @author Georg Fischer
  */
 public class A349374 extends AbstractSequence {

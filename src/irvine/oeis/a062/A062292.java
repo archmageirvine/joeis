@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A062292.
+ * A062292 A B_2 sequence: a(n) is the smallest cube such that the pairwise sums of {a(1)...a(n)} are all distinct.
  * @author Sean A. Irvine
  */
 public class A062292 extends MemorySequence {

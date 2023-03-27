@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A061797 Smallest k such that k*n has even digits and is a palindrome or becomes a palindrome when 0's are added on the left.
+ * A062293 Smallest multiple k*n of n which has even digits and is a palindrome or becomes a palindrome when 0's are added on the left (e.g., 10 becomes 010, which is a palindrome).
  * @author Sean A. Irvine
  */
 public class A062293 extends Sequence0 {

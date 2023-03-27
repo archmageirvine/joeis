@@ -6,7 +6,7 @@ import irvine.oeis.RecordSubsequence;
 import irvine.oeis.a061.A061026;
 
 /**
- * A233517 Record values in A061026, the smallest number m such that n divides phi(m), where phi is Euler&apos;s totient function.
+ * A233517 Record values in A061026, the smallest number m such that n divides phi(m), where phi is Euler's totient function.
  * @author Georg Fischer
  */
 public class A233517 extends RecordSubsequence {

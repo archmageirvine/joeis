@@ -8,7 +8,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a006.A006369;
 
 /**
- * A349368 Dirichlet inverse of A006369, the inverse permutation of &quot;amusical permutation&quot;.
+ * A349368 Dirichlet inverse of A006369, the inverse permutation of "amusical permutation".
  * @author Georg Fischer
  */
 public class A349368 extends AbstractSequence {

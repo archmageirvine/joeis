@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062296.
+ * A062304 Primes of the form k - mu(k).
  * @author Sean A. Irvine
  */
 public class A062304 extends Sequence1 {

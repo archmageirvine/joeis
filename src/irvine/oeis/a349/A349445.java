@@ -7,7 +7,7 @@ import irvine.oeis.DirichletConvolutionSequence;
 import irvine.oeis.a001.A001511;
 
 /**
- * A349445 Dirichlet convolution of A001511 (the 2-adic valuation of 2n) with A349134 (the Dirichlet inverse of Kimberling&apos;s paraphrases).
+ * A349445 Dirichlet convolution of A001511 (the 2-adic valuation of 2n) with A349134 (the Dirichlet inverse of Kimberling's paraphrases).
  * @author Georg Fischer
  */
 public class A349445 extends AbstractSequence {

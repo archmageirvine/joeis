@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A062292.
+ * A062294 A B_2 sequence: a(n) is the smallest prime such that the pairwise sums of distinct elements are all distinct.
  * @author Sean A. Irvine
  */
 public class A062294 extends MemorySequence {

@@ -8,7 +8,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a006.A006368;
 
 /**
- * A349351 Dirichlet inverse of A006368, &quot;the amusical permutation&quot;, a(2n)=3n, a(4n+1)=3n+1, a(4n-1)=3n-1.
+ * A349351 Dirichlet inverse of A006368, "the amusical permutation", a(2n)=3n, a(4n+1)=3n+1, a(4n-1)=3n-1.
  * @author Georg Fischer
  */
 public class A349351 extends AbstractSequence {

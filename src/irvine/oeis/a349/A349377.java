@@ -7,7 +7,7 @@ import irvine.oeis.DirichletConvolutionSequence;
 import irvine.oeis.a006.A006369;
 
 /**
- * A349377 Dirichlet convolution of A006369 with the Dirichlet inverse of A006368, where A006368 is the &quot;amusical permutation&quot;, and A006369 is its inverse permutation.
+ * A349377 Dirichlet convolution of A006369 with the Dirichlet inverse of A006368, where A006368 is the "amusical permutation", and A006369 is its inverse permutation.
  * @author Georg Fischer
  */
 public class A349377 extends AbstractSequence {

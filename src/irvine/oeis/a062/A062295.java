@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A062292.
+ * A062295 A B_2 sequence: a(n) is the smallest square such that pairwise sums of not necessarily distinct elements are all distinct.
  * @author Sean A. Irvine
  */
 public class A062295 extends MemorySequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062296.
+ * A062299 a(n) = floor(cot(Pi/(n+1))).
  * @author Sean A. Irvine
  */
 public class A062299 extends Sequence1 {

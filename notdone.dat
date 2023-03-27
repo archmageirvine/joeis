@@ -2160,3 +2160,4 @@ A062168 Number of permutations with at most 2 queens on any torus diagonal, solu
 A062240 Number of subgroups of Chevalley group A_n(2) (the group of nonsingular n X n matrices over GF(2) ).
 A062297 Number of distinct Abelian subgroups of the symmetric group S_n
 A062315 Number of cyclic subgroups of the group SL(n,4) (the group of nonsingular n X n matrices over GF(4) with determinant 1 ) [could not match numbers]
+A062361 Number of triangular regions in regular n-gon with all diagonals drawn

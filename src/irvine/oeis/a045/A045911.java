@@ -2,6 +2,7 @@ package irvine.oeis.a045;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -13,19 +14,14 @@ public class A045911 extends Sequence1 {
   private final Fast mPrime = new Fast();
   private Z mN = Z.EIGHT;
 
-  private boolean isCube(final Z n) {
-    n.root(3);
-    return n.auxiliary() == 1;
-  }
-
   @Override
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (!mPrime.isPrime(mN) && !isCube(mN)) {
+      if (!mPrime.isPrime(mN) && !ZUtils.isCube(mN)) {
         boolean ok = true;
         for (Z p = Z.TWO; p.compareTo(mN) < 0; p = mPrime.nextPrime(p)) {
-          if (isCube(mN.subtract(p))) {
+          if (ZUtils.isCube(mN.subtract(p))) {
             ok = false;
             break;
           }

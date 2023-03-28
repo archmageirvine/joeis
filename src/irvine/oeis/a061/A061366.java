@@ -3,6 +3,7 @@ package irvine.oeis.a061;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -17,9 +18,7 @@ public class A061366 extends Sequence1 {
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      final Z t = fs.phi().add(fs.sigma());
-      t.root(3);
-      if (t.auxiliary() == 1) {
+      if (ZUtils.isCube(fs.phi().add(fs.sigma()))) {
         return Z.valueOf(mN);
       }
     }

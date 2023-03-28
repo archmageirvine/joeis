@@ -1,25 +1,18 @@
 package irvine.oeis.a061;
 
-import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000578;
 
 /**
  * A061458 Cubes whose digit reversal is also a cube.
  * @author Sean A. Irvine
  */
-public class A061458 extends A000578 {
+public class A061458 extends FilterSequence {
 
-  @Override
-  public Z next() {
-    while (true) {
-      final Z t = super.next();
-      final Z r = ZUtils.reverse(t);
-      r.root(3);
-      if (r.auxiliary() == 1) {
-        return t;
-      }
-    }
+  /** Construct the sequence. */
+  public A061458() {
+    super(new A000578(), k -> ZUtils.isCube(ZUtils.reverse(k)));
   }
 }
 

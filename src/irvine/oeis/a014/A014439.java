@@ -2,6 +2,7 @@ package irvine.oeis.a014;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -26,8 +27,7 @@ public class A014439 extends Sequence1 {
         final long x3 = x * x * x;
         if (x3 > mN) {
           final Z y = Z.valueOf(x3 - mN);
-          y.root(3);
-          if (y.auxiliary() != 0 && ++c > ways()) {
+          if (ZUtils.isCube(y) && ++c > ways()) {
             break;
           }
         }

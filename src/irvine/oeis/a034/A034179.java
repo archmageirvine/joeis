@@ -22,8 +22,7 @@ public class A034179 extends Sequence1 {
         final long x3 = x * x * x;
         if (x3 > mN) {
           final Z y = Z.valueOf(x3 - mN);
-          y.root(3);
-          if (y.auxiliary() != 0 && ++c > 1) {
+          if (y.root(3).auxiliary() != 0 && ++c > 1) {
             return Z.valueOf(mN);
           }
         }

@@ -20,9 +20,7 @@ public class A007941 extends A007939 {
         v *= 10;
         v += s.charAt(t) - '0';
       }
-      final Z w = Z.valueOf(v);
-      w.root(3);
-      if (w.auxiliary() != 0) {
+      if (Z.valueOf(v).root(3).auxiliary() != 0) {
         return true;
       }
     }

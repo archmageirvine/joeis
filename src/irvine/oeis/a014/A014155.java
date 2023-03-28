@@ -1,8 +1,8 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a009.A009421;
 
 /**
  * A014155 Sum of a nonnegative cube and a triangular number.
@@ -18,7 +18,7 @@ public class A014155 extends Sequence1 {
       ++mN;
       long t;
       for (long k = 0; (t = k * (k + 1) / 2) <= mN; ++k) {
-        if (A009421.isCube(Z.valueOf(mN - t))) {
+        if (ZUtils.isCube(Z.valueOf(mN - t))) {
           return Z.valueOf(mN);
         }
       }

@@ -96,7 +96,9 @@ final class Root {
       aa.mAuxiliary = 1L;
       b = Z.ZERO;
     }
-    return sa < 0 ? b.negate() : b;
+    final Z res = sa < 0 ? b.negate() : b;
+    res.mAuxiliary = aa.mAuxiliary;
+    return res;
   }
 
 }

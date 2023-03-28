@@ -1,6 +1,7 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000578;
 
 /**
@@ -18,12 +19,8 @@ public class A035131 extends A000578 {
     while (true) {
       final Z s = super.next();
       final String t = s.toString();
-      if (t.length() == 1 || t.charAt(1) != '0') {
-        final Z rot = new Z(t.substring(1) + t.charAt(0));
-        rot.root(3);
-        if (rot.auxiliary() == 1) {
-          return s;
-        }
+      if ((t.length() == 1 || t.charAt(1) != '0') && ZUtils.isCube(new Z(t.substring(1) + t.charAt(0)))) {
+        return s;
       }
     }
   }

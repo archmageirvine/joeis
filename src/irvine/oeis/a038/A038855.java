@@ -1,6 +1,7 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -17,9 +18,7 @@ public class A038855 extends Sequence1 {
       mN = mN.add(7);
       final Z lim = mN.sqrt();
       for (Z x = Z.ONE; x.compareTo(lim) <= 0; x = x.add(1)) {
-        final Z s = mN.add(x.pow(3));
-        s.root(3);
-        if (s.auxiliary() == 1) {
+        if (ZUtils.isCube(mN.add(x.pow(3)).root(3))) {
           return mN;
         }
       }

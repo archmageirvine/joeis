@@ -17,11 +17,8 @@ public class A061923 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final Z t = mN.subtract(ZUtils.reverse(mN));
-      if (!t.isZero()) {
-        t.root(3);
-        if (t.auxiliary() == 1) {
-          return mN;
-        }
+      if (!t.isZero() && ZUtils.isCube(t)) {
+        return mN;
       }
     }
   }

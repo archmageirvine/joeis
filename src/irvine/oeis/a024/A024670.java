@@ -1,8 +1,8 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
-import irvine.oeis.a009.A009421;
 
 /**
  * A024670 Numbers that are sums of 2 distinct positive cubes.
@@ -17,7 +17,7 @@ public class A024670 implements Sequence {
     while (true) {
       ++mN;
       for (long k = 1; k * k * k * 2 < mN; ++k) {
-        if (A009421.isCube(Z.valueOf(mN - k * k * k))) {
+        if (ZUtils.isCube(Z.valueOf(mN - k * k * k))) {
           return Z.valueOf(mN);
         }
       }

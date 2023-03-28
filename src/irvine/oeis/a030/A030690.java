@@ -1,6 +1,7 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000290;
 
 /**
@@ -26,8 +27,7 @@ public class A030690 extends A000290 {
         v = 0; // to allow for leading 0s in what is appended
       }
       final Z u = t.add(v);
-      u.root(3);
-      if (u.auxiliary() == 1) {
+      if (ZUtils.isCube(u)) {
         return u;
       }
     }

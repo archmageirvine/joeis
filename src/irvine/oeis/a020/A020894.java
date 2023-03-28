@@ -1,6 +1,7 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -21,11 +22,8 @@ public class A020894 extends Sequence1 {
       final Z lim = mN.multiply(12).subtract(3).sqrt().add(3).divide(6);
       for (Z k = Z.ONE; k.compareTo(lim) <= 0; k = k.add(1)) {
         final Z r = mN.subtract(k.pow(3));
-        if (!r.isZero()) {
-          r.root(3);
-          if (r.auxiliary() == 1) {
-            return mN;
-          }
+        if (!r.isZero() && ZUtils.isCube(r)) {
+          return mN;
         }
       }
     }

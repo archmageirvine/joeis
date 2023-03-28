@@ -1,6 +1,7 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -23,11 +24,8 @@ public class A038677 extends Sequence1 {
       final String s = n3.toString();
       for (int k = s.length() - 2; k > 0; --k) {
         final Z t = new Z(s.substring(k));
-        if (!t.isZero()) {
-          t.root(3);
-          if (t.auxiliary() == 1) {
-            return n3;
-          }
+        if (!t.isZero() && ZUtils.isCube(t)) {
+          return n3;
         }
       }
     }

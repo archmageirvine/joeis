@@ -1,21 +1,16 @@
 package irvine.oeis.a054;
 
-import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
+import irvine.oeis.FilterSequence;
 
 /**
  * A054224 A054221 without cubes.
  * @author Sean A. Irvine
  */
-public class A054224 extends A054221 {
+public class A054224 extends FilterSequence {
 
-  @Override
-  public Z next() {
-    while (true) {
-      final Z t = super.next();
-      t.root(3);
-      if (t.auxiliary() != 1) {
-        return t;
-      }
-    }
+  /** Construct the sequence. */
+  public A054224() {
+    super(new A054221(), k -> !ZUtils.isCube(k));
   }
 }

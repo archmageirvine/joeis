@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
 public class A051801 extends Sequence0 {
 
   private int mN = -1;
-  private int mBase;
+  private final int mBase;
 
   /** Construct the sequence. */
   public A051801() {
@@ -20,7 +20,7 @@ public class A051801 extends Sequence0 {
 
   /**
    * Generic constructor with parameters
-   * @param base
+   * @param base base to use
    */
   public A051801(final int base) {
     mBase = base;

@@ -1302,4 +1302,13 @@ public final class ZUtils {
   public static boolean isTriangular(final Z n) {
     return n.shiftLeft(3).add(1).isSquare();
   }
+
+  /**
+   * Test if a number is a cube.
+   * @param v number to test
+   * @return true iff the number is a cube
+   */
+  public static boolean isCube(final Z v) {
+    return v.root(3).auxiliary() == 1;
+  }
 }

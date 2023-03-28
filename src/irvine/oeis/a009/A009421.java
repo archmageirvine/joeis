@@ -1,6 +1,7 @@
 package irvine.oeis.a009;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -11,23 +12,13 @@ public class A009421 extends Sequence1 {
 
   private Z mN = Z.valueOf(21);
 
-  /**
-   * Test if a number is a cube.
-   * @param v number to test
-   * @return true iff the number is a cube
-   */
-  public static boolean isCube(final Z v) {
-    v.root(3);
-    return v.auxiliary() == 1;
-  }
-
   private boolean isCubeDecomposable(final String s, final boolean multipart) {
     if (s.isEmpty()) {
       return multipart;
     }
     for (int k = 1; k <= (multipart ? s.length() : s.length() - 1); ++k) {
       final Z v = new Z(s.substring(0, k));
-      if (isCube(v) && isCubeDecomposable(s.substring(k), true)) {
+      if (ZUtils.isCube(v) && isCubeDecomposable(s.substring(k), true)) {
         return true;
       }
     }

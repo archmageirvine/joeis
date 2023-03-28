@@ -3,6 +3,7 @@ package irvine.oeis.a005;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -88,20 +89,12 @@ public class A005988 extends Sequence1 {
     for (long x = 1; x < 2 * bigD; ++x) {
       final long x3 = x * x * x;
       final long v = 1 - x3;
-      if (v != 0 && v % bigD == 0) {
-        final Z g = Z.valueOf(v / bigD);
-        g.root(3);
-        if (g.auxiliary() == 1) {
-          return Z.valueOf(x);
-        }
+      if (v != 0 && v % bigD == 0 && ZUtils.isCube(Z.valueOf(v / bigD))) {
+        return Z.valueOf(x);
       }
       final long w = 1 + x3;
-      if (w % bigD == 0) {
-        final Z g = Z.valueOf(w / bigD);
-        g.root(3);
-        if (g.auxiliary() == 1) {
-          return Z.valueOf(-x);
-        }
+      if (w % bigD == 0 && ZUtils.isCube(Z.valueOf(w / bigD))) {
+        return Z.valueOf(-x);
       }
     }
     // Strictly I only know the heuristic works to 50000

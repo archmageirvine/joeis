@@ -1,8 +1,8 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a009.A009421;
 
 /**
  * A014157 Numbers that are the sum of 2 cubes and a triangular number.
@@ -21,7 +21,7 @@ public class A014157 extends Sequence1 {
         final long m = mN - t;
         long s;
         for (long c = 0; (s = c * c * c) <= m; ++c) {
-          if (A009421.isCube(Z.valueOf(m - s))) {
+          if (ZUtils.isCube(Z.valueOf(m - s))) {
             return Z.valueOf(mN);
           }
         }

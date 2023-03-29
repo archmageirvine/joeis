@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A062365.
+ * A062365 Number of nonisomorphic cyclic subgroups of the group A_n X A_n (where A_n is the alternating group of degree n).
  * @author Sean A. Irvine
  */
 public class A062365 extends Sequence1 {

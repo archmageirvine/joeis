@@ -6,7 +6,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a051.A051801;
 
 /**
- * A062365.
+ * A062371 Numbers the product of whose nonzero digits is a perfect square.
  * @author Sean A. Irvine
  */
 public class A062371 extends FilterPositionSequence {

@@ -2161,3 +2161,4 @@ A062240 Number of subgroups of Chevalley group A_n(2) (the group of nonsingular 
 A062297 Number of distinct Abelian subgroups of the symmetric group S_n
 A062315 Number of cyclic subgroups of the group SL(n,4) (the group of nonsingular n X n matrices over GF(4) with determinant 1 ) [could not match numbers]
 A062361 Number of triangular regions in regular n-gon with all diagonals drawn
+A062386 Number of alternating link diagrams with n crossings, 1 connected component and two external legs

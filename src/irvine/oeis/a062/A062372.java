@@ -6,7 +6,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a051.A051801;
 
 /**
- * A062365.
+ * A062372 Numbers the product of whose nonzero digits is a cube.
  * @author Sean A. Irvine
  */
 public class A062372 extends FilterPositionSequence {

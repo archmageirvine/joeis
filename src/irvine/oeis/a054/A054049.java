@@ -15,6 +15,6 @@ public class A054049 extends NumericalAronsonSequence {
   public A054049() {
     super(0, new A000045(), 0);
     mSeq.next();
-    mSeq.remove(0);;
+    mSeq.remove(0);
   }
 }

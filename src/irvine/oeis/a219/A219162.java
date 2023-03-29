@@ -22,7 +22,6 @@ public class A219162 extends Sequence0 {
    */
   public A219162(final int start) {
     mA = Z.valueOf(start);
-    ;
   }
 
   @Override

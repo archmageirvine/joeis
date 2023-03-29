@@ -1,28 +1,26 @@
 package irvine.oeis.a285;
-// manually dirichcon/dirichcon2 at 2023-03-25 19:35
+// manually A076577/parmof2 at 2023-03-26 20:41
 
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
-import irvine.oeis.DirichletConvolutionSequence;
-import irvine.oeis.a000.A000035;
-import irvine.oeis.a000.A000583;
+import irvine.oeis.a076.A076577;
 
 /**
  * A285989 a(0) = 0, a(n) = Sum_{0&lt;d|n, n/d odd} d^4 for n &gt; 0.
  * @author Georg Fischer
  */
-public class A285989 extends AbstractSequence {
+public class A285989 extends A076577 {
 
-  private final DirichletConvolutionSequence mSeq = new DirichletConvolutionSequence(new A000035(), 0, new A000583(), 0);
-  private int mN = 0;
+  private int mN = -1;
 
   /** Construct the sequence. */
   public A285989() {
-    super(0);
+    super(0, 4);
   }
 
   @Override
   public Z next() {
-    return (++mN == 1) ? Z.ZERO : mSeq.next();
+    ++mN;
+    final Z result = super.next();
+    return (mN == 0) ? Z.ZERO : result;
   }
 }

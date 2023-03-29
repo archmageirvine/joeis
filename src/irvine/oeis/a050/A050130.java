@@ -13,7 +13,7 @@ public class A050130 extends A050128 {
   
   /** Construct the sequence. */
   public A050130() {
-    mK = Z.ZERO;;
+    mK = Z.ZERO;
   }
   
   @Override

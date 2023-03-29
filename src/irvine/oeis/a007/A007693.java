@@ -29,7 +29,6 @@ public class A007693 extends Sequence1 {
   public A007693(final long mul, final long add) {
     mMul = mul;
     mAdd = add;
-    ;
   }
 
   @Override

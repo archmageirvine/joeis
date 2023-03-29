@@ -152,7 +152,7 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
             break;
           default:
           case 3: // d odd,  k odd
-            mDen[k] = binomial(d, k).negate();;
+            mDen[k] = binomial(d, k).negate();
             break;
         } // switch
       } // for denominator

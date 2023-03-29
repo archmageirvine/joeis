@@ -27,7 +27,6 @@ public class PrimeConditionListSequence implements Sequence {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      ;
       boolean busy = true;
       final int imax = mList.length;
       int i = -1;

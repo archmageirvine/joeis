@@ -24,7 +24,7 @@ public class A062400 extends Sequence1 {
     // Heuristic, assume number of digits in solution is less than n.
     // *4 because there are 4 numbers with a given number of digits to consider.
     // This seemed more workable that carefully examining the residues to periodic repeats.
-    long lim = 4 * mN;
+    final long lim = 4 * mN;
     while (true) {
       final Z a = t.pollFirst();
       final long r = a.mod(mN);

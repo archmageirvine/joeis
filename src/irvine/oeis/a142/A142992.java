@@ -22,5 +22,4 @@ public class A142992 extends UpperLeftTriangle {
     return Integers.SINGLETON.sum(0, n, i -> Binomial.binomial(2L * n, 2L * i).multiply(Binomial.binomial(k + i, n)));
   }
 
-  ;
 }

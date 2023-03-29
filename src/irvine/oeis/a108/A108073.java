@@ -5,8 +5,6 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a052.A052709;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
-;
-
 /**
  * A108073 Triangle in A071943 with rows reversed.
  * @author Georg Fischer

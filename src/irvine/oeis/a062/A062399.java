@@ -26,7 +26,7 @@ public class A062399 extends Sequence0 {
     // Heuristic, assume number of digits in solution is less than n.
     // * 9 because there are 9 numbers with a given number of digits to consider.
     // This seemed more workable that carefully examining the residues to periodic repeats.
-    long lim = 9 * mN;
+    final long lim = 9 * mN;
     while (true) {
       final Z a = t.pollFirst();
       final long r = a.mod(mN);

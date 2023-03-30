@@ -7,7 +7,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A212797 Row 2 of array in A212796.
+ * A212797 Number of spanning trees in C_2 X C_n.
  * @author Georg Fischer
  */
 public class A212797 extends HolonomicRecurrence {

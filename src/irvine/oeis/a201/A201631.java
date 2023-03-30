@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a051.A051291;
 
 /**
- * A201631 Fibonacci meanders of length 2n and central angle 180 degrees.
+ * A201631 a(n) is the number of Fibonacci meanders of length m*n and central angle 360/m degrees where m = 2.
  * @author Sean A. Irvine
  */
 public class A201631 extends PartialSumSequence {

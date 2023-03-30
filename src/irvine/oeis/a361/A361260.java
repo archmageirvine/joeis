@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A361260 allocated for Donghwi Park.
+ * A361260 Maximum latitude in degrees of spherical Mercator projection with an aspect ratio of one, arctan(sinh(Pi))*180/Pi.
  * @author Sean A. Irvine
  */
 public class A361260 extends DecimalExpansionSequence {

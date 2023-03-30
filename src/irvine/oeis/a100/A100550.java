@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A100550 If n&gt;3 a(n)=a(n-1)+2*a(n-2)+3*a(n-3) else a(n)=n.
+ * A100550 a(n) = a(n-1) + 2*a(n-2) + 3*a(n-3), for n&gt;3, otherwise a(n) = n.
  * @author Georg Fischer
  */
 public class A100550 extends GeneratingFunctionSequence {

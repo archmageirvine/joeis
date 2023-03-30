@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A145399 a(n) = Dirichlet g.f.: (1+4/2^s+1/4^s)*zeta(s)^3.
+ * A145399 Dirichlet g.f.: (1+4/2^s+1/4^s)*zeta(s)^3.
  * <code>a(2^e) = 3*e*(e+1)+1 and a(p^e) = (e+1)*(e+2)/2</code>
  * @author Georg Fischer
  */

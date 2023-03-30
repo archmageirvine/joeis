@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001221;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
- * A062799 Inverse Möbius transform of the numbers of distinct prime factors (A001221).
+ * A062799 Inverse M\u00f6bius transform of the numbers of distinct prime factors (A001221).
  * @author Georg Fischer
  */
 public class A062799 extends Sequence1 {

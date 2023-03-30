@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a019.A019519;
 
 /**
- * A105351 Number of divisors of 135....(2n+1), the concatenation of the first n odd numbers.
+ * A105351 Number of divisors of 135...(2n-1), the concatenation of the first n odd numbers.
  * @author Georg Fischer
  */
 public class A105351 extends Sequence0 {

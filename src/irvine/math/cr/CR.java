@@ -931,7 +931,7 @@ public abstract class CR extends Number implements Comparable<CR> {
 
   /**
    * The multiplicative inverse of a computable real.
-   * <code>x.inverse()</code> is equivalent to <code>CR.valueOf(1).divide(x)</code>.
+   * <code>x.inverse()</code> is equivalent to <code>CR.ONE.divide(x)</code>.
    * @return multiplicative inverse
    */
   public CR inverse() {

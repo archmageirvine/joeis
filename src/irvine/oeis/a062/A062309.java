@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062309 Number of ways writing n! as sums of a prime and a nonprime numbers.
+ * A062309 Number of ways writing n! as sums of a prime and a nonprime.
  * @author Sean A. Irvine
  */
 public class A062309 extends Sequence1 {

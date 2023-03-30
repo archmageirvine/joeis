@@ -5,7 +5,7 @@ package irvine.oeis.a084;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A084609 Coefficients of 1/(1-4x-8x^2)^(1/2); also, a(n) is the central coefficient of (1+2x+3x^2)^n.
+ * A084609 Coefficients of 1/sqrt(1-4*x-8*x^2); also, a(n) is the central coefficient of (1+2*x+3*x^2)^n.
  * @author Georg Fischer
  */
 public class A084609 extends HolonomicRecurrence {

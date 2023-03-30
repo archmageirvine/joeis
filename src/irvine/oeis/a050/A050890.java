@@ -5,7 +5,7 @@ package irvine.oeis.a050;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A050890 Numbers n such that 263*2^n-1 is prime.
+ * A050890 Numbers k such that 263*2^k-1 is prime.
  * @author Georg Fischer
  */
 public class A050890 extends PowerFactorPrimeSequence {

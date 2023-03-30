@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A034925 Numbers n such that 89^n-88 is prime.
+ * A034925 Numbers k such that 89^k-88 is prime.
  * @author Sean A. Irvine
  */
 public class A034925 extends Sequence1 {

@@ -1,0 +1,39 @@
+package irvine.oeis.a062;
+
+import irvine.math.partitions.IntegerPartition;
+import irvine.math.z.Integers;
+import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
+import irvine.oeis.Sequence0;
+import irvine.oeis.SkipSequence;
+import irvine.oeis.a002.A002110;
+
+/**
+ * A062501.
+ * @author Sean A. Irvine
+ */
+public class A062515 extends Sequence0 {
+
+  private final MemorySequence mPrimorial = MemorySequence.cachedSequence(new SkipSequence(new A002110(), 1)); // We want mPrimorial.a(1) == 6
+  private IntegerPartition mPart = new IntegerPartition(1);
+  private int mN = 0;
+
+  private int[] nextPartition() {
+    final int[] p = mPart.next();
+    if (p == null) {
+      mPart = new IntegerPartition(++mN);
+      return mPart.next();
+    }
+    return p;
+  }
+
+  @Override
+  public Z next() {
+    if (mN == 0) {
+      ++mN;
+      return Z.ONE;
+    }
+    int[] p = nextPartition();
+    return Integers.SINGLETON.product(0, p.length - 1, k -> mPrimorial.a(p[k]));
+  }
+}

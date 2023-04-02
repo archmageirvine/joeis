@@ -12,7 +12,7 @@ public class MultiplicativeClosureSequence extends MemorySequence {
 
   private final MemorySequence mSeq;
   private final TreeSet<Z> mA = new TreeSet<>();
-  private Z mP;
+  private Z mTerm;
 
   /**
    * Construct the multiplicative closure of another sequence.
@@ -20,7 +20,7 @@ public class MultiplicativeClosureSequence extends MemorySequence {
    */
   public MultiplicativeClosureSequence(final Sequence seq) {
     mSeq = MemorySequence.cachedSequence(seq);
-    mP = mSeq.next();
+    mTerm = mSeq.next();
   }
 
   @Override
@@ -28,14 +28,17 @@ public class MultiplicativeClosureSequence extends MemorySequence {
     if (size() == 0) {
       return Z.ONE;
     }
-    if (mA.isEmpty() || mA.first().compareTo(mP) >= 0) {
+    if (mTerm != null && (mA.isEmpty() || mA.first().compareTo(mTerm) >= 0)) {
       for (final Z t : this) {
-        mA.add(t.multiply(mP));
+        mA.add(t.multiply(mTerm));
       }
-      mP = mSeq.next();
+      mTerm = mSeq.next();
     }
     final Z res = mA.pollFirst();
     for (final Z t : mSeq) {
+      if (t == null) {
+        break;
+      }
       if (!Z.ONE.equals(res)) {
         mA.add(res.multiply(t));
       }

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a061.A061396;
 
 /**
- * A062501.
+ * A062504 Triangle in which k-th row lists natural number values for the collection of riffs with k nodes.
  * @author Sean A. Irvine
  */
 public class A062504 extends Sequence0 {

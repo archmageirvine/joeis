@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A062501.
+ * A062519 Numbers for which (product of digits) / (sum of digits) is an integer &gt; 1.
  * @author Sean A. Irvine
  */
 public class A062519 extends Sequence1 {

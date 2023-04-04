@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A034923 Numbers n such that 43^n-42 is prime.
+ * A034923 Numbers k such that 43^k - 42 is prime.
  * @author Sean A. Irvine
  */
 public class A034923 extends Sequence1 {

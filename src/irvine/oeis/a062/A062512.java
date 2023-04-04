@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062501.
+ * A062512 a(n) = floor( gamma(n/4) * gamma(n+1)/4 ).
  * @author Sean A. Irvine
  */
 public class A062512 extends Sequence1 {

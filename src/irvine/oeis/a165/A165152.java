@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A165152 a(n) = (3*12^n-8^n)/2.
+ * A165152 a(n) = (3*12^n - 8^n)/2.
  * @author Georg Fischer
  */
 public class A165152 extends GeneratingFunctionSequence {

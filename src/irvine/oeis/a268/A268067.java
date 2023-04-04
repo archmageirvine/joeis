@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A268067 Numbers n such that 1 + 2^n + 3^n + 5^n is prime.
+ * A268067 Numbers k such that 1 + 2^k + 3^k + 5^k is prime.
  *
  * @author Georg Fischer
  */

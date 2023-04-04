@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A120300 Numbers n such that 10^n + 11131719 is prime.
+ * A120300 Numbers k such that 10^k + 11131719 is prime.
  * @author Georg Fischer
  */
 public class A120300 extends PrimePositionSubsequence {

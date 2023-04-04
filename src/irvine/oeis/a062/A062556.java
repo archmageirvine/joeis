@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000578;
 
 /**
- * A062501.
+ * A062556 Cubes that are the concatenation of three numbers, one of which is the sum of the other two.
  * @author Sean A. Irvine
  */
 public class A062556 extends A000578 {

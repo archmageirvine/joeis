@@ -9,7 +9,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a002.A002110;
 
 /**
- * A062501.
+ * A062515 Leading least prime signatures, ordered by forming the product of primorials greater than 2 with multiplicities given by the canonical sequence of partitions.
  * @author Sean A. Irvine
  */
 public class A062515 extends Sequence0 {
@@ -33,7 +33,7 @@ public class A062515 extends Sequence0 {
       ++mN;
       return Z.ONE;
     }
-    int[] p = nextPartition();
+    final int[] p = nextPartition();
     return Integers.SINGLETON.product(0, p.length - 1, k -> mPrimorial.a(p[k]));
   }
 }

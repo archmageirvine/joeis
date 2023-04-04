@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062501.
+ * A062553 Number of Abelian subgroups of the dihedral group with 2n elements.
  * @author Sean A. Irvine
  */
 public class A062553 extends Sequence1 {

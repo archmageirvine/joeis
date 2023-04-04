@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A096882 Expansion of (1+7x)/(1-50x^2).
+ * A096882 Expansion of g.f. (1 + 7*x)/(1 - 50*x^2).
  * @author Sean A. Irvine
  */
 public class A096882 extends LinearRecurrence {

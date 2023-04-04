@@ -8,7 +8,7 @@ import irvine.oeis.transform.ConvolutionProduct;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A341555 Fourier coefficients of the modular form (1/t_{3A}) * sqrt( 1-108/t_{3A} ) * F_{3A}^10.
+ * A341555 Fourier coefficients of the modular form (1/t_{3A}) * sqrt(1 - 108/t_{3A}) * F_{3A}^10.
  * @author Georg Fischer
  */
 public class A341555 extends ConvolutionProduct {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001118 Differences of 0; labeled ordered partitions into 5 parts.
+ * A001118 Number of labeled ordered set partitions into 5 parts for n&gt;=1, a(0)=1.
  * @author Sean A. Irvine
  */
 public class A001118 extends Sequence0 {

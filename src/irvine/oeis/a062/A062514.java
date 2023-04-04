@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A062501.
+ * A062514 Numbers k such that sigma(phi(k)) is a prime.
  * @author Sean A. Irvine
  */
 public class A062514 extends FilterPositionSequence {

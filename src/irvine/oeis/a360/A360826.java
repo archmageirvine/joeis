@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062501.
+ * A360826 a(1) = 1, a(n) = (k+1)*(2k+1), where k = Product_{i=1..n-1} a(i).
  * @author Sean A. Irvine
  */
 public class A360826 extends Sequence1 {

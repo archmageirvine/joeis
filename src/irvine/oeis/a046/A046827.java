@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A046827 Numbers n such that n^2 contains all the digits of n with the same or higher multiplicity.
+ * A046827 Numbers k such that k^2 contains all the digits of k with the same or higher multiplicity.
  * @author Sean A. Irvine
  */
 public class A046827 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.IntersectionSequence;
 
 /**
- * A029780 Every digit that appears in n also appears at least once in both n^2 and n^3.
+ * A029780 Numbers k such that every digit that appears in k also appears at least once in both k^2 and k^3.
  * @author Sean A. Irvine
  */
 public class A029780 extends IntersectionSequence {

@@ -22,7 +22,7 @@ public class A132638 extends AbstractSequence {
    * Generic constructor with parameters
    * @param offset first index
    * @param seq underlying sequence
-   * @param offset2 offset of seq
+   * @param offset2 offset of sequence
    */
   public A132638(final int offset, final Sequence seq, int offset2) {
     super(1);

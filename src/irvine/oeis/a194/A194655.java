@@ -8,7 +8,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A194655 Decimal expansion of Pi*(Pi^2*zeta(3)+6*zeta(5))/8.
+ * A194655 Decimal expansion of Pi*(Pi^2*zeta(3) + 6*zeta(5))/8.
  * @author Georg Fischer
  */
 public class A194655 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000290;
 
 /**
- * A062501.
+ * A062555 Squares that are the concatenation of three numbers, one of which is the sum of the other two.
  * @author Sean A. Irvine
  */
 public class A062555 extends A000290 {

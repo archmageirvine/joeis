@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A062501.
+ * A062542 Decimal expansion of the continued fraction constant (base 10).
  * @author Sean A. Irvine
  */
 public class A062542 extends DecimalExpansionSequence {

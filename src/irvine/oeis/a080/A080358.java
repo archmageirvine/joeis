@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
- * A080358 Value of Vandermonde determinant for the first n prime numbers: V[p(1),...,p(n)].
+ * A080358 Value of Vandermonde determinant for the first n prime numbers: V[prime(1), ..., prime(n)].
  * @author Georg Fischer
  */
 public class A080358 extends Sequence1 {

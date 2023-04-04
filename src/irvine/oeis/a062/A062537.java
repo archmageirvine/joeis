@@ -8,7 +8,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000720;
 
 /**
- * A062501.
+ * A062537 Nodes in riff (rooted index-functional forest) for n.
  * @author Sean A. Irvine
  */
 public class A062537 extends MemorySequence {

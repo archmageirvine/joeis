@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062501.
+ * A361136 Numbers appearing on the upper face of a die as a result of its turning over the edge while it rolls along the square spiral of natural numbers.
  * @author Sean A. Irvine
  */
 public class A361136 extends Sequence1 {

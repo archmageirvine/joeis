@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A228230 Recurrence a(n) = 1/2*n*(n + 1)*a(n-1) + 1 with a(0) = 1.
+ * A228230 Recurrence a(n) = (1/2)*n*(n+1)*a(n-1) + 1 with a(0) = 1.
  * @author Georg Fischer
  */
 public class A228230 extends HolonomicRecurrence {

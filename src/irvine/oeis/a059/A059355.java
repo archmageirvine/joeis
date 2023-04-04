@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008826;
 
 /**
- * A059355 A diagonal of triangle in A008826.
+ * A059355 Number of chains of n-3 partitions in the reduced partition lattice on n elements.
  * @author Sean A. Irvine
  */
 public class A059355 extends A008826 {

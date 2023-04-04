@@ -2164,3 +2164,5 @@ A062361 Number of triangular regions in regular n-gon with all diagonals drawn
 A062386 Number of alternating link diagrams with n crossings, 1 connected component and two external legs
 A062528 Number of ways to fill an n X n matrix with numbers 1, 2, ..., n*n such that each row and each column is decreasing or increasing
 A062536 Increasing values for the radius of the inner Soddy circle associated with three unequal kissing circles, the four radii of the system forming a primitive quadruple
+A062571 a(n) = minimum over nonnegative integers m of the size of the largest subset of pairwise relatively prime numbers in {m+1, m+2, ..., m+n}
+A062575 a(n) = maximum over m of the size of the largest subset of pairwise relatively prime numbers in {m+1, m+2, ..., m+n}

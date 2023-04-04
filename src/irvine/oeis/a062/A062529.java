@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A062501.
+ * A062529 Smallest prime p such that there is a gap of 2^n between p and the next prime.
  * @author Sean A. Irvine
  */
 public class A062529 extends Sequence0 {

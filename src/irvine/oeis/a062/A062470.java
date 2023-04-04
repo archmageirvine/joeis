@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062501.
+ * A062470 Nearest integer to log(n^n)^(n^(-1/n)).
  * @author Sean A. Irvine
  */
 public class A062470 extends Sequence1 {

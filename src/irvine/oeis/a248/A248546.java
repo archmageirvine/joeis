@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A248546 Numbers n such that 75^n-2 is prime.
+ * A248546 Numbers n such that 75^n - 2 is prime.
  * @author Georg Fischer
  */
 public class A248546 extends PrimePositionSubsequence {

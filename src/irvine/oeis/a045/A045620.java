@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A045620 Numbers n such that digits of n^3 include digits of n^2.
+ * A045620 Numbers k such that digits of k^3 include digits of k^2.
  * @author Sean A. Irvine
  */
 public class A045620 extends Sequence1 {

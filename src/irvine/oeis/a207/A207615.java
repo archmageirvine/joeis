@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.a208.A208509;
 
 /**
- * A207615 Triangle of coefficients of polynomials v(n,x) jointly generated with A207614; the see Formula section.
+ * A207615 Triangle of coefficients of polynomials v(n,x) jointly generated with A207614; see the Formula section.
  * (a,b,c,d,e,f) = (1, 1, 0, 1,x+1, 1)
  * @author Georg Fischer
  */

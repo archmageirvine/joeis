@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A108653 Numbers n such that 10^n - 113 is prime.
+ * A108653 Numbers k such that 10^k - 113 is prime.
  * @author Georg Fischer
  */
 public class A108653 extends PrimePositionSubsequence {

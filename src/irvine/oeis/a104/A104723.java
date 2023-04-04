@@ -4,7 +4,7 @@ import irvine.oeis.a001.A001045;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A062501.
+ * A104723 Moebius transform of Jacobsthal numbers.
  * @author Sean A. Irvine
  */
 public class A104723 extends MobiusTransformSequence {

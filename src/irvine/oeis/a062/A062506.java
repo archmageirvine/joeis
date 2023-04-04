@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062501.
+ * A062506 n divisible by at least one twin prime (A001097).
  * @author Sean A. Irvine
  */
 public class A062506 extends Sequence1 {

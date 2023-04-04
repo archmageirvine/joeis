@@ -7,7 +7,7 @@ import irvine.oeis.a052.A052542;
 import irvine.oeis.triangle.AntidiagonalSequence;
 
 /**
- * A062501.
+ * A062507 Table by antidiagonals related to partial sums and differences of Pell numbers (A000129).
  * @author Sean A. Irvine
  */
 public class A062507 extends AntidiagonalSequence {

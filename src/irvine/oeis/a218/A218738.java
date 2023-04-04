@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A218738 a(n) = (35^n-1)/34.
+ * A218738 a(n) = (35^n - 1)/34.
  * @author Sean A. Irvine
  */
 public class A218738 extends LinearRecurrence {

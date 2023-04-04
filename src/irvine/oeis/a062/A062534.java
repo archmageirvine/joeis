@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.AntidiagonalSequence;
 
 /**
- * A062501.
+ * A062534 Table by antidiagonals of coefficient of x^k in expansion of 1/((1+x)^2*(1-x)^n).
  * @author Sean A. Irvine
  */
 public class A062534 extends AntidiagonalSequence {

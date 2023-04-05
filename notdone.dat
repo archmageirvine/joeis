@@ -2166,3 +2166,6 @@ A062528 Number of ways to fill an n X n matrix with numbers 1, 2, ..., n*n such 
 A062536 Increasing values for the radius of the inner Soddy circle associated with three unequal kissing circles, the four radii of the system forming a primitive quadruple
 A062571 a(n) = minimum over nonnegative integers m of the size of the largest subset of pairwise relatively prime numbers in {m+1, m+2, ..., m+n}
 A062575 a(n) = maximum over m of the size of the largest subset of pairwise relatively prime numbers in {m+1, m+2, ..., m+n}
+A062693 Squarefree n such that the elliptic curve n*y^2 = x^3 - x arising in the "congruent number" problem has rank 3.
+A062694	Squarefree n such that the elliptic curve n*y^2 = x^3 - x arising in the "congruent number" problem has rank 3 and nontrivial SHA[2].
+A062695 Squarefree n such that the elliptic curve n*y^2 = x^3 - x arising in the "congruent number" problem has rank 2.

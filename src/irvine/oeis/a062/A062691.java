@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000217;
 
 /**
- * A062686.
+ * A062691 Triangular numbers that contain exactly 2 different digits.
  * @author Sean A. Irvine
  */
 public class A062691 extends A000217 {

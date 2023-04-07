@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
 /**
- * A115964 Denominator of sum_{i=1..n} 1/prime(i)^3.
+ * A115964 Denominator of Sum_{i=1..n} 1/prime(i)^3.
  * @author Georg Fischer
  */
 public class A115964 extends A002110 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007283;
 
 /**
- * A079613 F(3*2^n) where F(k) denotes the k-th Fibonacci number.
+ * A079613 a(n) = F(3*2^n) where F(k) denotes the k-th Fibonacci number.
  * @author Georg Fischer
  */
 public class A079613 extends A007283 {

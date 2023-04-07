@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046831 Digits of n^2 include digits of n as substring, n does not end in 0.
+ * A046831 Numbers k such that decimal expansion of k^2 contains k as a substring and k does not end in 0.
  * @author Sean A. Irvine
  */
 public class A046831 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000578;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A062686.
+ * A062686 Smallest cube with digit sum n (or 0 if no such cube exists).
  * @author Sean A. Irvine
  */
 public class A062686 extends A000578 {

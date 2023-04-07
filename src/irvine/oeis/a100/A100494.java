@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A100494 Primes of the form 47n+3.
+ * A100494 Primes of the form 47*k + 3.
  * @author Georg Fischer
  */
 public class A100494 extends PrimeSubsequence {

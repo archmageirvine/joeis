@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002113;
 
 /**
- * A062686.
+ * A062687 Numbers all of whose divisors are palindromic.
  * @author Sean A. Irvine
  */
 public class A062687 extends A002113 {

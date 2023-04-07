@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A361519 allocated for Wolfe Padawer.
+ * A361519 Decimal expansion of arccsch(Pi).
  * @author Sean A. Irvine
  */
 public class A361519 extends DecimalExpansionSequence {

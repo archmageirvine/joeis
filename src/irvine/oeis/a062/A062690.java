@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000217;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A062686.
+ * A062690 Smallest triangular number that contains the string n in its exact center.
  * @author Sean A. Irvine
  */
 public class A062690 extends A000217 {

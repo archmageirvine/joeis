@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A000969 Expansion of (1+x+2*x^2)/((1-x)^2*(1-x^3)).
+ * A000969 Expansion of g.f. (1 + x + 2*x^2)/((1 - x)^2*(1 - x^3)).
  * @author Sean A. Irvine
  */
 public class A000969 extends Sequence0 {

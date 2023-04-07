@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A052212 Numbers whose square contains the digits of n in order (not necessarily consecutively).
+ * A052212 Numbers k whose square contains the digits of k in order (but not necessarily consecutively).
  * @author Sean A. Irvine
  */
 public class A052212 extends Sequence1 {

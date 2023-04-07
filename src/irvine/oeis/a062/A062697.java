@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002113;
 
 /**
- * A062686.
+ * A062697 Palindromes &gt; 10 that are the sum of two distinct smaller palindromes.
  * @author Sean A. Irvine
  */
 public class A062697 extends A002113 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046829 Digits of n^2 include digits of n as subsequence.
+ * A046829 Numbers k such that digits of k^2 include digits of k as subsequence.
  * @author Sean A. Irvine
  */
 public class A046829 implements Sequence {

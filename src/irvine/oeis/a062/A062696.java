@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002113;
 
 /**
- * A062686.
+ * A062696 Palindromes that are the sum of two shorter palindromes.
  * @author Sean A. Irvine
  */
 public class A062696 extends A002113 {

@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A204908 Least k such that n divides s(k)-s(j) for some j in [1,k), where s(k) is the k-th prime &gt;=5.
+ * A204908 Least k such that n divides s(k)-s(j) for some j in [1,k], where s(k) is the k-th prime &gt;=5.
  * @author Georg Fischer
  */
 public class A204908 extends A204892 {

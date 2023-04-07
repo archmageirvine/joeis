@@ -22,7 +22,7 @@ public class A028665 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN < 0) {
-      return Z.ONE; // only needed for possinly bogus initial entry in A028666.
+      return Z.ONE; // only needed for possibly bogus initial entry in A028666.
     }
     final Z pn = power().pow(mN);
     Z prod = pn;

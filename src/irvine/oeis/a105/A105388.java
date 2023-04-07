@@ -3,14 +3,14 @@ package irvine.oeis.a105;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a019.A019520;
 
 /**
  * A105388 Number of divisors of concatenated even numbers.
  * @author Georg Fischer
  */
-public class A105388 extends Sequence0 {
+public class A105388 extends Sequence1 {
 
   private final A019520 mSeq = new A019520();
 

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062766.
+ * A297839 Numbers k &gt; 0 that set a new record for the closeness of (4/3)*Pi*k^3 to an integer.
  * @author Sean A. Irvine
  */
 public class A297839 extends Sequence1 {

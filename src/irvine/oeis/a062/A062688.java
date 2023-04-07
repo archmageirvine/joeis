@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000217;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A062686.
+ * A062688 Smallest triangular number with digit sum n (or 0 if no such number exists).
  * @author Sean A. Irvine
  */
 public class A062688 extends A000217 {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000290;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A062686.
+ * A062689 Smallest square that contains the digits of n in its exact middle.
  * @author Sean A. Irvine
  */
 public class A062689 extends A000290 {

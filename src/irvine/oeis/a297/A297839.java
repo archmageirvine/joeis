@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
  */
 public class A297839 extends Sequence1 {
 
-  private final CR C = CR.PI.multiply(new Q(4, 3));
+  private static final CR C = CR.PI.multiply(new Q(4, 3));
   private long mN = 0;
   private CR mBest = CR.ONE;
 

@@ -2170,3 +2170,4 @@ A062693 Squarefree n such that the elliptic curve n*y^2 = x^3 - x arising in the
 A062694	Squarefree n such that the elliptic curve n*y^2 = x^3 - x arising in the "congruent number" problem has rank 3 and nontrivial SHA[2].
 A062695 Squarefree n such that the elliptic curve n*y^2 = x^3 - x arising in the "congruent number" problem has rank 2.
 A062710 Number of cyclic subgroups of general affine group over GF(2), AGL(n,2) [could not reproduce n>=4]
+A062733 Maximal degree of an irreducible representation the group SL(n,2) (the group of nonsingular n X n matrices over GF(2) )

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A246601 Sum of divisors d of n with property that the binary representation of d can be obtained from the binary representation of n by changing any number of 1&apos;s to 0&apos;s.
+ * A246601 Sum of divisors d of n with property that the binary representation of d can be obtained from the binary representation of n by changing any number of 1's to 0's.
  * @author Georg Fischer
  */
 public class A246601 extends AbstractSequence {

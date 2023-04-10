@@ -1,25 +1,17 @@
 package irvine.oeis.a028;
 
-import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.FilterSequence;
+import irvine.oeis.a000.A000290;
 
 /**
  * A028822 Squares with digits in nonincreasing order.
  * @author Sean A. Irvine
  */
-public class A028822 extends Sequence1 {
+public class A028822 extends FilterSequence {
 
-  private Z mN = Z.NEG_ONE;
-
-  @Override
-  public Z next() {
-    while (true) {
-      mN = mN.add(1);
-      final Z n2 = mN.square();
-      if (ZUtils.isNonincreasingDigits(n2)) {
-        return n2;
-      }
-    }
+  /** Construct the sequence. */
+  public A028822() {
+    super(new A000290(), ZUtils::isNonincreasingDigits);
   }
 }

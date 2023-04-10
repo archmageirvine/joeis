@@ -11,8 +11,8 @@ import irvine.oeis.Sequence1;
 public class A069537 extends Sequence1 {
 
   private Z mN;
-  private int mBase;
-  private int mSum;
+  private final int mBase;
+  private final int mSum;
 
   /** Construct the sequence. */
   public A069537() {
@@ -33,10 +33,9 @@ public class A069537 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      mN = mN.add(1);
-      final Z prod = mN.multiply(mBase);
-      if (ZUtils.digitSum(prod) == mSum) {
-        return prod;
+      mN = mN.add(mBase);
+      if (ZUtils.digitSum(mN) == mSum) {
+        return mN;
       }
     }
   }

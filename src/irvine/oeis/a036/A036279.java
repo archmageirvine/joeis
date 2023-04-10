@@ -12,13 +12,17 @@ import irvine.oeis.Sequence1;
  */
 public class A036279 extends Sequence1 {
 
-  private static final PolynomialRingField<Q> RING = new PolynomialRingField<Q>(Rationals.SINGLETON);
+  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;
+
+  protected Z select(final Q n) {
+    return n.den();
+  }
 
   @Override
   public Z next() {
     mN += 2;
-    return RING.tan(RING.x(), mN).coeff(mN).den();
+    return select(RING.tan(RING.x(), mN).coeff(mN));
   }
 }
 

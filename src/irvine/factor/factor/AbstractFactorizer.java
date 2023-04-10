@@ -116,7 +116,7 @@ public abstract class AbstractFactorizer implements Factorizer {
         System.out.println("Trying: " + arg);
         final FactorSequence fs = new FactorSequence(((LiteralZ) Sircon.parse(arg).eval()).value());
         factorizer.factor(fs);
-        System.out.println(fs.toString());
+        System.out.println(fs);
       }
     }
   }

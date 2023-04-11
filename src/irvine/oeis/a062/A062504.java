@@ -12,20 +12,24 @@ import irvine.oeis.a061.A061396;
  */
 public class A062504 extends Sequence0 {
 
-  private final MemorySequence mA = new A062537();
+  protected final MemorySequence mA = new A062537();
   private final Sequence mLengths = new A061396();
-  private Z mN = Z.NEG_ONE;
+  protected Z mN = Z.NEG_ONE;
   private long mRowLength = 0;
   private long mM = -1;
-  private int mT = 0;
+  protected int mT = 0;
+
+  protected void step() {
+    mRowLength = mLengths.next().longValueExact();
+    mM = 0;
+    mN = mN.add(1);
+    mT = 0;
+  }
 
   @Override
   public Z next() {
     if (++mM >= mRowLength) {
-      mRowLength = mLengths.next().longValueExact();
-      mM = 0;
-      mN = mN.add(1);
-      mT = 0;
+      step();
     }
     while (!mA.a(++mT).equals(mN)) {
       // do nothing

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
  * to interleave a sequence of odd and even terms.
  * @author Sean A. Irvine
  */
-public class AlternatingSequence implements Sequence {
+public class AlternatingSequence extends AbstractSequence {
 
   private final Sequence mA;
   private final Sequence mB;
@@ -19,6 +19,17 @@ public class AlternatingSequence implements Sequence {
    * @param seqB second sequence
    */
   public AlternatingSequence(final Sequence seqA, final Sequence seqB) {
+    this(1, seqA, seqB);
+  }
+
+  /**
+   * Create a sequence alternating between the two given sequences.
+   * @param offset first index
+   * @param seqA first sequence
+   * @param seqB second sequence
+   */
+  public AlternatingSequence(final int offset, final Sequence seqA, final Sequence seqB) {
+    super(offset);
     mA = seqA;
     mB = seqB;
   }

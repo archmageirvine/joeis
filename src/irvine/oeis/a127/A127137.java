@@ -1,0 +1,35 @@
+package irvine.oeis.a127;
+// manually interleave at 2023-04-16 13:29
+
+import irvine.math.z.Z;
+import irvine.oeis.AlternatingSequence;
+import irvine.oeis.a001.A001813;
+import irvine.oeis.a090.A090470;
+
+/**
+ * A127137 Define an array by Q(m, 0) = 1, Q(m, 1) = 1; Q(m, 2k) = (m - 2k + 1)*Q(m+1, 2k-1) - (2k-1)*Q(m+2, 2k-2), m*Q(m, 2k+1) = (m - 2k)*Q(m+1, 2k) - 2k(m+1)*Q(m+2, 2k-1). Sequence gives Q(0,n).
+ * @author Georg Fischer
+ */
+public class A127137 extends AlternatingSequence {
+
+  /** Construct the sequence. */
+  public A127137() {
+    super(new A001813() {
+      private int mN = -1;
+
+      @Override
+      public Z next() {
+        ++mN;
+        return ((mN & 1) == 1) ? super.next().negate() : super.next();
+      }
+    }, new A090470() {
+      private int mN = -1;
+
+      @Override
+      public Z next() {
+        ++mN;
+        return ((mN & 1) == 1) ? super.next().negate() : super.next();
+      }
+    });
+  }
+}

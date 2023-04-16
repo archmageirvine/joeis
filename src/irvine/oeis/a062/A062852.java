@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A062852.
+ * A062852 Largest n-digit strong pseudoprimes (in base 2).
  * @author Sean A. Irvine
  */
 public class A062852 extends Sequence1 {

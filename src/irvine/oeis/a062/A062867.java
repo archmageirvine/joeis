@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.math.z.Z;
 
 /**
- * A062697.
+ * A062867 Triangle read by rows: entries give numbers of permutations of [1..n] by absolute barycenter.
  * @author Sean A. Irvine
  */
 public class A062867 extends A062866 {

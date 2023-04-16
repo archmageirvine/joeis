@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A156834 A156348 * A000010
+ * A156834 A156348 * A000010.
  * @author Georg Fischer
  */
 public class A156834 extends AbstractSequence {

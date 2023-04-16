@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A062844.
+ * A062861 Numbers which are sums of squares of consecutive numbers (possibly including squares of negative numbers).
  * @author Sean A. Irvine
  */
 public class A062861 extends Sequence0 {

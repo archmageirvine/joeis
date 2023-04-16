@@ -1,30 +1,15 @@
 package irvine.oeis.a067;
 
-import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.a062.A062927;
 
 /**
  * A067864 Numbers k such that k divides the sum of digits of 6^k.
  * @author Sean A. Irvine
  */
-public class A067864 extends Sequence1 {
+public class A067864 extends A062927 {
 
-  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private long mN = 0;
-  private Z mZ = Z.ONE;
-
-  @Override
-  public Z next() {
-    while (true) {
-      mZ = mZ.multiply(6);
-      if (ZUtils.digitSum(mZ) % ++mN == 0) {
-        return Z.valueOf(mN);
-      }
-      if (mVerbose && mN % 1000 == 0) {
-        System.err.println("[" + mN + "]");
-      }
-    }
+  /** Construct the sequence. */
+  public A067864() {
+    super(6);
   }
 }
-

@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A245581 (5 * (1 + (-1)^(1 + n)) + 2 * n^2) / 4.
+ * A245581 a(n) = (5 * (1 + (-1)^(1 + n)) + 2 * n^2) / 4.
  * @author Sean A. Irvine
  */
 public class A245581 extends LinearRecurrence {

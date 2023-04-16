@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000081;
 
 /**
- * A008295 Triangle read by rows: T(n,k) is the of number of partially labeled rooted trees with n vertices, k of which are labeled, 0 &lt;= k &lt;= n.
+ * A008295 Triangle read by rows: T(n,k) is the number of partially labeled rooted trees with n vertices, k of which are labeled, 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A008295 extends A000081 {

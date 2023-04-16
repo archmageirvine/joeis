@@ -9,7 +9,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Pair;
 
 /**
- * A062697.
+ * A062862 Number of ways n can be written as the sum of squares of consecutive numbers (possibly including squares of negative numbers).
  * @author Sean A. Irvine
  */
 public class A062862 extends Sequence0 {

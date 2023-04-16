@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A360807 allocated for Artur Jasinski.
+ * A360807 Decimal expansion of Sum_{m&gt;=1} 1/(1/4 + z(m)^2) where z(m) is the imaginary part of the m-th nontrivial zero of the Dirichlet beta function whose real part is 1/2.
  * @author Sean A. Irvine
  */
 public class A360807 extends DecimalExpansionSequence {

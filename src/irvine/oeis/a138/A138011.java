@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A138011 a(n) = number of positive divisors, k, of n where d(k) divides d(n). (d(m) = number of positive divisors of m, A000005)
+ * A138011 a(n) = number of positive divisors, k, of n where d(k) divides d(n). (d(m) = number of positive divisors of m, A000005).
  * @author Georg Fischer
  */
 public class A138011 extends AbstractSequence {

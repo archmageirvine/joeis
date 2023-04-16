@@ -4,7 +4,7 @@ package irvine.oeis.a167;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A167231 Append three digits, each increasing by one modulo 10 from the last digit the of the nonnegative integers. 0 -&gt; 123, 1 -&gt; 1234 2 -&gt; 2345, ... , 9 -&gt; 9012, 10 -&gt; 10123, etc.
+ * A167231 Append three digits, each increasing by one modulo 10 from the last digit of the nonnegative integers. 0 -&gt; 123, 1 -&gt; 1234 2 -&gt; 2345, ... , 9 -&gt; 9012, 10 -&gt; 10123, etc.
  * @author Georg Fischer
  */
 public class A167231 extends HolonomicRecurrence {

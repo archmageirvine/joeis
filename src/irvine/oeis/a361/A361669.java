@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A361669 allocated for Sylvia Zevi Abrams.
+ * A361669 a(n) = floor of sinh(sinh(sinh(...(1)...))) with n iterations.
  * @author Sean A. Irvine
  */
 public class A361669 extends Sequence0 {

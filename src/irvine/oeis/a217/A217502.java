@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A217502 E.g.f.: exp(sec(x)-1) = 1 + sum_{n&gt;0} a(n)*x^(2*n)/(2*n)!.
+ * A217502 E.g.f.: exp(sec(x)-1) = 1 + Sum_{n&gt;0} a(n)*x^(2*n)/(2*n)!.
  * E.g.f.: exp(sec(x)-1)
  * @author Georg Fischer
  */

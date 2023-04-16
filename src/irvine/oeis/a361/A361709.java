@@ -4,7 +4,7 @@ import irvine.oeis.a018.A018252;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A361709 allocated for Ilya Gutkovskiy.
+ * A361709 Moebius transform of nonprimes.
  * @author Sean A. Irvine
  */
 public class A361709 extends MobiusTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058395 A square array based on triangular numbers (A000217) with each term being the sum of 2 consecutive terms in the previous row.
+ * A058395 Square array read by antidiagonals. Based on triangular numbers (A000217) with each term being the sum of 2 consecutive terms in the previous row.
  * @author Sean A. Irvine
  */
 public class A058395 extends MemoryFunctionInt2<Z> implements Sequence {

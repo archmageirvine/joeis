@@ -6,7 +6,7 @@ package irvine.oeis.a177;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A177145 E.g.f.: arcsin(x).
+ * A177145 Expansion of e.g.f. arcsin(x).
  * @author Georg Fischer
  */
 public class A177145 extends HolonomicRecurrence {

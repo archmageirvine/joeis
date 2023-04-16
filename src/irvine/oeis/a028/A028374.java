@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A028374 Curved numbers: numbers that have only curved digits (0, 2, 3, 5, 6, 8, 9).
+ * A028374 Numbers that have only curved digits {0, 3, 6, 8, 9} or digits that are both curved and linear {2, 5}.
  * @author Sean A. Irvine
  */
 public class A028374 extends Sequence1 {

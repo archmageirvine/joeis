@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A093653 Total number of 1&apos;s in binary expansion of all divisors of n.
+ * A093653 Total number of 1's in binary expansion of all divisors of n.
  * @author Georg Fischer
  */
 public class A093653 extends AbstractSequence {

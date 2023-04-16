@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A062844.
+ * A062857 Size of smallest square multiplication table which contains some number at least n times.
  * @author Sean A. Irvine
  */
 public class A062857 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.math.z.Z;
 
 /**
- * A062504 Triangle in which k-th row lists natural number values for the collection of riffs with k nodes.
+ * A062860 Smallest j with n nodes in its riff (rooted index-functional forest).
  * @author Sean A. Irvine
  */
 public class A062860 extends A062504 {

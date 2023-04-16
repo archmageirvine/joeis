@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A361416.
+ * A361416 allocated for Zhining Yang.
  * @author Sean A. Irvine
  */
 public class A361416 extends Sequence1 {

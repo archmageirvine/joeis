@@ -1,0 +1,22 @@
+package irvine.oeis.a062;
+
+import irvine.math.z.Euler;
+import irvine.math.z.Z;
+import irvine.oeis.a002.A002321;
+
+/**
+ * A062983 Mertens's function of n (A002321) is not divisible by phi(n).
+ * @author Sean A. Irvine
+ */
+public class A062983 extends A002321 {
+
+  @Override
+  public Z next() {
+    while (true) {
+      if (super.next().mod(Euler.phiAsLong(mN)) != 0) {
+        return Z.valueOf(mN);
+      }
+    }
+  }
+}
+

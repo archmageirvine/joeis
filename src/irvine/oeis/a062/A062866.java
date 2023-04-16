@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Pair;
 
 /**
- * A062697.
+ * A062866 Triangle of number of permutations by barycenter.
  * @author Sean A. Irvine
  */
 public class A062866 extends Sequence0 {

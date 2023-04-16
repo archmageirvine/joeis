@@ -4,7 +4,7 @@ package irvine.oeis.a141;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A141351 a(n)=C(n)+1-0^n where C(n)=A000108(n).
+ * A141351 a(n) = C(n) + 1 - 0^n where C(n) = A000108(n).
  * @author Georg Fischer
  */
 public class A141351 extends HolonomicRecurrence {

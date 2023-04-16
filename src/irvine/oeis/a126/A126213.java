@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A126213 a(n) = sum of the d(k)&apos;s, where 1&lt;=k&lt;=n and d(k) is equal to any divisor of n, where d(k) is the number of positive divisors of k.
+ * A126213 a(n) = sum of the d(k)'s, where 1&lt;=k&lt;=n and d(k) is equal to any divisor of n, where d(k) is the number of positive divisors of k.
  * @author Georg Fischer
  */
 public class A126213 extends AbstractSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A062844.
+ * A062859 Size of smallest triangular multiplication table which contains some number n times.
  * @author Sean A. Irvine
  */
 public class A062859 extends Sequence1 {

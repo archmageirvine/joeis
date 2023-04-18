@@ -15,7 +15,7 @@ public class A063074 extends A204459 {
   @Override
   public Z next() {
     mN += 2;
-    return super.matrixElement(2, mN);
+    return matrixElement(2, mN);
   }
 }
 

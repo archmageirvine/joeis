@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000012;
 import irvine.oeis.a008.A008578;
 
 /**
- * A130008 Noncomposite numbers sandwiched between 1&apos;s.
+ * A130008 Noncomposite numbers sandwiched between 1's.
  * @author Georg Fischer
  */
 public class A130008 extends AlternatingSequence {

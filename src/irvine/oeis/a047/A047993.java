@@ -6,7 +6,6 @@ import irvine.oeis.Sequence1;
 
 /**
  * A047993 Number of balanced partitions of n: the largest part equals the number of parts.
- *
  * @author Sean A. Irvine
  */
 public class A047993 extends Sequence1 {

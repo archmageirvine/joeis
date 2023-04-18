@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A139351 Let the binary expansion of n be n = Sum_{k} 2^{r_k}, let e(n) be the number of r_k&apos;s that are even,
+ * A139351 Let the binary expansion of n be n = Sum_{k} 2^{r_k}, let e(n) be the number of r_k's that are even, o(n) the number that are odd; sequence gives e(n).
  * o(n) the number that are odd; sequence gives e(n).
  * @author Georg Fischer
  */

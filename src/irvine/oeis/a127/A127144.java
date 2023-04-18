@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001147;
 import irvine.oeis.a126.A126967;
 
 /**
- * A127144 Q(2,n), where Q(m,k) is defined in A127080 and A127137,
+ * A127144 Q(2,n), where Q(m,k) is defined in A127080 and A127137,.
  * @author Georg Fischer
  */
 public class A127144 extends AlternatingSequence {

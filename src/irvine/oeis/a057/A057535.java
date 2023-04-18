@@ -16,7 +16,17 @@ public class A057535 extends Sequence1 {
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final TreeSet<Z> mProducts = new TreeSet<>();
   private final int[] mHashCounts = new int[MOD];
+  private final int mTarget;
   private long mN = 1;
+
+  protected A057535(final int target) {
+    mTarget = target;
+  }
+
+  /** Construct the sequence. */
+  public A057535() {
+    this(5);
+  }
 
   private int getExactCount(final Z n) {
     int cnt = 0;
@@ -43,8 +53,8 @@ public class A057535 extends Sequence1 {
       for (long k = 2; k <= mN; ++k) {
         final Z s = t.multiply(k - 1).multiply(k + 1);
         final int hash = (int) s.mod(MOD);
-        if (++mHashCounts[hash] >= 5 && getExactCount(s) == 5) {
-          mHashCounts[hash] -= 5;
+        if (++mHashCounts[hash] >= mTarget && getExactCount(s) == mTarget) {
+          mHashCounts[hash] -= mTarget;
           return s;
         }
       }

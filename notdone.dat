@@ -2172,3 +2172,29 @@ A062695 Squarefree n such that the elliptic curve n*y^2 = x^3 - x arising in the
 A062710 Number of cyclic subgroups of general affine group over GF(2), AGL(n,2) [could not reproduce n>=4]
 A062733 Maximal degree of an irreducible representation the group SL(n,2) (the group of nonsingular n X n matrices over GF(2) )
 A063081 Dimension of the space of weight 2n cusp forms for Gamma_0( 13 ).
+A063087 Dimension of the space of weight 2n cusp forms for Gamma_0( 19 )
+A063089 Dimension of the space of weight 2n cusp forms for Gamma_0( 21 )
+A063094 Dimension of the space of weight 2n cusp forms for Gamma_0( 26 )
+A063099 Dimension of the space of weight 2n cusp forms for Gamma_0( 31 )
+A063102 Dimension of the space of weight 2n cusp forms for Gamma_0( 34 ).
+A063105 Dimension of the space of weight 2n cusp forms for Gamma_0( 37 ).
+A063107 Dimension of the space of weight 2n cusp forms for Gamma_0( 39 )
+A063109 Dimension of the space of weight 2n cusp forms for Gamma_0( 41 )
+A063111 Dimension of the space of weight 2n cusp forms for Gamma_0( 43 )
+A063116 Dimension of the space of weight 2n cusp forms for Gamma_0( 48 )
+A063117 Dimension of the space of weight 2n cusp forms for Gamma_0( 49 )
+A063118 Dimension of the space of weight 2n cusp forms for Gamma_0(50).
+A063120 Dimension of the space of weight 2n cusp forms for Gamma_0( 52 ).
+A063121 Dimension of the space of weight 2n cusp forms for Gamma_0( 53 ).
+A063122 Dimension of the space of weight 2n cusp forms for Gamma_0( 54 ).
+A063125 Dimension of the space of weight 2n cusp forms for Gamma_0( 57 ).
+A063126 Dimension of the space of weight 2n cusp forms for Gamma_0( 58 ).
+A063128 Dimension of the space of weight 2n cusp forms for Gamma_0( 60 )
+A063129 Dimension of the space of weight 2n cusp forms for Gamma_0( 61 ).
+A063133 Dimension of the space of weight 2n cusp forms for Gamma_0( 65 ).
+A063134 Dimension of the space of weight 2n cusp forms for Gamma_0( 66 ).
+A063135 Dimension of the space of weight 2n cusp forms for Gamma_0( 67 ).
+A063140 Dimension of the space of weight 2n cusp forms for Gamma_0( 72 ).
+A063141 Dimension of the space of weight 2n cusp forms for Gamma_0( 73 ).
+A063142 Dimension of the space of weight 2n cusp forms for Gamma_0( 74 ).
+A063144 Dimension of the space of weight 2n cusp forms for Gamma_0( 76 ).

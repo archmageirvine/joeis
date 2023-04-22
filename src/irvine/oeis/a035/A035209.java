@@ -3,15 +3,16 @@ package irvine.oeis.a035;
 import irvine.factor.prime.Fast;
 import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence0;
 
 /**
  * A035209 From a Dirichlet series.
  * @author Sean A. Irvine
  */
-public class A035209 extends Sequence0 {
+public class A035209 extends Sequence0 implements Conjectural {
 
-  // WARNING: Do not use this implementation to extend the sequence as there are
+  // Do not use this implementation to extend the sequence as there are
   // aspects of this which I do not understand and were guessed.
 
   private int mN = 0;

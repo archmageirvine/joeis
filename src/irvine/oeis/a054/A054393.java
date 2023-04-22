@@ -1,14 +1,14 @@
 package irvine.oeis.a054;
 
+import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A054393 Number of permutations with certain forbidden subsequences.
  * @author Sean A. Irvine
  */
-public class A054393 extends HolonomicRecurrence {
+public class A054393 extends HolonomicRecurrence implements Conjectural {
 
-  // Conjectural: DO NOT USE THIS TO EXTEND THE SEQUENCE.
 
   /** Construct the sequence. */
   public A054393() {

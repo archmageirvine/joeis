@@ -1,14 +1,14 @@
 package irvine.oeis.a213;
 
+import irvine.oeis.Conjectural;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A213245 Number of nonzero elements in GF(2^n) that are 7th powers.
  * @author Sean A. Irvine
  */
-public class A213245 extends LinearRecurrence {
+public class A213245 extends LinearRecurrence implements Conjectural {
 
-  // WARNING Conjectural formula: do not use this implementation to extend the sequence.
 
   /** Construct the sequence. */
   public A213245() {

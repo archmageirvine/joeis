@@ -5,16 +5,17 @@ import java.util.ArrayList;
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
  * A030454 Make a table giving binary expansion of zeta(m) for m = 2, 3, ...; a(n) = number of 1's in n-th column of table (after decimal point).
  * @author Sean A. Irvine
  */
-public class A030454 extends Sequence1 {
+public class A030454 extends Sequence1 implements Conjectural {
 
-  // WARNING: Do not use this to extend this sequence.  The computation of odd values of
-  // the zeta function here are not guaranteed to be correct beyond some uncertain point.
+  // The computation of odd values of the zeta function here are not guaranteed
+  // to be correct beyond some uncertain point.
 
   private final ArrayList<CR> mZetaList = new ArrayList<>();
   {

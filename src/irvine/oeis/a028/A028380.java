@@ -1,5 +1,6 @@
 package irvine.oeis.a028;
 
+import irvine.oeis.Conjectural;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -7,10 +8,9 @@ import irvine.oeis.Sequence0;
  * A028380 a_n = - sum_{i=1..n-1} C(i+1, n-i) (-1)^(n-i) a_i.
  * @author Sean A. Irvine
  */
-public class A028380 extends Sequence0 {
+public class A028380 extends Sequence0 implements Conjectural {
 
   // Using interpretation of R. J. Mathar
-  // Do not use this to extend the sequence
 
   private long mN = -1;
   private Z mA = Z.valueOf(28);

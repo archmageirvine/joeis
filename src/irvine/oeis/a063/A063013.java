@@ -13,8 +13,7 @@ public class A063013 extends FiniteSequence {
 
   private static TreeSet<Z> build() {
     final TreeSet<Z> res = new TreeSet<>();
-    long v = 0;
-    build(res, v, 1, 1);
+    build(res, 0, 1, 1);
     return res;
   }
 

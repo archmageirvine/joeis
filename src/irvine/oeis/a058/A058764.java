@@ -1,5 +1,6 @@
 package irvine.oeis.a058;
 
+import irvine.oeis.Conjectural;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -7,10 +8,9 @@ import irvine.oeis.Sequence0;
  * A058764 Smallest number x such that cototient(x) = 2^n.
  * @author Sean A. Irvine
  */
-public class A058764 extends Sequence0 {
+public class A058764 extends Sequence0 implements Conjectural {
 
   // After R. J. Mathar, conjectural
-  // WARNING: Do not use this to extend the sequence.
 
   private int mN = -1;
 

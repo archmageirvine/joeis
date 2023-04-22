@@ -118,6 +118,7 @@ public final class Report {
     int cons = 0;
     int pari = 0;
     int hasCorrectOffset = 0;
+    int conjectural = 0;
     final List<String> failedOffsetChecks = new ArrayList<>();
     final LimitedLengthPriorityQueue<String> slowest = new LimitedLengthPriorityQueue<>(10, true);
     for (int a = 1; a < MAX_ID; ++a) {
@@ -149,6 +150,9 @@ public final class Report {
         if (seq instanceof NoncomputableSequence) {
           ++noncomputable;
         }
+        if (seq instanceof Conjectural) {
+          ++conjectural;
+        }
         if (seq instanceof HolonomicRecurrence || seq instanceof LinearRecurrence) {
           ++recurrence;
         }
@@ -168,6 +172,7 @@ public final class Report {
     System.out.println("SequencesWithOffset:         " + rightAlign(withOffset));
     System.out.println("DeadSequence:                " + rightAlign(dead));
     System.out.println("NoncomputableSequence:       " + rightAlign(noncomputable));
+    System.out.println("Conjectural:                 " + rightAlign(conjectural));
     System.out.println();
     System.out.println("PariSequence:                " + rightAlign(pari));
     System.out.println();

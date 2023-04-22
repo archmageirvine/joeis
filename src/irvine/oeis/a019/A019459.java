@@ -8,8 +8,6 @@ import irvine.oeis.recur.CoordinationSequence;
  */
 public class A019459 extends CoordinationSequence {
 
-  // Conjectural
-
   /** Construct the sequence. */
   public A019459() {
     super(

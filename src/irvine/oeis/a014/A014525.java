@@ -2,15 +2,14 @@ package irvine.oeis.a014;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence0;
 
 /**
  * A014525 Order of shuffle group for deck of 3n cards.
  * @author Sean A. Irvine
  */
-public class A014525 extends Sequence0 {
-
-  // Conjectural formulas
+public class A014525 extends Sequence0 implements Conjectural {
 
   private int mN = -1;
   private Z mF = Z.ONE;

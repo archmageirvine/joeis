@@ -9,6 +9,7 @@ import irvine.math.lattice.Lattice;
 import irvine.math.lattice.Lattices;
 import irvine.math.r.DoubleUtils;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 import irvine.util.LimitedLengthPriorityQueue;
 
@@ -16,9 +17,7 @@ import irvine.util.LimitedLengthPriorityQueue;
  * A059518 a(n)/n^2 is the minimal average squared Euclidean distance of n points to their center of gravity among all configurations of n points on the hexagonal lattice.
  * @author Sean A. Irvine
  */
-public class A059518 extends Sequence1 {
-
-  // WARNING: Heuristic, do not use this to extend the sequence
+public class A059518 extends Sequence1 implements Conjectural {
 
   private static final int RETAINED_COUNT = 1000;
   private static final Lattice L = Lattices.HEXAGONAL;

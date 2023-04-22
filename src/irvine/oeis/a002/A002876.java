@@ -5,13 +5,14 @@ import java.util.HashSet;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
  * A002876 Number of weighted linear spaces of total weight n.
  * @author Sean A. Irvine
  */
-public class A002876 extends Sequence1 {
+public class A002876 extends Sequence1 implements Conjectural {
 
   // Correct to at least a(8) = 239.
 
@@ -35,7 +36,7 @@ public class A002876 extends Sequence1 {
   private boolean isAdditionPermitted(final long[] lines, final long k) {
     // k is a vector indicating which lines we want to add a point to
     // but no line can share two (or more) points with another line.
-    // Therefore we check lines having intersections with k
+    // Therefore, we check lines having intersections with k
     long j = k;
     for (int u = 0; u < lines.length; ++u, j >>>= 1) {
       if ((j & 1) == 1) {
@@ -195,9 +196,9 @@ public class A002876 extends Sequence1 {
   @Override
   public Z next() {
     final IntegerPartition part = new IntegerPartition(++mN);
-    if (mN == 9) {
-      System.out.println("WARNING: Values from this point on could be wrong due to isomorphism difficulties");
-    }
+//    if (mN == 9) {
+//      System.out.println("WARNING: Values from this point on could be wrong due to isomorphism difficulties");
+//    }
     long count = 0;
     int[] p;
     while ((p = part.next()) != null) {

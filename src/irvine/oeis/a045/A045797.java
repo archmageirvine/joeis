@@ -1,14 +1,14 @@
 package irvine.oeis.a045;
 
+import irvine.oeis.Conjectural;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A045797 Evenish numbers (prime to 10 and 10's digit is even).
  * @author Sean A. Irvine
  */
-public class A045797 extends LinearRecurrence {
+public class A045797 extends LinearRecurrence implements Conjectural {
 
-  // WARNING Conjectural formula: do not use this implementation to extend the sequence.
 
   /** Construct the sequence. */
   public A045797() {

@@ -1,14 +1,13 @@
 package irvine.oeis.a019;
 
+import irvine.oeis.Conjectural;
 import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A019449 Irreducible quadruple Euler sums of weight 2n+10 (verified for n &lt;= 14).
  * @author Sean A. Irvine
  */
-public class A019449 extends CoordinationSequence {
-
-  // Conjectural
+public class A019449 extends CoordinationSequence implements Conjectural {
 
   /** Construct the sequence. */
   public A019449() {

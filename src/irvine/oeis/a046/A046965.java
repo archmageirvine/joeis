@@ -1,5 +1,6 @@
 package irvine.oeis.a046;
 
+import irvine.oeis.Conjectural;
 import java.util.ArrayList;
 
 import irvine.math.cr.CR;
@@ -12,7 +13,7 @@ import irvine.oeis.Sequence1;
  * A046965 Cos(a(n)) decreases monotonically to -1.
  * @author Sean A. Irvine
  */
-public class A046965 extends Sequence1 {
+public class A046965 extends Sequence1 implements Conjectural {
 
   // Naive implementation
 //  private CR mA = CR.ONE;
@@ -33,7 +34,6 @@ public class A046965 extends Sequence1 {
   // OEIS entry is actually valid in all cases. In particular, direct application
   // seems to get the wrong answer for a(24).
 
-  // DO NOT USE THIS TO EXTEND THE SEQUENCE
 
   // Convergent based implementation
   private final Convergents mC = new Convergents(CR.PI);

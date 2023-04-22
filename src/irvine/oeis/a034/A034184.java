@@ -1,14 +1,13 @@
 package irvine.oeis.a034;
 
+import irvine.oeis.Conjectural;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A034184 Not necessarily symmetric n X 3 crossword puzzle grids.
  * @author Sean A. Irvine
  */
-public class A034184 extends LinearRecurrence {
-
-  // WARNING: Conjectural
+public class A034184 extends LinearRecurrence implements Conjectural {
 
   /** Construct the sequence. */
   public A034184() {

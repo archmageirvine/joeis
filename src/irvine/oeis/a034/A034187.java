@@ -1,21 +1,21 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A034187 Not necessarily symmetric n X 4 crossword puzzle grids.
  * @author Sean A. Irvine
  */
-public class A034187 extends LinearRecurrence {
+public class A034187 extends LinearRecurrence implements Conjectural {
 
-  // WARNING: Conjectural
 
   /** Construct the sequence. */
   public A034187() {
     super(
-      new long[]{1, 8, -150, 195, 1041, -597, 1550, -1529, -3714, 9655, -6736, -4443, 11632, -7707, -142, 3513, -2623, 1009, -218, 24},
-      new Z[]{
+      new long[] {1, 8, -150, 195, 1041, -597, 1550, -1529, -3714, 9655, -6736, -4443, 11632, -7707, -142, 3513, -2623, 1009, -218, 24},
+      new Z[] {
         Z.ONE,
         new Z("39"),
         new Z("649"),

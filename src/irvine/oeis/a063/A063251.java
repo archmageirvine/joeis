@@ -28,7 +28,7 @@ public class A063251 extends Sequence0 {
       return;
     }
     search(right, cnt + 1);
-    if (cnt + 1< mBest) {
+    if (cnt + 1 < mBest) {
       search(left, cnt + 1);
     }
   }

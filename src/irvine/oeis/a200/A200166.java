@@ -1,14 +1,14 @@
 package irvine.oeis.a200;
 
+import irvine.oeis.Conjectural;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A200166 Number of -n..n arrays x(0..2) of 3 elements with nonzero sum and with zero through 2 differences all nonzero.
  * @author Sean A. Irvine
  */
-public class A200166 extends LinearRecurrence {
+public class A200166 extends LinearRecurrence implements Conjectural {
 
-  // WARNING Conjectural formula: do not use this implementation to extend the sequence.
 
   /** Construct the sequence. */
   public A200166() {

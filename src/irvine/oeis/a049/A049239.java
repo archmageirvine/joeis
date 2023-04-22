@@ -1,5 +1,6 @@
 package irvine.oeis.a049;
 
+import irvine.oeis.Conjectural;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -8,9 +9,8 @@ import irvine.oeis.Sequence1;
  * A049239 Smallest nonnegative value taken on by px^2-qy^2 for an infinite number of integer pairs (x,y), where (p,q) = (1,1), (1,2), (2,1), (1,3), (2,2), (3,1)...
  * @author Sean A. Irvine
  */
-public class A049239 extends Sequence1 {
+public class A049239 extends Sequence1 implements Conjectural {
 
-  // WARNING: DO NOT USE THIS TO EXTEND THE SEQUENCE
 
   private static final long HEURISTIC = 1000;
   private long mN = 0;

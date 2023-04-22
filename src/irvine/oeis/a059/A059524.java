@@ -1,14 +1,14 @@
 package irvine.oeis.a059;
 
+import irvine.oeis.Conjectural;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A059524 Number of nonzero 4 X n binary arrays with all 1's connected.
  * @author Sean A. Irvine
  */
-public class A059524 extends LinearRecurrence {
+public class A059524 extends LinearRecurrence implements Conjectural {
 
-  // WARNING: Conjectural
 
   /** Construct the sequence. */
   public A059524() {

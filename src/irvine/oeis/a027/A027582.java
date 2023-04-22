@@ -5,6 +5,7 @@ import java.util.TreeSet;
 
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.transform.PartitionTransformSequence;
 
@@ -12,10 +13,9 @@ import irvine.oeis.transform.PartitionTransformSequence;
  * A027582 Sequence satisfies T(T(a))=a, where T is defined below.
  * @author Sean A. Irvine
  */
-public class A027582 extends MemorySequence {
+public class A027582 extends MemorySequence implements Conjectural {
 
-  // WARNING: Do not use this implementation to extend the sequence without
-  // careful checking.  I had a hard time getting this to work and it might
+  // I had a hard time getting this to work and it might
   // contain assumptions which are wrong.
 
   private static final int HEURISTIC_DISTANCE = 10;

@@ -1,14 +1,14 @@
 package irvine.oeis.a307;
 
+import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307205 Coordination sequence for tetravalent node in the first Moore pentagonal tiling.
  * @author Georg Fischer
  */
-public class A307205 extends HolonomicRecurrence {
+public class A307205 extends HolonomicRecurrence implements Conjectural {
 
-  // WARNING Conjectural formula: do not use this implementation to extend the sequence.
 
   /** Construct the sequence. */
   public A307205() {

@@ -3,15 +3,15 @@ package irvine.oeis.a044;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
  * A044140 Numbers k such that substring "02" occurs in the base-7 representation of k but not of k-1.
  * @author Georg Fischer
  */
-public class A044140 extends RunsBaseSequence {
+public class A044140 extends RunsBaseSequence implements Conjectural {
 
-  // WARNING Conjectural formula: do not use this implementation to extend the sequence.
 
   private static final String P12 = "02";
 

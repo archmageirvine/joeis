@@ -1,14 +1,14 @@
 package irvine.oeis.a213;
 
+import irvine.oeis.Conjectural;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A213243 Number of nonzero elements in GF(2^n) that are cubes.
  * @author Sean A. Irvine
  */
-public class A213243 extends LinearRecurrence {
+public class A213243 extends LinearRecurrence implements Conjectural {
 
-  // WARNING Conjectural formula: do not use this implementation to extend the sequence.
 
   /** Construct the sequence. */
   public A213243() {

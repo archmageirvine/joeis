@@ -1,5 +1,6 @@
 package irvine.oeis.a027;
 
+import irvine.oeis.Conjectural;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.util.string.DottedHebrew;
@@ -8,9 +9,8 @@ import irvine.util.string.DottedHebrew;
  * A027684 Number of letters in n (in "dotted" Hebrew).
  * @author Sean A. Irvine
  */
-public class A027684 extends Sequence0 {
+public class A027684 extends Sequence0 implements Conjectural {
 
-  // Do not use this to extend the sequence, underling class could be wrong
 
   private int mN = -1;
 

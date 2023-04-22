@@ -1,15 +1,14 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.MemorySequence;
 
 /**
  * A006754 The generalized Conway-Guy sequence w^{0}.
  * @author Sean A. Irvine
  */
-public class A006754 extends MemorySequence {
-
-  // Conjectural formula
+public class A006754 extends MemorySequence implements Conjectural {
 
   private static final long[] INITIAL = {0, 3, 5, 6, 7, 14, 25, 45, 84, 162};
 

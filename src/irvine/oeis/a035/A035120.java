@@ -1,5 +1,6 @@
 package irvine.oeis.a035;
 
+import irvine.oeis.Conjectural;
 import irvine.math.group.QuadraticFieldUtils;
 import irvine.math.z.Z;
 import irvine.oeis.a003.A003658;
@@ -8,9 +9,8 @@ import irvine.oeis.a003.A003658;
  * A035120 Discriminants of real quadratic number fields with class number &gt;= 2.
  * @author Sean A. Irvine
  */
-public class A035120 extends A003658 {
+public class A035120 extends A003658 implements Conjectural {
 
-  // WARNING: Do not use this to extend the sequence, the underlying implementation
   // contains heuristics.
 
   {

@@ -1,14 +1,14 @@
 package irvine.oeis.a061;
 
+import irvine.oeis.Conjectural;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A061101 Squares with digital root 7.
  * @author Sean A. Irvine
  */
-public class A061101 extends LinearRecurrence {
+public class A061101 extends LinearRecurrence implements Conjectural {
 
-  // WARNING Conjectural formula: do not use this implementation to extend the sequence.
 
   /** Construct the sequence. */
   public A061101() {

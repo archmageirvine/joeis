@@ -1,5 +1,6 @@
 package irvine.oeis.a056;
 
+import irvine.oeis.Conjectural;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -8,9 +9,8 @@ import irvine.oeis.Sequence1;
  * A056770 Smallest number that is n times the product of its digits or 0 if impossible.
  * @author Sean A. Irvine
  */
-public class A056770 extends Sequence1 {
+public class A056770 extends Sequence1 implements Conjectural {
 
-  // WARNING: Do not use this to extend the sequence.
 
   private static final long HEURISTIC_MULTIPLIER = 1000;
   private long mN = 0;

@@ -1,14 +1,14 @@
 package irvine.oeis.a247;
 
+import irvine.oeis.Conjectural;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A247335 The curvature of touching circles inscribed in a special way in the larger segment of circle of radius 10/9 divided by a chord of length 4/3.
  * @author Sean A. Irvine
  */
-public class A247335 extends LinearRecurrence {
+public class A247335 extends LinearRecurrence implements Conjectural {
 
-  // WARNING Conjectural formula: do not use this implementation to extend the sequence.
 
   /** Construct the sequence. */
   public A247335() {

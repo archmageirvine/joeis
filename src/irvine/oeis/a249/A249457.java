@@ -1,14 +1,14 @@
 package irvine.oeis.a249;
 
+import irvine.oeis.Conjectural;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A249457 The numerator of curvatures of touching circles inscribed in a special way in the larger segment of a unit circle divided by a chord of length sqrt(84)/5.
  * @author Sean A. Irvine
  */
-public class A249457 extends LinearRecurrence {
+public class A249457 extends LinearRecurrence implements Conjectural {
 
-  // WARNING Conjectural formula: do not use this implementation to extend the sequence.
 
   /** Construct the sequence. */
   public A249457() {

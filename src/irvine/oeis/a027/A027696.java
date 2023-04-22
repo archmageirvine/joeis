@@ -1,5 +1,6 @@
 package irvine.oeis.a027;
 
+import irvine.oeis.Conjectural;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
@@ -8,9 +9,8 @@ import irvine.math.z.Z;
  * A027696 Nonparametric solutions to problem in A027669: n such that for some m, the sum of the first m n-gonal numbers is again an n-gonal number.
  * @author Sean A. Irvine
  */
-public class A027696 extends A027669 {
+public class A027696 extends A027669 implements Conjectural {
 
-  // WARNING: Do not use this to extend the sequence.  It is not guaranteed to find all members
   // of the sequence.
   private static final long HEURISTIC_MULTIPLIER = 100000;
 

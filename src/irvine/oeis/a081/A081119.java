@@ -1,15 +1,14 @@
 package irvine.oeis.a081;
 
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
  * A081119 Number of integral solutions to Mordell's equation y^2 = x^3 + n.
  * @author Sean A. Irvine
  */
-public class A081119 extends Sequence1 {
-
-  // WARNING: Heuristic do not use to extend the sequence.
+public class A081119 extends Sequence1 implements Conjectural {
 
   private long mCubeLimit = 1000;
   private long mN = 0;

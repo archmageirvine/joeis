@@ -434,6 +434,9 @@ public final class SequenceFactory {
     final long numberOfTerms = getEffectiveMax(flags, TERMS);
     try {
       final Sequence seq = sequence(seqId);
+      if (seq instanceof Conjectural) {
+        System.out.println("# WARNING: Implementation is conjectural, do not use output to extend the OEIS.");
+      }
       final int offset = getOffset(flags, seq);
       try {
         if (bfile && header) {

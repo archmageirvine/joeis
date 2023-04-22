@@ -1,14 +1,14 @@
 package irvine.oeis.a307;
 
+import irvine.oeis.Conjectural;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307270 Coordination sequence for trivalent node of type alpha''' in the first Moore pentagonal tiling.
  * @author Georg Fischer
  */
-public class A307270 extends HolonomicRecurrence {
+public class A307270 extends HolonomicRecurrence implements Conjectural {
 
-  // WARNING Conjectural formula: do not use this implementation to extend the sequence.
 
   /** Construct the sequence. */
   public A307270() {

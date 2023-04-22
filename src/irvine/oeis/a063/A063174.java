@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002808;
 
 /**
- * A063145.
+ * A063174 Composites for which the row of the prime-composite array (A063173) includes the leftmost element of a zero-only antidiagonal.
  * @author Sean A. Irvine
  */
 public class A063174 extends Sequence1 {

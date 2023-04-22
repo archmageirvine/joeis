@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063145.
+ * A063167 Composite numbers which in base 8 contain their largest proper factor as a substring.
  * @author Sean A. Irvine
  */
 public class A063167 extends Sequence1 {

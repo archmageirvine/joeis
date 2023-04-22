@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 
 /**
  * The Engel expansion of a real number.
- * Recoded from A014012 of Sean Irvine.
+ * Recoded from A014012 of Sean A. Irvine.
  * The {@link PierceExpansionSequence} differs from this expansion only by the
  * alternating signs of the unit fractions.
  * @author Georg Fischer
@@ -18,14 +18,14 @@ public abstract class EngelExpansionSequence implements Sequence {
   protected abstract CR getN();
 
   /**
-   * Constructor with default precision
+   * Constructor with default precision.
    */
   public EngelExpansionSequence() {
     this(32);
   }
 
   /**
-   * Constructor with precision
+   * Constructor with precision.
    * @param prec precision for CR.ceil()
    */
   public EngelExpansionSequence(final int prec) {

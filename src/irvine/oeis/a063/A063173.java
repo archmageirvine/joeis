@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002808;
 
 /**
- * A063145.
+ * A063173 Prime-composite array T(m,n): highest power of the n-th prime that divides the m-th composite, read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A063173 extends Sequence1 {

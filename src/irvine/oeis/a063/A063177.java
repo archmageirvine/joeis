@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A062410.
+ * A063177 Triangular spiral sequence: sequence is written as a triangular spiral, each entry is the sum of the row in the previous direction containing the previous entry.
  * @author Sean A. Irvine
  */
 public class A063177 extends Sequence1 {
@@ -16,7 +16,7 @@ public class A063177 extends Sequence1 {
   private static final int[] DY = {0, 1, -1};
   private final HashMap<Point, Z> mA = new HashMap<>();
   private int mPrevDir = 0;
-  private int mDir = 2;
+  protected int mDir = 2;
   private int mX = 0;
   private int mY = 0;
 
@@ -26,7 +26,7 @@ public class A063177 extends Sequence1 {
       mA.put(new Point(0, 0), Z.ONE);
       return Z.ONE;
     }
-    final int nextDir = (mDir + 1) % 3;
+    final int nextDir = (mDir + 1) % DX.length;
     if (mA.get(new Point(mX + DX[nextDir], mY + DY[nextDir])) == null) {
       // Yes we need to change direction
       mPrevDir = mDir;

@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001694;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A063274.
+ * A063274 Number of powerful numbers (definition 1) required to sum to n.
  * @author Sean A. Irvine
  */
 public class A063274 extends A001694 {

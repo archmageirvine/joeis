@@ -10,17 +10,30 @@ import irvine.oeis.Sequence1;
  */
 public class A062095 extends Sequence1 {
 
+  private final long mStart;
   private Z mA = null;
+
+  protected A062095(final long start) {
+    mStart = start;
+  }
+
+  /** Construct the sequence. */
+  public A062095() {
+    this(1);
+  }
 
   @Override
   public Z next() {
     if (mA == null) {
-      mA = Z.ONE;
-    } else if (Z.ONE.equals(mA)) {
-      mA = Z.valueOf(11);
+      mA = Z.valueOf(mStart);
     } else {
       final Z[] d = Jaguar.factor(mA).divisorsSorted();
-      mA = new Z(d[d.length / 2 - 1].toString() + d[d.length / 2]);
+      if ((d.length & 1) == 1) {
+        final String s = d[d.length / 2].toString();
+        mA = new Z(s + s);
+      } else {
+        mA = new Z(d[d.length / 2 - 1].toString() + d[d.length / 2]);
+      }
     }
     return mA;
   }

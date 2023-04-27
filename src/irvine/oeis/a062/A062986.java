@@ -3,13 +3,13 @@ package irvine.oeis.a062;
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A062986 Coefficient array for certain polynomials N(5; k,x) (rising powers in x).
  * @author Sean A. Irvine
  */
-public class A062986 extends Sequence1 {
+public class A062986 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

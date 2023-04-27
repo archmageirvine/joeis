@@ -16,6 +16,10 @@ public class A062294 extends MemorySequence {
   private long mP = 1;
   private final HashSet<Z> mSums = new HashSet<>();
 
+  {
+    setOffset(1);
+  }
+
   private boolean isOk(final long prime) {
     for (final Z v : this) {
       if (mSums.contains(v.add(prime))) {

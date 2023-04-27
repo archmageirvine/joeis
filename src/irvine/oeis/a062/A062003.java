@@ -1,13 +1,13 @@
 package irvine.oeis.a062;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A062003 Product of the k numbers formed by cyclically permuting digits of n (where k = number of digits of n).
  * @author Sean A. Irvine
  */
-public class A062003 extends Sequence1 {
+public class A062003 extends Sequence0 {
 
   private long mN = -1;
   private long mMul = 1;

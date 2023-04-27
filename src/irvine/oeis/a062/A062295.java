@@ -14,6 +14,10 @@ public class A062295 extends MemorySequence {
   private long mN = 0;
   private final HashSet<Z> mSums = new HashSet<>();
 
+  {
+    setOffset(1);
+  }
+
   private boolean isOk(final Z square) {
     for (final Z v : this) {
       if (mSums.contains(v.add(square))) {

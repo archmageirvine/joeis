@@ -2,13 +2,13 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A062993 A triangle (lower triangular matrix) composed of Pfaff-Fuss (or Raney) sequences.
  * @author Sean A. Irvine
  */
-public class A062993 extends Sequence1 {
+public class A062993 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

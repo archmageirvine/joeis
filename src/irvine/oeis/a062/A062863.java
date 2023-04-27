@@ -10,6 +10,6 @@ public class A062863 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A062863() {
-    super(0, new A062862(), ZERO);
+    super(0, 0, new A062862(), ZERO);
   }
 }

@@ -13,6 +13,7 @@ public class A062554 extends MultiplicativeClosureSequence {
   /** Construct the sequence. */
   public A062554() {
     super(new FiniteSequence(4, 6, 8, 12, 20));
+    setOffset(1);
     add(Z.ONE);
   }
 }

@@ -2,13 +2,13 @@ package irvine.oeis.a062;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A062584 a(n) is the smallest prime whose digits include the digits of n as a substring.
  * @author Sean A. Irvine
  */
-public class A062584 extends Sequence1 {
+public class A062584 extends Sequence0 {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

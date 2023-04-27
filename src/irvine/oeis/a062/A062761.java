@@ -12,6 +12,10 @@ public class A062761 extends A001694 {
   private Z mA = super.next();
   private Z mLim = null;
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     mLim = mLim == null ? Z.ONE : mLim.multiply2();

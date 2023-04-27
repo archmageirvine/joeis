@@ -6,13 +6,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A062738 Number of connected labeled relations.
  * @author Sean A. Irvine
  */
-public class A062738 extends Sequence1 {
+public class A062738 extends Sequence0 {
 
   private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);

@@ -12,5 +12,6 @@ public class A132651 extends A132638 {
   /** Construct the sequence. */
   public A132651() {
     super(2, new A001065(), 1);
+    setOffset(2);
   }
 }

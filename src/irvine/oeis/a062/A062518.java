@@ -2,13 +2,13 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A062518 Conjectural largest exponent k such that n^k does not contain all of the digits 0 through 9 (in decimal notation) or 0 if no such k exists (for example if n is a power of 10).
  * @author Sean A. Irvine
  */
-public class A062518 extends Sequence0 {
+public class A062518 extends Sequence1 {
 
   private static final int HEURISTIC = 100;
   private long mN = 0;

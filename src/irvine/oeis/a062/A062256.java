@@ -11,6 +11,6 @@ public class A062256 extends Combiner {
 
   /** Construct the sequence. */
   public A062256() {
-    super(new A060424(), new A062252(), (a, b) -> a.multiply(b.add(1)).subtract(1));
+    super(1, new A060424(), new A062252(), (a, b) -> a.multiply(b.add(1)).subtract(1));
   }
 }

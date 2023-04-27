@@ -5,13 +5,13 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A063056 a(n) = number of 'Reverse and Add!' operations that have to be applied to the n-th term of A063055 in order to obtain a term in the trajectory of 1997.
  * @author Sean A. Irvine
  */
-public class A063056 extends Sequence1 {
+public class A063056 extends Sequence0 {
 
   private final Sequence mA;
   private Z mN;

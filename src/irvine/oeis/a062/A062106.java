@@ -10,6 +10,10 @@ public class A062106 extends A062104 {
 
   private int mN = 0;
 
+  {
+    setOffset(1);
+  }
+
   @Override
   public Z next() {
     return mB.get(++mN, 1);

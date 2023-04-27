@@ -12,6 +12,6 @@ public class A028822 extends FilterSequence {
 
   /** Construct the sequence. */
   public A028822() {
-    super(new A000290(), ZUtils::isNonincreasingDigits);
+    super(1, new A000290(), ZUtils::isNonincreasingDigits);
   }
 }

@@ -48,11 +48,11 @@ public class A245013 extends Sequence0 {
       while (l.get(++k) > 0) {
         // do nothing
       }
-      final int v= l.set(k, 1);
+      final int v = l.set(k, 1);
       final Z u = b(n, l);
       l.set(k, v);
       if (n > 1 && k + 1 < l.size() && l.get(k + 1) == 0) {
-        final int i= l.set(k, 2);
+        final int i = l.set(k, 2);
         final int j = l.set(k + 1, 2);
         final Z w = b(n, l);
         l.set(k + 1, j);

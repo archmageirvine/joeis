@@ -16,7 +16,7 @@ public class A337303 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A337303() {
-    super(1);
+    super(0);
     mN = 0;
     mSeq1.next();
   }

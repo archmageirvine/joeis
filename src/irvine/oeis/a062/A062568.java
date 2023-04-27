@@ -3,16 +3,21 @@ package irvine.oeis.a062;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A062568 a(n) is the smallest n-digit strong pseudoprime (in base 2).
  * @author Sean A. Irvine
  */
-public class A062568 extends Sequence1 {
+public class A062568 extends AbstractSequence {
 
   private Z mT = Z.valueOf(100);
   private final Fast mPrime = new Fast();
+
+  /** Construct the sequence. */
+  public A062568() {
+    super(4);
+  }
 
   @Override
   public Z next() {

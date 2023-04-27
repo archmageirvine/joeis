@@ -8,14 +8,14 @@ import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.HararyMultiply;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.Pair;
 
 /**
  * A063183 Number of nonisomorphic cyclic subgroups of the group S_n X S_n (where S_n is the symmetric group of degree n).
  * @author Sean A. Irvine
  */
-public class A063183 extends Sequence1 {
+public class A063183 extends Sequence0 {
 
   private int mN = -1;
 

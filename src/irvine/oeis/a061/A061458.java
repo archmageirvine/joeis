@@ -12,7 +12,7 @@ public class A061458 extends FilterSequence {
 
   /** Construct the sequence. */
   public A061458() {
-    super(new A000578(), k -> ZUtils.isCube(ZUtils.reverse(k)));
+    super(0, new A000578(), k -> ZUtils.isCube(ZUtils.reverse(k)));
   }
 }
 

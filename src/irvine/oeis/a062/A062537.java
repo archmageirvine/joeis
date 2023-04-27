@@ -15,6 +15,7 @@ public class A062537 extends MemorySequence {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new PrependSequence(new A000720(), 0));
   {
+    setOffset(1);
     add(null);
   }
 

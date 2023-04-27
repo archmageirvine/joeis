@@ -11,10 +11,9 @@ public class A008805 extends AlternatingSequence {
 
   /** Construct the sequence. */
   public A008805() {
-    super(new A000217(), new A000217());
+    super(0, new A000217(), new A000217());
     next();
     next();
   }
 }
-
 

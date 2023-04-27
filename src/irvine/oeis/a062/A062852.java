@@ -3,16 +3,21 @@ package irvine.oeis.a062;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A062852 Largest n-digit strong pseudoprimes (in base 2).
  * @author Sean A. Irvine
  */
-public class A062852 extends Sequence1 {
+public class A062852 extends AbstractSequence {
 
   private Z mT = Z.valueOf(1000);
   private final Fast mPrime = new Fast();
+
+  /** Construct the sequence. */
+  public A062852() {
+    super(4);
+  }
 
   @Override
   public Z next() {

@@ -13,7 +13,7 @@ public class A008827 extends A000110 {
     super.next();
     super.next();
     super.next();
-    setOffset(3);
+    setOffset(2);
   }
 
   @Override

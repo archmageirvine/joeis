@@ -17,6 +17,10 @@ public class A058940 extends A007814 {
   private Polynomial<Q> mA = null;
   private Z mScale = null;
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     if (++mM > mN) {

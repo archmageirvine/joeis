@@ -14,6 +14,7 @@ public class A062559 extends A025475 {
   private final HashSet<Z> mTerms = new HashSet<>();
   private final HashSet<Z> mSums = new HashSet<>();
   {
+    setOffset(0);
     super.next();
   }
 

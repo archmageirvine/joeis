@@ -12,6 +12,10 @@ public class A062247 extends A141900 {
 
   private int mThrees = -1;
 
+  {
+    setOffset(1);
+  }
+
   @Override
   public Z next() {
     while (true) {

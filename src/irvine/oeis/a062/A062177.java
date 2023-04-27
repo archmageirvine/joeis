@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A062177 Shifts left when MASKCONVolved with itself.
  * @author Sean A. Irvine
  */
-public class A062177 extends Sequence1 {
+public class A062177 extends Sequence0 {
 
   // After Antti Karttunen Maple code
 

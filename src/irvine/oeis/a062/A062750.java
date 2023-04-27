@@ -2,13 +2,13 @@ package irvine.oeis.a062;
 
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A062750 Generalized Catalan array FS(4; n,r).
  * @author Sean A. Irvine
  */
-public class A062750 extends Sequence1 {
+public class A062750 extends Sequence0 {
 
   private int mN = -1;
   private int mM = 0;

@@ -12,6 +12,6 @@ public class A360807 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A360807() {
-    super(CR.valueOf(new Q(3, 4)).lnGamma().multiply(4).add(CR.GAMMA.divide(CR.TWO)).add(CR.TWO.log()).subtract(CR.PI.log().multiply(new Q(3, 2))));
+    super(0, CR.valueOf(new Q(3, 4)).lnGamma().multiply(4).add(CR.GAMMA.divide(CR.TWO)).add(CR.TWO.log()).subtract(CR.PI.log().multiply(new Q(3, 2))));
   }
 }

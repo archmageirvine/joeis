@@ -10,6 +10,10 @@ public class A141900 extends A141586 {
 
   protected int mN = -1;
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     ++mN;

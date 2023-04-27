@@ -2,13 +2,13 @@ package irvine.oeis.a062;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A062531 Index of smallest prime p such that there is a gap of 2^n between p and next prime.
  * @author Sean A. Irvine
  */
-public class A062531 extends Sequence0 {
+public class A062531 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   protected long mN = 1;

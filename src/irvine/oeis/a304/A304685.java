@@ -13,6 +13,7 @@ public class A304685 extends A000699 {
 
   /** Construct the sequence. */
   public A304685() {
+    setOffset(1);
     mSeq.next();
   }
 

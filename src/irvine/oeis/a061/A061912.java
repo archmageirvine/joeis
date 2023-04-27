@@ -3,14 +3,14 @@ package irvine.oeis.a061;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A061912 a(n) is the smallest m for which sqrt(sum of digits of m^2) = n.
  * @author Sean A. Irvine
  */
-public class A061912 extends Sequence1 {
+public class A061912 extends Sequence0 {
 
   private final LongDynamicLongArray mA = new LongDynamicLongArray();
   private long mN = -1;

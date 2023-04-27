@@ -11,6 +11,6 @@ public class A026380 extends AlternatingSequence {
 
   /** Construct the sequence. */
   public A026380() {
-    super(new A026378(), new SkipSequence(new A026375(), 1));
+    super(0, new A026378(), new SkipSequence(new A026375(), 1));
   }
 }

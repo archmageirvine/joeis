@@ -2,13 +2,13 @@ package irvine.oeis.a062;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A062020 a(n) = Sum_{i=1..n} Sum_{j=1..i} (prime(i) - prime(j)).
  * @author Sean A. Irvine
  */
-public class A062020 extends Sequence0 {
+public class A062020 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private Z mA = null;

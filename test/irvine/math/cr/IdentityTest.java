@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 public class IdentityTest extends TestCase {
 
   public void testIdentity() {
-    CRTest.assertEquals("identity", CR.ZERO, UnaryCRFunction.IDENTITY.execute(CR.ZERO));
-    CRTest.assertEquals("identity", CR.ONE, UnaryCRFunction.IDENTITY.execute(CR.ONE));
+    CRTest.assertEquals("identity", CR.ZERO, ((UnaryCRFunction) new Identity()).execute(CR.ZERO));
+    CRTest.assertEquals("identity", CR.ONE, ((UnaryCRFunction) new Identity()).execute(CR.ONE));
   }
 }

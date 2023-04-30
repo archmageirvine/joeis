@@ -7,8 +7,7 @@ import irvine.factor.prime.Fast;
 
 /**
  * Routines relating to inverting the Euler totient function.
- *
- * @author Sean A. Irvine
+  * @author Sean A. Irvine
  */
 class InverseEuler {
 

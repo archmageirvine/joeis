@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A063005 Difference between 2^n and the next smaller power of 3.
+ * A063005 Difference between 2^n and the next smaller or equal power of 3.
  * @author Sean A. Irvine
  */
 public class A063005 extends Sequence0 {

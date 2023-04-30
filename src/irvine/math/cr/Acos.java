@@ -9,6 +9,6 @@ class Acos extends UnaryCRFunction {
 
   @Override
   public CR execute(final CR x) {
-    return CR.HALF_PI.subtract(ASIN.execute(x));
+    return CR.HALF_PI.subtract(new Sin().inverseMonotone(CR.HALF_PI.negate(), CR.HALF_PI).execute(x));
   }
 }

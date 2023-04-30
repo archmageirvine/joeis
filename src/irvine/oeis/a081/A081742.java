@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a068.A068915;
 
 /**
- * A081742 a(1)=1; then if n is a multiple of 3 a(n)=a(n/3)+1, if n is not a multiple of 3 but even a(n)=a(n/2)+1, a(n)=a(n-1)+1 otherwise.
+ * A081742 a(1)=1; then if n is a multiple of 3, a(n) = a(n/3) + 1; if n is not a multiple of 3 but even, a(n) = a(n/2) + 1; a(n) = a(n-1) + 1 otherwise.
  * @author Georg Fischer
  */
 public class A081742 extends A068915 {

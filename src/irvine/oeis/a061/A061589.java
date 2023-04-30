@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061589 a(1) = 11, a(n)= number obtained by adding to each digit of a(n-1) the next digit.
+ * A061589 a(1) = 11, a(n) = number obtained by adding to each digit of a(n-1) the next digit.
  * @author Sean A. Irvine
  */
 public class A061589 extends Sequence1 {

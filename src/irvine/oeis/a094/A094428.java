@@ -7,7 +7,7 @@ import irvine.oeis.recur.PaddingSequence;
 
 
 /**
- * A094428 Expansion of infinite product (q^12,q^12,q^6;q^5,q^7;q^12)_infty.
+ * A094428 Expansion of infinite product (q^12, q^12, q^6; q^5, q^7; q^12)_oo.
  * @author Georg Fischer
  */
 public class A094428 extends EulerTransform {

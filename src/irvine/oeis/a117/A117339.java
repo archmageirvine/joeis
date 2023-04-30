@@ -6,7 +6,7 @@ import irvine.oeis.recur.PaddingSequence;
 
 
 /**
- * A117339 a(n)=a(n-1)+a(n-2); if a(n) is not prime divide a(n) by its largest prime factor.
+ * A117339 a(n) = a(n-1) + a(n-2); if a(n) is not prime divide a(n) by its largest prime factor.
  * @author Georg Fischer
  */
 public class A117339 extends PaddingSequence {

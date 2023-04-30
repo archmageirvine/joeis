@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a053.A053836;
 
 /**
- * A054900 (n) = floor(n/16) + floor(n/256) + floor(n/4096) + floor(n/65536) + ....
+ * A054900 a(n) = Sum_{j &gt;= 1} floor(n/16^j).
  * @author Georg Fischer
  */
 public class A054900 extends Sequence0 {

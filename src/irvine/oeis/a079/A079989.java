@@ -4,7 +4,7 @@ package irvine.oeis.a079;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A079989 Number of permutations satisfying -k&lt;=p(i)-i&lt;=r and p(i)-i not in I, i=1..n, with k=3, r=3, I={1,2}.
+ * A079989 Number of permutations satisfying -k &lt;= p(i) - i &lt;= r and p(i) - i not in I, i=1..n, with k=3, r=3, I={1,2}.
  * @author Georg Fischer
  */
 public class A079989 extends GeneratingFunctionSequence {

@@ -2,6 +2,7 @@ package irvine.factor.util;
 
 import java.util.Arrays;
 
+import irvine.factor.factor.Jaguar;
 import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Z;
 import junit.framework.TestCase;
@@ -510,5 +511,9 @@ public class FactorSequenceTest extends TestCase {
     assertEquals(-1, f.factorize(Z.TWO).lambda());
     assertEquals(-1, f.factorize(Z.THREE).lambda());
     assertEquals(1, f.factorize(Z.FOUR).lambda());
+  }
+
+  public void testSquareFree() {
+    assertFalse(Jaguar.factor(-18954).isSquareFree());
   }
 }

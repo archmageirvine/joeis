@@ -4,7 +4,7 @@ package irvine.oeis.a087;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A087211 Floor((1+2^n+3^n)/3).
+ * A087211 a(n) = floor((1+2^n+3^n)/3).
  * @author Georg Fischer
  */
 public class A087211 extends GeneratingFunctionSequence {

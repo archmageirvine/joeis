@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006512;
 
 /**
- * A172057 Primes p such that either p-5/2-+1/2 is prime.
+ * A172057 Primes p such that either p-5/2 -+ 1/2 is prime.
  * @author Georg Fischer
  */
 public class A172057 extends Sequence1 {

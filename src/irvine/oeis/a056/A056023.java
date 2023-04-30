@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A056023 Unique triangle such that (1) every positive integer occurs exactly once; (2) row n consists of n consecutive numbers; (3) odd-numbered rows are decreasing; (4) even-numbered rows are increasing; and (5) column 1 is increasing.
+ * A056023 The positive integers written as a triangle, where row n is written from right to left if n is odd and otherwise from left to right.
  * (1) every positive integer occurs exactly once;
  * (2) row n consists of n consecutive numbers;
  * (3) odd-numbered rows are decreasing;

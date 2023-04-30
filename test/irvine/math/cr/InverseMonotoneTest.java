@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 public class InverseMonotoneTest extends TestCase {
 
   public void testAsin() {
-    final UnaryCRFunction asin = UnaryCRFunction.ASIN;
+    final UnaryCRFunction asin = new Sin().inverseMonotone(CR.HALF_PI.negate(), CR.HALF_PI);
     CRTest.assertEquals("asin", CR.ONE, asin.execute(CR.ONE.sin()));
   }
 }

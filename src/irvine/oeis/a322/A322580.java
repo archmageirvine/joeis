@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A322580 Decimal expansion of the conversion factor from the old SI unit kg to the combination of 2019 SI units h*Delta nu_{Cs})/c^2.
+ * A322580 Decimal expansion of the conversion factor from the old SI unit kg to the combination of 2019 SI units h*\u0394\u03bd_{Cs}/c^2.
  * @author Georg Fischer
  */
 public class A322580 extends NoncomputableSequence {

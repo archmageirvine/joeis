@@ -11,7 +11,6 @@ import irvine.oeis.Sequence0;
  */
 public class A034172 extends Sequence0 {
 
-  private static final CR LOG2 = CR.TWO.log();
   private Z mF = Z.ONE;
   private int mN = -1;
 
@@ -20,7 +19,7 @@ public class A034172 extends Sequence0 {
     if (++mN > 0) {
       mF = mF.multiply(mN);
     }
-    return CR.valueOf(mF).divide(CR.TWO).divide(ComputableReals.SINGLETON.pow(LOG2, mN + 1)).round();
+    return CR.valueOf(mF).divide(CR.TWO).divide(ComputableReals.SINGLETON.pow(CR.LOG2, mN + 1)).round();
   }
 }
 

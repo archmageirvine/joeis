@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062958 phi[n+1] &lt; 2phi[n], phi[]=A000010.
+ * A062958 Numbers k such that phi(k+1) &lt; 2*phi(k), where phi = A000010.
  * @author Sean A. Irvine
  */
 public class A062958 extends Sequence1 {

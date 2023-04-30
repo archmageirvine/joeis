@@ -2246,3 +2246,4 @@ A063366 Dimension of the space of weight n cuspidal newforms for Gamma_1( 93 ).
 A063369 Dimension of the space of weight n cuspidal newforms for Gamma_1( 96 ).
 A063415 Triangle of coefficients of di-Boustrophedon transform (see A063179) read by rows: Let the original sequence be (U0,U1,...) and the transformed sequence (V0,V2,...), then Vn is a linear combination of U0,...,Un. T(n,m) is the coefficient that goes with Um to get Vn
 A063437 Cardinality of largest critical set in any Latin square of order n
+A063467 Number of idempotent reversible binary (i.e., radius one half) cellular automata of order n. Equivalently, number of loop-noded symmetric 2-colored unique 2-path graphs on n nodes. Equivalently, number of idempotent semicentral bigroupoids of order n.

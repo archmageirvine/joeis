@@ -1,7 +1,7 @@
 package irvine.math.cr;
 
-import junit.framework.TestCase;
 import irvine.math.z.Z;
+import junit.framework.TestCase;
 
 /**
  * Test the corresponding class.
@@ -19,10 +19,10 @@ public class PrescaledCosTest extends TestCase {
     final Z million = Z.valueOf(1000000);
     final Z thousand = Z.valueOf(1000);
     final CR huge = CR.valueOf(million.multiply(million).multiply(thousand));
-    final UnaryCRFunction asin = UnaryCRFunction.ASIN;
+    final UnaryCRFunction asin = new Sin().inverseMonotone(CR.HALF_PI.negate(), CR.HALF_PI);
     final UnaryCRFunction acos = new Acos();
-    final UnaryCRFunction atan = UnaryCRFunction.ATAN;
-    final UnaryCRFunction tan = UnaryCRFunction.TAN;
+    final UnaryCRFunction atan = new Atan();
+    final UnaryCRFunction tan = new Tan();
     CRTest.assertEquals("sin(pi/2) failed", halfPi.sin(), one);
     CRTest.assertEquals("asin(1) failed", asin.execute(one), halfPi);
     final CR asinr = asin.execute(one.negate());

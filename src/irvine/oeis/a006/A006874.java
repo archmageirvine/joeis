@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A006874 Mu-atoms of period n on continent of Mandelbrot set.
+ * A006874 Number of mu-atoms of period n on continent of Mandelbrot set.
  * @author Sean A. Irvine
  */
 public class A006874 extends MemorySequence {

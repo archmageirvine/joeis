@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.UnaryCRFunction;
+import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -21,7 +21,7 @@ public class A000319 extends Sequence0 {
     if (mTanValue == null) {
       mTanValue = CR.ONE;
     } else {
-      mTanValue = UnaryCRFunction.TAN.execute(mTanValue);
+      mTanValue = ComputableReals.SINGLETON.tan(mTanValue);
     }
     return mTanValue.floor();
   }  

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063454 Number of solutions to x^3 + y^3 = z^3 mod n.
+ * A063456 Integers of the form (9^k + 7^k + 5^k + 3^k) / k.
  * @author Sean A. Irvine
  */
 public class A063456 extends Sequence1 {

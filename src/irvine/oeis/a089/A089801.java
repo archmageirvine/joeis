@@ -7,7 +7,7 @@ import irvine.oeis.recur.PeriodicSequence;
 
 
 /**
- * A089801 a(n) = 0 unless n = 3j^2+2j or 3j^2+4j+1 for some j&gt;=0, in which case a(n) = 1.
+ * A089801 a(n) = 0 unless n = 3j^2 + 2j or 3j^2 + 4j + 1 for some j &gt;= 0, in which case a(n) = 1.
  * @author Georg Fischer
  */
 public class A089801 extends EulerTransform {

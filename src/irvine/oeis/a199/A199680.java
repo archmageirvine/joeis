@@ -3,7 +3,7 @@ package irvine.oeis.a199;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A199680 (11*9^n+1)/2.
+ * A199680 a(n) = (11*9^n+1)/2.
  * @author Sean A. Irvine
  */
 public class A199680 extends LinearRecurrence {

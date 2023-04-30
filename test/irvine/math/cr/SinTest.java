@@ -9,7 +9,7 @@ import junit.framework.TestCase;
 public class SinTest extends TestCase {
 
   public void testSin() {
-    final UnaryCRFunction asin = UnaryCRFunction.ASIN;
+    final UnaryCRFunction asin = new Sin().inverseMonotone(CR.HALF_PI.negate(), CR.HALF_PI);
     CRTest.assertEquals("asin", CR.ONE, asin.execute(CR.ONE.sin()));
   }
 }

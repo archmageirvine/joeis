@@ -185,12 +185,12 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
 
   @Override
   public CR tan(final CR n) {
-    return UnaryCRFunction.TAN.execute(n);
+    return ((UnaryCRFunction) new Tan()).execute(n);
   }
 
   @Override
   public CR cot(final CR n) {
-    return UnaryCRFunction.TAN.execute(n).inverse();
+    return ((UnaryCRFunction) new Tan()).execute(n).inverse();
   }
 
   @Override
@@ -205,12 +205,12 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
 
   @Override
   public CR asin(final CR n) {
-    return UnaryCRFunction.ASIN.execute(n);
+    return new Sin().inverseMonotone(CR.HALF_PI.negate(), CR.HALF_PI).execute(n);
   }
 
   @Override
   public CR acos(final CR n) {
-    return UnaryCRFunction.ACOS.execute(n);
+    return ((UnaryCRFunction) new Acos()).execute(n);
   }
 
   @Override
@@ -225,12 +225,12 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
 
   @Override
   public CR atan(final CR n) {
-    return UnaryCRFunction.ATAN.execute(n);
+    return ((UnaryCRFunction) new Atan()).execute(n);
   }
 
   @Override
   public CR acot(final CR n) {
-    return UnaryCRFunction.ACOT.execute(n);
+    return ((UnaryCRFunction) new Acot()).execute(n);
   }
 
   @Override

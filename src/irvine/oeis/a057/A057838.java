@@ -7,7 +7,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a055.A055079;
 
 /**
- * A057838 Numbers n such that A055079(n) = 2^n.
+ * A057838 Numbers k such that A055079(k) = 2^k.
  * @author Sean A. Irvine
  */
 public class A057838 extends FilterPositionSequence {

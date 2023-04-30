@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A043420 Numbers having four 6's in base 7.
+ * A043420 Numbers whose base-7 representation contains exactly four 6's.
  * @author Georg Fischer
  */
 public class A043420 extends RunsBaseSequence {

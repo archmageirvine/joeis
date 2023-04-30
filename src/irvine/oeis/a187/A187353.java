@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A187353 Number of Possible Ways to Fill Out NCAA Division I Men's Basketball Tournament Office Pool by Year, 1939-2011.
+ * A187353 Number of possible ways to fill out NCAA Division I Men's Basketball Tournament Office Pool by year, 1939-2011.
  * @author Georg Fischer
  */
 public class A187353 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A099838 Expansion of (1-x)^2(1+x)/(1+x+x^2).
+ * A099838 Expansion of (1-x)^2*(1+x)/(1+x+x^2).
  * @author Georg Fischer
  */
 public class A099838 extends GeneratingFunctionSequence {

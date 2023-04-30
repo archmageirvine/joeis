@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062974 omega[n+1] &lt; 2*omega[n], where omega[n] is the number of distinct prime divisors of n.
+ * A062974 Numbers k such that omega(k+1) &lt; 2*omega(k), where omega(k) is the number of distinct prime divisors of k.
  * @author Sean A. Irvine
  */
 public class A062974 extends Sequence1 {

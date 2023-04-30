@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A043403 Numbers having three 2's in base 7.
+ * A043403 Numbers whose base-7 representation contains exactly three 2's.
  * @author Georg Fischer
  */
 public class A043403 extends RunsBaseSequence {

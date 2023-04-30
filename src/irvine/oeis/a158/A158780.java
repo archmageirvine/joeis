@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A158780 a(2n) = A131577(n). a(2n+1) = A011782(n).
+ * A158780 a(2n) = A131577(n), a(2n+1) = A011782(n).
  * @author Georg Fischer
  */
 public class A158780 extends GeneratingFunctionSequence {

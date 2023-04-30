@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A063108 a(1) = 1; a(n+1) = a(n) + product of nonzero digits of a(n).
+ * A063108 a(1) = 1; thereafter a(n+1) = a(n) + product of nonzero digits of a(n).
  * @author Sean A. Irvine
  */
 public class A063108 extends Sequence1 {

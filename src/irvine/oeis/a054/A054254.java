@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 
 import irvine.oeis.recur.HolonomicRecurrence;
 /**
- * A054254 a(n) is n plus the minimum of the a(i)*a(n-i) of the previous i=1..n-1.
+ * A054254 a(n) is n plus the minimum of the a(i)*a(n-i) of the previous i = 1..n-1.
  * radtorec(x*(x^2-x+1)*(x^3-x^2-1)/(x-1)^3)
  * @author Georg Fischer
  */

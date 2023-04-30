@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 /**
- * A140321 Decimal expansion of x-coordinate of fixed point of Henon Map for a=7/5 and b=3/10 where x is a positive.
+ * A140321 Decimal expansion of x-coordinate of fixed point of H\u00e9non map for a=7/5 and b=3/10 where x is positive.
  * Formula: (sqrt(609)-7)/28
  * @author Georg Fischer
  */

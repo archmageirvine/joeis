@@ -1,7 +1,7 @@
 package irvine.oeis.a019;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.UnaryCRFunction;
+import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -11,7 +11,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 public class A019899 extends DecimalExpansionSequence {
 
   protected A019899(final int offset, final long angle) {
-    super(offset, UnaryCRFunction.TAN.execute(CR.PI.multiply(angle).divide(CR.valueOf(180))));
+    super(offset, ComputableReals.SINGLETON.tan(CR.PI.multiply(angle).divide(CR.valueOf(180))));
   }
 
   protected A019899(final long angle) {

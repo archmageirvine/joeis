@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A043414 Numbers having two 5's in base 7.
+ * A043414 Numbers whose base-7 representation contains exactly two 5's.
  * @author Georg Fischer
  */
 public class A043414 extends RunsBaseSequence {

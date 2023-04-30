@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063100 Compute the cototient function for the g(n) = p(n+1)-p(n)-1 composite numbers between two consecutive primes. Let the number of distinct cototient values be c[n]. Sequence gives g[n]-c[n].
+ * A063100 Compute the cototient function for the g(n) = p(n+1)-p(n)-1 composite numbers between two consecutive primes. Let the number of distinct cototient values be c(n). Then, a(n) = g(n)-c(n).
  * @author Sean A. Irvine
  */
 public class A063100 extends Sequence1 {

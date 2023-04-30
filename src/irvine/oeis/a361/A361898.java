@@ -3,7 +3,7 @@ package irvine.oeis.a361;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A361898 allocated for Arkadiusz Wesolowski.
+ * A361898 A set of 13 primes that form a covering set for a Sierpi\u0144ski (or Riesel) number.
  * @author Sean A. Irvine
  */
 public class A361898 extends FiniteSequence {

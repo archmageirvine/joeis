@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A361901 allocated for Jos\u00e9 E. Solsona.
+ * A361901 The number of linear extensions of n fork-join DAGs of width 3.
  * @author Sean A. Irvine
  */
 public class A361901 extends Sequence0 {

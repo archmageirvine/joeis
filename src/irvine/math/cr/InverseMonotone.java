@@ -32,7 +32,7 @@ class InverseMonotone extends UnaryCRFunction {
 
     // Since func is monotone and low < high, the following test converges.
     if (tmpFuncLow.compareTo(tmpFuncHigh) > 0) {
-      mFunc = UnaryCRFunction.NEGATE.compose(func);
+      mFunc = new Negation().compose(func);
       mFuncNegated = true;
       mFuncLow = tmpFuncLow.negate();
       mFuncHigh = tmpFuncHigh.negate();

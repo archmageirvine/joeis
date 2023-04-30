@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063451 n * sigma(n)-1 is a prime.
+ * A063451 Numbers k such that k * sigma(k)-1 is a prime.
  * @author Sean A. Irvine
  */
 public class A063451 extends Sequence1 {

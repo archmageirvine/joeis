@@ -17,6 +17,6 @@ class Atan extends UnaryCRFunction {
     final CR x2 = x.multiply(x);
     final CR absSinAtan = x2.divide(CR.ONE.add(x2)).sqrt();
     final CR sinAtan = x.select(absSinAtan.negate(), absSinAtan);
-    return ASIN.execute(sinAtan);
+    return new Sin().inverseMonotone(CR.HALF_PI.negate(), CR.HALF_PI).execute(sinAtan);
   }
 }

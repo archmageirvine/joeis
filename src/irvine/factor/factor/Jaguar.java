@@ -82,8 +82,13 @@ public final class Jaguar {
    */
   public static FactorSequence factor(final Z n) {
     FactorSequence fs = new FactorSequence(n);
-    if (Z.ONE.compareTo(n) >= 0) {
+    if (Z.ONE.equals(n)) {
       return EMPTY;
+    }
+    if (n.signum() < 0) {
+      final FactorSequence res = factor(n.negate());
+      res.add(-1L, FactorSequence.PRIME);
+      return res;
     }
     CHEETAH.factor(fs);
     if (!fs.isComplete()) {

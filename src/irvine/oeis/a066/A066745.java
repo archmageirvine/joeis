@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066745 Least number of applications of f(k) = k(k+1)+1 to n to yield a prime, if this number exists; 0 otherwise.
+ * A066745 Least number of applications of f(k) = k(k+1)+1 to n to yield a prime, if this number exists; -1 otherwise.
  * @author Sean A. Irvine
  */
 public class A066745 extends Sequence1 {

@@ -13,7 +13,7 @@ public class A050296 extends Sequence1 {
 
   // After Steven Finch
 
-  private static final CR LOG2 = CR.TWO.log();
+  private static final CR LOG2 = CR.LOG2;
   private static final CR LOG3 = CR.THREE.log();
   private long mN = 0;
 

@@ -425,8 +425,9 @@ public abstract class CR extends Number implements Comparable<CR> {
   private CR simpleLn() {
     return new PrescaledLn(subtract(ONE));
   }
-  
-  private static final CR LN2 = valueOf(7).multiply(valueOf(10).divide(valueOf(9)).simpleLn())
+
+  /** The natural logarithm of 2. */
+  public static final CR LOG2 = valueOf(7).multiply(valueOf(10).divide(valueOf(9)).simpleLn())
     .subtract(TWO.multiply(valueOf(25).divide(valueOf(24)).simpleLn()))
     .add(THREE.multiply(valueOf(81).divide(valueOf(80)).simpleLn()));
 
@@ -1108,7 +1109,7 @@ public abstract class CR extends Number implements Comparable<CR> {
       } else {
         final int extraBits = roughAppr.bitLength() - 3;
         final CR scaledResult = shiftRight(extraBits).log();
-        return scaledResult.add(CR.valueOf(extraBits).multiply(LN2));
+        return scaledResult.add(CR.valueOf(extraBits).multiply(LOG2));
       }
     }
     return simpleLn();

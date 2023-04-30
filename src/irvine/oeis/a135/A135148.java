@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A135148 A binomial recursion : a(n) = q(n) (see formula).
+ * A135148 A binomial recursion: a(n) = q(n) (see formula).
  * E.g.f.: (1 - exp(x)) * (exp(x) - 2*x - 1) / (2*(2 - exp(x))^2)
  * @author Georg Fischer
  */

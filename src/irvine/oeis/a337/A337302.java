@@ -5,7 +5,7 @@ import irvine.oeis.DoubledSequence;
 import irvine.oeis.a000.A000316;
 
 /**
- * A337302 Number of X-based filling of diagonals in a diagonal Latin square of order n with fixed main diagonal.
+ * A337302 Number of X-based filling of diagonals in a diagonal Latin square of order n with the main diagonal in ascending order.
  * @author Georg Fischer
  */
 public class A337302 extends DoubledSequence {

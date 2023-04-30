@@ -4,7 +4,7 @@ package irvine.oeis.a056;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A056011 Unique triangle such that (1) every positive integer occurs exactly once; (2) row n consists of n consecutive numbers; (3) odd-numbered rows are increasing; and (4) even-numbered rows are decreasing.
+ * A056011 Enumeration of natural numbers by the boustrophedonic diagonal method.
  * @author Georg Fischer
  */
 public class A056011 extends Transpose {

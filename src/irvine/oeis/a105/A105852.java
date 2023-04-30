@@ -8,7 +8,7 @@ import irvine.oeis.a010.A010878;
 
 
 /**
- * A105852 sigma(n) mod 9.
+ * A105852 a(n) = sigma(n) mod 9.
  * Formula: <code>a(n) = A010878(A000203(n)).</code>
  * @author Georg Fischer
  */

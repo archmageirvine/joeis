@@ -9,8 +9,8 @@ import junit.framework.TestCase;
 public class AtanTest extends TestCase {
 
   public void testAtan() {
-    final UnaryCRFunction atan = UnaryCRFunction.ATAN;
-    final UnaryCRFunction tan = UnaryCRFunction.TAN;
+    final UnaryCRFunction atan = new Atan();
+    final UnaryCRFunction tan = new Tan();
     CRTest.assertEquals("atan", CR.ONE, atan.execute(tan.execute(CR.ONE)));
   }
 }

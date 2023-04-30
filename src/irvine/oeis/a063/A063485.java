@@ -1,0 +1,26 @@
+package irvine.oeis.a063;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A063485 Composites of the form 2^(2^n)+3.
+ * @author Sean A. Irvine
+ */
+public class A063485 extends Sequence1 {
+
+  private int mN = 0;
+
+  @Override
+  public Z next() {
+    while (true) {
+      if (++mN >= 32) {
+        throw new UnsupportedOperationException();
+      }
+      final Z t = Z.ONE.shiftLeft(1 << mN).add(3);
+      if (!t.isProbablePrime()) {
+        return t;
+      }
+    }
+  }
+}

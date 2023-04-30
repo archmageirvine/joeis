@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a004.A004648;
 
 /**
- * A099850 Sum of the first n terms of A004648 (the remainder after dividing n-th prime by n).
+ * A099850 Partial sums of A004648.
  * @author Georg Fischer
  */
 public class A099850 extends PartialSumSequence {

@@ -11,7 +11,6 @@ import irvine.oeis.Sequence1;
 public class A001768 extends Sequence1 {
 
   private static final CR THREE_QUARTERS = CR.THREE.divide(CR.FOUR);
-  private static final CR LOG2 = CR.TWO.log();
   private Z mSum = Z.ZERO;
   private long mN = 0;
 
@@ -19,7 +18,7 @@ public class A001768 extends Sequence1 {
   public Z next() {
     ++mN;
     final CR ntq = CR.valueOf(mN).multiply(THREE_QUARTERS);
-    final Z v = ntq.log().divide(LOG2).ceil();
+    final Z v = ntq.log().divide(CR.LOG2).ceil();
     mSum = mSum.add(v);
     return mSum;
   }

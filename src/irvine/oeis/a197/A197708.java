@@ -3,7 +3,7 @@ package irvine.oeis.a197;
 // DO NOT EDIT here!
 
 /**
- * A197708 Floor((n+1/n)^7).
+ * A197708 a(n) = floor((n+1/n)^7).
  * @author Georg Fischer
  */
 public class A197708 extends A197602 {

@@ -1,13 +1,13 @@
 package irvine.oeis.a213;
+// manually verified, 2023-04-29
 
-import irvine.oeis.Conjectural;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A213246 Number of nonzero elements in GF(2^n) that are 9th powers.
  * @author Sean A. Irvine
  */
-public class A213246 extends LinearRecurrence implements Conjectural {
+public class A213246 extends LinearRecurrence {
 
 
   /** Construct the sequence. */

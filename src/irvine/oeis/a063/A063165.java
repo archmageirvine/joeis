@@ -4,7 +4,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A063166 Dimension of the space of weight 2n cusp forms for Gamma_0( 97 ).
+ * A063165 Dimension of the space of weight 2n cusp forms for Gamma_0( 97 ).
  * @author Sean A. Irvine
  */
 public class A063165 extends GeneratingFunctionSequence implements Conjectural {

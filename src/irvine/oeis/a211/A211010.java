@@ -4,7 +4,7 @@ package irvine.oeis.a211;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A211010 Value on the axis &quot;x&quot; of the endpoint of the structure of A211000 at n-th stage.
+ * A211010 Value on the axis "x" of the endpoint of the structure of A211000 at n-th stage.
  * @author Georg Fischer
  */
 public class A211010 extends GeneratingFunctionSequence {

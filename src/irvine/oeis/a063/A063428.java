@@ -9,7 +9,7 @@ import irvine.oeis.Sequence2;
  */
 public class A063428 extends Sequence2 {
 
-  private Z mN = Z.ONE;
+  protected Z mN = Z.ONE;
 
   @Override
   public Z next() {

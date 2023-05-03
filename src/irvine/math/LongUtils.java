@@ -580,10 +580,10 @@ public final class LongUtils {
    */
   public static int syndrome(long n) {
     int s = 0;
-    while (n != 0) {
+    do {
       s |= 1 << (n % 10);
       n /= 10;
-    }
+    } while (n != 0);
     return s;
   }
 

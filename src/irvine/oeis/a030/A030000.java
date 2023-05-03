@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
 public class A030000 extends Sequence0 {
 
   private Z mN = Z.NEG_ONE;
-  private int mBase;
+  private final int mBase;
 
   /** Construct the sequence. */
   public A030000() {

@@ -4,7 +4,7 @@ package irvine.oeis.a348;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A348229 Coordination sequence for Wilkinson&apos;s 123-circle packing with respect to a circle of radius 2.
+ * A348229 Coordination sequence for Wilkinson's 123-circle packing with respect to a circle of radius 2.
  * @author Georg Fischer
  */
 public class A348229 extends GeneratingFunctionSequence {

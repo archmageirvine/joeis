@@ -2174,3 +2174,12 @@ A062733 Maximal degree of an irreducible representation the group SL(n,2) (the g
 A063415 Triangle of coefficients of di-Boustrophedon transform (see A063179) read by rows: Let the original sequence be (U0,U1,...) and the transformed sequence (V0,V2,...), then Vn is a linear combination of U0,...,Un. T(n,m) is the coefficient that goes with Um to get Vn
 A063437 Cardinality of largest critical set in any Latin square of order n
 A063467 Number of idempotent reversible binary (i.e., radius one half) cellular automata of order n. Equivalently, number of loop-noded symmetric 2-colored unique 2-path graphs on n nodes. Equivalently, number of idempotent semicentral bigroupoids of order n.
+A063541 Least number of empty triangles determined by n points in the plane.
+A063542 Least number of empty convex quadrilaterals (4-gons) determined by n points in the plane
+A063544 Smallest number of triangulations of n points in the plane
+A063545 Largest number of triangulations of n points in the plane
+A063546 Largest number of crossing-free Hamiltonian cycles of n points in the plane
+A063548 Largest number of straight line crossing-free spanning trees on n points in the plane
+A063550 Largest number of crossing-free matchings on a set S of n points in the plane, that is, a set of floor(n/2) pairwise non-intersecting segments with endpoints in S having no endpoint in common
+A063551 Maximal number of pairs of elements of an n-set S in the plane that can be separated from S by a straight line.
+A063646 Maximum number of minimum pseudo-triangulations of n points in the plane

@@ -4,7 +4,7 @@ package irvine.oeis.a360;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A360222 a(n) is the number of permutable pieces in a standard n X n X n Rubik&apos;s cube.
+ * A360222 a(n) is the number of permutable pieces in a standard n X n X n Rubik's cube.
  * @author Georg Fischer
  */
 public class A360222 extends GeneratingFunctionSequence {

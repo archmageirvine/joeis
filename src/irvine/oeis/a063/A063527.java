@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063527.
+ * A063527 Numbers that are divisible by all of their 1 and 2 digit substrings.
  * @author Sean A. Irvine
  */
 public class A063527 extends Sequence1 {

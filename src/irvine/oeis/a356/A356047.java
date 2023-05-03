@@ -4,7 +4,7 @@ package irvine.oeis.a356;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A356047 The number of links of a polyline that connects the midpoints of opposite sides of the n-th regular integer hexagon and has the following properties: the first link is 1; each subsequent one is 1 more than the previous one; the angle between adjacent links
+ * A356047 The number of links of a polyline that connects the midpoints of opposite sides of the n-th regular integer hexagon and has the following properties: the first link is 1; each subsequent one is 1 more than the previous one; the angle between adjacent links is equal to Pi/3; links of the same parity are parallel.
  * @author Georg Fischer
  */
 public class A356047 extends GeneratingFunctionSequence {

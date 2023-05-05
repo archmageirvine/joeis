@@ -6,7 +6,7 @@ On-Line Encyclopedia of Integer Sequences](https://oeis.org/) (OEIS).
 
 This is likely the largest coherent collection of programs for OEIS
 sequences beyond the Maple, Mathematica, and Pari programs directly
-associated with many entries.  Currently over 115,000 sequences are
+associated with many entries.  Currently over 150,000 sequences are
 implemented.
 
 Installation

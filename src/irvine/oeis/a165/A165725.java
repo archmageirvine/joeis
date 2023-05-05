@@ -1,4 +1,4 @@
-package irvine.oeis.a124;
+package irvine.oeis.a165;
 // manually 2023-04-16
 
 import irvine.math.z.Z;

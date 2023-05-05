@@ -495,7 +495,9 @@ public final class FactorSequence {
     Z prod = Z.ONE;
     for (final Map.Entry<Z, Factor> f : mFactors.entrySet()) {
       final Z p = f.getKey();
-      prod = prod.multiply(p.pow((f.getValue().mExponent + 1) * (long) degree).subtract(1)).divide(p.pow(degree).subtract(1));
+      if (p.signum() > 0) {
+        prod = prod.multiply(p.pow((f.getValue().mExponent + 1) * (long) degree).subtract(1)).divide(p.pow(degree).subtract(1));
+      }
     }
     return prod;
   }

@@ -86,8 +86,9 @@ public final class Jaguar {
       return EMPTY;
     }
     if (n.signum() < 0) {
-      final FactorSequence res = factor(n.negate());
+      final FactorSequence res = new FactorSequence();
       res.add(-1L, FactorSequence.PRIME);
+      res.merge(factor(n.negate()));
       return res;
     }
     CHEETAH.factor(fs);

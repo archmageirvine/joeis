@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a006.A006369;
 
 /**
- * A349369 Sum of A006369 and its Dirichlet inverse, where A006369 is the inverse of &quot;amusical permutation&quot;, A006368.
+ * A349369 Sum of A006369 and its Dirichlet inverse, where A006369 is the inverse of "amusical permutation", A006368.
  * @author Georg Fischer
  */
 public class A349369 extends AbstractSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002375;
 
 /**
- * A322921 From Goldbach&apos;s conjecture: a(n) is the number of decompositions of 6n into a sum of two primes.
+ * A322921 From Goldbach's conjecture: a(n) is the number of decompositions of 6n into a sum of two primes.
  * @author Georg Fischer
  */
 public class A322921 extends A002375 {

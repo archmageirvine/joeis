@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a083.A083542;
 
 /**
- * A330319 a(n) = Sum_{i=1..n} phi(i)*phi(i+1), where phi(n) = A000010(n) is Euler&apos;s totient function.
+ * A330319 a(n) = Sum_{i=1..n} phi(i)*phi(i+1), where phi(n) = A000010(n) is Euler's totient function.
  * @author Georg Fischer
  */
 public class A330319 extends PartialSumSequence {

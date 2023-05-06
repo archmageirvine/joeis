@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a004.A004718;
 
 /**
- * A323887 Sum of Per N?rg?rd&apos;s &quot;infinity sequence&quot; (A004718) and its Dirichlet inverse (A323886).
+ * A323887 Sum of Per N\u00f8rg\u00e5rd's "infinity sequence" (A004718) and its Dirichlet inverse (A323886).
  * @author Georg Fischer
  */
 public class A323887 extends AbstractSequence {

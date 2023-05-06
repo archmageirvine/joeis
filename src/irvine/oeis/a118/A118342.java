@@ -5,7 +5,7 @@ import irvine.oeis.a108.A108447;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A118341 Self-convolution cube of A108447.
+ * A118342 Self-convolution cube of A108447.
  * @author Georg Fischer
  */
 public class A118342 extends RootSequence {

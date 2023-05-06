@@ -4,7 +4,7 @@ package irvine.oeis.a362;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A362179 allocated for Philippe Del√©ham
+ * A362179 Main diagonal of the square array A058395.
  * @author Georg Fischer
  */
 public class A362179 extends GeneratingFunctionSequence {

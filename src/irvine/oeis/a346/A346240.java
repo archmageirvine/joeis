@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a341.A341512;
 
 /**
- * A346240 Difference between A341512 and its M√∂bius transform.
+ * A346240 Difference between A341512 and its M\u00f6bius transform.
  * @author Georg Fischer
  */
 public class A346240 extends AbstractSequence {

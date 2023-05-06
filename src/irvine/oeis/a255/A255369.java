@@ -7,7 +7,7 @@ import irvine.oeis.a048.A048050;
 import irvine.oeis.a228.A228483;
 
 /**
- * A255369 a(n) = (sigma(n)-n-1)*(2-mu(n)), where sigma(n) is the sum of the divisors of n and mu(n) is the M√∂bius function.
+ * A255369 a(n) = (sigma(n)-n-1)*(2-mu(n)), where sigma(n) is the sum of the divisors of n and mu(n) is the M\u00f6bius function.
  * @author Georg Fischer
  */
 public class A255369 extends AbstractSequence {

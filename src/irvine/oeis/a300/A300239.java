@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a032.A032742;
 
 /**
- * A300239 Difference between A032742 (the largest proper divisor of n) and its M√∂bius transform (A300236).
+ * A300239 Difference between A032742 (the largest proper divisor of n) and its M\u00f6bius transform (A300236).
  * @author Georg Fischer
  */
 public class A300239 extends AbstractSequence {

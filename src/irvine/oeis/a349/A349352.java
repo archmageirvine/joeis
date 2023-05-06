@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a006.A006368;
 
 /**
- * A349352 Sum of A006368, &quot;the amusical permutation&quot;, and its Dirichlet inverse.
+ * A349352 Sum of A006368, "the amusical permutation", and its Dirichlet inverse.
  * @author Georg Fischer
  */
 public class A349352 extends AbstractSequence {

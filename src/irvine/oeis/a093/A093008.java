@@ -7,7 +7,7 @@ import irvine.oeis.a040.A040081;
 import irvine.oeis.a063.A063377;
 
 /**
- * A093008 Smallest number of 1&apos;s to append to the binary representation of n such that primes become nonprimes and nonprimes become primes.
+ * A093008 Smallest number of 1's to append to the binary representation of n such that primes become nonprimes and nonprimes become primes.
  * @author Georg Fischer
  */
 public class A093008 extends AbstractSequence {

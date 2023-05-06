@@ -8,7 +8,7 @@ import irvine.oeis.a008.A008836;
 import irvine.oeis.a126.A126760;
 
 /**
- * A349395 Dirichlet convolution of A126760 with Liouville&apos;s lambda.
+ * A349395 Dirichlet convolution of A126760 with Liouville's lambda.
  * @author Georg Fischer
  */
 public class A349395 extends AbstractSequence {

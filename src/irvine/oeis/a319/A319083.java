@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000203;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
- * A319083 Coefficients of polynomials related to the D&apos;Arcais polynomials and Dedekind&apos;s eta(q) function, triangle read by rows, T(n,k) for 0 &lt;= k &lt;= n.
+ * A319083 Coefficients of polynomials related to the D'Arcais polynomials and Dedekind's eta(q) function, triangle read by rows, T(n,k) for 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A319083 extends PartitionTransformTriangle {

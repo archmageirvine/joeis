@@ -6,7 +6,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a108.A108269;
 
 /**
- * A328981 Indicator function of numbers whose binary representation ends in an even positive number of 0&apos;s.
+ * A328981 Indicator function of numbers whose binary representation ends in an even positive number of 0's.
  * @author Georg Fischer
  */
 public class A328981 extends CharacteristicFunction {

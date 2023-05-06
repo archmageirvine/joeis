@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a060.A060681;
 
 /**
- * A300722 Difference between A060681 (largest difference between consecutive divisors of n as ordered by size) and its M√∂bius transform.
+ * A300722 Difference between A060681 (largest difference between consecutive divisors of n as ordered by size) and its M\u00f6bius transform.
  * @author Georg Fischer
  */
 public class A300722 extends AbstractSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a062.A062373;
 
 /**
- * A353678 a(n) = 1 if the ratio of Euler totient phi to Carmichael&apos;s lambda function is 2, otherwise 0.
+ * A353678 a(n) = 1 if the ratio of Euler totient phi to Carmichael's lambda function is 2, otherwise 0.
  * @author Georg Fischer
  */
 public class A353678 extends CharacteristicFunction {

@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000523;
 import irvine.oeis.a007.A007814;
 
 /**
- * A119387 a(n) is the number of binary digits (1&apos;s and nonleading 0&apos;s) which remain unchanged in their positions when n and (n+1) are written in binary.
+ * A119387 a(n) is the number of binary digits (1's and nonleading 0's) which remain unchanged in their positions when n and (n+1) are written in binary.
  * @author Georg Fischer
  */
 public class A119387 extends AbstractSequence {

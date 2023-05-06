@@ -5,7 +5,7 @@ import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.a099.A099054;
 
 /**
- * A241418 First differences of Arshon&apos;s sequence, cf. A099054.
+ * A241418 First differences of Arshon's sequence, cf. A099054.
  * @author Georg Fischer
  */
 public class A241418 extends DifferenceSequence implements SequenceWithOffset {

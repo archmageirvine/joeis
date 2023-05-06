@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a126.A126760;
 
 /**
- * A347233 Möbius transform of A126760.
+ * A347233 M\u00f6bius transform of A126760.
  * @author Georg Fischer
  */
 public class A347233 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a083.A083866;
 
 /**
- * A361016 a(n) = 1 if A004718(n) = 0, otherwise 0, where A004718 is the Danish composer Per N?rg?rd&apos;s &quot;infinity sequence&quot;.
+ * A361016 a(n) = 1 if A004718(n) = 0, otherwise 0, where A004718 is the Danish composer Per N\u00f8rg\u00e5rd's "infinity sequence".
  * @author Georg Fischer
  */
 public class A361016 extends CharacteristicFunction {

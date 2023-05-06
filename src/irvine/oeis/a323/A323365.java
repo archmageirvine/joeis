@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002487;
 import irvine.oeis.a317.A317843;
 
 /**
- * A323365 Sum of Stern&apos;s Diatomic sequence, A002487 and its Dirichlet inverse, A317843.
+ * A323365 Sum of Stern's Diatomic sequence, A002487 and its Dirichlet inverse, A317843.
  * @author Georg Fischer
  */
 public class A323365 extends AbstractSequence {

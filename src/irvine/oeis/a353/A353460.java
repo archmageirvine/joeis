@@ -8,7 +8,7 @@ import irvine.oeis.a126.A126760;
 import irvine.oeis.a349.A349134;
 
 /**
- * A353460 Dirichlet convolution of A126760 with A349134 (the Dirichlet inverse of Kimberling&apos;s paraphrases).
+ * A353460 Dirichlet convolution of A126760 with A349134 (the Dirichlet inverse of Kimberling's paraphrases).
  * @author Georg Fischer
  */
 public class A353460 extends AbstractSequence {

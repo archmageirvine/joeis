@@ -840,4 +840,16 @@ public final class FactorSequence {
     final Z[] f = toZArray();
     return f.length == 0 ? Z.ONE : f[0];
   }
+
+  /**
+   * Return the Mobius function of this number.
+   * @return Mobius function
+   */
+  public int mobius() {
+    if (maxExponent() > 1) {
+      return 0;
+    }
+    completeOrException();
+    return (omega() & 1) == 0 ? 1 : -1;
+  }
 }

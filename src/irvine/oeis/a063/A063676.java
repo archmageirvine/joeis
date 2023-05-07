@@ -14,6 +14,10 @@ public class A063676 extends Sequence1 {
 
   private Z[] mA = {};
 
+  protected Z select(final Z v, final Z b) {
+    return v;
+  }
+
   @Override
   public Z next() {
     if (mA.length == 0) {
@@ -44,7 +48,7 @@ public class A063676 extends Sequence1 {
         }
         if (max.signum() > 0) {
           mA[n] = mA[n - 1].add(max);
-          return mA[n];
+          return select(mA[n], start);
         }
         start = start.divide2(); // try one less element
       }

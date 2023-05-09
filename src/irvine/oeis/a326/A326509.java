@@ -4,7 +4,7 @@ package irvine.oeis.a326;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A326509 Number of (binary) max-heaps on n elements from the set {0,1} containing exactly eight 0&apos;s.
+ * A326509 Number of (binary) max-heaps on n elements from the set {0,1} containing exactly eight 0's.
  * @author Georg Fischer
  */
 public class A326509 extends HolonomicRecurrence {

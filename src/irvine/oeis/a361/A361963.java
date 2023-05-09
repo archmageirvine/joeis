@@ -4,7 +4,7 @@ package irvine.oeis.a361;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A361963 Total number of 3-Fuss-skew paths of semilength n
+ * A361963 Total number of 3-Fuss-skew paths of semilength n.
  * @author Georg Fischer
  */
 public class A361963 extends HolonomicRecurrence {

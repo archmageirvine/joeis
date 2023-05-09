@@ -4,7 +4,7 @@ package irvine.oeis.a361;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A361964 Total number of peaks in 2-Fuss-skew paths of semilength n
+ * A361964 Total number of peaks in 2-Fuss-skew paths of semilength n.
  * @author Georg Fischer
  */
 public class A361964 extends HolonomicRecurrence {

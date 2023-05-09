@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a058.A058870;
 
 /**
- * A063687 Number of 2-trees rooted at any symmetric edge.
+ * A063689 Number of 2-trees rooted at a triangle with 3 similar edges.
  * @author Sean A. Irvine
  */
 public class A063689 extends A063687 {

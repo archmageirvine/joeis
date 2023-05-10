@@ -6,7 +6,7 @@ import irvine.oeis.a126.A126760;
 
 /**
  * A254048 a(n) = A126760(A007494(n)).
- * a(4n) = A126760(n); a(4n+1) = A126760(3n+1); a(4n+2) = A126760(2n+1); a(4n+3) = 2n+2.
+ * <code>a(4n) = A126760(n); a(4n+1) = A126760(3n+1); a(4n+2) = A126760(2n+1); a(4n+3) = 2n+2.</code>
  * @author Georg Fischer
  */
 public class A254048 extends A126760 {

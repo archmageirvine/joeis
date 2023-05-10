@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A063719 Numbers n such that usigma(cototient(n)) is a prime.
+ * A063720 Number of segments lit in a 7-segment display (as on a calculator) to represent the number n, variant 0: '6', '7' and '9' use 5, 3 and 5 segments, respectively.
  * @author Sean A. Irvine
  */
 public class A063720 extends Sequence0 {

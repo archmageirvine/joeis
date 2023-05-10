@@ -4,7 +4,7 @@ package irvine.oeis.a357;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A357512 a(n) = Sum_{k = 0..n} k^5 * binomial(n,k)^2 * binomial(n+k,k)^2
+ * A357512 a(n) = Sum_{k = 0..n} k^5 * binomial(n,k)^2 * binomial(n+k,k)^2.
  * @author Georg Fischer
  */
 public class A357512 extends HolonomicRecurrence {

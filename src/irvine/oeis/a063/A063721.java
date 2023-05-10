@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063721.
+ * A063721 Number of proper divisors of n is a square and sets a new record for such squares.
  * @author Sean A. Irvine
  */
 public class A063721 extends Sequence1 {

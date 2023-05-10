@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000041;
 import irvine.oeis.transform.GeneralizedEulerTransform;
 
 /**
- * A358829 Number of twice-partitions of n with no (1)&apos;s.
+ * A358829 Number of twice-partitions of n with no (1)'s.
  * G.f.: <code>Product_{k&gt;=2} (1/(1-A000041(k)*x^k))</code>
  * @author Georg Fischer
  */

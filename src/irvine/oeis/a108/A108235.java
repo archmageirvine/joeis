@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002849;
 
 /**
  * A108235 Number of partitions of {1,2,...,3n} into n triples (X,Y,Z) each satisfying X+Y=Z.
- * a(n) = 0 unless n == 0 or 1 (mod 4). For n == 0 or 1 (mod 4), a(n) = A002849(3n).
+ * <code>a(n) = 0 unless n == 0 or 1 (mod 4). For n == 0 or 1 (mod 4), a(n) = A002849(3n).</code>
  * @author Georg Fischer
  */
 public class A108235 extends A002849 {

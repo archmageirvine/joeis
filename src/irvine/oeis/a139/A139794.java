@@ -9,7 +9,7 @@ import irvine.oeis.a002.A002366;
 
 /**
  * A139794 Interleaved reading of catheti and hypotenuses of Gaussian triangles with prime number hypotenuse.
- * a(3n+1)= A002366(n). a(3n+2)=A002365(n). a(3n+3)=A002144(n).
+ * <code>a(3n+1)= A002366(n). a(3n+2)=A002365(n). a(3n+3)=A002144(n).</code>
  * @author Georg Fischer
  */
 public class A139794 extends Sequence1 {

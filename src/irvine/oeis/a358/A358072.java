@@ -4,7 +4,7 @@ package irvine.oeis.a358;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A358072 a(n) is the number of &quot;merger histories&quot; of n elements (see A256006) where at most 3 elements can merge at the same time.
+ * A358072 a(n) is the number of "merger histories" of n elements (see A256006) where at most 3 elements can merge at the same time.
  * @author Georg Fischer
  */
 public class A358072 extends HolonomicRecurrence {

@@ -1290,4 +1290,13 @@ public abstract class CR extends Number implements Comparable<CR> {
     return Bessel.besselY0(this);
   }
 
+  /**
+   * If the condition is true add the value <code>a</code> otherwise subtract it.
+   * @param condition true for addition, false for subtraction
+   * @param a value to add or subtract
+   * @return this integer plus or minus the given value
+   */
+  public CR signedAdd(final boolean condition, final CR a) {
+    return condition ? add(a) : subtract(a);
+  }
 }

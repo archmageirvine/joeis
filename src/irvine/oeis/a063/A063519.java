@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063519 Least simultaneous solutions of Phi[x+d]=Phi[x]+d and Sigma[x+d]=Sigma[x]+d, where d=2n.
+ * A063519 Least composite k such that phi(k+12n) = phi(k)+12n and sigma(k+12n) = sigma(k) + 12n where phi is the Euler totient function and sigma is the sum of divisors function.
  * @author Sean A. Irvine
  */
 public class A063519 extends Sequence1 {

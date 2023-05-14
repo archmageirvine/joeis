@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A103556 Decimal expansion of solution to x*11^x=1.
+ * A103556 Decimal expansion of solution to x*11^x = 1.
  * Equation; x*11^x-(1)
  * @author Georg Fischer
  */

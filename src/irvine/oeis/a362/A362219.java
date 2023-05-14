@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A362219 allocated for Wolfe Padawer.
+ * A362219 Decimal expansion of smallest positive solution to tan(x) = arctan(x).
  * @author Sean A. Irvine
  */
 public class A362219 extends DecimalExpansionSequence {

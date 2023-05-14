@@ -5,6 +5,7 @@ import java.util.TreeMap;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.util.string.AbstractLanguage;
 import irvine.util.string.English;
 
 /**
@@ -15,7 +16,21 @@ public class A000052 extends Sequence1 {
 
   private int mLow = 0;
   private int mHigh = 10;
+  private final AbstractLanguage mLanguage;
   private final TreeMap<String, Integer> mMap = new TreeMap<>();
+
+  protected A000052(final AbstractLanguage language) {
+    mLanguage = language;
+  }
+
+  /** Construct the sequence. */
+  public A000052() {
+    this(English.SINGLETON);
+  }
+
+  protected String remap(final String s) {
+    return s;
+  }
 
   @Override
   public Z next() {
@@ -24,7 +39,7 @@ public class A000052 extends Sequence1 {
         throw new UnsupportedOperationException();
       }
       for (int k = mLow; k < mHigh; ++k) {
-        mMap.put(English.SINGLETON.toRawText(k), k);
+        mMap.put(remap(mLanguage.toRawText(k)), k);
       }
       mLow = mHigh;
       mHigh *= 10;

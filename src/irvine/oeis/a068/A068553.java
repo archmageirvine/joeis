@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a048.A048619;
 
 /**
- * A068553 a(n) = lcm(1,2,...,2n) / (n*binomial(2n, n)).
+ * A068553 a(n) = lcm(1,2,...,2*n) / (n*binomial(2*n, n)).
  * @author Georg Fischer
  */
 public class A068553 extends A048619 {

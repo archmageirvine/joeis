@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A104754 Decimal expansion of solution to x^(6^x)=6.
+ * A104754 Decimal expansion of solution to x^(6^x) = 6.
  * Equation; x^(6^x)-(6)
  * @author Georg Fischer
  */

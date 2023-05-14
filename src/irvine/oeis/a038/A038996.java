@@ -10,7 +10,7 @@ import irvine.oeis.a001.A001016;
 
 
 /**
- * A038996 Sublattices of index n in generic 9-dimensional lattice.
+ * A038996 Number of sublattices of index n in generic 9-dimensional lattice.
  * @author Georg Fischer
  */
 public class A038996 extends Sequence1 {

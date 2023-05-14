@@ -2184,3 +2184,4 @@ A063550 Largest number of crossing-free matchings on a set S of n points in the 
 A063551 Maximal number of pairs of elements of an n-set S in the plane that can be separated from S by a straight line.
 A063646 Maximum number of minimum pseudo-triangulations of n points in the plane
 A063666 Euclidean order types: number of realizable order types of n points in the plane
+A063773 Smallest number that is centered polygonal in exactly n ways

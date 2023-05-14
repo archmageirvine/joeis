@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A104750 Decimal expansion of solution to x^(2^x)=2.
+ * A104750 Decimal expansion of solution to x^(2^x) = 2.
  * Equation; x^(2^x)-(2)
  * @author Georg Fischer
  */

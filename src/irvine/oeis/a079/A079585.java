@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A079585 Decimal expansion of c = (7-sqrt(5))/2 = 2.3819660112501...
+ * A079585 Decimal expansion of c = (7-sqrt(5))/2.
  * Formula: (7-sqrt(5))/2
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007617;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A063512 Least number starting a chain of exactly 2n-1 consecutive integers that do not have totient-inverses.
+ * A063512 Least number starting a chain of exactly 2n-1 consecutive integers that do not have totient inverses.
  * @author Sean A. Irvine
  */
 public class A063512 extends A007617 {

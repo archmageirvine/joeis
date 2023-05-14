@@ -528,6 +528,11 @@ public final class SequenceFactory {
     // Does what it can to ensure terms are flushed to output as soon as possible
     try (final OutputStream out = new BufferedOutputStream(new FileOutputStream(FileDescriptor.out))) {
       process(args, out, true);
+    } catch (final IOException e) {
+      if (!e.getMessage().contains("Broken pipe")) {
+        throw e;
+      }
+      // Broken pipe usually means consuming process terminated
     }
   }
 }

@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A046337.
+ * A063747 Sign of n-th coefficient of power series for 1/Gamma(1-x) where Gamma is the Gamma function.
  * @author Sean A. Irvine
  */
 public class A063747 extends Sequence0 {

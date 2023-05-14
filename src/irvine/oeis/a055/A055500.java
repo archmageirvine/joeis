@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A055500 a(0)=1, a(1)=1, a(n) = largest prime &lt;= a(n-1)+a(n-2).
+ * A055500 a(0)=1, a(1)=1, a(n) = largest prime &lt;= a(n-1) + a(n-2).
  * @author Sean A. Irvine
  */
 public class A055500 extends Sequence0 {

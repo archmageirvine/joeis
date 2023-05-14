@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A058770 Numbers n such that n * (1+i)^n + 1 is a Gaussian prime.
+ * A058770 Numbers k such that k * (1+i)^k + 1 is a Gaussian prime.
  * @author Sean A. Irvine
  */
 public class A058770 extends Sequence1 {

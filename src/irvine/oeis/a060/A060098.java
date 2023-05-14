@@ -6,7 +6,7 @@ import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 
 /**
- * A060098 Triangle of partial sums of column sequences of triangle A060086.
+ * A060098 Triangle of partial sums of column sequences of triangle A060086, read by rows.
  *
  * @author Georg Fischer
  */

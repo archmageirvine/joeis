@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A046337.
+ * A063746 Triangle read by rows giving number of partitions of k (k=0 .. n^2) with Ferrers plot fitting in an n X n box.
  * @author Sean A. Irvine
  */
 public class A063746 extends Sequence0 {

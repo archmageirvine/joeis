@@ -6,7 +6,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence0;
 
 /**
- * A005161 Number of alternating sign 2n+1 X 2n+1 matrices symmetric with respect to both horizontal and vertical axes.
+ * A005161 Number of alternating sign 2n+1 X 2n+1 matrices symmetric with respect to both horizontal and vertical axes (VHSASM's).
  * @author Sean A. Irvine
  */
 public class A005161 extends Sequence0 implements Conjectural {

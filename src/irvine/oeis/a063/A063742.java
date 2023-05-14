@@ -4,7 +4,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a005.A005278;
 
 /**
- * A063692.
+ * A063742 Cototients: numbers k such that x - phi(x) = k has at least one solution.
  * @author Sean A. Irvine
  */
 public class A063742 extends ComplementSequence {

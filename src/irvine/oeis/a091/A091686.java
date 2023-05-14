@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A091686 0^n+((n-9)/9)(1-10^n).
+ * A091686 a(n) = 0^n + ((n-9)/9)*(1-10^n).
  * @author Georg Fischer
  */
 public class A091686 extends HolonomicRecurrence {

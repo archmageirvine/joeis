@@ -109,4 +109,13 @@ public final class Spanish extends AbstractLanguage {
     return TENS[tens] + " y " + SMALL[units];
   }
 
+  /**
+   * Print numbers.
+   * @param args numerical values
+   */
+  public static void main(final String[] args) {
+    for (final String s : args) {
+      System.out.println(SINGLETON.toText(Integer.parseInt(s)));
+    }
+  }
 }

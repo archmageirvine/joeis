@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A004119 a(0)=1; thereafter a(n) = 3*2^(n-1)+1.
+ * A004119 a(0) = 1; thereafter a(n) = 3*2^(n-1) + 1.
  * @author Sean A. Irvine
  */
 public class A004119 extends Sequence0 {

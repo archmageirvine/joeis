@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000584;
 
 
 /**
- * A038993 Sublattices of index n in generic 6-dimensional lattice.
+ * A038993 Number of sublattices of index n in generic 6-dimensional lattice.
  * @author Georg Fischer
  */
 public class A038993 extends Sequence1 {

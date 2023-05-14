@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A034837 Numbers that are divisible by first digit.
+ * A034837 Numbers that are divisible by the first, i.e., the leftmost, digit.
  * @author Sean A. Irvine
  */
 public class A034837 extends Sequence1 {

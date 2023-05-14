@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a051.A051953;
 
 /**
- * A063507.
+ * A063748 Greatest x that is a solution to x-phi(x)=n or zero if there is no solution, where phi(x) is Euler's totient function.
  * @author Sean A. Irvine
  */
 public class A063748 extends A051953 {

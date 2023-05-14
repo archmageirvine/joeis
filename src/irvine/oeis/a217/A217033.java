@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A217033 E.g.f.: 1/(1-log(1-log(1-x))).
+ * A217033 Expansion of e.g.f. 1/(1 - log(1 - log(1-x))).
  * E.g.f.: 1/(1-log(1-log(1-x)))
  * @author Georg Fischer
  */

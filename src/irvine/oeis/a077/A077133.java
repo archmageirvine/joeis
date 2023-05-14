@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A077133 Difference between the sum of odd-indexed primes and even-indexed primes.
+ * A077133 a(n) is the difference between the sum of the first n even-indexed primes and the sum of the first n odd-indexed primes.
  * @author Georg Fischer
  */
 public class A077133 extends Sequence1 {

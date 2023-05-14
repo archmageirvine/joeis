@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A036262 Triangle of numbers arising from Gilbreath's conjecture: successive absolute differences of primes read by antidiagonals upwards.
+ * A036262 Array of numbers read by upward antidiagonals, arising from Gilbreath's conjecture: leading row lists the primes; the following rows give absolute values of differences of previous row.
  * @author Sean A. Irvine
  */
 public class A036262 extends A000040 {

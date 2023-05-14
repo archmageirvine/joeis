@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046337.
+ * A063745 Even numbers with an even number of prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A063745 extends Sequence1 {

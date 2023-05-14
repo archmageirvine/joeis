@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002262;
 
 /**
- * A032531 a(n) = number of a(i) for 0&lt;=i&lt;n that are equal to A002262(n).
+ * A032531 An inventory sequence: triangle read by rows, where T(n, k), 0 &lt;= k &lt;= n, records the number of k's thus far in the flattened sequence.
  * @author Sean A. Irvine
  */
 public class A032531 extends MemorySequence {

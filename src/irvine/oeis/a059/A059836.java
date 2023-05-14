@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A059836 Triangle T(s,t), s&gt;=1, 1&lt;=t&lt;=s (see formula line).
+ * A059836 Triangle T(s,t), s &gt;= 1, 1 &lt;= t &lt;= s (see formula line).
  * @author Sean A. Irvine
  */
 public class A059836 extends Sequence1 {

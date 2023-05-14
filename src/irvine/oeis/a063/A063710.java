@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063710 Numbers k such that e(k) = s(k), where e(k) = eulerphi(sigma(k)+k) and s(n) = sigma(k-eulerphi(k)).
+ * A063710 Numbers k such that phi(sigma(k)+k) = sigma(k-phi(k)), where phi is A000010 and sigma is A000203.
  * @author Sean A. Irvine
  */
 public class A063710 extends Sequence1 {

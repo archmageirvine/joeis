@@ -4,7 +4,7 @@ import irvine.oeis.InverseSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A063692.
+ * A063741 Smallest number whose inverse cototient set has n elements.
  * @author Sean A. Irvine
  */
 public class A063741 extends InverseSequence {

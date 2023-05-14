@@ -6,7 +6,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A063692.
+ * A063740 Number of integers k such that cototient(k) = n.
  * @author Sean A. Irvine
  */
 public class A063740 extends Sequence2 {

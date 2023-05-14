@@ -10,7 +10,7 @@ import irvine.oeis.a001.A001017;
 
 
 /**
- * A038997 Sublattices of index n in generic 10-dimensional lattice.
+ * A038997 Number of sublattices of index n in generic 10-dimensional lattice.
  * @author Georg Fischer
  */
 public class A038997 extends Sequence1 {

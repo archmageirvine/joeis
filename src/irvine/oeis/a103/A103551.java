@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A103551 Decimal expansion of solution to x*6^x=1.
+ * A103551 Decimal expansion of solution to x*6^x = 1.
  * Equation; x*6^x-(1)
  * @author Georg Fischer
  */

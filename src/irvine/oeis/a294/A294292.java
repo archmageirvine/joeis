@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A294292 E.g.f.: exp(1/((1+x)*(1+x^2)*(1+x^3)*(1+x^4)) - 1).
+ * A294292 Expansion of e.g.f. exp(1/((1+x)*(1+x^2)*(1+x^3)*(1+x^4)) - 1).
  * E.g.f.: exp(1/((1+x)*(1+x^2)*(1+x^3)*(1+x^4)) - 1)
  * @author Georg Fischer
  */

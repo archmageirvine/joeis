@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A081910 4^n*(n^2-n+32)/32.
+ * A081910 a(n) = 4^n*(n^2-n+32)/32.
  * @author Sean A. Irvine
  */
 public class A081910 extends LinearRecurrence {

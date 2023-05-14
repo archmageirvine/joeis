@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A051889 a(n) = min{m: sum(binomial(n,i)*(1/6)^i*(1-1/6)^(n-i),i=0..m)&gt;=.95}.
+ * A051889 a(n) = min{m: Sum_{j=0..m} binomial(n,j)*(1/6)^j*(1-1/6)^(n-i) &gt;= 0.95}.
  * @author Sean A. Irvine
  */
 public class A051889 extends Sequence0 {

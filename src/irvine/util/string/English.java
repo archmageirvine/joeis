@@ -226,11 +226,8 @@ public final class English extends AbstractLanguage {
    * @param args numerical values
    */
   public static void main(final String[] args) {
-    for (int k = 1; k < 100000000; ++k) {
-      System.out.println(k + " " + SINGLETON.toText(k).replaceAll("[ \\-]", ""));
+    for (final String s : args) {
+      System.out.println(SINGLETON.toText(Integer.parseInt(s)));
     }
-//    for (final String s : args) {
-//      System.out.println(SINGLETON.toText(Integer.parseInt(s)));
-//    }
   }
 }

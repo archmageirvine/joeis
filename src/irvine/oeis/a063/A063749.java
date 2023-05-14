@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063507.
+ * A063749 a(n) = floor((A000005(n)*(n+1)/2) - A000203(n)).
  * @author Sean A. Irvine
  */
 public class A063749 extends Sequence1 {

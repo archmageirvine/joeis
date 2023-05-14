@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063692.
+ * A063744 a(n) = sigma(a(n-1)) * number of divisors of a(n-1), a(1)=2.
  * @author Sean A. Irvine
  */
 public class A063744 extends Sequence1 {

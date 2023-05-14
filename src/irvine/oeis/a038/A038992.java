@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000583;
 
 
 /**
- * A038992 Sublattices of index n in generic 5-dimensional lattice.
+ * A038992 Number of sublattices of index n in generic 5-dimensional lattice.
  * @author Georg Fischer
  */
 public class A038992 extends Sequence1 {

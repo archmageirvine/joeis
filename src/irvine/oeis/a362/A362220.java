@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A362220 allocated for Wolfe Padawer.
+ * A362220 Decimal expansion of smallest positive root of x = tan(tan(x)).
  * @author Sean A. Irvine
  */
 public class A362220 extends DecimalExpansionSequence {

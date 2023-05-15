@@ -5,20 +5,19 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063831 Sum of cubes of divisors is a square.
+ * A063806 Numbers with a prime number of proper divisors.
  * @author Sean A. Irvine
  */
-public class A063831 extends Sequence1 {
+public class A063806 extends Sequence1 {
 
-  private long mN = 0;
+  private long mN = 3;
 
   @Override
   public Z next() {
     while (true) {
-      if (Jaguar.factor(++mN).sigma(3).isSquare()) {
+      if (Jaguar.factor(++mN).sigma0().subtract(1).isProbablePrime()) {
         return Z.valueOf(mN);
       }
     }
   }
 }
-

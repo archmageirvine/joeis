@@ -2185,3 +2185,9 @@ A063551 Maximal number of pairs of elements of an n-set S in the plane that can 
 A063646 Maximum number of minimum pseudo-triangulations of n points in the plane
 A063666 Euclidean order types: number of realizable order types of n points in the plane
 A063773 Smallest number that is centered polygonal in exactly n ways
+A063800 Number of nonisomorphic oriented matroids with n points in 2 dimensions
+A063801 Number of nonisomorphic oriented matroids with n points in 3 dimensions
+A063802 Number of nonisomorphic oriented matroids with n points in 4 dimensions
+A063803 Number of nonisomorphic oriented matroids with n points in 5 dimensions
+A063804 Triangle T(n,k) (n >= 3, k = 1..n-2) read by rows, giving number of nonisomorphic oriented matroids with n points in n-k dimensions.
+A063805 Number of nonisomorphic oriented matroids with n points in dimensions 2 through n-1

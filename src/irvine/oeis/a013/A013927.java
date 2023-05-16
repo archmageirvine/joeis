@@ -19,21 +19,18 @@ public class A013927 extends Sequence1 {
   private int[][] mD2Home;
 
   private static class State {
-    private final int[][] mCard;
     private int mLastK = 0;
     private int mLastD = 0;
+    private final int[] mCard;
 
     private State(final int n) {
-      mCard = new int[n][2];
+      mCard = new int[2 * n];
     }
 
     private State(final State s) {
-      mCard = new int[s.mCard.length][2];
-      for (int k = 0; k < mCard.length; ++k) {
-        mCard[k] = Arrays.copyOf(s.mCard[k], 2);
-      }
       mLastK = s.mLastK;
       mLastD = s.mLastD;
+      mCard = Arrays.copyOf(s.mCard, s.mCard.length);
     }
   }
 
@@ -43,7 +40,7 @@ public class A013927 extends Sequence1 {
   private void dumptrace(final int lvl) {
     for (int l = 0; l <= lvl; l++) {
       for (int k = 0; k < mN; k++) {
-        System.out.printf("{%d,%d} ", mTrace[l].mCard[k][0], mTrace[l].mCard[k][1]);
+        System.out.printf("{%d,%d} ", mTrace[l].mCard[2 * k], mTrace[l].mCard[2 * k + 1]);
       }
       System.out.println();
     }
@@ -54,8 +51,8 @@ public class A013927 extends Sequence1 {
   private int dist2target(final State s) {
     int d = 0;
     for (int k = 0; k < mN; k++) {
-      d += mD2Home[k][s.mCard[k][0]];
-      d += mD2Home[k][s.mCard[k][1]];
+      d += mD2Home[k][s.mCard[2 * k]];
+      d += mD2Home[k][s.mCard[2 * k + 1]];
     }
     return (d + 1) / 2;
   }
@@ -82,16 +79,16 @@ public class A013927 extends Sequence1 {
 
     for (int k = kstart; k < mN; k++) {
       for (int i = 0; i < 2; i++) {
-        if (i < 1 || mTrace[lvl].mCard[k - 1][0] != mTrace[lvl].mCard[k - 1][1]) {
+        if (i < 1 || mTrace[lvl].mCard[2 * k - 2] != mTrace[lvl].mCard[2 * k - 1]) {
           for (int j = 0; j < 2; j++) {
-            if (j < 1 || mTrace[lvl].mCard[k][0] != mTrace[lvl].mCard[k][1]) {
+            if (j < 1 || mTrace[lvl].mCard[2 * k] != mTrace[lvl].mCard[2 * k + 1]) {
               final State s = new State(mTrace[lvl]);
-              final int z = s.mCard[k - 1][i];
-              s.mCard[k - 1][i] = s.mCard[k][j];
-              s.mCard[k][j] = z;
+              final int z = s.mCard[2 * k - 2 + i];
+              s.mCard[2 * k - 2 + i] = s.mCard[2 * k + j];
+              s.mCard[2 * k + j] = z;
 
               // Empirically just ">" does it faster, alas could not prove optimality (yet).
-              if (s.mCard[k - 1][i] != s.mCard[k][j]) {
+              if (s.mCard[2 * k - 2 + i] != s.mCard[2 * k + j]) {
                 final int newd = dist2target(s);
                 s.mLastK = k;
                 s.mLastD = newd;
@@ -119,8 +116,8 @@ public class A013927 extends Sequence1 {
       }
     }
     for (int k = 0; k < mN; k++) {
-      s.mCard[k][0] = k + 1;
-      s.mCard[k][1] = k + 1;
+      s.mCard[2 * k] = k + 1;
+      s.mCard[2 * k + 1] = k + 1;
     }
     s.mLastK = -1;
     s.mLastD = dist2target(s);

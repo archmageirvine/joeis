@@ -886,7 +886,6 @@ A013630 Triangle of coefficients of polynomials arising as numerators of certain
 A013639 Brund-Steinmetz permutations, insufficient detail
 A013659 Initialized continued fraction for sqrt(n-th nonsquare) has period (1,a(n)), don't understand
 A013704 Terms in perturbation solution of a heat transfer problem
-A013927 Begin with 2n cards in n piles of 2, the piles being {1,1},{2,2},{3,3},...,{n,n}. How many transpositions of adjacent (single) cards are needed to reverse the order of the piles?, insufficient detail
 A013976 Number of tournaments on n nodes with a unique winner, insufficient detail
 A014088 Birthday problem, have an implementation but it is stupidly slow
 A014315 Number of permutations of squarefree monomials of degree n in n non-commutative variables that are compatible with a non-commutative monomial order (in the Groebner basis sense), insufficient detail

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010760 Maximal cycle length for a ring of n binary cellular automata.
+ * A010760 Duplicate of A085587.
  * @author Sean A. Irvine
  */
 public class A010760 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060746 Absolute value of numerator of non-Euler-constant term of Laurent expansion of Gamma function at s=-n.
+ * A060746 Absolute value of numerator of non-Euler-constant term of Laurent expansion of Gamma function at s = -n.
  * @author Sean A. Irvine
  */
 public class A060746 extends Sequence0 {

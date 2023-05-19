@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000001;
 
 /**
- * A054396 Numbers n such that there are precisely 4 groups of order n.
+ * A054396 Numbers m such that there are precisely 4 groups of order m.
  * @author Sean A. Irvine
  */
 public class A054396 extends FilterPositionSequence {

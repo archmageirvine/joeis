@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A037089 Lexicographically earliest strictly increasing decimal autovarious sequence: a(n) = number of distinct n-digit endings (left-zero-padded) of elements in the sequence.
+ * A037089 Lexicographically earliest strictly increasing decimal autovarious sequence: a(n) = number of distinct n-digit endings (left-zero-padded) of terms in the sequence.
  * @author Sean A. Irvine
  */
 public class A037089 extends MemorySequence {

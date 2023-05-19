@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A361417 allocated for Zhining Yang.
+ * A361417 a(n) is the least integer z for which there is a triple (x,y,z) satisfying x^3 + n*x*y + y^3 = z^3 and 0 &lt; x &lt; y &lt; z.
  * @author Sean A. Irvine
  */
 public class A361417 extends Sequence1 {

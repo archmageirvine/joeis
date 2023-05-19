@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A046847 Numbers n such that n*2^n - (n-1) is prime.
+ * A046847 Numbers k such that k*2^k - (k-1) is prime.
  * @author Sean A. Irvine
  */
 public class A046847 extends Sequence1 {

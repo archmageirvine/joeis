@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A201363 Numbers n such that (2^n - n - 1)*2^n - 1 is prime.
+ * A201363 Numbers k such that (2^k - k - 1)*2^k - 1 is prime.
  *
  * @author Georg Fischer
  */

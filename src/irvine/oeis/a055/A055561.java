@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055561 Numbers n such that there are precisely 3 groups of order n.
+ * A055561 Numbers m such that there are precisely 3 groups of order m.
  * @author Sean A. Irvine
  */
 public class A055561 extends Sequence1 {

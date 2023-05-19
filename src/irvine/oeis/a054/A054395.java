@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A054395 Numbers n such that there are precisely 2 groups of order n.
+ * A054395 Numbers m such that there are precisely 2 groups of order m.
  * @author Sean A. Irvine
  */
 public class A054395 extends Sequence1 {

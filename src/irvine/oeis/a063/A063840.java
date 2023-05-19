@@ -6,18 +6,21 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063794 Numbers k such that usigma(k) = k + phi(k).
+ * A063840 Numbers k such that sigma(k) - usigma(k) is a square and sets a new record for such squares.
  * @author Sean A. Irvine
  */
-public class A063794 extends Sequence1 {
+public class A063840 extends Sequence1 {
 
-  private long mN = 1;
+  private Z mRecord = Z.NEG_ONE;
+  private long mN = 0;
 
   @Override
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      if (fs.unitarySigma().equals(fs.phi().add(mN))) {
+      final Z s = fs.sigma().subtract(fs.unitarySigma());
+      if (s.compareTo(mRecord) > 0 && s.isSquare()) {
+        mRecord = s;
         return Z.valueOf(mN);
       }
     }

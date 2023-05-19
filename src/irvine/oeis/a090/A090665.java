@@ -5,7 +5,7 @@ import irvine.oeis.a054.A054255;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A090665 Triangle read by rows: T(n,k) = number of preferential arrangements of n things beginning with k.
+ * A090665 Triangle read by rows: T(n,k) = number of preferential arrangements of n things where the first object has rank k.
  * @author Georg Fischer
  */
 public class A090665 extends Transpose {

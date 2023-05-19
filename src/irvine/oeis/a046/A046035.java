@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a019.A019518;
 
 /**
- * A046035 Numbers n such that the concatenation of the first n primes (A019518) is a prime.
+ * A046035 Numbers k such that the concatenation of the first k primes (A019518) is a prime.
  * @author Sean A. Irvine
  */
 public class A046035 extends A019518 {

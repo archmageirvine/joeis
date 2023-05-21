@@ -38,8 +38,8 @@ public class A013927 extends Sequence1 {
 
 
   private void dumptrace(final int lvl) {
-    for (int l = 0; l <= lvl; l++) {
-      for (int k = 0; k < mN; k++) {
+    for (int l = 0; l <= lvl; ++l) {
+      for (int k = 0; k < mN; ++k) {
         System.out.printf("{%d,%d} ", mTrace[l].mCard[2 * k], mTrace[l].mCard[2 * k + 1]);
       }
       System.out.println();
@@ -50,9 +50,9 @@ public class A013927 extends Sequence1 {
   /* Lower bound on required number of steps to reach target */
   private int dist2target(final State s) {
     int d = 0;
-    for (int k = 0; k < mN; k++) {
-      d += mD2Home[k][s.mCard[2 * k]];
-      d += mD2Home[k][s.mCard[2 * k + 1]];
+    for (int k = 0, j = 0; k < mN; ++k) {
+      d += mD2Home[k][s.mCard[j++]];
+      d += mD2Home[k][s.mCard[j++]];
     }
     return (d + 1) / 2;
   }
@@ -77,10 +77,10 @@ public class A013927 extends Sequence1 {
       kstart = 1;
     }
 
-    for (int k = kstart; k < mN; k++) {
-      for (int i = 0; i < 2; i++) {
+    for (int k = kstart; k < mN; ++k) {
+      for (int i = 0; i < 2; ++i) {
         if (i < 1 || mTrace[lvl].mCard[2 * k - 2] != mTrace[lvl].mCard[2 * k - 1]) {
-          for (int j = 0; j < 2; j++) {
+          for (int j = 0; j < 2; ++j) {
             if (j < 1 || mTrace[lvl].mCard[2 * k] != mTrace[lvl].mCard[2 * k + 1]) {
               final State s = new State(mTrace[lvl]);
               final int z = s.mCard[2 * k - 2 + i];
@@ -110,12 +110,12 @@ public class A013927 extends Sequence1 {
     mD2Home = new int[mN][mN + 1];
     mTrace = new State[max + 1];
     final State s = new State(mN);
-    for (int x = 0; x < mN; x++) {
-      for (int y = 1; y < mN + 1; y++) {
+    for (int x = 0; x < mN; ++x) {
+      for (int y = 1; y < mN + 1; ++y) {
         mD2Home[x][y] = Math.abs(y - (mN - x));
       }
     }
-    for (int k = 0; k < mN; k++) {
+    for (int k = 0; k < mN; ++k) {
       s.mCard[2 * k] = k + 1;
       s.mCard[2 * k + 1] = k + 1;
     }

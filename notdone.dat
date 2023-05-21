@@ -2190,3 +2190,15 @@ A063802 Number of nonisomorphic oriented matroids with n points in 4 dimensions
 A063803 Number of nonisomorphic oriented matroids with n points in 5 dimensions
 A063804 Triangle T(n,k) (n >= 3, k = 1..n-2) read by rows, giving number of nonisomorphic oriented matroids with n points in n-k dimensions.
 A063805 Number of nonisomorphic oriented matroids with n points in dimensions 2 through n-1
+A063851 Triangle T(n,k) (n >= 3, k = 1..n-2) read by rows giving number of nonisomorphic nondegenerate oriented matroids with n points in n-k dimensions.
+A063852 Number of nonisomorphic nondegenerate oriented matroids with n points in dimensions 2 through n-1.
+A063853 Triangle T(n,k) (n >= 3, k = 1..n-2) read by rows giving number of abstract order types of configurations of n points in n-k dimensions.
+A063854 Number of abstract order types of configurations of n points in 2 dimensions. 
+A063855 Number of abstract order types of configurations of n points in 3 dimensions. 
+A063856 Number of abstract order types of configurations of n points in 4 dimensions. 
+A063857 Total number of abstract order types of configurations of n points in dimensions 2 through n-1.
+A063858 Triangle T(n,k) (n >= 2, k = 0..n-2) giving number of abstract dissection types of configurations of n points in n-k dimensions.
+A063859 Number of abstract dissection types of configurations of n points in 2 dimensions.
+A063860 Number of abstract dissection types of configurations of n points in 3 dimensions
+A063861 Number of abstract dissection types of configurations of n points in 4 dimensions
+A063862 Total number of abstract dissection types of configurations of n points in dimensions 2 through n

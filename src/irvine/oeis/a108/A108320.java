@@ -5,7 +5,7 @@ package irvine.oeis.a108;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A108320 Numbers n such that 609 * 10^n - 1 is prime.
+ * A108320 Numbers k such that 609 * 10^k - 1 is prime.
  * @author Georg Fischer
  */
 public class A108320 extends PowerFactorPrimeSequence {

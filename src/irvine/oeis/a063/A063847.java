@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002997;
 
 /**
- * A063844 Smith numbers which are also base-2 pseudoprimes.
+ * A063847 Carmichael numbers which are also base-2 strong pseudoprimes.
  * @author Sean A. Irvine
  */
 public class A063847 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A359698 allocated for Oliver Townsend.
+ * A359698 allocated for Keith F. Lynch.
  * @author Sean A. Irvine
  */
 public class A359698 extends Sequence1 {

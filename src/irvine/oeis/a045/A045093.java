@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A045093 Numbers n with property that in base 4 representation the numbers of 1's and 2's are 1 and 3, respectively.
+ * A045093 Numbers whose base-4 representation contains exactly one 1 and three 2's.
  * @author Georg Fischer
  */
 public class A045093 extends RunsBaseSequence {

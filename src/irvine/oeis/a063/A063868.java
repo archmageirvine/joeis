@@ -2,22 +2,23 @@ package irvine.oeis.a063;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063846 Numbers k such that sigma(k) - usigma(k) &gt; 2k.
+ * A063868 Solutions to phi(x + omega(x)) = phi(x) + d(x), where phi() = A000010(), d() = A000005() and omega() = A001221().
  * @author Sean A. Irvine
  */
-public class A063846 extends Sequence1 {
+public class A063868 extends Sequence1 {
 
-  private long mN = 1439;
+  private long mN = 32;
 
   @Override
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      if (fs.sigma().subtract(fs.unitarySigma()).compareTo(Z.valueOf(2 * mN)) > 0) {
+      if (fs.phi().add(fs.sigma0()).equals(Euler.phi(fs.omega() + mN))) {
         return Z.valueOf(mN);
       }
     }

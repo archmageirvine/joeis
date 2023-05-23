@@ -2202,3 +2202,5 @@ A063859 Number of abstract dissection types of configurations of n points in 2 d
 A063860 Number of abstract dissection types of configurations of n points in 3 dimensions
 A063861 Number of abstract dissection types of configurations of n points in 4 dimensions
 A063862 Total number of abstract dissection types of configurations of n points in dimensions 2 through n
+A063863 Theta series of A15 packing with respect to origin.
+A063864 Theta series of A15 packing with respect to point (0,1,2).

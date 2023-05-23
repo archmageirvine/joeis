@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**
- * A063850.
+ * A063850 Say what you see in previous term, reporting total number for each digit encountered.
  * @author Sean A. Irvine
  */
 public class A063850 extends PrependSequence {

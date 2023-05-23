@@ -6,18 +6,18 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063846 Numbers k such that sigma(k) - usigma(k) &gt; 2k.
+ * A063875 Numbers k such that sigma(k) - usigma(k) &gt; 3k.
  * @author Sean A. Irvine
  */
-public class A063846 extends Sequence1 {
+public class A063875 extends Sequence1 {
 
-  private long mN = 1439;
+  private long mN = 831599;
 
   @Override
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      if (fs.sigma().subtract(fs.unitarySigma()).compareTo(Z.valueOf(2 * mN)) > 0) {
+      if (fs.sigma().subtract(fs.unitarySigma()).compareTo(Z.valueOf(3 * mN)) > 0) {
         return Z.valueOf(mN);
       }
     }

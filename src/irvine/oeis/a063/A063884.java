@@ -13,14 +13,14 @@ import irvine.oeis.MemorySequence;
  */
 public class A063884 extends MemorySequence {
 
-  private final TreeSet<Z> mA = new TreeSet<>();
-  private final HashSet<Z> mUsed = new HashSet<>();
+  protected final TreeSet<Z> mA = new TreeSet<>();
+  protected final HashSet<Z> mUsed = new HashSet<>();
   {
     mA.add(Z.TWO);
     mA.add(Z.THREE);
   }
 
-  private void update(final Z n) {
+  protected void update(final Z n) {
     for (final Z p : Jaguar.factor(n).toZArray()) {
       if (!mUsed.contains(p)) {
         mA.add(p);

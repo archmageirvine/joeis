@@ -5,6 +5,7 @@ import java.io.Closeable;
 import java.io.IOException;
 import java.util.HashMap;
 
+import irvine.math.z.Z;
 import irvine.util.io.IOUtils;
 import junit.framework.TestCase;
 
@@ -84,7 +85,11 @@ public class AbstractSequenceTest extends TestCase {
           final Sequence seq = SequenceFactory.sequence(aNumber);
           if (!(seq instanceof DeadSequence)) {
             for (int k = 0; k < termsToExamine; ++k) {
-              assertEquals("a(" + (k + 1) + ")", parts[k], seq.next().toString());
+              final Z term = seq.next();
+              if (term == null) {
+                throw new NullPointerException("Unexpected null returned at position " + k);
+              }
+              assertEquals("a(" + (k + 1) + ")", parts[k], term.toString());
             }
           }
           if (seq instanceof Closeable) {

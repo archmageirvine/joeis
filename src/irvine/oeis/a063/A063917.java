@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063917.
+ * A063917 Smallest k such that k!!! is a multiple of n.
  * @author Sean A. Irvine
  */
 public class A063917 extends Sequence1 {

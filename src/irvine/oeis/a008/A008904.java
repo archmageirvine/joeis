@@ -13,15 +13,11 @@ public class A008904 extends Sequence0 {
 
   private long mN = -1;
 
-  @Override
-  public Z next() {
-    if (++mN < 2) {
-      return Z.ONE;
-    }
+  protected Z digit(final Z mN) {
     int q = 0;
     int t = 0;
     int x = 0;
-    final String s = Long.toString(mN, 5);
+    final String s = mN.toString(5);
     for (int i = 0; i < s.length() - 1; ++i) {
       final int ai = s.charAt(i) - '0';
       q += ai;
@@ -36,5 +32,13 @@ public class A008904 extends Sequence0 {
     }
     final int z = (x + t / 2) & 3;
     return z == 0 ? Z.SIX : Z.ONE.shiftLeft(z);
+  }
+
+  @Override
+  public Z next() {
+    if (++mN < 2) {
+      return Z.ONE;
+    }
+    return digit(Z.valueOf(mN));
   }
 }

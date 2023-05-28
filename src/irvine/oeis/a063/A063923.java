@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063917.
+ * A063923 Numbers k such that k^5 = a^5 + b^5 + c^5 + d^5 + e^5 has a nontrivial primitive solution in nonnegative integers.
  * @author Sean A. Irvine
  */
 public class A063923 extends Sequence1 {

@@ -58,4 +58,13 @@ public final class German extends AbstractLanguage {
     return sb.toString();
   }
 
+  /**
+   * Print numbers.
+   * @param args numerical values
+   */
+  public static void main(final String[] args) {
+    for (final String s : args) {
+      System.out.println(SINGLETON.toText(Integer.parseInt(s)));
+    }
+  }
 }

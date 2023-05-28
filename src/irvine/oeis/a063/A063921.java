@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a046.A046755;
 
 /**
- * A063917.
+ * A063921 Quotients arising when A046755(n) is divided by the cube of the number of its divisors.
  * @author Sean A. Irvine
  */
 public class A063921 extends A046755 {

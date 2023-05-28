@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063917.
+ * A063919 Sum of proper unitary divisors (or unitary aliquot parts) of n, including 1.
  * @author Sean A. Irvine
  */
 public class A063919 extends Sequence1 {

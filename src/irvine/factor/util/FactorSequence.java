@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 
 /**
  * Provides an object useful for representing factorizations or partial
@@ -751,6 +752,15 @@ public final class FactorSequence {
       }
     }
     return true;
+  }
+
+  /**
+   * Return the sum of prime factors without multiplicity.
+   * @return <code>sopf(this)</code>
+   */
+  public Z sopf() {
+    completeOrException();
+    return ZUtils.sum(mFactors.keySet());
   }
 
   /**

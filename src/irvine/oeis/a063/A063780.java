@@ -17,24 +17,23 @@ public class A063780 extends Sequence1 {
 
   protected static final int ACCURACY = -500;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private int mN = 14;
+  private int mN = 7;
 
   protected boolean testPrecise(final int n, final int[] a, final int[] b) {
     CR cosA = CR.ONE;
     CR cosB = CR.ONE;
-    final CR n2 = CR.valueOf(2 * n);
+    final CR zn = CR.valueOf(2 * n);
     for (int k = 0; k < a.length; ++k) {
-      cosA = cosA.multiply(CR.PI.multiply(a[k]).divide(n2).cos());
-      cosB = cosB.multiply(CR.PI.multiply(b[k]).divide(n2).cos());
+      cosA = cosA.multiply(CR.PI.multiply(a[k]).divide(zn).cos());
+      cosB = cosB.multiply(CR.PI.multiply(b[k]).divide(zn).cos());
     }
     return cosA.compareTo(cosB, ACCURACY) == 0;
   }
 
   protected double trig(final int n, final int[] a) {
     double cos = 1;
-    final double n2 = 2 * n;
     for (final int v : a) {
-      cos *= Math.cos(Math.PI * v / n2);
+      cos *= Math.cos((Math.PI * v) / (2 * n));
     }
     return cos;
   }
@@ -52,51 +51,49 @@ public class A063780 extends Sequence1 {
     return true;
   }
 
-  private boolean isSolvable(final int n, final int[] a, final int remaining, final int[] b, final int bPos) {
+  private int countSolutions(final int n, final int[] a, final int remaining, final int[] b, final int bPos) {
     if (bPos == b.length) {
       if (remaining != 0) {
-        return false;
+        return 0;
       }
       final boolean res = testTrig(n, a, b);
       if (res && mVerbose) {
         StringUtils.message(n + " " + Arrays.toString(a) + " " + Arrays.toString(b) + " " + trig(n, a));
       }
-      return res;
+      return res ? 1 : 0;
     }
-    for (int k = bPos == 0 ? 1 : b[bPos - 1] + 1; remaining - k >= 0; ++k) {
+    // WLOG b[0] > a[0]
+    int cnt = 0;
+    for (int k = bPos == 0 ? a[0] + 1 : b[bPos - 1] + 1; remaining - k >= 0; ++k) {
       if (isOk(k, a)) {
         b[bPos] = k;
-        if (isSolvable(n, a, remaining - k, b, bPos + 1)) {
-          return true;
-        }
+        cnt += countSolutions(n, a, remaining - k, b, bPos + 1);
       }
     }
-    return false;
+    return cnt;
   }
 
-  private boolean isSolvable(final int n, final int remaining, final int[] a, final int aPos) {
+  private int countSolutions(final int n, final int remaining, final int[] a, final int aPos) {
     if (aPos == a.length) {
-      return remaining == 0 && isSolvable(n, a, 2 * n, new int[4], 0);
+      if (remaining != 0) {
+        return 0;
+      }
+      return countSolutions(n, a, 2 * n, new int[4], 0);
     }
+    int cnt = 0;
     for (int k = aPos == 0 ? 1 : a[aPos - 1] + 1; remaining - k >= 0; ++k) {
       a[aPos] = k;
-      if (isSolvable(n, remaining - k, a, aPos + 1)) {
-        return true;
-      }
+      cnt += countSolutions(n, remaining - k, a, aPos + 1);
     }
-    return false;
+    return cnt;
   }
 
-  private boolean isSolvable(final int n) {
-    return isSolvable(n, 2 * n, new int[4], 0);
+  private int countSolutions(final int n) {
+    return countSolutions(n, 2 * n, new int[4], 0);
   }
 
   @Override
   public Z next() {
-    while (true) {
-      if (isSolvable(++mN)) {
-        return Z.valueOf(mN);
-      }
-    }
+    return Z.valueOf(countSolutions(++mN));
   }
 }

@@ -6,10 +6,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063960 Sum of non-unitary prime divisors of n!: sum of those prime factors for which the exponent exceeds 1.
+ * A063955 Sum of unitary prime divisors (A056169, A056171) of n!.
  * @author Sean A. Irvine
  */
-public class A063960 extends Sequence1 {
+public class A063955 extends Sequence1 {
 
   private final FactorSequence mFactorSequence = new FactorSequence();
   private long mN = 0;
@@ -21,7 +21,7 @@ public class A063960 extends Sequence1 {
     }
     Z sum = Z.ZERO;
     for (final Z p : mFactorSequence.toZArray()) {
-      if (mFactorSequence.getExponent(p) > 1) {
+      if (mFactorSequence.getExponent(p) == 1) {
         sum = sum.add(p);
       }
     }

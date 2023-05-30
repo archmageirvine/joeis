@@ -15,6 +15,7 @@ public class A261711 extends GeneratingFunctionTriangle {
     super(0, new long[] {1}, new long[] {1, -4, 0, 1, -1, 0, 0, 0, 0, 0});
   }
 
+  @Override
   public Z next() {
     while (true) {
       final Z result = super.next();

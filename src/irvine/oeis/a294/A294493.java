@@ -16,6 +16,7 @@ public class A294493 extends PartialSumSequence {
     super(0, new A060828());
   }
 
+  @Override
   public Z next() {
     return new Z(super.next().toString(3));
   }

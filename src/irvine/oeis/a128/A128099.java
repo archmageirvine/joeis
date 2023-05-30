@@ -22,6 +22,7 @@ public class A128099 extends BaseTriangle {
     return Binomial.binomial(n - k, k).multiply(Z.ONE.shiftLeft(k));
   }
 
+  @Override
   public Z next() {
     while (true) {
       final Z result = super.next();

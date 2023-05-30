@@ -16,6 +16,7 @@ public class A080521 extends BaseTriangle {
     hasRAM(true);
   }
 
+  @Override
   public Z triangleElement(final int n, final int k) {
     // T(n, n) = 2^n - n(n-1)/2.
     return (n != k) ? Z.valueOf(k) : Z.ONE.shiftLeft(n).subtract(n * (n - 1L) / 2);

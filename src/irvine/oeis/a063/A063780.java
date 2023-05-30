@@ -13,8 +13,7 @@ import irvine.util.string.StringUtils;
  */
 public class A063780 extends Sequence1 {
 
-  // todo does not match definition?
-
+  protected static final double TAU = 2.0 * Math.PI;
   protected static final int ACCURACY = -500;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 7;
@@ -22,24 +21,16 @@ public class A063780 extends Sequence1 {
   protected boolean testPrecise(final int n, final int[] a, final int[] b) {
     CR cosA = CR.ONE;
     CR cosB = CR.ONE;
-    final CR zn = CR.valueOf(2 * n);
+    final CR zn = CR.valueOf(n);
     for (int k = 0; k < a.length; ++k) {
-      cosA = cosA.multiply(CR.PI.multiply(a[k]).divide(zn).cos());
-      cosB = cosB.multiply(CR.PI.multiply(b[k]).divide(zn).cos());
+      cosA = cosA.multiply(CR.TAU.multiply(a[k]).divide(zn).cos());
+      cosB = cosB.multiply(CR.TAU.multiply(b[k]).divide(zn).cos());
     }
     return cosA.compareTo(cosB, ACCURACY) == 0;
   }
 
-  protected double trig(final int n, final int[] a) {
-    double cos = 1;
-    for (final int v : a) {
-      cos *= Math.cos((Math.PI * v) / (2 * n));
-    }
-    return cos;
-  }
-
-  private boolean testTrig(final int n, final int[] a, final int[] b) {
-    return Math.abs(trig(n, a) - trig(n, b)) < 1e-12 && testPrecise(n, a, b);
+  protected double trig(final int n, final int v) {
+    return Math.cos(TAU * v / n);
   }
 
   private boolean isOk(final int k, final int[] a) {
@@ -51,45 +42,48 @@ public class A063780 extends Sequence1 {
     return true;
   }
 
-  private int countSolutions(final int n, final int[] a, final int remaining, final int[] b, final int bPos) {
+  private int countSolutions(final int n, final int[] a, final double aProduct, final int remaining, final int[] b, final int bPos, final double bProduct) {
     if (bPos == b.length) {
       if (remaining != 0) {
         return 0;
       }
-      final boolean res = testTrig(n, a, b);
-      if (res && mVerbose) {
-        StringUtils.message(n + " " + Arrays.toString(a) + " " + Arrays.toString(b) + " " + trig(n, a));
+      if (Math.abs(aProduct - bProduct) > 1.0e-12) {
+        return 0;
+      }
+      final boolean res = testPrecise(n, a, b);
+      if (mVerbose && !res) {
+        StringUtils.message("Near miss: n=" + n + " " + Arrays.toString(a) + " " + Arrays.toString(b) + " " + aProduct + " " + bProduct);
       }
       return res ? 1 : 0;
     }
     // WLOG b[0] > a[0]
     int cnt = 0;
-    for (int k = bPos == 0 ? a[0] + 1 : b[bPos - 1] + 1; remaining - k >= 0; ++k) {
+    for (int k = bPos == 0 ? a[0] + 1 : b[bPos - 1] + 1; remaining - k >= 0 && k < n; ++k) {
       if (isOk(k, a)) {
         b[bPos] = k;
-        cnt += countSolutions(n, a, remaining - k, b, bPos + 1);
+        cnt += countSolutions(n, a, aProduct, remaining - k, b, bPos + 1, bProduct * trig(n, k));
       }
     }
     return cnt;
   }
 
-  private int countSolutions(final int n, final int remaining, final int[] a, final int aPos) {
+  private int countSolutions(final int n, final int remaining, final int[] a, final int aPos, final double aProduct) {
     if (aPos == a.length) {
       if (remaining != 0) {
         return 0;
       }
-      return countSolutions(n, a, 2 * n, new int[4], 0);
+      return countSolutions(n, a, aProduct, 2 * n, new int[4], 0, 1);
     }
     int cnt = 0;
-    for (int k = aPos == 0 ? 1 : a[aPos - 1] + 1; remaining - k >= 0; ++k) {
+    for (int k = aPos == 0 ? 1 : a[aPos - 1] + 1; remaining - k >= 0 && k < n; ++k) {
       a[aPos] = k;
-      cnt += countSolutions(n, remaining - k, a, aPos + 1);
+      cnt += countSolutions(n, remaining - k, a, aPos + 1, aProduct * trig(n, k));
     }
     return cnt;
   }
 
   private int countSolutions(final int n) {
-    return countSolutions(n, 2 * n, new int[4], 0);
+    return countSolutions(n, 2 * n, new int[4], 0, 1);
   }
 
   @Override

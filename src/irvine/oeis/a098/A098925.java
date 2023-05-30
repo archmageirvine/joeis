@@ -10,6 +10,7 @@ import irvine.oeis.a092.A092865;
  */
 public class A098925 extends A092865 {
 
+  @Override
   public Z next() {
     return super.next().abs();
   }

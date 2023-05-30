@@ -16,8 +16,9 @@ public class A070543 extends BaseTriangle {
     hasRAM(true);
   }
 
+  @Override
   public Z triangleElement(final int n, final int k) {
     // T(n, k) = k*(k+1)/2 + 2*k*(n-k) if 0 < k <= n.
-    return Z.valueOf(k * (k + 1) / 2).add(2 * k * (n - k));
+    return Z.valueOf(k * (k + 1L) / 2).add(2L * k * (n - k));
   }
 }

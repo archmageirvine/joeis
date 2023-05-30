@@ -12,22 +12,16 @@ public class A063781 extends A063780 {
   protected boolean testPrecise(final int n, final int[] a, final int[] b) {
     CR sinA = CR.ONE;
     CR sinB = CR.ONE;
-    final CR n2 = CR.valueOf(2 * n);
+    final CR zn = CR.valueOf(n);
     for (int k = 0; k < a.length; ++k) {
-      sinA = sinA.multiply(CR.PI.multiply(a[k]).divide(n2).sin());
-      sinB = sinB.multiply(CR.PI.multiply(b[k]).divide(n2).sin());
+      sinA = sinA.multiply(CR.TAU.multiply(a[k]).divide(zn).sin());
+      sinB = sinB.multiply(CR.TAU.multiply(b[k]).divide(zn).sin());
     }
     return sinA.compareTo(sinB, ACCURACY) == 0;
   }
 
   @Override
-  protected double trig(final int n, final int[] a) {
-    double sin = 1;
-    final double n2 = 2 * n;
-    for (final int v : a) {
-      sin *= Math.sin(Math.PI * v / n2);
-    }
-    return sin;
+  protected double trig(final int n, final int v) {
+    return Math.sin(TAU * v / n);
   }
-
 }

@@ -13,11 +13,11 @@ public class A008904 extends Sequence0 {
 
   private long mN = -1;
 
-  protected Z digit(final Z mN) {
+  protected Z digit(final Z n) {
     int q = 0;
     int t = 0;
     int x = 0;
-    final String s = mN.toString(5);
+    final String s = n.toString(5);
     for (int i = 0; i < s.length() - 1; ++i) {
       final int ai = s.charAt(i) - '0';
       q += ai;

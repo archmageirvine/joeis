@@ -18,7 +18,7 @@ public class A013927 extends Sequence1 {
   private int mBestMoves = 0;
   private int[][] mD2Home;
 
-  private static class State {
+  private static final class State {
     private int mLastK = 0;
     private int mLastD = 0;
     private final int[] mCard;
@@ -59,7 +59,7 @@ public class A013927 extends Sequence1 {
 
 
   private void solve(final int lvl) {
-    int d = mTrace[lvl].mLastD;
+    final int d = mTrace[lvl].mLastD;
     if (lvl + d >= mBestMoves) {
       return;
     }

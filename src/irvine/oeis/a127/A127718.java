@@ -6,13 +6,13 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.triangle.Product;
 
 /**
- * A127717 Triangle read by rows. T(n, k) = k * binomial(n + 1, k + 1), for 1 &lt;= k &lt;= n.
+ * A127718 A007318 * A002260 as infinite lower triangular matrices; A002260 = [1; 1,2; 1,2,3; ...].
  * @author Georg Fischer
  */
-public class A127717 extends Product {
+public class A127718 extends Product {
 
   /** Construct the sequence. */
-  public A127717() {
-    super(1, new A002260(), new A007318());
+  public A127718() {
+    super(1, new A007318(), new A002260());
   }
 }

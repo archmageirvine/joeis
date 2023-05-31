@@ -38,7 +38,7 @@ public class A079502 extends MemoryFunction1<Z[]> implements Sequence {
     final ArrayList<Z> values = new ArrayList<>();
     for (long k = 0; k <= n; ++k) {
       values.add(seq.peek());
-      seq = new LookaheadSequence(DifferenceSequence.create(seq));
+      seq = new LookaheadSequence(new DifferenceSequence(seq));
     }
     // ans is values u_0^n, u_1^n, ..., u_n^n
     final Z[] ans = new Z[values.size()];

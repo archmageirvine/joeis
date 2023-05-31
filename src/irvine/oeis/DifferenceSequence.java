@@ -12,42 +12,6 @@ public class DifferenceSequence extends AbstractSequence {
   private Z mPrev;
 
   /**
-   * Create a sequence which is the nth difference of the given sequence.
-   * @param offset first index
-   * @param sequence underlying sequence
-   * @param n difference level
-   * @return difference sequence.
-   */
-  public static Sequence create(final int offset, final Sequence sequence, final int n) {
-    if (n == 0) {
-      return sequence;
-    }
-    return create(offset, new DifferenceSequence(offset, sequence), n - 1);
-  }
-
-  /**
-   * Create a sequence which is the nth difference of the given sequence.
-   * @param sequence underlying sequence
-   * @param n difference level
-   * @return difference sequence.
-   */
-  public static Sequence create(final Sequence sequence, final int n) {
-    if (n == 0) {
-      return sequence;
-    }
-    return create(0, new DifferenceSequence(0, sequence), n - 1);
-  }
-
-  /**
-   * Create a sequence which is first difference of the given sequence.
-   * @param sequence underlying sequence
-   * @return difference sequence.
-   */
-  public static Sequence create(final Sequence sequence) {
-    return new DifferenceSequence(sequence);
-  }
-
-  /**
    * Create the first difference sequence of a sequence.
    * @param offset first index of the target sequence
    * @param seq underlying sequence

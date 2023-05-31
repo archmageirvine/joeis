@@ -6,7 +6,7 @@ import irvine.oeis.a051.A051731;
 import irvine.oeis.triangle.Product;
 
 /**
- * A066633 Triangle T(n,k), n &gt;= 1, 1 &lt;= k &lt;= n, giving number of k&apos;s in all partitions of n.
+ * A066633 Triangle T(n,k), n &gt;= 1, 1 &lt;= k &lt;= n, giving number of k's in all partitions of n.
  * @author Georg Fischer
  */
 public class A066633 extends Product {

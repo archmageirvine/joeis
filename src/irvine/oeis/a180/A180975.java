@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A180975 Array of the &quot;egg-drop&quot; numbers, read by downwards antidiagonals.
+ * A180975 Array of the "egg-drop" numbers, read by downwards antidiagonals.
  * @author Georg Fischer
  */
 public class A180975 extends UpperLeftTriangle {

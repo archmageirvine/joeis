@@ -6,7 +6,7 @@ import irvine.oeis.a077.A077028;
 import irvine.oeis.triangle.Product;
 
 /**
- * A134392 A077028 * A000012, that is Rascal&apos;s triangle (as matrix) multiplied by a lower triangular matrix of ones (main diagonal of ones included).
+ * A134392 A077028 * A000012, that is Rascal's triangle (as matrix) multiplied by a lower triangular matrix of ones (main diagonal of ones included).
  * @author Georg Fischer
  */
 public class A134392 extends Product {

@@ -4,7 +4,7 @@ package irvine.oeis.a186;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A186857 Number of 8-step knight&apos;s tours on an (n+2) X (n+2) board summed over all starting positions.
+ * A186857 Number of 8-step knight's tours on an (n+2) X (n+2) board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A186857 extends HolonomicRecurrence {

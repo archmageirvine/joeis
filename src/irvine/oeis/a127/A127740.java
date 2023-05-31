@@ -5,7 +5,7 @@ import irvine.oeis.a011.A011971;
 import irvine.oeis.triangle.Product;
 
 /**
- * A127740 Natural number transform of Aitken&apos;s triangle.
+ * A127740 Natural number transform of Aitken's triangle.
  * @author Georg Fischer
  */
 public class A127740 extends Product {

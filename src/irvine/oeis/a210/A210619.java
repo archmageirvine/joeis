@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A210619 Triangle of numbers with n 1&apos;s and n 0&apos;s in their representation in base of Fibonacci numbers (A014417).
+ * A210619 Triangle of numbers with n 1's and n 0's in their representation in base of Fibonacci numbers (A014417).
  * @author Georg Fischer
  */
 public class A210619 extends BaseTriangle {

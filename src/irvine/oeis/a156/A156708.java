@@ -6,7 +6,7 @@ import irvine.oeis.a154.A154325;
 import irvine.oeis.triangle.Product;
 
 /**
- * A156708 Triangle read by rows, binomial transform of A154325
+ * A156708 Triangle read by rows, binomial transform of A154325.
  * @author Georg Fischer
  */
 public class A156708 extends Product {

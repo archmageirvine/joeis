@@ -6,7 +6,7 @@ import irvine.oeis.a054.A054525;
 import irvine.oeis.triangle.Product;
 
 /**
- * A159905 Triangle read by rows, Mobius transform of A004736
+ * A159905 Triangle read by rows, Mobius transform of A004736.
  * @author Georg Fischer
  */
 public class A159905 extends Product {

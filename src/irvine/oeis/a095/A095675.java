@@ -6,7 +6,7 @@ import irvine.oeis.a011.A011971;
 import irvine.oeis.triangle.Product;
 
 /**
- * A095675 Triangle read by rows, formed from product of Aitken&apos;s (or Bell&apos;s) triangle (A011971) and Pascal&apos;s triangle (A007318).
+ * A095675 Triangle read by rows, formed from product of Aitken's (or Bell's) triangle (A011971) and Pascal's triangle (A007318).
  * @author Georg Fischer
  */
 public class A095675 extends Product {

@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A186855 Number of 6-step knight&apos;s tours on an (n+2) X (n+2) board summed over all starting positions.
+ * A186855 Number of 6-step knight's tours on an (n+2) X (n+2) board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A186855 extends HolonomicRecurrence {

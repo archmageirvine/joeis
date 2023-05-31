@@ -5,7 +5,7 @@ import irvine.oeis.a070.A070909;
 import irvine.oeis.triangle.Product;
 
 /**
- * A177994 Triangle read by rows, A177990 * A070909
+ * A177994 Triangle read by rows, A177990 * A070909.
  * @author Georg Fischer
  */
 public class A177994 extends Product {

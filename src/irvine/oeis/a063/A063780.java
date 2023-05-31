@@ -4,19 +4,24 @@ import java.util.Arrays;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 import irvine.util.string.StringUtils;
 
 /**
  * A063780 Numbers k such that there exist sequences a_i, b_i in N (i=1,2,3,4) with 0 &lt; a_1 &lt; a_2 &lt; a_3 &lt; a_4 &lt; k, 0 &lt; b_1 &lt; b_2 &lt; b_3 &lt; b_4 &lt; k and a_i != b_j for all i,j = 1,2,3,4, satisfying both Sum_{i=1..4} a_i = Sum_{i=1..4} b_i = 2*k and Product_{i=1..4} cos(a_i * Pi/(2*k)) = Product_{i=1..4} cos(b_i * Pi/(2*k)).
  * @author Sean A. Irvine
  */
-public class A063780 extends Sequence1 {
+public class A063780 extends AbstractSequence {
 
   protected static final double TAU = 2.0 * Math.PI;
   protected static final int ACCURACY = -500;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 7;
+
+  /** Construct the sequence. */
+  public A063780() {
+    super(8);
+  }
 
   protected boolean testPrecise(final int n, final int[] a, final int[] b) {
     CR cosA = CR.ONE;
@@ -51,8 +56,8 @@ public class A063780 extends Sequence1 {
         return 0;
       }
       final boolean res = testPrecise(n, a, b);
-      if (mVerbose && !res) {
-        StringUtils.message("Near miss: n=" + n + " " + Arrays.toString(a) + " " + Arrays.toString(b) + " " + aProduct + " " + bProduct);
+      if (mVerbose) {
+        StringUtils.message("n=" + n + " " + Arrays.toString(a) + " " + Arrays.toString(b) + " " + aProduct + " " + bProduct + " " + res);
       }
       return res ? 1 : 0;
     }

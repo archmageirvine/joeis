@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A076214 Decimal expansion of C=sum(k&gt;=0,1/2^(2^k-1)).
+ * A076214 Decimal expansion of C = Sum_{k&gt;=0} 1/2^(2^k-1).
  * @author Sean A. Irvine
  */
 public class A076214 extends DecimalExpansionSequence {

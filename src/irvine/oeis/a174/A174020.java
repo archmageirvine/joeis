@@ -4,7 +4,7 @@ package irvine.oeis.a174;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A174020 Number of reduced 3x3 magilatin squares with magic sum n.
+ * A174020 Number of reduced 3 X 3 magilatin squares with magic sum n.
  * @author Georg Fischer
  */
 public class A174020 extends GeneratingFunctionSequence {

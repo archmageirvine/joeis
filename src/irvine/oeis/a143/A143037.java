@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A143037 Triangle read by rows, A000012 * A127773 * A000012. A000012 is an infinite lower triangular matrix with all 1&apos;s, A127773 = (1; 0,3; 0,0,6; 0,0,0,10; ...).
+ * A143037 Triangle read by rows, A000012 * A127773 * A000012. A000012 is an infinite lower triangular matrix with all 1's, A127773 = (1; 0,3; 0,0,6; 0,0,0,10; ...).
  * @author Georg Fischer
  */
 public class A143037 extends BaseTriangle {

@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007442;
 import irvine.oeis.triangle.VectorProduct;
 
 /**
- * A124800 Let M be a diagonal matrix with A007442 on the diagonal and P = Pascal&apos;s triangle as an infinite lower triangular matrix. Now read the triangle P*M by rows.
+ * A124800 Let M be a diagonal matrix with A007442 on the diagonal and P = Pascal's triangle as an infinite lower triangular matrix. Now read the triangle P*M by rows.
  * @author Georg Fischer
  */
 public class A124800 extends VectorProduct {

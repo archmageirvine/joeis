@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A137773 Triangular sequence: The Fibonacci sequence on the diagonal, 1&apos;s at all other places
+ * A137773 Triangular sequence: The Fibonacci sequence on the diagonal, 1's at all other places.
  * @author Georg Fischer
  */
 public class A137773 extends BaseTriangle {

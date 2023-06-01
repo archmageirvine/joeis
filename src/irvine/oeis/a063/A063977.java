@@ -22,8 +22,9 @@ public class A063977 extends Sequence1 {
       while (mM <= mN * mN) {
         mCnts.set(Jaguar.factor(++mM).unitarySigma().longValueExact());
       }
-      if (mCnts.isSet(mN))
-      return Z.valueOf(mN);
+      if (mCnts.isSet(mN)) {
+        return Z.valueOf(mN);
+      }
     }
   }
 }

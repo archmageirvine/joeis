@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.triangle.RowSumSequence;
 
 /**
- * A144826 Row sums of triangle A144825
+ * A144826 Row sums of triangle A144825.
  * @author Georg Fischer
  */
 public class A144826 extends RowSumSequence {

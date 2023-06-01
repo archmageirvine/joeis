@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A173727 Number of reduced 3x3 semimagic squares with distinct nonnegative integer entries and maximum entry n.
+ * A173727 Number of reduced 3 X 3 semimagic squares with distinct nonnegative integer entries and maximum entry n.
  * @author Georg Fischer
  */
 public class A173727 extends GeneratingFunctionSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A063780 Numbers k such that there exist sequences a_i, b_i in N (i=1,2,3,4) with 0 &lt; a_1 &lt; a_2 &lt; a_3 &lt; a_4 &lt; k, 0 &lt; b_1 &lt; b_2 &lt; b_3 &lt; b_4 &lt; k and a_i != b_j for all i,j = 1,2,3,4, satisfying both Sum_{i=1..4} a_i = Sum_{i=1..4} b_i = 2*k and Product_{i=1..4} cos(a_i * Pi/(2*k)) = Product_{i=1..4} cos(b_i * Pi/(2*k)).
+ * A063780 a(n) is the number of pairs of integer quadruples (b_1, b_2, b_3, b_4) and (c_1, c_2, c_3, c_4) satisfying 1 &lt;= b_1 &lt; b_2 &lt; b_3 &lt; b_4 &lt; n, 1 &lt;= c_1 &lt; c_2 &lt; c_3 &lt; c_4 &lt; n, b_i != c_j for all i,j = 1,2,3,4 and Product_{i=1..4} cos(2*Pi*b_i/n) = Product_{i=1..4} cos(2*Pi*c_i/n).
  * @author Sean A. Irvine
  */
 public class A063780 extends AbstractSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 
 import irvine.oeis.recur.HolonomicRecurrence;
 /**
- * A173546 Number of 3x3 semimagic squares with distinct positive values &lt; n. In a semimagic squares the row and column sums must all be equal (the "magic sum").
+ * A173546 Number of 3 X 3 semimagic squares with distinct positive values &lt; n. In a semimagic squares the row and column sums must all be equal (the "magic sum").
  * radtorec(72*x^2/(1-x)^2*(x^5/(1-x)^3/(-x^2+1)-2*x^5/(1-x)/(-x^2+1)^2-x^5/(1-x)^2/(-x^3+1)-2*x^6/(1-x)/(-x^2+1)/(-x^3+1)-x^6/(-x^2+1)^3-x^7/(-x^2+1)^2/(-x^3+1)+x^5/(1-x)/(-x^4+1)+2*x^5/(-x^2+1)/(-x^3+1)+2*x^6/(-x^2+1)/(-x^4+1)+x^6/(-x^3+1)^2+x^7/(-x^2+1)/(-x^5+1)+x^7/(-x^3+1)/(-x^4+1)+x^8/(-x^3+1)/(-x^5+1)-x^5/(-x^5+1)))
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086464 Decimal expansion of 17/36*Zeta(4).
+ * A086464 Decimal expansion of 17/36*zeta(4).
  * @author Georg Fischer
  */
 public class A086464 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A173725 Number of symmetry classes of 3x3 semimagic squares with distinct positive values and magic sum n.
+ * A173725 Number of symmetry classes of 3 X 3 semimagic squares with distinct positive values and magic sum n.
  * @author Georg Fischer
  */
 public class A173725 extends HolonomicRecurrence {

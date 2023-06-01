@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A045047 Numbers whose base-4 representation has two 0's and zero 2's.
+ * A045047 Numbers whose base-4 representation contains exactly two 0's and no 2's.
  * @author Georg Fischer
  */
 public class A045047 extends RunsBaseSequence {

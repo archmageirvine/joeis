@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A152875 Number of permutations of {1,2,...,n} (n &gt;= 2) with all odd entries preceding all even entries or all even entries preceding all odd entries.
+ * A152875 Number of permutations of {1,2,...,n} with all odd entries preceding all even entries or all even entries preceding all odd entries.
  * @author Georg Fischer
  */
 public class A152875 extends HolonomicRecurrence {

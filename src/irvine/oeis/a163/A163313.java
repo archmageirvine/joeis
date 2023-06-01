@@ -6,7 +6,7 @@ import irvine.oeis.a014.A014668;
 import irvine.oeis.triangle.VectorProduct;
 
 /**
- * A163313 Triangle read by rows, A010766 convolved with A014668 (diagonalized as an infinite lower triangular matrix)
+ * A163313 Triangle read by rows, A010766 convolved with A014668 (diagonalized as an infinite lower triangular matrix).
  * @author Georg Fischer
  */
 public class A163313 extends VectorProduct {

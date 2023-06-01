@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A359698 allocated for Keith F. Lynch.
+ * A359698 Least k &gt; 0 such that the first n digits of 2^k and 3^k are identical.
  * @author Sean A. Irvine
  */
 public class A359698 extends Sequence1 {

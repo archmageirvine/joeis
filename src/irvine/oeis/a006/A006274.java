@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.z.Z;
 
 /**
- * A006274 Denominators of a continued fraction for (3+sqrt(13))/2.
+ * A006274 First differences of A006268.
  * @author Sean A. Irvine
  */
 public class A006274 extends A006268 {

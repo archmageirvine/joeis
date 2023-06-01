@@ -7,7 +7,7 @@ import irvine.oeis.a051.A051731;
 import irvine.oeis.triangle.VectorProduct;
 
 /**
- * A130162 A051731 * A000837 as a diagonalized matrix.
+ * A130162 Triangle read by rows: A051731 * A000837 as a diagonalized matrix.
  * @author Georg Fischer
  */
 public class A130162 extends VectorProduct {

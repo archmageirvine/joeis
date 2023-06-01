@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A174607 Decimal expansion of Pi^2/(6*log(Phi)) where Phi=(1+sqrt(5))/2.
+ * A174607 Decimal expansion of Pi^2/(6*log(phi)) where phi=(1+sqrt(5))/2.
  * Formula: Pi^2/(6*log(phi))
  * @author Georg Fischer
  */

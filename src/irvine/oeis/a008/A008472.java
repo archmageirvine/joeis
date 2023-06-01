@@ -14,12 +14,6 @@ public class A008472 extends Sequence1 {
 
   @Override
   public Z next() {
-    Z sum = Z.ZERO;
-    if (++mN > 1) {
-      for (final Z p : Jaguar.factor(mN).toZArray()) {
-        sum = sum.add(p);
-      }
-    }
-    return sum;
+    return Jaguar.factor(++mN).sopf();
   }
 }

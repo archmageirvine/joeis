@@ -5,7 +5,7 @@ package irvine.oeis.a327;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A327346 The 74 prime dates of each year of the form concatenate(day,month) without leading zeros for month (and day).
+ * A327346 The 74 prime dates of each year of the form concatenate(day,month) without leading zeros for month (and day), sorted by date, including duplicates.
  * @author Georg Fischer
  */
 public class A327346 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a002.A002858;
 
 /**
- * A072832 First differences of Ulam&apos;s sequence A002858.
+ * A072832 First differences of Ulam's sequence A002858.
  * @author Georg Fischer
  */
 public class A072832 extends DifferenceSequence {

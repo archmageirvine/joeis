@@ -4,7 +4,7 @@ package irvine.oeis.a052;
 import irvine.oeis.a005.A005754;
 
 /**
- * A052798 A simple grammar.
+ * A052798 G.f. A(x) satisfies: A(x) = exp( Sum_{k&gt;=1} (-1)^(k+1) * A(x^k)^5 * x^k / k ).
  * @author Georg Fischer
  */
 public class A052798 extends A005754 {

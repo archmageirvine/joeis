@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A361870 allocated for Rob Bunce.
+ * A361870 allocated for Nathan L. Skirrow.
  * @author Sean A. Irvine
  */
 public class A361870 extends Sequence1 {

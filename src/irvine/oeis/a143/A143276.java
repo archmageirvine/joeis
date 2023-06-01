@@ -6,7 +6,7 @@ import irvine.oeis.a054.A054525;
 import irvine.oeis.triangle.Product;
 
 /**
- * A143276 Triangle read by rows, A054525 * A054523, 1&lt;=k&lt;=n.
+ * A143276 Triangle read by rows: A054525 * A054523 as infinite lower triangular matrices.
  * @author Georg Fischer
  */
 public class A143276 extends Product {

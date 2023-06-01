@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A052781 A simple grammar.
+ * A052781 G.f. A(x) satisfies: A(x) = exp( Sum_{k&gt;=1} A(x^k)^5 * x^k / k ).
  * @author Sean A. Irvine
  */
 public class A052781 extends Sequence0 {

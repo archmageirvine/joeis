@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 
 import irvine.oeis.recur.HolonomicRecurrence;
 /**
- * A173724 Number of reduced, normalized 3x3 semimagic squares with distinct nonnegative integer entries and maximum entry n.
+ * A173724 Number of reduced, normalized 3 X 3 semimagic squares with distinct nonnegative integer entries and maximum entry n.
  * radtorec(x^5/(1-x)^3/(-x^2+1)-2*x^5/(1-x)/(-x^2+1)^2-x^5/(1-x)^2/(-x^3+1)-2*x^6/(1-x)/(-x^2+1)/(-x^3+1)-x^6/(-x^2+1)^3-x^7/(-x^2+1)^2/(-x^3+1)+x^5/(1-x)/(-x^4+1)+2*x^5/(-x^2+1)/(-x^3+1)+2*x^6/(-x^2+1)/(-x^4+1)+x^6/(-x^3+1)^2+x^7/(-x^2+1)/(-x^5+1)+x^7/(-x^3+1)/(-x^4+1)+x^8/(-x^3+1)/(-x^5+1)-x^5/(-x^5+1))
  * @author Georg Fischer
  */

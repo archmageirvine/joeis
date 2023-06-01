@@ -4,7 +4,7 @@ package irvine.oeis.a353;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A353095 a(1) = 3; for n&gt;1, a(n) = 4 * a(n-1) + 4 - n.
+ * A353095 a(1) = 3; for n &gt; 1, a(n) = 4*a(n-1) + 4 - n.
  * @author Georg Fischer
  */
 public class A353095 extends HolonomicRecurrence {

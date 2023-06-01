@@ -3,13 +3,14 @@ package irvine.oeis.transform;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
  * A sequence comprising the binomial transform of another sequence.
  * @author Georg Fischer
  */
-public class BinomialTransform implements Sequence {
+public class BinomialTransform extends AbstractSequence {
 
   private final Sequence mSeq;
   private final boolean mInverse; // whether to do an InverseBinomialTransform
@@ -19,10 +20,29 @@ public class BinomialTransform implements Sequence {
 
   /**
    * Creates a new binomial transform sequence of the given sequence.
+   * @param offset first index of target sequence
+   * @param seq underlying sequence
+   */
+  public BinomialTransform(final int offset, final Sequence seq) {
+    this(offset, seq, 0, false);
+  }
+
+  /**
+   * Creates a new binomial transform sequence of the given sequence.
    * @param seq underlying sequence
    */
   public BinomialTransform(final Sequence seq) {
-    this(seq, 0, false);
+    this(0, seq, 0, false);
+  }
+
+  /**
+   * Creates a new binomial transform sequence of the given sequence, skipping
+   * the specified number of terms in advance.
+   * @param seq underlying sequence
+   * @param skip number of terms of the source sequence to be skipped before the transform
+   */
+  public BinomialTransform(final int offset, final Sequence seq, final int skip) {
+    this(offset, seq, skip, false);
   }
 
   /**
@@ -32,7 +52,7 @@ public class BinomialTransform implements Sequence {
    * @param skip number of terms of the source sequence to be skipped before the transform
    */
   public BinomialTransform(final Sequence seq, final int skip) {
-    this(seq, skip, false);
+    this(0, seq, skip, false);
   }
 
   /**
@@ -42,7 +62,8 @@ public class BinomialTransform implements Sequence {
    * @param skip number of terms of the source sequence to be skipped before the transform
    * @param inverse true for an inverse binomial transform, false for a binomial transform
    */
-  public BinomialTransform(final Sequence seq, int skip, final boolean inverse) {
+  public BinomialTransform(final int offset, final Sequence seq, int skip, final boolean inverse) {
+    super(offset);
     mSeq = seq;
     mInverse = inverse;
     while (--skip >= 0) {
@@ -51,6 +72,17 @@ public class BinomialTransform implements Sequence {
     mTerms = new ArrayList<>();
     mBinom = new ArrayList<>();
     mRow = -1;
+  }
+
+  /**
+   * Creates a new binomial transform sequence of the given sequence, skipping
+   * the specified number of terms in advance.
+   * @param seq underlying sequence
+   * @param skip number of terms of the source sequence to be skipped before the transform
+   * @param inverse true for an inverse binomial transform, false for a binomial transform
+   */
+  public BinomialTransform(final Sequence seq, final int skip, final boolean inverse) {
+    this(0, seq, skip, inverse);
   }
 
   @Override
@@ -64,13 +96,6 @@ public class BinomialTransform implements Sequence {
       final Z absBinom = mBinom.get(iCol);
       final Z sigBinom = mInverse && (iCol & 1) != (mRow & 1) ? absBinom.negate() : absBinom;
           // inverse Pascal's triangle: even columns in odd rows and odd columns in even rows are negative
-    /*
-      System.out.println("  mRow=" + mRow + ", iCol=" + iCol + ", oldBinom=" + oldBinom + ", sigBinom=" + sigBinom + ", term=" + mTerms.get(iCol));
-      for (int i = 0; i <= mRow; ++i) {
-        System.out.print("  " + mBinom.get(i));
-      }
-      System.out.println();
-    */
       sum = sum.add(sigBinom.multiply(mTerms.get(iCol)));
       mBinom.set(iCol, oldBinom.add(absBinom));
       oldBinom = absBinom;

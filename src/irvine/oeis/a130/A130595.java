@@ -1,17 +1,23 @@
 package irvine.oeis.a130;
-// manually partran at 2022-10-03 20:38
 
-import irvine.oeis.a033.A033999;
-import irvine.oeis.triangle.PartitionTransformTriangle;
+import irvine.math.z.Binomial;
+import irvine.math.z.Z;
+import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A130595 Triangle read by rows: lower triangular matrix which is inverse to Pascal's triangle (A007318) regarded as a lower triangular matrix.
+ * A130595 Triangle read by rows: lower triangular matrix which is inverse to Pascal&apos;s triangle (A007318) regarded as a lower triangular matrix.
  * @author Georg Fischer
  */
-public class A130595 extends PartitionTransformTriangle {
+public class A130595 extends BaseTriangle {
 
   /** Construct the sequence. */
   public A130595() {
-    super(0, new A033999());
+    super(0, 0, 0);
+    hasRAM(true);
+  }
+
+  @Override
+  public Z triangleElement(final int n, final int k) {
+    return Binomial.binomial(n, k).multiply(((n - k) & 1) == 1 ? -1 : 1);
   }
 }

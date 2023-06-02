@@ -11,6 +11,8 @@ public class A070911 extends Sequence3 {
 
   // See https://codegolf.stackexchange.com/questions/253633/the-smallest-area-of-a-convex-grid-polygon
 
+  // todo this looks to be buggy for larger n -- problem also exists in C code, gets 79, 98, but then 120
+
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   protected int mN = 2;
   private int mMinArea = 0;
@@ -192,7 +194,7 @@ public class A070911 extends Sequence3 {
     final int[] x = new int[mN];
     final int[] y = new int[mN];
 
-    final int gridSize = mN;
+    final int gridSize = mN + 1; // heuristic!
     mMinArea = gridSize * gridSize;
     mSolnX = new int[mN];
     mSolnY = new int[mN];

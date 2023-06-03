@@ -1,13 +1,14 @@
 package irvine.oeis.a070;
 
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence3;
 
 /**
  * A063781.
  * @author Sean A. Irvine
  */
-public class A070911 extends Sequence3 {
+public class A070911 extends Sequence3 implements Conjectural {
 
   // See https://codegolf.stackexchange.com/questions/253633/the-smallest-area-of-a-convex-grid-polygon
 
@@ -20,6 +21,7 @@ public class A070911 extends Sequence3 {
   private int[] mSolnY;
 
   private boolean createPolygonJit(final int[] x, final int[] y, final int n, final int target, final int gridsize, int currArea) {
+    assert currArea >= 0;
     if (n >= 3) {
       final int x1 = x[n - 3] - x[n - 2];
       final int y1 = y[n - 3] - y[n - 2];
@@ -194,7 +196,7 @@ public class A070911 extends Sequence3 {
     final int[] x = new int[mN];
     final int[] y = new int[mN];
 
-    final int gridSize = mN + 1; // heuristic!
+    final int gridSize = mN == 20 ? 40 : mN + 1; // heuristic!
     mMinArea = gridSize * gridSize;
     mSolnX = new int[mN];
     mSolnY = new int[mN];

@@ -1,34 +1,15 @@
 package irvine.oeis.a002;
 
-import irvine.factor.factor.Jaguar;
-import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
 
 /**
  * A002046 Larger of amicable pair.
  * @author Sean A. Irvine
  */
-public class A002046 extends Sequence1 {
-
-  private Z mN = Z.valueOf(119);
-
-  private Z aliquot(final Z n) {
-    if (n.isProbablePrime()) {
-      return Z.ONE;
-    }
-    final FactorSequence fs = Jaguar.factor(n);
-    return fs.sigma().subtract(n);
-  }
+public class A002046 extends A002025 {
 
   @Override
-  public Z next() {
-    while (true) {
-      mN = mN.add(1);
-      final Z a = aliquot(mN);
-      if (a.compareTo(mN) > 0 && aliquot(a).equals(mN)) {
-        return a;
-      }
-    }
+  protected Z select(final Z n, final Z a) {
+    return a;
   }
 }

@@ -18,7 +18,7 @@ public class A002195 extends Sequence0 {
   private Z c(final int j, final int n) {
     Z s = Z.ZERO;
     for (int i = 0; i <= j / 2; ++i) {
-      s = s.signedAdd((i & 1) == 0, Binomial.binomial(j, i).multiply(Z.valueOf(2 * i - j).pow(2 * n + j)));
+      s = s.signedAdd((i & 1) == 0, Binomial.binomial(j, i).multiply(Z.valueOf(2L * i - j).pow(2L * n + j)));
     }
     return s;
   }
@@ -37,7 +37,7 @@ public class A002195 extends Sequence0 {
     }
     Q sum = Q.ZERO;
     for (int k = 1; k <= 2 * mN; ++k) {
-      sum = sum.add(b(k, mN).multiply(Binomial.binomial(2 * mN + k - 1, 2 * mN - 1)));
+      sum = sum.add(b(k, mN).multiply(Binomial.binomial(2L * mN + k - 1, 2L * mN - 1)));
     }
     return sum;
   }

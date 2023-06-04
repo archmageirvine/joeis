@@ -5,7 +5,7 @@ import irvine.oeis.a126.A126988;
 import irvine.oeis.triangle.Product;
 
 /**
- * A127168 Triangle, square of A126988, row sums = A060640.
+ * A127168 Triangle read by rows: square of A126988.
  * @author Georg Fischer
  */
 public class A127168 extends Product {

@@ -5,7 +5,7 @@ import irvine.oeis.a111.A111125;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A082985 Coefficient table for Chebyshev&apos;s U(2*n,x) polynomial expanded in decreasing powers of (-4*(1-x^2)).
+ * A082985 Coefficient table for Chebyshev's U(2*n,x) polynomial expanded in decreasing powers of (-4*(1-x^2)).
  * @author Georg Fischer
  */
 public class A082985 extends Transpose {

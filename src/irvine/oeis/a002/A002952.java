@@ -13,6 +13,10 @@ public class A002952 extends Sequence1 {
 
   private Z mN = Z.valueOf(113);
 
+  protected Z select(final Z n, final Z a) {
+    return n;
+  }
+
   @Override
   public Z next() {
     while (true) {
@@ -22,7 +26,7 @@ public class A002952 extends Sequence1 {
       if (unitaryDivisorSum.compareTo(mN) > 0) {
         final FactorSequence fs2 = Jaguar.factor(unitaryDivisorSum);
         if (fs2.unitaryDivisorSum().equals(mN)) {
-          return mN;
+          return select(mN, unitaryDivisorSum);
         }
       }
     }

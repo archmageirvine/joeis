@@ -4,7 +4,7 @@ package irvine.oeis.a081;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A081581 Pascal-(1,5,1) array.
+ * A081581 Pascal-(1,6,1) array.
  * @author Georg Fischer
  */
 public class A081581 extends GeneratingFunctionTriangle {

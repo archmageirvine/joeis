@@ -19,13 +19,17 @@ public class A002025 extends Sequence1 {
     return Jaguar.factor(n).sigma().subtract(n);
   }
 
+  protected Z select(final Z n, final Z a) {
+    return n;
+  }
+
   @Override
   public Z next() {
     while (true) {
       mN = mN.add(1);
       final Z a = aliquot(mN);
       if (a.compareTo(mN) > 0 && aliquot(a).equals(mN)) {
-        return mN;
+        return select(mN, a);
       }
     }
   }

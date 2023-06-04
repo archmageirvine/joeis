@@ -7,7 +7,7 @@ import irvine.oeis.a010.A010051;
 import irvine.oeis.a029.A029835;
 
 /**
- * A062590 Variation on A029834: a discrete version of the Mangoldt function. If n is prime then floor(log(prime(n)) else 0.
+ * A062590 Variation on A029834: a discrete version of the Mangoldt function. If n is prime then floor(log(prime(n))) else 0.
  * @author Georg Fischer
  */
 public class A062590 extends AbstractSequence {

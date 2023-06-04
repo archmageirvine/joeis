@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A106391 A &quot;cosh transform&quot; of binomial(2n,n-1).
+ * A106391 A "cosh transform" of binomial(2n,n-1).
  * @author Georg Fischer
  */
 public class A106391 extends Sequence0 {

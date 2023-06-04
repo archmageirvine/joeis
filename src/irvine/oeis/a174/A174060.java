@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a048.A048760;
 
 /**
- * A174060 Sum_{k=1..n} {floor(sqrt(k))^2}.
+ * A174060 a(n) = Sum_{k=0..n} floor(sqrt(k))^2.
  * @author Georg Fischer
  */
 public class A174060 extends PartialSumSequence {

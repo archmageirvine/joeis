@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001923;
 import irvine.oeis.transform.BinomialTransform;
 
 /**
- * A065980 Inverse binomial transform of [1^1, 2^2, 3^3,...], shifted right by one index.
+ * A065980 Inverse binomial transform of [1^1,2^2,3^3,...], shifted right by one index.
  * @author Georg Fischer
  */
 public class A065980 extends BinomialTransform {

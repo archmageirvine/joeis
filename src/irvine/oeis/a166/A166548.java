@@ -6,7 +6,7 @@ import irvine.oeis.a047.A047999;
 import irvine.oeis.triangle.Product;
 
 /**
- * A166548 Triangle read by rows, A047999 * A007318; (Sierpinski&apos;s gasket * Pascal&apos;s triangle).
+ * A166548 Triangle read by rows, A047999 * A007318; (Sierpinski's gasket * Pascal's triangle).
  * @author Georg Fischer
  */
 public class A166548 extends Product {

@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001168;
 import irvine.oeis.transform.BinomialTransform;
 
 /**
- * A113174 Number of fixed 3D piled polyominoes: polycubes with fixed orientation, with no cubes &quot;sitting on air&quot;.
+ * A113174 Number of fixed 3D piled polyominoes: polycubes with fixed orientation, with no cubes "sitting on air".
  * @author Georg Fischer
  */
 public class A113174 extends BinomialTransform {

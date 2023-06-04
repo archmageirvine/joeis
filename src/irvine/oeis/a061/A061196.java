@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061196 If n=sum(c_i*10^i) then let b(n)=sum(c_i*(i+1)). Order the integers by b(n) and then n.
+ * A061196 If n = Sum_{i} c_i * 10^i then let b(n) = Sum_{i} c_i * (i+1). Order the integers by b(n) and then n.
  * @author Sean A. Irvine
  */
 public class A061196 extends Sequence0 {

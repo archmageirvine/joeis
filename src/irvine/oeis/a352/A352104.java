@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
 /**
- * A352104 a(n) is the number of 1&apos;s in the maximal tribonacci representation of n (A352103).
+ * A352104 a(n) is the number of 1's in the maximal tribonacci representation of n (A352103).
  * @author Georg Fischer
  */
 public class A352104 extends A352103 {

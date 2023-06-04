@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a001.A001168;
 
 /**
- * A162678 Number of fixed strictly disconnected n-ominoes bounded (not necessarily tightly) by an n*n square
+ * A162678 Number of fixed strictly disconnected n-ominoes bounded (not necessarily tightly) by an n*n square.
  * @author Georg Fischer
  */
 public class A162678 extends AbstractSequence {

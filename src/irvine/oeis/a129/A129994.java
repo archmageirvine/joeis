@@ -1,22 +1,23 @@
-package irvine.oeis.a131;
+package irvine.oeis.a129;
 
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A131431 3n + 1 preceded by n zeros.
+ * A129994 Triangle read by rows: 2*A007318 - I.
  * @author Georg Fischer
  */
-public class A131431 extends BaseTriangle {
+public class A129994 extends BaseTriangle {
 
   /** Construct the sequence. */
-  public A131431() {
+  public A129994() {
     super(0, 0, 0);
     hasRAM(true);
   }
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return (k == n) ? Z.valueOf(3 * n + 1) : Z.ZERO;
+    return (k == n) ? Z.ONE : Binomial.binomial(n, k).multiply2();
   }
 }

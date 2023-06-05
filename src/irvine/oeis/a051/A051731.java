@@ -1,23 +1,22 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.triangle.BaseTriangle;
 
 /**
  * A051731 Triangle read by rows: T(n,k) = 1 if k divides n, T(n,k) = 0 otherwise (for n &gt;= 1 and 1 &lt;= k &lt;= n).
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A051731 extends Sequence1 {
+public class A051731 extends BaseTriangle {
 
-  private long mN = 0;
-  private long mM = 0;
+  /** Construct the sequence. */
+  public A051731() {
+    super(1, 1, 1);
+    hasRAM(true);
+  }
 
   @Override
-  public Z next() {
-    if (++mM > mN) {
-      ++mN;
-      mM = 1;
-    }
-    return mN % mM == 0 ? Z.ONE : Z.ZERO;
+  public Z triangleElement(final int n, final int k) {
+    return (n % k == 0) ? Z.ONE : Z.ZERO;
   }
 }

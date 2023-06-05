@@ -1,22 +1,22 @@
-package irvine.oeis.a131;
+package irvine.oeis.a097;
 
 import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A131431 3n + 1 preceded by n zeros.
+ * A097807 Riordan array (1/(1+x),1) read by rows.
  * @author Georg Fischer
  */
-public class A131431 extends BaseTriangle {
+public class A097807 extends BaseTriangle {
 
   /** Construct the sequence. */
-  public A131431() {
+  public A097807() {
     super(0, 0, 0);
     hasRAM(true);
   }
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return (k == n) ? Z.valueOf(3 * n + 1) : Z.ZERO;
+    return (((n - k) & 1) == 0) ? Z.ONE : Z.NEG_ONE;
   }
 }

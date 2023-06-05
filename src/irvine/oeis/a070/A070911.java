@@ -15,7 +15,7 @@ public class A070911 extends Sequence3 implements Conjectural {
   // todo this looks to be buggy for larger n -- problem also exists in C code, gets 79, 98, but then 120
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  protected int mN = 19; //2;
+  protected int mN = 2;
   private int mMinArea = 0;
   private int[] mSolnX;
   private int[] mSolnY;

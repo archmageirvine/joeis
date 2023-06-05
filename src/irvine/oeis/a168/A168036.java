@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003415;
 
 /**
- * A168036 Difference between n&apos; and n, where n&apos; is the arithmetic derivative of n (A003415).
+ * A168036 Difference between n' and n, where n' is the arithmetic derivative of n (A003415).
  * @author Georg Fischer
  */
 public class A168036 extends A003415 {

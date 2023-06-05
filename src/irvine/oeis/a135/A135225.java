@@ -7,7 +7,7 @@ import irvine.oeis.a103.A103451;
 import irvine.oeis.triangle.Product;
 
 /**
- * A135225 Pascal&apos;s triangle A007318 augmented with a leftmost border column of 1&apos;s.
+ * A135225 Pascal's triangle A007318 augmented with a leftmost border column of 1's.
  * @author Georg Fischer
  */
 public class A135225 extends Product {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A130095 Inverse Moebius transform of odd-indexed Fibonacci numbers.
+ * A130095 Inverse M\u00f6bius transform of odd-indexed Fibonacci numbers.
  * @author Georg Fischer
  */
 public class A130095 extends Sequence1 {

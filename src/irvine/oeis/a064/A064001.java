@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a005.A005231;
 
 /**
- * A064001.
+ * A064001 Odd abundant numbers not divisible by 5.
  * @author Sean A. Irvine
  */
 public class A064001 extends FilterSequence {

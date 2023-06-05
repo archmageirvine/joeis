@@ -4,7 +4,7 @@ package irvine.oeis.a340;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A340384
+ * A340384 Positions of seventeens in A340094, the Dirichlet inverse of f(n) = n - phi(n) + 1.
  * @author Georg Fischer
  */
 public class A340384 extends FilterPositionSequence {

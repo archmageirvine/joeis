@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003415;
 
 /**
- * A359790 Dirichlet inverse of function f(n) = 1 + n&apos;, where n&apos; stands for the arithmetic derivative of n, A003415(n).
+ * A359790 Dirichlet inverse of function f(n) = 1 + n', where n' stands for the arithmetic derivative of n, A003415(n).
  * @author Georg Fischer
  */
 public class A359790 extends Sequence1 {

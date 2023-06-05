@@ -6,7 +6,7 @@ import irvine.oeis.a127.A127701;
 import irvine.oeis.triangle.Product;
 
 /**
- * A128219 A000012 * A127701. a(1) = 1, a(2) = 2, a(3) = 2; by rows, n-1 terms of 2, 3, 4, ... followed by &quot;n&quot;.
+ * A128219 A000012 * A127701. a(1) = 1, a(2) = 2, a(3) = 2; by rows, n-1 terms of 2, 3, 4, ... followed by "n".
  * @author Georg Fischer
  */
 public class A128219 extends Product {

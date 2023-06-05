@@ -7,7 +7,7 @@ import irvine.oeis.a018.A018804;
 import irvine.oeis.a347.A347130;
 
 /**
- * A348495 a(n) = gcd(A018804(n), A347130(n)), where A347130 is the Dirichlet convolution of the identity function with the arithmetic derivative of n (A003415), and A018804 is Pillai&apos;s arithmetical function.
+ * A348495 a(n) = gcd(A018804(n), A347130(n)), where A347130 is the Dirichlet convolution of the identity function with the arithmetic derivative of n (A003415), and A018804 is Pillai's arithmetical function.
  * @author Georg Fischer
  */
 public class A348495 extends Sequence1 {

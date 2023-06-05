@@ -5,7 +5,7 @@ import irvine.oeis.a047.A047999;
 import irvine.oeis.triangle.Product;
 
 /**
- * A166453 Triangle read by rows, square of Sierpinski&apos;s gasket, (A047999)^2
+ * A166453 Triangle read by rows, square of Sierpinski's gasket, (A047999)^2.
  * @author Georg Fischer
  */
 public class A166453 extends Product {

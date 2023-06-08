@@ -27,7 +27,7 @@ public class A131416 extends Combiner {
    * @param seq4 fourth sequence
    */
   public A131416(final int offset, final Sequence seq1, final Sequence seq2, final char oper, final Sequence seq3, final Sequence seq4) {
-    super(offset, new Product(seq1, seq2), new Product(seq3, seq4), (oper == '+' ? ADD : SUBTRACT));
+    super(offset, new Product(seq1, seq2), new Product(seq3, seq4), oper == '+' ? ADD : SUBTRACT);
   }
 
   @Override

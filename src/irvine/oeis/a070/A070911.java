@@ -12,7 +12,7 @@ public class A070911 extends Sequence3 implements Conjectural {
 
   // See https://codegolf.stackexchange.com/questions/253633/the-smallest-area-of-a-convex-grid-polygon
 
-  // todo this looks to be buggy for larger n -- problem also exists in C code, gets 79, 98, but then 120
+  // todo this looks to be buggy for larger n -- problem also exists in the corresponding C code, gets 79, 98, but then 120
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   protected int mN = 2;
@@ -191,11 +191,13 @@ public class A070911 extends Sequence3 implements Conjectural {
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN > 20) {
+      throw new UnsupportedOperationException("Code is known the be buggy for n>=20");
+    }
     final int[] x = new int[mN];
     final int[] y = new int[mN];
 
-    final int gridSize = mN == 20 ? 40 : mN + 1; // heuristic!
+    final int gridSize = mN + 1; // heuristic!
     mMinArea = gridSize * gridSize;
     mSolnX = new int[mN];
     mSolnY = new int[mN];

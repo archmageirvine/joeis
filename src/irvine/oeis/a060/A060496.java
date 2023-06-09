@@ -10,11 +10,16 @@ public class A060496 extends A060117 {
 
   private int mN = -1;
 
-  private Z toZ(final int[] s) {
+  /**
+   * Convert an array of decimal digits to an integer.
+   * @param s array to convert
+   * @return number
+   */
+  public static Z toZ(final int[] s) {
     Z z = Z.ZERO;
     for (int j = s.length - 1; j >= 0; --j) {
       if (s[j] > 9) {
-        throw new UnsupportedOperationException("Invalid: " + mN);
+        throw new UnsupportedOperationException("Invalid: " + s[j]);
       }
       z = z.multiply(10);
       z = z.add(s[j]);

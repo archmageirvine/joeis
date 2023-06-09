@@ -47,7 +47,7 @@ public class A060117 extends Sequence0 {
     return permUnrank3RAux(n - 1, r - s * f, new IntegerPermutation(q).compose(p));
   }
 
-  IntegerPermutation permUnrank3R(final int r) {
+  protected IntegerPermutation permUnrank3R(final int r) {
     final int n = factorialBase(r).size();
     return permUnrank3RAux(n + 1, r, new IntegerPermutation());
   }

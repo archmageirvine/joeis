@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.a034.A034851;
 
 /**
- * A136489 3*A007318 - 2*A034851 (i.e., thrice Pascal&apos;s triangle - twice Losanitch&apos;s triangle).
+ * A136489 3*A007318 - 2*A034851 (i.e., thrice Pascal's triangle - twice Losanitch's triangle).
  * @author Georg Fischer
  */
 public class A136489 extends AbstractSequence {

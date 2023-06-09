@@ -7,7 +7,7 @@ import irvine.oeis.a047.A047999;
 import irvine.oeis.triangle.Inverse;
 
 /**
- * A167274 Triangle read by rows, = 2*A047999 - A047999^(-1); = twice Sierpinski&apos;s gasket minus the inverse of Sierpinski&apos;s gasket.
+ * A167274 Triangle read by rows, = 2*A047999 - A047999^(-1); = twice Sierpinski's gasket minus the inverse of Sierpinski's gasket.
  * @author Georg Fischer
  */
 public class A167274 extends AbstractSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A109906 A triangle based on A000045 and Pascal&apos;s triangle: T(n,m) = Fibonacci(n-m+1) * Fibonacci(m+1) * binomial(n,m).
+ * A109906 A triangle based on A000045 and Pascal's triangle: T(n,m) = Fibonacci(n-m+1) * Fibonacci(m+1) * binomial(n,m).
  * @author Georg Fischer
  */
 public class A109906 extends BaseTriangle {

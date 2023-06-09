@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A140874 Triangle T(n,k) = Binomial.binomial(n,k+2)-2*Binomial.binomial(n,k+1)-Binomial.binomial(n,k) read by rows, 0&lt;=k&lt;=n-2, n&gt;=2.
+ * A140874 Triangle T(n,k) = binomial(n,k+2)-2*binomial(n,k+1)-binomial(n,k) read by rows, 0&lt;=k&lt;=n-2, n&gt;=2.
  * @author Georg Fischer
  */
 public class A140874 extends BaseTriangle {

@@ -1,20 +1,21 @@
 package irvine.oeis.a048;
 
+import irvine.factor.factor.Jaguar;
+import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.oeis.a000.A000005;
-import irvine.oeis.a034.A034444;
+import irvine.oeis.Sequence1;
 
 /**
  * A048105 Number of non-unitary divisors of n.
  * @author Sean A. Irvine
  */
-public class A048105 extends A000005 {
+public class A048105 extends Sequence1 {
 
-  private final Sequence mA = new A034444();
+  private long mN = 0;
 
   @Override
   public Z next() {
-    return super.next().subtract(mA.next());
+    final FactorSequence fs = Jaguar.factor(++mN);
+    return fs.sigma0().subtract(fs.unitarySigma0());
   }
 }

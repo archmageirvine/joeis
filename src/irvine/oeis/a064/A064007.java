@@ -8,14 +8,26 @@ import irvine.math.z.Z;
  */
 public class A064007 extends A064413 {
 
-  private Z mN = Z.THREE;
+  private final Z mM;
+  private Z mN;
+
+
+  protected A064007(final long m) {
+    mM = Z.valueOf(m);
+    mN = mM;
+  }
+
+  /** Construct the sequence. */
+  public A064007() {
+    this(3);
+  }
 
   @Override
   public Z next() {
     super.next();
     while (mSeen.contains(mN)) {
-      mN = mN.add(3);
+      mN = mN.add(mM);
     }
-    return mN.divide(3);
+    return mN.divide(mM);
   }
 }

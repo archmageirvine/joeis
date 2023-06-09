@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a047.A047999;
 
 /**
- * A167366 Triangle read by rows, 2*A047999 - A097806 (signed) = twice Sierpinski&apos;s gasket - the signed pair sum operator.
+ * A167366 Triangle read by rows, 2*A047999 - A097806 (signed) = twice Sierpinski's gasket - the signed pair sum operator.
  * @author Georg Fischer
  */
 public class A167366 extends AbstractSequence {

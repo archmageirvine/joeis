@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A107044 A symmetric factorial array, read by rows: A(n,k) = min(n,k)!.
+ * A107044 A symmetric factorial triangle, read by rows: T(n,k) = min(n,k)!.
  * @author Georg Fischer
  */
 public class A107044 extends UpperLeftTriangle {

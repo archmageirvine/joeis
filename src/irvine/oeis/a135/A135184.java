@@ -6,7 +6,7 @@ import irvine.oeis.a128.A128229;
 import irvine.oeis.triangle.Product;
 
 /**
- * A135184 Triangle read by rows: A000012 * A128229^2 as infinite lower triangular matrices.
+ * A135184 A000012 * A128229^2.
  * @author Georg Fischer
  */
 public class A135184 extends Product {

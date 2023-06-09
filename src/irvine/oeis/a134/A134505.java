@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a049.A049310;
 
 /**
- * A134505 Replace 0&apos;s with 1&apos;s in triangle A049310, and take absolute values.
+ * A134505 Replace 0's with 1's in triangle A049310, and take absolute values.
  * @author Georg Fischer
  */
 public class A134505 extends Sequence1 {

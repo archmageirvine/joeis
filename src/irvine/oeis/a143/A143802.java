@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A143802 Triangle read by rows, &quot;n&quot; followed by (n-1) terms of (1, 3, 7, 15, ...).
+ * A143802 Triangle read by rows, "n" followed by (n-1) terms of (1, 3, 7, 15, ...).
  * @author Georg Fischer
  */
 public class A143802 extends BaseTriangle {

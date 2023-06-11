@@ -1,12 +1,11 @@
 package irvine.nt.cyclotomic;
 
+import irvine.math.Mobius;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.math.Mobius;
 
 /**
  * Compute values of cyclotomic polynomials.
- *
  * @author Sean A. Irvine
  * @author A. Kruppa
  */
@@ -16,7 +15,6 @@ public final class Cyclotomic {
 
   /**
    * If n is a perfect power of a prime, return that prime, otherwise return 1.
-   *
    * @param n value to test
    * @return 1 or a prime
    */

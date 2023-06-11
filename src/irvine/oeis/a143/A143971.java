@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A143971 Triangle read by rows, (3n-2) subsequences decrescendo
+ * A143971 Triangle read by rows, (3n-2) subsequences decrescendo.
  * @author Georg Fischer
  */
 public class A143971 extends BaseTriangle {

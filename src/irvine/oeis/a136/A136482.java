@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.a034.A034851;
 
 /**
- * A136482 Triangle read by rows: T(n,k) = 2*A007318(n,k) - A034851(n,k) (i.e., twice Pascal&apos;s triangle - the Losanitch triangle).
+ * A136482 Triangle read by rows: T(n,k) = 2*A007318(n,k) - A034851(n,k) (i.e., twice Pascal's triangle - the Losanitch triangle).
  * @author Georg Fischer
  */
 public class A136482 extends A007318 {

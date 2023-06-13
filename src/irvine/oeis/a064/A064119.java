@@ -5,20 +5,21 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064117 Primes formed by the initial digits of the decimal expansion of the golden ratio phi = (1+sqrt(5))/2.
+ * A064119 Numbers k such that the first k digits of the Golden Ratio form a prime.
  * @author Sean A. Irvine
  */
-public class A064117 extends Sequence1 {
+public class A064119 extends Sequence1 {
 
+  private long mN = 1;
   private Z mT = Z.ONE;
 
   @Override
   public Z next() {
     while (true) {
+      ++mN;
       mT = mT.multiply(10);
-      final Z t = CR.PHI.multiply(mT).floor();
-      if (t.isProbablePrime()) {
-        return t;
+      if (CR.PHI.multiply(mT).floor().isProbablePrime()) {
+        return Z.valueOf(mN);
       }
     }
   }

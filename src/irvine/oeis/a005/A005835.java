@@ -28,7 +28,7 @@ public class A005835 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z[] d = Jaguar.factor(++mN).divisors();
+      final Z[] d = Jaguar.factor(++mN).divisorsSorted();
       if (isPseudoperfect(d, d.length - 1, Z.ZERO)) {
         return Z.valueOf(mN);
       }

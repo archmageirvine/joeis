@@ -96,4 +96,13 @@ public final class Italian extends AbstractLanguage {
     return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
   }
 
+  /**
+   * Print numbers.
+   * @param args numerical values
+   */
+  public static void main(final String[] args) {
+    for (final String s : args) {
+      System.out.println(SINGLETON.toText(Integer.parseInt(s)));
+    }
+  }
 }

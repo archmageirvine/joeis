@@ -1,19 +1,17 @@
 package irvine.oeis.a020;
 
-import irvine.math.z.Z;
-import irvine.oeis.Conjectural;
-import irvine.oeis.a202.A202342;
+import irvine.oeis.SkipSequence;
+import irvine.oeis.a000.A000930;
+import irvine.oeis.a064.A064105;
 
 /**
  * A020942 First column of 3rd-order Zeckendorf array.
  * @author Sean A. Irvine
  */
-public class A020942 extends A202342 implements Conjectural {
+public class A020942 extends A064105 {
 
-  private long mN = -1;
-
-  @Override
-  public Z next() {
-    return super.next().add(++mN);
+  /** Construct the sequence. */
+  public A020942() {
+    super(new SkipSequence(new A000930(), 2), 3);
   }
 }

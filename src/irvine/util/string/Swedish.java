@@ -91,4 +91,14 @@ public class Swedish extends AbstractLanguage {
     }
     return TENS[tens] + small()[units];
   }
+
+  /**
+   * Print numbers.
+   * @param args numerical values
+   */
+  public static void main(final String[] args) {
+    for (final String s : args) {
+      System.out.println(SINGLETON.toText(Integer.parseInt(s)));
+    }
+  }
 }

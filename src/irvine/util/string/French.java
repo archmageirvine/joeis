@@ -196,4 +196,13 @@ public final class French extends AbstractLanguage {
     return x == 1 ? "premier" : ord + "i\u00E8me"; // ieme with e grave
   }
 
+  /**
+   * Print numbers.
+   * @param args numerical values
+   */
+  public static void main(final String[] args) {
+    for (final String s : args) {
+      System.out.println(SINGLETON.toText(Integer.parseInt(s)));
+    }
+  }
 }

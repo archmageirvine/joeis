@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001065;
 import irvine.oeis.a168.A168036;
 
 /**
- * A345001 a(n) = sigma(n) + n&apos; - 2n, where n&apos; is the arithmetic derivative of n (A003415) and sigma is the sum of divisors (A000203).
+ * A345001 a(n) = sigma(n) + n' - 2n, where n' is the arithmetic derivative of n (A003415) and sigma is the sum of divisors (A000203).
  * @author Georg Fischer
  */
 public class A345001 extends AbstractSequence {

@@ -162,4 +162,14 @@ public final class Dutch extends AbstractLanguage {
     }
     return toDutch1(x);
   }
+
+  /**
+   * Print numbers.
+   * @param args numerical values
+   */
+  public static void main(final String[] args) {
+    for (final String s : args) {
+      System.out.println(SINGLETON.toText(Integer.parseInt(s)));
+    }
+  }
 }

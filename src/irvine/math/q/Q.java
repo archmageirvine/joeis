@@ -109,6 +109,19 @@ public class Q implements Comparable<Q>, Serializable {
   }
 
   /**
+   * Construct the rational number from a String of the form <code>"p/q"</code>.
+   *
+   * @param val String of the form "p/q"
+   * @exception IllegalArgumentException if <code>q</code> is zero.
+   */
+  public Q(final String val) {
+    final int slashPos = val.indexOf('/');
+    final Q qt = (slashPos < 0) ? new Q(new Z(val), Z.ONE) : new Q(new Z(val.substring(0, slashPos)), new Z(val.substring(slashPos + 1)));
+    mP = qt.num();
+    mQ = qt.den();
+  }
+
+  /**
    * Return the numerator.
    * @return numerator
    */

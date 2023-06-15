@@ -15,7 +15,7 @@ public class A107846 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    int[] counts = ZUtils.digitCounts(Z.valueOf(mN), 10);
+    final int[] counts = ZUtils.digitCounts(Z.valueOf(mN), 10);
     int dupl = 0;
     for (int i = 0; i < 10; ++i) {
       if (counts[i] >= 2) {

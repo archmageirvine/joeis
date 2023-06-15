@@ -97,6 +97,10 @@ Certain sequences involving counting positions in chess make use of
 the [Chesspresso library](http://www.chesspresso.org/) by Bernhard
 Seybold.
 
+We also recommend having a look at the
+[LODA](https://github.com/loda-lang/loda-programs)
+project.
+
 Testing
 -------
 

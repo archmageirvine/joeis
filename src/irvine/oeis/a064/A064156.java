@@ -9,6 +9,8 @@ import irvine.oeis.Sequence1;
  */
 public class A064156 extends Sequence1 {
 
+  // todo how to tell when the final answer will be 0
+
   private int mN = 0;
   private long mLimit = 0;
 

@@ -11,7 +11,7 @@ public class A026087 extends DifferenceSequence {
 
   /** Construct the sequence. */
   public A026087() {
-    super(new PrependSequence(new A026071(), 0));
+    super(4, new PrependSequence(new A026071(), 0));
   }
 }
 

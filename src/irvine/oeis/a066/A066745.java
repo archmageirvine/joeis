@@ -1,16 +1,16 @@
 package irvine.oeis.a066;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A066745 Least number of applications of f(k) = k(k+1)+1 to n to yield a prime, if this number exists; -1 otherwise.
  * @author Sean A. Irvine
  */
-public class A066745 extends Sequence1 {
+public class A066745 extends Sequence0 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private Z mN = Z.ZERO;
+  private Z mN = Z.NEG_ONE;
 
   @Override
   public Z next() {

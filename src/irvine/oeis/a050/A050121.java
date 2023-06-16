@@ -10,6 +10,6 @@ public class A050121 extends DifferenceSequence {
 
   /** Construct the sequence. */
   public A050121() {
-    super(new A050120());
+    super(2, new A050120());
   }
 }

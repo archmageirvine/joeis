@@ -12,7 +12,7 @@ public class A026084 extends DifferenceSequence {
 
   /** Construct the sequence. */
   public A026084() {
-    super(new SkipSequence(new A024998(), 2));
+    super(4, new SkipSequence(new A024998(), 2));
   }
 }
 

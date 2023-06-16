@@ -2,7 +2,7 @@ package irvine.oeis.a063;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence2;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.ZeroSpacedSequence;
 import irvine.oeis.a054.A054581;
@@ -12,7 +12,7 @@ import irvine.oeis.a058.A058866;
  * A063692 Number of 2-trees rooted at a triangle with two similar edges.
  * @author Sean A. Irvine
  */
-public class A063692 extends Sequence1 {
+public class A063692 extends Sequence2 {
 
   // I could not get direct computation of 3.5.16 in Harary to work,
   // on instead computed here via 3.5.19.

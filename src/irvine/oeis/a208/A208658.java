@@ -10,6 +10,6 @@ public class A208658 extends RowSumSequence {
 
   /** Construct the sequence. */
   public A208658() {
-    super(new A208657());
+    super(1, new A208657());
   }
 }

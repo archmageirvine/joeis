@@ -11,7 +11,7 @@ public class A055325 extends Inverse {
 
   /** Construct the sequence. */
   public A055325() {
-    super(new A008292());
+    super(1, new A008292());
   }
 
 }

@@ -11,7 +11,7 @@ public class A129765 extends BaseTriangle {
 
   /** Construct the sequence. */
   public A129765() {
-    super(0, 0, 0);
+    super(1, 1, 1);
     hasRAM(true);
   }
 

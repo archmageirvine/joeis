@@ -5,28 +5,27 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.ExponentialGeneratingFunction;
+import irvine.oeis.Sequence0;
 
 /**
  * A196873 E.g.f. A(x) satisfies: A(x*cos(x)) = 1/cos(x).
  * E.g.f.: divx(reverse(x*cos(x)))
  * @author Georg Fischer
  */
-public class A196873 extends ExponentialGeneratingFunction {
+public class A196873 extends Sequence0 {
 
-  /** Construct the sequence. */
-  public A196873() {
-    super(0 + 1);
-  }
-
-  @Override
-  public Polynomial<Q> compute(final int n) {
-    return n == 0 ? RING.one() : RING.divide(RING.reversion(RING.multiply(RING.x(), RING.cos(RING.x(), mN), mN), mN), new Q(mN));
-  }
-
+  private final ExponentialGeneratingFunction mSeq = new ExponentialGeneratingFunction(1) {
+        @Override
+        public Polynomial<Q> compute(final int n) {
+          return n == 0 ? RING.one() : RING.divide(RING.reversion(RING.multiply(RING.x(), 
+              RING.cos(RING.x(), mN), mN), mN), new Q(mN));
+        }
+      };
+  
   @Override
   public Z next() {
-    final Z result = super.next();
-    super.next();
+    final Z result = mSeq.next();
+    mSeq.next();
     return result;
   }
 }

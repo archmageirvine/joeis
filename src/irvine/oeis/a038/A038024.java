@@ -12,7 +12,7 @@ public class A038024 extends DifferenceSequence {
 
   /** Construct the sequence. */
   public A038024() {
-    super(new A027423());
+    super(1, new A027423());
   }
 
   @Override

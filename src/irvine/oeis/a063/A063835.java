@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ConvolutionSequence;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000041;
 import irvine.oeis.a047.A047968;
 
@@ -13,7 +13,7 @@ import irvine.oeis.a047.A047968;
  * A063835 Three times partitioned numbers: the number of ways a number can be partitioned in (not necessarily different) parts and each part again so partitioned a second and a third time.
  * @author Sean A. Irvine
  */
-public class A063835 extends Sequence0 {
+public class A063835 extends Sequence1 {
 
   private int mN = 0;
   private final MemorySequence mA = MemorySequence.cachedSequence(new ConvolutionSequence(new PrependSequence(new A047968(), 0), new A000041()));

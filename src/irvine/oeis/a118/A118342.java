@@ -12,6 +12,6 @@ public class A118342 extends RootSequence {
 
   /** Construct the sequence. */
   public A118342() {
-    super(1, new SkipSequence(new A108447(), 1), 3, 1);
+    super(0, new SkipSequence(new A108447(), 1), 3, 1);
   }
 }

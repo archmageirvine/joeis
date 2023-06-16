@@ -11,6 +11,6 @@ public class A055300 extends Inverse {
 
   /** Construct the sequence. */
   public A055300() {
-    super(new SubTriangle(new A055290(), 1));
+    super(2, new SubTriangle(new A055290(), 1));
   }
 }

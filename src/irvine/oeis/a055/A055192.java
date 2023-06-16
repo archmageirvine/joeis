@@ -11,6 +11,6 @@ public class A055192 extends DifferenceSequence {
 
   /** Construct the sequence. */
   public A055192() {
-    super(new DifferenceSequence(new A049312()));
+    super(2, new DifferenceSequence(new A049312()));
   }
 }

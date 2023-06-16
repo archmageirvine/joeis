@@ -1,13 +1,13 @@
 package irvine.oeis.a063;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A063485 Composites of the form 2^(2^n)+3.
  * @author Sean A. Irvine
  */
-public class A063485 extends Sequence1 {
+public class A063485 extends Sequence0 {
 
   private int mN = 0;
 

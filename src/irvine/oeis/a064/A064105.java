@@ -6,7 +6,7 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence2;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000930;
 
@@ -14,7 +14,7 @@ import irvine.oeis.a000.A000930;
  * A064105 2nd column of 3rd-order Zeckendorf array.
  * @author Sean A. Irvine
  */
-public class A064105 extends Sequence1 {
+public class A064105 extends Sequence2 {
 
   // This is kind of like a skipping closure sequence
 

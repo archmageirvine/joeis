@@ -17,7 +17,7 @@ public class A274996 extends AbstractSequence {
 
   // After Alois P. Heinz
 
-  private static final Z[][] C1 = new Z[][] {{Z.ZERO, Z.ONE}, {Z.ONE, Z.ONE}};
+  private static final Z[][] C1 = {{Z.ZERO, Z.ONE}, {Z.ONE, Z.ONE}};
 
   private final A007570 mSeq2 = new A007570();
 

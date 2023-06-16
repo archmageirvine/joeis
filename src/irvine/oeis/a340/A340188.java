@@ -4,7 +4,6 @@ package irvine.oeis.a340;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.a063.A063994;
-import irvine.oeis.a340.A340187;
 
 /**
  * A340188 Sum of A063994 and its Dirichlet inverse, where A063994(x) = Product_{primes p dividing x} gcd(p-1, x-1).
@@ -12,8 +11,8 @@ import irvine.oeis.a340.A340187;
  */
 public class A340188 extends AbstractSequence {
 
-  private A063994 mSeq1 = new A063994();
-  private A340187 mSeq2 = new A340187();
+  private final A063994 mSeq1 = new A063994();
+  private final A340187 mSeq2 = new A340187();
 
   /** Construct the sequence. */
   public A340188() {

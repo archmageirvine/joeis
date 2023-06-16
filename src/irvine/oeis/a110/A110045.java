@@ -18,7 +18,7 @@ public class A110045 extends GeneralizedEulerTransform {
 
   @Override
   protected Z[] advanceF(final long k) {
-    return new Z[] {Z.ONE.shiftLeft((k - 1)).subtract(1)};
+    return new Z[] {Z.ONE.shiftLeft(k - 1).subtract(1)};
   }
 
   @Override

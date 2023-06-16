@@ -23,7 +23,7 @@ public class A356846 extends AbstractSequence {
 
   @Override
   public Z next() {
-  	++mN;
+    ++mN;
     return mSeq1.next().subtract((mN == 0) ? Z.ONE : mSeq2.next());
   }
 }

@@ -4,7 +4,6 @@ package irvine.oeis.a347;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.a332.A332844;
-import irvine.oeis.a347.A347090;
 
 /**
  * A347091 Sum of A332844 and its Dirichlet inverse.
@@ -12,8 +11,8 @@ import irvine.oeis.a347.A347090;
  */
 public class A347091 extends AbstractSequence {
 
-  private A332844 mSeq1 = new A332844();
-  private A347090 mSeq2 = new A347090();
+  private final A332844 mSeq1 = new A332844();
+  private final A347090 mSeq2 = new A347090();
 
   /** Construct the sequence. */
   public A347091() {

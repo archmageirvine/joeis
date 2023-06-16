@@ -4,7 +4,6 @@ package irvine.oeis.a348;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.a003.A003557;
-import irvine.oeis.a348.A348495;
 
 /**
  * A348496 a(n) = gcd(A018804(n), A347130(n)) / A003557(n).
@@ -12,8 +11,8 @@ import irvine.oeis.a348.A348495;
  */
 public class A348496 extends AbstractSequence {
 
-  private A348495 mSeq1 = new A348495();
-  private A003557 mSeq2 = new A003557();
+  private final A348495 mSeq1 = new A348495();
+  private final A003557 mSeq2 = new A003557();
 
   /** Construct the sequence. */
   public A348496() {

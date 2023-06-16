@@ -23,7 +23,7 @@ public class A046860 extends MemoryFunction2<Long, Z> implements Sequence {
     }
     Z sum = Z.ZERO;
     for (long r = 0; r < n; ++r) {
-      sum = sum.add(Binomial.binomial(n, r).multiply(get(r, m - 1)).shiftLeft((r * (n - r))));
+      sum = sum.add(Binomial.binomial(n, r).multiply(get(r, m - 1)).shiftLeft(r * (n - r)));
     }
     return sum;
   }

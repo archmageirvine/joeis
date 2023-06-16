@@ -16,6 +16,6 @@ public class A007663 extends Sequence2 {
   @Override
   public Z next() {
     mP = mPrime.nextPrime(mP);
-    return Z.ONE.shiftLeft((mP - 1)).subtract(1).divide(mP);
+    return Z.ONE.shiftLeft(mP - 1).subtract(1).divide(mP);
   }
 }

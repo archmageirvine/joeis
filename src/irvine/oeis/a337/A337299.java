@@ -23,7 +23,7 @@ public class A337299 extends GeneralizedEulerTransform {
 
   @Override
   protected Z advanceG(final long k) {
-    return Z.ONE.shiftLeft((k - 1));
+    return Z.ONE.shiftLeft(k - 1);
   }
 
 }

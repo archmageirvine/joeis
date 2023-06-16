@@ -4,7 +4,6 @@ package irvine.oeis.a345;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.a173.A173557;
-import irvine.oeis.a345.A345001;
 
 /**
  * A345049 a(n) = A173557(n) * A345001(n).
@@ -12,8 +11,8 @@ import irvine.oeis.a345.A345001;
  */
 public class A345049 extends AbstractSequence {
 
-  private A173557 mSeq1 = new A173557();
-  private A345001 mSeq2 = new A345001();
+  private final A173557 mSeq1 = new A173557();
+  private final A345001 mSeq2 = new A345001();
 
   /** Construct the sequence. */
   public A345049() {

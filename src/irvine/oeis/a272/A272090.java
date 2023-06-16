@@ -40,7 +40,7 @@ public class A272090 extends A045906 {
       sum = sum.add(Z.ONE.shiftLeft(Binomial.binomial(k1, 2).longValueExact()));
     }
     for (long v = 1; v < k1; ++v) {
-      sum = sum.add(Z.ONE.shiftLeft(((v + 1) * (k1 - 2) - Binomial.binomial(v, 2).longValueExact())));
+      sum = sum.add(Z.ONE.shiftLeft((v + 1) * (k1 - 2) - Binomial.binomial(v, 2).longValueExact()));
     }
     return sum.shiftLeft(s);
   }

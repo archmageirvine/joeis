@@ -34,4 +34,30 @@ public abstract class AbstractSequence implements SequenceWithOffset {
 //    }
     mOffset = offset;
   }
+
+  /**
+   * Convenience method to skip some number of initial terms of a sequence.
+   * @param terms number of terms to skip
+   * @return this sequence with terms skipped
+   * @throws IllegalArgumentException if the number of terms to skip is negative.
+   */
+  public AbstractSequence skip(final long terms) {
+    if (terms < 0) {
+      throw new IllegalArgumentException();
+    }
+    for (long k = 0; k < terms; ++k) {
+      if (next() == null) {
+        return this;
+      }
+    }
+    return this;
+  }
+
+  /**
+   * Convenience method to skip the initial term of the sequence.
+   * @return this sequence with one term skipped
+   */
+  public AbstractSequence skip() {
+    return skip(1);
+  }
 }

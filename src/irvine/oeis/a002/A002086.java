@@ -56,7 +56,7 @@ public class A002086 extends Sequence1 {
     Z sum = Z.ZERO;
     for (long k = 1; k <= m; ++k) {
       if (LongUtils.gcd(m, k) == 1 && isC(m, k)) {
-        sum = sum.add(Z.ONE.shiftLeft((int) c(m, k)));
+        sum = sum.add(Z.ONE.shiftLeft(c(m, k)));
       }
     }
     return sum.divide(Euler.phiAsLong(m));

@@ -16,6 +16,6 @@ public class A048829 extends A048830 {
       mFirst = false;
       return Z.ONE;
     }
-    return Z.ONE.shiftLeft(super.next().intValueExact());
+    return Z.ONE.shiftLeft(super.next().longValueExact());
   }
 }

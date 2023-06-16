@@ -21,7 +21,7 @@ public class A001144 extends Sequence1 {
     if (++mN < SMALL.length) {
       r = Z.valueOf(SMALL[mN]);
     } else {
-      r = Z.ONE.shiftLeft(mA.intValueExact());
+      r = Z.ONE.shiftLeft(mA.longValueExact());
     }
     mA = mB;
     mB = r;

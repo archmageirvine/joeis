@@ -11,7 +11,7 @@ public class A055077 extends A055460 implements Conjectural {
 
   @Override
   public Z next() {
-    return Z.ONE.shiftLeft(super.next().intValueExact());
+    return Z.ONE.shiftLeft(super.next().longValueExact());
   }
 }
 

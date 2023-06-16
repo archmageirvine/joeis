@@ -16,7 +16,7 @@ public class A016104 extends Sequence0 {
     if (mA == null) {
       mA = Z.ONE;
     } else {
-      mA = Z.ONE.shiftLeft(mA.intValueExact() + 1);
+      mA = Z.ONE.shiftLeft(mA.longValueExact() + 1);
       while (!mA.isProbablePrime()) {
         mA = mA.subtract(1);
       }

@@ -19,7 +19,7 @@ public class A007665 extends A056556 {
       .add(a.multiply(a.subtract(1)).divide2())
       .add(mN)
       .subtract(a.multiply(a.add(1)).multiply(a.add(2)).divide(6))
-      .shiftLeft(a.intValueExact())
+      .shiftLeft(a.longValueExact())
       .subtract(1);
   }
 }

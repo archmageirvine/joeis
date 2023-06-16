@@ -10,6 +10,6 @@ public class A000979 extends A000978 {
 
   @Override
   public Z next() {
-    return Z.ONE.shiftLeft(super.next().intValue()).add(1).divide(3);
+    return Z.ONE.shiftLeft(super.next().longValue()).add(1).divide(3);
   }
 }

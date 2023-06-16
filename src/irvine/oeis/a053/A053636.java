@@ -21,7 +21,7 @@ public class A053636 extends Sequence0 {
     Z sum = Z.ZERO;
     for (final Z d : Jaguar.factor(mN).divisors()) {
       if (d.isOdd()) {
-        sum = sum.add(Euler.phi(d).shiftLeft(mN / d.intValue()));
+        sum = sum.add(Euler.phi(d).shiftLeft(mN / d.longValue()));
       }
     }
     return sum;

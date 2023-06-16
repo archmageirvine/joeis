@@ -12,7 +12,7 @@ public class A057737 extends A000040 {
   @Override
   public Z next() {
     while (true) {
-      final Z q = Z.ONE.shiftLeft(super.next().intValueExact()).add(3);
+      final Z q = Z.ONE.shiftLeft(super.next().longValueExact()).add(3);
       if (q.isProbablePrime()) {
         return q;
       }

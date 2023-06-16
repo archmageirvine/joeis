@@ -13,7 +13,7 @@ public class A034797 extends Sequence0 {
 
   @Override
   public Z next() {
-    mA = mA == null ? Z.ZERO : mA.add(Z.ONE.shiftLeft(mA.intValueExact()));
+    mA = mA == null ? Z.ZERO : mA.add(Z.ONE.shiftLeft(mA.longValueExact()));
     return mA;
   }
 }

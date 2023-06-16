@@ -13,7 +13,7 @@ public class A036571 extends A001614 {
 
   @Override
   public Z next() {
-    mA = mA == null ? Z.ZERO : Z.ONE.shiftLeft(super.next().intValueExact() - 1).add(mA);
+    mA = mA == null ? Z.ZERO : Z.ONE.shiftLeft(super.next().longValueExact() - 1).add(mA);
     return mA;
   }
 }

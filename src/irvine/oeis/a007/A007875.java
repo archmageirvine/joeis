@@ -11,6 +11,6 @@ public class A007875 extends A001221 {
 
   @Override
   public Z next() {
-    return Z.ONE.max(Z.ONE.shiftLeft(super.next().intValueExact() - 1));
+    return Z.ONE.max(Z.ONE.shiftLeft(super.next().longValueExact() - 1));
   }
 }

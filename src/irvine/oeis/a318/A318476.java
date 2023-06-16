@@ -13,6 +13,6 @@ public class A318476 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A318476() {
-    super(1, (p, e) -> Z.ONE.shiftLeft(Binomial.binomial(2 * e, e).divide(e + 1).intValue()));
+    super(1, (p, e) -> Z.ONE.shiftLeft(Binomial.binomial(2 * e, e).divide(e + 1).longValue()));
   }
 }

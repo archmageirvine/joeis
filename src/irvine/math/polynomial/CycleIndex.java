@@ -399,7 +399,7 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
         t = 0;
       }
     }
-    return p.getCoefficient().multiply(Z.ONE.shiftLeft(powerOf2.intValueExact()));
+    return p.getCoefficient().multiply(Z.ONE.shiftLeft(powerOf2.longValueExact()));
   }
 
   /**

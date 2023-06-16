@@ -15,7 +15,7 @@ public class A128146 extends A000330 {
     if (shift.bitLength() > 30) {
       throw new UnsupportedOperationException();
     }
-    final Z r = Z.ONE.shiftLeft(shift.intValue());
+    final Z r = Z.ONE.shiftLeft(shift.longValue());
     final long sign = (mN * (mN + 1) / 2) & 1;
     return sign == 0 ? r : r.negate();
   }

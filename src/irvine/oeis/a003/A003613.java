@@ -169,7 +169,7 @@ public class A003613 extends Sequence1 {
 
   private Z eval(final Triple<Z> t) {
     // substitute 2 for y
-    return Z.SIX.pow(t.left()).shiftLeft(t.mid().intValueExact()).multiply(t.right());
+    return Z.SIX.pow(t.left()).shiftLeft(t.mid().longValueExact()).multiply(t.right());
   }
 
   protected Z eval(final List<Triple<Z>> lst) {

@@ -15,7 +15,7 @@ public class A048721 extends A000045 {
   public Z next() {
     final Z t = super.next();
     if (!t.isZero()) {
-      mA = mA.add(Z.ONE.shiftLeft(t.intValueExact() - 1));
+      mA = mA.add(Z.ONE.shiftLeft(t.longValueExact() - 1));
     } else {
       super.next(); // skip a 1
     }

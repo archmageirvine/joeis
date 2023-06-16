@@ -20,7 +20,7 @@ public class A333189 extends FloorSequence {
 
   @Override
   protected Z evalCR(final long n) {
-    final CR n2 = CR.valueOf(Z.ONE.shiftLeft((int) n));
+    final CR n2 = CR.valueOf(Z.ONE.shiftLeft(n));
     final CR n1 = CR.valueOf(n).inverse();
     final CR nCsc = n1.sin().inverse();
     final CR nCot = REALS.cot(n1);

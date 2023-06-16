@@ -66,7 +66,7 @@ public class A028657 extends MemoryFunction2<Integer, Z> implements Sequence {
             u = u.add(s.coeff(i).multiply(t.coeff(j)).multiply(g));
           }
         }
-        final Z r = Z.ONE.shiftLeft(u.intValueExact());
+        final Z r = Z.ONE.shiftLeft(u.longValueExact());
         sum = sum.add(new Q(r, t2.multiply(s2)));
       }
     }

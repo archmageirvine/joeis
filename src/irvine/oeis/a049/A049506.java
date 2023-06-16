@@ -21,7 +21,7 @@ public class A049506 extends Sequence1 {
       mA = Z.FIVE;
       return Z.FIVE;
     } else {
-      final Z t = Z.ONE.shiftLeft(Euler.phi(mA).intValueExact()).subtract(3);
+      final Z t = Z.ONE.shiftLeft(Euler.phi(mA).longValueExact()).subtract(3);
       mA = mA.multiply(t);
       return t;
     }

@@ -17,8 +17,8 @@ public class A048639 extends A006881 {
   @Override
   public Z next() {
     final Z[] p = Jaguar.factor(super.next()).toZArray();
-    return Z.ONE.shiftLeft(mPrimePi.a(p[1].intValueExact() - 1).intValueExact() - 1)
-      .or(Z.ONE.shiftLeft(mPrimePi.a(p[0].intValueExact() - 1).intValueExact() - 1));
+    return Z.ONE.shiftLeft(mPrimePi.a(p[1].intValueExact() - 1).longValueExact() - 1)
+      .or(Z.ONE.shiftLeft(mPrimePi.a(p[0].intValueExact() - 1).longValueExact() - 1));
   }
 }
 

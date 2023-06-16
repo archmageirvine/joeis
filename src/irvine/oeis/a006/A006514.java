@@ -18,7 +18,7 @@ public class A006514 extends Sequence1 {
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      final Z n = Z.ONE.shiftLeft((int) mP).subtract(1);
+      final Z n = Z.ONE.shiftLeft(mP).subtract(1);
       if (Jaguar.factor(n).omega() < 3) {
         return Z.valueOf(mP);
       }

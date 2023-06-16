@@ -63,7 +63,7 @@ public final class GraphCycleIndex {
     while ((p = ip.next()) != null) {
       IntegerPartition.toCountForm(p, v);
       final MultivariateMonomial mm = getMultivariateMonomial(v);
-      mm.setCoefficient(new Q(Z.ONE.shiftLeft((int) getPowersOfTwo(v)), SymmetricGroup.per(v)));
+      mm.setCoefficient(new Q(Z.ONE.shiftLeft(getPowersOfTwo(v)), SymmetricGroup.per(v)));
       ci.add(mm);
     }
     return ci;
@@ -82,7 +82,7 @@ public final class GraphCycleIndex {
     while ((p = ip.next()) != null) {
       IntegerPartition.toCountForm(p, v);
       final MultivariateMonomial mm = getMultivariateMonomial(v);
-      mm.setCoefficient(new Q(Z.valueOf(v[1]).shiftLeft((int) getPowersOfTwo(v)), SymmetricGroup.per(v)));
+      mm.setCoefficient(new Q(Z.valueOf(v[1]).shiftLeft(getPowersOfTwo(v)), SymmetricGroup.per(v)));
       ci.add(mm);
     }
     return ci;

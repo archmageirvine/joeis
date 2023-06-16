@@ -15,7 +15,7 @@ public class A005849 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      final Z v = mN.shiftLeft(mN.intValueExact()).add(1);
+      final Z v = mN.shiftLeft(mN.longValueExact()).add(1);
       if (v.isProbablePrime()) {
         return mN;
       }

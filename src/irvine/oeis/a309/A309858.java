@@ -88,7 +88,7 @@ public class A309858 extends MemoryFunction2<Integer, Z> implements Sequence {
       }
       final Z h = h(l, v);
       l.subList(l.size() - n, l.size()).clear(); // reset list
-      return new Q(Z.ONE.shiftLeft(h.intValueExact()), mF.factorial(n));
+      return new Q(Z.ONE.shiftLeft(h.longValueExact()), mF.factorial(n));
     } else {
       Q sum = Q.ZERO;
       Z ij = Z.ONE;

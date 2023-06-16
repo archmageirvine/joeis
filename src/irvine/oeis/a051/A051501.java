@@ -15,7 +15,7 @@ public class A051501 extends Sequence1 {
 
   @Override
   public Z next() {
-    mA = mA == null ? Z.TWO : mPrime.nextPrime(Z.ONE.shiftLeft(mA.intValueExact()));
+    mA = mA == null ? Z.TWO : mPrime.nextPrime(Z.ONE.shiftLeft(mA.longValueExact()));
     return mA;
   }
 }

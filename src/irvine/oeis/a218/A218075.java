@@ -16,7 +16,7 @@ public class A218075 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Z.ONE.shiftLeft(mA001223.next().intValue());
+    return Z.ONE.shiftLeft(mA001223.next().longValue());
   }
 
 }

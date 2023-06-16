@@ -16,7 +16,7 @@ public class A048722 extends A000045 {
     if (mA == null) {
       mA = Z.ZERO;
     } else {
-      mA = mA.shiftLeft(super.next().intValueExact()).add(1);
+      mA = mA.shiftLeft(super.next().longValueExact()).add(1);
     }
     return mA;
   }

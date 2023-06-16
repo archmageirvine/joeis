@@ -13,7 +13,7 @@ public class A046153 extends A000010 {
   public Z next() {
     while (true) {
       final Z phi = super.next();
-      final Z a = Z.valueOf(mN).shiftLeft(phi.intValueExact()).subtract(1);
+      final Z a = Z.valueOf(mN).shiftLeft(phi.longValueExact()).subtract(1);
       if (a.isProbablePrime()) {
         return a;
       }

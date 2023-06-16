@@ -21,7 +21,7 @@ public class A048676 extends Sequence1 {
     Z sum = Z.ZERO;
     final FactorSequence fs = Jaguar.factor(++mN);
     for (final Z p : fs.toZArray()) {
-      sum = sum.add(Z.ONE.shiftLeft(fs.getExponent(p) + mPrimePi.a(p.intValueExact() - 1).intValueExact()));
+      sum = sum.add(Z.ONE.shiftLeft(fs.getExponent(p) + mPrimePi.a(p.intValueExact() - 1).longValueExact()));
     }
     return sum.divide(4);
   }

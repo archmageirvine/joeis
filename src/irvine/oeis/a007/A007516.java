@@ -17,7 +17,7 @@ public class A007516 extends Sequence0 {
       mA = Z.ONE;
       return mA;
     }
-    mA = Z.ONE.shiftLeft(mA.intValueExact());
+    mA = Z.ONE.shiftLeft(mA.longValueExact());
     return mA.add(1);
   }
 }

@@ -26,7 +26,7 @@ public class A254429 extends Sequence0 {
     } else if (mN >= 5) {
       throw new ArithmeticException("implementation limit in A254429 (n <= 4) reached");
     }
-    mA = Z.ONE.shiftLeft(mA.intValue()).add(1);
+    mA = Z.ONE.shiftLeft(mA.longValue()).add(1);
     return mA;
   }
 }

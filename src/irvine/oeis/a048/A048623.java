@@ -18,10 +18,10 @@ public class A048623 extends A001358 {
   public Z next() {
     final Z[] p = Jaguar.factor(super.next()).toZArray();
     if (p.length == 1) {
-      return Z.ONE.shiftLeft(mPrimePi.a(p[0].intValueExact() - 1).intValueExact());
+      return Z.ONE.shiftLeft(mPrimePi.a(p[0].intValueExact() - 1).longValueExact());
     } else {
-      return Z.ONE.shiftLeft(mPrimePi.a(p[1].intValueExact() - 1).intValueExact() - 1)
-        .or(Z.ONE.shiftLeft(mPrimePi.a(p[0].intValueExact() - 1).intValueExact() - 1));
+      return Z.ONE.shiftLeft(mPrimePi.a(p[1].intValueExact() - 1).longValueExact() - 1)
+        .or(Z.ONE.shiftLeft(mPrimePi.a(p[0].intValueExact() - 1).longValueExact() - 1));
     }
   }
 }

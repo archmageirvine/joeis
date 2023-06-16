@@ -15,7 +15,7 @@ public class A057676 extends A000040 {
 
   @Override
   public Z next() {
-    final Z q = Z.ONE.shiftLeft(super.next().intValueExact());
+    final Z q = Z.ONE.shiftLeft(super.next().longValueExact());
     long p = 1;
     while (true) {
       p = mPrime.nextPrime(p);

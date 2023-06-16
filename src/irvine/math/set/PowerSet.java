@@ -31,7 +31,7 @@ class PowerSet<T> extends AbstractSet<Set<T>> {
       return null;
     }
     // This will explode for large finite base sets
-    return Z.ONE.shiftLeft(mBase.size().intValueExact());
+    return Z.ONE.shiftLeft(mBase.size().longValueExact());
   }
 
   @Override

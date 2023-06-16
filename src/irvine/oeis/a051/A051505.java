@@ -15,7 +15,7 @@ public class A051505 extends Sequence0 {
 
   @Override
   public Z next() {
-    return ++mN <= 5 ? Z.ONE.shiftLeft((int) mN) : CR100.divide(CR.valueOf(mN).sqrt()).floor();
+    return ++mN <= 5 ? Z.ONE.shiftLeft(mN) : CR100.divide(CR.valueOf(mN).sqrt()).floor();
   }
 }
 

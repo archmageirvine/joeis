@@ -25,7 +25,7 @@ public class A058940 extends A007814 {
   public Z next() {
     if (++mM > mN) {
       mA = EulerPolynomials.eulerPolynomial(++mN);
-      mScale = Z.ONE.shiftLeft(super.next().intValueExact());
+      mScale = Z.ONE.shiftLeft(super.next().longValueExact());
       mM = 0;
     }
     return mA.coeff(mM).multiply(mScale).toZ();

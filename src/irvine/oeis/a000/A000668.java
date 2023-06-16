@@ -10,6 +10,6 @@ public class A000668 extends A000043 {
 
   @Override
   public Z next() {
-    return Z.ONE.shiftLeft(super.next().intValue()).subtract(1);
+    return Z.ONE.shiftLeft(super.next().longValue()).subtract(1);
   }
 }

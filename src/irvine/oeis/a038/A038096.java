@@ -14,6 +14,6 @@ public class A038096 implements Sequence {
 
   @Override
   public Z next() {
-    return Binomial.binomial(mN++, 3).multiply(mN).shiftLeft(Binomial.binomial(mN - 1, 2).intValueExact());
+    return Binomial.binomial(mN++, 3).multiply(mN).shiftLeft(Binomial.binomial(mN - 1, 2).longValueExact());
   }
 }

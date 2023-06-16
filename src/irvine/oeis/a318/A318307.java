@@ -14,6 +14,6 @@ public class A318307 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A318307() {
-    super(1, (p, e) -> Z.ONE.shiftLeft(Integers.SINGLETON.sum(0, (e - 1) / 2, k -> Binomial.binomial(e - k - 1, k).mod(Z.TWO)).intValue()));
+    super(1, (p, e) -> Z.ONE.shiftLeft(Integers.SINGLETON.sum(0, (e - 1) / 2, k -> Binomial.binomial(e - k - 1, k).mod(Z.TWO)).longValue()));
   }
 }

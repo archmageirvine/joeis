@@ -20,7 +20,7 @@ public class A001868 extends Sequence0 {
     }
     Z s = Z.ZERO;
     for (final Z d : Jaguar.factor(mN).divisors()) {
-      s = s.add(Euler.phi(d).shiftLeft(2 * (mN / d.intValue())));
+      s = s.add(Euler.phi(d).shiftLeft(2 * (mN / d.longValue())));
     }
     return s.divide(mN);
   }

@@ -77,7 +77,7 @@ public final class GraphUtils {
       if (power > Integer.MAX_VALUE) {
         throw new UnsupportedOperationException();
       }
-      s = s.add(Binomial.binomial(nodes, k).multiply(numberLabelledColoured(k, colours - 1)).shiftLeft((int) power));
+      s = s.add(Binomial.binomial(nodes, k).multiply(numberLabelledColoured(k, colours - 1)).shiftLeft(power));
     }
     NUMBER_LABELLED_COLOURED_CACHE.put(key, s);
     return s;

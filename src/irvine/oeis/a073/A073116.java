@@ -31,6 +31,6 @@ public class A073116 extends A000045 {
     if (mN <= 4) {
       return Z.valueOf(INITS[mN - 1]);
     }
-    return Z.ONE.shiftLeft(super.next().intValue() + (((mN & 1) == 1) ? 1 : -1));
+    return Z.ONE.shiftLeft(super.next().longValue() + (((mN & 1) == 1) ? 1 : -1));
   }
 }

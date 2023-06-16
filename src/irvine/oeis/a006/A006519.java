@@ -15,6 +15,6 @@ public class A006519 implements Sequence {
   public Z next() {
     mN = mN.add(1);
     mN.makeOdd();
-    return Z.ONE.shiftLeft((int) mN.auxiliary());
+    return Z.ONE.shiftLeft(mN.auxiliary());
   }
 }

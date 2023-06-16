@@ -21,6 +21,6 @@ public class A002425 extends A001511 {
     mB.nextQ(); // skip odd terms
     final Q b = mB.nextQ();
     mA = mA.multiply(4);
-    return b.multiply(Z.ONE.subtract(mA)).divide(mN).multiply(Z.ONE.shiftLeft(super.next().intValueExact())).toZ().abs();
+    return b.multiply(Z.ONE.subtract(mA)).divide(mN).multiply(Z.ONE.shiftLeft(super.next().longValueExact())).toZ().abs();
   }
 }

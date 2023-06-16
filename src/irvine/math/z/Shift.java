@@ -2,7 +2,6 @@ package irvine.math.z;
 
 /**
  * Shifts.
- *
  * @author Sean A. Irvine
  */
 final class Shift {
@@ -13,12 +12,11 @@ final class Shift {
    * Perform a left shift on this integer.  Conceptually does
    * <code>this &lt;&lt; k</code> for <code>k&gt;=0</code>.
    * For <code>k&lt;0</code> calls <code>shiftRight(-k)</code>.
-   *
    * @param n number to shift
    * @param k shift
    * @return integer left-shifted by <code>k</code>.
    */
-  static Z shiftLeft(final Z n, final int k) {
+  static Z shiftLeft(final Z n, final long k) {
     if (n.getSize() == 0) {
       return n;
     }
@@ -32,9 +30,9 @@ final class Shift {
       return shiftRight(n, -k);
     }
     final int sa = n.getSize() < 0 ? -n.getSize() : n.getSize();
-    int big = k / Z.BASE_BITS;
+    int big = (int) (k / Z.BASE_BITS);
     final int l = sa + big;
-    final int small = k - big * Z.BASE_BITS;
+    final int small = (int) (k - big * Z.BASE_BITS);
     if (small != 0) {
       final int[] d = new int[l + 1];
       final int c = Z.BASE_BITS - small;
@@ -62,12 +60,11 @@ final class Shift {
    * Unlike <code>BigInteger</code> does not copy down the sign
    * bit into the result.  The answer always has the same sign
    * as the argument unless the result becomes zero.
-   *
    * @param n number to shift
    * @param k shift
    * @return integer right-shifted by <code>k</code>.
    */
-  static Z shiftRight(final Z n, final int k) {
+  static Z shiftRight(final Z n, final long k) {
     if (n.getSize() == 0) {
       return n;
     }
@@ -81,8 +78,8 @@ final class Shift {
       return shiftLeft(n, -k);
     }
     int sn = Math.abs(n.getSize());
-    final int big = k / Z.BASE_BITS;
-    final int small = k - big * Z.BASE_BITS;
+    final int big = (int) (k / Z.BASE_BITS);
+    final int small = (int) (k - big * Z.BASE_BITS);
     if (big >= sn || (big == sn - 1 && (n.mValue[big] >>> small) == 0)) {
       return Z.ZERO;
     }

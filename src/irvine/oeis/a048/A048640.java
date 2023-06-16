@@ -22,7 +22,7 @@ public class A048640 extends A005117 {
       return Z.ONE;
     }
     for (final Z p : Jaguar.factor(t).toZArray()) {
-      res = res.or(Z.ONE.shiftLeft(mPrimePi.a(p.intValueExact() - 1).intValueExact()));
+      res = res.or(Z.ONE.shiftLeft(mPrimePi.a(p.intValueExact() - 1).longValueExact()));
     }
     return res;
   }

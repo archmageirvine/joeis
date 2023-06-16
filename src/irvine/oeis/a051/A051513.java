@@ -13,7 +13,7 @@ public class A051513 extends Sequence1 {
 
   @Override
   public Z next() {
-    return ++mN <= 4 ? Z.ONE.shiftLeft((int) mN) : Z.valueOf(100 / mN);
+    return ++mN <= 4 ? Z.ONE.shiftLeft(mN) : Z.valueOf(100 / mN);
   }
 }
 

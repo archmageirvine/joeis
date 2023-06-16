@@ -16,7 +16,7 @@ public class A055515 extends Sequence1 {
   public Z next() {
     Z t = Z.ONE.shiftLeft(++mN).subtract(1);
     for (final Z p : Jaguar.factor(mN).toZArray()) {
-      t = t.divide(Z.ONE.shiftLeft(p.intValue()).subtract(1));
+      t = t.divide(Z.ONE.shiftLeft(p.longValue()).subtract(1));
     }
     return t;
   }

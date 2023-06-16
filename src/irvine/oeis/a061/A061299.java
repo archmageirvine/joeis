@@ -16,6 +16,6 @@ public class A061299 extends A007304 {
     final FactorSequence fs = Jaguar.factor(super.next());
     final Z[] pqr = fs.toZArray();
     assert pqr.length == 3;
-    return Z.THREE.pow(pqr[1].subtract(1)).multiply(Z.FIVE.pow(pqr[0].subtract(1))).shiftLeft(pqr[2].intValueExact() - 1);
+    return Z.THREE.pow(pqr[1].subtract(1)).multiply(Z.FIVE.pow(pqr[0].subtract(1))).shiftLeft(pqr[2].longValueExact() - 1);
   }
 }

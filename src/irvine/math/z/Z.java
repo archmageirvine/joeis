@@ -523,7 +523,7 @@ public class Z extends Number implements Comparable<Z> {
    * @param k shift
    * @return integer left-shifted by <code>k</code>.
    */
-  public Z shiftLeft(final int k) {
+  public Z shiftLeft(final long k) {
     return Shift.shiftLeft(this, k);
   }
 
@@ -535,7 +535,7 @@ public class Z extends Number implements Comparable<Z> {
    * @param k shift
    * @return integer right-shifted by <code>k</code>.
    */
-  public Z shiftRight(final int k) {
+  public Z shiftRight(final long k) {
     return Shift.shiftRight(this, k);
   }
 

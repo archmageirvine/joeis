@@ -22,7 +22,7 @@ public class A000659 extends Sequence0 {
       if (mB.bitLength() > 30) {
         throw new UnsupportedOperationException();
       }
-      final Z t = Z.ONE.shiftLeft(mB.intValue()).add(mA);
+      final Z t = Z.ONE.shiftLeft(mB.longValue()).add(mA);
       mA = mB;
       mB = t;
     }

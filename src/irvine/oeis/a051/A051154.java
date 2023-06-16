@@ -14,6 +14,6 @@ public class A051154 extends Sequence0 {
   @Override
   public Z next() {
     mT = mT == null ? Z.ONE : mT.multiply(3);
-    return Z.ONE.shiftLeft(mT.multiply2().intValueExact()).add(Z.ONE.shiftLeft(mT.intValue())).add(1);
+    return Z.ONE.shiftLeft(mT.multiply2().longValueExact()).add(Z.ONE.shiftLeft(mT.longValue())).add(1);
   }
 }

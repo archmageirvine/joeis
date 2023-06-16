@@ -22,7 +22,7 @@ public class A005203 extends A000045 {
       super.next();
       mB = Z.ONE;
     } else {
-      final Z t = mB.shiftLeft(super.next().intValueExact()).add(mA);
+      final Z t = mB.shiftLeft(super.next().longValueExact()).add(mA);
       mA = mB;
       mB = t;
     }

@@ -15,6 +15,6 @@ public class A038094 extends Sequence3 {
   @Override
   public Z next() {
     final Z t = Binomial.binomial(mN++, 2);
-    return t.multiply(mN).shiftLeft(t.intValueExact());
+    return t.multiply(mN).shiftLeft(t.longValueExact());
   }
 }

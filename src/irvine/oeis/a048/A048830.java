@@ -18,6 +18,6 @@ public class A048830 extends A014221 {
     if (++mN <= 2) {
       return mN == 1 ? Z.ZERO : Z.ONE;
     }
-    return mC.a(mN).subtract(Z.ONE.shiftLeft(mC.a(mN - 1).intValueExact() - mC.a(mN - 2).intValueExact()));
+    return mC.a(mN).subtract(Z.ONE.shiftLeft(mC.a(mN - 1).longValueExact() - mC.a(mN - 2).longValueExact()));
   }
 }

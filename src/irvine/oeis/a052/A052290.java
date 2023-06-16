@@ -16,7 +16,7 @@ public class A052290 extends A000142 {
   @Override
   public Z next() {
     while (true) {
-      final Z t = super.next().shiftLeft((int) mN).add(mN + 1);
+      final Z t = super.next().shiftLeft(mN).add(mN + 1);
       if (t.isProbablePrime()) {
         return t;
       }

@@ -19,7 +19,7 @@ public class A016027 extends Sequence1 {
     while (true) {
       ++mPi;
       mP = mPrime.nextPrime(mP);
-      if (Z.ONE.shiftLeft((int) mP).subtract(1).isPrime()) {
+      if (Z.ONE.shiftLeft(mP).subtract(1).isPrime()) {
         return Z.valueOf(mPi);
       }
     }

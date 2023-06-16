@@ -27,7 +27,7 @@ public class A063728 extends Sequence0 {
       mC = Z.SIX;
       return Z.SIX;
     }
-    final Z t = mC.shiftLeft(mA.intValueExact());
+    final Z t = mC.shiftLeft(mA.longValueExact());
     mA = mB;
     mB = mC;
     mC = t;

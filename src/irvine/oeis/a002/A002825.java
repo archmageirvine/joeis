@@ -19,7 +19,7 @@ public class A002825 extends Sequence1 {
     for (int k = 0; k < mN; ++k) {
       Z t = Z.ZERO;
       for (int j = 0; j <= k; ++j) {
-        t = t.add(Z.ONE.shiftLeft(Binomial.binomial(k, j).intValueExact()));
+        t = t.add(Z.ONE.shiftLeft(Binomial.binomial(k, j).longValueExact()));
       }
       s = s.signedAdd((k & 1) == 0, t.multiply(Binomial.binomial(mN, k)));
     }

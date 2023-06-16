@@ -24,7 +24,7 @@ public class A006380 extends A000721 {
     }
     final CycleIndex ci = f(n);
     final ArrayList<Polynomial<Q>> polys = new ArrayList<>();
-    for (int k = 1; k <= Z.ONE.shiftLeft(n).min(Z.valueOf(m)).intValueExact(); ++k) {
+    for (int k = 1; k <= Z.ONE.shiftLeft(n).min(Z.valueOf(m)).longValueExact(); ++k) {
       polys.add(RING.series(RING.one(), RING.oneMinusXToTheN(k), m));
     }
     final Polynomial<Q> p = ci.apply(polys, Z.valueOf(m));

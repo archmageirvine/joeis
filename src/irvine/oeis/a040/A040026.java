@@ -14,7 +14,7 @@ public class A040026 extends Sequence1 {
   @Override
   public Z next() {
     final Z r = Z.valueOf(++mN).makeOdd();
-    final Z s = Z.ONE.shiftLeft((int) r.auxiliary());
+    final Z s = Z.ONE.shiftLeft(r.auxiliary());
     long t = 0;
     while (true) {
       ++t;

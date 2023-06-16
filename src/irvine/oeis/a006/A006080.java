@@ -11,7 +11,7 @@ public class A006080 extends A003239 {
 
   @Override
   public Z next() {
-    return Z.ONE.max(super.next().divide2().add(Z.ONE.shiftLeft((int) mN - 2)));
+    return Z.ONE.max(super.next().divide2().add(Z.ONE.shiftLeft(mN - 2)));
   }
 }
 

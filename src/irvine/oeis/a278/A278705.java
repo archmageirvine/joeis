@@ -22,7 +22,7 @@ public class A278705 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.ONE.shiftLeft(Binomial.binomial(mN, 2).intValue() - 4)
+    return Z.ONE.shiftLeft(Binomial.binomial(mN, 2).longValue() - 4)
       .multiply(mN).multiply(mN - 1).multiply(mN - 2).multiply(mN - 3).divide(8);
   }
 }

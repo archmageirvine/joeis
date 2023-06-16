@@ -13,6 +13,6 @@ public class A318472 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A318472() {
-    super(1, (p, e) -> Z.ONE.shiftLeft(Fibonacci.fibonacci(e).intValue()));
+    super(1, (p, e) -> Z.ONE.shiftLeft(Fibonacci.fibonacci(e).longValue()));
   }
 }

@@ -17,6 +17,6 @@ public class A060865 extends A000045 {
   @Override
   public Z next() {
     final Z t = super.next().makeOdd();
-    return Z.ONE.shiftLeft((int) t.auxiliary());
+    return Z.ONE.shiftLeft(t.auxiliary());
   }
 }

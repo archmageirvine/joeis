@@ -30,7 +30,7 @@ public class A005204 extends A000930 {
       mC = Z.ONE;
       mFirstNonZero = true;
     } else {
-      final Z t = mC.shiftLeft(super.next().intValueExact()).add(mA);
+      final Z t = mC.shiftLeft(super.next().longValueExact()).add(mA);
       mA = mB;
       mB = mC;
       mC = t;

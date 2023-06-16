@@ -20,7 +20,7 @@ public class A054601 extends Sequence0 {
     Z sum = Z.ZERO;
     for (final Z d : Jaguar.factor(mN).divisors()) {
       if (d.isOdd()) {
-        sum = sum.add(d.shiftLeft(mN / d.intValue() - 1));
+        sum = sum.add(d.shiftLeft(mN / d.longValue() - 1));
       }
     }
     return sum;

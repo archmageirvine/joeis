@@ -26,7 +26,7 @@ public class A051293 extends MemorySequence {
       Z sum = Z.ZERO;
       for (final Z d : Jaguar.factor(n).divisors()) {
         if (d.isOdd()) {
-          sum = sum.add(Euler.phi(d).shiftLeft(n / d.intValue()));
+          sum = sum.add(Euler.phi(d).shiftLeft(n / d.longValue()));
         }
       }
       return sum.divide(n);

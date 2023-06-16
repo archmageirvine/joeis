@@ -33,7 +33,7 @@ public class A001827 extends Sequence0 {
       if (p > Integer.MAX_VALUE) {
         throw new UnsupportedOperationException();
       }
-      sum = sum.add(Binomial.multinomial(n, c).shiftLeft((int) p));
+      sum = sum.add(Binomial.multinomial(n, c).shiftLeft(p));
     }
     return sum;
   }

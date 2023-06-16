@@ -20,6 +20,6 @@ public class A001800 extends A000120 {
   @Override
   public Z next() {
     ++mN;
-    return Binomial.binomial(2 * mN + 2, mN + 1).multiply(mN + 1).shiftRight(super.next().intValue());
+    return Binomial.binomial(2 * mN + 2, mN + 1).multiply(mN + 1).shiftRight(super.next().longValue());
   }
 }

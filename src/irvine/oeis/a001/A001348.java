@@ -16,6 +16,6 @@ public class A001348 extends Sequence1 {
   @Override
   public Z next() {
     mP = mPrime.nextPrime(mP);
-    return Z.ONE.shiftLeft((int) mP).subtract(1);
+    return Z.ONE.shiftLeft(mP).subtract(1);
   }
 }

@@ -2,7 +2,6 @@ package irvine.math.z;
 
 /**
  * Powering.
- *
  * @author Sean A. Irvine
  */
 final class Pow {
@@ -37,7 +36,7 @@ final class Pow {
       }
       // 2^x
       if (b.mValue[0] == 2) {
-        return Z.ONE.shiftLeft(exponent.intValue());
+        return Z.ONE.shiftLeft(exponent.longValue());
       }
     }
     // (-1)^x
@@ -99,7 +98,7 @@ final class Pow {
         if (exponent > Integer.MAX_VALUE) {
           throw new ArithmeticException();
         }
-        return Z.ONE.shiftLeft((int) exponent);
+        return Z.ONE.shiftLeft(exponent);
       }
     }
     // (-1)^x

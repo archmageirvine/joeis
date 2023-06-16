@@ -25,7 +25,7 @@ public class A000978 extends Sequence1 {
     // There is virtually no chance of the following finding a new one ...
     while (true) {
       mP = mPrime.nextPrime(mP);
-      if (Z.ONE.shiftLeft((int) mP).add(1).divide(3).isProbablePrime(10)) {
+      if (Z.ONE.shiftLeft(mP).add(1).divide(3).isProbablePrime(10)) {
         return Z.valueOf(mP);
       }
     }

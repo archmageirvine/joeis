@@ -24,7 +24,7 @@ public class A048828 extends Sequence0 {
       }
       final int n = mN / 2;
       final int b = mB.a(n - 1).intValueExact();
-      return Z.ONE.shiftLeft(b).subtract(b + 1).shiftLeft(mC.a(n - 1).intValueExact());
+      return Z.ONE.shiftLeft(b).subtract(b + 1).shiftLeft(mC.a(n - 1).longValueExact());
     } else {
       final int n = mN / 2;
       final Z b = mB.a(n);

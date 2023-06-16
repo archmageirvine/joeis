@@ -23,7 +23,7 @@ public class A056743 extends Sequence0 {
     } else {
       final long q = mP;
       mP = mPrime.nextPrime(mP);
-      mN = mN.shiftLeft((int) (mP - q));
+      mN = mN.shiftLeft((mP - q));
     }
     return Euler.phi(mN.subtract(1)).divide(mP);
   }

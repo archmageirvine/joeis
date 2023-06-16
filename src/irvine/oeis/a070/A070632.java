@@ -14,6 +14,6 @@ public class A070632 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Z.ONE.shiftLeft(Z.THREE.pow(mN).intValueExact()).add(1).divide(Z.THREE.pow(mN + 1));
+    return Z.ONE.shiftLeft(Z.THREE.pow(mN).longValueExact()).add(1).divide(Z.THREE.pow(mN + 1));
   }
 }

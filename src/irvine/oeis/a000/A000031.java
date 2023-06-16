@@ -20,7 +20,7 @@ public class A000031 implements Sequence {
     }
     Z sum = Z.ZERO;
     for (final Z d : Jaguar.factor(mN).divisors()) {
-      sum = sum.add(Euler.phi(d).shiftLeft(mN / d.intValue()));
+      sum = sum.add(Euler.phi(d).shiftLeft(mN / d.longValue()));
     }
     return sum.divide(mN);
   }

@@ -7,13 +7,11 @@ import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class ShiftTest extends TestCase {
 
   private static final Random RANDOM = new Random();
-
 
   public void testShiftLeft() {
     for (int i = -10; i < 100; ++i) {

@@ -16,7 +16,7 @@ public class A057665 extends A000040 {
     while (true) {
       ++mN;
       final Z p = super.next();
-      final Z a = p.add(Z.ONE.shiftLeft(p.intValueExact()));
+      final Z a = p.add(Z.ONE.shiftLeft(p.longValueExact()));
       if (a.isProbablePrime()) {
         return Z.valueOf(mN);
       }

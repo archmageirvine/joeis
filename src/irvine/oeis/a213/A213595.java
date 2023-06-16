@@ -18,6 +18,6 @@ public class A213595 extends A048784 {
 
   @Override
   public Z next() {
-    return super.next().divide(Z.ONE.shiftLeft(mSeq.next().intValue()));
+    return super.next().divide(Z.ONE.shiftLeft(mSeq.next().longValue()));
   }
 }

@@ -17,7 +17,7 @@ public class A054874 extends Sequence0 {
       mA = Z.ZERO;
       return Z.ZERO;
     }
-    final Z t = Z.ONE.shiftLeft(mA.intValueExact());
+    final Z t = Z.ONE.shiftLeft(mA.longValueExact());
     mA = t.add(mA);
     return t;
   }

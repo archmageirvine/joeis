@@ -13,7 +13,7 @@ public class A038093 extends Sequence0 {
   private int mN = -1;
 
   private Z knuthArrow(final int n) {
-    return n == 0 ? Z.ONE : Z.ONE.shiftLeft(knuthArrow(n - 1).intValueExact());
+    return n == 0 ? Z.ONE : Z.ONE.shiftLeft(knuthArrow(n - 1).longValueExact());
   }
 
   @Override

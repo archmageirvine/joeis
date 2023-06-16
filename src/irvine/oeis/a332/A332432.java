@@ -19,7 +19,7 @@ public class A332432 extends FloorSequence {
   }
 
   protected Z evalCR(final long n) {
-    final CR n2 = CR.valueOf(Z.ONE.shiftLeft((int) n));
+    final CR n2 = CR.valueOf(Z.ONE.shiftLeft(n));
     final CR n1 = CR.valueOf(n).inverse();
     final CR nCos = n2.divide(CR.ONE.subtract(n1.cos()));
     final CR nCot = n2.divide(REALS.cot(n1).subtract(CR.ONE));

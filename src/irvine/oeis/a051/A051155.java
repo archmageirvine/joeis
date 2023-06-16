@@ -15,6 +15,6 @@ public class A051155 extends Sequence0 {
   public Z next() {
     final Z t = mT;
     mT = mT.multiply(5);
-    return Z.ONE.shiftLeft(mT.intValueExact()).subtract(1).divide(Z.ONE.shiftLeft(t.intValue()).subtract(1));
+    return Z.ONE.shiftLeft(mT.longValueExact()).subtract(1).divide(Z.ONE.shiftLeft(t.longValue()).subtract(1));
   }
 }

@@ -1,5 +1,6 @@
 package irvine.oeis.a064;
 
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -34,7 +35,14 @@ public class A064156 extends Sequence1 {
 
   @Override
   public Z next() {
-    mLimit = 9L * ++mN * mN; // n times sum of n 9's
+    ++mN;
+
+    // We can never achieve a product that requires a prime factor > 7
+    if (Jaguar.factor(mN).largestPrimeFactor().compareTo(Z.SEVEN) > 0) {
+      return Z.ZERO;
+    }
+
+    mLimit = 9L * mN * mN; // n times sum of n 9's
     return search(Z.ZERO, 0, 1, 0);
   }
 }

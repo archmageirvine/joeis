@@ -12,7 +12,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A000207 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A000207() {
     super(1);
   }
@@ -20,6 +20,7 @@ public class A000207 extends AbstractSequence {
   private int mN = 0;
   private final ArrayList<Z> mC = new ArrayList<>();
   private final A000108 mA108 = new A000108();
+
   {
     mC.add(mA108.next());
   }

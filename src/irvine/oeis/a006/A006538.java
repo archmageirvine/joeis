@@ -10,7 +10,7 @@ import irvine.util.array.LongDynamicLongArray;
  */
 public class A006538 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A006538() {
     super(1);
   }

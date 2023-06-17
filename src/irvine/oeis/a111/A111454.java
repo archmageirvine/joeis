@@ -12,12 +12,13 @@ import irvine.oeis.a007.A007925;
  */
 public class A111454 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A111454() {
     super(4);
   }
 
   final Sequence mA007925 = new A007925();
+
   @Override
   public Z next() {
     return mA007925.next().add(Z.ONE);

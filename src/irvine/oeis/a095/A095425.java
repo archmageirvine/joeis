@@ -13,12 +13,12 @@ public class A095425 extends AbstractSequence {
 
   protected int mParm;
   protected int mN;
-  
+
   /** Construct the sequence. */
   public A095425() {
     this(10);
   }
-  
+
   /**
    * Generic constructor with parameter
    * @param parm number to be written in base n

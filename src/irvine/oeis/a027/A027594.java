@@ -5,7 +5,6 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.Sequence;
 
 /**
  * A027594 Sequence satisfies T^2(a)=a, where T is defined below.
@@ -13,7 +12,7 @@ import irvine.oeis.Sequence;
  */
 public class A027594 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A027594() {
     super(0);
   }

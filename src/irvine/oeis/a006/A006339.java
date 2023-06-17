@@ -14,7 +14,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A006339 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A006339() {
     super(0);
   }
@@ -24,6 +24,7 @@ public class A006339 extends AbstractSequence {
   private int mN = -1;
   private final ArrayList<Z> mOneModFourPrimes = new ArrayList<>();
   private final Fast mPrime = new Fast();
+
   {
     mOneModFourPrimes.add(Z.FIVE);
   }

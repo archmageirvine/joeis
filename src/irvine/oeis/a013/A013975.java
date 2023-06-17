@@ -19,7 +19,7 @@ import irvine.oeis.a054.A054891;
  */
 public class A013975 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A013975() {
     super(-4);
   }
@@ -31,6 +31,7 @@ public class A013975 extends AbstractSequence {
   private int mN = -1;
 
   private final A000521 mJSeq = new A000521();
+
   {
     mJSeq.next(); // skip -1th term
   }

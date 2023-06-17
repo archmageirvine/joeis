@@ -16,7 +16,7 @@ public class A063115 extends AbstractSequence {
   protected int mN = -1;
   protected Z mA = Z.ONE;
   protected int mM = 1; // actually one larger than power of 2, as 0 is "unknown" in array
-  protected int mParm1; 
+  protected int mParm1;
   protected int mParm2;
 
   /** Construct the sequence. */

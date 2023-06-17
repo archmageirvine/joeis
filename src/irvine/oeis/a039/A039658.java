@@ -1,8 +1,8 @@
 package irvine.oeis.a039;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.MemorySequence;
 import irvine.oeis.a007.A007317;
 
 /**
@@ -11,7 +11,7 @@ import irvine.oeis.a007.A007317;
  */
 public class A039658 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A039658() {
     super(1);
   }

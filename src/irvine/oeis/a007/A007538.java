@@ -10,13 +10,14 @@ import irvine.util.array.LongDynamicByteArray;
  */
 public class A007538 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A007538() {
     super(1);
   }
 
   private LongDynamicByteArray mSeq = new LongDynamicByteArray();
   private int mN = -1;
+
   {
     mSeq.set(0, (byte) 2);
   }

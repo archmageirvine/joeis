@@ -12,7 +12,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A000552 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A000552() {
     super(4);
   }
@@ -21,9 +21,9 @@ public class A000552 extends AbstractSequence {
     Z s = Z.ZERO;
     for (int k = 1; k < p; ++k) {
       s = s.add(Binomial.binomial(p, k)
-                .multiply(k)
-                .multiply(s(p - k, h))
-                .multiply(s(k, h - 1)));
+        .multiply(k)
+        .multiply(s(p - k, h))
+        .multiply(s(k, h - 1)));
     }
     return s.divide(p - 1);
   }

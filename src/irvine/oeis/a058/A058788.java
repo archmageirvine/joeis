@@ -13,7 +13,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A058788 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A058788() {
     super(6);
   }
@@ -21,6 +21,7 @@ public class A058788 extends AbstractSequence {
   private int mN = 5;
   private int mM = 10;
   private final List<long[]> mEdgeCounts = new ArrayList<>();
+
   {
     mEdgeCounts.add(new long[0]);
   }

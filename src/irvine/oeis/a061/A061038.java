@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A061038 Denominator of 1/4 - 1/n^2. 
+ * A061038 Denominator of 1/4 - 1/n^2.
  * @author Georg Fischer
  */
 public class A061038 extends AbstractSequence {

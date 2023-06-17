@@ -19,11 +19,11 @@ import irvine.oeis.a002.A002499;
  */
 public class A126067 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A126067() {
     super(0);
   }
-  
+
   // Compare with A002499.
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);

@@ -10,7 +10,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A017737 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A017737() {
     super(73);
   }

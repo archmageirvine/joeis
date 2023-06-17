@@ -10,7 +10,7 @@ import irvine.util.array.DynamicByteArray;
  */
 public class A131541 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A131541() {
     super(1);
   }

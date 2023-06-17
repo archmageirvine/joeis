@@ -3,8 +3,8 @@ package irvine.oeis.a001;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.MemorySequence;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -13,7 +13,7 @@ import irvine.oeis.a000.A000040;
  */
 public class A001358 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A001358() {
     super(1);
   }

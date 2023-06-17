@@ -2,8 +2,8 @@ package irvine.oeis.a050;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.MemorySequence;
 import irvine.oeis.a000.A000045;
 
 /**
@@ -12,7 +12,7 @@ import irvine.oeis.a000.A000045;
  */
 public class A050946 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A050946() {
     super(0);
   }
@@ -25,7 +25,7 @@ public class A050946 extends AbstractSequence {
     ++mN;
     Z sum = Z.ZERO;
     Z f = Z.ONE;
-    for (int k = 1 ; k <= mN; ++k, f = f.multiply(k)) {
+    for (int k = 1; k <= mN; ++k, f = f.multiply(k)) {
       sum = sum.signedAdd(((mN - k) & 1) == 0, Stirling.secondKind(mN, k).multiply(f).multiply(mFibo.a(k)));
     }
     return sum;

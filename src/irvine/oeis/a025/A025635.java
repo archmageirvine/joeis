@@ -11,12 +11,13 @@ import irvine.oeis.AbstractSequence;
  */
 public class A025635 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A025635() {
     super(1);
   }
 
   private final TreeSet<Z> mPriority = new TreeSet<>();
+
   {
     mPriority.add(Z.ONE);
   }

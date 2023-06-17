@@ -2,9 +2,9 @@ package irvine.oeis.a034;
 // manually for CC=etpsymm 2020-11-14
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.EulerTransform;
-import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A034318 McKay-Thompson series of class 13A for the Monster group with a(0) = -2.

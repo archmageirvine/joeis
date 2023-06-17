@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 import irvine.math.z.Eulerian2;
 import irvine.math.z.Z;
-import irvine.oeis.BellMatrix;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.BellMatrix;
 
 /**
  * A225171 Triangle read by rows: T(n,k), 1 &lt;= k &lt;= n, is the number of non-degenerate fanout-free Boolean functions of n variables having AND rank k.
@@ -13,7 +13,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A225171 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A225171() {
     super(1);
   }

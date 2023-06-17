@@ -13,7 +13,7 @@ import irvine.util.Pair;
  */
 public class A014486 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A014486() {
     super(0);
   }

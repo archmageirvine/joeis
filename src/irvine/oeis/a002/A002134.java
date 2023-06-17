@@ -16,7 +16,7 @@ import irvine.util.Triple;
  */
 public class A002134 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A002134() {
     super(6);
   }

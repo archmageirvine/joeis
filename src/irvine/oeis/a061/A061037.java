@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A061037 Numerator of 1/4 - 1/n^2. 
+ * A061037 Numerator of 1/4 - 1/n^2.
  * @author Georg Fischer
  */
 public class A061037 extends AbstractSequence {

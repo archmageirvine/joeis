@@ -3,8 +3,8 @@ package irvine.oeis.a051;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.CyclotomicPolynomials;
-import irvine.oeis.MemorySequence;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.MemorySequence;
 import irvine.oeis.a000.A000045;
 
 /**
@@ -13,7 +13,7 @@ import irvine.oeis.a000.A000045;
  */
 public class A051258 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A051258() {
     super(0);
   }

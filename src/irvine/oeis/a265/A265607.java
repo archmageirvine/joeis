@@ -13,7 +13,7 @@ import irvine.oeis.transform.BellTransform;
  */
 public class A265607 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A265607() {
     super(0);
   }

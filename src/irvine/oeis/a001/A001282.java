@@ -17,15 +17,15 @@ import irvine.oeis.AbstractSequence;
  */
 public class A001282 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A001282() {
     super(6);
   }
 
   private static final MultivariatePolynomialField<Z> RING1 = new MultivariatePolynomialField<>(IntegerField.SINGLETON, 2);
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private static final MultivariatePolynomial<Z> NUM = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{2, 0}, {3, 0}, {2, 1}, {3, 1}, {1, 0}}, Arrays.asList(Z.TWO, Z.NEG_ONE, Z.TWO.negate(), Z.ONE, Z.NEG_ONE));
-  private static final MultivariatePolynomial<Z> DEN = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{2, 0}, {2, 1}, {0, 0}}, Arrays.asList(Z.ONE, Z.NEG_ONE, Z.NEG_ONE));
+  private static final MultivariatePolynomial<Z> NUM = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][]{{2, 0}, {3, 0}, {2, 1}, {3, 1}, {1, 0}}, Arrays.asList(Z.TWO, Z.NEG_ONE, Z.TWO.negate(), Z.ONE, Z.NEG_ONE));
+  private static final MultivariatePolynomial<Z> DEN = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][]{{2, 0}, {2, 1}, {0, 0}}, Arrays.asList(Z.ONE, Z.NEG_ONE, Z.NEG_ONE));
   private int mN = 2 * order() - 1;
 
   protected int order() {

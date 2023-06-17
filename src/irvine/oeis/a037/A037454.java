@@ -16,7 +16,7 @@ public class A037454 extends AbstractSequence {
   private final int mBaseFrom;
   private final int mBaseTo;
 
-  /** 
+  /**
    * Empty constructor
    */
   public A037454() {

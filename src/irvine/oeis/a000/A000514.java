@@ -9,12 +9,13 @@ import irvine.oeis.AbstractSequence;
  */
 public class A000514 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A000514() {
     super(6);
   }
 
   private int mN = 6;
+
   private Z prod(final int n, final int i) {
     Z p = Z.ONE;
     for (int j = 1; j <= i; ++j) {

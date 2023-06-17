@@ -13,7 +13,7 @@ import irvine.util.Permutation;
  */
 public class A006219 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A006219() {
     super(3);
   }

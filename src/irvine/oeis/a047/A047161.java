@@ -11,13 +11,13 @@ import irvine.oeis.AbstractSequence;
  * @author Georg Fischer
  */
 public class A047161 extends AbstractSequence {
-    
+
   protected int mN; // current index
   protected int mNum; // numerator
   protected int mDen; // denominator
   protected int mAdd; // n + a
   protected int mDiv; // (n + a)/d
-  
+
   /** Construct the sequence. */
   public A047161() {
     this(1, 1, 3, 0, 2);

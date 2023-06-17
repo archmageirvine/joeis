@@ -9,14 +9,14 @@ import irvine.oeis.AbstractSequence;
  */
 public class A002658 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A002658() {
     super(0);
   }
 
   private Z mSum = null;
   private Z mPrev = null;
-  
+
 
   @Override
   public Z next() {

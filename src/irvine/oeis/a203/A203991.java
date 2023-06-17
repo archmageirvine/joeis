@@ -7,8 +7,8 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.triangle.UpperLeftTriangle;
 

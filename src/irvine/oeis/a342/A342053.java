@@ -14,8 +14,8 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.MemorySequence;
 import irvine.oeis.a002.A002712;
 
 /**
@@ -24,7 +24,7 @@ import irvine.oeis.a002.A002712;
  */
 public class A342053 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A342053() {
     super(1);
   }

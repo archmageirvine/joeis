@@ -3,7 +3,6 @@ package irvine.oeis.a000;
 import java.io.Serializable;
 
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**

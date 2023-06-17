@@ -13,13 +13,14 @@ import irvine.oeis.a139.A139174;
  */
 public class A181895 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A181895() {
     super(4);
   }
 
   final Sequence mA038202 = new A038202();
   final Sequence mA139174 = new A139174();
+
   @Override
   public Z next() {
     return mA139174.next().subtract(mA038202.next());

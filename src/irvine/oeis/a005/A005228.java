@@ -2,7 +2,6 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
@@ -11,7 +10,7 @@ import irvine.util.array.LongDynamicBooleanArray;
  */
 public class A005228 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A005228() {
     super(1);
   }

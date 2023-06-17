@@ -12,7 +12,7 @@ import irvine.util.string.StringUtils;
  */
 public class A006156 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A006156() {
     super(0);
   }

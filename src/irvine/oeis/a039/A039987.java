@@ -12,12 +12,13 @@ import irvine.oeis.AbstractSequence;
  */
 public class A039987 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A039987() {
     super(0);
   }
 
   private final TreeSet<String> mA = new TreeSet<>(Comparator.comparingInt(String::length).thenComparing(o -> o));
+
   {
     for (int k = 1; k <= shift(); ++k) {
       mA.add(String.valueOf(k));

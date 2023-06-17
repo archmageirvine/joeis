@@ -16,7 +16,7 @@ public class A033308 extends AbstractSequence {
   protected int mPos;
   protected Sequence mSeq;
   protected int mBase;
-  
+
   /** Construct the sequence. */
   public A033308() {
     this(new A000040(), 10);

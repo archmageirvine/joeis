@@ -5,7 +5,6 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**

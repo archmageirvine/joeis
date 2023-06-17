@@ -11,7 +11,7 @@ import irvine.oeis.a061.A061702;
  */
 public class A000183 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A000183() {
     super(1);
   }
@@ -24,7 +24,7 @@ public class A000183 extends AbstractSequence {
     Z s = Z.ZERO;
     if (++mN > 3) {
       for (int m = 0; m <= mN; ++m) {
-        final Z t = mF.factorial(mN - m).multiply(A061702.t(mN , m));
+        final Z t = mF.factorial(mN - m).multiply(A061702.t(mN, m));
         s = s.signedAdd((m & 1) == 0, t);
       }
     }

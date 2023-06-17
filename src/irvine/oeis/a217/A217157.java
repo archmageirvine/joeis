@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000045;
 
 /**
  * A217157 a(n) is the least value of k such that the decimal expansion of n^k contains two consecutive identical digits.
- * Superclass for various sequences which look for consecutive digits in 
+ * Superclass for various sequences which look for consecutive digits in
  * some underlying sequence (see the constructor with parameters).
  * @author Georg Fischer
  */
@@ -20,7 +20,7 @@ public class A217157 extends AbstractSequence {
   protected int mFeatures; // 3 = k, 4 = repeated digit, 5 = number length, 6 = fixed base
   protected int mBase; // base of the number to be raised to some power
   protected int mNumSystem = 10; // base of the number system, normally 10.
-  
+
   /**
    * A sequence which returns <code>n^k, k &gt;= 0</code>.
    */

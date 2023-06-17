@@ -15,12 +15,13 @@ public class A166470 extends AbstractSequence {
 
   final Sequence mA000301 = new A000301();
   final Sequence mA010098 = new A010098();
+
   /** Construct the sequence. */
   public A166470() {
     super(0);
     mA000301.next();
   }
-  
+
   @Override
   public Z next() {
     return mA000301.next().multiply(mA010098.next());

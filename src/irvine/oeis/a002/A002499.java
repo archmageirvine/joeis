@@ -13,17 +13,17 @@ import irvine.oeis.AbstractSequence;
  */
 public class A002499 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A002499() {
     super(1);
   }
-  
+
   // Compare with A126067.  This is effectively the cycle index polynomials
   // evaluated at 1.
 
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN = 0;
-  
+
   private boolean eta(final int k) {
     return (k & 3) == 2;
   }

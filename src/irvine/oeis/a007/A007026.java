@@ -7,7 +7,6 @@ import irvine.math.plantri.Plantri;
 import irvine.math.plantri.PlantriGraphProcessor;
 import irvine.math.plantri.PlantriGraphState;
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**

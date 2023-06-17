@@ -18,7 +18,7 @@ import irvine.oeis.a054.A054891;
  */
 public class A013953 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A013953() {
     super(-3);
   }
@@ -26,9 +26,11 @@ public class A013953 extends AbstractSequence {
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> X4 = RING.monomial(Z.ONE, 4);
   private final ArrayList<Z> mE6 = new ArrayList<>();
+
   {
     mE6.add(Z.ONE);
   }
+
   private int mN = 0;
 
   @Override

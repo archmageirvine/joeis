@@ -12,7 +12,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A002840 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A002840() {
     super(6);
   }
@@ -20,6 +20,7 @@ public class A002840 extends AbstractSequence {
   private final ArrayList<Z> mEdgeCounts = new ArrayList<>();
   private int mN = 2; // Tracks number of vertices
   private final Plantri mPlantri = new Plantri();
+
   {
     for (int k = 0; k < Plantri.MAX_EDGES; ++k) {
       mEdgeCounts.add(Z.ZERO);

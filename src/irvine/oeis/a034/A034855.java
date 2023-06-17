@@ -16,7 +16,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A034855 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A034855() {
     super(2);
   }
@@ -25,6 +25,7 @@ public class A034855 extends AbstractSequence {
 
   protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final ArrayList<Polynomial<Q>> mGF = new ArrayList<>();
+
   {
     mGF.add(RING.x());
   }

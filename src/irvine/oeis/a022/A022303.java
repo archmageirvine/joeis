@@ -10,15 +10,17 @@ import irvine.util.array.LongDynamicBooleanArray;
  */
 public class A022303 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A022303() {
     super(1);
   }
 
   protected final LongDynamicBooleanArray mA = new LongDynamicBooleanArray();
+
   {
     mA.set(1);
   }
+
   protected long mN = -1;
   private long mS = 0;
   private long mT = 2;

@@ -23,7 +23,7 @@ import irvine.util.CliFlags;
  */
 public class A006966 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A006966() {
     super(0);
   }

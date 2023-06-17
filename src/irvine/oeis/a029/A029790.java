@@ -11,12 +11,12 @@ import irvine.util.string.StringUtils;
  */
 public class A029790 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A029790() {
     super(1);
   }
 
-private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private Z mN = Z.NEG_ONE;
 
   private static boolean isExcludedDigits(final Z n) {

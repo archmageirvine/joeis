@@ -9,7 +9,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A028379 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A028379() {
     super(-1);
   }
@@ -22,7 +22,7 @@ public class A028379 extends AbstractSequence {
     if (++mN <= 0) {
       return Z.ZERO;
     } else if (mN > 1) {
-     mA = mA.multiply(2 * mN + 3).multiply(mN).multiply2().divide(mN - 1).divide(mN + 4);
+      mA = mA.multiply(2 * mN + 3).multiply(mN).multiply2().divide(mN - 1).divide(mN + 4);
     }
     return mA;
   }

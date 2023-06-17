@@ -13,12 +13,13 @@ import irvine.util.Pair;
  */
 public class A050376 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A050376() {
     super(1);
   }
 
   private final PrimePowers mPP = new PrimePowers();
+
   {
     mPP.next(); // skip 1
   }

@@ -1,8 +1,8 @@
 package irvine.oeis.a230;
 
 import irvine.math.z.Z;
-import irvine.oeis.AlonsoSequence;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.AlonsoSequence;
 
 /**
  * A230627 Prime reached in A230626, or -1 if no prime is reached.
@@ -10,7 +10,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A230627 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A230627() {
     super(2);
   }

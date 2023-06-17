@@ -10,12 +10,12 @@ import irvine.util.Permutation;
  */
 public class A049354 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A049354() {
     super(1);
   }
 
-  private Permutation mPerm = new Permutation(new int[] {0});
+  private Permutation mPerm = new Permutation(new int[]{0});
   private int mRep = 0;
 
   protected int base() {

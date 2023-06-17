@@ -14,7 +14,7 @@ import irvine.util.RuntimeUtils;
  */
 public class A018940 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A018940() {
     super(2);
   }

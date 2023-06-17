@@ -15,7 +15,7 @@ import irvine.oeis.a002.A002420;
  */
 public class A006296 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A006296() {
     super(4);
   }
@@ -26,6 +26,7 @@ public class A006296 extends AbstractSequence {
   private int mN = 1;
   private final ArrayList<Z> mSqrtCoeffs = new ArrayList<>();
   private final A002420 mSqrtSeq = new A002420();
+
   {
     mSqrtCoeffs.add(mSqrtSeq.next());
     mSqrtCoeffs.add(mSqrtSeq.next());

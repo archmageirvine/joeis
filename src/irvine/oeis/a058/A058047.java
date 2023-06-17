@@ -15,7 +15,7 @@ import irvine.util.string.StringUtils;
  */
 public class A058047 extends AbstractSequence implements Conjectural {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A058047() {
     super(0);
   }

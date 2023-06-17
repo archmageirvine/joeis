@@ -11,7 +11,7 @@ import irvine.oeis.transform.EulerTransform;
  */
 public class A004113 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A004113() {
     super(1);
   }

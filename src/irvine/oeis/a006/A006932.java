@@ -14,16 +14,18 @@ import irvine.oeis.AbstractSequence;
  */
 public class A006932 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A006932() {
     super(1);
   }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final ArrayList<Z> mCoeff = new ArrayList<>();
+
   {
     mCoeff.add(Z.ONE);
   }
+
   protected Z mF = Z.ONE;
   private int mN = 0;
 

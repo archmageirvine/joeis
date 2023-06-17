@@ -31,8 +31,8 @@ public class A034982 extends AbstractSequence {
   /** Construct the sequence. */
   public A034982() {
     this(new A020787(), new A020760(), "3", "");
-      // 1/sqrt(3), 1/sqrt(30)
- }
+    // 1/sqrt(3), 1/sqrt(30)
+  }
 
   @Override
   public Z next() {

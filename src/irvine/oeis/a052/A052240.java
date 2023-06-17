@@ -2,9 +2,9 @@ package irvine.oeis.a052;
 // manually for CC=etpadd0 2020-11-14
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.EulerTransform;
-import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A052240 McKay-Thompson series of class 7B for the Monster group.

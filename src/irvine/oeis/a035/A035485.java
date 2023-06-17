@@ -12,7 +12,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A035485 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A035485() {
     super(0);
   }
@@ -22,9 +22,11 @@ public class A035485 extends AbstractSequence {
   // reached can assume remainder is integers in order.
 
   protected LinkedList<Long> mDeck = new LinkedList<>();
+
   {
     mDeck.add(1L);
   }
+
   protected int mN = 0;
 
   @Override

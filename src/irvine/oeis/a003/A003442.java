@@ -24,7 +24,7 @@ import irvine.util.Pair;
  */
 public class A003442 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A003442() {
     super(4);
   }

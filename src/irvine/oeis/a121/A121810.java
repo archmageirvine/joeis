@@ -16,7 +16,7 @@ public class A121810 extends AbstractSequence {
   /** Construct the sequence. */
   public A121810() {
     super(-1);
-    mA = new Z[] {Z.ONE, Z.ONE, Z.ZERO, Z.ZERO};
+    mA = new Z[]{Z.ONE, Z.ONE, Z.ZERO, Z.ZERO};
     mN = -1;
   }
 

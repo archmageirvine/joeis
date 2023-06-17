@@ -14,7 +14,7 @@ import irvine.util.Point;
  */
 public class A003030 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A003030() {
     super(1);
   }

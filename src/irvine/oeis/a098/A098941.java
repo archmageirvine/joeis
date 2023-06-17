@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A098941 Numbers where 2 is the only even decimal digit. 
+ * A098941 Numbers where 2 is the only even decimal digit.
  * @author Georg Fischer
  */
 public class A098941 extends AbstractSequence {

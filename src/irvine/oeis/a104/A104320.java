@@ -11,13 +11,13 @@ import irvine.oeis.AbstractSequence;
  */
 public class A104320 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A104320() {
     super(0);
   }
 
   protected int mN = -1;
-  
+
   @Override
   public Z next() {
     ++mN;

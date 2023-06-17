@@ -11,11 +11,11 @@ import irvine.oeis.AbstractSequence;
  */
 public class A030998 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A030998() {
     super(0);
   }
- 
+
   private String mS = "";
   private int mPos = 0;
   private Z mN = Z.valueOf(0 - 1);

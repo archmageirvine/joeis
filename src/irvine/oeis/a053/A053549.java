@@ -14,12 +14,13 @@ public class A053549 extends AbstractSequence {
 
   final Sequence mA001187 = new A001187();
   protected long mN;
+
   /** Construct the sequence. */
   public A053549() {
     super(0);
     mN = -1;
   }
-  
+
   @Override
   public Z next() {
     ++mN;

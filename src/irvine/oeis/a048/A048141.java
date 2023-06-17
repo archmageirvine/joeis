@@ -18,7 +18,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A048141 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A048141() {
     super(1);
   }
@@ -26,6 +26,7 @@ public class A048141 extends AbstractSequence {
   private int mN = 0;
   private final List<Map<int[], Long>> mCache = new ArrayList<>();
   private final List<List<int[]>> mPerfectlyBalanced = new ArrayList<>();
+
   {
     mPerfectlyBalanced.add(Collections.emptyList()); // 0
   }

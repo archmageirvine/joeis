@@ -10,13 +10,14 @@ import irvine.oeis.AbstractSequence;
  */
 public class A171090 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A171090() {
     super(6);
   }
 
   private int mN = 5;
   private final Plantri mPlantri = new Plantri();
+
   {
     mPlantri.setBipartite(true);
   }

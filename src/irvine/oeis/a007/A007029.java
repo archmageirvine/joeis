@@ -12,7 +12,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A007029 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A007029() {
     super(6);
   }
@@ -21,6 +21,7 @@ public class A007029 extends AbstractSequence {
   private int mN = 7; // Tracks number of vertices
   private int mF = 5; // Tracks number of faces
   private final Plantri mPlantri = new Plantri();
+
   {
     mPlantri.setBipartite(true);
     // Way more terms than we can every compute using this method

@@ -1,8 +1,8 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.MemorySequence;
 
 /**
  * A000055 Number of trees with n unlabeled nodes.
@@ -10,7 +10,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A000055 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A000055() {
     super(0);
   }

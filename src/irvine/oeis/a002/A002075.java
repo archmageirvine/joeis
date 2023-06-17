@@ -11,7 +11,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class A002075 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A002075() {
     super(1);
   }
@@ -20,11 +20,11 @@ public class A002075 extends AbstractSequence {
 
   private int hprime(final int d) {
     switch (d % 6) {
-    case 0:
-      return -6;
-    case 3:
-      return -3;
-    case 1:
+      case 0:
+        return -6;
+      case 3:
+        return -3;
+      case 1:
     case 5:
       return 1;
     default:

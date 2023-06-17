@@ -14,13 +14,14 @@ import irvine.oeis.AbstractSequence;
  */
 public class A004307 extends AbstractSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A004307() {
     super(4);
   }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final ArrayList<Polynomial<Z>> Y = new ArrayList<>();
+
   static {
     final Polynomial<Z> y = Polynomial.create(-1, 1);
     Y.add(RING.one());

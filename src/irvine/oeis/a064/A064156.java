@@ -10,8 +10,6 @@ import irvine.oeis.Sequence1;
  */
 public class A064156 extends Sequence1 {
 
-  // todo how to tell when the final answer will be 0
-
   private int mN = 0;
   private long mLimit = 0;
 
@@ -41,6 +39,8 @@ public class A064156 extends Sequence1 {
     if (Jaguar.factor(mN).largestPrimeFactor().compareTo(Z.SEVEN) > 0) {
       return Z.ZERO;
     }
+
+    // There must be some other smart way to eliminate others 0 such as n=35, n=49, n=54.
 
     mLimit = 9L * mN * mN; // n times sum of n 9's
     return search(Z.ZERO, 0, 1, 0);

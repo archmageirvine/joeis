@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A027815 a(n) = 42*(n+1) * binomial(n+5, 10).
+ * A027815 a(n) = 42*(n+1) * binomial(n+5,10).
  * @author Sean A. Irvine
  */
 public class A027815 extends AbstractSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A003290 Number of n-step self-avoiding walks on hexagonal lattice from (0, 0) to (0, 2).
+ * A003290 Number of n-step self-avoiding walks on hexagonal lattice from (0,0) to (0,2).
  * @author Sean A. Irvine
  */
 public class A003290 extends AbstractSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A000771 Stirling numbers of second kind, S(n, 7).
+ * A000771 Stirling numbers of second kind, S(n,7).
  * @author Sean A. Irvine
  */
 public class A000771 extends AbstractSequence {

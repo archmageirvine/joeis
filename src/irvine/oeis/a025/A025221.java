@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A025221 [ 4th elementary symmetric function of sqrt(k+1) ], k = 1, 2,...,n.
+ * A025221 [ 4th elementary symmetric function of sqrt(k+1) ], k = 1,2,...,n.
  * @author Sean A. Irvine
  */
 public class A025221 extends AbstractSequence {

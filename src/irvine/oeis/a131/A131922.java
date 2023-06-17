@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002024;
 import irvine.oeis.a130.A130296;
 
 /**
- * A131922 2*A002024 - A130296.
+ * A131922 Triangle read by rows: 2*A002024 - A130296 as infinite lower triangular matrices.
  * @author Georg Fischer
  */
 public class A131922 extends AbstractSequence {

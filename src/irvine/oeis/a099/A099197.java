@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A099197 Figurate numbers based on the 10-dimensional regular convex polytope called the 10-dimensional cross-polytope, or 10-dimensional hyperoctahedron, which is represented by the Schlaefli symbol {3, 3, 3, 3, 3, 3, 3, 3, 4}. It is the dual of the 10-dimensional hypercube.
+ * A099197 a(n) = (n^2)*(2*n^8+120*n^6+1806*n^4+7180*n^2+5067)/14175.
  * @author Sean A. Irvine
  */
 public class A099197 extends LinearRecurrence {

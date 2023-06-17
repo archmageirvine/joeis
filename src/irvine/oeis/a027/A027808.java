@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A027808 a(n) = 55*(n+1)*binomial(n+4, 12).
+ * A027808 a(n) = 55*(n+1)*binomial(n+4,12).
  * @author Sean A. Irvine
  */
 public class A027808 extends AbstractSequence {

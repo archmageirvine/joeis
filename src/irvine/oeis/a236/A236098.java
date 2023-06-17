@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A236098 Decimal expansion of the real part of -Pi^(I*Pi).
+ * A236098 Decimal expansion of the real part of -Pi^(i*Pi).
  * @author Georg Fischer
  */
 public class A236098 extends DecimalExpansionSequence {

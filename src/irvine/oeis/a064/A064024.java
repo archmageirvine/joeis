@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A064024 a(n) = value of k such that absolute difference of 2^n and 3^k is minimized.
+ * A064024 a(n) = minimum value of abs(2^n - 3^k).
  * @author Sean A. Irvine
  */
 public class A064024 extends Sequence0 {

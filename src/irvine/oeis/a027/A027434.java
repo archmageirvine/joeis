@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A027434 a(1) = 2; then defined by property that a(n) = smallest number &gt;= a(n-1) such that successive runs have lengths 1, 1, 2, 2, 3, 3, 4, 4.
+ * A027434 a(1) = 2; then defined by property that a(n) = smallest number &gt;= a(n-1) such that successive runs have lengths 1,1,2,2,3,3,4,4.
  * @author Sean A. Irvine
  */
 public class A027434 extends AbstractSequence {

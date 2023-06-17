@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A027783 a(n) = 5*(n+1)*binomial(n+2, 10).
+ * A027783 a(n) = 5*(n+1)*binomial(n+2,10).
  * @author Sean A. Irvine
  */
 public class A027783 extends AbstractSequence {

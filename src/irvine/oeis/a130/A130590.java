@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 /**
- * A130590 Decimal expansion of the mean Euclidean distance from a point in a 3D box to the surfaces.
+ * A130590 Decimal expansion of the mean Euclidean distance from a point in the unit 3D cube to a given vertex of the cube.
  * Formula: sqrt(3)/4+log(2+sqrt(3))/2-Pi/24
  * @author Georg Fischer
  */

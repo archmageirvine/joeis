@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A019582 a(n) = n*(n-1)^3/2.
+ * A019582 a(n) = n*(n - 1)^3/2.
  * @author Sean A. Irvine
  */
 public class A019582 extends Sequence0 {

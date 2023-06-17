@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A211422 Number of ordered triples (w,x,y) with all terms in {-n,..., 0,...,n} and w^2 + x*y = 0.
+ * A211422 Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w^2 + x*y = 0.
  * @author Georg Fischer
  */
 public class A211422 extends AbstractSequence {

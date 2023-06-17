@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A010971 a(n) = binomial(n, 18).
+ * A010971 a(n) = binomial(n,18).
  * @author Sean A. Irvine
  */
 public class A010971 extends AbstractSequence {

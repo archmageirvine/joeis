@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A254968 Decimal expansion of the mean reciprocal Euclidean distance from a point in a unit cube to the faces (named B_3(-1) in Bailey's paper).
+ * A254968 Decimal expansion of the mean reciprocal Euclidean distance from a point in a unit cube to a given vertex of the cube (named B_3(-1) in Bailey's paper).
  * Formula: log(7+4*sqrt(3))-Pi/4-arcsinh(1/sqrt(2))
  * @author Georg Fischer
  */

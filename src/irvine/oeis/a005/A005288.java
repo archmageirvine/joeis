@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A005288 a(n) = C(n, 5) + C(n, 4) - C(n, 3) + 1, n &gt;= 7.
+ * A005288 a(n) = C(n,5) + C(n,4) - C(n,3) + 1, n &gt;= 7.
  * @author Sean A. Irvine
  */
 public class A005288 extends AbstractSequence {

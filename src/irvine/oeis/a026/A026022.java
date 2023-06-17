@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A026022 Triangular array T read by rows: T(n, 0) = 1 for n &gt;= 0; T(n,k) = C(n,k) for k = 1, 2,...,n, for n = 1, 2, 3; and for n &gt;= 4, T(n,k) = T(n-1,k-1) + T(n-1,k) for k = 1, 2,...,[ (n+2)/2 ] and T(n,(n+3)/2) = T(n-1,(n+1)/2) if n is odd.
+ * A026022 Triangular array T read by rows: T(n,0) = 1 for n &gt;= 0; T(n,k) = C(n,k) for k = 1,2,...,n, for n = 1,2,3; and for n &gt;= 4, T(n,k) = T(n-1,k-1) + T(n-1,k) for k = 1,2,...,[ (n+2)/2 ] and T(n,(n+3)/2) = T(n-1,(n+1)/2) if n is odd.
  * @author Sean A. Irvine
  */
 public class A026022 extends AbstractSequence {

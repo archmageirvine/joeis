@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A143086 Triangle: T(n,k) = 2^(k + 1) - 1 if k &lt; = floor(n/2), otherwise 2^(n - k + 1) - 1.
+ * A143086 Triangle read by rows: T(n,k) = 2^(k + 1) - 1 if k &lt; = floor(n/2), otherwise 2^(n - k + 1) - 1, for 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A143086 extends BaseTriangle {

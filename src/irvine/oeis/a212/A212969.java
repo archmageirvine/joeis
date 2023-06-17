@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A212969 Number of (w,x,y) with all terms in {0,...,n} and w!=x and x&gt;range{w,x,y}.
+ * A212969 Number of (w,x,y) with all terms in {0,...,n} and w != x and x &gt; range(w,x,y).
  * @author Sean A. Irvine
  */
 public class A212969 extends LinearRecurrence {

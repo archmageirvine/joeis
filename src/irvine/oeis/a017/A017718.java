@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A017718 Binomial coefficients C(n, 54).
+ * A017718 Binomial coefficients C(n,54).
  * @author Sean A. Irvine
  */
 public class A017718 extends AbstractSequence {

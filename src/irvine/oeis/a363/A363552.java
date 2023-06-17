@@ -7,7 +7,7 @@ import irvine.oeis.a008.A008836;
 import irvine.oeis.a307.A307430;
 
 /**
- * A363552 M√∂bius function of rank 4: a(n) = lambda(n) = A008836(n) if n is biquadratefree (A046100) and 0 otherwise.
+ * A363552 M\u00f6bius function of rank 4: a(n) = lambda(n) = A008836(n) if n is biquadratefree (A046100) and 0 otherwise.
  * @author Georg Fischer
  */
 public class A363552 extends AbstractSequence {

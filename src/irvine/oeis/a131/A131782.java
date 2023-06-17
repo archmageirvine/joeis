@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000012;
 import irvine.oeis.a004.A004736;
 
 /**
- * A131782 (A004736 * A000012) - (A000012 * A004736) - A000012.
+ * A131782 Triangle read by rows: (A004736 * A000012) + (A000012 * A004736) - A000012 as infinite lower triangular matrices.
  * @author Georg Fischer
  */
 public class A131782 extends A131416 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A361870 allocated for Nathan L. Skirrow.
+ * A361870 Array read by antidiagonals: A(n,k) is the number of nonequivalent 2-colorings of the cells of an n-dimensional hypercube with edges k cells long under action of symmetry.
  * @author Sean A. Irvine
  */
 public class A361870 extends Sequence1 {

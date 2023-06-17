@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A119882 E.g.f.: (1+x)*sech(x).
+ * A119882 Expansion of e.g.f.: (1+x)*sech(x).
  * E.g.f.: (1+x)*sech(x)
  * @author Georg Fischer
  */

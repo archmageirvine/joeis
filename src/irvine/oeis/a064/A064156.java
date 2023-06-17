@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064152.
+ * A064156 Smallest prime with n decimal digits such that the product of its digits equals n times the sum of its digits, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A064156 extends Sequence1 {

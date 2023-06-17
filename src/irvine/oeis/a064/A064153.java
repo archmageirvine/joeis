@@ -6,7 +6,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000607;
 
 /**
- * A064153.
+ * A064153 Values of n that are not solution of pr(x)=n where pr(x) is the prime partition function of x.
  * @author Sean A. Irvine
  */
 public class A064153 extends ComplementSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A165872 Totally multiplicative sequence with a(p) = - 2.
+ * A165872 Totally multiplicative sequence with a(p^e) = (-2)^e.
  * @author Georg Fischer
  */
 public class A165872 extends MultiplicativeSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A000172 Franel number a(n) = Sum_{k = 0..n} binomial(n,k)^3.
+ * A000172 The Franel number a(n) = Sum_{k = 0..n} binomial(n,k)^3.
  * @author Sean A. Irvine
  */
 public class A000172 extends Sequence0 {

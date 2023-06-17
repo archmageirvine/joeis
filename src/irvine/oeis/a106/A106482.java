@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007588;
 
 /**
- * A106482 Number of prime factors (with multiplicity) of the Stella Octangula numbers A007588.
+ * A106482 Number of prime factors (with multiplicity) of A007588(n).
  * @author Georg Fischer
  */
 public class A106482 extends A007588 {

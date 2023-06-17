@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A006542 a(n) = binomial(n, 3)*binomial(n-1, 3)/4.
+ * A006542 a(n) = binomial(n,3)*binomial(n-1,3)/4.
  * @author Sean A. Irvine
  */
 public class A006542 extends AbstractSequence {

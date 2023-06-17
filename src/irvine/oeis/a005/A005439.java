@@ -17,12 +17,12 @@ public class A005439 extends AbstractSequence {
     super(0);
   }
 
-  protected int mN = 0;
+  protected int mN = -1;
   private final BernoulliSequence mBernoulli = new BernoulliSequence(0);
 
   @Override
   public Z next() {
-    if (++mN == 1) {
+    if (++mN <= 1) {
       return Z.ONE;
     }
     Q sum = Q.ZERO;

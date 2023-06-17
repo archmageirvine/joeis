@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A064152.
+ * A064157 Primes p such that (x1*x2*..xk)^(x1+x2+..xk)=(x1+x2+..xk)^(x1*x2*...xk) where x1x2..xk are the digits of p in base 10.
  * @author Sean A. Irvine
  */
 public class A064157 extends A000040 {

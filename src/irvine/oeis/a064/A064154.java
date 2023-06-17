@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A064152 Erdos primes: primes p such that all p-k! for 1&lt;=k!&lt;p are composite.
+ * A064154 Numbers whose product of digits equals the number of digits times the sum of digits.
  * @author Sean A. Irvine
  */
 public class A064154 extends Sequence1 {

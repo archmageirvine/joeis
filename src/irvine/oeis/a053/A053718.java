@@ -13,7 +13,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.util.Pair;
 
 /**
- * A053718 Number of n X n binary matrices of order dividing 4 (also number of solutions to X^4=I in GL(n, 2)).
+ * A053718 Number of n X n binary matrices of order dividing 4 (also number of solutions to X^4=I in GL(n,2)).
  * @author Sean A. Irvine
  */
 public class A053718 extends AbstractSequence {

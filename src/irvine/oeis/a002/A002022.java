@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A002022 Pile of coconuts problem.
+ * A002022 In the pile of coconuts problem, the number of coconuts that remain to be shared equally at the end of the process.
  * @author Sean A. Irvine
  */
 public class A002022 extends Sequence2 {

@@ -7,7 +7,7 @@ import irvine.oeis.a008.A008836;
 import irvine.oeis.a212.A212793;
 
 /**
- * A363551 M√∂bius function of rank 3: a(n) = lambda(n) = A008836(n) if n is cubefree and 0 otherwise.
+ * A363551 M\u00f6bius function of rank 3: a(n) = lambda(n) = A008836(n) if n is cubefree and 0 otherwise.
  * @author Georg Fischer
  */
 public class A363551 extends AbstractSequence {

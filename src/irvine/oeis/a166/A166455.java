@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.a047.A047999;
 
 /**
- * A166455 Triangle read by rows, twice Pascal's triangle minus Sierpinski's gasket, 2*A007318 -A047999.
+ * A166455 Triangle read by rows, twice Pascal's triangle minus Sierpinski's gasket: 2*A007318 - A047999.
  * @author Georg Fischer
  */
 public class A166455 extends AbstractSequence {

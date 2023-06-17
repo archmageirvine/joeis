@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A099193 Figurate numbers based on the 7-dimensional regular convex polytope called the 7-dimensional cross-polytope, or 7-dimensional hyperoctahedron, which is represented by the Schlaefli symbol {3, 3, 3, 3, 3, 4}. It is the dual of the 7-dimensional hypercube.
+ * A099193 a(n) = n*(4*n^6 + 70*n^4 + 196*n^2 + 45)/315.
  * @author Georg Fischer
  */
 public class A099193 extends GeneratingFunctionSequence {

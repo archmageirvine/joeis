@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A030503 Graham-Sloane-type lower bound on the size of a ternary (n, 3, 3) constant-weight code.
+ * A030503 Graham-Sloane-type lower bound on the size of a ternary (n,3,3) constant-weight code.
  * @author Sean A. Irvine
  */
 public class A030503 extends AbstractSequence {

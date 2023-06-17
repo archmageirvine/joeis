@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A026009 Triangular array T read by rows: T(n, 0) = 1 for n &gt;= 0; T(1, 1) = 1; and for n &gt;= 2, T(n,k) = T(n-1,k-1) + T(n-1,k) for k = 1, 2,...,[(n+1)/2]; T(n,n/2 + 1) = T(n-1,n/2) if n is even.
+ * A026009 Triangular array T read by rows: T(n,0) = 1 for n &gt;= 0; T(1,1) = 1; and for n &gt;= 2, T(n,k) = T(n-1,k-1) + T(n-1,k) for k = 1,2,...,[(n+1)/2]; T(n,n/2 + 1) = T(n-1,n/2) if n is even.
  * @author Sean A. Irvine
  */
 public class A026009 extends AbstractSequence {

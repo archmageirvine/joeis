@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A027785 a(n) = 6*(n+1)*binomial(n+2, 12).
+ * A027785 a(n) = 6*(n+1)*binomial(n+2,12).
  * @author Sean A. Irvine
  */
 public class A027785 extends AbstractSequence {

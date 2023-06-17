@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000012;
 
 /**
- * A133115 2*A133113 - A000012.
+ * A133115 Triangle read by rows: 2*A133113 - A000012 as infinite lower triangular matrices.
  * @author Georg Fischer
  */
 public class A133115 extends AbstractSequence {

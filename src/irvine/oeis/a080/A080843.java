@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A080843 Tribonacci word: limit S(infinity), where S(0) = 0, S(1) = 0, 1, S(2) = 0, 1, 0, 2 and for n &gt;= 0, S(n+3) = S(n+2) S(n+1) S(n).
+ * A080843 Tribonacci word: limit S(infinity), where S(0) = 0, S(1) = 0,1, S(2) = 0,1,0,2 and for n &gt;= 0, S(n+3) = S(n+2) S(n+1) S(n).
  * @author Sean A. Irvine
  */
 public class A080843 extends AbstractSequence {

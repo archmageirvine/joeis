@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A010970 a(n) = binomial(n, 17).
+ * A010970 a(n) = binomial(n,17).
  * @author Sean A. Irvine
  */
 public class A010970 extends AbstractSequence {

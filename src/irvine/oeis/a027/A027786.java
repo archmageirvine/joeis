@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A027786 a(n) = 13*(n+1)*binomial(n+2, 13)/2.
+ * A027786 a(n) = 13*(n+1)*binomial(n+2,13)/2.
  * @author Sean A. Irvine
  */
 public class A027786 extends AbstractSequence {

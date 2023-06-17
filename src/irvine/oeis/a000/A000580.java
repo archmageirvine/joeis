@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A000580 a(n) = binomial coefficient C(n, 7).
+ * A000580 a(n) = binomial coefficient C(n,7).
  * @author Sean A. Irvine
  */
 public class A000580 extends AbstractSequence {

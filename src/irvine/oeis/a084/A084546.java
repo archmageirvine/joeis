@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A084546 Triangle read by rows: T(n,k) = C( C(n, 2), k) for n &gt;= 0, 0 &lt;= k &lt;= C(n, 2).
+ * A084546 Triangle read by rows: T(n,k) = C( C(n,2), k) for n &gt;= 0, 0 &lt;= k &lt;= C(n,2).
  * @author Sean A. Irvine
  */
 public class A084546 extends AbstractSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
- * A363659.
+ * A363659 Numbers k such that the last letter of k is the same as the first letter of k+1 when written in English.
  * @author Sean A. Irvine
  */
 public class A363659 extends Sequence1 {

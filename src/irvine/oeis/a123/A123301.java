@@ -15,7 +15,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A123301 Triangle read by rows: T(n,k) is the number of specially labeled bicolored nonseparable graphs with k points in one color class and n-k points in the other class. "Special" means there are separate labels 1, 2,...,k and 1, 2,...,n-k for the two color classes (n &gt;= 2, k = 1,...,n-1).
+ * A123301 Triangle read by rows: T(n,k) is the number of specially labeled bicolored nonseparable graphs with k points in one color class and n-k points in the other class. "Special" means there are separate labels 1,2,...,k and 1,2,...,n-k for the two color classes (n &gt;= 2, k = 1,...,n-1).
  * @author Sean A. Irvine
  */
 public class A123301 extends AbstractSequence {

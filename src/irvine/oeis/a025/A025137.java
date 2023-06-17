@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A025137 a(n) = 3rd elementary symmetric function of C(n, 0), C(n, 1), ..., C(n,[ n/2 ]).
+ * A025137 a(n) = 3rd elementary symmetric function of C(n,0), C(n,1), ..., C(n,[ n/2 ]).
  * @author Sean A. Irvine
  */
 public class A025137 extends AbstractSequence {

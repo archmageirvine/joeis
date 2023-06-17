@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A119884 E.g.f. sech(x)/(1-x).
+ * A119884 Expansion of e.g.f. sech(x)/(1-x).
  * E.g.f.: sech(x)/(1-x)
  * @author Georg Fischer
  */

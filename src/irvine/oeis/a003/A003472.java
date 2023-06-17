@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A003472 a(n) = 2^(n-4)*C(n, 4).
+ * A003472 a(n) = 2^(n-4)*C(n,4).
  * @author Sean A. Irvine
  */
 public class A003472 extends AbstractSequence {

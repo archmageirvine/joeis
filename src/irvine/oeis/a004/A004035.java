@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A004035 The coding-theoretic function A(n, 4, 5).
+ * A004035 The coding-theoretic function A(n,4,5).
  * @author Sean A. Irvine
  */
 public class A004035 extends AbstractSequence {

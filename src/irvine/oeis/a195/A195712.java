@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A195712 Decimal expansion of arcsin(((1/2)^(1/3)).
+ * A195712 Decimal expansion of arcsin((1/2)^(1/3)).
  * @author Georg Fischer
  */
 public class A195712 extends DecimalExpansionSequence {

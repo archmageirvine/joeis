@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A361007 allocated for Artur Jasinski.
+ * A361007 a(n) = numerator of (zeta(2*n,1/4) + zeta(2*n,3/4))/Pi^(2*n) where zeta is the Hurwitz zeta function.
  * @author Sean A. Irvine
  */
 public class A361007 extends Sequence1 {

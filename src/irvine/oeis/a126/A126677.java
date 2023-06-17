@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A126677 Product_{i=4..n} |Stirling_1(i, 4)|.
+ * A126677 Product_{i=4..n} |Stirling_1(i,4)|.
  * @author Georg Fischer
  */
 public class A126677 extends AbstractSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A050948 Pi expressed in base e: Pi = Sum a(i)*exp(-i), i=-1, 0, 1, 2,...
+ * A050948 Pi expressed in base e: Pi = Sum a(i)*exp(-i), i=-1,0,1,2,...
  * @author Sean A. Irvine
  */
 public class A050948 extends AbstractSequence {

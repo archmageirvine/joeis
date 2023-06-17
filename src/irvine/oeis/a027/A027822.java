@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A027822 a(n) = 42*(n+1)*binomial(n+6, 10).
+ * A027822 a(n) = 42*(n+1)*binomial(n+6,10).
  * @author Sean A. Irvine
  */
 public class A027822 extends AbstractSequence {

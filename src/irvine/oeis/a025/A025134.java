@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A025134 a(n) = n-th elementary symmetric function of C(n, 0), C(n, 1), ..., C(n,n).
+ * A025134 a(n) = n-th elementary symmetric function of C(n,0), C(n,1), ..., C(n,n).
  * @author Sean A. Irvine
  */
 public class A025134 extends AbstractSequence {

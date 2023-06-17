@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A126681 a(n) = Product_{i=5..n} Stirling_2(i, 5).
+ * A126681 a(n) = Product_{i=5..n} Stirling_2(i,5).
  * @author Georg Fischer
  */
 public class A126681 extends AbstractSequence {

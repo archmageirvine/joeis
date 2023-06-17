@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A154537 Triangle T(n,m) read by rows: let p(x,n) = Sum_{m&gt;=0} (2*m + 1)^n * x^m / m! / exp(x); then T(n,m) = [x^m] p(x,n).
+ * A154537 Triangle T(n,m) read by rows: let p(n,x) = exp(-x) * Sum_{m &gt;= 0} (2*m + 1)^n * x^m/m!; then T(n,m) = [x^m] p(n,x).
  * @author Georg Fischer
  */
 public class A154537 extends Triangle {

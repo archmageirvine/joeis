@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A022216 Gaussian binomial coefficients [ n, 9 ] for q = 5.
+ * A022216 Gaussian binomial coefficients [ n,9 ] for q = 5.
  * @author Sean A. Irvine
  */
 public class A022216 extends AbstractSequence {

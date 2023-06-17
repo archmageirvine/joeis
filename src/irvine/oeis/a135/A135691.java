@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A135691 Decimal expansion of (6*sqrt(3)+12*log(2+sqrt(3))-Pi)/48.
+ * A135691 Decimal expansion of (6*sqrt(3) + 12*log(2+sqrt(3)) - Pi)/48.
  * @author Georg Fischer
  */
 public class A135691 extends DecimalExpansionSequence {

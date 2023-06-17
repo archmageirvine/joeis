@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A000254 Unsigned Stirling numbers of first kind, s(n+1, 2): a(n+1) = (n+1)*a(n) + n!.
+ * A000254 Unsigned Stirling numbers of first kind, s(n+1,2): a(n+1) = (n+1)*a(n) + n!.
  * @author Sean A. Irvine
  */
 public class A000254 extends AbstractSequence {

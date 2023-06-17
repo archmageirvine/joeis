@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a182.A182772;
 
 /**
- * A194149 Sum{floor(j*(5-sqrt(3))/2) : 1&lt;=j&lt;=n}; n-th partial sum of Beatty sequence for (5-sqrt(3))/2.
+ * A194149 Sum_{floor(j*(5-sqrt(3))/2) : 1&lt;=j&lt;=n}; n-th partial sum of Beatty sequence for (5-sqrt(3))/2.
  * @author Sean A. Irvine
  */
 public class A194149 extends PartialSumSequence {

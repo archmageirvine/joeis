@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A049816 Triangular array T read by rows: T(n,k)=number of nonzero remainders when Euclidean algorithm acts on n and k, for k=1, 2,...,n, n=1, 2,...
+ * A049816 Triangular array T read by rows: T(n,k)=number of nonzero remainders when Euclidean algorithm acts on n and k, for k=1,2,...,n, n=1,2,...
  * @author Sean A. Irvine
  */
 public class A049816 extends AbstractSequence {

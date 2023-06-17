@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A064113 Indices of primes prime(i) such that (1/3)*(prime(i)+prime(i+1)+prime(i+2)) is a prime.
+ * A064113 Indices k such that (1/3)*(prime(k)+prime(k+1)+prime(k+2)) is a prime.
  * @author Sean A. Irvine
  */
 public class A064113 extends A000040 {

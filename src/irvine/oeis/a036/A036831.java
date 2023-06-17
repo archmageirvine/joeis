@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A036831 Schoenheim bound L_1(n, 4, 3).
+ * A036831 Schoenheim bound L_1(n,4,3).
  * @author Sean A. Irvine
  */
 public class A036831 extends AbstractSequence {

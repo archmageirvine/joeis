@@ -5,7 +5,7 @@ package irvine.oeis.a105;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A105751 Imaginary part of Product_{k=0..n} 1+k*I, I=sqrt(-1).
+ * A105751 Imaginary part of Product_{k=0..n} (1 + k*i), i = sqrt(-1).
  * Recurrence: -a(n)*(n-1)+((2*n-1)*a(n-1)-(n^2-2*n+2)*n*a(n-2))
  * @author Georg Fischer
  */

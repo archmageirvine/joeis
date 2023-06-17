@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A160332 Decimal expansion of the one real root of x^3-8x-10.
+ * A160332 Decimal expansion of the one real root of x^3 - 8x - 10.
  * @author Sean A. Irvine
  */
 public class A160332 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A140875 Triangle read by rows: T(n,m) = gcd(n,m+2) - 2*gcd(n,m+1) + gcd(n,m).
+ * A140875 Triangle read by rows: T(n,m) = gcd(n,m+2) - 2*gcd(n,m+1) - gcd(n,m), with diagonal and subdiagonal removed.
  * @author Georg Fischer
  */
 public class A140875 extends BaseTriangle {

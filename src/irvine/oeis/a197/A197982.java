@@ -3,7 +3,7 @@ package irvine.oeis.a197;
 // DO NOT EDIT here!
 
 /**
- * A197982 Round((9*n+1/n)^n).
+ * A197982 a(n) = round((9*n+1/n)^n).
  * @author Georg Fischer
  */
 public class A197982 extends A197975 {

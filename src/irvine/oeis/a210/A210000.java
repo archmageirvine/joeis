@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A210000 Number of unimodular 2 X 2 matrices having all terms in {0, 1,...,n}.
+ * A210000 Number of unimodular 2 X 2 matrices having all terms in {0,1,...,n}.
  * @author Georg Fischer
  */
 public class A210000 extends AbstractSequence {

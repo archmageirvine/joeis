@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
 /**
- * A038767 Numbers n for which n-th primorial + square of (n+1)-th prime is also a prime.
+ * A038767 Numbers k for which k-th primorial + square of (k+1)-th prime is also a prime.
  * @author Sean A. Irvine
  */
 public class A038767 extends A002110 {

@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a217.A217854;
 
 /**
- * A224914 Accumulation of products of all divisors of n, positive or negative.
+ * A224914 Partial sums of A217854.
  * @author Sean A. Irvine
  */
 public class A224914 extends PartialSumSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000225;
 import irvine.oeis.a003.A003261;
 
 /**
- * A137810 a(n)=2^(2^n+n)-1.
+ * A137810 a(n) = 2^(2^n+n) - 1.
  * @author Georg Fischer
  */
 public class A137810 extends IntersectionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.util.Permutation;
 
 /**
- * A007712 Number of once reformable permutations of {1, 2,...,n}.
+ * A007712 Number of once reformable permutations of {1,2,...,n}.
  * @author Sean A. Irvine
  */
 public class A007712 extends AbstractSequence {

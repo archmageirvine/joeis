@@ -7,7 +7,7 @@ import irvine.oeis.a128.A128174;
 import irvine.oeis.a130.A130296;
 
 /**
- * A131230 2*A130296 - A128174.
+ * A131230 Triangle read by rows: 2*A130296 - A128174.
  * @author Georg Fischer
  */
 public class A131230 extends AbstractSequence {

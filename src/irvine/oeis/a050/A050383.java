@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A050383 Permutation rooted trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A050383 implements Sequence {
+public class A050383 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A050383() {
+    super(1);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   protected int mN = -1;

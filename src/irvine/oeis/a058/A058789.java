@@ -2,13 +2,18 @@ package irvine.oeis.a058;
 
 import irvine.math.plantri.Plantri;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A058789 Number of polyhedra with n faces and n+1 vertices (or n vertices and n+1 faces).
  * @author Sean A. Irvine
  */
-public class A058789 implements Sequence {
+public class A058789 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A058789() {
+    super(4);
+  }
 
   private int mN = 3;
 

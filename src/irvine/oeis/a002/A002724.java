@@ -4,13 +4,18 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.HararyMultiply;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002724 Number of inequivalent n X n binary matrices, where equivalence means permutations of rows or columns.
  * @author Sean A. Irvine
  */
-public class A002724 implements Sequence {
+public class A002724 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002724() {
+    super(0);
+  }
 
   private int mN = -1;
 

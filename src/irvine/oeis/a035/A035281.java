@@ -4,6 +4,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a004.A004009;
 import irvine.oeis.a013.A013973;
@@ -12,7 +13,12 @@ import irvine.oeis.a013.A013973;
  * A035281 Fourier coefficients of T_4.
  * @author Sean A. Irvine
  */
-public class A035281 implements Sequence {
+public class A035281 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A035281() {
+    super(-1);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final Sequence mE4Seq = new A004009();

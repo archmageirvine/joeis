@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000806 Bessel polynomial y_n(-1).
  * @author Sean A. Irvine
  */
-public class A000806 implements Sequence {
+public class A000806 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000806() {
+    super(0);
+  }
 
   private Z mA = Z.ZERO;
   private Z mB = Z.ONE;

@@ -2,13 +2,18 @@ package irvine.oeis.a091;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A091836 A triangle of Motzkin ballot numbers.
  * @author Sean A. Irvine
  */
-public class A091836 implements Sequence {
+public class A091836 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A091836() {
+    super(0);
+  }
 
   private long mN = 0;
   private long mM = 0;

@@ -1,13 +1,18 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A048385 In base-10 notation replace digits of n with their squared values (Version 1).
  * @author Sean A. Irvine
  */
-public class A048385 implements Sequence {
+public class A048385 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A048385() {
+    super(0);
+  }
 
   static final String[] EXPANSIONS = {
     "0",

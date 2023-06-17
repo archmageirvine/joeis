@@ -2,13 +2,18 @@ package irvine.oeis.a005;
 
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005176 Number of regular graphs with n unlabeled nodes.
  * @author Sean A. Irvine
  */
-public class A005176 implements Sequence {
+public class A005176 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005176() {
+    super(0);
+  }
 
   private int mN = -1;
 

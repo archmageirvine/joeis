@@ -3,13 +3,13 @@ package irvine.oeis.a061;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A061038 Denominator of 1/4 - 1/n^2. 
  * @author Georg Fischer
  */
-public class A061038 implements Sequence {
+public class A061038 extends AbstractSequence {
 
   protected int mN;
   protected Q mAdd;
@@ -25,6 +25,7 @@ public class A061038 implements Sequence {
    * @param parm parameter
    */
   public A061038(final int offset, final int parm) {
+    super(2);
     mN = offset - 1;
     mAdd = new Q(Z.ONE, Z.valueOf(parm));
   }

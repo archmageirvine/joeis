@@ -2,14 +2,19 @@ package irvine.oeis.a029;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.string.StringUtils;
 
 /**
  * A029790 None of the digits in n is present in n^2 or n^3.
  * @author Sean A. Irvine
  */
-public class A029790 implements Sequence {
+public class A029790 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A029790() {
+    super(1);
+  }
 
 private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private Z mN = Z.NEG_ONE;

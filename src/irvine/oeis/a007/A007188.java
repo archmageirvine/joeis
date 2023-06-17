@@ -3,13 +3,18 @@ package irvine.oeis.a007;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007188 Multiplicative encoding of Pascal triangle: Product p(i+1)^C(n,i).
  * @author Sean A. Irvine
  */
-public class A007188 implements Sequence {
+public class A007188 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007188() {
+    super(0);
+  }
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

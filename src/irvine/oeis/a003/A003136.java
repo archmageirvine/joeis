@@ -3,13 +3,18 @@ package irvine.oeis.a003;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A003136 Loeschian numbers: numbers of the form x^2 + xy + y^2; norms of vectors in A2 lattice.
  * @author Sean A. Irvine
  */
-public class A003136 implements Sequence {
+public class A003136 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003136() {
+    super(1);
+  }
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mXLast = Z.NEG_ONE;

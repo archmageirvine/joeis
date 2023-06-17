@@ -2,13 +2,18 @@ package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000949 Number of forests with n nodes and height at most 2.
  * @author Sean A. Irvine
  */
-public class A000949 implements Sequence {
+public class A000949 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000949() {
+    super(0);
+  }
 
   protected int mN = -1;
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

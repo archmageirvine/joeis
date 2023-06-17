@@ -1,13 +1,18 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A004489 Table of tersums m + n (answers written in base 10).
  * @author Sean A. Irvine
  */
-public class A004489 implements Sequence {
+public class A004489 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A004489() {
+    super(0);
+  }
 
   private int r(final String s, final int n) {
     return n < 0 ? 0 : s.charAt(n) - '0';

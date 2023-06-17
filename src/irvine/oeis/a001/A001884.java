@@ -7,13 +7,18 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001884 Hit polynomials.
  * @author Sean A. Irvine
  */
-public class A001884 implements Sequence {
+public class A001884 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001884() {
+    super(1);
+  }
 
   protected int coeff() {
     return 1;

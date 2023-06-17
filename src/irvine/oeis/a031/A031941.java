@@ -1,18 +1,19 @@
 package irvine.oeis.a031;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A031941 Numbers without consecutive equal base 3 digits.
  * @author Sean A. Irvine
  */
-public class A031941 implements Sequence {
+public class A031941 extends AbstractSequence {
 
   private final long mBase;
   private long mN;
 
   protected A031941(final long base, final long start) {
+    super(1);
     mBase = base;
     mN = start - 1;
   }

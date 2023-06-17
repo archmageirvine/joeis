@@ -2,13 +2,18 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A045812 Number of times the digits are repeated in A045811.
  * @author Sean A. Irvine
  */
-public class A045812 implements Sequence {
+public class A045812 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A045812() {
+    super(0);
+  }
 
   private long mN = 0;
 

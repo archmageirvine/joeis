@@ -2,13 +2,18 @@ package irvine.oeis.a004;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A004086 Read n backwards (referred to as R(n) in many sequences).
  * @author Sean A. Irvine
  */
-public class A004086 implements Sequence {
+public class A004086 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A004086() {
+    super(0);
+  }
 
   protected long mN = -1;
 

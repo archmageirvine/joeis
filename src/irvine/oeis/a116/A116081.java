@@ -1,13 +1,13 @@
 package irvine.oeis.a116;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A116081 Final nonzero digit of n^n.
  * @author Georg Fischer
  */
-public class A116081 implements Sequence {
+public class A116081 extends AbstractSequence {
 
   protected long mN;
   protected int mBase;
@@ -23,6 +23,7 @@ public class A116081 implements Sequence {
    * @param base of the representation of <code>mN</code>
    */
   public A116081(final int offset, final int base) {
+    super(1);
     mN = offset - 1;
     mBase = base;
   }

@@ -5,13 +5,18 @@ import java.util.ArrayList;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001692 Number of irreducible polynomials of degree n over GF(5); dimensions of free Lie algebras.
  * @author Sean A. Irvine
  */
-public class A001692 implements Sequence {
+public class A001692 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001692() {
+    super(0);
+  }
 
   private final ArrayList<Z> mPowers = new ArrayList<>();
   private int mN = -1;

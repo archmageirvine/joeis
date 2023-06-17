@@ -6,13 +6,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A006932 Number of permutations of [n] with at least one strong fixed point (a permutation p of {1,2,...,n} is said to have j as a strong fixed point if p(k) &lt; j for k &lt; j and p(k) &gt; j for k &gt; j).
+ * A006932 Number of permutations of [n] with at least one strong fixed point (a permutation p of {1, 2,...,n} is said to have j as a strong fixed point if p(k) &lt; j for k &lt; j and p(k) &gt; j for k &gt; j).
  * @author Sean A. Irvine
  */
-public class A006932 implements Sequence {
+public class A006932 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006932() {
+    super(1);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final ArrayList<Z> mCoeff = new ArrayList<>();

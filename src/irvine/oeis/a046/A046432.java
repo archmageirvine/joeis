@@ -2,13 +2,18 @@ package irvine.oeis.a046;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A046432 2 steps needed to reach a prime under "Sum of digits raised to its digits' powers" procedure.
  * @author Sean A. Irvine
  */
-public class A046432 implements Sequence {
+public class A046432 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A046432() {
+    super(1);
+  }
 
   private long mN = 0;
 

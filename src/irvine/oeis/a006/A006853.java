@@ -11,14 +11,19 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Pair;
 
 /**
  * A006853 Balanced colorings of n-cube.
  * @author Sean A. Irvine
  */
-public class A006853 implements Sequence {
+public class A006853 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006853() {
+    super(0);
+  }
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final HashMap<Pair<Integer, List<Integer>>, Z> mCache = new HashMap<>();

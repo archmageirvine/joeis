@@ -8,13 +8,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A296170 E.g.f. A(x) satisfies: [x^(n-1)] A(x)^(n^2) = [x^n] A(x)^(n^2) for n&gt;=1.
  * @author Sean A. Irvine
  */
-public class A296170 implements Sequence {
+public class A296170 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A296170() {
+    super(0);
+  }
 
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   protected List<Q> mA = new ArrayList<>();

@@ -2,13 +2,13 @@ package irvine.oeis.a098;
 // manually 2021-06-26
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A098941 Numbers where 2 is the only even decimal digit. 
  * @author Georg Fischer
  */
-public class A098941 implements Sequence {
+public class A098941 extends AbstractSequence {
 
   protected int mN;
   protected String mPattern;
@@ -25,6 +25,7 @@ public class A098941 implements Sequence {
    * @param pattern pattern to be matched
    */
   public A098941(final int base, final String pattern) {
+    super(1);
     mN = -1; // always try to start with 0
     mBase = base;
     mPattern = pattern;

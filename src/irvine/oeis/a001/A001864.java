@@ -2,13 +2,18 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001864 Total height of rooted trees with n labeled nodes.
  * @author Sean A. Irvine
  */
-public class A001864 implements Sequence {
+public class A001864 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001864() {
+    super(1);
+  }
 
   protected int mN = 0;
 

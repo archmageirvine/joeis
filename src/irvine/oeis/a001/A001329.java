@@ -5,13 +5,18 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001329 Number of nonisomorphic groupoids with n elements.
  * @author Sean A. Irvine
  */
-public class A001329 implements Sequence {
+public class A001329 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001329() {
+    super(0);
+  }
 
   private int mN = start();
 

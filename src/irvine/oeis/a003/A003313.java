@@ -5,14 +5,19 @@ import java.util.Collections;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A003313 Length of shortest addition chain for n.
  * @author Sean A. Irvine
  */
-public class A003313 implements Sequence {
+public class A003313 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003313() {
+    super(1);
+  }
 
   private static final class ChainNode {
     private final int mHead;

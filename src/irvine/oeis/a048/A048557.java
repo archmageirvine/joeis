@@ -2,19 +2,19 @@ package irvine.oeis.a048;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A048557 a(1) = 1; a(n+1) is next smallest nontrivial square beginning with a(n).
  * @author Sean A. Irvine
  */
-public class A048557 implements Sequence {
+public class A048557 extends AbstractSequence {
 
   private Z mA = null;
   private final Z mStart;
 
   protected A048557(final Z start) {
-    super();
+    super(1);
     mStart = start;
   }
 

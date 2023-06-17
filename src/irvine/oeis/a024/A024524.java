@@ -2,13 +2,18 @@ package irvine.oeis.a024;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A024524 4th elementary symmetric function of {1, p(1), p(2), ..., p(n-1)}, where p(0) = 1.
  * @author Sean A. Irvine
  */
-public class A024524 implements Sequence {
+public class A024524 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A024524() {
+    super(4);
+  }
 
   private final Fast mPrime = new Fast();
   private Z mSum = Z.ZERO;

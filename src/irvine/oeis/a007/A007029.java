@@ -4,13 +4,18 @@ import java.util.ArrayList;
 
 import irvine.math.plantri.Plantri;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007029 Number of bipartite polyhedral graphs with n faces.
  * @author Sean A. Irvine
  */
-public class A007029 implements Sequence {
+public class A007029 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007029() {
+    super(6);
+  }
 
   private final ArrayList<Z> mFaceCount = new ArrayList<>();
   private int mN = 7; // Tracks number of vertices

@@ -3,13 +3,18 @@ package irvine.oeis.a002;
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002060 Number of partitions of an n-gon into (n-5) parts.
  * @author Georg Fischer
  */
-public class A002060 implements Sequence {
+public class A002060 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002060() {
+    super(7);
+  }
 
   private int mN = 6;
 

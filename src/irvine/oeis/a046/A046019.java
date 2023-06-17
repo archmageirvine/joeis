@@ -2,13 +2,18 @@ package irvine.oeis.a046;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A046019 a(n) gives the number of different powers m^n for which the sum of the digits is equal to m.
  * @author Sean A. Irvine
  */
-public class A046019 implements Sequence {
+public class A046019 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A046019() {
+    super(0);
+  }
 
   private static final long HEURISTIC = 300;
   private long mN = -1;

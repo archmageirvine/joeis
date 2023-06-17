@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A178666 Irregular triangle read by rows in which row n gives expansion of the polynomial Product_{k=0..n} (1 + x^(2*k + 1)), n &gt;= -1.
  * @author Sean A. Irvine
  */
-public class A178666 implements Sequence {
+public class A178666 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A178666() {
+    super(-1);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 

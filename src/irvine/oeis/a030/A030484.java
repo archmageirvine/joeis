@@ -1,13 +1,18 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A030484 Squares composed of digits {2,5,6}.
+ * A030484 Squares composed of digits {2, 5, 6}.
  * @author Sean A. Irvine
  */
-public class A030484 implements Sequence {
+public class A030484 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A030484() {
+    super(1);
+  }
 
   // 1 -> 2, 2 -> 5, 0 -> 6
 

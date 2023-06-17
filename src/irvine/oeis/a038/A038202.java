@@ -3,13 +3,18 @@ package irvine.oeis.a038;
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A038202 Least k such that n! + k^2 is a square.
  * @author Sean A. Irvine
  */
-public class A038202 implements Sequence {
+public class A038202 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A038202() {
+    super(4);
+  }
 
   // After T. D. Noe
 

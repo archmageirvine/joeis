@@ -4,14 +4,19 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A020985 The Rudin-Shapiro or Golay-Rudin-Shapiro sequence (coefficients of the Shapiro polynomials).
  * @author Sean A. Irvine
  */
-public class A020985 implements Sequence {
+public class A020985 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A020985() {
+    super(0);
+  }
 
   protected long mN = -1;
   protected final LongDynamicBooleanArray mA = new LongDynamicBooleanArray();

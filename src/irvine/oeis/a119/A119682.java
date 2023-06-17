@@ -2,13 +2,13 @@ package irvine.oeis.a119;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A119682 Numerator of Sum_{k=1..n} (-1)^(k+1)/k^2.
  * @author Georg Fischer
  */
-public class A119682 implements Sequence {
+public class A119682 extends AbstractSequence {
 
   private int mN = 0;
   private int mExpon; // exponent of k in the denominator
@@ -25,6 +25,7 @@ public class A119682 implements Sequence {
    * @param expon exponent
    */
   public A119682(final boolean numer, final int expon) {
+    super(1);
     mN = 0;
     mNumer = numer;
     mExpon = expon;

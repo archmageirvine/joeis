@@ -3,13 +3,18 @@ package irvine.oeis.a046;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A046080 a(n) is the number of integer-sided right triangles with hypotenuse n.
  * @author Sean A. Irvine
  */
-public class A046080 implements Sequence {
+public class A046080 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A046080() {
+    super(1);
+  }
 
   private long mN = 0;
 

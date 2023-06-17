@@ -1,13 +1,18 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A003288 Number of n-step self-avoiding walks on f.c.c. lattice from (0,0,0) to (0,0,2).
+ * A003288 Number of n-step self-avoiding walks on f.c.c. lattice from (0, 0, 0) to (0, 0, 2).
  * @author Sean A. Irvine
  */
-public class A003288 implements Sequence {
+public class A003288 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003288() {
+    super(2);
+  }
 
   // Walks in hexagonal fcc lattice between origin and a selected target
 

@@ -1,13 +1,18 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A003927 Order of simple Chevalley group B_n (3).
  * @author Sean A. Irvine
  */
-public class A003927 implements Sequence {
+public class A003927 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003927() {
+    super(2);
+  }
 
   private int mN = start();
 

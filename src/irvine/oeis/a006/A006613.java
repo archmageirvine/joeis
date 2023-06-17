@@ -4,13 +4,18 @@ import irvine.math.IntegerUtils;
 import irvine.math.LongUtils;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006613 Zarankiewicz's problem.
  * @author Sean A. Irvine
  */
-public class A006613 implements Sequence {
+public class A006613 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006613() {
+    super(3);
+  }
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   protected int mN = init();

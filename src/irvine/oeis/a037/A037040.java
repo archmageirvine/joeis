@@ -3,13 +3,18 @@ package irvine.oeis.a037;
 import irvine.factor.prime.Fast;
 import irvine.factor.prime.Prime;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A037040 Number of odd nonprimes &lt; (2n+1)^2.
  * @author Sean A. Irvine
  */
-public class A037040 implements Sequence {
+public class A037040 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A037040() {
+    super(0);
+  }
 
   private Prime mPrime = new Fast();
   private long mM = -1;

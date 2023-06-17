@@ -2,13 +2,18 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006918 a(n) = binomial(n+3, 3)/4 for odd n, n*(n+2)*(n+4)/24 for even n.
  * @author Sean A. Irvine
  */
-public class A006918 implements Sequence {
+public class A006918 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006918() {
+    super(0);
+  }
 
   protected long mN = -1;
 

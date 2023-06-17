@@ -4,13 +4,18 @@ import irvine.math.group.IntegersModMul;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A046094 Agoh's congruence; a(n) is conjectured to be 1 iff n is prime.
  * @author Sean A. Irvine
  */
-public class A046094 implements Sequence {
+public class A046094 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A046094() {
+    super(1);
+  }
 
   private final BernoulliSequence mB = new BernoulliSequence(0);
   private long mN = 0;

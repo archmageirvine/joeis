@@ -1,13 +1,18 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A005288 a(n) = C(n,5) + C(n,4) - C(n,3) + 1, n &gt;= 7.
+ * A005288 a(n) = C(n, 5) + C(n, 4) - C(n, 3) + 1, n &gt;= 7.
  * @author Sean A. Irvine
  */
-public class A005288 implements Sequence {
+public class A005288 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005288() {
+    super(6);
+  }
 
   private Z mN = Z.FIVE;
 

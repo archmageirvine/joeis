@@ -2,13 +2,18 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A000580 a(n) = binomial coefficient C(n,7).
+ * A000580 a(n) = binomial coefficient C(n, 7).
  * @author Sean A. Irvine
  */
-public class A000580 implements Sequence {
+public class A000580 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000580() {
+    super(7);
+  }
 
   private int mN = 6;
 

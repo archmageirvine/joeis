@@ -4,13 +4,18 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000765 Number of n-step self-avoiding walks on f.c.c. lattice ending at point with x = 0.
  * @author Sean A. Irvine
  */
-public class A000765 implements Sequence {
+public class A000765 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000765() {
+    super(0);
+  }
 
   private final ParallelWalker mWalker = new ParallelWalker(8,
     () -> new SelfAvoidingWalker(Lattices.FCC),

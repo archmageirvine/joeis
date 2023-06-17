@@ -2,13 +2,18 @@ package irvine.oeis.a003;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A003658 Fundamental discriminants of real quadratic fields; indices of primitive positive Dirichlet L-series.
  * @author Sean A. Irvine
  */
-public class A003658 implements Sequence {
+public class A003658 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003658() {
+    super(1);
+  }
 
   private long mN = 0;
 

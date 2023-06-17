@@ -5,13 +5,18 @@ import java.util.Set;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A030069 Size of lexicographic code of length n, Hamming distance 8 and weight 8.
  * @author Sean A. Irvine
  */
-public class A030069 implements Sequence {
+public class A030069 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A030069() {
+    super(8);
+  }
 
   private int mN = 7;
 

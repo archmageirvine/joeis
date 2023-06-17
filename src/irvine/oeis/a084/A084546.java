@@ -2,13 +2,18 @@ package irvine.oeis.a084;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A084546 Triangle read by rows: T(n,k) = C( C(n,2), k) for n &gt;= 0, 0 &lt;= k &lt;= C(n,2).
+ * A084546 Triangle read by rows: T(n,k) = C( C(n, 2), k) for n &gt;= 0, 0 &lt;= k &lt;= C(n, 2).
  * @author Sean A. Irvine
  */
-public class A084546 implements Sequence {
+public class A084546 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A084546() {
+    super(0);
+  }
 
   private int mN = 0;
   private int mM = -1;

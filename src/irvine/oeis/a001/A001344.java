@@ -1,13 +1,18 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001344 a(n) = sum_{k=0..2} (n+k)! * C(2,k).
  * @author Sean A. Irvine
  */
-public class A001344 implements Sequence {
+public class A001344 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001344() {
+    super(-1);
+  }
 
   private int mN = -2;
   private Z mF = Z.ONE;

@@ -4,13 +4,18 @@ import irvine.math.lattice.Lattices;
 import irvine.math.lattice.NonadjacentWalker;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A173380 Number of n-step walks on square lattice (no points repeated, no adjacent points unless consecutive in path).
  * @author Sean A. Irvine
  */
-public class A173380 implements Sequence {
+public class A173380 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A173380() {
+    super(0);
+  }
 
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new NonadjacentWalker(Lattices.Z2));
   private final long mX1 = Lattices.Z2.toPoint(1, 0);

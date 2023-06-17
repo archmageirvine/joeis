@@ -1,13 +1,18 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A003484 Radon function, also called Hurwitz-Radon numbers.
  * @author Sean A. Irvine
  */
-public class A003484 implements Sequence {
+public class A003484 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003484() {
+    super(1);
+  }
 
   private Z mN = Z.ZERO;
 

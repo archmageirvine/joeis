@@ -5,14 +5,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Permutation;
 
 /**
  * A343146 Number of move sequences of length 2n on the "8 Puzzle" which leave the final state unchanged when the empty cell starts in a corner.
  * @author Sean A. Irvine
  */
-public class A343146 implements Sequence {
+public class A343146 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A343146() {
+    super(0);
+  }
 
   // We use four bits per cell with 0 for the empty cell
 

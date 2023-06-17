@@ -9,13 +9,18 @@ import java.util.TreeSet;
 import irvine.math.Comparators;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A036052 Product of the lengths of the cycle types of the permutation created by length sorting on the partitions of n.
  * @author Sean A. Irvine
  */
-public class A036052 implements Sequence {
+public class A036052 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A036052() {
+    super(0);
+  }
 
   private int mN = -1;
 

@@ -4,7 +4,7 @@ package irvine.oeis.a052;
 import irvine.math.z.Z;
 import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.recur.PeriodicSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A052240 McKay-Thompson series of class 7B for the Monster group.
@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  * C.f. A034318.
  * @author Georg Fischer
  */
-public class A052240 implements Sequence {
+public class A052240 extends AbstractSequence {
 
   protected EulerTransform mET1; // the first sequence
   protected int mSqueeze0; // number of zeroes to be removed from the resulting sequence
@@ -37,6 +37,7 @@ public class A052240 implements Sequence {
    * @param per1 the terms of the PeriodicSequence to be transformed
    */
   public A052240(final int offset, final int squeeze0, final long factor, final long add0, final long... per1) {
+    super(-1);
     mET1 = new EulerTransform(new PeriodicSequence(per1), 1);
     mSqueeze0 = squeeze0 - 1;
     mAdd0 = Z.valueOf(add0);

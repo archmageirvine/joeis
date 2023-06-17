@@ -1,13 +1,18 @@
 package irvine.oeis.a060;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A060158 Number of permutations of [n] with 4 sequences.
  * @author Sean A. Irvine
  */
-public class A060158 implements Sequence {
+public class A060158 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A060158() {
+    super(0);
+  }
 
   private int mN = -1;
 

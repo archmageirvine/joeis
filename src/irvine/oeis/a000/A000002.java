@@ -1,14 +1,19 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
  * A000002 Kolakoski sequence: a(n) is length of n-th run; a(1) = 1; sequence consists just of 1's and 2's.
  * @author Sean A. Irvine
  */
-public class A000002 implements Sequence {
+public class A000002 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000002() {
+    super(1);
+  }
 
   protected long mN = -1;
   protected LongDynamicIntArray mSeq = new LongDynamicIntArray();

@@ -5,14 +5,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000217;
 
 /**
  * A034706 Numbers which are sums of consecutive triangular numbers.
  * @author Sean A. Irvine
  */
-public class A034706 implements Sequence {
+public class A034706 extends AbstractSequence {
 
   protected static final class State {
     private final Z mValue;
@@ -40,6 +40,7 @@ public class A034706 implements Sequence {
   private int mN = 1;
 
   protected A034706(final int minTerms, final MemorySequence seq) {
+    super(1);
     mMinTerms = minTerms;
     mSeq = seq;
     mA.add(new State(starter(0), minTerms - 1)); // avoids need for isEmpty check later

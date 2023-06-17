@@ -1,13 +1,13 @@
 package irvine.oeis.a067;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A067472 Smallest n-digit square starting with 2.
  * @author Georg Fischer
  */
-public class A067472 implements Sequence {
+public class A067472 extends AbstractSequence {
 
   private int mDigit;
   private Z mPow10;
@@ -23,6 +23,7 @@ public class A067472 implements Sequence {
    * @param digit
    */
   public A067472(final int offset, final int digit) {
+    super(2);
     mDigit = digit;
     mPow10 = Z.TEN.pow(offset - 1);
   }

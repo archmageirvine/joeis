@@ -3,13 +3,18 @@ package irvine.oeis.a000;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000940 Number of n-gons with n vertices.
  * @author Sean A. Irvine
  */
-public class A000940 implements Sequence {
+public class A000940 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000940() {
+    super(3);
+  }
 
   private int mN = 2;
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

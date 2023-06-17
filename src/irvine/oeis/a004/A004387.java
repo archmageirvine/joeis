@@ -2,13 +2,18 @@ package irvine.oeis.a004;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A004387 Binomial coefficient C(8n,n-6).
  * @author Sean A. Irvine
  */
-public class A004387 implements Sequence {
+public class A004387 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A004387() {
+    super(6);
+  }
 
   private long mN = 5;
 

@@ -8,7 +8,7 @@ import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattice;
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.DynamicArray;
 import irvine.util.string.StringUtils;
 
@@ -16,7 +16,12 @@ import irvine.util.string.StringUtils;
  * A060659 a(n) = smallest number of squares on a checkerboard that has exactly n domino tilings.
  * @author Sean A. Irvine
  */
-public class A060659 implements Sequence {
+public class A060659 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A060659() {
+    super(1);
+  }
 
   private static final Lattice L = Lattices.Z2;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));

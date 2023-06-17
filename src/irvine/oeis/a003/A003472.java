@@ -2,13 +2,18 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A003472 a(n) = 2^(n-4)*C(n,4).
+ * A003472 a(n) = 2^(n-4)*C(n, 4).
  * @author Sean A. Irvine
  */
-public class A003472 implements Sequence {
+public class A003472 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003472() {
+    super(4);
+  }
 
   private int mN = -1;
 

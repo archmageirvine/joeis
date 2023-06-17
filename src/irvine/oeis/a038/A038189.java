@@ -1,13 +1,18 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A038189 Bit to left of least significant 1-bit in binary expansion of n.
  * @author Sean A. Irvine
  */
-public class A038189 implements Sequence {
+public class A038189 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A038189() {
+    super(0);
+  }
 
   private long mN = -1;
 

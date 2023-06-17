@@ -4,13 +4,18 @@ import java.util.ArrayList;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000111 Euler or up/down numbers: e.g.f. sec(x) + tan(x). Also for n &gt;= 2, half the number of alternating permutations on n letters (A001250).
  * @author Sean A. Irvine
  */
-public class A000111 implements Sequence {
+public class A000111 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000111() {
+    super(0);
+  }
 
   protected final ArrayList<Z> mA = new ArrayList<>();
   protected int mN = -1;

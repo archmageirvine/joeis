@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002288 G.f.: q * Product_{m&gt;=1} (1-q^m)^8*(1-q^2m)^8.
  * @author Sean A. Irvine
  */
-public class A002288 implements Sequence {
+public class A002288 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002288() {
+    super(0);
+  }
 
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;

@@ -1,14 +1,19 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A006538 Worst cases for Pierce expansions (denominators).
  * @author Sean A. Irvine
  */
-public class A006538 implements Sequence {
+public class A006538 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006538() {
+    super(1);
+  }
 
   private final LongDynamicLongArray mP = new LongDynamicLongArray();
   private final LongDynamicLongArray mMinA = new LongDynamicLongArray();

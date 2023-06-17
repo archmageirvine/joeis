@@ -2,13 +2,18 @@ package irvine.oeis.a160;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A160792 Vertex number of a rectangular spiral related to prime numbers. The distances between nearest edges of the spiral that are parallel to the initial edge are the prime numbers, while the distances between nearest edges perpendicular to the initial edge are all one.
  * @author Sean A. Irvine
  */
-public class A160792 implements Sequence {
+public class A160792 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A160792() {
+    super(0);
+  }
 
   private final Fast mPrime = new Fast();
   private Z mPrimeSum = Z.ZERO;

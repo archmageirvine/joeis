@@ -1,13 +1,18 @@
 package irvine.oeis.a031;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A031178 Periods of sum of cubes of digits iterated until the sequence becomes periodic.
  * @author Sean A. Irvine
  */
-public class A031178 implements Sequence {
+public class A031178 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A031178() {
+    super(0);
+  }
 
   protected long mN = -1;
 

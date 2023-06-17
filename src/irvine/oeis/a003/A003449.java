@@ -3,13 +3,18 @@ package irvine.oeis.a003;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A003449 Number of nonequivalent dissections of an n-gon into n-3 polygons by nonintersecting diagonals up to rotation and reflection.
  * @author Sean A. Irvine
  */
-public class A003449 implements Sequence {
+public class A003449 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003449() {
+    super(4);
+  }
 
   private long mN = 3;
 

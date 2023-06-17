@@ -2,13 +2,18 @@ package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A007331 Fourier coefficients of E_{infinity,4}.
+ * A007331 Fourier coefficients of E_{infinity, 4}.
  * @author Sean A. Irvine
  */
-public class A007331 implements Sequence {
+public class A007331 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007331() {
+    super(0);
+  }
 
   private long mN = -1;
 

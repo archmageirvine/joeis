@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000478 Number of ways of placing n labeled balls into 3 indistinguishable boxes with at least 2 balls in each box.
  * @author Sean A. Irvine
  */
-public class A000478 implements Sequence {
+public class A000478 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000478() {
+    super(6);
+  }
 
   private int mN = 5;
 

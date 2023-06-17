@@ -2,14 +2,19 @@ package irvine.oeis.a000;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.DynamicArray;
 
 /**
  * A000160 Number of partitions into non-integral powers.
  * @author Sean A. Irvine
  */
-public class A000160 implements Sequence {
+public class A000160 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000160() {
+    super(4);
+  }
 
   private static final double THIRD = 1.0 / 3.0;
   private static final int HIGH_PRECISION_POWER = 729; // 3^6

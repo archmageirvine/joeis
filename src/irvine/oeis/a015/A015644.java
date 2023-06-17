@@ -2,13 +2,18 @@ package irvine.oeis.a015;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A015644 Number of 5-tuples of different integers from [ 1,n ] with no common factors among quadruples.
  * @author Sean A. Irvine
  */
-public class A015644 implements Sequence {
+public class A015644 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A015644() {
+    super(1);
+  }
 
   private long mN = start() - 1;
   private Z mA = Z.ZERO;

@@ -4,13 +4,18 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A049880 a(n) is the number of distinct sums of 2 different primes chosen from the first n primes.
  * @author Sean A. Irvine
  */
-public class A049880 implements Sequence {
+public class A049880 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A049880() {
+    super(2);
+  }
 
   protected final TreeSet<Long> mSeen = new TreeSet<>();
   protected final Fast mPrime = new Fast();

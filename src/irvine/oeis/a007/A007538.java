@@ -1,14 +1,19 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
  * A007538 A self-generating sequence: there are a(n) 3's between successive 2's.
  * @author Sean A. Irvine
  */
-public class A007538 implements Sequence {
+public class A007538 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007538() {
+    super(1);
+  }
 
   private LongDynamicByteArray mSeq = new LongDynamicByteArray();
   private int mN = -1;

@@ -4,13 +4,18 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A027376 Number of ternary irreducible monic polynomials of degree n; dimensions of free Lie algebras.
  * @author Sean A. Irvine
  */
-public class A027376 implements Sequence {
+public class A027376 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A027376() {
+    super(0);
+  }
 
   private int mN = -1;
 

@@ -3,13 +3,18 @@ package irvine.oeis.a003;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A003285 Period of continued fraction for square root of n (or 0 if n is a square).
  * @author Sean A. Irvine
  */
-public class A003285 implements Sequence {
+public class A003285 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003285() {
+    super(1);
+  }
 
   protected long mN = 0;
 

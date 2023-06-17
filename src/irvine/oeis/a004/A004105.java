@@ -5,13 +5,18 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A004105 Number of point-self-dual nets with 2n nodes. Also number of directed 2-multigraphs with loops on n nodes.
  * @author Sean A. Irvine
  */
-public class A004105 implements Sequence {
+public class A004105 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A004105() {
+    super(0);
+  }
 
   private int mN = -1;
 

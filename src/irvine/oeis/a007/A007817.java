@@ -2,13 +2,18 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A007817 Number of abstract simplicial 2-complexes on {1,2,3,...,n+4} which triangulate a Moebius band in such a way that all vertices lie on the boundary and are traversed in the order 1,2,3,... as one goes around the boundary.
+ * A007817 Number of abstract simplicial 2-complexes on {1, 2, 3,...,n+4} which triangulate a Moebius band in such a way that all vertices lie on the boundary and are traversed in the order 1, 2, 3,... as one goes around the boundary.
  * @author Sean A. Irvine
  */
-public class A007817 implements Sequence {
+public class A007817 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007817() {
+    super(5);
+  }
 
   private int mN = 4;
   private Z mA = Z.valueOf(64);

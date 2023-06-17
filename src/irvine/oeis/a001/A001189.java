@@ -1,13 +1,18 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001189 Number of degree-n permutations of order exactly 2.
  * @author Sean A. Irvine
  */
-public class A001189 implements Sequence {
+public class A001189 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001189() {
+    super(1);
+  }
 
   private int mN = 1;
   private Z mA = null;

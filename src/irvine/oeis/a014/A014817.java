@@ -1,13 +1,18 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A014817 a(n) = Sum_{k=1..n} floor(k^2/n).
  * @author Sean A. Irvine
  */
-public class A014817 implements Sequence {
+public class A014817 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A014817() {
+    super(1);
+  }
 
   private long mN = 0;
 

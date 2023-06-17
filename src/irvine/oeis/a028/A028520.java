@@ -3,14 +3,19 @@ package irvine.oeis.a028;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000521;
 
 /**
  * A028520 Character of extremal vertex operator algebra of rank 48.
  * @author Sean A. Irvine
  */
-public class A028520 implements Sequence {
+public class A028520 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A028520() {
+    super(-2);
+  }
 
   private int mN = -3;
   private final ArrayList<Z> mC = new ArrayList<>();

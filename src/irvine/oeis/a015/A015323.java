@@ -1,13 +1,18 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A015323 Gaussian binomial coefficient [ n,6 ] for q = -2.
+ * A015323 Gaussian binomial coefficient [ n, 6 ] for q = -2.
  * @author Sean A. Irvine
  */
-public class A015323 implements Sequence {
+public class A015323 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A015323() {
+    super(6);
+  }
 
   private Z mQ = Z.valueOf(q()).pow(p());
 

@@ -1,13 +1,18 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007662 Quadruple factorial numbers n!!!!: a(n) = n*a(n-4).
  * @author Sean A. Irvine
  */
-public class A007662 implements Sequence {
+public class A007662 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007662() {
+    super(0);
+  }
 
   private Z mA = Z.ONE;
   private Z mB = Z.ONE;

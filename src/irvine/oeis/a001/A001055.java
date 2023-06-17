@@ -3,13 +3,18 @@ package irvine.oeis.a001;
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001055 The multiplicative partition function: number of ways of factoring n with all factors greater than 1 (a(1) = 1 by convention).
  * @author Sean A. Irvine
  */
-public class A001055 implements Sequence {
+public class A001055 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001055() {
+    super(1);
+  }
 
   private final PrimeDivision mFactor = new PrimeDivision();
   protected final Fast mPrime = new Fast();

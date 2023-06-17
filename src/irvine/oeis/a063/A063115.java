@@ -2,7 +2,7 @@ package irvine.oeis.a063;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.DynamicIntArray;
 
 /**
@@ -10,7 +10,7 @@ import irvine.util.array.DynamicIntArray;
  * Cf. A063555.java
  * @author Georg Fischer
  */
-public class A063115 implements Sequence {
+public class A063115 extends AbstractSequence {
 
   protected final DynamicIntArray mSmallest = new DynamicIntArray();
   protected int mN = -1;
@@ -30,6 +30,7 @@ public class A063115 implements Sequence {
    * @param parm2 desired digits
    */
   public A063115(final int parm1, final int parm2) {
+    super(0);
     mParm1 = parm1;
     mParm2 = parm2;
   }

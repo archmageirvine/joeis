@@ -2,13 +2,18 @@ package irvine.oeis.a001;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001902 Successive denominators of Wallis's approximation to Pi/2 (reduced).
  * @author Sean A. Irvine
  */
-public class A001902 implements Sequence {
+public class A001902 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001902() {
+    super(0);
+  }
 
   private long mN = 0;
   private Q mP = Q.ONE;

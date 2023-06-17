@@ -3,13 +3,18 @@ package irvine.oeis.a002;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002075 Number of equivalence classes with primitive period n of base 3 necklaces, where necklaces are equivalent under rotation and permutation of symbols.
  * @author Sean A. Irvine
  */
-public class A002075 implements Sequence {
+public class A002075 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002075() {
+    super(1);
+  }
 
   private int mN = 0;
 

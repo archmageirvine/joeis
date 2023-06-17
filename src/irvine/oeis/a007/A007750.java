@@ -1,13 +1,18 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007750 Nonnegative integers n such that n^2*(n+1)*(2*n+1)^2*(7*n+1)/36 is a square.
  * @author Sean A. Irvine
  */
-public class A007750 implements Sequence {
+public class A007750 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007750() {
+    super(0);
+  }
 
   private Z mA = Z.ZERO;
   private Z mB = null;

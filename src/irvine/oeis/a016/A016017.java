@@ -3,13 +3,18 @@ package irvine.oeis.a016;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A016017 Smallest k such that 1/k can be written as a sum of exactly 2 unit fractions in n ways.
  * @author Sean A. Irvine
  */
-public class A016017 implements Sequence {
+public class A016017 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A016017() {
+    super(1);
+  }
 
   protected long mN = 0;
 

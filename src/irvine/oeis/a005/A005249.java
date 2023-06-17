@@ -1,13 +1,18 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005249 Determinant of inverse Hilbert matrix.
  * @author Sean A. Irvine
  */
-public class A005249 implements Sequence {
+public class A005249 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005249() {
+    super(0);
+  }
 
   private int mN = -1;
 

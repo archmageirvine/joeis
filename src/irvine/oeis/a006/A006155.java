@@ -7,13 +7,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006155 Expansion of e.g.f. 1/(2-x-e^x).
  * @author Sean A. Irvine
  */
-public class A006155 implements Sequence {
+public class A006155 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006155() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C = RING.create(Arrays.asList(Q.TWO, Q.NEG_ONE));

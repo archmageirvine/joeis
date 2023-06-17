@@ -1,13 +1,18 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A003095 a(n) = a(n-1)^2 + 1 for n &gt;= 1, with a(0) = 0.
  * @author Sean A. Irvine
  */
-public class A003095 implements Sequence {
+public class A003095 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003095() {
+    super(0);
+  }
 
   private Z mA = null;
 

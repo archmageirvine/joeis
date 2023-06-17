@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007253 McKay-Thompson series of class 5a for Monster.
  * @author Sean A. Irvine
  */
-public class A007253 implements Sequence {
+public class A007253 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007253() {
+    super(-1);
+  }
 
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> X5 = RING.monomial(Z.ONE, 5);

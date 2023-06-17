@@ -3,14 +3,19 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
  * A000669 Number of series-reduced planted trees with n leaves. Also the number of essentially series series-parallel networks with n edges; also the number of essentially parallel series-parallel networks with n edges.
  * @author Sean A. Irvine
  */
-public class A000669 implements Sequence {
+public class A000669 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000669() {
+    super(1);
+  }
 
   protected long mN = 0;
   protected final LongDynamicArray<Z> mA = new LongDynamicArray<>();

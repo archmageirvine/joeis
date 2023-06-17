@@ -1,13 +1,18 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A030177 When squared gives number composed of digits {4,5,6}.
+ * A030177 When squared gives number composed of digits {4, 5, 6}.
  * @author Sean A. Irvine
  */
-public class A030177 implements Sequence {
+public class A030177 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A030177() {
+    super(0);
+  }
 
   // n^2 only ends with 4, 5, 6, if n ends with 2, 4, 5, 6, or 8
   private static final long[] SHIFT = {4, 2, 1, 1, 2};

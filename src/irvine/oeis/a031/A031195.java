@@ -1,13 +1,18 @@
 package irvine.oeis.a031;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A031195 Periods of sum of 6th powers of digits iterated until the sequence becomes periodic.
  * @author Sean A. Irvine
  */
-public class A031195 implements Sequence {
+public class A031195 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A031195() {
+    super(0);
+  }
 
   protected long mN = -1;
 

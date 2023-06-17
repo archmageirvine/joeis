@@ -9,13 +9,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A350795 Triangle read by rows: T(n,k) is the number of digraphs on n unlabeled nodes with k arcs and a global source and sink, n &gt;= 1, k = 0..max(1,n-1)*(n-2)+1.
  * @author Sean A. Irvine
  */
-public class A350795 implements Sequence {
+public class A350795 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A350795() {
+    super(1);
+  }
 
   private int mN = 0;
   private int mM = 0;

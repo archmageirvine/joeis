@@ -1,13 +1,18 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A004738 Concatenation of sequences (1,2,...,n-1,n,n-1,...,2) for n &gt;= 2.
+ * A004738 Concatenation of sequences (1, 2,...,n-1,n,n-1,..., 2) for n &gt;= 2.
  * @author Sean A. Irvine
  */
-public class A004738 implements Sequence {
+public class A004738 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A004738() {
+    super(1);
+  }
 
   private long mN = 1;
   private long mM = 0;

@@ -5,14 +5,19 @@ import java.util.HashMap;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Pair;
 
 /**
  * A002849 Maximal number of disjoint subsets {X,Y,Z} of {1, 2, ..., n}, each satisfying X + Y = Z.
  * @author Sean A. Irvine
  */
-public class A002849 implements Sequence {
+public class A002849 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002849() {
+    super(1);
+  }
 
   // After Franklin T. Adams-Watters
 

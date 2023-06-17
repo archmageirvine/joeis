@@ -2,14 +2,19 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.DynamicArray;
 
 /**
  * A000230 a(0)=2; for n&gt;=1, a(n) = smallest prime p such that there is a gap of exactly 2n between p and next prime, or -1 if no such prime exists.
  * @author Sean A. Irvine
  */
-public class A000230 implements Sequence {
+public class A000230 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000230() {
+    super(0);
+  }
 
   private Z mP = Z.TWO;
   protected int mGapSize = -2;
@@ -34,7 +39,6 @@ public class A000230 implements Sequence {
       }
     }
   }
-
 
   @Override
   public Z next() {

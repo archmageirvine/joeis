@@ -4,13 +4,18 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006718 Number of golygons of length 8n.
  * @author Sean A. Irvine
  */
-public class A006718 implements Sequence {
+public class A006718 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006718() {
+    super(0);
+  }
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = -8;

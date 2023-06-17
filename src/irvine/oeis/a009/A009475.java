@@ -5,13 +5,18 @@ import java.util.TreeSet;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A009475 "Pascal sweep" for k=6: draw a horizontal line through the 1 at C(k,0) in Pascal's triangle; rotate this line and record the sum of the numbers on it (excluding the initial 1).
+ * A009475 "Pascal sweep" for k=6: draw a horizontal line through the 1 at C(k, 0) in Pascal's triangle; rotate this line and record the sum of the numbers on it (excluding the initial 1).
  * @author Sean A. Irvine
  */
-public class A009475 implements Sequence {
+public class A009475 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A009475() {
+    super(1);
+  }
 
   private final TreeSet<Q> mNext = new TreeSet<>();
   private long mNextY = 2;

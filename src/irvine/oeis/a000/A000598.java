@@ -7,13 +7,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000598 Number of rooted ternary trees with n nodes; number of n-carbon alkyl radicals C(n)H(2n+1) ignoring stereoisomers.
  * @author Sean A. Irvine
  */
-public class A000598 implements Sequence {
+public class A000598 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000598() {
+    super(0);
+  }
 
   private static final CycleIndex CYCLE_INDEX = SymmetricGroup.create(3).cycleIndex();
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);

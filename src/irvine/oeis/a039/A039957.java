@@ -2,13 +2,18 @@ package irvine.oeis.a039;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A039957 Squarefree numbers congruent to 3 mod 4.
  * @author Sean A. Irvine
  */
-public class A039957 implements Sequence {
+public class A039957 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A039957() {
+    super(1);
+  }
 
   private long mN = -1;
 

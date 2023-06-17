@@ -1,13 +1,18 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A030101 a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
  * @author Sean A. Irvine
  */
-public class A030101 implements Sequence {
+public class A030101 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A030101() {
+    super(0);
+  }
 
   private long mN = -1;
 

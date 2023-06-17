@@ -4,13 +4,18 @@ import java.util.ArrayList;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000364 Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).
  * @author Sean A. Irvine
  */
-public class A000364 implements Sequence {
+public class A000364 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000364() {
+    super(0);
+  }
 
   // Euler or secant numbers
 

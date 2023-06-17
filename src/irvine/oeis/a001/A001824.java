@@ -1,13 +1,18 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001824 Central factorial numbers.
  * @author Sean A. Irvine
  */
-public class A001824 implements Sequence {
+public class A001824 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001824() {
+    super(0);
+  }
 
   private long mN = -1;
   private Z mF = Z.ONE;

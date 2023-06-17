@@ -1,13 +1,18 @@
 package irvine.oeis.a122;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A122749 Number of arrangements of n non-attacking bishops on an n X n board such that every square of the board is controlled by at least one bishop.
  * @author Sean A. Irvine
  */
-public class A122749 implements Sequence {
+public class A122749 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A122749() {
+    super(2);
+  }
 
   private Z mF = Z.ONE;
   private long mN = 1;

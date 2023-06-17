@@ -7,19 +7,20 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002854 Number of unlabeled Euler graphs with n nodes; number of unlabeled two-graphs with n nodes; number of unlabeled switching classes of graphs with n nodes; number of switching classes of unlabeled signed complete graphs on n nodes; number of Seidel matrices of order n.
  * @author Sean A. Irvine
  */
-public class A002854 implements Sequence, Serializable {
+public class A002854 extends AbstractSequence implements Serializable {
 
   // After M. F. Hasler
 
   protected int mN;
 
   protected A002854(final int start) {
+    super(1);
     mN = start - 1;
   }
 

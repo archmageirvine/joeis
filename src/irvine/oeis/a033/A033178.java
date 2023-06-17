@@ -4,13 +4,18 @@ import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A033178 Number of multisets of n positive integers with equal sum and product.
  * @author Sean A. Irvine
  */
-public class A033178 implements Sequence {
+public class A033178 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A033178() {
+    super(2);
+  }
 
   private long mCount = 0;
   protected int mN = 1;

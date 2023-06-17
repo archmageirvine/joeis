@@ -1,13 +1,18 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A008867 Triangle of truncated triangular numbers: k-th term in n-th row is number of dots in hexagon of sides k, n-k, k, n-k, k, n-k.
  * @author Sean A. Irvine
  */
-public class A008867 implements Sequence {
+public class A008867 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A008867() {
+    super(2);
+  }
 
   private long mN = 1;
   private long mM = 1;

@@ -1,13 +1,18 @@
 package irvine.oeis.a085;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A085522 Product_{k=0..n} (3^(2k+1)+1).
  * @author Georg Fischer
  */
-public class A085522 implements Sequence {
+public class A085522 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A085522() {
+    super(-1);
+  }
 
   private int mN = -2;
 

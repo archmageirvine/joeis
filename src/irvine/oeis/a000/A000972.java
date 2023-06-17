@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000972 Fermat coefficients.
  * @author Sean A. Irvine
  */
-public class A000972 implements Sequence {
+public class A000972 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000972() {
+    super(7);
+  }
 
   private long mN = 0;
 

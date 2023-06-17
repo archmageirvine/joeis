@@ -1,14 +1,19 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Permutation;
 
 /**
  * A049354 Digitally balanced numbers in base 3: equal numbers of 0's, 1's, 2's.
  * @author Sean A. Irvine
  */
-public class A049354 implements Sequence {
+public class A049354 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A049354() {
+    super(1);
+  }
 
   private Permutation mPerm = new Permutation(new int[] {0});
   private int mRep = 0;

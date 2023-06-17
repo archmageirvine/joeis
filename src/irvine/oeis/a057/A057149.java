@@ -6,13 +6,18 @@ import irvine.math.polynomial.HararyMultiply;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A057149 Triangle T(n,k) of n X n binary matrices with k ones, with no zero rows or columns, up to row and column permutation.
  * @author Sean A. Irvine
  */
-public class A057149 implements Sequence {
+public class A057149 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A057149() {
+    super(1);
+  }
 
   private int mN = 0;
   private int mM = 0;

@@ -1,13 +1,18 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A054737 Numbers n such that n^2 can be split into two nonzero squares (perhaps with leading zeros) in exactly two different ways.
  * @author Sean A. Irvine
  */
-public class A054737 implements Sequence {
+public class A054737 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A054737() {
+    super(1);
+  }
 
   private Z mN = Z.valueOf(252);
 

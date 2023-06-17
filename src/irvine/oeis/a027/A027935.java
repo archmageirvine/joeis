@@ -1,13 +1,18 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A027935 Triangular array T read by rows: T(n,k)=t(n,2k), t given by A027926; 0 &lt;= k &lt;= n, n &gt;= 0.
+ * A027935 Triangular array T read by rows: T(n,k)=t(n, 2k), t given by A027926; 0 &lt;= k &lt;= n, n &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A027935 implements Sequence {
+public class A027935 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A027935() {
+    super(0);
+  }
 
   private long mN = -1;
   private long mM = 0;

@@ -5,13 +5,18 @@ import java.util.ArrayList;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001265 Table T(n,k) in which n-th row lists prime factors of 2^n - 1 (n &gt;= 2), with repetition.
  * @author Sean A. Irvine
  */
-public class A001265 implements Sequence {
+public class A001265 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001265() {
+    super(0);
+  }
 
   private int mN = -1;
   private final ArrayList<Z> mPending = new ArrayList<>();

@@ -4,13 +4,18 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.z.Binomial;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A003239 Number of rooted planar trees with n non-root nodes: circularly cycling the subtrees at the root gives equivalent trees.
  * @author Sean A. Irvine
  */
-public class A003239 implements Sequence {
+public class A003239 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003239() {
+    super(0);
+  }
 
   protected long mN = -1;
 

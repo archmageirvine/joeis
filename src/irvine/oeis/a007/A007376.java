@@ -3,13 +3,18 @@ package irvine.oeis.a007;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007376 The almost-natural numbers: write n in base 10 and juxtapose digits.
  * @author Georg Fischer
  */
-public class A007376 implements Sequence {
+public class A007376 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007376() {
+    super(0);
+  }
  
   private String mS = "";
   private int mPos = 0;

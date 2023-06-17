@@ -3,14 +3,19 @@ package irvine.oeis.a007;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Permutation;
 
 /**
- * A007712 Number of once reformable permutations of {1,2,...,n}.
+ * A007712 Number of once reformable permutations of {1, 2,...,n}.
  * @author Sean A. Irvine
  */
-public class A007712 implements Sequence {
+public class A007712 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007712() {
+    super(2);
+  }
 
   private int mN = 1;
   private Z mF = Z.ONE;

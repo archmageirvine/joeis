@@ -10,14 +10,19 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a002.A002499;
 
 /**
  * A126067 Triangle read by rows: T(n,k) is the number of unlabeled self-converse digraphs with n nodes and k arcs, k=0..n*(n-1).
  * @author Sean A. Irvine
  */
-public class A126067 implements Sequence {
+public class A126067 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A126067() {
+    super(0);
+  }
   
   // Compare with A002499.
 

@@ -10,13 +10,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A057968 Triangle T(n,k) of numbers of minimal 5-covers of an unlabeled n+5-set that cover k points of that set uniquely (k=5,..,n+5).
  * @author Sean A. Irvine
  */
-public class A057968 implements Sequence {
+public class A057968 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A057968() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> TWO = RING.monomial(Q.TWO, 0);

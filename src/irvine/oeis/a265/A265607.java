@@ -4,14 +4,19 @@ import java.util.ArrayList;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.transform.BellTransform;
 
 /**
  * A265607 Triangle read by rows, T(n,k) = n!*B(n,k) for n&gt;=0 and 0&lt;=k&lt;=n, where B(n,k) is the Bell matrix with generator 1/j for j&gt;=1.
  * @author Sean A. Irvine
  */
-public class A265607 implements Sequence {
+public class A265607 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A265607() {
+    super(0);
+  }
 
   private int mN = -1;
   private int mM = 0;

@@ -1,13 +1,18 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007678 Number of regions in regular n-gon with all diagonals drawn.
  * @author Sean A. Irvine
  */
-public class A007678 implements Sequence {
+public class A007678 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007678() {
+    super(1);
+  }
 
   // After T. D. Noe
 

@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000400 Powers of 6: a(n) = 6^n.
  * @author Sean A. Irvine
  */
-public class A000400 implements Sequence {
+public class A000400 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000400() {
+    super(0);
+  }
 
   private Z mA = null;
 

@@ -2,13 +2,18 @@ package irvine.oeis.a025;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A025134 a(n) = n-th elementary symmetric function of C(n,0), C(n,1), ..., C(n,n).
+ * A025134 a(n) = n-th elementary symmetric function of C(n, 0), C(n, 1), ..., C(n,n).
  * @author Sean A. Irvine
  */
-public class A025134 implements Sequence {
+public class A025134 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A025134() {
+    super(0);
+  }
 
   private long mN = -1;
 

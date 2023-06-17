@@ -5,13 +5,18 @@ import irvine.math.LongUtils;
 import irvine.math.Mobius;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A032249 "DHK[ 8 ]" (bracelet, identity, unlabeled, 8 parts) transform of 1,1,1,1,...
+ * A032249 "DHK[ 8 ]" (bracelet, identity, unlabeled, 8 parts) transform of 1, 1, 1, 1,...
  * @author Sean A. Irvine
  */
-public class A032249 implements Sequence {
+public class A032249 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A032249() {
+    super(11);
+  }
 
   private long mN = 10;
 

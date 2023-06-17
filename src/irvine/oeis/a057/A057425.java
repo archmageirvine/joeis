@@ -5,13 +5,18 @@ import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A057425 Number of rotationally symmetric 2n-celled polyominoes with 1 hole.
  * @author Sean A. Irvine
  */
-public class A057425 implements Sequence {
+public class A057425 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A057425() {
+    super(5);
+  }
 
   private final ParallelHunter mHunter = new ParallelHunter(6,
     () -> new Hunter(Lattices.Z2, true),

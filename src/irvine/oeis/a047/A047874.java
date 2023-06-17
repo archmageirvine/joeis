@@ -4,13 +4,18 @@ import java.util.ArrayList;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A047874 Triangle of numbers T(n,k) = number of permutations of (1,2,...,n) with longest increasing subsequence of length k (1&lt;=k&lt;=n).
+ * A047874 Triangle of numbers T(n,k) = number of permutations of (1, 2,...,n) with longest increasing subsequence of length k (1&lt;=k&lt;=n).
  * @author Sean A. Irvine
  */
-public class A047874 implements Sequence {
+public class A047874 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A047874() {
+    super(1);
+  }
 
   private final MemoryFactorial mFactorial = MemoryFactorial.SINGLETON;
 

@@ -1,13 +1,18 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A008352 a(n) is formed by concatenating a(n-2) and a(n-1), with a(0) = 1, a(1) = 2;.
  * @author Sean A. Irvine
  */
-public class A008352 implements Sequence {
+public class A008352 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A008352() {
+    super(0);
+  }
 
   private String mA = null;
   private String mB = null;
@@ -28,5 +33,4 @@ public class A008352 implements Sequence {
     return new Z(t);
   }
 }
-
 

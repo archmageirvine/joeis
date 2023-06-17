@@ -1,13 +1,18 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002034 Kempner numbers: smallest positive integer m such that n divides m!.
  * @author Sean A. Irvine
  */
-public class A002034 implements Sequence {
+public class A002034 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002034() {
+    super(1);
+  }
 
   protected int mN = 0;
 

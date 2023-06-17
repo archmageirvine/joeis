@@ -1,6 +1,7 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
@@ -8,7 +9,12 @@ import irvine.util.array.LongDynamicBooleanArray;
  * A005228 Sequence and first differences (A030124) together list all positive numbers exactly once.
  * @author Sean A. Irvine
  */
-public class A005228 implements Sequence {
+public class A005228 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005228() {
+    super(1);
+  }
 
   private Z mA = null;
   protected final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();

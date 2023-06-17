@@ -7,13 +7,18 @@ import irvine.math.Comparators;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A048996 Irregular triangle read by rows. Preferred multisets: numbers refining A007318 using format described in A036038.
  * @author Sean A. Irvine
  */
-public class A048996 implements Sequence {
+public class A048996 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A048996() {
+    super(0);
+  }
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final TreeSet<int[]> mA = new TreeSet<>(Comparators.ABRAHAM_STEGUN);

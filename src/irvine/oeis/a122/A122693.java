@@ -1,13 +1,18 @@
 package irvine.oeis.a122;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A122693 Bishops on an n X n board (see Robinson paper for details).
  * @author Sean A. Irvine
  */
-public class A122693 implements Sequence {
+public class A122693 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A122693() {
+    super(0);
+  }
 
   private Z mF = Z.ONE;
   private int mN = -1;

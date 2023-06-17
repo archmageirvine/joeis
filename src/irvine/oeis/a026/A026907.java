@@ -2,13 +2,18 @@ package irvine.oeis.a026;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A026907 Triangular array T read by rows (9-diamondization of Pascal's triangle). Step 1: t(n,k) = sum of 9 entries in diamond-shaped subarray of Pascal's triangle having vertices C(n,k), C(n+4,k+2), C(n+2,k), C(n+2,k+2). Step 2: T(n,k) = t(n,k) - t(0,0) + 1.
+ * A026907 Triangular array T read by rows (9-diamondization of Pascal's triangle). Step 1: t(n,k) = sum of 9 entries in diamond-shaped subarray of Pascal's triangle having vertices C(n,k), C(n+4,k+2), C(n+2,k), C(n+2,k+2). Step 2: T(n,k) = t(n,k) - t(0, 0) + 1.
  * @author Sean A. Irvine
  */
-public class A026907 implements Sequence {
+public class A026907 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A026907() {
+    super(0);
+  }
 
   // After Michel Marcus
 

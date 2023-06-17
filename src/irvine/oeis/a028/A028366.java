@@ -1,13 +1,18 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A028366 a(n) = (2^n - 1)!.
  * @author Sean A. Irvine
  */
-public class A028366 implements Sequence {
+public class A028366 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A028366() {
+    super(0);
+  }
 
   private int mN = -1;
   private Z mF = Z.ONE;

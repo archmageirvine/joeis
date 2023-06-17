@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Pair;
 import irvine.util.Permutation;
 
@@ -11,7 +11,12 @@ import irvine.util.Permutation;
  * A006219 From descending subsequences of permutations.
  * @author Sean A. Irvine
  */
-public class A006219 implements Sequence {
+public class A006219 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006219() {
+    super(3);
+  }
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 2;

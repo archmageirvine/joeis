@@ -3,13 +3,18 @@ package irvine.oeis.a033;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A033068 Numbers with the property that all pairs of consecutive base-3 digits differ by 1.
  * @author Sean A. Irvine
  */
-public class A033068 implements Sequence {
+public class A033068 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A033068() {
+    super(1);
+  }
 
   private final TreeSet<Z> mA = new TreeSet<>();
 

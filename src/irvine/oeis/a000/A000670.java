@@ -3,13 +3,18 @@ package irvine.oeis.a000;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000670 Fubini numbers: number of preferential arrangements of n labeled elements; or number of weak orders on n labeled elements; or number of ordered partitions of [n].
  * @author Sean A. Irvine
  */
-public class A000670 implements Sequence {
+public class A000670 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000670() {
+    super(0);
+  }
 
   protected int mN = -1;
   protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;

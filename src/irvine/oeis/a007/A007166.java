@@ -6,13 +6,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007166 Number of blobs with 2n+1 edges.
  * @author Sean A. Irvine
  */
-public class A007166 implements Sequence {
+public class A007166 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007166() {
+    super(0);
+  }
 
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private Polynomial<Z> mS = RING.zero();

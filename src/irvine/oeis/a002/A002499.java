@@ -5,13 +5,18 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002499 Number of self-converse digraphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A002499 implements Sequence {
+public class A002499 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002499() {
+    super(1);
+  }
   
   // Compare with A126067.  This is effectively the cycle index polynomials
   // evaluated at 1.

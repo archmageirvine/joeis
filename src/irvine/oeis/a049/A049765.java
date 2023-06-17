@@ -1,13 +1,18 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A049765 Triangular array T, read by rows: T(n,k) = (k mod n) + (n mod k), for k = 1..n and n &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A049765 implements Sequence {
+public class A049765 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A049765() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 1;

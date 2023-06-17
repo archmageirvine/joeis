@@ -3,13 +3,18 @@ package irvine.oeis.a000;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000939 Number of inequivalent n-gons.
  * @author Sean A. Irvine
  */
-public class A000939 implements Sequence {
+public class A000939 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000939() {
+    super(1);
+  }
 
   private int mN = 0;
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
@@ -42,5 +47,4 @@ public class A000939 implements Sequence {
     return (mN & 1) == 0 ? even() : odd();
   }
 }
-
 

@@ -1,13 +1,18 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A003290 Number of n-step self-avoiding walks on hexagonal lattice from (0,0) to (0,2).
+ * A003290 Number of n-step self-avoiding walks on hexagonal lattice from (0, 0) to (0, 2).
  * @author Sean A. Irvine
  */
-public class A003290 implements Sequence {
+public class A003290 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003290() {
+    super(2);
+  }
 
   // Walks in hexagonal lattice between origin and a selected target
 

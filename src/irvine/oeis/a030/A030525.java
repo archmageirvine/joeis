@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a039.A039658;
 import irvine.oeis.a039.A039660;
 import irvine.oeis.a039.A039919;
@@ -13,7 +13,12 @@ import irvine.oeis.a055.A055879;
  * A030525 Number of polyhexes of class PF2 with a particular symmetry.
  * @author Sean A. Irvine
  */
-public class A030525 implements Sequence {
+public class A030525 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A030525() {
+    super(4);
+  }
 
   // Make these sequences start naturally at 0
   private final MemorySequence mM = MemorySequence.cachedSequence(new PrependSequence(new A055879(), 0));

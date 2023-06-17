@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000567 Octagonal numbers: n*(3*n-2). Also called star numbers.
  * @author Sean A. Irvine
  */
-public class A000567 implements Sequence {
+public class A000567 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000567() {
+    super(0);
+  }
 
   protected Z mN = Z.NEG_ONE;
 

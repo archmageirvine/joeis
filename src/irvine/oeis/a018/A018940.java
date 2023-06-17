@@ -5,14 +5,19 @@ import java.util.HashMap;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.RuntimeUtils;
 
 /**
  * A018940 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite ABW = Li-A (Barrer and White).
  * @author Sean A. Irvine
  */
-public class A018940 implements Sequence {
+public class A018940 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A018940() {
+    super(2);
+  }
 
   // We are given the quotient graph, which you can think of as the repeating unit.
   // We then have to find cycles in the full graph.  This is done with a depth first

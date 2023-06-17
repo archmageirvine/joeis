@@ -3,13 +3,18 @@ package irvine.oeis.a006;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006881 Squarefree semiprimes: Numbers that are the product of two distinct primes.
  * @author Sean A. Irvine
  */
-public class A006881 implements Sequence {
+public class A006881 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006881() {
+    super(1);
+  }
 
   private long mN = 5;
 

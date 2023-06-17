@@ -7,13 +7,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007220 Almost-convex polygons of perimeter 2n on square lattice.
  * @author Sean A. Irvine
  */
-public class A007220 implements Sequence {
+public class A007220 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007220() {
+    super(6);
+  }
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> A = RING.create(Arrays.asList(Q.ZERO, Q.ZERO, Q.ZERO, new Q(16), new Q(-144), new Q(400), new Q(-368), new Q(48)));

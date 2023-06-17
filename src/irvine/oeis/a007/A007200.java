@@ -4,13 +4,13 @@ import irvine.math.lattice.Accumulator;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007200 Number of self-avoiding walks on hexagonal lattice, with additional constraints.
  * @author Sean A. Irvine
  */
-public class A007200 implements Sequence {
+public class A007200 extends AbstractSequence {
 
   private int mN;
   private final int mM;
@@ -39,6 +39,7 @@ public class A007200 implements Sequence {
   };
 
   protected A007200(final int m) {
+    super(2);
     mM = m;
     mN = mM - 1;
   }

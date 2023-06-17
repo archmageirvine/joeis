@@ -7,13 +7,18 @@ import java.util.stream.Collectors;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A029889 Number of graphical partitions (degree-vectors for graphs with n vertices, allowing self-loops which count as degree 1; or possible ordered row-sum vectors for a symmetric 0-1 matrix).
  * @author Sean A. Irvine
  */
-public class A029889 implements Sequence {
+public class A029889 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A029889() {
+    super(0);
+  }
 
   // A matrix based approach, only good for a few terms
 

@@ -4,13 +4,18 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000016 a(n) is the number of distinct (infinite) output sequences from binary n-stage shift register which feeds back the complement of the last stage.
  * @author Sean A. Irvine
  */
-public class A000016 implements Sequence {
+public class A000016 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000016() {
+    super(0);
+  }
 
   private int mN = -1;
 

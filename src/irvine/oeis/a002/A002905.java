@@ -4,13 +4,18 @@ import java.util.ArrayList;
 
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002905 Number of connected graphs with n edges.
  * @author Sean A. Irvine
  */
-public class A002905 implements Sequence {
+public class A002905 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002905() {
+    super(0);
+  }
 
   private final ArrayList<Z> mEdgeCounts = new ArrayList<>();
   protected int mN = 0;

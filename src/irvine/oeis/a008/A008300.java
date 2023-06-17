@@ -9,13 +9,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A008300 Triangle read by rows: T(n,k) (n &gt;= 0, 0 &lt;= k &lt;= n) gives number of {0,1} n X n matrices with all row and column sums equal to k.
+ * A008300 Triangle read by rows: T(n,k) (n &gt;= 0, 0 &lt;= k &lt;= n) gives number of {0, 1} n X n matrices with all row and column sums equal to k.
  * @author Sean A. Irvine
  */
-public class A008300 implements Sequence {
+public class A008300 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A008300() {
+    super(0);
+  }
 
   // After Andrew Howroyd
 

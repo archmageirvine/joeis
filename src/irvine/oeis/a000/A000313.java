@@ -2,13 +2,18 @@ package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000313 Number of permutations of length n with 3 consecutive ascending pairs.
  * @author Sean A. Irvine
  */
-public class A000313 implements Sequence {
+public class A000313 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000313() {
+    super(1);
+  }
 
   private int mN = -2;
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

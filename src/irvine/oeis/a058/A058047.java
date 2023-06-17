@@ -5,16 +5,22 @@ import java.util.HashSet;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
+import irvine.oeis.Conjectural;
 import irvine.util.string.StringUtils;
 
 /**
  * A058047 Generalized Collatz sequences: primes resulting in a cycle containing 1.
  * @author Sean A. Irvine
  */
-public class A058047 implements Sequence {
+public class A058047 extends AbstractSequence implements Conjectural {
 
-  private static final long HEURISTIC_LIMIT = 1000000;
+  /* Construct the sequence. */
+  public A058047() {
+    super(0);
+  }
+
+  private static final long HEURISTIC_LIMIT = 10000;
   protected final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   protected final Fast mPrime = new Fast();
   private final HashSet<Z> mSeen = new HashSet<>();

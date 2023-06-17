@@ -4,13 +4,18 @@ import java.util.ArrayList;
 
 import irvine.math.plantri.Plantri;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002840 Number of polyhedral graphs with n edges.
  * @author Sean A. Irvine
  */
-public class A002840 implements Sequence {
+public class A002840 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002840() {
+    super(6);
+  }
 
   private final ArrayList<Z> mEdgeCounts = new ArrayList<>();
   private int mN = 2; // Tracks number of vertices

@@ -5,13 +5,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A058513 McKay-Thompson series of class 15b for Monster.
  * @author Sean A. Irvine
  */
-public class A058513 implements Sequence {
+public class A058513 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A058513() {
+    super(-1);
+  }
 
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C5 = RING.monomial(Q.FIVE, 0);

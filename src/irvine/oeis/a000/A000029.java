@@ -3,13 +3,18 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000029 Number of necklaces with n beads of 2 colors, allowing turning over (these are also called bracelets).
  * @author Sean A. Irvine
  */
-public class A000029 implements Sequence {
+public class A000029 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000029() {
+    super(0);
+  }
 
   private int mN = -1;
 

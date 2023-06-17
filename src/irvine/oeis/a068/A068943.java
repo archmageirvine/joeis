@@ -2,13 +2,18 @@ package irvine.oeis.a068;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A068943 a(n) = f(n, n, n), where f is the generalized super falling factorial (see comments for definition.).
  * @author Sean A. Irvine
  */
-public class A068943 implements Sequence {
+public class A068943 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A068943() {
+    super(1);
+  }
 
   private long mN = 0;
 

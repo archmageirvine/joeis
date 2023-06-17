@@ -1,13 +1,18 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006521 Numbers n such that n divides 2^n + 1.
  * @author Sean A. Irvine
  */
-public class A006521 implements Sequence {
+public class A006521 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006521() {
+    super(1);
+  }
 
   private int mN = 0;
 

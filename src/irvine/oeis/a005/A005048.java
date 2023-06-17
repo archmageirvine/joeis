@@ -4,13 +4,18 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005048 Minimal span of set of n elements with no 4-term arithmetic progression.
  * @author Sean A. Irvine
  */
-public class A005048 implements Sequence {
+public class A005048 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005048() {
+    super(4);
+  }
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = getProgressionLength() - 1;

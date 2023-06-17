@@ -2,13 +2,18 @@ package irvine.oeis.a034;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A034886 Number of digits in n!.
  * @author Sean A. Irvine
  */
-public class A034886 implements Sequence {
+public class A034886 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A034886() {
+    super(0);
+  }
 
   private static final CR LOG10 = CR.TEN.log();
   protected long mN = -1;

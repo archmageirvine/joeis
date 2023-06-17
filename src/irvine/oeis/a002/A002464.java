@@ -1,13 +1,18 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002464 Hertzsprung's problem: ways to arrange n non-attacking kings on an n X n board, with 1 in each row and column. Also number of permutations of length n without rising or falling successions.
  * @author Sean A. Irvine
  */
-public class A002464 implements Sequence {
+public class A002464 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002464() {
+    super(0);
+  }
 
   private long mN = -1;
   private Z mA = Z.ONE;

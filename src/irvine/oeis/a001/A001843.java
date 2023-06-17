@@ -1,13 +1,18 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A001843 The coding-theoretic function A(n,4,4).
+ * A001843 The coding-theoretic function A(n, 4, 4).
  * @author Sean A. Irvine
  */
-public class A001843 implements Sequence {
+public class A001843 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001843() {
+    super(4);
+  }
 
   private long mN = 3;
 

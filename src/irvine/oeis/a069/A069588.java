@@ -1,13 +1,13 @@
 package irvine.oeis.a069;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A069588 Smallest prime in which the n-th significant digit is a 1.
  * @author Georg Fischer
  */
-public class A069588 implements Sequence {
+public class A069588 extends AbstractSequence {
 
   private int mN;
   private final int mDigit;
@@ -23,6 +23,7 @@ public class A069588 implements Sequence {
    * @param digit the digit
    */
   public A069588(final int digit) {
+    super(1);
     mN = 0;
     mDigit = digit;
     mPow10 = Z.valueOf(mDigit);

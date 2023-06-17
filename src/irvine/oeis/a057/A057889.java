@@ -1,18 +1,19 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A057889 Bit-reverse of n, including as many leading as trailing zeros.
  * @author Georg Fischer
  */
-public class A057889 implements Sequence {
+public class A057889 extends AbstractSequence {
 
   private long mN;
 
   /** Construct the sequence. */
   public A057889() {
+    super(0);
     mN = -1;
   }
 

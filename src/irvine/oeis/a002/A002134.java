@@ -7,14 +7,19 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Triple;
 
 /**
  * A002134 Generalized divisor function. Number of partitions of n with exactly three part sizes.
  * @author Sean A. Irvine
  */
-public class A002134 implements Sequence {
+public class A002134 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002134() {
+    super(6);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = 5;

@@ -1,13 +1,18 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001244 Eulerian numbers (Euler's triangle: column k=8 of A008292, column k=7 of A173018).
  * @author Sean A. Irvine
  */
-public class A001244 implements Sequence {
+public class A001244 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001244() {
+    super(8);
+  }
 
   private int mN = 0;
 

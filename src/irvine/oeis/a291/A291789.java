@@ -4,13 +4,18 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A291789 Trajectory of 270 under repeated application of k -&gt; (phi(k)+sigma(k))/2.
  * @author Sean A. Irvine
  */
-public class A291789 implements Sequence {
+public class A291789 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A291789() {
+    super(0);
+  }
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private Z mN = null;

@@ -1,13 +1,18 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A028379 a(n) = 6*(n+1)*(2*n+6)!/((n+3)!*(n+5)!).
  * @author Sean A. Irvine
  */
-public class A028379 implements Sequence {
+public class A028379 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A028379() {
+    super(-1);
+  }
 
   private long mN = -1;
   private Z mA = Z.SIX;

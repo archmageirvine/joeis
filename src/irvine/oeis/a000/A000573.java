@@ -2,13 +2,18 @@ package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000573 Number of 4 X n normalized Latin rectangles.
  * @author Sean A. Irvine
  */
-public class A000573 implements Sequence {
+public class A000573 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000573() {
+    super(4);
+  }
 
   // Based on C code by Douglas Stones
 

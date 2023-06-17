@@ -2,13 +2,18 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A056073 Number of 7-element ordered antichains on an unlabeled n-element set; T_1-hypergraphs with 7 labeled nodes and n hyperedges.
  * @author Sean A. Irvine
  */
-public class A056073 implements Sequence {
+public class A056073 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A056073() {
+    super(5);
+  }
 
   private long mN = 4;
 

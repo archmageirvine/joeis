@@ -3,13 +3,18 @@ package irvine.oeis.a000;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000521 Coefficients of modular function j as power series in q = e^(2 Pi i t). Another name is the elliptic modular invariant J(tau).
  * @author Sean A. Irvine
  */
-public class A000521 implements Sequence {
+public class A000521 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000521() {
+    super(-1);
+  }
 
   private final ArrayList<Z> mA = new ArrayList<>();
   protected int mN = -2;

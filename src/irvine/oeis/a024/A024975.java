@@ -1,13 +1,18 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A024975 Sums of three distinct positive cubes.
  * @author Sean A. Irvine
  */
-public class A024975 implements Sequence {
+public class A024975 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A024975() {
+    super(1);
+  }
 
   private long mN = 1;
 

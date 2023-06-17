@@ -2,13 +2,18 @@ package irvine.oeis.a050;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A050703 Numbers that when added to the sum of their prime factors (with multiplicity) become prime.
  * @author Sean A. Irvine
  */
-public class A050703 implements Sequence {
+public class A050703 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A050703() {
+    super(1);
+  }
 
   private long mN = 1;
 

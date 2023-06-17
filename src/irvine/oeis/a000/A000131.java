@@ -2,13 +2,18 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000131 Number of asymmetrical dissections of n-gon.
  * @author Sean A. Irvine
  */
-public class A000131 implements Sequence {
+public class A000131 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000131() {
+    super(7);
+  }
 
   private long mN = 6;
 

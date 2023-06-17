@@ -2,13 +2,18 @@ package irvine.oeis.a115;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A115004 a(n) = Sum_{i=1..n, j=1..n, gcd(i,j)=1} (n+1-i)*(n+1-j).
  * @author Georg Fischer
  */
-public class A115004 implements Sequence {
+public class A115004 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A115004() {
+    super(1);
+  }
 
   private int mN = 0;
 

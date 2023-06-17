@@ -7,13 +7,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005769 Number of convex polygons of length 2n on square lattice whose leftmost bottom vertex is strictly to the right of the rightmost top vertex.
  * @author Sean A. Irvine
  */
-public class A005769 implements Sequence {
+public class A005769 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005769() {
+    super(6);
+  }
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> NUM = RING.create(Arrays.asList(Q.TWO, new Q(-20), new Q(75), new Q(-127), new Q(95), new Q(-27), Q.FOUR));

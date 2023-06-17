@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A067553 Sum of products of terms in all partitions of n into odd parts.
  * @author Sean A. Irvine
  */
-public class A067553 implements Sequence {
+public class A067553 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A067553() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;

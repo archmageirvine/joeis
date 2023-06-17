@@ -5,14 +5,19 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a051.A051573;
 
 /**
  * A052252 Column 4 of A052250.
  * @author Sean A. Irvine
  */
-public class A052252 implements Sequence {
+public class A052252 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A052252() {
+    super(4);
+  }
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
 

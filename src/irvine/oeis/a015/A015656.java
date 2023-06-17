@@ -2,13 +2,18 @@ package irvine.oeis.a015;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A015656 Number of ordered 5-tuples of integers from [ 1,n ] with no common factors among triples.
  * @author Sean A. Irvine
  */
-public class A015656 implements Sequence {
+public class A015656 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A015656() {
+    super(1);
+  }
 
   private long mN = start() - 1;
   private Z mA = Z.ZERO;

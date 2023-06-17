@@ -2,13 +2,18 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005325 Column of Motzkin triangle.
  * @author Sean A. Irvine
  */
-public class A005325 implements Sequence {
+public class A005325 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005325() {
+    super(5);
+  }
 
   private long mN = 4;
 

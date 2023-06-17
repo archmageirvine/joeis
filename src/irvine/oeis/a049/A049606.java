@@ -1,13 +1,18 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A049606 Largest odd divisor of n!.
  * @author Sean A. Irvine
  */
-public class A049606 implements Sequence {
+public class A049606 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A049606() {
+    super(0);
+  }
 
   private Z mF = Z.ONE;
   private long mN = -1;

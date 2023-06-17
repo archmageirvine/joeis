@@ -2,13 +2,18 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000114 Number of cusps of principal congruence subgroup GAMMA^{hat}(n).
  * @author Sean A. Irvine
  */
-public class A000114 implements Sequence {
+public class A000114 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000114() {
+    super(2);
+  }
 
   protected long mN = 1;
   private final Fast mPrime = new Fast();

@@ -5,13 +5,18 @@ import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000105 Number of free polyominoes (or square animals) with n cells.
  * @author Sean A. Irvine
  */
-public class A000105 implements Sequence {
+public class A000105 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000105() {
+    super(0);
+  }
 
   private final ParallelHunter mHunter = new ParallelHunter(6,
     () -> new Hunter(Lattices.Z2, true),

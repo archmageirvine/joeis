@@ -2,13 +2,18 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A056093 Number of 5-element ordered antichain covers of an unlabeled n-element set.
  * @author Sean A. Irvine
  */
-public class A056093 implements Sequence {
+public class A056093 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A056093() {
+    super(4);
+  }
 
   private long mN = 3;
 

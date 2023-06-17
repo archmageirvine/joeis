@@ -2,13 +2,18 @@ package irvine.oeis.a048;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A048671 a(n) is the least common multiple of the proper divisors of n.
  * @author Sean A. Irvine
  */
-public class A048671 implements Sequence {
+public class A048671 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A048671() {
+    super(1);
+  }
 
   private Z mN = Z.ZERO;
 

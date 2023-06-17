@@ -2,13 +2,18 @@ package irvine.oeis.a027;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A027442 For n odd, &gt;1, not divisible by 3, we can write 3/n = 1/a + 1/b + 1/c with a&gt;b&gt;c&gt;0, a,b,c distinct and odd; sequence gives smallest a.
  * @author Sean A. Irvine
  */
-public class A027442 implements Sequence {
+public class A027442 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A027442() {
+    super(5);
+  }
 
   private long mN = 3;
 

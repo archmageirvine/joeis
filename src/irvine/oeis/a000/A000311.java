@@ -4,13 +4,18 @@ import java.util.ArrayList;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000311 Schroeder's fourth problem; also series-reduced rooted trees with n labeled leaves; also number of total partitions of n.
  * @author Sean A. Irvine
  */
-public class A000311 implements Sequence {
+public class A000311 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000311() {
+    super(0);
+  }
 
   private final ArrayList<Z> mA = new ArrayList<>();
 

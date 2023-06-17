@@ -2,13 +2,18 @@ package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000287 Number of rooted polyhedral graphs with n edges.
  * @author Sean A. Irvine
  */
-public class A000287 implements Sequence {
+public class A000287 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000287() {
+    super(6);
+  }
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Z mR = Z.TWO;

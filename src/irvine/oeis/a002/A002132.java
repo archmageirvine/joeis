@@ -7,14 +7,19 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Point;
 
 /**
  * A002132 Generalized sum of divisors function.
  * @author Sean A. Irvine
  */
-public class A002132 implements Sequence {
+public class A002132 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002132() {
+    super(4);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = 3;

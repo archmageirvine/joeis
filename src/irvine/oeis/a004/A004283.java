@@ -1,13 +1,18 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A004283 Least positive multiple of n written in base 3 using only 0 and 1.
  * @author Sean A. Irvine
  */
-public class A004283 implements Sequence {
+public class A004283 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A004283() {
+    super(1);
+  }
 
   private Z mN = init();
 

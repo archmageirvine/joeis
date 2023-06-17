@@ -3,13 +3,18 @@ package irvine.oeis.a025;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A025622 Numbers of form 5^i*6^j, with i, j &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A025622 implements Sequence {
+public class A025622 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A025622() {
+    super(1);
+  }
 
   private final TreeSet<Z> mPriority = new TreeSet<>();
   {

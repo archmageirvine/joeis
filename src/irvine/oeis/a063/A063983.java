@@ -1,13 +1,13 @@
 package irvine.oeis.a063;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A063983 Least k such that k*2^n +/- 1 are twin primes.
  * @author Georg Fischer
  */
-public class A063983 implements Sequence {
+public class A063983 extends AbstractSequence {
 
   private int mN;
   private final Z mBase;
@@ -22,6 +22,7 @@ public class A063983 implements Sequence {
    * @param base empower this by mN
    */
   public A063983(final int offset, final int base) {
+    super(0);
     mN = offset - 1;
     mBase = Z.valueOf(base);
   }

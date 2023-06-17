@@ -5,13 +5,18 @@ import java.util.TreeSet;
 import irvine.factor.prime.Fast;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A025487 Least integer of each prime signature A124832; also products of primorial numbers A002110.
  * @author Sean A. Irvine
  */
-public class A025487 implements Sequence {
+public class A025487 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A025487() {
+    super(1);
+  }
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final Fast mPrime = new Fast();

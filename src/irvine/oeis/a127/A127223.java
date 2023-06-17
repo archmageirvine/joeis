@@ -2,13 +2,13 @@ package irvine.oeis.a127;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A127223 a(n) = (n^2)!/n!.
  * @author Georg Fischer
  */
-public class A127223 implements Sequence {
+public class A127223 extends AbstractSequence {
 
   private int mExpon;
   private int mN;
@@ -24,6 +24,7 @@ public class A127223 implements Sequence {
    * @param expon
    */
   public A127223(final int offset, final int expon) {
+    super(0);
     mExpon = expon;
     mN = offset - 1;
   }

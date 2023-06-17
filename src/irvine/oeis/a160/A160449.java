@@ -3,13 +3,18 @@ package irvine.oeis.a160;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A160449 Array read by antidiagonals: T(n,k) is the number of isomorphism classes of n-fold coverings of a connected graph with Betti number k (1 &lt;= n, 0 &lt;= k).
  * @author Sean A. Irvine
  */
-public class A160449 implements Sequence {
+public class A160449 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A160449() {
+    super(0);
+  }
 
   private int mN = 0;
   private int mM = 0;

@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A008968 Triangle of distribution of rank sums: Wilcoxon's statistic.
  * @author Sean A. Irvine
  */
-public class A008968 implements Sequence {
+public class A008968 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A008968() {
+    super(6);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> DEN = Polynomial.create(1, -1, -1, 0, 1, 1, -1);

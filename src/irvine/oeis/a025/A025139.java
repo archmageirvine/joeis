@@ -2,13 +2,18 @@ package irvine.oeis.a025;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A025139 4th elementary symmetric function of C(n,0), C(n,1), ..., C(n,[ n/2 ]).
+ * A025139 4th elementary symmetric function of C(n, 0), C(n, 1), ..., C(n,[ n/2 ]).
  * @author Sean A. Irvine
  */
-public class A025139 implements Sequence {
+public class A025139 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A025139() {
+    super(6);
+  }
 
   private long mN = 5;
 

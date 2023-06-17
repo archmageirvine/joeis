@@ -2,13 +2,18 @@ package irvine.oeis.a091;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A091599 Triangle read by rows: T(n,k) is the number of nonseparable planar maps with r*n edges and a fixed outer face of r*k edges which are invariant under a rotation of 1/r for any r &gt;= 2 (independent of actual value of r).
  * @author Sean A. Irvine
  */
-public class A091599 implements Sequence {
+public class A091599 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A091599() {
+    super(1);
+  }
 
   private int mN = 0;
   private int mM = 0;

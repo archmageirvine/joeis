@@ -1,13 +1,18 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A050733 Numbers of form 3^k (values of k see A050724) containing no pair of consecutive equal digits (probably finite).
  * @author Sean A. Irvine
  */
-public class A050733 implements Sequence {
+public class A050733 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A050733() {
+    super(0);
+  }
 
   private Z mT = null;
 

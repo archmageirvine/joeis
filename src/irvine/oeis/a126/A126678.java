@@ -3,13 +3,18 @@ package irvine.oeis.a126;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A126678 Product_{i=5..n} |Stirling_1(i,5)|.
+ * A126678 Product_{i=5..n} |Stirling_1(i, 5)|.
  * @author Georg Fischer
  */
-public class A126678 implements Sequence {
+public class A126678 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A126678() {
+    super(5);
+  }
 
   private int mN = 4;
 

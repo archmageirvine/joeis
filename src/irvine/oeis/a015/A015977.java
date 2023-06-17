@@ -2,14 +2,19 @@ package irvine.oeis.a015;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.string.StringUtils;
 
 /**
  * A015977 Two iterations of Reverse and Add are needed to reach a palindrome.
  * @author Sean A. Irvine
  */
-public class A015977 implements Sequence {
+public class A015977 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A015977() {
+    super(0);
+  }
 
   private long mN = 0;
 

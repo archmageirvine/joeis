@@ -3,13 +3,18 @@ package irvine.oeis.a048;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A048601 Robbins triangle read by rows: T(n,k) = number of alternating sign n X n matrices with a 1 at top of column k (n &gt;= 1, 1&lt;=k&lt;=n).
  * @author Sean A. Irvine
  */
-public class A048601 implements Sequence {
+public class A048601 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A048601() {
+    super(1);
+  }
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

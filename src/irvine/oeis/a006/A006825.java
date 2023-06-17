@@ -2,13 +2,18 @@ package irvine.oeis.a006;
 
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006825 Number of connected regular bipartite graphs of degree 5 with 2n nodes.
  * @author Sean A. Irvine
  */
-public class A006825 implements Sequence {
+public class A006825 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006825() {
+    super(5);
+  }
 
   private int mN = 8;
 

@@ -1,13 +1,18 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A056004 Initial step in Goodstein sequences: write n in hereditary representation base 2, bump to base 3, then subtract 1.
  * @author Sean A. Irvine
  */
-public class A056004 implements Sequence {
+public class A056004 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A056004() {
+    super(1);
+  }
 
   private long mN = 0;
 

@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a002.A002212;
 import irvine.oeis.a039.A039658;
 import irvine.oeis.a039.A039660;
@@ -14,7 +14,12 @@ import irvine.oeis.a055.A055879;
  * A030532 Number of polyhexes of class PF2 with symmetry point group C_s.
  * @author Sean A. Irvine
  */
-public class A030532 implements Sequence {
+public class A030532 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A030532() {
+    super(4);
+  }
 
   // Make these sequences start naturally at 0
   private final MemorySequence mA = MemorySequence.cachedSequence(new A002212());

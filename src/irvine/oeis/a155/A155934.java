@@ -1,13 +1,18 @@
 package irvine.oeis.a155;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A155934 The sequence k(m) defined in A005991.
  * @author Sean A. Irvine
  */
-public class A155934 implements Sequence {
+public class A155934 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A155934() {
+    super(2);
+  }
 
   private int mN = 1;
   private int mPrev = 2;

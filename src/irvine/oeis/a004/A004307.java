@@ -6,13 +6,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A004307 Number of permutations p of [n] such that n-p(i)+i &gt;= 4 (mod n) for all i.
  * @author Sean A. Irvine
  */
-public class A004307 implements Sequence {
+public class A004307 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A004307() {
+    super(4);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final ArrayList<Polynomial<Z>> Y = new ArrayList<>();

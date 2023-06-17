@@ -11,13 +11,18 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006308 Coefficients of period polynomials.
  * @author Sean A. Irvine
  */
-public class A006308 implements Sequence {
+public class A006308 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006308() {
+    super(2);
+  }
 
   private static final PolynomialRing<CR> RING = new PolynomialRing<>(ComputableReals.SINGLETON);
 

@@ -1,6 +1,7 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.transform.EulerTransform;
 
@@ -8,7 +9,12 @@ import irvine.oeis.transform.EulerTransform;
  * A004113 Number of rooted trees with n nodes and 2-colored non-leaf nodes.
  * @author Sean A. Irvine
  */
-public class A004113 implements Sequence {
+public class A004113 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A004113() {
+    super(1);
+  }
 
   private Z mA = Z.ONE;
 

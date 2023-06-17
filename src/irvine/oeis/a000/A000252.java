@@ -2,13 +2,18 @@ package irvine.oeis.a000;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000252 Number of invertible 2 X 2 matrices mod n.
  * @author Sean A. Irvine
  */
-public class A000252 implements Sequence {
+public class A000252 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000252() {
+    super(1);
+  }
 
   protected long mN = 0;
 

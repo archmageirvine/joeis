@@ -1,13 +1,18 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006780 Number of n-step spirals on cubic lattice.
  * @author Sean A. Irvine
  */
-public class A006780 implements Sequence {
+public class A006780 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006780() {
+    super(0);
+  }
 
   // Cf. A001412.
   // Cubic lattice

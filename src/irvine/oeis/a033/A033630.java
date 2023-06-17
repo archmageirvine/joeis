@@ -5,13 +5,18 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A033630 Number of partitions of n into distinct divisors of n.
  * @author Sean A. Irvine
  */
-public class A033630 implements Sequence {
+public class A033630 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A033630() {
+    super(0);
+  }
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;

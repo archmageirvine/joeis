@@ -4,14 +4,19 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A255487 Number of polyhypercubes or 4-dimensional polyominoes with n cells (regarding mirror-images as distinct).
  * @author Don Reble
  * @author Sean A. Irvine
  */
-public class A255487 implements Sequence {
+public class A255487 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A255487() {
+    super(0);
+  }
 
   // Don Reble original C++ version
   // https://oeis.org/A068870/a068870.txt

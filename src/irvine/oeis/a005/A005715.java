@@ -2,13 +2,18 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005715 Coefficient of x^7 in expansion of (1+x+x^2)^n.
  * @author Sean A. Irvine
  */
-public class A005715 implements Sequence {
+public class A005715 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005715() {
+    super(4);
+  }
 
   private long mN = 3;
 

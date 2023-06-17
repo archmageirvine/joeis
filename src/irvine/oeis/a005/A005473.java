@@ -1,13 +1,18 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005473 Primes of form k^2 + 4.
  * @author Sean A. Irvine
  */
-public class A005473 implements Sequence {
+public class A005473 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005473() {
+    super(1);
+  }
 
   protected Z mN = Z.ZERO;
 

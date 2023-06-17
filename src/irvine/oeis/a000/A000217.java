@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A000217 Triangular numbers: a(n) = binomial(n+1,2) = n*(n+1)/2 = 0 + 1 + 2 + ... + n.
+ * A000217 Triangular numbers: a(n) = binomial(n+1, 2) = n*(n+1)/2 = 0 + 1 + 2 + ... + n.
  * @author Sean A. Irvine
  */
-public class A000217 implements Sequence {
+public class A000217 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000217() {
+    super(0);
+  }
 
   protected long mN = -1;
 

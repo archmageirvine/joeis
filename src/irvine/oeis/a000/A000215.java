@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000215 Fermat numbers: a(n) = 2^(2^n) + 1.
  * @author Sean A. Irvine
  */
-public class A000215 implements Sequence {
+public class A000215 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000215() {
+    super(0);
+  }
 
   private int mN = 0;
 

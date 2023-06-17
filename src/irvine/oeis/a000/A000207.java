@@ -4,13 +4,18 @@ import java.util.ArrayList;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000207 Number of inequivalent ways of dissecting a regular (n+2)-gon into n triangles by n-1 non-intersecting diagonals under rotations and reflections; also the number of planar 2-trees.
  * @author Sean A. Irvine
  */
-public class A000207 implements Sequence {
+public class A000207 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000207() {
+    super(1);
+  }
 
   private int mN = 0;
   private final ArrayList<Z> mC = new ArrayList<>();

@@ -5,13 +5,18 @@ import java.util.ArrayList;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002829 Number of trivalent (or cubic) labeled graphs with 2n nodes.
  * @author Sean A. Irvine
  */
-public class A002829 implements Sequence {
+public class A002829 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002829() {
+    super(0);
+  }
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final ArrayList<Q> mSub = new ArrayList<>();

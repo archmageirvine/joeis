@@ -1,14 +1,19 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a100.A100640;
 
 /**
  * A002176 a(n) = LCM of denominators of Cotesian numbers {C(n,k), 0 &lt;= k &lt;= n}.
  * @author Sean A. Irvine
  */
-public class A002176 implements Sequence {
+public class A002176 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002176() {
+    super(1);
+  }
 
   protected int mN = 0;
 

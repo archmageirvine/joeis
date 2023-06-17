@@ -7,13 +7,18 @@ import java.util.List;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A060240 Triangle T(n,k) in which n-th row gives degrees of irreducible representations of symmetric group S_n.
  * @author Sean A. Irvine
  */
-public class A060240 implements Sequence {
+public class A060240 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A060240() {
+    super(0);
+  }
 
   protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

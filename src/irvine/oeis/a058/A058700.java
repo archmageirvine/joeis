@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A058700 Coefficients of replicable function number 49a.
  * @author Sean A. Irvine
  */
-public class A058700 implements Sequence {
+public class A058700 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A058700() {
+    super(-1);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> X7 = RING.monomial(Z.ONE, 7);

@@ -1,13 +1,18 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A048390 Digits d in decimal expansion of n replaced with d^3.
  * @author Sean A. Irvine
  */
-public class A048390 implements Sequence {
+public class A048390 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A048390() {
+    super(0);
+  }
 
   static final String[] EXPANSIONS = {
     "0",

@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A054055 Largest digit of n.
  * @author Sean A. Irvine
  */
-public class A054055 implements Sequence {
+public class A054055 extends AbstractSequence {
 
   private long mN = -1;
   private final int mBase;
@@ -22,6 +22,7 @@ public class A054055 implements Sequence {
    * @param base number base
    */
   public A054055(final int base) {
+    super(0);
     mBase = base;
   }
 

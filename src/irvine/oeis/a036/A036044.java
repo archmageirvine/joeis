@@ -1,13 +1,18 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A036044 BCR(n): write in binary, complement, reverse.
  * @author Sean A. Irvine
  */
-public class A036044 implements Sequence {
+public class A036044 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A036044() {
+    super(0);
+  }
 
   protected long mN = -1;
   private long mMask = 1;

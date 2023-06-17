@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000201;
 import irvine.oeis.a001.A001950;
 import irvine.util.array.LongDynamicLongArray;
@@ -10,7 +10,12 @@ import irvine.util.array.LongDynamicLongArray;
  * A002251 Start with the nonnegative integers; then swap L(k) and U(k) for all k &gt;= 1, where L = A000201, U = A001950 (lower and upper Wythoff sequences).
  * @author Sean A. Irvine
  */
-public class A002251 implements Sequence {
+public class A002251 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002251() {
+    super(0);
+  }
 
   private final A000201 mL = new A000201();
   private final A001950 mU = new A001950();

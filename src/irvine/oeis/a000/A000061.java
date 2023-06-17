@@ -8,13 +8,18 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A000061 Generalized tangent numbers d(n,1).
+ * A000061 Generalized tangent numbers d(n, 1).
  * @author Sean A. Irvine
  */
-public class A000061 implements Sequence {
+public class A000061 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000061() {
+    super(1);
+  }
 
   protected int mT = 0;
   private final HashMap<String, Z> mCache = new HashMap<>();

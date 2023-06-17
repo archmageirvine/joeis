@@ -2,13 +2,18 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000043 Mersenne exponents: primes p such that 2^p - 1 is prime. Then 2^p - 1 is called a Mersenne prime.
  * @author Sean A. Irvine
  */
-public class A000043 implements Sequence {
+public class A000043 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000043() {
+    super(1);
+  }
 
   private final Fast mPrime = new Fast(); // this knows about Mersenne primes
   private long mN = 1;

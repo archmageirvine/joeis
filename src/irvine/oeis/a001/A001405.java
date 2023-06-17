@@ -1,13 +1,18 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001405 a(n) = binomial(n, floor(n/2)).
  * @author Sean A. Irvine
  */
-public class A001405 implements Sequence {
+public class A001405 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001405() {
+    super(0);
+  }
 
   private long mN = -1;
   private Z mA = Z.ONE;

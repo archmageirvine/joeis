@@ -2,13 +2,18 @@ package irvine.oeis.a048;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A048855 Number of integers up to n! relatively prime to n!.
  * @author Sean A. Irvine
  */
-public class A048855 implements Sequence {
+public class A048855 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A048855() {
+    super(0);
+  }
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

@@ -1,6 +1,7 @@
 package irvine.oeis.a090;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
@@ -9,7 +10,7 @@ import irvine.oeis.a000.A000040;
  * @author jmason
  * @author Sean A. Irvine
  */
-public class A090000 implements Sequence {
+public class A090000 extends AbstractSequence {
 
   private final Sequence mSeq;
   private final int mBit;
@@ -26,6 +27,7 @@ public class A090000 implements Sequence {
    * @param bit contiguous block of these bits
    */
   public A090000(final Sequence seq, final int bit) {
+    super(1);
     mSeq = seq;
     mBit = bit;
     mN = -1;

@@ -9,13 +9,18 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001898 Denominators of Bernoulli polynomials B(n)(x).
  * @author Sean A. Irvine
  */
-public class A001898 implements Sequence {
+public class A001898 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001898() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final BernoulliSequence mB = new BernoulliSequence(0);

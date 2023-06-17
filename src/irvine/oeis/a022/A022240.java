@@ -2,13 +2,18 @@ package irvine.oeis.a022;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A022240 Gaussian binomial coefficients [ n,11 ] for q = 7.
+ * A022240 Gaussian binomial coefficients [ n, 11 ] for q = 7.
  * @author Sean A. Irvine
  */
-public class A022240 implements Sequence {
+public class A022240 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A022240() {
+    super(11);
+  }
 
   private int mN = 10;
 

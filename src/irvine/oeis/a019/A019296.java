@@ -3,13 +3,18 @@ package irvine.oeis.a019;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A019296 Values of n for which exp(Pi*sqrt(n)) is very close to an integer.
  * @author Sean A. Irvine
  */
-public class A019296 implements Sequence {
+public class A019296 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A019296() {
+    super(-1);
+  }
 
   private static final CR BOUND = CR.valueOf(new Q(1, 100));
   private long mN = -2;

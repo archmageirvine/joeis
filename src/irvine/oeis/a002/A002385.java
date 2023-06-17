@@ -2,14 +2,19 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.string.StringUtils;
 
 /**
  * A002385 Palindromic primes: prime numbers whose decimal expansion is a palindrome.
  * @author Sean A. Irvine
  */
-public class A002385 implements Sequence {
+public class A002385 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002385() {
+    super(1);
+  }
 
   protected final Fast mPrime = new Fast();
   private Z mP = Z.ONE;

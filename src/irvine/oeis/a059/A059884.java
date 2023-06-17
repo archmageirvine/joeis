@@ -4,13 +4,18 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A059884 Prime factorization of n encoded by recursively interleaving bits of successive prime exponents.
  * @author Sean A. Irvine
  */
-public class A059884 implements Sequence {
+public class A059884 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A059884() {
+    super(1);
+  }
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

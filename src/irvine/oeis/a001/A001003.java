@@ -1,13 +1,18 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001003 Schroeder's second problem (generalized parentheses); also called super-Catalan numbers or little Schroeder numbers.
  * @author Sean A. Irvine
  */
-public class A001003 implements Sequence {
+public class A001003 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001003() {
+    super(0);
+  }
 
   protected int mN = -1;
   private Z mA = Z.ONE;

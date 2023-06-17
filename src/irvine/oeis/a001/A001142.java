@@ -2,13 +2,18 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001142 a(n) = Product_{k=1..n} k^(2k - 1 - n).
  * @author Sean A. Irvine
  */
-public class A001142 implements Sequence {
+public class A001142 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001142() {
+    super(0);
+  }
 
   protected int mN = -1;
 

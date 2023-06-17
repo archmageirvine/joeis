@@ -7,6 +7,7 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a134.A134446;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -15,7 +16,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  * A203264 Permanent of the n-th principal submatrix of (A134446 in square format).
  * @author Georg Fischer
  */
-public class A203264 implements Sequence {
+public class A203264 extends AbstractSequence {
 
   protected UpperLeftTriangle mULT;
   protected int mN; // current index n
@@ -44,6 +45,7 @@ public class A203264 implements Sequence {
    * @param start value of first term
    */
   public A203264(final int offset, final Sequence seq, final int start) {
+    super(1);
     if (seq instanceof UpperLeftTriangle) {
       mULT = (UpperLeftTriangle) seq;
     } else {

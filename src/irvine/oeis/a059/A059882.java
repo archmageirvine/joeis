@@ -2,13 +2,18 @@ package irvine.oeis.a059;
 
 import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A059882 As upper right triangle: ascending wiggly sums to n where first term is k (sums in which terms alternately increase and decrease; zigzag partitions).
  * @author Sean A. Irvine
  */
-public class A059882 implements Sequence {
+public class A059882 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A059882() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

@@ -3,13 +3,18 @@ package irvine.oeis.a033;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Carmichael;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A033502 Carmichael numbers of the form (6*k+1)*(12*k+1)*(18*k+1), where 6*k+1, 12*k+1 and 18*k+1 are all primes.
  * @author Sean A. Irvine
  */
-public class A033502 implements Sequence {
+public class A033502 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A033502() {
+    super(1);
+  }
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

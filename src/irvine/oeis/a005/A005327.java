@@ -1,13 +1,18 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005327 Certain subgraphs of a directed graph (inverse binomial transform of A005321).
  * @author Sean A. Irvine
  */
-public class A005327 implements Sequence {
+public class A005327 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005327() {
+    super(1);
+  }
 
   private Z mA = null;
   private long mAdd = 1;

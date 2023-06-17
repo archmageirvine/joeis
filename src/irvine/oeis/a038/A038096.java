@@ -2,13 +2,18 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A038096 Number of rooted graphs on n labeled nodes where the root has degree 3.
  * @author Sean A. Irvine
  */
-public class A038096 implements Sequence {
+public class A038096 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A038096() {
+    super(4);
+  }
 
   private int mN = 3;
 

@@ -5,14 +5,19 @@ import java.util.HashMap;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Point;
 
 /**
  * A003030 Number of strongly connected digraphs with n labeled nodes.
  * @author Sean A. Irvine
  */
-public class A003030 implements Sequence {
+public class A003030 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003030() {
+    super(1);
+  }
 
   private int mN = 0;
   private final HashMap<Point, Z> mLambda = new HashMap<>();

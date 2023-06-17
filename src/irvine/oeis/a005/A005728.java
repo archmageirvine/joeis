@@ -2,13 +2,18 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005728 Number of fractions in Farey series of order n.
  * @author Sean A. Irvine
  */
-public class A005728 implements Sequence {
+public class A005728 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005728() {
+    super(0);
+  }
 
   private Z mA = Z.ONE;
   private long mN = -1;

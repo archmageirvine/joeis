@@ -3,13 +3,13 @@ package irvine.oeis.a211;
 import java.util.function.Function;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A211422 Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w^2 + x*y = 0.
+ * A211422 Number of ordered triples (w,x,y) with all terms in {-n,..., 0,...,n} and w^2 + x*y = 0.
  * @author Georg Fischer
  */
-public class A211422 implements Sequence {
+public class A211422 extends AbstractSequence {
 
   /**
    * Four longs.
@@ -43,6 +43,7 @@ public class A211422 implements Sequence {
    * @param cond condition for the n and the 4 terms to be counted
    */
   public A211422(final int offset, final Function<Long, Long[]> range, final Long4Cond cond) {
+    super(0);
     mRange = range;
     mCond = cond;
     mN = offset - 1;

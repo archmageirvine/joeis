@@ -1,14 +1,19 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001415 Number of ways of folding a 2 X n strip of stamps.
  * @author Fred Lunnon (ALGOL68, C versions)
  * @author Sean A. Irvine (Java port)
  */
-public class A001415 implements Sequence {
+public class A001415 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001415() {
+    super(0);
+  }
 
   // Implements algorithm as described in "Multi-dimensional map-folding",
   // by W. F. Lunnon, The Computer J, 14, 1, pp. 75--80.  Note the original

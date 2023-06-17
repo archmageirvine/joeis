@@ -1,13 +1,18 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A014824 a(0) = 0; for n&gt;0, a(n) = 10*a(n-1) + n.
  * @author Sean A. Irvine
  */
-public class A014824 implements Sequence {
+public class A014824 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A014824() {
+    super(0);
+  }
 
   private Z mA = Z.ZERO;
   protected long mN = -1;

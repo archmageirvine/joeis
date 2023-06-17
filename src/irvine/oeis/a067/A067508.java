@@ -2,13 +2,13 @@ package irvine.oeis.a067;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A067508 Powers of 4 with digit sum divisible by 4.
  * @author Georg Fischer
  */
-public class A067508 implements Sequence {
+public class A067508 extends AbstractSequence {
 
   private int mBase;
   private Z mPow;
@@ -23,6 +23,7 @@ public class A067508 implements Sequence {
    * @param base base and divisor
    */
   public A067508(final int base) {
+    super(0);
     mPow = Z.ONE;
     mBase = base;
   }

@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A000254 Unsigned Stirling numbers of first kind, s(n+1,2): a(n+1) = (n+1)*a(n) + n!.
+ * A000254 Unsigned Stirling numbers of first kind, s(n+1, 2): a(n+1) = (n+1)*a(n) + n!.
  * @author Sean A. Irvine
  */
-public class A000254 implements Sequence {
+public class A000254 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000254() {
+    super(0);
+  }
 
   protected long mN = -1;
   private Z mA = Z.ONE;

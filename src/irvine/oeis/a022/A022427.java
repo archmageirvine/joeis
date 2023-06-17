@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A022427 a(n) = c(n-1) + c(n-3) where c is the sequence of numbers not in a.
  * @author Sean A. Irvine
  */
-public class A022427 implements Sequence {
+public class A022427 extends AbstractSequence {
 
   private final TreeSet<Long> mS = new TreeSet<>();
   private final long mA0;
@@ -26,6 +26,7 @@ public class A022427 implements Sequence {
    * @param a2 third term
    */
   public A022427(final long a0, final long a1, final long a2) {
+    super(0);
     mA0 = a0;
     mA1 = a1;
     mA2 = a2;

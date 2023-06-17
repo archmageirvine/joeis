@@ -3,13 +3,18 @@ package irvine.oeis.a007;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007975 Number of permutations that are 3 "block reversals" away from 12...n.
  * @author Sean A. Irvine
  */
-public class A007975 implements Sequence {
+public class A007975 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007975() {
+    super(4);
+  }
 
   protected int mN = start();
   private final HashSet<String> mSeen = new HashSet<>();

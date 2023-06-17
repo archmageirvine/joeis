@@ -1,13 +1,18 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A048380 Digits d in decimal expansion of n replaced with d-th prime (replacing each 0 digit with a 1).
  * @author Sean A. Irvine
  */
-public class A048380 implements Sequence {
+public class A048380 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A048380() {
+    super(0);
+  }
 
   static final String[] EXPANSIONS = {
     "1",

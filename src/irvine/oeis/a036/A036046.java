@@ -10,13 +10,18 @@ import java.util.TreeSet;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A036046 Product of the lengths of the cycle types of the permutation created by duality and reversal on the partitions of n.
  * @author Sean A. Irvine
  */
-public class A036046 implements Sequence {
+public class A036046 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A036046() {
+    super(0);
+  }
 
   private int mN = -1;
 

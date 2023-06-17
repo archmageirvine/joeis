@@ -1,14 +1,19 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006385 Number of connected planar maps with n edges.
  * @author T. R. S. Walsh
  * @author Sean A. Irvine
  */
-public class A006385 implements Sequence {
+public class A006385 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006385() {
+    super(0);
+  }
 
   protected static final int MAX_EDGES = 30;
   protected static final int DIM = 2 * MAX_EDGES + 1;

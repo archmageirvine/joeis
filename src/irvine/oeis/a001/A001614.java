@@ -1,13 +1,18 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001614 Connell sequence: 1 odd, 2 even, 3 odd, ...
  * @author Sean A. Irvine
  */
-public class A001614 implements Sequence {
+public class A001614 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001614() {
+    super(1);
+  }
 
   private long mBlockLength = 0;
   private long mBlockRemaining = 0;

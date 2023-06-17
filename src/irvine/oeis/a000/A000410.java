@@ -4,13 +4,18 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A000410 Number of singular n X n rational (0,1)-matrices.
+ * A000410 Number of singular n X n rational (0, 1)-matrices.
  * @author Sean A. Irvine
  */
-public class A000410 implements Sequence {
+public class A000410 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000410() {
+    super(1);
+  }
 
   protected int mN = 0;
 

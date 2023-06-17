@@ -5,13 +5,18 @@ import java.util.HashMap;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002306 Numerators of Hurwitz numbers H_n (coefficients in expansion of Weierstrass P-function).
  * @author Sean A. Irvine
  */
-public class A002306 implements Sequence {
+public class A002306 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002306() {
+    super(1);
+  }
 
   private static final Q H0 = new Q(1, 10);
 

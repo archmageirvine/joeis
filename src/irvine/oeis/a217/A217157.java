@@ -2,6 +2,7 @@ package irvine.oeis.a217;
 // manually 2020-11-24
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000032;
 import irvine.oeis.a000.A000045;
@@ -12,7 +13,7 @@ import irvine.oeis.a000.A000045;
  * some underlying sequence (see the constructor with parameters).
  * @author Georg Fischer
  */
-public class A217157 implements Sequence {
+public class A217157 extends AbstractSequence {
 
   protected int mCount; // number of required digits
   protected int mN; // current index
@@ -69,6 +70,7 @@ public class A217157 implements Sequence {
    * @param base base for powers: 0 for n^k, 2, 3, 5 and so on for A217285-A217292
    */
   public A217157(final int offset, final int features, final int count, final int base) {
+    super(2);
     mN = offset - 1;
     mFeatures = features;
     mCount = count;

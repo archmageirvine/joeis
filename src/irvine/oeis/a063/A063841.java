@@ -4,13 +4,18 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.PairMultiply;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A063841 Table T(n,k) giving number of k-multigraphs on n nodes (n &gt;= 1, k &gt;= 0) read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A063841 implements Sequence {
+public class A063841 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A063841() {
+    super(1);
+  }
 
   protected Z t(final int n, final int k) {
     if (n == 0) {

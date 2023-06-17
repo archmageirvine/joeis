@@ -1,18 +1,19 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A050674 Inserting a digit '0' between adjacent digits of n makes a prime.
  * @author Sean A. Irvine
  */
-public class A050674 implements Sequence {
+public class A050674 extends AbstractSequence {
 
   private long mN = 9;
   private final char mInsert;
 
   protected A050674(final char insert) {
+    super(1);
     mInsert = insert;
   }
 

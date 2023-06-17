@@ -5,13 +5,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000025 Coefficients of the 3rd order mock theta function f(q).
  * @author Sean A. Irvine
  */
-public class A000025 implements Sequence {
+public class A000025 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000025() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;

@@ -4,14 +4,19 @@ import java.util.HashSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Permutation;
 
 /**
  * A075603 Number of relatively prime numbers using all digits of n.
  * @author Sean A. Irvine
  */
-public class A075603 implements Sequence {
+public class A075603 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A075603() {
+    super(11);
+  }
 
   private long mN = 10;
 

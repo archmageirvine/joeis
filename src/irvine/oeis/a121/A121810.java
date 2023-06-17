@@ -1,13 +1,13 @@
 package irvine.oeis.a121;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A121810 a(n) = a(n - 1)*a(n - 2) + a(n - 2)*a(n - 3) + a(n - 1)*a(n - 3).
  * @author Georg Fischer
  */
-public class A121810 implements Sequence {
+public class A121810 extends AbstractSequence {
 
   private int mN;
   private Z[] mA;
@@ -15,6 +15,7 @@ public class A121810 implements Sequence {
 
   /** Construct the sequence. */
   public A121810() {
+    super(-1);
     mA = new Z[] {Z.ONE, Z.ONE, Z.ZERO, Z.ZERO};
     mN = -1;
   }

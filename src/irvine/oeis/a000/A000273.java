@@ -5,13 +5,18 @@ import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000273 Number of unlabeled simple digraphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A000273 implements Sequence {
+public class A000273 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000273() {
+    super(0);
+  }
 
   protected int mN = -1;
 

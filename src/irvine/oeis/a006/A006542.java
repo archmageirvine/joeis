@@ -2,13 +2,18 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A006542 a(n) = binomial(n,3)*binomial(n-1,3)/4.
+ * A006542 a(n) = binomial(n, 3)*binomial(n-1, 3)/4.
  * @author Sean A. Irvine
  */
-public class A006542 implements Sequence {
+public class A006542 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006542() {
+    super(4);
+  }
 
   private long mN = 3;
 

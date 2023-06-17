@@ -9,13 +9,18 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001282 Number of permutations of length n by rises.
  * @author Sean A. Irvine
  */
-public class A001282 implements Sequence {
+public class A001282 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001282() {
+    super(6);
+  }
 
   private static final MultivariatePolynomialField<Z> RING1 = new MultivariatePolynomialField<>(IntegerField.SINGLETON, 2);
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);

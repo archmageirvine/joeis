@@ -3,14 +3,18 @@ package irvine.oeis.a104;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
-
+import irvine.oeis.AbstractSequence;
 
 /**
  * A104320 Number of zeros in ternary representation of 2^n.
  * @author Georg Fischer
  */
-public class A104320 implements Sequence {
+public class A104320 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A104320() {
+    super(0);
+  }
 
   protected int mN = -1;
   

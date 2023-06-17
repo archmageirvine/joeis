@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007165 Number of P-graphs with 2n edges.
  * @author Sean A. Irvine
  */
-public class A007165 implements Sequence {
+public class A007165 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007165() {
+    super(1);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> TWO = Polynomial.create(2);

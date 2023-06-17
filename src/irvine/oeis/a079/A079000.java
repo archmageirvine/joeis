@@ -4,13 +4,13 @@ import java.util.TreeSet;
 import java.util.function.Function;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A079000 a(n) is taken to be the smallest positive integer greater than a(n-1) which is consistent with the condition "n is a member of the sequence if and only if a(n) is odd".
  * @author Georg Fischer
  */
-public class A079000 implements Sequence {
+public class A079000 extends AbstractSequence {
 
   private int mN;
   private int mOffset;
@@ -32,6 +32,7 @@ public class A079000 implements Sequence {
    * @param options optional configuration settings: 4 = take start value
    */
   public A079000(final int offset, final int start, final int options, final Function<Z, Boolean> condition) {
+    super(1);
     mOffset = offset;
     mN = offset - 1;
     mC = Z.valueOf(start - 1);

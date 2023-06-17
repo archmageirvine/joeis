@@ -1,13 +1,18 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A014634 a(n) = (2*n+1)*(4*n+1).
  * @author Sean A. Irvine
  */
-public class A014634 implements Sequence {
+public class A014634 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A014634() {
+    super(0);
+  }
 
   private long mN = -1;
 

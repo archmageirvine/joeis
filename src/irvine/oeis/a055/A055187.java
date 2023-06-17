@@ -3,13 +3,14 @@ package irvine.oeis.a055;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
  * A055187 Cumulative counting sequence: method A (adjective-before-noun)-pairs with first term 1.
  * @author Georg Fischer
  */
-public class A055187 implements Sequence {
+public class A055187 extends AbstractSequence {
 
   // Generate OEIS A030707, A055187, A217760 && related
   // "cumulative counting" sequences as defined by Clark Kimberling.
@@ -94,6 +95,7 @@ public class A055187 implements Sequence {
 
   protected A055187(final int offset, final String method, final int start,
                  final int appear, final int row, final int first, final int with0, final int parm) {
+    super(1);
     mOffset = offset;
     mMethod = method;
     mStart = start;

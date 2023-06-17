@@ -3,6 +3,7 @@ package irvine.oeis.a054;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a049.A049310;
 
@@ -10,7 +11,12 @@ import irvine.oeis.a049.A049310;
  * A054450 Triangle of partial row sums of unsigned triangle A049310(n,m), n &gt;= m &gt;= 0 (Chebyshev S-polynomials).
  * @author Sean A. Irvine
  */
-public class A054450 implements Sequence {
+public class A054450 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A054450() {
+    super(0);
+  }
 
   private final Sequence mSeq = new A049310();
   private final ArrayList<Z> mA = new ArrayList<>();

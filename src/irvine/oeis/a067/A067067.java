@@ -2,6 +2,7 @@ package irvine.oeis.a067;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000142;
 
@@ -9,7 +10,7 @@ import irvine.oeis.a000.A000142;
  * A067067 Product of nonzero digits of n! (A000142).
  * @author Georg Fischer
  */
-public class A067067 implements Sequence {
+public class A067067 extends AbstractSequence {
 
   private Sequence mSeq; // underlying sequence
 
@@ -23,6 +24,7 @@ public class A067067 implements Sequence {
    * @param seq underlying sequence
    */
   public A067067(final Sequence seq) {
+    super(0);
     mSeq = seq;
   }
 

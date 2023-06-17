@@ -1,13 +1,18 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002059 Number of partitions of an n-gon into (n-4) parts.
  * @author Sean A. Irvine
  */
-public class A002059 implements Sequence {
+public class A002059 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002059() {
+    super(6);
+  }
 
   private long mN = 5;
   private Z mA = Z.THREE;

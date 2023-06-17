@@ -4,13 +4,18 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A058760 Integers whose set of prime factors (taken with multiplicity) uses each digit exactly once (i.e., is pandigital) in some base b &gt; 1. Numbers are expressed in base 10.
  * @author Sean A. Irvine
  */
-public class A058760 implements Sequence {
+public class A058760 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A058760() {
+    super(0);
+  }
 
   private long mN = 1;
 

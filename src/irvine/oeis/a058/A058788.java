@@ -5,13 +5,18 @@ import java.util.List;
 
 import irvine.math.plantri.Plantri;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A058788 Triangle T(n,k) = number of polyhedra (triconnected planar graphs) with n edges and k vertices (or k faces), where (n/3+2) &lt;= k &lt;= (2n/3). Note that there is no such k when n=7.
  * @author Sean A. Irvine
  */
-public class A058788 implements Sequence {
+public class A058788 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A058788() {
+    super(6);
+  }
 
   private int mN = 5;
   private int mM = 10;

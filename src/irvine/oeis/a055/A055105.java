@@ -5,13 +5,18 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A055105 Triangle read by rows: T(n,k) = number of noncommutative symmetric polynomials of degree n that have exactly k different variables appearing in each monomial and which generate the algebra of all noncommutative symmetric polynomials (n &gt;= 1, 1 &lt;= k &lt;= n).
  * @author Sean A. Irvine
  */
-public class A055105 implements Sequence {
+public class A055105 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A055105() {
+    super(1);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = 0;

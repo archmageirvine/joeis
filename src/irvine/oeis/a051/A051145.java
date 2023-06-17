@@ -1,13 +1,13 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A051145 a(0)=0, a(1)=1, a(n) = smallest number such that sequence b(n) = a(n) OR a(n+1) is strictly monotonically increasing.
  * @author Sean A. Irvine
  */
-public class A051145 implements Sequence {
+public class A051145 extends AbstractSequence {
 
   private Z mA = null;
   private Z mB = null;
@@ -15,6 +15,7 @@ public class A051145 implements Sequence {
   private final Z mSecondTerm;
 
   protected A051145(final Z firstTerm, final Z secondTerm) {
+    super(0);
     mFirstTerm = firstTerm;
     mSecondTerm = secondTerm;
   }

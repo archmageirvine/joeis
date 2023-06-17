@@ -3,13 +3,18 @@ package irvine.oeis.a053;
 import irvine.math.polynomial.ChebyshevPolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A053117 Triangle read by rows of coefficients of Chebyshev's U(n,x) polynomials (exponents in increasing order).
  * @author Sean A. Irvine
  */
-public class A053117 implements Sequence {
+public class A053117 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A053117() {
+    super(0);
+  }
 
   private final ChebyshevPolynomials mChebyshevPolynomials = new ChebyshevPolynomials(2);
   private Polynomial<Z> mPoly = mChebyshevPolynomials.getValue(0);

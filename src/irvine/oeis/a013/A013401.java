@@ -4,13 +4,18 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A013401 arctan(arcsin(x)-tan(x)) = -1/3!*x^3 - 7/5!*x^5 - 47/7!*x^7 + 3649/9!*x^9...
  * @author Sean A. Irvine
  */
-public class A013401 implements Sequence {
+public class A013401 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A013401() {
+    super(4);
+  }
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 1;

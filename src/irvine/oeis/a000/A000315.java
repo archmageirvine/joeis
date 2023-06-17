@@ -2,13 +2,18 @@ package irvine.oeis.a000;
 
 import irvine.math.ReducedLatinRectangles;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000315 Number of reduced Latin squares of order n; also number of labeled loops (quasigroups with an identity element) with a fixed identity element.
  * @author Sean A. Irvine
  */
-public class A000315 implements Sequence {
+public class A000315 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000315() {
+    super(1);
+  }
 
   protected int mN = 0;
 

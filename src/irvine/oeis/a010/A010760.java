@@ -1,13 +1,18 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A010760 Duplicate of A085587.
  * @author Sean A. Irvine
  */
-public class A010760 implements Sequence {
+public class A010760 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A010760() {
+    super(1);
+  }
 
   protected int mN = 0;
 

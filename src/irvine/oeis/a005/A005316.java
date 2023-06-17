@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Pair;
 
 /**
@@ -15,7 +15,12 @@ import irvine.util.Pair;
  * @author Andrew Howroyd
  * @author Sean A. Irvine (Java port)
  */
-public class A005316 implements Sequence {
+public class A005316 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005316() {
+    super(0);
+  }
 
   // Java implementation based on a C# implementation by Andrew Howroyd.
   // https://oeis.org/A005316/a005316.cs.txt
@@ -301,7 +306,7 @@ public class A005316 implements Sequence {
 
 //    /**
 //     * Initial states for rotationally symmetric loops on two parallel roads. (part of A086031)
-//     * gives 1,3,16,105,786,6398,55280,499293,4667290,44840730
+//     * gives 1, 3, 16, 105, 786, 6398, 55280, 499293, 4667290, 44840730
 //     */
 //    public Iterator<Z> ParallelRoadSymmetricMeanderInitialStates
 //    {
@@ -338,7 +343,6 @@ public class A005316 implements Sequence {
       return super.closingAction(lower, upper) == Action.JOIN_ARCH ? Action.JOIN_ARCH : Action.NONE;
     }
   }
-
 
 //    /**
 //     * Processing component for meanders with multiple parallel roads. (A076876, A206432, A204352 etc). Can also handle loops on multiple parallel roads (A086031).

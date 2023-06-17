@@ -2,13 +2,18 @@ package irvine.oeis.a015;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A015634 Number of ordered quadruples of integers from [ 1..n ] with no global factor.
  * @author Sean A. Irvine
  */
-public class A015634 implements Sequence {
+public class A015634 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A015634() {
+    super(1);
+  }
 
   private long mN = start() - 1;
   private Z mA = Z.ZERO;

@@ -7,14 +7,19 @@ import java.util.Map;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Pair;
 
 /**
  * A170896 Number of ON cells after n generations of the Schrandt-Ulam cellular automaton on the square grid that is described in the Comments.
  * @author Sean A. Irvine
  */
-public class A170896 implements Sequence {
+public class A170896 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A170896() {
+    super(0);
+  }
 
   private static final int[] DELTA = {1, -1, 0, 0};
 

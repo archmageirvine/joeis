@@ -3,6 +3,7 @@ package irvine.oeis.a208;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a007.A007623;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a007.A007623;
  * A208575 Product of digits of n in factorial base.
  * @author Georg Fischer
  */
-public class A208575 implements Sequence {
+public class A208575 extends AbstractSequence {
 
   private Sequence mSeq; // underlying sequence
   private int mBase;
@@ -26,6 +27,7 @@ public class A208575 implements Sequence {
    * @param base number base
    */
   public A208575(final Sequence seq, final int base) {
+    super(0);
     mSeq = seq;
     mBase = base;
   }

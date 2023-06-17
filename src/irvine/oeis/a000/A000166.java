@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000166 Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.
  * @author Sean A. Irvine
  */
-public class A000166 implements Sequence {
+public class A000166 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000166() {
+    super(0);
+  }
 
   protected int mN = -1;
   private Z mA = Z.ONE;

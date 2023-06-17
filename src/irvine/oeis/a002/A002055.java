@@ -2,13 +2,18 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002055 Number of diagonal dissections of a convex n-gon into n-4 regions.
  * @author Sean A. Irvine
  */
-public class A002055 implements Sequence {
+public class A002055 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002055() {
+    super(5);
+  }
 
   private long mN = -1;
 

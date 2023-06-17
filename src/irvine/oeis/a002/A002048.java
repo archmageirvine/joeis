@@ -4,13 +4,18 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002048 Segmented numbers, or prime numbers of measurement.
  * @author Sean A. Irvine
  */
-public class A002048 implements Sequence {
+public class A002048 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002048() {
+    super(1);
+  }
 
   private final HashSet<Long> mExcluded = new HashSet<>();
   private final ArrayList<Long> mA = new ArrayList<>();

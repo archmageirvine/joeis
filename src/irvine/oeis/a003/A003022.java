@@ -5,13 +5,18 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A003022 Length of shortest (or optimal) Golomb ruler with n marks.
  * @author Sean A. Irvine
  */
-public class A003022 implements Sequence {
+public class A003022 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003022() {
+    super(2);
+  }
 
   // This implementation is simple search and will not compute many terms in a reasonable time
 

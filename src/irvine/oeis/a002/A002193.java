@@ -1,13 +1,18 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002193 Decimal expansion of square root of 2.
  * @author Sean A. Irvine
  */
-public class A002193 implements Sequence {
+public class A002193 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002193() {
+    super(1);
+  }
 
   private Z mX = n();
   private Z mR = Z.ZERO;

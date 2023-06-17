@@ -10,13 +10,18 @@ import java.util.TreeMap;
 
 import irvine.math.partitions.DistinctOddPartsPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A048141 Number of symmetrical planar partitions of n: planar partitions (A000219) that when regarded as 3-D objects have a threefold axis of symmetry that is the intersection of 3 mirror planes, i.e., C3v symmetry.
  * @author Sean A. Irvine
  */
-public class A048141 implements Sequence {
+public class A048141 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A048141() {
+    super(1);
+  }
 
   private int mN = 0;
   private final List<Map<int[], Long>> mCache = new ArrayList<>();

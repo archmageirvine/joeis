@@ -3,13 +3,18 @@ package irvine.oeis.a030;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A030998 Write n in base 7 and juxtapose.
  * @author Georg Fischer
  */
-public class A030998 implements Sequence {
+public class A030998 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A030998() {
+    super(0);
+  }
  
   private String mS = "";
   private int mPos = 0;

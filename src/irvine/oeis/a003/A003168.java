@@ -2,13 +2,18 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A003168 Number of blobs with 2n+1 edges.
  * @author Sean A. Irvine
  */
-public class A003168 implements Sequence {
+public class A003168 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003168() {
+    super(0);
+  }
 
   long mN = -1;
 

@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000566 Heptagonal numbers (or 7-gonal numbers): n*(5*n-3)/2.
  * @author Sean A. Irvine
  */
-public class A000566 implements Sequence {
+public class A000566 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000566() {
+    super(0);
+  }
 
   protected Z mN = Z.NEG_ONE;
 

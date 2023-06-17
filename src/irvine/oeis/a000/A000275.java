@@ -4,13 +4,18 @@ import java.util.ArrayList;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000275 Coefficients of a Bessel function (reciprocal of J_0(z)); also pairs of permutations with rise/rise forbidden.
  * @author Sean A. Irvine
  */
-public class A000275 implements Sequence {
+public class A000275 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000275() {
+    super(0);
+  }
 
   protected int mN = -1;
   protected final ArrayList<Z> mA = new ArrayList<>();

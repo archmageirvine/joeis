@@ -1,13 +1,18 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A036012 a(n) = smallest number &gt; 1 such that a(1)a(2)...a(n) + 1 is prime.
  * @author Sean A. Irvine
  */
-public class A036012 implements Sequence {
+public class A036012 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A036012() {
+    super(1);
+  }
 
   private Z mA = null;
 

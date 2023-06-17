@@ -1,13 +1,18 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A046829 Numbers k such that digits of k^2 include digits of k as subsequence.
  * @author Sean A. Irvine
  */
-public class A046829 implements Sequence {
+public class A046829 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A046829() {
+    super(1);
+  }
 
   private Z mN = Z.NEG_ONE;
 

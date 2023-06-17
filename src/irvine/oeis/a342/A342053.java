@@ -15,14 +15,19 @@ import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a002.A002712;
 
 /**
  * A342053 Array read by antidiagonals: T(n,k) is the number of unrooted 3-connected triangulations of a disk with n interior nodes and k nodes on the boundary, n &gt;= 1, k &gt;= 3.
  * @author Sean A. Irvine
  */
-public class A342053 implements Sequence {
+public class A342053 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A342053() {
+    super(1);
+  }
 
   // After Andrew Howroyd
 
@@ -95,7 +100,6 @@ public class A342053 implements Sequence {
 // 
 // // Helper to make matrix from bivariate g.f.
 // BgfToArray(gf, N, M)={matrix(N+1, M+1, n, m, polcoeff(polcoeff(gf, n-1, x), m-1, y))}
-
 
   // Helper to make bivariate g.f. from a function. Transposes function.
   Polynomial<Polynomial<Z>> makeSquareBgfTr(final BiFunction<Integer, Integer, Z> fun, final int n, final int m, final int yStep) {
@@ -173,11 +177,10 @@ public class A342053 implements Sequence {
     return res;
   }
 
-
   // J_0 function (sequence A002712 as g.f.)
-  // See 13.10: Satisfies J = 1 + x*J + x^2*J*(1 + x*J/2)*(J^2 - D(x^2,0)).
+  // See 13.10: Satisfies J = 1 + x*J + x^2*J*(1 + x*J/2)*(J^2 - D(x^2, 0)).
   // Compute by iteratively growing precision.
-// Jgf(n,x='x)={my(q=Ser(vector(n+1, i, if(i%2, D(i\2,0))), x), p=1+O(x)); for(n=1, n, p = 1 + x*p + x^2*p*(1 + x*p/2)*(p^2 - q)); p}
+// Jgf(n,x='x)={my(q=Ser(vector(n+1, i, if(i%2, D(i\2, 0))), x), p=1+O(x)); for(n=1, n, p = 1 + x*p + x^2*p*(1 + x*p/2)*(p^2 - q)); p}
 
   private final MemorySequence mJ = MemorySequence.cachedSequence(new A002712());
 
@@ -185,7 +188,6 @@ public class A342053 implements Sequence {
     mJ.a(n); // Force enough terms
     return INNER.create(mJ.toList());
   }
-
 
   // Q1, Q2, Q3: The first is for an odd number of external vertices, the other two are for even.
   //   __        ___         __

@@ -1,14 +1,19 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.string.StringUtils;
 
 /**
  * A007573 Number of asymmetric families of palindromic squares.
  * @author Sean A. Irvine
  */
-public class A007573 implements Sequence {
+public class A007573 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007573() {
+    super(7);
+  }
 
   private int mN = 0;
 

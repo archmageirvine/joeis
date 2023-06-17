@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001482 Expansion of (Product_{j&gt;=1} (1-(-x)^j) - 1)^4 in powers of x.
  * @author Sean A. Irvine
  */
-public class A001482 implements Sequence {
+public class A001482 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001482() {
+    super(4);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 

@@ -1,13 +1,18 @@
 package irvine.oeis.a210;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A210025 a(0)=1. Let S = string of digits of a(0),a(1),a(2),... To get a(n+1) (n&gt;=0), subtract next element of S from a(n) if that would give a positive number, otherwise add it to a(n).
  * @author Sean A. Irvine
  */
-public class A210025 implements Sequence {
+public class A210025 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A210025() {
+    super(0);
+  }
 
   private Z mA = null;
   private final StringBuilder mDigits = new StringBuilder();

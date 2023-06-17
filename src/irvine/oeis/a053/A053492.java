@@ -3,13 +3,18 @@ package irvine.oeis.a053;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A053492 REVEGF transform of [1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, ...].
  * @author Sean A. Irvine
  */
-public class A053492 implements Sequence {
+public class A053492 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A053492() {
+    super(1);
+  }
 
   protected int mN = 0;
 

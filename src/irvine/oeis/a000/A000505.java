@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000505 Eulerian numbers (Euler's triangle: column k=5 of A008292, column k=4 of A173018).
  * @author Sean A. Irvine
  */
-public class A000505 implements Sequence {
+public class A000505 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000505() {
+    super(5);
+  }
 
   private int mN = 2;
 

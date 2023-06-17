@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A055978 A sequence related to Ramanujan's tau function.
  * @author Sean A. Irvine
  */
-public class A055978 implements Sequence {
+public class A055978 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A055978() {
+    super(4);
+  }
 
   // After Michael Somos
 

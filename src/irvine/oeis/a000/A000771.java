@@ -2,13 +2,18 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A000771 Stirling numbers of second kind, S(n,7).
+ * A000771 Stirling numbers of second kind, S(n, 7).
  * @author Sean A. Irvine
  */
-public class A000771 implements Sequence {
+public class A000771 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000771() {
+    super(7);
+  }
 
   private int mN = 6;
 

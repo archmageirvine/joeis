@@ -2,13 +2,18 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005345 Number of elements of a free idempotent monoid on n letters.
  * @author Sean A. Irvine
  */
-public class A005345 implements Sequence {
+public class A005345 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005345() {
+    super(0);
+  }
 
   private int mN = -1;
 

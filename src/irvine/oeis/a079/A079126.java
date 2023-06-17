@@ -6,13 +6,18 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A079126 Triangle T(n,k) of numbers of partitions of n into distinct positive integers &lt;= k, 0&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
-public class A079126 implements Sequence {
+public class A079126 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A079126() {
+    super(0);
+  }
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final ArrayList<Polynomial<Z>> mCols = new ArrayList<>();

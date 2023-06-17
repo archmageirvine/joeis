@@ -2,13 +2,18 @@ package irvine.oeis.a008;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A008277 Triangle of Stirling numbers of the second kind, S2(n,k), n &gt;= 1, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
-public class A008277 implements Sequence {
+public class A008277 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A008277() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

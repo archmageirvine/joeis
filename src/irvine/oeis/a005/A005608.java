@@ -4,13 +4,18 @@ import java.util.HashMap;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005608 Number of Boolean functions realized by cascades of n gates.
  * @author Sean A. Irvine
  */
-public class A005608 implements Sequence {
+public class A005608 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005608() {
+    super(1);
+  }
 
   private final HashMap<String, Z> mButlerSCache = new HashMap<>();
 

@@ -5,13 +5,18 @@ import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005516 Number of n-bead bracelets (turnover necklaces) with 12 red beads.
  * @author Sean A. Irvine
  */
-public class A005516 implements Sequence {
+public class A005516 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005516() {
+    super(12);
+  }
 
   private final int mK = beads();
   private int mN = mK - 1;

@@ -6,13 +6,18 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A027446 Triangle read by rows: square of the lower triangular mean matrix.
  * @author Sean A. Irvine
  */
-public class A027446 implements Sequence {
+public class A027446 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A027446() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

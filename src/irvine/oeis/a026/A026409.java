@@ -3,13 +3,18 @@ package irvine.oeis.a026;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A026409 For n &gt;= 1, n n's take places at stage n: the first takes the least untaken place (l.u.p) and for 2&lt;=k&lt;=n, the k-th n takes the l.u.p. more than n-1 places past the place of the (k-1)st n.
  * @author Sean A. Irvine
  */
-public class A026409 implements Sequence {
+public class A026409 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A026409() {
+    super(1);
+  }
 
   protected final TreeMap<Long, Long> mMap = new TreeMap<>();
   private long mM = 0; // Number to be inserted

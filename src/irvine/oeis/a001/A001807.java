@@ -1,13 +1,18 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A001807 a(n) = n! * binomial(n,5).
+ * A001807 a(n) = n! * binomial(n, 5).
  * @author Sean A. Irvine
  */
-public class A001807 implements Sequence {
+public class A001807 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001807() {
+    super(5);
+  }
 
   private long mN = 4;
   private Z mA = Z.valueOf(120);

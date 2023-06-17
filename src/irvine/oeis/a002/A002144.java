@@ -3,13 +3,18 @@ package irvine.oeis.a002;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002144 Pythagorean primes: primes of form 4*k + 1.
  * @author Sean A. Irvine
  */
-public class A002144 implements Sequence {
+public class A002144 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002144() {
+    super(1);
+  }
 
   private final Fast mPrime = new Fast();
   private long mP = 3;

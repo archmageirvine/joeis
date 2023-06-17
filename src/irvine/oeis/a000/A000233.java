@@ -8,13 +8,18 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000233 Generalized class numbers.
  * @author Sean A. Irvine
  */
-public class A000233 implements Sequence {
+public class A000233 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000233() {
+    super(1);
+  }
 
   protected int mT = 0;
   private final HashMap<String, Z> mCache = new HashMap<>();

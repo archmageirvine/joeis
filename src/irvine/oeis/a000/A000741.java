@@ -3,13 +3,18 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000741 Number of compositions of n into 3 ordered relatively prime parts.
  * @author Sean A. Irvine
  */
-public class A000741 implements Sequence {
+public class A000741 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000741() {
+    super(1);
+  }
 
   private long mN = 0;
 

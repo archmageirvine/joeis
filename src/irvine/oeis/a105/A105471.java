@@ -2,13 +2,13 @@ package irvine.oeis.a105;
 // manually 2021-08-15
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A105471 a(n) = Fibonacci(n) mod 100.
  * @author Georg Fischer
  */
-public class A105471 implements Sequence {
+public class A105471 extends AbstractSequence {
 
   protected Z mA_1;
   protected Z mA_2;
@@ -25,6 +25,7 @@ public class A105471 implements Sequence {
    * @param parm parameter
    */
   public A105471(final int parm) {
+    super(0);
     mParm = Z.valueOf(parm);
     mA_1 = Z.ONE;
     mA_2 = Z.ZERO;

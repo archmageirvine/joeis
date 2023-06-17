@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
@@ -9,7 +9,12 @@ import irvine.util.array.LongDynamicArray;
  * @author Ruben Spaans (C)
  * @author Sean A. Irvine (Java port)
  */
-public class A007764 implements Sequence {
+public class A007764 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007764() {
+    super(1);
+  }
 
   /*
    * The algorithm here is essentially the same as the C version, but
@@ -34,7 +39,7 @@ public class A007764 implements Sequence {
    * with optimization in mind, don't expect it to be easy to read and
    * understand. Programmed by Ruben Spaans in september-october 2012.
    *
-   * This program was used to calculate n=22,23,24 (as well as verifying
+   * This program was used to calculate n=22, 23, 24 (as well as verifying
    * all lower n correctly), it took around a CPU-month on a machine with
    * 4 eight-core CPUs and 1 TB RAM (huge thanks to Rune Jensen and Q2S at
    * the Norwegian University of Science and Technology for letting me run
@@ -55,7 +60,7 @@ public class A007764 implements Sequence {
    * Find the number of simple paths along the edges of an n*n grid between the
    * opposite corners.
    * equivalently: find the number of simple paths along the cells of an
-   * (n+1)*(n+1) grid, from cell (0,0) to cell (n,n). cells are 4-connected.
+   * (n+1)*(n+1) grid, from cell (0, 0) to cell (n,n). cells are 4-connected.
    *
    * Algorithm: dynamic programming. state representation is the same as in
    * M. Bousquet-Melou, A. J. Guttmann and I. Jensen:
@@ -70,7 +75,7 @@ public class A007764 implements Sequence {
    *
    * Given a grid of n*n internal cells, the frontier consists of (n+1)
    * cell boundaries. each cell boundary can contain a crossing edge or none.
-   * The crossing edge can belong to the path from (0,0), or it can be an
+   * The crossing edge can belong to the path from (0, 0), or it can be an
    * "incoming" or "outgoing" edge belonging to a segment having two ends
    * going through the frontier. Assuming we scan the frontier from left to
    * right, the first loose end belonging to a segment with loose ends is
@@ -93,7 +98,6 @@ public class A007764 implements Sequence {
    * Further speedup: pthreads with 30 threads (running on a machine with 32
    * physical cores), 22x speedup achieved.
    */
-
 
   /* parallel variables */
   /* please let MUTEX be a power of two */

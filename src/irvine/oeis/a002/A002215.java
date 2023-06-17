@@ -7,13 +7,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002215 Number of polyhexes with n hexagons, having reflectional symmetry (see Harary and Read for precise definition).
  * @author Sean A. Irvine
  */
-public class A002215 implements Sequence {
+public class A002215 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002215() {
+    super(1);
+  }
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> TWO_X = RING.create(Arrays.asList(Q.ZERO, Q.TWO));

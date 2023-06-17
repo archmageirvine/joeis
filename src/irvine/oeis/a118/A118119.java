@@ -1,13 +1,13 @@
 package irvine.oeis.a118;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A118119 Smallest integer m for which gcd(m^n + 1, (m+1)^n + 1) &gt; 1.
  * @author Georg Fischer
  */
-public class A118119 implements Sequence {
+public class A118119 extends AbstractSequence {
 
   private int mN;
   private int mAdd;
@@ -23,6 +23,7 @@ public class A118119 implements Sequence {
    * @param add additive parameter
    */
   public A118119(final int offset, final int add) {
+    super(2);
     mN = offset - 1;
     mAdd = add;
   }

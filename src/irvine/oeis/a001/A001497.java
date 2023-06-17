@@ -2,13 +2,18 @@ package irvine.oeis.a001;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001497 Triangle of coefficients of Bessel polynomials (exponents in decreasing order).
  * @author Sean A. Irvine
  */
-public class A001497 implements Sequence {
+public class A001497 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001497() {
+    super(0);
+  }
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

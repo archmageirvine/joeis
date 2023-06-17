@@ -6,18 +6,19 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A085244 Permanent of the symmetric n X n matrix M defined by M(i,j) = gcd(i,j) for 1 &lt;= i,j &lt;= n.
  * @author Georg Fischer
  */
-public class A085244 implements Sequence {
+public class A085244 extends AbstractSequence {
 
   private int mN;
 
   /** Construct the sequence. */
   public A085244() {
+    super(1);
     mN = 0;
   }
 

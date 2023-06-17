@@ -2,13 +2,18 @@ package irvine.oeis.a010;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A010997 a(n) = binomial coefficient C(n,44).
+ * A010997 a(n) = binomial coefficient C(n, 44).
  * @author Sean A. Irvine
  */
-public class A010997 implements Sequence {
+public class A010997 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A010997() {
+    super(44);
+  }
 
   private long mN = 43;
 

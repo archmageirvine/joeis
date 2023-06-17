@@ -1,13 +1,18 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002135 Number of terms in a symmetrical determinant: a(n) = n*a(n-1) - (n-1)*(n-2)*a(n-3)/2.
  * @author Sean A. Irvine
  */
-public class A002135 implements Sequence {
+public class A002135 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002135() {
+    super(0);
+  }
 
   private Z mA = Z.NEG_ONE;
   protected Z mB = Z.ZERO;

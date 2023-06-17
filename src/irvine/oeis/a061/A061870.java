@@ -1,13 +1,13 @@
 package irvine.oeis.a061;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A061870 Numbers such that |first digit - second digit + third digit - fourth digit ...| = 1.
  * @author Georg Fischer
  */
-public class A061870 implements Sequence {
+public class A061870 extends AbstractSequence {
 
   private Z mK;
   private int mSum;
@@ -24,6 +24,7 @@ public class A061870 implements Sequence {
    * @param sum required digit sum
    */
   public A061870(final int mode, final int sum) {
+    super(1);
     mK = Z.ZERO;
     mSum = sum;
     mMode = mode;

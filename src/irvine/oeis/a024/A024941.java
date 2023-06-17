@@ -4,6 +4,7 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002144;
 
@@ -11,7 +12,12 @@ import irvine.oeis.a002.A002144;
  * A024941 Number of partitions of n into distinct primes of the form 4k + 1.
  * @author Sean A. Irvine
  */
-public class A024941 implements Sequence {
+public class A024941 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A024941() {
+    super(0);
+  }
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;

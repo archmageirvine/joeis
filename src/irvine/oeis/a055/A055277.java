@@ -6,13 +6,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A055277 Triangle T(n,k) of number of rooted trees with n nodes and k leaves, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
-public class A055277 implements Sequence {
+public class A055277 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A055277() {
+    super(1);
+  }
 
   protected static final PolynomialRingField<Q> RING_Y = new PolynomialRingField<>("y", Rationals.SINGLETON);
   protected static final PolynomialRing<Polynomial<Q>> RING_X = new PolynomialRing<>(RING_Y);

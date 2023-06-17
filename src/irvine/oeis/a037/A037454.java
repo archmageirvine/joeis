@@ -1,6 +1,7 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
@@ -9,7 +10,7 @@ import irvine.oeis.Sequence;
  * For example: decimal 30 = 1010 in base 3 (=<code>baseFrom</code>) -&gt; 1010 in base 6 (=<code>baseTo</code>) = 222 in decimal.
  * @author Georg Fischer
  */
-public class A037454 implements Sequence {
+public class A037454 extends AbstractSequence {
 
   private Z mN; // current index
   private final int mBaseFrom;
@@ -19,6 +20,7 @@ public class A037454 implements Sequence {
    * Empty constructor
    */
   public A037454() {
+    super(0);
     mN = Z.NEG_ONE; // offset 0
     mBaseFrom = 3;
     mBaseTo = 6;
@@ -31,6 +33,7 @@ public class A037454 implements Sequence {
    * @param baseTo convert to this base
    */
   public A037454(final int offset, final int baseFrom, final int baseTo) {
+    super(0);
     mN = Z.valueOf(offset).subtract(Z.ONE);
     mBaseFrom = baseFrom;
     mBaseTo = baseTo;

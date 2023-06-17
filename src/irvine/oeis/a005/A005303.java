@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005303 Representation degeneracies for Ramond strings.
  * @author Sean A. Irvine
  */
-public class A005303 implements Sequence {
+public class A005303 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005303() {
+    super(0);
+  }
 
   // I'm not sure that the continuation of this power function is correct.
 

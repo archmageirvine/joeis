@@ -1,13 +1,18 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002058 Number of internal triangles in all triangulations of an (n+1)-gon.
  * @author Sean A. Irvine
  */
-public class A002058 implements Sequence {
+public class A002058 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002058() {
+    super(5);
+  }
 
   private long mN = 4;
   private Z mA = Z.TWO;

@@ -7,13 +7,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A121357 Number of different, not necessarily connected, labeled trivalent diagrams of size n.
  * @author Sean A. Irvine
  */
-public class A121357 implements Sequence {
+public class A121357 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A121357() {
+    super(0);
+  }
 
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C2 = RING.create(Arrays.asList(Q.ZERO, Q.ONE, Q.HALF));

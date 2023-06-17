@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000487 Number of permutations of length n with exactly two valleys.
  * @author Sean A. Irvine
  */
-public class A000487 implements Sequence {
+public class A000487 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000487() {
+    super(5);
+  }
 
   private int mN = 4;
 

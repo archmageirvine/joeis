@@ -2,13 +2,18 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005464 Number of simplices in barycentric subdivision of n-simplex.
  * @author Sean A. Irvine
  */
-public class A005464 implements Sequence {
+public class A005464 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005464() {
+    super(5);
+  }
 
   private long mN = 6;
   private Z mF = Z.ONE;

@@ -2,13 +2,18 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000973 Fermat coefficients.
  * @author Sean A. Irvine
  */
-public class A000973 implements Sequence {
+public class A000973 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000973() {
+    super(8);
+  }
 
   private long mN = 14;
 

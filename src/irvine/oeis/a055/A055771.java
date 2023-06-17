@@ -2,13 +2,18 @@ package irvine.oeis.a055;
 
 import irvine.math.group.Monster;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A055771 Multiplicity of irreducible character IRR2 of Monster simple group in n-th head character.
  * @author Sean A. Irvine
  */
-public class A055771 implements Sequence {
+public class A055771 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A055771() {
+    super(-1);
+  }
 
   private int mN = 0;
 

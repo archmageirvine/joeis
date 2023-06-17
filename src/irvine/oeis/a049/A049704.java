@@ -4,13 +4,18 @@ import java.util.HashSet;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A049704 Array T read by antidiagonals; T(i,j)=number of nonnegative slopes of lines determined by two points in the triangular set {(x,y): 0&lt;=x&lt;=i, 0&lt;=y&lt;=j-j*x/i} of lattice points.
  * @author Sean A. Irvine
  */
-public class A049704 implements Sequence {
+public class A049704 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A049704() {
+    super(0);
+  }
 
   private long mN = -1;
   private long mM = 0;

@@ -7,13 +7,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A045906 Numbers of nonisomorphic systems of catafusenes (see Cyvin et al. (1994) for precise definition).
  * @author Sean A. Irvine
  */
-public class A045906 implements Sequence {
+public class A045906 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A045906() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C1 = RING.multiply(RING.create(Arrays.asList(Q.ONE, Q.ZERO, Q.ONE, new Q(-6), Q.NEG_ONE)), Q.EIGHT);

@@ -6,13 +6,18 @@ import java.util.LinkedList;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006339 Least hypotenuse of n distinct Pythagorean triangles.
  * @author Sean A. Irvine
  */
-public class A006339 implements Sequence {
+public class A006339 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006339() {
+    super(0);
+  }
 
   // After Albert H. Mao
 

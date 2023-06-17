@@ -6,6 +6,7 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008284;
 
@@ -13,7 +14,7 @@ import irvine.oeis.a008.A008284;
  * A038498 Matrix inverse of partition triangle A008284.
  * @author Sean A. Irvine
  */
-public class A038498 implements Sequence {
+public class A038498 extends AbstractSequence {
 
   private final DefaultMatrix<Q> mA = new DefaultMatrix<>(0, 0, Q.ZERO);
   private final Sequence mSeq;
@@ -22,6 +23,7 @@ public class A038498 implements Sequence {
   private int mM = 0;
 
   protected A038498(final Sequence triangle) {
+    super(1);
     mSeq = triangle;
   }
 

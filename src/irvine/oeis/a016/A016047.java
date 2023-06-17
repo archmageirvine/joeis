@@ -3,13 +3,18 @@ package irvine.oeis.a016;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A016047 Smallest prime factor of Mersenne numbers.
  * @author Sean A. Irvine
  */
-public class A016047 implements Sequence {
+public class A016047 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A016047() {
+    super(1);
+  }
 
   private final Fast mPrime = new Fast();
   protected long mP = 1;

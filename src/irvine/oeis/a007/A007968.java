@@ -3,13 +3,18 @@ package irvine.oeis.a007;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007968 Type of happy factorization of n.
  * @author Sean A. Irvine
  */
-public class A007968 implements Sequence {
+public class A007968 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007968() {
+    super(0);
+  }
 
   protected long mN = -1;
 

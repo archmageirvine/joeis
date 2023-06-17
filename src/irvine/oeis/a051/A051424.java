@@ -8,14 +8,19 @@ import java.util.stream.Collectors;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Pair;
 
 /**
  * A051424 Number of partitions of n into pairwise relatively prime parts.
  * @author Sean A. Irvine
  */
-public class A051424 implements Sequence {
+public class A051424 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A051424() {
+    super(0);
+  }
 
   private long mN = -1;
   private final HashMap<Pair<Pair<Long, Long>, Set<Long>>, Z> mCache = new HashMap<>();

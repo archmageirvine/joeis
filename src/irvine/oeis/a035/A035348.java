@@ -4,13 +4,18 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A035348 Triangle of a(n,k) = number of k-member minimal covers of an n-set (n &gt;= k &gt;= 1).
  * @author Sean A. Irvine
  */
-public class A035348 implements Sequence {
+public class A035348 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A035348() {
+    super(1);
+  }
 
   protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

@@ -5,13 +5,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A208508 Triangle of coefficients of polynomials u(n,x) jointly generated with A208509; see the Formula section.
  * @author Georg Fischer
  */
-public class A208508 implements Sequence {
+public class A208508 extends AbstractSequence {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   protected int mVariant; // 1 = normal, 2 = add mRow to mD
@@ -48,6 +48,7 @@ public class A208508 implements Sequence {
    * @param f constant of v(n)
    */
   public A208508(final int variant, final Polynomial<Z> a, final Polynomial<Z> b, final Polynomial<Z> c, final Polynomial<Z> d, final Polynomial<Z> e, final Polynomial<Z> f) {
+    super(1);
     mVariant = variant;
     mA = a;
     mB = b;

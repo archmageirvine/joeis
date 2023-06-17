@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicArray;
 import irvine.util.array.LongDynamicLongArray;
 
@@ -9,7 +9,12 @@ import irvine.util.array.LongDynamicLongArray;
  * A000119 Number of representations of n as a sum of distinct Fibonacci numbers.
  * @author Sean A. Irvine
  */
-public class A000119 implements Sequence {
+public class A000119 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000119() {
+    super(0);
+  }
 
   private long mN = -1;
   private final LongDynamicLongArray mA = new LongDynamicLongArray();

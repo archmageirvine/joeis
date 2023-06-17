@@ -1,14 +1,19 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.string.StringUtils;
 
 /**
  * A010785 Repdigit numbers, or numbers with repeated digits.
  * @author Sean A. Irvine
  */
-public class A010785 implements Sequence {
+public class A010785 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A010785() {
+    super(0);
+  }
 
   private char mN = '/';
   private int mLength = 1;

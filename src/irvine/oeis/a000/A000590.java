@@ -2,13 +2,18 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000590 a(n) = 13*binomial(2n,n-6)/(n+7).
  * @author Sean A. Irvine
  */
-public class A000590 implements Sequence {
+public class A000590 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000590() {
+    super(6);
+  }
 
   private long mN = 5;
 

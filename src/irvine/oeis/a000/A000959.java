@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
@@ -9,7 +9,12 @@ import irvine.util.array.LongDynamicLongArray;
  * @author David W. Wilson
  * @author Sean A. Irvine
  */
-public class A000959 implements Sequence {
+public class A000959 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000959() {
+    super(1);
+  }
 
   protected final LongDynamicLongArray mLucky = new LongDynamicLongArray();
   private long mN = -1;

@@ -9,20 +9,21 @@ import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Pair;
 
 /**
- * A053718 Number of n X n binary matrices of order dividing 4 (also number of solutions to X^4=I in GL(n,2)).
+ * A053718 Number of n X n binary matrices of order dividing 4 (also number of solutions to X^4=I in GL(n, 2)).
  * @author Sean A. Irvine
  */
-public class A053718 implements Sequence {
+public class A053718 extends AbstractSequence {
 
   private int mN;
   private final Ring<Z> mFld;
   private final Z mMaxOrder;
 
   protected A053718(final long maxOrder, final GaloisField field, final int start) {
+    super(1);
     mN = start - 1;
     mFld = field;
     mMaxOrder = Z.valueOf(maxOrder);

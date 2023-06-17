@@ -1,13 +1,18 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002658 a(0) = a(1) = 1; for n &gt; 0, a(n+1) = a(n)*(a(0) + ... + a(n-1)) + a(n)*(a(n) + 1)/2.
  * @author Sean A. Irvine
  */
-public class A002658 implements Sequence {
+public class A002658 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002658() {
+    super(0);
+  }
 
   private Z mSum = null;
   private Z mPrev = null;

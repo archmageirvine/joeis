@@ -1,14 +1,19 @@
 package irvine.oeis.a022;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A022300 The sequence a of 1's and 2's starting with (1,1,2,1) such that a(n) is the length of the (n+2)nd run of a.
+ * A022300 The sequence a of 1's and 2's starting with (1, 1, 2, 1) such that a(n) is the length of the (n+2)nd run of a.
  * @author Sean A. Irvine
  */
-public class A022300 implements Sequence {
+public class A022300 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A022300() {
+    super(1);
+  }
 
   private final LongDynamicBooleanArray mA = new LongDynamicBooleanArray();
   {

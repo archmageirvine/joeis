@@ -4,14 +4,19 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Pair;
 
 /**
  * A014486 List of totally balanced sequences of 2n binary digits written in base 10. Binary expansion of each term contains n 0's and n 1's and reading from left to right (the most significant to the least significant bit), the number of 0's never exceeds the number of 1's.
  * @author Sean A. Irvine
  */
-public class A014486 implements Sequence {
+public class A014486 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A014486() {
+    super(0);
+  }
 
   private final TreeMap<Z, Pair<Integer, Integer>> mState = new TreeMap<>();
 

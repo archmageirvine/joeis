@@ -2,13 +2,18 @@ package irvine.oeis.a230;
 
 import irvine.math.z.Z;
 import irvine.oeis.AlonsoSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A230627 Prime reached in A230626, or -1 if no prime is reached.
  * @author Sean A. Irvine
  */
-public class A230627 implements Sequence {
+public class A230627 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A230627() {
+    super(2);
+  }
 
   private long mN = 1;
 

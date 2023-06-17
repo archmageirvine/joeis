@@ -1,13 +1,18 @@
 package irvine.oeis.a013;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A013499 a(n) = 2*n^n, n &gt;= 2, otherwise a(n) = 1.
  * @author Sean A. Irvine
  */
-public class A013499 implements Sequence {
+public class A013499 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A013499() {
+    super(0);
+  }
 
   private int mN = -1;
 

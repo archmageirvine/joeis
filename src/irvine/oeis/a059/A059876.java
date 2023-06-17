@@ -2,13 +2,18 @@ package irvine.oeis.a059;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A059876 a(n) = bin_prime_sum(n).
  * @author Sean A. Irvine
  */
-public class A059876 implements Sequence {
+public class A059876 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A059876() {
+    super(1);
+  }
 
   private final Fast mPrime = new Fast();
   protected long mN = 0;

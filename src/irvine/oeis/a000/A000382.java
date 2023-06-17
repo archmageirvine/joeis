@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000382 Restricted permutations.
  * @author Sean A. Irvine
  */
-public class A000382 implements Sequence {
+public class A000382 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000382() {
+    super(4);
+  }
 
   private static final Z TF = Z.valueOf(35);
   private Z mA = Z.ONE;

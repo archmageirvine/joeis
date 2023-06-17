@@ -8,13 +8,18 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A058861 Number of 3-connected rooted cubic planar maps with n faces and girth at least 4.
  * @author Sean A. Irvine
  */
-public class A058861 implements Sequence {
+public class A058861 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A058861() {
+    super(4);
+  }
 
   private static final PolynomialRingField<Z> INNER = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final PolynomialRingField<Polynomial<Z>> RING = new PolynomialRingField<>("z", INNER);

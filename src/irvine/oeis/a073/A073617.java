@@ -3,13 +3,18 @@ package irvine.oeis.a073;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A073617 Consider Pascal's triangle A007318; a(n) = product of terms at +45 degrees slope with the horizontal.
  * @author Georg Fischer
  */
-public class A073617 implements Sequence {
+public class A073617 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A073617() {
+    super(0);
+  }
 
   private int mN = -2;
 

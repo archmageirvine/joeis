@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A054690 n consecutive primes differ by 4 or more starting at a(n), or n consecutive primes with no twin primes.
  * @author Sean A. Irvine
  */
-public class A054690 implements Sequence {
+public class A054690 extends AbstractSequence {
 
   protected final Fast mPrime = new Fast();
   private long mP = 2;
@@ -16,6 +16,7 @@ public class A054690 implements Sequence {
   private final long mGap;
 
   protected A054690(final long gap) {
+    super(2);
     mGap = gap;
   }
 
@@ -38,7 +39,6 @@ public class A054690 implements Sequence {
       ++cnt;
     }
   }
-
 
   @Override
   public Z next() {

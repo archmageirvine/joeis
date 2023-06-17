@@ -1,13 +1,18 @@
 package irvine.oeis.a016;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A016057 Pseudo-powers to base 3: numbers k that are not powers of 3 such that k divides 2^k + 1.
  * @author Sean A. Irvine
  */
-public class A016057 implements Sequence {
+public class A016057 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A016057() {
+    super(1);
+  }
 
   private Z mN = Z.valueOf(170);
 

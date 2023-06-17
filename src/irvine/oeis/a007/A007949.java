@@ -1,13 +1,18 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007949 Greatest k such that 3^k divides n. Or, 3-adic valuation of n.
  * @author Sean A. Irvine
  */
-public class A007949 implements Sequence {
+public class A007949 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007949() {
+    super(1);
+  }
 
   private long mN = 0;
 

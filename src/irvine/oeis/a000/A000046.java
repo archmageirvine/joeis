@@ -5,6 +5,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
 
@@ -12,7 +13,12 @@ import irvine.util.array.LongDynamicArray;
  * A000046 Number of primitive n-bead necklaces (turning over is allowed) where complements are equivalent.
  * @author Sean A. Irvine
  */
-public class A000046 implements Sequence {
+public class A000046 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000046() {
+    super(0);
+  }
 
   private long mN = -1;
   private final LongDynamicArray<Z> mA11Cache = new LongDynamicArray<>();
@@ -24,7 +30,6 @@ public class A000046 implements Sequence {
     }
     return mA11Cache.get(v);
   }
-
 
   @Override
   public Z next() {

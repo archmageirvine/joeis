@@ -6,13 +6,18 @@ import java.util.List;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A003032 Smallest integer m such that the product of every 3 consecutive integers &gt; m has a prime factor &gt; prime(n).
  * @author Sean A. Irvine
  */
-public class A003032 implements Sequence {
+public class A003032 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003032() {
+    super(2);
+  }
 
   private final Fast mPrime = new Fast();
   private Z mP = firstPrime();

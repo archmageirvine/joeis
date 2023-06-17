@@ -1,13 +1,18 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A056525 Palindromes with odd number of digits.
  * @author Sean A. Irvine
  */
-public class A056525 implements Sequence {
+public class A056525 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A056525() {
+    super(1);
+  }
 
   private String mForward = "";
   private StringBuilder mReverse = new StringBuilder();

@@ -2,13 +2,18 @@ package irvine.oeis.a010;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A010971 a(n) = binomial(n,18).
+ * A010971 a(n) = binomial(n, 18).
  * @author Sean A. Irvine
  */
-public class A010971 implements Sequence {
+public class A010971 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A010971() {
+    super(18);
+  }
 
   private long mN = 17;
 

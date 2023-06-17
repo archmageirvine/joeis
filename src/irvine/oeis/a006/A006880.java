@@ -2,13 +2,18 @@ package irvine.oeis.a006;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006880 Number of primes &lt; 10^n.
  * @author Sean A. Irvine
  */
-public class A006880 implements Sequence {
+public class A006880 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006880() {
+    super(0);
+  }
 
   private final Fast mPrime = new Fast();
   private long mLimit = 1;

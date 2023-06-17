@@ -2,13 +2,18 @@ package irvine.oeis.a036;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A036917 a(n) = (16*(n-1/2)*(2*n^2-2*n+1)*a(n-1)-256*(n-1)^3*a(n-2))/n^3.
  * @author Sean A. Irvine
  */
-public class A036917 implements Sequence {
+public class A036917 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A036917() {
+    super(0);
+  }
 
   private long mN = -1;
 

@@ -4,13 +4,18 @@ import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A052107 Number of self-complementary 3-multigraphs on n nodes.
  * @author Sean A. Irvine
  */
-public class A052107 implements Sequence {
+public class A052107 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A052107() {
+    super(1);
+  }
 
   // After Andrew Howroyd
 

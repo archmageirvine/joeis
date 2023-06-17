@@ -1,13 +1,18 @@
 package irvine.oeis.a022;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A022821 [ (n+1)/(n-1) ] + [ (n+2)/(n-2) ] + ... + [ (2n-1)/1 ].
  * @author Sean A. Irvine
  */
-public class A022821 implements Sequence {
+public class A022821 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A022821() {
+    super(2);
+  }
 
   protected long mN = 1;
 

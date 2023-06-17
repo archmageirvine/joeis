@@ -2,13 +2,18 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005562 Number of walks on square lattice.
  * @author Sean A. Irvine
  */
-public class A005562 implements Sequence {
+public class A005562 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005562() {
+    super(4);
+  }
 
   private long mN = -1;
 

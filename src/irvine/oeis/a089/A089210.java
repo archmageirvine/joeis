@@ -1,13 +1,18 @@
 package irvine.oeis.a089;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A089210 a(n) = n^(n^(n-1)).
  * @author Georg Fischer
  */
-public class A089210 implements Sequence {
+public class A089210 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A089210() {
+    super(1);
+  }
 
   private int mN = 0;
 

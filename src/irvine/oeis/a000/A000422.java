@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000422 Concatenation of numbers from n down to 1.
  * @author Sean A. Irvine
  */
-public class A000422 implements Sequence {
+public class A000422 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000422() {
+    super(1);
+  }
 
   protected long mN = 0;
   private long mMult = 10;

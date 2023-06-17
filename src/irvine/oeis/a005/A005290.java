@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005290 Representation degeneracies for boson strings.
  * @author Sean A. Irvine
  */
-public class A005290 implements Sequence {
+public class A005290 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005290() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 

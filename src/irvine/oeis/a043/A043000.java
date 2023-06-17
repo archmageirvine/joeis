@@ -1,13 +1,18 @@
 package irvine.oeis.a043;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A043000 Number of digits in all base-b representations of n, for 2 &lt;= b &lt;= n.
  * @author Sean A. Irvine
  */
-public class A043000 implements Sequence {
+public class A043000 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A043000() {
+    super(2);
+  }
 
   private long mN = 1;
 

@@ -4,13 +4,18 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000048 Number of n-bead necklaces with beads of 2 colors and primitive period n, when turning over is not allowed but the two colors can be interchanged.
  * @author Sean A. Irvine
  */
-public class A000048 implements Sequence {
+public class A000048 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000048() {
+    super(0);
+  }
 
   protected int mN = -1;
 

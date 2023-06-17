@@ -2,13 +2,18 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002771 Number of terms in a skew determinant: a(n) = (A000085(n) + A081919(n))/2.
  * @author Sean A. Irvine
  */
-public class A002771 implements Sequence {
+public class A002771 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002771() {
+    super(1);
+  }
 
   private long mN = 0;
 

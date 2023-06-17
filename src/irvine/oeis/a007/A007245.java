@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007245 McKay-Thompson series of class 3C for the Monster group.
  * @author Sean A. Irvine
  */
-public class A007245 implements Sequence {
+public class A007245 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007245() {
+    super(0);
+  }
 
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> X2 = Polynomial.create(0, 0, 1);

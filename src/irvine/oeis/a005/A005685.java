@@ -2,13 +2,18 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005685 Number of Twopins positions.
  * @author Sean A. Irvine
  */
-public class A005685 implements Sequence {
+public class A005685 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005685() {
+    super(4);
+  }
 
   private static final long[] C = {0, 1, 1, 0, -1, -1};
   private int mN = 3;

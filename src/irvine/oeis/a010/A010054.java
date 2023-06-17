@@ -1,13 +1,18 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A010054 a(n) = 1 if n is a triangular number, otherwise 0.
  * @author Sean A. Irvine
  */
-public class A010054 implements Sequence {
+public class A010054 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A010054() {
+    super(0);
+  }
 
   private long mNext = 0;
   private long mM = 0;

@@ -2,13 +2,18 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002126 Number of solutions to n=p+q where p and q are primes or zero.
  * @author Sean A. Irvine
  */
-public class A002126 implements Sequence {
+public class A002126 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002126() {
+    super(0);
+  }
 
   private long mN = -1;
   private final Fast mPrime = new Fast();

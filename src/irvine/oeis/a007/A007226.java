@@ -2,13 +2,18 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007226 a(n) = 2*det(M(n; -1))/det(M(n; 0)), where M(n; m) is the n X n matrix with (i,j)-th element equal to 1/binomial(n + i + j + m, n).
  * @author Sean A. Irvine
  */
-public class A007226 implements Sequence {
+public class A007226 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007226() {
+    super(0);
+  }
 
   private long mN = -1;
 

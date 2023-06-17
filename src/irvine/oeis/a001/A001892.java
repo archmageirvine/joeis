@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001892 Number of permutations of (1,...,n) having n-2 inversions (n&gt;=2).
  * @author Sean A. Irvine
  */
-public class A001892 implements Sequence {
+public class A001892 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001892() {
+    super(2);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> POLY = Polynomial.create(1, -1);

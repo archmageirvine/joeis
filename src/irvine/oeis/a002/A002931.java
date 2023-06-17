@@ -6,20 +6,25 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Point;
 
 /**
  * A002931 Number of self-avoiding polygons of length 2n on square lattice (not allowing rotations).
  * @author Sean A. Irvine
  */
-public class A002931 implements Sequence {
+public class A002931 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002931() {
+    super(1);
+  }
 
   // Backtracking search -- only good for a few terms of this sequence!
 
   // Polygons unique up to translation.  Handled by a canonicalization method:
   // (a) translated polygon so that all points are non-negative
-  // (b) select "start point" to be a point (min{x},0)
+  // (b) select "start point" to be a point (min{x}, 0)
   // (c) select winding direction to that the first step from the "start point" increases x
 
   /**
@@ -167,10 +172,10 @@ public class A002931 implements Sequence {
   public Z next() {
     mN += 2;
     if (mN == 2) {
-      return Z.ZERO; // Otherwise the search will find (0,0)->(1,0)->(0,0)
+      return Z.ZERO; // Otherwise the search will find (0, 0)->(1, 0)->(0, 0)
     }
     mPolygons.clear();
-    // Start with the edge (0,0) -> (1,0)
+    // Start with the edge (0, 0) -> (1, 0)
     search(mN - 1, FIRST_EDGE);
     return postFilter();
   }

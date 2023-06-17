@@ -5,24 +5,26 @@ package irvine.oeis.a035;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A035143 Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -47.
  * @author Georg Fischer
  */
-public class A035143 implements Sequence {
+public class A035143 extends AbstractSequence {
 
   protected final int mM;
   protected int mN = 0;
 
   /** Construct the sequence. */
   public A035143() {
+    super(1);
     mM = -47;
   }
 
   /** Constructor with m */
   public A035143(final int m) {
+    super(1);
     mM = m;
   }
 

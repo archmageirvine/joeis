@@ -3,13 +3,18 @@ package irvine.oeis.a037;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A037276 Start with 1; for n&gt;1, replace n with the concatenation of its prime factors in increasing order.
  * @author Sean A. Irvine
  */
-public class A037276 implements Sequence {
+public class A037276 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A037276() {
+    super(1);
+  }
 
   private long mN = 0;
 

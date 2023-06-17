@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000079 Powers of 2: a(n) = 2^n.
  * @author Sean A. Irvine
  */
-public class A000079 implements Sequence {
+public class A000079 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000079() {
+    super(0);
+  }
 
   private Z mN = null;
 

@@ -4,13 +4,18 @@ import java.util.HashMap;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A211318 Triangle read by rows: number of permutations of 1..n by length l of longest run (n &gt;= 1, 1 &lt;= l &lt;= n).
  * @author Sean A. Irvine
  */
-public class A211318 implements Sequence {
+public class A211318 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A211318() {
+    super(1);
+  }
 
   private static final HashMap<String, Z> CACHE = new HashMap<>();
 
@@ -62,5 +67,4 @@ public class A211318 implements Sequence {
   }
 
 }
-
 

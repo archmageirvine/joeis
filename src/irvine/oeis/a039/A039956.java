@@ -2,13 +2,18 @@ package irvine.oeis.a039;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A039956 Even squarefree numbers.
  * @author Sean A. Irvine
  */
-public class A039956 implements Sequence {
+public class A039956 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A039956() {
+    super(1);
+  }
 
   private long mN = 0;
 

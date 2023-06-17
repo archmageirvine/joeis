@@ -1,13 +1,18 @@
 package irvine.oeis.a031;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A031200 Periods of sum of 7th powers of digits iterated until the sequence becomes periodic.
  * @author Sean A. Irvine
  */
-public class A031200 implements Sequence {
+public class A031200 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A031200() {
+    super(0);
+  }
 
   protected long mN = -1;
 

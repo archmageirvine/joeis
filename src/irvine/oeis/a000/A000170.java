@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000170 Number of ways of placing n nonattacking queens on an n X n board.
  * @author Sean A. Irvine
  */
-public class A000170 implements Sequence {
+public class A000170 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000170() {
+    super(0);
+  }
 
   // A simple backtracking implementation.
   // Don't expect to break any records using this :-)

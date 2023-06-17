@@ -6,13 +6,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A081054 Crossing matchings: linear chord diagrams with 2n nodes and n arcs in which each arc crosses another arc.
  * @author Sean A. Irvine
  */
-public class A081054 implements Sequence {
+public class A081054 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A081054() {
+    super(0);
+  }
 
   protected static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final PolynomialRing<Polynomial<Z>> RING2 = new PolynomialRing<>(RING);

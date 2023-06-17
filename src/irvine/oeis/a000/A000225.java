@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000225 a(n) = 2^n - 1. (Sometimes called Mersenne numbers, although that name is usually reserved for A001348.).
  * @author Sean A. Irvine
  */
-public class A000225 implements Sequence {
+public class A000225 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000225() {
+    super(0);
+  }
 
   private int mN = -1;
 

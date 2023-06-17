@@ -4,13 +4,18 @@ package irvine.oeis.a056;
 import irvine.math.Mobius;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A056476 Number of primitive (aperiodic) palindromic structures of length n using a maximum of two different symbols.
  * @author Georg Fischer
  */
-public class A056476 implements Sequence {
+public class A056476 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A056476() {
+    super(0);
+  }
 
   private int mN = -1;
 

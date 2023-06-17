@@ -5,13 +5,18 @@ import java.util.HashSet;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002858 Ulam numbers: a(1) = 1; a(2) = 2; for n&gt;2, a(n) = least number &gt; a(n-1) which is a unique sum of two distinct earlier terms.
  * @author Sean A. Irvine
  */
-public class A002858 implements Sequence {
+public class A002858 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002858() {
+    super(1);
+  }
 
   // Ulam numbers
   protected final ArrayList<Z> mSeq = new ArrayList<>();

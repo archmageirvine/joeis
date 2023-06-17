@@ -1,13 +1,18 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006609 Number of cyclic neofields of order n.
  * @author Sean A. Irvine
  */
-public class A006609 implements Sequence {
+public class A006609 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006609() {
+    super(4);
+  }
 
   private int mN = 2;
   private long mCount = 0;

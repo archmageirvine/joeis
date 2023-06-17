@@ -3,13 +3,18 @@ package irvine.oeis.a035;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A035342 The convolution matrix of the double factorial of odd numbers (A001147).
  * @author Sean A. Irvine
  */
-public class A035342 implements Sequence {
+public class A035342 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A035342() {
+    super(1);
+  }
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

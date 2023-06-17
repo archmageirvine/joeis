@@ -2,13 +2,13 @@ package irvine.oeis.a067;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A067499 Powers of 2 with digit sum also a power of 2.
  * @author Georg Fischer
  */
-public class A067499 implements Sequence {
+public class A067499 extends AbstractSequence {
 
   private int mBase;
   private Z mPow;
@@ -23,6 +23,7 @@ public class A067499 implements Sequence {
    * @param base base and divisor
    */
   public A067499(final int base) {
+    super(1);
     mPow = Z.ONE;
     mBase = base;
   }

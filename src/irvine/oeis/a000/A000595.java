@@ -5,13 +5,18 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000595 Number of binary relations on n unlabeled points.
  * @author Sean A. Irvine
  */
-public class A000595 implements Sequence {
+public class A000595 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000595() {
+    super(0);
+  }
 
   protected int mN = -1;
 

@@ -11,14 +11,19 @@ import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Pair;
 
 /**
  * A000721 Number of balanced Boolean functions of n variables.
  * @author Sean A. Irvine
  */
-public class A000721 implements Sequence {
+public class A000721 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000721() {
+    super(1);
+  }
 
   /*
     Computation follows the method described in "Enumerating Types of

@@ -4,13 +4,18 @@ import irvine.math.LongUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002729 Number of equivalence classes of binary sequences of period n.
  * @author Sean A. Irvine
  */
-public class A002729 implements Sequence {
+public class A002729 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002729() {
+    super(0);
+  }
 
   // After maple program by Pab Ter
 

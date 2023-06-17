@@ -5,6 +5,7 @@ import java.util.TreeMap;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000290;
 
@@ -13,7 +14,7 @@ import irvine.oeis.a000.A000290;
  * Copied from A036507.
  * @author Georg Fischer
  */
-public class A048345 implements Sequence {
+public class A048345 extends AbstractSequence {
 
   protected Sequence mSeq; // underlying sequence
   protected int mDigit; // the specific digit to be counted
@@ -33,6 +34,7 @@ public class A048345 implements Sequence {
    * @param digit the specific digit to be counted
    */
   protected A048345(final int offset, final Sequence seq, final int digit) {
+    super(1);
     mSeq = seq;
     mDigit = digit;
     mN = offset - 1;

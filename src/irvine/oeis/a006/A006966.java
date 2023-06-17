@@ -12,7 +12,7 @@ import gebhardt.Globals;
 import gebhardt.LattEnum;
 import gebhardt.Lattice;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a055.A055512;
 import irvine.util.CliFlags;
 
@@ -21,7 +21,12 @@ import irvine.util.CliFlags;
  * @author Volker Gebhardt
  * @author Sean A. Irvine (Java port)
  */
-public class A006966 implements Sequence {
+public class A006966 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006966() {
+    super(0);
+  }
 
   // This sequence is based on a C implementation by Volker Gebhardt.
   // If you are serious about calculating new terms for this sequence, then please
@@ -141,7 +146,7 @@ public class A006966 implements Sequence {
     flags.setDescription("Counting labelled and unlabelled lattices");
     flags.registerRequired(Integer.class, "n", "number of points in the lattice");
     flags.registerOptional('l', "labelled", "count labelled lattices");
-    flags.registerOptional('i', "index", Integer.class, "l", "lattice index number to generate from [0,76]");
+    flags.registerOptional('i', "index", Integer.class, "l", "lattice index number to generate from [0, 76]");
     flags.setFlags(args);
     final int n = (Integer) flags.getAnonymousValue(0);
     final A006966 seq = flags.isSet("labelled") ? new A055512() : new A006966();

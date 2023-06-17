@@ -1,13 +1,18 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A010052 Characteristic function of squares: a(n) = 1 if n is a square, otherwise 0.
  * @author Sean A. Irvine
  */
-public class A010052 implements Sequence {
+public class A010052 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A010052() {
+    super(0);
+  }
 
   private long mNext = 0;
   private long mM = 0;

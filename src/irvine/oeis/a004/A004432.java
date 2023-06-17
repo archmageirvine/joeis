@@ -2,13 +2,18 @@ package irvine.oeis.a004;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A004432 Numbers that are the sum of 3 distinct nonzero squares.
  * @author Sean A. Irvine
  */
-public class A004432 implements Sequence {
+public class A004432 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A004432() {
+    super(1);
+  }
 
   // After M. F. Hasler
 

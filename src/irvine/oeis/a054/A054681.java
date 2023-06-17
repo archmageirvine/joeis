@@ -2,13 +2,13 @@ package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A054681 Start of a run of consecutive primes of length n each ending with the same digit.
  * @author Sean A. Irvine
  */
-public class A054681 implements Sequence {
+public class A054681 extends AbstractSequence {
 
   private final Fast mPrime = new Fast();
   private long mP = 2;
@@ -16,6 +16,7 @@ public class A054681 implements Sequence {
   private final long mGap;
 
   protected A054681(final int gap) {
+    super(1);
     mGap = gap;
   }
 

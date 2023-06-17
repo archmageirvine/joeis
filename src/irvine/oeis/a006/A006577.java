@@ -1,13 +1,18 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006577 Number of halving and tripling steps to reach 1 in '3x+1' problem, or -1 if 1 is never reached.
  * @author Sean A. Irvine
  */
-public class A006577 implements Sequence {
+public class A006577 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006577() {
+    super(1);
+  }
 
   protected Z mN = Z.ZERO;
 

@@ -8,13 +8,18 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A058057 Triangle giving coefficients of m\u00e9nage hit polynomials.
  * @author Sean A. Irvine
  */
-public class A058057 implements Sequence {
+public class A058057 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A058057() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;

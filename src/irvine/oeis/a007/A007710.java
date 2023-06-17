@@ -3,14 +3,19 @@ package irvine.oeis.a007;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Permutation;
 
 /**
  * A007710 From the game of Mousetrap.
  * @author Sean A. Irvine
  */
-public class A007710 implements Sequence {
+public class A007710 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007710() {
+    super(1);
+  }
 
   // Brute force Mousetrap
 

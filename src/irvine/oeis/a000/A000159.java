@@ -6,13 +6,18 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000159 Coefficients of m\u00e9nage hit polynomials.
  * @author Sean A. Irvine
  */
-public class A000159 implements Sequence {
+public class A000159 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000159() {
+    super(3);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> BASE = Polynomial.create(-1, 1);

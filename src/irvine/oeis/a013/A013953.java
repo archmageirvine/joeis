@@ -9,14 +9,19 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a054.A054891;
 
 /**
  * A013953 Expansion of the modular form of level 4 and weight 1/2.
  * @author Sean A. Irvine
  */
-public class A013953 implements Sequence {
+public class A013953 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A013953() {
+    super(-3);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> X4 = RING.monomial(Z.ONE, 4);

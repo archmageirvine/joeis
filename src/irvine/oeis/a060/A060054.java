@@ -3,13 +3,18 @@ package irvine.oeis.a060;
 import irvine.math.q.Q;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A060054 Numerators of numbers appearing in the Euler-Maclaurin summation formula.
  * @author Sean A. Irvine
  */
-public class A060054 implements Sequence {
+public class A060054 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A060054() {
+    super(1);
+  }
 
   protected int mN = -1;
 

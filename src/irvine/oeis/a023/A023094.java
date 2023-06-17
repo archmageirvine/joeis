@@ -4,13 +4,18 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A023094 a(n) is least k such that k and 2k are anagrams in base n (written in base 10).
  * @author Sean A. Irvine
  */
-public class A023094 implements Sequence {
+public class A023094 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A023094() {
+    super(3);
+  }
 
   private int mBase = multiple();
 

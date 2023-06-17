@@ -8,13 +8,18 @@ import irvine.math.q.Rationals;
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A027495 Square of lower triangular normalized 2nd kind Stirling matrix.
  * @author Sean A. Irvine
  */
-public class A027495 implements Sequence {
+public class A027495 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A027495() {
+    super(1);
+  }
 
   private int mN = 0;
   private int mM = 0;

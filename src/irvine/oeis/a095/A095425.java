@@ -2,13 +2,14 @@ package irvine.oeis.a095;
 // manually 2021-05-14
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
  * A095425 a(n) = 10 written in base n.
  * @author Georg Fischer
  */
-public class A095425 implements Sequence {
+public class A095425 extends AbstractSequence {
 
   protected int mParm;
   protected int mN;
@@ -23,6 +24,7 @@ public class A095425 implements Sequence {
    * @param parm number to be written in base n
    */
   public A095425(final int parm) {
+    super(1);
     mParm = parm;
     mN = 0;
   }

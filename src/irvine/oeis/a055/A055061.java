@@ -10,13 +10,18 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.IrreduciblePolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A055061 LCM of (2^d - 1) where d runs over the degrees of irreducible factors of x^n + x + 1 over GF(2), divided by A046932(n).
  * @author Sean A. Irvine
  */
-public class A055061 implements Sequence {
+public class A055061 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A055061() {
+    super(2);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(new GaloisField(2));
   private static final Polynomial<Z> X1 = RING.onePlusXToTheN(1);

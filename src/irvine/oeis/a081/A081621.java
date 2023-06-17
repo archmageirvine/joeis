@@ -2,13 +2,18 @@ package irvine.oeis.a081;
 
 import irvine.math.plantri.Plantri;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A081621 Number of n-node triangulations of the sphere with minimal degree 5.
  * @author Sean A. Irvine
  */
-public class A081621 implements Sequence {
+public class A081621 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A081621() {
+    super(4);
+  }
 
   private int mN = 3;
 

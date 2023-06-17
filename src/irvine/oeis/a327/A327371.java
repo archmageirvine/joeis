@@ -8,13 +8,18 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A327371 Triangle read by rows where T(n,k) is the number of unlabeled simple graphs with n vertices and exactly k endpoints (vertices of degree 1).
  * @author Sean A. Irvine
  */
-public class A327371 implements Sequence {
+public class A327371 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A327371() {
+    super(0);
+  }
 
   private static final Polynomial<Z> C1 = Polynomial.create(0, 0, 1);
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

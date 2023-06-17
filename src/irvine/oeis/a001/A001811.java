@@ -1,13 +1,18 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001811 Coefficients of Laguerre polynomials.
  * @author Sean A. Irvine
  */
-public class A001811 implements Sequence {
+public class A001811 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001811() {
+    super(4);
+  }
 
   private long mN = 3;
   private Z mA = Z.ONE;

@@ -9,13 +9,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A318951 Array read by rows: T(n,k) is the number of nonisomorphic n X n matrices with nonnegative integer entries and row sums k under row and column permutations, (n &gt;= 1, k &gt;= 0).
  * @author Sean A. Irvine
  */
-public class A318951 implements Sequence {
+public class A318951 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A318951() {
+    super(1);
+  }
 
   // After Andrew Howroyd
 

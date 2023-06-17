@@ -1,13 +1,18 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A050724 Numbers k such that the decimal expansion of 3^k contains no pair of consecutive equal digits (probably finite).
  * @author Sean A. Irvine
  */
-public class A050724 implements Sequence {
+public class A050724 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A050724() {
+    super(1);
+  }
 
   private long mN = -1;
   private Z mT = Z.ONE;

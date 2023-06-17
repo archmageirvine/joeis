@@ -2,13 +2,18 @@ package irvine.oeis.a004;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A004035 The coding-theoretic function A(n,4,5).
+ * A004035 The coding-theoretic function A(n, 4, 5).
  * @author Sean A. Irvine
  */
-public class A004035 implements Sequence {
+public class A004035 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A004035() {
+    super(4);
+  }
 
   private static final int MAX = 1000000;
   private int mN = 3;

@@ -1,13 +1,18 @@
 package irvine.oeis.a343;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A343083 a(n) is the smallest number that is the sum of n positive 5th powers in three ways.
  * @author Sean A. Irvine
  */
-public class A343083 implements Sequence {
+public class A343083 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A343083() {
+    super(5);
+  }
 
   private long mN = 4;
 

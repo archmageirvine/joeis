@@ -1,13 +1,18 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007180 Expansion of critical exponent for walks on tetrahedral lattice.
  * @author Sean A. Irvine
  */
-public class A007180 implements Sequence {
+public class A007180 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007180() {
+    super(1);
+  }
 
   // Diamond or tetrahedral lattice
   // Using a four-dimensional coordinate system.

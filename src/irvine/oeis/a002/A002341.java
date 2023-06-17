@@ -2,13 +2,18 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002341 Numbers y such that p = x^2 - 5y^2, where p = 0, 1, or 4 (mod 5).
  * @author Sean A. Irvine
  */
-public class A002341 implements Sequence {
+public class A002341 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002341() {
+    super(5);
+  }
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.THREE;

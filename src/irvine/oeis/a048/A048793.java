@@ -3,13 +3,18 @@ package irvine.oeis.a048;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A048793 List giving all subsets of natural numbers arranged in standard statistical (or Yates) order.
  * @author Sean A. Irvine
  */
-public class A048793 implements Sequence {
+public class A048793 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A048793() {
+    super(0);
+  }
 
   // After Alois P. Heinz
 

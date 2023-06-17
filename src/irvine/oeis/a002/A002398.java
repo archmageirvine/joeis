@@ -6,13 +6,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002398 Coefficients for step-by-step integration.
  * @author Sean A. Irvine
  */
-public class A002398 implements Sequence {
+public class A002398 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002398() {
+    super(0);
+  }
 
   // After Jack Grahl
 

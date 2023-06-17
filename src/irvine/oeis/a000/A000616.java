@@ -4,13 +4,18 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.WreathExponentiation;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000616 a(-1)=1 by convention; for n &gt;= 0, a(n) = number of irreducible Boolean functions of n variables.
  * @author Sean A. Irvine
  */
-public class A000616 implements Sequence {
+public class A000616 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000616() {
+    super(-1);
+  }
 
   private static final CycleIndex Z2 = SymmetricGroup.create(2).cycleIndex();
   private int mN = -2;

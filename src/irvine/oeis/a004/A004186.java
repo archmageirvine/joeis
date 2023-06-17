@@ -3,13 +3,18 @@ package irvine.oeis.a004;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A004186 Arrange digits of n in decreasing order.
  * @author Sean A. Irvine
  */
-public class A004186 implements Sequence {
+public class A004186 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A004186() {
+    super(0);
+  }
 
   private long mN = -1;
 

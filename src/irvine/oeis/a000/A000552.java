@@ -4,13 +4,18 @@ import java.util.HashMap;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000552 Number of labeled rooted trees of height 3 with n nodes.
  * @author Sean A. Irvine
  */
-public class A000552 implements Sequence {
+public class A000552 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000552() {
+    super(4);
+  }
 
   private static Z ss(final int p, final int h) {
     Z s = Z.ZERO;

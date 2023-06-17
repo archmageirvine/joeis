@@ -1,13 +1,18 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002538 Second-order Eulerian numbers &lt;&lt;n+1,n-1&gt;&gt;.
  * @author Sean A. Irvine
  */
-public class A002538 implements Sequence {
+public class A002538 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002538() {
+    super(1);
+  }
 
   private Z mA = Z.ZERO;
   private Z mF = Z.ONE;

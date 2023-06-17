@@ -1,13 +1,18 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A034863 a(n) = n!*(4*n^3 - 30*n^2 + 40*n + 3)/24.
  * @author Sean A. Irvine
  */
-public class A034863 implements Sequence {
+public class A034863 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A034863() {
+    super(4);
+  }
 
   private Z mF = Z.ONE;
   private long mN = 3;

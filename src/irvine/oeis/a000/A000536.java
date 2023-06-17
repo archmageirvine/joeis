@@ -1,14 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000536 Number of 3-line Latin rectangles.
  * @author Sean A. Irvine
  */
-public class A000536 implements Sequence {
+public class A000536 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000536() {
+    super(4);
+  }
 
   static Z k(final int n, final int j) {
     if (n < 0 || j < 0) {

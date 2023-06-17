@@ -1,14 +1,19 @@
 package irvine.oeis.a042;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
  * A042942 From substitutional generation of Kolakoski sequence (A000002).
  * @author Sean A. Irvine
  */
-public class A042942 implements Sequence {
+public class A042942 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A042942() {
+    super(1);
+  }
 
   protected long mN = -1;
   protected LongDynamicIntArray mSeq = new LongDynamicIntArray();

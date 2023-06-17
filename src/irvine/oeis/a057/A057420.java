@@ -5,13 +5,18 @@ import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A057420 Axially symmetric n-celled polyominoes with 1 hole.
  * @author Sean A. Irvine
  */
-public class A057420 implements Sequence {
+public class A057420 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A057420() {
+    super(9);
+  }
 
   private final ParallelHunter mHunter = new ParallelHunter(6,
     () -> new Hunter(Lattices.Z2, true),

@@ -4,13 +4,18 @@ import java.util.Comparator;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A039987 k th digit of a(n) = number of different digits within 2 places of k (not including k).
  * @author Sean A. Irvine
  */
-public class A039987 implements Sequence {
+public class A039987 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A039987() {
+    super(0);
+  }
 
   private final TreeSet<String> mA = new TreeSet<>(Comparator.comparingInt(String::length).thenComparing(o -> o));
   {

@@ -2,15 +2,15 @@ package irvine.oeis.a047;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A047161 Number of nonempty subsets of {1,2,...,n} in which exactly 1/3 of the elements are &lt;= n/2.
+ * A047161 Number of nonempty subsets of {1, 2,...,n} in which exactly 1/3 of the elements are &lt;= n/2.
  * Offset 1;
  * DATA 0, 0, 1, 2, 6, 9, 21, 30, 70, 100, 235, 335, 791, 1127, 2681, 3822, 9150, 13050, 31401, 44802 ...
  * @author Georg Fischer
  */
-public class A047161 implements Sequence {
+public class A047161 extends AbstractSequence {
     
   protected int mN; // current index
   protected int mNum; // numerator
@@ -32,6 +32,7 @@ public class A047161 implements Sequence {
    * @param div divisor of (n+a)
    */
   public A047161(final int offset, final int num, final int den, final int add, final int div) {
+    super(1);
     mN = offset - 1;
     mNum = num;
     mDen = den;

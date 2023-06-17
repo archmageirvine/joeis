@@ -1,13 +1,18 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A036831 Schoenheim bound L_1(n,4,3).
+ * A036831 Schoenheim bound L_1(n, 4, 3).
  * @author Sean A. Irvine
  */
-public class A036831 implements Sequence {
+public class A036831 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A036831() {
+    super(4);
+  }
 
   private long mN = 3;
 

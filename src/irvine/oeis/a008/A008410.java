@@ -2,13 +2,18 @@ package irvine.oeis.a008;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A008410 a(0) = 1, a(n) = 480*sigma_7(n).
  * @author Sean A. Irvine
  */
-public class A008410 implements Sequence {
+public class A008410 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A008410() {
+    super(0);
+  }
 
   private int mN = -1;
 

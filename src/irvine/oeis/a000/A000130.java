@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000130 One-half the number of permutations of length n with exactly 1 rising or falling successions.
  * @author Sean A. Irvine
  */
-public class A000130 implements Sequence {
+public class A000130 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000130() {
+    super(0);
+  }
 
   private Z mAa = Z.ONE;
   private Z mAb = Z.ZERO;

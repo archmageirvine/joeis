@@ -1,6 +1,7 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
 
@@ -8,7 +9,7 @@ import irvine.util.array.LongDynamicIntArray;
  * A030378 Least k such that base 4 representation of n begins at s(k), where s=A030373.
  * @author Sean A. Irvine
  */
-public class A030378 implements Sequence {
+public class A030378 extends AbstractSequence {
 
   private final LongDynamicIntArray mA = new LongDynamicIntArray();
   private long mM;
@@ -18,6 +19,7 @@ public class A030378 implements Sequence {
   private final Sequence mUnder;
 
   protected A030378(final Sequence under, final long start) {
+    super(1);
     mUnder = under;
     mM = start;
   }

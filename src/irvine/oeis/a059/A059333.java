@@ -2,13 +2,18 @@ package irvine.oeis.a059;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A059333 For 0&lt;=A, 0&lt;=B, n is an A-almost prime; m is a B-almost prime, k = n+m, k is a C-almost prime; a(n) = smallest number m such that A+B=C.
  * @author Sean A. Irvine
  */
-public class A059333 implements Sequence {
+public class A059333 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A059333() {
+    super(1);
+  }
 
   private long mN = 0;
 

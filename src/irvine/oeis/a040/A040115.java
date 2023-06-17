@@ -1,13 +1,18 @@
 package irvine.oeis.a040;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A040115 Concatenate absolute values of differences between adjacent digits of n.
  * @author Sean A. Irvine
  */
-public class A040115 implements Sequence {
+public class A040115 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A040115() {
+    super(10);
+  }
 
   private long mN = 9;
 

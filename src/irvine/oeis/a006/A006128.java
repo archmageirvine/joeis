@@ -3,13 +3,18 @@ package irvine.oeis.a006;
 import irvine.factor.factor.Jaguar;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006128 Total number of parts in all partitions of n. Also, sum of largest parts of all partitions of n.
  * @author Sean A. Irvine
  */
-public class A006128 implements Sequence {
+public class A006128 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006128() {
+    super(0);
+  }
 
   private int mN = -1;
 

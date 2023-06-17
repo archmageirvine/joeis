@@ -4,13 +4,18 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005190 Central quadrinomial coefficients: largest coefficient of (1 + x + x^2 + x^3)^n.
  * @author Sean A. Irvine
  */
-public class A005190 implements Sequence {
+public class A005190 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005190() {
+    super(0);
+  }
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> POLY = Polynomial.create(1, 1, 1, 1);

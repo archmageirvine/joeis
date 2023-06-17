@@ -2,13 +2,18 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002202 Values taken by totient function phi(m) (A000010).
  * @author Sean A. Irvine
  */
-public class A002202 implements Sequence {
+public class A002202 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002202() {
+    super(1);
+  }
 
   private Z mN = null;
 

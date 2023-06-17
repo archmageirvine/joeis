@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Permutation;
 import irvine.util.string.StringUtils;
 
@@ -12,7 +12,12 @@ import irvine.util.string.StringUtils;
  * A055055 Number of basic magic carpets on n points.
  * @author Sean A. Irvine
  */
-public class A055055 implements Sequence {
+public class A055055 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A055055() {
+    super(5);
+  }
 
   // Too slow for more than 2 or 3 terms
 

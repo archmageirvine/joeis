@@ -4,13 +4,18 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A290305 Number of 5-dimensional polyominoes with n cells (regarding mirror-images as distinct).
  * @author Sean A. Irvine
  */
-public class A290305 implements Sequence {
+public class A290305 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A290305() {
+    super(0);
+  }
 
   // Cf. A255487 (4-dimensional case)
   // Coordinate (w,x,y,z,v) is five 6-bit numbers packed into a int

@@ -2,13 +2,18 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005716 Coefficient of x^8 in expansion of (1+x+x^2)^n.
  * @author Sean A. Irvine
  */
-public class A005716 implements Sequence {
+public class A005716 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005716() {
+    super(4);
+  }
 
   private long mN = 3;
 

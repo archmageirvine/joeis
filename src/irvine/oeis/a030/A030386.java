@@ -3,13 +3,18 @@ package irvine.oeis.a030;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A030386 Triangle T(n,k): write n in base 4, reverse order of digits.
  * @author Georg Fischer
  */
-public class A030386 implements Sequence {
+public class A030386 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A030386() {
+    super(0);
+  }
  
   private StringBuilder mS = new StringBuilder();
   private int mPos = 0;

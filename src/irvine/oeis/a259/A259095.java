@@ -2,13 +2,18 @@ package irvine.oeis.a259;
 
 import irvine.math.partitions.DistinctPartsPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A259095 Triangle read by rows: T(n,r) = number of arrangements of n pennies in rows, with r contiguous pennies in the bottom row, and each higher row consisting of contiguous pennies, each touching two pennies in the row below (1 &lt;= r &lt;= n).
  * @author Sean A. Irvine
  */
-public class A259095 implements Sequence {
+public class A259095 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A259095() {
+    super(1);
+  }
 
   private int mN = 0;
   private int mR = 0;

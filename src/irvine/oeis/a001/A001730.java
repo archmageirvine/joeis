@@ -1,13 +1,18 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001730 a(n) = n!/6!.
  * @author Sean A. Irvine
  */
-public class A001730 implements Sequence {
+public class A001730 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001730() {
+    super(6);
+  }
 
   private long mN = 5;
   private Z mA = Z.ONE;

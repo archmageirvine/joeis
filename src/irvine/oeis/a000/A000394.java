@@ -2,14 +2,19 @@ package irvine.oeis.a000;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A000394 Numbers of form x^2 + y^2 + 7z^2.
  * @author Sean A. Irvine
  */
-public class A000394 implements Sequence {
+public class A000394 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000394() {
+    super(0);
+  }
 
   private final LongDynamicBooleanArray mSeq = new LongDynamicBooleanArray();
   private long mLast = -1;

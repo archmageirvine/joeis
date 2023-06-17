@@ -2,13 +2,18 @@ package irvine.oeis.a342;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A342982 Triangle read by rows: T(n,k) is the number of tree-rooted planar maps with n edges and k+1 faces, n &gt;= 0, k = 0..n.
  * @author Sean A. Irvine
  */
-public class A342982 implements Sequence {
+public class A342982 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A342982() {
+    super(0);
+  }
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

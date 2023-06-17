@@ -9,13 +9,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000666 Number of symmetric relations on n nodes.
  * @author Sean A. Irvine
  */
-public class A000666 implements Sequence {
+public class A000666 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000666() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;

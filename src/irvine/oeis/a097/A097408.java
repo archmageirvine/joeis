@@ -1,13 +1,13 @@
 package irvine.oeis.a097;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A097408 Initial decimal digit of n^4.
  * @author Georg Fischer
  */
-public class A097408 implements Sequence {
+public class A097408 extends AbstractSequence {
 
   protected int mN;
   protected int mExpon;
@@ -23,6 +23,7 @@ public class A097408 implements Sequence {
    * @param expon exponent
    */
   public A097408(final int offset, final int expon) {
+    super(1);
     mN = offset - 1;
     mExpon = expon;
   }

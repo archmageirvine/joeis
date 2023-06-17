@@ -5,13 +5,18 @@ import irvine.math.graph.GraphFactory;
 import irvine.math.nauty.DirectedGraph;
 import irvine.math.nauty.Multigraph;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A003141 Minimal number of arcs whose reversal yields a transitive tournament.
  * @author Sean A. Irvine
  */
-public class A003141 implements Sequence {
+public class A003141 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003141() {
+    super(0);
+  }
 
   private static final class DigraphCheck extends DirectedGraph {
     private int mMax = 0; // maximum of the minimums for a graph

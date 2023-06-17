@@ -3,14 +3,19 @@ package irvine.oeis.a006;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.string.StringUtils;
 
 /**
  * A006156 Number of ternary squarefree words of length n.
  * @author Sean A. Irvine
  */
-public class A006156 implements Sequence {
+public class A006156 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006156() {
+    super(0);
+  }
 
   protected ArrayList<String> mWords = new ArrayList<>();
 

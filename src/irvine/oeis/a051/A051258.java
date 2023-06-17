@@ -4,14 +4,19 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.CyclotomicPolynomials;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000045;
 
 /**
  * A051258 Fibocyclotomic numbers: numbers formed from cyclotomic polynomials and Fibonacci numbers (A000045).
  * @author Sean A. Irvine
  */
-public class A051258 implements Sequence {
+public class A051258 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A051258() {
+    super(0);
+  }
 
   private final MemorySequence mF = MemorySequence.cachedSequence(new A000045());
   private final CyclotomicPolynomials mC = new CyclotomicPolynomials();

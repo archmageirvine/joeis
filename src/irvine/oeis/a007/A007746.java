@@ -2,13 +2,18 @@ package irvine.oeis.a007;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007746 Number of ways for n-3 nonintersecting loops to cross a line 2n times.
  * @author Sean A. Irvine
  */
-public class A007746 implements Sequence {
+public class A007746 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007746() {
+    super(4);
+  }
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 3;

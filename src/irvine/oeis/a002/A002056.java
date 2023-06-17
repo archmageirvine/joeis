@@ -1,13 +1,18 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002056 Number of diagonal dissections of a convex n-gon into n-5 regions.
  * @author Sean A. Irvine
  */
-public class A002056 implements Sequence {
+public class A002056 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002056() {
+    super(6);
+  }
 
   private long mN = 5;
   private Z mA = Z.ONE;

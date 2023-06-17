@@ -1,13 +1,18 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A049816 Triangular array T read by rows: T(n,k)=number of nonzero remainders when Euclidean algorithm acts on n and k, for k=1,2,...,n, n=1,2,...
+ * A049816 Triangular array T read by rows: T(n,k)=number of nonzero remainders when Euclidean algorithm acts on n and k, for k=1, 2,...,n, n=1, 2,...
  * @author Sean A. Irvine
  */
-public class A049816 implements Sequence {
+public class A049816 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A049816() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000527 Series-parallel numbers.
  * @author Sean A. Irvine
  */
-public class A000527 implements Sequence {
+public class A000527 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000527() {
+    super(4);
+  }
 
   // Expansion is in terms of A^(4) on p.143 of Riordan's book
   // Effective g.f. is 4(13+14S+3S^2)(1+S)/(1-S)^7 where S is g.f. for A000084

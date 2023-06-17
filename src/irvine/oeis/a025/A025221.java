@@ -2,13 +2,18 @@ package irvine.oeis.a025;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A025221 [ 4th elementary symmetric function of sqrt(k+1) ], k = 1,2,...,n.
+ * A025221 [ 4th elementary symmetric function of sqrt(k+1) ], k = 1, 2,...,n.
  * @author Sean A. Irvine
  */
-public class A025221 implements Sequence {
+public class A025221 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A025221() {
+    super(4);
+  }
 
   private long mN = 4;
   private CR mSum = CR.ZERO;

@@ -1,13 +1,18 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005437 Column of Kempner tableau.
  * @author Sean A. Irvine
  */
-public class A005437 implements Sequence {
+public class A005437 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005437() {
+    super(0);
+  }
 
   protected Z[] mPrev = new Z[0];
 

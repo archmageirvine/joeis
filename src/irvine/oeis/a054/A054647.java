@@ -2,13 +2,18 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A054647 Number of labeled pure 2-complexes on n nodes (0-simplexes) with 4 2-simplexes and 12 1-simplexes.
  * @author Sean A. Irvine
  */
-public class A054647 implements Sequence {
+public class A054647 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A054647() {
+    super(6);
+  }
 
   private long mN = 5;
 

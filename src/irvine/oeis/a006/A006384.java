@@ -3,13 +3,18 @@ package irvine.oeis.a006;
 import irvine.math.z.Binomial;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006384 Number of planar maps with n edges.
  * @author Sean A. Irvine
  */
-public class A006384 implements Sequence {
+public class A006384 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006384() {
+    super(0);
+  }
 
   private int mN = -1;
 

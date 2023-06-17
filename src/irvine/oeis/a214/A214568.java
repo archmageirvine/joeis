@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A214568 Triangle read by rows: T(n,k) is the number of rooted trees t with n vertices yielding k distinct rooted trees with n+1 vertices when a pendant edge is added to a vertex of t (1 &lt;= k &lt;= n).
  * @author Sean A. Irvine
  */
-public class A214568 implements Sequence {
+public class A214568 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A214568() {
+    super(1);
+  }
 
   private static final PolynomialRingField<Z> INNER_RING = new PolynomialRingField<>("y", IntegerField.SINGLETON);
   protected static final PolynomialRingField<Polynomial<Z>> RING = new PolynomialRingField<>(INNER_RING);

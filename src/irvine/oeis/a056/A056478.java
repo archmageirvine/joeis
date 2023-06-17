@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a124.A124303;
 
 /**
@@ -14,13 +14,14 @@ import irvine.oeis.a124.A124303;
  * a(n) = Sum_{d|n} mu(d)*A124303(ceiling(n/(2*d))) for n &gt; 0.
  * @author Georg Fischer
  */
-public class A056478 implements Sequence {
+public class A056478 extends AbstractSequence {
 
   protected int mN;
   protected MemorySequence mSeq;
 
   /** Construct the sequence. */
   public A056478() {
+    super(0);
     mN = -1;
     mSeq = MemorySequence.cachedSequence(new A124303());
   }

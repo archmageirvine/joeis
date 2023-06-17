@@ -6,13 +6,14 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
  * A048805 Matrix inverse of A048804.
  * @author Sean A. Irvine
  */
-public class A048805 implements Sequence {
+public class A048805 extends AbstractSequence {
 
   private final Sequence mSeq;
   private final DefaultMatrix<Q> mA = new DefaultMatrix<>(0, 0, Q.ZERO);
@@ -21,6 +22,7 @@ public class A048805 implements Sequence {
   private int mM = 0;
 
   protected A048805(final Sequence seq) {
+    super(0);
     mSeq = seq;
   }
 

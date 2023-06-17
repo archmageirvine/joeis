@@ -3,13 +3,18 @@ package irvine.oeis.a003;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A003591 Numbers of form 2^i*7^j, with i, j &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A003591 implements Sequence {
+public class A003591 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003591() {
+    super(1);
+  }
 
   private final TreeSet<Z> mPriority = new TreeSet<>();
   {

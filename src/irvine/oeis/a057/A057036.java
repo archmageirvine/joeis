@@ -1,14 +1,15 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005408;
 
 /**
- * A057036 Let R(i,j) be the rectangle with antidiagonals 1; 2,3; 4,5,6; ...; each k is an R(i(k),j(k)) and A057036(n)=i(2n-1).
+ * A057036 Let R(i,j) be the rectangle with antidiagonals 1; 2, 3; 4, 5, 6; ...; each k is an R(i(k),j(k)) and A057036(n)=i(2n-1).
  * @author Georg Fischer
  */
-public class A057036 implements Sequence {
+public class A057036 extends AbstractSequence {
 
   protected Z mTri; // smallest triangular number >= mN
   protected long mTrix; // index of that largest triangular number
@@ -27,6 +28,7 @@ public class A057036 implements Sequence {
    * @param skip number of terms of the underlying sequence to be skipped initially
    */
   public A057036(final Sequence seq, final int mode, int skip) {
+    super(1);
     mSeq = seq;
     while (skip > 0) {
       mSeq.next();

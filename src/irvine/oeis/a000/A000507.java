@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000507 Number of permutations of [n] with exactly 3 increasing runs of length at least 2.
  * @author Sean A. Irvine
  */
-public class A000507 implements Sequence {
+public class A000507 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000507() {
+    super(6);
+  }
 
   private int mN = 5;
 

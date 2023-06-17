@@ -4,13 +4,18 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A035485 Card on top of deck at n-th stage of R. K. Guy's shuffling problem.
  * @author Sean A. Irvine
  */
-public class A035485 implements Sequence {
+public class A035485 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A035485() {
+    super(0);
+  }
 
   // This works by keeping track of the initial part of the deck which is
   // different from ordered integers.  Once the end of the list is

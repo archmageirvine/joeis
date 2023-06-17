@@ -8,6 +8,7 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
@@ -15,7 +16,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  * A203991 Array:  row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of {(i+j)*min(i,j)} (A203990).
  * @author Georg Fischer
  */
-public class A203991 implements Sequence {
+public class A203991 extends AbstractSequence {
 
   protected UpperLeftTriangle mULT;
   protected int mRow; // current row index n
@@ -33,6 +34,7 @@ public class A203991 implements Sequence {
    * @param offset number of first row: 0 or 1.
    */
   public A203991(final int offset, final Sequence seq) {
+    super(1);
     if (seq instanceof UpperLeftTriangle) {
       mULT = (UpperLeftTriangle) seq;
     } else {

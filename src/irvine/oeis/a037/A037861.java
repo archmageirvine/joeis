@@ -1,13 +1,18 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A037861 (Number of 0's) - (number of 1's) in the base-2 representation of n.
  * @author Sean A. Irvine
  */
-public class A037861 implements Sequence {
+public class A037861 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A037861() {
+    super(0);
+  }
 
   private long mN = -1;
 

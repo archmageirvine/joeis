@@ -2,13 +2,18 @@ package irvine.oeis.a030;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A030503 Graham-Sloane-type lower bound on the size of a ternary (n,3,3) constant-weight code.
+ * A030503 Graham-Sloane-type lower bound on the size of a ternary (n, 3, 3) constant-weight code.
  * @author Sean A. Irvine
  */
-public class A030503 implements Sequence {
+public class A030503 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A030503() {
+    super(3);
+  }
 
   private int mN = w() - 1;
 

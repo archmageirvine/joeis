@@ -3,13 +3,18 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000593 Sum of odd divisors of n.
  * @author Sean A. Irvine
  */
-public class A000593 implements Sequence {
+public class A000593 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000593() {
+    super(1);
+  }
 
   protected long mN = 0;
 

@@ -3,13 +3,18 @@ package irvine.oeis.a160;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A160118 Number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton (see Comments for precise definition).
  * @author Sean A. Irvine
  */
-public class A160118 implements Sequence {
+public class A160118 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A160118() {
+    super(0);
+  }
 
   private static final long[] DX = {0, 0, 1, 1, 1, -1, -1, -1};
   private static final long[] DY = {1, -1, 0, 1, -1, 0, 1, -1};

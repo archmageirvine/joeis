@@ -7,13 +7,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A342989 Triangle read by rows: T(n,k) is the number of nonseparable rooted toroidal maps with n edges and k faces, n &gt;= 2, k = 1..n-1.
  * @author Sean A. Irvine
  */
-public class A342989 implements Sequence {
+public class A342989 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A342989() {
+    super(2);
+  }
 
   // After Andrew Howroyd
 

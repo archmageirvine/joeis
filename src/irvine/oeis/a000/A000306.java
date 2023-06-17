@@ -4,14 +4,19 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a001.A001383;
 
 /**
  * A000306 Number of trees of diameter 8.
  * @author Sean A. Irvine
  */
-public class A000306 implements Sequence {
+public class A000306 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000306() {
+    super(9);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 

@@ -3,14 +3,19 @@ package irvine.oeis.a006;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Point;
 
 /**
  * A006774 Number of 2n-step polygons on honeycomb.
  * @author Sean A. Irvine
  */
-public class A006774 implements Sequence {
+public class A006774 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A006774() {
+    super(0);
+  }
 
   protected int mN = -2;
 

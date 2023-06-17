@@ -1,19 +1,20 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A048549 a(n+1) is next smallest prime beginning with a(n), initial prime is 2.
  * @author Sean A. Irvine
  */
-public class A048549 implements Sequence {
+public class A048549 extends AbstractSequence {
 
   private String mPrefix = null;
   private final String mStart;
   private final int mBase;
 
   protected A048549(final String start, final int base) {
+    super(1);
     mStart = start;
     mBase = base;
   }

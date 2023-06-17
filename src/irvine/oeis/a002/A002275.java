@@ -1,13 +1,18 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002275 Repunits: (10^n - 1)/9. Often denoted by R_n.
  * @author Sean A. Irvine
  */
-public class A002275 implements Sequence {
+public class A002275 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002275() {
+    super(0);
+  }
 
   private Z mN = null;
 

@@ -3,13 +3,18 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000013 Definition (1): Number of n-bead binary necklaces with beads of 2 colors where the colors may be swapped but turning over is not allowed.
  * @author Sean A. Irvine
  */
-public class A000013 implements Sequence {
+public class A000013 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000013() {
+    super(0);
+  }
 
   private int mN = -1;
 

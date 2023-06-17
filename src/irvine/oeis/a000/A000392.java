@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A000392 Stirling numbers of second kind S(n,3).
+ * A000392 Stirling numbers of second kind S(n, 3).
  * @author Sean A. Irvine
  */
-public class A000392 implements Sequence {
+public class A000392 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000392() {
+    super(0);
+  }
 
   private int mN = -1;
   private Z mA = Z.ZERO;

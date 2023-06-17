@@ -2,14 +2,19 @@ package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a061.A061702;
 
 /**
  * A000183 Number of discordant permutations of length n.
  * @author Sean A. Irvine
  */
-public class A000183 implements Sequence {
+public class A000183 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000183() {
+    super(1);
+  }
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

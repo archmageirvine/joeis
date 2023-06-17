@@ -1,13 +1,18 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001553 a(n) = 1^n + 2^n + ... + 6^n.
  * @author Sean A. Irvine
  */
-public class A001553 implements Sequence {
+public class A001553 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001553() {
+    super(0);
+  }
 
   private Z mTwo = null;
   private Z mThree = Z.ONE;

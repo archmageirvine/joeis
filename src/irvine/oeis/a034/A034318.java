@@ -4,7 +4,7 @@ package irvine.oeis.a034;
 import irvine.math.z.Z;
 import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.recur.PeriodicSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A034318 McKay-Thompson series of class 13A for the Monster group with a(0) = -2.
@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  * The sequence here is <code>A - 7*q/A</code>.
  * @author Georg Fischer
  */
-public class A034318 implements Sequence {
+public class A034318 extends AbstractSequence {
 
   protected EulerTransform mET1; // the first sequenc
   protected EulerTransform mET2; // the second sequence
@@ -39,6 +39,7 @@ public class A034318 implements Sequence {
    * @param per1 the terms of the PeriodicSequence to be transformed
    */
   public A034318(final int offset, final int squeeze0, final long factor, final long add0, final long... per1) {
+    super(-1);
     mET1 = new EulerTransform(new PeriodicSequence(per1), 1);
     final long[] per2 = new long[per1.length];
     for (int k = 0; k < per1.length; ++k) {

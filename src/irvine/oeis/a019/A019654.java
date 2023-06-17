@@ -3,13 +3,18 @@ package irvine.oeis.a019;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A019654 Consider problem of placing N queens on an n X n board so that each queen attacks precisely k others. Here k=4 and sequence gives number of different solutions when N takes its maximal value.
  * @author Sean A. Irvine
  */
-public class A019654 implements Sequence {
+public class A019654 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A019654() {
+    super(3);
+  }
 
   // Placing queens so that they attack a precise number of other queens.
   // In general, we want to count the number of solutions for the maximal number of queens

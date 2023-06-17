@@ -2,13 +2,18 @@ package irvine.oeis.a002;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002387 Least k such that H(k) &gt; n, where H(k) is the harmonic number Sum_{i=1..k} 1/i.
  * @author Sean A. Irvine
  */
-public class A002387 implements Sequence {
+public class A002387 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002387() {
+    super(0);
+  }
 
   // There is a conjectured formula that is much faster than this exact calculation
 

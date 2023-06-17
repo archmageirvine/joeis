@@ -3,13 +3,18 @@ package irvine.oeis.a027;
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A027423 Number of divisors of n!.
  * @author Sean A. Irvine
  */
-public class A027423 implements Sequence {
+public class A027423 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A027423() {
+    super(0);
+  }
 
   private final FactorSequence mFactorSequence = new FactorSequence();
   private final PrimeDivision mFactor = new PrimeDivision();

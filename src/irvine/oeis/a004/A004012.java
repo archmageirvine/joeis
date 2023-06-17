@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A004012 Theta series of hexagonal close-packing.
  * @author Sean A. Irvine
  */
-public class A004012 implements Sequence {
+public class A004012 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A004012() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> NEGX = RING.negate(RING.x());

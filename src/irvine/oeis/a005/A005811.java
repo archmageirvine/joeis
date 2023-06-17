@@ -1,13 +1,18 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005811 Number of runs in binary expansion of n (n&gt;0); number of 1's in Gray code for n.
  * @author Sean A. Irvine
  */
-public class A005811 implements Sequence {
+public class A005811 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005811() {
+    super(0);
+  }
 
   private long mN = -1;
 

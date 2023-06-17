@@ -1,13 +1,18 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005843 The nonnegative even numbers: a(n) = 2n.
  * @author Sean A. Irvine
  */
-public class A005843 implements Sequence {
+public class A005843 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005843() {
+    super(0);
+  }
 
   private Z mN = Z.valueOf(-2);
 

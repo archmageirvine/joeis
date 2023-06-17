@@ -2,13 +2,18 @@ package irvine.oeis.a100;
 
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A100728 Number of rank-(n-2) simple matroids on S_n.
  * @author Sean A. Irvine
  */
-public class A100728 implements Sequence {
+public class A100728 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A100728() {
+    super(4);
+  }
 
   private int mN = 3;
 

@@ -2,13 +2,18 @@ package irvine.oeis.a029;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A029795 Numbers k such that k and k^3 have the same set of digits.
  * @author Sean A. Irvine
  */
-public class A029795 implements Sequence {
+public class A029795 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A029795() {
+    super(1);
+  }
 
   private Z mN = Z.NEG_ONE;
 

@@ -5,13 +5,18 @@ import irvine.math.LongUtils;
 import irvine.math.Mobius;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A051168 Triangular array T(h,k) for 0 &lt;= k &lt;= h read by rows: T(h,k) = number of binary Lyndon words with k ones and h-k zeros.
  * @author Sean A. Irvine
  */
-public class A051168 implements Sequence {
+public class A051168 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A051168() {
+    super(0);
+  }
 
   private long mN = -1;
   private long mM = 0;

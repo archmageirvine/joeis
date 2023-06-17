@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A001934 Expansion of 1/theta_4(q)^2 in powers of q.
  * @author Sean A. Irvine
  */
-public class A001934 implements Sequence {
+public class A001934 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A001934() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private Polynomial<Z> mNum = RING.one();

@@ -4,13 +4,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002599 A generalized partition function.
  * @author Sean A. Irvine
  */
-public class A002599 implements Sequence {
+public class A002599 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002599() {
+    super(1);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private Polynomial<Z> mDen = RING.one();

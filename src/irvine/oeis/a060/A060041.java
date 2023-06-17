@@ -12,13 +12,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A060041 Certain numbers a(n) related to Gromov-Witten invariants N_n in dimension n (see formula (7.45) on p. 202 of Cox and Katz).
  * @author Sean A. Irvine
  */
-public class A060041 implements Sequence {
+public class A060041 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A060041() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> FIVE = Polynomial.create(Q.FIVE);

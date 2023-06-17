@@ -3,13 +3,18 @@ package irvine.oeis.a007;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007434 Jordan function J_2(n) (a generalization of phi(n)).
  * @author Sean A. Irvine
  */
-public class A007434 implements Sequence {
+public class A007434 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007434() {
+    super(1);
+  }
 
   private long mN = 0;
 

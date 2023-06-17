@@ -5,13 +5,18 @@ import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A003444 Number of dissections of a polygon.
  * @author Sean A. Irvine
  */
-public class A003444 implements Sequence {
+public class A003444 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A003444() {
+    super(4);
+  }
 
   private long mN = 2;
 

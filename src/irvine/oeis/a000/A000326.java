@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000326 Pentagonal numbers: a(n) = n*(3*n-1)/2.
  * @author Sean A. Irvine
  */
-public class A000326 implements Sequence {
+public class A000326 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000326() {
+    super(0);
+  }
 
   private long mN = -1;
 

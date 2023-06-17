@@ -8,13 +8,18 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A027477 Triangle of the square of the normalized, unsigned Stirling matrix of the first kind.
  * @author Sean A. Irvine
  */
-public class A027477 implements Sequence {
+public class A027477 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A027477() {
+    super(1);
+  }
 
   private int mN = 0;
   private int mM = 0;

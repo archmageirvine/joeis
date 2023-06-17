@@ -2,13 +2,18 @@ package irvine.oeis.a014;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A014068 a(n) = binomial(n*(n+1)/2, n).
  * @author Sean A. Irvine
  */
-public class A014068 implements Sequence {
+public class A014068 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A014068() {
+    super(0);
+  }
 
   private long mN = -1;
 

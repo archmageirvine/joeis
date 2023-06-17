@@ -1,13 +1,18 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A032734 All 81 combinations of prefixing and following a(n) by a single digit are nonprime.
  * @author Sean A. Irvine
  */
-public class A032734 implements Sequence {
+public class A032734 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A032734() {
+    super(1);
+  }
 
   private static final String[] PREFIXES = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
   private static final String[] SUFFIXES = {"1", "3", "7", "9"};

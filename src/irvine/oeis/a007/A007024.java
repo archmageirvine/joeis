@@ -4,13 +4,18 @@ import java.util.ArrayList;
 
 import irvine.math.plantri.Plantri;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007024 Number of polyhedral graphs with n faces and minimal degree 4.
  * @author Sean A. Irvine
  */
-public class A007024 implements Sequence {
+public class A007024 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A007024() {
+    super(4);
+  }
 
   private final ArrayList<Z> mFaceCount = new ArrayList<>();
   private int mN = 1;

@@ -2,13 +2,18 @@ package irvine.oeis.a060;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A060064 First subsequent, disjoint occurrence of n consecutive nonprimes.
  * @author Sean A. Irvine
  */
-public class A060064 implements Sequence {
+public class A060064 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A060064() {
+    super(1);
+  }
 
   private final Fast mPrime = new Fast();
   private long mN = 0;

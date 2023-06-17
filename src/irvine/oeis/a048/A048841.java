@@ -1,13 +1,13 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A048841 Least positive integer k for which 11^n divides k!.
  * @author Sean A. Irvine
  */
-public class A048841 implements Sequence {
+public class A048841 extends AbstractSequence {
 
   private final long mTarget;
   private long mN = -1;
@@ -15,6 +15,7 @@ public class A048841 implements Sequence {
   private long mCount = 0;
 
   protected A048841(final int target) {
+    super(0);
     mTarget = target;
   }
 

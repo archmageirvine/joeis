@@ -2,20 +2,25 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A054110 Triangular array T(n,k): in Pascal's triangle, draw vertical lines through binomial(n-1,k-1) (if present) and binomial(n-1,k) (if present); then T(n,k) is the sum of binomial(i,j) that lie on or between the lines and not below binomial(n,k).
  * @author Sean A. Irvine
  */
-public class A054110 implements Sequence {
+public class A054110 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A054110() {
+    super(0);
+  }
 
   private long mN = -1;
   private long mM = 0;
 
   protected Z t(final long n, final long k) {
     if (k == 0 || k == n) {
-      // I think an argument can be made that this value should be 2 except for (0,0)
+      // I think an argument can be made that this value should be 2 except for (0, 0)
       return Z.ONE; // one of the lines does not exist
     }
     Z sum = Z.ZERO;

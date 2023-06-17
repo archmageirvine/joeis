@@ -1,17 +1,18 @@
 package irvine.oeis.a176;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A176772 Smallest power of 13 whose decimal expansion contains n.
  * @author Sean A. Irvine
  */
-public class A176772 implements Sequence {
+public class A176772 extends AbstractSequence {
 
   private int mN;
 
   protected A176772(final int start) {
+    super(1);
     mN = start;
   }
 

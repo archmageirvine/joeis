@@ -7,13 +7,18 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A002762 Number of bipartite partitions.
  * @author Sean A. Irvine
  */
-public class A002762 implements Sequence {
+public class A002762 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A002762() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>("y", IntegerField.SINGLETON);
   private static final PolynomialRing<Polynomial<Z>> RING_OUT = new PolynomialRing<>(RING);

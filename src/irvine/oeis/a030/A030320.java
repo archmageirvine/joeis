@@ -2,6 +2,7 @@ package irvine.oeis.a030;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
@@ -9,7 +10,7 @@ import irvine.util.array.LongDynamicBooleanArray;
  * A030320 Least k such that the base-2 representation of n begins at s(k), where s=A030317.
  * @author Sean A. Irvine
  */
-public class A030320 implements Sequence {
+public class A030320 extends AbstractSequence {
 
   private final LongDynamicBooleanArray mA = new LongDynamicBooleanArray();
   private long mM;
@@ -17,6 +18,7 @@ public class A030320 implements Sequence {
   private final Sequence mUnder;
 
   protected A030320(final Sequence under, final long start) {
+    super(1);
     mUnder = under;
     mM = start;
   }

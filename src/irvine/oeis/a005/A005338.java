@@ -1,13 +1,18 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005338 Number of ways in which n identical balls can be distributed among 5 boxes in a row such that each pair of adjacent boxes contains at least 4 balls.
  * @author Sean A. Irvine
  */
-public class A005338 implements Sequence {
+public class A005338 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A005338() {
+    super(8);
+  }
 
   private Z mN = Z.SEVEN;
 

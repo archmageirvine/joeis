@@ -1,6 +1,7 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a020.A020760;
 import irvine.oeis.a020.A020787;
@@ -9,7 +10,7 @@ import irvine.oeis.a020.A020787;
  * A034982 a(n)^2 is smallest square starting with a string of n 3's.
  * @author Sean A. Irvine
  */
-public class A034982 implements Sequence {
+public class A034982 extends AbstractSequence {
 
   private final Sequence mASeq;
   private final Sequence mBSeq;
@@ -20,6 +21,7 @@ public class A034982 implements Sequence {
   private Z mPrev = Z.ZERO;
 
   protected A034982(final Sequence a, final Sequence b, final String append, final String initial) {
+    super(1);
     mASeq = a;
     mBSeq = b;
     mAppend = append;
@@ -28,9 +30,9 @@ public class A034982 implements Sequence {
 
   /** Construct the sequence. */
   public A034982() {
-    // 1/sqrt(3), 1/sqrt(30)
     this(new A020787(), new A020760(), "3", "");
-  }
+      // 1/sqrt(3), 1/sqrt(30)
+ }
 
   @Override
   public Z next() {

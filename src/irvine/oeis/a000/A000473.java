@@ -6,14 +6,19 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a002.A002420;
 
 /**
  * A000473 Number of genus 0 rooted maps with 5 faces and n vertices.
  * @author Sean A. Irvine
  */
-public class A000473 implements Sequence {
+public class A000473 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000473() {
+    super(4);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> M0 = Polynomial.create(0, 27, -20, -16);

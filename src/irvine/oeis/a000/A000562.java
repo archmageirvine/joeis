@@ -1,13 +1,18 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000562 Number of discordant permutations.
  * @author Sean A. Irvine
  */
-public class A000562 implements Sequence {
+public class A000562 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000562() {
+    super(4);
+  }
 
   private long mN = 3;
 

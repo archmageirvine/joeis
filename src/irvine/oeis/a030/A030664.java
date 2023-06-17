@@ -2,13 +2,18 @@ package irvine.oeis.a030;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A030664 Product of largest prime &lt;= n and smallest prime &gt;= n.
  * @author Sean A. Irvine
  */
-public class A030664 implements Sequence {
+public class A030664 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A030664() {
+    super(0);
+  }
 
   private final Fast mPrime = new Fast();
   protected long mN = -1;

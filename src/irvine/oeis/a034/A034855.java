@@ -8,13 +8,18 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A034855 Triangle read by rows giving number of rooted labeled trees with n &gt;= 2 nodes and height d &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A034855 implements Sequence {
+public class A034855 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A034855() {
+    super(2);
+  }
 
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
 

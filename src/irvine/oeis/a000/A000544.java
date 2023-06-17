@@ -5,13 +5,18 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A000544 Number of permutations of length n by rises.
  * @author Sean A. Irvine
  */
-public class A000544 implements Sequence {
+public class A000544 extends AbstractSequence {
+
+  /* Construct the sequence. */
+  public A000544() {
+    super(4);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> DEN = Polynomial.create(1, -2, -1, 4, -1, -2, 1);

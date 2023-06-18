@@ -10,14 +10,14 @@ import irvine.oeis.Sequence1;
  * A064158.
  * @author Sean A. Irvine
  */
-public class A064169 extends Sequence1 {
+public class A064167 extends Sequence1 {
 
   private final RationalSequence mH = new HarmonicSequence();
 
   @Override
   public Z next() {
     final Q h = mH.nextQ();
-    return h.num().subtract(h.den());
+    return h.num().multiply(h.den());
   }
 }
 

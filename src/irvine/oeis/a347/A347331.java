@@ -12,6 +12,6 @@ public class A347331 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A347331() {
-    super(0, CR.PI.pow(6).multiply(new Q(691, 676675)));
+    super(0, CR.PI.pow(6).multiply(new Q(691, 675675)));
   }
 }

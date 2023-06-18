@@ -15,7 +15,7 @@ public class A063539 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Jaguar.factor(++mN).largestPrimeFactor().square().longValueExact() < mN) {
+      if (++mN == 1 || Jaguar.factor(mN).largestPrimeFactor().square().longValueExact() < mN) {
         return Z.valueOf(mN);
       }
     }

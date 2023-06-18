@@ -14,7 +14,7 @@ public class A068945 extends A068943 {
   public Z next() {
     if (mFirst) {
       mFirst = false;
-      return Z.ZERO;
+      return Z.ONE;
     }
     return Z.valueOf(super.next().bitCount());
   }

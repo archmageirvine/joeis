@@ -14,12 +14,15 @@ public class A033296 extends A027307 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final Polynomial<Z> mA = RING.empty();
-  private int mN = -1;
+  private int mN = -2;
 
   @Override
   public Z next() {
+    if (++mN == -1) {
+      return Z.ONE;
+    }
     mA.add(super.next());
-    return RING.pow(mA, 3, ++mN).coeff(mN);
+    return RING.pow(mA, 3, mN).coeff(mN);
   }
 }
 

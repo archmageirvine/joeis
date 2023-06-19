@@ -23,7 +23,7 @@ public class A064190 extends Sequence0 {
       if (n == 1) {
         return Z.ONE;
       }
-      return Integers.SINGLETON.sum(m -1, n - 1, k -> get(n - 1, k)).multiply(m).multiply(m + 1);
+      return Integers.SINGLETON.sum(m - 1, n - 1, k -> get(n - 1, k)).multiply(m).multiply(m + 1);
     }
   };
 

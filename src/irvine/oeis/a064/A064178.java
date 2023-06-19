@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000720;
 
 /**
- * A064158.
+ * A064178 Determinant transform of sequence {pi(m)} = A000720.
  * @author Sean A. Irvine
  */
 public class A064178 extends Sequence1 {

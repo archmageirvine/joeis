@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064158.
+ * A064164 EHS numbers: k such that there is a prime p satisfying k! + 1 == 0 (mod p) and p !== 1 (mod k).
  * @author Sean A. Irvine
  */
 public class A064164 extends Sequence1 {

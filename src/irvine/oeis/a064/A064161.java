@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A064158.
+ * A064161 Least abundant number divisible by the n-th prime number.
  * @author Sean A. Irvine
  */
 public class A064161 extends A000040 {

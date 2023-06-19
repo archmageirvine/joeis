@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064158.
+ * A064167 Product of numerator and denominator of the n-th harmonic number, 1 + 1/2 + 1/3 +...+ 1/n.
  * @author Sean A. Irvine
  */
 public class A064167 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000041;
 import irvine.oeis.a047.A047993;
 
 /**
- * A064158.
+ * A064174 Number of partitions of n with nonnegative rank.
  * @author Sean A. Irvine
  */
 public class A064174 extends Combiner {

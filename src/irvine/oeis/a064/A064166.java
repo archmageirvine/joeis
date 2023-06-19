@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002808;
 
 /**
- * A064158.
+ * A064166 Composite numbers the sum of the digits in the prime factors of which, with repetition, is prime.
  * @author Sean A. Irvine
  */
 public class A064166 extends A002808 {

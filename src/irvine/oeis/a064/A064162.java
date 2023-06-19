@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064158.
+ * A064162 Least abundant number divisible by n.
  * @author Sean A. Irvine
  */
 public class A064162 extends Sequence1 {

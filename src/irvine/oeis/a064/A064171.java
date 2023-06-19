@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A064158.
+ * A064171 a(1) = 1; a(n+1) = product of numerator and denominator of the continued fraction, [a(1); a(2), a(3),..., a(n)].
  * @author Sean A. Irvine
  */
 public class A064171 extends MemorySequence {

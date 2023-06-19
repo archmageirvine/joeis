@@ -38,19 +38,6 @@ public class PrependSequence extends AbstractSequence {
     this(seq, ZUtils.toZ(terms));
   }
 
-  /**
-   * Create a new sequence by skipping some terms and then prepending the additional terms at the front.
-   * @param skip number of terms for the underlying sequence to be skipped
-   * @param seq main sequence
-   * @param terms additional terms
-   */
-  public PrependSequence(final int skip, final Sequence seq, final long... terms) {
-    this(seq, ZUtils.toZ(terms));
-    for (int iskip = 0; iskip < skip; ++iskip) {
-      mSeq.next();
-    }
-  }
-
   @Override
   public Z next() {
     if (mN < mTerms.length) {

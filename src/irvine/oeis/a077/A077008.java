@@ -5,6 +5,7 @@ import irvine.oeis.a070.A070750;
 
 /**
  * A077008 Legendre symbol (-1,p) where p is the n-th prime.
+ *
  * @author Georg Fischer
  */
 public class A077008 extends A070750 {

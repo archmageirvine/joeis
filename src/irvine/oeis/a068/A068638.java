@@ -5,6 +5,7 @@ import irvine.oeis.a025.A025044;
 
 /**
  * A068638 a(1) = 1, a(n) = smallest distinct composite number such that a(n) + a(k) is a composite number for all k = 1 to n.
+ *
  * @author Georg Fischer
  */
 public class A068638 extends A025044 {

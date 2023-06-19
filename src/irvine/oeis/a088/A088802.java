@@ -5,6 +5,7 @@ import irvine.oeis.a123.A123854;
 
 /**
  * A088802 Denominators of the coefficients of powers of n^(-1) in the Romanovsky series expansion of the mean of the standard deviation from a normal population.
+ *
  * @author Georg Fischer
  */
 public class A088802 extends A123854 {

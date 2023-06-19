@@ -5,6 +5,7 @@ import irvine.oeis.a045.A045777;
 
 /**
  * A093094 "Products into digits": start with a(1)=2, a(2)=2; adjoin digits of product of a(k) and a(k+1) for k from 1 to infinity.
+ *
  * @author Georg Fischer
  */
 public class A093094 extends A045777 {

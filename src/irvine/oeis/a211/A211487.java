@@ -13,6 +13,6 @@ public class A211487 extends CharacteristicFunction {
 
   /** Construct the sequence. */
   public A211487() {
-    super(1, new PrependSequence(1, new A033948(), 0));
+    super(1, new PrependSequence(new A033948().skip(1), 0));
   }
 }

@@ -1,7 +1,6 @@
 package irvine.oeis.a290;
 // manually deris2/essent at 2021-11-04
 
-import irvine.oeis.PrependSequence;
 import irvine.oeis.a277.A277335;
 
 /**
@@ -9,10 +8,10 @@ import irvine.oeis.a277.A277335;
  * Basically the same as A277335.
  * @author Georg Fischer
  */
-public class A290258 extends PrependSequence {
+public class A290258 extends A277335 {
 
   /** Construct the sequence. */
   public A290258() {
-    super(1, new A277335());
+    skip(1);
   }
 }

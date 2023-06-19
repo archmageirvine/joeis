@@ -14,7 +14,7 @@ import irvine.oeis.a035.A035053;
  */
 public class A304970 extends Sequence0 {
 
-  private final PrependSequence mSeq = new PrependSequence(0, new PartialSumSequence(0, new SkipSequence(new A035053(), 1)), 1);
+  private final PrependSequence mSeq = new PrependSequence(new PartialSumSequence(0, new SkipSequence(new A035053(), 1)), 1);
 
   @Override
   public Z next() {

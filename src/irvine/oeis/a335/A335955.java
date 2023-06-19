@@ -15,7 +15,7 @@ public class A335955 extends AlternatingSequence {
 
   /** Construct the sequence. */
   public A335955() {
-    super(0, new PrependSequence(1, new A028296(), 0), new A002425() {
+    super(0, new PrependSequence(new A028296().skip(1), 0), new A002425() {
       private int mN = -1;
 
       @Override

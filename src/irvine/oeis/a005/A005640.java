@@ -4,18 +4,23 @@ import irvine.math.MemoryFunction1;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A005640 Number of phylogenetic trees with n labels.
  * @author Sean A. Irvine
  */
-public class A005640 extends MemoryFunction1<Z> implements Sequence {
+public class A005640 extends AbstractSequence {
 
   // This could be made faster by caching results
 
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN = -2;
+
+  /** Construct the sequence. */
+  public A005640() {
+    super(0);
+  }
 
   static Z r(final int n, final int[] cntForm) {
     Z res = FACTORIAL.factorial(n);
@@ -56,55 +61,58 @@ public class A005640 extends MemoryFunction1<Z> implements Sequence {
     return parts;
   }
 
-  private Z a(final int n, final int[] c) {
-    if (c[n] == 1) {
-      return Z.ZERO; // Eqn (14)
-    }
-    if (c[1] == n) {
-      return Z.ONE.shiftLeft(n); // Eqn (15)
-    }
-    Z t = Z.ZERO;
-    // We need to choose from the non-A operations
-    final long ops = operations() - 1;
-    final long limit = Z.valueOf(ops).pow(numParts(c)).longValueExact();
-    for (long choices = 0; choices < limit; ++choices) {
-      // For a given choice for the product Y^{1}(n_1) ... Y^{p}(n_p)
-      Z product = Z.ONE;
-      long q = choices;
-      outer:
-      for (int k = 1; k < c.length; ++k) {
-        int v = c[k];
-        while (v-- > 0) {
-          product = product.multiply(switchA((int) (q % ops), k));
-          if (product.isZero()) { // Efficiency
-            break outer;
-          }
-          q /= ops;
-        }
-      }
-      assert q == 0 || product.isZero();
-      t = t.add(product);
-    }
-    return t.multiply(r(n, c));
-  }
+  private MemoryFunction1<Z> mB = new MemoryFunction1<>() {
 
-  // Actual computation of a(n) if not already computed
-  @Override
-  protected Z compute(final int n) {
-    if (n <= 1) {
-      return Z.ZERO; // Eqn(14)
+    private Z a(final int n, final int[] c) {
+      if (c[n] == 1) {
+        return Z.ZERO; // Eqn (14)
+      }
+      if (c[1] == n) {
+        return Z.ONE.shiftLeft(n); // Eqn (15)
+      }
+      Z t = Z.ZERO;
+      // We need to choose from the non-A operations
+      final long ops = operations() - 1;
+      final long limit = Z.valueOf(ops).pow(numParts(c)).longValueExact();
+      for (long choices = 0; choices < limit; ++choices) {
+        // For a given choice for the product Y^{1}(n_1) ... Y^{p}(n_p)
+        Z product = Z.ONE;
+        long q = choices;
+        outer:
+        for (int k = 1; k < c.length; ++k) {
+          int v = c[k];
+          while (v-- > 0) {
+            product = product.multiply(switchA((int) (q % ops), k));
+            if (product.isZero()) { // Efficiency
+              break outer;
+            }
+            q /= ops;
+          }
+        }
+        assert q == 0 || product.isZero();
+        t = t.add(product);
+      }
+      return t.multiply(r(n, c));
     }
-    // Eqn(9), (11)
-    final IntegerPartition part = new IntegerPartition(n);
-    int[] p;
-    final int[] c = new int[n + 1];
-    Z sum = Z.ZERO;
-    while ((p = part.next()) != null) {
-      IntegerPartition.toCountForm(p, c);
-      sum = sum.add(a(n, c));
+
+    // Actual computation of a(n) if not already computed
+    @Override
+    protected Z compute(final int n) {
+      if (n <= 1) {
+        return Z.ZERO; // Eqn(14)
+      }
+      // Eqn(9), (11)
+      final IntegerPartition part = new IntegerPartition(n);
+      int[] p;
+      final int[] c = new int[n + 1];
+      Z sum = Z.ZERO;
+      while ((p = part.next()) != null) {
+        IntegerPartition.toCountForm(p, c);
+        sum = sum.add(a(n, c));
+      }
+      return sum;
     }
-    return sum;
-  }
+  };
 
   // Included here because needed in multiple subclasses
   private class MFunction extends MemoryFunction1<Z> {
@@ -166,7 +174,7 @@ public class A005640 extends MemoryFunction1<Z> implements Sequence {
   }
 
   Z a(final int n) {
-    return get(n); // Cache or compute value
+    return mB.get(n); // Cache or compute value
   }
 
   Z o(final int n) {

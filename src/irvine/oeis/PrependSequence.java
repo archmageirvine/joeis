@@ -12,7 +12,7 @@ import irvine.math.z.ZUtils;
  * another sequence.
  * @author Sean A. Irvine
  */
-public class PrependSequence implements Sequence {
+public class PrependSequence extends AbstractSequence {
 
   private final Z[] mTerms;
   private final Sequence mSeq;
@@ -24,6 +24,7 @@ public class PrependSequence implements Sequence {
    * @param terms additional terms
    */
   public PrependSequence(final Sequence seq, final Z... terms) {
+    super(0);
     mSeq = seq;
     mTerms = terms;
   }

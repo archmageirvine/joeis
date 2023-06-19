@@ -5,7 +5,7 @@ import java.util.function.Function;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A sequence generating a folded continued fraction.
@@ -16,8 +16,9 @@ import irvine.oeis.SequenceWithOffset;
  * The continued fraction has peaks terms at u(d(k)), where d(k) = c(k + 1) - 2*c(k).
  * @author Georg Fischer
  */
-public class FoldedContinuedFraction extends ArrayList<Z> implements SequenceWithOffset {
+public class FoldedContinuedFraction extends AbstractSequence {
 
+  private final ArrayList<Z> mAr = new ArrayList<>(64);
   protected boolean mCompress;
   protected int mN;
   private final int mOffset;
@@ -41,6 +42,7 @@ public class FoldedContinuedFraction extends ArrayList<Z> implements SequenceWit
    * @param inits initial terms
    */
   public FoldedContinuedFraction(int offset, final Function<Integer, Z> lambda, final long... inits) {
+    super(offset);
     mNy = 0; // (inits.length - 1) / 2; // initial terms must contain folding #0 and #1
     mCfType = 0;
     mCompress = true;
@@ -48,10 +50,10 @@ public class FoldedContinuedFraction extends ArrayList<Z> implements SequenceWit
     mLambda = lambda;
     mN = offset - 1;
     while (--offset >= 0) { // prefix with zeros that are not used
-      add(Z.ZERO);
+      mAr.add(Z.ZERO);
     }
     for (final long init : inits) {
-      add(Z.valueOf(init));
+      mAr.add(Z.valueOf(init));
     }
   }
 
@@ -72,34 +74,29 @@ public class FoldedContinuedFraction extends ArrayList<Z> implements SequenceWit
   }
 
   @Override
-  public int getOffset() {
-    return mOffset;
-  }
-
-  @Override
   public Z next() {
     ++mN;
-    int n = size() - 1;
+    int n = mAr.size() - 1;
     if (mN > n) { // fold
       if (mCfType != 1 && (n & 1) == 1) { // n odd, make it even
-        final Z an = get(n);
+        final Z an = mAr.get(n);
         if (! an.equals(Z.ONE)) { // [a(0),a(1),...,a(n-1), a(n)] = [a(0),a(1),...,a(n-1), a(n) - 1, 1]
-          set(n, an.subtract(1));
-          add(Z.ONE);
+          mAr.set(n, an.subtract(1));
+          mAr.add(Z.ONE);
         } else { //                  [a(0),a(1),...,a(n-1),    1] = [a(0),a(1),...,a(n-1) + 1]
-          remove(n);
-          set(n - 1, get(n - 1).add(1));
+          mAr.remove(n);
+          mAr.set(n - 1, mAr.get(n - 1).add(1));
         }
-        n = size() - 1;
+        n = mAr.size() - 1;
       } // n = is even now
 
       ++mNy;
       Z ins1 = mLambda.apply(mNy); // u(d(ny)) - 1
-      final Z an = get(n);
+      final Z an = mAr.get(n);
       if (mCfType == 1) {
-        add(ins1);
+        mAr.add(ins1);
         for (int k = n; k >= 0; --k) {
-          add(get(k));
+          mAr.add(mAr.get(k));
         }
       } else {
         // Shallit's theorem: [a(0),a(1),...,a(n-1), a(n)] -> [a(0),a(1),...,a(n), u(d(ny)) - 1, 1, a(n) - 1, a(n-1),...,a(2),a(1)]
@@ -107,29 +104,29 @@ public class FoldedContinuedFraction extends ArrayList<Z> implements SequenceWit
         ins1 = ins1.subtract(1);
         final Z ins2 = an.subtract(1); // a(n) - 1
         if (ins1.isZero()) {
-          set(n, an.add(1));
+          mAr.set(n, an.add(1));
           if (ins2.isZero()) {
-            add(get(n).add(get(n - 1)));
+            mAr.add(mAr.get(n).add(mAr.get(n - 1)));
           } else {
-            add(ins2);
-            add(get(n - 1));
+            mAr.add(ins2);
+            mAr.add(mAr.get(n - 1));
           }
         } else {
-          add(ins1);
+          mAr.add(ins1);
           if (mCompress && ins2.isZero()) {
-            add(get(n - 1).add(Z.ONE));
+            mAr.add(mAr.get(n - 1).add(Z.ONE));
           } else {
-            add(Z.ONE);
-            add(ins2);
-            add(get(n - 1));
+            mAr.add(Z.ONE);
+            mAr.add(ins2);
+            mAr.add(mAr.get(n - 1));
           }
         }
         for (int k = n - 2; k >= 1; --k) {
-          add(get(k));
+          mAr.add(mAr.get(k));
         }
       }
     } // fold
-    return get(mN);
+    return mAr.get(mN);
   }
 
 

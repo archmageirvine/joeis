@@ -11,8 +11,9 @@ import irvine.math.z.Z;
  * Convolution of sequences.
  * @author Sean A. Irvine
  */
-public class ConvolutionSequence implements Sequence {
+public class ConvolutionSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 0;
   private final Sequence mSeqA;
   private final Sequence mSeqB;
   private final ArrayList<Z> mTermsA;
@@ -23,10 +24,7 @@ public class ConvolutionSequence implements Sequence {
    * @param seq sequence to convolve
    */
   public ConvolutionSequence(final Sequence seq) {
-    mSeqA = seq;
-    mSeqB = null;
-    mTermsA = new ArrayList<>();
-    mTermsB = mTermsA;
+    this(DEFOFF, seq);
   }
 
   /**
@@ -35,6 +33,30 @@ public class ConvolutionSequence implements Sequence {
    * @param b second sequence
    */
   public ConvolutionSequence(final Sequence a, final Sequence b) {
+    this(DEFOFF, a, b);
+  }
+
+  /**
+   * Self-convolution of a sequence.
+   * @param offset first index
+   * @param seq sequence to convolve
+   */
+  public ConvolutionSequence(final int offset, final Sequence seq) {
+    super(offset);
+    mSeqA = seq;
+    mSeqB = null;
+    mTermsA = new ArrayList<>();
+    mTermsB = mTermsA;
+  }
+
+  /**
+   * Convolution of a pair of sequences.
+   * @param offset first index
+   * @param a first sequence
+   * @param b second sequence
+   */
+  public ConvolutionSequence(final int offset, final Sequence a, final Sequence b) {
+    super(offset);
     mSeqA = a;
     mSeqB = b;
     mTermsA = new ArrayList<>();

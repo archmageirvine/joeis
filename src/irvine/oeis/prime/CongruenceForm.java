@@ -3,7 +3,7 @@ package irvine.oeis.prime;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A sequence of primes that is defined by a list of residues (remainders) with respect to some modulus (divisor).
@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  * and then steps by the modulus.
  * @author Georg Fischer
  */
-public class CongruenceForm implements Sequence {
+public class CongruenceForm extends AbstractSequence {
 
   protected int mModulus; // divisor
   protected int[] mResidues; // remainders
@@ -27,6 +27,7 @@ public class CongruenceForm implements Sequence {
    * @param residues list of initial terms followed by the residues
    */
   public CongruenceForm(final int modulus, final int start, final int... residues) {
+    super(1);
     initialize(modulus, start, residues);
   }
 
@@ -35,7 +36,7 @@ public class CongruenceForm implements Sequence {
    * @param modulus divisor
    */
   public CongruenceForm(final int modulus) {
-    initialize(modulus, 0, quadResidues(modulus));
+    this(modulus, 0, quadResidues(modulus));
   }
 
   /**

@@ -10,8 +10,9 @@ import irvine.math.z.Z;
  * sequence.  Sequences exceeding the value of a long will also fail at some point.
  * @author Sean A. Irvine
  */
-public class InverseSequence implements Sequence {
+public class InverseSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 1;
   private static final int BIT_LIMIT = 50;
   private final Sequence mS;
   protected final TreeMap<Long, Long> mMap = new TreeMap<>();
@@ -20,14 +21,35 @@ public class InverseSequence implements Sequence {
 
   /**
    * Construct a new sequence of positions.
+   * @param offset first index of target sequence
    * @param seq underlying sequence
    * @param initial starting value to search for
-   * @param offset sequence offset
+   * @param offset1 offset of seq
    */
-  public InverseSequence(final Sequence seq, final long initial, final long offset) {
+  public InverseSequence(final int offset, final Sequence seq, final long initial, final int offset1) {
+    super(offset);
     mS = seq;
     mN = initial - 1;
-    mM = offset - 1;
+    mM = offset1 - 1;
+  }
+
+  /**
+   * Construct a new sequence of positions.
+   * @param seq underlying sequence
+   * @param initial starting value to search for
+   * @param offset1 offset of seq
+   */
+  public InverseSequence(final Sequence seq, final long initial, final int offset1) {
+    this(DEFOFF, seq, initial, offset1);
+  }
+
+  /**
+   * Construct a new sequence of positions.
+   * @param seq underlying sequence
+   * @param initial starting value to search for
+   */
+  public InverseSequence(final int offset, final Sequence seq, final long initial) {
+    this(offset, seq, initial, 1);
   }
 
   /**
@@ -36,7 +58,15 @@ public class InverseSequence implements Sequence {
    * @param initial starting value to search for
    */
   public InverseSequence(final Sequence seq, final long initial) {
-    this(seq, initial, 1);
+    this(DEFOFF, seq, initial, 1);
+  }
+
+  /**
+   * Construct a new sequence of positions.
+   * @param seq underlying sequence
+   */
+  public InverseSequence(final int offset, final Sequence seq) {
+    this(offset, seq, 1);
   }
 
   /**
@@ -44,7 +74,7 @@ public class InverseSequence implements Sequence {
    * @param seq underlying sequence
    */
   public InverseSequence(final Sequence seq) {
-    this(seq, 1);
+    this(DEFOFF, seq, 1);
   }
 
   @Override

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
@@ -16,7 +17,7 @@ import irvine.oeis.Sequence;
  * and in the last row with <code>mLastRow[k - j]</code> for <code>j=1..k</code>.
  * @author Georg Fischer
  */
-public class Triangle implements Sequence {
+public class Triangle extends AbstractSequence {
 
   protected final ArrayList<Z[]> mRows = new ArrayList<>();
   protected int mRow; // current row index n
@@ -32,6 +33,7 @@ public class Triangle implements Sequence {
    * Generates an ordinary Pascal triangle (A007318).
    */
   public Triangle() {
+    super(0);
     initialize(new Z[] { Z.ONE });
   }
 
@@ -41,6 +43,7 @@ public class Triangle implements Sequence {
    * Generates a triangle with Pascal's rule.
    */
   public Triangle(final String inits) {
+    super(0);
     initialize(inits.isEmpty() ? new Z[] { Z.ONE } : ZUtils.toZ(inits));
   }
 
@@ -50,6 +53,7 @@ public class Triangle implements Sequence {
    * Generates a triangle with Pascal's rule.
    */
   public Triangle(final long... inits) {
+    super(0);
     initialize(ZUtils.toZ(inits));
   }
 

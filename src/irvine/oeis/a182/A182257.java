@@ -13,6 +13,6 @@ public class A182257 extends PrependSequence {
 
   /** Construct the sequence. */
   public A182257() {
-    super(1, new EgyptianFractionSequence(CR.PI), 1, 1, 1);
+    super(new EgyptianFractionSequence(CR.PI).skip(1), 1,  1,  1);
   }
 }

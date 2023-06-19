@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.LinkedList;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * This class generates coordination sequences for k-uniform tilings
@@ -23,7 +23,7 @@ import irvine.oeis.SequenceWithOffset;
  *
  * @author Georg Fischer
  */
-public class TilingSequence implements Serializable, SequenceWithOffset {
+public class TilingSequence extends AbstractSequence implements Serializable {
 
   /** Debugging mode: 0=none, 1=some, 2=more */
   public static int sDebug;
@@ -65,6 +65,7 @@ public class TilingSequence implements Serializable, SequenceWithOffset {
    * Empty Constructor - not used.
    */
   public TilingSequence() {
+    super(0);
   } // Constructor
 
   /**
@@ -74,6 +75,7 @@ public class TilingSequence implements Serializable, SequenceWithOffset {
    * @param typeArray array of {@link VertexType}s for this TilingSequence
    */
   public TilingSequence(final int offset, final VertexTypeArray typeArray) {
+    super(offset);
     configure(offset, typeArray);
   } // Constructor(int,VertexTypeArray)
 
@@ -84,6 +86,7 @@ public class TilingSequence implements Serializable, SequenceWithOffset {
    * @param pairs String array of semicolon-separated pairs <code>"vertexId;taRotList"</code>
    */
   public TilingSequence(final int offset, String[] pairs) {
+    super(offset);
     final int vertexTypeNo = pairs.length;
     VertexTypeArray typeArray = new VertexTypeArray(vertexTypeNo);
     for (final String pair : pairs) {
@@ -110,11 +113,6 @@ public class TilingSequence implements Serializable, SequenceWithOffset {
     mTypeArray = typeArray;
     mTypeArray.complete();
   } // configure(VertexTypeArray)
-
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
 
   /**
    * Defines the initial set of vertices, and initializes the tiling's dynamic data structures.

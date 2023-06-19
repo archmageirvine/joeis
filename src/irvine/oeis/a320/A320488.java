@@ -13,6 +13,6 @@ public class A320488 extends PrependSequence {
 
   /** Construct the sequence. */
   public A320488() {
-    super(0, new InverseEulerTransform(new A004104()), 1);
+    super(new InverseEulerTransform(new A004104()).skip(0), 1);
   }
 }

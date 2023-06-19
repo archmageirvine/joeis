@@ -8,51 +8,94 @@ import irvine.math.z.Z;
  * is indexed from 0, even though term 0 is not used.
  * @author Sean A. Irvine
  */
-public class HalfConvolutionSequence implements Sequence {
+public class HalfConvolutionSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 1; // default offset
   private final MemorySequence mA;
   private final MemorySequence mB;
   private int mN = 0;
   private final int mMiddle;
 
   /**
-   * Construct a half-convolution sequence
+   * Construct a half-convolution sequence.
    * @param a first sequence
    * @param b second sequence
    * @param middle should the middle term be included
    */
   public HalfConvolutionSequence(final Sequence a, final Sequence b, final boolean middle) {
+    this(DEFOFF, a, b, middle);
+  }
+
+  /**
+   * Construct a half-convolution sequence.
+   * @param offset first index
+   * @param a first sequence
+   * @param b second sequence
+   * @param middle should the middle term be included
+   */
+  public HalfConvolutionSequence(final int offset, final Sequence a, final Sequence b, final boolean middle) {
+    super(offset);
     mA = MemorySequence.cachedSequence(a);
     mB = MemorySequence.cachedSequence(b);
     mMiddle = middle ? 1 : 0;
   }
 
   /**
-   * Construct a half-convolution sequence
+   * Construct a half-convolution sequence.
    * @param a first sequence
    * @param b second sequence
    */
   public HalfConvolutionSequence(final Sequence a, final Sequence b) {
-    this(a, b, true);
+    this(DEFOFF, a, b, true);
   }
 
   /**
-   * Construct a half-convolution sequence
+   * Construct a half-convolution sequence.
+   * @param offset first index
+   * @param a first sequence
+   * @param b second sequence
+   */
+  public HalfConvolutionSequence(final int offset, final Sequence a, final Sequence b) {
+    this(offset, a, b, true);
+  }
+
+  /**
+   * Construct a half-convolution sequence.
    * @param seq sequence
    * @param middle should the middle term be included
    */
   public HalfConvolutionSequence(final Sequence seq, final boolean middle) {
+    this(DEFOFF, seq, middle);
+  }
+
+  /**
+   * Construct a half-convolution sequence.
+   * @param offset first index
+   * @param seq sequence
+   * @param middle should the middle term be included
+   */
+  public HalfConvolutionSequence(final int offset, final Sequence seq, final boolean middle) {
+    super(offset);
     mA = MemorySequence.cachedSequence(seq);
     mB = mA;
     mMiddle = middle ? 1 : 0;
   }
 
   /**
-   * Construct a half-convolution sequence
+   * Construct a half-convolution sequence.
    * @param seq sequence
    */
   public HalfConvolutionSequence(final Sequence seq) {
-    this(seq, true);
+    this(DEFOFF, seq, true);
+  }
+
+  /**
+   * Construct a half-convolution sequence.
+   * @param offset first index
+   * @param seq sequence
+   */
+  public HalfConvolutionSequence(final int offset, final Sequence seq) {
+    this(offset, seq, true);
   }
 
   @Override

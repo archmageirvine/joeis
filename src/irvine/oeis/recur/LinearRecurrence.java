@@ -5,13 +5,13 @@ import java.util.Arrays;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * An integer linear recurrence.
  * @author Sean A. Irvine
  */
-public class LinearRecurrence implements Sequence {
+public class LinearRecurrence extends AbstractSequence {
 
   private static final Z[] EMPTY = new Z[0];
 
@@ -33,6 +33,7 @@ public class LinearRecurrence implements Sequence {
    * @param preTerms terms to produce before the recurrence
    */
   protected LinearRecurrence(final Z[] recurrence, final Z[] terms, final Z... preTerms) {
+    super(0);
     checkLength(recurrence.length, terms.length);
     mPreTerms = Arrays.copyOf(preTerms, preTerms.length);
     mPrev = Arrays.copyOf(terms, terms.length);

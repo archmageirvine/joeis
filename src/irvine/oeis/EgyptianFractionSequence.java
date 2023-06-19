@@ -19,8 +19,9 @@ import irvine.math.z.Z;
  * Tehf features can be added. Currently only 0, 1 are implemented.
  * @author Georg Fischer
  */
-public class EgyptianFractionSequence implements Sequence {
+public class EgyptianFractionSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 0; // default offset
   /** Flag bit indicating alternating signs starting with positive. */
   public static final int ALTERNATE_SIGNS_PLUS = 2;
 
@@ -34,7 +35,7 @@ public class EgyptianFractionSequence implements Sequence {
    * @param realNumber number to be expanded
    */
   public EgyptianFractionSequence(final CR realNumber) {
-    this(realNumber, 0);
+    this(DEFOFF, realNumber, 0);
   }
 
   /**
@@ -43,6 +44,27 @@ public class EgyptianFractionSequence implements Sequence {
    * @param features bit mask for variant(s)
    */
   public EgyptianFractionSequence(final CR realNumber, final int features) {
+    this(DEFOFF, realNumber, features);
+  }
+
+  /**
+   * Construct the Egyptian fraction of the given number
+   * without additional features.
+   * @param offset first index
+   * @param realNumber number to be expanded
+   */
+  public EgyptianFractionSequence(final int offset, final CR realNumber) {
+    this(offset, realNumber, 0);
+  }
+
+  /**
+   * Construct the Egyptian fraction of the given number.
+   * @param offset first index
+   * @param realNumber number to be expanded
+   * @param features bit mask for variant(s)
+   */
+  public EgyptianFractionSequence(final int offset, final CR realNumber, final int features) {
+    super(offset);
     mEgyptian = realNumber;
     mFeatures = features;
     if ((mFeatures & 1) == 1) {

@@ -8,6 +8,7 @@ import java.util.List;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
@@ -16,8 +17,9 @@ import irvine.oeis.Sequence;
  * A sequence comprising the Mobius transform of another sequence.
  * @author Sean A. Irvine
  */
-public class MobiusTransformSequence implements Sequence {
+public class MobiusTransformSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 1;
   private final MemorySequence mSeq;
   private final int mOffset;
   private final Z mInitialTerm;
@@ -45,11 +47,13 @@ public class MobiusTransformSequence implements Sequence {
    * Creates a new Mobius transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
    *
+   * @param offset first index
    * @param seq underlying sequence
    * @param skip number of terms to skip
    * @param initialTerm initial term to return
    */
-  public MobiusTransformSequence(final Sequence seq, final int skip, final Z initialTerm) {
+  public MobiusTransformSequence(final int offset, final Sequence seq, final int skip, final Z initialTerm) {
+    super(offset);
     mSeq = MemorySequence.cachedSequence(seq);
     mOffset = skip - 1;
     mInitialTerm = initialTerm;
@@ -61,9 +65,33 @@ public class MobiusTransformSequence implements Sequence {
    *
    * @param seq underlying sequence
    * @param skip number of terms to skip
+   * @param initialTerm initial term to return
+   */
+  public MobiusTransformSequence(final Sequence seq, final int skip, final Z initialTerm) {
+    this(DEFOFF, seq, skip, initialTerm);
+  }
+
+  /**
+   * Creates a new Mobius transform sequence of the given sequence, skipping
+   * the specified number of terms in advance.
+   *
+   * @param offset first index
+   * @param seq underlying sequence
+   * @param skip number of terms to skip
+   */
+  public MobiusTransformSequence(final int offset, final Sequence seq, final int skip) {
+    this(offset, seq, skip, Z.ZERO);
+  }
+
+  /**
+   * Creates a new Mobius transform sequence of the given sequence, skipping
+   * the specified number of terms in advance.
+   *
+   * @param seq underlying sequence
+   * @param skip number of terms to skip
    */
   public MobiusTransformSequence(final Sequence seq, final int skip) {
-    this(seq, skip, Z.ZERO);
+    this(DEFOFF, seq, skip, Z.ZERO);
   }
 
   private Z mobiusTransform(final int n) {

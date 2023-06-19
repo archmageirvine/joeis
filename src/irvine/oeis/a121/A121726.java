@@ -1,7 +1,7 @@
 package irvine.oeis.a121;
-// manually 2021-01-21
+// manually 2023-06-19
 
-import irvine.oeis.AddConstantSequence;
+import irvine.math.z.Z;
 import irvine.oeis.a006.A006231;
 
 /**
@@ -9,10 +9,15 @@ import irvine.oeis.a006.A006231;
  *
  * @author Georg Fischer
  */
-public class A121726 extends AddConstantSequence {
+public class A121726 extends A006231 {
 
   /** Construct the sequence. */
   public A121726() {
-    super(1, new A006231());
+    setOffset(1);
+  }
+
+  @Override
+  public Z next() {
+    return super.next().add(1);
   }
 }

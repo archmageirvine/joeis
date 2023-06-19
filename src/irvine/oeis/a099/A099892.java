@@ -13,6 +13,6 @@ public class A099892 extends PrependSequence {
 
   /** Construct the sequence. */
   public A099892() {
-    super(1, new MultiplicativeSequence(0, (p, e) -> p.equals(Z.TWO) ? Z.ONE.shiftLeft(e - 1).multiply(3) : Z.ZERO), 0);
+    super(new MultiplicativeSequence(0,  (p,  e) -> p.equals(Z.TWO) ? Z.ONE.shiftLeft(e - 1).multiply(3) : Z.ZERO).skip(1), 0);
   }
 }

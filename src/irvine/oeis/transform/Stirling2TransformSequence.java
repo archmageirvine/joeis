@@ -8,6 +8,7 @@ import java.util.List;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
 
@@ -16,7 +17,7 @@ import irvine.oeis.Sequence;
  * another sequence.
  * @author Sean A. Irvine
  */
-public class Stirling2TransformSequence implements Sequence {
+public class Stirling2TransformSequence extends AbstractSequence {
 
   /**
    * Apply the Stirling numbers of the second kind transform to the given sequence
@@ -54,6 +55,19 @@ public class Stirling2TransformSequence implements Sequence {
    * @param skip number of terms to skip
    */
   public Stirling2TransformSequence(final Sequence seq, final int skip) {
+    this(0, seq, skip);
+  }
+
+  /**
+   * Creates a new Stirling transform sequence of the given sequence, skipping
+   * the specified number of terms in advance.
+   *
+   * @param offset first index of target sequence
+   * @param seq underlying sequence
+   * @param skip number of terms to skip
+   */
+  public Stirling2TransformSequence(final int offset, final Sequence seq, final int skip) {
+    super(offset);
     mSeq = seq;
     for (int k = 0; k < skip; ++k) {
       seq.next();

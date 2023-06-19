@@ -13,6 +13,6 @@ public class A239885 extends PrependSequence {
 
   /** Construct the sequence. */
   public A239885() {
-    super(1, new A060822(1, (n, p) -> Z.valueOf(p).multiply(Z.TWO.pow(Z.valueOf(n).subtract(Z.TWO)))), 1);
+    super(new A060822(1,  (n,  p) -> Z.valueOf(p).multiply(Z.TWO.pow(Z.valueOf(n).subtract(Z.TWO)))).skip(1), 1);
   }
 }

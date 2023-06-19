@@ -13,6 +13,6 @@ public class A069321 extends PrependSequence {
 
   /** Construct the sequence. */
   public A069321() {
-    super(1, new Stirling2TransformSequence(new A001563(), 0), 1);
+    super(new Stirling2TransformSequence(new A001563(),  0).skip(1), 1);
   }
 }

@@ -9,8 +9,9 @@ import irvine.math.z.Z;
  * Compute the Dirichlet inverse of a sequence.
  * @author Georg Fischer
  */
-public class DirichletInverseSequence implements Sequence {
+public class DirichletInverseSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 1;
   protected final MemorySequence mSeq;
   private final ArrayList<Z> mAs; // this sequence remembered
   protected int mN; // current index >= 1
@@ -20,6 +21,16 @@ public class DirichletInverseSequence implements Sequence {
    * @param seq main sequence
    */
   public DirichletInverseSequence(final Sequence seq) {
+    this(DEFOFF, seq);
+  }
+
+  /**
+   * Create a new sequence with no additional terms at the front.
+   * @param offset first index of target sequence
+   * @param seq main sequence
+   */
+  public DirichletInverseSequence(final int offset, final Sequence seq) {
+    super(offset);
     mN = 0;
     mAs = new ArrayList<>();
     mAs.add(Z.ZERO); // [0] not used

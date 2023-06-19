@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A sequence generated verbatim from terms of the first (left) list, and when that is exhausted,
@@ -15,7 +15,7 @@ import irvine.oeis.Sequence;
  * See also {@link PeriodicSequence}.
  * @author Georg Fischer
  */
-public class PaddingSequence implements Sequence {
+public class PaddingSequence extends AbstractSequence {
 
   private final Z[] mLList; // start with this list
   private final Z[] mRList; // superimpose this list when mLList is exhausted
@@ -29,10 +29,27 @@ public class PaddingSequence implements Sequence {
    * @param rightList the right list
    */
   public PaddingSequence(final long[] leftList, final long[] rightList) {
-    mLLen = leftList.length;
-    mLList = ZUtils.toZ(leftList);
-    mRLen = rightList.length;
-    mRList = ZUtils.toZ(rightList);
+    this(0, ZUtils.toZ(leftList), ZUtils.toZ(rightList));
+  }
+
+  /**
+   * Construct the sequence.
+   * @param offset first index
+   * @param leftList the left list
+   * @param rightList the right list
+   */
+  public PaddingSequence(final String leftList, final String rightList) {
+    this(0, ZUtils.toZ(leftList), ZUtils.toZ(rightList));
+  }
+
+  /**
+   * Construct the sequence.
+   * @param offset first index
+   * @param leftList the left list
+   * @param rightList the right list
+   */
+  public PaddingSequence(final int offset, final long[] leftList, final long[] rightList) {
+    this(offset, ZUtils.toZ(leftList), ZUtils.toZ(rightList));
   }
 
   /**
@@ -40,10 +57,21 @@ public class PaddingSequence implements Sequence {
    * @param leftList the left list
    * @param rightList the right list
    */
-  public PaddingSequence(final String leftList, final String rightList) {
-    mLList = ZUtils.toZ(leftList);
+  public PaddingSequence(final int offset, final String leftList, final String rightList) {
+    this(offset, ZUtils.toZ(leftList), ZUtils.toZ(rightList));
+  }
+
+  /**
+   * Construct the sequence.
+   * @param offset first index
+   * @param leftList the left list
+   * @param rightList the right list
+   */
+  public PaddingSequence(final int offset, final Z[] leftList, final Z[] rightList) {
+    super(offset);
+    mLList = leftList;
     mLLen = mLList.length;
-    mRList = ZUtils.toZ(rightList);
+    mRList = rightList;
     mRLen = mRList.length;
   }
 

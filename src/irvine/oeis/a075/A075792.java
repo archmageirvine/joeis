@@ -1,6 +1,5 @@
 package irvine.oeis.a075;
 // manually deris/stirling2 at 2021-12-09 19:40
-// DO NOT EDIT here!
 
 import irvine.oeis.PrependSequence;
 import irvine.oeis.transform.Stirling2TransformSequence;
@@ -14,6 +13,6 @@ public class A075792 extends PrependSequence {
 
   /** Construct the sequence. */
   public A075792() {
-    super(1, new Stirling2TransformSequence(new A089064(), 0), 1);
+    super(new Stirling2TransformSequence(new A089064(),  0).skip(1), 1);
   }
 }

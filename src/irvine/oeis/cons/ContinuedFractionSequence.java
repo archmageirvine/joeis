@@ -4,14 +4,16 @@ import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
  * A sequence generating the continued fraction of a computable real.
  * @author Sean A. Irvine
  */
-public class ContinuedFractionSequence implements Sequence {
+public class ContinuedFractionSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 1;
   private final DecimalExpansionSequence mSeq;
   private final int mAccuracy;
   protected long mN = -1;
@@ -22,8 +24,7 @@ public class ContinuedFractionSequence implements Sequence {
    * @param accuracy accuracy to pass down
    */
   public ContinuedFractionSequence(final DecimalExpansionSequence seq, final int accuracy) {
-    mSeq = seq;
-    mAccuracy = accuracy;
+    this(DEFOFF, seq, accuracy);
   }
 
   /**
@@ -31,7 +32,7 @@ public class ContinuedFractionSequence implements Sequence {
    * @param seq underlying decimal expansion sequence
    */
   public ContinuedFractionSequence(final DecimalExpansionSequence seq) {
-    this(seq, 500);
+    this(DEFOFF, seq, 500);
   }
 
   /**
@@ -40,7 +41,38 @@ public class ContinuedFractionSequence implements Sequence {
    * @param seq underlying sequence
    */
   public ContinuedFractionSequence(final Sequence seq) {
-    this(seq, 10);
+    this(DEFOFF, seq, 10);
+  }
+
+  /**
+   * Construct the sequence.
+   * @param offset first index
+   * @param seq underlying decimal expansion sequence
+   * @param accuracy accuracy to pass down
+   */
+  public ContinuedFractionSequence(final int offset, final DecimalExpansionSequence seq, final int accuracy) {
+    super(offset);
+    mSeq = seq;
+    mAccuracy = accuracy;
+  }
+
+  /**
+   * Construct the sequence.
+   * @param offset first index
+   * @param seq underlying decimal expansion sequence
+   */
+  public ContinuedFractionSequence(final int offset, final DecimalExpansionSequence seq) {
+    this(offset, seq, 500);
+  }
+
+  /**
+   * Construct a continued fraction expansion from an existing sequence.
+   * Only works for an underlying sequence consisting of single digits.
+   * @param offset first index
+   * @param seq underlying sequence
+   */
+  public ContinuedFractionSequence(final int offset, final Sequence seq) {
+    this(offset, seq, 10);
   }
 
   /**
@@ -70,6 +102,17 @@ public class ContinuedFractionSequence implements Sequence {
         return CR.valueOf(new Q(mNum, mDen)).getApprox(precision);
       }
     }), 1000);
+  }
+
+  /**
+   * Construct a continued fraction expansion from an existing sequence.
+   * Only works for an underlying sequence consisting of single digits.
+   * @param offset first index (for compatibility, not used, target has always 1)
+   * @param seq underlying sequence
+   * @param base sequence yields digits in this base
+   */
+  public ContinuedFractionSequence(final int offset, final Sequence seq, final int base) {
+    this(seq, base);
   }
 
   @Override

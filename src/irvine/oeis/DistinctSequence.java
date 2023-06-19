@@ -8,17 +8,28 @@ import irvine.math.z.Z;
  * A sequence containing the distinct values from another sequence.
  * @author Sean A. Irvine
  */
-public class DistinctSequence implements Sequence {
+public class DistinctSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 0;
   private final Sequence mSequence;
   private final TreeSet<Z> mSeen = new TreeSet<>();
+
+  /**
+   * Construct a new distinct sequence from the specified sequence
+   * @param offset first index
+   * @param sequence underlying sequence
+   */
+  public DistinctSequence(final int offset, final Sequence sequence) {
+    super(offset);
+    mSequence = sequence;
+  }
 
   /**
    * Construct a new distinct sequence from the specified sequence
    * @param sequence underlying sequence
    */
   public DistinctSequence(final Sequence sequence) {
-    mSequence = sequence;
+    this(DEFOFF, sequence);
   }
 
   @Override

@@ -14,7 +14,7 @@ public class A052856 extends PrependSequence {
 
   /** Construct the sequence. */
   public A052856() {
-    super(1, new Stirling2TransformSequence(new A000142(), 0), 0);
+    super(new Stirling2TransformSequence(new A000142(),  0).skip(1), 0);
   }
   
   @Override

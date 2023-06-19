@@ -6,8 +6,9 @@ import irvine.math.z.Z;
  * Complement of a monotonically increasing sequence.
  * @author Sean A. Irvine
  */
-public class ComplementSequence implements Sequence {
+public class ComplementSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 0;
   private final Sequence mSeq;
   private Z mN;
   private Z mCurrent;
@@ -18,9 +19,7 @@ public class ComplementSequence implements Sequence {
    * @param start start value
    */
   public ComplementSequence(final Sequence seq, final Z start) {
-    mSeq = seq;
-    mN = start;
-    mCurrent = mSeq.next();
+    this(DEFOFF, seq, Z.ZERO);
   }
 
   /**
@@ -28,7 +27,29 @@ public class ComplementSequence implements Sequence {
    * @param seq sequence to complement
    */
   public ComplementSequence(final Sequence seq) {
-    this(seq, Z.ZERO);
+    this(DEFOFF, seq, Z.ZERO);
+  }
+
+  /**
+   * Complement of a sequence.
+   * @param offset first index
+   * @param seq sequence to complement
+   * @param start start value
+   */
+  public ComplementSequence(final int offset, final Sequence seq, final Z start) {
+    super(DEFOFF);
+    mSeq = seq;
+    mN = start;
+    mCurrent = mSeq.next();
+  }
+
+  /**
+   * Complement of a sequence starting at 0.
+   * @param offset first index
+   * @param seq sequence to complement
+   */
+  public ComplementSequence(final int offset, final Sequence seq) {
+    this(offset, seq, Z.ZERO);
   }
 
   @Override

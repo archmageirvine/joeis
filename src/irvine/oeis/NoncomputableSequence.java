@@ -9,9 +9,8 @@ import irvine.math.z.Z;
  * Same as FiniteSequence, but throws <code>UnsupportedOperationException</code> at the end.
  * @author Georg Fischer
  */
-public class NoncomputableSequence implements Sequence {
+public class NoncomputableSequence extends FiniteSequence {
 
-  private final Z[] mSeq;
   private int mN = 0;
 
   /**
@@ -19,10 +18,7 @@ public class NoncomputableSequence implements Sequence {
    * @param seq the values
    */
   public NoncomputableSequence(final long... seq) {
-    mSeq = new Z[seq.length];
-    for (int k = 0; k < seq.length; ++k) {
-      mSeq[k] = Z.valueOf(seq[k]);
-    }
+    super(DEFOFF, NONCOMPUTABLE, seq);
   }
 
   /**
@@ -30,7 +26,7 @@ public class NoncomputableSequence implements Sequence {
    * @param seq the values
    */
   public NoncomputableSequence(final Z... seq) {
-    mSeq = seq;
+    super(DEFOFF, NONCOMPUTABLE, seq);
   }
 
   /**
@@ -38,13 +34,34 @@ public class NoncomputableSequence implements Sequence {
    * @param seq the values
    */
   public NoncomputableSequence(final Collection<Z> seq) {
-    mSeq = seq.toArray(new Z[0]);
+    super(DEFOFF, NONCOMPUTABLE, seq);
+  }
+
+  /**
+   * Construct the sequence.
+   * @param offset first index
+   * @param attr attribute
+   * @param seq the values
+   */
+  public NoncomputableSequence(final int offset, final String attr, final long... seq) {
+    super(offset, attr, seq);
+  }
+
+  /**
+   * Construct the sequence.
+   * @param offset first index
+   * @param attr attribute
+   * @param seq the values
+   */
+  public NoncomputableSequence(final int offset, final String attr, final String seq) {
+    super(offset, attr, seq);
   }
 
   @Override
   public Z next() {
-    if (mN < mSeq.length) {
-      return mSeq[mN++];
+    ++mN;
+    if (mN < size()) {
+      return super.next();
     } else {
       throw new UnsupportedOperationException("no further terms known");
     }

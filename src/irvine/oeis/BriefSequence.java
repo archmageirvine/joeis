@@ -15,6 +15,7 @@ public class BriefSequence extends NoncomputableSequence {
    */
   public BriefSequence(final long... seq) {
     super(seq);
+    mAttr = BRIEF;
   }
 
   /**
@@ -23,6 +24,26 @@ public class BriefSequence extends NoncomputableSequence {
    */
   public BriefSequence(final Z... seq) {
     super(seq);
+    mAttr = BRIEF;
+  }
+
+  /**
+   * Construct the sequence.
+   * @param offset first index
+   * @param attr attribute
+   * @param seq the values
+   */
+  public BriefSequence(final int offset, final String attr, final long... seq) {
+    super(offset, attr, seq);
+  }
+
+  /**
+   * Construct the sequence.
+   * @param offset first index
+   * @param attr attribute
+   * @param seq the values
+   */
+  public BriefSequence(final int offset, final String attr, final String seq) {
+    super(offset, attr, seq);
   }
 }
-

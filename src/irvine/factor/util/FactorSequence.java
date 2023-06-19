@@ -795,11 +795,9 @@ public final class FactorSequence {
    * resolved to primes and probable primes.
    */
   public Z pod() {
-    Z product = Z.ONE;
-    for (final Z dd : divisors()) {
-      product = product.multiply(dd);
-    }
-    return product;
+    final Z n = product();
+    final Z s0 = sigma0();
+    return s0.isEven() ? n.pow(s0.divide2()) : n.pow(s0).sqrt();
   }
 
   /**

@@ -16,7 +16,7 @@ public class A064180 extends A002808 {
     while (true) {
       final Z c = super.next();
       final FactorSequence fs = Jaguar.factor(c);
-      if (fs.sigma().subtract(c).subtract(1).isSquare() && c.pow(fs.sigma0().divide2().subtract(1)).isSquare()) {
+      if (fs.sigma().subtract(c).subtract(1).isSquare() && fs.pod().divide(c).isSquare()) {
         return c;
       }
     }

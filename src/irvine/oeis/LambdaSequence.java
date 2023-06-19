@@ -55,7 +55,7 @@ public class LambdaSequence extends AbstractSequence {
    * @param lambda lambda expression for an index variable starting at <code>offset</code>.
    * @param initTerms String of comma separated integers
    */
-  public LambdaSequence(final int offset, final Function<Integer, Z> lambda, String initTerms) {
+  public LambdaSequence(final int offset, final Function<Integer, Z> lambda, final String initTerms) {
     this(offset, lambda, ZUtils.toZ(initTerms));
   }
 
@@ -66,7 +66,7 @@ public class LambdaSequence extends AbstractSequence {
    * @param lambda lambda expression for an index variable starting at <code>offset</code>.
    * @param initTerms String of comma separated integers
    */
-  public LambdaSequence(final int offset, final Function<Integer, Z> lambda, Z... initTerms) {
+  public LambdaSequence(final int offset, final Function<Integer, Z> lambda, final Z... initTerms) {
     super(offset);
     mN = offset - 1;
     mLambda = lambda;

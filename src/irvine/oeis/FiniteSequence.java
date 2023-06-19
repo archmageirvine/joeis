@@ -16,7 +16,7 @@ import irvine.math.z.ZUtils;
 public class FiniteSequence extends AbstractSequence implements Serializable {
 
   /** Default offset. */
-  public final static int DEFOFF = 0;
+  public static final int DEFOFF = 0;
   private int mN = 0;
   private final ArrayList<Z> mList;
   protected String mAttr; // attribute: one of the following

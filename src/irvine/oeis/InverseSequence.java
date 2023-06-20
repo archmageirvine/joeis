@@ -26,7 +26,7 @@ public class InverseSequence extends AbstractSequence {
    * @param initial starting value to search for
    * @param offset1 offset of seq
    */
-  public InverseSequence(final int offset, final Sequence seq, final long initial, final int offset1) {
+  public InverseSequence(final int offset, final Sequence seq, final long initial, final long offset1) {
     super(offset);
     mS = seq;
     mN = initial - 1;

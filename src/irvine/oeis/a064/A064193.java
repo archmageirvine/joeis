@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064193.
+ * A064193 Numbers whose product of divisors and sum of unitary divisors are both squares.
  * @author Sean A. Irvine
  */
 public class A064193 extends Sequence1 {

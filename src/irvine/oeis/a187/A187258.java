@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a089.A089742;
 
 /**
- * A187258 Number of UH^jD's for some j&gt;0, in all peakless Motzkin paths of length n (here U=(1, 1), D=(1,-1) and H=(1, 0); can be easily expressed using RNA secondary structure terminology).
+ * A187258 Number of UH^jD's for some j&gt;0, in all peakless Motzkin paths of length n (here U=(1,1), D=(1,-1) and H=(1,0); can be easily expressed using RNA secondary structure terminology).
  * @author Georg Fischer
  */
 public class A187258 extends PrependSequence {

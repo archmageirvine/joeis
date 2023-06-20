@@ -6,7 +6,7 @@ import irvine.oeis.a059.A059365;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A130020 Triangle T(n,k), 0&lt;=k&lt;=n, read by rows given by [1, 0, 0, 0, 0, 0, 0,...] DELTA [0, 1, 1, 1, 1, 1, 1,...] where DELTA is the operator defined in A084938 .
+ * A130020 Triangle T(n,k), 0&lt;=k&lt;=n, read by rows given by [1,0,0,0,0,0,0,...] DELTA [0,1,1,1,1,1,1,...] where DELTA is the operator defined in A084938 .
  * @author Georg Fischer
  */
 public class A130020 extends Transpose {

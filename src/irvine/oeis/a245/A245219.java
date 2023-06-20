@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.a097.A097509;
 
 /**
- * A245219 Continued fraction expansion of the constant c in A245218; c = sup{f(n, 1)}, where f(1,x) = x + 1 and thereafter f(n,x) = x + 1 if n is in A001951, else f(n,x) = 1/x.
+ * A245219 Continued fraction expansion of the constant c in A245218; c = sup{f(n,1)}, where f(1,x) = x + 1 and thereafter f(n,x) = x + 1 if n is in A001951, else f(n,x) = 1/x.
  * @author Georg Fischer
  */
 public class A245219 extends A097509 {

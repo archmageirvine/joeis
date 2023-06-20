@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a038.A038049;
 
 /**
- * A216857 Number of connected functions from {1, 2,...,n} into a subset of {1, 2,...,n} that have a fixed point summed over all subsets.
+ * A216857 Number of connected functions from {1,2,...,n} into a subset of {1,2,...,n} that have a fixed point summed over all subsets.
  * @author Georg Fischer
  */
 public class A216857 extends PrependSequence {

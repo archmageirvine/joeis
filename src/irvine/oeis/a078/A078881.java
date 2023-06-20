@@ -4,7 +4,7 @@ package irvine.oeis.a078;
 import irvine.oeis.a006.A006165;
 
 /**
- * A078881 Size of the largest subset S of {1, 2, 3,...,n} with the property that if i and j are distinct elements of S then i XOR j is not in S, where XOR is the bitwise exclusive-OR operator.
+ * A078881 Size of the largest subset S of {1,2,3,...,n} with the property that if i and j are distinct elements of S then i XOR j is not in S, where XOR is the bitwise exclusive-OR operator.
  * @author Georg Fischer
  */
 public class A078881 extends A006165 {

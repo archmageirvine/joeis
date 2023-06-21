@@ -61,7 +61,7 @@ public class A005640 extends AbstractSequence {
     return parts;
   }
 
-  private MemoryFunction1<Z> mB = new MemoryFunction1<>() {
+  private final MemoryFunction1<Z> mB = new MemoryFunction1<>() {
 
     private Z a(final int n, final int[] c) {
       if (c[n] == 1) {

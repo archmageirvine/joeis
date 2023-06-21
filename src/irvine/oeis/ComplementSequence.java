@@ -19,7 +19,7 @@ public class ComplementSequence extends AbstractSequence {
    * @param start start value
    */
   public ComplementSequence(final Sequence seq, final Z start) {
-    this(DEFOFF, seq, Z.ZERO);
+    this(DEFOFF, seq, start);
   }
 
   /**

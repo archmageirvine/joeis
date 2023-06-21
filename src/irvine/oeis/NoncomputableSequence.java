@@ -11,7 +11,7 @@ import irvine.math.z.Z;
  */
 public class NoncomputableSequence extends FiniteSequence {
 
-  private int mN = 0;
+  private int mN = -1;
 
   /**
    * Construct the sequence.

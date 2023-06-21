@@ -7,7 +7,7 @@ import irvine.util.array.LongDynamicArray;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A015994 Smallest k such that the smallest palindrome > k in the Reverse and Add! trajectory of k is reached after exactly n iterations.
+ * A015994 Smallest k such that the smallest palindrome &gt; k in the Reverse and Add! trajectory of k is reached after exactly n iterations.
  * Adapted from A023109.
  * @author Sean A. Irvine
  * @author Georg Fischer

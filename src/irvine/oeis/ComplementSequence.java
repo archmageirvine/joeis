@@ -37,7 +37,7 @@ public class ComplementSequence extends AbstractSequence {
    * @param start start value
    */
   public ComplementSequence(final int offset, final Sequence seq, final Z start) {
-    super(DEFOFF);
+    super(offset);
     mSeq = seq;
     mN = start;
     mCurrent = mSeq.next();

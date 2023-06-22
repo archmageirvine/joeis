@@ -9,7 +9,6 @@ import irvine.oeis.Sequence0;
 
 /**
  * A196873 E.g.f. A(x) satisfies: A(x*cos(x)) = 1/cos(x).
- * E.g.f.: divx(reverse(x*cos(x)))
  * @author Georg Fischer
  */
 public class A196873 extends Sequence0 {

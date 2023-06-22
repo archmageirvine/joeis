@@ -12,7 +12,7 @@ public class A316329 extends MorphismFixedPointSequence {
 
   /** Construct the sequence. */
   public A316329() {
-    super();
+    super(0);
     configure("3", "331231", "1->11, 2->2, 3->312"); 
     // no initialize();
   }

@@ -2,7 +2,6 @@ package irvine.oeis.a121;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.a001.A001764;
 
 /**
@@ -10,13 +9,13 @@ import irvine.oeis.a001.A001764;
  * a(n) = if n == 1 (mod 3) then (1/3) * A001764(n) + (2/3) * A001764((n-1)/3) else (1/3) * A001764(n) fi.
  * @author Georg Fischer
  */
-public class A121179 extends A001764 implements SequenceWithOffset {
+public class A121179 extends A001764 {
 
   private long mN = -1;
 
-  @Override
-  public int getOffset() {
-    return 0;
+  /** Construct the sequence. */
+  public A121179() {
+    setOffset(0);
   }
 
   @Override

@@ -1,7 +1,7 @@
 package irvine.oeis.base;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * Second, alternate attempt, first version was <code>MorphismSequence</code>.
@@ -18,9 +18,10 @@ import irvine.oeis.Sequence;
  * </pre>
  * @author Georg Fischer
  */
-public class MorphismFixedPointSequence implements Sequence {
+public class MorphismFixedPointSequence extends AbstractSequence {
 
-  private static final int POS_FRACTION = 4; 
+  private static final int DEFOFF = 1; // default offset
+  private static final int POS_FRACTION = 4;
   private static final int MAX_LEN = 1000000; // maximum length of a word
   protected String mStart; // the starting word
   protected String mAnchor; // start of the desired limiting word, or triangle of words if empty
@@ -34,10 +35,36 @@ public class MorphismFixedPointSequence implements Sequence {
   private static int sDebug = 0; // 0 = none, 1 = some, 2 = more debugging output
 
   /**
+   * Constructor with offset, used for special variants.
+   * @param offset first index
+   */
+  protected MorphismFixedPointSequence(final int offset) {
+    super(offset);
+  }
+
+  /**
    * Empty constructor, used for special variants.
    */
   protected MorphismFixedPointSequence() {
-  } // Constructor
+    super(DEFOFF);
+  }
+
+  /**
+   * Construct an instance which generates the fixed point of this morphism.
+   * @param offset first index
+   * @param anchor start of the desired limiting word, or triangle of words if empty
+   * @param start start with this word
+   * @param mappings pairs of digit string mappings, for example "0-&gt;001,1-&gt;0"
+   */
+  protected MorphismFixedPointSequence(final int offset, final String start, final String anchor, final String mappings) {
+    super(offset);
+    configure(start, anchor, mappings);
+    if (mIsAnchored) {
+      while (mCurWord.length() < 1024 || !mCurWord.startsWith(mAnchor)) { // expand a few times
+        expandWord();
+      }
+    }
+  }
 
   /**
    * Construct an instance which generates the fixed point of this morphism.
@@ -46,13 +73,8 @@ public class MorphismFixedPointSequence implements Sequence {
    * @param mappings pairs of digit string mappings, for example "0-&gt;001,1-&gt;0"
    */
   protected MorphismFixedPointSequence(final String start, final String anchor, final String mappings) {
-    configure(start, anchor, mappings);
-    if (mIsAnchored) {
-      while (mCurWord.length() < 1024 || !mCurWord.startsWith(mAnchor)) { // expand a few times
-        expandWord();
-      } // while iexp
-    }
-  } // Constructor
+    this(DEFOFF, start, anchor, mappings);
+  }
 
   /**
    * Construct an instance which generates the fixed point of this morphism.
@@ -74,14 +96,14 @@ public class MorphismFixedPointSequence implements Sequence {
       }
       mMap[imap++] = pair[0];
       mMap[imap++] = pair[1];
-    } // for pair1
+    }
     mStart = start;
     mCurWord = mStart;
     mAnchor = anchor;
     mIsAnchored = mAnchor.length() > 0;
     mPos = 0;
-  } // configure
-  
+  }
+
   /**
    * Get the next term of the sequence.
    * @return the next term
@@ -93,7 +115,7 @@ public class MorphismFixedPointSequence implements Sequence {
         expandWord();
         while (!mCurWord.startsWith(mAnchor)) { // make sure that it starts with the anchor
           expandWord();
-        } // while expanding
+        }
       }
     } else { // unanchored = triangle, expand all iterates in full length
       if (mPos >= mCurWord.length()) {
@@ -104,7 +126,7 @@ public class MorphismFixedPointSequence implements Sequence {
     // take next from current word
     final char ch = mCurWord.charAt(mPos++);
     return ch == 'M' ? Z.NEG_ONE : Z.valueOf(ch - '0');
-  } // next
+  }
 
   /**
    * Expand the current word by applying the mapping rules from left to right.
@@ -127,7 +149,7 @@ public class MorphismFixedPointSequence implements Sequence {
       if (busy) { // no mapping could be applied
         newWord.append(mCurWord.charAt(ipos++)); // copy character unchanged
       }
-    } // while ipos
+    }
     mCurWord = newWord.toString();
     mMaxPos = mCurWord.length() * (POS_FRACTION - 3) / POS_FRACTION;
 
@@ -143,11 +165,11 @@ public class MorphismFixedPointSequence implements Sequence {
     if (mCurWord.length() > MAX_LEN) {
       throw new IllegalArgumentException("mCurWord longer than " + MAX_LEN + " characters");
     }
-  } // expandWord
+  }
 
   /**
    * Test method
-   * @param args command line arguments: 
+   * @param args command line arguments:
    * <ul>
    * <li>-i initial word, start, default "0"</li>
    * <li>-a anchor, default "0010"</li>
@@ -196,5 +218,5 @@ public class MorphismFixedPointSequence implements Sequence {
       System.out.println(index + " " + seq.next());
       ++index;
     }
-  } // main
-} 
+  }
+}

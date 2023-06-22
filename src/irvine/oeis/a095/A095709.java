@@ -2,7 +2,6 @@ package irvine.oeis.a095;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.a000.A000796;
 import irvine.oeis.triangle.Triangle;
 
@@ -10,7 +9,7 @@ import irvine.oeis.triangle.Triangle;
  * A095709 Triangle of numbers obtained by reversing the first n digits of Pi and juxtaposing.
  * @author Georg Fischer
  */
-public class A095709 extends Triangle implements SequenceWithOffset {
+public class A095709 extends Triangle {
 
   private int mOffset;
   protected final Sequence mSeq;
@@ -26,14 +25,10 @@ public class A095709 extends Triangle implements SequenceWithOffset {
    * @param seq underlying sequence
    */
   public A095709(final int offset, final Sequence seq) {
+    setOffset(offset);
     hasRAM(false);
     mOffset = offset;
     mSeq = seq;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

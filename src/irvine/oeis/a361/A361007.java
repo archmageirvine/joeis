@@ -2,13 +2,13 @@ package irvine.oeis.a361;
 
 import irvine.math.q.BernoulliSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
- * A361007 a(n) = numerator of (zeta(2*n,1/4) + zeta(2*n,3/4))/Pi^(2*n) where zeta is the Hurwitz zeta function.
+ * A361007 a(n) = numerator of (zeta(2*n, 1/4) + zeta(2*n, 3/4))/Pi^(2*n) where zeta is the Hurwitz zeta function.
  * @author Sean A. Irvine
  */
-public class A361007 extends Sequence1 {
+public class A361007 extends Sequence0 {
 
   private final BernoulliSequence mB = new BernoulliSequence(0);
   private int mN = -1;

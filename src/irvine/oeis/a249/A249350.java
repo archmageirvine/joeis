@@ -1,14 +1,13 @@
 package irvine.oeis.a249;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.a000.A000040;
 
 /**
- * A249350 Prime numbers Q such that the concatenation Q,6,Q is prime.
+ * A249350 Prime numbers Q such that the concatenation Q, 6,Q is prime.
  * @author Georg Fischer
  */
-public class A249350 extends A000040 implements SequenceWithOffset {
+public class A249350 extends A000040 {
 
   private int mOffset;
   private String mMiddle;
@@ -24,13 +23,9 @@ public class A249350 extends A000040 implements SequenceWithOffset {
    * @param middle digit in the middle of the concatenation
    */
   public A249350(final int offset, final int middle) {
+    setOffset(offset);
     mOffset = offset;
     mMiddle = String.valueOf(middle);
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

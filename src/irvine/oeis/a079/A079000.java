@@ -32,7 +32,7 @@ public class A079000 extends AbstractSequence {
    * @param options optional configuration settings: 4 = take start value
    */
   public A079000(final int offset, final int start, final int options, final Function<Z, Boolean> condition) {
-    super(1);
+    super(offset);
     mOffset = offset;
     mN = offset - 1;
     mC = Z.valueOf(start - 1);

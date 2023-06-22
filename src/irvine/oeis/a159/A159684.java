@@ -4,13 +4,13 @@ package irvine.oeis.a159;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A159684 Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0,1 and for n&gt;=1, S(n+1) = S(n)S(n)S(n-1).
+ * A159684 Sturmian word: limit S(infinity) where S(0) = 0, S(1) = 0, 1 and for n&gt;=1, S(n+1) = S(n)S(n)S(n-1).
  * @author Georg Fischer
  */
 public class A159684 extends MorphismFixedPointSequence {
 
   /** Construct the sequence. */
   public A159684() {
-    super("0", "0101", "0->01, 1->010");
+    super(0, "0", "0101", "0->01, 1->010");
   }
 }

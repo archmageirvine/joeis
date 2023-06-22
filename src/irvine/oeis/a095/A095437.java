@@ -22,6 +22,7 @@ public class A095437 extends A095425 {
    * @param parm2 negative shift for n
    */
   public A095437(final int parm, final int parm2) {
+    setOffset(0);
     super.mParm = parm;
     mParm2 = parm2;
     super.mN = -1;

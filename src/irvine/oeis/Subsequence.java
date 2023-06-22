@@ -8,7 +8,9 @@ import irvine.math.z.Z;
  * @author Sean A. Irvine
  * @author Georg Fischer
  */
-public class Subsequence implements Sequence {
+public class Subsequence extends AbstractSequence {
+
+  private static final int DEFOFF = 1;
 
   protected final Sequence mSeq; // the underlying sequence
 
@@ -16,8 +18,17 @@ public class Subsequence implements Sequence {
    * Creates a record sequence of another sequence.
    * @param seq underlying sequence
    */
-  public Subsequence(final Sequence seq) {
+  public Subsequence(final int offset, final Sequence seq) {
+    super(offset);
     mSeq = seq;
+  }
+
+  /**
+   * Creates a record sequence of another sequence.
+   * @param seq underlying sequence
+   */
+  public Subsequence(final Sequence seq) {
+    this(DEFOFF, seq);
   }
 
   /**

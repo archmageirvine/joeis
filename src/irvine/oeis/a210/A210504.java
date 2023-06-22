@@ -12,5 +12,6 @@ public class A210504 extends PrimeConditionListSequence {
   /** Construct the sequence */
   public A210504() {
     super(0, 2, +5, 4, +5, 6, +5, 8, +5);
+    setOffset(0);
   }
 }

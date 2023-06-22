@@ -3,14 +3,16 @@ package irvine.oeis.prime;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A sequence of primes p that have Kronecker symbol (p|m) == 1.
  * Adapted from A038873: numbers k that are (not) squares mod p.
  * @author Georg Fischer
  */
-public class KroneckerForm implements Sequence {
+public class KroneckerForm extends AbstractSequence {
+
+  private static final int DEFOFF = 1;
 
   private final Fast mFast;
   private long mP; // current prime number
@@ -23,6 +25,7 @@ public class KroneckerForm implements Sequence {
    * @param polar the desired value of the Kronecker symbol
    */
   public KroneckerForm(final int modulus, final int polar) {
+    super(DEFOFF);
     mP = 1L;
     mModulus = modulus;
     mPolar = polar;

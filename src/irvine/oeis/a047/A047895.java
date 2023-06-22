@@ -9,10 +9,16 @@ import irvine.oeis.Sequence;
  */
 public class A047895 extends A047893 {
 
+  private int mN = 0;
   private final Sequence mA = new A047894();
+
+  {
+    setOffset(1);
+  }
 
   @Override
   public Z next() {
-    return super.next().subtract(mA.next());
+    final Z result = super.next().subtract(mA.next());
+    return (++mN <= 1) ? Z.ZERO : result;
   }
 }

@@ -10,7 +10,9 @@ import irvine.math.z.Z;
  * alternating signs of the unit fractions.
  * @author Georg Fischer
  */
-public abstract class EngelExpansionSequence implements Sequence {
+public abstract class EngelExpansionSequence extends AbstractSequence {
+
+  private static final int DEFOFF = 1;
 
   protected CR mA;
   protected int mPrec; // the precision for CR.ceil()
@@ -29,6 +31,7 @@ public abstract class EngelExpansionSequence implements Sequence {
    * @param prec precision for CR.ceil()
    */
   public EngelExpansionSequence(final int prec) {
+    super(DEFOFF);
     mPrec = prec;
     mA = getN();
   }

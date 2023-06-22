@@ -10,16 +10,26 @@ import irvine.math.z.Z;
  */
 public class RecordSubsequence extends Subsequence {
 
+  private static final int DEFOFF = 1;
   protected Z mMax; 
+
+  /**
+   * Creates a record sequence of another sequence.
+   * @param offset first index of target sequence
+   * @param seq underlying sequence
+   */
+  public RecordSubsequence(final int offset, final Sequence seq) {
+    super(offset, seq);
+    // A265913(1) -80561663527802406257321747 has current minimal 1st term
+    mMax = new Z("-9999999999999999999999999999999999999999999999999999999999999999"); // 64 digits
+  }
 
   /**
    * Creates a record sequence of another sequence.
    * @param seq underlying sequence
    */
   public RecordSubsequence(final Sequence seq) {
-    super(seq);
-    // A265913(1) -80561663527802406257321747 has current minimal 1st term
-    mMax = new Z("-9999999999999999999999999999999999999999999999999999999999999999"); // 64 digits
+    this(DEFOFF, seq);
   }
 
   /**

@@ -10,6 +10,10 @@ import irvine.oeis.a002.A002210;
  */
 public class A054544 extends EngelExpansionSequence {
 
+  {
+    setOffset(0);
+  }
+
   @Override
   protected CR getN() {
     return new A002210().getCR();

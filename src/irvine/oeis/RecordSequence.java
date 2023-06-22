@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 public class RecordSequence implements Sequence {
 
   private final Sequence mSeq;
-  private Z mMax = Z.NEG_ONE;
+  private Z mMax;
 
   /**
    * Creates a record sequence of another sequence.

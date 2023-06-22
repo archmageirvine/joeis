@@ -14,7 +14,9 @@ import irvine.math.z.Z;
  * </pre>
  * @author Georg Fischer
  */
-public class RankSequence implements Sequence {
+public class RankSequence extends AbstractSequence {
+
+  private static final int DEFOFF = 1;
 
   protected Sequence mSeqF; // first underlying sequence
   protected Sequence mSeqG; // second underlying sequence
@@ -27,6 +29,7 @@ public class RankSequence implements Sequence {
    * Empty constructor, set parameters later.
    */
   public RankSequence() {
+    super(DEFOFF);
     mOrder = 0;
     mFlag = 0;
     mRank = 0;
@@ -40,6 +43,19 @@ public class RankSequence implements Sequence {
    * @param flag: 1 yields sequence a, 2 yields sequence b.
    */
   public RankSequence(final Sequence seqF, final Sequence seqG, final int order, final int flag) {
+    this(DEFOFF, seqF, seqG, order, flag);
+  }
+
+  /**
+   * Construct an instance from two sequences f and g.
+   * @param offset first index
+   * @param seqF first underlying sequence
+   * @param seqG second underlying sequence
+   * @param order: if 0 then <code>seqF</code> before <code>seqG</code>, if 1 then <code>seqF</code> after <code>seqG</code>.
+   * @param flag: 1 yields sequence a, 2 yields sequence b.
+   */
+  public RankSequence(final int offset, final Sequence seqF, final Sequence seqG, final int order, final int flag) {
+    super(offset);
     mSeqF = seqF;
     mSeqG = seqG;
     mOrder = order;

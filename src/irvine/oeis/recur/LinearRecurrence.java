@@ -13,6 +13,7 @@ import irvine.oeis.AbstractSequence;
  */
 public class LinearRecurrence extends AbstractSequence {
 
+  private static final int DEFOFF = 0;
   private static final Z[] EMPTY = new Z[0];
 
   private final Z[] mPreTerms;
@@ -28,12 +29,13 @@ public class LinearRecurrence extends AbstractSequence {
 
   /**
    * Construct the specified recurrence.
+   * @param offset first index
    * @param recurrence multipliers on the coefficients with the oldest term first
    * @param terms initial terms of the recurrence
    * @param preTerms terms to produce before the recurrence
    */
-  protected LinearRecurrence(final Z[] recurrence, final Z[] terms, final Z... preTerms) {
-    super(0);
+  protected LinearRecurrence(final int offset, final Z[] recurrence, final Z[] terms, final Z... preTerms) {
+    super(offset);
     checkLength(recurrence.length, terms.length);
     mPreTerms = Arrays.copyOf(preTerms, preTerms.length);
     mPrev = Arrays.copyOf(terms, terms.length);
@@ -47,8 +49,40 @@ public class LinearRecurrence extends AbstractSequence {
    * @param terms initial terms of the recurrence
    * @param preTerms terms to produce before the recurrence
    */
+  protected LinearRecurrence(final Z[] recurrence, final Z[] terms, final Z... preTerms) {
+    this(DEFOFF, recurrence, terms, preTerms);
+  }
+
+  /**
+   * Construct the specified recurrence.
+   * @param offset first index
+   * @param recurrence multipliers on the coefficients with the oldest term first
+   * @param terms initial terms of the recurrence
+   * @param preTerms terms to produce before the recurrence
+   */
+  protected LinearRecurrence(final int offset, final long[] recurrence, final Z[] terms, final Z... preTerms) {
+    this(offset, ZUtils.toZ(recurrence), terms, preTerms);
+  }
+
+  /**
+   * Construct the specified recurrence.
+   * @param recurrence multipliers on the coefficients with the oldest term first
+   * @param terms initial terms of the recurrence
+   * @param preTerms terms to produce before the recurrence
+   */
   protected LinearRecurrence(final long[] recurrence, final Z[] terms, final Z... preTerms) {
-    this(ZUtils.toZ(recurrence), terms, preTerms);
+    this(DEFOFF, ZUtils.toZ(recurrence), terms, preTerms);
+  }
+
+  /**
+   * Construct the specified recurrence.
+   * @param offset first index
+   * @param recurrence multipliers on the coefficients with the oldest term first
+   * @param terms initial terms of the recurrence
+   * @param preTerms terms to produce before the recurrence
+   */
+  public LinearRecurrence(final int offset, final long[] recurrence, final long[] terms, final long... preTerms) {
+    this(offset, recurrence, ZUtils.toZ(terms), ZUtils.toZ(preTerms));
   }
 
   /**
@@ -58,7 +92,17 @@ public class LinearRecurrence extends AbstractSequence {
    * @param preTerms terms to produce before the recurrence
    */
   public LinearRecurrence(final long[] recurrence, final long[] terms, final long... preTerms) {
-    this(recurrence, ZUtils.toZ(terms), ZUtils.toZ(preTerms));
+    this(DEFOFF, recurrence, ZUtils.toZ(terms), ZUtils.toZ(preTerms));
+  }
+
+  /**
+   * Construct the specified recurrence.
+   * @param offset first index
+   * @param recurrence multipliers on the coefficients with the oldest term first
+   * @param terms initial terms of the recurrence
+   */
+  public LinearRecurrence(final int offset, final long[] recurrence, final long[] terms) {
+    this(offset, recurrence, ZUtils.toZ(terms), EMPTY);
   }
 
   /**
@@ -67,7 +111,17 @@ public class LinearRecurrence extends AbstractSequence {
    * @param terms initial terms of the recurrence
    */
   public LinearRecurrence(final long[] recurrence, final long[] terms) {
-    this(recurrence, ZUtils.toZ(terms), EMPTY);
+    this(DEFOFF, recurrence, ZUtils.toZ(terms), EMPTY);
+  }
+
+  /**
+   * Construct the specified recurrence.
+   * @param offset first index
+   * @param recurrence multipliers on the coefficients with the oldest term first
+   * @param terms initial terms of the recurrence
+   */
+  protected LinearRecurrence(final int offset, final long[] recurrence, final Z[] terms) {
+    this(offset, recurrence, terms, EMPTY);
   }
 
   /**
@@ -76,7 +130,17 @@ public class LinearRecurrence extends AbstractSequence {
    * @param terms initial terms of the recurrence
    */
   protected LinearRecurrence(final long[] recurrence, final Z[] terms) {
-    this(recurrence, terms, EMPTY);
+    this(DEFOFF, recurrence, terms, EMPTY);
+  }
+
+  /**
+   * Construct the specified recurrence.
+   * @param offset first index
+   * @param recurrence multipliers on the coefficients with the oldest term first
+   * @param terms initial terms of the recurrence
+   */
+  protected LinearRecurrence(final int offset, final String recurrence, final String terms) {
+    this(offset, LongUtils.toLong(recurrence), ZUtils.toZ(terms), EMPTY);
   }
 
   /**
@@ -85,7 +149,7 @@ public class LinearRecurrence extends AbstractSequence {
    * @param terms initial terms of the recurrence
    */
   protected LinearRecurrence(final String recurrence, final String terms) {
-    this(LongUtils.toLong(recurrence), ZUtils.toZ(terms), EMPTY);
+    this(DEFOFF, LongUtils.toLong(recurrence), ZUtils.toZ(terms), EMPTY);
   }
 
   @Override

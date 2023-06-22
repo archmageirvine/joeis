@@ -13,6 +13,6 @@ public class A123643 extends RecordSubsequence {
 
   /** Construct the sequence. */
   public A123643() {
-    super(new A062039());
+    super(0, new A062039());
   }
 }

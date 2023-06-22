@@ -1,14 +1,16 @@
 package irvine.oeis.prime;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * This class implements sequences that are defined like
  * "Numbers k such that c1*k+b1, c2*k+b2 and cm*k+bm are primes".
  * @author Georg Fischer
  */
-public class PrimeConditionListSequence implements Sequence {
+public class PrimeConditionListSequence extends AbstractSequence {
+
+  private static final int DEFOFF = 1;
 
   protected long[] mList;
   protected Z mN; // current index
@@ -19,6 +21,7 @@ public class PrimeConditionListSequence implements Sequence {
    * @param list list of pairs (c1, b1), (c2, b2) and so on.
    */
   public PrimeConditionListSequence(final int start, final long... list) {
+    super(DEFOFF);
     mList = list;
     mN = Z.valueOf(start - 1);
   }

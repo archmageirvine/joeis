@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a000.A000127;
 
 /**
- * A006261 a(n) = Sum_{k=0..5} C(n,k).
+ * A006261 a(n) = Sum_{k=0..5} binomial(n,k).
  * @author Sean A. Irvine
  */
 public class A006261 extends PartialSumSequence {

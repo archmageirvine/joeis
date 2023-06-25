@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A064188 Sum_{ i = 0 .. floor(n/2)} binomial (n - i*(i-1)/2, i).
+ * A064188 a(n) = Sum_{k=0..floor(n/2)} binomial(n - k*(k-1)/2, k).
  * @author Sean A. Irvine
  */
 public class A064188 extends Sequence0 {

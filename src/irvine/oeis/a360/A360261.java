@@ -4,7 +4,7 @@ package irvine.oeis.a360;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A360261 Determinant of the pentadiagonal symmetric nXn Toeplitz Matrix with a=b=1, c=2.
+ * A360261 Determinant of the pentadiagonal symmetric n X n Toeplitz Matrix with a=b=1, c=2.
  * @author Georg Fischer
  */
 public class A360261 extends GeneratingFunctionSequence {

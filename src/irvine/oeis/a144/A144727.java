@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.DeadSequence;
 
 /**
- * A144727 Primes arising in A144726.
+ * A144727 Erroneous version of A046972.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

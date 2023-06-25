@@ -6,7 +6,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a005.A005153;
 
 /**
- * A322860 If n is practical (in A005153), a(n) = 1, otherwise a(n) = 0.
+ * A322860 Characteristic function of practical numbers, A005153: If n is in A005153, a(n) = 1, otherwise a(n) = 0.
  * @author Georg Fischer
  */
 public class A322860 extends CharacteristicFunction {

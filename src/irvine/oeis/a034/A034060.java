@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A034060 Decimal part of a(n)^(1/5) starts with n (5th powers excluded).
+ * A034060 a(n) is the least k (not a 5th power) such that the decimal part of k^(1/5) starts with n.
  * @author Sean A. Irvine
  */
 public class A034060 extends Sequence0 {

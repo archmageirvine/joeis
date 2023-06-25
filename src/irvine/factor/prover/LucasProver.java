@@ -60,7 +60,7 @@ public class LucasProver extends AbstractProver {
    * @throws IOException if an I/O error occurs
    */
   public void addHelpers(final BufferedReader r) throws IOException {
-    mHelperFactors.addAll(ZUtils.suckInNumbers(r));
+    mHelperFactors.addAll(ZUtils.read(r));
   }
 
   /**

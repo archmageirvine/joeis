@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A050256 A Diaconis-Mosteller approximation to the Birthday problem function.
+ * A050256 a(n) = floor(47*(n-3/2)^(3/2)).
  * @author Sean A. Irvine
  */
 public class A050256 extends Sequence2 {

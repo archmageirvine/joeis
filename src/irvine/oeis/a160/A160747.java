@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A160747 Expansion of (1+10*x+20*x^2+10*x^3+x^4)/(1-x)^5.
+ * A160747 Expansion of (1 + 10*x + 20*x^2 + 10*x^3 + x^4)/(1-x)^5.
  * @author Sean A. Irvine
  */
 public class A160747 extends LinearRecurrence {

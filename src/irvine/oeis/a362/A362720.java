@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A362720 allocated for Bill McEachen.
+ * A362720 a(n) is the smallest k &gt; 0 such that b(n) = b(n-1) + A007504(k) is prime, with b(0) = 1.
  * @author Sean A. Irvine
  */
 public class A362720 extends Sequence1 {

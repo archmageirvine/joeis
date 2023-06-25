@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039744 Number of ways n(n-1) can be partitioned into the sum of 2(n-1) integers in the range 0..n.
+ * A039744 Number of ways n*(n-1) can be partitioned into the sum of 2*(n-1) integers in the range 0..n.
  * @author Sean A. Irvine
  */
 public class A039744 extends MemoryFunctionInt3<Z> implements Sequence {

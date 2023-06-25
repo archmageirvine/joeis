@@ -12,6 +12,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
+import irvine.math.cr.CR;
 import irvine.util.CollectionUtils;
 import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicIntArray;
@@ -579,7 +580,6 @@ public final class ZUtils {
 
   /**
    * Test if <code>r</code> is a primitive root of <code>n</code>.
-   *
    * @param r proposed root
    * @param n modulus
    * @return true if <code>r</code> is a primitive root of <code>n</code>
@@ -649,14 +649,14 @@ public final class ZUtils {
 
   /**
    * Describe the number. For example, 3445, is one 3, two 4s, one 5 to give 132415.
-   * @param cnts number to describe
+   * @param counts number to describe
    * @return description of the number
    */
-  public static Z describe(final int[] cnts) {
+  public static Z describe(final int[] counts) {
     final StringBuilder sb = new StringBuilder();
-    for (int k = 0; k < cnts.length; ++k) {
-      if (cnts[k] != 0) {
-        sb.append(cnts[k]).append(k);
+    for (int k = 0; k < counts.length; ++k) {
+      if (counts[k] != 0) {
+        sb.append(counts[k]).append(k);
       }
     }
     return new Z(sb);
@@ -666,7 +666,6 @@ public final class ZUtils {
    * Return a string that has the same value independent of the permutation
    * of the digits in the number.  That is, all permutations of the same
    * digits will have the same syndrome.
-   *
    * @param s string to get syndrome of
    * @return the syndrome
    */
@@ -683,7 +682,6 @@ public final class ZUtils {
    * Return a string that has the same value independent of the permutation
    * of the digits in the number.  That is, all permutations of the same
    * digits will have the same syndrome.
-   *
    * @param n number to get syndrome of
    * @return the syndrome
    */
@@ -711,10 +709,9 @@ public final class ZUtils {
 
   /**
    * Strong probable prime test.
-   *
    * @param b base to try
    * @param n number to test
-   * @return false if number if definitely composite
+   * @return false if number is definitely composite
    */
   public static boolean sprpTest(final long b, final Z n) {
     final Z minusone = n.clearBit(0);
@@ -898,7 +895,7 @@ public final class ZUtils {
    * @return array of numbers
    * @throws IOException if an I/O error occurs.
    */
-  public static List<Z> suckInNumbers(final BufferedReader reader) throws IOException {
+  public static List<Z> read(final BufferedReader reader) throws IOException {
     final ArrayList<Z> res = new ArrayList<>();
     String line;
     while ((line = reader.readLine()) != null) {
@@ -918,7 +915,7 @@ public final class ZUtils {
    * @return array of numbers
    * @throws IOException if an I/O error occurs.
    */
-  public static List<Z> suckInNumbers(final BufferedReader reader, final int column) throws IOException {
+  public static List<Z> read(final BufferedReader reader, final int column) throws IOException {
     final ArrayList<Z> res = new ArrayList<>();
     String line;
     while ((line = reader.readLine()) != null) {
@@ -1234,7 +1231,7 @@ public final class ZUtils {
     for (final Z v : values) {
       prod = prod.multiply(v);
       if (prod.isZero()) {
-        break;
+        return Z.ZERO;
       }
     }
     return prod;
@@ -1305,10 +1302,25 @@ public final class ZUtils {
 
   /**
    * Test if a number is a cube.
-   * @param v number to test
+   * @param n number to test
    * @return true iff the number is a cube
    */
-  public static boolean isCube(final Z v) {
-    return v.root(3).auxiliary() == 1;
+  public static boolean isCube(final Z n) {
+    return n.root(3).auxiliary() == 1;
+  }
+
+  private static final CR INV_LOG_10 = CR.valueOf(10).log().inverse();
+
+  /**
+   * Return the length of a number in decimal digits.
+   * @param n number
+   * @return length of number
+   */
+  public static int decimalLength(final Z n) {
+    if (n.bitLength() < 1000) {
+      return n.toString().length();
+    } else {
+      return CR.valueOf(n).log().multiply(INV_LOG_10).floor().intValueExact() + 1;
+    }
   }
 }

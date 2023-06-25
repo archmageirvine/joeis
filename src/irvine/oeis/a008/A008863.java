@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A008863 a(n) = Sum_{k=0..10} C(n,k).
+ * A008863 a(n) = Sum_{k=0..10} binomial(n,k).
  * @author Sean A. Irvine
  */
 public class A008863 extends Sequence0 {

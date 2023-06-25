@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RaddSequence;
 
 /**
- * A281509 Trajectory of 1999291987030606810 (the largest presently known &quot;most delayed palindrome&quot;) under the &quot;Reverse and Add!&quot; operation.
+ * A281509 Trajectory of 1999291987030606810 (the largest presently known "most delayed palindrome") under the "Reverse and Add!" operation.
  * @author Georg Fischer
  */
 public class A281509 extends RaddSequence {

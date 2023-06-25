@@ -32,6 +32,18 @@ public abstract class AbstractMatrix<E> implements Matrix<E> {
   }
 
   @Override
+  public void swapCols(final long a, final long b) {
+    if (a == b) {
+      return;
+    }
+    for (long k = 0; k < rows(); ++k) {
+      final E t = get(k, a);
+      set(k, a, get(k, b));
+      set(k, b, t);
+    }
+  }
+
+  @Override
   public boolean isSquare() {
     return rows() == cols();
   }

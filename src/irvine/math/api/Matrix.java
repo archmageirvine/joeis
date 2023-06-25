@@ -60,11 +60,17 @@ public interface Matrix<E> extends Serializable {
 
   /**
    * Swap rows.
-   *
    * @param a first row
    * @param b second row
    */
   void swapRows(final long a, final long b);
+
+  /**
+   * Swap columns.
+   * @param a first column
+   * @param b second column
+   */
+  void swapCols(final long a, final long b);
 
   /**
    * Test if this matrix has the same number of rows as columns.

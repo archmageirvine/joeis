@@ -38,17 +38,19 @@ public class MatrixField<E> extends MatrixRing<E> implements Field<Matrix<E>> {
   /**
    * Apply Gauss-Jordan elimination to matrix <code>a</code> and apply the
    * same row operations to matrix <code>b</code>. The matrix <code>b</code>
-   * be null or of different number of columns to <code>a</code>.
+   * can be null or of different number of columns to <code>a</code>.
    * @param a matrix to reduce (will be modified as a result of the call)
    * @param b companion matrix (may be null)
-   * @return true if the reduction was successful (in which case <code>a</code>
-   * will be the identity matrix
+   * @param failFast terminate as soon as we cannot complete an elimination
+   * @return the number of all zero columns after reduction (any value other
+   * than 0 indicates the elimination cannot be completed)
    */
-  public boolean reduce(final Matrix<E> a, final Matrix<E> b) {
+  public int reduce(final Matrix<E> a, final Matrix<E> b, final boolean failFast) {
     if (b != null && b.rows() != a.rows()) {
       throw new IllegalArgumentException();
     }
-    for (long k = 0; k < a.cols(); ++k) {
+    int zeros = 0;
+    for (long k = 0; k < a.cols() - zeros; ++k) {
       // Find first non-zero entry in kth column
       long j;
       for (j = k; j < a.rows(); ++j) {
@@ -57,8 +59,18 @@ public class MatrixField<E> extends MatrixRing<E> implements Field<Matrix<E>> {
         }
       }
       if (j == rows()) {
-        // Entire columns was zero, implies no solution
-        return false;
+        // Entire column was zero, implies no solution
+        if (failFast) {
+          return 1;
+        }
+        // Move 0 column to the end
+        a.swapCols(k, a.cols() - 1 - zeros);
+        if (b != null) {
+          b.swapCols(k, b.cols() - 1 - zeros);
+        }
+        ++zeros;
+        --k; // We are going to redo attempt for column k
+        continue;
       }
       if (j != k) {
         a.swapRows(j, k);
@@ -97,13 +109,16 @@ public class MatrixField<E> extends MatrixRing<E> implements Field<Matrix<E>> {
         }
       }
     }
+    if (zeros > 0) {
+      return zeros;
+    }
     // Now do the Jordan step
     for (long k = a.rows() - 1; k > 0; --k) {
       assert mOne.equals(a.get(k, k)); // Note this is not always exactly true in R due to precision problems
       for (long j = k - 1; j >= 0; --j) {
         final E u = a.get(j, k);
         if (!mZero.equals(u)) {
-          // Add multiples of the kth row to rows above to introduce zeros
+          // Add multiples of the kth row to the rows above to introduce zeros
           final E scale = mElementField.negate(u);
           // Only one column of a is affected
           a.set(j, k, mZero);
@@ -115,7 +130,20 @@ public class MatrixField<E> extends MatrixRing<E> implements Field<Matrix<E>> {
         }
       }
     }
-    return true;
+    return 0;
+  }
+
+  /**
+   * Apply Gauss-Jordan elimination to matrix <code>a</code> and apply the
+   * same row operations to matrix <code>b</code>. The matrix <code>b</code>
+   * can be null or of different number of columns to <code>a</code>.
+   * @param a matrix to reduce (will be modified as a result of the call)
+   * @param b companion matrix (may be null)
+   * @return true if the reduction was successful (in which case <code>a</code>
+   * will be the identity matrix
+   */
+  public boolean reduce(final Matrix<E> a, final Matrix<E> b) {
+    return reduce(a, b, true) == 0;
   }
 
   @Override
@@ -257,4 +285,25 @@ public class MatrixField<E> extends MatrixRing<E> implements Field<Matrix<E>> {
     return log1p(subtract(m, one()), n);
   }
 
+  /**
+   * Return the rank of the matrix.
+   * @param m matrix
+   * @return rank of the matrix
+   */
+  public long rank(final Matrix<E> m) {
+    if (m.equals(zero())) {
+      return 0;
+    }
+    // Make a copy to avoid disturbing state of the matrix
+    final Matrix<E> t = new DefaultMatrix<>(m, mZero);
+    return t.rows() - reduce(t, null, false);
+//    for (long r = t.rows() - 1; r >= 0; --r) {
+//      for (long c = 0; c < t.cols(); ++c) {
+//        if (t.get(r, c).equals(mZero)) {
+//          return r;
+//        }
+//      }
+//    }
+//    return 0;
+  }
 }

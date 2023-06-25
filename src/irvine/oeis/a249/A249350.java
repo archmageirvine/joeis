@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A249350 Prime numbers Q such that the concatenation Q, 6,Q is prime.
+ * A249350 Prime numbers Q such that the concatenation Q,6,Q is prime.
  * @author Georg Fischer
  */
 public class A249350 extends A000040 {

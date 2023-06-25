@@ -1,4 +1,5 @@
 package irvine.oeis.a158;
+// manually 2023-06-24
 
 import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;

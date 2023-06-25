@@ -6,10 +6,23 @@ import irvine.math.z.Z;
  * A sequence consisting of consecutive records in another sequence.
  * @author Sean A. Irvine
  */
-public class RecordSequence implements Sequence {
+public class RecordSequence extends AbstractSequence {
 
+  private final static int DEFOFF = 1;
   private final Sequence mSeq;
   private Z mMax;
+
+  /**
+   * Creates a record sequence of another sequence.
+   * @param offset first index of target sequence
+   * @param seq underlying sequence
+   * @param initial the initial maximum
+   */
+  public RecordSequence(final int offset, final Sequence seq, final Z initial) {
+    super(offset);
+    mSeq = seq;
+    mMax = initial;
+  }
 
   /**
    * Creates a record sequence of another sequence.
@@ -17,8 +30,7 @@ public class RecordSequence implements Sequence {
    * @param initial the initial maximum
    */
   public RecordSequence(final Sequence seq, final Z initial) {
-    mSeq = seq;
-    mMax = initial;
+    this(DEFOFF, seq, initial);
   }
 
   /**

@@ -3,6 +3,7 @@ package irvine.oeis;
 import java.util.Collection;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 
 /**
  * Base case for certain finite sequences generated verbatim from a list.
@@ -53,8 +54,28 @@ public class NoncomputableSequence extends FiniteSequence {
    * @param attr attribute
    * @param seq the values
    */
-  public NoncomputableSequence(final int offset, final String attr, final String seq) {
+  public NoncomputableSequence(final int offset, final String attr, final Z... seq) {
     super(offset, attr, seq);
+  }
+
+  /**
+   * Construct the sequence.
+   * @param offset first index
+   * @param attr attribute
+   * @param seq the values
+   */
+  public NoncomputableSequence(final int offset, final String attr, final Collection<Z> seq) {
+    super(offset, attr, seq);
+  }
+
+  /**
+   * Construct the sequence.
+   * @param offset first index
+   * @param attr attribute
+   * @param seq the values
+   */
+  public NoncomputableSequence(final int offset, final String attr, final String seq) {
+    super(offset, attr, ZUtils.toZ(seq));
   }
 
   @Override

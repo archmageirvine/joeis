@@ -12,7 +12,7 @@ import irvine.math.z.Z;
  * for implementing sequences that depend on many earlier terms.
  * @author Sean A. Irvine
  */
-public abstract class MemorySequence extends AbstractSequence implements Iterable<Z>, Sequence {
+public abstract class MemorySequence extends AbstractSequence implements Iterable<Z> {
 
   private final List<Z> mTerms = new ArrayList<>();
   private final int mNumInitialTerms;
@@ -143,6 +143,22 @@ public abstract class MemorySequence extends AbstractSequence implements Iterabl
         return seq.next();
       }
     };
+  }
+
+  /**
+   * Convert an offset and an AbstractSequence into a cached sequence with random access.
+   * @param offset first index of the target sequence
+   * @param seq underlying sequence
+   * @param initialTerms initial terms (starting at offset)
+   * @return cached version
+   */
+  public static MemorySequence cache(final int offset, final AbstractSequence seq, long... initialTerms) {
+    return seq instanceof MemorySequence ? (MemorySequence) seq : new MemorySequence(offset, initialTerms) {
+          @Override
+          protected Z computeNext() {
+            return seq.next();
+          }
+        };
   }
 }
 

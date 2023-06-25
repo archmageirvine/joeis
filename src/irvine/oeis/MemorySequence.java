@@ -152,7 +152,7 @@ public abstract class MemorySequence extends AbstractSequence implements Iterabl
    * @param initialTerms initial terms (starting at offset)
    * @return cached version
    */
-  public static MemorySequence cache(final int offset, final AbstractSequence seq, long... initialTerms) {
+  public static MemorySequence cache(final int offset, final AbstractSequence seq, final long... initialTerms) {
     return seq instanceof MemorySequence ? (MemorySequence) seq : new MemorySequence(offset, initialTerms) {
           @Override
           protected Z computeNext() {

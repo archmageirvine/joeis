@@ -15,7 +15,7 @@ public class A064224 extends Sequence1 {
 
   // After Michael S. Branicky
 
-  private static class State implements Comparable<State> {
+  private static final class State implements Comparable<State> {
     private final Z mV;
     private final long mS;
     private final long mL;

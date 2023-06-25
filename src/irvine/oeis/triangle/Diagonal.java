@@ -4,7 +4,6 @@ import java.util.function.Function;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.LambdaSequence;
 import irvine.oeis.MemorySequence;
 
 /**
@@ -14,7 +13,7 @@ import irvine.oeis.MemorySequence;
  */
 public class Diagonal extends BaseTriangle {
 
-  private MemorySequence mSeq; // underlying sequence
+  private final MemorySequence mSeq; // underlying sequence
 
   /**
    * Construct the sequence.

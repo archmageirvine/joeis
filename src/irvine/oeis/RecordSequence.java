@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  */
 public class RecordSequence extends AbstractSequence {
 
-  private final static int DEFOFF = 1;
+  private static final int DEFOFF = 1;
   private final Sequence mSeq;
   private Z mMax;
 

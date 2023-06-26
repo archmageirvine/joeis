@@ -35,7 +35,7 @@ public class A012883 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A012883() {
-    super(build());
+    super(1, FINITE, build());
   }
 
 }

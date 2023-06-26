@@ -11,6 +11,6 @@ public class A274846 extends NoncomputableSequence {
 
   /** Construct the sequence. */
   public A274846() {
-    super(Z.ZERO, Z.ONE, Z.TWO, Z.THREE, Z.FOUR, Z.FIVE, Z.SIX, Z.SEVEN, Z.EIGHT, Z.NINE, Z.TEN, new Z("11"), new Z("12"), new Z("13"), new Z("14"), new Z("15"), new Z("16"), new Z("17"), new Z("18"), new Z("19"), new Z("20"), new Z("30"), new Z("40"), new Z("50"), new Z("60"), new Z("70"), new Z("80"), new Z("90"), new Z("100"), new Z("200"), new Z("300"), new Z("400"), new Z("500"), new Z("600"), new Z("700"), new Z("800"), new Z("900"), new Z("1000"), new Z("1000000"), new Z("1000000000"), new Z("1000000000000"), new Z("1000000000000000"), new Z("1000000000000000000"));
+    super(1, NONCOMPUTABLE, Z.ZERO, Z.ONE, Z.TWO, Z.THREE, Z.FOUR, Z.FIVE, Z.SIX, Z.SEVEN, Z.EIGHT, Z.NINE, Z.TEN, new Z("11"), new Z("12"), new Z("13"), new Z("14"), new Z("15"), new Z("16"), new Z("17"), new Z("18"), new Z("19"), new Z("20"), new Z("30"), new Z("40"), new Z("50"), new Z("60"), new Z("70"), new Z("80"), new Z("90"), new Z("100"), new Z("200"), new Z("300"), new Z("400"), new Z("500"), new Z("600"), new Z("700"), new Z("800"), new Z("900"), new Z("1000"), new Z("1000000"), new Z("1000000000"), new Z("1000000000000"), new Z("1000000000000000"), new Z("1000000000000000000"));
   }
 }

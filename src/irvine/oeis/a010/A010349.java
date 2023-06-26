@@ -11,7 +11,7 @@ public class A010349 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A010349() {
-    super(Z.ONE, Z.TWO, Z.THREE, Z.FOUR, Z.FIVE, Z.SIX,
+    super(1, FINITE, Z.ONE, Z.TWO, Z.THREE, Z.FOUR, Z.FIVE, Z.SIX,
       new Z("13"),
       new Z("34"),
       new Z("44"),

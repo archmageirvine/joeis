@@ -12,6 +12,6 @@ public class A353907 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A353907() {
-    super(1, 2, 3, 4, 5, 6, 7, 8, 9, 31381059609L, 1853020188851841L);
+    super(1, FINITE, 1, 2, 3, 4, 5, 6, 7, 8, 9, 31381059609L, 1853020188851841L);
   }
 }

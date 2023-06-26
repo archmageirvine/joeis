@@ -16,7 +16,7 @@ public class A003529 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A003529() {
-    super(divisors(20));
+    super(1, FINITE, divisors(20));
   }
 }
 

@@ -10,6 +10,6 @@ public class A180465 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A180465() {
-    super(1444, 20449, 281961, 14212900, 107827456L, 564343507984L);
+    super(1, FINITE, 1444, 20449, 281961, 14212900, 107827456L, 564343507984L);
   }
 }

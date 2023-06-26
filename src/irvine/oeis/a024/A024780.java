@@ -10,6 +10,6 @@ public class A024780 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A024780() {
-    super(A024781.build(5));
+    super(1, FINITE, A024781.build(5));
   }
 }

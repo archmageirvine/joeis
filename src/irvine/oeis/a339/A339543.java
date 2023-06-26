@@ -11,6 +11,6 @@ public class A339543 extends BriefSequence {
 
   /** Construct the sequence. */
   public A339543() {
-    super(1, 2, 1483, 2239, 3023417);
+    super(1, BRIEF, 1, 2, 1483, 2239, 3023417);
   }
 }

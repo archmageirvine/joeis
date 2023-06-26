@@ -10,6 +10,6 @@ public class A226465 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A226465() {
-    super(21, 210, 765, 9876, 2109876, 7654321, 76543210, 4321098765L);
+    super(1, FINITE, 21, 210, 765, 9876, 2109876, 7654321, 76543210, 4321098765L);
   }
 }

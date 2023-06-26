@@ -20,6 +20,6 @@ public class A012885 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A012885() {
-    super(build());
+    super(1, FINITE, build());
   }
 }

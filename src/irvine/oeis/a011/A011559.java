@@ -19,7 +19,7 @@ public class A011559 extends FiniteSequence {
   }
 
   protected A011559(final int row) {
-    super(buildRow(row));
+    super(1, FINITE, buildRow(row));
   }
 
   /** Construct the sequence. */

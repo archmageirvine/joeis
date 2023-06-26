@@ -10,6 +10,6 @@ public class A230400 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A230400() {
-    super(216, 250, 256, 288, 400, 432, 450, 486, 576, 882);
+    super(1, FINITE, 216, 250, 256, 288, 400, 432, 450, 486, 576, 882);
   }
 }

@@ -10,6 +10,6 @@ public class A038082 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A038082() {
-    super(1, 1, 1, 2, 2, 2, 2, 2, 1, 1, 1);
+    super(1, FINITE, 1, 1, 1, 2, 2, 2, 2, 2, 1, 1, 1);
   }
 }

@@ -10,6 +10,6 @@ public class A046043 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A046043() {
-    super(1210, 2020, 21200, 3211000, 42101000, 521001000L, 6210001000L);
+    super(1, FINITE, 1210, 2020, 21200, 3211000, 42101000, 521001000L, 6210001000L);
   }
 }

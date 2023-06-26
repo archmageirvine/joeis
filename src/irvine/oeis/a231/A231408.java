@@ -10,6 +10,6 @@ public class A231408 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A231408() {
-    super(1, 2, 4, 6, 9);
+    super(1, FINITE, 1, 2, 4, 6, 9);
   }
 }

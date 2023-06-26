@@ -25,6 +25,6 @@ public class A033870 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A033870() {
-    super(build());
+    super(1, FINITE, build());
   }
 }

@@ -12,6 +12,6 @@ public class A025052 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A025052() {
-    super(1, 2, 4, 6, 10, 18, 22, 30, 42, 58, 70, 78, 102, 130, 190, 210, 330, 462);
+    super(1, FINITE, 1, 2, 4, 6, 10, 18, 22, 30, 42, 58, 70, 78, 102, 130, 190, 210, 330, 462);
   }
 }

@@ -23,6 +23,6 @@ public class A008684 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A008684() {
-    super(buildDays());
+    super(1, FINITE, buildDays());
   }
 }

@@ -12,6 +12,6 @@ public class A350217 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A350217() {
-    super(1, 3, 4, 6, 8, 30, 100, 300, 400, 600, 800, 2000, 1000000);
+    super(1, FINITE, 1, 3, 4, 6, 8, 30, 100, 300, 400, 600, 800, 2000, 1000000);
   }
 }

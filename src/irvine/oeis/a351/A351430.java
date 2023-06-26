@@ -12,6 +12,6 @@ public class A351430 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A351430() {
-    super(457411536L, 249495038L, 50719534, 5983183, 774164, 24157, 4038, 253, 0, 1);
+    super(1, FINITE, 457411536L, 249495038L, 50719534, 5983183, 774164, 24157, 4038, 253, 0, 1);
   }
 }

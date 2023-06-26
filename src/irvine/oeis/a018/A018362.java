@@ -11,6 +11,6 @@ public class A018362 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A018362() {
-    super(Jaguar.factor(264).divisorsSorted());
+    super(1, FINITE, Jaguar.factor(264).divisorsSorted());
   }
 }

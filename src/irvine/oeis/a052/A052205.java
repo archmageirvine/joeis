@@ -12,7 +12,7 @@ public class A052205 extends FiniteSequence {
   /** Construct the sequence. */
   public A052205() {
     super(
-      Z.TWO,
+      1, FINITE, Z.TWO,
       new Z("1022201"),
       new Z("1051022201501"),
       new Z("1241051022201501421"),

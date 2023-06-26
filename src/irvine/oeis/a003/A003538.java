@@ -10,7 +10,7 @@ public class A003538 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A003538() {
-    super(A003529.divisors(30));
+    super(1, FINITE, A003529.divisors(30));
   }
 }
 

@@ -11,6 +11,6 @@ public class A118639 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A118639() {
-    super(1, 4, 9, 40, 90, 400, 900, 4000, 9000, 40000, 90000, 400000, 900000);
+    super(1, FINITE, 1, 4, 9, 40, 90, 400, 900, 4000, 9000, 40000, 90000, 400000, 900000);
   }
 }

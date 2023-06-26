@@ -12,6 +12,6 @@ public class A274227 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A274227() {
-    super(29, 53, 61, 109, 157, 277, 397);
+    super(1, FINITE, 29, 53, 61, 109, 157, 277, 397);
   }
 }

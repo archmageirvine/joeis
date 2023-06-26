@@ -21,7 +21,7 @@ public class A056079 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A056079() {
-    super(PolynomialUtils.qToZ(RING.subtract(RING.add(Z7.op(HararyMultiply.OP, Z7).applyOnePlusXToTheN(),
+    super(7, FINITE, PolynomialUtils.qToZ(RING.subtract(RING.add(Z7.op(HararyMultiply.OP, Z7).applyOnePlusXToTheN(),
         Z6.op(HararyMultiply.OP, Z6).applyOnePlusXToTheN()),
         RING.multiply(Z7.op(HararyMultiply.OP, Z6).applyOnePlusXToTheN(), Q.TWO))).shift(-7));
   }

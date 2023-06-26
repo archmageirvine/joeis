@@ -12,6 +12,6 @@ public class A093785 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A093785() {
-    super(1, 2, 3, 5, 10, 20, 30, 50, 100, 200, 300, 500, 1000, 2000, 3000);
+    super(1, FINITE, 1, 2, 3, 5, 10, 20, 30, 50, 100, 200, 300, 500, 1000, 2000, 3000);
   }
 }

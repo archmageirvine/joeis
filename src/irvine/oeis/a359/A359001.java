@@ -12,6 +12,6 @@ public class A359001 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A359001() {
-    super(12, 0, 0, 30, 20, 36, 120, 100, 60, 180, 180, 90, 180, 130, 0, 30);
+    super(5, FINITE, 12, 0, 0, 30, 20, 36, 120, 100, 60, 180, 180, 90, 180, 130, 0, 30);
   }
 }

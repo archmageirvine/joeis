@@ -10,6 +10,6 @@ public class A032910 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A032910() {
-    super(79, 7919, 791971, 79197143, 7919714353L, 791971435397L, 79197143539783L);
+    super(1, FINITE, 79, 7919, 791971, 79197143, 7919714353L, 791971435397L, 79197143539783L);
   }
 }

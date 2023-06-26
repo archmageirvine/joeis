@@ -10,6 +10,6 @@ public class A296912 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A296912() {
-    super(1, -15, 105, -455, 1353, -2861, 4275, -4305, 2606, -704, 0);
+    super(1, FINITE, 1, -15, 105, -455, 1353, -2861, 4275, -4305, 2606, -704, 0);
   }
 }

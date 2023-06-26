@@ -32,6 +32,6 @@ public class A002205 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A002205() {
-    super(read());
+    super(1, FINITE, read());
   }
 }

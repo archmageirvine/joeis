@@ -21,6 +21,6 @@ public class A027894 extends FiniteSequence {
    * @param power power of <code>base</code>
    */
   public A027894(final int base, final int power) {
-    super(Jaguar.factor(Z.valueOf(base).pow(power).subtract(1)).divisorsSorted());
+    super(1, FINITE, Jaguar.factor(Z.valueOf(base).pow(power).subtract(1)).divisorsSorted());
   }
 }

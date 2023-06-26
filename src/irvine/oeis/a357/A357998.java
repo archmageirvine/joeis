@@ -12,6 +12,6 @@ public class A357998 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A357998() {
-    super(1, 2, 4, 18, 25, 41, 96, 103, 133, 189, 188, 154, 158, 155, 95, 53, 19, 5, 1);
+    super(8, FINITE, 1, 2, 4, 18, 25, 41, 96, 103, 133, 189, 188, 154, 158, 155, 95, 53, 19, 5, 1);
   }
 }

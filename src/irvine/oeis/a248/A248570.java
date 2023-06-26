@@ -11,6 +11,6 @@ public class A248570 extends NoncomputableSequence {
 
   /** Construct the sequence. */
   public A248570() {
-    super(8, 8, 7, 0, 0, 5, 5, 9);
+    super(-2, NONCOMPUTABLE, 8, 8, 7, 0, 0, 5, 5, 9);
   }
 }

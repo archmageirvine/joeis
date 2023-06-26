@@ -11,7 +11,7 @@ public class A001379 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A001379() {
-    super(Z.ONE, Z.valueOf(196883L), Z.valueOf(21296876L), Z.valueOf(842609326L),
+    super(1, FINITE, Z.ONE, Z.valueOf(196883L), Z.valueOf(21296876L), Z.valueOf(842609326L),
           Z.valueOf(18538750076L), Z.valueOf(19360062527L), Z.valueOf(293553734298L),
           Z.valueOf(3879214937598L), Z.valueOf(36173193327999L), Z.valueOf(125510727015275L),
           Z.valueOf(190292345709543L), Z.valueOf(222879856734249L), Z.valueOf(1044868466775133L),

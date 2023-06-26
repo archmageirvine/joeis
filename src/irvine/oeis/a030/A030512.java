@@ -20,7 +20,7 @@ public class A030512 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A030512() {
-    super(build());
+    super(1, FINITE, build());
   }
 }
 

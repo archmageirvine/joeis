@@ -12,6 +12,6 @@ public class A356527 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A356527() {
-    super(1, 3, 5, 9, 5, 1);
+    super(2, FINITE, 1, 3, 5, 9, 5, 1);
   }
 }

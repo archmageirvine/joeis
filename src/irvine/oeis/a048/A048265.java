@@ -40,6 +40,6 @@ public class A048265 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A048265() {
-    super(build());
+    super(1, FINITE, build());
   }
 }

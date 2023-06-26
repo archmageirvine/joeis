@@ -12,6 +12,6 @@ public class A357080 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A357080() {
-    super(0, 1, 80, 162, 243, 476, 486);
+    super(1, FINITE, 0, 1, 80, 162, 243, 476, 486);
   }
 }

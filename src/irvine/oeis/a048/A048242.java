@@ -13,7 +13,7 @@ public class A048242 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A048242() {
-    super(build());
+    super(1, FINITE, build());
   }
 
   private static long[] build() {

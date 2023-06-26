@@ -12,7 +12,7 @@ public class A081110 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A081110() {
-    super(Jaguar.factor(Z.ONE.shiftLeft(60).subtract(1)).divisorsSorted());
+    super(1, FINITE, Jaguar.factor(Z.ONE.shiftLeft(60).subtract(1)).divisorsSorted());
   }
 }
 

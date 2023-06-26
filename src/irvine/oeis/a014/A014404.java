@@ -10,7 +10,7 @@ public class A014404 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A014404() {
-    super(13, 204, 3120, 6552, 7804, 20532, 137280, 123552, 1268088, 1302540);
+    super(1, FINITE, 13, 204, 3120, 6552, 7804, 20532, 137280, 123552, 1268088, 1302540);
   }
 }
 

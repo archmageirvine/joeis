@@ -17,7 +17,7 @@ public class A018188 extends FiniteSequence {
 
   static List<Z> suckInNumbers(final String res) {
     try (final BufferedReader reader = new BufferedReader(IOUtils.reader(res))) {
-      return ZUtils.suckInNumbers(reader);
+      return ZUtils.read(reader);
     } catch (final IOException e) {
       throw new RuntimeException(e);
     }

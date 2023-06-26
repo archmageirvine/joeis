@@ -10,7 +10,7 @@ public class A018897 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A018897() {
-    super(A018188.suckInNumbers("irvine/oeis/a018/a018897.dat.gz"));
+    super(A018188.read("irvine/oeis/a018/a018897.dat.gz"));
   }
 }
 

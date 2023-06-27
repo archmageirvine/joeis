@@ -7,7 +7,7 @@ package irvine.math.lattice;
 public class SelfAvoidingWalker extends Walker {
 
   // One of the main concerns is being able to quickly determine if a point is
-  // already in the walk.  Their are various approaches to doing this.  Timing
+  // already in the walk.  There are various approaches to doing this.  Timing
   // suggests that simply searching through an unsorted array of points is
   // much faster than using a TreeSet, HashSet, or LinkedHashSet or even
   // a primitive long hash set such as the HPPC LongHashSet.  This

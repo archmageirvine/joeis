@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.triangle.Diagonal;
 
 /**
- * A127640 Triangle read by rows in which row n contains n-1 0&apos;s followed by prime(n).
+ * A127640 Triangle read by rows in which row n contains n-1 0's followed by prime(n).
  * @author Georg Fischer
  */
 public class A127640 extends Diagonal {

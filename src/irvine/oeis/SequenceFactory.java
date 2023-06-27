@@ -135,27 +135,37 @@ public final class SequenceFactory {
     return getOffset(seq);
   }
 
-  private static boolean dataLineOutputMode(final CliFlags flags, final OutputStream out, final Sequence seq) throws IOException {
+  private static boolean dataLineOutputMode(final CliFlags flags, final OutputStream out, final Sequence seq, final String seqId) throws IOException {
     final int maxDataLength = (Integer) flags.getValue(DATA_LENGTH);
     final long numberOfTerms = getEffectiveMax(flags, TERMS);
     Z z;
     long termCnt = 0;
     int outputSoFar = 0;
-    while (++termCnt <= numberOfTerms && (z = seq.next()) != null) {
-      final String sz = z.toString();
-      if (outputSoFar + sz.length() + 2 > maxDataLength) {
-        break; // no more terms will fit
+    try {
+      while (++termCnt <= numberOfTerms && (z = seq.next()) != null) {
+        final String sz = z.toString();
+        if (outputSoFar + sz.length() + 2 > maxDataLength) {
+          break; // no more terms will fit
+        }
+        if (outputSoFar > 0) {
+          out.write(COMMA);
+          out.write(SPACE);
+          outputSoFar += 2;
+        }
+        out.write(sz.getBytes(StandardCharsets.US_ASCII));
+        out.flush();
+        outputSoFar += sz.length();
       }
+      out.write(LS);
+    } catch (final UnsupportedOperationException e) {
       if (outputSoFar > 0) {
-        out.write(COMMA);
-        out.write(SPACE);
-        outputSoFar += 2;
+        out.write(LS);
+        out.flush();
+        System.err.println("Implementation limits exceeded, cannot generate further terms for " + seqId + "\n" + e.getMessage());
+      } else {
+        throw e;
       }
-      out.write(sz.getBytes(StandardCharsets.US_ASCII));
-      out.flush();
-      outputSoFar += sz.length();
     }
-    out.write(LS);
     return outputSoFar > 0;
   }
 
@@ -458,7 +468,7 @@ public final class SequenceFactory {
           out.flush();
         }
         if (flags.isSet(DATA)) {
-          generated = dataLineOutputMode(flags, out, seq);
+          generated = dataLineOutputMode(flags, out, seq, seqId);
         } else if (flags.isSet(TRIANGLE)) {
           generated = triangleOutputMode(flags, out, seq);
         } else if (flags.isSet(RIGHT)) {

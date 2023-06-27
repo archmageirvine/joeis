@@ -131,7 +131,7 @@ public class A064297 extends Sequence1 {
     }
   }
 
-  private long calc(int n, int m, long mod) {
+  private long calc(final int n, final int m, final long mod) {
     final int num = (int) mDp[1][0][n + 1];
     long[] prev = new long[num];
     long[] cur = new long[num];
@@ -139,7 +139,7 @@ public class A064297 extends Sequence1 {
     final int w = n + 1;
     long c, r = 0;
     /* force first edge to go down. the rest of the paths can be obtained by flipping
-	   along the diagonal. hence, count the first case only and multiply by 2 */
+     along the diagonal. hence, count the first case only and multiply by 2 */
     prev[(int) rank(w, 1)] = 1;
     if (m != n) {
       prev[(int) rank(w, 4)] = 1;  /* cannot use symmetry if non-square */
@@ -292,14 +292,14 @@ public class A064297 extends Sequence1 {
                 add(cur, (int) rank(w, newmask << 2), c, mod);
               } else if (left != 0) { /* extend single edge, case 1 */
                 /* extend down */
-                long newmask = mask << 2;
+                final long newmask = mask << 2;
                 add(cur, (int) rank(w, newmask), c, mod);
               } else if (up != 0) { /* extend single edge, case 2 */
                 /* extend down: 0x becomes x0 */
                 add(cur, (int) rank(w, ((mask & (~(15L << (j << 1)))) | ((long) SWAP[up << 2] << (j << 1))) << 2), c, mod);
               } else { /* no edge */
                 /* place nothing */
-                long newmask = mask << 2;
+                final long newmask = mask << 2;
                 add(cur, (int) rank(w, newmask), c, mod);
               }
             }
@@ -423,7 +423,7 @@ public class A064297 extends Sequence1 {
     int o = 0;
     /* upper bound proved by Bousquet-Melou et al */
     /* TODO find a better upper bound, it will improve run time by a lot */
-    double bound = Math.pow(1.782, (n + 1) * (m + 1));
+    final double bound = Math.pow(1.782, (n + 1) * (m + 1));
     if (n > m) {
       final int t = n;
       n = m;

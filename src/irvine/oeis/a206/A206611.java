@@ -10,6 +10,6 @@ public class A206611 extends LinearRecurrence {
 
   /** Construct the sequence. */
   public A206611() {
-    super(new long[] {1, 1}, new long[] {13, 7});
+    super(1, new long[] {1, 1}, new long[] {13, 7});
   }
 }

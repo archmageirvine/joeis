@@ -11,7 +11,7 @@ public class A147527 extends LinearRecurrence {
 
   /** Construct the sequence. */
   public A147527() {
-    super(new long[] {-1, 128405450990L},
+    super(1, new long[] {-1, 128405450990L},
       new Z[] {
         Z.valueOf(93645643),
         new Z("12024611022569890927")

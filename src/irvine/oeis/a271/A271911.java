@@ -10,9 +10,8 @@ import irvine.oeis.recur.LinearRecurrence;
  */
 public class A271911 extends LinearRecurrence implements Conjectural {
 
-
   /** Construct the sequence. */
   public A271911() {
-    super(new long[] {1L, -2L, 0L, 2L}, new long[] {0L, 4L, 10L, 16L});
+    super(1, new long[] {1L, -2L, 0L, 2L}, new long[] {0L, 4L, 10L, 16L});
   } // constructor()
 } // A271911

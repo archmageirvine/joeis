@@ -10,6 +10,6 @@ public class A079824 extends LinearRecurrence {
 
   /** Construct the sequence. */
   public A079824() {
-    super(new long[] {-1, 1, 3, -3, -3, 3, 1}, new long[] {1, 2, 7, 12, 25, 37, 62});
+    super(1, new long[] {-1, 1, 3, -3, -3, 3, 1}, new long[] {1, 2, 7, 12, 25, 37, 62});
   }
 }

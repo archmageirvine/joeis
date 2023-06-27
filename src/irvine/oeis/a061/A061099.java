@@ -9,9 +9,8 @@ import irvine.oeis.recur.LinearRecurrence;
  */
 public class A061099 extends LinearRecurrence implements Conjectural {
 
-
   /** Construct the sequence. */
   public A061099() {
-    super(new long[] {1, -1, -2, 2, 1}, new long[] {1, 64, 100, 289, 361});
+    super(1, new long[] {1, -1, -2, 2, 1}, new long[] {1, 64, 100, 289, 361});
   }
 }

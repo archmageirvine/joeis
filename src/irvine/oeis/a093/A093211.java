@@ -3,14 +3,15 @@ package irvine.oeis.a093;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
- * A093211 a(n) is the largest number such that all of a(n)'s length-n substrings are distinct and divisible by 11..
+ * A093211 a(n) is the largest number such that all of a(n)'s length-n substrings are distinct and divisible by 11.
  * @author Georg Fischer
  */
-public class A093211 extends HashSet<Z> implements Sequence {
+public class A093211 extends Sequence1 {
 
+  private final HashSet<Z> mSet = new HashSet<>();
   protected long mDivm;
   protected Z mDivz;
   protected Z mLast;
@@ -83,12 +84,10 @@ public class A093211 extends HashSet<Z> implements Sequence {
     }
     final Z a = ktl.mod(mDivz).isZero() ? kt : kt.add(mDivz.subtract(ktl.mod(mDivz)));
     final Z al = a.mod(mLast);
-    if (!contains(al)) {
-      add(al);
+    if (mSet.add(al)) {
       aa = aa.max(a);
       aa = aa.max(walking(a));
-      remove(al);
-    } else {
+      mSet.remove(al);
     }
 //    if (sDebug >= 4) {
 //      System.out.println("walk out(" + k + ") -> " + aa);
@@ -109,8 +108,8 @@ public class A093211 extends HashSet<Z> implements Sequence {
     Z an = i;
     long anlen = n;
     while (i.compareTo(end) > 0) {
-      clear();
-      add(i);
+      mSet.clear();
+      mSet.add(i);
       if (i.mod(Z.valueOf(100000L)).isZero()) {
         anlen = an.toString().length();
         if (anlen > 2 * n) {

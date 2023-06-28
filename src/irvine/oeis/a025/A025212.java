@@ -5,14 +5,15 @@ import java.util.ArrayList;
 import irvine.math.q.HarmonicSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A025212 a(n) = floor(2nd elementary symmetric function of Sum_{j=1..k} 1/j, k = 1,2,...,n).
  * @author Sean A. Irvine
  */
-public class A025212 extends HarmonicSequence implements Sequence {
+public class A025212 extends Sequence2 {
 
+  private final HarmonicSequence mHSeq = new HarmonicSequence();
   private final ArrayList<Q> mH = new ArrayList<>();
   {
     mH.add(null);
@@ -22,7 +23,7 @@ public class A025212 extends HarmonicSequence implements Sequence {
 
   protected Q h(final int n) {
     while (n >= mH.size()) {
-      mH.add(nextQ());
+      mH.add(mHSeq.nextQ());
     }
     return mH.get(n);
   }

@@ -2,13 +2,12 @@ package irvine.oeis.a185;
 // manually simple3 at 2023-03-24
 
 import irvine.oeis.NoncomputableSequence;
-import irvine.oeis.SequenceWithOffset;
 
 /**
  * A185182 a(n) = 2^n*A185181(n).
  * @author Georg Fischer
  */
-public class A185182 extends NoncomputableSequence implements SequenceWithOffset {
+public class A185182 extends NoncomputableSequence {
 
   /** Construct the sequence. */
   public A185182() {

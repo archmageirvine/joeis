@@ -1,7 +1,6 @@
 package irvine.oeis.a184;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.oeis.a183.A183568;
 
 /**
@@ -9,10 +8,10 @@ import irvine.oeis.a183.A183568;
  * a(n) = A183568(n, 0) - A183568(n, 4).
  * @author Georg Fischer
  */
-public class A184639 extends A183568 implements Sequence {
+public class A184639 extends A183568 {
 
   private int mN;
-  private int mMult;
+  private final int mMult;
 
   /** Construct the sequence. */
   public A184639() {

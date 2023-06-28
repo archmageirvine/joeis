@@ -4,13 +4,12 @@ import irvine.math.ContinuedFractionUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.SequenceWithOffset;
 
 /**
  * A061143 a(1) = 1; a(n) = sum of terms in the continued fraction for the square of the continued fraction [a(1); a(2), a(3), a(4),..., a(n-1)].
  * @author Sean A. Irvine
  */
-public class A061143 extends MemorySequence implements SequenceWithOffset {
+public class A061143 extends MemorySequence {
 
   @Override
   public int getOffset() {

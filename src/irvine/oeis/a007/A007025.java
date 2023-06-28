@@ -3,13 +3,12 @@ package irvine.oeis.a007;
 import irvine.math.plantri.Plantri;
 import irvine.math.plantri.PlantriGraphState;
 import irvine.oeis.ParallelPlantriSequence;
-import irvine.oeis.Sequence;
 
 /**
  * A007025 Number of polyhedral graphs with n nodes and minimal degree 4.
  * @author Sean A. Irvine
  */
-public class A007025 extends ParallelPlantriSequence implements Sequence {
+public class A007025 extends ParallelPlantriSequence {
 
   /** Construct the sequence. */
   public A007025() {

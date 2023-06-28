@@ -4,13 +4,12 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.SequenceWithOffset;
 
 /**
  * A062065 a(1) = 1; for n &gt;= 1, a(n+1) is smallest number such that the sums of any one, two or three of a(1), ..., a(n) are distinct (repetitions not allowed).
  * @author Sean A. Irvine
  */
-public class A062065 extends MemorySequence implements SequenceWithOffset {
+public class A062065 extends MemorySequence {
 
   private final TreeSet<Z> mSums = new TreeSet<>();
 

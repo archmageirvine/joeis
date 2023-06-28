@@ -2,13 +2,12 @@ package irvine.oeis.a061;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.SequenceWithOffset;
 
 /**
  * A061291 a(1) = 1; a(n+1) = a(1) + a(2)*(a(2) + a(3)*(a(3) +...+a(n-1)*(a(n-1) + a(n))...)).
  * @author Sean A. Irvine
  */
-public class A061291 extends MemorySequence implements SequenceWithOffset {
+public class A061291 extends MemorySequence {
 
   @Override
   public int getOffset() {

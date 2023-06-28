@@ -14,5 +14,4 @@ public class A064300 extends NestedSequence {
   public A064300() {
     super(0, new A000009(), new A003422(), 0, 0);
   }
-
 }

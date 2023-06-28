@@ -11,7 +11,7 @@ public class A000456 extends A008304 {
 
   @Override
   public Z next() {
-    return i(++mN, 5);
+    return t(++mN, 5);
   }
 }
 

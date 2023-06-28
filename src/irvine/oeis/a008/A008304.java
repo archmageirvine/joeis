@@ -44,7 +44,7 @@ public class A008304 extends Sequence1 {
     return sum;
   }
 
-  protected Z i(final int n, final int p) {
+  protected Z t(final int n, final int p) {
     return u(n, p, p).subtract(u(n, p - 1, p - 1));
   }
 
@@ -57,7 +57,7 @@ public class A008304 extends Sequence1 {
       ++mN;
       mP = 0;
     }
-    return i(mN, ++mP);
+    return t(mN, ++mP);
   }
 
 }

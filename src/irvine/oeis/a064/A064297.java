@@ -416,7 +416,7 @@ public class A064297 extends Sequence1 {
 
   /* m,n: dimensions of rectangle with n*m internal cells */
   /* when solving A007764, invoke with n+1,n+1 */
-  private Z solve(int n, int m) {
+  protected Z solve(int n, int m) {
     final long[] res = new long[500];
     final long[] prim = new long[500];
     long prime = MAX_PRIME;

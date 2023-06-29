@@ -12,6 +12,6 @@ public class A236437 extends PrependSequence {
 
   /** Construct the sequence. */
   public A236437() {
-    super(new A052033(), 2);
+    super(1, new A052033(), 2);
   }
 }

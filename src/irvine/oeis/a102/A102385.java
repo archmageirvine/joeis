@@ -13,6 +13,6 @@ public class A102385 extends PrependSequence {
 
   /** Construct the sequence. */
   public A102385() {
-    super(new PrimeSubsequence(new A004094()).skip(3), 2,  23,  61);
+    super(1, new PrimeSubsequence(new A004094()).skip(3), 2, 23, 61);
   }
 }

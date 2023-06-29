@@ -28,7 +28,7 @@ public class A128367 extends AbstractSequence {
    * @param parm parameter
    */
   public A128367(final int offset, final int parm) {
-    super(1);
+    super(offset);
     mN = offset - 1;
     mParm = parm;
   }

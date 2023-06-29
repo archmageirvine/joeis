@@ -12,7 +12,7 @@ public class A063965 extends PrependSequence {
 
   /** Construct the sequence. */
   public A063965() {
-    super(new SkipSequence(new A048617(), 7), 1, 6, 72, 1152, 28800, 4147200);
+    super(1, new SkipSequence(new A048617(), 7), 1, 6, 72, 1152, 28800, 4147200);
   }
 }
 

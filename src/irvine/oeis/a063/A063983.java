@@ -22,7 +22,7 @@ public class A063983 extends AbstractSequence {
    * @param base empower this by mN
    */
   public A063983(final int offset, final int base) {
-    super(0);
+    super(offset);
     mN = offset - 1;
     mBase = Z.valueOf(base);
   }

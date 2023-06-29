@@ -15,12 +15,12 @@ public class A125307 extends PrependSequence {
 
   /** Construct the sequence. */
   public A125307() {
-    super(new ExponentialGeneratingFunction(1) {
-            @Override
-            public Polynomial<Q> compute(final int n) {
-              return RING.series(RING.add(RING.subtract(RING.x(), RING.one()), RING.log(RING.oneMinusXToTheN(1), n)), RING.multiply(RING.pow(RING.subtract(RING.x(), RING.one()), 2, n), RING.subtract(RING.log(RING.oneMinusXToTheN(1), n), RING.one()), n), n);
-            }
-          }
+    super(1, new ExponentialGeneratingFunction(1) {
+        @Override
+        public Polynomial<Q> compute(final int n) {
+          return RING.series(RING.add(RING.subtract(RING.x(), RING.one()), RING.log(RING.oneMinusXToTheN(1), n)), RING.multiply(RING.pow(RING.subtract(RING.x(), RING.one()), 2, n), RING.subtract(RING.log(RING.oneMinusXToTheN(1), n), RING.one()), n), n);
+        }
+      }
       , 1);
   }
 }

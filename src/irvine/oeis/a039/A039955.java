@@ -13,7 +13,7 @@ public class A039955 extends PrependSequence {
 
   /** Construct the sequence. */
   public A039955() {
-    super(new A079896(), 1);
+    super(1, new A079896(), 1);
   }
 
   @Override

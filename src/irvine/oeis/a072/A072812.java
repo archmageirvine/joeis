@@ -13,6 +13,6 @@ public class A072812 extends PrependSequence {
 
   /** Construct the sequence. */
   public A072812() {
-    super(new BinaryToDecimalExpansionSequence(new A010051()), 1);
+    super(1, new BinaryToDecimalExpansionSequence(new A010051()), 1);
   }
 }

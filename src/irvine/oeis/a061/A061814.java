@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence0;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A061814 Multiples of 4 containing only even digits.
  * @author Georg Fischer
  */
-public class A061814 extends Sequence0 {
+public class A061814 extends AbstractSequence {
 
   private long mN;
   private final long mMult;
@@ -28,6 +28,7 @@ public class A061814 extends Sequence0 {
    * @param digits digits that may be present
    */
   public A061814(final int offset, final int mult, final int... digits) {
+    super(offset);
     mN = offset - 1;
     mMult = mult;
     mWrongDigits = new boolean[10];

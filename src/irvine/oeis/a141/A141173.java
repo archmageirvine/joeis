@@ -12,6 +12,6 @@ public class A141173 extends PrependSequence {
 
   /** Construct the sequence. */
   public A141173() {
-    super(new CongruenceForm(28,  1,  7,  3,  19,  27).skip(2), 3,  7);
+    super(1, new CongruenceForm(28, 1, 7, 3, 19, 27).skip(2), 3, 7);
   }
 }

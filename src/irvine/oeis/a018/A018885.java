@@ -11,7 +11,7 @@ public class A018885 extends PrependSequence {
 
   /** Construct the sequence. */
   public A018885() {
-    super(new A018884() {
+    super(1, new A018884() {
       @Override
       protected boolean accept(final Z n) {
         return true;

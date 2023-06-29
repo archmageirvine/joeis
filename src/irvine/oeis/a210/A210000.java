@@ -46,7 +46,7 @@ public class A210000 extends AbstractSequence {
    * @param aggr a function of the 4 terms: discriminant, permanent or sum of terms
    */
   public A210000(final int offset, final Function<Long, Long[]> range, final Long4 aggr, final BiFunction<Long, Long, Boolean> cond) {
-    super(0);
+    super(offset);
     mRange = range;
     mCond = cond;
     mLong4 = aggr;

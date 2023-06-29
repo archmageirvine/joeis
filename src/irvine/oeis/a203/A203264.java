@@ -45,7 +45,7 @@ public class A203264 extends AbstractSequence {
    * @param start value of first term
    */
   public A203264(final int offset, final Sequence seq, final int start) {
-    super(1);
+    super(offset);
     if (seq instanceof UpperLeftTriangle) {
       mULT = (UpperLeftTriangle) seq;
     } else {

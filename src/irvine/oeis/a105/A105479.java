@@ -29,7 +29,7 @@ public class A105479 extends AbstractSequence {
    * @param r parameter
    */
   public A105479(final int offset, final int decr, final int r) {
-    super(0);
+    super(offset);
     mN = offset - 1;
     mDecr = decr;
     mR = r;

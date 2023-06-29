@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  */
 public class ComplementSequence extends AbstractSequence {
 
-  private static final int DEFOFF = 0;
+  private static final int DEFOFF = 1;
   private final Sequence mSeq;
   private Z mN;
   private Z mCurrent;
@@ -32,7 +32,7 @@ public class ComplementSequence extends AbstractSequence {
 
   /**
    * Complement of a sequence.
-   * @param offset first index
+   * @param offset first index of target sequence
    * @param seq sequence to complement
    * @param start start value
    */
@@ -45,7 +45,7 @@ public class ComplementSequence extends AbstractSequence {
 
   /**
    * Complement of a sequence starting at 0.
-   * @param offset first index
+   * @param offset first index of target sequence
    * @param seq sequence to complement
    */
   public ComplementSequence(final int offset, final Sequence seq) {

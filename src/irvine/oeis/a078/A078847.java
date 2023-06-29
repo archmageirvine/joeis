@@ -8,11 +8,12 @@ import irvine.oeis.prime.ConsecutiveSequence;
  */
 public class A078847 extends ConsecutiveSequence {
 
+  private static final int DEFOFF = 1;
   protected int[] mGaps; // gaps between the consecutive primes
 
   /** Construct the sequence. */
   public A078847() {
-    this(1, 2, 4, 6);
+    this(1, 2, 4, 6); // 1 = initial term
   }
 
   /**
@@ -21,7 +22,7 @@ public class A078847 extends ConsecutiveSequence {
    * @param gaps list of differences between the consecutive primes
    */
   public A078847(final int termNo, final int... gaps) {
-    super(termNo);
+    super(DEFOFF, termNo, 16);
     mGaps = gaps;
   }
 

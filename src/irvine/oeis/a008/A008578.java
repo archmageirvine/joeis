@@ -12,7 +12,7 @@ public class A008578 extends PrependSequence {
 
   /** Construct the sequence. */
   public A008578() {
-    super(new A000040(), Z.ONE);
+    super(1, new A000040(), Z.ONE);
   }
 }
 

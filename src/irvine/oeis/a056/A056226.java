@@ -12,6 +12,6 @@ public class A056226 extends PrependSequence {
 
   /** Construct the sequence. */
   public A056226() {
-    super(new LittleHankelTransform(new A008683()), 0);
+    super(1, new LittleHankelTransform(new A008683()), 0);
   }
 }

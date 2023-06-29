@@ -28,7 +28,7 @@ public class A060035 extends AbstractSequence {
    * @param lambda function
    */
   public A060035(final int offset, final int startM, final BiFunction<Integer, Integer, Boolean> lambda) {
-    super(0);
+    super(offset);
     mN = offset - 1;
     mStartM = startM - 1;
     mLambda = lambda;

@@ -1,22 +1,21 @@
 package irvine.oeis.a035;
-// manually like A035537 2020-09-12
+// manually 2023-06-28
 
-import irvine.math.MemoryFunctionInt2Array;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.FunctionInt2ArrayZSequence;
 
 /**
  * A035536 Number of partitions of n with equal number of parts congruent to each of 1 and 2 (mod 3).
  * @author Georg Fischer
  */
-public class A035536 extends MemoryFunctionInt2Array<Z> implements Sequence {
+public class A035536 extends FunctionInt2ArrayZSequence {
 
   protected final int mKMod; // take i mod this number
   protected final int mMult; // multiply mN by this factor
   protected int mN; // index of next term
   protected int mLen; // number of additional variables
   protected final int[] mModules; // which combination of elements to select
-  protected final int[] mZeroes; // same length as mModules
+  protected final int[] mZeros; // same length as mModules
 
   /** Construct with default parameters. */
   public A035536() {
@@ -31,16 +30,17 @@ public class A035536 extends MemoryFunctionInt2Array<Z> implements Sequence {
    * @param modules vector of valid values
    */
   public A035536(final int offset, final int kMod, final int mult, final int[] modules) {
+    super(offset);
     mKMod = kMod;
     mLen = modules.length;
     if (mLen == 0) {
       mLen = kMod;
     }
     mMult = mult;
-    mZeroes = new int[mLen];
+    mZeros = new int[mLen];
     mModules = new int[mLen];
     for (int ic = 0; ic < mLen; ++ic) {
-      mZeroes[ic] = 0;
+      mZeros[ic] = 0;
       mModules[ic] = modules.length == 0 ? ic : modules[ic];
     }
     mN = offset - 1;
@@ -112,6 +112,6 @@ public class A035536 extends MemoryFunctionInt2Array<Z> implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return get(mN * mMult, mN * mMult, mZeroes);
+    return get(mN * mMult, mN * mMult, mZeros);
   }
 }

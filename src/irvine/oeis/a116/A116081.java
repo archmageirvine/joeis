@@ -23,7 +23,7 @@ public class A116081 extends AbstractSequence {
    * @param base of the representation of <code>mN</code>
    */
   public A116081(final int offset, final int base) {
-    super(1);
+    super(offset);
     mN = offset - 1;
     mBase = base;
   }

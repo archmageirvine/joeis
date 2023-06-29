@@ -2,7 +2,7 @@ package irvine.oeis.prime;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * Superclass for sequences that require a condition on a limited number of consecutive primes.
@@ -10,8 +10,9 @@ import irvine.oeis.Sequence;
  * The class maintains the set of consecutive primes, their differences, and the index (prime-pi) of the first prime in the set.
  * @author Georg Fischer
  */
-public class ConsecutiveSequence implements Sequence {
+public class ConsecutiveSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 1;
   protected final Fast mFastPrime = new Fast();
   protected Z mP; // current prime
   protected Z mP1; // prime after mP
@@ -27,7 +28,7 @@ public class ConsecutiveSequence implements Sequence {
    * Construct the sequence, take the first term as result.
    */
   public ConsecutiveSequence() {
-    this(1);
+    this(DEFOFF, 1, 16);
   }
 
   /**
@@ -35,20 +36,31 @@ public class ConsecutiveSequence implements Sequence {
    * @param termNo take this term as result: 1 for first, 2 for second
    */
   public ConsecutiveSequence(final int termNo) {
-    this(termNo, 16);
+    this(DEFOFF, termNo, 16);
   }
-  
+
   /**
    * Construct with specified term number and size.
    * @param termNo take this term as result: 1 for first, 2 for second
    * @param cLen size of the circular buffers
    */
   public ConsecutiveSequence(final int termNo, final int cLen) {
+    this(DEFOFF, termNo, cLen);
+  }
+
+  /**
+   * Construct with specified term number and size.
+   * @param offset first index
+   * @param termNo take this term as result: 1 for first, 2 for second
+   * @param cLen size of the circular buffers
+   */
+  public ConsecutiveSequence(final int offset, final int termNo, final int cLen) {
+    super(offset);
     mTermIx = termNo - 1;
     mTerms = new Z[cLen];
     mDiffs = new long[mTerms.length];
     mMask = cLen - 1;
-    mPix = 0; 
+    mPix = 0;
     mP = Z.ONE;
     mCix = 0;
     while (mPix < mMask - 1) { // prefill the buffers, except for the last element
@@ -76,7 +88,7 @@ public class ConsecutiveSequence implements Sequence {
   @Override
   public Z next() {
     advance();
-    while (! condition()) {
+    while (!condition()) {
       advance();
     }
     return mTerms[(mCix + mTermIx) & mMask];

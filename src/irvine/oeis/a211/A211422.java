@@ -43,7 +43,7 @@ public class A211422 extends AbstractSequence {
    * @param cond condition for the n and the 4 terms to be counted
    */
   public A211422(final int offset, final Function<Long, Long[]> range, final Long4Cond cond) {
-    super(0);
+    super(offset);
     mRange = range;
     mCond = cond;
     mN = offset - 1;

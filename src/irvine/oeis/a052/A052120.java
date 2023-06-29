@@ -12,6 +12,6 @@ public class A052120 extends PrependSequence {
 
   /** Construct the sequence. */
   public A052120() {
-    super(new ZeroSpacedSequence(new A000672(), 1), 1);
+    super(1, new ZeroSpacedSequence(new A000672(), 1), 1);
   }
 }

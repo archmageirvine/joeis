@@ -11,6 +11,6 @@ public class A057202 extends PrependSequence {
 
   /** Construct the sequence. */
   public A057202() {
-    super(new PowerFactorPrimeSequence(1, 1, 1, 2, -21), 1, 2, 3, 4);
+    super(1, new PowerFactorPrimeSequence(1, 1, 1, 2, -21), 1, 2, 3, 4);
   }
 }

@@ -12,6 +12,6 @@ public class A187482 extends PrependSequence {
 
   /** Construct the sequence. */
   public A187482() {
-    super(new A026347().skip(1), 1);
+    super(1, new A026347().skip(1), 1);
   }
 }

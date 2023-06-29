@@ -3,15 +3,16 @@ package irvine.oeis.a093;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A093211 a(n) is the largest number such that all of a(n)'s length-n substrings are distinct and divisible by 11.
+ * A093211 a(n) is the largest number such that all of a(n)'s length-n substrings are distinct and divisible by 11..
  * @author Georg Fischer
  */
-public class A093211 extends Sequence1 {
+public class A093211 extends AbstractSequence {
 
   private final HashSet<Z> mSet = new HashSet<>();
+
   protected long mDivm;
   protected Z mDivz;
   protected Z mLast;
@@ -28,6 +29,7 @@ public class A093211 extends Sequence1 {
    * @param div divisor
    */
   public A093211(final long div) {
+    super(1);
     mDivm = div;
     mDivz = Z.valueOf(mDivm);
     mN = 0;
@@ -84,10 +86,12 @@ public class A093211 extends Sequence1 {
     }
     final Z a = ktl.mod(mDivz).isZero() ? kt : kt.add(mDivz.subtract(ktl.mod(mDivz)));
     final Z al = a.mod(mLast);
-    if (mSet.add(al)) {
+    if (!mSet.contains(al)) {
+      mSet.add(al);
       aa = aa.max(a);
       aa = aa.max(walking(a));
       mSet.remove(al);
+    } else {
     }
 //    if (sDebug >= 4) {
 //      System.out.println("walk out(" + k + ") -> " + aa);

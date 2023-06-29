@@ -1,13 +1,13 @@
 package irvine.oeis.a211;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A211266 Number of integer pairs (x,y) such that 0&lt;x&lt;y&lt;=n and x*y&lt;=2n.
  * @author Georg Fischer
  */
-public class A211266 extends Sequence1 {
+public class A211266 extends AbstractSequence {
 
   /**
    * Three longs.
@@ -40,6 +40,7 @@ public class A211266 extends Sequence1 {
    * @param cond condition for the n and the 4 terms to be counted
    */
   public A211266(final int offset, final int range, final Long3Cond cond) {
+    super(offset);
     mRange = range;
     mCond = cond;
     mN = offset - 1;

@@ -14,6 +14,7 @@ import irvine.math.z.ZUtils;
  */
 public class PrependSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 0;
   private final Z[] mTerms;
   private final Sequence mSeq;
   private int mN = 0;
@@ -24,7 +25,19 @@ public class PrependSequence extends AbstractSequence {
    * @param terms additional terms
    */
   public PrependSequence(final Sequence seq, final Z... terms) {
-    super(0);
+    super(DEFOFF);
+    mSeq = seq;
+    mTerms = terms;
+  }
+
+  /**
+   * Create a new sequence with additional terms at the front.
+   * @param offset first index of target sequence
+   * @param seq main sequence
+   * @param terms additional terms
+   */
+  public PrependSequence(final int offset, final Sequence seq, final Z... terms) {
+    super(offset);
     mSeq = seq;
     mTerms = terms;
   }
@@ -35,7 +48,17 @@ public class PrependSequence extends AbstractSequence {
    * @param terms additional terms
    */
   public PrependSequence(final Sequence seq, final long... terms) {
-    this(seq, ZUtils.toZ(terms));
+    this(DEFOFF, seq, ZUtils.toZ(terms));
+  }
+
+  /**
+   * Create a new sequence with additional terms at the front.
+   * @param offset first index of target sequence
+   * @param seq main sequence
+   * @param terms additional terms
+   */
+  public PrependSequence(final int offset, final Sequence seq, final long... terms) {
+    this(offset, seq, ZUtils.toZ(terms));
   }
 
   @Override

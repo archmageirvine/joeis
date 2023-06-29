@@ -12,6 +12,6 @@ public class A229026 extends HolonomicRecurrence {
   /** Construct the sequence. */
   public A229026() {
     // o.g.f. 1/(1-x)/(1-5*x)^2/(1-8*x)
-    super(1, "[[0],[-200],[305],[-123],[19],[-1]]", "1", 1);
+    super(0, "[[0],[-200],[305],[-123],[19],[-1]]", "1", 1);
   }
 }

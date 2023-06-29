@@ -1,13 +1,13 @@
 package irvine.oeis.a061;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A061751 Numbers k such that k! is divisible by (k+1)^3.
  * @author Georg Fischer
  */
-public class A061751 extends Sequence1 {
+public class A061751 extends AbstractSequence {
 
   private int mN;
   private final int mAdd;
@@ -26,6 +26,7 @@ public class A061751 extends Sequence1 {
    * @param expon exponent
    */
   public A061751(final int offset, final int add, final int expon) {
+    super(offset);
     mN = offset - 1;
     mAdd = add;
     mExpon = expon;

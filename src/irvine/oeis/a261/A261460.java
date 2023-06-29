@@ -14,6 +14,6 @@ public class A261460 extends PrependSequence {
 
   /** Construct the sequence. */
   public A261460() {
-    super(new IntersectionSequence(new A008864(), new A162862()), 2);
+    super(1, new IntersectionSequence(new A008864(), new A162862()), 2);
   }
 }

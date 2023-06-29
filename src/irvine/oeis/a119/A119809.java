@@ -14,6 +14,6 @@ public class A119809 extends PrependSequence {
 
   /** Construct the sequence. */
   public A119809() {
-    super(new BinaryToDecimalExpansionSequence(new CharacteristicFunction(new A003151())), 2);
+    super(1, new BinaryToDecimalExpansionSequence(new CharacteristicFunction(new A003151())), 2);
   }
 }

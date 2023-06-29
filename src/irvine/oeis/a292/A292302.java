@@ -13,6 +13,6 @@ public class A292302 extends PrependSequence {
 
   /** Construct the sequence. */
   public A292302() {
-    super(new DifferenceSequence(new A057660()), 1);
+    super(1, new DifferenceSequence(new A057660()), 1);
   }
 }

@@ -12,7 +12,7 @@ public class A051345 extends PrependSequence {
 
   /** Construct the sequence. */
   public A051345() {
-    super(new A007534() {
+    super(1, new A007534() {
       @Override
       public Z next() {
         return super.next().add(3);

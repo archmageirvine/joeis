@@ -3,13 +3,13 @@ package irvine.oeis.a127;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A127757 Integer part of Gauss' Arithmetic-Geometric Mean M(1,n).
  * @author Georg Fischer
  */
-public class A127757 extends Sequence1 {
+public class A127757 extends AbstractSequence {
 
   protected int mN;
   protected CR mParm1;
@@ -27,6 +27,7 @@ public class A127757 extends Sequence1 {
    * @param parm2 power of n
    */
   public A127757(final int offset, final int parm1, final int parm2) {
+    super(offset);
     mN = offset - 1;
     mParm1 = CR.valueOf(parm1);
     mParm2 = parm2;

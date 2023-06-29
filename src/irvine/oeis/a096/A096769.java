@@ -1,6 +1,5 @@
 package irvine.oeis.a096;
 // manually deris/partprod at 2021-12-09 19:40
-// DO NOT EDIT here!
 
 import irvine.oeis.PartialProductSequence;
 import irvine.oeis.PrependSequence;
@@ -14,6 +13,6 @@ public class A096769 extends PrependSequence {
 
   /** Construct the sequence. */
   public A096769() {
-    super(new PartialProductSequence(new A000037()), 1);
+    super(1, new PartialProductSequence(new A000037()), 1);
   }
 }

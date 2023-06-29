@@ -12,7 +12,7 @@ public class A029936 extends PrependSequence {
 
   /** Construct the sequence. */
   public A029936() {
-    super(new SkipSequence(new A029935(), 4) {
+    super(1, new SkipSequence(new A029935(), 4) {
       @Override
       public Z next() {
         return super.next().divide2();

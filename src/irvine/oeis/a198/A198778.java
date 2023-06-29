@@ -12,6 +12,6 @@ public class A198778 extends PrependSequence {
 
   /** Construct the sequence. */
   public A198778() {
-    super(new A103812(new A001620(), 4, 0), 577); // bad workaround since gamma = 0.5772...
+    super(1, new A103812(new A001620(), 4, 0), 577); // bad workaround since gamma = 0.5772...
   }
 }

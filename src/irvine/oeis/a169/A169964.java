@@ -24,6 +24,7 @@ public class A169964 extends A007088 {
    * @param parm digit to multiply on A007088
    */
   public A169964(final int offset, final int parm) {
+    setOffset(offset);
     //mN = offset - 1;
     mDigit = Z.valueOf(parm);
   }

@@ -12,7 +12,7 @@ public class A173039 extends PrependSequence {
 
   /** Construct the sequence. */
   public A173039() {
-    super(new A061037().skip(1), -3, -1, -3);
+    super(1, new A061037().skip(1), -3, -1, -3);
   }
 
   @Override

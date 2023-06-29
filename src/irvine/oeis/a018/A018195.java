@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018195 Possible numbers of complements of topologies on 4 points.
@@ -28,8 +28,9 @@ import irvine.oeis.Sequence;
  * </pre>
  * @author Georg Fischer
  */
-public class A018195 extends TreeSet<Z> implements Sequence {
+public class A018195 extends Sequence0 {
 
+  private final TreeSet<Z> mSet = new TreeSet<>();
   protected int mN;
   private int mPoints;
 
@@ -45,18 +46,18 @@ public class A018195 extends TreeSet<Z> implements Sequence {
   public A018195(final int points) {
     mPoints = points;
     mN = 0;
-    add(Z.ONE);
-    add(Z.valueOf(mPoints - 1));
-    add(Z.valueOf(mPoints - 2).square());
+    mSet.add(Z.ONE);
+    mSet.add(Z.valueOf(mPoints - 1));
+    mSet.add(Z.valueOf(mPoints - 2).square());
     final Z limit = Z.ONE.shiftLeft(mPoints);
-    add(limit);
-    add(Z.ONE.shiftLeft(mPoints - 1).subtract(1));
+    mSet.add(limit);
+    mSet.add(Z.ONE.shiftLeft(mPoints - 1).subtract(1));
     int k = 2;
     int j = mPoints - 2;
     Z kj = Z.ONE.shiftLeft(j);
     while (j >= 2) {
       if (kj.compareTo(limit) < 0) {
-        add(kj);
+        mSet.add(kj);
       }
       ++k;
       --j;
@@ -64,15 +65,15 @@ public class A018195 extends TreeSet<Z> implements Sequence {
     }
     switch (mPoints) {
       case 4:
-        add(Z.valueOf(12));
-        add(Z.valueOf(14));
-        add(Z.valueOf(15));
+        mSet.add(Z.valueOf(12));
+        mSet.add(Z.valueOf(14));
+        mSet.add(Z.valueOf(15));
         break;
       case 13:
-        add(Z.THREE.pow(8));
+        mSet.add(Z.THREE.pow(8));
         break;
       case 12:
-        remove(Z.TWO.pow(10));
+        mSet.remove(Z.TWO.pow(10));
         break;
       default:
         break;
@@ -82,7 +83,7 @@ public class A018195 extends TreeSet<Z> implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    Z result = pollFirst();
+    Z result = mSet.pollFirst();
     if (result == null) {
       ++mPoints;
       result = Z.ONE.shiftLeft(mPoints);

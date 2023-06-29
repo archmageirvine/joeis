@@ -2,31 +2,32 @@ package irvine.oeis.a007;
 
 import irvine.math.MemoryFunction4;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A007747 Number of nonnegative integer points (p_1,p_2,...,p_n) in polytope defined by p_0 = p_{n+1} = 0, 2p_i - (p_{i+1} + p_{i-1}) &lt;= 2, p_i &gt;= 0, i=1,...,n. Number of score sequences in a chess tournament with n+1 players (with 3 outcomes for each game).
  * @author Sean A. Irvine
  */
-public class A007747 extends MemoryFunction4<Long, Z> implements Sequence {
+public class A007747 extends Sequence0 {
 
   private long mN = -1;
-
-  @Override
-  protected Z compute(final Long k, final Long l, final Long s, final Long x) {
-    if (k > 1 && l * k <= s && s <= (x + 1 - k) * k) {
-      Z sum = Z.ZERO;
-      for (long i = l; k * i <= s; ++i) {
-        sum = sum.add(get(k - 1, i, s - i, x));
+  private final MemoryFunction4<Long, Z> mB = new MemoryFunction4<>() {
+    @Override
+    protected Z compute(final Long k, final Long l, final Long s, final Long x) {
+      if (k > 1 && l * k <= s && s <= (x + 1 - k) * k) {
+        Z sum = Z.ZERO;
+        for (long i = l; k * i <= s; ++i) {
+          sum = sum.add(get(k - 1, i, s - i, x));
+        }
+        return sum;
       }
-      return sum;
+      return k == 1 && l <= s && s <= x ? Z.ONE : Z.ZERO;
     }
-    return k == 1 && l <= s && s <= x ? Z.ONE : Z.ZERO;
-  }
+  };
 
   @Override
   public Z next() {
     ++mN;
-    return get(mN + 1, 0L, mN * (mN + 1), 2 * mN);
+    return mB.get(mN + 1, 0L, mN * (mN + 1), 2 * mN);
   }
 }

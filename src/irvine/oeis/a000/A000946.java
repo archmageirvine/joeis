@@ -1,64 +1,21 @@
 package irvine.oeis.a000;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.util.io.StreamProcessor;
+import irvine.oeis.Sequence1;
 
 /**
  * A000946 Euclid-Mullin sequence: a(1) = 2, a(n+1) is the largest prime factor of 1 + Product_{k=1..n} a(k).
  * @author Sean A. Irvine
  */
-public class A000946 extends StreamProcessor implements Sequence {
+public class A000946 extends Sequence1 {
 
-  private final ArrayList<Z> mSeq = new ArrayList<>();
-  private int mPos = -1;
-
-  /**
-   * Construct this sequence.
-   *
-   * @exception IOException if an I/O error occurs
-   */
-  public A000946() throws IOException {
-    final InputStream input = getClass().getClassLoader().getResourceAsStream("irvine/factor/project/oeis/a000946");
-    if (input != null) {
-      // Read from a trusted resource
-      try {
-        process(input);
-      } finally {
-        input.close();
-      }
-    }
-  }
-
-  @Override
-  public void process(final String line) throws IOException {
-    final int sp = line.indexOf(' ');
-    if (sp == -1) {
-      throw new IOException(line);
-    }
-    try {
-      final int pos = Integer.parseInt(line.substring(0, sp));
-      if (pos != mSeq.size() + 1) {
-        throw new IOException(line);
-      }
-      final int dot = Math.max(sp, line.lastIndexOf('.'));
-      if (line.charAt(dot + 1) != '(') {
-        mSeq.add(new Z(line.substring(dot + 1)));
-      }
-    } catch (final NumberFormatException e) {
-      throw new IOException("Malformed line: " + line, e);
-    }
-  }
+  private Z mA = Z.ONE;
 
   @Override
   public Z next() {
-    if (++mPos == mSeq.size()) {
-      throw new UnsupportedOperationException();
-    }
-    return mSeq.get(mPos);
+    final Z res = mA.equals(Z.ONE) ? Z.TWO : Jaguar.factor(mA.add(1)).largestPrimeFactor();
+    mA = mA.multiply(res);
+    return res;
   }
 }

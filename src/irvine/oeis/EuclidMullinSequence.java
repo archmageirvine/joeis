@@ -129,11 +129,6 @@ public final class EuclidMullinSequence extends StreamProcessor implements Seque
     }
   }
 
-  private EuclidMullinSequence(final EuclidMullinSequence seq, final Z p) {
-    mSeq = seq.mSeq;
-    mP = p;
-  }
-
   @Override
   public Z next() {
     if (mPos >= mSeq.size()) {

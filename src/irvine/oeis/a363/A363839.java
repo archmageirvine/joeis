@@ -3,7 +3,7 @@ package irvine.oeis.a363;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A363839 allocated for Georg Fischer
+ * A363839 Numbers in the witch's multiplication table (German: "Hexeneinmaleins") in Goethe's Faust.
  * @author Georg Fischer
  */
 public class A363839 extends NoncomputableSequence {

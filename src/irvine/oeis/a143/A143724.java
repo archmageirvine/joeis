@@ -5,7 +5,7 @@ import irvine.oeis.a116.A116477;
 import irvine.oeis.a130.A130162;
 
 /**
- * A143724 Triangle read by rows, inverse M√∂bius transform of a diagonalized matrix of A116470.
+ * A143724 Triangle read by rows, inverse M\u00f6bius transform of a diagonalized matrix of A116470.
  * @author Georg Fischer
  */
 public class A143724 extends A130162 {

@@ -1,15 +1,14 @@
 package irvine.oeis.a157;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.FunctionInt3ZSequence;
 
 /**
  * A157536 Half the number of length n integer sequences with sum zero and sum of squares 32.
  * Pattern for similar sequences, rewritten from Maple.
  * @author Georg Fischer
  */
-public class A157536 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A157536 extends FunctionInt3ZSequence {
 
   protected int mS; // sum of terms
   protected int mSs; // sum of squares of terms
@@ -17,7 +16,7 @@ public class A157536 extends MemoryFunctionInt3<Z> implements Sequence {
 
   /** Construct the sequence. */
   public A157536() {
-    this (2, 0, 32);
+    this(2, 0, 32);
   }
 
   /**
@@ -26,6 +25,7 @@ public class A157536 extends MemoryFunctionInt3<Z> implements Sequence {
    * @param ss sum of squares of terms
    */
   public A157536(final int offset, final int s, final int ss) {
+    super(offset);
     mN = offset - 1;
     mS = s;
     mSs = ss;

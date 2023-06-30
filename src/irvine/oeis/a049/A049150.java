@@ -23,12 +23,11 @@ public class A049150 extends RevertTransformSequence {
 
   /**
    * Generic constructor with parameters
-   *
-   * @param left  initial terms
+   * @param left initial terms
    * @param right repeated terms that are overlaid by the initial terms
    */
   public A049150(final long[] left, final long[] right) {
-    super(new PaddingSequence(left, right));
+    super(0, new PaddingSequence(left, right));
   }
 
   @Override

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A065447 Concatenation of 1, 00, 111, 0000, ..., n 1&apos;s (if n is odd) or n 0&apos;s (if n is even).
+ * A065447 Concatenation of 1, 00, 111, 0000, ..., n 1's (if n is odd) or n 0's (if n is even).
  * @author Georg Fischer
  */
 public class A065447 extends Sequence1 {

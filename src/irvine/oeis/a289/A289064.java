@@ -5,20 +5,21 @@ import java.util.ArrayList;
 import irvine.math.group.GaussianIntegers;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.util.Pair;
 
 /**
  * A289064 Recurrence a(n+2) = Sum_{k=0..n} binomial(n,k)*a(k)*a(n+1-k) with a(0)=1, a(1)=-1.
  * @author Georg Fischer
  */
-public class A289064 extends ArrayList<Pair<Z, Z>> implements Sequence {
+public class A289064 extends Sequence0 {
 
   protected static final GaussianIntegers GI = GaussianIntegers.SINGLETON;
   protected Pair<Z, Z> mA0;
   protected Pair<Z, Z> mA1;
   protected int mRi; // 0 for result = re(), 1 for im()
   protected int mN;
+  private final ArrayList<Pair<Z, Z>> mLst = new ArrayList<>();
 
   /** Construct the sequence. */
   public A289064() {
@@ -56,7 +57,7 @@ public class A289064 extends ArrayList<Pair<Z, Z>> implements Sequence {
   @Override
   public Z next() {
     final Pair<Z, Z> t = computeNext();
-    add(t);
+    mLst.add(t);
     return mRi == 0 ? GI.re(t) : GI.im(t);
   }
 
@@ -67,9 +68,9 @@ public class A289064 extends ArrayList<Pair<Z, Z>> implements Sequence {
    * @return value of <code>a(n)</code>
    */
   public Pair<Z, Z> a(final int n) {
-    while (n >= size()) {
-      add(computeNext());
+    while (n >= mLst.size()) {
+      mLst.add(computeNext());
     }
-    return get(n);
+    return mLst.get(n);
   }
 }

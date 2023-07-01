@@ -62,6 +62,7 @@ public class A096098 extends Sequence1 implements Closeable {
     }
   }
 
+  @Override
   public void close() throws IOException {
     mInput.close();
   }

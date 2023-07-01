@@ -1,8 +1,5 @@
 package irvine.oeis.memory;
 
-import java.io.Serializable;
-import java.util.Arrays;
-
 import irvine.math.z.Z;
 
 /**

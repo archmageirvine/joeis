@@ -14,7 +14,7 @@ public class LongDynamicBooleanArray implements Serializable {
   private final LongDynamicIntArray mArray = new LongDynamicIntArray();
 
   /**
-   * Return a close approximation to the largest index currently in the array.
+   * Return an approximation to the largest index currently in the array.
    * It is guaranteed there are no set values beyond the return value.
    * @return approximate array length
    */

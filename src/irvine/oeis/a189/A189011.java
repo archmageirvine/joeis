@@ -2,9 +2,11 @@ package irvine.oeis.a189;
 // manually 2021-09-17
 
 import java.util.ArrayList;
+import java.util.List;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 import irvine.oeis.a014.A014132;
 
@@ -12,7 +14,7 @@ import irvine.oeis.a014.A014132;
  * A189011 Zero-one sequence based on triangular numbers:  a(A000217(k))=a(k); a(A014132(k))=1-a(k); a(1)=0.
  * @author Georg Fischer
  */
-public class A189011 extends ArrayList<Z> implements Sequence {
+public class A189011 extends Sequence1 {
 
   protected int mN; // current index
   protected int mU; // term of underlying sequence u
@@ -22,6 +24,7 @@ public class A189011 extends ArrayList<Z> implements Sequence {
   protected int mLen; // number of initial terms
   protected Sequence mSeqU; // underlying sequence U
   protected Sequence mSeqV; // complement sequence v
+  private final List<Z> mList = new ArrayList<>();
 
   /** Construct the sequence. */
   public A189011() {
@@ -51,10 +54,10 @@ public class A189011 extends ArrayList<Z> implements Sequence {
     }
     mKu = 1; // CK assumes this
     mKv = 1;
-    add(null); // a(0) is not used
+    mList.add(null); // a(0) is not used
     mLen = inits.length;
     for (int i = 0; i < mLen; ++i) {
-      add(Z.valueOf(inits[i])); // preset a(1..mLen)
+      mList.add(Z.valueOf(inits[i])); // preset a(1..mLen)
     }
     mN = 0; // offset = 1
   }
@@ -71,14 +74,14 @@ public class A189011 extends ArrayList<Z> implements Sequence {
     Z result = Z.NEG_ONE;
     // System.out.println("****" + ", mN=" + mN + ", mKu=" + mKu + ", mU=" + mU + ", mKv=" + mKv  + ", mV=" + mV + ", size=" + size() + ", a(" + (mN - 1) + ")=" + get(mN - 1));
     if (mN <= mLen) {
-      result = get(mN);
+      result = mList.get(mN);
     } else {
       while (mU < mN) {
         ++mKu;
         mU = mSeqU.next().intValue();
       }
       if (mN == mU) {
-        result = get(mKu);
+        result = mList.get(mKu);
         ++mKu;
         mU = mSeqU.next().intValue();
       } else { 
@@ -87,14 +90,14 @@ public class A189011 extends ArrayList<Z> implements Sequence {
           mV = mSeqV.next().intValue();
         }
         if (mN == mV) {
-          result = Z.ONE.subtract(get(mKv));
+          result = Z.ONE.subtract(mList.get(mKv));
           ++mKv;
           mV = mSeqV.next().intValue();
           // } else {
           //   System.err.println("assert: " + ", mN=" + mN + ", mKu=" + mKu + ", mU=" + mU + ", mKv=" + mKv  + ", mV=" + mV + ", result=" + result + ", a(" + (mN - 1) + ")=" + get(mN - 1));
         }
       }
-      add(result);
+      mList.add(result);
     }
     return result;
   }

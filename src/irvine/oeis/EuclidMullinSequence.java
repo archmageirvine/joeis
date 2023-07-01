@@ -1,7 +1,9 @@
 package irvine.oeis;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -9,13 +11,12 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.util.io.StreamProcessor;
 
 /**
  * Generate an Euclid-Mullin sequence.
  * @author Sean A. Irvine
  */
-public final class EuclidMullinSequence extends StreamProcessor implements Sequence {
+public final class EuclidMullinSequence extends Sequence1 {
 
   private static final HashMap<Z, EuclidMullinSequence> CACHE = new HashMap<>();
   private static final Z Z43 = Z.valueOf(43);
@@ -72,7 +73,14 @@ public final class EuclidMullinSequence extends StreamProcessor implements Seque
     final InputStream input = getClass().getClassLoader().getResourceAsStream("irvine/factor/project/em/em" + p);
     if (input != null) {
       // Read from a trusted resource
-      process(input);
+      try (final BufferedReader r = new BufferedReader(new InputStreamReader(input))) {
+        String line;
+        while ((line = r.readLine()) != null) {
+          if (!line.startsWith("#") && line.length() > 0) {
+            process(line);
+          }
+        }
+      }
     } else {
       mSeq.add(mP);
       // Special handling for 3 which has almost same sequence as 2
@@ -101,8 +109,7 @@ public final class EuclidMullinSequence extends StreamProcessor implements Seque
     }
   }
 
-  @Override
-  public void process(final String line) throws IOException {
+  private void process(final String line) throws IOException {
     final int sp = line.indexOf(' ');
     if (sp == -1) {
       throw new IOException(line);

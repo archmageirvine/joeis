@@ -88,23 +88,5 @@ public class EuclidMullinSequenceTest extends TestCase {
     assertEquals(Z.valueOf(23), ems.next());
     assertEquals(Z.SEVEN, ems.next());
     assertEquals(Z.valueOf(2843), ems.next());
-    try {
-      ems.process("not-a-number");
-      fail();
-    } catch (final IOException e) {
-      // expected
-    }
-    try {
-      ems.process("10 not-a-number");
-      fail();
-    } catch (final IOException e) {
-      // expected
-    }
-    try {
-      ems.process("10 7.");
-      fail();
-    } catch (final IOException e) {
-      // expected
-    }
   }
 }

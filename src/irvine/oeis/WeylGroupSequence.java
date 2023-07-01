@@ -9,7 +9,7 @@ import irvine.oeis.transform.EulerTransform;
  * where the type X is in A, B, or D, and the group order is d.
  * @author Georg Fischer
  */
-public class WeylGroupSequence extends EulerTransform implements SequenceWithOffset {
+public class WeylGroupSequence extends EulerTransform {
 
   /**
    * Construct the sequence. by reducing it to the {@link EulerTransform}

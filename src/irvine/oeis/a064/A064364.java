@@ -30,7 +30,7 @@ public class A064364 extends Sequence1 {
     if (res.equals(mU)) {
       // We just hit the end of the row
       ++mN;
-      Z t = mU;
+      final Z t = mU;
       mU = mUpper.next();
       for (Z u = t.add(1); u.compareTo(mU) <= 0; u = u.add(1)) {
         final int s = Jaguar.factor(u).sopfr().intValueExact();

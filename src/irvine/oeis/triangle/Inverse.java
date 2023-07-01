@@ -2,7 +2,6 @@ package irvine.oeis.triangle;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
@@ -11,9 +10,9 @@ import irvine.oeis.transform.ConvolutionProduct;
  * The offset of the target triangle defaults to 0.
  * @author Georg Fischer
  */
-public class Inverse extends Triangle implements SequenceWithOffset {
+public class Inverse extends Triangle {
 
-  private int mOffset; // first index of target triangle
+  private final int mOffset; // first index of target triangle
   protected Triangle mS; // source triangle
 
   /**

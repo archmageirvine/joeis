@@ -3,14 +3,13 @@ package irvine.oeis.triangle;
 import java.util.function.Function;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
 
 /**
  * Generate the rows of a triangle T(n,k).
  * In contrast to {@link Triangle}, this class handles offsets, row and column shifts.
  * @author Georg Fischer
  */
-public abstract class BaseTriangle extends Triangle implements SequenceWithOffset {
+public abstract class BaseTriangle extends Triangle {
 
   protected int mOffset; // first index of sequence, only used for b-files
   // super.mRow is 0-based current row index

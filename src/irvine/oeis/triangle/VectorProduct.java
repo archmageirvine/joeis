@@ -3,14 +3,13 @@ package irvine.oeis.triangle;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
  * Multiply a triangle and a column vector: <code>T = S1 * V2</code>.
  * @author Georg Fischer
  */
-public class VectorProduct extends Triangle implements SequenceWithOffset {
+public class VectorProduct extends Triangle {
 
   protected int mOffset; // first index of target triangle
   protected Triangle mS1; // left source multiplicant

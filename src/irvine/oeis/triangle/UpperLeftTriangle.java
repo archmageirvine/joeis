@@ -1,7 +1,6 @@
 package irvine.oeis.triangle;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
 
 /**
  * Rearrange a matrix M as a {@link Triangle} by enumerating the antidiagonals
@@ -10,7 +9,7 @@ import irvine.oeis.SequenceWithOffset;
  * while the resulting Triangle always starts with <code>T(0, 0)</code>.
  * @author Georg Fischer
  */
-public class UpperLeftTriangle extends Triangle implements SequenceWithOffset {
+public class UpperLeftTriangle extends Triangle {
 
   protected int mRow; // current row index n
   protected int mCol; // current column index k

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A064365.
+ * A064365 a(0) = 0; thereafter a(n) = a(n-1)-prime(n) if positive and new, otherwise a(n) = a(n-1)+prime(n), where prime(n) is the n-th prime.
  * @author Sean A. Irvine
  */
 public class A064365 extends Sequence0 {

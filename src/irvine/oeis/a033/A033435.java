@@ -16,7 +16,7 @@ public class A033435 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A033435() {
-    super(new DecimalExpansionSequence(new CR() {
+    super(0, new DecimalExpansionSequence(new CR() {
       @Override
       protected Z approximate(final int precision) {
         if (precision >= 0) {

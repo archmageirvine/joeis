@@ -1,7 +1,7 @@
 package irvine.oeis.a019;
 
-import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.a030.A030178;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A019474 Continued fraction expansion of W(1), where W(x) is the Lambert W function (the root of w*exp(w) = x).
@@ -11,6 +11,6 @@ public class A019474 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A019474() {
-    super(new A030178());
+    super(0, new A030178());
   }
 }

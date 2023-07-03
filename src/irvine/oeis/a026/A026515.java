@@ -10,6 +10,6 @@ public class A026515 extends RunLengthSequence {
 
   /** Construct the sequence. */
   public A026515() {
-    super(new A026513());
+    super(1, new A026513());
   }
 }

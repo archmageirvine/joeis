@@ -1,15 +1,21 @@
 package irvine.oeis.a180;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.triangle.Triangle;
+import irvine.oeis.memory.FunctionInt3ZSequence;
+import irvine.oeis.triangle.BaseTriangle;
 
 /**
  * A180281 Triangle read by rows: T(n,k) = number of arrangements of n indistinguishable balls in n boxes with the maximum number of balls in any box equal to k.
  * with the maximum number of balls in any box equal to k.
  * @author Georg Fischer
  */
-public class A180281 extends Triangle {
+public class A180281 extends BaseTriangle {
+
+  /** Construct the sequence. */
+  public A180281() {
+    super(1, 1, 1);
+    hasRAM(true);
+  }
 
   /* Maple:
     b:= proc(n, i, k) option remember; `if`(n=0, 1,
@@ -18,7 +24,7 @@ public class A180281 extends Triangle {
     T:= (n, k)-> b(n$2, k)-b(n$2, k-1):
     seq(seq(T(n,k), k=1..n), n=1..12);  # _Alois P. Heinz_, Aug 16 2018
   */
-  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<Z>() {
+  private final FunctionInt3ZSequence mB = new FunctionInt3ZSequence(1) {
     @Override
     protected Z compute(final int n, final int i, final int k) {
       if (n == 0) {
@@ -37,9 +43,7 @@ public class A180281 extends Triangle {
   };
 
   @Override
-  public Z compute(int n, int k) {
-    ++n;
-    ++k;
+  public Z triangleElement(final int n, final int k) {
     return mB.get(n, n, k).subtract(mB.get(n, n, k - 1));
   }
 }

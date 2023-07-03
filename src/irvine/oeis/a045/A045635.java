@@ -13,7 +13,7 @@ public class A045635 extends ConvolutionSequence {
 
   private static final class MySequence extends PrependSequence {
     private MySequence() {
-      super(new SkipSequence(new A002212(), 1), 0);
+      super(1, new SkipSequence(new A002212(), 1), 0);
     }
   }
 

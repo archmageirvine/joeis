@@ -1,7 +1,7 @@
 package irvine.oeis.a019;
 
-import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.a161.A161016;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A019430 Continued fraction for tan(1/7).
@@ -11,6 +11,6 @@ public class A019430 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A019430() {
-    super(new A161016());
+    super(0, new A161016());
   }
 }

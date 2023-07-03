@@ -1,7 +1,7 @@
 package irvine.oeis.a064;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 import irvine.util.array.LongDynamicBooleanArray;
 
@@ -9,7 +9,7 @@ import irvine.util.array.LongDynamicBooleanArray;
  * A064290 First number of height n in Recam\u00e1n's sequence A005132.
  * @author Sean A. Irvine
  */
-public class A064290 extends Sequence0 {
+public class A064290 extends Sequence1 {
 
   private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
   private final DynamicLongArray mFirsts = new DynamicLongArray();
@@ -17,6 +17,7 @@ public class A064290 extends Sequence0 {
   private int mH = 0;
   private long mV = 0;
   private int mN = -1;
+
   {
     mSeen.set(0L);
   }

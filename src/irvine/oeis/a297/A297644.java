@@ -14,6 +14,6 @@ public class A297644 extends SkipSequence {
 
   /** Construct the sequence. */
   public A297644() {
-    super(new IntersectionSequence(new A000326(), new A030141()), 1);
+    super(1, new IntersectionSequence(new A000326(), new A030141()), 1);
   }
 }

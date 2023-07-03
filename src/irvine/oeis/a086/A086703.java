@@ -17,7 +17,7 @@ public class A086703 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A086703() {
-    super(new DecimalExpansionSequence(REALS.exp(REALS.pow(CR.PI, CR.TWO).divide(CR.valueOf(12).multiply(CR.TWO.log())))));
+    super(0, new DecimalExpansionSequence(REALS.exp(REALS.pow(CR.PI, CR.TWO).divide(CR.valueOf(12).multiply(CR.TWO.log())))));
   }
 }
 

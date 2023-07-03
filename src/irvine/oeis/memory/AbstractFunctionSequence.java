@@ -12,17 +12,25 @@ import irvine.oeis.AbstractSequence;
  * @author Georg Fischer
  */
 public abstract class AbstractFunctionSequence extends AbstractSequence {
-  
+
+  private static final int DEFOFF = 0;
   protected final HashMap<String, Z> mHash = new HashMap<>(32768);
   private final StringBuffer mKeyBuf = new StringBuffer(64);
+
+  /**
+   * Empty constructor.
+   */
+  protected AbstractFunctionSequence() {
+    super(DEFOFF);
+  }
 
   /**
    * Constructor with offset.
    * @param offset first index
    * Allocate a HashMap with rather big chunks.
-   */ 
+   */
   protected AbstractFunctionSequence(final int offset) {
-   super(offset);
+    super(offset);
   }
 
   /**
@@ -40,11 +48,28 @@ public abstract class AbstractFunctionSequence extends AbstractSequence {
   }
 
   /**
+   * Clear the cache.
+   */
+  protected void clear() {
+    mHash.clear();
+  }
+
+  /**
    * Return the number of stored tuples.
    * @return size of the internal HashMap
    */
-  public int size() {
+  protected int size() {
     return mHash.size();
+  }
+
+  /**
+   * Dummy implementation for applicatons which do not yield a sequence,
+   * but which use the caching of function results.
+   * @return -1
+   */
+  @Override
+  public Z next() {
+    return Z.NEG_ONE;
   }
 }
 

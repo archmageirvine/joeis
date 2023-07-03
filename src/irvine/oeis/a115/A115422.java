@@ -26,8 +26,8 @@ public class A115422 extends AbstractSequence {
    * @param f2
    * @param f3
    */
-  public A115422(final long offset, final long f1, final long f2, final long f3) {
-    super(1);
+  public A115422(final int offset, final long f1, final long f2, final long f3) {
+    super(offset);
     mN = offset - 1;
     mF1 = f1;
     mF2 = f2;

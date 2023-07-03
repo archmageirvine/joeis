@@ -34,7 +34,7 @@ public class A048345 extends AbstractSequence {
    * @param digit the specific digit to be counted
    */
   protected A048345(final int offset, final Sequence seq, final int digit) {
-    super(1);
+    super(offset);
     mSeq = seq;
     mDigit = digit;
     mN = offset - 1;

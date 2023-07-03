@@ -25,7 +25,7 @@ public class A061037 extends AbstractSequence {
    * @param parm parameter
    */
   public A061037(final int offset, final int parm) {
-    super(2);
+    super(offset);
     mN = offset - 1;
     mAdd = new Q(Z.ONE, Z.valueOf(parm));
   }

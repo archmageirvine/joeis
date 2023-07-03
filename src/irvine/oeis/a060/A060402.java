@@ -16,6 +16,6 @@ public class A060402 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A060402() {
-    super(new DecimalExpansionSequence(REALS.tanh(CR.PI)));
+    super(0, new DecimalExpansionSequence(REALS.tanh(CR.PI)));
   }
 }

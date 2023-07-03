@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a005.A005132;
 import irvine.util.array.LongDynamicByteArray;
 
@@ -11,7 +11,7 @@ import irvine.util.array.LongDynamicByteArray;
  * A064284 Number of times n appears in Recam\u00e1n's sequence A005132.
  * @author Sean A. Irvine
  */
-public class A064284 extends Sequence1 implements Conjectural {
+public class A064284 extends Sequence0 implements Conjectural {
 
   private static final int HEURISTIC_STEPS = 100000;
   private final LongDynamicByteArray mCounts = new LongDynamicByteArray();

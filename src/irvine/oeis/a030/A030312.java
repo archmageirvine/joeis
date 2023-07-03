@@ -11,7 +11,7 @@ public class A030312 extends RunLengthSequence {
 
   /** Construct the sequence. */
   public A030312() {
-    super(new A030308());
+    super(1, new A030308());
   }
 
   @Override

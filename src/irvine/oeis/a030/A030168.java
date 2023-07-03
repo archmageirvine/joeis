@@ -3,10 +3,10 @@ package irvine.oeis.a030;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.cons.ContinuedFractionSequence;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a033.A033308;
+import irvine.oeis.cons.ContinuedFractionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A030168 Continued fraction for Copeland-Erd\u0151s constant 0.235711... (concatenate primes).
@@ -35,6 +35,6 @@ public class A030168 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A030168() {
-    super(new DecimalExpansionSequence(COPELAND_ERDOS));
+    super(0, new DecimalExpansionSequence(COPELAND_ERDOS));
   }
 }

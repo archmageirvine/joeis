@@ -10,6 +10,6 @@ public class A000385 extends ConvolutionSequence {
 
   /** Default constructor. */
   public A000385() {
-    super(new A000203());
+    super(1, new A000203());
   }
 }

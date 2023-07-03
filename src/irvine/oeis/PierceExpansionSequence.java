@@ -10,8 +10,10 @@ import irvine.math.z.Z;
  * positive signs of all unit fractions.
  * @author Sean A. Irvine
  */
-public abstract class PierceExpansionSequence implements Sequence {
+public abstract class PierceExpansionSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 0;
+  private static final int DEFAULT_PRECISION = 32;
   protected CR mA;
   protected int mPrec; // the precision for CR.floor()
 
@@ -19,14 +21,24 @@ public abstract class PierceExpansionSequence implements Sequence {
    * Constructor with default precision
    */
   public PierceExpansionSequence() {
-    this(32);
+    this(DEFOFF, DEFAULT_PRECISION);
+  }
+
+  /**
+   * Constructor with offset
+   * @param offset first index
+   */
+  public PierceExpansionSequence(final int offset) {
+    this(offset, DEFAULT_PRECISION);
   }
 
   /**
    * Constructor with precision
+   * @param offset first index
    * @param prec precision for CR.floor()
    */
-  public PierceExpansionSequence(final int prec) {
+  public PierceExpansionSequence(final int offset, final int prec) {
+    super(offset);
     mPrec = prec;
     mA = null;
   }

@@ -7,8 +7,9 @@ import irvine.math.z.Z;
  * Pisot L sequence.
  * @author Sean A. Irvine
  */
-public class PisotLSequence implements Sequence {
+public class PisotLSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 0;
   private final Z mInitA;
   private final Z mInitB;
   private Z mA = null;
@@ -16,6 +17,7 @@ public class PisotLSequence implements Sequence {
   private final Q mC;
 
   protected PisotLSequence(final long a, final long b, final Q constant) {
+    super(DEFOFF);
     mInitA = Z.valueOf(a);
     mInitB = Z.valueOf(b);
     mC = constant;

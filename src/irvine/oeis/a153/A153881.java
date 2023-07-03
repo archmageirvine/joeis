@@ -13,6 +13,6 @@ public class A153881 extends PaddingSequence {
    * Construct the sequence
    */
   public A153881() {
-    super(new long[] {1}, new long[] {-1});
+    super(1, new long[]{1}, new long[]{-1});
   }
 }

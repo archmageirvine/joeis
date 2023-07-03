@@ -12,7 +12,7 @@ public class A107879 extends SkipSequence {
 
   /** Construct the sequence. */
   public A107879() {
-    super(new TriangleSelector(0, new A107876(), 0, n -> new int[] {n, 3}), 3);
+    super(0, new TriangleSelector(0, new A107876(), 0, n -> new int[]{n, 3}), 3);
   }
 }
 

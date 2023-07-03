@@ -12,6 +12,6 @@ public class A036568 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A036568() {
-    super(new DecimalExpansionSequence(CR.PI.divide(CR.valueOf(17)).cos().multiply(2)));
+    super(0, new DecimalExpansionSequence(CR.PI.divide(CR.valueOf(17)).cos().multiply(2)));
   }
 }

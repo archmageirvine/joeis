@@ -13,7 +13,7 @@ public class A103872 extends SkipSequence {
 
   /** Construct the sequence. */
   public A103872() {
-    super(new A005043(), 1);
+    super(0, new A005043(), 1);
   }
 
   @Override

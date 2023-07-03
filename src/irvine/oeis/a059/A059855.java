@@ -11,6 +11,6 @@ public class A059855 extends PaddingSequence {
 
   /** Construct the sequence. */
   public A059855() {
-    super("1, 2", "5, 2");
+    super(1, "1, 2", "5, 2");
   }
 }

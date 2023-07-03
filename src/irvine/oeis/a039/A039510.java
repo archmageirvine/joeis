@@ -11,7 +11,7 @@ public class A039510 extends RecordPositionSequence {
 
   /** Construct the sequence. */
   public A039510() {
-    super(new A039508(), 0);
+    super(0, new A039508(), 0);
   }
 
   @Override

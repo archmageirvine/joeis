@@ -15,7 +15,7 @@ public class A246353 extends InverseSequence {
 
   /** Construct the sequence. */
   public A246353() {
-    super(new A048672(), 1, 1);
+    super(0, new A048672(), 1, 1);
   }
 
   @Override

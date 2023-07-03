@@ -39,7 +39,7 @@ public class A034318 extends AbstractSequence {
    * @param per1 the terms of the PeriodicSequence to be transformed
    */
   public A034318(final int offset, final int squeeze0, final long factor, final long add0, final long... per1) {
-    super(-1);
+    super(offset);
     mET1 = new EulerTransform(new PeriodicSequence(per1), 1);
     final long[] per2 = new long[per1.length];
     for (int k = 0; k < per1.length; ++k) {

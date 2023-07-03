@@ -12,6 +12,6 @@ public class A023668 extends ConvolutionSequence {
 
   /** Construct the sequence. */
   public A023668() {
-    super(new A001950(), new SkipSequence(new A023533(), 1));
+    super(1, new A001950(), new SkipSequence(new A023533(), 1));
   }
 }

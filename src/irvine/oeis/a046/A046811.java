@@ -11,7 +11,7 @@ public class A046811 extends RecordPositionSequence {
 
   /** Construct the sequence. */
   public A046811() {
-    super(new A046810() {
+    super(0, new A046810() {
       @Override
       public Z next() {
         // Contortions to deal with excluding indices containing 0

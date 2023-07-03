@@ -10,6 +10,6 @@ public class A030782 extends RecordPositionSequence {
 
   /** Construct the sequence. */
   public A030782() {
-    super(new A030777(), 1);
+    super(1, new A030777(), 1);
   }
 }

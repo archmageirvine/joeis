@@ -11,6 +11,6 @@ public class A048135 extends SkipSequence {
 
   /** Construct the sequence. */
   public A048135() {
-    super(new A122254(), 2);
+    super(1, new A122254(), 2);
   }
 }

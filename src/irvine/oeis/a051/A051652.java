@@ -10,7 +10,7 @@ public class A051652 extends InverseSequence {
 
   /** Construct the sequence. */
   public A051652() {
-    super(new A051700(), 0, 0);
+    super(0, new A051700(), 0, 0);
     mMap.put(0L, 2L);
   }
 }

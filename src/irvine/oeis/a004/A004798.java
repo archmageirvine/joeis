@@ -18,6 +18,6 @@ public class A004798 extends ConvolutionSequence {
 
   /** Construct the sequence. */
   public A004798() {
-    super(seq());
+    super(1, seq());
   }
 }

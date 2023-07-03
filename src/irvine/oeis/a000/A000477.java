@@ -20,7 +20,7 @@ public class A000477 extends ConvolutionSequence {
 
   /** Default constructor. */
   public A000477() {
-    super(new MySequence(), new A000203());
+    super(1, new MySequence(), new A000203());
   }
 
   @Override

@@ -1,7 +1,7 @@
 package irvine.oeis.a039;
 
-import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.a160.A160155;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A039922 Continued fraction for root of x^5 - x - 1.
@@ -11,6 +11,6 @@ public class A039922 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A039922() {
-    super(new A160155());
+    super(0, new A160155());
   }
 }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
@@ -11,8 +12,9 @@ import irvine.oeis.Sequence;
  * From <code>weighouti</code> in the OEIS <a href="https://oeis.org/transforms.txt">Maple transforms</a> collection.
  * @author Georg Fischer
  */
-public class InverseWeighTransform implements Sequence {
+public class InverseWeighTransform extends AbstractSequence {
 
+  private static final int DEFOFF = 1;
   private Sequence mSeq;
   private final ArrayList<Z> mAs = new ArrayList<>(); // resulting sequence
   private final ArrayList<Z> mBs = new ArrayList<>(); // sequence to be transformed
@@ -26,6 +28,7 @@ public class InverseWeighTransform implements Sequence {
    * initializes the internal properties
    */
   public InverseWeighTransform() {
+    super(DEFOFF);
     mIn = 0;
     mN = 0;
     mAs.add(Z.ZERO); // [0] is not returned

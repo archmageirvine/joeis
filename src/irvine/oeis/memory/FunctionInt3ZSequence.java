@@ -33,7 +33,7 @@ public abstract class FunctionInt3ZSequence extends AbstractFunctionSequence {
    * @param c third int parameter
    * @return value of function
    */
-  protected Z get(final int a, final int b, final int c) {
+  public Z get(final int a, final int b, final int c) {
     final String key = concatenate(a, b, c);
     Z result = mHash.get(key);
     if (result != null) {

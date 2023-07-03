@@ -8,15 +8,34 @@ import irvine.oeis.AbstractSequence;
 /**
  * A023847 Sum of exponents in prime-power factorization of binomial(5n, 2n).
  * @author Sean A. Irvine
+ * @author Georg FIscher
  */
 public class A023847 extends AbstractSequence {
 
+  private long mN;
+  private int mNf;
+  private int mMf;
+  private int mMa;
+
   /** Construct the sequence. */
   public A023847() {
-    super(0);
+    this(0, 5, 2, 0);
   }
 
-  private long mN = -1;
+  /**
+   * Generic constructor with parameters.
+   * @param offset first index
+   * @param nf factor of n
+   * @param mf factor of m
+   * @param ma add this to mf * m
+   */
+  public A023847(final int offset, final int nf, final int mf, final int ma) {
+    super(offset);
+    mN = offset - 1;
+    mNf = nf;
+    mMf = mf;
+    mMa = ma;
+  }
 
   protected long binomialOmega(final long n, final long m) {
     final FactorSequence fsTop = new FactorSequence();
@@ -35,7 +54,7 @@ public class A023847 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(binomialOmega(5 * mN, 2 * mN));
+    return Z.valueOf(binomialOmega(mNf * mN, mMf * mN + mMa));
   }
 }
 

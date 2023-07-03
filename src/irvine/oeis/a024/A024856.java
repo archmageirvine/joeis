@@ -12,7 +12,7 @@ public class A024856 extends HalfConvolutionSequence {
 
   /** Construct the sequence. */
   public A024856() {
-    super(new A001477(), new A023532(), false);
+    super(2, new A001477(), new A023532(), false);
     next();
   }
 }

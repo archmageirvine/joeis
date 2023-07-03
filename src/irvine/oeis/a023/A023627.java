@@ -12,6 +12,6 @@ public class A023627 extends ConvolutionSequence {
 
   /** Construct the sequence. */
   public A023627() {
-    super(new A008578(), new A002808());
+    super(1, new A008578(), new A002808());
   }
 }

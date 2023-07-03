@@ -1,15 +1,14 @@
 package irvine.oeis.a053;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A053477 Sum of iterates of divisor number function A000005.
  * @author Sean A. Irvine
  */
-public class A053477 extends MemoryFunction1<Long> implements Sequence {
+public class A053477 extends MemoryFunction1Sequence<Long> {
 
   private int mN = 0;
 

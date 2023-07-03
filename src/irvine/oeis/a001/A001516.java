@@ -1,17 +1,16 @@
 package irvine.oeis.a001;
 
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A001516 Bessel polynomial {y_n}''(1).
  * @author Sean A. Irvine
  */
-public class A001516 extends MemoryFunction1<Polynomial<Z>> implements Sequence {
+public class A001516 extends MemoryFunction1Sequence<Polynomial<Z>> {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 

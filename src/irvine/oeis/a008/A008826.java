@@ -1,18 +1,17 @@
 package irvine.oeis.a008;
 
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A008826 Triangle of coefficients from fractional iteration of e^x - 1.
  * @author Sean A. Irvine
  */
-public class A008826 extends MemoryFunction1<Polynomial<Z>> implements Sequence {
+public class A008826 extends MemoryFunction1Sequence<Polynomial<Z>> {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = 1;

@@ -17,7 +17,7 @@ public class A064384 extends A000040 {
   @Override
   public Z next() {
     while (true) {
-      long p = super.next().longValueExact();
+      final long p = super.next().longValueExact();
       long s = 1 % p;
       long f = 1;
       long sign = -1;

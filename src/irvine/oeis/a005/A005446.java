@@ -1,15 +1,14 @@
 package irvine.oeis.a005;
 
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A005446 Denominators of expansion of -W_{-1}(-e^{-1-x^2/2}) where W_{-1} is Lambert W function.
  * @author Sean A. Irvine
  */
-public class A005446 extends MemoryFunction1<Q> implements Sequence {
+public class A005446 extends MemoryFunction1Sequence<Q> {
 
   protected int mN = -1;
 

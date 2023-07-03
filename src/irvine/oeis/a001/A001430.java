@@ -3,21 +3,20 @@ package irvine.oeis.a001;
 import java.util.Map;
 
 import irvine.math.IntegerUtils;
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
  * A001430 Number of graphs with n nodes and n-2 edges.
  * @author Sean A. Irvine
  */
-public class A001430 extends MemoryFunction1<Polynomial<Q>> implements Sequence {
+public class A001430 extends MemoryFunction1Sequence<Polynomial<Q>> {
 
   // See p. 145 in Riordan "Introduction to Combinatorial Analysis"
   private MultivariateMonomial slepian(final MultivariateMonomial t) {

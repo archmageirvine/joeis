@@ -2,15 +2,15 @@ package irvine.oeis.a049;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A049314 The number k(GL(n,q)) of conjugacy classes in GL(n,q), q=4.
  * @author Sean A. Irvine
  */
-public class A049314 extends MemoryFunction1<Z> implements Sequence {
+public class A049314 extends MemoryFunction1Sequence<Z> {
 
   // After Alois P. Heinz
 
@@ -20,7 +20,7 @@ public class A049314 extends MemoryFunction1<Z> implements Sequence {
     return Z.FOUR;
   }
 
-  private final MemoryFunction1<Z> mB = new MemoryFunction1<Z>() {
+  private final MemoryFunction1<Z> mB = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
       if (n == 0) {

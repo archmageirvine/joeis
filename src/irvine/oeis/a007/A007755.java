@@ -2,15 +2,14 @@ package irvine.oeis.a007;
 
 import java.util.TreeSet;
 
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A007755 Smallest number m such that the trajectory of m under iteration of Euler's totient function phi(n) [A000010] contains exactly n distinct numbers, including m and the fixed point.
  * @author Sean A. Irvine
  */
-public class A007755 extends MemoryFunction1<TreeSet<Z>> implements Sequence {
+public class A007755 extends MemoryFunction1Sequence<TreeSet<Z>> {
 
   // After T. D. Noe
   // I omit the alpha of Noe and instead simply limit each S_n to MAX_SIZE elements

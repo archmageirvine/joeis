@@ -1,15 +1,14 @@
 package irvine.oeis.a053;
 
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A053480 Sum of values when cototient function A051953 is iterated until fixed point is reached.
  * @author Sean A. Irvine
  */
-public class A053480 extends MemoryFunction1<Long> implements Sequence {
+public class A053480 extends MemoryFunction1Sequence<Long> {
 
   private int mN = 0;
 

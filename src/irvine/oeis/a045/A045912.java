@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.api.Matrix;
 import irvine.math.group.IntegerField;
 import irvine.math.group.MatrixRing;
@@ -8,13 +8,12 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A045912 Triangle of coefficients of characteristic polynomial of negative Pascal matrix with (i,j)-th entry -C(i+j-2,i-1).
  * @author Sean A. Irvine
  */
-public class A045912 extends MemoryFunction1<Polynomial<Z>> implements Sequence {
+public class A045912 extends MemoryFunction1Sequence<Polynomial<Z>> {
 
   private int mN = -1;
   private int mM = 0;

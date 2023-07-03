@@ -2,22 +2,22 @@ package irvine.oeis.a079;
 
 import java.util.ArrayList;
 
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Z;
 import irvine.oeis.DifferenceSequence;
 import irvine.oeis.LookaheadSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a050.A050447;
 
 /**
  * A079502 Triangle T(n,k) read by rows; related to number of preorders.
  * @author Sean A. Irvine
  */
-public class A079502 extends MemoryFunction1<Z[]> implements Sequence {
+public class A079502 extends MemoryFunction1Sequence<Z[]> {
 
   private final A050447 mP = new A050447();
 
-  private final class ColumnSequence implements Sequence {
+  private final class ColumnSequence extends Sequence0 {
     private final long mN;
     private long mR = 0;
 

@@ -4,19 +4,18 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.partitions.MultidimensionalIntegerPartition;
 import irvine.math.partitions.MultidimensionalIntegerPartition.PartitionUser;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 
 /**
  * A002723 Rotatable partitions.
  * @author Sean A. Irvine
  */
-public class A002723 extends MemoryFunction1<Long> implements Sequence {
+public class A002723 extends MemoryFunction1Sequence<Long> {
 
   // This currently is given different values for later terms
   // It could be an error in the original sequence?

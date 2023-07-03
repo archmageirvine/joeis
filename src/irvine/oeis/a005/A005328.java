@@ -1,14 +1,13 @@
 package irvine.oeis.a005;
 
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A005328 Certain subgraphs of a directed graph.
  * @author Sean A. Irvine
  */
-public class A005328 extends MemoryFunction1<Z> implements Sequence {
+public class A005328 extends MemoryFunction1Sequence<Z> {
 
   private int mN = 1;
 

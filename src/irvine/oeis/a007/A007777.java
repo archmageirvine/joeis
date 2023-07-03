@@ -1,18 +1,18 @@
 package irvine.oeis.a007;
 
 import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.api.Matrix;
 import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A007777 Number of overlap-free binary words of length n.
  * @author Sean A. Irvine
  */
-public class A007777 extends MemoryFunction1<Matrix<Z>> implements Sequence {
+public class A007777 extends MemoryFunction1Sequence<Matrix<Z>> {
 
   // After Pab Ter
 

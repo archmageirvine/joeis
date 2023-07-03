@@ -1,15 +1,15 @@
 package irvine.oeis.a006;
 
 import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A006081 Number of line-rooted projective plane trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A006081 extends MemoryFunction1<Z> implements Sequence {
+public class A006081 extends MemoryFunction1Sequence<Z> {
 
   private static final class BFunction extends MemoryFunction1<Z> {
 

@@ -1,15 +1,14 @@
 package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A007182 Dimension of n-th compound of a certain space.
  * @author Sean A. Irvine
  */
-public class A007182 extends MemoryFunction1<Z> implements Sequence {
+public class A007182 extends MemoryFunction1Sequence<Z> {
 
   private int mN = -2;
 

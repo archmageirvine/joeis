@@ -1,15 +1,14 @@
 package irvine.oeis.a007;
 
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A007905 Conflicts during insertions into exchange trees on n nodes.
  * @author Sean A. Irvine
  */
-public class A007905 extends MemoryFunction1<Q> implements Sequence {
+public class A007905 extends MemoryFunction1Sequence<Q> {
 
   private int mN = -1;
   private Z mF = Z.ONE;

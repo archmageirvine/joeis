@@ -2,18 +2,17 @@ package irvine.oeis.a006;
 
 import java.util.ArrayList;
 
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A006934 A series for Pi.
  * @author Sean A. Irvine
  */
-public class A006934 extends MemoryFunction1<Q> implements Sequence {
+public class A006934 extends MemoryFunction1Sequence<Q> {
 
   private final BernoulliSequence mBernoulliSequence = new BernoulliSequence(0);
   private final ArrayList<Q> mB = new ArrayList<>();

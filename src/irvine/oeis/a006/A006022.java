@@ -1,15 +1,14 @@
 package irvine.oeis.a006;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A006022 Sprague-Grundy (or Nim) values for the game of Maundy cake on an n X 1 sheet.
  * @author Sean A. Irvine
  */
-public class A006022 extends MemoryFunction1<Z> implements Sequence {
+public class A006022 extends MemoryFunction1Sequence<Z> {
 
   @Override
   public Z compute(final int n) {

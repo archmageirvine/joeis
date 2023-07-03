@@ -1,17 +1,16 @@
 package irvine.oeis.a049;
 
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A049597 Triangular array T(n,k) in which k-th column gives coefficients of sum of Gaussian polynomials [k,m] for m=0..k.
  * @author Sean A. Irvine
  */
-public class A049597 extends MemoryFunction1<Polynomial<Z>> implements Sequence {
+public class A049597 extends MemoryFunction1Sequence<Polynomial<Z>> {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = 0;

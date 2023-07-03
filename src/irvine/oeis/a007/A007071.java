@@ -1,15 +1,14 @@
 package irvine.oeis.a007;
 
-import irvine.math.MemoryFunction1;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A007071 First row of 2-shuffle of spectral array W( sqrt 2 ).
  * @author Sean A. Irvine
  */
-public class A007071 extends MemoryFunction1<Z> implements Sequence {
+public class A007071 extends MemoryFunction1Sequence<Z> {
 
   // After R. J. Mathar.
 

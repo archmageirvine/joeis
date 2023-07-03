@@ -2,17 +2,36 @@ package irvine.oeis.a005;
 
 import irvine.math.MemoryFunction3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A005982 3 up, 3 down, 3 up, ... permutations of length 3n+1.
  * @author Sean A. Irvine
  */
-public class A005982 extends MemoryFunction3<Long, Z> implements Sequence {
+public class A005982 extends Sequence1 {
 
   // After Alois P. Heinz
 
   private long mN = start();
+  private final MemoryFunction3<Long, Z> mB = new MemoryFunction3<>() {
+    @Override
+    protected Z compute(final Long u, final Long o, final Long t) {
+      if (u + o == 0) {
+        return Z.ONE;
+      }
+      Z sum = Z.ZERO;
+      if (t == size()) {
+        for (long j = 1; j <= o; ++j) {
+          sum = sum.add(get(o - j, u + j - 1, 1L));
+        }
+      } else {
+        for (long j = 1; j <= o; ++j) {
+          sum = sum.add(get(u + j - 1, o - j, t + 1));
+        }
+      }
+      return sum;
+    }
+  };
 
   protected long size() {
     return 3;
@@ -23,26 +42,8 @@ public class A005982 extends MemoryFunction3<Long, Z> implements Sequence {
   }
 
   @Override
-  protected Z compute(final Long u, final Long o, final Long t) {
-    if (u + o == 0) {
-      return Z.ONE;
-    }
-    Z sum = Z.ZERO;
-    if (t == size()) {
-      for (long j = 1; j <= o; ++j) {
-        sum = sum.add(get(o - j, u + j - 1, 1L));
-      }
-    } else {
-      for (long j = 1; j <= o; ++j) {
-        sum = sum.add(get(u + j - 1, o - j, t + 1));
-      }
-    }
-    return sum;
-  }
-
-  @Override
   public Z next() {
     mN += size();
-    return get(0L, mN, 0L);
+    return mB.get(0L, mN, 0L);
   }
 }

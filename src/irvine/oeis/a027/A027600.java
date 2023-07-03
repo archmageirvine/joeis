@@ -13,7 +13,7 @@ public class A027600 extends A259799 {
 
   @Override
   protected Z t(final int n, final long k) {
-    return get(Z.valueOf(k).pow(n).subtract(1).longValueExact(), k, (long) n);
+    return mB.get(Z.valueOf(k).pow(n).subtract(1).longValueExact(), k, (long) n);
   }
 
   @Override

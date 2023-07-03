@@ -23,7 +23,7 @@ public class A118119 extends AbstractSequence {
    * @param add additive parameter
    */
   public A118119(final int offset, final int add) {
-    super(2);
+    super(offset);
     mN = offset - 1;
     mAdd = add;
   }

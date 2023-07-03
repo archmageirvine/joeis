@@ -13,6 +13,6 @@ public class A165299 extends QuotientSequence {
 
   /** Construct the sequence. */
   public A165299() {
-    super(new A002790(), new A164020());
+    super(0, new A002790(), new A164020());
   }
 }

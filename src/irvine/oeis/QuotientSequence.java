@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  */
 public class QuotientSequence extends AbstractSequence {
 
-  private static final int DEFOFF = 0;
+  private static final int DEFOFF = 1;
   protected final Sequence mNum;
   protected final Sequence mDen;
 

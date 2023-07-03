@@ -30,6 +30,16 @@ public class A049150 extends RevertTransformSequence {
     super(0, new PaddingSequence(left, right));
   }
 
+  /**
+   * Generic constructor with parameters
+   * @param offset first index
+   * @param left initial terms
+   * @param right repeated terms that are overlaid by the initial terms
+   */
+  public A049150(final int offset, final long[] left, final long[] right) {
+    super(offset, new PaddingSequence(left, right));
+  }
+
   @Override
   public Z next() {
     return super.next();

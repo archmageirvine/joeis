@@ -1,20 +1,24 @@
 package irvine.oeis.a152;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.FunctionInt3ZSequence;
 
 /**
  * A152175 Triangle read by rows: T(n,k) is the number of k-block partitions of an n-set up to rotations.
  * @author Sean A. Irvine
  */
-public class A152175 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A152175 extends FunctionInt3ZSequence {
 
   private int mN = 0;
   private int mM = 0;
+
+  /** Construct the sequence. */
+  public A152175() {
+    super(1);
+  }
 
   @Override
   protected Z compute(final int d, final int n, final int k) {

@@ -70,7 +70,7 @@ public class A217157 extends AbstractSequence {
    * @param base base for powers: 0 for n^k, 2, 3, 5 and so on for A217285-A217292
    */
   public A217157(final int offset, final int features, final int count, final int base) {
-    super(2);
+    super(offset);
     mN = offset - 1;
     mFeatures = features;
     mCount = count;

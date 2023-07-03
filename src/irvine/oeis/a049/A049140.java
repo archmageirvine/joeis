@@ -11,6 +11,6 @@ public class A049140 extends A049150 {
    * Construct the sequence
    */
   public A049140() {
-    super(new long[] {+1, -1, +0, -1}, new long[] {0});
+    super(1, new long[]{+1, -1, +0, -1}, new long[]{0});
   }
 }

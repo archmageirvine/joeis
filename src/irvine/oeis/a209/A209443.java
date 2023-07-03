@@ -1,6 +1,7 @@
 package irvine.oeis.a209;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000118;
 import irvine.oeis.a000.A000129;
@@ -9,12 +10,12 @@ import irvine.oeis.a000.A000129;
  * A209443 a(n) = Pell(n)*A000118(n) for n&gt;=1 with a(0)=1, where A000118(n) is the number of ways of writing n as a sum of 4 squares.
  * @author Georg Fischer
  */
-public class A209443 extends A000129 {
+public class A209443 extends AbstractSequence {
 
+  private final A000129 mPell = new A000129();
   private Sequence mSeq;
   private int mN;
   private int mOfs;
-
 
   /** Construct the sequence. */
   public A209443() {
@@ -27,9 +28,10 @@ public class A209443 extends A000129 {
    * @param seq underlying sequence
    */
   public A209443(final int offset, final Sequence seq) {
+    super(offset);
     mN = -1;
     if (offset > 0) {
-      super.next();
+      mPell.next();
     }
     mSeq = seq;
     mOfs = offset;
@@ -39,10 +41,10 @@ public class A209443 extends A000129 {
   public Z next() {
     ++mN;
     if (mN == 0) {
-      super.next();
+      mPell.next();
       mSeq.next();
       return Z.ONE;
     }
-    return super.next().multiply(mSeq.next());
+    return mPell.next().multiply(mSeq.next());
   }
 }

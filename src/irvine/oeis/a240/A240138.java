@@ -1,15 +1,14 @@
 package irvine.oeis.a240;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.FunctionInt3ZSequence;
 
 /**
  * A240138 Number of partitions of n into distinct parts, where the difference between the number of odd parts and the number of even parts is 2.
  * where the difference between the number of odd parts and the number of even parts is 2.
  * @author Georg Fischer
  */
-public class A240138 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A240138 extends FunctionInt3ZSequence {
 
   protected int mDiff;
   protected int mN;
@@ -25,6 +24,7 @@ public class A240138 extends MemoryFunctionInt3<Z> implements Sequence {
    * @param diff difference
    */
   public A240138(final int offset, final int diff) {
+    super(offset);
     mN = offset - 1;
     mDiff = diff;
   }

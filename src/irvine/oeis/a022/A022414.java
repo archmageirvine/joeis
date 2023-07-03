@@ -1,15 +1,14 @@
 package irvine.oeis.a022;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A022414 Kim-sums: "Kimberling sums" K_n + K_3.
  * @author Sean A. Irvine
  */
-public class A022414 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A022414 extends MemoryFunction2Sequence<Integer, Z> {
 
   // After R. J. Mathar
 

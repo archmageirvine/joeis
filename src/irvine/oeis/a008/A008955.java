@@ -1,15 +1,14 @@
 package irvine.oeis.a008;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A008955 Triangle of central factorial numbers |t(2n,2n-2k)| read by rows.
  * @author Sean A. Irvine
  */
-public class A008955 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A008955 extends MemoryFunction2Sequence<Integer, Z> {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

@@ -1,14 +1,13 @@
 package irvine.oeis.a037;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A037012 Triangle read by rows; row 0 is 0; the n-th row for n&gt;0 contains the coefficients in the expansion of (1-x)*(1+x)^(n-1).
  * @author Sean A. Irvine
  */
-public class A037012 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A037012 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = -1;
   private long mM = 0;

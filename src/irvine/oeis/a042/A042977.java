@@ -1,14 +1,13 @@
 package irvine.oeis.a042;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A042977 Triangle T(n,k) read by rows: coefficients of a polynomial sequence occurring when calculating the n-th derivative of Lambert function W.
  * @author Sean A. Irvine
  */
-public class A042977 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A042977 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = 0;
   private long mM = 0;

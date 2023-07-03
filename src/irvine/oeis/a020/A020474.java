@@ -1,14 +1,13 @@
 package irvine.oeis.a020;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A020474 A Motzkin triangle: a(n,k), n &gt;= 2, 2 &lt;= k &lt;= n, = number of complete, strictly subdiagonal staircase functions.
  * @author Sean A. Irvine
  */
-public class A020474 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A020474 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = -1;
   private long mM = 0;

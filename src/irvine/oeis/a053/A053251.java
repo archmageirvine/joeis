@@ -1,14 +1,13 @@
 package irvine.oeis.a053;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A053251 Coefficients of the '3rd-order' mock theta function psi(q).
  * @author Sean A. Irvine
  */
-public class A053251 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A053251 extends MemoryFunction2Sequence<Integer, Z> {
 
   // After Alois P. Heinz
 

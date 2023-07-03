@@ -1,14 +1,13 @@
 package irvine.oeis.a027;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A027356 Array read by rows: T(n,k) = number of partitions of n into distinct odd parts in which k is the greatest part, for k=1,2,...,n, n&gt;=1.
  * @author Sean A. Irvine
  */
-public class A027356 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A027356 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Alois P. Heinz
 

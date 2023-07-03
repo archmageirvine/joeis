@@ -1,14 +1,13 @@
 package irvine.oeis.a037;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A037444 Number of partitions of n^2 into squares.
  * @author Sean A. Irvine
  */
-public class A037444 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A037444 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Alois P. Heinz
 

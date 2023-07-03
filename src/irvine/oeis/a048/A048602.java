@@ -1,17 +1,16 @@
 package irvine.oeis.a048;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A048602 Numerators of coefficients in function a(x) such that a(a(x)) = sin(x).
  * @author Sean A. Irvine
  */
-public class A048602 extends MemoryFunction2<Integer, Q> implements Sequence {
+public class A048602 extends MemoryFunction2Sequence<Integer, Q> {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   protected int mN = -1;

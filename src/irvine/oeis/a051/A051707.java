@@ -7,16 +7,15 @@ import java.util.Map;
 import java.util.Set;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
  * A051707 Number of factorizations of (n,n) into pairs (j,k).
  * @author Sean A. Irvine
  */
-public class A051707 extends MemoryFunction2<Integer, Set<Map<Point, Integer>>> implements Sequence {
+public class A051707 extends MemoryFunction2Sequence<Integer, Set<Map<Point, Integer>>> {
 
   private static final Set<Map<Point, Integer>> ONE_ONE = Collections.singleton(Collections.singletonMap(new Point(1, 1), 1));
   private int mN = 0;

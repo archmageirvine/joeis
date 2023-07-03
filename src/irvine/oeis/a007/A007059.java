@@ -1,14 +1,13 @@
 package irvine.oeis.a007;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A007059 Number of balanced ordered trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A007059 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A007059 extends MemoryFunction2Sequence<Long, Z> {
 
   @Override
   protected Z compute(final Long n, final Long m) {

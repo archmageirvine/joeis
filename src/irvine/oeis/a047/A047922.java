@@ -1,15 +1,14 @@
 package irvine.oeis.a047;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A047922 Triangle of numbers a(n,k) = number of terms in n X n determinant with 2 adjacent diagonals of k and k-1 0's (0&lt;=k&lt;=n).
  * @author Sean A. Irvine
  */
-public class A047922 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A047922 extends MemoryFunction2Sequence<Integer, Z> {
 
   // After Alois P. Heinz
 

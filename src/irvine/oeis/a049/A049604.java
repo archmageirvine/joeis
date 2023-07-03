@@ -1,14 +1,13 @@
 package irvine.oeis.a049;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A049604 Array T read by diagonals: T(i,j)=least number of knight's moves on unbounded chessboard from corner (0,0) to square (i,j).
  * @author Sean A. Irvine
  */
-public class A049604 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A049604 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Yu-Sheng Chang
 

@@ -1,16 +1,15 @@
 package irvine.oeis.a020;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A020555 Number of multigraphs on n labeled edges (with loops). Also number of genetically distinct states amongst n individuals.
  * @author Sean A. Irvine
  */
-public class A020555 extends MemoryFunction2<Integer, Z>  implements Sequence {
+public class A020555 extends MemoryFunction2Sequence<Integer, Z>  {
 
   private int mN = -1;
 

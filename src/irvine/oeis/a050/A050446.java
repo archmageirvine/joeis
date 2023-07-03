@@ -1,14 +1,13 @@
 package irvine.oeis.a050;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A050446 Table T(n,m) giving total degree of n-th-order elementary symmetric polynomials in m variables, -1 &lt;= n, 1 &lt;= m, read by upward antidiagonals.
  * @author Sean A. Irvine
  */
-public class A050446 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A050446 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = -1;
   private long mM = 0;

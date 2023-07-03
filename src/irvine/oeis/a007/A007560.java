@@ -2,16 +2,15 @@ package irvine.oeis.a007;
 
 import java.util.ArrayList;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A007560 Number of planted identity trees where non-root, non-leaf nodes an even distance from root are of degree 2.
  * @author Sean A. Irvine
  */
-public class A007560 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A007560 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = 0;
   private final ArrayList<Z> mA = new ArrayList<>();

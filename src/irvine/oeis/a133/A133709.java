@@ -1,16 +1,15 @@
 package irvine.oeis.a133;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A133709 Triangle read by rows: T(m,l) = number of labeled covers of size l of a finite set of m unlabeled elements (m &gt;= 1, 1 &lt;= l &lt;= 2^m - 1).
  * @author Sean A. Irvine
  */
-public class A133709 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A133709 extends MemoryFunction2Sequence<Integer, Z> {
 
   private int mN = 0;
   private int mL = 0;

@@ -1,15 +1,14 @@
 package irvine.oeis.a008;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A008951 Array read by columns: number of partitions of n into parts of 2 kinds.
  * @author Sean A. Irvine
  */
-public class A008951 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A008951 extends MemoryFunction2Sequence<Integer, Z> {
 
   private int mN = -1;
   private int mM = 0;

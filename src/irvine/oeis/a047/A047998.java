@@ -1,18 +1,17 @@
 package irvine.oeis.a047;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A047998 Triangle of numbers a(n,k) = number of "fountains" with n coins, k in the bottom row.
  *
  * @author Sean A. Irvine
  */
-public class A047998 extends MemoryFunction2<Integer, Polynomial<Z>> implements Sequence {
+public class A047998 extends MemoryFunction2Sequence<Integer, Polynomial<Z>> {
 
   // After Alois P. Heinz
 

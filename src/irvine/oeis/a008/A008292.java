@@ -1,14 +1,13 @@
 package irvine.oeis.a008;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A008292 Triangle of Eulerian numbers T(n,k) (n &gt;= 1, 1 &lt;= k &lt;= n) read by rows.
  * @author Sean A. Irvine
  */
-public class A008292 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A008292 extends MemoryFunction2Sequence<Long, Z> {
 
   protected long mN = 0;
   protected long mM = 0;

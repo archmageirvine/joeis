@@ -1,15 +1,14 @@
 package irvine.oeis.a039;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A039757 Triangle of coefficients in expansion of (x-1)*(x-3)*(x-5)*...*(x-(2*n-1)).
  * @author Sean A. Irvine
  */
-public class A039757 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A039757 extends MemoryFunction2Sequence<Integer, Z> {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

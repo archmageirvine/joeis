@@ -1,14 +1,13 @@
 package irvine.oeis.a259;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A259708 Triangle T(n,k) (0 &lt;= k &lt;= n) giving coefficients of certain polynomials related to Fibonacci numbers.
  * @author Sean A. Irvine
  */
-public class A259708 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A259708 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = -1;
   private long mM = 0;

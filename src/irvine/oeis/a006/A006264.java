@@ -1,15 +1,14 @@
 package irvine.oeis.a006;
 
 import irvine.math.LongUtils;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A006264 Diagonal length function.
  * @author Sean A. Irvine
  */
-public class A006264 extends MemoryFunction2<Long, Integer> implements Sequence {
+public class A006264 extends MemoryFunction2Sequence<Long, Integer> {
 
   private long mN = -1;
 

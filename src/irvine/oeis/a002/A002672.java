@@ -1,16 +1,15 @@
 package irvine.oeis.a002;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A002672 Denominators of central difference coefficients M_{3}^(2n+1).
  * @author Sean A. Irvine
  */
-public class A002672 extends MemoryFunction2<Integer, Q> implements Sequence {
+public class A002672 extends MemoryFunction2Sequence<Integer, Q> {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 

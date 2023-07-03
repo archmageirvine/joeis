@@ -1,14 +1,13 @@
 package irvine.oeis.a008;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A008482 Coefficients in expansion of (x-1)*(1+x)^(n-1), n &gt; 0.
  * @author Sean A. Irvine
  */
-public class A008482 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A008482 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = -1;
   private long mM = 0;

@@ -1,14 +1,13 @@
 package irvine.oeis.a008;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A008281 Triangle of Euler-Bernoulli or Entringer numbers read by rows.
  * @author Sean A. Irvine
  */
-public class A008281 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A008281 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = -1;
   private long mM = 0;

@@ -1,14 +1,13 @@
 package irvine.oeis.a050;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A050227 Triangle of number of n-tosses having a run of r or more heads for a fair coin with r=1 to n across and n=1, 2, ... down.
  * @author Sean A. Irvine
  */
-public class A050227 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A050227 extends MemoryFunction2Sequence<Integer, Z> {
 
   private int mN = 0;
   private int mM = 0;

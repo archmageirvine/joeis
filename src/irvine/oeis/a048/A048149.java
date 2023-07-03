@@ -1,15 +1,14 @@
 package irvine.oeis.a048;
 
 import irvine.math.LongUtils;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A048149 Array T read by diagonals: T(i,j) = number of pairs (h,k) with h^2+k^2 &lt;= i^2+j^2, h&gt;=0, k &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A048149 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A048149 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Yu-Sheng Chang
 

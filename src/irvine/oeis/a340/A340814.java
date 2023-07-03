@@ -2,9 +2,8 @@ package irvine.oeis.a340;
 
 import java.util.ArrayList;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.oeis.a242.A242249;
 import irvine.oeis.transform.EulerTransformUtils;
 
@@ -12,11 +11,11 @@ import irvine.oeis.transform.EulerTransformUtils;
  * A340814 Array read by antidiagonals: T(n,k) is the number of unlabeled oriented edge-rooted k-gonal 2-trees with n oriented polygons, n &gt;= 0, k &gt;= 2.
  * @author Sean A. Irvine
  */
-public class A340814 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A340814 extends MemoryFunction2Sequence<Integer, Z> {
 
   private int mN = -1;
   private int mM = 0;
-  private final MemoryFunction2<Integer, Z> mA = new A242249();
+  private final MemoryFunction2Sequence<Integer, Z> mA = new A242249();
 
   @Override
   protected Z compute(final Integer n, final Integer k) {

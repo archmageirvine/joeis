@@ -1,16 +1,15 @@
 package irvine.oeis.a033;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
 import irvine.oeis.a006.A006318;
 
 /**
  * A033878 Triangular array associated with Schroeder numbers.
  * @author Sean A. Irvine
  */
-public class A033878 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A033878 extends MemoryFunction2Sequence<Integer, Z> {
 
   // After Michel Marcus
 

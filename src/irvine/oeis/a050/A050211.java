@@ -1,14 +1,13 @@
 package irvine.oeis.a050;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A050211 Triangle of number of permutations of {1, 2, ..., n} having exactly k cycles, each of which is of length &gt;=r for r=3.
  * @author Sean A. Irvine
  */
-public class A050211 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A050211 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = 2;
   private long mM = 0;

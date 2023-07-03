@@ -1,17 +1,16 @@
 package irvine.oeis.a024;
 
 import irvine.factor.prime.Fast;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
  * A024937 a(n) = number of 2's in all partitions of n into distinct primes.
  * @author Sean A. Irvine
  */
-public class A024937 extends MemoryFunction2<Integer, Z[]> implements Sequence {
+public class A024937 extends MemoryFunction2Sequence<Integer, Z[]> {
 
   // After Alois P. Heinz
 

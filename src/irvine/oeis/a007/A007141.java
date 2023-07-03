@@ -2,14 +2,14 @@ package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A007141 E-trees with at most 2 colors.
  * @author Sean A. Irvine
  */
-public class A007141 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A007141 extends MemoryFunction2Sequence<Integer, Z> {
 
   private int mN = 0;
   private final SFunction mS = new SFunction();

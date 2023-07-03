@@ -1,14 +1,13 @@
 package irvine.oeis.a025;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A025148 Number of partitions of n into distinct parts &gt;= 3.
  * @author Sean A. Irvine
  */
-public class A025148 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A025148 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Alois P. Heinz
 

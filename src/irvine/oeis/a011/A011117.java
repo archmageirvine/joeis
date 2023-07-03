@@ -1,14 +1,13 @@
 package irvine.oeis.a011;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A011117 Triangle of numbers S(x,y) = number of lattice paths from (0,0) to (x,y) that use step set { (0,1), (1,0), (2,0), (3,0), ....} and never pass below y = x.
  * @author Sean A. Irvine
  */
-public class A011117 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A011117 extends MemoryFunction2Sequence<Integer, Z> {
 
   private int mN = -1;
   private int mM = 0;

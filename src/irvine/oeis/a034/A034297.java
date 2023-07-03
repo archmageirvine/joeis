@@ -1,14 +1,13 @@
 package irvine.oeis.a034;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A034297 Number of ordered positive integer solutions (m_1, m_2, ..., m_k) (for some k) to Sum_{i=1..k} m_i=n with |m_i-m_{i-1}| &lt;= 1 for i = 2 ... k.
  * @author Sean A. Irvine
  */
-public class A034297 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A034297 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Alois P. Heinz
 

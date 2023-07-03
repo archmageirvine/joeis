@@ -1,14 +1,13 @@
 package irvine.oeis.a029;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A029600 Numbers in the (2,3)-Pascal triangle (by row).
  * @author Sean A. Irvine
  */
-public class A029600 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A029600 extends MemoryFunction2Sequence<Integer, Z> {
 
   private int mN = -1;
   private int mM = 0;

@@ -3,15 +3,14 @@ package irvine.oeis.a035;
 import java.util.HashSet;
 import java.util.Set;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A035312 Zorach additive triangle, read by rows.
  * @author Sean A. Irvine
  */
-public class A035312 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A035312 extends MemoryFunction2Sequence<Long, Z> {
 
   private final Set<Z> mUsed = new HashSet<>();
   private Z mUnused = Z.ONE;

@@ -1,14 +1,13 @@
 package irvine.oeis.a003;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A003242 Number of compositions of n such that no two adjacent parts are equal (Carlitz compositions).
  * @author Sean A. Irvine
  */
-public class A003242 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A003242 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = -1;
 

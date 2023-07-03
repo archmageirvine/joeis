@@ -1,14 +1,13 @@
 package irvine.oeis.a030;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A030523 A convolution triangle of numbers obtained from A001792.
  * @author Sean A. Irvine
  */
-public class A030523 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A030523 extends MemoryFunction2Sequence<Long, Z> {
 
   protected long mN = 0;
   protected long mM = 0;

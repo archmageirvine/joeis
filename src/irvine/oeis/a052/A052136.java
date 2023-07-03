@@ -1,18 +1,17 @@
 package irvine.oeis.a052;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A052136 Numerators of power series coefficients of a(x) satisfying a(a(a(x)))= arctan(x).
  * @author Sean A. Irvine
  */
-public class A052136 extends MemoryFunction2<Integer, Q> implements Sequence {
+public class A052136 extends MemoryFunction2Sequence<Integer, Q> {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

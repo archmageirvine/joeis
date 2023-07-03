@@ -1,14 +1,13 @@
 package irvine.oeis.a047;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A047871 a(n) = smallest number &gt; a(n-1) that is not a sum of exactly one power of each of the numbers 1 through n.
  * @author Sean A. Irvine
  */
-public class A047871 extends MemoryFunction2<Long, Boolean> implements Sequence {
+public class A047871 extends MemoryFunction2Sequence<Long, Boolean> {
 
   private int mN = -1;
   private long mM = 1;

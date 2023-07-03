@@ -1,14 +1,13 @@
 package irvine.oeis.a046;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A046716 Coefficients of a special case of Poisson-Charlier polynomials.
  * @author Sean A. Irvine
  */
-public class A046716 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A046716 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Peter Luschny
 

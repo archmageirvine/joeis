@@ -1,17 +1,16 @@
 package irvine.oeis.a048;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A048600 Triangle a(n,k) = number of colors that can be produced by n units of paint from k primary colors.
  * @author Sean A. Irvine
  */
-public class A048600 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A048600 extends MemoryFunction2Sequence<Integer, Z> {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

@@ -1,6 +1,6 @@
 package irvine.oeis.transform;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  * in the Maple transforms.
  * @author Sean A. Irvine
  */
-public class WeighTransformSequence extends MemoryFunction2<Integer, Z> implements Sequence {
+public class WeighTransformSequence extends MemoryFunction2Sequence<Integer, Z> {
 
   private final MemorySequence mH;
   private int mN = -1;

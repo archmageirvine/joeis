@@ -1,15 +1,14 @@
 package irvine.oeis.a049;
 
 import irvine.factor.prime.Fast;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A049345 n written in primorial base.
  * @author Sean A. Irvine
  */
-public class A049345 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A049345 extends MemoryFunction2Sequence<Long, Z> {
 
   private final Fast mPrime = new Fast();
   private long mN = -1;

@@ -1,14 +1,13 @@
 package irvine.oeis.a034;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A034296 Number of flat partitions of n: partitions {a_i} with each |a_i - a_{i-1}| &lt;= 1.
  * @author Sean A. Irvine
  */
-public class A034296 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A034296 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Alois P. Heinz
 

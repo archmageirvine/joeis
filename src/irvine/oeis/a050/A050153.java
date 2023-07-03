@@ -1,15 +1,14 @@
 package irvine.oeis.a050;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A050153 T(n,k)=M(2n+1,n-1,k-1), 0&lt;=k&lt;=n, n &gt;= 0, array M as in A050144.
  * @author Sean A. Irvine
  */
-public class A050153 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A050153 extends MemoryFunction2Sequence<Integer, Z> {
 
   private int mN = -1;
   private int mM = 0;

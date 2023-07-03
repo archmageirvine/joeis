@@ -1,14 +1,13 @@
 package irvine.oeis.a033;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A033877 Triangular array read by rows associated with Schroeder numbers: T(1,k) = 1; T(n,k) = 0 if k &lt; n; T(n,k) = T(n,k-1) + T(n-1,k-1) + T(n-1,k).
  * @author Sean A. Irvine
  */
-public class A033877 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A033877 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = 0;
   private long mM = 0;

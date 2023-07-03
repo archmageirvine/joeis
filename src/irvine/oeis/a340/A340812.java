@@ -1,23 +1,22 @@
 package irvine.oeis.a340;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A340812 Array read by antidiagonals: T(n,k) is the number of unlabeled oriented k-gonal 2-trees with n oriented polygons, n &gt;= 0, k &gt;= 2.
  * @author Sean A. Irvine
  */
-public class A340812 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A340812 extends MemoryFunction2Sequence<Integer, Z> {
 
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;
   private int mM = 0;
-  protected final MemoryFunction2<Integer, Z> mB = new A340814();
+  protected final MemoryFunction2Sequence<Integer, Z> mB = new A340814();
 
   protected Polynomial<Z> b(final int n, final int k) {
     final Polynomial<Z> b = RING.empty();

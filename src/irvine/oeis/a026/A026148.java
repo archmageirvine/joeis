@@ -1,14 +1,13 @@
 package irvine.oeis.a026;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A026148 Irregular triangular array T read by rows: T(n,0) = 1 for i &gt;= 0, T(1,1) = 1,T(2,1) = 1, T(2,2) = 2, T(2,3) = 1, T(2,4) = 1 and for n &gt;= 3, T(n,1) = n-1,  T(n,k) = T(n-1,k-2) + T(n-1,k-1) + T(n-1,k) for k=2,...,n+1, and T(n, k+2) = T(n-1, k) + T(n-1, k+1).
  * @author Sean A. Irvine
  */
-public class A026148 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A026148 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = -1;
   private long mM = -1;

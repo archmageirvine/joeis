@@ -1,4 +1,4 @@
-package irvine.math;
+package irvine.oeis.memory;
 
 import java.util.HashMap;
 

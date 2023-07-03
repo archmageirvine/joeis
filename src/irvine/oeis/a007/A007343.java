@@ -7,16 +7,15 @@ import java.util.List;
 import java.util.Set;
 
 import irvine.math.IntegerUtils;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
  * A007343 Number of homogeneous primitive partition identities with largest part n.
  * @author Sean A. Irvine
  */
-public class A007343 extends MemoryFunction2<Integer, Integer> implements Sequence {
+public class A007343 extends MemoryFunction2Sequence<Integer, Integer> {
 
   private int mN = 2;
   private Z mA = Z.ZERO;

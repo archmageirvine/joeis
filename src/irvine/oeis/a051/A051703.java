@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
@@ -12,7 +12,7 @@ import irvine.oeis.a008.A008578;
  * A051703 Maximal value of products of partitions of n into powers of distinct primes (1 not considered a power).
  * @author Sean A. Irvine
  */
-public class A051703 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A051703 extends MemoryFunction2Sequence<Integer, Z> {
 
   // After Alois P. Heinz
 

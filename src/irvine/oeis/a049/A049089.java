@@ -1,14 +1,13 @@
 package irvine.oeis.a049;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A049089 Array read by antidiagonals: T(1,j)=2j+2 i&gt;=1, T(i,1)=2i+2 i&gt;=1, T(i,j)=T(i-1,j-1)+T(i-1,j).
  * @author Sean A. Irvine
  */
-public class A049089 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A049089 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = 0;
   private long mM = 0;

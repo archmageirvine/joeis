@@ -1,16 +1,15 @@
 package irvine.oeis.a051;
 
 import irvine.math.IntegerUtils;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A051685 Auxiliary sequence for calculation of number of even permutations of degree n and order exactly 4.
  * @author Sean A. Irvine
  */
-public class A051685 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A051685 extends MemoryFunction2Sequence<Integer, Z> {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

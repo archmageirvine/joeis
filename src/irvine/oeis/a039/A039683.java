@@ -1,14 +1,13 @@
 package irvine.oeis.a039;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A039683 Signed double Pochhammer triangle: expansion of x(x-2)(x-4)..(x-2n+2).
  * @author Sean A. Irvine
  */
-public class A039683 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A039683 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = 0;
   private long mM = 0;

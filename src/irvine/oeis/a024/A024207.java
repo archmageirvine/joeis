@@ -1,15 +1,14 @@
 package irvine.oeis.a024;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008284;
 
 /**
  * A024207 Number of terms in n-th derivative of a function composed with itself 7 times.
  * @author Sean A. Irvine
  */
-public class A024207 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A024207 extends MemoryFunction2Sequence<Long, Z> {
 
   private A008284 mPartitions = new A008284();
   protected long mN = -1;

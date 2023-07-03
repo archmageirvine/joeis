@@ -4,15 +4,14 @@ import java.util.ArrayList;
 import java.util.TreeSet;
 
 import irvine.math.LongUtils;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A018219 Table T(a,b) by antidiagonals of winning positions in 3-pile Wythoff game (a square array).
  * @author Sean A. Irvine
  */
-public class A018219 extends MemoryFunction2<Long, Long> implements Sequence {
+public class A018219 extends MemoryFunction2Sequence<Long, Long> {
 
   private long mN = -1;
   private long mM = 0;

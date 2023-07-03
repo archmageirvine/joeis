@@ -1,14 +1,13 @@
 package irvine.oeis.a037;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A037254 Triangle read by rows: T(n,k) (n &gt;= 1, 1 &lt;= k&lt; = n) gives number of non-distorting tie-avoiding integer vote weights.
  * @author Sean A. Irvine
  */
-public class A037254 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A037254 extends MemoryFunction2Sequence<Long, Z> {
 
   @Override
   protected Z compute(final Long n, final Long k) {

@@ -1,14 +1,13 @@
 package irvine.oeis.a051;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A051141 Triangle read by rows: a(n, m) = S1(n, m)*3^(n-m), where S1 are the signed Stirling numbers of first kind A008275 (n &gt;= 1, 1 &lt;= m &lt;= n).
  * @author Sean A. Irvine
  */
-public class A051141 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A051141 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = 0;
   private long mM = 0;

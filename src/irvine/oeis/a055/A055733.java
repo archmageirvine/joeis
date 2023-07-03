@@ -1,18 +1,17 @@
 package irvine.oeis.a055;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A055733 Sum of third powers of coefficients in full expansion of (z1+z2+...+zn)^n.
  * @author Sean A. Irvine
  */
-public class A055733 extends MemoryFunction2<Integer, Q> implements Sequence {
+public class A055733 extends MemoryFunction2Sequence<Integer, Q> {
 
   // After Alois P. Heinz
 

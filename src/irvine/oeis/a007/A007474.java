@@ -1,16 +1,15 @@
 package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A007474 Number of circular chord diagrams with n chords, up to rotational symmetry.
  * @author Sean A. Irvine
  */
-public class A007474 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A007474 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Gheorghe Coserea
 

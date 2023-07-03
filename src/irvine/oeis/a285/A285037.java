@@ -1,18 +1,17 @@
 package irvine.oeis.a285;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.Mobius;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.oeis.a304.A304972;
 
 /**
  * A285037 Irregular triangle read by rows: T(n,k) is the number of primitive (period n) periodic palindromic structures using exactly k different symbols, 1 &lt;= k &lt;= n/2 + 1.
  * @author Sean A. Irvine
  */
-public class A285037 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A285037 extends MemoryFunction2Sequence<Integer, Z> {
 
   // After Andrew Howroyd
 

@@ -1,17 +1,16 @@
 package irvine.oeis.a033;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A033935 Sum of squares of coefficients in full expansion of (z1+z2+...+zn)^n.
  * @author Sean A. Irvine
  */
-public class A033935 extends MemoryFunction2<Integer, Q> implements Sequence {
+public class A033935 extends MemoryFunction2Sequence<Integer, Q> {
 
   // After Alois P. Heinz
 

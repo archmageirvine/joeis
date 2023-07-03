@@ -1,14 +1,13 @@
 package irvine.oeis.a008;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A008301 Poupard's triangle: triangle of numbers arising in enumeration of binary trees.
  * @author Sean A. Irvine
  */
-public class A008301 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A008301 extends MemoryFunction2Sequence<Integer, Z> {
 
   // After Peter Luschny
 

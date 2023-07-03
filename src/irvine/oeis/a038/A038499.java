@@ -1,15 +1,14 @@
 package irvine.oeis.a038;
 
 import irvine.factor.prime.Fast;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A038499 Number of partitions of n into a prime number of parts.
  * @author Sean A. Irvine
  */
-public class A038499 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A038499 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Alois P. Heinz
 

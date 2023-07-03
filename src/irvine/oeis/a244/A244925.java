@@ -1,15 +1,14 @@
 package irvine.oeis.a244;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A244925 Number T(n,k) of n-node unlabeled rooted trees with every leaf at height k; triangle T(n,k), n&gt;=1, 0&lt;=k&lt;=n-1, read by rows.
  * @author Sean A. Irvine
  */
-public class A244925 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A244925 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Alois P. Heinz
 

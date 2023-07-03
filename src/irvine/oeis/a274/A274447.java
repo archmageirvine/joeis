@@ -1,16 +1,15 @@
 package irvine.oeis.a274;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A274447 Numerators in expansion of W(exp(x)) about x=1, where W is the Lambert function.
  * @author Sean A. Irvine
  */
-public class A274447 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A274447 extends MemoryFunction2Sequence<Integer, Z> {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

@@ -2,15 +2,14 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A045778 Number of factorizations of n into distinct factors greater than 1.
  * @author Sean A. Irvine
  */
-public class A045778 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A045778 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Alois P. Heinz
 

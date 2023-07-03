@@ -3,16 +3,15 @@ package irvine.oeis.a022;
 import java.util.ArrayList;
 
 import irvine.factor.prime.Fast;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A022894 Number of solutions to c(1)*prime(1) +...+ c(2n+1)*prime(2n+1) = 0, where c(i) = +-1 for i &gt; 1, c(1) = 1.
  * @author Sean A. Irvine
  */
-public class A022894 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A022894 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Alois P. Heinz
 

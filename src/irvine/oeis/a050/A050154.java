@@ -1,17 +1,16 @@
 package irvine.oeis.a050;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002057;
 
 /**
  * A050154 T(n,k)=M(2n+2,n-1,k-1), 0&lt;=k&lt;=n, n &gt;= 0, array M as in A050144.
  * @author Sean A. Irvine
  */
-public class A050154 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A050154 extends MemoryFunction2Sequence<Integer, Z> {
 
   private final MemorySequence mCatalan4 = MemorySequence.cachedSequence(new A002057());
   private int mN = -1;

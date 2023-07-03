@@ -1,14 +1,13 @@
 package irvine.oeis.a048;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A048004 Triangular array read by rows: T(n,k) = number of binary vectors of length n whose longest run of consecutive 1's has length k, for n &gt;= 0, 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
-public class A048004 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A048004 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = 0;
   private long mM = 0;

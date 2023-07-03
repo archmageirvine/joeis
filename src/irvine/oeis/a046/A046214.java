@@ -1,15 +1,14 @@
 package irvine.oeis.a046;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A046214 First denominator and then numerator of 1/2-Pascal triangle (by row).
  * @author Sean A. Irvine
  */
-public class A046214 extends MemoryFunction2<Long, Q> implements Sequence {
+public class A046214 extends MemoryFunction2Sequence<Long, Q> {
 
   private boolean mNumerator = true;
   private long mN = -1;

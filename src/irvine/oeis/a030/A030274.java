@@ -1,16 +1,15 @@
 package irvine.oeis.a030;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A030274 Numerators of sequence {b(1), b(2), ...} which when COMPOSED with itself gives {1,2,3,...}.
  * @author Sean A. Irvine
  */
-public class A030274 extends MemoryFunction2<Long, Q> implements Sequence {
+public class A030274 extends MemoryFunction2Sequence<Long, Q> {
 
   private long mN = 0;
 

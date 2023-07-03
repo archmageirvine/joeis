@@ -1,15 +1,14 @@
 package irvine.oeis.a032;
 
 import irvine.math.LongUtils;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A032020 Number of compositions (ordered partitions) of n into distinct parts.
  * @author Sean A. Irvine
  */
-public class A032020 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A032020 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Alois P. Heinz
 

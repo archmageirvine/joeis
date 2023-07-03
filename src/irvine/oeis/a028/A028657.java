@@ -6,26 +6,26 @@ import java.util.List;
 
 import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A028657 Triangle read by rows: T(n,k) = number of n-node graphs with k nodes in distinguished bipartite block, k = 0..n.
  * @author Sean A. Irvine
  */
-public class A028657 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A028657 extends MemoryFunction2Sequence<Integer, Z> {
 
   // After Alois P. Heinz
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
-  private MemoryFunction2<Integer, List<Polynomial<Z>>> mB = new MemoryFunction2<Integer, List<Polynomial<Z>>>() {
+  private MemoryFunction2<Integer, List<Polynomial<Z>>> mB = new MemoryFunction2<>() {
     @Override
     protected List<Polynomial<Z>> compute(final Integer n, final Integer m) {
       if (n == 0) {

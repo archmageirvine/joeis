@@ -1,14 +1,13 @@
 package irvine.oeis.a000;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A000929 Dimension of n-th degree part of Steenrod algebra.
  * @author Sean A. Irvine
  */
-public class A000929 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A000929 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = -1;
 

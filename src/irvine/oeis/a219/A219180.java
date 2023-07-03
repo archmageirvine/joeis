@@ -3,17 +3,16 @@ package irvine.oeis.a219;
 import java.util.Arrays;
 
 import irvine.factor.prime.Fast;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
  * A219180 Number T(n,k) of partitions of n into k distinct prime parts; triangle T(n,k), n&gt;=0, read by rows.
  * @author Sean A. Irvine
  */
-public class A219180 extends MemoryFunction2<Integer, Z[]> implements Sequence {
+public class A219180 extends MemoryFunction2Sequence<Integer, Z[]> {
 
   // After Alois P. Heinz
 

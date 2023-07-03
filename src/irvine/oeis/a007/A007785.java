@@ -1,14 +1,13 @@
 package irvine.oeis.a007;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A007785 Number of sets of positive integers &lt;= n^2 whose sum is (n^3 + n)/2.
  * @author Sean A. Irvine
  */
-public class A007785 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A007785 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = -1;
 

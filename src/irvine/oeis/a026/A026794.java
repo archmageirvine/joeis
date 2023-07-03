@@ -1,14 +1,13 @@
 package irvine.oeis.a026;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A026794 Triangular array T read by rows: T(n,k) = number of partitions of n in which least part is k, 1&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
-public class A026794 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A026794 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = 0;
   private long mM = 1;

@@ -1,15 +1,14 @@
 package irvine.oeis.a051;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A051714 Numerators of table a(n,k) read by antidiagonals: a(0,k) = 1/(k+1), a(n+1,k) = (k+1)*(a(n,k) - a(n,k+1)), n &gt;= 0, k &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A051714 extends MemoryFunction2<Long, Q> implements Sequence {
+public class A051714 extends MemoryFunction2Sequence<Long, Q> {
 
   private long mN = -1;
   private long mM = -1;

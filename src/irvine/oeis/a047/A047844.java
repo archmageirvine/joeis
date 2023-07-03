@@ -1,16 +1,15 @@
 package irvine.oeis.a047;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
  * A047844 Patrick De Geest's "Generations" array read by antidiagonals: a(n,1) = n-th prime, a(1,k+1) = a(2,k), a(n,k+1) = a(n-1,k) + a(n+1,k).
  * @author Sean A. Irvine
  */
-public class A047844 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A047844 extends MemoryFunction2Sequence<Long, Z> {
 
   private final MemorySequence mPrime = MemorySequence.cachedSequence(new A000040());
   private long mN = 1;

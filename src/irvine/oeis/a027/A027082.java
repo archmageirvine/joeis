@@ -1,14 +1,13 @@
 package irvine.oeis.a027;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A027082 Irregular triangular array: T(n,0) = 1 for n &gt;= 1; T(n,1) = T(n,2) = 1 for n &gt;= 1; T(n,k) = T(n-1,k-3) + T(n-1,k-2) + T(n-1,k-1) for 3 &lt;= k &lt;= 2n-1 and n &gt;= 2; and T(n,2n) = T(n-1,2n-3) + T(n-1,2n-2) for n &gt;= 2.
  * @author Sean A. Irvine
  */
-public class A027082 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A027082 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = -1;
   private long mM = 0;

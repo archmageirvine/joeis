@@ -1,17 +1,16 @@
 package irvine.oeis.a052;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A052104 Numerators of coefficients of the formal power series a(x) such that a(a(x)) = exp(x) - 1.
  * @author Sean A. Irvine
  */
-public class A052104 extends MemoryFunction2<Integer, Q> implements Sequence {
+public class A052104 extends MemoryFunction2Sequence<Integer, Q> {
 
   // After Alois P. Heinz
 

@@ -1,14 +1,13 @@
 package irvine.oeis.a055;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A055818 Triangle T read by rows: T(i,j) = R(i-j,j), where R(i,0) = R(0,i) = 1 for i &gt;= 0, R(i,j) = Sum_{h=0..i-1} Sum_{m=0..j} R(h,m) for i &gt;= 1, j &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A055818 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A055818 extends MemoryFunction2Sequence<Integer, Z> {
 
   private int mN = -1;
   private int mM = 0;

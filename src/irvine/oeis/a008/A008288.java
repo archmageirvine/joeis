@@ -1,14 +1,13 @@
 package irvine.oeis.a008;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A008288 Square array of Delannoy numbers D(i,j) (i &gt;= 0, j &gt;= 0) read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A008288 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A008288 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = -1;
   private long mM = 0;

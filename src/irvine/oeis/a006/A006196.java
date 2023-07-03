@@ -1,15 +1,14 @@
 package irvine.oeis.a006;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A006196 Number of leftist trees with n leaves.
  * @author Sean A. Irvine
  */
-public class A006196 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A006196 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = -1;
 

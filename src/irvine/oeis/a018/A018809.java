@@ -1,15 +1,14 @@
 package irvine.oeis.a018;
 
 import irvine.math.IntegerUtils;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A018809 Number of lines through exactly 2 points of an n X n grid of points.
  * @author Sean A. Irvine
  */
-public class A018809 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A018809 extends MemoryFunction2Sequence<Integer, Z> {
 
   private int mN = -1;
 

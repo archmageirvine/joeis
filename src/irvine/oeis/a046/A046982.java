@@ -1,15 +1,14 @@
 package irvine.oeis.a046;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A046982 Numerators of Taylor series for tan(x + Pi/4).
  * @author Sean A. Irvine
  */
-public class A046982 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A046982 extends MemoryFunction2Sequence<Integer, Z> {
 
   // After Jean-Fran&ccedil;ois Alcover
 

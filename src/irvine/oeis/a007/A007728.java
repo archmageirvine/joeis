@@ -1,15 +1,14 @@
 package irvine.oeis.a007;
 
 import irvine.math.LongUtils;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A007728 5th binary partition function.
  * @author Sean A. Irvine
  */
-public class A007728 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A007728 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Alois P. Heinz
 

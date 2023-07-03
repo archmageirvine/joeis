@@ -5,18 +5,17 @@ import java.util.Collections;
 import java.util.List;
 
 import irvine.math.IntegerUtils;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A309858 Number A(n,k) of k-uniform hypergraphs on n unlabeled nodes; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A309858 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A309858 extends MemoryFunction2Sequence<Integer, Z> {
 
   // After Alois P. Heinz
 

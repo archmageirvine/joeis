@@ -2,17 +2,16 @@ package irvine.oeis.a003;
 
 import java.util.Arrays;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A003483 Number of square permutations of n elements.
  * @author Sean A. Irvine
  */
-public class A003483 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A003483 extends MemoryFunction2Sequence<Integer, Z> {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;

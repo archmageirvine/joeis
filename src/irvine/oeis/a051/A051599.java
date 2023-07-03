@@ -1,16 +1,15 @@
 package irvine.oeis.a051;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
  * A051599 Rows of triangle formed using Pascal's rule except begin and end n-th row with (n+1)st prime.
  * @author Sean A. Irvine
  */
-public class A051599 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A051599 extends MemoryFunction2Sequence<Integer, Z> {
 
   private final MemorySequence mP = MemorySequence.cachedSequence(new A000040());
   private int mN = -1;

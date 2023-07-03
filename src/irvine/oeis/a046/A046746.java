@@ -1,14 +1,13 @@
 package irvine.oeis.a046;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A046746 Sum of smallest parts of all partitions of n.
  * @author Sean A. Irvine
  */
-public class A046746 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A046746 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Alois P. Heinz
 

@@ -1,14 +1,13 @@
 package irvine.oeis.a002;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A002449 Number of different types of binary trees of height n.
  * @author Sean A. Irvine
  */
-public class A002449 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A002449 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = -2;
 

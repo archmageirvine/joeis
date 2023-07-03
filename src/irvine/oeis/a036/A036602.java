@@ -1,14 +1,13 @@
 package irvine.oeis.a036;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A036602 Triangle of coefficients of generating function of binary rooted trees of height at most n.
  * @author Sean A. Irvine
  */
-public class A036602 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A036602 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Alois P. Heinz
 

@@ -1,14 +1,13 @@
 package irvine.oeis.a006;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A006801 Number of 2-dimensional directed compact animals of size n.
  * @author Sean A. Irvine
  */
-public class A006801 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A006801 extends MemoryFunction2Sequence<Integer, Z> {
 
   // After David Bevan
 

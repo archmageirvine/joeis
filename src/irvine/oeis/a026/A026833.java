@@ -1,14 +1,13 @@
 package irvine.oeis.a026;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A026833 Number of partitions of n into distinct parts, the least being even.
  * @author Sean A. Irvine
  */
-public class A026833 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A026833 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Alois P. Heinz
 

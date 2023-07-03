@@ -5,17 +5,16 @@ import java.util.Collections;
 import java.util.List;
 
 import irvine.math.IntegerUtils;
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A246106 Number A(n,k) of inequivalent n X n matrices with entries from [k], where equivalence means permutations of rows or columns; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Sean A. Irvine
  */
-public class A246106 extends MemoryFunction2<Integer, List<List<int[]>>> implements Sequence {
+public class A246106 extends MemoryFunction2Sequence<Integer, List<List<int[]>>> {
 
   // After Alois P. Heinz
 

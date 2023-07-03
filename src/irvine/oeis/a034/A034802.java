@@ -1,15 +1,14 @@
 package irvine.oeis.a034;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A034802 Triangle of Fibonomial coefficients (k=3).
  * @author Sean A. Irvine
  */
-public class A034802 extends MemoryFunction2<Integer, Z> implements Sequence {
+public class A034802 extends MemoryFunction2Sequence<Integer, Z> {
 
   private int mN = -1;
   private int mM = 0;

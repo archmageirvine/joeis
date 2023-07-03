@@ -1,14 +1,14 @@
 package irvine.oeis.a051;
 
 import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A051775 Table T(n,m) = Nim-product of n and m, read by antidiagonals, for n &gt;= 0, m &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A051775 extends MemoryFunction2<Z, Z> implements Sequence {
+public class A051775 extends MemoryFunction2Sequence<Z, Z> {
 
   // After R. J. Mathar
 

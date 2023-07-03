@@ -1,14 +1,13 @@
 package irvine.oeis.a054;
 
-import irvine.math.MemoryFunction2;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A054589 Table related to labeled rooted trees, cycles and binary trees.
  * @author Sean A. Irvine
  */
-public class A054589 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A054589 extends MemoryFunction2Sequence<Long, Z> {
 
   private long mN = 0;
   private long mM = 0;

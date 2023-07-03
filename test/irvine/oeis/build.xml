@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<project name="test-joeis" default="expand-vectors">
+
+  <target name="expand-vectors">
+    <delete failonerror="false" file="stripped.gz" />
+    <exec executable="make">
+      <arg line="-f Makefile" />
+    </exec>
+  </target>
+
+</project>

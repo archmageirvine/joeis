@@ -22,7 +22,7 @@ public class A007721 extends A004251 {
     Z sum = Z.ZERO;
     for (int i = 2 * (mN - 1); i <= bigN; i += 2) {
       for (int j = 1; j <= Math.min(mN - 1, i - mN + 1); ++j) {
-        sum = sum.add(get(i - j - mN + 1, j - 1, mN - 1, mN - j - 1));
+        sum = sum.add(mB.get(i - j - mN + 1, j - 1, mN - 1, mN - j - 1));
       }
     }
     return sum;

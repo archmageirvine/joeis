@@ -5,37 +5,42 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.util.Pair;
 
 /**
  * A056862 Triangle T(n,k) is the number of restricted growth strings (RGS) of set partitions of {1..n} that have a decrease at index k (1&lt;=k&lt;n).
  * @author Sean A. Irvine
  */
-public class A056862 extends MemoryFunctionInt4<Pair<Z, Polynomial<Z>>> implements Sequence {
+public class A056862 extends Sequence2 {
 
   // After Alois P. Heinz
 
   protected static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = 1;
   private int mM = 1;
-
-  @Override
-  protected Pair<Z, Polynomial<Z>> compute(final int n, final int i, final int m, final int t) {
-    if (n == 0) {
-      return new Pair<>(Z.ONE, RING.zero());
-    }
-    Polynomial<Z> sum = RING.zero();
-    Z a = Z.ZERO;
-    for (int j = 1; j <= m + 1; ++j) {
-      final Pair<Z, Polynomial<Z>> b = get(n - 1, j, Math.max(m, j), t + 1);
-      a = a.add(b.left());
-      sum = RING.add(sum, b.right());
-      if (j < i) {
-        sum = RING.add(sum, RING.monomial(b.left(), t));
+  private final MemoryFunctionInt4<Pair<Z, Polynomial<Z>>> mB = new MemoryFunctionInt4<>() {
+    @Override
+    protected Pair<Z, Polynomial<Z>> compute(final int n, final int i, final int m, final int t) {
+      if (n == 0) {
+        return new Pair<>(Z.ONE, RING.zero());
       }
+      Polynomial<Z> sum = RING.zero();
+      Z a = Z.ZERO;
+      for (int j = 1; j <= m + 1; ++j) {
+        final Pair<Z, Polynomial<Z>> b = get(n - 1, j, Math.max(m, j), t + 1);
+        a = a.add(b.left());
+        sum = RING.add(sum, b.right());
+        if (j < i) {
+          sum = RING.add(sum, RING.monomial(b.left(), t));
+        }
+      }
+      return new Pair<>(a, sum);
     }
-    return new Pair<>(a, sum);
+  };
+
+  protected Pair<Z, Polynomial<Z>> get(final int n, final int i, final int m, final int t) {
+    return mB.get(n, i, m, t);
   }
 
   @Override

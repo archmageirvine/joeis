@@ -1,5 +1,6 @@
 package irvine.oeis.a056;
 
+import irvine.math.MemoryFunctionInt4;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.util.Pair;
@@ -10,21 +11,28 @@ import irvine.util.Pair;
  */
 public class A056861 extends A056862 {
 
-  @Override
-  protected Pair<Z, Polynomial<Z>> compute(final int n, final int i, final int m, final int t) {
-    if (n == 0) {
-      return new Pair<>(Z.ONE, RING.zero());
-    }
-    Polynomial<Z> sum = RING.zero();
-    Z a = Z.ZERO;
-    for (int j = 1; j <= m + 1; ++j) {
-      final Pair<Z, Polynomial<Z>> b = get(n - 1, j, Math.max(m, j), t + 1);
-      a = a.add(b.left());
-      sum = RING.add(sum, b.right());
-      if (j > i) {
-        sum = RING.add(sum, RING.monomial(b.left(), t));
+  private final MemoryFunctionInt4<Pair<Z, Polynomial<Z>>> mB = new MemoryFunctionInt4<>() {
+    @Override
+    protected Pair<Z, Polynomial<Z>> compute(final int n, final int i, final int m, final int t) {
+      if (n == 0) {
+        return new Pair<>(Z.ONE, RING.zero());
       }
+      Polynomial<Z> sum = RING.zero();
+      Z a = Z.ZERO;
+      for (int j = 1; j <= m + 1; ++j) {
+        final Pair<Z, Polynomial<Z>> b = mB.get(n - 1, j, Math.max(m, j), t + 1);
+        a = a.add(b.left());
+        sum = RING.add(sum, b.right());
+        if (j > i) {
+          sum = RING.add(sum, RING.monomial(b.left(), t));
+        }
+      }
+      return new Pair<>(a, sum);
     }
-    return new Pair<>(a, sum);
+  };
+
+  @Override
+  protected Pair<Z, Polynomial<Z>> get(final int n, final int i, final int m, final int t) {
+    return mB.get(n, i, m, t);
   }
 }

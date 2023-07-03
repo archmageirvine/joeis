@@ -21,7 +21,7 @@ public class A007722 extends A004251 {
   private Z s(final int n) {
     Z sum = Z.ZERO;
     for (int k = 2 * n - 2; k <= n * (n - 2); k += 2) {
-      sum = sum.add(get(k - 2 * n + 3, n - 3, n - 1, 1));
+      sum = sum.add(mB.get(k - 2 * n + 3, n - 3, n - 1, 1));
     }
     return sum;
   }

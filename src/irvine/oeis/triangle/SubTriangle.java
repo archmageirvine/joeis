@@ -1,6 +1,7 @@
 package irvine.oeis.triangle;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
@@ -8,7 +9,7 @@ import irvine.oeis.Sequence;
  * The target elements are generated row by row,
  * @author Georg Fischer
  */
-public class SubTriangle implements Sequence {
+public class SubTriangle extends AbstractSequence {
 
   protected Sequence mS; // underlying source triangle
   protected int mRofs; // row offset
@@ -30,6 +31,7 @@ public class SubTriangle implements Sequence {
    * @param rofs row offset for the source triangle
    */
   public SubTriangle(final Sequence s, final int rofs) {
+    super(0);
     mS = s;
     mRofs = rofs;
     mRow = 0;

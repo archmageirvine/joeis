@@ -4,6 +4,7 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.Sequence1;
 
 /**
@@ -13,7 +14,7 @@ import irvine.oeis.Sequence1;
 public class A055051 extends Sequence1 {
 
   private final Sequence mASeq = new A055039();
-  private final Sequence mBSeq = new Sequence() {
+  private final Sequence mBSeq = new Sequence0() {
     private final TreeSet<Long> mA = new TreeSet<>();
     private long mN = 12;
 
@@ -28,7 +29,7 @@ public class A055051 extends Sequence1 {
       return Z.valueOf(t);
     }
   };
-  private final Sequence mCSeq = new Sequence() {
+  private final Sequence mCSeq = new Sequence0() {
     private final TreeSet<Long> mA = new TreeSet<>();
     private long mN = 6;
 

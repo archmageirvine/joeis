@@ -23,7 +23,7 @@ import irvine.math.z.Z;
  * The file is expected in a directory or at an URI defined by the environment variable <code>BFPATH</code>.
  * @author Georg Fischer
  */
-public class PseudoSequence implements Sequence, Closeable {
+public class PseudoSequence extends AbstractSequence implements Closeable {
 
   protected final BufferedReader mLineReader;
   protected int mIndex = 0; // index of current term, modified by next()
@@ -42,6 +42,7 @@ public class PseudoSequence implements Sequence, Closeable {
    * @param aNumber A-number of the sequence to be simulated from its b-file.
    */
   public PseudoSequence(final String aNumber) {
+    super(0); // todo: this sequence should get offset from the bfile
     final String fileName = "b" + aNumber.substring(1) + ".txt";
     final String bFilePath = getBaseUri();
     try {

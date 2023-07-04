@@ -2,8 +2,9 @@ package irvine.oeis.a042;
 // manually
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A042953 The sequence e when b=[ 1,0,1,1,1,... ].
@@ -16,7 +17,7 @@ public class A042953 extends EulerTransform {
   /**
    * This sequence represents the vector <code>b</code> in the OEIS definition.
    */
-  protected static class SeqB53 implements Sequence {
+  protected static class SeqB53 extends Sequence0 {
     private int mN;
     public SeqB53() {
       mN = 0;

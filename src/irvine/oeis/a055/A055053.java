@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.UnionSequence;
 
 /**
@@ -14,7 +14,7 @@ public class A055053 extends UnionSequence {
 
   /** Construct the sequence. */
   public A055053() {
-    super(new Sequence() {
+    super(new Sequence0() {
       private final TreeSet<Long> mA = new TreeSet<>();
       private long mN = 7;
 
@@ -28,7 +28,7 @@ public class A055053 extends UnionSequence {
         mA.add(t * 4);
         return Z.valueOf(t);
       }
-    }, new Sequence() {
+    }, new Sequence0() {
       private final TreeSet<Long> mA = new TreeSet<>();
       private long mN = 2;
       private long mAdd = 1;

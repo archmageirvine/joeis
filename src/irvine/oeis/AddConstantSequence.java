@@ -7,7 +7,7 @@ import irvine.math.z.Z;
  * that fulfill some condition.
  * @author Georg Fischer
  */
-public class AddConstantSequence implements Sequence {
+public class AddConstantSequence extends AbstractSequence {
 
   protected Sequence mSeq; // underlying sequence
   protected Z mC; // constant to be added
@@ -18,6 +18,7 @@ public class AddConstantSequence implements Sequence {
    * @param seq underlying sequence
    */
   public AddConstantSequence(final long c, final Sequence seq) {
+    super(seq.getOffset());
     mSeq = seq;
     mC = Z.valueOf(c);
   }
@@ -28,6 +29,7 @@ public class AddConstantSequence implements Sequence {
    * @param seq underlying sequence
    */
   public AddConstantSequence(final Z c, final Sequence seq) {
+    super(seq.getOffset());
     mSeq = seq;
     mC = c;
   }

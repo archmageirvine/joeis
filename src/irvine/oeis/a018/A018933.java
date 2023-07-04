@@ -2,7 +2,7 @@ package irvine.oeis.a018;
 
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A018933 From the game of Mousetrap.
@@ -12,7 +12,7 @@ public class A018933 extends PrependSequence {
 
   /** Construct the sequence. */
   public A018933() {
-    super(new Sequence() {
+    super(new Sequence0() {
             private Z mF = Z.ONE;
             private long mN = 6;
 

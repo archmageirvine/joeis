@@ -7,7 +7,7 @@ import irvine.math.z.Z;
  * stepping the sequence.
  * @author Sean A. Irvine
  */
-public class LookaheadSequence implements Sequence {
+public class LookaheadSequence extends AbstractSequence {
 
   private final Sequence mSeq;
   private Z mNext;
@@ -17,6 +17,7 @@ public class LookaheadSequence implements Sequence {
    * @param seq underlying sequence
    */
   public LookaheadSequence(final Sequence seq) {
+    super(seq.getOffset());
     mSeq = seq;
     mNext = seq.next();
   }

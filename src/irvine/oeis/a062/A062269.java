@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A062269 Numbers k such that floor(gamma * k) is a square, where gamma is the Euler-Mascheroni constant (A001620).
@@ -13,7 +13,7 @@ public class A062269 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A062269() {
-    super(0, 0, new Sequence() {
+    super(0, 0, new Sequence0() {
 
       private long mN = -1;
 

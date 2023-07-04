@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  * The resulting terms must be integer.
  * @author Georg Fischer
  */
-public class ConstantFactorSequence implements Sequence {
+public class ConstantFactorSequence extends AbstractSequence {
 
   private final Sequence mSeq;
   private final Q mFactor;
@@ -19,6 +19,7 @@ public class ConstantFactorSequence implements Sequence {
    * @param factor the factor to be multiplied to every term of <code>seq</code>
    */
   public ConstantFactorSequence(final Sequence seq, final Q factor) {
+    super(seq.getOffset());
     mSeq = seq;
     mFactor = factor;
   }

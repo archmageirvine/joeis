@@ -10,6 +10,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
 
@@ -17,7 +18,7 @@ import irvine.oeis.Sequence;
  * A sequence comprising the partition transform of another sequence.
  * @author Sean A. Irvine
  */
-public class PartitionTransformSequence implements Sequence {
+public class PartitionTransformSequence extends AbstractSequence {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private Sequence mSeq = null;
@@ -68,6 +69,7 @@ public class PartitionTransformSequence implements Sequence {
    * @param skip number of terms to skip
    */
   public PartitionTransformSequence(final Sequence seq, final int skip) {
+    super(seq.getOffset());
     mSeq = seq;
     for (int k = 0; k < skip; ++k) {
       seq.next();
@@ -78,6 +80,7 @@ public class PartitionTransformSequence implements Sequence {
    * Creates a new partition transform.
    */
   protected PartitionTransformSequence() {
+    super(0);
   }
 
   /**

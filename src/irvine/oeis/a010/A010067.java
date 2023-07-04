@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.ComplementSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A010067 Base 6 self or Colombian numbers (not of form k + sum of base 6 digits of k).
@@ -15,7 +15,7 @@ public class A010067 extends ComplementSequence {
 
   /** Construct the sequence. */
   public A010067() {
-    super(new Sequence() {
+    super(new Sequence0() {
       private final TreeSet<Z> mSet = new TreeSet<>();
       private Z mN = Z.ZERO;
 

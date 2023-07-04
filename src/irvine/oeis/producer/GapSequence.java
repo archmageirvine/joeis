@@ -10,13 +10,13 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * Produce a sequence from a PARI program.
  * @author Sean A. Irvine
  */
-public class GapSequence implements Sequence, Closeable {
+public class GapSequence extends AbstractSequence implements Closeable {
 
   // todo This should be considered preliminary
   //  - it needs to check the error stream
@@ -33,6 +33,7 @@ public class GapSequence implements Sequence, Closeable {
    * @param gapProgram GAP program
    */
   public GapSequence(final String gapProgram) {
+    super(0); // todo: offset not properly constructed
     final ProcessBuilder pb = new ProcessBuilder(GapProducer.GAP_COMMAND, "--quiet");
     try {
       mProc = pb.start();

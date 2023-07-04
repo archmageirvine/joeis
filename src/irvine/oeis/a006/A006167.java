@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001037;
 import irvine.oeis.transform.EulerTransform;
 
@@ -20,7 +21,7 @@ public class A006167 extends EulerTransform {
   }
 
   protected A006167(final Sequence underSequence) {
-    super(1, new Sequence() {
+    super(1, new Sequence0() {
       private final ArrayList<Z> mA = new ArrayList<>();
       private Z mN = Z.ZERO;
 

@@ -3,6 +3,7 @@ package irvine.oeis.a042;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000041;
 
 /**
@@ -14,7 +15,7 @@ public class A042961 extends A042953 {
   /**
    * This sequence represents the vector <code>b</code> in the OEIS definition.
    */
-  protected static class SeqB61 implements Sequence {
+  protected static class SeqB61 extends Sequence0 {
     private final Sequence mSeq41;
     public SeqB61() {
       mSeq41 = new A000041();

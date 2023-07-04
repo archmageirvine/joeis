@@ -3,7 +3,6 @@ package irvine.oeis.a046;
 import irvine.math.z.Z;
 import irvine.oeis.DifferenceSequence;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004481;
 
@@ -23,7 +22,7 @@ public class A046874 extends Sequence0 {
       return Z.ZERO;
     }
     // Some contortions for efficiency
-    final MemorySequence seq = MemorySequence.cachedSequence(new DifferenceSequence(new Sequence() {
+    final MemorySequence seq = MemorySequence.cachedSequence(new DifferenceSequence(new Sequence0() {
       private Z mM = Z.NEG_ONE;
       @Override
       public Z next() {

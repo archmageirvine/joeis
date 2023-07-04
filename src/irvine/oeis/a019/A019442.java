@@ -1,8 +1,8 @@
 package irvine.oeis.a019;
 
 import irvine.math.z.Z;
+import irvine.oeis.Sequence0;
 import irvine.oeis.transform.BinomialTransformSequence;
-import irvine.oeis.Sequence;
 
 /**
  * A019442 Numbers n such that a Hadamard matrix of order n exists.
@@ -12,7 +12,7 @@ public class A019442 extends BinomialTransformSequence {
 
   /** Construct the sequence. */
   public A019442() {
-    super(new Sequence() {
+    super(new Sequence0() {
 
       private long mN = -1;
 

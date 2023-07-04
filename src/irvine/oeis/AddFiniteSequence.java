@@ -6,10 +6,10 @@ import irvine.math.z.Z;
  * Add a finite number of long terms to the initial terms of another sequence.
  * Optionally, a number of leading terms of the underlying sequence are skipped first.
  * The offset is not relevant here.
- * This sequences is similar to {@link PrependSequence}, except that it adds the terms instead of replacing them.
+ * This sequence is similar to {@link PrependSequence}, except that it adds the terms instead of replacing them.
  * @author Georg Fischer
  */
-public class AddFiniteSequence implements Sequence {
+public class AddFiniteSequence extends AbstractSequence {
 
   private final Sequence mSeq;
   private final long[] mInitTerms;
@@ -23,6 +23,7 @@ public class AddFiniteSequence implements Sequence {
    * @param initTerms list of terms to be added to the leading terms of <code>seq</code>
    */
   public AddFiniteSequence(int skip, final Sequence seq, final long... initTerms) {
+    super(seq.getOffset());
     mSeq = seq;
     mInitTerms = initTerms;
     mInitLen = mInitTerms.length;

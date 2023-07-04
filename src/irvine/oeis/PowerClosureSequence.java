@@ -9,7 +9,7 @@ import irvine.math.z.Z;
  * Sequence consisting of all powers of another (ordered) sequence.
  * @author Sean A. Irvine
  */
-public class PowerClosureSequence implements Sequence {
+public class PowerClosureSequence extends AbstractSequence {
 
   private final MemorySequence mSeq;
   private final TreeMap<Z, Z> mA = new TreeMap<>();
@@ -20,6 +20,7 @@ public class PowerClosureSequence implements Sequence {
    * @param seq underlying sequence
    */
   public PowerClosureSequence(final Sequence seq) {
+    super(seq.getOffset());
     mSeq = MemorySequence.cachedSequence(seq);
     mB = mSeq.next();
   }

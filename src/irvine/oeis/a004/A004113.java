@@ -3,6 +3,7 @@ package irvine.oeis.a004;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.transform.EulerTransform;
 
 /**
@@ -18,7 +19,7 @@ public class A004113 extends AbstractSequence {
 
   private Z mA = Z.ONE;
 
-  private class A004133Inner implements Sequence {
+  private class A004133Inner extends Sequence0 {
     @Override
     public Z next() {
       return mA;

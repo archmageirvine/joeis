@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A022159 First row of spectral array W(sqrt(3)).
@@ -20,7 +20,7 @@ public class A022159 extends MemorySequence {
     return SQRT3;
   }
 
-  private final ComplementSequence mB = new ComplementSequence(new Sequence() {
+  private final ComplementSequence mB = new ComplementSequence(new Sequence0() {
     private long mN = 0;
     @Override
     public Z next() {

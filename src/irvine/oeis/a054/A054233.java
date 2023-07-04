@@ -2,7 +2,7 @@ package irvine.oeis.a054;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A054233 Number of positive integers &lt;= 2^n of form x^2 + 20 y^2.
@@ -12,7 +12,7 @@ public class A054233 extends A054150 {
 
   /** Construct the sequence. */
   public A054233() {
-    super(new Sequence() {
+    super(new Sequence0() {
       private long mN = -1;
 
       @Override

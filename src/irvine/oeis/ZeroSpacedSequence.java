@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  */
 public class ZeroSpacedSequence extends AbstractSequence {
 
-  private final static int DEFOFF = 0;
+  private static final int DEFOFF = 0;
   private final Sequence mSeq;
   private final int mZeros;
   private int mM = 0;

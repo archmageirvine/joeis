@@ -11,7 +11,7 @@ import irvine.util.array.DynamicLongArray;
  */
 public class OrdersFiniteGroupSequence<T> extends AbstractSequence {
 
-  private final static int DEFOFF = 1;
+  private static final int DEFOFF = 1;
   private final Group<T> mGroup;
   private DynamicLongArray mA = null;
   private int mN = 1;

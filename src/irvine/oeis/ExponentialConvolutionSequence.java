@@ -15,7 +15,7 @@ import irvine.math.z.Z;
  */
 public class ExponentialConvolutionSequence extends AbstractSequence {
 
-  private final static int DEFOFF = 0;
+  private static final int DEFOFF = 0;
   private final Sequence mSeqA;
   private final Sequence mSeqB;
   private final ArrayList<Z> mTermsA;

@@ -18,7 +18,7 @@ import irvine.oeis.Sequence;
  */
 public class InverseBinomialTransformSequence extends AbstractSequence {
 
-  private final static int DEFOFF = 0;
+  private static final int DEFOFF = 0;
   private final Sequence mSeq;
   protected final ArrayList<Z> mTerms = new ArrayList<>();
 

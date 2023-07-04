@@ -14,7 +14,7 @@ import irvine.math.z.Z;
  */
 public class NaiveHunterSequence extends AbstractSequence {
 
-  private final static int DEFOFF = 1;
+  private static final int DEFOFF = 1;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   protected final Lattice mL;
   protected Set<Animal> mCanons = new HashSet<>();

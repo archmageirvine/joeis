@@ -10,7 +10,7 @@ import irvine.oeis.triangle.BaseTriangle;
  */
 public class A346434 extends BaseTriangle {
 
-  private final static Z Z100 = Z.valueOf(100);
+  private static final Z Z100 = Z.valueOf(100);
 
   /** Construct the sequence. */
   public A346434() {

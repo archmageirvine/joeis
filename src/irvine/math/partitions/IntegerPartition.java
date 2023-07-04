@@ -276,6 +276,34 @@ public final class IntegerPartition {
   }
 
   /**
+   * Return the crank of this partition.
+   * @param p partition
+   * @return crank
+   */
+  public static int crank(final int[] p) {
+    if (p.length == 0) {
+      return 0;
+    }
+    if (p[p.length - 1] != 1) {
+      return p[0];
+    }
+    if (p[0] == 1) {
+      return -p.length;
+    }
+    int k = p.length - 1;
+    int w = 0;
+    while (p[k] == 1) {
+      --k;
+      ++w;
+    }
+    int m = 0;
+    while (p[m] > w) {
+      ++m;
+    }
+    return m - w;
+  }
+
+  /**
    * Print all integer partitions of given argument.
    * @param args arguments
    */

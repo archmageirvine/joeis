@@ -111,7 +111,6 @@ public final class Report {
     }
 
     int total = 0;
-    int withOffset = 0;
     int dead = 0;
     int noncomputable = 0;
     int recurrence = 0;
@@ -166,7 +165,6 @@ public final class Report {
     System.out.println("Total sequences implemented: " + rightAlign(total));
     System.out.println("Recurrences:                 " + rightAlign(recurrence));
     System.out.println("Real number constants:       " + rightAlign(cons));
-    System.out.println("SequencesWithOffset:         " + rightAlign(withOffset));
     System.out.println("DeadSequence:                " + rightAlign(dead));
     System.out.println("NoncomputableSequence:       " + rightAlign(noncomputable));
     System.out.println("Conjectural:                 " + rightAlign(conjectural));

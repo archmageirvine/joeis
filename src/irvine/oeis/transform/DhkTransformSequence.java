@@ -13,12 +13,13 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * DHK transform.
  * @author Sean A. Irvine
  */
-public class DhkTransformSequence implements Sequence {
+public class DhkTransformSequence extends Sequence1 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
 

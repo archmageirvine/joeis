@@ -20,7 +20,7 @@ public class WittTransformSequence implements Sequence {
   private int mN = -1;
 
   /**
-   * Creates a new Euler transform sequence of the given sequence, skipping
+   * Creates a new Witt transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
    *
    * @param seq underlying sequence
@@ -34,7 +34,7 @@ public class WittTransformSequence implements Sequence {
   }
 
   /**
-   * Creates a new Euler transform sequence of the given sequence, skipping
+   * Creates a new Witt transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
    *
    * @param seq underlying sequence

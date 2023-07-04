@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A027669 Numbers n such that for some m, the sum of the first m n-gonal numbers is again an n-gonal number.
  * @author Sean A. Irvine
  */
-public class A027669 implements Sequence, Conjectural {
+public class A027669 extends Sequence1 implements Conjectural {
 
   private static final long HEURISTIC_MULTIPLIER = 10000;
   protected long mN = 2;

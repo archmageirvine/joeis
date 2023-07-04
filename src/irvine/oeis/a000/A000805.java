@@ -2,7 +2,7 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A000805 Permanent of a certain cyclic n X n (0,1) matrix.
@@ -15,7 +15,7 @@ public class A000805 extends PrependSequence {
 
   /** Construct the sequence. */
   public A000805() {
-    super(new Sequence() {
+    super(new Sequence0() {
       private int mN = 0;
 
       private final Z[] mT = {

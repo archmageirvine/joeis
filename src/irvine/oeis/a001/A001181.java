@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A001181 Number of Baxter permutations of length n (also called Baxter numbers).
  * @author Sean A. Irvine
  */
-public class A001181 implements Sequence {
+public class A001181 extends Sequence0 {
 
   private Z mA = Z.ONE;
   private Z mB = Z.ONE;

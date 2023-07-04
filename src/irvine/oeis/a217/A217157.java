@@ -4,6 +4,7 @@ package irvine.oeis.a217;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000032;
 import irvine.oeis.a000.A000045;
 
@@ -24,7 +25,7 @@ public class A217157 extends AbstractSequence {
   /**
    * A sequence which returns <code>n^k, k &gt;= 0</code>.
    */
-  private static class PowSeries implements Sequence {
+  private static class PowSeries extends Sequence0 {
     
     private final Z mNum;
     private Z mTerm;

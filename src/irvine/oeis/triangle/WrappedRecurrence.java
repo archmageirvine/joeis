@@ -3,6 +3,7 @@ package irvine.oeis.triangle;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * Generate the rows of a triangle <code>T(n,k)</code> depending on
@@ -22,7 +23,7 @@ public class WrappedRecurrence extends Triangle {
    * A simple version of <code>PaddingSequence</code>:
    * Return a few terms and repeat the last one forever.
    */
-  protected static class BorderSequence implements Sequence {
+  protected static class BorderSequence extends Sequence0 {
 
     private final Z[] mTerms;
     private int mN;

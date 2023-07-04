@@ -6,7 +6,7 @@ import irvine.math.z.Z;
  * Shallit sequence.
  * @author Sean A. Irvine
  */
-public class ShallitSequence implements Sequence {
+public class ShallitSequence extends Sequence0 {
 
   private final Z mInitA;
   private final Z mInitB;

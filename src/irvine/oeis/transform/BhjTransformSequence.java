@@ -8,12 +8,13 @@ import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * BHJ transform.
  * @author Sean A. Irvine
  */
-public class BhjTransformSequence implements Sequence {
+public class BhjTransformSequence extends Sequence1 {
 
   // See https://oeis.org/transforms2.html (but beware errors)
 

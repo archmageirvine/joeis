@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  * Multiplicative closure formed by products of distinct elements of a strictly increasing sequence.
  * @author Sean A. Irvine
  */
-public class DistinctMultiplicativeClosureSequence implements Sequence {
+public class DistinctMultiplicativeClosureSequence extends Sequence1 {
 
   private static final class State implements Comparable<State> {
     private final Z mN;

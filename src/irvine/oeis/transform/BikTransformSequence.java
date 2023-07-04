@@ -5,12 +5,13 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A sequence comprising the reversible, indistinct, unlabeled transform.
  * @author Sean A. Irvine
  */
-public class BikTransformSequence implements Sequence {
+public class BikTransformSequence extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> TWO = Polynomial.create(2);

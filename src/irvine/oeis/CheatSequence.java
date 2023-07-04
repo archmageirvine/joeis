@@ -14,7 +14,7 @@ import irvine.util.io.IOUtils;
  * no easy (or competitive) implementation this is used.
  * @author Sean A. Irvine
  */
-public abstract class CheatSequence implements Sequence {
+public abstract class CheatSequence extends Sequence0 {
 
   private final List<Z> mSeq;
   private int mN = 0;

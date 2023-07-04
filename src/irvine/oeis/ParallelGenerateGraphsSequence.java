@@ -11,7 +11,7 @@ import irvine.math.z.Z;
  * in parallel.
  * @author Sean A. Irvine
  */
-public abstract class ParallelGenerateGraphsSequence implements Sequence {
+public abstract class ParallelGenerateGraphsSequence extends AbstractSequence {
 
   private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
     String.valueOf(Runtime.getRuntime().availableProcessors())));
@@ -31,6 +31,7 @@ public abstract class ParallelGenerateGraphsSequence implements Sequence {
    * @param triangleFree generate triangle free graphs
    */
   protected ParallelGenerateGraphsSequence(final int start, final int firstNonZero, final boolean bipartite, final boolean squareFree, final boolean triangleFree) {
+    super(start + 1);
     mN = start;
     mFirstNonZero = firstNonZero;
     mBipartite = bipartite;

@@ -4,13 +4,13 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A000620 Number of monosubstituted alkanes C(n-1)H(2n-1)-X with n-1 carbon atoms that are stereoisomers.
  * @author Sean A. Irvine
  */
-public class A000620 implements Sequence, Serializable {
+public class A000620 extends Sequence1 implements Serializable {
 
   protected int mN = 0;
   private final ArrayList<Z> mAn = new ArrayList<>();

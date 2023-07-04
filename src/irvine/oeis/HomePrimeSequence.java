@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  * Generate home prime sequences.
  * @author Sean A. Irvine
  */
-public class HomePrimeSequence implements Sequence {
+public class HomePrimeSequence extends Sequence1 {
 
   private final int mBase;
   private final boolean mTerminateOnPrime;

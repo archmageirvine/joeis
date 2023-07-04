@@ -132,7 +132,7 @@ public class WalkCubeSequence extends AbstractSequence {
     }
   }
 
-  private final class W2Sequence implements Sequence {
+  private final class W2Sequence extends Sequence0 {
 
     private final Walk2MemoryFunctionInt3 mF;
 
@@ -301,7 +301,7 @@ public class WalkCubeSequence extends AbstractSequence {
     }
   }
 
-  private final class W3Sequence implements Sequence {
+  private final class W3Sequence extends Sequence0 {
 
     private final MemoryFunctionInt4<Z> mF;
 
@@ -325,7 +325,7 @@ public class WalkCubeSequence extends AbstractSequence {
     }
   }
 
-  private abstract class Walk3MemoryFunctionInt4 extends MemoryFunctionInt4<Z> {
+  private abstract static class Walk3MemoryFunctionInt4 extends MemoryFunctionInt4<Z> {
     @Override
     public Z get(final int i, final int j, final int k, final int m) {
       if (i > m || j > m || k > m || i < 0 || j < 0 || k < 0) {

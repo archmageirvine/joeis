@@ -14,12 +14,13 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * CHJ transform.
  * @author Sean A. Irvine
  */
-public class ChjTransformSequence implements Sequence {
+public class ChjTransformSequence extends Sequence1 {
 
   // See https://oeis.org/transforms2.html (but beware errors)
 

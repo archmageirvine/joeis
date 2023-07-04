@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  * Return the indices of semiprimes in an integer sequence.
  * @author Sean A. Irvine
  */
-public abstract class SemiprimeSequence implements Sequence {
+public abstract class SemiprimeSequence extends AbstractSequence {
 
   private final Sequence mSeq;
   private int mN;
@@ -19,6 +19,7 @@ public abstract class SemiprimeSequence implements Sequence {
    * @param start initial index
    */
   protected SemiprimeSequence(final Sequence seq, final int start) {
+    super(1);
     mSeq = seq;
     mN = start - 1;
   }

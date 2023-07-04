@@ -11,7 +11,7 @@ import irvine.math.z.Z;
  * in parallel.
  * @author Sean A. Irvine
  */
-public abstract class ParallelPlantriSequence implements Sequence {
+public abstract class ParallelPlantriSequence extends AbstractSequence {
 
   private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
     String.valueOf(Runtime.getRuntime().availableProcessors())));
@@ -25,6 +25,7 @@ public abstract class ParallelPlantriSequence implements Sequence {
    * @param firstNonZero first nonzero term
    */
   protected ParallelPlantriSequence(final int start, final int firstNonZero) {
+    super(start + 1);
     mN = start;
     mFirstNonZero = firstNonZero;
   }

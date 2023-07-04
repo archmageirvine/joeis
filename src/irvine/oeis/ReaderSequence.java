@@ -9,7 +9,7 @@ import irvine.math.z.Z;
  * A sequence backed by a file or reader.
  * @author Sean A. Irvine
  */
-public class ReaderSequence implements Sequence, AutoCloseable {
+public class ReaderSequence extends Sequence0 implements AutoCloseable {
 
   private final BufferedReader mReader;
 

@@ -1,7 +1,7 @@
 package irvine.oeis.cons;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * Sequence formed by the decimal expansion of a double. This should not be
@@ -9,12 +9,13 @@ import irvine.oeis.Sequence;
  * in physics.
  * @author Sean A. Irvine
  */
-public abstract class DoubleDecimalExpansionSequence implements Sequence {
+public abstract class DoubleDecimalExpansionSequence extends AbstractSequence {
 
   private double mValue;
   private double mUncertainty;
 
-  protected DoubleDecimalExpansionSequence(final double value, final double uncertainty, final boolean trimLeadingZeros) {
+  protected DoubleDecimalExpansionSequence(final int offset, final double value, final double uncertainty, final boolean trimLeadingZeros) {
+    super(offset);
     mValue = value;
     mUncertainty = uncertainty;
     while (mValue >= 10) {
@@ -30,6 +31,10 @@ public abstract class DoubleDecimalExpansionSequence implements Sequence {
     if (mValue < 1) {
       next(); // skips leading 0 in expansions like 0.1223
     }
+  }
+
+  protected DoubleDecimalExpansionSequence(final double value, final double uncertainty, final boolean trimLeadingZeros) {
+    this(1, value, uncertainty, trimLeadingZeros);
   }
 
   protected DoubleDecimalExpansionSequence(final double value, final double uncertainty) {

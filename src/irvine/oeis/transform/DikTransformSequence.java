@@ -7,12 +7,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A sequence comprising the bracelet, indistinct, unlabeled transform.
  * @author Sean A. Irvine
  */
-public class DikTransformSequence implements Sequence {
+public class DikTransformSequence extends Sequence1 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final Sequence mSeq;
@@ -20,7 +22,7 @@ public class DikTransformSequence implements Sequence {
   private final ArrayList<Z> mA = new ArrayList<>();
   private int mN = -1;
 
-  private static final class MySequence implements Sequence {
+  private static final class MySequence extends Sequence0 {
 
     private final ArrayList<Z> mA;
     private MySequence(final ArrayList<Z> a) {

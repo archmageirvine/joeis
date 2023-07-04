@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import irvine.math.api.RationalSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * Generate the rows of a triangle T(n,k).
@@ -17,8 +17,10 @@ import irvine.oeis.Sequence;
  * and in the last row with <code>mLastRow[k - j]</code> for <code>j=1..k</code>.
  * @author Georg Fischer
  */
-public class RationalTriangle extends ArrayList<Q[]> implements RationalSequence, Sequence {
+public class RationalTriangle extends AbstractSequence implements RationalSequence {
 
+  private final static int DEFOFF = 0;
+  protected ArrayList<Q[]> mArr;
   protected int mRow; // current row index n
   protected int mCol; // current column index k
   protected Q[] mLastRow; // = get(mRow)
@@ -32,7 +34,9 @@ public class RationalTriangle extends ArrayList<Q[]> implements RationalSequence
    * Generates an ordinary Pascal triangle (A007318).
    */
   public RationalTriangle() {
-    initialize(new Q[] { Q.ONE });
+    super(DEFOFF);
+    mArr = new ArrayList<>();
+    initialize(new Q[]{Q.ONE});
   }
 
   /**
@@ -85,7 +89,7 @@ public class RationalTriangle extends ArrayList<Q[]> implements RationalSequence
     } else if (n == mRow && k <= mCol) {
       return mLastRow[k];
     } else if (n < mRow) {
-      return get(n)[k];
+      return mArr.get(n)[k];
     } else {
       return compute(n, k);
     }
@@ -96,8 +100,8 @@ public class RationalTriangle extends ArrayList<Q[]> implements RationalSequence
    */
   protected void addRow() {
     ++mRow;
-    add(new Q[mRow + 1]);
-    mLastRow = get(mRow);
+    mArr.add(new Q[mRow + 1]);
+    mLastRow = mArr.get(mRow);
     mCol = 0;
   }
 

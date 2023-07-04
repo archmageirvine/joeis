@@ -5,17 +5,20 @@ import irvine.math.plantri.Plantri;
 import irvine.math.plantri.PlantriGraphProcessor;
 import irvine.math.plantri.PlantriGraphState;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007023 Number of 4-connected 4-regular polyhedra with n nodes.
  * @author Sean A. Irvine
  */
-public class A007023 implements Sequence, PlantriGraphProcessor {
+public class A007023 extends AbstractSequence implements PlantriGraphProcessor {
 
   private int mN = 5;
   private final Plantri mPlantri = new Plantri();
-  {
+
+  /** Construct the sequence. */
+  public A007023() {
+    super(6);
     mPlantri.setGraphProcessor(this);
   }
 

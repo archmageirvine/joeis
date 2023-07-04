@@ -6,11 +6,12 @@ import irvine.util.array.DynamicLongArray;
 
 /**
  * The number of elements of each order in a finite group.
- * @author Sean A. Irvine
  * @param <T> underlying element type
+ * @author Sean A. Irvine
  */
-public class OrdersFiniteGroupSequence<T> implements Sequence {
+public class OrdersFiniteGroupSequence<T> extends AbstractSequence {
 
+  private final static int DEFOFF = 1;
   private final Group<T> mGroup;
   private DynamicLongArray mA = null;
   private int mN = 1;
@@ -20,6 +21,7 @@ public class OrdersFiniteGroupSequence<T> implements Sequence {
    * @param group the group to get counts for
    */
   public OrdersFiniteGroupSequence(final Group<T> group) {
+    super(DEFOFF);
     mGroup = group;
   }
 

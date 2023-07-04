@@ -8,6 +8,7 @@ import java.util.List;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
 
@@ -15,8 +16,9 @@ import irvine.oeis.Sequence;
  * A sequence comprising the inverse binomial transform of another sequence.
  * @author Sean A. Irvine
  */
-public class InverseBinomialTransformSequence implements Sequence {
+public class InverseBinomialTransformSequence extends AbstractSequence {
 
+  private final static int DEFOFF = 0;
   private final Sequence mSeq;
   protected final ArrayList<Z> mTerms = new ArrayList<>();
 
@@ -39,11 +41,22 @@ public class InverseBinomialTransformSequence implements Sequence {
   /**
    * Creates a new inverse binomial transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
-   *
    * @param seq underlying sequence
    * @param skip number of terms to skip
    */
   public InverseBinomialTransformSequence(final Sequence seq, final int skip) {
+    this(DEFOFF, seq, skip);
+  }
+
+  /**
+   * Creates a new inverse binomial transform sequence of the given sequence, skipping
+   * the specified number of terms in advance.
+   * @param offset first index of target sequence
+   * @param seq underlying sequence
+   * @param skip number of terms to skip
+   */
+  public InverseBinomialTransformSequence(final int offset, final Sequence seq, final int skip) {
+    super(offset);
     mSeq = seq;
     for (int k = 0; k < skip; ++k) {
       seq.next();

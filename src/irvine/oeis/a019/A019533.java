@@ -5,16 +5,21 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A019533 Let I_c(n,d) be the maximal number of independent sets in d-regular simple connected graphs with n vertices; sequence gives I_c(n,4).
  * @author Sean A. Irvine
  */
-public class A019533 implements Sequence, GraphProcessor {
+public class A019533 extends AbstractSequence implements GraphProcessor {
 
   private long mMax = 0;
   private int mN = 4;
+
+  /** Construct the sequence. */
+  public A019533() {
+    super(5);
+  }
 
   @Override
   public void process(final Graph graph) {

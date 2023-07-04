@@ -7,18 +7,21 @@ import irvine.math.plantri.Plantri;
 import irvine.math.plantri.PlantriGraphProcessor;
 import irvine.math.plantri.PlantriGraphState;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007026 Number of 4-connected polyhedral graphs with n faces.
  * @author Sean A. Irvine
  */
-public class A007026 implements Sequence, PlantriGraphProcessor {
+public class A007026 extends AbstractSequence implements PlantriGraphProcessor {
 
   private final ArrayList<Z> mFaceCount = new ArrayList<>();
   private int mN = 1;
   private final Plantri mPlantri = new Plantri();
-  {
+
+  /** Construct the sequence. */
+  public A007026() {
+    super(4);
     mPlantri.setGraphProcessor(this);
   }
 

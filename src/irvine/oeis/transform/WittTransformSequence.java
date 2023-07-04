@@ -4,29 +4,53 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
  * A sequence comprising the Witt transform of another sequence.
  * @author Sean A. Irvine
  */
-public class WittTransformSequence implements Sequence {
+public class WittTransformSequence extends AbstractSequence {
 
+  private final static int DEFOFF = 1;
   private final Sequence mSeq;
   protected final ArrayList<Z> mTerms = new ArrayList<>();
+
   {
     mTerms.add(null);
   }
+
   private int mN = -1;
 
   /**
    * Creates a new Witt transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
-   *
    * @param seq underlying sequence
    * @param skip number of terms to skip
    */
   public WittTransformSequence(final Sequence seq, final int skip) {
+    this(DEFOFF, seq, skip);
+  }
+
+  /**
+   * Creates a new Witt transform sequence of the given sequence, skipping
+   * the specified number of terms in advance.
+   * @param seq underlying sequence
+   */
+  public WittTransformSequence(final Sequence seq) {
+    this(DEFOFF, seq, 0);
+  }
+
+  /**
+   * Creates a new Witt transform sequence of the given sequence, skipping
+   * the specified number of terms in advance.
+   * @param offset first index of target sequence
+   * @param seq underlying sequence
+   * @param skip number of terms to skip
+   */
+  public WittTransformSequence(final int offset, final Sequence seq, final int skip) {
+    super(offset);
     mSeq = seq;
     for (int k = 0; k < skip; ++k) {
       seq.next();
@@ -36,11 +60,11 @@ public class WittTransformSequence implements Sequence {
   /**
    * Creates a new Witt transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
-   *
+   * @param offset first index of target sequence
    * @param seq underlying sequence
    */
-  public WittTransformSequence(final Sequence seq) {
-    this(seq, 0);
+  public WittTransformSequence(final int offset, final Sequence seq) {
+    this(offset, seq, 0);
   }
 
   @Override

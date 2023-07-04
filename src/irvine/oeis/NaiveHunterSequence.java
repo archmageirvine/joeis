@@ -12,13 +12,19 @@ import irvine.math.z.Z;
  * For regular lattices much better performance can be had using <code>ParallelHunter</code>
  * @author Sean A. Irvine
  */
-public class NaiveHunterSequence implements Sequence {
+public class NaiveHunterSequence extends AbstractSequence {
 
+  private final static int DEFOFF = 1;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   protected final Lattice mL;
   protected Set<Animal> mCanons = new HashSet<>();
 
   protected NaiveHunterSequence(final Lattice lattice) {
+    this(DEFOFF, lattice);
+  }
+
+  protected NaiveHunterSequence(final int offset, final Lattice lattice) {
+    super(offset);
     mL = lattice;
   }
 

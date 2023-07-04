@@ -12,8 +12,9 @@ import irvine.util.string.StringUtils;
  * parameters are small enough to work in longs.
  * @author Sean A. Irvine
  */
-public class GramMatrixRepresentatives implements Sequence {
+public class GramMatrixRepresentatives extends AbstractSequence {
 
+  private final static int DEFOFF = 1;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final long[][] mMatrix;
   private final long[] mVec;
@@ -29,6 +30,7 @@ public class GramMatrixRepresentatives implements Sequence {
    * @param step step size
    */
   protected GramMatrixRepresentatives(final long[][] matrix, final long step) {
+    super(DEFOFF);
     mMatrix = matrix;
     mVec = new long[matrix.length];
     mStep = step;

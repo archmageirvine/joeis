@@ -2,13 +2,13 @@ package irvine.oeis.cons;
 
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A sequence generating the continued fraction of a computable real.
  * @author Sean A. Irvine
  */
-public class ContinuedFractionDenominatorSequence implements Sequence {
+public class ContinuedFractionDenominatorSequence extends AbstractSequence {
 
   private final DecimalExpansionSequence mSeq;
   private long mN = -1;
@@ -18,6 +18,7 @@ public class ContinuedFractionDenominatorSequence implements Sequence {
    * @param seq underlying decimal expansion sequence
    */
   public ContinuedFractionDenominatorSequence(final DecimalExpansionSequence seq) {
+    super(seq.getOffset());
     mSeq = seq;
   }
 

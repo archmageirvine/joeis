@@ -10,6 +10,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
 
@@ -18,8 +19,9 @@ import irvine.oeis.Sequence;
  * This is useful for going from labelled unconnected graphs to connected cases.
  * @author Sean A. Irvine
  */
-public class LogarithmicTransformSequence implements Sequence {
+public class LogarithmicTransformSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 1;
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final Sequence mSeq;
   protected final ArrayList<Q> mTerms = new ArrayList<>();
@@ -34,6 +36,7 @@ public class LogarithmicTransformSequence implements Sequence {
    * @param skip number of terms to skip
    */
   public LogarithmicTransformSequence(final Sequence seq, final int skip) {
+    super(DEFOFF);
     mSeq = seq;
     mTerms.add(Q.ZERO);
     for (int k = 0; k < skip; ++k) {

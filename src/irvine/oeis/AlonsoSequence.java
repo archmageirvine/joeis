@@ -10,7 +10,7 @@ import irvine.math.z.Z;
  * A sequence arising in the concatenation of the prime factors of a number.
  * @author Sean A. Irvine
  */
-public class AlonsoSequence implements Sequence {
+public class AlonsoSequence extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final HashSet<Z> mSeen = new HashSet<>();

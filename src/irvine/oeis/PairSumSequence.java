@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  * Numbers which are the sum of two numbers in another sequence.
  * @author Sean A. Irvine
  */
-public class PairSumSequence implements Sequence {
+public class PairSumSequence extends Sequence1 {
 
   private final MemorySequence mSeq;
   private Z mT;

@@ -6,17 +6,19 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import irvine.math.z.Integers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A sequence comprising the Stirling numbers of the first kind transform of
  * another sequence.
  * @author Sean A. Irvine
  */
-public class Stirling1TransformSequence implements Sequence {
+public class Stirling1TransformSequence extends Sequence1 {
 
   /**
    * Apply the Stirling numbers of the first kind transform to the given sequence
@@ -26,11 +28,7 @@ public class Stirling1TransformSequence implements Sequence {
    * @return the next term in the transformed sequence
    */
   public static Z stirling1(final List<Z> seq, final int n) {
-    Z sum = Z.ZERO;
-    for (int k = 1; k <= n; ++k) {
-      sum = sum.add(Stirling.firstKind(n, k).multiply(seq.get(k)));
-    }
-    return sum;
+    return Integers.SINGLETON.sum(1, n, k -> Stirling.firstKind(n, k).multiply(seq.get(k)));
   }
 
   /**

@@ -6,12 +6,13 @@ import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 
 /**
  * Apply the Stirling-Bernoulli transform to another sequence.
  * @author Sean A. Irvine
  */
-public class StirlingBernoulliTransform implements Sequence {
+public class StirlingBernoulliTransform extends Sequence0 {
 
   /**
    * Apply the Stirling-Bernoulli transform to the given sequence

@@ -1,14 +1,16 @@
 package irvine.oeis.transform;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
  * A056193.
  * @author Sean A. Irvine
  */
-public class LittleHankelTransform implements Sequence {
+public class LittleHankelTransform extends AbstractSequence {
 
+  private static final int DEFOFF = 1;
   private final Sequence mSeq;
   private Z mA;
   private Z mB;
@@ -18,6 +20,7 @@ public class LittleHankelTransform implements Sequence {
    * @param seq sequence
    */
   public LittleHankelTransform(final Sequence seq) {
+    super(DEFOFF);
     mSeq = seq;
     mA = mSeq.next();
     mB = mSeq.next();

@@ -1,8 +1,8 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.Stirling1TransformSequence;
 import irvine.oeis.a006.A006351;
+import irvine.oeis.transform.Stirling1TransformSequence;
 
 /**
  * A058381 Number of series-parallel networks with n labeled edges, multiple edges not allowed.
@@ -15,6 +15,7 @@ public class A058381 extends Stirling1TransformSequence {
   /** Construct the sequence. */
   public A058381() {
     super(new A006351(), -1);
+    setOffset(0);
   }
 
   @Override

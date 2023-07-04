@@ -6,14 +6,16 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
  * A transform similar to the Mobius transform but using the odd part of divisors.
  * @author Sean A. Irvine
  */
-public class Phi2TransformSequence implements Sequence {
+public class Phi2TransformSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 1;
   private final Sequence mSeq;
   private final ArrayList<Z> mTerms = new ArrayList<>();
   private final Z mInitialTerm;
@@ -21,12 +23,12 @@ public class Phi2TransformSequence implements Sequence {
   /**
    * Creates a new transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
-   *
    * @param seq underlying sequence
    * @param skip number of terms to skip
    * @param initialTerm initial term to return
    */
   public Phi2TransformSequence(final Sequence seq, final int skip, final Z initialTerm) {
+    super(DEFOFF);
     mSeq = seq;
     for (int k = 0; k < skip; ++k) {
       seq.next();
@@ -37,7 +39,6 @@ public class Phi2TransformSequence implements Sequence {
   /**
    * Creates a new transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
-   *
    * @param seq underlying sequence
    * @param skip number of terms to skip
    */

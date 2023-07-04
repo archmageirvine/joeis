@@ -11,7 +11,7 @@ import irvine.math.z.Z;
  * Composition of sequences (COMPOSE transform).
  * @author Sean A. Irvine
  */
-public class ComposeSequence implements Sequence {
+public class ComposeSequence extends Sequence1 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final Sequence mSeqA;

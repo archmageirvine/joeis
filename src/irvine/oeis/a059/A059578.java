@@ -1,15 +1,14 @@
 package irvine.oeis.a059;
 
-import irvine.math.MemoryFunctionInt2;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A059578 Variation of Boustrophedon transform applied to 1,1,1,1,... Fill an array by diagonals, all in the 'up' direction. The first column is 1,1,1,1,.... For the next element of a diagonal, add to the previous element the elements of the row and the column the new element is in. The first row gives a(n).
  * @author Sean A. Irvine
  */
-public class A059578 extends MemoryFunctionInt2<Z> implements Sequence {
+public class A059578 extends MemoryFunctionInt2Sequence<Z> {
 
   private int mN = -1;
 

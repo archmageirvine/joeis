@@ -1,20 +1,19 @@
 package irvine.oeis.a057;
 
 import irvine.math.IntegerUtils;
-import irvine.math.MemoryFunctionInt2;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A057731 Irregular triangle read by rows: T(n,k) = number of elements of order k in symmetric group S_n, for n &gt;= 1, 1 &lt;= k &lt;= g(n), where g(n) = A000793(n) is Landau's function.
  * @author Sean A. Irvine
  */
-public class A057731 extends MemoryFunctionInt2<Polynomial<Z>> implements Sequence {
+public class A057731 extends MemoryFunctionInt2Sequence<Polynomial<Z>> {
 
   // After Alois P. Heinz
 

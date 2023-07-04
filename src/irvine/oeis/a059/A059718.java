@@ -1,17 +1,16 @@
 package irvine.oeis.a059;
 
-import irvine.math.MemoryFunctionInt2;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A059718 Triangle T(n,k), 0&lt;=k&lt;=n, giving coefficients when output sequence O_0, O_1, O_2, ... from transformation described in A059216 is expressed in terms of input sequence I_0, I_1, I_2, ...
  * @author Sean A. Irvine
  */
-public class A059718 extends MemoryFunctionInt2<Polynomial<Z>> implements Sequence {
+public class A059718 extends MemoryFunctionInt2Sequence<Polynomial<Z>> {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;

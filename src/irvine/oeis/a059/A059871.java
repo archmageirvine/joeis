@@ -1,9 +1,8 @@
 package irvine.oeis.a059;
 
-import irvine.math.MemoryFunctionInt2;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008578;
 import irvine.oeis.a026.A026905;
 
@@ -11,7 +10,7 @@ import irvine.oeis.a026.A026905;
  * A059871 Number of solutions to the equation p_i = (1+mod(i,2))*p_{i-1} +- p_{i-2} +- p_{i-3} +- ... +- 2 +- 1, where p_i is the i-th prime number (where p_1 = 2 and the "zeroth prime" p_0 is defined to be 1).
  * @author Sean A. Irvine
  */
-public class A059871 extends MemoryFunctionInt2<Z> implements Sequence {
+public class A059871 extends MemoryFunctionInt2Sequence<Z> {
 
   private final MemorySequence mP = MemorySequence.cachedSequence(new A008578());
   private final MemorySequence mSP = MemorySequence.cachedSequence(new A026905());

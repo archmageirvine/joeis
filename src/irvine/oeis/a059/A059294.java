@@ -1,14 +1,13 @@
 package irvine.oeis.a059;
 
-import irvine.math.MemoryFunctionInt2;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A059294 2-boustrophedon transform applied to 1, 0, 0, 0, ...
  * @author Sean A. Irvine
  */
-public class A059294 extends MemoryFunctionInt2<Z> implements Sequence {
+public class A059294 extends MemoryFunctionInt2Sequence<Z> {
 
   private int mN = -1;
 

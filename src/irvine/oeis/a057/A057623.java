@@ -1,17 +1,16 @@
 package irvine.oeis.a057;
 
-import irvine.math.MemoryFunctionInt2;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
  * A057623 a(n) = n! * (sum of reciprocals of all parts in unrestricted partitions of n).
  * @author Sean A. Irvine
  */
-public class A057623 extends MemoryFunctionInt2<Pair<Q, Q>> implements Sequence {
+public class A057623 extends MemoryFunctionInt2Sequence<Pair<Q, Q>> {
 
   private static final Pair<Q, Q> ZERO = new Pair<>(Q.ZERO, Q.ZERO);
   private static final Pair<Q, Q> ONE = new Pair<>(Q.ONE, Q.ZERO);

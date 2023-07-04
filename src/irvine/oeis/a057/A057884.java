@@ -1,14 +1,13 @@
 package irvine.oeis.a057;
 
-import irvine.math.MemoryFunctionInt2;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A057884 A square array based on tetrahedral numbers (A000292) with each term being the sum of 2 consecutive terms in the previous row.
  * @author Sean A. Irvine
  */
-public class A057884 extends MemoryFunctionInt2<Z> implements Sequence {
+public class A057884 extends MemoryFunctionInt2Sequence<Z> {
 
   private int mN = 0;
   private int mM = -1;

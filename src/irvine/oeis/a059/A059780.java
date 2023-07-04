@@ -1,14 +1,13 @@
 package irvine.oeis.a059;
 
-import irvine.math.MemoryFunctionInt2;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A059780 A generalized Pascal triangle of order 3: T(n,m), n &gt;= 0, 2*n &gt;= m &gt;= 0.
  * @author Sean A. Irvine
  */
-public class A059780 extends MemoryFunctionInt2<Z> implements Sequence {
+public class A059780 extends MemoryFunctionInt2Sequence<Z> {
 
   private int mN = -1;
   private int mM = 0;

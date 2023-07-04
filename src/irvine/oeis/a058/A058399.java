@@ -1,15 +1,14 @@
 package irvine.oeis.a058;
 
-import irvine.math.MemoryFunctionInt2;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A058399 Triangle of partial row sums of partition triangle A008284.
  * @author Sean A. Irvine
  */
-public class A058399 extends MemoryFunctionInt2<Z> implements Sequence {
+public class A058399 extends MemoryFunctionInt2Sequence<Z> {
   
   // After Alois P. Heinz
 

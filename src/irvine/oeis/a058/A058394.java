@@ -1,14 +1,13 @@
 package irvine.oeis.a058;
 
-import irvine.math.MemoryFunctionInt2;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A058394 A square array based on natural numbers (A000027) with each term being the sum of 2 consecutive terms in the previous row.
  * @author Sean A. Irvine
  */
-public class A058394 extends MemoryFunctionInt2<Z> implements Sequence {
+public class A058394 extends MemoryFunctionInt2Sequence<Z> {
 
   private int mN = -1;
   private int mM = 0;

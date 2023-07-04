@@ -1,14 +1,13 @@
 package irvine.oeis.a059;
 
-import irvine.math.MemoryFunctionInt2;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A059922 Each term in the table is the product of the two terms above it + 1.
  * @author Sean A. Irvine
  */
-public class A059922 extends MemoryFunctionInt2<Z> implements Sequence {
+public class A059922 extends MemoryFunctionInt2Sequence<Z> {
 
   private int mN = -1;
   private int mM = 0;

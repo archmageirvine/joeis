@@ -1,14 +1,13 @@
 package irvine.oeis.a060;
 
-import irvine.math.MemoryFunctionInt2;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A060016 Triangle T(n,k) = number of partitions of n into k distinct parts, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
-public class A060016 extends MemoryFunctionInt2<Z> implements Sequence {
+public class A060016 extends MemoryFunctionInt2Sequence<Z> {
 
   private int mN = 0;
   private int mM = 0;

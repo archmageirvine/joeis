@@ -1,15 +1,14 @@
 package irvine.oeis.a059;
 
-import irvine.math.MemoryFunctionInt2;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A059432 Triangle formed when cumulative boustrophedon transform is applied to 1, 0, 0, 0, ..., read by rows in natural order.
  * @author Sean A. Irvine
  */
-public class A059432 extends MemoryFunctionInt2<Z> implements Sequence {
+public class A059432 extends MemoryFunctionInt2Sequence<Z> {
 
   private int mN = -1;
   private int mM = 0;

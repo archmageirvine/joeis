@@ -1,14 +1,13 @@
 package irvine.oeis.a059;
 
-import irvine.math.MemoryFunctionInt2;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A059397 Triangle formed by right-bounded rhombus rule, read by rows.
  * @author Sean A. Irvine
  */
-public class A059397 extends MemoryFunctionInt2<Z> implements Sequence {
+public class A059397 extends MemoryFunctionInt2Sequence<Z> {
 
   private int mN = -1;
   private int mM = 0;

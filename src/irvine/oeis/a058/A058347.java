@@ -1,14 +1,13 @@
 package irvine.oeis.a058;
 
-import irvine.math.MemoryFunctionInt2;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A058347 Array T(n,k), n,k nonnegative: the total number of checks required by a "double-support" algorithm to find out which rows and columns of each of the n by k zero-one matrices are nonzero.
  * @author Sean A. Irvine
  */
-public class A058347 extends MemoryFunctionInt2<Z> implements Sequence {
+public class A058347 extends MemoryFunctionInt2Sequence<Z> {
 
   private int mN = -1;
   private int mM = 0;

@@ -2,7 +2,7 @@ package irvine.oeis.a005;
 
 import java.util.Arrays;
 
-import irvine.math.MemoryFunction;
+import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.PolynomialRing;
 import irvine.math.partitions.IntegerPartition;
@@ -10,14 +10,13 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
  * A005489 Number of nonzero coefficients of order n in Baker-Campbell-Hausdorff expansion.
  * @author Sean A. Irvine
  */
-public class A005489 extends MemoryFunction<Integer, Polynomial<Q>> implements Sequence {
+public class A005489 extends MemoryFunctionSequence<Integer, Polynomial<Q>> {
 
   // After Andrey Zabolotskiy
 
@@ -33,8 +32,8 @@ public class A005489 extends MemoryFunction<Integer, Polynomial<Q>> implements S
       return RING.one();
     }
     return RING.add(
-      RING.multiply(getValue(s - 1), C1),
-      RING.multiply(C2, RING.diff(getValue(s - 1)))
+      RING.multiply(get(s - 1), C1),
+      RING.multiply(C2, RING.diff(get(s - 1)))
     );
   }
 
@@ -43,7 +42,7 @@ public class A005489 extends MemoryFunction<Integer, Polynomial<Q>> implements S
     final int mp = m / 2;
     Polynomial<Q> gamma = RING.one();
     for (final int s : ss) {
-      gamma = RING.multiply(gamma, getValue(s));
+      gamma = RING.multiply(gamma, get(s));
     }
     Q sum = Q.ZERO;
     for (int k = 0; k < gamma.size(); ++k) {

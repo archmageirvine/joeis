@@ -2,15 +2,14 @@ package irvine.oeis.a007;
 
 import java.util.ArrayList;
 
-import irvine.math.MemoryFunction;
+import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A007152 Evolutionary trees of magnitude n.
  * @author Sean A. Irvine
  */
-public class A007152 extends MemoryFunction<Integer, Z> implements Sequence {
+public class A007152 extends MemoryFunctionSequence<Integer, Z> {
 
   // After R. J. Mathar
 
@@ -38,6 +37,6 @@ public class A007152 extends MemoryFunction<Integer, Z> implements Sequence {
     if (++mN == 1) {
       return Z.ONE;
     }
-    return a7151(mN - 1).add(getValue(mN - 1));
+    return a7151(mN - 1).add(get(mN - 1));
   }
 }

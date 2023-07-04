@@ -13,6 +13,7 @@ public class A007044 extends A047812 {
 
   @Override
   public Z next() {
-    return getValue(++mN).coeff(2 * (mN + 1));
+    final Integer key = ++mN;
+    return get(key).coeff(2 * (mN + 1));
   }
 }

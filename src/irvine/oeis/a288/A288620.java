@@ -3,6 +3,7 @@ package irvine.oeis.a288;
 import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction;
+import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.group.IntegersModMul;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
@@ -10,18 +11,17 @@ import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A288620 Triangle read by rows: T(n,k) = number of step shifted (decimated) sequence structures of length n using exactly k different symbols.
  * @author Sean A. Irvine
  */
-public class A288620 extends MemoryFunction<Integer, CycleIndex> implements Sequence {
+public class A288620 extends MemoryFunctionSequence<Integer, CycleIndex> {
 
   private int mN = 0;
   private int mM = 0;
 
-  private final MemoryFunction<Integer, CycleIndex> mS = new MemoryFunction<Integer, CycleIndex>() {
+  private final MemoryFunction<Integer, CycleIndex> mS = new MemoryFunction<>() {
     @Override
     protected CycleIndex compute(final Integer key) {
       return SymmetricGroup.create(key).cycleIndex();
@@ -47,8 +47,8 @@ public class A288620 extends MemoryFunction<Integer, CycleIndex> implements Sequ
   }
 
   protected Z t(final int n, final int m) {
-    final Z v = getValue(n).deBruijn(mS.getValue(m));
-    return m == 1 ? v : v.subtract(getValue(n).deBruijn(mS.getValue(m - 1)));
+    final Z v = get(n).deBruijn(mS.getValue(m));
+    return m == 1 ? v : v.subtract(get(n).deBruijn(mS.getValue(m - 1)));
   }
 
   @Override

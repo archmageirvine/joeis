@@ -3,15 +3,14 @@ package irvine.oeis.a009;
 import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
-import irvine.math.MemoryFunction;
+import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A009692 Number of partitions of {1, 2, ..., 2n} into pairs whose differences are primes.
  * @author Sean A. Irvine
  */
-public class A009692 extends MemoryFunction<TreeSet<Integer>, Z> implements Sequence {
+public class A009692 extends MemoryFunctionSequence<TreeSet<Integer>, Z> {
 
   // After Alois P. Heinz
 
@@ -29,7 +28,7 @@ public class A009692 extends MemoryFunction<TreeSet<Integer>, Z> implements Sequ
         final TreeSet<Integer> t = new TreeSet<>(set);
         t.remove(j);
         t.remove(i);
-        sum = sum.add(getValue(t));
+        sum = sum.add(get(t));
       }
     }
     return sum;
@@ -44,7 +43,7 @@ public class A009692 extends MemoryFunction<TreeSet<Integer>, Z> implements Sequ
     for (int k = 1; k <= mN; ++k) {
       set.add(k);
     }
-    return getValue(set);
+    return get(set);
   }
 
 }

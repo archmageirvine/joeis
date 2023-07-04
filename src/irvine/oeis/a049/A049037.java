@@ -2,7 +2,7 @@ package irvine.oeis.a049;
 
 import java.util.ArrayList;
 
-import irvine.math.MemoryFunction;
+import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002896;
@@ -11,7 +11,7 @@ import irvine.oeis.a002.A002896;
  * A049037 Number of cubic lattice walks that start and end at origin after 2n steps, not touching origin at intermediate stages.
  * @author Sean A. Irvine
  */
-public class A049037 extends MemoryFunction<Integer, Z> implements Sequence {
+public class A049037 extends MemoryFunctionSequence<Integer, Z> {
 
   // After Alois P. Heinz
 
@@ -34,6 +34,7 @@ public class A049037 extends MemoryFunction<Integer, Z> implements Sequence {
   @Override
   public Z next() {
     mB.add(mBSeq.next());
-    return getValue(++mN).abs();
+    final Integer key = ++mN;
+    return get(key).abs();
   }
 }

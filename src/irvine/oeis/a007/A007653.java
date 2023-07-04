@@ -2,15 +2,14 @@ package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.MemoryFunction;
+import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A007653 Coefficients of L-series for elliptic curve "37a1": y^2 + y = x^3 - x.
  * @author Sean A. Irvine
  */
-public class A007653 extends MemoryFunction<Z, Long> implements Sequence {
+public class A007653 extends MemoryFunctionSequence<Z, Long> {
 
   private long mN = 0;
 
@@ -33,7 +32,7 @@ public class A007653 extends MemoryFunction<Z, Long> implements Sequence {
     if (exponent <= 0) {
       return Z.ONE;
     }
-    final Z c = p.subtract(getValue(p));
+    final Z c = p.subtract(get(p));
     if (exponent == 1) {
       return c;
     }

@@ -1,15 +1,14 @@
 package irvine.oeis.a006;
 
-import irvine.math.MemoryFunction;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionSequence;
 
 /**
  * A006019 Remoteness number of n in Simon Norton's game of Tribulations.
  * @author R. J. Mathar
  * @author Sean A. Irvine
  */
-public class A006019 extends MemoryFunction<Z, Integer> implements Sequence {
+public class A006019 extends MemoryFunctionSequence<Z, Integer> {
   /*
    * P-Positions: previous  player wins.
    * Positions with mEven-valued remoteness.
@@ -69,7 +68,7 @@ public class A006019 extends MemoryFunction<Z, Integer> implements Sequence {
     } else {
       // try to look up the result in the history of older computations to minimize the effort of
       // the recursive calculations.
-      final Integer r = get(n);
+      final Integer r = getUncached(n);
       if (r != null) {
         // if this parity is mEven, a P-position (losing), if it is odd, a N-position (winning).
         return (r % 2 == 0) ? PPOS : NPOS;
@@ -165,27 +164,27 @@ public class A006019 extends MemoryFunction<Z, Integer> implements Sequence {
             if (parput != PPOS) {
               // Taking would lead to a P-position of the opponent, putting not or unknown
               // Game strategy is to take the shortest path towards winning
-              remoteness = 1 + getValue(tak);
+              remoteness = 1 + get(tak);
             } else {
               // Taking and putting give both P-position of the opponent.
               // Strategy is to select fastest game (game with smallest number of moves)
-              remoteness = 1 + Math.min(getValue(put), getValue(tak));
+              remoteness = 1 + Math.min(get(put), get(tak));
             }
 
           } else if (parput == PPOS) {
             // Putting gives a P-position of the opponent, and
             // taking gives an N-position or undecided. Strategy is to
             // leave a P-position to the opponent.
-            remoteness = 1 + getValue(put);
+            remoteness = 1 + get(put);
           } else if (parput == NPOS) {
             if (partak == NPOS) {
               // Taking or putting both give N-position. Select slowest game, because we're losing.
-              remoteness = 1 + Math.max(getValue(put), getValue(tak));
+              remoteness = 1 + Math.max(get(put), get(tak));
             } else {
               // Putting gives N-position and taking is unknown:
               //select slowest game, which is the unknown branch
               //because we are increasing the search depth in the outer loop
-              remoteness = 1 + getValue(tak);
+              remoteness = 1 + get(tak);
             }
           }
 
@@ -206,6 +205,6 @@ public class A006019 extends MemoryFunction<Z, Integer> implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return Z.valueOf(getValue(mN));
+    return Z.valueOf(get(mN));
   }
 }

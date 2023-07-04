@@ -3,15 +3,14 @@ package irvine.oeis.a039;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.MemoryFunction;
+import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A039917 Number of orderings of 1,2,...,n^2 in an n X n matrix such that each row, each column and both diagonals are increasing.
  * @author Sean A. Irvine
  */
-public class A039917 extends MemoryFunction<List<Integer>, Z>  implements Sequence {
+public class A039917 extends MemoryFunctionSequence<List<Integer>, Z> {
 
   // After Alois P. Heinz
 
@@ -39,7 +38,7 @@ public class A039917 extends MemoryFunction<List<Integer>, Z>  implements Sequen
         // We need to make a copy to ensure the cache remains consistent
         final ArrayList<Integer> t = new ArrayList<>(l);
         t.set(i, l.get(i) - 1);
-        sum = sum.add(getValue(t));
+        sum = sum.add(get(t));
       }
     }
     return sum;
@@ -51,6 +50,6 @@ public class A039917 extends MemoryFunction<List<Integer>, Z>  implements Sequen
     for (int k = 0; k < mN; ++k) {
       lst.add(mN);
     }
-    return getValue(lst);
+    return get(lst);
   }
 }

@@ -2,15 +2,14 @@ package irvine.oeis.a037;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
-import irvine.math.MemoryFunction;
+import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A037202 Number of lines in Pratt certificate for n-th prime.
  * @author Sean A. Irvine
  */
-public class A037202 extends MemoryFunction<Long, Long> implements Sequence {
+public class A037202 extends MemoryFunctionSequence<Long, Long> {
 
   protected final Fast mPrime = new Fast();
   protected long mP = 1;
@@ -22,7 +21,7 @@ public class A037202 extends MemoryFunction<Long, Long> implements Sequence {
     }
     long sum = 1;
     for (final Z p : Jaguar.factor(key - 1).toZArray()) {
-      sum += getValue(p.longValue());
+      sum += get(p.longValue());
     }
     return sum;
   }
@@ -30,6 +29,6 @@ public class A037202 extends MemoryFunction<Long, Long> implements Sequence {
   @Override
   public Z next() {
     mP = mPrime.nextPrime(mP);
-    return Z.valueOf(getValue(mP));
+    return Z.valueOf(get(mP));
   }
 }

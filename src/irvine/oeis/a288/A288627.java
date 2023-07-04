@@ -1,5 +1,7 @@
 package irvine.oeis.a288;
 
+import java.util.Map;
+
 import irvine.math.LongUtils;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
@@ -50,7 +52,7 @@ public class A288627 extends A288620 {
     final CycleIndex res = new CycleIndex("E(" + n + ")");
     for (final MultivariateMonomial mm : ci.values()) {
       final MultivariateMonomial rmm = new MultivariateMonomial();
-      for (final Entry<Pair<String, Integer>, Z> e : mm.entrySet()) {
+      for (final Map.Entry<Pair<String, Integer>, Z> e : mm.entrySet()) {
         final int idx = e.getKey().right();
         rmm.add(idx, e.getValue().divide(idx));
       }

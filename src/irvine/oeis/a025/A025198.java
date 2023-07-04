@@ -1,15 +1,14 @@
 package irvine.oeis.a025;
 
-import irvine.math.MemoryFunction;
+import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A025198 [ (n-1)st elementary symmetric function of {sqrt(k)} ], k = 1,2,...,n.
  * @author Sean A. Irvine
  */
-public class A025198 extends MemoryFunction<Long, CR> implements Sequence {
+public class A025198 extends MemoryFunctionSequence<Long, CR> {
 
   private long mN = 0;
 
@@ -24,7 +23,7 @@ public class A025198 extends MemoryFunction<Long, CR> implements Sequence {
     }
     CR sum = CR.ZERO;
     for (long b = a; b <= max; ++b) {
-      sum = sum.add(sym(prod.multiply(getValue(b)), b + 1, max, n - 1));
+      sum = sum.add(sym(prod.multiply(get(b)), b + 1, max, n - 1));
     }
     return sum;
   }

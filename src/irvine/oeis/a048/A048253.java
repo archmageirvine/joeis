@@ -20,7 +20,7 @@ public class A048253 extends A048251 {
     int k = pos;
     while (true) {
       final Z p = mS.a(k);
-      final Pair<Integer, Integer> pair = getValue(p);
+      final Pair<Integer, Integer> pair = get(p);
       final int twos = pair.left();
       final int threes = pair.right();
       if (twos <= a && threes <= b) {

@@ -3,16 +3,15 @@ package irvine.oeis.a045;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.MemoryFunction;
+import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
  * A045846 Number of distinct ways to cut an n X n square into squares with integer sides.
  * @author Sean A. Irvine
  */
-public class A045846 extends MemoryFunction<Pair<Integer, List<Integer>>, Z> implements Sequence {
+public class A045846 extends MemoryFunctionSequence<Pair<Integer, List<Integer>>, Z> {
 
   // After Alois P. Heinz
 
@@ -54,7 +53,7 @@ public class A045846 extends MemoryFunction<Pair<Integer, List<Integer>>, Z> imp
       for (final int v : l) {
         nl.add(v - t);
       }
-      return getValue(new Pair<>(n - t, nl));
+      return get(new Pair<Integer, List<Integer>>(n - t, nl));
     }
     Z s = Z.ZERO;
     int k = -1;
@@ -70,7 +69,7 @@ public class A045846 extends MemoryFunction<Pair<Integer, List<Integer>>, Z> imp
         nl.add(1 + i - k);
       }
       nl.addAll(l.subList(i + 1, l.size()));
-      s = s.add(getValue(new Pair<>(n, nl)));
+      s = s.add(get(new Pair<Integer, List<Integer>>(n, nl)));
     }
     return s;
   }
@@ -81,6 +80,6 @@ public class A045846 extends MemoryFunction<Pair<Integer, List<Integer>>, Z> imp
     for (int k = 0; k < mN; ++k) {
       l.add(0);
     }
-    return getValue(new Pair<>(mN, l));
+    return get(new Pair<Integer, List<Integer>>(mN, l));
   }
 }

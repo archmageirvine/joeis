@@ -1,9 +1,8 @@
 package irvine.oeis.a048;
 
-import irvine.math.MemoryFunction;
+import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005105;
 import irvine.util.Pair;
 
@@ -11,7 +10,7 @@ import irvine.util.Pair;
  * A048251 a(n) is the smallest number whose sum of divisors is 6^n.
  * @author Sean A. Irvine
  */
-public class A048251 extends MemoryFunction<Z, Pair<Integer, Integer>> implements Sequence {
+public class A048251 extends MemoryFunctionSequence<Z, Pair<Integer, Integer>> {
 
   // We have products of distinct primes, so sigma(n) = product_p (p+1) where p | n.
   // Further p+1 = 2^i * 3*j, so we need only remember (i,j) for each relevant p
@@ -43,7 +42,7 @@ public class A048251 extends MemoryFunction<Z, Pair<Integer, Integer>> implement
     int k = pos;
     while (true) {
       final Z p = mS.a(k);
-      final Pair<Integer, Integer> pair = getValue(p);
+      final Pair<Integer, Integer> pair = get(p);
       final int twos = pair.left();
       final int threes = pair.right();
       if (twos <= a && threes <= b) {

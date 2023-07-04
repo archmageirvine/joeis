@@ -1,15 +1,14 @@
 package irvine.oeis.a025;
 
-import irvine.math.MemoryFunction;
+import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A025206 [ Sum{(log(j)-log(i))^2} ], 2 &lt;= i &lt; j &lt;= n.
  * @author Sean A. Irvine
  */
-public class A025206 extends MemoryFunction<Long, CR> implements Sequence {
+public class A025206 extends MemoryFunctionSequence<Long, CR> {
 
   private long mN = 2;
   private CR mSum = CR.ZERO;
@@ -21,9 +20,10 @@ public class A025206 extends MemoryFunction<Long, CR> implements Sequence {
 
   @Override
   public Z next() {
-    final CR sk = getValue(++mN);
+    final Long key = ++mN;
+    final CR sk = get(key);
     for (long j = 2; j < mN; ++j) {
-      final CR d = sk.subtract(getValue(j));
+      final CR d = sk.subtract(get(j));
       mSum = mSum.add(d.multiply(d));
     }
     return mSum.floor();

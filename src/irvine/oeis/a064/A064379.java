@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A064379.
+ * A064379 Irregular triangle whose n-th row is a list of numbers that are infinitarily relatively prime to n (n = 2, 3, ...).
  * @author Sean A. Irvine
  */
 public class A064379 extends Sequence2 {

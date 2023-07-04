@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.EgyptianFractionSequence;
 
 /**
- * A269573 Denominators of r-Egyptian fraction expansion for (1/2)^(1/3), where r = (1, 1, 1, 1, 1,...).
+ * A269573 Denominators of r-Egyptian fraction expansion for (1/2)^(1/3), where r = (1,1,1,1,1,...).
  * @author Georg Fischer
  */
 public class A269573 extends EgyptianFractionSequence {

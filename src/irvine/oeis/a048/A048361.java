@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.a000.A000217;
 
 /**
- * A048361 a(n) is the index of the smallest triangular number containing exactly n 6&apos;s.
+ * A048361 a(n) is the index of the smallest triangular number containing exactly n 6's.
  * @author Georg Fischer
  */
 public class A048361 extends A048345 {

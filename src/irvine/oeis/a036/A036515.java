@@ -5,7 +5,7 @@ package irvine.oeis.a036;
 import irvine.oeis.a000.A000290;
 
 /**
- * A036515 Smallest square containing exactly n 8&apos;s.
+ * A036515 Smallest square containing exactly n 8's.
  * @author Georg Fischer
  */
 public class A036515 extends A036508 {

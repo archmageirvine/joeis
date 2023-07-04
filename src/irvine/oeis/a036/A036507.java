@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A036507 Smallest square containing exactly n 0&apos;s.
+ * A036507 Smallest square containing exactly n 0's.
  * @author Georg Fischer
  */
 public class A036507 extends HolonomicRecurrence {

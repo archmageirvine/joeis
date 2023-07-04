@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.a000.A000217;
 
 /**
- * A048359 a(n) is the index of the smallest triangular number containing exactly n 4&apos;s.
+ * A048359 a(n) is the index of the smallest triangular number containing exactly n 4's.
  * @author Georg Fischer
  */
 public class A048359 extends A048345 {

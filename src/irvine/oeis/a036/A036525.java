@@ -5,7 +5,7 @@ package irvine.oeis.a036;
 import irvine.oeis.a000.A000217;
 
 /**
- * A036525 Smallest triangular number containing exactly n 8&apos;s.
+ * A036525 Smallest triangular number containing exactly n 8's.
  * @author Georg Fischer
  */
 public class A036525 extends A036508 {

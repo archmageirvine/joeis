@@ -5,7 +5,7 @@ package irvine.oeis.a036;
 import irvine.oeis.a000.A000578;
 
 /**
- * A036535 Smallest cube containing exactly n 8&apos;s.
+ * A036535 Smallest cube containing exactly n 8's.
  * @author Georg Fischer
  */
 public class A036535 extends A036508 {

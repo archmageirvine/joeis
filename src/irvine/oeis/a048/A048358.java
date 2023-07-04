@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.a000.A000217;
 
 /**
- * A048358 a(n) is the index of the smallest triangular number containing exactly n 3&apos;s.
+ * A048358 a(n) is the index of the smallest triangular number containing exactly n 3's.
  * @author Georg Fischer
  */
 public class A048358 extends A048345 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A064379.
+ * A064381 Number of subsets of {2,...,n} such that the product of their elements is congruent to 0 (mod n+1).
  * @author Sean A. Irvine
  */
 public class A064381 extends MemorySequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a036;
 import irvine.oeis.a000.A000578;
 
 /**
- * A036531 Smallest cube containing exactly n 4&apos;s.
+ * A036531 Smallest cube containing exactly n 4's.
  * @author Georg Fischer
  */
 public class A036531 extends A036508 {

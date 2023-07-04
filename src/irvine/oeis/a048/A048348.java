@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.a000.A000290;
 
 /**
- * A048348 a(n)^2 is the smallest square containing exactly n 3&apos;s.
+ * A048348 a(n)^2 is the smallest square containing exactly n 3's.
  * @author Georg Fischer
  */
 public class A048348 extends A048345 {

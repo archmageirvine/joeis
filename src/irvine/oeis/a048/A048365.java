@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.a000.A000578;
 
 /**
- * A048365 a(n)^3 is smallest cube containing exactly n 0&apos;s.
+ * A048365 a(n)^3 is smallest cube containing exactly n 0's.
  * @author Georg Fischer
  */
 public class A048365 extends A048345 {

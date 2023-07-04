@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A064379.
+ * A064380 Number of numbers less than n that are infinitarily relatively prime to n; the infinitary Euler phi function.
  * @author Sean A. Irvine
  */
 public class A064380 extends Sequence2 {

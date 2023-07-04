@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.a000.A000290;
 
 /**
- * A048354 a(n)^2 is the smallest square containing exactly n 9&apos;s.
+ * A048354 a(n)^2 is the smallest square containing exactly n 9's.
  * @author Georg Fischer
  */
 public class A048354 extends A048345 {

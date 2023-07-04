@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.a000.A000290;
 
 /**
- * A048352 a(n)^2 is the smallest square containing exactly n 7&apos;s.
+ * A048352 a(n)^2 is the smallest square containing exactly n 7's.
  * @author Georg Fischer
  */
 public class A048352 extends A048345 {

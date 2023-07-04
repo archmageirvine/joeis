@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A210286 Number of 2 X 2 matrices with all elements in {0, 1,...,n} and determinant = trace.
+ * A210286 Number of 2 X 2 matrices with all elements in {0,1,...,n} and determinant = trace.
  * @author Georg Fischer
  */
 public class A210286 extends AbstractSequence {

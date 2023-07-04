@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.a000.A000290;
 
 /**
- * A048346 a(n)^2 is the smallest square containing exactly n 1&apos;s in its decimal notation.
+ * A048346 a(n)^2 is the smallest square containing exactly n 1's in its decimal notation.
  * @author Georg Fischer
  */
 public class A048346 extends A048345 {

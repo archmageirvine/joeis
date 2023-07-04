@@ -1,19 +1,14 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A005132 Recam\u00e1n's sequence (or Recaman's sequence): a(0) = 0; for n &gt; 0, a(n) = a(n-1) - n if nonnegative and not already in the sequence, otherwise a(n) = a(n-1) + n.
  * @author Sean A. Irvine
  */
-public class A005132 extends AbstractSequence {
-
-  /** Construct the sequence. */
-  public A005132() {
-    super(0);
-  }
+public class A005132 extends Sequence0 {
 
   private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
   private long mPrev = 0;

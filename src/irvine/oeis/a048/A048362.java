@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.a000.A000217;
 
 /**
- * A048362 a(n) is the index of the smallest triangular number containing exactly n 7&apos;s.
+ * A048362 a(n) is the index of the smallest triangular number containing exactly n 7's.
  * @author Georg Fischer
  */
 public class A048362 extends A048345 {

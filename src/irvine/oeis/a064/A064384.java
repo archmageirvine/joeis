@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
 /**
- * A064379.
+ * A064384 Primes p such that p divides 0!-1!+2!-3!+...+(-1)^{p-1}(p-1)!.
  * @author Sean A. Irvine
  */
 public class A064384 extends A000040 {

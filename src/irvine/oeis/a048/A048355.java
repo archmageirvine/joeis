@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A048355 a(n) is the index of the smallest triangular number containing exactly n 0&apos;s.
+ * A048355 a(n) is the index of the smallest triangular number containing exactly n 0's.
  * @author Georg Fischer
  */
 public class A048355 extends GeneratingFunctionSequence {

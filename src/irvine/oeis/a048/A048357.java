@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.a000.A000217;
 
 /**
- * A048357 a(n) is the index of the smallest triangular number containing exactly n 2&apos;s.
+ * A048357 a(n) is the index of the smallest triangular number containing exactly n 2's.
  * @author Georg Fischer
  */
 public class A048357 extends A048345 {

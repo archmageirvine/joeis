@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.math.z.Z;
 
 /**
- * A180299 Number of arrangements of n indistinguishable balls in n boxes with the maximum number of balls in any box equal to n-9
+ * A180299 Number of arrangements of n indistinguishable balls in n boxes with the maximum number of balls in any box equal to n-9.
  * @author Georg Fischer
  */
 public class A180299 extends A180281 {

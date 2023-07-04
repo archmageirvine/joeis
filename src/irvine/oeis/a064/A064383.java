@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064379.
+ * A064383 Integers n &gt;= 1 such that n divides 0!-1!+2!-3!+4!-...+(-1)^{n-1}(n-1)!.
  * @author Sean A. Irvine
  */
 public class A064383 extends Sequence1 {

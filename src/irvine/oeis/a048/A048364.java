@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.a000.A000217;
 
 /**
- * A048364 a(n) is the index of the smallest triangular number containing exactly n 9&apos;s.
+ * A048364 a(n) is the index of the smallest triangular number containing exactly n 9's.
  * @author Georg Fischer
  */
 public class A048364 extends A048345 {

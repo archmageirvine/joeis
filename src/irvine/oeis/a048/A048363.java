@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.a000.A000217;
 
 /**
- * A048363 a(n) is the index of the smallest triangular number containing exactly n 8&apos;s.
+ * A048363 a(n) is the index of the smallest triangular number containing exactly n 8's.
  * @author Georg Fischer
  */
 public class A048363 extends A048345 {

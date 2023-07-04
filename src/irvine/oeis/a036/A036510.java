@@ -5,7 +5,7 @@ package irvine.oeis.a036;
 import irvine.oeis.a000.A000290;
 
 /**
- * A036510 Smallest square containing exactly n 3&apos;s.
+ * A036510 Smallest square containing exactly n 3's.
  * @author Georg Fischer
  */
 public class A036510 extends A036508 {

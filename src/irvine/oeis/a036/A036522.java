@@ -5,7 +5,7 @@ package irvine.oeis.a036;
 import irvine.oeis.a000.A000217;
 
 /**
- * A036522 Smallest triangular number containing exactly n 5&apos;s.
+ * A036522 Smallest triangular number containing exactly n 5's.
  * @author Georg Fischer
  */
 public class A036522 extends A036508 {

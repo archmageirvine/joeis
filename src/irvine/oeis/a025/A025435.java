@@ -1,15 +1,14 @@
 package irvine.oeis.a025;
 
 import irvine.math.IntegerUtils;
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A025435 Number of partitions of n into 2 distinct squares.
  * @author Sean A. Irvine
  */
-public class A025435 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A025435 extends MemoryFunctionInt3Sequence<Z> {
 
   private int mN = -1;
 

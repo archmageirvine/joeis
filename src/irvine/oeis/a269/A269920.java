@@ -1,14 +1,13 @@
 package irvine.oeis.a269;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A269920 Triangle read by rows: T(n,f) is the number of rooted maps with n edges and f faces on an orientable surface of genus 0.
  * @author Sean A. Irvine
  */
-public class A269920 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A269920 extends MemoryFunctionInt3Sequence<Z> {
 
   @Override
   protected Z compute(final int n, final int g, final int f) {

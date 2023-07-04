@@ -1,14 +1,13 @@
 package irvine.oeis.a025;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A025446 Number of partitions of n into 2 nonnegative cubes.
  * @author Sean A. Irvine
  */
-public class A025446 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A025446 extends MemoryFunctionInt3Sequence<Z> {
 
   private int mN = -1;
 

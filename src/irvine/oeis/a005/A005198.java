@@ -3,17 +3,17 @@ package irvine.oeis.a005;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000081;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A005198 a(n) is the number of forests with n (unlabeled) nodes in which each component tree is planted, that is, is a rooted tree in which the root has degree 1.
  * @author Sean A. Irvine
  */
-public class A005198 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A005198 extends MemoryFunctionInt3Sequence<Z> {
 
   private final Sequence mA81 = new A000081();
   private final List<Z> mT = new ArrayList<>();

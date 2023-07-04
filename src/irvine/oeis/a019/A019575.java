@@ -1,15 +1,14 @@
 package irvine.oeis.a019;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A019575 Place n distinguishable balls in n boxes (in n^n ways); let T(n,k) = number of ways that the maximum in any box is k, for 1 &lt;= k &lt;= n; sequence gives triangle of numbers T(n,k).
  * @author Sean A. Irvine
  */
-public class A019575 extends MemoryFunctionInt3<Q> implements Sequence {
+public class A019575 extends MemoryFunctionInt3Sequence<Q> {
 
   private int mN = 0;
   private Z mF = Z.ONE;

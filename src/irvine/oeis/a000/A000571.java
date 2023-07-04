@@ -1,14 +1,13 @@
 package irvine.oeis.a000;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A000571 Number of different score sequences that are possible in an n-team round-robin tournament.
  * @author Sean A. Irvine
  */
-public class A000571 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A000571 extends MemoryFunctionInt3Sequence<Z> {
 
   @Override
   protected Z compute(final int n, final int t, final int e) {

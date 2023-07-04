@@ -1,15 +1,14 @@
 package irvine.oeis.a007;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A007178 Number of ways to write 1 as ordered sum of n powers of 1/2, allowing repeats.
  * @author Sean A. Irvine
  */
-public class A007178 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A007178 extends MemoryFunctionInt3Sequence<Z> {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

@@ -1,15 +1,14 @@
 package irvine.oeis.a035;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A035341 Sum of ordered factorizations over all prime signatures with n factors.
  * @author Sean A. Irvine
  */
-public class A035341 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A035341 extends MemoryFunctionInt3Sequence<Z> {
 
   // After Alois P. Heinz
 

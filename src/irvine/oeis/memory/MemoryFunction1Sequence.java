@@ -24,7 +24,6 @@ public abstract class MemoryFunction1Sequence<R> extends AbstractSequence {
 
   /**
    * Create a new memory sequence with offset 0.
-   * @param offset the offset
    */
   protected MemoryFunction1Sequence() {
     this(DEFOFF);

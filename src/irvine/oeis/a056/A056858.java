@@ -1,17 +1,16 @@
 package irvine.oeis.a056;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A056858 Triangle of number of rises in restricted growth strings (RGS) for the set partitions of n.
  * @author Sean A. Irvine
  */
-public class A056858 extends MemoryFunctionInt3<Polynomial<Z>> implements Sequence {
+public class A056858 extends MemoryFunctionInt3Sequence<Polynomial<Z>> {
 
   // After Alois P. Heinz
 

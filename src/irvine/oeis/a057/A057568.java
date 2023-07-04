@@ -2,15 +2,14 @@ package irvine.oeis.a057;
 
 import irvine.factor.prime.Fast;
 import irvine.math.IntegerUtils;
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A057568 Number of partitions of n where n divides the product of the parts.
  * @author Sean A. Irvine
  */
-public class A057568 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A057568 extends MemoryFunctionInt3Sequence<Z> {
 
   // After Alois P. Heinz
 

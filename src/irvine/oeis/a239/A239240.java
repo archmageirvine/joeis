@@ -1,14 +1,13 @@
 package irvine.oeis.a239;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A239240 Number of partitions of n into distinct parts for which (number of odd parts) &lt;= (number of even parts).
  * @author Georg Fischer
  */
-public class A239240 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A239240 extends MemoryFunctionInt3Sequence<Z> {
 
   protected int mCond;
   protected int mN;

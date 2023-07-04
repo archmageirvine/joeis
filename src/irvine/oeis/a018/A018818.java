@@ -1,14 +1,13 @@
 package irvine.oeis.a018;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A018818 Number of partitions of n into divisors of n.
  * @author Sean A. Irvine
  */
-public class A018818 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A018818 extends MemoryFunctionInt3Sequence<Z> {
 
   private int mN = 0;
 

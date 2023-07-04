@@ -1,14 +1,13 @@
 package irvine.oeis.a025;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A025600 Number of n-move knight paths on 8 X 8 board from given corner to same corner.
  * @author Sean A. Irvine
  */
-public class A025600 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A025600 extends MemoryFunctionInt3Sequence<Z> {
 
   // After Alois P. Heinz
 

@@ -3,17 +3,16 @@ package irvine.oeis.a053;
 import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A053195 Number of level permutations of degree n.
  * @author Sean A. Irvine
  */
-public class A053195 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A053195 extends MemoryFunctionInt3Sequence<Z> {
 
   // After Alois P. Heinz
 

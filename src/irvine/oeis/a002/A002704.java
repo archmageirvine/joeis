@@ -1,16 +1,15 @@
 package irvine.oeis.a002;
 
 import irvine.math.IntegerUtils;
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A002704 Number of sets with a congruence property.
  * @author Sean A. Irvine
  */
-public class A002704 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A002704 extends MemoryFunctionInt3Sequence<Z> {
 
   // After R. J. Mathar
 

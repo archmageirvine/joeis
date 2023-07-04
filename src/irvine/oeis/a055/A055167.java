@@ -1,14 +1,13 @@
 package irvine.oeis.a055;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A055167 Number of optimal binary prefix-free codes with n words all ending in 1.
  * @author Sean A. Irvine
  */
-public class A055167 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A055167 extends MemoryFunctionInt3Sequence<Z> {
 
   private int mN = 0;
 

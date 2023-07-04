@@ -1,15 +1,14 @@
 package irvine.oeis.a059;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A059618 Number of strongly unimodal partitions of n (strongly unimodal means strictly increasing then strictly decreasing).
  * @author Sean A. Irvine
  */
-public class A059618 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A059618 extends MemoryFunctionInt3Sequence<Z> {
 
   // After Alois P. Heinz
 

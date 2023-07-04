@@ -1,16 +1,15 @@
 package irvine.oeis.a032;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A032011 Partition n labeled elements into sets of different sizes and order the sets.
  * @author Sean A. Irvine
  */
-public class A032011 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A032011 extends MemoryFunctionInt3Sequence<Z> {
 
   // After Alois P. Heinz
 

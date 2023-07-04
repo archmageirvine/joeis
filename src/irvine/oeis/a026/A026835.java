@@ -1,14 +1,13 @@
 package irvine.oeis.a026;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A026835 Triangular array read by rows: T(n,k) = number of partitions of n into distinct parts in which every part is &gt;=k, for k=1,2,...,n.
  * @author Sean A. Irvine
  */
-public class A026835 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A026835 extends MemoryFunctionInt3Sequence<Z> {
 
   private int mN = 0;
   private int mM = 0;

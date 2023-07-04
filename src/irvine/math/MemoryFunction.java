@@ -32,5 +32,3 @@ public abstract class MemoryFunction<S, R> extends HashMap<S, R> {
     return r;
   }
 }
-
-

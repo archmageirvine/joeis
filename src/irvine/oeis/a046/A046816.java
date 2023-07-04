@@ -1,14 +1,13 @@
 package irvine.oeis.a046;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A046816 Pascal's tetrahedron: entries in 3-dimensional version of Pascal triangle, or trinomial coefficients.
  * @author Sean A. Irvine
  */
-public class A046816 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A046816 extends MemoryFunctionInt3Sequence<Z> {
 
   // After Alois P. Heinz
 

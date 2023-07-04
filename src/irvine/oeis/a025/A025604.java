@@ -1,14 +1,13 @@
 package irvine.oeis.a025;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A025604 Number of n-move queen paths on 8x8 board from given corner to same corner.
  * @author Sean A. Irvine
  */
-public class A025604 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A025604 extends MemoryFunctionInt3Sequence<Z> {
 
   // After Alois P. Heinz
 

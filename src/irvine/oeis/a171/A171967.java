@@ -1,14 +1,13 @@
 package irvine.oeis.a171;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A171967 Number of partitions of n with distinct numbers of odd and even parts.
  * @author Sean A. Irvine
  */
-public class A171967 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A171967 extends MemoryFunctionInt3Sequence<Z> {
 
   // After Alois P. Heinz
 

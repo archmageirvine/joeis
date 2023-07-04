@@ -1,16 +1,15 @@
 package irvine.oeis.a053;
 
 import irvine.math.IntegerUtils;
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A053197 Number of level partitions of n.
  * @author Sean A. Irvine
  */
-public class A053197 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A053197 extends MemoryFunctionInt3Sequence<Z> {
 
   // After Alois P. Heinz
 

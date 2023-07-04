@@ -1,14 +1,13 @@
 package irvine.oeis.a224;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A224956 Number of partitions of n where the difference between consecutive parts is at most 2.
  * @author Georg Fischer
  */
-public class A224956 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A224956 extends MemoryFunctionInt3Sequence<Z> {
 
   private int mN;
   private final int mDiff;

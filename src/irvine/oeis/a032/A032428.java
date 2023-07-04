@@ -1,14 +1,13 @@
 package irvine.oeis.a032;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A032428 Coefficients of Jacobi elliptic function c(5,m).
  * @author Sean A. Irvine
  */
-public class A032428 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A032428 extends MemoryFunctionInt3Sequence<Z> {
 
   // Based on (2) in Dominique Dumont
   // A Combinatorial Interpretation for the Schett Recurrence on the Jacobian Elliptic Functions

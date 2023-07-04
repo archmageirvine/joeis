@@ -1,17 +1,16 @@
 package irvine.oeis.a050;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A050314 Triangle: a(n,k) = number of partitions of n whose xor-sum is k.
  * @author Sean A. Irvine
  */
-public class A050314 extends MemoryFunctionInt3<Polynomial<Z>> implements Sequence {
+public class A050314 extends MemoryFunctionInt3Sequence<Polynomial<Z>> {
 
   // After Alois P. Heinz
 

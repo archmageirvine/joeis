@@ -1,14 +1,13 @@
 package irvine.oeis.a027;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A027194 Number of partitions of n into an even number of parts, the least being 2; also, a(n+2) = number of partitions of n into an odd number of parts, each &gt;=2.
  * @author Sean A. Irvine
  */
-public class A027194 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A027194 extends MemoryFunctionInt3Sequence<Z> {
 
   // After Alois P. Heinz
 

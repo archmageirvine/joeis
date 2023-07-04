@@ -1,15 +1,14 @@
 package irvine.oeis.a049;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A049463 Number of basic interval orders of length n.
  * @author Sean A. Irvine
  */
-public class A049463 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A049463 extends MemoryFunctionInt3Sequence<Z> {
 
   private int mN = 0;
 

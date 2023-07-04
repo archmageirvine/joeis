@@ -1,14 +1,13 @@
 package irvine.oeis.a039;
 
-import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunctionInt3Sequence;
 
 /**
  * A039621 Triangle of Lehmer-Comtet numbers of 2nd kind.
  * @author Sean A. Irvine
  */
-public class A039621 extends MemoryFunctionInt3<Z> implements Sequence {
+public class A039621 extends MemoryFunctionInt3Sequence<Z> {
 
   // After Vladimir Kruchinin
 

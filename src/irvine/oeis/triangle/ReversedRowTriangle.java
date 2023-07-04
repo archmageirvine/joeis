@@ -3,7 +3,6 @@ package irvine.oeis.triangle;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceWithOffset;
 
 /**
  * A sequence reversing the order of the rows of a regular triangle.
@@ -18,7 +17,7 @@ public class ReversedRowTriangle extends AbstractSequence {
 
   /** Construct the sequence. */
   public ReversedRowTriangle(final Sequence seq) {
-    super(seq instanceof SequenceWithOffset ? ((SequenceWithOffset) seq).getOffset() : 0);
+    super(seq.getOffset());
     mSeq = seq;
   }
 

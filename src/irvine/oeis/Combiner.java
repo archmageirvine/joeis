@@ -54,12 +54,7 @@ public class Combiner extends AbstractSequence {
    * @param op combination operation
    */
   public Combiner(final Sequence a, final Sequence b, final BiFunction<Z, Z, Z> op) {
-    this(a instanceof SequenceWithOffset
-        ? ((SequenceWithOffset) a).getOffset()
-        : b instanceof SequenceWithOffset
-        ? ((SequenceWithOffset) b).getOffset()
-        : 0,
-      a, b, op);
+    this(a.getOffset(), a, b, op);
   }
 
   @Override

@@ -48,7 +48,7 @@ public class FilterSequence extends AbstractSequence {
    * @param predicate combination operation
    */
   public FilterSequence(final Sequence seq, final Predicate<Z> predicate) {
-    this(seq instanceof SequenceWithOffset ? ((SequenceWithOffset) seq).getOffset() : 1, seq, predicate);
+    this(seq.getOffset(), seq, predicate);
   }
 
   @Override

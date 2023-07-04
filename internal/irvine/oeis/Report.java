@@ -132,16 +132,13 @@ public final class Report {
         final long constructTime = System.currentTimeMillis() - t;
         slowest.add(constructTime, aNumber);
         ++total;
-        if (seq instanceof SequenceWithOffset) {
-          ++withOffset;
-          if (offsets[a] != null) {
-            // Check if offset matches expected information
-            final int claimedOffset = ((SequenceWithOffset) seq).getOffset();
-            if (claimedOffset == offsets[a].mOffset) {
-              ++hasCorrectOffset;
-            } else {
-              failedOffsetChecks.add(aNumber + " " + claimedOffset + " -> " + offsets[a].mOffset + "\t" + offsets[a].mLabel);
-            }
+        if (offsets[a] != null) {
+          // Check if offset matches expected information
+          final int claimedOffset = seq.getOffset();
+          if (claimedOffset == offsets[a].mOffset) {
+            ++hasCorrectOffset;
+          } else {
+            failedOffsetChecks.add(aNumber + " " + claimedOffset + " -> " + offsets[a].mOffset + "\t" + offsets[a].mLabel);
           }
         }
         if (seq instanceof DeadSequence) {

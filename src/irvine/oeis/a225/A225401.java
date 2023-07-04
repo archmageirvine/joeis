@@ -2,7 +2,7 @@ package irvine.oeis.a225;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.Sequence;
 
 /**
  * A225401 10-adic integer x such that x^3 = -7/9.
@@ -109,7 +109,7 @@ public class A225401 extends AbstractSequence {
     } catch (final RuntimeException exc) {
       // ignored
     }
-    final SequenceWithOffset seq = new A225401(0, b1, pm1, pm2, exp, pa, base);
+    final Sequence seq = new A225401(0, b1, pm1, pm2, exp, pa, base);
     for (int ix = 0; ix < 32; ++ix) {
       System.out.print(seq.next() + ", ");
     }

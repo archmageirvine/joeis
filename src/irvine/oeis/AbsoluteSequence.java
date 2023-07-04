@@ -15,7 +15,7 @@ public class AbsoluteSequence extends AbstractSequence {
    * @param seq underlying sequence
    */
   public AbsoluteSequence(final Sequence seq) {
-    super(seq instanceof SequenceWithOffset ? ((SequenceWithOffset) seq).getOffset() : 1);
+    super(seq.getOffset());
     mSeq = seq;
   }
 

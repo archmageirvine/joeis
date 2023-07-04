@@ -4,7 +4,7 @@ package irvine.oeis;
  * A base class for a sequence that deals with storing the sequence offset.
  * @author Sean A. Irvine
  */
-public abstract class AbstractSequence implements SequenceWithOffset {
+public abstract class AbstractSequence implements Sequence {
 
   private int mOffset;
 

@@ -115,10 +115,7 @@ public final class SequenceFactory {
    * @return the offset
    */
   public static int getOffset(final Sequence seq) {
-    if (seq instanceof SequenceWithOffset) {
-      return ((SequenceWithOffset) seq).getOffset();
-    }
-    return 1; // Don't know the offset, assume 1
+    return seq.getOffset();
   }
 
   /**

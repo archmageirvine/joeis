@@ -53,15 +53,12 @@ public final class OffsetInspector {
               final int offset = Integer.parseInt(parms[1]);
               final String superClass = parms.length > 2 ? parms[2] : "";
               final Sequence seq = SequenceFactory.sequence(aNumber);
-              if (seq instanceof SequenceWithOffset) {
-                final SequenceWithOffset seqWO = (SequenceWithOffset) seq;
-                final int seqOffset = seqWO.getOffset();
-                if (seqOffset == offset) {
-                  ++pass;
-                } else {
-                  ++fail;
-                  System.out.println(aNumber + "\t" + seqOffset + " -> " + offset + "\t" + superClass);
-                }
+              final int seqOffset = seq.getOffset();
+              if (seqOffset == offset) {
+                ++pass;
+              } else {
+                ++fail;
+                System.out.println(aNumber + "\t" + seqOffset + " -> " + offset + "\t" + superClass);
               }
             } catch (final NumberFormatException e) {
               System.out.println(aNumber + " skipped because offset " + parms[1] + " is out of range");

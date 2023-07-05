@@ -10,14 +10,14 @@ import irvine.oeis.Sequence0;
  */
 public class A324442 extends Sequence0 {
 
-  private int mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {
     ++mN;
     Z prod = Z.ONE;
-    for (int i = 1; i <= mN; ++i) {
-      for (int j = 1; j <= mN; ++j) {
+    for (long i = 1; i <= mN; ++i) {
+      for (long j = 1; j <= mN; ++j) {
         prod = prod.multiply(Z.valueOf(i * i + j));
       }
     }

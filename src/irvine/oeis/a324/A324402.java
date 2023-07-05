@@ -10,7 +10,7 @@ import irvine.oeis.Sequence0;
  */
 public class A324402 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {
@@ -18,7 +18,7 @@ public class A324402 extends Sequence0 {
     Z prod = Z.ONE;
     for (int i = 1; i <= mN; ++i) {
       for (int j = 1; j <= mN; ++j) {
-        prod = prod.multiply(Z.valueOf(2 * i + j));
+        prod = prod.multiply(Z.valueOf(2L * i + j));
       }
     }
     return prod;

@@ -9,15 +9,15 @@ import irvine.oeis.Sequence0;
  */
 public class A324425 extends Sequence0 {
 
-  private int mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {
     ++mN;
     Z prod = Z.ONE;
-    for (int k1 = 1; k1 <= mN; ++k1) {
-      for (int k2 = 1; k2 <= mN; ++k2) {
-        for (int k3 = 1; k3 <= mN; ++k3) {
+    for (long k1 = 1; k1 <= mN; ++k1) {
+      for (long k2 = 1; k2 <= mN; ++k2) {
+        for (long k3 = 1; k3 <= mN; ++k3) {
           prod = prod.multiply(Z.valueOf(k1 * k1).add(k2 * k2).add(k3 * k3));
         }
       }

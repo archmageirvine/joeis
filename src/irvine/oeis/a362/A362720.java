@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 public class A362720 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
-  private Z mB = Z.ZERO;
+  private Z mB = Z.ONE;
 
   @Override
   public Z next() {

@@ -1,7 +1,6 @@
 package irvine.oeis.transform;
 
 import irvine.math.q.Q;
-import irvine.oeis.ConstantFactorSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
 
@@ -18,7 +17,7 @@ public class RootSequence extends EulerTransform {
    * @param exponent take the sequence to this power
    */
   public RootSequence(final int offset, final Sequence seq, final Q exponent) {
-    super(offset, new ConstantFactorSequence(new InverseEulerTransform(seq), exponent), 1);
+    super(offset, new SimpleTransformSequence(new InverseEulerTransform(seq), k -> k.multiply(exponent.num()).divide(exponent.den())), 1);
   }
 
   /**

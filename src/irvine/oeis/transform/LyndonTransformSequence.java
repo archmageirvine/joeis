@@ -19,7 +19,7 @@ public class LyndonTransformSequence extends InverseEulerTransform {
    * @param skip number of terms to skip
    */
   public LyndonTransformSequence(final Sequence seq, final int skip) {
-    super(new NegationTransformSequence(seq), skip);
+    super(new SimpleTransformSequence(seq, Z::negate), skip);
   }
 
   @Override

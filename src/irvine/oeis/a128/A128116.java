@@ -1,8 +1,8 @@
 package irvine.oeis.a128;
-// manually triprod at 2021-10-10 18:53
 
-import irvine.oeis.AbsoluteSequence;
+import irvine.math.z.Z;
 import irvine.oeis.a122.A122432;
+import irvine.oeis.transform.SimpleTransformSequence;
 import irvine.oeis.triangle.Product;
 
 /**
@@ -13,6 +13,6 @@ public class A128116 extends Product {
 
   /** Construct the sequence. */
   public A128116() {
-    super(1, new A128064(), new AbsoluteSequence(new A122432()));
+    super(1, new A128064(), new SimpleTransformSequence(new A122432(), Z::abs));
   }
 }

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirichletInverseSequence;
 import irvine.oeis.a252.A252748;
-import irvine.oeis.transform.NegationTransformSequence;
+import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
  * A346248 Dirichlet inverse of -A252748, 2*n - A003961(n).
@@ -13,7 +13,7 @@ import irvine.oeis.transform.NegationTransformSequence;
  */
 public class A346248 extends AbstractSequence {
 
-  private final DirichletInverseSequence mSeq = new DirichletInverseSequence(new NegationTransformSequence(new A252748()));
+  private final DirichletInverseSequence mSeq = new DirichletInverseSequence(new SimpleTransformSequence(new A252748(), Z::negate));
 
   /** Construct the sequence. */
   public A346248() {

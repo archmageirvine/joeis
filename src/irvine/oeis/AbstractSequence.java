@@ -8,6 +8,10 @@ public abstract class AbstractSequence implements Sequence {
 
   private int mOffset;
 
+  /**
+   * Construct the sequence with the specified offset.
+   * @param offset OEIS offset
+   */
   protected AbstractSequence(final int offset) {
     mOffset = offset;
   }

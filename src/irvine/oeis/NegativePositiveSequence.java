@@ -24,11 +24,11 @@ public class NegativePositiveSequence extends AbstractSequence {
   protected HashMap<Integer, Integer> mDMap;
 
   /**
-   * No-args constructor.
+   * Construct the sequence.
    */
   public NegativePositiveSequence() {
     this(1, 1, "ak", 1, 0);
-  } // no-args constructor
+  }
 
   /**
    * Constructor with parameters.

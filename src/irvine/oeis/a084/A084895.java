@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A084895 Decimal expansion of arithmetic-geometric mean of (1,3).
+ * A084895 Decimal expansion of agm(1, 3), the arithmetic-geometric mean of 1 and 3.
  * Formula: agm(1, 3)
  * @author Georg Fischer
  */

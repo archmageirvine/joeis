@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A064283 Least number which may be expressed as the sum of a prime number (A000040) and a nonzero square (A000290) in just n different ways.
+ * A064283 Least number which may be expressed as the sum of a prime number and a nonzero square in exactly n different ways.
  * @author Sean A. Irvine
  */
 public class A064283 extends Sequence1 {

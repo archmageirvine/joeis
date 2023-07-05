@@ -6,7 +6,7 @@ import irvine.oeis.a037.A037077;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A052110 The decimal expansion of c^c^c^...  where c is the constant defined in A037077.
+ * A052110 Decimal expansion of c^c^c^...  where c is the constant defined in A037077.
  * @author Sean A. Irvine
  */
 public class A052110 extends DecimalExpansionSequence {

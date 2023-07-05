@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A131298 A difference of Fibonacci and Padovan numbers.
+ * A131298 Diagonal sums of A104730.
  * @author Sean A. Irvine
  */
 public class A131298 extends LinearRecurrence {

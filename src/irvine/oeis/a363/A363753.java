@@ -4,7 +4,7 @@ package irvine.oeis.a363;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A363753 allocated for Hans J. H. Tuenter.
+ * A363753 a(n) = Sum_{k=0..n} (-1)^k*F(k-1)*F(k)*F(k+1)/2, where F(n) is the Fibonacci number A000045(n).
  * @author Georg Fischer
  */
 public class A363753 extends GeneratingFunctionSequence {

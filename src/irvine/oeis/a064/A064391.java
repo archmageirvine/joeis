@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A064390.
+ * A064391 Triangle T(n,k) with zeroth row {1} and row n for n &gt;= 1 giving number of partitions of n with crank k, for -n &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A064391 extends Sequence0 {

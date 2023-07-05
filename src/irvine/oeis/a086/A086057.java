@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 /**
- * A086057 Decimal expansion of Masser-Gramain constant.
+ * A086057 Decimal expansion of a constant related to a conjectured value of the Masser-Gramain constant.
  * Formula: <code>Pi/4*(2*gamma+2*log(2)+3*log(Pi)-4*lnGamma(1/4)))</code>
  * @author Georg Fischer
  */

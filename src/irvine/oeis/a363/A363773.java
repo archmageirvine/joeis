@@ -4,7 +4,7 @@ package irvine.oeis.a363;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A363773 allocated for Evangelos G. Filothodoros.
+ * A363773 a(n) = (4^(n+1) + (-1)^n + 5)/10.
  * @author Georg Fischer
  */
 public class A363773 extends GeneratingFunctionSequence {

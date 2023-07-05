@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A193211 The decimal expansion of the value of r that maximizes the Brahmagupta expression Sqrt((-1+r+r^2+r^3)(1-r+r^2+r^3)(1+r-r^2+r^3)(1+r+r^2-r^3))/4.
+ * A193211 Decimal expansion of the value of r that maximizes the Brahmagupta expression sqrt((-1+r+r^2+r^3)*(1-r+r^2+r^3)*(1+r-r^2+r^3)*(1+r+r^2-r^3))/4.
  * Equation; 5*x^8+2*x^6+18*x^4+x^2+1-3*x^10
  * @author Georg Fischer
  */

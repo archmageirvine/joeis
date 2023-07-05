@@ -5,7 +5,7 @@ import irvine.oeis.a077.A077605;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A101688 Once 1, once 0, repeat, twice 1, twice 0, repeat, thrice 1, thrice 0... and so on.
+ * A101688 Once 1, once 0, repeat, twice 1, twice 0, repeat, thrice 1, thrice 0, ... and so on.
  * @author Georg Fischer
  */
 public class A101688 extends Transpose {

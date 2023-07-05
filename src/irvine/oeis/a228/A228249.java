@@ -5,7 +5,7 @@ import irvine.oeis.a003.A003849;
 import irvine.oeis.cons.BinaryToDecimalExpansionSequence;
 
 /**
- * A228249 The decimal expansion of the infinite Fibonacci word, interpreted as a binary expansion.
+ * A228249 Decimal expansion of the infinite Fibonacci word, interpreted as a binary expansion.
  * @author Georg Fischer
  */
 public class A228249 extends BinaryToDecimalExpansionSequence {

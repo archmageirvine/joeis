@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002808;
 
 /**
- * A035140 Digits of juxtaposition of prime factors of n appear also in n.
+ * A035140 Digits of juxtaposition of prime factors of composite n appear also in n.
  * @author Sean A. Irvine
  */
 public class A035140 extends A002808 {

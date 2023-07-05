@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A226278 The decimal expansion of the number x &gt; 1 defined by 2*log(x) = x-1.
+ * A226278 Decimal expansion of the number x &gt; 1 defined by 2*log(x) = x - 1.
  * Equation; 2*log(x)-x+1
  * @author Georg Fischer
  */

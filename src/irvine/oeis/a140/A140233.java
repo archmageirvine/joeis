@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A140233 a(n)=Floor[n*e^((1+sqrt(5))/2)] = floor[n*A139341].
+ * A140233 a(n) = floor(n*e^((1+sqrt(5))/2)) = floor(n*A139341(n)).
  * @author Georg Fischer
  */
 public class A140233 extends FloorSequence {

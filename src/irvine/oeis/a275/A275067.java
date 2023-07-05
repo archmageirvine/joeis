@@ -5,7 +5,7 @@ package irvine.oeis.a275;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A275067 Numbers n such that 7*10^n + 39 is prime.
+ * A275067 Numbers k such that 7*10^k + 39 is prime.
  * @author Georg Fischer
  */
 public class A275067 extends PowerFactorPrimeSequence {

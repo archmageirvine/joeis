@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A084896 Decimal expansion of arithmetic-geometric mean of (1,4).
+ * A084896 Decimal expansion of agm(1,4), the arithmetic-geometric mean of 1 and 4.
  * Formula: agm(1, 4)
  * @author Georg Fischer
  */

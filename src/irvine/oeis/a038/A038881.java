@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 // DO NOT EDIT here!
 
 /**
- * A038881 Primes p such that 11 is a square mod p.
+ * A038881 Odd primes p such that 11 is a square mod p.
  * @author Georg Fischer
  */
 public class A038881 extends A038873 {

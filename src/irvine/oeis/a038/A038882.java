@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 // DO NOT EDIT here!
 
 /**
- * A038882 Primes p such that 11 is not a square mod p.
+ * A038882 Primes that are not in A038881.
  * @author Georg Fischer
  */
 public class A038882 extends A038873 {

@@ -4,7 +4,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.oeis.FilterSequence;
 
 /**
- * A064390.
+ * A064392 Numbers in A064383 that are squarefree.
  * @author Sean A. Irvine
  */
 public class A064392 extends FilterSequence {

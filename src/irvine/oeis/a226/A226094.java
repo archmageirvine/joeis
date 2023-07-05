@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A226094 The decimal expansion of the number x defined by x^x+log(x)=0.
+ * A226094 Decimal expansion of the number x defined by x^x + log(x) = 0.
  * Equation; x^x+log(x)
  * @author Georg Fischer
  */

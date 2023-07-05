@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A254604 The decimal expansion of the half of a single half-wave constant x.
+ * A254604 Decimal expansion of the half of a single half-wave constant.
  * Equation; 2*cos(x)-(Pi-2*x)*sin(x)-1
  * @author Georg Fischer
  */

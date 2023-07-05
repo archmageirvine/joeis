@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001951;
 
 /**
- * A097508 Differences between floor(n*sqrt(2)) and n.
+ * A097508 a(n) = floor(n*(sqrt(2)-1)).
  * @author Georg Fischer
  */
 public class A097508 extends Sequence0 {

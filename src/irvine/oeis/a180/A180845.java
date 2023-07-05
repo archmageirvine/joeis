@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A180845 a(n) = (16^n-3^n)/13
+ * A180845 a(n) = (16^n-3^n)/13.
  * @author Georg Fischer
  */
 public class A180845 extends GeneratingFunctionSequence {

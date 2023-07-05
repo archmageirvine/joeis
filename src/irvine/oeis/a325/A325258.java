@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a011.A011784;
 
 /**
- * A325258 a(1) = 1; otherwise, first differences of Levine&apos;s sequence A011784.
+ * A325258 a(1) = 1; otherwise, first differences of Levine's sequence A011784.
  * @author Georg Fischer
  */
 public class A325258 extends PrependSequence {

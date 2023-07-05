@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064319 Triangle with a(n,1)=n and a(n,k)=a(n-1,k)*a(n-1,k-1).
+ * A064319 Triangle with a(n,1) = n and a(n,k) = a(n,k-1) * a(n-1,k-1).
  * @author Sean A. Irvine
  */
 public class A064319 extends Sequence1 {

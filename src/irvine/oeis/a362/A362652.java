@@ -4,7 +4,7 @@ package irvine.oeis.a362;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A362652 allocated for Jonathon Priestley.
+ * A362652 Expansion of g.f. x*(-2 - 2*x + x^2 - x^3)/((1 + x)^2 *(-1 + x)^3).
  * @author Georg Fischer
  */
 public class A362652 extends GeneratingFunctionSequence {

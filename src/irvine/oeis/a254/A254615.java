@@ -4,7 +4,7 @@ package irvine.oeis.a254;
 import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 /**
- * A254615 The decimal expansion of the left Alzer's constant x.
+ * A254615 Decimal expansion of the left Alzer's constant x.
  * Formula: 1/(sqrt(2)*sin(1/sqrt(2)))
  * @author Georg Fischer
  */

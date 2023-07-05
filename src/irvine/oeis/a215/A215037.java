@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 
 import irvine.oeis.recur.HolonomicRecurrence;
 /**
- * A215037 a(n) = sum(fibonomial(k+3,3), k=0..n), n&gt;=0.
+ * A215037 a(n) = Sum_{k=0..n} fibonomial(k+3,3), n &gt;= 0.
  * radtorec(1/(-x^2+x+1)/(-x^2-4*x+1)/(1-x))
  * @author Georg Fischer
  */

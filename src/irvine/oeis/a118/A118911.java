@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a071.A071053;
 
 /**
- * A118911 Row sums of triangle in A128973 .
+ * A118911 Row sums of triangle in A128973.
  * @author Georg Fischer
  */
 public class A118911 extends A071053 {

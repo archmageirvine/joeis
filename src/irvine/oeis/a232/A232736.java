@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A232736 Decimal expansion of the imaginary part of I^(1/7), or sin(Pi/14).
+ * A232736 Decimal expansion of sin(Pi/14), or the imaginary part of (-1)^(1/7).
  * @author Georg Fischer
  */
 public class A232736 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A194362 The decimal expansion of log(1151) / log(95).
+ * A194362 Decimal expansion of log(1151) / log(95).
  * @author Georg Fischer
  */
 public class A194362 extends DecimalExpansionSequence {

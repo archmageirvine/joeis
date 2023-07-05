@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A346434 Triangle read by rows of numbers with n 1&apos;s and n 0&apos;s in their representation in base of Fibonacci numbers (A210619), written as those 1&apos;s and 0&apos;s.
+ * A346434 Triangle read by rows of numbers with n 1's and n 0's in their representation in base of Fibonacci numbers (A210619), written as those 1's and 0's.
  * @author Georg Fischer
  */
 public class A346434 extends BaseTriangle {

@@ -4,7 +4,7 @@ package irvine.oeis.a363;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A363299 allocated for J. Lowell.
+ * A363299 a(n) is the sum of the n-th powers of the terms of row 4 of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A363299 extends GeneratingFunctionSequence {

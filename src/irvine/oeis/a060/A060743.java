@@ -2,7 +2,6 @@ package irvine.oeis.a060;
 
 import irvine.oeis.Combiner;
 import irvine.oeis.InverseSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000009;
 import irvine.oeis.a000.A000041;
 
@@ -14,6 +13,6 @@ public class A060743 extends InverseSequence {
 
   /** Construct the sequence. */
   public A060743() {
-    super(new SkipSequence(new Combiner(0, new A000041(), new A000009(), Combiner.GCD), 1), 1);
+    super(new Combiner(0, new A000041(), new A000009(), Combiner.GCD).skip(1), 1);
   }
 }

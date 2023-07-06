@@ -1,6 +1,5 @@
 package irvine.oeis.a080;
 
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a003.A003849;
 import irvine.oeis.transform.RootSequence;
 
@@ -12,6 +11,6 @@ public class A080845 extends RootSequence {
 
   /** Construct the sequence. */
   public A080845() {
-    super(0, new SkipSequence(new A003849(), 2), -1, 1);
+    super(0, new A003849().skip(2), -1, 1);
   }
 }

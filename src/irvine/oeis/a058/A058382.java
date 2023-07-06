@@ -2,7 +2,6 @@ package irvine.oeis.a058;
 // manually cofrseq/cofr at 2022-02-27
 
 import irvine.math.z.Z;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a001.A001355;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
@@ -16,7 +15,7 @@ public class A058382 extends ContinuedFractionSequence {
 
   /** Construct the sequence */
   public A058382() {
-    super(new SkipSequence(new A001355(), 2));
+    super(new A001355().skip(2));
   }
 
   @Override

@@ -1,7 +1,6 @@
 package irvine.oeis.a259;
 // manually partran at 2022-10-17 11:53
 
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a003.A003269;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
@@ -13,6 +12,6 @@ public class A259074 extends PartitionTransformTriangle {
 
   /** Construct the sequence. */
   public A259074() {
-    super(1, new SkipSequence(new A003269(), 1));
+    super(1, new A003269().skip(1));
   }
 }

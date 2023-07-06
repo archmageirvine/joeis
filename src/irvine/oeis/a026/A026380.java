@@ -1,7 +1,6 @@
 package irvine.oeis.a026;
 
 import irvine.oeis.AlternatingSequence;
-import irvine.oeis.SkipSequence;
 
 /**
  * A026380 a(n) = T(n,[ n/2 ]), where T is the array in A026374.
@@ -11,6 +10,6 @@ public class A026380 extends AlternatingSequence {
 
   /** Construct the sequence. */
   public A026380() {
-    super(0, new A026378(), new SkipSequence(new A026375(), 1));
+    super(0, new A026378(), new A026375().skip(1));
   }
 }

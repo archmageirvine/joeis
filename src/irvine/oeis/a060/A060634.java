@@ -1,6 +1,5 @@
 package irvine.oeis.a060;
 
-import irvine.oeis.SkipSequence;
 import irvine.oeis.UnionSequence;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000045;
@@ -13,6 +12,6 @@ public class A060634 extends UnionSequence {
 
   /** Construct the sequence. */
   public A060634() {
-    super(new A000040(), new SkipSequence(new A000045(), 2));
+    super(new A000040(), new A000045().skip(2));
   }
 }

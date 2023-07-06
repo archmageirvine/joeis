@@ -1,7 +1,6 @@
 package irvine.oeis.a063;
 
 import irvine.oeis.PrependSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a062.A062523;
 
 /**
@@ -12,6 +11,6 @@ public class A063569 extends PrependSequence {
 
   /** Construct the sequence. */
   public A063569() {
-    super(new SkipSequence(new A062523(), 2), 9, 3);
+    super(new A062523().skip(2), 9, 3);
   }
 }

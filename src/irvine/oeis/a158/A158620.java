@@ -2,7 +2,6 @@ package irvine.oeis.a158;
 // manually deris/partprod at 2022-04-28 12:39
 
 import irvine.oeis.PartialProductSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a068.A068601;
 
 /**
@@ -13,6 +12,6 @@ public class A158620 extends PartialProductSequence {
 
   /** Construct the sequence. */
   public A158620() {
-    super(2, new SkipSequence(new A068601(), 1));
+    super(2, new A068601().skip(1));
   }
 }

@@ -4,7 +4,6 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a060.A060715;
 import irvine.oeis.base.RunLengthSequence;
 
@@ -15,7 +14,7 @@ import irvine.oeis.base.RunLengthSequence;
 public class A062405 extends Sequence0 {
 
   private int mN = -1;
-  private final Sequence mA = new RunLengthSequence(new SkipSequence(new A060715(), 1));
+  private final Sequence mA = new RunLengthSequence(new A060715().skip(1));
 
   @Override
   public Z next() {

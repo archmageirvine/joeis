@@ -9,6 +9,7 @@ import irvine.math.z.Z;
 public class SkipSequence extends AbstractSequence {
 
   private static final int DEFOFF = 1;
+
   private final Sequence mSeq;
 
   /**

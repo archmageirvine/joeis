@@ -4,7 +4,6 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence2;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000796;
 import irvine.oeis.a002.A002485;
 import irvine.oeis.a002.A002486;
@@ -16,8 +15,8 @@ import irvine.oeis.cons.DecimalExpansionSequence;
  */
 public class A356665 extends Sequence2 {
 
-  private final Sequence mNum = new SkipSequence(new A002485(), 2);
-  private final Sequence mDen = new SkipSequence(new A002486(), 2);
+  private final Sequence mNum = new A002485().skip(2);
+  private final Sequence mDen = new A002486().skip(2);
 
   @Override
   public Z next() {

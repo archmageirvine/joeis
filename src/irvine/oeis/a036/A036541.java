@@ -3,7 +3,6 @@ package irvine.oeis.a036;
 import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000720;
 import irvine.oeis.a001.A001405;
 
@@ -14,7 +13,7 @@ import irvine.oeis.a001.A001405;
 public class A036541 extends A000720 {
 
   private final PrimeDivision mFactor = new PrimeDivision();
-  private final Sequence mA = new SkipSequence(new A001405(), 1);
+  private final Sequence mA = new A001405().skip(1);
 
   @Override
   public Z next() {

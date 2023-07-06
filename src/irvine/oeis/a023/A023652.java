@@ -1,7 +1,6 @@
 package irvine.oeis.a023;
 
 import irvine.oeis.ConvolutionSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 import irvine.oeis.a005.A005408;
 
@@ -13,6 +12,6 @@ public class A023652 extends ConvolutionSequence {
 
   /** Construct the sequence. */
   public A023652() {
-    super(1, new A005408(), new SkipSequence(new A000045(), 2));
+    super(1, new A005408(), new A000045().skip(2));
   }
 }

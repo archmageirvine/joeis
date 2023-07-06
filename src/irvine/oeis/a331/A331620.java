@@ -2,7 +2,6 @@ package irvine.oeis.a331;
 // manually deris/recordval at 2022-10-26 11:22
 
 import irvine.oeis.RecordSubsequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a058.A058249;
 
 /**
@@ -13,6 +12,6 @@ public class A331620 extends RecordSubsequence {
 
   /** Construct the sequence. */
   public A331620() {
-    super(new SkipSequence(new A058249(), 1));
+    super(new A058249().skip(1));
   }
 }

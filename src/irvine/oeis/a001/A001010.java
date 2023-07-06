@@ -2,7 +2,6 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Z;
 import irvine.oeis.AlternatingSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000682;
 import irvine.oeis.a007.A007822;
 
@@ -16,7 +15,7 @@ public class A001010 extends AlternatingSequence {
 
   /** Construct the sequence. */
   public A001010() {
-    super(new A007822(), new SkipSequence(new A000682(), 1));
+    super(new A007822(), new A000682().skip(1));
   }
 
   @Override

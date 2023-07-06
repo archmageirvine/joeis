@@ -1,7 +1,6 @@
 package irvine.oeis.a033;
 
 import irvine.oeis.RecordPositionSequence;
-import irvine.oeis.SkipSequence;
 
 /**
  * A033263 Positions of the incrementally largest terms in the continued fraction for Laplace's limit constant.
@@ -11,6 +10,6 @@ public class A033263 extends RecordPositionSequence {
 
   /** Construct the sequence. */
   public A033263() {
-    super(1, new SkipSequence(new A033260(), 1), 2);
+    super(1, new A033260().skip(1), 2);
   }
 }

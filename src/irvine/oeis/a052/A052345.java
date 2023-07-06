@@ -1,7 +1,6 @@
 package irvine.oeis.a052;
 
 import irvine.oeis.InverseSequence;
-import irvine.oeis.SkipSequence;
 
 /**
  * A052345 Least k such that A052343(k)=n.
@@ -11,6 +10,6 @@ public class A052345 extends InverseSequence {
 
   /** Construct the sequence. */
   public A052345() {
-    super(0, new SkipSequence(new A052343(), 1), 0);
+    super(0, new A052343().skip(1), 0);
   }
 }

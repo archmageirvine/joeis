@@ -4,7 +4,6 @@ import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a002.A002379;
 
 /**
@@ -13,7 +12,7 @@ import irvine.oeis.a002.A002379;
  */
 public class A022808 extends Sequence1 {
 
-  private final Sequence mA = new SkipSequence(new A002379(), 1);
+  private final Sequence mA = new A002379().skip(1);
   private final Sequence mB = new ComplementSequence(new A002379(), Z.ONE);
 
   @Override

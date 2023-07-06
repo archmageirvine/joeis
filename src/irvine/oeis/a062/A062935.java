@@ -2,7 +2,6 @@ package irvine.oeis.a062;
 
 import irvine.math.z.ZUtils;
 import irvine.oeis.FilterSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a038.A038507;
 
 /**
@@ -13,7 +12,7 @@ public class A062935 extends FilterSequence {
 
   /** Construct the sequence. */
   public A062935() {
-    super(1, new SkipSequence(new A038507(), 1), k -> ZUtils.isPalindrome(k, 10));
+    super(1, new A038507().skip(1), k -> ZUtils.isPalindrome(k, 10));
   }
 }
 

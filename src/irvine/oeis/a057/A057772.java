@@ -1,6 +1,5 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000016;
 import irvine.oeis.transform.InverseEulerTransform;
 
@@ -12,7 +11,7 @@ public class A057772 extends InverseEulerTransform {
 
   /** Construct the sequence. */
   public A057772() {
-    super(1, new SkipSequence(new A000016(), 1));
+    super(1, new A000016().skip(1));
   }
 }
 

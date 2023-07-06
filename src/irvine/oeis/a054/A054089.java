@@ -1,7 +1,6 @@
 package irvine.oeis.a054;
 
 import irvine.oeis.AlternatingSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a026.A026351;
 import irvine.oeis.a026.A026352;
 
@@ -13,6 +12,6 @@ public class A054089 extends AlternatingSequence {
 
   /** Construct the sequence. */
   public A054089() {
-    super(new A026351(), new SkipSequence(new A026352(), 1));
+    super(new A026351(), new A026352().skip(1));
   }
 }

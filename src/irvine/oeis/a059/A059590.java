@@ -1,7 +1,6 @@
 package irvine.oeis.a059;
 
 import irvine.oeis.DistinctAdditiveClosureSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000142;
 
 /**
@@ -12,6 +11,6 @@ public class A059590 extends DistinctAdditiveClosureSequence {
 
   /** Construct the sequence. */
   public A059590() {
-    super(new SkipSequence(new A000142(), 1));
+    super(new A000142().skip(1));
   }
 }

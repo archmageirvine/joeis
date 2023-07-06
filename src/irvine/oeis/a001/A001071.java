@@ -3,7 +3,6 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000988;
 import irvine.oeis.a234.A234006;
 import irvine.oeis.a234.A234007;
@@ -17,7 +16,8 @@ import irvine.oeis.a234.A234008;
 public class A001071 extends Sequence1 {
 
   private int mN = 0;
-  private final Sequence mA000988 = new SkipSequence(new A000988(), 1); // valid for all values of n
+  private final Sequence mA000988 = new A000988().skip(1); // valid for all values of n
+
   private final Sequence mA234006 = new A234006(); // valid for n multiple of 2
   private final Sequence mA234007 = new A234007(); // valid for n multiple of 4
   private final Sequence mA234008 = new A234008(); // valid for n multiple of 2

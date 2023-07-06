@@ -8,7 +8,6 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a007.A007563;
 
 /**
@@ -19,8 +18,8 @@ public class A035053 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;
-  private final Sequence mCSeq = new SkipSequence(new A035052(), 1);
-  private final Sequence mBSeq = new SkipSequence(new A007563(), 1);
+  private final Sequence mCSeq = new A035052().skip(1);
+  private final Sequence mBSeq = new A007563().skip(1);
   private final Polynomial<Z> mC = RING.empty();
   private final Polynomial<Z> mB = RING.create(Collections.singletonList(Z.ONE));
   {

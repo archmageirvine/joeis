@@ -3,7 +3,6 @@ package irvine.oeis.a014;
 import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
 /**
@@ -12,7 +11,8 @@ import irvine.oeis.a000.A000045;
  */
 public class A014251 extends A000045 {
 
-  private final Sequence mA = new ComplementSequence(new SkipSequence(new A000045(), 4), Z.ONE);
+  private final Sequence mA = new ComplementSequence(new A000045().skip(4), Z.ONE);
+
   {
     setOffset(1);
     super.next();

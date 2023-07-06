@@ -4,7 +4,6 @@ package irvine.oeis.a198;
 
 import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.transform.EulerTransform;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a003.A003136;
 
 
@@ -16,6 +15,6 @@ public class A198726 extends EulerTransform {
 
   /** Construct the sequence. */
   public A198726() {
-    super(new CharacteristicFunction(new SkipSequence(new A003136(), 1)), 1);
+    super(new CharacteristicFunction(new A003136().skip(1)), 1);
   }
 }

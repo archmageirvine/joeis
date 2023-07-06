@@ -6,7 +6,6 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000108;
 
 /**
@@ -22,7 +21,7 @@ public class A033552 extends Sequence0 {
   public Z next() {
     ++mN;
     Polynomial<Z> den = RING.one();
-    final Sequence catalan = new SkipSequence(new A000108(), 1);
+    final Sequence catalan = new A000108().skip(1);
     int c;
     while ((c = catalan.next().intValueExact()) <= mN) {
       den = RING.multiply(den, RING.oneMinusXToTheN(c), mN + 1);

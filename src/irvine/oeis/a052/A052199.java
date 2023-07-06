@@ -1,7 +1,6 @@
 package irvine.oeis.a052;
 
 import irvine.oeis.RecordPositionSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a025.A025441;
 
 /**
@@ -12,6 +11,6 @@ public class A052199 extends RecordPositionSequence {
 
   /** Construct the sequence. */
   public A052199() {
-    super(1, new SkipSequence(new A025441(), 1), 1);
+    super(1, new A025441().skip(1), 1);
   }
 }

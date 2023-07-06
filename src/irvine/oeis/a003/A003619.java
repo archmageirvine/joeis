@@ -2,7 +2,6 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000149;
 
 /**
@@ -13,6 +12,6 @@ public class A003619 extends ComplementSequence {
 
   /** Construct the sequence. */
   public A003619() {
-    super(new SkipSequence(new A000149(), 1), Z.ONE);
+    super(new A000149().skip(1), Z.ONE);
   }
 }

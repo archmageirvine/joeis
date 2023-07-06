@@ -2,7 +2,6 @@ package irvine.oeis.a349;
 // manually deris/dirichinv at 2022-10-26 11:22
 
 import irvine.oeis.DirichletInverseSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
 /**
@@ -13,6 +12,6 @@ public class A349451 extends DirichletInverseSequence {
 
   /** Construct the sequence. */
   public A349451() {
-    super(new SkipSequence(new A000045(), 1));
+    super(new A000045().skip(1));
   }
 }

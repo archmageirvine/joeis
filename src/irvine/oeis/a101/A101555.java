@@ -2,7 +2,6 @@ package irvine.oeis.a101;
 // manually convprod at 2023-02-24 17:45
 
 import irvine.math.z.Z;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000244;
 import irvine.oeis.a010.A010060;
 import irvine.oeis.transform.ConvolutionProduct;
@@ -17,7 +16,7 @@ public class A101555 extends ConvolutionProduct {
 
   /** Construct the sequence. */
   public A101555() {
-    super(0, "1,1", new SkipSequence(new A010060(), 1), new A000244());
+    super(0, "1,1", new A010060().skip(1), new A000244());
   }
 
   @Override

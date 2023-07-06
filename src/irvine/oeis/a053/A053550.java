@@ -1,7 +1,6 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.transform.RevertTransformSequence;
 
 /**
@@ -14,7 +13,7 @@ public class A053550 extends RevertTransformSequence {
 
   /** Construct the sequence. */
   public A053550() {
-    super(new SkipSequence(new A053549(), 1));
+    super(new A053549().skip(1));
   }
 
   @Override

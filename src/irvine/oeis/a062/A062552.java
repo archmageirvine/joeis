@@ -2,7 +2,6 @@ package irvine.oeis.a062;
 
 import irvine.math.group.GaloisField;
 import irvine.math.z.Z;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a053.A053291;
 import irvine.oeis.a058.A058502;
 
@@ -14,6 +13,6 @@ public class A062552 extends A058502 {
 
   /** Construct the sequence. */
   public A062552() {
-    super(new GaloisField(Z.TWO, 2), new SkipSequence(new A053291(), 1));
+    super(new GaloisField(Z.TWO, 2), new A053291().skip(1));
   }
 }

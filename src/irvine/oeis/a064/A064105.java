@@ -7,7 +7,6 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence2;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000930;
 
 /**
@@ -35,7 +34,7 @@ public class A064105 extends Sequence2 {
 
   /** Construct the sequence. */
   public A064105() {
-    this(new SkipSequence(new A000930(), 3), 3);
+    this(new A000930().skip(3), 3);
   }
 
   @Override

@@ -2,7 +2,6 @@ package irvine.oeis.a024;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a014.A014284;
 
 /**
@@ -11,7 +10,7 @@ import irvine.oeis.a014.A014284;
  */
 public class A024533 extends A024524 {
 
-  private final Sequence mA = new SkipSequence(new A014284(), 3);
+  private final Sequence mA = new A014284().skip(3);
 
   @Override
   public Z next() {

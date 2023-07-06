@@ -1,7 +1,6 @@
 package irvine.oeis.a292;
 // manually deris/eulerx at 2022-10-26 11:22
 
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a092.A092429;
 import irvine.oeis.transform.EulerTransform;
 
@@ -13,6 +12,6 @@ public class A292719 extends EulerTransform {
 
   /** Construct the sequence. */
   public A292719() {
-    super(new SkipSequence(new A092429(), 1), 1);
+    super(new A092429().skip(1), 1);
   }
 }

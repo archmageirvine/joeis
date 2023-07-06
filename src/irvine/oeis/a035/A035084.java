@@ -3,7 +3,6 @@ package irvine.oeis.a035;
 import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.transform.BikTransformSequence;
 
 /**
@@ -19,7 +18,7 @@ public class A035084 extends A035082 {
     if (n <= 3) {
       return n == 3 ? Z.ONE : Z.ZERO;
     }
-    final Sequence dik = new SkipSequence(new BikTransformSequence(new FiniteSequence(mA), 1), n - 1);
+    final Sequence dik = new BikTransformSequence(new FiniteSequence(mA), 1).skip(n - 1);
     return dik.next().subtract(t);
   }
 }

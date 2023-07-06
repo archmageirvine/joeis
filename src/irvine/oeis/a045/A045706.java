@@ -7,7 +7,6 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence0;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
 /**
@@ -17,7 +16,7 @@ import irvine.oeis.a000.A000045;
 public class A045706 extends Sequence0 {
 
   // Change 0, 1, 1, 2, 3, 5, ... to 0, 1, 2, 3, 5, ...
-  private final MemorySequence mFibo = MemorySequence.cachedSequence(new PrependSequence(new SkipSequence(new A000045(), 2), 0));
+  private final MemorySequence mFibo = MemorySequence.cachedSequence(new PrependSequence(new A000045().skip(2), 0));
   private final TreeSet<Long> mFiboSet = new TreeSet<>();
   {
     mFiboSet.add(mFibo.a(0).longValueExact());

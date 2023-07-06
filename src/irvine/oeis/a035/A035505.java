@@ -3,7 +3,6 @@ package irvine.oeis.a035;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000194;
 import irvine.oeis.a074.A074294;
 
@@ -15,7 +14,7 @@ public class A035505 extends Sequence1 {
 
   // After Enrique P&eacute;rez Herrero
 
-  private final Sequence mA = new SkipSequence(new A000194(), 1);
+  private final Sequence mA = new A000194().skip(1);
   private final Sequence mB = new A074294();
 
   private Z k(final Z i, final Z j) {

@@ -3,7 +3,6 @@ package irvine.oeis.a095;
 
 import irvine.oeis.PartialProductSequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a049.A049684;
 
 /**
@@ -14,6 +13,6 @@ public class A095968 extends PrependSequence {
 
   /** Construct the sequence. */
   public A095968() {
-    super(new PartialProductSequence(new SkipSequence(new A049684(), 1)), 1);
+    super(new PartialProductSequence(new A049684().skip(1)), 1);
   }
 }

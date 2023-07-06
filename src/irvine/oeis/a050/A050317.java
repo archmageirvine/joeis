@@ -4,7 +4,6 @@ import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence2;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000041;
 
 /**
@@ -18,7 +17,7 @@ public class A050317 extends Sequence2 {
   @Override
   public Z next() {
     ++mN;
-    final Sequence partitions = new SkipSequence(new A000041(), 2);
+    final Sequence partitions = new A000041().skip(2);
     DirichletSeries series = DirichletSeries.ONE;
     long s;
     while ((s = partitions.next().intValueExact()) <= mN) {

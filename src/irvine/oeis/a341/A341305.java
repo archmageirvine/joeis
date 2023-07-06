@@ -1,7 +1,6 @@
 package irvine.oeis.a341;
 
 import irvine.math.z.Z;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a004.A004016;
 import irvine.oeis.a030.A030197;
 import irvine.oeis.transform.ConvolutionProduct;
@@ -24,7 +23,7 @@ public class A341305 extends ConvolutionProduct {
    */
   public A341305(final int exponent) {
     super(0, "1/2," + String.valueOf(exponent),
-      new RootSequence(0, new SkipSequence(new A030197(), 1), -1, 1) { // this is (1 - 108/t_{3A})
+      new RootSequence(0, new A030197().skip(1), -1, 1) { // this is (1 - 108/t_{3A})
         private int mN = -1;
 
         @Override

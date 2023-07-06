@@ -2,7 +2,6 @@ package irvine.oeis.a288;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000521;
 import irvine.oeis.transform.RootSequence;
 
@@ -21,7 +20,7 @@ public class A288843 extends AbstractSequence {
   public A288843() {
     super(OFFSET);
     mSeq1 = new A000521();
-    mSeq2 = new RootSequence(OFFSET, new SkipSequence(new A000521(), 1), 2, 1);
+    mSeq2 = new RootSequence(OFFSET, new A000521().skip(1), 2, 1);
     mN = OFFSET - 1;
   }
 

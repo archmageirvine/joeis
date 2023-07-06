@@ -3,7 +3,6 @@ package irvine.oeis.a051;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000918;
 import irvine.oeis.a036.A036239;
 
@@ -14,13 +13,13 @@ import irvine.oeis.a036.A036239;
 public class A051368 extends Sequence1 {
 
   // A051184(n)-A051183(n)+A051182(n)-A051181(n)+A051180(n)-A036239(n)+A000918(n)
-  private final Sequence mA = new SkipSequence(new A051184(), 1);
-  private final Sequence mB = new SkipSequence(new A051183(), 1);
-  private final Sequence mC = new SkipSequence(new A051182(), 1);
-  private final Sequence mD = new SkipSequence(new A051181(), 1);
-  private final Sequence mE = new SkipSequence(new A051180(), 1);
+  private final Sequence mA = new A051184().skip(1);
+  private final Sequence mB = new A051183().skip(1);
+  private final Sequence mC = new A051182().skip(1);
+  private final Sequence mD = new A051181().skip(1);
+  private final Sequence mE = new A051180().skip(1);
   private final Sequence mF = new A036239();
-  private final Sequence mG = new SkipSequence(new A000918(), 1);
+  private final Sequence mG = new A000918().skip(1);
 
   @Override
   public Z next() {

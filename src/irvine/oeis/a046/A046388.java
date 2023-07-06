@@ -5,7 +5,6 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -14,7 +13,7 @@ import irvine.oeis.a000.A000040;
  */
 public class A046388 extends Sequence1 {
 
-  private final MemorySequence mOddPrimes = MemorySequence.cachedSequence(new SkipSequence(new A000040(), 1));
+  private final MemorySequence mOddPrimes = MemorySequence.cachedSequence(new A000040().skip(1));
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mP = mOddPrimes.next();
 

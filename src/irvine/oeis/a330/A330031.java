@@ -1,7 +1,6 @@
 package irvine.oeis.a330;
 
 import irvine.oeis.PairSumSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000292;
 
 /**
@@ -12,6 +11,6 @@ public class A330031 extends PairSumSequence {
 
   /** Construct the sequence. */
   public A330031() {
-    super(new SkipSequence(new A000292(), 1));
+    super(new A000292().skip(1));
   }
 }

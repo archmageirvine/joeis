@@ -2,7 +2,6 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a048.A048140;
 import irvine.oeis.a048.A048141;
 
@@ -13,7 +12,7 @@ import irvine.oeis.a048.A048141;
 public class A000784 extends A048140 {
 
   private final Sequence mC3v = new A048141();
-  private final Sequence mA219 = new SkipSequence(new A000219(), 1);
+  private final Sequence mA219 = new A000219().skip(1);
 
   @Override
   public int getOffset() {

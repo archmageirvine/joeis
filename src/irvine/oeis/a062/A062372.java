@@ -2,7 +2,6 @@ package irvine.oeis.a062;
 
 import irvine.math.z.ZUtils;
 import irvine.oeis.FilterPositionSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a051.A051801;
 
 /**
@@ -13,6 +12,6 @@ public class A062372 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A062372() {
-    super(0, 1, new SkipSequence(new A051801(), 1), ZUtils::isCube);
+    super(0, 1, new A051801().skip(1), ZUtils::isCube);
   }
 }

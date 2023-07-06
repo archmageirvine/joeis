@@ -4,7 +4,6 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
 /**
@@ -31,7 +30,7 @@ public class A046973 extends A000045 {
   @Override
   public Z next() {
     while (mA.isEmpty() || mA.first().compareTo(mF3) > 0) {
-      final Sequence f = new SkipSequence(new A000045(), 2);
+      final Sequence f = new A000045().skip(2);
       final Z mf4 = mF3.multiply(mF);
       for (Z t = f.next(); t.compareTo(mF) <= 0; t = f.next()) {
         add(mF3.add(t.pow(4)));

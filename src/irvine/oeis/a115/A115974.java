@@ -1,7 +1,6 @@
 package irvine.oeis.a115;
 
 import irvine.oeis.PrependSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a001.A001147;
 import irvine.oeis.transform.InverseInvertTransform;
 
@@ -13,6 +12,6 @@ public class A115974 extends PrependSequence {
 
   /** Construct the sequence. */
   public A115974() {
-    super(new SkipSequence(new InverseInvertTransform(0, new A001147(), 2), 1), 1, 2);
+    super(new InverseInvertTransform(0, new A001147(), 2).skip(1), 1, 2);
   }
 }

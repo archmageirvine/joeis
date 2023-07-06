@@ -14,6 +14,6 @@ public class A048808 extends SkipSequence {
 
   /** Construct the sequence. */
   public A048808() {
-    super(4, new EulerTransform(new PrependSequence(new SkipSequence(new A002865(), 1), 0L)), 2);
+    super(4, new EulerTransform(new PrependSequence(new A002865().skip(1), 0L)), 2);
   }
 }

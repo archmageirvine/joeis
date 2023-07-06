@@ -1,7 +1,6 @@
 package irvine.oeis.a050;
 
 import irvine.oeis.transform.ExponentialRevertTransformSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000081;
 
 /**
@@ -12,6 +11,6 @@ public class A050396 extends ExponentialRevertTransformSequence {
 
   /** Construct the sequence. */
   public A050396() {
-    super(new SkipSequence(new A000081(), 1));
+    super(new A000081().skip(1));
   }
 }

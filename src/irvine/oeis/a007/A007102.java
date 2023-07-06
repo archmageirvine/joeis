@@ -3,7 +3,6 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a002.A002829;
 import irvine.oeis.a004.A004109;
 
@@ -13,7 +12,7 @@ import irvine.oeis.a004.A004109;
  */
 public class A007102 extends A002829 {
 
-  private Sequence mConnected = new PrependSequence(new SkipSequence(new A004109(), 1), Z.ZERO);
+  private Sequence mConnected = new PrependSequence(new A004109().skip(1), Z.ZERO);
 
   @Override
   public Z next() {

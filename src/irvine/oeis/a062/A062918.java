@@ -1,7 +1,6 @@
 package irvine.oeis.a062;
 
 import irvine.oeis.PartialSumSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a004.A004086;
 
 /**
@@ -12,7 +11,7 @@ public class A062918 extends PartialSumSequence {
 
   /** Construct the sequence. */
   public A062918() {
-    super(1, new SkipSequence(new A004086(), 1));
+    super(1, new A004086().skip(1));
   }
 }
 

@@ -7,7 +7,6 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a007.A007318;
 
 /**
@@ -21,7 +20,7 @@ public class A055375 extends Sequence0 {
   private int mM = -1;
 
   protected Sequence getUnderlyingSequence() {
-    return new SkipSequence(new A007318(), 1);
+    return new A007318().skip(1);
   }
 
   @Override

@@ -3,7 +3,6 @@ package irvine.oeis.a022;
 import irvine.math.z.Z;
 import irvine.oeis.Combiner;
 import irvine.oeis.ComplementSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a001.A001951;
 
 /**
@@ -14,7 +13,7 @@ public class A022807 extends Combiner {
 
   private static final class MySequence extends Combiner {
     private MySequence() {
-      super(new A022838(), new SkipSequence(new A001951(), 1), ADD);
+      super(new A022838(), new A001951().skip(1), ADD);
     }
   }
 

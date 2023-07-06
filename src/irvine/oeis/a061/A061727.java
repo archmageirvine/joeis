@@ -2,7 +2,6 @@ package irvine.oeis.a061;
 // manually interleave at 2021-11-02 15:18
 
 import irvine.oeis.AlternatingSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000217;
 
 /**
@@ -13,6 +12,6 @@ public class A061727 extends AlternatingSequence {
 
   /** Construct the sequence. */
   public A061727() {
-    super(new SkipSequence(new A000217(), 1), new A061726());
+    super(new A000217().skip(1), new A061726());
   }
 }

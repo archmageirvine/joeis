@@ -3,7 +3,6 @@ package irvine.oeis.a006;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000081;
 
 /**
@@ -12,7 +11,7 @@ import irvine.oeis.a000.A000081;
  */
 public class A006871 extends MemorySequence {
 
-  private final MemorySequence mRootedTrees = MemorySequence.cachedSequence(new SkipSequence(new A000081(), 1));
+  private final MemorySequence mRootedTrees = new A000081();
   private int mN = -1;
   {
     add(Z.ONE);
@@ -23,7 +22,7 @@ public class A006871 extends MemorySequence {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      sum = sum.add(Binomial.binomial(mN, k).multiply(mRootedTrees.a(k)).multiply(a(mN - k)));
+      sum = sum.add(Binomial.binomial(mN, k).multiply(mRootedTrees.a(k + 1)).multiply(a(mN - k)));
     }
     return sum;
   }

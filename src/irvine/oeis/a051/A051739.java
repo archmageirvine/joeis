@@ -1,7 +1,6 @@
 package irvine.oeis.a051;
 
 import irvine.oeis.prime.PrimeSubsequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a020.A020549;
 
 /**
@@ -12,6 +11,6 @@ public class A051739 extends PrimeSubsequence {
 
   /** Construct the sequence. */
   public A051739() {
-    super(new SkipSequence(new A020549(), 1));
+    super(new A020549().skip(1));
   }
 }

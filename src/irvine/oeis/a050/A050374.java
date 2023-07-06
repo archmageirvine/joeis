@@ -3,7 +3,6 @@ package irvine.oeis.a050;
 import irvine.math.z.Z;
 import irvine.oeis.DirichletInverseSequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a005.A005171;
 
 /**
@@ -14,11 +13,11 @@ public class A050374 extends DirichletInverseSequence {
 
   /** Construct the sequence. */
   public A050374() {
-    super(new PrependSequence(new SkipSequence(new A005171() {
+    super(new PrependSequence(new A005171() {
       @Override
       public Z next() {
         return super.next().negate();
       }
-    }, 1), Z.ONE));
+    }.skip(1), Z.ONE));
   }
 }

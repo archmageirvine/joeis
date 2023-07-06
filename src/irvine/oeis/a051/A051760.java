@@ -4,7 +4,6 @@ import irvine.math.z.Z;
 import irvine.oeis.DistinctAdditiveClosureSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000142;
 
 /**
@@ -13,7 +12,7 @@ import irvine.oeis.a000.A000142;
  */
 public class A051760 extends Sequence1 {
 
-  private final Sequence mA = new DistinctAdditiveClosureSequence(new SkipSequence(new A000142(), 1));
+  private final Sequence mA = new DistinctAdditiveClosureSequence(new A000142().skip(1));
   private Z mPrev = Z.ZERO;
 
   @Override

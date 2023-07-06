@@ -6,7 +6,6 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000032;
 
 /**
@@ -16,7 +15,7 @@ import irvine.oeis.a000.A000032;
 public class A050118 extends Sequence1 {
 
   // Reorder initial terms, so that they are sorted
-  private final MemorySequence mLucas = MemorySequence.cachedSequence(new PrependSequence(new SkipSequence(new A000032(), 2), 1, 2));
+  private final MemorySequence mLucas = MemorySequence.cachedSequence(new PrependSequence(new A000032().skip(2), 1, 2));
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mPrev = Z.NEG_ONE;
   private int mN = 0;

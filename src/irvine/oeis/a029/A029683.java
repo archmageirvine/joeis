@@ -4,7 +4,6 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -18,6 +17,6 @@ public class A029683 extends Sequence1 {
   @Override
   public Z next() {
     final CR s = ComputableReals.SINGLETON.pow(CR.valueOf(++mN), CR.ONE_THIRD);
-    return new SkipSequence(new DecimalExpansionSequence(s.subtract(CR.valueOf(s.floor()))), mN - 1).next();
+    return new DecimalExpansionSequence(s.subtract(CR.valueOf(s.floor()))).skip(mN - 1).next();
   }
 }

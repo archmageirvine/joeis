@@ -1,7 +1,6 @@
 package irvine.oeis.a274;
 
 import irvine.oeis.DistinctMultiplicativeClosureSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000129;
 
 /**
@@ -12,7 +11,7 @@ public class A274454 extends DistinctMultiplicativeClosureSequence {
 
   /** Construct the sequence. */
   public A274454() {
-    super(new SkipSequence(new A000129(), 1));
+    super(new A000129().skip(1));
     next();
   }
 }

@@ -7,7 +7,6 @@ import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a002.A002212;
 import irvine.oeis.a055.A055879;
 
@@ -18,7 +17,7 @@ import irvine.oeis.a055.A055879;
 public class A044049 extends Sequence0 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
-  private final Sequence mUSeq = new PrependSequence(new SkipSequence(new A002212(), 1), Z.ZERO);
+  private final Sequence mUSeq = new PrependSequence(new A002212().skip(1), Z.ZERO);
   private final Sequence mVSeq = new PrependSequence(new A055879(), Z.ZERO);
   private final Polynomial<Z> mU = RING.empty();
   private final Polynomial<Z> mV = RING.empty();

@@ -4,7 +4,6 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000129;
 import irvine.oeis.a037.A037027;
 
@@ -15,7 +14,7 @@ import irvine.oeis.a037.A037027;
 public class A054446 extends Sequence0 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A037027());
-  private final Sequence mPell = new SkipSequence(new A000129(), 1);
+  private final Sequence mPell = new A000129().skip(1);
   private int mN = -1;
   private int mM = 0;
   private Z mT = null;

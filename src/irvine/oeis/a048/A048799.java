@@ -4,7 +4,6 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a038.A038024;
 
 /**
@@ -20,7 +19,7 @@ public class A048799 extends DecimalExpansionSequence {
       protected Z approximate(final int precision) {
         Z sum = Z.ZERO;
         if (precision < 0) {
-          final Sequence kempner = new SkipSequence(new A038024(), 1);
+          final Sequence kempner = new A038024().skip(1);
           int k = 1;
           Z f = Z.ONE;
           Z u;

@@ -3,8 +3,8 @@ package irvine.oeis.a029;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
@@ -17,6 +17,7 @@ public class A029694 extends Sequence1 {
 
   @Override
   public Z next() {
-    return new SkipSequence(new DecimalExpansionSequence(0, ComputableReals.SINGLETON.pow(CR.valueOf(++mN), CR.ONE_THIRD), 2), mN - 1).next();
+    final AbstractSequence seq = new DecimalExpansionSequence(0, ComputableReals.SINGLETON.pow(CR.valueOf(++mN), CR.ONE_THIRD), 2);
+    return seq.skip(mN - 1).next();
   }
 }

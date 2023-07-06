@@ -3,7 +3,6 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.RecordSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a001.A001203;
 
 /**
@@ -16,6 +15,6 @@ public class A007541 extends RecordSequence {
 
   /** Construct the sequence. */
   public A007541() {
-    super(new PrependSequence(new SkipSequence(new A001203(), 1), Z.ONE));
+    super(new PrependSequence(new A001203().skip(1), Z.ONE));
   }
 }

@@ -5,7 +5,6 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence0;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a002.A002110;
 
 /**
@@ -14,7 +13,8 @@ import irvine.oeis.a002.A002110;
  */
 public class A062515 extends Sequence0 {
 
-  private final MemorySequence mPrimorial = MemorySequence.cachedSequence(new SkipSequence(new A002110(), 1)); // We want mPrimorial.a(1) == 6
+  private final MemorySequence mPrimorial = MemorySequence.cachedSequence(new A002110().skip(1)); // We want mPrimorial.a(1) == 6
+
   private IntegerPartition mPart = new IntegerPartition(1);
   private int mN = 0;
 

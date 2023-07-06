@@ -4,7 +4,6 @@ package irvine.oeis.a355;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirichletInverseSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a152.A152822;
 
 /**
@@ -13,7 +12,7 @@ import irvine.oeis.a152.A152822;
  */
 public class A355690 extends AbstractSequence {
 
-  private final DirichletInverseSequence mSeq = new DirichletInverseSequence(new SkipSequence(new A152822(), 1));
+  private final DirichletInverseSequence mSeq = new DirichletInverseSequence(new A152822().skip(1));
 
   /** Construct the sequence. */
   public A355690() {

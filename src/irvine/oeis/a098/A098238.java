@@ -2,7 +2,6 @@ package irvine.oeis.a098;
 // manually rootet at 2023-02-21 21:45
 
 import irvine.math.z.Z;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a010.A010051;
 import irvine.oeis.transform.RootSequence;
 
@@ -16,7 +15,7 @@ public class A098238 extends RootSequence {
 
   /** Construct the sequence. */
   public A098238() {
-    super(0, new SkipSequence(new A010051(), 2), 3, 1);
+    super(0, new A010051().skip(2), 3, 1);
   }
 
   @Override

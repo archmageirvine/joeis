@@ -1,6 +1,5 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.SkipSequence;
 import irvine.oeis.transform.EulerTransform;
 
 /**
@@ -11,6 +10,6 @@ public class A000391 extends EulerTransform {
 
   /** Default constructor. */
   public A000391() {
-    super(1, new SkipSequence(new A000332(), 4));
+    super(1, new A000332().skip(4));
   }
 }

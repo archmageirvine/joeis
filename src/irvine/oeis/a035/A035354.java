@@ -1,7 +1,6 @@
 package irvine.oeis.a035;
 
 import irvine.oeis.transform.DhkTransformSequence;
-import irvine.oeis.SkipSequence;
 
 /**
  * A035354 "DHK" (bracelet, identity, unlabeled) transform of A035353.
@@ -11,6 +10,6 @@ public class A035354 extends DhkTransformSequence {
 
   /** Construct the sequence. */
   public A035354() {
-    super(new SkipSequence(new A035353(), 1));
+    super(new A035353().skip(1));
   }
 }

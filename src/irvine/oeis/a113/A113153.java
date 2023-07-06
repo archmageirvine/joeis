@@ -1,7 +1,6 @@
 package irvine.oeis.a113;
 // manually partsumm/partsum at 2022-04-12
 
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000073;
 
 /**
@@ -12,6 +11,6 @@ public class A113153 extends A113122 {
 
   /** Construct the sequence. */
   public A113153() {
-    super(new SkipSequence(new A000073(), 1));
+    super(new A000073().skip(1));
   }
 }

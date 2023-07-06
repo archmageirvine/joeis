@@ -4,7 +4,6 @@ import irvine.math.z.Z;
 import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.DirichletInverseSequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.SkipSequence;
 
 /**
  * A050379 Number of ordered factorizations of n into members of A050376.
@@ -14,11 +13,11 @@ public class A050379 extends DirichletInverseSequence {
 
   /** Construct the sequence. */
   public A050379() {
-    super(new PrependSequence(new SkipSequence(new CharacteristicFunction(new A050376()) {
+    super(new PrependSequence(new CharacteristicFunction(new A050376()) {
       @Override
       public Z next() {
         return super.next().negate();
       }
-    }, 1), Z.ONE));
+    }.skip(1), Z.ONE));
   }
 }

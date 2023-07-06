@@ -3,7 +3,6 @@ package irvine.oeis.a231;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000108;
 import irvine.oeis.transform.BoustrophedonTransformSequence;
 
@@ -13,7 +12,7 @@ import irvine.oeis.transform.BoustrophedonTransformSequence;
  */
 public class A231894 extends AbstractSequence {
 
-  private final BoustrophedonTransformSequence mSeq1 = new BoustrophedonTransformSequence(new SkipSequence(new A000108(), 1));
+  private final BoustrophedonTransformSequence mSeq1 = new BoustrophedonTransformSequence(new A000108().skip(1));
 
   /** Construct the sequence. */
   public A231894() {

@@ -4,7 +4,6 @@ import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000204;
 import irvine.oeis.a090.A090946;
 
@@ -14,8 +13,8 @@ import irvine.oeis.a090.A090946;
  */
 public class A022810 extends Sequence1 {
 
-  private final Sequence mA = new SkipSequence(new A000204(), 2);
-  private final Sequence mB = new PrependSequence(new SkipSequence(new A090946(), 2), 1, 2, 3);
+  private final Sequence mA = new A000204().skip(2);
+  private final Sequence mB = new PrependSequence(new A090946().skip(2), 1, 2, 3);
 
   @Override
   public Z next() {

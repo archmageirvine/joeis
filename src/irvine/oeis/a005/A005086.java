@@ -3,7 +3,6 @@ package irvine.oeis.a005;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
 /**
@@ -18,7 +17,7 @@ public class A005086 extends Sequence1 {
   public Z next() {
     mN = mN.add(1);
     long c = 0;
-    final Sequence fibo = new SkipSequence(new A000045(), 2);
+    final Sequence fibo = new A000045().skip(2);
     Z d;
     while ((d = fibo.next()).compareTo(mN) <= 0) {
       if (mN.mod(d).isZero()) {

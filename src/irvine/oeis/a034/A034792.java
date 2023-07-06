@@ -3,7 +3,6 @@ package irvine.oeis.a034;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000217;
 
 /**
@@ -16,7 +15,7 @@ public class A034792 extends MemorySequence {
     setOffset(1);
   }
 
-  private Sequence mT = new SkipSequence(new A000217(), 1);
+  private Sequence mT = new A000217().skip(1);
 
   private boolean isCoprime(final Z t) {
     for (final Z m : this) {

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000796;
 
 /**
@@ -22,7 +21,8 @@ public class A033186 extends A000796 {
   private int mM = 0;
 
   // Cache the primes since we reuse them in each chunk
-  private final Sequence mPrimeSeq = new SkipSequence(new A033274(), 1); // can safely skip over 2
+  private final Sequence mPrimeSeq = new A033274().skip(1); // can safely skip over 2
+
   private final ArrayList<String> mPrimes = new ArrayList<>();
 
   private String prime(final int m) {

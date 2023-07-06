@@ -12,7 +12,6 @@ import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a053.A053290;
 import irvine.util.Pair;
 
@@ -33,7 +32,7 @@ public class A058502 extends Sequence1 {
 
   /** Construct the sequence. */
   public A058502() {
-    this(new GaloisField(3), new SkipSequence(new A053290(), 1));
+    this(new GaloisField(3), new A053290().skip(1));
   }
 
   @Override

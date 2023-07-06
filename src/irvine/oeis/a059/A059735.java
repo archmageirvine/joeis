@@ -1,7 +1,6 @@
 package irvine.oeis.a059;
 
 import irvine.oeis.Combiner;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000568;
 import irvine.oeis.a002.A002785;
 
@@ -13,7 +12,7 @@ public class A059735 extends Combiner {
 
   /** Construct the sequence. */
   public A059735() {
-    super(1, new SkipSequence(new A000568(), 1), new A002785(), AVERAGE);
+    super(1, new A000568().skip(1), new A002785(), AVERAGE);
   }
 }
 

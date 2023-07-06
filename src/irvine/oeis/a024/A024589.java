@@ -2,7 +2,6 @@ package irvine.oeis.a024;
 
 import irvine.oeis.HalfConvolutionSequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 import irvine.oeis.a002.A002808;
 
@@ -14,6 +13,6 @@ public class A024589 extends HalfConvolutionSequence {
 
   /** Construct the sequence. */
   public A024589() {
-    super(new PrependSequence(new A002808(), 0), new SkipSequence(new A000045(), 1));
+    super(new PrependSequence(new A002808(), 0), new A000045().skip(1));
   }
 }

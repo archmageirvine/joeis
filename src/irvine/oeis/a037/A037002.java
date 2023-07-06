@@ -1,7 +1,6 @@
 package irvine.oeis.a037;
 
 import irvine.oeis.FilterPositionSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000796;
 
 /**
@@ -12,7 +11,7 @@ public class A037002 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A037002() {
-    super(1, new SkipSequence(new A000796(), 1), 3);
+    super(1, new A000796().skip(1), 3);
   }
 }
 

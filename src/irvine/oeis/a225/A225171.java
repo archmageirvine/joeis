@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import irvine.math.z.Eulerian2;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.BellMatrix;
+import irvine.oeis.transform.BellMatrixTransformSequence;
 
 /**
  * A225171 Triangle read by rows: T(n,k), 1 &lt;= k &lt;= n, is the number of non-degenerate fanout-free Boolean functions of n variables having AND rank k.
@@ -19,7 +19,7 @@ public class A225171 extends AbstractSequence {
   }
 
   private final ArrayList<Z> mA = new ArrayList<>();
-  private final BellMatrix mB = new BellMatrix(mA);
+  private final BellMatrixTransformSequence mB = new BellMatrixTransformSequence(mA);
   private int mN = 0;
   private int mK = 0;
 
@@ -29,7 +29,7 @@ public class A225171 extends AbstractSequence {
     }
     Z sum = Z.ZERO;
     for (int k = 0; k < n; ++k) {
-      sum = sum.add(Eulerian2.SINGLETON.get((long) n, (long) k).shiftLeft(2 * n - k));
+      sum = sum.add(Eulerian2.SINGLETON.get((long) n, (long) k).shiftLeft(2L * n - k));
     }
     return sum;
   }

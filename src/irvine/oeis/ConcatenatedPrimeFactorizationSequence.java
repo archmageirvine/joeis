@@ -10,7 +10,7 @@ import irvine.math.z.Z;
  * A sequence arising in the concatenation of the prime factors of a number.
  * @author Sean A. Irvine
  */
-public class AlonsoSequence extends Sequence1 {
+public class ConcatenatedPrimeFactorizationSequence extends Sequence1 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final HashSet<Z> mSeen = new HashSet<>();
@@ -19,16 +19,16 @@ public class AlonsoSequence extends Sequence1 {
   private final int mBase;
 
   /**
-   * Construct an Alonso sequence generator for a number and base.
+   * Construct a concatenated prime factorization sequence for a given number and base.
    * @param n number to start from
    * @param base base to use
    */
-  public AlonsoSequence(final long n, final int base) {
+  public ConcatenatedPrimeFactorizationSequence(final long n, final int base) {
     mStart = Z.valueOf(n);
     mBase = base;
   }
 
-  private Z flattenAlonso(final FactorSequence fs, final int base) {
+  private Z flatten(final FactorSequence fs, final int base) {
     final StringBuilder sb = new StringBuilder();
     for (final Z p : fs.toZArray()) {
       sb.append(p.toString(base));
@@ -52,7 +52,7 @@ public class AlonsoSequence extends Sequence1 {
         return null; // finished at a prime
       }
       final FactorSequence fs = Jaguar.factor(mA);
-      mA = flattenAlonso(fs, mBase);
+      mA = flatten(fs, mBase);
     }
     if (mSeen.add(mA)) {
       return mA;
@@ -69,7 +69,7 @@ public class AlonsoSequence extends Sequence1 {
    * @param args number base
    */
   public static void main(final String[] args) {
-    final AlonsoSequence seq = new AlonsoSequence(Long.parseLong(args[0]), Integer.parseInt(args[1]));
+    final ConcatenatedPrimeFactorizationSequence seq = new ConcatenatedPrimeFactorizationSequence(Long.parseLong(args[0]), Integer.parseInt(args[1]));
     Z t;
     while ((t = seq.next()) != null) {
       System.out.println(t);

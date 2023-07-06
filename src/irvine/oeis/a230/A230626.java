@@ -1,7 +1,7 @@
 package irvine.oeis.a230;
 
 import irvine.math.z.Z;
-import irvine.oeis.AlonsoSequence;
+import irvine.oeis.ConcatenatedPrimeFactorizationSequence;
 import irvine.oeis.Sequence2;
 
 /**
@@ -15,7 +15,7 @@ public class A230626 extends Sequence2 {
   @Override
   public Z next() {
     long  c = -1;
-    final AlonsoSequence seq = new AlonsoSequence(++mN, 2);
+    final ConcatenatedPrimeFactorizationSequence seq = new ConcatenatedPrimeFactorizationSequence(++mN, 2);
     Z u = null;
     Z t;
     while ((t = seq.next()) != null) {

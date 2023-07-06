@@ -9,18 +9,17 @@ import irvine.math.z.Z;
  */
 public class BlockMultAddSequence extends AbstractSequence {
 
-  protected final int mBlockLen; // length of the blocks
-  protected int mBlockIndex; // iterates over the numbers in a block
-  protected final String mOper; // pattern for the operations
-  protected final int mOperLen; // length of mOper
-  protected int mK; // k * mBlockLen, k = 0,1,2,...
-  protected int mI; // between 1 and mBlockLen, upwards or downwards
-  protected Z mTerm; // current product for a block
-  protected Z mSum; // sum of complete blocks so far
+  private final int mBlockLen; // length of the blocks
+  private int mBlockIndex; // iterates over the numbers in a block
+  private final String mOper; // pattern for the operations
+  private final int mOperLen; // length of mOper
+  private int mK; // k * mBlockLen, k = 0,1,2,...
+  private int mI; // between 1 and mBlockLen, upwards or downwards
+  private Z mTerm; // current product for a block
+  private Z mSum; // sum of complete blocks so far
 
   /**
    * Creates a new Add/Multiply sequence.
-   *
    * @param blockLen number of factors in a block
    * @param oper String of operations containing '&lt;', '&gt;', '+' and '-'
    */
@@ -31,7 +30,7 @@ public class BlockMultAddSequence extends AbstractSequence {
     mOper = oper;
     mOperLen = mOper.length();
     mK = 0;
-    mI = mK * mBlockLen + (mOper.startsWith("<") ? 1 : mBlockLen);
+    mI = mOper.startsWith("<") ? 1 : mBlockLen;
     mSum  = Z.ZERO;
     mTerm = Z.ONE; // first term is always positive
   }

@@ -19,7 +19,7 @@ public class AlternatingSequence extends AbstractSequence {
    * @param seqB second sequence
    */
   public AlternatingSequence(final Sequence seqA, final Sequence seqB) {
-    this(1, seqA, seqB);
+    this(seqA.getOffset(), seqA, seqB);
   }
 
   /**

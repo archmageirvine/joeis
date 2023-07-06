@@ -3,7 +3,7 @@ package irvine.oeis.a264;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.BellMatrix;
+import irvine.oeis.transform.BellMatrixTransformSequence;
 import irvine.oeis.a000.A000110;
 
 /**
@@ -13,7 +13,7 @@ import irvine.oeis.a000.A000110;
 public class A264428 extends A000110 {
 
   private final ArrayList<Z> mA = new ArrayList<>();
-  private final BellMatrix mB = new BellMatrix(mA);
+  private final BellMatrixTransformSequence mB = new BellMatrixTransformSequence(mA);
   private int mN = -1;
   private int mK = 0;
 

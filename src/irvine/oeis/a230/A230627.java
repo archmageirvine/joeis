@@ -2,7 +2,7 @@ package irvine.oeis.a230;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.AlonsoSequence;
+import irvine.oeis.ConcatenatedPrimeFactorizationSequence;
 
 /**
  * A230627 Prime reached in A230626, or -1 if no prime is reached.
@@ -19,7 +19,7 @@ public class A230627 extends AbstractSequence {
 
   @Override
   public Z next() {
-    final AlonsoSequence seq = new AlonsoSequence(++mN, 2);
+    final ConcatenatedPrimeFactorizationSequence seq = new ConcatenatedPrimeFactorizationSequence(++mN, 2);
     Z u = null;
     Z t;
     while ((t = seq.next()) != null) {

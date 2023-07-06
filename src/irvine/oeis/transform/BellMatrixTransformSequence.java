@@ -1,16 +1,17 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import java.util.ArrayList;
 
 import irvine.math.MemoryFunction2;
 import irvine.math.z.Binomial;
+import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
  * Bell matrix transform.
  * @author Sean A. Irvine
  */
-public class BellMatrix extends MemoryFunction2<Integer, Z> {
+public class BellMatrixTransformSequence extends MemoryFunction2<Integer, Z> {
 
   private final ArrayList<Z> mA;
 
@@ -18,7 +19,7 @@ public class BellMatrix extends MemoryFunction2<Integer, Z> {
    * Construct a new Bell matrix on the given sequence.
    * @param a sequence data
    */
-  public BellMatrix(final ArrayList<Z> a) {
+  public BellMatrixTransformSequence(final ArrayList<Z> a) {
     mA = a;
   }
 
@@ -27,10 +28,6 @@ public class BellMatrix extends MemoryFunction2<Integer, Z> {
     if (k == 0) {
       return n == 0 ? Z.ONE : Z.ZERO;
     }
-    Z sum = Z.ZERO;
-    for (int j = 1; j <= n - k + 1; ++j) {
-      sum = sum.add(Binomial.binomial(n - 1, j - 1).multiply(get(n - j, k - 1)).multiply(mA.get(j - 1)));
-    }
-    return sum;
+    return Integers.SINGLETON.sum(1, n - k + 1, j -> Binomial.binomial(n - 1, j - 1).multiply(get(n - j, k - 1)).multiply(mA.get(j - 1)));
   }
 }

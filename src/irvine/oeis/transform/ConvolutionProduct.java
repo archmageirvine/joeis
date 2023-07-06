@@ -6,7 +6,6 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
 
 /**
  * Compute the convolution product of two or more generating functions.
@@ -98,8 +97,11 @@ public class ConvolutionProduct extends EulerTransform {
         } else {
           final int skip = Integer.parseInt(seqNo.substring(dashPos + 1));
           seqNo = seqNo.substring(0, dashPos);
-          seq = new SkipSequence((Sequence) Class.forName("irvine.oeis.a" + seqNo.substring(1, 4) + '.' + seqNo)
-              .getDeclaredConstructor().newInstance(), skip);
+          seq = (Sequence) Class.forName("irvine.oeis.a" + seqNo.substring(1, 4) + '.' + seqNo)
+              .getDeclaredConstructor().newInstance();
+          for (int k = 0; k < skip; ++k) {
+            seq.next();
+          }
         }
       } catch (final ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException exc) {
         throw new UnsupportedOperationException("invalid A-number: " + seqNo);

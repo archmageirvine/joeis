@@ -1,16 +1,16 @@
 package irvine.oeis.a071;
 
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a046.A046695;
 
 /**
  * A071433 Sprague-Grundy values for octal game .37.
  * @author Sean A. Irvine
  */
-public class A071433 extends SkipSequence {
+public class A071433 extends A046695 {
 
   /** Construct the sequence. */
   public A071433() {
-    super(1, new A046695(), 2);
+    skip(2);
+    setOffset(1);
   }
 }

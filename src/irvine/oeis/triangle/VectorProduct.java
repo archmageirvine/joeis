@@ -24,7 +24,7 @@ public class VectorProduct extends Triangle {
   public VectorProduct(final int offset, final Triangle s1, final Sequence v2) {
     mOffset = offset;
     mS1 = s1;
-    mV2 = v2 instanceof MemorySequence ? (MemorySequence) v2 : MemorySequence.cachedSequence(v2);
+    mV2 = MemorySequence.cachedSequence(v2);
   }
 
   /**

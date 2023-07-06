@@ -1,7 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.math.z.Z;
-import irvine.oeis.SkipSequence;
+import irvine.oeis.FilterSequence;
 import irvine.oeis.a048.A048805;
 
 /**
@@ -12,15 +11,6 @@ public class A055370 extends A048805 {
 
   /** Construct the sequence. */
   public A055370() {
-    super(new SkipSequence(new A055363(), 2) {
-      @Override
-      public Z next() {
-        Z t;
-        while ((t = super.next()).isZero()) {
-          // do nothing
-        }
-        return t;
-      }
-    });
+    super(new FilterSequence(new A055363(), FilterSequence.NONZERO).skip(2));
   }
 }

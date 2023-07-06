@@ -1,8 +1,8 @@
 package irvine.oeis.transform;
 
 import irvine.math.q.Q;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
 
 /**
  * Take the square root (or some other fractional exponent) of another sequence by using Euler and inverse Euler transform.
@@ -46,7 +46,7 @@ public class RootSequence extends EulerTransform {
     int debug = 0;
     String aSeqNo = null;
     Q pq = new Q(1, 2);
-    Sequence mSeq = null;
+    AbstractSequence seq = null;
     int offset = 0;
     long factor = 1;
     int noTerms = 32;
@@ -59,7 +59,7 @@ public class RootSequence extends EulerTransform {
           debug = Integer.parseInt(args[iarg++]);
         } else if (opt.equals("-a")) {
           aSeqNo = args[iarg++];
-          mSeq = (Sequence) Class.forName("irvine.oeis.a" + aSeqNo.substring(1, 4) + '.' + aSeqNo)
+          seq = (AbstractSequence) Class.forName("irvine.oeis.a" + aSeqNo.substring(1, 4) + '.' + aSeqNo)
             .getDeclaredConstructor().newInstance();
         } else if (opt.equals("-f")) {
           factor = Long.parseLong(args[iarg++]);
@@ -85,9 +85,9 @@ public class RootSequence extends EulerTransform {
     } // while args
 
     if (debug > 0) {
-      System.out.println("RootSequence: offset=" + offset + ", aSeqNo=" + ((mSeq == null) ? "null" : aSeqNo) + ", pq=" + pq);
+      System.out.println("RootSequence: offset=" + offset + ", aSeqNo=" + ((seq == null) ? "null" : aSeqNo) + ", pq=" + pq);
     }
-    final RootSequence rs = new RootSequence(offset, new SkipSequence(mSeq, skip), pq);
+    final RootSequence rs = new RootSequence(offset, seq.skip(skip), pq);
     for (int iterm = 0; iterm < noTerms; ++iterm) {
       if (iterm > 0) {
         System.out.print(",");

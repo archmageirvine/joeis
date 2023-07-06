@@ -137,7 +137,7 @@ public abstract class MemorySequence extends AbstractSequence implements Iterabl
    * @return cached version
    */
   public static MemorySequence cachedSequence(final Sequence seq) {
-    return seq instanceof MemorySequence ? (MemorySequence) seq : new MemorySequence() {
+    return seq instanceof MemorySequence && ((MemorySequence) seq).size() == 0 ? (MemorySequence) seq : new MemorySequence() {
       @Override
       protected Z computeNext() {
         return seq.next();

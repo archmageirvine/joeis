@@ -1,7 +1,6 @@
 package irvine.oeis.a106;
 
-import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000521;
 import irvine.oeis.transform.RootSequence;
 
@@ -23,7 +22,7 @@ public class A106205 extends RootSequence {
    * @param num numerator of exponent
    * @param den denominator of exponent
    */
-  public A106205(final int offset, final Sequence seq, final long num, final long den) {
-    super(offset, new SkipSequence(seq, 1), num, den);
+  public A106205(final int offset, final AbstractSequence seq, final long num, final long den) {
+    super(offset, seq.skip(1), num, den);
   }
 }

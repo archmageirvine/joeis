@@ -1,9 +1,8 @@
 package irvine.oeis.triangle;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
 
 /**
  * Triangle resulting from the application of Peter Luschny&apos;s Partition Transform to another sequence.
@@ -16,7 +15,7 @@ public class PartitionTransformTriangle extends BaseTriangle {
   private final boolean mPrefix0; // whether to add a column [1,0,0,0...] at the left
   private final MemorySequence mSeq; // underlying sequence (= first column)
   private int mSkip = 0; // number of terms in underlying sequence to be skipped
-  private int mN = -1; // current index
+  private final int mN = -1; // current index
   private int mTri = -29; // next triangular number - for prefix0, not active with this setting
   private int mTrix = 0; // index of next triangular number
 
@@ -24,7 +23,7 @@ public class PartitionTransformTriangle extends BaseTriangle {
    * Constructor with sequence only.
    * @param seq underlying sequence
    */
-  public PartitionTransformTriangle(final Sequence seq) {
+  public PartitionTransformTriangle(final AbstractSequence seq) {
     this(0, seq, 0, "");
   }
 
@@ -33,7 +32,7 @@ public class PartitionTransformTriangle extends BaseTriangle {
    * @param offset first index
    * @param seq underlying sequence
    */
-  public PartitionTransformTriangle(final int offset, final Sequence seq) {
+  public PartitionTransformTriangle(final int offset, final AbstractSequence seq) {
     this(offset, seq, 0, "");
   }
 
@@ -43,7 +42,7 @@ public class PartitionTransformTriangle extends BaseTriangle {
    * @param seq underlying sequence
    * @param skip number of terms in underlying sequence to be skipped
    */
-  public PartitionTransformTriangle(final int offset, final Sequence seq, final int skip) {
+  public PartitionTransformTriangle(final int offset, final AbstractSequence seq, final int skip) {
     this(offset, seq, skip, "");
   }
 
@@ -53,7 +52,7 @@ public class PartitionTransformTriangle extends BaseTriangle {
    * @param seq underlying sequence
    * @param inverse whether to compute the inverse
    */
-  public PartitionTransformTriangle(final int offset, final Sequence seq, final boolean inverse) {
+  public PartitionTransformTriangle(final int offset, final AbstractSequence seq, final boolean inverse) {
     this(offset, seq, inverse, false);
   }
 
@@ -64,7 +63,7 @@ public class PartitionTransformTriangle extends BaseTriangle {
    * @param inverse whether to compute the inverse
    * @param accu whether to accumulate
    */
-  public PartitionTransformTriangle(final int offset, final Sequence seq, final boolean inverse, final boolean accu) {
+  public PartitionTransformTriangle(final int offset, final AbstractSequence seq, final boolean inverse, final boolean accu) {
     this(offset, seq, 0, (inverse ? "i" : "") + (accu ? "a" : ""));
   }
 
@@ -75,10 +74,10 @@ public class PartitionTransformTriangle extends BaseTriangle {
    * @param skip number of terms in underlying sequence to be skipped
    * @param mode String indicating variants: i=inverse, a=accumulate, p=prefix with column [1,0,0,...]
    */
-  public PartitionTransformTriangle(final int offset, final Sequence seq, final int skip, final String mode) {
+  public PartitionTransformTriangle(final int offset, final AbstractSequence seq, final int skip, final String mode) {
     super(offset, 0, 0, n -> n + 1); // no row or column shift
     mSkip = skip;
-    mSeq = mSkip == 0 ? MemorySequence.cachedSequence(seq) : MemorySequence.cachedSequence(new SkipSequence(seq, mSkip));
+    mSeq = mSkip == 0 ? MemorySequence.cachedSequence(seq) : MemorySequence.cachedSequence(seq.skip(mSkip));
     mAccumul = mode.indexOf('a') >= 0;
     mInverse = mode.indexOf('i') >= 0;
     mPrefix0 = mode.indexOf('p') >= 0;

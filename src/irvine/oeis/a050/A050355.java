@@ -1,7 +1,6 @@
 package irvine.oeis.a050;
 
 import irvine.oeis.NestedSequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a025.A025487;
 
 /**
@@ -12,7 +11,6 @@ public class A050355 extends NestedSequence {
 
   /** Construct the sequence. */
   public A050355() {
-    // Workaround for strange behaviour in A050354
-    super(1, new SkipSequence(new A050354(), 0), new A025487(), 1, 1);
+    super(1, new A050354(), new A025487(), 1, 1);
   }
 }

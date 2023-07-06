@@ -2,7 +2,7 @@ package irvine.oeis.a029;
 
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.SkipSequence;
+import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
  * A029936 Number of cusps of Gamma_1(n)\P_1(Q).
@@ -12,11 +12,6 @@ public class A029936 extends PrependSequence {
 
   /** Construct the sequence. */
   public A029936() {
-    super(1, new SkipSequence(new A029935(), 4) {
-      @Override
-      public Z next() {
-        return super.next().divide2();
-      }
-    }, 1, 2, 2, 3);
+    super(1, new SimpleTransformSequence(new A029935().skip(4), Z::divide2), 1, 2, 2, 3);
   }
 }

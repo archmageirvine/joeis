@@ -14,7 +14,7 @@ import irvine.util.string.Date;
  * <ul>
  * <li>the deviations from the offsets in the OEIS</li>
  * <li>whether the sequence extends AbstractSequence</li>
- * <li>whether the sequence still implements Sequence, without extending AbstractSequence</li>
+ * <li>whether the sequence stille implements SequenceWithOffset, without extending AbstractSequence</li>
  * </ul>
  * @author Georg Fischer
  */
@@ -53,7 +53,7 @@ public final class AbstractInspector {
           + "    mode = finite    : check number of terms against OEIS data\n"
           + "    mode = noabstract: which sequences do not extend AbstractSequence\n"
           + "    mode = offinspect: check getOffset against OEIS offsets\n"
-          + "    mode = seqwoffset: which sequences implement Sequence, but do not extend AbstractSequence\n"
+          + "    mode = seqwoffset: which sequences implement SequenceWithOffset, but do not extend AbstractSequence\n"
           + "    (only the first 5 letters of the mode are relevant)\n"
           + "    file contains tab-separated tuples: A-number, offset, superclass\n"
           );
@@ -107,16 +107,21 @@ public final class AbstractInspector {
                 }
 
               } else if (mode.startsWith("offin")) {
-                final int seqOffset = seq.getOffset();
-                if (seqOffset == parm1 || (seq instanceof DeadSequence)) {
-                  ++pass;
+                if (seq instanceof AbstractSequence) {
+                  final AbstractSequence seq2 = (AbstractSequence) seq;
+                  final int seqOffset = seq2.getOffset();
+                  if (seqOffset == parm1 || (seq2 instanceof DeadSequence)) {
+                    ++pass;
+                  } else {
+                    ++fail;
+                    System.out.println(aNumber + "\t" + seqOffset + " -> " + parm1 + "\t" + superClass);
+                  }
                 } else {
-                  ++fail;
-                  System.out.println(aNumber + "\t" + seqOffset + " -> " + parm1 + "\t" + superClass);
+                  ++miss;
                 }
 
               } else if (mode.startsWith("seqwo")) {
-                if (!(seq instanceof AbstractSequence)) {
+                if (seq instanceof Sequence && !(seq instanceof AbstractSequence)) {
                   ++fail;
                   System.out.println(aNumber + "\t" + parm1 + "\t" + superClass);
                 } else {
@@ -145,7 +150,8 @@ public final class AbstractInspector {
     // final String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
     // 2023-06-19      07:58:43        159501  Java classes =  43.8967 % out of        363355  OEIS sequences are implemented by jOEIS
     String subset = "";
-    if (mode.startsWith("finit")) {
+    if (false) {
+    } else if (mode.startsWith("finit")) {
       subset = " with wrong size of FiniteSequence";
     } else if (mode.startsWith("noabs")) {
       subset = " do not extend AbstractSequence";;
@@ -153,7 +159,7 @@ public final class AbstractInspector {
       total -= miss;
       subset = " with defined, but wrong offset";
     } else if (mode.startsWith("seqwo")) {
-      subset = " implement Sequence only";
+      subset = " implement SequenceWithOffset only";
     } else {
       System.err.println("invalid mode " + mode);
     }

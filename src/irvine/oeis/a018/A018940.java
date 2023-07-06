@@ -19,6 +19,15 @@ public class A018940 extends AbstractSequence {
     super(2);
   }
 
+  /**
+   * Constructor with offset.
+   * @param offset first index of subclass
+   */
+  public A018940(final int offset) {
+    super(offset);
+  }
+
+
   // We are given the quotient graph, which you can think of as the repeating unit.
   // We then have to find cycles in the full graph.  This is done with a depth first
   // search.  To speed up the search, we also maintain the shortest distance of

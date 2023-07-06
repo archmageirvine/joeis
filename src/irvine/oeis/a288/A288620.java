@@ -3,7 +3,6 @@ package irvine.oeis.a288;
 import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction;
-import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.group.IntegersModMul;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
@@ -11,6 +10,7 @@ import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionSequence;
 
 /**
  * A288620 Triangle read by rows: T(n,k) = number of step shifted (decimated) sequence structures of length n using exactly k different symbols.
@@ -20,6 +20,11 @@ public class A288620 extends MemoryFunctionSequence<Integer, CycleIndex> {
 
   private int mN = 0;
   private int mM = 0;
+
+  /** Construct the sequence. */
+  public A288620() {
+    super(1);
+  }
 
   private final MemoryFunction<Integer, CycleIndex> mS = new MemoryFunction<>() {
     @Override

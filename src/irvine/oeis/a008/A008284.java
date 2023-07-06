@@ -1,13 +1,18 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A008284 Triangle of partition numbers: T(n,k) = number of partitions of n in which the greatest part is k, 1 &lt;= k &lt;= n. Also number of partitions of n into k positive parts, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A008284 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A008284() {
+    super(1);
+  }
 
   @Override
   protected Z compute(final Long n, final Long k) {

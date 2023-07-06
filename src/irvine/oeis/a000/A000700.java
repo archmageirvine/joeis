@@ -14,6 +14,11 @@ public class A000700 extends A000593 {
   private final ArrayList<Z> mB = new ArrayList<>();
   private boolean mFirst = true;
 
+  /** Construct the sequence. */
+  public A000700() {
+    super(0);
+  }
+
   @Override
   public Z next() {
     if (mFirst) {

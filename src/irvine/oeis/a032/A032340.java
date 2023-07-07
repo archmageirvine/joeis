@@ -1,19 +1,22 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 
 /**
  * A032340 Number of identity bracelets with n labeled beads of 5 colors.
  * @author Sean A. Irvine
  */
-public class A032340 extends A032242 {
+public class A032340 extends Sequence1 {
 
+  private final Sequence mA = new A032242();
   private long mN = 0;
   private Z mF = Z.ONE;
 
   @Override
   public Z next() {
     mF = mF.multiply(++mN);
-    return super.next().multiply(mF);
+    return mA.next().multiply(mF);
   }
 }

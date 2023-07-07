@@ -4,6 +4,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.FiniteSequence;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.transform.WeighTransformSequence;
 
@@ -21,7 +22,7 @@ public class A052836 extends MemorySequence {
     if (n == 0) {
       return Z.ZERO;
     } else {
-      final WeighTransformSequence weigh = new WeighTransformSequence(this);
+      final WeighTransformSequence weigh = new WeighTransformSequence(new FiniteSequence(toList()));
       final Polynomial<Z> t = RING.empty();
       t.add(Z.ONE);
       for (int k = 0; k < n; ++k) {

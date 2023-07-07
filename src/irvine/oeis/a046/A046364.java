@@ -1,22 +1,17 @@
 package irvine.oeis.a046;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Z;
+import irvine.oeis.FilterSequence;
 import irvine.oeis.a071.A071904;
 
 /**
  * A046364 Odd numbers whose sum of prime factors is prime (counted with multiplicity).
  * @author Sean A. Irvine
  */
-public class A046364 extends A071904 {
+public class A046364 extends FilterSequence {
 
-  @Override
-  public Z next() {
-    while (true) {
-      final Z t = super.next();
-      if (Jaguar.factor(t).sopfr().isProbablePrime()) {
-        return t;
-      }
-    }
+  /** Construct the sequence. */
+  public A046364() {
+    super(1, new A071904(), k -> Jaguar.factor(k).sopfr().isProbablePrime());
   }
 }

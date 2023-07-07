@@ -21,25 +21,9 @@ else
     THIS_DIR="$(cd "$(dirname "${THIS_SCRIPT}")" 2>/dev/null && pwd -P)"
 fi
 
-# Allow JOEIS_MEM/JOEIS_JAVA_OPTS to be set before subcommand name
-while [[ "${1:0:4}" == "JOEIS_" ]]; do
-    if [[ "${1:0:8}" == "JOEIS_MEM=" ]]; then
-        JOEIS_MEM=${1:8}
-    elif [[ "${1:0:14}" == "JOEIS_JAVA_OPTS=" ]]; then
-        JOEIS_JAVA_OPTS=${1:14}
-    else
-        echo "Error: expected JOEIS_MEM=NNg or JOEIS_JAVA_OPTS=\"<jvm arguments>\", e.g.:"
-        echo "    $0 JOEIS_MEM=16g A45"
-        exit 1
-    fi
-    shift
-done
-
 JOEIS_JAVA="java"
 JAR="$THIS_DIR/joeis.jar"
 JOEIS_JAVA_OPTS=''         # Additional JVM options (e.g.: "-Djava.io.tmpdir=XXYY")
-JOEIS_MEM=''               # Maximum memory to use (e.g. 48g)
-JOEIS_MEM_PCT=90           # If JOEIS_MEM is not defined use this percentage of total RAM
 
 JOEIS_JAVA_OPTS_ARRAY=(${JOEIS_JAVA_OPTS})  # explicit word split into array
 
@@ -71,13 +55,9 @@ if [[ ! -z ${JOEIS_PROXY} ]]; then
   JOEIS_PROXY_ARRAY=("-Dhttp.proxyHost=${proxy_host}" "-Dhttp.proxyPort=${proxy_port}")
 fi
 
-if [[ -z "$JOEIS_MEM" ]]; then
-  JOEIS_MEM=$("$JOEIS_JAVA" -Xmx64m -cp "${JAR}" irvine.util.ChooseMemory ${JOEIS_MEM_PCT})
-fi
-
 # Now run the primary joeis command
 HSLOG=./hs_err_pid$$.log
-"$JOEIS_JAVA" -Djava.library.path="$THIS_DIR" -XX:ErrorFile=${HSLOG} "${JOEIS_JAVA_OPTS_ARRAY[@]}" "${JOEIS_PROXY_ARRAY[@]}" "-Xmx$JOEIS_MEM" -jar "${JAR}" "$@"
+"$JOEIS_JAVA" -Djava.library.path="$THIS_DIR" -XX:ErrorFile=${HSLOG} "${JOEIS_JAVA_OPTS_ARRAY[@]}" "${JOEIS_PROXY_ARRAY[@]}" -jar "${JAR}" "$@"
 ECODE=$?
 if [[ -f "${HSLOG}" ]]; then
     if grep -q "insufficient memory" "${HSLOG}"; then

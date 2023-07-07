@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a006.A006512;
 
 /**
- * A064403.
+ * A064408 Even numbers not the sum of a pair of the greater of the twin primes.
  * @author Sean A. Irvine
  */
 public class A064408 extends A006512 {

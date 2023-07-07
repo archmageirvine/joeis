@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A000057 Primes dividing all Fibonacci sequences.
+ * A064416 Number of integers q such that phiter(q)=n where phiter(n) = A064415(n).
  * @author Sean A. Irvine
  */
 public class A064416 extends Sequence0 {

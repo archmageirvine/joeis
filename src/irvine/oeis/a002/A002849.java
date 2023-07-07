@@ -9,7 +9,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.util.Pair;
 
 /**
- * A002849 Maximal number of disjoint subsets {X,Y,Z} of {1, 2, ..., n}, each satisfying X + Y = Z.
+ * A002849 Number of maximal collections of pairwise disjoint subsets {X,Y,Z} of {1, 2, ..., n}, each satisfying X + Y = Z.
  * @author Sean A. Irvine
  */
 public class A002849 extends AbstractSequence {

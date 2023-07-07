@@ -4,7 +4,7 @@ package irvine.oeis.a288;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A288156 Two even followed by three odd integers: the pattern is (0+2k,0+2k,1+2k,1+2k,1+2k) for k&gt;=0.
+ * A288156 Two even followed by three odd integers: the pattern is (0+2k, 0+2k, 1+2k, 1+2k, 1+2k) for k &gt;= 0.
  * @author Georg Fischer
  */
 public class A288156 extends GeneratingFunctionSequence {

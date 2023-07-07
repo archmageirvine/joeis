@@ -4,7 +4,7 @@ import irvine.oeis.a073.A073004;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A064403.
+ * A094644 Continued fraction for e^gamma.
  * @author Sean A. Irvine
  */
 public class A094644 extends ContinuedFractionSequence {

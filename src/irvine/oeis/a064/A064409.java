@@ -9,7 +9,7 @@ import irvine.oeis.a001.A001359;
 import irvine.oeis.a006.A006512;
 
 /**
- * A064403.
+ * A064409 Even numbers not the sum of a pair of twin primes, one the lesser and the other the greater.
  * @author Sean A. Irvine
  */
 public class A064409 extends Sequence1 {

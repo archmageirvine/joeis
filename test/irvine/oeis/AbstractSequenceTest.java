@@ -50,7 +50,7 @@ public class AbstractSequenceTest extends TestCase {
   }
 
   private String getTestVector(final int id) throws IOException {
-    final String path = "irvine/oeis/seq/" + id / LINES_PER_FILE;
+    final String path = "irvine/oeis/seq/" + String.format("%03d", id / LINES_PER_FILE);
     try (final BufferedReader r = IOUtils.reader(path)) {
       final int skip = id % LINES_PER_FILE;
       for (int k = 0; k < skip; ++k) {

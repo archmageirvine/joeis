@@ -4,9 +4,9 @@
 #
 SHELL=/bin/bash
 
-all: seq/0
+all: seq/000
 
-seq/0: stripped.gz
+seq/000: stripped.gz
 	# 370[000] is above current number of sequences in OEIS as of 2023
 	# Sometimes later sequences can be missing if the sequence is not yet submitted
 	# We need to detect this and put in placeholders

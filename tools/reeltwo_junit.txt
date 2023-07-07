@@ -1,0 +1,69 @@
+SOURCE: In cvs under test/junit...
+LICENSE: Owned by Reel Two
+REBUILDING:
+
+cd test/junit/textui
+ant -noclasspath
+
+
+USAGE: 
+
+java [JAVA_OPTIONS] junit.textui.ReelTwoTestRunner <testclass>
+
+
+FUNCTIONALITY PROVIDED BY THIS TESTRUNNER:
+
+
+1) Print the name of each test when being run
+
+-Djunit.printNames=true
+
+
+2) Print a summary of test execution time, sorted by time.
+
+-Djunit.timing=true
+
+
+3) Only execute tests with names matching supplied substring (exact
+match only, no regexps)
+
+-Djunit.testFilter=<substring>
+
+
+4) Look for objects not cleared during teardown (to prevent memory
+leaks during large runs).
+
+-Djunit.residual=true
+
+Some objects are not counted as leaks (char[], Object[], Vector,
+TestSuite, String), mostly because they are created by the junit test
+infrastructure itself.  Additional classnames to be excluded can be
+read, one classname per line, from a file:
+
+-Djunit.teardown.excludes=<filename>
+
+
+5) Write out the names of failing tests to a file (to allow later
+rerunning of only those tests).
+
+-Djunit.writeFailures=true
+
+Defaults to $HOME/.junit-test-failures
+Override the name of the file to write with:
+
+-Djunit.failureFile=<filename>
+
+(You can later run rerun just those tests listed in the file by
+invoking the ReelTwoTestRunner with the -f <filename> argument instead
+of the name of a test class.)
+
+
+6) Skip tests that take too long to run (based on historical timings)
+
+-Djunit.timelimit=<num secs>
+
+Stores timing information in $HOME/.junit-test-timings.props
+Override the name of the file with:
+
+-Djunit.timeFile=<filename>
+

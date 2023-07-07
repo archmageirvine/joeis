@@ -16,7 +16,8 @@
   </taskdef>
 
   <target name="clean">
-    <delete dir="${build.dir}"/>
+    <delete failonerror="false" dir="${build.dir}"/>
+    <delete failonerror="false" file="${test.dir}/irvine/oeis/stripped.gz" />    
   </target>
 
   <target name="compile-grammar" description="Compile the ANTLR grammar">
@@ -184,9 +185,10 @@
     </subant>
   </target>
 
-  <target name="all-tests" depends="prepare-tests" description="Run all jUnit tests">
+  <target name="all-tests" depends="prepare-tests,all-jar" description="Run all jUnit tests">
     <!-- may take more than 2 hours -->
-    <java classname="AllTests" classpath="${build.dir}/joeis.jar" fork="true">
+    <java classname="AllTests" classpath="${tools.dir}/reeltwo_junit.jar:${build.dir}/joeis.jar" fork="true">
+      <jvmarg value="-Djunit.printNames=true"/>
     </java>
   </target>
 

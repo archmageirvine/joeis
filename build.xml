@@ -187,7 +187,8 @@
 
   <target name="all-tests" depends="prepare-tests,all-jar" description="Run all jUnit tests">
     <!-- may take more than 2 hours -->
-    <java classname="AllTests" classpath="${tools.dir}/reeltwo_junit.jar:${build.dir}/joeis.jar" fork="true">
+    <java classname="junit.textui.ReelTwoTestRunner" classpath="${tools.dir}/reeltwo_junit.jar:${build.dir}/joeis.jar" fork="true">
+      <arg value="AllTests"/>                                    
       <jvmarg value="-Djunit.printNames=true"/>
     </java>
   </target>

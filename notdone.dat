@@ -1544,14 +1544,6 @@ A047709 Low-temperature series in u = exp(-4J/kT) for ferromagnetic susceptibili
 A047710 Low temperature series associated with square lattice, depends A002979
 A047711 High-temperature coefficients for b.c.c. lattice.
 A047712 High-temperature coefficients for f.c.c. lattice.
-A047729 Number of score sequences in tournament with n players, when 3 points are awarded in each game (method of A007747 may not be applicable here)
-A047730 Number of score sequences in tournament with n players, when 4 points are awarded in each game
-A047731 Number of score sequences in tournament with n players, when 5 points are awarded in each game
-A047733 Number of score sequences in tournament with n players, when 6 points are awarded in each game
-A047734 Number of score sequences in tournament with n players, when 7 points are awarded in each game
-A047735 Number of score sequences in tournament with n players, when 8 points are awarded in each game
-A047736 Number of score sequences in tournament with n players, when 9 points are awarded in each game
-A047737 Number of score sequences in tournament with n players, when 10 points are awarded in each game
 A047837 Honaker's triangle problem: form a triangle with base of length n, all entries different, all row sums equal; a(n) gives minimal row sum. (attempted backtracking search too slow)
 A047875 Size of smallest polyomino with surround number n (the surround number of a polyomino is the number of different ways that it can be surrounded by non-overlapping copies of the same polyomino).
 A047896 For given n, consider all 4-tuples P = (a,b,c,d) with P.P = n; let d = squared distance to the line OP from the closest point of Z^n (excluding the endpoints); sequence gives max_P d*n.
@@ -2208,3 +2200,4 @@ A064060 Number of connected, homeomorphically irreducible (also called series-re
 A064120	A036981(n)/n!^2
 A064163 Theta series of the 71-dimensional sublattice orthogonal to a norm 8 vector of the putative extremal 72-dimensional even unimodular lattice.
 A064356 Dimension of J_(12n,n+1), the Jacobi form of weight 12n and index n+1
+A064436 Number of switching functions of n or fewer variables which cannot be realized as threshold gates.

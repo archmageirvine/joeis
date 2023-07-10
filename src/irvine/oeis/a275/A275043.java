@@ -1,11 +1,12 @@
 package irvine.oeis.a275;
+// manually at 2023-07-08
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A275043 Number A(n,k) of set partitions of [k*n] such that within each block the numbers of elements from all residue classes modulo k are equal for k&gt;0, A(n,0)=1; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
+ * A275043 Number A(n,k) of set partitions of [k*n] such that within each block the numbers of elements from all residue classes modulo k are equal for k&gt;0, A(n, 0)=1; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * from all residue classes modulo k are equal for k&gt;0, A(n, 0)=1; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
@@ -13,7 +14,7 @@ public class A275043 extends UpperLeftTriangle {
 
   /** Construct the sequence. */
   public A275043() {
-    super(0);
+    super(0, 0, 0, -1);
   }
 
   /* Maple:

@@ -1,22 +1,30 @@
 package irvine.oeis.a053;
 
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.triangle.Triangle;
+import irvine.oeis.triangle.BaseTriangle;
 
 /**
  * A053120 Triangle of coefficients of Chebyshev's T(n,x) polynomials (powers of x in increasing order).
- * a(n, m) = 2*a(n-1, m-1) - a(n-2, m).
  * @author Georg Fischer
  */
-public class A053120 extends Triangle {
+public class A053120 extends BaseTriangle {
 
   /** Construct the sequence. */
   public A053120() {
-    super("1, 0, 1");
+    super(0, 0, 0);
+    hasRAM(true);
   }
 
   @Override
-  public Z compute(final int n, final int k) {
-    return n <= 1 ? super.compute(n, k) : get(n - 1, k - 1).multiply2().subtract(get(n - 2, k));
+  public Z triangleElement(final int n, final int m) {
+    // T(n, m) := 0 if n < m or n+m odd; T(n, m) = (-1)^(n/2) if m=0 (n even); otherwise T(n, m) = ((-1)^((n+m)/2 + m))*(2^(m-1))*n*binomial((n+m)/2-1, m-1)/m.
+    if (((n + m) & 1) == 1) {
+      return Z.ZERO;
+    }
+    if (m == 0 && (n & 1) == 0) {
+      return (((n / 2) & 1) == 0) ? Z.ONE : Z.NEG_ONE;
+    }
+    return Binomial.binomial((n + m) / 2 - 1, m - 1).multiply(n).multiply(Z.ONE.shiftLeft(m - 1)).multiply(((((n + m) / 2 + m) & 1) == 0) ? 1 : -1).divide(m);
   }
 }

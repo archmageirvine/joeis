@@ -11,6 +11,6 @@ public class A003671 extends DoubleDecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A003671() {
-    super(PhysicsConstants.BOHR_RADIUS, PhysicsConstants.BOHR_RADIUS_UNC);
+    super(0, PhysicsConstants.BOHR_RADIUS, PhysicsConstants.BOHR_RADIUS_UNC);
   }
 }

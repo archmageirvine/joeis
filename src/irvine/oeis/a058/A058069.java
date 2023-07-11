@@ -11,6 +11,6 @@ public class A058069 extends ContinuedFractionNumeratorSequence {
 
   /** Construct the sequence. */
   public A058069() {
-    super(new DecimalExpansionSequence(A058068.CHAMPERKNOWNE_CONSTANT));
+    super(0, new DecimalExpansionSequence(A058068.CHAMPERKNOWNE_CONSTANT));
   }
 }

@@ -10,6 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class MorphismTransform extends MorphismFixedPointSequence {
 
+  private static final int DEFOFF = 1;
   protected static final int MAX_SRC = 16; // pull so many terms from the underlying sequence
   protected Sequence mSeq; // underlying sequence
   protected StringBuilder mSrcWord; // portion of the word of the underlying sequence
@@ -20,10 +21,12 @@ public class MorphismTransform extends MorphismFixedPointSequence {
 
   /**
    * Construct an instance which transforms the underlying sequence by some replacements
+   * @param offset first index of target sequence
    * @param seq underlying <code>(MorphismFixedPoint)Sequence</code>
    * @param mappings pairs of digit string mappings, for example "0-&gt;001,1-&gt;0", also "111-&gt;" (remove "111").
    */
-  public MorphismTransform(final Sequence seq, final String mappings) {
+  public MorphismTransform(final int offset, final Sequence seq, final String mappings) {
+    super(offset);
     mSeq = seq;
     configure("", "", mappings); // only to store the mappings into the data structure
     mSrcWord = new StringBuilder(MAX_SRC);
@@ -31,7 +34,7 @@ public class MorphismTransform extends MorphismFixedPointSequence {
     mTarWord = new StringBuilder(MAX_SRC);
     mTarPos = 1;
     mLookAhead = 1;
-    int imap = 0; 
+    int imap = 0;
     while (imap < mMap.length) { // determine the maximum look-ahead
       final String searchFor = mMap[imap++];
       ++imap; // skip replaceBy
@@ -39,6 +42,15 @@ public class MorphismTransform extends MorphismFixedPointSequence {
         mLookAhead = searchFor.length();
       }
     }
+  }
+
+  /**
+   * Construct an instance which transforms the underlying sequence by some replacements
+   * @param seq underlying <code>(MorphismFixedPoint)Sequence</code>
+   * @param mappings pairs of digit string mappings, for example "0-&gt;001,1-&gt;0", also "111-&gt;" (remove "111").
+   */
+  public MorphismTransform(final Sequence seq, final String mappings) {
+    this(DEFOFF, seq, mappings);
   }
 
   /**

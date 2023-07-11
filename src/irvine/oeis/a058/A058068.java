@@ -30,6 +30,6 @@ public class A058068 extends ContinuedFractionDenominatorSequence {
 
   /** Construct the sequence. */
   public A058068() {
-    super(new DecimalExpansionSequence(CHAMPERKNOWNE_CONSTANT));
+    super(0, new DecimalExpansionSequence(CHAMPERKNOWNE_CONSTANT));
   }
 }

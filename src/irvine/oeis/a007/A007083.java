@@ -12,7 +12,7 @@ public class A007083 extends ParallelPlantriSequence {
 
   /** Construct the sequence. */
   public A007083() {
-    super(3, 0);
+    super(2, 3, 0);
   }
 
   @Override

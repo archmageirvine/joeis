@@ -11,6 +11,6 @@ public class A081820 extends DoubleDecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A081820() {
-    super(PhysicsConstants.STEFAN_BOLTZMANN, PhysicsConstants.STEFAN_BOLTZMANN_UNC, true);
+    super(-7, PhysicsConstants.STEFAN_BOLTZMANN, PhysicsConstants.STEFAN_BOLTZMANN_UNC, true);
   }
 }

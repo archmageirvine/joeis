@@ -8,12 +8,23 @@ import irvine.math.z.Z;
  */
 public class DistinctAdditiveClosureSequence extends DistinctMultiplicativeClosureSequence {
 
+  private static final int DEFOFF = 1;
+
+  /**
+   * Construct the additive closure of distinct elements of another sequence.
+   * @param offset first index of target sequence
+   * @param seq underlying sequence.
+   */
+  public DistinctAdditiveClosureSequence(final int offset, final Sequence seq) {
+    super(offset, seq, Z.ZERO);
+  }
+
   /**
    * Construct the additive closure of distinct elements of another sequence.
    * @param seq underlying sequence.
    */
   public DistinctAdditiveClosureSequence(final Sequence seq) {
-    super(seq, Z.ZERO);
+    super(DEFOFF, seq, Z.ZERO);
   }
 
   @Override

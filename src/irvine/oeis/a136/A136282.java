@@ -1,5 +1,5 @@
 package irvine.oeis.a136;
-// manually (binomx) at 2021-06-28 
+// manually (binomx) at 2021-06-28
 
 import irvine.oeis.a110.A110041;
 import irvine.oeis.transform.BinomialTransformSequence;
@@ -12,7 +12,7 @@ public class A136282 extends BinomialTransformSequence {
 
   /** Construct the sequence. */
   public A136282() {
-    super(new A110041(), 0);
+    super(1, new A110041(), 0);
     skip();
   }
 }

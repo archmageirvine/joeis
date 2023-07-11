@@ -11,6 +11,7 @@ import irvine.oeis.AbstractSequence;
  */
 public abstract class DoubleDecimalExpansionSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 1;
   private double mValue;
   private double mUncertainty;
 
@@ -34,11 +35,15 @@ public abstract class DoubleDecimalExpansionSequence extends AbstractSequence {
   }
 
   protected DoubleDecimalExpansionSequence(final double value, final double uncertainty, final boolean trimLeadingZeros) {
-    this(1, value, uncertainty, trimLeadingZeros);
+    this(DEFOFF, value, uncertainty, trimLeadingZeros);
+  }
+
+  protected DoubleDecimalExpansionSequence(final int offset, final double value, final double uncertainty) {
+    this(offset, value, uncertainty, false);
   }
 
   protected DoubleDecimalExpansionSequence(final double value, final double uncertainty) {
-    this(value, uncertainty, false);
+    this(DEFOFF, value, uncertainty, false);
   }
 
   @Override

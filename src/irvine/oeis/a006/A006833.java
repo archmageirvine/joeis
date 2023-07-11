@@ -18,6 +18,6 @@ public class A006833 extends DoubleDecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A006833() {
-    super(PhysicsConstants.NEUTRON_MASS / PhysicsConstants.ELECTRON_MASS, error());
+    super(4, PhysicsConstants.NEUTRON_MASS / PhysicsConstants.ELECTRON_MASS, error());
   }
 }

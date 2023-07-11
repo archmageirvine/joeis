@@ -11,6 +11,6 @@ public class A061560 extends FilterSequence {
 
   /** Construct the sequence. */
   public A061560() {
-    super(new A005728(), NONPRIME);
+    super(1, new A005728(), NONPRIME);
   }
 }

@@ -11,6 +11,6 @@ public class A070058 extends DoubleDecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A070058() {
-    super(PhysicsConstants.GRAVITATION_CONSTANT, PhysicsConstants.GRAVITATION_CONSTANT_UNC, true);
+    super(-10, PhysicsConstants.GRAVITATION_CONSTANT, PhysicsConstants.GRAVITATION_CONSTANT_UNC, true);
   }
 }

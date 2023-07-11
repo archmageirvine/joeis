@@ -12,54 +12,60 @@ public class WrappedConstantTriangle extends WrappedRecurrence {
 
   /**
    * Triangle with the same sequence for both borders.
+   * @param offset first index of target sequence
    * @param seqLeft sequence for both borders <code>T(n,0)</code>
    */
-  public WrappedConstantTriangle(final Sequence seqLeft) {
-    super(seqLeft);
+  public WrappedConstantTriangle(final int offset, final Sequence seqLeft) {
+    super(offset, seqLeft);
   }
 
   /**
    * Triangle with a value for both borders.
+   * @param offset first index of target sequence
    * @param constLeft constant for both borders <code>T(n,0)</code> and <code>T(n,n)</code>
    */
-  public WrappedConstantTriangle(final String constLeft) {
-    super(constLeft);
+  public WrappedConstantTriangle(final int offset, final String constLeft) {
+    super(offset, constLeft);
   }
 
   /**
    * Triangle with two sequences for the borders.
+   * @param offset first index of target sequence
    * @param seqLeft sequence for the left border <code>T(n,0)</code>
    * @param seqRight sequence for the right border <code>T(n,n)</code>; this overwrites <code>T(0,0)</code>
    */
-  public WrappedConstantTriangle(final Sequence seqLeft, final Sequence seqRight) {
-    super(seqLeft, seqRight);
+  public WrappedConstantTriangle(final int offset, final Sequence seqLeft, final Sequence seqRight) {
+    super(offset, seqLeft, seqRight);
   }
 
   /**
    * Triangle with a sequence and a value for the borders.
+   * @param offset first index of target sequence
    * @param seqLeft sequence for the left border <code>T(n,0)</code>
    * @param constRight constant right border <code>T(n,n)</code>; this overwrites <code>T(0,0)</code>;
    */
-  public WrappedConstantTriangle(final Sequence seqLeft, final String constRight) {
-    super(seqLeft, constRight);
+  public WrappedConstantTriangle(final int offset, final Sequence seqLeft, final String constRight) {
+    super(offset, seqLeft, constRight);
   }
 
   /**
    * Triangle with a value and a sequence for the borders.
+   * @param offset first index of target sequence
    * @param constLeft constant left border <code>T(n,0)</code>
    * @param seqRight sequence for the right border <code>T(n,n)</code>; this overwrites <code>T(0,0)</code>
    */
-  public WrappedConstantTriangle(final String constLeft, final Sequence seqRight) {
-    super(constLeft, seqRight);
+  public WrappedConstantTriangle(final int offset, final String constLeft, final Sequence seqRight) {
+    super(offset, constLeft, seqRight);
   }
 
   /**
    * Triangle with two values for the borders.
+   * @param offset first index of target sequence
    * @param constLeft constant left border <code>T(n,0)</code>
    * @param constRight constant right border <code>T(n,n)</code>; this overwrites <code>T(0,0)</code>
    */
-  public WrappedConstantTriangle(final String constLeft, final String constRight) {
-    super(constLeft, constRight);
+  public WrappedConstantTriangle(final int offset, final String constLeft, final String constRight) {
+    super(offset, constLeft, constRight);
   }
 
   /**

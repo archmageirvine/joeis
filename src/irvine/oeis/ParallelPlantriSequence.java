@@ -21,19 +21,28 @@ public abstract class ParallelPlantriSequence extends AbstractSequence {
 
   /**
    * Construct a new parallel execution of Plantri.
+   * @param offset first index of target sequence
    * @param start one less than the first term (number of vertices)
    * @param firstNonZero first nonzero term
    */
-  protected ParallelPlantriSequence(final int start, final int firstNonZero) {
-    super(start + 1);
+  protected ParallelPlantriSequence(final int offset, final int start, final int firstNonZero) {
+    super(offset);
     mN = start;
     mFirstNonZero = firstNonZero;
   }
 
   /**
+   * Construct a new parallel execution of Plantri.
+   * @param start one less than the first term (number of vertices)
+   * @param firstNonZero first nonzero term
+   */
+  protected ParallelPlantriSequence(final int start, final int firstNonZero) {
+    this(start + 1, start, firstNonZero);
+  }
+
+  /**
    * Test if the current Plantri graph state should be included in the count.
    * This implementation must be thread safe.
-   *
    * @param plantri Plantri engine
    * @param state Plantri state
    * @return true iff this state should be counted

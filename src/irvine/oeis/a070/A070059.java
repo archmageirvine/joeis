@@ -11,6 +11,6 @@ public class A070059 extends DoubleDecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A070059() {
-    super(PhysicsConstants.u2kg(PhysicsConstants.PROTON_MASS), PhysicsConstants.u2kg(PhysicsConstants.PROTON_MASS_UNC), true);
+    super(-26, PhysicsConstants.u2kg(PhysicsConstants.PROTON_MASS), PhysicsConstants.u2kg(PhysicsConstants.PROTON_MASS_UNC), true);
   }
 }

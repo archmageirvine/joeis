@@ -12,9 +12,9 @@ import irvine.util.io.IOUtils;
  */
 public class A019067 extends A018940 {
 
-  @Override
-  protected int step() {
-    return 1;
+  /** Construct the sequence. */
+  public A019067() {
+    super(3, 1);
   }
 
   @Override

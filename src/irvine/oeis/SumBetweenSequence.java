@@ -13,6 +13,7 @@ import irvine.oeis.a026.A026276;
  */
 public class SumBetweenSequence extends A026276 {
 
+  private static final int DEFOFF = 1;
   private final Sequence mS;
   private final TreeMap<Long, Z> mDone = new TreeMap<>();
   private TreeMap<Long, Z> mInProgress = new TreeMap<>();
@@ -20,10 +21,12 @@ public class SumBetweenSequence extends A026276 {
 
   /**
    * Sum between sequence.
+   * @param offset first index of target sequence
    * @param seq underlying sequence
    * @param min smallest value
    */
-  public SumBetweenSequence(final Sequence seq, final long min) {
+  public SumBetweenSequence(final int offset, final Sequence seq, final long min) {
+    super(offset);
     mS = seq;
     mN = min - 1;
   }
@@ -31,9 +34,27 @@ public class SumBetweenSequence extends A026276 {
   /**
    * Sum between sequence.
    * @param seq underlying sequence
+   * @param min smallest value
+   */
+  public SumBetweenSequence(final Sequence seq, final long min) {
+    this(DEFOFF, seq, min);
+  }
+
+  /**
+   * Sum between sequence.
+   * @param offset first index of target sequence
+   * @param seq underlying sequence
+   */
+  public SumBetweenSequence(final int offset, final Sequence seq) {
+    this(offset, seq, 1);
+  }
+
+  /**
+   * Sum between sequence.
+   * @param seq underlying sequence
    */
   public SumBetweenSequence(final Sequence seq) {
-    this(seq, 1);
+    this(DEFOFF, seq, 1);
   }
 
   @Override

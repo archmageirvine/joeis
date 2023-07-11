@@ -15,7 +15,7 @@ public class A058276 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A058276() {
-    super(0, 0, false, false, false);
+    super(0, 0, 0, false, false, false);
   }
 
   @Override

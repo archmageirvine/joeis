@@ -11,7 +11,7 @@ public class A035350 extends BikTransformSequence {
 
   /** Construct the sequence. */
   public A035350() {
-    super(new A000237(), 1);
+    super(0, new A000237(), 1);
   }
 }
 

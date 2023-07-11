@@ -12,7 +12,7 @@ public class A007832 extends Stirling2TransformSequence {
 
   /** Construct the sequence. */
   public A007832() {
-    super(new PrependSequence(new A007831(), Z.ZERO), 0);
+    super(1, new PrependSequence(new A007831(), Z.ZERO), 0);
     next();
   }
 }

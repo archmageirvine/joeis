@@ -12,7 +12,7 @@ public class A144225 extends WrappedRecurrence {
 
   /** Construct the sequence. */
   public A144225() {
-    super(new A000007());
+    super(1, new A000007());
     setPlus(new A000007());
   }
 }

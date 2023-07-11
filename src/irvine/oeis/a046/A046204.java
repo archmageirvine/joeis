@@ -10,6 +10,6 @@ public class A046204 extends DistinctSequence {
 
   /** Construct the sequence. */
   public A046204() {
-    super(new A046203());
+    super(1, new A046203());
   }
 }

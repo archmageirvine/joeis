@@ -12,6 +12,6 @@ public class A054089 extends AlternatingSequence {
 
   /** Construct the sequence. */
   public A054089() {
-    super(new A026351(), new A026352().skip(1));
+    super(1, new A026351(), new A026352().skip(1));
   }
 }

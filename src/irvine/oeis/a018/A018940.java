@@ -16,15 +16,17 @@ public class A018940 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A018940() {
-    super(2);
+   this(2, 2);
   }
 
   /**
-   * Constructor with offset.
+   * Constructor with offset and step.
    * @param offset first index of subclass
+   * @param step 1 or 2
    */
-  public A018940(final int offset) {
+  public A018940(final int offset, final int step) {
     super(offset);
+    mStep = step;
   }
 
 
@@ -55,6 +57,7 @@ public class A018940 extends AbstractSequence {
   private int mD;
   private int mNodeMask;
   private int mOrigin;
+  private int mStep;
 
   // Minimum distance from origin + 1 (uses 0 as sentinel)
   private byte[] mDistance;
@@ -206,14 +209,10 @@ public class A018940 extends AbstractSequence {
     }
   }
 
-  protected int step() {
-    return 2;
-  }
-
   @Override
   public Z next() {
     init();
-    mN += step();
+    mN += mStep;
     if (mN >= (1 << (BITS_PER_COORD - 1))) {
       throw new UnsupportedOperationException(); // exceeds implementation limits
     }

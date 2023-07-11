@@ -19,11 +19,19 @@ public class LittleHankelTransform extends AbstractSequence {
    * Construct the little Hankel transform of the given sequence.
    * @param seq sequence
    */
-  public LittleHankelTransform(final Sequence seq) {
-    super(DEFOFF);
+  public LittleHankelTransform(final int offset, final Sequence seq) {
+    super(offset);
     mSeq = seq;
     mA = mSeq.next();
     mB = mSeq.next();
+  }
+
+  /**
+   * Construct the little Hankel transform of the given sequence.
+   * @param seq sequence
+   */
+  public LittleHankelTransform(final Sequence seq) {
+    this(DEFOFF, seq);
   }
 
   @Override

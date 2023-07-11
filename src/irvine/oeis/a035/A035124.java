@@ -13,7 +13,7 @@ public class A035124 extends FilterSequence {
 
   /** Construct the sequence. */
   public A035124() {
-    super(new A000578(), cube -> cube.mod(10) != 0 && !StringUtils.isPalindrome(cube.toString()) && ZUtils.isCube(ZUtils.reverse(cube)));
+    super(1, new A000578(), cube -> cube.mod(10) != 0 && !StringUtils.isPalindrome(cube.toString()) && ZUtils.isCube(ZUtils.reverse(cube)));
   }
 }
 

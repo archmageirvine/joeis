@@ -10,7 +10,7 @@ public class A008510 extends FilterSequence {
 
   /** Construct the sequence. */
   public A008510() {
-    super(new A008509(), PALINDROME);
+    super(1, new A008509(), PALINDROME);
   }
 }
 

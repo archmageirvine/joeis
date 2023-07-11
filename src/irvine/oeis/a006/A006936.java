@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.transform.MobiusTransformSequence;
 import irvine.oeis.a000.A000670;
+import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
  * A006936 Moebius transform of numbers of preferential arrangements.
@@ -11,6 +11,6 @@ public class A006936 extends MobiusTransformSequence {
 
   /** Construct the sequence. */
   public A006936() {
-    super(new A000670(), 0);
+    super(0, new A000670(), 0);
   }
 }

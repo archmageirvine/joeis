@@ -11,6 +11,6 @@ public class A034005 extends DigitSequence {
 
   /** Construct the sequence. */
   public A034005() {
-    super(new A000108());
+    super(0, new A000108());
   }
 }

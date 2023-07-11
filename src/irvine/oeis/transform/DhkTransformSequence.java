@@ -11,16 +11,17 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
 
 /**
  * DHK transform.
  * @author Sean A. Irvine
  */
-public class DhkTransformSequence extends Sequence1 {
+public class DhkTransformSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 1;
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
 
   /**
@@ -58,12 +59,22 @@ public class DhkTransformSequence extends Sequence1 {
 
   /**
    * Construct a new DHK transform sequence.
+   * @param offset first index of target sequence
    * @param seq underlying sequence.
    */
-  public DhkTransformSequence(final Sequence seq) {
+  public DhkTransformSequence(final int offset, final Sequence seq) {
+    super(offset);
     mSeq = seq;
     mA.add(Q.ZERO);
     mA.add(new Q(mSeq.next()));
+  }
+
+  /**
+   * Construct a new DHK transform sequence.
+   * @param seq underlying sequence.
+   */
+  public DhkTransformSequence(final Sequence seq) {
+    this(DEFOFF, seq);
   }
 
   @Override

@@ -8,9 +8,9 @@ import irvine.oeis.a018.A018940;
  */
 public class A019247 extends A018940 {
 
-  @Override
-  protected int step() {
-    return 1;
+  /** Construct the sequence. */
+  public A019247() {
+    super(3, 1);
   }
 
   @Override

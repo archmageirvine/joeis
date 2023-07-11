@@ -4,15 +4,16 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
 
 /**
  * A sequence comprising the reversible, indistinct, unlabeled transform.
  * @author Sean A. Irvine
  */
-public class BikTransformSequence extends Sequence1 {
+public class BikTransformSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 1;
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> TWO = Polynomial.create(2);
   private final Sequence mSeq;
@@ -21,14 +22,25 @@ public class BikTransformSequence extends Sequence1 {
 
   /**
    * Creates a new reversible, indistinct, unlabeled transform.
+   * @param offset first index of target sequence
    * @param seq underlying sequence
    * @param skip number of terms to skip
    */
-  public BikTransformSequence(final Sequence seq, final int skip) {
+  public BikTransformSequence(final int offset, final Sequence seq, final int skip) {
+    super(offset);
     mSeq = seq;
     for (int k = 0; k < skip; ++k) {
       seq.next();
     }
+  }
+
+  /**
+   * Creates a new reversible, indistinct, unlabeled transform.
+   * @param seq underlying sequence
+   * @param skip number of terms to skip
+   */
+  public BikTransformSequence(final Sequence seq, final int skip) {
+    this(DEFOFF, seq, skip);
   }
 
   /**

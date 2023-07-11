@@ -12,7 +12,7 @@ public class A346615 extends MobiusTransformSequence {
 
   /** Construct the sequence. */
   public A346615() {
-    super(new A344005(), 0);
+    super(0, new A344005(), 0);
     next();
   }
 }

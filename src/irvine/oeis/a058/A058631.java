@@ -6,7 +6,7 @@ import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A058631 Continued fraction for the Morse-Thue constant .01101001100101101001... formed from A010060.
- * @author Georg Fischer
+ * @author Georg Fischer.
  */
 public class A058631 extends ContinuedFractionSequence {
 

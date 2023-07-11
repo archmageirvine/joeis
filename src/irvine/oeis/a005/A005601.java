@@ -18,6 +18,6 @@ public class A005601 extends DoubleDecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A005601() {
-    super(PhysicsConstants.PROTON_MASS / PhysicsConstants.ELECTRON_MASS, error());
+    super(4, PhysicsConstants.PROTON_MASS / PhysicsConstants.ELECTRON_MASS, error());
   }
 }

@@ -15,7 +15,7 @@ public class A033886 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A033886() {
-    super(0, 0, false, false, false);
+    super(0, 0, 0, false, false, false);
   }
 
   @Override

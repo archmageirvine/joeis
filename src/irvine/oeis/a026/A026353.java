@@ -10,6 +10,6 @@ public class A026353 extends SumBetweenSequence {
 
   /** Construct the sequence. */
   public A026353() {
-    super(new A026350(), 2);
+    super(2, new A026350(), 2);
   }
 }

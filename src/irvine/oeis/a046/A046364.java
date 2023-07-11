@@ -12,6 +12,6 @@ public class A046364 extends FilterSequence {
 
   /** Construct the sequence. */
   public A046364() {
-    super(1, new A071904(), k -> Jaguar.factor(k).sopfr().isProbablePrime());
+    super(0, new A071904(), k -> Jaguar.factor(k).sopfr().isProbablePrime());
   }
 }

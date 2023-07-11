@@ -11,6 +11,6 @@ public class A007466 extends ExponentialConvolutionSequence {
 
   /** Construct the sequence. */
   public A007466() {
-    super(new A000027());
+    super(1, new A000027());
   }
 }

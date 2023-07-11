@@ -12,6 +12,6 @@ public class A060689 extends Combiner {
 
   /** Construct the sequence. */
   public A060689() {
-    super(new A000001().skip(1), new A000688(), SUBTRACT);
+    super(1, new A000001().skip(1), new A000688(), SUBTRACT);
   }
 }

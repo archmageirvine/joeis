@@ -1,10 +1,10 @@
 package irvine.oeis.transform;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * Compute the WEIGH transform of another sequence.  Corresponds to <code>weighout</code>
@@ -13,15 +13,26 @@ import irvine.oeis.Sequence;
  */
 public class WeighTransformSequence extends MemoryFunction2Sequence<Integer, Z> {
 
+  private static final int DEFOFF = 0;
   private final MemorySequence mH;
   private int mN = -1;
+
+  /**
+   * Construct the weigh transform of the given sequence.
+   * @param offset first index of target sequence
+   * @param seq sequence
+   */
+  public WeighTransformSequence(final int offset, final Sequence seq) {
+    super(offset);
+    mH = MemorySequence.cachedSequence(seq);
+  }
 
   /**
    * Construct the weigh transform of the given sequence.
    * @param seq sequence
    */
   public WeighTransformSequence(final Sequence seq) {
-    mH = MemorySequence.cachedSequence(seq);
+    this(DEFOFF, seq);
   }
 
   private Z h(final int m) {

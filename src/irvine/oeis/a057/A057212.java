@@ -12,7 +12,7 @@ public class A057212 extends WrappedConstantTriangle {
 
   /** Construct the sequence. */
   public A057212() {
-    super(new A000035(), new A000035());
+    super(1, new A000035(), new A000035());
     setPlus(new A000035());
   }
 }

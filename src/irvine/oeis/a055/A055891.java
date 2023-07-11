@@ -11,6 +11,6 @@ public class A055891 extends CycleTransformSequence {
 
   /** Construct the sequence. */
   public A055891() {
-    super(new A000079(), 1);
+    super(0, new A000079(), 1);
   }
 }

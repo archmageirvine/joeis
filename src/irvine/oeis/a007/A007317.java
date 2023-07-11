@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.transform.BinomialTransformSequence;
 import irvine.oeis.a000.A000108;
+import irvine.oeis.transform.BinomialTransformSequence;
 
 /**
  * A007317 Binomial transform of Catalan numbers.
@@ -11,7 +11,7 @@ public class A007317 extends BinomialTransformSequence {
 
   /** Construct the sequence. */
   public A007317() {
-    super(new A000108(), 0);
+    super(1, new A000108(), 0);
   }
 }
 

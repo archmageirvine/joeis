@@ -13,6 +13,6 @@ public class A228371 extends AlternatingSequence {
 
   /** Construct the sequence. */
   public A228371() {
-    super(new A001511(), new A006519());
+    super(1, new A001511(), new A006519());
   }
 }

@@ -14,6 +14,6 @@ public class A135224 extends Product {
 
   /** Construct the sequence. */
   public A135224() {
-    super(1, new Product(0, new A103451(), new A007318()), new A000012());
+    super(0, new Product(0, new A103451(), new A007318()), new A000012());
   }
 }

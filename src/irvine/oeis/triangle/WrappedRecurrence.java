@@ -14,6 +14,7 @@ import irvine.oeis.Sequence0;
  */
 public class WrappedRecurrence extends Triangle {
 
+  private static final int DEFOFF = 0;
   protected Sequence mSeqLeft; // sequence for the left border <code>T(n,0)</code>
   protected Sequence mSeqRight; // sequence for the right border <code>T(n,n)</code>; this overwrites <code>T(0,0)</code>; <code>null</code> if the right border is the same as the left border
   protected Sequence mSeqPlus; // a(n) of this optional sequence may be used to compute T(n,k) for 0 &lt; k &lt; n.
@@ -50,6 +51,7 @@ public class WrappedRecurrence extends Triangle {
    * Generates an ordinary Pascal triangle with borders 1.
    */
   public WrappedRecurrence() {
+    super(DEFOFF);
     mSeqLeft = new BorderSequence("1");
     mSeqRight = null;
     initialize();
@@ -57,9 +59,11 @@ public class WrappedRecurrence extends Triangle {
 
   /**
    * Triangle with the same sequence for both borders.
+   * @param offset first index of target sequence
    * @param seqLeft sequence for both borders <code>T(n,0)</code>
    */
-  public WrappedRecurrence(final Sequence seqLeft) {
+  public WrappedRecurrence(final int offset, final Sequence seqLeft) {
+    setOffset(offset);
     mSeqLeft = seqLeft;
     mSeqRight = null;
     initialize();
@@ -67,9 +71,11 @@ public class WrappedRecurrence extends Triangle {
 
   /**
    * Triangle with a value for both borders.
+   * @param offset first index of target sequence
    * @param constLeft constant for both borders <code>T(n,0)</code> and <code>T(n,n)</code>
    */
-  public WrappedRecurrence(final String constLeft) {
+  public WrappedRecurrence(final int offset, final String constLeft) {
+    setOffset(offset);
     mSeqLeft = new BorderSequence(constLeft);
     mSeqRight = null;
     initialize();
@@ -77,10 +83,12 @@ public class WrappedRecurrence extends Triangle {
 
   /**
    * Triangle with two sequences for the borders.
+   * @param offset first index of target sequence
    * @param seqLeft sequence for the left border <code>T(n,0)</code>
    * @param seqRight sequence for the right border <code>T(n,n)</code>; this overwrites <code>T(0,0)</code>
    */
-  public WrappedRecurrence(final Sequence seqLeft, final Sequence seqRight) {
+  public WrappedRecurrence(final int offset, final Sequence seqLeft, final Sequence seqRight) {
+    setOffset(offset);
     mSeqLeft = seqLeft;
     mSeqRight = seqRight;
     initialize();
@@ -88,10 +96,12 @@ public class WrappedRecurrence extends Triangle {
 
   /**
    * Triangle with a sequence and a value for the borders.
+   * @param offset first index of target sequence
    * @param seqLeft sequence for the left border <code>T(n,0)</code>
    * @param constRight constant right border <code>T(n,n)</code>; this overwrites <code>T(0,0)</code>;
    */
-  public WrappedRecurrence(final Sequence seqLeft, final String constRight) {
+  public WrappedRecurrence(final int offset, final Sequence seqLeft, final String constRight) {
+    setOffset(offset);
     mSeqLeft = seqLeft;
     mSeqRight = new BorderSequence(constRight);
     initialize();
@@ -99,10 +109,12 @@ public class WrappedRecurrence extends Triangle {
 
   /**
    * Triangle with a value and a sequence for the borders.
+   * @param offset first index of target sequence
    * @param constLeft constant left border <code>T(n,0)</code>
    * @param seqRight sequence for the right border <code>T(n,n)</code>; this overwrites <code>T(0,0)</code>
    */
-  public WrappedRecurrence(final String constLeft, final Sequence seqRight) {
+  public WrappedRecurrence(final int offset, final String constLeft, final Sequence seqRight) {
+    setOffset(offset);
     mSeqLeft = new BorderSequence(constLeft);
     mSeqRight = seqRight;
     initialize();
@@ -110,10 +122,12 @@ public class WrappedRecurrence extends Triangle {
 
   /**
    * Triangle with two values for the borders.
+   * @param offset first index of target sequence
    * @param constLeft constant left border <code>T(n,0)</code>
    * @param constRight constant right border <code>T(n,n)</code>; this overwrites <code>T(0,0)</code>
    */
-  public WrappedRecurrence(final String constLeft, final String constRight) {
+  public WrappedRecurrence(final int offset, final String constLeft, final String constRight) {
+    setOffset(offset);
     mSeqLeft = new BorderSequence(constLeft);
     mSeqRight = new BorderSequence(constRight);
     initialize();

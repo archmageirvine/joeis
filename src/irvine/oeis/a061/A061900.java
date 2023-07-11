@@ -12,6 +12,6 @@ public class A061900 extends FilterSequence {
 
   /** Construct the sequence. */
   public A061900() {
-    super(new A000217(), k -> !Jaguar.factor(k).isSquareFree());
+    super(1, new A000217(), k -> !Jaguar.factor(k).isSquareFree());
   }
 }

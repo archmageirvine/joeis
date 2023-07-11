@@ -10,6 +10,6 @@ public class A035354 extends DhkTransformSequence {
 
   /** Construct the sequence. */
   public A035354() {
-    super(new A035353().skip(1));
+    super(0, new A035353().skip(1));
   }
 }

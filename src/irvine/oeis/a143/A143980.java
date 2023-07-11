@@ -13,7 +13,7 @@ public class A143980 extends BinomialTransform {
 
   /** Construct the sequence. */
   public A143980() {
-    super(new PrependSequence(new A079260(), 0));
+    super(1, new PrependSequence(new A079260(), 0));
     next();
   }
 }

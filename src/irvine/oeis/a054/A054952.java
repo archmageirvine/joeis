@@ -11,7 +11,7 @@ public class A054952 extends WeighTransformSequence {
 
   /** Construct the sequence. */
   public A054952() {
-    super(new A035512());
+    super(1, new A035512());
     next();
   }
 }

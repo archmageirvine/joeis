@@ -11,6 +11,6 @@ public class A003672 extends DoubleDecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A003672() {
-    super(PhysicsConstants.ELECTRON_MASS, PhysicsConstants.ELECTRON_MASS_UNC);
+    super(0, PhysicsConstants.ELECTRON_MASS, PhysicsConstants.ELECTRON_MASS_UNC);
   }
 }

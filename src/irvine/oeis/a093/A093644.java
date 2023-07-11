@@ -11,6 +11,6 @@ public class A093644 extends WrappedRecurrence {
 
   /** Construct the sequence. */
   public A093644() {
-    super("9", "1");
+    super(0, "9", "1");
   }
 }

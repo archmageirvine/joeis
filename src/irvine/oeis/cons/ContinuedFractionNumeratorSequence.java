@@ -15,11 +15,20 @@ public class ContinuedFractionNumeratorSequence extends AbstractSequence {
 
   /**
    * Construct the sequence.
+   * @param offset first index of target sequence
+   * @param seq underlying decimal expansion sequence
+   */
+  public ContinuedFractionNumeratorSequence(final int offset, final DecimalExpansionSequence seq) {
+    super(offset);
+    mSeq = seq;
+  }
+
+  /**
+   * Construct the sequence.
    * @param seq underlying decimal expansion sequence
    */
   public ContinuedFractionNumeratorSequence(final DecimalExpansionSequence seq) {
-    super(seq.getOffset());
-    mSeq = seq;
+    this(seq.getOffset(), seq);
   }
 
   @Override

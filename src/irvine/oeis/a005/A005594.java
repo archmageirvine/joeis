@@ -1,7 +1,7 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.transform.CycleTransformSequence;
 import irvine.oeis.a054.A054977;
+import irvine.oeis.transform.CycleTransformSequence;
 
 /**
  * A005594 States of a dynamic storage system.
@@ -11,7 +11,7 @@ public class A005594 extends CycleTransformSequence {
 
   /** Construct the sequence. */
   public A005594() {
-    super(new A054977(), 0);
+    super(0, new A054977(), 0);
   }
 }
 

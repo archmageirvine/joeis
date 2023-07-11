@@ -11,6 +11,6 @@ public class A062363 extends InverseMobiusTransformSequence {
 
   /** Construct the sequence. */
   public A062363() {
-    super(new A000142(), 1);
+    super(0, new A000142(), 1);
   }
 }

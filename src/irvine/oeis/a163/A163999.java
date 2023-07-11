@@ -11,6 +11,6 @@ public class A163999 extends DoubleDecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A163999() {
-    super(PhysicsConstants.FARADAY, PhysicsConstants.FARADAY_UNC, true);
+    super(5, PhysicsConstants.FARADAY, PhysicsConstants.FARADAY_UNC, true);
   }
 }

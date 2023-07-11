@@ -11,6 +11,6 @@ public class A081821 extends DoubleDecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A081821() {
-    super(PhysicsConstants.RYDBERG, PhysicsConstants.RYDBERG_UNC);
+    super(8, PhysicsConstants.RYDBERG, PhysicsConstants.RYDBERG_UNC);
   }
 }

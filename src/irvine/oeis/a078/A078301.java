@@ -11,6 +11,6 @@ public class A078301 extends DoubleDecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A078301() {
-    super(PhysicsConstants.PLANCK_MASS, PhysicsConstants.PLANCK_MASS_UNC, true);
+    super(-7, PhysicsConstants.PLANCK_MASS, PhysicsConstants.PLANCK_MASS_UNC, true);
   }
 }

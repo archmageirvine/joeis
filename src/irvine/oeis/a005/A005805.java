@@ -1,8 +1,8 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.Stirling2TransformSequence;
 import irvine.oeis.a000.A000311;
+import irvine.oeis.transform.Stirling2TransformSequence;
 
 /**
  * A005805 Number of phylogenetic trees with n labels.
@@ -13,8 +13,9 @@ public class A005805 extends Stirling2TransformSequence {
   /** Construct the sequence. */
   public A005805() {
     // We need to shove an extra "1" into A000311
-    super(new A000311() {
+    super(1, new A000311() {
       private boolean mFirst = true;
+
       @Override
       public Z next() {
         if (mFirst) {

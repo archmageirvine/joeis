@@ -13,7 +13,7 @@ public class A064446 extends Combiner {
 
   /** Construct the sequence. */
   public A064446() {
-    super(new A003418(), new A000312(), Z::gcd);
+    super(1, new A003418(), new A000312(), Z::gcd);
     next();
   }
 }

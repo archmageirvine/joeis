@@ -11,7 +11,7 @@ public class A054154 extends MobiusTransformSequence {
 
   /** Construct the sequence. */
   public A054154() {
-    super(new A001037(), 0);
+    super(0, new A001037(), 0);
     next();
   }
 }

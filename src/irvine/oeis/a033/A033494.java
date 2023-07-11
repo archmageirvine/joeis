@@ -10,6 +10,6 @@ public class A033494 extends RecordSequence {
 
   /** Construct the sequence. */
   public A033494() {
-    super(new A033493());
+    super(0, new A033493());
   }
 }

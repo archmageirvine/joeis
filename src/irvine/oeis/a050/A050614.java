@@ -11,6 +11,6 @@ public class A050614 extends DistinctMultiplicativeClosureSequence {
 
   /** Construct the sequence. */
   public A050614() {
-    super(new A001566());
+    super(0, new A001566());
   }
 }

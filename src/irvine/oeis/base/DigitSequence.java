@@ -15,10 +15,14 @@ public class DigitSequence extends AbstractSequence {
   private String mA;
   private int mM = -1;
 
-  protected DigitSequence(final Sequence seq) {
-    super(DEFOFF);
+  protected DigitSequence(final int offset, final Sequence seq) {
+    super(offset);
     mSeq = seq;
     mA = mSeq.next().toString();
+  }
+
+  protected DigitSequence(final Sequence seq) {
+    this(DEFOFF, seq);
   }
 
   @Override

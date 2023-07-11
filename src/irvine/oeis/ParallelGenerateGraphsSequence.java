@@ -24,6 +24,24 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence {
 
   /**
    * Construct a new parallel execution of nauty.
+   * @param offset first index
+   * @param start one less than the first term (number of vertices)
+   * @param firstNonZero first nonzero term
+   * @param bipartite generate bipartite graphs
+   * @param squareFree generate square free graphs
+   * @param triangleFree generate triangle free graphs
+   */
+  protected ParallelGenerateGraphsSequence(final int offset, final int start, final int firstNonZero, final boolean bipartite, final boolean squareFree, final boolean triangleFree) {
+    super(offset);
+    mN = start;
+    mFirstNonZero = firstNonZero;
+    mBipartite = bipartite;
+    mSquareFree = squareFree;
+    mTriangleFree = triangleFree;
+  }
+
+  /**
+   * Construct a new parallel execution of nauty.
    * @param start one less than the first term (number of vertices)
    * @param firstNonZero first nonzero term
    * @param bipartite generate bipartite graphs
@@ -31,12 +49,7 @@ public abstract class ParallelGenerateGraphsSequence extends AbstractSequence {
    * @param triangleFree generate triangle free graphs
    */
   protected ParallelGenerateGraphsSequence(final int start, final int firstNonZero, final boolean bipartite, final boolean squareFree, final boolean triangleFree) {
-    super(start + 1);
-    mN = start;
-    mFirstNonZero = firstNonZero;
-    mBipartite = bipartite;
-    mSquareFree = squareFree;
-    mTriangleFree = triangleFree;
+    this(start + 1, start, firstNonZero, bipartite, squareFree, triangleFree);
   }
 
   /**

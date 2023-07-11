@@ -11,6 +11,6 @@ public class A064086 extends FilterSequence {
 
   /** Construct the sequence. */
   public A064086() {
-    super(new A064085(), k -> k.compareTo(Z.ONE) > 0);
+    super(1, new A064085(), k -> k.compareTo(Z.ONE) > 0);
   }
 }

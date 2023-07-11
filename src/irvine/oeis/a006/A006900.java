@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.transform.LogarithmicTransformSequence;
 import irvine.oeis.a000.A000081;
+import irvine.oeis.transform.LogarithmicTransformSequence;
 
 /**
  * A006900 Log of g.f. for rooted trees.
@@ -11,6 +11,6 @@ public class A006900 extends LogarithmicTransformSequence {
 
   /** Construct the sequence. */
   public A006900() {
-    super(new A000081(), 1);
+    super(0, new A000081(), 1);
   }
 }

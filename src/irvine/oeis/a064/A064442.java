@@ -11,6 +11,6 @@ public class A064442 extends DecimalExpansionFromContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A064442() {
-    super(new A000040());
+    super(1, new A000040());
   }
 }

@@ -11,6 +11,6 @@ public class A054910 extends FilterSequence {
 
   /** Construct the sequence. */
   public A054910() {
-    super(new A000566(), PALINDROME);
+    super(1, new A000566(), PALINDROME);
   }
 }

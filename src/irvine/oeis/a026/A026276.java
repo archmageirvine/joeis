@@ -16,6 +16,14 @@ public class A026276 extends AbstractSequence {
     super(1);
   }
 
+  /**
+   * Generic constructor with offset.
+   * @param offset first index for subsequences
+   */
+  public A026276(final int offset) {
+    super(offset);
+  }
+
   private final TreeMap<Long, Long> mFixed = new TreeMap<>();
   private long mN = 0;
   private long mM = 0;

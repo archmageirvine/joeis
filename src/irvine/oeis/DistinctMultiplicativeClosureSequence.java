@@ -8,7 +8,9 @@ import irvine.math.z.Z;
  * Multiplicative closure formed by products of distinct elements of a strictly increasing sequence.
  * @author Sean A. Irvine
  */
-public class DistinctMultiplicativeClosureSequence extends Sequence1 {
+public class DistinctMultiplicativeClosureSequence extends AbstractSequence {
+
+  private static final int DEFOFF = 1;
 
   private static final class State implements Comparable<State> {
     private final Z mN;
@@ -43,13 +45,22 @@ public class DistinctMultiplicativeClosureSequence extends Sequence1 {
   private final TreeSet<State> mA = new TreeSet<>();
   private Z mPrev = null;
 
-  protected DistinctMultiplicativeClosureSequence(final Sequence seq, final Z initial) {
+  protected DistinctMultiplicativeClosureSequence(final int offset, final Sequence seq, final Z initial) {
+    super(offset);
     mSeq = MemorySequence.cachedSequence(seq);
     mA.add(new State(initial, -1));
   }
 
+  protected DistinctMultiplicativeClosureSequence(final int offset, final Sequence seq) {
+    this(offset, seq, Z.ONE);
+  }
+
+  protected DistinctMultiplicativeClosureSequence(final Sequence seq, final Z initial) {
+    this(DEFOFF, seq, initial);
+  }
+
   protected DistinctMultiplicativeClosureSequence(final Sequence seq) {
-    this(seq, Z.ONE);
+    this(DEFOFF, seq, Z.ONE);
   }
 
   protected Z op(final Z a, final Z b) {

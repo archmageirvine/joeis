@@ -6,16 +6,17 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
-import irvine.oeis.Sequence1;
 
 /**
  * A sequence comprising the bracelet, indistinct, unlabeled transform.
  * @author Sean A. Irvine
  */
-public class DikTransformSequence extends Sequence1 {
+public class DikTransformSequence extends AbstractSequence {
 
+  private static final int DEFOFF = 1;
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final Sequence mSeq;
   private final CycleTransformSequence mCycle;
@@ -34,19 +35,28 @@ public class DikTransformSequence extends Sequence1 {
     }
   }
 
-
   /**
    * Creates a new bracelet, indistinct, unlabeled transform.
-   *
+   * @param offset first index of target sequence
    * @param seq underlying sequence
    * @param skip number of terms to skip
    */
-  public DikTransformSequence(final Sequence seq, final int skip) {
+  public DikTransformSequence(final int offset, final Sequence seq, final int skip) {
+    super(offset);
     mSeq = seq;
     for (int k = 0; k < skip; ++k) {
       seq.next();
     }
-    mCycle = new CycleTransformSequence(new MySequence(mA), 0);
+    mCycle = new CycleTransformSequence(offset, new MySequence(mA), 0);
+  }
+
+  /**
+   * Creates a new bracelet, indistinct, unlabeled transform.
+   * @param seq underlying sequence
+   * @param skip number of terms to skip
+   */
+  public DikTransformSequence(final Sequence seq, final int skip) {
+    this(DEFOFF, seq, skip);
   }
 
   @Override

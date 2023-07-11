@@ -12,7 +12,7 @@ public class A019442 extends BinomialTransformSequence {
 
   /** Construct the sequence. */
   public A019442() {
-    super(new Sequence0() {
+    super(1, new Sequence0() {
 
       private long mN = -1;
 

@@ -12,6 +12,6 @@ public class A160760 extends WrappedRecurrence {
 
   /** Construct the sequence. */
   public A160760() {
-    super(new LinearRecurrence(new long[] {3}, new long[] {1}, new long[] {1}), "1");
+    super(0, new LinearRecurrence(new long[]{3}, new long[]{1}, new long[]{1}), "1");
   }
 }

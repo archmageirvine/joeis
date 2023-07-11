@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.transform.InverseBinomialTransformSequence;
 import irvine.oeis.a000.A000040;
+import irvine.oeis.transform.InverseBinomialTransformSequence;
 
 /**
  * A007442 Inverse binomial transform of primes.
@@ -11,6 +11,6 @@ public class A007442 extends InverseBinomialTransformSequence {
 
   /** Construct the sequence. */
   public A007442() {
-    super(new A000040(), 0);
+    super(1, new A000040(), 0);
   }
 }

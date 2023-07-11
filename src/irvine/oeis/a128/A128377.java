@@ -12,6 +12,6 @@ public class A128377 extends BinomialTransform {
 
   /** Construct the sequence. */
   public A128377() {
-    super(new A000594(), 0, true);
+    super(1, new A000594(), 0, true);
   }
 }

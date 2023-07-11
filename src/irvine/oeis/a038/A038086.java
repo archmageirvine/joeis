@@ -12,7 +12,7 @@ public class A038086 extends WeighTransformSequence {
 
   /** Construct the sequence. */
   public A038086() {
-    super(new PrependSequence(new A038085(), 1));
+    super(1, new PrependSequence(new A038085(), 1));
   }
 
   @Override

@@ -35,6 +35,15 @@ public class RecordSequence extends AbstractSequence {
 
   /**
    * Creates a record sequence of another sequence.
+   * @param offset first index of target sequence
+   * @param seq underlying sequence
+   */
+  public RecordSequence(final int offset, final Sequence seq) {
+    this(offset, seq, Z.NEG_ONE);
+  }
+
+  /**
+   * Creates a record sequence of another sequence.
    * @param seq underlying sequence
    */
   public RecordSequence(final Sequence seq) {

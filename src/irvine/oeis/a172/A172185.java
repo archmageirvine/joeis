@@ -12,6 +12,6 @@ public class A172185 extends WrappedRecurrence {
 
   /** Construct the sequence. */
   public A172185() {
-    super("9", new PaddingSequence(new long[] { 1 }, new long[] { 11 }));
+    super(0, "9", new PaddingSequence(new long[]{1}, new long[]{11}));
   }
 }

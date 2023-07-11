@@ -31,17 +31,27 @@ public class LogarithmicTransformSequence extends AbstractSequence {
   /**
    * Creates a new transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
-   *
+   * @param offset first index of target sequence
    * @param seq underlying sequence
    * @param skip number of terms to skip
    */
-  public LogarithmicTransformSequence(final Sequence seq, final int skip) {
-    super(DEFOFF);
+  public LogarithmicTransformSequence(final int offset, final Sequence seq, final int skip) {
+    super(offset);
     mSeq = seq;
     mTerms.add(Q.ZERO);
     for (int k = 0; k < skip; ++k) {
       seq.next();
     }
+  }
+
+  /**
+   * Creates a new transform sequence of the given sequence, skipping
+   * the specified number of terms in advance.
+   * @param seq underlying sequence
+   * @param skip number of terms to skip
+   */
+  public LogarithmicTransformSequence(final Sequence seq, final int skip) {
+    this(DEFOFF, seq, skip);
   }
 
   @Override

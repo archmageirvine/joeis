@@ -14,7 +14,7 @@ public class A113062 extends InverseMobiusTransformSequence {
 
   /** Construct the sequence. */
   public A113062() {
-    super(new PeriodicSequence(3, -3, 3, 3, -3, -3, 3, -3, 0), 0);
+    super(0, new PeriodicSequence(3, -3, 3, 3, -3, -3, 3, -3, 0), 0);
     super.next();
   }
 

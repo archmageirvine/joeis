@@ -5,7 +5,7 @@ import irvine.oeis.a092.A092266;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A228156 Expansion of sqrt((1+4*x)/AGM(1+4*x, 1-4*x)) where AGM denotes the arithmetic-geometric mean.
+ * A228156 Expansion of sqrt((1+4*x)/AGM(1+4*x,1-4*x)) where AGM denotes the arithmetic-geometric mean.
  * @author Georg Fischer
  */
 public class A228156 extends ConvolutionProduct {

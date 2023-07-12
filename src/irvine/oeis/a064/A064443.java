@@ -17,7 +17,7 @@ public class A064443 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z u = Jaguar.factor(++mN).unitarySigma();
-      if (u.compareTo(mS)> 0 && u.isSquare()) {
+      if (u.compareTo(mS) > 0 && u.isSquare()) {
         mS = u;
         return Z.valueOf(mN);
       }

@@ -7,7 +7,7 @@ import irvine.oeis.a353.A353557;
 import irvine.oeis.a358.A358777;
 
 /**
- * A359607 Terms of A046337 for which A358777 is zero, where the latter is the Dirichlet inverse of former&apos;s characteristic function.
+ * A359607 Terms of A046337 for which A358777 is zero, where the latter is the Dirichlet inverse of former's characteristic function.
  * @author Georg Fischer
  */
 public class A359607 extends Sequence1 {

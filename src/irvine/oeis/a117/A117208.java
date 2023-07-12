@@ -7,7 +7,7 @@ import irvine.oeis.transform.GeneralizedEulerTransform;
 
 
 /**
- * A117208G.f. A(x) satisfies (1-x) = product_{n&gt;=1} A(x^n).
+ * A117208 G.f. A(x) satisfies (1-x) = product_{n&gt;=1} A(x^n).
  * @author Georg Fischer
  */
 public class A117208 extends GeneralizedEulerTransform {

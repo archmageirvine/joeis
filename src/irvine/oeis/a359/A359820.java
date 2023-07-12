@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a129.A129283;
 
 /**
- * A359820 a(n) = 1 if n and n&apos; are of different parity, otherwise 0. Here n&apos; stands for the arithmetic derivative of n, A003415(n).
+ * A359820 a(n) = 1 if n and n' are of different parity, otherwise 0. Here n' stands for the arithmetic derivative of n, A003415(n).
  * @author Georg Fischer
  */
 public class A359820 extends AbstractSequence {

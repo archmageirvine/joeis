@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A064453.
+ * A363249 allocated for Jesiah Darnell.
  * @author Sean A. Irvine
  */
 public class A363249 extends Sequence1 {

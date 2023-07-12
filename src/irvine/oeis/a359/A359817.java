@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A359817 Positions of odd terms in A359815, where A359815 is the Dirichlet inverse of A359770,
+ * A359817 Positions of odd terms in A359815, where A359815 is the Dirichlet inverse of A359770, which is the characteristic function for numbers k such that k and bigomega(k) are of different parity.
  * which is the characteristic function for numbers k such that k and bigomega(k) are of different parity.
  * @author Georg Fischer
  */

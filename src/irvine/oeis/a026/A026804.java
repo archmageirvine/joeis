@@ -1,13 +1,18 @@
 package irvine.oeis.a026;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A026804 Number of partitions of n in which the least part is odd.
  * @author Sean A. Irvine
  */
 public class A026804 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A026804() {
+    super(1);
+  }
 
   // After Alois P. Heinz
 

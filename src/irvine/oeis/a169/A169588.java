@@ -12,9 +12,8 @@ public class A169588 extends A346426 {
 
   private int mN = -1;
 
-  @Override
-  public int getOffset() {
-    return 4;
+  {
+    setOffset(4);
   }
 
   @Override

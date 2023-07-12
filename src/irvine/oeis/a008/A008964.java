@@ -1,13 +1,18 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A008964 Number of elements of order &lt;= 2 in group of n X n upper triangular matrices over GF(2).
  * @author Sean A. Irvine
  */
 public class A008964 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A008964() {
+    super(1);
+  }
 
   // See Involutions and Characters of Upper Triangular Matrix Groups
   // I. M. Isaac and Dikran B. Karagueuzian

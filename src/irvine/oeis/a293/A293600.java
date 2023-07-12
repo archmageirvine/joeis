@@ -12,6 +12,8 @@ public class A293600 extends Triangle {
   /** Construct the sequence. */
   public A293600() {
     super("1, 1,-2");
+    setOffset(1);
+    hasRAM(false);
   }
 
   @Override

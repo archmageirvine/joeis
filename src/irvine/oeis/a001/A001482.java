@@ -12,17 +12,24 @@ import irvine.oeis.AbstractSequence;
  */
 public class A001482 extends AbstractSequence {
 
-  /** Construct the sequence. */
-  public A001482() {
-    super(4);
-  }
-
+  private int mN;
+  private final int mPower;
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
-  private int mN = power() - 1;
+  /** Construct the sequence. */
+  public A001482() {
+    this(4, 4);
+  }
 
-  protected int power() {
-    return 4;
+  /**
+   * Generic constructor with parameters.
+   * @param offset first index
+   * @param power power of (-x)
+   */
+  public A001482(final int offset, final int power) {
+    super(offset);
+    mPower = power;
+    mN = power - 1;
   }
 
   @Override
@@ -32,7 +39,7 @@ public class A001482 extends AbstractSequence {
     for (int k = 1; k <= mN + 2; ++k) {
       p = RING.multiply(p, RING.oneMinusXToTheN(k), mN);
     }
-    final Z t = RING.pow(RING.subtract(p, RING.one()), power(), mN).coeff(mN);
+    final Z t = RING.pow(RING.subtract(p, RING.one()), mPower, mN).coeff(mN);
     return (mN & 1) == 0 ? t : t.negate();
   }
 }

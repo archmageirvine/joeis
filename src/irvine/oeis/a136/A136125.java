@@ -13,7 +13,8 @@ public class A136125 extends Triangle {
 
   /** Construct the sequence. */
   public A136125() {
-    hasRAM(false);
+    setOffset(1);
+    hasRAM(true);
   }
 
   /* T:=proc(n, k) if k < n then factorial(n)/(k*(k+1)) elif k = n then factorial(n-1) else 0 end if end proc: */

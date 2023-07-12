@@ -11,9 +11,8 @@ public class A060916 extends A000040 {
 
   private char mN = '0';
 
-  @Override
-  public int getOffset() {
-    return 0;
+  {
+    setOffset(0);
   }
 
   @Override

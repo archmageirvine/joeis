@@ -14,6 +14,14 @@ public class A000217 extends AbstractSequence {
     super(0);
   }
 
+  /**
+   * Construct with different offset.
+   * @param offset first index of subclass
+   */
+  public A000217(final int offset) {
+    super(offset);
+  }
+
   protected long mN = -1;
 
   /**

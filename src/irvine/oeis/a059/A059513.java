@@ -1,14 +1,19 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A059513 Variation of Boustrophedon transform applied to 1,1,1,1,... Fill an array by diagonals, in alternating directions. The first entry is 1 each time. For the next element of a diagonal, add to the previous element the elements of the row and the column the new element is in. The final element of each diagonal gives a(n).
  * @author Sean A. Irvine
  */
 public class A059513 extends MemoryFunctionInt2Sequence<Z> {
+
+  /** Construct the sequence. */
+  public A059513() {
+    super(1);
+  }
 
   private int mN = -1;
 

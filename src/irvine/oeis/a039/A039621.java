@@ -9,6 +9,11 @@ import irvine.oeis.memory.MemoryFunctionInt3Sequence;
  */
 public class A039621 extends MemoryFunctionInt3Sequence<Z> {
 
+  /** Construct the sequence. */
+  public A039621() {
+    super(1);
+  }
+
   // After Vladimir Kruchinin
 
   @Override

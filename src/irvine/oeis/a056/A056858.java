@@ -12,6 +12,11 @@ import irvine.oeis.memory.MemoryFunctionInt3Sequence;
  */
 public class A056858 extends MemoryFunctionInt3Sequence<Polynomial<Z>> {
 
+  /** Construct the sequence. */
+  public A056858() {
+    super(1);
+  }
+
   // After Alois P. Heinz
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);

@@ -4,15 +4,20 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.graph.Multigraph;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A046752 Triangle read by rows: T(n,k) is the number of unlabeled nonseparable (or 2-connected) loopless multigraphs with n edges on k nodes and degree &gt;= 3 at each node, n &gt;= 3, 2 &lt;= k &lt;= floor(2*n/3).
  * @author Sean A. Irvine
  */
 public class A046752 extends MemoryFunction2Sequence<Integer, Set<Multigraph>> {
+
+  /** Construct the sequence. */
+  public A046752() {
+    super(3);
+  }
 
   private int mN = 1;
   private int mM = 2;

@@ -12,9 +12,8 @@ public class A053216 extends A001156 {
   private Z mN = Z.ZERO;
   private Z mA = super.next();
 
-  @Override
-  public int getOffset() {
-    return 1;
+  {
+    setOffset(1);
   }
 
   @Override

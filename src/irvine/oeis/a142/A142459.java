@@ -10,6 +10,11 @@ import irvine.oeis.triangle.ModifiedPascalTriangle;
  */
 public class A142459 extends ModifiedPascalTriangle {
 
+  /** Construct the sequence. */
+  public A142459() {
+    super(1);
+  }
+
   @Override
   protected Z factorF(final long n, final long k) {
     return Z.valueOf(4 * n - 4 * k + 1);

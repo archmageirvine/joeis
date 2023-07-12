@@ -10,6 +10,11 @@ import irvine.oeis.memory.MemoryFunctionInt3Sequence;
  */
 public class A007178 extends MemoryFunctionInt3Sequence<Z> {
 
+  /** Construct the sequence. */
+  public A007178() {
+    super(1);
+  }
+
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
 

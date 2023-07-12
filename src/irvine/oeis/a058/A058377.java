@@ -1,13 +1,18 @@
 package irvine.oeis.a058;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A058377 Number of solutions to 1 +- 2 +- 3 +- ... +- n = 0.
  * @author Sean A. Irvine
  */
 public class A058377 extends MemoryFunctionInt2Sequence<Z> {
+
+  /** Construct the sequence. */
+  public A058377() {
+    super(1);
+  }
 
   // After Alois P. Heinz
 

@@ -16,6 +16,7 @@ public class A125172 extends Triangle {
 
   /** Construct the sequence. */
   public A125172() {
+    setOffset(1);
     hasRAM(false);
     mSeq = new A001906();
     mSeq.next(); // skip 0

@@ -1,15 +1,20 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.a008.A008284;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A059623 As upper right triangle, number of weakly unimodal partitions of n where initial part is k (n &gt;= k &gt;= 1).
  * @author Sean A. Irvine
  */
 public class A059623 extends MemoryFunctionInt2Sequence<Z> {
+
+  /** Construct the sequence. */
+  public A059623() {
+    super(1);
+  }
 
   private final A008284 mS = new A008284();
   private int mN = 0;

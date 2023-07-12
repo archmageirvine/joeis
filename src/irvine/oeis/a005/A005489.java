@@ -2,7 +2,6 @@ package irvine.oeis.a005;
 
 import java.util.Arrays;
 
-import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.PolynomialRing;
 import irvine.math.partitions.IntegerPartition;
@@ -10,6 +9,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.util.Permutation;
 
 /**
@@ -17,6 +17,11 @@ import irvine.util.Permutation;
  * @author Sean A. Irvine
  */
 public class A005489 extends MemoryFunctionSequence<Integer, Polynomial<Q>> {
+
+  /** Construct the sequence. */
+  public A005489() {
+    super(1);
+  }
 
   // After Andrey Zabolotskiy
 

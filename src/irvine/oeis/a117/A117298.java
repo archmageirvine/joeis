@@ -13,12 +13,8 @@ public class A117298 extends A002865 {
 
   /** Construct the sequence. */
   public A117298() {
+    setOffset(1);
     super.next();
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
   }
 
   @Override

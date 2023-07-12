@@ -1,7 +1,7 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A024787 Number of 3's in all partitions of n.
@@ -13,6 +13,11 @@ public class A024787 extends MemoryFunction2Sequence<Integer, Z[]> {
 
   private static final Z[] C1 = {Z.ONE, Z.ZERO};
   private int mN = 0;
+
+  /** Construct the sequence. */
+  public A024787() {
+    super(1);
+  }
 
   protected int target() {
     return 3;

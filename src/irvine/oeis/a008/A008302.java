@@ -1,13 +1,18 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A008302 Triangle of Mahonian numbers T(n,k): coefficients in expansion of Product_{i=0..n-1} (1 + x + ... + x^i), where k ranges from 0 to A000217(n-1). Also enumerates permutations by their major index.
  * @author Sean A. Irvine
  */
 public class A008302 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A008302() {
+    super(1);
+  }
 
   private long mN = 1;
   private long mM = 0;

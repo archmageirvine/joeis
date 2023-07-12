@@ -14,10 +14,6 @@ public class A288954 extends HolonomicRecurrence {
   public A288954() {
     super(0, "[[0],[6,-5, 1],[-10, 11,-3],[1,-4, 1],[1,-8, 3],[0, 6,-2]]", "[1, 1, 3, 13]", 0);
     setGfType(1);
-  }
-
-  @Override
-  public int getOffset() {
-    return 2;
+    setOffset(2);
   }
 }

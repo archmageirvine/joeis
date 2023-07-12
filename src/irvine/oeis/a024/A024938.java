@@ -1,16 +1,21 @@
 package irvine.oeis.a024;
 
 import irvine.factor.prime.Fast;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.a000.A000040;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A024938 Total number of parts in all partitions of n into distinct prime parts.
  * @author Sean A. Irvine
  */
 public class A024938 extends MemoryFunction2Sequence<Integer, Z[]> {
+
+  /** Construct the sequence. */
+  public A024938() {
+    super(1);
+  }
 
   // After Alois P. Heinz
 

@@ -1,13 +1,18 @@
 package irvine.oeis.a036;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A036367 Number of free orthoplex n-ominoes with cell centers determining n-2 space.
  * @author Sean A. Irvine
  */
 public class A036367 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A036367() {
+    super(4);
+  }
 
   private long mN = 3;
 

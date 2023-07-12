@@ -13,14 +13,10 @@ public class A000418 extends A034824 {
   private final A034823 mA = new A034823();
 
   {
+    setOffset(1);
     // skip one entry
     super.next();
     mA.next();
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
   }
 
   @Override

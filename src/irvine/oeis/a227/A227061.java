@@ -1,14 +1,19 @@
 package irvine.oeis.a227;
 
 import irvine.math.IntegerUtils;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A227061 T(n,k) = Number of (n+k-1) X (n+k-1) binary arrays with k 1s in every row and column with rows and columns in lexicographically nondecreasing order.
  * @author Sean A. Irvine
  */
 public class A227061 extends MemoryFunction2Sequence<Integer, Long> {
+
+  /** Construct the sequence. */
+  public A227061() {
+    super(1);
+  }
 
   private int mN = 0;
   private int mM = 0;

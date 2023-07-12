@@ -14,10 +14,6 @@ public class A254181 extends DecimalExpansionSequence {
   /** Construct the sequence. */
   public A254181() {
     super(1, PhysicsConstants.HBAR_CR.multiply(Z.TEN.pow(33)));
-  }
-
-  @Override
-  public int getOffset() {
-    return -33;
+    setOffset(-33);
   }
 }

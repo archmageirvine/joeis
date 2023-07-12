@@ -11,6 +11,7 @@ public class A056203 extends Triangle {
 
   /** Construct the sequence. */
   public A056203() {
+    setOffset(1);
     hasRAM(true);
   }
 

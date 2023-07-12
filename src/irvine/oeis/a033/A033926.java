@@ -11,8 +11,7 @@ public class A033926 extends A033923 {
     return 6;
   }
 
-  @Override
-  public int getOffset() {
-    return 0;
+  {
+    setOffset(0);
   }
 }

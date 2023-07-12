@@ -1,13 +1,18 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A005490 Number of partitions of [n] where the first k elements are marked (0 &lt;= k &lt;= n-1) and at least k blocks contain their own index.
  * @author Sean A. Irvine
  */
 public class A005490 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A005490() {
+    super(1);
+  }
 
   private int mN = 0;
 

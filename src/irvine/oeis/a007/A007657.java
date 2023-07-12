@@ -1,15 +1,20 @@
 package irvine.oeis.a007;
 
 import irvine.math.MemoryFunction2;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A007657 Maximal coefficient in (x + x^2 + x^4 + x^8 + ...)^n.
  * @author Sean A. Irvine
  */
 public class A007657 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A007657() {
+    super(1);
+  }
 
   // M function from Giorgilli and Molteni,
   // "Representation of a 2-power as sum of k 2-powers: A recursive formula"

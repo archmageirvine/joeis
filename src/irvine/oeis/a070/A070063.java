@@ -14,10 +14,6 @@ public class A070063 extends DecimalExpansionSequence {
   /** Construct the sequence. */
   public A070063() {
     super(1, PhysicsConstants.BOLTZMANN_CR.multiply(Z.TEN.pow(23)));
-  }
-
-  @Override
-  public int getOffset() {
-    return -22;
+    setOffset(-22);
   }
 }

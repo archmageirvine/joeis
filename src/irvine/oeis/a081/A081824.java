@@ -17,10 +17,6 @@ public class A081824 extends DecimalExpansionSequence {
   /** Construct the sequence. */
   public A081824() {
     super(1, CONDUCTANCE_QUANTUM);
-  }
-
-  @Override
-  public int getOffset() {
-    return -4;
+    setOffset(-4);
   }
 }

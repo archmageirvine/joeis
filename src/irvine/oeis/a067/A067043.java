@@ -12,12 +12,7 @@ public class A067043 extends RecordPositionSubsequence {
 
   /** Construct the sequence. */
   public A067043() {
-    super(0, new A048377());
-  }
-
-  @Override
-  public int getOffset() {
-    return 0;
+    super(0, 0, new A048377());
   }
 }
 

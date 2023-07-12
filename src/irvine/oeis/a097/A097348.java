@@ -16,11 +16,6 @@ public class A097348 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A097348() {
-    super(1, REALS.acsch(CR.TWO).divide(CR.TEN.log()));
-  }
-
-  @Override
-  public int getOffset() {
-    return 0;
+    super(0, REALS.acsch(CR.TWO).divide(CR.TEN.log()));
   }
 }

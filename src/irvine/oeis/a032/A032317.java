@@ -2,15 +2,20 @@ package irvine.oeis.a032;
 
 import java.util.Arrays;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A032317 Shifts left under "EGJ" (unordered, element, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032317 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A032317() {
+    super(1);
+  }
 
   // After Alois P. Heinz
 

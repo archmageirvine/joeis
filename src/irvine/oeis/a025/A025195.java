@@ -1,14 +1,19 @@
 package irvine.oeis.a025;
 
-import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionSequence;
 
 /**
  * A025195 [ 4th elementary symmetric function of {sqrt(k)} ], k = 1,2,...,n.
  * @author Sean A. Irvine
  */
 public class A025195 extends MemoryFunctionSequence<Long, CR> {
+
+  /** Construct the sequence. */
+  public A025195() {
+    super(4);
+  }
 
   private long mN = 3;
   private CR mSum = CR.ZERO;

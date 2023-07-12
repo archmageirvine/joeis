@@ -13,9 +13,8 @@ public class A047760 extends A047750 {
   private final Sequence mB = new A047753();
   private long mN = 0;
 
-  @Override
-  public int getOffset() {
-    return 1;
+  {
+    setOffset(1);
   }
 
   @Override

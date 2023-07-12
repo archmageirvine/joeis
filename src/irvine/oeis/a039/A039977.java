@@ -10,15 +10,11 @@ import irvine.oeis.a052.A052709;
 public class A039977 extends A052709 {
 
   {
+    setOffset(1);
     super.next();
   }
 
   private long mMult = -1;
-
-  @Override
-  public int getOffset() {
-    return 1;
-  }
 
   @Override
   public Z next() {

@@ -1,13 +1,18 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A007799 Irregular triangle read by rows: Whitney numbers of the second kind a(n,k), n &gt;= 1, k &gt;= 0, for the star poset.
  * @author Sean A. Irvine
  */
 public class A007799 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A007799() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

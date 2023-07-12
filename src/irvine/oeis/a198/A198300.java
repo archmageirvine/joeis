@@ -1,13 +1,18 @@
 package irvine.oeis.a198;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A198300 Square array M(k,g), read by antidiagonals, of the Moore lower bound on the order of a (k,g)-cage.
  * @author Sean A. Irvine
  */
 public class A198300 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A198300() {
+    super(1);
+  }
 
   protected int mN = 0;
   protected int mM = 0;

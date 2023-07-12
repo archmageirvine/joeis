@@ -1,13 +1,18 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A007101 Number of labeled trivalent (or cubic) cyclically 4-connected graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A007101 extends MemoryFunction1Sequence<Z> {
+
+  /** Construct the sequence. */
+  public A007101() {
+    super(2);
+  }
 
   private int mN = 1;
   private Z mF = Z.TWO;

@@ -1,13 +1,18 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A014780 Triangle of numbers associated with Genocchi numbers.
  * @author Sean A. Irvine
  */
 public class A014780 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A014780() {
+    super(1);
+  }
 
   private int mN = 0;
   private int mM = 0;

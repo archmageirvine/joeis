@@ -2,14 +2,19 @@ package irvine.oeis.a005;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A005751 Number of matched trees with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A005751 extends MemoryFunction1Sequence<Z> {
+
+  /** Construct the sequence. */
+  public A005751() {
+    super(1);
+  }
 
   // After Alois P. Heinz
 

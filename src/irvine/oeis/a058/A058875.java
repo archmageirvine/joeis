@@ -1,15 +1,20 @@
 package irvine.oeis.a058;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A058875 Triangle T(n,k) = C_n(k)/2^(k*(k-1)/2) where C_n(k) = number of k-colored labeled graphs with n nodes (n &gt;= 1, 1 &lt;= k &lt;= n).
  * @author Sean A. Irvine
  */
 public class A058875 extends MemoryFunctionInt2Sequence<Z> {
+
+  /** Construct the sequence. */
+  public A058875() {
+    super(1);
+  }
 
   private int mN = 0;
   private int mM = 0;

@@ -1,14 +1,19 @@
 package irvine.oeis.a028;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A028418 Sum over all n! permutations of n letters of maximum cycle length.
  * @author Sean A. Irvine
  */
 public class A028418 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A028418() {
+    super(1);
+  }
 
   private long mN = 0;
 

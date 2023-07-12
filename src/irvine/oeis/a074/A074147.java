@@ -5,10 +5,15 @@ import irvine.oeis.triangle.Triangle;
 
 /**
  * A074147 (2n-1) odd numbers followed by 2n even numbers.
- *
  * @author Georg Fischer
  */
 public class A074147 extends Triangle {
+
+  /** Construct the sequence. */
+  public A074147() {
+    setOffset(1);
+    hasRAM(true);
+  }
 
   @Override
   public Z compute(final int n, final int k) {

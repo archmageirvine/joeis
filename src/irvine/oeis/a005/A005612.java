@@ -1,14 +1,19 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A005612 Number of Boolean functions of n variables that are variously called "unate cascades" or "1-decision list functions" or "read-once threshold functions".
  * @author Sean A. Irvine
  */
 public class A005612 extends MemoryFunction1Sequence<Z> {
+
+  /** Construct the sequence. */
+  public A005612() {
+    super(1);
+  }
 
   @Override
   protected Z compute(final int n) {

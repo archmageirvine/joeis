@@ -1,13 +1,18 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A059419 Triangle T(n,k) (1 &lt;= k &lt;= n) of tangent numbers, read by rows: T(n,k) = coefficient of x^n/n! in expansion of (tan x)^k/k!.
  * @author Sean A. Irvine
  */
 public class A059419 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A059419() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

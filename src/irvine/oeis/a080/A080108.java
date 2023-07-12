@@ -15,14 +15,11 @@ public class A080108 extends ExponentialGeneratingFunction {
   /** Construct the sequence. */
   public A080108() {
     super(0);
+    setOffset(1);
   }
 
   @Override
   public Polynomial<Q> compute(final int n) {
     return RING.exp(RING.multiply(RING.x(), RING.add(RING.one(), RING.exp(RING.x(), n)), n), n);
-  }
-
-  public int getOffset() {
-    return 1;
   }
 }

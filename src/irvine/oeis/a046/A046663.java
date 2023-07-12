@@ -5,14 +5,19 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A046663 Triangle: T(n,k) = number of partitions of n (&gt;=2) with no subsum equal to k (1 &lt;= k &lt;= n-1).
  * @author Sean A. Irvine
  */
 public class A046663 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A046663() {
+    super(2);
+  }
 
   // After Alois P. Heinz
 

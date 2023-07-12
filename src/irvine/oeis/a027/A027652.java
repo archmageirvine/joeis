@@ -19,9 +19,8 @@ public class A027652 extends A134414 {
   private final Polynomial<Z> mE4x4 = RING.empty();
   private final Polynomial<Z> mA = RING.empty();
 
-  @Override
-  public int getOffset() {
-    return -1;
+  {
+    setOffset(-1);
   }
 
   @Override

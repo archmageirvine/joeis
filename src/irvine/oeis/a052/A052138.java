@@ -1,16 +1,21 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A052138 Numerators of coefficients in function a(x) such that a(a(a(x))) = log (1+x).
  * @author Sean A. Irvine
  */
 public class A052138 extends MemoryFunction2Sequence<Integer, Q> {
+
+  /** Construct the sequence. */
+  public A052138() {
+    super(1);
+  }
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;

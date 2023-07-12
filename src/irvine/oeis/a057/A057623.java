@@ -1,9 +1,9 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.util.Pair;
 
 /**
@@ -11,6 +11,11 @@ import irvine.util.Pair;
  * @author Sean A. Irvine
  */
 public class A057623 extends MemoryFunctionInt2Sequence<Pair<Q, Q>> {
+
+  /** Construct the sequence. */
+  public A057623() {
+    super(1);
+  }
 
   private static final Pair<Q, Q> ZERO = new Pair<>(Q.ZERO, Q.ZERO);
   private static final Pair<Q, Q> ONE = new Pair<>(Q.ONE, Q.ZERO);

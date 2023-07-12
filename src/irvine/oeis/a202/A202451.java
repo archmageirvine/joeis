@@ -12,6 +12,12 @@ public class A202451 extends Triangle {
   private Z mFib0;
   private Z mFib1;
 
+  /** Construct the sequence. */
+  public A202451() {
+    setOffset(1);
+    hasRAM(true);
+  }
+
   @Override
   public Z compute(final int n, final int k) {
     final int nh = n / 2;

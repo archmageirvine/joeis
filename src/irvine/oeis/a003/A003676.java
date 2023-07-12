@@ -14,10 +14,6 @@ public class A003676 extends DecimalExpansionSequence {
   /** Construct the sequence. */
   public A003676() {
     super(1, PhysicsConstants.PLANCK_CONSTANT_CR.multiply(Z.TEN.pow(33)));
-  }
-
-  @Override
-  public int getOffset() {
-    return -33;
+    setOffset(-33);
   }
 }

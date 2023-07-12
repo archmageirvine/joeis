@@ -1,14 +1,19 @@
 package irvine.oeis.a046;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A046860 Triangle giving a(n,k) = number of k-colored labeled graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A046860 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A046860() {
+    super(1);
+  }
 
   // After Alois P. Heinz
 

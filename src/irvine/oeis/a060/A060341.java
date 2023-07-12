@@ -13,9 +13,8 @@ public class A060341 extends A000040 {
 
   private final HashSet<Z> mForbidden = new HashSet<>();
 
-  @Override
-  public int getOffset() {
-    return 2;
+  {
+    setOffset(2);
   }
 
   @Override

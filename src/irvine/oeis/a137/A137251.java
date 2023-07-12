@@ -14,6 +14,11 @@ import irvine.oeis.memory.MemoryFunctionInt3Sequence;
  */
 public class A137251 extends MemoryFunctionInt3Sequence<Z[]> {
 
+  /** Construct the sequence. */
+  public A137251() {
+    super(1);
+  }
+
   // After Alois P. Heinz
 
   private int mN = -1;

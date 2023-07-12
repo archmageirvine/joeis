@@ -12,12 +12,8 @@ import irvine.oeis.a000.A000045;
 public class A063477 extends A000045 {
 
   {
+    setOffset(1);
     super.next();
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
   }
 
   @Override

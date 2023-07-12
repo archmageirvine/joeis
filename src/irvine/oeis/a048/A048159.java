@@ -1,13 +1,18 @@
 package irvine.oeis.a048;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A048159 Triangle giving a(n,k) = number of (n,k) labeled Greg trees (n &gt;= 2, 0 &lt;= k &lt;= n-2).
  * @author Sean A. Irvine
  */
 public class A048159 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A048159() {
+    super(2);
+  }
 
   private int mN = 1;
   private int mM = 1;

@@ -13,7 +13,6 @@ import irvine.oeis.triangle.UpperLeftTriangle;
 public class A073060 extends UpperLeftTriangle {
 
   protected MemorySequence mSeq;
-  private int mOffset;
 
   /** Construct the sequence. */
   public A073060() {
@@ -44,14 +43,8 @@ public class A073060 extends UpperLeftTriangle {
    * @param skip number of terms of <code>seq</code> to be skipped
    */
   public A073060(final int offset, final Sequence seq, final int skip) {
-    super(skip, skip, -1);
-    mOffset = offset;
+    super(offset, skip, skip, -1);
     mSeq = MemorySequence.cachedSequence(seq);
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

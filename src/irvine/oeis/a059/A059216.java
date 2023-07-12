@@ -1,13 +1,18 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A059216 Variation of Boustrophedon transform applied to all-1's sequence (see Comments for details).
  * @author Sean A. Irvine
  */
 public class A059216 extends MemoryFunctionInt2Sequence<Z> {
+
+  /** Construct the sequence. */
+  public A059216() {
+    super(1);
+  }
 
   private int mN = -1;
 

@@ -1,13 +1,18 @@
 package irvine.oeis.a048;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A048003 Triangular array T read by rows: T(h,k) = number of binary words of length h and maximal runlength k.
  * @author Sean A. Irvine
  */
 public class A048003 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A048003() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

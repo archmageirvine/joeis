@@ -1,14 +1,19 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A055633 Number of nested algorithms a(m,n) where m is the number of items in a contaminated group and n is the total number of unclassified items (0 &lt;= m &lt;= n) (values read by antidiagonals).
  * @author Sean A. Irvine
  */
 public class A055633 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A055633() {
+    super(1);
+  }
 
   private int mN = -1;
   private int mM = 0;

@@ -15,13 +15,9 @@ public class A121104 extends A000045 {
   private final Sequence mSeq = new A000040();
 
   {
+    setOffset(2);
     super.next();
     mSeq.next();
-  }
-
-  @Override
-  public int getOffset() {
-    return 2;
   }
 
   @Override

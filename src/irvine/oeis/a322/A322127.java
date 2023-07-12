@@ -15,6 +15,7 @@ public class A322127 extends RationalTriangle {
 
   /** Construct the sequence. */
   public A322127() {
+    super(1);
     hasRAM(true);
   }
 

@@ -12,6 +12,7 @@ public class A165507 extends RationalTriangle {
 
   /** Construct the sequence. */
   public A165507() {
+    super(1);
     hasRAM(true);
   }
 

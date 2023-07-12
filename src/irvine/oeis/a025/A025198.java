@@ -1,14 +1,19 @@
 package irvine.oeis.a025;
 
-import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionSequence;
 
 /**
  * A025198 [ (n-1)st elementary symmetric function of {sqrt(k)} ], k = 1,2,...,n.
  * @author Sean A. Irvine
  */
 public class A025198 extends MemoryFunctionSequence<Long, CR> {
+
+  /** Construct the sequence. */
+  public A025198() {
+    super(1);
+  }
 
   private long mN = 0;
 

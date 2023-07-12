@@ -1,8 +1,8 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
@@ -10,6 +10,11 @@ import irvine.util.array.LongDynamicArray;
  * @author Sean A. Irvine
  */
 public class A005753 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A005753() {
+    super(1);
+  }
 
   // After Alois P. Heinz
 

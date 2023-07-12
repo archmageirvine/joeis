@@ -1,14 +1,19 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A007048 Number of irreducible positions of size n in Montreal solitaire.
  * @author Sean A. Irvine
  */
 public class A007048 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A007048() {
+    super(1);
+  }
 
   private long mN = 0;
 

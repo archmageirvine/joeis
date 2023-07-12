@@ -13,7 +13,7 @@ public class A306800 extends UpperLeftTriangle {
 
   /** Construct the sequence. */
   public A306800() {
-    super(1, 0, 0, -1);
+    super(0, 0, 0, -1);
     hasRAM(true);
   }
 

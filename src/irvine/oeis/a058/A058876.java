@@ -1,14 +1,19 @@
 package irvine.oeis.a058;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A058876 Triangle read by rows: T(n,k) = number of labeled acyclic digraphs with n nodes, containing exactly n+1-k points of in-degree zero (n &gt;= 1, 1&lt;=k&lt;=n).
  * @author Sean A. Irvine
  */
 public class A058876 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A058876() {
+    super(1);
+  }
 
   private int mN = 0;
   private int mM = 0;

@@ -17,9 +17,8 @@ public class A058102 extends A007251 {
   private int mN = -1;
   private final Polynomial<Q> mA = RING.empty();
 
-  @Override
-  public int getOffset() {
-    return 0;
+  {
+    setOffset(0);
   }
 
   @Override

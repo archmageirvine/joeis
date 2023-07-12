@@ -13,11 +13,8 @@ public class A205505 extends A000045 {
   private int mN = 0;
 
   {
+    setOffset(0);
     super.next();
-  }
-
-  public int getOffset() {
-    return 1;
   }
 
   @Override

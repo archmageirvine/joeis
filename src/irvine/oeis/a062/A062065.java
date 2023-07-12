@@ -13,9 +13,8 @@ public class A062065 extends MemorySequence {
 
   private final TreeSet<Z> mSums = new TreeSet<>();
 
-  @Override
-  public int getOffset() {
-    return 1;
+  {
+    setOffset(1);
   }
 
   private boolean isOk(final Z n) {

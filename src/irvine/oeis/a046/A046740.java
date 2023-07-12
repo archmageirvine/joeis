@@ -1,13 +1,18 @@
 package irvine.oeis.a046;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A046740 Triangle of number of permutations of [n] with 0 successions, by number of rises.
  * @author Sean A. Irvine
  */
 public class A046740 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A046740() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

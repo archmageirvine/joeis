@@ -12,9 +12,8 @@ public class A039624 extends A004601 {
   private long mN = 0;
   private long mBias = 0;
 
-  @Override
-  public int getOffset() {
-    return 1;
+  {
+    setOffset(1);
   }
 
   @Override

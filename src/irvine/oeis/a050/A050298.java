@@ -1,16 +1,21 @@
 package irvine.oeis.a050;
 
 import irvine.factor.factor.Jaguar;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.a008.A008578;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A050298 Triangle read by rows: T(n,k) = p(r), where r is the (n-k+1)-th number such that A001222(r+1) = k, and p(r) is the r-th prime.
  * @author Sean A. Irvine
  */
 public class A050298 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A050298() {
+    super(1);
+  }
 
   private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A008578());
   private int mN = 0;

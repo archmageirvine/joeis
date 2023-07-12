@@ -4,16 +4,14 @@ package irvine.oeis.a101;
 import irvine.math.z.Z;
 import irvine.oeis.a001.A001622;
 
-
 /**
  * A101297 Bisection of A001622 (decimal expansion of the golden ratio).
  * @author Georg Fischer
  */
 public class A101297 extends A001622 {
 
-  @Override
-  public int getOffset() {
-    return 0;
+  {
+    setOffset(0);
   }
 
   @Override

@@ -22,8 +22,9 @@ public class A143494 extends Triangle {
    * @param stir unsigned <code>stir</code>-stirling numbers
    */
   public A143494(final int stir) {
-    mStir = stir;
+    setOffset(2);
     hasRAM(false);
+    mStir = stir;
   }
 
   @Override

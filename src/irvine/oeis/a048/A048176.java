@@ -1,13 +1,18 @@
 package irvine.oeis.a048;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A048176 Generalized Stirling number triangle of first kind.
  * @author Sean A. Irvine
  */
 public class A048176 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A048176() {
+    super(1);
+  }
 
   private int mM = 0;
   private int mN = 0;

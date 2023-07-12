@@ -1,14 +1,19 @@
 package irvine.oeis.a003;
 
 import irvine.math.MemoryFunction2;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A003125 Value of an urn with n balls of type -1 and n+2 balls of type +1.
  * @author Sean A. Irvine
  */
 public class A003125 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A003125() {
+    super(1);
+  }
 
   private static class AFunction extends MemoryFunction2<Integer, Z> {
     @Override

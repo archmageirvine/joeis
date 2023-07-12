@@ -10,12 +10,8 @@ import irvine.oeis.MemorySequence;
 public class A061192 extends MemorySequence {
 
   {
+    setOffset(1);
     add(null);
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
   }
 
   @Override

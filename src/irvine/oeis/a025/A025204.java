@@ -1,14 +1,19 @@
 package irvine.oeis.a025;
 
-import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionSequence;
 
 /**
  * A025204 [ 4th elementary symmetric function of {log(k)} ], k = 2,3,...,n.
  * @author Sean A. Irvine
  */
 public class A025204 extends MemoryFunctionSequence<Long, CR> {
+
+  /** Construct the sequence. */
+  public A025204() {
+    super(5);
+  }
 
   protected long mN = 4;
   protected CR mSum = CR.ZERO;

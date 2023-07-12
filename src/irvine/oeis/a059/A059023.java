@@ -1,14 +1,19 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A059023 Triangle of Stirling numbers of order 4.
  * @author Sean A. Irvine
  */
 public class A059023 extends MemoryFunctionInt2Sequence<Z> {
+
+  /** Construct the sequence. */
+  public A059023() {
+    super(4);
+  }
 
   private int mN = 3;
   private int mM = 3;

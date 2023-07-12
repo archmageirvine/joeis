@@ -15,10 +15,6 @@ public class A248507 extends DecimalExpansionSequence {
   /** Construct the sequence. */
   public A248507() {
     super(1, PhysicsConstants.PLANCK_CONSTANT_CR.divide(PhysicsConstants.ELEMENTARY_CHARGE_CR).divide(CR.TWO).multiply(Z.TEN.pow(15)));
-  }
-
-  @Override
-  public int getOffset() {
-    return -14;
+    setOffset(-14);
   }
 }

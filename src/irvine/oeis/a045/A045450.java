@@ -1,6 +1,5 @@
 package irvine.oeis.a045;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
@@ -10,12 +9,18 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000720;
 import irvine.oeis.a007.A007504;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A045450 Number of partitions of n into a prime number of distinct prime parts.
  * @author Sean A. Irvine
  */
 public class A045450 extends MemoryFunction2Sequence<Integer, Polynomial<Z>> {
+
+  /** Construct the sequence. */
+  public A045450() {
+    super(5);
+  }
 
   // After Alois P. Heinz
 

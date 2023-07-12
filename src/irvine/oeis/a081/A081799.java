@@ -17,10 +17,6 @@ public class A081799 extends DecimalExpansionSequence {
   /** Construct the sequence. */
   public A081799() {
     super(-18, CR.TAU.multiply(CR.TWO).multiply(LIGHT_SPEED_SQUARED).inverse());
-  }
-
-  @Override
-  public int getOffset() {
-    return -11;
+    setOffset(-11);
   }
 }

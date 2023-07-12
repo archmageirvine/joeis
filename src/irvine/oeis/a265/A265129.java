@@ -5,10 +5,16 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A265129 Triangle read by rows, formed as the sum of the two versions of the natural numbers filling an equilateral triangle. 
+ * A265129 Triangle read by rows, formed as the sum of the two versions of the natural numbers filling an equilateral triangle.
  * @author Georg Fischer
  */
 public class A265129 extends Triangle {
+
+  /** Construct the sequence. */
+  public A265129() {
+    setOffset(1);
+    hasRAM(true);
+  }
 
   @Override
   protected Z compute(final int n, final int k) {

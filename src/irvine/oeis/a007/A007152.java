@@ -2,8 +2,8 @@ package irvine.oeis.a007;
 
 import java.util.ArrayList;
 
-import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionSequence;
 
 /**
  * A007152 Evolutionary trees of magnitude n.
@@ -11,13 +11,20 @@ import irvine.math.z.Z;
  */
 public class A007152 extends MemoryFunctionSequence<Integer, Z> {
 
+  /** Construct the sequence. */
+  public A007152() {
+    super(1);
+  }
+
   // After R. J. Mathar
 
   private final A007151 mA007151 = new A007151();
   private final ArrayList<Z> mA = new ArrayList<>();
+
   {
     mA.add(null);
   }
+
   private int mN = 0;
 
   private Z a7151(final int n) {

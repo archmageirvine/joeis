@@ -1,16 +1,21 @@
 package irvine.oeis.a010;
 
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A010028 Triangle read by rows: T(n,k) is one-half the number of permutations of length n with exactly n-k rising or falling successions, for n &gt;= 1, 1 &lt;= k &lt;= n. T(1,1) = 1 by convention.
  * @author Sean A. Irvine
  */
 public class A010028 extends MemoryFunction1Sequence<Polynomial<Z>> {
+
+  /** Construct the sequence. */
+  public A010028() {
+    super(1);
+  }
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> X1 = RING.oneMinusXToTheN(1);

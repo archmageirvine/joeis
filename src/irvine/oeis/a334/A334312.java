@@ -16,6 +16,12 @@ public class A334312 extends Triangle {
 
   private MemorySequence mSeq = MemorySequence.cachedSequence(new PrependSequence(new A023900(), 1));
 
+  /** Construct the sequence. */
+  public A334312() {
+    setOffset(1);
+    hasRAM(true);
+  }
+
   @Override
   public Z compute(int n, int k) {
     ++n;

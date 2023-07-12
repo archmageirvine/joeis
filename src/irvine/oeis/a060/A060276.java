@@ -15,9 +15,8 @@ public class A060276 extends MemorySequence {
   private final Fast mPrime = new Fast();
   private final TreeSet<Z> mSums = new TreeSet<>();
 
-  @Override
-  public int getOffset() {
-    return 1;
+  {
+    setOffset(1);
   }
 
   @Override

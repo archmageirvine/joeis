@@ -4,10 +4,16 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A076014 Triangle in which m-th entry of n-th row is m^(n-1). 
+ * A076014 Triangle in which m-th entry of n-th row is m^(n-1).
  * @author Georg Fischer
  */
 public class A076014 extends Triangle {
+
+  /** Construct the sequence. */
+  public A076014() {
+    setOffset(1);
+    hasRAM(true);
+  }
 
   @Override
   protected Z compute(final int n, final int k) {

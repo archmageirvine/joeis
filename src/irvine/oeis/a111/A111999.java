@@ -1,13 +1,18 @@
 package irvine.oeis.a111;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A111999 T(n, k) = [x^k] (-1)^n*Sum_{k=0..n} E2(n, n-k)*(1+x)^(n-k) where E2(n, k) are the second-order Eulerian numbers. Triangle read by rows, T(n, k) for n &gt;= 1 and 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A111999 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A111999() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

@@ -10,12 +10,18 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A244372 extends Triangle {
 
-  /* Maple: 
+  /* Maple:
     b:= proc(n, i, t, k) as in A299038:
     T:= (n, k)-> b(n-1$2, k$2) -`if`(k=0, 0, b(n-1$2, k-1$2)):
     seq(seq(T(n, k), k=0..n-1), n=1..14);
   */
   protected final A299038 mSeq = new A299038();
+
+  /** Construct the sequence. */
+  public A244372() {
+    setOffset(1);
+    hasRAM(true);
+  }
 
   @Override
   public Z compute(int n, final int k) {

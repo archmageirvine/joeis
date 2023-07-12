@@ -1,13 +1,18 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A049061 Triangle a(n,k) (1&lt;=k&lt;=n) of "signed Eulerian numbers" read by rows.
  * @author Sean A. Irvine
  */
 public class A049061 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A049061() {
+    super(1);
+  }
 
   // After Jean-Fran&ccedil;ois Alcover
 

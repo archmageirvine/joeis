@@ -1,18 +1,23 @@
 package irvine.oeis.a008;
 
 import irvine.factor.factor.Jaguar;
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A008298 Triangle of D'Arcais numbers.
  * @author Sean A. Irvine
  */
 public class A008298 extends MemoryFunction1Sequence<Polynomial<Z>> {
+
+  /** Construct the sequence. */
+  public A008298() {
+    super(1);
+  }
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

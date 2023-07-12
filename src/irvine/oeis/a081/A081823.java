@@ -14,10 +14,6 @@ public class A081823 extends DecimalExpansionSequence {
   /** Construct the sequence. */
   public A081823() {
     super(1, PhysicsConstants.ELEMENTARY_CHARGE_CR.multiply(Z.TEN.pow(18)));
-  }
-
-  @Override
-  public int getOffset() {
-    return -18;
+    setOffset(-18);
   }
 }

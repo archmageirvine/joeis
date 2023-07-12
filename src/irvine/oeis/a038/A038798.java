@@ -7,8 +7,7 @@ package irvine.oeis.a038;
 public class A038798 extends A038739 {
   // Apparently the same (except for the offset).
 
-  @Override
-  public int getOffset() {
-    return 0;
+  {
+    setOffset(0);
   }
 }

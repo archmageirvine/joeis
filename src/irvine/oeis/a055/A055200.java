@@ -12,9 +12,8 @@ public class A055200 extends A001113 {
   private long mLim = -1;
   private long mM = 0;
 
-  @Override
-  public int getOffset() {
-    return -1;
+  {
+    setOffset(-1);
   }
 
   @Override

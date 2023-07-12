@@ -1,13 +1,18 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A052154 Array read by antidiagonals: a(n,k)= coefficient of z^n of p_k(z), where p_k+1(z)=(p_k(z))^2+z, p_1(z)=z.
  * @author Sean A. Irvine
  */
 public class A052154 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A052154() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

@@ -13,7 +13,10 @@ public class A025559 extends A000217 {
   private Z mL = Z.ONE;
   private Q mA = Q.ZERO;
   private boolean mSign = false;
-  {
+
+  /** Construct the sequence. */
+  public A025559() {
+    super(1);
     super.next();
   }
 

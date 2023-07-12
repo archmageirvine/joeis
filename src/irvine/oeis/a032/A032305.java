@@ -1,13 +1,18 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A032305 Number of rooted trees where any 2 subtrees extending from the same node have a different number of nodes.
  * @author Sean A. Irvine
  */
 public class A032305 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A032305() {
+    super(1);
+  }
 
   // After Alois P. Heinz
 

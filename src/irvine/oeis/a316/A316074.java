@@ -12,6 +12,12 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A316074 extends Triangle {
 
+  /** Construct the sequence. */
+  public A316074() {
+    setOffset(1);
+    hasRAM(true);
+  }
+
   /* Maple program:
     b:= proc(n, i, k) option remember; `if`(n=0, 1, `if`(i<1, 0,
       add(binomial(T(i, k), j)*b(n-i*j, i-1, k), j=0..n/i)))

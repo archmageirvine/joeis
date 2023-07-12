@@ -1,18 +1,23 @@
 package irvine.oeis.a054;
 
 import irvine.factor.factor.Jaguar;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A054722 Triangle of coefficients of polynomials arising in enumeration of periodic sequences.
  * @author Sean A. Irvine
  */
 public class A054722 extends MemoryFunction2Sequence<Integer, Polynomial<Z>> {
+
+  /** Construct the sequence. */
+  public A054722() {
+    super(1);
+  }
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private Polynomial<Z> mQ = RING.zero();

@@ -11,9 +11,8 @@ public class A061346 extends A061345 {
   private Z mA = super.next();
   private Z mN = Z.NEG_ONE;
 
-  @Override
-  public int getOffset() {
-    return 1;
+  {
+    setOffset(1);
   }
 
   @Override

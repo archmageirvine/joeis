@@ -12,9 +12,8 @@ public class A061351 extends A001359 {
 
   private boolean mFirst = true;
 
-  @Override
-  public int getOffset() {
-    return 0;
+  {
+    setOffset(0);
   }
 
   @Override

@@ -15,6 +15,11 @@ import irvine.oeis.memory.MemoryFunctionInt3Sequence;
  */
 public class A033185 extends MemoryFunctionInt3Sequence<Z> {
 
+  /** Construct the sequence. */
+  public A033185() {
+    super(1);
+  }
+
   // After Alois P. Heinz
 
   private final Sequence mA55 = new A000081();

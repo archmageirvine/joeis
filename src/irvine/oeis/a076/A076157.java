@@ -13,12 +13,8 @@ public class A076157 extends FoldedContinuedFraction {
 
   /** Construct the sequence */
   public A076157() {
-    super(0, k -> Z.TWO.pow(MemoryFactorial.SINGLETON.factorial(k).multiply(k - 1)), new long[] {1, 3, 1, 3, 4});
+    super(0, k -> Z.TWO.pow(MemoryFactorial.SINGLETON.factorial(k).multiply(k - 1)), new long[]{1, 3, 1, 3, 4});
+    setOffset(1);
     setStart(2);
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
   }
 }

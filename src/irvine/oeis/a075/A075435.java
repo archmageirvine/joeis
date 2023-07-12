@@ -12,5 +12,6 @@ public class A075435 extends PartitionTransformTriangle {
   /** Construct the sequence. */
   public A075435() {
     super(0, new A000984(), 1);
+    setOffset(2);
   }
 }

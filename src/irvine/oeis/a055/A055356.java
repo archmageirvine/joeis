@@ -4,10 +4,16 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A055356 Triangle of increasing mobiles (circular rooted trees) with n nodes and k leaves. 
+ * A055356 Triangle of increasing mobiles (circular rooted trees) with n nodes and k leaves.
  * @author Georg Fischer
  */
 public class A055356 extends Triangle {
+
+  /** Construct the sequence. */
+  public A055356() {
+    setOffset(1);
+    hasRAM(false);
+  }
 
   @Override
   protected Z compute(final int n, final int k) {

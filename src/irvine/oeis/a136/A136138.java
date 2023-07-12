@@ -7,9 +7,8 @@ package irvine.oeis.a136;
  */
 public class A136138 extends A136136 {
 
-  @Override
-  public int getOffset() {
-    return 0;
+  {
+    setOffset(0);
   }
 
   /** Construct the sequence. */

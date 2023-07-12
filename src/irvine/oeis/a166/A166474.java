@@ -12,6 +12,11 @@ public class A166474 extends A000217 {
   private Z mA = null;
   private Z mB = null;
 
+  /** Construct the sequence. */
+  public A166474() {
+    super(1);
+  }
+
   @Override
   public Z next() {
     final Z t = super.next();

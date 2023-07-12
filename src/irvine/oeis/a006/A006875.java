@@ -1,16 +1,21 @@
 package irvine.oeis.a006;
 
 import irvine.factor.factor.Jaguar;
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.Mobius;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A006875 Non-seed mu-atoms of period n in Mandelbrot set.
  * @author Sean A. Irvine
  */
 public class A006875 extends MemoryFunction1Sequence<Z> {
+
+  /** Construct the sequence. */
+  public A006875() {
+    super(1);
+  }
 
   private int mN = 0;
 

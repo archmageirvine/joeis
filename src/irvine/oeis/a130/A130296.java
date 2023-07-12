@@ -13,6 +13,8 @@ public class A130296 extends Triangle {
   /** Construct the sequence */
   public A130296() {
     super();
+    setOffset(1);
+    hasRAM(true);
   }
 
   @Override
@@ -20,9 +22,9 @@ public class A130296 extends Triangle {
     final Z result;
     if (k < 0 || k > n) {
       result = Z.ZERO;
-    } else if (n == 0) { 
+    } else if (n == 0) {
       result = Z.ONE;
-    } else if (k == 0) { 
+    } else if (k == 0) {
       result = Z.valueOf(n + 1);
     } else {
       result = Z.ONE;

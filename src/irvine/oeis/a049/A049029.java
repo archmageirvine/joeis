@@ -1,13 +1,18 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A049029 Triangle read by rows, the Bell transform of the quartic factorial numbers A007696(n+1) without column 0.
  * @author Sean A. Irvine
  */
 public class A049029 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A049029() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

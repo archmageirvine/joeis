@@ -1,13 +1,18 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A050143 A(n,k) = Sum_{h=0..n-1, m=0..k} A(h,m) for n &gt;= 1 and k &gt;= 1, with A(n,0) = 1 for n &gt;= 0 and A(0,k) = 0 for k &gt;= 1; square array A, read by descending antidiagonals.
  * @author Sean A. Irvine
  */
 public class A050143 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A050143() {
+    super(1);
+  }
 
   private int mN = -1;
   private int mM = 0;

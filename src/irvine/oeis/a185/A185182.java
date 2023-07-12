@@ -14,8 +14,4 @@ public class A185182 extends NoncomputableSequence {
     super(0, 2, 4, 56, 1056, 25152, 728192, 24242048);
   }
 
-  @Override
-  public int getOffset() {
-    return 0;
-  }
 }

@@ -26,6 +26,6 @@ public class CycleTransformSequence extends InverseMobiusTransformSequence {
    * @param skip number of terms to skip
    */
   public CycleTransformSequence(final int offset, final Sequence seq, final int skip) {
-    super(new LyndonTransformSequence(offset, seq, skip), 1, Z.ONE);
+    super(offset, new LyndonTransformSequence(seq, skip), 1, Z.ONE);
   }
 }

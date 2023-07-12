@@ -1,13 +1,18 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A007902 Number of pebbling configurations with n pebbles.
  * @author Sean A. Irvine
  */
 public class A007902 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A007902() {
+    super(1);
+  }
 
   // After Alois P. Heinz
 

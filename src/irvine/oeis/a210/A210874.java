@@ -20,6 +20,8 @@ public class A210874 extends Triangle {
    */
   public A210874(final long... inits) {
     super(inits);
+    setOffset(1);
+    hasRAM(false);
   }
 
   @Override

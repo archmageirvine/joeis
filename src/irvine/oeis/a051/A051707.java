@@ -7,8 +7,8 @@ import java.util.Map;
 import java.util.Set;
 
 import irvine.factor.factor.Jaguar;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.util.Point;
 
 /**
@@ -16,6 +16,11 @@ import irvine.util.Point;
  * @author Sean A. Irvine
  */
 public class A051707 extends MemoryFunction2Sequence<Integer, Set<Map<Point, Integer>>> {
+
+  /** Construct the sequence. */
+  public A051707() {
+    super(1);
+  }
 
   private static final Set<Map<Point, Integer>> ONE_ONE = Collections.singleton(Collections.singletonMap(new Point(1, 1), 1));
   private int mN = 0;

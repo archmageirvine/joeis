@@ -8,10 +8,8 @@ import irvine.math.z.Z;
  */
 public class A112539 extends A112865 {
 
-
-  @Override
-  public int getOffset() {
-    return 1;
+  {
+    setOffset(1);
   }
 
   @Override

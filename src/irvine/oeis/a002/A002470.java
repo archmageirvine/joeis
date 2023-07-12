@@ -18,15 +18,11 @@ public class A002470 extends A100130 {
   private final A100130 mSeq = new A100130();
 
   {
+    setOffset(0);
     mA100130.add(Z.ZERO);
   }
 
   private int mN = -1;
-
-  @Override
-  public int getOffset() {
-    return 0;
-  }
 
   @Override
   public Z next() {

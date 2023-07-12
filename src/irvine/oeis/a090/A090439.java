@@ -16,16 +16,12 @@ public class A090439 extends HypergeometricSequence {
   /** Construct the sequence. */
   public A090439() {
     super(0, 1, 1, "[[0,-2],[3],[1]]"); // "assuming offset 0"
+    setOffset(1);
   }
 
   @Override
   public Z next() {
     ++mN;
     return super.nextQ().multiply(MemoryFactorial.SINGLETON.factorial(2 * mN + 2)).divide(2).num();
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
   }
 }

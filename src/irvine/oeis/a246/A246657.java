@@ -13,9 +13,8 @@ public class A246657 extends A129164 {
 
   private int mN = -1;
 
-  @Override
-  public int getOffset() {
-    return 0;
+  {
+    setOffset(0);
   }
 
   /** Construct the sequence. */

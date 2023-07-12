@@ -1,14 +1,19 @@
 package irvine.oeis.a035;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A035513 Wythoff array read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A035513 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A035513() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

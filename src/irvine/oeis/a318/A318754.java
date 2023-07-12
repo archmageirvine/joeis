@@ -13,6 +13,12 @@ public class A318754 extends Triangle {
 
   private int mN = 0;
 
+  /** Construct the sequence. */
+  public A318754() {
+    setOffset(1);
+    hasRAM(true);
+  }
+
   /* Maple:
     g:= proc(n, i, k) option remember; `if`(n=0, 1, `if`(i<1, 0, add(
           binomial(g(i-1$2, k)+j-1, j)*g(n-i*j, i-1, k), j=0..min(k, n/i))))

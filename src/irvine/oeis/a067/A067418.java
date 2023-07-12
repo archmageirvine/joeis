@@ -13,11 +13,6 @@ public class A067418 extends A213500 {
   /** Construct the sequence. */
   public A067418() {
     super(new A000045(), new A000045());
+    setOffset(0);
   }
-
-  @Override
-  public int getOffset() {
-    return 0;
-  }
-
 }

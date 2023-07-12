@@ -12,11 +12,7 @@ public class A053398 extends UpperLeftTriangle {
   /** Construct the sequence. */
   public A053398() {
     super(0, 0, -1);
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
+    setOffset(1);
   }
 
   @Override

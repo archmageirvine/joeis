@@ -1,14 +1,19 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A005333 Number of 2-colored connected labeled graphs with n vertices of the first color and n vertices of the second color.
  * @author Sean A. Irvine
  */
 public class A005333 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A005333() {
+    super(1);
+  }
 
   private int mN = 0;
 
@@ -31,7 +36,6 @@ public class A005333 extends MemoryFunction2Sequence<Integer, Z> {
     }
     return sum;
   }
-
 
   @Override
   public Z next() {

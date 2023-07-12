@@ -12,9 +12,11 @@ import irvine.oeis.triangle.Triangle;
 public class A143267 extends Triangle {
 
   protected Sequence mSeq;
-  
+
   /** Construct the sequence. */
   public A143267() {
+    setOffset(1);
+    hasRAM(false);
     mSeq = new A000010();
   }
 

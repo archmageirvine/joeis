@@ -1,14 +1,19 @@
 package irvine.oeis.a033;
 
 import irvine.factor.factor.Jaguar;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A033833 Highly factorable numbers: numbers with a record number of proper factorizations.
  * @author Sean A. Irvine
  */
 public class A033833 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A033833() {
+    super(1);
+  }
 
   protected Z mPrevBest = Z.ZERO;
   private long mN = 0;

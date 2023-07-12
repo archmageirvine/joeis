@@ -12,12 +12,13 @@ public class A136124 extends Triangle {
 
   /** Construct the sequence. */
   public A136124() {
+    setOffset(2);
     hasRAM(true);
   }
 
   /* Maple:
-    A136124_row := proc(n) local k, j; 
-    `if`(n=0, 1, seq((-1)^(n+1-k)*add(stirling1(n+1, j), j=1..k), k=1..n)) end: 
+    A136124_row := proc(n) local k, j;
+    `if`(n=0, 1, seq((-1)^(n+1-k)*add(stirling1(n+1, j), j=1..k), k=1..n)) end:
     seq(print(A136124_row(r)), r=1..6);
   */
   @Override

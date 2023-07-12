@@ -13,11 +13,7 @@ public class A255738 extends CharacteristicFunction {
   /** Construct the sequence. */
   public A255738() {
     super(0, new A094373());
+    setOffset(1);
     next();
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
   }
 }

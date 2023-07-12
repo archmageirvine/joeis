@@ -57,9 +57,8 @@ public class A060487 extends A188445 {
     return (m & 1) == 0 ? sum : RING.negate(sum);
   }
 
-  @Override
-  public int getOffset() {
-    return 3;
+  {
+    setOffset(3);
   }
 
   @Override

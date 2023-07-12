@@ -34,7 +34,16 @@ public class RationalTriangle extends AbstractSequence implements RationalSequen
    * Generates an ordinary Pascal triangle (A007318).
    */
   public RationalTriangle() {
-    super(DEFOFF);
+    this(DEFOFF);
+  }
+
+  /**
+   * Constructor with offset.
+   * Generates an ordinary Pascal triangle (A007318).
+   * @param offset first index
+   */
+  public RationalTriangle(final int offset) {
+    super(offset);
     mArr = new ArrayList<>();
     initialize(new Q[]{Q.ONE});
   }

@@ -13,6 +13,11 @@ public class A027194 extends MemoryFunctionInt3Sequence<Z> {
 
   private int mN = -leastPart();
 
+  /** Construct the sequence. */
+  public A027194() {
+    super(1);
+  }
+
   protected int leastPart() {
     return 2;
   }

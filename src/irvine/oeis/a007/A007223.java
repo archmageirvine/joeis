@@ -1,18 +1,23 @@
 package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A007223 Number of distinct perforation patterns for deriving (v,b) = (n+2,n) punctured convolutional codes from (2,1).
  * @author Sean A. Irvine
  */
 public class A007223 extends MemoryFunction2Sequence<Integer, Polynomial<Z>> {
+
+  /** Construct the sequence. */
+  public A007223() {
+    super(2);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = 1;

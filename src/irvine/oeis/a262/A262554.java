@@ -1,14 +1,19 @@
 package irvine.oeis.a262;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A262554 Triangle read by rows: coefficients in Bell's formula for number of ways of making change when coins have denominations which are powers of 2.
  * @author Sean A. Irvine
  */
 public class A262554 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A262554() {
+    super(1);
+  }
 
   private Z a(final int i, final int j) {
     return Binomial.binomial(i, j - i).shiftLeft(2 * i - j).add(Binomial.binomial(i - 1, j - i + 1).shiftLeft(2 * i - j - 2));

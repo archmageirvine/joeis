@@ -3,15 +3,20 @@ package irvine.oeis.a005;
 import java.util.ArrayList;
 
 import irvine.factor.prime.Fast;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.MemoryFunction3;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A005941 Inverse of the Doudna sequence A005940.
  * @author Sean A. Irvine
  */
 public class A005941 extends MemoryFunction2Sequence<Z, Z> {
+
+  /** Construct the sequence. */
+  public A005941() {
+    super(1);
+  }
 
   // After R. J. Mathar
 

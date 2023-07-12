@@ -1,14 +1,19 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A005264 Number of labeled rooted Greg trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A005264 extends MemoryFunction2Sequence<Integer, Z> {
-  
+
+  /** Construct the sequence. */
+  public A005264() {
+    super(1);
+  }
+
   // After Peter Luschny
 
   @Override

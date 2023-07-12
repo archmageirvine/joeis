@@ -13,9 +13,8 @@ public class A135481 extends A135416 {
   private int mN = -1;
   private final A135416 mSeq = new A135416(1, 6);
 
-  @Override
-  public int getOffset() {
-    return 0;
+  {
+    setOffset(0);
   }
 
   @Override

@@ -12,6 +12,12 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A081720 extends Triangle {
 
+  /** Construct the sequence. */
+  public A081720() {
+    setOffset(1);
+    hasRAM(true);
+  }
+
   /* Caution, this method is used in A276550! */
   @Override
   public Z compute(int n, int k) {

@@ -1,13 +1,18 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A007100 Number of labeled trivalent (or cubic) 3-connected graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A007100 extends MemoryFunction1Sequence<Z> {
+
+  /** Construct the sequence. */
+  public A007100() {
+    super(2);
+  }
 
   private int mN = 1;
   private Z mF = Z.TWO;

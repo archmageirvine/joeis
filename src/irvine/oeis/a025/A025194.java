@@ -1,14 +1,19 @@
 package irvine.oeis.a025;
 
-import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionSequence;
 
 /**
  * A025194 a(n) = [ 3rd elementary symmetric function of {sqrt(k)} ], k = 1,2,...,n.
  * @author Sean A. Irvine
  */
 public class A025194 extends MemoryFunctionSequence<Long, CR> {
+
+  /** Construct the sequence. */
+  public A025194() {
+    super(3);
+  }
 
   private long mN = 2;
   private CR mSum = CR.ZERO;

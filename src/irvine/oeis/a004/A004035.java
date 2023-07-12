@@ -10,16 +10,31 @@ import irvine.oeis.AbstractSequence;
  */
 public class A004035 extends AbstractSequence {
 
-  /** Construct the sequence. */
-  public A004035() {
-    super(4);
-  }
-
   private static final int MAX = 1000000;
-  private int mN = 3;
+  private int mN;
+  private final int mD;
+  private final int mW;
   private long mLimit = 0;
   private long mBest = 0;
   private final long[] mWords = new long[MAX];
+
+  /** Construct the sequence. */
+  public A004035() {
+    this(4, 4, 5);
+  }
+
+  /**
+   * Generic constructor with parameters.
+   * @param offset first index
+   * @param d first parameter
+   * @param w second parameter
+   */
+  public A004035(final int offset, final int d, final int w) {
+    super(offset);
+    mD = d;
+    mW = w;
+    mN = offset - 1;
+  }
 
   private boolean isHammingOk(final long word, final int d, final int pos) {
     for (int k = pos - 1; k >= 0; --k) {
@@ -58,6 +73,6 @@ public class A004035 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(a(++mN, 4, 5));
+    return Z.valueOf(a(++mN, mD, mW));
   }
 }

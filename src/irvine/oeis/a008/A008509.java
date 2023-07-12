@@ -10,7 +10,9 @@ import irvine.util.string.StringUtils;
  */
 public class A008509 extends A000217 {
 
-  {
+  /** Construct the sequence. */
+  public A008509() {
+    super(1);
     super.next();
   }
 

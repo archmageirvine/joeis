@@ -12,6 +12,12 @@ public class A264396 extends Triangle {
 
   private int mN = 0;
 
+  /** Construct the sequence. */
+  public A264396() {
+    setOffset(1);
+    hasRAM(true);
+  }
+
   /* Maple:
     b:= proc(n, i) option remember; `if`(n=0, `if`(i=0, 0, 1),
           `if`(i<1 or n<i, 0, add(b(n-i*j, i-1), j=1..n/i)))

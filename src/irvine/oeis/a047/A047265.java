@@ -1,15 +1,20 @@
 package irvine.oeis.a047;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.a121.A121373;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A047265 Triangle a(n,k) (n &gt;= 1, 1&lt;=k&lt;=n) giving coefficient of x^n in expansion of (Product_{j&gt;=1} (1-(-x)^j) - 1 )^k.
  * @author Sean A. Irvine
  */
 public class A047265 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A047265() {
+    super(1);
+  }
 
   // After Alois P. Heinz
 

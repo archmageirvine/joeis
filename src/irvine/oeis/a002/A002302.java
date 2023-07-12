@@ -1,13 +1,18 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A002302 Generalized tangent numbers.
  * @author Sean A. Irvine
  */
 public class A002302 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A002302() {
+    super(3);
+  }
 
   private long mN = -1;
 

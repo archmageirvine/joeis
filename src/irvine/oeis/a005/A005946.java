@@ -1,15 +1,20 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A005946 Number of n-step mappings with 5 inputs.
  * @author Sean A. Irvine
  */
 public class A005946 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A005946() {
+    super(1);
+  }
 
   protected static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   protected int mN = 0;

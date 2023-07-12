@@ -1,13 +1,18 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A032434 Triangle read by rows: last survivors of Josephus elimination process.
  * @author Sean A. Irvine
  */
 public class A032434 extends MemoryFunction2Sequence<Long, Long> {
+
+  /** Construct the sequence. */
+  public A032434() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

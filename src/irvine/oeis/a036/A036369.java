@@ -1,13 +1,18 @@
 package irvine.oeis.a036;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A036369 Number of asymmetric orthoplex n-ominoes in n-2 space.
  * @author Sean A. Irvine
  */
 public class A036369 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A036369() {
+    super(4);
+  }
 
   private long mN = 3;
 

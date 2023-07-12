@@ -11,6 +11,8 @@ public class A177990 extends Triangle {
 
   /** Construct the sequence. */
   public A177990() {
+    setOffset(1);
+    hasRAM(true);
   }
 
   @Override

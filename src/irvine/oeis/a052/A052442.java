@@ -15,12 +15,8 @@ public class A052442 extends A001349 {
   private final Sequence mA = new PrependSequence(new A002218().skip(2), 1, 0);
 
   {
+    setOffset(1);
     super.next();
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
   }
 
   @Override

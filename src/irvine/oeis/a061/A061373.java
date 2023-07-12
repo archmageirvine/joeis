@@ -13,12 +13,8 @@ public class A061373 extends MemorySequence {
   private final Fast mPrime = new Fast();
 
   {
+    setOffset(1);
     add(null);
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
   }
 
   @Override

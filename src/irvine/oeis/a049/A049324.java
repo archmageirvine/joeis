@@ -1,7 +1,7 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A049324 A convolution triangle of numbers generalizing Pascal's triangle A007318.
@@ -11,6 +11,11 @@ public class A049324 extends MemoryFunction2Sequence<Integer, Z> {
 
   protected int mN = 0;
   protected int mM = 0;
+
+  /** Construct the sequence. */
+  public A049324() {
+    super(1);
+  }
 
   protected long multiplier() {
     return 3;

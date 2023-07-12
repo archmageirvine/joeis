@@ -1,17 +1,22 @@
 package irvine.oeis.a013;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A013924 Number of labeled connected graphs with n nodes and 2 cutpoints.
  * @author Sean A. Irvine
  */
 public class A013924 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A013924() {
+    super(4);
+  }
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final MemorySequence mB = MemorySequence.cachedSequence(new PrependSequence(new A013922(), 0));

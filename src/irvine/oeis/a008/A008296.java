@@ -1,13 +1,18 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A008296 Triangle of Lehmer-Comtet numbers of the first kind.
  * @author Sean A. Irvine
  */
 public class A008296 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A008296() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

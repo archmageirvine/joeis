@@ -18,12 +18,8 @@ public class A061775 extends MemorySequence {
   private final MemorySequence mPrimePi = MemorySequence.cachedSequence(new PrependSequence(new A000720(), 0));
 
   {
+    setOffset(1);
     add(null); // 0th unused
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
   }
 
   @Override

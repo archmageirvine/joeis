@@ -23,6 +23,7 @@ public class A166960 extends Triangle {
    */
   public A166960(final int m) {
     mM = m;
+    setOffset(1);
     hasRAM(false);
   }
 

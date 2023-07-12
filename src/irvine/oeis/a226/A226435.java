@@ -16,14 +16,11 @@ public class A226435 extends ExponentialGeneratingFunction {
   /** Construct the sequence. */
   public A226435() {
     super(0);
+    setOffset(1);
   }
 
   @Override
   public Polynomial<Q> compute(final int n) {
     return RING.add(RING.subtract(RING.add(RING.sec(RING.x(), n), RING.tan(RING.x(), n)), RING.pow(RING.add(RING.sec(RING.x(), n), RING.tan(RING.x(), n)), 2, n)), RING.pow(RING.add(RING.sec(RING.x(), n), RING.tan(RING.x(), n)), 3, n));
-  }
-
-  public int getOffset() {
-    return 1;
   }
 }

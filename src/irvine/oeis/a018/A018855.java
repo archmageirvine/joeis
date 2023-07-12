@@ -10,6 +10,11 @@ import irvine.util.array.DynamicArray;
  */
 public class A018855 extends A000217 {
 
+  /** Construct the sequence. */
+  public A018855() {
+    super(1);
+  }
+
   private DynamicArray<String> mCache = new DynamicArray<>();
   private int mN = 0;
 

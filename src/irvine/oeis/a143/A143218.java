@@ -9,6 +9,12 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A143218 extends Triangle {
 
+  /** Construct the sequence. */
+  public A143218() {
+    setOffset(1);
+    hasRAM(true);
+  }
+
   @Override
   public Z compute(final int n, final int k) {
     return Z.valueOf(2 * n + 1).multiply(Z.valueOf(2 * k + 1));

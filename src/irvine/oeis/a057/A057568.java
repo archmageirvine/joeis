@@ -11,6 +11,11 @@ import irvine.oeis.memory.MemoryFunctionInt3Sequence;
  */
 public class A057568 extends MemoryFunctionInt3Sequence<Z> {
 
+  /** Construct the sequence. */
+  public A057568() {
+    super(1);
+  }
+
   // After Alois P. Heinz
 
   private final Fast mPrime = new Fast();

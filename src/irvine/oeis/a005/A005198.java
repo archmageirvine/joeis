@@ -15,8 +15,14 @@ import irvine.oeis.memory.MemoryFunctionInt3Sequence;
  */
 public class A005198 extends MemoryFunctionInt3Sequence<Z> {
 
+  /** Construct the sequence. */
+  public A005198() {
+    super(1);
+  }
+
   private final Sequence mA81 = new A000081();
   private final List<Z> mT = new ArrayList<>();
+
   {
     mT.add(null);
   }

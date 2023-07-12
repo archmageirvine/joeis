@@ -11,6 +11,12 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A101598 extends Triangle {
 
+  /** Construct the sequence. */
+  public A101598() {
+    setOffset(1);
+    hasRAM(true);
+  }
+
   @Override
   public Z compute(final int n, final int k) {
     final int[] counts = ZUtils.digitCounts(Binomial.binomial(n, k));

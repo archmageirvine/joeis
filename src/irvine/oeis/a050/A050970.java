@@ -1,14 +1,19 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A050970 Numerator of S(n)/Pi^n, where S(n) = Sum_{k=-inf..+inf} (4k+1)^(-n).
  * @author Sean A. Irvine
  */
 public class A050970 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A050970() {
+    super(1);
+  }
 
   private long mN = -1;
   private Z mF = Z.ONE;

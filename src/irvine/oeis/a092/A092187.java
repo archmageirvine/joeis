@@ -11,13 +11,9 @@ public class A092187 extends A092186 {
 
   /** Construct the sequence. */
   public A092187() {
+    setOffset(2);
     super.next();
     super.next();
-  }
-
-  @Override
-  public int getOffset() {
-    return 2;
   }
 
   @Override

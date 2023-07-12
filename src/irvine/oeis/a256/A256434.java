@@ -12,10 +12,11 @@ import irvine.oeis.a006.A006564;
 public class A256434 extends CharacteristicFunction {
 
   protected int mN;
-  
+
   /** Construct the sequence. */
   public A256434() {
     super(1, new A006564());
+    setOffset(0);
     mN = -1;
   }
 
@@ -23,10 +24,5 @@ public class A256434 extends CharacteristicFunction {
   public Z next() {
     ++mN;
     return mN < 1 ? Z.ONE : super.next();
-  }
-
-  @Override
-  public int getOffset() {
-    return 0;
   }
 }

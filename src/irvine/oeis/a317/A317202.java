@@ -16,8 +16,7 @@ public class A317202 extends A192918 {
     return xt.multiply(xt).add(xt.pow(4)).divide(CR.TWO).add(CR.THREE);
   }
 
-  @Override
-  public int getOffset() {
-    return 1;
+  {
+    setOffset(1);
   }
 }

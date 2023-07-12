@@ -12,7 +12,10 @@ public class A036843 extends A000217 {
   private final StringBuilder mT = new StringBuilder();
   private final StringBuilder mA = new StringBuilder();
   private long mN = 0;
-  {
+
+  /** Construct the sequence. */
+  public A036843() {
+    super(1);
     super.next();
   }
 

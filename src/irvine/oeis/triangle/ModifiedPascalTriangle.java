@@ -10,6 +10,19 @@ import irvine.math.z.Z;
  */
 public class ModifiedPascalTriangle extends Triangle {
 
+  /** Construct the sequence. */
+  public ModifiedPascalTriangle() {
+    setOffset(0);
+  }
+
+  /**
+   * Construct the sequence.
+   * @param offset first index
+   */
+  public ModifiedPascalTriangle(final int offset) {
+    setOffset(offset);
+  }
+
   /**
    * Function for the left source element.
    * Usually overwritten by subclasses.

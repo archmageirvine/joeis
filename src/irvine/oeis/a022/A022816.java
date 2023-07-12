@@ -10,11 +10,7 @@ public class A022816 extends CoordinationSequence {
 
   /** Construct the sequence. */
   public A022816() {
-    super(new long[] {1, 5, -7, 2}, new int[] {1, 1, 1, 1, 1, 1});
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
+    super(new long[]{1, 5, -7, 2}, new int[]{1, 1, 1, 1, 1, 1});
+    setOffset(1);
   }
 }

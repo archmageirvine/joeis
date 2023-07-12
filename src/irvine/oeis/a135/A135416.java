@@ -16,11 +16,7 @@ public class A135416 extends MemorySequence {
   /** Construct the sequence. */
   public A135416() {
     this(1, 5);
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
+    setOffset(1);
   }
 
   /**

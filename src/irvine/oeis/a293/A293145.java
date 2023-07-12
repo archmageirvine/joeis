@@ -17,6 +17,7 @@ public class A293145 extends HypergeometricSequence {
   /** Construct the sequence. */
   public A293145() {
     super(1, 1, 1, "[[1,-1],[2],[0,-1]]");
+    setOffset(0);
   }
 
   @Override
@@ -27,10 +28,5 @@ public class A293145 extends HypergeometricSequence {
     } else {
       return super.nextQ().multiply(mN).multiply(MemoryFactorial.SINGLETON.factorial(mN)).num();
     }
-  }
-
-  @Override
-  public int getOffset() {
-    return 0;
   }
 }

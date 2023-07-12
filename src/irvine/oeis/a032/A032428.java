@@ -9,6 +9,11 @@ import irvine.oeis.memory.MemoryFunctionInt3Sequence;
  */
 public class A032428 extends MemoryFunctionInt3Sequence<Z> {
 
+  /** Construct the sequence. */
+  public A032428() {
+    super(5);
+  }
+
   // Based on (2) in Dominique Dumont
   // A Combinatorial Interpretation for the Schett Recurrence on the Jacobian Elliptic Functions
 

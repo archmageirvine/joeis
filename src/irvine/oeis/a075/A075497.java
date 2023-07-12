@@ -22,6 +22,8 @@ public class A075497 extends Triangle {
    * @param power exponent
    */
   public A075497(final int power) {
+    setOffset(1);
+    hasRAM(false);
     mPower = power;
   }
 

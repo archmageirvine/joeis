@@ -10,6 +10,12 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A079510 extends Triangle {
 
+  /** Construct the sequence. */
+  public A079510() {
+    setOffset(1);
+    hasRAM(false);
+  }
+
   @Override
   public Z compute(final int n, final int k) {
     if (n == 0) {

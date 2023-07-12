@@ -1,17 +1,22 @@
 package irvine.oeis.a003;
 
 import irvine.factor.factor.Jaguar;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.Mobius;
 import irvine.math.polynomial.PalmerSymPowerCycleIndex;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A003190 Number of connected 2-plexes.
  * @author Sean A. Irvine
  */
 public class A003190 extends MemoryFunction2Sequence<Integer, Q> {
+
+  /** Construct the sequence. */
+  public A003190() {
+    super(1);
+  }
 
   // This is close, but currently differs from existing sequence in later terms
   // It is unclear if this implementation or the original results are wrong.

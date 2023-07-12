@@ -1,13 +1,18 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A002735 Related to Euler numbers.
  * @author Sean A. Irvine
  */
 public class A002735 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A002735() {
+    super(1);
+  }
 
   private long mN = 0;
 

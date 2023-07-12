@@ -16,13 +16,9 @@ public class A058915 extends A001349 {
   private final Polynomial<Z> mF = RING.empty();
 
   {
+    setOffset(6);
     mF.add(Z.ZERO);
     super.next();
-  }
-
-  @Override
-  public int getOffset() {
-    return 6;
   }
 
   @Override

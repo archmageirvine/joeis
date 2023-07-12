@@ -1,6 +1,5 @@
 package irvine.oeis.a011;
 
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.expression.Add;
 import irvine.math.expression.Expression;
 import irvine.math.expression.HyperbolicTangent;
@@ -13,12 +12,18 @@ import irvine.math.expression.Power;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A011859 Normalized sequence of cumulants formed from moments in a quantum many-body problem at its critical point.
  * @author Sean A. Irvine
  */
 public class A011859 extends MemoryFunction1Sequence<Q> {
+
+  /** Construct the sequence. */
+  public A011859() {
+    super(1);
+  }
 
   private static final Identifier X = new Identifier("x");
   private static final LiteralQ NEG_HALF = new LiteralQ(Q.HALF.negate());

@@ -1,14 +1,19 @@
 package irvine.oeis.a030;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A030276 Shifts left under COMPOSE transform.
  * @author Sean A. Irvine
  */
 public class A030276 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A030276() {
+    super(1);
+  }
 
   private int mN = 0;
 

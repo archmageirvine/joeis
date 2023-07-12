@@ -10,11 +10,6 @@ public class A352184 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A352184() {
-    super(new long[]{1, 2, 5, 14, 50, 182, 833, 4160, 25080});
-  }
-
-  @Override
-  public int getOffset() {
-    return 0;
+    super(0, FINITE, "1, 2, 5, 14, 50, 182, 833, 4160, 25080");
   }
 }

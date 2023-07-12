@@ -13,7 +13,10 @@ public class A062688 extends A000217 {
 
   private final LongDynamicArray<Z> mFirsts = new LongDynamicArray<>();
   private long mN = 0;
-  {
+
+  /** Construct the sequence. */
+  public A062688() {
+    super(1);
     super.next();
   }
 

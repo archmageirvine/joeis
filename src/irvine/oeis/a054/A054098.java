@@ -14,6 +14,12 @@ public class A054098 extends Triangle {
 
   private Z mTerm;
 
+  /** Construct the sequence. */
+  public A054098() {
+    setOffset(1);
+    hasRAM(false);
+  }
+
   /**
    * Compute a row sum
    * @param n number of the row

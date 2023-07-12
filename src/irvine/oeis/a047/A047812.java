@@ -1,16 +1,21 @@
 package irvine.oeis.a047;
 
-import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionSequence;
 
 /**
  * A047812 Parker's partition triangle T(n,k) read by rows (n &gt;= 1 and 0 &lt;= k &lt;= n-1).
  * @author Sean A. Irvine
  */
 public class A047812 extends MemoryFunctionSequence<Integer, Polynomial<Z>> {
+
+  /** Construct the sequence. */
+  public A047812() {
+    super(1);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = 0;

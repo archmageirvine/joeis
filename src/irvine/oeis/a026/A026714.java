@@ -1,13 +1,18 @@
 package irvine.oeis.a026;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A026714 Triangular array T read by rows: T(n,0)=T(n,n)=1 for n &gt;= 0; for n &gt;= 2 and 1&lt;=k&lt;=n-1, T(n,k)=T(n-1,k-1)+T(n-2,k-1)+T(n-1,k) if k=[ (n-1)/2 ] or k=[ n/2 ] or k=[ (n+2)/2 ], else T(n,k)=T(n-1,k-1)+T(n-1,k).
  * @author Sean A. Irvine
  */
 public class A026714 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A026714() {
+    super(1);
+  }
 
   private long mN = -1;
   private long mM = 0;

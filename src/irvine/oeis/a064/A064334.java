@@ -12,9 +12,8 @@ import irvine.oeis.triangle.BaseTriangle;
  */
 public class A064334 extends BaseTriangle {
 
-  @Override
-  public int getOffset() {
-    return 0;
+  {
+    setOffset(0);
   }
 
   @Override

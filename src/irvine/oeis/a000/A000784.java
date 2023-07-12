@@ -14,9 +14,8 @@ public class A000784 extends A048140 {
   private final Sequence mC3v = new A048141();
   private final Sequence mA219 = new A000219().skip(1);
 
-  @Override
-  public int getOffset() {
-    return 1;
+  {
+    setOffset(1);
   }
 
   @Override

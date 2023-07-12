@@ -12,7 +12,10 @@ import irvine.oeis.a000.A000217;
 public class A024816 extends A000217 {
 
   private final Sequence mSigma = new A000203();
-  {
+
+  /** Construct the sequence. */
+  public A024816() {
+    super(1);
     super.next();
   }
 

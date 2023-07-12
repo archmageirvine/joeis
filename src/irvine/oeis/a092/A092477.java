@@ -10,6 +10,12 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A092477 extends Triangle {
 
+  /** Construct the sequence. */
+  public A092477() {
+    setOffset(1);
+    hasRAM(true);
+  }
+
   @Override
   protected Z compute(final int n, final int k) {
     return Z.ONE.shiftLeft(k + 1).subtract(1).pow(n + 1);

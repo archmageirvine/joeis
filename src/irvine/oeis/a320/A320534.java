@@ -15,11 +15,7 @@ public class A320534 extends HypergeometricSequence {
   /** Construct the sequence. */
   public A320534() {
     super(1, 2, 1, "[[1/2,-1/2],[0,-1/2],[1/2],[1, 0, 4]]");
-  }
-
-  @Override
-  public int getOffset() {
-    return 0;
+    setOffset(0);
   }
 
   @Override

@@ -9,9 +9,8 @@ import irvine.math.cr.CR;
  */
 public class A196619 extends A196617 {
 
-  @Override
-  public int getOffset() {
-    return 0;
+  {
+    setOffset(0);
   }
 
   @Override

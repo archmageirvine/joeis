@@ -13,12 +13,8 @@ public class A054938 extends A054499 {
   private final Sequence mA = new A018191();
 
   {
+    setOffset(1);
     super.next();
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
   }
 
   @Override

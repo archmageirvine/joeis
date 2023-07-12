@@ -1,14 +1,19 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A049290 Array T(n,k) = number of subgroups of index k in free group of rank n, read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A049290 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A049290() {
+    super(1);
+  }
 
   // After Alois P. Heinz
 

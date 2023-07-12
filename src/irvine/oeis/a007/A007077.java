@@ -1,13 +1,18 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A007077 Optimal cost of search tree for searching an ordered array of n elements with cost k of probing element k.
  * @author Sean A. Irvine
  */
 public class A007077 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A007077() {
+    super(1);
+  }
 
   private long mN = 0;
 

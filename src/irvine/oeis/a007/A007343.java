@@ -7,8 +7,8 @@ import java.util.List;
 import java.util.Set;
 
 import irvine.math.IntegerUtils;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.util.Pair;
 
 /**
@@ -16,6 +16,11 @@ import irvine.util.Pair;
  * @author Sean A. Irvine
  */
 public class A007343 extends MemoryFunction2Sequence<Integer, Integer> {
+
+  /** Construct the sequence. */
+  public A007343() {
+    super(3);
+  }
 
   private int mN = 2;
   private Z mA = Z.ZERO;

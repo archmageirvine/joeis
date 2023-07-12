@@ -1,14 +1,19 @@
 package irvine.oeis.a008;
 
 import irvine.factor.factor.Jaguar;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A008307 Table T(n,k) giving number of permutations of [1..n] with order dividing k, read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A008307 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A008307() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

@@ -1,13 +1,18 @@
 package irvine.oeis.a047;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A047913 Triangle of numbers a(n,k) = number of partitions of k such that k = n + n_1 + n_2 + ... + n_t where n_1 &lt;= 2n and n_{i+1} &lt;= 2n_i for all i.
  * @author Sean A. Irvine
  */
 public class A047913 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A047913() {
+    super(1);
+  }
 
   private long mN = 0;
   private long mM = 0;

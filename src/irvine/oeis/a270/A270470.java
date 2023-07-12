@@ -12,12 +12,8 @@ public class A270470 extends A001654 {
   private int mN = 0;
 
   {
+    setOffset(1);
     super.next();
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
   }
 
   @Override

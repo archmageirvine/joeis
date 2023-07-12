@@ -9,6 +9,11 @@ import irvine.oeis.triangle.DoubleRowTriangle;
  */
 public class A060037 extends DoubleRowTriangle {
 
+  /** Construct the sequence. */
+  public A060037() {
+    setOffset(2);
+  }
+
   @Override
   public Z compute(int n, int k) {
     n += 2;

@@ -1,9 +1,9 @@
 package irvine.oeis.a005;
 
 import irvine.math.MemoryFunction2;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A005754 Number of planted identity matched trees with n nodes.
@@ -23,6 +23,7 @@ public class A005754 extends MemoryFunction2Sequence<Long, Z> {
    * @param leaves number of leaves
    */
   public A005754(final int leaves) {
+    super(1);
     mLeaves = leaves;
   }
 

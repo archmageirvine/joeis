@@ -1,13 +1,18 @@
 package irvine.oeis.a048;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A048887 Array T read by antidiagonals, where T(m,n) = number of compositions of n into parts &lt;= m.
  * @author Sean A. Irvine
  */
 public class A048887 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A048887() {
+    super(1);
+  }
 
   // After Alois P. Heinz
 

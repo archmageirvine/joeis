@@ -14,7 +14,6 @@ import irvine.math.z.Z;
  * Generate integer partitions.  Uses algorithm <code>ZS1</code> described
  * in "Fast Algorithms for Generating Integer Partitions", Zoghbi and
  * Stojmenovic, Intern. J. Computer Math., vol 70, pp. 319--332.
- *
  * @author Sean A. Irvine
  */
 public final class IntegerPartition {
@@ -27,7 +26,6 @@ public final class IntegerPartition {
 
   /**
    * Construct a new object for getting the integer partitions of a number.
-   *
    * @param n number
    * @exception IllegalArgumentException if <code>n</code> is not positive.
    */
@@ -180,7 +178,7 @@ public final class IntegerPartition {
   }
 
   /**
-   * Compute the dual of a partition.
+   * Compute the dual (or conjugate) of a partition.
    * @param p partition
    * @return dual of the partition
    */

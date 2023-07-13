@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060205;
 
 /**
- * A098935 p^7 - p^5 - p^3 - p^2 where p is prime.
+ * A098935 a(n) = p^7 - p^5 - p^3 - p^2 where p is prime(n).
  * @author Georg Fischer
  */
 public class A098935 extends A060205 {

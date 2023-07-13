@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A190843 [2ne]-2[ne], where [ ]=floor.
+ * A190843 a(n) = [2*n*e] - 2*[n*e], where [ ] = floor and e is the natural logarithm base.
  * @author Georg Fischer
  */
 public class A190843 extends FloorSequence {

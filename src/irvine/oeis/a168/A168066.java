@@ -8,7 +8,7 @@ import irvine.oeis.a003.A003958;
 import irvine.oeis.a003.A003959;
 
 /**
- * A168066 If n = Product p(k)^e(k) then a(n) = {Product (p(k)+1)^e(k) - Product (p(k)-1)^e(k)}/2, a(1) = 0.
+ * A168066 If n = Product p(k)^e(k) then a(n) = (Product (p(k)+1)^e(k) - Product (p(k)-1)^e(k))/2, a(1) = 0.
  * @author Georg Fischer
  */
 public class A168066 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a307;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A307897 Dimensions of space of harmonic polynomials of each degree invariant under the icosahedral rotation group.
+ * A307897 Duplicate of A008651.
  * @author Georg Fischer
  */
 public class A307897 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A163627 Numbers n such that 42n + 5 is prime.
+ * A163627 Numbers k such that 42k + 5 is prime.
  * @author Georg Fischer
  */
 public class A163627 extends PrimePositionSubsequence {

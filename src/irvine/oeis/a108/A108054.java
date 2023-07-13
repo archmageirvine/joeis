@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A108054 Integers n such that 10^n+49 is prime.
+ * A108054 Integers k such that 10^k+49 is prime.
  * @author Georg Fischer
  */
 public class A108054 extends PrimePositionSubsequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063684 Numbers n such that m(n!) = 2, where m(n) = mu(n) + mu(n+1) + mu(n+2).
+ * A063684 Numbers k such that m(k!) = 2, where m(k) = mu(k) + mu(k+1) + mu(k+2).
  * @author Sean A. Irvine
  */
 public class A063684 extends Sequence1 {

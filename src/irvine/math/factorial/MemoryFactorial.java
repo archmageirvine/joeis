@@ -1,6 +1,8 @@
 package irvine.math.factorial;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import irvine.math.MemoryFunction2;
 import irvine.math.group.RingFactorial;
@@ -61,4 +63,38 @@ public final class MemoryFactorial extends MemoryFunction2<Integer, Z> implement
   public Z multiFactorial(final int n, final int m) {
     return get(n, m);
   }
+
+  /**
+   * Convert a number into a list of digits in factorial base.
+   * @param n number to convert
+   * @return factorial base digits
+   */
+  public List<Z> factorialBaseList(final Z n) {
+    int b = 1;
+    while (factorial(b).compareTo(n) <= 0) {
+      ++b;
+    }
+    final List<Z> res = new ArrayList<>();
+    Z m = n;
+    do {
+      final Z[] qr = m.divideAndRemainder(factorial(--b));
+      res.add(qr[0]);
+      m = qr[1];
+    } while (b > 1);
+    return res;
+  }
+
+  /**
+   * Convert a number into factorial base.
+   * @param n number to convert
+   * @return factorial base representation
+   */
+  public Z factorialBase(final Z n) {
+    final StringBuilder sb = new StringBuilder();
+    for (final Z t : factorialBaseList(n)) {
+      sb.append(t);
+    }
+    return new Z(sb);
+  }
+
 }

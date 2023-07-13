@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A025016 Final digits of !n = Sum i!, i=0..n, (A003422) for very large n, read from right.
+ * A025016 Final digits of !n = Sum_{i=0..n} i! (A003422) for very large n, read from right.
  * @author Sean A. Irvine
  */
 public class A025016 extends Sequence0 {

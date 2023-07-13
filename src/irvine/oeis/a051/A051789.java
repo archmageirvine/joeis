@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A051789 C(n)*(C(n)-1)/2, where C(n) are the Catalan numbers (A000108).
+ * A051789 a(n) = C(n)*(C(n)-1)/2, where C(n) are the Catalan numbers (A000108).
  * @author Sean A. Irvine
  */
 public class A051789 extends A000108 {

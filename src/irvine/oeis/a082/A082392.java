@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a025.A025480;
 
 /**
- * A082392 Expansion of (1/x) * sum(k&gt;=0, x^2^k/(1-2x^2^(k+1))).
+ * A082392 Expansion of (1/x) * Sum_{k&gt;=0} x^2^k / (1 - 2*x^2^(k+1)).
  * @author Georg Fischer
  */
 public class A082392 extends Sequence0 {

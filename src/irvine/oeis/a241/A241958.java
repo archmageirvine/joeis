@@ -6,7 +6,7 @@ package irvine.oeis.a241;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A241958 a(n) = (3*n+3)!/((4*(n+1)^2-1)*((n+1)!)^2*(n+2)!).
+ * A241958 Duplicate of A217800.
  * @author Georg Fischer
  */
 public class A241958 extends HolonomicRecurrence {

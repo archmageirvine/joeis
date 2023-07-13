@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000110;
 
 /**
- * A055924 Exponential transform of Stirling-1 triangle A008275.
+ * A055924 Exponential transform of Stirling1 triangle A008275.
  * @author Sean A. Irvine
  */
 public class A055924 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A175840 Mirror image of Nicomachus&apos; table: T(n,k) = 3^(n-k)*2^k for n&gt;=0 and 0&lt;=k&lt;=n.
+ * A175840 Mirror image of Nicomachus' table: T(n,k) = 3^(n-k)*2^k for n&gt;=0 and 0&lt;=k&lt;=n.
  * @author Georg Fischer
  */
 public class A175840 extends Triangle {

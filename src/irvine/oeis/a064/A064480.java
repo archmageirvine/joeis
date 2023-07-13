@@ -57,7 +57,7 @@ public class A064480 extends Sequence1 {
       mPartition = merge(mPartition, conjugate(mPartition));
     }
     long cnt = 1;
-    for (int k = 1; k < mPartition.length(); ++k) {
+    for (long k = 1; k < mPartition.length(); ++k) {
       if (mPartition.get(k) != mPartition.get(k - 1)) {
         ++cnt;
       }

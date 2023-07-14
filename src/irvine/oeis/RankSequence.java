@@ -18,22 +18,13 @@ public class RankSequence extends AbstractSequence {
 
   private static final int DEFOFF = 1;
 
-  protected Sequence mSeqF; // first underlying sequence
-  protected Sequence mSeqG; // second underlying sequence
-  protected int mOrder; // order: if 0 then seqF before seqG, if 1 then seqF after seqG
-  protected long mRank; // current rank
-  protected int mFlag; // 1 yields sequence a, 2 yields sequence b
-  protected Z mF; // last term of mSeqF
-  protected Z mG; // last term of mSeqG
-  /**
-   * Empty constructor, set parameters later.
-   */
-  public RankSequence() {
-    super(DEFOFF);
-    mOrder = 0;
-    mFlag = 0;
-    mRank = 0;
-  }
+  private final Sequence mSeqF; // first underlying sequence
+  private final Sequence mSeqG; // second underlying sequence
+  private final int mOrder; // order: if 0 then seqF before seqG, if 1 then seqF after seqG
+  private long mRank; // current rank
+  private final int mFlag; // 1 yields sequence a, 2 yields sequence b
+  private Z mF; // last term of mSeqF
+  private Z mG; // last term of mSeqG
 
   /**
    * Construct an instance from two sequences f and g.
@@ -71,10 +62,6 @@ public class RankSequence extends AbstractSequence {
     }
   }
 
-  /**
-   * Get the next term of the sequence.
-   * @return the next term
-   */
   @Override
   public Z next() {
     // System.out.println("mRank=" + mRank + ", mF=" + mF + ", mG=" + mG);

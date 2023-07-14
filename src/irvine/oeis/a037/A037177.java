@@ -6,7 +6,7 @@ import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 
 /**
- * A037177 Numbers n such that 2047*2^n+1 is prime.
+ * A037177 Numbers k such that 2047*2^k+1 is prime.
  * @author Georg Fischer
  */
 public class A037177 extends PowerFactorPrimeSequence {

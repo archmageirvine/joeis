@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A064480.
+ * A064480 Form a conjugate partition of row with 1+1+1 in first row. all other rows are the union of their parents. a(n) = number of types of piles in the n-th row.
  * @author Sean A. Irvine
  */
 public class A064480 extends Sequence1 {

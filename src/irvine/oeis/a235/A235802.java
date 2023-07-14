@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A235802 E.g.f.: 1/(1 - x)^(2/(2-x)).
+ * A235802 Expansion of e.g.f.: 1/(1 - x)^(2/(2-x)).
  * E.g.f.: 1/(1 - x)^(2/(2-x))
  * @author Georg Fischer
  */

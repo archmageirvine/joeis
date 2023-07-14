@@ -54,6 +54,15 @@ public class RecordSequence extends AbstractSequence {
   /**
    * Creates a record sequence of another sequence.
    * @param seq underlying sequence
+   * @param useAbs use the absolute value of the underlying sequence
+   */
+  public RecordSequence(final Sequence seq, final boolean useAbs) {
+    this(DEFOFF, seq, DEFAULT_MIN, useAbs);
+  }
+
+  /**
+   * Creates a record sequence of another sequence.
+   * @param seq underlying sequence
    * @param initial the initial maximum
    */
   public RecordSequence(final Sequence seq, final Z initial) {

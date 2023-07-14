@@ -13,11 +13,13 @@ public class A030870 extends Sequence0 {
 
   private static final CR EXP8_19 = CR.valueOf(new Q(8, 19)).exp();
   private Z mF = Z.ONE;
-  private long mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {
-    mF = mF.multiply(++mN);
+    if (++mN > 1) {
+      mF = mF.multiply(mN);
+    }
     return EXP8_19.multiply(mF).floor();
   }
 }

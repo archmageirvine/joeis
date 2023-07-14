@@ -11,7 +11,6 @@ import irvine.oeis.transform.ConvolutionProduct;
  */
 public class VectorProduct extends Triangle {
 
-  protected int mOffset; // first index of target triangle
   protected Triangle mS1; // left source multiplicant
   protected MemorySequence mV2; // right source multiplicant
 
@@ -22,7 +21,7 @@ public class VectorProduct extends Triangle {
    * @param v2 sequence for right vector
    */
   public VectorProduct(final int offset, final Triangle s1, final Sequence v2) {
-    mOffset = offset;
+    super(offset);
     mS1 = s1;
     mV2 = MemorySequence.cachedSequence(v2);
   }
@@ -35,11 +34,6 @@ public class VectorProduct extends Triangle {
    */
   public VectorProduct(final int offset, final Sequence s1, final Sequence v2) {
     this(offset, Triangle.asTriangle(s1), v2);
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   /**

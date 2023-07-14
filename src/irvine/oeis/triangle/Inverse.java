@@ -12,7 +12,6 @@ import irvine.oeis.transform.ConvolutionProduct;
  */
 public class Inverse extends Triangle {
 
-  private final int mOffset; // first index of target triangle
   protected Triangle mS; // source triangle
 
   /**
@@ -21,7 +20,7 @@ public class Inverse extends Triangle {
    * @param s sequence for source triangle
    */
   public Inverse(final int offset, final Triangle s) {
-    mOffset = offset;
+    super(offset);
     mS = s;
   }
 
@@ -48,11 +47,6 @@ public class Inverse extends Triangle {
    */
   public Inverse(final Sequence s) {
     this(0, Triangle.asTriangle(s));
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   /**

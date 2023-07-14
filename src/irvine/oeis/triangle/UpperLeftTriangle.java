@@ -16,7 +16,6 @@ public class UpperLeftTriangle extends Triangle {
   protected int mRow0; // first row index
   protected int mCol0; // first columns index 
   protected int mDir; // direction: +1 = ascending, -1 = descending
-  protected int mOffset; // first index
 
   /**
    * Empty constructor.
@@ -51,28 +50,10 @@ public class UpperLeftTriangle extends Triangle {
    * @param dir direction: +1 = ascending, -1 = descending
    */
   public UpperLeftTriangle(final int offset, final int row0, final int col0, final int dir) {
-    mOffset = offset;
+    super(offset);
     mRow0 = row0;
     mCol0 = col0;
     mDir = dir;
-  }
-
-  /**
-   * Get the offset of the sequence.
-   * Used for b-file creation.
-   * @return first index
-   */
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
-
-  /**
-   * Set the offset for the sequence or for a subclass that represents a column or row.
-   * @param offset first index
-   */
-  public void setOffset(final int offset) {
-    mOffset = offset;
   }
 
   /**

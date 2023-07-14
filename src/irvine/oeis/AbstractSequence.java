@@ -17,7 +17,7 @@ public abstract class AbstractSequence implements Sequence {
   }
 
   @Override
-  public int getOffset() {
+  public final int getOffset() {
     return mOffset;
   }
 

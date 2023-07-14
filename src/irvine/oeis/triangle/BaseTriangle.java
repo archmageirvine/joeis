@@ -11,7 +11,6 @@ import irvine.math.z.Z;
  */
 public abstract class BaseTriangle extends Triangle {
 
-  protected int mOffset; // first index of sequence, only used for b-files
   // super.mRow is 0-based current row index
   // super.mCol is 0-based current row index
   protected int mRowShift; // shifts mRow to first row index
@@ -45,7 +44,7 @@ public abstract class BaseTriangle extends Triangle {
    * @param sizeFct function for the row sizes
    */
   public BaseTriangle(final int offset, final int rowShift, final int colShift, final Function<Integer, Integer> sizeFct) {
-    mOffset = offset;
+    super(offset);
     mRowShift = rowShift;
     mColShift = colShift;
     mSizeFct = sizeFct;
@@ -53,24 +52,6 @@ public abstract class BaseTriangle extends Triangle {
     mCol = -1;
     mRowLen = -1;
     mHasRAM = true; // default: with random access
-  }
-
-  /**
-   * Get the offset of the sequence.
-   * Used for b-file creation.
-   * @return first index
-   */
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
-
-  /**
-   * Set the offset for the sequence or for a subclass that represents a column or row.
-   * @param offset first index
-   */
-  public void setOffset(final int offset) {
-    mOffset = offset;
   }
 
   /**

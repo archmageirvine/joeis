@@ -18,7 +18,7 @@ public class WeylGroupSequence extends EulerTransform {
    * @param d dimension of the group
    */
   public WeylGroupSequence(final String groupType, final int d) {
-    super(new PaddingSequence(initialTerms(groupType, d), new long[] {0}), 1);
+    super(0, new PaddingSequence(initialTerms(groupType, d), new long[] {0}), 1);
   }
 
   /**
@@ -28,7 +28,7 @@ public class WeylGroupSequence extends EulerTransform {
    */
   private static long[] initialTerms(final String groupType, final int d) {
     final char typeCode = groupType.charAt(0);
-    long[] result = null;
+    long[] result;
     switch (typeCode) {
       case 'A':
         result = new long[d + 1];
@@ -63,10 +63,4 @@ public class WeylGroupSequence extends EulerTransform {
     } // switch typeCode
     return result;
   }
-
-  @Override
-  public int getOffset() {
-    return 0;
-  }
-
 }

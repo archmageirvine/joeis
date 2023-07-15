@@ -16,7 +16,7 @@ public class A115422 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A115422() {
-    this(1, 1, 20, 21);
+    this(1, 1, 1, 20, 21);
   }
 
   /**
@@ -26,9 +26,9 @@ public class A115422 extends AbstractSequence {
    * @param f2
    * @param f3
    */
-  public A115422(final int offset, final int f1, final int f2, final int f3) {
+  public A115422(final int offset, final int f1, final int f2, final int f3, final int start) {
     super(offset);
-    mN = offset - 1;
+    mN = start - 1;
     mF1 = f1;
     mF2 = f2;
     mF3 = f3;

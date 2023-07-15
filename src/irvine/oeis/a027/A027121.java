@@ -10,6 +10,11 @@ public class A027121 extends A027113 {
 
   private long mN = 1;
 
+  /** Construct the sequence. */
+  public A027121() {
+    super(2);
+  }
+
   @Override
   public Z next() {
     return get(++mN, 2 * mN - 3);

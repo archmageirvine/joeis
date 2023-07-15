@@ -36,7 +36,7 @@ public class A319501 extends Triangle {
   };
 
   @Override
-  protected Z compute(final int n, final int k) {
+  public Z compute(final int n, final int k) {
     Z sum = Z.ZERO;
     for (int i = 0; i <= k; ++i) {
       sum = sum.add(Binomial.binomial(k, i).multiply(((i & 1) == 0) ? 1 : -1).multiply(mB.get(n, n, k - i)));

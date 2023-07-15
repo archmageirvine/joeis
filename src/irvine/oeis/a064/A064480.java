@@ -27,7 +27,7 @@ public class A064480 extends Sequence1 {
     return dual;
   }
 
-  public static LongDynamicLongArray merge(final LongDynamicLongArray p1, final LongDynamicLongArray p2) {
+  private static LongDynamicLongArray merge(final LongDynamicLongArray p1, final LongDynamicLongArray p2) {
     final LongDynamicLongArray v = new LongDynamicLongArray();
     final long len = p1.length() + p2.length();
     for (long i = 0, j = 0, k = 0; k < len; ++k) {

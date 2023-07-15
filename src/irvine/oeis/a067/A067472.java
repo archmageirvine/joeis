@@ -23,7 +23,7 @@ public class A067472 extends AbstractSequence {
    * @param digit
    */
   public A067472(final int offset, final int digit) {
-    super(2);
+    super(offset);
     mDigit = digit;
     mPow10 = Z.TEN.pow(offset - 1);
   }

@@ -39,7 +39,7 @@ public class A308680 extends Triangle {
   };
 
   @Override
-  protected Z compute(final int n, final int k) {
+  public Z compute(final int n, final int k) {
     Z sum = Z.ZERO;
     for (int i = 0; i <= k; ++i) {
       sum = sum.add(mB.get(n, n, k - i).multiply(((i & 1) == 0) ? 1 : -1).multiply(Binomial.binomial(k, i)));

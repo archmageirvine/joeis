@@ -1,5 +1,5 @@
 package irvine.oeis.a115;
-// manually A115422/parmof4 at 2021-11-15 10:23
+// manually A115422/parmof5 at 2023-07-15 08:57
 
 import irvine.math.z.Z;
 
@@ -11,7 +11,7 @@ public class A115768 extends A115422 {
 
   /** Construct the sequence. */
   public A115768() {
-    super(1, 2, 5, 3);
+    super(1, 2, 5, 3, 0);
   }
 
   @Override

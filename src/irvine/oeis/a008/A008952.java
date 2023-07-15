@@ -14,6 +14,14 @@ public class A008952 extends AbstractSequence {
     super(0);
   }
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  public A008952(final int offset) {
+    super(offset);
+  }
+
   private Z mA = null;
 
   @Override

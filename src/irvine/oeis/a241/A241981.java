@@ -66,7 +66,7 @@ public class A241981 extends Triangle {
   };
 
   @Override
-  protected Z compute(final int n, final int k) {
+  public Z compute(final int n, final int k) {
     Z result = mA.get(n, k);
     if (k != 0) {
       result = result.subtract(mA.get(n, k - 1));

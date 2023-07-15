@@ -17,7 +17,7 @@ public class A334218 extends Triangle {
   }
 
   @Override
-  protected Z compute(final int n, final int k) {
+  public Z compute(final int n, final int k) {
     if (n == 0) {
       return Z.ONE;
     }

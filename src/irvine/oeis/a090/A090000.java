@@ -18,7 +18,7 @@ public class A090000 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A090000() {
-    this(new A000040(), 1);
+    this(1, new A000040(), 1);
   }
 
   /**
@@ -27,7 +27,17 @@ public class A090000 extends AbstractSequence {
    * @param bit contiguous block of these bits
    */
   public A090000(final Sequence seq, final int bit) {
-    super(1);
+    this(1, seq, bit);
+  }
+
+  /**
+   * Generic constructor with parameters.
+   * @param offset first index of target sequence
+   * @param seq underlying sequence
+   * @param bit contiguous block of these bits
+   */
+  public A090000(final int offset, final Sequence seq, final int bit) {
+    super(offset);
     mSeq = seq;
     mBit = bit;
     mN = -1;

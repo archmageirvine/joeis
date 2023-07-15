@@ -35,7 +35,7 @@ public class A218698 extends Triangle {
   };
 
   @Override
-  protected Z compute(final int n, final int k) {
+  public Z compute(final int n, final int k) {
     return mB.get(n, n, k);
   }
 }

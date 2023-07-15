@@ -40,7 +40,7 @@ public class A060642 extends Triangle {
   };
 
   @Override
-  protected Z compute(int n, int k) {
+  public Z compute(int n, int k) {
     ++n;
     ++k;
     Z sum = Z.ZERO;

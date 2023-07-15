@@ -14,6 +14,14 @@ public class A027113 extends MemoryFunction2Sequence<Long, Z> {
     super(1);
   }
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  public A027113(final int offset) {
+    super(offset);
+  }
+
   private long mN = -1;
   private long mM = 0;
 

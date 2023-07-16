@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064510.
+ * A064510 Numbers n such that the sum of the first k divisors of n is equal to n for some k.
  * @author Sean A. Irvine
  */
 public class A064510 extends Sequence1 {

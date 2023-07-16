@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A327916 Triangle T(k, n) read by rows: Array A(k, n) = 2^k*(k + 1+ n), k &gt;= 0, n &gt;= 0, read by antidiagonals upwards.
+ * A327916 Triangle T(k, n) read by rows: Array A(k, n) = 2^k*(k + 1 + 2*n), k &gt;= 0, n &gt;= 0, read by antidiagonals upwards.
  * @author Georg Fischer
  */
 public class A327916 extends UpperLeftTriangle {

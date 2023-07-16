@@ -6,7 +6,7 @@ import irvine.oeis.a098.A098613;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A346848 Number of conjugacy classes of the symplectic group Sp(2n, 2) over the field with 2 elements
+ * A346848 Number of conjugacy classes of the symplectic group Sp(2n, 2) over the field with 2 elements.
  * @author Georg Fischer
  */
 public class A346848 extends ConvolutionProduct {

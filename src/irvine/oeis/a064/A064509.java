@@ -5,7 +5,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A064507.
+ * A064509 Marks (in fathoms) on lead line used by ships on the Mississippi River.
  * @author Sean A. Irvine
  */
 public class A064509 extends PrependSequence {

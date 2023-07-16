@@ -2201,3 +2201,4 @@ A064120	A036981(n)/n!^2
 A064163 Theta series of the 71-dimensional sublattice orthogonal to a norm 8 vector of the putative extremal 72-dimensional even unimodular lattice.
 A064356 Dimension of J_(12n,n+1), the Jacobi form of weight 12n and index n+1
 A064436 Number of switching functions of n or fewer variables which cannot be realized as threshold gates.
+A064513 Maximal number of nodes in graph of degree <= n and diameter 2 (another version).

@@ -12,10 +12,10 @@ import irvine.oeis.Sequence0;
  */
 public class A010815 extends Sequence0 {
 
-  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private int mN = -1;
+  protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+  protected int mN = -1;
   private int mM = 1;
-  private Polynomial<Z> mGf = RING.eta(RING.x(), mM);
+  protected Polynomial<Z> mGf = RING.eta(RING.x(), mM);
 
   @Override
   public Z next() {

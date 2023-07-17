@@ -11,6 +11,11 @@ import irvine.oeis.a005.A005408;
  */
 public class A099774 extends A005408 {
 
+  /** Construct the sequence. */
+  public A099774() {
+    super(1);
+  }
+
   @Override
   public Z next() {
     return Jaguar.factor(super.next()).sigma0();

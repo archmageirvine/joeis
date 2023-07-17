@@ -6,6 +6,11 @@ package irvine.oeis.a006;
  */
 public class A006617 extends A006613 {
 
+  /** Construct the sequence. */
+  public A006617() {
+    super(2);
+  }
+
   @Override
   protected int cols() {
     return mN + 1;

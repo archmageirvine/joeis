@@ -9,6 +9,11 @@ import irvine.math.z.Z;
  */
 public class A007168 extends A007166 {
 
+  /** Construct the sequence. */
+  public A007168() {
+    super(1);
+  }
+
   @Override
   protected Z select(final Polynomial<Z> s, final Polynomial<Z> b, final int n) {
     Polynomial<Z> a = RING.one();

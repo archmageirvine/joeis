@@ -14,6 +14,11 @@ import irvine.oeis.a003.A003114;
  */
 public class A058723 extends A003114 {
 
+  /** Construct the sequence. */
+  public A058723() {
+    super(-1);
+  }
+
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final Sequence mHSeq = new A003106();
   private final Polynomial<Z> mG = RING.empty();

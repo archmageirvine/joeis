@@ -11,6 +11,11 @@ import irvine.oeis.a000.A000170;
  */
 public class A033148 extends A000170 {
 
+  /** Construct the sequence. */
+  public A033148() {
+    super(1);
+  }
+
   private int mN = 0;
 
   private int[] rotate90(final int[] q) {

@@ -9,6 +9,11 @@ import irvine.math.z.Z;
  */
 public class A056187 extends A056788 {
 
+  /** Construct the sequence. */
+  public A056187() {
+    super(0);
+  }
+
   @Override
   public Z next() {
     return LeastPrimeFactorizer.lpf(super.next());

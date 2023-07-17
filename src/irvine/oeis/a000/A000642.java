@@ -10,6 +10,11 @@ import irvine.math.z.Z;
  */
 public class A000642 extends A000598 {
 
+  /** Construct the sequence. */
+  public A000642() {
+    super(1);
+  }
+
   @Override
   public Polynomial<Q> g() {
     return RING.multiply(RING.add(mG.substitutePower(2, mN), RING.pow(mG, 2, mN)), Q.HALF);

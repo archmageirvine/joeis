@@ -10,6 +10,11 @@ import irvine.oeis.a265.A265607;
  */
 public class A002669 extends A265607 {
 
+  /** Construct the sequence. */
+  public A002669() {
+    super(1);
+  }
+
   private int mN = 0;
   private Z mF = Z.ONE;
 

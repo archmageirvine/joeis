@@ -14,6 +14,11 @@ import irvine.util.Permutation;
  */
 public class A052480 extends A002385 {
 
+  /** Construct the sequence. */
+  public A052480() {
+    super(0);
+  }
+
   private final ArrayList<Z> mA = new ArrayList<>();
   private int mM = 0;
 

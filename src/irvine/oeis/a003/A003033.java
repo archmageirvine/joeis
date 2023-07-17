@@ -8,6 +8,11 @@ import irvine.math.z.Z;
  */
 public class A003033 extends A003032 {
 
+  /** Construct the sequence. */
+  public A003033() {
+    super(3);
+  }
+
   @Override
   protected int getNumberOfConsecutivePrimes() {
     return 4;

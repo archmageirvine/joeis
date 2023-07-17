@@ -11,6 +11,11 @@ import irvine.math.z.ZUtils;
  */
 public class A002139 extends A002326 {
 
+  /** Construct the sequence. */
+  public A002139() {
+    super(1);
+  }
+
   private final Fast mPrime = new Fast();
 
   @Override

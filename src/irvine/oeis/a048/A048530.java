@@ -11,6 +11,11 @@ import irvine.util.array.DynamicArray;
  */
 public class A048530 extends A002378 {
 
+  /** Construct the sequence. */
+  public A048530() {
+    super(1);
+  }
+
   private final DynamicArray<Z> mFirst = new DynamicArray<>();
   private int mN = 0;
 

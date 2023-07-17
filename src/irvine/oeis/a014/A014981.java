@@ -10,6 +10,11 @@ import irvine.oeis.a001.A001608;
  */
 public class A014981 extends A001608 {
 
+  /** Construct the sequence. */
+  public A014981() {
+    super(1);
+  }
+
   private final Fast mPrime = new Fast();
   private long mN = -1;
 

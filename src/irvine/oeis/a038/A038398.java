@@ -9,7 +9,13 @@ import irvine.oeis.a000.A000578;
  */
 public class A038398 extends A000578 {
 
+  /** Construct the sequence. */
+  public A038398() {
+    super(1);
+  }
+
   private final StringBuilder mS = new StringBuilder();
+
   {
     super.next();
   }

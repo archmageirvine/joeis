@@ -11,6 +11,11 @@ import irvine.util.array.DynamicLongArray;
  */
 public class A048529 extends A002378 {
 
+  /** Construct the sequence. */
+  public A048529() {
+    super(1);
+  }
+
   private final DynamicLongArray mFirst = new DynamicLongArray();
   private int mN = 0;
   private long mM = 0; // offset by 1 since we use 0 as sentinel

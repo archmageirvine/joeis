@@ -9,6 +9,11 @@ import irvine.oeis.a028.A028657;
  */
 public class A056152 extends A028657 {
 
+  /** Construct the sequence. */
+  public A056152() {
+    super(2);
+  }
+
   @Override
   protected Z a(final int n, final int k) {
     return super.a(n, k).subtract(super.a(n - 1, k)).subtract(super.a(n, k - 1)).add(super.a(n - 1, k - 1));

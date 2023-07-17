@@ -14,10 +14,16 @@ import irvine.oeis.transform.BellTransform;
  */
 public class A035469 extends A007559 {
 
+  /** Construct the sequence. */
+  public A035469() {
+    super(1);
+  }
+
   private final List<Q> mA = new ArrayList<>();
   private BellTransform mBellTransform = null;
   private int mN = 0;
   private int mM = 0;
+
   {
     super.next();
     mA.add(Q.ZERO);

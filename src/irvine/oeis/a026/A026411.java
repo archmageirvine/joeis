@@ -11,6 +11,11 @@ import irvine.math.z.Z;
  */
 public class A026411 extends A026409 {
 
+  /** Construct the sequence. */
+  public A026411() {
+    super(2);
+  }
+
   private final TreeSet<Long> mSeenFirst = new TreeSet<>();
   private final TreeMap<Long, Long> mMap = new TreeMap<>();
   private long mN = 1;

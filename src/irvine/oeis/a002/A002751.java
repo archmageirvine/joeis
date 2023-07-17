@@ -15,6 +15,11 @@ import irvine.oeis.a000.A000005;
  */
 public class A002751 extends A000005 {
 
+  /** Construct the sequence. */
+  public A002751() {
+    super(0);
+  }
+
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
 
   private int mN = -1;

@@ -10,6 +10,11 @@ import irvine.math.z.Z;
  */
 public class A026919 extends A026907 {
 
+  /** Construct the sequence. */
+  public A026919() {
+    super(1);
+  }
+
   private long mRow = 0;
   private Z mLeading = t(mRow, 0);
   private final TreeSet<Z> mSet = new TreeSet<>();

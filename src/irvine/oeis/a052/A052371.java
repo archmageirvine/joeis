@@ -15,6 +15,11 @@ import irvine.math.z.Z;
  */
 public class A052371 extends A052107 {
 
+  /** Construct the sequence. */
+  public A052371() {
+    super(0);
+  }
+
   // After Andrew Howroyd
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);

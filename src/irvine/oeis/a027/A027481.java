@@ -8,7 +8,13 @@ import irvine.math.z.Z;
  */
 public class A027481 extends A027477 {
 
+  /** Construct the sequence. */
+  public A027481() {
+    super(3);
+  }
+
   private int mN = 2;
+
   {
     step();
     step();

@@ -10,6 +10,11 @@ import irvine.oeis.a000.A000410;
  */
 public class A055165 extends A000410 {
 
+  /** Construct the sequence. */
+  public A055165() {
+    super(0);
+  }
+
   private Z mF = Z.ONE;
   private boolean mFirst = true;
 

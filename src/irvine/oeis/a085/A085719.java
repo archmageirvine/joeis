@@ -10,6 +10,11 @@ import irvine.math.z.Z;
  */
 public class A085719 extends A085244 {
 
+  /** Construct the sequence. */
+  public A085719() {
+    super(0);
+  }
+
   private int mN = -1;
 
   protected void fillMatrix(final int n, final Matrix<Z> mat) {

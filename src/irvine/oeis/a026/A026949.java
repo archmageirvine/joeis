@@ -7,7 +7,12 @@ import irvine.math.z.Z;
  * @author Sean A. Irvine
  */
 public class A026949 extends A026374 {
-  
+
+  /** Construct the sequence. */
+  public A026949() {
+    super(3);
+  }
+
   {
     nextRow();
     nextRow();

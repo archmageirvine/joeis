@@ -12,7 +12,13 @@ import irvine.math.z.Z;
  */
 public class A002730 extends A002729 {
 
+  /** Construct the sequence. */
+  public A002730() {
+    super(1);
+  }
+
   private final ArrayList<Z> mA2729 = new ArrayList<>();
+
   {
     mA2729.add(super.next());
   }

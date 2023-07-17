@@ -8,6 +8,11 @@ import irvine.math.z.Z;
  */
 public class A006403 extends A006385 {
 
+  /** Construct the sequence. */
+  public A006403() {
+    super(1);
+  }
+
   static boolean hasCutVertex(final int e, final int[] s) {
     for (int k = 1; k <= 2 * e; ++k) {
       if (s[k] == OPEN_BRACKET || s[k] == OPEN_PAREN) {

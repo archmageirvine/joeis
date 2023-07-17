@@ -8,6 +8,11 @@ import irvine.math.z.Z;
  */
 public class A000947 extends A000063 {
 
+  /** Construct the sequence. */
+  public A000947() {
+    super(7);
+  }
+
   private final A000936 mPlanar = new A000936();
 
   {

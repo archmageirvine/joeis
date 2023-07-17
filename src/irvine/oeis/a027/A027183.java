@@ -10,6 +10,11 @@ import irvine.math.z.Z;
  */
 public class A027183 extends A027170 {
 
+  /** Construct the sequence. */
+  public A027183() {
+    super(1);
+  }
+
   private long mRow = 2;
   private Z mLast = Z.ZERO;
   private Z mLeading = t(mRow, 1);

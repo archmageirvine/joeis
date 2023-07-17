@@ -8,6 +8,11 @@ import irvine.math.z.Z;
  */
 public class A051911 extends A051775 {
 
+  /** Construct the sequence. */
+  public A051911() {
+    super(1);
+  }
+
   private Z mN = Z.ZERO;
   private Z mM = Z.ZERO;
 

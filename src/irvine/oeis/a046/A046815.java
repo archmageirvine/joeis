@@ -12,6 +12,11 @@ import irvine.util.array.DynamicLongArray;
  */
 public class A046815 extends A000119 {
 
+  /** Construct the sequence. */
+  public A046815() {
+    super(1);
+  }
+
   private final Sequence mFibo = new A000045();
   private long mM = -1;
   private int mN = 0;

@@ -10,8 +10,14 @@ import irvine.oeis.a000.A000203;
  */
 public class A058209 extends A000203 {
 
+  /** Construct the sequence. */
+  public A058209() {
+    super(2);
+  }
+
   private static final CR EXP_GAMMA = CR.GAMMA.exp();
   private long mN = 1;
+
   {
     super.next();
   }

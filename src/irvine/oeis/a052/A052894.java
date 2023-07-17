@@ -9,6 +9,11 @@ import irvine.oeis.a053.A053492;
  */
 public class A052894 extends A053492 {
 
+  /** Construct the sequence. */
+  public A052894() {
+    super(0);
+  }
+
   @Override
   public Z next() {
     return super.next().divide(mN);

@@ -11,6 +11,11 @@ import irvine.oeis.a111.A111999;
  */
 public class A006572 extends A111999 {
 
+  /** Construct the sequence. */
+  public A006572() {
+    super(0);
+  }
+
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 

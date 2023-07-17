@@ -8,6 +8,11 @@ import irvine.oeis.a009.A009475;
  */
 public class A019306 extends A009475 {
 
+  /** Construct the sequence. */
+  public A019306() {
+    super(0);
+  }
+
   @Override
   protected long row() {
     return 5;

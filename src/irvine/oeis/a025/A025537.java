@@ -12,6 +12,11 @@ import irvine.oeis.a003.A003418;
  */
 public class A025537 extends A002944 {
 
+  /** Construct the sequence. */
+  public A025537() {
+    super(0);
+  }
+
   private Sequence mA = new A003418();
   private Q mSum = Q.ZERO;
 

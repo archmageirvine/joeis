@@ -9,10 +9,16 @@ import irvine.oeis.a000.A000578;
  */
 public class A050642 extends A000578 {
 
+  /** Construct the sequence. */
+  public A050642() {
+    super(1);
+  }
+
   {
     super.next(); // skip 0
     super.next(); // skip 1
   }
+
   private String mS = "";
 
   @Override

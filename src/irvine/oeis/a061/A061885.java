@@ -10,6 +10,11 @@ import irvine.oeis.a004.A004201;
  */
 public class A061885 extends A004201 {
 
+  /** Construct the sequence. */
+  public A061885() {
+    super(0);
+  }
+
   @Override
   public Z next() {
     return super.next().subtract(1);

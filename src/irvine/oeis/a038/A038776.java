@@ -12,6 +12,11 @@ import irvine.oeis.a014.A014486;
  */
 public class A038776 extends A014486 {
 
+  /** Construct the sequence. */
+  public A038776() {
+    super(1);
+  }
+
   {
     super.next(); // skip 0
   }

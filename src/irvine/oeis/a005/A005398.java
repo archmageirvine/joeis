@@ -9,6 +9,11 @@ import irvine.oeis.a003.A003288;
  */
 public class A005398 extends A003288 {
 
+  /** Construct the sequence. */
+  public A005398() {
+    super(3);
+  }
+
   @Override
   protected long search() {
     return search(0, 0, 0, 1, 1, 0, mN, 3);

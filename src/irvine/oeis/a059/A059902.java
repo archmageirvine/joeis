@@ -9,6 +9,11 @@ import irvine.oeis.Sequence;
  */
 public class A059902 extends A059884 {
 
+  /** Construct the sequence. */
+  public A059902() {
+    super(0);
+  }
+
   private final Sequence mA = new A059901();
 
   @Override

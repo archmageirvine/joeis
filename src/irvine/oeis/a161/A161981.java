@@ -9,15 +9,16 @@ import irvine.oeis.a006.A006128;
  * @author Georg Fischer
  */
 public class A161981 extends A006128 {
-    
+
   protected int mN;
 
   /** Construct the sequence. */
   public A161981() {
+    super(1);
     mN = 0;
     super.next();
   }
-  
+
   @Override
   public Z next() {
     return super.next().mod(Z.valueOf(++mN));

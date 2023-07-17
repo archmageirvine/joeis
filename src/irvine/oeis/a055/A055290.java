@@ -10,6 +10,11 @@ import irvine.math.z.Z;
  */
 public class A055290 extends A055277 {
 
+  /** Construct the sequence. */
+  public A055290() {
+    super(2);
+  }
+
   private static final Polynomial<Polynomial<Q>> CONS = RING_X.add(RING_X.subtract(RING_X.one(), RING_X.x()), XY);
 
   private Polynomial<Polynomial<Q>> mGF = super.gf(1);

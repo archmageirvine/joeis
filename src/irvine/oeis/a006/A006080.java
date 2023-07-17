@@ -9,6 +9,11 @@ import irvine.oeis.a003.A003239;
  */
 public class A006080 extends A003239 {
 
+  /** Construct the sequence. */
+  public A006080() {
+    super(1);
+  }
+
   @Override
   public Z next() {
     return Z.ONE.max(super.next().divide2().add(Z.ONE.shiftLeft(mN - 2)));

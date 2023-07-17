@@ -6,6 +6,11 @@ package irvine.oeis.a005;
  */
 public class A005514 extends A005516 {
 
+  /** Construct the sequence. */
+  public A005514() {
+    super(8);
+  }
+
   @Override
   protected int beads() {
     return 8;

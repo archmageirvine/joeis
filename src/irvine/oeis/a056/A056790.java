@@ -9,6 +9,11 @@ import irvine.math.z.Z;
  */
 public class A056790 extends A056788 {
 
+  /** Construct the sequence. */
+  public A056790() {
+    super(0);
+  }
+
   @Override
   public Z next() {
     final Z[] p = Jaguar.factor(super.next()).toZArray();

@@ -10,6 +10,11 @@ import irvine.oeis.a000.A000720;
  */
 public class A037031 extends A000720 {
 
+  /** Construct the sequence. */
+  public A037031() {
+    super(0);
+  }
+
   private boolean mFirst = true;
 
   @Override

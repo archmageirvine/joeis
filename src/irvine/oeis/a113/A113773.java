@@ -10,6 +10,11 @@ import irvine.oeis.a008.A008352;
  */
 public class A113773 extends A008352 {
 
+  /** Construct the sequence. */
+  public A113773() {
+    super(1);
+  }
+
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
 
   {
@@ -25,5 +30,4 @@ public class A113773 extends A008352 {
     return Z.valueOf(Jaguar.factor(n).omega());
   }
 }
-
 

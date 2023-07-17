@@ -13,6 +13,11 @@ import irvine.oeis.a048.A048887;
  */
 public class A063686 extends A048887 {
 
+  /** Construct the sequence. */
+  public A063686() {
+    super(0);
+  }
+
   // After Andrew Howroyd
 
   private int mN = -1;

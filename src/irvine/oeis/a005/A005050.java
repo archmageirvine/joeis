@@ -6,6 +6,11 @@ package irvine.oeis.a005;
  */
 public class A005050 extends A005048 {
 
+  /** Construct the sequence. */
+  public A005050() {
+    super(6);
+  }
+
   @Override
   protected int getProgressionLength() {
     return 6;

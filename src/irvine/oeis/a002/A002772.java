@@ -10,11 +10,18 @@ import irvine.math.z.Z;
  */
 public class A002772 extends A002771 {
 
+  /** Construct the sequence. */
+  public A002772() {
+    super(2);
+  }
+
   private final ArrayList<Z> mSkew = new ArrayList<>();
+
   {
     mSkew.add(Z.ONE); // easier to keep indexes in sync
     mSkew.add(super.next());
   }
+
   private int mN = 1;
 
   @Override

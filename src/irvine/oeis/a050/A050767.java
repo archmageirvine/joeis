@@ -11,6 +11,11 @@ import irvine.util.array.LongDynamicBooleanArray;
  */
 public class A050767 extends A050703 {
 
+  /** Construct the sequence. */
+  public A050767() {
+    super(0);
+  }
+
   private final LongDynamicBooleanArray mSteps = new LongDynamicBooleanArray();
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mPrev = Z.ZERO;

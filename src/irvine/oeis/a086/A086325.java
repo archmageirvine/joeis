@@ -5,13 +5,14 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000166;
 
 /**
- * A086325 Let u(1)=0, u(2)=1, u(k)=u(k-1)+u(k-2)/(k-2); then a(n)=n!*u(n). 
+ * A086325 Let u(1)=0, u(2)=1, u(k)=u(k-1)+u(k-2)/(k-2); then a(n)=n!*u(n).
  * @author Georg Fischer
  */
 public class A086325 extends A000166 {
 
   /** Construct the sequence. */
   public A086325() {
+    super(1);
     super.next(); // skip A000166(0)
   }
 

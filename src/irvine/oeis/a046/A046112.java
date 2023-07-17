@@ -7,5 +7,10 @@ import irvine.oeis.a006.A006339;
  * @author Sean A. Irvine
  */
 public class A046112 extends A006339 {
+
+  /** Construct the sequence. */
+  public A046112() {
+    super(1);
+  }
   // Differs only in offset
 }

@@ -11,6 +11,7 @@ public class A211004 extends A001840 {
 
   /** Construct the sequence. */
   public A211004() {
+    super(1);
     skip(1);
   }
 }

@@ -8,6 +8,11 @@ import irvine.math.z.Z;
  */
 public class A002848 extends A002849 {
 
+  /** Construct the sequence. */
+  public A002848() {
+    super(0);
+  }
+
   // After Franklin T. Adams-Watters
 
   private int mN = -1;

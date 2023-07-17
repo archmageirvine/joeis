@@ -9,6 +9,11 @@ import irvine.math.z.Z;
  */
 public class A049843 extends A049816 {
 
+  /** Construct the sequence. */
+  public A049843() {
+    super(2);
+  }
+
   private final Fast mPrime = new Fast();
   private long mN = 2;
   private long mM = 0;

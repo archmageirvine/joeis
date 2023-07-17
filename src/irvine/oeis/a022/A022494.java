@@ -14,6 +14,11 @@ import irvine.oeis.a137.A137251;
  */
 public class A022494 extends A137251 {
 
+  /** Construct the sequence. */
+  public A022494() {
+    super(0);
+  }
+
   // After Gheorghe Coserea
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);

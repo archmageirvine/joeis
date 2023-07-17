@@ -11,6 +11,11 @@ import irvine.util.array.LongDynamicLongArray;
  */
 public class A033314 extends A000037 {
 
+  /** Construct the sequence. */
+  public A033314() {
+    super(2);
+  }
+
   private static final long LIMIT = 10000000; // Stops very large results from being stored
   private static final Z Z_LIMIT = Z.valueOf(LIMIT);
   private final LongDynamicLongArray mA = new LongDynamicLongArray();

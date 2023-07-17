@@ -10,6 +10,11 @@ import irvine.util.string.StringUtils;
  */
 public class A056794 extends A002378 {
 
+  /** Construct the sequence. */
+  public A056794() {
+    super(1);
+  }
+
   @Override
   public Z next() {
     while (true) {

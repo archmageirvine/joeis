@@ -12,10 +12,16 @@ import irvine.math.z.Z;
  */
 public class A053552 extends A053549 {
 
+  /** Construct the sequence. */
+  public A053552() {
+    setOffset(1);
+  }
+
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final Polynomial<Q> mA = RING.empty();
   private Z mF = Z.ONE;
   private int mN = -1;
+
   {
     next();
   }

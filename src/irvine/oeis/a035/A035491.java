@@ -10,8 +10,14 @@ import irvine.math.z.Z;
  */
 public class A035491 extends A035485 {
 
+  /** Construct the sequence. */
+  public A035491() {
+    super(1);
+  }
+
   private int mN = 1;
   private Iterator<Long> mIterator = null;
+
   {
     super.next();
   }

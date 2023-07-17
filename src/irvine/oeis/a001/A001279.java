@@ -6,6 +6,11 @@ package irvine.oeis.a001;
  */
 public class A001279 extends A001278 {
 
+  /** Construct the sequence. */
+  public A001279() {
+    super(6);
+  }
+
   @Override
   protected int order() {
     return 3;

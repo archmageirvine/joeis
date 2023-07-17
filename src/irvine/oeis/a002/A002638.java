@@ -12,12 +12,19 @@ import irvine.oeis.a000.A000568;
  */
 public class A002638 extends A000568 {
 
+  /** Construct the sequence. */
+  public A002638() {
+    super(1);
+  }
+
   private final ArrayList<Z> mA = new ArrayList<>();
   private final ArrayList<Z> mB = new ArrayList<>();
+
   {
     mA.add(super.next());
     mB.add(null);
   }
+
   private int mN = 0;
 
   @Override

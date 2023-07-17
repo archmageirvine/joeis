@@ -8,6 +8,11 @@ import irvine.math.z.Z;
  */
 public class A153002 extends A153000 {
 
+  /** Construct the sequence. */
+  public A153002() {
+    super(1);
+  }
+
   @Override
   public Z next() {
     while (true) {

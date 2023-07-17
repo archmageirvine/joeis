@@ -8,10 +8,16 @@ import irvine.oeis.a000.A000170;
  */
 public class A051223 extends A000170 {
 
+  /** Construct the sequence. */
+  public A051223() {
+    super(1);
+  }
+
   // Not really competitive ...
 
   private static final int[] DELTA_X = {-2, -2, -1, -1, 1, 1, 2, 2};
   private static final int[] DELTA_Y = {1, -1, 2, -2, 2, -2, 1, -1};
+
   {
     next(); // skip 0
   }

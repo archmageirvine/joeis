@@ -11,6 +11,11 @@ import irvine.util.array.LongDynamicBooleanArray;
  */
 public class A006447 extends A170896 {
 
+  /** Construct the sequence. */
+  public A006447() {
+    super(1);
+  }
+
   private int mN = 0;
 
   @Override

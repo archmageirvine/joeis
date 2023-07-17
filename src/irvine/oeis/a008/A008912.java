@@ -10,6 +10,11 @@ import irvine.math.z.Z;
  */
 public class A008912 extends A008867 {
 
+  /** Construct the sequence. */
+  public A008912() {
+    super(1);
+  }
+
   private Z mPrev = Z.ZERO;
   private int mLookahead = 0; // Heuristic lookahead
   private final TreeSet<Z> mSet = new TreeSet<>();

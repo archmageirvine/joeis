@@ -10,7 +10,12 @@ import irvine.oeis.a001.A001898;
  * @author Georg Fischer
  */
 public class A163176 extends A001898 {
-    
+
+  /** Construct the sequence. */
+  public A163176() {
+    super(1);
+  }
+
   @Override
   public Z next() {
     return super.next().divide(mN + 1);

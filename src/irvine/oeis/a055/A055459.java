@@ -12,6 +12,11 @@ import irvine.util.Permutation;
  */
 public class A055459 extends A007712 {
 
+  /** Construct the sequence. */
+  public A055459() {
+    super(1);
+  }
+
   private int mN = 3;
   private Z mF = Z.SIX;
 

@@ -8,6 +8,11 @@ import irvine.math.z.Z;
  */
 public class A005304 extends A005303 {
 
+  /** Construct the sequence. */
+  public A005304() {
+    super(1);
+  }
+
   // I'm not sure that the continuation of this power function is correct.
 
   private static final int[] IRREGULAR_POWERS = {0, 1, 1, 3, 3, 4, 3, 4};

@@ -10,6 +10,11 @@ import irvine.oeis.a039.A039956;
  */
 public class A053374 extends A039956 {
 
+  /** Construct the sequence. */
+  public A053374() {
+    super(0);
+  }
+
   @Override
   public Z next() {
     return QuadraticFieldUtils.fundamentalUnitPair(super.next())[1].divide2();

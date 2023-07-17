@@ -13,6 +13,11 @@ import irvine.oeis.a006.A006882;
  */
 public class A052319 extends A006882 {
 
+  /** Construct the sequence. */
+  public A052319() {
+    super(1);
+  }
+
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> NEG_X = RING.negate(RING.x());
   private final Polynomial<Q> mBPrime = RING.empty();

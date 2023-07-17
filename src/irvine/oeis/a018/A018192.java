@@ -13,6 +13,11 @@ import irvine.oeis.a081.A081054;
  */
 public class A018192 extends A081054 {
 
+  /** Construct the sequence. */
+  public A018192() {
+    super(1);
+  }
+
   // After Alexander Stoimenow
 
   protected Z gamma(final int d, final int c) {

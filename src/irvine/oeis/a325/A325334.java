@@ -10,8 +10,13 @@ import irvine.oeis.a007.A007862;
  */
 public class A325334 extends A007862 {
 
+  /** Construct the sequence. */
+  public A325334() {
+    super(0);
+  }
+
   private int mN = 0;
-  
+
   @Override
   public Z next() {
     ++mN;

@@ -10,6 +10,11 @@ import irvine.oeis.a013.A013963;
  */
 public class A058552 extends A013963 {
 
+  /** Construct the sequence. */
+  public A058552() {
+    super(0);
+  }
+
   private static final Q C = new Q(16320, 3617);
   private boolean mFirst = true;
 

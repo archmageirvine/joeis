@@ -14,6 +14,7 @@ public class A126772 extends A000931 {
 
   /** Construct the sequence. */
   public A126772() {
+    super(1);
     for (int i = 0; i <= 4; ++i) {
       super.next();
     }

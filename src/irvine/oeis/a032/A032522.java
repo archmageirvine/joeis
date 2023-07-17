@@ -11,6 +11,11 @@ import irvine.oeis.a000.A000170;
  */
 public class A032522 extends A000170 {
 
+  /** Construct the sequence. */
+  public A032522() {
+    super(1);
+  }
+
   {
     next();
   }
@@ -19,7 +24,7 @@ public class A032522 extends A000170 {
     final int n = q.length;
     final int[] r = new int[n];
     for (int x = 0; x < n; ++x) {
-      r[n - x  - 1] = n - q[x] - 1;
+      r[n - x - 1] = n - q[x] - 1;
     }
     return r;
   }

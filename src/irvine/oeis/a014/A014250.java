@@ -11,7 +11,13 @@ import irvine.oeis.a002.A002379;
  */
 public class A014250 extends A002379 {
 
+  /** Construct the sequence. */
+  public A014250() {
+    super(1);
+  }
+
   private final Sequence mA = new ComplementSequence(new A002379(), Z.ONE);
+
   {
     super.next();
   }

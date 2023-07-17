@@ -10,6 +10,11 @@ import irvine.oeis.a178.A178666;
  */
 public class A262568 extends A178666 {
 
+  /** Construct the sequence. */
+  public A262568() {
+    super(3);
+  }
+
   // After R. J. Mathar
 
   private int kStart(final int n, final int m) {

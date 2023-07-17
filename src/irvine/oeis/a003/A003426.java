@@ -10,8 +10,14 @@ import irvine.oeis.a002.A002988;
  */
 public class A003426 extends A000055 {
 
+  /** Construct the sequence. */
+  public A003426() {
+    super(1);
+  }
+
   private long mN = 0;
   private final A002988 mB = new A002988();
+
   {
     super.next();
     mB.next();

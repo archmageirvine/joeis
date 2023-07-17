@@ -10,13 +10,19 @@ import irvine.oeis.a027.A027423;
  */
 public class A030232 extends A027423 {
 
+  /** Construct the sequence. */
+  public A030232() {
+    super(1);
+  }
+
   private final Sequence mA = new A027423();
   private long mN = 0;
+
   {
     mA.next();
     super.next();
   }
-  
+
   @Override
   public Z next() {
     while (true) {

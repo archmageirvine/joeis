@@ -10,6 +10,11 @@ import irvine.oeis.a056.A056525;
  */
 public class A057332 extends A056525 {
 
+  /** Construct the sequence. */
+  public A057332() {
+    super(0);
+  }
+
   private Z mPalin = super.next();
   private Z mLimit = Z.ONE;
 

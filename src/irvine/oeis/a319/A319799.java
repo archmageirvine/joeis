@@ -9,6 +9,11 @@ import irvine.math.z.Z;
  */
 public class A319799 extends A319797 {
 
+  /** Construct the sequence. */
+  public A319799() {
+    super();
+  }
+
   private int mN = -1;
 
   @Override

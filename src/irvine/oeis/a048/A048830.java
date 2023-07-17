@@ -10,6 +10,11 @@ import irvine.oeis.a014.A014221;
  */
 public class A048830 extends A014221 {
 
+  /** Construct the sequence. */
+  public A048830() {
+    super(0);
+  }
+
   private final MemorySequence mC = MemorySequence.cachedSequence(new A014221());
   private int mN = 0;
 

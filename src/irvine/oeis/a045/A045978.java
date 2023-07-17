@@ -9,6 +9,11 @@ import irvine.oeis.a002.A002385;
  */
 public class A045978 extends A002385 {
 
+  /** Construct the sequence. */
+  public A045978() {
+    super(0);
+  }
+
   private boolean isNearCircular(final Z p) {
     final String s = p.toString();
     boolean sawNonPrime = false;

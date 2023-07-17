@@ -10,8 +10,14 @@ import irvine.math.z.Z;
  */
 public class A059451 extends A059010 {
 
+  /** Construct the sequence. */
+  public A059451() {
+    super(1);
+  }
+
   private final TreeSet<Long> mA = new TreeSet<>();
   private long mN = 0;
+
   {
     mA.add(super.next().longValueExact()); // Avoid need for isEmpty check later
   }

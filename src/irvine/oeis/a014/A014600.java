@@ -10,6 +10,11 @@ import irvine.oeis.a000.A000003;
  */
 public class A014600 extends A000003 {
 
+  /** Construct the sequence. */
+  public A014600() {
+    super(0);
+  }
+
   // Interleave A000003 and A014599
 
   private long mD = 0;

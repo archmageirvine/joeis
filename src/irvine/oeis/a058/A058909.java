@@ -11,6 +11,11 @@ import irvine.math.z.ZUtils;
  */
 public class A058909 extends A058760 {
 
+  /** Construct the sequence. */
+  public A058909() {
+    super(1);
+  }
+
   private long mN = 15618089;
 
   private boolean is(final long n) {

@@ -10,6 +10,11 @@ import irvine.util.Permutation;
  */
 public class A133687 extends A227061 {
 
+  /** Construct the sequence. */
+  public A133687() {
+    super(0);
+  }
+
   private int mN = -1;
   private int mM = -1;
 

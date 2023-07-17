@@ -10,6 +10,11 @@ import irvine.math.z.ZUtils;
  */
 public class A006312 extends A006308 {
 
+  /** Construct the sequence. */
+  public A006312() {
+    super(3);
+  }
+
 //  private CR p(final int p, final int q, final int k) {
 //    CR pk = CR.ONE;
 //    for (int i = 0; i < p; ++i) {

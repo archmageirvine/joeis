@@ -8,6 +8,11 @@ import irvine.math.IntegerUtils;
  */
 public class A029890 extends A029889 {
 
+  /** Construct the sequence. */
+  public A029890() {
+    super(1);
+  }
+
   {
     super.next();
   }

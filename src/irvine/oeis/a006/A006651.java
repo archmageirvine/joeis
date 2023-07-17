@@ -11,6 +11,11 @@ import irvine.oeis.a048.A048180;
  */
 public class A006651 extends A001430 {
 
+  /** Construct the sequence. */
+  public A006651() {
+    super(4);
+  }
+
   private Sequence mA = new A048180();
 
   @Override

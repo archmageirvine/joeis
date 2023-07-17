@@ -12,6 +12,11 @@ import irvine.oeis.a085.A085244;
  */
 public class A225764 extends A085244 {
 
+  /** Construct the sequence. */
+  public A225764() {
+    super(0);
+  }
+
   private int mN = -1;
 
   protected void fillMatrix(final int n, final Matrix<Z> mat) {

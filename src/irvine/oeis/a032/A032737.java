@@ -6,6 +6,11 @@ package irvine.oeis.a032;
  */
 public class A032737 extends A032734 {
 
+  /** Construct the sequence. */
+  public A032737() {
+    super(0);
+  }
+
   private static final String[] SUFFIXES = {"", "1", "3", "7", "9"};
 
   @Override

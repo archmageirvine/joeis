@@ -12,6 +12,11 @@ import irvine.math.z.Z;
  */
 public class A034854 extends A034855 {
 
+  /** Construct the sequence. */
+  public A034854() {
+    super(0);
+  }
+
   private Polynomial<Q> r0(final int d, final int n) {
     if (d < 0) {
       return RING.zero();

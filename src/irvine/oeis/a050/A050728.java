@@ -6,6 +6,11 @@ package irvine.oeis.a050;
  */
 public class A050728 extends A050724 {
 
+  /** Construct the sequence. */
+  public A050728() {
+    super(0);
+  }
+
   @Override
   protected long multiplier() {
     return 7;

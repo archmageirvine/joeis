@@ -12,6 +12,11 @@ import irvine.math.z.Z;
  */
 public class A005321 extends A005327 {
 
+  /** Construct the sequence. */
+  public A005321() {
+    super(0);
+  }
+
   private final List<Z> mA = new ArrayList<>();
   private int mN = -1;
 

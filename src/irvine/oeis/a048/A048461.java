@@ -13,10 +13,17 @@ import irvine.util.Pair;
  */
 public class A048461 extends A047844 {
 
+  /** Construct the sequence. */
+  public A048461() {
+    super(0);
+  }
+
   private final TreeSet<Pair<Long, Long>> mA = new TreeSet<>(Comparator.comparing((Pair<Long, Long> o) -> get(o.left(), o.right())).thenComparingLong(Pair::left));
+
   {
     mA.add(new Pair<>(1L, 1L));
   }
+
   private Z mPrev = Z.ZERO;
 
   @Override

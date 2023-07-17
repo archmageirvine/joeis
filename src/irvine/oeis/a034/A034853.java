@@ -11,6 +11,11 @@ import irvine.math.z.Z;
  */
 public class A034853 extends A034781 {
 
+  /** Construct the sequence. */
+  public A034853() {
+    super(3);
+  }
+
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = 2;
   private int mD = 2;

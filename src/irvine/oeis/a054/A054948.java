@@ -13,6 +13,11 @@ import irvine.oeis.a003.A003030;
  */
 public class A054948 extends A003030 {
 
+  /** Construct the sequence. */
+  public A054948() {
+    super(0);
+  }
+
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private Z mF = Z.ONE;
   private final Polynomial<Q> mA = RING.empty();

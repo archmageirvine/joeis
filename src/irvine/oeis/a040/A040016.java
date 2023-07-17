@@ -10,9 +10,15 @@ import irvine.oeis.a000.A000149;
  */
 public class A040016 extends A000149 {
 
+  /** Construct the sequence. */
+  public A040016() {
+    super(1);
+  }
+
   {
     super.next();
   }
+
   private final Fast mPrime = new Fast();
   private Z mP = Z.NEG_ONE;
 

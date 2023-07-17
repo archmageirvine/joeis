@@ -9,6 +9,11 @@ import irvine.math.z.Z;
  */
 public class A055132 extends A055096 {
 
+  /** Construct the sequence. */
+  public A055132() {
+    super(1);
+  }
+
   @Override
   public Z next() {
     return Z.valueOf(Mobius.mobius(super.next().longValueExact()));

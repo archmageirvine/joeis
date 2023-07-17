@@ -11,10 +11,17 @@ import irvine.oeis.a003.A003136;
  */
 public class A036558 extends A003136 {
 
+  /** Construct the sequence. */
+  public A036558() {
+    super(0);
+  }
+
   private final TreeSet<Z> mA = new TreeSet<>();
+
   {
     mA.add(super.next());
   }
+
   private Z mN = Z.NEG_ONE;
 
   @Override

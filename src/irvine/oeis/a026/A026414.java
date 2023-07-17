@@ -9,6 +9,11 @@ import irvine.util.array.LongDynamicLongArray;
  */
 public class A026414 extends A026409 {
 
+  /** Construct the sequence. */
+  public A026414() {
+    super(2);
+  }
+
   private final LongDynamicLongArray mCount = new LongDynamicLongArray();
   private long mN = 0;
 

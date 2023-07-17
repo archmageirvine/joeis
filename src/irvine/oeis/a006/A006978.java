@@ -6,6 +6,11 @@ package irvine.oeis.a006;
  */
 public class A006978 extends A006977 {
 
+  /** Construct the sequence. */
+  public A006978() {
+    super(1);
+  }
+
   private static final boolean[] A = {false, true, true, true, false, true, true, false};
 
   @Override

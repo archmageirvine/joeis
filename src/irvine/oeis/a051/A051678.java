@@ -11,10 +11,17 @@ import irvine.oeis.a002.A002415;
  */
 public class A051678 extends A002415 {
 
+  /** Construct the sequence. */
+  public A051678() {
+    super(1);
+  }
+
   private final MemorySequence mA = MemorySequence.cachedSequence(new A000330());
+
   {
     super.next();
   }
+
   private Z mT = super.next();
   private int mN = 0;
   private int mM = 0;

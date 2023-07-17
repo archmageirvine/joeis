@@ -17,6 +17,11 @@ import irvine.math.z.Z;
  */
 public class A052265 extends A052107 {
 
+  /** Construct the sequence. */
+  public A052265() {
+    super(0);
+  }
+
   // After Andrew Howroyd
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);

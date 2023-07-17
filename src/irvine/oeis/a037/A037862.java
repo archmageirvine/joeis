@@ -6,6 +6,11 @@ package irvine.oeis.a037;
  */
 public class A037862 extends A037861 {
 
+  /** Construct the sequence. */
+  public A037862() {
+    super(1);
+  }
+
   {
     super.next(); // skip 0
   }

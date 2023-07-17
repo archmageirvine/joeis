@@ -8,6 +8,11 @@ import irvine.oeis.a003.A003290;
  */
 public class A005550 extends A003290 {
 
+  /** Construct the sequence. */
+  public A005550() {
+    super(3);
+  }
+
   @Override
   protected int first() {
     return 3;

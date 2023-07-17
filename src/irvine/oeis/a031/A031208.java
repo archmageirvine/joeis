@@ -8,6 +8,11 @@ import irvine.math.z.Z;
  */
 public class A031208 extends A031200 {
 
+  /** Construct the sequence. */
+  public A031208() {
+    super(1);
+  }
+
   private static final Z Z30 = Z.valueOf(30);
 
   @Override

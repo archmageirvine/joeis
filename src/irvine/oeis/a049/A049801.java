@@ -6,6 +6,11 @@ package irvine.oeis.a049;
  */
 public class A049801 extends A049765 {
 
+  /** Construct the sequence. */
+  public A049801() {
+    super(3);
+  }
+
   @Override
   protected long t(final long n, final long m) {
     return (n + 2) % ((m + 2) / 3);

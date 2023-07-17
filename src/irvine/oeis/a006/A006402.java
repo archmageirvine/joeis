@@ -13,7 +13,13 @@ import irvine.oeis.a000.A000139;
  */
 public class A006402 extends A000139 {
 
+  /** Construct the sequence. */
+  public A006402() {
+    super(2);
+  }
+
   private final ArrayList<Z> mB = new ArrayList<>();
+
   {
     mB.add(null);
     mB.add(super.next());

@@ -14,6 +14,11 @@ import irvine.util.Pair;
  */
 public class A006657 extends A005316 {
 
+  /** Construct the sequence. */
+  public A006657() {
+    super(2);
+  }
+
   /**
    * Processing component to count meander systems or semi-meander systems by number of component.
    * A006657, A006658, A008828, A046721, A046726

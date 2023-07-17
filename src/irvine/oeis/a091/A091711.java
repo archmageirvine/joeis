@@ -12,7 +12,7 @@ public class A091711 extends A088020 {
 
   /** Construct the sequence. */
   public A091711() {
-    super.next();
+    super(1);
   }
 
   @Override

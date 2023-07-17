@@ -13,12 +13,16 @@ import irvine.oeis.a007.A007165;
  */
 public class A294728 extends A003168 {
 
+  /** Construct the sequence. */
+  public A294728() {
+    super(1);
+  }
+
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final A007165 mSeqH = new A007165();
   private Polynomial<Z> mH = RING.zero();
   private Polynomial<Z> mB = Polynomial.create(0, -1);
   private int mN = 0;
-
 
   @Override
   public Z next() {

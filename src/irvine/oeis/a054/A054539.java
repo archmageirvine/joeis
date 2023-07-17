@@ -12,11 +12,12 @@ public class A054539 extends A000016 {
 
   /** Construct the sequence. */
   public A054539() {
+    super(3);
     super.next();
     super.next();
     super.next();
   }
-  
+
   @Override
   public Z next() {
     return super.next().divide2();

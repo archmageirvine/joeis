@@ -12,6 +12,11 @@ import irvine.util.array.LongDynamicBooleanArray;
  */
 public class A036462 extends A104320 {
 
+  /** Construct the sequence. */
+  public A036462() {
+    super(1);
+  }
+
   // A104321 is better sequence for running a search for this!
 
   private final TreeSet<Long> mReported = new TreeSet<>();

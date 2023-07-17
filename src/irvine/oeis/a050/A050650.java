@@ -9,11 +9,17 @@ import irvine.oeis.a000.A000578;
  */
 public class A050650 extends A000578 {
 
+  /** Construct the sequence. */
+  public A050650() {
+    super(1);
+  }
+
   {
     super.next(); // skip 0
     super.next(); // skip 1
     super.next(); // skip 8
   }
+
   private String mS = "";
 
   @Override

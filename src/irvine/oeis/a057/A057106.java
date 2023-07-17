@@ -10,6 +10,11 @@ import irvine.util.string.StringUtils;
  */
 public class A057106 extends A000567 {
 
+  /** Construct the sequence. */
+  public A057106() {
+    super(1);
+  }
+
   @Override
   public Z next() {
     while (!StringUtils.isPalindrome(super.next().toString())) {

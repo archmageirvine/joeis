@@ -12,6 +12,11 @@ import irvine.oeis.a002.A002829;
  */
 public class A286757 extends A002829 {
 
+  /** Construct the sequence. */
+  public A286757() {
+    super(1);
+  }
+
   private final ArrayList<Z> mQ = new ArrayList<>();
   private int mN = 0;
   private Z mA = Z.ZERO;

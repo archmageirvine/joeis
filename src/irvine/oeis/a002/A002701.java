@@ -9,6 +9,11 @@ import irvine.math.z.Z;
  */
 public class A002701 extends A002455 {
 
+  /** Construct the sequence. */
+  public A002701() {
+    super(2);
+  }
+
   private int mN = -1;
   private Z mDen = Z.SIX;
 

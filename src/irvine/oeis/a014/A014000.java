@@ -9,6 +9,11 @@ import irvine.oeis.a003.A003658;
  */
 public class A014000 extends A003658 {
 
+  /** Construct the sequence. */
+  public A014000() {
+    super(2);
+  }
+
   // Based on Keith Matthews
   // http://www.numbertheory.org/gnubc/unit
   // Looks to be almost the same as QuadraticFieldUtils.fundamentalUnit
@@ -17,7 +22,7 @@ public class A014000 extends A003658 {
   protected Z[] fundamentalUnit(final Z bigD) {
     final Z d = bigD.mod(4) == 0 ? bigD.divide(4) : bigD;
     if (Z.FIVE.equals(d)) {
-      return new Z[] {Z.ZERO, Z.ONE, Z.NEG_ONE};
+      return new Z[]{Z.ZERO, Z.ONE, Z.NEG_ONE};
     }
     final Z[] sqrt = d.sqrtAndRemainder();
     if (sqrt[0].isZero()) {

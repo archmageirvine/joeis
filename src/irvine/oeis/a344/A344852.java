@@ -16,6 +16,7 @@ public class A344852 extends A000120 {
 
   /** Construct the sequence. */
   public A344852() {
+    super(1);
     mSeqDF = MemorySequence.cachedSequence(new A001147()); // double factorials of odd numbers
     super.next(); // skip A000120(0)
   }

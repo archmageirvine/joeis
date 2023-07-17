@@ -12,6 +12,11 @@ import irvine.oeis.a003.A003418;
  */
 public class A025538 extends A002944 {
 
+  /** Construct the sequence. */
+  public A025538() {
+    super(0);
+  }
+
   private Sequence mA = new A003418();
   private Q mSum = Q.ZERO;
   private boolean mSign = false;

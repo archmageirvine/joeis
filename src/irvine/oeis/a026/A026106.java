@@ -11,9 +11,15 @@ import irvine.oeis.a007.A007317;
  */
 public class A026106 extends A002212 {
 
+  /** Construct the sequence. */
+  public A026106() {
+    super(5);
+  }
+
   private final Sequence mB = new A007317();
   private Z mA = null;
   private boolean mEven = false;
+
   {
     super.next();
   }

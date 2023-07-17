@@ -10,6 +10,11 @@ import irvine.math.z.Z;
  */
 public class A016058 extends A016057 {
 
+  /** Construct the sequence. */
+  public A016058() {
+    super(2);
+  }
+
   // Somewhat conjectural ... seems to match entries
 
   private final ArrayList<Z> mPrimitive = new ArrayList<>();

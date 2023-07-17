@@ -11,8 +11,14 @@ import irvine.util.array.LongDynamicArray;
  */
 public class A062686 extends A000578 {
 
+  /** Construct the sequence. */
+  public A062686() {
+    super(1);
+  }
+
   private final LongDynamicArray<Z> mFirsts = new LongDynamicArray<>();
   private long mN = 0;
+
   {
     super.next();
   }

@@ -12,6 +12,11 @@ import irvine.oeis.a000.A000669;
  */
 public class A007827 extends A000669 {
 
+  /** Construct the sequence. */
+  public A007827() {
+    super(0);
+  }
+
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> X1 = Polynomial.create(1, 1);
   private Polynomial<Z> mB = RING.zero();

@@ -10,11 +10,12 @@ import irvine.oeis.a000.A000931;
  * @author Georg Fischer
  */
 public class A117601 extends A000931 {
-    
+
   protected int mN;
-  
+
   /** Construct the sequence. */
   public A117601() {
+    super(1);
     mN = 0;
     for (int n = 0; n <= 12; ++n) { // skip leading terms with duplicates
       super.next();

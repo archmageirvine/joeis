@@ -9,6 +9,11 @@ import irvine.oeis.a000.A000041;
  */
 public class A052002 extends A000041 {
 
+  /** Construct the sequence. */
+  public A052002() {
+    super(1);
+  }
+
   @Override
   public Z next() {
     while (super.next().isEven()) {

@@ -8,7 +8,13 @@ import irvine.math.z.Z;
  */
 public class A030314 extends A030308 {
 
+  /** Construct the sequence. */
+  public A030314() {
+    super(1);
+  }
+
   private Z mSum = Z.ZERO;
+
   {
     super.next();
   }

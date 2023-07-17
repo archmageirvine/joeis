@@ -8,6 +8,11 @@ import irvine.oeis.a035.A035529;
  */
 public class A048882 extends A035529 {
 
+  /** Construct the sequence. */
+  public A048882() {
+    super(0);
+  }
+
   @Override
   protected long degree() {
     return 4;

@@ -13,11 +13,18 @@ import irvine.math.z.Z;
  */
 public class A004114 extends A004113 {
 
+  /** Construct the sequence. */
+  public A004114() {
+    super(0);
+  }
+
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final ArrayList<Z> mB = new ArrayList<>();
+
   {
     mB.add(Z.ZERO);
   }
+
   private int mN = -1;
 
   @Override

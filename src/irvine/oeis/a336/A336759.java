@@ -12,10 +12,17 @@ import irvine.oeis.a010.A010785;
  */
 public class A336759 extends A010785 {
 
+  /** Construct the sequence. */
+  public A336759() {
+    super(1);
+  }
+
   private final TreeMap<Z, Integer> mMap = new TreeMap<>();
+
   {
     super.next();
   }
+
   private Z mNextRepDigit = super.next();
   private int mN = 0;
 

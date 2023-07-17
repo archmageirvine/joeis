@@ -8,6 +8,11 @@ import irvine.math.z.Z;
  */
 public class A006388 extends A006385 {
 
+  /** Construct the sequence. */
+  public A006388() {
+    super(1);
+  }
+
   protected boolean isBracketPair(final int start, final int end) {
     return isPair(start, end, OPEN_BRACKET, CLOSE_BRACKET);
   }

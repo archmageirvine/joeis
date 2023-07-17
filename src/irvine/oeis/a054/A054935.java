@@ -10,6 +10,11 @@ import irvine.oeis.a006.A006849;
  */
 public class A054935 extends A006384 {
 
+  /** Construct the sequence. */
+  public A054935() {
+    super(1);
+  }
+
   private final A006849 mSeq = new A006849();
   private boolean mAlt = true;
 

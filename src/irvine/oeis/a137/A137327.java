@@ -11,9 +11,10 @@ import irvine.oeis.a000.A000215;
 public class A137327 extends A000215 {
 
   protected int mN;
-  
+
   /** Construct the sequence. */
   public A137327() {
+    super(1);
     mN = 0;
     super.next();
   }

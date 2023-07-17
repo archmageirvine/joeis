@@ -13,10 +13,16 @@ import irvine.oeis.a000.A000111;
  */
 public class A007316 extends A000111 {
 
+  /** Construct the sequence. */
+  public A007316() {
+    super(1);
+  }
+
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
   private final ArrayList<Z> mP = new ArrayList<>();
   private int mN = 0;
+
   {
     mP.add(Z.ZERO);
   }

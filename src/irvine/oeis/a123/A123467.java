@@ -11,6 +11,8 @@ public class A123467 extends A000081 {
 
   /** Construct the sequence. */
   public A123467() {
-    skip(2);
+    super();
+    setOffset(1);
+    super.skip(2);
   }
 }

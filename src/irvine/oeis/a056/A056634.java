@@ -14,14 +14,21 @@ import irvine.util.Point;
  */
 public class A056634 extends A002931 {
 
+  /** Construct the sequence. */
+  public A056634() {
+    super(8);
+  }
+
   // WARNING: This is insanely slow
 
   private static final Point ORIGIN = new Point(0, 0);
   private final List<List<Polygon>> mSmall = new ArrayList<>();
   private final List<List<int[]>> mSmallBounds = new ArrayList<>();
+
   {
     mSmall.add(Collections.emptyList()); // 0
   }
+
   private final A002931 mSmallGenerator = new A002931() {
     @Override
     protected Z postFilter() {

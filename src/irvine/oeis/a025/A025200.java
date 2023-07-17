@@ -9,6 +9,11 @@ import irvine.oeis.Sequence;
  */
 public class A025200 extends A025194 {
 
+  /** Construct the sequence. */
+  public A025200() {
+    super(2);
+  }
+
   private final Sequence mS1 = new A025224().skip(3);
 
   @Override

@@ -11,6 +11,11 @@ import irvine.math.z.Z;
  */
 public class A007161 extends A007165 {
 
+  /** Construct the sequence. */
+  public A007161() {
+    super(0);
+  }
+
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private Polynomial<Z> mH = RING.zero();
   private Polynomial<Z> mC = RING.x();

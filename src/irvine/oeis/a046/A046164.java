@@ -9,6 +9,11 @@ import irvine.oeis.a343.A343146;
  */
 public class A046164 extends A343146 {
 
+  /** Construct the sequence. */
+  public A046164() {
+    super(14);
+  }
+
   private static final long TARGET_STATE = 0b1000_0111_0110_0101_0100_0011_0010_0001_0000L;
   private boolean[] mUsed = null;
   private int mN = 26;

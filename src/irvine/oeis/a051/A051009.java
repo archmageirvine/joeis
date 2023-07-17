@@ -9,6 +9,11 @@ import irvine.oeis.a001.A001601;
  */
 public class A051009 extends A001601 {
 
+  /** Construct the sequence. */
+  public A051009() {
+    super(1);
+  }
+
   @Override
   public Z next() {
     return super.next().square().subtract(1).divide2().sqrt().max(Z.ONE);

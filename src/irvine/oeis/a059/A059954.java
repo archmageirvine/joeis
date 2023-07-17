@@ -9,6 +9,11 @@ import irvine.oeis.a051.A051775;
  */
 public class A059954 extends A051775 {
 
+  /** Construct the sequence. */
+  public A059954() {
+    super(1);
+  }
+
   // This could me made incremental (i.e., avoid recomputing < mN cases)
 
   private long mN = 0;

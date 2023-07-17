@@ -10,6 +10,11 @@ import irvine.oeis.a045.A045906;
  */
 public class A272090 extends A045906 {
 
+  /** Construct the sequence. */
+  public A272090() {
+    super(1);
+  }
+
   // After Michel Marcus
 
   private long mN = 0;

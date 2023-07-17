@@ -13,6 +13,11 @@ import irvine.util.Point;
  */
 public class A003305 extends A002931 {
 
+  /** Construct the sequence. */
+  public A003305() {
+    super(4);
+  }
+
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final ArrayList<Collection<Polygon>> mFigures = new ArrayList<>();
 

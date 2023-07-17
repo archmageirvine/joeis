@@ -17,6 +17,11 @@ import irvine.oeis.a002.A002293;
  */
 public class A005038 extends A002293 {
 
+  /** Construct the sequence. */
+  public A005038() {
+    super(1);
+  }
+
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final CycleIndex mC5 = new CyclicGroup(5).cycleIndex();
   private final ArrayList<Q> mU = new ArrayList<>();

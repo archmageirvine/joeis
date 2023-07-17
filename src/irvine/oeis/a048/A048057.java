@@ -14,6 +14,11 @@ import irvine.oeis.a058.A058550;
  */
 public class A048057 extends A058550 {
 
+  /** Construct the sequence. */
+  public A048057() {
+    super(-2);
+  }
+
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;
   private final Sequence mDelta2 = new A010839();

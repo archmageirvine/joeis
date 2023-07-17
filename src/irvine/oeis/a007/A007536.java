@@ -11,6 +11,11 @@ import irvine.oeis.a000.A000384;
  */
 public class A007536 extends A000384 {
 
+  /** Construct the sequence. */
+  public A007536() {
+    super(1);
+  }
+
   // This sequence is likely finite and this generates all the terms
 
   private long mN = 3;

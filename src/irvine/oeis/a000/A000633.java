@@ -14,10 +14,16 @@ import irvine.math.z.Z;
  */
 public class A000633 extends A000598 {
 
+  /** Construct the sequence. */
+  public A000633() {
+    super(4);
+  }
+
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final CycleIndex S4 = SymmetricGroup.create(4).cycleIndex();
   private final Polynomial<Q> mG = RING.empty();
   private int mN = -1;
+
   {
     super.next();
   }

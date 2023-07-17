@@ -10,6 +10,11 @@ import irvine.math.z.Z;
  */
 public class A024818 extends A024814 {
 
+  /** Construct the sequence. */
+  public A024818() {
+    super(1);
+  }
+
   {
     super.next();
   }

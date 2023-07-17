@@ -9,6 +9,11 @@ import irvine.oeis.a000.A000295;
  */
 public class A016031 extends A000295 {
 
+  /** Construct the sequence. */
+  public A016031() {
+    super(1);
+  }
+
   @Override
   public Z next() {
     return Z.ONE.shiftLeft(super.next().longValueExact());

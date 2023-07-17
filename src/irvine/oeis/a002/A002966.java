@@ -11,6 +11,11 @@ import irvine.oeis.a000.A000058;
  */
 public class A002966 extends A000058 {
 
+  /** Construct the sequence. */
+  public A002966() {
+    super(1);
+  }
+
   // Based on a C++ implementation by Jacques Le Normand
   // Correctly calculates to a(8) -- there might be overflow beyond that -- not tested
 
@@ -120,7 +125,6 @@ public class A002966 extends A000058 {
     }
     return ret;
   }
-
 
   private int mN = 0;
 

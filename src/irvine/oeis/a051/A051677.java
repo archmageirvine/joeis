@@ -11,12 +11,19 @@ import irvine.oeis.a000.A000332;
  */
 public class A051677 extends A000332 {
 
+  /** Construct the sequence. */
+  public A051677() {
+    super(1);
+  }
+
   private final MemorySequence mA = MemorySequence.cachedSequence(new A000292());
+
   {
     super.next();
     super.next();
     super.next();
   }
+
   private Z mT = super.next();
   private int mN = 0;
   private int mM = 0;

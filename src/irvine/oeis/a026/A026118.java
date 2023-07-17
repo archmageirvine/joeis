@@ -11,8 +11,14 @@ import irvine.oeis.a039.A039658;
  */
 public class A026118 extends A039658 {
 
+  /** Construct the sequence. */
+  public A026118() {
+    super(6);
+  }
+
   private final MemorySequence mA = MemorySequence.cachedSequence(new A002212());
   private int mN = 1;
+
   {
     super.next(); // skip n == 1 in A039658
   }

@@ -9,9 +9,15 @@ import irvine.oeis.a001.A001464;
  */
 public class A051684 extends A001464 {
 
+  /** Construct the sequence. */
+  public A051684() {
+    super(1);
+  }
+
   {
     super.next();
   }
+
   private boolean mSign = true;
 
   @Override

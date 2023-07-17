@@ -11,6 +11,11 @@ import irvine.math.z.Z;
  */
 public class A005947 extends A005946 {
 
+  /** Construct the sequence. */
+  public A005947() {
+    super(0);
+  }
+
   protected class QFunction extends MemoryFunction2<Integer, Q> {
 
     private Q lambdaPar(final int[] lambda, final int n, final int m) {

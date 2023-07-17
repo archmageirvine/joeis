@@ -11,6 +11,7 @@ public class A129184 extends A010054 {
 
   /** Construct the sequence. */
   public A129184() {
+    super(1);
     super.next();
     super.next();
   }

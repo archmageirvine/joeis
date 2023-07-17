@@ -9,6 +9,11 @@ import irvine.oeis.a001.A001285;
  */
 public class A005681 extends A001285 {
 
+  /** Construct the sequence. */
+  public A005681() {
+    super(1);
+  }
+
   private int mPrev = super.next().intValueExact();
 
   @Override

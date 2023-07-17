@@ -12,6 +12,11 @@ import irvine.oeis.a000.A000367;
  */
 public class A046753 extends A000367 {
 
+  /** Construct the sequence. */
+  public A046753() {
+    super(1);
+  }
+
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mT = Z.THREE;
 

@@ -10,6 +10,11 @@ import irvine.util.Point;
  */
 public class A056625 extends A002931 {
 
+  /** Construct the sequence. */
+  public A056625() {
+    super(2);
+  }
+
   {
     super.next();
   }

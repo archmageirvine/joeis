@@ -12,6 +12,11 @@ import irvine.oeis.a060.A060240;
  */
 public class A027840 extends A060240 {
 
+  /** Construct the sequence. */
+  public A027840() {
+    super(1);
+  }
+
   private int mN = 0;
 
   private final MemoryFunction2<Integer, Z> mBeta = new MemoryFunction2<Integer, Z>() {

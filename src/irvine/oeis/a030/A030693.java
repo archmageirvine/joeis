@@ -9,7 +9,13 @@ import irvine.oeis.a000.A000578;
  */
 public class A030693 extends A000578 {
 
+  /** Construct the sequence. */
+  public A030693() {
+    super(1);
+  }
+
   private static final long[] STEPS = {1, 1, 3, 1, 1, 3};
+
   {
     super.next();
   }

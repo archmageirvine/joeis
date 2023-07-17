@@ -10,7 +10,13 @@ import irvine.oeis.a006.A006880;
  */
 public class A057752 extends A006880 {
 
+  /** Construct the sequence. */
+  public A057752() {
+    super(1);
+  }
+
   private Z mA = Z.ONE;
+
   {
     super.next();
   }

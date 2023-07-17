@@ -8,6 +8,11 @@ import irvine.math.z.Z;
  */
 public class A210026 extends A210025 {
 
+  /** Construct the sequence. */
+  public A210026() {
+    super(1);
+  }
+
   private final StringBuilder mDigits = new StringBuilder();
   private int mN = -1;
 

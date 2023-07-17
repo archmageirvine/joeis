@@ -1,9 +1,9 @@
 package irvine.oeis.a026;
 
 import irvine.math.z.Z;
-import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008778;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A026053 (d(n)-r(n))/5, where d = A008778 and r is the periodic sequence with fundamental period (0,3,1,0,1).
@@ -11,7 +11,13 @@ import irvine.oeis.a008.A008778;
  */
 public class A026053 extends A008778 {
 
+  /** Construct the sequence. */
+  public A026053() {
+    super(2);
+  }
+
   private final Sequence mS = new PeriodicSequence(0, 3, 1, 0, 1);
+
   {
     super.next();
   }

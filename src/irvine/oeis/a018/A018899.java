@@ -12,6 +12,11 @@ import irvine.util.string.StringUtils;
  */
 public class A018899 extends A003586 {
 
+  /** Construct the sequence. */
+  public A018899() {
+    super(0);
+  }
+
   // After Jack Brennan
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
@@ -19,6 +24,7 @@ public class A018899 extends A003586 {
   private final DynamicLongArray mL = new DynamicLongArray();
   private long mLimit = 1L << 16;
   private int mTerms;
+
   {
     // Precompute 2^a * 3^b list
     final A003586 mSeq = new A003586();

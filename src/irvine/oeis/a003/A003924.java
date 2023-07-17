@@ -8,6 +8,11 @@ import irvine.math.z.Z;
  */
 public class A003924 extends A003920 {
 
+  /** Construct the sequence. */
+  public A003924() {
+    super(0);
+  }
+
   @Override
   protected Z q() {
     return Z.SEVEN;

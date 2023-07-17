@@ -9,6 +9,11 @@ import irvine.math.z.Z;
  */
 public class A291805 extends A291789 {
 
+  /** Construct the sequence. */
+  public A291805() {
+    super(1);
+  }
+
   @Override
   public Z next() {
     return Euler.phi(super.next());

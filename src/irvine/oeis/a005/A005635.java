@@ -13,6 +13,11 @@ import irvine.oeis.a122.A122749;
  */
 public class A005635 extends A122749 {
 
+  /** Construct the sequence. */
+  public A005635() {
+    super(0);
+  }
+
   private final Sequence mC = new A122693();
   private final Sequence mQ = new A122747();
   private final Sequence mM = new A122748();

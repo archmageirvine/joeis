@@ -11,6 +11,11 @@ import irvine.oeis.a000.A000292;
  */
 public class A002311 extends A000292 {
 
+  /** Construct the sequence. */
+  public A002311() {
+    super(1);
+  }
+
   private long mN = 0;
   private final HashSet<Z> mSum = new HashSet<>();
 

@@ -10,6 +10,11 @@ import irvine.oeis.a000.A000741;
  */
 public class A023033 extends A000741 {
 
+  /** Construct the sequence. */
+  public A023033() {
+    super(8);
+  }
+
   {
     for (int k = 0; k < 7; ++k) {
       super.next();

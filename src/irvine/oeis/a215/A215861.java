@@ -12,17 +12,9 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A215861 extends Triangle {
 
-  /**
-   * Constructor with offset.
-   * @param offset first index
-   */
-  public A215861(final int offset) {
-    super(offset);
-  }
-
   /** Construct the sequence. */
   public A215861() {
-    super(1, 1, -1);
+    super(0, 1, -1);
     hasRAM(true);
   }
 

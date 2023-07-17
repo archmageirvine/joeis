@@ -12,6 +12,7 @@ public class A213439 extends A000136 {
 
   /** Construct the sequence. */
   public A213439() {
+    super(2);
     super.next();
   }
 

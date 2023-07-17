@@ -9,6 +9,11 @@ import irvine.oeis.a008.A008288;
  */
 public class A026935 extends A008288 {
 
+  /** Construct the sequence. */
+  public A026935() {
+    super(2);
+  }
+
   private long mN = 1;
 
   @Override
@@ -16,7 +21,7 @@ public class A026935 extends A008288 {
     ++mN;
     Z sum = Z.ZERO;
     for (long k = 0; k < mN - 1; ++k) {
-      sum = sum.add(get(mN - k , k).multiply(get(mN - k - 2, k + 2)));
+      sum = sum.add(get(mN - k, k).multiply(get(mN - k - 2, k + 2)));
     }
     return sum;
   }

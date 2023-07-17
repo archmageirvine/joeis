@@ -10,7 +10,13 @@ import irvine.oeis.a007.A007662;
  */
 public class A045747 extends A007662 {
 
+  /** Construct the sequence. */
+  public A045747() {
+    super(1);
+  }
+
   private final PrimeDivision mFactor = new PrimeDivision();
+
   {
     super.next();
   }

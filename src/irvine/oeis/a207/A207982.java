@@ -12,6 +12,11 @@ import irvine.oeis.a000.A000984;
  */
 public class A207982 extends A000984 {
 
+  /** Construct the sequence. */
+  public A207982() {
+    super(1);
+  }
+
   private final ArrayList<Z> mCentral = new ArrayList<>();
   private int mN = -1;
   private int mLast = 1;

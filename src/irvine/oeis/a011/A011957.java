@@ -11,11 +11,17 @@ import irvine.oeis.a165.A165920;
  */
 public class A011957 extends A001037 {
 
+  /** Construct the sequence. */
+  public A011957() {
+    super(1);
+  }
+
   // After Joerg Arndt
 
   private final A000048 mA48 = new A000048();
   private final A165920 mA165920 = new A165920();
   private long mN = 0;
+
   {
     super.next(); // skip 0th term
   }

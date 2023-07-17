@@ -12,6 +12,11 @@ import irvine.oeis.a047.A047863;
  */
 public class A000685 extends A047863 {
 
+  /** Construct the sequence. */
+  public A000685() {
+    super(1);
+  }
+
   private final ArrayList<Z> mC = new ArrayList<>();
 
   {

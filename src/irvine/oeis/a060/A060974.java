@@ -12,6 +12,11 @@ import irvine.oeis.a000.A000367;
  */
 public class A060974 extends A000367 {
 
+  /** Construct the sequence. */
+  public A060974() {
+    super(1);
+  }
+
   private final ArrayList<Z> mB = new ArrayList<>();
   private final Fast mPrime = new Fast();
   private long mP = 2;

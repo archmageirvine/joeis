@@ -11,6 +11,11 @@ import irvine.oeis.a005.A005900;
  */
 public class A053701 extends A005900 {
 
+  /** Construct the sequence. */
+  public A053701() {
+    super(1);
+  }
+
   private static final char[] DIGITS = {'0', '1', '2', '5', '8'};
   private final TreeSet<Z> mA = new TreeSet<>();
   private int mLength = -1; // Length of half the number!

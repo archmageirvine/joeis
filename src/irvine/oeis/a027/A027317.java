@@ -9,6 +9,11 @@ import irvine.oeis.a026.A026082;
  */
 public class A027317 extends A026082 {
 
+  /** Construct the sequence. */
+  public A027317() {
+    super(2);
+  }
+
   private long mN = 1;
 
   @Override

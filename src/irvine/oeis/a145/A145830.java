@@ -8,6 +8,11 @@ import irvine.math.z.Z;
  */
 public class A145830 extends A145768 {
 
+  /** Construct the sequence. */
+  public A145830() {
+    super(1);
+  }
+
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
 
   @Override

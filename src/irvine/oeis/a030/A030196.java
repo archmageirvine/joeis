@@ -12,6 +12,11 @@ import irvine.oeis.a008.A008292;
  */
 public class A030196 extends A000295 {
 
+  /** Construct the sequence. */
+  public A030196() {
+    super(1);
+  }
+
   private final A008292 mEuler = new A008292();
   private final TreeSet<Z> mS = new TreeSet<>();
   private long mRow = 0;

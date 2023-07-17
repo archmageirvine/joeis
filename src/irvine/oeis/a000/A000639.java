@@ -10,9 +10,13 @@ import irvine.math.z.Z;
  */
 public class A000639 extends A000598 {
 
+  /** Construct the sequence. */
+  public A000639() {
+    super(1);
+  }
+
   private static final Q FOUR = Q.FOUR;
   private int mL = 0;
-
 
   @Override
   public Z next() {

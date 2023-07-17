@@ -10,6 +10,11 @@ import irvine.util.array.LongDynamicIntArray;
  */
 public class A048138 extends A001065 {
 
+  /** Construct the sequence. */
+  public A048138() {
+    super(2);
+  }
+
   private final LongDynamicIntArray mA = new LongDynamicIntArray();
   private long mN = 1;
   private long mM = 0;

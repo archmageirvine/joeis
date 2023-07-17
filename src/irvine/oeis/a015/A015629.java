@@ -6,6 +6,11 @@ package irvine.oeis.a015;
  */
 public class A015629 extends A015625 {
 
+  /** Construct the sequence. */
+  public A015629() {
+    super(2);
+  }
+
   @Override
   protected long start() {
     return 2;

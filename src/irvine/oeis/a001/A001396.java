@@ -8,6 +8,12 @@ import irvine.oeis.a007.A007180;
  * @author Sean A. Irvine
  */
 public class A001396 extends A007180 {
+
+  /** Construct the sequence. */
+  public A001396() {
+    super(0);
+  }
+
   private boolean mFirst = true;
 
   @Override

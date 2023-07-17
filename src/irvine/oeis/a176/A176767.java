@@ -10,7 +10,7 @@ public class A176767 extends A176772 {
 
   /** Default constructor. */
   public A176767() {
-    super(-1);
+    super(0);
   }
 
   @Override

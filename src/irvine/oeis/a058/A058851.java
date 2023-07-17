@@ -10,7 +10,13 @@ import irvine.util.string.StringUtils;
  */
 public class A058851 extends A005843 {
 
+  /** Construct the sequence. */
+  public A058851() {
+    super(1);
+  }
+
   private Z mN = Z.ZERO;
+
   {
     super.next(); // skip 0
     super.next(); // skip 2

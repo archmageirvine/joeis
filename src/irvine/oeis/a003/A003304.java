@@ -10,6 +10,11 @@ import irvine.util.Point;
  */
 public class A003304 extends A002931 {
 
+  /** Construct the sequence. */
+  public A003304() {
+    super(2);
+  }
+
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
 
   {

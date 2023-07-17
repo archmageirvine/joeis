@@ -14,19 +14,11 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A319797 extends Triangle {
 
-  /**
-   * Constructor with offset.
-   * @param offset first index
-   */
-  protected A319797(final int offset) {
-    super(offset);
-  }
-
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
   /** Construct the sequence. */
   public A319797() {
-    super(1);
+    super(0);
     hasRAM(true);
   }
 

@@ -11,6 +11,11 @@ import irvine.oeis.transform.InverseEulerTransform;
  */
 public class A057004 extends A160449 {
 
+  /** Construct the sequence. */
+  public A057004() {
+    super(1);
+  }
+
   private int mN = 2;
   private int mM = 1;
 

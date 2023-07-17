@@ -2202,3 +2202,6 @@ A064163 Theta series of the 71-dimensional sublattice orthogonal to a norm 8 vec
 A064356 Dimension of J_(12n,n+1), the Jacobi form of weight 12n and index n+1
 A064436 Number of switching functions of n or fewer variables which cannot be realized as threshold gates.
 A064513 Maximal number of nodes in graph of degree <= n and diameter 2 (another version).
+A064527 Numbers k such that there exists a finite group G of order k such that all entries in its character table are integers.
+A064533 Decimal expansion of Landau-Ramanujan constant.
+A064534 If p >= 11 is prime, n is a power of one of the primes in this sequence but n is not a power of p, then the equation x^p + y^p = n*z^p has no solution in integers x,y,z.

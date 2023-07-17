@@ -364,4 +364,22 @@ public final class PolynomialUtils {
     }
     return res;
   }
+
+  /**
+   * Substitute the inner variable of a bivariate polynomial with the given polynomial.
+   * @param ring inner ring
+   * @param poly polynomial
+   * @param subs substitution
+   * @param maxDegree max degree to retain
+   * @return substituted polynomial
+   */
+  public static <E> Polynomial<E> innerSubstitute(final PolynomialRing<E> ring, final Polynomial<Polynomial<E>> poly, final Polynomial<E> subs, final int maxDegree) {
+    Polynomial<E> res = ring.zero();
+    int k = 0;
+    for (final Polynomial<E> p : poly) {
+      res = ring.add(res, ring.substitute(p, subs, maxDegree - k).shift(k));
+      ++k;
+    }
+    return res;
+  }
 }

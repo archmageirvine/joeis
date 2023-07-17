@@ -1,13 +1,26 @@
 package irvine.oeis.a029;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A029635 The (1,2)-Pascal triangle (or Lucas triangle) read by rows.
  * @author Sean A. Irvine
  */
 public class A029635 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A029635() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A029635(final int offset) {
+    super(offset);
+  }
 
   private int mN = -1;
   private int mM = 0;

@@ -13,6 +13,14 @@ import irvine.oeis.AbstractSequence;
  */
 public class A002499 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A002499(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A002499() {
     super(1);
@@ -27,7 +35,7 @@ public class A002499 extends AbstractSequence {
   private boolean eta(final int k) {
     return (k & 3) == 2;
   }
-  
+
   // Based on formula on p. 155 in "Graphical Enumeration", not error in sum2 bounds in book
   private int sum2(final int p, final int[] j) {
     int s = 0;
@@ -62,7 +70,7 @@ public class A002499 extends AbstractSequence {
 
   /*
   // Explicit iteration over permutations, much slower than lpf based approach
-  // see circa p. 35 in "Graphical Enumeration"   
+  // see circa p. 35 in "Graphical Enumeration"
   public Z nextx() {
     final SymmetricGroup<Integer> sp = SymmetricGroup.create(++mN);
     final int[] j = new int[mN + 1];

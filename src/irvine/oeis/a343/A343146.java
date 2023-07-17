@@ -14,6 +14,14 @@ import irvine.util.Permutation;
  */
 public class A343146 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A343146(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A343146() {
     super(0);

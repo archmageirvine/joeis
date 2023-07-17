@@ -3,8 +3,8 @@ package irvine.oeis.a022;
 import java.util.ArrayList;
 
 import irvine.factor.prime.Fast;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
@@ -13,12 +13,26 @@ import irvine.util.array.LongDynamicLongArray;
  */
 public class A022894 extends MemoryFunction2Sequence<Long, Z> {
 
+  /** Construct the sequence. */
+  public A022894() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A022894(final int offset) {
+    super(offset);
+  }
+
   // After Alois P. Heinz
 
   private long mN = -1;
   private final Fast mPrime = new Fast();
   private final LongDynamicLongArray mPrimes = new LongDynamicLongArray();
   private final ArrayList<Z> mSumPrimes = new ArrayList<>();
+
   {
     mPrimes.set(0, start());
     mSumPrimes.add(Z.ZERO);

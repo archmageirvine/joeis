@@ -16,15 +16,16 @@ public class A067067 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A067067() {
-    this(new A000142());
+    this(0, new A000142());
   }
 
   /**
    * Generic constructor with parameter
+   * @param offset first index of target sequence
    * @param seq underlying sequence
    */
-  public A067067(final Sequence seq) {
-    super(0);
+  public A067067(final int offset, final Sequence seq) {
+    super(offset);
     mSeq = seq;
   }
 

@@ -95,7 +95,7 @@ public class A055187 extends AbstractSequence {
 
   protected A055187(final int offset, final String method, final int start,
                  final int appear, final int row, final int first, final int with0, final int parm) {
-    super(1);
+    super(offset);
     mOffset = offset;
     mMethod = method;
     mStart = start;

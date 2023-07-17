@@ -17,15 +17,16 @@ public class A052179 extends Triangle {
 
   /** Construct the sequence. */
   public A052179() {
-    this(4, 4);
+    this(0, 4, 4);
   }
 
   /**
    * Generic constructor with parameters
+   * @param offset first index
    * @param x first parameter in recurrence
    * @param y second parameter in recurrence
    */
-  public A052179(final long x, final long y) {
+  public A052179(final int offset, final long x, final long y) {
     super();
     mX = Z.valueOf(x);
     mY = Z.valueOf(y);

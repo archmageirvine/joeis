@@ -1,13 +1,26 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A055450 Path-counting array T; each step of a path is (1 right) or (1 up) to a point below line y=x, else (1 right and 1 up) or (1 up) to a point on the line y=x, else (1 left) or (1 up) to a point above line y=x. T(i,j)=number of paths to point (i-j,j), for 1&lt;=j&lt;=i, i &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A055450 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A055450() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A055450(final int offset) {
+    super(offset);
+  }
 
   private long mN = -1;
   private long mM = 0;

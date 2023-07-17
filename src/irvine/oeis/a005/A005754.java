@@ -23,7 +23,7 @@ public class A005754 extends MemoryFunction2Sequence<Long, Z> {
    * @param leaves number of leaves
    */
   public A005754(final int leaves) {
-    super(1);
+    super(leaves - 1);
     mLeaves = leaves;
   }
 

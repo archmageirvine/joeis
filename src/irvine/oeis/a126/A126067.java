@@ -19,6 +19,14 @@ import irvine.oeis.a002.A002499;
  */
 public class A126067 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A126067(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A126067() {
     super(0);
@@ -32,14 +40,14 @@ public class A126067 extends AbstractSequence {
   private int mN = -1;
   private int mM = 0;
   private Polynomial<Q> mPoly = RING.zero();
-  
+
   private static boolean eta(final int k) {
     return (k & 3) == 2;
   }
-  
+
   // See page 152 of "Graphical Enumeration". Note, however, the formula
   // in the book for I(alpha) should say "1<=r<t<=p".
-  
+
   private static MultivariateMonomial i(final int p, final int[] j, final Z mult) {
     final MultivariateMonomial powers = new MultivariateMonomial();
     for (int k = 1; k <= p; ++k) {
@@ -71,7 +79,7 @@ public class A126067 extends AbstractSequence {
     //System.out.println(Arrays.toString(j) + " --> " + Arrays.toString(powers));
     return powers;
   }
-  
+
   protected static CycleIndex i(final int n) {
     final IntegerPartition partition = new IntegerPartition(n);
     final int[] j = new int[n + 1];

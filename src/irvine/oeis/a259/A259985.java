@@ -1,13 +1,26 @@
 package irvine.oeis.a259;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A259985 Triangle read by rows: coefficients of rook polynomials.
  * @author Sean A. Irvine
  */
 public class A259985 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A259985() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A259985(final int offset) {
+    super(offset);
+  }
 
   // Rook polynomials
 

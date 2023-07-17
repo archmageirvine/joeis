@@ -1,5 +1,5 @@
 package irvine.oeis.a057;
-// manually A057036/parm4 at 2022-01-27 20:25
+// manually A057036/parmof4 at 2023-07-17 09:13
 
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000032;
@@ -14,7 +14,7 @@ public class A057043 extends A057036 {
 
   /** Construct the sequence. */
   public A057043() {
-    super(new A000032(), 1, 0);
+    super(1, new A000032(), 1, 0);
   }
 
   @Override
@@ -23,3 +23,4 @@ public class A057043 extends A057036 {
     return super.next().add(mN == 2 ? 1 : 0);
   }
 }
+

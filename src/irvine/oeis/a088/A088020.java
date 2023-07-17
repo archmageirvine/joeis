@@ -10,6 +10,14 @@ import irvine.oeis.AbstractSequence;
  */
 public class A088020 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A088020(final int offset) {
+    super(offset);
+  }
+
   private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN;
 

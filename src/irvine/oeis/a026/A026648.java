@@ -9,6 +9,14 @@ import irvine.oeis.memory.MemoryFunction2Sequence;
  */
 public class A026648 extends MemoryFunction2Sequence<Long, Z> {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A026648(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A026648() {
     super(1);

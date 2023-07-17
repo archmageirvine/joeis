@@ -6,8 +6,6 @@ import irvine.oeis.AbstractSequence;
 
 /**
  * A047161 Number of nonempty subsets of {1,2,...,n} in which exactly 1/3 of the elements are &lt;= n/2.
- * Offset 1;
- * DATA 0, 0, 1, 2, 6, 9, 21, 30, 70, 100, 235, 335, 791, 1127, 2681, 3822, 9150, 13050, 31401, 44802 ...
  * @author Georg Fischer
  */
 public class A047161 extends AbstractSequence {
@@ -22,7 +20,7 @@ public class A047161 extends AbstractSequence {
   public A047161() {
     this(1, 1, 3, 0, 2);
   }
-  
+
   /**
    * Generic constructor with parameters
    * @param offset first index
@@ -32,7 +30,7 @@ public class A047161 extends AbstractSequence {
    * @param div divisor of (n+a)
    */
   public A047161(final int offset, final int num, final int den, final int add, final int div) {
-    super(1);
+    super(offset);
     mN = offset - 1;
     mNum = num;
     mDen = den;
@@ -55,7 +53,7 @@ public class A047161 extends AbstractSequence {
     Z sum = Z.ZERO;
     for (int j = mDen; j <= mN; j += mDen) {
       sum = sum.add(Binomial.binomial(k, j * mNum / mDen).multiply(Binomial.binomial(mN - k, j * (mDen - mNum) / mDen)));
-    } 
+    }
     return sum;
   }
 }

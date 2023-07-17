@@ -1,13 +1,26 @@
 package irvine.oeis.a025;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A025564 Triangular array, read by rows: pairwise sums of trinomial array A027907.
  * @author Sean A. Irvine
  */
 public class A025564 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A025564() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A025564(final int offset) {
+    super(offset);
+  }
 
   private static final Z[] N2 = {Z.ONE, Z.THREE, Z.FOUR, Z.THREE, Z.ONE};
   private long mN = -1;

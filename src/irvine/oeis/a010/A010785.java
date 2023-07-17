@@ -10,6 +10,14 @@ import irvine.util.string.StringUtils;
  */
 public class A010785 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A010785(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A010785() {
     super(0);

@@ -15,15 +15,16 @@ public class A067508 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A067508() {
-    this(4);
+    this(0, 4);
   }
 
   /**
    * Generic constructor with parameters
+   * @param offset first index
    * @param base base and divisor
    */
-  public A067508(final int base) {
-    super(0);
+  public A067508(final int offset, final int base) {
+    super(offset);
     mPow = Z.ONE;
     mBase = base;
   }

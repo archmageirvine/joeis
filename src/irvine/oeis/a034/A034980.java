@@ -13,5 +13,6 @@ public class A034980 extends A034982 {
   public A034980() {
     // sqrt(45), sqrt(2)/3
     super(new A020802(), new A131594(), "2", null);
+    setOffset(0);
   }
 }

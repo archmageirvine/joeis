@@ -8,6 +8,11 @@ import irvine.math.z.Z;
  */
 public class A063904 extends A063884 {
 
+  /** Construct the sequence. */
+  public A063904() {
+    super(1);
+  }
+
   @Override
   protected Z computeNext() {
     final Z t = mA.pollFirst();

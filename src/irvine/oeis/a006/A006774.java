@@ -12,6 +12,14 @@ import irvine.util.Point;
  */
 public class A006774 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A006774(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A006774() {
     super(0);

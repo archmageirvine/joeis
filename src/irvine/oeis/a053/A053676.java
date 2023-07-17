@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.a000.A000330;
 import irvine.oeis.a005.A005900;
 
 /**
@@ -20,7 +21,7 @@ public class A053676 extends AbstractSequence {
   protected long mOffset = 0;
 
   protected A053676(final Sequence seq) {
-    super(1);
+    super((seq instanceof A000330) ? 0 : 1);
     mUnder = seq;
     mUnder.next(); // skip 0
     mA.add(mUnder.next());

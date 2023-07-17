@@ -14,7 +14,7 @@ public class A048549 extends AbstractSequence {
   private final int mBase;
 
   protected A048549(final String start, final int base) {
-    super(1);
+    super(start.equals("2") ? 1 : 0);
     mStart = start;
     mBase = base;
   }
@@ -25,7 +25,7 @@ public class A048549 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A048549() {
-    this("2");
+    this("2", 10);
   }
 
   private Z makeNumber(final String prefix, final StringBuilder zeros, final long m) {

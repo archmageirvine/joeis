@@ -15,15 +15,16 @@ public class A069588 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A069588() {
-    this(1);
+    this(1, 1);
   }
 
   /**
    * Generic constructor with parameters
+   * @param offset first index
    * @param digit the digit
    */
-  public A069588(final int digit) {
-    super(1);
+  public A069588(final int offset, final int digit) {
+    super(offset);
     mN = 0;
     mDigit = digit;
     mPow10 = Z.valueOf(mDigit);

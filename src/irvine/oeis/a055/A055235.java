@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A055235 Sums of two powers of 3. 
+ * A055235 Sums of two powers of 3.
  * @author Georg Fischer
  */
 public class A055235 extends Triangle {
@@ -14,14 +14,17 @@ public class A055235 extends Triangle {
 
   /** Construct the sequence. */
   public A055235() {
-    this(3);
+    this(0, 3);
   }
 
   /**
    * Generic constructor with parameters
-   * @param base 
+   * @param offset first index
+   * @param base
    */
-  public A055235(final int base) {
+  public A055235(final int offset, final int base) {
+    super(offset);
+    hasRAM(true);
     mBase = Z.valueOf(base);
   }
 

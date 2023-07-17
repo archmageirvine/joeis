@@ -6,19 +6,32 @@ import java.util.List;
 
 import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction2;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A028657 Triangle read by rows: T(n,k) = number of n-node graphs with k nodes in distinguished bipartite block, k = 0..n.
  * @author Sean A. Irvine
  */
 public class A028657 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A028657() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A028657(final int offset) {
+    super(offset);
+  }
 
   // After Alois P. Heinz
 

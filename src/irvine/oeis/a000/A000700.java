@@ -10,6 +10,14 @@ import irvine.math.z.Z;
  */
 public class A000700 extends A000593 {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A000700(final int offset) {
+    super(offset);
+  }
+
   protected final ArrayList<Z> mA = new ArrayList<>();
   private final ArrayList<Z> mB = new ArrayList<>();
   private boolean mFirst = true;

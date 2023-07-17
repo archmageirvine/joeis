@@ -10,12 +10,20 @@ import irvine.oeis.MemorySequence;
  */
 public class A000055 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A000055(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A000055() {
     super(0);
   }
 
-  private final MemorySequence mB = new A000081();
+  private final MemorySequence mB = new A000081(0);
 
   @Override
   public Z next() {

@@ -13,6 +13,7 @@ public class A050943 extends A034706 {
   /** Construct the sequence. */
   public A050943() {
     super(2, MemorySequence.cachedSequence(new A000217().skip(1)));
+    setOffset(0);
   }
 }
 

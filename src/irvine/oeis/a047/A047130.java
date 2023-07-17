@@ -1,13 +1,26 @@
 package irvine.oeis.a047;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A047130 Array read by descending antidiagonals: T(h,k) is the number of paths consisting of steps from (0,0) to (h,k) such that each step has length 1 directed up or right and no up-step crosses the line y = 3x/4. (Thus a path crosses the line only at lattice points and on right-steps.).
  * @author Sean A. Irvine
  */
 public class A047130 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A047130() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A047130(final int offset) {
+    super(offset);
+  }
 
   private long mN = -1;
   private long mM = 0;

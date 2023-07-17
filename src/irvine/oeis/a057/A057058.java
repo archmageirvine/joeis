@@ -1,10 +1,10 @@
 package irvine.oeis.a057;
-// manually A057036/parm4 at 2022-01-27 20:25
+// manually A057036/parmof4 at 2023-07-17 09:13
 
 import irvine.math.z.Z;
 
 /**
- * A057058 Let R(i,j) be the rectangle with antidiagonals 1; 2,3; 4,5,6; ...; each k is an R(i(k),j(k)) and a(n)=i(A057027(n)).
+ * A057058 Let R(i,j) be the rectangle with antidiagonals 1; 2,3; 4,5,6; ...; each k is an R(i(k),j(k)) and a(n)=i(A057027(n))
  * @author Georg Fischer
  */
 public class A057058 extends A057036 {
@@ -19,7 +19,7 @@ public class A057058 extends A057036 {
    * @param mode 1: return <code>i</code>, 2: return <code>j</code>
    */
   public A057058(final int mode) {
-    super(new A057027(), mode, 0);
+    super(1, new A057027(), mode, 0);
   }
 
   @Override

@@ -13,6 +13,19 @@ import irvine.util.array.DynamicArray;
  */
 public class A000081 extends MemorySequence {
 
+  /** Construct the sequence. */
+  public A000081() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  public A000081(final int offset) {
+    super(offset);
+  }
+
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final DynamicArray<Z> mS = new DynamicArray<>();
 

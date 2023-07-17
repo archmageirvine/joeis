@@ -25,7 +25,7 @@ public class A074477 extends AbstractSequence {
    * @param add add this to the expression
    */
   public A074477(final int base, final int add) {
-    super(1);
+    super((add < -1) ? 2 : 1);
     mBase = base;
     mAdd = add;
     mN = Z.valueOf(mBase);

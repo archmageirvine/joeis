@@ -13,7 +13,7 @@ public class A064520 extends Sequence1 {
   private boolean mSign = true;
   private long mCount = 1;
   private long mN = 0;
-  private long mM =1;
+  private long mM = 1;
 
   @Override
   public Z next() {

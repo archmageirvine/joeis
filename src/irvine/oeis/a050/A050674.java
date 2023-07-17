@@ -13,7 +13,7 @@ public class A050674 extends AbstractSequence {
   private final char mInsert;
 
   protected A050674(final char insert) {
-    super(1);
+    super(insert == '6' ? 0 : 1);
     mInsert = insert;
   }
 

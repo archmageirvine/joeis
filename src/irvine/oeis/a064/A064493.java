@@ -14,6 +14,6 @@ public class A064493 extends RecordSequence {
 
   /** Construct the sequence. */
   public A064493() {
-    super(new Combiner(new A000142(), new A058006(), Z::gcd));
+    super(0, new Combiner(new A000142(), new A058006(), Z::gcd));
   }
 }

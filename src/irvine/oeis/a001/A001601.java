@@ -9,6 +9,14 @@ import irvine.oeis.AbstractSequence;
  */
 public class A001601 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A001601(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A001601() {
     super(0);

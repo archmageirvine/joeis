@@ -10,6 +10,14 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A244372 extends Triangle {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A244372(final int offset) {
+    super(offset);
+  }
+
   /* Maple:
     b:= proc(n, i, t, k) as in A299038:
     T:= (n, k)-> b(n-1$2, k$2) -`if`(k=0, 0, b(n-1$2, k-1$2)):

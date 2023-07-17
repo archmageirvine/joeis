@@ -17,6 +17,14 @@ import irvine.util.Pair;
  */
 public class A007343 extends MemoryFunction2Sequence<Integer, Integer> {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A007343(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A007343() {
     super(3);

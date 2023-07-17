@@ -10,6 +10,10 @@ public class A054692 extends A054690 {
 
   private Z mA = super.next();
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     Z p = mA;
@@ -22,4 +26,3 @@ public class A054692 extends A054690 {
     return p;
   }
 }
-

@@ -16,16 +16,17 @@ public class A098941 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A098941() {
-    this(10, "[123579]*2[123579]*");
+    this(1, 10, "[123579]*2[123579]*");
   }
 
   /**
    * Generic constructor with parameter
+   * @param offset first index
    * @param base base of number system
    * @param pattern pattern to be matched
    */
-  public A098941(final int base, final String pattern) {
-    super(1);
+  public A098941(final int offset, final int base, final String pattern) {
+    super(offset);
     mN = -1; // always try to start with 0
     mBase = base;
     mPattern = pattern;

@@ -1,13 +1,26 @@
 package irvine.oeis.a036;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A036370 Triangle of coefficients of generating function of ternary rooted trees of height at most n.
  * @author Sean A. Irvine
  */
 public class A036370 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A036370() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A036370(final int offset) {
+    super(offset);
+  }
 
   private int mM = -1;
   private int mN = 0;

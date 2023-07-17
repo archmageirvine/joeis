@@ -12,6 +12,14 @@ import irvine.oeis.transform.EulerTransform;
  */
 public class A004113 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A004113(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A004113() {
     super(1);

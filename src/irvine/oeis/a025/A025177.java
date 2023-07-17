@@ -1,13 +1,26 @@
 package irvine.oeis.a025;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A025177 Triangular array, read by rows: first differences in n,n direction of trinomial array A027907.
  * @author Sean A. Irvine
  */
 public class A025177 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A025177() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A025177(final int offset) {
+    super(offset);
+  }
 
   private long mN = -1;
   private long mM = 0;

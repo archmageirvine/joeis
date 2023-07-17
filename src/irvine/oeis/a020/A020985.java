@@ -13,6 +13,14 @@ import irvine.util.array.LongDynamicBooleanArray;
  */
 public class A020985 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A020985(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A020985() {
     super(0);

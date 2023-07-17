@@ -15,6 +15,14 @@ import irvine.oeis.memory.MemoryFunctionInt3Sequence;
  */
 public class A033185 extends MemoryFunctionInt3Sequence<Z> {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A033185(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A033185() {
     super(1);
@@ -22,7 +30,7 @@ public class A033185 extends MemoryFunctionInt3Sequence<Z> {
 
   // After Alois P. Heinz
 
-  private final Sequence mA55 = new A000081();
+  private final Sequence mA55 = new A000081(0);
   private final List<Z> mT = new ArrayList<>();
 
   private Z getT(final int i) {

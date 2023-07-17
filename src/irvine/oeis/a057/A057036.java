@@ -18,17 +18,18 @@ public class A057036 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A057036() {
-    this(new A005408(), 1, 0); // odd numbers 1, 3, 5...
+    this(1, new A005408(), 1, 0); // odd numbers 1, 3, 5...
   }
 
   /**
    * Generic constructor with parameters
+   * @param offset first index
    * @param seq underlying sequence
    * @param mode 1: return <code>i</code>, 2: return <code>j</code>, 3: return antidiagonal's number
    * @param skip number of terms of the underlying sequence to be skipped initially
    */
-  public A057036(final Sequence seq, final int mode, int skip) {
-    super(1);
+  public A057036(final int offset, final Sequence seq, final int mode, int skip) {
+    super(offset);
     mSeq = seq;
     while (skip > 0) {
       mSeq.next();

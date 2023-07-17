@@ -23,6 +23,14 @@ import irvine.util.CliFlags;
  */
 public class A006966 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A006966(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A006966() {
     super(0);

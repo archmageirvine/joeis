@@ -13,21 +13,30 @@ import irvine.oeis.a007.A007623;
  */
 public class A208575 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A208575(final int offset) {
+    super(offset);
+  }
+
   private Sequence mSeq; // underlying sequence
   private int mBase;
 
   /** Construct the sequence. */
   public A208575() {
-    this(new A007623(), 10);
+    this(0, new A007623(), 10);
   }
 
   /**
    * Generic constructor with parameters
+   * @param offset first index of target sequence
    * @param seq underlying sequence
    * @param base number base
    */
-  public A208575(final Sequence seq, final int base) {
-    super(0);
+  public A208575(final int offset, final Sequence seq, final int base) {
+    super(offset);
     mSeq = seq;
     mBase = base;
   }

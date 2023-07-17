@@ -9,6 +9,14 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A074147 extends Triangle {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A074147(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A074147() {
     setOffset(1);

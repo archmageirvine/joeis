@@ -14,6 +14,14 @@ import irvine.oeis.memory.MemoryFunction1Sequence;
  */
 public class A008298 extends MemoryFunction1Sequence<Polynomial<Z>> {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A008298(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A008298() {
     super(1);

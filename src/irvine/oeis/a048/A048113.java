@@ -1,13 +1,26 @@
 package irvine.oeis.a048;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A048113 Triangular array T read by rows: T(h,k) = number of paths consisting of steps from (1,1) to (h,k) such that each step has length 1 directed up or right and each vertex (i,j) satisfies i/2&lt;=j&lt;=2i, for h=0,1,2,... and k=0,1,2,...
  * @author Sean A. Irvine
  */
 public class A048113 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A048113() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A048113(final int offset) {
+    super(offset);
+  }
 
   // After Jean-Fran&ccedil;ois Alcover
 

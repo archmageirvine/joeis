@@ -9,6 +9,19 @@ import irvine.oeis.memory.MemoryFunctionInt3Sequence;
  */
 public class A194543 extends MemoryFunctionInt3Sequence<Z> {
 
+  /** Construct the sequence. */
+  public A194543() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A194543(final int offset) {
+    super(offset);
+  }
+
   // After Alois P. Heinz
 
   private int mN = -1;

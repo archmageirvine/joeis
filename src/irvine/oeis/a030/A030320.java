@@ -17,8 +17,8 @@ public class A030320 extends AbstractSequence {
   private long mN = first();
   private final Sequence mUnder;
 
-  protected A030320(final Sequence under, final long start) {
-    super(1);
+  protected A030320(final Sequence under, final int start) {
+    super(start + 1);
     mUnder = under;
     mM = start;
   }

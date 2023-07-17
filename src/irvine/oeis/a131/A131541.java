@@ -10,6 +10,14 @@ import irvine.util.array.DynamicByteArray;
  */
 public class A131541 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A131541(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A131541() {
     super(1);

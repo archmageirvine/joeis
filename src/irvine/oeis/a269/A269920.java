@@ -9,6 +9,19 @@ import irvine.oeis.memory.MemoryFunctionInt3Sequence;
  */
 public class A269920 extends MemoryFunctionInt3Sequence<Z> {
 
+  /** Construct the sequence. */
+  public A269920() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A269920(final int offset) {
+    super(offset);
+  }
+
   @Override
   protected Z compute(final int n, final int g, final int f) {
     if (n < 0 || g < 0 || f < 0) {

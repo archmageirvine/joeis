@@ -22,7 +22,7 @@ public class A143497 extends Triangle {
    * @param lah Lah number
    */
   public A143497(final int lah) {
-    setOffset(2);
+    super(lah);
     hasRAM(false);
     mLah2 = 2 * lah - 1;
   }

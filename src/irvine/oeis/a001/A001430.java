@@ -18,6 +18,14 @@ import irvine.util.Pair;
  */
 public class A001430 extends MemoryFunction1Sequence<Polynomial<Q>> {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A001430(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A001430() {
     super(1);

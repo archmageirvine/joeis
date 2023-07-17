@@ -17,15 +17,16 @@ public class A105471 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A105471() {
-    this(100);
+    this(0, 100);
   }
 
   /**
-   * Generic constructor with parameter
-   * @param parm parameter
+   * Generic constructor with parameters
+   * @param offset first index
+   * @param parm take fib(n) mod parm
    */
-  public A105471(final int parm) {
-    super(0);
+  public A105471(final int offset, final int parm) {
+    super(offset);
     mParm = Z.valueOf(parm);
     mA_1 = Z.ONE;
     mA_2 = Z.ZERO;

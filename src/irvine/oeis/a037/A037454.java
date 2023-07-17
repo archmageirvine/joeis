@@ -26,14 +26,14 @@ public class A037454 extends AbstractSequence {
     mBaseTo = 6;
   }
 
-  /** 
+  /**
    * Constructor with parameters
    * @param offset index of first term
    * @param baseFrom convert from this base
    * @param baseTo convert to this base
    */
   public A037454(final int offset, final int baseFrom, final int baseTo) {
-    super(0);
+    super(offset);
     mN = Z.valueOf(offset).subtract(Z.ONE);
     mBaseFrom = baseFrom;
     mBaseTo = baseTo;
@@ -53,7 +53,7 @@ public class A037454 extends AbstractSequence {
         toPow = toPow.multiply(mBaseTo);
       }
       return sum;
-    } 
+    }
   }
 
   /**

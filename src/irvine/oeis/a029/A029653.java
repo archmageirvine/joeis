@@ -1,13 +1,26 @@
 package irvine.oeis.a029;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A029653 Numbers in (2,1)-Pascal triangle (by row).
  * @author Sean A. Irvine
  */
 public class A029653 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A029653() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A029653(final int offset) {
+    super(offset);
+  }
 
   private int mN = -1;
   private int mM = 0;

@@ -1,14 +1,27 @@
 package irvine.oeis.a022;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.MemoryFunction3;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A022811 Number of terms in n-th derivative of a function composed with itself 3 times.
  * @author Sean A. Irvine
  */
 public class A022811 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A022811() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A022811(final int offset) {
+    super(offset);
+  }
 
   // After Jean-Fran&ccedil;ois Alcover, after Alois P. Heinz
 

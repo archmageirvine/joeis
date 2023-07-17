@@ -1,14 +1,27 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A008290 Triangle T(n,k) of rencontres numbers (number of permutations of n elements with k fixed points).
  * @author Sean A. Irvine
  */
 public class A008290 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A008290() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A008290(final int offset) {
+    super(offset);
+  }
 
   // After Alois P. Heinz
 

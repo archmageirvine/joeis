@@ -1,13 +1,26 @@
 package irvine.oeis.a047;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A047140 Array read by diagonals: T(h,k)=number of paths consisting of steps from (0,0) to (h,k) such that each step has length 1 directed up or right and no up-step crosses the line y=4x/3. (Thus a path crosses the line only at lattice points and on right-steps.).
  * @author Sean A. Irvine
  */
 public class A047140 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A047140() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A047140(final int offset) {
+    super(offset);
+  }
 
   private long mN = -1;
   private long mM = 0;

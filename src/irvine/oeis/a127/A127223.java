@@ -24,7 +24,7 @@ public class A127223 extends AbstractSequence {
    * @param expon
    */
   public A127223(final int offset, final int expon) {
-    super(0);
+    super(offset);
     mExpon = expon;
     mN = offset - 1;
   }

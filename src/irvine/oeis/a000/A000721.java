@@ -20,6 +20,14 @@ import irvine.util.Pair;
  */
 public class A000721 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A000721(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A000721() {
     super(1);

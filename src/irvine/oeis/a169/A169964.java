@@ -16,17 +16,17 @@ public class A169964 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A169964() {
-    this(0, 5);
+    this(1, 5);
   }
 
   /**
    * Generic constructor with parameter
    * @param offset offset of the sequence
-   * @param parm digit to multiply on A007088
+   * @param digit digit to multiply on A007088
    */
-  public A169964(final int offset, final int parm) {
+  public A169964(final int offset, final int digit) {
     super(offset);
-    mDigit = Z.valueOf(parm);
+    mDigit = Z.valueOf(digit);
   }
 
   @Override
@@ -34,3 +34,4 @@ public class A169964 extends AbstractSequence {
     return mSeq.next().multiply(mDigit);
   }
 }
+

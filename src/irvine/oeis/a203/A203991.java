@@ -28,13 +28,13 @@ public class A203991 extends AbstractSequence {
     this(1, new A203990());
   }
 
-  /** 
+  /**
    * Generic constructor with parameter
    * @param seq underlying sequence.
    * @param offset number of first row: 0 or 1.
    */
   public A203991(final int offset, final Sequence seq) {
-    super(1);
+    super(offset);
     if (seq instanceof UpperLeftTriangle) {
       mULT = (UpperLeftTriangle) seq;
     } else {
@@ -70,7 +70,7 @@ public class A203991 extends AbstractSequence {
       mLastRow[k] = (mRow & 1) == 0 ? charPoly.coeff(k) : charPoly.coeff(k).negate();
     }
   }
-  
+
   /**
    * Return next term, reading the triangle row by row from left to right, starting with T(0, 0).
    * @return the next term of the sequence.

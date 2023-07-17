@@ -17,6 +17,14 @@ import irvine.util.Pair;
  */
 public class A005316 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A005316(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A005316() {
     super(0);
@@ -60,7 +68,7 @@ public class A005316 extends AbstractSequence {
         More generally the 'transfer-matrix' method is applicable to a very wide class of enumeration problem.
 
         Sample usage:
-        
+
         public Z OpenMeanderCount( int length)
         {
             int nn = length - 1;
@@ -69,8 +77,8 @@ public class A005316 extends AbstractSequence {
         }
 
         ArchConfiguration which is un-related and independent of the other classes is a set of utilities for working
-        with arch configuration and menander permutations.   
-        
+        with arch configuration and menander permutations.
+
      */
 
   /**
@@ -413,11 +421,11 @@ public class A005316 extends AbstractSequence {
    */
   public static class SimpleProcessor<S> {
     private long mTotalTransitions;
-    
+
     long getTotalTransitions() {
       return mTotalTransitions;
     }
-    
+
     void setTotalTransitions(final long totalTransitions) {
       mTotalTransitions = totalTransitions;
     }

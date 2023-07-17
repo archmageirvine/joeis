@@ -10,6 +10,14 @@ import irvine.oeis.ConcatenatedPrimeFactorizationSequence;
  */
 public class A230627 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A230627(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A230627() {
     super(2);

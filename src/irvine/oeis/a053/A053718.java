@@ -23,7 +23,7 @@ public class A053718 extends AbstractSequence {
   private final Z mMaxOrder;
 
   protected A053718(final long maxOrder, final GaloisField field, final int start) {
-    super(1);
+    super(start);
     mN = start - 1;
     mFld = field;
     mMaxOrder = Z.valueOf(maxOrder);

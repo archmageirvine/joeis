@@ -1,13 +1,26 @@
 package irvine.oeis.a027;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A027960 'Lucas array': triangular array T read by rows.
  * @author Sean A. Irvine
  */
 public class A027960 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A027960() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A027960(final int offset) {
+    super(offset);
+  }
 
   private long mN = -1;
   private long mM = 0;

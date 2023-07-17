@@ -11,14 +11,14 @@ public class A176772 extends AbstractSequence {
 
   private int mN;
 
-  protected A176772(final int start) {
-    super(1);
-    mN = start;
+  protected A176772(final int offset) {
+    super(offset);
+    mN = offset - 1;
   }
 
   /** Default constructor. */
   public A176772() {
-    this(0);
+    this(1);
   }
 
   protected Z base() {

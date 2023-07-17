@@ -15,14 +15,14 @@ public class A054681 extends AbstractSequence {
   private int mN = -1;
   private final long mGap;
 
-  protected A054681(final int gap) {
-    super(1);
+  protected A054681(final int offset, final int gap) {
+    super(offset);
     mGap = gap;
   }
 
   /** Construct the sequence. */
   public A054681() {
-    this(10);
+    this(1, 10);
   }
 
   private int cnt(long p) {

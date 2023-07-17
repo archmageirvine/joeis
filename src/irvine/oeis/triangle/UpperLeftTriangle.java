@@ -11,6 +11,7 @@ import irvine.math.z.Z;
  */
 public class UpperLeftTriangle extends Triangle {
 
+  private static final int DEFOFF = 0;
   protected int mRow; // current row index n
   protected int mCol; // current column index k
   protected int mRow0; // first row index
@@ -21,15 +22,15 @@ public class UpperLeftTriangle extends Triangle {
    * Empty constructor.
    */
   public UpperLeftTriangle() {
-    this(0, 0, 0, -1);
+    this(DEFOFF, 0, 0, -1);
   }
 
   /**
-   * Constructor with corner index, descending.
-   * @param row0 first row index
+   * Constructor with offset = corner index, descending.
+   * @param offset first index = row0 = col0
    */
-  public UpperLeftTriangle(final int row0) {
-    this(row0 == 0 ? 0 : 1, row0, row0, -1);
+  public UpperLeftTriangle(final int offset) {
+    this(offset, offset, offset, -1);
   }
 
   /**

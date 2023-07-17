@@ -28,7 +28,7 @@ public class WeylGroupSequence extends EulerTransform {
    */
   private static long[] initialTerms(final String groupType, final int d) {
     final char typeCode = groupType.charAt(0);
-    long[] result;
+    final long[] result;
     switch (typeCode) {
       case 'A':
         result = new long[d + 1];

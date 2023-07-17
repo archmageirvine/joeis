@@ -10,6 +10,11 @@ public class A023987 extends A023847 {
 
   private long mN = 0;
 
+  /** Construct the sequence. */
+  protected A023987() {
+    super(1);
+  }
+
   @Override
   public Z next() {
     return Z.valueOf(binomialOmega(5 * ++mN, 3 * mN) - binomialOmega(3 * mN, 2 * mN));

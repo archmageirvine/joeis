@@ -1,13 +1,26 @@
 package irvine.oeis.a026;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A026780 Triangular array T read by rows: T(n,0)=T(n,n)=1 for n &gt;= 0; for n &gt;= 2 and 1 &lt;= k &lt;= n-1, T(n,k) = T(n-1,k-1) + T(n-2,k-1) + T(n-1,k) if 1 &lt;= k &lt;= floor(n/2), else T(n,k) = T(n-1,k-1) + T(n-1,k).
  * @author Sean A. Irvine
  */
 public class A026780 extends MemoryFunction2Sequence<Long, Z> {
+
+  /** Construct the sequence. */
+  public A026780() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A026780(final int offset) {
+    super(offset);
+  }
 
   private long mN = -1;
   private long mM = 0;

@@ -10,6 +10,14 @@ import irvine.oeis.AbstractSequence;
  */
 public class A001415 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A001415(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A001415() {
     super(0);
@@ -33,10 +41,10 @@ public class A001415 extends AbstractSequence {
   }
 
   /* Perform  job(a, b, ...)  on each folding of  p[0] x ... x p[p.length - 1]  map,
-    with sentinel  p[d+1] = -1 ; 
+    with sentinel  p[d+1] = -1 ;
     where  a[l], b[l]  denote leaf folded above, below leaf  l ;
-    leaves numbered  1 <= l <= n ,  l = 0  marking outside world; 
-    enumerate general, normal foldings when  flag = 0, 1  resp; 
+    leaves numbered  1 <= l <= n ,  l = 0  marking outside world;
+    enumerate general, normal foldings when  flag = 0, 1  resp;
     job()  must avoid modifying array parameters;  A,B  vary given  p ;
     res/mod specify which set of folding to compute in this run.  To get the
     total you need to set res = 0 .. mod-1 in turn.  You can use mod == 0, to

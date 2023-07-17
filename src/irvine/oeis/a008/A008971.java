@@ -1,13 +1,26 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A008971 Triangle read by rows: T(n,k) is the number of permutations of [n] with k increasing runs of length at least 2.
  * @author Sean A. Irvine
  */
 public class A008971 extends MemoryFunction2Sequence<Integer, Z> {
+
+  /** Construct the sequence. */
+  public A008971() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A008971(final int offset) {
+    super(offset);
+  }
 
   private int mRow = -1;
   private int mPos = 2;
@@ -35,5 +48,4 @@ public class A008971 extends MemoryFunction2Sequence<Integer, Z> {
   }
 
 }
-
 

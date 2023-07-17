@@ -18,8 +18,8 @@ public class A030378 extends AbstractSequence {
   private long mLen = 1;
   private final Sequence mUnder;
 
-  protected A030378(final Sequence under, final long start) {
-    super(1);
+  protected A030378(final Sequence under, final int start) {
+    super(start + 1);
     mUnder = under;
     mM = start;
   }

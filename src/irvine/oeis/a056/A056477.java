@@ -16,6 +16,14 @@ import irvine.oeis.a124.A124302;
  */
 public class A056477 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A056477(final int offset) {
+    super(offset);
+  }
+
   protected int mN;
   protected MemorySequence mSeq;
 

@@ -12,8 +12,8 @@ public class A031941 extends AbstractSequence {
   private final long mBase;
   private long mN;
 
-  protected A031941(final long base, final long start) {
-    super(1);
+  protected A031941(final long base, final int start) {
+    super(start);
     mBase = base;
     mN = start - 1;
   }

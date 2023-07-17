@@ -13,6 +13,14 @@ import irvine.oeis.transform.BellTransform;
  */
 public class A265607 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A265607(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A265607() {
     super(0);

@@ -24,6 +24,14 @@ import irvine.oeis.a002.A002712;
  */
 public class A342053 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A342053(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A342053() {
     super(1);
@@ -97,7 +105,7 @@ public class A342053 extends AbstractSequence {
 // // See 6.3 in Brown.
 // // A262586: 2-connected
 // OrientedTriangs(n,m)={(D(n,m) + if(m%2==1, E2(n\2, n%2, (m+1)/2)) + if(gcd(m,n)%3==0, 2*E3(n/3, m/3)) + sumdiv(gcd(m+3,n-1), d, if(d>2, eulerphi(d)*Er((n-1)/d, (m+3)/d-1))))/(m+3)}
-// 
+//
 // // Helper to make matrix from bivariate g.f.
 // BgfToArray(gf, N, M)={matrix(N+1, M+1, n, m, polcoeff(polcoeff(gf, n-1, x), m-1, y))}
 

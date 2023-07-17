@@ -22,7 +22,7 @@ public class A143491 extends Triangle {
    * @param stir unsigned <code>stir</code>-stirling numbers
    */
   public A143491(final int stir) {
-    setOffset(2);
+    super(stir);
     hasRAM(false);
     mStir = stir;
   }
@@ -34,3 +34,4 @@ public class A143491 extends Triangle {
     return n == mStir ? Z.ONE : get(n - 1 - mStir, k - 1 - mStir).add(get(n - 1 - mStir, k - mStir).multiply(n - 1));
   }
 }
+

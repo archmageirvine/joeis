@@ -13,8 +13,22 @@ import irvine.oeis.MemorySequence;
  */
 public class A063884 extends MemorySequence {
 
+  /** Construct the sequence. */
+  public A063884() {
+    this(1);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A063884(final int offset) {
+    super(offset);
+  }
+
   protected final TreeSet<Z> mA = new TreeSet<>();
   protected final HashSet<Z> mUsed = new HashSet<>();
+
   {
     mA.add(Z.TWO);
     mA.add(Z.THREE);

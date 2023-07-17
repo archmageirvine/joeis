@@ -11,6 +11,14 @@ import irvine.util.array.LongDynamicArray;
  */
 public class A007764 extends AbstractSequence {
 
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A007764(final int offset) {
+    super(offset);
+  }
+
   /** Construct the sequence. */
   public A007764() {
     super(1);

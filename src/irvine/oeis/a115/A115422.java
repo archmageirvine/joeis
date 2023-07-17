@@ -16,7 +16,7 @@ public class A115422 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A115422() {
-    this(1, 1, 1, 20, 21);
+    this(1, 1, 20, 21, 1);
   }
 
   /**

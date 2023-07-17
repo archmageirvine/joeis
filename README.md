@@ -9,6 +9,9 @@ sequences beyond the Maple, Mathematica, and Pari programs directly
 associated with many entries.  Currently over 150,000 sequences are
 implemented.
 
+If you plan to simply run some existing sequences, then the best
+option is to download the latest [release](releases).
+
 Installation
 ------------
 
@@ -104,13 +107,14 @@ project.
 Testing
 -------
 
-The individual sequence implementations are tested again the data
-lines of the corresponding OEIS entries. In order to run the tests,
-the ```stripped.gz``` must first be retrieved from the OEIS server and
-layed out in a way the tests expect.  This is accomplished by
-```test/irvine/oeis/Makefile```.  In addition to tests for individual
-sequences, the test suite also covers functionality of shared library
-code.
+The tests can be run using ant and the `all-tests` target of
+`build.xml`.  The individual sequence implementations are tested again
+the data lines of the corresponding OEIS entries. In order to run the
+tests, the ```stripped.gz``` is retrieved from the OEIS server and
+layed out in a way the tests expect.  In addition to testing
+individual sequences, the test suite also covers functionality of
+shared library code.  Running all the tests can take more than an
+hour.
 
 Other Acknowledgements
 ----------------------

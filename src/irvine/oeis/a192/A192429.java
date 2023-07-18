@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A192429 Coefficient of x in the reduction by x^2-&gt;x+1 of the polynomial p(n,x) defined below in Comments.
+ * A192429 Coefficient of x in the reduction by x^2 -&gt; x+1 of the polynomial p(n,x) defined below in Comments.
  * @author Georg Fischer
  */
 public class A192429 extends GeneratingFunctionSequence implements Conjectural {

@@ -4,7 +4,7 @@ package irvine.oeis.a039;
 import irvine.oeis.a052.A052179;
 
 /**
- * A039598 Triangle formed from odd-numbered columns of triangle of expansions of powers of x in terms of Chebyshev polynomials U_n(x). Sometimes called Catalan&apos;s triangle.
+ * A039598 Triangle formed from odd-numbered columns of triangle of expansions of powers of x in terms of Chebyshev polynomials U_n(x). Sometimes called Catalan's triangle.
  * @author Georg Fischer
  */
 public class A039598 extends A052179 {

@@ -5,7 +5,7 @@ package irvine.oeis.a084;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A084074 Numbers n such that 11*13^n + 2 is prime.
+ * A084074 Numbers k such that 11*13^k + 2 is prime.
  * @author Georg Fischer
  */
 public class A084074 extends PowerFactorPrimeSequence {

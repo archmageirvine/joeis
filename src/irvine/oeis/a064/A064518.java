@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A064518 For an integer n with prime factorization p_1*p_2*p_3* ... *p_m let n* =(p_1+1)*(p_2+1)*(p_3+1)* ... *(p_m+1); sequence gives n* such that n* is divisible by n.
+ * A064518 For an integer n with prime factorization p_1*p_2*p_3* ... *p_m let n* = (p_1+1)*(p_2+1)*(p_3+1)* ... *(p_m+1); sequence gives n* such that n* is divisible by n, ordered by increasing value of n.
  * @author Sean A. Irvine
  */
 public class A064518 extends Sequence1 {

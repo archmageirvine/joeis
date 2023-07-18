@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000073;
 
 /**
- * A274518 Numbers n such that n^2 divides A000073(n).
+ * A274518 Numbers k such that k^2 divides A000073(k).
  * @author Georg Fischer
  */
 public class A274518 extends Sequence1 {

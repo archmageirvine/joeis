@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.math.z.Z;
 
 /**
- * A064552.
+ * A064557 a(n) = # { p | A064553(k) = p prime and k &lt;= n}.
  * @author Sean A. Irvine
  */
 public class A064557 extends A064553 {

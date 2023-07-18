@@ -4,7 +4,7 @@ package irvine.oeis.a051;
 import irvine.oeis.a098.A098941;
 
 /**
- * A051382 Numbers k whose base 3 expansion matches (0|1)*(02)?(0|1)* (no more than one &quot;02&quot; allowed in midst of 0&apos;s and 1&apos;s).
+ * A051382 Numbers k whose base 3 expansion matches (0|1)*(02)?(0|1)* (no more than one "02" allowed in midst of 0's and 1's).
  * @author Georg Fischer
  */
 public class A051382 extends A098941 {

@@ -5,7 +5,7 @@ package irvine.oeis.a120;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A120491 Numbers n such that 22*3^n + 1 is prime.
+ * A120491 Numbers k such that 22*3^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A120491 extends PowerFactorPrimeSequence {

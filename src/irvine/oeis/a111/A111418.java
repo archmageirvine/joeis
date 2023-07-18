@@ -4,7 +4,7 @@ package irvine.oeis.a111;
 import irvine.oeis.a052.A052179;
 
 /**
- * A111418 Right-hand side of odd-numbered rows of Pascal&apos;s triangle.
+ * A111418 Right-hand side of odd-numbered rows of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A111418 extends A052179 {

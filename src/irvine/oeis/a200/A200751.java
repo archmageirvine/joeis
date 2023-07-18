@@ -7,7 +7,7 @@ import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A200751 Expansion of (1 - x) * (1 - x^2)^2 * (1 - x^3)^4 * ... in powers of x.
+ * A200751 Expansion of Product_{k&gt;0} (1 - x^k)^(2^(k-1)) in powers of x.
  * @author Georg Fischer
  */
 public class A200751 extends EulerTransform {

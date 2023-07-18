@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a118.A118738;
 
 /**
- * A218451 10^n minus its binary weight.
+ * A218451 a(n) = 10^n minus its binary weight.
  * @author Georg Fischer
  */
 public class A218451 extends Sequence0 {

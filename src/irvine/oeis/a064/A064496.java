@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007519;
 
 /**
- * A064496 Values of n such that 4j = np+1 where p = 8x+1, x integer, p prime and j mod 3 = 0.
+ * A064496 a(n) is the least k such that k * A007519(n) + 1 = 0 (mod 12).
  * @author Sean A. Irvine
  */
 public class A064496 extends A007519 {

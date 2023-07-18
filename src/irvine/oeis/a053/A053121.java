@@ -4,7 +4,7 @@ package irvine.oeis.a053;
 import irvine.oeis.a052.A052179;
 
 /**
- * A053121 Catalan triangle (with 0&apos;s) read by rows.
+ * A053121 Catalan triangle (with 0's) read by rows.
  * @author Georg Fischer
  */
 public class A053121 extends A052179 {

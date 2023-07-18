@@ -5,7 +5,7 @@ package irvine.oeis.a193;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A193177 Numbers n such that 2*17^n - 1 is prime.
+ * A193177 Numbers k such that 2*17^k - 1 is prime.
  * @author Georg Fischer
  */
 public class A193177 extends PowerFactorPrimeSequence {

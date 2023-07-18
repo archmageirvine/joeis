@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A109692 Triangle of coefficients in expansion of (1+x)(1+3x)(1+5x)(1+7x)...(1+(2n-1)x). 
+ * A109692 Triangle of coefficients in expansion of (1+x)*(1+3x)*(1+5x)*(1+7x)*...*(1+(2n-1)x).
  * @author Georg Fischer
  */
 public class A109692 extends Triangle {

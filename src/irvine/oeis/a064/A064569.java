@@ -6,10 +6,10 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005132;
 
 /**
- * A064568 n-th term in Recam\u00e1n's sequence A005132 is divisible by n.
+ * A064569 Quotients A005132(k)/k for k=A064568(n).
  * @author Sean A. Irvine
  */
-public class A064568 extends Sequence1 {
+public class A064569 extends Sequence1 {
 
   private final Sequence mA = new A005132().skip();
   private long mN = 0;
@@ -17,8 +17,9 @@ public class A064568 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (mA.next().mod(++mN) == 0) {
-        return Z.valueOf(mN);
+      final Z t = mA.next();
+      if (t.mod(++mN) == 0) {
+        return t.divide(mN);
       }
     }
   }

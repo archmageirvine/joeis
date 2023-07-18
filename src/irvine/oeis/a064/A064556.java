@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A064552.
+ * A064556 Ramanujan's tau function (or tau numbers (A000594)) for 10^n.
  * @author Sean A. Irvine
  */
 public class A064556 extends LinearRecurrence {

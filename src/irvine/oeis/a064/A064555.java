@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A064552.
+ * A064555 a(n) = max { k | A064553(k) = n }.
  * @author Sean A. Irvine
  */
 public class A064555 extends A064553 implements Conjectural {

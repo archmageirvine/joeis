@@ -17,6 +17,19 @@ import irvine.oeis.a052.A052107;
  */
 public class A318795 extends A052107 {
 
+  /** Construct the sequence. */
+  public A318795() {
+    this(1);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A318795(final int offset) {
+    super(offset);
+  }
+
   // After Andrew Howroyd
 
   private static final PolynomialRingField<Q> RING_Y = new PolynomialRingField<>("y", Rationals.SINGLETON);

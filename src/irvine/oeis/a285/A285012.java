@@ -12,6 +12,19 @@ public class A285012 extends A285037 {
   private int mN = 0;
   private int mM = 1;
 
+  /** Construct the sequence. */
+  public A285012() {
+    this(1);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A285012(final int offset) {
+    super(offset);
+  }
+
   protected Z t(final Integer n, final Integer k) {
     return Integers.SINGLETON.sumdiv(n, d -> get(d, k));
   }

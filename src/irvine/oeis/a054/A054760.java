@@ -13,8 +13,15 @@ import irvine.util.string.StringUtils;
  */
 public class A054760 extends A198300 implements GraphProcessor {
 
-  private static class FoundItException extends RuntimeException { }
+  private static class FoundItException extends RuntimeException {
+  }
+
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+
+  /** Construct the sequence. */
+  protected A054760() {
+    super(0);
+  }
 
   @Override
   public void process(final Graph graph) {

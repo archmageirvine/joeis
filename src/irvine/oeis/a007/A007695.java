@@ -2,13 +2,26 @@ package irvine.oeis.a007;
 
 import irvine.math.MemoryFunction3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A007695 Cardinalities of Sperner families on 1,...,n.
  * @author Sean A. Irvine
  */
-public class A007695 extends Sequence0 {
+public class A007695 extends AbstractSequence {
+
+  /** Construct the sequence. */
+  public A007695() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A007695(final int offset) {
+    super(offset);
+  }
 
   private final MemoryFunction3<Long, Z> mB = new MemoryFunction3<>() {
     // E function

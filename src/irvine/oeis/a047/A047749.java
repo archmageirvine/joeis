@@ -12,6 +12,19 @@ public class A047749 extends A001764 {
 
   private long mN = -1;
 
+  /** Construct the sequence. */
+  public A047749() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A047749(final int offset) {
+    super(offset);
+  }
+
   protected Z a47749(final long n) {
     if ((n & 1) == 1) {
       final long x = (n - 1) / 2;

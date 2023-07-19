@@ -11,7 +11,9 @@ public class A056484 extends A056478 {
 
   private final Sequence mSeq = new A056479();
 
-  {
+  /** Construct the sequence. */
+  protected A056484() {
+    super(1);
     next();
   }
 
@@ -20,3 +22,4 @@ public class A056484 extends A056478 {
     return mSeq.next().subtract(super.next());
   }
 }
+

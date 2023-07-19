@@ -9,9 +9,15 @@ import irvine.oeis.Sequence;
  */
 public class A047765 extends A047749 {
 
+  /** Construct the sequence. */
+  public A047765() {
+    super(1);
+  }
+
   {
     super.next();
   }
+
   private final Sequence mA = new A047764();
   private boolean mOdd = false;
 

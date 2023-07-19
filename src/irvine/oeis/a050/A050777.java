@@ -15,6 +15,11 @@ public class A050777 extends A050703 {
   private int mM = 0;
   private long mN = 1;
 
+  /** Construct the sequence. */
+  protected A050777() {
+    super(0);
+  }
+
   @Override
   public Z next() {
     ++mM;

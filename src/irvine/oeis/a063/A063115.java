@@ -12,14 +12,6 @@ import irvine.util.array.DynamicIntArray;
  */
 public class A063115 extends AbstractSequence {
 
-  /**
-   * Constructor with offset.
-   * @param offset first index
-   */
-  protected A063115(final int offset) {
-    super(offset);
-  }
-
   protected final DynamicIntArray mSmallest = new DynamicIntArray();
   protected int mN = -1;
   protected Z mA = Z.ONE;
@@ -29,16 +21,17 @@ public class A063115 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A063115() {
-    this(2, 1);
+    this(0, 2, 1);
   }
 
   /**
    * Generic constructor with parameters
+   * @param offset first index
    * @param parm1 base
    * @param parm2 desired digits
    */
-  public A063115(final int parm1, final int parm2) {
-    super(0);
+  public A063115(final int offset, final int parm1, final int parm2) {
+    super(offset);
     mParm1 = parm1;
     mParm2 = parm2;
   }

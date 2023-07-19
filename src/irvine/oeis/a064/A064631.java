@@ -13,7 +13,7 @@ public class A064631 extends Sequence1 {
 
   @Override
   public Z next() {
-    Z t = Z.ONE.shiftLeft(2L * ++mN);
+    final Z t = Z.ONE.shiftLeft(2L * ++mN);
     final Z a = Z.THREE.pow(mN);
     final Z[] qr3 = t.divideAndRemainder(a);
     final Z[] qr2 = qr3[1].divideAndRemainder(Z.ONE.shiftLeft(mN));

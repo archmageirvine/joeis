@@ -10,13 +10,21 @@ import irvine.util.Permutation;
  */
 public class A133687 extends A227061 {
 
-  /** Construct the sequence. */
-  public A133687() {
-    super(0);
-  }
-
   private int mN = -1;
   private int mM = -1;
+
+  /** Construct the sequence. */
+  public A133687() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A133687(final int offset) {
+    super(offset);
+  }
 
   private static int[] transpose(final int[] m) {
     final int[] r = new int[m.length];

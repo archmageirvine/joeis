@@ -14,9 +14,11 @@ public class A052434 extends A000720 {
   // This is slow ... and heuristic ...
 
   private static final long HEURISTIC_TERMS = 10000;
-
   private long mN = 1;
-  {
+
+  /** Construct the sequence. */
+  protected A052434() {
+    super(2);
     super.next();
   }
 

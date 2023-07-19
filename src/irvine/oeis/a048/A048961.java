@@ -13,6 +13,11 @@ public class A048961 extends A001203 {
   private static final Z UPPER = Z.valueOf(100000);
   private long mM = -1;
 
+  /** Construct the sequence. */
+  protected A048961() {
+    super(1);
+  }
+
   @Override
   public Z next() {
     while (true) {

@@ -12,6 +12,11 @@ public class A002575 extends A125790 implements Conjectural {
 
   private long mN = -1;
 
+  /** Construct the sequence. */
+  public A002575() {
+    super(2);
+  }
+
   @Override
   public Z next() {
     return get(++mN, 2L);

@@ -10,6 +10,11 @@ import irvine.util.string.StringUtils;
  */
 public class A061490 extends A003285 {
 
+  /** Construct the sequence. */
+  public A061490() {
+    super(0);
+  }
+
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = -1;
 

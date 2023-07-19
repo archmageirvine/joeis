@@ -11,7 +11,9 @@ public class A056483 extends A056477 {
 
   private final Sequence mSeq = new A056478();
 
-  {
+  /** Construct the sequence. */
+  protected A056483() {
+    super(1);
     next();
   }
 

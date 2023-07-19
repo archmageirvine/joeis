@@ -2,15 +2,29 @@ package irvine.oeis.a011;
 
 import irvine.math.MemoryFunction3;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A011804 M-sequences from multicomplexes on at most 7 variables with no monomial of degree more than n-1.
  * @author Sean A. Irvine
  */
-public class A011804 extends Sequence0 {
+public class A011804 extends AbstractSequence {
 
   private long mN = start();
+
+  /** Construct the sequence. */
+  public A011804() {
+    this(0);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A011804(final int offset) {
+    super(offset);
+  }
+
   private final MemoryFunction3<Long, Z> mB = new MemoryFunction3<>() {
     // L^p(n,k)
     @Override

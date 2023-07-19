@@ -1,8 +1,8 @@
 package irvine.oeis.a003;
 
-import irvine.oeis.Conjectural;
 import irvine.math.group.QuadraticFieldUtils;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 
 /**
  * A003652 Class number of real quadratic field with discriminant A003658(n), n &gt;= 2.
@@ -12,7 +12,9 @@ public class A003652 extends A003658 implements Conjectural {
 
   // contains heuristics.
 
-  {
+  /** Construct the sequence. */
+  protected A003652() {
+    super(2);
     super.next(); // skip 1
   }
 

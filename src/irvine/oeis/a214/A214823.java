@@ -19,12 +19,16 @@ public class A214823 extends A006387 {
   /* Stack space for minPos */
   private final int[] mStk = new int[EMAXP1];
 
+  {
+    setOffset(1);
+  }
+
   protected void minPos(final int np) {
     mStk[0] = 0;
     int ist = 0;
     mWall[2 * np] = 0;
     for (int i = 2 * np; i > 0; i--) {
-      if (mP[i] < 0)  {
+      if (mP[i] < 0) {
         // right parenthesis
         mStk[++ist] = mPMate[i]; // push
       } else {

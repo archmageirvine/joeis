@@ -11,6 +11,19 @@ public class A027157 extends A027144 {
   private long mN = -1;
   private long mM = 0;
 
+  /** Construct the sequence. */
+  public A027157() {
+    this(1);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  protected A027157(final int offset) {
+    super(offset);
+  }
+
   protected Z t(final long n, final long m) {
     return get(n + 1, m + 1).divide2();
   }

@@ -3,10 +3,10 @@ package irvine.oeis.a064;
 import irvine.math.z.Z;
 
 /**
- * A064605 Partial sum of Sigma_2(n) is divisible by n, where Sigma_2(n)=A001157(n).
+ * A064607 Partial sum of Sigma_4(n) is divisible by n, where Sigma_4(n)=A001159(n).
  * @author Sean A. Irvine
  */
-public class A064605 extends A064602 {
+public class A064607 extends A064604 {
 
   private long mN = 0;
 

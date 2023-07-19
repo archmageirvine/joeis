@@ -3,10 +3,10 @@ package irvine.oeis.a064;
 import irvine.math.z.Z;
 
 /**
- * A064605 Partial sum of Sigma_2(n) is divisible by n, where Sigma_2(n)=A001157(n).
+ * A064610 Places k where A064608(k) (partial sums of unitary tau) is divisible by k.
  * @author Sean A. Irvine
  */
-public class A064605 extends A064602 {
+public class A064610 extends A064608 {
 
   private long mN = 0;
 

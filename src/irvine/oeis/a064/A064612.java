@@ -1,14 +1,19 @@
 package irvine.oeis.a064;
 
 import irvine.math.z.Z;
+import irvine.oeis.a022.A022559;
 
 /**
- * A064605 Partial sum of Sigma_2(n) is divisible by n, where Sigma_2(n)=A001157(n).
+ * A064612 Partial sum of bigomega is divisible by n, where bigomega(n)=A001222(n) and summatory-bigomega(n)=A022559(n).
  * @author Sean A. Irvine
  */
-public class A064605 extends A064602 {
+public class A064612 extends A022559 {
 
   private long mN = 0;
+  {
+    super.next();
+    setOffset(1);
+  }
 
   @Override
   public Z next() {

@@ -7,10 +7,14 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A064553.
+ * A064600 a(n) indicates the position of 5 after n iterations of A064553.
  * @author Sean A. Irvine
  */
 public class A064600 extends Sequence0 {
+
+  // WARNING: At some point the DynamicIntArray here could overflow either
+  // in range of index when looking for 5 or because an entry exceeds 31
+  // bits.
 
   private final Fast mPrime = new Fast();
   private MemorySequence mA = null;

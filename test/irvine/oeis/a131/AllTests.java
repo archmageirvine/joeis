@@ -1,6 +1,5 @@
 package irvine.oeis.a131;
 
-import irvine.oeis.a145.A145418Test;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 

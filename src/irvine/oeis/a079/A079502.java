@@ -17,11 +17,9 @@ import irvine.oeis.memory.MemoryFunction1Sequence;
 public class A079502 extends MemoryFunction1Sequence<Z[]> {
 
   /**
-   * A sequence that allows looking at the next item without actually
-   * stepping the sequence.
-   * @author Sean A. Irvine
+   * A sequence that allows looking at the next item without actually stepping the sequence.
    */
-  private static class LookaheadSequence extends AbstractSequence {
+  private static final class LookaheadSequence extends AbstractSequence {
 
     private final Sequence mSeq;
     private Z mNext;

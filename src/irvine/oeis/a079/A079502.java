@@ -3,8 +3,9 @@ package irvine.oeis.a079;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.DifferenceSequence;
-import irvine.oeis.LookaheadSequence;
+import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a050.A050447;
 import irvine.oeis.memory.MemoryFunction1Sequence;
@@ -14,6 +15,42 @@ import irvine.oeis.memory.MemoryFunction1Sequence;
  * @author Sean A. Irvine
  */
 public class A079502 extends MemoryFunction1Sequence<Z[]> {
+
+  /**
+   * A sequence that allows looking at the next item without actually
+   * stepping the sequence.
+   * @author Sean A. Irvine
+   */
+  private static class LookaheadSequence extends AbstractSequence {
+
+    private final Sequence mSeq;
+    private Z mNext;
+
+    /**
+     * Create the lookahead sequence.
+     * @param seq underlying sequence
+     */
+    public LookaheadSequence(final Sequence seq) {
+      super(seq.getOffset());
+      mSeq = seq;
+      mNext = seq.next();
+    }
+
+    /**
+     * Retrieve the next value of the sequence, but do not step the sequence.
+     * @return value of the sequence
+     */
+    public Z peek() {
+      return mNext;
+    }
+
+    @Override
+    public Z next() {
+      final Z t = mNext;
+      mNext = mSeq.next();
+      return t;
+    }
+  }
 
   /** Construct the sequence. */
   public A079502() {
@@ -83,4 +120,3 @@ public class A079502 extends MemoryFunction1Sequence<Z[]> {
     return u(mN, mR);
   }
 }
-

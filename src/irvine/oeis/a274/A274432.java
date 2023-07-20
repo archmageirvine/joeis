@@ -1,6 +1,6 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.DistinctMultiplicativeClosureSequence;
+import irvine.oeis.closure.DistinctMultiplicativeClosureSequence;
 import irvine.oeis.a000.A000213;
 
 /**

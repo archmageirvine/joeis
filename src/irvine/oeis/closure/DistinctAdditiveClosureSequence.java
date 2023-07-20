@@ -1,6 +1,7 @@
-package irvine.oeis;
+package irvine.oeis.closure;
 
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * Additive closure formed by sums of distinct elements of a strictly increasing sequence.

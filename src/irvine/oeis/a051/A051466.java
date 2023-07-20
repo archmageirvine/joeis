@@ -2,7 +2,7 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
-import irvine.oeis.MultiplicativeClosureSequence;
+import irvine.oeis.closure.MultiplicativeClosureSequence;
 import irvine.oeis.a002.A002110;
 import irvine.oeis.a025.A025487;
 

@@ -1,8 +1,10 @@
-package irvine.oeis;
+package irvine.oeis.closure;
 
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence;
 import irvine.oeis.memory.MemorySequence;
 
 /**

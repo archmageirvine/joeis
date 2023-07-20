@@ -1,7 +1,7 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.MultiplicativeClosureSequence;
+import irvine.oeis.closure.MultiplicativeClosureSequence;
 import irvine.oeis.a020.A020449;
 
 /**

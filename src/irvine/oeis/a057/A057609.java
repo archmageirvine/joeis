@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.PowerClosureSequence;
+import irvine.oeis.closure.PowerClosureSequence;
 import irvine.oeis.SetDifferenceSequence;
 import irvine.oeis.a000.A000959;
 import irvine.oeis.a031.A031157;

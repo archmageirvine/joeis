@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.DistinctAdditiveClosureSequence;
+import irvine.oeis.closure.DistinctAdditiveClosureSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000142;

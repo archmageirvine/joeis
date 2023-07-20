@@ -2,7 +2,7 @@ package irvine.oeis.a062;
 
 import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
-import irvine.oeis.MultiplicativeClosureSequence;
+import irvine.oeis.closure.MultiplicativeClosureSequence;
 
 /**
  * A062554 Products of numbers of faces of Platonic solids, i.e., of {4,6,8,12,20}.

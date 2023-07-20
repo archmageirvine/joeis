@@ -1,9 +1,11 @@
-package irvine.oeis;
+package irvine.oeis.closure;
 
 import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence;
 import irvine.oeis.memory.MemorySequence;
 
 /**

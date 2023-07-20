@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.HomePrimeSequence;
+import irvine.oeis.prime.HomePrimeSequence;
 
 /**
  * A006919 Write down all the prime divisors in previous term.

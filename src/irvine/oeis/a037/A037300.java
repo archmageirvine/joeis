@@ -2,7 +2,7 @@ package irvine.oeis.a037;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.HomePrimeSequence;
+import irvine.oeis.prime.HomePrimeSequence;
 import irvine.oeis.a002.A002808;
 
 /**

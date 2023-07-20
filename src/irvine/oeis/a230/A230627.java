@@ -2,7 +2,7 @@ package irvine.oeis.a230;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.ConcatenatedPrimeFactorizationSequence;
+import irvine.oeis.prime.ConcatenatedPrimeFactorizationSequence;
 
 /**
  * A230627 Prime reached in A230626, or -1 if no prime is reached.

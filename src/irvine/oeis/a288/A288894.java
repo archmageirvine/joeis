@@ -1,6 +1,6 @@
 package irvine.oeis.a288;
 
-import irvine.oeis.ConcatenatedPrimeFactorizationSequence;
+import irvine.oeis.prime.ConcatenatedPrimeFactorizationSequence;
 
 /**
  * A288894 Trajectory of 3932 under the map x -&gt; A230625(x).

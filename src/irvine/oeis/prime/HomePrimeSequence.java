@@ -1,8 +1,9 @@
-package irvine.oeis;
+package irvine.oeis.prime;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 
 /**
  * Generate home prime sequences.

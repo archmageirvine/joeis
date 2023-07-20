@@ -6,7 +6,7 @@ import java.util.List;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.HomePrimeSequence;
+import irvine.oeis.prime.HomePrimeSequence;
 import irvine.oeis.Sequence0;
 
 /**

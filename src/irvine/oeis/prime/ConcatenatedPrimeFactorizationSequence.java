@@ -1,10 +1,11 @@
-package irvine.oeis;
+package irvine.oeis.prime;
 
 import java.util.HashSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 
 /**
  * A sequence arising in the concatenation of the prime factors of a number.

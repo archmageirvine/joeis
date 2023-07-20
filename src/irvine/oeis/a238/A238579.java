@@ -1,6 +1,6 @@
 package irvine.oeis.a238;
 
-import irvine.oeis.HomePrimeSequence;
+import irvine.oeis.prime.HomePrimeSequence;
 
 /**
  * A238579 Home prime sequence (see A037274) starting at 146.

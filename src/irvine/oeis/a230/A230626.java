@@ -1,7 +1,7 @@
 package irvine.oeis.a230;
 
 import irvine.math.z.Z;
-import irvine.oeis.ConcatenatedPrimeFactorizationSequence;
+import irvine.oeis.prime.ConcatenatedPrimeFactorizationSequence;
 import irvine.oeis.Sequence2;
 
 /**

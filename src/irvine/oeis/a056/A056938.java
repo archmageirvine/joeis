@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.oeis.HomePrimeSequence;
+import irvine.oeis.prime.HomePrimeSequence;
 
 /**
  * A056938 Concatenate all the prime divisors in previous term (with repetition), starting at 49.

@@ -14,7 +14,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(EuclidMullinSequenceTest.class);
     suite.addTestSuite(FiniteSequenceTest.class);
     suite.addTestSuite(HolonomicRecurrenceTest.class);
-    suite.addTestSuite(NegativePositiveSequenceTest.class);
     suite.addTestSuite(WalkCubeSequenceTest.class);
     suite.addTest(SequenceTests.suite());
     suite.addTest(irvine.oeis.a001.AllTests.suite());
@@ -34,6 +33,7 @@ public class AllTests extends TestSuite {
     suite.addTest(irvine.oeis.a061.AllTests.suite());
     suite.addTest(irvine.oeis.a114.AllTests.suite());
     suite.addTest(irvine.oeis.a115.AllTests.suite());
+    suite.addTest(irvine.oeis.a131.AllTests.suite());
     suite.addTest(irvine.oeis.a145.AllTests.suite());
     suite.addTest(irvine.oeis.a162.AllTests.suite());
     suite.addTest(irvine.oeis.a182.AllTests.suite());

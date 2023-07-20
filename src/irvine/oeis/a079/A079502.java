@@ -30,7 +30,7 @@ public class A079502 extends MemoryFunction1Sequence<Z[]> {
      * Create the lookahead sequence.
      * @param seq underlying sequence
      */
-    public LookaheadSequence(final Sequence seq) {
+    private LookaheadSequence(final Sequence seq) {
       super(seq.getOffset());
       mSeq = seq;
       mNext = seq.next();

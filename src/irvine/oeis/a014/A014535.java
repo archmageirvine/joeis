@@ -2,7 +2,7 @@ package irvine.oeis.a014;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A014535 Number of B-trees of order 3 with n leaves.

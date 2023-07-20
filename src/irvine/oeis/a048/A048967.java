@@ -1,7 +1,7 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A048967 Number of even entries in row n of Pascal's triangle (A007318).

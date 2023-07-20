@@ -2,7 +2,7 @@ package irvine.oeis.a120;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A120134 a(n) = 4 + floor(Sum_{k=1..n-1} a(k) / 2).

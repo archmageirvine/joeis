@@ -1,7 +1,7 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A054390 Number of ways of writing n as a sum of powers of 3, each power being used at most three times.

@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A002517 Earliest sequence with a(a(n))=3n.

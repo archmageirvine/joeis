@@ -2,7 +2,7 @@ package irvine.oeis.a013;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A013587 Number of rational plane curves of degree d passing through 3d-1 general points.

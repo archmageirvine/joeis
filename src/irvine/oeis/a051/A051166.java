@@ -2,7 +2,7 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A051166 Sequence is defined by property that binomial transform of (a0,a1,a2,a3,...) = (a0,a0,a0,a1,a1,a1,a2,a2,a2,a3,a3,a3,...).

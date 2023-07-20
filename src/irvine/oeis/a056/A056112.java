@@ -1,7 +1,7 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A056112 a(1) = 1; a(m+1) = sum_{k=1 to m} [max(m, a(k))].

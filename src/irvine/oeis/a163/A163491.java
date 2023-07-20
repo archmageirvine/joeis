@@ -1,7 +1,7 @@
 package irvine.oeis.a163;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A163491 A fractal sequence (if we delete the first occurrence of n we get the sequence itself).

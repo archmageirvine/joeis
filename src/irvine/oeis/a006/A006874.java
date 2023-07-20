@@ -2,7 +2,7 @@ package irvine.oeis.a006;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A006874 Number of mu-atoms of period n on continent of Mandelbrot set.

@@ -2,7 +2,7 @@ package irvine.oeis.a006;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A006689 Number of deterministic, completely-defined, initially-connected finite automata with 2 inputs and n unlabeled states.

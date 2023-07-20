@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A015502 a(1) = 1, a(n) = Sum_{k=1..n-1} (3^k - 1)/2 * a(k).

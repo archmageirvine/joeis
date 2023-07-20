@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A006696 a(n) = min_{k=1..n} (a(k-1) + 2^k*(n + a(n-k))); a(0) = 0.

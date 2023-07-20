@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a002.A002057;
 
 /**

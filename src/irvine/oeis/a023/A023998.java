@@ -2,7 +2,7 @@ package irvine.oeis.a023;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A023998 Number of block permutations on an n-set which are uniform, i.e., corresponding blocks have same size.

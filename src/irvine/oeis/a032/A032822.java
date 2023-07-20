@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A032822 Numbers whose set of base-10 digits is {1,4}.

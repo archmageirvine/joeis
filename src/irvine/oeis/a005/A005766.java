@@ -1,7 +1,7 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A005766 a(n) = cost of minimal multiplication-cost addition chain for n.

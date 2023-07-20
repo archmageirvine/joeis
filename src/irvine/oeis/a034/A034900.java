@@ -2,7 +2,7 @@ package irvine.oeis.a034;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A034900 a(n) is square mod a(i), i &lt; n; a(n) prime; a(1) = 2.

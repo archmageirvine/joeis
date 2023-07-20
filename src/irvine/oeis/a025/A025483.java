@@ -1,7 +1,7 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A025483 a(0) = 0; a(n) = a(n/4)/4 if n = a(n/4) = 0 (mod 4); a(n) = a(n-1)+1 otherwise.

@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A009293 If a, b in sequence, so is a*b+1.

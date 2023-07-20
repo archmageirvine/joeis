@@ -2,7 +2,7 @@ package irvine.oeis.a046;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A046805 If n=sum a_i b_i, (a_i,b_i positive integers) then a(n)=max value of min(all a_i and b_i).

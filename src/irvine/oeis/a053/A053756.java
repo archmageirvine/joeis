@@ -1,7 +1,7 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A053756 a(n)=a(a(n-3))+a(n-a(n-3)) if n&gt;2 otherwise a(n)=1.

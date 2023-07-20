@@ -4,7 +4,7 @@ import irvine.factor.prime.Fast;
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a008.A008578;
 

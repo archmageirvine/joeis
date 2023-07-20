@@ -1,7 +1,7 @@
 package irvine.oeis.a060;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A060583 A ternary code related to the Tower of Hanoi.

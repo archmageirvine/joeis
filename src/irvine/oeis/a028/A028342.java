@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A028342 Expansion of Product_{i&gt;=1} (1 - x^i)^(-1/i); also of exp(Sum_{n&gt;=1} (d(n)*x^n/n)) where d is number of divisors function.

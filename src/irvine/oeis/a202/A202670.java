@@ -2,7 +2,7 @@ package irvine.oeis.a202;
 // manually 2021-10-26
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000290;
 import irvine.oeis.triangle.UpperLeftTriangle;

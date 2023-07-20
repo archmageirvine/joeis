@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A001063 E.g.f. satisfies A'(x) = A(x/(1-x)).

@@ -4,7 +4,7 @@ import java.util.List;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A007548 Shifts 3 places left under exponentiation.

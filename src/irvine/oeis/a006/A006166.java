@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A006166 a(0)=0, a(1)=a(2)=1; for n &gt;= 1, a(3n+2) = 2a(n+1) + a(n), a(3n+1) = a(n+1) + 2a(n), a(3n) = 3a(n).

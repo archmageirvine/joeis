@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A051680 Number of n X n invertible matrices A over GF(3) such that A-I is invertible.

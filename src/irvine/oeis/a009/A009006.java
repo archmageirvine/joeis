@@ -2,7 +2,7 @@ package irvine.oeis.a009;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A009006 Expansion of e.g.f.: 1 + tan(x).

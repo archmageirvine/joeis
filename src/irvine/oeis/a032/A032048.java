@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A032048 Number of dyslexic rooted planar trees with n nodes where any 2 subtrees extending from a node are of different sizes.

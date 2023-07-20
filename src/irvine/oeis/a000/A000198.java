@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A000198 Largest order of automorphism group of a tournament with n nodes.

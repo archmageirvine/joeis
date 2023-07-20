@@ -1,7 +1,7 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A025043 a(n) is not of the form prime + a(k), k &lt; n.

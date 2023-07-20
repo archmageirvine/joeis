@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A004149 Generalized Catalan numbers: a(n+1) = a(n) + Sum_{k=2..n-1} a(k)a(n-1-k).

@@ -2,7 +2,7 @@ package irvine.oeis.a048;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a008.A008578;
 

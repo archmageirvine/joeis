@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A020951 a(2n+1)=a(n), a(2n)=a(n)+a(n-1).

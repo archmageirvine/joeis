@@ -6,7 +6,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A003606 a(n) = number of types of conjugacy classes in GL(n,q) (this is independent of q).

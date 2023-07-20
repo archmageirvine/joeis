@@ -1,7 +1,7 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.ca.Cellular1DAutomaton;
 import irvine.oeis.triangle.UpperLeftTriangle;
 

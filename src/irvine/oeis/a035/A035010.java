@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A035010 Number of prime binary rooted trees with n external nodes.

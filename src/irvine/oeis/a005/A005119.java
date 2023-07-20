@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A005119 Infinitesimal generator of x*(x + 1).

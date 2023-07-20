@@ -1,7 +1,7 @@
 package irvine.oeis.a151;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A151843 a(0)=0; a(1)=0; a(2)=0; for n&gt;=3 if n=2^i + j with 0&lt;=j&lt;2^i then a(n)=a(j) + a(j + 1) except we add 1 if j=2^i-1.

@@ -1,7 +1,7 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A045690 Number of binary words of length n (beginning with 0) whose autocorrelation function is the indicator of a singleton.

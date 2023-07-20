@@ -1,7 +1,7 @@
 package irvine.oeis.a064;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A064657 a(n) = a(|n - a(n-3)|) + a(|n - a(n-4)|) for n &gt; 3, a(n)=1 otherwise.

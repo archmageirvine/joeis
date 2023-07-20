@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A000651 Running time of Takeuchi function.

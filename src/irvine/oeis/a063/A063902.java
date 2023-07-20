@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A063902 a(n+1) = sum{j = 0,...n}[C(2n,2j)a(j)a(n-j)] with a(0) = 1.

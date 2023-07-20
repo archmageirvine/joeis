@@ -1,7 +1,7 @@
 package irvine.oeis.a175;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A175481 a(1)=1. a(n+1) = sum(k=1 to n} b(n,a(k)), where b(n,a(k)) is the largest positive integer that, when written in binary, occurs as a substring in both binary n and binary a(k).

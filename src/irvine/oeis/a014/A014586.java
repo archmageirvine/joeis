@@ -6,7 +6,7 @@ import java.util.Collection;
 import irvine.math.IntegerUtils;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A014586 Nim-Grundy function for Take-a-Square (or Subtract-a-Square) game.

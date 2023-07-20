@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.math.LongUtils;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A050293 Number of 3-fold-free subsets of {1, 2, ..., n}.

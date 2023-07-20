@@ -1,7 +1,7 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A005942 a(2n) = a(n) + a(n+1), a(2n+1) = 2a(n+1), if n &gt;= 2.

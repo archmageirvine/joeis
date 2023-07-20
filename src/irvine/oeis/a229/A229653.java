@@ -2,7 +2,7 @@ package irvine.oeis.a229;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A229653 Trisection a(3n+k) gives k-th differences of a for k=0..2 with a(n)=0 for n&lt;2 and a(2)=1.

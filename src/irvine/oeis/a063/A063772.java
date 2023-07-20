@@ -2,7 +2,7 @@ package irvine.oeis.a063;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A063772 a(k^2 + i) = k + a(i) for k &gt;= 0 and 0 &lt;= i &lt;= k * 2; a(0) = 0.

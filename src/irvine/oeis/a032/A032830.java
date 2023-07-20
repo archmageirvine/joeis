@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A032830 Numbers whose set of base-6 digits is {3,4}.

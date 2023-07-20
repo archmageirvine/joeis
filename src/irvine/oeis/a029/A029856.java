@@ -2,7 +2,7 @@ package irvine.oeis.a029;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A029856 Number of rooted trees with 2-colored leaves.

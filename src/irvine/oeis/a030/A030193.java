@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A030193 Let S = squares; a(0)=0; a(n) = smallest m such that m - a(i) is not in S for any i &lt; n.

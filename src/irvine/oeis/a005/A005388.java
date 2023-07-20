@@ -1,7 +1,7 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A005388 Number of degree-n permutations of order a power of 2.

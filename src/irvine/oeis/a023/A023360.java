@@ -2,7 +2,7 @@ package irvine.oeis.a023;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A023360 Number of compositions of n into prime parts.

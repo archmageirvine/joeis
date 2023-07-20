@@ -1,7 +1,7 @@
 package irvine.oeis.a062;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A062186 a(n) = a(n-1) - a(floor(n/2)), with a(1)=1.

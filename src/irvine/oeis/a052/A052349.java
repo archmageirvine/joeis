@@ -1,7 +1,7 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A052349 Lexicographically earliest sequence of distinct positive integers such that no subsequence sums to a prime.

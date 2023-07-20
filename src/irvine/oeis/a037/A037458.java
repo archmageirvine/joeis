@@ -2,7 +2,7 @@ package irvine.oeis.a037;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A037458 a(1)=1; for n &gt; 1, a(n) = n - a(n-floor(sqrt(n))).

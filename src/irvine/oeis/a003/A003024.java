@@ -2,7 +2,7 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A003024 Number of acyclic digraphs (or DAGs) with n labeled nodes.

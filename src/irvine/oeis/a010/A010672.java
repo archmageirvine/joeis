@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A010672 A B_2 sequence: a(n) = least value such that sequence increases and pairwise sums of distinct elements are all distinct.

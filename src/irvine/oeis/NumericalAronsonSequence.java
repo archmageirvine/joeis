@@ -3,6 +3,7 @@ package irvine.oeis;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * Earliest sequence with a(a(n))=b(n), where b(n) is some underlying sequence.

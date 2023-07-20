@@ -2,7 +2,7 @@ package irvine.oeis.a030;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A030041 a(n+1) = Sum_{k=0..sqrt(n)} a(k) * a(n-k).

@@ -2,7 +2,7 @@ package irvine.oeis.a014;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A014307 Expansion of the e.g.f. sqrt(exp(x) / (2 - exp(x))).

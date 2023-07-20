@@ -4,7 +4,7 @@ import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A060276 a(1) = 2; a(n) = smallest prime &gt; a(n-1) such that the sum of any three nondecreasing terms, chosen from a(1), ..., a(n-1) and a(n), is unique.

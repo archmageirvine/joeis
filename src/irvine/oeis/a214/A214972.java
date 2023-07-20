@@ -1,7 +1,7 @@
 package irvine.oeis.a214;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A214972 a(n) = a(floor(2*(n-1)/3)) + 1, where a(0) = 0.

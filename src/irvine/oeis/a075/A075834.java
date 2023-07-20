@@ -1,7 +1,7 @@
 package irvine.oeis.a075;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A075834 Coefficients of power series A(x) such that n-th term of A(x)^n = n! x^(n-1) for n &gt; 0.

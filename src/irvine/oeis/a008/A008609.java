@@ -1,7 +1,7 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A008609 a(n) = n + max_{0 &lt;= i &lt;n} ((n-i)*a(i)), a(0) = 1.

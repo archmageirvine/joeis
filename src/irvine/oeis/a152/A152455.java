@@ -4,7 +4,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A152455 a(n) = minimal integer m such that there exists an m X m integer matrix of order n.

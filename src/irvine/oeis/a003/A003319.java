@@ -2,7 +2,7 @@ package irvine.oeis.a003;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A003319 Number of connected permutations of [1..n] (those not fixing [1..j] for 0 &lt; j &lt; n). Also called indecomposable permutations, or irreducible permutations.

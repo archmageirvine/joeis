@@ -1,7 +1,7 @@
 package irvine.oeis.a022;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A022827 a(n) = absolute value of ( a([ n/2 ]) - a([ n/3 ]) + ... + ((-1)^n)a([ n/n ]) ).

@@ -1,7 +1,7 @@
 package irvine.oeis.a013;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A013322 Golomb-type sequence over triangular numbers.

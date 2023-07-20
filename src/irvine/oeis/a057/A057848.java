@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A057848 Number of 1-connected claw-free cubic graphs with 2n nodes.

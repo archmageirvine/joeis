@@ -2,7 +2,7 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A007753 a(n) = Sum_{k=0..n-1} binomial(a(k)^2, k).

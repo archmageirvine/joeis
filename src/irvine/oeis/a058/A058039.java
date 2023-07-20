@@ -1,7 +1,7 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A058039 a(n) = a(n-1) + 2*a(floor(n/2)) if n &gt; 0, otherwise 1.

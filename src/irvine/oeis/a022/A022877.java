@@ -2,7 +2,7 @@ package irvine.oeis.a022;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A022877 a(n) = floor( a(n-1)/a(1) + a(n-3)/a(3) + a(n-5)/a(5) + ... ), for n &gt;= 3 with a(1) = 1 and a(2) = 3.

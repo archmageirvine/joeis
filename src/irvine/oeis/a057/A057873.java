@@ -2,7 +2,7 @@ package irvine.oeis.a057;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A057873 a(1) = 1; a(n+1) = sum of terms in continued fraction for sum{k=1 to n}[a(n+1-k)/a(k)].

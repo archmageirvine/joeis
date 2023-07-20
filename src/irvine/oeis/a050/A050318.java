@@ -2,7 +2,7 @@ package irvine.oeis.a050;
 
 import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A050318 a(n) is the number of ways to write n as an mterm, where an mterm is an unordered sum which is either 2, or 1 + an unordered product of mterms.

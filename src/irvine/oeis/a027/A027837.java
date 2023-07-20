@@ -1,7 +1,7 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A027837 Number of subgroups of index n in free group of rank 3.

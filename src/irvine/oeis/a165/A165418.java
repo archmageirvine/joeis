@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A165418 a(1) = 1. For n &gt;= 2, a(n) = sum a(k), where k is over the distinct values of the substrings in binary n, and where 1 &lt;= k &lt; n.

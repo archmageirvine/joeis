@@ -1,7 +1,7 @@
 package irvine.oeis.a019;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A019310 Number of words of length n (n &gt;= 1) over a two-letter alphabet having a minimal period of size n-1.

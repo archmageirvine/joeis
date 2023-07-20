@@ -1,7 +1,7 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A014668 a(1) = 1, a(n) = Sum_{k=1..n-1} Sum_{d|k} a(d).

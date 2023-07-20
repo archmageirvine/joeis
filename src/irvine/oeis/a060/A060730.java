@@ -1,7 +1,7 @@
 package irvine.oeis.a060;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A060730 a(n) = a(n-1) + a(n - 1 minus the number of terms of a(k) == n (mod 3) so far).

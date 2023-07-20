@@ -2,7 +2,7 @@ package irvine.oeis.a040;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A040027 The Gould numbers.

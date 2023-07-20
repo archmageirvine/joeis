@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * Compute the Dirichlet inverse of a sequence.

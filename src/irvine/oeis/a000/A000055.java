@@ -2,7 +2,7 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A000055 Number of trees with n unlabeled nodes.

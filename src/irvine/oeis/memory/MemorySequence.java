@@ -1,4 +1,4 @@
-package irvine.oeis;
+package irvine.oeis.memory;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -6,6 +6,9 @@ import java.util.List;
 
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
+import irvine.oeis.FiniteSequence;
+import irvine.oeis.Sequence;
 
 /**
  * Base case for sequence where all terms are retained in memory. Useful

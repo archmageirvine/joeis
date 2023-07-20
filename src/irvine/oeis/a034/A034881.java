@@ -1,7 +1,7 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A034881 a(1) = 1; for n&gt;1, a(n) = smallest integer &gt; a(n-1) such that a(n)*a(i)+1 is prime for all 1 &lt;= i &lt;= n-1.

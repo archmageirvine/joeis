@@ -1,7 +1,7 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A055224 a(1) = 1, a(n) = number of a(k) with 1 &lt;= k &lt;= n-1 such that a(k) divides a(n-k).

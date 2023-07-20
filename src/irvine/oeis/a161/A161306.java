@@ -1,7 +1,7 @@
 package irvine.oeis.a161;
 // manually A161026/partcap2 at 2022-07-06 21:37
 
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a006.A006720;
 
 /**

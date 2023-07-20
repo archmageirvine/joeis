@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A033623 Grundy function for turn-at-most-4-coins game.

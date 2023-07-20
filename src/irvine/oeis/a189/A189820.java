@@ -1,7 +1,7 @@
 package irvine.oeis.a189;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A189820 a(3*k-2) = a(k), a(3*k-1) = a(k), a(3*k) = 1 for k &gt;= 1, starting with a(1) = 0.

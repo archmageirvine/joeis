@@ -2,6 +2,7 @@ package irvine.oeis;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * Compute the Dirichlet convolution of two sequences.

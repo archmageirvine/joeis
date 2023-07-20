@@ -1,7 +1,7 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A023423 Generalized Catalan Numbers.

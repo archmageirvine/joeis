@@ -2,7 +2,7 @@ package irvine.oeis.a018;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A018893 Blasius sequence: from coefficients in expansion of solution to Blasius's equation in boundary layer theory.

@@ -4,7 +4,7 @@ import java.util.function.Function;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * Generate the rows of a triangle T(n,k) with an underlying sequence 

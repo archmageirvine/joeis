@@ -2,7 +2,7 @@ package irvine.oeis.a057;
 
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A057601 a(0) = a(1) = 1; a(n+1) is the number of partitions of n into parts a(k), 0 &lt;= k &lt;= n, each k occurring at most once.

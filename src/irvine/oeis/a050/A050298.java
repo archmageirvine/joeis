@@ -2,7 +2,7 @@ package irvine.oeis.a050;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a008.A008578;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 

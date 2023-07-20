@@ -1,7 +1,7 @@
 package irvine.oeis.a309;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A309952 XOR contraction of binary representation of n.

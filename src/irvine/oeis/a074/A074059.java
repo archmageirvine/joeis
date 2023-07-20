@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A074059 Dimension of the cohomology ring of the moduli space of n-pointed curves of genus 0 satisfying the associativity equations of physics (also known as the WDVV equations).

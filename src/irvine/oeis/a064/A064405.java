@@ -1,7 +1,7 @@
 package irvine.oeis.a064;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A064405 Number of even entries (A048967) minus the number of odd entries (A001316) in row n of Pascal's triangle (A007318).

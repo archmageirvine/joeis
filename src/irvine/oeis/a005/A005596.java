@@ -4,7 +4,7 @@ import irvine.math.MemoryFunction1;
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a006.A006206;
 import irvine.oeis.cons.DecimalExpansionSequence;
 

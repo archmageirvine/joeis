@@ -2,7 +2,7 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A045648 Number of chiral n-ominoes in (n-1)-space, one cell labeled.

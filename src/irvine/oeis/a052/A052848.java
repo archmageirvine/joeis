@@ -2,7 +2,7 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A052848 Number of ordered set partitions with a designated element in each block and no block containing less than two elements.

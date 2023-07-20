@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A030033 a(n+1) = Sum_{k = 0..floor(2*n/3)} a(k)*a(n-k) for n &gt;= 0 with a(0) = 1.

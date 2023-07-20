@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A030067 The "Semi-Fibonacci sequence": a(1) = 1; a(n) = a(n/2) (n even); a(n) = a(n-1) + a(n-2) (n odd).

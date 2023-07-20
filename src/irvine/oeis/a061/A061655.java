@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A061655 The number 2 (that is, 1+1) in the Witt vector ring for p=2 over the integers.

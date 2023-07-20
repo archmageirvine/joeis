@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A015487 a(0)=1, a(1)=3, a(n) = sum_{k=0}^{k=n-1} 3^k a(k).

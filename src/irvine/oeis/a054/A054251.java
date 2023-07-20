@@ -2,7 +2,7 @@ package irvine.oeis.a054;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A054251 a(0) = 1; a(n) = Sum_{0 &lt;= k &lt; n and gcd(k, n) != 1} a(k).

@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.math.MemoryFunction1;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A018808 Number of lines through at least 2 points of an n X n grid of points.

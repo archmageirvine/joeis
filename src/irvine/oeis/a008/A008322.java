@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A008322 Smallest number that is sum of cubes of two distinct earlier terms.

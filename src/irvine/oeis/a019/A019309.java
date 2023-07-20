@@ -1,7 +1,7 @@
 package irvine.oeis.a019;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A019309 Number of "bifix-free" words of length n over a four-letter alphabet.

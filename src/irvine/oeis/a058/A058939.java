@@ -1,7 +1,7 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A058939 The elliptic divisibility sequence associated to the rational point of smallest known global height for rational elliptic curves: the curve is [ 0,0,0,-412,3316 ] and the point is [ -18,70 ].

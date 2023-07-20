@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A004200 Continued fraction for Sum_{k&gt;=0} 1/3^(2^k).

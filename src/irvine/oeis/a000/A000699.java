@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A000699 Number of irreducible chord diagrams with 2n nodes.

@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A036249 Number of rooted trees of nonempty sets with n points. (Each node is a set of 1 or more points.).

@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A051295 a(0)=1; thereafter, a(m+1) = Sum_{k=0..m} k!*a(m-k).

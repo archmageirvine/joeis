@@ -2,7 +2,7 @@ package irvine.oeis.a032;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A032032 Number of ways to partition n labeled elements into sets of sizes of at least 2 and order the sets.

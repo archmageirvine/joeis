@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A007400 Continued fraction for Sum_{n&gt;=0} 1/2^(2^n) = 0.8164215090218931...

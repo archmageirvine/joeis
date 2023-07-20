@@ -1,7 +1,7 @@
 package irvine.oeis.a128;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A128687 Smallest odd nonprime such that every subset of a(1), ..., a(n) adds to a nonprime.

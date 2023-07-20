@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**

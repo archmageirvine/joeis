@@ -1,7 +1,7 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A054241 Number of partitions of bit-interleaved numbers; partitions of n in base sqrt(2).

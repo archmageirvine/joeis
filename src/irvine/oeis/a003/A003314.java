@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A003314 Binary entropy function: a(1)=0; for n &gt; 1, a(n) = n + min { a(k)+a(n-k) : 1 &lt;= k &lt;= n-1 }.

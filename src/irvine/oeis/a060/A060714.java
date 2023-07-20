@@ -1,7 +1,7 @@
 package irvine.oeis.a060;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A060714 a(n) = a(n-1) + a(n-1 minus the number of terms of the same parity as n so far).

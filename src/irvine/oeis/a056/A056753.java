@@ -1,7 +1,7 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A056753 Only odd numbers occur and for all k there are k numbers between any two successive occurrences of k.

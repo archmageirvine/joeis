@@ -2,7 +2,7 @@ package irvine.oeis.a036;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A036567 Basic numbers used in Sedgewick-Incerpi upper bound for shell sort.

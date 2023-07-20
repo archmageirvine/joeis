@@ -1,6 +1,7 @@
 package irvine.oeis;
 
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A sequence derived from two nested sequences.

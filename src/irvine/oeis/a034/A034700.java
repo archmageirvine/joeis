@@ -2,7 +2,7 @@ package irvine.oeis.a034;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A034700 a(n) = smallest prime == 1 (mod 4) such that a(n) is a square mod a(i), all i&lt;n.

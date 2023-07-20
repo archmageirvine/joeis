@@ -2,7 +2,7 @@ package irvine.oeis.a050;
 
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A050291 Number of double-free subsets of {1, 2, ..., n}.

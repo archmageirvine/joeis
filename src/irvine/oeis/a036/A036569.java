@@ -1,7 +1,7 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A036569 Increments used in Sedgewick-Incerpi upper bound for shell sort.

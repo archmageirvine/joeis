@@ -2,7 +2,7 @@ package irvine.oeis.a034;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A034698 a(n) is the smallest prime such that a(1), ..., a(n-1) are squares mod a(n).

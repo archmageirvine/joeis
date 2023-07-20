@@ -4,7 +4,7 @@ import java.util.TreeSet;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A033808 All slopes (a(n)-a(m))/(n-m) are distinct; generated from 0 by greedy algorithm.

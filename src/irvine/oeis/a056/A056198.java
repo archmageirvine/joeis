@@ -4,7 +4,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A056198 Defined by Product 1/(1-x^k)^a_k, k=1..inf = 1+x+2*Sum(a_k*x^k, k=2..inf).

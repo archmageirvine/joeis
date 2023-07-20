@@ -2,7 +2,7 @@ package irvine.oeis.a059;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A059964 a(1) = 1, a(2) = 1, a(n) = a(n-p) + a((n+1)-p), n &gt; 2, where p is the largest prime less than n.

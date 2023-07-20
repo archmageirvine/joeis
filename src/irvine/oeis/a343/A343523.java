@@ -3,7 +3,7 @@ package irvine.oeis.a343;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A343523 a(0) = 1; a(n) = 2 * Sum_{k=1..n} binomial(n,k) * a(k-1).

@@ -2,7 +2,7 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A034901 a(n) is square mod a(i), i &lt; n; a(n) nonsquare; a(1) = 2.

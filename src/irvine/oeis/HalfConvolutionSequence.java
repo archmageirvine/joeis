@@ -1,6 +1,7 @@
 package irvine.oeis;
 
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * Construct a sequence corresponding to the half convolution of two other sequence.

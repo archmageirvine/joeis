@@ -2,7 +2,7 @@ package irvine.oeis.a033;
 
 import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a006.A006318;
 
 /**

@@ -1,7 +1,7 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A049299 a(n) = Product_{k = 0..n-1} (a(k) + a(n-1-k)), with a(0) = 1.

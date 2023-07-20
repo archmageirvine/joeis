@@ -1,7 +1,7 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A014011 Defined by a chi-inequality greedy algorithm.

@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A019591 Grundy function of game in which each player has to divide precisely one set of coins into two subsets of different sizes.

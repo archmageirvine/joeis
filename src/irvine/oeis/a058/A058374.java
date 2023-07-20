@@ -2,7 +2,7 @@ package irvine.oeis.a058;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A058374 a(1) = 1; a(n+1) = sum{k=1 to n}[a(k)^a(n+1-k)].

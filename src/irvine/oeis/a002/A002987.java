@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A002987 a(1) = 1; a(2) = 2; a(n) == a(k) (mod n-k) for all 1 &lt; k &lt; n.

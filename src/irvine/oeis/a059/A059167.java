@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A059167 Number of n-node labeled graphs without endpoints.

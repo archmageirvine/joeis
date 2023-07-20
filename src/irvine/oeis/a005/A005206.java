@@ -1,7 +1,7 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A005206 Hofstadter G-sequence: a(0) = 0; a(n) = n - a(a(n-1)) for n &gt; 0.

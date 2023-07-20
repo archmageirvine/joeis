@@ -2,7 +2,7 @@ package irvine.oeis.a050;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A050353 Number of 5-level labeled linear rooted trees with n leaves.

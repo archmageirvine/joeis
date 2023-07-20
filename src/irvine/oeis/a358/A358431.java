@@ -1,7 +1,7 @@
 package irvine.oeis.a358;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A358431 a(0) = 1; a(n+1) = 1 if a(n) &gt; n, otherwise a(n+1) = a(n) + a(a(n)).

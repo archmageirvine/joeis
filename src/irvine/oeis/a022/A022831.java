@@ -2,7 +2,7 @@ package irvine.oeis.a022;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A022831 a(n) = c(1)p(1) + ... + c(n)p(n), where c(i) = 1 if a(i-1) &lt;= p(i) and c(i) = -1 if a(i-1) &gt; p(i), for i = 1,...,n (p(i) = primes).

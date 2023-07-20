@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A120160 a(n) = ceiling(Sum_{i=1..n-1} a(i)/4) for n &gt;= 2 starting with a(1) = 1.

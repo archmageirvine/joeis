@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A030194 a(0)=0; a(n) is the smallest m such that m - a(i) is not a triangular number for any i &lt; n.

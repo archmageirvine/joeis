@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A002608 Glaisher's function T(2n+1).

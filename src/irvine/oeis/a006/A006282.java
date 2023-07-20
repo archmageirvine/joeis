@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A006282 Sorting numbers: number of comparisons in Batcher's parallel sort.

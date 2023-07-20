@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A031980 a(n) is the smallest number &gt;= 1 not occurring earlier and not the sum of cubes of two distinct earlier terms.

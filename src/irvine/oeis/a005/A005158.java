@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A005158 Number of alternating sign n X n matrices invariant under a half-turn.

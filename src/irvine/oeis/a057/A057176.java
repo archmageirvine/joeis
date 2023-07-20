@@ -2,7 +2,7 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A057176 a(0) = 1; for n &gt;= 1, a(n) = Sum_{j=0..a(n-1) mod n} a(j).

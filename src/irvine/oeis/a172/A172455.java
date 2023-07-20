@@ -1,7 +1,7 @@
 package irvine.oeis.a172;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A172455 The case S(6,-4,-1) of the family of self-convolutive recurrences studied by Martin and Kearney.

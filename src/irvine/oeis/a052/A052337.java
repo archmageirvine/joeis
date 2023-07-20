@@ -2,7 +2,7 @@ package irvine.oeis.a052;
 
 import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A052337 Number of partitions into at most a(1) copies of 1, a(2) copies of 2, ...

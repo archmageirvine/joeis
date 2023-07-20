@@ -2,7 +2,7 @@ package irvine.oeis.a034;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A034793 a(1)=1; thereafter a(n+1) is the least k &gt; a(n) such that k is a square mod a(i) for all  i&lt;= n.

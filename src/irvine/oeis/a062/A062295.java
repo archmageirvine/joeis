@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A062295 A B_2 sequence: a(n) is the smallest square such that pairwise sums of not necessarily distinct elements are all distinct.

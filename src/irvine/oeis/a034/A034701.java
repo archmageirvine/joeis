@@ -1,7 +1,7 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A034701 a(n) is the smallest number not of the form a(i) (1&lt;=i&lt;=n-1) or a(i)+a(n-1) (1&lt;=i&lt;=n-2).

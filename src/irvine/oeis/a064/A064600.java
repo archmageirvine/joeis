@@ -2,7 +2,7 @@ package irvine.oeis.a064;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicIntArray;
 

@@ -7,7 +7,7 @@ import irvine.math.MemoryFunction1;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A007838 Number of permutations of n elements with distinct cycle lengths.

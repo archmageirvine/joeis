@@ -1,7 +1,7 @@
 package irvine.oeis.a038;
 // manually 2020-12-30
 
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A038069 Product_{k&gt;=1} ((1 + x^k)^a(k)) = 1 + 4x.

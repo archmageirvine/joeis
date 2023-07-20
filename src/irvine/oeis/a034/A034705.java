@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000290;
 
 /**

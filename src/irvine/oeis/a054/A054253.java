@@ -1,7 +1,7 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A054253 a(n) = n + max{ a(i)*a(n-i) ; 1 &lt;= i &lt;= n-1 }, a(n) = n for n &lt;= 2.

@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A015486 a(0)=1, a(1)=2, a(n) = sum_{k=0}^{k=n-1} 2^k a(k).

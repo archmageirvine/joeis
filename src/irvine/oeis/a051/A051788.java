@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A051788 a(1) = 1, a(2) = 3; for n&gt;2, a(n) = least value &gt; a(n-1) such that pairwise differences are unique.

@@ -1,7 +1,7 @@
 package irvine.oeis.a013;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A013189 All terms are squares and a(n) is length of n-th run.

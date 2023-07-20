@@ -2,7 +2,7 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A006757 The generalized Conway-Guy sequence w^{3}.

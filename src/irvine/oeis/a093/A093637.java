@@ -2,7 +2,7 @@ package irvine.oeis.a093;
 
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A093637 G.f.: A(x) = Product_{n&gt;=0} 1/(1 - a(n)*x^(n+1)) = Sum_{n&gt;=0} a(n)*x^n.

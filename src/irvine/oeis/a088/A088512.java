@@ -1,7 +1,7 @@
 package irvine.oeis.a088;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A088512 Number of partitions of n into two parts whose xor-sum is n.

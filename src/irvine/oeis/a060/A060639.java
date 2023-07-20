@@ -4,7 +4,7 @@ import irvine.math.z.BellNumbers;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A060639 Number of pairs of partitions of [n] whose join is the partition {{1,2,...,n}}.

@@ -5,7 +5,7 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000217;
 
 /**

@@ -3,6 +3,7 @@ package irvine.oeis;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A sequence containing no 3-term arithmetic progressions.

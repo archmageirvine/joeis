@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A166699 Totally multiplicative sequence with a(p) = a(p-1) + 2 for prime p.

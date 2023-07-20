@@ -2,7 +2,7 @@ package irvine.oeis.a033;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A033462 Exponential (or "EXP") transform of squares A000290.

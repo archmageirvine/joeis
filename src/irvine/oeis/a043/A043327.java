@@ -2,7 +2,7 @@ package irvine.oeis.a043;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A043327 a(0)=1; a(1)=1; a(n)= a(n-1) + floor( sqrt(a(n-1)*a(n-2))+ sqrt(a(n-3)*a(n-4))+ ... ).

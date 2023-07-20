@@ -2,7 +2,7 @@ package irvine.oeis.a030;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A030040 a(n+1) = Sum_{k=0..floor(n/tau)} a(k) * a(n-k), where tau = (1+sqrt(5))/2.

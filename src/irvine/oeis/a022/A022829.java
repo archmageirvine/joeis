@@ -1,7 +1,7 @@
 package irvine.oeis.a022;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A022829 a(n) = a([ .5 + n/2 ]) + a([ .5 + n/3 ]) + ... + a([ .5 + n/n ]).

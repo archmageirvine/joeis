@@ -3,6 +3,7 @@ package irvine.oeis;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * Numbers which are the sum of two numbers in another sequence.

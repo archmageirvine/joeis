@@ -1,7 +1,7 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A055748 A chaotic cousin of the Hofstadter-Conway sequence A004001.

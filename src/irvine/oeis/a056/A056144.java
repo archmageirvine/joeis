@@ -1,7 +1,7 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A056144 a(1) = 1, a(m+1) = Sum_{k=1..m} gcd(m, a(k)).

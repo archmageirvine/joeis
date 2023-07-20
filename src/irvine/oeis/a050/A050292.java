@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A050292 a(2n) = 2n - a(n), a(2n+1) = 2n + 1 - a(n) (for n &gt;= 0).

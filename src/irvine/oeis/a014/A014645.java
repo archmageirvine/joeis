@@ -1,7 +1,7 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A014645 a(n) = (n-1)^a(1) + (n-2)^a(2) + (n-3)^a(3) + ... + 1^a(n-1).

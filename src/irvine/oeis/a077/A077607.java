@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A077607 Convolutory inverse of the factorial sequence.

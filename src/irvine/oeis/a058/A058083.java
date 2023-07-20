@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 import irvine.math.ContinuedFractionUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A058083 a(1) = 1; a(n+1) = sum of terms in continued fraction for sum of continued fractions, [a(n); a(n-1), a(n-2),...,a(1)] and [0; a(n), a(n-1), a(n-2),...,a(1)].

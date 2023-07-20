@@ -2,7 +2,7 @@ package irvine.oeis.a061;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A061482 a(1) = 1, a(2) = 2, a(n) = sum of products of previous terms taking n-2 at a time.

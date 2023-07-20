@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A004979 a(n)=least number m such that m-a(n-1)&lt;&gt;a(j)-a(k) for all j,k less than m; a(1)=1, a(2)=3.

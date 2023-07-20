@@ -1,7 +1,7 @@
 package irvine.oeis.a087;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A087808 a(0) = 0; a(2n) = 2a(n), a(2n+1) = a(n) + 1.

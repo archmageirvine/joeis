@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A034794 a(n) is the least prime p &gt; a(n-1) such that a(n-1) is a quadratic residue mod p.

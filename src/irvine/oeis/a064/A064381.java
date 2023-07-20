@@ -2,7 +2,7 @@ package irvine.oeis.a064;
 
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A064381 Number of subsets of {2,...,n} such that the product of their elements is congruent to 0 (mod n+1).

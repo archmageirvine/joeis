@@ -1,7 +1,7 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A038750 A variant of the recurrence for A001190.

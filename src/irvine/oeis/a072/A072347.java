@@ -1,7 +1,7 @@
 package irvine.oeis.a072;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A072347 If n = pqr...st in binary, a(n) = value of continuant [p,q,r,...,s,t].

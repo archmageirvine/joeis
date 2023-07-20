@@ -1,7 +1,7 @@
 package irvine.oeis.a109;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A109170 Continued fraction expansion of 2*x which equals the continued fraction of x (A109168) interleaved with positive even numbers.

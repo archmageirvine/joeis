@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A051912 a(n) is the smallest integer such that the sum of any three ordered terms a(k), k &lt;= n, is unique.

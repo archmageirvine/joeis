@@ -1,7 +1,7 @@
 package irvine.oeis.a128;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A128688 a(1)=1. For n&gt;1, a(n) is the smallest even number such that every subset of a(1), ..., a(n) adds to a nonprime.

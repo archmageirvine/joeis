@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A061061 Maximal number of 132 patterns in a permutation of 1,2,...,n.

@@ -2,7 +2,7 @@ package irvine.oeis.a213;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A213357 E.g.f. satisfies A(x) = 1 + (exp(x) - 1) * A(exp(x) - 1).

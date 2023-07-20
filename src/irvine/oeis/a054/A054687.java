@@ -2,7 +2,7 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A054687 a(n+1) = 1 + Sum_{k=0..n} binomial(n,k)*a(k)*a(n-k) for n &gt;= 0 with a(0) = 1.

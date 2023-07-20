@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A051484 a(n) is the next natural number (besides 1) which is not congruent to a(i) mod a(j) for any i &lt; j &lt; n.

@@ -2,7 +2,7 @@ package irvine.oeis.a007;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A007682 a(n) = -Sum_{k = 0..n-1} (n+k)!a(k)/(2k)!.

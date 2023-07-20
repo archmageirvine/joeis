@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006566;
 

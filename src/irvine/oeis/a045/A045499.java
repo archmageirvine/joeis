@@ -2,7 +2,7 @@ package irvine.oeis.a045;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A045499 Fourth-from-right diagonal of triangle A121207.

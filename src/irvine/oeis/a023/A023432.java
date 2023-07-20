@@ -1,7 +1,7 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A023432 Number of Dyck n-paths with ascents and descents of length equal to 1 (mod 3).

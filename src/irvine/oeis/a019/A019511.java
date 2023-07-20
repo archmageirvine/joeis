@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A019511 a(n+1) (n &gt;= 1) is smallest number &gt; a(n) which is the sum of cubes of distinct earlier terms.

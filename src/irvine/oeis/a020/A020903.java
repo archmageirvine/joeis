@@ -2,7 +2,7 @@ package irvine.oeis.a020;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A020903 Lim f(f(...f(n))) where f is the fractal sequence given by f(n)=A002260(n+1).

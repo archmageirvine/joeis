@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A057505 Signature-permutation of a Catalan Automorphism: Donaghey's map M acting on the parenthesizations encoded by A014486.

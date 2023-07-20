@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A005282 Mian-Chowla sequence (a B_2 sequence): a(1) = 1; for n&gt;1, a(n) = smallest number &gt; a(n-1) such that the pairwise sums of elements are all distinct.

@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A004006 a(n) = C(n,1) + C(n,2) + C(n,3), or n*(n^2 + 5)/6.

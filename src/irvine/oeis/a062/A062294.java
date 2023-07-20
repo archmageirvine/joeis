@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A062294 A B_2 sequence: a(n) is the smallest prime such that the pairwise sums of distinct elements are all distinct.

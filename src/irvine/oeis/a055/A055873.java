@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A055873 a(0) = 1; a(n) = sum_{k=1 to d(n)} [a(n-k)] where d(n) is number of positive divisors of n.

@@ -1,7 +1,7 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A052109 a(1)=1, a(n)=a(n-a(1))+a(n-a(2))+a(n-a(3))+....a(n-a(n-1)) for n&gt;1, with convention that a(i)=0 for i&lt;=0.

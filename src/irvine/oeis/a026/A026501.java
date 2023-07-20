@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A026501 a(n) = least positive integer &gt; a(n-1) and not a(j)*a(k) + a(k)*a(i) + a(i)*a(j) for 1&lt;=i&lt;j&lt;k&lt;n.

@@ -2,7 +2,7 @@ package irvine.oeis.a322;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A322583 a(n) is the number of factorizations of n into factorial numbers larger than one; a(1) = 1.

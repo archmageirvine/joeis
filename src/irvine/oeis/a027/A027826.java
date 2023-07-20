@@ -2,7 +2,7 @@ package irvine.oeis.a027;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A027826 Inverse binomial transform of a_0 = 1, a_1, a_2, etc. is a_0, 0, a_1, 0, a_2, 0, etc.

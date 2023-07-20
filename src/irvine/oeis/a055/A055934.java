@@ -1,7 +1,7 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A055934 a(0) = 1; a(n) = sum of a(j)'s, j&lt;n, where n is divisible by a(j).

@@ -2,7 +2,7 @@ package irvine.oeis.a118;
 // manually prodsim at 2021-11-19 23:05
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007918;
 

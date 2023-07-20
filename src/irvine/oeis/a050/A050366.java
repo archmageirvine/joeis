@@ -2,7 +2,7 @@ package irvine.oeis.a050;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A050366 Number of ways to write n as an lterm, where an lterm is an unordered sum which is either 2, or 1 + an ordered product of lterms.

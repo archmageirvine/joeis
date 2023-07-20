@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * Sequence consisting of all powers of another (ordered) sequence.

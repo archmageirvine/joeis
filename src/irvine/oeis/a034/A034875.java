@@ -1,7 +1,7 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A034875 Smallest integer not the sum of powers of some earlier terms.

@@ -2,7 +2,7 @@ package irvine.oeis.triangle;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * Triangle resulting from the application of Peter Luschny&apos;s Partition Transform to another sequence.

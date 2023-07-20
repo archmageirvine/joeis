@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.MemoryFunction;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A026865 Number of labeled chain graphs.

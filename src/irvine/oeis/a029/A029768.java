@@ -2,7 +2,7 @@ package irvine.oeis.a029;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A029768 Number of increasing mobiles with n elements.

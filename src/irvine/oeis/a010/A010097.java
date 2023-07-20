@@ -1,7 +1,7 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A010097 Prefix (or Levenshtein) codes for natural numbers.

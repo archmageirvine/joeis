@@ -6,7 +6,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A032306 Number of rooted trees with leaves of 2 colors where any 2 subtrees extending from the same node have a different number of nodes.

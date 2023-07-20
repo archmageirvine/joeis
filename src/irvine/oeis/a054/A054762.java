@@ -2,7 +2,7 @@ package irvine.oeis.a054;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A054762 a(n) is a cube mod a(i) for all i &lt; n.

@@ -1,7 +1,7 @@
 package irvine.oeis.a338;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A338045 G.f.: Sum_{k&gt;=0} x^(2^k) / (1 - x^(2^k))^3.

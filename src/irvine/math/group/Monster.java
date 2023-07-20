@@ -7,7 +7,7 @@ import java.util.List;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.FiniteSequence;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.ZeroSpacedSequence;
 import irvine.oeis.a007.A007243;
 import irvine.oeis.a007.A007244;

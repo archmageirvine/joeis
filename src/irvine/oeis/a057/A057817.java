@@ -2,7 +2,7 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A057817 Moebius invariant of cographic hyperplane arrangement for complete graph K_n. Also value of Tutte dichromatic polynomial T_G(0,1) for G=K_n. Also alternating sum F_{n,1} - F_{n,2} + F_{n,3} - ..., where F_{n,k} is the number of labeled forests on n nodes with k connected components.

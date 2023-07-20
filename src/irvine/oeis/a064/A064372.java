@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A064372 Additive function a(n) defined by the recursive formula a(1)=1 and a(p^k)=a(k) for any prime p.

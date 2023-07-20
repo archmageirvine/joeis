@@ -2,7 +2,7 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A051487 Numbers k such that phi(k) = phi(k - phi(k)).

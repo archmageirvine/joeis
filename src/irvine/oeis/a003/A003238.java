@@ -2,7 +2,7 @@ package irvine.oeis.a003;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A003238 Number of rooted trees with n vertices in which vertices at the same level have the same degree.

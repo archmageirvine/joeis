@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A026477 a(1) = 1, a(2) = 2, a(3) = 3; and for n &gt; 3, a(n) = smallest number &gt; a(n-1) and not of the form a(i)*a(j)*a(k) for 1 &lt;= i &lt; j &lt; k &lt; n.

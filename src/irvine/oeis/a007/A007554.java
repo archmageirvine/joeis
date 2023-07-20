@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A007554 Unique attractor for (RIGHT then MOBIUS) transform.

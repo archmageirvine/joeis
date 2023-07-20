@@ -2,7 +2,7 @@ package irvine.oeis.a008;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A008563 Coefficients of series arising in solution of Riccati equation y' = y^2 + x^2.

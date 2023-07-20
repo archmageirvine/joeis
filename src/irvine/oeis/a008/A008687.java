@@ -1,7 +1,7 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A008687 Number of 1's in 2's complement representation of -n.

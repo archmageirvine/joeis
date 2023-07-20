@@ -5,7 +5,7 @@ import java.util.Collection;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A014587 Nim function for Take-a-Factorial-Game (a subtraction game).

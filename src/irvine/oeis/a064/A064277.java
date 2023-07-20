@@ -1,7 +1,7 @@
 package irvine.oeis.a064;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A064277 Anti-divisorial 2-decomposition values.

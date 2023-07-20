@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A000992 "Half-Catalan numbers": a(n) = Sum_{k=1..floor(n/2)} a(k)*a(n-k) with a(1) = 1.

@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
 import irvine.oeis.ConvolutionSequence;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000041;

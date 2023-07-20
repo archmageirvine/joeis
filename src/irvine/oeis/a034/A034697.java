@@ -2,7 +2,7 @@ package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A034697 a(1)=1, a(n)= 1 + Sum a(p), p prime, p | n-1.

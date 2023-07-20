@@ -1,7 +1,7 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A037100 Lexically first set of (even) numbers, beginning with 4, such that for any two different terms, a(i) + a(j) + 1 is prime.

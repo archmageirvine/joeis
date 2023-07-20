@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A004065 Define predecessors of n, P(n), to consist of numbers whose binary representation is obtained from that of n by replacing 10 with 01 or changing a final 1 to a 0; then a(0)=1, a(n) = Sum a(P(n)), n&gt;0.

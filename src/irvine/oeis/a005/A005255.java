@@ -1,7 +1,7 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A005255 Atkinson-Negro-Santoro sequence: a(n+1) = 2*a(n) - a(n-floor(n/2+1)).

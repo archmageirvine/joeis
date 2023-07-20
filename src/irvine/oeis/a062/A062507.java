@@ -2,7 +2,7 @@ package irvine.oeis.a062;
 
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a052.A052542;
 import irvine.oeis.triangle.AntidiagonalSequence;
 

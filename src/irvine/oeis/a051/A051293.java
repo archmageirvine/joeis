@@ -4,7 +4,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A051293 Number of nonempty subsets of {1,2,3,...,n} whose elements have an integer average.

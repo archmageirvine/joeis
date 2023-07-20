@@ -1,7 +1,7 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A056149 a(0) = 1, a(m) = number of a(k), 0 &lt;= k &lt;= m-1, where gcd(m, a(k)) = 1.

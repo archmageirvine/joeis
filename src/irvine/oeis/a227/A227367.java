@@ -1,7 +1,7 @@
 package irvine.oeis.a227;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A227367 a(0)=1, a(n+1) = a(0) + a(1)*a(2) + a(3)*a(4)*a(5) + a(6)*a(7)*a(8)*a(9) + ... + ...*a(n).

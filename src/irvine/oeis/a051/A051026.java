@@ -7,7 +7,7 @@ import irvine.factor.prime.Fast;
 import irvine.math.MemoryFunction;
 import irvine.math.MemoryFunction1;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A051026 Number of primitive subsequences of {1, 2, ..., n}.

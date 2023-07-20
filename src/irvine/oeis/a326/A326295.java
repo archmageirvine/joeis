@@ -1,7 +1,7 @@
 package irvine.oeis.a326;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A326295 a(n) = decimal concatenation of n,a(n-1),a(n-2),...,a(1).

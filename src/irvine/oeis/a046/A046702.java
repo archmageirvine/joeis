@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A046702 a(n)=a(n-a(n-1))+a(n-1-a(n-2))+a(n-2-a(n-3)), n&gt;3. a(1)=a(2)=a(3)=1.

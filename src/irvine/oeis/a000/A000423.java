@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A000423 a(n) is smallest number &gt; a(n-1) of form a(i)*a(j), i &lt; j &lt; n.

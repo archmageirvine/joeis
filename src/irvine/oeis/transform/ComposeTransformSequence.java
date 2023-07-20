@@ -1,4 +1,4 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import java.util.ArrayList;
 
@@ -6,12 +6,14 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence;
 
 /**
  * Composition of sequences (COMPOSE transform).
  * @author Sean A. Irvine
  */
-public class ComposeSequence extends Sequence1 {
+public class ComposeTransformSequence extends AbstractSequence {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final Sequence mSeqA;
@@ -21,9 +23,11 @@ public class ComposeSequence extends Sequence1 {
 
   /**
    * Self-convolution of a sequence.
+   * @param offset offset for sequence
    * @param seq sequence to convolve
    */
-  public ComposeSequence(final Sequence seq) {
+  public ComposeTransformSequence(final int offset, final Sequence seq) {
+    super(offset);
     mSeqA = seq;
     mSeqB = null;
     mTermsA = new Polynomial<>("x", Z.ZERO, Z.ONE);
@@ -35,7 +39,8 @@ public class ComposeSequence extends Sequence1 {
    * @param a first sequence
    * @param b second sequence
    */
-  public ComposeSequence(final Sequence a, final Sequence b) {
+  public ComposeTransformSequence(final int offset, final Sequence a, final Sequence b) {
+    super(offset);
     mSeqA = a;
     mSeqB = b;
     mTermsA = new Polynomial<>("x", Z.ZERO, Z.ONE);

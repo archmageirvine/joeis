@@ -2,7 +2,7 @@ package irvine.oeis.a094;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.EuclidMullinSequence;
+import irvine.oeis.prime.EuclidMullinSequence;
 import irvine.oeis.Sequence1;
 
 /**

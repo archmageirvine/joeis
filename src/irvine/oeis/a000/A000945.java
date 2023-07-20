@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.EuclidMullinSequence;
+import irvine.oeis.prime.EuclidMullinSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 

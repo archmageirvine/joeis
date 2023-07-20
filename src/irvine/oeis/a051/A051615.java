@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import java.io.IOException;
 
 import irvine.math.z.Z;
-import irvine.oeis.EuclidMullinSequence;
+import irvine.oeis.prime.EuclidMullinSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 

@@ -3,6 +3,7 @@ package irvine.oeis;
 import java.io.IOException;
 
 import irvine.math.z.Z;
+import irvine.oeis.prime.EuclidMullinSequence;
 import junit.framework.TestCase;
 
 /**

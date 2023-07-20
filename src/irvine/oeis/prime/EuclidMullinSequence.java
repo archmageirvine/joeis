@@ -1,4 +1,4 @@
-package irvine.oeis;
+package irvine.oeis.prime;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,6 +11,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 
 /**
  * Generate an Euclid-Mullin sequence.

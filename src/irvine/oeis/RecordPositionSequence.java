@@ -9,9 +9,25 @@ import irvine.math.z.Z;
 public class RecordPositionSequence extends AbstractSequence {
 
   private static final int DEFOFF = 1;
-  protected final Sequence mSeq;
-  protected Z mMax = Z.NEG_ONE;
-  protected long mN;
+  private final Sequence mSeq;
+  private final boolean mUseAbs;
+  private Z mMax = RecordSequence.DEFAULT_MIN;
+  private long mN;
+
+  /**
+   * Creates a record position sequence of another sequence.
+   * @param offset first index of target sequence
+   * @param seq underlying sequence
+   * @param initialPosition the initial offset of the sequence
+   * @param useAbs should the absolute value of a term be considered
+   */
+  public RecordPositionSequence(final int offset, final Sequence seq, final long initialPosition, final boolean useAbs) {
+    super(offset);
+    mSeq = seq;
+    mN = initialPosition - 1;
+    mUseAbs = useAbs;
+  }
+
 
   /**
    * Creates a record position sequence of another sequence.
@@ -29,16 +45,24 @@ public class RecordPositionSequence extends AbstractSequence {
    * @param initialPosition the initial offset of the sequence
    */
   public RecordPositionSequence(final int offset, final Sequence seq, final long initialPosition) {
-    super(offset);
-    mSeq = seq;
-    mN = initialPosition - 1;
+    this(offset, seq, initialPosition, true);
+  }
+
+  /**
+   * Creates a record position sequence of another sequence.
+   * @param seq underlying sequence
+   * @param initialPosition the initial offset of the sequence
+   * @param useAbs should the absolute value of terms be taken
+   */
+  public RecordPositionSequence(final Sequence seq, final long initialPosition, final boolean useAbs) {
+    this(DEFOFF, seq, initialPosition, useAbs);
   }
 
   @Override
   public Z next() {
     while (true) {
       ++mN;
-      final Z t = mSeq.next().abs();
+      final Z t = mUseAbs ? mSeq.next().abs() : mSeq.next();
       if (t.compareTo(mMax) > 0) {
         mMax = t;
         return Z.valueOf(mN);

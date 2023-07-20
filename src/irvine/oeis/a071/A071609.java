@@ -1,7 +1,7 @@
 package irvine.oeis.a071;
 // manually deris at 2021-10-28 22:51
 
-import irvine.oeis.RecordPositionSubsequence;
+import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a005.A005875;
 
 /**
@@ -9,11 +9,11 @@ import irvine.oeis.a005.A005875;
  *
  * @author Georg Fischer
  */
-public class A071609 extends RecordPositionSubsequence {
+public class A071609 extends RecordPositionSequence {
 
   /** Construct the sequence. */
   public A071609() {
-    super(0, new A005875());
+    super(new A005875(), 0, false);
     next();
   }
 }

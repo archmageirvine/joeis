@@ -12,7 +12,7 @@ public class RecordSequence extends AbstractSequence {
 
   private static final int DEFOFF = 1;
   // A265913(1) -80561663527802406257321747 has current minimal 1st term
-  private static final Z DEFAULT_MIN = new Z("-9999999999999999999999999999999999999999999999999999999999999999"); // 64 digits
+  static final Z DEFAULT_MIN = new Z("-9999999999999999999999999999999999999999999999999999999999999999"); // 64 digits
   private final boolean mUseAbs;
   private final Sequence mSeq;
   private Z mMax;

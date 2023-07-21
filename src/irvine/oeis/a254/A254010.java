@@ -4,7 +4,7 @@ package irvine.oeis.a254;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A254010 Numbers n such that 4n+1 and 4(n+1)+1 are primes.
+ * A254010 Numbers k such that 4k+1 and 4(k+1)+1 are primes.
  * @author Georg Fischer
  */
 public class A254010 extends PrimeConditionListSequence {

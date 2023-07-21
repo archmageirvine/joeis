@@ -118,6 +118,22 @@ public final class SExpression extends ArrayList<SExpression> {
     return s;
   }
 
+  // deepreverse := proc(a) if 0 = nops(a) or list <> whattype(a) then (a) else [op(deepreverse(cdr(a))), deepreverse(a[1])]; fi; end;
+  /**
+   * Reverse of the expression.
+   * @return reverse
+   */
+  public SExpression deepReverse() {
+    if (isEmpty()) {
+      return this;
+    }
+    final SExpression s = new SExpression();
+    for (final SExpression t : this) {
+      s.add(t.deepReverse());
+    }
+    return s.reverse();
+  }
+
   /**
    * Rotate the expression one position to the left.
    * @return rotation
@@ -132,7 +148,6 @@ public final class SExpression extends ArrayList<SExpression> {
     return s;
   }
 
-  // deeprotateL := proc(a) if 0 = nops(a) or list <> whattype(a) then (a) else rotateL(map(deeprotateL, a)); fi; end;
   /**
    * Rotate the expression one position to the left.
    * @return rotation
@@ -161,6 +176,21 @@ public final class SExpression extends ArrayList<SExpression> {
       final Z x = s.toZ();
       final int w = lg(x);
       e = e.shiftLeft(w + 3).add(Z.ONE.shiftLeft(w + 2)).add(x.multiply2());
+    }
+    return e;
+  }
+
+  /**
+   * Count the number of parentheses in this expression.
+   * @return count of parentheses
+   */
+  public int countParens() {
+    if (isEmpty()) {
+      return 0;
+    }
+    int e = 0;
+    for (final SExpression k : this) {
+      e += 2 + k.countParens();
     }
     return e;
   }

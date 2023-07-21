@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
 
 /**
- * A066843 a(n) = Product_{k=1..n} d(k); d(k) is the number of positive divisors of k.
+ * A066843 a(n) = Product_{k=1..n} d(k); d(k) = A000005(k) is the number of positive divisors of k.
  * @author Georg Fischer
  */
 public class A066843 extends Sequence1 {

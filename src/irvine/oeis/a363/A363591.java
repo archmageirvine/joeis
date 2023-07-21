@@ -4,7 +4,7 @@ package irvine.oeis.a363;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A363591 a(n) = 3*(3^(n-1) - 2^n + 1)/2 - binomial(n, 2), n &gt;= 3.
+ * A363591 a(n) = 3*(3^(n-1) - 2^n + 1)/2 - binomial(n,2), n &gt;= 3.
  * @author Georg Fischer
  */
 public class A363591 extends GeneratingFunctionSequence {

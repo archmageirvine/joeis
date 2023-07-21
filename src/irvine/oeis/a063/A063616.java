@@ -4,7 +4,7 @@ package irvine.oeis.a063;
 import irvine.oeis.a031.A031146;
 
 /**
- * A063616 Smallest k &gt;= 0 such that 8^k has exactly n 0&apos;s in its decimal representation.
+ * A063616 Smallest k &gt;= 0 such that 8^k has exactly n 0's in its decimal representation.
  * @author Georg Fischer
  */
 public class A063616 extends A031146 {

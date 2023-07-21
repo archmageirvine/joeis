@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.oeis.a000.A000578;
 
 /**
- * A090049 Length of longest contiguous block of 0&apos;s in binary expansion of n^3.
+ * A090049 Length of longest contiguous block of 0's in binary expansion of n^3.
  * @author Georg Fischer
  */
 public class A090049 extends A090000 {

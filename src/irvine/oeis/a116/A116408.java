@@ -4,7 +4,7 @@ package irvine.oeis.a116;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A116408 E.g.f. exp(x)*(Bessel_I(2, 2*x) - Bessel_I(3, 2*x) + Bessel_I(4, 2*x)).
+ * A116408 E.g.f. exp(x)*(Bessel_I(2,2*x) - Bessel_I(3,2*x) + Bessel_I(4,2*x)).
  * @author Georg Fischer
  */
 public class A116408 extends HolonomicRecurrence {

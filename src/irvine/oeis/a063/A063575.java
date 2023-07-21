@@ -4,7 +4,7 @@ package irvine.oeis.a063;
 import irvine.oeis.a031.A031146;
 
 /**
- * A063575 Smallest k such that 4^k has exactly n 0&apos;s in its decimal representation.
+ * A063575 Smallest k such that 4^k has exactly n 0's in its decimal representation.
  * @author Georg Fischer
  */
 public class A063575 extends A031146 {

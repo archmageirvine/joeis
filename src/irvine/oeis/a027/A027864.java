@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A027864 Primes of the form k^2 + (k+1)^2 + (k+2)^2.
+ * A027864 Primes of the form k^2 + (k+1)^2 + (k+2)^2 = 3*(k+1)^2+2.
  * @author Sean A. Irvine
  */
 public class A027864 extends Sequence1 {

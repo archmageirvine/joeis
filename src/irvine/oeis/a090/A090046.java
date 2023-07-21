@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.oeis.a000.A000040;
 
 /**
- * A090046 Length of longest contiguous block of 0&apos;s in binary expansion of n-th prime.
+ * A090046 Length of longest contiguous block of 0's in binary expansion of n-th prime.
  * @author Georg Fischer
  */
 public class A090046 extends A090000 {

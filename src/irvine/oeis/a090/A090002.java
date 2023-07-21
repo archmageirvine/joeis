@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.oeis.a000.A000217;
 
 /**
- * A090002 Length of longest contiguous block of 1&apos;s in binary expansion of n-th triangular number.
+ * A090002 Length of longest contiguous block of 1's in binary expansion of n-th triangular number.
  * @author Georg Fischer
  */
 public class A090002 extends A090000 {

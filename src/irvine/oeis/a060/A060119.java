@@ -12,7 +12,12 @@ public class A060119 extends A060117 {
 
   private int mN = -1;
 
-  protected Z permRevLexRank(final IntegerPermutation pp) {
+  /**
+   * Return the reverse lexical rank of a permutation.
+   * @param pp the permutation
+   * @return lexical rank
+   */
+  public static Z permRevLexRank(final IntegerPermutation pp) {
     final int n = pp.size();
     final int[] p = new int[n];
     for (int k = 0; k < p.length; ++k) {

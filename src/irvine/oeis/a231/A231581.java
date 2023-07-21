@@ -4,7 +4,7 @@ package irvine.oeis.a231;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A231581 Number of nX2 0..3 arrays with no element less than a strict majority of its horizontal, vertical, diagonal and antidiagonal neighbors
+ * A231581 Number of nX2 0..3 arrays with no element less than a strict majority of its horizontal, vertical, diagonal and antidiagonal neighbors.
  * @author Georg Fischer
  */
 public class A231581 extends HolonomicRecurrence {

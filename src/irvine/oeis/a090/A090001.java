@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.oeis.a000.A000290;
 
 /**
- * A090001 Length of longest contiguous block of 1&apos;s in binary expansion of n^2.
+ * A090001 Length of longest contiguous block of 1's in binary expansion of n^2.
  * @author Georg Fischer
  */
 public class A090001 extends A090000 {

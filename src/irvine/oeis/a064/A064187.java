@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064187 First of n^2 odd consecutive primes whose sum (=S) is divisible by n and S/n = n mod 2.
+ * A064187 First of n^2 consecutive odd primes whose sum (=S) is divisible by n and S/n == n (mod 2).
  * @author Sean A. Irvine
  */
 public class A064187 extends Sequence1 {

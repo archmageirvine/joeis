@@ -9,6 +9,7 @@ import java.util.Map;
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
+import irvine.util.array.LongDynamicLongArray;
 
 /**
  * Generate integer partitions.  Uses algorithm <code>ZS1</code> described
@@ -38,6 +39,49 @@ public final class IntegerPartition {
       Arrays.fill(mX, 1);
       mX[0] = n;
     }
+  }
+
+  /**
+   * Compute the dual (or conjugate) of a partition.
+   * @param p partition
+   * @return dual of the partition
+   */
+  public static LongDynamicLongArray dual(final LongDynamicLongArray p) {
+    final LongDynamicLongArray dual = new LongDynamicLongArray();
+    for (long k = 0, j = p.length() - 1; k < p.get(0); ++k) {
+      while (p.get(j) <= k) {
+        --j;
+      }
+      dual.set(k, j + 1);
+    }
+    return dual;
+  }
+
+  /**
+   * Concatenates two sorted small vectors, preserving order.
+   * Used exclusively for combining two partitions.
+   * For example: <code>merge([4,1,1], [6,3]) =&gt; [6,4,3,1,1]</code>.
+   * @param p1 first partition
+   * @param p2 second partition
+   * @return merged partition
+   */
+  public static LongDynamicLongArray merge(final LongDynamicLongArray p1, final LongDynamicLongArray p2) {
+    final LongDynamicLongArray v = new LongDynamicLongArray();
+    final long len = p1.length() + p2.length();
+    for (long i = 0, j = 0, k = 0; k < len; ++k) {
+      if (i < p1.length() && j < p2.length()) {
+        if (p1.get(i) >= p2.get(j)) {
+          v.set(k, p1.get(i++));
+        } else {
+          v.set(k, p2.get(j++));
+        }
+      } else if (i < p1.length()) {
+        v.set(k, p1.get(i++));
+      } else {
+        v.set(k, p2.get(j++));
+      }
+    }
+    return v;
   }
 
   /**

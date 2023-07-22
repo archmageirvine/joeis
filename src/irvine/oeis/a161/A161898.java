@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 import irvine.oeis.DeadSequence;
 
 /**
- * A161898 Row sums of triangle A064580.
+ * A161898 Incorrect version of A159772.
  * @author Georg Fischer
  */
 public class A161898 extends DeadSequence {

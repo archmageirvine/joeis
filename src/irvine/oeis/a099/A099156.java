@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A099156 a(n) = 2^(n-1)*U(n-1, 2).
+ * A099156 a(n) = 2^(n-1)*ChebyshevU(n-1, 2).
  * @author Sean A. Irvine
  */
 public class A099156 extends LinearRecurrence {

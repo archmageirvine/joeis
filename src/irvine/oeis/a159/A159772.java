@@ -16,7 +16,7 @@ public class A159772 extends RowSumSequence {
 
   /** Construct the sequence. */
   public A159772() {
-    super(0, new A064580());
+    super(1, new A064580());
   }
 
   @Override

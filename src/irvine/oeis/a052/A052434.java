@@ -17,7 +17,7 @@ public class A052434 extends A000720 {
   private long mN = 1;
 
   /** Construct the sequence. */
-  protected A052434() {
+  public A052434() {
     super(2);
     super.next();
   }

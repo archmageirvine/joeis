@@ -10,15 +10,16 @@ public class A067497 extends A067480 {
 
   /** Construct the sequence. */
   public A067497() {
-    super(1);
+    this(0, 1);
   }
 
   /**
    * Generic constructor with parameters
+   * @param offset first index
    * @param digit leading digit
    */
-  public A067497(final int digit) {
-    super(digit);
+  public A067497(final int offset, final int digit) {
+    super(offset, digit);
   }
 
   @Override

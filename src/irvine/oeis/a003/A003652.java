@@ -13,7 +13,7 @@ public class A003652 extends A003658 implements Conjectural {
   // contains heuristics.
 
   /** Construct the sequence. */
-  protected A003652() {
+  public A003652() {
     super(2);
     super.next(); // skip 1
   }

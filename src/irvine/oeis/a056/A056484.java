@@ -1,25 +1,27 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A056484 Number of primitive (aperiodic) palindromic structures using exactly five different symbols.
  * @author Georg Fischer
  */
-public class A056484 extends A056478 {
+public class A056484 extends AbstractSequence {
 
-  private final Sequence mSeq = new A056479();
+  private final A056478 mSeq1 = new A056478();
+  private final A056479 mSeq2 = new A056479();
 
   /** Construct the sequence. */
-  protected A056484() {
+  public A056484() {
     super(1);
-    next();
+    mSeq1.next();
+    mSeq2.next();
   }
 
   @Override
   public Z next() {
-    return mSeq.next().subtract(super.next());
+    return mSeq2.next().subtract(mSeq1.next());
   }
 }
 

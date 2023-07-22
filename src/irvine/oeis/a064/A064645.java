@@ -29,7 +29,7 @@ public class A064645 extends Sequence0 {
     Z sum = Z.ONE;
     for (int i = 0; i <= n / 2; ++i) {
       for (int k = 1; k <= i; ++k) {
-        sum = sum.add(t(i, k).multiply(c(n- m * k, 2 * i)));
+        sum = sum.add(t(i, k).multiply(c(n - m * k, 2 * i)));
       }
     }
     return sum;

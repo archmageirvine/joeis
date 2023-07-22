@@ -11,7 +11,7 @@ public class A204168 extends A203991 {
 
   /** Construct the sequence. */
   public A204168() {
-    super(2, new UpperLeftTriangle(1, 1, -1));
+    super(1, new UpperLeftTriangle(1, 1, -1));
     mRow = 0;
     mCol = mRow;
   }

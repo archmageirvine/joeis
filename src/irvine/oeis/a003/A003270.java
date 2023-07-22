@@ -8,4 +8,10 @@ import irvine.oeis.a099.A099054;
  * @author Sean A. Irvine
  */
 public class A003270 extends A099054 implements Conjectural {
+
+  /** Construct the sequence. */
+  public A003270() {
+    super(1);
+  }
 }
+

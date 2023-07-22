@@ -14,7 +14,7 @@ public class A067480 extends A008952 {
 
   /** Construct the sequence. */
   public A067480() {
-    this(0, 2);
+    this(1, 2);
   }
 
   /**
@@ -22,7 +22,7 @@ public class A067480 extends A008952 {
    * @param digit leading digit
    */
   public A067480(final int digit) {
-    this(0, digit);
+    this(1, digit);
   }
 
   /**

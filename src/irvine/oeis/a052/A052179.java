@@ -27,7 +27,7 @@ public class A052179 extends Triangle {
    * @param y second parameter in recurrence
    */
   public A052179(final int offset, final long x, final long y) {
-    super();
+    super(offset);
     mX = Z.valueOf(x);
     mY = Z.valueOf(y);
   }

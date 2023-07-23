@@ -13,6 +13,6 @@ public class A060743 extends InverseSequence {
 
   /** Construct the sequence. */
   public A060743() {
-    super(new Combiner(0, new A000041(), new A000009(), Combiner.GCD).skip(1), 1);
+    super(new Combiner(1, new A000041(), new A000009(), Combiner.GCD).skip(1), 1);
   }
 }

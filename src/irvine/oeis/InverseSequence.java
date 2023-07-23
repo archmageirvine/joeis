@@ -49,7 +49,7 @@ public class InverseSequence extends AbstractSequence {
    * @param initial starting value to search for
    */
   public InverseSequence(final int offset, final Sequence seq, final long initial) {
-    this(offset, seq, initial, 1);
+    this(offset, seq, initial, seq.getOffset());
   }
 
   /**
@@ -58,7 +58,7 @@ public class InverseSequence extends AbstractSequence {
    * @param initial starting value to search for
    */
   public InverseSequence(final Sequence seq, final long initial) {
-    this(DEFOFF, seq, initial, 1);
+    this(DEFOFF, seq, initial, seq.getOffset());
   }
 
   /**

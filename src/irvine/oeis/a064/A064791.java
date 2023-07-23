@@ -4,7 +4,7 @@ package irvine.oeis.a064;
 import irvine.oeis.InverseSequence;
 
 /**
- * A064791 &quot;Inverse permutation&quot; to A064537. Limits of the recursion b(i+1)=B_[i](b(i)), where b(0)=n and B_[k](j) = B_[k-1](j) + k, k+1 &lt;= j &lt;= 2k; B_[k](j) = B_[k-1](j) - k, 2k+1 &lt;= j &lt;= 3k; B_[k](j) = B_[k-1](j) otherwise. Set a(n)=0 if b tends to infinity.
+ * A064791 "Inverse permutation" to A064537. Limits of the recursion b(i+1)=B_[i](b(i)), where b(0)=n and B_[k](j) = B_[k-1](j) + k, k+1 &lt;= j &lt;= 2k; B_[k](j) = B_[k-1](j) - k, 2k+1 &lt;= j &lt;= 3k; B_[k](j) = B_[k-1](j) otherwise. Set a(n)=0 if b tends to infinity.
  * @author Georg Fischer
  */
 public class A064791 extends InverseSequence {

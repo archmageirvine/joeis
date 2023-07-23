@@ -551,8 +551,6 @@ public abstract class CR extends Number implements Comparable<CR> {
    * Should be called only if <code>this != 0</code>.
    * In the 0 case, this will not terminate correctly; typically it
    * will run until it exhausts memory.
-   * If the two computable reals may be equal, the one or two argument
-   * version of signum should be used.
    * @return sign of the number
    */
   public int signum() {

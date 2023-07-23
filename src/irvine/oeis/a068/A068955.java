@@ -3,20 +3,28 @@ package irvine.oeis.a068;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a007.A007781;
 
 /**
  * A068955 Greatest prime factor of n^n - (n-1)^(n-1).
  * @author Georg Fischer
  */
-public class A068955 extends A007781 {
+public class A068955 extends AbstractSequence {
+
+  private final A007781 mSeq1 = new A007781();
+
+  /** Construct the sequence. */
+  public A068955() {
+    super(2);
+  }
 
   {
-    super.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).largestPrimeFactor();
+    return Jaguar.factor(mSeq1.next()).largestPrimeFactor();
   }
 }

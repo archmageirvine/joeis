@@ -3,20 +3,28 @@ package irvine.oeis.a190;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a066.A066138;
 
 /**
  * A190839 a(n) is the maximal prime divisor of 10^(2*n)+10^n+1.
  * @author Georg Fischer
  */
-public class A190839 extends A066138 {
+public class A190839 extends AbstractSequence {
+
+  private final A066138 mSeq1 = new A066138();
+
+  /** Construct the sequence. */
+  public A190839() {
+    super(1);
+  }
 
   {
-    super.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).largestPrimeFactor();
+    return Jaguar.factor(mSeq1.next()).largestPrimeFactor();
   }
 }

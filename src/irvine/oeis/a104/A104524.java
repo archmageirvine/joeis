@@ -3,21 +3,29 @@ package irvine.oeis.a104;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a178.A178769;
 
 /**
  * A104524 Number of distinct prime divisors of 55...557 (with n 5s).
  * @author Georg Fischer
  */
-public class A104524 extends A178769 {
+public class A104524 extends AbstractSequence {
+
+  private final A178769 mSeq1 = new A178769();
+
+  /** Construct the sequence. */
+  public A104524() {
+    super(1);
+  }
 
   {
-    super.next();
-    super.next();
+    mSeq1.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(super.next()).omega());
+    return Z.valueOf(Jaguar.factor(mSeq1.next()).omega());
   }
 }

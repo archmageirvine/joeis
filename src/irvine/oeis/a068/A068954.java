@@ -3,20 +3,28 @@ package irvine.oeis.a068;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a007.A007781;
 
 /**
  * A068954 Smallest prime factor of n^n-(n-1)^(n-1).
  * @author Georg Fischer
  */
-public class A068954 extends A007781 {
+public class A068954 extends AbstractSequence {
+
+  private final A007781 mSeq1 = new A007781();
+
+  /** Construct the sequence. */
+  public A068954() {
+    super(2);
+  }
 
   {
-    super.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).leastPrimeFactor();
+    return Jaguar.factor(mSeq1.next()).leastPrimeFactor();
   }
 }

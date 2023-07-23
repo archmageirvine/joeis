@@ -3,24 +3,32 @@ package irvine.oeis.a259;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a253.A253641;
 
 /**
  * A259362 a(1) = 1, for n &gt; 1: a(n) is the number of ways to write n as a nontrivial perfect power.
  * @author Georg Fischer
  */
-public class A259362 extends A253641 {
+public class A259362 extends AbstractSequence {
+
+  private final A253641 mSeq1 = new A253641();
+
+  /** Construct the sequence. */
+  public A259362() {
+    super(1);
+  }
 
   private int mN = 0;
 
   {
-    super.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
     ++mN;
-    final Z result = Jaguar.factor(super.next()).sigma0().subtract(1);
+    final Z result = Jaguar.factor(mSeq1.next()).sigma0().subtract(1);
     return (mN == 1) ? Z.ONE : result;
   }
 }

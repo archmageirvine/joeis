@@ -3,21 +3,28 @@ package irvine.oeis.a064;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000312;
 
 /**
  * A064447 a(n) = EulerPhi(n^n).
  * @author Georg Fischer
  */
-public class A064447 extends A000312 {
+public class A064447 extends AbstractSequence {
 
-  {
-    super.next();
+  private final A000312 mSeq1 = new A000312();
+
+  /** Construct the sequence. */
+  public A064447() {
+    super(1);
   }
 
+  {
+    mSeq1.next();
+  }
 
   @Override
   public Z next() {
-    return Euler.phi(super.next());
+    return Euler.phi(mSeq1.next());
   }
 }

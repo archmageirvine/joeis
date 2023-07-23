@@ -3,21 +3,29 @@ package irvine.oeis.a107;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000073;
 
 /**
  * A107647 Euler's totient function applied to tribonacci numbers.
  * @author Georg Fischer
  */
-public class A107647 extends A000073 {
+public class A107647 extends AbstractSequence {
+
+  private final A000073 mSeq1 = new A000073();
+
+  /** Construct the sequence. */
+  public A107647() {
+    super(2);
+  }
 
   {
-    super.next();
-    super.next();
+    mSeq1.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Euler.phi(super.next());
+    return Euler.phi(mSeq1.next());
   }
 }

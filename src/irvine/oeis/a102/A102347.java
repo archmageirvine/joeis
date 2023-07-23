@@ -3,20 +3,28 @@ package irvine.oeis.a102;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a002.A002283;
 
 /**
  * A102347 Number of distinct prime factors of 10^n - 1.
  * @author Georg Fischer
  */
-public class A102347 extends A002283 {
+public class A102347 extends AbstractSequence {
+
+  private final A002283 mSeq1 = new A002283();
+
+  /** Construct the sequence. */
+  public A102347() {
+    super(1);
+  }
 
   {
-    super.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(super.next()).omega());
+    return Z.valueOf(Jaguar.factor(mSeq1.next()).omega());
   }
 }

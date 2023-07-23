@@ -3,16 +3,24 @@ package irvine.oeis.a254;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a087.A087289;
 
 /**
  * A254046 Column index of n in A191450: a(3n) = 1, a(3n+1) = 1, a(3n+2) = 1 + a(n+1).
  * @author Georg Fischer
  */
-public class A254046 extends A087289 {
+public class A254046 extends AbstractSequence {
+
+  private final A087289 mSeq1 = new A087289();
+
+  /** Construct the sequence. */
+  public A254046() {
+    super(1);
+  }
 
   @Override
   public Z next() {
-    return Z.valueOf(ZUtils.valuation(super.next(), Z.THREE));
+    return Z.valueOf(ZUtils.valuation(mSeq1.next(), Z.THREE));
   }
 }

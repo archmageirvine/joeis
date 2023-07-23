@@ -3,20 +3,28 @@ package irvine.oeis.a067;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a062.A062709;
 
 /**
  * A067390 Number of distinct prime factors in 2^n + 3.
  * @author Georg Fischer
  */
-public class A067390 extends A062709 {
+public class A067390 extends AbstractSequence {
+
+  private final A062709 mSeq1 = new A062709();
+
+  /** Construct the sequence. */
+  public A067390() {
+    super(1);
+  }
 
   {
-    super.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(super.next()).omega());
+    return Z.valueOf(Jaguar.factor(mSeq1.next()).omega());
   }
 }

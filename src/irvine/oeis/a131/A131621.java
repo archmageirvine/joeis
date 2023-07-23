@@ -2,13 +2,16 @@ package irvine.oeis.a131;
 // manually 2021-01-20
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000129;
 
 /**
  * A131621 Sum of all n-digit Pell numbers.
  * @author Georg Fischer
  */
-public class A131621 extends A000129 {
+public class A131621 extends AbstractSequence {
+
+  private final A000129 mSeq1 = new A000129();
 
   protected Z mPell; // next Pell number
   protected Z mSum; // current sum
@@ -16,7 +19,8 @@ public class A131621 extends A000129 {
 
   /** Construct the sequence. */
   public A131621() {
-    mPell = super.next();
+    super(1);
+    mPell = mSeq1.next();
     mSum = Z.ZERO;
     mPow10 = Z.TEN;
   }
@@ -25,7 +29,7 @@ public class A131621 extends A000129 {
   public Z next() {
     while (mPell.compareTo(mPow10) < 0) {
       mSum = mSum.add(mPell);
-      mPell = super.next();
+      mPell = mSeq1.next();
     }
     final Z result = mSum;
     mSum = Z.ZERO;

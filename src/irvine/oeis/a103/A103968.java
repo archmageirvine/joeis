@@ -3,20 +3,28 @@ package irvine.oeis.a103;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a023.A023001;
 
 /**
  * A103968 Sigma((8^n - 1)/7), where sigma(n) is the sum of positive divisors of n.
  * @author Georg Fischer
  */
-public class A103968 extends A023001 {
+public class A103968 extends AbstractSequence {
+
+  private final A023001 mSeq1 = new A023001();
+
+  /** Construct the sequence. */
+  public A103968() {
+    super(1);
+  }
 
   {
-    super.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).sigma();
+    return Jaguar.factor(mSeq1.next()).sigma();
   }
 }

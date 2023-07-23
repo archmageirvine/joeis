@@ -3,21 +3,29 @@ package irvine.oeis.a264;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000129;
 
 /**
  * A264137 Largest prime factor of the n-th Pell number, A000129(n).
  * @author Georg Fischer
  */
-public class A264137 extends A000129 {
+public class A264137 extends AbstractSequence {
+
+  private final A000129 mSeq1 = new A000129();
+
+  /** Construct the sequence. */
+  public A264137() {
+    super(2);
+  }
 
   {
-    super.next();
-    super.next();
+    mSeq1.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).largestPrimeFactor();
+    return Jaguar.factor(mSeq1.next()).largestPrimeFactor();
   }
 }

@@ -1,16 +1,24 @@
 package irvine.oeis.a061;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a011.A011778;
 
 /**
  * A061769 The least number k = a(n) &gt; a(n-1) for which k!/(k+1)^m for increasing m's.
  * @author Sean A. Irvine
  */
-public class A061769 extends A011778 {
+public class A061769 extends AbstractSequence {
+
+  private final A011778 mSeq1 = new A011778();
+
+  /** Construct the sequence. */
+  public A061769() {
+    super(0);
+  }
 
   @Override
   public Z next() {
-    return super.next().subtract(1);
+    return mSeq1.next().subtract(1);
   }
 }

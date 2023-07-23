@@ -5,12 +5,20 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A052320 Number of labeled trimmed trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A052320 extends A052318 {
+public class A052320 extends AbstractSequence {
+
+  private final A052318 mSeq1 = new A052318();
+
+  /** Construct the sequence. */
+  public A052320() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final Polynomial<Q> mB = RING.empty();
@@ -24,7 +32,7 @@ public class A052320 extends A052318 {
       return Z.ONE;
     }
     mF = mF.multiply(mN);
-    mB.add(new Q(super.next(), mF));
+    mB.add(new Q(mSeq1.next(), mF));
     if (mN <= 2) {
       return Z.ONE; // avoid need for "corrections" to e.g.f.
     } else if (mN == 3) {

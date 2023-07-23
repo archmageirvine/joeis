@@ -4,19 +4,28 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000084;
 
 /**
  * A036655 Numbers d_n used in recurrence for series-parallel numbers.
  * @author Sean A. Irvine
  */
-public class A036655 extends A000084 {
+public class A036655 extends AbstractSequence {
+
+  private final A000084 mSeq1 = new A000084();
+
+  /** Construct the sequence. */
+  public A036655() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;
   private final Polynomial<Z> mS = RING.empty();
   private final Polynomial<Z> mSp = RING.empty();
   private final Polynomial<Z> mSm = RING.empty();
+
   {
     mS.add(Z.ZERO);
     mSp.add(Z.ONE);
@@ -26,7 +35,7 @@ public class A036655 extends A000084 {
   @Override
   public Z next() {
     ++mN;
-    final Z s = super.next();
+    final Z s = mSeq1.next();
     mS.add(s);
     mSp.add(s);
     mSm.add(s.negate());

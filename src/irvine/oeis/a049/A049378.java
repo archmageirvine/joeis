@@ -1,12 +1,20 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A049378 Row sums of triangle A049353.
  * @author Sean A. Irvine
  */
-public class A049378 extends A049353 {
+public class A049378 extends AbstractSequence {
+
+  private final A049353 mSeq1 = new A049353();
+
+  /** Construct the sequence. */
+  public A049378() {
+    super(0);
+  }
 
   private long mN = -1;
 
@@ -17,7 +25,7 @@ public class A049378 extends A049353 {
     }
     Z sum = Z.ZERO;
     for (long k = 0; k < mN; ++k) {
-      sum = sum.add(super.next());
+      sum = sum.add(mSeq1.next());
     }
     return sum;
   }

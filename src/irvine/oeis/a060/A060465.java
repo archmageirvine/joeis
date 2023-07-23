@@ -2,12 +2,20 @@ package irvine.oeis.a060;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A060465 Value of x of the solution to x^3 + y^3 + z^3 = A060464(n) (numbers not 4 or 5 mod 9) with smallest |z| and smallest |y|, 0 &lt;= |x| &lt;= |y| &lt;= |z|.
  * @author Sean A. Irvine
  */
-public class A060465 extends A060464 {
+public class A060465 extends AbstractSequence {
+
+  private final A060464 mSeq1 = new A060464();
+
+  /** Construct the sequence. */
+  public A060465() {
+    super(0);
+  }
 
   static Z check(final Z x3, final long y, final long z, final Z n) {
     final Z x = x3.root(3);
@@ -24,7 +32,7 @@ public class A060465 extends A060464 {
 
   @Override
   public Z next() {
-    final Z n = super.next();
+    final Z n = mSeq1.next();
     if (n.isZero()) {
       return Z.ZERO;
     }

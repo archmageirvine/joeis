@@ -9,17 +9,26 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a003.A003426;
 
 /**
  * A006544 Number of stable forests with n nodes.
  * @author Sean A. Irvine
  */
-public class A006544 extends A003426 {
+public class A006544 extends AbstractSequence {
+
+  private final A003426 mSeq1 = new A003426();
+
+  /** Construct the sequence. */
+  public A006544() {
+    super(0);
+  }
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;
   private final List<Q> mS = new ArrayList<>();
+
   {
     mS.add(Q.ZERO);
   }
@@ -29,7 +38,7 @@ public class A006544 extends A003426 {
     if (++mN == 0) {
       return Z.ONE;
     }
-    mS.add(new Q(super.next()));
+    mS.add(new Q(mSeq1.next()));
     final Polynomial<Q> s = RING.create(mS);
     Q r = Q.ZERO;
     for (int k = 1; k <= mN; ++k) {

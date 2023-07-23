@@ -1,13 +1,21 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a001.A001511;
 
 /**
  * A059129 A hierarchical sequence (W2{2}* - see A059126).
  * @author Sean A. Irvine
  */
-public class A059129 extends A001511 {
+public class A059129 extends AbstractSequence {
+
+  private final A001511 mSeq1 = new A001511();
+
+  /** Construct the sequence. */
+  public A059129() {
+    super(0);
+  }
 
   private Z mA = null;
   private long mN = -1;
@@ -17,7 +25,7 @@ public class A059129 extends A001511 {
     switch ((int) (++mN % 3)) {
       case 0:
         do {
-          mA = super.next();
+          mA = mSeq1.next();
         } while (Z.ONE.equals(mA));
         return mA.subtract(1);
       case 1:

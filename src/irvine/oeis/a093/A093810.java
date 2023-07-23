@@ -3,21 +3,29 @@ package irvine.oeis.a093;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a036.A036563;
 
 /**
  * A093810 Smallest prime factor of 2^n-3.
  * @author Georg Fischer
  */
-public class A093810 extends A036563 {
+public class A093810 extends AbstractSequence {
+
+  private final A036563 mSeq1 = new A036563();
+
+  /** Construct the sequence. */
+  public A093810() {
+    super(2);
+  }
 
   {
-    super.next();
-    super.next();
+    mSeq1.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).leastPrimeFactor();
+    return Jaguar.factor(mSeq1.next()).leastPrimeFactor();
   }
 }

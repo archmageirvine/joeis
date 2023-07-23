@@ -3,21 +3,30 @@ package irvine.oeis.a104;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000078;
 
 /**
  * A104411 Number of prime factors, with multiplicity, of the tetranacci numbers A000078.
  * @author Georg Fischer
  */
-public class A104411 extends A000078 {
+public class A104411 extends AbstractSequence {
+
+  private final A000078 mSeq1 = new A000078();
+
+  /** Construct the sequence. */
+  public A104411() {
+    super(3);
+  }
+
   {
-    super.next();
-    super.next();
-    super.next();
+    mSeq1.next();
+    mSeq1.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(super.next()).bigOmega());
+    return Z.valueOf(Jaguar.factor(mSeq1.next()).bigOmega());
   }
 }

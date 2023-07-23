@@ -3,15 +3,24 @@ package irvine.oeis.a105;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a170.A170955;
 
 /**
  * A105259 Number of distinct prime divisors of 99..91 (with n 9's).
  * @author Georg Fischer
  */
-public class A105259 extends A170955 {
+public class A105259 extends AbstractSequence {
+
+  private final A170955 mSeq1 = new A170955();
+
+  /** Construct the sequence. */
+  public A105259() {
+    super(0);
+  }
+
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(super.next()).omega());
+    return Z.valueOf(Jaguar.factor(mSeq1.next()).omega());
   }
 }

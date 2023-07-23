@@ -3,20 +3,28 @@ package irvine.oeis.a295;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a002.A002283;
 
 /**
  * A295503 a(n) = phi(10^n-1), where phi is Euler's totient function (A000010).
  * @author Georg Fischer
  */
-public class A295503 extends A002283 {
+public class A295503 extends AbstractSequence {
+
+  private final A002283 mSeq1 = new A002283();
+
+  /** Construct the sequence. */
+  public A295503() {
+    super(1);
+  }
 
   {
-    super.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Euler.phi(super.next());
+    return Euler.phi(mSeq1.next());
   }
 }

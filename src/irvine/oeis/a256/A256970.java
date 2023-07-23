@@ -3,20 +3,28 @@ package irvine.oeis.a256;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a053.A053755;
 
 /**
  * A256970 Smallest prime divisor of 4*n^2+1.
  * @author Georg Fischer
  */
-public class A256970 extends A053755 {
+public class A256970 extends AbstractSequence {
+
+  private final A053755 mSeq1 = new A053755();
+
+  /** Construct the sequence. */
+  public A256970() {
+    super(1);
+  }
 
   {
-    super.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).leastPrimeFactor();
+    return Jaguar.factor(mSeq1.next()).leastPrimeFactor();
   }
 }

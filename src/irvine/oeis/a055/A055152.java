@@ -1,6 +1,7 @@
 package irvine.oeis.a055;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a003.A003180;
 
 /**
@@ -8,18 +9,21 @@ import irvine.oeis.a003.A003180;
  * a(n) = (A003180(n) - 2*A003180(n-1))/4.
  * @author Georg Fischer
  */
-public class A055152 extends A003180 {
+public class A055152 extends AbstractSequence {
+
+  private final A003180 mSeq1 = new A003180();
 
   private Z mA1;
 
   /** Construct the sequence. */
   public A055152() {
-    mA1 = super.next();
+    super(1);
+    mA1 = mSeq1.next();
   }
 
   @Override
   public Z next() {
-    final Z mA = super.next();
+    final Z mA = mSeq1.next();
     final Z result = mA.subtract(mA1.multiply2()).divide(4);
     mA1 = mA;
     return result;

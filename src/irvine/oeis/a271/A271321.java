@@ -3,21 +3,29 @@ package irvine.oeis.a271;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a060.A060354;
 
 /**
  * A271321 Smallest prime factor of the n-th n-gonal number (A060354).
  * @author Georg Fischer
  */
-public class A271321 extends A060354 {
+public class A271321 extends AbstractSequence {
+
+  private final A060354 mSeq1 = new A060354();
+
+  /** Construct the sequence. */
+  public A271321() {
+    super(2);
+  }
 
   {
-    super.next();
-    super.next();
+    mSeq1.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).leastPrimeFactor();
+    return Jaguar.factor(mSeq1.next()).leastPrimeFactor();
   }
 }

@@ -3,21 +3,29 @@ package irvine.oeis.a271;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a060.A060354;
 
 /**
  * A271320 Number of prime factors, with multiplicity, of the n-th n-gonal number (A060354).
  * @author Georg Fischer
  */
-public class A271320 extends A060354 {
+public class A271320 extends AbstractSequence {
+
+  private final A060354 mSeq1 = new A060354();
+
+  /** Construct the sequence. */
+  public A271320() {
+    super(2);
+  }
 
   {
-    super.next();
-    super.next();
+    mSeq1.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(super.next()).bigOmega());
+    return Z.valueOf(Jaguar.factor(mSeq1.next()).bigOmega());
   }
 }

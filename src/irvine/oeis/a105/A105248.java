@@ -3,15 +3,24 @@ package irvine.oeis.a105;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a173.A173812;
 
 /**
  * A105248 Number of distinct prime divisors of 88...887 (with n 8's).
  * @author Georg Fischer
  */
-public class A105248 extends A173812 {
+public class A105248 extends AbstractSequence {
+
+  private final A173812 mSeq1 = new A173812();
+
+  /** Construct the sequence. */
+  public A105248() {
+    super(0);
+  }
+
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(super.next()).omega());
+    return Z.valueOf(Jaguar.factor(mSeq1.next()).omega());
   }
 }

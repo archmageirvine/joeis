@@ -3,21 +3,29 @@ package irvine.oeis.a253;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a051.A051682;
 
 /**
  * A253254 Largest prime factor of the n-th 11-gonal number.
  * @author Georg Fischer
  */
-public class A253254 extends A051682 {
+public class A253254 extends AbstractSequence {
+
+  private final A051682 mSeq1 = new A051682();
+
+  /** Construct the sequence. */
+  public A253254() {
+    super(2);
+  }
 
   {
-    super.next();
-    super.next();
+    mSeq1.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).largestPrimeFactor();
+    return Jaguar.factor(mSeq1.next()).largestPrimeFactor();
   }
 }

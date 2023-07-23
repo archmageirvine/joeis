@@ -3,20 +3,28 @@ package irvine.oeis.a104;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a173.A173766;
 
 /**
  * A104483 Number of distinct prime divisors of 33...337 (with n 3s).
  * @author Georg Fischer
  */
-public class A104483 extends A173766 {
+public class A104483 extends AbstractSequence {
+
+  private final A173766 mSeq1 = new A173766();
+
+  /** Construct the sequence. */
+  public A104483() {
+    super(0);
+  }
 
   {
-    super.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(super.next()).omega());
+    return Z.valueOf(Jaguar.factor(mSeq1.next()).omega());
   }
 }

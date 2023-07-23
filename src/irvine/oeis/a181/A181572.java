@@ -3,20 +3,28 @@ package irvine.oeis.a181;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a104.A104745;
 
 /**
  * A181572 Number of distinct prime divisors of 5^n + n.
  * @author Georg Fischer
  */
-public class A181572 extends A104745 {
+public class A181572 extends AbstractSequence {
+
+  private final A104745 mSeq1 = new A104745();
+
+  /** Construct the sequence. */
+  public A181572() {
+    super(1);
+  }
 
   {
-    super.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(super.next()).omega());
+    return Z.valueOf(Jaguar.factor(mSeq1.next()).omega());
   }
 }

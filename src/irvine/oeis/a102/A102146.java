@@ -3,20 +3,28 @@ package irvine.oeis.a102;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a002.A002283;
 
 /**
  * A102146 a(n) = sigma(10^n - 1), where sigma(n) is the sum of positive divisors of n.
  * @author Georg Fischer
  */
-public class A102146 extends A002283 {
+public class A102146 extends AbstractSequence {
+
+  private final A002283 mSeq1 = new A002283();
+
+  /** Construct the sequence. */
+  public A102146() {
+    super(1);
+  }
 
   {
-    super.next();
+    mSeq1.next();
   }
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).sigma();
+    return Jaguar.factor(mSeq1.next()).sigma();
   }
 }

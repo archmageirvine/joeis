@@ -1,21 +1,30 @@
 package irvine.oeis.a056;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
  * A056370 Number of primitive (period n) bracelet structures using exactly six different colored beads.
  * @author Sean A. Irvine
  */
-public class A056370 extends A056365 {
+public class A056370 extends AbstractSequence {
+
+  private final A056365 mSeq1 = new A056365();
+
+  /** Construct the sequence. */
+  public A056370() {
+    super(1);
+  }
 
   private final Sequence mA = new A056364();
+
   {
     next();
   }
 
   @Override
   public Z next() {
-    return super.next().subtract(mA.next());
+    return mSeq1.next().subtract(mA.next());
   }
 }

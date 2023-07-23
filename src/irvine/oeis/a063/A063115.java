@@ -12,12 +12,12 @@ import irvine.util.array.DynamicIntArray;
  */
 public class A063115 extends AbstractSequence {
 
-  protected final DynamicIntArray mSmallest = new DynamicIntArray();
-  protected int mN = -1;
-  protected Z mA = Z.ONE;
-  protected int mM = 1; // actually one larger than power of 2, as 0 is "unknown" in array
-  protected int mParm1;
-  protected int mParm2;
+  private final DynamicIntArray mSmallest = new DynamicIntArray();
+  private int mN;
+  private Z mA = Z.ONE;
+  private int mM = 1; // actually one larger than power of 2, as 0 is "unknown" in array
+  private final int mParm1;
+  private final int mParm2;
 
   /** Construct the sequence. */
   public A063115() {
@@ -25,7 +25,7 @@ public class A063115 extends AbstractSequence {
   }
 
   /**
-   * Generic constructor with parameters
+   * Generic constructor with parameters.
    * @param offset first index
    * @param parm1 base
    * @param parm2 desired digits
@@ -34,6 +34,7 @@ public class A063115 extends AbstractSequence {
     super(offset);
     mParm1 = parm1;
     mParm2 = parm2;
+    mN = offset - 1;
   }
 
   @Override

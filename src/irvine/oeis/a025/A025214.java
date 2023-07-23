@@ -9,6 +9,10 @@ import irvine.math.z.Z;
  */
 public class A025214 extends A025212 {
 
+  {
+    setOffset(4);
+  }
+
   private int mN = 3;
   private Q mSum = Q.ZERO;
 

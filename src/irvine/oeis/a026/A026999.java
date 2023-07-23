@@ -10,6 +10,10 @@ import irvine.math.z.Z;
  */
 public class A026999 extends A026998 {
 
+  {
+    setOffset(1);
+  }
+
   private long mRow = 1;
   private Z mLast = Z.ZERO;
   private Z mLeading = get(mRow, 2 * mRow - 2);

@@ -11,6 +11,10 @@ import irvine.oeis.a002.A002854;
  */
 public class A054745 extends A002854 {
 
+  {
+    setOffset(0);
+  }
+
   private static final int[][] PART2 = {{0, 2, 0}, {0, 0, 1}}; // precomputed partitions of 2 in count form
 
   /** Construct the sequence. */

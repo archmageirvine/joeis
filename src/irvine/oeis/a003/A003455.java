@@ -10,6 +10,10 @@ import irvine.math.z.Z;
  */
 public class A003455 extends A003447 {
 
+  {
+    setOffset(3);
+  }
+
   private int mN = 0;
 
   private Polynomial<Q> h(final int r, final int n) {

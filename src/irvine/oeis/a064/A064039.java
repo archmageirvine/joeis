@@ -11,6 +11,10 @@ import irvine.oeis.a060.A060496;
  */
 public class A064039 extends A060117 {
 
+  {
+    setOffset(1);
+  }
+
   private int mN = -1;
 
   private int[] inversionVector(final IntegerPermutation p) {

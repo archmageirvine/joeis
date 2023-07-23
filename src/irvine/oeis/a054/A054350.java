@@ -10,6 +10,10 @@ import irvine.oeis.a000.A000002;
  */
 public class A054350 extends A000002 {
 
+  {
+    setOffset(0);
+  }
+
   private final Sequence mRowLengths = new A054352();
   private long mRowLength = mRowLengths.next().longValueExact();
   private long mM = -1;

@@ -11,6 +11,10 @@ import irvine.oeis.a060.A060052;
  */
 public class A059443 extends A060052 {
 
+  {
+    setOffset(2);
+  }
+
   @Override
   protected Z t(final int n, final int m) {
     return Integers.SINGLETON.sum(0, n, k -> Stirling.secondKind(n, k).multiply(super.t(k, m)));

@@ -10,6 +10,10 @@ import irvine.oeis.a001.A001088;
  */
 public class A060239 extends A001088 {
 
+  {
+    setOffset(1);
+  }
+
   private final Fast mPrime = new Fast();
   private int mN = 0;
 

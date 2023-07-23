@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A058803 extends A058804 {
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     return super.next().multiply(Math.max(1, mN + 1));

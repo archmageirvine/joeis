@@ -9,7 +9,12 @@ import irvine.math.z.Z;
  */
 public class A025544 extends A025543 {
 
+  {
+    setOffset(1);
+  }
+
   private final PrimeDivision mFactor = new PrimeDivision();
+
   {
     super.next();
   }

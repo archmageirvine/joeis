@@ -11,6 +11,10 @@ import irvine.oeis.a000.A000186;
  */
 public class A001627 extends A000186 implements Serializable {
 
+  {
+    setOffset(1);
+  }
+
   private int mN = -1;
   private Z mMu1 = super.next();
   private final A001626 mDeltaSeq = new A001626();

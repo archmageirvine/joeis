@@ -10,6 +10,10 @@ import irvine.oeis.a276.A276640;
  */
 public class A060052 extends A276640 {
 
+  {
+    setOffset(2);
+  }
+
   private int mN = 1;
   private int mM = 1;
 

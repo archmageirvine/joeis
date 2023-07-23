@@ -10,6 +10,10 @@ import irvine.oeis.a004.A004251;
  */
 public class A007722 extends A004251 {
 
+  {
+    setOffset(3);
+  }
+
   // Based on the Kai Wang paper
 
   {

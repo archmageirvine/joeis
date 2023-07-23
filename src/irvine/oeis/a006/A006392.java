@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A006392 extends A006388 {
 
+  {
+    setOffset(2);
+  }
+
   @Override
   protected boolean reject(final int e) {
     if (super.reject(e)) {

@@ -9,6 +9,10 @@ import irvine.util.string.Italian;
  */
 public class A063761 extends A000052 {
 
+  {
+    setOffset(0);
+  }
+
   /** Construct the sequence. */
   public A063761() {
     super(Italian.SINGLETON);

@@ -10,6 +10,10 @@ import irvine.oeis.a035.A035143;
  */
 public class A055668 extends A035143 {
 
+  {
+    setOffset(0);
+  }
+
   private final Sequence mNorms = new A055664();
   private long mM = 0;
 

@@ -6,6 +6,10 @@ package irvine.oeis.a050;
  */
 public class A050775 extends A050768 {
 
+  {
+    setOffset(1);
+  }
+
   @Override
   protected int iterations() {
     return 8;

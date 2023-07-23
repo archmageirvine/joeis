@@ -14,6 +14,10 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A319394 extends Triangle {
 
+  {
+    setOffset(0);
+  }
+
   /**
    * Constructor with offset.
    * @param offset first index

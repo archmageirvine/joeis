@@ -11,6 +11,10 @@ import irvine.oeis.ConvolutionSequence;
  */
 public class A000628 extends A000625 {
 
+  {
+    setOffset(0);
+  }
+
   private final ConvolutionSequence mCQ = new ConvolutionSequence(new A000625());
   private final ArrayList<Z> mQ = new ArrayList<>();
   private final ArrayList<Z> mA625 = new ArrayList<>();

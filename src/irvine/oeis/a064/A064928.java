@@ -10,6 +10,10 @@ import irvine.oeis.a034.A034175;
  */
 public class A064928 extends InverseSequence {
 
+  {
+    setOffset(0);
+  }
+
   /** Construct the sequence. */
   public A064928() {
     super(new A034175(), 0, 0);

@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A049879 extends A049821 {
 
+  {
+    setOffset(3);
+  }
+
   @Override
   protected Z select(final int k, final int j) {
     return Z.valueOf(k - j);

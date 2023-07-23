@@ -9,6 +9,10 @@ import irvine.oeis.a048.A048805;
  */
 public class A055370 extends A048805 {
 
+  {
+    setOffset(1);
+  }
+
   /** Construct the sequence. */
   public A055370() {
     super(new FilterSequence(new A055363(), FilterSequence.NONZERO).skip(2));

@@ -12,22 +12,26 @@ import irvine.oeis.a054.A054733;
  */
 public class A053454 extends A054733 {
 
+  {
+    setOffset(0);
+  }
+
   private final ArrayList<Polynomial<Z>> mA = new ArrayList<>();
-  private int mN = -2;
+  private int mN = -1;
 
   @Override
   public Z next() {
-    if (++mN <= 0) {
+    if (++mN <= 1) {
       return Z.ONE;
     }
     Z sum = Z.ZERO;
     int k = -1;
     while (true) {
       if (++k >= mA.size()) {
-        mA.add(getRow(mA.size() + 2));
+        mA.add(getRow(mA.size()));
       }
       final Polynomial<Z> row = mA.get(k);
-      final Z t = row.coeff(mN);
+      final Z t = row.coeff(mN - 1);
       if (t.isZero() && mN <= row.degree()) {
         return sum;
       }

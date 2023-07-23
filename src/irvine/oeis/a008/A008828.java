@@ -12,6 +12,10 @@ import irvine.util.Pair;
  */
 public class A008828 extends A006657 {
 
+  {
+    setOffset(1);
+  }
+
   private int mN = 0;
   private int mM = 0;
   private Z[] mTotals = null;

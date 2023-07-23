@@ -9,6 +9,10 @@ import irvine.oeis.a045.A045749;
  */
 public class A187570 extends A045749 {
 
+  {
+    setOffset(1);
+  }
+
   /** Construct the sequence. */
   public A187570() {
     skip(1);

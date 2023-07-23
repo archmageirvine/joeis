@@ -6,6 +6,10 @@ package irvine.oeis.a006;
  */
 public class A006619 extends A006614 {
 
+  {
+    setOffset(2);
+  }
+
   @Override
   protected int init() {
     return 1;

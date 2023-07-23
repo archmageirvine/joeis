@@ -14,6 +14,10 @@ import irvine.oeis.a058.A058870;
  */
 public class A063688 extends A063687 {
 
+  {
+    setOffset(1);
+  }
+
   private static final CycleIndex Z3 = SymmetricGroup.create(3).cycleIndex();
   private int mN = -1;
   private final Polynomial<Z> mM = RING.empty();

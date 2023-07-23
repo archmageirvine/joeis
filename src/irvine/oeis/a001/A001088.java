@@ -10,6 +10,10 @@ import irvine.oeis.Sequence1;
  */
 public class A001088 extends Sequence1 {
 
+  {
+    setOffset(0);
+  }
+
   private Z mP = Z.ONE;
   private long mN = 0;
 

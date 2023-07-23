@@ -9,6 +9,10 @@ import irvine.oeis.a026.A026120;
  */
 public class A027323 extends A026120 {
 
+  {
+    setOffset(1);
+  }
+
   private long mN = 0;
 
   @Override

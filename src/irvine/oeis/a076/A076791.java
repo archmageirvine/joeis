@@ -11,6 +11,10 @@ import irvine.oeis.a208.A208509;
  */
 public class A076791 extends A208509 {
 
+  {
+    setOffset(0);
+  }
+
   /** Construct the sequence. */
   public A076791() {
     super(1, Polynomial.create(0, 1), Polynomial.create(1), Polynomial.create(0), Polynomial.create(1), Polynomial.create(1), Polynomial.create(0));

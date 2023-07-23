@@ -10,6 +10,10 @@ import irvine.math.z.Z;
  */
 public class A049882 extends A049881 {
 
+  {
+    setOffset(4);
+  }
+
   private final TreeSet<Long> mSeen3 = new TreeSet<>();
   private long mP = 5;
 

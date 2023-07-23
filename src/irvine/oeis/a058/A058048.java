@@ -9,6 +9,10 @@ import irvine.util.string.StringUtils;
  */
 public class A058048 extends A058047 {
 
+  {
+    setOffset(1);
+  }
+
   private boolean mFirst = true;
 
   @Override

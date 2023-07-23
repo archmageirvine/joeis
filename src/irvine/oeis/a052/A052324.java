@@ -12,6 +12,10 @@ import irvine.math.z.Z;
  */
 public class A052324 extends A052318 {
 
+  {
+    setOffset(0);
+  }
+
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> X3 = RING.monomial(new Q(1, 6), 3);
   private Polynomial<Q> mA = RING.zero();

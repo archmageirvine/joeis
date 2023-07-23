@@ -9,6 +9,10 @@ import irvine.oeis.a000.A000002;
  */
 public class A022293 extends A000002 {
 
+  {
+    setOffset(0);
+  }
+
   private long mA = 0; // Counts 2 * the number of 1s
 
   @Override

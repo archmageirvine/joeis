@@ -10,10 +10,16 @@ import irvine.math.z.Z;
  */
 public class A006350 extends A006349 {
 
+  {
+    setOffset(1);
+  }
+
   private final ArrayList<Z> mT = new ArrayList<>();
+
   {
     mT.add(Z.ZERO);
   }
+
   private int mN = 0;
 
   @Override

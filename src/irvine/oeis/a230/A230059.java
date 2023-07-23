@@ -5,10 +5,13 @@ import irvine.oeis.a340.A340445;
 
 /**
  * A230059 Conjectural number of irreducible zeta values of weight 2*n+1 and depth three.
- *
  * @author Georg Fischer
  */
 public class A230059 extends A340445 {
+
+  {
+    setOffset(1);
+  }
 
   /** Construct the sequence. */
   public A230059() {

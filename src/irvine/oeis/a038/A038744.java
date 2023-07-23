@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A038744 extends A038738 {
 
+  {
+    setOffset(0);
+  }
+
   private long mN = -1;
 
   @Override

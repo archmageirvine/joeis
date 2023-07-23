@@ -11,6 +11,7 @@ import irvine.oeis.a002.A002851;
 public class A033700 extends A002851 {
 
   {
+    setOffset(5);
     for (int k = 0; k <= degree(); ++k) {
       next();
     }

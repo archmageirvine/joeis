@@ -6,6 +6,10 @@ package irvine.oeis.a046;
  */
 public class A046722 extends A046721 {
 
+  {
+    setOffset(3);
+  }
+
   @Override
   protected int components() {
     return 3;

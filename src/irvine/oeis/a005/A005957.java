@@ -12,6 +12,10 @@ import irvine.oeis.a000.A000625;
  */
 public class A005957 extends A000625 {
 
+  {
+    setOffset(1);
+  }
+
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
 
   @Override

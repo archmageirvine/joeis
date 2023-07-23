@@ -6,6 +6,10 @@ package irvine.oeis.a005;
  */
 public class A005981 extends A005982 {
 
+  {
+    setOffset(0);
+  }
+
   @Override
   protected long start() {
     return 1 - size();

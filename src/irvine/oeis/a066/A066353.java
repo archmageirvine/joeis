@@ -11,6 +11,10 @@ import irvine.oeis.a032.A032378;
  */
 public class A066353 extends PartialSumSequence {
 
+  {
+    setOffset(0);
+  }
+
   /** Construct the sequence. */
   public A066353() {
     super(1, new PrependSequence(new A032378(), 1));

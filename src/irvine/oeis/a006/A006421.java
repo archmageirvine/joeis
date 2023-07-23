@@ -8,6 +8,10 @@ import irvine.math.z.Z;
  */
 public class A006421 extends A006398 {
 
+  {
+    setOffset(2);
+  }
+
   @Override
   protected boolean reject(final int e) {
     return hasIsthmus(e, mS);

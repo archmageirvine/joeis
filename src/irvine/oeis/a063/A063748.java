@@ -11,6 +11,10 @@ import irvine.oeis.a051.A051953;
  */
 public class A063748 extends A051953 {
 
+  {
+    setOffset(2);
+  }
+
   private final HashMap<Long, Long> mSeen = new HashMap<>();
   private long mM = 1;
 

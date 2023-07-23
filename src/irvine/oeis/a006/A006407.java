@@ -7,6 +7,7 @@ package irvine.oeis.a006;
 public class A006407 extends A006395 {
 
   {
+    setOffset(3);
     next();
     next();
   }

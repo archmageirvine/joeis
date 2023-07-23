@@ -9,6 +9,10 @@ import irvine.oeis.a004.A004251;
  */
 public class A007721 extends A004251 {
 
+  {
+    setOffset(1);
+  }
+
   // Based on the Kai Wang paper
 
   private int mN = 0;

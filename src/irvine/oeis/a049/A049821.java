@@ -9,6 +9,10 @@ import irvine.oeis.a002.A002859;
  */
 public class A049821 extends A002859 {
 
+  {
+    setOffset(3);
+  }
+
   // This is not done efficiently
 
   {

@@ -11,6 +11,10 @@ import irvine.oeis.Sequence2;
  */
 public class A063794 extends Sequence2 {
 
+  {
+    setOffset(1);
+  }
+
   private long mN = 1;
 
   @Override

@@ -12,6 +12,10 @@ import irvine.math.z.Z;
  */
 public class A000635 extends A000642 {
 
+  {
+    setOffset(0);
+  }
+
   private final ArrayList<Q> mA642 = new ArrayList<>();
 
   @Override

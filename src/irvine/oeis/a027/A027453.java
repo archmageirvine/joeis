@@ -8,7 +8,12 @@ import irvine.math.z.Z;
  */
 public class A027453 extends A027447 {
 
+  {
+    setOffset(3);
+  }
+
   private long mN = 1;
+
   {
     step();
     step();

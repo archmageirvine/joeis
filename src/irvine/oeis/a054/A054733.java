@@ -15,8 +15,13 @@ import irvine.oeis.a052.A052283;
  */
 public class A054733 extends A052283 {
 
+  {
+    setOffset(2);
+  }
+
   private final Polynomial<Polynomial<Q>> mP = new PolynomialRingField<>(new PolynomialRingField<>(Rationals.SINGLETON)).empty();
   private Polynomial<Z> mRow = RING.zero();
+
   {
     mP.add(PolynomialUtils.zToQ(RING.one()));
     ++mK;

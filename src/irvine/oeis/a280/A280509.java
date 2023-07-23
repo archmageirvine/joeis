@@ -10,6 +10,10 @@ import irvine.oeis.a057.A057889;
  */
 public class A280509 extends A057889 {
 
+  {
+    setOffset(1);
+  }
+
   /** Construct the sequence. */
   public A280509() {
     super.next();

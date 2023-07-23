@@ -6,6 +6,10 @@ package irvine.oeis.a039;
  */
 public class A039806 extends A039805 {
 
+  {
+    setOffset(0);
+  }
+
   @Override
   protected int exponent() {
     return 4;

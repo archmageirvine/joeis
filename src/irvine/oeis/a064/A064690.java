@@ -11,6 +11,10 @@ import irvine.util.string.StringUtils;
  */
 public class A064690 extends Sequence1 {
 
+  // Direct iteration of this sequence using rationals is very slow.
+  // Here we use constructible reals, but that is also slow.
+  // Later terms have been computed by setting a high precision in GP/PARI.
+
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private long mN = 0;
   private CR mX = CR.ONE;
@@ -20,7 +24,7 @@ public class A064690 extends Sequence1 {
     while (true) {
       ++mN;
       final CR y = mX;
-      mX = mX.square().add(mX).subtract(CR.ONE).divide(mX.add(CR.ONE));
+      mX = mX.subtract(mX.add(CR.ONE).inverse());
       if (y.signum() != mX.signum()) {
         return Z.valueOf(mN);
       }

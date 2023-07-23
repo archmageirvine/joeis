@@ -38,4 +38,3 @@ public class A064691 extends Sequence1 {
     return k;
   }
 }
-//  b = a[[ -2]]*a[[ -1]]; k = 3; While[ !IntegerQ[ Sqrt[k*b + 1]] || Position[a, k] != {}, k++ ]; Print[k]; a = Append[a, k], {n, 3, 33} ]; a

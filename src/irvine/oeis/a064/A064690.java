@@ -38,12 +38,7 @@ public class A064690 extends Sequence1 {
   private Z mLo = mF;
   private Z mHi = mF;
   private int mPrevSign = 1;
-
-  private void step() {
-    // Make one iteration at the current precision
-    mLo = mLo.subtract(mF2.divide(mLo.add(mF)).add(1));     // - ceil(f2/(lo+f))
-    mHi = mHi.subtract(mF2.divide(mHi.add(mF)));         // - floor(f2/(hi+f))
-  }
+  private long mLastOutput = 0;
 
   @Override
   public Z next() {
@@ -52,8 +47,9 @@ public class A064690 extends Sequence1 {
       if (mVerbose && mN % PROGRESS_STEPS == 0) {
         StringUtils.message("Search completed to " + mN + " at precision " + mNumBits + " bits");
       }
-      step();
-      while (mHi.signum() != mLo.signum()) {
+      mLo = mLo.subtract(mF2.divide(mLo.add(mF)).add(1));     // - ceil(f2/(lo+f))
+      mHi = mHi.subtract(mF2.divide(mHi.add(mF)));         // - floor(f2/(hi+f))
+      if (mHi.signum() != mLo.signum()) {
         // Precision was exhausted, double the precision and recompute the initial portion
         StringUtils.message("Increasing lo precision to " + mNumBits + " bits");
         mNumBits *= 2;
@@ -61,17 +57,15 @@ public class A064690 extends Sequence1 {
         mF2 = Z.ONE.shiftLeft(2 * mNumBits);
         mLo = mF;
         mHi = mF;
+        mN = 0;
         mPrevSign = 1;
-        for (long k = 1; k <= mN; ++k) {
-          step();
-          if (mVerbose && k % PROGRESS_STEPS == 0) {
-            StringUtils.message("Recomputation completed to " + k + " at precision " + mNumBits + " bits");
-          }
-        }
       }
       if (mLo.signum() != mPrevSign) {
         mPrevSign = mLo.signum();
-        return Z.valueOf(mN);
+        if (mN > mLastOutput) {
+          mLastOutput = mN;
+          return Z.valueOf(mN);
+        }
       }
     }
   }

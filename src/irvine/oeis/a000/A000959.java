@@ -36,7 +36,7 @@ public class A000959 extends AbstractSequence {
       mLucky.set(1, 3L);
     } else {
       // Compute the mNth lucky number
-      // Update mG to largest index with mLucky[mG] <= mN+1
+      // Update mG to the largest index with mLucky[mG] <= mN+1
       if (mLucky.get(mG + 1) <= mN + 1) {
         ++mG;
       }

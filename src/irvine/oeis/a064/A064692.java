@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A064691.
+ * A064692 Total number of holes in decimal expansion of the number n, assuming 4 has 1 hole.
  * @author Sean A. Irvine
  */
 public class A064692 extends Sequence0 {

@@ -2205,3 +2205,4 @@ A064513 Maximal number of nodes in graph of degree <= n and diameter 2 (another 
 A064527 Numbers k such that there exists a finite group G of order k such that all entries in its character table are integers.
 A064533 Decimal expansion of Landau-Ramanujan constant.
 A064534 If p >= 11 is prime, n is a power of one of the primes in this sequence but n is not a power of p, then the equation x^p + y^p = n*z^p has no solution in integers x,y,z.
+A064705	Maximal number of vectors u_1, u_2, ... in R^n with |u_i| = 1 and |u_i - u_j| >= 1 for i, j distinct, where || is L1-norm.

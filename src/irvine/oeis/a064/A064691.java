@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064691.
+ * A064691 a(n) is the smallest number not already used such that a(n)*a(n-1)*a(n-2) + 1 is a square, with a(1)=1 and a(2)=2.
  * @author Sean A. Irvine
  */
 public class A064691 extends Sequence1 {

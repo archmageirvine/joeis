@@ -51,8 +51,8 @@ public class A064690 extends Sequence1 {
       mHi = mHi.subtract(mF2.divide(mHi.add(mF)));         // - floor(f2/(hi+f))
       if (mHi.signum() != mLo.signum()) {
         // Precision was exhausted, double the precision and recompute the initial portion
-        StringUtils.message("Increasing lo precision to " + mNumBits + " bits");
         mNumBits *= 2;
+        StringUtils.message("Increasing lo precision to " + mNumBits + " bits");
         mF = Z.ONE.shiftLeft(mNumBits);
         mF2 = Z.ONE.shiftLeft(2 * mNumBits);
         mLo = mF;

@@ -1,6 +1,5 @@
 package irvine.oeis.a064;
 
-import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
@@ -11,25 +10,68 @@ import irvine.util.string.StringUtils;
  */
 public class A064690 extends Sequence1 {
 
-  // Direct iteration of this sequence using rationals is very slow.
-  // Here we use constructible reals, but that is also slow.
-  // Later terms have been computed by setting a high precision in GP/PARI.
+  // After Kevin Ryde
+  // https://user42.tuxfamily.org/temporary/a064690.gp
 
+  // Iterate x -> x - 1/(x+1) with x represented by a fixed-point
+  // interval lo,hi
+  //
+  //     lo/f <= x <= hi/f    with f = 2^num_bits
+  //
+  // When the current precision is exhausted, then the precision
+  // is double the calculation started again.
+  //
+  // 12000 bits of precision is enough to find the block of terms
+  // starting a(1192) = 5222759.
+  //
+  // The step calculation for the new lo wants to subtract the
+  // biggest 1/(x+1) of the interval, which means the smallest
+  // x+1 and hence "lo" there.  Conversely, the new hi uses the
+  // "hi" there.
+
+  private static final int PROGRESS_STEPS = 100000;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  private long mNumBits = 100;
+  private Z mF = Z.ONE.shiftLeft(mNumBits);
+  private Z mF2 = Z.ONE.shiftLeft(2L * mNumBits);
   private long mN = 0;
-  private CR mX = CR.ONE;
+  private Z mLo = mF;
+  private Z mHi = mF;
+  private int mPrevSign = 1;
+
+  private void step() {
+    // Make one iteration at the current precision
+    mLo = mLo.subtract(mF2.divide(mLo.add(mF)).add(1));     // - ceil(f2/(lo+f))
+    mHi = mHi.subtract(mF2.divide(mHi.add(mF)));         // - floor(f2/(hi+f))
+  }
 
   @Override
   public Z next() {
     while (true) {
       ++mN;
-      final CR y = mX;
-      mX = mX.subtract(mX.add(CR.ONE).inverse());
-      if (y.signum() != mX.signum()) {
-        return Z.valueOf(mN);
+      if (mVerbose && mN % PROGRESS_STEPS == 0) {
+        StringUtils.message("Search completed to " + mN + " at precision " + mNumBits + " bits");
       }
-      if (mVerbose && mN % 1000 == 0) {
-        StringUtils.message("Search completed to " + mN);
+      step();
+      while (mHi.signum() != mLo.signum()) {
+        // Precision was exhausted, double the precision and recompute the initial portion
+        StringUtils.message("Increasing lo precision to " + mNumBits + " bits");
+        mNumBits *= 2;
+        mF = Z.ONE.shiftLeft(mNumBits);
+        mF2 = Z.ONE.shiftLeft(2 * mNumBits);
+        mLo = mF;
+        mHi = mF;
+        mPrevSign = 1;
+        for (long k = 1; k <= mN; ++k) {
+          step();
+          if (mVerbose && k % PROGRESS_STEPS == 0) {
+            StringUtils.message("Recomputation completed to " + k + " at precision " + mNumBits + " bits");
+          }
+        }
+      }
+      if (mLo.signum() != mPrevSign) {
+        mPrevSign = mLo.signum();
+        return Z.valueOf(mN);
       }
     }
   }

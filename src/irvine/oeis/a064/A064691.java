@@ -27,7 +27,7 @@ public class A064691 extends Sequence1 {
       mSeen.add(Z.TWO);
       return Z.TWO;
     }
-    Z b = mA.multiply(mB);
+    final Z b = mA.multiply(mB);
     Z k = Z.THREE;
     while (mSeen.contains(k) || !b.multiply(k).add(1).isSquare()) {
       k = k.add(1);

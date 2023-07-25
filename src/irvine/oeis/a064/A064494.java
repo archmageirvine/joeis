@@ -11,7 +11,7 @@ public class A064494 extends Sequence1 {
 
   // After Peter Luschny
 
-  private long mN = 0;
+  protected long mN = 0;
 
   private long divsign(final long s, final long k) {
     if (s % k != 0) {

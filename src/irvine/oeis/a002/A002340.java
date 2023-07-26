@@ -12,7 +12,7 @@ public class A002340 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A002340() {
-    super(5);
+    super(1);
   }
 
   private final Fast mPrime = new Fast();

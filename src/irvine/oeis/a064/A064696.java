@@ -2,13 +2,13 @@ package irvine.oeis.a064;
 
 import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A064696 Smallest value of s&gt;0 such that A064683(s) is divisible by n, or 0 if n belongs to A064695.
  * @author Sean A. Irvine
  */
-public class A064696 extends Sequence1 implements Conjectural {
+public class A064696 extends Sequence0 implements Conjectural {
 
   private static final int SEARCH_LIMIT = 100;
   private final int[] mWorkspace = new int[20]; // more than enough for a long

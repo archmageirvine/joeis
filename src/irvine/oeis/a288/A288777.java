@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A288777 Triangle read by rows in which column k lists the positive multiples of the factorial of k, with 1 <= k <= n.
+ * A288777 Triangle read by rows in which column k lists the positive multiples of the factorial of k, with 1 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A288777 extends BaseTriangle {

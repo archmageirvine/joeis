@@ -2207,3 +2207,4 @@ A064533 Decimal expansion of Landau-Ramanujan constant.
 A064534 If p >= 11 is prime, n is a power of one of the primes in this sequence but n is not a power of p, then the equation x^p + y^p = n*z^p has no solution in integers x,y,z.
 A064705	Maximal number of vectors u_1, u_2, ... in R^n with |u_i| = 1 and |u_i - u_j| >= 1 for i, j distinct, where || is L1-norm.
 A064731 Number of connected integral graphs on n vertices.
+A064764 Largest integer m such that every permutation (p_1, ..., p_n) of (1, ..., n) satisfies lcm(p_i, p_{i+1}) >= m for some i, 1 <= i <= n-1.

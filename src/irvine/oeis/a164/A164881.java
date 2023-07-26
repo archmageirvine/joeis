@@ -6,7 +6,7 @@ import irvine.oeis.a011.A011557;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A164881 Inverse of A164844
+ * A164881 Inverse of A164844.
  * @author Georg Fischer
  */
 public class A164881 extends WrappedRecurrence {

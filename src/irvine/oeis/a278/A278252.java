@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000292;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A278252 Least number with the prime signature of the n-th tetrahedral number, binomial(n+2, 3).
+ * A278252 Least number with the prime signature of the n-th tetrahedral number, binomial(n+2,3).
  * @author Georg Fischer
  */
 public class A278252 extends SimpleTransformSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a062;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A062158 a(n) = n^3 - n^2 + n - 1.
+ * A062158 a(n) = n^3 - n^2 + n - 1 = (n-1) * (n^2 + 1).
  * @author Georg Fischer
  */
 public class A062158 extends HolonomicRecurrence {

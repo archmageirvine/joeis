@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A048593 Converse numbers: composite Fibonacci numbers Fib(n) that are congruent to Legendre symbol (n/5) mod n.
+ * A048593 Converse numbers: composite Fibonacci numbers Fib(k) that are congruent to Legendre symbol (k/5) mod k.
  * @author Sean A. Irvine
  */
 public class A048593 extends A000045 {

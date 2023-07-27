@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A271439 If n is a triangular number, a(n) = 0, otherwise a(n) = n - A002024(n) + 1
+ * A271439 If n is a triangular number, a(n) = 0, otherwise a(n) = n - A002024(n) + 1.
  * @author Georg Fischer
  */
 public class A271439 extends PrependColumn {

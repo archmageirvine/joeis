@@ -6,7 +6,7 @@ import irvine.oeis.a011.A011971;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A095149 Triangle read by rows: Aitken&apos;s array (A011971) but with a leading diagonal before it given by the Bell numbers (A000110), 1, 1, 2, 5, 15, 52, ...
+ * A095149 Triangle read by rows: Aitken's array (A011971) but with a leading diagonal before it given by the Bell numbers (A000110), 1, 1, 2, 5, 15, 52, ...
  * @author Georg Fischer
  */
 public class A095149 extends PrependColumn {

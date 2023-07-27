@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 /**
- * A043053 a(n)=(s(n)+1)/5, where s(n)=n-th base 5 palindrome that starts with 4.
+ * A043053 a(n) = (s(n) + 1)/5, where s(n) = n-th base-5 palindrome that starts with 4.
  * @author Georg Fischer
  */
 public class A043053 extends A043045 {

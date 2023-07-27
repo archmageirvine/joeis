@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A044979 Numbers n with property that in base 3 representation the numbers of 0's and 1's are 2 and 4, respectively.
+ * A044979 Numbers whose base-3 representation contains exactly two 0's and four 1's.
  * @author Georg Fischer
  */
 public class A044979 extends RunsBaseSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a180.A180986;
 import irvine.oeis.triangle.TruncatedTriangle;
 
 /**
- * A168577 Pascal&apos;s triangle, first two columns and diagonal removed.
+ * A168577 Pascal's triangle, first two columns and diagonal removed.
  * @author Georg Fischer
  */
 public class A168577 extends TruncatedTriangle {

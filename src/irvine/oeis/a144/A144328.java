@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002260;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A144328 A002260 preceded by a column of 1&apos;s: a (1, 1, 2, 3, 4, 5, ...) crescendo triangle by rows.
+ * A144328 A002260 preceded by a column of 1's: a (1, 1, 2, 3, 4, 5, ...) crescendo triangle by rows.
  * @author Georg Fischer
  */
 public class A144328 extends PrependColumn {

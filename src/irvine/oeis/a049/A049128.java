@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 // DO NOT EDIT here!
 
 /**
- * A049128 Revert transform of (x - 1)^2/(1 - x + x^3).
+ * A049128 Revert transform of x*(x - 1)^2/(1 - x + x^3).
  *
  * @author Georg Fischer
  */

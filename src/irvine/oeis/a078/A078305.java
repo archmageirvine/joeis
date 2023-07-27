@@ -8,7 +8,7 @@ import irvine.oeis.transform.SimpleTransformSequence;
 
 
 /**
- * A078305 Numbers n such that A004154(n) - 1 is prime.
+ * A078305 Numbers k such that A004154(k) - 1 is prime.
  * @author Georg Fischer
  */
 public class A078305 extends PrimePositionSubsequence {

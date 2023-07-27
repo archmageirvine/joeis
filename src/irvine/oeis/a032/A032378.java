@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A032378 Noncubes such that n is divisible by floor(n^(1/3)).
+ * A032378 Noncubes k that are divisible by floor(k^(1/3)).
  * @author Sean A. Irvine
  */
 public class A032378 extends Sequence1 {

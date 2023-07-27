@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 // DO NOT EDIT here!
 
 /**
- * A049122 Revert transform of (1 + 2x)/(1 + 3x + x^2).
+ * A049122 Revert transform of x*(1 + 2*x)/(1 + 3*x + x^2).
  *
  * @author Georg Fischer
  */

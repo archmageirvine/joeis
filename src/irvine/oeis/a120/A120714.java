@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A120714 Expansion of 2*(4*x^2+14*x+7)*x^2/((-1-x+x^2)*(6*x^3+10*x^2+2*x-1)).
+ * A120714 Expansion of 2*x^2*(7+14*x+4*x^2)/((1+x-x^2)*(1-2*x-10*x^2-6*x^3)).
  * @author Sean A. Irvine
  */
 public class A120714 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A039595 Fibonacci numbers that are also triangular numbers.
+ * A039595 Positive Fibonacci numbers that are also triangular numbers.
  * @author Georg Fischer
  */
 public class A039595 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A048596 (n mod (sum of decimal digits of n)) divides n.
+ * A048596 Numbers k such that (k mod (sum of decimal digits of k)) divides k.
  * @author Sean A. Irvine
  */
 public class A048596 extends Sequence1 {

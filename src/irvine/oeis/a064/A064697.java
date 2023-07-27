@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064697 Numbers n such that A064696(n) = n-1.
+ * A064697 Numbers k such that A064696(k) = k-1.
  * @author Sean A. Irvine
  */
 public class A064697 extends Sequence1 {

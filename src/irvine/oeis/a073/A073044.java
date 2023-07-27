@@ -6,7 +6,7 @@ import irvine.oeis.a105.A105438;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A073044 Triangle read by rows: T(n,k) (n &gt;= 1, n-1 &gt;= k &gt;= 0) = number of n-sequences of 0&apos;s and 1&apos;s with no pair of adjacent 0&apos;s and exactly k pairs of adjacent 1&apos;s.
+ * A073044 Triangle read by rows: T(n,k) (n &gt;= 1, n-1 &gt;= k &gt;= 0) = number of n-sequences of 0's and 1's with no pair of adjacent 0's and exactly k pairs of adjacent 1's.
  * @author Georg Fischer
  */
 public class A073044 extends PrependColumn {

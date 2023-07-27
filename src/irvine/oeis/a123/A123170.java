@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A123170 Continued fraction for (sqrt(2)+1/sqrt(2))*tanh(1/sqrt(2)).
+ * A123170 Continued fraction for (sqrt(2) + 1/sqrt(2))*tanh(1/sqrt(2)).
  * @author Georg Fischer
  */
 public class A123170 extends HolonomicRecurrence {

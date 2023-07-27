@@ -6,7 +6,7 @@ import irvine.oeis.a036.A036561;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A153279 Eigentriangle by rows, T(n,k) = A000079(n-k) * (diagonalized matrix of (1, 1, 3, 9, 27, 81,...)).
+ * A153279 Eigentriangle by rows, T(n,k) = A000079(n-k) * (diagonalized matrix of (1,1,3,9,27,81,...)).
  * @author Georg Fischer
  */
 public class A153279 extends PrependColumn {

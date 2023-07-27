@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A007634 Numbers n such that n^2 + n + 41 is composite.
+ * A007634 Numbers k such that k^2 + k + 41 is composite.
  * @author Sean A. Irvine
  */
 public class A007634 extends Sequence1 {

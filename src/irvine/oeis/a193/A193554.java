@@ -6,7 +6,7 @@ import irvine.oeis.a011.A011782;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A193554 Triangle read by rows: first column: top entry is 1, then powers of 2; rest of triangle is Pascal&apos;s triangle A007318.
+ * A193554 Triangle read by rows: first column: top entry is 1, then powers of 2; rest of triangle is Pascal's triangle A007318.
  * @author Georg Fischer
  */
 public class A193554 extends PrependColumn {

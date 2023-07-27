@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001497;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A132062 Sheffer triangle (1, 1-sqrt(1-2*x)). Extended Bessel triangle A001497.
+ * A132062 Sheffer triangle (1,1-sqrt(1-2*x)). Extended Bessel triangle A001497.
  * @author Georg Fischer
  */
 public class A132062 extends PrependColumn {

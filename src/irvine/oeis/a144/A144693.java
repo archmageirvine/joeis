@@ -6,7 +6,7 @@ import irvine.oeis.a101.A101468;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A144693 Triangle read by rows, A000012 * (3*A144328 - 2*A000012), where A000012 means a lower triangular matrix of all 1&apos;s.
+ * A144693 Triangle read by rows, A000012 * (3*A144328 - 2*A000012), where A000012 means a lower triangular matrix of all 1's.
  * @author Georg Fischer
  */
 public class A144693 extends PrependColumn {

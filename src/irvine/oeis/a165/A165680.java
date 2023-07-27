@@ -6,7 +6,7 @@ import irvine.oeis.a233.A233543;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A165680 Triangle of the divisors of the coefficients of triangles A138771 and A165675
+ * A165680 Triangle of the divisors of the coefficients of triangles A138771 and A165675.
  * @author Georg Fischer
  */
 public class A165680 extends PrependColumn {

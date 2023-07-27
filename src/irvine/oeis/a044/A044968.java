@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A044968 Numbers such that in base 3 representation the numbers of 0's and 1's are 0 and 3, respectively.
+ * A044968 Numbers whose base-3 representation contains no 0's and exactly three 1's.
  * @author Georg Fischer
  */
 public class A044968 extends RunsBaseSequence {

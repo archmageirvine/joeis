@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.base.RunsBaseSequence;
 
 /**
- * A044966 Numbers having no 0's and one 1 in base 3.
+ * A044966 Numbers whose base-3 representation contains no 0's and exactly one 1.
  * @author Georg Fischer
  */
 public class A044966 extends RunsBaseSequence {

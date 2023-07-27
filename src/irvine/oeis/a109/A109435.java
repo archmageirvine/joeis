@@ -6,7 +6,7 @@ import irvine.oeis.a050.A050227;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A109435 Triangle read by rows: T(n,m) = number of binary numbers n digits long, which have m 0&apos;s as a substring.
+ * A109435 Triangle read by rows: T(n,m) = number of binary numbers n digits long, which have m 0's as a substring.
  * @author Georg Fischer
  */
 public class A109435 extends PrependColumn {

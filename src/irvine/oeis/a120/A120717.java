@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A120717 Expansion of -x*(378*x^3+287*x^2-134*x-67) / ((2*x+1)*(3*x-1)*(10*x^2+5*x-1)).
+ * A120717 Expansion of x*(67 + 134*x - 287*x^2 - 378*x^3)/((1+2*x)*(1-3*x)*(1 - 5*x - 10*x^2)).
  * @author Georg Fischer
  */
 public class A120717 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a008.A008517;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A340556 E2(n, k), the second-order Eulerian numbers with E2(0, k) = ?_{0, k}. Triangle read by rows, E2(n, k) for 0 &lt;= k &lt;= n.
+ * A340556 E2(n, k), the second-order Eulerian numbers with E2(0, k) = \u03b4_{0, k}. Triangle read by rows, E2(n, k) for 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A340556 extends PrependColumn {

@@ -6,7 +6,7 @@ import irvine.oeis.a210.A210219;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A071922 Unimodal analog of binomial coefficient, such that A071921(n,m) = a(n+m-1,n) for all (n,m) different from (0, 0), arranged in a Pascal-like triangle.
+ * A071922 Unimodal analog of binomial coefficient, such that A071921(n,m) = a(n+m-1,n) for all (n,m) different from (0,0), arranged in a Pascal-like triangle.
  * @author Georg Fischer
  */
 public class A071922 extends PrependColumn {

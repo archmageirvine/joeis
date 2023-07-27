@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A253239 Numbers n such that n^2 + n + 72491 is prime.
+ * A253239 Numbers k such that k^2 + k + 72491 is prime.
  * @author Georg Fischer
  */
 public class A253239 extends PrimePositionSubsequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a051;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A051109 Hyperinflation sequence for banknotes.
+ * A051109 Expansion of g.f. (1+2*x+5*x^2)/(1-10*x^3).
  * @author Georg Fischer
  */
 public class A051109 extends GeneratingFunctionSequence {

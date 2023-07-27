@@ -6,7 +6,7 @@ import irvine.oeis.a016.A016993;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A158893 Triangle read by rows: T(n, 1)=7n-6; T(n,m)= 1+n-m, 1&lt;m&lt;=n.
+ * A158893 Triangle read by rows: T(n,1)=7n-6; T(n,m)= 1+n-m, 1&lt;m&lt;=n.
  * @author Georg Fischer
  */
 public class A158893 extends PrependColumn {

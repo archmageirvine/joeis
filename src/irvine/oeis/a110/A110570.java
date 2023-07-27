@@ -6,7 +6,7 @@ import irvine.oeis.a049.A049834;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A110570 Triangle read by rows: T(n, 0) = T(n,n) = 1 and for 0&lt;k&lt;n: T(n,k) = if k&lt;=n/2 then T(n-k, 0)+T(n-k,k) else T(k,n-k)+T(k,n).
+ * A110570 Triangle read by rows: T(n,0) = T(n,n) = 1 and for 0&lt;k&lt;n: T(n,k) = if k&lt;=n/2 then T(n-k,0)+T(n-k,k) else T(k,n-k)+T(k,n).
  * @author Georg Fischer
  */
 public class A110570 extends PrependColumn {

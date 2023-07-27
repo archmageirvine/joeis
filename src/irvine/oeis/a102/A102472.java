@@ -5,7 +5,7 @@ import irvine.oeis.a062.A062323;
 import irvine.oeis.triangle.TruncatedTriangle;
 
 /**
- * A102472 Triangle read by rows. Let S(k) be the sequence defined by F(0)=0, F(1)=1, F(n-1) + (n+k)*F(n) = F(n+1). E.g. S(0) = 0, 1, 1, 3, 10, 43, 225, 1393, 9976, 81201, ... Then S(0), S(1), S(2), ... are written vertically, next to each other, with the initial ter
+ * A102472 Triangle read by rows. Let S(k) be the sequence defined by F(0)=0, F(1)=1, F(n-1) + (n+k)*F(n) = F(n+1). E.g. S(0) = 0, 1, 1, 3, 10, 43, 225, 1393, 9976, 81201, ... Then S(0), S(1), S(2), ... are written vertically, next to each other, with the initial term of each on the next row down.
  * @author Georg Fischer
  */
 public class A102472 extends TruncatedTriangle {

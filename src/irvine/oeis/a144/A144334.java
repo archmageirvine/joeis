@@ -6,7 +6,7 @@ import irvine.oeis.a095.A095729;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A144334 Triangle read by rows, A144328^2
+ * A144334 Triangle read by rows, A144328^2.
  * @author Georg Fischer
  */
 public class A144334 extends PrependColumn {

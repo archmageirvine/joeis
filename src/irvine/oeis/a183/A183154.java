@@ -5,7 +5,7 @@ import irvine.oeis.a135.A135278;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A183154 T(n,k) is the number of order-preserving partial isometries (of an n-chain) of fixed k (fix of alpha is the number of fixed points of alpha)
+ * A183154 T(n,k) is the number of order-preserving partial isometries (of an n-chain) of fixed k (fix of alpha is the number of fixed points of alpha).
  * @author Georg Fischer
  */
 public class A183154 extends PrependColumn {

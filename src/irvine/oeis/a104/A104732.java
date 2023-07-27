@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A104732 Square array T[i,j]=T[i-1,j]+T[i-1,j-1], T[1,j]=j, T[i, 1]=1, read by antidiagonals.
+ * A104732 Square array T[i,j]=T[i-1,j]+T[i-1,j-1], T[1,j]=j, T[i,1]=1, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A104732 extends PrependColumn {

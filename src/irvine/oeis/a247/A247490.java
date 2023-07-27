@@ -6,7 +6,7 @@ import irvine.oeis.a060.A060475;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A247490 Square array read by antidiagonals: A(k, n) = (-1)^(n+1)* hypergeom([k, -n+1], [], 1) for n&gt;0 and A(k, 0) = 0 (n&gt;=0, k&gt;=1).
+ * A247490 Square array read by antidiagonals: A(k, n) = (-1)^(n+1)* hypergeom([k, -n+1], [], 1) for n&gt;0 and A(k,0) = 0 (n&gt;=0, k&gt;=1).
  * @author Georg Fischer
  */
 public class A247490 extends PrependColumn {

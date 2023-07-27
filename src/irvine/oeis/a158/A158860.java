@@ -6,7 +6,7 @@ import irvine.oeis.a016.A016777;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A158860 Triangle T(n,k)= ( 1 +T(n-1,k)*T(n,k-1) ) / T(n-1,k-1) initialized by T(n, 0)=3n-2, T(n,k)=0 if k&gt;=n, read by rows 0&lt;=k&lt;n.
+ * A158860 Triangle T(n,k)= ( 1 +T(n-1,k)*T(n,k-1) ) / T(n-1,k-1) initialized by T(n,0)=3n-2, T(n,k)=0 if k&gt;=n, read by rows 0&lt;=k&lt;n.
  * @author Georg Fischer
  */
 public class A158860 extends PrependColumn {

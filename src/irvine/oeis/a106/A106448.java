@@ -5,7 +5,7 @@ import irvine.oeis.a277.A277227;
 import irvine.oeis.triangle.TruncatedTriangle;
 
 /**
- * A106448 Table of (x+y)/gcd(x,y) where (x,y) runs through the pairs (1, 1), (1, 2), (2, 1), (1, 3), (2, 2), (3, 1), ...
+ * A106448 Table of (x+y)/gcd(x,y) where (x,y) runs through the pairs (1,1), (1,2), (2,1), (1,3), (2,2), (3,1), ...
  * @author Georg Fischer
  */
 public class A106448 extends TruncatedTriangle {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012989 E.g.f. cos(arctan(x)+arcsin(x)) = ((1-x^2)^(1/2) - x^2)/(1+x^2)^(1/2), even powers only.
+ * A012989 Expansion of e.g.f. cos(arctan(x) + arcsin(x)) = ((1-x^2)^(1/2) - x^2)/(1+x^2)^(1/2), even powers only.
  * @author Sean A. Irvine
  */
 public class A012989 extends Sequence0 {

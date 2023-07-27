@@ -6,7 +6,7 @@ import irvine.oeis.a039.A039597;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A274292 Triangle read by rows: T(n,k) (0&lt;=k&lt;=n) given by T(n, 0)=1, T(n,n) = binomial(2n,n); otherwise T(n,k) = T(n,k-1)+T(n-1,k).
+ * A274292 Triangle read by rows: T(n,k) (0&lt;=k&lt;=n) given by T(n,0)=1, T(n,n) = binomial(2n,n); otherwise T(n,k) = T(n,k-1)+T(n-1,k).
  * @author Georg Fischer
  */
 public class A274292 extends PrependColumn {

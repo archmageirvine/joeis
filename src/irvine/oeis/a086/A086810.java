@@ -6,7 +6,7 @@ import irvine.oeis.a033.A033282;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A086810 Triangle obtained by adding a leading diagonal 1, 0, 0, 0,... to A033282.
+ * A086810 Triangle obtained by adding a leading diagonal 1,0,0,0,... to A033282.
  * @author Georg Fischer
  */
 public class A086810 extends PrependColumn {

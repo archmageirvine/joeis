@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A064690 Define a sequence of fractions by x(m+1) = (x(m)^2+x(m)-1)/(x(m)+1) with x(1)=1; sequences gives values of n such that sgn(x(n))&lt;&gt;sgn(x(n-1)).
+ * A064690 Define a sequence of fractions by x(m+1) = (x(m)^2+x(m)-1)/(x(m)+1) with x(0)=1; sequence gives values of k such that sgn(x(k))&lt;&gt;sgn(x(k-1)).
  * @author Sean A. Irvine
  */
 public class A064690 extends Sequence1 {

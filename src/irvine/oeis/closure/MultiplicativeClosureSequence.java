@@ -18,11 +18,21 @@ public class MultiplicativeClosureSequence extends MemorySequence {
 
   /**
    * Construct the multiplicative closure of another sequence.
+   * @param offset sequence offset
+   * @param seq underlying sequence
+   */
+  public MultiplicativeClosureSequence(final int offset, final Sequence seq) {
+    mSeq = MemorySequence.cachedSequence(seq);
+    mTerm = mSeq.next();
+    setOffset(offset);
+  }
+
+  /**
+   * Construct the multiplicative closure of another sequence.
    * @param seq underlying sequence
    */
   public MultiplicativeClosureSequence(final Sequence seq) {
-    mSeq = MemorySequence.cachedSequence(seq);
-    mTerm = mSeq.next();
+    this(0, seq);
   }
 
   @Override

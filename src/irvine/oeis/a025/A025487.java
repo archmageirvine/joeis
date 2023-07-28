@@ -1,48 +1,17 @@
 package irvine.oeis.a025;
 
-import java.util.TreeSet;
-
-import irvine.factor.prime.Fast;
-import irvine.math.partitions.IntegerPartition;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.a002.A002110;
+import irvine.oeis.closure.MultiplicativeClosureSequence;
 
 /**
  * A025487 Least integer of each prime signature A124832; also products of primorial numbers A002110.
  * @author Sean A. Irvine
  */
-public class A025487 extends Sequence1 {
+public class A025487 extends MultiplicativeClosureSequence {
 
-  private final TreeSet<Z> mA = new TreeSet<>();
-  private final Fast mPrime = new Fast();
-  private Z mLimit = Z.ONE;
-  private int mN = -1;
-
-  private void step() {
-    if (++mN == 0) {
-      mA.add(Z.ONE);
-      return;
-    }
-    final IntegerPartition part = new IntegerPartition(mN);
-    int[] p;
-    while ((p = part.next()) != null) {
-      Z prod = Z.ONE;
-      Z prime = Z.ONE;
-      for (final int e : p) {
-        prime = mPrime.nextPrime(prime);
-        prod = prod.multiply(prime.pow(e));
-      }
-      mA.add(prod);
-    }
-    mLimit = mLimit.multiply2();
-  }
-
-  @Override
-  public Z next() {
-    if (mA.isEmpty() || mA.first().compareTo(mLimit) > 0) {
-      step();
-    }
-    return mA.pollFirst();
+  /** Construct the sequence. */
+  public A025487() {
+    super(1, new A002110().skip());
   }
 }
 

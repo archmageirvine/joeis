@@ -159,7 +159,7 @@ public class MultiplicativeSequence extends AbstractSequence {
   }
 
   /**
-   * Return an the sum of divisors.
+   * Return the sum of divisors.
    * @param p prime
    * @param e exponent
    * @return <code>(p^(e + 1) - 1) / (p - 1)</code>.

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000245;
 import irvine.oeis.triangle.ToeplitzTriangle;
 
 /**
- * A112413 Triangle read by rows: T(n,k) is the number of Dyck paths of semilength n and starting with exactly k UD&apos;s, where U=(1,1), D=(1,-1) (0 &lt;= k &lt;= n).
+ * A112413 Triangle read by rows: T(n,k) is the number of Dyck paths of semilength n and starting with exactly k UD's, where U=(1,1), D=(1,-1) (0 &lt;= k &lt;= n).
  * @author Georg Fischer
  */
 public class A112413 extends ToeplitzTriangle {

@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.triangle.ToeplitzTriangle;
 
 /**
- * A117274 Triangle read by rows: T(n,k) is the number of partitions of n with no even part repeated and having k 1&apos;s (n&gt;=0, 0&lt;=k&lt;=n).
+ * A117274 Triangle read by rows: T(n,k) is the number of partitions of n with no even part repeated and having k 1's (n&gt;=0, 0&lt;=k&lt;=n).
  * @author Georg Fischer
  */
 public class A117274 extends ToeplitzTriangle {

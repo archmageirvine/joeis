@@ -2210,3 +2210,4 @@ A064731 Number of connected integral graphs on n vertices.
 A064764 Largest integer m such that every permutation (p_1, ..., p_n) of (1, ..., n) satisfies lcm(p_i, p_{i+1}) >= m for some i, 1 <= i <= n-1.
 A064793 Lengths of the finite cycles in the permutation defined by A064413.
 A064794 Minimal representatives for the finite cycles in the permutation defined by A064413.
+A064797 Largest integer m such that every permutation (p_1, ..., p_n) of (1, ..., n) satisfies lcm(p_i, p_{i+1}) >= m for some i, 1 <= i <= n, where p_{n+1} = p_1.

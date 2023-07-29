@@ -5,7 +5,7 @@ import irvine.oeis.DoubledSequence;
 import irvine.oeis.a010.A010060;
 
 /**
- * A095190 Doubled Thue-Morse sequence: the A010060 sequence replacing 0 with 0,0 and 1 with 1,1.
+ * A095190 Doubled Thue-Morse sequence: a(2n) = A010060(n), a(2n+1) = A010060(n).
  * @author Georg Fischer
  */
 public class A095190 extends DoubledSequence {

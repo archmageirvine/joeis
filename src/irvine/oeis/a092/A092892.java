@@ -6,7 +6,7 @@ import irvine.oeis.a006.A006666;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A092892 Smallest starting value in a Collatz &apos;3x+1&apos; sequence such that the sequence contains exactly n halving steps.
+ * A092892 Smallest starting value in a Collatz '3x+1' sequence such that the sequence contains exactly n halving steps.
  * @author Georg Fischer
  */
 public class A092892 extends Sequence0 {

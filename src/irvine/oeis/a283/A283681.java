@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A283682 Unique sequence with a(1)=1, a(2)=2, representing an array read by antidiagonals in which
+ * A283681 Unique sequence with a(1)=1, a(2)=2, representing an array read by antidiagonals in which the i-th row is this sequence itself multiplied by i.
  * the i-th row is this sequence itself multiplied by i.
  * @author Georg Fischer
  */

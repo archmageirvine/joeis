@@ -5,7 +5,7 @@ import irvine.oeis.a144.A144204;
 import irvine.oeis.triangle.TruncatedTriangle;
 
 /**
- * A223544 Triangle T(n,k), 0 &lt; k &lt;= n, T(n,1) = n - 1, T(n,k) = T(n,k-1) + n; read by rows.
+ * A223544 T(n, k) = n*k - 1.
  * @author Georg Fischer
  */
 public class A223544 extends TruncatedTriangle {

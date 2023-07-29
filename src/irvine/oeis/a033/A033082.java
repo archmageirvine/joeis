@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
 /**
- * A033082 Numbers n with property that all pairs of consecutive base 4 digits differ by 2.
+ * A033082 Numbers in which all pairs of consecutive base-4 digits differ by 2.
  * @author Sean A. Irvine
  */
 public class A033082 extends A033068 {

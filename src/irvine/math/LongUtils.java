@@ -774,4 +774,14 @@ public final class LongUtils {
     }
   }
 
+  /**
+   * Test if the given number is triangular.
+   * @param n number
+   * @return true iff the number is triangular
+   */
+  public static boolean isTriangular(final long n) {
+    return LongUtils.isSquare((n << 3) + 1);
+  }
+
+
 }

@@ -5,7 +5,7 @@ import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.triangle.ToeplitzTriangle;
 
 /**
- * A130304 Triangle, (1,1,0,0,1,1,...) in every column.
+ * A130304 Triangle, (1,1,0,0,1,1,0,0,...) in every column.
  * @author Georg Fischer
  */
 public class A130304 extends ToeplitzTriangle {

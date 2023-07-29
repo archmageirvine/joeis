@@ -5,7 +5,7 @@ import irvine.oeis.a053.A053120;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A136523 Triangle T(n,k) = A053120(n,k)+A053120(n-1,k).
+ * A136523 Triangle T(n,k) = A053120(n,k) + A053120(n-1,k), read by rows.
  * @author Georg Fischer
  */
 public class A136523 extends BaseTriangle {

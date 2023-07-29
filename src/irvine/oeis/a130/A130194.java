@@ -5,7 +5,7 @@ import irvine.oeis.a009.A009531;
 import irvine.oeis.triangle.ToeplitzTriangle;
 
 /**
- * A130194 Let M = lower triangular matrix with 1&apos;s on and below the main diagonal, with columns multiplied by +1, +1, -1, -1, repeated; form M^2; read across rows of resulting triangle.
+ * A130194 Let M = lower triangular matrix with 1's on and below the main diagonal, with columns multiplied by +1, +1, -1, -1, repeated; form M^2; read across rows of resulting triangle.
  * @author Georg Fischer
  */
 public class A130194 extends ToeplitzTriangle {

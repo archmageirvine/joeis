@@ -5,7 +5,7 @@ import irvine.oeis.a027.A027656;
 import irvine.oeis.triangle.ToeplitzTriangle;
 
 /**
- * A158944 Triangle by columns: the natural numbers interleaved with zeros in every column: (1, 0, 2, 0, 3, 0, 4, ...)
+ * A158944 Triangle by columns: the natural numbers interleaved with zeros in every column: (1, 0, 2, 0, 3, 0, 4, ...).
  * @author Georg Fischer
  */
 public class A158944 extends ToeplitzTriangle {

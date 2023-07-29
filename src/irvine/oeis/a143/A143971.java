@@ -5,7 +5,7 @@ import irvine.oeis.a016.A016777;
 import irvine.oeis.triangle.ToeplitzTriangle;
 
 /**
- * A143971 Triangle read by rows, (3n-2) subsequences decrescendo
+ * A143971 Triangle read by rows, (3n-2) subsequences decrescendo.
  * @author Georg Fischer
  */
 public class A143971 extends ToeplitzTriangle {

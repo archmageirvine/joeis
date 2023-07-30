@@ -23,7 +23,7 @@ public class A001265 extends AbstractSequence {
 
   /** Construct the sequence. */
   public A001265() {
-    super(0);
+    super(2);
   }
 
   private int mN = -1;

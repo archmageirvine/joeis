@@ -36,9 +36,8 @@ public class A194833 extends UpperLeftTriangle {
     final Z nz = Z.valueOf(n);
     Z result = Z.NEG_ONE; // assume not found
     int i = start;
-    boolean busy = true;
 //**System.out.print("# n=" + n + ", k=" + k + ", search " + n + " in row " + row + " = [" + start + ".." + String.valueOf(after - 1) + "]: ");
-    while (busy && i < after) { // search for n in the kth row
+    while (i < after) { // search for n in the kth row
 //**  System.out.print(mSeq.a(i) + ", ");
       if (mSeq.a(i).equals(nz)) {
         result = Z.valueOf(i + 1);

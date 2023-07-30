@@ -12,8 +12,7 @@ import irvine.oeis.triangle.BaseTriangle;
  */
 public class A194832 extends BaseTriangle {
 
-  private TreeMap<CR, Integer> mA;
-  private CR mReal;
+  private final CR mReal;
 
   /** Construct the sequence. */
   public A194832() {
@@ -35,13 +34,13 @@ public class A194832 extends BaseTriangle {
   public void addRow() {
     super.addRow();
     int n = mRow + mRowShift;
-    mA = new TreeMap<>();
+    final TreeMap<CR, Integer> a = new TreeMap<>();
     for (int i = 1; i <= n; ++i) {
-      mA.put(mReal.multiply(i).frac(), i);
+      a.put(mReal.multiply(i).frac(), i);
     }
     int i = -1;
-    while (!mA.isEmpty()) {
-      mLastRow[++i] = Z.valueOf(mA.pollFirstEntry().getValue());
+    while (!a.isEmpty()) {
+      mLastRow[++i] = Z.valueOf(a.pollFirstEntry().getValue());
     }
   }
 

@@ -5,7 +5,7 @@ import irvine.oeis.a124.A124846;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A162315 Triangular array 2*P - P^-1, where P is Pascal&apos;s triangle A007318.
+ * A162315 Triangular array 2*P - P^-1, where P is Pascal's triangle A007318.
  * @author Georg Fischer
  */
 public class A162315 extends Transpose {

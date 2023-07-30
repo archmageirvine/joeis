@@ -5,15 +5,14 @@ import java.util.ArrayList;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.memory.MemorySequence;
 
 /**
  * This class computes the rank transform of a sequence a(n) as described by Clark Kimberling in A187224.
  * <pre>
  * (1)  initial values: r(1)=1, h(1)=a(1);
- * (2)  counting function: h(n)= # r(i) in the half-open
-        interval [a(n-1),a(n));
- * (3)  recurrence:  r(n)=r(n-1)+h(n)+1. * </pre>
+ * (2)  counting function: h(n)= # r(i) in the half-open interval [a(n-1),a(n));
+ * (3)  recurrence:  r(n)=r(n-1)+h(n)+1.
+ * </pre>
  * @author Georg Fischer
  */
 public class RankTransform extends AbstractSequence {

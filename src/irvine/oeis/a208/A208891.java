@@ -5,7 +5,7 @@ import irvine.oeis.a135.A135225;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A208891 Pascal&apos;s triangle matrix augmented with a right border of 1&apos;s.
+ * A208891 Pascal's triangle matrix augmented with a right border of 1's.
  * @author Georg Fischer
  */
 public class A208891 extends Transpose {

@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001620;
 import irvine.oeis.triangle.ReluctantSequence;
 
 /**
- * A139261 Triangle read by rows: row n lists the first n digits of the decimal expansion of Euler&apos;s constant (or Euler-Mascheroni constant) gamma.
+ * A139261 Triangle read by rows: row n lists the first n digits of the decimal expansion of Euler's constant (or Euler-Mascheroni constant) gamma.
  * @author Georg Fischer
  */
 public class A139261 extends ReluctantSequence {

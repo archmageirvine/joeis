@@ -5,7 +5,7 @@ import irvine.oeis.a110.A110616;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A069269 Second level generalization of Catalan triangle (0th level is Pascal&apos;s triangle A007318; first level is Catalan triangle A009766; 3rd level is A069270).
+ * A069269 Second level generalization of Catalan triangle (0th level is Pascal's triangle A007318; first level is Catalan triangle A009766; 3rd level is A069270).
  * @author Georg Fischer
  */
 public class A069269 extends Transpose {

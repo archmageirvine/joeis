@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 /**
  * Generate integer compositions of exact number of parts.
- *
  * @author Sean A. Irvine
  */
 public final class IntegerComposition {
@@ -15,7 +14,6 @@ public final class IntegerComposition {
 
   /**
    * Construct a new object for getting the integer compositions of a number.
-   *
    * @param n number
    * @param parts parts
    * @exception IllegalArgumentException if <code>n</code> is not positive,

@@ -1297,4 +1297,15 @@ public abstract class CR extends Number implements Comparable<CR> {
   public CR signedAdd(final boolean condition, final CR a) {
     return condition ? add(a) : subtract(a);
   }
+
+  private static final int INTEGER_HEURISTIC = -50;
+
+  /**
+   * Test if this value is approximately an integer.
+   * @return true if an integer
+   */
+  public boolean isInteger() {
+    final CR delta = subtract(CR.valueOf(toZ()));
+    return delta.signum(INTEGER_HEURISTIC) == 0;
+  }
 }

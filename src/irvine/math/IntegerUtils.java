@@ -499,4 +499,15 @@ public final class IntegerUtils {
     }
     return g;
   }
+
+  /**
+   * Test if the given value is a square.
+   * @param n number to test
+   * @return true iff the number is a square
+   */
+  public static boolean isSquare(final int n) {
+    final int s = sqrt(n);
+    return s * s == n;
+  }
+
 }

@@ -780,7 +780,7 @@ public final class LongUtils {
    * @return true iff the number is triangular
    */
   public static boolean isTriangular(final long n) {
-    return LongUtils.isSquare((n << 3) + 1);
+    return isSquare((n << 3) + 1);
   }
 
 

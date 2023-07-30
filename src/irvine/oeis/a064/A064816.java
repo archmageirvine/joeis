@@ -10,7 +10,17 @@ import irvine.oeis.Sequence1;
  */
 public class A064816 extends Sequence1 {
 
+  private final long mWays;
   private long mN = 15;
+
+  protected A064816(final long ways) {
+    mWays = ways;
+  }
+
+  /** Construct the sequence. */
+  public A064816() {
+    this(2);
+  }
 
   private boolean is(final long n) {
     long k = 0;
@@ -20,11 +30,11 @@ public class A064816 extends Sequence1 {
       if (2 * t > n) {
         break;
       }
-      if (LongUtils.isTriangular(n - t) && ++cnt > 2) {
+      if (LongUtils.isTriangular(n - t) && ++cnt > mWays) {
         break;
       }
     }
-    return cnt == 2;
+    return cnt == mWays;
   }
 
   @Override

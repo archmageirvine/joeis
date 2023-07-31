@@ -2,21 +2,15 @@ package irvine.oeis.a264;
 
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
-import irvine.oeis.triangle.Triangle;
+import irvine.oeis.Sequence1;
 
 /**
  * A264396 Number of partitions of n such that the part sizes occurring in it form an interval that does not start at 1.
  * @author Georg Fischer
  */
-public class A264396 extends Triangle {
+public class A264396 extends Sequence1 {
 
   private int mN = 0;
-
-  /** Construct the sequence. */
-  public A264396() {
-    setOffset(1);
-    hasRAM(true);
-  }
 
   /* Maple:
     b:= proc(n, i) option remember; `if`(n=0, `if`(i=0, 0, 1),

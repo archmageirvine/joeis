@@ -24,6 +24,8 @@ public class A001265 extends AbstractSequence {
   /** Construct the sequence. */
   public A001265() {
     super(2);
+    next();
+    next();
   }
 
   private int mN = -1;

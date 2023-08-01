@@ -25,7 +25,7 @@ public class A029776 extends AbstractSequence {
 
   private Z mN = Z.NEG_ONE;
 
-  private static boolean isDigitMatch(final Z n) {
+  protected boolean isDigitMatch(final Z n) {
     final int[] sn = ZUtils.digitCounts(n);
     final int[] sn3 = ZUtils.digitCounts(n.pow(3));
     for (int k = 0; k < sn.length; ++k) {

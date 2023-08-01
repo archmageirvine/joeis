@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A187783 De Bruijn&apos;s triangle, T(m,n) = (m*n)!/(n!^m) read by downward antidiagonals.
+ * A187783 De Bruijn's triangle, T(m,n) = (m*n)!/(n!^m) read by downward antidiagonals.
  * @author Georg Fischer
  */
 public class A187783 extends UpperLeftTriangle {

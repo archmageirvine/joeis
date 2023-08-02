@@ -2211,3 +2211,4 @@ A064764 Largest integer m such that every permutation (p_1, ..., p_n) of (1, ...
 A064793 Lengths of the finite cycles in the permutation defined by A064413.
 A064794 Minimal representatives for the finite cycles in the permutation defined by A064413.
 A064797 Largest integer m such that every permutation (p_1, ..., p_n) of (1, ..., n) satisfies lcm(p_i, p_{i+1}) >= m for some i, 1 <= i <= n, where p_{n+1} = p_1.
+A064941 Quartering a 2n X 2n chessboard (reference A257952) considering only the 90-deg rotationally symmetric results (omitting results with only 180-deg symmetry).

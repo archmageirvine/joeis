@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064933.
+ * A064942 Decimal numbers n such that after possibly prefixing leading 0's to n, the resulting number n' can be broken into 2 numbers of equal length, n' = xy, such that x^2+y^2 = n (y may also have leading zeros).
  * @author Sean A. Irvine
  */
 public class A064942 extends Sequence1 {

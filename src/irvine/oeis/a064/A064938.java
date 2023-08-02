@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064933.
+ * A064938 Nonprimes k such that k divides prime(k)^2 - 1.
  * @author Sean A. Irvine
  */
 public class A064938 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064933.
+ * A064935 Numbers k such that (k+3)^(k+2) mod (k+1) = k.
  * @author Sean A. Irvine
  */
 public class A064935 extends Sequence1 {

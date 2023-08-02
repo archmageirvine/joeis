@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A064933.
+ * A065358 The Jacob's Ladder sequence: a(n) = Sum_{k=1..n} (-1)^pi(k), where pi = A000720.
  * @author Sean A. Irvine
  */
 public class A065358 extends PartialSumSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064933.
+ * A064937 Nonprimes k such that gcd(k, prime(k)^2 - 1) is 1.
  * @author Sean A. Irvine
  */
 public class A064937 extends Sequence1 {

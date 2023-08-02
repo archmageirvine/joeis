@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064933.
+ * A064949 a(n) = Sum_{i|n, j|n} min(i,j).
  * @author Sean A. Irvine
  */
 public class A064949 extends Sequence1 {

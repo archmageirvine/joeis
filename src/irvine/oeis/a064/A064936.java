@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A064933.
+ * A064936 Primes p such that gcd(p, prime(p)^2 - 1) does not equal 1.
  * @author Sean A. Irvine
  */
 public class A064936 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064933.
+ * A064948 a(n) = Sum_{i|n, j|n} max(i,j).
  * @author Sean A. Irvine
  */
 public class A064948 extends Sequence1 {

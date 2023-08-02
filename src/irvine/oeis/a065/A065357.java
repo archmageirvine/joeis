@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A064933.
+ * A065357 a(n) = (-1)^pi(n) where pi(n) is the number of primes &lt;= n.
  * @author Sean A. Irvine
  */
 public class A065357 extends Sequence0 {

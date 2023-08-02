@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064933.
+ * A064946 a(n) = Sum_{i|n, j|n, j&gt;i} j.
  * @author Sean A. Irvine
  */
 public class A064946 extends Sequence1 {

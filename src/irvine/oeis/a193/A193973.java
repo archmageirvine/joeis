@@ -15,7 +15,7 @@ public class A193973 extends Triangle {
   }
 
   private Z triang(final int n) {
-    return Z.valueOf(n * (n + 1) / 2);
+    return Z.valueOf((long) n * (n + 1) / 2);
   }
 
   @Override

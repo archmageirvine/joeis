@@ -17,7 +17,7 @@ public class A054545 extends Sequence0 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      sum = sum.signedAdd(((mN - k) & 1) == 0, Binomial.binomial(mN, k).shiftLeft(k * (k - 1)));
+      sum = sum.signedAdd(((mN - k) & 1) == 0, Binomial.binomial(mN, k).shiftLeft((long) k * (k - 1)));
     }
     return sum;
   }

@@ -23,7 +23,7 @@ public class A039757 extends MemoryFunction2Sequence<Integer, Z> {
       final Z df = mF.doubleFactorial(2 * n - 1);
       return (n & 1) == 0 ? df : df.negate();
     }
-    return get(n - 1, m - 1).subtract(get(n - 1, m).multiply(2 * n - 1));
+    return get(n - 1, m - 1).subtract(get(n - 1, m).multiply(2L * n - 1));
   }
 
   @Override

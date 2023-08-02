@@ -21,9 +21,9 @@ public class A008563 extends MemorySequence {
       return Z.TWO;
     }
     Z sum = Z.ZERO;
-    final long m = 4 * n + 2;
+    final long m = 4L * n + 2;
     for (int k = 0; k < n; ++k) {
-      sum = sum.add(Binomial.binomial(m, 4 * k + 3).multiply(a(k)).multiply(a(n - 1 - k)));
+      sum = sum.add(Binomial.binomial(m, 4L * k + 3).multiply(a(k)).multiply(a(n - 1 - k)));
     }
     return sum;
   }

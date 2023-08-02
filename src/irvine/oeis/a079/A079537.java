@@ -22,6 +22,6 @@ public class A079537 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Euler.phi(Z.valueOf(2 * mN + 1)).multiply(Jaguar.factor(2 * mN + 1).tau()).subtract(Jaguar.factor(2 * mN + 1).sigma());
+    return Euler.phi(Z.valueOf(2L * mN + 1)).multiply(Jaguar.factor(2L * mN + 1).tau()).subtract(Jaguar.factor(2L * mN + 1).sigma());
   }
 }

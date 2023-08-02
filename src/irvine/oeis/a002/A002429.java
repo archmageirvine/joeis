@@ -21,7 +21,7 @@ public class A002429 extends Sequence0 {
     ++mN;
     Q s = Q.ZERO;
     for (int k = 3; k <= 2 * mN + 3; ++k) {
-      final Z t = Binomial.binomial(2 * (mN + 1), k - 1).multiply(Stirling.firstKind(k, 3)).shiftLeft(k - 2);
+      final Z t = Binomial.binomial(2L * (mN + 1), k - 1).multiply(Stirling.firstKind(k, 3)).shiftLeft(k - 2);
       s = s.add(new Q(t, mF.factorial(k)));
     }
     return s.multiply(3).num();

@@ -19,6 +19,6 @@ public class A056203 extends Triangle {
   public Z compute(int n, int k) {
     n += 2;
     ++k;
-    return Z.valueOf(n).square().add(2 * n * k).subtract(k * k);
+    return Z.valueOf(n).square().add(2L * n * k).subtract((long) k * k);
   }
 }

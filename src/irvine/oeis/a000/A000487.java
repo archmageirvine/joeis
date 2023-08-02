@@ -20,7 +20,7 @@ public class A000487 extends AbstractSequence {
   public Z next() {
     final Z n = Z.valueOf(++mN);
     return Z.SIX.pow(mN)
-      .add(Z.valueOf(2 - 2 * mN).shiftLeft(2 * mN))
+      .add(Z.valueOf(2 - 2L * mN).shiftLeft(2L * mN))
       .add(n.square().multiply2().subtract(n.shiftLeft(2)).subtract(1).shiftLeft(mN))
       .shiftRight(5);
   }

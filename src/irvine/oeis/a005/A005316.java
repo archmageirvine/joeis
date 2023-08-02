@@ -283,7 +283,7 @@ public class A005316 extends AbstractSequence {
 
     public BasicMeanderProblem(final int remainingBridges) {
       super(remainingBridges);
-      mLimit = Z.ONE.shiftLeft(2 + (WORD_SHIFT * (remainingBridges + 1)));
+      mLimit = Z.ONE.shiftLeft(2 + ((long) WORD_SHIFT * (remainingBridges + 1)));
       mIsOdd = (remainingBridges & 1) == 1;
     }
 

@@ -36,7 +36,7 @@ public class A237202 extends BaseTriangle {
   public Z triangleElement(final int n, final int k) {
     Z sum = Z.ZERO;
     for (int i = 0; i <= k; ++i) {
-      sum = sum.add(Binomial.binomial(mCopies * n + 1, i).multiply(((i & 1) == 0) ? 1 : -1)
+      sum = sum.add(Binomial.binomial((long) mCopies * n + 1, i).multiply(((i & 1) == 0) ? 1 : -1)
         .multiply(Binomial.binomial(k + mCopies - i, mCopies).pow(n)));
     }
     return sum;

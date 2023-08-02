@@ -30,7 +30,7 @@ public class A060158 extends AbstractSequence {
       : Z.valueOf(2L * mN).subtract(7)
       .add(Z.valueOf(6 - mN).shiftLeft(mN - 1))
       .subtract(Z.THREE.pow(mN))
-      .add(Z.ONE.shiftLeft(2 * (mN - 1)));
+      .add(Z.ONE.shiftLeft(2L * (mN - 1)));
   }
 }
 

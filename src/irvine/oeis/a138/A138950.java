@@ -12,6 +12,6 @@ public class A138950 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A138950() {
-    super(1, (p, e) -> is2(p) ? Z.ONE : (is3(p) ? Z.valueOf(-1 + 2 * neg1(e)) : (isMod(12, p, 1, 5) ? Z.valueOf(e + 1) : Z.valueOf(oneOr0(e)))));
+    super(1, (p, e) -> is2(p) ? Z.ONE : (is3(p) ? Z.valueOf(-1 + 2L * neg1(e)) : (isMod(12, p, 1, 5) ? Z.valueOf(e + 1) : Z.valueOf(oneOr0(e)))));
   }
 }

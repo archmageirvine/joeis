@@ -25,6 +25,6 @@ public class A056023 extends Triangle {
   public Z compute(int n, int k) {
     ++n;
     ++k;
-    return Z.valueOf((n * n - (n - 2 * k) * (((n & 1) == 0) ? 1 : -1)) / 2 + (n & 1));
+    return Z.valueOf(((long) n * n - (n - 2L * k) * (((n & 1) == 0) ? 1 : -1)) / 2 + (n & 1));
   }
 }

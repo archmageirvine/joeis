@@ -88,7 +88,7 @@ public class A061526 extends Sequence1 {
               .multiply(c(2 * (i - 2 * a2), b1))
               .multiply(c(2 * a2, b2))
               .multiply(c(n - 2 * (i - a2), k - 2 - i - b1 - b2))
-              .shiftLeft(i - 2 * a2));
+              .shiftLeft(i - 2L * a2));
           }
         }
       }
@@ -116,7 +116,7 @@ public class A061526 extends Sequence1 {
                   .multiply(c(2 * (i - a0 - 2 * a2), b1))
                   .multiply(c(2 * a2, b2))
                   .multiply(c(n - 1 - 2 * (i - a0 - a2), k - 2 - i - b0 - b1 - b2))
-                  .shiftLeft(i - a0 - 2 * a2));
+                  .shiftLeft(i - a0 - 2L * a2));
               }
             }
           }

@@ -14,7 +14,7 @@ public class A002563 extends A002564 {
     for (int y = 0; y < size; ++y) {
       for (int x = 0; x < size; ++x, p = p.multiply2()) {
         if (q.and(p).signum() != 0) {
-          r = r.or(Z.ONE.shiftLeft((size - x - 1) * size + y));
+          r = r.or(Z.ONE.shiftLeft((long) (size - x - 1) * size + y));
         }
       }
     }

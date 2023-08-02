@@ -15,6 +15,6 @@ public class A052468 extends Sequence1 {
 
   @Override
   public Z next() {
-    return new Q(Binomial.binomial(2L * ++mN, mN), Z.valueOf(mN).shiftLeft(2 * mN - 1)).num();
+    return new Q(Binomial.binomial(2L * ++mN, mN), Z.valueOf(mN).shiftLeft(2L * mN - 1)).num();
   }
 }

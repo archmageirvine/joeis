@@ -60,7 +60,7 @@ public class A158616 extends Sequence1 {
     for (int k = 1; k <= n; ++k) {
       prod = RING.multiply(prod, RING.pow(makePoly(k), n / k, degree), degree);
     }
-    return RING.multiply(sig2n(n, degree), RING.multiply(prod, new Q(Z.ONE.shiftLeft(2 * n))), degree);
+    return RING.multiply(sig2n(n, degree), RING.multiply(prod, new Q(Z.ONE.shiftLeft(2L * n))), degree);
   }
 
   @Override

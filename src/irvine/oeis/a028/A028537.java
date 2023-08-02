@@ -35,7 +35,7 @@ public class A028537 extends A000700 {
     final Q c1 = new Q(-twiceRank(), 24);
     final QPolynomial<Z> c = QRING.multiply(QPolynomial.create(RING.pow(a, twiceRank(), mN)), QRING.monomial(Z.ONE, c1));
     final QPolynomial<Z> d = QRING.multiply(QRING.multiply(QPolynomial.create(RING.pow(a, twiceRank() - 24, mN)), QRING.monomial(Z.ONE, new Q(24 - twiceRank(), 24))), Z.valueOf(twiceRank()));
-    final QPolynomial<Z> e = QRING.multiply(QRING.multiply(QPolynomial.create(RING.series(RING.one(), RING.pow(a, 48 - twiceRank(), mN), mN)), QRING.monomial(Z.ONE, new Q(48 - twiceRank(), 24))), Z.valueOf(twiceRank() * (47 - twiceRank()) / 2));
+    final QPolynomial<Z> e = QRING.multiply(QRING.multiply(QPolynomial.create(RING.series(RING.one(), RING.pow(a, 48 - twiceRank(), mN), mN)), QRING.monomial(Z.ONE, new Q(48 - twiceRank(), 24))), Z.valueOf((long) twiceRank() * (47 - twiceRank()) / 2));
     final QPolynomial<Z> b = QRING.subtract(QRING.subtract(c, d), e);
     return QRING.multiply(b, QRING.monomial(Z.ONE, c1.negate())).coeff(mN);
   }

@@ -17,7 +17,7 @@ public class A334767 extends Sequence1 {
     ++mN;
     Z prod = Z.ONE;
     for (int k = 1; k <= mN; ++k) {
-      prod = prod.multiply(irvine.factor.factor.Jaguar.factor(2 * k).sigma0());
+      prod = prod.multiply(irvine.factor.factor.Jaguar.factor(2L * k).sigma0());
     }
     return prod;
   }

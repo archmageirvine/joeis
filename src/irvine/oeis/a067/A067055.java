@@ -18,6 +18,6 @@ public class A067055 extends Sequence0 {
     if (mN > 0) {
       mF = mF.multiply(mN);
     }
-    return mF.pow(mN * (mN + 1) / 2);
+    return mF.pow((long) mN * (mN + 1) / 2);
   }
 }

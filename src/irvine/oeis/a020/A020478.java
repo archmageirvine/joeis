@@ -20,7 +20,7 @@ public class A020478 extends Sequence1 {
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
       final Z b = p.pow(e);
-      a = a.multiply(p.pow(2 * e - 1).multiply(b.multiply(p).add(b).subtract(1)));
+      a = a.multiply(p.pow(2L * e - 1).multiply(b.multiply(p).add(b).subtract(1)));
     }
     return a;
   }

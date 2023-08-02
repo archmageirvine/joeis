@@ -21,7 +21,7 @@ public class A061428 extends A028846 {
         t = t.divide(10);
         ++digits;
       }
-      if (prod.equals(Z.ONE.shiftLeft(2 * digits))) {
+      if (prod.equals(Z.ONE.shiftLeft(2L * digits))) {
         return s;
       }
     }

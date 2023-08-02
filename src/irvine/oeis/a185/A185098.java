@@ -21,7 +21,7 @@ public class A185098 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    final Z c = Z.ONE.shiftLeft(2 * mN - 8).multiply(265);
+    final Z c = Z.ONE.shiftLeft(2L * mN - 8).multiply(265);
     final int a = ((mN & 1) == 0) ? 14 : 16;
     final Z b = Z.ONE.shiftLeft(mN - 3).multiply(a).add(6L * mN * mN);
     return c.subtract(b).divide(6);

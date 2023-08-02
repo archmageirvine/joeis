@@ -15,7 +15,7 @@ public class A001525 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    final long u = 3 * mN;
+    final long u = 3L * mN;
     mF = mF.multiply(u).multiply(u - 1).multiply(u - 2).divide(mN);
     return mF.divide(6);
   }

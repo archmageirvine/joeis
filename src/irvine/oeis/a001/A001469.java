@@ -17,7 +17,7 @@ public class A001469 extends Sequence1 {
   @Override
   public Z next() {
     mSeq.nextQ();
-    return mSeq.nextQ().multiply(2).multiply(new Q(Z.ONE.subtract(Z.ONE.shiftLeft(2 * ++mN)), Z.ONE)).toZ();
+    return mSeq.nextQ().multiply(2).multiply(new Q(Z.ONE.subtract(Z.ONE.shiftLeft(2L * ++mN)), Z.ONE)).toZ();
   }
 }
 

@@ -17,7 +17,7 @@ public class A006025 extends Sequence0 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      sum = sum.add(Stirling.firstKind(mN, k).shiftLeft(k * (k - 1)));
+      sum = sum.add(Stirling.firstKind(mN, k).shiftLeft((long) k * (k - 1)));
     }
     return sum;
   }

@@ -21,6 +21,6 @@ public class A094952 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return mSeq.next().multiply(2 * mN + 1);
+    return mSeq.next().multiply(2L * mN + 1);
   }
 }

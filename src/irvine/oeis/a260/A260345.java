@@ -22,6 +22,6 @@ public class A260345 extends A006780 {
     final int x = x(point);
     final int y = y(point);
     final int z = z(point);
-    return 2L * (x * x + y * y + z * z);
+    return 2L * ((long) x * x + (long) y * y + (long) z * z);
   }
 }

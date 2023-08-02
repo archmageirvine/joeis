@@ -15,7 +15,7 @@ public class A008978 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mF = mF.multiply(5 * mN).multiply(5 * mN - 1).multiply(5 * mN - 2).multiply(5 * mN - 3).multiply(5 * mN - 4)
+      mF = mF.multiply(5L * mN).multiply(5L * mN - 1).multiply(5L * mN - 2).multiply(5L * mN - 3).multiply(5L * mN - 4)
         .divide(Z.valueOf(mN).pow(5));
     }
     return mF;

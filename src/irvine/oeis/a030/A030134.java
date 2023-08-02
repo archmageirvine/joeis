@@ -19,7 +19,7 @@ public class A030134 extends Sequence0 {
     final int[] counts = ZUtils.digitCounts(n);
     long sum = 0;
     for (int k = 1; k < counts.length; ++k) {
-      sum += k * counts[k];
+      sum += (long) k * counts[k];
       if (sum > r) {
         return false;
       }

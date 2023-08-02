@@ -37,7 +37,7 @@ public class A031140 extends Sequence1 {
       final int z = positionRightMostZero(mT);
       if (z > mPrevBest) {
         mPrevBest = z;
-        mMod = Z.TEN.pow(10 * (mPrevBest + 1)); // head room heuristic
+        mMod = Z.TEN.pow(10L * (mPrevBest + 1)); // head room heuristic
         return Z.valueOf(mN);
       }
     }

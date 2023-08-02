@@ -17,7 +17,7 @@ public class A046038 extends Sequence1 {
     while (true) {
       ++mN;
       mA = mA.multiply(3);
-      if (!Z.ONE.shiftLeft(2 * mN).divide(mA).isProbablePrime()) {
+      if (!Z.ONE.shiftLeft(2L * mN).divide(mA).isProbablePrime()) {
         return Z.valueOf(mN);
       }
     }

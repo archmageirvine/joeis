@@ -20,9 +20,9 @@ public class A002348 extends Sequence3 {
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
       if (Z.TWO.equals(p)) {
-        prod = prod.multiply(Z.ONE.shiftLeft(2 * e));
+        prod = prod.multiply(Z.ONE.shiftLeft(2L * e));
       } else {
-        prod = prod.multiply(p.pow(2 * (e - 1)).multiply(p.square().subtract(1)));
+        prod = prod.multiply(p.pow(2L * (e - 1)).multiply(p.square().subtract(1)));
       }
     }
     return prod.divide(8);

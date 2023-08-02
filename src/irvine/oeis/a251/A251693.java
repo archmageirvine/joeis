@@ -34,6 +34,6 @@ public class A251693 extends Sequence0 {
     } else if (mN == 1) {
       return Z.valueOf(mMult + 1);
     }
-    return Z.valueOf(mMult * mN + 1).multiply(Z.valueOf((mMult + 1) * mN + 1).pow(mN - 2)).multiply(Z.valueOf(mMult + 2).pow(mN));
+    return Z.valueOf((long) mMult * mN + 1).multiply(Z.valueOf((long) (mMult + 1) * mN + 1).pow(mN - 2)).multiply(Z.valueOf(mMult + 2).pow(mN));
   }
 }

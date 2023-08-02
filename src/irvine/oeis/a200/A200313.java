@@ -32,7 +32,7 @@ public class A200313 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(mMult * mN + 1).pow(mN - 1).multiply(FACTORIAL.factorial(mMult * mN))
+    return Z.valueOf((long) mMult * mN + 1).pow(mN - 1).multiply(FACTORIAL.factorial(mMult * mN))
       .divide(FACTORIAL.factorial(mN).multiply(FACTORIAL.factorial(mMult).pow(mN)));
   }
 }

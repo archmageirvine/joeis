@@ -23,6 +23,6 @@ public class A341303 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return MemoryFactorial.SINGLETON.factorial(mN).subtract(Binomial.catalan(mN).multiply(6)).add(Z.ONE.shiftLeft(mN).multiply(5)).add(Binomial.binomial(mN, 2).multiply(4)).subtract(Fibonacci.fibonacci(mN).multiply2()).add(Z.valueOf(-14 * mN + 20));
+    return MemoryFactorial.SINGLETON.factorial(mN).subtract(Binomial.catalan(mN).multiply(6)).add(Z.ONE.shiftLeft(mN).multiply(5)).add(Binomial.binomial(mN, 2).multiply(4)).subtract(Fibonacci.fibonacci(mN).multiply2()).add(Z.valueOf(-14L * mN + 20));
   }
 }

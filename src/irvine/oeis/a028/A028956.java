@@ -23,7 +23,7 @@ public class A028956 extends Sequence0 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final long d = dd.longValue();
-      sum = sum.add(LongUtils.kronecker(-15, d) - LongUtils.kronecker(-3, d) * LongUtils.kronecker(5, mN / d));
+      sum = sum.add(LongUtils.kronecker(-15, d) - (long) LongUtils.kronecker(-3, d) * LongUtils.kronecker(5, mN / d));
     }
     return sum;
   }

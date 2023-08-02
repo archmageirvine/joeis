@@ -20,6 +20,6 @@ public class A153291 extends Sequence0 {
     if (mN == 0) {
       return Z.ONE;
     }
-    return Integers.SINGLETON.sum(0, mN, k -> Binomial.binomial(3 * k + 1, k).multiply(Binomial.binomial(3 * mN - 2 * k, mN - k)).multiply(k).divide(3 * k + 1).divide(3 * mN - 2 * k));
+    return Integers.SINGLETON.sum(0, mN, k -> Binomial.binomial(3L * k + 1, k).multiply(Binomial.binomial(3L * mN - 2L * k, mN - k)).multiply(k).divide(3L * k + 1).divide(3L * mN - 2L * k));
   }
 }

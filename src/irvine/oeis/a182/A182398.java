@@ -16,6 +16,6 @@ public class A182398 extends A031971 {
     // a(n) = A031971(2n) mod 2n.
     ++mN;
     super.next();
-    return super.next().mod(Z.valueOf(2 * mN));
+    return super.next().mod(Z.valueOf(2L * mN));
   }
 }

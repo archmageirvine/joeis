@@ -20,6 +20,6 @@ public class A267863 extends RationalTriangle {
   public Q compute(int m, int a) {
     ++m;
     ++a;
-    return new Q(m - 2 * a, 2 * m);
+    return new Q(m - 2L * a, 2L * m);
   }
 }

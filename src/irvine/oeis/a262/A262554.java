@@ -24,7 +24,7 @@ public class A262554 extends MemoryFunction2Sequence<Integer, Z> {
   }
 
   private Z a(final int i, final int j) {
-    return Binomial.binomial(i, j - i).shiftLeft(2 * i - j).add(Binomial.binomial(i - 1, j - i + 1).shiftLeft(2 * i - j - 2));
+    return Binomial.binomial(i, j - i).shiftLeft(2L * i - j).add(Binomial.binomial(i - 1, j - i + 1).shiftLeft(2L * i - j - 2));
   }
 
   @Override

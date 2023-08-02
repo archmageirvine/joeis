@@ -61,14 +61,14 @@ public class A004147 extends Sequence1 {
     int state = 1;
     int position = 0;
     while (state != 0 && --steps >= 0) {
-      final int symbol = position >= 0 ? tape.get(2 * position) : tape.get(2 * -position + 1);
+      final int symbol = position >= 0 ? tape.get(2L * position) : tape.get(2L * -position + 1);
       final int next = machine[2 * state + symbol - 2];
       final int r = next & 1;
       if (r != symbol) {
         if (position >= 0) {
-          tape.set(2 * position, (byte) r);
+          tape.set(2L * position, (byte) r);
         } else {
-          tape.set(2 * -position + 1, (byte) r);
+          tape.set(2L * -position + 1, (byte) r);
         }
       }
       position += (next & 2) == 0 ? 1 : -1;

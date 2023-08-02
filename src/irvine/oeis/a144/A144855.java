@@ -19,7 +19,7 @@ public class A144855 extends Sequence1 {
     final boolean[][] grid = new boolean[n][n];
     for (int y = 0; y < n; ++y) {
       for (int x = 0; x < n; ++x) {
-        grid[y][x] = mPrime.isPrime(x * n + y + 1);
+        grid[y][x] = mPrime.isPrime((long) x * n + y + 1);
       }
     }
     return grid;

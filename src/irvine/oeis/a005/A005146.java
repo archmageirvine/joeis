@@ -32,7 +32,7 @@ public class A005146 extends Sequence0 {
   public Z next() {
     ++mN;
     mB.nextQ();
-    final Q t = mB.nextQ().divide(2 * mN + 2).divide(2 * mN + 1);
+    final Q t = mB.nextQ().divide(2L * mN + 2).divide(2L * mN + 1);
     mS.add((mN & 1) == 0 ? t : t.negate());
     // This could be made incremental with more effort
     final Q[][] m = new Q[mN + 1][mN + 1];

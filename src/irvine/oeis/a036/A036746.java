@@ -14,7 +14,7 @@ public class A036746 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Z.valueOf(++mN < SMALL.length ? SMALL[mN] : 888 + (mN - SMALL.length) * 1000);
+    return Z.valueOf(++mN < SMALL.length ? SMALL[mN] : 888 + (mN - SMALL.length) * 1000L);
   }
 }
 

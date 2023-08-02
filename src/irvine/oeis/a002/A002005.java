@@ -16,6 +16,6 @@ public class A002005 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return mF.doubleFactorial(3 * mN).shiftLeft(2 * mN + 1).divide(mF.factorial(mN + 2)).divide(mF.doubleFactorial(mN));
+    return mF.doubleFactorial(3 * mN).shiftLeft(2L * mN + 1).divide(mF.factorial(mN + 2)).divide(mF.doubleFactorial(mN));
   }
 }

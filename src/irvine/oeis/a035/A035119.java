@@ -19,6 +19,6 @@ public class A035119 extends Sequence1 {
       return mN == 3 ? Z.ONE : Z.ZERO;
     }
     mF = mF.multiply(mN);
-    return Binomial.binomial(2L * mN, mN).multiply(mN + 2).subtract(Z.THREE.shiftLeft(2 * mN - 1)).multiply(mF).shiftRight(mN);
+    return Binomial.binomial(2L * mN, mN).multiply(mN + 2).subtract(Z.THREE.shiftLeft(2L * mN - 1)).multiply(mF).shiftRight(mN);
   }
 }

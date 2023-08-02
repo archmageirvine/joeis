@@ -15,6 +15,6 @@ public class A000497 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Stirling.associatedSecondKind(2, 2 * mN + 2, mN);
+    return Stirling.associatedSecondKind(2, 2L * mN + 2, mN);
   }
 }

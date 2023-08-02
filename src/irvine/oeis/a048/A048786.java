@@ -21,6 +21,6 @@ public class A048786 extends Sequence1 {
       ++mN;
       mM = 1;
     }
-    return Binomial.binomial(mN - 1, mM - 1).multiply(mF.factorial(mN)).divide(mF.factorial(mM)).shiftLeft(2 * (mN - mM));
+    return Binomial.binomial(mN - 1, mM - 1).multiply(mF.factorial(mN)).divide(mF.factorial(mM)).shiftLeft(2L * (mN - mM));
   }
 }

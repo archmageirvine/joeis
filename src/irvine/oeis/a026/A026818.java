@@ -34,7 +34,7 @@ public class A026818 extends Sequence1 {
           ++max;
           syndrome >>>= 1;
         }
-        if (mPrime.isPrime(10 * max + min)) {
+        if (mPrime.isPrime(10L * max + min)) {
           return Z.valueOf(mN);
         }
       }

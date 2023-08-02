@@ -19,7 +19,7 @@ public class A126760 extends GeneralRecurrence {
     /* 6*k+0 */
     mLambda.add(n -> a(3 * n));
     /* 6*k+1 */
-    mLambda.add(n -> Z.valueOf(2 * n + 1));
+    mLambda.add(n -> Z.valueOf(2L * n + 1));
     /* 6*k+2 */
     mLambda.add(n -> a(3 * n + 1));
     /* 6*k+3 */
@@ -27,6 +27,6 @@ public class A126760 extends GeneralRecurrence {
     /* 6*k+4 */
     mLambda.add(n -> a(3 * n + 2));
     /* 6*k+5 */
-    mLambda.add(n -> Z.valueOf(2 * n + 2));
+    mLambda.add(n -> Z.valueOf(2L * n + 2));
   }
 }

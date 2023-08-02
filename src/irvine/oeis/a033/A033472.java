@@ -58,7 +58,7 @@ public class A033472 extends Sequence1 {
       for (int k = v1.length - 1; k >= 0; --k) {
         final int vk = (int) (t & 1) - v0[k];
         v2[k] = v1[k] - 2 * vk;
-        sign += vk * v1[k];
+        sign += (long) vk * v1[k];
         t >>>= 1;
       }
       s = s.signedAdd((sign & 1) == 0, treedet(v2));

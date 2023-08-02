@@ -21,17 +21,17 @@ public class A005036 extends Sequence1 {
     if (++mN == 1) {
       return Z.ONE;
     }
-    Q a = new Q(Binomial.binomial(3 * mN , mN), Z.valueOf(2 * mN + 1).multiply(2 * mN + 2));
+    Q a = new Q(Binomial.binomial(3L * mN , mN), Z.valueOf(2L * mN + 1).multiply(2L * mN + 2));
     if ((mN & 1) == 1) {
-      a = a.add(new Q(Binomial.binomial((3 * mN - 1) / 2, (mN - 1) / 2), Z.valueOf(2 * mN + 2)).multiply(5));
+      a = a.add(new Q(Binomial.binomial((3L * mN - 1) / 2, (mN - 1) / 2), Z.valueOf(2L * mN + 2)).multiply(5));
     } else {
-      a = a.add(new Q(Binomial.binomial(3 * mN / 2, mN / 2), Z.valueOf(2 * mN + 2)).multiply(3));
+      a = a.add(new Q(Binomial.binomial(3L * mN / 2, mN / 2), Z.valueOf(2L * mN + 2)).multiply(3));
     }
     final long d = LongUtils.gcd(4, mN - 1);
     for (final Z s : Jaguar.factor(d).divisors()) {
       final long ss = s.longValueExact();
       if (ss > 2) {
-        a = a.add(new Q(Binomial.binomial((3 * mN + 1) / ss, (mN - 1) / ss), Z.valueOf(3 * mN + 1)).multiply(Euler.phiAsLong(ss)));
+        a = a.add(new Q(Binomial.binomial((3L * mN + 1) / ss, (mN - 1) / ss), Z.valueOf(3L * mN + 1)).multiply(Euler.phiAsLong(ss)));
       }
     }
     return a.toZ().divide2();

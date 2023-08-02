@@ -17,8 +17,8 @@ public class A000309 extends Sequence0 {
   public Z next() {
     if (++mN > 0) {
       mPrev = mPrev.shiftLeft(2)
-        .multiply(Binomial.binomial(3 * mN, 3))
-        .divide(Binomial.binomial(2 * mN + 2, 3));
+        .multiply(Binomial.binomial(3L * mN, 3))
+        .divide(Binomial.binomial(2L * mN + 2, 3));
     }
     return mPrev;
   }

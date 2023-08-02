@@ -32,7 +32,7 @@ public class A115004 extends AbstractSequence {
     for (int i = 1; i <= mN; ++i) {
       for (int j = 1; j <= mN; ++j) {
         if (LongUtils.gcd(i, j) == 1) {
-          sum = sum.add((mN + 1 - i) * (mN + 1 - j));
+          sum = sum.add((long) (mN + 1 - i) * (mN + 1 - j));
         }
       }
     }

@@ -18,6 +18,6 @@ public class A123002 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return Z.ONE.shiftLeft(n).multiply(2 * k + 1).subtract(Z.ONE.shiftLeft(k).multiply(2 * n + 1));
+    return Z.ONE.shiftLeft(n).multiply(2L * k + 1).subtract(Z.ONE.shiftLeft(k).multiply(2L * n + 1));
   }
 }

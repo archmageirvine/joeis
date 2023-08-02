@@ -56,7 +56,7 @@ public class A007705 extends AbstractSequence {
         // Fill in the row
         for (int k = 0; k < mBoardSize; ++k) {
           c = c.or(Z.ONE.shiftLeft(ypos + k)); // row
-          c = c.or(Z.ONE.shiftLeft(k * mBoardSize + x)); // column
+          c = c.or(Z.ONE.shiftLeft((long) k * mBoardSize + x)); // column
         }
         // Fill in the diagonals (with wrap)
         if (mBoardSize > 1) {
@@ -85,7 +85,7 @@ public class A007705 extends AbstractSequence {
     int xp = x;
     int yp = y;
     do {
-      c = c.or(Z.ONE.shiftLeft(yp * mBoardSize + xp));
+      c = c.or(Z.ONE.shiftLeft((long) yp * mBoardSize + xp));
       xp = step(xp, dx, mBoardSize);
       yp = step(yp, dy, mBoardSize);
     } while (xp != x || yp != y);

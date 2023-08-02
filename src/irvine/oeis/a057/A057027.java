@@ -21,9 +21,9 @@ public class A057027 extends Triangle {
   @Override
   protected void addRow() {
     super.addRow();
-    long head = mRow * (mRow + 1) / 2 + 1;
+    long head = (long) mRow * (mRow + 1) / 2 + 1;
     ++mRow;
-    long tail = mRow * (mRow + 1) / 2;
+    long tail = (long) mRow * (mRow + 1) / 2;
     // System.out.println("addRow, mRow=" + mRow + ", head=" + head + ", tail=" + tail);
     int col = 0;
     while (col < mRow) {

@@ -20,7 +20,7 @@ public class A038777 extends A065091 {
       final int r = rr.intValue();
       final int q = (p - 1) / r;
       final Z phi = Z.valueOf(Euler.phiAsLong(r));
-      sum1 = sum1.add(phi.multiply(Z.ONE.shiftLeft((p + 1) * q).subtract(Z.ONE.shiftLeft(2 * q))));
+      sum1 = sum1.add(phi.multiply(Z.ONE.shiftLeft((long) (p + 1) * q).subtract(Z.ONE.shiftLeft(2L * q))));
       sum2 = sum2.add(phi.shiftLeft(q));
     }
     assert sum1.mod(p) == 0;

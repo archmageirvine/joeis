@@ -12,6 +12,6 @@ public class A317848 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A317848() {
-    super(1, (p, e) -> Binomial.binomial(2 * e, e));
+    super(1, (p, e) -> Binomial.binomial(2L * e, e));
   }
 }

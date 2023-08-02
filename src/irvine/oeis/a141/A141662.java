@@ -11,6 +11,6 @@ public class A141662 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return Z.valueOf(n - k * k).abs();
+    return Z.valueOf(n - (long) k * k).abs();
   }
 }

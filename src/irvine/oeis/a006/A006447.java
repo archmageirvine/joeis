@@ -44,7 +44,7 @@ public class A006447 extends A170896 {
         boolean ok = true;
         final int start = iter / 2;
         for (int i = 0; i < mN; ++i) {
-          if (plane[i].isSet(start) != plane[i].isSet(start + period) || plane[i].isSet(start) != plane[i].isSet(start + 2 * period)) {
+          if (plane[i].isSet(start) != plane[i].isSet(start + period) || plane[i].isSet(start) != plane[i].isSet(start + 2L * period)) {
             ok = false;
             break;
           }

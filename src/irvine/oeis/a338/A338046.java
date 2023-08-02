@@ -25,6 +25,6 @@ public class A338046 extends MemorySequence {
     final int n = mN / 2;
     return mN == 0 ? Z.ONE : (((mN & 1) == 0)
       ? a(n).add(Z.valueOf(2 * n).multiply(n + 1).multiply(2 * n + 1).divide(3))
-      : Z.valueOf(n + 1).multiply(4 * (n + 1) * (n + 1) - 1).divide(3));
+      : Z.valueOf(n + 1).multiply(4L * (n + 1) * (n + 1) - 1).divide(3));
   }
 }

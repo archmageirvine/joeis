@@ -14,6 +14,6 @@ public class A046052 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(Z.ONE.shiftLeft(1 << ++mN).add(1)).bigOmega());
+    return Z.valueOf(Jaguar.factor(Z.ONE.shiftLeft(1L << ++mN).add(1)).bigOmega());
   }
 }

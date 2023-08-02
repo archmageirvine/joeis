@@ -13,11 +13,11 @@ public class A005698 extends Sequence1 {
   private int mIndexB = 1;
 
   private Z a(final int n) {
-    return Z.ONE.shiftLeft(3 * n + 3).signedAdd((n & 1) == 0, Z.ONE).divide(9);
+    return Z.ONE.shiftLeft(3L * n + 3).signedAdd((n & 1) == 0, Z.ONE).divide(9);
   }
 
   private Z b(final int n) {
-    return Z.ONE.shiftLeft(3 * n + 5).signedAdd((n & 1) != 0, Z.FIVE).divide(9);
+    return Z.ONE.shiftLeft(3L * n + 5).signedAdd((n & 1) != 0, Z.FIVE).divide(9);
   }
 
   @Override

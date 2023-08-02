@@ -19,6 +19,6 @@ public class A008464 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.ONE.shiftLeft(2 * mN + 3).subtract(Z.valueOf(mN + 3).shiftLeft(mN));
+    return Z.ONE.shiftLeft(2L * mN + 3).subtract(Z.valueOf(mN + 3).shiftLeft(mN));
   }
 }

@@ -18,7 +18,7 @@ public class A008380 extends Sequence1 {
   public Z next() {
     mH.nextQ();
     if (++mN > 1) {
-      mF = mF.multiply(2 * mN - 1).multiply(2 * mN - 2);
+      mF = mF.multiply(2L * mN - 1).multiply(2L * mN - 2);
     }
     return mH.nextQ().multiply(mF).toZ();
   }

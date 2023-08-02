@@ -17,6 +17,6 @@ public class A027744 extends Sequence0 {
     if (++mN == 0) {
       return Z.ONE;
     }
-    return Euler.phi(Z.ONE.shiftLeft(3 * mN).subtract(1)).divide(mN);
+    return Euler.phi(Z.ONE.shiftLeft(3L * mN).subtract(1)).divide(mN);
   }
 }

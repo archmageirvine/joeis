@@ -22,7 +22,7 @@ public class A045876 extends Sequence1 {
     int t = 0;
     for (int k = 0; k <= 9; ++k) {
       t += cnts[k];
-      s += k * cnts[k];
+      s += (long) k * cnts[k];
     }
     return Binomial.multinomial(t, cnts).multiply(Z.TEN.pow(t).subtract(1)).multiply(s).divide(9L * t);
   }

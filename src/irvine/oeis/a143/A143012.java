@@ -18,6 +18,6 @@ public class A143012 extends A000040 {
   @Override
   public Z next() {
     final int p = super.next().intValue();
-    return Z.ONE.shiftLeft(2 * p).add(Z.ONE.shiftLeft(p)).add(1).divide(7);
+    return Z.ONE.shiftLeft(2L * p).add(Z.ONE.shiftLeft(p)).add(1).divide(7);
   }
 }

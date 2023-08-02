@@ -12,6 +12,6 @@ public class A328271 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A328271() {
-    super(1, (p, e) -> Integers.SINGLETON.sum(0, e / 2, i -> p.pow(2 * e - 4 * i)));
+    super(1, (p, e) -> Integers.SINGLETON.sum(0, e / 2, i -> p.pow(2L * e - 4L * i)));
   }
 }

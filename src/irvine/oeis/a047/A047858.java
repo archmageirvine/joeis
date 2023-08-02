@@ -13,7 +13,7 @@ public class A047858 extends Sequence0 {
   private int mM = 0;
 
   protected Z t(final int n, final int m) {
-    return Z.valueOf(m + 2 * n).shiftLeft(m - 1).subtract(n - 1);
+    return Z.valueOf(m + 2L * n).shiftLeft(m - 1).subtract(n - 1);
   }
 
   @Override

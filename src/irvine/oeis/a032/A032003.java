@@ -15,7 +15,7 @@ public class A032003 extends A032000 {
     Q kf = Q.ONE;
     for (int k = 1; k <= n; ++k) {
       kf = kf.divide(k);
-      final Q kf2 = new Q(2 * k - 1).multiply(kf);
+      final Q kf2 = new Q(2L * k - 1).multiply(kf);
       final Polynomial<Q> t1 = Y_RING.monomial(kf2, 1);
       final Polynomial<Polynomial<Q>> u = RING.onePlusXToTheN(t1, k);
       prod = RING.multiply(prod, u, n);

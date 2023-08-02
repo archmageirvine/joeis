@@ -14,6 +14,6 @@ public class A080523 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(mN).pow(mN).subtract(mN * (mN - 1) / 2);
+    return Z.valueOf(mN).pow(mN).subtract((long) mN * (mN - 1) / 2);
   }
 }

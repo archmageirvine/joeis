@@ -53,7 +53,7 @@ public class A333368 extends A002385 {
   @Override
   public Z next() {
     while (true) {
-      if (mCandidates.isEmpty() || Z.valueOf(mK).shiftLeft(2 * mK).compareTo(mCandidates.first().mV) <= 0) {
+      if (mCandidates.isEmpty() || Z.valueOf(mK).shiftLeft(2L * mK).compareTo(mCandidates.first().mV) <= 0) {
         // start a new k
         mCandidates.add(new Node(mK, 2));
         ++mK;

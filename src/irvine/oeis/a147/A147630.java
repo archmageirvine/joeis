@@ -17,7 +17,7 @@ public class A147630 extends Sequence1 {
     ++mN;
     Z prod = Z.ONE;
     for (int k = 1; k <= mN - 1; ++k) {
-      prod = prod.multiply(Z.valueOf(9 * k - 3));
+      prod = prod.multiply(Z.valueOf(9L * k - 3));
     }
     return prod;
   }

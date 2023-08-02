@@ -17,7 +17,7 @@ public class A344372 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 2 * mN; k >= 1; --k) {
-      final long gd = LongUtils.gcd(k, 2 * mN);
+      final long gd = LongUtils.gcd(k, 2L * mN);
       sum = sum.add(((k & 1) == 0) ? gd : -gd);
     }
     return sum;

@@ -21,7 +21,7 @@ public class A025760 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mA = mA.multiply(7 * mN - 8).multiply(7).divide(mN);
+      mA = mA.multiply(7L * mN - 8).multiply(7).divide(mN);
       mD.add(mA);
     }
     return RING.coeff(NUM, mD, mN);

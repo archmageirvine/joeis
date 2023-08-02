@@ -13,6 +13,6 @@ public class A318768 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A318768() {
-    super(1, (p, e) -> p.equals(Z.TWO) ? Z.ONE.add((7 - e * e) * e / 6) : Binomial.binomial(e + 3, 3));
+    super(1, (p, e) -> p.equals(Z.TWO) ? Z.ONE.add((7 - (long) e * e) * e / 6) : Binomial.binomial(e + 3, 3));
   }
 }

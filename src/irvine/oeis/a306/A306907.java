@@ -19,7 +19,7 @@ public class A306907 extends Sequence0 {
     for (int i = 0; i <= mN; ++i) {
       for (int j = 0; j <= mN; ++j) {
         for (int k = 0; k <= mN; ++k) {
-          prod = prod.multiply(Z.valueOf(i).multiply(j * k).add(1));
+          prod = prod.multiply(Z.valueOf(i).multiply((long) j * k).add(1));
         }
       }
     }

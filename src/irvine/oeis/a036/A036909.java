@@ -14,6 +14,6 @@ public class A036909 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Binomial.binomial(3L * ++mN, mN).shiftLeft(2 * mN + 1).divide(3);
+    return Binomial.binomial(3L * ++mN, mN).shiftLeft(2L * mN + 1).divide(3);
   }
 }

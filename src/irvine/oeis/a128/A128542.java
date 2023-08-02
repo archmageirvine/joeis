@@ -14,7 +14,7 @@ public class A128542 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    final long n2 = 2 * mN;
+    final long n2 = 2L * mN;
     return Z.valueOf(n2).pow(n2).subtract(1).divide(n2 * n2 - 1);
   }
 }

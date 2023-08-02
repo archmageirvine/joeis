@@ -12,6 +12,6 @@ public class A139290 extends A060205 {
 
   /** Construct the sequence. */
   public A139290() {
-    super(p -> Z.ONE.shiftLeft(2 * p - 1).divide(4));
+    super(p -> Z.ONE.shiftLeft(2L * p - 1).divide(4));
   }
 }

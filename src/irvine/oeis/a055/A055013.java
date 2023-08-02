@@ -17,7 +17,7 @@ public class A055013 extends Sequence0 {
     long sum = 0;
     final int[] cnts = ZUtils.digitCounts(++mN);
     for (int k = 1; k < cnts.length; ++k) {
-      final long k2 = k * k;
+      final long k2 = (long) k * k;
       sum += k2 * k2 * cnts[k];
     }
     return Z.valueOf(sum);

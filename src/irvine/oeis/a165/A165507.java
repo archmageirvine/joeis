@@ -20,6 +20,6 @@ public class A165507 extends RationalTriangle {
   public Q compute(int n, int m) {
     ++n;
     ++m;
-    return n == 1 ? Q.ZERO : new Q(Z.ONE, Z.valueOf(1 + n - m).square()).subtract(new Q(1, m * m));
+    return n == 1 ? Q.ZERO : new Q(Z.ONE, Z.valueOf(1 + n - m).square()).subtract(new Q(1, (long) m * m));
   }
 }

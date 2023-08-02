@@ -25,6 +25,6 @@ public class A089309 extends Sequence0 {
       return Z.ZERO;
     }
     final long v2 = ZUtils.valuation(Z.valueOf(mN), Z.TWO);
-    return Z.valueOf(ZUtils.valuation(Z.valueOf(mN / (1 << v2) + 1), Z.TWO));
+    return Z.valueOf(ZUtils.valuation(Z.valueOf(mN / (1L << v2) + 1), Z.TWO));
   }
 }

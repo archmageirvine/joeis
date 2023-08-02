@@ -12,6 +12,6 @@ public class A328621 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A328621() {
-    super(1, (p, e) -> p.pow(Z.valueOf(2 * e).mod(p)));
+    super(1, (p, e) -> p.pow(Z.valueOf(2L * e).mod(p)));
   }
 }

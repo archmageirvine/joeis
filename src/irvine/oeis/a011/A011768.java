@@ -46,7 +46,7 @@ public class A011768 extends Sequence1 {
           sum = sum.add(a(k, d).multiply(Euler.phiAsLong(d)));
         }
       }
-      t[k] = sum.add(e(k)).divide(4 * k);
+      t[k] = sum.add(e(k)).divide(4L * k);
     }
     return t;
   }

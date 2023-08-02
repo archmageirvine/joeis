@@ -13,7 +13,7 @@ public class A057160 extends Sequence0 {
 
   @Override
   public Z next() {
-    final Z t = Z.ONE.shiftLeft((1 << ++mN) - 1);
+    final Z t = Z.ONE.shiftLeft((1L << ++mN) - 1);
     long k = 0;
     Z u = Z.NEG_ONE;
     do {

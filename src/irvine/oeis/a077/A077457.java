@@ -11,6 +11,6 @@ public class A077457 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A077457() {
-    super(1, (p, e) -> p.pow(8 * e + 2).add(1).divide(p.square().add(1)));
+    super(1, (p, e) -> p.pow(8L * e + 2).add(1).divide(p.square().add(1)));
   }
 }

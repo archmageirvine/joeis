@@ -20,7 +20,7 @@ public class A027614 extends Sequence1 {
   private Z inverseP(final int row, final int col) {
     Z prod = Z.ONE;
     for (int k = 0; k <= col - row - 2; ++k) {
-      prod = prod.multiply(2 * mN - 2 * row - k);
+      prod = prod.multiply(2L * mN - 2L * row - k);
     }
     return prod;
   }
@@ -32,7 +32,7 @@ public class A027614 extends Sequence1 {
     for (int row = 0; row < mN; ++row) {
       a.set(row, row, Q.ONE);
       for (int col = row + 1; col < mN; ++col) {
-        final Q e = new Q(Binomial.binomial(mN - row, col - row).square(), Binomial.binomial(2 * mN - row - col + 1, col - row));
+        final Q e = new Q(Binomial.binomial(mN - row, col - row).square(), Binomial.binomial(2L * mN - row - col + 1, col - row));
         a.set(row, col, e);
       }
     }

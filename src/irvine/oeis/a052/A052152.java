@@ -32,8 +32,8 @@ public class A052152 extends A052107 {
     final IntegerPartition part = new IntegerPartition(mN / 2);
     int[] p;
     while ((p = part.next()) != null) {
-      final Z t = IntegerPartition.permCount(p, 2).shiftLeft(2 * edges(p));
-      sum = sum.add(t.multiply((mN & 1) == 1 ? Z.valueOf(mN).shiftLeft(4 * p.length) : Z.ONE));
+      final Z t = IntegerPartition.permCount(p, 2).shiftLeft(2L * edges(p));
+      sum = sum.add(t.multiply((mN & 1) == 1 ? Z.valueOf(mN).shiftLeft(4L * p.length) : Z.ONE));
     }
     return sum.divide(mF.factorial(mN));
   }

@@ -25,7 +25,7 @@ public class A062740 extends Sequence0 {
     }
     final Q[] c = new Q[mN + 1];
     for (int k = 0; k < c.length; ++k) {
-      c[k] = new Q(Z.ONE.shiftLeft(k * (k + 1) / 2), F.factorial(k));
+      c[k] = new Q(Z.ONE.shiftLeft((long) k * (k + 1) / 2), F.factorial(k));
     }
     return RING.log(Polynomial.create(c), mN).coeff(mN).multiply(F.factorial(mN)).toZ();
   }

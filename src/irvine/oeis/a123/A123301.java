@@ -48,7 +48,7 @@ public class A123301 extends AbstractSequence {
       final Polynomial<Q> qp = RING_Y.empty();
       Z fj = Z.ONE;
       for (int j = 0; j <= n; fj = fj.multiply(++j)) {
-        qp.add(new Q(Z.ONE.shiftLeft(i * j), fi.multiply(fj)));
+        qp.add(new Q(Z.ONE.shiftLeft((long) i * j), fi.multiply(fj)));
       }
       res.add(qp);
     }

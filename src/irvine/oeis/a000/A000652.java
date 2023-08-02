@@ -22,7 +22,7 @@ public class A000652 extends Sequence0 {
       return Z.ONE;
     }
     final int u = (1 << mN) - 1;
-    final Z t = mF.factorial(1 << (mN - 1)).multiply(u).multiply(u).shiftLeft(1 << (mN - 1));
-    return mF.factorial(1 << mN).add(t).shiftRight(2 * mN);
+    final Z t = mF.factorial(1 << (mN - 1)).multiply(u).multiply(u).shiftLeft(1L << (mN - 1));
+    return mF.factorial(1 << mN).add(t).shiftRight(2L * mN);
   }
 }

@@ -22,6 +22,6 @@ public class A237670 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Binomial.binomial(2 * d, d).divide(d + 1));
+    return Integers.SINGLETON.sumdiv(mN, d -> Binomial.binomial(2L * d, d).divide(d + 1));
   }
 }

@@ -54,8 +54,8 @@ public class A052107 extends AbstractSequence {
       final IntegerPartition part = new IntegerPartition(mN / 4);
       int[] p;
       while ((p = part.next()) != null) {
-        final Z t = IntegerPartition.permCount(p, 4).shiftLeft(2 * edges(p));
-        sum = sum.add(t.multiply((mN & 1) == 1 ? Z.valueOf(mN).shiftLeft(2 * p.length) : Z.ONE));
+        final Z t = IntegerPartition.permCount(p, 4).shiftLeft(2L * edges(p));
+        sum = sum.add(t.multiply((mN & 1) == 1 ? Z.valueOf(mN).shiftLeft(2L * p.length) : Z.ONE));
       }
       return sum.divide(mF.factorial(mN));
     } else {

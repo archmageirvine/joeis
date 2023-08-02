@@ -30,7 +30,7 @@ public class A000188 extends Sequence1 {
     Z r = Z.ONE;
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
-      r = r.multiply(p.pow(mA * e / mB));
+      r = r.multiply(p.pow((long) mA * e / mB));
     }
     return r;
   }

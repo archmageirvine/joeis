@@ -12,6 +12,6 @@ public class A242084 extends A060205 {
 
   /** Construct the sequence. */
   public A242084() {
-    super(p -> Z.FIVE.pow(p).subtract(Z.ONE.shiftLeft(2 * p)).add(-1));
+    super(p -> Z.FIVE.pow(p).subtract(Z.ONE.shiftLeft(2L * p)).add(-1));
   }
 }

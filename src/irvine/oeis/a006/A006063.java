@@ -53,7 +53,7 @@ public class A006063 extends Sequence1 {
   public Z next() {
     while (true) {
       final boolean[] used = new boolean[++mN];
-      mCubes.set(mN * mN * mN);
+      mCubes.set((long) mN * mN * mN);
       //System.out.println(permanent(mN) + " perm");
       if (search(used, 0)) {
         return Z.valueOf(mN);

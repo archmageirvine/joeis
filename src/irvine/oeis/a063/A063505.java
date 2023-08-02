@@ -16,6 +16,6 @@ public class A063505 extends Sequence2 {
   @Override
   public Z next() {
     final int n2 = ++mN / 2;
-    return Integers.SINGLETON.sum(0, mN / 6, k -> Binomial.binomial(mN, n2 - 3L * k).subtract(Binomial.binomial(mN, n2 - 3L * k - 1)).shiftLeft((mN & 1) == 0 ? n2 * n2 - 3 * k * k - k : n2 * n2 + n2 - 3 * k * k - 2 * k));
+    return Integers.SINGLETON.sum(0, mN / 6, k -> Binomial.binomial(mN, n2 - 3L * k).subtract(Binomial.binomial(mN, n2 - 3L * k - 1)).shiftLeft((mN & 1) == 0 ? (long) n2 * n2 - 3L * k * k - k : (long) n2 * n2 + n2 - 3L * k * k - 2L * k));
   }
 }

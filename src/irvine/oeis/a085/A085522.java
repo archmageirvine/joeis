@@ -21,7 +21,7 @@ public class A085522 extends AbstractSequence {
     ++mN;
     Z prod = Z.ONE;
     for (int k = 0; k <= mN; ++k) {
-      prod = prod.multiply(Z.THREE.pow(2 * k + 1).add(1));
+      prod = prod.multiply(Z.THREE.pow(2L * k + 1).add(1));
     }
     return prod;
   }

@@ -23,7 +23,7 @@ public class A002701 extends A002455 {
 
   protected Q computeNext() {
     if (++mN > 0) {
-      mDen = mDen.multiply(2 * mN + 3).multiply(2 * mN + 2).shiftLeft(2);
+      mDen = mDen.multiply(2L * mN + 3).multiply(2L * mN + 2).shiftLeft(2);
     }
     return new Q(super.next().multiply(6), mDen);
   }

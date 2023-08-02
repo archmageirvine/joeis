@@ -16,7 +16,7 @@ public class A006750 extends Sequence2 {
   @Override
   public Z next() {
     ++mN;
-    return new Q(Binomial.binomial(4L * mN, 2L * mN), Z.ONE.shiftLeft(4 * mN)).num()
+    return new Q(Binomial.binomial(4L * mN, 2L * mN), Z.ONE.shiftLeft(4L * mN)).num()
       .multiply(4L * mN + 1)
       .multiply(2L * mN - 2)
       .multiply(mN)

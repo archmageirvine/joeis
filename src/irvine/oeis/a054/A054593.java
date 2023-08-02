@@ -12,6 +12,6 @@ public class A054593 extends A003027 {
   @Override
   public Z next() {
     final int n = size();
-    return Z.ONE.shiftLeft(n * (n - 1)).subtract(super.next());
+    return Z.ONE.shiftLeft((long) n * (n - 1)).subtract(super.next());
   }
 }

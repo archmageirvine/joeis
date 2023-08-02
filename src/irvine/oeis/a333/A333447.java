@@ -23,7 +23,7 @@ public class A333447 extends Sequence0 {
   public Z next() {
     if (++mN > 0) {
       final int n21 = (1 << mN) - 1;
-      mA = Z.ONE.shiftLeft(2 * n21 + 1).subtract(Z.ONE.shiftLeft(n21)).add(mA.multiply(Z.ONE.shiftLeft(n21).add(1)));
+      mA = Z.ONE.shiftLeft(2L * n21 + 1).subtract(Z.ONE.shiftLeft(n21)).add(mA.multiply(Z.ONE.shiftLeft(n21).add(1)));
     }
     return mA;
   }

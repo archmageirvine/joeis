@@ -31,7 +31,7 @@ public class A018935 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    mSumSquares += mN * mN;
+    mSumSquares += (long) mN * mN;
     long m = LongUtils.sqrt(mSumSquares);
     while (true) {
       if (isSolvable(m * m, mN, 0)) {

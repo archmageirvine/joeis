@@ -54,7 +54,7 @@ public class A005675 extends Sequence1 {
         best = cnt;
       }
     }
-    return Z.ONE.shiftLeft(2 * mN - 1).subtract(best);
+    return Z.ONE.shiftLeft(2L * mN - 1).subtract(best);
   }
 }
 

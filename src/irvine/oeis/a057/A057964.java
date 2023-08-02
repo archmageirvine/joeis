@@ -20,6 +20,6 @@ public class A057964 extends Sequence3 {
       ++mN;
       mM = 3;
     }
-    return Binomial.binomial(mN, mM).multiply(Stirling.secondKind(mM, 3)).shiftLeft(2 * (mN - mM));
+    return Binomial.binomial(mN, mM).multiply(Stirling.secondKind(mM, 3)).shiftLeft(2L * (mN - mM));
   }
 }

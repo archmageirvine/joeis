@@ -18,6 +18,6 @@ public class A268435 extends Triangle {
   /* T(n,k) = k*(4*(n-k)-2)*T(n-1,k) + T(n-1, k-1) */
   @Override
   protected Z compute(final int n, final int k) {
-    return k == n ? Z.ONE : (k == 0 ? Z.ZERO : get(n - 1, k - 1).add(get(n - 1, k).multiply(k * (4 * (n - k) - 2))));
+    return k == n ? Z.ONE : (k == 0 ? Z.ZERO : get(n - 1, k - 1).add(get(n - 1, k).multiply(k * (4L * (n - k) - 2))));
   }
 }

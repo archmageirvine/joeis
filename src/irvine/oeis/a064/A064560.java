@@ -20,7 +20,7 @@ public class A064560 extends Sequence1 {
 
   /** Construct the sequence. */
   public A064560() {
-    this(0, i -> Z.ONE.shiftLeft(6 * i).multiply(Z.NINE), i -> Z.FIVE.pow(6 * i).multiply(Z.NINE));
+    this(0, i -> Z.ONE.shiftLeft(6L * i).multiply(Z.NINE), i -> Z.FIVE.pow(6L * i).multiply(Z.NINE));
   }
 
   /**

@@ -38,7 +38,7 @@ public class A225163 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    final Q result = new Q(mNum, 1).pow(1 << (mN - 1)).multiply(mB);
+    final Q result = new Q(mNum, 1).pow(1L << (mN - 1)).multiply(mB);
     mB = mB.subtract(mB.multiply(mB));
     return result.num();
   }

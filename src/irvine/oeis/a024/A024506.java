@@ -15,6 +15,6 @@ public class A024506 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Binomial.binomial(2 * mN, mN).shiftRight(mN + 3);
+    return Binomial.binomial(2L * mN, mN).shiftRight(mN + 3);
   }
 }

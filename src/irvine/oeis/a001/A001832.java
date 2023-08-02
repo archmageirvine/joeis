@@ -24,7 +24,7 @@ public class A001832 extends Sequence1 {
     mF = mF.multiply(++mN);
     Z c = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      c = c.add(Binomial.binomial(mN, k).shiftLeft(k * (mN - k)));
+      c = c.add(Binomial.binomial(mN, k).shiftLeft((long) k * (mN - k)));
     }
     mP = RING.add(mP, RING.monomial(new Q(c, mF), mN));
     final Polynomial<Q> log = RING.log1p(mP, mN);

@@ -15,7 +15,7 @@ public class A003009 extends Sequence3 {
   @Override
   public Z next() {
     if (++mN > 3) {
-      mA = mA.add(mA.square().shiftLeft(2 * mN - 4));
+      mA = mA.add(mA.square().shiftLeft(2L * mN - 4));
     }
     return mA;
   }

@@ -11,6 +11,6 @@ public class A254520 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A254520() {
-    super(1, (p, e) -> e == 1 ? p.square() : p.pow(2 * e).subtract(p.pow(2 * e - 2)));
+    super(1, (p, e) -> e == 1 ? p.square() : p.pow(2L * e).subtract(p.pow(2L * e - 2)));
   }
 }

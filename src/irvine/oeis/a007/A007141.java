@@ -41,7 +41,7 @@ public class A007141 extends MemoryFunction2Sequence<Integer, Z> {
     }
     Z sum = Z.ZERO;
     for (int i = 1; i < n; ++i) {
-      sum = sum.add(get(c, n - i).multiply(mS.get(c, i)).multiply((c + 1) * i - n + 1));
+      sum = sum.add(get(c, n - i).multiply(mS.get(c, i)).multiply((long) (c + 1) * i - n + 1));
     }
     return sum.divide(n - 1);
   }

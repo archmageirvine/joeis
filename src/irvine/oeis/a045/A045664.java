@@ -23,7 +23,7 @@ public class A045664 extends Sequence0 {
       final int d = dd.intValue();
       sum = sum.add(Z.ONE.shiftLeft(d - 1).multiply(Mobius.mobius(mN / d)));
     }
-    return sum.multiply(2 * mN);
+    return sum.multiply(2L * mN);
   }
 }
 

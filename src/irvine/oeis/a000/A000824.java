@@ -12,7 +12,7 @@ public class A000824 extends Sequence1 {
   private int mN = 0;
 
   private Z b(final int n, final int r, final int s) {
-    return Z.ONE.shiftLeft(r * (1 << n)).add(Z.ONE.shiftLeft(s * (1 << (n - 1))).multiply((1 << n) - 1)).shiftRight(n);
+    return Z.ONE.shiftLeft((long) r * (1L << n)).add(Z.ONE.shiftLeft((long) s * (1L << (n - 1))).multiply((1L << n) - 1)).shiftRight(n);
   }
 
   @Override

@@ -19,8 +19,8 @@ public class A000182 extends Sequence1 {
     ++mN;
     mB.nextQ();
     final Q b = mB.nextQ();
-    final Z t = Z.ONE.shiftLeft(2 * mN);
-    return b.multiply(t).multiply(t.subtract(Z.ONE)).divide(2 * mN).num().abs();
+    final Z t = Z.ONE.shiftLeft(2L * mN);
+    return b.multiply(t).multiply(t.subtract(Z.ONE)).divide(2L * mN).num().abs();
   }
 }
 

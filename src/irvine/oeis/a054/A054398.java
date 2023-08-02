@@ -21,7 +21,7 @@ public class A054398 extends Sequence1 {
         mA.set(0, Z.ONE);
       } else {
         final int t = mA.length();
-        mA.set(t, Z.ONE.shiftLeft(2 * mN + 1).add(1).divide(3));
+        mA.set(t, Z.ONE.shiftLeft(2L * mN + 1).add(1).divide(3));
         for (int k = 0; k < t; ++k) {
           mA.set(t + k + 1, mA.get(k));
         }

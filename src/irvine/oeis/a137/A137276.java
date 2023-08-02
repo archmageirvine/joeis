@@ -20,6 +20,6 @@ public class A137276 extends BaseTriangle {
   @Override
   public Z triangleElement(final int n, final int k) {
     return (n == k) ? Z.ONE : ((((n - k) & 1) == 1) ? Z.ZERO : Binomial.binomial((n + k) / 2, (n - k) / 2)
-      .multiply2().multiply(((((n - k) / 2) & 1) == 0) ? 1 : -1).multiply(2 * k - n).divide(n + k));
+      .multiply2().multiply(((((n - k) / 2) & 1) == 0) ? 1 : -1).multiply(2L * k - n).divide(n + k));
   }
 }

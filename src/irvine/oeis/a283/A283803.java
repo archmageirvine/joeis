@@ -17,6 +17,6 @@ public class A283803 extends EulerTransform {
 
   @Override
   protected Z advance() {
-    return Z.valueOf(mN).pow(4 * mN).negate();
+    return Z.valueOf(mN).pow(4L * mN).negate();
   }
 }

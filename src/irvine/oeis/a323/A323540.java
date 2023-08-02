@@ -17,7 +17,7 @@ public class A323540 extends Sequence0 {
     ++mN;
     Z prod = Z.ONE;
     for (int k = 0; k <= mN; ++k) {
-      prod = prod.multiply(Z.valueOf(k * k).add(Z.valueOf(mN - k).square()));
+      prod = prod.multiply(Z.valueOf((long) k * k).add(Z.valueOf(mN - k).square()));
     }
     return prod;
   }

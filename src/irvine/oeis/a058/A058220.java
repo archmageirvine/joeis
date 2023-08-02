@@ -15,7 +15,7 @@ public class A058220 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z t = Z.ONE.shiftLeft(1 << ++mN);
+    final Z t = Z.ONE.shiftLeft(1L << ++mN);
     return t.subtract(mPrime.prevPrime(t));
   }
 }

@@ -14,7 +14,7 @@ public class A045723 extends Sequence0 {
 
   @Override
   public Z next() {
-    Z t = Z.ONE.shiftLeft(++mN).add(Binomial.binomial(2 * mN, mN));
+    Z t = Z.ONE.shiftLeft(++mN).add(Binomial.binomial(2L * mN, mN));
     if ((mN & 1) == 0) {
       t = t.add(Binomial.binomial(mN - 1, (mN - 2) / 2).multiply2());
     }

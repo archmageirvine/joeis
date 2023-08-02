@@ -12,6 +12,6 @@ public class A343526 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A343526() {
-    super(1, (p, e) -> Z.valueOf(7 * e + 1));
+    super(1, (p, e) -> Z.valueOf(7L * e + 1));
   }
 }

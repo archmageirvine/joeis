@@ -19,6 +19,6 @@ public class A197190 extends Sequence0 {
     if (mN == 0) {
       return Z.TWO;
     }
-    return Fibonacci.lucas(Euler.phi(Z.valueOf(mN * mN)).intValue());
+    return Fibonacci.lucas(Euler.phi(Z.valueOf((long) mN * mN)).intValue());
   }
 }

@@ -18,10 +18,10 @@ public class A000698 extends MemorySequence {
       Z f = Z.ONE;
       Z s = Z.ZERO;
       for (int k = 1; k < n; ++k) {
-        f = f.multiply(2 * k - 1);
+        f = f.multiply(2L * k - 1);
         s = s.add(f.multiply(a(n - k)));
       }
-      return f.multiply(2 * n - 1).subtract(s);
+      return f.multiply(2L * n - 1).subtract(s);
     }
   }
 }

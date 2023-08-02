@@ -13,7 +13,7 @@ public class A018215 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Z.ONE.shiftLeft(2 * ++mN).multiply(mN);
+    return Z.ONE.shiftLeft(2L * ++mN).multiply(mN);
   }
 }
 

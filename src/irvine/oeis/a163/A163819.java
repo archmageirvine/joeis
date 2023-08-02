@@ -12,6 +12,6 @@ public class A163819 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A163819() {
-    super(1, (p, e) -> Z.valueOf(is2(p) || is5(p) ? neg1(e) : (isMod(40, p, 3, 17, 21, 27, 29, 31, 33, 39) ? oneOr0(e) : (isMod(40, p, 1, 9, 11, 19) ? e + 1 : neg1(e) * (e + 1)))));
+    super(1, (p, e) -> Z.valueOf(is2(p) || is5(p) ? neg1(e) : (isMod(40, p, 3, 17, 21, 27, 29, 31, 33, 39) ? oneOr0(e) : (isMod(40, p, 1, 9, 11, 19) ? e + 1 : (long) neg1(e) * (e + 1)))));
   }
 }

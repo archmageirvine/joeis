@@ -17,7 +17,7 @@ public class A005017 extends Sequence1 {
   @Override
   public Z next() {
     mF = mF.multiply(++mN);
-    final Q a = new Q(Binomial.binomial(2 * mN - 2, mN - 1), mF);
+    final Q a = new Q(Binomial.binomial(2L * mN - 2, mN - 1), mF);
     return a.den().square();
   }
 

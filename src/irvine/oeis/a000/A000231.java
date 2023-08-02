@@ -13,8 +13,8 @@ public class A000231 extends Sequence0 {
 
   @Override
   public Z next() {
-    return ++mN == 0 ? Z.TWO : Z.ONE.shiftLeft(1 << mN)
-      .add(Z.ONE.shiftLeft(mN).subtract(Z.ONE).multiply(Z.ONE.shiftLeft(1 << (mN - 1))))
+    return ++mN == 0 ? Z.TWO : Z.ONE.shiftLeft(1L << mN)
+      .add(Z.ONE.shiftLeft(mN).subtract(Z.ONE).multiply(Z.ONE.shiftLeft(1L << (mN - 1))))
       .shiftRight(mN);
   }
 }

@@ -18,7 +18,7 @@ public class A005832 extends Sequence1 {
       if (mN == 33) {
         throw new UnsupportedOperationException();
       }
-      mA = mA.multiply(Z.valueOf(mN).pow(1 << (mN - 1)));
+      mA = mA.multiply(Z.valueOf(mN).pow(1L << (mN - 1)));
     }
     return mA;
   }

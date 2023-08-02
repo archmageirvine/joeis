@@ -17,6 +17,6 @@ public class A107870 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return n == 0 ? Z.ONE : Binomial.binomial(n * (n - 1) / 2 - k * (k - 1) / 2 + n - k + 2, n - k);
+    return n == 0 ? Z.ONE : Binomial.binomial((long) n * (n - 1) / 2 - (long) k * (k - 1) / 2 + n - k + 2, n - k);
   }
 }

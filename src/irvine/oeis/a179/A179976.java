@@ -14,6 +14,6 @@ public class A179976 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Z.ONE.shiftLeft(2 * mN + 1).mod(Z.valueOf(2 * mN + 1));
+    return Z.ONE.shiftLeft(2L * mN + 1).mod(Z.valueOf(2L * mN + 1));
   }
 }

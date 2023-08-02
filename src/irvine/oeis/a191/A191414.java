@@ -11,6 +11,6 @@ public class A191414 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A191414() {
-    super(1, (p, e) -> p.pow(2 * e).subtract(1));
+    super(1, (p, e) -> p.pow(2L * e).subtract(1));
   }
 }

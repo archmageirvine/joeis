@@ -16,6 +16,6 @@ public class A046747 extends A000410 {
   public Z next() {
     final Z t = super.next();
     mF = mF.multiply(mN);
-    return Z.ONE.shiftLeft(mN * mN).add(t.subtract(Binomial.binomial((1L << mN) - 1, mN)).multiply(mF));
+    return Z.ONE.shiftLeft((long) mN * mN).add(t.subtract(Binomial.binomial((1L << mN) - 1, mN)).multiply(mF));
   }
 }

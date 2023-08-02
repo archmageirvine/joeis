@@ -22,6 +22,6 @@ public class A227041 extends Triangle {
   public Z compute(int n, int m) {
     ++n;
     ++m;
-    return n == 1 ? Z.ONE : new Q(2 * m * n, LongUtils.gcd(n + m, 2 * n * m)).num();
+    return n == 1 ? Z.ONE : new Q(2L * m * n, LongUtils.gcd(n + m, 2L * n * m)).num();
   }
 }

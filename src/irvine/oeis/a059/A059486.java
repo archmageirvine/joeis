@@ -25,6 +25,6 @@ public class A059486 extends Sequence0 {
         prod = prod.divide(3L * j - 3L * i);
       }
     }
-    return prod.shiftRight(2 * mN * mN + mN);
+    return prod.shiftRight(2L * mN * mN + mN);
   }
 }

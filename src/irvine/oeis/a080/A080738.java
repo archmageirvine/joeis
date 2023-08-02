@@ -27,7 +27,7 @@ public class A080738 extends Sequence0 {
       mList.clear();
       mM = 0;
       final A080737 seq = new A080737();
-      final Z n = Z.valueOf(2 * mN);
+      final Z n = Z.valueOf(2L * mN);
       final Z limit = Z.ONE.shiftLeft(mN + 2);
       for (Z k = Z.ONE; k.compareTo(limit) < 0; k = k.add(1)) {
         if (n.equals(seq.next())) {

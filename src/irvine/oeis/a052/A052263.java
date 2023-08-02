@@ -24,7 +24,7 @@ public class A052263 extends A006202 {
     Z sum = Z.ZERO;
     ++mN;
     for (int k = 1; k < mN; ++k) {
-      sum = sum.add(Binomial.binomial(mN, k).multiply(mA.get(k)).shiftLeft(k * (mN - k)));
+      sum = sum.add(Binomial.binomial(mN, k).multiply(mA.get(k)).shiftLeft((long) k * (mN - k)));
     }
     return sum.divide(80);
   }

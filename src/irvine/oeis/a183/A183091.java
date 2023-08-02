@@ -11,6 +11,6 @@ public class A183091 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A183091() {
-    super(1, (p, e) -> p.pow(e * (e + 1) / 2));
+    super(1, (p, e) -> p.pow((long) e * (e + 1) / 2));
   }
 }

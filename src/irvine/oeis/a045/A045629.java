@@ -25,6 +25,6 @@ public class A045629 extends Sequence0 {
       sum = sum.add(Binomial.binomial(2L * d - 1, d - 1).multiply(Euler.phiAsLong(mN / d)));
       sum = sum.add(Z.ONE.shiftLeft(d - 1).multiply(Euler.phiAsLong(2L * (mN / d))));
     }
-    return sum.divide(2 * mN);
+    return sum.divide(2L * mN);
   }
 }

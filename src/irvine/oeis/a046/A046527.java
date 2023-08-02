@@ -18,7 +18,7 @@ public class A046527 extends Sequence0 {
       return Binomial.catalan(n);
     }
     final Z b = Binomial.binomial(n, m - 1);
-    return b.shiftLeft(2 * (n - m + 1))
+    return b.shiftLeft(2L * (n - m + 1))
       .subtract(b.multiply(Binomial.binomial(2L * n, n)).divide(Binomial.binomial(2L * m - 2, m - 1)))
       .divide2();
   }

@@ -12,6 +12,6 @@ public class A100635 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A100635() {
-    super(1, (p, e) -> Z.TWO.multiply(e * e + 2 * e + 1).subtract(1));
+    super(1, (p, e) -> Z.TWO.multiply((long) e * e + 2L * e + 1).subtract(1));
   }
 }

@@ -16,7 +16,7 @@ public class A278947 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    final Z result = Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(d).multiply(5 * d - 3).divide2());
+    final Z result = Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(d).multiply(5L * d - 3).divide2());
     return (mN == 0) ? Z.ZERO : result;
   }
 }

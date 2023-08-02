@@ -22,6 +22,6 @@ public class A054387 extends Sequence0 {
     if (++mN > 1) {
       mF = mF.multiply(2L * mN - 2).multiply(2L * mN - 3).divide(mN - 1).divide(mN - 1);
     }
-    return select(mN == 0 ? Q.ZERO : new Q(mF, Z.valueOf(2L * mN - 3).multiply(2L * mN + 1).shiftLeft(4 * mN - 2)).multiply(Z.ONE.shiftLeft(2 * mN + 1)));
+    return select(mN == 0 ? Q.ZERO : new Q(mF, Z.valueOf(2L * mN - 3).multiply(2L * mN + 1).shiftLeft(4L * mN - 2)).multiply(Z.ONE.shiftLeft(2L * mN + 1)));
   }
 }

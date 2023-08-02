@@ -23,7 +23,7 @@ public class A038871 extends Sequence1 {
     }
     Z sum = Z.ZERO;
     for (int j = 0; j < mM; ++j) {
-      sum = sum.add(Z.ONE.shiftLeft(mN * j / mM));
+      sum = sum.add(Z.ONE.shiftLeft((long) mN * j / mM));
     }
     return sum;
   }

@@ -22,7 +22,7 @@ public class A080584 extends Sequence0 {
         mToggle = Z.ZERO;
         ++mN;
       }
-      mCount = (1 << mN) * 3;
+      mCount = (1L << mN) * 3L;
     }
     --mCount;
     return mToggle;

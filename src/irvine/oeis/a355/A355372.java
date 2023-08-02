@@ -30,7 +30,7 @@ public class A355372 extends AbstractSequence {
     Q sum = Q.ZERO;
     for (int k = 1; k <= mN; ++k) {
       sum = sum.add(new Q(Z.ONE.shiftLeft(k).subtract(1).multiply(mN - k + 2).multiply(mN - k + 1),
-        Z.valueOf(2 * k)));
+        Z.valueOf(2L * k)));
     }
     return sum.multiply(MemoryFactorial.SINGLETON.factorial(mN)).num();
   }

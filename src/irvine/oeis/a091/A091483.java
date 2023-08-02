@@ -13,6 +13,6 @@ public class A091483 extends Sequence0 {
 
   @Override
   public Z next() {
-    return ++mN == 0 ? Z.ONE : Z.valueOf(4 * mN).pow(mN);
+    return ++mN == 0 ? Z.ONE : Z.valueOf(4L * mN).pow(mN);
   }
 }

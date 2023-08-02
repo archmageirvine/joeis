@@ -18,7 +18,7 @@ public class A002517 extends MemorySequence {
     case 1:
       return Z.valueOf(n + 1);
     default: /* 2 */
-      return Z.valueOf(3 * (n - 1));
+      return Z.valueOf(3L * (n - 1));
     }
   }
 }

@@ -22,6 +22,6 @@ public class A089265 extends Sequence1 {
   public Z next() {
     ++mN;
     final long v2 = ZUtils.valuation(Z.valueOf(mN), Z.TWO);
-    return Z.valueOf(v2 + mN / (1 << v2) - 1);
+    return Z.valueOf(v2 + mN / (1L << v2) - 1);
   }
 }

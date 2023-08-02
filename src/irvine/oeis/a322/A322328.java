@@ -11,6 +11,6 @@ public class A322328 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A322328() {
-    super(1, (p, e) -> Z.valueOf(4 * e));
+    super(1, (p, e) -> Z.valueOf(4L * e));
   }
 }

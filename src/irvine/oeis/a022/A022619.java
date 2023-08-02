@@ -25,9 +25,9 @@ public class A022619 extends Sequence1 {
       mM = 0;
       mGf = RING.zero();
       for (int j = 0; j <= mN; ++j) {
-        mGf = RING.signedAdd((j & 1) == 0, mGf, RING.multiply(RING.pow(RING.onePlusXToTheN(1 << j), 1 << (mN - j)), Binomial.gaussianBinomial(mN, j, 2).shiftLeft(j * (j - 1) / 2)));
+        mGf = RING.signedAdd((j & 1) == 0, mGf, RING.multiply(RING.pow(RING.onePlusXToTheN(1 << j), 1L << (mN - j)), Binomial.gaussianBinomial(mN, j, 2).shiftLeft((long) j * (j - 1) / 2)));
       }
     }
-    return mGf.coeff(mM).divide(1 << mN);
+    return mGf.coeff(mM).divide(1L << mN);
   }
 }

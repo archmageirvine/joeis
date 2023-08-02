@@ -18,7 +18,7 @@ public class A203012 extends Sequence1 {
     Z prod = Z.ONE;
     for (int k = 2; k <= mN; ++k) {
       for (int j = 1; j < k; ++j) {
-        prod = prod.multiply(k * k + k * j + j * j);
+        prod = prod.multiply((long) k * k + (long) k * j + (long) j * j);
       }
     }
     return prod;

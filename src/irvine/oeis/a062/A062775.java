@@ -23,9 +23,9 @@ public class A062775 extends Sequence1 {
       final int e = fs.getExponent(p);
       if (Z.TWO.equals(p)) {
         if ((e & 1) == 1) {
-          prod = prod.multiply(Z.ONE.shiftLeft((e + 1) / 2).subtract(1)).shiftLeft((3 * e + 1) / 2);
+          prod = prod.multiply(Z.ONE.shiftLeft((e + 1) / 2).subtract(1)).shiftLeft((3L * e + 1) / 2);
         } else {
-          prod = prod.multiply(Z.ONE.shiftLeft(e / 2 + 1).subtract(1)).shiftLeft(3 * e / 2);
+          prod = prod.multiply(Z.ONE.shiftLeft(e / 2 + 1).subtract(1)).shiftLeft(3L * e / 2);
         }
       } else if ((e & 1) == 1) {
         prod = prod.multiply(p.pow((3L * e - 1) / 2)).multiply(p.pow((e + 1L) / 2).add(p.pow((e - 1L) / 2).subtract(1)));

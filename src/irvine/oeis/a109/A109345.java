@@ -28,6 +28,6 @@ public class A109345 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return mBase.pow((mN * (mN - 1)) / 2);
+    return mBase.pow(((long) mN * (mN - 1)) / 2);
   }
 }

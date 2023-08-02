@@ -20,6 +20,6 @@ public class A354902 extends Sequence0 {
     if (mN == 1) {
       return Z.THREE;
     }
-    return Z.valueOf(mN - 3).multiply(2 * mN).add(11);
+    return Z.valueOf(mN - 3).multiply(2L * mN).add(11);
   }
 }

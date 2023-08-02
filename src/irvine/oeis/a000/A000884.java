@@ -24,8 +24,8 @@ public class A000884 extends Sequence1 {
     final int tn = 1 << mN;
     final int tm = 1 << (mN - 1);
     return Z224.shiftLeft(tn)
-      .add(Z42.shiftLeft(2 * tn))
-      .add(Z.ONE.shiftLeft(3 * tn))
+      .add(Z42.shiftLeft(2L * tn))
+      .add(Z.ONE.shiftLeft(3L * tn))
       .add(Z448.shiftLeft(tm + mN))
       .subtract(Z448.shiftLeft(tm))
       .add(Z92.shiftLeft(mN + tn + tm))

@@ -21,7 +21,7 @@ public class A011786 extends Sequence1 {
       final int e = fs.getExponent(p);
       final Z p2 = p.square();
       final Z p3 = p2.multiply(p);
-      prod = prod.multiply(p.pow(15 * e - 9).multiply(p3.multiply(p).subtract(1)).multiply(p3.subtract(1)).multiply(p2.subtract(1)));
+      prod = prod.multiply(p.pow(15L * e - 9).multiply(p3.multiply(p).subtract(1)).multiply(p3.subtract(1)).multiply(p2.subtract(1)));
     }
     return prod;
   }

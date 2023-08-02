@@ -20,16 +20,16 @@ public class A029850 extends Sequence0 {
   private Z f(final int i, final int j, final int[] s) {
     if (i == j) {
       if ((i & 1) == 1) {
-        return sum(2 * i, s).pow((i * s[i] * s[i] - s[i]) / 2).multiply(sum(i, s).pow(s[i]));
+        return sum(2 * i, s).pow(((long) i * s[i] * s[i] - s[i]) / 2).multiply(sum(i, s).pow(s[i]));
       } else if ((i & 3) == 0) {
-        return sum(i, s).pow(i * s[i] * s[i]);
+        return sum(i, s).pow((long) i * s[i] * s[i]);
       } else {
         assert (i & 3) == 2;
-        return sum(i, s).pow(i * s[i] * s[i] - s[i]).multiply(sum(i / 2, s).pow(2 * s[i]));
+        return sum(i, s).pow((long) i * s[i] * s[i] - s[i]).multiply(sum(i / 2, s).pow(2L * s[i]));
       }
     } else {
       final int lcm = IntegerUtils.lcm(IntegerUtils.lcm(i, j), 2);
-      return sum(lcm, s).pow(2 * i * j * s[i] * s[j] / lcm);
+      return sum(lcm, s).pow(2L * i * j * s[i] * s[j] / lcm);
     }
   }
 

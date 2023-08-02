@@ -21,6 +21,6 @@ public class A177784 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Binomial.binomial(mN * mN, mN).divide(mN * (mN + 1));
+    return Binomial.binomial((long) mN * mN, mN).divide((long) mN * (mN + 1));
   }
 }

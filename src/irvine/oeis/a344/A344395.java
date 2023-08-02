@@ -21,6 +21,6 @@ public class A344395 extends HypergeometricSequence {
   @Override
   public Z next() {
     ++mN;
-    return super.nextQ().multiply(Binomial.binomial(4 * mN - 1, 2 * mN - 1)).num();
+    return super.nextQ().multiply(Binomial.binomial(4L * mN - 1, 2L * mN - 1)).num();
   }
 }

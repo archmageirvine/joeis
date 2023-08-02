@@ -15,7 +15,7 @@ public class A000888 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Binomial.binomial(2 * mN, mN).square().divide(mN + 1);
+    return Binomial.binomial(2L * mN, mN).square().divide(mN + 1);
   }
 }
 

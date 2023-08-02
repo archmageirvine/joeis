@@ -17,6 +17,6 @@ public class A359100 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Jaguar.factor(5 * d).phi()).divide(4);
+    return Integers.SINGLETON.sumdiv(mN, d -> Jaguar.factor(5L * d).phi()).divide(4);
   }
 }

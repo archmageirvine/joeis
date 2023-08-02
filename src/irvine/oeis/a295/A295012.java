@@ -21,6 +21,6 @@ public class A295012 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Jaguar.factor(12 * mN - 1).sigma().divide(12);
+    return Jaguar.factor(12L * mN - 1).sigma().divide(12);
   }
 }

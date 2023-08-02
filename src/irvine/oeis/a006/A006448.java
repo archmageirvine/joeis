@@ -27,7 +27,7 @@ public class A006448 extends Sequence1 {
             sum = sum.add(dd.multiply(s[d]));
           }
         }
-        prod = prod.multiply(sum.pow(IntegerUtils.gcd(i, j) * s[i] * s[j]));
+        prod = prod.multiply(sum.pow((long) IntegerUtils.gcd(i, j) * s[i] * s[j]));
       }
     }
     return prod;

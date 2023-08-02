@@ -18,6 +18,6 @@ public class A276158 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return Z.valueOf(k == 0 ? n + 1 : 6 * k * (n + 1 - k));
+    return Z.valueOf(k == 0 ? n + 1 : 6L * k * (n + 1 - k));
   }
 }

@@ -15,7 +15,7 @@ public class A000883 extends Sequence1 {
   public Z next() {
     ++mN;
     final int tn = 1 << mN;
-    return Z.ONE.shiftLeft(2 * tn)
+    return Z.ONE.shiftLeft(2L * tn)
       .subtract(Z.FOUR.shiftLeft(tn))
       .add(Z.EIGHT.shiftLeft(mN))
       .add(Z.TEN.shiftLeft(mN + tn))

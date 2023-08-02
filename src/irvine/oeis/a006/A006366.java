@@ -19,7 +19,7 @@ public class A006366 extends Sequence0 {
     ++mN;
     Q prod = Q.ONE;
     for (int k = 0; k < mN; ++k) {
-      prod = prod.multiply(3 * k + 2).multiply(mF.factorial(3 * k)).divide(mF.factorial(mN + k));
+      prod = prod.multiply(3L * k + 2).multiply(mF.factorial(3 * k)).divide(mF.factorial(mN + k));
     }
     return prod.toZ();
   }

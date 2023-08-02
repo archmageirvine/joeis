@@ -16,6 +16,6 @@ public class A002542 extends Sequence1 {
     if (++mN == 32) {
       throw new UnsupportedOperationException();
     }
-    return Z.ONE.shiftLeft((1 << mN) - 2).subtract(Z.ONE.shiftLeft((1 << (mN - 1)) - 1));
+    return Z.ONE.shiftLeft((1L << mN) - 2).subtract(Z.ONE.shiftLeft((1L << (mN - 1)) - 1));
   }
 }

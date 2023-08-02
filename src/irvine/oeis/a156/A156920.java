@@ -20,6 +20,6 @@ public class A156920 extends Triangle {
     if (k == n || k == 0) {
       return Z.ONE;
     }
-    return get(n - 1, k - 1).multiply(2 * (n - k) + 1).add(get(n - 1, k).multiply(k + 1));
+    return get(n - 1, k - 1).multiply(2L * (n - k) + 1).add(get(n - 1, k).multiply(k + 1));
   }
 }

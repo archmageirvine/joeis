@@ -20,7 +20,7 @@ public class A038766 extends A024462 {
   }
 
   private Z h(final int r, final int eta) {
-    final Z h = factorial(r - 1).multiply(3 * r - 2 * eta).divide(factorial(eta)).divide(factorial(r - eta));
+    final Z h = factorial(r - 1).multiply(3L * r - 2L * eta).divide(factorial(eta)).divide(factorial(r - eta));
     final int p = eta - 1;
     return p >= 0 ? h.multiply(Z.THREE.pow(p)) : h.divide(Z.THREE.pow(-p));
   }

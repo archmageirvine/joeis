@@ -16,7 +16,7 @@ public class A054335 extends Sequence0 {
   protected Z t(final int n, final int m) {
     final int k = m / 2;
     if ((m & 1) == 1) {
-      return Binomial.binomial(n - k - 1, k).shiftLeft(2 * (n - m));
+      return Binomial.binomial(n - k - 1, k).shiftLeft(2L * (n - m));
     } else {
       return Binomial.binomial(2L * n - m, n - k).multiply(Binomial.binomial(n - k, k)).divide(Binomial.binomial(m, k));
     }

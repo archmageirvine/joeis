@@ -19,7 +19,7 @@ public class A007404 extends DecimalExpansionSequence {
         Z sum = one.divide2(); // 1/2
         int k = 0;
         while (true) {
-          final Z t = one.divide(Z.ONE.shiftLeft(1 << ++k));
+          final Z t = one.divide(Z.ONE.shiftLeft(1L << ++k));
           if (t.isZero()) {
             break;
           }

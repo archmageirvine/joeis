@@ -16,6 +16,6 @@ public class A011764 extends Sequence0 {
     if (++mN > 30) {
       throw new UnsupportedOperationException();
     }
-    return Z.THREE.pow(1 << mN);
+    return Z.THREE.pow(1L << mN);
   }
 }

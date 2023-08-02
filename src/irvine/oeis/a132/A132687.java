@@ -21,6 +21,6 @@ public class A132687 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Binomial.binomial(Z.ONE.shiftLeft(mN).add(3 * mN - 1), Z.valueOf(mN));
+    return Binomial.binomial(Z.ONE.shiftLeft(mN).add(3L * mN - 1), Z.valueOf(mN));
   }
 }

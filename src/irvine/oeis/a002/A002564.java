@@ -56,7 +56,7 @@ public class A002564 extends Sequence1 {
         // Fill in the row
         for (int k = 0; k < mBoardSize; ++k) {
           c = c.or(Z.ONE.shiftLeft(ypos + k)); // row
-          c = c.or(Z.ONE.shiftLeft(k * mBoardSize + x)); // column
+          c = c.or(Z.ONE.shiftLeft((long) k * mBoardSize + x)); // column
         }
         // Fill in the diagonals
         if (mBoardSize > 1) {

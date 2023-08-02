@@ -18,7 +18,7 @@ public class A054374 extends Sequence1 {
     for (int k = 2; k <= mN; ++k) {
       prod = prod.multiply(Z.valueOf(k).pow(k));
     }
-    return prod.shiftLeft(3 * mN * (mN - 1) / 2);
+    return prod.shiftLeft(3L * mN * (mN - 1) / 2);
   }
 }
 

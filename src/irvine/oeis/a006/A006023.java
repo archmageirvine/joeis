@@ -23,8 +23,8 @@ public class A006023 extends Sequence0 {
     long powersOfTwo = 0;
     for (int k = 1; k < v.length; ++k) {
       if (v[k] > 0) {
-        powersOfTwo += (k - 1) * v[k];
-        powersOfTwo += k * v[k] * (v[k] - 1);
+        powersOfTwo += (long) (k - 1) * v[k];
+        powersOfTwo += (long) k * v[k] * (v[k] - 1);
         for (int j = k + 1; j < v.length; ++j) {
           powersOfTwo += 2 * LongUtils.gcd(j, k) * v[j] * v[k];
         }

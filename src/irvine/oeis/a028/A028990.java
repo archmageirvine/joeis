@@ -14,7 +14,7 @@ public class A028990 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    final Z n = Z.TEN.pow(2 * mN + 1).subtract(1);
+    final Z n = Z.TEN.pow(2L * mN + 1).subtract(1);
     final Z aS = Z.TEN.pow(mN + 3).add(mN >= 3 ? Z.TEN.pow(mN - 3) : Z.ZERO);
     final Z bS = Z.TEN.pow(mN + 2).add(mN >= 2 ? Z.TEN.pow(mN - 2) : Z.ZERO);
     final Z cS = Z.TEN.pow(mN + 1).add(mN >= 1 ? Z.TEN.pow(mN - 1) : Z.ZERO);

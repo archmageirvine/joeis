@@ -19,6 +19,6 @@ public class A157528 extends BaseTriangle {
   @Override
   public Z triangleElement(final int n, final int k) {
     // A157528 := proc(n, k) if k=0 or k=n then 1; else 2*k*(n-k) ; end if; end proc:
-    return Z.valueOf((k == 0 || k == n) ? 1 : 2 * k * (n - k));
+    return Z.valueOf((k == 0 || k == n) ? 1 : 2L * k * (n - k));
   }
 }

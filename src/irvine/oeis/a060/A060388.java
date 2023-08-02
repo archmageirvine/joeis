@@ -26,7 +26,7 @@ public class A060388 extends DecimalExpansionSequence {
         Z p = Z.ONE;
         while (true) {
           p = mPrime.nextPrime(p);
-          final Z t = p.shiftLeft(prec - ++k * k);
+          final Z t = p.shiftLeft(prec - (long) ++k * k);
           if (t.isZero()) {
             break;
           }

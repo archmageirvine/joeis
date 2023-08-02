@@ -15,7 +15,7 @@ public class A016069 extends Sequence1 {
     int used = 0;
     int cnt = 0;
     while (!n.isZero()) {
-      final long bit = 1 << n.mod(10);
+      final long bit = 1L << n.mod(10);
       if ((used & bit) == 0) {
         if (++cnt > 2) {
           return false;

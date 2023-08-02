@@ -20,6 +20,6 @@ public class A086229 extends HypergeometricSequence {
   @Override
   public Z next() {
     ++mN;
-    return super.nextQ().multiply(Z.ONE.shiftLeft(mN * (mN - 1) / 2)).num();
+    return super.nextQ().multiply(Z.ONE.shiftLeft((long) mN * (mN - 1) / 2)).num();
   }
 }

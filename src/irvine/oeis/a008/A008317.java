@@ -23,7 +23,7 @@ public class A008317 extends A001790 {
       mDen = super.next();
     }
     final int s = (mN - mM) / 2;
-    return mDen.multiply(2 * mM + 1)
+    return mDen.multiply(2L * mM + 1)
       .multiply(mF.factorial(mN))
       .shiftRight(s)
       .divide(mF.factorial(s))

@@ -11,6 +11,6 @@ public class A270437 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A270437() {
-    super(1, (p, e) -> p.pow(e ^ (2 * e)));
+    super(1, (p, e) -> p.pow(e ^ (2L * e)));
   }
 }

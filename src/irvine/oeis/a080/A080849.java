@@ -14,6 +14,6 @@ public class A080849 extends A008683 {
   @Override
   public Z next() {
     ++mN;
-    return super.next().add(2).multiply(mN * mN);
+    return super.next().add(2).multiply((long) mN * mN);
   }
 }

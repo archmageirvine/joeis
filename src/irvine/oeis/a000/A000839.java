@@ -14,9 +14,9 @@ public class A000839 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Z.ONE.shiftLeft(3 * (1 << mN) - 3 - mN)
-      .add(Z.ONE.shiftLeft(3 << (mN - 1)))
-      .subtract(Z.ONE.shiftLeft((3 << (mN - 1)) - mN));
+    return Z.ONE.shiftLeft(3L * (1L << mN) - 3 - mN)
+      .add(Z.ONE.shiftLeft(3L << (mN - 1)))
+      .subtract(Z.ONE.shiftLeft((3L << (mN - 1)) - mN));
   }
 }
 

@@ -16,7 +16,7 @@ public class A047682 extends Sequence1 {
   @Override
   public Z next() {
     mB.nextQ();
-    final Z t = Z.ONE.shiftLeft(4 * ++mN);
+    final Z t = Z.ONE.shiftLeft(4L * ++mN);
     return mB.nextQ().divide(2L * mN).multiply(t.subtract(1)).multiply(t).toZ();
   }
 }

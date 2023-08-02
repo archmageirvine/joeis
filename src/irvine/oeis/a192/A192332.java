@@ -22,7 +22,7 @@ public class A192332 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> ((d & 1) > 0) ? Euler.phi(Z.valueOf(d)).multiply(Z.ONE.shiftLeft(mN * (mN - 1) / (2 * d)))
-      : Euler.phi(Z.valueOf(d)).multiply(Z.ONE.shiftLeft((mN * mN) / (2 * d)))).divide(mN);
+    return Integers.SINGLETON.sumdiv(mN, d -> ((d & 1) > 0) ? Euler.phi(Z.valueOf(d)).multiply(Z.ONE.shiftLeft((long) mN * (mN - 1) / (2L * d)))
+      : Euler.phi(Z.valueOf(d)).multiply(Z.ONE.shiftLeft(((long) mN * mN) / (2L * d)))).divide(mN);
   }
 }

@@ -13,6 +13,6 @@ public class A007613 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Z.ONE.shiftLeft(3 * ++mN).signedAdd((mN & 1) == 0, Z.TWO).divide(3);
+    return Z.ONE.shiftLeft(3L * ++mN).signedAdd((mN & 1) == 0, Z.TWO).divide(3);
   }
 }

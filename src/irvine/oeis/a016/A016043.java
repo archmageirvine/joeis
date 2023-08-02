@@ -23,7 +23,7 @@ public class A016043 extends RecordSequence {
         if (mDelta < 0) {
           ++mN;
         }
-        return Z.ONE.shiftLeft(1 << mN).add(mDelta);
+        return Z.ONE.shiftLeft(1L << mN).add(mDelta);
       }
     });
   }

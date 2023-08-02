@@ -19,6 +19,6 @@ public class A134081 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return Binomial.binomial(n, k).multiply((2 * k + 1) * (n - k) + k + 1).divide(k + 1);
+    return Binomial.binomial(n, k).multiply((2L * k + 1) * (n - k) + k + 1).divide(k + 1);
   }
 }

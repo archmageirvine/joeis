@@ -19,7 +19,7 @@ public class A006604 extends Sequence0 {
     for (int k = 1; k <= mN / 2 + 1; ++k) {
       Z t = Z.ZERO;
       for (int j = 0; j <= mN - 2 * k + 2; ++j) {
-        t = t.signedAdd((j & 1) == 0, Binomial.binomial(mN - k + 2, j).multiply(Binomial.binomial(2 * mN - 3 * k - j + 3, mN - k + 1)).shiftLeft(mN - 2 * k - j + 2));
+        t = t.signedAdd((j & 1) == 0, Binomial.binomial(mN - k + 2, j).multiply(Binomial.binomial(2L * mN - 3L * k - j + 3, mN - k + 1)).shiftLeft(mN - 2L * k - j + 2));
       }
       sum = sum.add(t.multiply(k).divide(mN - k + 2));
     }

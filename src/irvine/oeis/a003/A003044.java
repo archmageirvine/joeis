@@ -24,7 +24,7 @@ public class A003044 extends MemorySequence {
   protected Z computeNext() {
     final long n = size() + 1;
     final long r;
-    if (n <= 2 * numReps()) {
+    if (n <= 2L * numReps()) {
       r = n;
     } else {
       long last = a(size() - 1).add(1).longValueExact();

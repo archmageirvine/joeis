@@ -24,7 +24,7 @@ public class A005801 extends Sequence0 {
     }
     Z sum = Z.ZERO;
     for (int k = 0; k <= 2 * mN + 1; ++k) {
-      sum = sum.signedAdd((k & 1) == 1, Binomial.binomial(2 * mN + 1, k).multiply(mA000182.a(mN + k + 1)).shiftRight(k));
+      sum = sum.signedAdd((k & 1) == 1, Binomial.binomial(2L * mN + 1, k).multiply(mA000182.a(mN + k + 1)).shiftRight(k));
     }
     return sum.divide(mA);
   }

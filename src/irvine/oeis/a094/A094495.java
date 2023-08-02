@@ -11,6 +11,6 @@ public class A094495 extends Triangle {
 
   @Override
   public Z next() {
-    return super.next().mod(mRow == 0 ? Z.ONE : Z.valueOf(mRow * mRow));
+    return super.next().mod(mRow == 0 ? Z.ONE : Z.valueOf((long) mRow * mRow));
   }
 }

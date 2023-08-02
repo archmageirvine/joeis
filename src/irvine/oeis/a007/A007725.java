@@ -37,6 +37,6 @@ public class A007725 extends Sequence0 {
         prod = prod.multiply(a.multiply(b));
       }
     }
-    return prod.multiply(ComputableReals.SINGLETON.pow(CR.FOUR, 2 * mN - 1)).toZ();
+    return prod.multiply(ComputableReals.SINGLETON.pow(CR.FOUR, 2L * mN - 1)).toZ();
   }
 }

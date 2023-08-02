@@ -19,7 +19,7 @@ public class A007121 extends Sequence0 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 0; k <= mN / 2; ++k) {
-      sum = sum.add(Stirling.firstKind(mN - 2 * k, k).multiply(mF.factorial(mN).divide(mF.factorial(mN - 2 * k))));
+      sum = sum.add(Stirling.firstKind(mN - 2L * k, k).multiply(mF.factorial(mN).divide(mF.factorial(mN - 2 * k))));
     }
     return sum;
   }

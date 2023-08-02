@@ -12,6 +12,6 @@ public class A062368 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A062368() {
-    super(1, (p, e) -> Z.valueOf(e + 1).multiply(e + 2).multiply(4 * e + 3).divide(6));
+    super(1, (p, e) -> Z.valueOf(e + 1).multiply(e + 2).multiply(4L * e + 3).divide(6));
   }
 }

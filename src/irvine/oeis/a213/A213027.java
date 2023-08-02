@@ -35,7 +35,7 @@ public class A213027 extends UpperLeftTriangle {
       }
       Z sum = Z.ZERO;
       for (int j = 0; j < n; ++j) {
-        sum = sum.add(Binomial.binomial(3 * n, j).multiply(n - j).multiply(Z.valueOf(k - 1).pow(j)));
+        sum = sum.add(Binomial.binomial(3L * n, j).multiply(n - j).multiply(Z.valueOf(k - 1).pow(j)));
       }
       return sum.divide(n);
     }

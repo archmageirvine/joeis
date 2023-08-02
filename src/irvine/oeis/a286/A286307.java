@@ -23,7 +23,7 @@ public class A286307 extends Sequence0 {
     if (mN == 1) {
       return Z.ONE;
     }
-    final Q u = mT.add(mS.divide(2 * (mN - 1)));
+    final Q u = mT.add(mS.divide(2L * (mN - 1)));
     mS = mT;
     mT = u;
     return u.num();

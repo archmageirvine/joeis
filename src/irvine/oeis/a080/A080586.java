@@ -22,7 +22,7 @@ public class A080586 extends Sequence0 {
         mToggle = Z.ONE;
         ++mN;
       }
-      mCount = (1 << mN) * 3;
+      mCount = (1L << mN) * 3L;
     }
     --mCount;
     return mToggle;

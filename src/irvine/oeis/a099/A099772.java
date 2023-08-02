@@ -12,6 +12,6 @@ public class A099772 extends A060205 {
 
   /** Construct the sequence. */
   public A099772() {
-    super(p -> Z.ONE.shiftLeft(p * p));
+    super(p -> Z.ONE.shiftLeft((long) p * p));
   }
 }

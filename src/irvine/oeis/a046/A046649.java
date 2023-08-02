@@ -16,7 +16,7 @@ public class A046649 extends Sequence2 {
   @Override
   public Z next() {
     ++mN;
-    return mF.factorial(3 * mN - 5).multiply(7 * mN - 11).multiply(4)
+    return mF.factorial(3 * mN - 5).multiply(7L * mN - 11).multiply(4)
       .divide(mF.factorial(2 * mN - 1)).divide(mF.factorial(mN - 2));
   }
 }

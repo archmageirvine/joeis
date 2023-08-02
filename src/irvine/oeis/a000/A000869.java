@@ -22,10 +22,10 @@ public class A000869 extends Sequence1 {
     ++mN;
     final int tn = 1 << mN;
     final int tm = 1 << (mN - 1);
-    return Z.ONE.shiftLeft(3 * tn)
+    return Z.ONE.shiftLeft(3L * tn)
       .add(TWENTY_TWO.shiftLeft(tn + tm + mN))
       .subtract(TWENTY_TWO.shiftLeft(tn + tm))
-      .add(TWENTY_ONE.shiftLeft(2 * tn))
+      .add(TWENTY_ONE.shiftLeft(2L * tn))
       .add(FORTY_TWO.shiftLeft(tn + mN))
       .add(FIFTY_SIX.shiftLeft(tn))
       .add(FIFTY_SIX.shiftLeft(tm + mN))

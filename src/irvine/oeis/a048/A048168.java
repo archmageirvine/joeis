@@ -16,7 +16,7 @@ public class A048168 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (mN.mod(Z.ONE.shiftLeft(2 * Jaguar.factor(mN).omega())).isZero()) {
+      if (mN.mod(Z.ONE.shiftLeft(2L * Jaguar.factor(mN).omega())).isZero()) {
         return mN;
       }
     }

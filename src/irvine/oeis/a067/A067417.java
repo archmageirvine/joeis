@@ -12,6 +12,6 @@ public class A067417 extends BaseTriangle {
   @Override
   public Z triangleElement(final int n, final int m) {
     // a(n, m) = 1 if n = m; a(n, m) = (m+3)*(3*(m+1))^(n-m-1) if n > m >= 0.
-    return (n == m) ? Z.ONE : Z.valueOf(3 * m + 3).pow(n - m - 1).multiply(m + 3);
+    return (n == m) ? Z.ONE : Z.valueOf(3L * m + 3).pow(n - m - 1).multiply(m + 3);
   }
 }

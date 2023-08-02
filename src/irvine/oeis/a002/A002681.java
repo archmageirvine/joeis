@@ -25,7 +25,7 @@ public class A002681 extends Sequence0 {
   protected Q computeM(final int n) {
     Polynomial<Q> f = RING.x();
     for (int k = 1; k <= n; ++k) {
-      f = RING.multiply(f, RING.create(Arrays.asList(new Q(-k * k), Q.ZERO, Q.ONE)));
+      f = RING.multiply(f, RING.create(Arrays.asList(new Q((long) -k * k), Q.ZERO, Q.ONE)));
     }
     f = RING.integrate(f);
     final Q definite = RING.eval(f, Q.ONE);

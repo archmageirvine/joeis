@@ -12,7 +12,7 @@ public class A003787 extends Sequence0 {
   private int mN = -1;
 
   static Z orderUniversalChevalleyA(final Z q, final int n) {
-    Z p = q.pow(n * (n + 1) / 2);
+    Z p = q.pow((long) n * (n + 1) / 2);
     Z qPower = q;
     for (int k = 2; k <= n + 1; ++k) {
       qPower = qPower.multiply(q);

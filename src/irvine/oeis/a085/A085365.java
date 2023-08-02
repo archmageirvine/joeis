@@ -20,7 +20,7 @@ public class A085365 extends DecimalExpansionSequence {
       int k = 0;
       while (true) {
         final CR z = Zeta.zeta(2 * ++k);
-        final Z s = Z.ONE.shiftLeft(2 * k);
+        final Z s = Z.ONE.shiftLeft(2L * k);
         final CR u = z.multiply(z.subtract(CR.valueOf(new Q(s.add(1), s)))).multiply(s.subtract(1)).divide(CR.valueOf(k));
         final Z v = u.getApprox(precision);
         if (v.isZero()) {

@@ -24,9 +24,9 @@ public class A000459 extends Sequence0 {
       mB = Z.ZERO;
       return Z.ZERO;
     }
-    final Z t = mB.multiply(2 * mN - 1).multiply(mN)
+    final Z t = mB.multiply(2L * mN - 1).multiply(mN)
       .add(mA.multiply(mN - 1).multiply(mN).multiply2())
-      .subtract(2 * mN - 1);
+      .subtract(2L * mN - 1);
     mA = mB;
     mB = t;
     return t;

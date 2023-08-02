@@ -21,6 +21,6 @@ public class A066791 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Euler.phi(Z.valueOf(mN * mN + mN + 1));
+    return Euler.phi(Z.valueOf((long) mN * mN + mN + 1));
   }
 }

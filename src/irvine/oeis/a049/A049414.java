@@ -20,7 +20,7 @@ public class A049414 extends A003030 {
       if (m == 0) {
         return Z.ONE;
       }
-      Z sum = lambda(k, m).shiftLeft(m * n);
+      Z sum = lambda(k, m).shiftLeft((long) m * n);
       for (int i = 0; i < m; ++i) {
         sum = sum.subtract(Binomial.binomial(m, i).multiply(lambda(k + i, m - i)).multiply(get(k, n, i)));
       }
@@ -29,7 +29,7 @@ public class A049414 extends A003030 {
   };
 
   protected Z lambdaBar(final int i, final int j, final int k) {
-    return k == 0 ? Z.ONE.shiftLeft(i * j).subtract(1) : mLambda.get(i, j, k).shiftLeft(i * j);
+    return k == 0 ? Z.ONE.shiftLeft((long) i * j).subtract(1) : mLambda.get(i, j, k).shiftLeft((long) i * j);
   }
 
   private final MemoryFunction2<Integer, Z> mAlpha = new MemoryFunction2<>() {
@@ -42,7 +42,7 @@ public class A049414 extends A003030 {
       for (int j = 1; j <= n - i; ++j) {
         Z s = Z.ZERO;
         for (int k = 0; k <= n - i - j; ++k) {
-          s = s.add(Binomial.binomial(n - i - j, k).shiftLeft(k * (n - j - k)).multiply(lambdaBar(j, i, n - i - j - k)).multiply(mAlpha.get(j + k, j)));
+          s = s.add(Binomial.binomial(n - i - j, k).shiftLeft((long) k * (n - j - k)).multiply(lambdaBar(j, i, n - i - j - k)).multiply(mAlpha.get(j + k, j)));
         }
         sum = sum.subtract(s.multiply(Binomial.binomial(n - i, j)));
       }
@@ -57,7 +57,7 @@ public class A049414 extends A003030 {
     for (int i = 1; i <= mN; ++i) {
       Z s = Z.ZERO;
       for (int j = 0; j <= mN - i; ++j) {
-        s = s.add(Binomial.binomial(mN - i, j).shiftLeft(j * (mN - i - j)).multiply(lambda(i, mN - i - j)).multiply(mAlpha.get(i + j, i)));
+        s = s.add(Binomial.binomial(mN - i, j).shiftLeft((long) j * (mN - i - j)).multiply(lambda(i, mN - i - j)).multiply(mAlpha.get(i + j, i)));
       }
       sum = sum.add(s.multiply(Binomial.binomial(mN, i)));
     }

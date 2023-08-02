@@ -34,7 +34,7 @@ public class A255517 extends UpperLeftTriangle {
         Z sumd = Z.ZERO;
         for (final Z dd : Jaguar.factor(j).divisors()) {
           final int d = dd.intValue();
-          sumd = sumd.add(getElement(d, k).multiply(d * k * ((((j / d + 1) & 1) == 0) ? 1 : -1)));
+          sumd = sumd.add(getElement(d, k).multiply((long) d * k * ((((j / d + 1) & 1) == 0) ? 1 : -1)));
         }
         sumj = sumj.add(getElement(n - j, k).multiply(sumd));
       }

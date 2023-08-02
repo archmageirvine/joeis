@@ -20,6 +20,6 @@ public class A100102 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.ONE.shiftLeft(mN * 2).subtract(mN * 2 - 1);
+    return Z.ONE.shiftLeft(mN * 2L).subtract(mN * 2L - 1);
   }
 }

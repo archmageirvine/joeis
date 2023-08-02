@@ -22,6 +22,6 @@ public class A002884 extends AbstractSequence {
     if (++mN > 0) {
       mP = mP.multiply(Z.ONE.shiftLeft(mN).subtract(1));
     }
-    return mP.shiftLeft((mN * mN - mN) / 2);
+    return mP.shiftLeft(((long) mN * mN - mN) / 2);
   }
 }

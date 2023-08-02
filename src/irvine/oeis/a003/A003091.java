@@ -15,6 +15,6 @@ public class A003091 extends Sequence1 {
   @Override
   public Z next() {
     mF = mF.multiply(++mN);
-    return Z.ONE.shiftLeft((mN * mN - mN) / 2).divide(mF);
+    return Z.ONE.shiftLeft(((long) mN * mN - mN) / 2).divide(mF);
   }
 }

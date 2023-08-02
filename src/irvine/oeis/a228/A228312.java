@@ -17,6 +17,6 @@ public class A228312 extends BaseTriangle {
   @Override
   // T(m,n) = (3(m+n)^2 - 4mn - 3m - 3n)/2.
   public Z triangleElement(final int n, final int k) {
-    return Z.valueOf(n + k).square().multiply(3).subtract(4 * n * k).subtract(3 * n).subtract(3 * k).divide2();
+    return Z.valueOf(n + k).square().multiply(3).subtract(4L * n * k).subtract(3L * n).subtract(3L * k).divide2();
   }
 }

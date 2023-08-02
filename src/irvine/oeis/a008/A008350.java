@@ -54,7 +54,7 @@ public class A008350 extends Sequence0 {
       j = 0;
       ++v[0];
       long k = f(v, M);
-      while (k > 2 * mN) {
+      while (k > 2L * mN) {
         v[j++] = 0;
         if (j < 8) {
           ++v[j];

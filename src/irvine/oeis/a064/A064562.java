@@ -10,6 +10,6 @@ public class A064562 extends A064560 {
 
   /** Construct the sequence. */
   public A064562() {
-    super(0, i -> Z.ONE.shiftLeft(2 * i).multiply(Z.THREE), i -> Z.FIVE.pow(2 * i).multiply(Z.THREE));
+    super(0, i -> Z.ONE.shiftLeft(2L * i).multiply(Z.THREE), i -> Z.FIVE.pow(2L * i).multiply(Z.THREE));
   }
 }

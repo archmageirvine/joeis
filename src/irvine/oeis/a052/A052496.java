@@ -15,7 +15,7 @@ public class A052496 extends Sequence0 {
   public Z next() {
     ++mN;
     Z prod = Z.ONE;
-    final Z e = Z.ONE.shiftLeft(3 * mN);
+    final Z e = Z.ONE.shiftLeft(3L * mN);
     for (Z t = Z.ONE; !t.equals(e); t = t.shiftLeft(3)) {
       prod = prod.multiply(e.subtract(t));
     }

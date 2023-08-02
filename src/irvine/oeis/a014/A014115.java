@@ -18,8 +18,8 @@ public class A014115 extends Sequence0 {
     }
     Z prod = Z.ONE.shiftLeft(mN).subtract(1);
     for (int k = 1; k < mN; ++k) {
-      prod = prod.multiply(Z.ONE.shiftLeft(2 * k).subtract(1));
+      prod = prod.multiply(Z.ONE.shiftLeft(2L * k).subtract(1));
     }
-    return prod.shiftLeft(mN * mN + mN + 1);
+    return prod.shiftLeft((long) mN * mN + mN + 1);
   }
 }

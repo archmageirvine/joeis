@@ -23,6 +23,6 @@ public class A288312 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Stirling.secondKind(2 * mN, mN).multiply(MemoryFactorial.SINGLETON.factorial(mN)).multiply(Binomial.binomial(2 * mN, mN));
+    return Stirling.secondKind(2L * mN, mN).multiply(MemoryFactorial.SINGLETON.factorial(mN)).multiply(Binomial.binomial(2L * mN, mN));
   }
 }

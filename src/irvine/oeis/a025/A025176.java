@@ -19,7 +19,7 @@ public class A025176 extends Sequence0 {
       return mN == 0 ? mA : mB;
     }
     final int pow = 2 - (mN & 1);
-    final Z t = mB.multiply(2 * mN + 1).shiftLeft(pow)
+    final Z t = mB.multiply(2L * mN + 1).shiftLeft(pow)
       .subtract(mA.multiply(mN - 1).multiply(4))
       .divide(mN + 2);
     mA = mB;

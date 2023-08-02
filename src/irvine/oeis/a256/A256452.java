@@ -12,6 +12,6 @@ public class A256452 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A256452() {
-    super(1, (p, e) -> p.mod(Z.FOUR).equals(Z.ONE) ? Z.valueOf(2 * e + 1) : Z.ONE);
+    super(1, (p, e) -> p.mod(Z.FOUR).equals(Z.ONE) ? Z.valueOf(2L * e + 1) : Z.ONE);
   }
 }

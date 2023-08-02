@@ -40,6 +40,6 @@ public class A006934 extends MemoryFunction1Sequence<Q> {
   @Override
   public Z next() {
     ++mN;
-    return get(2 * mN).multiply(Binomial.binomial(4 * mN, 2 * mN).shiftLeft(3 * mN - Integer.bitCount(mN))).toZ().abs();
+    return get(2 * mN).multiply(Binomial.binomial(4L * mN, 2L * mN).shiftLeft(3L * mN - Integer.bitCount(mN))).toZ().abs();
   }
 }

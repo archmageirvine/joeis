@@ -19,6 +19,6 @@ public class A008556 extends Sequence0 {
       ++mN;
       mM = 0;
     }
-    return Binomial.binomial(2 * (mN - mM), mN - mM).multiply(Binomial.binomial(mN - mM, mM));
+    return Binomial.binomial(2L * (mN - mM), mN - mM).multiply(Binomial.binomial(mN - mM, mM));
   }
 }

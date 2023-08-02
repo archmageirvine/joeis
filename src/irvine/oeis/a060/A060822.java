@@ -16,7 +16,7 @@ public class A060822 extends A000040 {
 
   /** Construct the sequence. */
   public A060822() {
-    this(1, (n, p) -> Z.valueOf(p).add(Z.valueOf(n).pow(3)).add(Z.valueOf(n * n + 4 * n - 1)));
+    this(1, (n, p) -> Z.valueOf(p).add(Z.valueOf(n).pow(3)).add(Z.valueOf((long) n * n + 4L * n - 1)));
   }
 
   /**

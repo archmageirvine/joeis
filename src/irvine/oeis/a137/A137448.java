@@ -20,6 +20,6 @@ public class A137448 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return mSeq.triangleElement(n, k).multiply(1 - k * (k - 1));
+    return mSeq.triangleElement(n, k).multiply(1 - (long) k * (k - 1));
   }
 }

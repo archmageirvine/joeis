@@ -19,7 +19,7 @@ public class A048649 extends DecimalExpansionSequence {
         if (precision < 0) {
           final Z t = Z.ONE.shiftLeft(-precision);
           for (int k = 0; 1 << k <= -precision; ++k) {
-            sum = sum.add(t.divide(Z.ONE.shiftLeft(1 << k).subtract(1)));
+            sum = sum.add(t.divide(Z.ONE.shiftLeft(1L << k).subtract(1)));
           }
         }
         return sum;

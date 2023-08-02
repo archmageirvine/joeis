@@ -17,7 +17,7 @@ public class A014401 extends Sequence0 {
     if (++mN > 1) {
       mF = mF.multiply(mN);
     }
-    return mF.square().multiply(mN + 1).multiply(mN + 2).multiply(mN + 3).shiftLeft(2 * mN + 3);
+    return mF.square().multiply(mN + 1).multiply(mN + 2).multiply(mN + 3).shiftLeft(2L * mN + 3);
   }
 }
 

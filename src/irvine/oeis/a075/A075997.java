@@ -21,6 +21,6 @@ public class A075997 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sum(1, mN, i -> Z.valueOf(mN / (2 * i)).subtract((mN - i) / (2 * i)));
+    return Integers.SINGLETON.sum(1, mN, i -> Z.valueOf(mN / (2L * i)).subtract((mN - i) / (2L * i)));
   }
 }

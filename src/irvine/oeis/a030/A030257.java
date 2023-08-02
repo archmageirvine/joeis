@@ -16,11 +16,11 @@ public class A030257 extends A001329 {
     for (int i = 1; i < s.length; ++i) {
       for (int j = 1; j <= i; ++j) {
         if (i != j) {
-          prod = prod.multiply(innerSum(s, IntegerUtils.lcm(i, j)).pow(s[i] * s[j] * IntegerUtils.gcd(i, j)));
+          prod = prod.multiply(innerSum(s, IntegerUtils.lcm(i, j)).pow((long) s[i] * s[j] * IntegerUtils.gcd(i, j)));
         } else if ((i & 1) == 1) {
-          prod = prod.multiply(innerSum(s, i).pow((i * s[i] * s[i] - s[i]) / 2));
+          prod = prod.multiply(innerSum(s, i).pow(((long) i * s[i] * s[i] - s[i]) / 2));
         } else {
-          prod = prod.multiply(innerSum(s, i).pow((i * s[i] * s[i] - 2 * s[i]) / 2)).multiply(innerSum(s, i / 2).pow(s[i]));
+          prod = prod.multiply(innerSum(s, i).pow(((long) i * s[i] * s[i] - 2L * s[i]) / 2)).multiply(innerSum(s, i / 2).pow(s[i]));
         }
       }
     }

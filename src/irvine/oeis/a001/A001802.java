@@ -20,6 +20,6 @@ public class A001802 extends Sequence0 {
       ++mTwoReduces;
       m >>>= 1;
     }
-    return Binomial.binomial(2 * mN + 6, mN + 3).multiply(mN + 1).multiply(mN + 2).multiply(mN + 3).divide(6).shiftRight(mN + 6 - mTwoReduces);
+    return Binomial.binomial(2L * mN + 6, mN + 3).multiply(mN + 1).multiply(mN + 2).multiply(mN + 3).divide(6).shiftRight(mN + 6 - mTwoReduces);
   }
 }

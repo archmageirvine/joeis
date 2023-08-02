@@ -35,9 +35,9 @@ public class A075834 extends MemorySequence {
       case 2:
         return Z.valueOf(mParm);
       case 3:
-        return Z.TWO.multiply(mParm * mParm);
+        return Z.TWO.multiply((long) mParm * mParm);
       default:
-        Z sum = a(n - 1).multiply((n - 1) * mParm);
+        Z sum = a(n - 1).multiply((long) (n - 1) * mParm);
         for (int j = 2; j <= n - 2; ++j) {
           sum = sum.add(a(j).multiply(a(n - j)).multiply(j - 1));
         }

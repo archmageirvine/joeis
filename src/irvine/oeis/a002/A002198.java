@@ -10,6 +10,6 @@ public class A002198 extends A002197 {
 
   @Override
   public Z next() {
-    return nextQ(++mN).den().shiftLeft(2 * mN + 2);
+    return nextQ(++mN).den().shiftLeft(2L * mN + 2);
   }
 }

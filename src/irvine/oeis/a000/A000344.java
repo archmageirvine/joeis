@@ -15,6 +15,6 @@ public class A000344 extends Sequence2 {
   @Override
   public Z next() {
     ++mN;
-    return Binomial.binomial(2 * mN, mN - 2).multiply(5).divide(mN + 3);
+    return Binomial.binomial(2L * mN, mN - 2).multiply(5).divide(mN + 3);
   }
 }

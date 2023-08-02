@@ -22,7 +22,7 @@ public class A125177 extends Triangle {
       return Z.ONE;
     }
     if (k == 0) {
-      return Binomial.binomial(2 * n, n).divide(n + 1);
+      return Binomial.binomial(2L * n, n).divide(n + 1);
     }
     return get(n - 1, k).add(get(n - 1, k - 1));
   }

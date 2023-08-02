@@ -17,7 +17,7 @@ public class A015701 extends Sequence0 {
   @Override
   public Z next() {
     mA = mA == null ? new Q(3, 2) : mA.square().add(1).divide(2);
-    mShift = mShift.shiftLeft(1 << ++mN);
+    mShift = mShift.shiftLeft(1L << ++mN);
     return mA.multiply(mShift).toZ();
   }
 }

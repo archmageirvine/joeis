@@ -22,6 +22,6 @@ public class A091828 extends A000254 {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(mN - 2 * ZUtils.valuation(super.next(), Z.THREE));
+    return Z.valueOf(mN - 2L * ZUtils.valuation(super.next(), Z.THREE));
   }
 }

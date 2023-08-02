@@ -18,7 +18,7 @@ public class A013706 extends DecimalExpansionSequence {
     // the "depth" of the computation is roughly lg(50000).
     CR[] t = new CR[50000];
     for (int k = 1; k <= t.length; ++k) {
-      t[k - 1] = CR.valueOf((k & 1) == 1 ? new Q(2, 2 * k - 1) : new Q(-2, 2 * k - 1));
+      t[k - 1] = CR.valueOf((k & 1) == 1 ? new Q(2, 2L * k - 1) : new Q(-2, 2L * k - 1));
     }
     while (t.length > 1) {
       final CR[] r = new CR[(t.length + 1) / 2];

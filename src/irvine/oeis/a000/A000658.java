@@ -18,8 +18,8 @@ public class A000658 extends Sequence0 {
     Z s = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
       s = s.add(Binomial.binomial(mN, k).square()
-                .multiply(Binomial.binomial(2 * k, k).square())
-                .multiply(Binomial.binomial(2 * k, mN - k)));
+                .multiply(Binomial.binomial(2L * k, k).square())
+                .multiply(Binomial.binomial(2L * k, mN - k)));
     }
     return s;
   }

@@ -16,6 +16,6 @@ public class A283535 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(d).pow(3 * d + 1));
+    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(d).pow(3L * d + 1));
   }
 }

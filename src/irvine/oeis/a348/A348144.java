@@ -21,6 +21,6 @@ public class A348144 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(mN).pow(mN * mN / d));
+    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(mN).pow((long) mN * mN / d));
   }
 }

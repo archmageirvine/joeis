@@ -26,7 +26,7 @@ public class A061847 extends A065091 {
         final int r = rr.intValue();
         final int q = s / r;
         final Z phi = Z.valueOf(Euler.phiAsLong(r));
-        sum1 = sum1.add(phi.shiftLeft((p + 1) * q));
+        sum1 = sum1.add(phi.shiftLeft((long) (p + 1) * q));
         sum2 = sum2.add(phi.shiftLeft(2 * q));
       }
     }

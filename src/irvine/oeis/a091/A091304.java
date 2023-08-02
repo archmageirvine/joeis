@@ -21,6 +21,6 @@ public class A091304 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(Jaguar.factor(2 * mN - 1).bigOmega());
+    return Z.valueOf(Jaguar.factor(2L * mN - 1).bigOmega());
   }
 }

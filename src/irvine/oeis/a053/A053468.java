@@ -17,7 +17,7 @@ public class A053468 extends A053467 {
     final IntegerPartition part = new IntegerPartition(++mN);
     int[] p;
     while ((p = part.next()) != null) {
-      final Z t = IntegerPartition.permCount(p, 1).shiftLeft(2 * edges(p));
+      final Z t = IntegerPartition.permCount(p, 1).shiftLeft(2L * edges(p));
       sum = sum.add(t);
     }
     return sum.divide(mF.factorial(mN));

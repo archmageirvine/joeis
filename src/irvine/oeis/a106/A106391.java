@@ -18,6 +18,6 @@ public class A106391 extends Sequence0 {
   // A106491 := proc(n) add(binomial(n, 2*k)*binomial(2*(n-2*k), n-2*k+1), k=0..floor(n/2)) ;
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sum(0, mN / 2, k -> Binomial.binomial(mN, 2 * k).multiply(Binomial.binomial(2 * (mN - 2 * k), mN - 2 * k + 1)));
+    return Integers.SINGLETON.sum(0, mN / 2, k -> Binomial.binomial(mN, 2L * k).multiply(Binomial.binomial(2 * (mN - 2L * k), mN - 2L * k + 1)));
   }
 }

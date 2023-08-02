@@ -16,7 +16,7 @@ public class A002462 extends Sequence0 {
   private int mN = -1;
 
   static Q f(final int n, final int q) {
-    return new Q(Binomial.binomial(2L * (n - q), n - q).multiply(Binomial.binomial(2L * q, q)), Z.ONE.shiftLeft(2 * n));
+    return new Q(Binomial.binomial(2L * (n - q), n - q).multiply(Binomial.binomial(2L * q, q)), Z.ONE.shiftLeft(2L * n));
   }
 
   @Override

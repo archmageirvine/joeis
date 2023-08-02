@@ -28,7 +28,7 @@ public class A302582 extends HypergeometricSequence {
     } else {
       return super.nextQ()
         .multiply(MemoryFactorial.SINGLETON.factorial(2 * mN - 2))
-        .multiply(mN * mN)
+        .multiply((long) mN * mN)
         .divide(MemoryFactorial.SINGLETON.factorial(mN))
         .num();
     }

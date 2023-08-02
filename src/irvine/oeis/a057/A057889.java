@@ -33,7 +33,7 @@ public class A057889 extends AbstractSequence {
     final int head0 = Long.numberOfLeadingZeros(mN);
     final int tail0 = Long.numberOfTrailingZeros(mN);
     final long nOrg = mN >> tail0;
-    final long nRev = ((Long.reverse(nOrg) >> head0) & ((1 << (64 - head0)) - 1)) >> tail0;
+    final long nRev = ((Long.reverse(nOrg) >> head0) & ((1L << (64 - head0)) - 1)) >> tail0;
     return Z.valueOf(nOrg != nRev ? (nRev << tail0) : mN);
   }
 }

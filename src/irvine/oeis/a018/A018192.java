@@ -28,7 +28,7 @@ public class A018192 extends A081054 {
         if (i > 0) {
           zc = zc.multiply(c);
         }
-        sum = sum.add(Binomial.binomial(d, 2 * i).multiply(zc).multiply(mF.doubleFactorial(2 * i - 1)));
+        sum = sum.add(Binomial.binomial(d, 2L * i).multiply(zc).multiply(mF.doubleFactorial(2 * i - 1)));
       }
       return sum;
     } else if ((d & 1) == 0) {

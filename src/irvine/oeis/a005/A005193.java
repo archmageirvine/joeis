@@ -18,7 +18,7 @@ public class A005193 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN / 2; ++k) {
-      sum = sum.add(mF.factorial(k).square().multiply(Z.valueOf(k).pow(mN - 2 * k)));
+      sum = sum.add(mF.factorial(k).square().multiply(Z.valueOf(k).pow(mN - 2L * k)));
     }
     sum = sum.multiply2();
     if ((mN & 1) == 1) {

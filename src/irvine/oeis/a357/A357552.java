@@ -22,6 +22,6 @@ public class A357552 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Jaguar.factor(mN).sigma().multiply(Binomial.binomial(2 * mN - 1, mN));
+    return Jaguar.factor(mN).sigma().multiply(Binomial.binomial(2L * mN - 1, mN));
   }
 }

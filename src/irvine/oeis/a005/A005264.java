@@ -32,7 +32,7 @@ public class A005264 extends MemoryFunction2Sequence<Integer, Z> {
     if (k == 0 && (n == 0 || n == 1)) {
       return Z.ONE;
     }
-    return get(n - 1, k - 1).multiply(n - 1).add(get(n - 1, k).multiply(3 * n - k - 4)).subtract(get(n - 1, k + 1).multiply(k + 1));
+    return get(n - 1, k - 1).multiply(n - 1).add(get(n - 1, k).multiply(3L * n - k - 4)).subtract(get(n - 1, k + 1).multiply(k + 1));
   }
 
   private int mN = 0;

@@ -33,7 +33,7 @@ public class A008971 extends MemoryFunction2Sequence<Integer, Z> {
     } else if (n == 0) {
       w = Z.ONE;
     } else {
-      w = get(n - 1, k).multiply(2 * k + 1).add(get(n - 1, k - 1).multiply(n - 2 * k + 1));
+      w = get(n - 1, k).multiply(2L * k + 1).add(get(n - 1, k - 1).multiply(n - 2L * k + 1));
     }
     return w;
   }

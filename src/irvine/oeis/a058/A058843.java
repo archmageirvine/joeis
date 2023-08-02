@@ -24,7 +24,7 @@ public class A058843 extends MemoryFunctionInt2Sequence<Z> {
     if (k == 1) {
       return Z.ONE;
     }
-    return Integers.SINGLETON.sum(1, n - 1, j -> Binomial.binomial(n, j).multiply(get(j, k - 1)).shiftLeft(j * (n - j))).divide(k);
+    return Integers.SINGLETON.sum(1, n - 1, j -> Binomial.binomial(n, j).multiply(get(j, k - 1)).shiftLeft((long) j * (n - j))).divide(k);
   }
 
   @Override

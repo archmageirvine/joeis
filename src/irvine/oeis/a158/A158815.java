@@ -20,6 +20,6 @@ public class A158815 extends Triangle {
   @Override
   public Z compute(final int n, final int k) {
     return n == 0 ? Z.ONE : Integers.SINGLETON.sum(0, n, j ->
-      ((((j + k) & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Binomial.binomial(j, k)).multiply(Binomial.binomial(2 * n - j, n)));
+      ((((j + k) & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Binomial.binomial(j, k)).multiply(Binomial.binomial(2L * n - j, n)));
   }
 }

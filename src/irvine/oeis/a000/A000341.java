@@ -42,7 +42,7 @@ public class A000341 extends Sequence1 {
     int k = 0;
     for (int i = 1; i <= n; ++i) {
       for (int j = 1; j <= n; ++j) {
-        if (mPrime.isPrime(2 * i + 2 * j - 1)) {
+        if (mPrime.isPrime(2L * i + 2L * j - 1)) {
           matrix[k] = 1;
         }
         ++k;

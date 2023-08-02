@@ -16,6 +16,6 @@ public class A090889 extends Sequence0 {
   public Z next() {
     // a(n)=sum(k=1, n, bitand(k, n-k)+k*(n-k))
     ++mN;
-    return Integers.SINGLETON.sum(1, mN, k -> Z.valueOf((k & mN - k) + k * (mN - k)));
+    return Integers.SINGLETON.sum(1, mN, k -> Z.valueOf((k & mN - k) + (long) k * (mN - k)));
   }
 }

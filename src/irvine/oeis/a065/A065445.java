@@ -19,7 +19,7 @@ public class A065445 extends DecimalExpansionSequence {
         Z prod = one;
         int k = -1;
         while (true) {
-          final Z t = one.add(one.divide(Z.ONE.shiftLeft(2 * ++k)));
+          final Z t = one.add(one.divide(Z.ONE.shiftLeft(2L * ++k)));
           final Z prev = prod;
           prod = prod.multiply(t).shiftRight(-precision);
           if (prod.equals(prev)) {

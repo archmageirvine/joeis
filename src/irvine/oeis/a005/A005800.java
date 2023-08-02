@@ -23,7 +23,7 @@ public class A005800 extends A000364 {
     }
     Z sum = Z.ZERO;
     for (int k = 0; k <= 2 * mN; ++k) {
-      sum = sum.add(Binomial.binomial(2 * mN, k).multiply(mA364.get(mN + k)));
+      sum = sum.add(Binomial.binomial(2L * mN, k).multiply(mA364.get(mN + k)));
     }
     return sum.divide(mA);
   }

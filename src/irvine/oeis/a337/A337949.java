@@ -29,6 +29,6 @@ public class A337949 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return mN == 0 ? Z.ONE : mBase.pow((mN * (mN - 1)) / 2).add(mBase.pow((mN * (mN + 1)) / 2));
+    return mN == 0 ? Z.ONE : mBase.pow(((long) mN * (mN - 1)) / 2).add(mBase.pow(((long) mN * (mN + 1)) / 2));
   }
 }

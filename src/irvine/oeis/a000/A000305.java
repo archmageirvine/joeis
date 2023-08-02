@@ -18,7 +18,7 @@ public class A000305 extends Sequence1 {
     if (k <= n) {
       for (int j = k; j <= Math.min(n, 2 * k - 1); ++j) {
         s = s.add(mFactorial.factorial(j - 1)
-                  .multiply(2 * j - k + 1)
+                  .multiply(2L * j - k + 1)
                   .multiply(mFactorial.factorial(3 * n - k - j))
                   .divide(mFactorial.factorial(j - k + 1))
                   .divide(mFactorial.factorial(j - k))

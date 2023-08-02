@@ -14,7 +14,7 @@ public class A059488 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    Z prod = Z.ONE.shiftLeft(mN * mN + 2 * mN);
+    Z prod = Z.ONE.shiftLeft((long) mN * mN + 2L * mN);
     for (int i = 1; i <= 2 * mN + 1; i += 2) {
       for (int j = 2; j <= 2 * mN + 1; j += 2) {
         prod = prod.multiply(2L * j - 2L * i + 1);

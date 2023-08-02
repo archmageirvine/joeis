@@ -39,7 +39,7 @@ public class A000364 extends AbstractSequence {
     }
     Z t = Z.ZERO;
     for (int k = 0; k < mN; ++k) {
-      final Z z = Binomial.binomial(2 * mN, 2 * k).multiply(mA364.get(k));
+      final Z z = Binomial.binomial(2L * mN, 2L * k).multiply(mA364.get(k));
       t = t.signedAdd((k & 1) == 0, z);
     }
     if ((mN & 1) == 0) {

@@ -19,12 +19,12 @@ public class A006563 extends Sequence0 {
     Z f = Z.ONE;
     for (int k = 1; k <= mN; ++k) {
       if (k > 1) {
-        f = f.multiply(2 * k - 1).multiply(2 * k - 2);
+        f = f.multiply(2L * k - 1).multiply(2L * k - 2);
       }
       sum = sum.signedAdd((k & 1) != 0, Binomial.binomial(mN, k).multiply(f).shiftLeft(k));
     }
     if (mN > 0) {
-      f = f.multiply(2 * mN);
+      f = f.multiply(2L * mN);
     }
     return f.subtract(sum);
   }

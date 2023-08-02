@@ -17,9 +17,9 @@ public class A058347 extends MemoryFunctionInt2Sequence<Z> {
     if (n == 0 || k == 0) {
       return Z.ZERO;
     }
-    return Z.ONE.shiftLeft(k + 1).subtract(2).shiftLeft((n - 1) * k)
-      .add(Z.valueOf(k - 2).shiftLeft(k).add(2).shiftLeft((n - 1) * (k - 1)))
-      .add(Z.ONE.shiftLeft(k).subtract(1).multiply(n - 1).shiftLeft((n - 2) * k + 1))
+    return Z.ONE.shiftLeft(k + 1).subtract(2).shiftLeft((long) (n - 1) * k)
+      .add(Z.valueOf(k - 2).shiftLeft(k).add(2).shiftLeft((long) (n - 1) * (k - 1)))
+      .add(Z.ONE.shiftLeft(k).subtract(1).multiply(n - 1).shiftLeft((long) (n - 2) * k + 1))
       .add(get(n - 1, k))
       .add(get(n - 1, k - 1).multiply(Z.ONE.shiftLeft(k).subtract(1)).shiftLeft(n - 1));
   }

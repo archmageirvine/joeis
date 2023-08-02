@@ -19,7 +19,7 @@ public class A024430 extends Sequence0 {
     }
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN / 2; ++k) {
-      sum = sum.add(Stirling.secondKind(mN, 2 * k));
+      sum = sum.add(Stirling.secondKind(mN, 2L * k));
     }
     return sum;
   }

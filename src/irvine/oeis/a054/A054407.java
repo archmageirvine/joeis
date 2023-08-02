@@ -14,16 +14,16 @@ public class A054407 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    Z t = Z.ONE.shiftLeft(mN * mN);
+    Z t = Z.ONE.shiftLeft((long) mN * mN);
     if ((mN & 1) == 0) {
-      t = t.subtract(Z.ONE.shiftLeft((mN * mN + mN) / 2 + 1))
-        .subtract(Z.THREE.shiftLeft(mN * mN / 2))
-        .add(Z.ONE.shiftLeft(mN * mN / 4 + 1))
-        .add(Z.ONE.shiftLeft((mN * mN + 2 * mN) / 4 + 1));
+      t = t.subtract(Z.ONE.shiftLeft(((long) mN * mN + mN) / 2 + 1))
+        .subtract(Z.THREE.shiftLeft((long) mN * mN / 2))
+        .add(Z.ONE.shiftLeft((long) mN * mN / 4 + 1))
+        .add(Z.ONE.shiftLeft(((long) mN * mN + 2L * mN) / 4 + 1));
     } else {
-      t = t.subtract(Z.ONE.shiftLeft((mN * mN + mN) / 2 + 2))
-        .subtract(Z.ONE.shiftLeft((mN * mN + 1) / 2))
-        .add(Z.ONE.shiftLeft((mN * mN + 2 * mN + 1) / 4 + 2));
+      t = t.subtract(Z.ONE.shiftLeft(((long) mN * mN + mN) / 2 + 2))
+        .subtract(Z.ONE.shiftLeft(((long) mN * mN + 1) / 2))
+        .add(Z.ONE.shiftLeft(((long) mN * mN + 2L * mN + 1) / 4 + 2));
     }
     return t.shiftRight(3);
   }

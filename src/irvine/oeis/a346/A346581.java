@@ -17,6 +17,6 @@ public class A346581 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Binomial.binomial(7 * d, d).multiply(irvine.math.Mobius.mobius(mN / d))).divide(7 * mN);
+    return Integers.SINGLETON.sumdiv(mN, d -> Binomial.binomial(7L * d, d).multiply(irvine.math.Mobius.mobius(mN / d))).divide(7L * mN);
   }
 }

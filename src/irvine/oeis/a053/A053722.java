@@ -19,7 +19,7 @@ public class A053722 extends Sequence1 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 0; k <= mN / 2; ++k) {
-      sum = sum.add(mGamma.a(mN).divide(mGamma.a(k).multiply(mGamma.a(mN - 2 * k)).shiftLeft(k * (2 * mN - 3 * k))));
+      sum = sum.add(mGamma.a(mN).divide(mGamma.a(k).multiply(mGamma.a(mN - 2 * k)).shiftLeft(k * (2L * mN - 3L * k))));
     }
     return sum;
   }

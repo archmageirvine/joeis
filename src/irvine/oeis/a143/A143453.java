@@ -28,7 +28,7 @@ public class A143453 extends UpperLeftTriangle {
         return Z.THREE.pow(n);
       }
       if (n <= k + 1) {
-        return Z.valueOf(2 * n + 1);
+        return Z.valueOf(2L * n + 1);
       }
       return get(n - 1, k).add(get(n - k - 1, k).multiply2());
     }

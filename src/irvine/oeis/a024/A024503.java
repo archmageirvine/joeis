@@ -18,6 +18,6 @@ public class A024503 extends Sequence0 {
     if (++mN > 0) {
       mT = mT.multiply(3);
     }
-    return Binomial.binomial(2 * mN, mN).divide(mT);
+    return Binomial.binomial(2L * mN, mN).divide(mT);
   }
 }

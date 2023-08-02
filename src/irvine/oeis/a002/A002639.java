@@ -37,6 +37,6 @@ public class A002639 extends Sequence0 {
       return Z.ZERO;
     }
     final Polynomial<Q> p = RING.reversion(RING.shift(RING.pow(product(mN), 8, mN), 1), mN);
-    return p.coeff(mN).divide(Z.ONE.shiftLeft(2 * mN)).num();
+    return p.coeff(mN).divide(Z.ONE.shiftLeft(2L * mN)).num();
   }
 }

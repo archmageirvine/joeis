@@ -22,6 +22,6 @@ public class A130293 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Euler.phi(Z.valueOf(d)).multiply(d).multiply(Z.valueOf(mN).pow(mN / d))).divide(mN * mN);
+    return Integers.SINGLETON.sumdiv(mN, d -> Euler.phi(Z.valueOf(d)).multiply(d).multiply(Z.valueOf(mN).pow(mN / d))).divide((long) mN * mN);
   }
 }

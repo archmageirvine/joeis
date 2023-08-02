@@ -21,6 +21,6 @@ public class A217913 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Stirling.secondKind(3 * mN, mN);
+    return Stirling.secondKind(3L * mN, mN);
   }
 }

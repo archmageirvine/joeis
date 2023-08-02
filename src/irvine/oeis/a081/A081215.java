@@ -14,6 +14,6 @@ public class A081215 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(mN).pow(mN + 1).add(((mN & 1) == 0) ? 1 : -1).divide((mN + 1) * (mN + 1));
+    return Z.valueOf(mN).pow(mN + 1).add(((mN & 1) == 0) ? 1 : -1).divide((long) (mN + 1) * (mN + 1));
   }
 }

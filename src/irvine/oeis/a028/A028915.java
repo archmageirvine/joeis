@@ -33,6 +33,6 @@ public class A028915 extends Sequence2 {
     final long a = mPrime.nextPrime(mP);
     final long b = mPrime.nextPrime(a);
     mP = mPrime.nextPrime(b);
-    return Z.valueOf((r(a) << 4) + (r(b) << 2) + r(mP));
+    return Z.valueOf(((long) r(a) << 4) + ((long) r(b) << 2) + r(mP));
   }
 }

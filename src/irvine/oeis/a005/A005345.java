@@ -34,7 +34,7 @@ public class A005345 extends AbstractSequence {
     for (int k = 0; k <= mN; ++k) {
       Z t = Binomial.binomial(mN, k);
       for (int i = 1; i <= k; ++i) {
-        t = t.multiply(Z.valueOf(k - i + 1).pow(1 << i));
+        t = t.multiply(Z.valueOf(k - i + 1).pow(1L << i));
       }
       sum = sum.add(t);
     }

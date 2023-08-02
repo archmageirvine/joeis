@@ -17,6 +17,6 @@ public class A214406 extends Triangle {
 
   @Override
   protected Z compute(final int n, final int k) {
-    return n == 0 ? Z.ONE : get(n - 1, k - 1).multiply(4 * n - 2 * k - 1).add(get(n - 1, k).multiply(2 * k + 1));
+    return n == 0 ? Z.ONE : get(n - 1, k - 1).multiply(4L * n - 2L * k - 1).add(get(n - 1, k).multiply(2L * k + 1));
   }
 }

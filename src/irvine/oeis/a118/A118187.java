@@ -15,6 +15,6 @@ public class A118187 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sum(0, mN / 2, k -> Z.FOUR.pow(k * (mN - 2 * k)));
+    return Integers.SINGLETON.sum(0, mN / 2, k -> Z.FOUR.pow(k * (mN - 2L * k)));
   }
 }

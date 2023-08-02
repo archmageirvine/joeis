@@ -11,6 +11,6 @@ public class A069094 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A069094() {
-    super(1, (p, e) -> p.pow(9 * e).subtract(p.pow(9 * (e - 1))));
+    super(1, (p, e) -> p.pow(9L * e).subtract(p.pow(9L * (e - 1))));
   }
 }

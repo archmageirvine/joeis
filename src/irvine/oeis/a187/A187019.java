@@ -19,8 +19,8 @@ public class A187019 extends Sequence0 {
   public Z next() {
     ++mN;
     return Integers.SINGLETON.sum(0, mN / 2, k -> Binomial.binomial(mN, k)
-      .multiply(Binomial.binomial(mN - k, mN - 2 * k))
-      .multiply(Z.valueOf(mN).pow(mN - 2 * k))
+      .multiply(Binomial.binomial(mN - k, mN - 2L * k))
+      .multiply(Z.valueOf(mN).pow(mN - 2L * k))
       .multiply(Z.valueOf(mN + 1).pow(k)));
   }
 }

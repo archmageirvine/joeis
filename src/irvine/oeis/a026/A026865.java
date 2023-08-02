@@ -40,7 +40,7 @@ public class A026865 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int r = 1; r <= n; ++r) {
-      sum = sum.add(Binomial.binomial(n, r).multiply(mK.getValue(r)).multiply(a(n - r)).shiftLeft(r * (n - r)));
+      sum = sum.add(Binomial.binomial(n, r).multiply(mK.getValue(r)).multiply(a(n - r)).shiftLeft((long) r * (n - r)));
     }
     return sum.negate();
   }

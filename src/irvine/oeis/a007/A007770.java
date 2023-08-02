@@ -28,7 +28,7 @@ public class A007770 extends Sequence1 {
     while (!m.isZero()) {
       final Z[] qr = m.divideAndRemainder(Z.TEN);
       final int r = qr[1].intValue();
-      s += r * r;
+      s += (long) r * r;
       m = qr[0];
     }
     if (n.bitLength() < CACHE_BITS) {

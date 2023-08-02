@@ -19,6 +19,6 @@ public class A317617 extends Triangle {
   public Z compute(int n, int k) {
     ++n;
     ++k;
-    return Z.valueOf(n * n + 1).multiply(n).add((2 * k - n - 1) * (n & 1)).divide2();
+    return Z.valueOf((long) n * n + 1).multiply(n).add((2L * k - n - 1) * (n & 1)).divide2();
   }
 }

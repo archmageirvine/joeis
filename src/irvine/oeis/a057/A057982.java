@@ -17,6 +17,6 @@ public class A057982 extends A046747 {
       mFirst = false;
       return Z.ZERO;
     }
-    return super.next().shiftLeft(2 * mN + 1);
+    return super.next().shiftLeft(2L * mN + 1);
   }
 }

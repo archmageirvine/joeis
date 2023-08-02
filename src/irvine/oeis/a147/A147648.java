@@ -22,6 +22,6 @@ public class A147648 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> ((d & 1) == 0 && (Jaguar.factor(Jaguar.factor(d).sigma()).sigma().compareTo(Z.valueOf(2 * d)) == 0)) ? Z.ONE : Z.ZERO);
+    return Integers.SINGLETON.sumdiv(mN, d -> ((d & 1) == 0 && (Jaguar.factor(Jaguar.factor(d).sigma()).sigma().compareTo(Z.valueOf(2L * d)) == 0)) ? Z.ONE : Z.ZERO);
   }
 }

@@ -58,12 +58,12 @@ public class A002075 extends AbstractSequence {
       final int d = dd.intValue();
       final int mu = Mobius.mobius(d);
       if (mu != 0) {
-        final Z t = Z.THREE.pow(mN / d).multiply(hprime(d) * mu);
+        final Z t = Z.THREE.pow(mN / d).multiply((long) hprime(d) * mu);
         s = s.add(t);
       }
     }
     s = s.divide(3);
     s = s.add(h(mN));
-    return s.divide(2 * mN);
+    return s.divide(2L * mN);
   }
 }

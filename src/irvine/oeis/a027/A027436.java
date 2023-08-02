@@ -17,7 +17,7 @@ public class A027436 extends MemoryFunction2Sequence<Integer, Z> {
     if (n.equals(m)) {
       return Z.ONE;
     }
-    Z sum = Binomial.binomial(m, n - m).shiftLeft(2 * (n - m));
+    Z sum = Binomial.binomial(m, n - m).shiftLeft(2L * (n - m));
     for (int k = m + 1; k < n; ++k) {
       sum = sum.subtract(get(n, k).multiply(get(k, m)));
     }

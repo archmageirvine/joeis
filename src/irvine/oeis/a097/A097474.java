@@ -21,7 +21,7 @@ public class A097474 extends Sequence0 {
   protected Z t(final int n, final int k) {
     final int h = (n + 1) / 2;
     if (n == k) {
-      return Z.valueOf(2 * n + 1).shiftLeft(h);
+      return Z.valueOf(2L * n + 1).shiftLeft(h);
     }
     final Point key = new Point(n, k);
     final Z v = mT.get(key);
@@ -30,7 +30,7 @@ public class A097474 extends Sequence0 {
     }
     Z s = Z.ZERO;
     for (int j = k; j < n; ++j) {
-      s = s.add(Binomial.binomial(2 * n + 1, 2 * j + 1).shiftLeft(h - (j + 3) / 2).multiply(t(j, k)));
+      s = s.add(Binomial.binomial(2L * n + 1, 2L * j + 1).shiftLeft(h - (j + 3) / 2).multiply(t(j, k)));
     }
     s = Binomial.binomial(2L * n + 1, 2L * k).shiftLeft(h).subtract(s);
     mT.put(key, s);

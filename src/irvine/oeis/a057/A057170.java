@@ -13,7 +13,7 @@ public class A057170 extends Sequence0 {
 
   @Override
   public Z next() {
-    Z t = Z.ONE.shiftLeft(++mN * mN);
+    Z t = Z.ONE.shiftLeft((long) ++mN * mN);
     for (int k = 1; k <= mN; ++k) {
       for (int j = 1 + (k & 1); j <= mN; j += 2) {
         t = t.multiply(2L * j - 2L * k + 1);

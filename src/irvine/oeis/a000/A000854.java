@@ -14,11 +14,11 @@ public class A000854 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Z.ONE.shiftLeft(3 * (1 << mN))
-      .add(Z.ONE.shiftLeft(3 * (1 << (mN - 1))).multiply((1 << mN) - 1).multiply(20))
-      .add(Z.ONE.shiftLeft((1 << mN) + 3))
-      .add(Z.ONE.shiftLeft((1 << (mN - 1)) + 4).multiply((1 << mN) - 1))
-      .add(Z.ONE.shiftLeft(1 << (mN + 1)).multiply(6))
+    return Z.ONE.shiftLeft(3L * (1L << mN))
+      .add(Z.ONE.shiftLeft(3L * (1L << (mN - 1))).multiply((1L << mN) - 1).multiply(20))
+      .add(Z.ONE.shiftLeft((1L << mN) + 3))
+      .add(Z.ONE.shiftLeft((1L << (mN - 1)) + 4).multiply((1L << mN) - 1))
+      .add(Z.ONE.shiftLeft(1L << (mN + 1)).multiply(6))
       .shiftRight(mN)
       .divide(48);
   }

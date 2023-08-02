@@ -19,10 +19,10 @@ public class A007043 extends Sequence0 {
     if (++mN < 3) {
       return mN == 1 ? Z.ZERO : Z.ONE;
     }
-    final Z t = mC.multiply(19 * mN - 20).multiply(3 * mN - 2).multiply(mN - 1)
-      .add(mB.multiply(3 * mN - 5).multiply(mN).multiply(10 * mN - 10))
-      .subtract(mA.multiply(3 * mN - 2).multiply(mN - 1).multiply(mN - 2).multiply(25))
-      .divide(3 * mN - 5).divide(2 * mN + 1).divide(2 * mN);
+    final Z t = mC.multiply(19L * mN - 20).multiply(3L * mN - 2).multiply(mN - 1)
+      .add(mB.multiply(3L * mN - 5).multiply(mN).multiply(10L * mN - 10))
+      .subtract(mA.multiply(3L * mN - 2).multiply(mN - 1).multiply(mN - 2).multiply(25))
+      .divide(3L * mN - 5).divide(2L * mN + 1).divide(2L * mN);
     mA = mB;
     mB = mC;
     mC = t;

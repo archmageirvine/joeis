@@ -19,6 +19,6 @@ public class A038195 extends Sequence2 {
       ++mN;
       mM = 0;
     }
-    return Binomial.binomial(mN - 1, mM - 1).shiftLeft(2).add(Binomial.binomial(mN - 2, mM)).shiftLeft(2 * mN - mM - 4);
+    return Binomial.binomial(mN - 1, mM - 1).shiftLeft(2).add(Binomial.binomial(mN - 2, mM)).shiftLeft(2L * mN - mM - 4);
   }
 }

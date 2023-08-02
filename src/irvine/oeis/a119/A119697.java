@@ -16,6 +16,6 @@ public class A119697 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Fibonacci.fibonacci(mN).multiply(mN).multiply(Binomial.binomial(2 * mN, mN)).divide(mN + 1);
+    return Fibonacci.fibonacci(mN).multiply(mN).multiply(Binomial.binomial(2L * mN, mN)).divide(mN + 1);
   }
 }

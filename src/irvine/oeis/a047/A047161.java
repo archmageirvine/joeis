@@ -52,7 +52,7 @@ public class A047161 extends AbstractSequence {
     final int k = (mN + mAdd) / mDiv;
     Z sum = Z.ZERO;
     for (int j = mDen; j <= mN; j += mDen) {
-      sum = sum.add(Binomial.binomial(k, j * mNum / mDen).multiply(Binomial.binomial(mN - k, j * (mDen - mNum) / mDen)));
+      sum = sum.add(Binomial.binomial(k, (long) j * mNum / mDen).multiply(Binomial.binomial(mN - k, (long) j * (mDen - mNum) / mDen)));
     }
     return sum;
   }

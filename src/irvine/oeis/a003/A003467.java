@@ -17,6 +17,6 @@ public class A003467 extends Sequence3 {
     if (++mN == 3) {
       return Z.FIVE;
     }
-    return Binomial.binomial(mN, 3).multiply(Z.ONE.shiftLeft(2 * mN - 6).add(3));
+    return Binomial.binomial(mN, 3).multiply(Z.ONE.shiftLeft(2L * mN - 6).add(3));
   }
 }

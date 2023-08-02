@@ -19,6 +19,6 @@ public class A099039 extends BaseTriangle {
   @Override
   public Z triangleElement(final int n, final int k) {
     // T(n, k) = (-1)^(n+k)*binomial(2*n-k-1, n-k)*k/n for 0 <= k <= n with n > 0; T(0, 0) = 1
-    return (n == 0) ? Z.ONE : Binomial.binomial(2 * n - k - 1, n - k).multiply((((n + k) & 1) == 1) ? -1 : 1).multiply(k).divide(n);
+    return (n == 0) ? Z.ONE : Binomial.binomial(2L * n - k - 1, n - k).multiply((((n + k) & 1) == 1) ? -1 : 1).multiply(k).divide(n);
   }
 }

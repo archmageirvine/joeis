@@ -20,7 +20,7 @@ public class A270470 extends A001654 {
   public Z next() {
     while (true) {
       ++mN;
-      if (super.next().mod(Z.valueOf(mN * (mN + 1) / 2)).isZero()) {
+      if (super.next().mod(Z.valueOf((long) mN * (mN + 1) / 2)).isZero()) {
         return Z.valueOf(mN);
       }
     }

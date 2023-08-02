@@ -17,7 +17,7 @@ public class A005436 extends Sequence2 {
     if (++mN < 0) {
       return Z.valueOf(mN + 3);
     }
-    return Z.ONE.shiftLeft(2 * mN).multiply(2L * mN + 11).subtract(Binomial.binomial(2 * mN, mN).multiply(2L * mN + 1).multiply(4));
+    return Z.ONE.shiftLeft(2L * mN).multiply(2L * mN + 11).subtract(Binomial.binomial(2L * mN, mN).multiply(2L * mN + 1).multiply(4));
   }
 }
 

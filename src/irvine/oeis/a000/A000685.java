@@ -28,7 +28,7 @@ public class A000685 extends A047863 {
     mC.add(super.next());
     Z s = Z.ZERO;
     for (int j = 0; j <= mN; ++j) {
-      s = s.add(Binomial.binomial(mN, j).shiftLeft(j * (mN - j)).multiply(mC.get(j)));
+      s = s.add(Binomial.binomial(mN, j).shiftLeft((long) j * (mN - j)).multiply(mC.get(j)));
     }
     return s.divide(3);
   }

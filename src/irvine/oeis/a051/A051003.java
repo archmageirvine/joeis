@@ -20,7 +20,7 @@ public class A051003 extends Sequence1 {
   @Override
   public Z next() {
     if (mA.isEmpty()) {
-      final long lim = 2 * mN;
+      final long lim = 2L * mN;
       for (long k = mN; k < lim; ++k) {
         final String t = String.valueOf(k).substring(1); // can have leading 0s
         for (int ins = 0; ins <= t.length(); ++ins) {

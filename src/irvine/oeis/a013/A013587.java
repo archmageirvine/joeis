@@ -25,8 +25,8 @@ public class A013587 extends MemorySequence {
     for (int i = 1; i < n; ++i) {
       final int j = n - i;
       final long i2 = i * (long) i;
-      final Z m = Binomial.binomial(3 * n - 4, 3 * i - 2).multiply(i2).multiply(j * (long) j)
-        .subtract(Binomial.binomial(3 * n - 4, 3 * i - 1).multiply(j).multiply(i).multiply(i2));
+      final Z m = Binomial.binomial(3L * n - 4, 3L * i - 2).multiply(i2).multiply(j * (long) j)
+        .subtract(Binomial.binomial(3L * n - 4, 3L * i - 1).multiply(j).multiply(i).multiply(i2));
       sum = sum.add(m.multiply(a(i)).multiply(a(j)));
     }
     return sum;

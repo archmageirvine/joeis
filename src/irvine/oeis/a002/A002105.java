@@ -17,6 +17,6 @@ public class A002105 extends Sequence1 {
   public Z next() {
     ++mN;
     mB.nextQ();
-    return mB.nextQ().abs().multiply(Z.ONE.shiftLeft(2 * mN).subtract(1).shiftLeft(mN)).toZ().divide(mN);
+    return mB.nextQ().abs().multiply(Z.ONE.shiftLeft(2L * mN).subtract(1).shiftLeft(mN)).toZ().divide(mN);
   }
 }

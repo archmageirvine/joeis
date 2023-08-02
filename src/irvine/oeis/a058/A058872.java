@@ -16,6 +16,6 @@ public class A058872 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sum(0, mN - 1, k -> Binomial.binomial(mN, k).shiftLeft(mN - k + k * (mN - k)));
+    return Integers.SINGLETON.sum(0, mN - 1, k -> Binomial.binomial(mN, k).shiftLeft(mN - k + (long) k * (mN - k)));
   }
 }

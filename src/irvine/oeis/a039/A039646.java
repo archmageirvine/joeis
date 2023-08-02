@@ -20,7 +20,7 @@ public class A039646 extends Sequence0 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 3; k <= mN; ++k) {
-      sum = sum.add(Stirling.firstKind(k, 3).multiply(Binomial.binomial(2 * mN, mN - k)).multiply(mF.factorial(mN - 1)).divide(mF.factorial(k - 1)));
+      sum = sum.add(Stirling.firstKind(k, 3).multiply(Binomial.binomial(2L * mN, mN - k)).multiply(mF.factorial(mN - 1)).divide(mF.factorial(k - 1)));
     }
     return sum;
   }

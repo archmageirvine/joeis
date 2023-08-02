@@ -31,6 +31,6 @@ public class A246137 extends Sequence1 {
       t = t.multiply(p);
       prod = prod.multiply(t.subtract(1));
     }
-    return nf.divide(prod).divide(p.pow((e * e - e) / 2));
+    return nf.divide(prod).divide(p.pow(((long) e * e - e) / 2));
   }
 }

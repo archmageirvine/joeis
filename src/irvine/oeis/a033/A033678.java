@@ -23,8 +23,8 @@ public class A033678 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     for (int k = 1; k < n; ++k) {
-      sum = sum.add(Binomial.binomial(n, k).multiply(k).multiply(a(k)).shiftLeft((k - n + 2) * (k - n + 1) / 2));
+      sum = sum.add(Binomial.binomial(n, k).multiply(k).multiply(a(k)).shiftLeft((long) (k - n + 2) * (k - n + 1) / 2));
     }
-    return Z.ONE.shiftLeft((n - 2) * (n - 1) / 2).subtract(sum.divide(n));
+    return Z.ONE.shiftLeft((long) (n - 2) * (n - 1) / 2).subtract(sum.divide(n));
   }
 }

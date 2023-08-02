@@ -17,6 +17,6 @@ public class A332958 extends Sequence1 {
   public Z next() {
     // a(n) = C(2*n,n-1) * (n+1)^(n-1).
     ++mN;
-    return Binomial.binomial(mN * 2, mN - 1).multiply(Z.valueOf(mN + 1).pow(mN - 1));
+    return Binomial.binomial(mN * 2L, mN - 1).multiply(Z.valueOf(mN + 1).pow(mN - 1));
   }
 }

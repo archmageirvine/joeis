@@ -31,7 +31,7 @@ public class A261301 extends Sequence1 {
   @Override
   public Z next() {
     if (++mN > 1) {
-      mA = mA.subtract(mA.gcd(Z.valueOf((mN - 1) * mMult + mMult - 1))).abs();
+      mA = mA.subtract(mA.gcd(Z.valueOf((long) (mN - 1) * mMult + mMult - 1))).abs();
     }
     return mA;
   }

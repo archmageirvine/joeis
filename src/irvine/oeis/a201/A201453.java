@@ -27,9 +27,9 @@ public class A201453 extends RationalTriangle {
     } else {
       Q sum = Q.ZERO;
       for (int i = 0; i <= 2 * k; ++i) {
-        sum = sum.add(mB.get(i).multiply(Binomial.binomial(m, 2 * k - i)).multiply(Binomial.binomial(2 * m - 2 * k + i, i)));
+        sum = sum.add(mB.get(i).multiply(Binomial.binomial(m, 2L * k - i)).multiply(Binomial.binomial(2L * m - 2L * k + i, i)));
       }
-      return sum.divide(2 * m - 2 * k + 1);
+      return sum.divide(2L * m - 2L * k + 1);
     }
   }
 }

@@ -43,7 +43,7 @@ public class A088878 extends A000040 {
   public Z next() {
     while (true) {
       final Z prime = super.next();
-      final Z prime2 = prime.add(mOrder2 * mSign);
+      final Z prime2 = prime.add((long) mOrder2 * mSign);
       if (prime2.mod(mOrder21).equals(Z.ZERO)) {
         final Z prime21 = prime2.divide(mOrder21);
         if (prime21.isPrime()) {

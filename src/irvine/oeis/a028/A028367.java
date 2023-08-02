@@ -15,7 +15,7 @@ public class A028367 extends Sequence1 {
   @Override
   public Z next() {
     if (++mN > 1) {
-      for (long n = (1 << (mN - 1)) - 1; n <= (1 << mN) - 2; ++n) {
+      for (long n = (1L << (mN - 1)) - 1; n <= (1L << mN) - 2; ++n) {
         mF = mF.multiply(n);
       }
     }

@@ -17,7 +17,7 @@ public class A006586 extends Sequence2 {
     Z sum = Z.ZERO;
     final long m = 2 * mN - 1;
     for (int k = 1; k <= mN; ++k) {
-      sum = sum.add(m / (2 * k + 1));
+      sum = sum.add(m / (2L * k + 1));
     }
     return sum;
   }

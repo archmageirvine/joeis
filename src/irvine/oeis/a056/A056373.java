@@ -25,7 +25,7 @@ public class A056373 extends Sequence1 {
         for (final Z dd : Jaguar.factor(mN).divisors()) {
           s += Euler.phi(dd).divide(new IntegersModMul(dd).order(Z.valueOf(k))).intValueExact();
         }
-        sum = sum.add(Z.ONE.shiftLeft(2 * s));
+        sum = sum.add(Z.ONE.shiftLeft(2L * s));
       }
     }
     return sum.divide(Euler.phi(Z.valueOf(mN)));

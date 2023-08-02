@@ -94,7 +94,7 @@ public class A000061 extends AbstractSequence {
     Z r = bigDbn(b, n);
     for (int i = 1; i < n; ++i) {
       r = r.subtract(dbn(b, n - i).multiply(Z.valueOf(b * b).negate().pow(i))
-                     .multiply(Binomial.binomial(2 * n - 1, 2 * i)));
+                     .multiply(Binomial.binomial(2L * n - 1, 2L * i)));
     }
     return r;
   }

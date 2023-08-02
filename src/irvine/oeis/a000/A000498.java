@@ -20,7 +20,7 @@ public class A000498 extends AbstractSequence {
   public Z next() {
     ++mN;
     final long t = mN * (mN + 1L) / 2;
-    return Z.ONE.shiftLeft(2 * mN)
+    return Z.ONE.shiftLeft(2L * mN)
       .subtract(Z.THREE.pow(mN).multiply(mN + 1))
       .add(Z.valueOf(t).shiftLeft(mN))
       .subtract(t * (mN - 1) / 3);

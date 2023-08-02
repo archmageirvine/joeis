@@ -20,7 +20,7 @@ public class A052140 extends Sequence0 {
     for (int k = 0; k <= mN; ++k) {
       sum = sum.add(nf.divide(mF.factorial(k)));
     }
-    return sum.multiply(nf).shiftLeft(2 * mN);
+    return sum.multiply(nf).shiftLeft(2L * mN);
   }
 }
 

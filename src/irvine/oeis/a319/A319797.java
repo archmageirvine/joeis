@@ -38,7 +38,7 @@ public class A319797 extends Triangle {
       if (n < 1) {
         return 0;
       }
-      return Z.valueOf(8 * n + 1).isSquare() ? n : get(n - 1);
+      return Z.valueOf(8L * n + 1).isSquare() ? n : get(n - 1);
     }
   };
 

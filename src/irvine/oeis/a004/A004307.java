@@ -57,7 +57,7 @@ public class A004307 extends AbstractSequence {
       final Polynomial<Z> s4d = RING.diff(hitPolynomial(n - 4));
       final Polynomial<Z> g = RING.multiply(RING.multiply(s4d, Y.get(3)), Polynomial.create(2L * n - 10, 4));
       final Polynomial<Z> h = RING.multiply(RING.diff(s4d), Y.get(4));
-      final Polynomial<Z> i = RING.multiply(RING.multiply(hitPolynomial(n - 5), Y.get(4)), Polynomial.create(3 * n - 16, 4));
+      final Polynomial<Z> i = RING.multiply(RING.multiply(hitPolynomial(n - 5), Y.get(4)), Polynomial.create(3L * n - 16, 4));
       final Polynomial<Z> j = RING.multiply(RING.multiply(RING.diff(hitPolynomial(n - 5)), Y.get(5)), Z.THREE);
       final Polynomial<Z> k = RING.multiply(RING.multiply(hitPolynomial(n - 7), Y.get(6)), Z.valueOf(n - 6));
       final Polynomial<Z> l = RING.multiply(RING.diff(hitPolynomial(n - 7)), Y.get(7));

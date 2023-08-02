@@ -18,7 +18,7 @@ public class A020328 extends Sequence1 {
     ++mN;
     long s = 0;
     final Q t = new Q(1, mN);
-    for (long a = mN + 1; a <= 5 * mN; ++a) {
+    for (long a = mN + 1; a <= 5L * mN; ++a) {
       final Q t1 = t.subtract(new Q(1, a));
       final long l4 = FOUR.divide(t1).toZ().longValue();
       for (long b = Math.max(t1.reciprocal().toZ().longValue() + 1, a); b <= l4; ++b) {

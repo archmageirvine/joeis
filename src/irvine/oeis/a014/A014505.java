@@ -27,7 +27,7 @@ public class A014505 extends Sequence0 {
       if (k > 1) {
         f = f.multiply(k);
       }
-      sum = sum.add(new Q(Binomial.binomial(k * (k - 1), mN), f));
+      sum = sum.add(new Q(Binomial.binomial((long) k * (k - 1), mN), f));
     }
     return CR.valueOf(sum.multiply(mF)).divide(CR.E).round();
   }

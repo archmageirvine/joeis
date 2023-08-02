@@ -32,7 +32,7 @@ public class A274022 extends AbstractSequence {
   @Override
   public Z next() {
     while (true) {
-      final Z t = Z.ONE.shiftLeft(1 << ++mK).add(mAdd);
+      final Z t = Z.ONE.shiftLeft(1L << ++mK).add(mAdd);
       if (t.isProbablePrime()) {
         return t;
       }

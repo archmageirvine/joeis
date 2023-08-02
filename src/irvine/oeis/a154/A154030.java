@@ -16,6 +16,6 @@ public class A154030 extends Sequence0 {
   public Z next() {
     ++mN;
     final int n = mN / 2;
-    return ((mN & 1) == 0) ? Z.valueOf(n * n).add(mN).multiply2() : MemoryFactorial.SINGLETON.factorial(mN + 1).divide(MemoryFactorial.SINGLETON.factorial((mN + 1) / 2));
+    return ((mN & 1) == 0) ? Z.valueOf((long) n * n).add(mN).multiply2() : MemoryFactorial.SINGLETON.factorial(mN + 1).divide(MemoryFactorial.SINGLETON.factorial((mN + 1) / 2));
   }
 }

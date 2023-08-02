@@ -21,7 +21,7 @@ public class A027363 extends Sequence1 {
     ++mN;
     Polynomial<Z> p = RING.one();
     for (int j = 0; j <= 2 * mN - 1; ++j) {
-      p = RING.multiply(p, Polynomial.create(2 * mN - 1 - j, j), mN);
+      p = RING.multiply(p, Polynomial.create(2L * mN - 1 - j, j), mN);
     }
     return RING.multiply(p, C, mN).coeff(mN);
   }

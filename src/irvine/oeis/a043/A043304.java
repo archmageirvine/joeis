@@ -18,7 +18,7 @@ public class A043304 extends Sequence1 {
     for (int k = 0; k < 3; ++k) {
       mB.nextQ();
     }
-    return mB.nextQ().divide(8 * ++mN + 4).den();
+    return mB.nextQ().divide(8L * ++mN + 4).den();
   }
 }
 

@@ -12,6 +12,6 @@ public class A282254 extends PrependSequence {
 
   /** Construct the sequence. */
   public A282254() {
-    super(new MultiplicativeSequence(0,  (p,  e) -> p.pow(e).multiply(p.pow(9 * (e + 1)).subtract(1)).divide(p.pow(9).subtract(1))).skip(1), 0);
+    super(new MultiplicativeSequence(0,  (p,  e) -> p.pow(e).multiply(p.pow(9L * (e + 1)).subtract(1)).divide(p.pow(9).subtract(1))).skip(1), 0);
   }
 }

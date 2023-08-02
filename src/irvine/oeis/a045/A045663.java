@@ -11,7 +11,7 @@ public class A045663 extends A000048 {
 
   @Override
   public Z next() {
-    return super.next().multiply(mN == 0 ? 1 : 2 * mN);
+    return super.next().multiply(mN == 0 ? 1 : 2L * mN);
   }
 }
 

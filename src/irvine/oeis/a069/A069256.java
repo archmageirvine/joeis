@@ -13,6 +13,6 @@ public class A069256 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A069256() {
-    super(1, (p, e) -> is2(p) ? Z.ONE.shiftLeft(4 * e - 3) : Z.ONE.shiftLeft(ZUtils.valuation(p.subtract(1).multiply(p.square().subtract(1)), Z.TWO)));
+    super(1, (p, e) -> is2(p) ? Z.ONE.shiftLeft(4L * e - 3) : Z.ONE.shiftLeft(ZUtils.valuation(p.subtract(1).multiply(p.square().subtract(1)), Z.TWO)));
   }
 }

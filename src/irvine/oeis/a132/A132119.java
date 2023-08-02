@@ -17,7 +17,7 @@ public class A132119 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    final Z tri = Z.valueOf(n * (n + 1) / 2);
+    final Z tri = Z.valueOf((long) n * (n + 1) / 2);
     return (k == n || k == 1) ? tri : tri.subtract(n - k);
   }
 }

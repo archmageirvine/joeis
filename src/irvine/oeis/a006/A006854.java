@@ -29,7 +29,7 @@ public class A006854 extends A006853 {
     for (int k = 1; k <= (1L << mN) / 4; ++k) {
       Z t = bigN(mN, 2 * k);
       for (int i = 0; i < k; ++i) {
-        t = t.subtract(Binomial.binomial((1L << (mN - 1)) - 2 * i, k - i).multiply(prev.get(i)));
+        t = t.subtract(Binomial.binomial((1L << (mN - 1)) - 2L * i, k - i).multiply(prev.get(i)));
       }
       prev.add(t);
       sum = sum.add(t);

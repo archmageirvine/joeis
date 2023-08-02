@@ -57,7 +57,7 @@ public class A005020 extends A005019 {
           // The remainder of the matrix can be filled in any manner and this
           // matrix will have all cols > 1 with a minimum of 1 or 2 rows.
           // There are (mN - r - 1) * mN remaining cells ...
-          mCount = mCount.add(Z.ONE.shiftLeft((mN - r - 1) * mN));
+          mCount = mCount.add(Z.ONE.shiftLeft((long) (mN - r - 1) * mN));
         } else {
           rows[r] = k;
           search(rows, r + 1);

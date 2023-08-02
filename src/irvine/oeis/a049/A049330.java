@@ -25,7 +25,7 @@ public class A049330 extends Sequence1 {
     }
     Z sum = Z.ZERO;
     for (int k = 0; k <= mN / 2; ++k) {
-      sum = sum.signedAdd((k & 1) == 0, Z.valueOf(mN - 2 * k).pow(mN - 1).multiply(Binomial.binomial(mN, k)));
+      sum = sum.signedAdd((k & 1) == 0, Z.valueOf(mN - 2L * k).pow(mN - 1).multiply(Binomial.binomial(mN, k)));
     }
     return select(new Q(sum, mF));
   }

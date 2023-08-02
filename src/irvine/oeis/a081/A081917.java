@@ -14,6 +14,6 @@ public class A081917 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return (mN == 0) ? Z.ONE : Z.valueOf(mN).pow(mN - 2).multiply(7 * mN * mN - 3 * mN + 2).divide(6);
+    return (mN == 0) ? Z.ONE : Z.valueOf(mN).pow(mN - 2).multiply(7L * mN * mN - 3L * mN + 2).divide(6);
   }
 }

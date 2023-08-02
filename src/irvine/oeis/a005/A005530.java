@@ -19,7 +19,7 @@ public class A005530 extends Sequence1 {
     }
     Z sum = Z.ZERO;
     for (int j = 1; j <= mN; ++j) {
-      sum = sum.signedAdd((j & 1) == 1, Binomial.binomial(mN, j).shiftLeft(1 << (mN - j)));
+      sum = sum.signedAdd((j & 1) == 1, Binomial.binomial(mN, j).shiftLeft(1L << (mN - j)));
     }
     return sum;
   }

@@ -28,7 +28,7 @@ public class A125235 extends Triangle {
       return Z.ZERO;
     }
     if (k == 1) {
-      return Z.valueOf(n).multiply(3 * n - 2);
+      return Z.valueOf(n).multiply(3L * n - 2);
     }
     return get(n - 2, k - 2).add(get(n - 2, k - 1));
   }

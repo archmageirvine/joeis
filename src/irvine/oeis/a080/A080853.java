@@ -18,6 +18,6 @@ public class A080853 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return Binomial.binomial(k, 0).add(Binomial.binomial(k, 1).multiply(n)).add(Binomial.binomial(k, 2).multiply(n * n));
+    return Binomial.binomial(k, 0).add(Binomial.binomial(k, 1).multiply(n)).add(Binomial.binomial(k, 2).multiply((long) n * n));
   }
 }

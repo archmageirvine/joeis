@@ -18,7 +18,7 @@ public class A046647 extends Sequence2 {
     if (++mN == 2) {
       return Z.ONE;
     } else {
-      return mF.factorial(3 * mN - 6).multiply(7 * mN - 15).multiply(4)
+      return mF.factorial(3 * mN - 6).multiply(7L * mN - 15).multiply(4)
         .divide(mF.factorial(2 * mN - 2)).divide(mF.factorial(mN - 2));
     }
   }

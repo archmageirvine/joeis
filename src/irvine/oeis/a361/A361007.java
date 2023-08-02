@@ -20,7 +20,7 @@ public class A361007 extends Sequence0 {
       mB.nextQ(); // skip odd
       mF = mF.multiply(2L * mN).multiply(2L * mN - 1);  // 2*(2n)!
     }
-    final Z t = mB.nextQ().divide(mF).multiply(Z.ONE.shiftLeft(2 * mN).subtract(1)).multiply(Z.ONE.shiftLeft(4 * mN)).num();
+    final Z t = mB.nextQ().divide(mF).multiply(Z.ONE.shiftLeft(2L * mN).subtract(1)).multiply(Z.ONE.shiftLeft(4L * mN)).num();
     return (mN & 1) == 0 ? t.negate() : t;
   }
 }

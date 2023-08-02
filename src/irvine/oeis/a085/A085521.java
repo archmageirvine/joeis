@@ -22,7 +22,7 @@ public class A085521 extends AbstractSequence {
     ++mN;
     Z prod = Z.ONE;
     for (int k = 0; k <= mN; ++k) {
-      prod = prod.multiply(Z.ONE.shiftLeft(2 * k + 1).add(1));
+      prod = prod.multiply(Z.ONE.shiftLeft(2L * k + 1).add(1));
     }
     return prod;
   }

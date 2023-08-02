@@ -12,6 +12,6 @@ public class A079458 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A079458() {
-    super(1, (p, e) -> p.equals(Z.TWO) ? Z.ONE.shiftLeft(2 * e - 1) : p.pow(2 * e - 2).multiply(p.mod(Z.FOUR).equals(Z.THREE) ? p.square().subtract(1) : p.subtract(1).square()));
+    super(1, (p, e) -> p.equals(Z.TWO) ? Z.ONE.shiftLeft(2L * e - 1) : p.pow(2L * e - 2).multiply(p.mod(Z.FOUR).equals(Z.THREE) ? p.square().subtract(1) : p.subtract(1).square()));
   }
 }

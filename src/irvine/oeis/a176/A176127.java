@@ -32,7 +32,7 @@ public class A176127 extends Sequence1 {
 
   private void zeroCase(final long[] sum) {
     for (int k = 0; k < sum.length; ++k) {
-      sum[k] = 2 * sum.length - k;
+      sum[k] = 2L * sum.length - k;
     }
   }
 
@@ -56,7 +56,7 @@ public class A176127 extends Sequence1 {
       // hence we add the changed value multiplied to 2.
       final int a = 2 * bit(gray, p);
       for (int j = 0; j < n && p < m - j; ++j) {
-        sum[j] += a * bit(gray, p + j + 2);
+        sum[j] += (long) a * bit(gray, p + j + 2);
       }
       s = s.signedAdd(sign, prod(sum));
     }

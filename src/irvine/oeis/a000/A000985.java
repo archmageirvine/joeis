@@ -36,7 +36,7 @@ public class A000985 extends Sequence0 {
   private Polynomial<Q> oneOverSqrtOneMinusX(final int n) {
     while (mCache1.size() <= n) {
       final int k = mCache1.size();
-      mCache1.add(new Q(Binomial.binomial(2 * k, k), Z.ONE.shiftLeft(2 * k)));
+      mCache1.add(new Q(Binomial.binomial(2L * k, k), Z.ONE.shiftLeft(2L * k)));
     }
     return RING.create(mCache1);
   }

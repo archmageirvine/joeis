@@ -22,7 +22,7 @@ public class A014402 extends Sequence0 {
     }
     Z r = mF;
     for (int k = 0; k < mN / 2; ++k) {
-      r = r.divide(3 * k + 1 + (mN & 1));
+      r = r.divide(3L * k + 1 + (mN & 1));
     }
     return r;
   }

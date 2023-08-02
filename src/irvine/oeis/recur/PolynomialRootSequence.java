@@ -92,7 +92,7 @@ public class PolynomialRootSequence extends HolonomicRecurrence {
     final Z[] npow0 = new Z[len];
     final Z[] npow1 = new Z[len];
     for (int k = ord; k >= 0; --k) {
-      final Z n0 = coeffs[k].multiply(root * k + k); // factor of n^0
+      final Z n0 = coeffs[k].multiply((long) root * k + k); // factor of n^0
       final Z n1 = coeffs[k].multiply(-root); // factor of n^1
       npow0[ord - k] = n0;
       npow1[ord - k] = n1;

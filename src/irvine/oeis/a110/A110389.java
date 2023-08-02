@@ -39,9 +39,9 @@ public class A110389 extends Sequence1 {
   public Z next() {
     ++mN;
     if (mN < 3) {
-      mAm1 = Z.valueOf(mN * mK + 1);
+      mAm1 = Z.valueOf((long) mN * mK + 1);
     } else if (mN == 3) {
-      mAm1 = Z.valueOf((mK + 1) * (2 * mK + 1) - mK);
+      mAm1 = Z.valueOf((mK + 1) * (2L * mK + 1) - mK);
     } else {
       mAm1 = mAm1.multiply(mAm1.add(mK)).subtract(mK);
     }

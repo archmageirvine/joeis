@@ -58,7 +58,7 @@ public class A007903 extends Sequence1 {
   // We generate in such a way that (1)-(5) are satisfied for rows, then check cols.
 
   private long col(final long[] matrix, final int col) {
-    final long bit = 1 << col;
+    final long bit = 1L << col;
     long res = 0;
     for (int k = 0; k < matrix.length; ++k) {
       if ((matrix[k] & bit) != 0) {
@@ -117,7 +117,7 @@ public class A007903 extends Sequence1 {
       }
       return;
     }
-    final long limit = 1 << mN;
+    final long limit = 1L << mN;
     long r = min;
     final HashSet<Long> newForbidden = new HashSet<>(2 * forbidden.size());
     while (++r < limit) {

@@ -13,7 +13,7 @@ public class A004141 extends Sequence1 {
   private int mN = -1;
 
   private Z a(final int n, final int k) {
-    return Binomial.binomial(n + k, n - k).multiply(n).shiftLeft(2 * k).divide(n + k);
+    return Binomial.binomial(n + k, n - k).multiply(n).shiftLeft(2L * k).divide(n + k);
   }
 
   @Override

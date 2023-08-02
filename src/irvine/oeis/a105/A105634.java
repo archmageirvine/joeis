@@ -12,6 +12,6 @@ public class A105634 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A105634() {
-    super(1, (p, e) -> p.equals(Z.SEVEN) ? p.pow(2 * e) : (p.mod(Z.SEVEN).bitCount() == 1 ? p.pow(2 * e + 2).subtract(1).divide(p.square().subtract(1)) : p.pow(2 * e + 2).add(((e & 1) == 0) ? 1 : -1).divide(p.square().add(1))));
+    super(1, (p, e) -> p.equals(Z.SEVEN) ? p.pow(2L * e) : (p.mod(Z.SEVEN).bitCount() == 1 ? p.pow(2L * e + 2).subtract(1).divide(p.square().subtract(1)) : p.pow(2L * e + 2).add(((e & 1) == 0) ? 1 : -1).divide(p.square().add(1))));
   }
 }

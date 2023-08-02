@@ -11,6 +11,6 @@ public class A065128 extends A002884 {
 
   @Override
   public Z next() {
-    return super.next().shiftLeft(mN * mN);
+    return super.next().shiftLeft((long) mN * mN);
   }
 }

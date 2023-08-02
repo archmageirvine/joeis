@@ -22,6 +22,6 @@ public class A131928 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return (mN == 0) ? Z.ZERO : Euler.phi(Binomial.binomial(2 * mN, mN).multiply(mN));
+    return (mN == 0) ? Z.ZERO : Euler.phi(Binomial.binomial(2L * mN, mN).multiply(mN));
   }
 }

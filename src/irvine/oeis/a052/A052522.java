@@ -25,7 +25,7 @@ public class A052522 extends Sequence0 {
         for (int l = 0; l <= j; ++l) {
           Z u = Z.ZERO;
           for (int i = 0; i <= l; ++i) {
-            u = u.signedAdd(((i + mN + l - 1) & 1) == 0, mF.factorial(mN + k - 1).multiply(Binomial.binomial(l, i)).multiply(Stirling.firstKind(mN + j - i - l - 1, j - l)).shiftLeft(l - 2 * i).divide(mF.factorial(mN + j - i - l - 1)));
+            u = u.signedAdd(((i + mN + l - 1) & 1) == 0, mF.factorial(mN + k - 1).multiply(Binomial.binomial(l, i)).multiply(Stirling.firstKind(mN + j - i - l - 1, j - l)).shiftLeft(l - 2L * i).divide(mF.factorial(mN + j - i - l - 1)));
           }
           t = t.add(u.divide(mF.factorial(l)));
         }

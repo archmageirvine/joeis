@@ -19,7 +19,7 @@ public class A014185 extends Sequence0 {
     ++mN;
     return mF.factorial(Binomial.binomial(mN + 1, 2))
       .multiply(mF.factorial(mN))
-      .shiftLeft(2 * mN)
+      .shiftLeft(2L * mN)
       .divide(mF.factorial(2 * mN));
   }
 }

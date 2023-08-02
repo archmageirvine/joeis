@@ -18,6 +18,6 @@ public class A322185 extends A144613 {
 
   @Override
   public Z next() {
-    return super.next().multiply(Binomial.binomial(2 * mN, mN).divide2());
+    return super.next().multiply(Binomial.binomial(2L * mN, mN).divide2());
   }
 }

@@ -27,10 +27,10 @@ public class A002073 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    mC.add(new Q(3, 2 * mN + 1));
+    mC.add(new Q(3, 2L * mN + 1));
     mC.add(Q.ZERO);
     final Polynomial<Q> f = FIELD.pow(FIELD.create(mC), Q.ONE_THIRD, 2 * mN);
     final Polynomial<Q> gf = FIELD.reversion(f.shift(1), 2 * mN);
-    return answer(gf.coeff(2 * mN - 1).multiply(2 * mN - 1));
+    return answer(gf.coeff(2 * mN - 1).multiply(2L * mN - 1));
   }
 }

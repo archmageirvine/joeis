@@ -19,6 +19,6 @@ public class A096037 extends Triangle {
   public Z compute(int n, int k) {
     ++n;
     ++k;
-    return Z.valueOf(3 * n + 3 * k - 2).multiply(Z.valueOf(n + 1 - k)).divide2();
+    return Z.valueOf(3L * n + 3L * k - 2).multiply(Z.valueOf(n + 1 - k)).divide2();
   }
 }

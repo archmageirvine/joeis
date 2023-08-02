@@ -14,6 +14,6 @@ public class A002451 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Z.FIVE.subtract(Z.EIGHT.multiply(Z.ONE.shiftLeft(2 * mN))).add(Z.THREE.multiply(Z.NINE.pow(mN))).divide(120);
+    return Z.FIVE.subtract(Z.EIGHT.multiply(Z.ONE.shiftLeft(2L * mN))).add(Z.THREE.multiply(Z.NINE.pow(mN))).divide(120);
   }
 }

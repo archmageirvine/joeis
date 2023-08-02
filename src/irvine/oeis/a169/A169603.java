@@ -12,6 +12,6 @@ public class A169603 extends Triangle {
 
   @Override
   protected Z compute(final int n, final int k) {
-    return Z.valueOf(k).multiply(4 * n + 2 + k);
+    return Z.valueOf(k).multiply(4L * n + 2 + k);
   }
 }

@@ -22,6 +22,6 @@ public class A082490 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(ZUtils.valuation(Binomial.binomial(2 * mN, mN).multiply(mN).multiply(mN), Z.THREE));
+    return Z.valueOf(ZUtils.valuation(Binomial.binomial(2L * mN, mN).multiply(mN).multiply(mN), Z.THREE));
   }
 }

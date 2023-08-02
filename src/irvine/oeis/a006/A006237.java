@@ -19,6 +19,6 @@ public class A006237 extends Sequence0 {
     for (long k = 2; k <= mN; ++k) {
       prod = prod.multiply(Z.valueOf(k).pow(Binomial.binomial(mN, k)));
     }
-    return prod.shiftLeft((1 << mN) - 1 - mN);
+    return prod.shiftLeft((1L << mN) - 1 - mN);
   }
 }

@@ -37,6 +37,6 @@ public class A172455 extends MemorySequence {
     for (int k = 1; k < n; ++k) {
       sum = sum.add(a(k).multiply(a(n - k)));
     }
-    return a(n - 1).multiply(mA * n + mB).add(sum.multiply(mC));
+    return a(n - 1).multiply((long) mA * n + mB).add(sum.multiply(mC));
   }
 }

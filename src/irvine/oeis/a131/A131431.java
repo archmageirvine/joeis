@@ -12,6 +12,6 @@ public class A131431 extends Diagonal {
 
   /** Construct the sequence. */
   public A131431() {
-    super(0, n -> Z.valueOf(3 * n + 1));
+    super(0, n -> Z.valueOf(3L * n + 1));
   }
 }

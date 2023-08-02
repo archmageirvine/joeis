@@ -28,7 +28,7 @@ public class A100258 extends Sequence0 {
     }
     if (++mM > mB.degree()) {
       ++mN;
-      final Polynomial<Q> legendreP = RING.multiply(RING.subtract(RING.multiply(mB.shift(1), new Q(2 * mN + 1)), RING.multiply(mA, new Q(mN))), new Q(1, mN + 1));
+      final Polynomial<Q> legendreP = RING.multiply(RING.subtract(RING.multiply(mB.shift(1), new Q(2L * mN + 1)), RING.multiply(mA, new Q(mN))), new Q(1, mN + 1));
       mA = mB;
       mB = legendreP;
       mMaxDen = Z.ONE;

@@ -31,7 +31,7 @@ public class A027433 extends Sequence0 {
       sum = sum.add(mN); // lcs(a,a) == n
       // Since lcs(a,b) == lcs(b,a), only need to do once then double result
       for (long b = a + 1; b < limit; ++b) {
-        sum = sum.add(2 * longestCommonSubsequence(a, b, mN, mN));
+        sum = sum.add(2L * longestCommonSubsequence(a, b, mN, mN));
       }
     }
     return sum;

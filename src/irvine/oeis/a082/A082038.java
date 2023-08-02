@@ -17,6 +17,6 @@ public class A082038 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return MemoryFactorial.SINGLETON.factorial(n).multiply(Z.valueOf(n * n).multiply(k * k).add(n * k + 1));
+    return MemoryFactorial.SINGLETON.factorial(n).multiply(Z.valueOf((long) n * n).multiply((long) k * k).add((long) n * k + 1));
   }
 }

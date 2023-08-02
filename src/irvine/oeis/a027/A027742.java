@@ -15,6 +15,6 @@ public class A027742 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Euler.phi(Z.ONE.shiftLeft(2 * mN).subtract(1)).divide(2L * mN);
+    return Euler.phi(Z.ONE.shiftLeft(2L * mN).subtract(1)).divide(2L * mN);
   }
 }

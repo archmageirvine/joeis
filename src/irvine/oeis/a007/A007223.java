@@ -35,7 +35,7 @@ public class A007223 extends MemoryFunction2Sequence<Integer, Polynomial<Z>> {
     Polynomial<Z> p = RING.zero();
     for (final Z dd : Jaguar.factor(b).divisors()) {
       final int d = dd.intValue();
-      p = RING.add(p, RING.multiply(RING.pow(RING.onePlusXToTheN(d), v * b / d), Euler.phi(dd)));
+      p = RING.add(p, RING.multiply(RING.pow(RING.onePlusXToTheN(d), (long) v * b / d), Euler.phi(dd)));
     }
     return RING.divide(p, Z.valueOf(b));
   }

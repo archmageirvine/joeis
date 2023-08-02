@@ -16,6 +16,6 @@ public class A285705 extends A064216 {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(2 * mN).subtract(Jaguar.factor(super.next()).sigma());
+    return Z.valueOf(2L * mN).subtract(Jaguar.factor(super.next()).sigma());
   }
 }

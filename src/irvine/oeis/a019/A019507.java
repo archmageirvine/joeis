@@ -18,7 +18,7 @@ public class A019507 extends Sequence1 {
     while (true) {
       mN += 2;
       final FactorSequence fs = Jaguar.factor(mN);
-      final long target = 2 * fs.getExponent(Z.TWO);
+      final long target = 2L * fs.getExponent(Z.TWO);
       long sum = 0;
       for (final Z p : fs.toZArray()) {
         if (p.isOdd()) {

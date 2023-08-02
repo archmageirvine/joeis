@@ -40,7 +40,7 @@ public class A045974 extends Sequence1 {
       final int e = fs.getExponent(p);
       final int i = inverseP(p);
       for (final Z q : fs.toZArray()) {
-        prod = prod.multiply(mPrimes.a(i + inverseP(q)).pow(e * fs.getExponent(q)));
+        prod = prod.multiply(mPrimes.a(i + inverseP(q)).pow((long) e * fs.getExponent(q)));
       }
     }
     return prod;

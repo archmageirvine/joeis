@@ -22,7 +22,7 @@ public class A002439 extends MemorySequence {
     Z m = Z.ONE;
     for (int k = 1; k <= n; ++k) {
       m = m.multiply(-9);
-      s = s.add(Binomial.binomial(2 * n + 1, 2 * k).multiply(m).multiply(a(n - k)));
+      s = s.add(Binomial.binomial(2L * n + 1, 2L * k).multiply(m).multiply(a(n - k)));
     }
     if (n > 0) {
       mF = mF.multiply(-4);

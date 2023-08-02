@@ -23,7 +23,7 @@ public class A047922 extends MemoryFunction2Sequence<Integer, Z> {
     }
     if (n.equals(m)) {
       return n < 3
-        ? Z.valueOf((n - 1) * (n - 2) / 2)
+        ? Z.valueOf((long) (n - 1) * (n - 2) / 2)
         : get(n - 1, n - 1).add(get(n - 2, n - 2)).multiply(n - 1).add(get(n - 3, n - 3));
     } else {
       return get(n, m + 1).add(get(n - 1, m).multiply2()).add(get(n - 2, m - 1));

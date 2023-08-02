@@ -20,7 +20,7 @@ public class A160387 extends DecimalExpansionSequence {
         int k = -1;
         while (true) {
           final int shift = 1 << ++k;
-          final Z t = one.shiftRight(2 * shift);
+          final Z t = one.shiftRight(2L * shift);
           if (t.isZero()) {
             break;
           }

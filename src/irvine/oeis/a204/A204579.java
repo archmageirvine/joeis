@@ -21,6 +21,6 @@ public class A204579 extends Triangle {
   protected Z compute(int n, int k) {
     ++n;
     ++k;
-    return n == k ? Z.ONE : get(n - 2, k - 2).add(get(n - 2, k - 1).multiply(-(n - 1) * (n - 1)));
+    return n == k ? Z.ONE : get(n - 2, k - 2).add(get(n - 2, k - 1).multiply((long) -(n - 1) * (n - 1)));
   }
 }

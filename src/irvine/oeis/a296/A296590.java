@@ -20,7 +20,7 @@ public class A296590 extends Sequence0 {
     ++mN;
     Z prod = Z.ONE;
     for (int k = 0; k <= mN; ++k) {
-      prod = prod.multiply(Binomial.binomial(2 * mN - k, k));
+      prod = prod.multiply(Binomial.binomial(2L * mN - k, k));
     }
     return prod;
   }

@@ -30,7 +30,7 @@ public class A014088 extends A050255 {
         for (int j = 1; j < k; ++j) {
           s = s.add(get(j, n - i * k, d - i));
         }
-        s = s.multiply(Z.valueOf(d - i).pow(n - i * k))
+        s = s.multiply(Z.valueOf(d - i).pow(n - (long) i * k))
           .divide(Z.valueOf(d).pow(n - i * (long) k))
           .divide(mF.factorial(i).multiply(Z.valueOf(d).pow(i * (long) k).multiply(mF.factorial(k).pow(i)).multiply(mF.factorial(n - i * k)).multiply(mF.factorial(d - i))));
         sum = sum.add(s);

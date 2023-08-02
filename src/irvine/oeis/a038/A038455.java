@@ -24,7 +24,7 @@ public class A038455 extends Sequence1 {
     }
     Z sum = Z.ZERO;
     for (int k = mM; k <= mN; ++k) {
-      sum = sum.add(Stirling.firstKind(k, mM).multiply(Binomial.binomial(2 * mN, mN - k)).multiply(mF.factorial(mN - 1)).divide(mF.factorial(k - 1)));
+      sum = sum.add(Stirling.firstKind(k, mM).multiply(Binomial.binomial(2L * mN, mN - k)).multiply(mF.factorial(mN - 1)).divide(mF.factorial(k - 1)));
     }
     return sum;
   }

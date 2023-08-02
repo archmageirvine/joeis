@@ -39,7 +39,7 @@ public class A006851 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN < 2) {
-      return Z.valueOf(1 + 2 * mN);
+      return Z.valueOf(1 + 2L * mN);
     }
     return b(mN - 2, 1, 0, 1, 1).multiply(6);
   }

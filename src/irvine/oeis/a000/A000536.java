@@ -24,7 +24,7 @@ public class A000536 extends AbstractSequence {
       }
       return k(n - 1, 0).multiply(n).add((n & 1) == 0 ? 1 : -1);
     }
-    return k(n - 1, j - 1).multiply(n).multiply(n + 1 - 2 * j)
+    return k(n - 1, j - 1).multiply(n).multiply(n + 1 - 2L * j)
       .add(k(n - 2, j - 1).multiply(n).multiply(n - 1))
       .divide(j);
   }

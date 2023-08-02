@@ -18,6 +18,6 @@ public class A060037 extends DoubleRowTriangle {
   public Z compute(int n, int k) {
     n += 2;
     ++k;
-    return n <= 3 ? Z.ONE : Z.valueOf((k * k) % n);
+    return n <= 3 ? Z.ONE : Z.valueOf(((long) k * k) % n);
   }
 }

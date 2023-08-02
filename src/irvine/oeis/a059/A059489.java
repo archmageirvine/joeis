@@ -14,7 +14,7 @@ public class A059489 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    Z prod = Z.valueOf(-3).pow((long) mN * mN).shiftLeft(2 * mN);
+    Z prod = Z.valueOf(-3).pow((long) mN * mN).shiftLeft(2L * mN);
     for (int i = 1; i <= 2 * mN + 1; ++i) {
       for (int j = 2; j <= 2 * mN + 1; j += 2) {
         prod = prod.multiply(3L * j - 3L * i + 2);

@@ -19,7 +19,7 @@ public class A000259 extends Sequence1 {
       Z sum = Z.ZERO;
       for (int j = k; j <= Math.min(n, 2 * k); ++j) {
         sum = sum.add(mF.factorial(j - 1)
-                      .multiply(2 * j - k)
+                      .multiply(2L * j - k)
                       .multiply(mF.factorial(3 * n - j - k - 1))
                       .divide(mF.factorial(j - k).square())
                       .divide(mF.factorial(2 * k - j))

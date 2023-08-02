@@ -16,6 +16,6 @@ public class A151657 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(120).pow(mN).subtract(Z.valueOf(36).pow(mN).multiply(7 * mN + 1)).add(Binomial.binomial(7 * mN + 1, 2).multiply(Z.valueOf(8).pow(mN))).subtract(Binomial.binomial(7 * mN + 1, 3));
+    return Z.valueOf(120).pow(mN).subtract(Z.valueOf(36).pow(mN).multiply(7L * mN + 1)).add(Binomial.binomial(7L * mN + 1, 2).multiply(Z.valueOf(8).pow(mN))).subtract(Binomial.binomial(7L * mN + 1, 3));
   }
 }

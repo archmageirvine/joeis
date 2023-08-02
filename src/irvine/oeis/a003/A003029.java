@@ -26,7 +26,7 @@ public class A003029 extends A003030 {
     }
     Z s = Z.ZERO;
     for (int j = 1; j <= n - k; ++j) {
-      s = s.add(u(n - k, j).multiply(Z.ONE.shiftLeft(k * j).subtract(1)).shiftLeft(k * (n - k - j)));
+      s = s.add(u(n - k, j).multiply(Z.ONE.shiftLeft((long) k * j).subtract(1)).shiftLeft((long) k * (n - k - j)));
     }
     s = s.multiply(Binomial.binomial(n, k)).multiply(s(k));
     mU.put(key, s);

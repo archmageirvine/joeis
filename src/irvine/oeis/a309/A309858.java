@@ -70,7 +70,7 @@ public class A309858 extends MemoryFunction2Sequence<Integer, Z> {
           Z prod = Z.ONE;
           for (int i = 0; i < q; ++i) {
             final int m = IntegerUtils.gcd(t, p.get(i));
-            prod = prod.multiply(Binomial.binomial(m, k.get(i) * m / p.get(i)));
+            prod = prod.multiply(Binomial.binomial(m, (long) k.get(i) * m / p.get(i)));
           }
           s2 = s2.add(prod);
         }

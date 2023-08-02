@@ -20,7 +20,7 @@ public class A057789 extends Sequence1 {
     for (int k = 1; k <= mN; ++k) {
       final long gd = LongUtils.gcd(mN, k);
       if (gd == 1) {
-        sum = sum.add(Z.valueOf(k * (mN - k)));
+        sum = sum.add(Z.valueOf((long) k * (mN - k)));
       }
     }
     return sum;

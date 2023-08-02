@@ -34,7 +34,7 @@ public class A005729 extends Sequence1 {
       int m = 2;
       long ps;
       final Z zp = Z.valueOf(p);
-      while ((ps = zp.pow(m * r).subtract(1).divide(zp.pow(r).subtract(1)).longValueExact()) <= n) {
+      while ((ps = zp.pow((long) m * r).subtract(1).divide(zp.pow(r).subtract(1)).longValueExact()) <= n) {
         if (n % ps == 0) {
           return 1;
         }

@@ -20,6 +20,6 @@ public class A080037 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return (mN == 0) ? Z.TWO : Z.valueOf(4 * mN - 3).sqrt().add(mN + 2);
+    return (mN == 0) ? Z.TWO : Z.valueOf(4L * mN - 3).sqrt().add(mN + 2);
   }
 }

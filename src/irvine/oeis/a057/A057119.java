@@ -29,7 +29,7 @@ public class A057119 extends Sequence0 {
   }
 
   static Z bintreeDepthFirst2Tree(final Z n) {
-    return btdf2t(n.multiply2(), lg(n) + 1).divide2().subtract(Z.ONE.shiftLeft(2 * (lg(n) + 1)));
+    return btdf2t(n.multiply2(), lg(n) + 1).divide2().subtract(Z.ONE.shiftLeft(2L * (lg(n) + 1)));
   }
 
   @Override

@@ -26,6 +26,6 @@ public class A005412 extends MemorySequence {
     for (int j = 1; j < n; ++j) {
       s = s.add(a(j).multiply(a(n - j)));
     }
-    return s.add(a(n - 1).multiply(2 * n - 2));
+    return s.add(a(n - 1).multiply(2L * n - 2));
   }
 }

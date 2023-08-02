@@ -20,7 +20,7 @@ public class A031361 extends A031360 {
   @Override
   public Z next() {
     ++mN;
-    mB.put(Z.valueOf(2 * mN - 1), super.next());
+    mB.put(Z.valueOf(2L * mN - 1), super.next());
     return mA.multiply(mB, mN).coeff(mN);
   }
 }

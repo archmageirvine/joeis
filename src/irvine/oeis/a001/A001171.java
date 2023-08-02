@@ -26,11 +26,11 @@ public class A001171 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    Q t = new Q(mF.factorial(mN).multiply(mF.factorial(mN - 1).square()).shiftLeft(3 * mN - 2), mF.factorial(2 * mN));
+    Q t = new Q(mF.factorial(mN).multiply(mF.factorial(mN - 1).square()).shiftLeft(3L * mN - 2), mF.factorial(2 * mN));
     for (int a = 1; a < mN; ++a) {
       Q u = Q.ZERO;
       for (int b = 1; b <= Math.min(a, mN - a); ++b) {
-        final Q v = new Q(mF.factorial(2 * b).multiply(mF.factorial(a - 1)).multiply(mF.factorial(mN - a - b + 1)).shiftLeft(a - b - 1), mF.factorial(b).multiply(2 * b - 1));
+        final Q v = new Q(mF.factorial(2 * b).multiply(mF.factorial(a - 1)).multiply(mF.factorial(mN - a - b + 1)).shiftLeft(a - b - 1), mF.factorial(b).multiply(2L * b - 1));
         u = u.add(c(a, b, mN).multiply(v.square()));
       }
       t = t.add(u);

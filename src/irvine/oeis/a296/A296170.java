@@ -42,7 +42,7 @@ public class A296170 extends AbstractSequence {
   protected void stepEgf() {
     final int n = mA.size();
     final Polynomial<Q> v = RING.pow(RING.create(mA), n * n, n);
-    mA.add(v.coeff(n - 1).subtract(v.coeff(n)).divide(n * n));
+    mA.add(v.coeff(n - 1).subtract(v.coeff(n)).divide((long) n * n));
   }
 
   @Override

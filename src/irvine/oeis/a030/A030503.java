@@ -31,7 +31,7 @@ public class A030503 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return Binomial.binomial(++mN, w()).shiftLeft(w()).add(2 * mN).divide(2 * mN + 1);
+    return Binomial.binomial(++mN, w()).shiftLeft(w()).add(2L * mN).divide(2L * mN + 1);
   }
 }
 

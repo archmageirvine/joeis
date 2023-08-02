@@ -21,9 +21,9 @@ public class A000724 extends Sequence1 {
     Z sum = Z.ZERO;
     final Z fn = mF.factorial(mN);
     for (int k = 0; k <= (mN - 1) / 2; ++k) {
-      sum = sum.add(fn.multiply(Z.ONE.shiftLeft(mN - 2 * k).subtract(1)).divide(mF.factorial(mN - 2 * k)).divide(mF.factorial(k)));
+      sum = sum.add(fn.multiply(Z.ONE.shiftLeft(mN - 2L * k).subtract(1)).divide(mF.factorial(mN - 2 * k)).divide(mF.factorial(k)));
     }
-    sum = sum.multiply(Z.ONE.shiftLeft(mN).subtract(1)).multiply(mF.factorial(1 << (mN - 1))).shiftLeft(1 << (mN - 1));
-    return sum.add(mF.factorial(1 << mN)).shiftRight(2 * mN).divide(mF.factorial(mN));
+    sum = sum.multiply(Z.ONE.shiftLeft(mN).subtract(1)).multiply(mF.factorial(1 << (mN - 1))).shiftLeft(1L << (mN - 1));
+    return sum.add(mF.factorial(1 << mN)).shiftRight(2L * mN).divide(mF.factorial(mN));
   }
 }

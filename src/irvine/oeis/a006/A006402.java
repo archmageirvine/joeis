@@ -37,7 +37,7 @@ public class A006402 extends A000139 {
       }
     }
     sum = sum.add(mB.get(n).multiply2()).divide(n);
-    sum = sum.add((n & 1) == 0 ? mB.get(n / 2).multiply(3 * n - 4).divide(4) : mB.get((n + 1) / 2).multiply(n + 1));
+    sum = sum.add((n & 1) == 0 ? mB.get(n / 2).multiply(3L * n - 4).divide(4) : mB.get((n + 1) / 2).multiply(n + 1));
     return sum.divide(4);
   }
 }

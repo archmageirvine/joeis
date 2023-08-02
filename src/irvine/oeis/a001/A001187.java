@@ -23,6 +23,6 @@ public class A001187 extends MemorySequence {
     if (mN > 0) {
       s = s.divide(mN);
     }
-    return s.add(Z.ONE.shiftLeft((mN - 1) * mN / 2));
+    return s.add(Z.ONE.shiftLeft((long) (mN - 1) * mN / 2));
   }
 }

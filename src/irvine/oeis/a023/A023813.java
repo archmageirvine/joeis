@@ -13,7 +13,7 @@ public class A023813 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Z.valueOf(++mN).pow(mN * (mN + 1) / 2);
+    return Z.valueOf(++mN).pow((long) mN * (mN + 1) / 2);
   }
 }
 

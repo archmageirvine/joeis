@@ -34,13 +34,13 @@ public class A028492 extends Sequence0 {
         for (int c = b + 1; c < lim; ++c) {
           final int cx = c % mN;
           final int cy = c / mN;
-          final long area2 = (bx - ax) * (cy - ay) - (cx - ax) * (by - ay);
+          final long area2 = (long) (bx - ax) * (cy - ay) - (long) (cx - ax) * (by - ay);
           if (area2 == 0) {
             continue;
           }
-          final long s0 = (bx - ax) * (bx - ax) + (by - ay) * (by - ay);
-          final long s1 = (cx - ax) * (cx - ax) + (cy - ay) * (cy - ay);
-          final long s2 = (bx - cx) * (bx - cx) + (by - cy) * (by - cy);
+          final long s0 = (long) (bx - ax) * (bx - ax) + (long) (by - ay) * (by - ay);
+          final long s1 = (long) (cx - ax) * (cx - ax) + (long) (cy - ay) * (cy - ay);
+          final long s2 = (long) (bx - cx) * (bx - cx) + (long) (by - cy) * (by - cy);
           final long gcd = LongUtils.gcd(s0, s1, s2);
           final ArrayList<Long> ss = new ArrayList<>(3);
           ss.add(s0 / gcd);

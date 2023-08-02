@@ -16,6 +16,6 @@ public class A281450 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Fibonacci.fibonacci(Binomial.binomial(2 * mN, mN).intValue());
+    return Fibonacci.fibonacci(Binomial.binomial(2L * mN, mN).intValue());
   }
 }

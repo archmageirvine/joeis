@@ -20,6 +20,6 @@ public class A093544 extends A000265 {
   @Override
   public Z next() {
     ++mN;
-    return new Q(Z.valueOf(4 * mN - 3), super.next()).num();
+    return new Q(Z.valueOf(4L * mN - 3), super.next()).num();
   }
 }

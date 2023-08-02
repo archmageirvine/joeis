@@ -30,10 +30,10 @@ public class A002431 extends AbstractSequence {
     if (++mN == 0) {
       return Z.ONE;
     }
-    mF = mF.multiply(2 * mN).multiply(2 * mN - 1);
+    mF = mF.multiply(2L * mN).multiply(2L * mN - 1);
     mB.nextQ();
     final Q b = mB.nextQ();
-    final Z s = Z.ONE.shiftLeft(2 * mN);
+    final Z s = Z.ONE.shiftLeft(2L * mN);
     final Q t = b.multiply(s).divide(mF);
     return select(t);
   }

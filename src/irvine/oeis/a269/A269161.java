@@ -14,6 +14,6 @@ public class A269161 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(4 * mN).xor(Z.valueOf(2 * mN).or(Z.valueOf(mN)));
+    return Z.valueOf(4L * mN).xor(Z.valueOf(2L * mN).or(Z.valueOf(mN)));
   }
 }

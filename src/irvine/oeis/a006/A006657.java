@@ -36,7 +36,7 @@ public class A006657 extends A005316 {
     public MeandersByComponents(final int remainingBridges, final Integer maxComponents) {
       super(remainingBridges);
       mRemainingBridges = remainingBridges;
-      mLimit = Z.ONE.shiftLeft(2 + (WORD_SHIFT * remainingBridges));
+      mLimit = Z.ONE.shiftLeft(2 + ((long) WORD_SHIFT * remainingBridges));
       mMaxComponents = remainingBridges == 0 || maxComponents == null ? null : maxComponents - 1;
     }
 

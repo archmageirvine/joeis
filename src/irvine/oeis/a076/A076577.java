@@ -21,6 +21,6 @@ public class A076577 extends MultiplicativeSequence {
    * @param k exponent
    */
   public A076577(final int offset, final int k) {
-    super(offset, (p, e) -> is2(p) ? Z.ONE.shiftLeft(k * e) : p.pow(k * e + k).subtract(1).divide(p.pow(k).subtract(1)));
+    super(offset, (p, e) -> is2(p) ? Z.ONE.shiftLeft((long) k * e) : p.pow((long) k * e + k).subtract(1).divide(p.pow(k).subtract(1)));
   }
 }

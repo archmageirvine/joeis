@@ -20,7 +20,7 @@ public class A043302 extends Sequence1 {
       ++mN;
       mM = 0;
     }
-    return mF.factorial(mN + mM).shiftLeft(mN - 2 * mM).divide(mF.factorial(mM)).divide(mF.factorial(mN - mM));
+    return mF.factorial(mN + mM).shiftLeft(mN - 2L * mM).divide(mF.factorial(mM)).divide(mF.factorial(mN - mM));
   }
 }
 

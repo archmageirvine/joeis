@@ -23,7 +23,7 @@ public class A034917 extends Sequence1 {
     final Z[][] m = new Z[mN][mN];
     final Matrix<Z> mat = new SmallDenseMatrix<>(m, Z.ZERO); // does not copy m
     final MatrixRing<Z> ring = new MatrixRing<>(mN, Integers.SINGLETON);
-    final long limit = Z.THREE.pow(2 * mN - 1).longValueExact();
+    final long limit = Z.THREE.pow(2L * mN - 1).longValueExact();
     for (long u = 0; u < limit; ++u) {
       long t = u;
       for (int k = 0; k < 2 * mN - 1; ++k) {

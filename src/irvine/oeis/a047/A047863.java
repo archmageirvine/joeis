@@ -30,7 +30,7 @@ public class A047863 extends AbstractSequence {
     ++mN;
     Z s = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      s = s.add(Binomial.binomial(mN, k).shiftLeft(k * (mN - k)));
+      s = s.add(Binomial.binomial(mN, k).shiftLeft((long) k * (mN - k)));
     }
     return s;
   }

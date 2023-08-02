@@ -11,6 +11,6 @@ public class A062380 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A062380() {
-    super(1, (p, e) -> (p.pow(e + 1).multiply(2 * e + 1).subtract(p.pow(e).multiply(2 * e + 3)).add(2)).divide(p.subtract(1)));
+    super(1, (p, e) -> (p.pow(e + 1).multiply(2L * e + 1).subtract(p.pow(e).multiply(2L * e + 3)).add(2)).divide(p.subtract(1)));
   }
 }

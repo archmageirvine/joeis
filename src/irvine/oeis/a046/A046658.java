@@ -17,7 +17,7 @@ public class A046658 extends Sequence1 {
     final Z b = Binomial.binomial(n, m - 1);
     return b.multiply(Binomial.binomial(2L * n, n))
       .divide(Binomial.binomial(2L * (m - 1), m - 1))
-      .subtract(b.multiply(m - 1).shiftLeft(2 * (n - m + 1)).divide(n))
+      .subtract(b.multiply(m - 1).shiftLeft(2L * (n - m + 1)).divide(n))
       .divide2();
   }
 

@@ -15,10 +15,10 @@ public class A028363 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mA = mA.multiply(Z.ONE.shiftLeft(4 * mN - 5).add(1))
-        .multiply(Z.ONE.shiftLeft(4 * mN - 4).add(1))
-        .multiply(Z.ONE.shiftLeft(4 * mN - 3).add(1))
-        .multiply(Z.ONE.shiftLeft(4 * mN - 2).add(1));
+      mA = mA.multiply(Z.ONE.shiftLeft(4L * mN - 5).add(1))
+        .multiply(Z.ONE.shiftLeft(4L * mN - 4).add(1))
+        .multiply(Z.ONE.shiftLeft(4L * mN - 3).add(1))
+        .multiply(Z.ONE.shiftLeft(4L * mN - 2).add(1));
     }
     return mA;
   }

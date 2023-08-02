@@ -110,7 +110,7 @@ public class A045310 extends Sequence0 {
     long u = 0;
     mSum[5] = Z.ZERO;
     do {
-      mSum[5] = mSum[5].add(mCache4[(int) (left ^ u)] * mCache4[(int) (right ^ u)]);
+      mSum[5] = mSum[5].add((long) mCache4[(int) (left ^ u)] * mCache4[(int) (right ^ u)]);
       u = (u - shared) & shared;
     } while (u != 0);
   }

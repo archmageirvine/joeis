@@ -40,7 +40,7 @@ public class A051050 extends Sequence0 {
   @Override
   public Z next() {
     if ((++mN & 1) == 1) {
-      final long n2 = (mN + 1) * (mN + 1);
+      final long n2 = (long) (mN + 1) * (mN + 1);
       return select(new Q(Binomial.binomial(mN + 1, (mN + 1) / 2).pow(mN + 1).multiply(mN + 2),
         Binomial.binomial(n2, n2 / 2).shiftLeft(mN)));
     } else {

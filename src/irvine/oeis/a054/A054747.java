@@ -21,19 +21,19 @@ public class A054747 extends Sequence1 {
     long s1 = 0;
     for (int t = 1; t < j.length; ++t) {
       if (r % t == 0) {
-        s1 += t * j[t];
+        s1 += (long) t * j[t];
       }
     }
-    final Z sA = Z.valueOf(s1).multiply2().pow(j[r] * l[1]);
+    final Z sA = Z.valueOf(s1).multiply2().pow((long) j[r] * l[1]);
     // s = 2
     long s2 = 0;
     final int lim = (r & 1) == 0 ? r : 2 * r; // lcm
     for (int t = 1; t < j.length; ++t) {
       if (lim % t == 0) {
-        s2 += t * j[t];
+        s2 += (long) t * j[t];
       }
     }
-    final Z sB = Z.valueOf(s2).multiply2().pow(j[r] * l[2] * IntegerUtils.gcd(r, 2));
+    final Z sB = Z.valueOf(s2).multiply2().pow((long) j[r] * l[2] * IntegerUtils.gcd(r, 2));
     return sA.multiply(sB);
   }
 

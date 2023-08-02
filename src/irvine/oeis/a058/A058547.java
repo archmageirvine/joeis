@@ -17,7 +17,7 @@ public class A058547 extends Sequence0 {
     if (n == 0 || m == 0) {
       return Z.ZERO;
     }
-    final Z t = Z.ONE.shiftLeft(n * m);
+    final Z t = Z.ONE.shiftLeft((long) n * m);
     Q sum = Q.ZERO;
     for (int k = 2; k <= m; ++k) {
       sum = sum.add(Q.ONE.subtract(new Q(Z.ONE.shiftLeft(k)).reciprocal()).pow(n));

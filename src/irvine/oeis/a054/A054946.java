@@ -21,9 +21,9 @@ public class A054946 extends MemorySequence {
     if (n == 1) {
       return Z.ONE;
     }
-    Z sum = Z.ONE.shiftLeft(n * (n - 1) / 2);
+    Z sum = Z.ONE.shiftLeft((long) n * (n - 1) / 2);
     for (int k = 1; k < n; ++k) {
-      sum = sum.subtract(Binomial.binomial(n, k).multiply(a(k)).shiftLeft((n - k) * (n - k - 1) / 2));
+      sum = sum.subtract(Binomial.binomial(n, k).multiply(a(k)).shiftLeft((long) (n - k) * (n - k - 1) / 2));
     }
     return sum;
   }

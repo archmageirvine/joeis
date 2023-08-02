@@ -20,8 +20,8 @@ public class A273169 extends RationalTriangle {
   @Override
   public Q compute(final int n, final int k) {
     return n == 0 ? Q.ONE : (k == 0
-      ? new Q(Binomial.binomial(2L * n, n), Z.ONE.shiftLeft(2 * n))
-      : new Q(Binomial.binomial(2L * n, n - k), Z.ONE.shiftLeft(2 * n).multiply(k))
+      ? new Q(Binomial.binomial(2L * n, n), Z.ONE.shiftLeft(2L * n))
+      : new Q(Binomial.binomial(2L * n, n - k), Z.ONE.shiftLeft(2L * n).multiply(k))
     );
   }
 }

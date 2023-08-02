@@ -29,6 +29,6 @@ public class A011788 extends Sequence1 {
         den = den.multiply(pp);
       }
     }
-    return num.multiply(Z.valueOf(mN).pow(mN * mN)).divide(den).divide(fs.phi());
+    return num.multiply(Z.valueOf(mN).pow((long) mN * mN)).divide(den).divide(fs.phi());
   }
 }

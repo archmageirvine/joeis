@@ -15,8 +15,8 @@ public class A034940 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN > 1) {
-      mF = mF.multiply(2 * mN - 1);
+      mF = mF.multiply(2L * mN - 1);
     }
-    return mF.multiply(Z.valueOf(2 * mN + 1).pow(mN));
+    return mF.multiply(Z.valueOf(2L * mN + 1).pow(mN));
   }
 }

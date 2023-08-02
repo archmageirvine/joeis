@@ -25,12 +25,12 @@ public class A005333 extends MemoryFunction2Sequence<Integer, Z> {
     if (m > n) {
       return get(m, n);
     }
-    Z sum = Z.ONE.shiftLeft(n * m);
+    Z sum = Z.ONE.shiftLeft((long) n * m);
     for (int a = 1; a <= n; ++a) {
       final Z ba = Binomial.binomial(n - 1, a - 1);
       for (int b = 0; b <= m; ++b) {
         if (a < n || b < m) {
-          sum = sum.subtract(ba.multiply(Binomial.binomial(m, b)).multiply(get(a, b)).shiftLeft((n - a) * (m - b)));
+          sum = sum.subtract(ba.multiply(Binomial.binomial(m, b)).multiply(get(a, b)).shiftLeft((long) (n - a) * (m - b)));
         }
       }
     }

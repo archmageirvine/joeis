@@ -17,7 +17,7 @@ public class A050922 extends Sequence0 {
   @Override
   public Z next() {
     if (++mM >= mA.length) {
-      mA = Jaguar.factor(Z.ONE.shiftLeft(1 << ++mN).add(1)).toZArray();
+      mA = Jaguar.factor(Z.ONE.shiftLeft(1L << ++mN).add(1)).toZArray();
       mM = 0;
     }
     return mA[mM];

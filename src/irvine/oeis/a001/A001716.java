@@ -23,7 +23,7 @@ public class A001716 extends Sequence0 {
     Z s = Z.ZERO;
     final long o = offset();
     for (int k = 0; k <= mN; ++k) {
-      final Z t = Binomial.binomial(k + o, o).multiply(Stirling.firstKind(mN + o, k + o)).shiftLeft(2 * k);
+      final Z t = Binomial.binomial(k + o, o).multiply(Stirling.firstKind(mN + o, k + o)).shiftLeft(2L * k);
       s = s.signedAdd(((mN + k) & 1) == 0, t);
     }
     return s;

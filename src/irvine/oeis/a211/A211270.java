@@ -16,6 +16,6 @@ public class A211270 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Jaguar.factor(mN << 1).sigma0().subtract(1).divide2();
+    return Jaguar.factor((long) mN << 1).sigma0().subtract(1).divide2();
   }
 }

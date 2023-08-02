@@ -23,6 +23,6 @@ public class A073675 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(((ZUtils.valuation(Z.valueOf(mN), Z.TWO) & 1) == 0) ? 2 * mN : mN / 2);
+    return Z.valueOf(((ZUtils.valuation(Z.valueOf(mN), Z.TWO) & 1) == 0) ? 2L * mN : mN / 2);
   }
 }

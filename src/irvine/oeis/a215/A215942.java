@@ -17,6 +17,6 @@ public class A215942 extends A144613 {
 
   @Override
   public Z next() {
-    return super.next().subtract(12 * mN);
+    return super.next().subtract(12L * mN);
   }
 }

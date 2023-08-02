@@ -30,6 +30,6 @@ public class A003053 extends Sequence1 {
         p = p.multiply(f.subtract(1));
       }
     }
-    return p.shiftLeft(m * m);
+    return p.shiftLeft((long) m * m);
   }
 }

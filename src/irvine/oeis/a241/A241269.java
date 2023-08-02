@@ -16,6 +16,6 @@ public class A241269 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return new Q(mN * mN + mN + 2, (mN + 1) * (mN + 2) * (mN + 3)).den();
+    return new Q((long) mN * mN + mN + 2, (long) (mN + 1) * (mN + 2) * (mN + 3)).den();
   }
 }

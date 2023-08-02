@@ -12,6 +12,6 @@ public class A100626 extends A060205 {
 
   /** Construct the sequence. */
   public A100626() {
-    super(p -> Z.ONE.shiftLeft(2 * p + 1));
+    super(p -> Z.ONE.shiftLeft(2L * p + 1));
   }
 }

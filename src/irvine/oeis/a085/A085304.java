@@ -26,7 +26,7 @@ public class A085304 extends Sequence0 {
     //long solved = 1;
     minCount.set(0, (byte) 1);
     for (int k = 1; k <= baseLimit; ++k) {
-      final long u = k * k;
+      final long u = (long) k * k;
       final long v = u * u;
       quarts[k - 1] = v;
       minCount.set(v, (byte) 1);

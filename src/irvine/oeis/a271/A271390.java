@@ -15,6 +15,6 @@ public class A271390 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(2 * mN + 1).pow(2 * ((mN - 1) / 2) + 1);
+    return Z.valueOf(2L * mN + 1).pow(2 * ((mN - 1) / 2) + 1);
   }
 }

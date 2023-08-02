@@ -25,7 +25,7 @@ public class A001137 extends MemorySequence {
     default:
       Z t = Z.ZERO;
       for (int m = (n + 3) / 4; m <= n / 2; ++m) {
-        t = t.add(Binomial.binomial(2 * m, n - 2 * m).multiply(a(m)));
+        t = t.add(Binomial.binomial(2L * m, n - 2L * m).multiply(a(m)));
       }
       return t;
     }

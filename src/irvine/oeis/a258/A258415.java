@@ -18,6 +18,6 @@ public class A258415 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return Z.TWO.add(Z.ONE.shiftLeft(n - 1).multiply(6 * k - 3 + 2 * (((n & 1) == 0) ? 1 : -1))).divide(3);
+    return Z.TWO.add(Z.ONE.shiftLeft(n - 1).multiply(6L * k - 3 + 2 * (((n & 1) == 0) ? 1 : -1))).divide(3);
   }
 }

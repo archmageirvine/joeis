@@ -15,6 +15,6 @@ public class A002697 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(mN).shiftLeft(2 * mN - 2);
+    return Z.valueOf(mN).shiftLeft(2L * mN - 2);
   }
 }

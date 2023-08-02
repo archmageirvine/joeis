@@ -18,6 +18,6 @@ public class A107972 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return Z.valueOf(k + 1).multiply(k + 2).multiply(n + 2).multiply(3 * n - 2 * k + 3).divide(12);
+    return Z.valueOf(k + 1).multiply(k + 2).multiply(n + 2).multiply(3L * n - 2L * k + 3).divide(12);
   }
 }

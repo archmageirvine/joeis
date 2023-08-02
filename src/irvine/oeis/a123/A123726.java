@@ -12,6 +12,6 @@ public class A123726 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A123726() {
-    super(0, (p, e) -> p.equals(Z.TWO) ? Z.valueOf(e * e + 2 * e + 1) : Z.ONE);
+    super(0, (p, e) -> p.equals(Z.TWO) ? Z.valueOf((long) e * e + 2L * e + 1) : Z.ONE);
   }
 }

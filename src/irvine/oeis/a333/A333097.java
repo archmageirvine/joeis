@@ -26,7 +26,7 @@ public class A333097 extends HypergeometricSequence {
       super.next();
       return Z.ONE;
     } else {
-      return super.nextQ().multiply(Binomial.binomial(7 * mN - 1, mN)).multiply(new Q(5, 6)).num();
+      return super.nextQ().multiply(Binomial.binomial(7L * mN - 1, mN)).multiply(new Q(5, 6)).num();
     }
   }
 }

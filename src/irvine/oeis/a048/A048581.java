@@ -22,7 +22,7 @@ public class A048581 extends Sequence0 {
       .subtract(new Q(2, 8L * mN + 4))
       .subtract(new Q(1, 8L * mN + 5))
       .subtract(new Q(1, 8L * mN + 6))
-      .divide(Z.ONE.shiftLeft(4 * mN))
+      .divide(Z.ONE.shiftLeft(4L * mN))
     );
   }
 }

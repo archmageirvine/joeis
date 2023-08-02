@@ -21,6 +21,6 @@ public class A079103 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Binomial.catalan(mN).pow(2 * mN - 2);
+    return Binomial.catalan(mN).pow(2L * mN - 2);
   }
 }

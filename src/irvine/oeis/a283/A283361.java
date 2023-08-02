@@ -20,6 +20,6 @@ public class A283361 extends Sequence0 {
     for (int k = 2; k <= lim; ++k) {
       prod = prod.multiply(k);
     }
-    return prod.modPow(Z.TWO, Z.valueOf(2 * mN - 1));
+    return prod.modPow(Z.TWO, Z.valueOf(2L * mN - 1));
   }
 }

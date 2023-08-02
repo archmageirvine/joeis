@@ -18,6 +18,6 @@ public class A042971 extends Sequence1 {
     if ((++mN & 1) == 0) {
       s = s.add(Binomial.binomial(mN - 1, mN / 2 - 1));
     }
-    return Binomial.binomial(2 * mN, mN).divide2().subtract(s).divide2();
+    return Binomial.binomial(2L * mN, mN).divide2().subtract(s).divide2();
   }
 }

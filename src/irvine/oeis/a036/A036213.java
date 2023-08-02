@@ -16,7 +16,7 @@ public class A036213 extends Sequence0 {
     if (++mN == 0) {
       return Z.ONE;
     }
-    return Z.ONE.shiftLeft(2 * mN * mN + 2 * mN).subtract(1).divide(Z.ONE.shiftLeft(2 * mN).subtract(1));
+    return Z.ONE.shiftLeft(2L * mN * mN + 2L * mN).subtract(1).divide(Z.ONE.shiftLeft(2L * mN).subtract(1));
   }
 }
 

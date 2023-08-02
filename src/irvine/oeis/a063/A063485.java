@@ -17,7 +17,7 @@ public class A063485 extends Sequence0 {
       if (++mN >= 32) {
         throw new UnsupportedOperationException();
       }
-      final Z t = Z.ONE.shiftLeft(1 << mN).add(3);
+      final Z t = Z.ONE.shiftLeft(1L << mN).add(3);
       if (!t.isProbablePrime()) {
         return t;
       }

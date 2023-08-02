@@ -21,7 +21,7 @@ public class A005194 extends Sequence1 {
       if ((mN & 1) == 1 && (k & 1) == 0) {
         continue;
       }
-      sum = sum.add(mF.factorial(k).multiply(Z.valueOf(k).pow((mN - 2 * k) / 2)));
+      sum = sum.add(mF.factorial(k).multiply(Z.valueOf(k).pow((mN - 2L * k) / 2)));
     }
     sum = sum.multiply2();
     if ((mN & 1) == 1) {

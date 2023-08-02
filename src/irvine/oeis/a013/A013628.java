@@ -23,6 +23,6 @@ public class A013628 extends Sequence0 {
     } else {
       mT = mT.multiply(5);
     }
-    return Binomial.binomial(mN, mM).multiply(mT).shiftLeft(2 * (mN - mM));
+    return Binomial.binomial(mN, mM).multiply(mT).shiftLeft(2L * (mN - mM));
   }
 }

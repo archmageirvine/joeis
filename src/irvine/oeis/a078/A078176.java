@@ -22,6 +22,6 @@ public class A078176 extends Cellular1DAutomaton {
   @Override
   public Z next() {
     ++mN;
-    return super.nextStageD().xor(Z.ONE.shiftLeft(2 * mN + 1).subtract(1));
+    return super.nextStageD().xor(Z.ONE.shiftLeft(2L * mN + 1).subtract(1));
   }
 }

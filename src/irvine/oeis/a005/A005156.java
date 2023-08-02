@@ -15,10 +15,10 @@ public class A005156 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    Q p = new Q(-3).pow(mN * mN);
+    Q p = new Q(-3).pow((long) mN * mN);
     for (int i = 1; i <= 2 * mN + 1; ++i) {
       for (int j = 1; j <= mN; ++j) {
-        p = p.multiply(6 * j - 3 * i + 1).divide(2 * j - i + 2 * mN + 1);
+        p = p.multiply(6L * j - 3L * i + 1).divide(2L * j - i + 2L * mN + 1);
       }
     }
     return p.toZ();

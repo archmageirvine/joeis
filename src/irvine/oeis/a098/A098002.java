@@ -21,6 +21,6 @@ public class A098002 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf((Z.valueOf(d).isProbablePrime() && (d * d <= mN)) ? d * d : 0));
+    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf((Z.valueOf(d).isProbablePrime() && (d * d <= mN)) ? (long) d * d : 0));
   }
 }

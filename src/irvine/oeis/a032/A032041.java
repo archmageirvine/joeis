@@ -20,6 +20,6 @@ public class A032041 extends A032003 {
       return Z.ONE;
     }
     final Polynomial<Polynomial<Q>> v = RING.add(Y1, RING.serlaplace(product(mN)));
-    return Y_RING.eval(Y_RING.serlaplace(v.coeff(mN)), Q.ONE).add(2 * mN - 1).toZ().divide2();
+    return Y_RING.eval(Y_RING.serlaplace(v.coeff(mN)), Q.ONE).add(2L * mN - 1).toZ().divide2();
   }
 }

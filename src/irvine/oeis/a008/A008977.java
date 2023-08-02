@@ -15,7 +15,7 @@ public class A008977 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mF = mF.multiply(4 * mN).multiply(4 * mN - 1).multiply(4 * mN - 2).multiply(4 * mN - 3)
+      mF = mF.multiply(4L * mN).multiply(4L * mN - 1).multiply(4L * mN - 2).multiply(4L * mN - 3)
         .divide(Z.valueOf(mN).pow(4));
     }
     return mF;

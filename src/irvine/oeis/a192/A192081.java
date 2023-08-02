@@ -27,7 +27,7 @@ public class A192081 extends Sequence1 {
   public Z next() {
     ++mN;
     final Z result = mAn1;
-    mOddFact = mOddFact.multiply(2 * mN).multiply(2 * mN + 1);
+    mOddFact = mOddFact.multiply(2L * mN).multiply(2L * mN + 1);
     mAn1 = mAn1.multiply(mOddFact.square().divide(mN + 1));
     return result;
   }

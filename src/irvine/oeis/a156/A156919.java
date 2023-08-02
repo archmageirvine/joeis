@@ -32,6 +32,6 @@ public class A156919 extends Triangle {
     if (k == 0) {
       return Z.ONE.shiftLeft(n);
     }
-    return get(n - 1, k - 1).multiply(2 * (n - k) + 1).add(get(n - 1, k).multiply(2 * (k + 1)));
+    return get(n - 1, k - 1).multiply(2L * (n - k) + 1).add(get(n - 1, k).multiply(2L * (k + 1)));
   }
 }

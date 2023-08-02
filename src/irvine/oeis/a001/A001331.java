@@ -27,7 +27,7 @@ public class A001331 extends A001329 {
         final int g = IntegerUtils.gcd(r, s);
         final int l = IntegerUtils.lcm(r, s);
         for (int t = 1; t < j.length; ++t) {
-          prod = prod.multiply(innerSum(j, IntegerUtils.lcm(l, t)).pow(scale() * j[r] * j[s] * j[t] * IntegerUtils.gcd(g, t)));
+          prod = prod.multiply(innerSum(j, IntegerUtils.lcm(l, t)).pow((long) scale() * j[r] * j[s] * j[t] * IntegerUtils.gcd(g, t)));
         }
       }
     }

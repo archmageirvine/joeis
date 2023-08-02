@@ -21,6 +21,6 @@ public class A125287 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(Mobius.mobius(mN)).multiply(mN * (mN + 1) / 2);
+    return Z.valueOf(Mobius.mobius(mN)).multiply((long) mN * (mN + 1) / 2);
   }
 }

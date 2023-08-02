@@ -45,7 +45,7 @@ public class A046091 extends Sequence0 {
   public Z next() {
     ++mN;
     Z sum = Z.ZERO;
-    for (int v = (int) (1 + LongUtils.sqrt(1 + 8 * mN)) / 2; v <= mN + 1; ++v) {
+    for (int v = (int) (1 + LongUtils.sqrt(1 + 8L * mN)) / 2; v <= mN + 1; ++v) {
       final Sequence seq = new MySequence(v, mN);
       sum = sum.add(seq.next());
     }

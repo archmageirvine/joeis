@@ -18,9 +18,9 @@ public class A180966 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return mN == 0 ? Z.ONE : Z.ONE.shiftLeft(((mN - 1) * mN) / 2).multiply(Integers.SINGLETON.sum(0, mN / 2, k -> Binomial.binomial(mN - k, k)
+    return mN == 0 ? Z.ONE : Z.ONE.shiftLeft(((long) (mN - 1) * mN) / 2).multiply(Integers.SINGLETON.sum(0, mN / 2, k -> Binomial.binomial(mN - k, k)
       .multiply(Z.valueOf(-2).pow(k))
-      .multiply(Z.FOUR.pow(mN - 2 * k))
+      .multiply(Z.FOUR.pow(mN - 2L * k))
     ));
   }
 }

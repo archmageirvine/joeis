@@ -18,7 +18,7 @@ public class A018809 extends MemoryFunction2Sequence<Integer, Z> {
     for (int x = 1; k * x < n; ++x) {
       for (int y = 1; k * y < n; ++y) {
         if (IntegerUtils.gcd(x, y) == 1) {
-          sum = sum.add(Z.valueOf(n - k * x).multiply(n - k * y));
+          sum = sum.add(Z.valueOf(n - (long) k * x).multiply(n - (long) k * y));
         }
       }
     }

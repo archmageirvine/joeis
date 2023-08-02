@@ -19,7 +19,7 @@ public class A211791 extends Sequence1 {
     Z sum = Z.ZERO;
     for (int x = 1; x <= mN; ++x) {
       for (int y = 1; y <= mN; ++y) {
-        sum = sum.add(LongUtils.sqrt(x * x + y * y));
+        sum = sum.add(LongUtils.sqrt((long) x * x + (long) y * y));
       }
     }
     return sum;

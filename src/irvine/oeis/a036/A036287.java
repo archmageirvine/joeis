@@ -16,7 +16,7 @@ public class A036287 extends Sequence0 {
     if (++mN > 29) {
       throw new UnsupportedOperationException();
     }
-    return Z.ONE.shiftLeft(3 << mN).subtract(1);
+    return Z.ONE.shiftLeft(3L << mN).subtract(1);
   }
 }
 

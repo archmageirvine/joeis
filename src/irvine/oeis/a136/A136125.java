@@ -22,6 +22,6 @@ public class A136125 extends Triangle {
   protected Z compute(int n, int k) {
     ++n;
     ++k;
-    return k < n ? MemoryFactorial.SINGLETON.factorial(n).divide(k * (k + 1)) : (k == n ? MemoryFactorial.SINGLETON.factorial(n - 1) : Z.ZERO);
+    return k < n ? MemoryFactorial.SINGLETON.factorial(n).divide((long) k * (k + 1)) : (k == n ? MemoryFactorial.SINGLETON.factorial(n - 1) : Z.ZERO);
   }
 }

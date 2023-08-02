@@ -15,7 +15,7 @@ public class A000348 extends A000341 {
       for (int j = 1; j <= n; ++j) {
         final int i2 = 2 * i;
         final int j2 = 2 * j - 1;
-        if (mPrime.isPrime(i2 * i2 + j2 * j2)) {
+        if (mPrime.isPrime((long) i2 * i2 + (long) j2 * j2)) {
           matrix[k] = 1;
         }
         ++k;

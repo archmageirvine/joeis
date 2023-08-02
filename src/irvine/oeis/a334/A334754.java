@@ -18,8 +18,8 @@ public class A334754 extends A000796 {
   public Z next() {
     long syndrome = 0;
     int c = 0;
-    while ((syndrome & (1 << mNextDigit)) == 0) {
-      syndrome |= 1 << mNextDigit;
+    while ((syndrome & (1L << mNextDigit)) == 0) {
+      syndrome |= 1L << mNextDigit;
       ++c;
       mNextDigit = super.next().intValue();
     }

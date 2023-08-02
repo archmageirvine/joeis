@@ -18,6 +18,6 @@ public class A111636 extends Triangle {
 
   @Override
   protected Z compute(final int n, final int k) {
-    return n == 0 ? Z.ONE : Binomial.binomial(n, k).multiply(Z.ONE.shiftLeft(k * (n - k)));
+    return n == 0 ? Z.ONE : Binomial.binomial(n, k).multiply(Z.ONE.shiftLeft((long) k * (n - k)));
   }
 }

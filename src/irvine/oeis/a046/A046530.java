@@ -23,7 +23,7 @@ public class A046530 extends Sequence1 {
       Z sum = Z.ZERO;
       for (int j = 0; j <= (e - 1) / 3; ++j) {
         final long k = (Z.THREE.equals(p) && 3 * j < e - 1) || p.mod(3) == 1 ? 3 : 1;
-        sum = sum.add(p1.multiply(p.pow(e - 3 * j - 1)).divide(k));
+        sum = sum.add(p1.multiply(p.pow(e - 3L * j - 1)).divide(k));
       }
       prod = prod.multiply(sum.add(1));
     }

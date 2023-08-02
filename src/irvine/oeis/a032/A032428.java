@@ -36,13 +36,13 @@ public class A032428 extends MemoryFunctionInt3Sequence<Z> {
       return Z.ZERO;
     }
     if ((m & 1) == 0) {
-      return get(m - 1, i, j).multiply(2 * j + 1)
-        .add(get(m - 1, i + 1, j - 1).multiply(2 * i + 2))
-        .add(get(m - 1, i, j - 1).multiply(m - 2 * i - 2 * j + 1));
+      return get(m - 1, i, j).multiply(2L * j + 1)
+        .add(get(m - 1, i + 1, j - 1).multiply(2L * i + 2))
+        .add(get(m - 1, i, j - 1).multiply(m - 2L * i - 2L * j + 1));
     } else {
-      return get(m - 1, i, j).multiply(2 * i + 1)
-        .add(get(m - 1, i - 1, j + 1).multiply(2 * j + 2))
-        .add(get(m - 1, i - 1, j).multiply(m - 1 - 2 * i - 2 * j + 2));
+      return get(m - 1, i, j).multiply(2L * i + 1)
+        .add(get(m - 1, i - 1, j + 1).multiply(2L * j + 2))
+        .add(get(m - 1, i - 1, j).multiply(m - 1 - 2L * i - 2L * j + 2));
     }
   }
 

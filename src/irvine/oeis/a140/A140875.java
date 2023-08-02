@@ -19,7 +19,7 @@ public class A140875 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return (k + 2 > n) ? Z.ONE : Z.valueOf(IntegerUtils.gcd(n, k + 2)).subtract(2 * IntegerUtils.gcd(n, k + 1)).subtract(IntegerUtils.gcd(n, k));
+    return (k + 2 > n) ? Z.ONE : Z.valueOf(IntegerUtils.gcd(n, k + 2)).subtract(2L * IntegerUtils.gcd(n, k + 1)).subtract(IntegerUtils.gcd(n, k));
   }
 
   @Override

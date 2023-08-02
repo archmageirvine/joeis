@@ -14,10 +14,10 @@ public class A054247 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Z.ONE.shiftLeft(mN * mN).add(Z.ONE.shiftLeft((mN * mN + 7) / 4))
+    return Z.ONE.shiftLeft((long) mN * mN).add(Z.ONE.shiftLeft(((long) mN * mN + 7) / 4))
       .add((mN & 1) == 1
-        ? Z.ONE.shiftLeft((mN * mN + 1) / 2).add(Z.ONE.shiftLeft((mN * mN + mN + 4) / 2))
-        : Z.THREE.shiftLeft(mN * mN / 2).add(Z.ONE.shiftLeft((mN * mN + mN + 2) / 2)))
+        ? Z.ONE.shiftLeft(((long) mN * mN + 1) / 2).add(Z.ONE.shiftLeft(((long) mN * mN + mN + 4) / 2))
+        : Z.THREE.shiftLeft((long) mN * mN / 2).add(Z.ONE.shiftLeft(((long) mN * mN + mN + 2) / 2)))
       .divide(8);
   }
 }

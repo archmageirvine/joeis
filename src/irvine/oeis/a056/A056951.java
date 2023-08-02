@@ -24,7 +24,7 @@ public class A056951 extends Triangle {
     } else if (n == k) {
       return Z.valueOf(n - 1);
     } else {
-      return Z.valueOf(2 * k - n - (2 * k <= n + 1 ? 2 : 1));
+      return Z.valueOf(2L * k - n - (2 * k <= n + 1 ? 2 : 1));
     }
   }
 }

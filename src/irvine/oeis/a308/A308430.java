@@ -18,7 +18,7 @@ public class A308430 extends Sequence1 {
   public Z next() {
     mP = mPrime.nextPrime(mP);
     if (Z.FIVE.compareTo(mP) <= 0) {
-      mSum = mSum.add(mP.bitLength() - 2 * mP.bitCount() + 2);
+      mSum = mSum.add(mP.bitLength() - 2L * mP.bitCount() + 2);
     }
     return mSum;
   }

@@ -31,7 +31,7 @@ public class A101004 extends Sequence1 {
       for (int i = 0; i < j; ++i) {
         sumi = sumi.add(new Q(2, mN - i));
       }
-      sumj = sumj.add(sumi.multiply(Binomial.binomial(mN, j).square()).multiply(Binomial.binomial(2 * j, j)));
+      sumj = sumj.add(sumi.multiply(Binomial.binomial(mN, j).square()).multiply(Binomial.binomial(2L * j, j)));
     }
     return sumj.multiply(mFact).divide(4).num();
   }

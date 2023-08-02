@@ -19,7 +19,7 @@ public class A203426 extends Sequence1 {
     Q prod = Q.ONE;
     for (int k = 2; k <= mN; ++k) {
       for (int j = 1; j <= k - 1; ++j) {
-        prod = prod.multiply(new Q(1, 2 * k + 2).subtract(new Q(1, 2 * j + 2)));
+        prod = prod.multiply(new Q(1, 2L * k + 2).subtract(new Q(1, 2L * j + 2)));
       }
     }
     return prod.den().multiply(prod.signum());

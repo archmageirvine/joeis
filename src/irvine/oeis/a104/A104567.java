@@ -20,6 +20,6 @@ public class A104567 extends Triangle {
   protected Z compute(int n, int k) {
     ++n;
     ++k;
-    return Z.valueOf((k & 1) == 1 ? n - k + 1 : 2 * (n - k + 1));
+    return Z.valueOf((k & 1) == 1 ? n - k + 1 : 2L * (n - k + 1));
   }
 }

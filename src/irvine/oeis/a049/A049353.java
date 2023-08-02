@@ -14,6 +14,6 @@ public class A049353 extends A030526 {
 
   @Override
   public Z next() {
-    return super.next().multiply(mF.factorial(mN)).divide(mF.factorial(mM)).shiftRight(2 * (mN - mM));
+    return super.next().multiply(mF.factorial(mN)).divide(mF.factorial(mM)).shiftRight(2L * (mN - mM));
   }
 }

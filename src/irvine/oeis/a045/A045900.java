@@ -28,7 +28,7 @@ public class A045900 extends Sequence0 {
       .add(IntegerPartition.partitions(mN - 2).multiply(3))
       .subtract(IntegerPartition.partitions(mN - 1).multiply(3))
       .add(IntegerPartition.partitions(mN))
-      .add(Z.ONE.shiftLeft(2 * (mN - 3) + 1));
+      .add(Z.ONE.shiftLeft(2L * (mN - 3) + 1));
     mA = mB;
     mB = mC;
     mC = t;

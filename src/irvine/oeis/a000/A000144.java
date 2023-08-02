@@ -21,6 +21,6 @@ public class A000144 extends EulerTransform {
    * @param count number of squares to be summed
    */
   public A000144(final int offset, final int count) {
-    super(new PaddingSequence(new long[] {}, new long[] {2 * count, -3 * count, 2 * count, -count}), 1);
+    super(new PaddingSequence(new long[] {}, new long[] {2L * count, -3L * count, 2L * count, -count}), 1);
   }
 }

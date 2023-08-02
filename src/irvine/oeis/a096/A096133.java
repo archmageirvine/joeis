@@ -20,6 +20,6 @@ public class A096133 extends Triangle {
   protected Z compute(int n, int k) {
     ++n;
     ++k;
-    return Z.valueOf(n).pow(k).mod(Z.valueOf(n * k));
+    return Z.valueOf(n).pow(k).mod(Z.valueOf((long) n * k));
   }
 }

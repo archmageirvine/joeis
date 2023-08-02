@@ -22,7 +22,7 @@ public class A182484 extends Sequence1 {
     Q prod = Q.ONE;
     final int p = mSeq.a(mN - 1).intValue();
     for (int k = 1; k <= p - 1; ++k) {
-      prod = prod.multiply(new Q(k).pow(2 * k - p - 1));
+      prod = prod.multiply(new Q(k).pow(2L * k - p - 1));
     }
     return prod.toZ();
   }

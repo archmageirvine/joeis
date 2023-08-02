@@ -17,6 +17,6 @@ public class A007155 extends Sequence0 {
     if (++mN > 0) {
       mT *= 3;
     }
-    return Z.THREE.pow(mT - (1 << mN)).shiftLeft(1 << mN);
+    return Z.THREE.pow(mT - (1L << mN)).shiftLeft(1L << mN);
   }
 }

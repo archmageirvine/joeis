@@ -16,6 +16,6 @@ public class A214698 extends Sequence1 {
   public Z next() {
     ++mN;
     final Z n = Z.valueOf(mN);
-    return n.pow(mN).subtract(mN * mN).divide2();
+    return n.pow(mN).subtract((long) mN * mN).divide2();
   }
 }

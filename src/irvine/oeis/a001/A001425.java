@@ -35,14 +35,14 @@ public class A001425 extends Sequence0 {
   protected Z f(final int i, final int j, final int[] s) {
     if (i == j) {
       if ((i & 1) == 1) {
-        return sum(i, s).pow((i * s[i] * s[i] + s[i]) / 2);
+        return sum(i, s).pow(((long) i * s[i] * s[i] + s[i]) / 2);
       } else {
         final int k = i / 2;
-        return sum(i, s).pow(k * s[i] * s[i]).multiply(sum(k, s).pow(s[i]));
+        return sum(i, s).pow((long) k * s[i] * s[i]).multiply(sum(k, s).pow(s[i]));
       }
     } else {
       final int lcm = IntegerUtils.lcm(i, j);
-      return sum(lcm, s).pow(IntegerUtils.gcd(i, j) * s[i] * s[j]);
+      return sum(lcm, s).pow((long) IntegerUtils.gcd(i, j) * s[i] * s[j]);
     }
   }
 

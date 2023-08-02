@@ -21,6 +21,6 @@ public class A336061 extends HypergeometricSequence {
   @Override
   public Z next() {
     ++mN;
-    return super.nextQ().multiply(Z.FOUR.pow(mN)).divide(MemoryFactorial.SINGLETON.factorial(2 * mN)).divide((2 * mN + 1) * (2 * mN + 1)).divide(2 * mN - 1).num();
+    return super.nextQ().multiply(Z.FOUR.pow(mN)).divide(MemoryFactorial.SINGLETON.factorial(2 * mN)).divide((2L * mN + 1) * (2L * mN + 1)).divide(2L * mN - 1).num();
   }
 }

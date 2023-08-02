@@ -18,7 +18,7 @@ public class A002018 extends A000681 {
       return Z.ONE;
     }
     final Z t = super.next();
-    final Z r = t.multiply(2 * mN - 1).subtract(mPrev.multiply(mN - 1).multiply(mN - 1));
+    final Z r = t.multiply(2L * mN - 1).subtract(mPrev.multiply(mN - 1).multiply(mN - 1));
     mPrev = t;
     return r.multiply(mN);
   }

@@ -10,7 +10,7 @@ public class A000318 extends A000182 {
 
   @Override
   public Z next() {
-    return super.next().shiftLeft(4 * mN - 2);
+    return super.next().shiftLeft(4L * mN - 2);
   }
 }
 

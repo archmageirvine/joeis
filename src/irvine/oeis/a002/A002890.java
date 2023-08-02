@@ -51,7 +51,7 @@ public class A002890 extends Sequence0 {
   private Q integrateCosEven(final int halfPower) {
     while (halfPower >= mEvenCosIntegrals.size()) {
       final int n = mEvenCosIntegrals.size();
-      mEvenCosIntegrals.add(new Q(Binomial.binomial(2 * n, n), Z.ONE.shiftLeft(2 * n)));
+      mEvenCosIntegrals.add(new Q(Binomial.binomial(2L * n, n), Z.ONE.shiftLeft(2L * n)));
     }
     return mEvenCosIntegrals.get(halfPower);
   }

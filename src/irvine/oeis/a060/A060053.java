@@ -18,7 +18,7 @@ public class A060053 extends Sequence0 {
   private int mN = -1;
 
   private Q innerSum(final int n, final int m) {
-    final long top = m * (m - 1) / 2;
+    final long top = (long) m * (m - 1) / 2;
     Q sum = Q.ZERO;
     Q h = Q.ONE;
     for (int k = 0; k <= n; ++k, h = h.multiply(NEG_HALF)) {

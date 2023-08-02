@@ -15,7 +15,7 @@ public class A027637 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mA = mA.multiply(Z.ONE.shiftLeft(2 * mN).subtract(1));
+      mA = mA.multiply(Z.ONE.shiftLeft(2L * mN).subtract(1));
     }
     return mA;
   }

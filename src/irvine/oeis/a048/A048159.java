@@ -26,7 +26,7 @@ public class A048159 extends MemoryFunction2Sequence<Integer, Z> {
       return Z.ZERO;
     }
     return get(n - 1, m - 1).multiply(n + m - 3)
-      .add(get(n - 1, m).multiply(2 * n + 2 * m - 3))
+      .add(get(n - 1, m).multiply(2L * n + 2L * m - 3))
       .add(get(n - 1, m + 1).multiply(m + 1));
   }
 

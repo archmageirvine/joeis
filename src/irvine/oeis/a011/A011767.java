@@ -41,7 +41,7 @@ public class A011767 extends Sequence0 {
   public Z next() {
     mN += 2;
     if (mN >= 10) {
-      mRes = Math.max(mRes, 2 * mN + 10); // Lower bound in Bialostocki et al.
+      mRes = Math.max(mRes, 2L * mN + 10); // Lower bound in Bialostocki et al.
     }
     while (!isSolvable(mN, mRes)) {
       if (++mRes > 63) {

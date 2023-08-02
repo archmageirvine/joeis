@@ -17,7 +17,7 @@ public class A006523 extends Sequence1 {
   public Z next() {
     mN += 2;
     if (mN > 1) {
-      mF = mF.multiply(2 * mN - 1).multiply(2 * mN - 2).multiply(2 * mN - 3).multiply(2 * mN - 4);
+      mF = mF.multiply(2L * mN - 1).multiply(2L * mN - 2).multiply(2L * mN - 3).multiply(2L * mN - 4);
     }
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; ++k) {

@@ -17,7 +17,7 @@ public class A283616 extends Sequence1 {
     ++mN;
     Z prod = Z.ONE;
     for (int k = irvine.math.IntegerUtils.sqrt(2 * mN - 1) / 2 + 1; k >= 2; --k) {
-      prod = prod.multiply(Z.valueOf(2 * mN - 1).mod(Z.valueOf(2 * k - 1)));
+      prod = prod.multiply(Z.valueOf(2L * mN - 1).mod(Z.valueOf(2L * k - 1)));
     }
     return prod;
   }

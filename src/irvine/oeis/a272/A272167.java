@@ -17,7 +17,7 @@ public class A272167 extends Sequence1 {
     ++mN;
     Z prod = Z.ONE;
     for (int k = 2; k <= mN; ++k) {
-      prod = prod.multiply(Z.valueOf(k * k - k).pow(k));
+      prod = prod.multiply(Z.valueOf((long) k * k - k).pow(k));
     }
     return prod;
   }

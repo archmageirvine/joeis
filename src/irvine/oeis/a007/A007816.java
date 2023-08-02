@@ -17,8 +17,8 @@ public class A007816 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    mA = mA.multiply(4 * mN + 1).multiply(4 * mN).multiply(4 * mN - 1).multiply(4 * mN - 2);
-    mB = mB.multiply(3 * mN + 3).multiply(3 * mN + 2).multiply(3 * mN + 1);
+    mA = mA.multiply(4L * mN + 1).multiply(4L * mN).multiply(4L * mN - 1).multiply(4L * mN - 2);
+    mB = mB.multiply(3L * mN + 3).multiply(3L * mN + 2).multiply(3L * mN + 1);
     return Binomial.binomial(mN + 3, 2).multiply(mA).divide(mB);
   }
 }

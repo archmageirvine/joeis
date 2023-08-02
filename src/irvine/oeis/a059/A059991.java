@@ -16,6 +16,6 @@ public class A059991 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Z.ONE.shiftLeft(mN - (1 << LongUtils.valuation(mN, 2)));
+    return Z.ONE.shiftLeft(mN - (1L << LongUtils.valuation(mN, 2)));
   }
 }

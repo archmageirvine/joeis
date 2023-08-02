@@ -15,7 +15,7 @@ public class A006548 extends Sequence1 {
   @Override
   public Z next() {
     if (++mN > 1) {
-      mF = mF.multiply(2 * mN - 1).multiply(2 * mN - 2);
+      mF = mF.multiply(2L * mN - 1).multiply(2L * mN - 2);
     }
     return mF.multiply(mN / 2).multiply(4);
   }

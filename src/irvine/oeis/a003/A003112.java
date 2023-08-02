@@ -28,7 +28,7 @@ public class A003112 extends Sequence0 {
     final Matrix<C> schur = new DefaultMatrix<>(mN, mN, C.ZERO);
     for (int x = 0; x < mN; ++x) {
       for (int y = 0; y <= x; ++y) {
-        final C e = ComplexField.SINGLETON.pow(epsilon, (x * y) % mN);
+        final C e = ComplexField.SINGLETON.pow(epsilon, ((long) x * y) % mN);
         schur.set(x, y, e);
         if (x != y) {
           schur.set(y, x, e);

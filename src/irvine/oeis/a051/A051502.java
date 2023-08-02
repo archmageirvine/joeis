@@ -17,7 +17,7 @@ public class A051502 extends Sequence0 {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 0; k <= mN; ++k) {
-      sum = sum.signedAdd((k & 1) == 0, Binomial.gaussianBinomial(mN, k, 2).shiftLeft(k * (k - 1) / 2 + (1 << (mN - k))));
+      sum = sum.signedAdd((k & 1) == 0, Binomial.gaussianBinomial(mN, k, 2).shiftLeft((long) k * (k - 1) / 2 + (1L << (mN - k))));
     }
     return sum.divide(Z.ONE.shiftLeft(mN));
   }

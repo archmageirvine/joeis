@@ -12,6 +12,6 @@ public class A100627 extends A060205 {
 
   /** Construct the sequence. */
   public A100627() {
-    super(p -> Z.THREE.pow(2 * p + 1));
+    super(p -> Z.THREE.pow(2L * p + 1));
   }
 }

@@ -17,7 +17,7 @@ public class A006287 extends Sequence0 {
     Z sum = Z.ZERO;
     for (int k = 0; k < s.length(); ++k) {
       final int c = s.charAt(k) - '0';
-      sum = sum.add(c * c);
+      sum = sum.add((long) c * c);
     }
     return sum;
   }

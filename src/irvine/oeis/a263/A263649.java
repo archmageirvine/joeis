@@ -12,6 +12,6 @@ public class A263649 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A263649() {
-    super(1, (p, e) -> Z.valueOf(is2(p) ? neg1(e) : (is3(p) ? neg1(e) * (-2) : (isMod(24, p, 1, 7) ? e + 1 : (isMod(24, p, 5, 11) ? (e + 1) * neg1(e) : oneOr0(e))))));
+    super(1, (p, e) -> Z.valueOf(is2(p) ? neg1(e) : (is3(p) ? neg1(e) * (-2L) : (isMod(24, p, 1, 7) ? e + 1 : (isMod(24, p, 5, 11) ? (long) (e + 1) * neg1(e) : oneOr0(e))))));
   }
 }

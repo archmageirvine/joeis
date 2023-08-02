@@ -18,10 +18,10 @@ public class A002430 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    mF = mF.multiply(2 * mN).multiply(2 * mN - 1);
+    mF = mF.multiply(2L * mN).multiply(2L * mN - 1);
     mB.nextQ();
     final Q b = mB.nextQ();
-    final Z s = Z.ONE.shiftLeft(2 * mN);
+    final Z s = Z.ONE.shiftLeft(2L * mN);
     return b.multiply(s.multiply(s.subtract(1))).divide(mF).num().abs();
   }
 }

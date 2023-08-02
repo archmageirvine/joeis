@@ -35,7 +35,7 @@ public class A058876 extends MemoryFunction2Sequence<Integer, Z> {
     Z v = u;
     Z s = Z.ZERO;
     for (int j = 1; j <= p - k; ++j, v = v.multiply(u)) {
-      s = s.add(Binomial.binomial(p, k).multiply(get(p - k, j)).multiply(v).shiftLeft(k * (p - j - k)));
+      s = s.add(Binomial.binomial(p, k).multiply(get(p - k, j)).multiply(v).shiftLeft((long) k * (p - j - k)));
     }
     return s;
   }

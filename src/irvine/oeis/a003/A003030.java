@@ -39,9 +39,9 @@ public class A003030 extends AbstractSequence {
     if (res != null) {
       return res;
     }
-    Z s = Z.ONE.shiftLeft(n * (n + m - 1));
+    Z s = Z.ONE.shiftLeft((long) n * (n + m - 1));
     for (int k = 0; k < n; ++k) {
-      s = s.subtract(Binomial.binomial(n, k).multiply(lambda(m, k)).shiftLeft((n - k) * (n - 1)));
+      s = s.subtract(Binomial.binomial(n, k).multiply(lambda(m, k)).shiftLeft((long) (n - k) * (n - 1)));
     }
     mLambda.put(key, s);
     return s;

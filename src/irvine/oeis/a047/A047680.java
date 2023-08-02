@@ -18,6 +18,6 @@ public class A047680 extends Sequence1 {
     mB.nextQ();
     mB.nextQ();
     mB.nextQ();
-    return mB.nextQ().divide(++mN).num().multiply(Z.ONE.shiftLeft(2 * mN - 1).subtract(1)).shiftLeft(2 * mN - 2).negate();
+    return mB.nextQ().divide(++mN).num().multiply(Z.ONE.shiftLeft(2L * mN - 1).subtract(1)).shiftLeft(2L * mN - 2).negate();
   }
 }

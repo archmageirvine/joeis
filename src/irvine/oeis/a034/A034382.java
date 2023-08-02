@@ -32,14 +32,14 @@ public class A034382 extends Sequence1 {
         Z t = Z.ONE;
         for (int j = 1; j < k.length; ++j) {
           if (i != j) {
-            t = t.multiply(p.pow(Math.min(i, j) * k[j]));
+            t = t.multiply(p.pow((long) Math.min(i, j) * k[j]));
           }
         }
         t = t.pow(k[i]);
         for (int j = 0; j < k[i]; ++j) {
           t = t.multiply(p.pow(k[i]).subtract(p.pow(j)));
         }
-        t = t.multiply(p.pow((i - 1) * k[i] * k[i]));
+        t = t.multiply(p.pow((long) (i - 1) * k[i] * k[i]));
         prod = prod.multiply(t);
       }
     }

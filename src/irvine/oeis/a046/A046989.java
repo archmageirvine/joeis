@@ -24,10 +24,10 @@ public class A046989 extends Sequence0 {
     if (++mN == 0) {
       return select(Q.ZERO);
     }
-    mF = mF.multiply(2 * mN).multiply(2 * mN - 1);
+    mF = mF.multiply(2L * mN).multiply(2L * mN - 1);
     mB.nextQ();
     final Q b = mB.nextQ();
-    final Z s = Z.ONE.shiftLeft(2 * mN - 1);
+    final Z s = Z.ONE.shiftLeft(2L * mN - 1);
     final Q t = b.multiply(s).divide(mF).divide(mN);
     return select(t);
   }

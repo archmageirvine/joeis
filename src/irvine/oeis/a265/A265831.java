@@ -21,7 +21,7 @@ public class A265831 extends GeneralizedEulerTransform {
 
   @Override
   protected Z advanceG(final long k) {
-    return Z.valueOf(5 * mKh - 1);
+    return Z.valueOf(5L * mKh - 1);
   }
 
   @Override

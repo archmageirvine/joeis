@@ -13,6 +13,6 @@ public class A062370 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A062370() {
-    super(1, (p, e) -> Integers.SINGLETON.sum(1, e, k -> Jaguar.factor(p.pow(k)).sigma().multiply(2 * k + 1)).add(1));
+    super(1, (p, e) -> Integers.SINGLETON.sum(1, e, k -> Jaguar.factor(p.pow(k)).sigma().multiply(2L * k + 1)).add(1));
   }
 }

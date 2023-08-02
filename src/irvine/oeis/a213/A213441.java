@@ -17,7 +17,7 @@ public class A213441 extends Sequence1 {
     Z sum = Z.ZERO;
     ++mN;
     for (int k = 1; k < mN; ++k) {
-      sum = sum.add(Binomial.binomial(mN, k).shiftLeft(k * (mN - k)));
+      sum = sum.add(Binomial.binomial(mN, k).shiftLeft((long) k * (mN - k)));
     }
     return sum;
   }

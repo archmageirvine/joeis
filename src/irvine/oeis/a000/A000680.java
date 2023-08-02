@@ -17,7 +17,7 @@ public class A000680 extends Sequence0 {
     if (mF == null) {
       mF = Z.ONE;
     } else {
-      mF = mF.multiply(++mN * ++mN).divide2();
+      mF = mF.multiply((long) ++mN * ++mN).divide2();
     }
     return mF;
   }

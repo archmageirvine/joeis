@@ -21,7 +21,7 @@ public class A048521 extends Sequence1 {
     }
     final int l = mA.first().toString().length();
     final int m = mP.toString().length();
-    final int r = mP.add(9 * m).toString().length();
+    final int r = mP.add(9L * m).toString().length();
     return l >= r;
   }
 

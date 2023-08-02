@@ -19,7 +19,7 @@ public class A006495 extends MemorySequence {
     for (int k = 1; k <= n; ++k) {
       sum = sum.add(a(k - 1).multiply(a(n - k)));
     }
-    return a(n - 1).multiply(4 * n + 5).subtract(sum.multiply(8));
+    return a(n - 1).multiply(4L * n + 5).subtract(sum.multiply(8));
   }
 }
 

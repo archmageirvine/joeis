@@ -25,6 +25,6 @@ public class A000279 extends Sequence1 {
                 .divide(mF.factorial(k + 1))
                 .divide(mF.factorial(mN - 1 - k)));
     }
-    return s.multiply(3 * mN);
+    return s.multiply(3L * mN);
   }
 }

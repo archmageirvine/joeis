@@ -23,7 +23,7 @@ public class A274447 extends MemoryFunction2Sequence<Integer, Z> {
     if (k.equals(n)) {
       return Z.ZERO;
     }
-    return get(n - 1, k).multiply(k + 1).add(get(n - 1, k - 1).multiply(2 * n - k - 1));
+    return get(n - 1, k).multiply(k + 1).add(get(n - 1, k - 1).multiply(2L * n - k - 1));
   }
 
   @Override
@@ -36,7 +36,7 @@ public class A274447 extends MemoryFunction2Sequence<Integer, Z> {
       final Z t = get(mN - 1, k);
       s = s.signedAdd((k & 1) == 0, t);
     }
-    return new Q(s, mF.factorial(mN).shiftLeft(2 * mN - 1)).num();
+    return new Q(s, mF.factorial(mN).shiftLeft(2L * mN - 1)).num();
   }
 
 }

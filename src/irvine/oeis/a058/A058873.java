@@ -24,7 +24,7 @@ public class A058873 extends Sequence1 {
   @Override
   public Z next() {
     mF = mF.multiply(++mN);
-    final Z s = mF.shiftLeft(mN * (mN - 1) / 2);
+    final Z s = mF.shiftLeft((long) mN * (mN - 1) / 2);
     mE.add(new Q(Z.ONE, s));
     return RING.pow(mE, 3).coeff(mN).multiply(s).divide(6).toZ();
   }

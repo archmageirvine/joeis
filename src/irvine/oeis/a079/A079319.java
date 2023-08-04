@@ -4,7 +4,7 @@ package irvine.oeis.a079;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A079319 a(0) = 1; for n &gt; 1, a(n) = 4*a(n-1) - (2^n-1).
+ * A079319 a(0) = 1; for n &gt;= 1, a(n) = 4*a(n-1) - (2^n-1).
  * @author Georg Fischer
  */
 public class A079319 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a092.A092892;
 import irvine.oeis.triangle.ToeplitzTriangle;
 
 /**
- * A138895 A Collatz-related sequence array.
+ * A138895 Triangle read by rows: T(n,k) = A092892(n-k) for 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A138895 extends ToeplitzTriangle {

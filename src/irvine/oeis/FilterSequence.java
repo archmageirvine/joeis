@@ -11,16 +11,8 @@ import irvine.util.string.StringUtils;
  */
 public class FilterSequence extends AbstractSequence {
 
-  /** Odd terms. */
-  public static final Predicate<Z> ODD = Z::isOdd;
-  /** Even terms. */
-  public static final Predicate<Z> EVEN = Z::isEven;
-  /** Prime terms. */
-  public static final Predicate<Z> PRIME = Z::isProbablePrime;
   /** Non-prime terms. */
   public static final Predicate<Z> NONPRIME = k -> !k.isProbablePrime();
-  /** Zero terms. */
-  public static final Predicate<Z> ZERO = Z::isZero;
   /** Nonzero terms. */
   public static final Predicate<Z> NONZERO = k -> !k.isZero();
   /** Palindromic terms. */

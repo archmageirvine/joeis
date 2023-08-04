@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A182793 Number of n-colorings of the Triangle Graph of order 8.
+ * A182793 Number of n-colorings of the 8 X 8 X 8 triangular grid.
  * @author Georg Fischer
  */
 public class A182793 extends HolonomicRecurrence {

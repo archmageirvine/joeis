@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A182792 Number of n-colorings of the Triangle Graph of order 7.
+ * A182792 Number of n-colorings of the 7 X 7 X 7 triangular grid.
  * @author Georg Fischer
  */
 public class A182792 extends HolonomicRecurrence {

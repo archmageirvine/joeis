@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a029.A029776;
 
 /**
- * A064931 Numbers n such that the digits of n are also digits of n^3.
+ * A064931 Numbers m such that the digits of m are also digits of m^3.
  * @author Sean A. Irvine
  */
 public class A064931 extends A029776 {

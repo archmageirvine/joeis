@@ -1,5 +1,6 @@
 package irvine.oeis.a059;
 
+import irvine.math.z.Z;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a035.A035519;
 
@@ -11,6 +12,6 @@ public class A059755 extends FilterSequence {
 
   /** Construct the sequence. */
   public A059755() {
-    super(new A035519(), ODD);
+    super(new A035519(), Z::isOdd);
   }
 }

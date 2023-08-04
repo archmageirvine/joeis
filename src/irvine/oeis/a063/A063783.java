@@ -1,5 +1,6 @@
 package irvine.oeis.a063;
 
+import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a001.A001158;
 
@@ -11,6 +12,6 @@ public class A063783 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A063783() {
-    super(1, new A001158(), PRIME);
+    super(1, new A001158(), Z::isProbablePrime);
   }
 }

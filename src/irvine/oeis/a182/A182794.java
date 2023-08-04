@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A182794 Number of n-colorings of the Triangle Graph of order 9.
+ * A182794 Number of n-colorings of the 9 X 9 X 9 triangular grid.
  * @author Georg Fischer
  */
 public class A182794 extends HolonomicRecurrence {

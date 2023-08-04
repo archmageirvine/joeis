@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A182791 Number of n-colorings of the Triangle Graph of order 6.
+ * A182791 Number of n-colorings of the 6 X 6 X 6 triangular grid.
  * @author Georg Fischer
  */
 public class A182791 extends HolonomicRecurrence {

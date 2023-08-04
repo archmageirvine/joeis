@@ -6,7 +6,7 @@ import irvine.oeis.a054.A054525;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A363914 Triangle read by rows. Inverse matrix of the Moebius matrix A113704.
+ * A363914 The Moebius triangle read by rows. Inverse matrix of the divisibility triangle A113704.
  * @author Georg Fischer
  */
 public class A363914 extends PrependColumn {

@@ -6,7 +6,7 @@ import irvine.oeis.a063.A063524;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A217831 Triangle read by rows: label the entries T(0,0), T(1,0), T(0,1), T(2,0), T(1,1), T(0,2), T(3,0), ... Then T(n,k)=T(k,n), T(0,0)=0, T(1,0)=1, and for n&gt;1, T(n,0)=0 and T(n,in+j)=T(n-j,j) (i,j &gt;= 0, not both 0).
+ * A217831 Euclid's triangle read by rows. T(n, k) = 1 if k is prime to n, otherwise 0.
  * @author Georg Fischer
  */
 public class A217831 extends PrependColumn {

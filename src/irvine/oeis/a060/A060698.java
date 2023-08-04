@@ -17,6 +17,6 @@ public class A060698 extends FilterPositionSequence {
       public Z next() {
         return super.next().subtract(1);
       }
-    }, PRIME);
+    }, Z::isProbablePrime);
   }
 }

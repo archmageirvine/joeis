@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A185907 Weight array of A185908, by antidiagonals.
+ * A185907 Weight array of A185908, by descending antidiagonals.
  *
  * @author Georg Fischer
  */

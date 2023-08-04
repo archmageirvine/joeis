@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A182790 Number of n-colorings of the Triangle Graph of order 5.
+ * A182790 Number of n-colorings of the 5 X 5 X 5 triangular grid.
  * @author Georg Fischer
  */
 public class A182790 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a056;
 import irvine.oeis.a055.A055628;
 
 /**
- * A056215 Primes p whose period of reciprocal equals (p-1)/10.
+ * A056215 Primes p whose reciprocal has period (p-1)/10.
  * @author Georg Fischer
  */
 public class A056215 extends A055628 {

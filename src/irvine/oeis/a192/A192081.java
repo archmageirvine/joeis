@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A192081 Wronskian of sin(kx) and cos(kx), k=1,...,n.
+ * A192081 Wronskian of sin(k*x) and cos(k*x), k=1,...,n.
  * @author Georg Fischer
  */
 public class A192081 extends Sequence1 {

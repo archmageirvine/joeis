@@ -6,7 +6,7 @@ import irvine.oeis.a051.A051731;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A113704 Triangle read by rows. The indicator function for divisibility, the Moebius matrix.
+ * A113704 Triangle read by rows. The indicator function for divisibility.
  * @author Georg Fischer
  */
 public class A113704 extends PrependColumn {

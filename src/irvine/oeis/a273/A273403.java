@@ -5,7 +5,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A273403 Numbers n such that (10^n - 7^n)/3 is prime.
+ * A273403 Numbers k such that (10^k - 7^k)/3 is prime.
  * @author Georg Fischer
  */
 public class A273403 extends PrimePositionSubsequence {

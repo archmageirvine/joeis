@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A294781 Growth of the Lamplighter group: number of elements in the Lamplighter group Z \u2240 Z of length up to n with respect to the standard generating set {a,t}.
+ * A294781 Growth of the Lamplighter group: number of elements in the Lamplighter group Z wr Z of length up to n with respect to the standard generating set {a,t}.
  * @author Georg Fischer
  */
 public class A294781 extends LinearRecurrence {

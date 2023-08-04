@@ -40,7 +40,7 @@ public class PrimePositionSubsequence extends FilterPositionSequence {
    * @param start index of first term of the underlying sequence.
    */
   public PrimePositionSubsequence(final Sequence seq, final int start) {
-    super(start, seq, PRIME);
+    super(start, seq, Z::isProbablePrime);
   }
 
   /**

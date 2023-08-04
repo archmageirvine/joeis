@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064900 Semiprimes p1*p2 such that p2 mod p1 = 2.
+ * A064900 Semiprimes p1*p2 such that p2 &gt; p1 and p2 mod p1 = 2.
  * @author Sean A. Irvine
  */
 public class A064900 extends Sequence1 {

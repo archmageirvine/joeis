@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A153743 Number of elements in wreath product C_4 \u2240 S_n that alternate up/not-up with respect to a weak product ordering.
+ * A153743 Number of elements in wreath product C_4 wr S_n that alternate up/not-up with respect to a weak product ordering.
  * E.g.f.: (6 + 6*sin(x) + 18*x*cos(x) - 9*x^2*sin(x) - x^3*cos(x)) / (6*cos(x) - 18*x*sin(x) - 9*x^2*cos(x) + x^3*sin(x))
  * @author Georg Fischer
  */

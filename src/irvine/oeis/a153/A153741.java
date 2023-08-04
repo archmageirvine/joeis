@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A153741 Number of elements in wreath product C_2 \u2240 S_n that alternate up/not-up with respect to a weak product ordering.
+ * A153741 Number of elements in wreath product C_2 wr S_n that alternate up/not-up with respect to a weak product ordering.
  * E.g.f.: (1 + sin(x) + x*cos(x))/(cos(x) - x*sin(x))
  * @author Georg Fischer
  */

@@ -8,7 +8,7 @@ import jmason.poly.Polyiamond;
 import jmason.poly.PolyiamondCounter;
 
 /**
- * A030223 Triangular polyominoes (n-iamonds) with bilateral symmetry (holes are allowed).
+ * A030223 Number of achiral triangular n-ominoes (n-iamonds) (holes are allowed).
  * @author Sean A. Irvine
  */
 public class A030223 extends Sequence1 {

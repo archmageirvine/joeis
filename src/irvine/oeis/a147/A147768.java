@@ -6,7 +6,7 @@ import irvine.oeis.a053.A053445;
 import irvine.oeis.triangle.ToeplitzTriangle;
 
 /**
- * A147768 A000012^(-2) * A027293.
+ * A147768 Triangle read by rows: A000012^(-2) * A027293 as infinite lower triangular matrices.
  * @author Georg Fischer
  */
 public class A147768 extends ToeplitzTriangle {

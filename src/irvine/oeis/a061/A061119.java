@@ -1,5 +1,6 @@
 package irvine.oeis.a061;
 
+import irvine.math.z.Z;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001580;
 
@@ -11,6 +12,6 @@ public class A061119 extends FilterSequence {
 
   /** Construct the sequence. */
   public A061119() {
-    super(1, new A001580(), PRIME);
+    super(1, new A001580(), Z::isProbablePrime);
   }
 }

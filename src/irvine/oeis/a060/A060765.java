@@ -1,5 +1,6 @@
 package irvine.oeis.a060;
 
+import irvine.math.z.Z;
 import irvine.oeis.FilterPositionSequence;
 
 /**
@@ -10,6 +11,6 @@ public class A060765 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A060765() {
-    super(1, new A060763(), ZERO);
+    super(1, new A060763(), Z::isZero);
   }
 }

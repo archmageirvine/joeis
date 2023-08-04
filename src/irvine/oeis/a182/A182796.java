@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A182796 Number of n-colorings of the Triangle Graph of order 11.
+ * A182796 Number of n-colorings of the 11 X 11 X 11 triangular grid.
  * @author Georg Fischer
  */
 public class A182796 extends HolonomicRecurrence {

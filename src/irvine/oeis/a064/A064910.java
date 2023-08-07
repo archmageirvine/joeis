@@ -3,13 +3,13 @@ package irvine.oeis.a064;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A064910 Smallest semiprime p1*p2 such that p2 &gt;= p1 and p2 mod p1 = n.
  * @author Sean A. Irvine
  */
-public class A064910 extends Sequence1 {
+public class A064910 extends Sequence0 {
 
   private long mN = -1;
 

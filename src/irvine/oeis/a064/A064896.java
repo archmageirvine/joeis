@@ -3,13 +3,13 @@ package irvine.oeis.a064;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A064896 Numbers of the form (2^{mr}-1)/(2^r-1) for positive integers m, r.
  * @author Sean A. Irvine
  */
-public class A064896 extends Sequence0 {
+public class A064896 extends Sequence1 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mNext = Z.SEVEN;

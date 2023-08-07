@@ -46,4 +46,19 @@ public final class FactorUtils {
     Arrays.sort(signature);
     return signatureToZ(signature);
   }
+
+  /**
+   * Concatenate the non-trivial divisors of the given number.
+   * @param n number to evaluate
+   * @return concatenation of non-trivial divisors
+   */
+  public static Z concatenateDivisors(final Z n) {
+    final StringBuilder sb = new StringBuilder();
+    for (final Z d : Jaguar.factor(n).divisorsSorted()) {
+      if (!d.equals(n) && !Z.ONE.equals(d)) {
+        sb.append(d);
+      }
+    }
+    return new Z(sb);
+  }
 }

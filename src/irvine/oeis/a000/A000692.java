@@ -2,6 +2,7 @@ package irvine.oeis.a000;
 
 import java.io.IOException;
 import java.math.BigInteger;
+import java.util.Objects;
 import java.util.zip.GZIPInputStream;
 
 import org.apfloat.Apfloat;
@@ -24,7 +25,7 @@ public class A000692 extends Sequence0 {
   private static final String C1;
   static {
     try {
-      try (final GZIPInputStream is = new GZIPInputStream(A000690.class.getClassLoader().getResourceAsStream("irvine/oeis/a000/landau2.gz"))) {
+      try (final GZIPInputStream is = new GZIPInputStream(Objects.requireNonNull(A000690.class.getClassLoader().getResourceAsStream("irvine/oeis/a000/landau2.gz")))) {
         C1 = IOUtils.readAll(is);
       }
     } catch (final IOException e) {
@@ -69,9 +70,7 @@ public class A000692 extends Sequence0 {
       final Apfloat u = mC.divide(logx).add(new Apfloat(1));
       final Apfloat m = x.divide(ApfloatMath.sqrt(logx)).multiply(u);
 
-      // Compute at three points, if any value differs, then double the
-      // digits in the constant and recompute.
-
+      // Compute at three points, if any value differs, then double the digits in the constant and recompute.
       final BigInteger v = mB.multiply(m).add(mHalf).truncate().toBigInteger();
       final BigInteger vMin = mBMin.multiply(m).add(mHalf).truncate().toBigInteger();
       final BigInteger vMax = mBMax.multiply(m).add(mHalf).truncate().toBigInteger();

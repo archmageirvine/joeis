@@ -2213,3 +2213,4 @@ A064794 Minimal representatives for the finite cycles in the permutation defined
 A064797 Largest integer m such that every permutation (p_1, ..., p_n) of (1, ..., n) satisfies lcm(p_i, p_{i+1}) >= m for some i, 1 <= i <= n, where p_{n+1} = p_1.
 A064941 Quartering a 2n X 2n chessboard (reference A257952) considering only the 90-deg rotationally symmetric results (omitting results with only 180-deg symmetry).
 A064984 Triangle of coefficients T[n,m] of polynomials n, n^2, (n+2n^3)/3, n^2(2+n^2)/3, n(3+10n^2+2n^4)/15, etc. after multiplication by the denominators (A049606).
+A065020 Coefficients of irreducible polynomials over GF(3) listed in lexicographic order.

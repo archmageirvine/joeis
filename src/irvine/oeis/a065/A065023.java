@@ -49,7 +49,7 @@ public class A065023 extends Sequence2 {
     }
     final int idx = mHash.size();
     mHash.put(cur, idx);
-    if (mVerbose && mHash.size() % 10000 == 0) {
+    if (mVerbose && mHash.size() % 100000 == 0) {
       StringUtils.message("collected " + mHash.size() + " states");
     }
     for (int i = 0; i < mN; ++i) {

@@ -5,7 +5,7 @@ import irvine.oeis.a066.A066633;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A141450 Upper right triangle of the number of m&apos;s in all partitions of n.
+ * A141450 Upper right triangle of the number of m's in all partitions of n.
  * @author Georg Fischer
  */
 public class A141450 extends Transpose {

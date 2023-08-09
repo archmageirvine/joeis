@@ -12,7 +12,7 @@ import irvine.oeis.Sequence2;
 import irvine.util.string.StringUtils;
 
 /**
- * A065023.
+ * A065023 Number of states in minimal automaton that recognizes biquanimous numbers in base n.
  * @author Sean A. Irvine
  */
 public class A065023 extends Sequence2 {

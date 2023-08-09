@@ -5,7 +5,7 @@ import irvine.oeis.a103.A103327;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A091042 Triangle of even numbered entries of odd numbered rows of Pascal&apos;s triangle A007318.
+ * A091042 Triangle of even numbered entries of odd numbered rows of Pascal's triangle A007318.
  * @author Georg Fischer
  */
 public class A091042 extends Transpose {

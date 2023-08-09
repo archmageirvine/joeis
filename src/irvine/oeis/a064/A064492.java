@@ -15,6 +15,10 @@ public class A064492 extends Sequence1 {
   private Z mR = Z.NEG_ONE;
   private Z mN = Z.ZERO;
 
+  protected Z select(final Z n, final Z r) {
+    return n;
+  }
+
   @Override
   public Z next() {
     while (true) {
@@ -23,7 +27,7 @@ public class A064492 extends Sequence1 {
       final Z old = mR;
       mR = mRecaman.next().mod(mN);
       if (old.multiply(mN).compareTo(mR.multiply(t)) < 0) {
-        return mN;
+        return select(mN, mR);
       }
     }
   }

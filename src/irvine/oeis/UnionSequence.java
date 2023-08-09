@@ -61,6 +61,9 @@ public class UnionSequence extends AbstractSequence {
   public Z next() {
     final Z t;
     if (mNextA == null) {
+      if (mNextB == null) {
+        return null;
+      }
       t = mNextB;
       mNextB = update(t, mSeqB);
     } else if (mNextB == null) {

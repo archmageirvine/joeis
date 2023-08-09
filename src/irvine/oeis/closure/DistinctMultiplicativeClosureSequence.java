@@ -62,28 +62,37 @@ public class DistinctMultiplicativeClosureSequence extends AbstractSequence {
     this(DEFOFF, seq, initial);
   }
 
-  protected DistinctMultiplicativeClosureSequence(final Sequence seq) {
+  /**
+   * Construct a new distinct values multiplicative closure sequence.
+   * @param seq underlying sequence
+   */
+  public DistinctMultiplicativeClosureSequence(final Sequence seq) {
     this(DEFOFF, seq, Z.ONE);
   }
 
   protected Z op(final Z a, final Z b) {
-    return a.multiply(b);
+    return b == null ? null : a.multiply(b);
   }
 
   protected Z invOp(final Z a, final Z b) {
-    return a.divide(b);
+    return b == null ? null : a.divide(b);
   }
 
   @Override
   public Z next() {
     while (true) {
       final State state = mA.pollFirst();
+      if (state == null) {
+        return null; // sequence was finite
+      }
       final Z n = state.mN;
       final int index = state.mIndex;
       final Z t = op(n, mSeq.a(index + 1));
-      mA.add(new State(t, index + 1));
-      if (index >= 0) {
-        mA.add(new State(invOp(t, mSeq.a(index)), index + 1));
+      if (t != null) {
+        mA.add(new State(t, index + 1));
+        if (index >= 0) {
+          mA.add(new State(invOp(t, mSeq.a(index)), index + 1));
+        }
       }
       if (!n.equals(mPrev)) {
         mPrev = n;

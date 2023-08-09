@@ -30,11 +30,11 @@ public class DistinctAdditiveClosureSequence extends DistinctMultiplicativeClosu
 
   @Override
   protected Z op(final Z a, final Z b) {
-    return a.add(b);
+    return b == null ? null : a.add(b);
   }
 
   @Override
   protected Z invOp(final Z a, final Z b) {
-    return a.subtract(b);
+    return b == null ? null : a.subtract(b);
   }
 }

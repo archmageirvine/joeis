@@ -5,7 +5,7 @@ import irvine.oeis.a104.A104732;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A210489 Array read by ascending antidiagonals where row n contains the second partial sums of row n of Pascal&apos;s triangle.
+ * A210489 Array read by ascending antidiagonals where row n contains the second partial sums of row n of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A210489 extends Transpose {

@@ -19,9 +19,8 @@ public class A337241 extends Sequence1 {
     final Z n = Z.valueOf(mN);
     while (true) {
       ++k;
-      final int counts[] = ZUtils.digitCounts(n.multiply(k), 10);
-      for (int i = 0; i < 10; ++i) {
-        if (counts[i] >= 2) {
+      for (final int c : ZUtils.digitCounts(n.multiply(k), 10)) {
+        if (c >= 2) {
           return Z.valueOf(k);
         }
       }

@@ -20,9 +20,8 @@ public class A355873 extends Sequence1 {
     while (true) {
       ++k;
       n = n.multiply(mN); // mN^k
-      final int counts[] = ZUtils.digitCounts(n, 10);
-      for (int i = 0; i < 10; ++i) {
-        if (counts[i] >= 2) {
+      for (final int c : ZUtils.digitCounts(n, 10)) {
+        if (c >= 2) {
           return Z.valueOf(k);
         }
       }

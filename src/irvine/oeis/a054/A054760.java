@@ -19,7 +19,7 @@ public class A054760 extends A198300 implements GraphProcessor {
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
 
   /** Construct the sequence. */
-  protected A054760() {
+  public A054760() {
     super(0);
   }
 

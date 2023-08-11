@@ -2,13 +2,13 @@ package irvine.oeis.a355;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence2;
 
 /**
  * A355873 a(n) is the smallest positive exponent k such that the decimal expansion of n^k has at least one digit that occurs more than once.
  * @author Georg Fischer
  */
-public class A355873 extends Sequence1 {
+public class A355873 extends Sequence2 {
 
   private long mN = 1L;
 

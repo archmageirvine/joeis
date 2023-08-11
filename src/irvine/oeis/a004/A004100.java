@@ -21,7 +21,7 @@ public class A004100 extends A001832 {
     mB.add(null);
   }
 
-  private final MemoryFunction2<Integer, Z> mG = new MemoryFunction2<Integer, Z>() {
+  private final MemoryFunction2<Integer, Z> mG = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Integer p, final Integer j) {
       if (j == 1) {
@@ -35,7 +35,7 @@ public class A004100 extends A001832 {
     }
   };
 
-  private final MemoryFunction1<Z> mH = new MemoryFunction1<Z>() {
+  private final MemoryFunction1<Z> mH = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int p) {
       if (p == 0) {

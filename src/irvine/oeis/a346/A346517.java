@@ -41,7 +41,7 @@ public class A346517 extends UpperLeftTriangle {
         end:
     seq(seq(A(n, d-n), n=0..d), d=0..10);
   */
-  private MemoryFunction2<Integer, Z> mProcA = new MemoryFunction2<Integer, Z>() {
+  private MemoryFunction2<Integer, Z> mProcA = new MemoryFunction2<>() {
     @Override
     public Z compute(final Integer n, final Integer k) {
       if (n < k) {

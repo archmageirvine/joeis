@@ -30,7 +30,7 @@ public class A158138 extends Sequence1 {
   /* A008284 Number of partitons of n into exactly k parts
     part(n,k) = part(n-1,k-1) + part(n-k,k)
   */
-  private final MemoryFunctionInt2<Z> mPartEq = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mPartEq = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int k) {
       if (n == 0 && k == 0) {
@@ -48,7 +48,7 @@ public class A158138 extends Sequence1 {
           `if`(n=0 or k=1, 1, T(n, k-1) + `if`(k>n, 0, T(n-k, k)))
         end:
   */
-  private final MemoryFunctionInt2<Z> mPartLe = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mPartLe = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int k) {
       if (n == 0 || k == 1) {

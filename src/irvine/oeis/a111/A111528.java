@@ -20,7 +20,7 @@ public class A111528 extends UpperLeftTriangle {
   /* T(n, 0) = 1, T(0, k) = k!, otherwise for n>=1 and k>=1:
      T(n, k) = (T(n-1, k+1) - T(n-1, k))/n - Sum_{j=1..k-1} T(n, j)*T(n-1, k-j).
   */
-  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int k) {
       if (k <= 1) {

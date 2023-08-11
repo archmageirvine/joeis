@@ -36,7 +36,7 @@ public class A346520 extends UpperLeftTriangle {
     A:= (n, k)-> add(S(k, j)*b(n, j), j=0..k):
     seq(seq(A(n, d-n), n=0..d), d=0..12);
   */
-  private final MemoryFunction2<Integer, Z> mB = new MemoryFunction2<Integer, Z>() {
+  private final MemoryFunction2<Integer, Z> mB = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Integer n, final Integer i) {
       if (n == 0) {

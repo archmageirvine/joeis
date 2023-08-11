@@ -27,7 +27,7 @@ public class A115593 extends Sequence0 {
     return ((n & 1) == 0) ? Q.ZERO : mA.get(r);
   }
 
-  private final MemoryFunction1<Q> mA = new MemoryFunction1<Q>() {
+  private final MemoryFunction1<Q> mA = new MemoryFunction1<>() {
     @Override
     protected Q compute(final int n) {
       if (n == 0) {

@@ -35,7 +35,7 @@ A002060 := proc(n)
 end proc:
 seq(A002060(n), n=7..25) ;
   */
-  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int r, final int k) {
       Q a = new Q(k - 1);

@@ -48,6 +48,6 @@ public class A085244 extends AbstractSequence {
     ++mN;
     final Matrix<Z> mat = new DefaultMatrix<>(mN, mN, Z.ZERO);
     fillMatrix(mN, mat);
-    return new MatrixRing<Z>(mN, IntegerField.SINGLETON).permanent(mat);
+    return new MatrixRing<>(mN, IntegerField.SINGLETON).permanent(mat);
   }
 }

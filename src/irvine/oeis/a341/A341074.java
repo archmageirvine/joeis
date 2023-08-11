@@ -37,7 +37,7 @@ public class A341074 extends AbstractSequence {
     a:= n-> b(n$2, 5):
     seq(a(n), n=17..77);  # _Alois P. Heinz_, Feb 04 2021
   */
-  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<Z>() {
+  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int n, final int i, final int t) {
       if (n == 0) {

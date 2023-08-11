@@ -19,7 +19,7 @@ public class A027840 extends A060240 {
 
   private int mN = 0;
 
-  private final MemoryFunction2<Integer, Z> mBeta = new MemoryFunction2<Integer, Z>() {
+  private final MemoryFunction2<Integer, Z> mBeta = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Integer k, final Integer e) {
       if (k == 0) {

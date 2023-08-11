@@ -13,7 +13,7 @@ public class A036249 extends MemorySequence {
 
   // After Alois P. Heinz
 
-  private final MemoryFunction<Integer, Z> mB = new MemoryFunction<Integer, Z>() {
+  private final MemoryFunction<Integer, Z> mB = new MemoryFunction<>() {
     @Override
     protected Z compute(final Integer n) {
       if (n == 0) {

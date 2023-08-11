@@ -23,7 +23,7 @@ public class A024356 extends Sequence0 {
       return Z.ONE;
     }
     final MatrixRing<Z> m = new MatrixRing<>(mN, Integers.SINGLETON);
-    final Matrix<Z> mat = new DefaultMatrix<Z>(mN, mN, Z.ZERO);
+    final Matrix<Z> mat = new DefaultMatrix<>(mN, mN, Z.ZERO);
     for (long y = 0, p = 2; y < mN; ++y, p = mPrime.nextPrime(p)) {
       for (long x = 0, q = p; x < mN; ++x, q = mPrime.nextPrime(q)) {
         mat.set(x, y, Z.valueOf(q));

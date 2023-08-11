@@ -19,7 +19,7 @@ public class A107428 extends Sequence1 {
   */
   private int mN = 0;
 
-  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<Z>() {
+  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int n, final int i, final int t) {
       if (n == 0) {

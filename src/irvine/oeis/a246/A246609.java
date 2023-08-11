@@ -26,7 +26,7 @@ public class A246609 extends Triangle {
     T:= (n, k)->add(b(j, k$2)*n^(n-j)*binomial(n-1, j-1), j=0..n):
     seq(seq(T(n,k), k=0..n), n=0..10);
   */
-  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<Z>() {
+  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int n, final int i, final int k) {
       if (n == 0) {

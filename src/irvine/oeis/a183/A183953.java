@@ -42,7 +42,7 @@ public class A183953 extends UpperLeftTriangle {
     end proc:
     seq(seq( A183953(n, d-n), n=1..d-1), d=2..12) ; # R. J. Mathar, Mar 08 2021
   */
-  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<Z>() {
+  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int n, final int k, final int s) {
       if (s < 0) {

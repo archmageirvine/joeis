@@ -12,7 +12,7 @@ public class A062254 extends A062253 {
   private int mN = -1;
   private int mM = 0;
 
-  protected final MemoryFunctionInt2<Z> mC = new MemoryFunctionInt2<Z>() {
+  protected final MemoryFunctionInt2<Z> mC = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int m) {
       if (n == 0) {

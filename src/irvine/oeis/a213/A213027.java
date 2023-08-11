@@ -24,7 +24,7 @@ public class A213027 extends UpperLeftTriangle {
     1/n *add(binomial(3*n, j) *(n-j) *(k-1)^j, j=0..n-1))):
     seq(seq(A(n, d-n), n=0..d), d=0..12);  
   */
-  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int k) {
       if (n == 0) {

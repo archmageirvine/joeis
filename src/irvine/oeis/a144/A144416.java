@@ -38,7 +38,7 @@ public class A144416 extends Sequence0 {
     a:= n-> add(b(k, 7, n), k=0..7*n):
     seq(a(n), n=0..12);
   */
-  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<Z>() {
+  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int n, final int i, final int t) {
       if (t * i < n) {

@@ -22,7 +22,7 @@ public class A054260 extends Sequence1 {
   protected Z mBest = null;
   protected int mBestLength = Integer.MAX_VALUE;
 
-  private static final Comparator<String> COMPARATOR = new Comparator<String>() {
+  private static final Comparator<String> COMPARATOR = new Comparator<>() {
     @Override
     public int compare(final String a, final String b) {
       final int c = Integer.compare(b.length(), a.length());

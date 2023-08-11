@@ -29,7 +29,7 @@ public class A105599 extends Triangle {
         end:
     seq(seq(T(n, m), m=1..n), n=1..12);
   */
-  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int m) {
       if (n < 0) {

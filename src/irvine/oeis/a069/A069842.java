@@ -13,7 +13,7 @@ public class A069842 extends Sequence1 {
 
   private long mN = 0;
   private String mDigit;
-  private TreeSet<Z> mSet = new TreeSet<Z>();
+  private TreeSet<Z> mSet = new TreeSet<>();
 
   /** Construct the sequence. */
   public A069842() {

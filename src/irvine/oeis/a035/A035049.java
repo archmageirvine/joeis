@@ -18,7 +18,7 @@ public class A035049 extends MemorySequence {
     add(Z.ZERO); // a(0)=0 is not in OEIS
   }
 
-  private final MemoryFunction2<Integer, Z> mF = new MemoryFunction2<Integer, Z>() {
+  private final MemoryFunction2<Integer, Z> mF = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Integer n, final Integer m) {
       if (n == 0) {

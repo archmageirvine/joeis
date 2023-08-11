@@ -17,7 +17,7 @@ public class A051293 extends MemorySequence {
     next(); // skip 0
   }
 
-  private final MemoryFunction1<Z> mB = new MemoryFunction1<Z>() {
+  private final MemoryFunction1<Z> mB = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
       if (n < 1) {

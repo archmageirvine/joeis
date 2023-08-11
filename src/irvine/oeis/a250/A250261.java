@@ -24,7 +24,7 @@ public class A250261 extends UpperLeftTriangle {
     A:= (n, k)-> b(0, n, 0, `if`(k=0, n, k)):
     seq(seq(A(n, d-n), n=0..d), d=0..14);
   */
-  private final MemoryFunctionInt4<Z> mB = new MemoryFunctionInt4<Z>() {
+  private final MemoryFunctionInt4<Z> mB = new MemoryFunctionInt4<>() {
     @Override
     protected Z compute(final int u, final int o, final int t, final int k) {
       if (u + o == 0) {

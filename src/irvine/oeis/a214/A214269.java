@@ -29,7 +29,7 @@ public class A214269 extends Triangle {
     T:= (n, k)-> A(n, k) -`if`(k=0, 0, A(n, k-1)):
     seq(seq(T(n, k), k=0..n-1), n=1..14);
   */
-  private static final MemoryFunctionInt5<Z> B = new MemoryFunctionInt5<Z>() {
+  private static final MemoryFunctionInt5<Z> B = new MemoryFunctionInt5<>() {
     @Override
     protected Z compute(final int n, final int k, final int s, final int t, final int l) {
       if (n < 0) {
@@ -49,7 +49,7 @@ public class A214269 extends Triangle {
     }
   };
 
-  protected static final MemoryFunctionInt2<Z> A = new MemoryFunctionInt2<Z>() { // used in A214268
+  protected static final MemoryFunctionInt2<Z> A = new MemoryFunctionInt2<>() { // used in A214268
     @Override
     protected Z compute(final int n, final int k) {
       if (n == 0) {

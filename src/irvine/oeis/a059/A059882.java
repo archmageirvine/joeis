@@ -26,7 +26,7 @@ public class A059882 extends AbstractSequence {
   private long mN = 0;
   private long mM = 0;
 
-  protected MemoryFunction2<Long, Z> mT = new MemoryFunction2<Long, Z>() {
+  protected MemoryFunction2<Long, Z> mT = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Long n, final Long k) {
       if (n > k && k > 0) {
@@ -40,7 +40,7 @@ public class A059882 extends AbstractSequence {
     }
   };
 
-  protected MemoryFunction2<Long, Z> mS = new MemoryFunction2<Long, Z>() {
+  protected MemoryFunction2<Long, Z> mS = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Long n, final Long k) {
       if (n > k && k > 0) {

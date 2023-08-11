@@ -24,7 +24,7 @@ public class A255212 extends UpperLeftTriangle {
     A:= (n, k)-> b(n^2, n, k):
     seq(seq(A(n, d-n), n=0..d), d=0..15);
   */
-  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<Z>() {
+  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int n, final int i, final int t) {
       if (n == 0 || i == 1 && n <= t) {

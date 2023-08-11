@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 public class A016741 extends Sequence1 {
 
   // Player A to move
-  private final MemoryFunctionInt3<Boolean> mPlayerACache = new MemoryFunctionInt3<Boolean>() {
+  private final MemoryFunctionInt3<Boolean> mPlayerACache = new MemoryFunctionInt3<>() {
     // True if B has a winning strategy starting from this position
     @Override
     protected Boolean compute(final int n, final int prevA, final int prevB) {
@@ -32,7 +32,7 @@ public class A016741 extends Sequence1 {
   };
 
   // Player B to move
-  private final MemoryFunctionInt3<Boolean> mPlayerBCache = new MemoryFunctionInt3<Boolean>() {
+  private final MemoryFunctionInt3<Boolean> mPlayerBCache = new MemoryFunctionInt3<>() {
     // True if B has a winning strategy starting from this position
     @Override
     protected Boolean compute(final int n, final int prevA, final int prevB) {

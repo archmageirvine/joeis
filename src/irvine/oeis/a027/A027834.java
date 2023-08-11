@@ -13,7 +13,7 @@ public class A027834 extends Sequence1 {
 
   static final class SFunction extends MemoryFunction2<Integer, Z> {
     
-    private final MemoryFunction2<Integer, Z> mV = new MemoryFunction2<Integer, Z>() {
+    private final MemoryFunction2<Integer, Z> mV = new MemoryFunction2<>() {
       @Override
       protected Z compute(final Integer r, final Integer n) {
         if (n == 0) {

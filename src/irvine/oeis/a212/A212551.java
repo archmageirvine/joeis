@@ -24,7 +24,7 @@ public class A212551 extends BaseTriangle {
         add(b(n-2*m-k, min(n-2*m-k, m+k)), m=1..(n-k)/2)):
     seq(seq(T(n, k), k=0..n), n=0..14);
   */
-  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int i) {
       if (n == 0 || i == 1) {

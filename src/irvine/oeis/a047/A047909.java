@@ -15,7 +15,7 @@ public class A047909 extends Sequence1 {
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
   private int mM = 0;
-  private final MemoryFunctionInt5<Q> mB = new MemoryFunctionInt5<Q>() {
+  private final MemoryFunctionInt5<Q> mB = new MemoryFunctionInt5<>() {
     @Override
     protected Q compute(final int k, final int p, final int j, final int l, final int t) {
       if (k == 0) {

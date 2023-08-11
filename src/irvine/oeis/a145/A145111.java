@@ -21,7 +21,7 @@ public class A145111 extends UpperLeftTriangle {
     g:= proc(n,k) option remember; if n<0 then 0 else g(n-1,k) +f(n,k) fi end:
     A:= (n,k)-> `if`(n=0, g(0,k), A(n-1,k) +g(n-1,k)): seq(seq(A(n, d-n), n=0..d), d=0..14);
   */
-  private final MemoryFunction2<Integer, Z> mF = new MemoryFunction2<Integer, Z>() {
+  private final MemoryFunction2<Integer, Z> mF = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Integer n, final Integer k) {
       if (n == 0) {
@@ -38,7 +38,7 @@ public class A145111 extends UpperLeftTriangle {
     }
   };
 
-  private final MemoryFunction2<Integer, Z> mG = new MemoryFunction2<Integer, Z>() {
+  private final MemoryFunction2<Integer, Z> mG = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Integer n, final Integer k) {
       if (n < 0) {

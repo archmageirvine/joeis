@@ -14,7 +14,7 @@ public class A049414 extends A003030 {
 
   private int mN = 0;
 
-  private final MemoryFunctionInt3<Z> mLambda = new MemoryFunctionInt3<Z>() {
+  private final MemoryFunctionInt3<Z> mLambda = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int k, final int n, final int m) {
       if (m == 0) {

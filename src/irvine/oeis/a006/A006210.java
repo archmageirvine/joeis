@@ -18,7 +18,7 @@ public class A006210 extends Phi2TransformSequence {
 
     private final int mN;
     private int mM = 0;
-    private final MemoryFunctionInt4<Z> mB = new MemoryFunctionInt4<Z>() {
+    private final MemoryFunctionInt4<Z> mB = new MemoryFunctionInt4<>() {
       @Override
       protected Z compute(final int k, final int i, final int j, final int n) {
         assert Math.abs(j) <= n;

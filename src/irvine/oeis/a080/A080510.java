@@ -24,7 +24,7 @@ public class A080510 extends Triangle {
     T:= (n, k)-> b(n, k) -b(n, k-1):
     seq(seq(T(n, k), k=1..n), n=1..12);  # _Alois P. Heinz_, Apr 20 2012
   */
-  private final MemoryFunction2<Integer, Z> mB = new MemoryFunction2<Integer, Z>() {
+  private final MemoryFunction2<Integer, Z> mB = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Integer n, final Integer i) {
       if (n == 0) {

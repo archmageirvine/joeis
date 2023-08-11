@@ -20,7 +20,7 @@ public class A046721 extends A006657 {
   @Override
   public Z next() {
     ++mN;
-    final SimpleProcessor<Pair<Integer, Z>> processor = new SimpleProcessor<Pair<Integer, Z>>() {
+    final SimpleProcessor<Pair<Integer, Z>> processor = new SimpleProcessor<>() {
       @Override
       protected Z total(final Iterable<Pair<Pair<Integer, Z>, Z>> counts) {
         Z count = Z.ZERO;

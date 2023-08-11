@@ -53,7 +53,7 @@ public class A045846 extends MemoryFunctionSequence<Pair<Integer, List<Integer>>
       for (final int v : l) {
         nl.add(v - t);
       }
-      return get(new Pair<Integer, List<Integer>>(n - t, nl));
+      return get(new Pair<>(n - t, nl));
     }
     Z s = Z.ZERO;
     int k = -1;
@@ -69,7 +69,7 @@ public class A045846 extends MemoryFunctionSequence<Pair<Integer, List<Integer>>
         nl.add(1 + i - k);
       }
       nl.addAll(l.subList(i + 1, l.size()));
-      s = s.add(get(new Pair<Integer, List<Integer>>(n, nl)));
+      s = s.add(get(new Pair<>(n, nl)));
     }
     return s;
   }
@@ -80,6 +80,6 @@ public class A045846 extends MemoryFunctionSequence<Pair<Integer, List<Integer>>
     for (int k = 0; k < mN; ++k) {
       l.add(0);
     }
-    return get(new Pair<Integer, List<Integer>>(mN, l));
+    return get(new Pair<>(mN, l));
   }
 }

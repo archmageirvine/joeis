@@ -25,7 +25,7 @@ public class A022811 extends MemoryFunction2Sequence<Long, Z> {
 
   // After Jean-Fran&ccedil;ois Alcover, after Alois P. Heinz
 
-  private final MemoryFunction3<Long, Z> mB = new MemoryFunction3<Long, Z>() {
+  private final MemoryFunction3<Long, Z> mB = new MemoryFunction3<>() {
     @Override
     protected Z compute(final Long n, final Long i, final Long k) {
       if (n < k) {

@@ -22,7 +22,7 @@ public class A144502 extends UpperLeftTriangle {
     if r=0 then RETURN(B(p-1, 1)); fi;
     B(p-1,r+1)+r*B(p,r-1); end;
   */
-  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int p, final int r) {
       if (p == 0) {

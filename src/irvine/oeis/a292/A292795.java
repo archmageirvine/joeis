@@ -31,7 +31,7 @@ public class A292795 extends UpperLeftTriangle {
     A:= (n, k)-> h(n$2, min(n, k)):
     seq(seq(A(n, d-n), n=0..d), d=0..14);
   */
-  private final MemoryFunctionInt3<Q> mB = new MemoryFunctionInt3<Q>() {
+  private final MemoryFunctionInt3<Q> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Q compute(final int n, final int i, final int t) {
       if (t == 1) {
@@ -46,7 +46,7 @@ public class A292795 extends UpperLeftTriangle {
     }
   };
 
-  private final MemoryFunctionInt2<Z> mG = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mG = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int k) {
       if (k == 0) {
@@ -56,7 +56,7 @@ public class A292795 extends UpperLeftTriangle {
     }
   };
 
-  private final MemoryFunctionInt3<Z> mH = new MemoryFunctionInt3<Z>() {
+  private final MemoryFunctionInt3<Z> mH = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int n, final int i, final int k) {
       if (n == 0) {

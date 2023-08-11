@@ -13,7 +13,7 @@ public class A275208 extends Sequence0 {
 
   private int mN = -1;
 
-  private final MemoryFunction1<Z> mB = new MemoryFunction1<Z>() {
+  private final MemoryFunction1<Z> mB = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
       if (n <= 1) {
@@ -23,7 +23,7 @@ public class A275208 extends Sequence0 {
     }
   };
 
-  private final MemoryFunction1<Z> mA = new MemoryFunction1<Z>() {
+  private final MemoryFunction1<Z> mA = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
       Z sum = Z.ZERO;

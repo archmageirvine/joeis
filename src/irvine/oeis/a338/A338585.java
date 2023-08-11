@@ -23,7 +23,7 @@ public class A338585 extends Sequence0 {
     a:= n-> (t-> b(t, h(t), n))(n*(n+1)/2):
     seq(a(n), n=0..42);  # _Alois P. Heinz_, Nov 10 2020
   */
-  protected final MemoryFunction1<Integer> mH = new MemoryFunction1<Integer>() {
+  protected final MemoryFunction1<Integer> mH = new MemoryFunction1<>() {
     @Override
     protected Integer compute(final int n) {
       if (n < 1) {
@@ -33,7 +33,7 @@ public class A338585 extends Sequence0 {
     }
   };
 
-  protected final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<Z>() {
+  protected final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int n, final int i, final int k) {
       if (n == 0) {

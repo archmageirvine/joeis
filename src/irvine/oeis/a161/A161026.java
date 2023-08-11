@@ -55,14 +55,14 @@ public class A161026 extends AbstractSequence {
     a:= n-> b(n, 2):
     seq(a(n), n=0..80);
   */
-  private MemoryFunction1<Integer> mF = new MemoryFunction1<Integer>() {
+  private MemoryFunction1<Integer> mF = new MemoryFunction1<>() {
     @Override
     protected Integer compute(final int n) {
       return mLambda.apply(n);
     }
   };
 
-  protected MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<Z>() {
+  protected MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int i) {
       if (n == 0) {

@@ -19,7 +19,7 @@ public class A243081 extends UpperLeftTriangle {
     A:= (n, k)-> `if`(k>=n, `if`(n=0, 1, 2^(n-1)), b(n$2, 0, k)):
     seq(seq(A(n, d-n), n=0..d), d=0..14);
   */
-  private final MemoryFunctionInt4<Q> mB = new MemoryFunctionInt4<Q>() {
+  private final MemoryFunctionInt4<Q> mB = new MemoryFunctionInt4<>() {
     @Override
     protected Q compute(final int n, final int i, final int p, final int k) {
       if (n == 0) {

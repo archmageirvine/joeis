@@ -17,7 +17,7 @@ public class A253189 extends Triangle {
     hasRAM(true);
   }
 
-  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int m) {
       if (n == m) {

@@ -21,7 +21,7 @@ public class A143453 extends UpperLeftTriangle {
       if k=0 then 3^n elif n<=k+1 then 2*n+1 else A(n-1, k) +2*A(n-k-1, k) fi end: 
       seq(seq(A(n,d-n), n=0..d), d=0..14);
   */
-  private final MemoryFunction2<Integer, Z> mB = new MemoryFunction2<Integer, Z>() {
+  private final MemoryFunction2<Integer, Z> mB = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Integer n, final Integer k) {
       if (k == 0) {

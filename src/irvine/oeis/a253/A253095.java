@@ -46,7 +46,7 @@ public class A253095 extends Sequence0 {
     end proc:
     seq(A253095(2*n),n=0..25) ; # _R. J. Mathar_, Jun 14 2015
   */
-  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<Z>() {
+  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int n, final int nu, final int twok) {
       final int k = twok / 2;

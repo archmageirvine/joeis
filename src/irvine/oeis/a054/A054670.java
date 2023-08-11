@@ -16,7 +16,7 @@ public class A054670 extends MemoryFunction1Sequence<Q> {
 
   private int mN = -1;
 
-  private final MemoryFunction2<Integer, Q> mU = new MemoryFunction2<Integer, Q>() {
+  private final MemoryFunction2<Integer, Q> mU = new MemoryFunction2<>() {
     @Override
     protected Q compute(final Integer n, final Integer k) {
       final int t = (1 << n) - 1;
@@ -36,7 +36,7 @@ public class A054670 extends MemoryFunction1Sequence<Q> {
     return mU.get(0, j + 1);
   }
 
-  private final MemoryFunction2<Integer, Q> mV = new MemoryFunction2<Integer, Q>() {
+  private final MemoryFunction2<Integer, Q> mV = new MemoryFunction2<>() {
     @Override
     protected Q compute(final Integer k, final Integer j) {
       if (k == 1) {

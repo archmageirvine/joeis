@@ -19,15 +19,15 @@ public class A183568 extends Triangle {
     T:= (n, k)-> (l-> l[`if`(k=0, 1, 2)])(b(n, n, k)):
     seq(seq(print(n, T(n, k)), k=0..n), n=0..4);
   */
-  private final MemoryFunctionInt3<Z[]> mB = new MemoryFunctionInt3<Z[]>() {
+  private final MemoryFunctionInt3<Z[]> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z[] compute(final int n, final int i, final int k) {
       // System.out.println(n + "," + i + "," + k);
       if (n == 0) {
-        return new Z[] {Z.ONE, Z.ZERO};
+        return new Z[]{Z.ONE, Z.ZERO};
       }
       if (i < 1) {
-        return new Z[] {Z.ZERO, Z.ZERO};
+        return new Z[]{Z.ZERO, Z.ZERO};
       }
       final Z[] sums = {Z.ZERO, Z.ZERO};
       final int jmax = n / i;

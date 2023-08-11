@@ -29,7 +29,7 @@ public class A267383 extends UpperLeftTriangle {
         end:
     seq(seq(A(n, 1+d-n), n=0..d), d=0..14);
   */
-  private final MemoryFunctionInt2<Z> mA = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mA = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int k) {
       final int q = -1;
@@ -41,7 +41,7 @@ public class A267383 extends UpperLeftTriangle {
       for (int i = 1; i <= k; ++i) {
         l[i] = (i <= k - irem) ? floorNk : ceilNk;
       }
-      final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<Z>() {
+      final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
         @Override
         protected Z compute(final int n, final int j) {
           if (j == 1) {

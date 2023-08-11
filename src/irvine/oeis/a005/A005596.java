@@ -16,7 +16,7 @@ public class A005596 extends DecimalExpansionSequence {
 
   private static final MemorySequence S = MemorySequence.cachedSequence(new A006206());
 
-  private static final MemoryFunction1<CR> INTERMEDIATES = new MemoryFunction1<CR>() {
+  private static final MemoryFunction1<CR> INTERMEDIATES = new MemoryFunction1<>() {
     @Override
     protected CR compute(final int n) {
       if (n <= 1) {

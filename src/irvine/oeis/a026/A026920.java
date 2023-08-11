@@ -13,7 +13,7 @@ public class A026920 extends Sequence1 {
   private long mN = 0;
   private long mM = 0;
 
-  protected final MemoryFunction2<Long, Z> mO = new MemoryFunction2<Long, Z>() {
+  protected final MemoryFunction2<Long, Z> mO = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Long n, final Long m) {
       if (m == 1) {
@@ -27,7 +27,7 @@ public class A026920 extends Sequence1 {
     }
   };
 
-  protected final MemoryFunction2<Long, Z> mE = new MemoryFunction2<Long, Z>() {
+  protected final MemoryFunction2<Long, Z> mE = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Long n, final Long m) {
       if (m == 1) {

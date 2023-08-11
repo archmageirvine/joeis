@@ -25,7 +25,7 @@ public class A257673 extends BaseTriangle {
     T:= (n, k)-> add(A(n, k-i)*(-1)^i*binomial(k, i), i=0..k):
     seq(seq(T(n, k), k=0..n), n=0..12);
   */
-  private final MemoryFunctionInt2<Z> mA = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mA = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int k) {
       if (n == 0) {

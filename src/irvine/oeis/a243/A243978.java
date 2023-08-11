@@ -17,7 +17,7 @@ public class A243978 extends Triangle {
     T:= (n, k)-> b(n$2, k) -`if`(n=0 and k=0, 0, b(n$2, k+1)):
     seq(seq(T(n, k), k=0..n), n=0..14);
   */
-  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<Z>() {
+  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int n, final int i, final int k) {
       if (n == 0) {

@@ -74,6 +74,6 @@ public class A203264 extends AbstractSequence {
         mat.set(i, j, mULT.matrixElement(i + 1, j + 1));
       }
     }
-    return new MatrixRing<Z>(mN, IntegerField.SINGLETON).permanent(mat);
+    return new MatrixRing<>(mN, IntegerField.SINGLETON).permanent(mat);
   }
 }

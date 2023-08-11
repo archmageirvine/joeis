@@ -12,7 +12,7 @@ public class A052337 extends MemorySequence {
 
   // After Alois P. Heinz
 
-  private final MemoryFunction2<Integer, Z> mB = new MemoryFunction2<Integer, Z>() {
+  private final MemoryFunction2<Integer, Z> mB = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Integer n, final Integer m) {
       if (n == 0) {

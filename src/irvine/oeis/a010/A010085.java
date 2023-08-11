@@ -26,7 +26,7 @@ public class A010085 extends HolonomicRecurrence {
    */
   public A010085(final int m) {
     super(0
-      , new ArrayList<Z[]>() {{
+      , new ArrayList<>() {{
         // [[0],[-(m+3)*(m+2), 2*m+5,-1],[-2*m-4, 4+m,-1],[m+1,-m-2, 1],[0,-1, 1]]
         add(new Z[]{Z.ZERO});
         add(new Z[]{Z.valueOf((long) -(m + 3) * (m + 2)), Z.valueOf(2L * m + 5), Z.NEG_ONE});

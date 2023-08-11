@@ -29,7 +29,7 @@ public class A253190 extends Triangle {
         end if;
     end proc: # _R. J. Mathar_, Dec 16 2015
   */
-  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int m) {
       if (n == m) {

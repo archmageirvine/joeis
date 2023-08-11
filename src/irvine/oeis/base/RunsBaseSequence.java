@@ -188,7 +188,7 @@ public abstract class RunsBaseSequence extends AbstractSequence {
   protected int getDistinctRunLengths(final Z number, final int base) {
     final String digits = expand(number, base);
     final int dlen = base <= 10 ? 1 : 2;
-    final HashMap<String, Integer> hash = new HashMap<String, Integer>(16);
+    final HashMap<String, Integer> hash = new HashMap<>(16);
     int ipos = 0;
     int idig = 0;
     String oldDig = digits.substring(idig, idig + dlen);

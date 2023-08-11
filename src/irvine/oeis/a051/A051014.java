@@ -16,7 +16,7 @@ public class A051014 extends Sequence0 {
 
   // After Alois P. Heinz
 
-  private MemoryFunction<TreeSet<Integer>, TreeSet<Integer>> mS = new MemoryFunction<TreeSet<Integer>, TreeSet<Integer>>() {
+  private MemoryFunction<TreeSet<Integer>, TreeSet<Integer>> mS = new MemoryFunction<>() {
     @Override
     protected TreeSet<Integer> compute(final TreeSet<Integer> set) {
       if (set.size() > 63) {

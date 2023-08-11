@@ -19,7 +19,7 @@ public class A286744 extends Sequence0 {
     a:= n-> b(n, 2, 1):
     seq(a(n), n=0..80);  # _Alois P. Heinz_, Nov 23 2017
   */
-  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<Z>() {
+  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int n, final int i, final int t) {
       if (n == 0) {

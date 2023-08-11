@@ -15,7 +15,7 @@ public class A061018 extends Sequence1 {
   private int mN = 0;
   private int mM = 0;
 
-  private final MemoryFunctionInt2<Z> mT = new MemoryFunctionInt2<Z>() {
+  private final MemoryFunctionInt2<Z> mT = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int m) {
       if (m == -1 || n == 0) {

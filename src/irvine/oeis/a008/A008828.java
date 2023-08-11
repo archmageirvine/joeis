@@ -27,7 +27,7 @@ public class A008828 extends A006657 {
       mM = 1;
       mTotals = new Z[mN + 2];
       Arrays.fill(mTotals, Z.ZERO);
-      final SimpleProcessor<Pair<Integer, Z>> processor = new SimpleProcessor<Pair<Integer, Z>>() {
+      final SimpleProcessor<Pair<Integer, Z>> processor = new SimpleProcessor<>() {
         @Override
         protected Z total(final Iterable<Pair<Pair<Integer, Z>, Z>> counts) {
           for (final Pair<Pair<Integer, Z>, Z> e : counts) {

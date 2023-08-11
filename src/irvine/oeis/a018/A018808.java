@@ -11,14 +11,14 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class A018808 extends MemorySequence {
 
-  private MemoryFunction1<Z> mL1 = new MemoryFunction1<Z>() {
+  private MemoryFunction1<Z> mL1 = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
       return n <= 1 ? Z.ZERO : a(n - 1).multiply2().subtract(get(n - 1)).add(r2(n));
     }
   };
 
-  private MemoryFunction1<Z> mR1 = new MemoryFunction1<Z>() {
+  private MemoryFunction1<Z> mR1 = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
       return n <= 1 ? Z.ZERO : get(n - 1).add(4 * (Euler.phiAsLong(n - 1) - ((n & 1) == 0 ? 0 : Euler.phiAsLong((n - 1) / 2))));

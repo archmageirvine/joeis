@@ -19,7 +19,7 @@ public class A210913 extends ExponentialGeneratingFunction {
   }
 
   private final MemoryFactorial mFactorial = MemoryFactorial.SINGLETON;
-  protected MemoryFunction2<Integer, Polynomial<Q>> mT = new MemoryFunction2<Integer, Polynomial<Q>>() {
+  protected MemoryFunction2<Integer, Polynomial<Q>> mT = new MemoryFunction2<>() {
     @Override
     protected Polynomial<Q> compute(final Integer k, final Integer n) {
       if (k < 0) {

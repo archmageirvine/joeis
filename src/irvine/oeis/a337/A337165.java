@@ -29,7 +29,7 @@ public class A337165 extends Triangle {
     T:= n-> (p-> seq(coeff(p, x, i), i=0..n))(b(n)):
     seq(T(n), n=0..14);
   */
-  private final MemoryFunction1<Polynomial<Z>> mB = new MemoryFunction1<Polynomial<Z>>() {
+  private final MemoryFunction1<Polynomial<Z>> mB = new MemoryFunction1<>() {
     @Override
     protected Polynomial<Z> compute(final int n) {
       if (n == 0) {

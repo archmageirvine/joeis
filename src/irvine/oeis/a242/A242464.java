@@ -22,7 +22,7 @@ public class A242464 extends UpperLeftTriangle {
     A:= (n, k)-> b(n, k, 0$2):
     seq(seq(A(n, d-n), n=0..d), d=0..12);
   */
-  private final MemoryFunctionInt4<Z> mB = new MemoryFunctionInt4<Z>() {
+  private final MemoryFunctionInt4<Z> mB = new MemoryFunctionInt4<>() {
     @Override
     protected Z compute(final int n, final int k, final int c, final int t) {
       if (n == 0) {

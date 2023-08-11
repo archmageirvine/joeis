@@ -20,7 +20,7 @@ public class A188575 extends Sequence1 {
     a:= n-> 2^(n-1) -add(b(n, i, 0), i=1..n):
     seq(a(n), n=1..40);  # _Alois P. Heinz_, Dec 06 2014
   */
-  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<Z>() {
+  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int n, final int i, final int t) {
       if (n == 0) {

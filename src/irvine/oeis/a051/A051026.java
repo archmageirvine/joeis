@@ -19,7 +19,7 @@ public class A051026 extends MemorySequence {
 
   private final Fast mPrime = new Fast();
 
-  private MemoryFunction<TreeSet<Integer>, Long> mS = new MemoryFunction<TreeSet<Integer>, Long>() {
+  private MemoryFunction<TreeSet<Integer>, Long> mS = new MemoryFunction<>() {
     @Override
     protected Long compute(final TreeSet<Integer> set) {
       if (set.isEmpty()) {
@@ -47,7 +47,7 @@ public class A051026 extends MemorySequence {
     return mS.getValue(set);
   }
 
-  private final MemoryFunction1<Long> mSB = new MemoryFunction1<Long>() {
+  private final MemoryFunction1<Long> mSB = new MemoryFunction1<>() {
     @Override
     protected Long compute(final int n) {
       return n < 2 ? 0L : bb(n) + get(n - 1);

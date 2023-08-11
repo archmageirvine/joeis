@@ -17,7 +17,7 @@ public class A180887 extends UpperLeftTriangle {
     hasRAM(true);
   }
 
-  private final MemoryFunction2<Integer, Z> mR = new MemoryFunction2<Integer, Z>() {
+  private final MemoryFunction2<Integer, Z> mR = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Integer n, final Integer k) {
       Z sum = Z.ZERO;

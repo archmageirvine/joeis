@@ -25,7 +25,7 @@ public class A288318 extends BaseTriangle {
     T:= (n, k)-> `if`(n=0, 1, b(n, k$2)):
     seq(seq(T(n, k), k=0..n), n=0..14);
   */
-  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<Z>() {
+  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<>() {
     @Override
     protected Z compute(final int n, final int k, final int j) {
       if (n == j) {

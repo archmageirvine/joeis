@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a126.A126988;
 
 /**
- * A143315 Triangle read by rows, 2*A126988 - signume(A126988).
+ * A143315 Triangle read by rows: T(n, k) = 2*A126988(n, k) - signum(A126988(n, k)).
  * @author Georg Fischer
  */
 public class A143315 extends AbstractSequence {

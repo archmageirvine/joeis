@@ -10,7 +10,7 @@ import irvine.oeis.a023.A023531;
 import irvine.oeis.triangle.Product;
 
 /**
- * A131784 (A004736 + A002260 - I) * A000012.
+ * A131784 Triangle read by rows: (A004736 + A002260 - I) * A000012.
  * @author Georg Fischer
  */
 public class A131784 extends Product {

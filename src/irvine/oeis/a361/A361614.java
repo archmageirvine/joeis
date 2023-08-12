@@ -4,7 +4,7 @@ package irvine.oeis.a361;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A361614 Set a(1)=0 and a(2)=1. For n &gt; 1, if a(n) has already appeared in the sequence, then a(n+1) = number of steps since its first appearance. If a(n) has not appeared before, search instead for a(n)-1, then a(n)-2, etc., until you find a number that has appear
+ * A361614 Set a(1)=0 and a(2)=1. For n &gt; 1, if a(n) has already appeared in the sequence, then a(n+1) = number of steps since its first appearance. If a(n) has not appeared before, search instead for a(n)-1, then a(n)-2, etc., until you find a number that has appeared before.
  * @author Georg Fischer
  */
 public class A361614 extends HolonomicRecurrence {

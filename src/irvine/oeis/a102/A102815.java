@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A102815 &quot;False so far&quot; sequence.
+ * A102815 "False so far" sequence.
  * @author Georg Fischer
  */
 public class A102815 extends Sequence1 {

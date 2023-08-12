@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A345097 a(n) is the sum of the two preceding terms if n is odd, or of the two preceding digits if n is even, with a(0) = 0, a(1) = 1.
+ * A345097 a(n) is the sum of the two preceding terms if n is odd or n &lt; 8, and of the two rightmost digits of a(n-1) if n is even, with a(0) = 0, a(1) = 1.
  * @author Georg Fischer
  */
 public class A345097 extends Sequence0 {

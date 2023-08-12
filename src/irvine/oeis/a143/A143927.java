@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006605;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A143927 G.f. satisfies: A(x) = [1 + x*A(x) + x^2*A(x)^2]^2.
+ * A143927 G.f. satisfies: A(x) = (1 + x*A(x) + x^2*A(x)^2)^2.
  * @author Georg Fischer
  */
 public class A143927 extends RootSequence {

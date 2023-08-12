@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053864 A second order generalization of the Mobius function of n.
+ * A053864 A second-order generalization of the Mobius function of n.
  * @author Sean A. Irvine
  */
 public class A053864 extends Sequence1 {

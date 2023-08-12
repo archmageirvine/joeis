@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A161770 n 1&apos;s followed by three 0&apos;s.
+ * A161770 n 1's followed by three 0's.
  * @author Georg Fischer
  */
 public class A161770 extends GeneratingFunctionSequence {

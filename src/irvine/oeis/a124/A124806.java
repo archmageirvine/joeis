@@ -5,7 +5,7 @@ package irvine.oeis.a124;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A124806 Number of base 5 circular n-digit numbers with adjacent digits differing by 2 or less.
+ * A124806 Number of circular n-letter words over the alphabet {0,1,2,3,4} with adjacent letters differing by at most 2.
  * @author Georg Fischer
  */
 public class A124806 extends HolonomicRecurrence {

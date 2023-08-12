@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a346.A346647;
 
 /**
- * A349332 G.f. A(x) satisfies: A(x) = 1 + x * A(x)^5 / (1 - x).
+ * A349332 G.f. A(x) satisfies A(x) = 1 + x * A(x)^5 / (1 - x).
  * @author Sean A. Irvine
  */
 public class A349332 extends DifferenceSequence {

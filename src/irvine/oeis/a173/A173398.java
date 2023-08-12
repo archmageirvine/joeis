@@ -8,7 +8,7 @@ import irvine.oeis.a112.A112468;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A173398 (A007318 + A112468)/2
+ * A173398 (A007318 + A112468)/2.
  * @author Georg Fischer
  */
 public class A173398 extends AbstractSequence {

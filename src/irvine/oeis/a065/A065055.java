@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A065055 Lengths of intervals between special points in Recam\u00e1n's sequence A005132.
+ * A065055 Number of subtraction steps in n-th interval between special points in Recam\u00e1n's sequence A005132.
  * @author Sean A. Irvine
  */
 public class A065055 extends Sequence1 {

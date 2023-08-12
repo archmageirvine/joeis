@@ -4,7 +4,7 @@ package irvine.oeis.a364;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A364685 The number of binary sequences of length n for which all patterns {0,1},{0,0},{1,0},{1,1} appear for the first time. In particular, three of the patterns will have appeared at least once before the (n-1)st digit in the sequence and the remaining pattern ap
+ * A364685 The number of binary sequences of length n for which all patterns {0,1},{0,0},{1,0},{1,1} appear for the first time. In particular, three of the patterns will have appeared at least once before the (n-1)st digit in the sequence and the remaining pattern appears for the first and only time at positions {n-1,n} in the sequence.
  * @author Georg Fischer
  */
 public class A364685 extends GeneratingFunctionSequence {

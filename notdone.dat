@@ -2214,3 +2214,5 @@ A064797 Largest integer m such that every permutation (p_1, ..., p_n) of (1, ...
 A064941 Quartering a 2n X 2n chessboard (reference A257952) considering only the 90-deg rotationally symmetric results (omitting results with only 180-deg symmetry).
 A064984 Triangle of coefficients T[n,m] of polynomials n, n^2, (n+2n^3)/3, n^2(2+n^2)/3, n(3+10n^2+2n^4)/15, etc. after multiplication by the denominators (A049606).
 A065020 Coefficients of irreducible polynomials over GF(3) listed in lexicographic order.
+A065066 Triangle T(n,k) read by rows of partially ordered sets ("posets") with n unlabeled nodes and k maximal elements (0 <= k <= n).
+A065068 Number of fixed polyominoes with n cells of which no four are equally spaced on a straight line

@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a130.A130595;
 
 /**
- * A144336 Triangle read by rows, 2*A144328 - A007318^(-1)
+ * A144336 Triangle read by rows, 2*A144328 - A007318^(-1).
  * @author Georg Fischer
  */
 public class A144336 extends AbstractSequence {

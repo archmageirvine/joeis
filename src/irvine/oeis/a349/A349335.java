@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a346.A346650;
 
 /**
- * A349335 G.f. A(x) satisfies: A(x) = 1 + x * A(x)^8 / (1 - x).
+ * A349335 G.f. A(x) satisfies A(x) = 1 + x * A(x)^8 / (1 - x).
  * @author Sean A. Irvine
  */
 public class A349335 extends DifferenceSequence {

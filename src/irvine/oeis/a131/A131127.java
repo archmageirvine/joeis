@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.a167.A167374;
 
 /**
- * A131127 Table read by rows: 2*A007318(n,m) - (-1)^(n+m)*A097806(n,m).
+ * A131127 Table read by rows: 2*A007318(n,m) - A167374(n,m).
  * @author Georg Fischer
  */
 public class A131127 extends AbstractSequence {

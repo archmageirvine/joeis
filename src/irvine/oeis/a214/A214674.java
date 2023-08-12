@@ -4,7 +4,7 @@ package irvine.oeis.a214;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A214674 Conway&apos;s subprime Fibonacci sequence.
+ * A214674 Conway's subprime Fibonacci sequence.
  * @author Georg Fischer
  */
 public class A214674 extends PaddingSequence {

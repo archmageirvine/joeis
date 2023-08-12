@@ -4,7 +4,7 @@ package irvine.oeis.a089;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A089273 Fifth column (k=6) of array A078739(n,k) ((2, 2)-generalized Stirling2).
+ * A089273 Fifth column (k=6) of array A078739(n,k) ((2,2)-generalized Stirling2).
  * @author Georg Fischer
  */
 public class A089273 extends HolonomicRecurrence {

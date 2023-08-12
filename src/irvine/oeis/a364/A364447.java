@@ -4,7 +4,7 @@ package irvine.oeis.a364;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A364447 Repeat [1, 2, 1, 3].
+ * A364447 Repeat [1,2,1,3].
  * @author Georg Fischer
  */
 public class A364447 extends HolonomicRecurrence {

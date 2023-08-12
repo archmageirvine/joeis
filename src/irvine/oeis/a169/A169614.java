@@ -6,7 +6,7 @@ import irvine.math.z.Fibonacci;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A169614 Triangular array: T(n,k)=integer nearest F(n)/F(n-k), k=1, 2,...,n-2; n&gt;=3, where F=A000045 (Fibonacci numbers).
+ * A169614 Triangular array: T(n,k)=integer nearest F(n)/F(n-k), k=1,2,...,n-2; n&gt;=3, where F=A000045 (Fibonacci numbers).
  * @author Georg Fischer
  */
 public class A169614 extends LambdaTriangle {

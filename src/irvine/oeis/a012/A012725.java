@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012725 exp(arctanh(x)*tan(x)) = 1+2/2!*x^2+28/4!*x^4+920/6!*x^6+54416/8!*x^8...
+ * A012725 Expansion of e.g.f. exp(arctanh(x)*tan(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A012725 extends Sequence0 {

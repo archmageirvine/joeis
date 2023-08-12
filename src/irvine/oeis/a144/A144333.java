@@ -6,7 +6,7 @@ import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.triangle.Product;
 
 /**
- * A144333 Triangle read by rows, A007318 * A144328
+ * A144333 Triangle read by rows, A007318 * A144328.
  * @author Georg Fischer
  */
 public class A144333 extends Product {

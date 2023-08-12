@@ -4,7 +4,7 @@ package irvine.oeis.a169;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A169615 Triangular array: T(n,k)=floor(F(n+k)/F(k)), k=1, 2,...,n-2; n&gt;=3, where F=A000045 (Fibonacci numbers).
+ * A169615 Triangular array: T(n,k)=floor(F(n+k)/F(k)), k=1,2,...,n-2; n&gt;=3, where F=A000045 (Fibonacci numbers).
  * @author Georg Fischer
  */
 public class A169615 extends Transpose {

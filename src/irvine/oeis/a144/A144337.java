@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A144337 Triangle read by rows, A000012 * (2*A144328 - A000012)
+ * A144337 Triangle read by rows, A000012 * (2*A144328 - A000012).
  * @author Georg Fischer
  */
 public class A144337 extends LambdaTriangle {

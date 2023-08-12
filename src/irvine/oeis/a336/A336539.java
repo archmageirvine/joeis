@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A336539 G.f. A(x) satisfies: A(x) = 1 + x * A(x)^3 * (1 +  2 * A(x)).
+ * A336539 G.f. A(x) satisfies A(x) = 1 + x * A(x)^3 * (1 + 2 * A(x)).
  * @author Georg Fischer
  */
 public class A336539 extends Sequence0 {

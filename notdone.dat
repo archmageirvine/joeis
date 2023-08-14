@@ -2216,3 +2216,4 @@ A064984 Triangle of coefficients T[n,m] of polynomials n, n^2, (n+2n^3)/3, n^2(2
 A065020 Coefficients of irreducible polynomials over GF(3) listed in lexicographic order.
 A065066 Triangle T(n,k) read by rows of partially ordered sets ("posets") with n unlabeled nodes and k maximal elements (0 <= k <= n).
 A065068 Number of fixed polyominoes with n cells of which no four are equally spaced on a straight line
+A065089 Volume (multiplied by 3) of polyhedron formed by points (i,j,k) in Z^3 with i^2+j^2+k^2 = n^2.

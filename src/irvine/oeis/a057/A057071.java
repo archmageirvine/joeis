@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 /**
- * A057071 floor[9^9/n].
+ * A057071 a(n) = floor(9^9/n).
  * @author Georg Fischer
  */
 public class A057071 extends FloorSequence {

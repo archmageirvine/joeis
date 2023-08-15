@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A062447 Prime numbers at large subscripts: a(n) = prime(q(n)), where q(n) = A002110(n).
+ * A062447 a(n) = prime(q(n)), where q(n) = A002110(n).
  * @author Sean A. Irvine
  */
 public class A062447 extends Sequence0 {

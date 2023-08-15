@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A052215.
+ * A364242 a(n) is the smallest positive integer such that a(n) and a(n)+2 are both products of n distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A364242 extends Sequence1 {

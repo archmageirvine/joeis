@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a330.A330966;
 
 /**
- * A335355 a(n) counts anti-chains of size four in &quot;0,1,2&quot; Motzkin trees on n edges.
+ * A335355 a(n) counts anti-chains of size four in "0,1,2" Motzkin trees on n edges.
  * @author Georg Fischer
  */
 public class A335355 extends AbstractSequence {

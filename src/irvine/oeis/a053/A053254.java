@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A053254 Coefficients of the '3rd order' mock theta function nu(q).
+ * A053254 Coefficients of the '3rd-order' mock theta function nu(q).
  * @author Sean A. Irvine
  */
 public class A053254 extends Sequence0 {

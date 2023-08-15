@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a050.A050474;
 
 /**
- * A203966 Numbers n such that phi(n) divides n+1, where phi is Euler&apos;s totient function (A000010).
+ * A203966 Numbers n such that phi(n) divides n+1, where phi is Euler's totient function (A000010).
  * @author Georg Fischer
  */
 public class A203966 extends PrependSequence {

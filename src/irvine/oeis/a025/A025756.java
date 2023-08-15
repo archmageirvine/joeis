@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A025756 3rd order Vatalan numbers (generalization of Catalan numbers).
+ * A025756 3rd-order Vatalan numbers (generalization of Catalan numbers).
  * @author Sean A. Irvine
  */
 public class A025756 extends Sequence0 {

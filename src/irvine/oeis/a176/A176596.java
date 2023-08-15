@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a152.A152586;
 
 /**
- * A176596 13^(2^n)
+ * A176596 13^(2^n).
  * @author Georg Fischer
  */
 public class A176596 extends AbstractSequence {

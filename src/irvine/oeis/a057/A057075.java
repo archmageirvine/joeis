@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A057075 Table read by antidiagonals of T(n,k)=floor[n^n/k] with n,k &gt;= 1.
+ * A057075 Table read by antidiagonals of T(n,k)=floor(n^n/k) with n,k &gt;= 1.
  * @author Georg Fischer
  */
 public class A057075 extends UpperLeftTriangle {

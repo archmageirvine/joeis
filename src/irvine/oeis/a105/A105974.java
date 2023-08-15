@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a001.A001035;
 
 /**
- * A105974 (A001035(n) - 1)/2 where A001035 is the number of partially ordered sets (&quot;posets&quot;) with n labeled elements.
+ * A105974 (A001035(n) - 1)/2 where A001035 is the number of partially ordered sets ("posets") with n labeled elements.
  * @author Georg Fischer
  */
 public class A105974 extends AbstractSequence {

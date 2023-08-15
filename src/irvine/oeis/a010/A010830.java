@@ -7,7 +7,7 @@ import irvine.oeis.transform.GeneralizedEulerTransform;
 
 
 /**
- * A010830 Expansion of Product_{k&gt;=1} (1-x^k )^25.
+ * A010830 Expansion of Product_{k&gt;=1} (1-x^k)^25.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^25)</code>
  * @author Georg Fischer
  */

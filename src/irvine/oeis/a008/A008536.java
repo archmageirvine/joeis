@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A008536 Numbers that contain the letter 'n'.
+ * A008536 Numbers whose American English name contains the letter 'n'.
  * @author Sean A. Irvine
  */
 public class A008536 extends ComplementSequence {

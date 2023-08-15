@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A057066 Floor[4^4/n].
+ * A057066 a(n) = floor(4^4/n).
  * @author Georg Fischer
  */
 public class A057066 extends FloorSequence {

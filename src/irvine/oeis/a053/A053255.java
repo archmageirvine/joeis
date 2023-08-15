@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A053255 Coefficients of the '3rd order' mock theta function rho(q).
+ * A053255 Coefficients of the '3rd-order' mock theta function rho(q).
  * @author Sean A. Irvine
  */
 public class A053255 extends Sequence0 {

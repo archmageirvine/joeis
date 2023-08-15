@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A000025 Coefficients of the 3rd order mock theta function f(q).
+ * A000025 Coefficients of the 3rd-order mock theta function f(q).
  * @author Sean A. Irvine
  */
 public class A000025 extends AbstractSequence {

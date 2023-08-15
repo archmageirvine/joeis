@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a032.A032924;
 
 /**
- * A259566 Numbers following gaps in the sequence of base-3 numbers that don&apos;t contain 0.
+ * A259566 Numbers following gaps in the sequence of base-3 numbers that don't contain 0.
  * @author Georg Fischer
  */
 public class A259566 extends PrependSequence {

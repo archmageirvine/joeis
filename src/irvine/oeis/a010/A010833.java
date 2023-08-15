@@ -7,7 +7,7 @@ import irvine.oeis.transform.GeneralizedEulerTransform;
 
 
 /**
- * A010833 Expansion of Product (1-x^k )^28.
+ * A010833 Expansion of Product_{k&gt;=1} (1-x^k)^28.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^28)</code>
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A025749 4th order Patalan numbers (generalization of Catalan numbers).
+ * A025749 4th-order Patalan numbers (generalization of Catalan numbers).
  * @author Sean A. Irvine
  */
 public class A025749 extends Sequence0 {

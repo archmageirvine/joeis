@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a054.A054582;
 
 /**
- * A075300 Array A read by antidiagonals upwards: A(n, k) = array A054582(n,k) - 1 = 2^n*(2*k+1) - 1 with n,k &gt;= 0,
+ * A075300 Array A read by antidiagonals upwards: A(n, k) = array A054582(n,k) - 1 = 2^n*(2*k+1) - 1 with n,k &gt;= 0,.
  * @author Georg Fischer
  */
 public class A075300 extends AbstractSequence {

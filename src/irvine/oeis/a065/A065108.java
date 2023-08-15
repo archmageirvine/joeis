@@ -4,7 +4,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.closure.MultiplicativeClosureSequence;
 
 /**
- * A065084.
+ * A065108 Positive numbers expressible as a product of Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A065108 extends MultiplicativeClosureSequence {

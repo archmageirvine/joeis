@@ -7,7 +7,7 @@ import irvine.oeis.transform.GeneralizedEulerTransform;
 
 
 /**
- * A010838 Expansion of Product (1-x^k )^44.
+ * A010838 Expansion of Product_{k&gt;=1} (1-x^k)^44.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^44)</code>
  * @author Georg Fischer
  */

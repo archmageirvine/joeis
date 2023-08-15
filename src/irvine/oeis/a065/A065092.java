@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A065084.
+ * A065092 Primes with property that when written in base two complementing any single bit yields a composite number.
  * @author Sean A. Irvine
  */
 public class A065092 extends A000040 {

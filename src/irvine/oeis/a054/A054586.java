@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A054586 Sum_{d|2n+1} phi(d)*mu(d).
+ * A054586 a(n) = Sum_{d|2n+1} phi(d)*mu(d).
  * @author Georg Fischer
  */
 public class A054586 extends MultiplicativeSequence {

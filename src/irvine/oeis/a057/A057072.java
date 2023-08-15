@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 /**
- * A057072 floor[10^10/n].
+ * A057072 a(n) = floor(10^10/n).
  * @author Georg Fischer
  */
 public class A057072 extends FloorSequence {

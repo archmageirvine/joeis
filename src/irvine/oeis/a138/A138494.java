@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a077.A077770;
 
 /**
- * A138494 a and b are integers &gt; 0 satisfying a^2 + b^2 = c^2. Sequence gives the number of choices for a and b between successive values of c. (Integer solutions for c (Pythagorean triples) are not included.)
+ * A138494 a and b are integers &gt; 0 satisfying a^2 + b^2 = c^2. Sequence gives the number of choices for a and b between successive values of c. (Integer solutions for c (Pythagorean triples) are not included.).
  * @author Georg Fischer
  */
 public class A138494 extends AbstractSequence {

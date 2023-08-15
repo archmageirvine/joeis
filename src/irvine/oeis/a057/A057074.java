@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 /**
- * A057074 floor[12^12/n].
+ * A057074 a(n) = floor(12^12/n).
  * @author Georg Fischer
  */
 public class A057074 extends FloorSequence {

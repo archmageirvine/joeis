@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
- * A065084.
+ * A065106 Smallest Fibonacci index to produce a factor p^2 (for primes p).
  * @author Sean A. Irvine
  */
 public class A065106 extends Sequence1 {

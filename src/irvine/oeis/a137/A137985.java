@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A065084.
+ * A137985 Complementing any single bit in the binary representation of these primes produces a composite number.
  * @author Sean A. Irvine
  */
 public class A137985 extends A000040 {

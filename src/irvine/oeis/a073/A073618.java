@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a025.A025560;
 
 /**
- * A073618 Consider Pascal&apos;s triangle A007318; a(n) = LCM of terms at +45 degree slope with the horizontal.
+ * A073618 Consider Pascal's triangle A007318; a(n) = LCM of terms at +45 degree slope with the horizontal.
  * @author Georg Fischer
  */
 public class A073618 extends PrependSequence {

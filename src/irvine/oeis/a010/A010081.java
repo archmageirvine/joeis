@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 // DO NOT EDIT here!
 
 /**
- * A010081 Weight distribution of extended Hamming code of length 32 (or 3rd order Reed-Muller code).
+ * A010081 Weight distribution of extended Hamming code of length 32 (or 3rd-order Reed-Muller code).
  * @author Georg Fischer
  */
 public class A010081 extends A010080 {

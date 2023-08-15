@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 /**
- * A057068 floor[6^6/n].
+ * A057068 a(n) = floor(6^6/n).
  * @author Georg Fischer
  */
 public class A057068 extends FloorSequence {

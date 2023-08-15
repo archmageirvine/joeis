@@ -7,7 +7,7 @@ import irvine.oeis.a027.A027357;
 import irvine.oeis.a027.A027358;
 
 /**
- * A053250 Coefficients of the '3rd order' mock theta function phi(q).
+ * A053250 Coefficients of the '3rd-order' mock theta function phi(q).
  * @author Sean A. Irvine
  */
 public class A053250 extends AbstractSequence {

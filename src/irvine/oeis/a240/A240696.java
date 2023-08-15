@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a093.A093172;
 
 /**
- * A240696 Prime numbers n such that replacing each digit d in the decimal expansion of n with its 9&apos;s complement produces a prime.
+ * A240696 Prime numbers n such that replacing each digit d in the decimal expansion of n with its 9's complement produces a prime.
  * @author Georg Fischer
  */
 public class A240696 extends PrependSequence {

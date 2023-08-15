@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A053253 Coefficients of the '3rd order' mock theta function omega(q).
+ * A053253 Coefficients of the '3rd-order' mock theta function omega(q).
  * @author Sean A. Irvine
  */
 public class A053253 extends Sequence0 {

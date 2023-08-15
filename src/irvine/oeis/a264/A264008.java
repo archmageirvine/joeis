@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A065069.
+ * A264008 Index of the smallest Fibonacci number divisible by prime(n)^2.
  * @author Sean A. Irvine
  */
 public class A264008 extends A000040 {

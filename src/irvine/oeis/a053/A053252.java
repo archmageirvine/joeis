@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A053252 Coefficients of the '3rd order' mock theta function chi(q).
+ * A053252 Coefficients of the '3rd-order' mock theta function chi(q).
  * @author Sean A. Irvine
  */
 public class A053252 extends Sequence0 {

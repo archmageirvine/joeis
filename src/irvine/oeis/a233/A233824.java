@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a003.A003319;
 
 /**
- * A233824 A recurrent sequence in Panaitopol&apos;s formula for pi(x), where pi(x) is the number of primes &lt;= x.
+ * A233824 A recurrent sequence in Panaitopol's formula for pi(x), where pi(x) is the number of primes &lt;= x.
  * @author Georg Fischer
  */
 public class A233824 extends PrependSequence {

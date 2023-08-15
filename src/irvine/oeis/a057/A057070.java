@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 /**
- * A057070 floor[8^8/n].
+ * A057070 a(n) = floor(8^8/n).
  * @author Georg Fischer
  */
 public class A057070 extends FloorSequence {

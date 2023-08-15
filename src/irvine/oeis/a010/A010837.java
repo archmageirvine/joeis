@@ -7,7 +7,7 @@ import irvine.oeis.transform.GeneralizedEulerTransform;
 
 
 /**
- * A010837 Expansion of Product (1-x^k )^32.
+ * A010837 Expansion of Product_{k&gt;=1} (1-x^k)^32.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^32)</code>
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A065084.
+ * A065084 Smallest prime having alternating bit sum (A065359) equal to n.
  * @author Sean A. Irvine
  */
 public class A065084 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
- * A008520 Numbers that contain the letter 'e'.
+ * A008520 Numbers whose American English name contains the letter 'e'.
  * @author Sean A. Irvine
  */
 public class A008520 extends Sequence1 {

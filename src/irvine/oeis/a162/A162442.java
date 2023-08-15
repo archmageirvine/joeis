@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a052.A052469;
 
 /**
- * A162442 Denominators of the column sums of the EG1 matrix coefficients
+ * A162442 Denominators of the column sums of the EG1 matrix coefficients.
  * @author Georg Fischer
  */
 public class A162442 extends AbstractSequence {

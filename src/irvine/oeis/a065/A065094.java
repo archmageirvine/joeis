@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065084.
+ * A065094 a(1) = 1, a(n+1) is the sum of a(n) and floor( arithmetic mean of a(1) ... a(n) ).
  * @author Sean A. Irvine
  */
 public class A065094 extends Sequence1 {

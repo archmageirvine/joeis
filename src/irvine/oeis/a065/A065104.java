@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003285;
 
 /**
- * A065084.
+ * A065104 Numbers k such that for no m between k^2 and (k+1)^2 - 1 is it true that A003285(m) = A003285(m+1).
  * @author Sean A. Irvine
  */
 public class A065104 extends A003285 {

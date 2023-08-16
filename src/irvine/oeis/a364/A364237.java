@@ -53,6 +53,15 @@ public class A364237 extends Sequence1 {
     return true;
   }
 
+  private boolean isMinimalElement(final int k) {
+    for (int j = 2; j < mMod; ++j) {
+      if (IntegerUtils.gcd(j, mMod) == 1 && (k * j) % mMod < k) {
+        return false;
+      }
+    }
+    return true;
+  }
+
   private void search(final int[] perm, final int[] sums, final int pos, final long used) {
     if (pos == perm.length) {
       if (isMinimal(perm)) {
@@ -61,7 +70,7 @@ public class A364237 extends Sequence1 {
       return;
     }
     for (int k = 1; k <= perm.length; ++k) {
-      if ((used & 1L << (k - 1)) == 0 && isSumOk(sums, pos, k)) {
+      if ((pos > 0 || isMinimalElement(k)) && (used & 1L << (k - 1)) == 0 && isSumOk(sums, pos, k)) {
         perm[pos] = k;
         for (int j = 0; j <= pos; ++j) {
           sums[j] += k;

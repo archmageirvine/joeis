@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A065112.
+ * A065112 Smallest prime whose decimal expansion ends (nontrivially) with the n-th prime; or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A065112 extends A000040 {

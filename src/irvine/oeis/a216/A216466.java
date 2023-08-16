@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a006.A006882;
 
 /**
- * A216466 n!! mod n!
+ * A216466 n!! mod n!.
  * @author Georg Fischer
  */
 public class A216466 extends PrependSequence {

@@ -16,7 +16,7 @@ import irvine.math.z.Z;
  * <li>4 - alternate signs, start with -</li>
  * <li>8 - odd denominators only</li>
  * </ul>
- * Tehf features can be added. Currently only 0, 1 are implemented.
+ * Tehf features can be added. Currently, only 0, 1 are implemented.
  * @author Georg Fischer
  */
 public class EgyptianFractionSequence extends AbstractSequence {

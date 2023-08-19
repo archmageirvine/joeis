@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.TreeSet;
 
 import irvine.math.Comparators;
+import irvine.math.set.IntegerPermutation;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
@@ -20,26 +21,6 @@ public class A055090 extends Sequence0 {
     mReverseColex.add(new int[1]); // Handle identity as special case
   }
 
-  static int countCycles(final int[] p) {
-    final boolean[] seen = new boolean[p.length];
-    int cycleCount = 0;
-    for (int k = 0; k < p.length; ++k) {
-      if (!seen[k]) {
-        int j = k;
-        int len = 0;
-        do {
-          ++len;
-          seen[j] = true;
-          j = p[j];
-        } while (!seen[j]);
-        if (len > 1) {
-          ++cycleCount;
-        }
-      }
-    }
-    return cycleCount;
-  }
-
   @Override
   public Z next() {
     if (mReverseColex.isEmpty()) {
@@ -51,6 +32,6 @@ public class A055090 extends Sequence0 {
         }
       }
     }
-    return Z.valueOf(countCycles(mReverseColex.pollFirst()));
+    return Z.valueOf(IntegerPermutation.countCycles(mReverseColex.pollFirst()));
   }
 }

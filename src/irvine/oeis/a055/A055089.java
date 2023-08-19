@@ -16,7 +16,7 @@ public class A055089 extends Sequence0 {
 
   private int mN = 1;
   private int mM = -1;
-  protected final TreeSet<int[]> mReverseColex = new TreeSet<>(Comparators.REVERSE_COLEXICOGRAPHIC);
+  protected TreeSet<int[]> mReverseColex = new TreeSet<>(Comparators.REVERSE_COLEXICOGRAPHIC);
   {
     mReverseColex.add(new int[] {0});
   }

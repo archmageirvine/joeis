@@ -509,5 +509,4 @@ public final class IntegerUtils {
     final int s = sqrt(n);
     return s * s == n;
   }
-
 }

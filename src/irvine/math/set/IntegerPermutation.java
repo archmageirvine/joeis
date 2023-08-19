@@ -1,5 +1,6 @@
 package irvine.math.set;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -68,6 +69,41 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
     for (int k = 0; k < perm.length; ++k) {
       mPerm[k] = perm[k] & 0xFF;
     }
+  }
+
+  /**
+   * Count the number of cycles in the given permutation.
+   * @param p the permutation
+   * @param minLength minimum length of cycle to count
+   * @return number of cycles
+   */
+  public static int countCycles(final int[] p, final int minLength) {
+    final boolean[] seen = new boolean[p.length];
+    int cycleCount = 0;
+    for (int k = 0; k < p.length; ++k) {
+      if (!seen[k]) {
+        int j = k;
+        int len = 0;
+        do {
+          ++len;
+          seen[j] = true;
+          j = p[j];
+        } while (!seen[j]);
+        if (len >= minLength) {
+          ++cycleCount;
+        }
+      }
+    }
+    return cycleCount;
+  }
+
+  /**
+   * Count the number of cycles in the given permutation.
+   * @param p the permutation
+   * @return number of cycles
+   */
+  public static int countCycles(final int[] p) {
+    return countCycles(p, 2);
   }
 
   @Override
@@ -212,5 +248,28 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
       a[k] = (inv.image(k) + a.length - k) % a.length;
     }
     return a;
+  }
+
+  /**
+   * Return the permutation as cycles (including fixed points).
+   * @param p the permutation
+   * @return cycle notation
+   */
+  public static List<int[]> toCycles(final int[] p) {
+    final boolean[] seen = new boolean[p.length];
+    final ArrayList<int[]> cycles = new ArrayList<>();
+    for (final int k : p) {
+      if (!seen[k]) {
+        final ArrayList<Integer> cyc = new ArrayList<>();
+        int j = k;
+        do {
+          seen[j] = true;
+          cyc.add(j);
+          j = p[j];
+        } while (!seen[j]);
+        cycles.add(IntegerUtils.toArray(cyc));
+      }
+    }
+    return cycles;
   }
 }

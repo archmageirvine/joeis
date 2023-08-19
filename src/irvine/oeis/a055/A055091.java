@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.TreeSet;
 
 import irvine.math.Comparators;
+import irvine.math.set.IntegerPermutation;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.util.Permutation;
@@ -32,6 +33,6 @@ public class A055091 extends Sequence0 {
       }
     }
     final int[] t = mReverseColex.pollFirst();
-    return Z.valueOf(mN - A055093.countFixed(t) - A055090.countCycles(t));
+    return Z.valueOf(mN - A055093.countFixed(t) - IntegerPermutation.countCycles(t));
   }
 }

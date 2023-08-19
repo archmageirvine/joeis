@@ -4,7 +4,7 @@ package irvine.oeis.a087;
 import irvine.oeis.a114.A114350;
 
 /**
- * A087872 Primes of the form (4*k + 3)^2 + (4*k + 2)^2 where k=0, 1, 2, 3,...
+ * A087872 Primes of the form (4*k + 3)^2 + (4*k + 2)^2 where k=0,1,2,3,...
  * @author Georg Fischer
  */
 public class A087872 extends A114350 {

@@ -11,9 +11,8 @@ public class A030665 extends Sequence1 {
 
   private long mN = 0;
 
-  @Override
-  public Z next() {
-    Z t = Z.valueOf(++mN).multiply(10);
+  protected Z solve(final Z n) {
+    Z t = n.multiply(10);
     long lim = 10;
     long v = -1;
     while (true) {
@@ -30,6 +29,11 @@ public class A030665 extends Sequence1 {
         }
       }
     }
+  }
+
+  @Override
+  public Z next() {
+    return solve(Z.valueOf(++mN));
   }
 }
 

@@ -6,7 +6,7 @@ import irvine.oeis.a004.A004780;
 import irvine.oeis.a005.A005408;
 
 /**
- * A356844 Numbers k such that the k-th composition in standard order contains at least one 1. Numbers that are odd or whose binary expansion contains at least two adjacent 1&apos;s.
+ * A356844 Numbers k such that the k-th composition in standard order contains at least one 1. Numbers that are odd or whose binary expansion contains at least two adjacent 1's.
  * @author Georg Fischer
  */
 public class A356844 extends UnionSequence {

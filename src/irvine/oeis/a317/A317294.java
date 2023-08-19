@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000079;
 import irvine.oeis.a052.A052294;
 
 /**
- * A317294 Numbers with a noncomposite number of 1&apos;s in their binary expansion.
+ * A317294 Numbers with a noncomposite number of 1's in their binary expansion.
  * @author Georg Fischer
  */
 public class A317294 extends UnionSequence {

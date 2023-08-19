@@ -4,7 +4,7 @@ package irvine.oeis.a087;
 import irvine.oeis.a114.A114350;
 
 /**
- * A087856 Primes of the form 16*m^2 + 25, m=1, 3, 5,...
+ * A087856 Primes of the form 16*m^2 + 25, m=1,3,5,...
  * @author Georg Fischer
  */
 public class A087856 extends A114350 {

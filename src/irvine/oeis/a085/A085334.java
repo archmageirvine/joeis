@@ -11,7 +11,7 @@ import irvine.oeis.a003.A003328;
 import irvine.oeis.a003.A003329;
 
 /**
- * A085334 Numbers which are neither sums of 2, 3, 4, 5 or that of 6 nonnegative cubes.
+ * A085334 Numbers which are neither sums of 2,3,4,5 or that of 6 nonnegative cubes.
  * @author Georg Fischer
  */
 public class A085334 extends SetDifferenceSequence {

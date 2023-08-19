@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A080324 Numbers k such that mu(k)^k &gt; 0, where mu(k) is the Moebius function (A008683).
+ * A080324 Union of even squarefree numbers (A001747) and squarefree numbers for which the number of prime factors is even (A030229).
  * @author Georg Fischer
  */
 public class A080324 extends Sequence1 {

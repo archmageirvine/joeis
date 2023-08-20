@@ -9,7 +9,7 @@ import irvine.math.z.Z;
  * A055089 List of all finite permutations in reversed colexicographic ordering.
  * @author Sean A. Irvine
  */
-public class A065161 extends A065181 {
+public class A065162 extends A065181 {
 
   private int mF = 1;
   private int mN = 0;
@@ -27,6 +27,6 @@ public class A065161 extends A065181 {
     for (int k = old; k < mP.length; ++k) {
       mP[k] = super.next().intValueExact();
     }
-    return Z.valueOf(IntegerPermutation.countCycles(mP, 1));
+    return IntegerPermutation.lcmCycleSizes(mP);
   }
 }

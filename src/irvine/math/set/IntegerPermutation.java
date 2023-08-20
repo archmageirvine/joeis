@@ -106,6 +106,29 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
     return countCycles(p, 2);
   }
 
+  /**
+   * Compute the least common multiple of the cycle sizes of the permutation.
+   * @param p the permutation
+   * @return number of cycles
+   */
+  public static Z lcmCycleSizes(final int[] p) {
+    final boolean[] seen = new boolean[p.length];
+    Z lcm = Z.ONE;
+    for (int k = 0; k < p.length; ++k) {
+      if (!seen[k]) {
+        int j = k;
+        int len = 0;
+        do {
+          ++len;
+          seen[j] = true;
+          j = p[j];
+        } while (!seen[j]);
+        lcm = lcm.lcm(Z.valueOf(len));
+      }
+    }
+    return lcm;
+  }
+
   @Override
   public boolean equals(final Object obj) {
     if (!(obj instanceof IntegerPermutation)) {

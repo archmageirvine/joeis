@@ -1,5 +1,6 @@
 package irvine.oeis.a060;
 
+import irvine.math.set.IntegerPermutation;
 import irvine.math.z.Z;
 
 /**
@@ -12,6 +13,7 @@ public class A060120 extends A060119 {
 
   @Override
   public Z next() {
-    return permRevLexRank(permUnrank3R(++mN).inverse());
+    final int r = ++mN;
+    return IntegerPermutation.permUnrank3R(r).inverse().permRevLexRank();
   }
 }

@@ -3,12 +3,13 @@ package irvine.oeis.a060;
 import irvine.math.IntegerUtils;
 import irvine.math.set.IntegerPermutation;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence0;
 
 /**
  * A060501 Average of digits of each term in A060495, number of balls in each such siteswap juggling pattern.
  * @author Sean A. Irvine
  */
-public class A060501 extends A060117 {
+public class A060501 extends Sequence0 {
 
   private int mN = -1;
 
@@ -28,7 +29,7 @@ public class A060501 extends A060117 {
     if (++mN == 0) {
       return Z.ONE;
     }
-    final int[] ss = toSiteSwap(permUnrank3R(mN));
+    final int[] ss = toSiteSwap(IntegerPermutation.permUnrank3R(mN));
     return Z.valueOf(IntegerUtils.sum(ss) / ss.length);
   }
 }

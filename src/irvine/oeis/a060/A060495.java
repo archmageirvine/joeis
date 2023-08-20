@@ -1,12 +1,14 @@
 package irvine.oeis.a060;
 
+import irvine.math.set.IntegerPermutation;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence0;
 
 /**
  * A060495 Each permutation in the list A060117 converted to Site Swap notation, with "zero throws" (fixed elements) replaced with n, the length of siteswap.
  * @author Sean A. Irvine
  */
-public class A060495 extends A060117 {
+public class A060495 extends Sequence0 {
 
   private int mN = -1;
 
@@ -28,6 +30,6 @@ public class A060495 extends A060117 {
     if (++mN == 0) {
       return Z.ONE;
     }
-    return toZ(permUnrank3R(mN).toSiteSwap());
+    return toZ(IntegerPermutation.permUnrank3R(mN).toSiteSwap());
   }
 }

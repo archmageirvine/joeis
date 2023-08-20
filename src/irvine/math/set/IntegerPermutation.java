@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import irvine.math.IntegerUtils;
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
 
 /**
@@ -173,6 +174,14 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
     return true;
   }
 
+  /**
+   * Return an integer array version of this pemutation.
+   * @return permutation
+   */
+  public int[] getPerm() {
+    return Arrays.copyOf(mPerm, mPerm.length);
+  }
+
   @Override
   public String toString() {
     return Arrays.toString(mPerm);
@@ -286,6 +295,58 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
   }
 
   /**
+   * Return this permutation with the given elements swapped.
+   * Equivalent to composition with <code>(i-1,j-1)</code>.
+   * @param i first element
+   * @param j second element
+   * @return swap
+   */
+  public IntegerPermutation swap(final int i, final int j) {
+    final IntegerPermutation copy = new IntegerPermutation(Arrays.copyOf(mPerm, size()));
+    copy.mPerm[i] = image(j);
+    copy.mPerm[j] = image(i);
+    return copy;
+  }
+
+  private Z permRank3Aux(final int n, final IntegerPermutation p, final IntegerPermutation q) {
+    if (n <= 1) {
+      return Z.ZERO;
+    }
+    final Z t = MemoryFactorial.SINGLETON.factorial(n - 1).multiply(n - p.image(n - 1) - 1);
+    return t.add(permRank3Aux(n - 1, p.swap(n - 1, q.image(n - 1)), q.swap(n - 1, p.image(n - 1))));
+  }
+
+  /**
+   * Convert this permutation to an integer.
+   * @return integer
+   */
+  public Z permRank3R() {
+    return permRank3Aux(size(), this, inverse());
+  }
+
+  /**
+   * Return the reverse lexical rank of a permutation.
+   * @return lexical rank
+   */
+  public Z permRevLexRank() {
+    final int n = size();
+    final int[] p = new int[n];
+    for (int k = 0; k < p.length; ++k) {
+      p[k] = image(k) + 1;
+    }
+    Z r = Z.ZERO;
+    for (int j = n - 1; j >= 0; --j) {
+      r = r.add(MemoryFactorial.SINGLETON.factorial(j).multiply(j + 1 - p[j]));
+      for (int i = 0; i < j; ++i) {
+        if (p[i] > p[j]) {
+          --p[i];
+        }
+      }
+    }
+    return r;
+  }
+
+  /**
    * Return the site swap representation of this permutation.
    * @return site swap representation
    */
@@ -319,5 +380,43 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
       }
     }
     return cycles;
+  }
+
+  private static List<Long> factorialBase(long n) {
+    final ArrayList<Long> res = new ArrayList<>();
+    long f = 2;
+    int k = 2;
+    while (f <= n) {
+      f *= ++k;
+    }
+    while (k > 1) {
+      f /= k--;
+      final long q = n / f;
+      res.add(q);
+      n -= q * f;
+    }
+    return res;
+  }
+
+  private static IntegerPermutation permUnrank3RAux(final int n, final int r, final IntegerPermutation p) {
+    if (r == 0) {
+      return p;
+    }
+    final int f = MemoryFactorial.SINGLETON.factorial(n - 1).intValueExact();
+    final int s = r / f;
+    final int[] q = IntegerUtils.identity(new int[n]);
+    q[n - 1] = n - s - 1;
+    q[n - s - 1] = n - 1;
+    return permUnrank3RAux(n - 1, r - s * f, new IntegerPermutation(q).compose(p));
+  }
+
+  /**
+   * Decode an integer as a permutation.
+   * @param r integer
+   * @return permutation
+   */
+  public static IntegerPermutation permUnrank3R(final int r) {
+    final int n = factorialBase(r).size();
+    return permUnrank3RAux(n + 1, r, new IntegerPermutation());
   }
 }

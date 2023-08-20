@@ -6,7 +6,6 @@ import java.util.TreeSet;
 import irvine.math.set.IntegerPermutation;
 import irvine.math.z.Z;
 import irvine.oeis.a055.A055089;
-import irvine.oeis.a060.A060119;
 
 /**
  * A065181 Permutation of nonnegative integers produced when the finite permutations listed by A055089 are subjected to inverse of Foata's transformation. Inverse of A065182.
@@ -14,7 +13,7 @@ import irvine.oeis.a060.A060119;
  */
 public class A065181 extends A055089 {
 
-  private int findLargest(final int[] a) {
+  private static int findLargest(final int[] a) {
     int m = -1;
     for (int i = 0; i < a.length; ++i) {
       if (m < 0 || a[i] > a[m]) {
@@ -24,7 +23,7 @@ public class A065181 extends A055089 {
     return m;
   }
 
-  private int[] rotCycleLargestFirst(final int[] c) {
+  private static int[] rotCycleLargestFirst(final int[] c) {
     final int x = findLargest(c);
     if (x <= 0) {
       return c;
@@ -35,7 +34,7 @@ public class A065181 extends A055089 {
     return res;
   }
 
-  private int[] foataInverse(final int[] p) {
+  static int[] foataInverse(final int[] p) {
     final TreeSet<int[]> map = new TreeSet<>(Comparator.comparingInt(a -> a[0]));
     for (final int[] c : IntegerPermutation.toCycles(p)) {
       map.add(rotCycleLargestFirst(c));
@@ -54,6 +53,6 @@ public class A065181 extends A055089 {
     if (mReverseColex.isEmpty()) {
       step();
     }
-    return A060119.permRevLexRank(new IntegerPermutation(foataInverse(mReverseColex.pollFirst())));
+    return new IntegerPermutation(foataInverse(mReverseColex.pollFirst())).permRevLexRank();
   }
 }

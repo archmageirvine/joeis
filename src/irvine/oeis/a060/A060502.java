@@ -1,12 +1,14 @@
 package irvine.oeis.a060;
 
+import irvine.math.set.IntegerPermutation;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence0;
 
 /**
  * A060502 a(n) = number of occupied digit slopes in the factorial base representation of n (see comments for the definition); number of drops in the n-th permutation of list A060117.
  * @author Sean A. Irvine
  */
-public class A060502 extends A060117 {
+public class A060502 extends Sequence0 {
 
   private int mN = -1;
 
@@ -25,6 +27,6 @@ public class A060502 extends A060117 {
     if (++mN == 0) {
       return Z.ZERO;
     }
-    return avg(permUnrank3R(mN).toSiteSwap());
+    return avg(IntegerPermutation.permUnrank3R(mN).toSiteSwap());
   }
 }

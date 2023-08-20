@@ -5,7 +5,6 @@ import irvine.math.IntegerUtils;
 import irvine.math.set.IntegerPermutation;
 import irvine.math.z.Z;
 import irvine.oeis.a014.A014486;
-import irvine.oeis.a060.A060119;
 
 /**
  * A064638 Positions of non-crossing fixed-point-free involutions encoded by A014486 in A055089. Permutation of A064640.
@@ -34,6 +33,6 @@ public class A064638 extends A014486 {
 
   @Override
   public Z next() {
-    return A060119.permRevLexRank(noncrossingTranspose(super.next()));
+    return noncrossingTranspose(super.next()).permRevLexRank();
   }
 }

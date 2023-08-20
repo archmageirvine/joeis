@@ -8,7 +8,8 @@ import irvine.math.set.IntegerPermutation;
  */
 public class A060118 extends A060117 {
 
+  @Override
   protected IntegerPermutation permUnrank3R(final int r) {
-    return super.permUnrank3R(r).inverse();
+    return IntegerPermutation.permUnrank3R(r).inverse();
   }
 }

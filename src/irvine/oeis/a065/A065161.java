@@ -6,7 +6,7 @@ import irvine.math.set.IntegerPermutation;
 import irvine.math.z.Z;
 
 /**
- * A055089 List of all finite permutations in reversed colexicographic ordering.
+ * A065161 Number of orbits into which the Foata transform partitions the symmetric group Sn, i.e., a(n) is the number of cycles in the permutations A065181 - A065184 found in range [0,n!-1].
  * @author Sean A. Irvine
  */
 public class A065161 extends A065181 {

@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 import irvine.oeis.InverseSequence;
 
 /**
- * A055089 List of all finite permutations in reversed colexicographic ordering.
+ * A065182 Permutation of nonnegative integers produced when the finite permutations listed by A055089 are subjected to Foata transform. Inverse of A065181.
  * @author Sean A. Irvine
  */
 public class A065182 extends InverseSequence {

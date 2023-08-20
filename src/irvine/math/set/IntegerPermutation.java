@@ -109,7 +109,7 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
   /**
    * Compute the least common multiple of the cycle sizes of the permutation.
    * @param p the permutation
-   * @return number of cycles
+   * @return least common multiple of cycle sizes
    */
   public static Z lcmCycleSizes(final int[] p) {
     final boolean[] seen = new boolean[p.length];
@@ -127,6 +127,31 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
       }
     }
     return lcm;
+  }
+
+  /**
+   * Compute the maximum cycle size of the permutation.
+   * @param p the permutation
+   * @return maximum cycle size
+   */
+  public static int maximumCycleSize(final int[] p) {
+    final boolean[] seen = new boolean[p.length];
+    int max = 0;
+    for (int k = 0; k < p.length; ++k) {
+      if (!seen[k]) {
+        int j = k;
+        int len = 0;
+        do {
+          ++len;
+          seen[j] = true;
+          j = p[j];
+        } while (!seen[j]);
+        if (len > max) {
+          max = len;
+        }
+      }
+    }
+    return max;
   }
 
   @Override

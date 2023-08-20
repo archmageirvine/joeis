@@ -783,5 +783,21 @@ public final class LongUtils {
     return isSquare((n << 3) + 1);
   }
 
+  /**
+   * Map from integers to natural numbers by interleaving positive and negative numbers.
+   * @param n number to encode
+   * @return encoding
+   */
+  public static long z2n(final long n) {
+    return n > 0 ? 2 * n : 2 * -n + 1;
+  }
 
+  /**
+   * Undo the encoding of <code>z2n</code>.
+   * @param n encoded number
+   * @return decoded number
+   */
+  public static long n2z(final long n) {
+    return (n & 1) == 0 ? n / 2 : (1 - n) / 2;
+  }
 }

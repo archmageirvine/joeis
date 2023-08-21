@@ -3,21 +3,22 @@ package irvine.oeis.a063;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000045;
+import irvine.oeis.Sequence1;
 
 /**
  * A063375 Number of divisors of Fibonacci(n).
  * @author Georg Fischer
  */
-public class A063375 extends A000045 {
+public class A063375 extends Sequence1 {
 
-  {
-    setOffset(1);
-    super.next();
-  }
+  private Z mA = Z.ONE;
+  private Z mB = Z.ZERO;
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).sigma0();
+    final Z f = mA.add(mB);
+    mA = mB;
+    mB = f;
+    return Jaguar.factor(f).sigma0();
   }
 }

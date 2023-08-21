@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A065181 Permutation of nonnegative integers produced when the finite permutations listed by A055089 are subjected to inverse of Foata's transformation. Inverse of A065182.
+ * A065183 Permutation of nonnegative integers produced when the finite permutations listed by A060117 are subjected to the inverse of (variant of) Foata's transformation. Inverse of A065184.
  * @author Sean A. Irvine
  */
 public class A065183 extends Sequence0 {

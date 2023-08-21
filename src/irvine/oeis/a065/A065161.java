@@ -21,7 +21,7 @@ public class A065161 extends A065181 {
       // 13! exceeds int array
       throw new UnsupportedOperationException();
     }
-    int old = mP.length;
+    final int old = mP.length;
     mF *= mN;
     mP = Arrays.copyOf(mP, mF);
     for (int k = old; k < mP.length; ++k) {

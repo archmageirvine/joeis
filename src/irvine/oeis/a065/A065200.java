@@ -13,7 +13,7 @@ import irvine.oeis.a005.A005117;
  */
 public class A065200 extends A005117 {
 
-  private static class State implements Comparable<State> {
+  private static final class State implements Comparable<State> {
     private final Z mN;
     private final long mP;
     private final boolean mSinglePrime;

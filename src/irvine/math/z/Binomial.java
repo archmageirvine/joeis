@@ -83,6 +83,28 @@ public final class Binomial {
   }
 
   /**
+   * Compute binomial coefficients of non-negative values.
+   *
+   * @param n upper index
+   * @param m lower index
+   * @return binomial coefficient
+   */
+  public static Z binomial(final Z n, final long m) {
+    return binomial(n, Z.valueOf(m));
+  }
+
+  /**
+   * Compute binomial coefficients of non-negative values.
+   *
+   * @param n upper index
+   * @param m lower index
+   * @return binomial coefficient
+   */
+  public static Z binomial(final long n, final Z m) {
+    return binomial(Z.valueOf(n), m);
+  }
+
+  /**
    * Catalan numbers.
    *
    * @param n index

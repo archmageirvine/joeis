@@ -646,12 +646,30 @@ public class Z extends Number implements Comparable<Z> {
   }
 
   /**
+   * Return the greatest common divisor of this integer with another integer.
+   * @param n other integer
+   * @return the gcd
+   */
+  public Z gcd(final long n) {
+    return Gcd.gcd(this, Z.valueOf(n));
+  }
+
+  /**
    * Return the least common multiple of this integer with another integer.
    * @param n other integer
    * @return the lcm
    */
   public Z lcm(final Z n) {
     return multiply(n.divide(gcd(n)));
+  }
+
+  /**
+   * Return the least common multiple of this integer with another integer.
+   * @param n other integer
+   * @return the lcm
+   */
+  public Z lcm(final long n) {
+    return lcm(Z.valueOf(n));
   }
 
   /**

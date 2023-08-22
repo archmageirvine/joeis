@@ -14,6 +14,6 @@ public class A177410 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A177410() {
-    super(0, n -> Binomial.binomial((Z.valueOf(n).add(1).multiply(Z.ONE.shiftLeft(n))), n).divide(Z.valueOf(n + 1)));
+    super(0, n -> Binomial.binomial(Z.valueOf(n + 1).shiftLeft(n), n).divide(Z.valueOf(n + 1)));
   }
 }

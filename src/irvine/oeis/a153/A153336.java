@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A153336 Number of zig-zag paths from top to bottom of a 2n by 2n square whose color is that of the top right corner
+ * A153336 Number of zig-zag paths from top to bottom of a 2n by 2n square whose color is that of the top right corner.
  * @author Georg Fischer
  */
 public class A153336 extends LambdaSequence {

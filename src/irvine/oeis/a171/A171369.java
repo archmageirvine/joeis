@@ -6,7 +6,7 @@ import irvine.oeis.a169.A169695;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A171369 Triangle read by rows, replace 2&apos;s with 3&apos;s in A169695.
+ * A171369 Triangle read by rows, replace 2's with 3's in A169695.
  * @author Georg Fischer
  */
 public class A171369 extends SimpleTransformSequence {

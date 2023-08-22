@@ -2218,3 +2218,6 @@ A065066 Triangle T(n,k) read by rows of partially ordered sets ("posets") with n
 A065068 Number of fixed polyominoes with n cells of which no four are equally spaced on a straight line
 A065089 Volume (multiplied by 3) of polyhedron formed by points (i,j,k) in Z^3 with i^2+j^2+k^2 = n^2.
 A065111 Dead-end primes in "The Prime Number Maze."
+A065246 Formal neural networks with n components
+A065247 Imperfect formal neural networks with n components
+A065248	Networks with n components.

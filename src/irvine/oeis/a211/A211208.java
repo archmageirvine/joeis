@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A211208 Sums of squares of terms in rows of Losanitsch&apos;s triangle (A034851).
+ * A211208 Sums of squares of terms in rows of Losanitsch's triangle (A034851).
  * @author Georg Fischer
  */
 public class A211208 extends LambdaSequence {

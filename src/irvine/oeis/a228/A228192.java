@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A228192 a(n) = A001850(n^2), where A001850 forms the central Delannoy numbers.
+ * A228192  a(n) = A001850(n^2), where A001850 forms the central Delannoy numbers.
  * @author Georg Fischer
  */
 public class A228192 extends LambdaSequence {

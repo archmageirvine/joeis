@@ -7,7 +7,7 @@ import irvine.oeis.a022.A022012;
 import irvine.oeis.a022.A022013;
 
 /**
- * A065706 Least member p1 of prime octuplets (p1, p2, p3, ..., p8 = p1 + 26), the eight p&apos;s being consecutive primes.
+ * A065706 Least member p1 of prime octuplets (p1, p2, p3, ..., p8 = p1 + 26), the eight p's being consecutive primes.
  * @author Georg Fischer
  */
 public class A065706 extends UnionSequence {

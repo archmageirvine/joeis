@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A105871 a(n) = sum{k=0..floor(n/2), C(2*n-3*k, n)*C(n-k, k)}
+ * A105871 a(n) = sum{k=0..floor(n/2), C(2*n-3*k, n)*C(n-k, k)}.
  * @author Georg Fischer
  */
 public class A105871 extends LambdaSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A088560 Sum of odd entries in row n of Pascal&apos;s triangle.
+ * A088560 Sum of odd entries in row n of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A088560 extends LambdaSequence {

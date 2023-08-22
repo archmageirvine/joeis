@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A227469 a(n) = binomial((n+1)^2, n) * (2*n+1) / (n+1)^2 for n&gt;=0.
+ * A227469  a(n) = binomial((n+1)^2, n) * (2*n+1) / (n+1)^2 for n&gt;=0.
  * @author Georg Fischer
  */
 public class A227469 extends LambdaSequence {

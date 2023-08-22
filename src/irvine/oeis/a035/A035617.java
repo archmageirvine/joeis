@@ -14,7 +14,17 @@ import irvine.util.array.LongDynamicBooleanArray;
 public class A035617 extends Sequence0 {
 
   private final List<LongDynamicBooleanArray> mWinning = new ArrayList<>();
+  private final int mBase;
   private long mLimit = 1;
+
+  protected A035617(final int base) {
+    mBase = base;
+  }
+
+  /** Construct the sequence. */
+  public A035617() {
+    this(3);
+  }
 
   private boolean isWinning(final String s) {
     // Ignore the leading digit, it is only present to allow for leading 0s
@@ -30,7 +40,7 @@ public class A035617 extends Sequence0 {
         if (u.isEmpty()) {
           return true;
         }
-        final long v = Long.parseLong(u, 3);
+        final long v = Long.parseLong(u, mBase);
         if (mWinning.get(mWinning.size() - i + j - 1).isSet(v)) {
           return true;
         }
@@ -50,10 +60,10 @@ public class A035617 extends Sequence0 {
     long cnt = 0;
     final LongDynamicBooleanArray w = new LongDynamicBooleanArray();
     mWinning.add(w);
-    mLimit *= 3;
+    mLimit *= mBase;
     for (long k = mLimit; k < 2 * mLimit; ++k) {
       // Search from mLimit..2*mLimit rather than 0..mLimit to avoid leading 0s
-      final String s = Long.toString(k, 3);
+      final String s = Long.toString(k, mBase);
       if (isWinning(s)) {
         w.set(k - mLimit);
         ++cnt;

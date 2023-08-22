@@ -30,7 +30,7 @@ public class A064771 extends Sequence1 {
     search(n, d, sum, k + 1);
   }
 
-  private boolean is(final long n) {
+  protected boolean is(final long n) {
     final long[] d = ZUtils.toLong(Jaguar.factor(n).divisors());
     mCount = 0;
     search(n, d, 0, 0);

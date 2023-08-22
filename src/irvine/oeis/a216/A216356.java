@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A216356 a(n) = A000172(n^2), where Franel number A000172(n) = Sum_{k=0..n} C(n,k)^3.
+ * A216356  a(n) = A000172(n^2), where Franel number A000172(n) = Sum_{k=0..n} C(n,k)^3.
  * @author Georg Fischer
  */
 public class A216356 extends LambdaSequence {

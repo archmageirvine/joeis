@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A245374 G.f.: Sum_{n&gt;=0} x^n / ( (1+x)^(n+1) * (1 - 3*(n+1)*x) ).
+ * A245374  G.f.: Sum_{n&gt;=0} x^n / ( (1+x)^(n+1) * (1 - 3*(n+1)*x) ).
  * a(n)=sum(k=0,floor(n/2),sum(i=0,k,(-1)^i*binom(k,i)*(k-i+1)^(n-k)*3^(n-k)))
  * @author Georg Fischer
  */

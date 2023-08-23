@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A173790 a(n) is the number of (0,1) matrices A=(a_{ij}) of size n X (4n) such that each row has exactly four 1&apos;s and each column has exactly one 1 and with the restriction that no 1 stands on the diagonal from a_{11} to a_{22}.
+ * A173790 a(n) is the number of (0,1) matrices A=(a_{ij}) of size n X (4n) such that each row has exactly four 1's and each column has exactly one 1 and with the restriction that no 1 stands on the diagonal from a_{11} to a_{22}.
  * a(n) = sum(k=0,n,(-1)^k*(4*n-k)!/(24^(n-k)*6^k)*binom(n,k))
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A331769 El Gradechi&apos;s hybrid coefficients alpha^{4,6}_n.
+ * A331769 El Gradechi's hybrid coefficients alpha^{4,6}_n.
  * a(n) = (-1)^n*240*binom(n+5,5)-504*binom(n+3,3);
  * @author Georg Fischer
  */

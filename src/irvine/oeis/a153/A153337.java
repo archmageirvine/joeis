@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A153337 Number of zig-zag paths from top to bottom of a 2n-1 by 2n-1 square whose color is that of the top right corner
+ * A153337 Number of zig-zag paths from top to bottom of a 2n-1 by 2n-1 square whose color is that of the top right corner.
  * a(n) = n*2^(2*n-2) - 2*(n-1)*binom(2*n-2,n-1);
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A246509 G.f.: Sum_{n&gt;=0} x^n / (1-3*x)^(2*n+1) * [Sum_{k=0..n} C(n,k)^2 * 3^k * x^k] * [Sum_{k=0..n} C(n,k)^2 * 4^k * x^k].
+ * A246509  G.f.: Sum_{n&gt;=0} x^n / (1-3*x)^(2*n+1) * [Sum_{k=0..n} C(n,k)^2 * 3^k * x^k] * [Sum_{k=0..n} C(n,k)^2 * 4^k * x^k].
  * a(n)=sum(k=0,n\2,sum(j=0,n-2*k,4^k * binom(n-k,k+j)^2 * binom(k+j,j)^2 * 3^j))
  * @author Georg Fischer
  */

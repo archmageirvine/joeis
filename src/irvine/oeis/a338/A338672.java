@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A338672 Number of n-step closed walks on the kagom√© lattice.
+ * A338672 Number of n-step closed walks on the kagom\u00e9 lattice.
  * a(n)=((-2)^n + 2 * sum(k=0,n\2,sum(j=0,k,binom(n,2*k) * binom(k,j)^2 * binom(2*j,j))))/3
  * @author Georg Fischer
  */

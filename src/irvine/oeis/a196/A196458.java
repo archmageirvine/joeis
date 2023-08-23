@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A196458 E.g.f.: A(x) = Sum_{n&gt;=0} (3^n + (-1)^n)^n * exp((3^n + (-1)^n)*x) * x^n/n!.
+ * A196458  E.g.f.: A(x) = Sum_{n&gt;=0} (3^n + (-1)^n)^n * exp((3^n + (-1)^n)*x) * x^n/n!.
  * a(n)=sum(k=0,n,binom(n,k)*(1 + (-1)^(n-k)*3^k)^n)
  * @author Georg Fischer
  */

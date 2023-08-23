@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A331770 El Gradechi&apos;s hybrid coefficients alpha^{6,6}_{2n}, negated.
+ * A331770 El Gradechi's hybrid coefficients alpha^{6,6}_{2n}, negated.
  * a(n) = 1008*binom(5 + 2*n,5);
  * @author Georg Fischer
  */

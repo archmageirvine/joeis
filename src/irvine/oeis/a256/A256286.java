@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A256286 Number of Hamiltonian cycles in a tournament on 3n vertices constructed by taking 3 copies of a transitive tournament on n vertices and placing each copy on a vertex of a directed 3-cycle, with all edges between the copies oriented in the direction of the
+ * A256286 Number of Hamiltonian cycles in a tournament on 3n vertices constructed by taking 3 copies of a transitive tournament on n vertices and placing each copy on a vertex of a directed 3-cycle, with all edges between the copies oriented in the direction of the cycle.
  * a(n)=sum(k=1,n,(stirl(n,k,2)*k!)^3/k)
  * @author Georg Fischer
  */

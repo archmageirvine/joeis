@@ -2221,3 +2221,5 @@ A065111 Dead-end primes in "The Prime Number Maze."
 A065246 Formal neural networks with n components
 A065247 Imperfect formal neural networks with n components
 A065248	Networks with n components.
+A065267 The siteswap sequence (the deltas p[i]-i, i in ]-inf,+inf[, folded from Z to N, mapping 0->1, 1->2, -1->3, 2->4, -2->5, etc.) for A065266.
+A065268 The bisection of odd terms (the <= 0 half of Z) of A065267.

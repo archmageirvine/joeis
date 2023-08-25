@@ -6,7 +6,6 @@ import irvine.oeis.BriefSequence;
 
 /**
  * A280300 Primes such that the Wilson quotient and the Fermat quotient satisfy 2*((p-1)!+1)/p +(2^(p-1)-1)/p == 0 (mod p).
- *
  * @author Georg Fischer
  */
 public class A280300 extends BriefSequence {

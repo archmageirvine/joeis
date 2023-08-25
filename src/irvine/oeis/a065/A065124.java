@@ -2,13 +2,13 @@ package irvine.oeis.a065;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A065124 a(n) = (sum of digits of a(n-2)) + a(n-1); a(0) = 0 and a(1) = 1.
  * @author Sean A. Irvine
  */
-public class A065124 extends Sequence1 {
+public class A065124 extends Sequence0 {
 
   private Z mA = null;
   private Z mB = null;

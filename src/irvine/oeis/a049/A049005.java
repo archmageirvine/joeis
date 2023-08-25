@@ -11,6 +11,6 @@ public class A049005 extends PaddingSequence {
 
   /** Construct the sequence. */
   public A049005() {
-    super(1, new long[]{}, new long[]{6, 6, 7, 9, 8, 6, 8});
+    super(0, new long[] {}, new long[] {6, 6, 7, 9, 8, 6, 8});
   }
 }

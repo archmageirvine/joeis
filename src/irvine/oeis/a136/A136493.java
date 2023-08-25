@@ -6,13 +6,13 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A136493 Triangle of coefficients of characteristic polynomials of symmetrical pentadiagonal matrices of the type (1,-1,1,-1,1).
  * @author Sean A. Irvine
  */
-public class A136493 extends Sequence1 {
+public class A136493 extends Sequence0 {
 
   private final int mBandWidth;
   private int mN = -1;

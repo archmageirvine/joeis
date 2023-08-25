@@ -4,13 +4,15 @@ import java.util.Arrays;
 
 import irvine.math.set.IntegerPermutation;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 
 /**
  * A065162 Least common multiple of all orbit sizes (cycle lengths in corresponding permutations A065181-A065184) into which the Foata transform partitions the symmetric group Sn.
  * @author Sean A. Irvine
  */
-public class A065162 extends A065181 {
+public class A065162 extends Sequence1 {
 
+  private final A065181 mSeq = new A065181();
   private int mF = 1;
   private int mN = 0;
   private int[] mP = {};
@@ -25,7 +27,7 @@ public class A065162 extends A065181 {
     mF *= mN;
     mP = Arrays.copyOf(mP, mF);
     for (int k = old; k < mP.length; ++k) {
-      mP[k] = super.next().intValueExact();
+      mP[k] = mSeq.next().intValueExact();
     }
     return IntegerPermutation.lcmCycleSizes(mP);
   }

@@ -6,13 +6,13 @@ import irvine.math.LongUtils;
 import irvine.math.cr.Convergents;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A065121 Least m such that the maximal palindrome within the period of the continued fraction for sqrt(m) is the n-th row of Pascal's triangle; or 0 if no such number exists.
  * @author Sean A. Irvine
  */
-public class A065121 extends Sequence1 {
+public class A065121 extends Sequence0 {
 
   private int mN = -1;
 

@@ -14,6 +14,6 @@ public class A268173 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A268173() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> ((((k) & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Z.valueOf(k).sqrt())));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> ((k & 1) == 0 ? Z.ONE : Z.NEG_ONE).multiply(Z.valueOf(k).sqrt())));
   }
 }

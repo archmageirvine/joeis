@@ -15,6 +15,6 @@ public class A204044 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A204044() {
-    super(1, n -> ((((n) & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Integers.SINGLETON.product(1, n, i -> Integers.SINGLETON.product(1, n - i, j -> Z.valueOf(i).multiply(i).add(Z.valueOf(j).multiply(j)))).pow(Z.TWO)).multiply(MemoryFactorial.SINGLETON.factorial(n).pow(Z.FOUR)));
+    super(1, n -> ((n & 1) == 0 ? Z.ONE : Z.NEG_ONE).multiply(Integers.SINGLETON.product(1, n, i -> Integers.SINGLETON.product(1, n - i, j -> Z.valueOf(i).multiply(i).add(Z.valueOf(j).multiply(j)))).pow(Z.TWO)).multiply(MemoryFactorial.SINGLETON.factorial(n).pow(Z.FOUR)));
   }
 }

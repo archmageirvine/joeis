@@ -15,6 +15,6 @@ public class A334986 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A334986() {
-    super(1, n -> Rationals.SINGLETON.sum(0, n - 1, k -> ((((k) & 1) == 0) ? Q.ONE : Q.NEG_ONE).multiply(Stirling.secondKind(n - 1, k)).multiply(new Q(n).pow(k - 1))).num());
+    super(1, n -> Rationals.SINGLETON.sum(0, n - 1, k -> ((k & 1) == 0 ? Q.ONE : Q.NEG_ONE).multiply(Stirling.secondKind(n - 1, k)).multiply(new Q(n).pow(k - 1))).num());
   }
 }

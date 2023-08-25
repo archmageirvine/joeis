@@ -13,6 +13,6 @@ public class A231279 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A231279() {
-    super(1, n -> Z.ONE.shiftLeft(n * n).subtract((((n & 1) == 0) ? Z.ONE : Z.NEG_ONE)).divide(Z.THREE));
+    super(1, n -> Z.ONE.shiftLeft((long) n * n).subtract((n & 1) == 0 ? Z.ONE : Z.NEG_ONE).divide(Z.THREE));
   }
 }

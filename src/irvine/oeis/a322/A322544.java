@@ -14,6 +14,6 @@ public class A322544 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A322544() {
-    super(0, n -> (Z.FOUR).multiply(MemoryFactorial.SINGLETON.factorial(n + 2)).divide((Z.FIVE).add(Z.THREE.multiply((((n & 1) == 0) ? Z.ONE : Z.NEG_ONE))).add(Z.TWO.multiply(n))));
+    super(0, n -> Z.FOUR.multiply(MemoryFactorial.SINGLETON.factorial(n + 2)).divide((Z.FIVE).add(Z.THREE.multiply((n & 1) == 0 ? Z.ONE : Z.NEG_ONE)).add(Z.TWO.multiply(n))));
   }
 }

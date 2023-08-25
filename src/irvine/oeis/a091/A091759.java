@@ -13,6 +13,6 @@ public class A091759 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A091759() {
-    super(0, n -> Z.ZERO.pow(n).add(Z.TWO.multiply(Z.valueOf(n + 1).pow(n).subtract((((n & 1) == 0) ? Z.ONE : Z.NEG_ONE))).divide(Z.valueOf(n + 2))));
+    super(0, n -> Z.ZERO.pow(n).add(Z.TWO.multiply(Z.valueOf(n + 1).pow(n).subtract((n & 1) == 0 ? Z.ONE : Z.NEG_ONE)).divide(Z.valueOf(n + 2))));
   }
 }

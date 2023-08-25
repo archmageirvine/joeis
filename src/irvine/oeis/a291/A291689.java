@@ -17,10 +17,10 @@ public class A291689 extends Sequence1 {
     while (true) {
       mK = mK.add(1);
       final Z k2 = mK.square();
-      if (!k2.add(mK).add(1).isProbablePrime() &&
-        !k2.add(mK).subtract(1).isProbablePrime() &&
-        !k2.subtract(mK).add(1).isProbablePrime() &&
-        !k2.subtract(mK).subtract(1).isProbablePrime()) {
+      if (!k2.add(mK).add(1).isProbablePrime()
+        && !k2.add(mK).subtract(1).isProbablePrime()
+        && !k2.subtract(mK).add(1).isProbablePrime()
+        && !k2.subtract(mK).subtract(1).isProbablePrime()) {
         return mK;
       }
     }

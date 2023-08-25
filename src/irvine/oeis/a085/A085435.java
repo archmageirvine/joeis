@@ -13,6 +13,6 @@ public class A085435 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A085435() {
-    super(1, n -> Z.FOUR.pow(n).subtract(Z.ONE.shiftLeft(n)).subtract(Z.valueOf(-2).pow(n)).add((((n & 1) == 0) ? Z.ONE : Z.NEG_ONE)));
+    super(1, n -> Z.FOUR.pow(n).subtract(Z.ONE.shiftLeft(n)).subtract(Z.valueOf(-2).pow(n)).add((n & 1) == 0 ? Z.ONE : Z.NEG_ONE));
   }
 }

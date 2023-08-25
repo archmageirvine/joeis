@@ -2223,3 +2223,11 @@ A065247 Imperfect formal neural networks with n components
 A065248	Networks with n components.
 A065267 The siteswap sequence (the deltas p[i]-i, i in ]-inf,+inf[, folded from Z to N, mapping 0->1, 1->2, -1->3, 2->4, -2->5, etc.) for A065266.
 A065268 The bisection of odd terms (the <= 0 half of Z) of A065267.
+A065273 The siteswap sequence (the deltas p[i]-i, i in ]-inf,+inf[, folded from Z to N, mapping 0->1, 1->2, -1->3, 2->4, -2->5, etc.) for A065272.
+A065274 The bisection of odd terms (the <= 0 half of Z) of A065273.
+A065279 The siteswap sequence (the deltas p[i]-i, i in ]-inf,+inf[, folded from Z to N, mapping 0->1, 1->2, -1->3, 2->4, -2->5, etc.) for A065278
+A065280 The bisection of odd terms (the <= 0 half of Z) of A065279
+A065285 The siteswap sequence (the deltas p[i]-i, i in ]-inf,+inf[, folded from Z to N, mapping 0->1, 1->2, -1->3, 2->4, -2->5, etc.) for A065284.
+A065286 The bisection of odd terms (the <= 0 half of Z) of A065285.
+A065291 The siteswap sequence (the deltas p[i]-i, i in ]-inf,+inf[, folded from Z to N, mapping 0->1, 1->2, -1->3, 2->4, -2->5, etc.) for A065290.
+A065292 The bisection of odd terms (the <= 0 half of Z) of A065291.

@@ -242,6 +242,22 @@ public final class FactorSequence {
   }
 
   /**
+   * Take the arithmetic derivative of a number (cf. OEIS A003415).
+   * @return arithmetic derivative of the number represented by <em>this</em>.
+   */
+  public Z arithmeticDerivative() {
+    final Z n = product();
+    if (n.compareTo(Z.ONE) <= 0) {
+      return Z.ZERO;
+    }
+    Z s = Z.ZERO;
+    for (final Z p : toZArray()) {
+      s = s.add(n.divide(p).multiply(getExponent(p)));
+    }
+    return s;
+  }
+
+  /**
    * Return the number of distinct factors in this factor sequence.
    * @return count of distinct factors
    */

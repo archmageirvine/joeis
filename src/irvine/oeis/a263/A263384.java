@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A263384 Fourth column of the matrix of polynomial coefficients of the rational approximation to Mill&apos;s ratio.
+ * A263384 Fourth column of the matrix of polynomial coefficients of the rational approximation to Mill's ratio.
  * a(n)=(prod(k=1,n+3,2*k)-3*prod(k=1,n+3,(2*k-1))+prod(k=1,n+2,2*k-1))/6;
  * @author Georg Fischer
  */

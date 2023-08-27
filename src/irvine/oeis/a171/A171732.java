@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A171732 a(n) = Sum_{d|n} d*2^(d^2).
+ * A171732 a(n) = sum_{d|n} d*2^(d^2).
  * a(n)=sumdiv(n,d,d*2^(d^2))
  * @author Georg Fischer
  */

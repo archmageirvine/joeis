@@ -8,7 +8,7 @@ import irvine.math.z.Stirling;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A354018 Expansion of e.g.f. -log(1-x)/(1 + log(1-x) - log(1-x)^2)
+ * A354018 Expansion of e.g.f. -log(1-x)/(1 + log(1-x) - log(1-x)^2).
  * a(n) = sum(k=0,n,k!*fibonacci(k)*abs(stirl(n,k,1)));
  * @author Georg Fischer
  */

@@ -15,6 +15,6 @@ public class A308960 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A308960() {
-    super(0, n -> Integers.SINGLETON.sum(1, n / 7, o -> Integers.SINGLETON.sum(o, ((n - o) / 6), m -> Integers.SINGLETON.sum(m, ((n - m - o) / 5), l -> Integers.SINGLETON.sum(l, ((n - l - m - o) / 4), k -> Integers.SINGLETON.sum(k, ((n - k - l - m - o) / 3), j -> Integers.SINGLETON.sum(j, ((n - j - k - l - m - o) / 2), i -> Z.valueOf(n - i - j - k - l - m - o).multiply(Z.valueOf(Mobius.mobius(o)).square()).multiply(Z.valueOf(Mobius.mobius(m)).square()).multiply(Z.valueOf(Mobius.mobius(l)).square()).multiply(Z.valueOf(Mobius.mobius(k)).square()).multiply(Z.valueOf(Mobius.mobius(j)).square()).multiply(Z.valueOf(Mobius.mobius(i)).square()).multiply(Z.valueOf(Mobius.mobius(n - i - j - k - l - m - o)).square()))))))));
+    super(0, n -> Integers.SINGLETON.sum(1, n / 7, o -> Integers.SINGLETON.sum(o, (n - o) / 6, m -> Integers.SINGLETON.sum(m, (n - m - o) / 5, l -> Integers.SINGLETON.sum(l, (n - l - m - o) / 4, k -> Integers.SINGLETON.sum(k, (n - k - l - m - o) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k - l - m - o) / 2, i -> Z.valueOf(n - i - j - k - l - m - o).multiply(Z.valueOf(Mobius.mobius(o)).square()).multiply(Z.valueOf(Mobius.mobius(m)).square()).multiply(Z.valueOf(Mobius.mobius(l)).square()).multiply(Z.valueOf(Mobius.mobius(k)).square()).multiply(Z.valueOf(Mobius.mobius(j)).square()).multiply(Z.valueOf(Mobius.mobius(i)).square()).multiply(Z.valueOf(Mobius.mobius(n - i - j - k - l - m - o)).square()))))))));
   }
 }

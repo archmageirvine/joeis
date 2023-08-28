@@ -16,6 +16,6 @@ public class A187539 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A187539() {
-    super(0, n -> ((((n) & 1) == 0) ? Z.ONE : Z.NEG_ONE).add(Integers.SINGLETON.sum(1, n, k -> ((((n - k) & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Binomial.binomial(n, k)).multiply(Binomial.binomial(2 * k - 1, k - 1)).multiply(MemoryFactorial.SINGLETON.factorial(2 * k)).divide(MemoryFactorial.SINGLETON.factorial(k)))));
+    super(0, n -> (((n & 1) == 0) ? Z.ONE : Z.NEG_ONE).add(Integers.SINGLETON.sum(1, n, k -> ((((n - k) & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Binomial.binomial(n, k)).multiply(Binomial.binomial(2 * k - 1, k - 1)).multiply(MemoryFactorial.SINGLETON.factorial(2 * k)).divide(MemoryFactorial.SINGLETON.factorial(k)))));
   }
 }

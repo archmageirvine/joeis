@@ -14,6 +14,6 @@ public class A307729 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A307729() {
-    super(1, n -> Integers.SINGLETON.sum(1, n / 3, k -> Integers.SINGLETON.sum(k, ((n - k) / 2), i -> Z.valueOf(k).multiply(Z.ONE.subtract(Z.valueOf(n - i - k).square().divide(Z.valueOf(i * i + k * k)).signum())).multiply(Z.valueOf(i + k).divide(Z.valueOf(n - i - k + 1)).signum()))));
+    super(1, n -> Integers.SINGLETON.sum(1, n / 3, k -> Integers.SINGLETON.sum(k, (n - k) / 2, i -> Z.valueOf(k).multiply(Z.ONE.subtract(Z.valueOf(n - i - k).square().divide(Z.valueOf(i * i + k * k)).signum())).multiply(Z.valueOf(i + k).divide(Z.valueOf(n - i - k + 1)).signum()))));
   }
 }

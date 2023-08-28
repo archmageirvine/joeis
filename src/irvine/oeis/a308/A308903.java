@@ -15,6 +15,6 @@ public class A308903 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A308903() {
-    super(0, n -> Z.valueOf(n).multiply(Integers.SINGLETON.sum(1, n / 6, m -> Integers.SINGLETON.sum(m, ((n - m) / 5), l -> Integers.SINGLETON.sum(l, ((n - l - m) / 4), k -> Integers.SINGLETON.sum(k, ((n - k - l - m) / 3), j -> Integers.SINGLETON.sum(j, ((n - j - k - l - m) / 2), i -> Z.valueOf(Mobius.mobius(i)).square().multiply(Z.valueOf(Mobius.mobius(j)).square()).multiply(Z.valueOf(Mobius.mobius(k)).square()).multiply(Z.valueOf(Mobius.mobius(l)).square()).multiply(Z.valueOf(Mobius.mobius(m)).square()).multiply(Z.valueOf(Mobius.mobius(n - i - j - k - l - m)).square()))))))));
+    super(0, n -> Z.valueOf(n).multiply(Integers.SINGLETON.sum(1, n / 6, m -> Integers.SINGLETON.sum(m, (n - m) / 5, l -> Integers.SINGLETON.sum(l, (n - l - m) / 4, k -> Integers.SINGLETON.sum(k, (n - k - l - m) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k - l - m) / 2, i -> Z.valueOf(Mobius.mobius(i)).square().multiply(Z.valueOf(Mobius.mobius(j)).square()).multiply(Z.valueOf(Mobius.mobius(k)).square()).multiply(Z.valueOf(Mobius.mobius(l)).square()).multiply(Z.valueOf(Mobius.mobius(m)).square()).multiply(Z.valueOf(Mobius.mobius(n - i - j - k - l - m)).square()))))))));
   }
 }

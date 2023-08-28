@@ -6,7 +6,7 @@ import irvine.oeis.a068.A068346;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A099306 n&apos;&apos;&apos;, the third arithmetic derivative of n.
+ * A099306 n''', the third arithmetic derivative of n.
  * @author Georg Fischer
  */
 public class A099306 extends SimpleTransformSequence {

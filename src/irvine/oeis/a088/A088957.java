@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A088957 Hyperbinomial transform of the sequence of 1&apos;s.
+ * A088957 Hyperbinomial transform of the sequence of 1's.
  * a(n)=sum(k=0,n,(n-k+1)^(n-k-1)*binom(n,k))
  * @author Georg Fischer
  */

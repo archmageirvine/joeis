@@ -5,7 +5,7 @@ import irvine.oeis.a157.A157037;
 import irvine.oeis.a190.A190121;
 
 /**
- * A229501 Numbers k such that Sum_{i=1..k} i&apos; == 0 (mod k), where i&apos; is the arithmetic derivative of i.
+ * A229501 Numbers k such that Sum_{i=1..k} i' == 0 (mod k), where i' is the arithmetic derivative of i.
  * @author Georg Fischer
  */
 public class A229501 extends A157037 {

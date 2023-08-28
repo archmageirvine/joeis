@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A099310 Arithmetic derivative of Euler&apos;s totient function phi(n).
+ * A099310 Arithmetic derivative of Euler's totient function phi(n).
  * @author Georg Fischer
  */
 public class A099310 extends SimpleTransformSequence {

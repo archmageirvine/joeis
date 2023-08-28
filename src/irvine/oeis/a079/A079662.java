@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A079662 a(n) = the number of occurrences of 1 in all compositions of n without 2&apos;s = # of occurrences of the integer k in compositions of n+k-1 without 2&apos;s (k &gt; 2).
+ * A079662 a(n) = the number of occurrences of 1 in all compositions of n without 2's = # of occurrences of the integer k in compositions of n+k-1 without 2's (k &gt; 2).
  * a(n)=sum(k=1,floor((n+2)/3),k*binom(n-k+1,2*k-1))
  * @author Georg Fischer
  */

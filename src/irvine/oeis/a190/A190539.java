@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A190539 2^(n^3)
+ * A190539 2^(n^3).
  * a(n)=1<<(n^3)
  * @author Georg Fischer
  */

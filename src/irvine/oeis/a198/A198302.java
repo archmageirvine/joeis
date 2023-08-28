@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A198302 a(n) = Sum_{d|n} d * sigma(n/d, d).
+ * A198302  a(n) = Sum_{d|n} d * sigma(n/d, d).
  * a(n)=sumdiv(n,d,d*sigma(n/d,d))
  * @author Georg Fischer
  */

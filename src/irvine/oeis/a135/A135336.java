@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A135336 Number of Dyck paths of semilength n with no UUDU&apos;s starting at level 0.
+ * A135336 Number of Dyck paths of semilength n with no UUDU's starting at level 0.
  * a(n)=sum(j=0,floor(n/3),(-1)^j*(3*j+1)*binom(2*n-3*j,n)/(n+1))
  * @author Georg Fischer
  */

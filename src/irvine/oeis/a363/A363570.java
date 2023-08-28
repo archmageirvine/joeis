@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A363570 Expansion of (1 / sqrt(1 - 8*x + 4*x^2) - 1 / (1 - x)) / 3.
+ * A363570 allocated for Paul D. Hanna.
  * a(n)=sum(k=1,n,binom(n,k)^2 * 3^(k-1))
  * @author Georg Fischer
  */

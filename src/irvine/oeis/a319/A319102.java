@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000035;
 import irvine.oeis.a101.A101688;
 
 /**
- * A319102 Triangle read by rows: The k-th column has alternating blocks of k 1&apos;s followed by k 0&apos;s (see example).
+ * A319102 Triangle read by rows: The k-th column has alternating blocks of k 1's followed by k 0's (see example).
  * @author Georg Fischer
  */
 public class A319102 extends A101688 {

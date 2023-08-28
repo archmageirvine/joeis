@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A244148 The number of ways one can assign values to n arrays a_{1},...,a_{n} of increasing size (size of a_{1} is 1, size of a_{2} is 2, ..., size of a_{n} is n) using the numbers 1, ..., n*(n+1)/2, distinctly, such that the positions of array a_{i} can only be as
+ * A244148 The number of ways one can assign values to n arrays a_{1},...,a_{n} of increasing size (size of a_{1} is 1, size of a_{2} is 2, ..., size of a_{n} is n) using the numbers 1, ..., n*(n+1)/2, distinctly, such that the positions of array a_{i} can only be assigned values in the interval ((n+1)-i),... , (n*(n+1)/2-(n-i)).
  * a(n)=prod(k=1,n,(k!* binom((n^2 - 3*n + 5*k - k^2)/2 ,k)))
  * @author Georg Fischer
  */

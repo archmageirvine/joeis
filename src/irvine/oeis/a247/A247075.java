@@ -8,7 +8,7 @@ import irvine.math.z.Stirling;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A247075 Expansion of e.g.f.: x^2*G&apos;(x)/G(x)^2, where G(x) satisfies G(x) = x*(1+log(1+G(x))).
+ * A247075 Expansion of e.g.f.: x^2*G'(x)/G(x)^2, where G(x) satisfies G(x) = x*(1+log(1+G(x))).
  * a(n)=sum(k=0,n,k!*binom(n-1,k)*stirl(n,k)))
  * @author Georg Fischer
  */

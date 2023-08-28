@@ -6,7 +6,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A131385 Product ceiling(n/1)*ceiling(n/2)*ceiling(n/3)*...*ceiling(n/n) (the &apos;ceiling factorial&apos;).
+ * A131385 Product ceiling(n/1)*ceiling(n/2)*ceiling(n/3)*...*ceiling(n/n) (the 'ceiling factorial').
  * a(n)=prod(k=1,n-1,((k+1)/k)^floor((n-1)/k))
  * @author Georg Fischer
  */

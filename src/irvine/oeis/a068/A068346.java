@@ -6,7 +6,7 @@ import irvine.oeis.a003.A003415;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A068346 a(n) = n&apos;&apos; = second arithmetic derivative of n.
+ * A068346 a(n) = n'' = second arithmetic derivative of n.
  * @author Georg Fischer
  */
 public class A068346 extends SimpleTransformSequence {

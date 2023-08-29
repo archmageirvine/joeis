@@ -10,62 +10,59 @@ import irvine.math.r.DoubleUtils;
 
 /**
  * Routines relating to Fibonacci and Lucas numbers.
- *
  * @author Sean A. Irvine
  */
 public final class Fibonacci  {
 
   private Fibonacci() { }
 
-  /** Small values. */
-  private static final Z[] FIBONACCI = {
-    Z.ZERO,
-    Z.ONE,
-    Z.ONE,
-    Z.TWO,
-    Z.THREE,
-    Z.FIVE,
-    Z.valueOf(8L),
-    Z.valueOf(13L),
-    Z.valueOf(21L),
-    Z.valueOf(34L),
-    Z.valueOf(55L),
-    Z.valueOf(89L),
-  };
+  private static final int SMALL_LIMIT = 100;
+  private static final Z[] FIBONACCI = new Z[SMALL_LIMIT];
+  static {
+    // These ones explicitly initialized so that constants from Z used
+    FIBONACCI[0] = Z.ZERO;
+    FIBONACCI[1] = Z.ONE;
+    FIBONACCI[2] = Z.ONE;
+    FIBONACCI[3] = Z.TWO;
+    FIBONACCI[4] = Z.THREE;
+    FIBONACCI[5] = Z.FIVE;
+    FIBONACCI[6] = Z.EIGHT;
+    // Initialize remainder of small cases
+    for (int k = 7; k < FIBONACCI.length; ++k) {
+      FIBONACCI[k] = FIBONACCI[k - 1].add(FIBONACCI[k - 2]);
+    }
+  }
 
   private static final long[] FIBONACCI_PRIMES = LongUtils.suckInNumbers("irvine/math/z/fibonacci/fibonacci-primes.dat");
   private static final long[] LUCAS_PRIMES = LongUtils.suckInNumbers("irvine/math/z/fibonacci/lucas-primes.dat");
 
   /** Cache of recently requested values. */
-  private static final Map<Integer, Z> FIBO_MAP = new LinkedHashMap<Integer, Z>() {
+  private static final Map<Long, Z> FIBO_MAP = new LinkedHashMap<>() {
     @Override
-    protected boolean removeEldestEntry(final Map.Entry<Integer, Z> eldest) {
+    protected boolean removeEldestEntry(final Map.Entry<Long, Z> eldest) {
       return size() > 100;
     }
   };
 
-
   /**
    * Returns the nth Fibonacci number.
-   *
    * @param n index
    * @return F(n)
    */
-  public static Z fibonacci(int n) {
+  public static Z fibonacci(long n) {
     // handle negatives
     if (n < 0) {
       n = -n;
-      final Z r = fibonacci(n);
+      final Z r = fibonacci(-n);
       return (n & 1) == 1 ? r : r.negate();
     }
-
     // handle small cases
     if (n < FIBONACCI.length) {
-      return FIBONACCI[n];
+      return FIBONACCI[(int) n];
     }
 
     // examine cache
-    final Integer nn = n;
+    final Long nn = n;
     final Z mapResult = FIBO_MAP.get(nn);
     if (mapResult != null) {
       return mapResult;
@@ -92,11 +89,10 @@ public final class Fibonacci  {
 
   /**
    * Return the nth Lucas number.
-   *
    * @param n index
    * @return L(n)
    */
-  public static Z lucas(final int n) {
+  public static Z lucas(final long n) {
     return fibonacci(n - 1).add(fibonacci(n + 1));
   }
 
@@ -131,7 +127,7 @@ public final class Fibonacci  {
   }
 
   /**
-   * If <code>n</code> is a Fibonacci number then return its index; that is,
+   * If <code>n</code> is a Fibonacci number, then return its index; that is,
    * return the <i>k</i> such that <i>F</i>(<i>k</i>)=<code>n</code>. If the
    * supplied argument is not a Fibonacci number then the result will be a
    * negative index for a Fibonacci number with a value similar to the supplied
@@ -172,7 +168,7 @@ public final class Fibonacci  {
   }
 
   /**
-   * If <code>n</code> is a Lucas number then return its index; that is,
+   * If <code>n</code> is a Lucas number, then return its index; that is,
    * return the <i>k</i> such that <i>L</i>(<i>k</i>)=<code>n</code>. If the
    * supplied argument is not a Lucas number then the result will be a
    * negative index for a Lucas number with a value similar to the supplied
@@ -258,7 +254,7 @@ public final class Fibonacci  {
     out.println("Y1 " + y1);
     out.println("Y0 " + y0.negate());
     out.println("M " + y0.modMultiply(y1.modInverse(c), c));
-    out.println("# skew " + DoubleUtils.NF4.format(Math.pow((double) Math.abs(c0), 0.2)));
+    out.println("# skew " + DoubleUtils.NF4.format(Math.pow(Math.abs(c0), 0.2)));
   }
 
   private static final int[][][] LUCAS_COEFFS = {
@@ -288,7 +284,6 @@ public final class Fibonacci  {
 
   /**
    * Print potential SNFS polynomials for a Lucas number.
-   *
    * @param n Lucas index
    * @param c number to be factored
    * @param out output stream
@@ -313,7 +308,6 @@ public final class Fibonacci  {
 
   /**
    * Print Fibonacci numbers.
-   *
    * @param args indexes to print
    */
   public static void main(final String[] args) {

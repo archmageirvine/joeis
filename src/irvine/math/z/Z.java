@@ -640,7 +640,7 @@ public class Z extends Number implements Comparable<Z> {
   /**
    * Compute this integer modulo another integer.  The sign of
    * result is the sign of the moduli unless the result is 0.
-   * @param n moduli
+   * @param n modulus
    * @return <code>this%n</code>
    * @exception ArithmeticException if <code>n</code> is 0.
    */
@@ -650,8 +650,19 @@ public class Z extends Number implements Comparable<Z> {
   }
 
   /**
+   * Compute this integer modulo another integer.  The sign of
+   * result is the sign of the moduli unless the result is 0.
+   * @param n modulus
+   * @return <code>this%n</code>
+   * @exception ArithmeticException if <code>n</code> is 0.
+   */
+  public Z modZ(final long n) {
+    return Z.valueOf(mod(n));
+  }
+
+  /**
    * Compute this integer modulo a long.
-   * @param n moduli
+   * @param n modulus
    * @return <code>this%n</code>
    * @exception ArithmeticException if <code>n</code> is 0.
    */

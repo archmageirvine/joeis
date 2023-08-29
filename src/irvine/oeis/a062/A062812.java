@@ -16,6 +16,6 @@ public class A062812 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sum(1, mN, i -> Z.valueOf(i).pow(mN - i).add(((((mN - i) & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Z.valueOf(mN - i).pow(i))));
+    return Integers.SINGLETON.sum(1, mN, i -> Z.valueOf(i).pow(mN - i).add((Z.NEG_ONE.pow(mN - i)).multiply(Z.valueOf(mN - i).pow(i))));
   }
 }

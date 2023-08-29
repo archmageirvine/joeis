@@ -87,8 +87,20 @@ public class Z extends Number implements Comparable<Z> {
   public static final Z NINE = Z.valueOf(9L);
   /** The constant eight. */
   public static final Z TEN = Z.valueOf(10L);
+
   /** The constant negative one. */
-  public static final Z NEG_ONE = Z.valueOf(-1L);
+  public static final Z NEG_ONE = new Z("-1") {
+    // We make a special implementation of pow so that (-1)^n can be computed efficiently.
+    @Override
+    public Z pow(final Z exponent) {
+      return exponent.isEven() ? Z.ONE : this;
+    }
+
+    @Override
+    public Z pow(final long exponent) {
+      return (exponent & 1) == 0 ? Z.ONE : this;
+    }
+  };
 
   /**
    * Directly construct the number.  Performs no error checking, assumes user

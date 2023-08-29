@@ -23,7 +23,7 @@ public class A221741 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Z.FOUR.multiply(mA023811.next()).divide(Z.THREE.negate().add((mN & 1L) == 0 ? Z.ONE : Z.NEG_ONE).multiply(Z.valueOf(mN))).negate();
+    return Z.FOUR.multiply(mA023811.next()).divide(Z.THREE.negate().add(Z.NEG_ONE.pow(mN)).multiply(Z.valueOf(mN))).negate();
   }
 
 }

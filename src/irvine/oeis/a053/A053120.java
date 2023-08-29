@@ -23,7 +23,7 @@ public class A053120 extends BaseTriangle {
       return Z.ZERO;
     }
     if (m == 0 && (n & 1) == 0) {
-      return (((n / 2) & 1) == 0) ? Z.ONE : Z.NEG_ONE;
+      return Z.NEG_ONE.pow(n / 2);
     }
     return Binomial.binomial((n + m) / 2 - 1, m - 1).multiply(n).multiply(Z.ONE.shiftLeft(m - 1)).multiply(((((n + m) / 2 + m) & 1) == 0) ? 1 : -1).divide(m);
   }

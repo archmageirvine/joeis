@@ -36,7 +36,7 @@ public class A000175 extends Sequence1 {
     for (int k = 0; k <= m; ++k) {
       final int power = 2 * k + v;
       final Z den = mF.factorial(k).multiply(mF.factorial(k + v)).shiftLeft(power);
-      coeffs[2 * k + v] = new Q((k & 1) == 0 ? Z.ONE : Z.NEG_ONE, den);
+      coeffs[2 * k + v] = new Q(Z.NEG_ONE.pow(k), den);
     }
     return RING.create(Arrays.asList(coeffs));
   }

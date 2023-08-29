@@ -29,7 +29,7 @@ public class A046716 extends MemoryFunction2Sequence<Long, Z> {
       return m == 0 ? Z.ONE : Z.ZERO;
     }
     if (m.equals(n)) {
-      return (n & 1) == 0 ? Z.ONE : Z.NEG_ONE;
+      return Z.NEG_ONE.pow(n);
     }
     return get(n - 1, m).subtract(get(n - 1, m - 1).multiply(n)).subtract(get(n - 2, m - 2).multiply(n - 1));
   }

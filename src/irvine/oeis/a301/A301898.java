@@ -14,6 +14,6 @@ public class A301898 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A301898() {
-    super(1, n -> MemoryFactorial.SINGLETON.factorial(2 * n + 1).multiply((Z.THREE).add((n + 1 & 1) == 0 ? Z.ONE : Z.NEG_ONE)).divide(Z.TWO));
+    super(1, n -> MemoryFactorial.SINGLETON.factorial(2 * n + 1).multiply(Z.THREE.add((n + 1 & 1) == 0 ? Z.ONE : Z.NEG_ONE)).divide(Z.TWO));
   }
 }

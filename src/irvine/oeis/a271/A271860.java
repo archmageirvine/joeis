@@ -14,6 +14,6 @@ public class A271860 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A271860() {
-    super(0, n -> Z.ZERO.subtract(Integers.SINGLETON.sum(1, n, i -> (n / i & 1) == 0 ? Z.ONE : Z.NEG_ONE)));
+    super(0, n -> Z.ZERO.subtract(Integers.SINGLETON.sum(1, n, i -> Z.NEG_ONE.pow(n / i))));
   }
 }

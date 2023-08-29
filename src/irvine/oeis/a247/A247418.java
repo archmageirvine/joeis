@@ -15,6 +15,6 @@ public class A247418 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A247418() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, i -> Z.valueOf(Mobius.mobius(i)).multiply(((i + 1) & 1) == 0 ? Z.ONE : Z.NEG_ONE)));
+    super(1, n -> Integers.SINGLETON.sum(1, n, i -> Z.valueOf(Mobius.mobius(i)).multiply(Z.NEG_ONE.pow(i + 1))));
   }
 }

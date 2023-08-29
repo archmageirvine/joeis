@@ -15,6 +15,6 @@ public class A137801 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A137801() {
-    super(1, n -> MemoryFactorial.SINGLETON.factorial(n).multiply(Integers.SINGLETON.sum(0, n, i -> (((i & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Integers.SINGLETON.sum(0, n - i, j -> MemoryFactorial.SINGLETON.factorial(2 * n).multiply(MemoryFactorial.SINGLETON.factorial(2 * n - i - 2 * j)).divide(MemoryFactorial.SINGLETON.factorial(n - i - j)).divide(MemoryFactorial.SINGLETON.factorial(i)).divide(MemoryFactorial.SINGLETON.factorial(j)).divide(Z.ONE.shiftLeft(2 * n - 2 * i - j)))))));
+    super(1, n -> MemoryFactorial.SINGLETON.factorial(n).multiply(Integers.SINGLETON.sum(0, n, i -> Z.NEG_ONE.pow(i).multiply(Integers.SINGLETON.sum(0, n - i, j -> MemoryFactorial.SINGLETON.factorial(2 * n).multiply(MemoryFactorial.SINGLETON.factorial(2 * n - i - 2 * j)).divide(MemoryFactorial.SINGLETON.factorial(n - i - j)).divide(MemoryFactorial.SINGLETON.factorial(i)).divide(MemoryFactorial.SINGLETON.factorial(j)).divide(Z.ONE.shiftLeft(2 * n - 2 * i - j)))))));
   }
 }

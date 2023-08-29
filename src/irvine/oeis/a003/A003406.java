@@ -25,7 +25,7 @@ public class A003406 extends Sequence0 {
     Polynomial<Z> gf = RING.one();
     for (int k = 1; k <= mN; ++k) {
       prod = RING.multiply(prod, RING.oneMinusXToTheN(k), mN);
-      gf = RING.add(gf, RING.multiply(RING.monomial((k & 1) == 0 ? Z.ONE : Z.NEG_ONE, k), prod, mN));
+      gf = RING.add(gf, RING.multiply(RING.monomial(Z.NEG_ONE.pow(k), k), prod, mN));
     }
     return gf.coeff(mN);
   }

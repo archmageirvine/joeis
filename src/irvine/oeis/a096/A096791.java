@@ -24,7 +24,7 @@ public class A096791 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return mA000009.next().add(((mN & 1L) == 0 ? Z.ONE : Z.NEG_ONE).multiply(mA010815.next())).divide(Z.TWO);
+    return mA000009.next().add((Z.NEG_ONE.pow(mN)).multiply(mA010815.next())).divide(Z.TWO);
   }
 
 }

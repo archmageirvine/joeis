@@ -22,7 +22,7 @@ public class A246833 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return ((mN & 1L) == 0 ? Z.ONE : Z.NEG_ONE).multiply(mA213624.next());
+    return Z.NEG_ONE.pow(mN).multiply(mA213624.next());
   }
 
 }

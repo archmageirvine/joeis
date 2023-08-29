@@ -38,7 +38,7 @@ public class A002190 extends Sequence0 {
     final ArrayList<Q> coeff = new ArrayList<>();
     coeff.add(Q.ZERO);
     for (int k = 1; k <= mN; ++k) {
-      coeff.add(new Q((k & 1) == 0 ? Z.ONE : Z.NEG_ONE, f2(k)));
+      coeff.add(new Q(Z.NEG_ONE.pow(k), f2(k)));
     }
     final Polynomial<Q> series = RING.log1p(RING.create(coeff), mN);
     return series.coeff(mN).multiply(f2(mN)).toZ().negate();

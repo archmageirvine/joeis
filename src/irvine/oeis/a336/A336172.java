@@ -15,6 +15,6 @@ public class A336172 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A336172() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> (((n - k & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(MemoryFactorial.SINGLETON.factorial(Z.valueOf(n).add(Z.valueOf(n - 1).multiply(k)))).divide(MemoryFactorial.SINGLETON.factorial(n - k).multiply(MemoryFactorial.SINGLETON.factorial(k).pow(n)))));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Z.NEG_ONE.pow(n - k).multiply(MemoryFactorial.SINGLETON.factorial(Z.valueOf(n).add(Z.valueOf(n - 1).multiply(k)))).divide(MemoryFactorial.SINGLETON.factorial(n - k).multiply(MemoryFactorial.SINGLETON.factorial(k).pow(n)))));
   }
 }

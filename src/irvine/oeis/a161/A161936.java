@@ -20,6 +20,6 @@ public class A161936 extends HypergeometricSequence {
   @Override
   public Z next() {
     ++mN;
-    return super.nextQ().multiply(-mN).add(1).multiply(((mN & 1) == 0) ? Z.ONE : Z.NEG_ONE).num();
+    return super.nextQ().multiply(-mN).add(1).multiply(Z.NEG_ONE.pow(mN)).num();
   }
 }

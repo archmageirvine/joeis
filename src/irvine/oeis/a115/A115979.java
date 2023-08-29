@@ -21,7 +21,7 @@ public class A115979 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return ((mN & 1L) == 0 ? Z.ONE : Z.NEG_ONE).multiply(mA096936.next()).negate();
+    return Z.NEG_ONE.pow(mN).multiply(mA096936.next()).negate();
   }
 
 }

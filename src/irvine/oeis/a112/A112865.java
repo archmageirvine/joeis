@@ -13,7 +13,7 @@ public class A112865 extends Sequence0 {
   private int mN = -1;
 
   private Z f(final int n) {
-    return (n == 0) ? Z.ONE : (((n & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(f(n / 4));
+    return (n == 0) ? Z.ONE : Z.NEG_ONE.pow(n).multiply(f(n / 4));
   }
 
   @Override

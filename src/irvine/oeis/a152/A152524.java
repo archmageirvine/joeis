@@ -16,6 +16,6 @@ public class A152524 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return (((mN & 1) == 0) ? Z.ONE : Z.NEG_ONE).add(511).subtract(2L * mN);
+    return Z.NEG_ONE.pow(mN).add(511).subtract(2L * mN);
   }
 }

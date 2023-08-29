@@ -16,6 +16,6 @@ public class A359154 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Jaguar.factor(mN).sopfr().isEven() ? Z.ONE : Z.NEG_ONE;
+    return Z.NEG_ONE.pow(Jaguar.factor(mN).sopfr());
   }
 }

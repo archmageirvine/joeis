@@ -20,7 +20,7 @@ public class A359793 extends DirichletInverseSequence {
 
       @Override
       public Z next() {
-        return super.next().isEven() ? Z.ONE : Z.NEG_ONE;
+        return Z.NEG_ONE.pow(super.next());
       }
     });
   }

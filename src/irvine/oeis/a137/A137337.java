@@ -17,6 +17,6 @@ public class A137337 extends Triangle {
 
   @Override
   public Z compute(final int i, final int j) {
-    return Binomial.binomial(i, j).multiply(i + 1).multiply((((i + j) & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Z.ONE.shiftLeft(i - j)).multiply(Z.ONE.shiftLeft(2L * j));
+    return Binomial.binomial(i, j).multiply(i + 1).multiply(Z.NEG_ONE.pow(i + j)).multiply(Z.ONE.shiftLeft(i - j)).multiply(Z.ONE.shiftLeft(2L * j));
   }
 }

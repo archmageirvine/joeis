@@ -20,7 +20,7 @@ public class A208546 extends Sequence0 {
     final long n121 = 120 * mN + 1;
     final long m = LongUtils.sqrt(n121);
     if (m * m == n121) {
-      return (((m / 40 + m / 12) & 1) == 0) ? Z.ONE : Z.NEG_ONE;
+      return Z.NEG_ONE.pow(m / 40 + m / 12);
     } else {
       return Z.ZERO;
     }

@@ -14,6 +14,6 @@ public class A089043 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A089043() {
-    super(1, n -> MemoryFactorial.SINGLETON.factorial(n).pow(Z.TWO).add((n & 1) == 0 ? Z.ONE : Z.NEG_ONE));
+    super(1, n -> MemoryFactorial.SINGLETON.factorial(n).pow(Z.TWO).add(Z.NEG_ONE.pow(n)));
   }
 }

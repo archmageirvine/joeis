@@ -21,7 +21,7 @@ public class A157013 extends Triangle {
   protected Z compute(int n, int k) {
     ++n;
     ++k;
-    return k == 1 ? Z.ONE : (k == n ? (((n - 1) & 1) == 0 ? Z.ONE : Z.NEG_ONE)
+    return k == 1 ? Z.ONE : (k == n ? Z.NEG_ONE.pow(n - 1)
       : get(n - 2, k - 2).multiply(n - k - 1).add(get(n - 2, k - 1).multiply(k + 2)));
   }
 }

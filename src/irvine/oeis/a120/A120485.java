@@ -14,6 +14,6 @@ public class A120485 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A120485() {
-    super(0, n -> (n == 0) ? Z.ONE : Integers.SINGLETON.sum(1, n, i -> Z.valueOf(i).pow(n).multiply((i & 1) == 0 ? Z.ONE : Z.NEG_ONE)).abs());
+    super(0, n -> (n == 0) ? Z.ONE : Integers.SINGLETON.sum(1, n, i -> Z.valueOf(i).pow(n).multiply(Z.NEG_ONE.pow(i))).abs());
   }
 }

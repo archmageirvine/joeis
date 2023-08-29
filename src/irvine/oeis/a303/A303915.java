@@ -12,6 +12,6 @@ public class A303915 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A303915() {
-    super(1, (p, e) -> (((e & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(e));
+    super(1, (p, e) -> Z.NEG_ONE.pow(e).multiply(e));
   }
 }

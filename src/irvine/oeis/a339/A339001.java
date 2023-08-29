@@ -22,6 +22,6 @@ public class A339001 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return (((mN & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Integers.SINGLETON.sum(0, mN, k -> Z.valueOf(-mN).pow(k).multiply(Binomial.binomial(mN, k)).multiply(Binomial.catalan(k))));
+    return Z.NEG_ONE.pow(mN).multiply(Integers.SINGLETON.sum(0, mN, k -> Z.valueOf(-mN).pow(k).multiply(Binomial.binomial(mN, k)).multiply(Binomial.catalan(k))));
   }
 }

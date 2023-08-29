@@ -40,7 +40,7 @@ public class A136493 extends Sequence0 {
       final MatrixRing<Z> ring = new MatrixRing<>(++mN, Integers.SINGLETON);
       final Matrix<Z> matrix = new DefaultMatrix<>(mN, mN, Z.ZERO);
       for (int k = 0; k <= mBandWidth / 2; ++k) {
-        final Z t = (k & 1) == 0 ? Z.ONE : Z.NEG_ONE;
+        final Z t = Z.NEG_ONE.pow(k);
         for (int j = k; j < mN; ++j) {
           matrix.set(j - k, j, t);
           matrix.set(j, j - k, t);

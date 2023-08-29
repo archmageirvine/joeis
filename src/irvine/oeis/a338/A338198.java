@@ -18,6 +18,6 @@ public class A338198 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return Z.ONE.shiftLeft(n - k).multiply(k + 1).subtract(((((n - k) & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(k - 2)).divide(3);
+    return Z.ONE.shiftLeft(n - k).multiply(k + 1).subtract((Z.NEG_ONE.pow(n - k)).multiply(k - 2)).divide(3);
   }
 }

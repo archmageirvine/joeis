@@ -12,6 +12,6 @@ public class A238534 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A238534() {
-    super(1, (p, e) -> p.equals(Z.TWO) ? Z.ONE.shiftLeft(6L * e - 1) : p.subtract(1).multiply(p.pow(6L * e - 4)).multiply(p.pow(3).subtract(p.subtract(1).multiply(3).divide2().isEven() ? Z.ONE : Z.NEG_ONE)));
+    super(1, (p, e) -> p.equals(Z.TWO) ? Z.ONE.shiftLeft(6L * e - 1) : p.subtract(1).multiply(p.pow(6L * e - 4)).multiply(p.pow(3).subtract(Z.NEG_ONE.pow(p.subtract(1).multiply(3).divide2()))));
   }
 }

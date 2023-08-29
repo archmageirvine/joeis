@@ -44,7 +44,7 @@ public class Q implements Comparable<Q>, Serializable {
 
 
   /*
-   * The rational number is stored in lowest possible terms with numerator
+   * The rational number is stored in the lowest possible terms with numerator
    * mP and denominator mQ. The sign of the denominator is always positive,
    * so that the numerator carries the sign. Zero is represented by mP=0
    * and mQ=1.

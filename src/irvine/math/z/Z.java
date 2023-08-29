@@ -697,8 +697,8 @@ public class Z extends Number implements Comparable<Z> {
 
   /**
    * Returns the maximum of this integer and <code>val</code>.
-   * @param  val value with with the maximum is to be computed.
-   * @return the integer whose value is the greater of this and
+   * @param val value
+   * @return the integer whose value is the greatest of this and
    * <code>val</code>.  If they are equal, either may be returned.
    */
   public Z max(final Z val) {
@@ -706,13 +706,33 @@ public class Z extends Number implements Comparable<Z> {
   }
 
   /**
+   * Returns the maximum of this integer and <code>val</code>.
+   * @param val value
+   * @return the integer whose value is the greatest of this and
+   * <code>val</code>.  If they are equal, either may be returned.
+   */
+  public Z max(final long val) {
+    return max(Z.valueOf(val));
+  }
+
+  /**
    * Returns the minimum of this integer and <code>val</code>.
-   * @param  val value with with the minimum is to be computed.
-   * @return the integer whose value is the lesser of this integer and
+   * @param val value
+   * @return the integer whose value is the least of this integer and
    * <code>val</code>.  If they are equal, either may be returned.
    */
   public Z min(final Z val) {
     return compareTo(val) < 0 ? this : val;
+  }
+
+  /**
+   * Returns the minimum of this integer and <code>val</code>.
+   * @param val value
+   * @return the integer whose value is the least of this integer and
+   * <code>val</code>.  If they are equal, either may be returned.
+   */
+  public Z min(final long val) {
+    return min(Z.valueOf(val));
   }
 
   /**

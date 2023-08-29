@@ -70,7 +70,18 @@ public class Z extends Number implements Comparable<Z> {
   /** The constant one. */
   public static final Z ONE = Z.valueOf(1L);
   /** The constant two. */
-  public static final Z TWO = Z.valueOf(2L);
+  public static final Z TWO = new Z("2") {
+    // We make a special implementation of pow so that 2^n can be computed efficiently.
+    @Override
+    public Z pow(final Z exponent) {
+      return pow(exponent.longValueExact());
+    }
+
+    @Override
+    public Z pow(final long exponent) {
+      return Z.ONE.shiftLeft(exponent);
+    }
+  };
   /** The constant three. */
   public static final Z THREE = Z.valueOf(3L);
   /** The constant four. */

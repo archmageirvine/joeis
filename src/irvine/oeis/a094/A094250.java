@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A094250 Array read by antidiagonals: T(n,k) = (n+2)^(k+1)/(n+1)^2+k+1-(k+1)/(n+1)-1/(n+1)^2, n &gt;= 0, k &gt;= 0.
+ * A094250 Array, A(n, k) = ((n+2)^(k+1) + (k+1)*n*(n+1) - 1)/(n+1)^2, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A094250 extends UpperLeftTriangle {

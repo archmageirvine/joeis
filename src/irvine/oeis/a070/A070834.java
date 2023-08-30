@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004086;
 
 /**
- * A070834 Reverse(n)^n.
+ * A070834 a(n) = reverse(n)^n.
  * @author Georg Fischer
  */
 public class A070834 extends A004086 {

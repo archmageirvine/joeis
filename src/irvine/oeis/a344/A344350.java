@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A344350 a(n) = Sum_{k=1..n} mu(n*k-k-1)^2, where mu is the M√∂bius function.
+ * A344350 a(n) = Sum_{k=1..n} mu(n*k-k-1)^2, where mu is the M\u00f6bius function.
  * a(n)=sum(k=1,n,moebius(n*k-k+1)^2)
  * @author Georg Fischer
  */

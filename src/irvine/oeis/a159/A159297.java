@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A159297 Number of 3D matrices with positive integer entries such that sum of all entries equals n
+ * A159297 Number of 3D matrices with positive integer entries such that sum of all entries equals n.
  * a(n)=sum(k=1,n,sum(j=1,n,sum(i=1,n,binom(n-1,i*j*k-1))))
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A011549 Decimal expansion of sqrt(3) truncated to n places.
+ * A011549 a(n) = floor(sqrt(3)*10^n).
  * @author Sean A. Irvine
  */
 public class A011549 extends Sequence0 {

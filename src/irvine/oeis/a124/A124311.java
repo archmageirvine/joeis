@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A124311 a(n) = Sum_{i=0..n} (-2)^i*B(i)*binomial(n,i) where B(n) = Bell numbers A000110(n).
+ * A124311 a(n) = Sum_{i=0..n} (-2)^i*binomial(n,i)*B(i) where B(n) = Bell numbers A000110(n).
  * E.g.f.: exp(exp(-2*x)-1+x)
  * @author Georg Fischer
  */

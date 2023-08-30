@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
 /**
- * A061659 In base 5 n and n^2 contain the same digits in the same proportion.
+ * A061659 Numbers k &gt; 1 such that, in base 5, k and k^2 contain the same digits in the same proportion.
  * @author Sean A. Irvine
  */
 public class A061659 extends A061657 {

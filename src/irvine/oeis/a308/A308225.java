@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A308225 Take the integer-sided triangles with perimeter n and mutually coprime sides a, b and c such that a &lt;= b &lt;= c. a(n) is the sum of all the b&apos;s.
+ * A308225 Take the integer-sided triangles with perimeter n and mutually coprime sides a, b and c such that a &lt;= b &lt;= c. a(n) is the sum of all the b's.
  * a(n)=sum(k=1,floor(n/3),sum(i=k,floor((n-k)/2),i*floor(1/(gcd(i,k)*gcd(i,n-i-k)*gcd(k,n-i-k)))*sign(floor((i+k)/(n-i-k+1)))))
  * @author Georg Fischer
  */

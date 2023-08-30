@@ -4,7 +4,7 @@ package irvine.oeis.a124;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A124314 Expansion of 1/(-1 - x - x^2 - x^3 - x^4 + x^5).
+ * A124314 Expansion of -1/(1 + x + x^2 + x^3 + x^4 - x^5).
  * @author Georg Fischer
  */
 public class A124314 extends HolonomicRecurrence {

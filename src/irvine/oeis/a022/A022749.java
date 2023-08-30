@@ -7,7 +7,7 @@ import irvine.oeis.transform.GeneralizedEulerTransform;
 
 
 /**
- * A022749 Expansion of Product_{m=1..infinity} (1-m*q^m)^-25.
+ * A022749 Expansion of 1/Product_{m&gt;=1} (1 - m*q^m)^25.
  * G.f.: <code>Product_{k&gt;=1} ((1-k*x^k)^(-25))</code>
  * @author Georg Fischer
  */

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A346987 E.g.f.: 1 / (1 + 5 * log(1 - x))^(1/5).
+ * A346987 Expansion of e.g.f. 1 / (1 + 5 * log(1 - x))^(1/5).
  * E.g.f.: 1 / (1 + 5 * log(1 - x))^(1/5)
  * @author Georg Fischer
  */

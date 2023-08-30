@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000961;
 import irvine.oeis.a013.A013929;
 
 /**
- * A363597 allocated for Michael De Vlieger.
+ * A363597 Union of prime powers and numbers that are not squarefree.
  * @author Georg Fischer
  */
 public class A363597 extends UnionSequence {

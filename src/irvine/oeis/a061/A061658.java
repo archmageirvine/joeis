@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
 /**
- * A061658 In base 4 n and n^2 contain the same digits in the same proportion.
+ * A061658 Numbers k &gt; 1 such that, in base 4, k and k^2 contain the same digits in the same proportion.
  * @author Sean A. Irvine
  */
 public class A061658 extends A061657 {

@@ -4,7 +4,7 @@ package irvine.oeis.a365;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A365137 a(n) is the number of n-digit numbers that contain &apos;22&apos; in their decimal representation.
+ * A365137 a(n) is the number of n-digit numbers that contain '22' in their decimal representation.
  * @author Georg Fischer
  */
 public class A365137 extends GeneratingFunctionSequence {

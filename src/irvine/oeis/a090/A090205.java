@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A090205 n^n * (n+1)^(n+1).
+ * A090205 a(n) = n^n * (n+1)^(n+1).
  * @author Georg Fischer
  */
 public class A090205 extends Sequence1 {

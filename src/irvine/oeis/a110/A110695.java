@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A110695 Kekul√© numbers for certain benzenoids of trigonal symmetry.
+ * A110695 Kekul\u00e9 numbers for certain benzenoids of trigonal symmetry.
  * a(n)=(2*binom(2*n,n)-1)*(binom(2*n,n)^2-binom(2*n,n)+1)
  * @author Georg Fischer
  */

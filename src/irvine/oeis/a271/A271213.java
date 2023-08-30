@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A271213 a(n) = 2^(n-2) * (n! + floor(n/2)!)
+ * A271213 a(n) = 2^(n-2) * (n! + floor(n/2)!).
  * a(n)=2^(n-2)*(n!+floor(n/2)!)
  * @author Georg Fischer
  */

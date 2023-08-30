@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A061657 In base 3 n and n^2 contain the same digits in the same proportion.
+ * A061657 Numbers k &gt; 1 such that, in base 3, k and k^2 contain the same digits in the same proportion.
  * @author Sean A. Irvine
  */
 public class A061657 extends Sequence1 {

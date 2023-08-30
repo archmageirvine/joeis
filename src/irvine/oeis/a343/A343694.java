@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A343694 a(n) is the number of men&apos;s preference profiles in the stable marriage problem with n men and n women, such that all men prefer different women as their first choices.
+ * A343694 a(n) is the number of men's preference profiles in the stable marriage problem with n men and n women, such that all men prefer different women as their first choices.
  * a(n)=n!(n-1)!^n
  * @author Georg Fischer
  */

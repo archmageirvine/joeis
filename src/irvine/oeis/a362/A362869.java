@@ -4,7 +4,7 @@ package irvine.oeis.a362;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A362869 allocated for Anatoliy A. Abramov.
+ * A362869 a(n) is equal to the number of cells in one octant of the octagon of unit squares with side equal n.
  * @author Georg Fischer
  */
 public class A362869 extends GeneratingFunctionSequence {

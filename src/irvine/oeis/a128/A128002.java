@@ -4,7 +4,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A128002 Numbers n such that (31^n - 1)/30 is prime.
+ * A128002 Numbers k such that (31^k - 1)/30 is prime.
  * @author Georg Fischer
  */
 public class A128002 extends PrimePositionSubsequence {

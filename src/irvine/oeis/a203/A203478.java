@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a028.A028362;
 
 /**
- * A203478 a(n) = v(n+1)/v(n), where v=A203477.
+ * A203478 a(n) = v(n+1)/v(n), where v = A203477.
  * @author Georg Fischer
  */
 public class A203478 extends Sequence1 {

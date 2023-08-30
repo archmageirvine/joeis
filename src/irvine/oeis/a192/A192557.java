@@ -7,7 +7,7 @@ import irvine.math.z.Stirling;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A192557 a(n) = sum(stirling2(n,k)*stirling2(n+1,k+1)*k!,k=0..n).
+ * A192557  a(n) = sum(stirling2(n,k)*stirling2(n+1,k+1)*k!,k=0..n).
  * a(n)=sum(k=0,n,stirl2(n,k)*stirl2(n+1,k+1)*k!)
  * @author Georg Fischer
  */

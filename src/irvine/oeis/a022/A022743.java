@@ -7,7 +7,7 @@ import irvine.oeis.transform.GeneralizedEulerTransform;
 
 
 /**
- * A022743 Expansion of Product (1-m*q^m)^-19; m=1..inf.
+ * A022743 Expansion of 1/Product_{m&gt;=1} (1 - m*q^m)^19.
  * G.f.: <code>Product_{k&gt;=1} ((1-k*x^k)^(-19))</code>
  * @author Georg Fischer
  */

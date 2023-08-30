@@ -7,7 +7,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A056102 Numbers n such that n^4 = 1 (mod 5^5).
+ * A056102 Numbers k such that k^4 == 1 (mod 5^5).
  * @author Georg Fischer
  */
 public class A056102 extends HolonomicRecurrence {

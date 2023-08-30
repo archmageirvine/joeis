@@ -5,7 +5,7 @@ package irvine.oeis.a171;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A171005 (n+1)*(n-1)!/2.
+ * A171005 a(n) = (n+1)*(n-1)!/2.
  * @author Georg Fischer
  */
 public class A171005 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000217;
 import irvine.oeis.a101.A101688;
 
 /**
- * A130541 A002260 * A125093^(-1).
+ * A130541 Duplicate of A128489.
  * @author Georg Fischer
  */
 public class A130541 extends A101688 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A363571 allocated for Paul D. Hanna.
+ * A363571 Expansion of (1 / sqrt(1 - 10*x + 9*x^2) - 1 / (1 - x)) / 4.
  * a(n)=sum(k=1,n,binom(n,k)^2 * 4^(k-1))
  * @author Georg Fischer
  */

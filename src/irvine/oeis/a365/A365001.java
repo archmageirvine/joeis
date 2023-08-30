@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A365001.
+ * A365001 Dead-end primes in "The Prime Number Maze".
  * @author Sean A. Irvine
  */
 public class A365001 extends A000040 {

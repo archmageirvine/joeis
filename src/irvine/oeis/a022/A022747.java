@@ -7,7 +7,7 @@ import irvine.oeis.transform.GeneralizedEulerTransform;
 
 
 /**
- * A022747 Expansion of Product_{m&gt;=1} (1-m*q^m)^-23.
+ * A022747 Expansion of 1/Product_{m&gt;=1} (1 - m*q^m)^23.
  * G.f.: <code>Product_{k&gt;=1} ((1-k*x^k)^(-23))</code>
  * @author Georg Fischer
  */

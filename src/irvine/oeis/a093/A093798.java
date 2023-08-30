@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A093798 a(n) is the largest number such that all of a(n)&apos;s length-n substrings are distinct and divisible by 45.
+ * A093798 a(n) is the largest number such that all of a(n)'s length-n substrings are distinct and divisible by 45.
  * @author Georg Fischer
  */
 public class A093798 extends AbstractSequence {

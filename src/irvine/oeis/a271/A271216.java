@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A271216 a(n) = 2^n floor(n/2)!
+ * A271216 a(n) = 2^n floor(n/2)!.
  * a(n)=2^n*floor(n/2)!
  * @author Georg Fischer
  */

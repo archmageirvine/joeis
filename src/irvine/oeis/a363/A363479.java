@@ -8,7 +8,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A363479 allocated for Zhao Hui Du.
+ * A363479 E.g.f. satisfies A(x) = exp(x * A(x)^3 * (1 + x * A(x)^3)).
  * a(n) = n!*sum(k=0,n,(3*n+1)^(k-1)*binom(k,n-k)/k!);
  * @author Georg Fischer
  */

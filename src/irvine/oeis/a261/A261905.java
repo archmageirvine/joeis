@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A261905 Numbers n with property that there is no number k in the range ceiling(sqrt(3n)) &lt;= k &lt;= floor(sqrt(4n)) with k == n mod 2.
+ * A261905 Numbers m with the property that there is no number k in the range ceiling(sqrt(3m)) &lt;= k &lt;= floor(sqrt(4m)) with k == m (mod 2).
  * @author Georg Fischer
  */
 public class A261905 extends FiniteSequence {

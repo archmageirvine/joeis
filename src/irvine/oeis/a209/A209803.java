@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A209803  a(n) = Sum_{d|n} d*2^(n*d).
+ * A209803 a(n) = Sum_{d|n} d*2^(n*d).
  * a(n)=sumdiv(n,d,d*2^(n*d))
  * @author Georg Fischer
  */

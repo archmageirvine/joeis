@@ -8,7 +8,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A363744 allocated for Gus Wiseman.
+ * A363744 E.g.f. satisfies A(x) = exp(x * (1 + x * A(x))^2).
  * a(n) = n!*sum(k=0,n,(n-k+1)^(k-1)*binom(2*k,n-k)/k!);
  * @author Georg Fischer
  */

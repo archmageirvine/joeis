@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002939;
 import irvine.oeis.a014.A014105;
 
 /**
- * A168060 Denominators of ((n+2)/(n+1)/n) (sorted with no repeats).
+ * A168060 Denominators of ((n+2)/(n+1)/n) (sorted with no repeats) for n &gt;= 1.
  * @author Georg Fischer
  */
 public class A168060 extends UnionSequence {

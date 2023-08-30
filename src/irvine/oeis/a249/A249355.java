@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A249355 Remainder of n!+2 divided by n+2
+ * A249355 Remainder of n!+2 divided by n+2.
  * a(n)=mod(n!+2,n+2)
  * @author Georg Fischer
  */

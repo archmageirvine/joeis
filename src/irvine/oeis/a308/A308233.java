@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A308233 Take apart the sides of each of the integer-sided triangles with perimeter n (at their vertices) and rearrange them orthogonally in 3-space so that their endpoints coincide at a single point. a(n) is the total volume of all rectangular prisms enclosed in t
+ * A308233 Take apart the sides of each of the integer-sided triangles with perimeter n (at their vertices) and rearrange them orthogonally in 3-space so that their endpoints coincide at a single point. a(n) is the total volume of all rectangular prisms enclosed in this way.
  * a(n)=sum(k=1,floor(n/3),sum(i=k,floor((n-k)/2),i*k*(n-i-k)*sign(floor((i+k)/(n-i-k+1)))))
  * @author Georg Fischer
  */

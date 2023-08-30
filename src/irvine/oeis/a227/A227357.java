@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A227357 de Bruijn&apos;s S(6,n).
+ * A227357 de Bruijn's S(6,n).
  * a(n)=sum(k=0,2*n,(-1)^(k+n)*binom(2*n,k)^6)
  * @author Georg Fischer
  */

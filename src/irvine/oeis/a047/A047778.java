@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A047778 Concatenation of first n numbers in binary, converted to base 10.
+ * A047778 Concatenation of the first n numbers in binary (converted to base 10).
  * @author Sean A. Irvine
  */
 public class A047778 extends Sequence1 {

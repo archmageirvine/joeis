@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A185092 Numbers n such that i^i = i^i^i (mod n) for every i.
+ * A185092 Numbers k such that j^j == j^j^j (mod k) for every j.
  * @author Georg Fischer
  */
 public class A185092 extends FiniteSequence {

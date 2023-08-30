@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A340284 Number of partitions of n into 3 parts such that the &apos;middle&apos; part is relatively prime to each of the other two parts.
+ * A340284 Number of partitions of n into 3 parts such that the 'middle' part is relatively prime to each of the other two parts.
  * a(n)=sum(k=1,floor(n/3),sum(i=k,floor((n-k)/2),floor(1/gcd(i,k))*floor(1/gcd(i,n-i-k))))
  * @author Georg Fischer
  */

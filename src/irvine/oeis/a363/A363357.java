@@ -8,7 +8,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A363357 allocated for Andrew Howroyd.
+ * A363357 E.g.f. satisfies A(x) = exp(x * A(x)^2 * (1 + x * A(x))).
  * a(n) = n!*sum(k=0,n,(n+k+1)^(k-1)*binom(k,n-k)/k!);
  * @author Georg Fischer
  */

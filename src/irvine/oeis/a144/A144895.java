@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A144895 Second column of triangle A134134 (S2&apos;(2) = S1hat(2)).
+ * A144895 Second column of triangle A134134 (S2'(2) = S1hat(2)).
  * a(n)=sum(i=1,floor(n/2)+1,i!*(n-i+2)!)
  * @author Georg Fischer
  */

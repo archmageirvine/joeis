@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A343692 a(n) is the number of men&apos;s preference profiles in the stable marriage problem with n men and n women, where every man prefers woman number 1 to woman number 2.
+ * A343692 a(n) is the number of men's preference profiles in the stable marriage problem with n men and n women, where every man prefers woman number 1 to woman number 2.
  * a(n)=n!^n/2^n
  * @author Georg Fischer
  */

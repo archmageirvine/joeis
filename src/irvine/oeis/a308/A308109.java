@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A308109 Take all the integer-sided triangles with perimeter n and sides a, b, and c such that a &lt; b &lt; c. a(n) is the sum of all the b&apos;s.
+ * A308109 Take all the integer-sided triangles with perimeter n and sides a, b, and c such that a &lt; b &lt; c. a(n) is the sum of all the b's.
  * a(n)=sum(k=1,floor((n-1)/3),sum(i=k+1,floor((n-k-1)/2),i*sign(floor((i+k)/(n-i-k+1)))))
  * @author Georg Fischer
  */

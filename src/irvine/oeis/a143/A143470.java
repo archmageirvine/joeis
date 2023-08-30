@@ -5,7 +5,7 @@ import irvine.oeis.a018.A018805;
 import irvine.oeis.a101.A101688;
 
 /**
- * A143470 Triangle read by rows, A000012 * A143316, 1&lt;=k&lt;=n.
+ * A143470 Triangle read by rows, A000012 * A143316, 1 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A143470 extends A101688 {

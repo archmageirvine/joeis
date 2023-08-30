@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A308429 Take all the integer-sided triangles with perimeter n and nonsquarefree side lengths a, b and c such that a &lt;= b &lt;= c. a(n) is the sum of all the b&apos;s.
+ * A308429 Take all the integer-sided triangles with perimeter n and nonsquarefree side lengths a, b and c such that a &lt;= b &lt;= c. a(n) is the sum of all the b's.
  * a(n)=sum(k=1,floor(n/3),sum(i=k,floor((n-k)/2),i*(1-moebius(i)^2)*(1-moebius(k)^2)*(1-moebius(n-i-k)^2)*sign(floor((i+k)/(n-i-k+1)))))
  * @author Georg Fischer
  */

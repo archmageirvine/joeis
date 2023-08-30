@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
 /**
- * A065315 Smallest prime divisor of n-th primorial + (n+1)-st prime.
+ * A065316 Largest prime divisor of n-th primorial - (n+1)-st prime.
  * @author Sean A. Irvine
  */
 public class A065316 extends A002110 {

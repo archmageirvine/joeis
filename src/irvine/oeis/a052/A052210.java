@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A052210 Numbers n such that n^3 starts with n itself (in base 10).
+ * A052210 Numbers k such that k^3 starts with k itself (in base 10).
  * @author Sean A. Irvine
  */
 public class A052210 extends Sequence1 {

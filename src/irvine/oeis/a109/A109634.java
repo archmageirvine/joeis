@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a073.A073388;
 
 /**
- * A109634 Number of 1&apos;s that appear among all ternary strings of length n that contain no consecutive 1&apos;s.
+ * A109634 Number of 1's that appear among all ternary strings of length n that contain no consecutive 1's.
  * @author Georg Fischer
  */
 public class A109634 extends PrependSequence {

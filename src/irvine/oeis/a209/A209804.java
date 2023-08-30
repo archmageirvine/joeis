@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A209804  a(n) = Sum_{d|n} d*3^(n*d).
+ * A209804 a(n) = Sum_{d|n} d*3^(n*d).
  * a(n)=sumdiv(n,d,d*3^(n*d))
  * @author Georg Fischer
  */

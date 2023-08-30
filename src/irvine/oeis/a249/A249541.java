@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a232.A232720;
 
 /**
- * A249541 Numbers m such that phi(m-2) divides m-1 where phi is Euler&apos;s totient function (A000010).
+ * A249541 Numbers m such that phi(m-2) divides m-1 where phi is Euler's totient function (A000010).
  * @author Georg Fischer
  */
 public class A249541 extends PrependSequence {

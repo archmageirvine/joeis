@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A308234 Take apart the sides of each of the integer-sided scalene triangles with perimeter n (at their vertices) and rearrange them orthogonally in 3-space so that their endpoints coincide at a single point. a(n) is the total volume of all rectangular prisms enclo
+ * A308234 Take apart the sides of each of the integer-sided scalene triangles with perimeter n (at their vertices) and rearrange them orthogonally in 3-space so that their endpoints coincide at a single point. a(n) is the total volume of all rectangular prisms enclosed in this way.
  * a(n)=sum(k=1,floor((n-1)/3),sum(i=k+1,floor((n-k-1)/2),i*k*(n-i-k)*sign(floor((i+k)/(n-i-k+1)))))
  * @author Georg Fischer
  */

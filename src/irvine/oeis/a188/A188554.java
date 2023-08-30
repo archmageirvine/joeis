@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A188554 Number of 3Xn binary arrays without the pattern 0 1 diagonally, vertically, antidiagonally or horizontally
+ * A188554 Number of 3Xn binary arrays without the pattern 0 1 diagonally, vertically, antidiagonally or horizontally.
  * a(n)=binom(n,3)+2*n
  * @author Georg Fischer
  */

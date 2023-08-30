@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A089895 Prime numbers n having the following additional property: There exists an integer k&gt;n such that the sum of all primes &lt;= n equals the sum of all primes between n+1 and k.
+ * A089895 Prime numbers p for which there exists an integer q &gt; p such that the sum of all primes &lt;= p equals the sum of all primes between p+1 and q.
  *
  * @author Georg Fischer
  */

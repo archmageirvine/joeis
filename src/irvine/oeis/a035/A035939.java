@@ -7,7 +7,7 @@ import irvine.oeis.recur.PeriodicSequence;
 
 
 /**
- * A035939 Number of partitions of n into parts not of the form 7k, 7k+3 or 7k-3. Also number of partitions with at most 2 parts of size 1 and differences between parts at distance 2 are greater than 1.
+ * A035939 Number of partitions of n into parts not of the form 7k, 7k+3 or 7k-3. Also number of partitions such that the differences between parts at distance 2 are greater than 1.
  * @author Georg Fischer
  */
 public class A035939 extends EulerTransform {

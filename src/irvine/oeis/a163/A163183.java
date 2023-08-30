@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a051.A051085;
 
 /**
- * A163183 Primes dividing 2^j + 1 for some odd j
+ * A163183 Primes dividing 2^j + 1 for some odd j.
  * @author Georg Fischer
  */
 public class A163183 extends AbstractSequence {

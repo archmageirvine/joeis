@@ -4,7 +4,7 @@ package irvine.oeis.a262;
 import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 /**
- * A262427 Decimal expansion of the complete elliptic integral of the first kind at sqrt(2 sqrt(2) - 2).
+ * A262427 Decimal expansion of the complete elliptic integral of the first kind at sqrt(2*sqrt(2) - 2).
  * Formula: Pi^(3/2)*sqrt(4+2*sqrt(2))/(4*Gamma(5/8)*Gamma(7/8))
  * @author Georg Fischer
  */

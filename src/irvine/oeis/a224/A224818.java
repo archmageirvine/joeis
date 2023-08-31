@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.a099.A099297;
 
 /**
- * A224818 Number of times the digit 9 appears in the first 10^n digits of Catalan&apos;s constant.
+ * A224818 Number of times the digit 9 appears in the first 10^n digits of Catalan's constant.
  * @author Georg Fischer
  */
 public class A224818 extends A099297 {

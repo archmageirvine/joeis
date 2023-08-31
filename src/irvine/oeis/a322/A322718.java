@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001113;
 import irvine.oeis.a099.A099297;
 
 /**
- * A322718 Number of times the digit 3 appears in the first 10^n decimal digits of Euler&apos;s number e = exp(1), counting starts after the decimal point.
+ * A322718 Number of times the digit 3 appears in the first 10^n decimal digits of Euler's number e = exp(1), counting starts after the decimal point.
  * @author Georg Fischer
  */
 public class A322718 extends A099297 {

@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 public class A065198 extends Sequence1 {
 
   private static final int HEURISTIC_LIMIT = 1000;
-  private long mN = 0;
+  private long mN = -1;
   protected long mBest = -1;
 
   private int t(Z n) {

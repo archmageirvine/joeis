@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000002;
 import irvine.oeis.a099.A099297;
 
 /**
- * A342407 Number of 2&apos;s in the first 10^n entries of the Kolakoski sequence (A000002).
+ * A342407 Number of 2's in the first 10^n entries of the Kolakoski sequence (A000002).
  * @author Georg Fischer
  */
 public class A342407 extends A099297 {

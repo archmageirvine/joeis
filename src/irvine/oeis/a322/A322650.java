@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002193;
 import irvine.oeis.a099.A099297;
 
 /**
- * A322650 Number of times the digit 9 appears in the first 10^n decimal digits of sqrt(2), sometimes called Pythagoras&apos;s constant, counting after the decimal point.
+ * A322650 Number of times the digit 9 appears in the first 10^n decimal digits of sqrt(2), sometimes called Pythagoras's constant, counting after the decimal point.
  * @author Georg Fischer
  */
 public class A322650 extends A099297 {

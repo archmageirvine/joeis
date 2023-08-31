@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 import irvine.oeis.a269.A269241;
 
 /**
- * A086009 Number of 1&apos;s in decimal expansion of n^2.
+ * A086009 Number of 1's in decimal expansion of n^2.
  * @author Georg Fischer
  */
 public class A086009 extends A269241 {

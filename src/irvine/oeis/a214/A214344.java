@@ -5,7 +5,7 @@ import irvine.oeis.a099.A099297;
 import irvine.oeis.a191.A191232;
 
 /**
- * A214344 Number of 1&apos;s in the first 10^n binary digits in the stream of prime numbers in base 2.
+ * A214344 Number of 1's in the first 10^n binary digits in the stream of prime numbers in base 2.
  * @author Georg Fischer
  */
 public class A214344 extends A099297 {

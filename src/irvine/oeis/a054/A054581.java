@@ -13,10 +13,10 @@ public class A054581 extends A340811 {
     setOffset(1);
   }
 
-  private int mN = -1;
+  private int mN = -2;
 
   @Override
   public Z next() {
-    return u(++mN, 3).coeff(mN);
+    return ++mN == -1 ? Z.ZERO : u(mN, 3).coeff(mN);
   }
 }

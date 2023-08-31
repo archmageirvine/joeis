@@ -22,7 +22,7 @@ public class A005614 extends AbstractSequence {
     super(0);
   }
 
-  private StringBuilder mSeq = new StringBuilder("10");
+  private final StringBuilder mSeq = new StringBuilder("10");
   private int mPos = -1;
   private int mRepPos = 0;
 

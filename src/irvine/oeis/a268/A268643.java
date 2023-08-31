@@ -4,7 +4,7 @@ package irvine.oeis.a268;
 import irvine.oeis.a269.A269241;
 
 /**
- * A268643 Number of 1&apos;s in decimal representation of n.
+ * A268643 Number of 1's in decimal representation of n.
  * @author Georg Fischer
  */
 public class A268643 extends A269241 {

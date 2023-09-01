@@ -12,10 +12,22 @@ import irvine.oeis.Sequence1;
 public class A065370 extends Sequence1 {
 
   private static final int COMPARE_ACCURACY = -1000;
-  private static final CR E1 = CR.E.add(CR.ONE);
+  private final CR mTarget;
+  private final CR mTarget1;
   private Z mN = Z.ONE;
   private Z mB = null;
-  private CR mAbsDelta = CR.E;
+  private CR mAbsDelta;
+
+  protected A065370(final CR target) {
+    mTarget = target;
+    mTarget1 = target.add(CR.ONE);
+    mAbsDelta = target;
+  }
+
+  /** Construct the sequence. */
+  public A065370() {
+    this(CR.E);
+  }
 
   @Override
   public Z next() {
@@ -26,9 +38,9 @@ public class A065370 extends Sequence1 {
     }
     while (true) {
       mN = mN.add(1);
-      final Z a = CR.E.multiply(mN).divide(E1).round();
+      final Z a = mTarget.multiply(mN).divide(mTarget1).round();
       final Q t = new Q(a, mN.subtract(a));
-      final CR delta = CR.E.subtract(CR.valueOf(t)).abs();
+      final CR delta = mTarget.subtract(CR.valueOf(t)).abs();
       if (delta.compareTo(mAbsDelta, COMPARE_ACCURACY) < 0) {
         mAbsDelta = delta;
         mB = mN.subtract(a);

@@ -13,9 +13,6 @@ public class A307475 extends FilterSequence {
 
   /** Construct the sequence. */
   public A307475() {
-    super(1, new A000040(), p -> {
-      long d = 86;
-      return p.add(d).isProbablePrime() && ZUtils.digitSum(p.multiply(p.add(d))) == d;
-    });
+    super(1, new A000040(), p -> p.add(86).isProbablePrime() && ZUtils.digitSum(p.multiply(p.add(86))) == 86);
   }
 }

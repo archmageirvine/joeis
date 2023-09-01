@@ -2,14 +2,13 @@ package irvine.math.z;
 
 /**
  * Division.
- *
  * @author Sean A. Irvine
  */
 final class Div {
 
   private Div() { }
 
-  /* Special values used in floating-point short cuts. */
+  /* Special values used in floating-point shortcuts. */
   static final double FUDGE;
   /** 3 times the smallest power-of-2 double that can modify the value 1.0. */
   static final double EPSILON;
@@ -77,7 +76,7 @@ final class Div {
 
     for (int i = sa; i >= sb; --i) {
       // This computation with doubles is faster than using longs
-      // the original had the +1.0 but I never found a case that needed it
+      // the original had the +1.0, but I never found a case that needed it
       //      double aux = DBASE * (c[i] * DBASE + c[i - 1]) + 1.0;
       double aux = Z.DBASE * (c[i] * Z.DBASE + c[i - 1]);
       if (i > 1) {
@@ -89,7 +88,7 @@ final class Div {
           qq = Z.BASE_MASK;
         }
         final int dr = Z.BASE - qq;
-        final double ddr = (double) dr;
+        final double ddr = dr;
         int cc = Z.BASE;
         for (int j = 0, jj = i - sb; jj < i;) {
           final int nv = b.mValue[j++];
@@ -147,14 +146,17 @@ final class Div {
     if (sa < 3) {
       // Use long divide if we can fit in a long, also handles 0/d case
       final long ss = a.longValue();
+      final Z res = Z.valueOf(ss / d);
       a.mAuxiliary = ss % d;
-      return Z.valueOf(ss / d);
+      res.mAuxiliary = a.mAuxiliary;
+      return res;
     }
     final long da = Math.abs(d);
     if (da >= Z.BASE) {
       // If division is too large, flip to Z divider
       final Z[] z = divideAndRemainder(a, Z.valueOf(d));
       a.mAuxiliary = z[1].longValue();
+      z[0].mAuxiliary = a.mAuxiliary;
       return z[0];
     }
     final int[] b = new int[sa];
@@ -186,7 +188,8 @@ final class Div {
     ++sa;
     a.mAuxiliary = sign < 2 ? c : -c;
     // sign == 0 || sign == 3 is equiv to (sign + 1) & 2
-    return new Z(b, ((sign + 1) & 2) == 0 ? sa : -sa);
+    final Z res = new Z(b, ((sign + 1) & 2) == 0 ? sa : -sa);
+    res.mAuxiliary = a.mAuxiliary;
+    return res;
   }
-
 }

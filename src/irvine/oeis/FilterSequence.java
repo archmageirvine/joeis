@@ -1,5 +1,6 @@
 package irvine.oeis;
 
+import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
 import irvine.math.z.Z;
@@ -11,6 +12,8 @@ import irvine.util.string.StringUtils;
  */
 public class FilterSequence extends AbstractSequence {
 
+  /** Prime terms. */
+  public static final Predicate<Z> PRIME = Z::isProbablePrime;
   /** Non-prime terms. */
   public static final Predicate<Z> NONPRIME = k -> !k.isProbablePrime();
   /** Nonzero terms. */
@@ -20,9 +23,25 @@ public class FilterSequence extends AbstractSequence {
 
   protected final Sequence mSeq;
   protected final Predicate<Z> mPredicate;
+  protected final BiPredicate<Long, Z> mBiPredicate;
+  private long mN = 0;
 
   /**
-   * Filter.
+   * Filter with both the index and sequence value.
+   * @param offset offset of filtered sequence
+   * @param seq underlying sequence
+   * @param predicate predicate used for filtering
+   */
+  public FilterSequence(final int offset, final Sequence seq, final BiPredicate<Long, Z> predicate) {
+    super(offset);
+    mSeq = seq;
+    mPredicate = null;
+    mBiPredicate = predicate;
+    mN = seq.getOffset() - 1;
+  }
+
+  /**
+   * Filter with just the sequence value.
    * @param offset offset of filtered sequence
    * @param seq underlying sequence
    * @param predicate predicate used for filtering
@@ -31,6 +50,7 @@ public class FilterSequence extends AbstractSequence {
     super(offset);
     mSeq = seq;
     mPredicate = predicate;
+    mBiPredicate = null;
   }
 
   /**
@@ -45,10 +65,21 @@ public class FilterSequence extends AbstractSequence {
 
   @Override
   public Z next() {
-    while (true) {
-      final Z t = mSeq.next();
-      if (t == null || mPredicate.test(t)) {
-        return t;
+    if (mPredicate != null) {
+      while (true) {
+        final Z t = mSeq.next();
+        if (t == null || mPredicate.test(t)) {
+          return t;
+        }
+      }
+    } else {
+      assert mBiPredicate != null;
+      while (true) {
+        ++mN;
+        final Z t = mSeq.next();
+        if (t == null || mBiPredicate.test(mN, t)) {
+          return t;
+        }
       }
     }
   }

@@ -53,7 +53,7 @@ public final class Fibonacci  {
     // handle negatives
     if (n < 0) {
       n = -n;
-      final Z r = fibonacci(-n);
+      final Z r = fibonacci(n);
       return (n & 1) == 1 ? r : r.negate();
     }
     // handle small cases

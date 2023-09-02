@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A230206 Trapezoid of dot products of row 3 (signs alternating) with sequential 4-tuples read by rows in Pascal's triangle A007318:
+ * A230206 Trapezoid of dot products of row 3 (signs alternating) with sequential 4-tuples read by rows in Pascal's triangle A007318: T(n,k) is the linear combination of the 4-tuples (C(3,0), -C(3,1), C(3,2), -C(3,3)) and (C(n-1,k-3), C(n-1,k-2), C(n-1,k-1), C(n-1,k)), n &gt;= 1, 0 &lt;= k &lt;= n+2.
  * T(n,k) is the linear combination of the 4-tuples (C(3,0), -C(3,1), C(3,2), -C(3,3)) and (C(n-1,k-3), C(n-1,k-2), C(n-1,k-1), C(n-1,k)), n &gt;= 1, 0 &lt;= k &lt;= n+2.
  * @author Georg Fischer
  */

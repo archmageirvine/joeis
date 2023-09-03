@@ -2242,3 +2242,6 @@ A065419 Decimal expansion of Hardy-Littlewood constant Product_{p prime >= 5} (1
 A065421 Decimal expansion of Viggo Brun's constant B, also known as the twin primes constant B_2: Sum (1/p + 1/q) as (p,q) runs through the twin primes.
 A065426 Incrementally larger terms in the continued fraction (A065645) for the twin prime constant (A005597).
 A065431 Continued fraction expansion of Hardy-Littlewood constant (A065419) Product_{p prime >= 5} (1-(6*p^2-4*p+1)/(p-1)^4)
+A065434 Decimal expansion of imaginary part of 2nd nontrivial zero of Riemann zeta function.
+A065452 Decimal expansion of imaginary part of 3rd nontrivial zero of Riemann zeta function.
+A065453 Decimal expansion of imaginary part of 4th nontrivial zero of Riemann zeta function.

@@ -4,7 +4,6 @@ import irvine.math.cr.CR;
 
 /**
  * An object to hold an immutable computable complex number.
- *
  * @author Sean A. Irvine
  */
 public class CC extends Number implements Comparable<CC> {

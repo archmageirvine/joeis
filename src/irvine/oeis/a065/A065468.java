@@ -5,7 +5,6 @@ import java.util.function.Function;
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.recur.LinearRecurrence;
 
@@ -15,12 +14,14 @@ import irvine.oeis.recur.LinearRecurrence;
  */
 public class A065468 extends DecimalExpansionSequence {
 
-  /** Construct the sequence. */
-  public A065468(final long[] kernel, final long[] initialTerms, final int zeros, final CR m, final Function<Integer, CR> p) {
+  protected A065468(final long[] kernel, final long[] initialTerms, final int zeros, final CR m, final Function<Integer, CR> p) {
     super(0, new CR() {
       @Override
       protected Z approximate(final int precision) {
-        final Sequence rec = new LinearRecurrence(kernel, initialTerms, new long[zeros]);
+        final LinearRecurrence rec = new LinearRecurrence(kernel, initialTerms, new long[Math.max(0, zeros)]);
+        if (zeros < 0) {
+          rec.skip(-zeros);
+        }
         int k = 2;
         Z sum = Z.ZERO;
         while (true) {
@@ -40,12 +41,12 @@ public class A065468 extends DecimalExpansionSequence {
   }
 
   /** Construct the sequence. */
-  public A065468(final long[] kernel, final long[] initialTerms, final int zeros, final CR m) {
+  protected A065468(final long[] kernel, final long[] initialTerms, final int zeros, final CR m) {
     this(kernel, initialTerms, zeros, m, Zeta::zetap);
   }
 
   /** Construct the sequence. */
-  public A065468(final long[] kernel, final long[] initialTerms, final int zeros) {
+  protected A065468(final long[] kernel, final long[] initialTerms, final int zeros) {
     this(kernel, initialTerms, zeros, CR.ONE);
   }
 

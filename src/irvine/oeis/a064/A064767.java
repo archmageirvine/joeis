@@ -15,9 +15,9 @@ public class A064767 extends Sequence1 {
 
   final Sequence mA000010 = new A000010();
   final Sequence mA011785 = new A011785();
+
   @Override
   public Z next() {
     return mA000010.next().multiply(mA011785.next());
   }
-
 }

@@ -1243,9 +1243,9 @@ public final class ZUtils {
    * @param base base to use
    * @return true iff the number is a palindrome
    */
-  public static boolean isPalindrome(final Z n, final int base) {
+  public static boolean isPalindrome(final Z n, final long base) {
     if (base <= 36) {
-      return StringUtils.isPalindrome(n.toString(base));
+      return StringUtils.isPalindrome(n.toString((int) base));
     }
     final Z b = Z.valueOf(base);
     final ArrayList<Long> digits = new ArrayList<>();

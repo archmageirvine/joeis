@@ -10,9 +10,8 @@ import irvine.oeis.Sequence1;
  */
 public class A065122 extends Sequence1 {
 
-  private int mN;
   private Z mA;
-  private int mFactor;
+  private final int mFactor;
   private final Fast mPrime = new Fast();
 
   /** Construct the sequence. */
@@ -26,14 +25,12 @@ public class A065122 extends Sequence1 {
    * @param factor multiply a(n) by this factor
    */
   public A065122(final int factor, final int start) {
-    mN = 0;
     mA = Z.valueOf(start);
     mFactor = factor;
   }
 
   @Override
   public Z next() {
-    ++mN;
     final Z result = mA;
     mA = mPrime.nextPrime(mA.multiply(mFactor));
     return result;

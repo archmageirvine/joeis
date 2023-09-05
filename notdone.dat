@@ -2252,3 +2252,7 @@ A065480 Decimal expansion of Product_{p prime} (1 - 1/(p^2+p-1)).
 A065481 Decimal expansion of Product_{p prime} (1 - 1/(p^2-2)).
 A065501 Number of conjugacy classes in the group SL(2,Z_n) (see A000056).
 A065505 Let p(k) denote k-th prime; consider solutions (p(n),p(m)) of Diophantine equation p(p(n)+1)-6.p(p(m))=1 (*), where p(p(n)) belongs to A060213 and p(p(m))=(p(p(n))+1)/6; sequence gives values of p(n).
+A065511 Let p(k) denote k-th prime; consider solutions (n,m) of the Diophantine system {p(p(n)+1)-p(p(n))=2, p(p(n))-6.p(p(m))=-1} (*); sequence gives values of m.
+A065535 Number of strongly perfect lattices in dimension n
+A065536 Number of strongly eutactic lattices in dimension n
+A065558 Let G_n be the group of invertible 2 X 2 matrices mod n (sequence A000252). a(n) is the maximal degree of an irreducible representation of G_n

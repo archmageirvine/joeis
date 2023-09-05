@@ -12,6 +12,6 @@ public class A065450 extends PrependSequence {
 
   /** Construct the sequence. */
   public A065450() {
-    super(1, new PartialSumSequence(new A047356()).skip(3), 1, 2, 10);
+    super(0, new PartialSumSequence(new A047356()).skip(3), 1, 2, 10);
   }
 }

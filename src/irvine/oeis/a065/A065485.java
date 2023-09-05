@@ -9,5 +9,6 @@ public class A065485 extends A065468 {
   /** Construct the sequence. */
   public A065485() {
     super(new long[] {2, -4, 3}, new long[] {0, 2, 6}, -1);
+    setOffset(1);
   }
 }

@@ -11,5 +11,6 @@ public class A065484 extends A065468 {
   /** Construct the sequence. */
   public A065484() {
     super(new long[] {1, -1, -1, 2}, new long[] {3, 4, 5, 3}, 1, CR.PI.square().divide(CR.SIX));
+    setOffset(1);
   }
 }

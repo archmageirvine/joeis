@@ -45,5 +45,6 @@ public class A065488 extends DecimalExpansionSequence {
         return prod;
       }
     });
+    setOffset(1);
   }
 }

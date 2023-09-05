@@ -15,6 +15,6 @@ public class A065411 extends FilterSequence {
   /** Construct the sequence. */
   public A065411() {
     // Contortions to drop the repeated 1
-    super(new PrependSequence(new A000045().skip(2), 0), k -> LongUtils.isSquare(ZUtils.digitSum(k)));
+    super(1, new PrependSequence(new A000045().skip(2), 0), k -> LongUtils.isSquare(ZUtils.digitSum(k)));
   }
 }

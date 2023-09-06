@@ -300,10 +300,11 @@ public class Polynomial<E> extends ArrayList<E> {
    * Aggregate the coefficients of this polynomial according to some function.
    * @param initial initial value of the aggregate
    * @param lambda function
+   * @param <F> type of the aggregate result (often the same as <code>E</code>)
    * @return aggregated value
    */
-  public E aggregate(final E initial, final BiFunction<E, E, E> lambda) {
-     E aggr = initial;
+  public <F> F aggregate(final F initial, final BiFunction<F, E, F> lambda) {
+     F aggr = initial;
      for (final E cf : this) {
        aggr = lambda.apply(aggr, cf);
      }

@@ -3,6 +3,7 @@ package irvine.math.polynomial;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.BiFunction;
 
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
@@ -294,4 +295,18 @@ public class Polynomial<E> extends ArrayList<E> {
   public void setIndeterminate(final String indeterminate) {
     mIndeterminate = indeterminate;
   }
+
+  /**
+   * Aggregate the coefficients of this polynomial according to some function.
+   * @param initial initial value of the aggregate
+   * @param lambda function
+   * @return aggregated value
+   */
+  public E aggregate(final E initial, final BiFunction<E, E, E> lambda) {
+     E aggr = initial;
+     for (final E cf : this) {
+       aggr = lambda.apply(aggr, cf);
+     }
+     return aggr;
+   }
 }

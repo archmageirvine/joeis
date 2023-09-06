@@ -1,6 +1,6 @@
 package irvine.oeis.a160;
 
-import irvine.math.polynomial.Polynomial;
+import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.AbstractSequence;
@@ -18,24 +18,8 @@ public class A160338 extends AbstractSequence {
     super(1);
   }
 
-  /**
-   * Return the maximum absolute value of the coefficients of a poylnomial.
-   * @param poly polynomial
-   * @return height
-   */
-  public static Z height(Polynomial<Z> poly) {
-    Z h = Z.ZERO;
-    for (final Z c : poly) {
-      final Z cabs = c.abs();
-      if (cabs.compareTo(h) > 0) {
-        h = cabs;
-      }
-    }
-    return h;
-  }
-
   @Override
   public Z next() {
-    return height(Cyclotomic.cyclotomic(++mN));
+    return PolynomialUtils.height(Cyclotomic.cyclotomic(++mN));
   }
 }

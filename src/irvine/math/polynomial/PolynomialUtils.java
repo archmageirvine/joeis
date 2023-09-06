@@ -382,4 +382,13 @@ public final class PolynomialUtils {
     }
     return res;
   }
+
+  /**
+   * Return the maximum absolute value of the coefficients of a polynomial.
+   * @param poly polynomial
+   * @return height
+   */
+  public static Z height(final Polynomial<Z> poly) {
+    return poly.aggregate(Z.ZERO, (a, c) -> a.max(c.abs()));
+  }
 }

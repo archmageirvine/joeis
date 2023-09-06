@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A364112 Expansion of e.g.f. 3*x/(exp(-3*x)+exp(-x)+exp(x))
+ * A364112 Expansion of e.g.f. 3*x/(exp(-3*x)+exp(-x)+exp(x)).
  * @author Georg Fischer
  */
 public class A364112 extends AbstractSequence {

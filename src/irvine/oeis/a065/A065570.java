@@ -12,12 +12,17 @@ import irvine.oeis.a000.A000796;
 public class A065570 extends Sequence1 {
 
   private final long mBase;
-  private final Sequence mPi = new A000796();
+  private final Sequence mPi;
   private Z mA = Z.ZERO;
   private long mN = 0;
 
-  protected A065570(final long base) {
+  protected A065570(final long base, final Sequence seq) {
     mBase = base;
+    mPi = seq;
+  }
+
+  protected A065570(final long base) {
+    this(base, new A000796());
   }
 
   /** Construct the sequence. */

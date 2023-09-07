@@ -2256,3 +2256,5 @@ A065511 Let p(k) denote k-th prime; consider solutions (n,m) of the Diophantine 
 A065535 Number of strongly perfect lattices in dimension n
 A065536 Number of strongly eutactic lattices in dimension n
 A065558 Let G_n be the group of invertible 2 X 2 matrices mod n (sequence A000252). a(n) is the maximal degree of an irreducible representation of G_n
+A065594 A036981(n)/(2n)!
+A065603 Transposition diameter: maximal number of moves in an optimal sorting of n objects by moving blocks

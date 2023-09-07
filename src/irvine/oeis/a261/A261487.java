@@ -11,7 +11,7 @@ public class A261487 extends FilterSequence {
 
   /** Construct the sequence. */
   public A261487() {
-    super(1, new A261128(), PRIME);
+    super(1, new A261128(), PROBABLE_PRIME);
     super.next();
   }
 }

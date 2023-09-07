@@ -12,7 +12,7 @@ public class A292015 extends FilterSequence {
 
   /** Construct the sequence. */
   public A292015() {
-    super(1, new A019320(), PRIME);
+    super(1, new A019320(), PROBABLE_PRIME);
     super.next();
   }
 }

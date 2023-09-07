@@ -1,5 +1,6 @@
 package irvine.oeis;
 
+import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
 import irvine.math.z.Z;
@@ -24,6 +25,17 @@ public class FilterPositionSequence extends FilterSequence {
    * @param predicate condition for accepting terms
    */
   public FilterPositionSequence(final int offset, final int start, final Sequence seq, final Predicate<Z> predicate) {
+    super(offset, seq, predicate);
+    mN = start - 1;
+  }
+
+  /**
+   * Filter with both the index and sequence value.
+   * @param offset offset of filtered sequence
+   * @param seq underlying sequence
+   * @param predicate predicate used for filtering
+   */
+  public FilterPositionSequence(final int offset, final int start, final Sequence seq, final BiPredicate<Long, Z> predicate) {
     super(offset, seq, predicate);
     mN = start - 1;
   }
@@ -74,8 +86,19 @@ public class FilterPositionSequence extends FilterSequence {
   public Z next() {
     while (true) {
       ++mN;
-      if (mPredicate.test(mSeq.next())) {
-        return Z.valueOf(mN);
+      final Z t = mSeq.next();
+      if (t == null) {
+        return null; // There can be no further terms
+      }
+      if (mPredicate != null) {
+        if (mPredicate.test(t)) {
+          return Z.valueOf(mN);
+        }
+      } else {
+        assert mBiPredicate != null;
+        if (mBiPredicate.test(mN, t)) {
+          return Z.valueOf(mN);
+        }
       }
       if (mVerbose && mN % 1000 == 0) {
         StringUtils.message("Search completed to " + mN);

@@ -13,7 +13,7 @@ import irvine.util.string.StringUtils;
 public class FilterSequence extends AbstractSequence {
 
   /** Prime terms. */
-  public static final Predicate<Z> PRIME = Z::isProbablePrime;
+  public static final Predicate<Z> PROBABLE_PRIME = Z::isProbablePrime;
   /** Non-prime terms. */
   public static final Predicate<Z> NONPRIME = k -> !k.isProbablePrime();
   /** Nonzero terms. */

@@ -11,6 +11,6 @@ public class A070519 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A070519() {
-    super(1, 1, new A070518(), PRIME);
+    super(1, 1, new A070518(), PROBABLE_PRIME);
   }
 }

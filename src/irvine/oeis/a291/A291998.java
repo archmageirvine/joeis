@@ -12,6 +12,6 @@ public class A291998 extends FilterSequence {
 
   /** Construct the sequence. */
   public A291998() {
-    super(1, new A020504(), PRIME);
+    super(1, new A020504(), PROBABLE_PRIME);
   }
 }

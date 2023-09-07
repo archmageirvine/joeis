@@ -12,6 +12,6 @@ public class A246392 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A246392() {
-    super(1, 1, new A060884().skip(1), PROBABLE_PRIME);
+    super(1, 1, new A060884().skip(1), PRIME);
   }
 }

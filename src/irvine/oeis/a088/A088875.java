@@ -16,7 +16,7 @@ public class A088875 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A088875() {
-    super(1, 1, new LambdaSequence(1, n -> Cyclotomic.cyclotomic(n, -n)), PROBABLE_PRIME);
+    super(1, 1, new LambdaSequence(1, n -> Cyclotomic.cyclotomic(n, -n)), PRIME);
   }
 
   @Override

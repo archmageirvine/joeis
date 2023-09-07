@@ -3,10 +3,12 @@ package irvine.math;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.util.CollectionUtils;
 import irvine.util.io.IOUtils;
 import irvine.util.string.StringUtils;
@@ -800,4 +802,26 @@ public final class LongUtils {
   public static long n2z(final long n) {
     return (n & 1) == 0 ? n / 2 : (1 - n) / 2;
   }
+
+  /**
+   * Sort the digits of a number.
+   * @param n number
+   * @return sorted number
+   */
+  public static long sortDigitsAscending(final long n) {
+    if (n == 0) {
+      return 0;
+    }
+    final int[] counts = ZUtils.digitCounts(n);
+    int numDigits = 0;
+    for (int k = 1; k < counts.length; ++k) {
+      numDigits += counts[k];
+    }
+    final char[] c = new char[numDigits];
+    for (int k = 1, j = 0; k < counts.length; j += counts[k++]) {
+      Arrays.fill(c, j, j + counts[k], (char) ('0' + k));
+    }
+    return Long.parseLong(new String(c));
+  }
+
 }

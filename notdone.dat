@@ -2259,3 +2259,5 @@ A065558 Let G_n be the group of invertible 2 X 2 matrices mod n (sequence A00025
 A065594 A036981(n)/(2n)!
 A065603 Transposition diameter: maximal number of moves in an optimal sorting of n objects by moving blocks
 A065645 Continued fraction for twin prime constant. [A005597 is too slow]
+A065646 Denominators of convergents to twin prime constant.
+A065647 Numerators of convergents to twin prime constant.

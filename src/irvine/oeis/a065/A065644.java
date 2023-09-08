@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065640.
+ * A065644 a(n) is the smallest integer k such that floor((3/2)^k)/floor((3/2)^n) is an integer greater than 1.
  * @author Sean A. Irvine
  */
 public class A065644 extends Sequence1 {

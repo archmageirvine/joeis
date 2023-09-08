@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A065640.
+ * A065656 Composite numbers k such that sigma(k)*phi(k) + 2*(k+1) is a square.
  * @author Sean A. Irvine
  */
 public class A065656 extends A002808 {

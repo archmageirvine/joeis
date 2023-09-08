@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A065640.
+ * A065653 a(0) = 0, a(1) = 1, a(n) = a(n-2)*a(n-2) + 2 for n &gt; 1.
  * @author Sean A. Irvine
  */
 public class A065653 extends Sequence0 {

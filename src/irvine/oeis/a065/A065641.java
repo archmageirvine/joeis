@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A065640.
+ * A065641 Smallest number with persistence n for the sort-and-subtract-sequence.
  * @author Sean A. Irvine
  */
 public class A065641 extends Sequence0 {

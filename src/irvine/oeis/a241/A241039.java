@@ -21,7 +21,7 @@ public class A241039 extends LambdaSequence {
   @Override
   public Z next() {
     ++mN;
-    Z result = super.next();
+    final Z result = super.next();
     return (mN == 0) ? Z.ONE : result;
   }
 }

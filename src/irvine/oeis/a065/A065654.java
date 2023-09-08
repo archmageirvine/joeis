@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 import irvine.math.z.Z;
 
 /**
- * A065640.
+ * A065654 Fixed points for A065652, a permutation of the natural numbers.
  * @author Sean A. Irvine
  */
 public class A065654 extends A065653 {

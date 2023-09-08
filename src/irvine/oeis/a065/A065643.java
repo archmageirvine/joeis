@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065640.
+ * A065643 Smallest integer value &gt; 1 of the form floor((3/2)^k)/floor((3/2)^n).
  * @author Sean A. Irvine
  */
 public class A065643 extends Sequence1 {

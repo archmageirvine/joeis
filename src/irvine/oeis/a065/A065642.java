@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065640.
+ * A065642 a(1) = 1; for n &gt; 1, a(n) = Min {m &gt; n | m has same prime factors as n ignoring multiplicity}.
  * @author Sean A. Irvine
  */
 public class A065642 extends Sequence1 {

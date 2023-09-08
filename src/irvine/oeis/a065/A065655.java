@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A065640.
+ * A065655 Composite numbers n such that sigma(n)*phi(n) + 2*sigma(n) is a square.
  * @author Sean A. Irvine
  */
 public class A065655 extends A002808 {

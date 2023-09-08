@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A065640.
+ * A065652 a(0) = 0 and a(n+1) = if a(n) - 1 is new and &gt; 0 then a(n) - 1 else a(n)*a(n) + 1 for n &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A065652 extends Sequence0 {

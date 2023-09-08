@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065640.
+ * A065657 Numbers n divided by EulerPhi(n) in approximately the golden ratio, i.e., n minimizing |(k / EulerPhi(k)) - golden ratio phi| for numbers k with the same number of digits as n.
  * @author Sean A. Irvine
  */
 public class A065657 extends Sequence1 {

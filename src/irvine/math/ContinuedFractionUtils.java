@@ -1,5 +1,8 @@
 package irvine.math;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 
@@ -24,6 +27,24 @@ public final class ContinuedFractionUtils {
       n = n.subtract(t);
       if (Q.ZERO.equals(n)) {
         return sum;
+      }
+      n = n.reciprocal();
+    }
+  }
+
+  /**
+   * Return the continued fraction expansion of a rational number.
+   * @param n number
+   * @return expansion
+   */
+  public static List<Z> continuedFraction(Q n) {
+    final ArrayList<Z> res = new ArrayList<>();
+    while (true) {
+      final Z t = n.toZ();
+      res.add(t);
+      n = n.subtract(t);
+      if (Q.ZERO.equals(n)) {
+        return res;
       }
       n = n.reciprocal();
     }

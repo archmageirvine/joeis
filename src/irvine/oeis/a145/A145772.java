@@ -5,7 +5,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a046.A046641;
 
 /**
- * A145772 Indices of record values in A046641
+ * A145772 Indices of record values in A046641.
  * @author Georg Fischer
  */
 public class A145772 extends RecordPositionSequence {

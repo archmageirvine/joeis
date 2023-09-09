@@ -21,7 +21,12 @@ public class A057162 extends A014486 {
     return n.isZero() ? n : reflectBinTreeAux(ZUtils.reverse(n, 2));
   }
 
-  static Z reflectBinTree(final Z nn) {
+  /**
+   * Binary tree reflection.
+   * @param nn parameter
+   * @return reflection
+   */
+  public static Z reflectBinTree(final Z nn) {
     return reflectBinTree2(nn).divide2();
   }
 

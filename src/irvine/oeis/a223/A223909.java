@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a038.A038374;
 
 /**
- * A223909 Numbers for which the maximal run of 1&apos;s in their binary representation contains odd number of 1&apos;s.
+ * A223909 Numbers for which the maximal run of 1's in their binary representation contains odd number of 1's.
  * @author Georg Fischer
  */
 public class A223909 extends FilterPositionSequence {

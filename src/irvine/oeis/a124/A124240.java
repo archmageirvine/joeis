@@ -4,7 +4,7 @@ package irvine.oeis.a124;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A124240 Numbers n such that lambda(n) divides n, where lambda is Carmichael&apos;s function (A002322).
+ * A124240 Numbers n such that lambda(n) divides n, where lambda is Carmichael's function (A002322).
  * @author Georg Fischer
  */
 public class A124240 extends FilterPositionSequence {

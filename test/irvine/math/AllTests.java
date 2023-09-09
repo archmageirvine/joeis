@@ -12,6 +12,7 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(ByteUtilsTest.class);
+    suite.addTestSuite(ContinuedFractionUtilsTest.class);
     suite.addTestSuite(IntegerUtilsTest.class);
     suite.addTestSuite(LongOrderedPairTest.class);
     suite.addTestSuite(LongUtilsTest.class);

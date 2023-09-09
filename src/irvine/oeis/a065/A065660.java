@@ -1,0 +1,17 @@
+package irvine.oeis.a065;
+
+import irvine.math.z.Z;
+
+/**
+ * A065660 Permutation of N induced by rotating the node 1 (the top node) right in the infinite planar binary tree shown at A065658.
+ * @author Sean A. Irvine
+ */
+public class A065660 extends A065658 {
+
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    return rotateBinFracNode(1, ++mN);
+  }
+}

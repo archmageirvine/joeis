@@ -64,11 +64,13 @@ public class A065658 extends Sequence0 {
     return new Q(mSternBrocotNum.a(m1), mSternBrocotDen.a(m1));
   }
 
-  protected Z rotateBinFracNodeRight(final long t, final long n) {
-    return frac2PositionIn01SBTree(rotateBinFracNodeRightX(t, sternBrocot01Frac(n)));
+  // Implementation is either right or left
+  protected Z rotateBinFracNode(final long t, final long n) {
+    return frac2PositionIn01SBTree(rotateBinFracNodeX(t, sternBrocot01Frac(n)));
   }
 
-  protected Q rotateBinFracNodeRightX(final long t, final Q x) {
+  // Right rotation
+  protected Q rotateBinFracNodeX(final long t, final Q x) {
     final Z den = Z.ONE.shiftLeft(LongUtils.lg(t) + 1);
     final Q num = new Q(Z.valueOf(2 * t).subtract(den).add(1));
     if (x.compareTo(num.subtract(1).divide(den)) <= 0 || x.compareTo(num.add(1).divide(den)) >= 0) {
@@ -86,6 +88,6 @@ public class A065658 extends Sequence0 {
   @Override
   public Z next() {
     final long t = trinv(++mN);
-    return rotateBinFracNodeRight(1 + (mN - ((t * (t - 1)) / 2)), (((t - 1) * (t + 2) / 2) - mN) + 1);
+    return rotateBinFracNode(1 + (mN - ((t * (t - 1)) / 2)), (((t - 1) * (t + 2) / 2) - mN) + 1);
   }
 }

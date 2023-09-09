@@ -51,7 +51,7 @@ public class A065658 extends Sequence0 {
     return Z.THREE.shiftLeft(lg(n)).subtract(n).subtract(1);
   }
 
-  private Z frac2PositionIn01SBTree(final Q r) {
+  protected Z frac2PositionIn01SBTree(final Q r) {
     return reflectBinTreePermutation(cfrac2BinExp(ContinuedFractionUtils.continuedFraction(r.reciprocal())));
   }
 

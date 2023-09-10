@@ -1,5 +1,8 @@
 package irvine.oeis.a037;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -12,7 +15,8 @@ import irvine.util.array.DynamicLongArray;
 public class A037183 extends Sequence1 {
 
   private final DynamicLongArray mFirsts = new DynamicLongArray();
-  private int mN = 0;
+  protected final List<Integer> mOrdering = new ArrayList<>(); // Needed only for A065708
+  protected int mN = 0;
   private long mM = 2;
   private long mAdd = 1;
 
@@ -32,6 +36,7 @@ public class A037183 extends Sequence1 {
         }
       }
       if (mFirsts.get(cnt) == 0) {
+        mOrdering.add(cnt);
         mFirsts.set(cnt, mM);
       }
     }

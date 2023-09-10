@@ -55,7 +55,7 @@ public class A065658 extends Sequence0 {
     return reflectBinTreePermutation(cfrac2BinExp(ContinuedFractionUtils.continuedFraction(r.reciprocal())));
   }
 
-  private Q sternBrocot01Frac(final long n) {
+  protected Q sternBrocot01Frac(final long n) {
     final long m = n + (1L << LongUtils.lg(n));
     if (m > Integer.MAX_VALUE) {
       throw new UnsupportedOperationException();

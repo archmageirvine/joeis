@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A065658.
+ * A065695 Numbers m such that N = (am+1)(bm+1)(cm+1) is a 3-Carmichael number (A087788), where a,b,c = 1,2,53.
  * @author Sean A. Irvine
  */
 public class A065695 extends A000040 {

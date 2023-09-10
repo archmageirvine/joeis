@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065658.
+ * A065677 Maximal Diffy_length for quadruples of numbers &lt;= n.
  * @author Sean A. Irvine
  */
 public class A065677 extends Sequence1 {

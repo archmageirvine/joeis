@@ -1,7 +1,7 @@
 package irvine.oeis.a065;
 
 /**
- * A065658.
+ * A065686 Number of primes &lt;= prime(n) which begin with a 7.
  * @author Sean A. Irvine
  */
 public class A065686 extends A065680 {

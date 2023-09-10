@@ -8,7 +8,7 @@ import irvine.oeis.a047.A047679;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A065658.
+ * A065676 The exponent of 2 in the fractions of the whole ]0, inf[ Stern-Brocot tree (A007305/A047679) [1/1, 1/2, 2/1, 1/3, 2/3, 3/2, 3/1, 1/4, 2/5, 3/5, 3/4, 4/3, 5/3, 5/2, 4/1, ...].
  * @author Sean A. Irvine
  */
 public class A065676 extends Sequence1 {

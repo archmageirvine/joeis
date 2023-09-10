@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A065658.
+ * A065680 Number of primes &lt;= prime(n) which begin with a 1.
  * @author Sean A. Irvine
  */
 public class A065680 extends A000040 {

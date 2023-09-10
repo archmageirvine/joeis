@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A065674.
+ * A065674 Positions of the elements of the quasicyclic group Z+(2a+1)/(2^b) [a &gt; 0 and a &lt; 2^(b-1), b &gt; 0] at the ]0,1[ side of the Stern-Brocot Tree (A007305/A007306).
  * @author Sean A. Irvine
  */
 public class A065674 extends A065658 {

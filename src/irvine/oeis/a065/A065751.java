@@ -12,7 +12,7 @@ import irvine.oeis.Sequence0;
  */
 public class A065751 extends Sequence0 {
 
-  // Grammar matching -- very slow
+  // Grammar matching -- slow
 
 //  private long mN = 17;
 //
@@ -50,7 +50,7 @@ public class A065751 extends Sequence0 {
 //    }
 //  }
 
-  // Forward generation
+  // Forward generation is much faster here
 
   private final TreeSet<String> mA = new TreeSet<>(Comparator.comparingInt(String::length).thenComparing(s -> s));
   {

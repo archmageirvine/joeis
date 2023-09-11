@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterSequence;
 
 /**
- * A065751.
+ * A065752 Squares in A065751.
  * @author Sean A. Irvine
  */
 public class A065752 extends FilterSequence {

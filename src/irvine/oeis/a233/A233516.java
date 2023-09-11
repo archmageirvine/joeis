@@ -5,7 +5,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a061.A061026;
 
 /**
- * A233516 Where records occur in A061026, the smallest number m such that n divides phi(m), where phi is Euler&apos;s totient function.
+ * A233516 Where records occur in A061026, the smallest number m such that n divides phi(m), where phi is Euler's totient function.
  * @author Georg Fischer
  */
 public class A233516 extends RecordPositionSequence {

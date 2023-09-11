@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002049;
 
 /**
- * A185846 Numbers which are both prime and MacMahon&apos;s prime numbers of measurement. Primes in A002049.
+ * A185846 Numbers which are both prime and MacMahon's prime numbers of measurement. Primes in A002049.
  * @author Georg Fischer
  */
 public class A185846 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a048.A048736;
 
 /**
- * A192242 Positions of primes within Dana Scott&apos;s sequence (A048736).
+ * A192242 Positions of primes within Dana Scott's sequence (A048736).
  * @author Georg Fischer
  */
 public class A192242 extends FilterPositionSequence {

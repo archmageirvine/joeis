@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A317295 Numbers with a composite number of 1&apos;s in their binary expansion.
+ * A317295 Numbers with a composite number of 1's in their binary expansion.
  * @author Georg Fischer
  */
 public class A317295 extends ComplementSequence {

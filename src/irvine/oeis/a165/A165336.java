@@ -6,7 +6,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a031.A031179;
 
 /**
- * A165336 Numbers that eventually reach a cycle under &quot;x -&gt; sum of cubes of digits of x&quot; (see A055012).
+ * A165336 Numbers that eventually reach a cycle under "x -&gt; sum of cubes of digits of x" (see A055012).
  * @author Georg Fischer
  */
 public class A165336 extends ComplementSequence {

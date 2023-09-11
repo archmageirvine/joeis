@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A103610 4 X infinity array read by rows: let M = {{0, 1, 0, 0}, {0, 0, 1, 0}, {0, 0, 0, 1}, {1, 0, 1, 0}}, w[0] = {0, 0, 1, 1}&apos;, w[n]&apos; = M*w[n -1]&apos;; the n-th row of the array is w[n]&apos; (the prime denotes transpose).
+ * A103610 4 X infinity array read by rows: let M = {{0, 1, 0, 0}, {0, 0, 1, 0}, {0, 0, 0, 1}, {1, 0, 1, 0}}, w[0] = {0, 0, 1, 1}', w[n]' = M*w[n -1]'; the n-th row of the array is w[n]' (the prime denotes transpose).
  * @author Georg Fischer
  */
 public class A103610 extends GeneratingFunctionSequence {

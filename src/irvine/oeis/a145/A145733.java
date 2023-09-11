@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a001.A001127;
 
 /**
- * A145733 Indices of palindromes in A001127
+ * A145733 Indices of palindromes in A001127.
  * @author Georg Fischer
  */
 public class A145733 extends FilterPositionSequence {

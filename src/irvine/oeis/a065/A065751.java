@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A065751.
+ * A065751 Numbers whose decimal representation consist of nested and /or concatenated ordered pairs 0-9, 1-8, 2-7, 3-6 and 4-5.
  * @author Sean A. Irvine
  */
 public class A065751 extends Sequence0 {

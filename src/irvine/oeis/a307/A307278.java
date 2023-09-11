@@ -5,7 +5,7 @@ import irvine.oeis.RecordSequence;
 import irvine.oeis.a050.A050782;
 
 /**
- * A307278 Record values in A050782
+ * A307278 Record values in A050782.
  * @author Georg Fischer
  */
 public class A307278 extends RecordSequence {

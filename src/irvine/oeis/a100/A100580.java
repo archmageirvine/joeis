@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a020.A020449;
 
 /**
- * A100580 Palindromic primes containing digits 0 and 1 only. (Palindromic terms in A020449.)
+ * A100580 Palindromic primes containing digits 0 and 1 only. (Palindromic terms in A020449.).
  * @author Georg Fischer
  */
 public class A100580 extends FilterSequence {

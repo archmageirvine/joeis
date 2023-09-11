@@ -5,7 +5,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a024.A024359;
 
 /**
- * A132404 Smallest short legs &apos;A&apos; of exactly n primitive Pythagorean triangles.
+ * A132404 Smallest short legs 'A' of exactly n primitive Pythagorean triangles.
  * @author Georg Fischer
  */
 public class A132404 extends RecordPositionSequence {

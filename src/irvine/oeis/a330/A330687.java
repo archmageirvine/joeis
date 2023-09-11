@@ -5,7 +5,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a050.A050377;
 
 /**
- * A330687 Positions of records in A050377, number of ways to factor n into &quot;Fermi-Dirac primes&quot; (A050376).
+ * A330687 Positions of records in A050377, number of ways to factor n into "Fermi-Dirac primes" (A050376).
  * @author Georg Fischer
  */
 public class A330687 extends RecordPositionSequence {

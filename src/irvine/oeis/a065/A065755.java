@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065748 Triangle of Gandhi polynomial coefficients.
+ * A065755 Triangle of Gandhi polynomial coefficients.
  * @author Sean A. Irvine
  */
 public class A065755 extends Sequence1 {

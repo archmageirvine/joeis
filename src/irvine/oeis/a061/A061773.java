@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000081;
-import irvine.oeis.a008.A008578;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A061773 Triangle in which n-th row lists Matula-Goebel numbers for all rooted trees with n nodes.
@@ -19,7 +19,6 @@ public class A061773 extends Sequence1 {
   // Cf. Kevin Ryde, https://oeis.org/A061773/a061773.gp.txt
 
   private final MemorySequence mNumTrees = MemorySequence.cachedSequence(new A000081());
-  private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A008578());
   private final ArrayList<List<Z>> mRows = new ArrayList<>();
   private final ArrayList<List<Z>> mSortedRows = new ArrayList<>();
   private final ArrayList<List<Long>> mBigs = new ArrayList<>();
@@ -61,7 +60,7 @@ public class A061773 extends Sequence1 {
       }
       // Planted trees
       for (int i = 0; i < mNumTrees.a(n - 1).intValueExact(); ++i) {
-        row.add(mPrimes.a(mRows.get(n - 1).get(i).intValueExact()));
+        row.add(Puma.primeZ(mRows.get(n - 1).get(i)));
         bigs.add(++mBigIdx);
       }
       final ArrayList<Z> sort = new ArrayList<>(row);

@@ -3,8 +3,7 @@ package irvine.factor.prime;
 import irvine.math.z.Z;
 
 /**
- * Tests the fast prime tester.
- *
+ * Tests the corresponding class.
  * @author Sean A. Irvine
  */
 public class FastTest extends AbstractPrimeTest {
@@ -22,7 +21,7 @@ public class FastTest extends AbstractPrimeTest {
       // n = i*2^i+1
       final Z n = Z.valueOf(i).shiftLeft(i).setBit(0);
       if (i != 141 && i != 1) {
-        assertTrue(String.valueOf(n), !fast.isPrime(n));
+        assertFalse(String.valueOf(n), fast.isPrime(n));
       } else {
         assertTrue(String.valueOf(n), fast.isPrime(n));
       }
@@ -49,15 +48,15 @@ public class FastTest extends AbstractPrimeTest {
         assertTrue(String.valueOf(n), fast.isPrime(n));
         break;
       default:
-        assertTrue(String.valueOf(n), !fast.isPrime(n));
+        assertFalse(String.valueOf(n), fast.isPrime(n));
       }
     }
 
     // big ones
     assertTrue(fast.isPrime(Z.ONE.shiftLeft(21701).subtract(Z.ONE)));
     assertTrue(fast.isPrime(Z.ONE.shiftLeft(44497).subtract(Z.ONE)));
-    assertTrue(!fast.isPrime(Z.ONE.shiftLeft(44498).subtract(Z.ONE)));
-    assertTrue(!fast.isPrime(Z.ONE.shiftLeft(44501).subtract(Z.ONE)));
+    assertFalse(fast.isPrime(Z.ONE.shiftLeft(44498).subtract(Z.ONE)));
+    assertFalse(fast.isPrime(Z.ONE.shiftLeft(44501).subtract(Z.ONE)));
     // Next ones comment out because too slow
     //    assertTrue(fast.isPrime(Z.ONE.shiftLeft(1257787).subtract(Z.ONE)));
     //    assertTrue(!fast.isPrime(Z.ONE.shiftLeft(1257788).subtract(Z.ONE)));

@@ -1,8 +1,8 @@
 package irvine.oeis.a161;
 // manually A161026/partcap2 at 2022-07-06 21:37
 
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a006.A006720;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A161306 Number of partitions of n into Somos-4 sequence numbers A006720.
@@ -10,7 +10,7 @@ import irvine.oeis.a006.A006720;
  */
 public class A161306 extends A161026 {
 
-  private MemorySequence mSeq = MemorySequence.cachedSequence(new A006720().skip(3));
+  private final MemorySequence mSeq = MemorySequence.cachedSequence(new A006720().skip(3));
 
   /** Construct the sequence. */
   public A161306() {

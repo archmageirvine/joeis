@@ -1,8 +1,7 @@
 package irvine.oeis.a064;
 
+import irvine.factor.prime.Puma;
 import irvine.oeis.MultiplicativeSequence;
-import irvine.oeis.a008.A008578;
-import irvine.oeis.memory.MemorySequence;
 
 /**
  * A064988 Multiplicative with a(p^e) = prime(p)^e.
@@ -10,10 +9,8 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class A064988 extends MultiplicativeSequence {
 
-  private static final MemorySequence PRIMES = MemorySequence.cachedSequence(new A008578());
-
   /** Construct the sequence. */
   public A064988() {
-    super(1, (p, e) -> PRIMES.a(p.intValueExact()).pow(e));
+    super(1, (p, e) -> Puma.primeZ(p).pow(e));
   }
 }

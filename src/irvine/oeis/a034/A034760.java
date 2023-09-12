@@ -1,11 +1,10 @@
 package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
+import irvine.factor.prime.Puma;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a008.A008578;
 
 /**
  * A034760 Dirichlet convolution of primes (with 1) with phi(n).
@@ -13,7 +12,6 @@ import irvine.oeis.a008.A008578;
  */
 public class A034760 extends Sequence1 {
 
-  private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A008578());
   private int mN = 0;
 
   @Override
@@ -21,7 +19,7 @@ public class A034760 extends Sequence1 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(++mN).divisors()) {
       final int d = dd.intValue();
-      sum = sum.add(mPrimes.a(mN / d - 1).multiply(Euler.phi((long) d)));
+      sum = sum.add(Puma.primeZ(mN / d - 1).multiply(Euler.phi((long) d)));
     }
     return sum;
   }

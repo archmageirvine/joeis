@@ -3,10 +3,9 @@ package irvine.oeis.a219;
 import java.util.Arrays;
 
 import irvine.factor.prime.Fast;
-import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A219180 Number T(n,k) of partitions of n into k distinct prime parts; triangle T(n,k), n&gt;=0, read by rows.
@@ -18,7 +17,6 @@ public class A219180 extends MemoryFunction2Sequence<Integer, Z[]> {
 
   private static final Z[] EMPTY = new Z[0];
   private final Fast mFast = new Fast();
-  private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A000040());
   private Z[] mRow = EMPTY;
   private int mN = -1;
   private int mPos = 0;
@@ -37,7 +35,7 @@ public class A219180 extends MemoryFunction2Sequence<Integer, Z[]> {
       return EMPTY;
     }
     final Z[] b = get(n, i - 1);
-    final Z[] c = mPrimes.a(i).intValueExact() > n ? EMPTY : get(n - mPrimes.a(i).intValueExact(), i - 1);
+    final Z[] c = Puma.prime(i + 1) > n ? EMPTY : get(n - (int) Puma.prime(i + 1), i - 1);
     final Z[] res = new Z[Math.max(b.length, c.length + 1)];
     for (int k = 0; k < res.length; ++k) {
       res[k] = get(b, k).add(get(c, k - 1));

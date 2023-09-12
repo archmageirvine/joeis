@@ -1,9 +1,8 @@
 package irvine.oeis.a050;
 
 import irvine.factor.factor.Jaguar;
+import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
-import irvine.oeis.a008.A008578;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
@@ -17,7 +16,6 @@ public class A050298 extends MemoryFunction2Sequence<Integer, Z> {
     super(1);
   }
 
-  private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A008578());
   private int mN = 0;
   private int mM = 0;
 
@@ -41,6 +39,6 @@ public class A050298 extends MemoryFunction2Sequence<Integer, Z> {
       ++mN;
       mM = 1;
     }
-    return mPrimes.a(get(mN, mM).intValueExact());
+    return Puma.primeZ(get(mN, mM));
   }
 }

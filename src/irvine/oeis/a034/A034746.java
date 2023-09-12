@@ -1,11 +1,10 @@
 package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
+import irvine.factor.prime.Puma;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a008.A008578;
 
 /**
  * A034746 Dirichlet convolution of Fibonacci numbers with Primes (with 1).
@@ -13,7 +12,6 @@ import irvine.oeis.a008.A008578;
  */
 public class A034746 extends Sequence1 {
 
-  private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A008578());
   private int mN = 0;
 
   @Override
@@ -21,7 +19,7 @@ public class A034746 extends Sequence1 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(++mN).divisors()) {
       final int d = dd.intValue();
-      sum = sum.add(mPrimes.a(mN / d - 1).multiply(Fibonacci.fibonacci(d)));
+      sum = sum.add(Puma.primeZ(mN / d - 1).multiply(Fibonacci.fibonacci(d)));
     }
     return sum;
   }

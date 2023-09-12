@@ -16,6 +16,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(FastTest.class);
     suite.addTestSuite(FeralTest.class);
     suite.addTestSuite(LucasLehmerTest.class);
+    suite.addTestSuite(PumaTest.class);
     suite.addTestSuite(TrialDivisionTest.class);
     return suite;
   }

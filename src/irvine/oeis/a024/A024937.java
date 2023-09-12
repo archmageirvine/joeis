@@ -1,10 +1,9 @@
 package irvine.oeis.a024;
 
 import irvine.factor.prime.Fast;
-import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A024937 a(n) = number of 2's in all partitions of n into distinct primes.
@@ -19,14 +18,9 @@ public class A024937 extends MemoryFunction2Sequence<Integer, Z[]> {
   private int mN = -1;
   private int mPi = 0;
   private final Fast mFast = new Fast();
-  private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A000040());
 
   protected int target() {
     return 1;
-  }
-
-  private int p(final int n) {
-    return mPrimes.a(n - 1).intValueExact();
   }
 
   @Override
@@ -38,10 +32,10 @@ public class A024937 extends MemoryFunction2Sequence<Integer, Z[]> {
       return C2;
     }
     final Z[] b = get(n, m - 1);
-    if (p(m) > n) {
+    if ((int) Puma.prime(m) > n) {
       return b;
     }
-    final Z[] g = get(n - p(m), m - 1);
+    final Z[] g = get(n - (int) Puma.prime(m), m - 1);
     return new Z[] {
       b[0].add(g[0]),
       b[1].add(g[1]).add(m == target() ? g[0] : Z.ZERO)

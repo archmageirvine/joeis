@@ -1,10 +1,9 @@
 package irvine.oeis.a203;
 // manually prodsi2 at 2021-11-25
 
+import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a000.A000040;
 
 /**
  * A203524 a(n) = Product_{2 &lt;= i &lt; j &lt;= n+1} (prime(i) + prime(j)).
@@ -12,16 +11,15 @@ import irvine.oeis.a000.A000040;
  */
 public class A203524 extends Sequence1 {
 
-  protected int mN = 0;
-  private final MemorySequence mA000040 = MemorySequence.cachedSequence(new A000040());
+  protected int mN = 1;
 
   @Override
   public Z next() {
     ++mN;
     Z prod = Z.ONE;
     for (int k = 2; k <= mN; ++k) {
-      for (int j = 1; j <= k - 1; ++j) {
-        prod = prod.multiply(mA000040.a(k).add(mA000040.a(j)));
+      for (int j = 2; j <= k - 1; ++j) {
+        prod = prod.multiply(Puma.prime(k) + Puma.prime(j));
       }
     }
     return prod;

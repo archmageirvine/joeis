@@ -3,10 +3,9 @@ package irvine.oeis.a359;
 import java.util.HashSet;
 import java.util.function.Function;
 
+import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
-import irvine.oeis.a000.A000040;
 
 /**
  * A359734 Lexicographically earliest sequence of distinct nonnegative integers such that the sequence A051699(a(n)) (distance from the nearest prime) has the same sequence of digits.
@@ -16,7 +15,6 @@ public class A359734 extends Sequence0 {
 
   // After M. F. Hasler
 
-  private static final MemorySequence PRIMES = MemorySequence.cachedSequence(new A000040());
   private final HashSet<Long> mS = new HashSet<>();
   private final StringBuilder mD = new StringBuilder();
   private final int mMinValidIndex;
@@ -29,7 +27,7 @@ public class A359734 extends Sequence0 {
 
   /** Construct the sequence. */
   public A359734() {
-    this(k -> PRIMES.a(k - 1), 1);
+    this(Puma::primeZ, 1);
   }
 
   @Override

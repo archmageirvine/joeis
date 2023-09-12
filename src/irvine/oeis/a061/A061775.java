@@ -2,11 +2,10 @@ package irvine.oeis.a061;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.factor.prime.Puma;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
-import irvine.oeis.PrependSequence;
-import irvine.oeis.a000.A000720;
 
 /**
  * A061775 Number of nodes in rooted tree with Matula-Goebel number n.
@@ -15,8 +14,6 @@ import irvine.oeis.a000.A000720;
 public class A061775 extends MemorySequence {
 
   private final Fast mPrime = new Fast();
-  private final MemorySequence mPrimePi = MemorySequence.cachedSequence(new PrependSequence(new A000720(), 0));
-
   {
     setOffset(1);
     add(null); // 0th unused
@@ -29,7 +26,7 @@ public class A061775 extends MemorySequence {
       return Z.ONE;
     }
     if (mPrime.isPrime(n)) {
-      return a(mPrimePi.a(n).intValueExact()).add(1);
+      return a((int) Puma.primePi(n)).add(1);
     }
     final FactorSequence fs = Jaguar.factor(n);
     Z sum = Z.ONE;

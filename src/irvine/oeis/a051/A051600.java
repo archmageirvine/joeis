@@ -1,9 +1,8 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A051600 Rows of triangle formed using Pascal's rule except begin n-th row with (n+1)st prime and end it with (n+2)nd prime.
@@ -11,7 +10,6 @@ import irvine.oeis.a000.A000040;
  */
 public class A051600 extends MemoryFunction2Sequence<Integer, Z> {
 
-  private final MemorySequence mP = MemorySequence.cachedSequence(new A000040());
   private int mN = -1;
   private int mM = 0;
 
@@ -21,10 +19,10 @@ public class A051600 extends MemoryFunction2Sequence<Integer, Z> {
       return Z.ZERO;
     }
     if (m.equals(n)) {
-      return mP.a(2 * mN);
+      return Puma.primeZ(2L * mN + 1);
     }
     if (m == 0) {
-      return mP.a(2 * mN - 1);
+      return Puma.primeZ(2L * mN);
     }
     return get(n - 1, m - 1).add(get(n - 1, m));
   }

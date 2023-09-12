@@ -1,9 +1,8 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
-import irvine.oeis.a008.A008578;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A034891 Number of different products of partitions of n; number of partitions of n into prime parts (1 included); number of distinct orders of Abelian subgroups of symmetric group S_n.
@@ -13,7 +12,6 @@ public class A034891 extends MemoryFunction2Sequence<Integer, Z> {
 
   // After Alois P. Heinz
 
-  private final MemorySequence mPi = MemorySequence.cachedSequence(new A008578());
   private int mN = -1;
 
   @Override
@@ -24,7 +22,7 @@ public class A034891 extends MemoryFunction2Sequence<Integer, Z> {
     if (m < 0) {
       return Z.ZERO;
     }
-    final int p = mPi.a(m).intValueExact();
+    final int p = (int) Puma.prime(m);
     if (p > n) {
       return get(n, m - 1);
     } else {
@@ -34,6 +32,6 @@ public class A034891 extends MemoryFunction2Sequence<Integer, Z> {
 
   @Override
   public Z next() {
-    return get(++mN, mPi.a(mN).intValueExact());
+    return get(++mN, (int) Puma.prime(mN));
   }
 }

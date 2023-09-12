@@ -1,11 +1,10 @@
 package irvine.oeis.a056;
 
 import irvine.factor.factor.Jaguar;
+import irvine.factor.prime.Puma;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
-import irvine.oeis.a000.A000720;
 
 /**
  * A056239 If n = Product_{k &gt;= 1} (p_k)^(c_k) where p_k is k-th prime and c_k &gt;= 0 then a(n) = Sum_{k &gt;= 1} k*c_k.
@@ -13,7 +12,6 @@ import irvine.oeis.a000.A000720;
  */
 public class A056239 extends Sequence1 {
 
-  private final MemorySequence mPrimePi = MemorySequence.cachedSequence(new A000720());
   private long mN = 0;
 
   @Override
@@ -24,7 +22,7 @@ public class A056239 extends Sequence1 {
     final FactorSequence fs = Jaguar.factor(mN);
     Z sum = Z.ZERO;
     for (final Z p : fs.toZArray()) {
-      sum = sum.add(mPrimePi.a(p.intValueExact() - 1).multiply(fs.getExponent(p)));
+      sum = sum.add(Puma.primePiZ(p).multiply(fs.getExponent(p)));
     }
     return sum;
   }

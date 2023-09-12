@@ -1,11 +1,10 @@
 package irvine.oeis.a062;
 
 import irvine.factor.factor.Jaguar;
+import irvine.factor.prime.Puma;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
-import irvine.oeis.PrependSequence;
-import irvine.oeis.a000.A000720;
 
 /**
  * A062537 Nodes in riff (rooted index-functional forest) for n.
@@ -13,7 +12,6 @@ import irvine.oeis.a000.A000720;
  */
 public class A062537 extends MemorySequence {
 
-  private final MemorySequence mA = MemorySequence.cachedSequence(new PrependSequence(new A000720(), 0));
   {
     setOffset(1);
     add(null);
@@ -28,7 +26,7 @@ public class A062537 extends MemorySequence {
     final FactorSequence fs = Jaguar.factor(n);
     Z sum = Z.ZERO;
     for (final Z p : fs.toZArray()) {
-      sum = sum.add(a(mA.a(p.intValueExact()).intValueExact())).add(a(fs.getExponent(p)).add(1));
+      sum = sum.add(a((int) Puma.primePi(p))).add(a(fs.getExponent(p)).add(1));
     }
     return sum;
   }

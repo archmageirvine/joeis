@@ -1,9 +1,8 @@
 package irvine.oeis.a048;
 
 import irvine.factor.factor.Jaguar;
+import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
-import irvine.oeis.a000.A000720;
 import irvine.oeis.a001.A001358;
 
 /**
@@ -12,16 +11,14 @@ import irvine.oeis.a001.A001358;
  */
 public class A048623 extends A001358 {
 
-  private final MemorySequence mPrimePi = MemorySequence.cachedSequence(new A000720());
-
   @Override
   public Z next() {
     final Z[] p = Jaguar.factor(super.next()).toZArray();
     if (p.length == 1) {
-      return Z.ONE.shiftLeft(mPrimePi.a(p[0].intValueExact() - 1).longValueExact());
+      return Z.ONE.shiftLeft(Puma.primePi(p[0]));
     } else {
-      return Z.ONE.shiftLeft(mPrimePi.a(p[1].intValueExact() - 1).longValueExact() - 1)
-        .or(Z.ONE.shiftLeft(mPrimePi.a(p[0].intValueExact() - 1).longValueExact() - 1));
+      return Z.ONE.shiftLeft(Puma.primePi(p[1]) - 1)
+        .or(Z.ONE.shiftLeft(Puma.primePi(p[0]) - 1));
     }
   }
 }

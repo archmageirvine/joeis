@@ -1,9 +1,8 @@
 package irvine.oeis.a057;
 
+import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000120;
-import irvine.oeis.a008.A008578;
 
 /**
  * A057334 In A000120, replace each entry k with the k-th prime and replace 0 with 1.
@@ -11,10 +10,8 @@ import irvine.oeis.a008.A008578;
  */
 public class A057334 extends A000120 {
 
-  private final MemorySequence mP = MemorySequence.cachedSequence(new A008578());
-
   @Override
   public Z next() {
-    return mP.a(super.next().intValueExact());
+    return Puma.primeZ(super.next());
   }
 }

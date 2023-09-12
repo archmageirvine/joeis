@@ -1,9 +1,8 @@
 package irvine.oeis.a024;
 
 import irvine.factor.prime.Fast;
+import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
-import irvine.oeis.a000.A000040;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
@@ -24,11 +23,6 @@ public class A024938 extends MemoryFunction2Sequence<Integer, Z[]> {
   private int mN = 0;
   private int mPi = 0;
   private final Fast mFast = new Fast();
-  private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A000040());
-
-  private int p(final int n) {
-    return mPrimes.a(n - 1).intValueExact();
-  }
 
   @Override
   protected Z[] compute(final Integer n, final Integer m) {
@@ -39,10 +33,10 @@ public class A024938 extends MemoryFunction2Sequence<Integer, Z[]> {
       return C2;
     }
     final Z[] b = get(n, m - 1);
-    if (p(m) > n) {
+    if ((int) Puma.prime(m) > n) {
       return b;
     }
-    final Z[] g = get(n - p(m), m - 1);
+    final Z[] g = get(n - (int) Puma.prime(m), m - 1);
     return new Z[] {
       b[0].add(g[0]),
       b[1].add(g[1]).add(g[0])

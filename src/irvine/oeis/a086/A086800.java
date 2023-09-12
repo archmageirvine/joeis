@@ -1,8 +1,7 @@
 package irvine.oeis.a086;
 
+import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
-import irvine.oeis.a000.A000040;
 import irvine.oeis.triangle.Triangle;
 
 /**
@@ -10,8 +9,6 @@ import irvine.oeis.triangle.Triangle;
  * @author Georg Fischer
  */
 public class A086800 extends Triangle {
-
-  private final MemorySequence mSeq = MemorySequence.cachedSequence(new A000040());
 
   /** Construct the sequence. */
   public A086800() {
@@ -21,6 +18,6 @@ public class A086800 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return n == k ? Z.ZERO : mSeq.a(n).subtract(mSeq.a(k));
+    return n == k ? Z.ZERO : Puma.primeZ(n + 1).subtract(Puma.prime(k + 1));
   }
 }

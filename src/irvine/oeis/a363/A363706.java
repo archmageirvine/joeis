@@ -4,7 +4,7 @@ package irvine.oeis.a363;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A363706 allocated for Allan Bickle.
+ * A363706 a(n) is the sigma irregularity of the n-th power of a path graph of length at least 3*n.
  * @author Georg Fischer
  */
 public class A363706 extends GeneratingFunctionSequence {

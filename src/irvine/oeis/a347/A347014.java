@@ -5,7 +5,7 @@ import irvine.oeis.transform.BinomialTransformSequence;
 import irvine.oeis.a008.A008542;
 
 /**
- * A347014 E.g.f.: exp(x) / (1 - 6 * x)^(1/6).
+ * A347014 Expansion of e.g.f.: exp(x) / (1 - 6*x)^(1/6).
  *
  * @author Georg Fischer
  */

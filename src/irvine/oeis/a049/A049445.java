@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A049445 Numbers n with property that the number of 1's in binary expansion of n (see A000120) divides n.
+ * A049445 Numbers k with the property that the number of 1's in binary expansion of k (see A000120) divides k.
  * @author Sean A. Irvine
  */
 public class A049445 extends Sequence1 {

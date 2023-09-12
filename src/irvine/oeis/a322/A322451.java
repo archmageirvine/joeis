@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000665;
 
 /**
- * A322451 Number of unlabeled 3-regular hypergraphs spanning n vertices.
+ * A322451 Number of unlabeled 3-uniform hypergraphs spanning n vertices.
  * @author Sean A. Irvine
  */
 public class A322451 extends DifferenceSequence {

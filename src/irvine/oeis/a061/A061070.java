@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000010;
 
 /**
- * A061070 Number of distinct values in the list of values of the Euler totient-function {phi(j) : j=1...n}.
+ * A061070 Number of distinct values in the list of values of the Euler totient function {phi(j) : j=1..n}.
  * @author Sean A. Irvine
  */
 public class A061070 extends A000010 {

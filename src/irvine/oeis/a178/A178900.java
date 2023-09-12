@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A178900 First nonzero value of a^(p-1) - 1 mod p^2, for a &gt; 0 coprime to the n-th Wieferich prime p.
+ * A178900 First nonzero value of (a^(p-1) - 1) mod p^2, for a &gt; 0 coprime to the n-th Wieferich prime p.
  *
  * @author Georg Fischer
  */

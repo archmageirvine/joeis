@@ -6,7 +6,7 @@ import irvine.oeis.transform.Stirling2TransformSequence;
 import irvine.oeis.a008.A008548;
 
 /**
- * A346984 E.g.f.: 1 / (6 - 5 * exp(x))^(1/5).
+ * A346984 Expansion of e.g.f. 1 / (6 - 5 * exp(x))^(1/5).
  *
  * @author Georg Fischer
  */

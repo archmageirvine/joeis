@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A024935 a(n) = minimal length of any partition of n into distinct primes.
+ * A024935 Duplicate of A051034.
  * @author Sean A. Irvine
  */
 public class A024935 extends Sequence2 {

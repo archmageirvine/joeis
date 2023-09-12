@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A052492 Initial pile sizes that guarantee a win for player 2 in a variant of Fibonacci NIM where the players may not take one stone.
+ * A052492 Initial pile sizes that guarantee a win for player 2 in a variant of Fibonacci Nim where the players may not take one stone.
  * Translated from <a href="https://github.com/loda-lang/loda-programs/blob/main/oeis/052/A052492.asm">here</a>
  * @author Georg Fischer
  */

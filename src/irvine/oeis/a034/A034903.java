@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A034903 a(i) is square mod a(j), i &lt;&gt; j.
+ * A034903 a(i) is a square mod a(j), i &lt;&gt; j.
  * @author Sean A. Irvine
  */
 public class A034903 extends MemorySequence {

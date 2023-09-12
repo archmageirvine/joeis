@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a014.A014217;
 
 /**
- * A142718 Odds terms in A014217.
+ * A142718 Odd terms in A014217.
  * @author Georg Fischer
  */
 public class A142718 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A084091 Expansion of sum(k&gt;=0, x^2^k/(1+x^2^k+x^2^(k+1))).
+ * A084091 Expansion of Sum_{k&gt;=0} x^2^k/(1+x^2^k+x^2^(k+1)).
  * @author Georg Fischer
  */
 public class A084091 extends MultiplicativeSequence {

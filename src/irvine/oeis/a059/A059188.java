@@ -7,7 +7,7 @@ import irvine.oeis.EngelExpansionSequence;
 
 
 /**
- * A059188 Engel expansion of Gamma(1/3) = 2.67894.
+ * A059188 Engel expansion of Gamma(1/3) = 2.6789385....
  * @author Georg Fischer
  */
 public class A059188 extends EngelExpansionSequence {

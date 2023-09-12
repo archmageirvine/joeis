@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A039735 Triangle read by rows: T(n,k) = number of nonisomorphic unlabeled planar graphs with n &gt;= 1 nodes and 0&lt;=k&lt;=3n-6 edges.
+ * A039735 Triangle read by rows: T(n,k) = number of nonisomorphic unlabeled planar graphs with n &gt;= 1 nodes and 0 &lt;= k &lt;= 3n-6 edges.
  * @author Sean A. Irvine
  */
 public class A039735 extends Sequence1 implements GraphProcessor {

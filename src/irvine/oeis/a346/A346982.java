@@ -6,7 +6,7 @@ import irvine.oeis.transform.Stirling2TransformSequence;
 import irvine.oeis.a007.A007559;
 
 /**
- * A346982 E.g.f.: 1 / (4 - 3 * exp(x))^(1/3).
+ * A346982 Expansion of e.g.f. 1 / (4 - 3 * exp(x))^(1/3).
  *
  * @author Georg Fischer
  */

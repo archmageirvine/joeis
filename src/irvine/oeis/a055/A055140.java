@@ -7,7 +7,7 @@ import irvine.oeis.a053.A053871;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A055140 Triangle: matchings of 2n people with partners (of either sex) such that exactly k couples are left together.
+ * A055140 Triangle read by rows: T(n, k) = number of matchings of 2n people with partners (of either sex) such that exactly k couples are left together.
  * a(n, k) = A053871(n-k)*binomial(n, k).
  * @author Georg Fischer
  */

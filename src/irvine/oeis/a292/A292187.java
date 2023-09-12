@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 
 import irvine.oeis.a172.A172455;
 /**
- * A292187 Number of rooted unlabelled bipartite cubic maps on a compact closed oriented surface with 2*n vertices (and thus 3*n edges).
+ * A292187 Number of rooted unlabeled bipartite cubic maps on a compact closed oriented surface with 2*n vertices (and thus 3*n edges).
  * @author Georg Fischer
  */
 public class A292187 extends A172455 {

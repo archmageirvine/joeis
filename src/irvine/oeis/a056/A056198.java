@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A056198 Defined by Product 1/(1-x^k)^a_k, k=1..inf = 1+x+2*Sum(a_k*x^k, k=2..inf).
+ * A056198 Defined by Product 1/(1-x^k)^a_k, k=1..infinity = 1+x+2*Sum(a_k*x^k, k=2..infinity).
  * @author Sean A. Irvine
  */
 public class A056198 extends MemorySequence {

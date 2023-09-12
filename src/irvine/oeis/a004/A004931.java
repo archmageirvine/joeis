@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A004931 Floor of n*phi^16, where phi is the golden ratio, A001622.
+ * A004931 a(n) = floor(n*phi^16), where phi is the golden ratio, A001622.
  * @author Sean A. Irvine
  */
 public class A004931 extends Sequence0 {

@@ -4,7 +4,7 @@ package irvine.oeis.a270;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A270437 a(1) = 1, for n &gt; 1, a(n) = A020639(n)^A048724(A067029(n)) * a(A028234(n)).
+ * A270437 Multiplicative with a(p^e) = p^(e XOR 2e), where XOR is bitwise-xor.
  * @author Georg Fischer
  */
 public class A270437 extends MultiplicativeSequence {

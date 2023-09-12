@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A143521 G.f.: Sum_{k&gt;0} k * x^k / (1 + (-x)^k)^2.
+ * A143521 Expansion of g.f. Sum_{k&gt;0} k * x^k / (1 + (-x)^k)^2.
  * @author Georg Fischer
  */
 public class A143521 extends MultiplicativeSequence {

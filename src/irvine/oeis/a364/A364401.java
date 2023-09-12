@@ -4,7 +4,7 @@ package irvine.oeis.a364;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A364401 allocated for Nicolay Avilov.
+ * A364401 a(n) is the number of regions into which three-dimensional Euclidean space is divided by n planes parallel to each face of a regular tetrahedron with edge length n, dividing the edges into unit segments.
  * @author Georg Fischer
  */
 public class A364401 extends GeneratingFunctionSequence {

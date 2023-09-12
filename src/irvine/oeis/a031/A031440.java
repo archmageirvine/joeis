@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A031440 a(0)=3 and for n&gt;0 a(n) is the greatest prime factor of a(n-1)^2 - 2.
+ * A031440 a(0) = 3; for n &gt; 0, a(n) is the greatest prime factor of a(n-1)^2 - 2.
  * @author Sean A. Irvine
  */
 public class A031440 extends Sequence0 {

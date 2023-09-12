@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000165;
 import irvine.oeis.a005.A005867;
 
 /**
- * A065412 (A005867 - A000165)/96.
+ * A065412 a(n) = (A005867(n+1) - A000165(n))/96.
  * @author Sean A. Irvine
  */
 public class A065412 extends A005867 {

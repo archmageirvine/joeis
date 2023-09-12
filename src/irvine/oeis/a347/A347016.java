@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A347016 E.g.f.: 1 / (1 + 4 * log(1 - x))^(1/4).
+ * A347016 Expansion of e.g.f. 1 / (1 + 4 * log(1 - x))^(1/4).
  * E.g.f.: 1 / (1 + 4 * log(1 - x))^(1/4)
  * @author Georg Fischer
  */

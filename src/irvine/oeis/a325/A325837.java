@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A325837 The number of exponentially odd divisors of n.
+ * A325837 The number of coreful divisors of n that are exponentially odd numbers (A268335).
  * @author Georg Fischer
  */
 public class A325837 extends MultiplicativeSequence {

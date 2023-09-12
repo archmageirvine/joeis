@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065522 Numbers n such that sigma(n) and sigma(n+1) are nontrivial powers (A065496).
+ * A065522 Numbers k such that sigma(k) and sigma(k+1) are nontrivial powers (A065496).
  * @author Sean A. Irvine
  */
 public class A065522 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.a023.A023531;
 import irvine.oeis.a051.A051731;
 
 /**
- * A114002 Expansion of x^k(1+x^(k+1))/(1-x^(k+1)).
+ * A114002 Expansion of g.f. x^k(1+x^(k+1))/(1-x^(k+1)).
  * @author Georg Fischer
  */
 public class A114002 extends AbstractSequence {

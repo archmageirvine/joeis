@@ -4,7 +4,7 @@ import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
 
 /**
- * A050602 Recursion counts for summation table A003056 with formula a(y,x): if (y AND x) = 0 then (y XOR x), otherwise = a((y XOR x),2*(y AND x)).
+ * A050602 Square array A(x,y), read by antidiagonals, where A(x,y) = 0 if (x AND y) = 0, otherwise A(x,y) = 1+A(x XOR y, 2*(x AND y)).
  * @author Sean A. Irvine
  */
 public class A050602 extends MemoryFunction2Sequence<Long, Long> {

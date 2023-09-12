@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000292;
 
 /**
- * A002311 n-th tetrahedral number is the sum of 2 tetrahedral numbers.
+ * A002311 Numbers k such that the k-th tetrahedral number is the sum of 2 tetrahedral numbers.
  * @author Sean A. Irvine
  */
 public class A002311 extends A000292 {

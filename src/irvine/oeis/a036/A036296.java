@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A036296 Denominator of Sum i/2^i, i=1..n.
+ * A036296 Denominator of Sum_{i=1..n} i/2^i.
  * @author Sean A. Irvine
  */
 public class A036296 extends Sequence0 {

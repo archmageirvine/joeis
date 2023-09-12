@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000849;
 
 /**
- * A276497 Maximum number of different possible residues of the division of prime(k) by primorial(n), with k such that prime(k) &gt; primorial(n).
+ * A276497 Number of noncomposites in the reduced residue system of n-th primorial number, A002110(n).
  * @author Georg Fischer
  */
 public class A276497 extends AbstractSequence {

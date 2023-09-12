@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A001670 n appears n times (n even).
+ * A001670 k appears k times (k even).
  * @author Sean A. Irvine
  */
 public class A001670 extends Sequence1 {

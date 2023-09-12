@@ -5,7 +5,7 @@ import irvine.oeis.a037.A037227;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A069517 a(n) = (-1)*sum( d divides n, moebius(d)*(-1)^d).
+ * A069517 a(n) = (-1)*Sum_{d|n} (moebius(d)*(-1)^d).
  * @author Georg Fischer
  */
 public class A069517 extends MobiusTransformSequence {

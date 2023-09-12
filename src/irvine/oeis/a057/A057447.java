@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A057447 Higgs' primes: a(n+1) = next prime such that a(n+1)-1 | (a(1)...a(n))^3.
+ * A057447 a(n+1) = next prime such that a(n+1)-1 | (a(1)...a(n))^3.
  * @author Sean A. Irvine
  */
 public class A057447 extends Sequence1 {

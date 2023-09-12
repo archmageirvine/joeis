@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A009436 Expansion of log(1+x)/exp(sin(x)).
+ * A009436 Expansion of e.g.f. log(1+x)/exp(sin(x)).
  * @author Sean A. Irvine
  */
 public class A009436 extends Sequence0 {

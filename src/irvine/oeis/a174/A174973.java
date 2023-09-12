@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a047.A047836;
 
 /**
- * A174973 Numbers whose divisors increase by a factor of 2 or less.
+ * A174973 Numbers whose divisors increase by a factor of at most 2.
  * @author Georg Fischer
  */
 public class A174973 extends Sequence1 {

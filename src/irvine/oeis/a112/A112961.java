@@ -5,14 +5,14 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A112961 a(n) = a(n-1)^3 + a(n-2)^3 for n &gt; 2 with a(1) = a(2) = 1.
+ * A112961 a(n) = a(n-1)^3 + a(n-2)^3 for n &gt; 2 with a(0) = 0, a(1) = 1.
  * @author Georg Fischer
  */
 public class A112961 extends ConstantOrderRecurrence {
 
   /** Construct the sequence */
   public A112961() {
-    super(0, 2, 0, 1, 1);
+    super(0, 2, 0, 0, 1);
   }
 
   @Override

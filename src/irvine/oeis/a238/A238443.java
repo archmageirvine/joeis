@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.a174.A174973;
 
 /**
- * A238443 Numbers n with the property that the symmetric representation of sigma(n) has only one part. This is the same sequence as A174973.
+ * A238443 Duplicate of A174973.
  * @author Georg Fischer
  */
 public class A238443 extends A174973 {

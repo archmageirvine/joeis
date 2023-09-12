@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A054496 If n = p_1^e_1 *p_2^e_2 *p_3^e_3..., p's = distinct primes, e's = positive integers, then a(n) = p_1^(e_1^2) *p_2^(e_2^2) *p_3^(e_3^2) ... .
+ * A054496 If n = p_1^e_1 * p_2^e_2 * p_3^e_3 * ..., p's = distinct primes, e's = positive integers, then a(n) = p_1^(e_1^2) * p_2^(e_2^2) * p_3^(e_3^2) * ... .
  * @author Georg Fischer
  */
 public class A054496 extends MultiplicativeSequence {

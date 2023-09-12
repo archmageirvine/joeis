@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A109386 G.f. is the logarithm of the g.f. of A107742: Sum_{n&gt;=1} (a(n)/n)*x^n = Log( Sum_{n&gt;=0} A107742(n)*x^n ).
+ * A109386 G.f. is the logarithm of the g.f. of A107742: Sum_{n&gt;=1} (a(n)/n)*x^n = log( Sum_{n&gt;=0} A107742(n)*x^n ).
  * @author Georg Fischer
  */
 public class A109386 extends MultiplicativeSequence {

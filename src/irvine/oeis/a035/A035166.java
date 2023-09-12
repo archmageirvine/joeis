@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A035166 Let d(n) = denominator of Sum_{k=1..n} 1/k^2 and consider f(n) = product of primes which appear to odd powers in d(n); sequence lists n such that f(n) is different from f(n-1).
+ * A035166 Let d(m) = denominator of Sum_{k=1..m} 1/k^2 and consider f(m) = product of primes which appear to odd powers in d(m); sequence lists m such that f(m) is different from f(m-1).
  * @author Sean A. Irvine
  */
 public class A035166 extends Sequence1 {

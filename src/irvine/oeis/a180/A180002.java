@@ -5,7 +5,7 @@ package irvine.oeis.a180;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A180002 a(n) red and b(n) blue balls in an urn; draw 5 balls without replacement; Probability(5 red balls) = Probability(3 red and 2 blue balls).
+ * A180002 Place a(n) red and b(n) blue balls in an urn; draw 5 balls without replacement; Probability(5 red balls) = Probability(3 red and 2 blue balls).
  * @author Georg Fischer
  */
 public class A180002 extends HolonomicRecurrence {

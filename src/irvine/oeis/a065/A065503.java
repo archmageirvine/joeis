@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060213;
 
 /**
- * A065503 Let p(k) denote k-th prime; consider solutions (x,y) of Diophantine equation p(x+1)-6p(y)=1 (*), where p(x) belongs to A060213 and p(m)=(p(n)+1)/6; sequence gives values of x.
+ * A065503 Indices k of primes p(k) such that p(k) is in A060213.
  * @author Sean A. Irvine
  */
 public class A065503 extends A060213 {

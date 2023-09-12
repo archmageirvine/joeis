@@ -4,7 +4,7 @@ package irvine.oeis.a127;
 import irvine.oeis.triangle.RowSumSequence;
 
 /**
- * A127705 Row sums of A127704.
+ * A127705 a(n) = mu(n) + Sum_{k|n, k&gt;1} (k+1)*mu(n/k), where mu = A008683.
  * @author Georg Fischer
  */
 public class A127705 extends RowSumSequence {

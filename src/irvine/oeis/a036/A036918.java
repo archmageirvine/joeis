@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A036918 a(n) = floor(e*(n-1)*(n-1)!)).
+ * A036918 a(n) = floor(e*(n-1)*(n-1)!).
  * @author Sean A. Irvine
  */
 public class A036918 extends AbstractSequence {

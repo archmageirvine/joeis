@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A346978 E.g.f.: 1 / sqrt(1 + 2 * log(1 - x)).
+ * A346978 Expansion of e.g.f. 1 / sqrt(1 + 2 * log(1 - x)).
  * E.g.f.: 1 / sqrt(1 + 2 * log(1 - x))
  * @author Georg Fischer
  */

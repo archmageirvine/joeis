@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063893 Numbers k such that sum of proper divisors or aliquot parts of k^2 is a square.
+ * A063893 Numbers k such that the sum of proper divisors or aliquot parts of k^2 is a square.
  * @author Sean A. Irvine
  */
 public class A063893 extends Sequence1 {

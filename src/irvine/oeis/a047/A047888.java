@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import irvine.math.z.Z;
 
 /**
- * A047888 Rectangular array of numbers a(n,k) = number of permutations of n things with longest increasing subsequence of length &lt;=k (1&lt;=k&lt;=infinity), read by antidiagonals.
+ * A047888 Rectangular array of numbers a(n,k) = number of permutations of n things with longest increasing subsequence of length &lt;= k (1 &lt;= k &lt;= oo), read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A047888 extends A047874 {

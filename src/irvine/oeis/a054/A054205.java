@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Triple;
 
 /**
- * A054205 Consider all integer triples (i,j,k), j &gt;= k &gt; 0, with binomial(i+2,3)=j^3+k^3, ordered by increasing i; sequence gives i values.
+ * A054205 Consider all integer triples (i,j,k), j &gt;= k &gt; 0, with binomial(i+2,3) = j^3 + k^3, ordered by increasing i; sequence gives i values.
  * @author Sean A. Irvine
  */
 public class A054205 extends Sequence1 {

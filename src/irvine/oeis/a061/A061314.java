@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.AntidiagonalSequence;
 
 /**
- * A061314 Table by antidiagonals where T(n,k)=T(n,k-1)+T(n,k-1)^2/k^2 and T(n,0)=n.
+ * A061314 Table read by descending antidiagonals where T(n,k) = T(n,k-1) + T(n,k-1)^2/k^2 and T(n,0)=n.
  * @author Sean A. Irvine
  */
 public class A061314 extends AntidiagonalSequence {

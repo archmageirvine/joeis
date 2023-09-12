@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.math.z.Z;
 
 /**
- * A029775 Squares n such that the digits of n appear in sqrt(n).
+ * A029775 Squares k^2 whose digits appear in k.
  * @author Sean A. Irvine
  */
 public class A029775 extends A029774 {

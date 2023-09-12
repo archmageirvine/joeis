@@ -14,6 +14,6 @@ public class A066715 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A066715() {
-    super(0, n -> Z.TWO.multiply(n).add(Z.ONE).gcd(Jaguar.factor(2 * n + 1).sigma(1)));
+    super(0, n -> Z.TWO.multiply(n).add(Z.ONE).gcd(Jaguar.factor(2L * n + 1).sigma(1)));
   }
 }

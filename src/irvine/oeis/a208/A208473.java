@@ -14,6 +14,6 @@ public class A208473 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A208473() {
-    super(0, n -> Binomial.binomial(2 * n, n).multiply(Fibonacci.fibonacci(3 * n + 1)));
+    super(0, n -> Binomial.binomial(2L * n, n).multiply(Fibonacci.fibonacci(3L * n + 1)));
   }
 }

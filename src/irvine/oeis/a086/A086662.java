@@ -15,6 +15,6 @@ public class A086662 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A086662() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Stirling.firstKind(n, k).abs().multiply(Binomial.binomial(2 * k, k)).divide(Z.valueOf(k + 1))));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Stirling.firstKind(n, k).abs().multiply(Binomial.binomial(2L * k, k)).divide(Z.valueOf(k + 1))));
   }
 }

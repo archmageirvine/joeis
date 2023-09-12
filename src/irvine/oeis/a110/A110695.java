@@ -14,6 +14,6 @@ public class A110695 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A110695() {
-    super(0, n -> Z.TWO.multiply(Binomial.binomial(2 * n, n)).subtract(Z.ONE).multiply(Binomial.binomial(2 * n, n).square().subtract(Binomial.binomial(2 * n, n)).add(Z.ONE)));
+    super(0, n -> Z.TWO.multiply(Binomial.binomial(2L * n, n)).subtract(Z.ONE).multiply(Binomial.binomial(2L * n, n).square().subtract(Binomial.binomial(2L * n, n)).add(Z.ONE)));
   }
 }

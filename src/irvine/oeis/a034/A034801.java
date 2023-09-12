@@ -18,7 +18,7 @@ public class A034801 extends MemoryFunction2Sequence<Integer, Z> {
     if (k == 0 || k.equals(n)) {
       return Z.ONE;
     }
-    return get(n - 1, k - 1).multiply(Fibonacci.fibonacci(2 * (n - k) - 1)).add(get(n - 1, k).multiply(Fibonacci.fibonacci(2 * k + 1)));
+    return get(n - 1, k - 1).multiply(Fibonacci.fibonacci(2L * (n - k) - 1)).add(get(n - 1, k).multiply(Fibonacci.fibonacci(2L * k + 1)));
   }
 
   @Override

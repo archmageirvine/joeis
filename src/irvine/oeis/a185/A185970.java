@@ -14,6 +14,6 @@ public class A185970 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A185970() {
-    super(0, n -> (n == 0) ? Z.ONE : ((n == 1) ? Z.THREE : Z.TWO.pow((n * n - n - 2) / 2).multiply(MemoryFactorial.SINGLETON.factorial(n + 2))));
+    super(0, n -> (n == 0) ? Z.ONE : ((n == 1) ? Z.THREE : Z.TWO.pow(((long) n * n - n - 2) / 2).multiply(MemoryFactorial.SINGLETON.factorial(n + 2))));
   }
 }

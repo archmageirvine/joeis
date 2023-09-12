@@ -15,6 +15,6 @@ public class A362640 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A362640() {
-    super(1, n -> Integers.SINGLETON.product(1, n, k -> Z.valueOf(2 * n - k).pow(Puma.primePiZ(k).subtract(Puma.primePiZ(k - 1)).multiply(Puma.primePiZ(2 * n - k).subtract(Puma.primePiZ(2 * n - k - 1))))));
+    super(1, n -> Integers.SINGLETON.product(1, n, k -> Z.valueOf(2L * n - k).pow(Puma.primePiZ(k).subtract(Puma.primePiZ(k - 1)).multiply(Puma.primePiZ(2L * n - k).subtract(Puma.primePiZ(2L * n - k - 1))))));
   }
 }

@@ -13,6 +13,6 @@ public class A177230 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A177230() {
-    super(1, n -> Z.NEG_ONE.pow(n - 1).multiply(Z.valueOf(n + 1)).multiply(Z.valueOf(2 * n + 1)).multiply(Z.valueOf(n).pow(n - 2)).multiply(Z.valueOf(n + 2).pow(n).subtract(Z.valueOf(n).pow(n))).divide(Z.valueOf(12)));
+    super(1, n -> Z.NEG_ONE.pow(n - 1).multiply(Z.valueOf(n + 1)).multiply(Z.valueOf(2L * n + 1)).multiply(Z.valueOf(n).pow(n - 2)).multiply(Z.valueOf(n + 2).pow(n).subtract(Z.valueOf(n).pow(n))).divide(Z.valueOf(12)));
   }
 }

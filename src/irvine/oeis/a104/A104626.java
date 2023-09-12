@@ -19,6 +19,6 @@ public class A104626 extends Sequence1 {
     if (mN <= 3) {
       return Z.valueOf(mN + 3);
     }
-    return Fibonacci.lucas(2 * mN - 4).add(1);
+    return Fibonacci.lucas(2L * mN - 4).add(1);
   }
 }

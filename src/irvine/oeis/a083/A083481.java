@@ -13,6 +13,6 @@ public class A083481 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A083481() {
-    super(1, n -> Jaguar.factor(n * n + n * 1).core());
+    super(1, n -> Jaguar.factor((long) n * n + n * 1L).core());
   }
 }

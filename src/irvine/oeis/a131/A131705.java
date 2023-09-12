@@ -15,6 +15,6 @@ public class A131705 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A131705() {
-    super(0, n -> Euler.phi(Binomial.binomial(2 * n, n).multiply(Z.valueOf(n).pow(3))));
+    super(0, n -> Euler.phi(Binomial.binomial(2L * n, n).multiply(Z.valueOf(n).pow(3))));
   }
 }

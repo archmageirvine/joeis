@@ -14,6 +14,6 @@ public class A153338 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A153338() {
-    super(1, n -> Z.valueOf(n).multiply(Z.ONE.shiftLeft(2 * n - 2)).subtract(Z.valueOf(2 * n - 1).multiply(Binomial.binomial(2 * n - 2, n - 1))));
+    super(1, n -> Z.valueOf(n).multiply(Z.ONE.shiftLeft(2L * n - 2)).subtract(Z.valueOf(2L * n - 1).multiply(Binomial.binomial(2L * n - 2, n - 1))));
   }
 }

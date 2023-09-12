@@ -14,6 +14,6 @@ public class A193295 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A193295() {
-    super(2, n -> Z.valueOf(Jaguar.factor(n * n - 1).bigOmega()));
+    super(2, n -> Z.valueOf(Jaguar.factor((long) n * n - 1).bigOmega()));
   }
 }

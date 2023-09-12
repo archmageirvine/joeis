@@ -13,6 +13,6 @@ public class A217971 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A217971() {
-    super(1, n -> Z.ONE.shiftLeft(2 * n + 1).multiply(Z.valueOf(2 * n + 1)).multiply(Z.valueOf(n).pow(2 * n)));
+    super(1, n -> Z.ONE.shiftLeft(2L * n + 1).multiply(Z.valueOf(2L * n + 1)).multiply(Z.valueOf(n).pow(2L * n)));
   }
 }

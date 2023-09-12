@@ -15,6 +15,6 @@ public class A114185 extends Sequence2 {
   @Override
   public Z next() {
     ++mN;
-    return Fibonacci.fibonacci(2 * mN).subtract(mN + 1);
+    return Fibonacci.fibonacci(2L * mN).subtract(mN + 1);
   }
 }

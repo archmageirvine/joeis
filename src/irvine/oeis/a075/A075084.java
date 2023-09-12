@@ -16,7 +16,7 @@ public class A075084 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A075084() {
-    super(1, n -> Z.valueOf(n).subtract(Puma.primePiZ(2 * n)).add(Puma.primePiZ(n - 1)).add(Z.ONE));
+    super(1, n -> Z.valueOf(n).subtract(Puma.primePiZ(2L * n)).add(Puma.primePiZ(n - 1)).add(Z.ONE));
   }
 
   @Override

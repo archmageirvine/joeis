@@ -21,6 +21,6 @@ public class A083523 extends A000045 {
     if (mN == 2) {
       return Z.EIGHT;
     }
-    return Fibonacci.fibonacci(3 * (1 << (mN - 2)));
+    return Fibonacci.fibonacci(3L * (1L << (mN - 2)));
   }
 }

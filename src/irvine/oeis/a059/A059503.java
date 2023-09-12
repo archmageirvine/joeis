@@ -14,7 +14,7 @@ public class A059503 extends Sequence0 {
   private int mM = 0;
 
   private Z t(final int n, final int k) {
-    return Fibonacci.fibonacci(2 * k).multiply(3 - k).add(Fibonacci.fibonacci(2 * k - 1).multiply(5L * n + 3L * k)).divide(5);
+    return Fibonacci.fibonacci(2L * k).multiply(3 - k).add(Fibonacci.fibonacci(2L * k - 1).multiply(5L * n + 3L * k)).divide(5);
   }
 
   @Override

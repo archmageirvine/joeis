@@ -13,6 +13,6 @@ public class A083282 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A083282() {
-    super(1, n -> Z.valueOf(n).pow(3 * n));
+    super(1, n -> Z.valueOf(n).pow(3L * n));
   }
 }

@@ -13,6 +13,6 @@ public class A077113 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A077113() {
-    super(0, n -> Z.valueOf(n * n).root(3).add(1));
+    super(0, n -> Z.valueOf((long) n * n).root(3).add(1));
   }
 }

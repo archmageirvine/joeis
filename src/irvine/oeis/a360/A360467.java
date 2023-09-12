@@ -21,6 +21,6 @@ public class A360467 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Fibonacci.fibonacci(4 * mN + 2).add(Fibonacci.fibonacci(2 * mN + 1).square().multiply(3));
+    return Fibonacci.fibonacci(4L * mN + 2).add(Fibonacci.fibonacci(2L * mN + 1).square().multiply(3));
   }
 }

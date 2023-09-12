@@ -14,6 +14,6 @@ public class A216729 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A216729() {
-    super(0, n -> new Q(3 * n + 1, 6).pow(n).divide(3 * n + 1).multiply(MemoryFactorial.SINGLETON.factorial(3 * n)).num());
+    super(0, n -> new Q(3L * n + 1, 6).pow(n).divide(3L * n + 1).multiply(MemoryFactorial.SINGLETON.factorial(3 * n)).num());
   }
 }

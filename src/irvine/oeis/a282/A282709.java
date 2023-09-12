@@ -15,6 +15,6 @@ public class A282709 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A282709() {
-    super(0, n -> Z.valueOf(2 * n + 2).pow(n).divide(MemoryFactorial.SINGLETON.factorial(n + 1)).subtract(Binomial.binomial(2 * n, n)));
+    super(0, n -> Z.valueOf(2L * n + 2).pow(n).divide(MemoryFactorial.SINGLETON.factorial(n + 1)).subtract(Binomial.binomial(2L * n, n)));
   }
 }

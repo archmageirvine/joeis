@@ -14,6 +14,6 @@ public class A308599 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A308599() {
-    super(2, n -> (Z.ONE).add(Z.valueOf(4 * n - 5).multiply(MemoryFactorial.SINGLETON.factorial(n)).divide(Z.SIX)));
+    super(2, n -> (Z.ONE).add(Z.valueOf(4L * n - 5).multiply(MemoryFactorial.SINGLETON.factorial(n)).divide(Z.SIX)));
   }
 }

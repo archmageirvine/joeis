@@ -14,6 +14,6 @@ public class A072929 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A072929() {
-    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> Binomial.binomial(2 * d, d)));
+    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> Binomial.binomial(2L * d, d)));
   }
 }

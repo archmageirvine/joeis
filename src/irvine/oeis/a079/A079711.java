@@ -14,6 +14,6 @@ public class A079711 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A079711() {
-    super(1, n -> Binomial.binomial(2 * n, n).pow(Z.valueOf(2 * n)));
+    super(1, n -> Binomial.binomial(2L * n, n).pow(Z.valueOf(2L * n)));
   }
 }

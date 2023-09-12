@@ -14,6 +14,6 @@ public class A090770 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A090770() {
-    super(0, n -> Z.ONE.shiftLeft(n * n + 2 * n + 1).multiply(Integers.SINGLETON.product(1, n, j -> Z.FOUR.pow(j).subtract(Z.ONE))));
+    super(0, n -> Z.ONE.shiftLeft((long) n * n + 2L * n + 1).multiply(Integers.SINGLETON.product(1, n, j -> Z.FOUR.pow(j).subtract(Z.ONE))));
   }
 }

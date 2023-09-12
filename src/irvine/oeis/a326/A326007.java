@@ -16,6 +16,6 @@ public class A326007 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A326007() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, i -> Z.valueOf(n - i + 1).multiply(Z.valueOf(n - i + 2)).divide(Z.TWO).multiply(Integers.SINGLETON.sum(0, n - i, j -> Integers.SINGLETON.sum(0, n - i - j, k -> Z.NEG_ONE.pow(j).multiply(Binomial.binomial((n - i - j) * (n - i - k), i)).multiply(MemoryFactorial.SINGLETON.factorial(n - i)).divide(MemoryFactorial.SINGLETON.factorial(n - i - j - k).multiply(MemoryFactorial.SINGLETON.factorial(j)).multiply(MemoryFactorial.SINGLETON.factorial(k))))))));
+    super(0, n -> Integers.SINGLETON.sum(0, n, i -> Z.valueOf(n - i + 1).multiply(Z.valueOf(n - i + 2)).divide(Z.TWO).multiply(Integers.SINGLETON.sum(0, n - i, j -> Integers.SINGLETON.sum(0, n - i - j, k -> Z.NEG_ONE.pow(j).multiply(Binomial.binomial((long) (n - i - j) * (n - i - k), i)).multiply(MemoryFactorial.SINGLETON.factorial(n - i)).divide(MemoryFactorial.SINGLETON.factorial(n - i - j - k).multiply(MemoryFactorial.SINGLETON.factorial(j)).multiply(MemoryFactorial.SINGLETON.factorial(k))))))));
   }
 }

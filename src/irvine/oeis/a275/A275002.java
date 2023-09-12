@@ -13,6 +13,6 @@ public class A275002 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A275002() {
-    super(0, n -> Z.TWO.multiply(Z.valueOf(n).pow(2 * n * n + 2)));
+    super(0, n -> Z.TWO.multiply(Z.valueOf(n).pow(2L * n * n + 2)));
   }
 }

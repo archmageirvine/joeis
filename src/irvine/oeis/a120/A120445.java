@@ -14,6 +14,6 @@ public class A120445 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A120445() {
-    super(1, n -> MemoryFactorial.SINGLETON.factorial(2 * n).divide(Z.ONE.shiftLeft(n)).add(Z.valueOf(n + 1).multiply(MemoryFactorial.SINGLETON.factorial(n))).add(Z.valueOf(n).multiply(MemoryFactorial.SINGLETON.factorial(n))).divide(Z.valueOf(4 * n)));
+    super(1, n -> MemoryFactorial.SINGLETON.factorial(2 * n).divide(Z.ONE.shiftLeft(n)).add(Z.valueOf(n + 1).multiply(MemoryFactorial.SINGLETON.factorial(n))).add(Z.valueOf(n).multiply(MemoryFactorial.SINGLETON.factorial(n))).divide(Z.valueOf(4L * n)));
   }
 }

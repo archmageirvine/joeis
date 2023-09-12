@@ -14,6 +14,6 @@ public class A331770 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A331770() {
-    super(0, n -> (Z.valueOf(1008)).multiply(Binomial.binomial(5 + 2 * n, 5)));
+    super(0, n -> (Z.valueOf(1008)).multiply(Binomial.binomial(5 + 2L * n, 5)));
   }
 }

@@ -14,6 +14,6 @@ public class A327802 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A327802() {
-    super(1, n -> Puma.primePiZ(Z.valueOf(9 * n / 8)).subtract(Puma.primePiZ(n)));
+    super(1, n -> Puma.primePiZ(Z.valueOf(9L * n / 8)).subtract(Puma.primePiZ(n)));
   }
 }

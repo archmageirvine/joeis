@@ -19,6 +19,6 @@ public class A339050 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return Fibonacci.fibonacci(2 * k - 1).multiply(n - k).add(Fibonacci.fibonacci(2 * k));
+    return Fibonacci.fibonacci(2L * k - 1).multiply(n - k).add(Fibonacci.fibonacci(2L * k));
   }
 }

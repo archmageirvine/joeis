@@ -16,6 +16,6 @@ public class A354136 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A354136() {
-    super(0, n -> Integers.SINGLETON.sum(0, n / 3, k -> MemoryFactorial.SINGLETON.factorial(3 * k).multiply(Stirling.firstKind(n, 3 * k)).divide(Z.SIX.pow(k).multiply(MemoryFactorial.SINGLETON.factorial(k)))));
+    super(0, n -> Integers.SINGLETON.sum(0, n / 3, k -> MemoryFactorial.SINGLETON.factorial(3 * k).multiply(Stirling.firstKind(n, 3L * k)).divide(Z.SIX.pow(k).multiply(MemoryFactorial.SINGLETON.factorial(k)))));
   }
 }

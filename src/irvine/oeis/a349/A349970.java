@@ -14,6 +14,6 @@ public class A349970 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A349970() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Z.valueOf(2 * k).pow(n - k)));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Z.valueOf(2L * k).pow(n - k)));
   }
 }

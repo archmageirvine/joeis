@@ -14,6 +14,6 @@ public class A153818 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A153818() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, k -> Z.valueOf(n * n).divide(k * k)));
+    super(1, n -> Integers.SINGLETON.sum(1, n, k -> Z.valueOf((long) n * n).divide((long) k * k)));
   }
 }

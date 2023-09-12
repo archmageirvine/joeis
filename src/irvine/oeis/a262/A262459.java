@@ -13,6 +13,6 @@ public class A262459 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A262459() {
-    super(1, n -> Z.valueOf(n - 1).pow(n * n + 1).multiply(Z.valueOf(n).pow(n - 2)));
+    super(1, n -> Z.valueOf(n - 1).pow((long) n * n + 1).multiply(Z.valueOf(n).pow(n - 2)));
   }
 }

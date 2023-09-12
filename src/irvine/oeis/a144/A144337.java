@@ -17,7 +17,7 @@ public class A144337 extends LambdaTriangle {
         return Z.valueOf(n + 1 - k);
       }
       final int diag = k * 2 - 3;
-      return Z.valueOf((n + 1 - k) * diag);
+      return Z.valueOf((long) (n + 1 - k) * diag);
     });
   }
 }

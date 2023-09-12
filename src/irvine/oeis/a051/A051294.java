@@ -14,6 +14,6 @@ public class A051294 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Fibonacci.fibonacci(++mN * mN).divide(Fibonacci.fibonacci(mN));
+    return Fibonacci.fibonacci((long) ++mN * mN).divide(Fibonacci.fibonacci(mN));
   }
 }

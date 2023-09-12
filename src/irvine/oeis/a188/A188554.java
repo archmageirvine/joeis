@@ -13,7 +13,7 @@ public class A188554 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A188554() {
-    super(1, n -> Binomial.binomial(n, 3).add(2 * n));
+    super(1, n -> Binomial.binomial(n, 3).add(2L * n));
     super.next();
   }
 }

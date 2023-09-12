@@ -15,6 +15,6 @@ public class A302986 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A302986() {
-    super(1, n -> Integers.SINGLETON.sum(1, (n - 1) / 2, i -> Z.valueOf(Mobius.mobius(i)).square().multiply(Z.valueOf(Mobius.mobius(n - i)).square()).multiply(Z.valueOf(Mobius.mobius(n - 2 * i)).square())));
+    super(1, n -> Integers.SINGLETON.sum(1, (n - 1) / 2, i -> Z.valueOf(Mobius.mobius(i)).square().multiply(Z.valueOf(Mobius.mobius(n - i)).square()).multiply(Z.valueOf(Mobius.mobius(n - 2L * i)).square())));
   }
 }

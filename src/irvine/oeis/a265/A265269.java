@@ -16,6 +16,6 @@ public class A265269 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A265269() {
-    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> Z.ONE.shiftLeft(d * d - n).multiply(Binomial.binomial(d, n / d)).multiply(MemoryFactorial.SINGLETON.factorial(n)).divide(MemoryFactorial.SINGLETON.factorial(d))));
+    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> Z.ONE.shiftLeft((long) d * d - n).multiply(Binomial.binomial(d, n / d)).multiply(MemoryFactorial.SINGLETON.factorial(n)).divide(MemoryFactorial.SINGLETON.factorial(d))));
   }
 }

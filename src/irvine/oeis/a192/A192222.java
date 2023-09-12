@@ -15,6 +15,6 @@ public class A192222 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Fibonacci.fibonacci((1 << mN) + 1);
+    return Fibonacci.fibonacci((1L << mN) + 1);
   }
 }

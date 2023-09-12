@@ -15,6 +15,6 @@ public class A119703 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A119703() {
-    super(0, n -> Z.valueOf(n).pow(3).multiply(Binomial.binomial(2 * n, n)).multiply(Fibonacci.fibonacci(n)));
+    super(0, n -> Z.valueOf(n).pow(3).multiply(Binomial.binomial(2L * n, n)).multiply(Fibonacci.fibonacci(n)));
   }
 }

@@ -14,6 +14,6 @@ public class A110754 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A110754() {
-    super(1, n -> Jaguar.factor(Z.valueOf(8712).multiply(Z.TEN.pow(4 * n).subtract(Z.ONE)).divide(Z.valueOf(9999))).sigma0());
+    super(1, n -> Jaguar.factor(Z.valueOf(8712).multiply(Z.TEN.pow(4L * n).subtract(Z.ONE)).divide(Z.valueOf(9999))).sigma0());
   }
 }

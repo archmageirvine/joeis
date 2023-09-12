@@ -13,6 +13,6 @@ public class A119408 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A119408() {
-    super(1, n -> Z.ONE.shiftLeft(n).multiply(Z.ONE.shiftLeft(n * n)).subtract(Z.ONE).divide((Z.TWO).multiply(Z.ONE.shiftLeft(n)).subtract(Z.ONE)));
+    super(1, n -> Z.ONE.shiftLeft(n).multiply(Z.ONE.shiftLeft((long) n * n)).subtract(Z.ONE).divide((Z.TWO).multiply(Z.ONE.shiftLeft(n)).subtract(Z.ONE)));
   }
 }

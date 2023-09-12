@@ -22,6 +22,6 @@ public class A074700 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Jaguar.factor(Fibonacci.fibonacci(1 << mN)).tau();
+    return Jaguar.factor(Fibonacci.fibonacci(1L << mN)).tau();
   }
 }

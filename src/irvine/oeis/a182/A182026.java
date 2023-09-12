@@ -15,6 +15,6 @@ public class A182026 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A182026() {
-    super(0, n -> (Z.valueOf(288)).multiply(Binomial.binomial(2 * n, n - 5)).add(Z.EIGHT.multiply(Integers.SINGLETON.sum(1, n - 5, i -> Binomial.binomial(2 * n, n - 5 - i).multiply(Z.valueOf(5 + i))))));
+    super(0, n -> (Z.valueOf(288)).multiply(Binomial.binomial(2L * n, n - 5)).add(Z.EIGHT.multiply(Integers.SINGLETON.sum(1, n - 5, i -> Binomial.binomial(2L * n, n - 5 - i).multiply(Z.valueOf(5 + i))))));
   }
 }

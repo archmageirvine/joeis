@@ -21,9 +21,9 @@ public class A061447 extends Sequence1 {
       final int d = dd.intValueExact();
       final int m = Mobius.mobius(d);
       if (m == 1) {
-        num = num.multiply(Fibonacci.fibonacci(2 * n / d));
+        num = num.multiply(Fibonacci.fibonacci(2L * n / d));
       } else if (m == -1) {
-        den = den.multiply(Fibonacci.fibonacci(2 * n / d));
+        den = den.multiply(Fibonacci.fibonacci(2L * n / d));
       }
     }
     return num.divide(den);

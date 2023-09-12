@@ -14,6 +14,6 @@ public class A287890 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A287890() {
-    super(0, n -> Z.valueOf(3 * n + 1).pow(n - 1).multiply(MemoryFactorial.SINGLETON.factorial(3 * n)).divide(Z.ONE.shiftLeft(n).multiply(MemoryFactorial.SINGLETON.factorial(n))));
+    super(0, n -> Z.valueOf(3L * n + 1).pow(n - 1).multiply(MemoryFactorial.SINGLETON.factorial(3 * n)).divide(Z.ONE.shiftLeft(n).multiply(MemoryFactorial.SINGLETON.factorial(n))));
   }
 }

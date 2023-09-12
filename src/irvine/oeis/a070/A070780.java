@@ -12,6 +12,6 @@ public class A070780 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A070780() {
-    super(0, n -> Binomial.binomial((n + 1) * (n + 1), n));
+    super(0, n -> Binomial.binomial((long) (n + 1) * (n + 1), n));
   }
 }

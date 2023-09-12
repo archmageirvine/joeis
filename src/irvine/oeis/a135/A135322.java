@@ -14,6 +14,6 @@ public class A135322 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A135322() {
-    super(0, n -> MemoryFactorial.SINGLETON.factorial(n).gcd(Binomial.binomial(2 * n, n)));
+    super(0, n -> MemoryFactorial.SINGLETON.factorial(n).gcd(Binomial.binomial(2L * n, n)));
   }
 }

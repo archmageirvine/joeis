@@ -14,6 +14,6 @@ public class A265132 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A265132() {
-    super(1, n -> Z.TWO.multiply(Z.valueOf(n).pow(n - 1)).subtract(Binomial.binomial(2 * n - 2, n - 1)));
+    super(1, n -> Z.TWO.multiply(Z.valueOf(n).pow(n - 1)).subtract(Binomial.binomial(2L * n - 2, n - 1)));
   }
 }

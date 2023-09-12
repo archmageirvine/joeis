@@ -15,6 +15,6 @@ public class A334079 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A334079() {
-    super(1, n -> Integers.SINGLETON.sum(1, n - 1, i -> Z.valueOf(i).multiply(Z.valueOf(n - i)).multiply(Puma.primePiZ(i).subtract(Puma.primePiZ(i - 1))).multiply(Puma.primePiZ(2 * n - i).subtract(Puma.primePiZ(2 * n - i - 1)))));
+    super(1, n -> Integers.SINGLETON.sum(1, n - 1, i -> Z.valueOf(i).multiply(Z.valueOf(n - i)).multiply(Puma.primePiZ(i).subtract(Puma.primePiZ(i - 1))).multiply(Puma.primePiZ(2L * n - i).subtract(Puma.primePiZ(2L * n - i - 1)))));
   }
 }

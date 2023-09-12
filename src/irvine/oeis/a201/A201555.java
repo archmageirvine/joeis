@@ -12,6 +12,6 @@ public class A201555 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A201555() {
-    super(0, n -> Binomial.binomial(2 * n * n, n * n));
+    super(0, n -> Binomial.binomial(2L * n * n, (long) n * n));
   }
 }

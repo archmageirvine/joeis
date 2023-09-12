@@ -15,6 +15,6 @@ public class A115081 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A115081() {
-    super(0, n -> Integers.SINGLETON.sum(0, n / 2, k -> Binomial.binomial(2 * n - 2 * k, n - k).divide(Z.valueOf(n - k + 1)).multiply(Binomial.binomial(2 * k, k)).multiply(MemoryFactorial.SINGLETON.factorial(k)).divide(Z.ONE.shiftLeft(k)).multiply(Binomial.binomial(n, 2 * k))));
+    super(0, n -> Integers.SINGLETON.sum(0, n / 2, k -> Binomial.binomial(2L * n - 2L * k, n - k).divide(Z.valueOf(n - k + 1)).multiply(Binomial.binomial(2L * k, k)).multiply(MemoryFactorial.SINGLETON.factorial(k)).divide(Z.ONE.shiftLeft(k)).multiply(Binomial.binomial(n, 2L * k))));
   }
 }

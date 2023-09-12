@@ -14,6 +14,6 @@ public class A351409 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A351409() {
-    super(1, n -> Z.valueOf(n).multiply(MemoryFactorial.SINGLETON.factorial(n).pow(Z.valueOf(2 * n - 2))));
+    super(1, n -> Z.valueOf(n).multiply(MemoryFactorial.SINGLETON.factorial(n).pow(Z.valueOf(2L * n - 2))));
   }
 }

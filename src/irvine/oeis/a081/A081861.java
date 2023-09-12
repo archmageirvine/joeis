@@ -14,6 +14,6 @@ public class A081861 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A081861() {
-    super(1, n -> Jaguar.factor(2 * n - 1).sigma(3).subtract(Jaguar.factor(2 * n - 1).sigma(1)).divide(Z.valueOf(24)));
+    super(1, n -> Jaguar.factor(2L * n - 1).sigma(3).subtract(Jaguar.factor(2L * n - 1).sigma(1)).divide(Z.valueOf(24)));
   }
 }

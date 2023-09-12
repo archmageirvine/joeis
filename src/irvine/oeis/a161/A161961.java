@@ -15,6 +15,6 @@ public class A161961 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A161961() {
-    super(2, n -> new Q(Puma.primePiZ(n * n), Z.valueOf(n).multiply(Puma.primePiZ(n))).den());
+    super(2, n -> new Q(Puma.primePiZ((long) n * n), Z.valueOf(n).multiply(Puma.primePiZ(n))).den());
   }
 }

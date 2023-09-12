@@ -13,6 +13,6 @@ public class A084626 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A084626() {
-    super(0, n -> Z.valueOf(n).multiply(Z.valueOf(n + 9)).multiply(Z.valueOf(n * n + 9 * n + 38)).divide(Z.valueOf(360)).add(Z.ONE));
+    super(0, n -> Z.valueOf(n).multiply(Z.valueOf(n + 9)).multiply(Z.valueOf((long) n * n + 9L * n + 38)).divide(Z.valueOf(360)).add(Z.ONE));
   }
 }

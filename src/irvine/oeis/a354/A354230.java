@@ -15,6 +15,6 @@ public class A354230 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A354230() {
-    super(0, n -> Integers.SINGLETON.sum(0, n / 5, k -> MemoryFactorial.SINGLETON.factorial(5 * k).multiply(Stirling.firstKind(n, 5 * k))));
+    super(0, n -> Integers.SINGLETON.sum(0, n / 5, k -> MemoryFactorial.SINGLETON.factorial(5 * k).multiply(Stirling.firstKind(n, 5L * k))));
   }
 }

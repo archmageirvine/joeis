@@ -14,6 +14,6 @@ public class A200613 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A200613() {
-    super(1, n -> new Q(n + 4, 4).multiply(Binomial.binomial(2 * n, n)).subtract(Q.THREE.multiply(Q.TWO.pow(2 * n - 3))).num());
+    super(1, n -> new Q(n + 4, 4).multiply(Binomial.binomial(2L * n, n)).subtract(Q.THREE.multiply(Q.TWO.pow(2L * n - 3))).num());
   }
 }

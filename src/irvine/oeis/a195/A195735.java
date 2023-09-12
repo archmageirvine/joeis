@@ -14,6 +14,6 @@ public class A195735 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A195735() {
-    super(1, n -> Z.TWO.multiply(Jaguar.factor(n * n).sigma(1)).subtract(Jaguar.factor(n).sigma(1).square()));
+    super(1, n -> Z.TWO.multiply(Jaguar.factor((long) n * n).sigma(1)).subtract(Jaguar.factor(n).sigma(1).square()));
   }
 }

@@ -13,6 +13,6 @@ public class A211488 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A211488() {
-    super(1, n -> Fibonacci.fibonacci(n * n).subtract(Fibonacci.fibonacci(n)));
+    super(1, n -> Fibonacci.fibonacci((long) n * n).subtract(Fibonacci.fibonacci(n)));
   }
 }

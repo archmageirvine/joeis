@@ -15,6 +15,6 @@ public class A120020 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A120020() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, j -> Binomial.binomial(2 * n - 2 * j, n - j).divide(Z.valueOf(n - j + 1)).multiply(Integers.SINGLETON.sum(1, j, i -> Z.NEG_ONE.pow(j - i).multiply(Binomial.binomial(n - j + i, j - i)).multiply(Binomial.binomial(n - j + i - 1, i - 1)).multiply(Z.valueOf(n).pow(i - 1))))));
+    super(1, n -> Integers.SINGLETON.sum(1, n, j -> Binomial.binomial(2L * n - 2L * j, n - j).divide(Z.valueOf(n - j + 1)).multiply(Integers.SINGLETON.sum(1, j, i -> Z.NEG_ONE.pow(j - i).multiply(Binomial.binomial(n - j + i, j - i)).multiply(Binomial.binomial(n - j + i - 1, i - 1)).multiply(Z.valueOf(n).pow(i - 1))))));
   }
 }

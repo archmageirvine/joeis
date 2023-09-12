@@ -15,6 +15,6 @@ public class A187619 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A187619() {
-    super(2, n -> Z.TWO.multiply(Integers.SINGLETON.sum(2, n, i -> Z.valueOf(n - i).multiply(Z.TWO.divide(Z.valueOf(Jaguar.factor(2 * n * i - i * i).bigOmega()))))));
+    super(2, n -> Z.TWO.multiply(Integers.SINGLETON.sum(2, n, i -> Z.valueOf(n - i).multiply(Z.TWO.divide(Z.valueOf(Jaguar.factor(2L * n * i - (long) i * i).bigOmega()))))));
   }
 }

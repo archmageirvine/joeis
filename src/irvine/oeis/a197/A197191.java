@@ -22,6 +22,6 @@ public class A197191 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Euler.phi(Fibonacci.lucas(mN * mN));
+    return Euler.phi(Fibonacci.lucas((long) mN * mN));
   }
 }

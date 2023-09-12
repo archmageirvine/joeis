@@ -16,6 +16,6 @@ public class A317849 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A317849() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, i -> Binomial.binomial(n + 1 - i, 2).add(Z.ONE).multiply(Fibonacci.fibonacci(2 * i))));
+    super(1, n -> Integers.SINGLETON.sum(1, n, i -> Binomial.binomial(n + 1 - i, 2).add(Z.ONE).multiply(Fibonacci.fibonacci(2L * i))));
   }
 }

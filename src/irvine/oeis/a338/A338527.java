@@ -13,7 +13,7 @@ public class A338527 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A338527() {
-    super(0, n -> Z.valueOf(n + 1).multiply(Z.valueOf(2 * n + 2).pow(n)).multiply(Z.valueOf(2 * n + 1).pow(2 * n - 1)));
+    super(0, n -> Z.valueOf(n + 1).multiply(Z.valueOf(2L * n + 2).pow(n)).multiply(Z.valueOf(2L * n + 1).pow(2L * n - 1)));
     super.next();
   }
 }

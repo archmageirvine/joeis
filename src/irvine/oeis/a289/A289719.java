@@ -14,6 +14,6 @@ public class A289719 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A289719() {
-    super(0, n -> Z.valueOf(n).multiply(Binomial.binomial(2 * n, n)).divide(Z.TWO).add(Z.ONE));
+    super(0, n -> Z.valueOf(n).multiply(Binomial.binomial(2L * n, n)).divide(Z.TWO).add(Z.ONE));
   }
 }

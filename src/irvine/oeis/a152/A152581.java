@@ -13,6 +13,6 @@ public class A152581 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A152581() {
-    super(0, n -> Z.EIGHT.pow(1 << n).add(Z.ONE));
+    super(0, n -> Z.EIGHT.pow(1L << n).add(Z.ONE));
   }
 }

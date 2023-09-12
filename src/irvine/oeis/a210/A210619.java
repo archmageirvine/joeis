@@ -18,6 +18,6 @@ public class A210619 extends BaseTriangle {
   @Override
   // T(n,k) = Fibonacci(2*n+2) - Fibonacci(2*(n-k)) - 1.
   public Z triangleElement(final int n, final int k) {
-    return Fibonacci.fibonacci(2 * n + 2).subtract(Fibonacci.fibonacci(2 * (n - k))).subtract(1);
+    return Fibonacci.fibonacci(2L * n + 2).subtract(Fibonacci.fibonacci(2L * (n - k))).subtract(1);
   }
 }

@@ -14,6 +14,6 @@ public class A349272 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A349272() {
-    super(0, n -> Integers.SINGLETON.product(1, 2 * n + 1, k -> Fibonacci.fibonacci(2 * k)).divide(Integers.SINGLETON.sum(1, 2 * n + 1, k -> Fibonacci.fibonacci(2 * k))));
+    super(0, n -> Integers.SINGLETON.product(1, 2 * n + 1, k -> Fibonacci.fibonacci(2L * k)).divide(Integers.SINGLETON.sum(1, 2 * n + 1, k -> Fibonacci.fibonacci(2L * k))));
   }
 }

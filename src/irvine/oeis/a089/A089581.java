@@ -13,6 +13,6 @@ public class A089581 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A089581() {
-    super(1, n -> Puma.primeZ(2 * n - 1).multiply(Puma.primeZ(2 * n)));
+    super(1, n -> Puma.primeZ(2L * n - 1).multiply(Puma.primeZ(2L * n)));
   }
 }

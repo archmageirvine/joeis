@@ -15,6 +15,6 @@ public class A337932 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A337932() {
-    super(1, n -> Integers.SINGLETON.sum(1, n / 2, i -> Z.ONE.subtract(Jaguar.factor(n - i).sigma(1).divide(Z.valueOf(2 * n - 2 * i)).signum()).multiply(Z.ONE.subtract(Jaguar.factor(i).sigma(1).divide(Z.valueOf(2 * i)).signum()))));
+    super(1, n -> Integers.SINGLETON.sum(1, n / 2, i -> Z.ONE.subtract(Jaguar.factor(n - i).sigma(1).divide(Z.valueOf(2L * n - 2L * i)).signum()).multiply(Z.ONE.subtract(Jaguar.factor(i).sigma(1).divide(Z.valueOf(2L * i)).signum()))));
   }
 }

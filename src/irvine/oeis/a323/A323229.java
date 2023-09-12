@@ -14,6 +14,6 @@ public class A323229 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A323229() {
-    super(0, n -> Binomial.binomial(2 * n, n + 1).add(Z.ONE));
+    super(0, n -> Binomial.binomial(2L * n, n + 1).add(Z.ONE));
   }
 }

@@ -15,6 +15,6 @@ public class A230601 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return Fibonacci.lucas((1 << mN) + 2);
+    return Fibonacci.lucas((1L << mN) + 2);
   }
 }

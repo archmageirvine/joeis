@@ -13,6 +13,6 @@ public class A220985 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A220985() {
-    super(0, n -> Z.TEN.pow(8 * n + 4).subtract(Z.TEN.pow(7 * n + 4)).add(Z.FIVE.multiply(Z.TEN.pow(6 * n + 3))).subtract(Z.TWO.multiply(Z.TEN.pow(5 * n + 3))).add(Z.SEVEN.multiply(Z.TEN.pow(4 * n + 2))).subtract(Z.TWO.multiply(Z.TEN.pow(3 * n + 2))).add(Z.FIVE.multiply(Z.TEN.pow(2 * n + 1))).subtract(Z.TEN.pow(n + 1)).add(Z.ONE));
+    super(0, n -> Z.TEN.pow(8L * n + 4).subtract(Z.TEN.pow(7L * n + 4)).add(Z.FIVE.multiply(Z.TEN.pow(6L * n + 3))).subtract(Z.TWO.multiply(Z.TEN.pow(5L * n + 3))).add(Z.SEVEN.multiply(Z.TEN.pow(4L * n + 2))).subtract(Z.TWO.multiply(Z.TEN.pow(3L * n + 2))).add(Z.FIVE.multiply(Z.TEN.pow(2L * n + 1))).subtract(Z.TEN.pow(n + 1)).add(Z.ONE));
   }
 }

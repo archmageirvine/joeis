@@ -13,6 +13,6 @@ public class A274713 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A274713() {
-    super(1, n -> Stirling.secondKind(3 * n - 1, n).abs());
+    super(1, n -> Stirling.secondKind(3L * n - 1, n).abs());
   }
 }

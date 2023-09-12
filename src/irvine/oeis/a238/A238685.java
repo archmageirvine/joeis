@@ -13,6 +13,6 @@ public class A238685 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A238685() {
-    super(1, n -> MemoryFactorial.SINGLETON.factorial(n).multiply(Stirling.firstKind(2 * n - 1, n)));
+    super(1, n -> MemoryFactorial.SINGLETON.factorial(n).multiply(Stirling.firstKind(2L * n - 1, n)));
   }
 }

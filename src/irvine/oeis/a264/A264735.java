@@ -14,6 +14,6 @@ public class A264735 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A264735() {
-    super(1, n -> Puma.primeZ(Z.ONE.shiftLeft(n - 1).multiply(Z.valueOf(2 * n - 1))));
+    super(1, n -> Puma.primeZ(Z.ONE.shiftLeft(n - 1).multiply(Z.valueOf(2L * n - 1))));
   }
 }

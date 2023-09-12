@@ -70,7 +70,7 @@ public class A020879 extends Sequence2 {
   }
 
   protected Z zeroCase(final int n) {
-    return Fibonacci.lucas(2 * n).add(1);
+    return Fibonacci.lucas(2L * n).add(1);
   }
 
   static boolean isNonConsecutiveCyclic(final int k, final long n) {

@@ -13,6 +13,6 @@ public class A120773 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A120773() {
-    super(0, n -> Z.ONE.shiftLeft(n * n).subtract(Z.THREE.pow(n)));
+    super(0, n -> Z.ONE.shiftLeft((long) n * n).subtract(Z.THREE.pow(n)));
   }
 }

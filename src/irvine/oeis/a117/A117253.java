@@ -15,6 +15,6 @@ public class A117253 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A117253() {
-    super(0, n -> Integers.SINGLETON.product(0, n - 1, j -> Z.valueOf(1 - 3 * j)).multiply(Z.THREE.pow(Z.valueOf(n * (n - 1) / 2))).divide(MemoryFactorial.SINGLETON.factorial(n)));
+    super(0, n -> Integers.SINGLETON.product(0, n - 1, j -> Z.valueOf(1 - 3L * j)).multiply(Z.THREE.pow(Z.valueOf((long) n * (n - 1) / 2))).divide(MemoryFactorial.SINGLETON.factorial(n)));
   }
 }

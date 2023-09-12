@@ -17,6 +17,6 @@ public class A308446 extends EulerTransform {
 
   @Override
   protected Z advance() {
-    return irvine.math.z.Fibonacci.fibonacci(2 * mN);
+    return irvine.math.z.Fibonacci.fibonacci(2L * mN);
   }
 }

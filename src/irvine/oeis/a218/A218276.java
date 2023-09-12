@@ -14,6 +14,6 @@ public class A218276 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A218276() {
-    super(1, n -> Integers.SINGLETON.sum(1, ((n - 1) / 2), k -> Jaguar.factor(k).sigma(1).multiply(Jaguar.factor(n - 2 * k).sigma(1))));
+    super(1, n -> Integers.SINGLETON.sum(1, ((n - 1) / 2), k -> Jaguar.factor(k).sigma(1).multiply(Jaguar.factor(n - 2L * k).sigma(1))));
   }
 }

@@ -13,6 +13,6 @@ public class A099907 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A099907() {
-    super(1, n -> Binomial.binomial(2 * n - 1, n - 1).mod(Z.valueOf(n).pow(3)));
+    super(1, n -> Binomial.binomial(2L * n - 1, n - 1).mod(Z.valueOf(n).pow(3)));
   }
 }

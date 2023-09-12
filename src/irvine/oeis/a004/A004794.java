@@ -16,6 +16,6 @@ public class A004794 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Fibonacci.fibonacci(12 * (mN / 6) + S[mN % 6]).add(1).divide2();
+    return Fibonacci.fibonacci(12L * (mN / 6) + S[mN % 6]).add(1).divide2();
   }
 }

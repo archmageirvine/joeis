@@ -14,6 +14,6 @@ public class A291593 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A291593() {
-    super(1, n -> Z.ONE.shiftLeft(n * n).subtract(Z.TWO.multiply(n).multiply(Z.ONE.shiftLeft(n).subtract(n).subtract(Z.ONE))).subtract(Z.valueOf(n).multiply(n).multiply(Z.ONE.shiftLeft(n - 1).subtract(Z.ONE).pow(Z.TWO))).subtract(Binomial.binomial(n, 2).pow(Z.TWO)).subtract(Z.ONE));
+    super(1, n -> Z.ONE.shiftLeft((long) n * n).subtract(Z.TWO.multiply(n).multiply(Z.ONE.shiftLeft(n).subtract(n).subtract(Z.ONE))).subtract(Z.valueOf(n).multiply(n).multiply(Z.ONE.shiftLeft(n - 1).subtract(Z.ONE).pow(Z.TWO))).subtract(Binomial.binomial(n, 2).pow(Z.TWO)).subtract(Z.ONE));
   }
 }

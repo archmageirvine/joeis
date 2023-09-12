@@ -16,6 +16,6 @@ public class A101361 extends Sequence1 {
   public Z next() {
     // a(n) = Fibonacci(2*Fibonacci(n)).
     ++mN;
-    return Fibonacci.fibonacci(Fibonacci.fibonacci(mN).intValue() * 2);
+    return Fibonacci.fibonacci(Fibonacci.fibonacci(mN).intValue() * 2L);
   }
 }

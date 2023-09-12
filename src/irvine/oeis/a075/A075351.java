@@ -15,6 +15,6 @@ public class A075351 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A075351() {
-    super(1, n -> Z.TWO.multiply(MemoryFactorial.SINGLETON.factorial(Binomial.binomial(n + 1, 2))).divide(MemoryFactorial.SINGLETON.factorial(Binomial.binomial(n, 2)).multiply(n).multiply(Z.valueOf(n * n + 1))));
+    super(1, n -> Z.TWO.multiply(MemoryFactorial.SINGLETON.factorial(Binomial.binomial(n + 1, 2))).divide(MemoryFactorial.SINGLETON.factorial(Binomial.binomial(n, 2)).multiply(n).multiply(Z.valueOf((long) n * n + 1))));
   }
 }

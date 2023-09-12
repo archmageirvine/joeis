@@ -13,6 +13,6 @@ public class A273526 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A273526() {
-    super(1, n -> Binomial.binomial(2 * n, n).divide(Z.valueOf(n + 1)).subtract(n).add(Z.ONE));
+    super(1, n -> Binomial.binomial(2L * n, n).divide(Z.valueOf(n + 1)).subtract(n).add(Z.ONE));
   }
 }

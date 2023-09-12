@@ -14,6 +14,6 @@ public class A291541 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A291541() {
-    super(1, n -> Puma.primeZ(n).multiply(Puma.primeZ(n * n)).subtract(Puma.primeZ(Z.valueOf(n).pow(3))));
+    super(1, n -> Puma.primeZ(n).multiply(Puma.primeZ((long) n * n)).subtract(Puma.primeZ(Z.valueOf(n).pow(3))));
   }
 }

@@ -15,6 +15,6 @@ public class A206817 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A206817() {
-    super(2, n -> Integers.SINGLETON.sum(1, n, j -> MemoryFactorial.SINGLETON.factorial(j).multiply(Z.valueOf(2 * j - n - 1))));
+    super(2, n -> Integers.SINGLETON.sum(1, n, j -> MemoryFactorial.SINGLETON.factorial(j).multiply(Z.valueOf(2L * j - n - 1))));
   }
 }

@@ -13,6 +13,6 @@ public class A066787 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A066787() {
-    super(1, n -> Z.ONE.shiftLeft(n).add(1).gcd(n * n + 1));
+    super(1, n -> Z.ONE.shiftLeft(n).add(1).gcd((long) n * n + 1));
   }
 }

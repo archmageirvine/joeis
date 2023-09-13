@@ -18,6 +18,6 @@ public class A131631 extends LambdaSequence {
   public A131631() {
     super(2, n -> Rationals.SINGLETON.product(2, n, k ->
       Rationals.SINGLETON.sum(0, k, j ->
-        new Q((((j) & 1) == 0) ? Z.ONE : Z.NEG_ONE, MemoryFactorial.SINGLETON.factorial(j))).multiply(MemoryFactorial.SINGLETON.factorial(k))).num());
+        new Q((j & 1) == 0 ? Z.ONE : Z.NEG_ONE, MemoryFactorial.SINGLETON.factorial(j))).multiply(MemoryFactorial.SINGLETON.factorial(k))).num());
   }
 }

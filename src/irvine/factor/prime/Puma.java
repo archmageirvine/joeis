@@ -7,9 +7,9 @@ import irvine.util.array.LongDynamicLongArray;
  * Provides cached indexed access to prime numbers.
  * @author Sean A. Irvine
  */
-public class Puma {
+public final class Puma {
 
-  private Puma() {}
+  private Puma() { }
 
   private static final Fast GENERATOR = new Fast();
   private static final LongDynamicLongArray PRIMES = new LongDynamicLongArray();

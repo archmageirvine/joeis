@@ -15,6 +15,6 @@ public class A308843 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A308843() {
-    super(0, n -> Integers.SINGLETON.sum(1, n / 5, l -> Integers.SINGLETON.sum(l, ((n - l) / 4), k -> Integers.SINGLETON.sum(k, ((n - k - l) / 3), j -> Integers.SINGLETON.sum(j, ((n - j - k - l) / 2), i -> Z.valueOf(j).multiply(Z.valueOf(Mobius.mobius(l)).square()).multiply(Z.valueOf(Mobius.mobius(k)).square()).multiply(Z.valueOf(Mobius.mobius(j)).square()).multiply(Z.valueOf(Mobius.mobius(i)).square()).multiply(Z.valueOf(Mobius.mobius(n - i - j - k - l)).square()))))));
+    super(0, n -> Integers.SINGLETON.sum(1, n / 5, l -> Integers.SINGLETON.sum(l, (n - l) / 4, k -> Integers.SINGLETON.sum(k, (n - k - l) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k - l) / 2, i -> Z.valueOf(j).multiply(Z.valueOf(Mobius.mobius(l)).square()).multiply(Z.valueOf(Mobius.mobius(k)).square()).multiply(Z.valueOf(Mobius.mobius(j)).square()).multiply(Z.valueOf(Mobius.mobius(i)).square()).multiply(Z.valueOf(Mobius.mobius(n - i - j - k - l)).square()))))));
   }
 }

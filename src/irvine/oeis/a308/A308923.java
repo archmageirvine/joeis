@@ -15,6 +15,6 @@ public class A308923 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A308923() {
-    super(0, n -> Integers.SINGLETON.sum(1, n / 6, m -> Integers.SINGLETON.sum(m, ((n - m) / 5), l -> Integers.SINGLETON.sum(l, ((n - l - m) / 4), k -> Integers.SINGLETON.sum(k, ((n - k - l - m) / 3), j -> Integers.SINGLETON.sum(j, ((n - j - k - l - m) / 2), i -> Z.valueOf(j).multiply(Puma.primePiZ(i).subtract(Puma.primePiZ(i - 1))).multiply(Puma.primePiZ(j).subtract(Puma.primePiZ(j - 1))).multiply(Puma.primePiZ(k).subtract(Puma.primePiZ(k - 1))).multiply(Puma.primePiZ(l).subtract(Puma.primePiZ(l - 1))).multiply(Puma.primePiZ(m).subtract(Puma.primePiZ(m - 1))).multiply(Puma.primePiZ(n - i - j - k - l - m).subtract(Puma.primePiZ(n - i - j - k - l - m - 1)))))))));
+    super(0, n -> Integers.SINGLETON.sum(1, n / 6, m -> Integers.SINGLETON.sum(m, (n - m) / 5, l -> Integers.SINGLETON.sum(l, (n - l - m) / 4, k -> Integers.SINGLETON.sum(k, (n - k - l - m) / 3, j -> Integers.SINGLETON.sum(j, (n - j - k - l - m) / 2, i -> Z.valueOf(j).multiply(Puma.primePiZ(i).subtract(Puma.primePiZ(i - 1))).multiply(Puma.primePiZ(j).subtract(Puma.primePiZ(j - 1))).multiply(Puma.primePiZ(k).subtract(Puma.primePiZ(k - 1))).multiply(Puma.primePiZ(l).subtract(Puma.primePiZ(l - 1))).multiply(Puma.primePiZ(m).subtract(Puma.primePiZ(m - 1))).multiply(Puma.primePiZ(n - i - j - k - l - m).subtract(Puma.primePiZ(n - i - j - k - l - m - 1)))))))));
   }
 }

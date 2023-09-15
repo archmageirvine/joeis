@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A160154 10^n-9n for n&gt;=1
+ * A160154 10^n-9n for n&gt;=1.
  * a(n)=10^n-9n
  * @author Georg Fischer
  */

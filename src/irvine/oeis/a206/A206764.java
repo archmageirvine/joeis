@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A206764 a(n) = Sum_{k=1..n} binomial(n,k) * sigma(n,k) * (-1)^(n-k).
+ * A206764  a(n) = Sum_{k=1..n} binomial(n,k) * sigma(n,k) * (-1)^(n-k).
  * a(n) = sum(k=1,n,binom(n,k) * sigma(n,k) * (-1)^(n-k))
  * @author Georg Fischer
  */

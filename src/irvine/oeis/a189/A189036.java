@@ -7,7 +7,7 @@ import irvine.oeis.a085.A085731;
 import irvine.oeis.a086.A086130;
 
 /**
- * A189036 a(n)= lcm(n,n&apos;)/gcd(n,n&apos;), where n&apos; is the arithmetic derivative of n.
+ * A189036 a(n)= lcm(n,n')/gcd(n,n'), where n' is the arithmetic derivative of n.
  * @author Georg Fischer
  */
 public class A189036 extends AbstractSequence {

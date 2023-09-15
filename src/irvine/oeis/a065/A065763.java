@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A007813 Number of planar Steinhaus graphs with n nodes.
+ * A065763 Number of invertible Steinhaus matrices of order n.
  * @author Sean A. Irvine
  */
 public class A065763 extends Sequence2 {

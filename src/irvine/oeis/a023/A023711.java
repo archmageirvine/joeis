@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A023711 Numbers with exactly 2 1's in base 4 expansion.
+ * A023711 Numbers with exactly 2 1's in their base 4 expansion.
  * @author Sean A. Irvine
  */
 public class A023711 extends Sequence1 {

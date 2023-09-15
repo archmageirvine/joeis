@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A222523 O.g.f.: Sum_{n&gt;=0} (n^2+n+1)^n * exp(-(n^2+n+1)*x) * x^n / n!.
+ * A222523  O.g.f.: Sum_{n&gt;=0} (n^2+n+1)^n * exp(-(n^2+n+1)*x) * x^n / n!.
  * a(n) = 1/n! * sum(k=0,n,(-1)^(n-k)*binom(n,k) * (k^2+k+1)^n)
  * @author Georg Fischer
  */

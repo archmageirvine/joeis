@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A347020 E.g.f.: 1 / (1 - 3 * log(1 + x))^(1/3).
+ * A347020 Expansion of e.g.f. 1 / (1 - 3 * log(1 + x))^(1/3).
  * E.g.f.: 1 / (1 - 3 * log(1 + x))^(1/3)
  * @author Georg Fischer
  */

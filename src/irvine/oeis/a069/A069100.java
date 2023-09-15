@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A107109 n-th largest n-digit prime.
+ * A069100 n-th n-digit prime number.
  * @author Sean A. Irvine
  */
 public class A069100 extends Sequence1 {

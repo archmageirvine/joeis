@@ -7,7 +7,7 @@ import irvine.oeis.a085.A085731;
 import irvine.oeis.a086.A086130;
 
 /**
- * A190116 a(n) = n*n&apos;, where n&apos; is the arithmetic derivative (A003415) of n.
+ * A190116 a(n) = n*n', where n' is the arithmetic derivative (A003415) of n.
  * @author Georg Fischer
  */
 public class A190116 extends AbstractSequence {

@@ -150,40 +150,5 @@ public final class InverseSigma {
     }
     return r.get(n);
   }
-
-//\\ M is the number of divisors
-//  { invphitau(N,M) = my(L, p, l, D, r, t);
-//    L = Map();
-//
-//    fordiv(N,n,
-//      p = n+1;
-//    if( !ispseudoprime(p), next );
-//
-//    l = [];
-//    mapisdefined(L,p,&l);
-//    mapput(L, p, concat(l, select(x->(M%x[3])==0, vector(valuation(N,p)+1,i,[n*p^(i-1),p^i,i+1]) )) );
-//  );
-//
-//    L = if(#L,Mat(L)[,2],[]);
-//
-//  \\ dynamic programming
-//    D = Set(divisors(N));
-//    r = matrix(#D,M,i,j,[]);
-//    r[setsearch(D,1),1] = [1];
-//    for(i=1,#L,
-//    t = r;       \\ stands for 1 in (1 + terms of L)
-//    for(j=1,#(L[i]),
-//    fordiv(N/L[i][j][1],n,
-//      l = setsearch(D,n*L[i][j][1]);
-//    fordiv(M/L[i][j][3],m,
-//      t[l,m*L[i][j][3]] = vecsort(concat(t[l,m*L[i][j][3]],r[setsearch(D,n),m]*L[i][j][2]),,8);
-//        );
-//      );
-//    );
-//    r = t;
-//  );
-//    r[setsearch(D,N),M];
-//  }
-//
 }
 

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065754 Second column of A065748.
+ * A065756 Generalization of the Genocchi numbers given by the Gandhi polynomials A(n+1,r) = r^5 A(n, r + 1) - (r - 1)^5 A(n, r); A(1,r) = r^5 - (r-1)^5.
  * @author Sean A. Irvine
  */
 public class A065756 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A070012 Floor of number of prime factors of n divided by the number of n&apos;s distinct prime factors.
+ * A070012 Floor of number of prime factors of n divided by the number of n's distinct prime factors.
  * a(n) = floor(bigomega(n)/omega(n))
  * @author Georg Fischer
  */

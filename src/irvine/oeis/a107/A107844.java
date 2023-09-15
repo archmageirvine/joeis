@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A107844 Highest value obtained in the recursion of McCarthy&apos;s 91 function until it terminates.
+ * A107844 Highest value obtained in the recursion of McCarthy's 91 function until it terminates.
  * @author Sean A. Irvine
  */
 public class A107844 extends Sequence1 {

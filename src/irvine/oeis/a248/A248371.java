@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A248371 Number of primes in Breusch&apos;s interval [n; 9(n+3)/8].
+ * A248371 Number of primes in Breusch's interval [n; 9(n+3)/8].
  * a(n)=primepi((n+3)*9/8)-primepi(n-1)
  * @author Georg Fischer
  */

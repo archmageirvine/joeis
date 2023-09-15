@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065754 Second column of A065748.
+ * A065757 Second column of A065755.
  * @author Sean A. Irvine
  */
 public class A065757 extends Sequence1 {

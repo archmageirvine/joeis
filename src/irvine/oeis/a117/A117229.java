@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A117229 Number of decimal digits of n in {0,1,4,8,9}
+ * A117229 Number of decimal digits of n in {0,1,4,8,9}.
  * a(n)=Number of decimal digits of n in 0,1,4,8,9
  * @author Georg Fischer
  */

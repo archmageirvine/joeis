@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A065895 Which composite number is n^n ?
+ * A065895 Which composite number is n^n ?.
  * a(n)=n^n-(primepi(n^n))-1
  * @author Georg Fischer
  */

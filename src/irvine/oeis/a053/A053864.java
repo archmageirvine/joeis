@@ -32,6 +32,6 @@ public class A053864 extends Sequence1 {
     if (fs.minExponent() < mK) {
       return Z.ONE;
     }
-    return (fs.omega() & 1) == 1 ? Z.NEG_ONE : Z.ONE;
+    return Z.NEG_ONE.pow(fs.omega());
   }
 }

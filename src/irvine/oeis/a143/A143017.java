@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A143017 Number of {2-1-3, 2&apos;^e-31}-avoiding permutations of size n (see definition in the Elizalde paper).
+ * A143017 Number of {2-1-3, 2'^e-31}-avoiding permutations of size n (see definition in the Elizalde paper).
  * a(n)=1/n*sum(k=0, n-1, 2*binom(n, 2*k)*binom(n-k, k-1)+n*binom(n, 2*k+1)*binom(n-k, k)/(n-k))
  * @author Georg Fischer
  */

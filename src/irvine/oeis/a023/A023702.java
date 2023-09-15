@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A023702 Numbers with exactly 4 2's in ternary expansion of n.
+ * A023702 Numbers with exactly 4 2's in their ternary expansion of n.
  * @author Sean A. Irvine
  */
 public class A023702 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A145595 a(n)= 10^n!
+ * A145595 a(n)= 10^n!.
  * a(n)= 10^n!
  * @author Georg Fischer
  */

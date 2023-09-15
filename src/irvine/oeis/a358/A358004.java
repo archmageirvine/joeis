@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A358004 Sum of the first n prime numbers with each term raised to the power of the corresponding n-th row of Pascal&apos;s triangle.
+ * A358004 Sum of the first n prime numbers with each term raised to the power of the corresponding n-th row of Pascal's triangle.
  * a(n) = sum(k=1,n,prime(k)^binom(n-1,k-1))
  * @author Georg Fischer
  */

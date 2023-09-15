@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A227935 G.f.: Sum_{n&gt;=0} x^n / (1-x)^(n^5).
+ * A227935  G.f.: Sum_{n&gt;=0} x^n / (1-x)^(n^5).
  * a(n) = sum(k=0,n,binom(k^5 + n-k-1,n-k))
  * @author Georg Fischer
  */

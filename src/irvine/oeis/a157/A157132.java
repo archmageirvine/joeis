@@ -6,7 +6,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A157132 Factorial of primes divided by prime numbers&apos; respective places in the sequence of primes.
+ * A157132 Factorial of primes divided by prime numbers' respective places in the sequence of primes.
  * a(n)=prime(n)!/n
  * @author Georg Fischer
  */

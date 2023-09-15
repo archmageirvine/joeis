@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A287925 a(n) = prime(1)^4 + prime(n)^4
+ * A287925 a(n) = prime(1)^4 + prime(n)^4.
  * a(n)=prime(n)^4+2^4
  * @author Georg Fischer
  */

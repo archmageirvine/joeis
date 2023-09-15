@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A023713 Numbers with no 2's in base 4 expansion.
+ * A023713 Numbers with no 2's in their base 4 expansion.
  * @author Sean A. Irvine
  */
 public class A023713 extends Sequence1 {

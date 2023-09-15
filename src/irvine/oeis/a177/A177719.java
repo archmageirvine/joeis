@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A177719 Number of line segments connecting exactly 3 points in an n X n grid of points
+ * A177719 Number of line segments connecting exactly 3 points in an n X n grid of points.
  * a(n) = 4*((n-1)*(n-2) + sum(i=2,floor(n/2),(n-2*i)*(n-i)*eulerphi(i)))
  * @author Georg Fischer
  */

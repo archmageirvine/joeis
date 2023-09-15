@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A243034 Expansion of A(x) = x*F&apos;(x)/(F(x) - F(x)^2), where F(x) = (-1 - sqrt(1-8*x) + sqrt(2 + 2*sqrt(1-8*x) + 8*x))/4.
+ * A243034 Expansion of A(x) = x*F'(x)/(F(x) - F(x)^2), where F(x) = (-1 - sqrt(1-8*x) + sqrt(2 + 2*sqrt(1-8*x) + 8*x))/4.
  * a(n)=1+n*sum(m=0, n, sum(k=1, n-m, binom(k, n-m-k)*binom(n+2*k-1, n+k-1)/(n+k)))
  * @author Georg Fischer
  */

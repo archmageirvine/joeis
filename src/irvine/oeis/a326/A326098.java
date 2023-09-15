@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A326098 E.g.f.: Sum_{n&gt;=0} (n+1) * (1 + x^n)^n * x^n/n!
+ * A326098 E.g.f.: Sum_{n&gt;=0} (n+1) * (1 + x^n)^n * x^n/n!.
  * a(n) = sumdiv(n,d,(d + 1) * binom(d,n/d - 1) * n!/d!)
  * @author Georg Fischer
  */

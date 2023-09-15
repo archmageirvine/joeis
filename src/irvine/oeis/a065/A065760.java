@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065657.
+ * A065760 Concatenation of increasing number of alternating digits in base 2, starting with 1.
  * @author Sean A. Irvine
  */
 public class A065760 extends Sequence1 {

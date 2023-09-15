@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A308515 Take all the integer-sided triangles with perimeter n and side lengths a, b and c such that a &lt;= b &lt;= c and c is prime. a(n) is the sum of all the b&apos;s.
+ * A308515 Take all the integer-sided triangles with perimeter n and side lengths a, b and c such that a &lt;= b &lt;= c and c is prime. a(n) is the sum of all the b's.
  * a(n)=sum(k=1, floor(n/3), sum(i=k, floor((n-k)/2), i*(primepi(n-i-k)-primepi(n-i-k-1))*sign(floor((i+k)/(n-i-k+1)))))
  * @author Georg Fischer
  */

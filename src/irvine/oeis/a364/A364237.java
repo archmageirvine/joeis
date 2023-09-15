@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A364237 allocated for Anna Coleman.
+ * A364237 a(n) is the number of non-equivalent permutations of {1,2,...,2n-1} such that no subset of consecutive terms from the permutation sums to 0 modulo 2n, where two permutations are equivalent if one can be obtained from the other by multiplying every entry with an integer relatively prime to 2n and/or reversing the permutation.
  * @author Sean A. Irvine
  */
 public class A364237 extends Sequence1 {

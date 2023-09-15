@@ -19,7 +19,7 @@ public class A278907 extends FloorSequence {
   @Override
   protected Z evalCR(final long n) {
     final Z num = Z.valueOf(n).multiply(Z.ONE.shiftLeft(mN + 1));
-    final CR den = CR.valueOf(Z.valueOf(2 * mN + 3).subtract((mN & 1) == 1 ? Z.NEG_ONE : Z.ONE));
+    final CR den = CR.valueOf(Z.valueOf(2 * mN + 3).subtract(Z.NEG_ONE.pow(mN)));
     return CR.valueOf(num).add(CR.TWO).divide(den).floor()
         .subtract(CR.valueOf(num).subtract(CR.TWO).divide(den).floor());
   }

@@ -18,7 +18,7 @@ public class A307514 extends GeneralizedEulerTransform {
 
   @Override
   protected Z[] advanceF(final long k) {
-    return new Z[] {(((k & 1) == 0) ? Z.NEG_ONE : Z.ONE).multiply(Z.valueOf(k).pow(k))};
+    return new Z[] {Z.NEG_ONE.pow(k + 1).multiply(Z.valueOf(k).pow(k))};
   }
 
   @Override

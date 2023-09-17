@@ -845,6 +845,24 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
+   * Add two computable reals.
+   * @param x addend
+   * @return sum
+   */
+  public CR add(final long x) {
+    return new Add(this, CR.valueOf(x));
+  }
+
+  /**
+   * Add two computable reals.
+   * @param x addend
+   * @return sum
+   */
+  public CR add(final Z x) {
+    return new Add(this, CR.valueOf(x));
+  }
+
+  /**
    * Multiply a computable real by <code>2^n</code>.
    * @param n shift count, may be negative
    * @return left shifted value
@@ -890,6 +908,24 @@ public abstract class CR extends Number implements Comparable<CR> {
    */
   public CR subtract(final CR x) {
     return new Add(this, x.negate());
+  }
+
+  /**
+   * The difference between two computable reals.
+   * @param x subtrahend
+   * @return difference
+   */
+  public CR subtract(final long x) {
+    return subtract(CR.valueOf(x));
+  }
+
+  /**
+   * The difference between two computable reals.
+   * @param x subtrahend
+   * @return difference
+   */
+  public CR subtract(final Z x) {
+    return subtract(CR.valueOf(x));
   }
 
   /**
@@ -944,6 +980,24 @@ public abstract class CR extends Number implements Comparable<CR> {
    */
   public CR divide(final CR x) {
     return new Multiply(this, x.inverse());
+  }
+
+  /**
+   * The quotient of two computable reals.
+   * @param x divisor
+   * @return quotient
+   */
+  public CR divide(final Z x) {
+    return new Multiply(this, CR.valueOf(x).inverse());
+  }
+
+  /**
+   * The quotient of two computable reals.
+   * @param x divisor
+   * @return quotient
+   */
+  public CR divide(final long x) {
+    return new Multiply(this, CR.valueOf(x).inverse());
   }
 
   /**

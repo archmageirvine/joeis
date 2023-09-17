@@ -3,7 +3,6 @@ package irvine.math;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 
 import irvine.factor.factor.Jaguar;
@@ -806,22 +805,30 @@ public final class LongUtils {
   /**
    * Sort the digits of a number.
    * @param n number
+   * @param base base to use
    * @return sorted number
    */
-  public static long sortDigitsAscending(final long n) {
+  public static long sortDigitsAscending(final long n, final int base) {
     if (n == 0) {
       return 0;
     }
-    final int[] counts = ZUtils.digitCounts(n);
-    int numDigits = 0;
+    final int[] counts = ZUtils.digitCounts(n, base);
+    long res = 0;
     for (int k = 1; k < counts.length; ++k) {
-      numDigits += counts[k];
+      for (int j = counts[k]; j > 0; --j) {
+        res *= base;
+        res += k;
+      }
     }
-    final char[] c = new char[numDigits];
-    for (int k = 1, j = 0; k < counts.length; j += counts[k++]) {
-      Arrays.fill(c, j, j + counts[k], (char) ('0' + k));
-    }
-    return Long.parseLong(new String(c));
+    return res;
   }
 
+  /**
+   * Sort the digits of a number.
+   * @param n number
+   * @return sorted number
+   */
+  public static long sortDigitsAscending(final long n) {
+    return sortDigitsAscending(n, 10);
+  }
 }

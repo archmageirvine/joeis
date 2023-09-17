@@ -9,21 +9,14 @@ import irvine.oeis.Sequence0;
  */
 public class A070939 extends Sequence0 {
 
-  protected long mN; // current index
-  protected long mPow2; // next power of 2
-  protected Z mLen; // current length
-
-  /** Construct the sequence. */
-  public A070939() {
-    mN = -1; // offset1 = 0
-  }
+  private long mN = -1; // current index
+  private long mPow2 = 1; // next power of 2
+  private Z mLen = Z.ZERO; // current length
 
   @Override
   public Z next() {
     ++mN;
     if (mN == 0) {
-      mPow2 = 1;
-      mLen = Z.ZERO;
       return Z.ONE;
     }
     if (mN == mPow2) {

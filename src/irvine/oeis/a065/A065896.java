@@ -1,17 +1,28 @@
 package irvine.oeis.a065;
-// manually n2 at 2022-04-06 21:32
 
 import irvine.math.z.Z;
+import irvine.oeis.a002.A002808;
 
 /**
  * A065896 Number of composites &lt;= 2*n.
- * @author Georg Fischer
+ * @author Sean A. Irvine
  */
-public class A065896 extends A065855 {
+public class A065896 extends A002808 {
+
+  private long mM = 0;
+  private long mN = 0;
 
   @Override
   public Z next() {
-    super.next();
-    return super.next();
+    if (++mN <= 4) {
+      return Z.valueOf(mN - 1);
+    }
+    final Z s = Z.valueOf(2 * mN);
+    while (true) {
+      ++mM;
+      if (s.equals(super.next())) {
+        return Z.valueOf(mM);
+      }
+    }
   }
 }

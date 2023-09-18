@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065800 Numbers n which, for some r, are r-digit maximizers of n/phi(n).
+ * A065800 Numbers k which, for some r, are r-digit maximizers of k/phi(k).
  * @author Sean A. Irvine
  */
 public class A065800 extends Sequence1 {

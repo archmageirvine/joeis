@@ -4,24 +4,20 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A065894 Number of composites &lt;= 10^n.
+ * A065891 The a(n)-th composite number is 2^n.
  * @author Sean A. Irvine
  */
-public class A065894 extends A002808 {
+public class A065891 extends A002808 {
 
   private long mM = 0;
-  private Z mA = null;
+  private Z mN = Z.TWO;
 
   @Override
   public Z next() {
-    if (mA == null) {
-      mA = Z.ONE;
-      return Z.ZERO;
-    }
-    mA = mA.multiply(10);
+    mN = mN.multiply2();
     while (true) {
       ++mM;
-      if (mA.equals(super.next())) {
+      if (mN.equals(super.next())) {
         return Z.valueOf(mM);
       }
     }

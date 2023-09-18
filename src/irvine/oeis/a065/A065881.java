@@ -4,19 +4,19 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065882 Ultimate modulo 4: right-hand nonzero digit of n when written in base 4.
+ * A065881 Ultimate modulo 10: right-hand nonzero digit of n.
  * @author Sean A. Irvine
  */
-public class A065882 extends Sequence1 {
+public class A065881 extends Sequence1 {
 
   private long mN = 0;
 
   @Override
   public Z next() {
     long m = ++mN;
-    while ((m & 3) == 0) {
-      m >>>= 2;
+    while (m % 10 == 0) {
+      m /= 10;
     }
-    return Z.valueOf(m & 3);
+    return Z.valueOf(m % 10);
   }
 }

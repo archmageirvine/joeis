@@ -4,24 +4,24 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A065894 Number of composites &lt;= 10^n.
+ * A065892 Which composite number is n! ?.
  * @author Sean A. Irvine
  */
-public class A065894 extends A002808 {
+public class A065892 extends A002808 {
 
   private long mM = 0;
-  private Z mA = null;
+  private Z mF = Z.ONE;
+  private long mN = 0;
 
   @Override
   public Z next() {
-    if (mA == null) {
-      mA = Z.ONE;
+    mF = mF.multiply(++mN);
+    if (mN < 3) {
       return Z.ZERO;
     }
-    mA = mA.multiply(10);
     while (true) {
       ++mM;
-      if (mA.equals(super.next())) {
+      if (mF.equals(super.next())) {
         return Z.valueOf(mM);
       }
     }

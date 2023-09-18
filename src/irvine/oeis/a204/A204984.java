@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.a000.A000079;
 
 /**
- * A204984 (1/n)*A204983(n).
+ * A204984 a(n) = (1/n)*A204983(n).
  * @author Georg Fischer
  */
 public class A204984 extends A204892 {

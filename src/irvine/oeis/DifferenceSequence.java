@@ -1,5 +1,9 @@
 package irvine.oeis;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 import irvine.math.z.Z;
 
 /**
@@ -37,5 +41,28 @@ public class DifferenceSequence extends AbstractSequence {
     final Z t = mPrev;
     mPrev = mSeq.next();
     return mPrev.subtract(t);
+  }
+
+  /**
+   * Apply the transform to the sequence supplied on standard input.
+   * @param args sequence number of <code>-</code> for standard input
+   * @throws IOException if an I/O error occurs.
+   */
+  public static void main(final String[] args) throws IOException, UnimplementedException {
+    if ("-".equals(args[0])) {
+      try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
+        final DifferenceSequence seq = new DifferenceSequence(1, new ReaderSequence(r));
+        Z a;
+        while ((a = seq.next()) != null) {
+          System.out.println(a);
+        }
+      }
+    } else {
+      final DifferenceSequence seq = new DifferenceSequence(1, SequenceFactory.sequence(args[0]));
+      Z a;
+      while ((a = seq.next()) != null) {
+        System.out.println(a);
+      }
+    }
   }
 }

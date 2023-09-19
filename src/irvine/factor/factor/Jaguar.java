@@ -72,8 +72,6 @@ public final class Jaguar {
     return fs;
   }
 
-  private static final FactorSequence EMPTY = new FactorSequence();
-
   /**
    * Attempt to factor the given number.
    * @param n number to factor
@@ -83,7 +81,7 @@ public final class Jaguar {
   public static FactorSequence factor(final Z n) {
     FactorSequence fs = new FactorSequence(n);
     if (Z.ONE.equals(n)) {
-      return EMPTY;
+      return new FactorSequence();
     }
     if (n.signum() < 0) {
       final FactorSequence res = new FactorSequence();

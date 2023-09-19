@@ -16,7 +16,7 @@ import irvine.math.z.ZUtils;
  * even it is silently suppressed.
  * @author Sean A. Irvine
  */
-public final class FactorSequence {
+public class FactorSequence {
   /** Number status is unknown */
   public static final int UNKNOWN = 0;
   /** Number is definitely composite */

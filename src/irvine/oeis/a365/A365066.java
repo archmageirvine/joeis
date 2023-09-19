@@ -17,7 +17,7 @@ public class A365066 extends DecimalExpansionSequence {
       protected Z approximate(final int precision) {
         Z sum = Z.ZERO;
         Z f = Z.ONE;
-        Z one = Z.ONE.shiftLeft(-precision);
+        final Z one = Z.ONE.shiftLeft(-precision);
         long k = -1;
         while (true) {
           if (++k > 1) {

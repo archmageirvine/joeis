@@ -32,12 +32,12 @@ public class A138484 extends AbstractSequence {
     final Z result = mA;
     final String s = mA.toString();
     final int[] counts = ZUtils.digitCounts(mA);
-    final boolean[] seen = new boolean[] {false, false, false, false, false, false, false, false, false, false}; // 10 x false
+    final boolean[] seen = {false, false, false, false, false, false, false, false, false, false}; // 10 x false
     final StringBuilder sb = new StringBuilder();
     for (int k = s.length() - 1; k >= 0; --k) { // from the right
       final int ich = s.charAt(k) - '0';
       if (!seen[ich]) {
-        sb.append(String.valueOf(counts[ich])).append(String.valueOf(ich));
+        sb.append(counts[ich]).append(ich);
         seen[ich] = true;
       }
     }

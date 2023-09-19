@@ -4,18 +4,19 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A065571 Numbers whose decimal digits can be permuted to give a multiple of 11.
  * @author Sean A. Irvine
  */
-public class A065571 extends Sequence1 {
+public class A065571 extends Sequence0 {
 
   private final TreeSet<Long> mMultiplesOf11 = new TreeSet<>();
   private long mN = -1;
   private long mE = 0;
   private long mLim = 10;
+
   {
     mMultiplesOf11.add(0L);
   }

@@ -10,6 +10,10 @@ public class A065670 extends A065658 {
 
   private long mN = 0;
 
+  {
+    setOffset(1);
+  }
+
   @Override
   public Z next() {
     return rotateBinFracNode(6, ++mN);

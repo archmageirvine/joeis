@@ -11,6 +11,10 @@ public class A065675 extends A065658 {
 
   private long mN = 0;
 
+  {
+    setOffset(1);
+  }
+
   private long expOf2(final Q t) {
     return t.num().makeOdd().auxiliary() - t.den().makeOdd().auxiliary();
   }

@@ -13,6 +13,6 @@ public class A263093 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A263093() {
-    super(0, new FilterSequence(1, new A045765(), FilterSequence.SQUARE), v -> v.sqrt());
+    super(1, new FilterSequence(1, new A045765(), FilterSequence.SQUARE), v -> v.sqrt());
   }
 }

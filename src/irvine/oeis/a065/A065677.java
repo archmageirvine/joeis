@@ -2,13 +2,13 @@ package irvine.oeis.a065;
 
 import irvine.math.MemoryFunctionInt4;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A065677 Maximal Diffy_length for quadruples of numbers &lt;= n.
  * @author Sean A. Irvine
  */
-public class A065677 extends Sequence1 {
+public class A065677 extends Sequence0 {
 
   // This could be made more memory efficient by handling symmetry
   // This could be made much faster by simply inverting A065678

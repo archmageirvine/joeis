@@ -12,6 +12,10 @@ public class A065674 extends A065658 {
 
   private long mN = 0;
 
+  {
+    setOffset(1);
+  }
+
   private Z quasiCyclics2PosIn01SternBrocotTree(final long t) {
     final Z den = Z.ONE.shiftLeft(LongUtils.lg(t) + 1);
     final Q num = new Q(Z.valueOf(2 * t).subtract(den).add(1));

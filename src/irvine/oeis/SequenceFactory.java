@@ -143,7 +143,7 @@ public final class SequenceFactory {
    * @exception IllegalArgumentException if the supplied expression could not be interpreted.
    */
   public static Sequence sequence(final String expression) throws UnimplementedException {
-    if (expression.matches("A[0-9]+")) {
+    if ("-".equals(expression) || expression.matches("A[0-9]+")) {
       return sequence(getCanonicalId(expression), sProducer);
     }
     if (expression.matches("[a-z]+\\(.*\\)")) {

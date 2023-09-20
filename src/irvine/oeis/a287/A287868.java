@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a103.A103270;
 
 /**
- * A287868 Positions of 2&apos;s in A103270.
+ * A287868 Positions of 2's in A103270.
  * @author Georg Fischer
  */
 public class A287868 extends FilterPositionSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.a006.A006530;
 
 
 /**
- * A069902 Largest prime factor of n(n+1)/2, the n-th triangular number.
+ * A069902 Largest prime factor of n-th triangular number n(n+1)/2.
  * Formula: <code>a(n) = A006530(A000217(n)).</code>
  * @author Georg Fischer
  */

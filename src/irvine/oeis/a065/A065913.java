@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A058013 Smallest prime p such that (n+1)^p - n^p is prime.
+ * A065913 Smallest prime of form (n+1)^k-n^k.
  * @author Sean A. Irvine
  */
 public class A065913 extends Sequence1 {

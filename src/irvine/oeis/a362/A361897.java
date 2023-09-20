@@ -4,7 +4,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.transform.GilbreathTransformSequence;
 
 /**
- * A362451.
+ * A361897 Leading terms of the rows of the array in A362450; or, Gilbreath transform of tau (A000005).
  * @author Sean A. Irvine
  */
 public class A361897 extends GilbreathTransformSequence {

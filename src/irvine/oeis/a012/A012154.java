@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012154 sech(tan(tan(x))) = 1-1/2!*x^2-11/4!*x^4-253/6!*x^6-9015/8!*x^8 ... .
+ * A012154 sech(tan(tan(x)))=1-1/2!*x^2-11/4!*x^4-253/6!*x^6-9015/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012154 extends Sequence0 {

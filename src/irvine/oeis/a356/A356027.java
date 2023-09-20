@@ -6,7 +6,7 @@ import irvine.oeis.a101.A101391;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A356027 Triangle T(n, m) read by rows of numbers of compositions of n into m relatively prime parts, for n &gt;= 1, and m = 1, 2, ..., n.
+ * A356027 Triangle T(n, m) read by rows of numbers of compositions of n with m relative parts, for n &gt;= 1, and m = 1, 2, ..., n.
  * @author Georg Fischer
  */
 public class A356027 extends PrependColumn {

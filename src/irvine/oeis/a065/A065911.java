@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A065904.
+ * A065911 Third solution mod p of x^4 = 2 for primes p such that more than two solution exists.
  * @author Sean A. Irvine
  */
 public class A065911 extends A000040 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003159;
 
 /**
- * A364215 The number of 1&apos;s in the canonical representation of n as a sum of distinct Jacobsthal numbers (A280049).
+ * A364215 The number of 1's in the canonical representation of n as a sum of distinct Jacobsthal numbers (A280049).
  * @author Georg Fischer
  */
 public class A364215 extends A003159 {

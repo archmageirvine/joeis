@@ -4,7 +4,7 @@ package irvine.oeis.a364;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A364429 a(0) = 1, a(n) = (2*n^5 + 20*n^3 + 23*n) * 2/15 for n&gt;=1.
+ * A364429 allocated for Steven Lu.
  * @author Georg Fischer
  */
 public class A364429 extends HolonomicRecurrence {

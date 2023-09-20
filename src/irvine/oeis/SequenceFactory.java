@@ -1,14 +1,11 @@
 package irvine.oeis;
 
 import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
 import java.io.Closeable;
 import java.io.FileDescriptor;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.lang.reflect.InvocationTargetException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,8 +15,17 @@ import org.apfloat.ApfloatRuntimeException;
 import irvine.math.z.Z;
 import irvine.oeis.producer.MetaProducer;
 import irvine.oeis.producer.Producer;
+import irvine.oeis.transform.BinomialTransformSequence;
+import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.transform.GilbreathTransformSequence;
+import irvine.oeis.transform.InverseEulerTransform;
+import irvine.oeis.transform.InverseMobiusTransformSequence;
+import irvine.oeis.transform.InverseWeighTransform;
+import irvine.oeis.transform.MobiusTransformSequence;
 import irvine.oeis.transform.SimpleTransformSequence;
+import irvine.oeis.transform.Stirling1TransformSequence;
+import irvine.oeis.transform.Stirling2TransformSequence;
+import irvine.oeis.transform.WeighTransformSequence;
 import irvine.util.CliFlags;
 import irvine.util.string.Date;
 import irvine.util.string.StringUtils;
@@ -57,40 +63,6 @@ public final class SequenceFactory {
   private static final String TERMS = "terms";
   private static final String TIMESTAMP = "timestamp";
   private static final String TRIANGLE = "triangle";
-
-  // todo I would like to get rid of the next two methods and replace them with expression parsing
-  private static Sequence create(final Class<? extends Sequence> sequenceClass, final Sequence innerSequence) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-    return sequenceClass.getDeclaredConstructor(int.class, Sequence.class).newInstance(1, innerSequence);
-  }
-
-  /**
-   * Convenience method to generate raw terms of a sequence.  This method is provided
-   * for use of <code>main</code> in various general sequences to support command line
-   * chaining of sequences.
-   * @param sequenceClass class type to attempt creation of
-   * @param inputSpecification either a sequence number of "<code>-</code>" for standard input
-   */
-  public static void generate(final Class<? extends Sequence> sequenceClass, final String inputSpecification) {
-    try {
-      if ("-".equals(inputSpecification)) {
-        try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
-          final Sequence seq = create(sequenceClass, new ReaderSequence(r));
-          Z a;
-          while ((a = seq.next()) != null) {
-            System.out.println(a);
-          }
-        }
-      } else {
-        final Sequence seq = create(sequenceClass, SequenceFactory.sequence(inputSpecification));
-        Z a;
-        while ((a = seq.next()) != null) {
-          System.out.println(a);
-        }
-      }
-    } catch (final IOException | UnimplementedException | InvocationTargetException | NoSuchMethodException | InstantiationException | IllegalAccessException e) {
-      throw new RuntimeException(e);
-    }
-  }
 
   /**
    * Convert a sequence identifier to a padded out A-number.
@@ -146,17 +118,35 @@ public final class SequenceFactory {
     if ("-".equals(expression) || expression.matches("A[0-9]+")) {
       return sequence(getCanonicalId(expression), sProducer);
     }
-    if (expression.matches("[a-z]+\\(.*\\)")) {
+    if (expression.matches("[a-z][a-z0-9]*\\(.*\\)")) {
       final int open = expression.indexOf('(');
       final String function = expression.substring(0, open);
       final String inner = expression.substring(open + 1, expression.length() - 1);
       switch (function) {
         case "abs":
           return new SimpleTransformSequence(1, sequence(inner), Z::abs);
+        case "binomial":
+          return new BinomialTransformSequence(sequence(inner), 0);
         case "delta":
           return new DifferenceSequence(1, sequence(inner));
+        case "euler":
+          return new EulerTransform(1, sequence(inner));
         case "gilbreath":
           return new GilbreathTransformSequence(1, sequence(inner));
+        case "ieuler":
+          return new InverseEulerTransform(1, sequence(inner));
+        case "imobius":
+          return new InverseMobiusTransformSequence(sequence(inner), 0);
+        case "iweigh":
+          return new InverseWeighTransform(sequence(inner));
+        case "mobius":
+          return new MobiusTransformSequence(sequence(inner), 0);
+        case "stirling1":
+          return new Stirling1TransformSequence(1, sequence(inner));
+        case "stirling2":
+          return new Stirling2TransformSequence(sequence(inner), 0);
+        case "weigh":
+          return new WeighTransformSequence(1, sequence(inner));
         default:
           throw new IllegalArgumentException("Unexpected function: " + function);
       }

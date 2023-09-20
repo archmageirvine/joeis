@@ -1,15 +1,11 @@
 package irvine.oeis.transform;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
 
 /**
@@ -165,21 +161,5 @@ public class InverseEulerTransform extends AbstractSequence {
     } // for d
     return aSum.divide(Z.valueOf(i));
     //mAs.add(aSum);
-  }
-
-  /**
-   * Apply the inverse Euler transform to the sequence supplied on standard input.
-   * @param args number of terms to skip
-   * @throws IOException if an I/O error occurs.
-   */
-  public static void main(final String[] args) throws IOException {
-    final int skip = args.length > 0 ? Integer.parseInt(args[0]) : 0;
-    try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
-      final InverseEulerTransform seq = new InverseEulerTransform(new ReaderSequence(r), skip);
-      Z a;
-      while ((a = seq.next()) != null) {
-        System.out.println(a);
-      }
-    }
   }
 }

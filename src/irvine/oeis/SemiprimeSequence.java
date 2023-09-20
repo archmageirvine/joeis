@@ -83,13 +83,5 @@ public abstract class SemiprimeSequence extends AbstractSequence {
       }
     }
   }
-
-  /**
-   * Generate the semiprime sequence from the given starting position.
-   * @param args sequence to generate and optional start term
-   */
-  public static void main(final String[] args) {
-    SequenceFactory.generate(SemiprimeSequence.class, args[0]);
-  }
 }
 

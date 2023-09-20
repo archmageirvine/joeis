@@ -7,7 +7,6 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceFactory;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**
@@ -213,13 +212,5 @@ public class EulerTransform extends AbstractSequence {
    */
   protected Z advance() {
     return mSeq.next();
-  }
-
-  /**
-   * Apply the Euler transform to the sequence supplied on standard input.
-   * @param args number of terms to skip
-   */
-  public static void main(final String[] args) {
-    SequenceFactory.generate(EulerTransform.class, args[0]);
   }
 }

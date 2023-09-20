@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceFactory;
 
 /**
  * A sequence comprising the Gilbreath transform of another sequence.
@@ -39,13 +38,5 @@ public class GilbreathTransformSequence extends AbstractSequence {
     }
     mA.add(t);
     return t;
-  }
-
-  /**
-   * Apply the transform to the sequence supplied on standard input.
-   * @param args sequence number of <code>-</code> for standard input
-   */
-  public static void main(final String[] args) {
-    SequenceFactory.generate(GilbreathTransformSequence.class, args[0]);
   }
 }

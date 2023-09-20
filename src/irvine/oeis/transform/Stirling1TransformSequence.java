@@ -8,7 +8,6 @@ import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceFactory;
 
 /**
  * A sequence comprising the Stirling numbers of the first kind transform of
@@ -87,13 +86,5 @@ public class Stirling1TransformSequence extends AbstractSequence {
     }
     mTerms.add(t);
     return stirling1(mTerms);
-  }
-
-  /**
-   * Apply the Stirling transform to the sequence supplied on standard input.
-   * @param args number of terms to skip
-   */
-  public static void main(final String[] args) {
-    SequenceFactory.generate(Stirling1TransformSequence.class, args[0]);
   }
 }

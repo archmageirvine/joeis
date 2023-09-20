@@ -38,12 +38,4 @@ public class DifferenceSequence extends AbstractSequence {
     mPrev = mSeq.next();
     return mPrev.subtract(t);
   }
-
-  /**
-   * Apply the transform to the sequence supplied on standard input.
-   * @param args sequence number of <code>-</code> for standard input
-   */
-  public static void main(final String[] args) {
-    SequenceFactory.generate(DifferenceSequence.class, args[0]);
-  }
 }

@@ -20,7 +20,7 @@ public class ExponentialRevertTransformSequence extends AbstractSequence {
   private final Polynomial<Q> mPoly = RING.empty();
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
-  private Sequence mSeq = null;
+  private final Sequence mSeq;
 
   {
     mPoly.add(Q.ZERO);

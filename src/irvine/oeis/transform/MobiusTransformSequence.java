@@ -1,17 +1,13 @@
 package irvine.oeis.transform;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.List;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.memory.MemorySequence;
-import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A sequence comprising the Mobius transform of another sequence.
@@ -113,21 +109,5 @@ public class MobiusTransformSequence extends AbstractSequence {
   @Override
   public Z next() {
     return ++mN == 0 ? mInitialTerm : mobiusTransform(mN);
-  }
-
-  /**
-   * Apply the Mobius transform to the sequence supplied on standard input.
-   * @param args number of terms to skip
-   * @throws IOException if an I/O error occurs.
-   */
-  public static void main(final String[] args) throws IOException {
-    final int skip = args.length > 0 ? Integer.parseInt(args[0]) : 0;
-    try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
-      final Sequence seq = new MobiusTransformSequence(new ReaderSequence(r), skip);
-      Z a;
-      while ((a = seq.next()) != null) {
-        System.out.println(a);
-      }
-    }
   }
 }

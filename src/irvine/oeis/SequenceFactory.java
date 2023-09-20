@@ -18,6 +18,8 @@ import org.apfloat.ApfloatRuntimeException;
 import irvine.math.z.Z;
 import irvine.oeis.producer.MetaProducer;
 import irvine.oeis.producer.Producer;
+import irvine.oeis.transform.GilbreathTransformSequence;
+import irvine.oeis.transform.SimpleTransformSequence;
 import irvine.util.CliFlags;
 import irvine.util.string.Date;
 import irvine.util.string.StringUtils;
@@ -56,6 +58,40 @@ public final class SequenceFactory {
   private static final String TIMESTAMP = "timestamp";
   private static final String TRIANGLE = "triangle";
 
+  // todo I would like to get rid of the next two methods and replace them with expression parsing
+  private static Sequence create(final Class<? extends Sequence> sequenceClass, final Sequence innerSequence) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    return sequenceClass.getDeclaredConstructor(int.class, Sequence.class).newInstance(1, innerSequence);
+  }
+
+  /**
+   * Convenience method to generate raw terms of a sequence.  This method is provided
+   * for use of <code>main</code> in various general sequences to support command line
+   * chaining of sequences.
+   * @param sequenceClass class type to attempt creation of
+   * @param inputSpecification either a sequence number of "<code>-</code>" for standard input
+   */
+  public static void generate(final Class<? extends Sequence> sequenceClass, final String inputSpecification) {
+    try {
+      if ("-".equals(inputSpecification)) {
+        try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
+          final Sequence seq = create(sequenceClass, new ReaderSequence(r));
+          Z a;
+          while ((a = seq.next()) != null) {
+            System.out.println(a);
+          }
+        }
+      } else {
+        final Sequence seq = create(sequenceClass, SequenceFactory.sequence(inputSpecification));
+        Z a;
+        while ((a = seq.next()) != null) {
+          System.out.println(a);
+        }
+      }
+    } catch (final IOException | UnimplementedException | InvocationTargetException | NoSuchMethodException | InstantiationException | IllegalAccessException e) {
+      throw new RuntimeException(e);
+    }
+  }
+
   /**
    * Convert a sequence identifier to a padded out A-number.
    * @param seqId sequence identifier
@@ -86,7 +122,6 @@ public final class SequenceFactory {
   /**
    * Return the sequence for the specified A-number. The sequence is not
    * known then <code>UnsupportedOperationException</code> is thrown.
-   *
    * @param aNumber A-number identifier in the form <code>A000001</code>
    * @param producer the Producer to use
    * @return sequence for A-number
@@ -101,15 +136,32 @@ public final class SequenceFactory {
   }
 
   /**
-   * Return the sequence for the specified A-number. The sequence is not
-   * known then <code>UnsupportedOperationException</code> is thrown.
-   *
-   * @param aNumber A-number identifier in the form <code>A000001</code>
+   * Return the sequence for the specified A-number or expression.
+   * @param expression description of sequence to be generated, typically an A-number of the form <code>A000001</code>
    * @return sequence for A-number
    * @exception UnimplementedException for an unknown A-number.
+   * @exception IllegalArgumentException if the supplied expression could not be interpreted.
    */
-  public static Sequence sequence(final String aNumber) throws UnimplementedException {
-    return sequence(aNumber, sProducer);
+  public static Sequence sequence(final String expression) throws UnimplementedException {
+    if (expression.matches("A[0-9]+")) {
+      return sequence(getCanonicalId(expression), sProducer);
+    }
+    if (expression.matches("[a-z]+\\(.*\\)")) {
+      final int open = expression.indexOf('(');
+      final String function = expression.substring(0, open);
+      final String inner = expression.substring(open + 1, expression.length() - 1);
+      switch (function) {
+        case "abs":
+          return new SimpleTransformSequence(1, sequence(inner), Z::abs);
+        case "delta":
+          return new DifferenceSequence(1, sequence(inner));
+        case "gilbreath":
+          return new GilbreathTransformSequence(1, sequence(inner));
+        default:
+          throw new IllegalArgumentException("Unexpected function: " + function);
+      }
+    }
+    throw new IllegalArgumentException("Could not understand: " + expression);
   }
 
   /**
@@ -439,7 +491,7 @@ public final class SequenceFactory {
     if (flags.isSet(PRIORITY)) {
       sProducer = MetaProducer.createProducer((String) flags.getValue(PRIORITY));
     }
-    final String seqId = getCanonicalId(flags.getAnonymousValue(0).toString());
+    final String seqId = flags.getAnonymousValue(0).toString();
     boolean generated = false;
     final long numberOfTerms = getEffectiveMax(flags, TERMS);
     try {
@@ -529,39 +581,6 @@ public final class SequenceFactory {
   }
 
 
-  private static Sequence create(final Class<? extends Sequence> sequenceClass, final Sequence innerSequence) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-    return sequenceClass.getDeclaredConstructor(int.class, Sequence.class).newInstance(1, innerSequence);
-  }
-
-  /**
-   * Convenience method to generate raw terms of a sequence.  This method is provided
-   * for use of <code>main</code> in various general sequences to support command line
-   * chaining of sequences.
-   * @param sequenceClass class type to attempt creation of
-   * @param inputSpecification either a sequence number of "<code>-</code>" for standard input
-   */
-  public static void generate(final Class<? extends Sequence> sequenceClass, final String inputSpecification) {
-    try {
-      if ("-".equals(inputSpecification)) {
-        try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
-          final Sequence seq = create(sequenceClass, new ReaderSequence(r));
-          Z a;
-          while ((a = seq.next()) != null) {
-            System.out.println(a);
-          }
-        }
-      } else {
-        final Sequence seq = create(sequenceClass, SequenceFactory.sequence(inputSpecification));
-        Z a;
-        while ((a = seq.next()) != null) {
-          System.out.println(a);
-        }
-      }
-    } catch (final IOException | UnimplementedException | InvocationTargetException | NoSuchMethodException | InstantiationException | IllegalAccessException e) {
-      throw new RuntimeException(e);
-    }
-  }
-
   /**
    * Generate terms from specified sequence, writing one term per line.
    * @param args sequence identifier
@@ -573,10 +592,10 @@ public final class SequenceFactory {
     try (final OutputStream out = new BufferedOutputStream(new FileOutputStream(FileDescriptor.out))) {
       process(args, out, true);
     } catch (final IOException e) {
+      // Broken pipe usually means consuming process terminated, so we allow that through without error
       if (!e.getMessage().contains("Broken pipe")) {
         throw e;
       }
-      // Broken pipe usually means consuming process terminated
     }
   }
 }

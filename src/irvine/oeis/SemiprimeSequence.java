@@ -16,12 +16,32 @@ public abstract class SemiprimeSequence extends AbstractSequence {
 
   /**
    * Construct the sequence. with the specified initial start index.
+   * @param offset sequence offset
+   * @param seq underlying sequence
+   * @param start initial index
+   */
+  protected SemiprimeSequence(final int offset, final Sequence seq, final int start) {
+    super(offset);
+    mSeq = seq;
+    mN = start - 1;
+  }
+
+  /**
+   * Construct the sequence. with the specified initial start index.
+   * @param seq underlying sequence
    * @param start initial index
    */
   protected SemiprimeSequence(final Sequence seq, final int start) {
-    super(1);
-    mSeq = seq;
-    mN = start - 1;
+    this(1, seq, start);
+  }
+
+  /**
+   * Construct the sequence. with the specified initial start index.
+   * @param offset sequence offset
+   * @param start initial index
+   */
+  protected SemiprimeSequence(final int offset, final Sequence seq) {
+    this(offset, seq, 0);
   }
 
   /**
@@ -67,17 +87,9 @@ public abstract class SemiprimeSequence extends AbstractSequence {
   /**
    * Generate the semiprime sequence from the given starting position.
    * @param args sequence to generate and optional start term
-   * @throws UnimplementedException if the sequence is not implemented
    */
-  public static void main(final String[] args) throws UnimplementedException {
-    final SemiprimeSequence seq = (SemiprimeSequence) SequenceFactory.sequence(args[0]);
-    seq.mVerbose = true;
-    if (args.length > 1) {
-      seq.mN = Integer.parseInt(args[1]) - 1;
-    }
-    while (true) {
-      System.out.println(seq.next());
-    }
+  public static void main(final String[] args) {
+    SequenceFactory.generate(SemiprimeSequence.class, args[0]);
   }
 }
 

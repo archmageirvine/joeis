@@ -1,24 +1,21 @@
 package irvine.oeis.transform;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.ReaderSequence;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.SequenceFactory;
 
 /**
  * A sequence comprising the Stirling numbers of the first kind transform of
  * another sequence.
  * @author Sean A. Irvine
  */
-public class Stirling1TransformSequence extends Sequence1 {
+public class Stirling1TransformSequence extends AbstractSequence {
 
   /**
    * Apply the Stirling numbers of the first kind transform to the given sequence
@@ -47,11 +44,12 @@ public class Stirling1TransformSequence extends Sequence1 {
   /**
    * Creates a new Stirling transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
-   *
+   * @param offset sequence offset
    * @param seq underlying sequence
    * @param skip number of terms to skip (or insert)
    */
-  public Stirling1TransformSequence(final Sequence seq, final int skip) {
+  public Stirling1TransformSequence(final int offset, final Sequence seq, final int skip) {
+    super(offset);
     mSeq = seq;
     for (int k = skip; k < 0; ++k) {
       mTerms.add(Z.ZERO);
@@ -59,6 +57,26 @@ public class Stirling1TransformSequence extends Sequence1 {
     for (int k = 0; k < skip; ++k) {
       seq.next();
     }
+  }
+
+  /**
+   * Creates a new Stirling transform sequence of the given sequence, skipping
+   * the specified number of terms in advance.
+   * @param offset sequence offset
+   * @param skip number of terms to skip (or insert)
+   */
+  public Stirling1TransformSequence(final int offset, final Sequence seq) {
+    this(offset, seq, 0);
+  }
+
+  /**
+   * Creates a new Stirling transform sequence of the given sequence, skipping
+   * the specified number of terms in advance.
+   * @param seq underlying sequence
+   * @param skip number of terms to skip (or insert)
+   */
+  public Stirling1TransformSequence(final Sequence seq, final int skip) {
+    this(1, seq, skip);
   }
 
   @Override
@@ -74,16 +92,8 @@ public class Stirling1TransformSequence extends Sequence1 {
   /**
    * Apply the Stirling transform to the sequence supplied on standard input.
    * @param args number of terms to skip
-   * @throws IOException if an I/O error occurs.
    */
-  public static void main(final String[] args) throws IOException {
-    final int skip = args.length > 0 ? Integer.parseInt(args[0]) : 0;
-    try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
-      final Stirling1TransformSequence seq = new Stirling1TransformSequence(new ReaderSequence(r), skip);
-      Z a;
-      while ((a = seq.next()) != null) {
-        System.out.println(a);
-      }
-    }
+  public static void main(final String[] args) {
+    SequenceFactory.generate(Stirling1TransformSequence.class, args[0]);
   }
 }

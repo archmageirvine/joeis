@@ -1,16 +1,13 @@
 package irvine.oeis.transform;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.FiniteSequence;
-import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.SequenceFactory;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**
@@ -221,16 +218,8 @@ public class EulerTransform extends AbstractSequence {
   /**
    * Apply the Euler transform to the sequence supplied on standard input.
    * @param args number of terms to skip
-   * @throws IOException if an I/O error occurs.
    */
-  public static void main(final String[] args) throws IOException {
-    final int skip = args.length > 0 ? Integer.parseInt(args[0]) : 0;
-    try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
-      final EulerTransform seq = new EulerTransform(new ReaderSequence(r), skip);
-      Z a;
-      while ((a = seq.next()) != null) {
-        System.out.println(a);
-      }
-    }
+  public static void main(final String[] args) {
+    SequenceFactory.generate(EulerTransform.class, args[0]);
   }
 }

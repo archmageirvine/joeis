@@ -1,16 +1,11 @@
 package irvine.oeis.transform;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.SequenceFactory;
-import irvine.oeis.UnimplementedException;
 
 /**
  * A sequence comprising the Gilbreath transform of another sequence.
@@ -49,23 +44,8 @@ public class GilbreathTransformSequence extends AbstractSequence {
   /**
    * Apply the transform to the sequence supplied on standard input.
    * @param args sequence number of <code>-</code> for standard input
-   * @throws IOException if an I/O error occurs.
    */
-  public static void main(final String[] args) throws IOException, UnimplementedException {
-    if ("-".equals(args[0])) {
-      try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
-        final GilbreathTransformSequence seq = new GilbreathTransformSequence(1, new ReaderSequence(r));
-        Z a;
-        while ((a = seq.next()) != null) {
-          System.out.println(a);
-        }
-      }
-    } else {
-      final GilbreathTransformSequence seq = new GilbreathTransformSequence(1, SequenceFactory.sequence(args[0]));
-      Z a;
-      while ((a = seq.next()) != null) {
-        System.out.println(a);
-      }
-    }
+  public static void main(final String[] args) {
+    SequenceFactory.generate(GilbreathTransformSequence.class, args[0]);
   }
 }

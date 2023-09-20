@@ -1,11 +1,14 @@
 package irvine.oeis;
 
 import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
 import java.io.Closeable;
 import java.io.FileDescriptor;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.lang.reflect.InvocationTargetException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
@@ -522,6 +525,40 @@ public final class SequenceFactory {
       }
     } catch (final UnimplementedException e) {
       System.err.println("Sorry, " + seqId + " is not yet implemented");
+    }
+  }
+
+
+  private static Sequence create(final Class<? extends Sequence> sequenceClass, final Sequence innerSequence) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    return sequenceClass.getDeclaredConstructor(int.class, Sequence.class).newInstance(1, innerSequence);
+  }
+
+  /**
+   * Convenience method to generate raw terms of a sequence.  This method is provided
+   * for use of <code>main</code> in various general sequences to support command line
+   * chaining of sequences.
+   * @param sequenceClass class type to attempt creation of
+   * @param inputSpecification either a sequence number of "<code>-</code>" for standard input
+   */
+  public static void generate(final Class<? extends Sequence> sequenceClass, final String inputSpecification) {
+    try {
+      if ("-".equals(inputSpecification)) {
+        try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
+          final Sequence seq = create(sequenceClass, new ReaderSequence(r));
+          Z a;
+          while ((a = seq.next()) != null) {
+            System.out.println(a);
+          }
+        }
+      } else {
+        final Sequence seq = create(sequenceClass, SequenceFactory.sequence(inputSpecification));
+        Z a;
+        while ((a = seq.next()) != null) {
+          System.out.println(a);
+        }
+      }
+    } catch (final IOException | UnimplementedException | InvocationTargetException | NoSuchMethodException | InstantiationException | IllegalAccessException e) {
+      throw new RuntimeException(e);
     }
   }
 

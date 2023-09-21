@@ -146,6 +146,8 @@ public final class SequenceFactory {
           return new InverseWeighTransform(sequence(inner));
         case "mobius":
           return new MobiusTransformSequence(sequence(inner), 0);
+        case "record":
+          return new RecordSequence(sequence(inner));
         case "stirling1":
           return new Stirling1TransformSequence(1, sequence(inner));
         case "stirling2":

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A078778 Numbers n such that n!+1 is a semiprime.
+ * A078781 Numbers n such that n!-1 is a semiprime.
  * @author Sean A. Irvine
  */
 public class A078781 extends FilterPositionSequence {

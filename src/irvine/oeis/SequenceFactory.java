@@ -118,6 +118,11 @@ public final class SequenceFactory {
     if ("-".equals(expression) || expression.matches("A[0-9]+")) {
       return sequence(getCanonicalId(expression), sProducer);
     }
+    if (expression.matches((".*\\.skip\\([0-9]+\\)"))) {
+      final int skipPos = expression.lastIndexOf(".skip");
+      final int skip = Integer.parseInt(expression.substring(skipPos + ".skip(".length(), expression.length() - 1));
+      return sequence(expression.substring(0, skipPos)).skip(skip);
+    }
     if (expression.matches("[a-z][a-z0-9]*\\(.*\\)")) {
       final int open = expression.indexOf('(');
       final String function = expression.substring(0, open);

@@ -39,12 +39,7 @@ public abstract class AbstractSequence implements Sequence {
     mOffset = offset;
   }
 
-  /**
-   * Convenience method to skip some number of initial terms of a sequence.
-   * @param terms number of terms to skip
-   * @return this sequence with terms skipped
-   * @throws IllegalArgumentException if the number of terms to skip is negative.
-   */
+  @Override
   public AbstractSequence skip(final long terms) {
     if (terms < 0) {
       throw new IllegalArgumentException();
@@ -57,10 +52,7 @@ public abstract class AbstractSequence implements Sequence {
     return this;
   }
 
-  /**
-   * Convenience method to skip the initial term of the sequence.
-   * @return this sequence with one term skipped
-   */
+  @Override
   public AbstractSequence skip() {
     return skip(1);
   }

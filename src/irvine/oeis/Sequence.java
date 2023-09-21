@@ -24,5 +24,19 @@ public interface Sequence {
    * @return the offset
    */
   int getOffset();
+
+  /**
+   * Convenience method to skip some number of terms of a sequence.
+   * @param terms number of terms to skip
+   * @return this sequence with terms skipped
+   * @throws IllegalArgumentException if the number of terms to skip is negative.
+   */
+  Sequence skip(final long n);
+
+  /**
+   * Convenience method to skip a single term of the sequence.
+   * @return this sequence with one term skipped
+   */
+  Sequence skip();
 }
 

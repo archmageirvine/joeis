@@ -13,6 +13,6 @@ public class A364047 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A364047() {
-    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> d % 6 != 1 ? Z.ZERO : Z.NEG_ONE.pow(((d - 1) / 6))));
+    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> d % 6 != 1 ? Z.ZERO : Z.NEG_ONE.pow((d - 1) / 6)));
   }
 }

@@ -26,7 +26,7 @@ public class A065924 extends Sequence1 {
       if (mSqrt) {
         final Z t = SQRT10.multiply(mT).floor();
         Q a = new Q(Z.ONE, t);
-        Q b = new Q(t);
+        final Q b = new Q(t);
         while (a.compareTo(b) < 0) {
           a = a.multiply(10);
         }

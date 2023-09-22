@@ -1,6 +1,7 @@
 package irvine.oeis.a365;
 
 import java.util.HashSet;
+import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
@@ -16,23 +17,28 @@ public class A365001 extends A000040 {
   private final HashSet<Z> mDeadEnds = new HashSet<>();
   private final HashSet<Z> mSeenWorkspace = new HashSet<>();
 
-  private boolean isSolvable(final Z q, final Z p) {
-    Z a = Z.ONE;
-    do {
-      a = a.multiply2();
-      final Z x = p.xor(a);
-      if (x.isProbablePrime() && mSeenWorkspace.add(x)) {
-        if (x.add(1).bitCount() == 1) {
-          return true; // Found a Mersenne prime
+  private boolean isSolvable(final Z q) {
+    mSeenWorkspace.clear();
+    mSeenWorkspace.add(q);
+    final TreeSet<Z> priority = new TreeSet<>();
+    priority.add(q);
+    while (!priority.isEmpty()) {
+      final Z p = priority.pollFirst();
+      Z a = Z.ONE;
+      do {
+        a = a.multiply2();
+        final Z x = p.xor(a);
+        if (x.isProbablePrime() && mSeenWorkspace.add(x)) {
+          if (x.add(1).bitCount() == 1) {
+            return true; // Found a Mersenne prime
+          }
+          if (x.compareTo(q) < 0 && !mDeadEnds.contains(x)) {
+            return true;
+          }
+          priority.add(x);
         }
-        if (x.compareTo(q) < 0) {
-          return !mDeadEnds.contains(x); // Reached a smaller number than the starting point
-        }
-        if (isSolvable(q, x)) {
-          return true;
-        }
-      }
-    } while (a.compareTo(p) < 0);
+      } while (a.compareTo(p) < 0);
+    }
     return false;
   }
 
@@ -43,9 +49,7 @@ public class A365001 extends A000040 {
       if (mVerbose) {
         StringUtils.message("Testing: " + p);
       }
-      mSeenWorkspace.clear();
-      mSeenWorkspace.add(p);
-      if (p.isOdd() && !isSolvable(p, p)) {
+      if (p.isOdd() && !isSolvable(p)) {
         mDeadEnds.add(p);
         return p;
       }

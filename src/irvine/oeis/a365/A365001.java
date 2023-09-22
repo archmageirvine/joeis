@@ -4,6 +4,7 @@ import java.util.HashSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
+import irvine.util.string.StringUtils;
 
 /**
  * A365001 Dead-end primes in "The Prime Number Maze".
@@ -11,6 +12,7 @@ import irvine.oeis.a000.A000040;
  */
 public class A365001 extends A000040 {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final HashSet<Z> mDeadEnds = new HashSet<>();
   private final HashSet<Z> mSeenWorkspace = new HashSet<>();
 
@@ -38,6 +40,9 @@ public class A365001 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
+      if (mVerbose) {
+        StringUtils.message("Testing: " + p);
+      }
       mSeenWorkspace.clear();
       mSeenWorkspace.add(p);
       if (p.isOdd() && !isSolvable(p, p)) {

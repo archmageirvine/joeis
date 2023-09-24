@@ -33,7 +33,7 @@ public class A365001 extends A000040 {
             return true; // Found a Mersenne prime
           }
           if (x.compareTo(q) < 0 && !mDeadEnds.contains(x)) {
-            return true;
+            return true; // Smaller than original value that is not a dead end
           }
           priority.add(x);
         }

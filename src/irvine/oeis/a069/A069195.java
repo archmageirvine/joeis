@@ -6,7 +6,7 @@ import irvine.oeis.recur.PaddingSequence;
 
 
 /**
- * A069195 Order of first letter of n-th day of the week.
+ * A069195 Order of first letter of English name of consecutive days of the week starting from a Monday.
  * @author Georg Fischer
  */
 public class A069195 extends PaddingSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.a062.A062964;
 
 /**
- * A099348 Frequency of the hexadecimal F in the first 10^n hexadecimal expansion is Pi.
+ * A099348 Frequency of the hexadecimal F in the first 10^n hexadecimal digits of Pi.
  * @author Georg Fischer
  */
 public class A099348 extends A099297 {

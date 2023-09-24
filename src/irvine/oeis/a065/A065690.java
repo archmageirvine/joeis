@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a050.A050635;
 
 /**
- * A065690 a(1) = 0; for n &gt; 1 is a(n) the square root of the smallest square &gt; a(n-1)^2 with a(n-1)^2 forming its final digits.
+ * A065690 a(1) = 0; for n &gt; 1, a(n) is the square root of the smallest square &gt; a(n-1)^2 with a(n-1)^2 forming its final digits.
  * @author Georg Fischer
  */
 public class A065690 extends PrependSequence {

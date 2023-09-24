@@ -2263,3 +2263,7 @@ A065646 Denominators of convergents to twin prime constant.
 A065647 Numerators of convergents to twin prime constant.
 A065688 First prime in the smallest (nontrivial) prime k-tuplet.
 A065711 The Alon-Tarsi constants AT(n).
+A065936 a(n) is the integer (reduced squarefree) under the square root obtained when the inverse of a variant of Minkowski's question mark function is applied to the n-th ratio A007305(n+1)/A007306(n+1) in the left-hand subtree of Stern-Brocot tree and zero when it results a rational value.
+A065937 a(n) is the integer (reduced squarefree) under the square root obtained when the inverse of Minkowski's question mark function is applied to the n-th ratio A007305(n+1)/A047679(n-1) in the full Stern-Brocot tree and zero when it results a rational value.
+A065938 Position of sqrt(n) in the mapping N2QuQR1 given in A065936
+A065939 Position of sqrt(n) in the mapping N2QuQR2 given in A065937.

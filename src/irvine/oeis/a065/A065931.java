@@ -13,7 +13,7 @@ public class A065931 extends Sequence1 {
   private int mN = 0;
   private int mM = 0;
 
-  private Z t(final int n, final int k) {
+  protected Z t(final int n, final int k) {
     return MemoryFactorial.SINGLETON.factorial(n + k + 1)
       .divide(MemoryFactorial.SINGLETON.factorial(k))
       .divide(MemoryFactorial.SINGLETON.factorial(n - k - 1))

@@ -431,4 +431,12 @@ public class Q implements Comparable<Q>, Serializable {
   public Q signedAdd(final boolean condition, final Q a) {
     return condition ? add(a) : subtract(a);
   }
+
+  /**
+   * The proper fractional part of this rational.
+   * @return fractional part
+   */
+  public Q frac() {
+    return subtract(floor());
+  }
 }

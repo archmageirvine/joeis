@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A112969 a(n) = a(n-1)^4 + a(n-2)^4 for n &gt; 2 with a(1) = a(2) = 1.
+ * A112969 a(n) = a(n-1)^4 + a(n-2)^4 for n &gt;= 2 with a(0) = 0, a(1) = 1.
  * @author Georg Fischer
  */
 public class A112969 extends ConstantOrderRecurrence {

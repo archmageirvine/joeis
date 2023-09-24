@@ -4,7 +4,7 @@ package irvine.oeis.a202;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A202349 Lexicographically first sequence such that the sequence and its first and second differences share no terms, and the 3rd differences are equal to the original sequence.
+ * A202349 Lexicographically earliest sequence such that the sequence and its first and second differences share no terms, and the 3rd differences are equal to the original sequence.
  * @author Georg Fischer
  */
 public class A202349 extends GeneratingFunctionSequence {

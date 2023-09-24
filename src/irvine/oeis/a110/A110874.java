@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A110874 Number of prime factors with multiplicity of 2 + (n^(n+1)).
+ * A110874 Number of prime factors of 2 + n^(n+1) counted with multiplicity.
  * a(n)=bigomega(2+n^(n+1))
  * @author Georg Fischer
  */

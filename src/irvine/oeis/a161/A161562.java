@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A161562 Even numbers n such that { n-p ; p prime, 2 &lt; p &lt; n/2 } contains at least twice as much primes than composites.
+ * A161562 Even numbers n such that { n-p ; p prime, 2 &lt; p &lt; n/2 } contains at least twice as many primes as composites.
  * @author Georg Fischer
  */
 public class A161562 extends FiniteSequence {

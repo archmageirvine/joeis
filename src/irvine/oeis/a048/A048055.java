@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A048055 Numbers n such that (sum of the nonprime proper divisors of n) - (sum of prime divisors of n) = n.
+ * A048055 Numbers k such that (sum of the nonprime proper divisors of k) - (sum of prime divisors of k) = k.
  * @author Sean A. Irvine
  */
 public class A048055 extends Sequence1 {

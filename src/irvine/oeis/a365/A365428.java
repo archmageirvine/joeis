@@ -7,7 +7,7 @@ import irvine.oeis.DirichletInverseSequence;
 import irvine.oeis.a102.A102283;
 
 /**
- * A365428 allocated for Antti Karttunen.
+ * A365428 Dirichlet inverse of A102283.
  * @author Georg Fischer
  */
 public class A365428 extends AbstractSequence {

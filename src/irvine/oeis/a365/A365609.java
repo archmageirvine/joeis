@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A365609 allocated for Rok Cestnik.
+ * A365609 G.f. satisfies A(x) = 1 + x^2*A(x)^4*(1 + x*A(x)).
  * @author Georg Fischer
  */
 public class A365609 extends LambdaSequence {

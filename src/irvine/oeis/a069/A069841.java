@@ -7,7 +7,7 @@ import irvine.oeis.transform.SimpleTransformSequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A069841 A036937(n) - 222...2 (with n 2s).
+ * A069841 A036937(n) - 222...2 (with n 2s) interpreted as binary numbers and converted to decimal.
  * @author Georg Fischer
  */
 public class A069841 extends SimpleTransformSequence {

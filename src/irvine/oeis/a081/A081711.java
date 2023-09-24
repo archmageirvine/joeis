@@ -7,7 +7,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A081711 n! + n# - 1 is prime, where n# is the primorial function.
+ * A081711 Numbers k such that k! + k# - 1 is prime, where k# is the primorial function.
  * @author Georg Fischer
  */
 public class A081711 extends FilterPositionSequence {

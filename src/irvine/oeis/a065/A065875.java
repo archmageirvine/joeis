@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065875 Usigma(Phi(n)) is a prime.
+ * A065875 Numbers k such that usigma(phi(k)) is a prime.
  * @author Sean A. Irvine
  */
 public class A065875 extends Sequence1 {

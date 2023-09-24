@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A023723 Numbers with exactly 2 0's in base 5 expansion.
+ * A023723 Numbers with exactly 2 0's in their base 5 expansion.
  * @author Sean A. Irvine
  */
 public class A023723 extends Sequence1 {

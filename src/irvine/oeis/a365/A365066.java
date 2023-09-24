@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A365066 allocated for Peter McNair.
+ * A365066 Decimal expansion of the constant 1/0! - 1/1! + 1/2! + 1/3! - 1/4! + 1/5! + 1/6! - 1/7! + ...
  * @author Sean A. Irvine
  */
 public class A365066 extends DecimalExpansionSequence {

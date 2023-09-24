@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a047.A047845;
 
 /**
- * A065884 A065824(1+A047845(n)).
+ * A065884 a(n) = A065824(A047845(n+1)).
  * @author Sean A. Irvine
  */
 public class A065884 extends A047845 {

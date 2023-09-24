@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A126156 E.g.f. sqrt(sec(sqrt(2)*x)), showing coefficients of only the even powers of x.
+ * A126156 Expansion of e.g.f. sqrt(sec(sqrt(2)*x)), showing coefficients of only the even powers of x.
  * E.g.f.: sqrt(sec(sqrt(2)*x))
  * @author Georg Fischer
  */

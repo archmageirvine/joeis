@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065823 6*phi(n) = 5*sigma(n).
+ * A065823 Numbers k such that 6*phi(k) = 5*sigma(k).
  * @author Sean A. Irvine
  */
 public class A065823 extends Sequence1 {

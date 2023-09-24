@@ -8,11 +8,13 @@ import irvine.math.Mobius;
 import irvine.math.api.Field;
 import irvine.math.c.C;
 import irvine.math.c.ComplexField;
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
@@ -390,5 +392,18 @@ public final class PolynomialUtils {
    */
   public static Z height(final Polynomial<Z> poly) {
     return poly.aggregate(Z.ZERO, (a, c) -> a.max(c.abs()));
+  }
+
+  /**
+   * Return Bessel polynomial <code>y_n(x)</code>.
+   * @param n index
+   * @return Bessel polynomial
+   */
+  public static Polynomial<Q> besselY(final int n) {
+    final Q[] c = new Q[n + 1];
+    for (int k = 0; k <= n; ++k) {
+      c[k] = new Q(Binomial.binomial(n + k, 2L * k).multiply(MemoryFactorial.SINGLETON.factorial(2 * k)), MemoryFactorial.SINGLETON.factorial(k).shiftLeft(k));
+    }
+    return Polynomial.create(c);
   }
 }

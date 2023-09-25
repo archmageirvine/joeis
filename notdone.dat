@@ -2267,3 +2267,5 @@ A065936 a(n) is the integer (reduced squarefree) under the square root obtained 
 A065937 a(n) is the integer (reduced squarefree) under the square root obtained when the inverse of Minkowski's question mark function is applied to the n-th ratio A007305(n+1)/A047679(n-1) in the full Stern-Brocot tree and zero when it results a rational value.
 A065938 Position of sqrt(n) in the mapping N2QuQR1 given in A065936
 A065939 Position of sqrt(n) in the mapping N2QuQR2 given in A065937.
+A065963 Smallest number which is digitally balanced in n bases, for 2 <= base b <= a(n)
+A065984 Volume (multiplied by 3) of polyhedron formed by points (i,j,k) in Z^3 with i^2+j^2+k^2 = n

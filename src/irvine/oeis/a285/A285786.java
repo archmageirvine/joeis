@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a278.A278114;
 
 /**
- * A285786 Number of primes p with 2(n-1)^2 < p <= 2n^2.
+ * A285786 Number of primes p with 2(n-1)^2 &lt; p &lt;= 2n^2.
  * @author Georg Fischer
  */
 public class A285786 extends PrependSequence {

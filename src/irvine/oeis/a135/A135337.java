@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a059.A059019;
 
 /**
- * A135337 Number of Dyck paths of semilength n with no DUUU&apos;s starting at level 1.
+ * A135337 Number of Dyck paths of semilength n with no DUUU's starting at level 1.
  * @author Georg Fischer
  */
 public class A135337 extends DifferenceSequence {

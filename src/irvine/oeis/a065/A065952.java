@@ -19,7 +19,7 @@ public class A065952 extends Sequence1 {
 
   private static Polynomial<Q> e(final int n) {
     final Q[] c = new Q[n + 1];
-    for (int k =0; k < c.length; ++k) {
+    for (int k = 0; k < c.length; ++k) {
       c[k] = new Q(Z.NEG_ONE.pow(k), MemoryFactorial.SINGLETON.factorial(k));
     }
     return Polynomial.create(c);

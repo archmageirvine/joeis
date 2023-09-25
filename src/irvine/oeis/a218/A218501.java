@@ -7,7 +7,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A218501 9th iteration of the hyperbinomial transform on the sequence of 1&apos;s.
+ * A218501 9th iteration of the hyperbinomial transform on the sequence of 1's.
  * @author Georg Fischer
  */
 public class A218501 extends LambdaSequence {

@@ -14,7 +14,7 @@ public class A295665 extends MultiplicativeSequence {
   /** Construct the sequence. */
   public A295665() {
     super(1, (p, e) -> {
-      Z m = Puma.primePiZ(p);
+      final Z m = Puma.primePiZ(p);
       return m.isProbablePrime() ? Puma.primeZ(Puma.primePi(m)).pow(e) : Z.ONE;
     });
   }

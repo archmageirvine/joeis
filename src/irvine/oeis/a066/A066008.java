@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A066000.
+ * A066008 Number of n-digit positive integers m for which m/(sum of digits of m) is an integer, sometimes referred to as Niven or Harshad numbers.
  * @author Sean A. Irvine
  */
 public class A066008 extends Sequence1 {

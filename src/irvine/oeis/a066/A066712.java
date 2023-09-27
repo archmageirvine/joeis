@@ -5,7 +5,7 @@ import irvine.oeis.InverseSequence;
 import irvine.oeis.a032.A032445;
 
 /**
- * A066712 Inverse of A032445, with first appearance of string &quot;0&quot; in decimal expansion of Pi added to A032445.
+ * A066712 Inverse of A032445, with first appearance of string "0" in decimal expansion of Pi added to A032445.
  * @author Georg Fischer
  */
 public class A066712 extends InverseSequence {

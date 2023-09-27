@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002182;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A072824 Sum of aliquot divisors of Ramanujan&apos;s highly composite numbers.
+ * A072824 Sum of aliquot divisors of Ramanujan's highly composite numbers.
  * @author Georg Fischer
  */
 public class A072824 extends SimpleTransformSequence {

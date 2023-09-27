@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001142;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A249343 The exponent of the highest power of 3 dividing the product of the elements on the n-th row of Pascal&apos;s triangle (A001142(n)).
+ * A249343 The exponent of the highest power of 3 dividing the product of the elements on the n-th row of Pascal's triangle (A001142(n)).
  * @author Georg Fischer
  */
 public class A249343 extends SimpleTransformSequence {

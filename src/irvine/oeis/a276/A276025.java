@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000461;
 
 /**
- * A276025.
+ * A276025 Next prime after concatenate of n, n times (A000461).
  * @author Sean A. Irvine
  */
 public class A276025 extends A000461 {

@@ -6,7 +6,7 @@ import irvine.oeis.a069.A069010;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A268411 Parity of number of runs of 1&apos;s in binary representation of n.
+ * A268411 Parity of number of runs of 1's in binary representation of n.
  * @author Georg Fischer
  */
 public class A268411 extends SimpleTransformSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a254.A254990;
 
 /**
- * A316840 Indices of 3&apos;s in A254990.
+ * A316840 Indices of 3's in A254990.
  * @author Georg Fischer
  */
 public class A316840 extends FilterPositionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a085.A085724;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A092561 &quot;Mersenne&quot; semiprimes, semiprimes of the form 2^k-1.
+ * A092561 "Mersenne" semiprimes, semiprimes of the form 2^k-1.
  * @author Georg Fischer
  */
 public class A092561 extends SimpleTransformSequence {

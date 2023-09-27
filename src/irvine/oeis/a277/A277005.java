@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a036.A036691;
 
 /**
- * A276025.
+ * A277005 Least prime greater than n-th compositorial.
  * @author Sean A. Irvine
  */
 public class A277005 extends A036691 {

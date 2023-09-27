@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066000.
+ * A066000 Size of smallest directed 1-covering code of length n.
  * @author Sean A. Irvine
  */
 public class A066000 extends Sequence1 {

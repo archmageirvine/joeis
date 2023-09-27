@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000079;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A261009 Write 2^n in base 3, add up the &quot;digits&quot;.
+ * A261009 Write 2^n in base 3, add up the "digits".
  * @author Georg Fischer
  */
 public class A261009 extends SimpleTransformSequence {

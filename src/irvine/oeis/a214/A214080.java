@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000196;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A214080 a(n) = (floor(sqrt(n)))!
+ * A214080 a(n) = (floor(sqrt(n)))!.
  * @author Georg Fischer
  */
 public class A214080 extends SimpleTransformSequence {

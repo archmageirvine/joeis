@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A066000.
+ * A066007 a(n) is that n-digit number m which minimizes m/(sum of digits of m); in case of a tie pick the smallest.
  * @author Sean A. Irvine
  */
 public class A066007 extends Sequence1 {

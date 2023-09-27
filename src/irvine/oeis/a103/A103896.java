@@ -5,7 +5,7 @@ import irvine.math.z.Euler;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A103896 Euler&apos;s totient of prime(n)! / prime(n)# + 1.
+ * A103896 Euler's totient of prime(n)! / prime(n)# + 1.
  * @author Georg Fischer
  */
 public class A103896 extends SimpleTransformSequence {

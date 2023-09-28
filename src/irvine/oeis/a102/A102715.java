@@ -12,6 +12,6 @@ public class A102715 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A102715() {
-    super(0, new A007318(), Euler::phi);
+    super(0, new A007318(), k -> Euler.phi(k));
   }
 }

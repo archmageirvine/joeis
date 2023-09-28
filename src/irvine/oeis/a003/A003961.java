@@ -25,6 +25,38 @@ public class A003961 extends AbstractSequence {
     super(1);
   }
 
+  /**
+   * Direct access with int parameter.
+   * @param n index
+   * @return function value
+   */
+  public static Z a(final int n) {
+    return getProduct(Jaguar.factor(n));
+  }
+
+  /**
+   * Direct access with Z parameter.
+   * @param n index
+   * @return function value
+   */
+  public static Z a(final Z nz) {
+    return getProduct(Jaguar.factor(nz));
+  }
+
+  /**
+   * Compute the new term.
+   * @param fs FactorSequence
+   * @return product with modified primes
+   */
+  private static Z getProduct(final FactorSequence fs) {
+    final Fast mPrime = new Fast();
+    Z prod = Z.ONE;
+    for (final Z p : fs.toZArray()) {
+      prod = prod.multiply(mPrime.nextPrime(p).pow(fs.getExponent(p)));
+    }
+    return prod;
+  }
+
   private long mN = 0;
   private final Fast mPrime = new Fast();
 

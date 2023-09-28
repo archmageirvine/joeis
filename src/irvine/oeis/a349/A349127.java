@@ -1,29 +1,16 @@
-package irvine.oeis.a064;
+package irvine.oeis.a349;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence1;
 
 /**
- * A064989 Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
- * @author Sean A. Irvine
+ * A349127 Möbius transform of A064989, where A064989 is multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
+ * @author Georg Fischer
  */
-public class A064989 extends AbstractSequence {
-
-  /**
-   * Constructor with offset.
-   * @param offset first index
-   */
-  protected A064989(final int offset) {
-    super(offset);
-  }
-
-  /** Construct the sequence. */
-  public A064989() {
-    super(1);
-  }
+public class A349127 extends Sequence1 {
 
   /**
    * Direct access with int parameter.
@@ -52,7 +39,8 @@ public class A064989 extends AbstractSequence {
     final Fast mPrime = new Fast();
     Z prod = Z.ONE;
     for (final Z p : fs.toZArray()) {
-      prod = prod.multiply(p.equals(Z.TWO) ? Z.ONE : mPrime.prevPrime(p).pow(fs.getExponent(p)));
+      final Z q = p.equals(Z.TWO) ? Z.ONE : mPrime.prevPrime(p);
+      prod = prod.multiply(q.pow(fs.getExponent(p) - 1).multiply(q.subtract(1)));
     }
     return prod;
   }
@@ -65,7 +53,8 @@ public class A064989 extends AbstractSequence {
     final FactorSequence fs = Jaguar.factor(++mN);
     Z prod = Z.ONE;
     for (final Z p : fs.toZArray()) {
-      prod = prod.multiply(p.equals(Z.TWO) ? Z.ONE : mPrime.prevPrime(p).pow(fs.getExponent(p)));
+      final Z q = p.equals(Z.TWO) ? Z.ONE : mPrime.prevPrime(p);
+      prod = prod.multiply(q.pow(fs.getExponent(p) - 1).multiply(q.subtract(1)));
     }
     return prod;
   }

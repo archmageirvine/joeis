@@ -17,7 +17,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(EdgeTest.class);
     suite.addTestSuite(EdgeThreeColouringTest.class);
     suite.addTestSuite(GraphTest.class);
-    suite.addTestSuite(GraphUtilsTest.class);
     suite.addTestSuite(IsomorphismTest.class);
     suite.addTestSuite(LauTest.class);
     suite.addTestSuite(OrderChainGraphTest.class);

@@ -2272,3 +2272,10 @@ A065984 Volume (multiplied by 3) of polyhedron formed by points (i,j,k) in Z^3 w
 A066009 Covering numbers C(n,7,6).
 A066010 Triangle of covering numbers T(n,k) = C(n,k,k-1), n >= 2, 2 <= k <= n
 A066011 Covering numbers C(n,8,7)
+A066012 Highest minimal Lee distance of any Type 4^Z self-dual code of length n over Z/4Z which does not have all Euclidean norms divisible by 8, that is, is strictly Type I. Compare A105681.
+A066013 Number of codes having highest minimal Lee distance of any Type 4^Z self-dual code of length n over Z/4Z which does not have all Euclidean norms divisible by 8, that is, is strictly Type I. Compare A105688.
+A066014 Highest minimal Euclidean norm of any Type 4^Z self-dual code of length n over Z/4Z which does not have all Euclidean norms divisible by 8, that is, is strictly Type I. Compare A105682.
+A066015 Number of codes having highest minimal Euclidean norm of any Type 4^Z self-dual code of length n over Z/4Z which does not have all Euclidean norms divisible by 8, that is, is strictly Type I. Compare A105682.
+A066016 Highest minimal Hamming distance of any Type 4^Z self-dual code of length n over Z/4Z.
+A066017 Number of inequivalent codes attaining highest minimal Hamming distance of any Type 4^Z self-dual code of length n over Z/4Z.
+A066019 Triangle of covering numbers T(n,k) = C(n,k,k-2), n >= 3, 3 <= k <= n.

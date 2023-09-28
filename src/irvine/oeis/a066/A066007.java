@@ -20,7 +20,7 @@ public class A066007 extends Sequence1 {
 
   @Override
   public Z next() {
-    Z n = Z.valueOf(++mN);
+    final Z n = Z.valueOf(++mN);
     int r = 0;
     while (k(r + 1).compareTo(n) <= 0) {
       ++r;

@@ -1,5 +1,6 @@
 package irvine.graph;
 
+import irvine.math.graph.GraphUtils;
 import junit.framework.TestCase;
 
 /**

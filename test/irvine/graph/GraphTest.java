@@ -7,6 +7,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import irvine.math.graph.GraphUtils;
+import irvine.math.graph.GraphUtilsTest;
 import junit.framework.TestCase;
 
 /**
@@ -81,7 +83,7 @@ public class GraphTest extends TestCase {
   }
 
   public void testSubgraphs() throws IOException {
-    final Graph<String, String> g = GraphUtils.load(GraphUtilsTest.class.getClassLoader().getResourceAsStream("irvine/graph/bollobas1.1.gph"));
+    final Graph<String, String> g = irvine.math.graph.GraphUtils.load(GraphUtilsTest.class.getClassLoader().getResourceAsStream("irvine/graph/bollobas1.1.gph"));
     assertEquals(9, g.order());
     assertEquals(21, g.size());
     final Graph<String, String> empty = g.inducedSubgraph(new HashSet<>());
@@ -148,7 +150,7 @@ public class GraphTest extends TestCase {
 
   public void testComplement() throws IOException {
     try (final InputStream is = GraphTest.class.getClassLoader().getResourceAsStream("irvine/graph/test1.gph")) {
-      final Graph<String, String> g = GraphUtils.load(is);
+      final Graph<String, String> g = irvine.math.graph.GraphUtils.load(is);
       assertEquals(4, g.order());
       assertEquals(6, g.size());
       final Graph<String, String> c = g.complement();
@@ -207,20 +209,20 @@ public class GraphTest extends TestCase {
   }
 
   public void testIsomorphism() {
-    final Graph<Integer, String> g = GraphUtils.complete(5);
+    final Graph<Integer, String> g = irvine.math.graph.GraphUtils.complete(5);
     assertNotNull(g.isomorphism(g));
   }
 
   public void testIsConnected() {
     for (int k = 0; k < 2; ++k) {
-      final Graph<Integer, String> g = GraphUtils.empty(k);
+      final Graph<Integer, String> g = irvine.math.graph.GraphUtils.empty(k);
       assertTrue(g.isConnected());
       final List<Graph<Integer, String>> s = g.components();
       assertEquals(1, s.size());
       assertEquals(g, s.iterator().next());
     }
     for (int k = 2; k < 5; ++k) {
-      final Graph<Integer, String> g = GraphUtils.empty(k);
+      final Graph<Integer, String> g = irvine.math.graph.GraphUtils.empty(k);
       assertFalse(g.isConnected());
       assertEquals(k, g.components().size());
     }

@@ -2,6 +2,7 @@ package irvine.graph;
 
 import java.util.Random;
 
+import irvine.math.graph.GraphUtils;
 import irvine.util.Pair;
 
 //import java.util.Random;
@@ -14,8 +15,8 @@ import irvine.util.Pair;
 public class IsomorphismTest extends LauTest {
 
   public void testSimpleMisses() {
-    final Graph<Integer, String> g1 = GraphUtils.complete(2);
-    final Graph<Integer, String> g2 = GraphUtils.complete(3);
+    final Graph<Integer, String> g1 = irvine.math.graph.GraphUtils.complete(2);
+    final Graph<Integer, String> g2 = irvine.math.graph.GraphUtils.complete(3);
     assertNull(Isomorphism.isomorphism(g1, null));
     assertNull(Isomorphism.isomorphism(null, g1));
     assertNull(Isomorphism.isomorphism(g1, g2));
@@ -54,7 +55,7 @@ public class IsomorphismTest extends LauTest {
   }
 
   public void testEmpty() {
-    assertNotNull(Isomorphism.isomorphism(GraphUtils.empty(42), GraphUtils.empty(42)));
+    assertNotNull(Isomorphism.isomorphism(irvine.math.graph.GraphUtils.empty(42), irvine.math.graph.GraphUtils.empty(42)));
   }
 
   private void checkIdentity(final Graph<Pair<Integer, Integer>, Pair<Integer, Integer>> g) {

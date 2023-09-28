@@ -14,7 +14,7 @@ public class A074843 extends SimpleTransformSequence {
   /** Construct the sequence. */
   public A074843() {
     super(1, new A020338(), v -> {
-      String s = v.toString();
+      final String s = v.toString();
       return new Z(s + s);
     });
   }

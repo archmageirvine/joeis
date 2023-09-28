@@ -2279,3 +2279,8 @@ A066015 Number of codes having highest minimal Euclidean norm of any Type 4^Z se
 A066016 Highest minimal Hamming distance of any Type 4^Z self-dual code of length n over Z/4Z.
 A066017 Number of inequivalent codes attaining highest minimal Hamming distance of any Type 4^Z self-dual code of length n over Z/4Z.
 A066019 Triangle of covering numbers T(n,k) = C(n,k,k-2), n >= 3, 3 <= k <= n.
+A066034 Second term in the continued fraction expansion of StieltjesGamma[n].
+A066035 First term in the continued fraction expansion of StieltjesGamma[n]
+A066036 Continued fraction expansion of StieltjesGamma[1]
+A066040 Triangle of covering numbers T(n,k) = C(n,k,k-3), n >= 4, 4 <= k <= n
+A066041 Triangle of covering numbers T(n,k) = C(n,k,k-4), n >= 5, 5 <= k <= n

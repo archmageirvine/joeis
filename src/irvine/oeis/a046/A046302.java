@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A046302 Product of 4 successive primes.
+ * A046302 Products of 4 successive primes.
  * @author Sean A. Irvine
  */
 public class A046302 extends A000040 {

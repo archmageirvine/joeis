@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000688;
 import irvine.oeis.a034.A034444;
 
 /**
- * A101113 Let t(G) = number of unitary factors of the Abelian group G. Then a(n) = sum t(G) over all Abelian groups G of order exactly n.
+ * A101113 Let t(G) = number of unitary factors of the Abelian group G. Then a(n) = Sum t(G) over all Abelian groups G of order exactly n.
  * @author Georg Fischer
  */
 public class A101113 extends Sequence1 {

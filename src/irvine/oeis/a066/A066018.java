@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065964.
+ * A066018 a(n) is the smallest k such that (k^4 + 1)/(n^4 + 1) is an integer &gt; 1.
  * @author Sean A. Irvine
  */
 public class A066018 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A065964.
+ * A066027 Sum of digits of n minus product of digits of n is prime.
  * @author Sean A. Irvine
  */
 public class A066027 extends Sequence1 {

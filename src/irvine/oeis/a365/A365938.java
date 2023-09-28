@@ -6,7 +6,7 @@ import irvine.oeis.transform.GilbreathTransformSequence;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A365001.
+ * A365938 Form the "Gilbreath Transform" array for the Euler phi function (A000010); sequence gives the third column, divided by 2.
  * @author Sean A. Irvine
  */
 public class A365938 extends SimpleTransformSequence {

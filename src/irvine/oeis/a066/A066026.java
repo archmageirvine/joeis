@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000142;
 
 /**
- * A065964.
+ * A066026 a(n) = ceiling(log(n!)).
  * @author Sean A. Irvine
  */
 public class A066026 extends Sequence1 {

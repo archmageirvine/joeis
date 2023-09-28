@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065964.
+ * A066028 Largest prime which can be written as a sum of distinct primes &lt;= prime(n).
  * @author Sean A. Irvine
  */
 public class A066028 extends Sequence1 {

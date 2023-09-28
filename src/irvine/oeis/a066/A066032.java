@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065964.
+ * A066032 Number of ways to write n as a product with no factor larger than m (1 &lt;= m &lt;=n, written row by row).
  * @author Sean A. Irvine
  */
 public class A066032 extends Sequence1 {

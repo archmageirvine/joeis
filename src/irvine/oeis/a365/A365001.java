@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
 /**
- * A365001 Dead-end primes in "The Prime Number Maze".
+ * A365001 Primes from which it is not possible to reach a (different) Mersenne prime by toggling a single bit per step while still remaining prime at every step.
  * @author Sean A. Irvine
  */
 public class A365001 extends A000040 {

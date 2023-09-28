@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065964.
+ * A066025 Numbers k such that gcd(sigma(k), sigma(k+1)) &gt; k.
  * @author Sean A. Irvine
  */
 public class A066025 extends Sequence1 {

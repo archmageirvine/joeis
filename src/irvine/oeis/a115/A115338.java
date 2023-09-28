@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000196;
 
 
 /**
- * A115338 a(n)=F([sqrt(n)]), where [k]=integer part of k and F(n) is the Fibonacci sequence.
+ * A115338 a(n) = Fibonacci(floor(sqrt(n))).
  * Formula: <code>a(n) = A000045(A000196(n)).</code>
  * @author Georg Fischer
  */

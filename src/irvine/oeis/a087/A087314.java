@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A087314 a(n) = (1/n)*[sum_{k = 0..n} n^(C(n,k))].
+ * A087314 a(n) = (1/n) * Sum_{k = 0..n} n^binomial(n,k).
  * a(n) = sum(k = 0,n,n^binom(n,k))/n; (Wasserman)
  * @author Georg Fischer
  */

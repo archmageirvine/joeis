@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065964.
+ * A066021 (a(n)^6+1)/(n^6+1) is the smallest integer &gt; 1.
  * @author Sean A. Irvine
  */
 public class A066021 extends Sequence1 {

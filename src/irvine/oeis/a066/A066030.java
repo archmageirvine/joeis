@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065964.
+ * A066030 Card{i&lt;=n, floor(n/i)=0 mod(i)}.
  * @author Sean A. Irvine
  */
 public class A066030 extends Sequence1 {

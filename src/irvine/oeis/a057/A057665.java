@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A057665 Numbers n such that prime(n)+2^prime(n) is prime.
+ * A057665 Numbers k such that prime(k) + 2^prime(k) is prime.
  * @author Sean A. Irvine
  */
 public class A057665 extends A000040 {

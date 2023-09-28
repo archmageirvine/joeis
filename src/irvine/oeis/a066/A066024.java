@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A065964.
+ * A066024 Numbers k such that the product of the digits of k minus the sum of the digits of k is prime.
  * @author Sean A. Irvine
  */
 public class A066024 extends Sequence1 {

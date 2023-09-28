@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A060576 Number of homeomorphically irreducible general graphs on 1 labeled node and with n edges.
+ * A060576 a(n) = 1 except for a(1) = 0.
  * @author Georg Fischer
  */
 public class A060576 extends Cellular1DAutomaton {

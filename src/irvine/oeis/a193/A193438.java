@@ -5,7 +5,7 @@ package irvine.oeis.a193;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A193438 E.g.f.: exp( Sum_{n&gt;=0} x^(4*n+1)/(4*n+1) ).
+ * A193438 Expansion of e.g.f. exp( Sum_{n&gt;=0} x^(4*n+1)/(4*n+1) ).
  * Recurrence: a(n)=a(n-1)+(n-4)*(n-3)*(n-2)*(n-1)*a(n-4)
  * @author Georg Fischer
  */

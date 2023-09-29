@@ -154,7 +154,6 @@ A002631 Insufficient detail, foster1932.pdf, possibly in error
 A002632 Insufficient detail, foster1932.pdf, possibly in error
 A002685 Numerical integration coefficients, have paper, might be possible
 A002686 Numerical integration coefficients, have paper, might be possible
-A002739 Insufficient detail, coefficients for extrapolation
 A002769 Discriminants quartic fields, paper available, looks really hard
 A002773 Matroids, calculation estimated to be hard
 A002786 Semigroups, hard, some code for GAP might be available
@@ -1031,7 +1030,6 @@ A028410 Number of types of Boolean functions of n variables under a certain grou
 A028411 Number of types of Boolean functions of n variables under a certain group
 A028420 Number of monomer-dimer tilings of n X n chessboard, existing b-file unknown algorithm
 A028441 Triangulations of 4-dimensional cyclic polytopes, cf. A007815
-A028444 Busy Beaver sequence, or Rado's sigma function: maximal number of 1's that an n-state Turing machine can print on an initially blank tape before halting
 A028446 Number of perfect matchings in graph P_{2n} X P_{2n} X P_{2n}, probably hard
 A028453 Number of perfect matchings in graph P_{3} X P_{4} X P_{n}, long g.f. or recurrence will exist
 A028454 Number of perfect matchings in graph P_{4} X P_{4} X P_{n}, long g.f. or recurrence will exist
@@ -1475,9 +1473,6 @@ A039930 Height of lattice of parameters of mixed orthogonal arrays with n runs a
 A039931 Number of different sets of parameters for mixed orthogonal arrays with n runs and strength 2
 A040004 a(n) = smallest integer s such that for all i, all primes p and all m the congruence (x_1)^n + ... + (x_s)^n == m (mod p^i) has a primitive solution
 A040082 Number of inequivalent Latin squares (or isotopy classes of Latin squares) of order n
-A040173 Numerator of probability that 2 elements of S_n chosen at random (with replacement) generate S_n
-A040174 Denominator of probability that 2 elements of S_n chosen at random (with replacement) generate S_n
-A040175 a(n) = n! times probability that an ordered pair of elements of S_n chosen at random (with replacement) generate S_n
 A042944 Curvatures in diagram constructed by inscribing 2 circles of curvature 2 inside circle of curvature -1, continuing indefinitely to inscribe circles wherever possible
 A042945 Numbers congruent to 2,3,6,11 mod 12 missing from A042944 (conjectured to be finite).
 A042946 Frequency of occurrence of numbers appearing in A042944.

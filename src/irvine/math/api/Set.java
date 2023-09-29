@@ -1,13 +1,12 @@
 package irvine.math.api;
 
-import irvine.math.z.Z;
-
 import java.util.Iterator;
 import java.util.List;
 
+import irvine.math.z.Z;
+
 /**
  * Definition of an immutable set.
- *
  * @author Sean A. Irvine
  * @param <E> element type
  */

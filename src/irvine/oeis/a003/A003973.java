@@ -12,6 +12,39 @@ import irvine.oeis.Sequence1;
  */
 public class A003973 extends Sequence1 {
 
+  /**
+   * Direct access with int parameter.
+   * @param n index
+   * @return function value
+   */
+  public static Z a(final int n) {
+    return getProduct(Jaguar.factor(n));
+  }
+
+  /**
+   * Direct access with Z parameter.
+   * @param n index
+   * @return function value
+   */
+  public static Z a(final Z nz) {
+    return getProduct(Jaguar.factor(nz));
+  }
+
+  /**
+   * Compute the new term.
+   * @param fs FactorSequence
+   * @return product with modified primes
+   */
+  private static Z getProduct(final FactorSequence fs) {
+    final Fast mPrime = new Fast();
+    Z prod = Z.ONE;
+    for (final Z p : fs.toZArray()) {
+      final Z q = mPrime.nextPrime(p);
+      prod = prod.multiply(q.pow(fs.getExponent(p) + 1).subtract(1).divide(q.subtract(1)));
+    }
+    return prod;
+  }
+
   private long mN = 0;
   private final Fast mPrime = new Fast();
 

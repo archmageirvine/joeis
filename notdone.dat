@@ -2278,3 +2278,8 @@ A066035 First term in the continued fraction expansion of StieltjesGamma[n]
 A066036 Continued fraction expansion of StieltjesGamma[1]
 A066040 Triangle of covering numbers T(n,k) = C(n,k,k-3), n >= 4, 4 <= k <= n
 A066041 Triangle of covering numbers T(n,k) = C(n,k,k-4), n >= 5, 5 <= k <= n
+A066051 Maximal degree of an irreducible representation of the group of n X n signed permutation matrices.
+A066083 Number of supersolvable groups of order n.
+A066085 Orders of non-supersolvable groups
+A066113 a(n) is the number of conjugacy classes of maximal subgroups of the alternating group A_n
+A066115 Number of conjugacy classes of maximal subgroups of the symmetric group S_n.

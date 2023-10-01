@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002844.
+ * A002844 Number of non-isentropic binary rooted trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A002844 extends Sequence1 {

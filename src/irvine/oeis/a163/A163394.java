@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A163394 The odd part of Minkowski(n)/n!
+ * A163394 The odd part of Minkowski(n)/n!.
  * @author Georg Fischer
  */
 public class A163394 extends SimpleTransformSequence {

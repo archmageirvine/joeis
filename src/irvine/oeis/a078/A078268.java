@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A078268 Smallest integer which is an integer multiple of the number N obtained by placing the string &quot;n&quot; after a decimal point.
+ * A078268 Smallest integer which is an integer multiple of the number N obtained by placing the string "n" after a decimal point.
  * @author Georg Fischer
  */
 public class A078268 extends LambdaSequence {

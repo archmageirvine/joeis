@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A068822 a(n) = gcd(n,c(n)), where c(n) is the 10&apos;s complement of n.
+ * A068822 a(n) = gcd(n,c(n)), where c(n) is the 10's complement of n.
  * @author Georg Fischer
  */
 public class A068822 extends LambdaSequence {

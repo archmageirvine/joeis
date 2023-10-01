@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A178914 10&apos;s complement of nonnegative numbers.
+ * A178914 10's complement of nonnegative numbers.
  * @author Georg Fischer
  */
 public class A178914 extends LambdaSequence {

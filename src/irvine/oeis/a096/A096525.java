@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A096525 Primes of form n.0.n+1, where &apos;.&apos; represents concatenation. Or, primes of form 10^(k+1)*n + n + 1, where k is the number of digits in n.
+ * A096525 Primes of form n.0.n+1, where '.' represents concatenation. Or, primes of form 10^(k+1)*n + n + 1, where k is the number of digits in n.
  * @author Georg Fischer
  */
 public class A096525 extends FilterSequence {

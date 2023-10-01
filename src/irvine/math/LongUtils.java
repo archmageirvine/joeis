@@ -831,4 +831,25 @@ public final class LongUtils {
   public static long sortDigitsAscending(final long n) {
     return sortDigitsAscending(n, 10);
   }
+
+  /**
+   * Test if the given number if repdigit in the specified base.
+   * @param n number
+   * @param base base to test
+   * @return true if the number is a repdigit
+   */
+  public static boolean isRepDigit(final long n, final long base) {
+    if (n <= base) {
+      return true; // single digit in base b
+    }
+    final long r = n % base;
+    long m = n / base;
+    while (m != 0) {
+      if (m % base != r) {
+        return false;
+      }
+      m /= base;
+    }
+    return true;
+  }
 }

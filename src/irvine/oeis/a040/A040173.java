@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002844.
+ * A040173 Numerator of probability that 2 elements of S_n chosen at random (with replacement) generate S_n.
  * @author Sean A. Irvine
  */
 public class A040173 extends Sequence1 {

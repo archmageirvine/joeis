@@ -5,7 +5,7 @@ import irvine.oeis.a003.A003602;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A351565 Odd part of Kimberling&apos;s paraphrases: a(n) = A000265(A003602(n)).
+ * A351565 Odd part of Kimberling's paraphrases: a(n) = A000265(A003602(n)).
  * @author Georg Fischer
  */
 public class A351565 extends SimpleTransformSequence {

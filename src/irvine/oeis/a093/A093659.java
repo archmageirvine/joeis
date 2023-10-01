@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A093659 First column of lower triangular matrix A093658; factorial of the number of 1&apos;s in binary expansion of n.
+ * A093659 First column of lower triangular matrix A093658; factorial of the number of 1's in binary expansion of n.
  * @author Georg Fischer
  */
 public class A093659 extends LambdaSequence {

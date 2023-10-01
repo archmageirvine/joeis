@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A366042 Expansion of (1/x) * Series_Reversion( x*(1-x)*(1-x^5) ).
+ * A366042 allocated for Seiichi Manyama.
  * @author Georg Fischer
  */
 public class A366042 extends LambdaSequence {

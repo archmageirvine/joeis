@@ -5,7 +5,6 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicArray;
 import irvine.util.array.LongDynamicIntArray;
-import irvine.util.string.StringUtils;
 
 /**
  * A023109 a(0) = 0. For n &gt; 0, smallest non-palindromic number k such that the smallest palindrome in the Reverse and Add! trajectory of k is reached after exactly n iterations.
@@ -15,7 +14,17 @@ public class A023109 extends Sequence0 {
 
   private final LongDynamicIntArray mIterations = new LongDynamicIntArray();
   private final LongDynamicArray<Z> mValue = new LongDynamicArray<>();
+  private final int mBase;
   private int mN = -1;
+
+  protected A023109(final int base) {
+    mBase= base;
+  }
+
+  /** Construct the sequence. */
+  public A023109() {
+    this(10);
+  }
 
   @Override
   public Z next() {
@@ -30,7 +39,7 @@ public class A023109 extends Sequence0 {
       if (it == 0) {
         // Just starting with this number
         final Z v = Z.valueOf(k);
-        if (StringUtils.isPalindrome(v.toString())) {
+        if (ZUtils.isPalindrome(v, mBase)) {
           // Handle case where number is already a palindrome, mark as -1 so we don't ever consider it again
           mIterations.set(k, -1);
         } else {
@@ -40,9 +49,9 @@ public class A023109 extends Sequence0 {
       Z v = mValue.get(k);
       if (v != null) {
         while (it < mN) {
-          v = v.add(ZUtils.reverse(v));
+          v = v.add(ZUtils.reverse(v, mBase));
           ++it;
-          if (StringUtils.isPalindrome(v.toString())) {
+          if (ZUtils.isPalindrome(v, mBase)) {
             // Finish this number, save space by storing null (also indicates it is complete)
             v = null;
             break;

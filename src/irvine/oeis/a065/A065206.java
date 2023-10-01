@@ -10,11 +10,17 @@ import irvine.oeis.Sequence1;
  */
 public class A065206 extends Sequence1 {
 
-  private Z mN = Z.NINE;
+  private Z mN = Z.ZERO;
+  private final int mBase;
   private final long mSteps;
 
-  protected A065206(final int steps) {
+  protected A065206(final int base, final int steps) {
+    mBase = base;
     mSteps = steps;
+  }
+
+  protected A065206(final int steps) {
+    this(10, steps);
   }
 
   /** Construct the sequence. */
@@ -24,12 +30,12 @@ public class A065206 extends Sequence1 {
 
   private boolean is(Z n) {
     for (int k = 0; k < mSteps; ++k) {
-      if (ZUtils.isPalindrome(n, 10)) {
+      if (ZUtils.isPalindrome(n, mBase)) {
         return false;
       }
-      n = n.add(ZUtils.reverse(n));
+      n = n.add(ZUtils.reverse(n, mBase));
     }
-    return ZUtils.isPalindrome(n, 10);
+    return ZUtils.isPalindrome(n, mBase);
   }
 
   @Override

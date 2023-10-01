@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A002844.
+ * A040175 a(n) = n! times probability that an ordered pair of elements of S_n chosen at random (with replacement) generate S_n.
  * @author Sean A. Irvine
  */
 public class A040175 extends A040173 {

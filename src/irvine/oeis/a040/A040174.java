@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A002844.
+ * A040174 Denominator of probability that 2 elements of S_n chosen at random (with replacement) generate S_n.
  * @author Sean A. Irvine
  */
 public class A040174 extends A040173 {

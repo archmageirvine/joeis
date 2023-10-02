@@ -20,6 +20,7 @@ public class A040173 extends Sequence1 {
   }
 
   @Override
+  @SuppressWarnings("unchecked")
   public Z next() {
     final SymmetricGroup<Integer> g = SymmetricGroup.create(++mN);
     final Z size = g.size();

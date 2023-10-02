@@ -18,7 +18,7 @@ public class A023109 extends Sequence0 {
   private int mN = -1;
 
   protected A023109(final int base) {
-    mBase= base;
+    mBase = base;
   }
 
   /** Construct the sequence. */

@@ -14,13 +14,12 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class A301315 extends Sequence1 {
 
-  private final BiFunction<Z, Integer, Z> mB = new BiFunction<>() {
+  private final MemorySequence mSeq = MemorySequence.cachedSequence(new MultiplicativeSequence(1, new BiFunction<>() {
     @Override
     public Z apply(final Z p, final Integer e) {
       return Puma.primeZ(p).pow(mSeq.a(e));
     }
-  };
-  private final MemorySequence mSeq = MemorySequence.cachedSequence(new MultiplicativeSequence(1, mB));
+  }));
   {
     mSeq.add(null); // 0 unused
   }

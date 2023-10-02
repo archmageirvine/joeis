@@ -13,6 +13,7 @@ import irvine.math.z.Z;
 public class MultiplicativeSequence extends AbstractSequence {
 
   private final BiFunction<Z, Integer, Z> mF;
+  private FactorSequence mFS;
   private final long mStep;
   protected long mN;
 
@@ -41,16 +42,42 @@ public class MultiplicativeSequence extends AbstractSequence {
   @Override
   public Z next() {
     mN += mStep;
-    final FactorSequence fs = Jaguar.factor(mN);
+    mFS = Jaguar.factor(mN);
     Z prod = Z.ONE;
-    for (final Z p : fs.toZArray()) {
-      prod = prod.multiply(mF.apply(p, fs.getExponent(p)));
+    for (final Z p : mFS.toZArray()) {
+      prod = prod.multiply(mF.apply(p, mFS.getExponent(p)));
     }
     return prod;
   }
 
   /**
-   * Test whether the parameter is 2.
+   * Get the underlying factor sequence.
+   * @return FactorSequence of p^e
+   */
+  protected FactorSequence getFactors() {
+    return mFS;
+  }
+
+  /**
+   * Get a FactorSequence.
+   * @param n integer to be factored
+   * @return FactorSequence for n
+   */
+  protected FactorSequence getFactors(final int n) {
+    return Jaguar.factor(n);
+  }
+
+  /**
+   * Get a FactorSequence.
+   * @param n Z integer to be factored
+   * @return FactorSequence for n
+   */
+  protected FactorSequence getFactors(final Z n) {
+    return Jaguar.factor(n);
+  }
+
+  /**
+   * Test whether the parameter equals 2.
    * @param p the prime to be tested
    * @return true if <code>p == 2</code>, false otherwise
    */
@@ -59,7 +86,7 @@ public class MultiplicativeSequence extends AbstractSequence {
   }
 
   /**
-   * Test whether the parameter is 3.
+   * Test whether the parameter equals 3.
    * @param p the prime to be tested
    * @return true if <code>p == 3</code>, false otherwise
    */
@@ -68,7 +95,7 @@ public class MultiplicativeSequence extends AbstractSequence {
   }
 
   /**
-   * Test whether the parameter is 5.
+   * Test whether the parameter equals 5.
    * @param p the prime to be tested
    * @return true if <code>p == 5</code>, false otherwise
    */
@@ -77,7 +104,7 @@ public class MultiplicativeSequence extends AbstractSequence {
   }
 
   /**
-   * Test whether the parameter is 7.
+   * Test whether the parameter equals 7.
    * @param p the prime to be tested
    * @return true if <code>p == 7</code>, false otherwise
    */
@@ -166,5 +193,15 @@ public class MultiplicativeSequence extends AbstractSequence {
    */
   protected static Z sigmaP(final Z p, final int e) {
     return p.pow(e + 1).subtract(1).divide(p.subtract(1));
+  }
+
+  /**
+   * Return the sum of the square of divisors.
+   * @param p prime
+   * @param e exponent
+   * @return <code>(p^(e + 1) - 1) / (p^2 - 1)</code>.
+   */
+  protected static Z sigmaP2(final Z p, final int e) {
+    return p.pow(e + 1).subtract(1).divide(p.square().subtract(1));
   }
 }

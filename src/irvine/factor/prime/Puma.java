@@ -107,4 +107,68 @@ public final class Puma {
   public static Z primePiZ(final Z n) {
     return Z.valueOf(primePi(n));
   }
+
+  /**
+   * Return the least prime behind p.
+   * @param p source prime
+   * @return prime behind p
+   */
+  public static long nextPrime(final long p) {
+    return prime(primePi(p) + 1);
+  }
+
+  /**
+   * Return the least prime behind p.
+   * @param p source prime
+   * @return prime behind p
+   */
+  public static long nextPrime(final Z p) {
+    return prime(primePi(p) + 1);
+  }
+
+  /**
+   * Return the least prime behind p.
+   * @param p source prime
+   * @return prime behind p
+   */
+  public static Z nextPrimeZ(final Z p) {
+    return primeZ(primePi(p) + 1);
+  }
+
+  /**
+   * Return the greatest prime before p.
+   * @param p source prime
+   * @return prime before p, or 1 if n = 2.
+   */
+  public static long prevPrime(final long p) {
+    return (p != 2) ? prime(primePi(p) - 1) : 1L;
+  }
+
+  /**
+   * Return the greatest prime before p.
+   * @param p source prime
+   * @return prime before p, or 1 if p = 2.
+   */
+  public static long prevPrime(final Z p) {
+    return !p.equals(Z.TWO) ? prime(primePi(p) - 1) : 1L;
+  }
+
+  /**
+   * Return the greatest prime before p.
+   * @param p source prime
+   * @return prime before p, or 1 if p = 2.
+   */
+  public static Z prevPrimeZ(final Z p) {
+    return !p.equals(Z.TWO) ? primeZ(primePi(p) - 1) : Z.ONE;
+  }
+
+  /**
+   * Tells whether the parameter is a prime-indexed prime (A006450).
+   * @param p source prime
+   * @return true iff p is in A006450.
+   */
+  public static boolean isPrimeIndexed(final Z p) {
+    return Puma.primePiZ(p).isProbablePrime();
+  }
+
 }

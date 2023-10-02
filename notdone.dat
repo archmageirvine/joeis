@@ -2283,3 +2283,5 @@ A066083 Number of supersolvable groups of order n.
 A066085 Orders of non-supersolvable groups
 A066113 a(n) is the number of conjugacy classes of maximal subgroups of the alternating group A_n
 A066115 Number of conjugacy classes of maximal subgroups of the symmetric group S_n.
+A066137 Covering numbers C(n,9,8).
+A066140 Covering numbers C(n,n-3,n-4)

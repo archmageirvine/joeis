@@ -13,10 +13,20 @@ public class A065198 extends Sequence1 {
   private static final int HEURISTIC_LIMIT = 1000;
   private long mN = -1;
   protected long mBest = -1;
+  private final int mBase;
+
+  protected A065198(final int base) {
+    mBase = base;
+  }
+
+  /** Construct the sequence. */
+  public A065198() {
+    this(10);
+  }
 
   private int t(Z n) {
     for (int i = 0; i < HEURISTIC_LIMIT; ++i) {
-      final Z r = ZUtils.reverse(n);
+      final Z r = ZUtils.reverse(n, mBase);
       if (r.equals(n)) {
         return i;
       }

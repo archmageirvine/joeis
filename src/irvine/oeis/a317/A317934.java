@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A317934 Multiplicative with a(p^n) = 2^A011371(n); denominators for certain &quot;Dirichlet Square Roots&quot; sequences.
+ * A317934 Multiplicative with a(p^n) = 2^A011371(n); denominators for certain "Dirichlet Square Roots" sequences.
  * Multiplicative with: a(p^n) = 2^A011371(n).
  * @author Georg Fischer
  */

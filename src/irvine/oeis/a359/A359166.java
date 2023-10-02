@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A359166 a(n) = lambda(n) * lambda(sigma(n)), where lambda is Liouville&apos;s lambda, and sigma is the sum of divisors function.
+ * A359166 a(n) = lambda(n) * lambda(sigma(n)), where lambda is Liouville's lambda, and sigma is the sum of divisors function.
  * @author Georg Fischer
  */
 public class A359166 extends LambdaSequence {

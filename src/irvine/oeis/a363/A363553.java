@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A363553 M√∂bius function of rank 5: a(n) = lambda(n) = A008836(n) if n is 5-free and 0 otherwise.
+ * A363553 M\u00f6bius function of rank 5: a(n) = lambda(n) = A008836(n) if n is 5-free and 0 otherwise.
  * Multiplicative with: a(p^e) = (-1)^e if e <= 4, and 0 otherwise.
  * @author Georg Fischer
  */

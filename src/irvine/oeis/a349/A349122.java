@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A349122 Inverse M√∂bius transform of A349128, where A349128(n) = phi(A064989(n)), A064989 is multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p, and phi is Euler totient function.
+ * A349122 Inverse M\u00f6bius transform of A349128, where A349128(n) = phi(A064989(n)), A064989 is multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p, and phi is Euler totient function.
  * Multiplicative with: a(2^e) = e + 1 and a(p^e) = prevprime(p)^e for odd primes p. (End)
  * @author Georg Fischer
  */

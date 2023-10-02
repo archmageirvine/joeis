@@ -2285,3 +2285,4 @@ A066113 a(n) is the number of conjugacy classes of maximal subgroups of the alte
 A066115 Number of conjugacy classes of maximal subgroups of the symmetric group S_n.
 A066137 Covering numbers C(n,9,8).
 A066140 Covering numbers C(n,n-3,n-4)
+A066158 Number of fixed polyominoes with n cells and tree-like structure

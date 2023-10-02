@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A358216 Inverse M√∂bius transform of A327936, where A327936 is multiplicative with a(p^e) = p if e &gt;= p, otherwise 1.
+ * A358216 Inverse M\u00f6bius transform of A327936, where A327936 is multiplicative with a(p^e) = p if e &gt;= p, otherwise 1.
  * Multiplicative with: a(p^e) = e + 1 if e < p, and p*(e - p + 2) otherwise.
  * @author Georg Fischer
  */

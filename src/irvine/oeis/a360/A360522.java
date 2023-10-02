@@ -4,7 +4,7 @@ package irvine.oeis.a360;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A360522 a(n) = Sum_{d|n} Max({d&apos;; d&apos;|n, gcd(d, d&apos;) = 1}).
+ * A360522 a(n) = Sum_{d|n} Max({d'; d'|n, gcd(d, d') = 1}).
  * Multiplicative with: a(p^e) = p^e + e.
  * @author Georg Fischer
  */

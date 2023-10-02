@@ -6,7 +6,7 @@ import irvine.oeis.MultiplicativeSequence;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A301315.
+ * A301315 Multiplicative with a(p^e) = prime(p) ^ a(e) (where prime(k) denotes the k-th prime number).
  * @author Sean A. Irvine
  */
 public class A301315 extends MemorySequence {

@@ -1,21 +1,26 @@
 package irvine.oeis.a066;
-// manually tricut2
 
-import irvine.oeis.a000.A000217;
-import irvine.oeis.a014.A014132;
-import irvine.oeis.triangle.PrependColumn;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 
 /**
  * A066182 Permutation of the integers with cycle form {1}, {3, 2}, {6, 5, 4}, {10, 9, 8, 7}, ...
- * @author Georg Fischer
+ * @author Sean A. Irvine
  */
-public class A066182 extends PrependColumn {
+public class A066182 extends Sequence1 {
 
-  /** Construct the sequence. */
-  public A066182() {
-    super(1, new A014132(), new A000217() {{
-      skip();
-    }});
+  private long mN = 0;
+  private long mM = 0;
+  private long mU = -1;
+
+  @Override
+  public Z next() {
+    if (++mM > mN) {
+      ++mN;
+      mM = 1;
+      ++mU;
+      return Z.valueOf(mU + mN);
+    }
+    return Z.valueOf(++mU);
   }
 }
-

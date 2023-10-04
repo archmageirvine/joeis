@@ -236,7 +236,7 @@ public final class LongUtils {
    * @return base 2 logarithm of <code>|n|</code>
    */
   public static long lg(final long n) {
-    return Long.SIZE - 1 - Long.numberOfLeadingZeros(Math.abs(n));
+    return n == 0 ? 0 : Long.SIZE - 1 - Long.numberOfLeadingZeros(Math.abs(n));
   }
 
   /**

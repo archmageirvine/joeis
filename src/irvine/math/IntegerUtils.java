@@ -13,7 +13,6 @@ import irvine.util.string.StringUtils;
 
 /**
  * Utility functions for integers.
- *
  * @author Sean A. Irvine
  */
 public final class IntegerUtils {
@@ -24,31 +23,29 @@ public final class IntegerUtils {
    * Approximate binary logarithm of an integer. If the given integer is 0 then
    * 0 is the result, otherwise the result is the binary logarithm of the
    * absolute value of the given number.
-   *
    * @param n integer to get logarithm of
    * @return binary logarithm
    */
   public static int lg(final int n) {
-    int a = n < 0 ? -n : n;
-    int i = 0;
-    while (a >= 256) {
-      i += 8;
-      a >>= 8;
-    }
-    if (a >= 16) {
-      i += 4;
-      a >>= 4;
-    }
-    if (a >= 4) {
-      i += 2;
-      a >>= 2;
-    }
-    if (a >= 2) {
-      i += 2;
-    } else if (a >= 1) {
-      ++i;
-    }
-    return i;
+    return Integer.SIZE - Integer.numberOfLeadingZeros(Math.abs(n));
+  }
+
+  /**
+   * Binary logarithm of a positive integer rounded down.
+   * @param n integer to get logarithm of, must be &gt;= 1
+   * @return integer part of binary logarithm
+   */
+  public static int floorLog2(final int n) {
+    return 31 - Integer.numberOfLeadingZeros(n);
+  }
+
+  /**
+   * Binary logarithm of a positive integer rounded up.
+   * @param n integer to get logarithm of, must be &gt;= 1
+   * @return binary logarithm for powers of 2, and integer part of binary logarithm + 1 otherwise
+   */
+  public static int ceilingLog2(final int n) {
+    return (Integer.bitCount(n) == 1 ? 31 : 32) - Integer.numberOfLeadingZeros(n);
   }
 
   /**

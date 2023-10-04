@@ -6,13 +6,13 @@ import irvine.math.q.Q;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A075106 Denominator of n/floor(log_2(n)); numerator is A075105(n).
+ * A075105 Numerator of n/floor(log_2(n)); denominator is A075106(n).
  * @author Georg Fischer
  */
-public class A075106 extends LambdaSequence {
+public class A075105 extends LambdaSequence {
 
   /** Construct the sequence. */
-  public A075106() {
-    super(2, n -> new Q(n, IntegerUtils.floorLog2(n)).den());
+  public A075105() {
+    super(2, n -> new Q(n, IntegerUtils.floorLog2(n)).num());
   }
 }

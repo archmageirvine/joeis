@@ -231,19 +231,12 @@ public final class LongUtils {
   }
 
   /**
-   * Compute the number of bits in <code>a</code>. The
-   * absolute value of <code>a</code> is considered.
-   * @param a number to take logarithm of.
-   * @return base 2 logarithm of <code>a</code>
+   * Compute the number of bits in <code>|n|</code>.
+   * @param n number to take logarithm of.
+   * @return base 2 logarithm of <code>|n|</code>
    */
-  public static long lg(final long a) {
-    if (a > 0) {
-      return (Double.doubleToLongBits((double) a) >>> 52) - 1023;
-    } else if (a == 0) {
-      return 0;
-    } else {
-      return (Double.doubleToLongBits((double) -a) >>> 52) - 1023;
-    }
+  public static long lg(final long n) {
+    return Long.SIZE - 1 - Long.numberOfLeadingZeros(Math.abs(n));
   }
 
   /**

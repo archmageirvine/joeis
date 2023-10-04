@@ -12,7 +12,7 @@ public class A066187 extends Sequence0 {
 
   // After Alois P. Heinz
 
-  private static final Z[] ZERO = new Z[] {Z.ZERO, Z.ZERO};
+  private static final Z[] ZERO = {Z.ZERO, Z.ZERO};
   private int mN = -1;
   protected final MemoryFunctionInt3<Z[]> mB = new MemoryFunctionInt3<>() {
     @Override

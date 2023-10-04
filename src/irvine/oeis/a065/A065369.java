@@ -1,15 +1,32 @@
 package irvine.oeis.a065;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A065369 Replace 3^k with (-3)^k in ternary expansion of n.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A065369 extends Sequence0 {
+public class A065369 extends AbstractSequence {
 
-  private long mN = -1;
+  private int mN;
+  private int mDigit;
+
+  /** Construct the sequence. */
+  public A065369() {
+    this(0, 3);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param offset
+   * @param digit
+   */
+  public A065369(final int offset, final int digit) {
+    super(offset);
+    mN = offset - 1;
+    mDigit = digit;
+  }
 
   @Override
   public Z next() {
@@ -17,9 +34,9 @@ public class A065369 extends Sequence0 {
     long s = 0;
     long m = 1;
     while (n > 0) {
-      s += m * (n % 3);
-      n /= 3;
-      m *= -3;
+      s += m * (n % mDigit);
+      n /= mDigit;
+      m *= -mDigit;
     }
     return Z.valueOf(s);
   }

@@ -20,8 +20,14 @@ public class FilterSequence extends AbstractSequence {
   public static final Predicate<Z> NONPRIME = k -> !k.isProbablePrime();
   /** Zero terms. */
   public static final Predicate<Z> ZERO = Z::isZero;
+  /** One terms. */
+  public static final Predicate<Z> ONE = k -> k.equals(Z.ONE);
   /** Nonzero terms. */
   public static final Predicate<Z> NONZERO = k -> !k.isZero();
+  /** Positive terms. */
+  public static final Predicate<Z> POSITIVE = k -> k.compareTo(Z.ZERO) > 0;
+  /** Negative terms. */
+  public static final Predicate<Z> NEGATIVE = k -> k.compareTo(Z.ZERO) < 0;
   /** Palindromic terms. */
   public static final Predicate<Z> PALINDROME = k -> ZUtils.isPalindrome(k, 10);
   /** Odd terms. */

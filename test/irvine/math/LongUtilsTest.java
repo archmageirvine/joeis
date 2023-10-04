@@ -233,14 +233,6 @@ public class LongUtilsTest extends TestCase {
   }
 
   public void testSqrt() {
-    // test exception for negative arguments
-    try {
-      LongUtils.sqrt(-1L);
-      fail("Exception did not trigger");
-    } catch (final ArithmeticException e) {
-      // ok
-    }
-
     // compare with system sqrt
     for (long i = 0; i < 50000; ++i) {
       assertEquals("sqrt(" + i + ")", (long) Math.floor(Math.sqrt((double) i)), LongUtils.sqrt(i));

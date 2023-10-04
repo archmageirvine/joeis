@@ -78,27 +78,12 @@ public final class IntegerUtils {
   }
 
   /**
-   * Compute the integer square root of the given integer.  This is
-   * faster than <code>(int) Math.sqrt(n)</code>.
-   *
+   * Compute the floor of the square root of the given integer.
    * @param n integer to take the square root of
    * @return an <code>int</code> value
-   * @exception IllegalArgumentException if <code>r</code> is negative.
    */
   public static int sqrt(final int n) {
-    if (n < 0) {
-      throw new IllegalArgumentException();
-    }
-    // Depends on the specifics of IEEE arithmetic
-    final float rr = n;
-    final float y = rr * 0.5F;
-    float x = Float.intBitsToFloat((0xBE6F0000 - Float.floatToIntBits(rr)) >> 1);
-    x = 1.5F * x - (x * x) * (x * y);
-    if (n > 101123) {
-      x = 1.5F * x - (x * x) * (x * y);
-    }
-    final int is = (int) (x * rr + 0.5F);
-    return is + ((n - is * is) >> 31);
+    return (int) Math.sqrt(n);
   }
 
   private static final int N_LIMIT = sqrt(Integer.MAX_VALUE);
@@ -150,7 +135,6 @@ public final class IntegerUtils {
 
   /**
    * Compute the greatest common denominator of two integers.
-   *
    * @param a first integer
    * @param b second integer
    * @return <code>gcd(a,b)</code>
@@ -160,8 +144,20 @@ public final class IntegerUtils {
   }
 
   /**
+   * Compute the greatest common divisor of an array of values.
+   * @param a list of values
+   * @return greatest common divisor
+   */
+  public static int gcd(final int... a) {
+    int g = a[0];
+    for (int k = 1; k < a.length; ++k) {
+      g = gcd(g, a[k]);
+    }
+    return g;
+  }
+
+  /**
    * Compute the least common multiple of two integers.
-   *
    * @param a first integer
    * @param b second integer
    * @return <code>lcm(a,b)</code>
@@ -482,19 +478,6 @@ public final class IntegerUtils {
       a[k] = min;
     }
     return false;
-  }
-
-  /**
-   * Compute the greatest common divisor of an array of values.
-   * @param a list of values
-   * @return greatest common divisor
-   */
-  public static int gcd(final int... a) {
-    int g = a[0];
-    for (int k = 1; k < a.length; ++k) {
-      g = gcd(g, a[k]);
-    }
-    return g;
   }
 
   /**

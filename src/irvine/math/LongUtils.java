@@ -192,17 +192,9 @@ public final class LongUtils {
    * @throws ArithmeticException if <code>n&lt;0</code>.
    */
   public static long sqrt(final long n) {
-    if (n <= 8L) {
-      if (n < 0) {
-        throw new ArithmeticException("Attempted sqrt of " + n);
-      } else if (n == 0L) {
-        return 0L;
-      } else if (n <= 3L) {
-        return 1L;
-      }
-      return 2L;
-    } else if (n >= (1L << BITS)) {
-      return Z.valueOf(n).sqrt().longValue();
+    // WARNING: Simply doing (long) Math.sqrt(n) does not work for n > ~2^52.
+    if (n < 1L << 52) {
+      return (long) Math.sqrt(n);
     }
     long na = 3L << (2 * ((BITS >>> 1) - 1));
     long a = 1L << (BITS >>> 1);

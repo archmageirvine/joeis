@@ -52,18 +52,6 @@ public class IntegerUtilsTest extends TestCase {
   }
 
   public void testSqrtCorrectness() {
-    try {
-      IntegerUtils.sqrt(-1);
-      fail();
-    } catch (final IllegalArgumentException e) {
-      // ok
-    }
-    try {
-      IntegerUtils.sqrt(Integer.MIN_VALUE);
-      fail();
-    } catch (final IllegalArgumentException e) {
-      // ok
-    }
     final Random r = new Random();
     for (int k = 0; k < 10000; ++k) {
       final int n = r.nextInt(Integer.MAX_VALUE);
@@ -72,29 +60,6 @@ public class IntegerUtilsTest extends TestCase {
     assertEquals(317, IntegerUtils.sqrt(101123));
     assertEquals(318, IntegerUtils.sqrt(101124));
   }
-
-  /*
-  public void testSqrtCorrectnessFullRange() {
-    for (int k = 0; k >= 0; ++k) {
-      assertEquals((int) Math.sqrt(k), IntegerUtils.sqrt(k));
-    }
-  }
-
-  public void testSqrtSpeed() {
-    final long start = System.currentTimeMillis();
-    long s = 0;
-    for (int k = 0; k >= 0; ++k) {
-      s += IntegerUtils.sqrt(k);
-    }
-    System.err.println(s + " " + (System.currentTimeMillis() - start));
-    final long s2 = System.currentTimeMillis();
-    s = 0;
-    for (int k = 0; k >= 0; ++k) {
-      s += (int) Math.sqrt(k);
-    }
-    System.err.println(s + " " + (System.currentTimeMillis() - s2));
-  }
-  */
 
   public void testModPow() {
     try {

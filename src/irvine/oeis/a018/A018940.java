@@ -70,7 +70,7 @@ public class A018940 extends AbstractSequence {
   private void init() {
     if (mQuotientDelta == null) {
       final int[][][] graph = topolanNeighbourhoodToQuotientGraph(getNeighbourhoodDescription());
-      mBitsPerNode = IntegerUtils.lg(graph.length - 1);
+      mBitsPerNode = IntegerUtils.log2(graph.length - 1);
       final int b = mBitsPerNode + 3 * BITS_PER_COORD;
       mC = mBitsPerNode + 2 * BITS_PER_COORD;
       mD = mBitsPerNode + BITS_PER_COORD;

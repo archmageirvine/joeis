@@ -17,7 +17,7 @@ public class A029827 extends Sequence1 {
   private long mN = 13;
 
   private long g(final long n) {
-    return 1 + LongUtils.lg(n);
+    return 1 + LongUtils.log2(n);
   }
 
   private boolean isOk(final long n) {

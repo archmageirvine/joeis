@@ -17,7 +17,7 @@ public class A055661 extends Sequence0 {
     ++mN;
     Z sum = Z.ZERO;
     Z t = Z.ONE;
-    for (int k = 0, j = 1; k <= LongUtils.lg(mN); ++k, t = t.multiply(3), j = 3 - j) {
+    for (int k = 0, j = 1; k <= LongUtils.log2(mN); ++k, t = t.multiply(3), j = 3 - j) {
       sum = sum.add(t.multiply(j * ((mN / (1L << k) + 1) / 2) % 3));
     }
     return sum;

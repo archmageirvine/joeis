@@ -17,7 +17,7 @@ public class A010078 extends Sequence1 {
     if (++mN == 1) {
       return Z.ONE;
     }
-    return Z.valueOf((1L << (LongUtils.lg(mN - 1) + 2)) - mN);
+    return Z.valueOf((1L << (LongUtils.log2(mN - 1) + 2)) - mN);
   }
 }
 

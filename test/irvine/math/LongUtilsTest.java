@@ -386,8 +386,8 @@ public class LongUtilsTest extends TestCase {
 
   public void testLg() {
     for (int k = 0; k < 63; ++k) {
-      assertEquals(k, LongUtils.lg(1L << k));
-      assertEquals(k, LongUtils.lg(-(1L << k)));
+      assertEquals(k, LongUtils.log2(1L << k));
+      assertEquals(k, LongUtils.log2(-(1L << k)));
     }
   }
 

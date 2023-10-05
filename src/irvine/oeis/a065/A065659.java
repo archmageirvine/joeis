@@ -13,7 +13,7 @@ public class A065659 extends A065658 {
   // Left rotation
   @Override
   protected Q rotateBinFracNodeX(final long t, final Q x) {
-    final Z den = Z.ONE.shiftLeft(LongUtils.lg(t) + 1);
+    final Z den = Z.ONE.shiftLeft(LongUtils.log2(t) + 1);
     final Q num = new Q(Z.valueOf(2 * t).subtract(den).add(1));
     if (x.compareTo(num.subtract(1).divide(den)) <= 0 || x.compareTo(num.add(1).divide(den)) >= 0) {
       return x;

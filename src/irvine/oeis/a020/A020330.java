@@ -14,6 +14,6 @@ public class A020330 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Z.valueOf(2 * ++mN).shiftLeft(LongUtils.lg(mN)).add(mN);
+    return Z.valueOf(2 * ++mN).shiftLeft(LongUtils.log2(mN)).add(mN);
   }
 }

@@ -22,7 +22,7 @@ public class A038810 extends Sequence0 {
       if (t > n) {
         break;
       }
-      if (k <= LongUtils.lg(n)) {
+      if (k <= LongUtils.log2(n)) {
         c += search(n - t, k + 1);
       }
     }

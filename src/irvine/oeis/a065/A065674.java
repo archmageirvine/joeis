@@ -17,7 +17,7 @@ public class A065674 extends A065658 {
   }
 
   private Z quasiCyclics2PosIn01SternBrocotTree(final long t) {
-    final Z den = Z.ONE.shiftLeft(LongUtils.lg(t) + 1);
+    final Z den = Z.ONE.shiftLeft(LongUtils.log2(t) + 1);
     final Q num = new Q(Z.valueOf(2 * t).subtract(den).add(1));
     return frac2PositionIn01SBTree(num.divide(den));
   }

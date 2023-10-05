@@ -33,6 +33,6 @@ public class A007728 extends MemoryFunction2Sequence<Long, Z> {
   }
   @Override
   public Z next() {
-    return get(++mN, LongUtils.lg(mN));
+    return get(++mN, LongUtils.log2(mN));
   }
 }

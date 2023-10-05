@@ -14,6 +14,6 @@ public class A056791 extends Sequence0 {
   
   @Override
   public Z next() {
-    return Z.valueOf(Long.bitCount(++mN) + LongUtils.lg(mN) + 1);
+    return Z.valueOf(Long.bitCount(++mN) + LongUtils.log2(mN) + 1);
   }
 }

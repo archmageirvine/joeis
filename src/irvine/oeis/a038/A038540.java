@@ -37,7 +37,7 @@ public class A038540 extends Sequence1 {
     }
     DirichletSeries v = ds1.multiply(ds2, mN);
     final DirichletSeries bigZ = v;
-    for (int j = 2; j <= LongUtils.lg(mN); ++j) {
+    for (int j = 2; j <= LongUtils.log2(mN); ++j) {
       final DirichletSeries u = new DirichletSeries();
       for (Z k = Z.ONE; k.compareTo(Z.valueOf(mN).root(j)) <= 0; k = k.add(1)) {
         u.put(k.pow(j), bigZ.get(k));

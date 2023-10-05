@@ -14,6 +14,6 @@ public class A038554 extends Sequence0 {
 
   @Override
   public Z next() {
-    return ++mN < 2 ? Z.ZERO : Z.valueOf((mN ^ (mN >>> 1)) - (1L << LongUtils.lg(mN)));
+    return ++mN < 2 ? Z.ZERO : Z.valueOf((mN ^ (mN >>> 1)) - (1L << LongUtils.log2(mN)));
   }
 }

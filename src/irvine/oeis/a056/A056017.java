@@ -31,6 +31,6 @@ public class A056017 extends A003714 {
     if (n == 0) {
       return Z.ZERO;
     }
-    return Fibonacci.fibonacci(IntegerUtils.lg(n) + ((n & 1) == 0 ? -1 : 1)).add(zeckendorf(n / ((n & 1) == 0 ? 2 : 4)));
+    return Fibonacci.fibonacci(IntegerUtils.log2(n) + ((n & 1) == 0 ? -1 : 1)).add(zeckendorf(n / ((n & 1) == 0 ? 2 : 4)));
   }
 }

@@ -14,6 +14,6 @@ public class A050487 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Z.valueOf(3 * ++mN - 2 * (1 + LongUtils.lg(mN)));
+    return Z.valueOf(3 * ++mN - 2 * (1 + LongUtils.log2(mN)));
   }
 }

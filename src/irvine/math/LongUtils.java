@@ -227,7 +227,7 @@ public final class LongUtils {
    * @param n number to take logarithm of.
    * @return base 2 logarithm of <code>|n|</code>
    */
-  public static long lg(final long n) {
+  public static long log2(final long n) {
     return n == 0 ? 0 : Long.SIZE - 1 - Long.numberOfLeadingZeros(Math.abs(n));
   }
 
@@ -651,7 +651,7 @@ public final class LongUtils {
    * @return rotated value
    */
   public static long rotateRight(final long n) {
-    return (n >>> 1) | ((n & 1) << LongUtils.lg(n));
+    return (n >>> 1) | ((n & 1) << LongUtils.log2(n));
   }
 
   /**

@@ -18,6 +18,6 @@ public class A055562 extends Sequence0 {
       return Z.TWO;
     }
     final long m = mN / 2;
-    return Z.valueOf((mN & 1) == 0 ? 3 * m + 1 + (LongUtils.lg(m) & 1) : 3 * m + 3);
+    return Z.valueOf((mN & 1) == 0 ? 3 * m + 1 + (LongUtils.log2(m) & 1) : 3 * m + 3);
   }
 }

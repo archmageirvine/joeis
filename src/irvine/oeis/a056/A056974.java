@@ -15,6 +15,6 @@ public class A056974 extends Sequence1 {
   @Override
   public Z next() {
     final long m = ++mN | (mN >>> 1) | (mN >>> 2);
-    return m == 0 ? Z.ZERO : Z.valueOf(1 + LongUtils.lg(m) - Long.bitCount(m));
+    return m == 0 ? Z.ZERO : Z.valueOf(1 + LongUtils.log2(m) - Long.bitCount(m));
   }
 }

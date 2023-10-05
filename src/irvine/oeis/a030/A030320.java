@@ -59,7 +59,7 @@ public class A030320 extends AbstractSequence {
     }
     long k = first();
     while (true) {
-      final long len = LongUtils.lg(mN) + 1;
+      final long len = LongUtils.log2(mN) + 1;
       if (isMatch(mN, ++k, len)) {
         return Z.valueOf(k);
       }

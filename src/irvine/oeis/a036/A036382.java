@@ -14,7 +14,7 @@ public class A036382 extends Sequence1 {
   private long mN = 19;
 
   private long l(final long n) {
-    return LongUtils.lg(n) + ((n & (n - 1)) == 0 ? 0 : 1);
+    return LongUtils.log2(n) + ((n & (n - 1)) == 0 ? 0 : 1);
   }
 
   @Override

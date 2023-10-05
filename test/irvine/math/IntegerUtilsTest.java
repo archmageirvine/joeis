@@ -13,16 +13,16 @@ import junit.framework.TestCase;
 public class IntegerUtilsTest extends TestCase {
 
   public void testLg() {
-    assertEquals(0, IntegerUtils.lg(0));
+    assertEquals(0, IntegerUtils.log2(0));
     for (int i = 1, j = 1; j >= 0; ++i, j <<= 1) {
-      assertEquals(i, IntegerUtils.lg(j));
-      assertEquals(i, IntegerUtils.lg(-j));
+      assertEquals(i, IntegerUtils.log2(j));
+      assertEquals(i, IntegerUtils.log2(-j));
     }
     for (int i = 2, j = 2; j >= 0; ++i, j <<= 1) {
-      assertEquals(i, IntegerUtils.lg(j + 1));
-      assertEquals(i, IntegerUtils.lg(-j - 1));
+      assertEquals(i, IntegerUtils.log2(j + 1));
+      assertEquals(i, IntegerUtils.log2(-j - 1));
     }
-    assertEquals(31, IntegerUtils.lg(0x7FFFFFFF));
+    assertEquals(31, IntegerUtils.log2(0x7FFFFFFF));
   }
 
   public void testCharToValue() {

@@ -13,7 +13,7 @@ public class A038571 extends Sequence0 {
   private long mN = -1;
 
   private long diff(final long n) {
-    return n < 2 ? 0 : (n ^ (n >>> 1)) - (1L << LongUtils.lg(n));
+    return n < 2 ? 0 : (n ^ (n >>> 1)) - (1L << LongUtils.log2(n));
   }
 
   @Override

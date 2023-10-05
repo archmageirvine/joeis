@@ -26,7 +26,7 @@ public final class IntegerUtils {
    * @param n integer to get logarithm of
    * @return binary logarithm
    */
-  public static int lg(final int n) {
+  public static int log2(final int n) {
     return Integer.SIZE - Integer.numberOfLeadingZeros(Math.abs(n));
   }
 
@@ -36,7 +36,7 @@ public final class IntegerUtils {
    * @return integer part of binary logarithm
    */
   public static int floorLog2(final int n) {
-    return 31 - Integer.numberOfLeadingZeros(n);
+    return Integer.SIZE - 1 - Integer.numberOfLeadingZeros(n);
   }
 
   /**
@@ -45,13 +45,12 @@ public final class IntegerUtils {
    * @return binary logarithm for powers of 2, and integer part of binary logarithm + 1 otherwise
    */
   public static int ceilingLog2(final int n) {
-    return (Integer.bitCount(n) == 1 ? 31 : 32) - Integer.numberOfLeadingZeros(n);
+    return (Integer.bitCount(n) == 1 ? Integer.SIZE - 1 : Integer.SIZE) - Integer.numberOfLeadingZeros(n);
   }
 
   /**
-   * Convert a digit character to a value, returns -1 if not a valid digit.
+   * Convert a digit character to a value, returns <code>-1</code> if not a valid digit.
    * Understands about use of letters in higher bases.
-   *
    * @param c a character
    * @return integer value
    */

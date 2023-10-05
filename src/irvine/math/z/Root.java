@@ -17,7 +17,7 @@ final class Root {
     int k = (lga + n - 1) / n;
     Z b = Z.ONE.shiftLeft(k);
     // choose between bisection method and Newton's method
-    if (n >= 16 && 2 * IntegerUtils.lg(lga) + IntegerUtils.lg(n) > k) {
+    if (n >= 16 && 2 * IntegerUtils.log2(lga) + IntegerUtils.log2(n) > k) {
       // bisection method
       Z lowb = Z.ONE.shiftLeft((lga - n + 1) / n);
       Z highb = b;

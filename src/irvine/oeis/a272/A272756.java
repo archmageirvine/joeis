@@ -14,7 +14,7 @@ public class A272756 extends Sequence1 {
   private long mK = 1;
 
   private long a070939(final long n) {
-    return LongUtils.lg(n) + 1;
+    return LongUtils.log2(n) + 1;
   }
 
   @Override

@@ -114,7 +114,7 @@ public final class IrreduciblePolynomials {
   }
 
   private static int degree(final long v) {
-    return (int) LongUtils.lg(v);
+    return (int) LongUtils.log2(v);
   }
 
   private static boolean exactlyDivides(long ni, final long di, final int dd) {

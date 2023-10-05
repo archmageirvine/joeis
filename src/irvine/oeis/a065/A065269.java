@@ -16,7 +16,7 @@ public class A065269 extends Sequence1 {
     if (n == 1) {
       return Z.ONE;
     }
-    final long k = LongUtils.lg(n) - 1;
+    final long k = LongUtils.log2(n) - 1;
     if (n / (1L << k) == 3) {
       return Z.valueOf(2 * n);
     }

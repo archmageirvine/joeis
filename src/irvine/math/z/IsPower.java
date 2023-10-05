@@ -44,7 +44,7 @@ final class IsPower {
     outer:
     while (true) {
       p = (int) prime.nextPrime(p);
-      if (p * (IntegerUtils.lg(p) - 1) > l) {
+      if (p * (IntegerUtils.log2(p) - 1) > l) {
         t = null;
         break;
       }
@@ -126,7 +126,7 @@ final class IsPower {
           n.mAuxiliary = r;
           return r < 2 ? null : a;
         }
-        while (IntegerUtils.lg(c) + IntegerUtils.lg(p) < Z.BASE_BITS) {
+        while (IntegerUtils.log2(c) + IntegerUtils.log2(p) < Z.BASE_BITS) {
           c *= p;
           ++e;
         }

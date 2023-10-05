@@ -17,13 +17,13 @@ public class A006264 extends MemoryFunction2Sequence<Long, Integer> {
       case 0:
         return n / 2;
       case 1:
-        return LongUtils.lg(n);
+        return LongUtils.log2(n);
       case 2:
         long c = 0;
         long t = n;
         while (t > 1) {
           ++c;
-          t = LongUtils.lg(t);
+          t = LongUtils.log2(t);
         }
         return c;
       case -1:

@@ -56,7 +56,7 @@ public class A065658 extends Sequence0 {
   }
 
   protected Q sternBrocot01Frac(final long n) {
-    final long m = n + (1L << LongUtils.lg(n));
+    final long m = n + (1L << LongUtils.log2(n));
     if (m > Integer.MAX_VALUE) {
       throw new UnsupportedOperationException();
     }
@@ -71,7 +71,7 @@ public class A065658 extends Sequence0 {
 
   // Right rotation
   protected Q rotateBinFracNodeX(final long t, final Q x) {
-    final Z den = Z.ONE.shiftLeft(LongUtils.lg(t) + 1);
+    final Z den = Z.ONE.shiftLeft(LongUtils.log2(t) + 1);
     final Q num = new Q(Z.valueOf(2 * t).subtract(den).add(1));
     if (x.compareTo(num.subtract(1).divide(den)) <= 0 || x.compareTo(num.add(1).divide(den)) >= 0) {
       return x;

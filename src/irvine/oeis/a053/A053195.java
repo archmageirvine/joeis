@@ -54,6 +54,6 @@ public class A053195 extends MemoryFunctionInt3Sequence<Z> {
     if (++mN == 0) {
       return Z.ONE;
     }
-    return compute(mN, IntegerUtils.lg(mN));
+    return compute(mN, IntegerUtils.log2(mN));
   }
 }

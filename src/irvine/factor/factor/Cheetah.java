@@ -27,7 +27,7 @@ public class Cheetah extends AbstractFactorizer {
 
   private static final char[] SMALL_PRIME = new char[255];
   private static final int SMALL_LIMIT = 2627641;
-  private static final int SMALL_BIT_LIMIT = IntegerUtils.lg(SMALL_LIMIT);
+  private static final int SMALL_BIT_LIMIT = IntegerUtils.log2(SMALL_LIMIT);
   private static byte[] sSmallCheat = null;
 
   private static void initSmall() {
@@ -59,7 +59,7 @@ public class Cheetah extends AbstractFactorizer {
     factor.
   */
   private static final long BIG_LIMIT  = Long.parseLong(System.getProperty("oeis.big-factor-limit", "4295098369"));
-  private static final int BIG_BIT_LIMIT = (int) LongUtils.lg(BIG_LIMIT);
+  private static final int BIG_BIT_LIMIT = (int) LongUtils.log2(BIG_LIMIT);
   private static char[] sBigCheat = null;
 
   private static void initLarge() {

@@ -19,8 +19,8 @@ public class A065626 extends Sequence0 {
   }
 
   protected long rotateNodeLeft(final long t, final long x) {
-    final long u = LongUtils.lg(t) + 1;
-    final long y = LongUtils.lg(x) + 1;
+    final long u = LongUtils.log2(t) + 1;
+    final long y = LongUtils.log2(x) + 1;
     if (y < u) {
       return x;
     }

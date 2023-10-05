@@ -14,8 +14,8 @@ import irvine.math.set.IntegerPermutation;
 public class HigmanSims extends IntegerPermutationGroup {
 
   private static final int PARENT_SIZE = 100;
-  private static final IntegerPermutation GEN_A = IntegerPermutation.createFromOneBase(IntegerUtils.suckInNumbers("irvine/math/group/resources/hsa.dat"));
-  private static final IntegerPermutation GEN_B = IntegerPermutation.createFromOneBase(IntegerUtils.suckInNumbers("irvine/math/group/resources/hsb.dat"));
+  private static final IntegerPermutation GEN_A = IntegerPermutation.createFromOneBase(IntegerUtils.readInNumbers("irvine/math/group/resources/hsa.dat"));
+  private static final IntegerPermutation GEN_B = IntegerPermutation.createFromOneBase(IntegerUtils.readInNumbers("irvine/math/group/resources/hsb.dat"));
   private static final FiniteSet<IntegerPermutation> GENERATORS = new FiniteSet<>(Arrays.asList(GEN_A, GEN_B));
   private static final IntegerPermutation ZERO = IntegerPermutation.identity(PARENT_SIZE);
 

@@ -13,8 +13,8 @@ import irvine.math.set.IntegerPermutation;
  */
 public class TitsTF42Prime extends IntegerPermutationGroup {
 
-  private static final IntegerPermutation GEN_A = IntegerPermutation.createFromOneBase(IntegerUtils.suckInNumbers("irvine/math/group/resources/titsa.dat"));
-  private static final IntegerPermutation GEN_B = IntegerPermutation.createFromOneBase(IntegerUtils.suckInNumbers("irvine/math/group/resources/titsb.dat"));
+  private static final IntegerPermutation GEN_A = IntegerPermutation.createFromOneBase(IntegerUtils.readInNumbers("irvine/math/group/resources/titsa.dat"));
+  private static final IntegerPermutation GEN_B = IntegerPermutation.createFromOneBase(IntegerUtils.readInNumbers("irvine/math/group/resources/titsb.dat"));
   private static final FiniteSet<IntegerPermutation> GENERATORS = new FiniteSet<>(Arrays.asList(GEN_A, GEN_B));
 
   /**

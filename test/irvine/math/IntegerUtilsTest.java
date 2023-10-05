@@ -574,14 +574,6 @@ public class IntegerUtilsTest extends TestCase {
     }
   }
 
-  public void testIncrementConstantPopCount() {
-    assertEquals(2, IntegerUtils.incrementConstantPopCount(1));
-    assertEquals(4, IntegerUtils.incrementConstantPopCount(2));
-    assertEquals(8, IntegerUtils.incrementConstantPopCount(4));
-    assertEquals(5, IntegerUtils.incrementConstantPopCount(3));
-    assertEquals(6, IntegerUtils.incrementConstantPopCount(5));
-  }
-  
   public void testSum() {
     assertEquals(42, IntegerUtils.sum(42));
     assertEquals(42, IntegerUtils.sum(new int[] {20, 22}));

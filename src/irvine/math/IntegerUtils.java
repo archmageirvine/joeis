@@ -49,6 +49,25 @@ public final class IntegerUtils {
   }
 
   /**
+   * Compute the floor of the square root of the given integer.
+   * @param n integer to take the square root of
+   * @return an <code>int</code> value
+   */
+  public static int sqrt(final int n) {
+    return (int) Math.sqrt(n);
+  }
+
+  /**
+   * Test if the given value is a square.
+   * @param n number to test
+   * @return true iff the number is a square
+   */
+  public static boolean isSquare(final int n) {
+    final int s = sqrt(n);
+    return s * s == n;
+  }
+
+  /**
    * Convert a digit character to a value, returns <code>-1</code> if not a valid digit.
    * Understands about use of letters in higher bases.
    * @param c a character
@@ -74,15 +93,6 @@ public final class IntegerUtils {
       return c - 'a' + 10;
     }
     return -1;
-  }
-
-  /**
-   * Compute the floor of the square root of the given integer.
-   * @param n integer to take the square root of
-   * @return an <code>int</code> value
-   */
-  public static int sqrt(final int n) {
-    return (int) Math.sqrt(n);
   }
 
   private static final int N_LIMIT = sqrt(Integer.MAX_VALUE);
@@ -197,21 +207,6 @@ public final class IntegerUtils {
     return x + 1;
   }
 
-
-  /**
-   * Return the next larger number containing exactly the same number of
-   * set bits as the supplied number. Does not work for 0.
-   *
-   * @param x parameter
-   * @return next higher value with the same population count
-   */
-  public static int incrementConstantPopCount(final int x) {
-    assert x != 0;
-    final int c = x & -x;
-    final int r = x + c;
-    return (((r ^ x) >> 2) / c) | r;
-  }
-
   /**
    * Step to the next number with the same number of set bits.
    * @param x current value
@@ -272,8 +267,7 @@ public final class IntegerUtils {
   }
 
   /**
-   * Sum the contents of an arbitrary dimensioned primitive int or Integer
-   * array.
+   * Sum the contents of an arbitrary dimensioned primitive int or Integer array.
    * @param structure array
    * @return sum of the array
    */
@@ -341,7 +335,7 @@ public final class IntegerUtils {
    * @return array of numbers
    * @throws IOException if an I/O error occurs.
    */
-  public static int[] suckInNumbers(final BufferedReader reader) throws IOException {
+  public static int[] readInNumbers(final BufferedReader reader) throws IOException {
     final ArrayList<Integer> res = new ArrayList<>();
     String line;
     while ((line = reader.readLine()) != null) {
@@ -364,9 +358,9 @@ public final class IntegerUtils {
    * @param resource reader source
    * @return array of numbers
    */
-  public static int[] suckInNumbers(final String resource) {
+  public static int[] readInNumbers(final String resource) {
     try (final BufferedReader r = IOUtils.reader(resource)) {
-      return suckInNumbers(r);
+      return readInNumbers(r);
     } catch (final IOException e) {
       throw new RuntimeException(e);
     }
@@ -479,13 +473,4 @@ public final class IntegerUtils {
     return false;
   }
 
-  /**
-   * Test if the given value is a square.
-   * @param n number to test
-   * @return true iff the number is a square
-   */
-  public static boolean isSquare(final int n) {
-    final int s = sqrt(n);
-    return s * s == n;
-  }
 }

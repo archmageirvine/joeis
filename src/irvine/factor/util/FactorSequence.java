@@ -500,7 +500,7 @@ public final class FactorSequence {
    * @return sum of the divisors to the specified degree
    * @exception UnsupportedOperationException if factor sequence is not completely resolved.
    */
-  public Z sigma(final int degree) {
+  public Z sigma(final long degree) {
     if (degree == 0) {
       return sigma0();
     } else if (degree == 1) {
@@ -513,7 +513,7 @@ public final class FactorSequence {
     for (final Map.Entry<Z, Factor> f : mFactors.entrySet()) {
       final Z p = f.getKey();
       if (p.signum() > 0) {
-        prod = prod.multiply(p.pow((f.getValue().mExponent + 1) * (long) degree).subtract(1)).divide(p.pow(degree).subtract(1));
+        prod = prod.multiply(p.pow((f.getValue().mExponent + 1) * degree).subtract(1)).divide(p.pow(degree).subtract(1));
       }
     }
     return prod;

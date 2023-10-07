@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -25,7 +25,7 @@ public class A006156 extends AbstractSequence {
     super(0);
   }
 
-  protected ArrayList<String> mWords = new ArrayList<>();
+  protected HashSet<String> mWords = new HashSet<>();
 
   protected char maxLetter() {
     return 'c';
@@ -36,7 +36,7 @@ public class A006156 extends AbstractSequence {
     if (mWords.isEmpty()) {
       mWords.add("");
     } else {
-      final ArrayList<String> next = new ArrayList<>();
+      final HashSet<String> next = new HashSet<>();
       for (final String w : mWords) {
         for (char letter = 'a'; letter <= maxLetter(); ++letter) {
           final String a = letter + w;

@@ -40,9 +40,11 @@ public class A001931 extends Sequence1 {
       poly.stream().mapToInt(Point::right).min().getAsInt());
   }
 
-  private static List<Point> translateToOrigin(final List<Point> poly) {
+  protected static List<Point> translateToOrigin(final List<Point> poly) {
     final Point min = findMinima(poly);
-    poly.replaceAll(p -> new Point(p.left() - min.left(), p.mid() - min.mid(), p.right() - min.right()));
+    if (min.left() != 0 || min.mid() != 0 || min.right() != 0) {
+      poly.replaceAll(p -> new Point(p.left() - min.left(), p.mid() - min.mid(), p.right() - min.right()));
+    }
     return poly;
   }
 
@@ -50,7 +52,7 @@ public class A001931 extends Sequence1 {
     return Collections.singletonList(poly);
   }
 
-  private static final Comparator<Point> BY_COORDS = Comparator.comparingInt(Point::left).thenComparingInt(Point::mid).thenComparingInt(Point::right);
+  protected static final Comparator<Point> BY_COORDS = Comparator.comparingInt(Point::left).thenComparingInt(Point::mid).thenComparingInt(Point::right);
 
   private List<Point> normalize(final List<Point> poly) {
     return generateSymmetries(poly).stream()

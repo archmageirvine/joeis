@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a028.A028335;
 
 /**
- * A028335 Number of decimal digits in n-th Mersenne prime.
+ * A066227 Number of digits in Mersenne primes with a prime number of digits.
  * @author Sean A. Irvine
  */
 public class A066227 extends FilterSequence {

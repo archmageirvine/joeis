@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066045 Triangle T(n,k) defined by Sum_{1&lt;=k&lt;=n} T(n,k)*u^k*t^n/n! = exp((1-t)*(1-t^2)*(1-t^3)...)^(-u)-1).
+ * A066045 Triangle T(n,k) defined by Sum_{1&lt;=k&lt;=n} T(n,k)*u^k*t^n/n! = exp(((1-t)*(1-t^2)*(1-t^3)...)^(-u)-1).
  * @author Sean A. Irvine
  */
 public class A066045 extends Sequence1 {

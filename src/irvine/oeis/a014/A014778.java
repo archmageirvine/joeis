@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A014778 Numbers n equal to the number of 1's in the decimal digits of all numbers &lt;= n.
+ * A014778 Numbers k equal to the number of 1's in the decimal digits of all numbers &lt;= k.
  * @author Sean A. Irvine
  */
 public class A014778 extends FiniteSequence {

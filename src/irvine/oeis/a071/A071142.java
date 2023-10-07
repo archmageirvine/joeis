@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a037.A037074;
 
 /**
- * A071142 Numbers n such that sum of distinct primes dividing n is divisible by the largest prime dividing n. Also n has exactly 3 distinct prime factors and n is squarefree.
+ * A071142 Numbers of the form 2*p*q where (p,q) is a twin prime pair.
  * @author Georg Fischer
  */
 public class A071142 extends AbstractSequence {

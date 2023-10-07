@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A181819 Prime shadow of n: a(1) = 1; for n>1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
+ * A181819 Prime shadow of n: a(1) = 1; for n&gt;1, if n = Product prime(i)^e(i), then a(n) = Product prime(e(i)).
  * @author Georg Fischer
  */
 public class A181819 extends Sequence1 {

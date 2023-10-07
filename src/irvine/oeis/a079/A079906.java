@@ -5,7 +5,7 @@ package irvine.oeis.a079;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A079906 Numbers k such that 5*6^k -1 is prime.
+ * A079906 Numbers k such that 5*6^k - 1 is prime.
  * @author Georg Fischer
  */
 public class A079906 extends PowerFactorPrimeSequence {

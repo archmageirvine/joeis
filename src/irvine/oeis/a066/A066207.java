@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066207.
+ * A066207 All primes that divide n are of the form prime(2k), where prime(k) is k-th prime.
  * @author Sean A. Irvine
  */
 public class A066207 extends Sequence1 {

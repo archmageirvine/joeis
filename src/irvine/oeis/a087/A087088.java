@@ -5,7 +5,7 @@ import irvine.oeis.a163.A163491;
 import irvine.oeis.transform.OrdinalTransformSequence;
 
 /**
- * A087088 Positive ruler-type fractal sequence with 1&apos;s in every third position.
+ * A087088 Positive ruler-type fractal sequence with 1's in every third position.
  * @author Georg Fischer
  */
 public class A087088 extends OrdinalTransformSequence {

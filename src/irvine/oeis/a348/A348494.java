@@ -7,7 +7,7 @@ import irvine.oeis.a342.A342001;
 import irvine.oeis.a347.A347128;
 
 /**
- * A348494 a(n) = A348492(n) / A003557(n), where A348492 is the GCD of the arithmetic derivative (A003415) and Pillai&apos;s arithmetical function (A018804).
+ * A348494 a(n) = A348492(n) / A003557(n), where A348492 is the GCD of the arithmetic derivative (A003415) and Pillai's arithmetical function (A018804).
  * @author Georg Fischer
  */
 public class A348494 extends AbstractSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a046.A046523;
 import irvine.oeis.a285.A285729;
 
 /**
- * A289622 Compound filter (prime signature &amp; Carmichael&apos;s lambda): a(n) = P(A046523(n), A002322(n)), where P(n,k) is sequence A000027 used as a pairing function.
+ * A289622 Compound filter (prime signature &amp; Carmichael's lambda): a(n) = P(A046523(n), A002322(n)), where P(n,k) is sequence A000027 used as a pairing function.
  * @author Georg Fischer
  */
 public class A289622 extends A285729 {

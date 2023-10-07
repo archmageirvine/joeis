@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002778;
 import irvine.util.string.StringUtils;
 
 /**
- * A059744 Numbers n such that n^2 is a palindromic square of sporadic type.
+ * A059744 Numbers k such that k^2 is a palindromic square of sporadic type.
  * @author Sean A. Irvine
  */
 public class A059744 extends A002778 {

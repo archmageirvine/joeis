@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002443;
 import irvine.oeis.a002.A002444;
 
 /**
- * A266911 GCD of A002443(n) and A002444(n), numerator and denominator in Feinler&apos;s formula for the Bernoulli number B_{2n}.
+ * A266911 GCD of A002443(n) and A002444(n), numerator and denominator in Feinler's formula for the Bernoulli number B_{2n}.
  * @author Georg Fischer
  */
 public class A266911 extends AbstractSequence {

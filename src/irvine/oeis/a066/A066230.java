@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066207.
+ * A066230 f-perfect numbers defined by f(n) = n - 1 (where f-perfect numbers are defined in A066218).
  * @author Sean A. Irvine
  */
 public class A066230 extends Sequence1 {

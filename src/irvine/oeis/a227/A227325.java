@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000272;
 import irvine.oeis.a000.A000984;
 
 /**
- * A227325 A000272(n+1) * A000984(n).
+ * A227325 a(n) = A000272(n+1) * A000984(n).
  * @author Georg Fischer
  */
 public class A227325 extends Sequence0 {

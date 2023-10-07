@@ -5,7 +5,7 @@ package irvine.oeis.a043;
 import irvine.oeis.a002.A002113;
 
 /**
- * A043269 Sum of the digits of n-th base 10 palindrome.
+ * A043269 a(n) is the sum of the digits of n-th base 10 palindrome.
  * @author Georg Fischer
  */
 public class A043269 extends A043261 {

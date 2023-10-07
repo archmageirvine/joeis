@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a007.A007501;
 
 /**
- * A145272 First differences of successive iterated triangular numbers.
+ * A145272 First differences of successive iterated triangular numbers with seed 2.
  * @author Georg Fischer
  */
 public class A145272 extends DifferenceSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000312;
 
 /**
- * A066183.
+ * A066588 The sum of the digits of n^n.
  * @author Sean A. Irvine
  */
 public class A066588 extends A000312 {

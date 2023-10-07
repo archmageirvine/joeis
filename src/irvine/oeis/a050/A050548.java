@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A050548 Iterated triangular numbers.
+ * A050548 Iterated triangular numbers with seed 7.
  * @author Sean A. Irvine
  */
 public class A050548 extends Sequence0 {

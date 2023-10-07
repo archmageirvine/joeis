@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066207.
+ * A066238 The floor(n/3)-perfect numbers, where f-perfect numbers for an arithmetical function f are defined in A066218.
  * @author Sean A. Irvine
  */
 public class A066238 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A007573 Number of asymmetric families of palindromic squares.
+ * A007573 a(n) is the number of base numbers with 2n+1 digits in the asymmetric families of palindromic squares.
  * @author Sean A. Irvine
  */
 public class A007573 extends AbstractSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000720;
 
 /**
- * A064489 Let p = prime(n); a(n) = smallest m such that prime(m) has p digits.
+ * A064489 a(n) = smallest m such that prime(m) has prime(n) decimal digits.
  * @author Sean A. Irvine
  */
 public class A064489 extends A000040 {

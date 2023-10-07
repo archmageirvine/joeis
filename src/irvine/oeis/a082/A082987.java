@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A082987 a(n)=sum(k=0,n,3^k*F(k)) where F(k) is the k-th Fibonacci number.
+ * A082987 a(n) = Sum_{k=0..n} 3^k*F(k) where F(k) is the k-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A082987 extends LinearRecurrence {

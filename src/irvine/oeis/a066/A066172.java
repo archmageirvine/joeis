@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066172 Numbers n such that phi(n+1) - phi(n) = -d(n).
+ * A066172 Numbers k such that phi(k+1) - phi(k) = -d(k).
  * @author Sean A. Irvine
  */
 public class A066172 extends Sequence1 {

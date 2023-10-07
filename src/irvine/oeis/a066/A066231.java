@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066207.
+ * A066231 Numbers n such that phi(n) = phi(n-1) - phi(n-2).
  * @author Sean A. Irvine
  */
 public class A066231 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a043.A043269;
 
 /**
- * A113168 Sum of digits of first n palindromes.
+ * A113168 a(n) is the sum of digits of the first n palindromes.
  * @author Sean A. Irvine
  */
 public class A113168 extends PartialSumSequence {

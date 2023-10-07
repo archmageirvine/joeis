@@ -2287,4 +2287,4 @@ A066137 Covering numbers C(n,9,8).
 A066140 Covering numbers C(n,n-3,n-4)
 A066158 Number of fixed polyominoes with n cells and tree-like structure
 A066225 Covering numbers C(n,n-4,n-5).
-A066234 Theta series of GH39, an extremal unimodular 39-dimensional lattice
+A066289 Numbers k such that k divides DivisorSigma(2*j-1, k) for all j; i.e., all odd-power-sums of divisors of k are divisible by k

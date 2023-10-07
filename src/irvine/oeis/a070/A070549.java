@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a252.A252233;
 
 /**
- * A070549 a(n) = Card(k 0&lt;k&lt;=n such that mu(k)=-1).
+ * A070549 a(n) = Cardinality{ k in range 1 &lt;= k &lt;= n such that Moebius(k) = -1 }.
  * @author Sean A. Irvine
  */
 public class A070549 extends PartialSumSequence {

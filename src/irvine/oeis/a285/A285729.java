@@ -6,7 +6,7 @@ import irvine.oeis.a032.A032742;
 import irvine.oeis.a046.A046523;
 
 /**
- * A285729 Compound filter: a(n) = T(A032742(n), A046523(n)), where T(n,k) is sequence A000027 used as a pairing function
+ * A285729 Compound filter: a(n) = T(A032742(n), A046523(n)), where T(n,k) is sequence A000027 used as a pairing function.
  * @author Georg Fischer
  */
 public class A285729 extends AbstractSequence {

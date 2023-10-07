@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A066207.
+ * A066213 Numbers which are sums of squares of some subset of divisors.
  * @author Sean A. Irvine
  */
 public class A066213 extends Sequence1 {

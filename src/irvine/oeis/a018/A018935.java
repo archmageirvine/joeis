@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A018935 Consider smallest m such that m^2 = x1^2 + ... + xn^2 with 0 &lt; x1 &lt; ... &lt; xn. Sequence gives values of m.
+ * A018935 a(n) is the smallest m whose square is the sum of n distinct positive squares.
  * @author Sean A. Irvine
  */
 public class A018935 extends Sequence1 {

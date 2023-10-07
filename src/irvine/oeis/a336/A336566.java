@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A336566 a(n) = gcd(A336563(n), A336564(n)) = gcd(A057723(n)-n, n-A308135(n));
+ * A336566 a(n) = gcd(A336563(n), A336564(n)) = gcd(A057723(n)-n, n-A308135(n));.
  * @author Georg Fischer
  */
 public class A336566 extends AbstractSequence {

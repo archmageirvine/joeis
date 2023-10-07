@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A366035 allocated for Ilya Gutkovskiy.
+ * A366035 G.f. A(x) satisfies: A(x) = x * (1 + A(x))^5 / (1 - 3 * A(x)).
  * @author Georg Fischer
  */
 public class A366035 extends LambdaSequence {

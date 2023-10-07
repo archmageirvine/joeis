@@ -4,7 +4,7 @@ package irvine.oeis.a366;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A366045 Number of circular binary sequences of length n with an odd number of 0&apos;s and no three consecutive 1&apos;s.
+ * A366045 Number of circular binary sequences of length n with an odd number of 0's and no three consecutive 1's.
  * @author Georg Fischer
  */
 public class A366045 extends GeneratingFunctionSequence {

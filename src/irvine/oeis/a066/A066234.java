@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000122;
 import irvine.oeis.a002.A002408;
 
 /**
- * A066183.
+ * A066234 Theta series of GH39, an extremal unimodular 39-dimensional lattice.
  * @author Sean A. Irvine
  */
 public class A066234 extends Sequence0 {

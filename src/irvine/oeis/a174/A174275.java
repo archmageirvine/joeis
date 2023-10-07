@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000079;
 import irvine.oeis.a014.A014963;
 
 /**
- * A174275 a(n) = 2^n mod M(n) where M(n) = A014963(n) is the exponential of the Mangoldt function.
+ * A174275 a(n) = 2^(n-1) mod M(n) where M(n) = A014963(n) is the exponential of the Mangoldt function.
  * @author Georg Fischer
  */
 public class A174275 extends Sequence1 {

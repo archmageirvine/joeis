@@ -7,7 +7,7 @@ import irvine.oeis.a032.A032742;
 import irvine.oeis.a285.A285729;
 
 /**
- * A286388 Compound filter (&quot;discard the smallest prime factor&quot; &amp; &quot;number of trailing 1-bits in base-2&quot;): a(n) = P(A032742(n), A001511(1+n)), where P(n,k) is sequence A000027 used as a pairing function, with a(1) = 0.
+ * A286388 Compound filter ("discard the smallest prime factor" &amp; "number of trailing 1-bits in base-2"): a(n) = P(A032742(n), A001511(1+n)), where P(n,k) is sequence A000027 used as a pairing function, with a(1) = 0.
  * @author Georg Fischer
  */
 public class A286388 extends A285729 {

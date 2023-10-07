@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A366041 allocated for Seiichi Manyama.
+ * A366041 Expansion of (1/x) * Series_Reversion( x*(1-x)*(1-x^4) ).
  * @author Georg Fischer
  */
 public class A366041 extends LambdaSequence {

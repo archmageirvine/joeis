@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A018937 Consider smallest m such that m^2 = x_1^2 + ... + x_n^2 with 0 &lt; x_1 &lt; ... &lt; x_n. Sequence gives least value of x_n.
+ * A018937 Let S be the smallest square that is the sum of n distinct positive integers. Then a(n) is the smallest k such that there exist n distinct positive integers &lt;= k whose squares sum to S.
  * @author Sean A. Irvine
  */
 public class A018937 extends Sequence1 {

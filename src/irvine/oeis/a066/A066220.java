@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A066207.
+ * A066220 Least k &gt; 0 such that t^k = 1 mod (prime(n) - t) for 0 &lt; t &lt; prime(n).
  * @author Sean A. Irvine
  */
 public class A066220 extends A000040 {

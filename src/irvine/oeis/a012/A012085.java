@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A012085 Even coefficients in expansion of cos(x)/sqrt(cos(2*x)).
+ * A012085 Even coefficients in expansion of e.g.f. cos(x)/sqrt(cos(2*x)).
  * @author Sean A. Irvine
  */
 public class A012085 extends Sequence0 {

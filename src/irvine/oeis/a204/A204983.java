@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.a000.A000079;
 
 /**
- * A204983 2^(k-1)-2^(j-1), where (2^(k-1),2^(j-1)) is the least pair of distinct positive powers of 2 for which n divides 2^(k-1)-2^(j-1).
+ * A204983 a(n) = 2^(k-1)-2^(j-1), where (2^(k-1),2^(j-1)) is the least pair of distinct positive powers of 2 for which n divides 2^(k-1)-2^(j-1).
  * @author Georg Fischer
  */
 public class A204983 extends A204892 {

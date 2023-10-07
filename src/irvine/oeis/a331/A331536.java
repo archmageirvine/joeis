@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A331536 Number of words that can be reached in at most n - 1 steps in the MIU system starting from the word 'mi'.
+ * A331536 Number of theorems in the MIU formal system which can be proved in n steps or fewer starting with the axiom 'mi'.
  * @author Sean A. Irvine
  */
 public class A331536 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A051423 Sum of prime divisors of n is congruent to 2^n (mod n).
+ * A051423 Numbers k such that the sum of prime divisors of k is congruent to 2^k (mod k).
  * @author Sean A. Irvine
  */
 public class A051423 extends Sequence1 {

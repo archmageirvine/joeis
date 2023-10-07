@@ -5,7 +5,7 @@ import irvine.oeis.a300.A300721;
 import irvine.oeis.transform.OrdinalTransformSequence;
 
 /**
- * A322873 Ordinal transform of A300721, which is M√∂bius transform of A060681.
+ * A322873 Ordinal transform of A300721, which is M\u00f6bius transform of A060681.
  * @author Georg Fischer
  */
 public class A322873 extends OrdinalTransformSequence {

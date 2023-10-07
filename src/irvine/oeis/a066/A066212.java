@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066207.
+ * A066212 A measure of how close the golden ratio is to rational numbers.
  * @author Sean A. Irvine
  */
 public class A066212 extends Sequence1 {

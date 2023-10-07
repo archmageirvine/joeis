@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A112387 a(1)=1, a(2)=2, a(n)= 2^(n/2) if even and a(n-1)-a(n-2) if odd.
+ * A112387 a(n) = 2^(n/2) if n is even and a(n-1) - a(n-2) if n is odd, a(1) = 1.
  * @author Georg Fischer
  */
 public class A112387 extends HolonomicRecurrence {

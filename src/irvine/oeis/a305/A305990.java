@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a009.A009444;
 
 /**
- * A305990 E.g.f.: (1+x) / (exp(-x) - x).
+ * A305990 Expansion of e.g.f.: (1+x) / (exp(-x) - x).
  * @author Georg Fischer
  */
 public class A305990 extends Sequence0 {

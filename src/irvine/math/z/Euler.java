@@ -108,6 +108,15 @@ public class Euler {
     return Z.valueOf(phiAsLong(n));
   }
 
+  /**
+   * Return the Euler cototient of an integer.
+   * @param n number
+   * @return cototient
+   */
+  public static Z cototient(final long n) {
+    return Z.valueOf(n).subtract(phi(n));
+  }
+
   private final int[] mPhi;
 
   /**

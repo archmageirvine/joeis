@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002145;
 
 /**
- * A066162 Let p be a prime of the form 4a-1; sequence gives (q!^2-1)/p where q = (p-1)/2.
+ * A066162 Let p be a prime of the form 4k-1; sequence gives (q!^2-1)/p where q = (p-1)/2.
  * @author Sean A. Irvine
  */
 public class A066162 extends A002145 {

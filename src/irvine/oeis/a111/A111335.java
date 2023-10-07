@@ -7,7 +7,7 @@ import irvine.oeis.recur.PeriodicSequence;
 
 
 /**
- * A111335 Let qf(a,q) = Product(1-a*q^j,j=0..infinity); g.f. is qf(q^3,q^4)/qf(q,q^4).
+ * A111335 Let qf(a,q) = Product_{j&gt;=0} (1 - a*q^j); g.f. is qf(q^3,q^4)/qf(q,q^4).
  * @author Georg Fischer
  */
 public class A111335 extends EulerTransform {

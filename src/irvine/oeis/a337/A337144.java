@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006577;
 import irvine.oeis.transform.OrdinalTransformSequence;
 
 /**
- * A337144 n is the a(n)-th positive integer which takes its number of steps to reach 1 in the &apos;3x+1&apos; problem.
+ * A337144 n is the a(n)-th positive integer which takes its number of steps to reach 1 in the '3x+1' problem.
  * @author Georg Fischer
  */
 public class A337144 extends OrdinalTransformSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A066183.
+ * A066233 Numbers n such that the sum of digits of n^n is a prime.
  * @author Sean A. Irvine
  */
 public class A066233 extends FilterPositionSequence {

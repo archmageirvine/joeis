@@ -7,7 +7,7 @@ import irvine.oeis.a003.A003415;
 import irvine.oeis.a018.A018804;
 
 /**
- * A348492 Greatest common divisor of the arithmetic derivative (A003415) and Pillai&apos;s arithmetical function (A018804).
+ * A348492 Greatest common divisor of the arithmetic derivative (A003415) and Pillai's arithmetical function (A018804).
  * @author Georg Fischer
  */
 public class A348492 extends AbstractSequence {

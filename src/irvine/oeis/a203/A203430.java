@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A203430 Vandermonde determinant of the first n numbers (1,3,4,6,7,9,10,...)=(j+floor(j/2)).
+ * A203430 Vandermonde determinant of the first n numbers (1,3,4,6,7,9,10,...) = (j+floor(j/2)).
  * @author Georg Fischer
  */
 public class A203430 extends Sequence1 {

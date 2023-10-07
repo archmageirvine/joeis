@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066207.
+ * A066218 Numbers k such that sigma(k) = Sum_{j|k, j&lt;k} sigma(j).
  * @author Sean A. Irvine
  */
 public class A066218 extends Sequence1 {

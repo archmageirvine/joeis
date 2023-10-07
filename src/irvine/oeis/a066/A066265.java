@@ -2,14 +2,14 @@ package irvine.oeis.a066;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001358;
 
 /**
  * A066265 a(n) = number of semiprimes &lt; 10^n.
  * @author Sean A. Irvine
  */
-public class A066265 extends Sequence1 {
+public class A066265 extends Sequence0 {
 
   private final Sequence mSemiprimes = new A001358();
   private Z mA = mSemiprimes.next();

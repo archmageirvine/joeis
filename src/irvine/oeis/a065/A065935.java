@@ -15,6 +15,10 @@ public class A065935 extends A065658 {
   private final Sequence mNum = new A007305().skip(2);
   private final Sequence mDen = new A047679();
 
+  {
+    setOffset(1);
+  }
+
   private Q qToQ01(final Q r) {
     final Z f = Z.ONE.shiftLeft(r.toZ().longValueExact());
     return r.frac().divide(2).add(f.subtract(1)).divide(f);

@@ -13,8 +13,8 @@ public class A195202 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A195202() {
-    super(0, new UnaryCRFunction() { 
-      @Override 
+    super(1, new UnaryCRFunction() {
+      @Override
       public CR execute(final CR x) {
         return new CR() {
           @Override

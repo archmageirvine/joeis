@@ -12,7 +12,7 @@ public class A325655 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A325655() {
-    super(0, 1, 0, (n, k) -> Z.NEG_ONE.pow(n).subtract(1).multiply(2 * k).subtract(Z.valueOf(n).multiply(2 * k * k))
+    super(1, 1, 0, (n, k) -> Z.NEG_ONE.pow(n).subtract(1).multiply(2 * k).subtract(Z.valueOf(n).multiply(2 * k * k))
       .add((Z.TWO.subtract(Z.NEG_ONE.pow(k)).subtract(Z.NEG_ONE.pow(n)).add(2 * n * n)).multiply(n)).divide(4));
   }
 }

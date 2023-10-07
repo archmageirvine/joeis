@@ -2,16 +2,16 @@ package irvine.oeis.a065;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence2;
+import irvine.oeis.Sequence1;
 
 /**
  * A065904 Integers i &gt; 1 for which there is one prime p such that i is a solution mod p of x^4 = 2.
  * @author Sean A. Irvine
  */
-public class A065904 extends Sequence2 {
+public class A065904 extends Sequence1 {
 
   private final long mTarget;
-  private Z mN = Z.ONE;
+  private Z mN = Z.ZERO;
 
   protected A065904(final long target) {
     mTarget = target;

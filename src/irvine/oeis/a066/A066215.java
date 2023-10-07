@@ -3,13 +3,13 @@ package irvine.oeis.a066;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A066215 Numbers which are sums of cubes of some subset of divisors.
  * @author Sean A. Irvine
  */
-public class A066215 extends Sequence1 {
+public class A066215 extends Sequence0 {
 
   private long mN = 0;
 

@@ -18,9 +18,12 @@ public class A066055 extends Sequence1 implements Conjectural {
   private static final int HEURISITC_STEPS = 100;
   private final Sequence mA66054 = new A066054();
   private final TreeSet<Z> mA = new TreeSet<>();
+
   {
+    setOffset(0);
     mA.add(mA66054.next()); // prevent need for isEmpty checking
   }
+
   private long mN = 11572;
 
   @Override

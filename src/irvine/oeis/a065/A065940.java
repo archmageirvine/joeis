@@ -11,6 +11,10 @@ import irvine.oeis.a000.A000408;
  */
 public class A065940 extends A000408 {
 
+  {
+    setOffset(0);
+  }
+
   private static final class State implements Comparable<State> {
     private final Z mN;
     private final Z mA;

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066286.
+ * A066298 a(n) = googol (mod n).
  * @author Sean A. Irvine
  */
 public class A066298 extends Sequence1 {

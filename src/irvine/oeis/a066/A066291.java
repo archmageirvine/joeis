@@ -7,7 +7,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A066286.
+ * A066291 Numbers m such that DivisorSigma(8*k-4, m) mod m = 0 holds presumably for all k; that is, (8*k-4)-power-sums of divisors of m are divisible by m for all k.
  * @author Sean A. Irvine
  */
 public class A066291 extends Sequence1 implements Conjectural {

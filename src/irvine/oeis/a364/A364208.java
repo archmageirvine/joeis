@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A364208.
+ * A364208 allocated for Houston Schuerger.
  * @author Sean A. Irvine
  */
 public class A364208 extends ParallelGenerateGraphsSequence {
@@ -52,8 +52,8 @@ public class A364208 extends ParallelGenerateGraphsSequence {
       //  - if we have already seen both vertices there is nothing to do
       //  - otherwise, determine which vertex is already seen and add the other to the opposite set
       search(left, right, edgeNum + 1); // choose not to use the edge
-      final long a = (1L << mEdges[edgeNum][0]);
-      final long b = (1L << mEdges[edgeNum][1]);
+      final long a = 1L << mEdges[edgeNum][0];
+      final long b = 1L << mEdges[edgeNum][1];
       final long forbidden = a | b;
       final long status = seen & forbidden;
       if (status == 0) {

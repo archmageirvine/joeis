@@ -7,7 +7,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A066286.
+ * A066290 Numbers m such that DivisorSigma(4*k-2, m) mod m = 0 holds presumably for all k; that is, (4k-2)-power-sums of divisors of m are divisible by m for all k.
  * @author Sean A. Irvine
  */
 public class A066290 extends Sequence1 implements Conjectural {

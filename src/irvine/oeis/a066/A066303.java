@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001927;
 
 /**
- * A066286.
+ * A066303 Number of connected reduced partially ordered sets (posets) with n labeled elements.
  * @author Sean A. Irvine
  */
 public class A066303 extends Sequence1 {

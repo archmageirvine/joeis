@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001035;
 
 /**
- * A066286.
+ * A066302 Reduced partially ordered sets (posets) with n labeled elements.
  * @author Sean A. Irvine
  */
 public class A066302 extends Sequence0 {

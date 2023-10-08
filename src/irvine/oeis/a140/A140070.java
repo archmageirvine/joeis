@@ -17,7 +17,8 @@ public class A140070 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return k < 0 || k > n ? Z.ZERO : (k == 0 || k == n ? Z.ONE :
-      triangleElement(n - 1, k).multiply(4).subtract(triangleElement(n - 2, k).multiply(3)).add(triangleElement(n - 2, k - 2)));
+    return k < 0 || k > n ? Z.ZERO : (k == 0 || k == n
+      ? Z.ONE
+      : triangleElement(n - 1, k).multiply(4).subtract(triangleElement(n - 2, k).multiply(3)).add(triangleElement(n - 2, k - 2)));
   }
 }

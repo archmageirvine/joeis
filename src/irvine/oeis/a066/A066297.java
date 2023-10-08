@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006156;
 
 /**
- * A006156 Number of ternary squarefree words of length n.
+ * A066297 Number of ternary squarefree necklaces.
  * @author Sean A. Irvine
  */
 public class A066297 extends A006156 {

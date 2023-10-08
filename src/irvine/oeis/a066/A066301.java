@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A066286.
+ * A066301 a(n) = 0 if n is squarefree, otherwise 1 + a(n/rad(n)) where rad = A007947 (squarefree kernel).
  * @author Sean A. Irvine
  */
 public class A066301 extends MemorySequence {

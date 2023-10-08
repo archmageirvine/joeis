@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A066286.
+ * A066296 a(n) = floor(n^(1/omega(n))).
  * @author Sean A. Irvine
  */
 public class A066296 extends Sequence2 {

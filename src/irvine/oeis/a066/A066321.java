@@ -12,9 +12,7 @@ public class A066321 extends Sequence0 {
   private static final Z[] C = {Z.ZERO, Z.ONE, Z.valueOf(12), Z.valueOf(13)};
   private long mN = -1;
 
-  @Override
-  public Z next() {
-    long m = ++mN;
+  protected Z f(long m) {
     Z res = Z.ZERO;
     long p = 0;
     while (m != 0) {
@@ -23,5 +21,10 @@ public class A066321 extends Sequence0 {
       p += 4;
     }
     return res;
+  }
+
+  @Override
+  public Z next() {
+    return f(++mN);
   }
 }

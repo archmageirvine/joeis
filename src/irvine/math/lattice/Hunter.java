@@ -48,7 +48,7 @@ public class Hunter {
     mCount += count;
   }
 
-  protected boolean isPointAllowed(final long point) {
+  protected boolean isPointAllowed(final Animal animal, final long point) {
     // Check that the point is above right of the origin (and equivalent
     // generalization for higher dimension lattices).
     for (int k = 0; k < mLattice.dimension(); ++k) {
@@ -71,7 +71,7 @@ public class Hunter {
       for (final long p : animal.points()) {
         for (int k = 0; k < mLattice.neighbourCount(p); ++k) {
           final long q = mLattice.neighbour(p, k);
-          if (mForbidden && !isPointAllowed(q)) {
+          if (mForbidden && !isPointAllowed(animal, q)) {
             continue;
           }
           if (!animal.contains(q) && !forbidden.contains(q) && hc.add(q)) {

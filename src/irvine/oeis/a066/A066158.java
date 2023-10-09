@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A001168 Number of fixed polyominoes with n cells.
+ * A066158 Number of fixed polyominoes with n cells and tree-like structure.
  * @author Sean A. Irvine
  */
 public class A066158 extends Sequence1 {

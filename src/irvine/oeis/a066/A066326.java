@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066322.
+ * A066326 a(1) = 5; for n &gt; 1, a(n) is the least k &gt; 0 not already included such that a(m)^2 + k^2 is a square for some m &lt; n.
  * @author Sean A. Irvine
  */
 public class A066326 extends Sequence1 {

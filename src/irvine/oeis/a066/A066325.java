@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A066322.
+ * A066325 Coefficients of unitary Hermite polynomials He_n(x).
  * @author Sean A. Irvine
  */
 public class A066325 extends Sequence0 {

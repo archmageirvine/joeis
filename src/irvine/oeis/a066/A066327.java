@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A066322.
+ * A066327 Binary string which equals n when 1's, 2's, 4's and 8's bits have weights -1, 1, 3, 6 respectively, while the other bits have their usual weights. -1 if no such string exists.
  * @author Sean A. Irvine
  */
 public class A066327 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066322.
+ * A066328 a(n) = sum of indices of distinct prime factors of n; here, index(i-th prime) = i.
  * @author Sean A. Irvine
  */
 public class A066328 extends Sequence1 {

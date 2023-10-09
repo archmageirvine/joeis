@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066322.
+ * A365521 allocated for Jianglin Luo.
  * @author Sean A. Irvine
  */
 public class A365521 extends Sequence1 {

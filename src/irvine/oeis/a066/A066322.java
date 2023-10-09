@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.math.z.Z;
 
 /**
- * A066322.
+ * A066322 Variable terms in period-16 pattern of first differences of binary representation of base i-1 expansion of n.
  * @author Sean A. Irvine
  */
 public class A066322 extends A066321 {

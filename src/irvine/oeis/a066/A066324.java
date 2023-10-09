@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066322.
+ * A066324 Number of endofunctions on n labeled points constructed from k rooted trees.
  * @author Sean A. Irvine
  */
 public class A066324 extends Sequence1 {

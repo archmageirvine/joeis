@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066331.
+ * A066331 Number of fixed hexagonal polyominoes with n cells and tree-like structure.
  * @author Sean A. Irvine
  */
 public class A066331 extends Sequence1 {

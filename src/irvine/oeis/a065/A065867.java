@@ -44,7 +44,7 @@ public class A065867 extends AbstractSequence {
   private final int mMinTerms;
   private Z mPrev = Z.NEG_ONE;
   private int mN = 1;
-  private final Fast mPrime = new Fast();
+  protected final Fast mPrime = new Fast();
 
   protected A065867(final int minTerms, final MemorySequence seq) {
     super(1);
@@ -67,7 +67,7 @@ public class A065867 extends AbstractSequence {
   }
 
   protected boolean accept(final State s) {
-    return mPrime.isPrime(s.mValue) && mPrime.isPrime(s.mNumTerms);
+    return !s.mValue.equals(mPrev) && mPrime.isPrime(s.mValue) && mPrime.isPrime(s.mNumTerms);
   }
 
   @Override
@@ -81,9 +81,6 @@ public class A065867 extends AbstractSequence {
       final State s = mA.pollFirst();
       final int next = s.mLast + 1;
       mA.add(new State(s.mValue.add(mSeq.a(next)), next, s.mNumTerms + 1));
-      if (s.mValue.equals(mPrev)) {
-        continue;
-      }
       if (accept(s)) {
         mPrev = s.mValue;
         return s.mValue;

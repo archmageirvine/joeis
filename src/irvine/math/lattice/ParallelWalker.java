@@ -102,5 +102,4 @@ public class ParallelWalker {
       throw new RuntimeException(e);
     }
   }
-
 }

@@ -7,19 +7,13 @@ import irvine.math.lattice.Animal;
 import irvine.math.lattice.Canons;
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
- * A001997 Number of different shapes formed by bending a piece of wire of length n in the plane.
+ * A066372 Number of different shapes formed by bending a piece of wire of length n in the plane.
  * @author Sean A. Irvine
  */
-public class A066372 extends Sequence0 {
-
-  // todo this is getting wrong answer -- perhaps subtlety around the endpoints
-  // todo also consider within Lattice framework
-  // only multiples of 4 could exhibit the end-point issue
-  // figure 8 construction!
-  // Animals undercounts -- instead we need edge sets -- like from key?
+public class A066372 extends Sequence1 {
 
   private HashSet<String> mWire = new HashSet<>();
 
@@ -92,36 +86,6 @@ public class A066372 extends Sequence0 {
       y = ny;
     }
     return false;
-  }
-
-  private boolean isEndAtOrigin(final String wire) {
-    int dx = 1;
-    int dy = 0;
-    int x = 1;
-    int y = 0;
-    for (int k = 0; k < wire.length(); ++k) {
-      final char c = wire.charAt(k);
-      if (c == 'L') {
-        if (dx != 0) {
-          dy = dx;
-          dx = 0;
-        } else {
-          dx = -dy;
-          dy = 0;
-        }
-      } else if (c == 'R') {
-        if (dx != 0) {
-          dy = -dx;
-          dx = 0;
-        } else {
-          dx = dy;
-          dy = 0;
-        }
-      }
-      x += dx;
-      y += dy;
-    }
-    return x == 0 && y == 0;
   }
 
   private Animal toAnimal(final String wire) {

@@ -837,4 +837,22 @@ public final class LongUtils {
     }
     return true;
   }
+
+  /**
+   * The numbral multiply operation.
+   * @param a multiplicand
+   * @param b multiplier
+   * @return result of multiplication
+   */
+  public static long numbralMultiply(long a, long b) {
+    long sum = 0;
+    while (b != 0) {
+      if ((b & 1) == 1) {
+        sum |= a;
+      }
+      a <<= 1;
+      b >>>= 1;
+    }
+    return sum;
+  }
 }

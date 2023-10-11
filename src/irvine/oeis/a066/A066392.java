@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A066366.
+ * A066392 a(n)^2 is smallest positive square that contains n consecutive internal 0's.
  * @author Sean A. Irvine
  */
 public class A066392 extends Sequence0 {

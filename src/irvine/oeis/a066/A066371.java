@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.math.z.Z;
 
 /**
- * A066366.
+ * A066371 Smallest positive square that contains n consecutive internal 0's.
  * @author Sean A. Irvine
  */
 public class A066371 extends A066392 {

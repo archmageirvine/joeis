@@ -2290,3 +2290,4 @@ A066289 Numbers k such that k divides DivisorSigma(2*j-1, k) for all j; i.e., al
 A066292 Numbers n such that n divides sigma_(2^k)(n), the sum of the 2^k powers of the divisors of n, for all k>1
 A066304 Reduced partially ordered sets (posets) with n unlabeled elements.
 A066305 Number of connected reduced partially ordered sets (posets) with n unlabeled elements
+A066389 Number of 2-generated groups of order n: groups that have a generating set of size <=2, i.e., are cyclic or of the form <a,b>.

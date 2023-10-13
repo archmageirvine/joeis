@@ -81,7 +81,7 @@ public class A005489 extends MemoryFunctionSequence<Integer, Polynomial<Q>> {
     Z sum = Z.ZERO;
     while ((p = part.next()) != null) {
       final Q cx = cx(p);
-      if (!Q.ZERO.equals(cx)) {
+      if (!cx.isZero()) {
         sum = sum.add(per(p));
       }
     }

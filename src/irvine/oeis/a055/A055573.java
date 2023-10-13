@@ -24,7 +24,7 @@ public class A055573 extends Sequence1 {
       ++cnt;
       final Z t = n.toZ();
       n = n.subtract(t);
-      if (Q.ZERO.equals(n)) {
+      if (n.isZero()) {
         return cnt;
       }
       n = n.reciprocal();

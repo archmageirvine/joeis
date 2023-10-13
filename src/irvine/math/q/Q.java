@@ -49,7 +49,8 @@ public class Q implements Comparable<Q>, Serializable {
    * so that the numerator carries the sign. Zero is represented by mP=0
    * and mQ=1.
    */
-  private final Z mP, mQ;
+  private final Z mP;
+  private final Z mQ;
 
   /**
    * Construct the rational integer <code>n</code>.
@@ -438,5 +439,13 @@ public class Q implements Comparable<Q>, Serializable {
    */
   public Q frac() {
     return subtract(floor());
+  }
+
+  /**
+   * Test if this number is zero.
+   * @return true if the number is 0.
+   */
+  public boolean isZero() {
+    return num().isZero();
   }
 }

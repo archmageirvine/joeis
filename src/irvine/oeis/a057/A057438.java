@@ -18,7 +18,7 @@ public class A057438 extends Sequence1 {
     if (mProd.isZero()) {
       mProd = Z.ONE;
       return Z.ONE;
-    } else if (Q.ZERO.equals(mSum)) {
+    } else if (mSum.isZero()) {
       mSum = Q.ONE;
     } else {
       final Z t = mSum.multiply(mProd).toZ();

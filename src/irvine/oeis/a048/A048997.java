@@ -24,7 +24,7 @@ public class A048997 extends A051626 {
         res += f;
         t = t.subtract(f);
         t = t.multiply(10);
-      } while (!Q.ZERO.equals(t));
+      } while (!t.isZero());
     } else {
       final int[] a = new int[period.intValueExact()];
       final int[] b = new int[a.length];

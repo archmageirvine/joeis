@@ -22,7 +22,7 @@ public class A064230 extends Sequence0 {
   private boolean bump(final Matrix<Q> mat) {
     for (long row = mat.rows() - 1; row >= 0; --row) {
       for (long col = mat.cols() - 1; col >= 0; --col) {
-        if (mat.get(row, col).equals(Q.ZERO)) {
+        if (mat.get(row, col).isZero()) {
           mat.set(row, col, Q.ONE);
           return true;
         } else {

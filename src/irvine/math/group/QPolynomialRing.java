@@ -77,7 +77,7 @@ public class QPolynomialRing<E> extends AbstractRing<QPolynomial<E>> {
   public QPolynomial<E> onePlusXToTheN(final E a, final Q n) {
     final QPolynomial<E> p = new QPolynomial<>(mIndeterminate, mZero, mOne);
     p.put(n, a);
-    if (!Q.ZERO.equals(n)) {
+    if (!n.isZero()) {
       p.put(Q.ZERO, mOne);
     }
     return p;
@@ -102,7 +102,7 @@ public class QPolynomialRing<E> extends AbstractRing<QPolynomial<E>> {
    */
   public QPolynomial<E> oneMinusXToTheN(final E a, final Q n) {
     final QPolynomial<E> p = new QPolynomial<>(mIndeterminate, mZero, mOne);
-    if (Q.ZERO.equals(n)) {
+    if (n.isZero()) {
       p.put(n, mElementRing.subtract(mOne, a));
     } else {
       p.put(Q.ZERO, mOne);

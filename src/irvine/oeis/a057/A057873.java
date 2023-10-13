@@ -28,7 +28,7 @@ public class A057873 extends MemorySequence {
       Q p0 = sum;
       Q p1 = Q.ONE;
       Z s = Z.ZERO;
-      while (!Q.ZERO.equals(p1)) {
+      while (!p1.isZero()) {
         final Z a = p0.divide(p1).floor();
         s = s.add(a);
         final Q t = p0.subtract(p1.multiply(a));

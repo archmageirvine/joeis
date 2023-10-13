@@ -27,7 +27,7 @@ public class A083006 extends Sequence1 {
         mBern.add(mBS.nextQ());
         for (int k = 0; k < mN; ++k) {
           final Q b = mBern.get(k);
-          if (!Q.ZERO.equals(b)) {
+          if (!b.isZero()) {
             // Avoid computing binomial if multiplying by 0
             sum = sum.add(b.multiply(Binomial.binomial(mN, k).square()));
           }

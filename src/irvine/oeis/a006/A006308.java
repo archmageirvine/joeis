@@ -93,7 +93,7 @@ public class A006308 extends AbstractSequence {
 //    final CC zeta = ComputableComplexField.SINGLETON.exp(new CC(CR.ZERO, CR.TAU.divide(CR.valueOf(p * p))));
 //    CC z = CC.ONE;
 //    for (int k = 0; k <= c.degree(); ++k) {
-//      if (!c.coeff(k).equals(Q.ZERO)) {
+//      if (!c.coeff(k).isZero()) {
 //        mSum = ComputableComplexField.SINGLETON.add(mSum, ComputableComplexField.SINGLETON.multiply(z, CR.valueOf(c.coeff(k))));
 //      }
 //      z = ComputableComplexField.SINGLETON.multiply(z, zeta);

@@ -29,7 +29,7 @@ public class A052039 extends Sequence1 {
         r = t.subtract(t.toZ());
       }
       final StringBuilder sb = new StringBuilder();
-      while (sb.length() < 20 && !Q.ZERO.equals(r)) {
+      while (sb.length() < 20 && !r.isZero()) {
         r = r.multiply(10);
         final Z t = r.toZ();
         sb.append(t);

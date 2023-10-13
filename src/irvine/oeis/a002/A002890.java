@@ -82,7 +82,7 @@ public class A002890 extends Sequence0 {
     Q res = Q.ZERO;
     for (int k = 0; k <= p.degree(); k += 2) { // all odd terms are 0
       final Q pu = p.coeff(k);
-      if (!Q.ZERO.equals(pu)) {
+      if (!pu.isZero()) {
         res = res.add(pu.multiply(binomialTheoremExpansion(k)));
       }
     }

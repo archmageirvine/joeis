@@ -18,7 +18,7 @@ public class A062560 extends Sequence0 {
 
   @Override
   public Z next() {
-    if (Q.ZERO.equals(mA)) {
+    if (mA.isZero()) {
       return null;
     }
     if (mD == null) {

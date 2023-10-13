@@ -70,14 +70,14 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
    * @param monomial monomial to include
    */
   public void add(final MultivariateMonomial monomial) {
-    if (!Q.ZERO.equals(monomial.getCoefficient())) {
+    if (!monomial.getCoefficient().isZero()) {
       final String key = monomial.termKey();
       final MultivariateMonomial z = get(key);
       //final MultivariateMonomial z = find(monomial);
       //System.out.println("Looked up " + key + " in " + this.toString() + " found " + z);
       if (z == null) {
         put(key, monomial.copy()); // use a copy in case its gets munged elsewhere
-      } else if (Q.ZERO.equals(z.add(monomial.getCoefficient()))) {
+      } else if (z.add(monomial.getCoefficient()).isZero()) {
         remove(key);
       }
     }
@@ -100,14 +100,14 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
    * @param monomial monomial to include
    */
   public void subtract(final MultivariateMonomial monomial) {
-    if (!Q.ZERO.equals(monomial.getCoefficient())) {
+    if (!monomial.getCoefficient().isZero()) {
       final MultivariateMonomial m = monomial.copy();
       m.setCoefficient(monomial.getCoefficient().negate());
       final String key = monomial.termKey();
       final MultivariateMonomial z = get(key);
       if (z == null) {
         put(key, m.copy());
-      } else if (Q.ZERO.equals(z.add(m.getCoefficient()))) {
+      } else if (z.add(m.getCoefficient()).isZero()) {
         remove(key);
       }
     }

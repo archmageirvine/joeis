@@ -21,7 +21,7 @@ public class A060251 extends A000040 {
       final Q r = q.multiply(t);
       Z a = r.toZ();
       final Q b = r.subtract(a);
-      if (Q.ZERO.equals(b)) {
+      if (b.isZero()) {
         return Z.ZERO; // non-repeating
       }
       if (new Q(a, t.subtract(1)).equals(q)) {

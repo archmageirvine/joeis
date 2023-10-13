@@ -24,7 +24,7 @@ public class A060297 extends Sequence1 {
         final Q r = q.multiply(t);
         final Z a = r.toZ();
         final Q b = r.subtract(a);
-        if (Q.ZERO.equals(b)) {
+        if (b.isZero()) {
           return Z.ZERO;
         }
         if (new Q(a, t.subtract(1)).equals(q)) {

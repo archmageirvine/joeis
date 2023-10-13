@@ -1029,7 +1029,7 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return <code>this^e</code>
    */
   public CR pow(final Q e) {
-    if (Q.ZERO.equals(e)) {
+    if (e.isZero()) {
       return CR.ONE;
     } else if (Q.ONE.equals(e)) {
       return this;

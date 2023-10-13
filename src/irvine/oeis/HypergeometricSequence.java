@@ -113,7 +113,7 @@ public class HypergeometricSequence extends AbstractSequence {
       int k = 0;
       while (mNonZero && k < n) { // compute elem * (elem + 1) * (elem + 2) * ... (elem + mExp-1)
         final Q elem = sum.add(k);
-        if (!elem.equals(Q.ZERO)) {
+        if (!elem.isZero()) {
           result = result.multiply(elem);
         } else {
           result = Q.ZERO;

@@ -83,7 +83,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
   public EllipticCurve(final Z c4, final Z c6) {
     final Z c6s = c6.square();
     final Q deltaQ = new Q(c4.pow(3).subtract(c6s), Z1728);
-    if (Q.ZERO.equals(deltaQ) || !deltaQ.isInteger()) {
+    if (deltaQ.isZero() || !deltaQ.isInteger()) {
       throw new ArithmeticException();
     }
     final Z delta = deltaQ.toZ();
@@ -269,7 +269,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
    * @throws ArithmeticException if <code>u</code> is 0.
    */
   public EllipticCurve twist(final Q r, final Q s, final Q t, final Q u) {
-    if (Q.ZERO.equals(u)) {
+    if (u.isZero()) {
       throw new ArithmeticException();
     }
     final Q a1 = a1().add(s.multiply(2)).divide(u);
@@ -590,7 +590,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
     final Q y2 = q.y();
     final Q x2 = q.x();
     if (x1.equals(x2)) {
-      if (!y1.equals(y2) || y1.multiply(2).add(x1.multiply(a1())).add(a3()).equals(Q.ZERO)) {
+      if (!y1.equals(y2) || y1.multiply(2).add(x1.multiply(a1())).add(a3()).isZero()) {
         return EllipticCurvePoint.ZERO;
       }
     }
@@ -649,7 +649,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
    * @return torsion points
    */
   public List<Pair<EllipticCurvePoint, Z>> torsionPoints() {
-    if (!Q.ZERO.equals(a1()) || !Q.ZERO.equals(a3()) || !isIntegral()) {
+    if (!a1().isZero() || !a3().isZero() || !isIntegral()) {
       throw new UnsupportedOperationException();
     }
     final Z delta = discriminant().toZ();

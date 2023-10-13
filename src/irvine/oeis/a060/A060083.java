@@ -24,7 +24,7 @@ public class A060083 extends Sequence0 {
         mE = EulerPolynomials.eulerPolynomial(mN);
         mM = 0;
       }
-    } while (Q.ZERO.equals(mE.coeff(mM)));
+    } while (mE.coeff(mM).isZero());
     return mE.coeff(mM).toZ();
   }
 }

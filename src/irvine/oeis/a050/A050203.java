@@ -66,7 +66,7 @@ public class A050203 extends Sequence1 {
       Polynomial<Q> zk = RING_Q.zero();
       for (int j = 0; j <= w1k.degree(); ++j) {
         final Q c = w1k.coeff(j);
-        if (!c.equals(Q.ZERO)) {
+        if (!c.isZero()) {
           final int s = qdenDegree * w1k.degree() - qdenDegree * j;
           zk = RING_Q.add(zk, RING_Q.multiply(RING_Q.pow(q.left(), j), c).shift(s));
         }

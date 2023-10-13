@@ -93,7 +93,7 @@ public class MultivariateMonomial extends HashMap<Pair<String, Integer>, Z> impl
    */
   public void setCoefficient(final Q coefficient) {
     mCoefficient = coefficient;
-    if (Q.ZERO.equals(mCoefficient)) {
+    if (mCoefficient.isZero()) {
       clear();
       mTotalDegree = Z.ZERO;
       mTermKey = null;
@@ -142,7 +142,7 @@ public class MultivariateMonomial extends HashMap<Pair<String, Integer>, Z> impl
    * @param power power for indexed variable
    */
   public void add(final Pair<String, Integer> key, final Z power) {
-    if (!Q.ZERO.equals(getCoefficient())) {
+    if (!getCoefficient().isZero()) {
       final Z z = get(key).add(power);
       if (z.signum() != 0) {
         put(key, z);
@@ -308,7 +308,7 @@ public class MultivariateMonomial extends HashMap<Pair<String, Integer>, Z> impl
       final int k = e.getKey().right();
       final long s = subs[k % subs.length];
       prod = prod.multiply(new Q(s).pow(e.getValue().intValueExact()));
-      if (Q.ZERO.equals(prod)) {
+      if (prod.isZero()) {
         break; // efficiency
       }
     }

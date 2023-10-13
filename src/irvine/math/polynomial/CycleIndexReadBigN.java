@@ -79,7 +79,7 @@ public final class CycleIndexReadBigN {
           break;
         }
       }
-      if (!Q.ZERO.equals(c)) {
+      if (!c.isZero()) {
         final Z fix = fix(m);
         sum = sum.add(c.multiply(fix.pow(p.length - 1)));
       }

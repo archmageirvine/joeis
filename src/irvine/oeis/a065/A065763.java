@@ -34,7 +34,7 @@ public class A065763 extends Sequence2 {
     final MatrixField<Q> fld = new MatrixField<>(mN, Rationals.SINGLETON);
     long count = 0;
     for (long u = 0; u < 1L << (mN - 1); ++u) {
-      if (!fld.det(toMatrix(GraphFactory.steinhaus(mN, u))).equals(Q.ZERO)) {
+      if (!fld.det(toMatrix(GraphFactory.steinhaus(mN, u))).isZero()) {
         ++count;
       }
     }

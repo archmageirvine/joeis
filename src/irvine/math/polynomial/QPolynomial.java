@@ -138,7 +138,7 @@ public class QPolynomial<E> extends TreeMap<Q, E> {
         // element contains a "+" it is enclosed in parentheses.
         final String eString = protect(c.toString());
         if (!eString.isEmpty() && eString.charAt(0) == '-') {
-          if ("-1".equals(eString) && !Q.ZERO.equals(k)) {
+          if ("-1".equals(eString) && !k.isZero()) {
             sb.append('-');
           } else {
             sb.append(eString);
@@ -147,11 +147,11 @@ public class QPolynomial<E> extends TreeMap<Q, E> {
           if (sb.length() > 0) {
             sb.append('+');
           }
-          if (Q.ZERO.equals(k) || !mOne.equals(c)) {
+          if (k.isZero() || !mOne.equals(c)) {
             sb.append(eString);
           }
         }
-        if (!Q.ZERO.equals(k)) {
+        if (!k.isZero()) {
           sb.append(mIndeterminate);
           if (!Q.ONE.equals(k)) {
             if (k.toString().length() <= 1) {
@@ -228,7 +228,7 @@ public class QPolynomial<E> extends TreeMap<Q, E> {
    * @exception IllegalArgumentException if <code>n</code> is less than 0
    */
   public QPolynomial<E> shift(final Q n) {
-    if (Q.ZERO.equals(n)) {
+    if (n.isZero()) {
       return this;
     }
     final QPolynomial<E> c = new QPolynomial<>(mIndeterminate, mZero, mOne);

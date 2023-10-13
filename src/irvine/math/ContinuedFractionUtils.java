@@ -25,7 +25,7 @@ public final class ContinuedFractionUtils {
       final Z t = n.toZ();
       sum = sum.add(t);
       n = n.subtract(t);
-      if (Q.ZERO.equals(n)) {
+      if (n.isZero()) {
         return sum;
       }
       n = n.reciprocal();
@@ -43,7 +43,7 @@ public final class ContinuedFractionUtils {
       final Z t = n.toZ();
       res.add(t);
       n = n.subtract(t);
-      if (Q.ZERO.equals(n)) {
+      if (n.isZero()) {
         return res;
       }
       n = n.reciprocal();

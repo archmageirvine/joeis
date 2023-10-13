@@ -25,7 +25,7 @@ public class A065019 extends Sequence0 {
     while (Z.ONE.equals(v.floor())) {
       ++cnt;
       v = v.subtract(v.floor());
-      if (Q.ZERO.equals(v)) {
+      if (v.isZero()) {
         break;
       }
       v = v.reciprocal();

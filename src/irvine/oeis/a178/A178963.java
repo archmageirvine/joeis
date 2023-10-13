@@ -29,7 +29,7 @@ public class A178963 extends Sequence0 {
     final ArrayList<Q> sinAdjust = new ArrayList<>();
     for (int k = 0; k <= sin.degree(); ++k) {
       final Q c = sin.get(k);
-      sinAdjust.add(c.equals(Q.ZERO) ? c : c.multiply(Q.THREE.pow(k / 2 + 1).multiply(2)));
+      sinAdjust.add(c.isZero() ? c : c.multiply(Q.THREE.pow(k / 2 + 1).multiply(2)));
     }
     return RING.add(PTHREE, RING.multiply(RING.create(sinAdjust), RING.exp(X_HALF, n), n));
   }
@@ -41,7 +41,7 @@ public class A178963 extends Sequence0 {
     final ArrayList<Q> cosAdjust = new ArrayList<>();
     for (int k = 0; k <= cos.degree(); ++k) {
       final Q c = cos.get(k);
-      cosAdjust.add(c.equals(Q.ZERO) ? c : c.multiply(Q.THREE.pow(k / 2).multiply(2)));
+      cosAdjust.add(c.isZero() ? c : c.multiply(Q.THREE.pow(k / 2).multiply(2)));
     }
     return RING.add(RING.exp(NEG_X, n), RING.multiply(RING.create(cosAdjust), RING.exp(X_HALF, n), n));
   }

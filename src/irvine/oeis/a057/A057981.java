@@ -44,7 +44,7 @@ public class A057981 extends Sequence0 {
     final Matrix<Q> mat = new DefaultMatrix<>(mN, mN, Q.ZERO);
     long cnt = 0;
     do {
-      if (ring.det(mat).equals(Q.ZERO)) {
+      if (ring.det(mat).isZero()) {
         ++cnt;
       }
     } while (bump(mat));

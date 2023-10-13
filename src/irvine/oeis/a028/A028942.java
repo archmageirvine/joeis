@@ -22,7 +22,7 @@ public class A028942 extends Sequence1 {
     if (mX == null) {
       mX = Q.ZERO;
     } else {
-      if (Q.ZERO.equals(mX)) {
+      if (mX.isZero()) {
         mX = Q.ONE;
       } else {
         final Q x = mY.square().subtract(mX.pow(3)).divide(mX.square());

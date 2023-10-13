@@ -19,7 +19,7 @@ public class A055114 extends Sequence1 {
         return true;
       }
       n = n.subtract(t);
-      if (Q.ZERO.equals(n)) {
+      if (n.isZero()) {
         return false;
       }
       n = n.reciprocal();

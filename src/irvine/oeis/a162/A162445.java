@@ -6,7 +6,7 @@ import irvine.oeis.a046.A046977;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A162445 A sequence related to the Beta function
+ * A162445 A sequence related to the Beta function.
  * @author Georg Fischer
  */
 public class A162445 extends SimpleTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A364208 allocated for Houston Schuerger.
+ * A364208 a(n) is the number of full graphs on n unlabeled vertices (see comments for definition of full graph).
  * @author Sean A. Irvine
  */
 public class A364208 extends ParallelGenerateGraphsSequence {

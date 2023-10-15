@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A066398.
+ * A066399 From reversion of e.g.f. for squares.
  * @author Sean A. Irvine
  */
 public class A066399 extends Sequence0 {

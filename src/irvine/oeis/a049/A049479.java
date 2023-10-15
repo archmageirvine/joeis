@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.factor.factor.Jaguar;
+import irvine.factor.factor.LeastPrimeFactorizer;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -14,6 +14,6 @@ public class A049479 extends Sequence2 {
 
   @Override
   public Z next() {
-    return Jaguar.factor(Z.ONE.shiftLeft(++mN).subtract(1)).leastPrimeFactor();
+    return LeastPrimeFactorizer.lpf(Z.ONE.shiftLeft(++mN).subtract(1));
   }
 }

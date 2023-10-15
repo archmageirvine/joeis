@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066376 Number of [*]-divisors d &lt; n such that there is another [*]-divisor d' &lt; n with d [*] d' = n.
+ * A066376 Number of [*]-divisors d &lt;= n such that there is another [*]-divisor d' &lt; n with d [*] d' = n.
  * @author Sean A. Irvine
  */
 public class A066376 extends Sequence1 {

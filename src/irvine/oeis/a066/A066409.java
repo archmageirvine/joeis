@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066398.
+ * A066409 Least positive integer not representable using exactly n 9's and the operations +-* /().
  * @author Sean A. Irvine
  */
 public class A066409 extends Sequence1 {

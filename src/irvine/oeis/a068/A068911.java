@@ -4,7 +4,7 @@ package irvine.oeis.a068;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A068911 Number of n step walks (each step +-1 starting from 0) which are never more than 2 or less than -2.
+ * A068911 Number of n-step walks (each step +-1 starting from 0) which are never more than 2 or less than -2.
  * @author Georg Fischer
  */
 public class A068911 extends GeneratingFunctionSequence {

@@ -48,7 +48,7 @@ public class FilterSequence extends AbstractSequence {
   public static final Predicate<Z> POWER2 = k -> k.bitCount() == 1;
   /** Semiprime terms. */
   public static final Predicate<Z> SEMIPRIME = k -> {
-    final int v = Jaguar.factor(k).isSemiprime();
+    final int v = Jaguar.factorAllowIncomplete(k).isSemiprime();
     if (v == FactorSequence.UNKNOWN) {
       throw new UnsupportedOperationException("Could not determine semiprime status of " + k);
     }

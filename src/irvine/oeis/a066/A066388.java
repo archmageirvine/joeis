@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001359;
 
 /**
- * A066232.
+ * A066388 Numbers j such that j and 2j are both between a pair of twin primes.
  * @author Timothy Rolfe
  * @author Sean A. Irvine
  */

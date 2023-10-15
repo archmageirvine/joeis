@@ -5,7 +5,7 @@ import irvine.oeis.a064.A064535;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A145756 a(n) = ((2^prime(n+2)-2)/prime(n+2))/3, where n &gt;= 1
+ * A145756 a(n) = ((2^prime(n+2)-2)/prime(n+2))/3, where n &gt;= 1.
  * @author Georg Fischer
  */
 public class A145756 extends SimpleTransformSequence {

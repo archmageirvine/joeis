@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066242 The floor((Log x)^2)-perfect numbers, where f-perfect numbers for an arithmetical function f are defined in A066218.
+ * A066242 The floor((log(x))^2)-perfect numbers, where f-perfect numbers for an arithmetical function f are defined in A066218.
  * @author Sean A. Irvine
  */
 public class A066242 extends Sequence1 {

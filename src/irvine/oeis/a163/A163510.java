@@ -5,7 +5,7 @@ import irvine.oeis.a228.A228351;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A163510 Irregular table read by rows: Write n in binary. For each 1, the m-th term of row n is the number of 0&apos;s between the m-th 1, reading right to left, and the (m-1)th 1 (or the right side of the number if m-1 = 0).
+ * A163510 Irregular table read by rows: Write n in binary. For each 1, the m-th term of row n is the number of 0's between the m-th 1, reading right to left, and the (m-1)th 1 (or the right side of the number if m-1 = 0).
  * @author Georg Fischer
  */
 public class A163510 extends SimpleTransformSequence {

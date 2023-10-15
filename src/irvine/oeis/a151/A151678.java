@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A151678 a(n) = sum_{k &gt;= 0} binomial(wt(n+k), 2*k), where wt() = A000120().
+ * A151678 a(n) = sum_{k &gt;= 0} binomial(wt(n+k),2*k), where wt() = A000120().
  * @author Georg Fischer
  */
 public class A151678 extends LambdaSequence {

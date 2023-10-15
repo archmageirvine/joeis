@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A051248 n^a(n) is smallest power of n (with a(n) &gt; 1) which starts with n.
+ * A051248 n^a(n) is the smallest power of n (with a(n) &gt; 1) which starts with n.
  * @author Sean A. Irvine
  */
 public class A051248 extends Sequence1 {

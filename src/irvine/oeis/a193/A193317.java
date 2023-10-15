@@ -6,7 +6,7 @@ import irvine.oeis.a124.A124104;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A193317 Binomial(n, 2)*B(n-1)*(B(n)-B(n-1)), where B() = A000110() are the Bell numbers.
+ * A193317 Binomial(n,2)*B(n-1)*(B(n)-B(n-1)), where B() = A000110() are the Bell numbers.
  * @author Georg Fischer
  */
 public class A193317 extends SimpleTransformSequence {

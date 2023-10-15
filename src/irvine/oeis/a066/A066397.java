@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000984;
 
 /**
- * A066376.
+ * A066397 Reversion of 1 / sqrt(1 - 4*x) (the o.g.f. for the central binomial coefficients A000984) as if it were an e.g.f.
  * @author Sean A. Irvine
  */
 public class A066397 extends A000984 {

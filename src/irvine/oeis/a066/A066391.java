@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A066391.
+ * A066391 a(n)^3 is smallest cube that contains exactly n consecutive internal 0's and no other 0's.
  * @author Sean A. Irvine
  */
 public class A066391 extends Sequence0 {

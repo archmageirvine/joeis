@@ -5,7 +5,7 @@ import irvine.oeis.a079.A079945;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A080702 a(1)=3; for n&gt;1, a(n) = smallest number &gt; a(n-1) such that the condition &quot;if n is in the sequence then a(n) is even&quot; is satisfied.
+ * A080702 a(1)=3; for n&gt;1, a(n) = smallest number &gt; a(n-1) such that the condition "if n is in the sequence then a(n) is even" is satisfied.
  * @author Georg Fischer
  */
 public class A080702 extends SimpleTransformSequence {

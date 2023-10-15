@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A092487 a(n) = least k such that {n+1, n+2, n+3, ... n+k} has a subset the product of whose members with n is a square.
+ * A245499 Table read by rows: n-th row contains the factors which occur when constructing R. L. Graham's sequence A006255, such that the number of factors and also the product is minimal.
  * @author Sean A. Irvine
  */
 public class A245499 extends Sequence1 {

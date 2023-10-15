@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066398.
+ * A066408 Numbers n such that the Eisenstein integer (1 - \u03c9)^n - 1 has prime norm, where \u03c9 = -1/2 + sqrt(-3)/2.
  * @author Sean A. Irvine
  */
 public class A066408 extends Sequence1 {

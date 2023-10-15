@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A297405 Binary &quot;cubes&quot;; numbers whose binary representation consists of three consecutive identical blocks.
+ * A297405 Binary "cubes"; numbers whose binary representation consists of three consecutive identical blocks.
  * @author Georg Fischer
  */
 public class A297405 extends LambdaSequence {

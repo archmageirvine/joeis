@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A164032 Number of &quot;ON&quot; cells in a certain 2-dimensional cellular automaton.
+ * A164032 Number of "ON" cells in a certain 2-dimensional cellular automaton.
  * @author Georg Fischer
  */
 public class A164032 extends LambdaSequence {

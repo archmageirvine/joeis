@@ -6,7 +6,7 @@ import irvine.oeis.a062.A062868;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A179567 Number of permutations of 1..n with the number moved left exceeding the number moved right by 1 or more
+ * A179567 Number of permutations of 1..n with the number moved left exceeding the number moved right by 1 or more.
  * @author Georg Fischer
  */
 public class A179567 extends SimpleTransformSequence {

@@ -8,11 +8,11 @@ import irvine.math.z.Z;
  * Return the indices of semiprimes in an integer sequence.
  * @author Sean A. Irvine
  */
-public abstract class SemiprimeSequence extends AbstractSequence {
+public class SemiprimeSequence extends AbstractSequence {
 
   private final Sequence mSeq;
   private int mN;
-  private boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
 
   /**
    * Construct the sequence. with the specified initial start index.
@@ -40,7 +40,7 @@ public abstract class SemiprimeSequence extends AbstractSequence {
    * @param offset sequence offset
    * @param start initial index
    */
-  protected SemiprimeSequence(final int offset, final Sequence seq) {
+  public SemiprimeSequence(final int offset, final Sequence seq) {
     this(offset, seq, 0);
   }
 

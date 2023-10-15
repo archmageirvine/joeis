@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002479 Numbers of form x^2 + 2y^2.
+ * A002479 Numbers of the form x^2 + 2*y^2.
  * @author Sean A. Irvine
  */
 public class A002479 extends Sequence1 {

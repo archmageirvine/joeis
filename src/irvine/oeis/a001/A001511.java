@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000120;
 
 /**
- * A001511 The ruler function: 2^a(n) divides 2n. Or, a(n) = 2-adic valuation of 2n.
+ * A001511 The ruler function: exponent of the highest power of 2 dividing 2n. Equivalently,  the 2-adic valuation of 2n.
  * @author Sean A. Irvine
  */
 public class A001511 extends A000120 {

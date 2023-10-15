@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A051532 The abelian orders (or abelian numbers): n such that every group of order n is abelian.
+ * A051532 The abelian orders (or abelian numbers): numbers m such that every group of order m is abelian.
  * @author Sean A. Irvine
  */
 public class A051532 extends Sequence1 {

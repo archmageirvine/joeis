@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066232.
+ * A066387 Triangle T(n,m) (1&lt;=m&lt;=n) giving number of maps f:N -&gt; N such that f^m(X)=X+n for all natural numbers X.
  * @author Timothy Rolfe
  * @author Sean A. Irvine
  */

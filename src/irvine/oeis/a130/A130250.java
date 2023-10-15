@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A130250 Minimal index k of a Jacobsthal number such that A001045(k) &gt;= n (the &apos;upper&apos; Jacobsthal inverse).
+ * A130250 Minimal index k of a Jacobsthal number such that A001045(k) &gt;= n (the 'upper' Jacobsthal inverse).
  * @author Georg Fischer
  */
 public class A130250 extends LambdaSequence {

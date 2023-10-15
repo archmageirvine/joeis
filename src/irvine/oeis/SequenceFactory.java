@@ -12,6 +12,9 @@ import java.util.List;
 
 import org.apfloat.ApfloatRuntimeException;
 
+import irvine.factor.factor.Jaguar;
+import irvine.factor.factor.LeastPrimeFactorizer;
+import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.producer.MetaProducer;
 import irvine.oeis.producer.Producer;
@@ -123,7 +126,7 @@ public final class SequenceFactory {
       final int skip = Integer.parseInt(expression.substring(skipPos + ".skip(".length(), expression.length() - 1));
       return sequence(expression.substring(0, skipPos)).skip(skip);
     }
-    if (expression.matches("[a-z][a-z0-9]*\\(.*\\)")) {
+    if (expression.matches("[A-Za-z][A-Za-z0-9]*\\(.*\\)")) {
       final int open = expression.indexOf('(');
       final String function = expression.substring(0, open);
       final String inner = expression.substring(open + 1, expression.length() - 1);
@@ -138,16 +141,37 @@ public final class SequenceFactory {
           return new EulerTransform(1, sequence(inner));
         case "gilbreath":
           return new GilbreathTransformSequence(1, sequence(inner));
+        case "gpf":
+          return new SimpleTransformSequence(sequence(inner), k -> Jaguar.factor(k).largestPrimeFactor());
         case "ieuler":
           return new InverseEulerTransform(1, sequence(inner));
         case "imobius":
           return new InverseMobiusTransformSequence(sequence(inner), 0);
         case "iweigh":
           return new InverseWeighTransform(sequence(inner));
+        case "lpf":
+          return new SimpleTransformSequence(sequence(inner), LeastPrimeFactorizer::lpf);
         case "mobius":
           return new MobiusTransformSequence(sequence(inner), 0);
+        case "mu":
+          return new SimpleTransformSequence(sequence(inner), k -> Z.valueOf(Jaguar.factor(k).mobius()));
+        case "omega":
+          return new SimpleTransformSequence(sequence(inner), k -> Z.valueOf(Jaguar.factor(k).omega()));
+        case "Omega":
+          return new SimpleTransformSequence(sequence(inner), k -> Z.valueOf(Jaguar.factor(k).bigOmega()));
+        case "phi":
+          return new SimpleTransformSequence(sequence(inner), k -> Jaguar.factor(k).phi());
+        case "prime":
+          return new FilterSequence(sequence(inner), FilterSequence.PRIME);
         case "record":
           return new RecordSequence(sequence(inner));
+        case "semiprime":
+          return new FilterSequence(sequence(inner), k -> Jaguar.factor(k).isSemiprime() == FactorSequence.YES);
+        //return new SemiprimeSequence(1, sequence(inner));
+        case "sigma":
+          return new SimpleTransformSequence(sequence(inner), k -> Jaguar.factor(k).sigma());
+        case "sigma0":
+          return new SimpleTransformSequence(sequence(inner), k -> Jaguar.factor(k).sigma0());
         case "stirling1":
           return new Stirling1TransformSequence(1, sequence(inner));
         case "stirling2":

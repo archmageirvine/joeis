@@ -18,7 +18,7 @@ public class FilterPositionSequence extends FilterSequence {
   private long mN; // current index
 
   /**
-   * Creates a sequence of the positions where a digit occurs in another sequence.
+   * Creates a sequence of the positions where a condition is met.
    * @param offset first index
    * @param seq underlying sequence
    * @param start offset of <code>seq</code>
@@ -41,7 +41,7 @@ public class FilterPositionSequence extends FilterSequence {
   }
 
   /**
-   * Creates a sequence of the positions where a digit occurs in another sequence.
+   * Creates a sequence of the positions where a condition is met.
    * @param seq underlying sequence
    * @param start offset of <code>seq</code>
    * @param predicate condition for accepting terms
@@ -51,7 +51,7 @@ public class FilterPositionSequence extends FilterSequence {
   }
 
   /**
-   * Creates a sequence of the positions where a digit occurs in another sequence.
+   * Creates a sequence of the positions where a condition is met.
    * @param offset first index
    * @param seq underlying sequence
    * @param start offset of <code>seq</code>
@@ -62,7 +62,7 @@ public class FilterPositionSequence extends FilterSequence {
   }
 
   /**
-   * Creates a sequence of the positions where a digit occurs in another sequence.
+   * Creates a sequence of the positions where a condition is met.
    * @param offset first index
    * @param seq underlying sequence
    * @param start offset of <code>seq</code>
@@ -73,7 +73,7 @@ public class FilterPositionSequence extends FilterSequence {
   }
 
   /**
-   * Creates a sequence of the positions where a digit occurs in another sequence.
+   * Creates a sequence of the positions where a condition is met.
    * @param seq underlying sequence
    * @param start offset of <code>seq</code>
    * @param value the positions of this number are returned

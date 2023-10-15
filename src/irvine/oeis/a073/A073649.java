@@ -5,7 +5,7 @@ import irvine.oeis.a022.A022005;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A073649 Define the composite field of a prime q to be f(q) = (t,s) if p, q, r are three consecutive primes and q-p = t and r-q = s. This is a sequence of primes q with field (4, 2).
+ * A073649 Define the composite field of a prime q to be f(q) = (t,s) if p, q, r are three consecutive primes and q-p = t and r-q = s. This is a sequence of primes q with field (4,2).
  * @author Georg Fischer
  */
 public class A073649 extends SimpleTransformSequence {

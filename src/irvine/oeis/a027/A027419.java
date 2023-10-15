@@ -4,7 +4,7 @@ import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 
 /**
- * A027419 Number of distinct products ij with 0 &lt;= i, j &lt;= n-th prime.
+ * A027419 Number of distinct products i*j with 0 &lt;= i, j &lt;= n-th prime.
  * @author Sean A. Irvine
  */
 public class A027419 extends A027384 {

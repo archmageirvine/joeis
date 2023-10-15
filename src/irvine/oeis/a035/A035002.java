@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
- * A035002 Square array a(m,n) read by antidiagonals, where a(m,n) = sum(a(m-k,n), k=1..m-1) + sum(a(m,n-k), k=1..n-1).
+ * A035002 Square array read by antidiagonals: T(m,n) = Sum_{k=1..m-1} T(m-k,n) + Sum_{k=1..n-1} T(m,n-k).
  * @author Sean A. Irvine
  */
 public class A035002 extends MemoryFunction2Sequence<Integer, Z> {

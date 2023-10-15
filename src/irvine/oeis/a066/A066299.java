@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A066299 Numbers n such that the digits of n are also digits of binomial(2n,n).
+ * A066299 Numbers k such that the digits of k (counted with multiplicity) are also digits of binomial(2k,k).
  * @author Sean A. Irvine
  */
 public class A066299 extends Sequence1 {

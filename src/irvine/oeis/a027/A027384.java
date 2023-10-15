@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A027384 Number of distinct products ij with 0 &lt;= i, j &lt;= n.
+ * A027384 Number of distinct products i*j with 0 &lt;= i, j &lt;= n.
  * @author Sean A. Irvine
  */
 public class A027384 extends AbstractSequence {

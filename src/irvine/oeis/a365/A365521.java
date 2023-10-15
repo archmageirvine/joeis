@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A365521 allocated for Jianglin Luo.
+ * A365521 Historical prime factor: a(1) = 1, for n &gt; 1, a(n) is the prime factor of n that has not appeared for the longest time in a(1)..a(n-1).
  * @author Sean A. Irvine
  */
 public class A365521 extends Sequence1 {

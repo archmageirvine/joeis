@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A066232.
+ * A066385 Smallest maximum of sum of 3 consecutive terms in any arrangement of [1..n] in a circle.
  * @author Timothy Rolfe
  * @author Sean A. Irvine
  */

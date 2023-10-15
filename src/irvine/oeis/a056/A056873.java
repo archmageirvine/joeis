@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000009;
 import irvine.oeis.a000.A000041;
 
 /**
- * A056873 Numbers n such that n | p(n) - q(n) where p(n) = partition numbers (A000041) and q(n) = partition numbers into distinct parts (A000009).
+ * A056873 Numbers k such that k | p(k) - q(k) where p(k) = partition numbers (A000041) and q(k) = partition numbers into distinct parts (A000009).
  * @author Sean A. Irvine
  */
 public class A056873 extends A000041 {

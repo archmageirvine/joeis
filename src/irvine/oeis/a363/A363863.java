@@ -6,7 +6,7 @@ import irvine.oeis.a016.A016825;
 import irvine.oeis.a080.A080257;
 
 /**
- * A363863 Numbers expressible as j^2 - k^2, 1 &lt;= k &lt;= j-2 (&quot;squares with a square hole&quot;).
+ * A363863 Numbers expressible as j^2 - k^2, 1 &lt;= k &lt;= j-2 ("squares with a square hole").
  * @author Georg Fischer
  */
 public class A363863 extends SetDifferenceSequence {

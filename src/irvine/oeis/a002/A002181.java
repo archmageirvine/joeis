@@ -11,7 +11,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A002181 Least number k such that phi(k) = n, where n runs through the values (A002202) taken by phi.
+ * A002181 Least number k such that phi(k) = m, where m runs through the values (A002202) taken by phi.
  * @author Sean A. Irvine
  */
 public class A002181 extends Sequence1 {

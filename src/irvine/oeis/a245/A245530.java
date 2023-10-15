@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A092487 a(n) = least k such that {n+1, n+2, n+3, ... n+k} has a subset the product of whose members with n is a square.
+ * A245530 a(n) = smallest square which is the product of a minimal set of distinct numbers not less than n.
  * @author Sean A. Irvine
  */
 public class A245530 extends Sequence1 {

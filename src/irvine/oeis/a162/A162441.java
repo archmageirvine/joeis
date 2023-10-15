@@ -5,7 +5,7 @@ import irvine.oeis.a052.A052468;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A162441 Numerators of the column sums of the EG1 matrix coefficients
+ * A162441 Numerators of the column sums of the EG1 matrix coefficients.
  * @author Georg Fischer
  */
 public class A162441 extends SimpleTransformSequence {

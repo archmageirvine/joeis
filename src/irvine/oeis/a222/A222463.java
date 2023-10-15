@@ -5,7 +5,7 @@ package irvine.oeis.a222;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A222463 n*5/gcd(n*5,n+5), n &gt;= 5.
+ * A222463 a(n) = n*5/gcd(n*5,n+5), n &gt;= 5.
  * Recurrence: a(n)=2*a(n-25)-a(n-50)
  * @author Georg Fischer
  */

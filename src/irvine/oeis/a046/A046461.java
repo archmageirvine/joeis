@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.SemiprimeSequence;
 
 /**
- * A046461 Numbers n such that concatenation of numbers from 1 to n is a semiprime.
+ * A046461 Numbers k such that concatenation of numbers from 1 to k is a semiprime.
  * @author Sean A. Irvine
  */
 public class A046461 extends SemiprimeSequence {

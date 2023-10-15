@@ -5,7 +5,7 @@ import irvine.oeis.a082.A082495;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A357531 Final value obtained by traveling clockwise around a circular array with positions numbered clockwise from 1 to n. Each move consists of traveling clockwise k places, where k is the position at the beginning of the move. The first move begins at position 1
+ * A357531 Final value obtained by traveling clockwise around a circular array with positions numbered clockwise from 1 to n. Each move consists of traveling clockwise k places, where k is the position at the beginning of the move. The first move begins at position 1. a(n) is the position at the end of the n-th move.
  * @author Georg Fischer
  */
 public class A357531 extends SimpleTransformSequence {

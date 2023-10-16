@@ -14,7 +14,7 @@ public class NestedSequence extends AbstractSequence {
   private final int mOffsetA;
 
   /**
-   * Constructor with parameters. 
+   * Constructor with parameters.
    * @param offset offset of the resulting sequence
    * @param seqA outer sequence
    * @param seqB inner sequence
@@ -33,6 +33,16 @@ public class NestedSequence extends AbstractSequence {
     if (nB != offset) {
       throw new RuntimeException("offsets do not match: this=" + offset + ", seqB=" + offsetB);
     }
+  }
+
+  /**
+   * Constructor with parameters.
+   * @param offset offset of the resulting sequence
+   * @param seqA outer sequence
+   * @param seqB inner sequence
+   */
+  public NestedSequence(final int offset, final Sequence seqA, final Sequence seqB) {
+    this(offset, seqA, seqB, seqA.getOffset(), seqB.getOffset());
   }
 
   @Override

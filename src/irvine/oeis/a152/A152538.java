@@ -5,7 +5,7 @@ import irvine.oeis.a027.A027293;
 import irvine.oeis.triangle.VectorProduct;
 
 /**
- * A152538 Triangle read by rows, A027293 * (A152537 * 0^(n-k))
+ * A152538 Triangle read by rows, A027293 * (A152537 * 0^(n-k)).
  * @author Georg Fischer
  */
 public class A152538 extends VectorProduct {

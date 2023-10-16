@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A096044 Triangle read by rows: T(n,k) = (n+1,k)-th element of (M^10-M)/9, where M is the infinite lower Pascal&apos;s triangle matrix, 1&lt;=k&lt;=n.
+ * A096044 Triangle read by rows: T(n,k) = (n+1,k)-th element of (M^10-M)/9, where M is the infinite lower Pascal's triangle matrix, 1&lt;=k&lt;=n.
  * @author Georg Fischer
  */
 public class A096044 extends PrependSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A066272 Number of anti-divisors of n.
+ * A066418 Numbers k for which phi(k) + anti-phi(k) = k.
  * @author Sean A. Irvine
  */
 public class A066418 extends Sequence1 {

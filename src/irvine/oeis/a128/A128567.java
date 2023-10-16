@@ -5,7 +5,7 @@ import irvine.oeis.a047.A047812;
 import irvine.oeis.triangle.Product;
 
 /**
- * A128567 Matrix square, T(n,k), of Parker&apos;s partition triangle A047812, read by rows (n &gt;= 1 and 0 &lt;= k &lt;= n-1).
+ * A128567 Matrix square, T(n,k), of Parker's partition triangle A047812, read by rows (n &gt;= 1 and 0 &lt;= k &lt;= n-1).
  * @author Georg Fischer
  */
 public class A128567 extends Product {

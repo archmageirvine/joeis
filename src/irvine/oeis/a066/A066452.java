@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A066272 Number of anti-divisors of n.
+ * A066452 Anti-phi(n).
  * @author Sean A. Irvine
  */
 public class A066452 extends Sequence2 {

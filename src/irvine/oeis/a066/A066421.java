@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066272.
+ * A066421 a(n) = least k &gt; 0 such that sigma^(k)(n) + 1 is prime, if such k exists; otherwise 0, where sigma^(k) denotes application of sigma k times.
  * @author Sean A. Irvine
  */
 public class A066421 extends Sequence1 {

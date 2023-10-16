@@ -5,7 +5,7 @@ import irvine.oeis.a047.A047999;
 import irvine.oeis.triangle.Inverse;
 
 /**
- * A166282 Matrix inverse of Sierpinski&apos;s triangle (A047999, Pascal&apos;s triangle mod 2).
+ * A166282 Matrix inverse of Sierpinski's triangle (A047999, Pascal's triangle mod 2).
  * @author Georg Fischer
  */
 public class A166282 extends Inverse {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.UnimplementedSequence;
 
 /**
- * A002304 Numerators of coefficients in asymptotic expansion of (2/Pi)*Integral_{0..inf} (sin x / x)^n dx.
+ * A002304 Numerators of coefficients in asymptotic expansion of (2/Pi)*Integral_{0..oo} (sin x / x)^n dx.
  * @author Sean A. Irvine
  */
 public class A002304 extends Sequence0 implements UnimplementedSequence {

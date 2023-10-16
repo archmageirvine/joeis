@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A217260 E.g.f. 2*arctan(1+x) - Pi/2.
+ * A217260 Expansion of e.g.f. 2*arctan(1+x) - Pi/2.
  * E.g.f.: 0
  * @author Georg Fischer
  */

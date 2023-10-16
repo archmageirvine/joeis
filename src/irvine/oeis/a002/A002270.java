@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A002270 Composite n such that n*sigma(n) == 2 (mod phi(n)).
+ * A002270 Composite numbers k such that k*sigma(k) == 2 (mod phi(k)).
  * @author Sean A. Irvine
  */
 public class A002270 extends FiniteSequence {

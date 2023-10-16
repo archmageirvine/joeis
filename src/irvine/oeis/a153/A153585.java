@@ -6,7 +6,7 @@ import irvine.oeis.a053.A053121;
 import irvine.oeis.triangle.VectorProduct;
 
 /**
- * A153585 Convolution triangle, A053121 * (A001405 * 0^(n-k))
+ * A153585 Convolution triangle, A053121 * (A001405 * 0^(n-k)).
  * @author Georg Fischer
  */
 public class A153585 extends VectorProduct {

@@ -6,7 +6,7 @@ import irvine.oeis.a034.A034491;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366575.
+ * A366636 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A366636 extends SimpleTransformSequence {

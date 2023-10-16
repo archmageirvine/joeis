@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A050268 Primes of the form 36*n^2 - 810*n + 2753, listed in order of increasing parameter n &gt;= 0.
+ * A050268 Primes of the form 36*k^2 - 810*k + 2753, listed in order of increasing parameter k &gt;= 0.
  * @author Georg Fischer
  */
 public class A050268 extends PrimeSubsequence {

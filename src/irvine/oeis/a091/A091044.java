@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A091044 One half of odd-numbered entries of even-numbered rows of Pascal&apos;s triangle A007318.
+ * A091044 One half of odd-numbered entries of even-numbered rows of Pascal's triangle A007318.
  * @author Georg Fischer
  */
 public class A091044 extends PrependSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.math.z.Z;
 
 /**
- * A134771 A007318^(-2) * A134770.
+ * A134771 A134770 interleaved with threes.
  * @author Georg Fischer
  */
 public class A134771 extends A134770 {

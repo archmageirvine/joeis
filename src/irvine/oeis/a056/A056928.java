@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A056928 Average of smallest prime greater than n^2 and largest prime less than n^2.
+ * A056928 Average of the smallest prime greater than n^2 and the largest prime less than n^2.
  * @author Sean A. Irvine
  */
 public class A056928 extends Sequence2 {

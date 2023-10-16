@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A178870 Signed Delannoy triangle convolved with 10^n
+ * A178870 Signed Delannoy triangle convolved with 10^n.
  * @author Georg Fischer
  */
 public class A178870 extends GeneratingFunctionTriangle {

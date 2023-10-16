@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a062.A062394;
 
 /**
- * A366582 allocated for Sean A. Irvine.
+ * A366582 Numbers k such that 6^k + 1 is a semiprime.
  * @author Sean A. Irvine
  */
 public class A366582 extends FilterPositionSequence {

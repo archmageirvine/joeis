@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A136330 A triangular sequence from 2^n times the coefficients of characteristic polynomials of a rational tridiagonal matrix type: M(3)= {{1/2,-1,0} {-1,1/2,-m}, {0,-1,1/2}}};m=-1; polynomial recursion associated is: p(x, n) = (1 - 2*x)*p(x, n - 1)/2 - p(x, n - 2)
+ * A136330 A triangular sequence from 2^n times the coefficients of characteristic polynomials of a rational tridiagonal matrix type: M(3)= {{1/2,-1,0} {-1,1/2,-m}, {0,-1,1/2}}};m=-1; polynomial recursion associated is: p(x, n) = (1 - 2*x)*p(x, n - 1)/2 - p(x, n - 2);.
  * @author Georg Fischer
  */
 public class A136330 extends PrependSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A078806 Triangular array T given by T(n,k)= number of 01-words of length n having exactly k 1&apos;s, every runlength of 1&apos;s odd and initial letter 1.
+ * A078806 Triangular array T given by T(n,k)= number of 01-words of length n having exactly k 1's, every runlength of 1's odd and initial letter 1.
  * @author Georg Fischer
  */
 public class A078806 extends PrependSequence {

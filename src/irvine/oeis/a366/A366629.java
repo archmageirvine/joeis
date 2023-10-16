@@ -5,7 +5,7 @@ import irvine.oeis.a062.A062394;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366575.
+ * A366629 Sum of the divisors of 6^n+1.
  * @author Sean A. Irvine
  */
 public class A366629 extends SimpleTransformSequence {

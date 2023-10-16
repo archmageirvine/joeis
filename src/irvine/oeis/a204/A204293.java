@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A204293 Pascal&apos;s triangle interspersed with rows of zeros, and the rows of Pascal&apos;s triangle are interspersed with zeros.
+ * A204293 Pascal's triangle interspersed with rows of zeros, and the rows of Pascal's triangle are interspersed with zeros.
  * @author Georg Fischer
  */
 public class A204293 extends GeneratingFunctionTriangle {

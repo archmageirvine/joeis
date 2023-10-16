@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A238339 Square number array T(n,k) = (2*n^(k+1)-n-1)/(n-1), read by antidiagonals.
+ * A238339 Square number array read by ascending antidiagonals: T(1,k) = 2*k + 1, and T(n,k) = (2*n^(k+1)-n-1)/(n-1) otherwise.
  * @author Georg Fischer
  */
 public class A238339 extends UpperLeftTriangle {

@@ -5,7 +5,7 @@ import irvine.oeis.a024.A024062;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366575.
+ * A366621 Number of divisors of 6^n-1.
  * @author Sean A. Irvine
  */
 public class A366621 extends SimpleTransformSequence {

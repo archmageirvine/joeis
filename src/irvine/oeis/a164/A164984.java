@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A164984 Odd (Jacobsthal) triangle
+ * A164984 Odd (Jacobsthal) triangle.
  * @author Georg Fischer
  */
 public class A164984 extends PrependSequence {

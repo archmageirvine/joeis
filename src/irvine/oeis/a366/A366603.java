@@ -5,7 +5,7 @@ import irvine.oeis.a024.A024036;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366575.
+ * A366603 Sum of the divisors of 4^n-1.
  * @author Sean A. Irvine
  */
 public class A366603 extends SimpleTransformSequence {

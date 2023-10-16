@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A143623 Decimal expansion of the constant cos(1) + sin(1) = 1.38177 32906 ... .
+ * A143623 Decimal expansion of the constant cos(1) + sin(1).
  * Formula: sqrt(1+sin(2))
  * @author Georg Fischer
  */

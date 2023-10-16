@@ -5,7 +5,7 @@ import irvine.oeis.a034.A034474;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366575.
+ * A366617 Sum of the divisors of 5^n+1.
  * @author Sean A. Irvine
  */
 public class A366617 extends SimpleTransformSequence {

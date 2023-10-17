@@ -6,7 +6,7 @@ import irvine.oeis.a268.A268335;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366438 Name?
+ * A366438 The number of divisors of the exponentially odd numbers (A268335).
  * @author Georg Fischer
  */
 public class A366438 extends SimpleTransformSequence {

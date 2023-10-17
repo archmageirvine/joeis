@@ -6,7 +6,7 @@ import irvine.oeis.a268.A268335;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366535 Name?
+ * A366535 The sum of unitary divisors of the exponentially odd numbers (A268335).
  * @author Georg Fischer
  */
 public class A366535 extends SimpleTransformSequence {

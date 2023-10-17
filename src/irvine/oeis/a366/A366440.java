@@ -6,7 +6,7 @@ import irvine.oeis.a004.A004709;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366440 Name?
+ * A366440 The sum of divisors of the cubefree numbers (A004709).
  * @author Georg Fischer
  */
 public class A366440 extends SimpleTransformSequence {

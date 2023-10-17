@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000009;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366317 Name?
+ * A366317 Number of unordered pairs of strict integer partitions of n.
  * @author Georg Fischer
  */
 public class A366317 extends SimpleTransformSequence {

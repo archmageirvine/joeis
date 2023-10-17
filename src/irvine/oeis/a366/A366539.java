@@ -6,7 +6,7 @@ import irvine.oeis.a138.A138302;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366539 Name?
+ * A366539 The sum of unitary divisors of the exponentially 2^n-numbers (A138302).
  * @author Georg Fischer
  */
 public class A366539 extends SimpleTransformSequence {

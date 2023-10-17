@@ -1001,6 +1001,15 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
+   * Real modulo.
+   * @param m modulus
+   * @return <code>this (mod m)</code>
+   */
+  public CR mod(final CR m) {
+    return subtract(m.multiply(divide(m).floor()));
+  }
+
+  /**
    * Square a real number.
    * @return square
    */

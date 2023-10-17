@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007310;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366441 Name?
+ * A366441 The number of divisors of the 5-rough numbers (A007310).
  * @author Georg Fischer
  */
 public class A366441 extends SimpleTransformSequence {

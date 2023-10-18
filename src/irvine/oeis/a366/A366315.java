@@ -17,9 +17,8 @@ public class A366315 extends ParallelGenerateGraphsSequence {
   }
 
   private boolean isEulerian(final Graph graph) {
-    int odd = 0;
     for (int k = 0; k < graph.order(); ++k) {
-      if ((graph.degree(k) & 1) == 1 && ++odd > 2) {
+      if ((graph.degree(k) & 1) == 1) {
         return false;
       }
     }
@@ -36,7 +35,7 @@ public class A366315 extends ParallelGenerateGraphsSequence {
     gg.setVertices(mN);
     gg.setMinEdges(0);
     gg.setMaxEdges((mN - 1) * mN / 2);
-    gg.setMinDeg(0);
+    gg.setMinDeg(2);
     gg.setMaxDeg(mN);
     gg.setConnectionLevel(1);
   }

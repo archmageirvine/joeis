@@ -2,12 +2,13 @@ package irvine.oeis.a048;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A048385 In base-10 notation replace digits of n with their squared values (Version 1).
  * @author Sean A. Irvine
  */
-public class A048385 extends AbstractSequence {
+public class A048385 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -46,4 +47,21 @@ public class A048385 extends AbstractSequence {
     } while (m != 0);
     return new Z(sb.reverse());
   }
+
+  @Override
+  public Z a(final int n) {
+    final StringBuilder sb = new StringBuilder();
+    long m = n;
+    do {
+      sb.append(EXPANSIONS[(int) (m % 10)]);
+      m /= 10;
+    } while (m != 0);
+    return new Z(sb.reverse());
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return a(n.intValueExact());
+  }
+
 }

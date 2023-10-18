@@ -3,7 +3,6 @@ package irvine.oeis;
 import java.util.function.Function;
 
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 
 /**
  * This class builds an infinite sequence from a lambda expression.
@@ -20,65 +19,42 @@ import irvine.math.z.ZUtils;
  * of the lambda expression result.
  * @author Georg Fischer
  */
-public class LambdaSequence extends AbstractSequence {
+public class LambdaSequence extends AbstractSequence implements DirectSequence {
 
   private int mN; // current index
   private final Function<Integer, Z> mLambda; // lambda expression n -> f(n)
-  private final Z[] mInitTerms; // initial terms
-  private final int mInitNo; // number of initial terms
-  private int mIn; // current index in mInitTerms
 
   /**
    * Construct the sequence with offset 0 and no initial terms.
-   *
-   * @param offset first index
    * @param lambda lambda expression for an index variable starting at <code>offset</code>.
    */
   public LambdaSequence(final Function<Integer, Z> lambda) {
-    this(0, lambda, new Z[0]);
+    this(0, lambda);
   }
 
   /**
    * Construct the sequence with offset and no initial terms.
-   *
    * @param offset first index
    * @param lambda lambda expression for an index variable starting at <code>offset</code>.
    */
   public LambdaSequence(final int offset, final Function<Integer, Z> lambda) {
-    this(offset, lambda, new Z[0]);
-  }
-
-  /**
-   * Construct the sequence with offset and initial terms.
-   *
-   * @param offset first index
-   * @param lambda lambda expression for an index variable starting at <code>offset</code>.
-   * @param initTerms String of comma separated integers
-   */
-  public LambdaSequence(final int offset, final Function<Integer, Z> lambda, final String initTerms) {
-    this(offset, lambda, ZUtils.toZ(initTerms));
-  }
-
-  /**
-   * Construct the sequence with offset and initial terms.
-   *
-   * @param offset first index
-   * @param lambda lambda expression for an index variable starting at <code>offset</code>.
-   * @param initTerms String of comma separated integers
-   */
-  public LambdaSequence(final int offset, final Function<Integer, Z> lambda, final Z... initTerms) {
     super(offset);
     mN = offset - 1;
     mLambda = lambda;
-    mInitTerms = initTerms;
-    mInitNo = mInitTerms.length;
-    mIn = -1;
   }
 
   @Override
   public Z next() {
-    ++mN;
-    ++mIn;
-    return (mIn < mInitNo) ? mInitTerms[mIn] : mLambda.apply(mN);
+    return a(++mN);
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return a(n.intValueExact());
+  }
+
+  @Override
+  public Z a(final int n) {
+    return mLambda.apply(n);
   }
 }

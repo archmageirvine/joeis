@@ -157,6 +157,12 @@ public interface Graph {
   boolean isHamiltonian();
 
   /**
+   * Test if the graph is Eulerian (every vertex has even degree).
+   * @return true iff graph is Eulerian
+   */
+  boolean isEulerian();
+
+  /**
    * Compute the girth of the graph.  That is, compute the length of the smallest
    * cycle in the graph, or 0 if the graph is acyclic.
    * @return the girth

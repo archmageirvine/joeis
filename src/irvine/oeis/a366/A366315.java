@@ -16,18 +16,9 @@ public class A366315 extends ParallelGenerateGraphsSequence {
     super(0, 0, false, false, false);
   }
 
-  private boolean isEulerian(final Graph graph) {
-    for (int k = 0; k < graph.order(); ++k) {
-      if ((graph.degree(k) & 1) == 1) {
-        return false;
-      }
-    }
-    return true;
-  }
-
   @Override
   protected long getCount(final Graph graph) {
-    return isEulerian(graph) && !graph.isHamiltonian() && GraphUtils.isOneTough(graph) ? 1 : 0;
+    return graph.isEulerian() && !graph.isHamiltonian() && GraphUtils.isOneTough(graph) ? 1 : 0;
   }
 
   @Override

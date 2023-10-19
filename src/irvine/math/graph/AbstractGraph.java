@@ -53,6 +53,16 @@ public abstract class AbstractGraph implements Graph {
   }
 
   @Override
+  public boolean isEulerian() {
+    for (int k = 0; k < order(); ++k) {
+      if ((degree(k) & 1) == 1) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  @Override
   public Graph copy() {
     return copy(order());
   }

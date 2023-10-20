@@ -140,7 +140,7 @@ public final class MeshIncrement {
       }
     }
     if (NEW_TILLMAN > 0) {
-      System.err.println("New Tillan factorizations: " + NEW_TILLMAN);
+      System.err.println("New Tillman factorizations: " + NEW_TILLMAN);
     }
     if (NEW_JAGUAR > 0) {
       System.err.println("New Jaguar factorizations: " + NEW_JAGUAR);

@@ -29,19 +29,16 @@ public class A000593 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z next() {
-    final FactorSequence fs = Jaguar.factor(++mN);
-    Z prod = Z.ONE;
-    for (final Z p : fs.toZArray()) {
-      if (!Z.TWO.equals(p)) {
-        final int e = fs.getExponent(p);
-        prod = prod.multiply(p.pow(e + 1).subtract(1)).divide(p.subtract(1));
-      }
-    }
-    return prod;
+    return a(Z.valueOf(++mN));
   }
 
   @Override
   public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
+  @Override
+  public Z a(final Z n) {
     final FactorSequence fs = Jaguar.factor(n);
     Z prod = Z.ONE;
     for (final Z p : fs.toZArray()) {
@@ -52,11 +49,5 @@ public class A000593 extends AbstractSequence implements DirectSequence {
     }
     return prod;
   }
-
-  @Override
-  public Z a(final Z n) {
-    return a(n.intValueExact());
-  }
-
 }
 

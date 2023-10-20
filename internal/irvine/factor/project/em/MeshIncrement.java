@@ -28,8 +28,8 @@ public final class MeshIncrement {
   static {
     Arrays.fill(MIN_LENGTH_COMPOSITE, Integer.MAX_VALUE);
   }
-  private static long NEW_TILLMAN = 0;
-  private static long NEW_JAGUAR = 0;
+  private static long sNewTillman = 0;
+  private static long sNewJaguar = 0;
 
   private static void writeFactors(final String line, final int openParen, final FactorSequence fs, final PrintStream out) {
     for (final Z f : fs.toZArray()) {
@@ -81,16 +81,16 @@ public final class MeshIncrement {
     if (level <= tillman[0] && length <= tillman[1]) {
       final Z n = new Z(line.substring(openParen + 1, closeParen));
       System.err.println("Attempting to Tillman factor level " + level + " n=" + n);
-      ++NEW_TILLMAN;
+      ++sNewTillman;
       writeFactors(line, openParen, TILLMAN.factorize(n), System.out);
     } else if (level <= jaguar[0] && length <= jaguar[1]) {
       final Z n = new Z(line.substring(openParen + 1, closeParen));
       System.err.println("Attempting to Jaguar factor level " + level + " n=" + n);
       try {
         final FactorSequence fs = Jaguar.factor(n);
-        ++NEW_JAGUAR;
+        ++sNewJaguar;
         writeFactors(line, openParen, fs, System.out);
-      } catch(final UnsupportedOperationException e) {
+      } catch (final UnsupportedOperationException e) {
         // No it was not factored
         System.out.println(line);
       }
@@ -139,11 +139,11 @@ public final class MeshIncrement {
         System.err.println(k + " " + NUM_COMPOSITES[k] + " C" + MIN_LENGTH_COMPOSITE[k]);
       }
     }
-    if (NEW_TILLMAN > 0) {
-      System.err.println("New Tillman factorizations: " + NEW_TILLMAN);
+    if (sNewTillman > 0) {
+      System.err.println("New Tillman factorizations: " + sNewTillman);
     }
-    if (NEW_JAGUAR > 0) {
-      System.err.println("New Jaguar factorizations: " + NEW_JAGUAR);
+    if (sNewJaguar > 0) {
+      System.err.println("New Jaguar factorizations: " + sNewJaguar);
     }
   }
 }

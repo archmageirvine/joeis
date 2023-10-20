@@ -14,6 +14,7 @@ import irvine.oeis.a000.A000040;
 public class A007504 extends AbstractSequence implements DirectSequence {
 
   private final PartialSumSequence mSeq = new PartialSumSequence(new A000040());
+  private Fast mPrime = null;
   private int mN = -1;
 
   /** Construct the sequence. */
@@ -28,9 +29,11 @@ public class A007504 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
+    if (mPrime == null) {
+      mPrime = new Fast();
+    }
     Z sum = Z.ZERO;
     Z p = Z.ONE;
-    Fast mPrime = new Fast();
     for (int k = 1; k <= n; ++k) {
       p = mPrime.nextPrime(p);
       sum = sum.add(p);

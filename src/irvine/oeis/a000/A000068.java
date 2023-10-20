@@ -1,6 +1,5 @@
 package irvine.oeis.a000;
 
-import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -11,12 +10,11 @@ import irvine.oeis.Sequence1;
 public class A000068 extends Sequence1 {
 
   private long mN = 0;
-  private final Fast mPrime = new Fast();
 
   @Override
   public Z next() {
     while (true) {
-      if (mPrime.isPrime(Z.valueOf(++mN).square().square().add(1))) {
+      if (Z.valueOf(++mN).pow(4).add(1).isProbablePrime()) {
         return Z.valueOf(mN);
       }
     }

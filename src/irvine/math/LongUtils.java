@@ -58,8 +58,11 @@ public final class LongUtils {
    * @return <code>a^e mod n</code>
    */
   public static long modPow(long a, long e, final long n) {
-    if (n <= 0 || n > MODLIMIT) {
-      throw new IllegalArgumentException("Modulus cannot be nonpositve or greater than " + MODLIMIT);
+    if (n > MODLIMIT) {
+      return Z.valueOf(a).modPow(Z.valueOf(e), Z.valueOf(n)).longValueExact();
+    }
+    if (n <= 0) {
+      throw new IllegalArgumentException("Modulus cannot be nonpositve or greater than " + MODLIMIT + " given " + n);
     }
     if (a < 0) {
       throw new IllegalArgumentException("Base can only be nonnegative in this implementation");

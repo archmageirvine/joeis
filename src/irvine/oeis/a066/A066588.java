@@ -10,11 +10,6 @@ import irvine.oeis.a000.A000312;
  */
 public class A066588 extends A000312 {
 
-  {
-    setOffset(1);
-    super.next();
-  }
-
   @Override
   public Z next() {
     return Z.valueOf(ZUtils.digitSum(super.next()));

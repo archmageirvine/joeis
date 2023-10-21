@@ -13,6 +13,6 @@ public class A366539 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A366539() {
-    super(0, new A138302(), v -> Jaguar.factor(v).unitarySigma());
+    super(1, new A138302(), v -> Jaguar.factor(v).unitarySigma());
   }
 }

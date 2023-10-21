@@ -13,6 +13,6 @@ public class A245421 extends EulerTransform {
 
   /** Construct the sequence. */
   public A245421() {
-    super(1, new PeriodicSequence(2, -1, 0, -1, -1, 0, -1, 2, 0), 1);
+    super(-1, new PeriodicSequence(new long[] { 2, -1, 0, -1, -1, 0, -1, 2, 0 }), 1);
   }
 }

@@ -12,6 +12,6 @@ public class A136330 extends PrependSequence {
 
   /** Construct the sequence. */
   public A136330() {
-    super(new GeneratingFunctionTriangle(1, "[1]", "[1,-1,2,4,0,0,0,0,0,0]"), 1);
+    super(1, new GeneratingFunctionTriangle(1, "[1]", "[1,-1,2,4,0,0,0,0,0,0]"), 1);
   }
 }

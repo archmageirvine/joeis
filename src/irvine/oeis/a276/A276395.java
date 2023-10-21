@@ -8,10 +8,9 @@ import irvine.oeis.recur.PeriodicSequence;
  * @author Georg Fischer
  */
 public class A276395 extends PeriodicSequence {
-  
+
   /** Construct the sequence. */
   public A276395() {
-    super(1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1);
-    setOffset(1);
-  }
+    super(1, "1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,0,1,1,0,1,1,0,1");
+ }
 }

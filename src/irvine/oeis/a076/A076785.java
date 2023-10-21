@@ -11,7 +11,6 @@ public class A076785 extends PeriodicSequence {
 
   /** Construct the sequence. */
   public A076785() {
-    super(1, 1, 1, 1, 1, 1, 3, 4, 1, 13, 13, 1, 3, 12, 3, 1, 13, 13, 1, 4, 3, 1, 1, 1);
-    setOffset(1);
+    super(1, "1,1,1,1,1,1,3,4,1,13,13,1,3,12,3,1,13,13,1,4,3,1,1,1");
   }
 }

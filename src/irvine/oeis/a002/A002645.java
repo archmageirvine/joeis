@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002645 Quartan primes: primes of the form x^4 + y^4, x&gt;0, y&gt;0.
+ * A002645 Quartan primes: primes of the form x^4 + y^4, x &gt; 0, y &gt; 0.
  * @author Sean A. Irvine
  */
 public class A002645 extends Sequence1 {

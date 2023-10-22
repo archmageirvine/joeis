@@ -6,7 +6,7 @@ import irvine.oeis.a034.A034491;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366636 allocated for Sean A. Irvine.
+ * A366636 Number of distinct prime divisors of 7^n + 1.
  * @author Sean A. Irvine
  */
 public class A366636 extends SimpleTransformSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000108;
 
 /**
- * A244559 Numbers obtained by concatenating the squares of the digits of n!.
+ * A244746 Numbers obtained by concatenating the squares of the digits of Catalan(n).
  * @author Sean A. Irvine
  */
 public class A244746 extends Sequence0 {

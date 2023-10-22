@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a024.A024140;
 
 /**
- * A049479 Smallest prime dividing 2^n - 1.
+ * A366717 Smallest prime dividing 12^n - 1.
  * @author Sean A. Irvine
  */
 public class A366717 extends Sequence1 {

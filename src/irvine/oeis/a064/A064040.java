@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064040 Number of distinct prime divisors of n is a prime.
+ * A064040 Integers whose number of distinct prime divisors is prime.
  * @author Sean A. Irvine
  */
 public class A064040 extends Sequence1 {

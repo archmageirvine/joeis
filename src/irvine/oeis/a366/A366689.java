@@ -5,7 +5,7 @@ import irvine.oeis.a034.A034524;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366575.
+ * A366689 Sum of the divisors of 11^n+1.
  * @author Sean A. Irvine
  */
 public class A366689 extends SimpleTransformSequence {

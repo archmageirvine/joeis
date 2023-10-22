@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A119274 Triangle of coefficients of numerators in Pad√© approximation to exp(x).
+ * A119274 Triangle of coefficients of numerators in Pad\u00e9 approximation to exp(x).
  * @author Georg Fischer
  */
 public class A119274 extends LambdaTriangle {

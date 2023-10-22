@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002732 Numbers n such that (4n^2 + 1)/5 is prime.
+ * A002732 Numbers k such that (4*k^2 + 1)/5 is prime.
  * @author Sean A. Irvine
  */
 public class A002732 extends Sequence1 {

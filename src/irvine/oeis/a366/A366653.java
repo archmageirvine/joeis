@@ -5,7 +5,7 @@ import irvine.oeis.a024.A024088;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366575.
+ * A366653 Sum of the divisors of 8^n-1.
  * @author Sean A. Irvine
  */
 public class A366653 extends SimpleTransformSequence {

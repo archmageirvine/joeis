@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A066400/
+ * A066447 Number of basis partitions (or basic partitions) of n.
  * @author Sean A. Irvine
  */
 public class A066447 extends Sequence0 {

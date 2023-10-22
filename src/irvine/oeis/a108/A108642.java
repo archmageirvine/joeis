@@ -5,7 +5,7 @@ package irvine.oeis.a108;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A108642 18 - 129*n/2 + 601*n^2/4 - 66*n^3 + 33*n^4/4.
+ * A108642 a(n) =  (72 - 258*n + 601*n^2 - 264*n^3 + 33*n^4)/4.
  * @author Georg Fischer
  */
 public class A108642 extends HolonomicRecurrence {

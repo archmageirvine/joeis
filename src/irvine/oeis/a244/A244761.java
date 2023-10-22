@@ -6,7 +6,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000032;
 
 /**
- * A244559 Numbers obtained by concatenating the squares of the digits of n!.
+ * A244761 Numbers obtained by concatenating the squares of the digits of Lucas(n).
  * @author Sean A. Irvine
  */
 public class A244761 extends Sequence0 {

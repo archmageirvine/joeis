@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A002655 Expansion of Product_{i &gt;= 1} (1-q^i)(1-q^{7i}).
+ * A002655 Expansion of Product_{i &gt;= 1} (1 - q^i)*(1 - q^(7*i)).
  * @author Sean A. Irvine
  */
 public class A002655 extends Sequence0 {

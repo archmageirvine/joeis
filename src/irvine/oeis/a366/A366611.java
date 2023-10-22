@@ -6,7 +6,7 @@ import irvine.oeis.a024.A024049;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366611 allocated for Sean A. Irvine.
+ * A366611 Number of distinct prime divisors of 5^n - 1.
  * @author Sean A. Irvine
  */
 public class A366611 extends SimpleTransformSequence {

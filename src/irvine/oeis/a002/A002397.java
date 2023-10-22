@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A002397 a(n) = n! * lcm({1, 2, .. n + 1}).
+ * A002397 a(n) = n! * lcm({1, 2, ..., n+1}).
  * @author Sean A. Irvine
  */
 public class A002397 extends Sequence0 {

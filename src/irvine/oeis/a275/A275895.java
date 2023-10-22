@@ -5,7 +5,7 @@ import irvine.oeis.a065.A065188;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A275895 &quot;Greedy Queens&quot; permutation of the nonnegative integers.
+ * A275895 "Greedy Queens" permutation of the nonnegative integers.
  * @author Georg Fischer
  */
 public class A275895 extends SimpleTransformSequence {

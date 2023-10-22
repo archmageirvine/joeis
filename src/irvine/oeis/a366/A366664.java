@@ -6,7 +6,7 @@ import irvine.oeis.a062.A062396;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366575.
+ * A366664 Number of distinct prime divisors of 9^n + 1.
  * @author Sean A. Irvine
  */
 public class A366664 extends SimpleTransformSequence {

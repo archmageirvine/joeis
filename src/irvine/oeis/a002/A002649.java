@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002649 Quintan primes: p = (x^5 - y^5 )/(x - y).
+ * A002649 Quintan primes: p = (x^5 - y^5)/(x - y).
  * @author Sean A. Irvine
  */
 public class A002649 extends Sequence1 {

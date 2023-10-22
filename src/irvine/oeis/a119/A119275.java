@@ -4,7 +4,7 @@ package irvine.oeis.a119;
 import irvine.oeis.triangle.Inverse;
 
 /**
- * A119275 Inverse of triangle related to Pad√© approximation of exp(x).
+ * A119275 Inverse of triangle related to Pad\u00e9 approximation of exp(x).
  * @author Georg Fischer
  */
 public class A119275 extends Inverse {

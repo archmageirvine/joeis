@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033312;
 
 /**
- * A366757.
+ * A366759 a(n) = phi(n!-1), where phi is Euler's totient function (A000010).
  * @author Sean A. Irvine
  */
 public class A366759 extends A033312 {

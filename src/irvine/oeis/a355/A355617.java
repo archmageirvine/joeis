@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A066400/
+ * A355617 a(1) = 1; a(2) = 2; for n &gt; 2, a(n) = R(a(n-1)) if a(n-1) != R(a(n-2)) and R(a(n-1)) has not yet been used, where R is the digit reversal function A004086, otherwise a(n) is the smallest positive integer &gt; a(n-1) that has not yet been used.
  * @author Sean A. Irvine
  */
 public class A355617 extends Sequence1 {

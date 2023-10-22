@@ -1,9 +1,9 @@
 package irvine.oeis.a272;
-// manually knest/eulphi at 2023-03-01 16:41
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000129;
 
 /**
@@ -12,15 +12,11 @@ import irvine.oeis.a000.A000129;
  */
 public class A272040 extends AbstractSequence {
 
-  private final A000129 mSeq1 = new A000129();
+  private final Sequence mSeq1 = new A000129().skip();
 
   /** Construct the sequence. */
   public A272040() {
     super(1);
-  }
-
-  {
-    mSeq1.next();
   }
 
   @Override

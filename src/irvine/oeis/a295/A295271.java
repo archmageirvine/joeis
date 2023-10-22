@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A295271 Number of nX4 0..1 arrays with each 1 horizontally or vertically adjacent to 0, 1 or 4 1s.
+ * A295271 Number of n X 4 0..1 arrays with each 1 horizontally or vertically adjacent to 0, 1 or 4 1s.
  * @author Georg Fischer
  */
 public class A295271 extends GeneratingFunctionSequence {

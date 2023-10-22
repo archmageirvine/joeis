@@ -6,7 +6,7 @@ import irvine.oeis.a063.A063827;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A104804 &quot;Rounded hypotenuses&quot;: a(n) = round(sqrt(a(n-1)^2 + a(n-2)^2)), a(1)=1, a(2)=3.
+ * A104804 "Rounded hypotenuses": a(n) = round(sqrt(a(n-1)^2 + a(n-2)^2)), a(1)=1, a(2)=3.
  * @author Georg Fischer
  */
 public class A104804 extends SimpleTransformSequence {

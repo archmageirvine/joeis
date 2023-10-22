@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066400/
+ * A066449 Binomial(n, phi(n)), where phi(n) is the Euler totient function.
  * @author Sean A. Irvine
  */
 public class A066449 extends Sequence1 {

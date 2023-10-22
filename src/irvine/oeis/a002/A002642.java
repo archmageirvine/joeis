@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002642 Numbers n such that (n^2 + n + 1)/13 is prime.
+ * A002642 Numbers k such that (k^2 + k + 1)/13 is prime.
  * @author Sean A. Irvine
  */
 public class A002642 extends Sequence1 {

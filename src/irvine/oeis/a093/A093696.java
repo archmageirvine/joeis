@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a356.A356018;
 
 /**
- * A093696 Numbers n such that all divisors of n have an odd number of 1&apos;s in their binary expansions.
+ * A093696 Numbers n such that all divisors of n have an odd number of 1's in their binary expansions.
  * @author Georg Fischer
  */
 public class A093696 extends FilterPositionSequence {

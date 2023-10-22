@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A108640 Product{k=1 to n} sigma_{n-k}(k), where sigma_m(k) = sum{j|k} j^m.
+ * A108640 a(n) = Product_{k=1..n} sigma_{n-k}(k), where sigma_m(k) = sum{j|k} j^m.
  * a(n) = prod(k=1,n,sigma(k,n-k));
  * @author Georg Fischer
  */

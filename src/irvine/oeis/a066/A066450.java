@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence2;
 
 /**
- * A064145.
+ * A066450 a(n) is the conjectured value of the minimal number to which repeated application of the "reverse and add!" algorithm in base n does not terminate in a palindrome. If there is no such number in base n, then a(n) := -1.
  * @author Sean A. Irvine
  */
 public class A066450 extends Sequence2 {

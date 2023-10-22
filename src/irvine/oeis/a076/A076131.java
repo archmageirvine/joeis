@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A076131 a(n) = 2^n*a(n-1)+1, a(0) = 0.
+ * A076131 a(n) = 2^n*a(n-1) + 1, a(0) = 0.
  * <code>a(n) = 2^n*a(n-1)+1</code>
  * @author Georg Fischer
  */

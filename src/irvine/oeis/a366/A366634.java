@@ -5,7 +5,7 @@ import irvine.oeis.a024.A024075;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366634 allocated for Sean A. Irvine.
+ * A366634 Sum of the divisors of 7^n-1.
  * @author Sean A. Irvine
  */
 public class A366634 extends SimpleTransformSequence {

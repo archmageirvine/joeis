@@ -6,7 +6,7 @@ import irvine.oeis.a034.A034524;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366575.
+ * A366687 Number of prime factors of 11^n + 1 (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A366687 extends SimpleTransformSequence {

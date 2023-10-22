@@ -6,7 +6,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A366315.
+ * A366315 Number of Harris graphs with n vertices. Harris graphs are 1-tough, Eulerian graphs that are non-Hamiltonian.
  * @author Sean A. Irvine
  */
 public class A366315 extends ParallelGenerateGraphsSequence {

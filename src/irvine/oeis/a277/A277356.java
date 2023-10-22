@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001045;
 
 /**
- * A250292.
+ * A277356 Jacobsthal numbers which are semiprimes.
  * @author Sean A. Irvine
  */
 public class A277356 extends FilterSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a003.A003188;
 import irvine.oeis.a049.A049501;
 
 /**
- * A281388 Write n in binary reflected Gray code and sum the positions where there is a &apos;1&apos; followed immediately to the right by a &apos;0&apos;, counting the leftmost digit as position 1.
+ * A281388 Write n in binary reflected Gray code and sum the positions where there is a '1' followed immediately to the right by a '0', counting the leftmost digit as position 1.
  * Formula: <code>a(n) = A049501(A003188(n)).</code>
  * @author Georg Fischer
  */

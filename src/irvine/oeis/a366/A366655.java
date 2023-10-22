@@ -6,7 +6,7 @@ import irvine.oeis.a062.A062395;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366575.
+ * A366655 Number of distinct prime divisors of 8^n + 1.
  * @author Sean A. Irvine
  */
 public class A366655 extends SimpleTransformSequence {

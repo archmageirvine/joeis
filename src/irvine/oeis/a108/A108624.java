@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a202.A202327;
 
 /**
- * A108624 G.f. satisfies x = (A(x)+(A(x))^2)/(1-A(x)-(A(x))^2).
+ * A108624 G.f. satisfies x = A(x)*(1+A(x))/(1-A(x)-(A(x))^2).
  * @author Sean A. Irvine
  */
 public class A108624 extends A202327 {

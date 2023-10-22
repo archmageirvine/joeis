@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a062.A062394;
 
 /**
- * A049479.
+ * A366670 Smallest prime dividing 6^n + 1.
  * @author Sean A. Irvine
  */
 public class A366670 extends A062394 {

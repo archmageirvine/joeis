@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003262 Let y=f(x) satisfy F(x,y)=0. The sequence a(n) is the number of terms in the expansion of (d^n/dx^n) y in terms of the partial derivatives of F.
+ * A003262 Let y=f(x) satisfy F(x,y)=0. a(n) is the number of terms in the expansion of (d/dx)^n y in terms of the partial derivatives of F.
  * @author Sean A. Irvine
  */
 public class A003262 extends Sequence1 {

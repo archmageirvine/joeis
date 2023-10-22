@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002088;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A330503 Number of S√≥s permutations of {0,1,...,n}.
+ * A330503 Number of S\u00f3s permutations of {0,1,...,n}.
  * @author Georg Fischer
  */
 public class A330503 extends SimpleTransformSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a228;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A228907 G.f. satisfies: A(x) = Sum_{n&gt;=0} x^n * (1 - A(x)^(2*n))/(1 - A(x)).
+ * A228907 G.f. satisfies: A(x) = 1 + Sum_{n&gt;=0} x^n * (1 - A(x)^(2*n))/(1 - A(x)).
  * @author Georg Fischer
  */
 public class A228907 extends HolonomicRecurrence {

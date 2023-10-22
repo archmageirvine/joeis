@@ -6,7 +6,7 @@ import irvine.oeis.a024.A024127;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366575.
+ * A366681 Number of distinct prime divisors of 11^n - 1.
  * @author Sean A. Irvine
  */
 public class A366681 extends SimpleTransformSequence {

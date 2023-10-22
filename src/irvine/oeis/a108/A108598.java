@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.BeattySequence;
 
 /**
- * A108598 Floor(n*((5+sqrt(5))/4)).
+ * A108598 a(n) = floor(n*((5+sqrt(5))/4)).
  * @author Georg Fischer
  */
 public class A108598 extends BeattySequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a062.A062396;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366575.
+ * A366665 Number of divisors of 9^n+1.
  * @author Sean A. Irvine
  */
 public class A366665 extends SimpleTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A127796 a(n) = nextprime(9^n) - 9^n.
+ * A127798 Nextprime(12^n)-12^n.
  * @author Sean A. Irvine
  */
 public class A127798 extends Sequence0 {

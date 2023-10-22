@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A164976 Inverse of A164975.
+ * A164976 Triangle read by rows, expansion of 1/(1-2*y*x-x+x^2-y*x^2).
  * @author Georg Fischer
  */
 public class A164976 extends PrependSequence {

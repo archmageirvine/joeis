@@ -6,7 +6,7 @@ import irvine.oeis.a064.A064989;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A319627 Primorial deflation of n (denominator): Let f be the completely multiplicative function over the positive rational numbers defined by f(p) = A034386(p) for any prime number p; f constitutes a permutation of the positive rational numbers; let g be the inver
+ * A319627 Primorial deflation of n (denominator): Let f be the completely multiplicative function over the positive rational numbers defined by f(p) = A034386(p) for any prime number p; f constitutes a permutation of the positive rational numbers; let g be the inverse of f; for any n &gt; 0, a(n) is the denominator of g(n).
  * @author Georg Fischer
  */
 public class A319627 extends SimpleTransformSequence {

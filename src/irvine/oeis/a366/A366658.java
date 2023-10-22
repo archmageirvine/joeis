@@ -5,7 +5,7 @@ import irvine.oeis.a062.A062395;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366575.
+ * A366658 a(n) = phi(8^n+1), where phi is Euler's totient function (A000010).
  * @author Sean A. Irvine
  */
 public class A366658 extends SimpleTransformSequence {

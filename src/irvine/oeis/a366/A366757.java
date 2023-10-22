@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033312;
 
 /**
- * A366757.
+ * A366757 a(n) is the sum of the divisors of n!-1.
  * @author Sean A. Irvine
  */
 public class A366757 extends A033312 {

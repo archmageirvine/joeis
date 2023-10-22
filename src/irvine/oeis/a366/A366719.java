@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a178.A178248;
 
 /**
- * A049479 Smallest prime dividing 2^n - 1.
+ * A366719 Smallest prime dividing 12^n + 1.
  * @author Sean A. Irvine
  */
 public class A366719 extends A178248 {

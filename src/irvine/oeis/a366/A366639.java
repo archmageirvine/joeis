@@ -5,7 +5,7 @@ import irvine.oeis.a034.A034491;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366639 allocated for Sean A. Irvine.
+ * A366639 a(n) = phi(7^n+1), where phi is Euler's totient function (A000010).
  * @author Sean A. Irvine
  */
 public class A366639 extends SimpleTransformSequence {

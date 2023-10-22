@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000012;
 import irvine.oeis.a130.A130162;
 
 /**
- * A051731 Triangle read by rows: T(n,k) = 1 if k divides n, T(n,k) = 0 otherwise (for n &gt;= 1 and 1 &lt;= k &lt;= n).
+ * A051731 Triangle read by rows: T(n, k) = 1 if k divides n, T(n, k) = 0 otherwise, for 1 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A051731 extends A130162 {

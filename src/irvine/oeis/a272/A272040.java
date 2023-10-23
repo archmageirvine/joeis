@@ -2,25 +2,20 @@ package irvine.oeis.a272;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000129;
 
 /**
  * A272040 a(n) = A000010(A000129(n)).
  * @author Georg Fischer
  */
-public class A272040 extends AbstractSequence {
+public class A272040 extends Sequence1 {
 
-  private final Sequence mSeq1 = new A000129().skip();
-
-  /** Construct the sequence. */
-  public A272040() {
-    super(1);
-  }
+  private final Sequence mA = new A000129().skip();
 
   @Override
   public Z next() {
-    return Euler.phi(mSeq1.next());
+    return Euler.phi(mA.next());
   }
 }

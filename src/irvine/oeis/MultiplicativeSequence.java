@@ -10,10 +10,9 @@ import irvine.math.z.Z;
  * Base class for (multiplicative) arithmetic functions.
  * @author Sean A. Irvine
  */
-public class MultiplicativeSequence extends AbstractSequence {
+public class MultiplicativeSequence extends AbstractSequence implements DirectSequence {
 
   private final BiFunction<Z, Integer, Z> mF;
-  private FactorSequence mFS;
   private final long mStep;
   protected long mN;
 
@@ -40,40 +39,24 @@ public class MultiplicativeSequence extends AbstractSequence {
   }
 
   @Override
+  public Z a(final Z n) {
+    final FactorSequence fs = Jaguar.factor(n);
+    Z res = Z.ONE;
+    for (final Z p : fs.toZArray()) {
+      res = res.multiply(mF.apply(p, fs.getExponent(p)));
+    }
+    return res;
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
+  @Override
   public Z next() {
     mN += mStep;
-    mFS = Jaguar.factor(mN);
-    Z prod = Z.ONE;
-    for (final Z p : mFS.toZArray()) {
-      prod = prod.multiply(mF.apply(p, mFS.getExponent(p)));
-    }
-    return prod;
-  }
-
-  /**
-   * Get the underlying factor sequence.
-   * @return FactorSequence of p^e
-   */
-  protected FactorSequence getFactors() {
-    return mFS;
-  }
-
-  /**
-   * Get a FactorSequence.
-   * @param n integer to be factored
-   * @return FactorSequence for n
-   */
-  protected FactorSequence getFactors(final int n) {
-    return Jaguar.factor(n);
-  }
-
-  /**
-   * Get a FactorSequence.
-   * @param n Z integer to be factored
-   * @return FactorSequence for n
-   */
-  protected FactorSequence getFactors(final Z n) {
-    return Jaguar.factor(n);
+    return a(Z.valueOf(mN));
   }
 
   /**
@@ -204,4 +187,5 @@ public class MultiplicativeSequence extends AbstractSequence {
   protected static Z sigmaP2(final Z p, final int e) {
     return p.pow(e + 1).subtract(1).divide(p.square().subtract(1));
   }
+
 }

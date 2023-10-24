@@ -5,7 +5,7 @@ import irvine.oeis.a003.A003415;
 import irvine.oeis.transform.PairTransformSequence;
 
 /**
- * A348493 a(n) = A003415(n) / gcd(A003415(n), A018804(n)), where A003415 is the arithmetic derivative and A018804 is Pillai&apos;s arithmetical function.
+ * A348493 a(n) = A003415(n) / gcd(A003415(n), A018804(n)), where A003415 is the arithmetic derivative and A018804 is Pillai's arithmetical function.
  * @author Georg Fischer
  */
 public class A348493 extends PairTransformSequence {

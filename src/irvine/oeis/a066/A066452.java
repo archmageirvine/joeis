@@ -16,7 +16,7 @@ public class A066452 extends Sequence2 {
 
   private long mN = 1;
 
-  private static List<Long> antidivisors(final long n) {
+  static List<Long> antidivisors(final long n) {
     final List<Long> res = new ArrayList<>();
     for (long k = 2; k < n; ++k) {
       if (Math.abs(2 * (n % k) - k) < 2) {

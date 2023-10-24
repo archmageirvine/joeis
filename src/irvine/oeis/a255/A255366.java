@@ -6,7 +6,7 @@ import irvine.oeis.a169.A169707;
 import irvine.oeis.transform.PairTransformSequence;
 
 /**
- * A255366 Total number of ON cells at stage n of two-dimensional cellular automaton defined by the rules of the &quot;Ulam-Warburton&quot; two-dimensional cellular automaton (A147562) for two of its wedges and defined by &quot;Rule 750&quot; using the von Neumann neighborhood (A169707)
+ * A255366 Total number of ON cells at stage n of two-dimensional cellular automaton defined by the rules of the "Ulam-Warburton" two-dimensional cellular automaton (A147562) for two of its wedges and defined by "Rule 750" using the von Neumann neighborhood (A169707) for the two other wedges.
  * @author Georg Fischer
  */
 public class A255366 extends PairTransformSequence {

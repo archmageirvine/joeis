@@ -6,7 +6,7 @@ import irvine.oeis.a064.A064460;
 import irvine.oeis.transform.PairTransformSequence;
 
 /**
- * A238337 Number of distinct squarefree numbers in row n of Pascal&apos;s triangle.
+ * A238337 Number of distinct squarefree numbers in row n of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A238337 extends PairTransformSequence {

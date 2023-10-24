@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.transform.PairTransformSequence;
 
 /**
- * A300724 M√∂bius transform of A053644(n), largest power of 2 less than or equal to n.
+ * A300724 M\u00f6bius transform of A053644(n), largest power of 2 less than or equal to n.
  * @author Georg Fischer
  */
 public class A300724 extends PairTransformSequence {

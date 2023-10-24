@@ -1,4 +1,4 @@
-package irvine.oeis.a334;
+package irvine.oeis.a366;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
@@ -7,15 +7,15 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a048.A048861;
 
 /**
- * A334167 a(n) is the number of divisors of n^n-1.
- * @author Georg Fischer
+ * A366819.
+ * @author Sean A. Irvine
  */
-public class A334167 extends Sequence2 {
+public class A366819 extends Sequence2 {
 
   private final Sequence mSeq = new A048861().skip();
 
   @Override
   public Z next() {
-    return Jaguar.factor(mSeq.next()).sigma0();
+    return Jaguar.factor(mSeq.next()).sigma();
   }
 }

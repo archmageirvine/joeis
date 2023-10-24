@@ -1,4 +1,4 @@
-package irvine.oeis.a366;
+package irvine.oeis.a101;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000073;
  * A366773.
  * @author Sean A. Irvine
  */
-public class A366784 extends Sequence1 {
+public class A107647 extends Sequence1 {
 
   private final Sequence mA = new A000073().skip(2);
 

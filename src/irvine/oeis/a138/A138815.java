@@ -1,5 +1,7 @@
 package irvine.oeis.a138;
 
+import irvine.factor.factor.Jaguar;
+import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
@@ -10,6 +12,15 @@ public class A138815 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A138815() {
-    super(1, FINITE, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 8191, 16382, 32764, 65528, 131056, 262112, 524224, 1048448, 2096896, 4193792, 8387584, 16775168);
+    this(1, new Z("16775168"));
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param offset first index
+   * @param num number to be factored
+   */
+  public A138815(final int offset, final Z num) {
+    super(offset, FINITE, Jaguar.factor(num).divisorsSorted());
   }
 }

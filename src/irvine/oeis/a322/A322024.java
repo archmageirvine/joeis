@@ -6,7 +6,7 @@ import irvine.oeis.a081.A081373;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A322024 Lexicographically earliest such sequence a that a(i) = a(j) =&gt; A014197(i) = A014197(j) and A081373(i) = A081373(j), for all i, j. Here A081373(n) gives the number of k, 1 &lt;= k &lt;= n, with phi(k) = phi(n), while A014197(n) gives the number of integers m with
+ * A322024 Lexicographically earliest such sequence a that a(i) = a(j) =&gt; A014197(i) = A014197(j) and A081373(i) = A081373(j), for all i, j. Here A081373(n) gives the number of k, 1 &lt;= k &lt;= n, with phi(k) = phi(n), while A014197(n) gives the number of integers m with phi(m) = n.
  * @author Georg Fischer
  */
 public class A322024 extends RestrictedGrowthTransformSequence {

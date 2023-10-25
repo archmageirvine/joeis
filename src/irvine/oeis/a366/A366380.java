@@ -7,7 +7,7 @@ import irvine.oeis.a336.A336467;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A366380 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A336158(i) = A336158(j), A336466(i) = A336466(j) and A336467(i) = A336467(j) for all i, j &gt;= 1, where A336466 is fully multiplicative with a(p) = oddpart(p-1) for any prime p and A336467
+ * A366380 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A336158(i) = A336158(j), A336466(i) = A336466(j) and A336467(i) = A336467(j) for all i, j &gt;= 1, where A336466 is fully multiplicative with a(p) = oddpart(p-1) for any prime p and A336467 is fully multiplicative with a(2) = 1 and a(p) = oddpart(p+1) for odd primes, and A336158(n) gives the prime signature of the odd part of n.
  * @author Georg Fischer
  */
 public class A366380 extends RestrictedGrowthTransformSequence {

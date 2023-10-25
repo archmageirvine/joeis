@@ -5,7 +5,7 @@ import irvine.oeis.a286.A286474;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A319714 Filter sequence combining the largest proper divisor of n (A032742) with n&apos;s residue modulo 4 (A010873).
+ * A319714 Filter sequence combining the largest proper divisor of n (A032742) with n's residue modulo 4 (A010873).
  * @author Georg Fischer
  */
 public class A319714 extends RestrictedGrowthTransformSequence {

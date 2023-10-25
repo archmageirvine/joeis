@@ -21,12 +21,12 @@ public class A254049 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public final Z a(int n) {
+  public final Z a(final int n) {
     return mSeq.a(2 * n - 1).add(1).divide2();
   }
 
   @Override
-  public final Z a(Z n) {
+  public final Z a(final Z n) {
     return a(n.intValueExact());
   }
 

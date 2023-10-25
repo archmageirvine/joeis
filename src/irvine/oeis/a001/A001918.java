@@ -27,6 +27,8 @@ public class A001918 extends AbstractSequence {
   protected final Fast mPrime = new Fast();
   protected Z mP = Z.ONE;
 
+  private long mIndex = 0;
+
   /**
    * The prime for the most recent result
    * @return the prime
@@ -35,8 +37,13 @@ public class A001918 extends AbstractSequence {
     return mP;
   }
 
+  public long getIndex() {
+    return mIndex;
+  }
+
   @Override
   public Z next() {
+    ++mIndex;
     mP = mPrime.nextPrime(mP);
     return ZUtils.leastPrimitiveRoot(mP);
   }

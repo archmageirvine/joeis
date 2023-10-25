@@ -7,7 +7,7 @@ import irvine.oeis.a046.A046523;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A358230 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A007814(i) = A007814(j), A007949(i) = A007949(j) and A046523(i) = A046523(j), for all i, j, where A007814 and A007949 give the 2-adic and 3-adic valuation, and A046523 gives the prime si
+ * A358230 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A007814(i) = A007814(j), A007949(i) = A007949(j) and A046523(i) = A046523(j), for all i, j, where A007814 and A007949 give the 2-adic and 3-adic valuation, and A046523 gives the prime signature of its argument.
  * @author Georg Fischer
  */
 public class A358230 extends RestrictedGrowthTransformSequence {

@@ -16,14 +16,19 @@ import irvine.util.Pair;
  */
 public class PairTransformSequence extends AbstractSequence {
 
+  /**
+   * A function.
+   * @param <Integer> type of first argument
+   * @param <Z> type of second argument
+   */
   @FunctionalInterface
   public interface TriFunction<Integer, Z> {
-    public Z apply(Integer n, Z u, Z v);
+    Z apply(Integer n, Z u, Z v);
   }
 
   private int mN;
-  private AbstractSequence mSeqU;
-  private AbstractSequence mSeqV;
+  private final AbstractSequence mSeqU;
+  private final AbstractSequence mSeqV;
   protected TriFunction<Integer, Z> mLambda;
   private long[] mInitTerms; // initial terms
   private int mInitLen; // number of initial terms

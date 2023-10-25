@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002322;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A296076 Least number with the same prime signature as 1 + A002322(n), where A002322 is Carmichael&apos;s lambda.
+ * A296076 Least number with the same prime signature as 1 + A002322(n), where A002322 is Carmichael's lambda.
  * @author Georg Fischer
  */
 public class A296076 extends SimpleTransformSequence {

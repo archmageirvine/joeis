@@ -5,7 +5,7 @@ import irvine.oeis.a349.A349134;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A366382 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A349134(i) = A349134(j) for all i, j &gt;= 1, where A349134 is Dirichlet inverse of Kimberling&apos;s paraphrases.
+ * A366382 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A349134(i) = A349134(j) for all i, j &gt;= 1, where A349134 is Dirichlet inverse of Kimberling's paraphrases.
  * @author Georg Fischer
  */
 public class A366382 extends RestrictedGrowthTransformSequence {

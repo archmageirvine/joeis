@@ -16,6 +16,10 @@ public class A023048 extends A001597 {
   }
   private Z mA = super.next();
 
+  protected Z select(final A001918 s) {
+    return s.getP();
+  }
+
   @Override
   public Z next() {
     mN = mN.add(1);
@@ -27,6 +31,6 @@ public class A023048 extends A001597 {
     while (!mN.equals(s.next())) {
       // do nothing
     }
-    return s.getP();
+    return select(s);
   }
 }

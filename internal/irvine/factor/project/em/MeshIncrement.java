@@ -99,8 +99,55 @@ public final class MeshIncrement {
     }
   }
 
+  static void augment(final int maxLevel, final BufferedReader reader) throws IOException {
+    // todo this is currently broken
+    final Z[] products = new Z[maxLevel];
+    products[0] = Z.ONE;
+    final Z[] currentProducts = new Z[maxLevel];
+    Arrays.fill(currentProducts, Z.ONE);
+    int currentLevel = 0;
+    String line;
+    while ((line = reader.readLine()) != null) {
+      if (line.startsWith("#") || line.indexOf('(') >= 0) {
+        System.out.println(line);
+        continue;
+      }
+      int level = 0;
+      while (line.charAt(level) == '.') {
+        ++level;
+      }
+      if (level >= maxLevel) {
+        System.out.println(line);
+        continue;
+      }
+      final Z p = new Z(line.substring(level));
+      if (level > currentLevel) {
+        currentProducts[level] = p;
+        products[level] = products[level - 1].multiply(p);
+        currentLevel = level;
+        System.out.println(line);
+      } else if (level == currentLevel) {
+        currentProducts[level] = currentProducts[level].multiply(p);
+        System.out.println(line);
+      } else {
+        for (int t = currentLevel; t > level; --t) {
+          if (!currentProducts[t].equals(products[t - 1].add(1))) {
+            System.err.println("Product incomplete[" + t + "]: " + currentProducts[t] + " != " + products[t - 1].add(1));
+          } else {
+            System.err.println("OK[" + t + "]: " + currentProducts[t]);
+          }
+          currentProducts[t] = Z.ONE; // probably not needed
+        }
+        currentProducts[level] = currentProducts[level].multiply(p);
+        currentLevel = level;
+        System.out.println(line);
+      }
+    }
+  }
+
   private static final String TILLMAN_FLAG = "tillman";
   private static final String JAGUAR_FLAG = "jaguar";
+  private static final String AUGMENT_FLAG = "augment";
   private static final String PRIME_FLAG = "prime";
 
   private static int[] getFactorSpec(final String s) {
@@ -123,27 +170,32 @@ public final class MeshIncrement {
     final CliFlags flags = new CliFlags("Mesh", "Compute and check the Euclid-Mullin mesh");
     flags.registerOptional('t', TILLMAN_FLAG, String.class, "level:size", "Constraints for using the Tillman factorization engine", "0:0");
     flags.registerOptional('j', JAGUAR_FLAG, String.class, "level:size", "Constraints for using the Jaguar factorization engine", "0:0");
+    flags.registerOptional('a', AUGMENT_FLAG, Integer.class, "level", "Add missing values up to indicated level", 0);
     flags.registerOptional('p', PRIME_FLAG, "Explicitly check if claimed composites are actually prime");
     flags.setFlags(args);
     final int[] tillman = getFactorSpec((String) flags.getValue(TILLMAN_FLAG));
     final int[] jaguar = getFactorSpec((String) flags.getValue(JAGUAR_FLAG));
     try (final BufferedReader mesh = new BufferedReader(new InputStreamReader(System.in))) {
-      String line;
-      while ((line = mesh.readLine()) != null) {
-        process(line, tillman, jaguar, flags.isSet(PRIME_FLAG));
+      if (flags.isSet(AUGMENT_FLAG)) {
+        augment((int) flags.getValue(AUGMENT_FLAG), mesh);
+      } else {
+        String line;
+        while ((line = mesh.readLine()) != null) {
+          process(line, tillman, jaguar, flags.isSet(PRIME_FLAG));
+        }
+        System.err.println("Summary of number and smallest composite size by level");
+        for (int k = 0; k < NUM_COMPOSITES.length; ++k) {
+          if (NUM_COMPOSITES[k] != 0) {
+            System.err.println(k + " " + NUM_COMPOSITES[k] + " C" + MIN_LENGTH_COMPOSITE[k]);
+          }
+        }
+        if (sNewTillman > 0) {
+          System.err.println("New Tillman factorizations: " + sNewTillman);
+        }
+        if (sNewJaguar > 0) {
+          System.err.println("New Jaguar factorizations: " + sNewJaguar);
+        }
       }
-    }
-    System.err.println("Summary of number and smallest composite size by level");
-    for (int k = 0; k < NUM_COMPOSITES.length; ++k) {
-      if (NUM_COMPOSITES[k] != 0) {
-        System.err.println(k + " " + NUM_COMPOSITES[k] + " C" + MIN_LENGTH_COMPOSITE[k]);
-      }
-    }
-    if (sNewTillman > 0) {
-      System.err.println("New Tillman factorizations: " + sNewTillman);
-    }
-    if (sNewJaguar > 0) {
-      System.err.println("New Jaguar factorizations: " + sNewJaguar);
     }
   }
 }

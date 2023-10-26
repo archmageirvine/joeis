@@ -406,4 +406,25 @@ public final class PolynomialUtils {
     }
     return Polynomial.create(c);
   }
+
+  /**
+   * Swap the variables of a bivariate polynomial.
+   * @param inner inner ring
+   * @param poly bivariate polynomial
+   * @param <E> element type
+   * @return swapped polynomial
+   */
+  public static <E> Polynomial<Polynomial<E>> swapVariables(final PolynomialRing<E> inner, final Polynomial<Polynomial<E>> poly) {
+    // x <--> y
+    final int n = poly.degree();
+    final Polynomial<Polynomial<E>> res = new PolynomialRing<>(inner).empty();
+    for (int k = 0; k <= n; ++k) {
+      final Polynomial<E> coeff = inner.empty();
+      for (int j = 0; j <= n; ++j) {
+        coeff.add(poly.coeff(j).coeff(k));
+      }
+      res.add(coeff);
+    }
+    return res;
+  }
 }

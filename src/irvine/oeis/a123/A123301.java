@@ -9,6 +9,7 @@ import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
@@ -105,18 +106,8 @@ public class A123301 extends AbstractSequence {
     return w;
   }
 
-  private Polynomial<Polynomial<Q>> swapVariables(final Polynomial<Polynomial<Q>> p) {
-    // x <--> y
-    final int n = p.degree();
-    final Polynomial<Polynomial<Q>> res = RING_X.empty();
-    for (int k = 0; k <= n; ++k) {
-      final Q[] coeff = new Q[n + 1];
-      for (int j = 0; j <= n; ++j) {
-        coeff[j] = p.coeff(j).coeff(k);
-      }
-      res.add(Polynomial.create(coeff));
-    }
-    return res;
+  private static Polynomial<Polynomial<Q>> swapVariables(final Polynomial<Polynomial<Q>> p) {
+    return PolynomialUtils.swapVariables(RING_Y, p);
   }
 
   private Polynomial<Polynomial<Q>> log(final PolynomialRingField<Polynomial<Q>> ring, final Polynomial<Polynomial<Q>> g, final int n) {

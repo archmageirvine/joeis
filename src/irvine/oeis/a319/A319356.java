@@ -1,5 +1,7 @@
 package irvine.oeis.a319;
 
+import java.util.function.BiFunction;
+
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
@@ -13,27 +15,41 @@ import irvine.oeis.a003.A003415;
  */
 public class A319356 extends AbstractSequence implements DirectSequence {
 
-  private final A003415 mSeq = new A003415();
-  private int mN = 0;
+  private final DirectSequence mSeq;
+  private int mN;
+  private final BiFunction<Z, Z, Z> mLambda;
 
   /** Construct the sequence. */
   public A319356() {
-    super(1);
+    this(1, (d, v) -> Puma.primeZ(v.add(1)), new A003415());
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param offset first index
+   * @param lambda lambda expression for dd
+   * @param seq underlying sequence
+   */
+  public A319356(final int offset, final BiFunction<Z, Z, Z> lambda, final DirectSequence seq) {
+    super(offset);
+    mN = offset - 1;
+    mSeq = seq;
+    mLambda = lambda;
   }
 
   @Override
-  public final Z a(final Z n) {
+  public Z a(final Z n) {
     Z prod = Z.ONE;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       if (!dd.equals(n)) {
-        prod = prod.multiply(Puma.primeZ(mSeq.a(dd).add(1)));
+        prod = prod.multiply(mLambda.apply(dd, mSeq.a(dd)));
       }
     }
     return prod;
   }
 
   @Override
-  public final Z a(final int n) {
+  public Z a(final int n) {
     return a(Z.valueOf(n));
   }
 
@@ -42,4 +58,3 @@ public class A319356 extends AbstractSequence implements DirectSequence {
     return a(++mN);
   }
 }
-

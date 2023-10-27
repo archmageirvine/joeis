@@ -13,7 +13,7 @@ public class A167536 extends LambdaSequence {
   /** Construct the sequence. */
   public A167536() {
     super(0, n -> {
-      Z n2 = Z.TWO.pow(n);
+      final Z n2 = Z.TWO.pow(n);
       return Z.THREE.pow(n2).subtract(Z.TWO.pow(n2));
     });
   }

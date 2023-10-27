@@ -38,12 +38,12 @@ public class TupleTransformSequence extends AbstractSequence {
   /** Halve: terms / 2 */
   public static final BiFunction<Integer, Z[], Z> HALVE = (n, s) -> s[0].subtract(s[1]);
 
-  /*
+  /**
    * An indicator that instead of the current term of a sequence <code>s[i]</code>,
    * the previous terms of the sequence <code>s[i-1]</code> should be used.
    * The
    * At the beginning of the list (when <code>s[0] == s[1] == ... s[i] = PREVIOUS</code>), use <code>a(n - i - 1)</code>.
-   * In that case, a suffient number of inital terms must be specified.
+   * In that case, a sufficient number of initial terms must be specified.
    */
   public static final Sequence PREVIOUS = null;
 
@@ -116,7 +116,7 @@ public class TupleTransformSequence extends AbstractSequence {
     Z curr = result;
     while (iseq < mSeqNo) {
       if (mSeqs[iseq] == PREVIOUS) {
-        Z prev = mTerms[iseq];
+        final Z prev = mTerms[iseq];
         mTerms[iseq] = curr;
         curr = prev;
       } else {

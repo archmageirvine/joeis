@@ -19,10 +19,17 @@ public class PairTransformSequence extends AbstractSequence {
   /**
    * A function.
    * @param <Integer> type of first argument
-   * @param <Z> type of second argument
+   * @param <Z> type of the result
    */
   @FunctionalInterface
   public interface TriFunction<Integer, Z> {
+    /**
+     * Apply the function.
+     * @param n first argument
+     * @param u second argument
+     * @param v third argument
+     * @return result
+     */
     Z apply(Integer n, Z u, Z v);
   }
 

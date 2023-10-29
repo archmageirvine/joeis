@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000292;
 
 /**
- * A004160 Sum of digits of tetrahedral numbers.
+ * A004160 Sum of digits of the n-th tetrahedral number.
  * @author Sean A. Irvine
  */
 public class A004160 extends A000292 {

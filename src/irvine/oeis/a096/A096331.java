@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a100.A100960;
 
 /**
- * A100960.
+ * A096331 Number of 2-connected planar graphs on n labeled nodes.
  * @author Sean A. Irvine
  */
 public class A096331 extends A100960 {

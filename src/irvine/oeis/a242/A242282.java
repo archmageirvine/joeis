@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A242282 Sum_{k=0..n} (k!)^4 * StirlingS2(n,k)^2.
+ * A242282 a(n) = Sum_{k=0..n} (k!)^4 * StirlingS2(n,k)^2.
  * a(n)=sum(k=0,n,(k!)^4*stirl2(n,k)^2)
  * @author Georg Fischer
  */

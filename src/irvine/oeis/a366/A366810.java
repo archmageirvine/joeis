@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a057.A057588;
 
 /**
- * A064145.
+ * A366810 a(n) = phi(prime(n)#-1) where phi is the Euler totient function and p# is the product of all the primes from 2 to p inclusive.
  * @author Sean A. Irvine
  */
 public class A366810 extends A057588 {

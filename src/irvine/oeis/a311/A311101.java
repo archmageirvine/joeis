@@ -6,7 +6,7 @@ package irvine.oeis.a311;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A311101 Coordination sequence Gal.3.47.1 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+ * A311101 Coordination sequence Gal.3.47.1 where Gal.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
  * @author Georg Fischer
  */
 public class A311101 extends GeneratingFunctionSequence {

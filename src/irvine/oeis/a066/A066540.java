@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A100960.
+ * A066540 The first of two consecutive primes with equal digital sums.
  * @author Sean A. Irvine
  */
 public class A066540 extends A000040 {

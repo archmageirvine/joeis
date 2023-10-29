@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A100960.
+ * A066542 Nonnegative integers all of whose anti-divisors are either 2 or odd.
  * @author Sean A. Irvine
  */
 public class A066542 extends A000040 {

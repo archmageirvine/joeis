@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A003414 Floor( Bernoulli(2*n)/(-4*n) ).
+ * A003414 a(n) = floor( Bernoulli(2*n)/(-4*n) ).
  * @author Sean A. Irvine
  */
 public class A003414 extends Sequence1 {

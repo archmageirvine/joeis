@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000073;
 
 /**
- * A366769.
+ * A366783 Sum of the divisors of A000073(n) (tribonacci numbers).
  * @author Sean A. Irvine
  */
 public class A366783 extends A000073 {

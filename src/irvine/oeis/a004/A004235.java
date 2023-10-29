@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A004235 10*log(n) rounded to nearest integer.
+ * A004235 a(n) = 10*log(n) rounded to the nearest integer.
  * @author Sean A. Irvine
  */
 public class A004235 extends Sequence1 {

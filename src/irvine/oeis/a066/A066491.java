@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001223;
 
 /**
- * A066491 Twin prime gaps: Pairs n, n+1 such that f(n) = f(n+1), where f is the prime gaps function given by f(m) = prime(m+1)-prime(m) and prime(m) denotes the m-th prime.
+ * A066491 Twin prime gaps: Pairs k, k+1 such that f(k) = f(k+1), where f is the prime gaps function given by f(m) = prime(m+1)-prime(m) and prime(m) denotes the m-th prime.
  * @author Sean A. Irvine
  */
 public class A066491 extends A001223 {

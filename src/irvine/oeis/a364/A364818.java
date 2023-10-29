@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000129;
 
 /**
- * A022307.
+ * A364818 Number of distinct prime divisors of A000129(n) (Pell numbers).
  * @author Sean A. Irvine
  */
 public class A364818 extends A000129 {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a048.A048861;
 
 /**
- * A366819.
+ * A366821 a(n) is phi(n^n-1) where phi is the Euler totient function.
  * @author Sean A. Irvine
  */
 public class A366821 extends Sequence2 {

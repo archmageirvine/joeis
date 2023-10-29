@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A003996 Sum of distinct nonzero squares in more than one way.
+ * A003996 Sums of distinct nonzero squares in more than one way.
  * @author Sean A. Irvine
  */
 public class A003996 extends Sequence1 {

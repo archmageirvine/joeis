@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001511;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A286461 Compound filter (2-adic valuation of n &amp; 4k+1, 4k+3 prime-signature combination of 2n-1): a(n) = P(A001511(n), A286364((2*n)-1)), where P(n,k) is sequence A000027 used as a pairing function.
+ * A286461 Compound filter (2-adic valuation of n &amp; 4k+1,4k+3 prime-signature combination of 2n-1): a(n) = P(A001511(n), A286364((2*n)-1)), where P(n,k) is sequence A000027 used as a pairing function.
  * @author Georg Fischer
  */
 public class A286461 extends TupleTransformSequence {

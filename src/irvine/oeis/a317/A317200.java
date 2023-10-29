@@ -3,7 +3,7 @@ package irvine.oeis.a317;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A317200 G.f.: -x*(2*x^3+2*x^2+x-2)/(x^4-2*x+1).
+ * A317200 Expansion of g.f. -x*(2*x^3+2*x^2+x-2)/(x^4-2*x+1).
  * @author Georg Fischer
  */
 public class A317200 extends HolonomicRecurrence {

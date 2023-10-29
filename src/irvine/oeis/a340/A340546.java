@@ -4,7 +4,7 @@ package irvine.oeis.a340;
 import irvine.oeis.BriefSequence;
 
 /**
- * A340546 Number of main classes of one-plane symmetric diagonal Latin squares of order 2n.
+ * A340546 Number of main classes of diagonal Latin squares of order 2n that contain a one-plane symmetric square.
  * @author Georg Fischer
  */
 public class A340546 extends BriefSequence {

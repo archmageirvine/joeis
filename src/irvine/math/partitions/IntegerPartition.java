@@ -85,9 +85,7 @@ public final class IntegerPartition {
   }
 
   /**
-   * Return the next integer partition or null of all partitions have been
-   * produced.
-   *
+   * Return the next integer partition or null if all partitions have been produced.
    * @return integer partition or null if no further partition exist
    */
   public int[] next() {

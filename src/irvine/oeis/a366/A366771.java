@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001045;
 
 /**
- * A366769.
+ * A366771 Number of divisors of A001045(n) (Jacobsthal numbers).
  * @author Sean A. Irvine
  */
 public class A366771 extends A001045 {

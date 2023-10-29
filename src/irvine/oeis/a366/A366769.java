@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001045;
 
 /**
- * A366769.
+ * A366769 Number of distinct prime divisors of A001045(n) (Jacobsthal numbers).
  * @author Sean A. Irvine
  */
 public class A366769 extends A001045 {

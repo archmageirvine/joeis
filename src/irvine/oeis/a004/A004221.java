@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A004221 10*log_10 (n) rounded up.
+ * A004221 a(n) = ceiling(10*log_10(n)).
  * @author Sean A. Irvine
  */
 public class A004221 extends Sequence1 {

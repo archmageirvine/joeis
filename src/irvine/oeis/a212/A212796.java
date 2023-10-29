@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A100960.
+ * A212796 Square array read by antidiagonals: T(m,n) = number of spanning trees in C_m X C_n.
  * @author Sean A. Irvine
  */
 public class A212796 extends Sequence1 {

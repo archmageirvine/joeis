@@ -1,0 +1,111 @@
+package irvine.math.partitions;
+
+import irvine.math.IntegerUtils;
+
+/**
+ * Generated fixed length partitions.
+ * @author Sean A. Irvine
+ */
+public final class FixedLengthPartition {
+
+  private final int mN;
+  private final int mParts;
+  private final int mLo;
+  private final int mMax;
+  private boolean mFirst = true;
+  private FixedLengthPartition mP = null;
+  private int mI;
+
+  /**
+   * Construct a new object for getting the integer partitions of a number.
+   * @param n number
+   * @param parts number of parts
+   * @param lo minimum value
+   * @param hi maximum value
+   */
+  public FixedLengthPartition(final int n, final int parts, final int lo, final int hi) {
+    mN = n;
+    mParts = parts;
+    mLo = lo;
+    if (parts >= 2) {
+      mI = IntegerUtils.max(lo, (n + parts - 1) / parts, n - hi * (parts - 1));
+      mMax = Math.min(hi, n - (parts - 1) * lo);
+    } else {
+      mMax = 0;
+    }
+  }
+
+  /**
+   * Construct a new object for getting the integer partitions of a number.
+   * @param n number
+   * @param parts number of parts
+   * @param lo minimum value
+   */
+  public FixedLengthPartition(final int n, final int parts, final int lo) {
+    this(n, parts, lo, n);
+  }
+
+  /**
+   * Construct a new object for getting the integer partitions of a number.
+   * @param n number
+   * @param parts number of parts
+   */
+  public FixedLengthPartition(final int n, final int parts) {
+    this(n, parts, 1);
+  }
+
+  /*
+  def fixed_length_partitions(n: int, k: int, lo=1, hi=math.inf) \
+        -> Iterator[tuple[int,...]]:
+    """Yield each descending tuple with sum n, length k, and lo <= values <= hi
+    (default lo = 1, hi = math.inf)."""
+    if k == 0 and n == 0:
+        yield tuple()
+    elif k == 1 and n >= lo:
+        yield (n,)
+    elif k >= 2:
+        for i in range(max(lo, (n+k-1)//k, n-hi*(k-1)),
+                       min(hi, n - (k-1)*lo) + 1):
+            for p in fixed_length_partitions(n - i, k - 1, lo, i):
+                yield (i,) + p
+
+   */
+
+  /**
+   * Return the next partition or null if all partitions have been produced.
+   * @return integer partition or null if no further partition exist
+   */
+  public int[] next() {
+    if (mParts == 0 && mN == 0) {
+      if (mFirst) {
+        mFirst = false;
+        return new int[0];
+      }
+    } else if (mParts == 1 && mN >= mLo) {
+      if (mFirst) {
+        mFirst = false;
+        return new int[] {mN};
+      }
+    } else if (mParts >= 2) {
+      if (mI > mMax) {
+        return null;
+      }
+      while (mI <= mMax) {
+        if (mP == null) {
+          mP = new FixedLengthPartition(mN - mI, mParts - 1, mLo, mI);
+        }
+        final int[] p = mP.next();
+        if (p == null) {
+          mP = null;
+          ++mI;
+        } else {
+          final int[] res = new int[mParts];
+          res[0] = mI;
+          System.arraycopy(p, 0, res, 1, p.length);
+          return res;
+        }
+      }
+    }
+    return null;
+  }
+}

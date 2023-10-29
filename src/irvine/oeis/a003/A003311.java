@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A003311 Write down the numbers from 3 to infinity. Take next number, M say, that has not been crossed off. Counting through the numbers that have not yet been crossed off after that M, cross off the first, (M+1)st, (2M+1)st, (3M+1)st., etc. Repeat. The numbers that are left form the sequence.
+ * A003311 Write down the numbers from 3 to infinity. Take next number, M say, that has not been crossed off. Counting through the numbers that have not yet been crossed off after that M, cross off the first, (M+1)st, (2M+1)st, (3M+1)st, etc. Repeat. The numbers that are left form the sequence.
  * @author Sean A. Irvine
  */
 public class A003311 extends Sequence1 {

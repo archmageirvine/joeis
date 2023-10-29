@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007814;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A292268 Compound filter (multiplicative order of 2 mod 2n+1 &amp; number of trailing 1&apos;s in binary expansion of 2n+1): a(n) = P(A002326(n), A007814(2n+2)), where P(n,k) is sequence A000027 used as a pairing function.
+ * A292268 Compound filter (multiplicative order of 2 mod 2n+1 &amp; number of trailing 1's in binary expansion of 2n+1): a(n) = P(A002326(n), A007814(2n+2)), where P(n,k) is sequence A000027 used as a pairing function.
  * @author Georg Fischer
  */
 public class A292268 extends TupleTransformSequence {

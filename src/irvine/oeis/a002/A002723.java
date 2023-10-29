@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
- * A002723 Rotatable partitions.
+ * A002723 Number of rotatable partitions of [n].
  * @author Sean A. Irvine
  */
 public class A002723 extends MemoryFunction1Sequence<Long> {

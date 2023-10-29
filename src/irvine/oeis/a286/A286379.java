@@ -6,7 +6,7 @@ import irvine.oeis.a278.A278222;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A286379 Compound filter (&quot;discard the smallest prime factor&quot; &amp; &quot;signature for 1-runs in base-2&quot;): a(n) = P(A032742(n), A278222(n)), where P(n,k) is sequence A000027 used as a pairing function, with a(1) = 1.
+ * A286379 Compound filter ("discard the smallest prime factor" &amp; "signature for 1-runs in base-2"): a(n) = P(A032742(n), A278222(n)), where P(n,k) is sequence A000027 used as a pairing function, with a(1) = 1.
  * @author Georg Fischer
  */
 public class A286379 extends TupleTransformSequence {

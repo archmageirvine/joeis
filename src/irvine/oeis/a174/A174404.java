@@ -4,7 +4,7 @@ package irvine.oeis.a174;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A174404 A (4, 5)-Somos 4 sequence.
+ * A174404 A (4,5)-Somos 4 sequence.
  * @author Georg Fischer
  */
 public class A174404 extends TupleTransformSequence {

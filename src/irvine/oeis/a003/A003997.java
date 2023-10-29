@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 /**
- * A003997 Sum of distinct positive cubes.
+ * A003997 Sums of distinct positive cubes.
  * @author Sean A. Irvine
  */
 public class A003997 extends A003996 {

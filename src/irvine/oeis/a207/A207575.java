@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A207575 Numbers n such that phi(n) + 2 divides n + 2 and n is not twice a prime.
+ * A207575 Numbers k such that phi(k) + 2 divides k + 2 and k is not twice a prime.
  *
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002958 Numbers n such that 2*25^n - 1 is prime.
+ * A002958 Numbers k such that 2*25^k - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A002958 extends Sequence1 {

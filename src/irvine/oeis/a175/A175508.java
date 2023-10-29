@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a003.A003963;
 
 /**
- * A175508 If p is the product of k1-th prime, k2-th prime,..,kr-th prime then set a(n)=n-k1*k2*..*kr, if p is the k-th prime then set=n-k, a(1)=1 by convention.
+ * A175508 a(n) is the difference of n and the product of the indices of prime factors of n with multiplicity, a(1) = 0.
  * @author Georg Fischer
  */
 public class A175508 extends AbstractSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A140754 Array T(n,k) = 19n^2 + 10k^2, read by rows, with 14 columns and 14 rows.
+ * A140754 Array T(n,k) = 19*n^2 + 10*k^2, read by rows, with 14 columns and 14 rows.
  * @author Georg Fischer
  */
 public class A140754 extends FiniteSequence {

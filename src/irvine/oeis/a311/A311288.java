@@ -3,7 +3,7 @@ package irvine.oeis.a311;
 // DO NOT EDIT here!
 
 /**
- * A311288 Coordination sequence Gal.6.127.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+ * A311288 Coordination sequence Gal.6.127.4 where Gal.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
  * @author Georg Fischer
  */
 public class A311288 extends A311149 {

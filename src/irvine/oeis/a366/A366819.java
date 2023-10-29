@@ -7,7 +7,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a048.A048861;
 
 /**
- * A366819.
+ * A366819 a(n) is the sum of the divisors of n^n-1.
  * @author Sean A. Irvine
  */
 public class A366819 extends Sequence2 {

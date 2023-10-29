@@ -5,7 +5,7 @@ import irvine.oeis.a289.A289813;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A356248 Image of 1 under repeated application of the map k -&gt; (2k-1, 2k, 2k-1).
+ * A356248 Image of 1 under repeated application of the map k -&gt; (2k-1,2k,2k-1).
  * @author Georg Fischer
  */
 public class A356248 extends SimpleTransformSequence {

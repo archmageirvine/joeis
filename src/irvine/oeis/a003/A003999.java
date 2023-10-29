@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 /**
- * A003999 Sum of distinct nonzero 4th powers.
+ * A003999 Sums of distinct nonzero 4th powers.
  * @author Sean A. Irvine
  */
 public class A003999 extends A003996 {

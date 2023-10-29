@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A226105 Numbers n such that phi(n)+3 divides n+3 and floor(n/6) is not a prime.
+ * A226105 Numbers k such that phi(k)+3 divides k+3, excluding numbers of the form 6*p for a prime p.
  *
  * @author Georg Fischer
  */

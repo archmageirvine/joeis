@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.SemiprimeSequence;
 
 /**
- * A085725 Numbers k such that -1 + (product of first k primes) is a semiprime.
+ * A364840 Numbers k such that the product of the first k primes - 1 is a semiprime.
  * @author Sean A. Irvine
  */
 public class A364840 extends SemiprimeSequence {

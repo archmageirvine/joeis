@@ -6,7 +6,7 @@ import irvine.oeis.a089.A089309;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A286462 Compound filter (3-adic valuation &amp; the length of rightmost run of 1&apos;s in base-2): a(n) = P(A051064(n), A089309(n)), where P(n,k) is sequence A000027 used as a pairing function.
+ * A286462 Compound filter (3-adic valuation &amp; the length of rightmost run of 1's in base-2): a(n) = P(A051064(n), A089309(n)), where P(n,k) is sequence A000027 used as a pairing function.
  * @author Georg Fischer
  */
 public class A286462 extends TupleTransformSequence {

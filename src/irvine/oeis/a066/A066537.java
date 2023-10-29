@@ -10,7 +10,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a096.A096332;
 
 /**
- * A100960.
+ * A066537 Number of planar graphs on n labeled nodes.
  * @author Sean A. Irvine
  */
 public class A066537 extends Sequence0 {

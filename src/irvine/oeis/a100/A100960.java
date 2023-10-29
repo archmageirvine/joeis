@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A100960.
+ * A100960 Triangle read by rows: T(n,k) is the number of labeled 2-connected planar graphs with n nodes and k edges, n &gt;= 3, n &lt;= k &lt;= 3(n-2).
  * @author Sean A. Irvine
  */
 public class A100960 extends Sequence3 {

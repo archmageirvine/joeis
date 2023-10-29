@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000073;
 
 /**
- * A366769.
+ * A366780 Number of distinct prime divisors of A000073(n) (tribonacci numbers).
  * @author Sean A. Irvine
  */
 public class A366780 extends A000073 {

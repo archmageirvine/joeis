@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.BeattySequence;
 
 /**
- * A108589 Floor(n*Pi/(Pi-2)).
+ * A108589 a(n) = floor(n*Pi/(Pi-2)).
  * @author Georg Fischer
  */
 public class A108589 extends BeattySequence {

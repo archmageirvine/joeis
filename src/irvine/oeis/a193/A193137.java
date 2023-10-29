@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A100960.
+ * A193137 Number of spanning trees in the n X n rook graph.
  * @author Sean A. Irvine
  */
 public class A193137 extends Sequence1 {

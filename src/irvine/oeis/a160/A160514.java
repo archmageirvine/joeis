@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A160514 The sequence is: 2^8, 3^2, 5^2, 7^2, 10939058860032031^2 where 10939058860032031 is prime and where its order is an integer 337736875876935471466319632507953926400 and is equal to ((640320)^3 + 744)^2 * 70^2 where (640320)^3 + 744 is an integer value which is nearly Ramanujan's constant and 1^2 + 2^2 + 3^2 + ... + 22^2 + 23^2 + 24^2 = 70^2 which is related to the norm vector 0 used in construction of the Leech lattice.
+ * A160514 A nonsense sequence.
  * @author Georg Fischer
  */
 public class A160514 extends FiniteSequence {

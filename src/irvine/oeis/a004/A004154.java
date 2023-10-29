@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A004154 Omit trailing zeros from factorial numbers.
+ * A004154 a(n) = n! with trailing zeros omitted.
  * @author Sean A. Irvine
  */
 public class A004154 extends Sequence0 {

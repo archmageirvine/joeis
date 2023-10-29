@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A004303 a(n) = C(2n-2,n-1)/n - 2^(n-1) + n.
+ * A004303 a(n) = binomial(2*n-2,n-1)/n - 2^(n-1) + n.
  * @author Sean A. Irvine
  */
 public class A004303 extends Sequence1 {

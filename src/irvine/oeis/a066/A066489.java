@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a035.A035928;
 
 /**
- * A066489 Binary expansion of n followed by its complement.
+ * A066489 Binary expansion of n followed by its reverse complement.
  * @author Sean A. Irvine
  */
 public class A066489 extends A035928 {

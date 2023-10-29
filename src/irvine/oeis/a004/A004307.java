@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A004307 Number of permutations p of [n] such that n-p(i)+i &gt;= 4 (mod n) for all i.
+ * A004307 Number of permutations p of [n] such that (n-p(i)+i) mod n &gt;= 4 for all i.
  * @author Sean A. Irvine
  */
 public class A004307 extends AbstractSequence {

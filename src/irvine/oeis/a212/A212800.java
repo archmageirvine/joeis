@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.math.z.Z;
 
 /**
- * A100960.
+ * A212800 Number of spanning trees of the (n,n)-torus grid graph.
  * @author Sean A. Irvine
  */
 public class A212800 extends A212796 {

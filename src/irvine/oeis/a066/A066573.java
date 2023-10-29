@@ -11,7 +11,6 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.Pair;
-import irvine.util.string.StringUtils;
 
 /**
  * A066573.
@@ -19,13 +18,10 @@ import irvine.util.string.StringUtils;
  */
 public class A066573 extends Sequence1 {
 
-  // This is a pain to sort the way the OEIS has it
-
-  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private final TreeSet<Pair<Z, Z>> mPairs = new TreeSet<>(Comparator.comparing((Function<Pair<Z, Z>, Z>) Pair::left).thenComparing(Pair::right));
+  private final TreeSet<Pair<Z, Z>> mPairs = new TreeSet<>(Comparator.comparing((Function<Pair<Z, Z>, Z>) Pair::right).thenComparing(Pair::left));
   private Z mRight = null;
-  private Z mN = Z.ONE;
-  private Z mM = Z.ONE;
+  private Z mN = Z.ZERO;
+  private Z mM = Z.ZERO;
   private final HashMap<Z, TreeSet<Z>> mFInverse = new HashMap<>();
   private final MemoryFunction<Z, Z> mF = new MemoryFunction<>() {
     @Override
@@ -56,7 +52,7 @@ public class A066573 extends Sequence1 {
       mRight = null;
       return r;
     }
-    while (mPairs.isEmpty() || mPairs.first().right().multiply2().compareTo(mN) >= 0) {
+    while (mPairs.isEmpty()) {
       mN = mN.add(1);
       final Z d = d(mN);
       while (d.compareTo(mM) >= 0) {
@@ -76,10 +72,7 @@ public class A066573 extends Sequence1 {
         final Z u = mF.getValue(mN);
         for (final Z t : g) {
           if (t.compareTo(mN) < 0 && d(t).equals(u)) {
-            mPairs.add(new Pair<>(t, mN));
-            if (mVerbose) {
-              StringUtils.message("Pending solutions are now: " + mPairs);
-            }
+            mPairs.add(new Pair<>(t, mN)); // We do this in case it is possible for more than 1 pair to occur
           }
         }
       }

@@ -14,6 +14,13 @@ public class MultiplicativeSequence extends AbstractSequence implements DirectSe
 
   @FunctionalInterface
   public interface TriFunction<MultiplicativeSequence, Z, Integer> {
+    /**
+     * Apply the function.
+     * @param self reference to enclosing class
+     * @param p prime
+     * @param e exponent
+     * @return value of <code>p^e</code> in multiplicative function
+     */
     Z apply(MultiplicativeSequence self, Z p, Integer e);
   }
 

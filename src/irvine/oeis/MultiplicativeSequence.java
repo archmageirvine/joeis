@@ -12,9 +12,17 @@ import irvine.math.z.Z;
  */
 public class MultiplicativeSequence extends AbstractSequence implements DirectSequence {
 
+  @FunctionalInterface
+  public interface TriFunction<MultiplicativeSequence, Z, Integer> {
+    public Z apply(MultiplicativeSequence self, Z p, Integer e);
+  }
+
+  protected final static MultiplicativeSequence SELF = null;
   private final BiFunction<Z, Integer, Z> mF;
+  private final TriFunction<MultiplicativeSequence, Z, Integer> mFR;
   private final long mStep;
   protected long mN;
+  private boolean mIsRecurrent;
 
   /**
    * Construct a multiplicative sequence with the given function.
@@ -27,6 +35,8 @@ public class MultiplicativeSequence extends AbstractSequence implements DirectSe
     mStep = step;
     mN = offset - mStep;
     mF = f;
+    mFR = null;
+    mIsRecurrent = false;
   }
 
   /**
@@ -38,12 +48,26 @@ public class MultiplicativeSequence extends AbstractSequence implements DirectSe
     this(offset, 1, f);
   }
 
+  /**
+   * Construct a multiplicative sequence with the given function.
+   * @param offset index of first term
+   * @param fr recurrent function
+   */
+  public MultiplicativeSequence(final int offset, final TriFunction<MultiplicativeSequence, Z, Integer> fr) {
+    super(offset);
+    mStep = 1;
+    mN = offset - mStep;
+    mFR = fr;
+    mF = null;
+    mIsRecurrent = true;
+  }
+
   @Override
   public Z a(final Z n) {
     final FactorSequence fs = Jaguar.factor(n);
     Z res = Z.ONE;
     for (final Z p : fs.toZArray()) {
-      res = res.multiply(mF.apply(p, fs.getExponent(p)));
+      res = res.multiply(mIsRecurrent ? mFR.apply(this, p, fs.getExponent(p)) : mF.apply(p, fs.getExponent(p)));
     }
     return res;
   }

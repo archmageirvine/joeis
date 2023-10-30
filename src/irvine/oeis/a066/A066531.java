@@ -11,14 +11,24 @@ import irvine.oeis.Sequence1;
  */
 public class A066531 extends Sequence1 {
 
+  private final int mWays;
   private long mN = 2519;
+
+  protected A066531(final int ways) {
+    mWays = ways;
+  }
+
+  /** Construct the sequence. */
+  public A066531() {
+    this(2);
+  }
 
   private boolean is(final long n) {
     int cnt = 0;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final long d = dd.longValue();
       final long e = n / d;
-      if (d >= e && LongUtils.reverse(d) == e && ++cnt >= 2) {
+      if (d >= e && LongUtils.reverse(d) == e && ++cnt >= mWays) {
         return true;
       }
     }

@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A160412 Number of &quot;ON&quot; cells at n-th stage in simple 2-dimensional cellular automaton (see Comments for precise definition).
+ * A160412 Number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton (see Comments for precise definition).
  * @author Georg Fischer
  */
 public class A160412 extends SimpleTransformSequence {

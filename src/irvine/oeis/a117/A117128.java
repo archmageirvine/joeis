@@ -5,7 +5,7 @@ import irvine.oeis.a064.A064365;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A117128 Recam√°n transform of primes (another version): a(0)=1; for n&gt;0, a(n) = a(n-1) - prime(n) if that number is positive and not already in the sequence, otherwise a(n) = a(n-1) + prime(n).
+ * A117128 Recam\u00e1n transform of primes (another version): a(0)=1; for n&gt;0, a(n) = a(n-1) - prime(n) if that number is positive and not already in the sequence, otherwise a(n) = a(n-1) + prime(n).
  * @author Georg Fischer
  */
 public class A117128 extends SimpleTransformSequence {

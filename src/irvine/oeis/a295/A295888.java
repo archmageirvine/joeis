@@ -6,7 +6,7 @@ import irvine.oeis.a101.A101296;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A295888 Filter combining prime signature of n (A101296) with Dedekind&apos;s psi (A001615).
+ * A295888 Filter combining prime signature of n (A101296) with Dedekind's psi (A001615).
  * @author Georg Fischer
  */
 public class A295888 extends RestrictedGrowthTransformSequence {

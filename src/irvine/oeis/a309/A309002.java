@@ -12,6 +12,6 @@ public class A309002 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A309002() {
-    super(1, (SELF, p, e) -> (e == 1) ? p.square().pow(e) : p.pow(SELF.a(e)));
+    super(1, (self, p, e) -> (e == 1) ? p.square().pow(e) : p.pow(self.a(e)));
   }
 }

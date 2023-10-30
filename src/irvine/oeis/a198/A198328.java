@@ -14,6 +14,6 @@ public class A198328 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A198328() {
-    super(1, (SELF, p, e) -> is2(p) ? Z.ONE : Puma.primeZ(SELF.a(Puma.primePiZ(p))).pow(e));
+    super(1, (self, p, e) -> is2(p) ? Z.ONE : Puma.primeZ(self.a(Puma.primePiZ(p))).pow(e));
   }
 }

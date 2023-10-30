@@ -13,6 +13,6 @@ public class A303809 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A303809() {
-    super(1, (SELF, p, e) -> Z.TWO.pow(SELF.a(e)));
+    super(1, (self, p, e) -> Z.TWO.pow(self.a(e)));
   }
 }

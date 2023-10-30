@@ -13,6 +13,6 @@ public class A089242 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A089242() {
-    super(1, (SELF, p, e) -> is2(p) ? SELF.a(e).add(1) : Z.ONE);
+    super(1, (self, p, e) -> is2(p) ? self.a(e).add(1) : Z.ONE);
   }
 }

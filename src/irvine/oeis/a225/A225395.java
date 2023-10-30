@@ -13,6 +13,6 @@ public class A225395 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A225395() {
-    super(1, (SELF, p, e) -> Puma.primePiZ(p).pow(SELF.a(e)));
+    super(1, (self, p, e) -> Puma.primePiZ(p).pow(self.a(e)));
   }
 }

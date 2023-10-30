@@ -13,6 +13,6 @@ public class A184160 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A184160() {
-    super(1, (SELF, p, e) -> SELF.a(Puma.primePiZ(p)).add(1).pow(e));
+    super(1, (self, p, e) -> self.a(Puma.primePiZ(p)).add(1).pow(e));
   }
 }

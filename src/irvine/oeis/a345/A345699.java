@@ -12,6 +12,6 @@ public class A345699 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A345699() {
-    super(1, (SELF, p, e) -> (e == 1) ? SELF.a(p.subtract(1)) : SELF.a(p).add(SELF.a(e)));
+    super(1, (self, p, e) -> (e == 1) ? self.a(p.subtract(1)) : self.a(p).add(self.a(e)));
   }
 }

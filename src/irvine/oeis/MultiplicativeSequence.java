@@ -14,15 +14,14 @@ public class MultiplicativeSequence extends AbstractSequence implements DirectSe
 
   @FunctionalInterface
   public interface TriFunction<MultiplicativeSequence, Z, Integer> {
-    public Z apply(MultiplicativeSequence self, Z p, Integer e);
+    Z apply(MultiplicativeSequence self, Z p, Integer e);
   }
 
-  protected final static MultiplicativeSequence SELF = null;
   private final BiFunction<Z, Integer, Z> mF;
   private final TriFunction<MultiplicativeSequence, Z, Integer> mFR;
   private final long mStep;
   protected long mN;
-  private boolean mIsRecurrent;
+  private final boolean mIsRecurrent;
 
   /**
    * Construct a multiplicative sequence with the given function.

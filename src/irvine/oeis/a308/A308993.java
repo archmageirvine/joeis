@@ -13,6 +13,6 @@ public class A308993 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A308993() {
-    super(1, (SELF, p, e) -> (e == 1) ? Z.ONE : p.pow(SELF.a(e)));
+    super(1, (self, p, e) -> (e == 1) ? Z.ONE : p.pow(self.a(e)));
   }
 }

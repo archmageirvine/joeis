@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A180272 a(n) = binomial(n, A002024(n+1)-1) where A002024 is &quot;n appears n times&quot;.
+ * A180272 a(n) = binomial(n, A002024(n+1)-1) where A002024 is "n appears n times".
  * @author Georg Fischer
  */
 public class A180272 extends LambdaSequence {

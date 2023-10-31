@@ -9,20 +9,16 @@ import irvine.oeis.Sequence1;
  */
 public class A066432 extends Sequence1 {
 
-  protected long mN;
-  protected int mP1;
-  protected Z mPz;
+  private long mN;
+  private final int mP1;
+  private final Z mPz;
 
   /** Construct the sequence. */
   public A066432() {
     this(10);
   }
 
-  /**
-   * Generic constructor with parameters
-   * @param p1
-   */
-  public A066432(final int p1) {
+  protected A066432(final int p1) {
     mP1 = p1;
     mPz = Z.valueOf(mP1);
     mN = 0;
@@ -30,7 +26,6 @@ public class A066432 extends Sequence1 {
 
   @Override
   public Z next() {
-    ++mN;
-    return mPz.pow(mN).mod(Z.valueOf(mN).pow(mP1));
+    return mPz.modPow(Z.valueOf(++mN), Z.valueOf(mN).pow(mP1));
   }
 }

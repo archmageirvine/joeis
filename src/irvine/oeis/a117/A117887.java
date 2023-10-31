@@ -7,14 +7,13 @@ import irvine.oeis.LambdaSequence;
 
 /**
  * A117887 Number of labeled trees on &lt;= n nodes.
- * a(n)=sum(k=2, n, k^(k-2))
  * @author Georg Fischer
  */
 public class A117887 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A117887() {
-    super(1, n -> Integers.SINGLETON.sum(2, n, k -> Z.valueOf(k).pow(k - 2)));
-    skip(1);
+    // Table[Sum[(k+2)^(k), {k, 0, n-1}], {n, 1, 25}]
+    super(1, n -> Integers.SINGLETON.sum(0, n - 1, k -> Z.valueOf(k + 2).pow(k)));
   }
 }

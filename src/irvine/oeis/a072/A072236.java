@@ -7,14 +7,14 @@ import irvine.oeis.LambdaSequence;
 
 /**
  * A072236 Numbers of primes between successive primorials.
- * a(n)=primepi(prod(i=1, n-1, prime(i)))-primepi(prod(i=1, n, prime(i)))
  * @author Georg Fischer
  */
 public class A072236 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A072236() {
-    super(0, n -> Puma.primePiZ(Integers.SINGLETON.product(1, n - 1, i -> Puma.primeZ(i))).subtract(Puma.primePiZ(Integers.SINGLETON.product(1, n, i -> Puma.primeZ(i)))).negate());
-    skip(1);
+    // Table[ PrimePi[ Product[Prime[i], {i, 1, n+1}]] - PrimePi[ Product[ Prime[i], {i, 1, n}]], {n, 0, 6}]
+    super(0, n -> Puma.primePiZ(Integers.SINGLETON.product(1, n + 1, i -> Puma.primeZ(i)))
+      .subtract(Puma.primePiZ(Integers.SINGLETON.product(1, n, i -> Puma.primeZ(i)))));
   }
 }

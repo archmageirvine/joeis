@@ -7,14 +7,13 @@ import irvine.oeis.LambdaSequence;
 
 /**
  * A066888 Number of primes p between triangular numbers T(n) &lt; p &lt;= T(n+1).
- * a(n)=primepi((n^2+n)/2)-primepi((n^2-n)/2)
  * @author Georg Fischer
  */
 public class A066888 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A066888() {
-    super(0, n -> Puma.primePiZ(Z.valueOf((long) n * n + n).divide2()).subtract(Puma.primePiZ(Z.valueOf((long) n * n - n).divide2())));
-    skip(1);
+    // Table[PrimePi[(n^2 + 3*n+2)/2] - PrimePi[(n^2 + n)/2], {n,0, 96}]
+    super(0, n -> Puma.primePiZ(Z.valueOf((long) n * n + 3 * n + 2).divide2()).subtract(Puma.primePiZ(Z.valueOf((long) n * n + n).divide2())));
   }
 }

@@ -7,14 +7,13 @@ import irvine.oeis.LambdaSequence;
 
 /**
  * A226843 a(n) = prime(prime(n + 1) - 2).
- * a(n)=prime(prime(n)-2)
  * @author Georg Fischer
  */
 public class A226843 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A226843() {
-    super(1, n -> Puma.primeZ(Puma.primeZ(n).subtract(Z.TWO)));
-    skip(1);
+    // Table[Prime[Prime[n+1] - 2], {n, 1, 75}]
+    super(1, n -> Puma.primeZ(Puma.primeZ(n + 1).subtract(Z.TWO)));
   }
 }

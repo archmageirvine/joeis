@@ -12,17 +12,9 @@ import irvine.oeis.LambdaSequence;
  */
 public class A075084 extends LambdaSequence {
 
-  private int mN = 0;
-
   /** Construct the sequence. */
   public A075084() {
-    super(1, n -> Z.valueOf(n).subtract(Puma.primePiZ(2L * n)).add(Puma.primePiZ(n - 1)).add(Z.ONE));
-  }
-
-  @Override
-  public Z next() {
-    final Z result = super.next();
-    return (++mN == 1) ? Z.ZERO : result;
+    super(1, n -> (n == 1) ? Z.ZERO : Z.valueOf(n).subtract(Puma.primePiZ(2L * n)).add(Puma.primePiZ(n - 1)).add(Z.ONE));
   }
 }
 

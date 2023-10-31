@@ -16,12 +16,8 @@ public class A234605 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A234605() {
-    super(1, n -> Integers.SINGLETON.sum(0, n - 1, i -> Z.TEN.pow(Z.THREE.pow(i).add(Z.ONE).divide2())).pow(Z.THREE));
-  }
-
-  @Override
-  public Z next() {
-    return (++mN == 1) ? Z.ZERO : super.next();
+    // seq(add(10^((3^i+1)/2),i=0..n-2)^3,n=1..7);
+    super(1, n -> Integers.SINGLETON.sum(0, n - 2, i -> Z.TEN.pow(Z.THREE.pow(i).add(Z.ONE).divide2())).pow(Z.THREE));
   }
 }
 

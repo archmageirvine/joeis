@@ -15,13 +15,6 @@ public class A241039 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A241039() {
-    super(0, n -> Cyclotomic.cyclotomic(n, Z.valueOf(2048)));
-  }
-
-  @Override
-  public Z next() {
-    ++mN;
-    final Z result = super.next();
-    return (mN == 0) ? Z.ONE : result;
+    super(0, n -> (n == 0) ? Z.ONE : Cyclotomic.cyclotomic(n, Z.valueOf(2048)));
   }
 }

@@ -16,13 +16,7 @@ public class A297151 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A297151() {
-    super(0, n -> Z.valueOf(n).multiply(Z.ONE.shiftLeft(3L * n - 1)).add(Z.THREE.multiply(n).multiply(Z.ONE.shiftLeft(n - 2)).multiply(Binomial.binomial(2L * n, n))));
-  }
-
-  @Override
-  public Z next() {
-    final Z result = super.next();
-    return (++mN == 1) ? Z.SEVEN : result;
+    super(0, n -> (n == 1) ? Z.SEVEN : Z.valueOf(n).multiply(Z.ONE.shiftLeft(3L * n - 1)).add(Z.THREE.multiply(n).multiply(Z.ONE.shiftLeft(n - 2)).multiply(Binomial.binomial(2L * n, n))));
   }
 }
 

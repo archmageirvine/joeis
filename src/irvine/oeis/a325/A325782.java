@@ -8,7 +8,6 @@ import irvine.oeis.LambdaSequence;
 
 /**
  * A325782 Heinz numbers of strict perfect integer partitions.
- * a(n) = prod(i=0,n-1,prime(2^i))
  * @author Georg Fischer
  */
 public class A325782 extends LambdaSequence {
@@ -17,12 +16,8 @@ public class A325782 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A325782() {
-    super(1, n -> Integers.SINGLETON.product(0, n - 1, i -> Puma.primeZ(Z.ONE.shiftLeft(i))));
-  }
-
-  @Override
-  public Z next() {
-    return (++mN == 1) ? Z.ONE : super.next();
+    // Table[Times@@Prime[2^Range[0, n-2]], {n, 1, 10}]
+    super(1, n -> Integers.SINGLETON.product(0, n - 2, i -> Puma.primeZ(Z.ONE.shiftLeft(i))));
   }
 }
 

@@ -11,16 +11,8 @@ import irvine.oeis.LambdaSequence;
  */
 public class A066611 extends LambdaSequence {
 
-  private int mN = 0;
-
   /** Construct the sequence. */
   public A066611() {
-    super(1, n -> Z.valueOf(n).pow(n).mod(Z.valueOf(n - 1).pow(n - 1)));
-  }
-
-  @Override
-  public Z next() {
-    final Z result = super.next();
-    return (++mN == 1) ? Z.ONE : result;
+    super(1, n -> (n == 1) ? Z.ONE : Z.valueOf(n).pow(n).mod(Z.valueOf(n - 1).pow(n - 1)));
   }
 }

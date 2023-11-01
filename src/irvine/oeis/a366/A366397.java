@@ -6,7 +6,7 @@ import irvine.oeis.cons.DecimalExpansionFromContinuedFractionSequence;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A366397.
+ * A366397 allocated for Rok Cestnik.
  * @author Sean A. Irvine
  */
 public class A366397 extends DecimalExpansionFromContinuedFractionSequence {

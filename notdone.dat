@@ -2298,3 +2298,5 @@ A066541 Number of normal subgroups of the group GL(2,Z_n) of invertible 2 X 2 ma
 A066544 Number of spanning trees in the line graph of the product of two star graphs, each of order n, L(S_n x S_n).
 A066545 Number of spanning trees in the line graph of the product of two complete graph, each of order n, L(K_n x K_n)
 A066546 Number of spanning trees in the line graph of the product of two (2 x n) grid graphs.
+A066634 Number of triangulations of the cyclic polytope C(n, n-5).
+A066654 Continued fraction for the Hardy-Littlewood constant Product_{p prime >= 5} (1-(3*p-1)/(p-1)^3)

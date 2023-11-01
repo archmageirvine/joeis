@@ -166,6 +166,29 @@ public class Permutation {
   }
 
   /**
+   * Compute the order of the given permutation.
+   * @param p permutation
+   * @return order
+   */
+  public static Z order(final int[] p) {
+    final boolean[] seen = new boolean[p.length];
+    Z lcm = Z.ONE;
+    for (int k = 0; k < p.length; ++k) {
+      if (!seen[k]) {
+        int j = k;
+        int len = 0;
+        do {
+          ++len;
+          seen[j] = true;
+          j = p[j];
+        } while (!seen[j]);
+        lcm = lcm.lcm(Z.valueOf(len));
+      }
+    }
+    return lcm;
+  }
+
+  /**
    * Example use.
    * @param args ignored
    */

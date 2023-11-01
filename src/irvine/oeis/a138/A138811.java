@@ -3,13 +3,16 @@ package irvine.oeis.a138;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
  * A138811 Theta series of quadratic form x^2 + x*y + 11*y^2.
  * @author Georg Fischer
  */
-public class A138811 extends MultiplicativeSequence {
+public class A138811 extends MultiplicativeSequence implements DirectSequence {
+
+  private int mN = -1;
 
   /** Construct the sequence. */
   public A138811() {
@@ -17,7 +20,17 @@ public class A138811 extends MultiplicativeSequence {
   }
 
   @Override
+  public Z a(final Z n) {
+    return n.isZero() ? super.a(n) : super.a(n).multiply2();
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
+  @Override
   public Z next() {
-    return mN == -1 ? super.next() : super.next().multiply2();
+    return a(++mN);
   }
 }

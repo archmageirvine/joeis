@@ -3,13 +3,14 @@ package irvine.oeis.a235;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
  * A235027 Reverse the bits of prime divisors of n (with 2 -&gt; 2), and multiply together: a(0)=0, a(1)=1, a(2)=2, a(p) = revbits(p) for odd primes p, a(u*v) = a(u) * a(v) for composites.
  * @author Georg Fischer
  */
-public class A235027 extends MultiplicativeSequence {
+public class A235027 extends MultiplicativeSequence implements DirectSequence {
 
   private int mN = -1;
 
@@ -19,9 +20,18 @@ public class A235027 extends MultiplicativeSequence {
   }
 
   @Override
+  public Z a(final Z n) {
+    return n.isZero() ? Z.ZERO : super.a(n);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
+  @Override
   public Z next() {
-    final Z result = super.next();
-    return (++mN == 0) ? Z.ZERO : result;
+    return a(++mN);
   }
 }
 

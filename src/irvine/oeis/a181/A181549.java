@@ -2,6 +2,7 @@ package irvine.oeis.a181;
 // manually multman/mult at 2023-10-03 10:18
 
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
@@ -9,7 +10,7 @@ import irvine.oeis.MultiplicativeSequence;
  * Multiplicative with: a(p)= p + 1, and a(p^e) = p^e + p^(e-1) - p^(e-2) if e > 1.
  * @author Georg Fischer
  */
-public class A181549 extends MultiplicativeSequence {
+public class A181549 extends MultiplicativeSequence implements DirectSequence {
 
   private int mN = -1;
 
@@ -19,8 +20,17 @@ public class A181549 extends MultiplicativeSequence {
   }
 
   @Override
+  public Z a(final Z n) {
+    return n.isZero() ? Z.ZERO : super.a(n);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
+  @Override
   public Z next() {
-    final Z result = super.next();
-    return (++mN == 0) ? Z.ZERO : result;
+    return a(++mN);
   }
 }

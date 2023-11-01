@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A060545 a(n) = C(n^2,n)/n.
+ * A060545 a(n) = binomial(n^2, n)/n.
  * @author Sean A. Irvine
  */
 public class A060545 extends Sequence1 {

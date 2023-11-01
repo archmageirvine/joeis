@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A318637 G.f.: Sum_{n&gt;=1} ( (2 + x^n)^n - 2^n ).
+ * A318637 Expansion of Sum_{n&gt;=1} ( (2 + x^n)^n - 2^n ).
  * @author Georg Fischer
  */
 public class A318637 extends AbstractSequence {

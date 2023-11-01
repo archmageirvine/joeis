@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A004951 Nearest integer to n*phi^16, where phi is the golden ratio, A001622.
+ * A004951 a(n) = round(n*phi^16), where phi is the golden ratio, A001622.
  * @author Sean A. Irvine
  */
 public class A004951 extends Sequence0 {

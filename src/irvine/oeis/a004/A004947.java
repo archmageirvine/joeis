@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A004947 Nearest integer to n*phi^12, where phi is the golden ratio, A001622.
+ * A004947 a(n) = round(n*phi^12), where phi is the golden ratio, A001622.
  * @author Sean A. Irvine
  */
 public class A004947 extends Sequence0 {

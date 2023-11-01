@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A104098 Sum_{k=1..n} C(n-1,k-1)*A008292(n,k) for n&gt;=1.
+ * A104098 a(n) = Sum_{k=1..n} binomial(n-1, k-1)*A008292(n, k) for n &gt;= 1.
  * a(n)=sum(k=1, n, binom(n-1, k-1)*sum(j=0, k, (-1)^j*(k-j)^n*binom(n+1, j)))
  * @author Georg Fischer
  */

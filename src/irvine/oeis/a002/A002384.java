@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002384 Numbers n such that n^2 + n + 1 is prime.
+ * A002384 Numbers m such that m^2 + m + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A002384 extends Sequence1 {

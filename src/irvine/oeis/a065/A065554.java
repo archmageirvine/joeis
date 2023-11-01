@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002380;
 
 /**
- * A065554 Numbers n such that floor((3/2)^(n+1))/floor((3/2)^n) = 3/2.
+ * A065554 Numbers k such that floor((3/2)^(k+1))/floor((3/2)^k) = 3/2.
  * @author Sean A. Irvine
  */
 public class A065554 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003261;
 
 /**
- * A366899.
+ * A367006 Number of distinct prime factors of n*2^n - 1.
  * @author Sean A. Irvine
  */
 public class A367006 extends A003261 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A013971 a(n) = sum of 23rd powers of divisors of n.
+ * A013971 a(n) = sigma_23(n), the sum of the 23rd powers of the divisors of n.
  * @author Sean A. Irvine
  */
 public class A013971 extends AbstractSequence {

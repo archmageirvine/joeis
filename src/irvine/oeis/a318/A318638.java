@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A318638 G.f.: Sum_{n&gt;=1} ( (3 + x^n)^n - 3^n ).
+ * A318638 Expansion of Sum_{n&gt;=1} ( (3 + x^n)^n - 3^n ).
  * @author Georg Fischer
  */
 public class A318638 extends AbstractSequence {

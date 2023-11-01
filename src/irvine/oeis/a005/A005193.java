@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005193 Balanced labeled graphs.
+ * A005193 a(n) is the number of alpha-labelings of graphs with n edges.
  * @author Sean A. Irvine
  */
 public class A005193 extends Sequence1 {

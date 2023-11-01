@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A061151 1 + Sum_{n=1..inf} a_n x^n = 1/Product_{n=1..inf} (1+x^n)^prime(n).
+ * A061151 1 + Sum_{n&gt;=1} a_n x^n = 1/Product_{n&gt;=1} (1+x^n)^prime(n).
  * @author Sean A. Irvine
  */
 public class A061151 extends MemorySequence {

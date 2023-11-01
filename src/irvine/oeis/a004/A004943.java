@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A004943 Nearest integer to n*phi^8, where phi is the golden ratio, A001622.
+ * A004943 a(n) = round(n*phi^8), where phi is the golden ratio, A001622.
  * @author Sean A. Irvine
  */
 public class A004943 extends Sequence0 {

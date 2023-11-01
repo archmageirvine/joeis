@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A001103 Numbers n such that (n / product of digits of n) is 1 or a prime.
+ * A001103 Numbers k such that (k / product of digits of k) is 1 or a prime.
  * @author Sean A. Irvine
  */
 public class A001103 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002064;
 
 /**
- * A367002.
+ * A367004 a(n) is the smallest prime factor of n*2^n+1.
  * @author Sean A. Irvine
  */
 public class A367004 extends A002064 {

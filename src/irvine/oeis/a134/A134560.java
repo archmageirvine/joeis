@@ -5,7 +5,7 @@ import irvine.oeis.a005.A005408;
 import irvine.oeis.a130.A130162;
 
 /**
- * A134560 A051731 * A127775.
+ * A134560 Triangle A051731 * A127775 (as infinite lower triangular matrices).
  * @author Georg Fischer
  */
 public class A134560 extends A130162 {

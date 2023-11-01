@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005194 Balanced symmetric graphs.
+ * A005194 Number of balanced symmetric graphs.
  * @author Sean A. Irvine
  */
 public class A005194 extends Sequence1 {

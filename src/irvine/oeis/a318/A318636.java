@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A318636 G.f.: Sum_{n&gt;=1} ( (1 + x^n)^n - 1 ).
+ * A318636 Expansion of Sum_{n&gt;=1} ( (1 + x^n)^n - 1 ).
  * a(n)=sumdiv(n,d,binom(n/d,d))
  * @author Georg Fischer
  */

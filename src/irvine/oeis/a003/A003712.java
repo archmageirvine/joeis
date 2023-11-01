@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A003712 E.g.f. sin(sin(x)) (odd powers only).
+ * A003712 Expansion of e.g.f. sin(sin(x)) (odd powers only).
  * @author Sean A. Irvine
  */
 public class A003712 extends Sequence0 {

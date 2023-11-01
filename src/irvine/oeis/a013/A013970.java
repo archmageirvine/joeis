@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A013970 a(n) = sum of 22nd powers of divisors of n.
+ * A013970 a(n) = sigma_22(n), the sum of the 22nd powers of the divisors of n.
  * @author Sean A. Irvine
  */
 public class A013970 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A066488 Composite numbers n which divide A001045(n-1).
+ * A066488 Composite numbers k which divide A001045(k-1).
  * @author Sean A. Irvine
  */
 public class A066488 extends A002808 {

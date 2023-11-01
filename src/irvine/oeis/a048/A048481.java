@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A048481 a(n) = T(0,n)+T(1,n-1)+...+T(n,0), array T given by A048472.
+ * A048481 a(n) = T(0,n) + T(1,n-1) + ... + T(n,0), array T given by A048472.
  * @author Sean A. Irvine
  */
 public class A048481 extends LinearRecurrence {

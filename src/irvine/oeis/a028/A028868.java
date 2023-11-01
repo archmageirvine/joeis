@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A028868 Primes that when squared give numbers with digits in descending order.
+ * A028868 Primes that when squared give numbers with digits in nonascending order.
  * @author Sean A. Irvine
  */
 public class A028868 extends A000040 {

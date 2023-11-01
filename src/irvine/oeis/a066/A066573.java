@@ -13,7 +13,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A066573 f-amicable numbers where f(n) = Floor(|n sin(n)|); f-amicable numbers are defined in A066511.
+ * A066573 Pairs (x, y), x &lt; y, of f-amicable numbers where f(k) = floor(|k*sin(k)|) sorted by increasing y, then increasing x; f-amicable numbers are defined in A066511.
  * @author Sean A. Irvine
  */
 public class A066573 extends Sequence1 {

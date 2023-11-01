@@ -18,7 +18,7 @@ public class A066637 extends Sequence1 {
   private final MemoryFunctionInt2<Z[]> mB = new MemoryFunctionInt2<>() {
     @Override
     protected Z[] compute(final int n, final int m) {
-      final Z[] res = new Z[] {Z.ZERO, Z.ZERO};
+      final Z[] res = {Z.ZERO, Z.ZERO};
       final FactorSequence fs = Jaguar.factor(n);
       if (fs.bigOmega() > 1) {
         for (final Z dd : fs.divisors()) {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A000355 Primes = 3, 9, 11 (mod 20) such that 2p+1 is also prime.
+ * A000355 Primes p == 3, 9, 11 (mod 20) such that 2p+1 is also prime.
  * @author Sean A. Irvine
  */
 public class A000355 extends Sequence1 {

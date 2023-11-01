@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A013972 a(n) = sum of 24th powers of divisors of n.
+ * A013972 a(n) = sigma_24(n), the sum of the 24th powers of the divisors of n.
  * @author Sean A. Irvine
  */
 public class A013972 extends Sequence1 {

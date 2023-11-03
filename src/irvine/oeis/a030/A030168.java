@@ -14,7 +14,10 @@ import irvine.oeis.cons.DecimalExpansionSequence;
  */
 public class A030168 extends ContinuedFractionSequence {
 
-  private static final CR COPELAND_ERDOS = new CR() {
+  /**
+   * The Copeland-Erd\u0151s constant.
+   */
+  public static final CR COPELAND_ERDOS = new CR() {
 
     private final Sequence mDigits = new A033308();
     private Z mUnscaled = Z.ZERO;

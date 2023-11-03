@@ -118,6 +118,7 @@ public final class Report {
     int pari = 0;
     int hasCorrectOffset = 0;
     int conjectural = 0;
+    int direct = 0;
     final List<String> failedOffsetChecks = new ArrayList<>();
     final LimitedLengthPriorityQueue<String> slowest = new LimitedLengthPriorityQueue<>(10, true);
     for (int a = 1; a < MAX_ID; ++a) {
@@ -158,13 +159,17 @@ public final class Report {
         if (seq instanceof PariSequence) {
           ++pari;
         }
+        if (seq instanceof DirectSequence) {
+          ++direct;
+        }
       } catch (final UnimplementedException e) {
         // too bad
       }
     }
     System.out.println("Total sequences implemented: " + rightAlign(total));
+    System.out.println("DirectSequence:              " + rightAlign(direct));
     System.out.println("Recurrences:                 " + rightAlign(recurrence));
-    System.out.println("Real number constants:       " + rightAlign(cons));
+    System.out.println("RealConstantSequence:        " + rightAlign(cons));
     System.out.println("DeadSequence:                " + rightAlign(dead));
     System.out.println("NoncomputableSequence:       " + rightAlign(noncomputable));
     System.out.println("Conjectural:                 " + rightAlign(conjectural));

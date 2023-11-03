@@ -5,7 +5,7 @@ import irvine.math.z.BellNumbers;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A144155 Bell convolution triangle, T(n,k) = A000110(n-k)*A000110(k)
+ * A144155 Bell convolution triangle, T(n,k) = A000110(n-k)*A000110(k).
  * @author Georg Fischer
  */
 public class A144155 extends LambdaTriangle {

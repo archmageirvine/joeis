@@ -6,7 +6,7 @@ import irvine.oeis.a024.A024581;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A153582 A024581 / [1, 2, 3,...].
+ * A153582 A024581 / [1,2,3,...].
  * @author Georg Fischer
  */
 public class A153582 extends ConvolutionProduct {

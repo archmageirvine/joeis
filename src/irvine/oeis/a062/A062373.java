@@ -29,8 +29,7 @@ public class A062373 extends Sequence1 {
       mN = mN.add(1);
       final Z phi = Euler.phi(mN);
       final Z c = Carmichael.lambda(mN);
-      final Z[] qr = phi.divideAndRemainder(c);
-      if (qr[1].isZero() && mTarget.equals(qr[0])) {
+      if (phi.equals(c.multiply(mTarget))) {
         return mN;
       }
     }

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A143199 A symmetrical triangular sequence based on a generalization of A142463 at n=3: a(n)=a(n-1)+n;A000096;
+ * A143199 Triangle read by rows: T(n, m) =  if m &lt;= floor(n/2) then (n + 1)*a(m) + n otherwise (n + 1)*a(n - m) + n, where a(m) is A000096.
  * t(n,m)=If[m &lt;= Floor[n/2], (n + 1)*a[m] + n, (n + 1)*a[n - m] + n].
  * @author Georg Fischer
  */

@@ -1,8 +1,8 @@
 package irvine.oeis.a230;
 
 import irvine.math.z.Z;
-import irvine.oeis.prime.ConcatenatedPrimeFactorizationSequence;
 import irvine.oeis.Sequence2;
+import irvine.oeis.prime.HomePrimeSequence;
 
 /**
  * A230626 Iterate the map x -&gt; A230625(x) starting at n; sequence gives number of steps to reach a prime, or -1 if no prime is ever reached.
@@ -15,7 +15,7 @@ public class A230626 extends Sequence2 {
   @Override
   public Z next() {
     long  c = -1;
-    final ConcatenatedPrimeFactorizationSequence seq = new ConcatenatedPrimeFactorizationSequence(++mN, 2);
+    final HomePrimeSequence seq = new HomePrimeSequence(++mN, 2, true, true);
     Z u = null;
     Z t;
     while ((t = seq.next()) != null) {

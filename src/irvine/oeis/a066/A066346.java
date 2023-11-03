@@ -12,7 +12,7 @@ public class A066346 extends Sequence0 {
   private long mN = -1;
   private long mCount = 0;
 
-  private boolean isWinning(final String s) {
+  static boolean isWinning(final String s) {
     if (s.isEmpty()) {
       return true;
     }

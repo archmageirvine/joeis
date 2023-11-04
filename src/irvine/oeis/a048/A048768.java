@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Puma;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A048768 Numbers n such that A048767(n) = n.
  * @author Sean A. Irvine
  */
-public class A048768 extends Sequence0 {
+public class A048768 extends Sequence1 {
 
   private Z mN = Z.ZERO;
 

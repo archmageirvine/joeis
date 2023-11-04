@@ -3,15 +3,38 @@ package irvine.oeis.a067;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.a010.A010786;
 
 /**
  * A067514 Number of distinct primes of the form floor(n/k) for 1 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
-public class A067514 extends A010786 {
+public class A067514 extends AbstractSequence implements DirectSequence {
+
+  private long mN;
+  private final A010786 mSeq = new A010786();
+
+  /** Construct the sequence. */
+  public A067514() {
+    super(1);
+    mN = 0;
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return Z.valueOf(Jaguar.factor(mSeq.a(n)).omega());
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(super.next()).omega());
+    return a(Z.valueOf(++mN));
   }
 }
+

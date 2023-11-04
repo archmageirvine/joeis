@@ -2,13 +2,13 @@ package irvine.oeis.a066;
 
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A066535 Number of ways of writing n as a sum of n squares.
  * @author Sean A. Irvine
  */
-public class A066535 extends Sequence1 {
+public class A066535 extends Sequence0 {
 
   private int mN = -1;
   protected final MemoryFunctionInt2<Z> mB = new MemoryFunctionInt2<Z>() {

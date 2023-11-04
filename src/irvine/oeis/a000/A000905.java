@@ -2,31 +2,28 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
+import irvine.oeis.CachedSequence;
 
 /**
  * A000905 Hamilton numbers.
  * @author Sean A. Irvine
  */
-public class A000905 extends MemorySequence {
+public class A000905 extends CachedSequence {
 
-  {
-    setOffset(1);
-  }
-
-  @Override
-  protected Z computeNext() {
-    final int n = size();
-    if (n == 0) {
-      return Z.TWO;
-    } else {
-      Z s = Z.TWO;
-      for (int k = 1; k <= n; ++k) {
-        final Z b = Binomial.binomial(a(n - k), Z.valueOf(k + 1));
-        s = s.signedAdd((k & 1) == 1, b);
+  /** Construct the sequence. */
+  public A000905() {
+    super(1, (self, n) -> {
+      if (Z.ONE.equals(n)) {
+        return Z.TWO;
+      } else {
+        Z s = Z.TWO;
+        for (Z k = Z.ONE; k.compareTo(n) <= 0; k = k.add(1)) {
+          final Z b = Binomial.binomial(self.a(n.subtract(k)), k.add(1));
+          s = s.signedAdd(k.isOdd(), b);
+        }
+        return s;
       }
-      return s;
-    }
+    });
   }
 }
 

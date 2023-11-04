@@ -77,6 +77,7 @@ public abstract class MemorySequence extends AbstractSequence implements Iterabl
   /**
    * Return <code>a(n)</code>. If the value of <code>a(n)</code> is not already computed,
    * automatically compute all terms &lt;= n before returning with <code>a(n)</code>.
+   * WARNING: At present this method is not guaranteed to obey the sequence offset.
    * @param n index
    * @return value of <code>a(n)</code>
    */
@@ -86,6 +87,16 @@ public abstract class MemorySequence extends AbstractSequence implements Iterabl
       mTerms.add(computeNext());
     }
     return mTerms.get(n - mOffset);
+  }
+
+  /**
+   * Return the specified term of the sequence.
+   * WARNING: At present this method is not guaranteed to obey the sequence offset.
+   * @param n term index
+   * @return term
+   */
+  public Z a(final Z n) {
+    return a(n.intValueExact());
   }
 
   /**

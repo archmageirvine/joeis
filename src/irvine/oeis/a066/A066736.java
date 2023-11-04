@@ -23,7 +23,7 @@ public class A066736 extends Sequence1 {
       if (!prod.isZero() && prod.root(mN).auxiliary() == 1) {
         return Z.valueOf(k);
       }
-      if (mVerbose && k % 1000000 == 0) {
+      if (mVerbose && k % 10000000 == 0) {
         StringUtils.message(mN + " search completed to " + k);
       }
     }

@@ -1,15 +1,15 @@
 package irvine.oeis.a067;
 
-import irvine.oeis.FiniteSequence;
+import irvine.oeis.a066.A066722;
 
 /**
- * A067190 Numbers that can be expressed as the sum of two primes in exactly four ways.
- * @author Georg Fischer
+ * A036839.
+ * @author Sean A. Irvine
  */
-public class A067190 extends FiniteSequence {
+public class A067190 extends A066722 {
 
   /** Construct the sequence. */
   public A067190() {
-    super(1, FINITE, 34, 36, 42, 46, 50, 58, 80, 88, 92, 122, 152);
+    super(4);
   }
 }

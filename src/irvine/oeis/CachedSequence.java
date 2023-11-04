@@ -58,6 +58,15 @@ public class CachedSequence extends AbstractSequence implements DirectSequence {
   /**
    * Construct the sequence backed by a lambda function.
    * @param offset first index
+   * @param lambda lambda expression for an index variable starting at <code>offset</code>
+   */
+  public CachedSequence(final int offset, final Function<Z, Z> lambda) {
+    this(offset, (self, n) -> lambda.apply(n));
+  }
+
+  /**
+   * Construct the sequence backed by a lambda function.
+   * @param offset first index
    * @param clazz type of the argument of the lambda function (one of <code>Integer</code>,
    * <code>Long</code>, or <code>Z</code>)
    * @param lambda lambda expression for an index variable starting at <code>offset</code>
@@ -97,7 +106,7 @@ public class CachedSequence extends AbstractSequence implements DirectSequence {
    * @param offset first index
    */
   protected CachedSequence(final int offset) {
-    this(offset, null);
+    this(offset, (BiFunction<DirectSequence, Z, Z>) null);
   }
 
   /**

@@ -3,6 +3,7 @@ package irvine.oeis;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiFunction;
+import java.util.function.Function;
 
 import irvine.math.z.Z;
 
@@ -40,7 +41,7 @@ import irvine.math.z.Z;
 public class CachedSequence extends AbstractSequence implements DirectSequence {
 
   private final Map<Z, Z> mCache = new HashMap<>(); // stores previously computed terms
-  private final BiFunction<DirectSequence, Z, Z> mSelfLambda; // lambda expression (this, n) -> f(n)
+  private final BiFunction<DirectSequence, Z, Z> mLambda; // lambda expression (this, n) -> f(n)
   private int mN; // current index for next()
 
   /**
@@ -51,7 +52,7 @@ public class CachedSequence extends AbstractSequence implements DirectSequence {
   public CachedSequence(final int offset, final BiFunction<DirectSequence, Z, Z> lambda) {
     super(offset);
     mN = offset - 1;
-    mSelfLambda = lambda;
+    mLambda = lambda;
   }
 
   /**
@@ -67,14 +68,26 @@ public class CachedSequence extends AbstractSequence implements DirectSequence {
     super(offset);
     mN = offset - 1;
     if (clazz.equals(Z.class)) {
-      mSelfLambda = (BiFunction<DirectSequence, Z, Z>) lambda;
+      mLambda = (BiFunction<DirectSequence, Z, Z>) lambda;
     } else if (clazz.equals(Integer.class)) {
-      mSelfLambda = (self, n) -> ((BiFunction<DirectSequence, Integer, Z>) lambda).apply(self, n.intValueExact());
+      mLambda = (self, n) -> ((BiFunction<DirectSequence, Integer, Z>) lambda).apply(self, n.intValueExact());
     } else if (clazz.equals(Long.class)) {
-      mSelfLambda = (self, n) -> ((BiFunction<DirectSequence, Long, Z>) lambda).apply(self, n.longValueExact());
+      mLambda = (self, n) -> ((BiFunction<DirectSequence, Long, Z>) lambda).apply(self, n.longValueExact());
     } else {
       throw new IllegalArgumentException("Class: " + clazz.getName() + " not supported");
     }
+  }
+
+  /**
+   * Construct the sequence backed by a lambda function.
+   * @param offset first index
+   * @param clazz type of the argument of the lambda function (one of <code>Integer</code>,
+   * <code>Long</code>, or <code>Z</code>)
+   * @param lambda lambda expression for an index variable starting at <code>offset</code>
+   * @param <T> type of the lambda
+   */
+  public <T> CachedSequence(final int offset, final Class<T> clazz, final Function<T, Z> lambda) {
+    this(offset, clazz, (self, n) -> lambda.apply(n));
   }
 
   /**
@@ -97,7 +110,7 @@ public class CachedSequence extends AbstractSequence implements DirectSequence {
    * @return value of sequence at index <code>n</code>
    */
   protected Z compute(final Z n) {
-    return mSelfLambda.apply(this, n);
+    return mLambda.apply(this, n);
   }
 
   @Override

@@ -288,8 +288,11 @@ public final class ZUtils {
     Z prod = Z.ONE;
     while (!v.isZero() && !prod.isZero()) {
       final Z[] qr = v.divideAndRemainder(bp);
-      prod = prod.multiply(digitProduct(qr[1].longValue(), base));
       v = qr[0];
+      if (!v.isZero() && qr[1].multiply(base).compareTo(bp) < 0) {
+        return Z.ZERO; // Deal with situation where block has a leading 0
+      }
+      prod = prod.multiply(digitProduct(qr[1].longValue(), base));
     }
     return prod;
   }

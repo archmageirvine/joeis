@@ -63,6 +63,7 @@ public class ZUtilsTest extends TestCase {
     assertEquals(Z.FOUR, ZUtils.digitProduct(Z.FOUR));
     assertEquals(Z.EIGHT, ZUtils.digitProduct(Z.valueOf(24)));
     assertEquals(Z.ZERO, ZUtils.digitProduct(Z.valueOf(401)));
+    assertEquals(Z.ZERO, ZUtils.digitProduct(Z.valueOf(5035588244943512881L)));
   }
 
   public void testDigitSum() {

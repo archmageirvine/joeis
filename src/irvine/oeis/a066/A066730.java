@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000961;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A036839.
+ * A066730 Numbers with ever-increasing minimal-square-deniers.
  * @author Sean A. Irvine
  */
 public class A066730 extends Sequence1 {

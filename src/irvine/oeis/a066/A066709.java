@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A066709.
+ * A066709 Triangle T(r,c) of winning binary "same game" templates.
  * @author Sean A. Irvine
  */
 public class A066709 extends Sequence0 {

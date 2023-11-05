@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A036839.
+ * A066736 Least number &gt; 1 such that the nonzero product of the digits of its n-th power is also an n-th power.
  * @author Sean A. Irvine
  */
 public class A066736 extends Sequence1 {

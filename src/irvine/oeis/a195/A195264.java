@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.prime.HomePrimeSequence;
 
 /**
- * A006919.
+ * A195264 Iterate x -&gt; A080670(x) (replace x with the concatenation of the primes and exponents in its prime factorization) starting at n until reach 1 or a prime (which is then the value of a(n)); or a(n) = -1 if a prime is never reached.
  * @author Sean A. Irvine
  */
 public class A195264 extends Sequence1 {

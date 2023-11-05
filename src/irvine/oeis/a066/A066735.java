@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A036839.
+ * A066735 Primes p dividing 1 + the product of the primes less than p.
  * @author Sean A. Irvine
  */
 public class A066735 extends Sequence1 {

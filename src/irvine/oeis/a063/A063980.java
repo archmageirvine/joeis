@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A063980 Pillai primes: p such that there exists an integer m such that m!+1 is 0 mod p and p is not 1 mod m.
+ * A063980 Pillai primes: primes p such that there exists an integer m such that m! + 1 == 0 (mod p) and p != 1 (mod m).
  * @author Sean A. Irvine
  */
 public class A063980 extends A000040 {

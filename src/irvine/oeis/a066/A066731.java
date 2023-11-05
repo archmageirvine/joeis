@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A036839.
+ * A066731 f-triperfect numbers, where f(n) = sigma(n) and f-triperfect numbers are defined similarly to f-perfect numbers in A066218.
  * @author Sean A. Irvine
  */
 public class A066731 extends Sequence1 {

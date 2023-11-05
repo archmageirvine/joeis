@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A036839.
+ * A066713 RATS(2^n): Reverse Add the digits of 2^n, Then Sort: a(n) = A036839(2^n).
  * @author Sean A. Irvine
  */
 public class A066713 extends Sequence0 {

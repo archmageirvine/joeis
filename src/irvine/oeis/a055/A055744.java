@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055744 Numbers k such that k and phi(k) have same prime factors.
+ * A055744 Numbers k such that k and phi(k) have the same prime factors.
  * @author Sean A. Irvine
  */
 public class A055744 extends Sequence1 {

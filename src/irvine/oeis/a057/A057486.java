@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A057486 Numbers n such that x^n + x^m + 1 is factorable over GF(2) for all m between 1 and n.
+ * A057486 Numbers k such that x^k + x^m + 1 is factorable over GF(2) for all m between 1 and k.
  * @author Sean A. Irvine
  */
 public class A057486 extends Sequence1 {

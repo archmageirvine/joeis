@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A036839.
+ * A066737 Composite numbers that are concatenations of primes.
  * @author Sean A. Irvine
  */
 public class A066737 extends A002808 {

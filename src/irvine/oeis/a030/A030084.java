@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030084 Primes such that digits of p^3 appear in p.
+ * A030084 Primes p such that all digits of p^3 appear in p.
  * @author Sean A. Irvine
  */
 public class A030084 extends A000040 {

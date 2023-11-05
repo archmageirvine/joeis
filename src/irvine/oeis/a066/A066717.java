@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A036839.
+ * A066717 The continued fraction for the "binary" Champernowne constant.
  * @author Sean A. Irvine
  */
 public class A066717 extends ContinuedFractionSequence {

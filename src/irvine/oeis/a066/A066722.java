@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A036839.
+ * A066722 Numbers that can be expressed as the sum of two primes in exactly six ways.
  * @author Sean A. Irvine
  */
 public class A066722 extends Sequence1 {

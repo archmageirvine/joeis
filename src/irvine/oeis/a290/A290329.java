@@ -5,7 +5,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.prime.HomePrimeSequence;
 
 /**
- * A006919.
+ * A290329 Iterate the map x -&gt; A289667(x) starting at n; sequence gives primes reached, or -1 if no prime is ever reached.
  * @author Sean A. Irvine
  */
 public class A290329 extends Sequence2 {

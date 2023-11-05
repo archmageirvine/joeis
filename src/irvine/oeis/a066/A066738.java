@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A036839.
+ * A066738 Primes that are concatenations of nonprime numbers.
  * @author Sean A. Irvine
  */
 public class A066738 extends A000040 {

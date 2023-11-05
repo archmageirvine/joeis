@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.prime.HomePrimeSequence;
 
 /**
- * A006919.
+ * A195265 Trajectory of 20 under iteration of the map x -&gt; A080670(x).
  * @author Sean A. Irvine
  */
 public class A195265 extends HomePrimeSequence {

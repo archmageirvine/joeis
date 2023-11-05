@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A036839.
+ * A066724 a(1) = 1, a(2) = 2; for n &gt; 1, a(n) is the least integer &gt; a(n-1) such that the products a(i)*a(j) for 1 &lt;= i &lt; j &lt;= n are all distinct.
  * @author Sean A. Irvine
  */
 public class A066724 extends MemorySequence {

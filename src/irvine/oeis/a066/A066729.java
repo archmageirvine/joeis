@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A036839.
+ * A066729 a(n) = Product_{d|n, d&lt;n} d if n is composite, n otherwise.
  * @author Sean A. Irvine
  */
 public class A066729 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A036839.
+ * A066732 Least k such that the least factor of k^Phi(k) -1 is the n-th prime.
  * @author Sean A. Irvine
  */
 public class A066732 extends Sequence1 {

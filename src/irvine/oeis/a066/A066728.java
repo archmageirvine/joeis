@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A036839.
+ * A066728 a(n) is the number of integers of the form (n+k+n*k)/(n-k) for k = 1,2,...,n-1.
  * @author Sean A. Irvine
  */
 public class A066728 extends Sequence1 {

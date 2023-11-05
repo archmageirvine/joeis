@@ -5,7 +5,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.prime.HomePrimeSequence;
 
 /**
- * A006919.
+ * A230627 Prime reached in A230626, or -1 if no prime is reached.
  * @author Sean A. Irvine
  */
 public class A230627 extends Sequence2 {

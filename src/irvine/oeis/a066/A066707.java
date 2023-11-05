@@ -9,7 +9,7 @@ import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A030168 Continued fraction for Copeland-Erd\u0151s constant 0.235711... (concatenate primes).
+ * A066707 Incrementally largest terms in the continued fraction for the constant given by Sum_{k&gt;=0} A033308(k) / 2^k = 2.89104866587305422....
  * @author Sean A. Irvine
  */
 public class A066707 extends RecordSequence {

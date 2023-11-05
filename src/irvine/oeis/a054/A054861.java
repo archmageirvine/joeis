@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A054861 Highest power of 3 dividing n!.
+ * A054861 Greatest k such that 3^k divides n!.
  * @author Georg Fischer
  */
 public class A054861 extends Sequence0 {

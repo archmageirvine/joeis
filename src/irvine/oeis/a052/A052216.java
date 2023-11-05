@@ -4,7 +4,7 @@ package irvine.oeis.a052;
 import irvine.oeis.a055.A055235;
 
 /**
- * A052216 Sum of two powers of 10.
+ * A052216 Sums of two powers of 10.
  * @author Georg Fischer
  */
 public class A052216 extends A055235 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A033632 Numbers n such that sigma(phi(n)) = phi(sigma(n)).
+ * A033632 Numbers k such that sigma(phi(k)) = phi(sigma(k)).
  * @author Sean A. Irvine
  */
 public class A033632 extends Sequence1 {

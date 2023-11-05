@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.FilterSequence;
 
 /**
- * A036839.
+ * A066721 Nonprimes in A066720.
  * @author Sean A. Irvine
  */
 public class A066721 extends FilterSequence {

@@ -24,11 +24,9 @@ public class MultiplicativeSequence extends AbstractSequence implements DirectSe
     Z apply(MultiplicativeSequence self, Z p, Integer e);
   }
 
-  private final BiFunction<Z, Integer, Z> mF;
-  private final TriFunction<MultiplicativeSequence, Z, Integer> mFR;
+  private final TriFunction<MultiplicativeSequence, Z, Integer> mLambda;
   private final long mStep;
   protected long mN;
-  private final boolean mIsRecurrent;
 
   /**
    * Construct a multiplicative sequence with the given function.
@@ -40,9 +38,7 @@ public class MultiplicativeSequence extends AbstractSequence implements DirectSe
     super(offset);
     mStep = step;
     mN = offset - mStep;
-    mF = f;
-    mFR = null;
-    mIsRecurrent = false;
+    mLambda = (self, n, e) -> f.apply(n, e);
   }
 
   /**
@@ -63,9 +59,7 @@ public class MultiplicativeSequence extends AbstractSequence implements DirectSe
     super(offset);
     mStep = 1;
     mN = offset - mStep;
-    mFR = fr;
-    mF = null;
-    mIsRecurrent = true;
+    mLambda = fr;
   }
 
   @Override
@@ -73,7 +67,7 @@ public class MultiplicativeSequence extends AbstractSequence implements DirectSe
     final FactorSequence fs = Jaguar.factor(n);
     Z res = Z.ONE;
     for (final Z p : fs.toZArray()) {
-      res = res.multiply(mIsRecurrent ? mFR.apply(this, p, fs.getExponent(p)) : mF.apply(p, fs.getExponent(p)));
+      res = res.multiply(mLambda.apply(this, p, fs.getExponent(p)));
     }
     return res;
   }

@@ -41,8 +41,13 @@ public class A006577 extends AbstractSequence implements DirectSequence {
     Z m = n;
     long c = 0;
     while (!Z.ONE.equals(m)) {
+      m = m.makeOdd();
+      c += m.auxiliary();
+      if (Z.ONE.equals(m)) {
+        return Z.valueOf(c);
+      }
+      m = m.multiply(3).add(1);
       ++c;
-      m = m.isEven() ? m.divide2() : m.multiply(3).add(1);
     }
     return Z.valueOf(c);
   }

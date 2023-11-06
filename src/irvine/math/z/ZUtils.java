@@ -1326,4 +1326,20 @@ public final class ZUtils {
       return CR.valueOf(n).log().multiply(INV_LOG_10).floor().intValueExact() + 1;
     }
   }
+
+  /**
+   * Test for a <code>k</code>-gonal number.
+   * @param n number to test
+   * @param k shape
+   * @return true iff the number is <code>k</code>-gonal
+   */
+  public static boolean isPolygonal(final Z n, final long k) {
+    final Z t = n.multiply(8 * (k - 2)).add((k - 4) * (k - 4));
+    final Z[] s = t.sqrtAndRemainder();
+    if (!s[1].isZero()) {
+      return false;
+    }
+    return s[0].add(k - 4).mod(2 * (k - 2)) == 0;
+  }
+
 }

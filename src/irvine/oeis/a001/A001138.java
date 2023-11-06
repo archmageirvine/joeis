@@ -2,37 +2,27 @@ package irvine.oeis.a001;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
+import irvine.oeis.CachedSequence;
 
 /**
  * A001138 Red rooted red-black trees with n internal nodes.
  * @author Sean A. Irvine
  */
-public class A001138 extends MemorySequence {
+public class A001138 extends CachedSequence {
 
-  {
-    setOffset(1);
-  }
+  private static final Z[] SMALL = {Z.ZERO, Z.ONE, Z.ZERO, Z.ONE};
 
-  @Override
-  protected Z computeNext() {
-    final int n = size();
-    switch (n) {
-    case 0:
-      add(Z.ZERO);
-      add(Z.ZERO);
-      return Z.ONE;
-    case 3:
-      return Z.ZERO;
-    case 4:
-      return Z.ONE;
-    default:
+  /** Construct the sequence. */
+  public A001138() {
+    super(1, Integer.class, (self, n) -> {
+      if (n < SMALL.length) {
+        return SMALL[n];
+      }
       Z t = Z.ZERO;
-      for (int m = (n + 3) / 4; m <= n / 2; ++m) {
-        t = t.add(Binomial.binomial(2L * m, n - 2L * m).multiply(a(m)));
+      for (int m = (n + 4) / 4; m <= (n + 1) / 2; ++m) {
+        t = t.add(Binomial.binomial(2L * m, n + 1 - 2L * m).multiply(self.a(m - 1)));
       }
       return t;
-    }
+    });
   }
 }
-

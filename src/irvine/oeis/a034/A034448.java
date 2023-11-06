@@ -19,7 +19,7 @@ public class A034448 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(int n) {
+  public Z a(final int n) {
     return a(Z.valueOf(n));
   }
 

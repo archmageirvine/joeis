@@ -41,7 +41,7 @@ public class A001223 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(int n) {
+  public Z a(final int n) {
     return Puma.primeZ(n + 1).subtract(Puma.primeZ(n));
   }
 }

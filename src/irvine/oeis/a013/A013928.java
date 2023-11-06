@@ -1,18 +1,37 @@
 package irvine.oeis.a013;
 
+import irvine.math.LongUtils;
+import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.PartialSumSequence;
-import irvine.oeis.PrependSequence;
-import irvine.oeis.a008.A008966;
+import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A013928 Number of (positive) squarefree numbers &lt; n.
  * @author Sean A. Irvine
  */
-public class A013928 extends PartialSumSequence {
+public class A013928 extends AbstractSequence implements DirectSequence {
+
+  private int mN = 0;
 
   /** Construct the sequence. */
   public A013928() {
-    super(1, new PrependSequence(new A008966(), Z.ZERO));
+    super(1);
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return a(n.intValueExact());
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Integers.SINGLETON.sum(1, n - 1, k -> LongUtils.isSquareFree(k) ? Z.ONE : Z.ZERO);
+  }
+
+  @Override
+  public Z next() {
+    return a(++mN);
   }
 }
+

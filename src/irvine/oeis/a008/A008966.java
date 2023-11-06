@@ -1,16 +1,33 @@
 package irvine.oeis.a008;
 
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A008966 a(n) = 1 if n is squarefree, otherwise 0.
  * @author Sean A. Irvine
  */
-public class A008966 extends Sequence1 {
+public class A008966 extends AbstractSequence implements DirectSequence {
 
   private long mN = 0;
+
+  /** Construct the sequence. */
+  public A008966() {
+    super(1);
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return Jaguar.factor(n).isSquareFree() ? Z.ONE : Z.ZERO;
+  }
+
+  @Override
+  public Z a(final int n) {
+    return LongUtils.isSquareFree(n) ? Z.ONE : Z.ZERO;
+  }
 
   @Override
   public Z next() {

@@ -2,20 +2,31 @@ package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
  * A034444 a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
  * @author Sean A. Irvine
  */
-public class A034444 extends Sequence1 {
+public class A034444 extends Sequence1 implements DirectSequence {
 
   protected Z mN = Z.ZERO;
 
   @Override
+  public Z a(final Z n) {
+    return Jaguar.factor(n).unitarySigma0();
+  }
+
+  @Override
+  public Z a(int n) {
+    return a(Z.valueOf(n));
+  }
+
+  @Override
   public Z next() {
     mN = mN.add(1);
-    return Jaguar.factor(mN).unitarySigma0();
+    return a(mN);
   }
 }
 

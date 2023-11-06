@@ -1,14 +1,16 @@
 package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
+import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A001223 Prime gaps: differences between consecutive primes.
  * @author Sean A. Irvine
  */
-public class A001223 extends AbstractSequence {
+public class A001223 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -32,4 +34,15 @@ public class A001223 extends AbstractSequence {
     mP = mPrime.nextPrime(mP);
     return mP.subtract(p);
   }
+
+  @Override
+  public Z a(final Z n) {
+    return Puma.primeZ(n.add(1)).subtract(Puma.primeZ(n));
+  }
+
+  @Override
+  public Z a(int n) {
+    return Puma.primeZ(n + 1).subtract(Puma.primeZ(n));
+  }
 }
+

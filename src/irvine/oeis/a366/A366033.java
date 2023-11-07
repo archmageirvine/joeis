@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000720;
 import irvine.oeis.base.DigitSequence;
 
 /**
- * A366033 Successive digits of consecutive terms of the prime-counting function A000720.
+ * A366033 Successive digits of consecutive entries of the prime-counting function A000720.
  * @author Georg Fischer
  */
 public class A366033 extends DigitSequence {

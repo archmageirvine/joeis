@@ -13,7 +13,7 @@ public class A066783 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
   private long mN = 0;
-  private long mP =1;
+  private long mP = 1;
 
   @Override
   public Z next() {

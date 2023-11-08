@@ -114,7 +114,7 @@ public final class Puma {
    * @return prime behind p
    */
   public static long nextPrime(final long p) {
-    return prime(primePi(p) + 1);
+    return GENERATOR.nextPrime(p);
   }
 
   /**
@@ -123,7 +123,7 @@ public final class Puma {
    * @return prime behind p
    */
   public static long nextPrime(final Z p) {
-    return prime(primePi(p) + 1);
+    return GENERATOR.nextPrime(p).longValueExact();
   }
 
   /**
@@ -132,7 +132,7 @@ public final class Puma {
    * @return prime behind p
    */
   public static Z nextPrimeZ(final Z p) {
-    return primeZ(primePi(p) + 1);
+    return GENERATOR.nextPrime(p);
   }
 
   /**
@@ -141,7 +141,7 @@ public final class Puma {
    * @return prime before p, or 1 if n = 2.
    */
   public static long prevPrime(final long p) {
-    return (p != 2) ? prime(primePi(p) - 1) : 1L;
+    return GENERATOR.prevPrime(p);
   }
 
   /**
@@ -150,7 +150,7 @@ public final class Puma {
    * @return prime before p, or 1 if p = 2.
    */
   public static long prevPrime(final Z p) {
-    return !p.equals(Z.TWO) ? prime(primePi(p) - 1) : 1L;
+    return GENERATOR.prevPrime(p).longValueExact();
   }
 
   /**
@@ -159,7 +159,7 @@ public final class Puma {
    * @return prime before p, or 1 if p = 2.
    */
   public static Z prevPrimeZ(final Z p) {
-    return !p.equals(Z.TWO) ? primeZ(primePi(p) - 1) : Z.ONE;
+    return GENERATOR.prevPrime(p);
   }
 
   /**

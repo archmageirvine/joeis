@@ -10,7 +10,7 @@ public class A288894 extends HomePrimeSequence {
 
   /** Construct the sequence. */
   public A288894() {
-    super(3932, 2, false, true);
+    super(3932, 2, false, HomePrimeType.ALONSO);
   }
 }
 

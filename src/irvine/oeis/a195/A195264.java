@@ -17,7 +17,7 @@ public class A195264 extends Sequence1 {
     if (++mN == 1) {
       return Z.ONE;
     }
-    final HomePrimeSequence seq = new HomePrimeSequence(mN, 10, true, true);
+    final HomePrimeSequence seq = new HomePrimeSequence(mN, 10, true, HomePrimeSequence.HomePrimeType.ALONSO);
     while (true) {
       final Z s = seq.next();
       if (s.isProbablePrime()) {

@@ -1,0 +1,34 @@
+package irvine.oeis.a066;
+
+import irvine.factor.factor.Jaguar;
+import irvine.factor.prime.Fast;
+import irvine.math.z.Z;
+import irvine.oeis.a000.A000040;
+import irvine.util.array.LongDynamicArray;
+
+/**
+ * A066808.
+ * @author Sean A. Irvine
+ */
+public class A066814 extends A000040 {
+
+  private final Fast mPrime = new Fast();
+  private final LongDynamicArray<Z> mFirst = new LongDynamicArray<>();
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    if (mPrime.isPrime(++mN) && mN > 5 && mN != 17 && mN != 257 && mN != 65537) {
+      return Z.ZERO;
+    }
+    while (mFirst.get(mN) == null) {
+      final Z p = super.next();
+      final long s = Jaguar.factor(p.subtract(1)).sigma0AsLong();
+      if (mFirst.get(s) == null) {
+        mFirst.set(s, p);
+      }
+    }
+    return mFirst.get(mN);
+  }
+}
+

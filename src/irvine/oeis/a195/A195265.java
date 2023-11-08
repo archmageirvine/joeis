@@ -10,6 +10,6 @@ public class A195265 extends HomePrimeSequence {
 
   /** Construct the sequence. */
   public A195265() {
-    super(20, 10, true, true);
+    super(20, 10, true, HomePrimeType.ALONSO);
   }
 }

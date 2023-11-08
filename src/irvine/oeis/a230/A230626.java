@@ -15,7 +15,7 @@ public class A230626 extends Sequence2 {
   @Override
   public Z next() {
     long  c = -1;
-    final HomePrimeSequence seq = new HomePrimeSequence(++mN, 2, true, true);
+    final HomePrimeSequence seq = new HomePrimeSequence(++mN, 2, true, HomePrimeSequence.HomePrimeType.ALONSO);
     Z u = null;
     Z t;
     while ((t = seq.next()) != null) {

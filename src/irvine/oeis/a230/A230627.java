@@ -14,7 +14,7 @@ public class A230627 extends Sequence2 {
 
   @Override
   public Z next() {
-    final HomePrimeSequence seq = new HomePrimeSequence(++mN, 2, true, true);
+    final HomePrimeSequence seq = new HomePrimeSequence(++mN, 2, true, HomePrimeSequence.HomePrimeType.ALONSO);
     while (true) {
       final Z s = seq.next();
       if (s.isProbablePrime()) {

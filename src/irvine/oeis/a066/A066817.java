@@ -4,6 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002808;
 import irvine.oeis.prime.HomePrimeSequence;
+import irvine.util.string.StringUtils;
 
 /**
  * A066808.
@@ -11,18 +12,24 @@ import irvine.oeis.prime.HomePrimeSequence;
  */
 public class A066817 extends A002808 {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+
   @Override
   public Z next() {
     final Z composite = super.next();
     final Sequence seq = new HomePrimeSequence(composite.longValueExact(), 10, false, HomePrimeSequence.HomePrimeType.ALONSO_WITH_ONE);
-    while (true) {
-      final Z t = seq.next();
-      if (t.isProbablePrime()) {
-        return t;
+    try {
+      while (true) {
+        final Z t = seq.next();
+        if (t.isProbablePrime()) {
+          return t;
+        }
       }
-      if (t.bitLength() > 200) { // todo remove or increase this restriction
-        return Z.ZERO;
+    } catch (final UnsupportedOperationException e) {
+      if (mVerbose) {
+        StringUtils.message("Starting from " + composite + ": " + e.getMessage());
       }
+      return Z.ZERO; // We hit some number we could not factor
     }
   }
 

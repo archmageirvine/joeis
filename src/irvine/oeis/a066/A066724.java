@@ -13,7 +13,7 @@ public class A066724 extends MemorySequence {
 
   private final TreeSet<Z> mForbidden = new TreeSet<>();
   {
-    setOffset(0);
+    setOffset(1);
   }
 
   private boolean isOk(final Z t) {

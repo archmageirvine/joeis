@@ -12,7 +12,7 @@ public class A066758 extends FilterSequence {
 
   /** Construct the sequence. */
   public A066758() {
-    super(new A000217(), k -> k.isZero() || (k.mod(10) != 0 && ZUtils.isPolygonal(ZUtils.reverse(k), 5)));
+    super(1, new A000217(), k -> k.isZero() || (k.mod(10) != 0 && ZUtils.isPolygonal(ZUtils.reverse(k), 5)));
   }
 }
 

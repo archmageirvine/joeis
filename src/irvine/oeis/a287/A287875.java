@@ -11,6 +11,10 @@ public class A287875 extends A230627 {
 
   private boolean mFirst = true;
 
+  {
+    setOffset(1);
+  }
+
   @Override
   public Z next() {
     if (mFirst) {

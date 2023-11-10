@@ -1,14 +1,14 @@
 package irvine.oeis.a066;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A066709 Triangle T(r,c) of winning binary "same game" templates.
  * @author Sean A. Irvine
  */
-public class A066709 extends Sequence0 {
+public class A066709 extends Sequence1 {
 
   // (n, m) - > n * (n + 1) / 2 + m (linearized triangle)
   private final LongDynamicLongArray mCounts = new LongDynamicLongArray();

@@ -15,7 +15,13 @@ public class A035506 extends Sequence0 {
   private long mN = 0;
   private long mM = 0;
 
-  private Z stolarsky(final long row, final long col) {
+  /**
+   * Compute an element of the Stolarsky triangle.
+   * @param row row number
+   * @param col column number
+   * @return value
+   */
+  public static Z stolarsky(final long row, final long col) {
     Z a = TAU1.multiply(row).subtract(HALF_TAU).floor();
     if (col == 1) {
       return a;

@@ -43,7 +43,7 @@ final class Prime {
     }
     if (n.mSign > 2) {
       // Special check for known Mersenne primes, these numbers
-      // crop up quite often and can be very large.  In binary
+      // crop up quite often and can be very large.  In binary,
       // they have an all 1s representation.
       final int exponent = n.bitLength();
       if (n.bitCount() == exponent) {
@@ -159,6 +159,11 @@ final class Prime {
       return true;
     }
     // [n > 341550071728321, n odd]
+
+    if (n.isSquare()) {
+      return false;
+    }
+
     if (exact) {
       throw new ArithmeticException("Sorry, number is too hard for me.");
     }

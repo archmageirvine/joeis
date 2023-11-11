@@ -12,8 +12,8 @@ import irvine.math.z.Z;
 public interface Prime {
 
   /**
-   * Test if the given number is prime. Implementations may vary as to whether
-   * or not the test is provable or probabilistic but every implementation
+   * Test if the given number is prime. Implementations may vary whether the
+   * test is provable or probabilistic but every implementation
    * should indicate which type of test is performed.
    *
    * @param n value to test
@@ -22,8 +22,8 @@ public interface Prime {
   boolean isPrime(long n);
 
   /**
-   * Test if the given number is prime. Implementations may vary as to whether
-   * or not the test is provable or probabilistic but every implementation
+   * Test if the given number is prime. Implementations may vary whether the
+   * test is provable or probabilistic but every implementation
    * should indicate which type of test is performed. The implementation can
    * throw an ArithmeticException if it cannot determine the primality of the
    * number.

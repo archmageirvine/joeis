@@ -1,7 +1,10 @@
 package irvine.oeis;
 
+import java.util.function.BiFunction;
+
 import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 
 /**
  * This class computes a hypergeometric function with a parameter <code>mN</code> in the
@@ -11,7 +14,7 @@ import irvine.math.z.Z;
  * are written in one array <code>polyArray</code> that contains rational polynomials in <code>mN</code>.
  * @author Georg Fischer
  */
-public class HypergeometricSequence extends AbstractSequence {
+public class HypergeometricSequence extends AbstractSequence implements DirectSequence {
 
   protected int mN; // index of the next sequence element to be computed
   private final int mP; // number of Pochhammer symbols in the "numerator".
@@ -20,8 +23,13 @@ public class HypergeometricSequence extends AbstractSequence {
   private final int mPolyLen; // size of <code>mPolyArray</code>
   private boolean mNonZero; // false if one of the Pochhammer symbols became zero, true otherwise
   private int mExp; // exponent n in the hypergeometric power series
+  private final int mOffset; // first index
+  private final Z[] mInits; // initial terms
+  private final int mInitNo; // mInits.length
+  private int mIn; // index for mInits
+  private final BiFunction<Integer, Q, Z> mLambdaQ; // (n, v) -> f(n, v)
 /* for later optimization:
-  private boolean[] mIsVarPoch; // whether the Pochhammer symbol (or the trailing variable) contain the variable <code>n</code>.
+  private boolean[] mIsVarPoch; // whether the Pochhammer symbol (or the trailing variable) contains the variable <code>n</code>.
   private ArrayList<ArrayList<Q>> mPochList; // values of the constant Pochhammer symbols (or the trailing variable)
 */
 
@@ -40,7 +48,7 @@ public class HypergeometricSequence extends AbstractSequence {
    * @param polyString nested expression of the form <code>"[[c00,c01...],[c10,c11...]...[ck0,ck1...]]"</code> with <code>k = p + q</code>,
    */
   public HypergeometricSequence(final int offset, final int p, final int q, final String polyString) {
-    this(offset, p, q, toPolyArray(polyString));
+    this(offset, p, q, toPolyArray(polyString), "", null);
   }
 
   /**
@@ -51,15 +59,60 @@ public class HypergeometricSequence extends AbstractSequence {
    * @param polyArray polynomials as coefficients of <code>n^i, i=0..m</code>, size is <code>p + q + 1</code>
    */
   public HypergeometricSequence(final int offset, final int p, final int q, final Q[][] polyArray) {
+    this(offset, p, q, polyArray, "", null);
+  }
+
+  /**
+   * Construct a hypergeometric sequence from Q parameters.
+   * @param offset first valid term has this index
+   * @param p number of Pochhammer symbols in the "numerator"
+   * @param q number of Pochhammer symbols in the "denominator"
+   * @param polyString nested expression of the form <code>"[[c00,c01...],[c10,c11...]...[ck0,ck1...]]"</code> with <code>k = p + q</code>,
+   * @param initTerms comma-separated list of initial terms
+   */
+  public HypergeometricSequence(final int offset, final int p, final int q, final String polyString, final String initTerms) {
+    this(offset, p, q, toPolyArray(polyString), initTerms, null);
+  }
+
+  /**
+   * Construct a hypergeometric sequence from Q parameters.
+   * @param offset first valid term has this index
+   * @param p number of Pochhammer symbols in the "numerator"
+   * @param q number of Pochhammer symbols in the "denominator"
+   * @param polyString nested expression of the form <code>"[[c00,c01...],[c10,c11...]...[ck0,ck1...]]"</code> with <code>k = p + q</code>,
+   * @param initTerms comma-separated list of initial terms
+   * @param lambdaQ expression for a simple transformation of the terms
+   */
+  public HypergeometricSequence(final int offset, final int p, final int q, final String polyString,
+                                final String initTerms, final BiFunction<Integer, Q, Z> lambdaQ) {
+    this(offset, p, q, toPolyArray(polyString), initTerms, lambdaQ);
+  }
+
+  /**
+   * Construct a hypergeometric sequence from Q parameters.
+   * @param offset first valid term has this index
+   * @param p number of Pochhammer symbols in the "numerator"
+   * @param q number of Pochhammer symbols in the "denominator"
+   * @param polyArray polynomials as coefficients of <code>n^i, i=0..m</code>, size is <code>p + q + 1</code>
+   * @param initTerms comma-separated list of initial terms
+   * @param lambdaQ expression for a simple transformation of the terms
+   */
+  public HypergeometricSequence(final int offset, final int p, final int q, final Q[][] polyArray,
+                                final String initTerms, final BiFunction<Integer, Q, Z> lambdaQ) {
     super(offset);
+    mOffset = offset;
     mN = offset - 1;
     mP = p;
     mQ = q;
     mPolyArray = polyArray;
     mPolyLen = mPolyArray.length;
+    mIn = -1;
+    mInits = (initTerms.isEmpty() || "[]".equals(initTerms)) ? new Z[0] : ZUtils.toZ(initTerms);
+    mInitNo = mInits.length;
     if (p + q + 1 != polyArray.length) {
       throw new RuntimeException("p + q + 1 != polyArray.length");
     }
+    mLambdaQ = lambdaQ == null ? ((n, v) -> v.num()) : lambdaQ;
   /* for later optimization:
     mIsVarPoch = new boolean[mPolyLen];
     mPochList = new ArrayList<ArrayList<Q>>();
@@ -167,14 +220,6 @@ public class HypergeometricSequence extends AbstractSequence {
   }
 
   /**
-   * Get the next Q term of the sequence.
-   * @return a rational
-   */
-  public Q nextQ() {
-    return getTerm(++mN);
-  }
-
-  /**
    * Convert a String into a list of polynomials.
    * @param polyString nested expression of the form <code>"[[c00,c01...],[c10,c11...]...[ck0,ck1...]]"</code> with <code>k = p + q</code>,
    * and Q constants <code>cij</code>.
@@ -235,8 +280,82 @@ public class HypergeometricSequence extends AbstractSequence {
     return result.toString();
   }
 
+/*
+  public Q nextQ() {
+    ++mN;
+    return mInitNo > mN - mOffset ? new Q(mInits[mN - mOffset]) : mLambdaQ.apply(mN, getTerm(mN));
+  }
+*/
+
+  @Override
+  public Z a(final Z n) {
+    return a(n.intValueExact());
+  }
+
+  @Override
+  public Z a(final int n) {
+    return mInitNo > n - mOffset ? mInits[n - mOffset] : mLambdaQ.apply(mN, getTerm(n));
+  }
+
   @Override
   public Z next() {
-    return nextQ().num();
-  } // next
+    return a(++mN);
+  }
+
+  /**
+   * Main test method: compute the hypergeometric series
+   * @param args command line arguments:
+   * <ul>
+   * <li>-h numerator and denominator polynomials in <code>n</code></li>
+   * <li>-i list of initial terms
+   * <li>-n number of terms (default 32)</li>
+   * <li>-o offset, first index (default 0) </li>
+   * <li>-p number of Pochhammer symbols in the "numerator"  </li>
+   * <li>-q number of Pochhammer symbols in the "denominator" </li>
+   * </ul>
+   */
+  public static void main(final String[] args) {
+    int debug = 0;
+    int p = 1; // number of Pochhammer symbols in the "numerator"
+    int q = 1; // number of Pochhammer symbols in the "denominator"
+    String polyString = "[[-1],[1],[0,1]]"; // A024000
+    String initString = "";
+    int offset = 0;
+    int noTerms = 32;
+    int iarg = 0;
+    while (iarg < args.length) { // consume all arguments
+      final String opt = args[iarg++];
+      try {
+        if (opt.equals("-d")) {
+          debug = Integer.parseInt(args[iarg++]);
+        } else if (opt.equals("-h")) {
+          polyString = args[iarg++];
+        } else if (opt.equals("-i")) {
+          initString = args[iarg++];
+        } else if (opt.equals("-n")) {
+          noTerms = Integer.parseInt(args[iarg++]);
+        } else if (opt.equals("-o")) {
+          offset = Integer.parseInt(args[iarg++]);
+        } else if (opt.equals("-p")) {
+          p = Integer.parseInt(args[iarg++]);
+        } else if (opt.equals("-q")) {
+          q = Integer.parseInt(args[iarg++]);
+        } else {
+          System.err.println("??? invalid option: \"" + opt + "\"");
+        }
+      } catch (final Exception exc) { // take default
+        System.err.println("wrong option: " + args[iarg - 1] + ", message: " + exc.getMessage());
+      }
+    } // while args
+
+    final HypergeometricSequence hgs = new HypergeometricSequence(offset, p, q, polyString);
+    for (int iterm = 0; iterm < noTerms; ++iterm) {
+      if (iterm > 0) {
+        System.out.print(",");
+      }
+      System.out.print(hgs.next());
+    } // for iterm
+    System.out.println();
+  } // main
 }
+

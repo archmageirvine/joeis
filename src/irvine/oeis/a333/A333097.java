@@ -3,7 +3,6 @@ package irvine.oeis.a333;
 
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
-import irvine.math.z.Z;
 import irvine.oeis.HypergeometricSequence;
 
 /**
@@ -12,21 +11,8 @@ import irvine.oeis.HypergeometricSequence;
  */
 public class A333097 extends HypergeometricSequence {
 
-  private int mN = -1;
-
   /** Construct the sequence. */
   public A333097() {
-    super(0, 3, 2, "[[1],[0,-6],[0,-1],[1/2,-7/2],[1,-7/2],[1/4]]");
-  }
-
-  @Override
-  public Z next() {
-    ++mN;
-    if (mN == 0) {
-      super.next();
-      return Z.ONE;
-    } else {
-      return super.nextQ().multiply(Binomial.binomial(7L * mN - 1, mN)).multiply(new Q(5, 6)).num();
-    }
+    super(0, 3, 2, "[[1],[0,-6],[0,-1],[1/2,-7/2],[1,-7/2],[1/4]]", "1", (n, v) -> v.multiply(Binomial.binomial(7L * n - 1, n)).multiply(new Q(5, 6)).num());
   }
 }

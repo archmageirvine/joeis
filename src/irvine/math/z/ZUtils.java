@@ -717,9 +717,12 @@ public final class ZUtils {
    * @return false if number is definitely composite
    */
   public static boolean sprpTest(final long b, final Z n) {
+    // Note: This function is used by Z.isProbablePrime among other things.
+    // Therefore, great care needs to be taken to any change made in this function
     final Z minusone = n.clearBit(0);
     final Z base = Z.valueOf(b);
     int s = 0;
+    // todo replace with makeOdd?
     Z power = minusone;
     do {
       power = power.divide2();
@@ -730,7 +733,7 @@ public final class ZUtils {
       return true;
     }
     while (--s > 0) {
-      tt = tt.multiply(tt).mod(n);
+      tt = tt.multiply(tt).mod(n); // todo modSquare
       if (tt.equals(minusone)) {
         return true;
       }

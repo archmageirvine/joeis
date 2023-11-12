@@ -52,7 +52,9 @@ public class A064690 extends Sequence1 {
       if (mHi.signum() != mLo.signum()) {
         // Precision was exhausted, double the precision and recompute the initial portion
         mNumBits *= 2;
-        StringUtils.message("Increasing lo precision to " + mNumBits + " bits");
+        if (mVerbose) {
+          StringUtils.message("Increasing lo precision to " + mNumBits + " bits");
+        }
         mF = Z.ONE.shiftLeft(mNumBits);
         mF2 = Z.ONE.shiftLeft(2 * mNumBits);
         mLo = mF;

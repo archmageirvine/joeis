@@ -716,29 +716,32 @@ public final class ZUtils {
    * @param n number to test
    * @return false if number is definitely composite
    */
-  public static boolean sprpTest(final long b, final Z n) {
+  public static boolean sprpTest(final Z b, final Z n) {
     // Note: This function is used by Z.isProbablePrime among other things.
-    // Therefore, great care needs to be taken to any change made in this function
     final Z minusone = n.clearBit(0);
-    final Z base = Z.valueOf(b);
-    int s = 0;
-    // todo replace with makeOdd?
-    Z power = minusone;
-    do {
-      power = power.divide2();
-      ++s;
-    } while (power.isEven());
-    Z tt = base.modPow(power, n);
+    final Z power = minusone.makeOdd();
+    long s = minusone.auxiliary();
+    Z tt = b.modPow(power, n);
     if (tt.equals(Z.ONE) || tt.equals(minusone)) {
       return true;
     }
     while (--s > 0) {
-      tt = tt.multiply(tt).mod(n); // todo modSquare
+      tt = tt.modSquare(n);
       if (tt.equals(minusone)) {
         return true;
       }
     }
     return false;
+  }
+
+  /**
+   * Strong probable prime test.
+   * @param b base to try
+   * @param n number to test
+   * @return false if number is definitely composite
+   */
+  public static boolean sprpTest(final long b, final Z n) {
+    return sprpTest(Z.valueOf(b), n);
   }
 
   /**

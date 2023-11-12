@@ -10,6 +10,9 @@ final class Prime {
 
   private Prime() { }
 
+  private static final Z Z11 = Z.valueOf(11);
+  private static final Z Z13 = Z.valueOf(13);
+  private static final Z Z17 = Z.valueOf(17);
   /** Special limits used in primality testing. */
   private static final int P2L = (int) (2152302898747L & Z.BASE_MASK);
   private static final int P2H = (int) (2152302898747L >>> Z.BASE_BITS);
@@ -96,9 +99,7 @@ final class Prime {
       }
     }
     if (n.mSign > 2) {
-      // Special check for known Mersenne primes, these numbers
-      // crop up quite often and can be very large.  In binary,
-      // they have an all 1s representation.
+      // Special check for known Mersenne primes.
       final int exponent = n.bitLength();
       if (n.bitCount() == exponent) {
         if (isKnownMersennePrime(exponent)) {
@@ -124,28 +125,28 @@ final class Prime {
     }
 
     // check small bases and use known constraints
-    if (!ZUtils.sprpTest(2L, n)) {
+    if (!ZUtils.sprpTest(Z.TWO, n)) {
       return false;
     }
-    if (!ZUtils.sprpTest(3L, n)) {
+    if (!ZUtils.sprpTest(Z.THREE, n)) {
       return false;
     }
     if (n.mSign == 1 && v < 1373653) {
       return true; // [PSW80]
     }
-    if (!ZUtils.sprpTest(5L, n)) {
+    if (!ZUtils.sprpTest(Z.FIVE, n)) {
       return false;
     }
     if (n.mSign == 1 && v < 25326001) {
       return true;  // [PSW80]
     }
-    if (!ZUtils.sprpTest(7L, n)) {
+    if (!ZUtils.sprpTest(Z.SEVEN, n)) {
       return false;
     }
     if (n.mSign == 1) {
       return true;
     }
-    if (!ZUtils.sprpTest(11L, n)) {
+    if (!ZUtils.sprpTest(Z11, n)) {
       return false;
     }
     final int u = n.mValue[1];
@@ -153,14 +154,14 @@ final class Prime {
       // n < 2152302898747 // [Jae93]
       return true;
     }
-    if (!ZUtils.sprpTest(13L, n)) {
+    if (!ZUtils.sprpTest(Z13, n)) {
       return false;
     }
     if (n.mSign == 2 && (u < P3H || (u == P3H && v < P3L))) {
       // n < 3474749660383 // [Jae93]
       return true;
     }
-    if (!ZUtils.sprpTest(17L, n)) {
+    if (!ZUtils.sprpTest(Z17, n)) {
       return false;
     }
     if (n.mSign == 2 && (u < P4H || (u == P4H && v < P4L))) {
@@ -185,5 +186,4 @@ final class Prime {
     }
     return true;
   }
-
 }

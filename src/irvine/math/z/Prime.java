@@ -1,8 +1,9 @@
 package irvine.math.z;
 
+import java.util.Random;
+
 /**
  * Primality testing.
- *
  * @author Sean A. Irvine
  */
 final class Prime {
@@ -16,6 +17,59 @@ final class Prime {
   private static final int P3H = (int) (3474749660383L >>> Z.BASE_BITS);
   private static final int P4L = (int) (341550071728321L & Z.BASE_MASK);
   private static final int P4H = (int) (341550071728321L >>> Z.BASE_BITS);
+  private static final Random RANDOM = new Random();
+
+  private static boolean isKnownMersennePrime(final int exponent) {
+    // We only need to list values larger than 60 here due to other previous tests
+    switch (exponent) {
+      case 61:
+      case 89:
+      case 107:
+      case 127:
+      case 521:
+      case 607:
+      case 1279:
+      case 2203:
+      case 2281:
+      case 3217:
+      case 4253:
+      case 4423:
+      case 9689:
+      case 9941:
+      case 11213:
+      case 19937:
+      case 21701:
+      case 23209:
+      case 44497:
+      case 86243:
+      case 110503:
+      case 132049:
+      case 216091:
+      case 756839:
+      case 859433:
+      case 1257787:
+      case 1398269:
+      case 2976221:
+      case 3021377:
+      case 6972593:
+      case 13466917:
+      case 20996011:
+      case 24036583:
+      case 25964951:
+      case 30402457:
+      case 32582657:
+      case 37156667:
+      case 42643801:
+      case 43112609:
+      case 57885161:
+      case 74207281:
+      case 77232917:
+      case 82589933:
+        return true;
+      default:
+        return false;
+    }
+  }
 
   static boolean primeTest(final Z n, final int certainty, final boolean exact) {
     // handle negative and zero
@@ -47,69 +101,24 @@ final class Prime {
       // they have an all 1s representation.
       final int exponent = n.bitLength();
       if (n.bitCount() == exponent) {
-        // test against known Mersenne primes larger than 60 bits
-        switch (exponent) {
-          case 61:
-          case 89:
-          case 107:
-          case 127:
-          case 521:
-          case 607:
-          case 1279:
-          case 2203:
-          case 2281:
-          case 3217:
-          case 4253:
-          case 4423:
-          case 9689:
-          case 9941:
-          case 11213:
-          case 19937:
-          case 21701:
-          case 23209:
-          case 44497:
-          case 86243:
-          case 110503:
-          case 132049:
-          case 216091:
-          case 756839:
-          case 859433:
-          case 1257787:
-          case 1398269:
-          case 2976221:
-          case 3021377:
-          case 6972593:
-          case 13466917:
-          case 20996011:
-          case 24036583:
-          case 25964951:
-          case 30402457:
-          case 32582657:
-          case 37156667:
-          case 42643801:
-          case 43112609:
-          case 57885161:
-          case 74207281:
-          case 77232917:
-          case 82589933:
-            return true;
-          default:
-            if (exponent < 23249425) {
-              return false;
-            }
-            // 2^n-1 is never prime for n composite
-            if (!Z.valueOf(exponent).isProbablePrime(certainty)) {
-              return false;
-            }
-            if (exact) {
-              // apply Lucas-Lehmer method, because this will be slow
-              // for big arguments it is only done when proof is required
-              Z s = Z.FOUR;
-              for (int i = 2; i < exponent; ++i) {
-                s = s.modPow(Z.TWO, n).subtract(Z.TWO);
-              }
-              return s.isZero();
-            }
+        if (isKnownMersennePrime(exponent)) {
+          return true;
+        }
+        if (exponent < 23249425) {
+          return false;
+        }
+        // 2^n-1 is never prime for n composite
+        if (!Z.valueOf(exponent).isProbablePrime(certainty)) {
+          return false;
+        }
+        if (exact) {
+          // apply Lucas-Lehmer method, because this will be slow
+          // for big arguments it is only done when proof is required
+          Z s = Z.FOUR;
+          for (int i = 2; i < exponent; ++i) {
+            s = s.modPow(Z.TWO, n).subtract(Z.TWO);
+          }
+          return s.isZero();
         }
       }
     }
@@ -159,6 +168,13 @@ final class Prime {
       return true;
     }
     // [n > 341550071728321, n odd]
+
+    // Perform additional tests up to the required certainty level
+    for (int k = 7; k < certainty; ++k) {
+      if (!ZUtils.sprpTest(19L + RANDOM.nextInt(Integer.MAX_VALUE), n)) {
+        return false;
+      }
+    }
 
     if (n.isSquare()) {
       return false;

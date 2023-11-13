@@ -4,7 +4,7 @@ package irvine.oeis.a330;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A330684 Square roots of the positions of records in A050377, number of ways to factor n into &quot;Fermi-Dirac primes&quot; (A050376).
+ * A330684 Square roots of the positions of records in A050377, number of ways to factor n into "Fermi-Dirac primes" (A050376).
  * @author Georg Fischer
  */
 public class A330684 extends SimpleTransformSequence {

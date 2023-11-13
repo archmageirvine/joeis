@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A014232 Primes of form 3^m - 2.
+ * A014232 Primes of the form 3^k - 2.
  * @author Sean A. Irvine
  */
 public class A014232 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A247953 Numbers n such that 2^n + 33 is prime.
+ * A247953 Numbers k such that 2^k + 33 is prime.
  * @author Georg Fischer
  */
 public class A247953 extends PrimePositionSubsequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A048594 Triangle a(n,k) = k! * Stirling1(n,k), 1&lt;=k&lt;=n.
+ * A048594 Triangle T(n,k) = k! * Stirling1(n,k), 1&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
 public class A048594 extends Sequence1 {

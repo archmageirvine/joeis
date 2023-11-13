@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A176926 Primes of the form 2^n + 33.
+ * A176926 Primes of the form 2^k + 33.
  * @author Georg Fischer
  */
 public class A176926 extends PrimeSubsequence {

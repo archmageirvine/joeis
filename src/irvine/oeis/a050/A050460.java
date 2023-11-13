@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A050460 a(n) = Sum_{ d divides n, n/d=1 mod 4} d.
+ * A050460 a(n) = Sum_{d|n, n/d=1 mod 4} d.
  * @author Sean A. Irvine
  */
 public class A050460 extends Sequence1 {

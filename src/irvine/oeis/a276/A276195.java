@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a011.A011545;
 
 /**
- * A087421 Smallest prime &gt;= n!.
+ * A276195 Smallest prime &gt;= decimal expansion of Pi truncated to n places (A011545).
  * @author Sean A. Irvine
  */
 public class A276195 extends A011545 {

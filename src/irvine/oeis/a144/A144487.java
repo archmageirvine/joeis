@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A144487 Primes of the form 2^n+15.
+ * A144487 Primes of the form 2^k + 15.
  * @author Georg Fischer
  */
 public class A144487 extends PrimeSubsequence {

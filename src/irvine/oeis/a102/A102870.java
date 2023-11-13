@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A102870 Primes of the form 3^n+8.
+ * A102870 Primes of the form 3^k + 8.
  * @author Georg Fischer
  */
 public class A102870 extends PrimeSubsequence {

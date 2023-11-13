@@ -4,7 +4,7 @@ package irvine.oeis.a220;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A220087 2^n - 27.
+ * A220087 a(n) = 2^n - 27.
  * @author Georg Fischer
  */
 public class A220087 extends LinearRecurrence {

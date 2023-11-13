@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066808.
+ * A066809 a(n) = sum of modular offsets: mod[n+c,b]-(mod[n,b]+c) for c&lt;=b&lt;=n.
  * @author Sean A. Irvine
  */
 public class A066809 extends Sequence1 {

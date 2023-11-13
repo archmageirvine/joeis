@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A143414 Apéry-like numbers for the constant 1/e: a(n) = (1/(n-1)!)*Sum_{k = 0..n-1} binomial(n-1,k)*(2*n-k)!.
+ * A143414 Ap\u00e9ry-like numbers for the constant 1/e: a(n) = (1/(n-1)!)*Sum_{k = 0..n-1} binomial(n-1,k)*(2*n-k)!.
  * @author Georg Fischer
  */
 public class A143414 extends HolonomicRecurrence {

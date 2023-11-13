@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A104068 Primes of the form 2^n+19.
+ * A104068 Primes of the form 2^k + 19.
  * @author Georg Fischer
  */
 public class A104068 extends PrimeSubsequence {

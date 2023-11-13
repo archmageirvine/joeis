@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A217136 Numbers n such that 3^n + 8 is prime.
+ * A217136 Numbers k such that 3^k + 8 is prime.
  * @author Georg Fischer
  */
 public class A217136 extends PrimePositionSubsequence {

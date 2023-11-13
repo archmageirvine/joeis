@@ -1,25 +1,23 @@
-package irvine.oeis.a050;
+package irvine.oeis.a066;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A050464 a(n) = Sum_{d|n, n/d=3 mod 4} d.
+ * A066841 a(n) = Product{k|n} k^(n/k); product is over the positive divisors of n.
  * @author Sean A. Irvine
  */
-public class A050464 extends Sequence1 {
+public class A066841 extends Sequence1 {
 
   private long mN = 0;
 
   @Override
   public Z next() {
-    Z sum = Z.ZERO;
+    Z prod = Z.ONE;
     for (final Z d : Jaguar.factor(++mN).divisors()) {
-      if (d.mod(4) == 3) {
-        sum = sum.add(mN / d.longValue());
-      }
+      prod = prod.multiply(d.pow(mN / d.longValue()));
     }
-    return sum;
+    return prod;
   }
 }

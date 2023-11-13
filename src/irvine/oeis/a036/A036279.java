@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A036279 Denominators in Taylor series for tan(x).
+ * A036279 Denominators in the Taylor series for tan(x).
  * @author Sean A. Irvine
  */
 public class A036279 extends Sequence1 {

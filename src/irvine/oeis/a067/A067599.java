@@ -5,7 +5,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.prime.HomePrimeSequence;
 
 /**
- * A066808.
+ * A067599 Decimal encoding of the prime factorization of n: concatenation of prime factors and exponents.
  * @author Sean A. Irvine
  */
 public class A067599 extends Sequence2 {

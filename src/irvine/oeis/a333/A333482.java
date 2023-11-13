@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.HypergeometricSequence;
 
 /**
- * A333482 a(n) = [x^(2*n)] S(x)^n, where S(x) = (1 - x - sqrt(1 - 6*x + x^2))/(2*x) is the o.g.f. of the large Schr√∂der numbers A006318.
+ * A333482 a(n) = [x^(2*n)] S(x)^n, where S(x) = (1 - x - sqrt(1 - 6*x + x^2))/(2*x) is the o.g.f. of the large Schr\u00f6der numbers A006318.
  * @author Georg Fischer
  */
 public class A333482 extends HypergeometricSequence {

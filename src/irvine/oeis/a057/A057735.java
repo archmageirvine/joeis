@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A057735 Primes of the form 3^n + 2.
+ * A057735 Primes of the form 3^k + 2.
  * @author Georg Fischer
  */
 public class A057735 extends PrimeSubsequence {

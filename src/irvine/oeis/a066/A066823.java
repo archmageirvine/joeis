@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a035.A035506;
 
 /**
- * A066808.
+ * A066823 Primes in the main diagonal of the Stolarsky array (cf. A035506).
  * @author Sean A. Irvine
  */
 public class A066823 extends Sequence1 {

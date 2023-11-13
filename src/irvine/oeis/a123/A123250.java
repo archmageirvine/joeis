@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A123250 Primes of the form 2^n + 5.
+ * A123250 Primes of the form 2^k + 5.
  * @author Georg Fischer
  */
 public class A123250 extends PrimeSubsequence {

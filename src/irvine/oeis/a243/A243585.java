@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.HypergeometricSequence;
 
 /**
- * A243585 Expansion of x*log&apos;(C(C(x)-1)-1), C(x) = (1-sqrt(1-4*x))/(2*x).
+ * A243585 Expansion of x*log'(C(C(x)-1)-1), C(x) = (1-sqrt(1-4*x))/(2*x).
  * @author Georg Fischer
  */
 public class A243585 extends HypergeometricSequence {

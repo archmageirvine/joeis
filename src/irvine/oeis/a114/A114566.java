@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a083.A083216;
 
 /**
- * A114566 Number of prime factors of A083216(n).
+ * A114566 Number of prime factors of A083216(n), counted with multiplicity.
  * @author Georg Fischer
  */
 public class A114566 extends A083216 {

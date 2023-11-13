@@ -4,7 +4,7 @@ import irvine.oeis.a046.A046036;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A066808.
+ * A066811 Numbers k such that the concatenation of odd numbers from 1 to k is a prime.
  * @author Sean A. Irvine
  */
 public class A066811 extends SimpleTransformSequence {

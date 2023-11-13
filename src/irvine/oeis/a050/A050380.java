@@ -4,7 +4,7 @@ import irvine.oeis.NestedSequence;
 import irvine.oeis.a025.A025487;
 
 /**
- * A050380 Number of ordered factorizations into members of A050376 by prime signature. A050379(A025487).
+ * A050380 Number of ordered factorizations into terms of A050376 by prime signature.
  * @author Sean A. Irvine
  */
 public class A050380 extends NestedSequence {

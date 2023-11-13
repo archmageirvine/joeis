@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A219039 Numbers n such that 3^n - 16 is prime.
+ * A219039 Numbers k such that 3^k - 16 is prime.
  * @author Georg Fischer
  */
 public class A219039 extends PrimePositionSubsequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A058360 Number of partitions of n whose reciprocal sum is an integer.
+ * A066824 Sum of the reciprocals of the partitions of n enumerated in A058360.
  * @author Sean A. Irvine
  */
 public class A066824 extends Sequence1 {

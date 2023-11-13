@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A057203 Numbers n such that 2^n + 23 is prime.
+ * A057203 Numbers k such that 2^k + 23 is prime.
  * @author Georg Fischer
  */
 public class A057203 extends PrimePositionSubsequence {

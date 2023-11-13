@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A057197 Numbers n such that 2^n + 15 is prime.
+ * A057197 Numbers k such that 2^k + 15 is prime.
  * @author Georg Fischer
  */
 public class A057197 extends PrimePositionSubsequence {

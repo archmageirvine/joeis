@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A066808.
+ * A066808 a(n) = F(n)-1 mod 2^n+1 with F(n) = n-th Fermat number = 1+2^2^n.
  * @author Sean A. Irvine
  */
 public class A066808 extends Sequence0 {

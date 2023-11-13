@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005179;
 
 /**
- * A087421 Smallest prime &gt;= n!.
+ * A145344 a(n) = smallest prime &gt;= the smallest positive integer with exactly n divisors.
  * @author Sean A. Irvine
  */
 public class A145344 extends A005179 {

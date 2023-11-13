@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066808.
+ * A066820 Integers of the form phi(n^2+1)/n.
  * @author Sean A. Irvine
  */
 public class A066820 extends Sequence1 {

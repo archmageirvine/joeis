@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A052802 E.g.f. satisfies: A(x) = 1/(1 + log(1 - x*A(x))).
+ * A052802 E.g.f. satisfies A(x) = 1/(1 + log(1 - x*A(x))).
  * @author Sean A. Irvine
  */
 public class A052802 extends Sequence0 {

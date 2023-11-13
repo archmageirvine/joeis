@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A143583 Ap√©ry-like numbers: a(n) = (1/C(2n,n))*Sum_{k=0..n} C(2k,k)*C(4k,2k)*C(2n-2k,n-k)*C(4n-4k,2n-2k).
+ * A143583 Ap\u00e9ry-like numbers: a(n) = (1/C(2n,n))*Sum_{k=0..n} C(2k,k)*C(4k,2k)*C(2n-2k,n-k)*C(4n-4k,2n-2k).
  * @author Georg Fischer
  */
 public class A143583 extends HolonomicRecurrence {

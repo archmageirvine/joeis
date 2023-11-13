@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A247952 Numbers n such that 2^n + 31 is prime.
+ * A247952 Numbers k such that 2^k + 31 is prime.
  * @author Georg Fischer
  */
 public class A247952 extends PrimePositionSubsequence {

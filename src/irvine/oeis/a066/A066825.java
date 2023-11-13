@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A066825.
+ * A066825 a(1) = 1; set of digits of a(n)^2 is a subset of the set of digits of a(n+1)^2.
  * @author Sean A. Irvine
  */
 public class A066825 extends Sequence1 {

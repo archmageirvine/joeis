@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A104070 Primes of the form 2^n + 9.
+ * A104070 Primes of the form 2^k + 9.
  * @author Georg Fischer
  */
 public class A104070 extends PrimeSubsequence {

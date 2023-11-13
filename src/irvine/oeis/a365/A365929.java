@@ -4,7 +4,7 @@ package irvine.oeis.a365;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A365929 Number of intersections formed within a triangle by placing n points &quot;in general position&quot; on each of the three sides and connecting each point to each of the points on the other two sides using straight lines.
+ * A365929 Number of intersections formed within a triangle by placing n points "in general position" on each of the three sides and connecting each point to each of the points on the other two sides using straight lines.
  * @author Georg Fischer
  */
 public class A365929 extends GeneratingFunctionSequence {

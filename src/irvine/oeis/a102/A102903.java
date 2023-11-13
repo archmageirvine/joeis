@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A102903 Primes of the form 3^n+4 = 3^n+3+1.
+ * A102903 Primes of the form 3^k + 4.
  * @author Georg Fischer
  */
 public class A102903 extends FilterSequence {

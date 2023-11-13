@@ -6,7 +6,7 @@ import irvine.oeis.a209.A209151;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A193736 Triangular array:  the fusion of polynomial sequences P and Q given by p(n,x)=(n+1)-st Fibonacci polynomial and q(n,x)=(x+1)^n.
+ * A193736 Triangular array:  the fusion of polynomial sequences P and Q given by p(n,x) = (n+1)-st Fibonacci polynomial and q(n,x) = (x+1)^n.
  * @author Georg Fischer
  */
 public class A193736 extends PrependColumn {

@@ -6,7 +6,7 @@ package irvine.oeis.a159;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A159960 Number of permutations of the set 1,2,..., 2n such that at least one pair of adjacent numbers in the permutation differ by n.
+ * A159960 Number of permutations of the set 1,2,..., 2n such that at least one pair of adjacent numbers in the permutation differs by n.
  * @author Georg Fischer
  */
 public class A159960 extends HolonomicRecurrence {

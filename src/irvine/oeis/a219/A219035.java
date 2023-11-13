@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A219035 Numbers n such that 3^n + 14 is prime.
+ * A219035 Numbers k such that 3^k + 14 is prime.
  * @author Georg Fischer
  */
 public class A219035 extends PrimePositionSubsequence {

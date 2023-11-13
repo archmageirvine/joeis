@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A366248 allocated for Jack Zhang.
+ * A366248 Decimal expansion of sqrt(666).
  * @author Sean A. Irvine
  */
 public class A366248 extends DecimalExpansionSequence {

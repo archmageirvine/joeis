@@ -4,7 +4,7 @@ package irvine.oeis.a186;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A186863 Number of 4-step king&apos;s tours on an n X n board summed over all starting positions.
+ * A186863 Number of 4-step king's tours on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A186863 extends GeneratingFunctionSequence {

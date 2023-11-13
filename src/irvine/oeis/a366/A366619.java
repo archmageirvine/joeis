@@ -4,7 +4,7 @@ package irvine.oeis.a366;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A366619 Group the natural numbers into blocks of size 2: [1, 2], [3, 4], ... and reverse the order of the numbers within each block. Then group into blocks of size 3 and reverse the order in each block.
+ * A366619 Group the natural numbers into blocks of size 2: [1,2], [3,4], ... and reverse the order of the numbers within each block. Then group into blocks of size 3 and reverse the order in each block.
  * @author Georg Fischer
  */
 public class A366619 extends GeneratingFunctionSequence {

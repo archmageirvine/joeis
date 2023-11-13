@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A066808.
+ * A066814 Smallest prime p such that (p-1) has n divisors, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A066814 extends A000040 {

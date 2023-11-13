@@ -4,7 +4,7 @@ package irvine.oeis.a366;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A366542 Number of discrete uninorms defined on the finite chain L_n={0, 1,...n}, U:L_n^2-&gt;L_n, whose underlying operators are smooth and idempotent, or smooth and idempotent-free.
+ * A366542 Number of discrete uninorms defined on the finite chain L_n={0,1,...n}, U:L_n^2-&gt;L_n, whose underlying operators are smooth and idempotent, or smooth and idempotent-free.
  * @author Georg Fischer
  */
 public class A366542 extends GeneratingFunctionSequence {

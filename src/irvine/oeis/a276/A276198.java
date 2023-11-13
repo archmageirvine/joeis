@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a011.A011551;
 
 /**
- * A087421 Smallest prime &gt;= n!.
+ * A276198 Smallest prime &gt;= decimal expansion of phi truncated to n places (A011551), where phi is the golden ratio (A001622).
  * @author Sean A. Irvine
  */
 public class A276198 extends A011551 {

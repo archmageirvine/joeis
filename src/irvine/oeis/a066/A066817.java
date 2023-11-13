@@ -7,7 +7,7 @@ import irvine.oeis.prime.HomePrimeSequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A066808.
+ * A066817 Conjectured values of first prime in the orbit f(m), f(f(m)), ..., where f(n) = A067599(n) and m = n-th composite number; or 0 if none exists.
  * @author Sean A. Irvine
  */
 public class A066817 extends A002808 {

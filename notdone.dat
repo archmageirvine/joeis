@@ -2301,3 +2301,6 @@ A066546 Number of spanning trees in the line graph of the product of two (2 x n)
 A066634 Number of triangulations of the cyclic polytope C(n, n-5).
 A066654 Continued fraction for the Hardy-Littlewood constant Product_{p prime >= 5} (1-(3*p-1)/(p-1)^3)
 A066701 Triangle giving number of nonisomorphic minimal covering designs with parameters (n, k, k-1) (designs achieving the covering number C(n,k,k-1) given in A066010), for n >= 2, 2 <= k <= n.
+A066832 Number of kanji strokes for 10^(4*n).
+A066833 Continued fraction expansion of Product_{p prime} (1 - 1/(p^4 - p^3)).
+A066834 Continued fraction expansion of Product_{p prime} (1 - 1/(p^5 - p^4)).

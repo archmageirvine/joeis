@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066706 Numbers k that divide the average of prime(k) and prime(k+1).
+ * A066828 Numbers k that divide the average of prime(k-1) and prime(k+1).
  * @author Sean A. Irvine
  */
 public class A066828 extends Sequence1 {

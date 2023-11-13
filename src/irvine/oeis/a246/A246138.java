@@ -5,7 +5,7 @@ package irvine.oeis.a246;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A246138 a(n) = sum(k=0..n-1, A246065(k) ) / n^2.
+ * A246138 a(n) = (Sum_{k=0..n-1} A246065(k)) / n^2.
  * @author Georg Fischer
  */
 public class A246138 extends HolonomicRecurrence {

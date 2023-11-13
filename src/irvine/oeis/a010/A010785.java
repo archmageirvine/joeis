@@ -5,7 +5,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A010785 Repdigit numbers, or numbers with repeated digits.
+ * A010785 Repdigit numbers, or numbers whose digits are all equal.
  * @author Sean A. Irvine
  */
 public class A010785 extends AbstractSequence {

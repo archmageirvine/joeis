@@ -6,7 +6,7 @@ import irvine.oeis.a036.A036038;
 import irvine.oeis.a048.A048996;
 
 /**
- * A049019 Number of preferential arrangements (onto functions) associated with each numeric partition, partitions in Abramowitz and Stegun order, irregular triangle read by rows.
+ * A049019 Irregular triangle read by rows: Row n gives numbers of preferential arrangements (onto functions) of n objects that are associated with the partition of n, taken in Abramowitz and Stegun order.
  * @author Sean A. Irvine
  */
 public class A049019 extends A048996 {

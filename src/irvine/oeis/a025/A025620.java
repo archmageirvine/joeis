@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A025620 Numbers of form 4^i*9^j, with i, j &gt;= 0.
+ * A025620 Numbers of the form 4^i * 9^j, with i, j &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A025620 extends Sequence1 {

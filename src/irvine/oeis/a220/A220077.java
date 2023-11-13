@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A220077 Numbers n such that 2^n + 35 is prime.
+ * A220077 Numbers k such that 2^k + 35 is prime.
  * @author Georg Fischer
  */
 public class A220077 extends PrimePositionSubsequence {

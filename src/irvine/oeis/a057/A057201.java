@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A057201 Numbers n such that 2^n + 21 is prime.
+ * A057201 Numbers k such that 2^k + 21 is prime.
  * @author Georg Fischer
  */
 public class A057201 extends PrimePositionSubsequence {

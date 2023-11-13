@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001477;
 
 /**
- * A169884 Numbers consisting of either all even digits or just 5&apos;s and 0&apos;s.
+ * A169884 Numbers consisting of either all even digits or just 5's and 0's.
  * @author Georg Fischer
  */
 public class A169884 extends FilterSequence {

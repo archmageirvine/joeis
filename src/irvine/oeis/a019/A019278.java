@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A019278 Numbers n such that sigma(sigma(n)) = k*n for some k.
+ * A019278 Numbers j such that sigma(sigma(j)) = k*j for some k.
  * @author Sean A. Irvine
  */
 public class A019278 extends Sequence1 {

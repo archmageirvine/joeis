@@ -5,7 +5,7 @@ import irvine.factor.prime.Puma;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A183195 Pi function of the primes given in A183194
+ * A183195 Pi function of the primes given in A183194.
  * @author Georg Fischer
  */
 public class A183195 extends SimpleTransformSequence {

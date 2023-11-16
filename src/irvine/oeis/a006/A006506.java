@@ -22,7 +22,7 @@ public class A006506 extends Sequence1 {
     final int l = Fibonacci.fibonacci(mN + 2).intValueExact();
     Z[] v = new Z[l];
     Arrays.fill(v, Z.ONE);
-    final Z[] p = Arrays.copyOf(v, v.length);
+    final Z[] p = new Z[l];
     int c = 0;
     for (long i = 0; i < (1L << mN); ++i) {
       long j = i;

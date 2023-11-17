@@ -1,8 +1,8 @@
 package irvine.oeis.a006;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
-import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,20 +19,20 @@ public class A006506 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    final int l = Fibonacci.fibonacci(mN + 2).intValueExact();
-    Z[] v = new Z[l];
-    Arrays.fill(v, Z.ONE);
-    final Z[] p = new Z[l];
-    int c = 0;
+    final ArrayList<Z> patterns = new ArrayList<>();
     for (long i = 0; i < (1L << mN); ++i) {
       long j = i;
       while (j != 0 && (j & 3) != 3) {
         j /= 2;
       }
       if ((j & 3) != 3) {
-        p[c++] = Z.valueOf(i);
+        patterns.add(Z.valueOf(i));
       }
     }
+    final Z[] p = patterns.toArray(new Z[0]);
+    final int l = p.length;
+    Z[] v = new Z[l];
+    Arrays.fill(v, Z.ONE);
     for (int i = 1; i < mN; ++i) {
       final Z[] w = new Z[l];
       Arrays.fill(w, Z.ZERO);

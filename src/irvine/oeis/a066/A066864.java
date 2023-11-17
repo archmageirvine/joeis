@@ -4,21 +4,23 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A066863.
  * @author Sean A. Irvine
  */
-public class A066863 extends Sequence1 {
+public class A066864 extends Sequence0 {
 
   // Computes left to right with respect to the Example picture in the OEIS.
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN == 0) {
+      return Z.ONE;
+    }
     final ArrayList<Z> patterns = new ArrayList<>();
     for (long i = 0; i < (1L << mN); ++i) {
       long j = i;
@@ -38,14 +40,8 @@ public class A066863 extends Sequence1 {
       Arrays.fill(w, Z.ZERO);
       for (int j = 0; j < l; ++j) {
         for (int k = 0; k < l; ++k) {
-          if ((i & 1) == 0) {
-            if (p[j].and(p[k]).isZero() && p[j].divide2().and(p[k]).isZero()) {
-              w[k] = w[k].add(v[j]);
-            }
-          } else {
-            if (p[j].and(p[k]).isZero() && p[j].multiply2().and(p[k]).isZero()) {
-              w[k] = w[k].add(v[j]);
-            }
+          if (p[j].and(p[k]).isZero() && p[j].multiply2().and(p[k]).isZero()) {
+            w[k] = w[k].add(v[j]);
           }
         }
       }

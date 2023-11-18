@@ -14,25 +14,12 @@ public class A066866 extends Sequence1 {
 
   private int mN = 0;
 
-  private Z rotateLeft(final Z n, final int m) {
-    if (n.testBit(m)) {
-      return n.multiply2().add(1);
-    }
-    return n.multiply2();
-  }
-
-  private Z rotateRight(final Z n, final int m) {
-    if (n.testBit(0)) {
-      return n.divide2().setBit(m);
-    }
-    return n.divide2();
-  }
-
   @Override
   public Z next() {
-    ++mN;
-
-    final ArrayList<Z> patterns = new ArrayList<>();
+    if (++mN > 64) {
+      throw new UnsupportedOperationException();
+    }
+    final ArrayList<Long> patterns = new ArrayList<>();
     for (long i = 0; i < (1L << mN); ++i) {
       if ((i & 1) == 0 || (i & (1L << (mN - 1))) == 0) {
         long j = i;
@@ -40,11 +27,24 @@ public class A066866 extends Sequence1 {
           j /= 2;
         }
         if ((j & 3) != 3) {
-          patterns.add(Z.valueOf(i));
+          patterns.add(i);
         }
       }
     }
-    final Z[] p = patterns.toArray(new Z[0]);
+    final long[] p = new long[patterns.size()];
+    for (int k = 0; k < p.length; ++k) {
+      p[k] = patterns.get(k);
+    }
+    // Precompute left rotations
+    final long[] left = new long[p.length];
+    for (int k = 0; k < p.length; ++k) {
+      left[k] = (p[k] << 1) + (p[k] >>> (mN - 1));
+    }
+    // Precompute right rotations
+    final long[] right = new long[p.length];
+    for (int k = 0; k < p.length; ++k) {
+      right[k] = (p[k] >>> 1) + ((p[k] & 1) << (mN - 1));
+    }
     final int l = p.length;
     Z[] v = new Z[l];
     Z sum = Z.ZERO;
@@ -56,16 +56,16 @@ public class A066866 extends Sequence1 {
         Arrays.fill(w, Z.ZERO);
         for (int j = 0; j < l; ++j) {
           for (int k = 0; k < l; ++k) {
-            if (p[j].and(p[k]).isZero() && rotateLeft(p[j], mN - 1).and(p[k]).isZero()) {
+            if ((p[j] & p[k]) == 0 && (left[j] & p[k]) == 0) {
               w[k] = w[k].add(v[j]);
             }
           }
         }
         v = w;
       }
-      final Z right = rotateRight(p[pos], mN - 1);
+      final long r = right[pos];
       for (int k = 0; k < l; ++k) {
-        if (p[k].and(p[pos]).isZero() && p[k].and(right).isZero()) {
+        if ((p[k] & p[pos]) == 0 && (p[k] & r) == 0) {
           sum = sum.add(v[k]);
         }
       }

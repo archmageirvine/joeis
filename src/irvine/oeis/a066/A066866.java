@@ -12,14 +12,11 @@ import irvine.oeis.Sequence1;
  */
 public class A066866 extends Sequence1 {
 
-  // Computes left to right with respect to the Example picture in the OEIS.
-
   private int mN = 0;
 
   private Z rotateLeft(final Z n, final int m) {
     if (n.testBit(m)) {
-      return n.multiply2().add(1).and(Z.ONE.shiftLeft(m).subtract(1));
-      //return n.multiply2().add(1);
+      return n.multiply2().add(1);
     }
     return n.multiply2();
   }
@@ -34,6 +31,7 @@ public class A066866 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
+
     final ArrayList<Z> patterns = new ArrayList<>();
     for (long i = 0; i < (1L << mN); ++i) {
       if ((i & 1) == 0 || (i & (1L << (mN - 1))) == 0) {
@@ -49,30 +47,28 @@ public class A066866 extends Sequence1 {
     final Z[] p = patterns.toArray(new Z[0]);
     final int l = p.length;
     Z[] v = new Z[l];
-    Arrays.fill(v, Z.ONE);
-    System.out.println("Patterns: " + Arrays.toString(p));
-    for (int i = 1; i < mN; ++i) {
-      final Z[] w = new Z[l];
-      Arrays.fill(w, Z.ZERO);
-      // todo not convinced this is right, the wrap around might need extra step at end rather than in situ like this
-      for (int j = 0; j < l; ++j) {
-        for (int k = 0; k < l; ++k) {
-          if (i == mN - 1) {
-            if (p[j].and(p[k]).isZero() && p[j].and(rotateLeft(p[k], mN - 1)).isZero() && rotateLeft(p[j], mN - 1).and(p[k]).isZero()) {
-              w[k] = w[k].add(v[j]);
-            }
-          } else {
+    Z sum = Z.ZERO;
+    for (int pos = 0; pos < v.length; ++pos) {
+      Arrays.fill(v, Z.ZERO);
+      v[pos] = Z.ONE;
+      for (int i = 1; i < mN; ++i) {
+        final Z[] w = new Z[l];
+        Arrays.fill(w, Z.ZERO);
+        for (int j = 0; j < l; ++j) {
+          for (int k = 0; k < l; ++k) {
             if (p[j].and(p[k]).isZero() && rotateLeft(p[j], mN - 1).and(p[k]).isZero()) {
               w[k] = w[k].add(v[j]);
             }
           }
         }
+        v = w;
       }
-      v = w;
-    }
-    Z sum = Z.ZERO;
-    for (final Z z : v) {
-      sum = sum.add(z);
+      final Z right = rotateRight(p[pos], mN - 1);
+      for (int k = 0; k < l; ++k) {
+        if (p[k].and(p[pos]).isZero() && p[k].and(right).isZero()) {
+          sum = sum.add(v[k]);
+        }
+      }
     }
     return sum;
   }

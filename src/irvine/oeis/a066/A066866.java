@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
  * A066863.
  * @author Sean A. Irvine
  */
-public class A066865 extends Sequence1 {
+public class A066866 extends Sequence1 {
 
   // Computes left to right with respect to the Example picture in the OEIS.
 
@@ -18,7 +18,8 @@ public class A066865 extends Sequence1 {
 
   private Z rotateLeft(final Z n, final int m) {
     if (n.testBit(m)) {
-      return n.multiply2().add(1); // Note not clearing top bit
+      return n.multiply2().add(1).and(Z.ONE.shiftLeft(m).subtract(1));
+      //return n.multiply2().add(1);
     }
     return n.multiply2();
   }
@@ -56,12 +57,8 @@ public class A066865 extends Sequence1 {
       // todo not convinced this is right, the wrap around might need extra step at end rather than in situ like this
       for (int j = 0; j < l; ++j) {
         for (int k = 0; k < l; ++k) {
-          if ((mN & 1) == 1 && i == mN - 1) {
-            if (p[j].and(p[k]).isZero() && rotateRight(p[j], mN - 1).and(p[k]).isZero() && rotateLeft(p[j], mN - 1).and(p[k]).isZero()) {
-              w[k] = w[k].add(v[j]);
-            }
-          } else if ((i & 1) == 0) {
-            if (p[j].and(p[k]).isZero() && rotateRight(p[j], mN - 1).and(p[k]).isZero()) {
+          if (i == mN - 1) {
+            if (p[j].and(p[k]).isZero() && p[j].and(rotateLeft(p[k], mN - 1)).isZero() && rotateLeft(p[j], mN - 1).and(p[k]).isZero()) {
               w[k] = w[k].add(v[j]);
             }
           } else {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a048.A048736;
 
 /**
- * A192241 Primes in Dana Scott&apos;s sequence (A048736).
+ * A192241 Primes in Dana Scott's sequence (A048736).
  * @author Georg Fischer
  */
 public class A192241 extends FilterSequence {

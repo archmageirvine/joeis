@@ -4,7 +4,7 @@ package irvine.oeis.a363;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A363980 Primes in Tom Greer&apos;s arithmetic progression of 27 primes.
+ * A363980 Primes in Tom Greer's arithmetic progression of 27 primes.
  * @author Georg Fischer
  */
 

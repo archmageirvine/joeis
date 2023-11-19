@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066863.
+ * A066863 Number of binary arrangements without adjacent 1's on n X n staggered hexagonal grid.
  * @author Sean A. Irvine
  */
 public class A066863 extends Sequence1 {

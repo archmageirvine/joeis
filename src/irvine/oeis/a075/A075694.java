@@ -5,7 +5,7 @@ import irvine.factor.prime.Puma;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A075694 a(1)=1, then &quot;jump over next prime&quot;: a(n) = 2 nextprime(a(n-1))-a(n-1).
+ * A075694 a(1)=1, then "jump over next prime": a(n) = 2 nextprime(a(n-1))-a(n-1).
  * @author Georg Fischer
  */
 public class A075694 extends TupleTransformSequence {

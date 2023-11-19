@@ -4,7 +4,7 @@ package irvine.oeis.a074;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A074487 a(1)=1, then &quot;jump over next square&quot;: a(n) = 2*(a(n-1)+1)^2-a(n-1).
+ * A074487 a(1)=1, then "jump over next square": a(n) = 2*(a(n-1)+1)^2-a(n-1).
  * @author Georg Fischer
  */
 public class A074487 extends TupleTransformSequence {

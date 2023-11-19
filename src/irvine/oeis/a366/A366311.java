@@ -3,7 +3,7 @@ package irvine.oeis.a366;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A066863.
+ * A366311 Lexicographically earliest sequence of positive integers on a square spiral such that there are no palindromes with length &gt; 2 in any row, column or diagonal.
  * @author Sean A. Irvine
  */
 public class A366311 extends FiniteSequence {

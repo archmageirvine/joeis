@@ -4,7 +4,7 @@ package irvine.oeis.a074;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A074488 a(1)=1, then &quot;jump over next cube&quot;: a(n) = 2*(a(n-1)+1)^3-a(n-1).
+ * A074488 a(1)=1, then "jump over next cube": a(n) = 2*(a(n-1)+1)^3-a(n-1).
  * @author Georg Fischer
  */
 public class A074488 extends TupleTransformSequence {

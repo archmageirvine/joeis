@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A066863.
+ * A066864 Number of binary arrangements without adjacent 1's on n X n rhombic hexagonal grid.
  * @author Sean A. Irvine
  */
 public class A066864 extends Sequence0 {

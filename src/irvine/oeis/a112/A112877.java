@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a006.A006509;
 
 /**
- * A112877 Zeros in Cald&apos;s sequence: positions n such that A006509(n) = 0.
+ * A112877 Zeros in Cald's sequence: positions n such that A006509(n) = 0.
  * @author Georg Fischer
  */
 public class A112877 extends FilterPositionSequence {

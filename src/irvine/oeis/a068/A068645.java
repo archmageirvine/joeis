@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A068645 Primes in which a string of 3&apos;s is sandwiched between two 1&apos;s.
+ * A068645 Primes in which a string of 3's is sandwiched between two 1's.
  * @author Georg Fischer
  */
 public class A068645 extends AbstractSequence {

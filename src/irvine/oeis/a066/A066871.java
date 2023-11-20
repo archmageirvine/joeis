@@ -1,0 +1,45 @@
+package irvine.oeis.a066;
+
+import irvine.factor.factor.Jaguar;
+import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
+import irvine.oeis.Sequence1;
+import irvine.oeis.a002.A002025;
+
+/**
+ * A066867.
+ * @author Sean A. Irvine
+ */
+public class A066871 extends Sequence1 {
+
+  private final Sequence mA = new A002025();
+  private Z mU = null;
+
+  private static Z aliquot(final Z n) {
+    return Jaguar.factor(n).sigma().subtract(n);
+  }
+
+  private boolean isHarshad(final Z n) {
+    return n.mod(ZUtils.digitSum(n)) == 0;
+  }
+
+  @Override
+  public Z next() {
+    if (mU != null) {
+      final Z t = mU;
+      mU = null;
+      return t;
+    }
+    while (true) {
+      final Z t = mA.next();
+      if (isHarshad(t)) {
+        final Z u = aliquot(t);
+        if (isHarshad(u)) {
+          mU = u;
+          return t;
+        }
+      }
+    }
+  }
+}

@@ -12,7 +12,7 @@ public class A002025 extends Sequence1 {
 
   private Z mN = Z.valueOf(119);
 
-  private Z aliquot(final Z n) {
+  private static Z aliquot(final Z n) {
     if (n.isProbablePrime()) {
       return Z.ONE;
     }

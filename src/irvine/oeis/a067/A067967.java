@@ -36,10 +36,9 @@ public class A067967 extends Sequence1 {
       p[k] = patterns.get(k);
     }
     // Precompute left rotations
-    //final long mask = (1L << mN) - 1;
     final long[] left = new long[p.length];
     for (int k = 0; k < p.length; ++k) {
-      left[k] = ((p[k] << 1) + (p[k] >>> (mN - 1))); // & mask;
+      left[k] = (p[k] << 1) + (p[k] >>> (mN - 1));
     }
     // Precompute right rotations
     final long[] right = new long[p.length];

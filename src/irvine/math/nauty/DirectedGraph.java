@@ -176,12 +176,6 @@ public class DirectedGraph implements GroupAction {
     mNewGroupSize = 1;
     mNtGroup = false;
 
-//    System.out.printf("groupsize=%d\n", mGroupSize);
-//    for (int k = 0; k < n; ++k) {
-//      System.out.printf(" %d", mLastReject[k]);
-//    }
-//    System.out.println();
-
     final boolean accept;
     if (group == null || mGroupSize == 1) {
       accept = true;
@@ -452,36 +446,6 @@ public class DirectedGraph implements GroupAction {
       }
     }
 
-//  for (j = 1; !badargs && j < argc; ++j) {
-//    arg = argv[j];
-//    if (arg[0] == '-' && arg[1] != '\0') {
-//    ++arg;
-//    while (*arg != '\0')
-//    {
-//      sw =*arg++;
-//      SWBOOLEAN('o', oswitch)
-//    }
-//    } else {
-//    ++argnum;
-//    if (argnum == 1) infilename = arg;
-//    else if (argnum == 2) outfilename = arg;
-//    else badargs = true;
-//    }
-//  }
-//
-//  if (badargs || argnum > 2) {
-//    fprintf(stderr, ">E Usage: %s\n", USAGE);
-//    GETHELP;
-//    exit(1);
-//  }
-
-//  if ((sGSwitch != 0) + (textSwitch != 0) + (uSwitch != 0) >= 2)
-//    gt_abort(">E directg: -G, -T and -u are incompatible\n");
-//
-//  if (!textSwitch && !sGSwitch && !uSwitch)
-//    gt_abort(
-//    ">E directg: digraph6 output is unimplemented; use -T or -G\n");
-
 
     final DirectedGraph dg = new DirectedGraph();
     if (!uSwitch) {
@@ -513,7 +477,7 @@ public class DirectedGraph implements GroupAction {
         sb.append(" digraphs generated");
       }
       sb.append(String.format("; %.2f sec", t / 1000));
-      System.err.println(sb.toString());
+      System.err.println(sb);
     }
   }
 

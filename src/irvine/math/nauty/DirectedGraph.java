@@ -232,9 +232,60 @@ public class DirectedGraph implements GroupAction {
     }
   }
 
+  /* Update reflexive transitive closure oldtc with the new edge v->w, making transitiveClosure.  Loops are essential for this to work. */
+  private void updateTransitiveClosure(final Graph transitiveClosure, final int v, final int w, final int n) {
+    for (int i = 0; i < n; ++i) {
+      if (transitiveClosure.isAdjacent(i, v)) {
+        for (int q = transitiveClosure.nextVertex(w, -1); q >= 0; q = transitiveClosure.nextVertex(w, q)) {
+          transitiveClosure.addEdge(i, q);
+        }
+      }
+    }
+
+  }
+
+  /* Main recursive scan for acyclic orientations; returns the level to return to. */
+  private int scanAcyclic(final int level, final int ne, final int soFar, final Graph oldtc, final GroupRecord group, final int n) {
+
+    final int w0 = mV0[level];
+    final int w1 = mV1[level];
+
+    if (level == ne) {
+      return tryThisOne(group, soFar, n);
+    }
+
+    if (!oldtc.isAdjacent(w1, w0)) {
+      final int k = 2 * level;        /* edge w0->w1 */
+      mX.set(k);
+      mIx[soFar] = k;
+      final Graph newtc = oldtc.copy();
+      updateTransitiveClosure(newtc, w0, w1, n);
+      final int retlev = scanAcyclic(level + 1, ne, soFar + 1, newtc, group, n);
+      mX.clear(k);
+      if (retlev < level) {
+        return retlev;
+      }
+    }
+
+    if (!oldtc.isAdjacent(w0, w1)) {
+      final int k = 2 * level + 1;      /* edge w1->w0 */
+      mX.set(k);
+      mIx[soFar] = k;
+      final Graph newtc = oldtc.copy();
+      updateTransitiveClosure(newtc, w1, w0, n);
+      final int retlev = scanAcyclic(level + 1, ne, soFar + 1, newtc, group, n);
+      mX.clear(k);
+      if (retlev < level) {
+        return retlev;
+      }
+    }
+
+    return level - 1;
+  }
+
   /* Main recursive scan; returns the level to return to. */
   private int scan(final int level, final int ne, final int minArcs, final int maxArcs, final int soFar,
-           final boolean oriented, final GroupRecord group, final int n) {
+                   final boolean oriented, final GroupRecord group, final int n) {
 
     //System.out.printf("scan level=%d ne=%d minArcs=%d maxArcs=%d soFar=%d n=%d\n", level, ne, minArcs, maxArcs, soFar, n);
 
@@ -285,9 +336,10 @@ public class DirectedGraph implements GroupAction {
    * @param minArcs minimum number of edges
    * @param maxArcs maximum number of edges
    * @param orientOneDirectionOnly true if each edge is to be oriented at most one way
+   * @param acyclic generate only acyclic graphs
    */
   public void direct(final Graph g, final int nFixed, final int minArcs, final int maxArcs,
-                     final boolean orientOneDirectionOnly) {
+                     final boolean orientOneDirectionOnly, final boolean acyclic) {
     final int n = g.order();
     final int[] lab = new int[MAXNV];
     final int[] ptn = new int[MAXNV];
@@ -391,7 +443,15 @@ public class DirectedGraph implements GroupAction {
 
     mLastRejOk = false;
 
-    scan(0, ne, minArcs, maxArcs, 0, orientOneDirectionOnly, group, n);
+    if (acyclic) {
+      final Graph tc = GraphFactory.createDigraph(n);
+      for (int j = 0; j < n; ++j) {
+        tc.addEdge(j, j);
+      }
+      scanAcyclic(0, ne, 0, tc, group, n);
+    } else {
+      scan(0, ne, minArcs, maxArcs, 0, orientOneDirectionOnly, group, n);
+    }
   }
 
   protected long groupSize() {
@@ -400,6 +460,7 @@ public class DirectedGraph implements GroupAction {
 
   static final String EDGES_FLAG = "edges";
   private static final String ORIENT_FLAG = "orient";
+  private static final String ACYCLIC_FLAG = "acyclic";
 
   private static CliFlags initFlags() {
     final CliFlags flags = new CliFlags("DirectedGraph", "Generate all digraphs from input graphs with given constraints.");
@@ -407,6 +468,7 @@ public class DirectedGraph implements GroupAction {
     flags.registerOptional('T', TEXT_FLAG, "use a simple text output format (nv ne edges) instead of digraph6");
     flags.registerOptional('G', Multigraph.GROUP_SIZE_FLAG, "like -T but includes group size as third item (if less than 10^10). The group size does not include exchange of isolated vertices.");
     flags.registerOptional('o', ORIENT_FLAG, "orient each edge in only one direction, never both");
+    flags.registerOptional('a', ACYCLIC_FLAG, "produce only acyclic graphs");
     flags.registerOptional('e', EDGES_FLAG, String.class, "min[:max]", "specify a value or range of the total number of arcs");
     flags.registerOptional('q', GenerateGraphsCli.QUIET_FLAG, "produce less output");
     flags.registerOptional('f', Multigraph.FIX_FLAG, Integer.class, "INTEGER", "use the group that fixes the first n vertices setwise", 0);
@@ -426,7 +488,8 @@ public class DirectedGraph implements GroupAction {
     final int nfixed = (Integer) flags.getValue(Multigraph.FIX_FLAG);
     //final boolean textSwitch = flags.isSet(Multigraph.TEXT_FLAG);
     final boolean uSwitch = flags.isSet(GenerateGraphsCli.NO_OUTPUT_FLAG);
-    final boolean oswitch = flags.isSet(ORIENT_FLAG);
+    final boolean aSwitch = flags.isSet(ACYCLIC_FLAG);
+    final boolean oSwitch = aSwitch || flags.isSet(ORIENT_FLAG); // orient must be true if acyclic is true
     final boolean qSwitch = flags.isSet(GenerateGraphsCli.QUIET_FLAG);
     sGSwitch = flags.isSet(Multigraph.GROUP_SIZE_FLAG);
     sVSwitch = flags.isSet(GenerateGraphsCli.VERBOSE_FLAG);
@@ -458,7 +521,7 @@ public class DirectedGraph implements GroupAction {
       while ((line = r.readLine()) != null) {
         final Graph g = Graph6.toGraph(line);
         dg.mGraphsRead++;
-        dg.direct(g, nfixed, minArcs, maxArcs, oswitch);
+        dg.direct(g, nfixed, minArcs, maxArcs, oSwitch, aSwitch);
       }
     }
     t = System.currentTimeMillis() - t;

@@ -36,7 +36,7 @@ public class A185193 extends Sequence1 implements GraphProcessor {
   public void process(final Graph graph) {
     ++mGenCount;
     final int n = graph.order();
-    mDigraph.direct(graph, 0, 3 * n, 3 * n, false);
+    mDigraph.direct(graph, 0, 3 * n, 3 * n, false, false);
   }
 
 

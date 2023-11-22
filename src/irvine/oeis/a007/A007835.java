@@ -45,7 +45,7 @@ public class A007835 extends Sequence1 implements GraphProcessor {
   public void process(final Graph graph) {
     ++mGenCount;
     // Convert to directed tree in all possible ways
-    mDigraph.direct(graph, 0, graph.size(), graph.size(), true);
+    mDigraph.direct(graph, 0, graph.size(), graph.size(), true, false);
   }
 
   @Override

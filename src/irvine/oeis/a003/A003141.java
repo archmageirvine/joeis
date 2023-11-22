@@ -74,7 +74,7 @@ public class A003141 extends AbstractSequence {
     }
     final Graph graph = GraphFactory.complete(mN);
     final DigraphCheck digraphChecker = new DigraphCheck();
-    digraphChecker.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, true);
+    digraphChecker.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, true, false);
     return Z.valueOf(digraphChecker.mMax);
   }
 

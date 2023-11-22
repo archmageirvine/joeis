@@ -60,7 +60,7 @@ public class A049512 extends ParallelGenerateGraphsSequence {
   @Override
   protected long getCount(final Graph graph) {
     final DigraphCheck digraph = new DigraphCheck();
-    digraph.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, false);
+    digraph.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, false, false);
     return digraph.mCount;
   }
 

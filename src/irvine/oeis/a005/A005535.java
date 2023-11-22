@@ -49,7 +49,7 @@ public class A005535 extends Sequence3 implements GraphProcessor {
     // Given an undirected graph, convert the edges into a directed graph in all possible ways.
     // Since all the input graphs are non-isomorphic, the resulting graphs are also
     // non-isomorphic.
-    mDigraph.direct(graph, 0, graph.size(), 3 * graph.order(), false);
+    mDigraph.direct(graph, 0, graph.size(), 3 * graph.order(), false, false);
   }
 
   @Override

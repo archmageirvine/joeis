@@ -36,7 +36,7 @@ public class A051504 extends ParallelGenerateGraphsSequence {
   @Override
   protected long getCount(final Graph graph) {
     final DigraphCheck check = new DigraphCheck();
-    check.direct(graph, 0, 0, Multigraph.NOLIMIT, false);
+    check.direct(graph, 0, 0, Multigraph.NOLIMIT, false, false);
     return check.mCount;
   }
 

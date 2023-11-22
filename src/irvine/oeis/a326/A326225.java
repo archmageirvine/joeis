@@ -36,7 +36,7 @@ public class A326225 extends ParallelGenerateGraphsSequence {
     // Since all the input graphs are non-isomorphic, the resulting graphs are also
     // non-isomorphic.
     final DigraphCheck digraph = new DigraphCheck();
-    digraph.direct(graph, 0, graph.size(), 2 * graph.size(), false);
+    digraph.direct(graph, 0, graph.size(), 2 * graph.size(), false, false);
     return digraph.mCount;
   }
 

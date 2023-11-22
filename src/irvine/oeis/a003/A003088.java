@@ -55,7 +55,7 @@ public class A003088 extends Sequence0 implements GraphProcessor {
   @Override
   public void process(final Graph graph) {
     ++mGenCount;
-    mDigraph.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, false);
+    mDigraph.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, false, false);
   }
 
 

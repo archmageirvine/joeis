@@ -6,6 +6,7 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.DirectedGraph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.Multigraph;
+import irvine.math.z.Z;
 
 /**
  * Generate posets potentially in parallel.
@@ -21,7 +22,7 @@ public class PosetsSequence extends ParallelGenerateGraphsSequence {
    * @param accept thread-safe predicate indicating if the given graph should be accepted
    */
   public PosetsSequence(final int offset, final Predicate<Graph> accept) {
-    super(offset, offset - 1, false, false, false);
+    super(offset - 1, offset - 1, false, false, false);
     mAccept = accept;
   }
 
@@ -45,14 +46,35 @@ public class PosetsSequence extends ParallelGenerateGraphsSequence {
       mAccept = accept;
     }
 
+    private boolean dfs(final Graph g, final int v, final long neighbours) {
+      if ((neighbours & (1L << v)) != 0) {
+        return true;
+      }
+      for (int w = g.nextVertex(v, -1); w >= 0; w = g.nextVertex(v, w)) {
+        if (dfs(g, w, neighbours)) {
+          return true;
+        }
+      }
+      return false;
+    }
+
+    private boolean isTransitiveReduced(final Graph g, final int u) {
+      long neighbours = 0;
+      for (int v = g.nextVertex(u, -1); v >= 0; v = g.nextVertex(u, v)) {
+        neighbours |= 1L << v;
+      }
+      for (int v = g.nextVertex(u, -1); v >= 0; v = g.nextVertex(u, v)) {
+        if (dfs(g, v, neighbours & ~(1L << v))) {
+          return false;
+        }
+      }
+      return true;
+    }
+
     private boolean isPoset(final Graph g) {
       for (int u = 0; u < g.order(); ++u) {
-        for (int v = g.nextVertex(u, -1); v >= 0; v = g.nextVertex(u, v)) {
-          for (int w = g.nextVertex(v, -1); w >= 0; w = g.nextVertex(v, w)) {
-            if (g.isAdjacent(u, w)) {
-              return false;
-            }
-          }
+        if (!isTransitiveReduced(g, u)) {
+          return false;
         }
       }
       return true;
@@ -60,7 +82,7 @@ public class PosetsSequence extends ParallelGenerateGraphsSequence {
 
     @Override
     protected void process(final Graph g) {
-      System.out.println(g + " " + isPoset(g));
+      //System.out.println(g.order() + " " + g + " " + isPoset(g));
       if (isPoset(g) && mAccept.test(g)) {
         ++mCount;
       }
@@ -74,4 +96,8 @@ public class PosetsSequence extends ParallelGenerateGraphsSequence {
     return digraph.mCount;
   }
 
+  @Override
+  public Z next() {
+    return super.next();
+  }
 }

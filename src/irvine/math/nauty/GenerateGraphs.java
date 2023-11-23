@@ -792,10 +792,10 @@ public class GenerateGraphs {
     final int[] deg = new int[1];
     boolean sparse = bipartite || squareFree || triangleFree;
     final Graph g1 = GraphFactory.create(1);
-    if (mMaxN == 1) {
+    if (mMaxN <= 1) {
       if (res == 0) {
+        mOutProc.process(mMaxN == 0 ? GraphFactory.create(0) : g1);
         ++mEdgeCount[0];
-        mOutProc.process(g1);
       }
     } else {
       if (mMaxN > 28) {

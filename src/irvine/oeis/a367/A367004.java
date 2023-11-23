@@ -10,6 +10,11 @@ import irvine.oeis.a002.A002064;
  */
 public class A367004 extends A002064 {
 
+  {
+    super.next();
+    setOffset(1);
+  }
+
   @Override
   public Z next() {
     return LeastPrimeFactorizer.lpf(super.next());

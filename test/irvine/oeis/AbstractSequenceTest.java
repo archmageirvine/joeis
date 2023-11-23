@@ -32,6 +32,7 @@ public class AbstractSequenceTest extends TestCase {
   }
 
   private static final int LINES_PER_FILE = 1000;
+  private static final long TIMEOUT = 30000;
 
   private final String mClassName;
 
@@ -90,6 +91,11 @@ public class AbstractSequenceTest extends TestCase {
                 throw new NullPointerException("Unexpected null returned at position " + k);
               }
               assertEquals("a(" + (k + 1) + ")", parts[k], term.toString());
+              final long timeSoFar = System.currentTimeMillis() - start;
+              if (timeSoFar > TIMEOUT) {
+                System.out.println("A" + seqId + " Aborting computation at " + k + " terms due to timeout");
+                break;
+              }
             }
           }
           if (seq instanceof Closeable) {

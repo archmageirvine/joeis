@@ -232,7 +232,7 @@ public class DirectedGraph implements GroupAction {
     }
   }
 
-  /* Update reflexive transitive closure oldtc with the new edge v->w, making transitiveClosure.  Loops are essential for this to work. */
+  /* Update reflexive transitive closure with the new edge v->w.  Loops are essential for this to work. */
   private void updateTransitiveClosure(final Graph transitiveClosure, final int v, final int w, final int n) {
     for (int i = 0; i < n; ++i) {
       if (transitiveClosure.isAdjacent(i, v)) {
@@ -247,12 +247,12 @@ public class DirectedGraph implements GroupAction {
   /* Main recursive scan for acyclic orientations; returns the level to return to. */
   private int scanAcyclic(final int level, final int ne, final int soFar, final Graph oldtc, final GroupRecord group, final int n) {
 
-    final int w0 = mV0[level];
-    final int w1 = mV1[level];
-
     if (level == ne) {
       return tryThisOne(group, soFar, n);
     }
+
+    final int w0 = mV0[level];
+    final int w1 = mV1[level];
 
     if (!oldtc.isAdjacent(w1, w0)) {
       final int k = 2 * level;        /* edge w0->w1 */

@@ -3,9 +3,9 @@ package irvine.oeis;
 import java.util.function.Predicate;
 
 import irvine.math.graph.Graph;
-import irvine.math.nauty.DirectedGraph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.Multigraph;
+import irvine.math.nauty.PosetGraph;
 import irvine.math.z.Z;
 
 /**
@@ -37,7 +37,7 @@ public class PosetsSequence extends ParallelGenerateGraphsSequence {
     gg.sanitizeParams();
   }
 
-  private static final class DigraphCheck extends DirectedGraph {
+  private static final class DigraphCheck extends PosetGraph {
 
     private final Predicate<Graph> mAccept;
     private long mCount = 0;
@@ -92,7 +92,7 @@ public class PosetsSequence extends ParallelGenerateGraphsSequence {
   @Override
   protected long getCount(final Graph graph) {
     final DigraphCheck digraph = new DigraphCheck(mAccept);
-    digraph.direct(graph, 0, 0, Multigraph.NOLIMIT, true, true);
+    digraph.generate(graph, 0, 0, Multigraph.NOLIMIT);
     return digraph.mCount;
   }
 

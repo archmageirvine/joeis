@@ -31,7 +31,6 @@ public class DirectedGraph implements GroupAction {
   private static boolean sVSwitch;
 
   private long mGraphsRead = 0;
-  private long mNumGenerated = 0;
   private long mGraphsOutput = 0;
   protected PrintStream mOut = null;
 
@@ -94,19 +93,6 @@ public class DirectedGraph implements GroupAction {
   protected void summary() {
   }
 
-  /* Called by allgroup. */
-  void writeautom(final int[] p, final int n) {
-    for (int i = 0; i < n; ++i) {
-      System.out.format(" %2d", p[i]);
-    }
-    System.out.println();
-  }
-
-  // Java 8 has a method to do this
-  private static long compareUnsigned(final long a, final long b) {
-    return ((a ^ b) >> 63) == 0 ? a - b : (a < 0 ? 1 : -1);
-  }
-
   /* test if x^p <= x */
   private boolean isMax(final int[] p, final int pos, final int n) {
 
@@ -126,7 +112,7 @@ public class DirectedGraph implements GroupAction {
       }
 
       //System.out.printf("j=%d, px0=%d, mx0=%d i=%d\n", j, px.getBlock(0), mX.getBlock(0), i);
-      if (compareUnsigned(px.getBlock(0), mX.getBlock(0)) > 0) {
+      if (Long.compareUnsigned(px.getBlock(0), mX.getBlock(0)) > 0) {
         mRejectLevel = k;
         return false;
       }
@@ -134,14 +120,14 @@ public class DirectedGraph implements GroupAction {
 
     mRejectLevel = MAXNE + 1;
 
-    if (compareUnsigned(px.getBlock(0), mX.getBlock(0)) < 0) {
+    if (Long.compareUnsigned(px.getBlock(0), mX.getBlock(0)) < 0) {
       return true;
     }
 
     for (int i = 1; i < mNe; ++i) {
-      if (compareUnsigned(px.getBlock(i), mX.getBlock(i)) > 0) {
+      if (Long.compareUnsigned(px.getBlock(i), mX.getBlock(i)) > 0) {
         return false;
-      } else if (compareUnsigned(px.getBlock(i), mX.getBlock(i)) < 0) {
+      } else if (Long.compareUnsigned(px.getBlock(i), mX.getBlock(i)) < 0) {
         return true;
       }
     }
@@ -171,7 +157,6 @@ public class DirectedGraph implements GroupAction {
 
   private int tryThisOne(final GroupRecord group, final int ne, final int n) {
     mFirst = true;
-    ++mNumGenerated;
     mNix = ne;
     mNewGroupSize = 1;
     mNtGroup = false;

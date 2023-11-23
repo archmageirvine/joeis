@@ -123,8 +123,8 @@ public class SmallDigraph extends SmallGraph {
   public boolean isHamiltonian() {
     // Some basic checks first
     final int n = order();
-    if (n == 1) {
-      return true;
+    if (n <= 1) {
+      return n == 1;
     }
     for (int k = 0; k < n; ++k) {
       if (degree(k) < 1 || inDegree(k) < 1) {

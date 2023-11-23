@@ -7,8 +7,8 @@ import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 
 /**
- * Generate potential posets (further checking is needed).
- * @author Sean A. Irvine (Java port)
+ * Generate posets. This is not as efficient as a deeper nauty implementation.
+ * @author Sean A. Irvine
  */
 public class PosetGraph implements GroupAction {
 
@@ -33,54 +33,16 @@ public class PosetGraph implements GroupAction {
   private boolean mLastRejOk;
   private int mRejectLevel;
   private long mGroupSize;
-  private long mNewGroupSize;
-  private boolean mNtGroup;
-  private boolean mNtIsol;
-  private boolean mPosets;
 
-
-  /* process feature
-   *
-   * If process is defined, it must expand as the name of a procedure
-   * with prototype like void process(FILE *f, graph *g, int n). This
-   * procedure will be called for each output graph before it is output,
-   * with f being the output file (possibly null).
-   * It is an error if n > WORDSIZE.
+  /**
+   * Function called for each poset as it is generated.
+   * @param poset poset to process
    */
-  protected void process(final Graph g) {
-  }
-
-
-  /* summary feature
-   *
-   * If summary is defined, it must expand as the name of a procedure
-   * with prototype  void summary(void).  It is called at the end before
-   * the normal summary (which can be suppressed with -q).  The numbers of
-   * graphs read and digraphs produced are available in the global variables
-   * mGraphsRead and mGraphsOutput (type long).
-   */
-  protected void summary() {
-  }
-
-  /* Called by allgroup. */
-  void writeautom(final int[] p, final int n) {
-    for (int i = 0; i < n; ++i) {
-      System.out.format(" %2d", p[i]);
-    }
-    System.out.println();
-  }
-
-  // Java 8 has a method to do this
-  private static long compareUnsigned(final long a, final long b) {
-    return ((a ^ b) >> 63) == 0 ? a - b : (a < 0 ? 1 : -1);
+  protected void process(final Graph poset) {
   }
 
   /* test if x^p <= x */
-  private boolean isMax(final int[] p, final int pos, final int n) {
-
-    // Note care is needed with the comparisons here, since we need to treat the long
-    // blocks in the set as unsigned 64-bit quantities.
-
+  private boolean isMax(final int[] p, final int pos) {
     final NautySet px = new NautySet(mNe);
 
     for (int j = 0; j < mNix; ++j) {
@@ -89,12 +51,10 @@ public class PosetGraph implements GroupAction {
       if ((i & 1) == 1) {
         px.set(mEdgeNo[p[pos + mV1[k]]][p[pos + mV0[k]]]);
       } else {
-        //System.out.printf("eno=%d v0[k]=%d v1[k]=%d p0=%d p1=%d\n", mEdgeNo[p[pos + mV0[k]]][p[pos + mV1[k]]], mV0[k], mV1[k], p[pos + mV0[k]], p[pos + mV1[k]]);
         px.set(mEdgeNo[p[pos + mV0[k]]][p[pos + mV1[k]]]);
       }
 
-      //System.out.printf("j=%d, px0=%d, mx0=%d i=%d\n", j, px.getBlock(0), mX.getBlock(0), i);
-      if (compareUnsigned(px.getBlock(0), mX.getBlock(0)) > 0) {
+      if (Long.compareUnsigned(px.getBlock(0), mX.getBlock(0)) > 0) {
         mRejectLevel = k;
         return false;
       }
@@ -102,20 +62,17 @@ public class PosetGraph implements GroupAction {
 
     mRejectLevel = MAXNE + 1;
 
-    if (compareUnsigned(px.getBlock(0), mX.getBlock(0)) < 0) {
+    if (Long.compareUnsigned(px.getBlock(0), mX.getBlock(0)) < 0) {
       return true;
     }
 
     for (int i = 1; i < mNe; ++i) {
-      if (compareUnsigned(px.getBlock(i), mX.getBlock(i)) > 0) {
+      if (Long.compareUnsigned(px.getBlock(i), mX.getBlock(i)) > 0) {
         return false;
-      } else if (compareUnsigned(px.getBlock(i), mX.getBlock(i)) < 0) {
+      } else if (Long.compareUnsigned(px.getBlock(i), mX.getBlock(i)) < 0) {
         return true;
       }
     }
-
-    ++mNewGroupSize;
-    mNtGroup = true;
     return true;
   }
 
@@ -126,46 +83,66 @@ public class PosetGraph implements GroupAction {
       mFirst = false;
       return;
     }
-    if (!isMax(p, pos, n)) {
+    if (!isMax(p, pos)) {
       abort[0] = 1;
       System.arraycopy(p, pos, mLastReject, 0, n);
       mLastRejOk = true;
     }
   }
 
-  private int tryThisOne(final GroupRecord group, final int ne, final int n) {
+  private boolean dfs(final Graph g, final int v, final long neighbours) {
+    if ((neighbours & (1L << v)) != 0) {
+      return true;
+    }
+    for (int w = g.nextVertex(v, -1); w >= 0; w = g.nextVertex(v, w)) {
+      if (dfs(g, w, neighbours)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  private boolean isTransitiveReduced(final Graph g, final int u) {
+    long neighbours = 0;
+    for (int v = g.nextVertex(u, -1); v >= 0; v = g.nextVertex(u, v)) {
+      neighbours |= 1L << v;
+    }
+    for (int v = g.nextVertex(u, -1); v >= 0; v = g.nextVertex(u, v)) {
+      if (dfs(g, v, neighbours & ~(1L << v))) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  private boolean isPoset(final Graph g) {
+    for (int u = 0; u < g.order(); ++u) {
+      if (!isTransitiveReduced(g, u)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  private int tryThisOne(final Graph poset, final GroupRecord group, final int ne) {
     mFirst = true;
     mNix = ne;
-    mNewGroupSize = 1;
-    mNtGroup = false;
 
     final boolean accept;
     if (group == null || mGroupSize == 1) {
       accept = true;
-    } else if (mLastRejOk && !isMax(mLastReject, 0, n)) {
+    } else if (mLastRejOk && !isMax(mLastReject, 0)) {
       accept = false;
     } else if (mLastRejOk && mGroupSize == 2) {
       accept = true;
     } else {
-      mNewGroupSize = 1;
-      mNtGroup = false;
       accept = NauGroup.allgroup2(group, this) == 0;
     }
 
-    //System.out.println("getCount is " + getCount);
     if (accept) {
-      // This block is not really needed unless process does something ...
-      final Graph g = GraphFactory.createDigraph(n);
-      for (int i = -1; (i = mX.next(i)) >= 0; ) {
-        final int k = i >>> 1;
-        if ((i & 1) == 1) {
-          g.addEdge(mV1[k], mV0[k]);
-        } else {
-          g.addEdge(mV0[k], mV1[k]);
-        }
+      if (isPoset(poset)) {
+        process(poset);
       }
-      process(g);
-      // End of process block
       return MAXNE + 1;
     } else {
       return mRejectLevel;
@@ -173,15 +150,14 @@ public class PosetGraph implements GroupAction {
   }
 
   /* Update reflexive transitive closure with the new edge v->w.  Loops are essential for this to work. */
-  private void updateTransitiveClosure(final Graph transitiveClosure, final int v, final int w, final int n) {
-    for (int i = 0; i < n; ++i) {
+  private void updateTransitiveClosure(final Graph transitiveClosure, final int v, final int w) {
+    for (int i = 0; i < transitiveClosure.order(); ++i) {
       if (transitiveClosure.isAdjacent(i, v)) {
         for (int q = transitiveClosure.nextVertex(w, -1); q >= 0; q = transitiveClosure.nextVertex(w, q)) {
           transitiveClosure.addEdge(i, q);
         }
       }
     }
-
   }
 
   private boolean isReduced(final Graph graph, final int w0, final int w1) {
@@ -194,10 +170,10 @@ public class PosetGraph implements GroupAction {
   }
 
   /* This does part, but not all, of the work needed to determine posets. */
-  private int scanPosets(final int level, final int ne, final int soFar, final Graph transitiveClosure, final GroupRecord group, final int n, final Graph g) {
+  private int scanPosets(final int level, final int ne, final int soFar, final Graph poset, final Graph transitiveClosure, final GroupRecord group) {
 
     if (level == ne) {
-      return tryThisOne(group, soFar, n);
+      return tryThisOne(poset, group, soFar);
     }
 
     final int w0 = mV0[level];
@@ -205,29 +181,29 @@ public class PosetGraph implements GroupAction {
 
     if (!transitiveClosure.isAdjacent(w1, w0) && !transitiveClosure.isAdjacent(w0, w1)) {
       int k = 2 * level;        /* edge w0->w1 */
-      if (isReduced(g, w0, w1)) {
+      if (isReduced(poset, w0, w1)) {
         mX.set(k);
         mIx[soFar] = k;
-        g.addEdge(w0, w1);
+        poset.addEdge(w0, w1);
         final Graph newtc1 = transitiveClosure.copy();
-        updateTransitiveClosure(newtc1, w0, w1, n);
-        final int retlev1 = scanPosets(level + 1, ne, soFar + 1, newtc1, group, n, g);
-        g.removeEdge(w0, w1);
+        updateTransitiveClosure(newtc1, w0, w1);
+        final int retlev1 = scanPosets(level + 1, ne, soFar + 1, poset, newtc1, group);
+        poset.removeEdge(w0, w1);
         mX.clear(k);
         if (retlev1 < level) {
           return retlev1;
         }
       }
 
-      if (isReduced(g, w1, w0)) {
+      if (isReduced(poset, w1, w0)) {
         k = 2 * level + 1;      /* edge w1->w0 */
         mX.set(k);
         mIx[soFar] = k;
-        g.addEdge(w1, w0);
+        poset.addEdge(w1, w0);
         final Graph newtc2 = transitiveClosure.copy();
-        updateTransitiveClosure(newtc2, w1, w0, n);
-        final int retlev2 = scanPosets(level + 1, ne, soFar + 1, newtc2, group, n, g);
-        g.removeEdge(w1, w0);
+        updateTransitiveClosure(newtc2, w1, w0);
+        final int retlev2 = scanPosets(level + 1, ne, soFar + 1, poset, newtc2, group);
+        poset.removeEdge(w1, w0);
         mX.clear(k);
         if (retlev2 < level) {
           return retlev2;
@@ -253,32 +229,24 @@ public class PosetGraph implements GroupAction {
 
     int j0 = -1;  /* last vertex with degree 0 */
     int j1 = n;   /* first vertex with degree > 0 */
-    int isol0 = 0;  /* isolated vertices before and after nFixed */
-    int isol1 = 0;
 
     int ne = 0;
     for (int i = 0; i < n; ++i) {
       final int deg = (int) g.degree(i);
       if (deg == 0) {
         lab[++j0] = i;
-        if (i < nFixed) {
-          ++isol0;
-        } else {
-          ++isol1;
-        }
       } else {
         lab[--j1] = i;
       }
       ne += deg;
     }
     ne /= 2;
-    mNtIsol = isol0 >= 2 || isol1 >= 2;
 
     mNe = Math.max(1, (2 * ne + WORDSIZE - 1) / WORDSIZE);
     mX.clear();
 
     if (ne == 0 && minArcs <= 0) {
-      tryThisOne(null, 0, n);
+      tryThisOne(GraphFactory.createDigraph(n), null, 0);
       return;
     }
 
@@ -287,7 +255,7 @@ public class PosetGraph implements GroupAction {
     }
 
     if (n > MAXNV || ne > MAXNE) {
-      throw new RuntimeException(">E directg: MAXNV or MAXNE exceeded");
+      throw new RuntimeException("MAXNV or MAXNE exceeded");
     }
 
     Arrays.fill(ptn, 0, n, 1);
@@ -342,12 +310,8 @@ public class PosetGraph implements GroupAction {
 
     final Graph tc = GraphFactory.createDigraph(n);
     for (int j = 0; j < n; ++j) {
-      tc.addEdge(j, j);
+      tc.addEdge(j, j); // reflexive
     }
-    scanPosets(0, ne, 0, tc, group, n, GraphFactory.createDigraph(n));
-  }
-
-  protected long groupSize() {
-    return mNewGroupSize;
+    scanPosets(0, ne, 0, GraphFactory.createDigraph(n), tc, group);
   }
 }

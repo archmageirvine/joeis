@@ -1,5 +1,5 @@
 A000019 Primitive permutation groups
-A000236 Equivalence classes
+A000236 Maximum m such that there are no two adjacent elements belonging to the same n-th power residue class modulo some prime p in the sequence 1,2,...,m (equivalently, there is no n-th power residue modulo p in the sequence 1/2,2/3,...,(m-1)/m)
 A000241 Crossing number of complete graph, hard
 A000361 Related to a Sierpinski-like fractal, some notes in blog2019.tex
 A000403 Number of simple equifacetted 3-manifolds with n faces, hard, have paper
@@ -10,7 +10,6 @@ A000509 Complete arcs in PG(2,q) [have a paper, not easy]
 A000510 related A000509
 A000528 1-factorizations of K_n,n (hard)
 A000591 Automata counting, hard group theory cycle index, have paper
-A000608 depends A000112
 A000609 Boolean functions, threshold, hard
 A000611 Latin squares
 A000615 Threshold functions, related A000609?
@@ -32,7 +31,7 @@ A000843 Graph colouring, insufficient detail
 A000876 Need more detail [had 1 email from author], cf. A000361
 A000937 Length of longest simple cycle without chords in the n-dimensional hypercube graph, have paper
 A000952 Hard, matrix
-A000983 Covering code -- supposedly hard -- need more detail
+A000983 Size of minimal binary covering code of length n and covering radius 1
 A000997 Have paper, can't find exact sequence in paper, pos. like A000998
 A001032 Not obvious how to exclude 842 for example
 A001033 Related A001032

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066867.
+ * A066874 Number of partitions of n into unitary divisors of n.
  * @author Sean A. Irvine
  */
 public class A066874 extends Sequence1 {

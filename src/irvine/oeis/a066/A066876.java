@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A006562.
+ * A066876 Numbers n such that prime(n+2) + prime(n-2) = 2*prime(n).
  * @author Sean A. Irvine
  */
 public class A066876 extends Sequence1 {

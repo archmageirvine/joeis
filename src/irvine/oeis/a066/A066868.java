@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a005.A005385;
 
 /**
- * A066867.
+ * A066868 a(n) is the least k such that n + Sum_{i=1..k} A005385(i) is prime; or 0 if none exists.
  * @author Sean A. Irvine
  */
 public class A066868 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A066863.
+ * A066892 Card (k : prime(k+n)-prime(k)=0 mod(k)).
  * @author Sean A. Irvine
  */
 public class A066892 extends Sequence1 implements Conjectural {

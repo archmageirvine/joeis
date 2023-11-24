@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A006562.
+ * A066878 Primes of the form p^3 - 2 where p is prime.
  * @author Sean A. Irvine
  */
 public class A066878 extends A000040 {

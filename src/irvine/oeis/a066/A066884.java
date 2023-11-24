@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A066867.
+ * A066884 Square array read by upward antidiagonals where the n-th row contains the positive integers with n binary 1's.
  * @author Sean A. Irvine
  */
 public class A066884 extends Sequence0 {

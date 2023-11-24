@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002025;
 
 /**
- * A066867.
+ * A066871 Harshad (or Niven) amicable pairs: numbers which belong to an amicable pair in which both terms are Harshad (or Niven) numbers.
  * @author Sean A. Irvine
  */
 public class A066871 extends Sequence1 {

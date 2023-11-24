@@ -8,7 +8,7 @@ import irvine.oeis.PosetsSequence;
 import irvine.oeis.Sequence0;
 
 /**
- * A000112.
+ * A065066 Triangle T(n,k) read by rows of partially ordered sets ("posets") with n unlabeled nodes and k maximal elements (0 &lt;= k &lt;= n).
  * @author Sean A. Irvine
  */
 public class A065066 extends Sequence0 {

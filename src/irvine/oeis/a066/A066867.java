@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066867.
+ * A066867 Numbers n such that 2^n has 7 as its fourth decimal digit from the right.
  * @author Sean A. Irvine
  */
 public class A066867 extends Sequence1 {

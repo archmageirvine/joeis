@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002025;
 
 /**
- * A066867.
+ * A066873 Number of amicable pairs where smaller term of the pair is less than 10^n.
  * @author Sean A. Irvine
  */
 public class A066873 extends Sequence1 {

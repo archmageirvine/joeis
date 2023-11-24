@@ -6,7 +6,7 @@ import irvine.oeis.a061.A061641;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A127933 Number of halving and tripling steps to reach 1 from the n-th pure hailstone number in the &apos;3x+1&apos; problem.
+ * A127933 Number of halving and tripling steps to reach 1 from the n-th pure hailstone number in the '3x+1' problem.
  * @author Georg Fischer
  */
 public class A127933 extends DirectTransformSequence {

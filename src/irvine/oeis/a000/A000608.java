@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.transform.InverseEulerTransform;
 
 /**
- * A000608.
+ * A000608 Number of connected partially ordered sets with n unlabeled elements.
  * @author Sean A. Irvine
  */
 public class A000608 extends PrependSequence {

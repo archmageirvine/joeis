@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000112;
 
 /**
- * A000798.
+ * A046907 Number of isomorphism classes of irreducible posets with n labeled points.
  * @author Sean A. Irvine
  */
 public class A046907 extends A000112 {

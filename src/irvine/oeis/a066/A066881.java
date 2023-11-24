@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A006562.
+ * A066881 Numbers n such that sigma(phi(n))/sigma(n) is an integer &gt;= 4.
  * @author Sean A. Irvine
  */
 public class A066881 extends Sequence1 {

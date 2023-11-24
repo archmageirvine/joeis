@@ -6,7 +6,7 @@ import irvine.oeis.a011.A011557;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A094669 Number of halving and tripling steps for 10^n to reach 1 in &apos;3x+1&apos; problem.
+ * A094669 Number of halving and tripling steps for 10^n to reach 1 in '3x+1' problem.
  * @author Georg Fischer
  */
 public class A094669 extends DirectTransformSequence {

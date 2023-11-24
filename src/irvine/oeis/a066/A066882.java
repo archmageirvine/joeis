@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A066867.
+ * A066882 Number of partitions of n into prime divisors of n.
  * @author Sean A. Irvine
  */
 public class A066882 extends Sequence0 {

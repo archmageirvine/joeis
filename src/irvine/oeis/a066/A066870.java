@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002025;
 import irvine.oeis.a007.A007770;
 
 /**
- * A066867.
+ * A066870 Happy amicable pairs: numbers which belong to an amicable pair in which both terms are happy numbers.
  * @author Sean A. Irvine
  */
 public class A066870 extends A007770 {

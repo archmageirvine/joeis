@@ -80,18 +80,19 @@ public class VertexColour {
 
   private final GroupAction mTestMax = new GroupAction() {
     @Override
-    public void groupAction(final int[] p, final int pos, final int n, final int[] abort) {
+    public boolean groupAction(final int[] p, final int pos, final int n) {
       if (mFirst) { /* only the identity */
         mFirst = false;
-        return;
+        return false;
       }
       if (!isMax(p, pos, n)) {
-        abort[0] = 1;
         if (n >= 0) {
           System.arraycopy(p, pos, mLastReject, 0, n);
         }
         mLastRejOk = true;
+        return true;
       }
+      return false;
     }
   };
 
@@ -109,7 +110,7 @@ public class VertexColour {
     } else {
       mNewGroupSize = 1;
       mFirst = true;
-      accept = NauGroup.allgroup2(group, mTestMax) == 0;
+      accept = !NauGroup.allgroup2(group, mTestMax);
     }
 
     if (accept) {

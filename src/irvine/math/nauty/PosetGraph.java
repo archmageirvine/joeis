@@ -78,16 +78,17 @@ public class PosetGraph implements GroupAction {
 
 
   @Override
-  public void groupAction(final int[] p, final int pos, final int n, final int[] abort) {
+  public boolean groupAction(final int[] p, final int pos, final int n) {
     if (mFirst) {       /* only the identity */
       mFirst = false;
-      return;
+      return false;
     }
     if (!isMax(p, pos)) {
-      abort[0] = 1;
       System.arraycopy(p, pos, mLastReject, 0, n);
       mLastRejOk = true;
+      return true;
     }
+    return false;
   }
 
   private boolean dfs(final Graph g, final int v, final long neighbours) {
@@ -136,7 +137,7 @@ public class PosetGraph implements GroupAction {
     } else if (mLastRejOk && mGroupSize == 2) {
       accept = true;
     } else {
-      accept = NauGroup.allgroup2(group, this) == 0;
+      accept = !NauGroup.allgroup2(group, this);
     }
 
     if (accept) {

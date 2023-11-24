@@ -11,8 +11,8 @@ public interface GroupAction {
    * @param p permutation
    * @param pos position within permutation
    * @param n number of vertices
-   * @param abort abort status
+   * @return true if the computation should be aborted.
    */
-  void groupAction(final int[] p, final int pos, final int n, final int[] abort);
+  boolean groupAction(final int[] p, final int pos, final int n);
 
 }

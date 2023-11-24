@@ -107,18 +107,19 @@ public class Multigraph implements GroupAction {
   }
 
   @Override
-  public void groupAction(final int[] p, final int pos, final int n, final int[] abort) {
+  public boolean groupAction(final int[] p, final int pos, final int n) {
     if (mFirst) {
       // only the identity
       mFirst = false;
-      return;
+      return false;
     }
 
     if (!isMax(p, pos, n)) {
-      abort[0] = 1;
       System.arraycopy(p, pos, mLastReject, 0, n);
       mLastRejectOk = true;
+      return true;
     }
+    return false;
   }
 
   /* Try one solution, getCount if minimal. */
@@ -135,7 +136,7 @@ public class Multigraph implements GroupAction {
     } else {
       mNewGroupSize = 1;
       mFirst = true;
-      accept = NauGroup.allgroup2(group, this) == 0;
+      accept = !NauGroup.allgroup2(group, this);
     }
     if (accept) {
       ++mGraphsOutput;

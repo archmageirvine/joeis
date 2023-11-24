@@ -139,20 +139,17 @@ public class DirectedGraph implements GroupAction {
 
 
   @Override
-  public void groupAction(final int[] p, final int pos, final int n, final int[] abort) {
+  public boolean groupAction(final int[] p, final int pos, final int n) {
     if (mFirst) {       /* only the identity */
       mFirst = false;
-      return;
+      return false;
     }
-//    for (int k = 0; k < n; ++k) {
-//      System.out.printf(" %d", p[pos + k]);
-//    }
-//    System.out.println(" groupAction");
     if (!isMax(p, pos, n)) {
-      abort[0] = 1;
       System.arraycopy(p, pos, mLastReject, 0, n);
       mLastRejOk = true;
+      return true;
     }
+    return false;
   }
 
   private int tryThisOne(final GroupRecord group, final int ne, final int n) {
@@ -171,7 +168,7 @@ public class DirectedGraph implements GroupAction {
     } else {
       mNewGroupSize = 1;
       mNtGroup = false;
-      accept = NauGroup.allgroup2(group, this) == 0;
+      accept = !NauGroup.allgroup2(group, this);
     }
 
     //System.out.println("getCount is " + getCount);

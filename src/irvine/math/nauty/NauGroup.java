@@ -365,8 +365,8 @@ public class NauGroup implements UserLevelProc, UserAutomProc {
 
 
   /* Recursive routine used by allgroup2. */
-  static void groupelts2(final List<LevelRecord> lr, final int n, final int level, final GroupAction action,
-                         final int[] before, final int beforePos, final int[] after, final int afterPos, final int[] id, final int[] abort) {
+  static boolean groupelts2(final List<LevelRecord> lr, final int n, final int level, final GroupAction action,
+                         final int[] before, final int beforePos, final int[] after, final int afterPos, final int[] id) {
     final CosetRecord[] coset = lr.get(level).mRepList;
     final int orbsize = lr.get(level).mOrbitSize;
 
@@ -390,14 +390,16 @@ public class NauGroup implements UserLevelProc, UserAutomProc {
       }
 
       if (level == 0) {
-        action.groupAction(p == null ? id : p, p == null ? 0 : pos, n, abort);
+        if (action.groupAction(p == null ? id : p, p == null ? 0 : pos, n)) {
+          return true;
+        }
       } else {
-        groupelts2(lr, n, level - 1, action, p, pos, after, afterPos + n, id, abort);
-      }
-      if (abort[0] != 0) {
-        return;
+        if (groupelts2(lr, n, level - 1, action, p, pos, after, afterPos + n, id)) {
+          return true;
+        }
       }
     }
+    return false;
   }
 
 
@@ -407,26 +409,22 @@ public class NauGroup implements UserLevelProc, UserAutomProc {
      aborted and the abort value is returned by this procedure.  If no
      non-zero value is ever returned in abort by action(), this
      procedure returns 0. */
-  static int allgroup2(final GroupRecord grp, final GroupAction action) {
+  static boolean allgroup2(final GroupRecord grp, final GroupAction action) {
     final int depth = grp.mDepth;
     final int n = grp.mN;
 
     final int[] id = new int[n];
     IntegerUtils.identity(id);
 
-    final int[] abort = new int[1];
     if (depth == 0) {
       //System.err.println("Using groupAction depth=0");
-      action.groupAction(id, 0, n, abort);
-      return abort[0];
+      return action.groupAction(id, 0, n);
     }
 
     final int[] allp = new int[n * depth];
     //System.err.println("Using groupelts2 depth=" + depth); // SAI
 
-    groupelts2(grp.mLevelInfo, n, depth - 1, action, null, 0, allp, 0, id, abort);
-
-    return abort[0];
+    return groupelts2(grp.mLevelInfo, n, depth - 1, action, null, 0, allp, 0, id);
   }
 
 }

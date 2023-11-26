@@ -14,7 +14,7 @@ import irvine.util.string.Date;
  * <ul>
  * <li>the deviations from the offsets in the OEIS</li>
  * <li>whether the sequence extends AbstractSequence</li>
- * <li>whether the sequence stille implements SequenceWithOffset, without extending AbstractSequence</li>
+ * <li>whether the sequence still implements SequenceWithOffset, without extending AbstractSequence</li>
  * </ul>
  * @author Georg Fischer
  */

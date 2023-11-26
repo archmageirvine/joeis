@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066838.
+ * A066911 Sum of primes &lt; n that do not divide n.
  * @author Sean A. Irvine
  */
 public class A066911 extends Sequence1 {

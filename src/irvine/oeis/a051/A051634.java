@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A051634 Strong primes: prime(n) &gt; (prime(n-1) + prime(n+1))/2.
+ * A051634 Strong primes: prime(k) &gt; (prime(k-1) + prime(k+1))/2.
  * @author Sean A. Irvine
  */
 public class A051634 extends A000040 {

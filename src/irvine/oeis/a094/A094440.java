@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A094440 Triangular array T(n,k) = Fibonacci(n+1-k)*C(n,k-1), k = 1..n; n &gt;= 1.
+ * A094440 Triangular array reAd by rows: T(n,k) = Fibonacci(n+1-k)*C(n,k-1), k = 1..n; n &gt;= 1.
  * @author Georg Fischer
  */
 public class A094440 extends BaseTriangle {

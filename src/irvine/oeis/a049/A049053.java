@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.a006.A006601;
 
 /**
- * A049053 Numbers n such that n through n+6 all have same number of divisors.
+ * A049053 Numbers k such that k through k+6 all have the same number of divisors.
  * @author Sean A. Irvine
  */
 public class A049053 extends A006601 {

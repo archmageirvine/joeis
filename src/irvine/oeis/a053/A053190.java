@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003285;
 
 /**
- * A053190 Numerators in the convergents of [L_1, L_2, L_3, . . . ] where L_i is period length of the continued fraction for sqrt(i).
+ * A053190 a(n) is the numerator of the n-th convergent of [L_1, L_2, L_3, ...] where L_i is the period of the continued fraction for sqrt(i).
  * @author Sean A. Irvine
  */
 public class A053190 extends Sequence1 {

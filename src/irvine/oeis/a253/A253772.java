@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A253772 Numbers n such that 4^n + 13 is prime.
+ * A253772 Numbers k such that 4^k + 13 is prime.
  * @author Georg Fischer
  */
 public class A253772 extends PrimePositionSubsequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066874.
+ * A066921 a(n) = lcm(Omega(n), omega(n)).
  * @author Sean A. Irvine
  */
 public class A066921 extends Sequence1 {

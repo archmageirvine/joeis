@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066874.
+ * A066922 a(n) = gcd(Omega(n), omega(n)).
  * @author Sean A. Irvine
  */
 public class A066922 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A066874.
+ * A181119 Number of transpose-complementary plane partitions of n.
  * @author Sean A. Irvine
  */
 public class A181119 extends Sequence0 {

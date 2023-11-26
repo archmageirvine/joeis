@@ -8,7 +8,7 @@ import irvine.oeis.a007.A007732;
 
 
 /**
- * A268731 Period length of the decimal expansion of 1/h(n) where h(n) is the length of the finite sequence {n, f(n), f(f(n)),...,1} in the Collatz (or 3n + 1) problem.
+ * A268731 Period of the decimal expansion of 1/h(n) where h(n) is the length of the finite sequence {n, f(n), f(f(n)),...,1} in the Collatz (or 3n + 1) problem.
  * Formula: <code>a(n) = A007732(A006577(n)).</code>
  * @author Georg Fischer
  */

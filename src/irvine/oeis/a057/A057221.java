@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A057221 Numbers n such that 2^n + 19 is prime.
+ * A057221 Numbers k such that 2^k + 19 is prime.
  * @author Georg Fischer
  */
 public class A057221 extends PrimePositionSubsequence {

@@ -11,7 +11,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000040;
 
 /**
- * A066838.
+ * A066933 Determinant of n X n matrix whose rows are cyclic permutations of 2..prime(n).
  * @author Sean A. Irvine
  */
 public class A066933 extends Sequence0 {

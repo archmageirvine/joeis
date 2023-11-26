@@ -7,7 +7,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A338206 Inverse of A160016.
+ * A338206 Inverse of permutation in A160016.
  * @author Georg Fischer
  */
 public class A338206 extends HolonomicRecurrence {

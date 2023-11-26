@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066838 Product of primes &lt; n that do not divide n.
+ * A066909 (product of primes &lt; n that do not divide n) (mod n).
  * @author Sean A. Irvine
  */
 public class A066909 extends Sequence1 {

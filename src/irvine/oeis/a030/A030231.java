@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A030231 Number of distinct primes dividing n is even.
+ * A030231 Numbers with an even number of distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A030231 extends Sequence1 {

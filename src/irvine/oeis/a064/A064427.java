@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A064427 (Number of primes &lt;= n - 1) + n.
+ * A064427 a(n) = n + (number of primes &lt; n).
  * @author Sean A. Irvine
  */
 public class A064427 extends A000720 {

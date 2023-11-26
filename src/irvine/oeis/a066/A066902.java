@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A066902.
+ * A066902 Integers k such that phi(prime(k)+1) = phi(prime(k)-1).
  * @author Sean A. Irvine
  */
 public class A066902 extends A000040 {

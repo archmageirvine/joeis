@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000079;
 
 
 /**
- * A102866 Number of finite languages over a binary alphabet (set of binary words of total length n).
+ * A102866 Number of finite languages over a binary alphabet (set of nonempty binary words of total length n).
  *
  * @author Georg Fischer
  */

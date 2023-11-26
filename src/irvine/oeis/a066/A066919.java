@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066838.
+ * A066919 a(n) = least number of applications of f to n to reach 1, where f is defined by f(n) = phi(n) if n is even; = sigma(n) if n is odd.
  * @author Sean A. Irvine
  */
 public class A066919 extends Sequence1 {

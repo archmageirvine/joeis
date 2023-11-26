@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066874.
+ * A066929 Numbers n such that Omega(n) = floor(log(n)).
  * @author Sean A. Irvine
  */
 public class A066929 extends Sequence1 {

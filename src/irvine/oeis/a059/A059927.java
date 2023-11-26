@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003285;
 
 /**
- * A059927 Period length of the continued fraction for sqrt(2^(2n+1)).
+ * A059927 Period of the continued fraction for sqrt(2^(2n+1)).
  * @author Sean A. Irvine
  */
 public class A059927 extends A003285 {

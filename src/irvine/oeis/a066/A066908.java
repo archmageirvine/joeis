@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000312;
 
 /**
- * A066902.
+ * A066908 n^n minus largest factorial less than or equal to n^n.
  * @author Sean A. Irvine
  */
 public class A066908 extends A000312 {

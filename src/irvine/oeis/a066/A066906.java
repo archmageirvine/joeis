@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a006.A006577;
 
 /**
- * A066902.
+ * A066906 Places n where A006577(n) is a prime number.
  * @author Sean A. Irvine
  */
 public class A066906 extends FilterPositionSequence {

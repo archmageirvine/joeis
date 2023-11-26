@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 // DO NOT EDIT here!
 
 /**
- * A035229 Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = 47.
+ * A035229 Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s) + Kronecker(m,p)*p^(-2s))^(-1) for m = 47.
  * @author Georg Fischer
  */
 public class A035229 extends A035143 {

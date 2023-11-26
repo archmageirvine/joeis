@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A059299 Triangle of idempotent numbers binomial(n,k)*k^(n-k), version 3.
+ * A059299 Triangle of idempotent numbers (version 3), T(n, k) = binomial(n, k) * (n - k)^k.
  * T(n,k) = binomial(n+1,n-k+1)*(n-k+1)^k.
  * @author Georg Fischer
  */

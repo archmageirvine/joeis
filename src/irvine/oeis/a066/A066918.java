@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001223;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A066838.
+ * A066918 a(n) = least natural number k such that f(k) begins a maximal zigzag of length n in the prime gaps function f(x) = p(x+1)-p(x), where p(x) denotes the x-th prime. (Cf. A066485.).
  * @author Sean A. Irvine
  */
 public class A066918 extends Sequence1 {

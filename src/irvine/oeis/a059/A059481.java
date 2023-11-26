@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a027.A027555;
 
 /**
- * A059481 Triangle T(n,k) = binomial(n+k-1,k), 0 &lt;= k &lt;= n, read by rows.
+ * A059481 Triangle read by rows. T(n, k) = binomial(n+k-1, k) for 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A059481 extends Sequence0 {

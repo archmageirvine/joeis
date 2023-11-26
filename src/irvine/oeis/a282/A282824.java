@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A282824 Decimal expansion of Pi^2 - 8*K, where K is Catalan&apos;s constant.
+ * A282824 Decimal expansion of Pi^2 - 8*K, where K is Catalan's constant.
  * Formula: , with the Hurwitz Zeta function, this is the value of the series Sum_{k>=0} 1/(k + 3/4)^2 = 16*Sum_{k>=0} 1/(4*k
  * @author Georg Fischer
  */

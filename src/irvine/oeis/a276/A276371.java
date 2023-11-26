@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A276371 E.g.f.: exp(x/2)/(2 - exp(2*x))^(1/4).
+ * A276371 Expansion of e.g.f. exp(x/2)/(2 - exp(2*x))^(1/4).
  * E.g.f.: exp(x/2)/(2 - exp(2*x))^(1/4)
  * @author Georg Fischer
  */

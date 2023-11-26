@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.a000.A000203;
 
 /**
- * A094471 a(n) = n*tau(n) - sigma(n) = n*A000005(n) - A000203(n).
+ * A094471 a(n) = Sum_{(n - k)|n, 0 &lt;= k &lt;= n} k.
  * @author Georg Fischer
  */
 public class A094471 extends Sequence1 {

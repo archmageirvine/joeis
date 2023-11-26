@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A066874.
+ * A066925 Numbers k having a partition k = sum x_i for which sum k/x_i is the same partition of k.
  * @author Sean A. Irvine
  */
 public class A066925 extends Sequence1 {

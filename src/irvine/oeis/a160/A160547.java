@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A160547 Not divisible by 31.
+ * A160547 Numbers coprime to 31.
  * @author Georg Fischer
  */
 public class A160547 extends HolonomicRecurrence {

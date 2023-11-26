@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A066874.
+ * A066923 Let f(x) = phi(x) + sigma(x); a(n) = least k such that at k begins a maximal run of length n of consecutive strict local extrema of f, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A066923 extends Sequence1 {

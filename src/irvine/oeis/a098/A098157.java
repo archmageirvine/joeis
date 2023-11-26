@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 import irvine.oeis.triangle.TruncatedTriangle;
 
 /**
- * A098157 Triangle T(n,k) with diagonals T(n,n-k)=binomial(n+1,2k).
+ * A098157 Triangle T(n,k) with diagonals T(n,n-k) = binomial(n+1,2k).
  * @author Georg Fischer
  */
 public class A098157 extends TruncatedTriangle {

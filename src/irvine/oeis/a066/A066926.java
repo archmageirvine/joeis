@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A066874.
+ * A066926 Numbers k having a partition k = sum x_i for which sum k/x_i is also a partition of k.
  * @author Sean A. Irvine
  */
 public class A066926 extends Sequence1 {

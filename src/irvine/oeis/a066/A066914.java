@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066838.
+ * A066914 Integers of the form (2^(n^3)+1)/(2^(n^2)+1).
  * @author Sean A. Irvine
  */
 public class A066914 extends Sequence1 {

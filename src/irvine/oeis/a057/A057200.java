@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A057200 Numbers n such that 2^n + 17 is prime.
+ * A057200 Numbers k such that 2^k + 17 is prime.
  * @author Georg Fischer
  */
 public class A057200 extends PrimePositionSubsequence {

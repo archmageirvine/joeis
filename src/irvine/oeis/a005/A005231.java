@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005231 Odd abundant numbers (odd numbers n whose sum of divisors exceeds 2n).
+ * A005231 Odd abundant numbers (odd numbers m whose sum of divisors exceeds 2m).
  * @author Sean A. Irvine
  */
 public class A005231 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.a093.A093602;
 
 /**
- * A132116 Continued fraction expansion of Pi/sqrt(3) = sqrt(2*zeta(2)).
+ * A132116 Continued fraction expansion of Pi/sqrt(3).
  * @author Georg Fischer
  */
 public class A132116 extends ContinuedFractionSequence {

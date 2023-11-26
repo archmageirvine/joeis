@@ -5,7 +5,7 @@ package irvine.oeis.a142;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A142069 Period length 9: repeat 3, 7, 2, 6, 1, 5, 0, 4, 8 .
+ * A142069 Period 9: repeat 3, 7, 2, 6, 1, 5, 0, 4, 8.
  * @author Georg Fischer
  */
 public class A142069 extends HolonomicRecurrence {

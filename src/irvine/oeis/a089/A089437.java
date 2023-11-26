@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A089437 Numbers n such that 4^n + 3 is prime.
+ * A089437 Numbers k such that 4^k + 3 is prime.
  * @author Georg Fischer
  */
 public class A089437 extends PrimePositionSubsequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A304583 Period length 18: repeat 1,8,3,6,5,4,7,2,9,0,9,2,7,4,5,6,3,8.
+ * A304583 Period 18: repeat 1,8,3,6,5,4,7,2,9,0,9,2,7,4,5,6,3,8.
  * @author Georg Fischer
  */
 public class A304583 extends GeneratingFunctionSequence {

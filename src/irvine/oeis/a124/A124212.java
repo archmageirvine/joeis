@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A124212 E.g.f.: exp(x)/sqrt(2-exp(2*x)).
+ * A124212 Expansion of e.g.f. exp(x)/sqrt(2-exp(2*x)).
  * E.g.f.: exp(x)/sqrt(2-exp(2*x))
  * @author Georg Fischer
  */

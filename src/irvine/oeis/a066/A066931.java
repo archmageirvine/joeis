@@ -11,7 +11,7 @@ import irvine.oeis.a181.A181119;
 import irvine.oeis.a259.A259049;
 
 /**
- * A066874.
+ * A066931 Number of ways to tile hexagon of edge n with diamonds of side 1, not counting rotations and reflections as different.
  * @author Sean A. Irvine
  */
 public class A066931 extends Sequence0 {

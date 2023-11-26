@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 
 /**
- * A066838.
+ * A066917 Determinant of n X n matrix whose rows are cyclic permutations of 4..Composite(n).
  * @author Sean A. Irvine
  */
 public class A066917 extends Sequence1 {

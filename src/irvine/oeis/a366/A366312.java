@@ -3,7 +3,7 @@ package irvine.oeis.a366;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A366312 allocated for Samuel Harkness.
+ * A366312 Index of first occurrence of n in A366311.
  * @author Sean A. Irvine
  */
 public class A366312 extends FiniteSequence {

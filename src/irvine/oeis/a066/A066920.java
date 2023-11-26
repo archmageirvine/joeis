@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000959;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A066874.
+ * A066920 Number of partitions of n into lucky parts.
  * @author Sean A. Irvine
  */
 public class A066920 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.a336.A336467;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A351040 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A000593(i) = A000593(j), A336158(i) = A336158(j) and A336467(i) = A336467(j), for all i, j &gt;= 1.
+ * A351040 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A336158(i) = A336158(j), A206787(i) = A206787(j) and A336651(i) = A336651(j) for all i, j &gt;= 1.
  * @author Georg Fischer
  */
 public class A351040 extends RestrictedGrowthTransformSequence {

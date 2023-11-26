@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a001.A001020;
 
 /**
- * A334603 Period length of the fraction 1/11^n for n &gt;= 1.
+ * A334603 Period of the fraction 1/11^n for n &gt;= 1.
  * @author Georg Fischer
  */
 public class A334603 extends PrependSequence {

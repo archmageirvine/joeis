@@ -7,7 +7,7 @@ import irvine.oeis.a032.A032349;
 ;
 
 /**
- * A137842 Number of paths from (0,0) to (3n,0) that stay in first quadrant (but may touch horizontal axis) and where each step is (2,1), (1,2) or (1,-1).
+ * A137842 Number of paths from (0,0) if n is even, or from (2,1) if n is odd, to (3n,0) that stay in first quadrant (but may touch horizontal axis) and where each step is (2,1), (1,2) or (1,-1).
  * <code>a(2n)=A027307(n); a(2n+1)=A032349(n+1).</code>
  * @author Georg Fischer
  */

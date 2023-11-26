@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a064.A064848;
 
 /**
- * A065029 Period length of the continued fraction for sqrt(2)*n (A064848) is 2.
+ * A065029 Numbers k such that the period of the continued fraction for sqrt(2)*k (A064848) is 2.
  * @author Sean A. Irvine
  */
 public class A065029 extends FilterPositionSequence {

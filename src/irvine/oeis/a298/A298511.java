@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A298511 Central Lehmer-Comtet numbers of first kind: a(n) = A008296(2n,n).
+ * A298511 Central Lehmer-Comtet numbers of the first kind: a(n) = A008296(2n,n).
  * a(n)=sum(j=0,n,binom(n+j,n) * n^j * stirl(2*n,n+j))
  * @author Georg Fischer
  */

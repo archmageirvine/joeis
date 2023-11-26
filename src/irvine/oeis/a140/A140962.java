@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A140962 Negative values of the Inverse binomial transform of A045883.
+ * A140962 Negative values of the inverse binomial transform of A045883.
  * @author Georg Fischer
  */
 public class A140962 extends GeneratingFunctionSequence {

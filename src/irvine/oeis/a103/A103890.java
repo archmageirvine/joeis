@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a092.A092435;
 
 /**
- * A103890 Prime(n)! / prime(n)# + 1.
+ * A103890 a(n) = prime(n)! / prime(n)# + 1.
  * @author Georg Fischer
  */
 public class A103890 extends AbstractSequence {

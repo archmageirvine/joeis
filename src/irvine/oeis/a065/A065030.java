@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003285;
 
 /**
- * A065030 Period length of the continued fraction for sqrt(5)*n is 2.
+ * A065030 Numbers k such that the period of the continued fraction for sqrt(5)*k is 2.
  * @author Sean A. Irvine
  */
 public class A065030 extends A003285 {

@@ -7,7 +7,7 @@ import irvine.oeis.a094.A094471;
 import irvine.oeis.a161.A161680;
 
 /**
- * A362625 a(n) = n*(n-1)/2 - n*tau(n) + sigma(n).
+ * A362625 a(n) = Sum_{k not divides n - k, 0 &lt;= k &lt; n} k.
  * @author Georg Fischer
  */
 public class A362625 extends AbstractSequence {

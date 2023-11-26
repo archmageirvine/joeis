@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003586;
 
 /**
- * A065119 n-th cyclotomic polynomial is a trinomial.
+ * A065119 Numbers k such that the k-th cyclotomic polynomial is a trinomial.
  * @author Georg Fischer
  */
 public class A065119 extends Sequence1 {

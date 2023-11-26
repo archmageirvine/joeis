@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A037197 Number of divisors of sigma(n) = number of divisors of n.
+ * A037197 Numbers k such that tau(sigma(k)) = tau(k) where tau(k) is the number of divisors of k and sigma(k) their sum.
  * @author Sean A. Irvine
  */
 public class A037197 extends Sequence1 {

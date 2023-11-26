@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001222;
 
 
 /**
- * A131597 Bigomega of Pisano periods mod n, i.e., number of prime divisors with multiplicity of the period length of Fibonacci residues mod n.
+ * A131597 Bigomega of Pisano periods mod n, i.e., number of prime divisors (counted with multiplicity) of the period of Fibonacci residues mod n.
  * Formula: <code>a(n) = A001222(A001175(n)).</code>
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A102634 Numbers n such that 2^n + 13 is prime.
+ * A102634 Numbers k such that 2^k + 13 is prime.
  * @author Georg Fischer
  */
 public class A102634 extends PrimePositionSubsequence {

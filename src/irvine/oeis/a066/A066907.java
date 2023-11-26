@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A066902.
+ * A066907 Number of elements in GL(2,Z_n) x with x^2 == I mod n where I is the identity matrix.
  * @author Sean A. Irvine
  */
 public class A066907 extends MultiplicativeSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a105;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A105187 a(n) = determinant of the n X n matrix m(i,j)=(i+j+2)!/i!/j!.
+ * A105187 a(n) = determinant of the n X n matrix m(i,j) = (i+j+2)!/i!/j!.
  * @author Georg Fischer
  */
 public class A105187 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005652 Sum of 2 terms is never a Fibonacci number.
+ * A005652 Lexicographically least increasing sequence, starting with 1, such that the sum of 2 distinct terms is never a Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A005652 extends Sequence1 {

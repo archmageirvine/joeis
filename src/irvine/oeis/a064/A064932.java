@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003285;
 
 /**
- * A064932 Period length of the continued fraction for sqrt(3^(2n+1)).
+ * A064932 Period of the continued fraction for sqrt(3^(2n+1)).
  * @author Sean A. Irvine
  */
 public class A064932 extends A003285 {

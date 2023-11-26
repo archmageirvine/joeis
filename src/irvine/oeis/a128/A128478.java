@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A128478 Structure constants for certain radical benzenoidal structures (see Cash and Dias paper for precise definition).
+ * A128478 Structure counts for certain radical benzenoidal structures (see Cash and Dias paper for precise definition).
  *
  * @author Georg Fischer
  */

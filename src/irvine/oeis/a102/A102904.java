@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A102904 Primes of the form 3^n+20=3^n+19+1.
+ * A102904 Primes of the form 3^k + 20.
  * @author Georg Fischer
  */
 public class A102904 extends FilterSequence {

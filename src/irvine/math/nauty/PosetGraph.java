@@ -1,6 +1,5 @@
 package irvine.math.nauty;
 
-import java.io.PrintStream;
 import java.util.Arrays;
 
 import irvine.math.graph.Graph;
@@ -17,12 +16,9 @@ public class PosetGraph implements GroupAction {
   private static final int WORDSIZE = 64;
   private static final int MAXME = (2 * MAXNE + WORDSIZE - 1) / WORDSIZE;
 
-  protected PrintStream mOut = null;
-
   private final int[] mV0 = new int[MAXNE];
   private final int[] mV1 = new int[MAXNE];
   private final int[][] mEdgeNo = new int[MAXNV][MAXNV];
-
 
   private final NautySet mX = new NautySet(MAXME);
   private final int[] mIx = new int[2 * MAXNE];

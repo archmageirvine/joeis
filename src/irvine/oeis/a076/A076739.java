@@ -40,11 +40,8 @@ public class A076739 extends AbstractSequence implements DirectSequence {
         return Z.ONE;
       }
       Z sum = Z.ZERO;
-      int k = 0;
-      int term = mSeq.a(k++).intValueExact();
-      while (term <= n) {
+      for (int k = 0, term; (term = mSeq.a(k).intValueExact()) <= n; ++k) {
         sum = sum.add(get(n - term));
-        term = mSeq.a(k++).intValueExact();
       }
       return sum;
     }

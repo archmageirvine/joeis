@@ -16,14 +16,14 @@ import irvine.oeis.Sequence0;
  */
 public class A366551 extends Sequence0 {
 
-  private static final MatrixRing<Z> RING = new MatrixRing<>(3, Integers.SINGLETON);
+  private static final int SIZE = 3;
+  private static final MatrixRing<Z> RING = new MatrixRing<>(SIZE, Integers.SINGLETON);
   private int mN = 0;
 
   @Override
   public Z next() {
     final HashSet<Polynomial<Z>> charPolys = new HashSet<>();
-    final MatrixRing<Z> r = new MatrixRing<>(3, new IntegersMod(++mN));
-    for (final Matrix<Z> m : r) {
+    for (final Matrix<Z> m : new MatrixRing<>(SIZE, new IntegersMod(++mN))) {
       charPolys.add(RING.characteristicPolynomial(m));
     }
     return Z.valueOf(charPolys.size());

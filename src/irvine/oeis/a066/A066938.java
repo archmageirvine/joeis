@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066937.
+ * A066938 Primes of the form p*q+p+q, where p and q are primes.
  * @author Sean A. Irvine
  */
 public class A066938 extends Sequence1 {

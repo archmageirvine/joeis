@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A066937.
+ * A066947 Number of elements of order 2 in GL(2,Z_n).
  * @author Sean A. Irvine
  */
 public class A066947 extends SimpleTransformSequence {

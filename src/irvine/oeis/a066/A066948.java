@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007870;
 
 /**
- * A066937.
+ * A066948 Triangle of prime signature of A007870(n), read by rows.
  * @author Sean A. Irvine
  */
 public class A066948 extends Sequence1 {

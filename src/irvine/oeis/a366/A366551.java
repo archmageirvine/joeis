@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A366551.
+ * A366551 allocated for Robert P. P. McKone.
  * @author Sean A. Irvine
  */
 public class A366551 extends Sequence0 {

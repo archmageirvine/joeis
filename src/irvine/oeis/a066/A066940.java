@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A066937.
+ * A066940 Numbers n such that gcd(prime(n+1) + 1, prime(n) + 1) = 2.
  * @author Sean A. Irvine
  */
 public class A066940 extends A000040 {

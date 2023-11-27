@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066937.
+ * A066950 Numbers k such that phi(sigma(k)) + sigma(phi(k)) = 2k.
  * @author Sean A. Irvine
  */
 public class A066950 extends Sequence1 {

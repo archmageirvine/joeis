@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066937.
+ * A066949 Take the sum of the previous two terms, subtract n if this sum is greater than n.
  * @author Sean A. Irvine
  */
 public class A066949 extends Sequence1 {

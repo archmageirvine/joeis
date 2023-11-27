@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066937.
+ * A066937 For n=1,2,3,..., define b(n) as follows: initialize v at v=n; then for k=2,3,4,..., if v&gt;0 and k divides v, replace v with v-k. Set b(n)=v. Then {a(n)} is the subsequence consisting of the nonzero terms of {b(n)}.
  * @author Sean A. Irvine
  */
 public class A066937 extends Sequence1 {

@@ -14,7 +14,7 @@ import irvine.util.string.Date;
  * <ul>
  * <li>the deviations from the offsets in the OEIS</li>
  * <li>whether the sequence extends AbstractSequence</li>
- * <li>whether the sequence still implements SequenceWithOffset, without extending AbstractSequence</li>
+ * <li>whether the sequence stille implements SequenceWithOffset, without extending AbstractSequence</li>
  * </ul>
  * @author Georg Fischer
  */
@@ -50,10 +50,11 @@ public final class AbstractInspector {
     }
     if (fileName.matches("\\-\\-?h(elp)?")) {
       System.out.print("Usage: java irvine.oeis.AbstractInspector [mode [- | filename]]\n"
+          + "    mode = direct    : which sequences implement DirectSequence\n"
           + "    mode = finite    : check number of terms against OEIS data\n"
+          + "    mode = morphism  : return the parameters of morphism related sequences\n"
           + "    mode = noabstract: which sequences do not extend AbstractSequence\n"
           + "    mode = offinspect: check getOffset against OEIS offsets\n"
-          + "    mode = seqwoffset: which sequences implement SequenceWithOffset, but do not extend AbstractSequence\n"
           + "    (only the first 5 letters of the mode are relevant)\n"
           + "    file contains tab-separated tuples: A-number, offset, superclass\n"
           );
@@ -73,7 +74,7 @@ public final class AbstractInspector {
         while ((line = lineReader.readLine()) != null) { // read and process lines
           if (!line.matches("\\s*#.*")) { // is not a comment
             ++total;
-            if (total % 1024 == 0) { // progress
+            if (total % 8192 == 0) { // progress
                System.err.println("# " + String.format("+%5d: ", total) + line);
             }
             final String[] parms = line.split("\\s+");
@@ -83,6 +84,16 @@ public final class AbstractInspector {
               final String superClass = parms.length > 2 ? parms[2] : "";
               final Sequence seq = SequenceFactory.sequence(aNumber);
               if (false) {
+
+              } else if (mode.startsWith("direct")) {
+                if (seq instanceof DirectSequence) {
+                  final AbstractSequence seq2 = (AbstractSequence) seq;
+                  final int seqOffset = seq2.getOffset();
+                  ++fail;
+                  System.out.println(aNumber + "\t" + seqOffset + "\t" + superClass);
+                } else {
+                  ++pass;
+                }
 
               } else if (mode.startsWith("finit")) {
                 if (seq instanceof FiniteSequence) {
@@ -97,6 +108,24 @@ public final class AbstractInspector {
                 } else {
                   ++miss;
                 }
+
+//              } else if (mode.startsWith("morph")) {
+//                if (seq instanceof MorphismTransform) { // must be tested first because it is a subclass of MorphismFixedPointSequence
+//                  final MorphismTransform seq2 = (MorphismTransform) seq;
+//                  System.out.println(aNumber + "\tmortra\t" + seq2.getOffset()
+//                      + "\tnew " + seq2.getSequenceName() + "()"
+//                      + "\t" + seq2.getStart()
+//                      + "\t" + seq2.getAnchor()
+//                      + "\t" + seq2.getMappings()
+//                      );
+//                } else if (seq instanceof MorphismFixedPointSequence) {
+//                  final MorphismFixedPointSequence seq2 = (MorphismFixedPointSequence) seq;
+//                  System.out.println(aNumber + "\tmorfps\t" + seq2.getOffset()
+//                      + "\t" + seq2.getStart()
+//                      + "\t" + seq2.getAnchor()
+//                      + "\t" + seq2.getMappings()
+//                      );
+//                }
 
               } else if (mode.startsWith("noabs")) {
                 if (!(seq instanceof AbstractSequence)) {
@@ -118,14 +147,6 @@ public final class AbstractInspector {
                   }
                 } else {
                   ++miss;
-                }
-
-              } else if (mode.startsWith("seqwo")) {
-                if (seq instanceof Sequence && !(seq instanceof AbstractSequence)) {
-                  ++fail;
-                  System.out.println(aNumber + "\t" + parm1 + "\t" + superClass);
-                } else {
-                  ++pass;
                 }
 
               } else {
@@ -153,13 +174,13 @@ public final class AbstractInspector {
     if (false) {
     } else if (mode.startsWith("finit")) {
       subset = " with wrong size of FiniteSequence";
+    } else if (mode.startsWith("morph")) {
+      return;
     } else if (mode.startsWith("noabs")) {
       subset = " do not extend AbstractSequence";;
     } else if (mode.startsWith("offin")) {
       total -= miss;
       subset = " with defined, but wrong offset";
-    } else if (mode.startsWith("seqwo")) {
-      subset = " implement SequenceWithOffset only";
     } else {
       System.err.println("invalid mode " + mode);
     }

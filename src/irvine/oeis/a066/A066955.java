@@ -5,12 +5,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066360 Number of unordered solutions in positive integers of xy + xz + yz = n with gcd(x,y,z) = 1.
+ * A066955 Number of unordered solutions of x*y + y*z + z*x = n, x,y,z &gt; 0.
  * @author Sean A. Irvine
  */
-public class A066360 extends Sequence1 {
-
-  // After T. D. Noe
+public class A066955 extends Sequence1 {
 
   private long mN = 0;
 
@@ -23,10 +21,7 @@ public class A066360 extends Sequence1 {
         final long a = mN - x * y;
         final long d = x + y;
         if (a % d == 0) {
-          final long z = a / d;
-          if (LongUtils.gcd(x, y, z) == 1) {
-            ++cnt;
-          }
+          ++cnt;
         }
       }
     }

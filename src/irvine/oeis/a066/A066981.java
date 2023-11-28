@@ -7,10 +7,10 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A066853 Number of different remainders (or residues) for the Fibonacci numbers (A000045) when divided by n (i.e., the size of the set of F(i) mod n over all i).
+ * A066981 Number of residues of Lucas numbers modulo n.
  * @author Sean A. Irvine
  */
-public class A066853 extends Sequence1 {
+public class A066981 extends Sequence1 {
 
   private long mN = 0;
 
@@ -19,7 +19,7 @@ public class A066853 extends Sequence1 {
     ++mN;
     final HashSet<Long> residues = new HashSet<>();
     final HashSet<Pair<Long, Long>> seen = new HashSet<>();
-    long a = 0;
+    long a = 2 % mN;
     long b = 1 % mN;
     while (seen.add(new Pair<>(a, b))) {
       residues.add(b);

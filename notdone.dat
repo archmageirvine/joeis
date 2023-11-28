@@ -307,10 +307,6 @@ A004078 Tuscan squares of order n, hard, insufficient detail
 A004079 Maximal m such that an m X n Florentine rectangle exists, hard
 A004118 Maximal excess of a Hadamard matrix of order 4n, hard
 A004145 Number of degenerate simplices in n-cube, hard to get many terms
-A004204 Number of permutations of length n with spread 0, have paper
-A004205 Number of permutations of length n with spread 1, have paper
-A004206 Number of permutations of length n with spread 2, have paper
-A004246 Number of permutations of length n with spread 3, have paper
 A004251 Number of graphical partitions, some papers are available
 A004252 Path sums of n-point graphs, insufficient detail
 A004401 Least number of edges in graph containing all trees on n nodes

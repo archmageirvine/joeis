@@ -72,22 +72,40 @@ public class LongDynamicIntArray implements Serializable {
 
   /**
    * Set the entry at specified index to the given value.
-   *
-   * @param index array index
+   * @param index index of entry
    * @param value value to set at the index
-   * @exception UnsupportedOperationException if the underling array
-   * is not long.
    * @exception ArrayIndexOutOfBoundsException if the index is negative.
    */
   public void set(final long index, final int value) {
-    getChunk(index)[(int) index & CHUNK_MASK] = value;
+    getChunk(index)[(int) (index & CHUNK_MASK)] = value;
+  }
+
+  /**
+   * Add a value to the entry at the specified index, returning the new value.
+   * @param index index of entry
+   * @param value value to add
+   * @return the value after addition
+   * @exception ArrayIndexOutOfBoundsException if the index is negative.
+   */
+  public int add(final long index, final int value) {
+    return getChunk(index)[(int) (index & CHUNK_MASK)] += value;
+  }
+
+  /**
+   * Increment the entry at the specified index returning the new value.
+   * @param index index of entry
+   * @return the value after incrementing
+   * @exception ArrayIndexOutOfBoundsException if the index is negative.
+   */
+  public int increment(final long index) {
+    return add(index, 1);
   }
 
   /**
    * Truncate the array to specified length.  Entries beyond
    * this position are lost.  This method can release memory.
    * Calling <code>truncate(0);</code> empties the entire array.
-   * If the array is already the specified length or is shorter
+   * If the array is already the specified length or is shorter,
    * then no action is taken.
    *
    * @param length position to truncate at

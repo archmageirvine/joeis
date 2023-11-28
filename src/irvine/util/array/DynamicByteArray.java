@@ -6,7 +6,6 @@ import java.util.ArrayList;
 /**
  * Provides a dynamic array of bytes indexed by an int.
  * See DynamicArray for further information on performance.
- *
  * @author Sean A. Irvine
  */
 public class DynamicByteArray implements Serializable {
@@ -32,7 +31,6 @@ public class DynamicByteArray implements Serializable {
    * Return the length of the array.  This is one more than the
    * highest location which has been assigned a value or zero
    * in the case of an empty array.
-   *
    * @return length of the array
    */
   public int length() {
@@ -41,7 +39,6 @@ public class DynamicByteArray implements Serializable {
 
   /**
    * Get the byte at the specified array index.
-   *
    * @param index array index
    * @return value at specified index
    * @exception ArrayIndexOutOfBoundsException if the index is negative.
@@ -72,8 +69,7 @@ public class DynamicByteArray implements Serializable {
 
   /**
    * Set the entry at specified index to the given value.
-   *
-   * @param index array index
+   * @param index index of entry
    * @param value value to set at the index
    * @exception ArrayIndexOutOfBoundsException if the index is negative.
    */
@@ -82,12 +78,32 @@ public class DynamicByteArray implements Serializable {
   }
 
   /**
+   * Add a value to the entry at the specified index, returning the new value.
+   * @param index index of entry
+   * @param value value to add
+   * @return the value after addition
+   * @exception ArrayIndexOutOfBoundsException if the index is negative.
+   */
+  public byte add(final int index, final int value) {
+    return getChunk(index)[index & CHUNK_MASK] += value;
+  }
+
+  /**
+   * Increment the entry at the specified index returning the new value.
+   * @param index index of entry
+   * @return the value after incrementing
+   * @exception ArrayIndexOutOfBoundsException if the index is negative.
+   */
+  public byte increment(final int index) {
+    return add(index, 1);
+  }
+
+  /**
    * Truncate the array to specified length.  Entries beyond
    * this position are lost.  This method can release memory.
    * Calling <code>truncate(0);</code> empties the entire array.
-   * If the array is already the specified length or is shorter
+   * If the array is already the specified length or is shorter,
    * then no action is taken.
-   *
    * @param length position to truncate at
    * @exception ArrayIndexOutOfBoundsException if length is negative.
    */

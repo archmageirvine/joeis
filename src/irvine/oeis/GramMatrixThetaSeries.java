@@ -101,7 +101,7 @@ public class GramMatrixThetaSeries extends AbstractSequence {
         if (s < min) {
           min = s;
         }
-        mCounts.set(s, mCounts.get(s) + (mVec[0] == 0 ? 1 : 2));
+        mCounts.add(s, mVec[0] == 0 ? 1 : 2);
       } while (bump());
       if (mVerbose) {
         StringUtils.message("Hypercube bound m = " + mM + " min = " + min);

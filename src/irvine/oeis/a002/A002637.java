@@ -30,8 +30,7 @@ public class A002637 extends Sequence1 {
           for (long d = 0; d <= c; ++d) {
             final long ddccbbaa = ccbbaa + p(d);
             for (long e = 0; e <= d; ++e) {
-              final long n = ddccbbaa + p(e);
-              mSeq.set(n, mSeq.get(n) + 1);
+              mSeq.increment(ddccbbaa + p(e));
             }
           }
         }

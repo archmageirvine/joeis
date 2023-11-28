@@ -20,7 +20,7 @@ public class A063974 extends Sequence1 {
     ++mN;
     while (mM <= mN * mN) {
       final long v = Jaguar.factor(++mM).unitarySigma().longValueExact();
-      mCnts.set(v, mCnts.get(v) + 1);
+      mCnts.increment(v);
     }
     return Z.valueOf(mCnts.get(mN));
   }

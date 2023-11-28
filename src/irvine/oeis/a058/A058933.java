@@ -16,8 +16,6 @@ public class A058933 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long omega = Jaguar.factor(++mN).bigOmega();
-    mCounts.set(omega, mCounts.get(omega) + 1);
-    return Z.valueOf(mCounts.get(omega));
+    return Z.valueOf(mCounts.increment(Jaguar.factor(++mN).bigOmega()));
   }
 }

@@ -23,8 +23,7 @@ public class A066709 extends Sequence1 {
   private void search(final long remaining, final StringBuilder sb, final char c, final int a) {
     if (remaining == 0) {
       if (A066346.isWinning(sb.toString())) {
-        final long index = getIndex(sb.length(), a);
-        mCounts.set(index, mCounts.get(index) + 1);
+        mCounts.increment(getIndex(sb.length(), a));
       }
       return;
     }

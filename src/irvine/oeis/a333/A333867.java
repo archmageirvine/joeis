@@ -34,7 +34,7 @@ public class A333867 extends Sequence1 {
         final long cnt = oldTotals.get(j);
         mA.set(mA.length(), cnt);
         mB.set(mB.length(), j);
-        mTotals.set(cnt, mTotals.get(cnt) + 1);
+        mTotals.increment(cnt);
       }
     }
     return Z.valueOf(select(mA.get(mN), mB.get(mN)));

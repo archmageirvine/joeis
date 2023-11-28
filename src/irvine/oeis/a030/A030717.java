@@ -35,7 +35,7 @@ public class A030717 extends Sequence1 {
         if (cnt != 0) {
           mA.set(mA.length(), cnt);
           mB.set(mB.length(), j);
-          mTotals.set(cnt, mTotals.get(cnt) + 1);
+          mTotals.increment(cnt);
         }
       }
     }

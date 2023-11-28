@@ -42,7 +42,7 @@ public class A057607 extends Sequence2 {
             }
           }
         }
-        mCounts.set(cnt, mCounts.get(cnt) + 1);
+        mCounts.increment(cnt);
       }
     }
     return Z.valueOf(mCounts.get(mM));

@@ -30,8 +30,7 @@ public class OrdersFiniteGroupSequence<T> extends AbstractSequence {
     if (mA == null) {
       mA = new DynamicLongArray();
       for (final T e : mGroup) {
-        final int order = mGroup.order(e).intValueExact();
-        mA.set(order, mA.get(order) + 1);
+        mA.increment(mGroup.order(e).intValueExact());
       }
     }
     return mN < mA.length() ? Z.valueOf(mA.get(mN++)) : null;

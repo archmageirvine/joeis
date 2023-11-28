@@ -25,8 +25,7 @@ public class A061262 extends Sequence1 {
           final long ta = a * (a + 1) / 2;
           for (long b = a; b <= mM; ++b) {
             final long tb = b * (b + 1) / 2;
-            final long s = t + ta + tb;
-            mWays.set(s, mWays.get(s) + 1);
+            mWays.increment(t + ta + tb);
           }
         }
         k = 0;

@@ -66,23 +66,22 @@ public class A055187 extends AbstractSequence {
   //                1 (with segments)
   //--------------------------------------------------------
   private static int sDebug;
-  private int mAppear;
+  private final int mAppear;
   private int mFirst;
-  private String mMethod;
-  private int mOffset;
-  private int mParm;
-  private int mRow; // count in both rows,    output both; default
+  private final String mMethod;
+  private final int mParm;
+  private final int mRow; // count in both rows,    output both; default
   private int mStart;
-  private int mWith0;
+  private final int mWith0;
   private int mSegNo;
-  private ArrayList<Integer> mSegment;
+  private final ArrayList<Integer> mSegment;
   // mSegment[i+0] = attribute, how often (i = 1, 3, 5 ..)
   // mSegment[i+1] = noun, which number is counted,
   // always this order, increasing nouns, always complete with zero attributes
-  private ArrayList<Integer> mCount;  // temporary copy of the attributes
-  private ArrayList<Integer> mFirstApp; // 1st appearance of a noun
-  private ArrayList<Integer> mSeqLen; // cumulative length of sequence so far, indexed with mSegNo
-  private ArrayList<Integer> mResult; // buffer for next
+  private final ArrayList<Integer> mCount;  // temporary copy of the attributes
+  private final ArrayList<Integer> mFirstApp; // 1st appearance of a noun
+  private final ArrayList<Integer> mSeqLen; // cumulative length of sequence so far, indexed with mSegNo
+  private final ArrayList<Integer> mResult; // buffer for next
   private int mResIx; // next index in mResult to be consumed by next()
   private int mCurMax; // for methods J, K
   private int mK;
@@ -96,7 +95,6 @@ public class A055187 extends AbstractSequence {
   protected A055187(final int offset, final String method, final int start,
                  final int appear, final int row, final int first, final int with0, final int parm) {
     super(offset);
-    mOffset = offset;
     mMethod = method;
     mStart = start;
     mCurMax = mStart - 1;
@@ -121,7 +119,7 @@ public class A055187 extends AbstractSequence {
     mSegment.add(mStart);
 
     // first b-file entry
-    mK = mOffset;
+    mK = offset;
     mK2 = mK; // copy of k, running as if it were rule A
     if (mMethod.matches("[ABIJKP]")) {
       if ((mRow & 1) != 0) {
@@ -149,7 +147,6 @@ public class A055187 extends AbstractSequence {
     mSeqLen.add(0); // number of elements in segment
     for (int iseg = mFirst; iseg < mSegment.size(); iseg += 2) { // increment for valid entries
       attr = mSegment.get(iseg);
-      noun = mSegment.get(iseg + 1);
       if (attr != 0 || (mWith0 & 1) != 0) {
         if (mSegNo >= mSeqLen.size()) {
           mSeqLen.add(1);
@@ -171,8 +168,8 @@ public class A055187 extends AbstractSequence {
     // now the b-file entries
     if (mMethod.matches("[ABIJKP]")) { // first || second row || both
       if (mAppear == 1) { // order of first appearance
-        for (int iapp = 0; iapp < mFirstApp.size(); iapp++) {
-          final int iseg = mFirstApp.get(iapp) << 1;
+        for (final int integer : mFirstApp) {
+          final int iseg = integer << 1;
           attr = mSegment.get(iseg);
           noun = mSegment.get(iseg + 1);
           if (attr != 0 || (mWith0 & 1) != 0) {

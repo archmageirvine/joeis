@@ -42,7 +42,7 @@ public class A192053 extends A013560 {
       if (mSpecial) {
         System.out.println(packed);
       } else {
-        counts.set(packed, counts.get(packed) + 1);
+        counts.increment(packed);
       }
     } while (bump(p, mN));
     long maxCount = 0;

@@ -31,8 +31,7 @@ public class A000437 extends Sequence1 {
         for (long a = 0; a <= mLast; ++a) {
           final long aa = mLastSq + a * a;
           for (long b = a; b <= mLast; ++b) {
-            final long z = aa + b * b;
-            mCounts.set(z, mCounts.get(z) + 1);
+            mCounts.increment(aa + b * b);
           }
         }
       }

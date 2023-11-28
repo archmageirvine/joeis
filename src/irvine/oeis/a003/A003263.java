@@ -23,7 +23,7 @@ public class A003263 extends A000204 {
     if (mN >= mLucas) {
       mLucas = super.next().longValueExact();
       for (long k = mCount.length() - 1, j = k + mLucas; k >= 0; --k, --j) {
-        mCount.set(j, mCount.get(j) + mCount.get(k));
+        mCount.add(j, mCount.get(k));
       }
     }
     return Z.valueOf(mCount.get(mN));

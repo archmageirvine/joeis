@@ -114,11 +114,11 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
         for (final List<Integer> cycle : p.cycleStructure()) {
           final int size = cycle.size();
           if (size != 0) {
-            counts.set(size, counts.get(size) + 1);
+            counts.increment(size);
             total += size;
           }
         }
-        counts.set(1, counts.get(1) + n - total);
+        counts.add(1, n - total);
         for (int k = 0; k < counts.length(); ++k) {
           if (counts.get(k) != 0) {
             mm.add(k, counts.get(k));

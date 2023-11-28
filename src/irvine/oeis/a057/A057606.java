@@ -40,7 +40,7 @@ public class A057606 extends Sequence3 {
             }
           }
         }
-        mCounts.set(cnt, mCounts.get(cnt) + 1);
+        mCounts.increment(cnt);
       }
     }
     return Z.valueOf(mCounts.get(mM));

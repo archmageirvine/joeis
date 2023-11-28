@@ -24,8 +24,8 @@ public class A060857 extends Sequence0 {
         final long c = mCounts.get(k);
         if (c != 0) {
           sb.append(c).append(k);
-          newCounts.set(c, newCounts.get(c) + 1);
-          newCounts.set(k, newCounts.get(k) + 1 + c);
+          newCounts.increment(c);
+          newCounts.add(k, 1 + c);
         }
       }
       mCounts = newCounts;

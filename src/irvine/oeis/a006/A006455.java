@@ -56,7 +56,7 @@ public class A006455 extends Sequence0 {
     int mask;
     long count;
     int curn;
-    for (l = (1 << (mN - 1)) - 1, curn = mN; l > thresh; l >>>= 1, curn--) {
+    for (l = (1 << (mN - 1)) - 1, curn = mN; l > thresh; l >>>= 1, --curn) {
       final int hmask = (1 << offset[l]) - 1;
       for (int u = 0; u < hashsize; ++u) {
         mHash.set(u, 0);
@@ -65,7 +65,7 @@ public class A006455 extends Sequence0 {
       //System.out.println("SAI: " + curn + " " + l + " " + start + " " + top);
       long p = start;
       for (start = top; p != start; p = p == memsize - 1 ? 0 : p + 1) {
-        count++;
+        ++count;
         //System.out.println("SAI: " + count + " " + start);
         mask = (mAux.get(p) >>> offset[l]) & l;
         for (int x = 0; x <= l; x = ((x | mask) + 1) & ~mask) {
@@ -107,7 +107,7 @@ public class A006455 extends Sequence0 {
               top = 0;
             }
           }
-          mWt.set(q, mWt.get(q) + mWt.get(p));
+          mWt.add(q, mWt.get(p));
         }
       }
       if (mVerbose) {
@@ -129,7 +129,7 @@ public class A006455 extends Sequence0 {
         top = 0;
       }
     }
-    for (; l != 0; l >>>= 1, curn--) {
+    for (; l != 0; l >>>= 1, --curn) {
       final int hmask = (1 << offset[l]) - 1;
       for (int j = 0; j <= hmask; j++) {
         mHash.set(j, 0);
@@ -164,7 +164,7 @@ public class A006455 extends Sequence0 {
               top = 0;
             }
           }
-          mWt.set(q, mWt.get(q) + mWt.get(p));
+          mWt.add(q, mWt.get(p));
         }
       }
       if (mVerbose) {

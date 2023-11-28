@@ -45,8 +45,7 @@ public class A072068 extends Sequence1 {
       if (z == 0) {
         s /= 2;
       }
-      final long m = indexN(n);
-      mCount.set(m, mCount.get(m) + s);
+      mCount.add(indexN(n), s);
     }
   }
 

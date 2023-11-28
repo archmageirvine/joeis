@@ -26,7 +26,7 @@ public class A005434 extends Sequence1 {
       ++h;
       d.set(h, 1L);
       j.set(h, ++n);
-      count.set(n, count.get(n) + 1);
+      count.increment(n);
       valid:
       while (n < mN) {
         if (h > 2) {
@@ -37,15 +37,15 @@ public class A005434 extends Sequence1 {
             }
           } while (--k > 0);
         }
-        j.set(h, j.get(h) + 2);
-        d.set(h, d.get(h) + 1);
+        j.add(h, 2);
+        d.increment(h);
         ++n;
         for (int k = h - 1; k > 0; --k) {
           if (j.get(k) == n - 2) {
             break valid;
           }
         }
-        count.set(n, count.get(n) + 1);
+        count.increment(n);
       }
       do {
         while (j.get(h) == n--) {

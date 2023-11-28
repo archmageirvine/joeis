@@ -59,7 +59,7 @@ public class A054981 extends Sequence0 implements GraphProcessor {
       }
       // Compute weight
       if (ok) {
-        mCounts.set(wt, mCounts.get(wt) + 1);
+        mCounts.increment(wt);
       }
     });
   };

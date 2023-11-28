@@ -25,8 +25,7 @@ public class A002636 extends Sequence0 {
       for (long b = 0; b <= mA; ++b) {
         final long bbaa = aa + b * (b + 1) / 2;
         for (long c = 0; c <= b; ++c) {
-          final long ccbbaa = bbaa + c * (c + 1) / 2;
-          mSeq.set(ccbbaa, mSeq.get(ccbbaa) + 1);
+          mSeq.increment(bbaa + c * (c + 1) / 2);
         }
       }
     }

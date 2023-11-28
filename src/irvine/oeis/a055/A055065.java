@@ -27,8 +27,7 @@ public class A055065 extends Sequence1 {
       while (w > mP) {
         mP = mPrime.nextPrime(mP);
         for (long q = 3; q < mP; q = mPrime.nextPrime(q)) {
-          final long s = (mP + q) >>> 1;
-          mCount.set(s, mCount.get(s) + 1);
+          mCount.increment((mP + q) >>> 1);
         }
       }
       if (mCount.get(v) == mN) {

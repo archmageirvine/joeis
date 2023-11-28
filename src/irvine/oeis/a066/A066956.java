@@ -46,7 +46,7 @@ public class A066956 extends Sequence1 {
         }
         v += u;
         if (v >= 0) {
-          mA.set(v, mA.get(v) + 1);
+          mA.increment(v);
         }
       }
     }

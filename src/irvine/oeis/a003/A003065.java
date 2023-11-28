@@ -23,8 +23,7 @@ public class A003065 extends A003313 {
     ++mN;
     final int limit = 1 << mN;
     while (mM <= limit) {
-      final int length = super.next().intValueExact();
-      mCounts.set(length, mCounts.get(length) + 1);
+      mCounts.increment(super.next().intValueExact());
       ++mM;
     }
     return Z.valueOf(mCounts.get(mN));

@@ -30,7 +30,7 @@ public class A026413 extends A026409 {
         mMax.set(s, Math.max(mMax.get(s), mM - mPrev.get(s) - 1));
       }
       mPrev.set(s, mM);
-      mCount.set(s, mCount.get(s) + 1);
+      mCount.increment(s);
     }
     return Z.valueOf(mMax.get(mN));
   }

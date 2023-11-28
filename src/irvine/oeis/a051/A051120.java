@@ -30,7 +30,7 @@ public class A051120 extends Sequence0 {
         }
       }
       for (final long t : mA) {
-        mCounts.set(t, mCounts.get(t) + 1);
+        mCounts.increment(t);
       }
       mM = 0;
     }

@@ -23,7 +23,7 @@ public class A060990 extends Sequence0 {
       if (d < mN) {
         throw new RuntimeException("An earlier count was wrong");
       }
-      mA.set(d, mA.get(d) + 1);
+      mA.increment(d);
       ++mX;
     }
     return Z.valueOf(mA.get(mN));

@@ -31,7 +31,7 @@ public class A054081 extends Sequence1 {
     if (row.get(k) == 0) {
       row.set(k, k + 1 + mStep.get(n));
       row.set(k + mStep.get(n), k + 1);
-      mStep.set(n, mStep.get(n) + 1);
+      mStep.increment(n);
     }
     return row.get(k);
   }

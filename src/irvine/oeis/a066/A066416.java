@@ -16,8 +16,7 @@ public class A066416 extends Sequence1 {
   private long mN = 0;
 
   private void step() {
-    final long sum = mA.next().longValueExact();
-    mCounts.set(sum, mCounts.get(sum) + 1);
+    mCounts.increment(mA.next().longValueExact());
   }
 
   @Override

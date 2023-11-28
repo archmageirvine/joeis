@@ -16,8 +16,7 @@ public class A026405 extends A026400 {
   public Z next() {
     ++mN;
     while (mCount.get(mN) == 0) {
-      final long s = super.next().longValueExact();
-      mCount.set(s, mCount.get(s) + 1);
+      mCount.increment(super.next().longValueExact());
     }
     long k = mN;
     while (mCount.get(k) != k) {

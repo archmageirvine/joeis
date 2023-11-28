@@ -22,11 +22,8 @@ public class A026412 extends A026409 {
     while (!mMap.containsKey(mN)) {
       final long s = super.next().longValueExact();
       ++mM;
-      if (s >= mN) {
-        mCount.set(s, mCount.get(s) + 1);
-        if (mCount.get(s) == s) {
-          mMap.put(s, mM);
-        }
+      if (s >= mN && mCount.increment(s) == s) {
+        mMap.put(s, mM);
       }
     }
     final Long r = mMap.remove(mN);

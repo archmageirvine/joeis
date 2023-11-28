@@ -21,8 +21,7 @@ public class A066075 extends Sequence1 {
   public Z next() {
     mP = mPrime.nextPrime(mP);
     while (mM <= mP) {
-      final long t = Jaguar.factor(mM).sigma().intValueExact() - 1;
-      mA.set(t, mA.get(t) + 1);
+      mA.increment(Jaguar.factor(mM).sigma().intValueExact() - 1);
       ++mM;
     }
     return Z.valueOf(mA.get(mP));

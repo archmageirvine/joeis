@@ -19,7 +19,7 @@ public class A056888 extends Sequence1 {
   private void step() {
     mA = mA.multiply(9);
     final long sum = ZUtils.digitSum(mA) / 9;
-    mCounts.set(sum, mCounts.get(sum) + 1);
+    mCounts.increment(sum);
     if (sum <= mN) {
       throw new RuntimeException("Heuristic failed: " + sum + " observed while working on " + mN);
     }

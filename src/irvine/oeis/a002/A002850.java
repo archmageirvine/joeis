@@ -21,8 +21,7 @@ public class A002850 extends A000959 {
     while (n > mLast) {
       mLast = super.next().longValueExact();
       for (long k = 0; k < mLucky.length(); ++k) {
-        final long s = mLast + mLucky.get(k);
-        mCount.set(s, mCount.get(s) + 1);
+        mCount.increment(mLast + mLucky.get(k));
       }
     }
     return Z.valueOf(mCount.get(n));

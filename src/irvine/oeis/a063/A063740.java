@@ -21,7 +21,7 @@ public class A063740 extends Sequence2 {
     while (++s <= mN * mN) {
       final long cophi = s - Euler.phiAsLong(s);
       if (cophi > 1) {
-        mA.set(cophi, mA.get(cophi) + 1);
+        mA.increment(cophi);
       }
     }
     return Z.valueOf(mA.get(mN));

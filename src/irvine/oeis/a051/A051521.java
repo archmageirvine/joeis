@@ -21,8 +21,7 @@ public class A051521 extends Sequence1 {
     while (mM <= 4 * mN * mN) {
       final long d = Jaguar.factor(mM).sigma0().longValueExact();
       if (mM % d == 0) {
-        final long v = mM / d;
-        mA.set(v, mA.get(v) + 1);
+        mA.increment(mM / d);
       }
       ++mM;
     }

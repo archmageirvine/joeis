@@ -29,7 +29,7 @@ public class A064674 extends Sequence0 {
     while (true) {
       final int t = mA.next().intValueExact();
       if (++mM == mP) {
-        mCounts.set(t, mCounts.get(t) + 1);
+        mCounts.increment(t);
         mP = mPrime.nextPrime(mP);
         if (mM >= mLim) {
           mLim *= 3;

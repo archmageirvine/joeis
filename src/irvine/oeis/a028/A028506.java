@@ -36,8 +36,7 @@ public class A028506 extends Sequence1 {
     for (int k = 0; k < mN; ++k) {
       rowSums[k] = Integer.bitCount(matrix[k]);
     }
-    final long index = pack(rowSums);
-    mCounts.set(index, mCounts.get(index) + 1);
+    mCounts.increment(pack(rowSums));
   }
 
   // Represent matrix as n int's using low n bits for each row

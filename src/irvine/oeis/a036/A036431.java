@@ -16,8 +16,7 @@ public class A036431 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long m = ++mN + Jaguar.factor(mN).sigma0().longValueExact();
-    mCnt.set(m, mCnt.get(m) + 1);
+    mCnt.increment(++mN + Jaguar.factor(mN).sigma0().longValueExact());
     return Z.valueOf(mCnt.get(mN));
   }
 }

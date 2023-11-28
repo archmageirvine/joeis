@@ -24,9 +24,7 @@ public class A114478 extends Sequence0 {
   }
 
   private void use(final long n) {
-    final int m = (int) (n >>> 6);
-    final long b = 1L << (n & 0x3F);
-    mUsed.set(m, mUsed.get(m) + b);
+    mUsed.add((int) (n >>> 6), 1L << (n & 0x3F));
   }
 
   @Override

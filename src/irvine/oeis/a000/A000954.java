@@ -28,8 +28,7 @@ public class A000954 extends Sequence0 {
       long q = 2;
       while ((q = mPrime.nextPrime(q)) <= p) {
         // divide by 2 since we only care about even numbers
-        final long index = (p + q) / 2;
-        mCount.set(index, mCount.get(index) + 1);
+        mCount.increment((p + q) / 2);
       }
       mP = p;
     }

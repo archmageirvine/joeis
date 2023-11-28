@@ -60,7 +60,7 @@ public class A006628 extends Sequence1 {
       }
       //System.out.println(mM + " -> " + mostParts);
       mAssignment.set(mM, mostParts);
-      mCounts.set(mostParts, mCounts.get(mostParts) + 1);
+      mCounts.increment(mostParts);
       final DynamicIntArray set = mSets.get(mostParts);
       set.set(set.length(), mM);
       if (mFirsts.get(mostParts) == 0) {

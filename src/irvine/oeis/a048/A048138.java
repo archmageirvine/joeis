@@ -23,8 +23,7 @@ public class A048138 extends A001065 {
   public Z next() {
     final long lim = ++mN * mN;
     while (mM <= lim) {
-      final long v = super.next().longValueExact();
-      mA.set(v, mA.get(v) + 1);
+      mA.increment(super.next().longValueExact());
       ++mM;
     }
     return Z.valueOf(mA.get(mN));

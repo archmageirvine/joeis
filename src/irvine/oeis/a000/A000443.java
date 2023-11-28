@@ -23,8 +23,7 @@ public class A000443 extends Sequence1 {
         ++mLast;
         mLastSq = mLast * mLast;
         for (long a = 0; a <= mLast; ++a) {
-          final long z = mLastSq + a * a;
-          mCounts.set(z, mCounts.get(z) + 1);
+          mCounts.increment(mLastSq + a * a);
         }
       }
       if (mCounts.get(mN) == 3) {

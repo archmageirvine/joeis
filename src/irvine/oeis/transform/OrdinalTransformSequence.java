@@ -13,10 +13,8 @@ import irvine.oeis.AbstractSequence;
  */
 public class OrdinalTransformSequence extends AbstractSequence {
 
-  private int mN;
-  private int mOffset; // first index
-  private int mStart; // first index of underlying sequence
-  private AbstractSequence mSeq; // underlying sequence
+  private final int mStart; // first index of underlying sequence
+  private final AbstractSequence mSeq; // underlying sequence
   private final ArrayList<Z> mArr = new ArrayList<>(128);
 
   /**
@@ -28,7 +26,6 @@ public class OrdinalTransformSequence extends AbstractSequence {
   public OrdinalTransformSequence(final int offset, final AbstractSequence seq, final int start) {
     super(offset);
     mSeq = seq;
-    mOffset = offset;
     mStart = start;
     if (mStart == 1) {
       mArr.add(Z.ZERO); // [0] not used for offset = 1
@@ -39,7 +36,6 @@ public class OrdinalTransformSequence extends AbstractSequence {
    * Creates a simple transform of an existing sequence.
    * @param offset offset of new sequence
    * @param seq underlying sequence
-   * @param lambda2 function converting a specific value to its new value
    */
   public OrdinalTransformSequence(final int offset, final AbstractSequence seq) {
     this (offset, seq, 1);
@@ -47,7 +43,6 @@ public class OrdinalTransformSequence extends AbstractSequence {
 
   @Override
   public Z next() {
-    ++mN;
     final Z t = mSeq.next();
     mArr.add(t);
     int count = 1;

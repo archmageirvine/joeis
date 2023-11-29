@@ -53,8 +53,8 @@ public class A005434 extends Sequence1 {
             return Z.valueOf(count.get(mN));
           }
         }
-        j.set(h, j.get(h) - 2);
-        d.set(h, d.get(h) - 1);
+        j.add(h, -2);
+        d.add(h, -1);
       } while (j.get(h - 1) == n && d.get(h) == 1);
     }
   }

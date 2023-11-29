@@ -2297,3 +2297,4 @@ A066832 Number of kanji strokes for 10^(4*n).
 A066833 Continued fraction expansion of Product_{p prime} (1 - 1/(p^4 - p^3)).
 A066834 Continued fraction expansion of Product_{p prime} (1 - 1/(p^5 - p^4)).
 A066951 Number of nonisomorphic connected graphs that can be drawn in the plane using n unit-length edges.
+A067009 Continued fraction expansion of Product_{p prime} (1 + 1/(p+1)^2). [parent sequence too slow]

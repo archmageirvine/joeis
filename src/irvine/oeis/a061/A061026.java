@@ -14,7 +14,7 @@ public class A061026 extends Sequence1 {
 
   private final LongDynamicLongArray mFirsts = new LongDynamicLongArray();
   private long mM = 0;
-  private long mN = 0;
+  protected long mN = 0;
 
   @Override
   public Z next() {

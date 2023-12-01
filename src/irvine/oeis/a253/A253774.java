@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A253774 Numbers n such that 4^n + 19 is prime.
+ * A253774 Numbers k such that 4^k + 19 is prime.
  * @author Georg Fischer
  */
 public class A253774 extends PrimePositionSubsequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A050449 a(n) = Sum_{d|n, d==1 (mod 4)} d.
+ * A050449 a(n) = Sum_{d|n, d == 1 (mod 4)} d.
  * @author Georg Fischer
  */
 public class A050449 extends AbstractSequence {

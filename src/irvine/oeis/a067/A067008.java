@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008472;
 
 /**
- * A067001.
+ * A067008 Numbers k such that Sum_{j=1..k} A008472(j) divides k!.
  * @author Sean A. Irvine
  */
 public class A067008 extends A008472 {

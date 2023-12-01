@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a159.A159959;
 
 /**
- * A160081 Lodumo_5 of Fibonacci numbers .
+ * A160081 Lodumo_5 of Fibonacci numbers.
  * @author Georg Fischer
  */
 public class A160081 extends A159959 {

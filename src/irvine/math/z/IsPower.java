@@ -6,7 +6,6 @@ import irvine.math.LongUtils;
 
 /**
  * Test if a number is a perfect power.
- *
  * @author Sean A. Irvine
  */
 final class IsPower {
@@ -14,10 +13,9 @@ final class IsPower {
   private IsPower() { }
 
   /**
-   * Test if an integer is a perfect power.  It it is then, returns the base of
-   * the power and sets the auxiliary to the relevant exponent.  Otherwise
+   * Test if an integer is a perfect power.  If it is then, returns the base of
+   * the power and sets the auxiliary to the relevant exponent.  Otherwise,
    * returns null and an auxiliary of 1.  Returns null for all inputs &lt;= 1.
-   *
    * @param n number to test
    * @return x such that <code>x^a=n</code> or null if no such x exists.
    */
@@ -39,13 +37,13 @@ final class IsPower {
     }
     final Fast prime = new Fast();
     int l = a.bitLength();
-    int c, p = 2;
-    Z t = null;
+    int c;
+    int p = 2;
+    Z t;
     outer:
     while (true) {
       p = (int) prime.nextPrime(p);
       if (p * (IntegerUtils.log2(p) - 1) > l) {
-        t = null;
         break;
       }
       while (true) {
@@ -56,7 +54,7 @@ final class IsPower {
               continue outer;
             }
           }
-        } else if (p < Z.BASE_ROOT && a.mod(p * p) != 0) {
+        } else if (p < Z.BASE_ROOT && a.mod((long) p * p) != 0) {
           n.mAuxiliary = r;
           return r < 2 ? null : a;
         }
@@ -144,7 +142,7 @@ final class IsPower {
         ++e;
       }
       if (c == 0) {
-        n.mAuxiliary = r < 2 ? e : r * e;
+        n.mAuxiliary = r < 2 ? e : (long) r * e;
         return n.mAuxiliary <= 1 ? null : Z.valueOf(p);
       }
     }

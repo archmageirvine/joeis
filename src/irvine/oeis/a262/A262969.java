@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A262969 Numbers n such that 4^n + 27 is prime.
+ * A262969 Numbers k such that 4^k + 27 is prime.
  * @author Georg Fischer
  */
 public class A262969 extends PrimePositionSubsequence {

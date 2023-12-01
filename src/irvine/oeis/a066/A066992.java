@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066992 Integers of the form C(2n,n)*sum(i=1,n,1/phi(i)).
+ * A066992 Integers of the form C(2n,n)^2 * Sum_{i=1..n} 1/phi(i).
  * @author Sean A. Irvine
  */
 public class A066992 extends Sequence1 {

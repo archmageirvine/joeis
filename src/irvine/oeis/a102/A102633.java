@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A102633 Numbers n such that 2^n+11 is prime.
+ * A102633 Numbers k such that 2^k + 11 is prime.
  * @author Georg Fischer
  */
 public class A102633 extends PrimePositionSubsequence {

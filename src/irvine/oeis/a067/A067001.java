@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A067001.
+ * A067001 Triangle T(n,k) = d(n-k,n), 0 &lt;= k &lt;= n, where d(l,m) = Sum_{k=l..m} 2^k * binomial(2*m-2*k, m-k) * binomial(m+k, m) * binomial(k, l).
  * @author Sean A. Irvine
  */
 public class A067001 extends Sequence0 {

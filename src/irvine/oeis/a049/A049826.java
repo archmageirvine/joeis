@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.math.z.Z;
 
 /**
- * A049826 a(n)=T(n,n)+T(n+1,n)+...+T(2n-1,n)=sum over a period of n-th column of array T given by A049816.
+ * A049826 a(n) = T(n,n) + T(n+1,n) + ... + T(2n-1,n) = sum over a period of n-th column of array T given by A049816.
  * @author Sean A. Irvine
  */
 public class A049826 extends A049816 {

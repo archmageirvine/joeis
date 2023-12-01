@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A366551 allocated for Robert P. P. McKone.
+ * A366551 Number of distinct characteristic polynomials for 3 X 3 matrices with entries from {0, 1, ..., n}.
  * @author Sean A. Irvine
  */
 public class A366551 extends Sequence0 {

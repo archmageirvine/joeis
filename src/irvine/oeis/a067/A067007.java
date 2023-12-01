@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067001.
+ * A067007 a(n) = googolplex (mod n).
  * @author Sean A. Irvine
  */
 public class A067007 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A144869 Shadow transform of C(n+7, 8) = A000581(n+7).
+ * A144869 Shadow transform of C(n+7,8) = A000581(n+7).
  * @author Georg Fischer
  */
 public class A144869 extends LambdaSequence {

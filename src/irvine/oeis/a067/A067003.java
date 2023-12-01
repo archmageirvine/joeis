@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A067001.
+ * A067003 Number of numbers &lt;= n with same number of distinct prime factors as n.
  * @author Sean A. Irvine
  */
 public class A067003 extends Sequence1 {

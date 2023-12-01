@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A067001.
+ * A067014 a(1)=1 and a(n+1)=phi(a(n))+a(phi(n)) for n&gt;0.
  * @author Sean A. Irvine
  */
 public class A067014 extends CachedSequence {

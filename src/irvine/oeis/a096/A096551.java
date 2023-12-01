@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A096551 Consecutive internal states of a linear congruential pseudo-random number generator with a parameter proposed by George Marsaglia as a &quot;candidate for the best of all multipliers&quot;.
+ * A096551 Consecutive internal states of a linear congruential pseudo-random number generator with a parameter proposed by George Marsaglia as a "candidate for the best of all multipliers".
  * @author Georg Fischer
  */
 public class A096551 extends TupleTransformSequence {

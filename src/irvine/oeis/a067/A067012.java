@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
 /**
- * A067001.
+ * A067012 Absolute composites: every permutation of digits (dropping any leading zeros) is a composite number.
  * @author Sean A. Irvine
  */
 public class A067012 extends Sequence1 {

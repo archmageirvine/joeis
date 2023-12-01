@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A093099 &quot;Fibonacci-digits&quot;: start with &quot;11&quot;, append sum of first 2 digits to the preceding number, drop first digit.
+ * A093099 "Fibonacci-digits": start with "11", append sum of first 2 digits to the preceding number, drop first digit.
  * @author Georg Fischer
  */
 public class A093099 extends TupleTransformSequence {

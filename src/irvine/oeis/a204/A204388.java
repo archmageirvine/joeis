@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A204388 Numbers n such that 4^n + 25 is prime.
+ * A204388 Numbers k such that 4^k + 25 is prime.
  * @author Georg Fischer
  */
 public class A204388 extends PrimePositionSubsequence {

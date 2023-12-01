@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001826;
 import irvine.oeis.a121.A121262;
 
 /**
- * A293451 Number of proper divisors of form 4k+1.
+ * A293451 Number of proper divisors of n of the form 4k+1.
  * @author Georg Fischer
  */
 public class A293451 extends Sequence1 {

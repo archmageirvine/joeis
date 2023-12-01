@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A228027 Primes of the form 4^n + 9.
+ * A228027 Primes of the form 4^k + 9.
  * @author Georg Fischer
  */
 public class A228027 extends PrimeSubsequence {

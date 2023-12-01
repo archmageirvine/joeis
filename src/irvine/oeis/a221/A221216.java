@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A221216 T(n,k)= ((n+k)^2-2*(n+k)+4-(3*n+k-2)*(-1)^(n+k))/2; n , k &gt; 0, read by antidiagonals.
+ * A221216 T(n,k) = ((n+k)^2-2*(n+k)+4-(3*n+k-2)*(-1)^(n+k))/2; n , k &gt; 0, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A221216 extends Transpose {

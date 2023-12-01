@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001842;
 import irvine.oeis.a121.A121262;
 
 /**
- * A293513 Number of proper divisors of form 4k+3.
+ * A293513 Number of proper divisors of n of the form 4k+3.
  * @author Georg Fischer
  */
 public class A293513 extends AbstractSequence {

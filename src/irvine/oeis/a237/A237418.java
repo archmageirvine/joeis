@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A237418 Primes of the form 4^n + 15.
+ * A237418 Primes of the form 4^k + 15.
  * @author Georg Fischer
  */
 public class A237418 extends PrimeSubsequence {

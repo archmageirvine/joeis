@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 /**
- * A004204.
+ * A004205 Number of permutations of length n with spread 1.
  * @author Sean A. Irvine
  */
 public class A004205 extends A004204 {

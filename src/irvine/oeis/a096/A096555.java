@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A096555 Consecutive internal states of the linear congruential pseudo-random number generator RANDU that was used in the IBM Scientific Subroutine Library for IBM System/360 computers in the 1970&apos;s.
+ * A096555 Consecutive internal states of the linear congruential pseudo-random number generator RANDU that was used in the IBM Scientific Subroutine Library for IBM System/360 computers in the 1970's.
  * @author Georg Fischer
  */
 public class A096555 extends TupleTransformSequence {

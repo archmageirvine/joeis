@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A262345 Numbers n such that 4^n + 21 is prime.
+ * A262345 Numbers k such that 4^k + 21 is prime.
  * @author Georg Fischer
  */
 public class A262345 extends PrimePositionSubsequence {

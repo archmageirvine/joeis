@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A144866 Shadow transform of C(n+4, 5) = A000389(n+4).
+ * A144866 Shadow transform of C(n+4,5) = A000389(n+4).
  * @author Georg Fischer
  */
 public class A144866 extends LambdaSequence {

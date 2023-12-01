@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A067001.
+ * A067004 Number of numbers &lt;= n with same number of divisors as n.
  * @author Sean A. Irvine
  */
 public class A067004 extends Sequence1 {

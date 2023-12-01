@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066865.
+ * A067015 Triangle T(n,k) (n&gt;=1, rows have irregular lengths) giving number of arrangements of k nonattacking princes on an n X n staggered hexagonal torus board.
  * @author Sean A. Irvine
  */
 public class A067015 extends Sequence1 {

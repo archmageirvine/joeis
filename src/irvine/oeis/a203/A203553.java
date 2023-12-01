@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A203553 Lodumo_2 of A118175, which is n 1&apos;s followed by n 0&apos;s.
+ * A203553 Lodumo_2 of A118175, which is n 1's followed by n 0's.
  * @author Georg Fischer
  */
 public class A203553 extends BaseTriangle {

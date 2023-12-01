@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A004204.
+ * A004204 Number of permutations of length n with spread 0.
  * @author Sean A. Irvine
  */
 public class A004204 extends AbstractSequence {

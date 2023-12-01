@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A066865.
+ * A067016 Start with a(0)=1, a(1)=4, a(2)=3, a(3)=2; for n&gt;=3, a(n+1) = max_i (a(i)+a(n-i)).
  * @author Sean A. Irvine
  */
 public class A067016 extends Sequence0 {

@@ -4,7 +4,7 @@ package irvine.oeis.a284;
 import irvine.oeis.a050.A050449;
 
 /**
- * A284099 a(n) = Sum_{d|n, d==1 (mod 7)} d.
+ * A284099 a(n) = Sum_{d|n, d == 1 (mod 7)} d.
  * @author Georg Fischer
  */
 public class A284099 extends A050449 {

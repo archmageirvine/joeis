@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A070584 n^4 mod 41.
+ * A070584 a(n) = n^4 mod 41.
  * @author Georg Fischer
  */
 public class A070584 extends Sequence0 {

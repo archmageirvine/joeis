@@ -4,7 +4,7 @@ package irvine.oeis.a078;
 import irvine.oeis.a050.A050449;
 
 /**
- * A078182 a(n) = Sum_{d|n, d=2 mod 3} d.
+ * A078182 a(n) = Sum_{d|n, d == 2 (mod 3)} d.
  * @author Georg Fischer
  */
 public class A078182 extends A050449 {

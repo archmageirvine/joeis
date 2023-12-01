@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A096557 Consecutive internal states of the linear congruential pseudo-random number generator rand() used in Microsoft&apos;s Visual C++.
+ * A096557 Consecutive internal states of the linear congruential pseudo-random number generator rand() used in Microsoft's Visual C++.
  * @author Georg Fischer
  */
 public class A096557 extends TupleTransformSequence {

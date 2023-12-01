@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A262972 Numbers n such that 4^n + 33 is prime.
+ * A262972 Numbers k such that 4^k + 33 is prime.
  * @author Georg Fischer
  */
 public class A262972 extends PrimePositionSubsequence {

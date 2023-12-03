@@ -2,24 +2,23 @@ package irvine.oeis.a067;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A067065 Numbers n such that sigma(sigma(sigma(n))) == 6*sigma(n).
+ * A067077 Product of the prime factors of n equals the sum of the digits of n.
  * @author Sean A. Irvine
  */
-public class A067065 extends Sequence1 {
+public class A067077 extends Sequence1 {
 
   private long mN = 0;
 
   @Override
   public Z next() {
     while (true) {
-      final Z sigma = Jaguar.factor(++mN).sigma();
-      if (Jaguar.factor(Jaguar.factor(sigma).sigma()).sigma().equals(sigma.multiply(6))) {
+      if (Jaguar.factor(++mN).squareFreeKernel().equals(Z.valueOf(ZUtils.digitSum(mN)))) {
         return Z.valueOf(mN);
       }
     }
   }
 }
-

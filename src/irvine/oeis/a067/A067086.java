@@ -6,19 +6,17 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067054 a(n) = floor(s^s) where s = Sum_{k=1..n} 1/k.
+ * A067086 a(n) = floor(Sum_{k=1..n} 1/k^(1/3)).
  * @author Sean A. Irvine
  */
-public class A067054 extends Sequence1 {
+public class A067086 extends Sequence1 {
 
-  private Q mSum = Q.ZERO;
   private long mN = 0;
+  private CR mSum = CR.ZERO;
 
   @Override
   public Z next() {
-    mSum = mSum.add(new Q(1, ++mN));
-    final CR s = CR.valueOf(mSum);
-    return s.pow(s).floor();
+    mSum = mSum.add(CR.valueOf(++mN).pow(Q.ONE_THIRD).inverse());
+    return mSum.floor();
   }
 }
-

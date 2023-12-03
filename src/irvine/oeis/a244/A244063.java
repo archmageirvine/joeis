@@ -7,7 +7,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a001.A001221;
 
 /**
- * A244063 Number of prime factors (with multiplicity) of the number of distinct prime factors of n; i.e., Omega(omega(n)).
+ * A244063 Number of prime factors (with multiplicity) of the number of distinct prime factors of n; a(n) = Omega(omega(n)).
  * @author Georg Fischer
  */
 public class A244063 extends Sequence2 {

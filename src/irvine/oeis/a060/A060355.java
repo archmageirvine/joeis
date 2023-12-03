@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001694;
 
 /**
- * A060355 Numbers n such that n and n+1 are a pair of consecutive powerful numbers.
+ * A060355 Numbers k such that k and k+1 are powerful numbers.
  * @author Sean A. Irvine
  */
 public class A060355 extends A001694 {

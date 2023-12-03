@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003418;
 
 /**
- * A067037.
+ * A067068 a(n) = n* - 2^n, where n* (A003418) = least common multiple of the numbers [1,...,n].
  * @author Sean A. Irvine
  */
 public class A067068 extends Sequence1 {

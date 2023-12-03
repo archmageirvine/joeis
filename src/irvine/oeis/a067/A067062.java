@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067037.
+ * A067062 Numbers n such that sigma(n+2) - sigma(n) = prime(n+1) - prime(n).
  * @author Sean A. Irvine
  */
 public class A067062 extends A000040 {

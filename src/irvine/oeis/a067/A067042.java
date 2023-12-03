@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067039 The tower function n^{(n-1)!}.
+ * A067042 Numbers in which the product of digits in even positions = product of digits in odd positions.
  * @author Sean A. Irvine
  */
 public class A067042 extends Sequence1 {

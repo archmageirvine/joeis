@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.transform.BinomialTransformSequence;
 
 /**
- * A019442 Numbers n such that a Hadamard matrix of order n exists.
+ * A019442 Numbers m such that a Hadamard matrix of order m exists.
  * @author Sean A. Irvine
  */
 public class A019442 extends BinomialTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A200564 (2^(n^2)+2^((n^2+n)/2))/2.
+ * A200564 a(n) = (2^(n^2)+2^((n^2+n)/2))/2.
  * a(n)=2^(n^2-1) + 2^((n^2+n)/2-1)
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067061.
+ * A067061 A permutation of the natural numbers.
  * @author Sean A. Irvine
  */
 public class A067061 extends Sequence1 {

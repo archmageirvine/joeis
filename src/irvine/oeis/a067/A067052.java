@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067037 a(n) = n^m where m = floor(Sum_{k=1..n} 1/k).
+ * A067052 Floor((sum_{1..n} 1/i)^n).
  * @author Sean A. Irvine
  */
 public class A067052 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000578;
 
 /**
- * A067037.
+ * A067070 Cubes for which the product of the digits is a cube &gt; 0.
  * @author Sean A. Irvine
  */
 public class A067070 extends Sequence1 {

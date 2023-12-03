@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063464 omega(n) = omega(n+2), where omega(n) is the number of distinct prime divisors of n.
+ * A063464 Numbers k such that omega(k) = omega(k+2), where omega(k) is the number of distinct prime divisors of k.
  * @author Sean A. Irvine
  */
 public class A063464 extends Sequence1 {

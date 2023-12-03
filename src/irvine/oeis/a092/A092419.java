@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000037;
 
 /**
- * A067037.
+ * A092419 Let k = n-th nonsquare = A000037(n); then a(n) = smallest prime p such that the Kronecker-Jacobi symbol K(k,p) = -1.
  * @author Sean A. Irvine
  */
 public class A092419 extends A000037 {

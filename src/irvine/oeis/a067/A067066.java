@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067037.
+ * A067066 Number of Gnutella users reachable with given connections and hops.
  * @author Sean A. Irvine
  */
 public class A067066 extends Sequence1 {

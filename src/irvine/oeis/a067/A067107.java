@@ -15,8 +15,7 @@ public class A067107 extends Sequence1 {
 
   @Override
   public Z next() {
-    ++mN;
-    mF = mF.multiply(Z.valueOf(mN));
-    return new Z(String.valueOf(mF.mod(9)) + (mN > 3 ? Z.TEN.pow(mF.divide(9).intValue()).subtract(1).toString() : ""));
+    mF = mF.multiply(Z.valueOf(++mN));
+    return new Z(mF.mod(9) + (mN > 3 ? Z.TEN.pow(mF.divide(9).intValue()).subtract(1).toString() : ""));
   }
 }

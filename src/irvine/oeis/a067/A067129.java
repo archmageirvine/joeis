@@ -1,0 +1,27 @@
+package irvine.oeis.a067;
+
+import irvine.factor.factor.Jaguar;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A067102.
+ * @author Sean A. Irvine
+ */
+public class A067129 extends Sequence1 {
+
+  private final Z[] mSigma = {Z.ONE, Z.THREE, Z.FOUR, Z.SEVEN, Z.SIX, Z.valueOf(12)};
+  private long mN = 6;
+
+  @Override
+  public Z next() {
+    while (true) {
+      final Z s = mSigma[0];
+      System.arraycopy(mSigma, 1, mSigma, 0, mSigma.length - 1);
+      mSigma[5] = Jaguar.factor(++mN).sigma();
+      if (s.add(mSigma[5]).equals(mSigma[2].multiply(3))) {
+        return Z.valueOf(mN - 3);
+      }
+    }
+  }
+}

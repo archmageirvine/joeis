@@ -14,10 +14,6 @@ public class A067103 extends Sequence1 {
   private final A019522 mSeq1 = new A019522();
   private final A007908 mSeq2 = new A007908();
 
-  /** Construct the sequence. */
-  public A067103() {
-  }
-
   @Override
   public Z next() {
     return mSeq1.next().divide(mSeq2.next());

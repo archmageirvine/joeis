@@ -1,6 +1,5 @@
 package irvine.oeis.a006;
 
-import irvine.math.z.Z;
 import irvine.oeis.a049.A049314;
 
 /**
@@ -9,8 +8,8 @@ import irvine.oeis.a049.A049314;
  */
 public class A006952 extends A049314 {
 
-  @Override
-  protected Z q() {
-    return Z.THREE;
+  /** Construct the sequence. */
+  public A006952() {
+    super(3);
   }
 }

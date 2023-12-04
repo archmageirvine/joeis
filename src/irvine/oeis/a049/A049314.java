@@ -2,9 +2,9 @@ package irvine.oeis.a049;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A049314 The number k(GL(n,q)) of conjugacy classes in GL(n,q), q=4.
@@ -15,9 +15,19 @@ public class A049314 extends MemoryFunction1Sequence<Z> {
   // After Alois P. Heinz
 
   private int mN = -1;
+  private final Z mQ;
 
-  protected Z q() {
-    return Z.FOUR;
+  /** Construct the sequence. */
+  public A049314() {
+    this(4);
+  }
+
+  /**
+   * Generic constructor with parameter.
+   * @param q qualifier
+   */
+  public A049314(final int q) {
+    mQ = Z.valueOf(q);
   }
 
   private final MemoryFunction1<Z> mB = new MemoryFunction1<>() {
@@ -28,7 +38,7 @@ public class A049314 extends MemoryFunction1Sequence<Z> {
       }
       Z sum = Z.ZERO;
       for (final Z d : Jaguar.factor(n).divisors()) {
-        sum = sum.add(Euler.phi(d).multiply(q().pow(n / d.intValueExact())));
+        sum = sum.add(Euler.phi(d).multiply(mQ.pow(n / d.intValueExact())));
       }
       return sum.divide(n).subtract(1);
     }

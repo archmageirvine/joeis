@@ -15,7 +15,7 @@ public class A067042 extends Sequence1 {
   public Z next() {
     while (true) {
       long m = ++mN;
-      long[] a = {1, 1};
+      final long[] a = {1, 1};
       int even = 0;
       while (m != 0) {
         a[even] *= m % 10;

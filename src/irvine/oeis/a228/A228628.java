@@ -6,7 +6,7 @@ import irvine.oeis.a061.A061601;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A228628 9&apos;s complement of prime(n).
+ * A228628 9's complement of prime(n).
  * @author Georg Fischer
  */
 public class A228628 extends SimpleTransformSequence {

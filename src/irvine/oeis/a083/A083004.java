@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a178.A178914;
 
 /**
- * A083004 Primes whose 10&apos;s complement is a square.
+ * A083004 Primes whose 10's complement is a square.
  * @author Georg Fischer
  */
 public class A083004 extends FilterSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A110039 Number of 3-regular labeled graphs on 2n vertices with no multiple edges, but loops are allowed. (3-regular = trivalent and a loop incident on a vertex counts as two edges.)
+ * A110039 Number of 3-regular labeled graphs on 2n vertices with no multiple edges, but loops are allowed. (3-regular = trivalent and a loop incident on a vertex counts as two edges.).
  * @author Georg Fischer
  */
 public class A110039 extends HolonomicRecurrence {

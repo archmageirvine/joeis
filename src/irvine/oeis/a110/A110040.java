@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A110040 Number of {2, 3}-regular graphs, i.e., labeled simple graphs (no multi-edges or loops) on n vertices, each of degree 2 or 3.
+ * A110040 Number of {2,3}-regular graphs, i.e., labeled simple graphs (no multi-edges or loops) on n vertices, each of degree 2 or 3.
  * @author Georg Fischer
  */
 public class A110040 extends HolonomicRecurrence {

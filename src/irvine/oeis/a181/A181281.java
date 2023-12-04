@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A181281 A version of Josephus problem: a(n) is the surviving integer under the following elimination process. Arrange 1, 2, 3,...,n in a circle, increasing clockwise. Starting with i=1, delete the integer 4 places clockwise from i. Repeat, counting 4 places from the
+ * A181281 A version of Josephus problem: a(n) is the surviving integer under the following elimination process. Arrange 1,2,3,...,n in a circle, increasing clockwise. Starting with i=1, delete the integer 4 places clockwise from i. Repeat, counting 4 places from the next undeleted integer, until only one integer remains.
  * @author Georg Fischer
  */
 public class A181281 extends TupleTransformSequence {

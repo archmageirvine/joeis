@@ -7,7 +7,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a061.A061601;
 
 /**
- * A109910 a(n) = 9&apos;s complement of digit reversal of n.
+ * A109910 a(n) = 9's complement of digit reversal of n.
  * @author Georg Fischer
  */
 public class A109910 extends LambdaSequence {

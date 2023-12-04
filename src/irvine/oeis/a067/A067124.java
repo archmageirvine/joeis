@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067102.
+ * A067124 Floor [sqrt{concatenation of first n squares}].
  * @author Sean A. Irvine
  */
 public class A067124 extends Sequence1 {

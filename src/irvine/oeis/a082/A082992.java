@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a178.A178914;
 
 /**
- * A082992 Primes whose 10&apos;s complement is a triangular number.
+ * A082992 Primes whose 10's complement is a triangular number.
  * @author Georg Fischer
  */
 public class A082992 extends FilterSequence {

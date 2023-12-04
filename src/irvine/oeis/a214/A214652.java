@@ -4,7 +4,7 @@ package irvine.oeis.a214;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A214652 a(n) = (a(n-1) + a(n-4))/gcd(a(n-1), a(n-4)) with a(1) = a(2) = a(3) = a(4) = 1
+ * A214652 a(n) = (a(n-1) + a(n-4))/gcd(a(n-1), a(n-4)) with a(1) = a(2) = a(3) = a(4) = 1.
  * @author Georg Fischer
  */
 public class A214652 extends TupleTransformSequence {

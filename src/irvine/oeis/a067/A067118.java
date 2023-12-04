@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067102.
+ * A067118 a(n) =floor[X/Y] where X= concatenation of first n even numbers in decreasing order and Y = that of first n odd numbers in increasing order.
  * @author Sean A. Irvine
  */
 public class A067118 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a263;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A263316 Number of lattice paths from (0, 0) to (n,n) which do not go above the diagonal x=y using steps (1,k), (k, 1) with k&gt;=2.
+ * A263316 Number of lattice paths from (0,0) to (n,n) which do not go above the diagonal x=y using steps (1,k), (k,1) with k&gt;=2.
  * @author Georg Fischer
  */
 public class A263316 extends HolonomicRecurrence {

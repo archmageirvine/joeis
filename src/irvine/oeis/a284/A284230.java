@@ -4,7 +4,7 @@ package irvine.oeis.a284;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A284230 Number of self-avoiding planar walks starting at (0, 0), ending at (n, 0), remaining in the first quadrant and using steps (0, 1), (1, 0), (1, 1), (-1, 1), and (1,-1) with the restriction that (0, 1) is never used below the diagonal and (1, 0) is never used above
+ * A284230 Number of self-avoiding planar walks starting at (0,0), ending at (n,0), remaining in the first quadrant and using steps (0,1), (1,0), (1,1), (-1,1), and (1,-1) with the restriction that (0,1) is never used below the diagonal and (1,0) is never used above the diagonal.
  * @author Georg Fischer
  */
 public class A284230 extends TupleTransformSequence {

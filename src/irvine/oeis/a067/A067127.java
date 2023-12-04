@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000010;
 
 /**
- * A067102.
+ * A067127 Composite numbers for which phi(n) &gt;= phi(k) for all composite k from 1 to n-1.
  * @author Sean A. Irvine
  */
 public class A067127 extends A000010 {

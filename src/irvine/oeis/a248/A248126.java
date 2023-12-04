@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A248126 n squared with each digit repeated.
+ * A248126 a(n) = n^2 with each digit repeated.
  * @author Georg Fischer
  */
 public class A248126 extends LambdaSequence {

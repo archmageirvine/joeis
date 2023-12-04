@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a061.A061601;
 
 /**
- * A088339 Numbers n such that n multiplied by (the 9&apos;s complement of n) + 1 is a prime. If n has d digits then 9&apos;s complement of n is 10^d -(n+1).
+ * A088339 Numbers n such that n multiplied by (the 9's complement of n) + 1 is a prime. If n has d digits then 9's complement of n is 10^d -(n+1).
  * @author Georg Fischer
  */
 public class A088339 extends FilterSequence {

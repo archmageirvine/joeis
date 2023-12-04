@@ -5,7 +5,7 @@ import irvine.oeis.a061.A061601;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A110394 a(1) = 1; a(n) = n times (9&apos;s complement of a(n-1)).
+ * A110394 a(1) = 1; a(n) = n times (9's complement of a(n-1)).
  * @author Georg Fischer
  */
 public class A110394 extends TupleTransformSequence {

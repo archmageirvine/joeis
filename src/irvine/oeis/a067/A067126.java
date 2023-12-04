@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000010;
 
 /**
- * A067102.
+ * A067126 Numbers for which phi(n) &gt;= phi(k) for all k = 1 to n-1.
  * @author Sean A. Irvine
  */
 public class A067126 extends A000010 {

@@ -4,7 +4,7 @@ package irvine.oeis.a263;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A263173 Number of Dyck paths of semilength n having exactly two (possibly overlapping) DUDU&apos;s (with U=(1, 1), D=(1,-1)).
+ * A263173 Number of Dyck paths of semilength n having exactly two (possibly overlapping) DUDU's (with U=(1,1), D=(1,-1)).
  * @author Georg Fischer
  */
 public class A263173 extends HolonomicRecurrence {

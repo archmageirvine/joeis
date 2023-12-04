@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067102.
+ * A067105 a(n) = floor[ X/Y], where X = concatenation of k^k from 1 up to n^n and Y = concatenation of 1, ..., n.
  * @author Sean A. Irvine
  */
 public class A067105 extends Sequence1 {

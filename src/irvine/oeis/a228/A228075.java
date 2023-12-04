@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a178.A178914;
 
 /**
- * A228075 Numbers n whose 10&apos;s complement is prime, i.e., 10^k-n, where k is the number of digits of n, is prime.
+ * A228075 Numbers n whose 10's complement is prime, i.e., 10^k-n, where k is the number of digits of n, is prime.
  * @author Georg Fischer
  */
 public class A228075 extends FilterSequence {

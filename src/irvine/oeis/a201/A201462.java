@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a061.A061601;
 
 /**
- * A201462 Numbers that are not coprime to their 9&apos;s complement.
+ * A201462 Numbers that are not coprime to their 9's complement.
  * @author Georg Fischer
  */
 public class A201462 extends FilterSequence {

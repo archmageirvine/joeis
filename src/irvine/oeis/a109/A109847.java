@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a061.A061601;
 
 /**
- * A109847 Least common multiple of n and its 9&apos;s complement.
+ * A109847 Least common multiple of n and its 9's complement.
  * @author Georg Fischer
  */
 public class A109847 extends LambdaSequence {

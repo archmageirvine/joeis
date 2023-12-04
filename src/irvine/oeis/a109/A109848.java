@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a061.A061601;
 
 /**
- * A109848 Highest common factor of n and its 9&apos;s complement.
+ * A109848 Highest common factor of n and its 9's complement.
  * @author Georg Fischer
  */
 public class A109848 extends LambdaSequence {

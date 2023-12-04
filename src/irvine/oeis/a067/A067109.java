@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000142;
 
 /**
- * A067102.
+ * A067109 Number of occurrences of the string n in n! (A000142).
  * @author Sean A. Irvine
  */
 public class A067109 extends Sequence1 {

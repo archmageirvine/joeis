@@ -4,7 +4,7 @@ package irvine.oeis.a237;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A237622 Interpolation polynomial through n points (0, 1), (1, 1), ..., (n-2, 1) and (n-1,n) evaluated at 2n, a(0)=1.
+ * A237622 Interpolation polynomial through n points (0,1), (1,1), ..., (n-2,1) and (n-1,n) evaluated at 2n, a(0)=1.
  * @author Georg Fischer
  */
 public class A237622 extends HolonomicRecurrence {

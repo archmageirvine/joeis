@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a178.A178914;
 
 /**
- * A083017 Primes whose 10&apos;s complement is a palindrome.
+ * A083017 Primes whose 10's complement is a palindrome.
  * @author Georg Fischer
  */
 public class A083017 extends FilterSequence {

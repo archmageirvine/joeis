@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.a007.A007908;
 
 /**
- * A067102.
+ * A067104 a(n) = floor[ X/Y], where X = concatenation of first n factorials and Y = concatenation of first n natural numbers.
  * @author Sean A. Irvine
  */
 public class A067104 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 
 /**
- * A067102.
+ * A067120 a(n) =floor[X/Y] where X= concatenation of first n ODD numbers in increasing order and Y = n-th triangular number.
  * @author Sean A. Irvine
  */
 public class A067120 extends Sequence1 {

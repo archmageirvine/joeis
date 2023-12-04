@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A118378 a(n+1) = a(n)^2 - (-1)^n * binomial(n+2, 2) with a(1) = 1.
+ * A118378 a(n+1) = a(n)^2 - (-1)^n * binomial(n+2,2) with a(1) = 1.
  * @author Georg Fischer
  */
 public class A118378 extends TupleTransformSequence {

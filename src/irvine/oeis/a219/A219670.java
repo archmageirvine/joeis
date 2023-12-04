@@ -4,7 +4,7 @@ package irvine.oeis.a219;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A219670 Number of n-step paths on cubic lattice from (0, 0, 0) to (1, 0, 0) with moves in any direction on {-1, 0, 1}^3 and zero moves allowed.
+ * A219670 Number of n-step paths on cubic lattice from (0,0,0) to (1,0,0) with moves in any direction on {-1,0,1}^3 and zero moves allowed.
  * @author Georg Fischer
  */
 public class A219670 extends HolonomicRecurrence {

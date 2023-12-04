@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067102.
+ * A067102 Floor[ X/Y] where X = concatenation of the squares and Y = concatenation of natural numbers.
  * @author Sean A. Irvine
  */
 public class A067102 extends Sequence1 {

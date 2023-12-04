@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.a049.A049314;
 
 /**
- * A182608 Number of conjugacy classes in GL(n, 17).
+ * A182608 Number of conjugacy classes in GL(n,17).
  * @author Georg Fischer
  */
 public class A182608 extends A049314 {

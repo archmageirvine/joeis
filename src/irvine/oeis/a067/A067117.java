@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000142;
 
 /**
- * A067102.
+ * A067117 a(n) = floor((concatenation of first n natural numbers)/ (n!)).
  * @author Sean A. Irvine
  */
 public class A067117 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A153280 Eigensequence of triangle A153279
+ * A153280 Eigensequence of triangle A153279.
  * @author Georg Fischer
  */
 public class A153280 extends TupleTransformSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A098750 a(n+1) = a(n) + 10&apos;s complement of first digit of a(n); a(0) = 0.
+ * A098750 a(n+1) = a(n) + 10's complement of first digit of a(n); a(0) = 0.
  * @author Georg Fischer
  */
 public class A098750 extends TupleTransformSequence {

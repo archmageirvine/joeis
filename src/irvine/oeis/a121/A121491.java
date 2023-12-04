@@ -4,7 +4,7 @@ package irvine.oeis.a121;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A121491 An historic sequence: Lehmer&apos;s linear congruential pseudorandom numbers.
+ * A121491 An historic sequence: Lehmer's linear congruential pseudorandom numbers.
  * @author Georg Fischer
  */
 public class A121491 extends TupleTransformSequence {

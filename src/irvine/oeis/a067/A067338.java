@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A067338 Divide the natural numbers in sets of consecutive numbers, starting with {1, 2}, each set with number of elements equal to the sum of elements of the preceding set. The number of elements in the n-th set gives a(n).
+ * A067338 Divide the natural numbers in sets of consecutive numbers, starting with {1,2}, each set with number of elements equal to the sum of elements of the preceding set. The number of elements in the n-th set gives a(n).
  * @author Georg Fischer
  */
 public class A067338 extends TupleTransformSequence {

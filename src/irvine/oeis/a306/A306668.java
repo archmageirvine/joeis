@@ -4,7 +4,7 @@ package irvine.oeis.a306;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A306668 Difference between numbers of binary bracketings of 0^0^...^0 with n 0&apos;s giving the result 1 and those giving the result 0, with conventions that 0^0=1^0=1^1=1, 0^1=0.
+ * A306668 Difference between numbers of binary bracketings of 0^0^...^0 with n 0's giving the result 1 and those giving the result 0, with conventions that 0^0=1^0=1^1=1, 0^1=0.
  * @author Georg Fischer
  */
 public class A306668 extends HolonomicRecurrence {

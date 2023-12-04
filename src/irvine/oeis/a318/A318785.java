@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a061.A061601;
 
 /**
- * A318785 Numbers which are prime if each digit is replaced by its 9&apos;s complement.
+ * A318785 Numbers which are prime if each digit is replaced by its 9's complement.
  * @author Georg Fischer
  */
 public class A318785 extends FilterSequence {

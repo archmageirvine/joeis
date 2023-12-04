@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A228248 Number of 2n-step lattice paths from (0, 0) to (0, 0) using steps in {N, S, E, W} starting with East, then always moving straight ahead or turning left.
+ * A228248 Number of 2n-step lattice paths from (0,0) to (0,0) using steps in {N, S, E, W} starting with East, then always moving straight ahead or turning left.
  * @author Georg Fischer
  */
 public class A228248 extends HolonomicRecurrence {

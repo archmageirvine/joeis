@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067102.
+ * A067116 Floor(decimal concatenation of first n natural numbers/their sum).
  * @author Sean A. Irvine
  */
 public class A067116 extends Sequence1 {

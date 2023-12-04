@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A229414 Number of set partitions of {1,..., 3n} into sets of size at most 3.
+ * A229414 Number of set partitions of {1,...,3n} into sets of size at most 3.
  * @author Georg Fischer
  */
 public class A229414 extends HolonomicRecurrence {

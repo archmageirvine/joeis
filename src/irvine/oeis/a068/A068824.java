@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a178.A178914;
 
 /**
- * A068824 a(n) = n*c(n), where c(n) is the 10&apos;s complement of n.
+ * A068824 a(n) = n*c(n), where c(n) is the 10's complement of n.
  * @author Georg Fischer
  */
 public class A068824 extends LambdaSequence {

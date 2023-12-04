@@ -6,7 +6,7 @@ import irvine.oeis.a325.A325907;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A327266 Product of A325907(n) and its 9&apos;s complement.
+ * A327266 Product of A325907(n) and its 9's complement.
  * @author Georg Fischer
  */
 public class A327266 extends SimpleTransformSequence {

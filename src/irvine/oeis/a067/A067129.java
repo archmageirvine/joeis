@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067102.
+ * A067129 Numbers n such that sigma(n-3) + sigma(n+3) = sigma(2n).
  * @author Sean A. Irvine
  */
 public class A067129 extends Sequence1 {

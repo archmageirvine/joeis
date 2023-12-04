@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067102.
+ * A067123 Floor[X/Y] where X = concatenation of first n cubes in increasing order and Y = concatenation of first n squares.
  * @author Sean A. Irvine
  */
 public class A067123 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A067102.
+ * A067131 Number of elements in the largest set of divisors of n which are in arithmetic progression.
  * @author Sean A. Irvine
  */
 public class A067131 extends Sequence1 {

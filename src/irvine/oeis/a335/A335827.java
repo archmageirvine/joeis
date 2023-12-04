@@ -4,7 +4,7 @@ package irvine.oeis.a335;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A335827 Number of permutations of {1, 2,...,n} having equal numbers of 1-cycles and 2-cycles.
+ * A335827 Number of permutations of {1,2,...,n} having equal numbers of 1-cycles and 2-cycles.
  * @author Georg Fischer
  */
 public class A335827 extends HolonomicRecurrence {

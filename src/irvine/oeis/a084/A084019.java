@@ -6,7 +6,7 @@ import irvine.oeis.a061.A061601;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A084019 a(n) = 9&apos;s complement of n-th palindrome (A002113).
+ * A084019 a(n) = 9's complement of n-th palindrome (A002113).
  * @author Georg Fischer
  */
 public class A084019 extends SimpleTransformSequence {

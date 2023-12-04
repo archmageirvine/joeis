@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a178.A178914;
 
 /**
- * A083989 Concatenation of prime k and its 10&apos;s complement is a prime.
+ * A083989 Concatenation of prime k and its 10's complement is a prime.
  * @author Georg Fischer
  */
 public class A083989 extends FilterSequence {

@@ -9,7 +9,7 @@ import irvine.oeis.SequenceFactory;
 import irvine.oeis.UnimplementedException;
 
 /**
- * A080888 Number of compositions of n into Fibonacci numbers (1 counted as two distinct Fibonacci numbers).
+ * A080888 Number of compositions into Fibonacci numbers (1 counted as two distinct Fibonacci numbers).
  * @author Georg Fischer
  */
 public class A080888 extends AbstractSequence implements DirectSequence {

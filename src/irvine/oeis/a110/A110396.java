@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a178.A178914;
 
 /**
- * A110396 10&apos;s complement factorial of n: a(n) = (10&apos;s complement of n)*(10&apos;s complement of n-1)*...*(10&apos;s complement of 2)*(10&apos;s complement of 1).
+ * A110396 10's complement factorial of n: a(n) = (10's complement of n)*(10's complement of n-1)*...*(10's complement of 2)*(10's complement of 1).
  * @author Georg Fischer
  */
 public class A110396 extends LambdaSequence {

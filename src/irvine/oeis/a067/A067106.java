@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067102.
+ * A067106 a(n) = smallest number whose digit product equals n!/m where m is the product of all prime factors &gt; 7 of n! (with multiplicity).
  * @author Sean A. Irvine
  */
 public class A067106 extends Sequence1 {

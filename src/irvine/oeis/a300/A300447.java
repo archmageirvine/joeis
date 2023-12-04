@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a055.A055120;
 
 /**
- * A300447 Numbers x such that sigma(x) = sigma(y), with x&lt;&gt;y, where y is the 10&apos;s complement mod 10 of the digits of x.
+ * A300447 Numbers x such that sigma(x) = sigma(y), with x&lt;&gt;y, where y is the 10's complement mod 10 of the digits of x.
  * @author Georg Fischer
  */
 public class A300447 extends FilterSequence {

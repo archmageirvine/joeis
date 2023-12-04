@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A067100.
+ * A067100 Floor[radius of the inscribed-circle of a regular n-gon with unit sides].
  * @author Sean A. Irvine
  */
 public class A067100 extends Sequence3 {

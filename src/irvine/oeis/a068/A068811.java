@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a178.A178914;
 
 /**
- * A068811 Numbers k such that k and its 10&apos;s complement (10^d-k, where d is the number of digits in k) are both primes
+ * A068811 Numbers k such that k and its 10's complement (10^d-k, where d is the number of digits in k) are both primes.
  * @author Georg Fischer
  */
 public class A068811 extends FilterSequence {

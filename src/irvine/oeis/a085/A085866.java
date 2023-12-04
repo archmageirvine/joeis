@@ -5,7 +5,7 @@ import irvine.math.z.Euler;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A085866 a(1) = 3, a(n+1) = a(n)*phi(a(n)), where phi(n) is Euler&apos;s totient function.
+ * A085866 a(1) = 3, a(n+1) = a(n)*phi(a(n)), where phi(n) is Euler's totient function.
  * @author Georg Fischer
  */
 public class A085866 extends TupleTransformSequence {

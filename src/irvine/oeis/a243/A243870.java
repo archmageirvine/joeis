@@ -4,7 +4,7 @@ package irvine.oeis.a243;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A243870 Number of Dyck paths of semilength n avoiding the consecutive steps UDUUUDDDUD (with U=(1, 1), D=(1,-1)).
+ * A243870 Number of Dyck paths of semilength n avoiding the consecutive steps UDUUUDDDUD (with U=(1,1), D=(1,-1)).
  * @author Georg Fischer
  */
 public class A243870 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a178.A178914;
 
 /**
- * A068810 Numbers n such that n and its 10&apos;s complement are both squares, i.e., n and 10^k - n (where k is the number of digits in n) are squares.
+ * A068810 Numbers n such that n and its 10's complement are both squares, i.e., n and 10^k - n (where k is the number of digits in n) are squares.
  * @author Georg Fischer
  */
 public class A068810 extends FilterSequence {

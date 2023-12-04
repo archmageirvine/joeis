@@ -122,7 +122,6 @@ public final class IntegerPartition {
    * Convert a partition into an array with counts with parts of given size.
    * It is assumed the resulting array is large enough. Position 0 of the
    * array is always left as 0.
-   *
    * @param partition the partition
    * @param counts the count form
    */
@@ -135,7 +134,6 @@ public final class IntegerPartition {
 
   /**
    * Compute the order of a partition in counts form.
-   *
    * @param counts partition in counts form
    * @return order of partition
    */
@@ -225,6 +223,9 @@ public final class IntegerPartition {
    * @return dual of the partition
    */
   public static int[] dual(final int[] p) {
+    if (p.length == 0) {
+      return p;
+    }
     final int[] dual = new int[p[0]];
     for (int k = 0, j = p.length - 1; k < dual.length; ++k) {
       while (p[j] <= k) {

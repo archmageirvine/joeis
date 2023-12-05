@@ -16,6 +16,7 @@ public class A067689 extends A005249 {
   /** Construct the sequence. */
   public A067689() {
     super(1);
+    setOffset(0);
   }
 
   private final Sequence mSeq = new A000984();

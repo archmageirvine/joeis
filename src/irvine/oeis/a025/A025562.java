@@ -11,6 +11,10 @@ public class A025562 extends A025560 {
   private Z mF = Z.ONE;
   private long mN = 0;
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     mF = mF.multiply(++mN);

@@ -1,14 +1,14 @@
 package irvine.oeis.a066;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicIntArray;
 
 /**
  * A066956 a(n) is the number of ways of placing '+' and '-' among the digits 123456789 so that the result of the expression is n, '-' before 1 not allowed.
  * @author Sean A. Irvine
  */
-public class A066956 extends Sequence1 {
+public class A066956 extends Sequence0 {
 
   private final DynamicIntArray mA = new DynamicIntArray();
   private long mN = -1;

@@ -10,6 +10,6 @@ public class A067075 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A067075() {
-    super(1, new A067074(), k -> k.root(3));
+    super(0, new A067074(), k -> k.root(3));
   }
 }

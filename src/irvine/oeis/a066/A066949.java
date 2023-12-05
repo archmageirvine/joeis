@@ -1,13 +1,13 @@
 package irvine.oeis.a066;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A066949 Take the sum of the previous two terms, subtract n if this sum is greater than n.
  * @author Sean A. Irvine
  */
-public class A066949 extends Sequence1 {
+public class A066949 extends Sequence0 {
 
   private Z mA = Z.NEG_ONE;
   private Z mB = Z.ONE;

@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A066847 Integers of the form m! + n!, m and n = positive integers.
  * @author Sean A. Irvine
  */
-public class A066847 extends Sequence1 {
+public class A066847 extends Sequence0 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private int mN = 1;

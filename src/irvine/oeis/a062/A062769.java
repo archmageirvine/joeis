@@ -1,14 +1,14 @@
 package irvine.oeis.a062;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a003.A003285;
 
 /**
  * A062769 Smallest number m such that the continued fraction expansion of sqrt(m) has period 2n + 1.
  * @author Sean A. Irvine
  */
-public class A062769 extends Sequence1 {
+public class A062769 extends Sequence0 {
 
   private long mN = -1;
 

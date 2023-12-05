@@ -2,13 +2,13 @@ package irvine.oeis.a029;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A029800 Numbers k such that k, k^2 and k^3 all have the same set of digits.
  * @author Sean A. Irvine
  */
-public class A029800 extends Sequence0 {
+public class A029800 extends Sequence1 {
 
   private Z mN = Z.NEG_ONE;
 

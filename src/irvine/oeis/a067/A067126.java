@@ -11,6 +11,10 @@ public class A067126 extends A000010 {
 
   private Z mMax = Z.ZERO;
 
+  {
+    setOffset(0);
+  }
+
   @Override
   public Z next() {
     while (true) {

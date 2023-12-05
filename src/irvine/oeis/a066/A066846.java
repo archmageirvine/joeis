@@ -3,13 +3,13 @@ package irvine.oeis.a066;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A066846 Numbers of the form a^a + b^b, a &gt;= b &gt; 0.
  * @author Sean A. Irvine
  */
-public class A066846 extends Sequence1 {
+public class A066846 extends Sequence0 {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private long mN = 1;

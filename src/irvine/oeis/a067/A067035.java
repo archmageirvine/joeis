@@ -5,13 +5,13 @@ import java.util.TreeMap;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A067035 n sets a new record for the number of integers k such that n = k + reverse(k).
  * @author Sean A. Irvine
  */
-public class A067035 extends Sequence0 {
+public class A067035 extends Sequence1 {
 
   private final TreeMap<Long, Long> mValues = new TreeMap<>();
   private long mN = -1;

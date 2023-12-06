@@ -2298,3 +2298,20 @@ A066833 Continued fraction expansion of Product_{p prime} (1 - 1/(p^4 - p^3)).
 A066834 Continued fraction expansion of Product_{p prime} (1 - 1/(p^5 - p^4)).
 A066951 Number of nonisomorphic connected graphs that can be drawn in the plane using n unit-length edges.
 A067009 Continued fraction expansion of Product_{p prime} (1 + 1/(p+1)^2). [parent sequence too slow]
+A067151 Number of regions in regular n-gon which are quadrilaterals (4-gons) when all its diagonals are drawn
+A067152	Number of regions in regular n-gon which are pentagons.
+A067153 Number of regions in regular n-gon which are hexagons
+A067154 Number of regions in regular n-gon which are heptagons
+A067155 Number of regions in regular n-gon which are octagons when all its diagonals are drawn
+A067156 Number of regions in regular n-gon which are 9-gons.
+A067157 Number of regions in regular n-gon which are 10-gons
+A067158 Number of regions in regular n-gon which are 11-gons.
+A067159 Number of regions in regular n-gon which are 12-gons.
+A067162 a(n) = A062361(n)/n
+A067163	A067151(n)/n.
+A067164	A067152(n)/n.
+A067165	A067153(n)/n.
+A067166	A067154(n)/n.
+A067167	A067155(n)/n.
+A067168	A067156(n)/n.
+A067169	A067157(n)/n.

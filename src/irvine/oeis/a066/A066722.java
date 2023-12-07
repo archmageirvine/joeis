@@ -11,11 +11,13 @@ import irvine.oeis.Sequence1;
 public class A066722 extends Sequence1 {
 
   private final long mWays;
+  private final long mAdd;
   private final Fast mPrime = new Fast();
   private long mN = 0;
 
   protected A066722(final long ways) {
     mWays = ways;
+    mAdd = (ways & 1) == 0 ? 2 : 1;
   }
 
   /** Construct the sequence. */
@@ -25,7 +27,7 @@ public class A066722 extends Sequence1 {
 
   private boolean is(final long n) {
     long cnt = 0;
-    for (long p = 3; 2 * p <= n; p = mPrime.nextPrime(p)) {
+    for (long p = 2; 2 * p <= n; p = mPrime.nextPrime(p)) {
       if (mPrime.isPrime(n - p) && ++cnt > mWays) {
         return false;
       }
@@ -36,7 +38,7 @@ public class A066722 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      mN += 2;
+      mN += mAdd;
       if (is(mN)) {
         return Z.valueOf(mN);
       }

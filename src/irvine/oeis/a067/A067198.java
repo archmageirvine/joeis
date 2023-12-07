@@ -1,0 +1,27 @@
+package irvine.oeis.a067;
+
+import irvine.factor.factor.Jaguar;
+import irvine.factor.util.FactorSequence;
+import irvine.math.z.Euler;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A067185.
+ * @author Sean A. Irvine
+ */
+public class A067198 extends Sequence1 {
+
+  private long mN = 4;
+
+  @Override
+  public Z next() {
+    while (true) {
+      final FactorSequence fs = Jaguar.factor(++mN);
+      if (fs.sigma().equals(fs.phi().add(Euler.phi(mN - 1)))) {
+        return Z.valueOf(mN);
+      }
+    }
+  }
+}
+

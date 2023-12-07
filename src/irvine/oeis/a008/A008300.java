@@ -36,15 +36,10 @@ public class A008300 extends AbstractSequence {
   private int mN = -1;
   private int mM = 0;
 
-  private void acc(final Map<Polynomial<Z>, Z> m, final Polynomial<Z> p, final Z v) {
-    final Z t = m.get(p);
-    m.put(p, t == null ? v : t.add(v));
-  }
-
   private void recurse(final Map<Polynomial<Z>, Z> m, final int i, final Polynomial<Z> p, final Z v, final int e) {
     if (i < 0) {
       if (e == 0) {
-        acc(m, p, v);
+        m.merge(p, v, Z::add);
       }
     } else {
       final Z t = p.coeff(i);

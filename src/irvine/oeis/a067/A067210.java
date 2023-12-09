@@ -1,6 +1,7 @@
 package irvine.oeis.a067;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -8,36 +9,64 @@ import java.util.Map;
 import irvine.math.partitions.FixedLengthPartition;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 import irvine.util.Permutation;
 
 /**
- * A008300.
+ * A067210 Number of n X n 0..2 matrices with all row and column sums equal.
  * @author Sean A. Irvine
  */
-public class A067210 extends Sequence1 {
+public class A067210 extends AbstractSequence {
 
-  // Works but is too slow to reproduce existing terms
+  private final int mL;
+  private int mN;
 
-  // todo there is some symmetry that could double speed, but that's not enough
-  // todo perhaps the Permutation part can be "counted" rather than explicit?
-
-  private int mL = 4;
-  private int mN = 0;
-
-  private List<Integer> addIfAllowed(final int k, final List<Integer> a, final List<Integer> b) {
-    final ArrayList<Integer> sum = new ArrayList<>();
-    for (int j = 0; j < a.size(); ++j) {
-      final int s = a.get(j) + b.get(j);
-      if (s > k) {
-        return null;
-      }
-      sum.add(s);
-    }
-    return sum;
+  /**
+   * Construct with given offset and maximum element.
+   * @param offset offset
+   * @param maxElement maximum element
+   */
+  public A067210(final int offset, final int maxElement) {
+    super(offset);
+    mL = maxElement;
+    mN = offset - 1;
   }
 
-  private Z t(final int n, final int k) {
+  /** Construct the sequence. */
+  public A067210() {
+    this(1, 2);
+  }
+
+  private void combine(final Map<List<Integer>, Z> res, final List<Integer> a, final Z v, final List<Integer> b, final int min, final int max) {
+    for (int k = 0; k < a.size(); ++k) {
+      final int c = a.get(k) + b.get(k);
+      if (c > max || c < min) {
+        return;
+      }
+    }
+    final ArrayList<Integer> lst = new ArrayList<>();
+    for (int k = 0; k < a.size(); ++k) {
+      lst.add(a.get(k) + b.get(k));
+    }
+    Collections.sort(lst);
+    res.merge(lst, v, Z::add);
+  }
+
+  private void combineList(final Map<List<Integer>, Z> res, final List<Integer> a, final Z v, final List<List<Integer>> b, final int min, final int max) {
+    for (final List<Integer> t : b) {
+      combine(res, a, v, t, min, max);
+    }
+  }
+
+  private Map<List<Integer>, Z> combineList(final Map<List<Integer>, Z> a, final List<List<Integer>> b, final int min, final int max) {
+    final Map<List<Integer>, Z> res = new HashMap<>();
+    for (final Map.Entry<List<Integer>, Z> e : a.entrySet()) {
+      combineList(res, e.getKey(), e.getValue(), b, min, max);
+    }
+    return res;
+  }
+
+  private List<List<Integer>> getCompositions(final int n, final int k) {
     final List<List<Integer>> c = new ArrayList<>();
     final FixedLengthPartition part = new FixedLengthPartition(k, n, 0, mL);
     int[] p;
@@ -52,25 +81,21 @@ public class A067210 extends Sequence1 {
         c.add(lst);
       }
     }
-    //System.out.println("(" + n + "," + k + ") -> " + c);
-    Map<List<Integer>, Z> cnts = new HashMap<>();
-    for (final List<Integer> v : c) {
-      cnts.put(v, Z.ONE);
+    return c;
+  }
+
+  private Z t(final int n, final int k) {
+    final List<List<Integer>> c = getCompositions(n, k);
+    final List<Integer> e = new ArrayList<>();
+    for (int j = 0; j < n; ++j) {
+      e.add(0);
     }
-    for (int r = 1; r < n; ++r) {
-      Map<List<Integer>, Z> newCnts = new HashMap<>();
-      for (final Map.Entry<List<Integer>, Z> e : cnts.entrySet()) {
-        for (final List<Integer> f : c) {
-          final List<Integer> add = addIfAllowed(k, e.getKey(), f);
-          if (add != null) {
-            newCnts.merge(add, e.getValue(), Z::add);
-          }
-        }
-      }
-      cnts = newCnts;
+    Map<List<Integer>, Z> cnts = Collections.singletonMap(e, Z.ONE);
+    for (int r = 0; r < n; ++r) {
+      final int lo = k - (n - r) * mL;
+      cnts = combineList(cnts, c, lo, k);
     }
     assert cnts.size() == 1;
-//    System.out.println(cnts);
     return ZUtils.sum(cnts.values());
   }
 
@@ -78,8 +103,10 @@ public class A067210 extends Sequence1 {
   public Z next() {
     ++mN;
     Z sum = Z.ZERO;
-    for (int k = 0; k <= mL * mN; ++k) {
-      sum = sum.add(t(mN, k));
+    // / 2 exploits symmetry
+    for (int k = 0; k <= mL * mN / 2; ++k) {
+      final Z t = t(mN, k);
+      sum = sum.add(2 * k == mL * mN ? t : t.multiply2());
     }
     return sum;
   }

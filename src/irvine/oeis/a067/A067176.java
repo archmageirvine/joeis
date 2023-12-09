@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A067081.
+ * A067176 A triangle of generalized Stirling numbers: sum of consecutive terms in the harmonic sequence multiplied by the product of their denominators.
  * @author Sean A. Irvine
  */
 public class A067176 extends Sequence0 {

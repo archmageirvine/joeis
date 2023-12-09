@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A067081.
+ * A067147 Triangle of coefficients for expressing x^n in terms of Hermite polynomials.
  * @author Sean A. Irvine
  */
 public class A067147 extends Sequence0 {

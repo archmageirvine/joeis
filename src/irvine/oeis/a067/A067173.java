@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A067081.
+ * A067173 Numbers n such that the sum of the prime factors of n equals the product of the digits of n.
  * @author Sean A. Irvine
  */
 public class A067173 extends Sequence1 {

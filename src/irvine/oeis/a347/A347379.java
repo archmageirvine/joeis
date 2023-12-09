@@ -7,7 +7,7 @@ import irvine.oeis.a108.A108951;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A347379 M√∂bius transform of A108951, the primorial inflation of n.
+ * A347379 M\u00f6bius transform of A108951, the primorial inflation of n.
  * @author Georg Fischer
  */
 public class A347379 extends MobiusTransformSequence {

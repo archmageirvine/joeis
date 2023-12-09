@@ -7,7 +7,7 @@ import irvine.oeis.a286.A286449;
 import irvine.oeis.transform.PairTransformSequence;
 
 /**
- * A286593 Compound filter (the length of rightmost run of 1&apos;s in base-2 &amp; deficiency/abundance): a(n) = P(A089309(n), A286449(n)), where P(n,k) is sequence A000027 used as a pairing function.
+ * A286593 Compound filter (the length of rightmost run of 1's in base-2 &amp; deficiency/abundance): a(n) = P(A089309(n), A286449(n)), where P(n,k) is sequence A000027 used as a pairing function.
  * @author Georg Fischer
  */
 public class A286593 extends PairTransformSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067081.
+ * A067150 Number of integers i=1,2,...,n such that (n,i) has Property F3*, i.e., i and n are consecutive terms of a sequence b(k) satisfying b(1)=1, b(n) = (b(n-1) OR 2*b(n-1)) + b(n-2), where the OR is taken bitwise.
  * @author Sean A. Irvine
  */
 public class A067150 extends Sequence1 {

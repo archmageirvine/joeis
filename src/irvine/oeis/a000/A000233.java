@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A000233 Generalized class numbers.
+ * A000233 Generalized class numbers c_(n,1).
  * @author Sean A. Irvine
  */
 public class A000233 extends AbstractSequence {

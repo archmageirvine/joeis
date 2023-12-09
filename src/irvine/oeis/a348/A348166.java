@@ -6,7 +6,7 @@ import irvine.oeis.a338.A338754;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A348166 a(n) = abs(A020338(n)-A338754(n))
+ * A348166 a(n) = abs(A020338(n)-A338754(n)).
  * @author Georg Fischer
  */
 public class A348166 extends TupleTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008300;
 
 /**
- * A067185.
+ * A067209 Number of n X n 0..1 matrices with all row and column sums equal.
  * @author Sean A. Irvine
  */
 public class A067209 extends A008300 {

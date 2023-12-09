@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067081.
+ * A067174 Product of the sum of all the subsets of the numbers from 1 to n.
  * @author Sean A. Irvine
  */
 public class A067174 extends Sequence1 {

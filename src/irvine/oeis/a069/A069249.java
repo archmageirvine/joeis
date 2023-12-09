@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a062.A062354;
 
 /**
- * A069249 n^2-phi(n)*sigma(n).
+ * A069249 a(n) = n^2 - phi(n)*sigma(n).
  * @author Georg Fischer
  */
 public class A069249 extends AbstractSequence {

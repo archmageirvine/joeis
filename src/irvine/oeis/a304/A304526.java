@@ -7,7 +7,7 @@ import irvine.oeis.a064.A064664;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A304526 M√∂bius transform of A064664, the inverse of EKG-sequence.
+ * A304526 M\u00f6bius transform of A064664, the inverse of EKG-sequence.
  * @author Georg Fischer
  */
 public class A304526 extends MobiusTransformSequence {

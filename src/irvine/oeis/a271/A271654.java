@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A271654 a(n)=Sum_{k|n} binomial(n-1,k-1).
+ * A271654 a(n) = Sum_{k|n} binomial(n-1,k-1).
  * a(n)=sumdiv(n,k,binom(n-1,k-1))
  * @author Georg Fischer
  */

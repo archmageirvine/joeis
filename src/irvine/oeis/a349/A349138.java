@@ -6,7 +6,7 @@ import irvine.oeis.a349.A349137;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
- * A349138 Inverse M√∂bius transform of A349137, where A349137(n) = phi(A003602(n)).
+ * A349138 Inverse M\u00f6bius transform of A349137, where A349137(n) = phi(A003602(n)).
  * @author Georg Fischer
  */
 public class A349138 extends InverseMobiusTransformSequence {

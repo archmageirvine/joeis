@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A067185.
+ * A067192 Composite c such that sigma(c)==2 (mod phi(c)).
  * @author Sean A. Irvine
  */
 public class A067192 extends A002808 {

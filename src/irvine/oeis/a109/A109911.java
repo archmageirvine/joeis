@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterSequence;
 
 /**
- * A109911 Numbers n such that A109910(n) = n; that is, the 9&apos;s complement of the digit reversal of n is n.
+ * A109911 Numbers n such that A109910(n) = n; that is, the 9's complement of the digit reversal of n is n.
  * @author Georg Fischer
  */
 public class A109911 extends FilterSequence {

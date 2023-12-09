@@ -6,7 +6,7 @@ import irvine.oeis.a181.A181819;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
- * A358223 Inverse M√∂bius transform of A181819, prime shadow function.
+ * A358223 Inverse M\u00f6bius transform of A181819, prime shadow function.
  * @author Georg Fischer
  */
 public class A358223 extends InverseMobiusTransformSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A067099.
+ * A067137 a(n) is the smallest number m such that n^(1/m) = 1.(leading zeros)n...
  * @author Sean A. Irvine
  */
 public class A067137 extends Sequence2 {

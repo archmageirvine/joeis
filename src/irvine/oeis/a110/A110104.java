@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A110104 a(n) is the number of coverings of 1..n by cyclic words of length 3n, such that each value from 1 to n appears precisely twice. That is, the union of all the letters in all of the words of a given covering is the multiset {1, 1, 2, 2,...,n,n}. No repeats of w
+ * A110104 a(n) is the number of coverings of 1..n by cyclic words of length 3n, such that each value from 1 to n appears precisely twice. That is, the union of all the letters in all of the words of a given covering is the multiset {1,1,2,2,...,n,n}. No repeats of words are allowed in a given covering.
  * @author Georg Fischer
  */
 public class A110104 extends HolonomicRecurrence {

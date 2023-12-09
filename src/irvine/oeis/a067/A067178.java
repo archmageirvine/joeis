@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a056.A056991;
 
 /**
- * A067081.
+ * A067178 Smallest square whose sum of digits is A056991(n).
  * @author Sean A. Irvine
  */
 public class A067178 extends A056991 {

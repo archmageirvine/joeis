@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A039741 Lattice animals in the b.c.c. lattice (8 nearest neighbors), connected truncated octahedra, vertex-connected cubes.
+ * A039741 Number of fixed n-celled lattice animals in the b.c.c. lattice (8 nearest neighbors), or connected truncated octahedra, or vertex-connected cubes.
  * @author Sean A. Irvine
  */
 public class A039741 extends Sequence1 {

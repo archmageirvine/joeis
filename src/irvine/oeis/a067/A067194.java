@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067185.
+ * A067194 Sequence of prime numbers whose reverse is a nontrivial prime power (A025475).
  * @author Sean A. Irvine
  */
 public class A067194 extends A000040 {

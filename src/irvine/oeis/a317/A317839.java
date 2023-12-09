@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002487;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A317839 M√∂bius transform of A002487, Stern&apos;s Diatomic sequence.
+ * A317839 M\u00f6bius transform of A002487, Stern's Diatomic sequence.
  * @author Georg Fischer
  */
 public class A317839 extends MobiusTransformSequence {

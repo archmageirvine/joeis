@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067081.
+ * A067146 Shifts left under exponential reversion.
  * @author Sean A. Irvine
  */
 public class A067146 extends Sequence1 {

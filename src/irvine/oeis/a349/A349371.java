@@ -6,7 +6,7 @@ import irvine.oeis.a003.A003602;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
- * A349371 Inverse M√∂bius transform of Kimberling&apos;s paraphrases (A003602).
+ * A349371 Inverse M\u00f6bius transform of Kimberling's paraphrases (A003602).
  * @author Georg Fischer
  */
 public class A349371 extends InverseMobiusTransformSequence {

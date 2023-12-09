@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A052820 E.g.f.: 1/(1-x+log(1-x)).
+ * A052820 Expansion of e.g.f. 1/(1 - x + log(1 - x)).
  * @author Sean A. Irvine
  */
 public class A052820 extends Sequence0 {

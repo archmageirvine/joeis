@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067081.
+ * A067170 Numbers n such that sum of the cubes of the distinct prime factors of n equals the sum of the cubes of the digits of n.
  * @author Sean A. Irvine
  */
 public class A067170 extends Sequence1 {

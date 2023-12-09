@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A171880 a(n) = a(n-1) + a(n-2)*a(n-3) + a(n-4)*a(n-5)^a(n-6)
+ * A171880 a(n) = a(n-1) + a(n-2)*a(n-3) + a(n-4)*a(n-5)^a(n-6).
  * @author Georg Fischer
  */
 public class A171880 extends TupleTransformSequence {

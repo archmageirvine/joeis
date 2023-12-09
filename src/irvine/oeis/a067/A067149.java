@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import irvine.oeis.RecordPositionSequence;
 
 /**
- * A067081.
+ * A067149 Indices of records of A067148.
  * @author Sean A. Irvine
  */
 public class A067149 extends RecordPositionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067185.
+ * A067186 Numbers n such that C(n) = (n^2 + n + 2)/2 is prime.
  * @author Sean A. Irvine
  */
 public class A067186 extends Sequence1 {

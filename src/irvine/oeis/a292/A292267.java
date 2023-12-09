@@ -5,7 +5,7 @@ import irvine.oeis.a292.A292268;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A292267 Restricted growth sequence transform of A292268; filter combining multiplicative order of 2 mod 2n+1 and the number of trailing 1&apos;s in binary expansion of 2n+1.
+ * A292267 Restricted growth sequence transform of A292268; filter combining multiplicative order of 2 mod 2n+1 and the number of trailing 1's in binary expansion of 2n+1.
  * @author Georg Fischer
  */
 public class A292267 extends RestrictedGrowthTransformSequence {

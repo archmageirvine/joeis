@@ -5,7 +5,7 @@ import irvine.oeis.a129.A129283;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A348976 M√∂bius transform of A129283, which is sum of n and its arithmetic derivative.
+ * A348976 M\u00f6bius transform of A129283, which is sum of n and its arithmetic derivative.
  * @author Georg Fischer
  */
 public class A348976 extends MobiusTransformSequence {

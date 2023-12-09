@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A147690 a(0)=1; thereafter a(n+1)=F(n+3)*a(n)+F(n+3) where F_n is Fibonacci&apos;s sequence 0, 1, 1, 2, 3, 5, 8, etc
+ * A147690 a(0)=1; thereafter a(n+1)=F(n+3)*a(n)+F(n+3) where F_n is Fibonacci's sequence 0,1,1,2,3,5,8, etc.
  * @author Georg Fischer
  */
 public class A147690 extends TupleTransformSequence {

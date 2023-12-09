@@ -7,7 +7,7 @@ import irvine.oeis.a003.A003602;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A349136 M√∂bius transform of Kimberling&apos;s paraphrases, A003602.
+ * A349136 M\u00f6bius transform of Kimberling's paraphrases, A003602.
  * @author Georg Fischer
  */
 public class A349136 extends MobiusTransformSequence {

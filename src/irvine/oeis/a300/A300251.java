@@ -5,7 +5,7 @@ import irvine.oeis.a003.A003415;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A300251 M√∂bius transform of arithmetic derivative (A003415).
+ * A300251 M\u00f6bius transform of arithmetic derivative (A003415).
  * @author Georg Fischer
  */
 public class A300251 extends MobiusTransformSequence {

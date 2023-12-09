@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067185.
+ * A067185 Numbers k such that prime(k+1) + prime(k) == 1 (mod k).
  * @author Sean A. Irvine
  */
 public class A067185 extends A000040 {

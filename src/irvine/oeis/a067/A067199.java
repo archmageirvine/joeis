@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067199.
+ * A067199 Integers k such that k*28*c + 1 is prime for c = 1, 2, 4, 7 and 14.
  * @author Sean A. Irvine
  */
 public class A067199 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a023;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A023553 Convolution of natural numbers &gt;= 3 and Lucas numbers.
+ * A023553 Convolution of integers &gt;= 3 and Lucas numbers.
  * @author Georg Fischer
  */
 public class A023553 extends GeneratingFunctionSequence {

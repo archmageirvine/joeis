@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a055.A055120;
 
 /**
- * A300487 Numbers k whose 10&apos;s complement mod 10 of their digits is equal to phi(k), the Euler totient function of k.
+ * A300487 Numbers k whose 10's complement mod 10 of their digits is equal to phi(k), the Euler totient function of k.
  * @author Georg Fischer
  */
 public class A300487 extends FilterSequence {

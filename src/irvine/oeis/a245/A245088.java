@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A245088 a(n) = (sum_{k=0}^{n-1}(8*k^2+12*k+5)*A244973(k))/n^2
+ * A245088 a(n) = (sum_{k=0}^{n-1}(8*k^2+12*k+5)*A244973(k))/n^2.
  * @author Georg Fischer
  */
 public class A245088 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.a247.A247074;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A340146 M√∂bius transform of A247074(x) = phi(x)/(Product_{primes p dividing x} gcd(p-1, x-1)).
+ * A340146 M\u00f6bius transform of A247074(x) = phi(x)/(Product_{primes p dividing x} gcd(p-1, x-1)).
  * @author Georg Fischer
  */
 public class A340146 extends MobiusTransformSequence {

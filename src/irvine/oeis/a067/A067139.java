@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a066.A066376;
 
 /**
- * A067099.
+ * A067139 Irreducible elements in OR-numbral arithmetic.
  * @author Sean A. Irvine
  */
 public class A067139 extends FilterPositionSequence {

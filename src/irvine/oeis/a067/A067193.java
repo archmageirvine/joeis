@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A067185.
+ * A067193 Numbers k such that sigma(k) == 4 (mod phi(k)).
  * @author Sean A. Irvine
  */
 public class A067193 extends A002808 {

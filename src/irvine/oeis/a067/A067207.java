@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A067207.
+ * A067207 Numbers k such that the digits of sigma_2(k) end in k.
  * @author Sean A. Irvine
  */
 public class A067207 extends Sequence1 {

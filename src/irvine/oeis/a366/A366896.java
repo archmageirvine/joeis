@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A366896 allocated for Giorgos Kalogeropoulos.
+ * A366896 a(n) is the least positive integer not already in the sequence with the property that the concatenation a(0)a(1)...a(n) forms an integer with n distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A366896 extends Sequence0 {

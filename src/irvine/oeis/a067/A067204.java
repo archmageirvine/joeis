@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067185.
+ * A067204 Numbers k such that sigma(sigma(k)) == phi(k) (mod sigma(k)).
  * @author Sean A. Irvine
  */
 public class A067204 extends Sequence1 {

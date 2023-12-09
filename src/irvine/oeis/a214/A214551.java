@@ -4,7 +4,7 @@ package irvine.oeis.a214;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A214551 Reed Kelly&apos;s sequence: a(n) = (a(n-1) + a(n-3))/gcd(a(n-1), a(n-3)) with a(0) = a(1) = a(2) = 1.
+ * A214551 Reed Kelly's sequence: a(n) = (a(n-1) + a(n-3))/gcd(a(n-1), a(n-3)) with a(0) = a(1) = a(2) = 1.
  * @author Georg Fischer
  */
 public class A214551 extends TupleTransformSequence {

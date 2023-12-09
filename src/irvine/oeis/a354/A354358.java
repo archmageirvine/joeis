@@ -7,7 +7,7 @@ import irvine.oeis.a124.A124859;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A354358 M√∂bius transform of A124859.
+ * A354358 M\u00f6bius transform of A124859.
  * @author Georg Fischer
  */
 public class A354358 extends MobiusTransformSequence {

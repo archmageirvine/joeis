@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067081.
+ * A067144 Numbers k such that sigma(phi(k)) == 0 (mod k).
  * @author Sean A. Irvine
  */
 public class A067144 extends Sequence1 {

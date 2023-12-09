@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A108242 a(n) is the number of coverings of 1..n by cyclic words of length 3, such that each value from 1 to n appears precisely 3 times. That is, the union of all the letters in all of the words of a given covering is the multiset {1, 1, 1, 2, 2, 2,...,n,n,n}. Repeats
+ * A108242 a(n) is the number of coverings of 1..n by cyclic words of length 3, such that each value from 1 to n appears precisely 3 times. That is, the union of all the letters in all of the words of a given covering is the multiset {1,1,1,2,2,2,...,n,n,n}. Repeats of words are allowed in a given covering.
  * @author Georg Fischer
  */
 public class A108242 extends HolonomicRecurrence {

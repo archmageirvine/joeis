@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002385;
 import irvine.oeis.a178.A178914;
 
 /**
- * A109862 Palindromic primes p such that p&apos;s 10&apos;s complement is also a prime.
+ * A109862 Palindromic primes p such that p's 10's complement is also a prime.
  * @author Georg Fischer
  */
 public class A109862 extends FilterSequence {

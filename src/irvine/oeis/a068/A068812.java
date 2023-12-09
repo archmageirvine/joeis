@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a178.A178914;
 
 /**
- * A068812 Numbers n such that n and its 10&apos;s complement are both triangular numbers; that is, n and 10^k - n (where k is the number of digits in n) are triangular numbers.
+ * A068812 Numbers n such that n and its 10's complement are both triangular numbers; that is, n and 10^k - n (where k is the number of digits in n) are triangular numbers.
  * @author Georg Fischer
  */
 public class A068812 extends FilterSequence {

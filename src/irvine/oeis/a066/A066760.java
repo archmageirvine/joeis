@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066760 Sum_{1&lt;=k&lt;=n, k is not a divisor of n and k is not coprime to n} k.
+ * A066760 a(n) = Sum_{1&lt;=k&lt;=n, k is not a divisor of n and k is not coprime to n} k.
  * @author Sean A. Irvine
  */
 public class A066760 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.a003.A003557;
 import irvine.oeis.a051.A051953;
 
 /**
- * A318305 a(n) = product_{p} - product_{p-1}, where p are distinct primes dividing n; a(n) = A007947(n) - A173557(n).
+ * A318305 a(n) = Product_{p} - Product_{p-1}, where p are distinct primes dividing n; a(n) = A007947(n) - A173557(n).
  * @author Georg Fischer
  */
 public class A318305 extends Sequence1 {

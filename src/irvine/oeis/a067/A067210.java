@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ForkJoinPool;
 
 import irvine.math.partitions.FixedLengthPartition;
 import irvine.math.z.Z;
@@ -18,6 +20,8 @@ import irvine.util.Permutation;
  */
 public class A067210 extends AbstractSequence {
 
+  private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
+    String.valueOf(Runtime.getRuntime().availableProcessors())));
   private final int mL;
   private int mN;
 
@@ -53,15 +57,24 @@ public class A067210 extends AbstractSequence {
   }
 
   private void combineList(final Map<List<Integer>, Z> res, final List<Integer> a, final Z v, final List<List<Integer>> b, final int min, final int max) {
+    final Map<List<Integer>, Z> myRes = new HashMap<>();
     for (final List<Integer> t : b) {
-      combine(res, a, v, t, min, max);
+      combine(myRes, a, v, t, min, max);
+    }
+    synchronized (res) {
+      for (final Map.Entry<List<Integer>, Z> e : myRes.entrySet()) {
+        res.merge(e.getKey(), e.getValue(), Z::add);
+      }
     }
   }
 
   private Map<List<Integer>, Z> combineList(final Map<List<Integer>, Z> a, final List<List<Integer>> b, final int min, final int max) {
     final Map<List<Integer>, Z> res = new HashMap<>();
-    for (final Map.Entry<List<Integer>, Z> e : a.entrySet()) {
-      combineList(res, e.getKey(), e.getValue(), b, min, max);
+    final ForkJoinPool myPool = new ForkJoinPool(THREADS);
+    try {
+      myPool.submit(() -> a.entrySet().parallelStream().forEach(e -> combineList(res, e.getKey(), e.getValue(), b, min, max))).get();
+    } catch (InterruptedException | ExecutionException e) {
+      throw new RuntimeException(e);
     }
     return res;
   }

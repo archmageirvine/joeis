@@ -13,6 +13,7 @@ import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 import irvine.util.Permutation;
+import irvine.util.string.StringUtils;
 
 /**
  * A067210 Number of n X n 0..2 matrices with all row and column sums equal.
@@ -22,6 +23,7 @@ public class A067210 extends AbstractSequence {
 
   private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
     String.valueOf(Runtime.getRuntime().availableProcessors())));
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final int mL;
   private int mN;
 
@@ -105,6 +107,9 @@ public class A067210 extends AbstractSequence {
     }
     Map<List<Integer>, Z> cnts = Collections.singletonMap(e, Z.ONE);
     for (int r = 0; r < n; ++r) {
+      if (mVerbose) {
+        StringUtils.message("t(" + n + "," + k + ") starting iteration " + (r + 1) + "/" + n + " on " + cnts.size() + " cases");
+      }
       final int lo = k - (n - r) * mL;
       cnts = combineList(cnts, c, lo, k);
     }

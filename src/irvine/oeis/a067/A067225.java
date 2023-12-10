@@ -19,8 +19,7 @@ public class A067225 extends A000290 {
     while (true) {
       final Z cand = super.next();
       final String str = cand.toString();
-      char lead = str.charAt(0);
-      ++lead;
+      final char lead = (char) (str.charAt(0) + 1);
       if (new Z((lead <= '9' ? String.valueOf(lead) : "10") + str.substring(1)).isSquare()) {
         return cand;
       }

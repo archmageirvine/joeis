@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067235.
+ * A067247 Number of difference sets of subsets of {1,2,...,n}, i.e., the size of {D(A) : A subset [n] }, where D(A)={a_i-a_j : a_i&gt;a_j and a_i,a_j in A}.
  * @author Sean A. Irvine
  */
 public class A067247 extends Sequence1 {

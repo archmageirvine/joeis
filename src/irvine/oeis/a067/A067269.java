@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000217;
 
 /**
- * A067235.
+ * A067269 Triangular numbers which remain triangular when the most significant digit is moved to the end.
  * @author Sean A. Irvine
  */
 public class A067269 extends A000217 {

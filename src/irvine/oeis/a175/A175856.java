@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A175856 a(n) = n for n = noncomposites, a(n) = previous term - 1 for n = composites.
+ * A175856 a(n) = a(n-1) - 1 if n is composite, a(n) = n otherwise.
  * @author Georg Fischer
  */
 public class A175856 extends TupleTransformSequence {

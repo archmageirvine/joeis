@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063824 Numbers n such that sigma(phi(n^3)) = phi(sigma(n^3)).
+ * A063824 Numbers k such that sigma(phi(k^3)) = phi(sigma(k^3)).
  * @author Sean A. Irvine
  */
 public class A063824 extends Sequence1 {

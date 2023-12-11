@@ -5,7 +5,7 @@ package irvine.oeis.a330;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A330796 a(n) = Sum_{k=0..n} binomial(n, k)*(2^k - binomial(k, floor(k/2)).
+ * A330796 a(n) = Sum_{k=0..n} binomial(n, k)*(2^k - binomial(k, floor(k/2))).
  * Recurrence: a(n)=((18-9*n)*a(n-3)-(3*n+3)*a(n-2)+(5*n+2)*a(n-1))/(n+1)
  * @author Georg Fischer
  */

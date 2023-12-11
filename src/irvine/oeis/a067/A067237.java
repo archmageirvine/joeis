@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067235.
+ * A067237 Numbers k such that gcd(sigma(k),k) = k/5.
  * @author Sean A. Irvine
  */
 public class A067237 extends Sequence1 {

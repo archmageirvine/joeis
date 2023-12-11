@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067235.
+ * A067255 Irregular triangle read by rows: row n gives exponents in prime factorization of n.
  * @author Sean A. Irvine
  */
 public class A067255 extends Sequence1 {

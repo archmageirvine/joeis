@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.GeneralizedEulerTransform;
 
 /**
- * A300582 Expansion of Product_{k&gt;=1} 1 / (1 - 3*2^k*x^k)).
+ * A300582 Expansion of Product_{k&gt;=1} 1 / (1 - 3*2^k*x^k).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-3*2^k*x^k)))</code>
  * @author Georg Fischer
  */

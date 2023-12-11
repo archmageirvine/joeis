@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067235.
+ * A067241 Numbers n such that gcd((2n)!+1, n!+1) &gt; 1.
  * @author Sean A. Irvine
  */
 public class A067241 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A207837 Primes of the form 5n^4 + 1.
+ * A207837 Primes of the form 5*k^4 + 1.
  * @author Georg Fischer
  */
 public class A207837 extends PrimeSubsequence {

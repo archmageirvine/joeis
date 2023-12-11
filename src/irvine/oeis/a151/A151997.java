@@ -4,7 +4,7 @@ package irvine.oeis.a151;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A151997 a(n) = (n 1&apos;s followed by a 3)^2.
+ * A151997 a(n) = (n 1's followed by a 3)^2.
  * @author Georg Fischer
  */
 public class A151997 extends HolonomicRecurrence {

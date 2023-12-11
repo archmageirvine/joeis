@@ -473,4 +473,18 @@ public final class IntegerUtils {
     return false;
   }
 
+  /**
+   * Remove any factors of 2 from the given number.
+   * @param n number
+   * @return number with factors of 2 removed
+   */
+  public static int makeOdd(int n) {
+    if (n == 0) {
+      return 0;
+    }
+    while ((n & 1) == 0) {
+      n >>= 1;
+    }
+    return n;
+  }
 }

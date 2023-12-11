@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a004.A004709;
 
 /**
- * A067235.
+ * A067259 Cubefree numbers which are not squarefree.
  * @author Sean A. Irvine
  */
 public class A067259 extends FilterSequence {

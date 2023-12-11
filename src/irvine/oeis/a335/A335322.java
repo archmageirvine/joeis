@@ -5,7 +5,7 @@ import irvine.oeis.a061.A061554;
 import irvine.oeis.triangle.TruncatedTriangle;
 
 /**
- * A335322 Triangle read by rows: T(n, k) = binomial(n, floor((n+k+1)/2) with k &lt;= n.
+ * A335322 Triangle read by rows: T(n, k) = binomial(n, floor((n+k+1)/2)) with k &lt;= n.
  * @author Georg Fischer
  */
 public class A335322 extends TruncatedTriangle {

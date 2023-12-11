@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A207838 Numbers n such that 5n^4 + 1 is prime.
+ * A207838 Numbers k such that 5*k^4 + 1 is prime.
  * @author Georg Fischer
  */
 public class A207838 extends PrimePositionSubsequence {

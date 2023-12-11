@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A111051 Numbers n such that 3*n^2 + 1 is prime.
+ * A111051 Numbers m such that 3*m^2 + 1 is prime.
  * @author Georg Fischer
  */
 public class A111051 extends PrimePositionSubsequence {

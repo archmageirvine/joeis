@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001405;
 
 /**
- * A187442 A trisection of A001405 (central binomial coefficients: binomial(3*n,floor(3*n/2)), n&gt;=0.
+ * A187442 A trisection of A001405 (central binomial coefficients): binomial(3*n,floor(3*n/2)), n&gt;=0.
  * @author Georg Fischer
  */
 public class A187442 extends A001405 {

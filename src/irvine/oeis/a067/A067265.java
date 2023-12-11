@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002321;
 
 /**
- * A067235.
+ * A067265 Numbers n such that prime(n+1) - prime(n) = M(n) where M(n) is the Mertens function A002321(n).
  * @author Sean A. Irvine
  */
 public class A067265 extends A000040 {

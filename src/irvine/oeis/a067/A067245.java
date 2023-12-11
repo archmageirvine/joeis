@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067235.
+ * A067245 Numbers k such that phi(k) divides (sigma(k+2) + sigma(k-2)).
  * @author Sean A. Irvine
  */
 public class A067245 extends Sequence1 {

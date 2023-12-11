@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A301483 a(n) = floor(a(n-1)/(2^(1/3)-1) with a(1)=1.
+ * A301483 a(n) = floor(a(n-1)/(2^(1/3)-1)) with a(1)=1.
  * @author Georg Fischer
  */
 public class A301483 extends GeneratingFunctionSequence implements Conjectural {

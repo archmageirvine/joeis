@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A109478 G.f.: square root of weight enumerator of [32, 11, 10] extended BCH code (cf. A109477).
+ * A109478 G.f.: square root of weight enumerator of [32,11,10] extended BCH code (cf. A109477).
  * @author Georg Fischer
  */
 public class A109478 extends ConvolutionProduct {

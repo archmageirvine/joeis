@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001005;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
- * A321198 Triangular Riordan matrix T = R^(-1) for triangular Riordan matrix R = (1/(1 + x^2 - x^3), x/(1 + x^2 - x^3) given in A321196.
+ * A321198 Triangular Riordan matrix T = R^(-1) for triangular Riordan matrix R = (1/(1 + x^2 - x^3), x/(1 + x^2 - x^3)) given in A321196.
  * @author Georg Fischer
  */
 public class A321198 extends PartitionTransformTriangle {

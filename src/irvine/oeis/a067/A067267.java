@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067235.
+ * A067267 Numbers n such that n, 10*n+1, 10*n+3, 10*n+7 and 10*n+9 are all primes.
  * @author Sean A. Irvine
  */
 public class A067267 extends A000040 {

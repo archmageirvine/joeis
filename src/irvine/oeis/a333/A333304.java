@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A333304 Decimal expansion of (arccosh(2)/6)^(1/4)*Gamma(3/4))/(2*sqrt(Pi)).
+ * A333304 Decimal expansion of (arccosh(2)/6)^(1/4)*Gamma(3/4)/(2*sqrt(Pi)).
  * Formula: (arccosh(2)/6)^(1/4)*Gamma(3/4))/(2*sqrt(Pi))
  * @author Georg Fischer
  */

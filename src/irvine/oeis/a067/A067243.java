@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067235.
+ * A067243 Numbers m such that sigma(m+1)+sigma(m-1) = 6*phi(m).
  * @author Sean A. Irvine
  */
 public class A067243 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067235.
+ * A067249 Digits of sigma(n) end in phi(n).
  * @author Sean A. Irvine
  */
 public class A067249 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.oeis.a085.A085517;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A109475 G.f.: square root of weight enumerator of [16, 7, 6] DEC extended BCH code (cf. A085517).
+ * A109475 G.f.: square root of weight enumerator of [16,7,6] DEC extended BCH code (cf. A085517).
  * @author Georg Fischer
  */
 public class A109475 extends ConvolutionProduct {

@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A351146 a(n) = Sum_{k=1..n} binomial(2*n,n+k)*A000005(k)).
+ * A351146 a(n) = Sum_{k=1..n} binomial(2*n,n+k)*A000005(k).
  * a(n)=sum(k=1, n, binom(2*n, n+k)*sigma(k, 0))
  * @author Georg Fischer
  */

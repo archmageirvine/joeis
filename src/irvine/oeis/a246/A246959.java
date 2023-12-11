@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A246959 Numbers of (undirected) Hamiltonian cycles in the n-Sierpi\u0144ski sieve graph.
+ * A246959 Numbers of (undirected) Hamiltonian cycles in the n-Sierpi\u0144ski gasket graph.
  * <code>Join[{1, 1}, RecurrenceTable[{a[3] == 8, a[n] == (3 a[n - 1])^3}, a, {n, 3, 8}]]</code>
  * @author Georg Fischer
  */

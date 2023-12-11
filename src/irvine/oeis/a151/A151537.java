@@ -6,7 +6,7 @@ import java.util.TreeSet;
 import irvine.oeis.a096.A096267;
 
 /**
- * A151537 Number of 1-sided polyedges with n cells.
+ * A151537 Number of 1-sided polyedges with n edges.
  * @author Sean A. Irvine
  */
 public class A151537 extends A096267 {

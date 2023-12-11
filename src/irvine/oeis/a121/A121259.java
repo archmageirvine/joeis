@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002504;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A121259 Numbers k such that (3k^2+1)/4 is prime.
+ * A121259 Numbers k such that (3*k^2 + 1)/4 is prime.
  * @author Georg Fischer
  */
 public class A121259 extends SimpleTransformSequence {

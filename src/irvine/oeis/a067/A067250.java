@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067235.
+ * A067250 Numbers n such that prime(n) = floor(n*log(n*omega(n))).
  * @author Sean A. Irvine
  */
 public class A067250 extends A000040 {

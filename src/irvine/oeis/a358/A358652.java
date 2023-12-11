@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A358652 a(n) = n!*Sum_{m=1..floor((n+1)/2)} 1/(m*(binomial(n-m,m-1)).
+ * A358652 a(n) = n!*Sum_{m=1..floor((n+1)/2)} 1/(m*binomial(n-m,m-1)).
  * @author Georg Fischer
  */
 public class A358652 extends LambdaSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.prime.HomePrimeSequence;
 
 /**
- * A067235.
+ * A067254 Numbers k such that the decimal encoding of the prime factorization of k (A067599) ends in k.
  * @author Sean A. Irvine
  */
 public class A067254 extends Sequence1 {

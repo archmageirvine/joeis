@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067235.
+ * A067264 Numbers n such that prime(n+1)-prime(n)=bigomega(n).
  * @author Sean A. Irvine
  */
 public class A067264 extends A000040 {

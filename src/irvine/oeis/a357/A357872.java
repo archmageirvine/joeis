@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A357872 a(n) = n * (3/2)^((v(n, 2) - v(n, 3)) where v(n, k) = valuation(n, k) mod 2 for n &gt; 0.
+ * A357872 a(n) = n * (3/2)^(v(n, 2) - v(n, 3)) where v(n, k) = valuation(n, k) mod 2 for n &gt; 0.
  * Multiplicative with: a(p^e) = p^e if e is even or p > 3, a(2^e) = 3 * 2^(e-1) and a(3^e) = 2 * 3^(e-1) if e is odd.
  * @author Georg Fischer
  */

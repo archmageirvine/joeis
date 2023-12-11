@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a017.A017666;
 
 /**
- * A341524 Number of prime factors in A017666(n), counted with multiplicity: a(n) = bigomega(n) - bigomega(gcd(n, sigma(n)).
+ * A341524 Number of prime factors in A017666(n), counted with multiplicity: a(n) = bigomega(n) - bigomega(gcd(n, sigma(n))).
  * @author Georg Fischer
  */
 public class A341524 extends A017666 {

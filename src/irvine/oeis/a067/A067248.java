@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067235.
+ * A067248 Numbers k such that the digits of prime(k) end in k.
  * @author Sean A. Irvine
  */
 public class A067248 extends A000040 {

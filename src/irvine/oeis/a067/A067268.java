@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067235.
+ * A067268 Numbers k such that k and k^2+1 have the same number of distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A067268 extends Sequence1 {

@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.a085.A085365;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A051762 Polygon circumscribing constant: decimal expansion of Product_{n=3..infinity} 1/cos(Pi/n).

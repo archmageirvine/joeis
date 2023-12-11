@@ -3,9 +3,9 @@ package irvine.oeis.a056;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001694;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A056828 Numbers that are not the sum of at most three powerful (1) numbers.

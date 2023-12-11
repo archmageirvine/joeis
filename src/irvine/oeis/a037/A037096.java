@@ -1,9 +1,9 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000244;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A037096 Periodic vertical binary vectors computed for powers of 3: a(n) = Sum_{k=0 .. (2^n)-1} (floor((3^k)/(2^n)) mod 2) * 2^k.

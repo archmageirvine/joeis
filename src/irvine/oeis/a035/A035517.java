@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A035517 Triangular array read by rows, formed from Zeckendorf expansion of integers: repeatedly subtract the largest Fibonacci number you can until nothing remains. Row n give Z. expansion of n.

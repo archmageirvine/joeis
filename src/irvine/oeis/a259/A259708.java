@@ -1,7 +1,7 @@
 package irvine.oeis.a259;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A259708 Triangle T(n,k) (0 &lt;= k &lt;= n) giving coefficients of certain polynomials related to Fibonacci numbers.

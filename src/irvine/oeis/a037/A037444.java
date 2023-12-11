@@ -1,7 +1,7 @@
 package irvine.oeis.a037;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A037444 Number of partitions of n^2 into squares.

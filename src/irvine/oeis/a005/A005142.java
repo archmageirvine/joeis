@@ -1,10 +1,10 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a318.A318869;
 import irvine.oeis.a318.A318870;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A005142 Number of connected bipartite graphs with n nodes.

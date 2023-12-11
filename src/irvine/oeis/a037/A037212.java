@@ -4,11 +4,11 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.ZeroSpacedSequence;
 import irvine.oeis.a004.A004016;
 import irvine.oeis.a007.A007332;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A037212 Theta series of lattice A_2 tensor A_15+ (dimension 30, det 3^15, min. norm 4).

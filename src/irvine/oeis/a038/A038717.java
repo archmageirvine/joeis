@@ -1,7 +1,7 @@
 package irvine.oeis.a038;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A038717 Triangular array read by rows: T(n,m) = number of ways your team can score m points in n rounds of a soccer competition (loss=0 point, draw=1 point, win=3 points), for n &gt;= 0, 0 &lt;= m &lt;= 3n.

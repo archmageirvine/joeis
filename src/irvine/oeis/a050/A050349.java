@@ -2,8 +2,8 @@ package irvine.oeis.a050;
 
 import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A050349 Number of ways to factor n into distinct factors with 3 levels of parentheses.

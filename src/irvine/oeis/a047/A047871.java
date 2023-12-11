@@ -1,7 +1,7 @@
 package irvine.oeis.a047;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A047871 a(n) = smallest number &gt; a(n-1) that is not a sum of exactly one power of each of the numbers 1 through n.

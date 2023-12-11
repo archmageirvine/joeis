@@ -1,8 +1,8 @@
 package irvine.oeis.a007;
 
 import irvine.math.LongUtils;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A007730 7th binary partition function.

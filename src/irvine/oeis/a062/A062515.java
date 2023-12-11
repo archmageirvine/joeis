@@ -3,9 +3,9 @@ package irvine.oeis.a062;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002110;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A062515 Leading least prime signatures, ordered by forming the product of primorials greater than 2 with multiplicities given by the canonical sequence of partitions.

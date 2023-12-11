@@ -3,8 +3,8 @@ package irvine.oeis.a009;
 import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
-import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionSequence;
 
 /**
  * A009692 Number of partitions of {1, 2, ..., 2n} into pairs whose differences are primes.

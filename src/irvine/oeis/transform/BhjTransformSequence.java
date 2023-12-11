@@ -6,9 +6,9 @@ import java.util.List;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * BHJ transform.

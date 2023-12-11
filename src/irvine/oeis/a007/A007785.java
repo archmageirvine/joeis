@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A007785 Number of sets of positive integers &lt;= n^2 whose sum is (n^3 + n)/2.

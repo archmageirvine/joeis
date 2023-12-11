@@ -1,8 +1,8 @@
 package irvine.oeis.a164;
 
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a067.A067380;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A164556 Primes expressible as the sum of (at least two) consecutive primes in at least 5 ways.

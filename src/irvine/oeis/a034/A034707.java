@@ -1,7 +1,7 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000040;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A034707 Numbers that are sums (of a nonempty sequence) of consecutive primes.

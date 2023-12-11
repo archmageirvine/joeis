@@ -1,9 +1,9 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.closure.PowerClosureSequence;
 import irvine.oeis.SetDifferenceSequence;
 import irvine.oeis.a000.A000959;
 import irvine.oeis.a031.A031157;
+import irvine.oeis.closure.PowerClosureSequence;
 
 /**
  * A057609 Powers of a prime lucky number (A031157) but excluding lucky numbers (A000959).

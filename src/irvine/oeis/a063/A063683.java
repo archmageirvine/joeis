@@ -2,9 +2,9 @@ package irvine.oeis.a063;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A063683 Integers formed from the reduced residue sets of even numbers and Fibonacci numbers.

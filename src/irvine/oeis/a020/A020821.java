@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
-import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.PrependSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A020821 Decimal expansion of 1/8.

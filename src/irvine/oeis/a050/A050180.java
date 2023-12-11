@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.prime.PrimePositionSubsequence;
 import irvine.oeis.a004.A004397;
+import irvine.oeis.prime.PrimePositionSubsequence;
 
 /**
  * A050180 Numbers m such that prime(m) + Fibonacci(m) is prime.

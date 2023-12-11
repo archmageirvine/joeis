@@ -1,9 +1,9 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004979;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A048212 Triangular array T read by rows: T(i,j)=b(i+1)-b(i+1-j); j=1,2,...,i; i=1,2,3,...; b=A004979.

@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A007729 6th binary partition function.

@@ -2,12 +2,12 @@ package irvine.oeis.a030;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a039.A039658;
 import irvine.oeis.a039.A039660;
 import irvine.oeis.a039.A039919;
 import irvine.oeis.a055.A055879;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A030525 Number of polyhexes of class PF2 with a particular symmetry.

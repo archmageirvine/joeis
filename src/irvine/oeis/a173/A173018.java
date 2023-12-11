@@ -1,7 +1,7 @@
 package irvine.oeis.a173;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A173018 Euler's triangle: triangle of Eulerian numbers T(n,k) (n&gt;=0, 0 &lt;= k &lt;= n) read by rows.

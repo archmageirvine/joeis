@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004018;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A002611 Glaisher's function V(n).

@@ -2,9 +2,9 @@ package irvine.oeis.a039;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A039948 A triangle related to A000045 (Fibonacci numbers).

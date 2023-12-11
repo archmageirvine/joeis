@@ -2,8 +2,8 @@ package irvine.oeis.a056;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a001.A001187;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A056066 Expansion of log( dC(x)/dx ), C(x) = e.g.f. for labeled connected graphs (A001187).

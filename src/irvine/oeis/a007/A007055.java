@@ -3,9 +3,9 @@ package irvine.oeis.a007;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a187.A187272;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A007055 Let S denote the palindromes in the language {0,1}*; a(n) = number of words of length n in the language SS.

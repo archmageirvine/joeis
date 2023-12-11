@@ -4,9 +4,9 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A031121 Integer ratios of Fibonacci numbers F(m)/F(n).

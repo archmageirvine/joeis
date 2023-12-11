@@ -1,7 +1,7 @@
 package irvine.oeis.a047;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A047870 Smallest number that is not a sum of at most one power of each of the numbers 1 through n.

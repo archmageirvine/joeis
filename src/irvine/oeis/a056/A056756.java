@@ -2,9 +2,9 @@ package irvine.oeis.a056;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000945;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A056756 Where n-th prime appears in Euclid-Mullin sequence A000945.

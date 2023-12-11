@@ -3,8 +3,8 @@ package irvine.oeis.a005;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000625;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A005627 Number of achiral planted trees with n nodes.

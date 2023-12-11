@@ -1,8 +1,8 @@
 package irvine.oeis.a064;
 
 import irvine.math.cr.CR;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.a068.A068466;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A064853 Lemniscate constant.

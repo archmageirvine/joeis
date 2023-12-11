@@ -1,8 +1,8 @@
 package irvine.oeis.a006;
 
 import irvine.math.LongUtils;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A006264 Diagonal length function.

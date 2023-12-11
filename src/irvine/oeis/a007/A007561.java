@@ -3,9 +3,9 @@ package irvine.oeis.a007;
 import java.util.ArrayList;
 
 import irvine.math.MemoryFunction2;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A007561 Number of asymmetric rooted connected graphs where every block is a complete graph.

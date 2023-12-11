@@ -1,9 +1,9 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002884;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A053722 Number of n X n binary matrices of order dividing 2 (also number of solutions to X^2=I in GL(n,2)).

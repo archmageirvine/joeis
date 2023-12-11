@@ -1,8 +1,8 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A059607 As an upper right triangle, number of distinct partitions of n where the highest part is k (0&lt;=k&lt;=n).

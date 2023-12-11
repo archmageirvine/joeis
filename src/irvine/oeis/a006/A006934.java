@@ -2,11 +2,11 @@ package irvine.oeis.a006;
 
 import java.util.ArrayList;
 
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A006934 A series for Pi.

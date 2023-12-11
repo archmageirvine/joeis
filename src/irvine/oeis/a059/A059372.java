@@ -1,7 +1,7 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.transform.RevertTransformSequence;
 import irvine.oeis.a000.A000142;
+import irvine.oeis.transform.RevertTransformSequence;
 
 /**
  * A059372 Revert transform of factorials n! (n &gt;= 1).

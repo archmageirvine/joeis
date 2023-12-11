@@ -3,8 +3,8 @@ package irvine.oeis.a264;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.BellMatrixTransformSequence;
 import irvine.oeis.a000.A000110;
+import irvine.oeis.transform.BellMatrixTransformSequence;
 
 /**
  * A264428 Triangle read by rows, Bell transform of Bell numbers.

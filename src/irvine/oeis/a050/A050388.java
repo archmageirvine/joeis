@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.transform.ExponentialRevertTransformSequence;
 import irvine.oeis.a008.A008836;
+import irvine.oeis.transform.ExponentialRevertTransformSequence;
 
 /**
  * A050388 Exponential reversion of Liouville's lambda function A008836.

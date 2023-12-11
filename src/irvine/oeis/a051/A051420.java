@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.prime.PrimePositionSubsequence;
 import irvine.oeis.a000.A000081;
+import irvine.oeis.prime.PrimePositionSubsequence;
 
 /**
  * A051420 Numbers k such that A000081(k) is prime.

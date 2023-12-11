@@ -1,8 +1,8 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A050145 T(n,k)=M(2n,n-1,k-1), 0&lt;=k&lt;=n, n &gt;= 0, array M as in A050144.

@@ -1,8 +1,8 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a002.A002024;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A005230 Stern's sequence: a(1) = 1, a(n+1) is the sum of the m preceding terms, where m*(m-1)/2 &lt; n &lt;= m*(m+1)/2 or equivalently m = ceiling((sqrt(8*n+1)-1)/2) = A002024(n).

@@ -2,10 +2,10 @@ package irvine.oeis.a005;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000182;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A005801 Generalized tangent numbers of type 3^(2n+1).

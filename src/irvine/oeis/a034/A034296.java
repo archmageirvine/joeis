@@ -1,7 +1,7 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A034296 Number of flat partitions of n: partitions {a_i} with each |a_i - a_{i-1}| &lt;= 1.

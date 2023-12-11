@@ -1,10 +1,10 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A052132 Numerators of coefficients in function a(x) such that a(a(a(x))) = sin x.

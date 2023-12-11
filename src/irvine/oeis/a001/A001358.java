@@ -4,8 +4,8 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000040;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A001358 Semiprimes (or biprimes): products of two primes.

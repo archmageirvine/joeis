@@ -1,7 +1,7 @@
 package irvine.oeis.a039;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A039755 Triangle of B-analogs of Stirling numbers of the second kind.

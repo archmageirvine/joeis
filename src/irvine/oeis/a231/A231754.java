@@ -1,7 +1,7 @@
 package irvine.oeis.a231;
 
-import irvine.oeis.closure.DistinctMultiplicativeClosureSequence;
 import irvine.oeis.a002.A002144;
+import irvine.oeis.closure.DistinctMultiplicativeClosureSequence;
 
 /**
  * A231754 Products of distinct primes congruent to 1 modulo 4 (A002144).

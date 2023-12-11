@@ -1,8 +1,8 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A051714 Numerators of table a(n,k) read by antidiagonals: a(0,k) = 1/(k+1), a(n+1,k) = (k+1)*(a(n,k) - a(n,k+1)), n &gt;= 0, k &gt;= 0.

@@ -2,9 +2,9 @@ package irvine.oeis.a346;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a205.A205083;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346176 Decimal expansion of A205083 read as a binary fraction.

@@ -1,9 +1,9 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000330;
 import irvine.oeis.a002.A002415;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A051678 Square-pyramid-tree numbers: a(n) = sum(b(m),m=1..n), b(m) = 1^2, 1^2,2^2, 1^2,2^2,3^2,.. = (A002260)^2.

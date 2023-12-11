@@ -1,10 +1,10 @@
 package irvine.oeis.a335;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a006.A006497;
 import irvine.oeis.a014.A014076;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A335669 Odd composite integers m such that A006497(m) == 3 (mod m).

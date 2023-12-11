@@ -1,8 +1,8 @@
 package irvine.oeis.a005;
 
 import irvine.math.MemoryFunction1;
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A005378 The female of a pair of recurrences.

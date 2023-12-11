@@ -1,8 +1,8 @@
 package irvine.oeis.a055;
 
 import irvine.factor.prime.Fast;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A055923 Number of partitions of n in which each part occurs a prime number (or 0) times.

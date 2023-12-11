@@ -2,8 +2,8 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a005.A005130;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A051055 'Connected' alternating sign n X n matrices, i.e., not made from smaller blocks.

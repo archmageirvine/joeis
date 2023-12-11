@@ -4,10 +4,10 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000521;
 import irvine.oeis.a145.A145200;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A030185 Coefficients in expansion of E_2*E_4/(E_6*j) in powers of 1/j.

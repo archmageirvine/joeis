@@ -1,9 +1,9 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004978;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A048208 a(n) = T(2n-1,n), array T given by A048201.

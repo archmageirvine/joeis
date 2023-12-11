@@ -1,8 +1,8 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000217;
 import irvine.oeis.a034.A034706;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A050943 The sum of 2 or more consecutive nonzero triangular numbers.

@@ -1,7 +1,7 @@
 package irvine.oeis.a058;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A058395 Square array read by antidiagonals. Based on triangular numbers (A000217) with each term being the sum of 2 consecutive terms in the previous row.

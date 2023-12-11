@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.transform.ExponentialRevertTransformSequence;
 import irvine.oeis.a000.A000005;
+import irvine.oeis.transform.ExponentialRevertTransformSequence;
 
 /**
  * A050390 Exponential reversion of divisor function A000005.

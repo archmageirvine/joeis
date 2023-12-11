@@ -1,8 +1,8 @@
 package irvine.oeis.a047;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A047922 Triangle of numbers a(n,k) = number of terms in n X n determinant with 2 adjacent diagonals of k and k-1 0's (0&lt;=k&lt;=n).

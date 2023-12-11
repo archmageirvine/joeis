@@ -1,10 +1,10 @@
 package irvine.oeis.a205;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A205558 (A204898)/2 = (prime(k)-prime(j))/2; A086802 without its zeros.

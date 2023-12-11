@@ -1,8 +1,8 @@
 package irvine.oeis.a063;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A063882 a(n) = a(n - a(n - 1)) + a(n - a(n - 4)), with a(1) = ... = a(4) = 1.

@@ -2,9 +2,9 @@ package irvine.oeis.a047;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000009;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A047966 a(n) = Sum_{ d divides n } q(d), where q(d) = A000009 = number of partitions of d into distinct parts.

@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.transform.BinomialTransformSequence;
 import irvine.oeis.a004.A004211;
+import irvine.oeis.transform.BinomialTransformSequence;
 
 /**
  * A007405 Dowling numbers: e.g.f.: exp(x + (exp(b*x) - 1)/b) with b=2.

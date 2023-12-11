@@ -3,11 +3,11 @@ package irvine.oeis.a003;
 import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction1;
 import irvine.math.MemoryFunction2;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A003122 Number of Hamiltonian rooted triangulations with n internal nodes and 3 external nodes.

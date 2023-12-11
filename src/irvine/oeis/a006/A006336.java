@@ -1,9 +1,9 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a060.A060143;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A006336 a(n) = a(n-1) + a(n - 1 - number of even terms so far).

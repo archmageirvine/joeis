@@ -1,7 +1,7 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.closure.DistinctAdditiveClosureSequence;
 import irvine.oeis.a000.A000142;
+import irvine.oeis.closure.DistinctAdditiveClosureSequence;
 
 /**
  * A059589 Sums of factorials of distinct integers.

@@ -3,8 +3,8 @@ package irvine.oeis.a045;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A045514 Number of conjugacy classes of elements of order n in E_8(C).

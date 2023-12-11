@@ -1,7 +1,7 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A054250 Triangular array T(n,0)= 1, T(n,k) = sum_{j=1..min(n,k)} (n-j+1)*T(j,k-j) if k&gt;0.

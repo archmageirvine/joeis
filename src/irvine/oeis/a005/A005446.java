@@ -1,8 +1,8 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A005446 Denominators of expansion of -W_{-1}(-e^{-1-x^2/2}) where W_{-1} is Lambert W function.

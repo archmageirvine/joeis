@@ -1,7 +1,7 @@
 package irvine.oeis.a025;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A025148 Number of partitions of n into distinct parts &gt;= 3.

@@ -1,8 +1,8 @@
 package irvine.oeis.a254;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a126.A126760;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A254048 a(n) = A126760(A007494(n)).

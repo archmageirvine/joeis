@@ -1,8 +1,8 @@
 package irvine.oeis.a058;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A058311 Number of nodes at n-th level in tree in which top node is 1; each node k has children labeled k, k+1, ..., (k+1)^2 at next level.

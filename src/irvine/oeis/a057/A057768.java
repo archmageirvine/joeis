@@ -3,13 +3,13 @@ package irvine.oeis.a057;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.UnionSequence;
 import irvine.oeis.a031.A031157;
 import irvine.oeis.a045.A045955;
 import irvine.oeis.a045.A045956;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A057768 From Goldbach problem: number of decompositions of 2n-1 into sum of a prime lucky number(from A031157) and a twin even-lucky-number(from A045955, A045956).

@@ -1,8 +1,8 @@
 package irvine.oeis.a203;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A203750 Square root of v(2n)/v(2n-1), where v=A203748.

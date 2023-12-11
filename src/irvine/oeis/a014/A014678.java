@@ -1,8 +1,8 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.recur.CoordinationSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A014678 Poincar\u00e9 series [or Poincare series] (or Molien series) for mod 2 cohomology of Lyons group.

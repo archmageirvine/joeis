@@ -2,10 +2,10 @@ package irvine.oeis.a340;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a004.A004254;
 import irvine.oeis.a014.A014076;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A340123 Odd composite integers m such that A004254(2*m-J(m,21)) == J(m,21) (mod m) and gcd(m,21)=1, where J(m,21) is the Jacobi symbol.

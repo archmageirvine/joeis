@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.transform.Stirling2TransformSequence;
 import irvine.oeis.a060.A060053;
+import irvine.oeis.transform.Stirling2TransformSequence;
 
 /**
  * A002718 Number of bicoverings of an n-set.

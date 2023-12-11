@@ -1,9 +1,9 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002262;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A057945 Number of triangular numbers needed to represent n with greedy algorithm.

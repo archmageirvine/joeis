@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
-import irvine.oeis.transform.Stirling2TransformSequence;
 import irvine.oeis.a014.A014500;
+import irvine.oeis.transform.Stirling2TransformSequence;
 
 /**
  * A020554 Number of multigraphs on n labeled edges (without loops).

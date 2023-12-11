@@ -6,8 +6,8 @@ import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a124.A124303;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A056478 Number of primitive (aperiodic) palindromic structures using a maximum of four different symbols.

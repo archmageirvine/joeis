@@ -1,9 +1,9 @@
 package irvine.oeis.a124;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018782;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A124980 Smallest strictly positive number decomposable in n different ways as a sum of two squares.

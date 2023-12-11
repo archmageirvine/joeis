@@ -1,10 +1,10 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.ComposeTransformSequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a001.A001477;
+import irvine.oeis.transform.ComposeTransformSequence;
 
 /**
  * A030282 COMPOSE primes with natural numbers.

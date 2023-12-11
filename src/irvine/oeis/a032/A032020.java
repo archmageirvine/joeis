@@ -1,8 +1,8 @@
 package irvine.oeis.a032;
 
 import irvine.math.LongUtils;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A032020 Number of compositions (ordered partitions) of n into distinct parts.

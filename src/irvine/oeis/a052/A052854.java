@@ -1,8 +1,8 @@
 package irvine.oeis.a052;
 // manually 2021-07-06
 
-import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.a000.A000108;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A052854 Number of forests of ordered trees on n total nodes.

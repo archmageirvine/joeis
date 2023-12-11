@@ -1,10 +1,10 @@
 package irvine.oeis.a113;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A113122 Sum of the first n Fibonacci numbers, in ascending order, as bases, with the same, in descending order, as exponents.

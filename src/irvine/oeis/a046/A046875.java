@@ -2,9 +2,9 @@ package irvine.oeis.a046;
 
 import irvine.math.z.Z;
 import irvine.oeis.DifferenceSequence;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004481;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A046875 Row/column periods of Sprague-Grundy values of Wythoff's Game.

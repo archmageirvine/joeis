@@ -3,11 +3,11 @@ package irvine.oeis.a063;
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
 import irvine.oeis.ConvolutionSequence;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000041;
 import irvine.oeis.a047.A047968;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A063835 Three times partitioned numbers: the number of ways a number can be partitioned in (not necessarily different) parts and each part again so partitioned a second and a third time.

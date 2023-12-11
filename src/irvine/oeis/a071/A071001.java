@@ -1,7 +1,7 @@
 package irvine.oeis.a071;
 
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.a068.A068465;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A071001 Binary expansion of Gamma(3/4).

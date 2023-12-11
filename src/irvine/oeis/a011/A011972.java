@@ -1,7 +1,7 @@
 package irvine.oeis.a011;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A011972 Sequence formed by reading rows of triangle defined in A011971.

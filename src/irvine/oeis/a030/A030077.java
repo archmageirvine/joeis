@@ -1,6 +1,5 @@
 package irvine.oeis.a030;
 
-import irvine.oeis.Conjectural;
 import java.util.HashSet;
 import java.util.List;
 
@@ -8,6 +7,7 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.a352.A352568;
 
 /**

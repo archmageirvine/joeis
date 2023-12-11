@@ -2,10 +2,10 @@ package irvine.oeis.a003;
 
 import java.util.Arrays;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A003483 Number of square permutations of n elements.

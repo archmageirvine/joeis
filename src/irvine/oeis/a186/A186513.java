@@ -1,9 +1,9 @@
 package irvine.oeis.a186;
 // manually ajrank at 2021-09-24 21:19
 
-import irvine.oeis.recur.LinearRecurrence;
 import irvine.oeis.RankSequence;
 import irvine.oeis.a000.A000290;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A186513 Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) before g(j) when f(i)=g(j), where f(i)=i^2 and g(j)=4+5j^2.  Complement of A186514.

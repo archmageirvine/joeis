@@ -1,8 +1,8 @@
 package irvine.oeis.a130;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.MobiusTransformSequence;
 import irvine.oeis.a006.A006207;
+import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
  * A130628 Related to the minimal number of periodic orbits of periods guaranteed by Sharkovskii's theorem.

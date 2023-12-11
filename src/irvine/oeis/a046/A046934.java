@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A046934 Same rule as Aitken triangle (A011971) except a(0,0)=1, a(1,0)=0.

@@ -1,7 +1,7 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.closure.DistinctMultiplicativeClosureSequence;
 import irvine.oeis.a052.A052963;
+import irvine.oeis.closure.DistinctMultiplicativeClosureSequence;
 
 /**
  * A274453 Products of distinct numbers in A052963.

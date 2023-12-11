@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.a019.A019739;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A006083 Continued fraction for e/2.

@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a000.A000009;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A051005 PartitionsQ[ A035359 ], i.e., prime values of PartitionsQ.

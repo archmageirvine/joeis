@@ -1,9 +1,9 @@
 package irvine.oeis.a022;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008578;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A022837 a(n) = c(0)*p(0) + ... + c(n)*p(n), where c(i) = 1 if a(i-1) &lt; p(i) and c(i) = -1 if a(i-1) &gt;= p(i) (p(0) = 1, p(i) = prime(i)).

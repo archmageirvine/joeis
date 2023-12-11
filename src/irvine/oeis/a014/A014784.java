@@ -1,7 +1,7 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A014784 Triangle of numbers associated with Genocchi numbers.

@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
-import irvine.oeis.transform.Stirling2TransformSequence;
 import irvine.oeis.a000.A000290;
+import irvine.oeis.transform.Stirling2TransformSequence;
 
 /**
  * A033452 "STIRLING" transform of squares A000290.

@@ -3,9 +3,9 @@ package irvine.oeis.a013;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A013924 Number of labeled connected graphs with n nodes and 2 cutpoints.

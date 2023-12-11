@@ -1,8 +1,8 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.InverseEulerTransform;
 import irvine.oeis.a000.A000595;
+import irvine.oeis.transform.InverseEulerTransform;
 
 /**
  * A054919 Number of nonisomorphic connected unlabeled binary relations on n nodes.

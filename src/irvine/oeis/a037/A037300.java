@@ -2,8 +2,8 @@ package irvine.oeis.a037;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.prime.HomePrimeSequence;
 import irvine.oeis.a002.A002808;
+import irvine.oeis.prime.HomePrimeSequence;
 
 /**
  * A037300 Number of prime substrings of prime numbers in A037272.

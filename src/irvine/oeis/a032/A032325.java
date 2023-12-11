@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.transform.ChjTransformSequence;
 import irvine.oeis.a000.A000012;
+import irvine.oeis.transform.ChjTransformSequence;
 
 /**
  * A032325 Number of ways to partition n labeled elements into pie slices forming an aperiodic pattern.

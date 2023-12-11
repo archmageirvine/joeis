@@ -1,7 +1,7 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A059032 Another variant of Boustrophedon transform applied to 1, 0, 0, 0, ...

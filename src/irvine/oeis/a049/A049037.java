@@ -2,10 +2,10 @@ package irvine.oeis.a049;
 
 import java.util.ArrayList;
 
-import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002896;
+import irvine.oeis.memory.MemoryFunctionSequence;
 
 /**
  * A049037 Number of cubic lattice walks that start and end at origin after 2n steps, not touching origin at intermediate stages.

@@ -2,8 +2,8 @@ package irvine.oeis.a038;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.InverseSequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A038028 Position reached by frog in A038027 or 0 if none. A038026(A038027(n)).

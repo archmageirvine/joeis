@@ -1,9 +1,9 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007504;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A034958 Divide primes into groups with prime(n) elements and add together.

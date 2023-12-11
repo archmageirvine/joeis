@@ -1,9 +1,9 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a005.A005179;
 import irvine.oeis.a027.A027423;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A045977 Smallest number with same number of divisors as n!.

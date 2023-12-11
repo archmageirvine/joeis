@@ -1,9 +1,9 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000699;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A004300 Number of symmetric irreducible diagrams with 2n nodes.

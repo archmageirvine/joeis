@@ -1,8 +1,8 @@
 package irvine.oeis.a121;
 
-import irvine.oeis.transform.BinomialTransformSequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a010.A010051;
+import irvine.oeis.transform.BinomialTransformSequence;
 
 /**
  * A121497 Binomial transform of the characteristic function of the prime numbers (A010051).

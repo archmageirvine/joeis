@@ -2,10 +2,10 @@ package irvine.oeis.a337;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001906;
 import irvine.oeis.a005.A005248;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A337777 Even composite integers m such that U(m)^2 == 1 (mod m) and V(m) == 3 (mod m), where U(m)=A001906(m) and V(m)=A005248(m) are the m-th generalized Lucas and Pell-Lucas numbers of parameters a=3 and b=1, respectively.

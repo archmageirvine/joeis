@@ -7,9 +7,9 @@ import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a134.A134446;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**

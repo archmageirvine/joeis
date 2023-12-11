@@ -1,11 +1,11 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000129;
 import irvine.oeis.a037.A037027;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A054446 Triangle of partial row sums of triangle A037027(n,m), n &gt;= m &gt;= 0 (Fibonacci convolution triangle).

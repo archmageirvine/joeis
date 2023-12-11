@@ -1,8 +1,8 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a061.A061150;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A007441 1 + Sum_{n&gt;=1} a_n x^n = Product_{n&gt;=1} (1-x^n)^prime(n).

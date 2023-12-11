@@ -1,8 +1,8 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.Conjectural;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**

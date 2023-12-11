@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A046746 Sum of smallest parts of all partitions of n.

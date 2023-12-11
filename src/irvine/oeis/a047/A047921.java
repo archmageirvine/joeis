@@ -3,9 +3,9 @@ package irvine.oeis.a047;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002628;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A047921 Triangle of numbers a(n,k) = number of permutations on n letters containing k 3-sequences (n &gt;= 0, 0&lt;=k&lt;=max(0,n-2)).

@@ -1,8 +1,8 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.InverseEulerTransform;
 import irvine.oeis.a000.A000666;
+import irvine.oeis.transform.InverseEulerTransform;
 
 /**
  * A054921 Number of connected unlabeled symmetric relations (graphs with loops) having n nodes.

@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.prime.EuclidMullinSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.prime.EuclidMullinSequence;
 
 /**
  * A000945 Euclid-Mullin sequence: a(1) = 2, a(n+1) is smallest prime factor of 1 + Product_{k=1..n} a(k).

@@ -2,9 +2,9 @@ package irvine.oeis.a066;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000217;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A066621 Concatenation of triangular numbers in increasing order up to the n-th and then in decreasing order.

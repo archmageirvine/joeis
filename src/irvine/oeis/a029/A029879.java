@@ -1,7 +1,7 @@
 package irvine.oeis.a029;
 
-import irvine.oeis.transform.BinomialTransformSequence;
 import irvine.oeis.a001.A001285;
+import irvine.oeis.transform.BinomialTransformSequence;
 
 /**
  * A029879 Binomial transform of Thue-Morse sequence A001285.

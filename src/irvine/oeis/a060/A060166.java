@@ -3,10 +3,10 @@ package irvine.oeis.a060;
 import irvine.math.Mobius;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001641;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A060166 Number of orbits of length n under the map whose periodic points are counted by A001641.

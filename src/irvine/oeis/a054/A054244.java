@@ -1,9 +1,9 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003465;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A054244 Number of partitions of n into distinct positive parts &lt;= n, with parts combined by IOR (inclusive or).

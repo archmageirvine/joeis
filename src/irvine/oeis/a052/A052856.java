@@ -3,8 +3,8 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.transform.Stirling2TransformSequence;
 import irvine.oeis.a000.A000142;
+import irvine.oeis.transform.Stirling2TransformSequence;
 
 /**
  * A052856 E.g.f.: (1-3*exp(x)+exp(2*x))/(exp(x)-2).

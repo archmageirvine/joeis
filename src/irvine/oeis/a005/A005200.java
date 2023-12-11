@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000081;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A005200 Total number of fixed points in rooted trees with n nodes.

@@ -2,9 +2,9 @@ package irvine.oeis.a340;
 
 import java.util.ArrayList;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
 import irvine.oeis.a242.A242249;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.oeis.transform.EulerTransformUtils;
 
 /**

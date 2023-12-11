@@ -1,9 +1,9 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A037093 "Sloping binary representation" of Fibonacci numbers, slope = +1.

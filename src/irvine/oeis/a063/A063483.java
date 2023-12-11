@@ -2,8 +2,8 @@ package irvine.oeis.a063;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.a002.A002808;
 import irvine.oeis.Sequence0;
+import irvine.oeis.a002.A002808;
 
 /**
  * A063483 S[A002808(n)] where S[] is Boris Stechkin's function (A055004) and A002808(n) are the composites.

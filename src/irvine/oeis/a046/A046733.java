@@ -3,8 +3,8 @@ package irvine.oeis.a046;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000213;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A046733 Periods for divisibility of A000213 by n.

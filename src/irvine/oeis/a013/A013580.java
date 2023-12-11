@@ -1,7 +1,7 @@
 package irvine.oeis.a013;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A013580 Triangle formed in same way as Pascal's triangle (A007318) except 1 is added to central element in even-numbered rows.

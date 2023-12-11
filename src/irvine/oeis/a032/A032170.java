@@ -4,9 +4,9 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004146;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A032170 "CHK" (necklace, identity, unlabeled) transform of 1, 2, 3, 4, ...

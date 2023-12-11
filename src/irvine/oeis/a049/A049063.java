@@ -1,7 +1,7 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A049063 Triangle a(n,k) (0 &lt;= k &lt;= max(0, 2n-1)) of profile numbers.

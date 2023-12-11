@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
-import irvine.oeis.transform.MobiusTransformSequence;
 import irvine.oeis.a008.A008578;
+import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
  * A030013 Moebius transform of {1, primes}.

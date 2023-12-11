@@ -1,8 +1,8 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A048804 Triangle: T(n,k)=b(n)/(b(k)*b(n-k)) where b is A048803.

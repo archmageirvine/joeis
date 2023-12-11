@@ -4,8 +4,8 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.CyclotomicPolynomials;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000045;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A051258 Fibocyclotomic numbers: numbers formed from cyclotomic polynomials and Fibonacci numbers (A000045).

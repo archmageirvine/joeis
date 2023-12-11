@@ -1,8 +1,8 @@
 package irvine.oeis.a173;
 // manually euleras at 2021-11-23 12:41
 
-import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.a051.A051064;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A173241 Euler transform of A051064, the ruler function sequence for k=3.

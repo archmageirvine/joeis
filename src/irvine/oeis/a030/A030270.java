@@ -1,9 +1,9 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001333;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A030270 Number of nonisomorphic and nonantiisomorphic reflexive transitive and cotransitive (complement is transitive) relations.

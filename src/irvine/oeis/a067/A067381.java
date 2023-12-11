@@ -1,9 +1,9 @@
 package irvine.oeis.a067;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A067381 Smallest prime expressible as the sum of (at least two) consecutive primes in n ways.

@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.transform.ExponentialRevertTransformSequence;
 import irvine.oeis.a008.A008683;
+import irvine.oeis.transform.ExponentialRevertTransformSequence;
 
 /**
  * A050386 Exponential reversion of Moebius function A008683.

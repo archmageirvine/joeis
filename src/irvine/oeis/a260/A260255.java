@@ -3,9 +3,9 @@ package irvine.oeis.a260;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002113;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A260255 Numbers that can be written as the sum of two nonnegative palindromes in base 10.

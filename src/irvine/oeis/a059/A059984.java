@@ -6,9 +6,9 @@ import java.util.List;
 
 import irvine.lisp.SExpression;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a014.A014486;
 import irvine.oeis.a057.A057163;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A059984 Concatenation of \u0141ukasiewicz words.

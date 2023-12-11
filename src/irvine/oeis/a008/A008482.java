@@ -1,7 +1,7 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A008482 Coefficients in expansion of (x-1)*(1+x)^(n-1), n &gt; 0.

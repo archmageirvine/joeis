@@ -2,8 +2,8 @@ package irvine.oeis.a027;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A027841 Number of subgroups of index n in fundamental group of a certain fiber space.

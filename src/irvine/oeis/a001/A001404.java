@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A001404 Triangle of values of 2-d recurrence.

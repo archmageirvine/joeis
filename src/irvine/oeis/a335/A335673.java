@@ -1,10 +1,10 @@
 package irvine.oeis.a335;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002808;
 import irvine.oeis.a003.A003500;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A335673 Composite integers m such that A003500(m) == 4 (mod m).

@@ -3,8 +3,8 @@ package irvine.oeis.a130;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000837;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**

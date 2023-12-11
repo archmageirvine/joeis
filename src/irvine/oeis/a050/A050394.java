@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.transform.ExponentialRevertTransformSequence;
 import irvine.oeis.a000.A000009;
+import irvine.oeis.transform.ExponentialRevertTransformSequence;
 
 /**
  * A050394 Exponential reversion of partitions into distinct parts A000009.

@@ -1,9 +1,9 @@
 package irvine.oeis.a039;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008284;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A039808 Shifts left under transform T where Ta is product of Partition Triangle A008284 with a.

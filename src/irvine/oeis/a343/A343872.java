@@ -1,8 +1,8 @@
 package irvine.oeis.a343;
 // manually euleras at 2021-11-24 08:46
 
-import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.a046.A046091;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A343872 Number of planar graphs with n edges and no isolated nodes.

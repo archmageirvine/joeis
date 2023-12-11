@@ -1,7 +1,7 @@
 package irvine.oeis.a023;
 
-import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.PrependSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A023989 Look and Say sequence: describe the previous term! (method C - initial term is 2).

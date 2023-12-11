@@ -1,7 +1,7 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.closure.DistinctMultiplicativeClosureSequence;
 import irvine.oeis.a000.A000930;
+import irvine.oeis.closure.DistinctMultiplicativeClosureSequence;
 
 /**
  * A274452 Products of distinct Narayana's cow numbers (A000930).

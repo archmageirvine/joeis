@@ -1,8 +1,8 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000081;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A051529 INVERT transform of A000081 = [1, 1, 1, 2, 4, 9, 20, 48, 115, 286,...].

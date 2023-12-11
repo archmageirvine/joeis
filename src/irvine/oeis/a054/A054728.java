@@ -2,9 +2,9 @@ package irvine.oeis.a054;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001617;
+import irvine.oeis.memory.MemorySequence;
 import irvine.util.array.DynamicIntArray;
 
 /**

@@ -1,8 +1,8 @@
 package irvine.oeis.a054;
 
 import irvine.factor.factor.PrimeDivision;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A054225 Triangle read by rows: row n (n&gt;=0) gives the number of partitions of (n,0), (n-1,1), (n-2,2), ..., (0,n) respectively into sums of pairs.

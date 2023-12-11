@@ -1,8 +1,8 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.prime.HomePrimeSequence;
 import irvine.oeis.a002.A002808;
+import irvine.oeis.prime.HomePrimeSequence;
 
 /**
  * A037272 Primes reached in A037271, or -1 if no such prime exists.

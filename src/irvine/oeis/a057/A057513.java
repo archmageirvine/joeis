@@ -3,8 +3,8 @@ package irvine.oeis.a057;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a014.A014137;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A057513 Number of separate orbits to which permutations given in A057511/A057512 (induced by deep rotation of general parenthesizations/plane trees) partition each A000108(n) objects encoded by A014486 between (A014138(n-1)+1)-th and (A014138(n))-th terms.

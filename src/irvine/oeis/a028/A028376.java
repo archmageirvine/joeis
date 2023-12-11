@@ -1,9 +1,9 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000108;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A028376 Triangle read by rows: T(n,m) = Sum Catalan(n-k)*Catalan(k), k=0..m.

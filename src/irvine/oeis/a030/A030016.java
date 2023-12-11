@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
-import irvine.oeis.transform.InverseBinomialTransformSequence;
 import irvine.oeis.a008.A008578;
+import irvine.oeis.transform.InverseBinomialTransformSequence;
 
 /**
  * A030016 Inverse binomial transform of {1, primes}.

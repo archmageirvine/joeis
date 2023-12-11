@@ -1,8 +1,8 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a002.A002487;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A052133 CONTINUANT transform of 0, 1, 1, 2, 1, 3, 2, 3, ... (A002487).

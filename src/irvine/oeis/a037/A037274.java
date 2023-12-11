@@ -1,8 +1,8 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.prime.HomePrimeSequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.prime.HomePrimeSequence;
 
 /**
  * A037274 Home primes: for n &gt;= 2, a(n) = the prime that is finally reached when you start with n, concatenate its prime factors (A037276) and repeat until a prime is reached (a(n) = -1 if no prime is ever reached).

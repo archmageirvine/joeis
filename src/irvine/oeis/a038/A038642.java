@@ -1,8 +1,8 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A038642 Least k such that k-th and (k+1)-st term of A038593 are the first consecutive pair that differ by n.

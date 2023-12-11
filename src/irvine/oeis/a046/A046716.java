@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A046716 Coefficients of a special case of Poisson-Charlier polynomials.

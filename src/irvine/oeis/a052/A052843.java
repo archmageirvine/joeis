@@ -1,8 +1,8 @@
 package irvine.oeis.a052;
 // manually euleras A004111 at 2021-11-23 09:22
 
-import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.a004.A004111;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A052843 A simple grammar.

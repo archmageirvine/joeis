@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.transform.ChjTransformSequence;
 import irvine.oeis.a054.A054977;
+import irvine.oeis.transform.ChjTransformSequence;
 
 /**
  * A032329 "CHJ" (necklace, identity, labeled) transform of 2,1,1,1...

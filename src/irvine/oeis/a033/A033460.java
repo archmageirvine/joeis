@@ -1,9 +1,9 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000290;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A033460 XOR-convolution of squares A000290 with themselves.

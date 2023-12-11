@@ -3,13 +3,13 @@ package irvine.oeis.a259;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A259976 Irregular triangle T(n, k) read by rows (n &gt;= 0, 0 &lt;= k &lt;= A011848(n)): T(n, k) is the number of occurrences of the principal character in the restriction of xi_k to S_(n)^(2).

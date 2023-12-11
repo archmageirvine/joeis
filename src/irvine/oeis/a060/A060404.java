@@ -3,9 +3,9 @@ package irvine.oeis.a060;
 import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000346;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A060404 G.f.: Sum_{k &gt;= 1} (phi(k)/k)*log(1-f(x^k)), where f(x) = (1 - sqrt(1 - 4*x)) / (2*x) - 1 is the g.f. for the Catalan numbers (A000108) C_1, C_2, C_3, ...

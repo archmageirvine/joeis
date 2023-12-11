@@ -1,7 +1,7 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.closure.DistinctMultiplicativeClosureSequence;
 import irvine.oeis.a000.A000213;
+import irvine.oeis.closure.DistinctMultiplicativeClosureSequence;
 
 /**
  * A274432 Products of distinct tribonacci numbers (A000213).

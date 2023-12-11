@@ -1,9 +1,9 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence2;
 import irvine.oeis.a000.A000244;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A037097 Periodic vertical binary vectors of powers of 3, starting from bit-column 2 (halved).

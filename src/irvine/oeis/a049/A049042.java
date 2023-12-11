@@ -1,9 +1,9 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a003.A003422;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A049042 Domain of A049041.

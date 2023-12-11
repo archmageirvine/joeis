@@ -1,7 +1,7 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A059780 A generalized Pascal triangle of order 3: T(n,m), n &gt;= 0, 2*n &gt;= m &gt;= 0.

@@ -2,8 +2,8 @@ package irvine.oeis.a059;
 // manually (beatty2) at 2021-07-10
 
 import irvine.math.cr.CR;
-import irvine.oeis.cons.BeattySequence;
 import irvine.oeis.a073.A073005;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A059552 Beatty sequence for Gamma(1/3)/(Gamma(1/3)-1).

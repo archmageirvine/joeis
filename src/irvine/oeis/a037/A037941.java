@@ -6,8 +6,8 @@ import java.util.List;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.prime.HomePrimeSequence;
 import irvine.oeis.Sequence0;
+import irvine.oeis.prime.HomePrimeSequence;
 
 /**
  * A037941 Trajectory of 48 under prime factor concatenation procedure.

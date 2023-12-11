@@ -1,9 +1,9 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.ComposeTransformSequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000040;
+import irvine.oeis.transform.ComposeTransformSequence;
 
 /**
  * A030278 COMPOSE primes with primes.

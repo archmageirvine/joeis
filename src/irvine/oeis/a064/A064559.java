@@ -1,8 +1,8 @@
 package irvine.oeis.a064;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A064559 Number of iterations in A064553 to reach a fixed point.

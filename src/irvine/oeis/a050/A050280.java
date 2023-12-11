@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a014.A014254;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A050280 Prime liponombres.

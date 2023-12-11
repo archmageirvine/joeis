@@ -1,7 +1,7 @@
 package irvine.oeis.a060;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A060005 Number of ways of partitioning the integers {1,2,..,4n} into two (unordered) sets such that the sums of parts are equal in both sets (parts in either set will add up to (4n)*(4n+1)/4). Number of solutions to {1 +- 2 +- 3 +- ... +- 4n=0}.

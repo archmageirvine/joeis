@@ -1,10 +1,10 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002034;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A025493 Smallest k that converges after exactly n iterations of the Kempner function A002034.

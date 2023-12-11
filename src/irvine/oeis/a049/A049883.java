@@ -1,7 +1,7 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a001.A001045;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A049883 Primes in the Jacobsthal sequence (A001045).

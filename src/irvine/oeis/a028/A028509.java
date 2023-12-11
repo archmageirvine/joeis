@@ -1,7 +1,7 @@
 package irvine.oeis.a028;
 
-import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.a020.A020860;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A028509 Continued fraction expansion for log_2(7).

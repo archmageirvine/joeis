@@ -1,8 +1,8 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A005651 Sum of multinomial coefficients (n_1+n_2+...)!/(n_1!*n_2!*...) where (n_1, n_2, ...) runs over all integer partitions of n.

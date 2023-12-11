@@ -1,7 +1,7 @@
 package irvine.oeis.a035;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A035317 Pascal-like triangle associated with A000670.

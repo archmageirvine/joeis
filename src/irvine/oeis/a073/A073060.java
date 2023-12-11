@@ -1,9 +1,9 @@
 package irvine.oeis.a073;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a006.A006005;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**

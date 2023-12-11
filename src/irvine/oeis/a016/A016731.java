@@ -1,7 +1,7 @@
 package irvine.oeis.a016;
 
-import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.a002.A002391;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A016731 Continued fraction for log(3).

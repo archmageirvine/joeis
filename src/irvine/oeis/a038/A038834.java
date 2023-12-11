@@ -1,9 +1,9 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a006.A006852;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A038834 Past of komet 'k2' (A038807).

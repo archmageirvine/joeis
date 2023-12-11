@@ -1,7 +1,7 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.Conjectural;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 
 /**
  * A049271 Smallest nonnegative value taken on by nx^2 - 12y^2 for an infinite number of integer pairs (x, y).

@@ -1,7 +1,7 @@
 package irvine.oeis.a025;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A025591 Maximal coefficient of Product_{k&lt;=n} (1 + x^k). Number of solutions to +- 1 +- 2 +- 3 +- ... +- n = 0 or 1.

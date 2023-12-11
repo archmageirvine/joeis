@@ -1,8 +1,8 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A007905 Conflicts during insertions into exchange trees on n nodes.

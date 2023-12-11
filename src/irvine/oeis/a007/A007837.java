@@ -2,8 +2,8 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a182.A182927;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A007837 Number of partitions of n-set with distinct block sizes.

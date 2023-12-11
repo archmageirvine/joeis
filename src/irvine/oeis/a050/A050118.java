@@ -3,10 +3,10 @@ package irvine.oeis.a050;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000032;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A050118 Numbers that are the product of two Lucas numbers.

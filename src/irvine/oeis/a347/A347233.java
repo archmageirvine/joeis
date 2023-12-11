@@ -3,9 +3,9 @@ package irvine.oeis.a347;
 import irvine.math.Mobius;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a126.A126760;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A347233 M\u00f6bius transform of A126760.

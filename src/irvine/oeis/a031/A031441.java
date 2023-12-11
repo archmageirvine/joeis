@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
-import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.PrependSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A031441 a(0) = 3; for n &gt; 0, a(n) is the greatest prime factor of PreviousPrime(a(n-1))*a(n-1)-1 where PreviousPrime(prime(k))=prime(k-1).

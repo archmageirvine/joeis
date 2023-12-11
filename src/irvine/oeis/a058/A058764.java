@@ -1,7 +1,7 @@
 package irvine.oeis.a058;
 
-import irvine.oeis.Conjectural;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence0;
 
 /**

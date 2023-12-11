@@ -2,8 +2,8 @@ package irvine.oeis.a064;
 
 import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A064461 First row of Pascal's triangle that has n distinct nonsquarefree entries, or -1 if no such row exists.

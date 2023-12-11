@@ -1,8 +1,8 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A050144 T(n,k) = M(2n-1,n-1,k-1), 0 &lt;= k &lt;= n, n &gt;= 0, where M(p,q,r) is the number of upright paths from (0,0) to (p,p-q) that meet the line y = x-r and do not rise above it.

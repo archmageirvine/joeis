@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.transform.MobiusTransformSequence;
 import irvine.oeis.a000.A000108;
+import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
  * A002996 a(n) = Sum_{k|n} mu(k)*Catalan(n/k) (mu = Moebius function A008683).

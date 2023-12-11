@@ -1,8 +1,8 @@
 package irvine.oeis.a038;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A038150 Array of numbers used in exotic ternary numeration system, read by antidiagonals.

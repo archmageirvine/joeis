@@ -1,9 +1,9 @@
 package irvine.oeis.a020;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A020555 Number of multigraphs on n labeled edges (with loops). Also number of genetically distinct states amongst n individuals.

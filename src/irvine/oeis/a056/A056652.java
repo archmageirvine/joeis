@@ -1,7 +1,7 @@
 package irvine.oeis.a056;
 
-import irvine.oeis.closure.MultiplicativeClosureSequence;
 import irvine.oeis.a000.A000668;
+import irvine.oeis.closure.MultiplicativeClosureSequence;
 
 /**
  * A056652 Integers &gt; 1 whose prime divisors are all Mersenne primes (i.e., of the form (2^p - 1)).

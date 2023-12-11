@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a000.A000149;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A050809 Primes of the form floor( exp(n) ).

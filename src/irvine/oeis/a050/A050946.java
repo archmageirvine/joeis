@@ -3,8 +3,8 @@ package irvine.oeis.a050;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000045;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A050946 "Stirling-Bernoulli transform" of Fibonacci numbers.

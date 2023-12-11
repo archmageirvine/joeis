@@ -2,8 +2,8 @@ package irvine.oeis.a293;
 // manually 2020-12-30
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.GeneralizedEulerTransform;
 import irvine.oeis.a049.A049401;
+import irvine.oeis.transform.GeneralizedEulerTransform;
 
 /**
  * A293735 Number of multisets of nonempty words with a total of n letters over quinary alphabet such that within each prefix of a word every letter of the alphabet is at least as frequent as the subsequent alphabet letter.

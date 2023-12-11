@@ -1,8 +1,8 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.PrependSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A010888 Digital root of n (repeatedly add the digits of n until a single digit is reached).

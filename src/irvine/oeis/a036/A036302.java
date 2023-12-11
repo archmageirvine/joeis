@@ -3,10 +3,10 @@ package irvine.oeis.a036;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a020.A020450;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A036302 Composite numbers k such that the digits of the prime factors of k are either 1 or 2.

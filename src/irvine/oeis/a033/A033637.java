@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
-import irvine.oeis.closure.MultiplicativeClosureSequence;
 import irvine.oeis.a000.A000041;
+import irvine.oeis.closure.MultiplicativeClosureSequence;
 
 /**
  * A033637 Products of partition numbers A000041(n).

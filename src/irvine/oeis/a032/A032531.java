@@ -1,9 +1,9 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002262;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A032531 An inventory sequence: triangle read by rows, where T(n, k), 0 &lt;= k &lt;= n, records the number of k's thus far in the flattened sequence.

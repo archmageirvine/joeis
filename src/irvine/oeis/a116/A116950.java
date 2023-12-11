@@ -2,10 +2,10 @@ package irvine.oeis.a116;
 // manually euleras at 2021-11-24 08:46
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000081;
 import irvine.oeis.a002.A002861;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A116950 Number of functional patterns on n elements; or digraphs with maximum outdegree 1, n arrows and every point connected to an arrow.

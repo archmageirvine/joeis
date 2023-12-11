@@ -1,9 +1,9 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a002.A002110;
 import irvine.oeis.a002.A002808;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A038773 a(n) is the smallest prime of the form Q + c, where Q is the n-th primorial and c is a composite &gt;= prime(n+1)^2.

@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.transform.WittTransformSequence;
 import irvine.oeis.a074.A074654;
+import irvine.oeis.transform.WittTransformSequence;
 
 /**
  * A006180 Witt vector *5!/5!.

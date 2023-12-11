@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a002.A002129;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A006950 G.f.: Product_{k&gt;=1} (1 + x^(2*k - 1)) / (1 - x^(2*k)).

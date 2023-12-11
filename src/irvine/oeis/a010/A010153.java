@@ -1,8 +1,8 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.PrependSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A010153 Continued fraction for sqrt(75) (or 5*sqrt(3)).

@@ -1,7 +1,7 @@
 package irvine.oeis.a036;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A036602 Triangle of coefficients of generating function of binary rooted trees of height at most n.

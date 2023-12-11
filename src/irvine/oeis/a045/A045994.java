@@ -1,8 +1,8 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a001.A001006;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A045994 a(0)=1, a(n) = M(n) + Sum_{k=1..n-1} M(k)*a(n-k-1), where M(n) are the Motzkin numbers (A001006).

@@ -1,7 +1,7 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.closure.DistinctAdditiveClosureSequence;
 import irvine.oeis.a001.A001906;
+import irvine.oeis.closure.DistinctAdditiveClosureSequence;
 
 /**
  * A054204 Integers expressible as sums of distinct even-subscripted Fibonacci numbers.

@@ -1,9 +1,9 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000108;
 import irvine.oeis.a244.A244160;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A014418 Representation of n in base of Catalan numbers (a classic greedy version).

@@ -1,8 +1,8 @@
 package irvine.oeis.a038;
 
 import irvine.factor.prime.Fast;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A038499 Number of partitions of n into a prime number of parts.

@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
-import irvine.oeis.transform.DikTransformSequence;
 import irvine.oeis.a000.A000081;
+import irvine.oeis.transform.DikTransformSequence;
 
 /**
  * A068051 Number of n-node connected graphs with one cycle, possibly of length 1 or 2.

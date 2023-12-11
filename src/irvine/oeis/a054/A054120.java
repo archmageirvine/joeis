@@ -1,7 +1,7 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A054120 Triangular array T(n,k): start with T(n,0)=T(n,n)=1 for n &gt;= 0; recursively, draw vertical lines through T(n-1,k-1) if present and T(n-1,k) if present; then T(n,k) is the sum of T(i,j) that lie on or between the lines and not below T(n,k).

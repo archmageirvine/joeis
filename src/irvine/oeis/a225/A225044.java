@@ -3,8 +3,8 @@ package irvine.oeis.a225;
 // DO NOT EDIT here!
 
 import irvine.oeis.CharacteristicFunction;
-import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.a014.A014132;
+import irvine.oeis.transform.EulerTransform;
 
 
 /**

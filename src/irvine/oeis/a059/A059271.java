@@ -1,7 +1,7 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A059271 Transform of A059226 applied to sequence 0, 1, 0, 0, 0, 0, ...

@@ -3,8 +3,8 @@ package irvine.oeis.a057;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a014.A014137;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A057545 Maximum cycle size in range [A014137(n-1)..A014138(n-1)] of permutation A057505/A057506.

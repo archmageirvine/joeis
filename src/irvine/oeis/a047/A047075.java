@@ -3,9 +3,9 @@ package irvine.oeis.a047;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000108;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A047075 All differences C(j)-C(i), j&gt;i, of Catalan numbers A000108.

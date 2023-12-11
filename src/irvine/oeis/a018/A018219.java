@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.TreeSet;
 
 import irvine.math.LongUtils;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A018219 Table T(a,b) by antidiagonals of winning positions in 3-pile Wythoff game (a square array).

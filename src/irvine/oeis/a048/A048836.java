@@ -2,9 +2,9 @@ package irvine.oeis.a048;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002034;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A048836 Decimal expansion of Sum_{n &gt;= 2} (n / Product_{i=2..n} K(i)), where K(i) is the Kempner function A002034.

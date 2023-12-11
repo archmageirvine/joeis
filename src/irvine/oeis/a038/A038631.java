@@ -1,7 +1,7 @@
 package irvine.oeis.a038;
 
-import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.a065.A065442;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A038631 Continued fraction expansion of Sum_{k&gt;=1} 1/(2^k - 1).

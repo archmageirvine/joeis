@@ -2,9 +2,9 @@ package irvine.oeis.a203;
 // manually prodsi2 at 2021-11-25
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a018.A018252;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A203530 a(n) = Product_{1 &lt;= i &lt; j &lt;= n} (c(i) + c(j)); c = A002808 = composite numbers.

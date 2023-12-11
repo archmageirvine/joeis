@@ -1,8 +1,8 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.InverseEulerTransform;
 import irvine.oeis.a006.A006966;
+import irvine.oeis.transform.InverseEulerTransform;
 
 /**
  * A030268 Number of nonisomorphic connected partial lattices.

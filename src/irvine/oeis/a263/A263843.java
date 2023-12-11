@@ -3,8 +3,8 @@ package irvine.oeis.a263;
 // DO NOT EDIT here!
 
 import irvine.oeis.PrependSequence;
-import irvine.oeis.transform.RevertTransformSequence;
 import irvine.oeis.a162.A162395;
+import irvine.oeis.transform.RevertTransformSequence;
 
 
 /**

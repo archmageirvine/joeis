@@ -1,9 +1,9 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000045;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A035514 Zeckendorf expansion of n: repeatedly subtract the largest Fibonacci number you can until nothing remains.

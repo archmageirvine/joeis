@@ -1,8 +1,8 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A057335 a(0) = 1, and for n &gt; 0, a(n) = A000040(A000120(n)) * a(floor(n/2)); essentially sequence A055932 generated using A000120, hence sorted by number of factors.

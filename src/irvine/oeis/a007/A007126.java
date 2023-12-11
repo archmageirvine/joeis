@@ -3,10 +3,10 @@ package irvine.oeis.a007;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000088;
 import irvine.oeis.a002.A002854;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A007126 Number of connected rooted strength 1 Eulerian graphs with n nodes.

@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A051598 Rows of triangle formed using Pascal's rule except begin n-th row with 2*n and end it with 2*n+1.

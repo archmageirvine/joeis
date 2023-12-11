@@ -1,8 +1,8 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a014.A014221;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A048830 Number of rooted identity game trees of height &lt;=n, first player to reach to reach top wins. First player wins.

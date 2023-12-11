@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A007754 Array (a frieze pattern) defined by a(n,k) = (a(n-1,k)*a(n-1,k+1) - 1) / a(n-2,k+1), read by antidiagonals.

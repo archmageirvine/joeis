@@ -1,9 +1,9 @@
 package irvine.oeis.a021;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a037.A037074;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A021005 Let q_k=p(p+2) be product of k-th pair of twin primes; sequence gives values of p such that (q_k)^2 &gt; q_{k-i}q_{k+i} for all 1 &lt;= i &lt;= k-1.

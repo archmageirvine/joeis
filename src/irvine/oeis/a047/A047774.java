@@ -1,9 +1,9 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001764;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A047774 Number of dissectable polyhedra with symmetry of type C.

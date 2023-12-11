@@ -4,9 +4,9 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001156;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A045842 Expansion of Product_{k&gt;=0} 1/(1 - x^(k+1))^A001156(k).

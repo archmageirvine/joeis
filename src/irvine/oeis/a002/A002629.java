@@ -2,9 +2,9 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000166;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A002629 Number of permutations of length n with one 3-sequence.

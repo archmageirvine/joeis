@@ -1,7 +1,7 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.Conjectural;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 
 /**
  * A049241 Smallest nonnegative value taken on by 2*x^2 - n*y^2 for an infinite number of integer pairs (x, y).

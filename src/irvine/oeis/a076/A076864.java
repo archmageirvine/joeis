@@ -1,8 +1,8 @@
 package irvine.oeis.a076;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.InverseEulerTransform;
 import irvine.oeis.a050.A050535;
+import irvine.oeis.transform.InverseEulerTransform;
 
 /**
  * A076864 Number of connected loopless multigraphs with n edges.

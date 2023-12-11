@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A022159 First row of spectral array W(sqrt(3)).

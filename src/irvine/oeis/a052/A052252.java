@@ -5,8 +5,8 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a051.A051573;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A052252 Column 4 of A052250.

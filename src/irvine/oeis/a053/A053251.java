@@ -1,7 +1,7 @@
 package irvine.oeis.a053;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A053251 Coefficients of the '3rd-order' mock theta function psi(q).

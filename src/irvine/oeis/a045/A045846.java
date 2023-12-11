@@ -3,8 +3,8 @@ package irvine.oeis.a045;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.util.Pair;
 
 /**

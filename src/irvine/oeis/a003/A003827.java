@@ -3,9 +3,9 @@ package irvine.oeis.a003;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005130;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A003827 'Core' alternating sign n X n matrices, i.e., those that are not 'blown up' from a smaller matrix by inserting row i, column j with a_ij = 1 and all other entries in that row and column equal to 0.

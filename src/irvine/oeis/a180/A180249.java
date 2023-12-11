@@ -3,9 +3,9 @@ package irvine.oeis.a180;
 
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a056.A056493;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A180249 a(n) is the total number of k-reverses of n.

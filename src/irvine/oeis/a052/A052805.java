@@ -1,7 +1,7 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.a000.A000912;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A052805 If B is a collection in which there are C(n-1) [Catalan numbers, A000108] things with n points, a(n) is the number of subsets without repetition of B with a total of n points.

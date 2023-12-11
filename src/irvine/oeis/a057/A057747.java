@@ -3,11 +3,11 @@ package irvine.oeis.a057;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000959;
 import irvine.oeis.a045.A045954;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A057747 Number of decompositions of 2n-1 into sum of a lucky number and an even-lucky-number (from A045954).

@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
-import irvine.oeis.closure.DistinctMultiplicativeClosureSequence;
 import irvine.oeis.a000.A000668;
+import irvine.oeis.closure.DistinctMultiplicativeClosureSequence;
 
 /**
  * A046528 Numbers that are a product of distinct Mersenne primes (elements of A000668).

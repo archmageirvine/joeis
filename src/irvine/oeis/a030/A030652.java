@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
-import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.a073.A073006;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A030652 Continued fraction for Gamma(2/3).

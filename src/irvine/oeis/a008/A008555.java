@@ -2,8 +2,8 @@ package irvine.oeis.a008;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000129;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A008555 Primitive parts of Pell numbers.

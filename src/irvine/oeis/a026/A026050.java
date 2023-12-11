@@ -1,8 +1,8 @@
 package irvine.oeis.a026;
 
 import irvine.math.z.Z;
-import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A026050 a(n) = (d(n)-r(n))/2, where d = A026049 and r is the periodic sequence with fundamental period (1,0,0,1).

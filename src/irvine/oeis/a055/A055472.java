@@ -1,8 +1,8 @@
 package irvine.oeis.a055;
 // manually deris at 2021-10-28 22:51
 
-import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a152.A152948;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A055472 Primes of the form k(k+1)/2+2 (i.e., two more than a triangular number).

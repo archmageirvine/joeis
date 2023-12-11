@@ -1,8 +1,8 @@
 package irvine.oeis.a064;
 
 import irvine.math.cr.CR;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.a073.A073005;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A064582 Real half-period for the Weierstrass elliptic function with invariants g2=0, g3=1.

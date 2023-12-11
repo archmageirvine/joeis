@@ -1,8 +1,8 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.transform.DikTransformSequence;
 
 /**

@@ -1,9 +1,9 @@
 package irvine.oeis.a006;
 
 import irvine.oeis.AlternatingSequence;
-import irvine.oeis.transform.BinomialTransformSequence;
 import irvine.oeis.a000.A000004;
 import irvine.oeis.a002.A002001;
+import irvine.oeis.transform.BinomialTransformSequence;
 
 /**
  * A006342 Coloring a circuit with 4 colors.

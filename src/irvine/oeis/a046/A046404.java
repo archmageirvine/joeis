@@ -3,9 +3,9 @@ package irvine.oeis.a046;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002385;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A046404 Odd numbers with exactly 2 distinct palindromic prime factors.

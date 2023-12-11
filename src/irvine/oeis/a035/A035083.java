@@ -2,9 +2,9 @@ package irvine.oeis.a035;
 
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.transform.DikTransformSequence;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.transform.DikTransformSequence;
 
 /**
  * A035083 DIK(b)-DIK[ 2 ](b)-b where b is A035082.

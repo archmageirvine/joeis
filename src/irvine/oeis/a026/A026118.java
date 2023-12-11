@@ -1,9 +1,9 @@
 package irvine.oeis.a026;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a002.A002212;
 import irvine.oeis.a039.A039658;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A026118 Number of polyhexes of class PF2 (with two catafusenes annealated to pyrene).

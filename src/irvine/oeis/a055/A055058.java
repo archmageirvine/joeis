@@ -2,8 +2,8 @@ package irvine.oeis.a055;
 // manually deris2/primeval at 2021-11-04 22:44
 
 import irvine.math.z.Z;
-import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a054.A054632;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A055058 Primes in A054632.

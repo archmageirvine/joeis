@@ -1,9 +1,9 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000244;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A037095 "Sloping binary representation" of powers of 3 (A000244), slope = -1.

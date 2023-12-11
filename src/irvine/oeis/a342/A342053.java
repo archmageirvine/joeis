@@ -15,8 +15,8 @@ import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a002.A002712;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A342053 Array read by antidiagonals: T(n,k) is the number of unrooted 3-connected triangulations of a disk with n interior nodes and k nodes on the boundary, n &gt;= 1, k &gt;= 3.

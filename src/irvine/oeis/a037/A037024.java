@@ -2,9 +2,9 @@ package irvine.oeis.a037;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000796;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A037024 Position of start of first occurrence of prime(n) after the decimal point in expansion of Pi.

@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.prime.PrimePositionSubsequence;
 import irvine.oeis.a000.A000149;
+import irvine.oeis.prime.PrimePositionSubsequence;
 
 /**
  * A050808 Numbers k such that floor(exp(k)) is prime.

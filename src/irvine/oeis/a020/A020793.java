@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
-import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.PrependSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A020793 Decimal expansion of 1/6.

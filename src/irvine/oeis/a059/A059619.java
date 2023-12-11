@@ -1,8 +1,8 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A059619 As upper right triangle, number of strongly unimodal partitions of n (strongly unimodal means strictly increasing then strictly decreasing) where initial part is k.

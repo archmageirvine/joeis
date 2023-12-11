@@ -1,9 +1,9 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a007.A007063;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A038807 Future of the smallest-perizeroin komet in Kimberling's expulsion array (A035486).

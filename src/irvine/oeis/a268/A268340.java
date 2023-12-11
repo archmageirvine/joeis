@@ -1,8 +1,8 @@
 package irvine.oeis.a268;
 // manually 2021-06-22
 
-import irvine.oeis.transform.MobiusTransformSequence;
 import irvine.oeis.a046.A046660;
+import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
  * A268340 Characteristic function of the prime powers p^k, k &gt;= 2.

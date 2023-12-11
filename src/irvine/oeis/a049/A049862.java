@@ -3,9 +3,9 @@ package irvine.oeis.a049;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A049862 Products of two Fibonacci numbers with distinct indices.

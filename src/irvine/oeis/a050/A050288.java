@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a171.A171102;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A050288 Pandigital primes.

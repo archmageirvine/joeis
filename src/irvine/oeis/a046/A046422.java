@@ -1,8 +1,8 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.prime.HomePrimeSequence;
 import irvine.oeis.a002.A002808;
+import irvine.oeis.prime.HomePrimeSequence;
 
 /**
  * A046422 Numbers requiring 2 steps to reach a prime under the prime factor concatenation procedure.

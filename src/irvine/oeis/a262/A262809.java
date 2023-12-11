@@ -3,9 +3,9 @@ package irvine.oeis.a262;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a062.A062204;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A262809 Number A(n,k) of lattice paths from {n}^k to {0}^k using steps that decrement one or more components by one; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.

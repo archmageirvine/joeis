@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.prime.PrimePositionSubsequence;
 import irvine.oeis.a000.A000110;
+import irvine.oeis.prime.PrimePositionSubsequence;
 
 /**
  * A051130 Indices of prime Bell numbers A000110.

@@ -3,8 +3,8 @@ package irvine.oeis.a035;
 import java.util.HashSet;
 import java.util.Set;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A035312 Zorach additive triangle, read by rows.

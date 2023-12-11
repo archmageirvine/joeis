@@ -3,8 +3,8 @@ package irvine.oeis.a292;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.GeneralizedEulerTransform;
 import irvine.oeis.a027.A027306;
+import irvine.oeis.transform.GeneralizedEulerTransform;
 
 
 /**

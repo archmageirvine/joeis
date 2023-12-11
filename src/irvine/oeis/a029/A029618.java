@@ -1,7 +1,7 @@
 package irvine.oeis.a029;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A029618 Numbers in (3,2)-Pascal triangle (by row).

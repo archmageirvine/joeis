@@ -1,12 +1,12 @@
 package irvine.oeis.a342;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a002.A002212;
 import irvine.oeis.a039.A039658;
 import irvine.oeis.a055.A055879;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A342554 Number of catafusenes with 2n hexagons and C symmetry.

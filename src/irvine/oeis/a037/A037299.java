@@ -6,8 +6,8 @@ import java.util.List;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.prime.HomePrimeSequence;
 import irvine.oeis.a002.A002808;
+import irvine.oeis.prime.HomePrimeSequence;
 
 /**
  * A037299 Prime substrings of prime numbers in A037272.

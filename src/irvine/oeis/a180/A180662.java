@@ -2,8 +2,8 @@ package irvine.oeis.a180;
 // manually 2021-10-14
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a001.A001654;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.triangle.Triangle;
 
 /**

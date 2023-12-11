@@ -4,9 +4,9 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a051.A051573;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A052250 Triangle T(n,k) (n &gt;= 1, k &gt;= 1) giving dimension of bigrading of Hopf algebra of rooted trees.

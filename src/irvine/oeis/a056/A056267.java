@@ -3,10 +3,10 @@ package irvine.oeis.a056;
 import irvine.math.Mobius;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000918;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A056267 Number of primitive (aperiodic) words of length n which contain exactly two different symbols.

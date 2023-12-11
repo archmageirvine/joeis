@@ -1,8 +1,8 @@
 package irvine.oeis.a060;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A060924 Bisection of Lucas triangle A060922: odd-indexed members of column sequences of A060922 (not counting leading zeros).

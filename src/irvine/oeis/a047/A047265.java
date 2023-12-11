@@ -1,9 +1,9 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a121.A121373;
 import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A047265 Triangle T(n,k), for n &gt;= 1, 1 &lt;= k &lt;= n, read by rows, giving coefficient of x^n in expansion of (Product_{j&gt;=1} (1-(-x)^j) - 1 )^k.

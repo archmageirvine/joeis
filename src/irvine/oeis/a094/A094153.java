@@ -2,8 +2,8 @@ package irvine.oeis.a094;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.prime.EuclidMullinSequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.prime.EuclidMullinSequence;
 
 /**
  * A094153 a(n) is least prime p such that 7 is the n-th term in the Euclid-Mullin sequence starting at p, or 0 if no such prime p exists.

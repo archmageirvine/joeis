@@ -1,8 +1,8 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A038662 First gap of n in sequence A038593 (upper terms).

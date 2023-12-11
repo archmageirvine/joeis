@@ -1,12 +1,12 @@
 package irvine.oeis.a046;
 
-import irvine.oeis.Conjectural;
 import java.util.ArrayList;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**

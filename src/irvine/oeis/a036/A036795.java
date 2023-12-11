@@ -1,10 +1,10 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001906;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A036795 Integers that can be decomposed into sums of different Fibonacci numbers of even argument.

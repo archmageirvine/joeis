@@ -1,8 +1,8 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a005.A005092;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A007000 Number of partitions of n into Fibonacci parts (with 2 types of 1).

@@ -3,9 +3,9 @@ package irvine.oeis.a053;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006566;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A053018 Let Do(n)=A006566(n)=n-th dodecahedral number. Consider all integer triples (i,j,k), j &gt;= k&gt;0, with Do(i)=Do(j)+Do(k), ordered by increasing i; sequence gives j values.

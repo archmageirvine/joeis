@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000055;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A006790 Exponentiation of e.g.f. for trees A000055(n-1).

@@ -1,8 +1,8 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A008951 Array read by columns: number of partitions of n into parts of 2 kinds.

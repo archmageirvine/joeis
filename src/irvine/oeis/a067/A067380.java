@@ -4,9 +4,9 @@ import java.util.Comparator;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A067380 Primes expressible as the sum of (at least two) consecutive primes in at least 4 ways.

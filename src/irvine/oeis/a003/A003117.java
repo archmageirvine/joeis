@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
-import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.a005.A005532;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A003117 Continued fraction for fifth root of 3.

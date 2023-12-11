@@ -2,8 +2,8 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a053.A053871;
+import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.triangle.Triangle;
 
 /**

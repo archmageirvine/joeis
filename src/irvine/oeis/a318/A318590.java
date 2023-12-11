@@ -1,9 +1,9 @@
 package irvine.oeis.a318;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a054.A054919;
 import irvine.oeis.a054.A054921;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A318590 Number of connected balanced signed graphs on n unlabeled nodes.

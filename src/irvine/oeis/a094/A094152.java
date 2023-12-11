@@ -2,8 +2,8 @@ package irvine.oeis.a094;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.prime.EuclidMullinSequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.prime.EuclidMullinSequence;
 
 /**
  * A094152 a(n) is the position of prime 7 in the Euclid-Mullin (EM) sequence of type A000945, if it were started with prime(n) instead of 2.

@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A003242 Number of compositions of n such that no two adjacent parts are equal (Carlitz compositions).

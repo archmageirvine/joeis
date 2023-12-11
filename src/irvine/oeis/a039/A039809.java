@@ -1,9 +1,9 @@
 package irvine.oeis.a039;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008284;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A039809 For n &gt; 1, a(n) doubles under the transform T, where Ta is the matrix product of partition triangle A008284 with a, with a(1) = 1.

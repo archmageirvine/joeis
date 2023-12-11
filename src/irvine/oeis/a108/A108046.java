@@ -1,7 +1,7 @@
 package irvine.oeis.a108;
 
-import irvine.oeis.transform.InverseMobiusTransformSequence;
 import irvine.oeis.a000.A000045;
+import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
  * A108046 Inverse Moebius transform of Fibonacci numbers 0, 1, 1, 2, 3, 5, 8, ...

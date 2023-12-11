@@ -2,9 +2,9 @@ package irvine.oeis.a059;
 // manually prodsim/prev1m at 2021-11-19 12:41
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A059861 a(n) = Product_{i=2..n} (prime(i) - 2).

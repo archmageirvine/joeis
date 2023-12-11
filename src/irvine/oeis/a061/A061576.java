@@ -3,8 +3,8 @@ package irvine.oeis.a061;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000367;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A061576 Smallest prime of irregularity index n.

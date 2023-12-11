@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.transform.WittTransformSequence;
 import irvine.oeis.a022.A022553;
+import irvine.oeis.transform.WittTransformSequence;
 
 /**
  * A006177 Witt vector *2!/2!.

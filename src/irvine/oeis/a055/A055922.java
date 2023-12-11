@@ -1,7 +1,7 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A055922 Number of partitions of n in which each part occurs an odd number (or zero) times.

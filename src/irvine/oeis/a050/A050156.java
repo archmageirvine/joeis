@@ -1,10 +1,10 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a002.A002057;
+import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A050156 T(n,k)=M(2n+3,n+3,k+3), 0&lt;=k&lt;=n, n &gt;= 0, array M as in A050144.

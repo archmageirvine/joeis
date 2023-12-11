@@ -1,7 +1,7 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A024462 Triangle T(n,k) read by rows, arising in enumeration of catafusenes.

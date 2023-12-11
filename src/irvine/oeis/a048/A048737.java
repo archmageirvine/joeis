@@ -1,7 +1,7 @@
 package irvine.oeis.a048;
 
-import irvine.oeis.closure.MultiplicativeClosureSequence;
 import irvine.oeis.a000.A000043;
+import irvine.oeis.closure.MultiplicativeClosureSequence;
 
 /**
  * A048737 Numbers whose prime divisors consist of primes p such that 2^p-1 is prime.

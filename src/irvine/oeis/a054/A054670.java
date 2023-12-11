@@ -1,10 +1,10 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.MemoryFunction2;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A054670 Numerators of (reduced) coefficients of Laurent series for conformal mapping from exterior of unit disk onto exterior of Mandelbrot set.

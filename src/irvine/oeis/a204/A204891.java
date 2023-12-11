@@ -1,9 +1,9 @@
 package irvine.oeis.a204;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A204891 Least k such that n divides A204890(k), the k-th difference of two primes.

@@ -1,12 +1,12 @@
 package irvine.oeis.a007;
 
 import irvine.math.MemoryFunction1;
-import irvine.oeis.memory.MemoryFunction1Sequence;
 import irvine.math.api.Matrix;
 import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction1Sequence;
 
 /**
  * A007777 Number of overlap-free binary words of length n.

@@ -4,11 +4,11 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.ZeroSpacedSequence;
 import irvine.oeis.a004.A004016;
 import irvine.oeis.a007.A007332;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A037150 Fourier coefficients of Eisenstein series of degree 2 and weight 6 when evaluated at Gram(A_2)*z.

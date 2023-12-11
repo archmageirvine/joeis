@@ -1,7 +1,7 @@
 package irvine.oeis.a037;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A037012 Triangle read by rows; row 0 is 0; the n-th row for n&gt;0 contains the coefficients in the expansion of (1-x)*(1+x)^(n-1).

@@ -1,8 +1,8 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A000097 Number of partitions of n if there are two kinds of 1's and two kinds of 2's.

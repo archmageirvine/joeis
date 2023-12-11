@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
-import irvine.oeis.recur.LinearRecurrence;
 import irvine.oeis.UnionSequence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A018844 Arises from generalized Lucas-Lehmer test for primality.

@@ -1,8 +1,8 @@
 package irvine.oeis.a023;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000217;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A023361 Number of compositions of n into positive triangular numbers.

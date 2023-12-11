@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.prime.PrimePositionSubsequence;
 import irvine.oeis.a051.A051953;
+import irvine.oeis.prime.PrimePositionSubsequence;
 
 /**
  * A050530 Numbers k such that k - phi(k) is prime.

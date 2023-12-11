@@ -3,8 +3,8 @@ package irvine.oeis.a145;
 // DO NOT EDIT here!
 
 import irvine.oeis.DirichletConvolutionSequence;
-import irvine.oeis.recur.PaddingSequence;
 import irvine.oeis.a007.A007425;
+import irvine.oeis.recur.PaddingSequence;
 
 /**
  * A145444 Dirichlet g.f.: (1+3/4^s+2/8^s)*zeta(s)^3.

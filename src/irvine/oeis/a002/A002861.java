@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.transform.CycleTransformSequence;
 import irvine.oeis.a000.A000081;
+import irvine.oeis.transform.CycleTransformSequence;
 
 /**
  * A002861 Number of connected functions (or mapping patterns) on n unlabeled points, or number of rings and branches with n edges.

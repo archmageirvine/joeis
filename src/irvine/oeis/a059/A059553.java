@@ -1,8 +1,8 @@
 package irvine.oeis.a059;
 // manually (beatty2) at 2021-07-10
 
-import irvine.oeis.cons.BeattySequence;
 import irvine.oeis.a073.A073006;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A059553 Beatty sequence for Gamma(2/3).

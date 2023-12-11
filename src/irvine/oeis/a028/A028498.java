@@ -1,8 +1,8 @@
 package irvine.oeis.a028;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A028498 Let [n] = {0,...,n-1}; a(n) is number of functions f:[n] -&gt; [n] for which there exists an injection g:[n] -&gt; [n+1] such that for j with 0 &lt;= j &lt; n, either g(j) = f(j) or g(j) = f(j)+1.

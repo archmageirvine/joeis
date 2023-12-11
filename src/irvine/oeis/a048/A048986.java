@@ -1,8 +1,8 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.prime.HomePrimeSequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.prime.HomePrimeSequence;
 
 /**
  * A048986 Home primes in base 2: primes reached when you start with n and (working in base 2) concatenate its prime factors (A048985); repeat until a prime is reached (or -1 if no prime is ever reached). Answer is written in base 10.

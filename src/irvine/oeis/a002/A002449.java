@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A002449 Number of different types of binary trees of height n.

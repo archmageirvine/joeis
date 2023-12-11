@@ -2,10 +2,10 @@ package irvine.oeis.a339;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000032;
 import irvine.oeis.a014.A014076;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A339125 Odd composite integers m such that A000032(m-J(m,5)) == 2*J(m,5) (mod m), where J(m,5) is the Jacobi symbol.

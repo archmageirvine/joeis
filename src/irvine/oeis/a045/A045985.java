@@ -1,9 +1,9 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007504;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A045985 a(n) = least k such that sum of first k primes is n times a prime.

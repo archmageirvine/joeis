@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.transform.MobiusTransformSequence;
 import irvine.oeis.a001.A001055;
+import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
  * A050370 Number of ways to factor n into composite factors.

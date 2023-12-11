@@ -3,8 +3,8 @@ package irvine.oeis.a340;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.a062.A062383;
 import irvine.oeis.a006.A006519;
+import irvine.oeis.a062.A062383;
 
 /**
  * A340632 a(n) in binary is a run of 1-bits from the most significant 1-bit of n down to the least significant 1-bit of n, inclusive.

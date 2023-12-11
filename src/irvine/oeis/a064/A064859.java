@@ -2,9 +2,9 @@ package irvine.oeis.a064;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a003.A003418;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A064859 Decimal expansion of sum of reciprocals of lcm(1..n) = A003418(n).

@@ -2,9 +2,9 @@ package irvine.oeis.a060;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a038.A038776;
+import irvine.oeis.memory.MemorySequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**

@@ -1,9 +1,9 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000217;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A034792 Lexicographically earliest sequence of pairwise coprime triangular numbers.

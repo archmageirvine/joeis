@@ -2,8 +2,8 @@ package irvine.oeis.a050;
 
 import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A050338 Number of ways of factoring n with 2 levels of parentheses.

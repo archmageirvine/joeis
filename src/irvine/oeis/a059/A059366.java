@@ -1,11 +1,11 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000079;
 import irvine.oeis.a000.A000142;
 import irvine.oeis.a000.A000984;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A059366 Triangle T(m,s), m &gt;= 0, 0 &lt;= s &lt;= m, arising in the computation of certain integrals.

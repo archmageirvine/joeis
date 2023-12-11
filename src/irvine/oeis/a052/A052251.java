@@ -4,9 +4,9 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence3;
 import irvine.oeis.a051.A051573;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A052251 Column 3 of A052250.

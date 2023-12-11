@@ -3,9 +3,9 @@ package irvine.oeis.a181;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000005;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A181574 a(n) = Product_{i=2..n} (tau(i)+1)/(tau(i)-1), where tau(.)=A000005(.).

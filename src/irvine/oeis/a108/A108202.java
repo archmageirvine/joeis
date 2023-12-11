@@ -1,9 +1,9 @@
 package irvine.oeis.a108;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a007.A007376;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A108202 a(2n) = A007376(n); a(2n+1) = a(n).

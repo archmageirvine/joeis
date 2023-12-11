@@ -1,12 +1,12 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000108;
 import irvine.oeis.a038.A038776;
+import irvine.oeis.memory.MemorySequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**

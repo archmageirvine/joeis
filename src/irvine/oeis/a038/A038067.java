@@ -3,8 +3,8 @@ package irvine.oeis.a038;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A038067 Product_{k&gt;=1} (1 + x^k)^a(k) = 1 + 2x.

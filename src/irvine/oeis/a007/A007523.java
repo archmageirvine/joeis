@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a092.A092845;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A007523 Primes in A092845 (decimal expansion of Pi written backwards).

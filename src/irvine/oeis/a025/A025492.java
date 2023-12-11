@@ -1,10 +1,10 @@
 package irvine.oeis.a025;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002034;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A025492 Fixed point reached by iterating the Kempner function A002034 starting at n.

@@ -5,8 +5,8 @@ import java.util.Collection;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000045;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A014588 Nim function for Take-a-Fibonacci-Game (a subtraction game).

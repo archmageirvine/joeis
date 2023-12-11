@@ -1,9 +1,9 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000961;
+import irvine.oeis.memory.MemoryFunction2Sequence;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A054685 Number of partitions of n into distinct prime powers (1 not considered a power).

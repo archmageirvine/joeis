@@ -1,9 +1,9 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000032;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A037094 "Sloping binary representation" of Lucas numbers (A000032), slope = +1.

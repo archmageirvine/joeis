@@ -1,7 +1,7 @@
 package irvine.oeis.a058;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A058394 A square array based on natural numbers (A000027) with each term being the sum of 2 consecutive terms in the previous row.

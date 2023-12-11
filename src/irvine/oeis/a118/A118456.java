@@ -2,9 +2,9 @@ package irvine.oeis.a118;
 // manually prodsim at 2021-11-19 23:05
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007918;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A118456 a(n) = Product_{k=1..n} P(k), where P(k) is the smallest prime &gt;= k.

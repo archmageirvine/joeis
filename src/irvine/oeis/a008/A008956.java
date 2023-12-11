@@ -1,8 +1,8 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A008956 Triangle of central factorial numbers |4^k t(2n+1,2n+1-2k)| read by rows (n&gt;=0, k=0..n).

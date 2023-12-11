@@ -1,8 +1,8 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000040;
 import irvine.oeis.a034.A034706;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A050936 Sum of two or more consecutive prime numbers.

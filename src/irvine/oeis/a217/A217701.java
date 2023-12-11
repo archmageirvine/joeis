@@ -2,9 +2,9 @@ package irvine.oeis.a217;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000166;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A217701 Permanent of the n X n matrix with all diagonal entries n and all off diagonal entries 1.

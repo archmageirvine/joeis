@@ -5,9 +5,9 @@ import java.util.ArrayList;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a007.A007732;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A035335 a(n) = smallest number m such that n appears in decimal expansion of 1/m.

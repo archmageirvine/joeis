@@ -1,8 +1,8 @@
 package irvine.oeis.a027;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A027436 f(x) = Sum a(n)*x^n, n = 1..inf satisfies f(f(x)) = x*(1 + 4*x).

@@ -3,9 +3,9 @@ package irvine.oeis.a046;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
+import irvine.oeis.memory.MemorySequence;
 import irvine.util.string.StringUtils;
 
 /**

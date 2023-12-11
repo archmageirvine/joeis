@@ -1,8 +1,8 @@
 package irvine.oeis.a140;
 // Manually modified 2020-09-22
 
-import irvine.oeis.transform.Stirling2TransformSequence;
 import irvine.oeis.a005.A005651;
+import irvine.oeis.transform.Stirling2TransformSequence;
 
 /**
  * A140585 Total number of all hierarchical orderings for all set partitions of n.

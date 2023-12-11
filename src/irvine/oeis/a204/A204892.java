@@ -1,10 +1,10 @@
 package irvine.oeis.a204;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A204892 Least k such that n divides s(k)-s(j) for some j in [1,k), where s(k)=prime(k).

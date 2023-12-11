@@ -1,9 +1,9 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a002.A002110;
 import irvine.oeis.a002.A002808;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A038771 a(n) is the smallest composite number c such that A002110(n) + c is prime.

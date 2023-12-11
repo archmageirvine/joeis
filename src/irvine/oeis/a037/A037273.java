@@ -1,8 +1,8 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.prime.HomePrimeSequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.prime.HomePrimeSequence;
 
 /**
  * A037273 Number of steps to reach a prime under "replace n with concatenation of its prime factors", or -1 if no prime is ever reached.

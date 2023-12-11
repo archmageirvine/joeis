@@ -3,7 +3,6 @@ package irvine.oeis.a056;
 import java.util.ArrayList;
 
 import irvine.math.IntegerUtils;
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partitions.IntegerPartition;
@@ -12,6 +11,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A056885 Triangle T(n,k) = number of minimal covers of an unlabeled n-set that cover k points of that set uniquely, k=0..n.

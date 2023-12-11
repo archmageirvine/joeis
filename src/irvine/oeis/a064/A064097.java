@@ -3,8 +3,8 @@ package irvine.oeis.a064;
 import irvine.factor.factor.LeastPrimeFactorizer;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A064097 A quasi-logarithm defined inductively by a(1) = 0 and a(p) = 1 + a(p-1) if p is prime and a(n*m) = a(n) + a(m) if m,n &gt; 1.

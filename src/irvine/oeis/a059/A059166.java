@@ -2,9 +2,9 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a001.A001187;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A059166 Number of n-node connected labeled graphs without endpoints.

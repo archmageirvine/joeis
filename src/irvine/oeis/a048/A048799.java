@@ -2,9 +2,9 @@ package irvine.oeis.a048;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a038.A038024;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A048799 Decimal expansion of Sum_{n &gt;= 2} 1/S(n)!, where S(n) is the Kempner number A002034(n).

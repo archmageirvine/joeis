@@ -1,10 +1,10 @@
 package irvine.oeis.a062;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a061.A061396;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A062504 Triangle in which k-th row lists natural number values for the collection of riffs with k nodes.

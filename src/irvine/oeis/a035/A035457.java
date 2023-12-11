@@ -2,9 +2,9 @@ package irvine.oeis.a035;
 // Manually adapted from A035456 2020-09.03
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.EulerTransform;
-import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.PrependSequence;
+import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A035457 Number of partitions of n into parts of the form 4*k + 2.

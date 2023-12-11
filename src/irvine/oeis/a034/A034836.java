@@ -2,9 +2,9 @@ package irvine.oeis.a034;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038548;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A034836 Number of ways to write n as n = x*y*z with 1 &lt;= x &lt;= y &lt;= z.

@@ -1,8 +1,8 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A034801 Triangle of Fibonomial coefficients (k=2).

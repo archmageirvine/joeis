@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.transform.DikTransformSequence;
 import irvine.oeis.a000.A000027;
+import irvine.oeis.transform.DikTransformSequence;
 
 /**
  * A032287 "DIK" (bracelet, indistinct, unlabeled) transform of 1,2,3,4,...

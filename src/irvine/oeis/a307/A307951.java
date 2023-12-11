@@ -1,8 +1,8 @@
 package irvine.oeis.a307;
 
 import irvine.math.cr.CR;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.a226.A226775;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A307951 Decimal expansion of 1 - log(2)/log(-W(-2/e^2)), where W is Lambert's W function.

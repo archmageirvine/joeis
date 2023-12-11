@@ -1,7 +1,7 @@
 package irvine.oeis.a058;
 
-import irvine.oeis.closure.DistinctMultiplicativeClosureSequence;
 import irvine.oeis.a000.A000142;
+import irvine.oeis.closure.DistinctMultiplicativeClosureSequence;
 
 /**
  * A058295 Products of distinct factorials.

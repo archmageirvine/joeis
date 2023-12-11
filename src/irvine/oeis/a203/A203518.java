@@ -2,9 +2,9 @@ package irvine.oeis.a203;
 // manually prodsi2 at 2021-11-25
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A203518 a(n) = Product_{2 &lt;= i &lt; j &lt;= n+1} (F(i) + F(j)), where F = A000045 (Fibonacci numbers).

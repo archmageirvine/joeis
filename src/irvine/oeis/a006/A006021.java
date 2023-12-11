@@ -4,8 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.LongUtils;
-import irvine.oeis.memory.MemoryFunctionSequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionSequence;
 
 /**
  * A006021 The game of contours.

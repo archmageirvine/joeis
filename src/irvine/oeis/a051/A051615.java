@@ -3,9 +3,9 @@ package irvine.oeis.a051;
 import java.io.IOException;
 
 import irvine.math.z.Z;
-import irvine.oeis.prime.EuclidMullinSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
+import irvine.oeis.prime.EuclidMullinSequence;
 
 /**
  * A051615 Primes for which A051614 is 3.

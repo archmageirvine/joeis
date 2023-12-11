@@ -1,7 +1,7 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000290;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A034705 Numbers that are sums of consecutive squares.

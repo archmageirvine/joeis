@@ -1,11 +1,11 @@
 package irvine.oeis.a108;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a140.A140758;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A108590 Self-inverse integer permutation induced by Beatty sequences for Pi/2 and Pi/(Pi-2).

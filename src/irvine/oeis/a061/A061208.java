@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
-import irvine.oeis.closure.DistinctAdditiveClosureSequence;
 import irvine.oeis.a000.A000217;
+import irvine.oeis.closure.DistinctAdditiveClosureSequence;
 
 /**
  * A061208 Numbers which can be expressed as sum of distinct triangular numbers (A000217).

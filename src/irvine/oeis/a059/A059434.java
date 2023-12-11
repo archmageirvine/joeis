@@ -1,8 +1,8 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A059434 Triangle formed when cumulative boustrophedon transform is applied to 1, 1, 1, 1, ..., read by rows in natural order.

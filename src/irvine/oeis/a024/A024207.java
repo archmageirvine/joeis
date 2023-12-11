@@ -1,8 +1,8 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
 import irvine.oeis.a008.A008284;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A024207 Number of terms in n-th derivative of a function composed with itself 7 times.

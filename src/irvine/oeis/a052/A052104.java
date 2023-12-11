@@ -1,10 +1,10 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A052104 Numerators of coefficients of the formal power series a(x) such that a(a(x)) = exp(x) - 1.

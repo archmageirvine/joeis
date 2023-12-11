@@ -1,9 +1,9 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a001.A001203;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A032523 Index of first occurrence of n as a term in A001203, the continued fraction for Pi.

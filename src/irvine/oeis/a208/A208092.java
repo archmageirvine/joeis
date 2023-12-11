@@ -1,8 +1,8 @@
 package irvine.oeis.a208;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.MobiusTransformSequence;
 import irvine.oeis.a006.A006207;
+import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
  * A208092 Generalized Fibonacci numbers A_{n,6}.

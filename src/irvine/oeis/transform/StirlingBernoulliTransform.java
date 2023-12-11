@@ -4,9 +4,9 @@ import java.util.List;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * Apply the Stirling-Bernoulli transform to another sequence.

@@ -2,10 +2,10 @@ package irvine.oeis.a004;
 
 import irvine.math.z.Z;
 import irvine.oeis.AlternatingSequence;
-import irvine.oeis.transform.LogarithmicTransformSequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000004;
 import irvine.oeis.a002.A002829;
+import irvine.oeis.transform.LogarithmicTransformSequence;
 
 /**
  * A004109 Number of connected trivalent (or cubic) labeled graphs with 2n nodes.

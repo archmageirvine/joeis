@@ -1,7 +1,7 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.a032.A032175;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A052806 Number of sequences of rooted identity trees with a total of n nodes.

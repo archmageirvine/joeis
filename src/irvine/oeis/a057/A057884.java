@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunctionInt2Sequence;
 
 /**
  * A057884 A square array based on tetrahedral numbers (A000292) with each term being the sum of 2 consecutive terms in the previous row.

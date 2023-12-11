@@ -1,10 +1,10 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.Conjectural;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.a001.A001006;
 
 /**

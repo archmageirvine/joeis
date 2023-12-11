@@ -1,8 +1,8 @@
 package irvine.oeis.a029;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A029847 Gessel-Stanley triangle read by rows: triangle of coefficients of polynomials arising in connection with enumeration of intransitive trees by number of nodes and number of right nodes.

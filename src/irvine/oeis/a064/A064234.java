@@ -2,9 +2,9 @@ package irvine.oeis.a064;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a063.A063994;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A064234 The least k such that A063994(k) = Product_{primes p dividing k} gcd(p-1, k-1) = n, or 0 if there's no such k.

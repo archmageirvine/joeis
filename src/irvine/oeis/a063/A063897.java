@@ -1,9 +1,9 @@
 package irvine.oeis.a063;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a000.A000215;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A063897 a(n) is the least k such that k - A000215(j), j=0..n, are all primes.

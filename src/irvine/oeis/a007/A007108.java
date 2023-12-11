@@ -1,8 +1,8 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.LogarithmicTransformSequence;
 import irvine.oeis.PrependSequence;
+import irvine.oeis.transform.LogarithmicTransformSequence;
 
 /**
  * A007108 Number of connected labeled 2-regular digraphs with n nodes.

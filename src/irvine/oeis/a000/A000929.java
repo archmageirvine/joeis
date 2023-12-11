@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A000929 Dimension of n-th degree part of Steenrod algebra.

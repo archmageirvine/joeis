@@ -1,7 +1,7 @@
 package irvine.oeis.a048;
 
-import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a007.A007629;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A048970 Prime Keith numbers.

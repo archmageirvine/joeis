@@ -1,7 +1,7 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.transform.BinomialTransformSequence;
 import irvine.oeis.a000.A000557;
+import irvine.oeis.transform.BinomialTransformSequence;
 
 /**
  * A005923 From solution to a difference equation.

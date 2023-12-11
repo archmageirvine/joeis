@@ -1,10 +1,10 @@
 package irvine.oeis.a051;
 
 import irvine.math.z.Z;
-import irvine.oeis.closure.DistinctAdditiveClosureSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000142;
+import irvine.oeis.closure.DistinctAdditiveClosureSequence;
 
 /**
  * A051761 Numbers that are simultaneously a sum of distinct factorials and of the form a^b with b &gt;= 2.

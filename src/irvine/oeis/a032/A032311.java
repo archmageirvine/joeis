@@ -1,8 +1,8 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.memory.MemoryFunction2Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A032311 Number of ways to partition n labeled elements into sets of different sizes of at least 2.

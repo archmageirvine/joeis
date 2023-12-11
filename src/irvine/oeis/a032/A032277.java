@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.transform.DikTransformSequence;
 import irvine.oeis.a000.A000035;
+import irvine.oeis.transform.DikTransformSequence;
 
 /**
  * A032277 Number of ways to partition n elements into pie slices each with an odd number of elements allowing the pie to be turned over.

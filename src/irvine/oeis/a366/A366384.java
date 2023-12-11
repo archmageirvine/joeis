@@ -1,8 +1,7 @@
 package irvine.oeis.a366;
 
-import irvine.math.z.Z;
-import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 import irvine.oeis.a355.A355828;
+import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
  * A366384 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A355828(i) = A355828(j) for all i, j &gt;= 1, where A355828 is Dirichlet inverse of A342671, the greatest common divisor of sigma(n) and A003961(n).

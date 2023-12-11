@@ -1,7 +1,7 @@
 package irvine.oeis.a021;
 
-import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.PrependSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A021426 Decimal expansion of 1/422.

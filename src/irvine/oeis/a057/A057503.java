@@ -1,8 +1,8 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A057503 Signature-permutation of a Catalan Automorphism: Deutsch's 1998 bijection on Dyck paths.

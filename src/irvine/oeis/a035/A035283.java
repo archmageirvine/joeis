@@ -1,9 +1,9 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence1;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A035283 Expansion of zeta function of ring H(Q(sqrt(2)).

@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.transform.StirlingBernoulliTransform;
 import irvine.oeis.a000.A000108;
+import irvine.oeis.transform.StirlingBernoulliTransform;
 
 /**
  * A051782 Apply the "Stirling-Bernoulli transform" to Catalan numbers.

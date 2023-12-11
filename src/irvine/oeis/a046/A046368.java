@@ -3,9 +3,9 @@ package irvine.oeis.a046;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002385;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A046368 Products of two palindromic primes.

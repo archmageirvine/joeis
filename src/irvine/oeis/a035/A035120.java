@@ -1,8 +1,8 @@
 package irvine.oeis.a035;
 
-import irvine.oeis.Conjectural;
 import irvine.math.group.QuadraticFieldUtils;
 import irvine.math.z.Z;
+import irvine.oeis.Conjectural;
 import irvine.oeis.a003.A003658;
 
 /**

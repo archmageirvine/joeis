@@ -2,9 +2,9 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a023.A023900;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A045656 Number of 2n-bead balanced binary strings, rotationally equivalent to reverse, complement and reversed complement.

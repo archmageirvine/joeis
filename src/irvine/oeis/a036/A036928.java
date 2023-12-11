@@ -1,8 +1,8 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.closure.MultiplicativeClosureSequence;
 import irvine.oeis.a020.A020449;
+import irvine.oeis.closure.MultiplicativeClosureSequence;
 
 /**
  * A036928 Composite numbers whose prime factors contain no digits other than 0 and 1.

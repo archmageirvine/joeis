@@ -1,10 +1,10 @@
 package irvine.oeis.a039;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002212;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A039660 Related to enumeration of edge-rooted catafusenes.

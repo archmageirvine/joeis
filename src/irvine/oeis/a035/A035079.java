@@ -1,8 +1,8 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.GeneralizedEulerTransform;
 import irvine.oeis.a007.A007561;
+import irvine.oeis.transform.GeneralizedEulerTransform;
 
 /**
  * A035079 Weigh transform of A007561.

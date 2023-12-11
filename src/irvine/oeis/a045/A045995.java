@@ -1,9 +1,9 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 import irvine.oeis.a000.A000045;
 import irvine.oeis.a007.A007318;
+import irvine.oeis.memory.MemorySequence;
 
 /**
  * A045995 Rows of Fibonacci-Pascal triangle.

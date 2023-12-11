@@ -1,6 +1,7 @@
 /* Holonomic sequences where the recurrence equation for a(n)
  * has polynomials in n as coefficients.
  * @(#) $Id$
+ * 2023-12-10: constructor with gfType (EGF, DGF)
  * 2021-02-03: imply "[1]" for empty initTerms
  * 2020-09-24: gftype=2, adjunct(n) to be added to the constant term
  * 2020-07-20, Georg Fischer: public getInitTerms(), protected initialize()
@@ -38,6 +39,9 @@ import irvine.oeis.AbstractSequence;
  */
 public class HolonomicRecurrence extends AbstractSequence {
   static int sDebug = 0;
+  public static final int OGF = 0;
+  public static final int EGF = 1;
+  public static final int DGF = 2;
 
   private final int mOffset;
   protected Z[] mInitTerms; // initial terms for a(n)
@@ -104,6 +108,21 @@ public class HolonomicRecurrence extends AbstractSequence {
    * @param nDist     index distance between the highest recurrence element and a[n]: 0..k-1
    */
   public HolonomicRecurrence(final int offset, final String matrix, final String initTerms, final int nDist) {
+    this(offset, matrix, initTerms, nDist, OGF);
+  }
+
+  /**
+   * Construct a holonomic recurrence sequence from String parameters, with a specified type of the generating function.
+   * @param offset first valid term has this index
+   * @param matrix polynomials as coefficients of <code>n^i, i=0..m</code>,
+   * as an array of String vectors, for example "[[0,1,2],[0],[17,0,18]]"
+   * in the holonomic case, or a simple vector "[0,1,2]" in the linear case.
+   * The brackets must be specified accordingly.
+   * @param initTerms initial values of a[0..k], as a String vector, for example "[0,1,2,3]"
+   * @param nDist index distance between the highest recurrence element and a[n]: 0..k-1
+   * @param gfType one of <code>OGF, EGF, DGF</code>
+   */
+  public HolonomicRecurrence(final int offset, final String matrix, final String initTerms, final int nDist, final int gfType) {
     super(offset);
     mOffset = offset;
     mNDist = nDist;
@@ -135,6 +154,7 @@ public class HolonomicRecurrence extends AbstractSequence {
     }
     mInitTerms = (initTerms.isEmpty() || "[]".equals(initTerms)) ? new Z[] { Z.ONE } : ZUtils.toZ(initTerms);
     initialize();
+    mGfType = gfType;
   } // Constructor
 
   /**

@@ -39,8 +39,11 @@ import irvine.oeis.AbstractSequence;
  */
 public class HolonomicRecurrence extends AbstractSequence {
   static int sDebug = 0;
+  /** Ordinary generating function. */
   public static final int OGF = 0;
+  /** Exponential generating function. */
   public static final int EGF = 1;
+  /** Dirichlet generating function. */
   public static final int DGF = 2;
 
   private final int mOffset;

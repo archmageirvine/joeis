@@ -513,7 +513,7 @@ public final class FactorSequence {
     for (final Map.Entry<Z, Factor> f : mFactors.entrySet()) {
       final Z p = f.getKey();
       if (p.signum() > 0) {
-        prod = prod.multiply(p.pow((f.getValue().mExponent + 1) * degree).subtract(1)).divide(p.pow(degree).subtract(1));
+        prod = prod.multiply(p.pow((f.getValue().mExponent + 1) * degree).subtract(1).divide(p.pow(degree).subtract(1)));
       }
     }
     return prod;

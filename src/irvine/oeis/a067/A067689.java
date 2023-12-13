@@ -1,5 +1,4 @@
 package irvine.oeis.a067;
-// manually n2/n2add1
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -13,17 +12,7 @@ import irvine.oeis.a005.A005249;
  */
 public class A067689 extends A005249 {
 
-  /** Construct the sequence. */
-  public A067689() {
-    super(1);
-    setOffset(0);
-  }
-
   private final Sequence mSeq = new A000984();
-
-  {
-    next();
-  }
 
   @Override
   public Z next() {

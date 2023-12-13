@@ -10,10 +10,6 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class A036567 extends MemorySequence {
 
-  {
-    setOffset(1);
-  }
-
   private static final Q C = new Q(5, 2);
 
   private boolean isOk(final Z m) {
@@ -27,7 +23,7 @@ public class A036567 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    final int n = size() + 1;
+    final int n = size();
     Z m = C.pow(n).ceiling();
     while (!isOk(m)) {
       m = m.add(1);

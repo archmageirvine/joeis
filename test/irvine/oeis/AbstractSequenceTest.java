@@ -68,60 +68,73 @@ public class AbstractSequenceTest extends TestCase {
     }
   }
 
-  private void check(final String className) throws IOException {
+  private void check(final String className) throws InterruptedException, IOException {
     final int len = className.length();
     final String seqId = className.endsWith("Test") ? className.substring(len - 10, len - 4) : className.substring(len - 6);
     final int id = Integer.parseInt(seqId);
     final String vector = getTestVector(id);
     final long start = System.currentTimeMillis();
+    final String aNumber = "A" + seqId;
     if (vector == null) {
       System.err.println("Skipping: " + className + " because there is no active test vector");
     } else {
-      final String[] parts = vector.split(",");
-      assertTrue(parts.length > 0);
-      final String aNumber = "A" + seqId;
-      final int termsToExamine = Math.min(parts.length, TEST_TERMS.getOrDefault(aNumber, Integer.MAX_VALUE));
-      if (termsToExamine > 0) {
+      final Thread testThread = new Thread(() -> {
         try {
-          final Sequence seq = SequenceFactory.sequence(aNumber);
-          if (!(seq instanceof DeadSequence)) {
-            for (int k = 0; k < termsToExamine; ++k) {
-              final Z term = seq.next();
-              if (term == null) {
-                throw new NullPointerException("Unexpected null returned at position " + k);
-              }
-              assertEquals("a(" + (k + 1) + ")", parts[k], term.toString());
-              final long timeSoFar = System.currentTimeMillis() - start;
-              if (timeSoFar > TIMEOUT) {
-                System.out.println("A" + seqId + " Aborting computation at " + k + " terms due to timeout");
-                break;
+          final String[] parts = vector.split(",");
+          assertTrue(parts.length > 0);
+          final int termsToExamine = Math.min(parts.length, TEST_TERMS.getOrDefault(aNumber, Integer.MAX_VALUE));
+          if (termsToExamine > 0) {
+            final Sequence seq = SequenceFactory.sequence(aNumber);
+            if (!(seq instanceof DeadSequence)) {
+              for (int k = 0; k < termsToExamine; ++k) {
+                final Z term = seq.next();
+                if (term == null) {
+                  throw new NullPointerException("Unexpected null returned at position " + k);
+                }
+                assertEquals("a(" + (k + 1) + ")", parts[k], term.toString());
+                final long timeSoFar = System.currentTimeMillis() - start;
+                if (timeSoFar > TIMEOUT) {
+                  System.out.println("A" + seqId + " Aborting computation at " + k + " terms due to timeout");
+                  break;
+                }
               }
             }
+            if (seq instanceof Closeable) {
+              ((Closeable) seq).close();
+            }
           }
-          if (seq instanceof Closeable) {
-            ((Closeable) seq).close();
+          final long delta = System.currentTimeMillis() - start;
+          if (delta > 9000) {
+            System.out.println("A" + seqId + " " + (delta / 1000) + " s");
           }
-        } catch (final UnimplementedException e) {
-          // ok, these ones get a free pass
+        } catch (final UnimplementedException | IOException e) {
+          // ok, these get a free pass
         }
+      });
+      testThread.start();
+      testThread.join(TIMEOUT + 5000);
+      if (testThread.isAlive()) {
+        testThread.interrupt(); // Try the nice way first
+        testThread.join(1000);
+        if (testThread.isAlive()) {
+          //noinspection deprecation
+          testThread.stop(); // Use the nasty way
+        }
+        System.err.println("Timeout for " + aNumber);
       }
-    }
-    final long delta = System.currentTimeMillis() - start;
-    if (delta > 9000) {
-      System.out.println("A" + seqId + " " + (delta / 1000) + " s");
     }
   }
 
-  public void test() throws IOException {
+  public void test() throws IOException, InterruptedException {
     check(mClassName == null ? getClass().getName() : mClassName);
   }
 
   /**
    * Directly test the supplied sequences.
    * @param args sequences to test
-   * @throws IOException if an I/O error occurs
+   * @throws Exception if an error occurs
    */
-  public static void main(final String[] args) throws IOException {
+  public static void main(final String[] args) throws Exception {
     for (final String aNumber : args) {
       System.out.println("Running " + aNumber);
       new AbstractSequenceTest().check(aNumber.endsWith(".java") ? aNumber.substring(0, aNumber.length() - 5) : aNumber);

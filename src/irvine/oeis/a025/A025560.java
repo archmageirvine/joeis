@@ -15,10 +15,10 @@ public class A025560 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    Z l = Z.ONE;
+    Z lcm = Z.ONE;
     for (long k = 0; k <= mN / 2; ++k) {
-      l = l.lcm(Binomial.binomial(mN - k, k));
+      lcm = lcm.lcm(Binomial.binomial(mN - k, k));
     }
-    return l;
+    return lcm;
   }
 }

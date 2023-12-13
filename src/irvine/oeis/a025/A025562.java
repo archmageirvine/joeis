@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 public class A025562 extends A025560 {
 
   private Z mF = Z.ONE;
-  private long mN = 0;
+  private long mN = -1;
 
   {
     setOffset(0);
@@ -17,7 +17,10 @@ public class A025562 extends A025560 {
 
   @Override
   public Z next() {
-    mF = mF.multiply(++mN);
+    if (++mN == 0) {
+      return Z.ONE;
+    }
+    mF = mF.multiply(mN);
     return mF.divide(super.next());
   }
 }

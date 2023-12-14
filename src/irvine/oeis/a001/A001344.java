@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A001344 a(n) = sum_{k=0..2} (n+k)! * C(2,k).
+ * A001344 a(n) = Sum_{k=0..2} (n+k)! * C(2,k).
  * @author Sean A. Irvine
  */
 public class A001344 extends AbstractSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a027.A027760;
 
 /**
- * A091137 Largest number m such that number of times m divides k! is almost k/n for large k, i.e., largest m with A090624(m)=n.
+ * A091137 The Hirzebruch numbers. a(n) = Product_{2 &lt;= p &lt;= n+1, p prime} p^floor(n / (p - 1)).
  * @author Georg Fischer
  */
 public class A091137 extends Sequence0 {

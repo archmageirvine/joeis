@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A001195 Int(n*log((14/11)*n^(10/9))).
+ * A001195 a(n) = floor(n*log((14/11)*n^(10/9))).
  * @author Sean A. Irvine
  */
 public class A001195 extends Sequence0 {

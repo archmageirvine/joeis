@@ -7,7 +7,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a139.A139041;
 
 /**
- * A280101 a(n) = sigma(sigma(p(n)) = sum of the divisors of the sum of the divisors of number of partitions of n.
+ * A280101 a(n) = sigma(sigma(p(n))) = sum of the divisors of the sum of the divisors of number of partitions of n.
  * @author Georg Fischer
  */
 public class A280101 extends AbstractSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a336;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A336483 Floor(n/10) + (5 times last digit of n).
+ * A336483 a(n) = floor(n/10) + (5 times last digit of n).
  * @author Georg Fischer
  */
 public class A336483 extends GeneratingFunctionSequence {

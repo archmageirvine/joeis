@@ -7,7 +7,7 @@ import irvine.oeis.transform.EulerTransform;
 
 
 /**
- * A293378 Expansion of (eta(q^6)/(eta(q)eta(q^2)eta(q^3))^2 in powers of q.
+ * A293378 Expansion of (eta(q^6)/(eta(q)*eta(q^2)*eta(q^3)))^2 in powers of q.
  * @author Georg Fischer
  */
 public class A293378 extends EulerTransform {

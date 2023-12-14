@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A288656 a(n) = Sum_{k=1..n} Sum_{i=floor((k-1)/2)..k-1)} i * c(i), where c is the prime characteristic (A010051).
+ * A288656 a(n) = Sum_{k=1..n} Sum_{i=floor((k-1)/2)..k-1} i * c(i), where c is the prime characteristic (A010051).
  * a(n)=sum(k=1, n, sum(i=floor((k-1)/2), k-1, i*(primepi(i)-primepi(i-1))))
  * @author Georg Fischer
  */

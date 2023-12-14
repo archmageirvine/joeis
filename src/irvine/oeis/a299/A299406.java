@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A299406 G.f.: Sum_{n&gt;0} a(n)/n^s = ((zeta(s)*zeta(6*s))/((zeta(2*s)*zeta(3*s)).
+ * A299406 Dirichlet g.f.: Sum_{n&gt;0} a(n)/n^s = (zeta(s)*zeta(6*s))/(zeta(2*s)*zeta(3*s)).
  * @author Georg Fischer
  */
 public class A299406 extends MultiplicativeSequence {

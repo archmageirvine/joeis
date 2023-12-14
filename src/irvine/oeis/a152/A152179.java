@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008865;
 
 /**
- * A152179 (n^2-2=A008865) mod 9. Period 9:repeat 8,2,7,5,5,7,2,8,7.
+ * A152179 (n^2-2=A008865) mod 9. Period 9: repeat 8,2,7,5,5,7,2,8,7.
  * @author Georg Fischer
  */
 public class A152179 extends A008865 {

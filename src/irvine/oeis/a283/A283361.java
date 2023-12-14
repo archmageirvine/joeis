@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A283361 a(n) = Product_{k=2..floor(2*n/3} (k^2 (mod 2n-1)).
+ * A283361 a(n) = (Product_{k=2..floor(2*n/3)} k^2) mod (2n-1).
  * @author Georg Fischer
  */
 public class A283361 extends Sequence0 {

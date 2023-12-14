@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a026.A026352;
 
 /**
- * A283969 a(n) = n + 1 + Sum_({k=0..n} floor((n-k)/r, where r = (3+sqrt(5))/2).
+ * A283969 a(n) = n + 1 + Sum_{k=0..n} floor((n-k)/r), where r = (3+sqrt(5))/2.
  * @author Sean A. Irvine
  */
 public class A283969 extends PartialSumSequence {

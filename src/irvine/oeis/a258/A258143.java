@@ -4,7 +4,7 @@ package irvine.oeis.a258;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A258143 Row sums of A257241, Stifel&apos;s version of the arithmetical triangle.
+ * A258143 Row sums of A257241, Stifel's version of the arithmetical triangle.
  * x*(2+3*x+x^2-1/2*(-x^2+1)*(x+1)*(1-(-4*x^2+1)^(1/2))/x^2)/(-4*x^2+1)/(-x^2+1)
  * @author Georg Fischer
  */

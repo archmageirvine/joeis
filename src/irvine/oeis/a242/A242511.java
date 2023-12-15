@@ -4,7 +4,7 @@ package irvine.oeis.a242;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A242511 a(n) = number of knight&apos;s move paths of minimal length n steps, from origin (0,0) at center of an infinite open chessboard to square (0,0) for n=0; square (2,-1) for n=1; and square (2n-3, (n+1)mod 2) for n&gt;=2.
+ * A242511 a(n) = number of knight's move paths of minimal length n steps, from origin (0,0) at center of an infinite open chessboard to square (0,0) for n=0; square (2,-1) for n=1; and square (2n-3, (n+1)mod 2) for n&gt;=2.
  * (-10+10*x+127*x^2-111*x^3-576*x^4+410*x^5+1072*x^6-528*x^7-624*x^8+144*x^9+((1-2*x)^7*(2*x+1)^5)^(1/2)*(x^5+x^4-3*x^3-7*x^2+10*x+10))/((1-2*x)^7*(2*x+1)^5)^(1/2)/x^4
  * @author Georg Fischer
  */

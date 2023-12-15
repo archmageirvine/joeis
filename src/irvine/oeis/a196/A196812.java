@@ -4,7 +4,7 @@ package irvine.oeis.a196;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A196812 Number of ways to place 2 nonattacking nightriders on an n X n toroidal board
+ * A196812 Number of ways to place 2 nonattacking nightriders on an n X n toroidal board.
  * -2*x^2*(2*x^29+25*x^28+151*x^27+620*x^26+1965*x^25+5094*x^24+11169*x^23+21370*x^22+36349*x^21+56009*x^20+78898*x^19+102778*x^18+124128*x^17+139254*x^16+144792*x^15+139276*x^14+123618*x^13+101232*x^12+76538*x^11+53680*x^10+35008*x^9+21359*x^8+12037*x^7+6226*x^6+2853*x^5+1122*x^4+351*x^3+82*x^2+13*x+1)/(x-1)^5/(x+1)^3/(x^2+1)^3/(x^2+x+1)^3/(x^4+x^3+x^2+x+1)^3
  * @author Georg Fischer
  */

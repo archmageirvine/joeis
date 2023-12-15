@@ -24,7 +24,7 @@ public class A067287 extends A067030 {
   @Override
   public Z next() {
     while (true) {
-      Z k = super.next();
+      final Z k = super.next();
       if (k.isZero()) {
         return Z.ZERO;
       }

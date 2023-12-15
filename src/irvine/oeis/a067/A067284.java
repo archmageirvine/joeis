@@ -22,7 +22,7 @@ public class A067284 extends A067030 {
 
   @Override
   public Z next() {
-    Z k = super.next();
+    final Z k = super.next();
     if (k.isZero()) {
       return Z.ONE;
     }

@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002379;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A067229.
+ * A067394 Number of distinct prime factors in floor((3/2)^n).
  * @author Sean A. Irvine
  */
 public class A067394 extends SimpleTransformSequence {

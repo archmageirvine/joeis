@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067229.
+ * A067432 Number of ways to represent the n-th prime in form p*q+p+q, where p and q are primes (see A066938).
  * @author Sean A. Irvine
  */
 public class A067432 extends A000040 {

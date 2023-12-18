@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067229.
+ * A067400 Non-uniquely factorizable OR-numbrals, i.e., numbrals for which there exist more than one different factorizations into irreducible factors (modulo order).
  * @author Sean A. Irvine
  */
 public class A067400 extends Sequence1 {

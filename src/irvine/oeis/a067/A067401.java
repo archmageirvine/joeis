@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 
 /**
- * A067229.
+ * A067401 Minimal non-uniquely factorizable OR-numbrals, i.e., numbrals that are not uniquely factorizable but for which all proper divisors are.
  * @author Sean A. Irvine
  */
 public class A067401 extends A067400 {

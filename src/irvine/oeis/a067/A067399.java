@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067229.
+ * A067399 Number of divisors of n in OR-numbral arithmetic.
  * @author Sean A. Irvine
  */
 public class A067399 extends Sequence1 {

@@ -2316,3 +2316,4 @@ A067167	A067155(n)/n.
 A067168	A067156(n)/n.
 A067169	A067157(n)/n.
 A067329 Triangle of coefficients of polynomials used for g.f.s of columns of A067304.
+A067498	Maximum number of reflections for a ray of light which reflects at n points (reflecting more than once at most or all points).

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067229.
+ * A067433 Triangle in which row n gives trajectory of n under the map k -&gt; k/3 if k is divisible by 3, otherwise k -&gt; next multiple of 3, stopping when reaching 1 (the initial term n is not included).
  * @author Sean A. Irvine
  */
 public class A067433 extends Sequence1 {

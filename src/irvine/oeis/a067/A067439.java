@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067229.
+ * A067439 a(n) = sum of all the remainders when n is divided by positive integers less than and coprime to n.
  * @author Sean A. Irvine
  */
 public class A067439 extends Sequence1 {

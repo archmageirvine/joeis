@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067229.
+ * A067452 Numbers, not composed of the same digits, such that the geometric and arithmetic means of their decimal digits are integers.
  * @author Sean A. Irvine
  */
 public class A067452 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A067229.
+ * A067453 a(n) = binomial(a,b) where a&gt;=b and one of a and b is the product of the nonzero decimal digits of n and the other is the sum of the decimal digits of n.
  * @author Sean A. Irvine
  */
 public class A067453 extends Sequence0 {

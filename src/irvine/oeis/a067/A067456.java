@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A067456.
+ * A067456 Floor( sqrt( sum of the decimal digits of n squared)).
  * @author Sean A. Irvine
  */
 public class A067456 extends Sequence0 {

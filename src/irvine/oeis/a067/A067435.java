@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000593;
 
 /**
- * A067229.
+ * A067435 a(n) is the sum of all the remainders when n-th odd number is divided by odd numbers &lt; 2n-1.
  * @author Sean A. Irvine
  */
 public class A067435 extends Sequence1 {

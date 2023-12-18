@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067229.
+ * A067398 Squares in OR-numbral arithmetic.
  * @author Sean A. Irvine
  */
 public class A067398 extends Sequence1 {

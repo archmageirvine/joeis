@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067229.
+ * A067440 Sum(i(n)), where i(n) is the smallest integer with i(n)^m=n for some m.
  * @author Sean A. Irvine
  */
 public class A067440 extends Sequence1 {

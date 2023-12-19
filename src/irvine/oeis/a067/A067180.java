@@ -18,7 +18,7 @@ public class A067180 extends Sequence1 {
   private static final List<Z> EMPTY = Collections.emptyList();
   private long mN = 0;
 
-  private List<Z> g(final long s, final long d) {
+  static List<Z> g(final long s, final long d) {
     if (s > 9 * d) {
       return EMPTY;
     }

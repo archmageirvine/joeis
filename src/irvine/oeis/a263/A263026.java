@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A263026 a(n) = Sum_{k=1..n} stirling2(n,k)*((k+1)!)^3)/8.
+ * A263026 a(n) = Sum_{k=1..n} stirling2(n,k)*((k+1)!)^3/8.
  * a(n)=sum(k=1,n,stirl2(n,k)*((k+1)!)^3/8)
  * @author Georg Fischer
  */

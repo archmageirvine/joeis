@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A346750 E.g.f.: log( 1 + x^2 * exp(x) / 2 ).
+ * A346750 Expansion of e.g.f. log( 1 + x^2 * exp(x) / 2 ).
  * E.g.f.: log( 1 + x^2 * exp(x) / 2 )
  * @author Georg Fischer
  */

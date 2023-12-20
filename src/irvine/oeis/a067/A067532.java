@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067180.
+ * A067532 Numbers n such that n + number of divisors is a prime.
  * @author Sean A. Irvine
  */
 public class A067532 extends Sequence1 {

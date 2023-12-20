@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067180 Smallest prime with digit sum n, or 0 if no such prime exists.
+ * A067524 Smallest composite number with digit sum n.
  * @author Sean A. Irvine
  */
 public class A067524 extends Sequence1 {

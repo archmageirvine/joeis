@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067180.
+ * A067533 Numbers k such that both k - tau(k) and k + tau(k) are prime where tau(k) = A000005(k).
  * @author Sean A. Irvine
  */
 public class A067533 extends Sequence1 {

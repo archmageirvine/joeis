@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A067180.
+ * A067527 n - 3^k is a prime for all k &gt; 0 such that 3^k &lt; n.
  * @author Sean A. Irvine
  */
 public class A067527 extends Sequence1 {

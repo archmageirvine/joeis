@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A346755 E.g.f.: -log( 1 - x^4 * exp(x) / 4! ).
+ * A346755 Expansion of e.g.f. -log( 1 - x^4 * exp(x) / 4! ).
  * E.g.f.: -log( 1 - x^4 * exp(x) / 24 )
  * @author Georg Fischer
  */

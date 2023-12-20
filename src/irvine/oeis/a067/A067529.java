@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A067180.
+ * A067529 n - 5^k is a prime for all k &gt; 0 and n &gt; 5^k.
  * @author Sean A. Irvine
  */
 public class A067529 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a122;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A122803 Powers of -2.
+ * A122803 Powers of -2: a(n) = (-2)^n.
  * @author Georg Fischer
  */
 public class A122803 extends GeneratingFunctionSequence {

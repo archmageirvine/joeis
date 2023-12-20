@@ -4,7 +4,7 @@ package irvine.oeis.a352;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A352779 a(n) = (-3)^n.
+ * A352779 Powers of -3: a(n) = (-3)^n.
  * @author Georg Fischer
  */
 public class A352779 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000142;
 
 /**
- * A067455 n! divided by the product of the decimal digits of n.
+ * A067455 Let m be the product of the decimal digits in n, then a(n) = 0 if m = 0, otherwise a(n) = n!/m.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

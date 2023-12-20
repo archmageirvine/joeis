@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A228562 Composite numbers n that are not prime powers such that binomial(2n-1, n-1) is congruent to 1 (mod n).
+ * A228562 Composite numbers k that are not prime powers such that binomial(2k-1, k-1) is congruent to 1 (mod k).
  *
  * @author Georg Fischer
  */

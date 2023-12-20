@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005117;
 
 /**
- * A067180.
+ * A067535 Smallest squarefree number &gt;= n.
  * @author Sean A. Irvine
  */
 public class A067535 extends A005117 {

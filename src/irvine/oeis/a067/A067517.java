@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000045;
 import irvine.util.string.StringUtils;
 
 /**
- * A067517 Fibonacci numbers which can be partitioned into group of digits which are Fibonacci numbers.
+ * A067517 Fibonacci numbers which can be partitioned into groups of digits which are Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A067517 extends Sequence1 {

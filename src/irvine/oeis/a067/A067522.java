@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067180.
+ * A067522 Smallest prime with sum of digits = 2^n.
  * @author Sean A. Irvine
  */
 public class A067522 extends Sequence1 {

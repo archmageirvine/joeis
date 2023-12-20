@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A067180.
+ * A067528 Numbers n such that n - 4^k is a prime or 1 for all k &gt; 0 and n &gt; 4^k.
  * @author Sean A. Irvine
  */
 public class A067528 extends Sequence1 {

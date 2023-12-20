@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A067180.
+ * A067561 Radii n of circles with integer radius that can approximately be squared integrally: the floor or ceiling of Pi*n^2 is an integer square.
  * @author Sean A. Irvine
  */
 public class A067561 extends Sequence1 {

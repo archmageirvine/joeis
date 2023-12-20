@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A346754 E.g.f.: -log( 1 - x^3 * exp(x) / 3! ).
+ * A346754 Expansion of e.g.f. -log( 1 - x^3 * exp(x) / 3! ).
  * E.g.f.: -log( 1 - x^3 * exp(x) / 6 )
  * @author Georg Fischer
  */

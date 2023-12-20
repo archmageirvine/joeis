@@ -6,7 +6,7 @@ import irvine.oeis.a128.A128227;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A114219 Number triangle (k-(k-1)*0^(n-k))*[k&lt;=n].
+ * A114219 Number triangle T(n,k) = (k-(k-1)*0^(n-k))*[k&lt;=n].
  * @author Georg Fischer
  */
 public class A114219 extends PrependColumn {

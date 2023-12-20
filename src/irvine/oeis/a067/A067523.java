@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import irvine.oeis.FilterSequence;
 
 /**
- * A067180.
+ * A067523 The smallest prime with a possible given digit sum.
  * @author Sean A. Irvine
  */
 public class A067523 extends FilterSequence {

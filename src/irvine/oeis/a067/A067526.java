@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A067180.
+ * A067526 Numbers n such that n - 2^k is a prime or 1 for all k satisfying 0 &lt; k, 2^k &lt; n.
  * @author Sean A. Irvine
  */
 public class A067526 extends Sequence1 {

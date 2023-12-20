@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.GeneralizedEulerTransform;
 
 /**
- * A266945 Expansion of Product_{k&gt;=1} 1 / (1 - 2*x^k))^3.
+ * A266945 Expansion of Product_{k&gt;=1} 1 / (1 - 2*x^k)^3.
  * G.f.: <code>Product_{k&gt;=1} (1/(1-2*x^k))^3)</code>
  * @author Georg Fischer
  */

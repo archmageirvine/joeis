@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A067180.
+ * A067530 Numbers k such that k - m! is a prime or 1 for all m &gt; 1 and k &gt; m!.
  * @author Sean A. Irvine
  */
 public class A067530 extends Sequence1 {

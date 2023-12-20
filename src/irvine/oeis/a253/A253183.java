@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 import irvine.oeis.transform.EtaProductSequence;
 
 /**
- * A253183 Expansion of (q^3 * psi(q) * psi(q^23)^2 in powers of q where psi() is a Ramanujan theta function.
+ * A253183 Expansion of (q^3 * psi(q) * psi(q^23))^2 in powers of q where psi() is a Ramanujan theta function.
  * Eta product <code>eta(q^2)^4*eta(q^46)^4/eta(q)^2/eta(q^23)^2</code>
  * @author Georg Fischer
  */

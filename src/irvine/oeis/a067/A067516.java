@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
- * A067516 Fibonacci numbers starting with a Fibonacci number of at least two digits.
+ * A067516 Fibonacci numbers starting with a different Fibonacci number of at least two digits.
  * @author Sean A. Irvine
  */
 public class A067516 extends Sequence1 {

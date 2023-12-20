@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A253189 Triangle T(n, m)=Sum_{k=1..(n-m)/3} C(m, k)*T((n-m)/3, k)), T(n,n)=1.
+ * A253189 Triangle T(n, m)=Sum_{k=1..(n-m)/3} C(m, k)*T((n-m)/3, k), T(n,n)=1.
  * @author Georg Fischer
  */
 public class A253189 extends Triangle {

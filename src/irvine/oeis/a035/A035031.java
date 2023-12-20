@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A035031 For n &gt;= 6, max( prevprime(n), 2*prevprime(floor((n-1)/2))).
+ * A035031 For n &gt;= 7, max(A151799(n), 2*A151799(floor((n-1)/2))).
  * @author Sean A. Irvine
  */
 public class A035031 extends Sequence1 {

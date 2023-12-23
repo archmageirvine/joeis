@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A233340
+ * A233340 Number of tilings of a 5 X 3n rectangle using 5n trominoes of any shape.
  * @author Georg Fischer
  */
 public class A233340 extends GeneratingFunctionSequence {

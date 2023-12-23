@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.prime.HomePrimeSequence;
 
 /**
- * A067598.
+ * A067598 Decimal encoding of the prime factorization of n is a multiple of n.
  * @author Sean A. Irvine
  */
 public class A067598 extends Sequence1 {

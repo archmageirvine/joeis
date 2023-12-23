@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A323352
+ * A323352 Number of tilings of an 8 X n rectangle using 2*n copies of the disconnected shape [oo__oo].
  * @author Georg Fischer
  */
 public class A323352 extends GeneratingFunctionSequence {

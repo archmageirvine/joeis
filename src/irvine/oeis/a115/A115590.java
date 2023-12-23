@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A115590 a(0) = 1; a(n+1) = (1+a(n))^3.
+ * A115590 a(0) = 0; a(n) = (1+a(n-1))^3 for n &gt; 0.
  * <code>a(n)=(a(n-1)+1)^3</code>
  * @author Georg Fischer
  */

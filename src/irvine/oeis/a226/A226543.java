@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A226543
+ * A226543 Number of tilings of a 9 X n rectangle using 1 X 1 squares and L-tiles.
  * @author Georg Fischer
  */
 public class A226543 extends GeneratingFunctionSequence {

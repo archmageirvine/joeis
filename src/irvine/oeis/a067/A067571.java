@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A067564 Numbers n such that determinant[{{n, phi(n), sigma(n)}, {n+1, phi(n+1), sigma(n+1)}, {n+2, phi(n+2), sigma(n+2)}] is a nonnegative cube.
+ * A067571 Numbers n such that determinant[{{n,phi(n)},{n+1,phi(n+1)}}]is a perfect square.
  * @author Sean A. Irvine
  */
 public class A067571 extends Sequence1 {

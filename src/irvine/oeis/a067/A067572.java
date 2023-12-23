@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A067564.
+ * A067572 Numbers n such that determinant[{{n, sigma(n)}, {n+1, sigma(n+1)}}] is a perfect square.
  * @author Sean A. Irvine
  */
 public class A067572 extends Sequence1 {

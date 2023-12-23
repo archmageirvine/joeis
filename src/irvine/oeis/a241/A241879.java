@@ -4,7 +4,7 @@ package irvine.oeis.a241;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A241879
+ * A241879 Number of ascent sequences of length n with exactly nine descents.
  * @author Georg Fischer
  */
 public class A241879 extends GeneratingFunctionSequence {

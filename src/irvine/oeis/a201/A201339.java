@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A201339 Expansion of e.g.f.: exp(x) / (3 - 2*exp(x)).
+ * A201339 Expansion of e.g.f. exp(x) / (3 - 2*exp(x)).
  * E.g.f.: exp(x) / (3 - 2*exp(x))
  * @author Georg Fischer
  */

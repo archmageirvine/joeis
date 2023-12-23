@@ -8,7 +8,7 @@ import irvine.oeis.a006.A006906;
 import irvine.util.string.StringUtils;
 
 /**
- * A067520.
+ * A067569 Numbers n such that A000041(n) divides A006906(n).
  * @author Sean A. Irvine
  */
 public class A067569 extends Sequence1 {

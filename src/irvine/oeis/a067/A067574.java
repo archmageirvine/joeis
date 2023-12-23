@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067564.
+ * A067574 Array T(i,j) read by ascending antidiagonals, where T(i,j) is the concatenation of i and j (1&lt;=i, 1&lt;=j).
  * @author Sean A. Irvine
  */
 public class A067574 extends Sequence1 {

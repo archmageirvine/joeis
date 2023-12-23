@@ -4,7 +4,7 @@ package irvine.oeis.a220;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A220300
+ * A220300 Number of ways to cut a 7 X n rectangle into rectangles with integer sides.
  * @author Georg Fischer
  */
 public class A220300 extends GeneratingFunctionSequence {

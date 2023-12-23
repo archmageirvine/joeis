@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067564.
+ * A067577 a(n) = Product_{i=1..n} sigma(i) * Sum_{i=1..n} 1/sigma(i).
  * @author Sean A. Irvine
  */
 public class A067577 extends Sequence1 {

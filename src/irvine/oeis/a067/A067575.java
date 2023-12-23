@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067564.
+ * A067575 Numbers k that divide phi(k)*bigomega(k).
  * @author Sean A. Irvine
  */
 public class A067575 extends Sequence1 {

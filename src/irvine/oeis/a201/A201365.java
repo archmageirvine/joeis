@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A201365 Expansion of e.g.f.: exp(x) / (5 - 4*exp(x)).
+ * A201365 Expansion of e.g.f. exp(x) / (5 - 4*exp(x)).
  * E.g.f.: exp(x) / (5 - 4*exp(x))
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ package irvine.oeis.a084;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A084182 3^n+(-1)^n-[1/(n+1)], where [] represents the floor function.
+ * A084182 a(n) = 3^n + (-1)^n - [1/(n+1)], where [] represents the floor function.
  * @author Georg Fischer
  */
 public class A084182 extends LinearRecurrence {

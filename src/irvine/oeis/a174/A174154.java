@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A174154
+ * A174154 Number of ways to place 6n nonattacking kings on a 12 x 2n chessboard.
  * @author Georg Fischer
  */
 public class A174154 extends GeneratingFunctionSequence {

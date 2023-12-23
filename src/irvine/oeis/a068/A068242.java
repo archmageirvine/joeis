@@ -4,7 +4,7 @@ package irvine.oeis.a068;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A068242
+ * A068242 1/2 the number of colorings of a 6 X 6 square array with n colors.
  * @author Georg Fischer
  */
 public class A068242 extends GeneratingFunctionSequence {

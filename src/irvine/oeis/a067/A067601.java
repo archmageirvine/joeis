@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067598.
+ * A067601 a(n) is the number of inequivalent permutations of {0..2n-1}, such that the first differences (modulo 2n) are a permutation of {1..2n-1}.
  * @author Sean A. Irvine
  */
 public class A067601 extends Sequence1 {

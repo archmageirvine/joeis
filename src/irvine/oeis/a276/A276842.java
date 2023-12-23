@@ -4,7 +4,7 @@ package irvine.oeis.a276;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A276842
+ * A276842 Number of permutations of [n] such that for each cycle c the smallest integer interval containing all elements of c has at most eight elements.
  * @author Georg Fischer
  */
 public class A276842 extends GeneratingFunctionSequence {

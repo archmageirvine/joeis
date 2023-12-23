@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001414;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A067520.
+ * A067566 Smallest k such that k = n*A001414(k) (or 0 if no such k exists), where A001414(k) is the integer log of k, i.e., Sum p_i*e_i if the prime factorization of k is Product p_i^e_i.
  * @author Sean A. Irvine
  */
 public class A067566 extends Sequence1 implements Conjectural {

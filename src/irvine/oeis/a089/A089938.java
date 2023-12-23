@@ -4,7 +4,7 @@ package irvine.oeis.a089;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A089938 Number of 7 X n matrices with entries {0,1} without adjacent 0&apos;s in any row or column. 7th row of A089934.
+ * A089938 Number of 7 X n matrices with entries {0,1} without adjacent 0's in any row or column. 7th row of A089934.
  * @author Georg Fischer
  */
 public class A089938 extends GeneratingFunctionSequence {

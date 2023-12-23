@@ -4,7 +4,7 @@ package irvine.oeis.a270;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A270065
+ * A270065 Number of tilings of a 5 X n rectangle using monominoes and trominoes of any shape.
  * @author Georg Fischer
  */
 public class A270065 extends GeneratingFunctionSequence {

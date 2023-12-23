@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A259779
+ * A259779 Number of permutations p of [n] with no fixed points and displacement of elements restricted by six: 1 &lt;= |p(i)-i| &lt;= 6.
  * @author Georg Fischer
  */
 public class A259779 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a251;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A251073
+ * A251073 Number of tilings of a 9 X n rectangle using 3n trominoes of shape I.
  * @author Georg Fischer
  */
 public class A251073 extends GeneratingFunctionSequence {

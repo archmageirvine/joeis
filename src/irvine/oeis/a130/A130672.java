@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A130672
+ * A130672 1/2048 the number of permutations of 0..n having exactly 8 maxima.
  * @author Georg Fischer
  */
 public class A130672 extends GeneratingFunctionSequence {

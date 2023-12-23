@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A179340
+ * A179340 Number of permutations of 1..n with i-5&lt;=p(i)&lt;=i+4.
  * @author Georg Fischer
  */
 public class A179340 extends GeneratingFunctionSequence {

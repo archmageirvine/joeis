@@ -4,7 +4,7 @@ package irvine.oeis.a219;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A219990
+ * A219990 Number of tilings of a 7 X n rectangle using dominoes and right trominoes.
  * @author Georg Fischer
  */
 public class A219990 extends GeneratingFunctionSequence {

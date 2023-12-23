@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A067564.
+ * A067576 Array T(i,j) read by downward antidiagonals, where T(i,j) is the j-th term whose binary expansion has i 1's.
  * @author Sean A. Irvine
  */
 public class A067576 extends Sequence1 {

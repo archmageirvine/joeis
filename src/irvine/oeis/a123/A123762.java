@@ -12,8 +12,8 @@ public class A123762 extends AbstractSequence implements DirectSequence {
 
   private static final int MAX_BLOCKS = 100; //Maximal number of bricks (unattainable unless b=w=1)
   private final int mMask; // bit mask for optional features
-  private int mW; // width
-  private int mB; // breadth
+  private final int mW; // width
+  private final int mB; // breadth
   private int mOptions; // The size of the bricks studied, and the number of ways to attach one such under another
   private int mN; // The total number of bricks to place, and the number placed this far
   private final int[] mX = new int[MAX_BLOCKS];
@@ -52,14 +52,15 @@ public class A123762 extends AbstractSequence implements DirectSequence {
    * @param at attach to this brick
    * @param i current index
    */
-  private void placeRelative(int at, int i) {
-    int b0, w0;
+  private void placeRelative(final int at, int i) {
     if (i >= mOptions) { // Downwards
       i -= mOptions;
       mZ[mPlaced] = mZ[at] - 1;
     } else { // Upwards
       mZ[mPlaced] = mZ[at] + 1;
     }
+    final int b0;
+    final int w0;
     if (i >= (2 * mW - 1) * (2 * mB - 1)) {
       // Perpendicularly (not square)
       i -= (2 * mW - 1) * (2 * mB - 1);
@@ -81,11 +82,11 @@ public class A123762 extends AbstractSequence implements DirectSequence {
     }
   }
 
-  private int xdim(int i) {
+  private int xdim(final int i) {
     return mHz[i] ? mW : mB;
   }
 
-  private int ydim(int i) {
+  private int ydim(final int i) {
     return mHz[i] ? mB : mW;
   }
 
@@ -95,18 +96,18 @@ public class A123762 extends AbstractSequence implements DirectSequence {
    * @param j index of second brick
    * @return true when the xy-projections of bricks at i and j overlap
    */
-  private boolean meetsXY(int i, int j) {
+  private boolean meetsXY(final int i, final int j) {
     return (!(mX[i] + xdim(i) <= mX[j] || mY[i] + ydim(i) <= mY[j] || mX[i] >= mX[j] + xdim(j) || mY[i] >= mY[j] + ydim(j)));
   }
 
   /**
-   * Check whether a brick is placable.
+   * Check whether a brick is placeable.
    * @param attachable limit for bricks placed before
    * @return true when the brick in workspace (i.e. at index mPlaced) can be attached to building.
    * It must not collide with any other brick, nor could have been attached at an earlier time in the
    * computation.
    */
-  private boolean placeable(int attachable) {
+  private boolean placeable(final int attachable) {
     for (int i = 0; i < mPlaced; i++) {
       if (meetsXY(i, mPlaced)) {
         switch (mZ[i] - mZ[mPlaced]) {
@@ -124,7 +125,7 @@ public class A123762 extends AbstractSequence implements DirectSequence {
         }
       }
     }
-    return ((mMask & 8) == 0) ? true : mHz[mPlaced]; // this forces the orientation in one direction
+    return (mMask & 8) == 0 || mHz[mPlaced]; // this forces the orientation in one direction
   }
 
   /**
@@ -225,11 +226,11 @@ public class A123762 extends AbstractSequence implements DirectSequence {
 
   /**
    * Count configurations recursively adding bricks to index <code>attachFrom</code>. If <code>indexFrom</code> is positive the bricks added
-   * to the brick at <code>attachFrom</code> must have index bigger than or equal to <code>indexFrom</code>,
+   * to the brick at <code>attachFrom</code> must have an index bigger than or equal to <code>indexFrom</code>,
    * in the sense of the <code>placeRelative()</code> method.
    * Several global variables are used for efficiency.
    */
-  private void count(int attachFrom, int indexFrom) {
+  private void count(final int attachFrom, int indexFrom) {
     //** System.out.println("attachFrom=" + attachFrom + ", indexFrom=" + indexFrom + ", mPlaced=" + mPlaced);
     if (mN == mPlaced) { // Configuration finished, compute and add weight
       int sw = symmetryWeight();
@@ -265,8 +266,6 @@ public class A123762 extends AbstractSequence implements DirectSequence {
   @Override
   public Z a(final Z nz) {
     mN = nz.intValueExact();
-    mW = mW;
-    mB = mB;
     mOptions = ((mW == mB) ? (mW + mB - 1) * (mW + mB - 1) : (mW + mB - 1) * (mW + mB - 1) + (2 * mW - 1) * (2 * mB - 1));
     mX[0] = 0;
     mY[0] = 0;
@@ -275,6 +274,6 @@ public class A123762 extends AbstractSequence implements DirectSequence {
     mCounter = 0;
     mPlaced = 1;
     count(0, 0);
-    return Z.valueOf((mCounter / (mN * ((mB == mW) ? 4 : 2))));
+    return Z.valueOf((mCounter / ((long) mN * ((mB == mW) ? 4 : 2))));
   }
 }

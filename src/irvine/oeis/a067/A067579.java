@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067564.
+ * A067579 Conjectured values of a(n) defined by: a(n) = first prime appearing in the orbit n, f(n), f(f(n)),...., if it exists; = 0 otherwise, where f(n) = n + sigma(n).
  * @author Sean A. Irvine
  */
 public class A067579 extends Sequence1 {

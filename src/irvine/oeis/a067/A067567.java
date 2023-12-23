@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067520.
+ * A067567 Odd numbers with an odd number of partitions.
  * @author Sean A. Irvine
  */
 public class A067567 extends Sequence1 {

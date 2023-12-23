@@ -4,7 +4,7 @@ package irvine.oeis.a287;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A287281
+ * A287281 Number of set partitions of [n] such that for each block all absolute differences between consecutive elements are &lt;= nine.
  * @author Georg Fischer
  */
 public class A287281 extends GeneratingFunctionSequence {

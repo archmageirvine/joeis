@@ -6,7 +6,7 @@ import irvine.oeis.InverseSequence;
 import irvine.oeis.a006.A006255;
 
 /**
- * A067520.
+ * A067565 Inverse of R. L. Graham's sequence (A006255), or zero if and only if n is a prime.
  * @author Sean A. Irvine
  */
 public class A067565 extends InverseSequence {

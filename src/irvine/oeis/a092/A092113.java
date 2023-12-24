@@ -11,7 +11,7 @@ import irvine.util.array.LongDynamicIntArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A058986.
+ * A092113 Triangle read by rows: T(n,k) is the number of stacks of n pancakes requiring k = 0, ..., A058986(n) flips to sort.
  * @author Sean A. Irvine
  */
 public class A092113 extends Sequence1 {

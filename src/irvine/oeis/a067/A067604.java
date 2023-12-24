@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067603.
+ * A067604 Smallest prime p of two consecutive primes, p &lt; q, such that gcd(p+1, q+1) = 2n.
  * @author Sean A. Irvine
  */
 public class A067604 extends Sequence1 {

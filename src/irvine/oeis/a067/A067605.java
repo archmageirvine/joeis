@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067603.
+ * A067605 Least k such that gcd(prime(k+1)-1, prime(k)-1) = 2n.
  * @author Sean A. Irvine
  */
 public class A067605 extends Sequence1 {

@@ -5,7 +5,7 @@ package irvine.oeis.a191;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A191520 Number of UUU's in all the dispersed Dyck paths of semilength n (i.e., in all Motzkin paths of length n (U=(1,1)).
+ * A191520 Number of UUU's in all the dispersed Dyck paths of semilength n (i.e., in all Motzkin paths of length n; U=(1,1)).
  * radtorec(1/2*(1-3*x^2-(-x^2+1)*(-4*x^2+1)^(1/2))/(1-2*x)/(-4*x^2+1)^(1/2))
  * @author Georg Fischer
  */

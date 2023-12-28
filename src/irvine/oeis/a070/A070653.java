@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A070653 a(n) = n^6 mod 30.
+ * A070653 Duplicate of A070452.
  * @author Georg Fischer
  */
 public class A070653 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 
 /**
- * A187889 Riordan matrix (1/(1-x-x^2-x^3),(x+x^2+x^3)/(1-x-x^2-x^3).
+ * A187889 Riordan matrix (1/(1-x-x^2-x^3),(x+x^2+x^3)/(1-x-x^2-x^3)).
  *
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A205550 Symmetric matrix by antidiagonals: C(max(g(i),g(j)),min(g(i),g(j)), where g(k)=2k-1.
+ * A205550 Symmetric matrix by antidiagonals: C(max(g(i),g(j)),min(g(i),g(j))), where g(k)=2k-1.
  *
  * @author Georg Fischer
  */

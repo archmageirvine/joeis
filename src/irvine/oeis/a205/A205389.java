@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001700;
 import irvine.oeis.a204.A204892;
 
 /**
- * A205389 s(A205387), where s(j)=(1/2)C(2j,j)).
+ * A205389 s(A205387), where s(j)=(1/2)C(2j,j).
  * @author Georg Fischer
  */
 public class A205389 extends A204892 {

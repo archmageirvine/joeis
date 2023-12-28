@@ -5,7 +5,7 @@ import irvine.oeis.a054.A054651;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A190782 Triangle T(n,k), read by rows, of the coefficients of x^k in the expansion of Sum_(m=0..n) binomial(x,m)) = (a(k)*x^k)/n!, n &gt;= 0, 0 &lt;= k &lt;= n.
+ * A190782 Triangle T(n,k), read by rows, of the coefficients of x^k in the expansion of Sum_(m=0..n) binomial(x,m) = (a(k)*x^k)/n!, n &gt;= 0, 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A190782 extends Transpose {

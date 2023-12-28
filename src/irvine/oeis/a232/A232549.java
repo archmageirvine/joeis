@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A232549 E.g.f.: Sum_{n&gt;=0} ( -log(1 - n*x)/n )^n / n! ).
+ * A232549 E.g.f.: Sum_{n&gt;=0} ( -log(1 - n*x)/n )^n / n!.
  * a(n)=sum(k=0,n,(-1)^(n-k) * k^(n-k) * stirl(n,k))
  * @author Georg Fischer
  */

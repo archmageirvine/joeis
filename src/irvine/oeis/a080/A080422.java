@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A080422 (n+1)(n+2)(n+3)(n+12)3^n/72.
+ * A080422 a(n) = (n+1)*(n+2)*(n+3)*(n+12)*3^n/72.
  * @author Sean A. Irvine
  */
 public class A080422 extends LinearRecurrence {

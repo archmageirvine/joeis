@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A070629 n^5 mod 46.
+ * A070629 a(n) = n^5 mod 46.
  * @author Sean A. Irvine
  */
 public class A070629 extends LinearRecurrence {

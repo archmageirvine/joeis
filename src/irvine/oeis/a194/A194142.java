@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a182.A182777;
 
 /**
- * A194142 a(n) = Sum_{j=1..n} floor(j*(3-sqrt(3)); n-th partial sum of Beatty sequence for 3-sqrt(3).
+ * A194142 a(n) = Sum_{j=1..n} floor(j*(3-sqrt(3))); n-th partial sum of Beatty sequence for 3-sqrt(3).
  * @author Sean A. Irvine
  */
 public class A194142 extends PartialSumSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A098400 a(n) = 4^n*binomial(2n+1, n).
+ * A098400 a(n) = 4^n*binomial(2*n+1, n).
  * @author Georg Fischer
  */
 public class A098400 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A204617 Multiplicative with a(p^e) = p^(e-1)*H(p). H(2)=1, H(p) = p-1 if p=1 (mod 4) and H(p) = p+1 if p=3 (mod 4).
+ * A204617 Multiplicative with a(p^e) = p^(e-1)*H(p). H(2) = 1, H(p) = p - 1 if p = 1 (mod 4) and H(p) = p + 1 if p = 3 (mod 4).
  * Multiplicative with: a(p^e) = p^(e-1)*H(p). H(2)=1, H(p) = p-1 if p=1 (mod 4) and H(p) = p+1 if p=3 (mod 4).
  * @author Georg Fischer
  */

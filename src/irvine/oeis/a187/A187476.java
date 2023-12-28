@@ -6,7 +6,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.transform.RankTransform;
 
 /**
- * A187476 Rank transform of the sequence floor(3(n-1)/2)); complement of A187477.
+ * A187476 Rank transform of the sequence floor(3(n-1)/2); complement of A187477.
  * @author Georg Fischer
  */
 public class A187476 extends RankTransform {

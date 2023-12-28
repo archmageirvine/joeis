@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001700;
 import irvine.oeis.a204.A204892;
 
 /**
- * A205390 s(k)-s(j), where (k,j) is the least pair for which n divides s(k)-s(j), and s(j)=(1/2)C(2j,j)).
+ * A205390 s(k)-s(j), where (k,j) is the least pair for which n divides s(k)-s(j), and s(j)=(1/2)C(2j,j).
  * @author Georg Fischer
  */
 public class A205390 extends A204892 {

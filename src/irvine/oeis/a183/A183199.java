@@ -6,7 +6,7 @@ import irvine.oeis.recur.PaddingSequence;
 import irvine.oeis.transform.EulerTransform;
 
 /**
- * A183199 Least integer k such that Floor(k*f(n+1)&gt;k*f(n), where f(n)=(n^2)/(1+n^2).
+ * A183199 Least integer k such that Floor(k*f(n+1))&gt;k*f(n), where f(n)=(n^2)/(1+n^2).
  * @author Georg Fischer
  */
 public class A183199 extends EulerTransform {

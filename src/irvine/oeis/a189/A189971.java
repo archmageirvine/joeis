@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 
 import irvine.oeis.cons.ContinuedFractionSequence;
 /**
- * A189971 Continued fraction of (1 + x + sqrt(14 + 10*x))/4, where x=sqrt(5)).
+ * A189971 Continued fraction of (1 + x + sqrt(14 + 10*x))/4, where x=sqrt(5).
  * @author Georg Fischer
  */
 public class A189971 extends ContinuedFractionSequence {

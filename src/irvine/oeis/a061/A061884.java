@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061884 a(n) = sum_{ d | n } phi(lcm(d,n/d)), where phi(n) = Euler totient A000010.
+ * A061884 a(n) = Sum_{ d | n } phi(lcm(d,n/d)), where phi(n) = Euler totient A000010.
  * @author Sean A. Irvine
  */
 public class A061884 extends Sequence1 {

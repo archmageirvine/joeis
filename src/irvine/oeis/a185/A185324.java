@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A185324 E.g.f. log(1/(2-tan(x)-sec(x)).
+ * A185324 E.g.f. log(1/(2-tan(x)-sec(x))).
  * E.g.f.: log(1/(2-tan(x)-sec(x))
  * @author Georg Fischer
  */

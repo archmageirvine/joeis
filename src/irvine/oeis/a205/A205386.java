@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001700;
 import irvine.oeis.a204.A204892;
 
 /**
- * A205386 Least k such that n divides s(k)-s(j) for some j&lt;k, where s(j)=(1/2)C(2j,j)).
+ * A205386 Least k such that n divides s(k)-s(j) for some j&lt;k, where s(j)=(1/2)C(2j,j).
  * @author Georg Fischer
  */
 public class A205386 extends A204892 {

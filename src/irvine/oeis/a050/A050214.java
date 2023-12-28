@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A050214 Product((d+n/d): d divides n and d^2&lt;=n); a(1)=1.
+ * A050214 a(n) = Product_{d|n, d^2&lt;=n} (d+n/d); a(1)=1.
  * @author Sean A. Irvine
  */
 public class A050214 extends Sequence1 {

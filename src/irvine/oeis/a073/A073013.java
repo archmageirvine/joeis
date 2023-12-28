@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A073013 (1/2)*sum(k=1,n,(n+k)!/(k!)^2).
+ * A073013 a(n) = (1/2) * Sum_{k=1..n} (n+k)!/(k!)^2.
  * a(n)=(sum(k=1,n,(n+k)!/(k!)^2))/2
  * @author Georg Fischer
  */

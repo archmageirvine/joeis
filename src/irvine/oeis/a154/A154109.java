@@ -5,7 +5,7 @@ import irvine.oeis.a004.A004736;
 import irvine.oeis.triangle.VectorProduct;
 
 /**
- * A154109 Convolution triangle by rows, A004736 * (A154108 * 0^n-k)); row sums = Bell numbers.
+ * A154109 Convolution triangle by rows, A004736 * (A154108 * 0^(n-k)); row sums = Bell numbers.
  * @author Georg Fischer
  */
 public class A154109 extends VectorProduct {

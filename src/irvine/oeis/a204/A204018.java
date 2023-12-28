@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A204018 Symmetric matrix based on f(i,j)=1+max{j mod i, i mod j), by antidiagonals.
+ * A204018 Symmetric matrix based on f(i,j)=1+max(j mod i, i mod j), by antidiagonals.
  * @author Georg Fischer
  */
 public class A204018 extends UpperLeftTriangle {

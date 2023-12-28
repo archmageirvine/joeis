@@ -6,7 +6,7 @@ package irvine.oeis.a244;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A244062 G.f. satisfies: A(x) = Sum_{n&gt;=0} x^n * (2*A(x)^(2*n) - A(x)^n)).
+ * A244062 G.f. satisfies: A(x) = Sum_{n&gt;=0} x^n * (2*A(x)^(2*n) - A(x)^n).
  * @author Georg Fischer
  */
 public class A244062 extends HolonomicRecurrence {

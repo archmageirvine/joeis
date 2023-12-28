@@ -5,7 +5,7 @@ package irvine.oeis.a120;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A120765 E.g.f.: -exp(-x)*log(1-2*x)/2.
+ * A120765 Expansion of e.g.f. -exp(-x)*log(1-2*x)/2.
  * @author Georg Fischer
  */
 public class A120765 extends HolonomicRecurrence {

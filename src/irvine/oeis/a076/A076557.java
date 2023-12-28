@@ -8,7 +8,7 @@ import irvine.oeis.a014.A014689;
 
 
 /**
- * A076557 Greatest prime divisor of n-th prime - n.
+ * A076557 Greatest prime divisor of (n-th prime - n).
  * Formula: <code>a(n) = A006530(A014689(n)).</code>
  * @author Georg Fischer
  */

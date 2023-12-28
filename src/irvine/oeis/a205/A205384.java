@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 import irvine.oeis.a001.A001700;
 import irvine.oeis.a204.A204890;
 /**
- * A205384 Ordered differences of numbers s(j)=(1/2)C(2j,j)).
+ * A205384 Ordered differences of numbers s(j)=(1/2)C(2j,j).
  * @author Georg Fischer
  */
 public class A205384 extends A204890 {

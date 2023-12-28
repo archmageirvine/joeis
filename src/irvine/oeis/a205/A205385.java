@@ -3,7 +3,7 @@ package irvine.oeis.a205;
 
 import irvine.oeis.a204.A204891;
 /**
- * A205385 Least h such that n divides the h-th difference between distinct numbers (1/2)C(2j,j)), as ordered in A205384.
+ * A205385 Least h such that n divides the h-th difference between distinct numbers (1/2)C(2j,j), as ordered in A205384.
  * @author Georg Fischer
  */
 public class A205385 extends A204891 {

@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a257.A257890;
 
 /**
- * A223718 Number of nX1 0..2 arrays with rows, antidiagonals and columns unimodal.
+ * A223718 Number of unimodal functions [1..n]-&gt;[0..2].
  * @author Sean A. Irvine
  */
 public class A223718 extends DifferenceSequence {

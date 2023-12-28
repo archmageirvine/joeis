@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A070627 n^5 mod 44.
+ * A070627 a(n) = n^5 mod 44.
  * @author Georg Fischer
  */
 public class A070627 extends Sequence0 {

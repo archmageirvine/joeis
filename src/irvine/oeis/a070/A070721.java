@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A070721 n^7 mod 40.
+ * A070721 Duplicate of A070502.
  * @author Georg Fischer
  */
 public class A070721 extends Sequence0 {

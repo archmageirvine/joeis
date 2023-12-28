@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A256278 a(0)=1, a(1)=2, a(n)=31a(n-1)-29a(n-2).
+ * A256278 a(0)=1, a(1)=2, a(n) = 31*a(n-1) - 29*a(n-2).
  * @author Sean A. Irvine
  */
 public class A256278 extends LinearRecurrence {

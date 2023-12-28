@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A178192 Sum (11^((k^2+3k)/2) from k=1 to n.
+ * A178192 Sum 11^((k^2+3k)/2) from k=1 to n.
  * a(n) = sum(k=1,n,11^((k^2+3*k)/2));
  * @author Georg Fischer
  */

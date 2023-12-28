@@ -5,7 +5,7 @@ import irvine.oeis.a125.A125172;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A193667 Triangular array:  the fission of (p(n,x)) by (q(n,x)), where p(n,x)=(x+1^n and q(n,x)=sum{F(k+1)*x^(n-k) : 0&lt;=k&lt;=n}, where F=A000045 (Fibonacci numbers).
+ * A193667 Triangular array:  the fission of (p(n,x)) by (q(n,x)), where p(n,x)=(x+1)^n and q(n,x)=sum{F(k+1)*x^(n-k) : 0&lt;=k&lt;=n}, where F=A000045 (Fibonacci numbers).
  * @author Georg Fischer
  */
 public class A193667 extends Transpose {

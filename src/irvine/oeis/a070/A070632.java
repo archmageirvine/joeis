@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A070632 (2^(3^n)+1)/3^(n+1).
+ * A070632 a(n) = (2^(3^n)+1)/3^(n+1).
  * @author Georg Fischer
  */
 public class A070632 extends Sequence1 {

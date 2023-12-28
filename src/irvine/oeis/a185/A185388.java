@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A185388 E.g.f. A(x), where A(x)=x*exp(A(x))+x*log(1/(1-A(x)).
+ * A185388 E.g.f. A(x), where A(x)=x*exp(A(x))+x*log(1/(1-A(x))).
  * E.g.f.: reverse(x/(exp(x)+log((1-x)^(-1)))).
  * A(x) is E.g.f. for a(n)/n.
  * @author Georg Fischer

@@ -4,7 +4,7 @@ package irvine.oeis.a070;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A070638 a(n) = n^6 mod 15.
+ * A070638 Duplicate of A070438.
  * @author Georg Fischer
  */
 public class A070638 extends HolonomicRecurrence {

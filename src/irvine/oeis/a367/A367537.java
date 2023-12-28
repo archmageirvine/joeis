@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A367537.
+ * A367537 a(n) is the number of ways to make a Secret Santa assignment among n couples such that no one gets their partner's name and if A gets B's name, B does not get A's name.
  * @author Sean A. Irvine
  */
 public class A367537 extends Sequence1 {

@@ -2318,3 +2318,15 @@ A067169	A067157(n)/n.
 A067329 Triangle of coefficients of polynomials used for g.f.s of columns of A067304.
 A067498	Maximum number of reflections for a ray of light which reflects at n points (reflecting more than once at most or all points).
 A067610 Number of stereo alkanes not containing a certain forbidden substructure) with combinatorial diameter n (emailed author, formulas not in paper).
+A067637 Row 2 of table in A067640.
+A067638 Row 3 of table in A067640.
+A067639 Row 4 of table in A067640.
+A067640 Table T(n,k) giving number of two-legged knot diagrams with n >= 0 self-intersections and k >= 0 tangencies, read by antidiagonals.
+A067641 Column 1 of table in A067640.
+A067642 Column 2 of table in A067640.
+A067643 Column 3 of table in A067640.
+A067644 Number of prime alternating tangles (or knots) of type Gamma_1 with two connected components
+A067645 Number of prime alternating tangles (or knots) of type Gamma_2 with two connected components
+A067646 Number of prime alternating tangles (or knots) with two connected components.
+A067647 Number of knot diagrams of type 1PI with n crossings and two outgoing strings.
+A067648 Number of knot diagrams of type 2PI with n crossings and two outgoing strings.

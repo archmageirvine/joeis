@@ -33,7 +33,7 @@ public class Hunter {
   }
 
   /**
-   * Set the function called for each walk.
+   * Set the function called for each animal.
    * @param keeper the keeper
    */
   public void setKeeper(final Keeper keeper) {

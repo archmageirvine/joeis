@@ -1,6 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000055;
 import irvine.oeis.a002.A002988;
 
@@ -13,15 +14,11 @@ public class A003426 extends A000055 {
   /** Construct the sequence. */
   public A003426() {
     super(1);
+    super.next();
   }
 
   private long mN = 0;
-  private final A002988 mB = new A002988();
-
-  {
-    super.next();
-    mB.next();
-  }
+  private final Sequence mB = new A002988().skip();
 
   @Override
   public Z next() {

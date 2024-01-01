@@ -293,6 +293,21 @@ public class Animal implements Comparable<Animal> {
     return new Animal(pts);
   }
 
+  /**
+   * Test if this animal is convex.
+   * WARNING: This has only really been tested for <code>Z^2</code>.
+   * @param lat lattice
+   * @return true iff the animal is convex
+   */
+  public boolean isConvex(final Lattice lat) {
+    final int p = edgePerimeterSize(lat);
+    int bound = 0;
+    for (int k = 0; k < lat.dimension(); ++k) {
+      bound += 2 * (extent(Lattices.Z2, k) + 1);
+    }
+    return p == bound;
+  }
+
   @Override
   public int compareTo(final Animal o) {
     return LongUtils.compare(mAnimal, o.mAnimal);

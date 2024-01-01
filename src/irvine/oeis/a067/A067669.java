@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067633.
+ * A067669 a(n)=(5^n)!/5^(floor(5^n/4)).
  * @author Sean A. Irvine
  */
 public class A067669 extends Sequence1 {

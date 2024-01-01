@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A067633.
+ * A067670 Smallest prime of additive persistence n.
  * @author Sean A. Irvine
  */
 public class A067670 extends NoncomputableSequence {

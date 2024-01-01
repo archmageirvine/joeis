@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067633.
+ * A067656 Numbers n such that n!*B(2n) is an integer, where B(2n) are the Bernoulli numbers.
  * @author Sean A. Irvine
  */
 public class A067656 extends Sequence1 {

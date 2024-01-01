@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067633.
+ * A067666 Sum of squares of prime factors of n (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A067666 extends Sequence1 {

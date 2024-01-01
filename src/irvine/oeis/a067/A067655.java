@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A067764.
+ * A067655 Denominators of the coefficients in exp(2x/(1-x)) power series.
  * @author Sean A. Irvine
  */
 public class A067655 extends A067654 {

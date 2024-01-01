@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.prime.HomePrimeSequence;
 
 /**
- * A067599.
+ * A067671 The prime factors of n are also prime factors of the decimal encoding (A067599) of the prime factorization of n.
  * @author Sean A. Irvine
  */
 public class A067671 extends Sequence1 {

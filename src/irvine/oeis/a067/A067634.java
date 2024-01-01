@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence3;
 
 /**
- * A067634.
+ * A067634 a(1) = 1; string of digits of a(n)^2 is a substring of the string of digits of a(n+1)^2.
  * @author Sean A. Irvine
  */
 public class A067634 extends PrependSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067633.
+ * A067658 Odd integers k such that k = gcd(((k-1)/2)!+1, ((k-1)/2)^((k-1)/2)+1).
  * @author Sean A. Irvine
  */
 public class A067658 extends Sequence1 {

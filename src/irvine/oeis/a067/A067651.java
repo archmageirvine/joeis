@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
 /**
- * A067633.
+ * A067651 Numbers n such that sigma(n) = phi(prime(n)-1).
  * @author Sean A. Irvine
  */
 public class A067651 extends A000040 {

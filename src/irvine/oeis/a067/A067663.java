@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067633.
+ * A067663 Sequence gives values of gcd(k!+1, k^k-1) when not equal to 1 in order of appearance.
  * @author Sean A. Irvine
  */
 public class A067663 extends Sequence1 {

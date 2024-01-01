@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067599.
+ * A067673 Floor((3/2)^(n+3))/floor((3/2)^n)=(3/2)^3.
  * @author Sean A. Irvine
  */
 public class A067673 extends Sequence1 {

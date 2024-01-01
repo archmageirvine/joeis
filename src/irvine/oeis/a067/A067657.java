@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001008;
 
 /**
- * A067633.
+ * A067657 Prime values of A001008, the numerators of the harmonic numbers.
  * @author Sean A. Irvine
  */
 public class A067657 extends FilterSequence {

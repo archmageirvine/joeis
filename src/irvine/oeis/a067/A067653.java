@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A067633.
+ * A067653 Denominators of the coefficients in exp(x/(1-x)) power series.
  * @author Sean A. Irvine
  */
 public class A067653 extends Sequence0 {

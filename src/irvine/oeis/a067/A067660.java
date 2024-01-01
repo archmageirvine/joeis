@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067633.
+ * A067660 Values of gcd(k!+1,2^k+1) not equal to 1 taking k in increasing order.
  * @author Sean A. Irvine
  */
 public class A067660 extends Sequence1 {

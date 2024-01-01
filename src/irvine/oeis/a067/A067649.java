@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A067633.
+ * A067649 Numerators of power series for sqrt(1+x^2)/sqrt(1-x).
  * @author Sean A. Irvine
  */
 public class A067649 extends Sequence0 {

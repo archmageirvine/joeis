@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A067633.
+ * A067654 Numerators of the coefficients in power series expansion of exp(2x/(1-x)).
  * @author Sean A. Irvine
  */
 public class A067654 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067633.
+ * A067665 The start of a record-setting run of consecutive integers i with distinct A001222(i).
  * @author Sean A. Irvine
  */
 public class A067665 extends Sequence1 {

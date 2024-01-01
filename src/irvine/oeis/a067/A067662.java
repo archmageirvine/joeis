@@ -4,7 +4,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000068;
 
 /**
- * A067633.
+ * A067662 Numbers n such that n^2 + 1 and n^4 + 1 are primes.
  * @author Sean A. Irvine
  */
 public class A067662 extends FilterSequence {

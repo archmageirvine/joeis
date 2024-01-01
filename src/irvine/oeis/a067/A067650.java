@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067633.
+ * A067650 The start of a record-breaking run of consecutive integers with a number of prime factors not equal to 2.
  * @author Sean A. Irvine
  */
 public class A067650 extends Sequence1 {

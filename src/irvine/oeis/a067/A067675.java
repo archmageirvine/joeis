@@ -30,7 +30,7 @@ public class A067675 extends Sequence1 {
   /* precalculate helper values for main algorithm so that we can do innermost
      loop in O(1) with table lookup. Pre-calculation is O(n^3), less than the
      main algorithm. */
-  int[][][][][][] precalc(final int n) {
+  private int[][][][][][] precalc(final int n) {
     final int[][][][][][] mDp2 = new int[2][2][2][2][n][n];
     for (int i = 0; i < 2; ++i) {
       for (int j = 0; j < 2; ++j) {
@@ -77,8 +77,8 @@ public class A067675 extends Sequence1 {
      gmp's multiply function among other things.
      disclaimer, there might be much better approaches.
   */
-  void calcterms(final int n) {
-    Z[][][][][] dp = new Z[2][2][2][n][n];
+  private void calcterms(final int n) {
+    final Z[][][][][] dp = new Z[2][2][2][n][n];
     /* initialize dp array */
     for (int i = 0; i < 2; ++i) {
       for (int j = 0; j < 2; ++j) {
@@ -89,7 +89,7 @@ public class A067675 extends Sequence1 {
         }
       }
     }
-    int[][][][][][] dp2 = precalc(n);
+    final int[][][][][][] dp2 = precalc(n);
     mTable = new Z[n];
     Arrays.fill(mTable, Z.ZERO);
     int cur = 1;

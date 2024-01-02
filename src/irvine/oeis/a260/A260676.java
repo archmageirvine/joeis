@@ -6,7 +6,6 @@ import irvine.oeis.transform.EtaProductSequence;
  * A260676 Expansion of phi(x) * psi(x^30) in powers of x where phi(), chi() are Ramanujan theta functions.
  * @author Georg Fischer
  */
-
 public class A260676 extends EtaProductSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A348758 Times on a 12-hour digital clock with 6 digits at which the angle of the sector enclosing the three continuously moving hands of an analog clock has a local minimum.
  * @author Georg Fischer
  */
-
 public class A348758 extends FiniteSequence {
 
   /** Construct the sequence. */

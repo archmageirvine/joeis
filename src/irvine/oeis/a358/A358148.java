@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A358148 Aliquot sequence starting at 326.
  * @author Georg Fischer
  */
-
 public class A358148 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A274227 Primes in A274226.
  * @author Georg Fischer
  */
-
 public class A274227 extends FiniteSequence {
 
   /** Construct the sequence. */

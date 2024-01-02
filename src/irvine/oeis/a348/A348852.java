@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A348852 Numbers k such that the number of odd nonprimes &lt;= k is equal to the number of primes &lt;= k.
  * @author Georg Fischer
  */
-
 public class A348852 extends FiniteSequence {
 
   /** Construct the sequence. */

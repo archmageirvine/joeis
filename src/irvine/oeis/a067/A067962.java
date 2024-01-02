@@ -3,7 +3,6 @@ package irvine.oeis.a067;
 
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Integers;
-import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -15,6 +14,6 @@ public class A067962 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A067962() {
-    super(0, n -> Fibonacci.fibonacci(n + 2).multiply(Integers.SINGLETON.product(0, n, i -> Fibonacci.fibonacci(i + 1)).pow(Z.TWO)));
+    super(0, n -> Fibonacci.fibonacci(n + 2).multiply(Integers.SINGLETON.product(0, n, i -> Fibonacci.fibonacci(i + 1)).square()));
   }
 }

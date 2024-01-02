@@ -8,7 +8,6 @@ import irvine.oeis.FiniteSequence;
  * A114835 Minimal set of palindrome prime-strings in base 10 in the sense of A071062.
  * @author Georg Fischer
  */
-
 public class A114835 extends FiniteSequence {
 
   /** Construct the sequence. */

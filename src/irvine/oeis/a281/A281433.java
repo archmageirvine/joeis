@@ -16,6 +16,6 @@ public class A281433 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A281433() {
-    super(0, n -> Integers.SINGLETON.sum(0, n / 2, k -> MemoryFactorial.SINGLETON.factorial(2 * k).divide(Z.ONE.shiftLeft(k).multiply(MemoryFactorial.SINGLETON.factorial(k))).pow(Z.TWO).multiply(Binomial.binomial(n, 2L * k)).multiply((Z.ONE).add(Z.TWO.multiply(k).multiply(Z.valueOf(n - 2L * k))))));
+    super(0, n -> Integers.SINGLETON.sum(0, n / 2, k -> MemoryFactorial.SINGLETON.factorial(2 * k).divide(Z.ONE.shiftLeft(k).multiply(MemoryFactorial.SINGLETON.factorial(k))).square().multiply(Binomial.binomial(n, 2L * k)).multiply((Z.ONE).add(Z.TWO.multiply(k).multiply(Z.valueOf(n - 2L * k))))));
   }
 }

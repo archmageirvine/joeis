@@ -23,6 +23,6 @@ public class A078435 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(mN).pow(2).subtract(mSeq.next());
+    return Z.valueOf(mN).square().subtract(mSeq.next());
   }
 }

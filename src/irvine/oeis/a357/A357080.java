@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A357080 Numbers k such that the sum of the digits of k multiplied by the sum of the digits of k^2 equals k.
  * @author Georg Fischer
  */
-
 public class A357080 extends FiniteSequence {
 
   /** Construct the sequence. */

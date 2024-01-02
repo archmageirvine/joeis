@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A349828 List of disc sizes for chamber graph of a certain abstract polytope associated with the Mathieu group M_24.
  * @author Georg Fischer
  */
-
 public class A349828 extends FiniteSequence {
 
   /** Construct the sequence. */

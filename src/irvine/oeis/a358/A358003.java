@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A358003 Least composite number k such that there are n digits in the intersection of the sets of digits of k and of the juxtaposition of prime factors of k (apart from multiplicity).
  * @author Georg Fischer
  */
-
 public class A358003 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A343816 a(n) is the least start of exactly n consecutive odd numbers that are cyclic numbers (A003277).
  * @author Georg Fischer
  */
-
 public class A343816 extends FiniteSequence {
 
   /** Construct the sequence. */

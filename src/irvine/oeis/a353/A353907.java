@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A353907 Numbers k such that k equals {alternating sum of digits of k} raised to the power of {number of digits of k}.
  * @author Georg Fischer
  */
-
 public class A353907 extends FiniteSequence {
 
   /** Construct the sequence. */

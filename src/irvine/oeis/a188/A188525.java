@@ -14,6 +14,6 @@ public class A188525 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A188525() {
-    super(1, n -> Jaguar.factor(Jaguar.factor(n).squareFreeKernel().pow(Z.TWO).add(Z.ONE)).squareFreeKernel());
+    super(1, n -> Jaguar.factor(Jaguar.factor(n).squareFreeKernel().square().add(Z.ONE)).squareFreeKernel());
   }
 }

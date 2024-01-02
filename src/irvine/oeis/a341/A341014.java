@@ -20,6 +20,6 @@ public class A341014 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return Integers.SINGLETON.sum(0, n, j -> Z.valueOf(k).pow(j).multiply(MemoryFactorial.SINGLETON.factorial(j)).multiply(Binomial.binomial(n, j).pow(2)));
+    return Integers.SINGLETON.sum(0, n, j -> Z.valueOf(k).pow(j).multiply(MemoryFactorial.SINGLETON.factorial(j)).multiply(Binomial.binomial(n, j).square()));
   }
 }

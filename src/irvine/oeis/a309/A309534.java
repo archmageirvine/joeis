@@ -13,6 +13,6 @@ public class A309534 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A309534() {
-    super(1, 1, new A000027(), k -> Jaguar.factor(k.pow(2).add(+1)).sopfr().mod(k).isZero());
+    super(1, 1, new A000027(), k -> Jaguar.factor(k.square().add(+1)).sopfr().mod(k).isZero());
   }
 }

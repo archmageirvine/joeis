@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A355377 Numbers k such that the concatenation of digits included in the sum and product of the digits of the number k is an anagram of the number k, and digits of the number are sorted in nondecreasing order.
  * @author Georg Fischer
  */
-
 public class A355377 extends FiniteSequence {
 
   /** Construct the sequence. */

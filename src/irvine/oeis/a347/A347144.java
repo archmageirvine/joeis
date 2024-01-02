@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A347144 a(n) is the smallest number whose square uses all the digits but n.
  * @author Georg Fischer
  */
-
 public class A347144 extends FiniteSequence {
 
   /** Construct the sequence. */

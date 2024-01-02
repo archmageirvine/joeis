@@ -16,7 +16,7 @@ public class A136797 extends AbstractSequence {
   /** Construct the sequence. */
   public A136797() {
     super(1);
-    int bOffset = 1 - 1;
+    int bOffset = 0;
     while (bOffset < mN) {
       ++bOffset;
       mSeq.next();

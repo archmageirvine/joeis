@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A348568 Highly composite numbers (A002182) such that the exponents of 2 and 3 in their prime factorization are equal.
  * @author Georg Fischer
  */
-
 public class A348568 extends FiniteSequence {
 
   /** Construct the sequence. */

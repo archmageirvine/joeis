@@ -23,6 +23,6 @@ public class A203853 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Fibonacci.lucas(d).pow(2).multiply(Mobius.mobius(mN / d))).divide(mN);
+    return Integers.SINGLETON.sumdiv(mN, d -> Fibonacci.lucas(d).square().multiply(Mobius.mobius(mN / d))).divide(mN);
   }
 }

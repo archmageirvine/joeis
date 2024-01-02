@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A357996 a(n) is the number of times in the format hh:mm that can be represented in a 7-segment display by using only n segments (version A006942).
  * @author Georg Fischer
  */
-
 public class A357996 extends FiniteSequence {
 
   /** Construct the sequence. */

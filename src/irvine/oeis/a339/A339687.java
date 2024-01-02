@@ -16,6 +16,6 @@ public class A339687 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(7).pow(d - 1));
+    return Integers.SINGLETON.sumdiv(mN, d -> Z.SEVEN.pow(d - 1));
   }
 }

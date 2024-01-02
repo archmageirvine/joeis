@@ -15,6 +15,6 @@ public class A288035 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A288035() {
-    super(1, n -> Integers.SINGLETON.sum(2, 2 * n, k -> MemoryFactorial.SINGLETON.factorial(n).pow(Z.TWO).divide(MemoryFactorial.SINGLETON.factorial(Z.valueOf(n).subtract(Z.valueOf(k + 1).divide(Z.TWO))).multiply(MemoryFactorial.SINGLETON.factorial(n - k / 2)))));
+    super(1, n -> Integers.SINGLETON.sum(2, 2 * n, k -> MemoryFactorial.SINGLETON.factorial(n).square().divide(MemoryFactorial.SINGLETON.factorial(Z.valueOf(n).subtract(Z.valueOf(k + 1).divide(Z.TWO))).multiply(MemoryFactorial.SINGLETON.factorial(n - k / 2)))));
   }
 }

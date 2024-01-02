@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A356464 Number of black keys in each group of black keys on a standard 88-key piano (left to right).
  * @author Georg Fischer
  */
-
 public class A356464 extends FiniteSequence {
 
   /** Construct the sequence. */

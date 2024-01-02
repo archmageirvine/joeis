@@ -10,7 +10,7 @@ import irvine.oeis.a299.A299038;
  */
 public class A292553 extends A299038 {
 
-  private int mN = 0 - 1;
+  private int mN = -1;
 
   @Override
   public Z next() {

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A351286 a(n) is the number of boards in English Peg Solitaire after n moves from which the winning position can be reached.
  * @author Georg Fischer
  */
-
 public class A351286 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -16,7 +16,7 @@ public class A239589 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (A134808.isCyclops(mN.pow(2))) {
+      if (A134808.isCyclops(mN.square())) {
         return mN;
       }
     }

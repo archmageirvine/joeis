@@ -29,7 +29,7 @@ public class A349429 extends AbstractSequence {
         mF = mF.multiply(mN);
       }
       if ((mN & 1) == 0) {
-        return RING.series(RING.multiply(RING.cos(RING.monomial(new Q(5), 1), mN), RING.cos(RING.monomial(new Q(9), 1), mN), mN), RING.cos(RING.monomial(new Q(15), 1), mN), mN).coeff(mN).multiply(mF).toZ();
+        return RING.series(RING.multiply(RING.cos(RING.monomial(Q.FIVE, 1), mN), RING.cos(RING.monomial(Q.NINE, 1), mN), mN), RING.cos(RING.monomial(new Q(15), 1), mN), mN).coeff(mN).multiply(mF).toZ();
       }
     }
   }

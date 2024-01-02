@@ -12,6 +12,6 @@ public class A347792 extends BeattySequence {
 
   /** Construct the sequence */
   public A347792() {
-    super(0, CR.valueOf(2).pow(CR.valueOf(2).divide(CR.valueOf(3))));
+    super(0, CR.TWO.pow(CR.TWO.divide(CR.THREE)));
   }
 }

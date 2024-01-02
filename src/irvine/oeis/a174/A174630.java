@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A174630 A weight function for the case N = 24 and k = 6 in Butler-Graham shuffling.
  * @author Georg Fischer
  */
-
 public class A174630 extends FiniteSequence {
 
   /** Construct the sequence. */

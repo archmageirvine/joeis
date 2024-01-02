@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A351914 Numbers m such that the average of the prime numbers up to m is greater than or equal to m/2.
  * @author Georg Fischer
  */
-
 public class A351914 extends FiniteSequence {
 
   /** Construct the sequence. */

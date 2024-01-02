@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
  */
 public class A067579 extends Sequence1 {
 
-  private static final int HEURISTIC_LIMIT = 200;
+  private static final int HEURISTIC_LIMIT = 400;
   private Z mN = Z.ZERO;
 
   private Z f(final Z n) {

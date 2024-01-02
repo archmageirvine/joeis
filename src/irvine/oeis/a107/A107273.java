@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A107273 Vertically symmetrical dates MMDDYYYY (American notation) excluding years which are divisible by 10, considered as numbers, in increasing order.
  * @author Georg Fischer
  */
-
 public class A107273 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A352422 Number of points available in a frame of snooker when there are n object balls remaining on the table.
  * @author Georg Fischer
  */
-
 public class A352422 extends FiniteSequence {
 
   /** Construct the sequence. */

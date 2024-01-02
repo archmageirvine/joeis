@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A354500 The Rijndael S-box used in the Advanced Encryption Standard (AES).
  * @author Georg Fischer
  */
-
 public class A354500 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -3,7 +3,6 @@ package irvine.oeis.a123;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Euler;
-import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -15,6 +14,6 @@ public class A123476 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A123476() {
-    super(1, n -> MemoryFactorial.SINGLETON.factorial(n).pow(Z.TWO).divide(Euler.phi(MemoryFactorial.SINGLETON.factorial(n))));
+    super(1, n -> MemoryFactorial.SINGLETON.factorial(n).square().divide(Euler.phi(MemoryFactorial.SINGLETON.factorial(n))));
   }
 }

@@ -16,6 +16,6 @@ public class A058819 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    return mN <= 1 ? Z.valueOf(4).pow(mN) : Z.valueOf(4).pow(mN).subtract(Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(4).pow(mN / d).multiply(irvine.math.Mobius.mobius(d))).divide(mN));
+    return mN <= 1 ? Z.FOUR.pow(mN) : Z.FOUR.pow(mN).subtract(Integers.SINGLETON.sumdiv(mN, d -> Z.FOUR.pow(mN / d).multiply(irvine.math.Mobius.mobius(d))).divide(mN));
   }
 }

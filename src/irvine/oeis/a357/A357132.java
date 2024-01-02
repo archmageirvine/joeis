@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A357132 Numbers k such that the product of distinct digits of k equals the product of the prime divisors of k.
  * @author Georg Fischer
  */
-
 public class A357132 extends FiniteSequence {
 
   /** Construct the sequence. */

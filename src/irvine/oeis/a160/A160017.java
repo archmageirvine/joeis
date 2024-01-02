@@ -12,7 +12,7 @@ public class A160017 extends AbstractSequence {
 
   private long mN = -1;
   private Z mEven = Z.valueOf(-2);
-  private Z mOdd = Z.valueOf(-1);
+  private Z mOdd = Z.NEG_ONE;
 
   /** Construct the sequence. */
   public A160017() {

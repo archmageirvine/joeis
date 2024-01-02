@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A354681 Integers whose names in French contain no letter more than once.
  * @author Georg Fischer
  */
-
 public class A354681 extends FiniteSequence {
 
   /** Construct the sequence. */

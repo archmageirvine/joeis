@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A359982 Numbers whose digits are distinct nonprimes and are not a permutation of a smaller such number.
  * @author Georg Fischer
  */
-
 public class A359982 extends FiniteSequence {
 
   /** Construct the sequence. */

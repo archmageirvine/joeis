@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A356525 Decimal expansion of number of Pascals (Pa) in 1 millimeter of mercury (mmHg).
  * @author Georg Fischer
  */
-
 public class A356525 extends FiniteSequence {
 
   /** Construct the sequence. */

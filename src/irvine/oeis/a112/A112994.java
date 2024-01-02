@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A112994 Numbers whose cubes are exclusionary: numbers k such that k has no repeated digits and k and k^3 have no digits in common.
  * @author Georg Fischer
  */
-
 public class A112994 extends FiniteSequence {
 
   /** Construct the sequence. */

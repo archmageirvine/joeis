@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A348143 Areas of integer-sided cyclic quadrilaterals whose area equals their perimeter.
  * @author Georg Fischer
  */
-
 public class A348143 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -13,6 +13,6 @@ public class A177029 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A177029() {
-    super(1, new FilterPositionSequence(3, 1, new A177025(), v -> v.equals(Z.valueOf(2))), v -> v.add(2));
+    super(1, new FilterPositionSequence(3, 1, new A177025(), v -> v.equals(Z.TWO)), v -> v.add(2));
   }
 }

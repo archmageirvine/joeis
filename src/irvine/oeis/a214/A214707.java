@@ -12,6 +12,6 @@ public class A214707 extends A060035 {
 
   /** Construct the sequence. */
   public A214707() {
-    super(1, 1, (n, m) -> Z.THREE.pow(n).subtract(m).gcd(Z.valueOf(4).pow(n).subtract(m)).equals(Z.ONE));
+    super(1, 1, (n, m) -> Z.THREE.pow(n).subtract(m).gcd(Z.FOUR.pow(n).subtract(m)).equals(Z.ONE));
   }
 }

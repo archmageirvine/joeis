@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A074233 Numbers whose base-4 and base-5 representations are permutations of the same multiset of digits.
  * @author Georg Fischer
  */
-
 public class A074233 extends FiniteSequence {
 
   /** Construct the sequence. */

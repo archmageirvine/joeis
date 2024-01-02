@@ -17,6 +17,6 @@ public class A072191 extends ConstantOrderRecurrence {
 
   @Override
   protected Z compute(final int n) {
-    return a(n - 1).square().add(Z.valueOf(2));
+    return a(n - 1).square().add(Z.TWO);
   }
 }

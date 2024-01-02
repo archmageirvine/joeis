@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A357747 Distances in the lyrics of the Rolling Stones song "2000 Light Years From Home".
  * @author Georg Fischer
  */
-
 public class A357747 extends FiniteSequence {
 
   /** Construct the sequence. */

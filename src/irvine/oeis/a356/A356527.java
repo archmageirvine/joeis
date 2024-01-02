@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A356527 Decimal expansion of number of millimeters of water (mmH2O) in 1 millimeter of mercury (mmHg).
  * @author Georg Fischer
  */
-
 public class A356527 extends FiniteSequence {
 
   /** Construct the sequence. */

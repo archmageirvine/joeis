@@ -10,7 +10,7 @@ import irvine.oeis.a046.A046316;
  */
 public class A255646 extends A046316 {
 
-  private static final Z BASE = Z.valueOf(10);
+  private static final Z BASE = Z.TEN;
 
   @Override
   public Z next() {

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A359002 Number of undirected n-cycles of the icosahedral graph.
  * @author Georg Fischer
  */
-
 public class A359002 extends FiniteSequence {
 
   /** Construct the sequence. */

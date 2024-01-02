@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A346662 Number of n-digit left- or right-truncatable primes with no consecutive zero digits.
  * @author Georg Fischer
  */
-
 public class A346662 extends FiniteSequence {
 
   /** Construct the sequence. */

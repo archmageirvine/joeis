@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A239525 For 0 &lt;= n &lt;= 100, a(n) is smallest integer N such that some x/N rounds to n%, with x &gt; 0.
  * @author Georg Fischer
  */
-
 public class A239525 extends FiniteSequence {
 
   /** Construct the sequence. */

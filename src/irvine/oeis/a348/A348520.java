@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A348520 Pentaphobe or 5-phobe numbers: integers that are not pentaphile numbers.
  * @author Georg Fischer
  */
-
 public class A348520 extends FiniteSequence {
 
   /** Construct the sequence. */

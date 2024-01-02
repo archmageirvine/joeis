@@ -17,7 +17,7 @@ public class A090678 extends AbstractSequence {
   /** Construct the sequence. */
   public A090678() {
     super(0);
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       mSeq.next();
@@ -27,6 +27,6 @@ public class A090678 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return mSeq.next().mod(Z.valueOf(2));
+    return mSeq.next().mod(Z.TWO);
   }
 }

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A350664 Denominators of Conway's POLYGAME.
  * @author Georg Fischer
  */
-
 public class A350664 extends FiniteSequence {
 
   /** Construct the sequence. */

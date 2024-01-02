@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A360178 Decimal expansion of the molar Planck constant (N_A*h) according to the 2019 SI system in units J / (Hz*mol).
  * @author Georg Fischer
  */
-
 public class A360178 extends FiniteSequence {
 
   /** Construct the sequence. */

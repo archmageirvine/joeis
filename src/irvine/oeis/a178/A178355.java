@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A178355 Fibonacci numbers with digits increased by 1.
  * @author Georg Fischer
  */
-
 public class A178355 extends FiniteSequence {
 
   /** Construct the sequence. */

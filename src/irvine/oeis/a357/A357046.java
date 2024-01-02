@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A357046 Squares visited by a knight moving on a board covered with horizontal dominoes [m|m], m = 0, 1, 2, ... in a diamond-shaped spiral, when the knight always jumps to the unvisited square with the least number on the corresponding domino.
  * @author Georg Fischer
  */
-
 public class A357046 extends FiniteSequence {
 
   /** Construct the sequence. */

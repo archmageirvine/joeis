@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A348519 Tetraphobe or 4-phobe numbers: integers that are not tetraphile numbers.
  * @author Georg Fischer
  */
-
 public class A348519 extends FiniteSequence {
 
   /** Construct the sequence. */

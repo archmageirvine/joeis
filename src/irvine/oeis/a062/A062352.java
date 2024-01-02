@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A062352 Palindromic primes with strictly decreasing digits up to the middle and then strictly increasing.
  * @author Georg Fischer
  */
-
 public class A062352 extends FiniteSequence {
 
   /** Construct the sequence. */

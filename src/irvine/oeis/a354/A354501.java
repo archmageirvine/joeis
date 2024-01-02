@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A354501 The inverse Rijndael S-box used in the Advanced Encryption Standard (AES); inverse permutation of A354500.
  * @author Georg Fischer
  */
-
 public class A354501 extends FiniteSequence {
 
   /** Construct the sequence. */

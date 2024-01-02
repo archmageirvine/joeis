@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A347300 Under Hypothesis(H) (a version of the Generalized Riemann Hypothesis) the only principal real quadratic fields with discriminant d = r^2 + 1 == 1 (mod 4) are the fields Q(sqrt(t)) where t is one of the six numbers listed here.
  * @author Georg Fischer
  */
-
 public class A347300 extends FiniteSequence {
 
   /** Construct the sequence. */

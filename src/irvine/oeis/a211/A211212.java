@@ -24,7 +24,7 @@ public class A211212 extends Sequence0 {
       mF = mF.multiply(mN);
       mZ = mZ.multiply(4);
     }
-    final Z result = RING.series(RING.one(), RING.multiply(RING.cos(RING.series(RING.x(), RING.pow(RING.monomial(new Q(2), 0), Q.HALF, mN), mN), mN), RING.cosh(RING.series(RING.x(), RING.pow(RING.monomial(new Q(2), 0), Q.HALF, mN), mN), mN), mN), mN).coeff(mN).multiply(mF).toZ().divide(mZ);
+    final Z result = RING.series(RING.one(), RING.multiply(RING.cos(RING.series(RING.x(), RING.pow(RING.monomial(Q.TWO, 0), Q.HALF, mN), mN), mN), RING.cosh(RING.series(RING.x(), RING.pow(RING.monomial(Q.TWO, 0), Q.HALF, mN), mN), mN), mN), mN).coeff(mN).multiply(mF).toZ().divide(mZ);
     ++mN;
     mF = mF.multiply(mN);
     ++mN;

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A357954 Integers k that are periodic points for some iterations of k-&gt;A357143(k).
  * @author Georg Fischer
  */
-
 public class A357954 extends FiniteSequence {
 
   /** Construct the sequence. */

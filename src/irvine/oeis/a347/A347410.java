@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A347410 Numbers with property that when divided by the sum of their digits the quotient and remainder are the same.
  * @author Georg Fischer
  */
-
 public class A347410 extends FiniteSequence {
 
   /** Construct the sequence. */

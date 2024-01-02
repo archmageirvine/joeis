@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A067183 Product of the prime factors of n equals the product of the digits of n.
  * @author Georg Fischer
  */
-
 public class A067183 extends FiniteSequence {
 
   /** Construct the sequence. */

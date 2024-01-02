@@ -14,6 +14,6 @@ public class A347156 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A347156() {
-    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> (d * d < n && Z.valueOf(d).isProbablePrime()) ? Z.valueOf(d).pow(2) : Z.ZERO));
+    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> (d * d < n && Z.valueOf(d).isProbablePrime()) ? Z.valueOf(d).square() : Z.ZERO));
   }
 }

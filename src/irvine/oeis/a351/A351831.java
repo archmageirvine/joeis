@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A351831 Vector in the 26-dimensional even Lorentzian unimodular lattice II_25,1 used to construct the Leech lattice.
  * @author Georg Fischer
  */
-
 public class A351831 extends FiniteSequence {
 
   /** Construct the sequence. */

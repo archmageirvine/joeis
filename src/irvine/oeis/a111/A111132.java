@@ -18,6 +18,6 @@ public class A111132 extends ConstantOrderRecurrence {
 
   @Override
   protected Z compute(final int n) {
-    return a(n).add((a(n)).subtract(a(n - 1)).add(a(n).mod(Z.valueOf(10))).mod(Z.valueOf(10)));
+    return a(n).add((a(n)).subtract(a(n - 1)).add(a(n).mod(Z.TEN)).mod(Z.TEN));
   }
 }

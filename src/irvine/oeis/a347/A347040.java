@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A347040 Times on a 12-hour digital clock with 6 digits at which the three continuously moving hands of an analog clock, in the best approximation, enclose the same angles with one another, i.e., have the smallest sum of squares of the deviations from 120 degrees. When interpreting the terms as times of the day in the form hh:mm:ss, padding to the left with zeros is assumed.
  * @author Georg Fischer
  */
-
 public class A347040 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -3,7 +3,6 @@ package irvine.oeis.a077;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Integers;
-import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -15,6 +14,6 @@ public class A077123 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A077123() {
-    super(1, n -> Integers.SINGLETON.sum(1, n, i -> Integers.SINGLETON.sum(1, i - 1, j -> MemoryFactorial.SINGLETON.factorial(i).subtract(MemoryFactorial.SINGLETON.factorial(j)).pow(Z.TWO))));
+    super(1, n -> Integers.SINGLETON.sum(1, n, i -> Integers.SINGLETON.sum(1, i - 1, j -> MemoryFactorial.SINGLETON.factorial(i).subtract(MemoryFactorial.SINGLETON.factorial(j)).square())));
   }
 }

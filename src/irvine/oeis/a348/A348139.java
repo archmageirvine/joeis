@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A348139 Three-digit numbers abc such that the quadratic equation ax^2 + bx + c = 0 has a rational root.
  * @author Georg Fischer
  */
-
 public class A348139 extends FiniteSequence {
 
   /** Construct the sequence. */

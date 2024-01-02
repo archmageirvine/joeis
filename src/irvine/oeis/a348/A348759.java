@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A348759 (43200/719)*{a(n)} are the times, measured in seconds from 00:00:00, at which the angle of the sector enclosing the three hands of an analog clock has a local minimum.
  * @author Georg Fischer
  */
-
 public class A348759 extends FiniteSequence {
 
   /** Construct the sequence. */

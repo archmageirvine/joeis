@@ -18,6 +18,6 @@ public class A125295 extends ConstantOrderRecurrence {
 
   @Override
   protected Z compute(final int n) {
-    return a(n).pow(2).multiply((a(n)).add(1));
+    return a(n).square().multiply((a(n)).add(1));
   }
 }

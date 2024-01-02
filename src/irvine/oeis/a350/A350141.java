@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A350141 Times when clock hands are most nearly equidistant - expressed exactly as a(n)*43200/1427 seconds after 00:00:00.
  * @author Georg Fischer
  */
-
 public class A350141 extends FiniteSequence {
 
   /** Construct the sequence. */

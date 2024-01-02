@@ -46,7 +46,7 @@ public class A225401 extends AbstractSequence {
     mExp = exp;
     mPa = Z.valueOf(pa);
     mBase = base;
-    mPow = Z.valueOf(1);
+    mPow = Z.ONE;
     mVariant = 0; // (pm1 != 1 && pm2 == 1) ? 1 : 0;
   }
 

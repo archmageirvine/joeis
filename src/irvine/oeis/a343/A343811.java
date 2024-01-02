@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A343811 Triangular numbers k such that every permutation of the digits of k is a triangular number.
  * @author Georg Fischer
  */
-
 public class A343811 extends FiniteSequence {
 
   /** Construct the sequence. */

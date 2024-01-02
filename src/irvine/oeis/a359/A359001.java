@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A359001 Number of undirected n-cycles of the dodecahedral graph.
  * @author Georg Fischer
  */
-
 public class A359001 extends FiniteSequence {
 
   /** Construct the sequence. */

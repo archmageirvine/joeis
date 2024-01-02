@@ -8,7 +8,6 @@ import irvine.oeis.FiniteSequence;
  * A309737 Base conversion sequence: a(1) = 1; a(n) is the concatenation of all the previous terms, evaluated in base n-1, written in base n.
  * @author Georg Fischer
  */
-
 public class A309737 extends FiniteSequence {
 
   /** Construct the sequence. */

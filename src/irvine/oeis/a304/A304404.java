@@ -17,7 +17,7 @@ public class A304404 extends AbstractSequence {
   /** Construct the sequence. */
   public A304404() {
     super(1);
-    int bOffset = 1 - 1;
+    int bOffset = 0;
     while (bOffset < mN) {
       ++bOffset;
       mSeq.next();

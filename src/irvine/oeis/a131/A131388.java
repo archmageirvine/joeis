@@ -21,9 +21,7 @@ public class A131388 extends AbstractSequence {
   private final HashMap<Integer, Integer> mAMap;
   private final HashMap<Integer, Integer> mDMap;
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A131388() {
     this(1, 1, "ak", 1, 0);
   }

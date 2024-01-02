@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A356800 Numbers m for which Sum_{k=1..m} 1/k^s has no zero in the half-plane Re(s)&gt;1.
  * @author Georg Fischer
  */
-
 public class A356800 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A352927 Numbers whose digits are nonzero, consecutive, and all increasing or all decreasing.
  * @author Georg Fischer
  */
-
 public class A352927 extends FiniteSequence {
 
   /** Construct the sequence. */

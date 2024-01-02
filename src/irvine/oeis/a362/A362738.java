@@ -13,6 +13,6 @@ public class A362738 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A362738() {
-    super(2, n -> Z.valueOf(0).max(Z.valueOf(n).pow(n).subtract(Z.valueOf(n).pow(3))));
+    super(2, n -> Z.ZERO.max(Z.valueOf(n).pow(n).subtract(Z.valueOf(n).pow(3))));
   }
 }

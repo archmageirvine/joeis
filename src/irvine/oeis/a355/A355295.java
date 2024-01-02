@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A355295 Number of distinct board states reachable in n jumps in European Peg Solitaire.
  * @author Georg Fischer
  */
-
 public class A355295 extends FiniteSequence {
 
   /** Construct the sequence. */

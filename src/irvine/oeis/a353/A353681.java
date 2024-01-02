@@ -12,6 +12,6 @@ public class A353681 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A353681() {
-    super(1, new A353636(), v -> (v.compareTo(Z.valueOf(0)) > 0) ? Z.ONE : Z.ZERO);
+    super(1, new A353636(), v -> (v.compareTo(Z.ZERO) > 0) ? Z.ONE : Z.ZERO);
   }
 }

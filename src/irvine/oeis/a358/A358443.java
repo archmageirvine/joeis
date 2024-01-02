@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A358443 a(1) = 1. After each newly determined a(n-1), cross out every n-th number in the line of the positive integers. a(n) will be the smallest unused number that has not been crossed out.
  * @author Georg Fischer
  */
-
 public class A358443 extends FiniteSequence {
 
   /** Construct the sequence. */

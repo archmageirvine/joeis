@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A351430 a(n) is the number of reduced stable marriage problem instances of order 4 that generate n possible stable matchings.
  * @author Georg Fischer
  */
-
 public class A351430 extends FiniteSequence {
 
   /** Construct the sequence. */

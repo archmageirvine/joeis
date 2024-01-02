@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A349248 Numbers which are elements of a cycle under iterations of the digit-census function A348783.
  * @author Georg Fischer
  */
-
 public class A349248 extends FiniteSequence {
 
   /** Construct the sequence. */

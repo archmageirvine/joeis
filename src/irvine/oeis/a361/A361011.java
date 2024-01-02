@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A361011 Decimal expansion of conventional value of ampere-90 (A_{90}).
  * @author Georg Fischer
  */
-
 public class A361011 extends FiniteSequence {
 
   /** Construct the sequence. */

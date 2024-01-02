@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A347039 Times on the display of a 24-hour digital clock with 6 digits, rounded to full seconds, at which the hour and minute hands of an analog clock form a right angle. Terms with fewer than 6 digits are to be assumed filled with zeros to the left.
  * @author Georg Fischer
  */
-
 public class A347039 extends FiniteSequence {
 
   /** Construct the sequence. */

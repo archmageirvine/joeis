@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A355060 Perfect powers whose digits are in strictly increasing order.
  * @author Georg Fischer
  */
-
 public class A355060 extends FiniteSequence {
 
   /** Construct the sequence. */

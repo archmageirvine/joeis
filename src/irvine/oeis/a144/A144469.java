@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A144469 Finite table read by antidiagonals: T(n, m) is the number of conics passing through n points, tangent to m lines, and tangent to k=5-n-m conics in general position, divided by 2^k, with 0 &lt;= n+m &lt;= 5.
  * @author Georg Fischer
  */
-
 public class A144469 extends FiniteSequence {
 
   /** Construct the sequence. */

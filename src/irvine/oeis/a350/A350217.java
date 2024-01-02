@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A350217 a(1) = 1; a(n) &gt; a(n-1) is the smallest number whose name in English does not contain the first letter of the name of a(n-1).
  * @author Georg Fischer
  */
-
 public class A350217 extends FiniteSequence {
 
   /** Construct the sequence. */

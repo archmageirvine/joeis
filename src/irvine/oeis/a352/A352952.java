@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A352952 a(1) = 3; a(2) = 5; a(n+1) = a(n) + b(n), where b(n) = max {a(n-1)+-1, a(n-2)+-1, a(n-3)+-1, ..., a(1)+-1} such that a(n) + b(n) is a prime.
  * @author Georg Fischer
  */
-
 public class A352952 extends FiniteSequence {
 
   /** Construct the sequence. */

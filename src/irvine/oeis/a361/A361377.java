@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A361377 Squares visited by a knight moving on a spirally numbered board always to the lowest unvisited coprime square.
  * @author Georg Fischer
  */
-
 public class A361377 extends FiniteSequence {
 
   /** Construct the sequence. */

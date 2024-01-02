@@ -14,6 +14,6 @@ public class A074972 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A074972() {
-    super(1, n -> Z.ZERO.subtract(Puma.primeZ(n)).mod(Z.valueOf(20)));
+    super(1, n -> Puma.primeZ(n).negate().mod(Z.valueOf(20)));
   }
 }

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A347612 Semiprimes formed from single-digits primes only, each used at most once.
  * @author Georg Fischer
  */
-
 public class A347612 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A189394 Highly composite numbers whose number of divisors is also highly composite.
  * @author Georg Fischer
  */
-
 public class A189394 extends FiniteSequence {
 
   /** Construct the sequence. */

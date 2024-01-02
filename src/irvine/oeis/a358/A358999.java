@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A358999 Number of undirected cycles of the Platonic graphs (in the order of tetrahedral, cubical, octahedral, dodecahedral, and icosahedral graph).
  * @author Georg Fischer
  */
-
 public class A358999 extends FiniteSequence {
 
   /** Construct the sequence. */

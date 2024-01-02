@@ -11,6 +11,6 @@ public class A271144 extends A114350 {
 
   /** Construct the sequence. */
   public A271144() {
-    super(1, 0, x -> x.pow(3).multiply(42).add(x.pow(2).multiply(270)).add(x.multiply(-26436)).add(250703));
+    super(1, 0, x -> x.pow(3).multiply(42).add(x.square().multiply(270)).add(x.multiply(-26436)).add(250703));
   }
 }

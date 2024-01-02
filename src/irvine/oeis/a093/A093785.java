@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A093785 Numbers that are divisible by every digit in their Roman numeral representation.
  * @author Georg Fischer
  */
-
 public class A093785 extends FiniteSequence {
 
   /** Construct the sequence. */

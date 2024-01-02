@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A358445 Euler's 4 X 4 magic square of squares.
  * @author Georg Fischer
  */
-
 public class A358445 extends FiniteSequence {
 
   /** Construct the sequence. */

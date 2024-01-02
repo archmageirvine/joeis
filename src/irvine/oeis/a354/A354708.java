@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A354708 a(n) is the number of 9-digit zeroless pandigital numbers that are divisible by 3^n.
  * @author Georg Fischer
  */
-
 public class A354708 extends FiniteSequence {
 
   /** Construct the sequence. */

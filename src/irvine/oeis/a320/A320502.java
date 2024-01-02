@@ -4,7 +4,6 @@ package irvine.oeis.a320;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Integers;
 import irvine.math.z.Stirling;
-import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -15,6 +14,6 @@ public class A320502 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A320502() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> MemoryFactorial.SINGLETON.factorial(k).pow(Z.TWO).multiply(Stirling.firstKind(n, k).abs())));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> MemoryFactorial.SINGLETON.factorial(k).square().multiply(Stirling.firstKind(n, k).abs())));
   }
 }

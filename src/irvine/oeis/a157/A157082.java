@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A157082 Primes in a millennium reach a record minimum: numbers n such that A038823(n) is lower than all A038823(k) with k&lt;n.
  * @author Georg Fischer
  */
-
 public class A157082 extends FiniteSequence {
 
   /** Construct the sequence. */

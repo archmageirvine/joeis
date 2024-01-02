@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A359000 Number of undirected n-cycles of the octahedral graph.
  * @author Georg Fischer
  */
-
 public class A359000 extends FiniteSequence {
 
   /** Construct the sequence. */

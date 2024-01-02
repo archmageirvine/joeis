@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A087849 a(n) = a(a(a(n-1))) + abs(2*a(n-1)-n) starting with 1,1.
  * @author Georg Fischer
  */
-
 public class A087849 extends FiniteSequence {
 
   /** Construct the sequence. */

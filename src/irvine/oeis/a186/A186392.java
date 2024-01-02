@@ -4,7 +4,6 @@ package irvine.oeis.a186;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
-import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -15,6 +14,6 @@ public class A186392 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A186392() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Binomial.binomial(n, k).pow(Z.TWO).multiply(MemoryFactorial.SINGLETON.factorial(6 * k)).divide(MemoryFactorial.SINGLETON.factorial(3 * k).pow(Z.TWO))));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Binomial.binomial(n, k).square().multiply(MemoryFactorial.SINGLETON.factorial(6 * k)).divide(MemoryFactorial.SINGLETON.factorial(3 * k).square())));
   }
 }

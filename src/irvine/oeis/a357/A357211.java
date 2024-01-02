@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A357211 a(n) is the real cube root of the value of the j-function for the n-th Heegner number A003173(n).
  * @author Georg Fischer
  */
-
 public class A357211 extends FiniteSequence {
 
   /** Construct the sequence. */

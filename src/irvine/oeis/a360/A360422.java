@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A360422 Numbers k such that k^2 + (sum of fourth powers of the digits of k^2) is a square.
  * @author Georg Fischer
  */
-
 public class A360422 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -25,7 +25,7 @@ public class A120419 extends Sequence0 {
     if (mN != 0) {
       mF = mF.multiply(mN);
     }
-    final Z result = RING.pow(RING.add(RING.one(), RING.pow(RING.reversion(RING.series(RING.multiply(RING.pow(RING.monomial(new Q(2), 0), Q.HALF, mN), RING.add(RING.atan(RING.x(), mN), RING.series(RING.x(), RING.onePlusXToTheN(2), mN)), mN), RING.monomial(new Q(2), 0), mN), mN), 2, mN)), 2, mN).coeff(mN).multiply(mF).toZ().divide(mZ);
+    final Z result = RING.pow(RING.add(RING.one(), RING.pow(RING.reversion(RING.series(RING.multiply(RING.pow(RING.monomial(Q.TWO, 0), Q.HALF, mN), RING.add(RING.atan(RING.x(), mN), RING.series(RING.x(), RING.onePlusXToTheN(2), mN)), mN), RING.monomial(Q.TWO, 0), mN), mN), 2, mN)), 2, mN).coeff(mN).multiply(mF).toZ().divide(mZ);
     mZ = mZ.multiply(2);
     ++mN;
     mF = mF.multiply(mN);

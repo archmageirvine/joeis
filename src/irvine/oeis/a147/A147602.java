@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A147602 A nonsense sequence.
  * @author Georg Fischer
  */
-
 public class A147602 extends FiniteSequence {
 
   /** Construct the sequence. */

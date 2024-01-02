@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A347692 Numbers k such that there is regular 2-graph on k points with smallest eigenvalue rho_2 = -5.
  * @author Georg Fischer
  */
-
 public class A347692 extends FiniteSequence {
 
   /** Construct the sequence. */

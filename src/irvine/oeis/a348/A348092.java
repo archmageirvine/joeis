@@ -8,7 +8,6 @@ import irvine.oeis.FiniteSequence;
  * A348092 Unique values, or record values, of A343743.
  * @author Georg Fischer
  */
-
 public class A348092 extends FiniteSequence {
 
   /** Construct the sequence. */

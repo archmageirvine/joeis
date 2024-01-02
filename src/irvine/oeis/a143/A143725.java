@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A143725 Numbers of non-orientable triangulated surfaces with 12 vertices and genus n.
  * @author Georg Fischer
  */
-
 public class A143725 extends FiniteSequence {
 
   /** Construct the sequence. */

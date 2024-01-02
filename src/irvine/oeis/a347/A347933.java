@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A347933 Positive integers that can't be written in the form a+b+c for some positive integers a, b, and c satisfying gcd(a,b)=1, gcd(a,c)&gt;1, and gcd(b,c)&gt;1.
  * @author Georg Fischer
  */
-
 public class A347933 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -25,13 +25,13 @@ public class A178964 extends Sequence0 {
       mF = mF.multiply(mN);
     }
     final Z result = RING.series(RING.add(RING.add(RING.one(),
-            RING.multiply(RING.multiply(RING.pow(RING.monomial(new Q(2), 0), Q.HALF, mN),
-                RING.sin(RING.series(RING.x(), RING.pow(RING.monomial(new Q(2), 0), Q.HALF, mN), mN), mN), mN),
-              RING.cosh(RING.series(RING.x(), RING.pow(RING.monomial(new Q(2), 0), Q.HALF, mN), mN), mN), mN)),
-          RING.multiply(RING.sin(RING.series(RING.x(), RING.pow(RING.monomial(new Q(2), 0), Q.HALF, mN), mN), mN),
-            RING.sinh(RING.series(RING.x(), RING.pow(RING.monomial(new Q(2), 0), Q.HALF, mN), mN), mN), mN)),
-        RING.multiply(RING.cos(RING.series(RING.x(), RING.pow(RING.monomial(new Q(2), 0), Q.HALF, mN), mN), mN),
-          RING.cosh(RING.series(RING.x(), RING.pow(RING.monomial(new Q(2), 0), Q.HALF, mN), mN), mN), mN), mN)
+            RING.multiply(RING.multiply(RING.pow(RING.monomial(Q.TWO, 0), Q.HALF, mN),
+                RING.sin(RING.series(RING.x(), RING.pow(RING.monomial(Q.TWO, 0), Q.HALF, mN), mN), mN), mN),
+              RING.cosh(RING.series(RING.x(), RING.pow(RING.monomial(Q.TWO, 0), Q.HALF, mN), mN), mN), mN)),
+          RING.multiply(RING.sin(RING.series(RING.x(), RING.pow(RING.monomial(Q.TWO, 0), Q.HALF, mN), mN), mN),
+            RING.sinh(RING.series(RING.x(), RING.pow(RING.monomial(Q.TWO, 0), Q.HALF, mN), mN), mN), mN)),
+        RING.multiply(RING.cos(RING.series(RING.x(), RING.pow(RING.monomial(Q.TWO, 0), Q.HALF, mN), mN), mN),
+          RING.cosh(RING.series(RING.x(), RING.pow(RING.monomial(Q.TWO, 0), Q.HALF, mN), mN), mN), mN), mN)
       .coeff(mN).multiply(mF).toZ().divide(mZ);
     if ((mN & 1) == 1) {
       mZ = mZ.multiply(2);

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A362027 Squares visited by a knight moving on a square-spiral numbered board where the knight moves to a previously unvisited square with a number as close as possible to the number of the current square. If two such squares exist the smaller numbered square is chosen.
  * @author Georg Fischer
  */
-
 public class A362027 extends FiniteSequence {
 
   /** Construct the sequence. */

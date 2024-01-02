@@ -12,6 +12,6 @@ public class A347789 extends LinearRecurrence {
 
   /** Construct the sequence. */
   public A347789() {
-    super(1, new Z[] {new Z("-2"), new Z("2"), new Z("1")}, new Z[] {new Z("0"), new Z("2"), new Z("4")});
+    super(1, new Z[] {new Z("-2"), Z.TWO, Z.ONE}, new Z[] {Z.ZERO, Z.TWO, Z.FOUR});
   }
 }

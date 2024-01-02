@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A358034 Numbers k such that A234575(k,s) = s^2 where s = A007953(k).
  * @author Georg Fischer
  */
-
 public class A358034 extends FiniteSequence {
 
   /** Construct the sequence. */

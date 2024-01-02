@@ -13,6 +13,6 @@ public class A357105 extends PolynomialRootExpansionSequence {
 
   /** Construct the sequence */
   public A357105() {
-    super(1, Polynomial.create(-2, 0, -1, 2), CR.valueOf(1), CR.valueOf(2));
+    super(1, Polynomial.create(-2, 0, -1, 2), CR.ONE, CR.TWO);
   }
 }

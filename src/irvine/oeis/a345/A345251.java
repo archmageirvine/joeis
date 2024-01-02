@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A345251 Numbers engraved on the 12 sides of an ancient dodecahedral rock crystal from the first century A.D.
  * @author Georg Fischer
  */
-
 public class A345251 extends FiniteSequence {
 
   /** Construct the sequence. */

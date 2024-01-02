@@ -13,6 +13,6 @@ public class A348643 extends LinearRecurrence {
 
   /** Construct the sequence. */
   public A348643() {
-    super(new Z[] {new Z("-1"), new Z("4"), new Z("-6"), new Z("4")}, new Z[] {new Z("7"), new Z("49079"), new Z("361383"), new Z("1185751")});
+    super(new Z[] {Z.NEG_ONE, Z.FOUR, new Z("-6"), Z.FOUR}, new Z[] {Z.SEVEN, new Z("49079"), new Z("361383"), new Z("1185751")});
   }
 }

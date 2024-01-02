@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A357177 Prime indices of the Heegner numbers (A003173).
  * @author Georg Fischer
  */
-
 public class A357177 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A358705 Zeroless pandigital numbers whose square has each digit 1 to 9 twice.
  * @author Georg Fischer
  */
-
 public class A358705 extends FiniteSequence {
 
   /** Construct the sequence. */

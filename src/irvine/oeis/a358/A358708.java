@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A358708 Starting from 1, successively take the smallest "Choix de Bruxelles" (A323286) which is not already in the sequence.
  * @author Georg Fischer
  */
-
 public class A358708 extends FiniteSequence {
 
   /** Construct the sequence. */

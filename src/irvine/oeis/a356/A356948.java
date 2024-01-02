@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A356948 Sequence of scores adding to maximum break in snooker.
  * @author Georg Fischer
  */
-
 public class A356948 extends FiniteSequence {
 
   /** Construct the sequence. */

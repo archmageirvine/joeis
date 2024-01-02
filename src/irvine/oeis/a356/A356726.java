@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A356726 Integers which have in Roman numerals more distinct symbols than any smaller number.
  * @author Georg Fischer
  */
-
 public class A356726 extends FiniteSequence {
 
   /** Construct the sequence. */

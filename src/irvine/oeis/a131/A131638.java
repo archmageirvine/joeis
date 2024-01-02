@@ -27,13 +27,13 @@ public class A131638 extends Sequence1 {
     }
     ++mN;
     mF = mF.multiply(mN);
-    final Z result = RING.series(RING.subtract(RING.multiply(RING.multiply(RING.monomial(new Q(3), 0),
-            RING.pow(RING.sec(RING.series(RING.x(), RING.pow(RING.monomial(new Q(2), 0), Q.HALF, mN), mN), mN), 2, mN), mN),
-          RING.pow(RING.tan(RING.series(RING.x(), RING.pow(RING.monomial(new Q(2), 0), Q.HALF, mN), mN), mN), 2, mN), mN),
+    final Z result = RING.series(RING.subtract(RING.multiply(RING.multiply(RING.monomial(Q.THREE, 0),
+            RING.pow(RING.sec(RING.series(RING.x(), RING.pow(RING.monomial(Q.TWO, 0), Q.HALF, mN), mN), mN), 2, mN), mN),
+          RING.pow(RING.tan(RING.series(RING.x(), RING.pow(RING.monomial(Q.TWO, 0), Q.HALF, mN), mN), mN), 2, mN), mN),
         RING.series(RING.multiply(RING.multiply(RING.x(), RING.pow(RING.sec(RING.series(RING.x(),
-          RING.pow(RING.monomial(new Q(2), 0), Q.HALF, mN), mN), mN), 2, mN), mN), RING.tan(RING.series(RING.x(),
-          RING.pow(RING.monomial(new Q(2), 0), Q.HALF, mN), mN), mN), mN), RING.pow(RING.monomial(new Q(2), 0), Q.HALF, mN), mN)),
-      RING.monomial(new Q(2), 0), mN).coeff(mN).multiply(mF).toZ().divide(mZ);
+          RING.pow(RING.monomial(Q.TWO, 0), Q.HALF, mN), mN), mN), 2, mN), mN), RING.tan(RING.series(RING.x(),
+          RING.pow(RING.monomial(Q.TWO, 0), Q.HALF, mN), mN), mN), mN), RING.pow(RING.monomial(Q.TWO, 0), Q.HALF, mN), mN)),
+      RING.monomial(Q.TWO, 0), mN).coeff(mN).multiply(mF).toZ().divide(mZ);
     mZ = mZ.multiply(2);
     return result;
   }

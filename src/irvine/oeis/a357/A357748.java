@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A357748 Numbers in the lyrics of the Rolling Stones song "2000 Light Years From Home" in the order in which they appear.
  * @author Georg Fischer
  */
-
 public class A357748 extends FiniteSequence {
 
   /** Construct the sequence. */

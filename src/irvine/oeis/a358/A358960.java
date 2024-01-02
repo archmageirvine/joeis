@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A358960 Number of directed Hamiltonian paths of the Platonic graphs (in the order of tetrahedral, cubical, octahedral, dodecahedral, and icosahedral graph).
  * @author Georg Fischer
  */
-
 public class A358960 extends FiniteSequence {
 
   /** Construct the sequence. */

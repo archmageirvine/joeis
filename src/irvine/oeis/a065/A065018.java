@@ -22,6 +22,6 @@ public class A065018 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Jaguar.factor(d).sigma().pow(2));
+    return Integers.SINGLETON.sumdiv(mN, d -> Jaguar.factor(d).sigma().square());
   }
 }

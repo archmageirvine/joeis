@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A356509 (Negated) Decimal expansion of value of absolute zero in degrees Fahrenheit.
  * @author Georg Fischer
  */
-
 public class A356509 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -14,7 +14,7 @@ public class A266204 extends A056193 {
 
   @Override
   public Z next() {
-    mA = mA == null ? Z.valueOf(5) : code(mA, ++mN).subtract(1);
+    mA = mA == null ? Z.FIVE : code(mA, ++mN).subtract(1);
     return mA;
   }
 }

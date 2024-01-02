@@ -22,6 +22,6 @@ public class A351600 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Rationals.SINGLETON.sumdiv(mN, d -> !Z.valueOf(d).isSquare() ? Q.ZERO : new Q(Z.ONE, Z.valueOf(d).sqrt().pow(2))).multiply(Z.valueOf(mN).pow(2)).num();
+    return Rationals.SINGLETON.sumdiv(mN, d -> !Z.valueOf(d).isSquare() ? Q.ZERO : new Q(Z.ONE, Z.valueOf(d).sqrt().square())).multiply(Z.valueOf(mN).square()).num();
   }
 }

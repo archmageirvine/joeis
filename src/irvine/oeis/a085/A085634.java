@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A085634 Numbers of the form 2^a + 3^b = 2^c + 3^d for nonnegative a, b, c, d and a &lt;&gt; c.
  * @author Georg Fischer
  */
-
 public class A085634 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A112993 Exclusionary cubes: cubes of the terms in A112994.
  * @author Georg Fischer
  */
-
 public class A112993 extends FiniteSequence {
 
   /** Construct the sequence. */

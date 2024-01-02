@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A350555 Numerators of Conway's PIGAME.
  * @author Georg Fischer
  */
-
 public class A350555 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -22,6 +22,6 @@ public class A282099 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return (mN == 0) ? Z.ZERO : Z.valueOf(mN).pow(2).multiply(mSeq.next());
+    return (mN == 0) ? Z.ZERO : Z.valueOf(mN).square().multiply(mSeq.next());
   }
 }

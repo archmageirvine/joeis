@@ -8,7 +8,6 @@ import irvine.oeis.FiniteSequence;
  * A343743 a(n) is the largest base in which the order of the Monster group has (47 - n) zeros; alternatively, radicals of maximal powers dividing the order of the Monster group.
  * @author Georg Fischer
  */
-
 public class A343743 extends FiniteSequence {
 
   /** Construct the sequence. */

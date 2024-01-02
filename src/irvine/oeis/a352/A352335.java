@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A352335 Numbers whose representation in the Fibonacci base is a cubefree word.
  * @author Georg Fischer
  */
-
 public class A352335 extends FiniteSequence {
 
   /** Construct the sequence. */

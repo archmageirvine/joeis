@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A075048 10-smooth numbers that show their prime factors.
  * @author Georg Fischer
  */
-
 public class A075048 extends FiniteSequence {
 
   /** Construct the sequence. */

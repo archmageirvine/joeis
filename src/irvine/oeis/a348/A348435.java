@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A348435 Decimal expansion of (2/3)*e in Coulombs, two thirds of the elementary charge.
  * @author Georg Fischer
  */
-
 public class A348435 extends FiniteSequence {
 
   /** Construct the sequence. */

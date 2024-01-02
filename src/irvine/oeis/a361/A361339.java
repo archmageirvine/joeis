@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A361339 a(n) is the smallest k such that A361338(k) = n.
  * @author Georg Fischer
  */
-
 public class A361339 extends FiniteSequence {
 
   /** Construct the sequence. */

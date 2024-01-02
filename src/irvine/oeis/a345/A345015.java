@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A345015 Starting with 1, the next entry is the next higher odd integer whose spelling in English comes lexicographically earlier.
  * @author Georg Fischer
  */
-
 public class A345015 extends FiniteSequence {
 
   /** Construct the sequence. */

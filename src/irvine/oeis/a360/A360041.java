@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A360041 Prime numbers missing from A359137: prime numbers for which none of the nontrivial permutations of its digits (not permitting leading zeros) produces a prime number.
  * @author Georg Fischer
  */
-
 public class A360041 extends FiniteSequence {
 
   /** Construct the sequence. */

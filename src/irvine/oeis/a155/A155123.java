@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A155123 A finite irregular triangle.
  * @author Georg Fischer
  */
-
 public class A155123 extends FiniteSequence {
 
   /** Construct the sequence. */

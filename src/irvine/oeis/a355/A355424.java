@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A355424 Positive integers m such that the real quadratic fields of the form Q(sqrt(m^2+4)) have class number 1.
  * @author Georg Fischer
  */
-
 public class A355424 extends FiniteSequence {
 
   /** Construct the sequence. */

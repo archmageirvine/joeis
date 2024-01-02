@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A358995 Lucas numbers which are the sum of three repdigits.
  * @author Georg Fischer
  */
-
 public class A358995 extends FiniteSequence {
 
   /** Construct the sequence. */

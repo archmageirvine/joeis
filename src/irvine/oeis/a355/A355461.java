@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A355461 Squarefree numbers d of the form r^2*m^2 + 4*r, where r and m are odd positive integers, such that Q(sqrt(d)) has class number 1.
  * @author Georg Fischer
  */
-
 public class A355461 extends FiniteSequence {
 
   /** Construct the sequence. */

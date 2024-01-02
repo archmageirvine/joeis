@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A350136 Pulsar periods from the Pioneer/Voyager plaques (1972).
  * @author Georg Fischer
  */
-
 public class A350136 extends FiniteSequence {
 
   /** Construct the sequence. */

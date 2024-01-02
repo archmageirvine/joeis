@@ -9,7 +9,7 @@ import irvine.math.z.Z;
  */
 public class A184317 extends A184318 {
 
-  private int mN = 1 - 1;
+  private int mN = 0;
 
   @Override
   public Z next() {

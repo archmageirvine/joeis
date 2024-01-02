@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirichletInverseSequence;
 
 /**
- * A364952 Dirichlet inverse of A364557, which is M\u00f6bius transform of A005941.
+ * A364952 Dirichlet inverse of A364557, which is M√∂bius transform of A005941.
  * @author Georg Fischer
  */
 public class A364952 extends AbstractSequence {

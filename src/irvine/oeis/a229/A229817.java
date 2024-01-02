@@ -7,7 +7,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
 /**
- * A229817 Even bisection gives sequence a itself, n-&gt;a(2*(2*n+k)-1) gives k-th differences of a for k=1..2 with a(n)=n for n&lt;2.
+ * A229817 Even bisection gives sequence a itself, n-&gt;a(2*(2*n+k)-1) gives k-th differences of a for k=1..4 with a(n)=n for n&lt;2..
  * @author Georg Fischer
  */
 public class A229817 extends AbstractSequence implements DirectSequence {

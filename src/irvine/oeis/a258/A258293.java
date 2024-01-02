@@ -12,7 +12,7 @@ import irvine.oeis.memory.MemoryFunction2Sequence;
 public class A258293 extends MemoryFunction2Sequence<Z, Z> {
 
   private int mN; // current index
-  private final Z mA0; // value of a(0)
+  private Z mA0; // value of a(0)
   private final Function<Integer, Z> mLambda;
 
   /** Construct the sequence. */

@@ -3,12 +3,13 @@ package irvine.oeis.a000;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A000203 a(n) = sigma(n), the sum of the divisors of n. Also called sigma_1(n).
  * @author Sean A. Irvine
  */
-public class A000203 extends AbstractSequence {
+public class A000203 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -28,5 +29,15 @@ public class A000203 extends AbstractSequence {
   @Override
   public Z next() {
     return Jaguar.factor(++mN).sigma();
+  }
+
+  @Override
+  public Z a(int n) {
+    return Jaguar.factor(n).sigma();
+  }
+
+  @Override
+  public Z a(Z n) {
+    return Jaguar.factor(n).sigma();
   }
 }

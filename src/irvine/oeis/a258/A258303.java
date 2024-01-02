@@ -11,6 +11,6 @@ public class A258303 extends A258293 {
 
   /** Construct the sequence. */
   public A258303() {
-    super(0, 1, (n) -> Z.valueOf(n).pow(3).multiply(3));
+    super(0, 1, n -> Z.valueOf(n).pow(3).multiply(3));
   }
 }

@@ -11,6 +11,6 @@ public class A258295 extends A258293 {
 
   /** Construct the sequence. */
   public A258295() {
-    super(0, 1, (n) -> Z.valueOf(n).square().multiply(5));
+    super(0, 1, n -> Z.valueOf(n).square().multiply(5));
   }
 }

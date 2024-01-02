@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A166287 Number of peak plateaux in all Dyck paths of semilength n with no UUU&apos;s and no DDD&apos;s (U=(1,1), D=(1,-1)).
+ * A166287 Number of peak plateaux in all Dyck paths of semilength n with no UUU's and no DDD's (U=(1,1), D=(1,-1)).
  * 1/2*(1-x-x^2-((x^2-3*x+1)*(x^2+x+1))^(1/2))/(1-x)/((x^2-3*x+1)*(x^2+x+1))^(1/2)
  * @author Georg Fischer
  */

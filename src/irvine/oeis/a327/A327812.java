@@ -37,7 +37,7 @@ public class A327812 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(Z n) {
+  public Z a(final Z n) {
     // Let n = 3^e*s, gcd(3,s) = 1, then a(n) = phi(n)/ord(3,s)
     // a(n) = my(s=n/3^valuation(n, 3)); eulerphi(n)/znorder(Mod(3, s))
     final int e = ZUtils.valuation(n, mBase1);
@@ -46,7 +46,7 @@ public class A327812 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(int n) {
+  public Z a(final int n) {
     return a(Z.valueOf(n));
   }
 

@@ -32,12 +32,12 @@ public class A000203 extends AbstractSequence implements DirectSequence {
   }
 
   @Override
-  public Z a(int n) {
+  public Z a(final int n) {
     return Jaguar.factor(n).sigma();
   }
 
   @Override
-  public Z a(Z n) {
+  public Z a(final Z n) {
     return Jaguar.factor(n).sigma();
   }
 }

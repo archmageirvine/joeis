@@ -11,6 +11,6 @@ public class A258670 extends A258293 {
 
   /** Construct the sequence. */
   public A258670() {
-    super(0, 0, (n) -> MemoryFactorial.SINGLETON.factorial(2 * n));
+    super(0, 0, n -> MemoryFactorial.SINGLETON.factorial(2 * n));
   }
 }

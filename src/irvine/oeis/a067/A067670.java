@@ -9,6 +9,7 @@ import irvine.oeis.NoncomputableSequence;
  */
 public class A067670 extends NoncomputableSequence {
 
+  /** Construct the sequence. */
   public A067670() {
     super(0, NONCOMPUTABLE, Z.TWO, Z.valueOf(11), Z.valueOf(19), Z.valueOf(199), new Z("29998999999999999999999"));
   }

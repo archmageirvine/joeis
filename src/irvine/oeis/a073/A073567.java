@@ -15,7 +15,7 @@ public class A073567 extends FilterSequence {
   /** Construct the sequence. */
   public A073567() {
     super(1, new A000027(), (n, v) -> {
-      FactorSequence fs = Jaguar.factor(n);
+      final FactorSequence fs = Jaguar.factor(n);
       return fs.sigma().equals(fs.phi().multiply(fs.omega()));
     });
   }

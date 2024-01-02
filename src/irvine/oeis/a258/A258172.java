@@ -25,7 +25,7 @@ public class A258172 extends AbstractSequence implements DirectSequence {
    * Generic constructor with parameter.
    * @param lambda take peaks of this expression
    */
-  public A258172(final int offset, BiFunction<Integer, Integer, Z> lambda) {
+  public A258172(final int offset, final BiFunction<Integer, Integer, Z> lambda) {
     super(offset);
     mN = offset - 1;
     mLambda = lambda;

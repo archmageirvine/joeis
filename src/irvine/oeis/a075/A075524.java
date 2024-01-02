@@ -13,6 +13,6 @@ public class A075524 extends FilterSequence {
 
   /** Construct the sequence. */
   public A075524() {
-    super(1, new SimpleTransformSequence(1, new A000040(), p -> (p.multiply(4).add(p.mod(4)))), v -> !v.isProbablePrime());
+    super(1, new SimpleTransformSequence(1, new A000040(), p -> p.multiply(4).add(p.mod(4))), v -> !v.isProbablePrime());
   }
 }

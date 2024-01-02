@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A135334 Number of Dyck paths of semilength n having no UDDU&apos;s starting at level 1.
+ * A135334 Number of Dyck paths of semilength n having no UDDU's starting at level 1.
  * 1+1/4/x*(1-(1-4*x)^(1/2))/(5/4-1/4*(1-4*x)^(1/2))
  * @author Georg Fischer
  */

@@ -12,6 +12,6 @@ public class A238567 extends A258293 {
 
   /** Construct the sequence. */
   public A238567() {
-    super(0, 0, (n) -> Z.valueOf(10).pow(n));
+    super(0, 0, Z.TEN::pow);
   }
 }

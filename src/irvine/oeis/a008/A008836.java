@@ -19,12 +19,12 @@ public class A008836 extends Sequence1 implements DirectSequence {
   }
 
   @Override
-  public Z a(int n) {
+  public Z a(final int n) {
     return Z.valueOf(Jaguar.factor(n).lambda());
   }
 
   @Override
-  public Z a(Z n) {
+  public Z a(final Z n) {
     return Z.valueOf(Jaguar.factor(n).lambda());
   }
 }

@@ -11,6 +11,6 @@ public class A258298 extends A258293 {
 
   /** Construct the sequence. */
   public A258298() {
-    super(0, 1, (n) -> Z.valueOf(n).multiply(n + 1).multiply(n + 2).divide(6));
+    super(0, 1, n -> Z.valueOf(n).multiply(n + 1).multiply(n + 2).divide(6));
   }
 }

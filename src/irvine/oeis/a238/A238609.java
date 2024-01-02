@@ -12,6 +12,6 @@ public class A238609 extends A258293 {
 
   /** Construct the sequence. */
   public A238609() {
-    super(0, 1, (n) -> Z.valueOf(n).pow(4));
+    super(0, 1, n -> Z.valueOf(n).pow(4));
   }
 }

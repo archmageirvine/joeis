@@ -97,7 +97,7 @@ public class A123762 extends AbstractSequence implements DirectSequence {
    * @return true when the xy-projections of bricks at i and j overlap
    */
   private boolean meetsXY(final int i, final int j) {
-    return (!(mX[i] + xdim(i) <= mX[j] || mY[i] + ydim(i) <= mY[j] || mX[i] >= mX[j] + xdim(j) || mY[i] >= mY[j] + ydim(j)));
+    return !(mX[i] + xdim(i) <= mX[j] || mY[i] + ydim(i) <= mY[j] || mX[i] >= mX[j] + xdim(j) || mY[i] >= mY[j] + ydim(j));
   }
 
   /**
@@ -233,7 +233,7 @@ public class A123762 extends AbstractSequence implements DirectSequence {
   private void count(final int attachFrom, int indexFrom) {
     //** System.out.println("attachFrom=" + attachFrom + ", indexFrom=" + indexFrom + ", mPlaced=" + mPlaced);
     if (mN == mPlaced) { // Configuration finished, compute and add weight
-      int sw = symmetryWeight();
+      final int sw = symmetryWeight();
       //** System.out.println("  sw=" + sw);
       if ((sw & mMask) != 0) {
         mCounter += sw;
@@ -266,7 +266,8 @@ public class A123762 extends AbstractSequence implements DirectSequence {
   @Override
   public Z a(final Z nz) {
     mN = nz.intValueExact();
-    mOptions = ((mW == mB) ? (mW + mB - 1) * (mW + mB - 1) : (mW + mB - 1) * (mW + mB - 1) + (2 * mW - 1) * (2 * mB - 1));
+    final int t = (mW + mB - 1) * (mW + mB - 1);
+    mOptions = mW == mB ? t : t + (2 * mW - 1) * (2 * mB - 1);
     mX[0] = 0;
     mY[0] = 0;
     mZ[0] = 0;

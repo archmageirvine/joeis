@@ -12,6 +12,6 @@ public class A236810 extends A258293 {
 
   /** Construct the sequence. */
   public A236810() {
-    super(0, 0, (n) -> MemoryFactorial.SINGLETON.factorial(n));
+    super(0, 0, MemoryFactorial.SINGLETON::factorial);
   }
 }

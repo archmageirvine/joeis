@@ -26,7 +26,7 @@ public class A067618 extends Sequence0 {
       if (mPrime.isPrime(m + k)) {
         for (int r = 1; r <= m; ++r) {
           if (mPrime.isPrime(r + k)) {
-            res = res.add(get(n - r * (2 * m - r), m -r - 1, k + r));
+            res = res.add(get(n - r * (2 * m - r), m - r - 1, k + r));
           }
         }
       }

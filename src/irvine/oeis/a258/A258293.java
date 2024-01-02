@@ -12,12 +12,12 @@ import irvine.oeis.memory.MemoryFunction2Sequence;
 public class A258293 extends MemoryFunction2Sequence<Z, Z> {
 
   private int mN; // current index
-  private Z mA0; // value of a(0)
+  private final Z mA0; // value of a(0)
   private final Function<Integer, Z> mLambda;
 
   /** Construct the sequence. */
   public A258293() {
-    this(0, 1, (n) -> Z.valueOf(n).square().multiply(3));
+    this(0, 1, n -> Z.valueOf(n).square().multiply(3));
   }
 
   /**
@@ -32,10 +32,6 @@ public class A258293 extends MemoryFunction2Sequence<Z, Z> {
     mLambda = lambda;
   }
 
-  /* Maple:
-    T:=proc(n, k) option remember; `if`(n=0 or k=1, 1, T(n, k-1) + `if`(n<k, 0, T(n-k, k))) end proc: 
-    seq(T(3*n^2, n), n=0..20);
-  */
   @Override
   protected Z compute(final Z n, final Z k) {
     if (n.isZero() || k.compareTo(Z.ONE) <= 0) {
@@ -50,7 +46,6 @@ public class A258293 extends MemoryFunction2Sequence<Z, Z> {
 
   @Override
   public Z next() {
-    ++mN;
-    return (mN == 0) ? mA0 : get(mLambda.apply(mN), Z.valueOf(mN));
+    return ++mN == 0 ? mA0 : get(mLambda.apply(mN), Z.valueOf(mN));
   }
 }

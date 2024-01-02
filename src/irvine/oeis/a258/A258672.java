@@ -11,6 +11,6 @@ public class A258672 extends A258293 {
 
   /** Construct the sequence. */
   public A258672() {
-    super(0, 0, (n) -> Z.TWO.pow(n).multiply(n));
+    super(0, 0, n -> Z.TWO.pow(n).multiply(n));
   }
 }

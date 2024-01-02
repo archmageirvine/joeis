@@ -34,7 +34,7 @@ public class A067609 extends Sequence1 {
       return Z.ONE;
     } else if ((mN & 1) == 0) {
       return Binomial.binomial(rd(mN / 2).add(1), 2);
-    } else{
+    } else {
       final int r = (mN - 1) / 2;
       return f(mRid.get(r), 4)
         .subtract(rd(r).multiply(f(mRid.get((mN - 3) / 2), 3)))

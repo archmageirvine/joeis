@@ -15,7 +15,7 @@ public class A237512 extends A258293 {
 
   /** Construct the sequence. */
   public A237512() {
-    super(0, 0, (n) -> MemoryFactorial.SINGLETON.factorial(n).subtract(Z.valueOf(n * (n + 1) / 2)));
+    super(0, 0, n -> MemoryFactorial.SINGLETON.factorial(n).subtract(Z.valueOf((long) n * (n + 1) / 2)));
   }
 
   @Override

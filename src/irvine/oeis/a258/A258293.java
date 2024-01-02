@@ -25,7 +25,7 @@ public class A258293 extends MemoryFunction2Sequence<Z, Z> {
    * @param a0 value of a(0): 0 or 1.
    * @param lambda expression for number to be partitioned
    */
-  public A258293(final int offset, int a0, Function<Integer, Z> lambda) {
+  public A258293(final int offset, final int a0, final Function<Integer, Z> lambda) {
     super(offset);
     mN = offset - 1;
     mA0 = Z.valueOf(a0);

@@ -275,6 +275,6 @@ public class A123762 extends AbstractSequence implements DirectSequence {
     mCounter = 0;
     mPlaced = 1;
     count(0, 0);
-    return Z.valueOf((mCounter / ((long) mN * ((mB == mW) ? 4 : 2))));
+    return Z.valueOf(mCounter / ((long) mN * (mB == mW ? 4 : 2)));
   }
 }

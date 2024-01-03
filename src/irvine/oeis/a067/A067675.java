@@ -3,19 +3,20 @@ package irvine.oeis.a067;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A067675 Number of fixed convex polyominoes with n cells.
  * @author Ruben Gr&oslash;nning Spaans
  * @author Sean A. Irvine (Java port)
  */
-public class A067675 extends Sequence1 {
+public class A067675 extends AbstractSequence {
 
   // See https://github.com/stubbscroll/OEIS/blob/master/A067675.c
 
   private int mN = 0;
   private int mM = 8;
+  private final int mDirected;
   
   /* DP state: [prev/cur][leftmost][rightmost][width][cells used]
      leftmost: 1 if the leftmost part of the current row is to the right
@@ -26,6 +27,16 @@ public class A067675 extends Sequence1 {
   */
 
   private Z[] mTable = {};
+
+  protected A067675(final int directed) {
+    super(1);
+    mDirected = directed;
+  }
+
+  /** Construct the sequence. */
+  public A067675() {
+    this(0);
+  }
 
   /* precalculate helper values for main algorithm so that we can do innermost
      loop in O(1) with table lookup. Pre-calculation is O(n^3), less than the
@@ -77,7 +88,7 @@ public class A067675 extends Sequence1 {
      gmp's multiply function among other things.
      disclaimer, there might be much better approaches.
   */
-  private void calcterms(final int n) {
+  private void calcterms(final int n, final int directed) {
     final Z[][][][][] dp = new Z[2][2][2][n][n];
     /* initialize dp array */
     for (int i = 0; i < 2; ++i) {
@@ -97,7 +108,7 @@ public class A067675 extends Sequence1 {
     boolean done;
     /* initial dp with a top row of every possible length */
     for (int i = 1; i < n; ++i) {
-      dp[prev][0][0][i][i] = Z.ONE;
+      dp[prev][directed][0][i][i] = Z.ONE;
     }
     do {
       done = true;
@@ -105,9 +116,7 @@ public class A067675 extends Sequence1 {
       for (int i = 0; i < 2; ++i) {
         for (int j = 0; j < 2; ++j) {
           for (int k = 0; k < n; ++k) {
-            for (int l = 0; l < n; ++l) {
-              dp[cur][i][j][k][l] = Z.ZERO;
-            }
+            Arrays.fill(dp[cur][i][j][k], Z.ZERO);
           }
         }
       }
@@ -151,7 +160,7 @@ public class A067675 extends Sequence1 {
   public Z next() {
     if (++mN >= mTable.length) {
       mM *= 2;
-      calcterms(mM);
+      calcterms(mM, mDirected);
     }
     return mTable[mN];
   }

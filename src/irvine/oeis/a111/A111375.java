@@ -7,7 +7,7 @@ import irvine.oeis.transform.EulerTransform;
 
 
 /**
- * A111375 Let qf(a,q) = Product(1-a*q^j,j=0..infinity); g.f. is qf(q,q^7)*qf(q^2,q^7)*qf(q^4,q^7)/(qf(q^3,q^7)*qf(q^5,q^7)*qf(q^6,q^7))).
+ * A111375 Let qf(a,q) = Product(1-a*q^j,j=0..infinity); g.f. is qf(q,q^7)*qf(q^2,q^7)*qf(q^4,q^7)/(qf(q^3,q^7)*qf(q^5,q^7)*qf(q^6,q^7)).
  * @author Georg Fischer
  */
 public class A111375 extends EulerTransform {

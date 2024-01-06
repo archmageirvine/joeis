@@ -5,7 +5,7 @@ import irvine.oeis.a062.A062817;
 import irvine.oeis.transform.RootSequence;
 
 /**
- * A132608 Self-convolution square-root of A062817 (offset 2); thus g.f. A(x) satisfies: A(x)^2 = Sum(n&gt;=2} A062817(n)*x^n, where A062817(n) = Sum_{k=0..n} (n-k)^k*k^(n-k).
+ * A132608 Self-convolution square-root of A062817 (offset 2); thus g.f. A(x) satisfies: A(x)^2 = Sum_{n&gt;=2} A062817(n)*x^n, where A062817(n) = Sum_{k=0..n} (n-k)^k*k^(n-k).
  * @author Georg Fischer
  */
 public class A132608 extends RootSequence {

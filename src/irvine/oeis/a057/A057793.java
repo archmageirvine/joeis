@@ -8,7 +8,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A057793 Integer nearest Riemann(10^n), where Riemann(x) = Sum of ( mu(k)/k * Integral Log( x^(1/k) ) for k = 1 to infinity.
+ * A057793 Integer nearest Riemann(10^n), where Riemann(x) = Sum_{k=1..infinity} mu(k)/k * Integral Log( x^(1/k) ).
  * @author Sean A. Irvine
  */
 public class A057793 extends Sequence1 implements Conjectural {

@@ -291,7 +291,7 @@ public final class FactorSequence {
    * Return the sum of the exponents.
    * @return big omega
    * @exception UnsupportedOperationException if factor sequence is not completely
-   * resolved to primes and probable primes.
+   * resolved into primes and probable primes.
    */
   public long bigOmega() {
     long bigOmega = 0;

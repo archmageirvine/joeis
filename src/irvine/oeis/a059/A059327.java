@@ -5,7 +5,7 @@ import irvine.oeis.a005.A005385;
 import irvine.util.array.DynamicArray;
 
 /**
- * A059327 a(n) is smallest safe prime (A005385) such that a(n) + 12*n is the next safe prime, i.e., x = (a(n) - 1)/2) and x + 6*n are closest Sophie Germain primes.
+ * A059327 a(n) is smallest safe prime (A005385) such that a(n) + 12*n is the next safe prime, i.e., x = (a(n) - 1)/2 and x + 6*n are closest Sophie Germain primes.
  * @author Sean A. Irvine
  */
 public class A059327 extends A005385 {

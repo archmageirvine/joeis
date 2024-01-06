@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A072331 a(n) = 2^(n-1)*sum(k=0..n),((n+k)!/(n-k)!)/k!).
+ * A072331 a(n) = 2^(n-1) * Sum_{k=0..n} ((n+k)!/(n-k)!)/k!.
  * a(n)=2^(n-1)*sum(k=0,n,((n+k)!/(n-k)!)/k!)
  * @author Georg Fischer
  */

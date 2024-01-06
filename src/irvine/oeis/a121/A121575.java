@@ -4,7 +4,7 @@ package irvine.oeis.a121;
 import irvine.oeis.triangle.Inverse;
 
 /**
- * A121575 Riordan array (-sqrt(4*x^2+8*x+1)+2*x+2), (sqrt(4*x^2+8*x+1)-2*x-1)/2).
+ * A121575 Riordan array (-sqrt(4*x^2+8*x+1)+2*x+2, (sqrt(4*x^2+8*x+1)-2*x-1)/2).
  * @author Georg Fischer
  */
 public class A121575 extends Inverse {

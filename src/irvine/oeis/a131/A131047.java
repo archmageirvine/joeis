@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A131047 (1/2) * ((A007318 - A007318^(-1)).
+ * A131047 (1/2) * (A007318 - A007318^(-1)).
  * @author Georg Fischer
  */
 public class A131047 extends PrependSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 import irvine.oeis.triangle.Inverse;
 
 /**
- * A114193 Riordan array (1/(1+2xc(-2x)),xc(-2x)/(1+2xc(-2x)), c(x) the g.f. of A000108.
+ * A114193 Riordan array (1/(1+2xc(-2x)),xc(-2x)/(1+2xc(-2x))), c(x) the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A114193 extends Inverse {

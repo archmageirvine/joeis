@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicArray;
 
 /**
- * A054212 a(n)^5 is the smallest fifth power whose decimal expansion digits occur with same frequency n.
+ * A054212 a(n)^5 is the smallest fifth power whose decimal digits occur with same frequency n.
  * @author Sean A. Irvine
  */
 public class A054212 extends Sequence1 {

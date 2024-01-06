@@ -5,7 +5,7 @@ package irvine.oeis.a075;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A075681 Difference between (n-1)*(n-2)^3 and A003878(n).
+ * A075681 a(n) = (n-1)*(n-2)^3 - A003878(n-3), with a(1) = a(2) = 0 and a(3) = 2.
  * @author Georg Fischer
  */
 public class A075681 extends HolonomicRecurrence {

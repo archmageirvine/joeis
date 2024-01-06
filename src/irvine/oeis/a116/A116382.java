@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A116382 Riordan array (1/sqrt(1-4*x^2), (1-2*x^2*c(x^2))*(x^2*c(x^2))/(x*(1-x-x^2*c(x^2))) where c(x) is the g.f. of A000108.
+ * A116382 Riordan array (1/sqrt(1-4*x^2), (1-2*x^2*c(x^2))*(x^2*c(x^2))/(x*(1-x-x^2*c(x^2)))) where c(x) is the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A116382 extends LambdaTriangle {

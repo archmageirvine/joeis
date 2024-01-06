@@ -5,7 +5,7 @@ package irvine.oeis.a127;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A127040 a(n) = binomial(floor((3n+4)/2)),floor(n/2)).
+ * A127040 a(n) = binomial(floor((3n+4)/2),floor(n/2)).
  * Recurrence: 8*(n+2)*(n+1)*a(n)-84*(n-1)*(n+1)*a(n-1)+6*(-33*n^2+54*n-8)*a(n-2)+9*(63*n^2-63*n-16)*a(n-3)+108*(3*n-5)*(3*n-7)*a(n-4)=0
  * @author Georg Fischer
  */

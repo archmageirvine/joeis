@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A076217 a(1)=1, a(n) = a(n-1) + n * (sign(n-a(n-1)).
+ * A076217 a(1)=1, a(n) = a(n-1) + n * sign(n-a(n-1)).
  * @author Georg Fischer
  */
 public class A076217 extends TupleTransformSequence {

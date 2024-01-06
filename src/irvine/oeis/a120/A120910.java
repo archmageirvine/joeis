@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a038.A038207;
 
 /**
- * A120910 Triangle read by rows: T(n,k) is the number of ternary words of length n having k levels (n &gt;= 1, 0 &lt;= k &lt;= n-1). A level is a pair of identical consecutive letters).
+ * A120910 Triangle read by rows: T(n,k) is the number of ternary words of length n having k levels (n &gt;= 1, 0 &lt;= k &lt;= n-1). A level is a pair of identical consecutive letters.
  * A level is a pair of identical consecutive letters.
  * @author Georg Fischer
  */

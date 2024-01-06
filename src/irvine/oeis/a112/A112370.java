@@ -5,7 +5,7 @@ package irvine.oeis.a112;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A112370 Sum_{i=0..n} 3^i*i!.
+ * A112370 a(n) = Sum_{i=0..n} 3^i*i!.
  * @author Georg Fischer
  */
 public class A112370 extends HolonomicRecurrence {

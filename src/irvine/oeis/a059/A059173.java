@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A059173 Maximal number of regions into which 4-space can be divided by n hyper-spheres.
+ * A059173 Maximal number of regions into which 4-space can be divided by n hyperspheres.
  * @author Georg Fischer
  */
 public class A059173 extends GeneratingFunctionSequence {

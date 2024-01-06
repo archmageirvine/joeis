@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A117110 The (1,1)-entry of the vector v[n]=Mv[n-1], where M is the 3 x 3 matrix [[0,-1/r,r],[ -1/r,-2/r,1],[r,1,2+2/r]], r being the golden ratio and v[0] is the column matrix [0,1,1].
+ * A117110 Expansion of x*(1+5*x)/((1+2*x+1)*(1-4*x)).
  * @author Georg Fischer
  */
 public class A117110 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a001.A001950;
 
 /**
- * A088207 a(n) = Sum_{k=0..n} floor(k*phi^2)) where phi=(1+sqrt(5))/2.
+ * A088207 a(n) = Sum_{k=0..n} floor(k*phi^2) where phi=(1+sqrt(5))/2.
  * @author Georg Fischer
  */
 public class A088207 extends PartialSumSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002110;
 
 /**
- * A055767 Index (or subscript) of the largest primorial (A002110(k)) which divides EulerPhi of the n-th primorial ((A005867(n)).
+ * A055767 Index (or subscript) of the largest primorial (A002110(k)) which divides EulerPhi of the n-th primorial (A005867(n)).
  * @author Sean A. Irvine
  */
 public class A055767 extends A002110 {

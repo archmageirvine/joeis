@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A098228 a(n) = floor(n/(n-phi(n)) = floor(n/cototient(n)).
+ * A098228 a(n) = floor(n/(n-phi(n))) = floor(n/cototient(n)).
  * a(n)=floor(n/(n-eulerphi(n)))
  * @author Georg Fischer
  */

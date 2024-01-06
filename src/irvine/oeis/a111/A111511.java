@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A111511 Decimal expansion of -log(sine of 1 degree)).
+ * A111511 Decimal expansion of -log(sine of 1 degree).
  * @author Georg Fischer
  */
 public class A111511 extends DecimalExpansionSequence {

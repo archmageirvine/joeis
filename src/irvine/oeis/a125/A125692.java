@@ -5,7 +5,7 @@ import irvine.oeis.a105.A105523;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
- * A125692 Riordan array (1-x*c(-x^2),x(1-x*c(-x^2)) where c(x) is the g.f. of A000108.
+ * A125692 Riordan array (1-x*c(-x^2),x(1-x*c(-x^2))) where c(x) is the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A125692 extends PartitionTransformTriangle {

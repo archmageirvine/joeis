@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A031375 Primes p(9n-1).
+ * A031375 a(n) = prime(9n-1).
  * @author Sean A. Irvine
  */
 public class A031375 extends A000040 {

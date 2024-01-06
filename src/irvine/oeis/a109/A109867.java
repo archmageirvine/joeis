@@ -6,7 +6,7 @@ import irvine.oeis.recur.ConstantOrderRecurrence;
 
 
 /**
- * A109867 a(1) = 12; for n &gt;= 1, a(n+1) = abs((a(n) + R(a(n)) * (a(n) - R(a(n))), where R(k) is the digit reversal of k.
+ * A109867 a(1) = 12; for n &gt;= 1, a(n+1) = abs((a(n) + R(a(n))) * (a(n) - R(a(n)))), where R(k) is the digit reversal of k.
  * @author Georg Fischer
  */
 public class A109867 extends ConstantOrderRecurrence {

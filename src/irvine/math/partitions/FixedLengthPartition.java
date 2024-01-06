@@ -54,23 +54,6 @@ public final class FixedLengthPartition {
     this(n, parts, 1);
   }
 
-  /*
-  def fixed_length_partitions(n: int, k: int, lo=1, hi=math.inf) \
-        -> Iterator[tuple[int,...]]:
-    """Yield each descending tuple with sum n, length k, and lo <= values <= hi
-    (default lo = 1, hi = math.inf)."""
-    if k == 0 and n == 0:
-        yield tuple()
-    elif k == 1 and n >= lo:
-        yield (n,)
-    elif k >= 2:
-        for i in range(max(lo, (n+k-1)//k, n-hi*(k-1)),
-                       min(hi, n - (k-1)*lo) + 1):
-            for p in fixed_length_partitions(n - i, k - 1, lo, i):
-                yield (i,) + p
-
-   */
-
   /**
    * Return the next partition or null if all partitions have been produced.
    * @return integer partition or null if no further partition exist

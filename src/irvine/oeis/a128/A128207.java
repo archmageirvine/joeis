@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A128207 Number triangle T(n,k)=(-1)^(n-k)*[k&lt;=n]*Product{i=1..n,Sum{j=0..i-1,F(j-1)}/Product{i=1..k,Sum{j=0..i-1,F(j-1)}}.
+ * A128207 Number triangle T(n,k)=(-1)^(n-k)*[k&lt;=n]*Product{i=k+1..n,Sum{j=0..i-1,F(j-1)}}.
  * @author Georg Fischer
  */
 public class A128207 extends LambdaTriangle {

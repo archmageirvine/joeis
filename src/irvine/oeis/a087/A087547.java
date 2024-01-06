@@ -4,7 +4,7 @@ package irvine.oeis.a087;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A087547 a(n) = n!*2^(n+1) * (Integral_{x = 0..1} 1/(1+x^2)^(n+1) dx - Pi*(2*n)!/(2^(n+1)*n!).
+ * A087547 a(n) = n!*2^(n+1) * (Integral_{x = 0..1} 1/(1+x^2)^(n+1) dx) - Pi*(2*n)!/(2^(n+1)*n!).
  * @author Georg Fischer
  */
 public class A087547 extends HolonomicRecurrence {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A001168.
+ * A067787 Numbers n such that the number of primes not exceeding sigma(n) equals phi(n), i.e., pi(sigma(n)) = phi(n).
  * @author Sean A. Irvine
  */
 public class A067787 extends Sequence1 {

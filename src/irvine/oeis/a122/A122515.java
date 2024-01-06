@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007504;
 import irvine.oeis.a046.A046992;
 
 /**
- * A122515 a(n) = A007504(n)-A046992(n).
+ * A122515 a(n) = A007504(n) - A046992(n).
  * @author Georg Fischer
  */
 public class A122515 extends AbstractSequence {

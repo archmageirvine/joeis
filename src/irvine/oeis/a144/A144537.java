@@ -5,7 +5,7 @@ package irvine.oeis.a144;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A144537 a(0) = 3; for n &gt; 0, a(n) = sqrt(3)*(P^(2*n)-M^(2*n))/8 + (3/4)*(P^n+M^n) + 1/2), where P = 7+4*sqrt(3), M = 7-4*sqrt(3).
+ * A144537 a(0) = 3; for n &gt; 0, a(n) = sqrt(3)*(P^(2*n)-M^(2*n))/8 + (3/4)*(P^n+M^n) + 1/2, where P = 7+4*sqrt(3), M = 7-4*sqrt(3).
  * Recurrence: a(n)=+209*a(n-1)-2926*a(n-2)+2926*a(n-3)-209*a(n-4)+a(n-5)
  * @author Georg Fischer
  */

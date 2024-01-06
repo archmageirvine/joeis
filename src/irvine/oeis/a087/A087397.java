@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A087397 Smallest triangular number &gt; 1 and == 1 (mod (prime(n)).
+ * A087397 Smallest triangular number &gt; 1 and == 1 (mod prime(n)).
  * a(n) = (prime(n)-2)*(prime(n)-1)/2
  * @author Georg Fischer
  */

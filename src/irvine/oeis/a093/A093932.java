@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A093932 For n &gt; 0, a(n+1) is the least prime not already used such that abs(a(n+1)-a(n)/2n is prime.
+ * A093932 For n &gt; 0, a(n+1) is the least prime not already used such that abs(a(n+1)-a(n))/2n is prime.
  * @author Georg Fischer
  */
 public class A093932 extends FiniteSequence {

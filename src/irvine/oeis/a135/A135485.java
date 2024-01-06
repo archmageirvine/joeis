@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a093.A093360;
 
 /**
- * A135485 a(n) = Sum_{i=1..n) prime(i)^(i-1), where prime(i) denotes i-th prime number.
+ * A135485 a(n) = Sum_{i=1..n} prime(i)^(i-1), where prime(i) denotes i-th prime number.
  * @author Sean A. Irvine
  */
 public class A135485 extends PartialSumSequence {

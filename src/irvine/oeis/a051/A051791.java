@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A051791 Numbers that are unchanged when turned upside down, when written in a font in which 7 looks like upside-down 2).
+ * A051791 Numbers that are unchanged when turned upside down, when written in a font in which 7 looks like upside-down 2.
  * @author Sean A. Irvine
  */
 public class A051791 extends Sequence1 {

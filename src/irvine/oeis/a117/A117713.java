@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A117713 a(1)=1, a(2)=3, a(3)=8; for n&gt;=4, a(n) = 10*a(n-3) + 8 (if a(n-3) is odd) or + 9 if a(n-3) is even).
+ * A117713 a(1)=1, a(2)=3, a(3)=8; for n&gt;=4, a(n) = 10*a(n-3) + 8 (if a(n-3) is odd) or + 9 (if a(n-3) is even).
  * @author Georg Fischer
  */
 public class A117713 extends GeneratingFunctionSequence {

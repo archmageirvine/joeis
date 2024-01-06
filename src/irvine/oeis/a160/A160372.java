@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A160372 The 4-tuple (2, ((2*n+1)^2-1)/2, (2*n+3)^2-1)/2, a(n)}, where a(n)=4(3+20n+42n^2+32n^3+8n^4), has Diophantus' property that the product of any two distinct terms plus one is a square.
+ * A160372 The 4-tuple (2, ((2*n+1)^2-1)/2, (2*n+3)^2-1)/2, a(n)), where a(n)=4(3+20n+42n^2+32n^3+8n^4), has Diophantus' property that the product of any two distinct terms plus one is a square.
  * @author Georg Fischer
  */
 public class A160372 extends GeneratingFunctionSequence {

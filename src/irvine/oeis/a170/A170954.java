@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a000.A000930;
 
 /**
- * A170954 Indices n such that A000930(n) is prime.
+ * A170954 Indices k such that A000930(k) is prime.
  * @author Georg Fischer
  */
 public class A170954 extends FilterPositionSequence {

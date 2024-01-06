@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A013654 Each term of the period of continued fraction for sqrt(n) divides n.
+ * A013654 Positive nonsquare integers k such that each term of the regular continued fraction of sqrt(k) divides k.
  * @author Sean A. Irvine
  */
 public class A013654 extends Sequence1 {

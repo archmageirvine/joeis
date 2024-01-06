@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A115990 Riordan array (1/sqrt(1-2*x-3*x^2), ((1-2*x-3*x^2)/(2*(1-3*x)) - sqrt(1-2*x-3*x^2)/2).
+ * A115990 Riordan array (1/sqrt(1-2*x-3*x^2), (1-2*x-3*x^2)/(2*(1-3*x)) - sqrt(1-2*x-3*x^2)/2).
  * @author Georg Fischer
  */
 public class A115990 extends LambdaTriangle {

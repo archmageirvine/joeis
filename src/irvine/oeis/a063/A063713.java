@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063713 Numbers n such that there exist primes p, q, r with n*2 = p - r = r + q (values of r are given in A063714.
+ * A063713 Numbers n such that there exist primes p, q, r with n*2 = p - r = r + q (values of r are given in A063714).
  * @author Sean A. Irvine
  */
 public class A063713 extends Sequence1 {

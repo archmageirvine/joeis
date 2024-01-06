@@ -5,7 +5,7 @@ package irvine.oeis.a110;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A110983 Integers n such that 5*10^n + 51 is prime.
+ * A110983 Integers k such that 5*10^k + 51 is prime.
  * @author Georg Fischer
  */
 public class A110983 extends PowerFactorPrimeSequence {

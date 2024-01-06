@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A054047 Numbers which can be read as (possibly different) numbers when rotated by 180 degrees *final zeros allowed).
+ * A054047 Numbers which can be read as (possibly different) numbers when rotated by 180 degrees (final zeros allowed).
  * @author Sean A. Irvine
  */
 public class A054047 extends Sequence0 {

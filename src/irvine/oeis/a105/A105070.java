@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.a208.A208509;
 
 /**
- * A105070 T(n,k) = 2^k*binomial(n,2k+1), where 0 &lt;= k &lt;= floor((n-1)/2, n &gt;= 1.
+ * A105070 T(n,k) = 2^k*binomial(n,2k+1), where 0 &lt;= k &lt;= floor((n-1)/2), n &gt;= 1.
  * (a,b,c,d,e,f) = (1, 2x, 0, 1, 1, 0)
  * @author Georg Fischer
  */

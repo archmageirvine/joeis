@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A164783 7^n-6.
+ * A164783 a(n) = 7^n-6.
  * @author Sean A. Irvine
  */
 public class A164783 extends LinearRecurrence {

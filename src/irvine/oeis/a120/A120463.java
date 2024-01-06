@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A120463 Expansion of x*(1+x+2*x^3) / ( (x-1)*(1+x)*(3*x^2-1) ).
+ * A120463 Expansion of x*(1+x+2*x^3) / ((x-1)*(1+x)*(3*x^2-1)).
  * @author Georg Fischer
  */
 public class A120463 extends LinearRecurrence {

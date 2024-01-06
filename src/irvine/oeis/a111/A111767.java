@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A111767 Decimal expansion of abs(log(tan(1 degree)))).
+ * A111767 Decimal expansion of abs(log(tan(1 degree))).
  * @author Georg Fischer
  */
 public class A111767 extends DecimalExpansionSequence {

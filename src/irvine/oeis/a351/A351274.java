@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A351274 a(n) = Sum_{k=0..n} (2*k)^k * Stirling1(n,k).
+ * A351274 a(0) = 1; thereafter a(n) = Sum_{k=1..n} (2*k)^k * Stirling1(n,k).
  * a(n) = sum(k=0,n,(2*k)^k*stirl(n,k,1));
  * @author Georg Fischer
  */

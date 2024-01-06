@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A147996 9^n-8^n-7^n-6^n-5^n-4^n-3^n-2^n-1.
+ * A147996 a(n) = 9^n-8^n-7^n-6^n-5^n-4^n-3^n-2^n-1.
  * @author Sean A. Irvine
  */
 public class A147996 extends LinearRecurrence {

@@ -8,7 +8,7 @@ import irvine.oeis.a006.A006049;
 
 
 /**
- * A107800 a(n) = number of distinct primes dividing A006049(n) (and dividing (A006049(n)+1).
+ * A107800 a(n) = number of distinct primes dividing A006049(n) (and dividing A006049(n)+1).
  * Formula: <code>a(n) = A001221(A006049(n)).</code>
  * @author Georg Fischer
  */

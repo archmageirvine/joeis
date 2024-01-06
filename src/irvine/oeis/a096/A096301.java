@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A096301 (Product of nonzero digits(sum of digits(n^n)).
+ * A096301 Product of nonzero digits(sum of digits(n^n)).
  * @author Georg Fischer
  */
 public class A096301 extends Sequence1 {

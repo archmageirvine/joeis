@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001414;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A074374 s(s+1)/2 where s is the sum of the prime factors of n (with repetition).
+ * A074374 a(n) = sopfr(n)*(sopfr(n)+1)/2 where sopfr is the sum of the prime factors of n with repetition (A001414).
  * @author Georg Fischer
  */
 public class A074374 extends SimpleTransformSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a048.A048855;
 import irvine.oeis.a217.A217863;
 
 /**
- * A064449 a(n) = gcd(Phi(n!), Phi(n^n), Phi(lcm(1..n)).
+ * A064449 a(n) = gcd(Phi(n!), Phi(n^n), Phi(lcm(1..n))).
  * @author Sean A. Irvine
  */
 public class A064449 extends Combiner {

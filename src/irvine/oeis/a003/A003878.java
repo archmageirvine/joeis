@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A003878 n^4+(9/2)*n^3+n^2-(9/2)*n+1.
+ * A003878 a(n) = n^4 + (9/2)*n^3 + n^2 - (9/2)*n + 1.
  * @author Sean A. Irvine
  */
 public class A003878 extends Sequence3 {

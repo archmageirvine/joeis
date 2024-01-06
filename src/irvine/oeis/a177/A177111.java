@@ -5,7 +5,7 @@ package irvine.oeis.a177;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A177111 Sequence defined by the recurrence formula a(n+1)=sum(a(p)*a(n-p)+k,p=0..n)+l for n&gt;=1, with here a(0)=1, a(1)=1, k=-2 and l=0.
+ * A177111 Sequence defined by the recurrence formula a(n+1) = sum(a(p)*a(n-p)+k,p=0..n)+l for n&gt;=1, with here a(0)=1, a(1)=1, k=-2 and l=0.
  * @author Georg Fischer
  */
 public class A177111 extends HolonomicRecurrence {

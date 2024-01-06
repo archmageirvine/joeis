@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A073018 Decimal expansion of gamma^(exp(1).
+ * A073018 Decimal expansion of gamma^exp(1).
  * @author Georg Fischer
  */
 public class A073018 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A028301 a(n+1) = a(n)^2 + prime(n).
+ * A028301 a(n) = a(n-1)^2 + prime(n-1), with a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A028301 extends A000040 {

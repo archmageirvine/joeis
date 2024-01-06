@@ -2330,3 +2330,7 @@ A067645 Number of prime alternating tangles (or knots) of type Gamma_2 with two 
 A067646 Number of prime alternating tangles (or knots) with two connected components.
 A067647 Number of knot diagrams of type 1PI with n crossings and two outgoing strings.
 A067648 Number of knot diagrams of type 2PI with n crossings and two outgoing strings.
+A067767 Number of alternating link diagrams with n crossings, 2 connected components and two external legs.
+A067768 Number of alternating link diagrams with n crossings, 3 connected components and two external legs.
+A067769 Number of tiling variants for polyominoes with n cells
+A067782 Minimal delay time for an n-element sorting network

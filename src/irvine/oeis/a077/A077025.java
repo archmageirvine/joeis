@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A077025 a(n) = Sum_{k=1..n} floor(n/(k + 1/2))}.
+ * A077025 a(n) = Sum_{k=1..n} floor(n/(k + 1/2)).
  * @author Georg Fischer
  */
 public class A077025 extends Sequence1 {

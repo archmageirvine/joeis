@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007947;
 import irvine.oeis.a173.A173557;
 
 /**
- * A089631 a(n) = (Product_{p is a prime factor of n} p)) mod (Product_{p is a prime factor of n} p-1).
+ * A089631 a(n) = (Product_{p is a prime factor of n} p) mod (Product_{p is a prime factor of n} p-1).
  * @author Georg Fischer
  */
 public class A089631 extends Sequence1 {

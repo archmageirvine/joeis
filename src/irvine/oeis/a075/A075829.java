@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a119.A119248;
 
 /**
- * A075829 Let u(1) = x and u(n+1) = (n^2/u(n)) + 1 for n &gt;= 1; then a(n) is such that u(n) = (b(n)*x + c(n))/(d(n)*x + a(n)) (in lowest terms) and a(n), b((n), c(n), d(n) are positive integers.
+ * A075829 Let u(1) = x and u(n+1) = (n^2/u(n)) + 1 for n &gt;= 1; then a(n) is such that u(n) = (b(n)*x + c(n))/(d(n)*x + a(n)) (in lowest terms) and a(n), b(n), c(n), d(n) are positive integers.
  * @author Georg Fischer
  */
 public class A075829 extends PrependSequence {

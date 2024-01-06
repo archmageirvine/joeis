@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.EgyptianFractionSequence;
 
 /**
- * A052385 a(n)*10^n are the denominators of the greedy alternating Egyptian fraction expansion of Pi - 3 of the form Sum_{n&gt;=0} ((-1)^n / (a(n)*10^n).
+ * A052385 a(n)*10^n are the denominators of the greedy alternating Egyptian fraction expansion of Pi - 3 of the form Sum_{n&gt;=0} (-1)^n / (a(n)*10^n).
  * @author Sean A. Irvine
  */
 public class A052385 extends EgyptianFractionSequence {

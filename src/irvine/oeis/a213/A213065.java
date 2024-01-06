@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A213065 n^n! - n!^n.
+ * A213065 a(n) = n^n! - n!^n.
  * a(n)=n^n!-n!^n
  * @author Georg Fischer
  */

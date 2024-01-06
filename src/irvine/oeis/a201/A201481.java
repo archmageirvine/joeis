@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A201481 Primes of the form 5n^2 + 2.
+ * A201481 Primes of the form 5*k^2 + 2, k &gt;= 0.
  * @author Georg Fischer
  */
 public class A201481 extends PrimeSubsequence {

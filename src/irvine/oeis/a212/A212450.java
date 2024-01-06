@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A212450 Ceiling(n + log(n)).
+ * A212450 a(n) = ceiling(n + log(n)).
  * @author Georg Fischer
  */
 public class A212450 extends FloorSequence {

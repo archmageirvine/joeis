@@ -5,7 +5,7 @@ package irvine.oeis.a103;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A103519 a(1) = 1, a(n) = sum of n successive numbers starting with a(n-1) + 1.
+ * A103519 a(1) = 1, a(n) = Sum_{k=1..n} a(n-1) + k.
  * Recurrence: a(n) = n*a(n-1) + n(n+1)/2.
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A109105 a(n) = (8*sqrt(5)/25)((sqrt(5) + 2)((15 + 5*sqrt(5))/2)^n + (sqrt(5) - 2)((15 - 5*sqrt(5))/2)^n.
+ * A109105 a(n) = (8*sqrt(5)/25)((sqrt(5) + 2)((15 + 5*sqrt(5))/2)^n + (sqrt(5) - 2)((15 - 5*sqrt(5))/2)^n).
  * @author Georg Fischer
  */
 public class A109105 extends GeneratingFunctionSequence {

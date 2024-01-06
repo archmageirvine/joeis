@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A078339 Let u(1)=u(2)=u(3)=1 and u(n)=(-1)^n*sign(u(n-1)-u(n-2))*u(n-3); then a(n)=sum(k=1,n,sum(i=1,k,u(i)) - 3*(n-1).
+ * A078339 Let u(1)=u(2)=u(3)=1 and u(n)=(-1)^n*sign(u(n-1)-u(n-2))*u(n-3); then a(n)=sum(k=1,n,sum(i=1,k,u(i))) - 3*(n-1).
  * @author Sean A. Irvine
  */
 public class A078339 extends LinearRecurrence {

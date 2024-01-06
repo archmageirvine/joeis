@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006519;
 
 /**
- * A059159 A hierarchical sequence (W'2{2}*c) - see A059126).
+ * A059159 A hierarchical sequence (W'2{2}*c) - see A059126.
  * @author Georg Fischer
  */
 public class A059159 extends Sequence1 {

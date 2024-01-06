@@ -6,7 +6,7 @@ import irvine.math.z.Stirling;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A143816 Let A(0) = 1, B(0) = 0 and C(0) = 0. Let B(n+1) = Sum_{k = 0..n) binomial(n,k)* A(k), C(n+1) = Sum_{k = 0..n) binomial(n,k)*B(k) and A(n+1) = Sum_{k = 0..n) binomial(n,k)*C(k). This entry gives the sequence B(n).
+ * A143816 Let A(0) = 1, B(0) = 0 and C(0) = 0. Let B(n+1) = Sum_{k = 0..n} binomial(n,k)* A(k), C(n+1) = Sum_{k = 0..n} binomial(n,k)*B(k) and A(n+1) = Sum_{k = 0..n} binomial(n,k)*C(k). This entry gives the sequence B(n).
  * a(n) = sum(k=0,floor((n-1)/3),stirl2(n,3*k+1))
  * @author Georg Fischer
  */

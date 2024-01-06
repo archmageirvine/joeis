@@ -4,7 +4,7 @@ package irvine.oeis.a138;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A138278 Sequence identical to its third differences in absolute values: a(2n)=3a(2n-1)-3a(2n-2)+2a(2n-3)), a(2n+1)=3a(2n)-3a(2n-1) n &gt; 1.
+ * A138278 Sequence identical to its third differences in absolute values.
  * @author Georg Fischer
  */
 public class A138278 extends LinearRecurrence {

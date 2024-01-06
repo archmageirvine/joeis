@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A035283 Expansion of zeta function of ring H(Q(sqrt(2)).
+ * A035283 Expansion of zeta function of ring H(Q(sqrt(2))).
  * @author Sean A. Irvine
  */
 public class A035283 extends Sequence1 {

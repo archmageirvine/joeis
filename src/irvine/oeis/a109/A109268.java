@@ -6,7 +6,7 @@ package irvine.oeis.a109;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A109268 Expansion of 1/((1-xc(x)-x^2c(x)^2)(1-x^2c(x)) with c(x) the g.f. of A000108.
+ * A109268 Expansion of 1/((1-xc(x)-x^2c(x)^2)(1-x^2c(x))) with c(x) the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A109268 extends HolonomicRecurrence {

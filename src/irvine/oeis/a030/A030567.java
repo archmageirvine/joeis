@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A030567 Triangle T(n,k): Write n in base 6, reverse order of digits, to get row n.
+ * A030567 Triangle T(n,k): Write n in base 6 and reverse order of digits to get row n.
  * @author Georg Fischer
  */
 public class A030567 extends AbstractSequence {

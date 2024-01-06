@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A031373 Primes p(7n-1).
+ * A031373 a(n) = prime(7n-1).
  * @author Sean A. Irvine
  */
 public class A031373 extends A000040 {

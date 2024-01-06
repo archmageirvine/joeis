@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033311;
 
 /**
- * A224890 Positions of incrementally largest terms in continued fraction for Copeland-Erdos constant.
+ * A224890 Positions of incrementally largest terms in continued fraction for Copeland-Erd\u0151s constant.
  * @author Georg Fischer
  */
 public class A224890 extends A033311 {

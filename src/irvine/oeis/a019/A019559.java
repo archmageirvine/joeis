@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**
- * A019559 Distance between vowels when alphabet is written around a daisy wheel.
+ * A019559 Period 5: repeat [4, 4, 6, 6, 6].
  * @author Sean A. Irvine
  */
 public class A019559 extends PeriodicSequence {

@@ -16,6 +16,6 @@ public class A067669 extends Sequence1 {
   public Z next() {
     final Z t = Z.FIVE.pow(++mN);
     final Z f = new BinarySplitFactorial().factorial(t.intValueExact());
-    return f.divide(Z.FIVE.pow(t.divide2()));
+    return f.divide(Z.FIVE.pow(t.divide(4)));
   }
 }

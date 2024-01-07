@@ -21,6 +21,6 @@ public class A036569 extends MemorySequence {
     while (mR * (mR - 1) / 2 < n) {
       ++mR;
     }
-    return a(n - mR + 1).multiply(mB.a(mR - 2));
+    return a(n - mR + 1).multiply(mB.a(mR - 1));
   }
 }

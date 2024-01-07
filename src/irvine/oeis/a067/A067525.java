@@ -15,10 +15,11 @@ public class A067525 extends Sequence1 {
     if (n == 0) {
       return 1;
     }
+    long t = 1;
     long r = 0;
     while (n != 0) {
-      r *= 10;
-      r += (n + 1) % 10;
+      r += t * ((n + 1) % 10);
+      t *= 10;
       n /= 10;
     }
     return r;

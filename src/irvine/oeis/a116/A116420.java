@@ -13,6 +13,6 @@ public class A116420 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A116420() {
-    super(0, (n) -> new Q(Z.TWO.pow(1 + n).subtract(Z.ONE).multiply(Z.TWO), Z.valueOf(1 + n).multiply(2 + n)).den());
+    super(0, n -> new Q(Z.TWO.pow(1 + n).subtract(Z.ONE).multiply(Z.TWO), Z.valueOf(1 + n).multiply(2 + n)).den());
   }
 }

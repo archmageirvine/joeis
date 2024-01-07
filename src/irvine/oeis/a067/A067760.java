@@ -18,7 +18,7 @@ public class A067760 extends Sequence0 {
     }
     long k = 0;
     Z t = Z.ONE;
-    long a = 2 * mN + 1;
+    final long a = 2 * mN + 1;
     while (true) {
       t = t.multiply2();
       ++k;

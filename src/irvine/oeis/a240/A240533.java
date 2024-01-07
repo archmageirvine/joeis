@@ -14,6 +14,6 @@ public class A240533 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A240533() {
-    super(0, (n) -> new Q(MemoryFactorial.SINGLETON.factorial(n), Z.TEN.pow(n)).num());
+    super(0, n -> new Q(MemoryFactorial.SINGLETON.factorial(n), Z.TEN.pow(n)).num());
   }
 }

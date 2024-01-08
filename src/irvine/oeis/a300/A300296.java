@@ -13,6 +13,6 @@ public class A300296 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A300296() {
-    super(0, (n) -> new Q(Z.valueOf(n).multiply(5 + 3 * n), Z.EIGHT.multiply(1 + 3 * n).multiply(4 + 3 * n)).num());
+    super(0, n -> new Q(Z.valueOf(n).multiply(5 + 3 * n), Z.EIGHT.multiply(1 + 3 * n).multiply(4 + 3 * n)).num());
   }
 }

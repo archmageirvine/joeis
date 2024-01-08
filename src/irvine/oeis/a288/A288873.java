@@ -1,26 +1,26 @@
-package irvine.oeis.a141;
+package irvine.oeis.a288;
 
 import irvine.math.q.BernoulliSequence;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A141459 a(n) = Product_{p-1 divides n} p, where p is an odd prime.
+ * A288873 Numerators of scaled Bernoulli numbers 4^n*B(n), with B(n) = A027641(n)/A027642(n).
  * @author Georg Fischer
  */
-public class A141459 extends AbstractSequence {
+public class A288873 extends AbstractSequence {
 
   private final BernoulliSequence mBSeq = new BernoulliSequence(0);
   private int mN = -1;
 
   /** Construct the sequence. */
-  public A141459() {
+  public A288873() {
     super(0);
   }
 
   @Override
   public Z next() {
     ++mN;
-    return mBSeq.nextQ().multiply(Z.FOUR.pow(mN)).den();
+    return mBSeq.nextQ().multiply(Z.FOUR.pow(mN)).num();
   }
 }

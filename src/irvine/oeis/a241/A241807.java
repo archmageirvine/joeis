@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A241807 Numerator of c(n) = (n^2+n+2)/((n+1)*(n+2)*(n+3)).
+ * A241807 Numerators of c(n) = (n^2+n+2)/((n+1)*(n+2)*(n+3)) as defined in A241269.
  * @author Georg Fischer
  */
 public class A241807 extends Sequence0 {

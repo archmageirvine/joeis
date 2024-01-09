@@ -6,18 +6,19 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067795 Numbers n such that 2*n+1 is the next prime after sigma(n).
+ * A067827 Even numbers k such that k/2 is nonprime and sigma(k+1) &gt; sigma(k).
  * @author Sean A. Irvine
  */
-public class A067795 extends Sequence1 {
+public class A067827 extends Sequence1 {
 
   private final Fast mPrime = new Fast();
-  private long mN = 1;
+  private long mN = 0;
 
   @Override
   public Z next() {
     while (true) {
-      if (mPrime.nextPrime(Jaguar.factor(++mN).sigma()).equals(Z.valueOf(2 * mN + 1))) {
+      mN += 2;
+      if (!mPrime.isPrime(mN / 2) && Jaguar.factor(mN + 1).sigma().compareTo(Jaguar.factor(mN).sigma()) > 0) {
         return Z.valueOf(mN);
       }
     }

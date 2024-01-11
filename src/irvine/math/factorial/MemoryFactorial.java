@@ -90,11 +90,13 @@ public final class MemoryFactorial extends MemoryFunction2<Integer, Z> implement
    * @return factorial base representation
    */
   public Z factorialBase(final Z n) {
-    final StringBuilder sb = new StringBuilder();
+    Z res = Z.ZERO;
     for (final Z t : factorialBaseList(n)) {
-      sb.append(t);
+      if (t.compareTo(Z.TEN) >= 0) {
+        throw new RuntimeException("Expansion resulted in value >= 10");
+      }
+      res = res.multiply(10).add(t);
     }
-    return new Z(sb);
+    return res;
   }
-
 }

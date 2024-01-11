@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A241591 Denominators of Postnikov&apos;s hook-length formula 2^n*(n+1)^(n-1)/n!.
+ * A241591 Denominators of Postnikov's hook-length formula 2^n*(n+1)^(n-1)/n!.
  * @author Georg Fischer
  */
 public class A241591 extends LambdaSequence {

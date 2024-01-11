@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A244954 Smallest positive multiple of n whose base-3 representation contains only 0&apos;s and 1&apos;s.
+ * A244954 Smallest positive multiple of n whose base-3 representation contains only 0's and 1's.
  * @author Georg Fischer
  */
 public class A244954 extends AbstractSequence {

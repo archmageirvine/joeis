@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A117496 Numbers with no 1&apos;s in base 3 &amp; 4 expansions.
+ * A117496 Numbers with no 1's in base 3 &amp; 4 expansions.
  * @author Georg Fischer
  */
 public class A117496 extends FilterLambdaSequence {

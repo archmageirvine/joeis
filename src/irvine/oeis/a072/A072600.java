@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A072600 Numbers which in base 2 have fewer 0&apos;s than 1&apos;s.
+ * A072600 Numbers which in base 2 have fewer 0's than 1's.
  * @author Georg Fischer
  */
 public class A072600 extends FilterLambdaSequence {

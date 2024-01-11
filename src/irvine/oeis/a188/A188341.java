@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A188341 Numbers having no 0&apos;s and not more than one 1 in their representation in base 3.
+ * A188341 Numbers having no 0's and not more than one 1 in their representation in base 3.
  * @author Georg Fischer
  */
 public class A188341 extends FilterLambdaSequence {

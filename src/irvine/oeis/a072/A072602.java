@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A072602 Numbers such that in base 2 the number of 0&apos;s is &gt;= the number of 1&apos;s.
+ * A072602 Numbers such that in base 2 the number of 0's is &gt;= the number of 1's.
  * @author Georg Fischer
  */
 public class A072602 extends FilterLambdaSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A140316 Write n in base 3, delete 0&apos;s.
+ * A140316 Write n in base 3, delete 0's.
  * @author Georg Fischer
  */
 public class A140316 extends LambdaSequence {

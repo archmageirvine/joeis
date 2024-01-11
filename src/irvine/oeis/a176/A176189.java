@@ -4,7 +4,7 @@ package irvine.oeis.a176;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A176189 Natural numbers whose squares have only 0&apos;s and 1&apos;s in base 3.
+ * A176189 Natural numbers whose squares have only 0's and 1's in base 3.
  * @author Georg Fischer
  */
 public class A176189 extends FilterLambdaSequence {

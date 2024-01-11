@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A117482 Numbers with no 1&apos;s in their base-3, base-4, and base-5 expansions. Intersection of A005823, A023709, and A023725.
+ * A117482 Numbers with no 1's in their base-3, base-4, and base-5 expansions. Intersection of A005823, A023709, and A023725.
  * @author Georg Fischer
  */
 public class A117482 extends FilterLambdaSequence {

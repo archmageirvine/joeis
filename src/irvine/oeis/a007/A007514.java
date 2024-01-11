@@ -1,26 +1,16 @@
 package irvine.oeis.a007;
 
 import irvine.math.cr.CR;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.cons.FactorialExpansionSequence;
 
 /**
  * A007514 Pi = Sum_{n &gt;= 0} a(n)/n!.
  * @author Sean A. Irvine
  */
-public class A007514 extends Sequence0 {
+public class A007514 extends FactorialExpansionSequence {
 
-  private long mN = -1;
-  private Z mF = Z.ONE;
-  private Z mPrev = Z.ZERO;
-
-  @Override
-  public Z next() {
-    if (++mN > 1) {
-      mF = mF.multiply(mN);
-    }
-    final Z t = mPrev.multiply(mN);
-    mPrev = CR.PI.multiply(mF).floor();
-    return mPrev.subtract(t);
+  /** Construct the sequence. */
+  public A007514() {
+    super(0, CR.PI);
   }
 }

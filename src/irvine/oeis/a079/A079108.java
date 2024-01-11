@@ -7,7 +7,7 @@ import irvine.oeis.a077.A077722;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A079108 Number of 1&apos;s in the base 8 form of A077722(n).
+ * A079108 Number of 1's in the base 8 form of A077722(n).
  * @author Georg Fischer
  */
 public class A079108 extends SimpleTransformSequence {

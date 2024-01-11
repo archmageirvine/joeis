@@ -607,12 +607,12 @@ public final class FactorSequence {
   }
 
   /**
-   * Determine if this factor sequence represents a semiprime. That is, a product
-   * of two primes.  It returns YES for a semiprime, NO for non-semiprime,
+   * Determine if this factor sequence represents a semiprime.
+   * It returns YES for a semiprime, NO for non-semiprime,
    * and UNKNOWN if the determination cannot be made.
    * @return semiprime status
    */
-  public int isSemiprime() {
+  public int semiprimeStatus() {
     if (mFactors.size() > 2 || mFactors.isEmpty()) {
       return NO;
     }
@@ -648,6 +648,19 @@ public final class FactorSequence {
       return e == 2 ? YES : NO;
     }
     return UNKNOWN;
+  }
+
+  /**
+   * Determine if this factor sequence is a semiprime.
+   * @return true iff the number is a semiprime
+   * @exception UnsupportedOperationException if the status of the number could not be determined.
+   */
+  public boolean isSemiprime() {
+    final int v = semiprimeStatus();
+    if (v == FactorSequence.UNKNOWN) {
+      throw new UnsupportedOperationException("Could not determine semiprime status of: " + this);
+    }
+    return v == FactorSequence.YES;
   }
 
   /**

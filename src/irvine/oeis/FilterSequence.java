@@ -4,7 +4,6 @@ import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
@@ -47,13 +46,7 @@ public class FilterSequence extends AbstractSequence {
   /** Power of 2 terms. */
   public static final Predicate<Z> POWER2 = k -> k.bitCount() == 1;
   /** Semiprime terms. */
-  public static final Predicate<Z> SEMIPRIME = k -> {
-    final int v = Jaguar.factorAllowIncomplete(k).isSemiprime();
-    if (v == FactorSequence.UNKNOWN) {
-      throw new UnsupportedOperationException("Could not determine semiprime status of " + k);
-    }
-    return v == FactorSequence.YES;
-  };
+  public static final Predicate<Z> SEMIPRIME = k -> Jaguar.factor(k).isSemiprime();
 
   /** Divisible by index. */
   public static final BiPredicate<Long, Z> DIVISIBLE_BY_INDEX = (k, v) -> v.mod(k) == 0;

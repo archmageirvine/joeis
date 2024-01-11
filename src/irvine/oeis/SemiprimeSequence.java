@@ -74,7 +74,7 @@ public class SemiprimeSequence extends AbstractSequence {
       if (mVerbose) {
         System.out.println("[" + mN + "] -> " + FactorSequence.toString(fs));
       }
-      final int sp = fs.isSemiprime();
+      final int sp = fs.semiprimeStatus();
       if (sp == FactorSequence.YES) {
         return Z.valueOf(mN);
       }

@@ -2,7 +2,6 @@ package irvine.oeis.a137;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
-import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,11 +21,7 @@ public class A137626 extends Sequence1 {
     ++mN;
     while (true) {
       mP = mPrime.nextPrime(mP);
-      final int s = Jaguar.factor(mP.add(4)).isSemiprime();
-      if (s == FactorSequence.UNKNOWN) {
-        throw new UnsupportedOperationException();
-      }
-      if (s == FactorSequence.YES) {
+      if (Jaguar.factor(mP.add(4)).isSemiprime()) {
         if (++mChainLength == mN) {
           return mP;
         }

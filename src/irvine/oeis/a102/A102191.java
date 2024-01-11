@@ -32,7 +32,7 @@ public class A102191 extends Sequence1 {
     while (true) {
       final Z candidate = mSeq.next();
       final FactorSequence fs = Jaguar.factorUpToSemiprime(candidate);
-      final int sp = fs.isSemiprime();
+      final int sp = fs.semiprimeStatus();
       if (sp == FactorSequence.YES) {
         return candidate;
       }

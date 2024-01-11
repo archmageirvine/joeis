@@ -18,11 +18,7 @@ public class A131284 extends Sequence1 {
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      final int sp = fs.isSemiprime();
-      if (sp == FactorSequence.UNKNOWN) {
-        throw new UnsupportedOperationException();
-      }
-      if (sp == FactorSequence.YES) {
+      if (fs.isSemiprime()) {
         mSemiprimeCount = mSemiprimeCount.add(1);
         final Z[] f = fs.toZArray();
         if (f.length == 2 && f[0].subtract(f[1]).abs().equals(mSemiprimeCount)) {

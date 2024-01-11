@@ -16,7 +16,7 @@ public class A253388 extends FilterPositionSequence {
   public A253388() {
     super(1, 1, new A000005(), t -> {
       final FactorSequence fs = Jaguar.factor(t);
-      return fs.isSemiprime() == FactorSequence.YES && fs.isSquareFree();
+      return fs.isSemiprime() && fs.isSquareFree();
     });
   }
 }

@@ -1,7 +1,6 @@
 package irvine.oeis.a002;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.util.FactorSequence;
 import irvine.math.IntegerUtils;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -24,13 +23,8 @@ public class A002100 extends Sequence1 {
     Polynomial<Z> den = RING.one();
     for (int k = 6; k <= mN; ++k) {
       final int s = IntegerUtils.sqrt(k);
-      if (s * s != k) {
-        final int semi = Jaguar.factor(k).isSemiprime();
-        if (semi == FactorSequence.UNKNOWN) {
-          throw new UnsupportedOperationException();
-        } else if (semi == FactorSequence.YES) {
-          den = RING.multiply(den, RING.oneMinusXToTheN(k), mN);
-        }
+      if (s * s != k && Jaguar.factor(k).isSemiprime()) {
+        den = RING.multiply(den, RING.oneMinusXToTheN(k), mN);
       }
     }
     return RING.coeff(RING.one(), den, mN);

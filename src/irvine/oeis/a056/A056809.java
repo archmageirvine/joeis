@@ -1,7 +1,6 @@
 package irvine.oeis.a056;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -14,11 +13,7 @@ public class A056809 extends Sequence1 {
   private long mN = 32;
 
   private boolean isSemiprime(final long n) {
-    final int a = Jaguar.factor(n).isSemiprime();
-    if (n == FactorSequence.UNKNOWN) {
-      throw new UnsupportedOperationException();
-    }
-    return a == FactorSequence.YES;
+    return Jaguar.factor(n).isSemiprime();
   }
 
   @Override

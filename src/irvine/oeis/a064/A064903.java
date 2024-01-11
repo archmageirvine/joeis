@@ -17,7 +17,7 @@ public class A064903 extends Sequence0 {
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      if (fs.isSemiprime() == FactorSequence.YES) {
+      if (fs.isSemiprime()) {
         final Z[] p = fs.toZArray();
         if (p.length == 2 && p[1].mod(p[0]).equals(Z.FIVE)) {
           return Z.valueOf(mN);

@@ -37,7 +37,7 @@ public class A098594 extends Sequence1 {
         System.out.println("[" + mN + "]");
         System.out.flush();
       }
-      final int spM = Jaguar.factorUpToSemiprime(mF.subtract(1)).isSemiprime();
+      final int spM = Jaguar.factorUpToSemiprime(mF.subtract(1)).semiprimeStatus();
       if (spM == FactorSequence.NO) {
         continue;
       }
@@ -45,7 +45,7 @@ public class A098594 extends Sequence1 {
         System.out.println(mN + "!-1 is semiprime");
         System.out.flush();
       }
-      final int spP = Jaguar.factorUpToSemiprime(mF.add(1)).isSemiprime();
+      final int spP = Jaguar.factorUpToSemiprime(mF.add(1)).semiprimeStatus();
       if (spP == FactorSequence.NO) {
         continue;
       }

@@ -22,7 +22,7 @@ public class A064910 extends Sequence0 {
     long m = 5;
     while (true) {
       final FactorSequence fs = Jaguar.factor(++m);
-      if (fs.isSemiprime() == FactorSequence.YES) {
+      if (fs.isSemiprime()) {
         final Z[] p = fs.toZArray();
         if (p.length == 2 && p[1].mod(p[0]).equals(n)) {
           return Z.valueOf(m);

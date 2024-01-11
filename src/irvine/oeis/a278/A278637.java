@@ -1,7 +1,6 @@
 package irvine.oeis.a278;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,14 +21,8 @@ public class A278637 extends Sequence1 {
       final Z f = mA.add(mB);
       mA = mB;
       mB = f;
-      if (f.isProbablePrime()) {
+      if (f.isProbablePrime() || Jaguar.factor(f).isSemiprime()) {
         return Z.valueOf(mK);
-      }
-      final int semi = Jaguar.factor(f).isSemiprime();
-      if (semi == FactorSequence.YES) {
-        return Z.valueOf(mK);
-      } else if (semi == FactorSequence.UNKNOWN) {
-        throw new UnsupportedOperationException("Could not factor " + f);
       }
     }
   }

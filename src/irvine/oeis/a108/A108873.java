@@ -1,7 +1,6 @@
 package irvine.oeis.a108;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -12,7 +11,7 @@ import irvine.oeis.AbstractSequence;
 public class A108873 extends AbstractSequence {
 
   private int mN;
-  private int mBase;
+  private final int mBase;
 
   /** Construct the sequence. */
   public A108873() {
@@ -35,11 +34,7 @@ public class A108873 extends AbstractSequence {
     while (true) {
       ++mN;
       final Z k = new Z(Integer.toString(mN, mBase));
-      final int v = Jaguar.factorAllowIncomplete(k).isSemiprime();
-      if (v == FactorSequence.UNKNOWN) {
-        throw new UnsupportedOperationException("Could not determine semiprime status of " + k);
-      }
-      if (v == FactorSequence.YES) {
+      if (Jaguar.factorAllowIncomplete(k).isSemiprime()) {
         return Z.valueOf(mN);
       }
     }

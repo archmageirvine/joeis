@@ -151,9 +151,9 @@ public final class Jaguar {
   public static FactorSequence factorUpToSemiprime(final Z n) {
     FactorSequence fs = new FactorSequence(n);
     CHEETAH.factor(fs);
-    if (fs.isSemiprime() == FactorSequence.UNKNOWN) {
+    if (fs.semiprimeStatus() == FactorSequence.UNKNOWN) {
       TRIAL.factor(fs);
-      if (fs.isSemiprime() == FactorSequence.UNKNOWN) {
+      if (fs.semiprimeStatus() == FactorSequence.UNKNOWN) {
         if (maxBitLength(fs) <= TILLMAN_CUTOFF_BITS) {
           TILLMAN.factor(fs);
           if (fs.isComplete()) {

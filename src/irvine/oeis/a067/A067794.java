@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a018.A018252;
 
 /**
- * A067794 Composite numbers k such that phi(k) &gt; 3*k/4.
+ * A067794 Nonprime numbers k such that phi(k) &gt; 3*k/4.
  * @author Sean A. Irvine
  */
 public class A067794 extends A018252 {

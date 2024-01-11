@@ -4,7 +4,7 @@ package irvine.oeis.a050;
 import irvine.math.z.Z;
 
 /**
- * A050170 a(1) = 1, a(n) = floor(a(n-1)/sqrt(5)) if this is not among 0,a(1),...,a(n-1); otherwise a(n) = floor(a(n-1))*sqrt(5)).
+ * A050170 a(1) = 1, a(n) = floor(a(n-1)/sqrt(5)) if this is not among 0,a(1),...,a(n-1); otherwise a(n) = floor(a(n-1)*sqrt(5)).
  * @author Georg Fischer
  */
 public class A050170 extends A050132 {

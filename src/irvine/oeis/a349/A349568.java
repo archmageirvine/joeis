@@ -7,7 +7,7 @@ import irvine.oeis.DirichletConvolutionSequence;
 import irvine.oeis.a011.A011782;
 
 /**
- * A349568 Dirichlet convolution of A011782 [2^(n-1))] with A349453 (Dirichlet inverse of A133494, 3^(n-1)).
+ * A349568 Dirichlet convolution of A011782 [2^(n-1)] with A349453 (Dirichlet inverse of A133494, 3^(n-1)).
  * @author Georg Fischer
  */
 public class A349568 extends AbstractSequence {

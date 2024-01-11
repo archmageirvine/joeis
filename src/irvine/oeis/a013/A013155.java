@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A013155 Expansion of e.g.f.: exp(arctanh(x)+log(x+1))=1+2*x+3/2!*x^2+6/3!*x^3+21/4!*x^4+90/5!*x^5...
+ * A013155 Expansion of e.g.f. exp(arctanh(x)+log(x+1)).
  * @author Sean A. Irvine
  */
 public class A013155 extends Sequence0 {

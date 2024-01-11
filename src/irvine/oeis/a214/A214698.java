@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A214698 (n^n - n^2)/2.
+ * A214698 a(n) = (n^n - n^2)/2.
  * @author Georg Fischer
  */
 public class A214698 extends Sequence1 {

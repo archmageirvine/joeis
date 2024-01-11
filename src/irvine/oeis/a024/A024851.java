@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A024851 Least m such that if r and s in {-F(2*h) + tau*(F(2*h-1): h = 1,2,...,n} satisfy r &lt; s, then r &lt; k/m &lt; s for some integer k, where F = A000045 (Fibonacci numbers) and tau = (1+sqrt(5))/2 (golden ratio).
+ * A024851 Least m such that if r and s in {-F(2*h) + tau*F(2*h-1): h = 1,2,...,n} satisfy r &lt; s, then r &lt; k/m &lt; s for some integer k, where F = A000045 (Fibonacci numbers) and tau = (1+sqrt(5))/2 (golden ratio).
  * @author Sean A. Irvine
  */
 public class A024851 extends Sequence2 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a303.A303912;
 
 /**
- * A054357 Number of unlabeled 2-ary cacti having n polygons. Also number of bi-colored plane trees with n edges.
+ * A054357 Number of unlabeled 2-ary cacti having n polygons. Also number of bicolored plane trees with n edges.
  * @author Sean A. Irvine
  */
 public class A054357 extends A303912 {

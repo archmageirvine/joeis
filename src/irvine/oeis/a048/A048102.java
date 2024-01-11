@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A048102 Numbers k such that if k = Product p_i^e_i then p_i=e_i for all i.
+ * A048102 Numbers k such that if k = Product p_i^e_i then p_i = e_i for all i.
  * @author Sean A. Irvine
  */
 public class A048102 extends Sequence1 {

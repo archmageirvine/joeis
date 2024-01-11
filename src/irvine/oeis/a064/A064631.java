@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064631 a(n) = ceiling(log_2(A064630(n)).
+ * A064631 a(n) = ceiling(log_2(A064630(n))).
  * @author Sean A. Irvine
  */
 public class A064631 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A029926 Convert n from degrees Fahrenheit to Centigrade (or Celsius).
+ * A029926 Convert n from degrees Fahrenheit to nearest integer Celsius.
  * @author Sean A. Irvine
  */
 public class A029926 extends Sequence0 {

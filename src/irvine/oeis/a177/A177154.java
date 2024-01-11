@@ -4,7 +4,7 @@ package irvine.oeis.a177;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A177154 Fractional part of the conversion from degrees Centigrade (or Celsius) to Fahrenheit.
+ * A177154 Fractional part of the conversion from degrees Celsius to Fahrenheit.
  * @author Georg Fischer
  */
 public class A177154 extends GeneratingFunctionSequence {

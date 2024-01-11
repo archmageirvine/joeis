@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A057246 s=0; d is divisor of n [here d&lt;= n/d)]; if gcd(d,n/d)=1 or gcd(d,n/d)=d then s=s+d+(n/d); [if d=n/d then s=s+d]: The sequence contains composite n for which s = 2*n.
+ * A057246 s=0; d is divisor of n [here d &lt;= n/d]; if gcd(d,n/d)=1 or gcd(d,n/d)=d then s=s+d+(n/d); [if d=n/d then s=s+d]: The sequence contains composite n for which s = 2*n.
  * @author Sean A. Irvine
  */
 public class A057246 extends Sequence1 {

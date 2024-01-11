@@ -7,7 +7,7 @@ import irvine.oeis.DirichletConvolutionSequence;
 import irvine.oeis.a011.A011782;
 
 /**
- * A349564 Dirichlet convolution of A011782 [2^(n-1))] with A349450 [Dirichlet inverse of right-shifted Catalan numbers].
+ * A349564 Dirichlet convolution of A011782 [2^(n-1)] with A349450 [Dirichlet inverse of right-shifted Catalan numbers].
  * @author Georg Fischer
  */
 public class A349564 extends AbstractSequence {

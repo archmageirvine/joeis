@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A074862 Iccanartet sequence: a(n)=R[a(n-1)]+R[a(n-2)]+R[(a(n-3)]+R[a(n-4)] where a(1)=a(2)=a(3)=a(4)=1 and R(n) (A004086) is the reverse of n.
+ * A074862 Iccanartet sequence: a(n)=R[a(n-1)]+R[a(n-2)]+R[a(n-3)]+R[a(n-4)] where a(1)=a(2)=a(3)=a(4)=1 and R(n) (A004086) is the reverse of n.
  * @author Georg Fischer
  */
 public class A074862 extends TupleTransformSequence {

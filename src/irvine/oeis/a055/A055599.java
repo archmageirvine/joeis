@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055599 Triangle T(n,k)r read by rows, giving the number of n X n binary matrices with no zero rows or columns and with k=0..n^2 ones.
+ * A055599 Triangle T(n,k) read by rows, giving the number of n X n binary matrices with no zero rows or columns and with k=0..n^2 ones.
  * @author Sean A. Irvine
  */
 public class A055599 extends Sequence1 {

@@ -4,7 +4,7 @@ package irvine.oeis.a065;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A065930 (x,y) = (a(n),a(n+1)) are the solutions of (t(x)+t(y))/(1+xy) = t(4) = 10, where t(n) denotes the n-th triangular number t(n) = n(n+1)/2.
+ * A065930 (x,y) = (a(n),a(n+1)) are the solutions of (t(x)+t(y))/(1+xy) = t(4) = 10, where t(n) denotes the n-th triangular number t(n) = n*(n+1)/2.
  * @author Georg Fischer
  */
 public class A065930 extends GeneratingFunctionSequence {

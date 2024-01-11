@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000110;
 import irvine.oeis.transform.ConvolutionProduct;
 
 /**
- * A154108 A000110 / (1,2,3,...): (convolved with (1,2,3,...) = Bell numbers.
+ * A154108 A000110 / (1,2,3,...): (convolved with (1,2,3,...) = Bell numbers).
  * @author Georg Fischer
  */
 public class A154108 extends ConvolutionProduct {

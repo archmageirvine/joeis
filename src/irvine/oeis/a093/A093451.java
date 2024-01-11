@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a057.A057003;
 
 /**
- * A093451 Number of distinct prime divisors of Product_{k=1+(n-1)n/2..n(n+1)/2)} k (i.e., of 1, 2*3, 4*5*6, 7*8*9*10, ...).
+ * A093451 Number of distinct prime divisors of Product_{k=1+(n-1)n/2..n(n+1)/2} k (i.e., of 1, 2*3, 4*5*6, 7*8*9*10, ...).
  * @author Georg Fischer
  */
 public class A093451 extends A057003 {

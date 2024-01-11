@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A086409 a[1]=1; a[n+1]=a[n]-1 if prime[a[n]]+1)/2 is even, else a[n+1]=a[n]+4.
+ * A086409 a[1]=1; a[n+1]=a[n]-1 if (prime[a[n]]+1)/2 is even, else a[n+1]=a[n]+4.
  * @author Georg Fischer
  */
 public class A086409 extends PaddingSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067861.
+ * A067872 Least m &gt; 0 for which m*n^2 + 1 is a square.
  * @author Sean A. Irvine
  */
 public class A067872 extends Sequence1 {

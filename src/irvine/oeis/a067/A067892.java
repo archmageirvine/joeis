@@ -2,15 +2,14 @@ package irvine.oeis.a067;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.a000.A000040;
 
 /**
- * A067876 Numbers k such that sigma(k) = phi(k*bigomega(k)+1).
+ * A067892 Numbers n such that tau(n)*phi(n) &gt; prime(n) where tau(n) = A000005(n).
  * @author Sean A. Irvine
  */
-public class A067876 extends Sequence1 {
+public class A067892 extends A000040 {
 
   private long mN = 0;
 
@@ -18,7 +17,7 @@ public class A067876 extends Sequence1 {
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      if (fs.sigma().equals(Euler.phi(mN * fs.bigOmega() + 1))) {
+      if (fs.sigma0().multiply(fs.phi()).compareTo(super.next()) > 0) {
         return Z.valueOf(mN);
       }
     }

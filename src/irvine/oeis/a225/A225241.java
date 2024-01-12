@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a005.A005100;
 
 /**
- * A225241 Numbers n such that the sum of reciprocals of even divisors of n &lt; 1.
+ * A225241 Numbers n such that the sum of the reciprocals of the even divisors of n is greater than zero and less than one.
  * @author Georg Fischer
  */
 public class A225241 extends AbstractSequence {

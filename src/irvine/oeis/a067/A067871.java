@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a246.A246547;
 
 /**
- * A067861.
+ * A067871 Number of primes between consecutive terms of A246547 (prime powers p^k, k &gt;= 2).
  * @author Sean A. Irvine
  */
 public class A067871 extends A246547 {

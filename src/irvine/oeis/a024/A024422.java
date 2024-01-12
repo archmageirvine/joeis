@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A024422 a(n) = [ (sum of S(n,m)/C(n-1,m-1) ] for m = 1,2,...,n; S(n,m) are Stirling numbers of second kind.
+ * A024422 a(n) = floor(Sum_{m=1..n} Stirling2(n,m) / binomial(n-1,m-1)).
  * @author Sean A. Irvine
  */
 public class A024422 extends Sequence1 {

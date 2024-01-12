@@ -7,10 +7,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067876 Numbers k such that sigma(k) = phi(k*bigomega(k)+1).
+ * A067879 Numbers n such that sigma(n)=phi(n*omega(n)+1).
  * @author Sean A. Irvine
  */
-public class A067876 extends Sequence1 {
+public class A067879 extends Sequence1 {
 
   private long mN = 0;
 
@@ -18,7 +18,7 @@ public class A067876 extends Sequence1 {
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      if (fs.sigma().equals(Euler.phi(mN * fs.bigOmega() + 1))) {
+      if (fs.sigma().equals(Euler.phi(mN * fs.omega() + 1))) {
         return Z.valueOf(mN);
       }
     }

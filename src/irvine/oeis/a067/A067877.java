@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067861.
+ * A067877 Numbers n such that sigma(n)=phi(n*bigomega(n)-1).
  * @author Sean A. Irvine
  */
 public class A067877 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A053425 Even numbers n such that the 120 points of the 600-cell exactly integrate homogeneous polynomials of degree n.
+ * A053425 Even numbers k such that the 120 points of the 600-cell exactly integrate homogeneous polynomials of degree k.
  * @author Georg Fischer
  */
 public class A053425 extends FiniteSequence {

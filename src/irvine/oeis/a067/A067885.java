@@ -1,21 +1,23 @@
 package irvine.oeis.a067;
 
 import irvine.factor.factor.Jaguar;
+import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067874 Positive integers x satisfying x^2 - D*y^2 = 1 for a unique integer D.
+ * A067885 Product of 6 distinct primes.
  * @author Sean A. Irvine
  */
-public class A067874 extends Sequence1 {
+public class A067885 extends Sequence1 {
 
-  private long mN = 1;
+  private long mN = 30029;
 
   @Override
   public Z next() {
     while (true) {
-      if (Jaguar.factor(Z.valueOf(++mN).square().subtract(1)).isSquareFree()) {
+      final FactorSequence fs = Jaguar.factor(++mN);
+      if (fs.bigOmega() == 6 && fs.omega() == 6) {
         return Z.valueOf(mN);
       }
     }

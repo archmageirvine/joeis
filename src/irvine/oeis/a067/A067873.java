@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067861.
+ * A067873 Numbers x satisfying x^2 - D*y^2 = 1 for more than one value of D distinct from x^2 - 1.
  * @author Sean A. Irvine
  */
 public class A067873 extends Sequence1 {

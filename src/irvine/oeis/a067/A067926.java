@@ -1,0 +1,27 @@
+package irvine.oeis.a067;
+
+import irvine.math.z.Euler;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
+
+/**
+ * A067851.
+ * @author Sean A. Irvine
+ */
+public class A067926 extends Sequence1 {
+
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    while (true) {
+      final Z t = Z.valueOf(++mN).square().add(1);
+      if (!t.isProbablePrime()) {
+        final Z phi = Euler.phi(t);
+        if (phi.mod(mN) == 0) {
+          return phi.divide(mN);
+        }
+      }
+    }
+  }
+}

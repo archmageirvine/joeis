@@ -2332,3 +2332,4 @@ A067767 Number of alternating link diagrams with n crossings, 2 connected compon
 A067768 Number of alternating link diagrams with n crossings, 3 connected components and two external legs.
 A067769 Number of tiling variants for polyominoes with n cells
 A067782 Minimal delay time for an n-element sorting network
+A067924 Triangle read by rows in which the n-th row gives degrees of irreducible representations of symmetric group S_n (cf. A060240) but now rows are sorted as indicated in A059797 with p(n) terms on each row, where p(n) = A000041(n). [could not determine how the ordering works here]

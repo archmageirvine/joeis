@@ -1,4 +1,4 @@
-package irvine.oeis.a055;
+package irvine.oeis.a067;
 
 import java.util.Arrays;
 
@@ -7,18 +7,18 @@ import irvine.oeis.a007.A007712;
 import irvine.util.Permutation;
 
 /**
- * A055459 a(n) = number of permutations of {1,...,n} which are twice but not 3-times reformable.
+ * A055459.
  * @author Sean A. Irvine
  */
-public class A055459 extends A007712 {
+public class A067950 extends A007712 {
 
   /** Construct the sequence. */
-  public A055459() {
-    super(1);
+  public A067950() {
+    super(6);
   }
 
-  private int mN = 3;
-  private Z mF = Z.SIX;
+  private int mN = 5;
+  private Z mF = Z.valueOf(120);
 
   @Override
   public Z next() {
@@ -30,8 +30,11 @@ public class A055459 extends A007712 {
       final int[] reform = reform(Arrays.copyOf(p, p.length));
       if (reform != null) {
         final int[] reform2 = reform(reform);
-        if (reform2 != null && reform(reform2) == null) {
-          ++count;
+        if (reform2 != null) {
+          final int[] reform3 = reform(reform2);
+          if (reform3 != null && reform(reform3) == null) {
+            ++count;
+          }
         }
       }
     }

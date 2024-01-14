@@ -13,7 +13,7 @@ public class A066926 extends Sequence1 {
 
   private long mN = 0;
 
-  private boolean isPartitionable(final long n, final long x, final long y, final long[] terms, final int pos) {
+  protected boolean isPartitionable(final long n, final long x, final long y, final long[] terms, final int pos) {
     if (pos >= terms.length || x < 0 || y < 0) {
       return false;
     }
@@ -28,6 +28,10 @@ public class A066926 extends Sequence1 {
 
   @Override
   public Z next() {
+    if (mN == 0) {
+      ++mN;
+      return Z.ONE;
+    }
     while (true) {
       ++mN;
       if (isPartitionable(mN, mN, mN, ZUtils.toLong(Jaguar.factor(mN).divisorsSorted()), 0)) {

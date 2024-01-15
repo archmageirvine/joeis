@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.FactorialExpansionSequence;
 
 /**
- * A068464 Factorial expansion of Gamma(1/4) = Sum_{n&gt;=1} a(n)/n! with largest possible a(n), and Gamma = Euler&apos;s gamma function.
+ * A068464 Factorial expansion of Gamma(1/4) = Sum_{n&gt;=1} a(n)/n! with largest possible a(n), and Gamma = Euler's gamma function.
  * @author Georg Fischer
  */
 public class A068464 extends FactorialExpansionSequence {

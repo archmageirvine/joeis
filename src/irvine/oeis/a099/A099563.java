@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007623;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A099563 a(0) = 0; for n &gt; 0, a(n) = final nonzero number in the sequence n, f(n, 2), f(f(n, 2), 3), f(f(f(n, 2), 3), 4),..., where f(n,d) = floor(n/d); the most significant digit in the factorial base representation of n.
+ * A099563 a(0) = 0; for n &gt; 0, a(n) = final nonzero number in the sequence n, f(n,2), f(f(n,2),3), f(f(f(n,2),3),4),..., where f(n,d) = floor(n/d); the most significant digit in the factorial base representation of n.
  * @author Georg Fischer
  */
 public class A099563 extends SimpleTransformSequence {

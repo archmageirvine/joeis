@@ -5,7 +5,7 @@ import irvine.oeis.DirichletSquareRootSequence;
 import irvine.oeis.a065.A065769;
 
 /**
- * A318669 Numerators of the sequence whose Dirichlet convolution with itself yields A065769 (&quot;Prime cascade&quot;).
+ * A318669 Numerators of the sequence whose Dirichlet convolution with itself yields A065769 ("Prime cascade").
  * @author Georg Fischer
  */
 public class A318669 extends DirichletSquareRootSequence {

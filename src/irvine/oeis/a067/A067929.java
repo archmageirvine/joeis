@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067851.
+ * A067929 Numbers k that divide the alternating sum phi(1) - phi(2) + phi(3) - phi(4) + ... + ((-1)^(k+1))*phi(k).
  * @author Sean A. Irvine
  */
 public class A067929 extends Sequence1 {

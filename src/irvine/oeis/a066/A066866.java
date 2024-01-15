@@ -45,18 +45,18 @@ public class A066866 extends Sequence1 {
     for (int k = 0; k < p.length; ++k) {
       right[k] = (p[k] >>> 1) + ((p[k] & 1) << (mN - 1));
     }
-    final int l = p.length;
-    Z[] v = new Z[l];
+    final int len = p.length;
+    Z[] v = new Z[len];
     Z sum = Z.ZERO;
     for (int pos = 0; pos < v.length; ++pos) {
       Arrays.fill(v, Z.ZERO);
       v[pos] = Z.ONE;
       for (int i = 1; i < mN; ++i) {
-        final Z[] w = new Z[l];
+        final Z[] w = new Z[len];
         Arrays.fill(w, Z.ZERO);
-        for (int k = 0; k < l; ++k) {
+        for (int k = 0; k < len; ++k) {
           final long pk = p[k];
-          for (int j = 0; j < l; ++j) {
+          for (int j = 0; j < len; ++j) {
             if ((p[j] & pk) == 0 && (left[j] & pk) == 0) {
               w[k] = w[k].add(v[j]);
             }
@@ -65,7 +65,7 @@ public class A066866 extends Sequence1 {
         v = w;
       }
       final long r = right[pos];
-      for (int k = 0; k < l; ++k) {
+      for (int k = 0; k < len; ++k) {
         if ((p[k] & p[pos]) == 0 && (p[k] & r) == 0) {
           sum = sum.add(v[k]);
         }

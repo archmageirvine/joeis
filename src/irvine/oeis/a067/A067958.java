@@ -7,10 +7,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067959 Number of binary arrangements without adjacent 1's on n X n torus connected ne-sw n-s nw-se.
+ * A067958 Number of binary arrangements without adjacent 1's on n X n torus connected e-w ne-sw n-s nw-se.
  * @author Sean A. Irvine
  */
-public class A067959 extends Sequence1 {
+public class A067958 extends Sequence1 {
 
   private int mN = 0;
 
@@ -57,7 +57,7 @@ public class A067959 extends Sequence1 {
         for (int k = 0; k < len; ++k) {
           final long pk = p[k];
           for (int j = 0; j < len; ++j) {
-            if ((left[j] & pk) == 0 && (right[j] & pk) == 0) {
+            if ((p[j] & pk) == 0 && (left[j] & pk) == 0 && (right[j] & pk) == 0) {
               w[k] = w[k].add(v[j]);
             }
           }
@@ -67,7 +67,7 @@ public class A067959 extends Sequence1 {
       final long r = right[pos];
       final long l = left[pos];
       for (int k = 0; k < len; ++k) {
-        if ((p[k] & r) == 0 && (p[k] & l) == 0) {
+        if ((p[k] & p[pos]) == 0 && (p[k] & r) == 0 && (p[k] & l) == 0) {
           sum = sum.add(v[k]);
         }
       }

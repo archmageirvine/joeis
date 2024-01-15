@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import irvine.oeis.a066.A066926;
 
 /**
- * A066926 Numbers k having a partition k = sum x_i for which sum k/x_i is also a partition of k.
+ * A067952 Numbers are A066926 and distinct x_i parts.
  * @author Sean A. Irvine
  */
 public class A067952 extends A066926 {

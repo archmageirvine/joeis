@@ -8,7 +8,7 @@ import irvine.oeis.LambdaSequence;
 import irvine.oeis.a096.A096622;
 
 /**
- * A131448 Denominators of n-th approximation of factorial (also called harmonic) expansion of Euler&apos;s constant C, called gamma= 0.5772156649...
+ * A131448 Denominators of n-th approximation of factorial (also called harmonic) expansion of Euler's constant C, called gamma= 0.5772156649...
  * @author Georg Fischer
  */
 public class A131448 extends LambdaSequence {

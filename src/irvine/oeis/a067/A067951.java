@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A067851.
+ * A067951 a(0) = 1; a(n) = Sum_{1 &lt;= k &lt;= n and k|n} a(n-k).
  * @author Sean A. Irvine
  */
 public class A067951 extends CachedSequence {

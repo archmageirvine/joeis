@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067851.
+ * A067931 Numbers k that divide the alternating sum sigma(1) - sigma(2) + sigma(3) - sigma(4) + ... + ((-1)^(k+1))*sigma(k).
  * @author Sean A. Irvine
  */
 public class A067931 extends Sequence1 {

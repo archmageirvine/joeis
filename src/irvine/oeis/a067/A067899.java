@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a056.A056525;
 
 /**
- * A067851.
+ * A067899 Fractal palindromic primes of second order.
  * @author Sean A. Irvine
  */
 public class A067899 extends Sequence1 {

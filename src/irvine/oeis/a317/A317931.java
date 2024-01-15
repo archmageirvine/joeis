@@ -5,7 +5,7 @@ import irvine.oeis.DirichletSquareRootSequence;
 import irvine.oeis.a002.A002487;
 
 /**
- * A317931 Numerators of rational valued sequence whose Dirichlet convolution with itself yields A002487, Stern&apos;s Diatomic sequence.
+ * A317931 Numerators of rational valued sequence whose Dirichlet convolution with itself yields A002487, Stern's Diatomic sequence.
  * @author Georg Fischer
  */
 public class A317931 extends DirichletSquareRootSequence {

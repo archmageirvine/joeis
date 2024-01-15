@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067851.
+ * A067948 Triangle of labeled rooted trees according to the number of increasing edges.
  * @author Sean A. Irvine
  */
 public class A067948 extends Sequence1 {

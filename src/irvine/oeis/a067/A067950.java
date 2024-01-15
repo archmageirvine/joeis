@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007712;
 import irvine.util.Permutation;
 
 /**
- * A055459.
+ * A067950 a(n) = number of 3-times (but not 4-times) reformable permutation of {1,...,n}.
  * @author Sean A. Irvine
  */
 public class A067950 extends A007712 {

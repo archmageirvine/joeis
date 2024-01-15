@@ -5,7 +5,7 @@ import irvine.oeis.DirichletSquareRootSequence;
 import irvine.oeis.a018.A018804;
 
 /**
- * A318443 Numerators of the sequence whose Dirichlet convolution with itself yields A018804, Pillai&apos;s arithmetical function: Sum_{k=1..n} gcd(k, n).
+ * A318443 Numerators of the sequence whose Dirichlet convolution with itself yields A018804, Pillai's arithmetical function: Sum_{k=1..n} gcd(k, n).
  * @author Georg Fischer
  */
 public class A318443 extends DirichletSquareRootSequence {

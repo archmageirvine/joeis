@@ -5,7 +5,7 @@ import irvine.oeis.DirichletSquareRootSequence;
 import irvine.oeis.a000.A000010;
 
 /**
- * A317925 Numerators of rational valued sequence whose Dirichlet convolution with itself yields Euler&apos;s phi (A000010).
+ * A317925 Numerators of rational valued sequence whose Dirichlet convolution with itself yields Euler's phi (A000010).
  * @author Georg Fischer
  */
 public class A317925 extends DirichletSquareRootSequence {

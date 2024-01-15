@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066866.
+ * A067960 Number of binary arrangements without adjacent 1's on n X n torus connected ne-sw nw-se.
  * @author Sean A. Irvine
  */
 public class A067960 extends Sequence1 {

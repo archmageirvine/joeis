@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.cons.FactorialExpansionSequence;
 
 /**
- * A068463 Factorial expansion of Gamma(3/4) = Sum_{n&gt;=1} a(n)/n! where Gamma is Euler&apos;s gamma function.
+ * A068463 Factorial expansion of Gamma(3/4) = Sum_{n&gt;=1} a(n)/n! where Gamma is Euler's gamma function.
  * @author Georg Fischer
  */
 public class A068463 extends FactorialExpansionSequence {

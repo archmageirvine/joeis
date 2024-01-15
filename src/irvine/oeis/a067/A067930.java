@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a018.A018252;
 
 /**
- * A067851.
+ * A067930 Nonprime solutions to k == -1 (mod phi(k+1)).
  * @author Sean A. Irvine
  */
 public class A067930 extends A018252 {

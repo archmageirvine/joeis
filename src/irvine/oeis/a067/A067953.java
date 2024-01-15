@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067851.
+ * A067953 Number of ways to sum numbers from 1 to n to the n-th prime.
  * @author Sean A. Irvine
  */
 public class A067953 extends A000040 {

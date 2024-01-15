@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067851.
+ * A067925 Consider a room of size r X s where rs = 2n and 1 &lt;= r, 1 &lt;= s; count ways to arrange n Tatami mats in room; a(n) = total number of ways for all choices of r and s. Two arrangements are distinguished if one is a rotation or reflection of the other.
  * @author Sean A. Irvine
  */
 public class A067925 extends Sequence1 {

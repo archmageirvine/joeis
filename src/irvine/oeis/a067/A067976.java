@@ -19,6 +19,9 @@ public class A067976 extends Sequence1 {
     while (true) {
       final Z t = Z.valueOf(++mN).pow(Euler.phi(mN)).add(1);
       if (t.isProbablePrime()) {
+        if (mVerbose) {
+          StringUtils.message("Found solution with n=" + mN);
+        }
         return t;
       }
       if (mVerbose && mN % 100 == 0) {

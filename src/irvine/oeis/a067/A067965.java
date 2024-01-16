@@ -41,8 +41,8 @@ public class A067965 extends Sequence1 {
     for (int i = 1; i < mN; ++i) {
       final Z[] w = new Z[len];
       Arrays.fill(w, Z.ZERO);
-      for (int j = 0; j < len; ++j) {
-        for (int k = 0; k < len; ++k) {
+      for (int k = 0; k < len; ++k) {
+        for (int j = 0; j < len; ++j) {
           if ((p[j] & left[k]) == 0 && (p[j] & right[k]) == 0) {
             w[k] = w[k].add(v[j]);
           }

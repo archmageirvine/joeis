@@ -24,7 +24,7 @@ public class A067967 extends Sequence1 {
       if ((i & 1) == 0 || (i & (1L << (mN - 1))) == 0) {
         long j = i;
         while (j != 0 && (j & 3) != 3) {
-          j /= 2;
+          j >>>= 1;
         }
         if ((j & 3) != 3) {
           patterns.add(i);

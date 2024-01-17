@@ -5,12 +5,13 @@ import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A064989 Multiplicative with a(2^e) = 1 and a(p^e) = prevprime(p)^e for odd primes p.
  * @author Sean A. Irvine
  */
-public class A064989 extends AbstractSequence {
+public class A064989 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -25,21 +26,13 @@ public class A064989 extends AbstractSequence {
     super(1);
   }
 
-  /**
-   * Direct access with int parameter.
-   * @param n index
-   * @return function value
-   */
-  public static Z a(final int n) {
+  @Override
+  public Z a(final int n) {
     return getProduct(Jaguar.factor(n));
   }
 
-  /**
-   * Direct access with Z parameter.
-   * @param n index
-   * @return function value
-   */
-  public static Z a(final Z nz) {
+  @Override
+  public Z a(final Z nz) {
     return getProduct(Jaguar.factor(nz));
   }
 

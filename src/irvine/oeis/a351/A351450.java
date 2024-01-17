@@ -12,8 +12,10 @@ import irvine.oeis.a064.A064989;
  */
 public class A351450 extends MultiplicativeSequence {
 
+  private static final A064989 SEQ = new A064989();
+
   /** Construct the sequence. */
   public A351450() {
-    super(1, (p, e) -> A064989.a(Puma.nextPrimeZ(p).add(1)));
+    super(1, (p, e) -> SEQ.a(Puma.nextPrimeZ(p).add(1)));
   }
 }

@@ -5,13 +5,14 @@ import java.util.ArrayList;
 import irvine.factor.prime.Fast;
 import irvine.math.MemoryFunction3;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
 /**
  * A005941 Inverse of the Doudna sequence A005940.
  * @author Sean A. Irvine
  */
-public class A005941 extends MemoryFunction2Sequence<Z, Z> {
+public class A005941 extends MemoryFunction2Sequence<Z, Z> implements DirectSequence {
 
   /** Construct the sequence. */
   public A005941() {
@@ -64,4 +65,15 @@ public class A005941 extends MemoryFunction2Sequence<Z, Z> {
     ++mN;
     return get(mG.get(Z.valueOf(mN), Z.ONE, Z.ONE), Z.ZERO).add(1).divide2();
   }
+
+  @Override
+  public Z a(final Z n) {
+    return get(mG.get(n, Z.ONE, Z.ONE), Z.ZERO).add(1).divide2();
+  }
+
+  @Override
+  public Z a(final int n) {
+    return get(mG.get(Z.valueOf(n), Z.ONE, Z.ONE), Z.ZERO).add(1).divide2();
+  }
+
 }

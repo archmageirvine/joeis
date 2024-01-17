@@ -11,8 +11,10 @@ import irvine.oeis.a064.A064989;
  */
 public class A350073 extends MultiplicativeSequence {
 
+  private static final A064989 SEQ = new A064989();
+
   /** Construct the sequence. */
   public A350073() {
-    super(1, (p, e) -> A064989.a(sigmaP(p, e)));
+    super(1, (p, e) -> SEQ.a(sigmaP(p, e)));
   }
 }

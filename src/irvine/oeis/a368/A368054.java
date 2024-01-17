@@ -10,7 +10,7 @@ import irvine.util.Point;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A368054.
+ * A368054 allocated for John Tyler Rascoe.
  * @author Sean A. Irvine
  */
 public class A368054 extends Sequence0 {

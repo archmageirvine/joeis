@@ -8,7 +8,7 @@ import irvine.oeis.a020.A020639;
 
 
 /**
- * A071187 Smallest prime factor of number of divisors of n.
+ * A071187 Smallest prime factor of number of divisors of n; a(1) = 1.
  * Formula: <code>a(n) = A020639(A000005(n)).</code>
  * @author Georg Fischer
  */

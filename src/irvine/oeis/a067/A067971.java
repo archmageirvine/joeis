@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
- * A067968.
+ * A067971 a(n+1) is the smallest number &gt; a(n) such that the digits of a(n)^3 are all (with multiplicity) properly contained in the digits of a(n+1)^3, with a(0)=1.
  * @author Sean A. Irvine
  */
 public class A067971 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a008.A008330;
 
 /**
- * A094051 Phi(phi(p))/2 where p = prime(n).
+ * A094051 a(n) = phi(phi(p))/2 where p = prime(n).
  * @author Georg Fischer
  */
 public class A094051 extends AbstractSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a102.A102370;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A158953 Trajectory of 12 under repeated application of the map n --&gt; A102370(n) .
+ * A158953 Trajectory of 12 under repeated application of the map n -&gt; A102370(n).
  * @author Georg Fischer
  */
 public class A158953 extends TupleTransformSequence {

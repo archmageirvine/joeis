@@ -4,7 +4,7 @@ package irvine.oeis.a132;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A132417 a(16j+i) := 8(16j+i) + e_i, for j &gt;= 0, 0 &lt;= i &lt;= 15, where e_0, ..., e_15 are 2, -2, -6, -10, -14, -18, -22, -26, -30, -34, -38, -42, -46, -50, -54, 6.
+ * A132417 a(16j+i) = 8(16j+i) + e_i, for j &gt;= 0, 0 &lt;= i &lt;= 15, where e_0, ..., e_15 are 2, -2, -6, -10, -14, -18, -22, -26, -30, -34, -38, -42, -46, -50, -54, 6.
  * @author Georg Fischer
  */
 public class A132417 extends GeneratingFunctionSequence {

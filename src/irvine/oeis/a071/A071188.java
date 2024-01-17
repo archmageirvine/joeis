@@ -8,7 +8,7 @@ import irvine.oeis.a006.A006530;
 
 
 /**
- * A071188 Largest prime factor of number of divisors of n.
+ * A071188 Largest prime factor of number of divisors of n; a(1)=1.
  * Formula: <code>a(n) = A006530(A000005(n)).</code>
  * @author Georg Fischer
  */

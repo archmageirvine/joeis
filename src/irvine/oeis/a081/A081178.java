@@ -6,7 +6,7 @@ package irvine.oeis.a081;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A081178 a(0)=1; for n&gt;=1, a(n) = sum(7^k*N(n,k), k=0..n), where N(n,k)=(1/n)*C(n,k)*C(n,k+1) are the Narayana numbers (A001263).
+ * A081178 a(0) = 1; for n&gt;=1, a(n) = Sum_{k=0..n} 7^k*N(n,k), where N(n,k)=(1/n)*C(n,k)*C(n,k+1) are the Narayana numbers (A001263).
  * @author Georg Fischer
  */
 public class A081178 extends HolonomicRecurrence {

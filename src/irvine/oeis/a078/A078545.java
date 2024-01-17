@@ -8,7 +8,7 @@ import irvine.oeis.a006.A006530;
 
 
 /**
- * A078545 Largest prime dividing tau(n), the number of divisors of n.
+ * A078545 Duplicate of A071188.
  * Formula: <code>a(n) = A006530(A000005(n)).</code>
  * @author Georg Fischer
  */

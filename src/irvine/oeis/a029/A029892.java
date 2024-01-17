@@ -6,7 +6,7 @@ import java.util.List;
 import irvine.math.z.Z;
 
 /**
- * A029892 Number of even graphical partitions of order 2n - number of odd partitions.
+ * A029892 Number of even graphical partitions of order 2n - number of odd graphical partitions of order 2n.
  * @author Sean A. Irvine
  */
 public class A029892 extends A029889 {

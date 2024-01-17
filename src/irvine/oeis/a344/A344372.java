@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A344372 a(n) = Sum_{k=1..2n} (-1)^k gcd(k,2n).
+ * A344372 a(n) = Sum_{k = 1..n} gcd(2*k, n).
  * @author Georg Fischer
  */
 public class A344372 extends Sequence1 {

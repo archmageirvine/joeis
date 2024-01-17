@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A367978 allocated for Robert P. P. McKone.
+ * A367978 Number of distinct characteristic polynomials for 4 X 4 matrices with entries from {0, 1, ..., n}.
  * @author Sean A. Irvine
  */
 public class A367978 extends Sequence0 {

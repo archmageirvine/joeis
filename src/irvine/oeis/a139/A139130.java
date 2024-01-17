@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a010.A010553;
 
 /**
- * A139130 a(n) = sum{k=1 to n} d(d(k)), where d(k) = number of divisors of k.
+ * A139130 a(n) = Sum_{k=1..n} d(d(k)), where d(k) = number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A139130 extends PartialSumSequence {

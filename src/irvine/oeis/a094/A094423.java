@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A094423 A045873(n)^2.
+ * A094423 a(n) = A045873(n)^2.
  * @author Georg Fischer
  */
 public class A094423 extends GeneratingFunctionSequence {

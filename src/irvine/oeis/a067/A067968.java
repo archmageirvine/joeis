@@ -9,7 +9,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A067968.
+ * A067968 Number of binary arrangements on n X n array without adjacent three 1's.
  * @author Sean A. Irvine
  */
 public class A067968 extends Sequence1 {

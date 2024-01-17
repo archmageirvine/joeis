@@ -4,7 +4,7 @@ package irvine.oeis.a075;
 import irvine.oeis.a074.A074993;
 
 /**
- * A075007 Floor[ concatenation of n+5, n+4,n+3, n+2, n+1 and n divided by 6].
+ * A075007 a(n) = floor(concatenation of n+5, n+4, n+3, n+2, n+1 and n divided by 6).
  * @author Georg Fischer
  */
 public class A075007 extends A074993 {

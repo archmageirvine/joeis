@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A134914 Ceiling(n^(1/3)).
+ * A134914 a(n) = ceiling(n^(1/3)).
  * @author Georg Fischer
  */
 public class A134914 extends FloorSequence {

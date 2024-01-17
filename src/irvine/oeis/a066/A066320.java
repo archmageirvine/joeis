@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066320 Triangle: T(n,k)=C(n,k)*k^k*(n-k)^(n-k-1) k=0..n-1.
+ * A066320 Triangle read by rows: T(n, k) = binomial(n, k)*k^k*(n-k)^(n-k-1) k=0..n-1.
  * @author Sean A. Irvine
  */
 public class A066320 extends Sequence1 {

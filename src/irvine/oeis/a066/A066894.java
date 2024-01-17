@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066894 prime(2n) - prime(n) = 0 (mod n).
+ * A066894 Numbers k such that prime(2*k) - prime(k) == 0 (mod k).
  * @author Sean A. Irvine
  */
 public class A066894 extends Sequence1 {

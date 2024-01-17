@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A103621 Trajectory of 7 under repeated application of the map n --&gt; A102370(n).
+ * A103621 Trajectory of 7 under repeated application of the map n -&gt; A102370(n).
  * @author Georg Fischer
  */
 public class A103621 extends GeneratingFunctionSequence {

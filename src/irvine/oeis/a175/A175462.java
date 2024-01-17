@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004770;
 
 /**
- * A175462 Number of divisors of integers of form 5 + 8n.
+ * A175462 Number of divisors of integers of the form 5 + 8n.
  * @author Georg Fischer
  */
 public class A175462 extends Sequence0 {

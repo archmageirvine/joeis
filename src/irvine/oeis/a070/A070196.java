@@ -7,7 +7,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.a004.A004185;
 
 /**
- * A070196 a(n)=n plus the sorted version of the base-10 digits of n.
+ * A070196 a(n) = n plus the sorted version of the base-10 digits of n.
  * @author Georg Fischer
  */
 public class A070196 extends Sequence0 {

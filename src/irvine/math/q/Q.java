@@ -448,4 +448,22 @@ public class Q implements Comparable<Q>, Serializable {
   public boolean isZero() {
     return num().isZero();
   }
+
+  /**
+   * Return the maximum of two rationals.
+   * @param other other number
+   * @return maximum
+   */
+  public Q max(final Q other) {
+    return num().multiply(other.den()).compareTo(other.num().multiply(den())) >= 0 ? this : other;
+  }
+
+  /**
+   * Return the maximum of two rationals.
+   * @param other other number
+   * @return maximum
+   */
+  public Q min(final Q other) {
+    return num().multiply(other.den()).compareTo(other.num().multiply(den())) <= 0 ? this : other;
+  }
 }

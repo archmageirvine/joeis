@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
 /**
- * A067993.
+ * A067999 Numbers k such that (k! - 1) == 0 (mod prime(k)).
  * @author Sean A. Irvine
  */
 public class A067999 extends A000040 {

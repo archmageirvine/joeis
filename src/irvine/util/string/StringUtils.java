@@ -35,23 +35,6 @@ public final class StringUtils {
   }
 
   /**
-   * A string comprising some string repeated a number of times.
-   * @param s string to repeat
-   * @param count number of instances
-   * @return string with repeated strings
-   */
-  public static String rep(final String s, final int count) {
-    if (count < 0) {
-      throw new IllegalArgumentException();
-    }
-    final StringBuffer sb = new StringBuffer(count * s.length());
-    for (int i = s.length(); i > 0; --i) {
-      sb.append(s);
-    }
-    return sb.toString();
-  }
-
-  /**
    * Test if the given string is a palindrome.
    * @param word string to test
    * @return true if is a palindrome

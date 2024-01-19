@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A067976 Primes of the form 1+n^phi(n).
+ * A067976 Primes of the form 1 + k^phi(k).
  * @author Sean A. Irvine
  */
 public class A067976 extends Sequence1 {

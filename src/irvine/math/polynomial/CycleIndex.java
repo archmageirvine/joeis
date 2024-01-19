@@ -419,7 +419,6 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
    * Apply the variables to the indeterminates in this cycle index and
    * return the evaluation. Variables are used repeatedly until all
    * indeterminates are handled.
-   *
    * @param v values
    * @return evaluation
    */

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067993.
+ * A067993 Consider the sequence of ratios min(t(n-1)/t(n), t(n)/t(n-1)), n=2,3,4,..., where the t(n) are the terms of A067992. Let m be the smallest integer such that all fractions 1/n, 2/n, ..., (n-1)/n have appeared when we reach A067992(m); this sequence gives the values of m; set a(n)=0 if some fraction i/n never appears.
  * @author Sean A. Irvine
  */
 public class A067993 extends Sequence1 {

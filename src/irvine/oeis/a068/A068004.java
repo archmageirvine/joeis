@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067823 Start with 2 and concatenate ("absorb") the next prime; continually repeat this procedure.
+ * A068004 a(1) = 7, a(n+1) is the concatenation of a(n) and the next prime after a(n).
  * @author Sean A. Irvine
  */
 public class A068004 extends Sequence1 {

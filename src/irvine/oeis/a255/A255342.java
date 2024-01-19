@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a007.A007623;
 
 /**
- * A255342 Numbers n such that there are exactly two 1&apos;s in their factorial base representation (A007623).
+ * A255342 Numbers n such that there are exactly two 1's in their factorial base representation (A007623).
  * @author Georg Fischer
  */
 public class A255342 extends FilterPositionSequence {

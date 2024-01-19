@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A053344.
+ * A067995 Minimal number of coins needed to pay exactly n cents using coins of sizes 1, 2, 3, 5, 10, 20, 25, 50, 100 cents (all historical U.S.A. coinage from 1 to 100 cents).
  * @author Sean A. Irvine
  */
 public class A067995 extends LinearRecurrence {

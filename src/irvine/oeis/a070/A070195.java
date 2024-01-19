@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005117;
 import irvine.oeis.a014.A014574;
 
 /**
- * A070195 Squarefree numbers in a pair of twin primes.
+ * A070195 Squarefree numbers sandwiched between a pair of twin primes.
  * @author Georg Fischer
  */
 public class A070195 extends IntersectionSequence {

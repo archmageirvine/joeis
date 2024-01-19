@@ -6,7 +6,7 @@ package irvine.oeis.a177;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A177699 E.g.f.: log(1+x)*sinh(x).
+ * A177699 Expansion of e.g.f. log(1+x)*sinh(x).
  * @author Georg Fischer
  */
 public class A177699 extends HolonomicRecurrence {

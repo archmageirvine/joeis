@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a007.A007623;
 
 /**
- * A255343 Numbers n such that there are exactly three 1&apos;s in their factorial base representation (A007623).
+ * A255343 Numbers n such that there are exactly three 1's in their factorial base representation (A007623).
  * @author Georg Fischer
  */
 public class A255343 extends FilterPositionSequence {

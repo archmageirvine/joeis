@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007623;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A257511 Number of 1&apos;s in factorial base representation of n (A007623).
+ * A257511 Number of 1's in factorial base representation of n (A007623).
  * @author Georg Fischer
  */
 public class A257511 extends SimpleTransformSequence {

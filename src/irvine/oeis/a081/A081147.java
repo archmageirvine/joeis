@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a022.A022839;
 
 /**
- * A081147 Differences of Beatty sequence for square root of 5.
+ * A081147 First differences of A022839.
  * @author Sean A. Irvine
  */
 public class A081147 extends DifferenceSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A053642 Rotate one binary digit to the left, drop leading zeros, then rotate one binary digit to the right.
+ * A053642 Rotate n one binary digit to the left, drop leading zeros, then rotate one binary digit to the right.
  * @author Georg Fischer
  */
 public class A053642 extends Sequence1 {

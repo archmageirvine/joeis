@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068001.
+ * A068001 Smallest number whose n-th power (A067457) starts with n.
  * @author Sean A. Irvine
  */
 public class A068001 extends Sequence1 {

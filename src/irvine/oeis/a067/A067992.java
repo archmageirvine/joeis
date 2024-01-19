@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A067992.
+ * A067992 a(0)=1 and, for n &gt; 0, a(n) is the smallest positive integer such that the ratios min(a(k)/a(k-1), a(k-1)/a(k)) for 0 &lt; k &lt;= n are all distinct.
  * @author Sean A. Irvine
  */
 public class A067992 extends MemorySequence {

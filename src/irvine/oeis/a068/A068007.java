@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A068007 Least number k such that the number of primes of the form [k/j] for j=1..k (A067514) is n, or zero if impossible.
+ * A068007 Least number k such that the number of primes of the form [k/j] for j=1..k (A068050) is n, or zero if impossible.
  * @author Sean A. Irvine
  */
 public class A068007 extends Sequence1 implements Conjectural {

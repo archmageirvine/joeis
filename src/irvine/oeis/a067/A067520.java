@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 
 /**
- * A067520 Triangular numbers whose index is a multiple of the sum of the digits.
+ * A067520 Triangular numbers whose index is a multiple of the sum of their digits.
  * @author Sean A. Irvine
  */
 public class A067520 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A212971 Number of (w,x,y) with all terms in {0,...,n} and w&lt;floor((x+y)/3)).
+ * A212971 Number of triples (w,x,y) with all terms in {0,...,n} and w &lt; floor((x+y)/3).
  * @author Sean A. Irvine
  */
 public class A212971 extends LinearRecurrence {

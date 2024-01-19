@@ -385,6 +385,27 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
     return result;
   }
 
+  /**
+   * Substitute the given values for the variables of this cycle index.
+   * @param subs values to substitute
+   * @return polynomial result
+   */
+  public Q apply(final Z... subs) {
+    Q result = Q.ZERO;
+    for (final MultivariateMonomial m : values()) {
+      Q term = m.getCoefficient();
+      for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
+        final int index = e.getKey().right() - 1;
+        if (index < subs.length) {
+          final Z power = e.getValue();
+          term = term.multiply(subs[index].pow(power));
+        }
+      }
+      result = result.add(term);
+    }
+    return result;
+  }
+
   private static Q apply(final MultivariateMonomial p, final int... v) {
     final int m = p.maxIndex();
     Z powerOf2 = Z.ZERO;

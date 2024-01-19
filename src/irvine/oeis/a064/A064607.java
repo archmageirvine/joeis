@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.math.z.Z;
 
 /**
- * A064607 Partial sum of Sigma_4(n) is divisible by n, where Sigma_4(n)=A001159(n).
+ * A064607 Numbers k such that A064604(k) is divisible by k.
  * @author Sean A. Irvine
  */
 public class A064607 extends A064604 {

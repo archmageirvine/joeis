@@ -7,6 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
+import irvine.oeis.Sequence;
 
 /**
  * Construct the Hankel transform of the given sequence.
@@ -25,7 +26,7 @@ public class HankelTransformSequence extends AbstractSequence {
    * @param offset first index
    * @param seq sequence
    */
-  public HankelTransformSequence(final int offset, final AbstractSequence seq) {
+  public HankelTransformSequence(final int offset, final Sequence seq) {
     this(offset, seq, 0);
   }
 
@@ -34,7 +35,7 @@ public class HankelTransformSequence extends AbstractSequence {
    * @param offset first index
    * @param seq sequence
    */
-  public HankelTransformSequence(final int offset, final AbstractSequence seq, int skip) {
+  public HankelTransformSequence(final int offset, final Sequence seq, int skip) {
     super(offset);
     mN = offset - 1;
     mSeq = DirectSequence.create(seq);

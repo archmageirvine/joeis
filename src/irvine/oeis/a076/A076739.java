@@ -3,7 +3,6 @@ package irvine.oeis.a076;
 import irvine.math.MemoryFunction1;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.CachedSequence;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
@@ -15,7 +14,7 @@ import irvine.oeis.a000.A000045;
 public class A076739 extends AbstractSequence implements DirectSequence {
 
   private int mN;
-  private final CachedSequence mSeq;
+  private final DirectSequence mSeq;
 
   /** Construct the sequence. */
   public A076739() {
@@ -30,7 +29,7 @@ public class A076739 extends AbstractSequence implements DirectSequence {
   public A076739(final int offset, final Sequence seq) {
     super(offset);
     mN = offset - 1;
-    mSeq = new CachedSequence(seq);
+    mSeq = DirectSequence.create(seq);
   }
 
   private final MemoryFunction1<Z> mF = new MemoryFunction1<>() {

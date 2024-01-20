@@ -6,7 +6,6 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
-import irvine.oeis.CachedSequence;
 import irvine.oeis.DirectSequence;
 
 /**
@@ -38,7 +37,7 @@ public class HankelTransformSequence extends AbstractSequence {
   public HankelTransformSequence(final int offset, final AbstractSequence seq, int skip) {
     super(offset);
     mN = offset - 1;
-    mSeq = (seq instanceof DirectSequence) ? (DirectSequence) seq : new CachedSequence(seq);
+    mSeq = DirectSequence.create(seq);
     while (--skip >= 0) {
       next();
     }

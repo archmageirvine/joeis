@@ -1,4 +1,4 @@
-package irvine.oeis.base;
+package irvine.oeis.transform;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
  * Run lengths in another sequence.
  * @author Sean A. Irvine
  */
-public class RunLengthSequence extends AbstractSequence {
+public class RunLengthTransform extends AbstractSequence {
 
   private static final int DEFOFF = 1;
   private final Sequence mSeq;
@@ -18,7 +18,7 @@ public class RunLengthSequence extends AbstractSequence {
    * Run lengths sequence.
    * @param seq underlying sequence
    */
-  public RunLengthSequence(final Sequence seq) {
+  public RunLengthTransform(final Sequence seq) {
     this(DEFOFF, seq);
   }
 
@@ -27,7 +27,7 @@ public class RunLengthSequence extends AbstractSequence {
    * @param offset first index of target sequence
    * @param seq underlying sequence
    */
-  public RunLengthSequence(final int offset, final Sequence seq) {
+  public RunLengthTransform(final int offset, final Sequence seq) {
     super(offset);
     mSeq = seq;
     mPrev = mSeq.next();

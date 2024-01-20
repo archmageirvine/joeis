@@ -1,12 +1,12 @@
 package irvine.oeis.a048;
 
-import irvine.oeis.base.RunLengthSequence;
+import irvine.oeis.transform.RunLengthTransform;
 
 /**
  * A048821 Lengths of runs in A048820.
  * @author Sean A. Irvine
  */
-public class A048821 extends RunLengthSequence {
+public class A048821 extends RunLengthTransform {
 
   /** Construct the sequence. */
   public A048821() {

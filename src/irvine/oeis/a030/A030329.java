@@ -1,13 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.base.RunLengthSequence;
+import irvine.oeis.transform.RunLengthTransform;
 
 /**
  * A030329 Length of n-th run of 1's in A030324.
  * @author Sean A. Irvine
  */
-public class A030329 extends RunLengthSequence {
+public class A030329 extends RunLengthTransform {
 
   /** Construct the sequence. */
   public A030329() {

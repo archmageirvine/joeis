@@ -3,13 +3,13 @@ package irvine.oeis.a083;
 
 import irvine.math.z.Z;
 import irvine.oeis.a061.A061419;
-import irvine.oeis.base.RunLengthSequence;
+import irvine.oeis.transform.RunLengthTransform;
 
 /**
  * A083279 Length of odd/even runs in A061419, where a(2n)=length of n-th run of even numbers in A061419 and a(2n-1)=length of n-th run of odd numbers.
  * @author Georg Fischer
  */
-public class A083279 extends RunLengthSequence {
+public class A083279 extends RunLengthTransform {
 
   /** Construct the sequence. */
   public A083279() {

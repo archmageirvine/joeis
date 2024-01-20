@@ -1,13 +1,13 @@
 package irvine.oeis.a064;
 
 import irvine.oeis.a195.A195376;
-import irvine.oeis.base.RunLengthSequence;
+import irvine.oeis.transform.RunLengthTransform;
 
 /**
  * A064654 Length of n-th run of evens or odds in A064413.
  * @author Sean A. Irvine
  */
-public class A064654 extends RunLengthSequence {
+public class A064654 extends RunLengthTransform {
 
   /** Construct the sequence. */
   public A064654() {

@@ -65,6 +65,15 @@ public class CachedSequence extends AbstractSequence implements DirectSequence {
   }
 
   /**
+   * Construct the sequence backed by another sequence.
+   * WARNING: This constructor assumes the first access to terms will occur in numerical order.
+   * @param seq underlying sequence
+   */
+  public CachedSequence(final Sequence seq) {
+    this(seq.getOffset(), n -> seq.next());
+  }
+
+  /**
    * Construct the sequence backed by a lambda function.
    * @param offset first index
    * @param clazz type of the argument of the lambda function (one of <code>Integer</code>,

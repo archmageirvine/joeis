@@ -30,7 +30,7 @@ public class A076739 extends AbstractSequence implements DirectSequence {
   public A076739(final int offset, final Sequence seq) {
     super(offset);
     mN = offset - 1;
-    mSeq = new CachedSequence(0, n -> seq.next());
+    mSeq = new CachedSequence(seq);
   }
 
   private final MemoryFunction1<Z> mF = new MemoryFunction1<>() {

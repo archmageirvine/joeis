@@ -10,7 +10,7 @@ public class DifferenceSequence extends AbstractSequence {
 
   private final Sequence mSeq;
   private Z mPrev;
-  private boolean mAbsolute;
+  private final boolean mAbsolute;
 
   /**
    * Create the first difference sequence of a sequence.

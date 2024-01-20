@@ -1596,7 +1596,6 @@ A050257 Number of distinct antimagic squares of order n (modulo rotations and re
 A050259 Numbers n such that 2^n == 3 (mod n) [a lot of effort to do efficiently].
 A050276 Nonzero numerators in asymptotic expansion of the Riemann-Seigel Z-function.
 A050277 Integer part of denominators of nonzero terms in asymptotic expansion of the Riemann-Seigel Z-function.
-A050295 Number of strongly triple-free subsets of {1, 2, ..., n}.
 A050437 Dimension of space spanned by symmetric powers of n-dimensional standard representation of symmetric group S_n
 A050967 Discriminants of real quadratic fields with class number 1 and related continued fraction period length of 18.
 A050972 Smaller member of friendly pairs ordered by smallest maximal element, [hard to get right?]

@@ -1,7 +1,6 @@
 package irvine.oeis;
 
 import irvine.math.z.Z;
-import irvine.oeis.memory.MemorySequence;
 
 /**
  * A sequence supporting direct access of terms.
@@ -36,43 +35,7 @@ public interface DirectSequence extends Sequence {
    * @return direct version of the sequence
    */
   static DirectSequence create(final Sequence seq) {
-    if (seq instanceof DirectSequence) {
-      return (DirectSequence) seq;
-    }
-    return new DirectSequence() {
-
-      private final MemorySequence mSeq = MemorySequence.cachedSequence(seq);
-
-      @Override
-      public Z a(final Z n) {
-        return a(n.intValueExact());
-      }
-
-      @Override
-      public Z a(final int n) {
-        return mSeq.a(n - getOffset());
-      }
-
-      @Override
-      public Z next() {
-        return mSeq.next();
-      }
-
-      @Override
-      public int getOffset() {
-        return seq.getOffset();
-      }
-
-      @Override
-      public Sequence skip(final long n) {
-        return mSeq.skip(n);
-      }
-
-      @Override
-      public Sequence skip() {
-        return mSeq.skip();
-      }
-    };
+    return seq instanceof DirectSequence ? (DirectSequence) seq : new CachedSequence(seq.getOffset(), n -> seq.next());
   }
 }
 

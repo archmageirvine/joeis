@@ -15,7 +15,7 @@ public class A257079 extends SimpleTransformSequence {
   /** Construct the sequence. */
   public A257079() {
     super(0, new A007623(), v -> {
-      int[] c = ZUtils.digitCounts(v, 10);
+      final int[] c = ZUtils.digitCounts(v, 10);
       int i = 0;
       while (++i <= 9) {
         if (c[i] == 0) {

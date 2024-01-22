@@ -9,6 +9,8 @@ import irvine.oeis.Sequence0;
  */
 public class A050295 extends Sequence0 {
 
+  // Could probably make this much faster cf. A068060.
+
   private int mN = -1;
   private long mCount = 0;
   private boolean[] mForbidden = null;

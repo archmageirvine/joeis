@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A201158 E.g.f. exp(x)/(cos(x)-sin(x)).
+ * A201158 E.g.f. exp(x)/(cos(x) - sin(x)).
  * E.g.f.: exp(x)/(cos(x)-sin(x))
  * @author Georg Fischer
  */

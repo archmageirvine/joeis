@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006690;
 
 /**
- * A082168 A006690(n)/n^3.
+ * A082168 a(n) = A006690(n)/n^3.
  * @author Georg Fischer
  */
 public class A082168 extends Sequence1 {

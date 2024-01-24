@@ -5,7 +5,7 @@ import irvine.oeis.a344.A344695;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A347231 Difference between A344695 [gcd(psi(n),sigma(n))] and its M√∂bius transform.
+ * A347231 Difference between A344695 [gcd(psi(n),sigma(n))] and its M\u00f6bius transform.
  * @author Georg Fischer
  */
 public class A347231 extends TupleTransformSequence {

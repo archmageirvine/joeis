@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 
 /**
- * A269995 Denominators of r-Egyptian fraction expansion for sqrt(2) - 1, where r = (1,1/2,1/3,1/4,...)
+ * A269995 Denominators of r-Egyptian fraction expansion for sqrt(2) - 1, where r = (1,1/2,1/3,1/4,...).
  * @author Georg Fischer
  */
 public class A269995 extends A269993 {

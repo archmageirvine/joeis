@@ -5,7 +5,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A364566 Numbers k such that A364557(k) &lt; A000010(k), where A364557 is the M√∂bius transform of A005941, and A000010 is Euler totient function phi.
+ * A364566 Numbers k such that A364557(k) &lt; A000010(k), where A364557 is the M\u00f6bius transform of A005941, and A000010 is Euler totient function phi.
  * @author Georg Fischer
  */
 public class A364566 extends FilterPositionSequence {

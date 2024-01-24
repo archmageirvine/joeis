@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a269.A269993;
 
 /**
- * A270357 Denominators of r-Egyptian fraction expansion for the Euler-Mascheroni constant, where r = (1, 1/2, 1/4, 1/8, ...)
+ * A270357 Denominators of r-Egyptian fraction expansion for the Euler-Mascheroni constant, where r = (1, 1/2, 1/4, 1/8, ...).
  * @author Georg Fischer
  */
 public class A270357 extends A269993 {

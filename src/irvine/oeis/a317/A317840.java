@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002487;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A317840 Difference between Stern&apos;s Diatomic sequence (A002487) and its M√∂bius transform (A317839).
+ * A317840 Difference between Stern's Diatomic sequence (A002487) and its M\u00f6bius transform (A317839).
  * @author Georg Fischer
  */
 public class A317840 extends TupleTransformSequence {

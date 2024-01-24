@@ -6,7 +6,7 @@ import irvine.oeis.a161.A161151;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A182241 a(n) = A161151(2*n)/2
+ * A182241 a(n) = A161151(2*n)/2.
  * @author Georg Fischer
  */
 public class A182241 extends SimpleTransformSequence {

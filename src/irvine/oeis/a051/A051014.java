@@ -1,6 +1,8 @@
 package irvine.oeis.a051;
 
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.TreeSet;
 
 import irvine.math.MemoryFunction;
@@ -16,14 +18,14 @@ public class A051014 extends Sequence0 {
 
   // After Alois P. Heinz
 
-  private MemoryFunction<TreeSet<Integer>, TreeSet<Integer>> mS = new MemoryFunction<>() {
+  protected MemoryFunction<Set<Integer>, Set<Integer>> mS = new MemoryFunction<>() {
     @Override
-    protected TreeSet<Integer> compute(final TreeSet<Integer> set) {
+    protected Set<Integer> compute(final Set<Integer> set) {
       if (set.size() > 63) {
         throw new UnsupportedOperationException();
       }
       final Integer[] values = set.toArray(new Integer[0]);
-      final TreeSet<Integer> res = new TreeSet<>();
+      final Set<Integer> res = new HashSet<>();
       for (long k = 1; k < 1L << set.size(); ++k) {
         int sum = 0;
         int i = 0;
@@ -38,9 +40,9 @@ public class A051014 extends Sequence0 {
     }
   };
 
-  private final HashMap<Pair<Integer, TreeSet<Integer>>, Long> mBCache = new HashMap<>();
+  protected final HashMap<Pair<Integer, TreeSet<Integer>>, Long> mBCache = new HashMap<>();
 
-  private long b(final int i, final TreeSet<Integer> s) {
+  protected long b(final int i, final TreeSet<Integer> s) {
     if (i < 2) {
       return 1;
     }

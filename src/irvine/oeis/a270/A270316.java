@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a269.A269993;
 
 /**
- * A270316 Denominators of r-Egyptian fraction expansion for (1/2)^(1/3), where r = (1,1/2,1/3,1/4,...)
+ * A270316 Denominators of r-Egyptian fraction expansion for (1/2)^(1/3), where r = (1,1/2,1/3,1/4,...).
  * @author Georg Fischer
  */
 public class A270316 extends A269993 {

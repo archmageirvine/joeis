@@ -5,7 +5,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a249.A249721;
 
 /**
- * A290079 Characteristic function for A249721: a(n) = 1 if there are either no 1-digits at all in base-3 representation of n, or if there are exactly two 1&apos;s next to each other, a(n) = 0 in any other cases.
+ * A290079 Characteristic function for A249721: a(n) = 1 if there are either no 1-digits at all in base-3 representation of n, or if there are exactly two 1's next to each other, a(n) = 0 in any other cases.
  * @author Georg Fischer
  */
 public class A290079 extends CharacteristicFunction {

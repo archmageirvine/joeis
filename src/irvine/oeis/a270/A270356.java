@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a269.A269993;
 
 /**
- * A270356 Denominators of r-Egyptian fraction expansion for log(2), where r = (1, 1/2, 1/4, 1/8, ...)
+ * A270356 Denominators of r-Egyptian fraction expansion for log(2), where r = (1, 1/2, 1/4, 1/8, ...).
  * @author Georg Fischer
  */
 public class A270356 extends A269993 {

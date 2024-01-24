@@ -4,7 +4,7 @@ package irvine.oeis.a344;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
- * A344584 Difference between the inverse M√∂bius transform of the arithmetic derivative of n and the sum of the proper divisors of n: a(n) = A319684(n) - A001065(n).
+ * A344584 Difference between the inverse M\u00f6bius transform of the arithmetic derivative of n and the sum of the proper divisors of n: a(n) = A319684(n) - A001065(n).
  * @author Georg Fischer
  */
 public class A344584 extends InverseMobiusTransformSequence {

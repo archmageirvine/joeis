@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a053.A053013;
 
 /**
- * A229181 Number of decimal digits in the variant of A047777(n) (decimal expansion of Pi cut in &quot;prime chunks&quot;) without the restriction that all primes must be different.
+ * A229181 Number of decimal digits in the variant of A047777(n) (decimal expansion of Pi cut in "prime chunks") without the restriction that all primes must be different.
  * @author Georg Fischer
  */
 public class A229181 extends DifferenceSequence {

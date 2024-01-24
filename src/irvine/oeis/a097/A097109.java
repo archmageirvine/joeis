@@ -7,7 +7,7 @@ import irvine.oeis.transform.EulerTransform;
 
 
 /**
- * A097109 G.f.: s(2)^2*s(3)^3/(s(1)*s(6)^2), where s(k) := subs(q=q^k, eta(q)) and eta(q) is Dedekind's function, cf. A010815.
+ * A097109 G.f.: s(2)^2*s(3)^3/(s(1)*s(6)^2), where s(k) = eta(q^k) and eta(q) is Dedekind's function, cf. A010815.
  * @author Georg Fischer
  */
 public class A097109 extends EulerTransform {

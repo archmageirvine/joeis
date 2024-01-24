@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 
 /**
- * A269998 Denominators of r-Egyptian fraction expansion for 1/Pi, where r = (1,1/2,1/3,1/4,...)
+ * A269998 Denominators of r-Egyptian fraction expansion for 1/Pi, where r = (1,1/2,1/3,1/4,...).
  * @author Georg Fischer
  */
 public class A269998 extends A269993 {

@@ -4,7 +4,7 @@ package irvine.oeis.a329;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A329035 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A329034(i) = A329034(j) for all i, j, where A329034 is the M√∂bius transform of A122111.
+ * A329035 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A329034(i) = A329034(j) for all i, j, where A329034 is the M\u00f6bius transform of A122111.
  * @author Georg Fischer
  */
 public class A329035 extends RestrictedGrowthTransformSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a003.A003415;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A300245 Filter sequence combining arithmetic derivative (A003415) with its M√∂bius transform (A300251).
+ * A300245 Filter sequence combining arithmetic derivative (A003415) with its M\u00f6bius transform (A300251).
  * @author Georg Fischer
  */
 public class A300245 extends RestrictedGrowthTransformSequence {

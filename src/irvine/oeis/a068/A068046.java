@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000796;
 
 /**
- * A068046 Palindromes of length greater than 1 in decimal expansion of Pi.
+ * A068046 Palindromes of length greater than 1 in decimal expansion of Pi (not showing leading 0's).
  * @author Sean A. Irvine
  */
 public class A068046 extends A000796 {

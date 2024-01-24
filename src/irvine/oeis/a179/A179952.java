@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A179952 Add 1 to all the divisors of n. a(n)=number of perfect squares in the set.
+ * A179952 Add 1 to all the divisors of n. a(n) = number of perfect squares in the set.
  * @author Georg Fischer
  */
 public class A179952 extends AbstractSequence {

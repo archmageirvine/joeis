@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A317946 Additive with a(p^n) = A011371(n); the 2-adic valuation of A317934(n).
+ * A317946 Additive with a(p^e) = A011371(e); the 2-adic valuation of A317934(n).
  * @author Georg Fischer
  */
 public class A317946 extends SimpleTransformSequence {

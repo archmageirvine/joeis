@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A269993 Denominators of r-Egyptian fraction expansion for sqrt(1/2), where r = (1, 1/2, 1/3, 1/4,...)
+ * A269993 Denominators of r-Egyptian fraction expansion for sqrt(1/2), where r = (1,1/2,1/3,1/4,...).
  * Suppose that r is a sequence of rational numbers r(k) <= 1 for k >= 1, and that x is an irrational number in (0, 1).
  * Let f(0) = x, n(k) = floor(r(k)/f(k-1)), and f(k) = f(k-1) - r(k)/n(k).
  * Then x = r(1)/n(1) + r(2)/n(2) + r(3)/n(3) + ... , the r-Egyptian fraction for x.

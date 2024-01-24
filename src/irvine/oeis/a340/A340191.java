@@ -5,7 +5,7 @@ import irvine.oeis.a063.A063994;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A340191 Difference between A063994 and its M√∂bius transform.
+ * A340191 Difference between A063994 and its M\u00f6bius transform.
  * @author Georg Fischer
  */
 public class A340191 extends TupleTransformSequence {

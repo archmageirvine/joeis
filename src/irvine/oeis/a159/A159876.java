@@ -5,7 +5,7 @@ import irvine.oeis.a005.A005614;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
- * A159876 Inverse Mobius transform of the rabbit sequence, A051731 * A005614
+ * A159876 Inverse Mobius transform of the rabbit sequence, A051731 * A005614.
  * @author Georg Fischer
  */
 public class A159876 extends InverseMobiusTransformSequence {

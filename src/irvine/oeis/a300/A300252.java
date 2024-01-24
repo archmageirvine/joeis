@@ -5,7 +5,7 @@ import irvine.oeis.a003.A003415;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A300252 Difference between arithmetic derivative (A003415) and its M√∂bius transform (A300251).
+ * A300252 Difference between arithmetic derivative (A003415) and its M\u00f6bius transform (A300251).
  * @author Georg Fischer
  */
 public class A300252 extends TupleTransformSequence {

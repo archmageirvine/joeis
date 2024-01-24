@@ -5,7 +5,7 @@ package irvine.oeis.a104;
 import irvine.oeis.a102.A102915;
 
 /**
- * A104045 Numbers n such that n9 is prime and n is a multiple of ten.
+ * A104045 Numbers k such that k9 is prime and k is a multiple of ten.
  * @author Georg Fischer
  */
 public class A104045 extends A102915 {

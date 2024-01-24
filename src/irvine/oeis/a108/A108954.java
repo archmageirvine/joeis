@@ -5,7 +5,7 @@ import irvine.factor.prime.Puma;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A108954 a(n) = pi(2*n) - pi(n). Number of primes in the interval (n, 2n].
+ * A108954 a(n) = pi(2*n) - pi(n). Number of primes in the interval (n,2n].
  * @author Georg Fischer
  */
 public class A108954 extends LambdaSequence {

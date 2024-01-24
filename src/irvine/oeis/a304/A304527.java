@@ -5,7 +5,7 @@ import irvine.oeis.a064.A064664;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A304527 Difference between A064664 (the inverse of EKG-sequence) and its M√∂bius-transform.
+ * A304527 Difference between A064664 (the inverse of EKG-sequence) and its M\u00f6bius-transform.
  * @author Georg Fischer
  */
 public class A304527 extends TupleTransformSequence {

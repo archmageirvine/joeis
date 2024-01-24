@@ -4,7 +4,7 @@ package irvine.oeis.a297;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A297161 Restricted growth sequence transform of A297171, which is M√∂bius transform of A243071.
+ * A297161 Restricted growth sequence transform of A297171, which is M\u00f6bius transform of A243071.
  * @author Georg Fischer
  */
 public class A297161 extends RestrictedGrowthTransformSequence {

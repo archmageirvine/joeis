@@ -5,7 +5,7 @@ package irvine.oeis.a050;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A050868 Numbers n such that 233*2^n-1 is prime.
+ * A050868 Numbers k such that 233*2^k-1 is prime.
  * @author Georg Fischer
  */
 public class A050868 extends PowerFactorPrimeSequence {

@@ -5,7 +5,7 @@ import irvine.factor.prime.Puma;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A129726 a(n) = a(n-1) + prime(n) - prime(n-1) + 2.
+ * A129726 a(n) = a(n-1) + prime(n) - prime(n-1) + 2; a(1) = 2.
  * @author Georg Fischer
  */
 public class A129726 extends TupleTransformSequence {

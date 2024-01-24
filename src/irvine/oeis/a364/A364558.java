@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A364558 a(n) = A364557(n) - A000010(n), where A364557 is the M√∂bius transform of A005941, and A000010 (Euler phi) is the M√∂bius transform of A000027.
+ * A364558 a(n) = A364557(n) - A000010(n), where A364557 is the M\u00f6bius transform of A005941, and A000010 (Euler phi) is the M\u00f6bius transform of A000027.
  * @author Georg Fischer
  */
 public class A364558 extends TupleTransformSequence {

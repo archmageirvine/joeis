@@ -5,7 +5,7 @@ import irvine.oeis.a053.A053644;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A300726 Difference between A053644 (the largest power of 2 less than or equal to n) and its M√∂bius transform.
+ * A300726 Difference between A053644 (the largest power of 2 less than or equal to n) and its M\u00f6bius transform.
  * @author Georg Fischer
  */
 public class A300726 extends TupleTransformSequence {

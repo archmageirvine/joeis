@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 
 /**
- * A269997 Denominators of r-Egyptian fraction expansion for -1 + golden ratio, where r = (1,1/2,1/3,1/4,...)
+ * A269997 Denominators of r-Egyptian fraction expansion for -1 + golden ratio, where r = (1,1/2,1/3,1/4,...).
  * @author Georg Fischer
  */
 public class A269997 extends A269993 {

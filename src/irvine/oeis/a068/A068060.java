@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068080.
+ * A068060 Number of subsets of {1, 2, ..., n} that do not contain a subset of the form {x, 2x, 3x}.
  * @author Sean A. Irvine
  */
 public class A068060 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a304.A304526;
 
 /**
- * A327867 Even bisection of M√∂bius transform of A064664, the inverse of EKG-sequence.
+ * A327867 Even bisection of M\u00f6bius transform of A064664, the inverse of EKG-sequence.
  * @author Georg Fischer
  */
 public class A327867 extends FilterSequence {

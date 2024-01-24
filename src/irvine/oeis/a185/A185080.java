@@ -5,7 +5,7 @@ package irvine.oeis.a185;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A185080 6 * binomial(2*n,n-1) + binomial(2*n-1,n).
+ * A185080 a(n) = 6 * binomial(2*n,n-1) + binomial(2*n-1,n).
  * @author Georg Fischer
  */
 public class A185080 extends HolonomicRecurrence {

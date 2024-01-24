@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A304528 Restricted growth sequence transform of A304526, which is M√∂bius transform of A064664, the inverse of EKG-sequence.
+ * A304528 Restricted growth sequence transform of A304526, which is M\u00f6bius transform of A064664, the inverse of EKG-sequence.
  * @author Georg Fischer
  */
 public class A304528 extends RestrictedGrowthTransformSequence {

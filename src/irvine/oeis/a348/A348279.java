@@ -5,7 +5,7 @@ import irvine.oeis.a190.A190116;
 import irvine.oeis.transform.InverseMobiusTransformSequence;
 
 /**
- * A348279 a(n) = Sum_{d|n} d*d&apos;, where d&apos; is the arithmetic derivative of d (A003415).
+ * A348279 a(n) = Sum_{d|n} d*d', where d' is the arithmetic derivative of d (A003415).
  * @author Georg Fischer
  */
 public class A348279 extends InverseMobiusTransformSequence {

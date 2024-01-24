@@ -6,7 +6,7 @@ import irvine.oeis.a055.A055881;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A249151 Largest m such that m! divides the product of elements on row n of Pascal&apos;s triangle: a(n) = A055881(A001142(n)).
+ * A249151 Largest m such that m! divides the product of elements on row n of Pascal's triangle: a(n) = A055881(A001142(n)).
  * @author Georg Fischer
  */
 public class A249151 extends DirectTransformSequence {

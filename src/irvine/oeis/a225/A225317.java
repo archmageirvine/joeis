@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a127.A127544;
 
 /**
- * A225317 Numbers n such that 10n is a partition number.
+ * A225317 Numbers k such that 10k is a partition number.
  * @author Georg Fischer
  */
 public class A225317 extends AbstractSequence {

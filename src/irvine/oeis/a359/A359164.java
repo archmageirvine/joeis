@@ -6,7 +6,7 @@ import irvine.oeis.a349.A349136;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A359164 Difference between Kimberling&apos;s paraphrases and its M√∂bius transform.
+ * A359164 Difference between Kimberling's paraphrases and its M\u00f6bius transform.
  * @author Georg Fischer
  */
 public class A359164 extends TupleTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Fibonacci;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A113195 a(n) = product{p=primes} F(p^(m_{n,p})), where p^(m_{n,p}) is highest power of p dividing n, m= nonnegative integer and F(k) is the k-th Fibonacci number.
+ * A113195 a(n) = Product_{p primes} F(p^(m_{n,p})), where p^(m_{n,p}) is highest power of p dividing n, m = nonnegative integer and F(k) is the k-th Fibonacci number.
  * @author Georg Fischer
  */
 public class A113195 extends MultiplicativeSequence {

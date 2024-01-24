@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006689;
 
 /**
- * A082166 A006689(n)/n^2.
+ * A082166 a(n) = A006689(n)/n^2.
  * @author Georg Fischer
  */
 public class A082166 extends Sequence1 {

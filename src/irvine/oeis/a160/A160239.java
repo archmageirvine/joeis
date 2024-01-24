@@ -5,7 +5,7 @@ import irvine.oeis.a246.A246030;
 import irvine.oeis.transform.RunLengthTransformSequence;
 
 /**
- * A160239 Number of &quot;ON&quot; cells in a 2-dimensional cellular automaton (&quot;Fredkin&apos;s Replicator&quot;) evolving according to the rule that a cell is ON in a given generation if and only if there was an odd number of ON cells among the eight nearest neighbors in the precedin
+ * A160239 Number of "ON" cells in a 2-dimensional cellular automaton ("Fredkin's Replicator") evolving according to the rule that a cell is ON in a given generation if and only if there was an odd number of ON cells among the eight nearest neighbors in the preceding generation, starting with one ON cell.
  * @author Georg Fischer
  */
 public class A160239 extends RunLengthTransformSequence {

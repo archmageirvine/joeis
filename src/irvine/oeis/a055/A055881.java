@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
 public class A055881 extends Sequence1 implements DirectSequence {
 
   private int mN = 0;
-  private static final long[] FACTORIAL = new long[] {1, 1, 2, 6, 24,
+  private static final long[] FACTORIAL = {1, 1, 2, 6, 24,
     120, 720, 5040, 40320, 362880, 3628800, 39916800, 479001600, 6227020800L, 87178291200L, 1307674368000L,
     20922789888000L, 355687428096000L, 6402373705728000L, 121645100408832000L, 2432902008176640000L // 20!
   };

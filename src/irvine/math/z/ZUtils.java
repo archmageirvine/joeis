@@ -52,6 +52,7 @@ public final class ZUtils {
   }
 
   private static void digitCounts(final int[] counts, long v, final int base) {
+    assert v >= 0 : String.valueOf(v);
     while (v != 0) {
       ++counts[(int) (v % base)];
       v /= base;
@@ -1389,5 +1390,32 @@ public final class ZUtils {
       }
     }
     return true;
+  }
+
+  /**
+   * Rotate the given number one place to the right.
+   * @param n number to rotate
+   * @param base base of rotation
+   * @return rotated number
+   */
+  public static Z rotateRight(final Z n, final long base) {
+    final Z[] qr = n.divideAndRemainder(Z.valueOf(base));
+    if (qr[1].isZero()) {
+      return qr[0];
+    }
+    Z mul = Z.ONE;
+    while (mul.compareTo(qr[0]) <= 0) {
+      mul = mul.multiply(base);
+    }
+    return qr[1].multiply(mul).add(qr[0]);
+  }
+
+  /**
+   * Rotate the given number one place to the right in base 10.
+   * @param n number to rotate
+   * @return rotated number
+   */
+  public static Z rotateRight(final Z n) {
+    return rotateRight(n, 10);
   }
 }

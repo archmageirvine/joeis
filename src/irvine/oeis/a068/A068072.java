@@ -11,7 +11,7 @@ import irvine.util.Permutation;
 import irvine.util.string.StringUtils;
 
 /**
- * A068072.
+ * A068072 Number of Pluperfect Digital Invariants base n.
  * @author Sean A. Irvine
  */
 public class A068072 extends Sequence2 implements Conjectural {

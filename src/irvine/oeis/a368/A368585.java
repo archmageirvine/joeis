@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A368585 a(n) = n! * Sum_{k=0..n} (-1)^(n-k) * binomial(k+2, 3) / k!.
+ * A368585 a(n) = n! * Sum_{k=0..n} (-1)^(n-k) * binomial(k+2,3) / k!.
  * @author Georg Fischer
  */
 public class A368585 extends LambdaSequence {

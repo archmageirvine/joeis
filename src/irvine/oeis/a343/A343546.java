@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A343546 a(n) = n * Sum_{d|n} binomial(d+4, 5)/d.
+ * A343546 a(n) = n * Sum_{d|n} binomial(d+4,5)/d.
  * @author Georg Fischer
  */
 public class A343546 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A365439 a(n) = Sum_{k=1..n} binomial(floor(n/k)+4, 5).
+ * A365439 a(n) = Sum_{k=1..n} binomial(floor(n/k)+4,5).
  * @author Georg Fischer
  */
 public class A365439 extends LambdaSequence {

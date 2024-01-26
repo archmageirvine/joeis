@@ -8,7 +8,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A368762 a(n) = n! * (1 + Sum_{k=0..n} binomial(k+1, 2) / k!).
+ * A368762 a(n) = n! * (1 + Sum_{k=0..n} binomial(k+1,2) / k!).
  * @author Georg Fischer
  */
 public class A368762 extends LambdaSequence {

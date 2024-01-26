@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060032 Ana sequence.
+ * A060032 Fixed point of the morphism 1 -&gt; 121, 2 -&gt; 122, starting from 1.
  * @author Georg Fischer
  */
 public class A060032 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068072.
+ * A068075 Lesser of a primitive pair such that n and its 10's complement are simultaneously square.
  * @author Sean A. Irvine
  */
 public class A068075 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A366937 a(n) = Sum_{k=1..n} (-1)^(k-1) * binomial(k+1, 2) * floor(n/k).
+ * A366937 a(n) = Sum_{k=1..n} (-1)^(k-1) * binomial(k+1,2) * floor(n/k).
  * @author Georg Fischer
  */
 public class A366937 extends LambdaSequence {

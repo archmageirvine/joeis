@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A368537 a(n) = Sum_{k=1..n} binomial(k+2, 3) * n^k.
+ * A368537 a(n) = Sum_{k=1..n} binomial(k+2,3) * n^k.
  * @author Georg Fischer
  */
 public class A368537 extends LambdaSequence {

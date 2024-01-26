@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068070.
+ * A068070 Number of digits in 10^n-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A068070 extends Sequence0 {

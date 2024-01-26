@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A368534 a(n) = Sum_{k=1..n} binomial(k+1, 2) * n^(n-k).
+ * A368534 a(n) = Sum_{k=1..n} binomial(k+1,2) * n^(n-k).
  * @author Georg Fischer
  */
 public class A368534 extends LambdaSequence {

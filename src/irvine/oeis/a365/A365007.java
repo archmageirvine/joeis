@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A365007 a(n) = Sum_{d|n} (-1)^(n/d-1) * binomial(d+1, 2).
+ * A365007 a(n) = Sum_{d|n} (-1)^(n/d-1) * binomial(d+1,2).
  * @author Georg Fischer
  */
 public class A365007 extends LambdaSequence {

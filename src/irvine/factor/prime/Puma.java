@@ -9,11 +9,13 @@ import irvine.util.array.LongDynamicLongArray;
  */
 public final class Puma {
 
-  private Puma() { }
+  private Puma() {
+  }
 
   private static final Fast GENERATOR = new Fast();
   private static final LongDynamicLongArray PRIMES = new LongDynamicLongArray();
   private static final LongDynamicLongArray PRIME_PI = new LongDynamicLongArray();
+
   static {
     PRIMES.set(0, 1L);
     PRIME_PI.set(2, 1L);
@@ -171,4 +173,39 @@ public final class Puma {
     return Puma.primePiZ(p).isProbablePrime();
   }
 
+  /**
+   * Return the smallest prime starting with the specified value where
+   * the additional part does not start with the prohibited value.
+   * @param n prefix
+   * @param prohibited prohibited extension
+   * @return smallest such prime
+   */
+  public static Z smallestPrimeBeginningWith(final String n, final String prohibited) {
+    if (n.isEmpty()) {
+      return "2".equals(prohibited) ? Z.THREE : Z.TWO;
+    }
+    Z t = new Z(n);
+    if (t.isZero() && !"2".equals(prohibited)) {
+      return Z.TWO; // only possible even case
+    }
+    if (t.isProbablePrime()) {
+      return t;
+    }
+    long k = 0;
+    long oldLim = 1;
+    long lim = 1;
+    while (true) {
+      k += 2;
+      if (k >= lim) {
+        oldLim = lim;
+        lim *= 10;
+        k = 1;
+        t = t.multiply(10);
+      }
+      final Z u = t.add(k);
+      if (u.isProbablePrime() && (k < oldLim || !String.valueOf(k).startsWith(prohibited))) {
+        return u;
+      }
+    }
+  }
 }

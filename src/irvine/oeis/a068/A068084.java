@@ -17,7 +17,7 @@ public class A068084 extends Sequence1 {
   public Z next() {
     Z u = Z.valueOf(4 * (++mN + 1));
     Z v = Z.valueOf(2 * (mN + 1)).square().subtract(1);
-    Z t = Z.valueOf(mN).multiply(4 * (mN + 1));
+    final Z t = Z.valueOf(mN).multiply(4 * (mN + 1));
     while (true) {
       if (v.mod(t).isZero()) {
         return v.divide(8);

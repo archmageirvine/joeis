@@ -15,7 +15,6 @@ public class A068120 extends Sequence1 {
   @Override
   public Z next() {
     final String d = String.valueOf(++mN);
-    final String s = d.repeat(mN);
-    return Puma.smallestPrimeBeginningWith(s, d);
+    return Puma.smallestPrimeBeginningWith(d.repeat(mN), d);
   }
 }

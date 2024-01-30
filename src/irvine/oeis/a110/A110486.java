@@ -1,4 +1,4 @@
-package irvine.oeis.a068;
+package irvine.oeis.a110;
 
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
@@ -8,13 +8,14 @@ import irvine.oeis.a007.A007908;
  * A068109.
  * @author Sean A. Irvine
  */
-public class A068136 extends A007908 {
+public class A110486 extends A007908 {
 
   @Override
   public Z next() {
     final Z c = super.next();
-    if (Fibonacci.inverseFibonacci(c) >= 0) {
-      return c;
+    final int index = Fibonacci.inverseFibonacci(c);
+    if (index >= 0) {
+      return Z.valueOf(index);
     }
     Z lo = c;
     Z hi = c;
@@ -23,15 +24,15 @@ public class A068136 extends A007908 {
       hi = hi.multiply(10).add(9);
       final int i = Fibonacci.inverseFibonacci(lo);
       if (i >= 0) {
-        return lo;
+        return Z.valueOf(i);
       }
       final Z t1 = Fibonacci.fibonacci(-i);
       if (t1.compareTo(lo) > 0 && t1.compareTo(hi) <= 0) {
-        return t1;
+        return Z.valueOf(-i);
       }
       final Z t2 = Fibonacci.fibonacci(1 - i);
       if (t2.compareTo(hi) <= 0) {
-        return t2;
+        return Z.valueOf(1 - i);
       }
     }
   }

@@ -208,4 +208,30 @@ public final class Puma {
       }
     }
   }
+
+  /**
+   * Smallest prime ending with a given value
+   * @param n suffix
+   * @return smallest such prime
+   */
+  public static Z smallestPrimeEndingWith(final Z n) {
+    if (n.isProbablePrime()) {
+      return n;
+    }
+    if (n.isEven() || n.mod(10) == 5) {
+      return null; // impossible
+    }
+    Z mul = Z.ONE;
+    while (n.compareTo(mul) >= 0) {
+      mul = mul.multiply(10);
+    }
+    Z k = mul;
+    while (true) {
+      final Z u = k.add(n);
+      if (u.isProbablePrime()) {
+        return u;
+      }
+      k = k.add(mul);
+    }
+  }
 }

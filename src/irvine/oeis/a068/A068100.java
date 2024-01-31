@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A068092.
+ * A068100 a(1) = 1; a(n+1) = n!*Sum_{k|n} a(k)/k!.
  * @author Sean A. Irvine
  */
 public class A068100 extends CachedSequence {

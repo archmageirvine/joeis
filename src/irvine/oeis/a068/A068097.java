@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068092.
+ * A068097 a(1) = 1; a(n+1) = smallest triangular numbers starting with a(n).
  * @author Sean A. Irvine
  */
 public class A068097 extends Sequence1 {

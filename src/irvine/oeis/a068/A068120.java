@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065584.
+ * A068120 Smallest prime beginning with exactly n n's.
  * @author Sean A. Irvine
  */
 public class A068120 extends Sequence1 {

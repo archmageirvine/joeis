@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007908;
 
 /**
- * A068109.
+ * A068121 Smallest n-th power beginning with the concatenation of first n natural numbers.
  * @author Sean A. Irvine
  */
 public class A068121 extends A007908 {

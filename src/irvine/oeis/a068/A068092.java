@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068092.
+ * A068092 Index of smallest triangular number with n digits.
  * @author Sean A. Irvine
  */
 public class A068092 extends Sequence1 {

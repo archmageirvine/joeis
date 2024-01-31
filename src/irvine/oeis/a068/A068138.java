@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A068109.
+ * A068138 Primes in the mirror concatenation of primes without reversal.
  * @author Sean A. Irvine
  */
 public class A068138 extends A000040 {

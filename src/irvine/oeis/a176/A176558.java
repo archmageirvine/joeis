@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A176558 Replace n with the reverse concatenation of divisors of n.
+ * A176558 a(n) is the reverse concatenation of divisors of n.
  * @author Sean A. Irvine
  */
 public class A176558 extends Sequence1 {

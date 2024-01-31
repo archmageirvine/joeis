@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068109.
+ * A068110 Denominators of coefficients in J0(i*sqrt(x))^2 power series where J0 denotes the ordinary Bessel function of order 0.
  * @author Sean A. Irvine
  */
 public class A068110 extends Sequence0 {

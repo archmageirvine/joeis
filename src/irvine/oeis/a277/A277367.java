@@ -6,7 +6,7 @@ import irvine.oeis.a006.A006667;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A277367 a(n) = gcd(A006666(n), A006667(n)) where A006666 and A006667 are respectively the number of halving and tripling steps in the &apos;3x+1&apos; problem.
+ * A277367 a(n) = gcd(A006666(n), A006667(n)) where A006666 and A006667 are respectively the number of halving and tripling steps in the '3x+1' problem.
  * @author Georg Fischer
  */
 public class A277367 extends TupleTransformSequence {

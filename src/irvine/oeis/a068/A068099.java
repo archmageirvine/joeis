@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A068092.
+ * A068099 a(1) = 1; a(n+1) = n! sum{k|n} a(k)/k where sum is over positive divisors k of n.
  * @author Sean A. Irvine
  */
 public class A068099 extends CachedSequence {

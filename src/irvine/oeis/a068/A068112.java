@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068109.
+ * A068112 Denominator of coefficient of (-x^2)^n in F(x)*F(-x) where F(x)=sum(k&gt;=0,x^k/(k!)^3).
  * @author Sean A. Irvine
  */
 public class A068112 extends Sequence0 {

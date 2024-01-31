@@ -4,7 +4,7 @@ import irvine.oeis.a005.A005478;
 import irvine.oeis.closure.MultiplicativeClosureSequence;
 
 /**
- * A068092.
+ * A068095 All primes dividing each term are Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A068095 extends MultiplicativeClosureSequence {

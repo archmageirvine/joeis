@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A366897 allocated for Jean-Marc Rebert.
+ * A366897 Brilliant 10-pandigital number (semiprimes whose prime factors are 6-digit numbers) whose prime factors are together 10-pandigital.
  * @author Sean A. Irvine
  */
 public class A366897 extends Sequence1 {

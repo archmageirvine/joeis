@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007908;
 
 /**
- * A068109.
+ * A068136 First Fibonacci number beginning with concatenation of first n natural numbers.
  * @author Sean A. Irvine
  */
 public class A068136 extends A007908 {

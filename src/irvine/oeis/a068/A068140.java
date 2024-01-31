@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a046.A046099;
 
 /**
- * A068109.
+ * A068140 Smaller of two consecutive numbers each divisible by a cube greater than one.
  * @author Sean A. Irvine
  */
 public class A068140 extends Sequence1 {

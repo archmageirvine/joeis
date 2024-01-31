@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068092.
+ * A068103 Smallest prime starting with at least n 2s.
  * @author Sean A. Irvine
  */
 public class A068103 extends Sequence0 {

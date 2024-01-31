@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
 /**
- * A068092.
+ * A068104 Smallest prime starting with n 3s.
  * @author Sean A. Irvine
  */
 public class A068104 extends A068103 {

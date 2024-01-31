@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 
 /**
- * A068109.
+ * A068125 Possible final digits of a triangular number.
  * @author Sean A. Irvine
  */
 public class A068125 extends Sequence1 {

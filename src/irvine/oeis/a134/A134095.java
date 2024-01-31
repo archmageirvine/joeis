@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A134095 E.g.f.: A(x) = 1/(1 - LambertW(-x)^2).
+ * A134095 Expansion of e.g.f. A(x) = 1/(1 - LambertW(-x)^2).
  * @author Georg Fischer
  */
 public class A134095 extends LambdaSequence {

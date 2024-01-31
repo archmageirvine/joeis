@@ -4,7 +4,7 @@ package irvine.oeis.a350;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A350054 a(n) = (4^(3*n+2) - 7)/9, n &gt;= 1.
+ * A350054 a(n) = (4^(3*n+2) - 7)/9.
  * @author Georg Fischer
  */
 public class A350054 extends HolonomicRecurrence {

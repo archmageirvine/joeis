@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A105610 Numbers n such that both p1=2n+3 and p2=4n+5 are primes.
+ * A105610 Numbers k such that both p1=2k+3 and p2=4k+5 are primes.
  * @author Georg Fischer
  */
 public class A105610 extends PrimeConditionListSequence {

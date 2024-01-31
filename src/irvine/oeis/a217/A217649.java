@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A217649 a(n) = n!! mod n!!!
+ * A217649 a(n) = n!! mod n!!!.
  * @author Georg Fischer
  */
 public class A217649 extends LambdaSequence {

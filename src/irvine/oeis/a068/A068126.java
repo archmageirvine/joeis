@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
 
 /**
- * A068109.
+ * A068126 Smallest triangular numbers with possible initial (least significant) digits.
  * @author Sean A. Irvine
  */
 public class A068126 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068109.
+ * A068123 Smallest n-th power beginning with n copies of n.
  * @author Sean A. Irvine
  */
 public class A068123 extends Sequence1 {

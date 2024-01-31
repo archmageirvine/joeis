@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A289684 Mixing moments for the waiting time in a M/G/1 waiting queue.
+ * A289684 Mixing moments for the waiting time in an M/G/1 waiting queue.
  * @author Georg Fischer
  */
 public class A289684 extends HolonomicRecurrence {

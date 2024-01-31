@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000217;
 
 /**
- * A068109.
+ * A068134 Index of the smallest triangular number with digit sum = n-th triangular number.
  * @author Sean A. Irvine
  */
 public class A068134 extends A000217 {

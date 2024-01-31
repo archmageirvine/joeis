@@ -4,7 +4,7 @@ package irvine.oeis.a155;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A155459 a(n)=7*a(n-1)+36*a(n-2), n&gt;2 ; a(0)=1, a(1)=1, a(2)=7 .
+ * A155459 a(n) = 7*a(n-1)+36*a(n-2), n&gt;2 ; a(0)=1, a(1)=1, a(2)=7 .
  * @author Georg Fischer
  */
 public class A155459 extends GeneratingFunctionSequence {

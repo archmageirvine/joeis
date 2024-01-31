@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068109.
+ * A068109 a(1) = 0, a(2) = 1, a(n) = concatenate(a(n-1) and a(n-2)) - a(n-1).
  * @author Sean A. Irvine
  */
 public class A068109 extends Sequence1 {

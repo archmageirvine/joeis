@@ -6,7 +6,7 @@ import irvine.oeis.a009.A009003;
 import irvine.oeis.a009.A009012;
 
 /**
- * A074236 Numbers that can be the larger leg of some integer right triangle and hypotenuse of some other integer right triangle.
+ * A074236 Numbers that are the long leg of some integer right triangle and the hypotenuse of some other integer right triangle.
  * @author Georg Fischer
  */
 public class A074236 extends IntersectionSequence {

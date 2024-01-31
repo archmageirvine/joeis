@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A068092.
+ * A068093 Smallest n-digit triangular number.
  * @author Sean A. Irvine
  */
 public class A068093 extends SimpleTransformSequence {

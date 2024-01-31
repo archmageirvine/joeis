@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068109.
+ * A068119 Number of steps to reach an integer starting with n + 1/4 and iterating the map x -&gt; x*ceiling(x).
  * @author Sean A. Irvine
  */
 public class A068119 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A052187 Smallest prime p such that p, p+d, and p+2d are consecutive primes for each possible d either 2 or divisible by 6.
+ * A052187 a(n) is the smallest prime p such that p, p+d, and p+2d are consecutive primes where d = 2 for n = 1 and d = 6*(n-1) for n &gt; 1.
  * @author Sean A. Irvine
  */
 public class A052187 extends Sequence1 {

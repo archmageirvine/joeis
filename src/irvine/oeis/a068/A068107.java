@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068092.
+ * A068107 a(n) = n!*Sum_{k=1..n} mu(k)/k!, where mu(k) is the Moebius function.
  * @author Sean A. Irvine
  */
 public class A068107 extends Sequence1 {

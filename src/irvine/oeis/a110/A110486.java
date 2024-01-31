@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007908;
 
 /**
- * A068109.
+ * A110486 Indices of Fibonacci numbers in A068136(n); that is, a(n) = least k such that the digits of Fibonacci(k) begin with the concatenation 1234..n.
  * @author Sean A. Irvine
  */
 public class A110486 extends A007908 {

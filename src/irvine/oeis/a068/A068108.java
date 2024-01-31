@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A068092.
+ * A068108 a(1) = 1; a(n+1) = sum{k|n k&lt;=sqrt(n)} a(k) where sum is over the positive divisors k of n with k &lt;= sqrt(n).
  * @author Sean A. Irvine
  */
 public class A068108 extends CachedSequence {

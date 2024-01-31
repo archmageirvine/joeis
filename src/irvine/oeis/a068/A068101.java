@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068092.
+ * A068101 a(n) = Sum_{k|n, k&lt;=sqrt(n)} mu(k) where mu(k) is the Moebius function and the sum is over the positive divisors k of n with k &lt;= sqrt(n).
  * @author Sean A. Irvine
  */
 public class A068101 extends Sequence1 {

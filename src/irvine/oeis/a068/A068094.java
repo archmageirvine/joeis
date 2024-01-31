@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A068092.
+ * A068094 Number of n-digit triangular numbers.
  * @author Sean A. Irvine
  */
 public class A068094 extends DifferenceSequence {

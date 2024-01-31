@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.GeneralizedEulerTransform;
 
 /**
- * A075900 G.f.: Product_{n&gt;0} 1/(1 - 2^(n-1)*x^n).
+ * A075900 Expansion of g.f.: Product_{n&gt;0} 1/(1 - 2^(n-1)*x^n).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-2^(k-1)*x^k))</code>
  * @author Georg Fischer
  */

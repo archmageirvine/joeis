@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A129369 Expansion of 1/sqrt(1-4x)-x/sqrt(1-4x^2).
+ * A129369 Expansion of 1/sqrt(1-4*x) - x/sqrt(1-4*x^2).
  * @author Sean A. Irvine
  */
 public class A129369 extends DifferenceSequence {

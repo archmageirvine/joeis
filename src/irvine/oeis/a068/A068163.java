@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068163 Smallest prime beginning and ending in at least n nine's.
+ * A068163 Smallest prime beginning and ending in at least n 9's.
  * @author Sean A. Irvine
  */
 public class A068163 extends Sequence1 {

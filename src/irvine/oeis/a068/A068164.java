@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068090.
+ * A068164 Smallest prime obtained from n by inserting zero or more decimal digits.
  * @author Sean A. Irvine
  */
 public class A068164 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068162 Smallest prime beginning and ending in at least n seven's.
+ * A068162 Smallest prime beginning and ending in at least n 7's.
  * @author Sean A. Irvine
  */
 public class A068162 extends Sequence1 {

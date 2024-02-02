@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A055463 a(n) = a(n-1)*2*a(n-2)-3*a(n-3).
+ * A055463 a(n) = 2*a(n-1)*a(n-2) - 3*a(n-3), with a(0) = 0, a(1) = 1, a(2) = 2.
  * @author Sean A. Irvine
  */
 public class A055463 extends Sequence0 {

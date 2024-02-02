@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A001464 Expansion of e.g.f. exp( -x -(1/2)*x^2 ).
+ * A001464 Expansion of e.g.f. exp(-x - (1/2)*x^2).
  * @author Sean A. Irvine
  */
 public class A001464 extends AbstractSequence {

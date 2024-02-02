@@ -4,24 +4,25 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
 /**
  * A067734 Number of ways writing n as a product of decimal digits of some other number which has no digits equal to 1.
  * @author Sean A. Irvine
  */
-public class A067734 extends Sequence1 {
+public class A067734 extends Sequence1 implements DirectSequence {
 
   // After Max Alekseyev
 
   private long mN = 0;
 
   @Override
-  public Z next() {
-    if (++mN == 1) {
+  public Z a(final Z n) {
+    if (Z.ONE.equals(n)) {
       return Z.ZERO;
     }
-    final FactorSequence fs = Jaguar.factor(mN);
+    final FactorSequence fs = Jaguar.factor(n);
     final Z[] p = fs.toZArray();
     if (p[p.length - 1].compareTo(Z.SEVEN) > 0) {
       return Z.ZERO;
@@ -40,5 +41,15 @@ public class A067734 extends Sequence1 {
       }
     }
     return r;
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
+  @Override
+  public Z next() {
+    return a(Z.valueOf(++mN));
   }
 }

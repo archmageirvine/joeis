@@ -6,7 +6,7 @@ package irvine.oeis.a129;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A129368 a(n)=sum{k=floor((n+1)/2)..n, C(2k,k)}.
+ * A129368 a(n) = Sum_{k=floor((n+1)/2)..n} binomial(2*k,k).
  * @author Georg Fischer
  */
 public class A129368 extends HolonomicRecurrence {

@@ -12,7 +12,7 @@ public class A136157 extends ToeplitzTriangle {
 
   /** Construct the sequence. */
   public A136157() {
-    super(1, new PaddingSequence("3,1", "0"));
+    super(0, new PaddingSequence("3, 1", "0"));
   }
 }
 

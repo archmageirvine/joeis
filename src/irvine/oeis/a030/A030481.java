@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 public class A030481 extends A030480 {
 
   {
-    setOffset(0);
+    setOffset(1);
   }
 
   @Override

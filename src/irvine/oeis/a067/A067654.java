@@ -5,13 +5,13 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A067654 Numerators of the coefficients in power series expansion of exp(2x/(1-x)).
  * @author Sean A. Irvine
  */
-public class A067654 extends Sequence0 {
+public class A067654 extends Sequence1 {
 
   private int mN = 0;
 

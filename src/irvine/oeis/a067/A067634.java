@@ -10,10 +10,15 @@ import irvine.oeis.Sequence3;
  */
 public class A067634 extends PrependSequence {
 
+  {
+    setOffset(1);
+  }
+
   /** Construct the sequence. */
   public A067634() {
     super(new Sequence3() {
       private Z mA = null;
+
       @Override
       public Z next() {
         mA = mA == null ? Z.valueOf(13) : mA.multiply(10);

@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A001195 a(n) = floor(n*log((14/11)*n^(10/9))).
  * @author Sean A. Irvine
  */
-public class A001195 extends Sequence0 {
+public class A001195 extends Sequence1 {
 
   private static final double LOG_CONST = Math.log(14) - Math.log(11);
 

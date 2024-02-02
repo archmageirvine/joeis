@@ -2,13 +2,13 @@ package irvine.oeis.a067;
 
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.Sequence1;
 
 /**
  * A067319 Numbers n such that phi(n)^phi(n)+1 is prime.
  * @author Sean A. Irvine
  */
-public class A067319 extends Sequence0 {
+public class A067319 extends Sequence1 {
 
   private long mN = 0;
 

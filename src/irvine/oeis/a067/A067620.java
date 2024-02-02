@@ -3,13 +3,13 @@ package irvine.oeis.a067;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence2;
 
 /**
  * A067620 a(n) = p^e, where p and e are the rounded means of the prime factors p_i and the exponents e_i, respectively, in the factorization n = p_1^e_1 * ... * p_r^e_r of n into distinct primes p_i. Each mean is rounded to the nearest integer, rounding up if there's a choice.
  * @author Sean A. Irvine
  */
-public class A067620 extends Sequence1 {
+public class A067620 extends Sequence2 {
 
   private long mN = 1;
 

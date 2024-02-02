@@ -9,12 +9,12 @@ import irvine.oeis.AbstractSequence;
  */
 public class A036301 extends AbstractSequence {
 
-  private long mN = -1;
+  private long mN = 0;
   private int mDiff;
 
   /** Construct the sequence. */
   public A036301() {
-    this(0, 0);
+    this(1, 0);
   }
 
   /**
@@ -24,7 +24,7 @@ public class A036301 extends AbstractSequence {
    */
   public A036301(final int offset, final int diff) {
     super(offset);
-    mN = offset - 1;
+    mN = -1;
     mDiff = diff;
   }
 

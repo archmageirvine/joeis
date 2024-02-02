@@ -11,12 +11,13 @@ import irvine.oeis.Sequence1;
  */
 public class A067715 extends Sequence1 {
 
-  private long mN = 1;
+  private long mN = 2;
 
   @Override
   public Z next() {
     while (true) {
-      if (CR.valueOf(Jaguar.factor(++mN).bigOmega()).compareTo(CR.valueOf(mN).log()) < 0) {
+      ++mN;
+      if (CR.valueOf(Jaguar.factor(mN).bigOmega()).compareTo(CR.valueOf(mN).log()) < 0) {
         return Z.valueOf(mN);
       }
     }

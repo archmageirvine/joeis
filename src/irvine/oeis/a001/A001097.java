@@ -23,7 +23,7 @@ public class A001097 extends AbstractSequence {
     super(1);
   }
 
-  private final Fast mPrime = new Fast();
+  protected final Fast mPrime = new Fast();
   private Z mN = Z.TWO;
 
   @Override

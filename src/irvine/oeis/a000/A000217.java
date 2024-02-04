@@ -2,12 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A000217 Triangular numbers: a(n) = binomial(n+1,2) = n*(n+1)/2 = 0 + 1 + 2 + ... + n.
  * @author Sean A. Irvine
  */
-public class A000217 extends AbstractSequence {
+public class A000217 extends AbstractSequence implements DirectSequence {
 
   /** Construct the sequence. */
   public A000217() {
@@ -30,6 +31,16 @@ public class A000217 extends AbstractSequence {
    * @return triangular number
    */
   public static Z triangular(final long n) {
+    return Z.valueOf(n).multiply(n + 1).divide2();
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return n.multiply(n.add(1)).divide2();
+  }
+
+  @Override
+  public Z a(final int n) {
     return Z.valueOf(n).multiply(n + 1).divide2();
   }
 

@@ -41,8 +41,13 @@ public class A006068 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return a(n.intValueExact());
+    Z t = n;
+    Z r = Z.ZERO;
+    while (!t.isZero()) {
+      r = r.xor(t);
+      t = t.shiftRight(1);
+    }
+    return r;
   }
-
 }
 

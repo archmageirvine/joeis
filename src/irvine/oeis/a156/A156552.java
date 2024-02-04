@@ -1,5 +1,5 @@
 package irvine.oeis.a156;
-// manually at 2024-01-17
+// manually at 2024-01-17; corr. 2024-02-03
 
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
@@ -15,7 +15,7 @@ public class A156552 extends A005941 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return super.a(n).add(1);
+    return super.a(n).subtract(1);
   }
 
   @Override

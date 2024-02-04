@@ -1,13 +1,15 @@
 package irvine.oeis.a000;
 
+import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A000720 pi(n), the number of primes &lt;= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
  * @author Sean A. Irvine
  */
-public class A000720 extends AbstractSequence {
+public class A000720 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -24,6 +26,16 @@ public class A000720 extends AbstractSequence {
 
   protected Z mN = Z.ZERO;
   private Z mP = Z.ZERO;
+
+  @Override
+  public Z a(final Z n) {
+    return Puma.primePiZ(n);
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
 
   @Override
   public Z next() {

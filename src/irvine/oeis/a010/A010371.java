@@ -1,24 +1,15 @@
 package irvine.oeis.a010;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.a006.A006942;
 
 /**
- * A010371 Number of segments used to represent n on a 7-segment calculator display; version where '6', '7' and '9' use 6, 4 and 6 segments, respectively.
+ * A010371 Number of segments used to represent n on a 7-segment calculator display;
+ * version where '6', '7' and '9' use 6, 4 and 6 segments, respectively.
  * @author Sean A. Irvine
  */
-public class A010371 extends Sequence0 {
+public class A010371 extends A006942 {
 
-  private static final int[] SEGMENTS = {6, 2, 5, 5, 4, 5, 6, 4, 7, 6};
-  private long mN = -1;
-
-  @Override
-  public Z next() {
-    final String s = String.valueOf(++mN);
-    long sum = 0;
-    for (int k = 0; k < s.length(); ++k) {
-      sum += SEGMENTS[s.charAt(k) - '0'];
-    }
-    return Z.valueOf(sum);
+  public A010371() {
+    super(0, new int[] {6, 2, 5, 5, 4, 5, 6, 4, 7, 6});
   }
 }

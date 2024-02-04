@@ -10,26 +10,11 @@ import irvine.oeis.DirectSequence;
  */
 public class A049502 extends AbstractSequence implements DirectSequence {
 
-  private long mN = -1;
+  private int mN = -1;
 
   /** Construct the sequence. */
   public A049502() {
     super(0);
-  }
-
-  @Override
-  public Z next() {
-    long m = ++mN;
-    long sum = 0;
-    long k = 1;
-    while (m > 1) {
-      if ((m & 3) == 1) {
-        sum += k;
-      }
-      ++k;
-      m >>>= 1;
-    }
-    return Z.valueOf(sum);
   }
 
   @Override
@@ -49,7 +34,21 @@ public class A049502 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return a(n.intValueExact());
+    Z m = n;
+    Z sum = Z.ZERO;
+    long k = 1;
+    while (m.compareTo(Z.ONE) > 0) {
+      if (m.mod(Z.THREE).equals(Z.ONE)) {
+        sum = sum.add(k);
+      }
+      ++k;
+      m = m.shiftRight(1);
+    }
+    return sum;
   }
 
+  @Override
+  public Z next() {
+    return a(++mN);
+  }
 }

@@ -2,12 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A000079 Powers of 2: a(n) = 2^n.
  * @author Sean A. Irvine
  */
-public class A000079 extends AbstractSequence {
+public class A000079 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -23,6 +24,16 @@ public class A000079 extends AbstractSequence {
   }
 
   private Z mN = null;
+
+  @Override
+  public Z a(final Z n) {
+    return Z.ONE.shiftLeft(n.intValueExact());
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Z.ONE.shiftLeft(n);
+  }
 
   @Override
   public Z next() {

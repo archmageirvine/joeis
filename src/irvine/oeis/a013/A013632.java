@@ -14,7 +14,7 @@ import irvine.oeis.DirectSequence;
 public class A013632 extends AbstractSequence implements DirectSequence {
 
   private final Prime mPrime = new Fast();
-  private long mN = -1;
+  private int mN = -1;
 
   /** Construct the sequence. */
   public A013632() {
@@ -23,7 +23,7 @@ public class A013632 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(mPrime.nextPrime(++mN) - mN);
+    return a(++mN);
   }
 
   @Override
@@ -33,7 +33,7 @@ public class A013632 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return a(n.intValueExact());
+    return a(Puma.nextPrimeZ(n).subtract(n));
   }
 
 }

@@ -31,19 +31,19 @@ public class A049501 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    final String s = Long.toBinaryString(n);
-    long sum = 0;
-    for (int k = 0; k < s.length() - 1; ++k) {
-      if (s.charAt(k) == '1' && s.charAt(k + 1) == '0') {
-        sum += k + 1;
-      }
-    }
-    return Z.valueOf(sum);
+    return a(Z.valueOf(n));
   }
 
   @Override
   public Z a(final Z n) {
-    return a(n.intValueExact());
+    final String s = n.toString(2);
+    Z sum = Z.ZERO;
+    for (int k = 0; k < s.length() - 1; ++k) {
+      if (s.charAt(k) == '1' && s.charAt(k + 1) == '0') {
+        sum = sum.add(k + 1);
+      }
+    }
+    return sum;
   }
 
 }

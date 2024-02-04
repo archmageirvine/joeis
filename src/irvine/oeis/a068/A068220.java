@@ -14,7 +14,7 @@ public class A068220 extends A001097 {
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mPrev = Z.ZERO;
 
-  private boolean is(Z p) {
+  private boolean is(final Z p) {
     // p already a twin
     final Z q = mPrime.nextPrime(p.add(2));
     if (!q.add(2).isProbablePrime()) {

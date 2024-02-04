@@ -9,6 +9,7 @@ import irvine.oeis.a006.A006942;
  */
 public class A074458 extends A006942 {
 
+  /** Construct the sequence. */
   public A074458() {
     super(0, new int[] {6, 2, 5, 5, 4, 5, 6, 4, 7, 5});
   }

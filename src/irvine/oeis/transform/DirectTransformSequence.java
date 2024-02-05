@@ -60,7 +60,7 @@ public class DirectTransformSequence extends AbstractSequence {
     mInitLen = inits.length; // 0 based
     mInits = new Z[mInitLen];
     for (int i = 0; i < mInitLen; ++i) {
-      mInits[i] = Z.valueOf(inits[i]);
+        mInits[i] = Z.valueOf(inits[i]);
     }
     mInitLen += mOffset; // now offset based
     int ofb = seqB.getOffset();

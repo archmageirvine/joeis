@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A067845.
+ * A068739 Width of the bit-masks A068221 &amp; A068222 (number of digits in A068223 &amp; A068224).
  * @author Sean A. Irvine
  */
 public class A068739 extends Sequence1 {

@@ -5,7 +5,7 @@ package irvine.oeis.a154;
 import irvine.oeis.prime.PrimeSubsequence;
 
 /**
- * A154834 Primes p such that p^5-2 is also prime.
+ * A154834 Primes p such that p^5 - 2 is also prime.
  *
  * @author Georg Fischer
  */

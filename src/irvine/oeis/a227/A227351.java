@@ -6,7 +6,7 @@ import irvine.oeis.a048.A048679;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A227351 Permutation of nonnegative integers: map each number by lengths of runs of zeros in its Zeckendorf expansion shifted once left to the number which has the same lengths of runs (in the same order, but alternatively of runs of 0&apos;s and 1&apos;s) in its binary re
+ * A227351 Permutation of nonnegative integers: map each number by lengths of runs of zeros in its Zeckendorf expansion shifted once left to the number which has the same lengths of runs (in the same order, but alternatively of runs of 0's and 1's) in its binary representation.
  * @author Georg Fischer
  */
 public class A227351 extends DirectTransformSequence {

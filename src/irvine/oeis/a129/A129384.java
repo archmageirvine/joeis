@@ -5,7 +5,7 @@ package irvine.oeis.a129;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A129384 a(n)=sum{k=0..floor(n/2), C(n-k,floor((n-k)/2))}.
+ * A129384 a(n) = Sum_{k=0..floor(n/2)} binomial(n-k, floor((n-k)/2)).
  * @author Georg Fischer
  */
 public class A129384 extends PartialSumSequence {

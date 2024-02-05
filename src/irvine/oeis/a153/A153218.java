@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A153218 Numbers n such that 6n + 7 is prime.
+ * A153218 Numbers k such that 6k + 7 is prime.
  * @author Georg Fischer
  */
 public class A153218 extends PrimePositionSubsequence {

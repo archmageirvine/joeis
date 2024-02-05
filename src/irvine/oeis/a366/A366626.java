@@ -4,7 +4,7 @@ package irvine.oeis.a366;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A366626 Group the natural numbers into blocks of size 2: [1, 2], [3, 4], ... and then reverse the order of the numbers within each block. Then group and reverse for each block size up to 4.
+ * A366626 Group the natural numbers into blocks of size 2: [1,2], [3,4], ... and then reverse the order of the numbers within each block. Then group and reverse for each block size up to 4.
  * @author Georg Fischer
  */
 public class A366626 extends HolonomicRecurrence {

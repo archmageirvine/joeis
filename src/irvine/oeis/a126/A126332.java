@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A126332 Numbers n such that 10n + 13 is prime.
+ * A126332 Numbers k such that 10k + 13 is prime.
  * @author Georg Fischer
  */
 public class A126332 extends PrimePositionSubsequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a357;
 import irvine.oeis.a063.A063720;
 
 /**
- * A357972 a(n) is the number of segments used to represent the time of n minutes past midnight in the format hh:mm on a 7-segment calculator display; version where the digits &apos;6&apos;, &apos;7&apos; and &apos;9&apos; use 5, 3 and 5 segments, respectively.
+ * A357972 a(n) is the number of segments used to represent the time of n minutes past midnight in the format hh:mm on a 7-segment calculator display; version where the digits '6', '7' and '9' use 5, 3 and 5 segments, respectively.
  * @author Georg Fischer
  */
 public class A357972 extends A357970 {

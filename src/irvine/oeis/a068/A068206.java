@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068192.
+ * A068206 Let N(2n) denote the numerator of B(2n), the 2n-th Bernoulli number and D(2n) the denominator; sequence gives values of n such that gcd(N(2n),D(2n-2))=7.
  * @author Sean A. Irvine
  */
 public class A068206 extends Sequence1 {

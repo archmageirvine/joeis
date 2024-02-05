@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A113059 a(n) = n!*Sum_{k=0..n} A000296(k)/k!, n=0,1,... .
+ * A113059 a(n) = n! * Sum_{k=0..n} A000296(k)/k!.
  * E.g.f.: exp(exp(x)-1-x)/(1-x)
  * @author Georg Fischer
  */

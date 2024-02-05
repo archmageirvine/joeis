@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.a006.A006942;
 
 /**
- * A063720 Number of segments lit in a 7-segment display (as on a calculator) to represent the number n,
+ * A063720 Number of segments lit in a 7-segment display (as on a calculator) to represent the number n, variant 0: '6', '7' and '9' use 5, 3 and 5 segments, respectively.
  * variant 0: '6', '7' and '9' use 5, 3 and 5 segments, respectively.
  * @author Sean A. Irvine
  */

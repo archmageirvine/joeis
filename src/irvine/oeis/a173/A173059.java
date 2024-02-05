@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A173059 Nonnegative numbers n such that 2*n + 17 is prime.
+ * A173059 Nonnegative numbers k such that 2*k + 17 is prime.
  *
  * @author Karsten Knuth
  */

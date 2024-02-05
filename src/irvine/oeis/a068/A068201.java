@@ -6,7 +6,7 @@ import irvine.oeis.ExponentialGeneratingFunction;
 import irvine.oeis.PrependSequence;
 
 /**
- * A068199.
+ * A068201 One of a family of sequences that interpolates between the Bell numbers and the factorials.
  * @author Sean A. Irvine
  */
 public class A068201 extends PrependSequence {

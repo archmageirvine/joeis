@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A070177 a(n) = number of partitions of 10^n.
+ * A070177 Number of partitions of 10^n.
  * @author Georg Fischer
  */
 public class A070177 extends LambdaSequence {

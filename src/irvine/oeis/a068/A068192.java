@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068192.
+ * A068192 Let a(1)=2, f(n) = 4*a(1)*a(2)*...*a(n-1) for n &gt;= 1 and a(n) = f(n)-prevprime(f(n)-1) for n &gt;= 2, where prevprime(x) is the largest prime &lt; x.
  * @author Sean A. Irvine
  */
 public class A068192 extends Sequence1 {

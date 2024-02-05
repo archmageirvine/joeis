@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A067845.
+ * A068222 An auxiliary bit-mask sequence for computing A066425. (The "dirty", unsymmetric one).
  * @author Sean A. Irvine
  */
 public class A068222 extends A068221 {

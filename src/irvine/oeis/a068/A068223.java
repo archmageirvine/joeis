@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.math.z.Z;
 
 /**
- * A067845.
+ * A068223 Bit-masks of A068221 shown in binary.
  * @author Sean A. Irvine
  */
 public class A068223 extends A068221 {

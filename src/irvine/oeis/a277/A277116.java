@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.a006.A006942;
 
 /**
- * A277116 Number of segments used to represent the number n on a 7-segment display:
+ * A277116 Number of segments used to represent the number n on a 7-segment display: variant where digits 6, 7 and 9 use 6, 3 and 5 segments, respectively.
  * variant where digits 6, 7 and 9 use 6, 3 and 5 segments, respectively.
  * @author Georg Fischer
  */

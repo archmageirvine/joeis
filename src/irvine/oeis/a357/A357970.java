@@ -6,7 +6,7 @@ import irvine.oeis.DirectSequence;
 import irvine.oeis.a006.A006942;
 
 /**
- * A357970 a(n) is the number of segments used to represent the time of n minutes past midnight in the format hh:mm on a 7-segment calculator display; version where the digits &apos;6&apos;, &apos;7&apos; and &apos;9&apos; use 6, 3 and 6 segments, respectively.
+ * A357970 a(n) is the number of segments used to represent the time of n minutes past midnight in the format hh:mm on a 7-segment calculator display; version where the digits '6', '7' and '9' use 6, 3 and 6 segments, respectively.
  * A357970 a(0) = 24, a(n) = A006942(A055643(n)) + 6*(4 - ceiling(log10(A055643(n) + 1))) for n &gt; 0.
  * @author Georg Fischer
  */

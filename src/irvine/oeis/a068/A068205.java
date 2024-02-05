@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000364;
 
 /**
- * A068192.
+ * A068205 Denominator of S(n)/Pi^n, where S(n) = Sum((4k+1)^(-n),k,-inf,+inf).
  * @author Sean A. Irvine
  */
 public class A068205 extends Sequence1 {

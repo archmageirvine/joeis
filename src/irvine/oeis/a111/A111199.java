@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A111199 Numbers n such that 4k + 9 is prime.
+ * A111199 Numbers k such that 4k + 9 is prime.
  * @author Georg Fischer
  */
 public class A111199 extends PrimePositionSubsequence {

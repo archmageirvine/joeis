@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A153143 Nonnegative numbers n such that 2n + 19 is prime.
+ * A153143 Nonnegative numbers k such that 2k + 19 is prime.
  *
  * @author Karsten Knuth
  */

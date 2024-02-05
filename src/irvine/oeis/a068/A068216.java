@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A067845.
+ * A068216 a(n) is the smallest n-digit pseudoprime (to base 2).
  * @author Sean A. Irvine
  */
 public class A068216 extends Sequence3 {

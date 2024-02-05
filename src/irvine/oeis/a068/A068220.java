@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001097;
 
 /**
- * A067845.
+ * A068220 Twin primes belonging to packs of four or more twin pairs.
  * @author Sean A. Irvine
  */
 public class A068220 extends A001097 {

@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 /**
- * A006614 Zarankiewicz's problem.
+ * A006614 A variant of Zarankiewicz's problem: a(n) is the least k such that every n X n {0,1}-matrix with k ones contains an all-ones 2 X 4 submatrix.
  * @author Sean A. Irvine
  */
 public class A006614 extends A006613 {

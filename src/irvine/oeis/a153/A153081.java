@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A153081 Nonnegative numbers n such that 2n + 13 is prime.
+ * A153081 Nonnegative numbers k such that 2k + 13 is prime.
  *
  * @author Karsten Knuth
  */

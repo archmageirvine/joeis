@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A067845.
+ * A068218 Triangle of numbers of square lattice walks that start and end at origin after 2k steps and contain exactly r steps to the east, not touching origin at intermediate stages.
  * @author Sean A. Irvine
  */
 public class A068218 extends Sequence0 {

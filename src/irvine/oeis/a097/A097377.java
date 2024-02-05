@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007948;
 
 /**
- * A097377 CubeFreeKernel(n) + 1.
+ * A097377 a(n) = CubeFreeKernel(n) + 1.
  * @author Georg Fischer
  */
 public class A097377 extends A007948 {

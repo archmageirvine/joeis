@@ -6,7 +6,7 @@ import irvine.oeis.a051.A051953;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A319348 Filter sequence combining A003557(n) and A051953(n).
+ * A319348 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; A003557(i) = A003557(j) and A051953(i) = A051953(j), for all i, j &gt;= 1.
  * @author Georg Fischer
  */
 public class A319348 extends RestrictedGrowthTransformSequence {

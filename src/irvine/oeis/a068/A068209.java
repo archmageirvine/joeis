@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003627;
 
 /**
- * A068192.
+ * A068209 Primes p of the form 3k - 1 such that there exist nontrivial solutions (x other than 0 or -1 modulo p) to the congruence (x+1)^p - x^p == 1 (mod p^2).
  * @author Sean A. Irvine
  */
 public class A068209 extends A003627 {

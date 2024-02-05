@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a000.A000912;
 
 /**
- * A129366 a(n) = Sum_{k=0..floor(n/2)} C(n-k), where C(n) = A000108(n).
+ * A129366 a(n) = Sum_{k=0..floor(n/2)} A000108(n-k).
  * @author Sean A. Irvine
  */
 public class A129366 extends PartialSumSequence {

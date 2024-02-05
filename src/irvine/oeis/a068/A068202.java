@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068192.
+ * A068202 Next-to-middle coefficient in expansion of Product_{k=1..n} (1 + x^k).
  * @author Sean A. Irvine
  */
 public class A068202 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.oeis.a016.A016777;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A245838 Arithmetic derivative of (3*n + 1), n &gt;= 1, (A016777)&apos;.
+ * A245838 Arithmetic derivative of (3*n + 1), n &gt;= 1, (A016777)'.
  * @author Georg Fischer
  */
 public class A245838 extends DirectTransformSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.a006.A006942;
 
 /**
- * A074458 Number of segments lit to display the number n on a 7-segment display (as in pocket calculators):
+ * A074458 Number of segments lit to display the number n on a 7-segment display (as in pocket calculators): variant where '6', '7' and '9' use 6, 4 resp. 5 segments.
  * variant where '6', '7' and '9' use 6, 4 resp. 5 segments.
  * @author Sean A. Irvine
  */

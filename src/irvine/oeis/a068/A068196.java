@@ -9,7 +9,7 @@ import irvine.oeis.a002.A002808;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A068192.
+ * A068196 Origin numbers: integers unreachable by Bergerson's Alpha construction (see the Ross Eckler link).
  * @author Sean A. Irvine
  */
 public class A068196 extends Sequence1 {

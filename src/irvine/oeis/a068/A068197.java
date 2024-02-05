@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068192.
+ * A068197 Number of squares (of another matrix) in M_2(n) - the ring of 2 X 2 matrices over Z_n.
  * @author Sean A. Irvine
  */
 public class A068197 extends Sequence1 {

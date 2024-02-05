@@ -4,7 +4,7 @@ package irvine.oeis.a186;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A186866 Number of 7-step king&apos;s tours on an n X n board summed over all starting positions.
+ * A186866 Number of 7-step king's tours on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A186866 extends HolonomicRecurrence {

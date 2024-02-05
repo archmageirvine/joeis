@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A101123 Numbers n for which 7*n + 11 is prime.
+ * A101123 Numbers k for which 7*k + 11 is prime.
  * @author Georg Fischer
  */
 public class A101123 extends PrimePositionSubsequence {

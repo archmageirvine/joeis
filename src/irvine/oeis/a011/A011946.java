@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067845.
+ * A011946 Number of Barlow packings with group P63/mmc(S) that repeat after 4n layers.
  * @author Sean A. Irvine
  */
 public class A011946 extends Sequence1 {

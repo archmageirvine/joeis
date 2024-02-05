@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A067845.
+ * A068221 An auxiliary bit-mask sequence for computing A066425. (The "clean", symmetric one).
  * @author Sean A. Irvine
  */
 public class A068221 extends Sequence1 {

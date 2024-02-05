@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068192.
+ * A068214 Numerator of Borwein integral of order 2n+1.
  * @author Sean A. Irvine
  */
 public class A068214 extends Sequence0 {

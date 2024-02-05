@@ -4,12 +4,13 @@ import irvine.factor.factor.PrimeDivision;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A001055 The multiplicative partition function: number of ways of factoring n with all factors greater than 1 (a(1) = 1 by convention).
  * @author Sean A. Irvine
  */
-public class A001055 extends AbstractSequence {
+public class A001055 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -45,6 +46,17 @@ public class A001055 extends AbstractSequence {
       ++sum;
     }
     return sum;
+  }
+
+  @Override
+  public Z a(final Z n) {
+    final long nl = n.longValueExact();
+    return Z.valueOf(t(nl, nl));
+  }
+
+  @Override
+  public Z a(final int n) {
+    return Z.valueOf(t(n, n));
   }
 
   @Override

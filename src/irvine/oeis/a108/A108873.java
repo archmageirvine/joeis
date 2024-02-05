@@ -21,7 +21,7 @@ public class A108873 extends AbstractSequence {
   /**
    * Generic constructor with parameters
    * @param offset first index
-   * @param base numer base
+   * @param base number base
    */
   public A108873(final int offset, final int base) {
     super(offset);

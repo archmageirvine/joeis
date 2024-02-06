@@ -1,8 +1,6 @@
 package irvine.math.graph;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -1057,17 +1055,6 @@ public final class GraphUtils {
       }
     }
     return g;
-  }
-
-  /**
-   * Load a graph from a file.  See documentation on <code>load(InputStream is)</code>
-   * for details on graph format.
-   * @param graphFile file containing the graph
-   * @return graph
-   * @exception IOException if an I/O error or malformed input is encountered.
-   */
-  public static irvine.graph.Graph<String, String> load(final File graphFile) throws IOException {
-    return load(new FileInputStream(graphFile));
   }
 
   /**

@@ -2,6 +2,8 @@ package irvine.math.graph;
 
 import java.util.List;
 
+import irvine.math.LongUtils;
+
 /**
  * Iterate over clique covers of a graph from its maximal cliques.
  * @author Sean A. Irvine
@@ -25,10 +27,7 @@ public final class CliqueCoversIterator {
     final List<Long> maximalCliques = MaximalCliques.maximalCliques(graph);
     mSyndrome = 1L << maximalCliques.size();
     mAllVerticesBits = (1L << n) - 1;
-    mCliqueBits = new long[maximalCliques.size()];
-    for (int k = 0; k < maximalCliques.size(); ++k) {
-      mCliqueBits[k] = maximalCliques.get(k);
-    }
+    mCliqueBits = LongUtils.toLong(maximalCliques);
     // Precompute bit set versions of each edge
     mEdges = new long[graph.size()];
     int k = 0;

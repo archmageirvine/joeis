@@ -859,4 +859,17 @@ public final class LongUtils {
     return sum;
   }
 
+  /**
+   * Convert a collection to a primitive array.
+   * @param c collection
+   * @return long array
+   */
+  public static long[] toLong(final Collection<Long> c) {
+    final long[] res = new long[c.size()];
+    int k = 0;
+    for (final long v : c) {
+      res[k++] = v;
+    }
+    return res;
+  }
 }

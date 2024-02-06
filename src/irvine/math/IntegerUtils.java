@@ -502,4 +502,18 @@ public final class IntegerUtils {
     }
     return prod;
   }
+
+  /**
+   * Convert a collection to a primitive array.
+   * @param c collection
+   * @return long array
+   */
+  public static int[] toInt(final Collection<Integer> c) {
+    final int[] res = new int[c.size()];
+    int k = 0;
+    for (final int v : c) {
+      res[k++] = v;
+    }
+    return res;
+  }
 }

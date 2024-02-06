@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.Pair;
@@ -62,10 +63,7 @@ public class A067968 extends Sequence1 {
         patterns.add(i);
       }
     }
-    final long[] p = new long[patterns.size()];
-    for (int k = 0; k < p.length; ++k) {
-      p[k] = patterns.get(k);
-    }
+    final long[] p = LongUtils.toLong(patterns);
     Map<Pair<Long, Long>, Z> v = new HashMap<>();
     for (final long t : p) {
       v.put(new Pair<>(0L, t), Z.ONE);

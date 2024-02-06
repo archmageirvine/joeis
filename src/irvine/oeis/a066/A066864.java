@@ -3,6 +3,7 @@ package irvine.oeis.a066;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -31,10 +32,7 @@ public class A066864 extends Sequence0 {
         patterns.add(i);
       }
     }
-    final long[] p = new long[patterns.size()];
-    for (int k = 0; k < p.length; ++k) {
-      p[k] = patterns.get(k);
-    }
+    final long[] p = LongUtils.toLong(patterns);
     // Precompute left rotations
     final long[] left = new long[p.length];
     for (int k = 0; k < p.length; ++k) {

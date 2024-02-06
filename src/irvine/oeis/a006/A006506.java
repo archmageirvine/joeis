@@ -3,6 +3,7 @@ package irvine.oeis.a006;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,27 +19,29 @@ public class A006506 extends Sequence1 {
 
   @Override
   public Z next() {
-    ++mN;
-    final ArrayList<Z> patterns = new ArrayList<>();
+    if (++mN > 63) {
+      throw new UnsupportedOperationException();
+    }
+    final ArrayList<Long> patterns = new ArrayList<>();
     for (long i = 0; i < (1L << mN); ++i) {
       long j = i;
       while (j != 0 && (j & 3) != 3) {
         j /= 2;
       }
       if ((j & 3) != 3) {
-        patterns.add(Z.valueOf(i));
+        patterns.add(i);
       }
     }
-    final Z[] p = patterns.toArray(new Z[0]);
-    final int l = p.length;
-    Z[] v = new Z[l];
+    final int len = patterns.size();
+    final long[] p = LongUtils.toLong(patterns);
+    Z[] v = new Z[len];
     Arrays.fill(v, Z.ONE);
     for (int i = 1; i < mN; ++i) {
-      final Z[] w = new Z[l];
+      final Z[] w = new Z[len];
       Arrays.fill(w, Z.ZERO);
-      for (int j = 0; j < l; ++j) {
-        for (int k = 0; k < l; ++k) {
-          if (p[j].and(p[k]).isZero()) {
+      for (int j = 0; j < len; ++j) {
+        for (int k = 0; k < len; ++k) {
+          if ((p[j] & p[k]) == 0) {
             w[j] = w[j].add(v[k]);
           }
         }

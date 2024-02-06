@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
+import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.Pair;
@@ -34,10 +35,7 @@ public class A307670 extends Sequence1 {
             neighbours.add(ny * n + nx);
           }
         }
-        final int[] r = new int[neighbours.size()];
-        for (int k = 0; k < neighbours.size(); ++k) {
-          r[k] = neighbours.get(k);
-        }
+        final int[] r = IntegerUtils.toInt(neighbours);
         g[y * n + x] = r;
       }
     }

@@ -134,10 +134,11 @@ public class A068283 extends AbstractSequence {
     Z[] v = new Z[len];
     Arrays.fill(v, Z.ONE);
     for (int i = 1; i < m; ++i) {
+      final int[][] t = (i & 1) == 0 ? transitions1 : transitions2;
       final Z[] w = new Z[len];
       Arrays.fill(w, Z.ZERO);
       for (int j = 0; j < len; ++j) {
-        for (final int k : (i & 1) == 0 ? transitions1[j] : transitions2[j]) {
+        for (final int k : t[j]) {
           w[j] = w[j].add(v[k]);
         }
       }

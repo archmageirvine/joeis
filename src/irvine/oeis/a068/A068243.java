@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A068220.
+ * A068243 1/2 the number of colorings of a 7 X 7 square array with n colors.
  * @author Sean A. Irvine
  */
 public class A068243 extends Sequence2 {

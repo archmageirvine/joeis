@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.math.z.Z;
 
 /**
- * A068220.
+ * A068233 a(n) is the smallest prime p such that p and the next n-1 primes are all == 7 (mod 12).
  * @author Sean A. Irvine
  */
 public class A068233 extends A068232 {

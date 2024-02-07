@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a003.A003415;
 
 /**
- * A068220.
+ * A068237 Numerators of arithmetic derivative of 1/n: -A003415(n)/n^2.
  * @author Sean A. Irvine
  */
 public class A068237 extends Sequence1 {

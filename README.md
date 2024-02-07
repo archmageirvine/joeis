@@ -15,7 +15,9 @@ option is to download the latest [release](releases).
 Installation
 ------------
 
-Instructions for installation and development: [INSTALLATION](INSTALL.md)
+Instructions for installation: [INSTALLATION](INSTALL.md)
+
+Notes on development: [DEVELOPMENT](DEV_NOTES.md)
 
 Background
 ----------
@@ -34,22 +36,6 @@ A similar plot with one pixel for each sequence. Green indicates an
 implemented sequence. Black indicates to be done, feel free to help.
 
 ![implemented-plot](doc/oeis-implemented.png)
-
-Implementations of specific sequences implement the ```Sequence```
-interface which provides a single method ```next()```.  The contract
-requires this to produce either the next member of the sequence or
-```null``` in the case of reaching the end of a finite sequence.  In
-addition, it might sometimes throw an
-``UnsupportedOperationException`` if the computing the next value is
-beyond the current implementation or if it would exceed the values
-that can be represented by the big integer class.
-
-There is no direct support for generating the nth term of a sequence
-and so to generate the nth term, it is necessary to call ```next()```
-repeatedly until the desired term is reached.  Internally this
-sometimes leads to significant inefficiency (e.g., generating functions
-being repeatedly expanded to higher and higher degree), but keeps the
-overall contract as simple as possible.
 
 Implementations are not necessarily the best known algorithm for
 particular sequences.  For many important sequences you are not going

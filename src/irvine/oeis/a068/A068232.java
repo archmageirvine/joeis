@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A068220.
+ * A068232 a(n) is the smallest prime p such that p and the next n-1 primes are all == 1 (mod 12).
  * @author Sean A. Irvine
  */
 public class A068232 extends A000040 {

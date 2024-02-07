@@ -10,7 +10,7 @@ import irvine.util.Point;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A368054 allocated for John Tyler Rascoe.
+ * A368054 Irregular triangle read by rows: T(n,k) is the number of k-crossing partitions on 2n nodes, where all partition terms alternate in parity, counted up to reflection.
  * @author Sean A. Irvine
  */
 public class A368054 extends Sequence0 {

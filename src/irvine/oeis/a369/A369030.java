@@ -6,7 +6,7 @@ import irvine.oeis.a163.A163511;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A369030 Exponential of Mangoldt function permuted by A163511 (&quot;Doudna-permutation mirrored&quot;).
+ * A369030 Exponential of Mangoldt function permuted by A163511 ("Doudna-permutation mirrored").
  * @author Georg Fischer
  */
 public class A369030 extends DirectTransformSequence {

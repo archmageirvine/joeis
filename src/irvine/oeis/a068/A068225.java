@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A068189.
+ * A068225 Neighbor in 1-2 direction of numbers arranged as clockwise spiral.
  * @author Sean A. Irvine
  */
 public class A068225 extends Sequence1 {

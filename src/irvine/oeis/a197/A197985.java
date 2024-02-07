@@ -6,7 +6,7 @@ package irvine.oeis.a197;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A197985 Round((n+1/n)^2).
+ * A197985 a(n) = round((n+1/n)^2).
  * @author Georg Fischer
  */
 public class A197985 extends HolonomicRecurrence {

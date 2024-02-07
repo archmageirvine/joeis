@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007814;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A318655 The 2-adic valuation of A318649, the numerators of &quot;Dirichlet Square Root&quot; of squares.
+ * A318655 The 2-adic valuation of A318649, the numerators of "Dirichlet Square Root" of squares.
  * @author Georg Fischer
  */
 public class A318655 extends DirectTransformSequence {

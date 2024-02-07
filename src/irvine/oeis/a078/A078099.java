@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068220.
+ * A078099 Array T(m,n) read by antidiagonals: T(m,n) = number of ways of 3-coloring an m X n grid (m &gt;= 1, n &gt;= 1).
  * @author Sean A. Irvine
  */
 public class A078099 extends Sequence1 {

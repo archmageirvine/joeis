@@ -14,6 +14,7 @@ import irvine.oeis.Sequence0;
 public class A066864 extends Sequence0 {
 
   // Computes left to right with respect to the Example picture in the OEIS.
+  // See A068271 for a more general implementation
 
   private int mN = -1;
 

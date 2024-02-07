@@ -5,7 +5,7 @@ import irvine.oeis.a068.A068253;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A068220.
+ * A207993 Number of n X n 0..2 arrays with new values 0..2 introduced in row major order and no element equal to any horizontal or vertical neighbor (colorings ignoring permutations of colors).
  * @author Sean A. Irvine
  */
 public class A207993 extends SimpleTransformSequence {

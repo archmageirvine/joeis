@@ -6,35 +6,49 @@ import java.util.Arrays;
 import irvine.math.IntegerUtils;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A006506.
+ * A068254 1/4 the number of colorings of an n X n square array with 4 colors.
  * @author Sean A. Irvine
  */
-public class A068254 extends Sequence1 {
+public class A068254 extends AbstractSequence {
 
-  private int mN = 0;
+  protected final int mBits;
+  protected final long mMask;
+  private int mN;
+
+  protected A068254(final int offset, final int bits) {
+    super(offset);
+    mBits = bits;
+    mMask = (1L << bits) - 1;
+    mN = offset - 1;
+  }
+
+  /** Construct the sequence. */
+  public A068254() {
+    this(1, 2);
+  }
 
   private boolean isLegal(final int n, long pattern) {
     long prev = -1;
     for (int k = 0; k < n; ++k) {
-      if ((pattern & 3) == prev) {
+      if ((pattern & mMask) == prev) {
         return false;
       }
-      prev = pattern & 3;
-      pattern >>>= 2;
+      prev = pattern & mMask;
+      pattern >>>= mBits;
     }
     return true;
   }
 
-  private boolean isLegal(final int n, long p1, long p2) {
+  protected boolean isLegal(final int n, long p1, long p2) {
     for (int k = 0; k < n; ++k) {
-      if ((p1 & 3) == (p2 & 3)) {
+      if ((p1 & mMask) == (p2 & mMask)) {
         return false;
       }
-      p1 >>>= 2;
-      p2 >>>= 2;
+      p1 >>>= mBits;
+      p2 >>>= mBits;
     }
     return true;
   }
@@ -57,12 +71,12 @@ public class A068254 extends Sequence1 {
     if (m < n) {
       return t(m, n);
     }
-    if (n > 31) {
+    if (n * (1L << mBits) >= Long.SIZE) {
       throw new UnsupportedOperationException();
     }
     // 2 bits per colour
     final ArrayList<Long> patterns = new ArrayList<>();
-    for (long i = 0; i < (1L << (2 * n)); ++i) {
+    for (long i = 0; i < (1L << (mBits * n)); ++i) {
       if (isLegal(n, i)) {
         patterns.add(i);
       }
@@ -86,14 +100,11 @@ public class A068254 extends Sequence1 {
     for (final Z z : v) {
       sum = sum.add(z);
     }
-    return sum;
+    return sum.divide(1L << mBits);
   }
 
   @Override
   public Z next() {
-    if (++mN > 31) {
-      throw new UnsupportedOperationException();
-    }
-    return t(mN, mN).divide(4);
+    return t(++mN, mN);
   }
 }

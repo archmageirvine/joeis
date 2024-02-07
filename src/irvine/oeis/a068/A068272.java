@@ -16,7 +16,7 @@ public class A068272 extends A068255 {
   }
 
   @Override
-  protected boolean isLegal(final int n, long p1in, long p2in) {
+  protected boolean isLegal(final int n, final long p1in, final long p2in) {
     long p2 = p2in;
     long p1 = p1in;
     for (int k = 0; k < n; ++k) {

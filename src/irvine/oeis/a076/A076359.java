@@ -16,7 +16,7 @@ public class A076359 extends LambdaSequence {
   /** Construct the sequence. */
   public A076359() {
     super(1, n -> {
-      Z fa = MemoryFactorial.SINGLETON.factorial(n);
+      final Z fa = MemoryFactorial.SINGLETON.factorial(n);
       return new Q(fa, Jaguar.factor(fa).phi()).den();
     });
   }

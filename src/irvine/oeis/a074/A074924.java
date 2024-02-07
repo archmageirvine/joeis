@@ -13,6 +13,6 @@ public class A074924 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A074924() {
-    super(1, new A062703(), v -> v.sqrt());
+    super(1, new A062703(), Z::sqrt);
   }
 }

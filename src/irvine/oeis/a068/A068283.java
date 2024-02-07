@@ -12,13 +12,13 @@ import irvine.oeis.AbstractSequence;
  * A068254 1/4 the number of colorings of an n X n square array with 4 colors.
  * @author Sean A. Irvine
  */
-public class A068254 extends AbstractSequence {
+public class A068283 extends AbstractSequence {
 
   protected final int mBits;
   protected final long mMask;
   private int mN;
 
-  protected A068254(final int offset, final int bits) {
+  protected A068283(final int offset, final int bits) {
     super(offset);
     mBits = bits;
     mMask = (1L << bits) - 1;
@@ -26,7 +26,7 @@ public class A068254 extends AbstractSequence {
   }
 
   /** Construct the sequence. */
-  public A068254() {
+  public A068283() {
     this(1, 2);
   }
 
@@ -42,8 +42,19 @@ public class A068254 extends AbstractSequence {
     return true;
   }
 
-  protected boolean isLegal(final int n, long p1, long p2) {
+  private boolean isLegal1(final int n, final long p1in, final long p2in) {
+    long p2 = p2in;
+    long p1 = p1in;
     for (int k = 0; k < n; ++k) {
+      if ((p1 & mMask) == (p2 & mMask)) {
+        return false;
+      }
+      p1 >>>= mBits;
+      p2 >>>= mBits;
+    }
+    p2 = p2in;
+    p1 = p1in >> mBits;
+    for (int k = 1; k < n; ++k) {
       if ((p1 & mMask) == (p2 & mMask)) {
         return false;
       }
@@ -53,12 +64,48 @@ public class A068254 extends AbstractSequence {
     return true;
   }
 
-  private int[][] legalTransitions(final int n, final long[] p) {
+  private int[][] legalTransitions1(final int n, final long[] p) {
     final int[][] trans = new int[p.length][];
     for (int k = 0; k < p.length; ++k) {
       final ArrayList<Integer> ok = new ArrayList<>();
       for (int j = 0; j < p.length; ++j) {
-        if (isLegal(n, p[k], p[j])) {
+        if (isLegal1(n, p[k], p[j])) {
+          ok.add(j);
+        }
+      }
+      trans[k] = IntegerUtils.toInt(ok);
+    }
+    return trans;
+  }
+
+  private boolean isLegal2(final int n, final long p1in, final long p2in) {
+    long p2 = p2in;
+    long p1 = p1in;
+    for (int k = 0; k < n; ++k) {
+      if ((p1 & mMask) == (p2 & mMask)) {
+        return false;
+      }
+      p1 >>>= mBits;
+      p2 >>>= mBits;
+    }
+    p2 = p2in >> mBits;
+    p1 = p1in;
+    for (int k = 1; k < n; ++k) {
+      if ((p1 & mMask) == (p2 & mMask)) {
+        return false;
+      }
+      p1 >>>= mBits;
+      p2 >>>= mBits;
+    }
+    return true;
+  }
+
+  private int[][] legalTransitions2(final int n, final long[] p) {
+    final int[][] trans = new int[p.length][];
+    for (int k = 0; k < p.length; ++k) {
+      final ArrayList<Integer> ok = new ArrayList<>();
+      for (int j = 0; j < p.length; ++j) {
+        if (isLegal2(n, p[k], p[j])) {
           ok.add(j);
         }
       }
@@ -82,14 +129,15 @@ public class A068254 extends AbstractSequence {
     }
     final int len = patterns.size();
     final long[] p = LongUtils.toLong(patterns);
-    final int[][] transitions = legalTransitions(n, p);
+    final int[][] transitions1 = legalTransitions1(n, p);
+    final int[][] transitions2 = legalTransitions2(n, p);
     Z[] v = new Z[len];
     Arrays.fill(v, Z.ONE);
     for (int i = 1; i < m; ++i) {
       final Z[] w = new Z[len];
       Arrays.fill(w, Z.ZERO);
       for (int j = 0; j < len; ++j) {
-        for (final int k : transitions[j]) {
+        for (final int k : (i & 1) == 0 ? transitions1[j] : transitions2[j]) {
           w[j] = w[j].add(v[k]);
         }
       }

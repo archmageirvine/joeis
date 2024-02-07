@@ -6,7 +6,7 @@ import irvine.oeis.a055.A055932;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A331049 Number of factorizations of A055932(n), the least representative of the n&apos;th distinct unsorted prime signature, into factors &gt; 1.
+ * A331049 Number of factorizations of A055932(n), the least representative of the n'th distinct unsorted prime signature, into factors &gt; 1.
  * @author Georg Fischer
  */
 public class A331049 extends DirectTransformSequence {

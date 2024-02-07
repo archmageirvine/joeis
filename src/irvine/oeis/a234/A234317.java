@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002275;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A234317 Number of primes &lt;= R_n where R_n is 11...111 with n 1&apos;s.
+ * A234317 Number of primes &lt;= R_n where R_n is 11...111 with n 1's.
  * @author Georg Fischer
  */
 public class A234317 extends DirectTransformSequence {

@@ -6,38 +6,36 @@ import java.util.Arrays;
 import irvine.math.IntegerUtils;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
+import irvine.oeis.Sequence1;
 
 /**
- * A068283 1/4 the number of colorings of an n X n staggered hexagonal array with 4 colors.
+ * A068284 1/5 the number of colorings of an n X n staggered hexagonal array with 5 colors.
  * @author Sean A. Irvine
  */
-public class A068283 extends AbstractSequence {
+public class A068284 extends Sequence1 {
 
-  protected final int mBits;
-  protected final long mMask;
-  private int mN;
+  // Note A068283 is slightly faster implementation style for power of two colors
 
-  protected A068283(final int offset, final int bits) {
-    super(offset);
-    mBits = bits;
-    mMask = (1L << bits) - 1;
-    mN = offset - 1;
+  protected final int mColors;
+  private int mN = 0;
+
+  protected A068284(final int colors) {
+    mColors = colors;
   }
 
   /** Construct the sequence. */
-  public A068283() {
-    this(1, 2);
+  public A068284() {
+    this(5);
   }
 
   private boolean isLegal(final int n, long pattern) {
     long prev = -1;
     for (int k = 0; k < n; ++k) {
-      if ((pattern & mMask) == prev) {
+      if ((pattern % mColors) == prev) {
         return false;
       }
-      prev = pattern & mMask;
-      pattern >>>= mBits;
+      prev = pattern % mColors;
+      pattern /= mColors;
     }
     return true;
   }
@@ -46,20 +44,20 @@ public class A068283 extends AbstractSequence {
     long p2 = p2in;
     long p1 = p1in;
     for (int k = 0; k < n; ++k) {
-      if ((p1 & mMask) == (p2 & mMask)) {
+      if (p1 % mColors == p2 % mColors) {
         return false;
       }
-      p1 >>>= mBits;
-      p2 >>>= mBits;
+      p1 /= mColors;
+      p2 /= mColors;
     }
     p2 = p2in;
-    p1 = p1in >> mBits;
+    p1 = p1in / mColors;
     for (int k = 1; k < n; ++k) {
-      if ((p1 & mMask) == (p2 & mMask)) {
+      if (p1 % mColors == p2 % mColors) {
         return false;
       }
-      p1 >>>= mBits;
-      p2 >>>= mBits;
+      p1 /= mColors;
+      p2 /= mColors;
     }
     return true;
   }
@@ -82,20 +80,20 @@ public class A068283 extends AbstractSequence {
     long p2 = p2in;
     long p1 = p1in;
     for (int k = 0; k < n; ++k) {
-      if ((p1 & mMask) == (p2 & mMask)) {
+      if (p1 % mColors == p2 % mColors) {
         return false;
       }
-      p1 >>>= mBits;
-      p2 >>>= mBits;
+      p1 /= mColors;
+      p2 /= mColors;
     }
-    p2 = p2in >> mBits;
+    p2 = p2in / mColors;
     p1 = p1in;
     for (int k = 1; k < n; ++k) {
-      if ((p1 & mMask) == (p2 & mMask)) {
+      if (p1 % mColors == p2 % mColors) {
         return false;
       }
-      p1 >>>= mBits;
-      p2 >>>= mBits;
+      p1 /= mColors;
+      p2 /= mColors;
     }
     return true;
   }
@@ -118,11 +116,9 @@ public class A068283 extends AbstractSequence {
     if (m < n) {
       return t(m, n);
     }
-    if (n * (1L << mBits) >= Long.SIZE) {
-      throw new UnsupportedOperationException();
-    }
     final ArrayList<Long> patterns = new ArrayList<>();
-    for (long i = 0; i < (1L << (mBits * n)); ++i) {
+    final long lim = Z.valueOf(mColors).pow(n).longValueExact(); // will exception if too large for this implementation
+    for (long i = 0; i < lim; ++i) {
       if (isLegal(n, i)) {
         patterns.add(i);
       }
@@ -148,7 +144,7 @@ public class A068283 extends AbstractSequence {
     for (final Z z : v) {
       sum = sum.add(z);
     }
-    return sum.divide(1L << mBits);
+    return sum.divide(mColors);
   }
 
   @Override

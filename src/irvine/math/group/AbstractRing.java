@@ -304,6 +304,21 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
     return sum;
   }
 
+  /**
+   * The sum of a function over all the primes dividing a number.
+   * @param n sum over the prime factors of this number
+   * @param function the function
+   * @return sum
+   */
+  public E sopf(final int n, final Function<Integer, E> function) {
+    E sum = zero();
+    for (final Z p : Jaguar.factor(n).toZArray()) {
+      if (!Z.ONE.equals(p)) {
+        sum = add(sum, function.apply(p.intValueExact()));
+      }
+    }
+    return sum;
+  }
 
   /**
    * Convenience method to sum a list of elements.

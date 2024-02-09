@@ -4,7 +4,6 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000959;
 import irvine.util.array.LongDynamicIntArray;
 
-
 /**
  * A002850 Number of decompositions of 2n into sum of 2 lucky numbers.
  * @author Sean A. Irvine

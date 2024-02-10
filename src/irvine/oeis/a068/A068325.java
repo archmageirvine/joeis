@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068308.
+ * A068325 Self-conjugate digitized partition numbers.
  * @author Sean A. Irvine
  */
 public class A068325 extends Sequence0 {

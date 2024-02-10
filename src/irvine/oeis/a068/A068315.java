@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000961;
 import irvine.oeis.a025.A025474;
 
 /**
- * A068308.
+ * A068315 For numbers k such that A025474(k) &gt; 1 and A025474(k+1) &gt; 1, sequence gives A000961(k).
  * @author Sean A. Irvine
  */
 public class A068315 extends Sequence1 {

@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000959;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A002850 Number of decompositions of 2n into sum of 2 lucky numbers.
+ * A068309 Number of different lucky numbers occurring when 2n is expressed as p1+q1 = ... = pk+qk where pk,qk are lucky numbers with pk &lt;= qk.
  * @author Sean A. Irvine
  */
 public class A068309 extends A000959 {

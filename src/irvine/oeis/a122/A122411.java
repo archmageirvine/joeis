@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A122411 a(n) is the sum of primes p for those k&apos;s, 2 &lt;= k &lt;= n, where gcd(k,n) = p^j &gt; 1. (a(1) = 0.)
+ * A122411 a(n) is the sum of primes p for those k's, 2 &lt;= k &lt;= n, where gcd(k,n) = p^j &gt; 1. (a(1) = 0.).
  * @author Georg Fischer
  */
 public class A122411 extends LambdaSequence {

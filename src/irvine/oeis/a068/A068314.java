@@ -5,7 +5,7 @@ import irvine.oeis.a034.A034178;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A068308.
+ * A068314 Smallest integer that can be expressed as the sum of consecutive odd numbers in exactly n ways.
  * @author Sean A. Irvine
  */
 public class A068314 extends A034178 {

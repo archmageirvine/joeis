@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A068308.
+ * A068321 Numbers that are not the sum of arithmetic progressions of distinct primes including arithmetic progressions of length 1.
  * @author Sean A. Irvine
  */
 public class A068321 extends FilterPositionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A002850.
+ * A068310 n^2 - 1 divided by its largest square divisor.
  * @author Sean A. Irvine
  */
 public class A068310 extends Sequence2 {

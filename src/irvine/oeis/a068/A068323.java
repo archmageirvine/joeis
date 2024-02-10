@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068308.
+ * A068323 a(n)=number of arithmetic progressions of primes, nondecreasing with sum n.
  * @author Sean A. Irvine
  */
 public class A068323 extends Sequence1 {

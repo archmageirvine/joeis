@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068308.
+ * A068322 Number of arithmetic progressions of positive odd integers, strictly increasing with sum n.
  * @author Sean A. Irvine
  */
 public class A068322 extends Sequence1 {

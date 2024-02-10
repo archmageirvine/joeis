@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A158726 Number of n-colorings of Tutte&apos;s graph.
+ * A158726 Number of n-colorings of Tutte's graph.
  * @author Georg Fischer
  */
 public class A158726 extends HolonomicRecurrence {

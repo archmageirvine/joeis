@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068308.
+ * A068330 Consider all sublists of [(2,1),(3,2,1),(4,3,2,1),...,(n,...,4,3,2,1)] and multiply these permutations in that order. How many of the products are n-cycles?.
  * @author Sean A. Irvine
  */
 public class A068330 extends Sequence1 {

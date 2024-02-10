@@ -7,7 +7,7 @@ import irvine.oeis.transform.RunLengthTransform;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A068308.
+ * A068316 Run lengths of the Moebius function applied to A051270 (numbers with 5 distinct prime factors).
  * @author Sean A. Irvine
  */
 public class A068316 extends RunLengthTransform {

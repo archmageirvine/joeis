@@ -305,6 +305,20 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
   }
 
   /**
+   * The product of a function over all the divisors of a number.
+   * @param n product over the divisors of this number
+   * @param function the function
+   * @return product
+   */
+  public E productdiv(final int n, final Function<Integer, E> function) {
+    E prod = one();
+    for (final Z d : Jaguar.factor(n).divisors()) {
+      prod = multiply(prod, function.apply(d.intValueExact()));
+    }
+    return prod;
+  }
+
+  /**
    * The sum of a function over all the primes dividing a number.
    * @param n sum over the prime factors of this number
    * @param function the function

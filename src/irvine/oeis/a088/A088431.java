@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a007.A007400;
 
 /**
- * A088431 Half of the (n+1)-st component of the continued fraction expansion of Sum_{k&gt;=1} 1/2^(2^k).
+ * A088431 Half of the (n+1)-st component of the continued fraction expansion of Sum_{k&gt;=0} 1/2^(2^k).
  * @author Georg Fischer
  */
 public class A088431 extends Sequence1 {

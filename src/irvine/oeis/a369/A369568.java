@@ -4,7 +4,7 @@ package irvine.oeis.a369;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A369568 Minimum number of edges that force an n-vertex graph to be Hamiltonian according to Chv√°tal&apos;s condition on the degree sequence.
+ * A369568 Minimum number of edges that force an n-vertex graph to be Hamiltonian according to Chv\u00e1tal's condition on the degree sequence.
  * @author Georg Fischer
  */
 public class A369568 extends GeneratingFunctionSequence {

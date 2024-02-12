@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A068337 a(n) = n!*Sum_{k=1..n} mu(k)/k, where mu(k) is the M√∂bius function.
+ * A068337 a(n) = n!*Sum_{k=1..n} mu(k)/k, where mu(k) is the M\u00f6bius function.
  * @author Georg Fischer
  */
 public class A068337 extends LambdaSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a291;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A291053 Number of maximal irredundant sets in the n-Andrasfai graph.
+ * A291053 Number of maximal irredundant sets in the n-Andr\u00e1sfai graph.
  * @author Georg Fischer
  */
 public class A291053 extends GeneratingFunctionSequence {

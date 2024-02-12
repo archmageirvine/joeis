@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A226735 Decimal expansion of sum_{k&gt;=0} (-1)^k * (3k + 1)^(-3).
+ * A226735 Decimal expansion of Sum_{k&gt;=0} (-1)^k * (3*k + 1)^(-3).
  * Formula: (10*sqrt(3)*Pi^3+351*zeta(3))/972
  * @author Georg Fischer
  */

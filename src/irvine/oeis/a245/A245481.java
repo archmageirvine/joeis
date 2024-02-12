@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A245481 Numbers n such that the n-th cyclotomic polynomial has a root mod 13.
+ * A245481 Numbers k such that the k-th cyclotomic polynomial has a root mod 13.
  * @author Sean A. Irvine
  */
 public class A245481 extends LinearRecurrence {

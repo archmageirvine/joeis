@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A129452 Expansion of (-1+9*x^2+27*x^3) / ((1+3*x+9*x^2) *(-1+4*x+9*x^2+9*x^3-81*x^4)).
+ * A129452 Expansion of (1-9*x^2-27*x^3)/((1+3*x+9*x^2)*(1-4*x-9*x^2-9*x^3+81*x^4)).
  * @author Georg Fischer
  */
 public class A129452 extends GeneratingFunctionSequence {

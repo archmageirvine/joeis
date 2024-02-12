@@ -4,7 +4,7 @@ package irvine.oeis.a113;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A113291 a(n) = A113290(n, 1)/(n+1) for n&gt;=0, where A113290 is the matrix log of triangle A113287.
+ * A113291 a(n) = A113290(n,1)/(n+1) for n&gt;=0, where A113290 is the matrix log of triangle A113287.
  * diffeqtorec(-A(x)*(2+3*x+2*x^2)*(1+x)+x^3*(2+x)+x^3*(1+x)^2*diff(A(x), x), A(x), a(n));
  * @author Georg Fischer
  */

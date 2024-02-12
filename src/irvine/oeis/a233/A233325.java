@@ -3,7 +3,7 @@ package irvine.oeis.a233;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A233325 (2*6^(n+1) - 7) / 5.
+ * A233325 a(n) = (2*6^(n+1) - 7) / 5.
  * @author Sean A. Irvine
  */
 public class A233325 extends LinearRecurrence {

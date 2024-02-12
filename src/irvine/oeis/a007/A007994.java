@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A007994 Poincar\u00e9 series [or Poincare series] of Lie algebra associated with a certain braid group.
+ * A007994 Poincar\u00e9 series (or Poincare series) of Lie algebra associated with a certain braid group.
  * @author Sean A. Irvine
  */
 public class A007994 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000048;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A195095 G.f.: Sum_{n&gt;=1} -moebius(2*n)*x^n/(1 - 2*x^n).
+ * A195095 Duplicate of A011946.
  * @author Georg Fischer
  */
 public class A195095 extends SimpleTransformSequence {

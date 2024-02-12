@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A188554 Number of 3Xn binary arrays without the pattern 0 1 diagonally, vertically, antidiagonally or horizontally.
+ * A188554 Number of 3 X n binary arrays without the pattern 0 1 diagonally, vertically, antidiagonally or horizontally.
  * @author Georg Fischer
  */
 public class A188554 extends LambdaSequence {

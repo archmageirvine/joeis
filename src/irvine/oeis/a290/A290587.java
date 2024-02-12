@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A290587 Number of irredundant sets in the n-Andrasfai graph.
+ * A290587 Number of irredundant sets in the n-Andr\u00e1sfai graph.
  * @author Georg Fischer
  */
 public class A290587 extends GeneratingFunctionSequence {

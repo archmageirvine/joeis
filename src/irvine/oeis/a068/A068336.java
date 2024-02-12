@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A068334 a(1) = 1; a(n+1) = 1 + Product_{k|n} a(k), product is over the positive divisors, k, of n.
+ * A068336 a(1) = 1; a(n+1) = 1 + sum{k|n} a(k), sum is over the positive divisors, k, of n.
  * @author Sean A. Irvine
  */
 public class A068336 extends CachedSequence {

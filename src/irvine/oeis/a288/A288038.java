@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A288038 Number of independent vertex sets in the n-Andrasfai graph.
+ * A288038 Number of independent vertex sets in the n-Andr\u00e1sfai graph.
  * @author Sean A. Irvine
  */
 public class A288038 extends LinearRecurrence {

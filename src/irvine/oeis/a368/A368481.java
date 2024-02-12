@@ -4,7 +4,7 @@ package irvine.oeis.a368;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A368481 The degree of polynomials related to Somos-5 sequences. Also for n &gt; 3 the degree of the (n-4)-th involution in a family of involutions in the Cremona group of rank 4 defined by a Somos-5 sequence.
+ * A368481 The degree of polynomials related to Somos-5 sequences. Also for n &gt; 4 the degree of the (n-4)-th involution in a family of involutions in the Cremona group of rank 4 defined by a Somos-5 sequence.
  * @author Georg Fischer
  */
 public class A368481 extends HolonomicRecurrence {

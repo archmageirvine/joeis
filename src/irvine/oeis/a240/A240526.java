@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A240526 2^(n-2)*(2^(n+4)-(-1)^n+13).
+ * A240526 a(n) = 2^(n-2)*(2^(n+4)-(-1)^n+13).
  * @author Sean A. Irvine
  */
 public class A240526 extends LinearRecurrence {

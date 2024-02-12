@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A302759 Number of total dominating sets in the n-Andrasfai graph.
+ * A302759 Number of total dominating sets in the n-Andr\u00e1sfai graph.
  * @author Georg Fischer
  */
 public class A302759 extends GeneratingFunctionSequence {

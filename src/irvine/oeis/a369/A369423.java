@@ -4,7 +4,7 @@ package irvine.oeis.a369;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A369423 Number of 3 X 3 Fishburn matrices with entries in the set {0, 1,...,n}.
+ * A369423 Number of 3 X 3 Fishburn matrices with entries in the set {0,1,...,n}.
  * @author Georg Fischer
  */
 public class A369423 extends GeneratingFunctionSequence {

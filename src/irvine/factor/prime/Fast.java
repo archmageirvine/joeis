@@ -13,13 +13,6 @@ public class Fast extends AbstractPrime implements Serializable {
 
   private final Feral mFeral = new Feral();
 
-  /**
-   * Strong probable prime test.
-   *
-   * @param base base to try
-   * @param n number to test
-   * @return false if number is definitely composite
-   */
   private boolean sprpTest(final long base, final long n) {
     final long minusone = n - 1L;
     int s = 0;
@@ -42,14 +35,6 @@ public class Fast extends AbstractPrime implements Serializable {
     return false;
   }
 
-  /**
-   * Test if the given number is prime. If the return value is false then the
-   * number is definitely composite. If the return value is true then the number
-   * is a probable prime.
-   *
-   * @param n value to test
-   * @return true if n is a (probable) prime, false if n is composite
-   */
   @Override
   public boolean isPrime(final long n) {
     if ((n & 1) == 0) {

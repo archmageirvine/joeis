@@ -155,12 +155,6 @@ public final class Feral implements Prime, Serializable {
     return (S[(int) (m >>> 5)] & MASKS[(int) m & 0x1F]) == 0;
   }
 
-  /**
-   * Test if the given number is prime.
-   *
-   * @param n value to test
-   * @return true if n is a (probable) prime, false if n is a (probable) composite
-   */
   @Override
   public boolean isPrime(final long n) {
     if (n <= 2) {
@@ -230,17 +224,6 @@ public final class Feral implements Prime, Serializable {
     return true;
   }
 
-  /**
-   * Test if the given number is prime. Implementations may vary as to whether
-   * or not the test is provable or probabilistic but should every implementation
-   * should indicate which type of test if performed. The implementation can
-   * throw an ArithmeticException if it cannot determine the primality of the
-   * number.
-   *
-   * @param n value to test
-   * @return true if n is a (probable) prime, false if n is a (probable) composite
-   * @exception ArithmeticException if primality status cannot be determined
-   */
   @Override
   public boolean isPrime(final Z n) {
     return isPrime(n.longValueExact());

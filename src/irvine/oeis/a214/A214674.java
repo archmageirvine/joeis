@@ -1,16 +1,52 @@
 package irvine.oeis.a214;
-// manually holsig2/holos at 2023-08-08 18:53
 
-import irvine.oeis.recur.PaddingSequence;
+import irvine.factor.factor.Jaguar;
+import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A214674 Conway's subprime Fibonacci sequence.
+ * A214674 Conway&apos;s subprime Fibonacci sequence.
  * @author Georg Fischer
  */
-public class A214674 extends PaddingSequence {
+public class A214674 extends AbstractSequence {
+
+  private int mN;
+  private Z mA1;
+  private Z mA2;
 
   /** Construct the sequence. */
   public A214674() {
-    super(1, "1, 1, 2, 3, 5, 4, 3, 7, 5, 6, 11, 17, 14, 31, 15, 23, 19, 21, 20, 41, 61, 51, 56, 107, 163, 135, 149, 142, 97, 239, 168, 37, 41, 39, 40, 79, 17", "43, 48, 13, 61, 37, 49, 43, 46, 89, 45, 67, 56, 41, 97, 69, 83, 76, 53");
+    this(0, 1, 1);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param offset first index
+   * @param a1 value of a(1)
+   * @param a2 value of a(2)
+   */
+  public A214674(final int offset, final int a1, final int a2) {
+    super(offset);
+    mN = 0;
+    mA1 = Z.valueOf(a1);
+    mA2 = Z.valueOf(a2);
+  }
+
+  @Override
+  public Z next() {
+    ++mN;
+    if (mN == 1) {
+      return mA1;
+    }
+    if (mN == 2) {
+      return mA2;
+    }
+    Z result = mA1.add(mA2);
+    if (!result.isProbablePrime()) {
+      result = result.divide(Jaguar.factor(result).leastPrimeFactor());
+    }
+    mA1 = mA2;
+    mA2 = result;
+    return result;
   }
 }

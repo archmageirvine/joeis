@@ -1,5 +1,6 @@
 package irvine.oeis.a094;
 
+import irvine.math.factorial.Factorial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -9,22 +10,13 @@ import irvine.oeis.Sequence1;
  */
 public class A094096 extends Sequence1 {
 
-  private static final long[] FACTORIAL = new long[21];
-  static {
-    long f = 1;
-    for (int k = 1; k < FACTORIAL.length; ++k) {
-      f *= k;
-      FACTORIAL[k] = f;
-    }
-  }
-
   static long lg(final long x) {
     return (Double.doubleToLongBits((double) x) >>> 52) - 1023;
   }
 
   private boolean isValid(final long m, final long n) {
     final long l = 1 + lg(n);
-    final long f = FACTORIAL[(int) l];
+    final long f = Factorial.FACTORIAL[(int) l];
     //    System.out.println("m=" + m + " n="+n + " L(n)=" + l + " L(n)!=" + f);
     long s = 0;
     for (long k = 1; k <= l; ++k) {

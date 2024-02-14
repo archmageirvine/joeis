@@ -291,9 +291,11 @@ public class Polynomial<E> extends ArrayList<E> {
   /**
    * Set the indeterminate used in this polynomial. Only affects printing.
    * @param indeterminate the indeterminate
+   * @return this polynomial (for chaining operations)
    */
-  public void setIndeterminate(final String indeterminate) {
+  public Polynomial<E> setIndeterminate(final String indeterminate) {
     mIndeterminate = indeterminate;
+    return this;
   }
 
   /**

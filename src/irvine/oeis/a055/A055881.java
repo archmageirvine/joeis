@@ -1,5 +1,6 @@
 package irvine.oeis.a055;
 
+import irvine.math.factorial.Factorial;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
@@ -11,20 +12,16 @@ import irvine.oeis.Sequence1;
 public class A055881 extends Sequence1 implements DirectSequence {
 
   private int mN = 0;
-  private static final long[] FACTORIAL = {1, 1, 2, 6, 24,
-    120, 720, 5040, 40320, 362880, 3628800, 39916800, 479001600, 6227020800L, 87178291200L, 1307674368000L,
-    20922789888000L, 355687428096000L, 6402373705728000L, 121645100408832000L, 2432902008176640000L // 20!
-  };
 
   @Override
   public Z a(final Z n) {
     int k = 0;
-    final int flen = FACTORIAL.length;
-    while (k < flen && n.modZ(FACTORIAL[k]).isZero()) {
+    final int flen = Factorial.FACTORIAL.length;
+    while (k < flen && n.modZ(Factorial.FACTORIAL[k]).isZero()) {
       ++k;
     }
     if (k >= flen) {
-      Z fk = Z.valueOf(FACTORIAL[flen - 1]).multiply(k);
+      Z fk = Z.valueOf(Factorial.FACTORIAL[flen - 1]).multiply(k);
       while (n.mod(fk).isZero()) {
         ++k;
         fk = fk.multiply(k);

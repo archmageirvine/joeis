@@ -2333,3 +2333,8 @@ A067782 Minimal delay time for an n-element sorting network
 A067924 Triangle read by rows in which the n-th row gives degrees of irreducible representations of symmetric group S_n (cf. A060240) but now rows are sorted as indicated in A059797 with p(n) terms on each row, where p(n) = A000041(n). [could not determine how the ordering works here]
 A068091 Number of board-pair-pile hexagonal polyominoes with n cells
 A068313 Number of (0,1)-matrices with sum of entries equal to n and no zero rows or columns, with weakly decreasing row sums and column sums.
+A068381 Number of partitions of n X n checkerboard by two edgewise-connected sets which produce the maximum n^2-2n+2 frontier edges between the two sets.
+A068384 a(n) is the smallest number m such that any lattice having at least m elements must have a sublattice with exactly n elements.
+A068385 Number of groups of order n that are not 2-generated
+A068392 Number of partitions of n X n checkerboard into two edgewise-connected sets, counting partitions equal under rotation or reflection only once
+A068393 Number of partitions of n X n checkerboard by two edgewise-connected sets which produce the maximum n^2-2n+2 frontier edges between the two sets. Partitions equal under rotation or reflection are counted only once.

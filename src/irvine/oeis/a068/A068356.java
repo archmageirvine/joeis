@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A066926.
+ * A068356 Numbers k such that bigomega(k) = tau(prime(k)+1) where tau(k) = A000005(k).
  * @author Sean A. Irvine
  */
 public class A068356 extends A000040 {

@@ -6,10 +6,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068421 Numbers n such that sigma(n) = 6*(n - phi(n)).
+ * A068420 Numbers n such that sigma(n) = 4*(n-phi(n)).
  * @author Sean A. Irvine
  */
-public class A068421 extends Sequence1 {
+public class A068420 extends Sequence1 {
 
   private Z mN = Z.TWO;
 
@@ -18,7 +18,7 @@ public class A068421 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final FactorSequence fs = Jaguar.factor(mN);
-      if (fs.sigma().equals(mN.subtract(fs.phi()).multiply(6))) {
+      if (fs.sigma().equals(mN.subtract(fs.phi()).multiply(4))) {
         return mN;
       }
     }

@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A192948
+ * A192948 G.f. satisfies: A(x) = 1 + x*Sum_{n&gt;=0} (A(x)^5 - 1)^n.
  * "G.f.A(x) satisfies -A+1+x/(-A^5+2)=0"
  * @author Georg Fischer
  */

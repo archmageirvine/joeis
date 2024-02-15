@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A066926.
+ * A068354 Numbers n such that sigma(n)*tau(n) &gt; prime(2*n) where sigma(n) is the sum of divisors of n and tau(n) the number of divisors of n (A000005).
  * @author Sean A. Irvine
  */
 public class A068354 extends A000040 {

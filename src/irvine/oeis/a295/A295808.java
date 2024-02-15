@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A295808
+ * A295808 G.f. A(x) satisfies: A(x)^3 = 1+x + x*(A(x)^4 + A(x)^8).
  * "G.f.A(x) satisfies -A^3+1+x+x*(A^8+A^4)=0"
  * @author Georg Fischer
  */

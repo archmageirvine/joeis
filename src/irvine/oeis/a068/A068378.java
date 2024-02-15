@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061398.
+ * A068378 Numbers n such that sigma(n)^2 &gt; 9*sigma_2(n) where sigma_2(n) is the sum of squares over the divisors of n.
  * @author Sean A. Irvine
  */
 public class A068378 extends Sequence1 {

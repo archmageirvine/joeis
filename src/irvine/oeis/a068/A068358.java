@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066926.
+ * A068358 Numbers k such that the first digit of binomial(2k,k) is 1.
  * @author Sean A. Irvine
  */
 public class A068358 extends Sequence1 {

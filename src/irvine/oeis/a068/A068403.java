@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061398.
+ * A068403 Numbers k such that sigma(k) &gt; 3*k.
  * @author Sean A. Irvine
  */
 public class A068403 extends Sequence1 {

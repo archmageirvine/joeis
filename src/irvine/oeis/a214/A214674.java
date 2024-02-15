@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A214674 Conway&apos;s subprime Fibonacci sequence.
+ * A214674 Conway's subprime Fibonacci sequence.
  * @author Georg Fischer
  */
 public class A214674 extends AbstractSequence {

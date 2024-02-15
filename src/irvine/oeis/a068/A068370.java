@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061398.
+ * A068370 Numbers n such that positive values of n-(k!) are all primes (k&gt;1).
  * @author Sean A. Irvine
  */
 public class A068370 extends Sequence1 {

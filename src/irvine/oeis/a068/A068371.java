@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A061398.
+ * A068371 Primes p such that positive values of p - k! are all primes for k &gt; 1.
  * @author Sean A. Irvine
  */
 public class A068371 extends A000040 {

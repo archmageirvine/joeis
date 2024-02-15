@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061398.
+ * A068362 Numbers n such that there are exactly 4 primes p such that floor(n*log(n))+1&lt;=p&lt;=floor((n+1)*log(n+1))-1.
  * @author Sean A. Irvine
  */
 public class A068362 extends Sequence1 {

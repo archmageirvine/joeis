@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A066926.
+ * A068352 Numbers n such that n*tau(n)&gt;prime(4*n) where tau(n)=A000005(n).
  * @author Sean A. Irvine
  */
 public class A068352 extends A000040 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061398.
+ * A068372 Numbers n such that positive values of n-A002110(k) are all primes (k&gt;0).
  * @author Sean A. Irvine
  */
 public class A068372 extends Sequence1 {

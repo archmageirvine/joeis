@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061398.
+ * A068367 Numbers n such that phi(n)^2+sigma(n)^2 is prime.
  * @author Sean A. Irvine
  */
 public class A068367 extends Sequence1 {

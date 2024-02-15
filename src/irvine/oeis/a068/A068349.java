@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A066926.
+ * A068349 Numbers n having a partition n=sum x_i for which Product n/x_i is also a way of factoring n.
  * @author Sean A. Irvine
  */
 public class A068349 extends Sequence1 {

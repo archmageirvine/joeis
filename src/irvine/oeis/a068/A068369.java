@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A061398.
+ * A068369 Numerators of coefficients of a formal power series solution of f''(x) = f(f(x)).
  * @author Sean A. Irvine
  */
 public class A068369 extends Sequence0 {

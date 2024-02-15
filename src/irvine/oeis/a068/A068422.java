@@ -6,19 +6,19 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068421 Numbers n such that sigma(n) = 6*(n - phi(n)).
+ * A068422 Numbers n such that n-phi(n) divides sigma(n).
  * @author Sean A. Irvine
  */
-public class A068421 extends Sequence1 {
+public class A068422 extends Sequence1 {
 
-  private Z mN = Z.TWO;
+  private Z mN = Z.ONE;
 
   @Override
   public Z next() {
     while (true) {
       mN = mN.add(1);
       final FactorSequence fs = Jaguar.factor(mN);
-      if (fs.sigma().equals(mN.subtract(fs.phi()).multiply(6))) {
+      if (fs.sigma().mod(mN.subtract(fs.phi())).isZero()) {
         return mN;
       }
     }

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000040;
 
 /**
- * A061398.
+ * A068365 Numbers k such that sigma(k) = phi((prime(k)+prime(k+1))/2).
  * @author Sean A. Irvine
  */
 public class A068365 extends Sequence1 {

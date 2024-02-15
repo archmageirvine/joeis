@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000290;
 
 /**
- * A061398.
+ * A068373 Squares n such that positive values of n-A002110(k) are all primes (k&gt;0).
  * @author Sean A. Irvine
  */
 public class A068373 extends Sequence1 {

@@ -12,7 +12,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a066.A066925;
 
 /**
- * A066925 Numbers k having a partition k = sum x_i for which sum k/x_i is the same partition of k.
+ * A068347 Number of partitions of A066925(n) into x_i parts.
  * @author Sean A. Irvine
  */
 public class A068347 extends A066925 {

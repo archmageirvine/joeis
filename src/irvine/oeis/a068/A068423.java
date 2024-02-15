@@ -1,23 +1,25 @@
 package irvine.oeis.a068;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068404 Numbers k such that sigma(k) &gt; 4*k.
+ * A068423 Numbers k such that sigma(k) = 2*phi(k+1).
  * @author Sean A. Irvine
  */
-public class A068404 extends Sequence1 {
+public class A068423 extends Sequence1 {
 
-  private long mN = 27719;
+  private long mN = 2;
 
   @Override
   public Z next() {
     while (true) {
-      if (Jaguar.factor(++mN).sigma().compareTo(Z.valueOf(4 * mN)) > 0) {
+      if (Jaguar.factor(++mN).sigma().equals(Euler.phi(mN + 1).multiply2())) {
         return Z.valueOf(mN);
       }
     }
   }
 }
+

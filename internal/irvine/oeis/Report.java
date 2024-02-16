@@ -27,7 +27,7 @@ public final class Report {
   private Report() { }
 
   // Needs to be above maximum id currently assigned in the OEIS.
-  private static final int MAX_ID = 370000;
+  private static final int MAX_ID = 400000;
 
   private static final String QUIET_FLAG = "quiet";
   private static final String OFFSETS_FLAG = "offsets";

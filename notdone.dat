@@ -2340,3 +2340,4 @@ A068392 Number of partitions of n X n checkerboard into two edgewise-connected s
 A068393 Number of partitions of n X n checkerboard by two edgewise-connected sets which produce the maximum n^2-2n+2 frontier edges between the two sets. Partitions equal under rotation or reflection are counted only once.
 A068416	Number of partitionings of n X n checkerboard into two edgewise-connected sets.
 A068417 Number of partitionings of n X n checkerboard into three edgewise-connected sets.
+A068469 Decimal expansion of zeta(Pi).

@@ -5,17 +5,17 @@ import java.util.Arrays;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A006506 Number of n X n binary matrices with no 2 adjacent 1's, or number of configurations of non-attacking princes on an n X n board, where a "prince" attacks the four adjacent (non-diagonal) squares. Also number of independent vertex sets in an n X n grid.
  * @author Sean A. Irvine
  */
-public class A006506 extends Sequence1 {
+public class A006506 extends Sequence0 {
 
   // After Robert Gerbicz
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

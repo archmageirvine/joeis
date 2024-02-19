@@ -1,26 +1,18 @@
 package irvine.oeis.a260;
-// manually dersimple at 2022-12-15 22:48
 
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
+import irvine.oeis.PrependSequence;
+import irvine.oeis.Sequence;
+import irvine.oeis.Sequence0;
 import irvine.oeis.a054.A054440;
 
 /**
  * A260669 Number of unordered pairs of partitions of n with no common parts.
  * @author Georg Fischer
  */
-public class A260669 extends AbstractSequence {
+public class A260669 extends Sequence0 {
 
-  private final A054440 mSeq1 = new A054440();
-
-  /** Construct the sequence. */
-  public A260669() {
-    super(1);
-  }
-
-  {
-    mSeq1.next();
-  }
+  private final Sequence mSeq1 = new PrependSequence(new A054440().skip(), 2);
 
   @Override
   public Z next() {

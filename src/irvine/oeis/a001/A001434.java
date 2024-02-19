@@ -8,8 +8,15 @@ import irvine.math.z.Z;
  */
 public class A001434 extends A001430 {
 
+  private int mM = -1;
+
+  /** Construct the sequence. */
+  public A001434() {
+    super(0);
+  }
+
   @Override
   public Z next() {
-    return numberLinearGraphs(++mN, mN);
+    return ++mM == 0 ? Z.ONE : numberLinearGraphs(mM, mM);
   }
 }

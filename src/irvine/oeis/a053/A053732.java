@@ -1,15 +1,15 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A053732 Number of ways to partition {1,...,n} into arithmetic progressions of length &gt;= 1.
  * @author Sean A. Irvine
  */
-public class A053732 extends Sequence1 {
+public class A053732 extends Sequence0 {
 
-  private int mN = 0;
+  private int mN = -1;
   private int[] mValue;
   private int[] mDeltas;
   private long mCount;

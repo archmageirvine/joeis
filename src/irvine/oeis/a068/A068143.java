@@ -11,14 +11,14 @@ import irvine.oeis.a000.A000217;
  */
 public class A068143 extends Sequence1 {
 
-  private final DirectSequence mTriangular = DirectSequence.create(new A000217().skip(2));
-  private int mN = -1;
+  private final DirectSequence mTriangular = new A000217();
+  private int mN = 1;
 
   private boolean is(final Z t, final int maxIndex) {
     if (Z.ONE.equals(t)) {
       return true;
     }
-    for (int k = maxIndex; k >= 0; --k) {
+    for (int k = maxIndex; k >= 2; --k) {
       final Z[] qr = t.divideAndRemainder(mTriangular.a(k));
       if (qr[1].isZero() && is(qr[0], k)) {
         return true;

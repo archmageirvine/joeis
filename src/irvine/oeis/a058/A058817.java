@@ -16,14 +16,16 @@ public class A058817 extends A051953 {
   private final HashSet<Z> mDone = new HashSet<>();
   private final TreeSet<Z> mNext = new TreeSet<>();
   private Z mPrev = Z.ZERO;
-  private int mN = 0;
+  private int mN = -1;
   {
     super.next(); // skip 0
   }
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN == 0) {
+      return Z.ZERO;
+    }
     while (mNext.size() < HEURISTIC * mN) {
       final Z t = super.next();
       if (t.isEven() && mDone.add(t)) {

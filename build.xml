@@ -190,7 +190,6 @@
     <java classname="junit.textui.ReelTwoTestRunner" classpath="${tools.dir}/reeltwo_junit.jar:${build.dir}/joeis.jar" fork="true">
       <arg value="AllTests"/>                                    
       <jvmarg value="-Djunit.printNames=true"/>
-      <jvmarg value="-Djunit.timing=true"/>
     </java>
   </target>
 

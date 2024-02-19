@@ -1,21 +1,16 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
+import irvine.oeis.Sequence0;
 
 /**
  * A049502 Major index of n, 2nd definition.
  * @author Sean A. Irvine
  */
-public class A049502 extends AbstractSequence implements DirectSequence {
+public class A049502 extends Sequence0 implements DirectSequence {
 
   private int mN = -1;
-
-  /** Construct the sequence. */
-  public A049502() {
-    super(0);
-  }
 
   @Override
   public Z a(final int n) {
@@ -38,7 +33,7 @@ public class A049502 extends AbstractSequence implements DirectSequence {
     Z sum = Z.ZERO;
     long k = 1;
     while (m.compareTo(Z.ONE) > 0) {
-      if (m.mod(Z.THREE).equals(Z.ONE)) {
+      if (m.and(Z.THREE).equals(Z.ONE)) {
         sum = sum.add(k);
       }
       ++k;

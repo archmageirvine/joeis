@@ -11,7 +11,7 @@ import irvine.oeis.a002.A002162;
  */
 public class A067789 extends Sequence1 {
 
-  private long mN = -1;
+  private long mN = 0;
   private final Sequence mLog2 = new A002162();
 
   @Override

@@ -10,11 +10,11 @@ import irvine.oeis.AbstractSequence;
 public class A244954 extends AbstractSequence {
 
   private int mN;
-  private int mBase;
+  private final int mBase;
 
   /** Construct the sequence. */
   public A244954() {
-    this(0, 3);
+    this(1, 3);
   }
 
   /**
@@ -24,7 +24,7 @@ public class A244954 extends AbstractSequence {
    */
   public A244954(final int offset, final int base) {
     super(offset);
-    mN = -1;
+    mN = offset - 1;
     mBase = base;
   }
 

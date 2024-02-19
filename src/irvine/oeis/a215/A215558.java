@@ -1,15 +1,27 @@
 package irvine.oeis.a215;
 
-import irvine.oeis.FiniteSequence;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence1;
 
 /**
- * A215558 Cubes whose final digits are the cube root.
- * @author Georg Fischer
+ * A215558.
+ * @author Sean A. Irvine
  */
-public class A215558 extends FiniteSequence {
+public class A215558 extends Sequence1 {
 
-  /** Construct the sequence. */
-  public A215558() {
-    super(1, FINITE, 0, 1, 64, 125, 216, 729, 13824, 15625, 117649, 132651, 421875, 438976, 970299);
+  private long mN = -1;
+  private long mMod = 10;
+
+  @Override
+  public Z next() {
+    while (true) {
+      if (++mN == mMod) {
+        mMod *= 10;
+      }
+      final Z n3 = Z.valueOf(mN).pow(3);
+      if (n3.mod(mMod) == mN) {
+        return n3;
+      }
+    }
   }
 }

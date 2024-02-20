@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A215558.
+ * A215558 Cubes whose final digits are the cube root.
  * @author Sean A. Irvine
  */
 public class A215558 extends Sequence1 {

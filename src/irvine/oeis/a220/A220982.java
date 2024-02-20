@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A220982 6^(4n+2) + 6^(3n+2) + 3 * 6^(2n+1) + 6^(n+1) + 1: the right Aurifeuillian factor of 6^(12n+6) + 1.
+ * A220982 a(n) = 6^(4n+2) + 6^(3n+2) + 3 * 6^(2n+1) + 6^(n+1) + 1: the right Aurifeuillian factor of 6^(12n+6) + 1.
  * @author Sean A. Irvine
  */
 public class A220982 extends LinearRecurrence {

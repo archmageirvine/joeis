@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A216100 11^n mod 100.
+ * A216100 a(n) = 11^n mod 100.
  * @author Sean A. Irvine
  */
 public class A216100 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a219;
 // DO NOT EDIT here!
 
 /**
- * A219088 Floor((n + 1/2)^5).
+ * A219088 a(n) = floor((n + 1/2)^5).
  * @author Georg Fischer
  */
 public class A219088 extends A219085 {

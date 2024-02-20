@@ -5,7 +5,7 @@ package irvine.oeis.a110;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A110556 a(n) = binomial(2*n-1,n)*(-1)^n for n&gt;0; a(0) = 1.
+ * A110556 a(n) = binomial(2*n-1, n)*(-1)^n.
  * @author Georg Fischer
  */
 public class A110556 extends HolonomicRecurrence {

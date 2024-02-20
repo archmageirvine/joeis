@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001221;
 import irvine.oeis.a008.A008683;
 
 /**
- * A158210 Number omega(n) of distinct primes dividing n multiplied by -1 when n is squarefree (thus Omega(n) = omega(n)).
+ * A158210 a(n) = omega(n) * (-1)^mu(n), where mu is the Moebius function.
  * @author Georg Fischer
  */
 public class A158210 extends Sequence1 {

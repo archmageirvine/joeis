@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a048.A048751;
 
 /**
- * A120736 Numbers n such that every prime p that divides d(n) (A000005) also divides n.
+ * A120736 Numbers k such that every prime p that divides d(k) (A000005) also divides k.
  * @author Georg Fischer
  */
 public class A120736 extends PrependSequence {

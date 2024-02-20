@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A059303 Numbers n such that floor(e^n) + 1 is prime.
+ * A059303 Numbers k such that floor(e^k) + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A059303 extends Sequence1 {

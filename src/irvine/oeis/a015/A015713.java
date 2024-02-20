@@ -5,7 +5,7 @@ import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
 /**
- * A015713 phi(n) * sigma(n) + k^2 is not a square for any k.
+ * A015713 Numbers m such that phi(m) * sigma(m) + k^2 is not a square for any k.
  * @author Sean A. Irvine
  */
 public class A015713 extends Sequence1 implements Conjectural {

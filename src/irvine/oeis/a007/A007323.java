@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A007323 The number of numerical semigroups of "genus" n; conjecturally also the number of power sum bases for symmetric functions in n variables.
+ * A007323 The number of numerical semigroups of genus n; conjecturally also the number of power sum bases for symmetric functions in n variables.
  * @author Sean A. Irvine
  */
 public class A007323 extends Sequence0 {

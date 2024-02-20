@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A029581 All digits are composite.
+ * A029581 Numbers in which all digits are composite.
  * @author Sean A. Irvine
  */
 public class A029581 extends Sequence1 {

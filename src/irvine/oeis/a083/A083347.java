@@ -6,7 +6,7 @@ import irvine.oeis.a003.A003415;
 import irvine.oeis.a157.A157037;
 
 /**
- * A083347 Numbers n such that Sum(e/p: n=Product(p^e)) &lt; 1.
+ * A083347 Numbers k such that Sum(e/p: k=Product(p^e)) &lt; 1.
  * @author Georg Fischer
  */
 public class A083347 extends A157037 {

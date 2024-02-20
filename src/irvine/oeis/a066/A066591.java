@@ -9,21 +9,19 @@ import irvine.oeis.a000.A000040;
  */
 public class A066591 extends A000040 {
 
-  private boolean is(final String p) {
-    long k = -1;
-    while (true) {
-      final long s = ++k * k;
-      final String t = String.valueOf(s);
-      if (t.length() > p.length()) {
-        return false;
-      }
-      if (p.equals(t)) {
-        return true;
-      }
-      if (p.startsWith(t) && is(p.substring(t.length()))) {
+  private boolean is(Z n) {
+    if (n.isZero()) {
+      return true;
+    }
+    Z m = Z.ONE;
+    while (m.compareTo(n) <= 0) {
+      m = m.multiply(10);
+      final Z[] qr = n.divideAndRemainder(m);
+      if (qr[1].isSquare() && is(qr[0])) {
         return true;
       }
     }
+    return false;
   }
 
   @Override
@@ -31,9 +29,10 @@ public class A066591 extends A000040 {
     while (true) {
       final Z p = super.next();
       final long r = p.mod(10);
-      if ((r == 1 || r == 9) && is(p.toString())) {
+      if ((r == 1 || r == 9) && is(p)) {
         return p;
       }
     }
   }
 }
+

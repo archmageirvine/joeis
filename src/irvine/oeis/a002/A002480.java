@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A002480 Numbers of form 2x^2 + 3y^2.
+ * A002480 Numbers of the form 2x^2 + 3y^2.
  * @author Sean A. Irvine
  */
 public class A002480 extends Sequence1 {

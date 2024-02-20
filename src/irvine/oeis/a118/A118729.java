@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A118729 Infinite square array which contains the 8 numbers 4*r^2 - 3*r, 4*r^2 - 2*r, ..., 4*r^2 + 4*r in row r.
+ * A118729 Rectangular array where row r contains the 8 numbers 4*r^2 - 3*r, 4*r^2 - 2*r, ..., 4*r^2 + 4*r.
  * @author Sean A. Irvine
  */
 public class A118729 extends LinearRecurrence {

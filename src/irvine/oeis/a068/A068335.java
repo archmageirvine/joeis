@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068335 Numbers n such that 3^tau(n)&lt;=n&lt;3*3^tau(n).
+ * A068335 Numbers k such that 3^tau(k) &lt;= k &lt; 2*3^tau(k).
  * @author Sean A. Irvine
  */
 public class A068335 extends Sequence1 {

@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A220980 5^(4n+2) + 5^(3n+2) + 3 * 5^(2n+1) + 5^(n+1) + 1: the right Aurifeuillian factor of 5^(10n+5) - 1.
+ * A220980 a(n) = 5^(4n+2) + 5^(3n+2) + 3 * 5^(2n+1) + 5^(n+1) + 1: the right Aurifeuillian factor of 5^(10n+5) - 1.
  * @author Sean A. Irvine
  */
 public class A220980 extends LinearRecurrence {

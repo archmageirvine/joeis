@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A217975 2*n^2 - 7 is a square.
+ * A217975 Integers k such that 2*k^2 - 7 is a square.
  * @author Sean A. Irvine
  */
 public class A217975 extends LinearRecurrence {

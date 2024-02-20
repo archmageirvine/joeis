@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A221074 Simple continued fraction expansion of an infinite product.
+ * A221074 Simple continued fraction expansion of product {n &gt;= 0} {1 - sqrt(m)*[sqrt(m) - sqrt(m-1)]^(4*n+3)}/{1 - sqrt(m)*[sqrt(m) - sqrt(m-1)]^(4*n+1)} at m = 3.
  * @author Georg Fischer
  */
 public class A221074 extends GeneratingFunctionSequence {

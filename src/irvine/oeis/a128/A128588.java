@@ -4,7 +4,7 @@ package irvine.oeis.a128;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A128588 A007318 * A128587.
+ * A128588 Expansion of g.f. x*(1+x+x^2)/(1-x-x^2).
  * @author Georg Fischer
  */
 public class A128588 extends LinearRecurrence {

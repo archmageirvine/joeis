@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a036.A036442;
 
 /**
- * A246534 a(n) = Sum_{k=1..n} 2^(T(k)-1), where T(k)=k(k+1)/2 are the triangular numbers A000217; for n=0 the empty sum a(0)=0.
+ * A246534 a(n) = Sum_{k=1..n} 2^(T(k)-1), where T(k)=k(k+1)/2 = A000217(k).
  * @author Sean A. Irvine
  */
 public class A246534 extends PartialSumSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A068445.
+ * A068474 Numbers k such that phi((prime(k)-1)/2) = sigma(k).
  * @author Sean A. Irvine
  */
 public class A068474 extends A000040 {

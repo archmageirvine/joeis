@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A370160 allocated for Douglas Boffey.
+ * A370160 Coefficient of x^n in the expansion of ( (1+x)^2 * (1+x+x^2)^2 )^n.
  * @author Georg Fischer
  */
 public class A370160 extends LambdaSequence {

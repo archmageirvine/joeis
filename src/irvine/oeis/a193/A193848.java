@@ -4,7 +4,7 @@ package irvine.oeis.a193;
 import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
- * A193848 Triangular array:  (1/2)*A193846.
+ * A193848 Triangular array: (1/2)*A193846.
  * @author Georg Fischer
  */
 public class A193848 extends GeneratingFunctionTriangle {

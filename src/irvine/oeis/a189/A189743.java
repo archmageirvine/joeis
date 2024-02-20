@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A189743 a(1)=4,  a(2)=4, a(n)=4*a(n-1) + 4*a(n-2).
+ * A189743 a(1)=4,  a(2)=4, a(n) = 4*a(n-1) + 4*a(n-2).
  * @author Sean A. Irvine
  */
 public class A189743 extends LinearRecurrence {

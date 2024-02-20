@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064896 Numbers of the form (2^{mr}-1)/(2^r-1) for positive integers m, r.
+ * A064896 Numbers of the form (2^(m*r)-1)/(2^r-1) for positive integers m, r.
  * @author Sean A. Irvine
  */
 public class A064896 extends Sequence1 {

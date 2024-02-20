@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A221195 Simple continued fraction expansion of an infinite product.
+ * A221195 Simple continued fraction expansion of product {k &gt;= 0} (1 - 2*(N - sqrt(N^2-1))^(4*k+3))/(1 - 2*(N - sqrt(N^2-1))^(4*k+1)) at N = 5.
  * @author Sean A. Irvine
  */
 public class A221195 extends LinearRecurrence {

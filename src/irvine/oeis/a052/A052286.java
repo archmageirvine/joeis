@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A052286 Primes p such that f(p) &gt; f(q) for all q &lt; p, where f(n) is the sum of factorials of the digits of n if that sum is the square of a prime, otherwise f(n)=0.
+ * A052286 Primes p such that f(p) &gt; f(q) for all primes q &lt; p, where f(n) is the sum of factorials of the digits of n if that sum is the square of a prime, otherwise f(n)=0.
  * @author Sean A. Irvine
  */
 public class A052286 extends A000040 {

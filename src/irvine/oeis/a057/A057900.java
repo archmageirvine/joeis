@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A057900 Numbers n such that 3^n + n is prime.
+ * A057900 Numbers k such that 3^k + k is prime.
  * @author Sean A. Irvine
  */
 public class A057900 extends Sequence1 {

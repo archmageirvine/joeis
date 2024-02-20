@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A141907 a(n) = sum(mod(sum((-1)^j*binomial(n + 1, j)*(k + 1 - j)^n, j=0..k+1), 10)*10^k, k=0..n-1).
+ * A141907 a(n) = Sum_{k=0..n-1} (Sum_{j=0..k+1} (-1)^j*binomial(n + 1, j)*(k + 1 - j)^n) mod 10 * 10^k.
  * a(n)=sum(k=0,n-1,mod(sum(j=0,k+1,(-1)^j*binom(n+1,j)*(k+1-j)^n),10)*10^k)
  * @author Georg Fischer
  */

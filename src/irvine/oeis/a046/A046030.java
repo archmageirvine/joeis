@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A046030 Digits are squares.
+ * A046030 Numbers whose digits are squares.
  * @author Sean A. Irvine
  */
 public class A046030 extends Sequence0 {

@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A220511 n^5 + 5n + 5^n.
+ * A220511 a(n) = n^5 + 5*n + 5^n.
  * @author Sean A. Irvine
  */
 public class A220511 extends LinearRecurrence {

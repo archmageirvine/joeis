@@ -7,7 +7,7 @@ import irvine.oeis.a031.A031971;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A068445.
+ * A068477 a(n) is the digital sum of 1^n + 2^n + ... + n^n.
  * @author Sean A. Irvine
  */
 public class A068477 extends SimpleTransformSequence {

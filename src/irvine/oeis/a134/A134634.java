@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000108;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A134634 Triangle formed by Pascal's rule with left borders = A000108.
+ * A134634 Triangle formed by Pascal's rule with borders = A000108.
  * @author Georg Fischer
  */
 public class A134634 extends WrappedRecurrence {

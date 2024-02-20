@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A178834 a(n) counts anti-chains of size two in &quot;0,1,2&quot; Motzkin trees on n edges.
+ * A178834 a(n) counts anti-chains of size two in "0,1,2" Motzkin trees on n edges.
  * @author Georg Fischer
  */
 public class A178834 extends HolonomicRecurrence {

@@ -3,8 +3,8 @@ package irvine.math.group;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
+import irvine.math.api.Field;
 import irvine.math.api.Matrix;
-import irvine.math.api.Ring;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
 import irvine.util.AbstractIterator;
@@ -19,12 +19,12 @@ public class GeneralLinearGroup<E> extends AbstractGroup<Matrix<E>> {
 
   /*
    * Mostly this is implemented by proxying the calls through to a more
-   * general matrix ring.  Thus add in the general linear group
-   * corresponds to a multiply in the matrix ring of the same size.
+   * general matrix ring.  Add in the general linear group corresponds
+   * to multiply in the matrix ring of the same size.
    */
 
   protected final int mSize;
-  protected final Ring<E> mElementRing;
+  protected final Field<E> mElementField;
   protected final MatrixRing<E> mMatrixRing;
   protected final E mZero;
 
@@ -36,13 +36,13 @@ public class GeneralLinearGroup<E> extends AbstractGroup<Matrix<E>> {
   /**
    * Construct a new general linear group for matrices of a specified size.
    * @param size number of rows and columns
-   * @param elementRing ring of underlying elements
+   * @param elementField field of underlying elements
    */
-  public GeneralLinearGroup(final int size, final Ring<E> elementRing) {
+  public GeneralLinearGroup(final int size, final Field<E> elementField) {
     mSize = size;
-    mElementRing = elementRing;
-    mZero = mElementRing.zero();
-    mMatrixRing = new MatrixRing<>(size, elementRing);
+    mElementField = elementField;
+    mZero = mElementField.zero();
+    mMatrixRing = new MatrixRing<>(size, elementField);
     mZeroMatrix = mMatrixRing.one();
   }
 
@@ -67,7 +67,7 @@ public class GeneralLinearGroup<E> extends AbstractGroup<Matrix<E>> {
   public Z size() {
     // There is a theorem that says if the underlying field is infinite,
     // then so is the general linear group.
-    final Z q = mElementRing.size();
+    final Z q = mElementField.size();
     if (q == null) {
       return null;
     }
@@ -75,10 +75,10 @@ public class GeneralLinearGroup<E> extends AbstractGroup<Matrix<E>> {
     Z s = Z.ONE;
     final int n = mSize;
     final Z qn = q.pow(n);
-    Z p = Z.ONE;
+    Z qk = Z.ONE;
     for (int k = 0; k < n; ++k) {
-      s = s.multiply(qn.subtract(p));
-      p = p.multiply(q);
+      s = s.multiply(qn.subtract(qk));
+      qk = qk.multiply(q);
     }
     return s;
   }
@@ -95,19 +95,23 @@ public class GeneralLinearGroup<E> extends AbstractGroup<Matrix<E>> {
 
   @Override
   public String toString() {
-    return "GL_{" + mSize + "}(" + mElementRing + ")";
+    return "GL_{" + mSize + "}(" + mElementField + ")";
   }
 
   private static final class GeneralLinearIterator<E> extends AbstractIterator<Matrix<E>> {
 
     private final E mZero;
+    private final E mOne;
     private final MatrixRing<E> mMatrixRing;
+    private final Field<E> mElementField;
     private final Iterator<Matrix<E>> mMatrixIterator;
     private Matrix<E> mNext = null;
 
-    private GeneralLinearIterator(final E zero, final MatrixRing<E> ring) {
-      mZero = zero;
+    private GeneralLinearIterator(final MatrixRing<E> ring, final Field<E> elementField) {
       mMatrixRing = ring;
+      mElementField = elementField;
+      mZero = elementField.zero();
+      mOne = elementField.one();
       mMatrixIterator = ring.iterator();
     }
 
@@ -119,7 +123,8 @@ public class GeneralLinearGroup<E> extends AbstractGroup<Matrix<E>> {
       while (mMatrixIterator.hasNext()) {
         final Matrix<E> m = mMatrixIterator.next();
         final E det = mMatrixRing.det(m);
-        if (!mZero.equals(det)) {
+        // Check matrix is invertible. Determinant needs to be non-zero and invertible in element field
+        if (!mZero.equals(det) && mOne.equals(mElementField.multiply(mElementField.inverse(det), det))) {
           mNext = m;
           return true;
         }
@@ -140,11 +145,11 @@ public class GeneralLinearGroup<E> extends AbstractGroup<Matrix<E>> {
 
   @Override
   public Iterator<Matrix<E>> iterator() {
-    return new GeneralLinearIterator<>(mZero, mMatrixRing);
+    return new GeneralLinearIterator<>(mMatrixRing, mElementField);
   }
 
   @Override
   public CycleIndex cycleIndex() {
-    return GeneralLinearCycleIndex.cycleIndex(mSize, mElementRing);
+    return GeneralLinearCycleIndex.cycleIndex(mSize, mElementField);
   }
 }

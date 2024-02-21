@@ -2,7 +2,7 @@ package irvine.oeis.a053;
 
 import java.util.Map;
 
-import irvine.math.api.Ring;
+import irvine.math.api.Field;
 import irvine.math.group.GaloisField;
 import irvine.math.group.GeneralLinearGroup;
 import irvine.math.polynomial.CycleIndex;
@@ -19,7 +19,7 @@ import irvine.util.Pair;
 public class A053718 extends AbstractSequence {
 
   private int mN;
-  private final Ring<Z> mFld;
+  private final Field<Z> mFld;
   private final Z mMaxOrder;
 
   protected A053718(final long maxOrder, final GaloisField field, final int start) {

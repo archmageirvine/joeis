@@ -2,7 +2,7 @@ package irvine.oeis.a058;
 
 import java.util.Map;
 
-import irvine.math.api.Ring;
+import irvine.math.api.Field;
 import irvine.math.group.GaloisField;
 import irvine.math.group.GeneralLinearGroup;
 import irvine.math.polynomial.CycleIndex;
@@ -22,7 +22,7 @@ import irvine.util.Pair;
 public class A058502 extends Sequence1 {
 
   private int mN = 0;
-  private final Ring<Z> mFld;
+  private final Field<Z> mFld;
   private final Sequence mA;
 
   protected A058502(final GaloisField field, final Sequence nonsingular) {

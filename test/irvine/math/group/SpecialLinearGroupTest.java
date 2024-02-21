@@ -1,10 +1,9 @@
 package irvine.math.group;
 
-import irvine.math.api.Matrix;
-import irvine.math.z.Z;
-
 import java.util.Iterator;
 
+import irvine.math.api.Matrix;
+import irvine.math.z.Z;
 import junit.framework.TestCase;
 
 /**
@@ -14,8 +13,8 @@ import junit.framework.TestCase;
 public class SpecialLinearGroupTest extends TestCase {
 
   public void testSize3() {
-    final IntegersMod z3 = new IntegersMod(3);
-    final SpecialLinearGroup<Z> g = new SpecialLinearGroup<>(3, z3);
+    final GaloisField gf3 = new GaloisField(3);
+    final SpecialLinearGroup<Z> g = new SpecialLinearGroup<>(3, gf3);
     final Z size = g.size();
     assertNotNull(size);
     final Iterator<Matrix<Z>> it = g.iterator();
@@ -28,8 +27,8 @@ public class SpecialLinearGroupTest extends TestCase {
   }
 
   public void testSize5() {
-    final IntegersMod z5 = new IntegersMod(5);
-    final SpecialLinearGroup<Z> g = new SpecialLinearGroup<>(2, z5);
+    final GaloisField gf5 = new GaloisField(5);
+    final SpecialLinearGroup<Z> g = new SpecialLinearGroup<>(2, gf5);
     final Z size = g.size();
     assertNotNull(size);
     final Iterator<Matrix<Z>> it = g.iterator();

@@ -2,9 +2,9 @@ package irvine.oeis.a062;
 
 import java.util.HashSet;
 
+import irvine.math.api.Field;
 import irvine.math.api.Group;
 import irvine.math.api.Matrix;
-import irvine.math.api.Ring;
 import irvine.math.group.GaloisField;
 import irvine.math.group.SpecialLinearGroup;
 import irvine.math.z.Z;
@@ -20,7 +20,7 @@ public class A062314 extends Sequence1 {
   // There is likely some kind of cycle index solution for this (cf. A058502).
 
   private int mN = 0;
-  private final Ring<Z> mFld;
+  private final Field<Z> mFld;
 
   protected A062314(final GaloisField field) {
     mFld = field;

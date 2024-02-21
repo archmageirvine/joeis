@@ -3,8 +3,8 @@ package irvine.math.group;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
+import irvine.math.api.Field;
 import irvine.math.api.Matrix;
-import irvine.math.api.Ring;
 import irvine.math.z.Z;
 import irvine.util.AbstractIterator;
 
@@ -27,17 +27,17 @@ public class SpecialLinearGroup<E> extends GeneralLinearGroup<E> {
    * Construct a new special linear group for matrices of a specified size.
    *
    * @param size number of rows and columns
-   * @param elementRing ring of underlying elements
+   * @param elementField field of underlying elements
    */
-  public SpecialLinearGroup(final int size, final Ring<E> elementRing) {
-    super(size, elementRing);
-    mOne = elementRing.one();
+  public SpecialLinearGroup(final int size, final Field<E> elementField) {
+    super(size, elementField);
+    mOne = elementField.one();
   }
 
   @Override
   public Z size() {
     final Z size = super.size();
-    return size == null ? null : size.divide(mElementRing.size().subtract(1));
+    return size == null ? null : size.divide(mElementField.size().subtract(1));
   }
 
   @Override
@@ -47,7 +47,7 @@ public class SpecialLinearGroup<E> extends GeneralLinearGroup<E> {
 
   @Override
   public String toString() {
-    return "SL_{" + mSize + "}(" + mElementRing + ")";
+    return "SL_{" + mSize + "}(" + mElementField + ")";
   }
 
   private static final class SpecialLinearIterator<E> extends AbstractIterator<Matrix<E>> {

@@ -35,7 +35,6 @@ public class GeneralLinearGroup<E> extends AbstractGroup<Matrix<E>> {
 
   /**
    * Construct a new general linear group for matrices of a specified size.
-   *
    * @param size number of rows and columns
    * @param elementRing ring of underlying elements
    */
@@ -66,13 +65,13 @@ public class GeneralLinearGroup<E> extends AbstractGroup<Matrix<E>> {
 
   @Override
   public Z size() {
-    // There is a theorem that says if the underlying field is infinite
-    // in size, then so is the general linear group.
+    // There is a theorem that says if the underlying field is infinite,
+    // then so is the general linear group.
     final Z q = mElementRing.size();
     if (q == null) {
       return null;
     }
-    // Otherwise it is prod_{k=0}^{n-1}(q^n-q^k) where q is field size
+    // Otherwise, it is prod_{k=0}^{n-1}(q^n-q^k) where q is field size
     Z s = Z.ONE;
     final int n = mSize;
     final Z qn = q.pow(n);
@@ -119,7 +118,8 @@ public class GeneralLinearGroup<E> extends AbstractGroup<Matrix<E>> {
       }
       while (mMatrixIterator.hasNext()) {
         final Matrix<E> m = mMatrixIterator.next();
-        if (!mZero.equals(mMatrixRing.det(m))) {
+        final E det = mMatrixRing.det(m);
+        if (!mZero.equals(det)) {
           mNext = m;
           return true;
         }

@@ -17,7 +17,17 @@ import irvine.oeis.Sequence0;
  */
 public class A068142 extends Sequence0 {
 
+  private final Z mStart;
   private Z mA = null;
+
+  protected A068142(final long start) {
+    mStart = Z.valueOf(start);
+  }
+
+  /** Construct the sequence. */
+  public A068142() {
+    this(21);
+  }
 
   private List<Z> pm(final List<Z> lst) {
     if (lst.size() == 1) {
@@ -65,7 +75,7 @@ public class A068142 extends Sequence0 {
   @Override
   public Z next() {
     if (mA == null) {
-      mA = Z.valueOf(21);
+      mA = mStart;
     } else {
       mA = nextTri(mA);
     }

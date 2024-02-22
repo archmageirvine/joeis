@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000040;
  */
 public class A066591 extends A000040 {
 
-  private boolean is(Z n) {
+  private boolean is(final Z n) {
     if (n.isZero()) {
       return true;
     }

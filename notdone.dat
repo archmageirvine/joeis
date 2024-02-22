@@ -2343,3 +2343,4 @@ A068417 Number of partitionings of n X n checkerboard into three edgewise-connec
 A068469 Decimal expansion of zeta(Pi).
 A068471 Number of n X n binary matrices with each 1 having at most 2 adjacent 1's.
 A068472	Number of n X n binary matrices with every 1 having at most 3 adjacent 1's.
+A068529 k values for self-contained numbers.

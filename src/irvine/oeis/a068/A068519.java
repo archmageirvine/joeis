@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068517.
+ * A068519 If n is prime then a(n) = n, else a(n) = prime(n).
  * @author Sean A. Irvine
  */
 public class A068519 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A068493 Primes which are concatenations of squares.
+ * A068493 Primes which are concatenations of positive squares.
  * @author Sean A. Irvine
  */
 public class A068493 extends A000040 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A066591 Primes which can be expressed as a concatenation of squares.
+ * A066591 Primes which can be expressed as a concatenation of nonnegative squares.
  * @author Sean A. Irvine
  */
 public class A066591 extends A000040 {

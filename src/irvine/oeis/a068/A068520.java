@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068520.
+ * A068520 Numbers n which can be transformed into a true arithmetic statement by inserting zero or more parentheses and elementary arithmetic operators ((, ), +, -, *, /) and one equality sign (=) as the rightmost insertion into the decimal representation of n.
  * @author Sean A. Irvine
  */
 public class A068520 extends Sequence1 {

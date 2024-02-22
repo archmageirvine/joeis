@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068517.
+ * A068518 The sequence S(n,-3,1,1), where S(r,k,t,q) is defined by Sum(0&lt;=j&lt;=r){combin(r+q,j)^t*B(j,k)} and B(j,k) is the j-th k-poly-Bernoulli number.
  * @author Sean A. Irvine
  */
 public class A068518 extends Sequence0 {

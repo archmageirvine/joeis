@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068517.
+ * A068517 a(2n) = concatenation of 4n+1 and 4n+2, a(2n+1) = concatenation of the two most nearly equal numbers whose product is a(2n).
  * @author Sean A. Irvine
  */
 public class A068517 extends Sequence0 {

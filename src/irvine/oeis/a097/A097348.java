@@ -16,6 +16,6 @@ public class A097348 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A097348() {
-    super(0, REALS.acsch(CR.TWO).divide(CR.TEN.log()));
+    super(0, REALS.acsch(CR.TWO).divide(CR.LOG10));
   }
 }

@@ -10,13 +10,11 @@ import irvine.oeis.a000.A000142;
  */
 public class A063979 extends A000142 {
 
-  private static final CR LOG10 = CR.TEN.log();
-
   @Override
   public Z next() {
     final CR z = CR.valueOf(super.next());
     final CR c1 = z.log().multiply(z).subtract(z).add(z.multiply(CR.TAU).log().multiply(CR.HALF).add(z.multiply(12).inverse()));
-    return c1.divide(LOG10).floor().add(1);
+    return c1.divide(CR.LOG10).floor().add(1);
   }
 }
 

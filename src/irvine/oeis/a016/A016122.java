@@ -13,12 +13,10 @@ public class A016122 extends DecimalExpansionSequence {
   // Solution to log10(x) == x - 4; that is, 4.6692 ...
   // f(x) = log10(x) - x + 4
 
-  private static final CR LOG_TEN = CR.TEN.log();
-
   private static class MyFunction extends UnaryCRFunction {
     @Override
     public CR execute(final CR x) {
-      return x.log().divide(LOG_TEN).subtract(x).add(CR.FOUR);
+      return x.log10().subtract(x).add(CR.FOUR);
     }
   }
 

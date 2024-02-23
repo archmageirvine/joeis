@@ -15,6 +15,6 @@ public class A240995 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A240995() {
-    super(0, REALS.pow(CR.PI, CR.TWO).divide(CR.valueOf(12).multiply(CR.TWO.log()).multiply(CR.TEN.log())));
+    super(0, REALS.pow(CR.PI, CR.TWO).divide(CR.valueOf(12).multiply(CR.TWO.log()).multiply(CR.LOG10)));
   }
 }

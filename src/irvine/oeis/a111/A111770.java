@@ -15,6 +15,6 @@ public class A111770 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A111770() {
-    super(0, CR.ONE.divide(REALS.tan(CR.PI.divide(CR.valueOf(180))).log().divide(CR.TEN.log()).abs()));
+    super(0, CR.ONE.divide(REALS.tan(CR.PI.divide(CR.valueOf(180))).log().divide(CR.LOG10).abs()));
   }
 }

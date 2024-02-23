@@ -23,7 +23,6 @@ public class A034886 extends AbstractSequence {
     super(0);
   }
 
-  private static final CR LOG10 = CR.TEN.log();
   protected long mN = -1;
   private Z mF = Z.ONE;
 
@@ -32,7 +31,7 @@ public class A034886 extends AbstractSequence {
     if (++mN > 1) {
       mF = mF.multiply(mN);
     }
-    return CR.valueOf(mF).log().divide(LOG10).floor().add(1);
+    return CR.valueOf(mF).log10().floor().add(1);
   }
 }
 

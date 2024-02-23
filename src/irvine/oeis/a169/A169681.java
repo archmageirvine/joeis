@@ -36,9 +36,7 @@ public class A169681 extends DecimalExpansionSequence {
    * @return or real value
    */
   protected static CR getCR(final int base, final CR expr) {
-    return CR.TEN.pow((expr.multiply(CR.valueOf(base)).log().divide(CR.TEN.log())
-      ).frac(NBRDGT + expr.log().divide(CR.TEN.log()).floor().intValue() + 2)
-      );
+    return CR.TEN.pow((expr.multiply(CR.valueOf(base)).log10()).frac(NBRDGT + expr.log10().floor().intValue() + 2));
   }
 
   @Override

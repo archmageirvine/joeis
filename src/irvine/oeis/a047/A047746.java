@@ -10,13 +10,12 @@ import irvine.oeis.Sequence2;
  */
 public class A047746 extends Sequence2 {
 
-  private static final CR LN10 = CR.TEN.log();
   private long mN = 1;
   private CR mSum = CR.ZERO;
 
   @Override
   public Z next() {
     mSum = mSum.add(CR.valueOf(++mN).log().inverse());
-    return mSum.multiply(LN10).floor();
+    return mSum.multiply(CR.LOG10).floor();
   }
 }

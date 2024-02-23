@@ -24,7 +24,7 @@ public class A210062 extends Sequence0 {
    */
   public A210062(final int num) {
     mN = -1;
-    mLog = CR.valueOf(num).log().divide(CR.TEN.log());
+    mLog = CR.valueOf(num).log10();
   }
 
   @Override

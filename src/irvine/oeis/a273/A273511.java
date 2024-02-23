@@ -12,6 +12,6 @@ public class A273511 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A273511() {
-    super(2, CR.TEN.log(), 2);
+    super(2, CR.LOG10, 2);
   }
 }

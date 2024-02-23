@@ -10,7 +10,6 @@ import irvine.oeis.Sequence1;
  */
 public class A068075 extends Sequence1 {
 
-  private static final CR LOG10 = CR.TEN.log();
   private Z mN = Z.ZERO;
 
   @Override
@@ -22,7 +21,7 @@ public class A068075 extends Sequence1 {
       }
       final Z n2 = mN.square();
       if (n2.mod(10) != 0) {
-        final CR log = CR.valueOf(n2).log().divide(LOG10);
+        final CR log = CR.valueOf(n2).log10();
         if (n2.compareTo(Z.TEN.pow(log.floor()).multiply(5)) <= 0
           && Z.TEN.pow(log.add(1).floor()).subtract(n2).isSquare()) {
           return n2;

@@ -11,7 +11,7 @@ public class A062542 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A062542() {
-    super(CR.PI.multiply(CR.PI).divide(CR.TWO.log().multiply(CR.TEN.log()).multiply(6)));
+    super(CR.PI.multiply(CR.PI).divide(CR.TWO.log().multiply(CR.LOG10).multiply(6)));
   }
 }
 

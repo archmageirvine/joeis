@@ -15,6 +15,6 @@ public class A111769 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A111769() {
-    super(1, REALS.tan(CR.PI.divide(CR.valueOf(180))).log().divide(CR.TEN.log()).abs());
+    super(1, REALS.tan(CR.PI.divide(CR.valueOf(180))).log().divide(CR.LOG10).abs());
   }
 }

@@ -10,7 +10,6 @@ import irvine.oeis.Sequence1;
  */
 public class A067084 extends Sequence1 {
 
-  private static final CR LOG10 = CR.TEN.log();
   private long mN = 0;
   private Z mF = Z.ONE;
 
@@ -19,6 +18,6 @@ public class A067084 extends Sequence1 {
     if (++mN > 2) {
       mF = mF.multiply(mN - 1);
     }
-    return CR.valueOf(mN).log().divide(LOG10).multiply(mF).floor().add(1);
+    return CR.valueOf(mN).log10().multiply(mF).floor().add(1);
   }
 }

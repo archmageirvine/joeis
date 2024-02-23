@@ -10,7 +10,6 @@ import irvine.oeis.Sequence1;
  */
 public class A036841 extends Sequence1 {
 
-  private static final CR LOG10 = CR.TEN.log();
   private Z mF = Z.ONE;
   private long mN = 1;
   private long mA = -1;
@@ -19,7 +18,7 @@ public class A036841 extends Sequence1 {
   public Z next() {
     while (true) {
       mF = mF.multiply(++mN);
-      final long t = (CR.valueOf(mF).log().divide(LOG10).floor().longValueExact() + 1) / mN;
+      final long t = (CR.valueOf(mF).log10().floor().longValueExact() + 1) / mN;
       if (t > mA) {
         mA = t;
         return Z.valueOf(mN);

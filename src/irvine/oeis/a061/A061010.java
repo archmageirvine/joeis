@@ -10,7 +10,6 @@ import irvine.oeis.Sequence0;
  */
 public class A061010 extends Sequence0 {
 
-  private static final CR LOG10 = CR.TEN.log();
   private static final CR LOG_PI_2 = CR.PI.log().add(CR.TWO.log());
   private long mN = -1;
 
@@ -20,7 +19,7 @@ public class A061010 extends Sequence0 {
       return Z.ONE;
     }
     final CR a = CR.valueOf(Z.TEN.pow(mN).multiply2());
-    return LOG_PI_2.subtract(a).add(LOG10.multiply(mN).multiply(a.add(CR.ONE))).divide(LOG10).divide(CR.TWO).floor().add(1);
+    return LOG_PI_2.subtract(a).add(CR.LOG10.multiply(mN).multiply(a.add(CR.ONE))).divide(CR.LOG10).divide(CR.TWO).floor().add(1);
   }
 }
 

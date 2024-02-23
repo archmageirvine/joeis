@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
  */
 public class A060298 extends Sequence1 {
 
-  private static final CR LG10 = CR.TEN.log().divide(CR.TWO.log());
+  private static final CR LG10 = CR.LOG10.divide(CR.TWO.log());
   private int mN = 0;
 
   @Override

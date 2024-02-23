@@ -12,6 +12,6 @@ public class A132486 extends EgyptianFractionSequence {
 
   /** Construct the sequence. */
   public A132486() {
-    super(1, CR.TEN.log().divide(CR.THREE).exp(), 1);
+    super(1, CR.LOG10.divide(CR.THREE).exp(), 1);
   }
 }

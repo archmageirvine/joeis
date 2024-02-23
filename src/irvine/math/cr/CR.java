@@ -1176,6 +1176,17 @@ public abstract class CR extends Number implements Comparable<CR> {
     return simpleLn();
   }
 
+  /** Natural logarithm of 10. */
+  public static final CR LOG10 = CR.TEN.log();
+
+  /**
+   * Logarithm base 10.
+   * @return logarithm
+   */
+  public CR log10() {
+    return log().divide(LOG10);
+  }
+
   /**
    * The square root of a computable real.
    * @return square root

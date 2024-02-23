@@ -17,7 +17,6 @@ public class A038546 extends Sequence1 {
   private static final CR B = CR.FIVE.sqrt().inverse();
   private static final CR LOGB = B.log();
   private static final CR LOGPHI = CR.PHI.log();
-  private static final CR LOG10 = CR.TEN.log();
   private static final Z[] SMALL = {Z.ZERO, Z.ONE, Z.FIVE};
   private int mSmall = 0;
   private long mN = 42;
@@ -29,7 +28,7 @@ public class A038546 extends Sequence1 {
     }
     while (true) {
       if (++mN == R.pow(CR.PHI, mN).multiply(B)
-        .divide(R.pow(CR.TEN, LOGB.add(LOGPHI.multiply(mN)).divide(LOG10).floor().longValueExact() - CR.valueOf(mN).log().divide(LOG10).floor().longValueExact()))
+        .divide(R.pow(CR.TEN, LOGB.add(LOGPHI.multiply(mN)).divide(CR.LOG10).floor().longValueExact() - CR.valueOf(mN).log10().floor().longValueExact()))
         .floor().longValueExact()) {
         return Z.valueOf(mN);
       }

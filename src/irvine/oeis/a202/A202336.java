@@ -11,7 +11,6 @@ import irvine.oeis.a000.A000142;
 public class A202336 extends A000142 {
 
   // After Alois P. Heinz
-  private static final CR LOG10 = CR.TEN.log();
 
   @Override
   public Z next() {
@@ -19,6 +18,6 @@ public class A202336 extends A000142 {
     if (mN == 0) {
       return Z.ONE;
     }
-    return CR.valueOf(mN).log().divide(LOG10).multiply(f).floor().add(1);
+    return CR.valueOf(mN).log10().multiply(f).floor().add(1);
   }
 }

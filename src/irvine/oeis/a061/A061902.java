@@ -9,11 +9,9 @@ import irvine.math.z.Z;
  */
 public class A061902 extends A061482 {
 
-  private static final CR LOG10 = CR.TEN.log();
-
   @Override
   public Z next() {
-    return CR.valueOf(super.next()).log().divide(LOG10).ceil().max(Z.ONE);
+    return CR.valueOf(super.next()).log10().ceil().max(Z.ONE);
     //return Z.valueOf(super.next().toString().length());
   }
 }

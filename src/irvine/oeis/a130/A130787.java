@@ -13,6 +13,6 @@ public class A130787 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A130787() {
-    super(1, CR.PI.multiply(CR.E.log().divide(CR.TEN.log())).pow(CR.TWO));
+    super(1, CR.PI.multiply(CR.E.log().divide(CR.LOG10)).pow(CR.TWO));
   }
 }

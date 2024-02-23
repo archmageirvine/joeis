@@ -12,6 +12,6 @@ public class A066343 extends BeattySequence {
 
   /** Construct the sequence. */
   public A066343() {
-    super(1, CR.TEN.log().divide(CR.TWO.log()));
+    super(1, CR.LOG10.divide(CR.TWO.log()));
   }
 }

@@ -11,11 +11,10 @@ import irvine.oeis.Sequence1;
 public class A027666 extends Sequence1 {
 
   private static final CR CR10000000 = CR.valueOf(10000000);
-  private static final CR LOG10 = CR.TEN.log();
   private long mN = 0;
 
   @Override
   public Z next() {
-    return CR.valueOf(++mN).log().divide(LOG10).multiply(CR10000000).round();
+    return CR.valueOf(++mN).log10().multiply(CR10000000).round();
   }
 }

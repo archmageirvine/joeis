@@ -10,13 +10,12 @@ import irvine.oeis.Sequence0;
  */
 public class A061505 extends Sequence0 {
 
-  private static final CR INV_LOG_10 = CR.TEN.log().inverse();
   private long mN = -1;
 
   @Override
   public Z next() {
     final Z nn = Z.valueOf(++mN).pow(mN);
-    return nn.divide(Z.TEN.pow(CR.valueOf(nn).log().multiply(INV_LOG_10).floor()));
+    return nn.divide(Z.TEN.pow(CR.valueOf(nn).log10().floor()));
   }
 }
 

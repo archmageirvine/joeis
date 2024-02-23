@@ -10,7 +10,6 @@ import irvine.oeis.Sequence1;
  */
 public class A028431 extends Sequence1 {
 
-  private static final CR BASE_LOG = CR.TEN.log();
   private long mN = 0;
 
   @Override
@@ -19,7 +18,7 @@ public class A028431 extends Sequence1 {
     final StringBuilder sb = new StringBuilder();
     while (m > 0) {
       sb.insert(0, m);
-      m = CR.valueOf(m).log().divide(BASE_LOG).floor().longValueExact();
+      m = CR.valueOf(m).log10().floor().longValueExact();
     }
     return new Z(sb);
   }

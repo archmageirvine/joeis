@@ -12,6 +12,6 @@ public class A059550 extends BeattySequence {
 
   /** Construct the sequence. */
   public A059550() {
-    super(1, CR.ONE.add(CR.TEN.log()));
+    super(1, CR.ONE.add(CR.LOG10));
   }
 }

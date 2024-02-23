@@ -737,7 +737,7 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
     return monicAssociate(b);
   }
 
-  @SuppressWarnings({"unchecked", "rawtypes"})
+  @SuppressWarnings({"unchecked"})
   private Polynomial<E>[] makeExtendedGcdResult(final Polynomial<E> d, final Polynomial<E> s, final Polynomial<E> t) {
     return (Polynomial<E>[]) new Polynomial[] {d, s, t};
   }

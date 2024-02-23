@@ -7,7 +7,7 @@ import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A346488 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; f(i) = f(j), for all i, j &gt;= 1, where f(n) = 0 if mu(n) = -1, and f(n) = n for all other numbers (with mu = M√∂bius mu, A008683).
+ * A346488 Lexicographically earliest infinite sequence such that a(i) = a(j) =&gt; f(i) = f(j), for all i, j &gt;= 1, where f(n) = 0 if mu(n) = -1, and f(n) = n for all other numbers (with mu = M\u00f6bius mu, A008683).
  * @author Georg Fischer
  */
 public class A346488 extends RestrictedGrowthTransformSequence {

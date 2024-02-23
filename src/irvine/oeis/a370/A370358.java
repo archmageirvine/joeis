@@ -5,7 +5,7 @@ import irvine.oeis.a025.A025035;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A370358 Number of partitions of [3n] into n sets of size 3 having at least one set {3j-2, 3j-1, 3j} (1&lt;=j&lt;=n).
+ * A370358 Number of partitions of [3n] into n sets of size 3 having at least one set {3j-2,3j-1,3j} (1&lt;=j&lt;=n).
  * @author Georg Fischer
  */
 public class A370358 extends TupleTransformSequence {

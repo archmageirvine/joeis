@@ -5,7 +5,7 @@ import irvine.oeis.a284.A284019;
 import irvine.oeis.transform.RestrictedGrowthTransformSequence;
 
 /**
- * A286569 Restricted growth sequence transform of &quot;Hofstadter chaotic heart&quot;, A284019 (= A004001(n) - A005185(n)).
+ * A286569 Restricted growth sequence transform of "Hofstadter chaotic heart", A284019 (= A004001(n) - A005185(n)).
  * @author Georg Fischer
  */
 public class A286569 extends RestrictedGrowthTransformSequence {

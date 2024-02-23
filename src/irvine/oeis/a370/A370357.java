@@ -4,7 +4,7 @@ package irvine.oeis.a370;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A370357 Number of partitions of [3n] into n sets of size 3 avoiding any set {3j-2, 3j-1, 3j} (1&lt;=j&lt;=n).
+ * A370357 Number of partitions of [3n] into n sets of size 3 avoiding any set {3j-2,3j-1,3j} (1&lt;=j&lt;=n).
  * @author Georg Fischer
  */
 public class A370357 extends HolonomicRecurrence {

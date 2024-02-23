@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;
 
 /**
- * A051043.
+ * A068539 Number of quinternary cubefree words of length n.
  * @author Sean A. Irvine
  */
 public class A068539 extends Sequence0 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a004.A004539;
 
 /**
- * A051043.
+ * A068541 Let sqrt(2) = 1.d(1)d(2)d(3)... = 1.0110101000001... be the expansion of sqrt(2) in base 2; sequence gives values of j such that j/2 = Sum_{k=1..j} d(k).
  * @author Sean A. Irvine
  */
 public class A068541 extends Sequence1 {

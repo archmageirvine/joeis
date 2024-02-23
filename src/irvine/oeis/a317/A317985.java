@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A317985 Number of self-avoiding planar walks starting at (0, 0), ending at (n, 0), remaining in the first quadrant and using steps (0, 1), (1, 0), (1, 1), (-1, 1), and (1,-1) such that (0, 1) is never used directly before or after (1, 0) or (1, 1).
+ * A317985 Number of self-avoiding planar walks starting at (0,0), ending at (n,0), remaining in the first quadrant and using steps (0,1), (1,0), (1,1), (-1,1), and (1,-1) such that (0,1) is never used directly before or after (1,0) or (1,1).
  * -a(n)+ 2*n*a(n-1) -(n-2)*a(n-2) -(2*n-5)*a(n-3)
  * @author Georg Fischer
  */

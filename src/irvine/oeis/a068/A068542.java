@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A051043.
+ * A068542 Period of the fraction 1/3^n.
  * @author Sean A. Irvine
  */
 public class A068542 extends Sequence1 {

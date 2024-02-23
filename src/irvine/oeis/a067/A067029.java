@@ -1,16 +1,36 @@
 package irvine.oeis.a067;
 
+import irvine.factor.factor.Jaguar;
 import irvine.factor.factor.LeastPrimeFactorizer;
+import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A067029 Exponent of least prime factor in prime factorization of n, a(1)=0.
  * @author Sean A. Irvine
  */
-public class A067029 extends Sequence1 {
+public class A067029 extends AbstractSequence implements DirectSequence {
 
-  private long mN = 0;
+  private long mN;
+
+  /** Construct the sequence. */
+  public A067029() {
+    super(1);
+    mN = 0;
+  }
+
+  @Override
+  public Z a(final Z n) {
+    final FactorSequence fs = Jaguar.factor(n);
+    return Z.valueOf(fs.getExponent(fs.leastPrimeFactor()));
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
 
   @Override
   public Z next() {

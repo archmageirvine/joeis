@@ -1,13 +1,15 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A007949 Greatest k such that 3^k divides n. Or, 3-adic valuation of n.
  * @author Sean A. Irvine
  */
-public class A007949 extends AbstractSequence {
+public class A007949 extends AbstractSequence implements DirectSequence {
 
   /**
    * Constructor with offset.
@@ -34,4 +36,15 @@ public class A007949 extends AbstractSequence {
     }
     return Z.valueOf(c);
   }
+
+  @Override
+  public Z a(final Z n) {
+    return Z.valueOf(ZUtils.valuation(n, Z.THREE));
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
 }

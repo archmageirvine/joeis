@@ -1,5 +1,6 @@
 package irvine.oeis;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BiFunction;
@@ -120,6 +121,15 @@ public class CachedSequence extends AbstractSequence implements DirectSequence {
    */
   protected Z compute(final Z n) {
     return mLambda.apply(this, n);
+  }
+
+  /**
+   * Return the complete set of values currently stored. There is npo guarantee
+   * on the order.
+   * @return terms
+   */
+  protected Collection<Z> values() {
+    return mCache.values();
   }
 
   @Override

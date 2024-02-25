@@ -2344,3 +2344,6 @@ A068469 Decimal expansion of zeta(Pi).
 A068471 Number of n X n binary matrices with each 1 having at most 2 adjacent 1's.
 A068472	Number of n X n binary matrices with every 1 having at most 3 adjacent 1's.
 A068529 k values for self-contained numbers.
+A068590 Number of different Euler multigraphs with n edges, loops allowed.
+A068591 Nonessential triangular numbers (conjectured).
+A068592 Number of different Euler multigraphs with n edges, loops forbidden.

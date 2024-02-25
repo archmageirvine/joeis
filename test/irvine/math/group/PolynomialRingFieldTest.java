@@ -118,6 +118,11 @@ public class PolynomialRingFieldTest extends TestCase {
     assertEquals("x+1/6x^3+3/40x^5+5/112x^7+35/1152x^9", f.asin(f.x(), 10).toString());
   }
 
+  public void testAcos1() {
+    final PolynomialRingField<Q> f = new PolynomialRingField<>(Rationals.SINGLETON);
+    assertEquals("-x-1/6x^3-3/40x^5-5/112x^7-35/1152x^9", f.acos1(f.x(), 10).toString());
+  }
+
   public void testAsinh() {
     final PolynomialRingField<Q> f = new PolynomialRingField<>(Rationals.SINGLETON);
     assertEquals("x-1/6x^3+3/40x^5-5/112x^7+35/1152x^9", f.asinh(f.x(), 10).toString());

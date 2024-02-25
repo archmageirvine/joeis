@@ -410,6 +410,16 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
   }
 
   /**
+   * Series expansion of <code>acos(p)-Pi/2</code> to specified degree.
+   * @param p polynomial
+   * @param n maximum degree
+   * @return series for <code>acos(p)-Pi/2</code>
+   */
+  public Polynomial<E> acos1(final Polynomial<E> p, final int n) {
+    return negate(asin(p, n));
+  }
+
+  /**
    * Series expansion of <code>atan(p)</code> to specified degree.
    * @param p polynomial
    * @param n maximum degree

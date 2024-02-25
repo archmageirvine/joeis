@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068545.
+ * A068576 Numbers k such that Sum_{j=1..k} mu(j)^2 = floor(6*k/Pi^2).
  * @author Sean A. Irvine
  */
 public class A068576 extends Sequence1 {

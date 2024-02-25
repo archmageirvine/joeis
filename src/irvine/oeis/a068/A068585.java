@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002805;
 import irvine.oeis.a007.A007409;
 
 /**
- * A068545.
+ * A068585 Numbers k such that the denominator of (Sum_{j=1..k} 1/j)^3 equals the denominator of Sum_{j=1..k} 1/j^3.
  * @author Sean A. Irvine
  */
 public class A068585 extends Sequence1 {

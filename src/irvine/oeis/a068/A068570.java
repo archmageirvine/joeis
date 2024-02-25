@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.English;
 
 /**
- * A068545.
+ * A068570 Numbers divisible by the number of letters to express them in English.
  * @author Sean A. Irvine
  */
 public class A068570 extends Sequence1 {

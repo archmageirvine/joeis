@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000041;
 import irvine.oeis.triangle.Diagonal;
 
 /**
- * A174712 Triangle, right border = A000041, else zero; by rows, A000041(n) preceded by n zeros. By columns, n-th column = A000041(n) followed by zeros.
+ * A174712 Triangle T(n,k) read by rows in which the right border is A000041, else zero, n &gt;= 0.
  * @author Georg Fischer
  */
 public class A174712 extends Diagonal {

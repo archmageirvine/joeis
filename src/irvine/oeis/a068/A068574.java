@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
- * A068545.
+ * A068574 As strings, n is a substring of Fibonacci(n).
  * @author Sean A. Irvine
  */
 public class A068574 extends Sequence1 {

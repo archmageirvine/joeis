@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068545.
+ * A068587 Multiplicative 3-wave sequence starting with 1,2,3.
  * @author Sean A. Irvine
  */
 public class A068587 extends Sequence0 {

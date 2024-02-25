@@ -4,7 +4,7 @@ package irvine.oeis.a096;
 import irvine.math.z.Z;
 
 /**
- * A096015 A096014(n) / 2.
+ * A096015 a(n) = A096014(n) / 2.
  * @author Georg Fischer
  */
 public class A096015 extends A096014 {

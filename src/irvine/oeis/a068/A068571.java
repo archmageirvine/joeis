@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007770;
 
 /**
- * A068545.
+ * A068571 Number of happy numbers &lt;= 10^n.
  * @author Sean A. Irvine
  */
 public class A068571 extends A007770 {

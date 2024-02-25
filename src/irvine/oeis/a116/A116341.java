@@ -4,7 +4,7 @@ package irvine.oeis.a116;
 import irvine.oeis.base.ConcatenatedProductSequence;
 
 /**
- * A116341 n times n+8 gives the concatenation of two numbers m and m+7.
+ * A116341 k times k+8 gives the concatenation of two numbers m and m+7.
  * @author Georg Fischer
  */
 public class A116341 extends ConcatenatedProductSequence {

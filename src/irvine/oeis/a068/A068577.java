@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068545.
+ * A068577 Numbers n such that tau(n)^2 &gt; phi(n).
  * @author Sean A. Irvine
  */
 public class A068577 extends Sequence1 {

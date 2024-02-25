@@ -4,7 +4,7 @@ package irvine.oeis.a116;
 import irvine.oeis.base.ConcatenatedProductSequence;
 
 /**
- * A116254 n times n+4 gives the concatenation of two numbers m and m-5.
+ * A116254 k times k+4 gives the concatenation of two numbers m and m-5.
  * @author Georg Fischer
  */
 public class A116254 extends ConcatenatedProductSequence {

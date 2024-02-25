@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002805;
 import irvine.oeis.a007.A007407;
 
 /**
- * A068545.
+ * A068584 Numbers k such that the denominator of (Sum_{j=1..k} 1/j)^2 equals the denominator of Sum_{j=1..k} 1/j^2.
  * @author Sean A. Irvine
  */
 public class A068584 extends Sequence1 {

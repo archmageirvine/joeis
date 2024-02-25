@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A100904 Numbers n such that (10^n+1)^2-2 is prime.
+ * A100904 Numbers k such that (10^k+1)^2-2 is prime.
  *
  * @author Georg Fischer
  */

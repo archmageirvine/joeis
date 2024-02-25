@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068545.
+ * A068572 Numbers n such that sigma(n) = product of the squares of the decimal digits of n.
  * @author Sean A. Irvine
  */
 public class A068572 extends Sequence1 {

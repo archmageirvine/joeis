@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.CachedSequence;
 
 /**
- * A068545.
+ * A068573 a(n) is the smallest positive integer such that no term in S={a(1),...,a(n)}, n&gt;=3, divides the sum of any two other distinct terms of S, after first initializing the sequence with a(1)=3 and a(2)=4.
  * @author Sean A. Irvine
  */
 public class A068573 extends CachedSequence {

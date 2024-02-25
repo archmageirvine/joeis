@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A068545.
+ * A068575 Numbers n such that, as strings, n is a substring of prime(n).
  * @author Sean A. Irvine
  */
 public class A068575 extends A000040 {

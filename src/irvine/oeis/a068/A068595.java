@@ -31,6 +31,7 @@ public class A068595 extends Sequence1 {
   @Override
   public Z next() {
     // Construct all possible length n vectors with elements 1..n and elements in increasing order
+    // Test if sum is 0 mod 3.
     // Multiply up by the number of arrangements of those elements.
     ++mN;
     Z sum = Z.ZERO;

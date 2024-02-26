@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068594.
+ * A068594 Factorable subsets: the number of subsets S of {1,2,...,n} that can be expressed in the form S=A*B, where B is defined to be the set {a(i)*b(j)| a(i) in A, b(j) in B}.
  * @author Sean A. Irvine
  */
 public class A068594 extends Sequence1 {

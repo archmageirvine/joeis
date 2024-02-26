@@ -3,8 +3,8 @@ package irvine.oeis.a005;
 import java.util.Random;
 
 import irvine.math.z.Z;
+import irvine.math.zi.Zi;
 import junit.framework.TestCase;
-import irvine.util.Pair;
 
 /**
  * Tests the corresponding class.
@@ -25,18 +25,18 @@ public class A005620Test extends TestCase {
   }
 
   public void testUlamSpiralToXY() {
-    assertEquals(new Pair<>(Z.ZERO, Z.ZERO), A005620.ulamSpiralToXY(Z.ONE));
-    assertEquals(new Pair<>(Z.ONE, Z.ZERO), A005620.ulamSpiralToXY(Z.TWO));
-    assertEquals(new Pair<>(Z.ONE, Z.ONE), A005620.ulamSpiralToXY(Z.THREE));
-    assertEquals(new Pair<>(Z.ZERO, Z.ONE), A005620.ulamSpiralToXY(Z.FOUR));
+    assertEquals(new Zi(Z.ZERO, Z.ZERO), A005620.ulamSpiralToXY(Z.ONE));
+    assertEquals(new Zi(Z.ONE, Z.ZERO), A005620.ulamSpiralToXY(Z.TWO));
+    assertEquals(new Zi(Z.ONE, Z.ONE), A005620.ulamSpiralToXY(Z.THREE));
+    assertEquals(new Zi(Z.ZERO, Z.ONE), A005620.ulamSpiralToXY(Z.FOUR));
   }
 
   public void testRandom() {
     final Random r = new Random();
     for (int k = 0; k < 20; ++k) {
       final Z n = Z.valueOf(r.nextInt(100000) + 1);
-      final Pair<Z, Z> xy = A005620.ulamSpiralToXY(n);
-      assertEquals(n, A005620.xyToUlamSpiral(xy.left(), xy.right()));
+      final Zi xy = A005620.ulamSpiralToXY(n);
+      assertEquals(n, A005620.xyToUlamSpiral(xy.re(), xy.im()));
     }
   }
 }

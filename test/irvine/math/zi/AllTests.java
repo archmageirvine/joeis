@@ -1,4 +1,4 @@
-package irvine.math.c;
+package irvine.math.zi;
 
 import junit.framework.Test;
 import junit.framework.TestSuite;
@@ -11,11 +11,7 @@ public class AllTests extends TestSuite {
 
   public static Test suite() {
     final TestSuite suite = new TestSuite();
-    suite.addTestSuite(ComplexEiTest.class);
-    suite.addTestSuite(ComplexFieldTest.class);
-    suite.addTestSuite(ComplexGammaTest.class);
-    suite.addTestSuite(ComplexHypergeometricTest.class);
-    suite.addTestSuite(CTest.class);
+    suite.addTestSuite(ZiTest.class);
     return suite;
   }
 

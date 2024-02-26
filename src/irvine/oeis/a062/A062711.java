@@ -4,8 +4,8 @@ import java.util.HashSet;
 
 import irvine.math.group.GaussianIntegers;
 import irvine.math.z.Z;
+import irvine.math.zi.Zi;
 import irvine.oeis.Sequence1;
-import irvine.util.Pair;
 
 /**
  * A062711 Number of prime Gaussian integers z=a+bi with |z|&lt;=n.
@@ -19,11 +19,11 @@ public class A062711 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    final HashSet<Pair<Z, Z>> primes = new HashSet<>();
+    final HashSet<Zi> primes = new HashSet<>();
     final long sq = (long) mN * mN;
     for (int x = -mN; x <= mN; ++x) {
       for (int y = -mN; y <= mN; ++y) {
-        final Pair<Z, Z> t = new Pair<>(Z.valueOf(x), Z.valueOf(y));
+        final Zi t = new Zi(x, y);
         if (G.abs(t).longValueExact() <= sq
           && G.isProbablePrime(t)
           //&& !primes.contains(t)

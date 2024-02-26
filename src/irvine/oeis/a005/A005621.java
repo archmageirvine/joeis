@@ -3,8 +3,8 @@ package irvine.oeis.a005;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
+import irvine.math.zi.Zi;
 import irvine.oeis.a000.A000045;
-import irvine.util.Pair;
 
 /**
  * A005621 Spiral sieve using Fibonacci numbers.
@@ -25,8 +25,8 @@ public class A005621 extends A000045 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      final Pair<Z, Z> pos = A005620.ulamSpiralToXY(t);
-      mNotYetReturned.add(A005620.xyToUlamSpiral(pos.left().negate(), pos.right().negate())); // i.e. rotate by 180 degrees
+      final Zi pos = A005620.ulamSpiralToXY(t);
+      mNotYetReturned.add(A005620.xyToUlamSpiral(pos.re().negate(), pos.im().negate())); // i.e. rotate by 180 degrees
       if (mNotYetReturned.first().square().compareTo(t) <= 0) {
         return mNotYetReturned.pollFirst();
       }

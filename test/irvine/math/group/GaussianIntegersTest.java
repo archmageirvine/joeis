@@ -3,7 +3,7 @@ package irvine.math.group;
 import java.util.Iterator;
 
 import irvine.math.z.Z;
-import irvine.util.Pair;
+import irvine.math.zi.Zi;
 import junit.framework.TestCase;
 
 /**
@@ -18,16 +18,16 @@ public class GaussianIntegersTest extends TestCase {
     assertTrue(gi.isAbelian());
     assertTrue(gi.isCommutative());
     assertTrue(gi.contains(gi.zero()));
-    assertTrue(gi.contains(new Pair<>(Z.ONE, Z.THREE)));
+    assertTrue(gi.contains(new Zi(Z.ONE, Z.THREE)));
     assertFalse(gi.contains(null));
-    assertFalse(gi.contains(new Pair<>(null, null)));
+    assertFalse(gi.contains(new Zi(null, null)));
     assertEquals("\\Z[i]", gi.toString());
-    assertEquals(new Pair<>(Z.ZERO, Z.ZERO), gi.zero());
+    assertEquals(new Zi(Z.ZERO, Z.ZERO), gi.zero());
     assertEquals(Z.ZERO, gi.characteristic());
-    assertEquals(new Pair<>(Z.ONE, Z.ZERO), gi.one());
-    assertEquals(new Pair<>(Z.ONE, Z.ONE), gi.add(gi.one(), gi.i()));
-    assertEquals(new Pair<>(Z.NEG_ONE, Z.ZERO), gi.multiply(gi.i(), gi.i()));
-    assertEquals(new Pair<>(Z.NEG_ONE, Z.FOUR), gi.negate(new Pair<>(Z.ONE, Z.valueOf(-4))));
+    assertEquals(new Zi(Z.ONE, Z.ZERO), gi.one());
+    assertEquals(new Zi(Z.ONE, Z.ONE), gi.add(gi.one(), gi.i()));
+    assertEquals(new Zi(Z.NEG_ONE, Z.ZERO), gi.multiply(gi.i(), gi.i()));
+    assertEquals(new Zi(Z.NEG_ONE, Z.FOUR), gi.negate(new Zi(Z.ONE, Z.valueOf(-4))));
     try {
       gi.add(null, gi.one());
       fail();
@@ -46,26 +46,26 @@ public class GaussianIntegersTest extends TestCase {
     } catch (final NullPointerException e) {
       // ok
     }
-    final Iterator<Pair<Z, Z>> it = gi.iterator();
+    final Iterator<Zi> it = gi.iterator();
     for (int k = 0; k < 5; ++k) {
       assertTrue(it.hasNext());
-      assertEquals(new Pair<>(Z.valueOf(k), Z.ZERO), it.next());
+      assertEquals(new Zi(Z.valueOf(k), Z.ZERO), it.next());
     }
     assertFalse(gi.isCyclic());
   }
 
   public void testCoerce() {
-    assertEquals(new Pair<>(Z.TWO, Z.ZERO), GaussianIntegers.SINGLETON.coerce(2));
+    assertEquals(new Zi(Z.TWO, Z.ZERO), GaussianIntegers.SINGLETON.coerce(2));
   }
 
   public void testParts() {
-    final Pair<Z, Z> n = new Pair<>(Z.THREE, Z.FOUR);
+    final Zi n = new Zi(Z.THREE, Z.FOUR);
     assertEquals(Z.THREE, GaussianIntegers.SINGLETON.re(n));
     assertEquals(Z.FOUR, GaussianIntegers.SINGLETON.im(n));
   }
 
   public void testConjugate() {
-    final Pair<Z, Z> n = new Pair<>(Z.THREE, Z.FOUR);
-    assertEquals(new Pair<>(Z.THREE, Z.FOUR.negate()), GaussianIntegers.SINGLETON.conjugate(n));
+    final Zi n = new Zi(Z.THREE, Z.FOUR);
+    assertEquals(new Zi(Z.THREE, Z.FOUR.negate()), GaussianIntegers.SINGLETON.conjugate(n));
   }
 }

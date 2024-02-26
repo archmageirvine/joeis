@@ -119,14 +119,12 @@ public class C extends Number implements Comparable<C> {
       sb.append(re());
     }
     if (im() != 0) {
-      if (im() < 0) {
-        sb.append(im());
-      } else {
+      if (!(im() < 0)) {
         if (sb.length() > 0) {
           sb.append('+');
         }
-        sb.append(im());
       }
+      sb.append(im());
       sb.append('i');
     }
     return sb.toString();

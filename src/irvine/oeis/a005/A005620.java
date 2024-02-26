@@ -4,8 +4,8 @@ import java.util.TreeSet;
 
 import irvine.math.group.GaussianIntegers;
 import irvine.math.z.Z;
+import irvine.math.zi.Zi;
 import irvine.oeis.a000.A000045;
-import irvine.util.Pair;
 
 /**
  * A005620 Spiral sieve using Fibonacci numbers.
@@ -30,7 +30,7 @@ public class A005620 extends A000045 {
     }
   }
 
-  private static Pair<Z, Z> getPowerOfI(final Z p) {
+  private static Zi getPowerOfI(final Z p) {
     switch ((int) (p.mod(4))) {
       case 0:
         return GaussianIntegers.SINGLETON.one();
@@ -43,14 +43,14 @@ public class A005620 extends A000045 {
     }
   }
 
-  static Pair<Z, Z> ulamSpiralToXY(final Z n) {
+  static Zi ulamSpiralToXY(final Z n) {
     final Z m = n.subtract(1);
     final Z p = m.shiftLeft(2).add(1).sqrt();
     final Z q = m.subtract(p.multiply(p).shiftRight(2));
-    final Pair<Z, Z> pi = getPowerOfI(p.add(2));
+    final Zi pi = getPowerOfI(p.add(2));
     final Z re = p.add(2).shiftRight(2);
     final Z im = q.subtract(p.add(1).shiftRight(2));
-    final Pair<Z, Z> ab = new Pair<>(re, im);
+    final Zi ab = new Zi(re, im);
     return GaussianIntegers.SINGLETON.multiply(ab, pi);
   }
 
@@ -67,8 +67,8 @@ public class A005620 extends A000045 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      final Pair<Z, Z> pos = ulamSpiralToXY(t);
-      mNotYetReturned.add(xyToUlamSpiral(pos.right().negate(), pos.left())); // i.e. rotate by 90 degrees
+      final Zi pos = ulamSpiralToXY(t);
+      mNotYetReturned.add(xyToUlamSpiral(pos.im().negate(), pos.re())); // i.e. rotate by 90 degrees
       if (mNotYetReturned.first().square().compareTo(t) <= 0) {
         return mNotYetReturned.pollFirst();
       }

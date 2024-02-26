@@ -60,31 +60,27 @@ public final class GaussianIntegers extends AbstractIntegralDomain<Zi> {
 
   @Override
   public Zi add(final Zi a, final Zi b) {
-    return new Zi(a.re().add(b.re()), a.im().add(b.im()));
+    return a.add(b);
   }
 
   @Override
   public Zi subtract(final Zi a, final Zi b) {
-    return new Zi(a.re().subtract(b.re()), a.im().subtract(b.im()));
+    return a.subtract(b);
   }
 
   @Override
   public Zi multiply(final Zi u, final Zi v) {
-    final Z a = u.re();
-    final Z b = u.im();
-    final Z c = v.re();
-    final Z d = v.im();
-    return new Zi(a.multiply(c).subtract(b.multiply(d)), a.multiply(d).add(b.multiply(c)));
+    return u.multiply(v);
   }
 
   @Override
   public Zi negate(final Zi z) {
-    return new Zi(z.re().negate(), z.im().negate());
+    return z.negate();
   }
 
   @Override
   public Zi conjugate(final Zi z) {
-    return new Zi(z.re(), z.im().negate());
+    return z.conjugate();
   }
 
   /*
@@ -101,7 +97,7 @@ public final class GaussianIntegers extends AbstractIntegralDomain<Zi> {
    * @return <code>|z|</code>
    */
   public Z abs(final Zi z) {
-    return z.re().square().add(z.im().square());
+    return z.abs();
   }
 
   @Override

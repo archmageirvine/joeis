@@ -1,6 +1,7 @@
 package irvine.math.zi;
 
 import irvine.math.c.C;
+import irvine.math.group.GaussianIntegers;
 import irvine.math.z.Z;
 
 /**
@@ -146,6 +147,97 @@ public class Zi extends Number implements Comparable<Zi> {
   @Override
   public float floatValue() {
     return (float) doubleValue();
+  }
+
+  /**
+   * Add another Gaussian integer to this Gaussian integer.
+   * @param n number to add
+   * @return sum
+   */
+  public Zi add(final Zi n) {
+    return new Zi(re().add(n.re()), im().add(n.im()));
+  }
+
+  /**
+   * Add an integer to this Gaussian integer.
+   * @param n number to add
+   * @return sum
+   */
+  public Zi add(final Z n) {
+    return new Zi(re().add(n), im());
+  }
+
+  /**
+   * Subtract another Gaussian integer from this Gaussian integer.
+   * @param n number to subtract
+   * @return difference
+   */
+  public Zi subtract(final Zi n) {
+    return new Zi(re().subtract(n.re()), im().subtract(n.im()));
+  }
+
+  /**
+   * Add an integer from this Gaussian integer.
+   * @param n number to subtract
+   * @return difference
+   */
+  public Zi subtract(final Z n) {
+    return new Zi(re().subtract(n), im());
+  }
+
+  /**
+   * Multiply this Gaussian integer by another Gaussian integer.
+   * @param n number to multiply by
+   * @return product
+   */
+  public Zi multiply(final Zi n) {
+    final Z a = re();
+    final Z b = im();
+    final Z c = n.re();
+    final Z d = n.im();
+    return new Zi(a.multiply(c).subtract(b.multiply(d)), a.multiply(d).add(b.multiply(c)));
+  }
+
+  /**
+   * Multiply this Gaussian integer by an integer.
+   * @param n number to multiply by
+   * @return product
+   */
+  public Zi multiply(final Z n) {
+    return new Zi(re().multiply(n), im().multiply(n));
+  }
+
+  /**
+   * Negate this Gaussian integer.
+   * @return negation
+   */
+  public Zi negate() {
+    return new Zi(re().negate(), im().negate());
+  }
+
+  /**
+   * Return the complex conjugate of this Gaussian integer.
+   * @return conjugate
+   */
+  public Zi conjugate() {
+    return new Zi(re(), im().negate());
+  }
+
+  /**
+   * Return the absolute value (modulus) of this Gaussian integer.
+   * @return absolute value
+   */
+  public Z abs() {
+    return re().square().add(im().square());
+  }
+
+  /**
+   * Compute a power of this Gaussian integer.
+   * @param n power
+   * @return power
+   */
+  public Zi pow(final long n) {
+    return GaussianIntegers.SINGLETON.pow(this, n);
   }
 
 }

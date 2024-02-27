@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A064295 Numbers k such that every (prime) factor of k!+1 is one more than a multiple of k.
+ * A064295 Numbers n such that every (prime) factor of n!+1 is one more than a multiple of n.
  * @author Sean A. Irvine
  */
 public class A064295 extends ComplementSequence {

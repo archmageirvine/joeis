@@ -5,7 +5,7 @@ package irvine.oeis.a211;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A211419 a(n) = (6*n)!*(2*n)!/((4*n)!*(3*n)!*n!).
+ * A211419 Integral factorial ratio sequence: a(n) = (6*n)!*(2*n)!/((4*n)!*(3*n)!*n!).
  * @author Georg Fischer
  */
 public class A211419 extends HolonomicRecurrence {

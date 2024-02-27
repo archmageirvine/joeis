@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.math.z.Z;
 
 /**
- * A068620.
+ * A068787 Number of strings over Z_4 of length n with trace 1 and subtrace 2.
  * @author Sean A. Irvine
  */
 public class A068787 extends A068620 {

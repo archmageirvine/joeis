@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A213039 a(n) = n^3 - floor(n/3)^3.
+ * A213039 n^3-[n/3]^3, where [] = floor.
  * @author Sean A. Irvine
  */
 public class A213039 extends LinearRecurrence {

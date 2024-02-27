@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A062160 Square array T(n,k) = (n^k - (-1)^k)/(n+1), n &gt;= 0, k &gt;= 0, read by falling antidiagonals.
+ * A062160 Square array T(n,k) = (n^k - (-1)^k)/(n+1), n &gt;= 0, k &gt;= 0, read by antidiagonals.
  *
  * @author Georg Fischer
  */

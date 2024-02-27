@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068598.
+ * A068598 Number of maximal sets of partitions of n with property that all parts in all partitions in the set are distinct.
  * @author Sean A. Irvine
  */
 public class A068598 extends Sequence0 {

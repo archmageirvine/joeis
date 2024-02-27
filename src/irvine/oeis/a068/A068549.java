@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A068549 Largest prime &lt; sqrt(2n-4) - 1.
+ * A068549 Largest prime &lt;= sqrt(2n-4) - 1.
  * @author Sean A. Irvine
  */
 public class A068549 extends AbstractSequence {

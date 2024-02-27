@@ -4,7 +4,7 @@ package irvine.oeis.a203;
 import irvine.oeis.SelfQuotientSequence;
 
 /**
- * A203419 a(n) = A203418(n+1)/A203418(n).
+ * A203419 v(n+1)/v(n), where v=A203418.
  * @author Georg Fischer
  */
 public class A203419 extends SelfQuotientSequence {

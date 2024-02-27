@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A104905 Numbers m such that d(m)*phi(m) = sigma(m), where d(m) is number of positive divisors of m.
+ * A104905 Numbers n such that d(n)*phi(n)=sigma(n), where d(n) is number of positive divisors of n.
  * @author Georg Fischer
  */
 public class A104905 extends FiniteSequence {

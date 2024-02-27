@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A036553 a(n) = phi(prime(n)) - prime(phi(n)).
+ * A036553 a(n) = phi(prime(n))-prime(phi(n)).
  * @author Sean A. Irvine
  */
 public class A036553 extends Sequence1 {

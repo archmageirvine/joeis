@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A052183 a(n) = (n + 2) * binomial(3*n, n) / (2*n + 1).
+ * A052183 A second-order recursive sequence.
  * @author Sean A. Irvine
  */
 public class A052183 extends Sequence0 {

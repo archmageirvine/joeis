@@ -516,4 +516,40 @@ public final class IntegerUtils {
     }
     return res;
   }
+
+  /**
+   * Modular inverse.
+   * @param k number
+   * @param m modulus
+   * @return inverse
+   */
+  public static int modInverse(int k, int m) {
+    if (m == 0) {
+      return (k == 1 || k == -1) ? k : 0;
+    }
+    if (m < 0) {
+      m = -m;
+    }
+    k %= m;
+    if (k < 0) {
+      k += m;
+    }
+    boolean neg = true;
+    int p1 = 1;
+    int p2 = 0;
+    int k1 = k;
+    int m1 = m;
+    while (k1 > 0) {
+      final int q = m1 / k1;
+      final int r = m1 % k1;
+      final int temp = q * p1 + p2;
+      p2 = p1;
+      p1 = temp;
+      m1 = k1;
+      k1 = r;
+      neg = !neg;
+    }
+    return neg ? m - p2 : p2;
+  }
+
 }

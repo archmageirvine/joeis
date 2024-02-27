@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002623;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A370307 a(n) = A002623(n) + n.
+ * A370307 Number of left-labeled (2,n)-bipartite graphs.
  * @author Georg Fischer
  */
 public class A370307 extends SimpleTransformSequence {

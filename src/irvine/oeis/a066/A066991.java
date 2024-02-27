@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066991 Square array read by descending antidiagonals of number of ways of dividing n*k labeled items into k unlabeled orders with n items in each order.
+ * A066991 Square array read by antidiagonals of number of ways of dividing nk labeled items into k unlabeled orders with n items in each order.
  * @author Sean A. Irvine
  */
 public class A066991 extends Sequence1 {

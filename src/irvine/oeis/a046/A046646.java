@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001764;
 
 /**
- * A046646 a(n) = 2*binomial(3*n-3, n-1)/(2*n-1) for n &gt;= 2, and a(1) = 1.
+ * A046646 Number of certain rooted planar maps.
  * @author Sean A. Irvine
  */
 public class A046646 extends A001764 {

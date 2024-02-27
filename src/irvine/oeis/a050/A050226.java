@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006218;
 
 /**
- * A050226 Numbers m such that m divides Sum_{k = 1..m} A000005(k).
+ * A050226 Numbers n such that n divides Sum_{k = 1..n} A000005(k).
  * @author Sean A. Irvine
  */
 public class A050226 extends A006218 {

@@ -5,7 +5,7 @@ package irvine.oeis.a173;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A173516 a(1)=1, a(n) = 3*n*a(n-1) + 1, n &gt; 1.
+ * A173516 a(1)=1, a(n)= 3*n*a(n-1)+1, n&gt;1.
  * Recurrence: a(1)=1,a(n)= 3*n*a(n-1)+1 for n&gt;2
  * @author Georg Fischer
  */

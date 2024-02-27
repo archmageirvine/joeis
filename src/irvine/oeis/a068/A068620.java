@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068620.
+ * A068620 Number of strings over Z_4 of length n with trace 0 and subtrace 0.
  * @author Sean A. Irvine
  */
 public class A068620 extends Sequence1 {

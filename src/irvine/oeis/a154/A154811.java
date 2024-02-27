@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A154811 a(n) = Fibonacci(2*n+1) mod 9.
+ * A154811 a(n) = Fibonacci(2n+1) mod 9.
  * @author Sean A. Irvine
  */
 public class A154811 extends LinearRecurrence {

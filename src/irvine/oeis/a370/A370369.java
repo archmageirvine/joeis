@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A370369 a(n) = n! + Sum_{k=1..n-1} (n-k)*k! = n! + A014145(n-1); for n &gt;= 2, number of m such that any two consecutive digits of the base-n expansion of m differ by 1 after arranging the digits in decreasing order.
+ * A370369 allocated for Jianing Song.
  * @author Georg Fischer
  */
 public class A370369 extends LambdaSequence {

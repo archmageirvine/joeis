@@ -4,7 +4,7 @@ import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 
 /**
- * A002997 Carmichael numbers: composite numbers k such that a^(k-1) == 1 (mod k) for every a coprime to k.
+ * A002997 Carmichael numbers: composite numbers n such that a^(n-1) == 1 (mod n) for every a coprime to n.
  * @author Sean A. Irvine
  */
 public class A002997 extends A002322 {

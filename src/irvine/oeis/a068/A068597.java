@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005236 Barriers for omega(n): numbers n such that, for all m &lt; n, m + omega(m) &lt;= n.
+ * A068597 Barriers for bigomega(n): numbers n such that, for all m &lt; n, m + bigomega(m) &lt;= n.
  * @author Sean A. Irvine
  */
 public class A068597 extends Sequence1 {

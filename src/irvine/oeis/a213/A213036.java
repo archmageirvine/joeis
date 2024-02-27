@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A213036 a(n) = n^2 - floor(2n/3)^2.
+ * A213036 n^2-[2n/3]^2, where [] = floor.
  * @author Sean A. Irvine
  */
 public class A213036 extends LinearRecurrence {

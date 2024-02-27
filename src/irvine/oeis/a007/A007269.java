@@ -6,6 +6,7 @@ import irvine.math.graph.CliqueCoversIterator;
 import irvine.math.graph.Graph;
 import irvine.math.graph.MaximalCliques;
 import irvine.math.nauty.GenerateGraphs;
+import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
@@ -42,28 +43,28 @@ public class A007269 extends ParallelGenerateGraphsSequence {
     return graph;
   }
 
-  private boolean isTriangle(final Graph graph, final long maxIndpSet, final int u, final int v) {
+  private boolean isTriangle(final Graph graph, final Z maxIndpSet, final int u, final int v) {
     // Try and find m in indp set such that (u,m) and (v,m) in graph
     int m = 0;
-    long s = maxIndpSet;
-    while (s != 0) {
-      if ((s & 1) == 1 && graph.isAdjacent(u, m) && graph.isAdjacent(v, m)) {
+    Z s = maxIndpSet;
+    while (!s.isZero()) {
+      if (s.isOdd() && graph.isAdjacent(u, m) && graph.isAdjacent(v, m)) {
         return true;
       }
-      s >>>= 1;
+      s = s.divide2();
       ++m;
     }
     return false;
   }
 
-  private boolean checkTriangleCondition(final Graph graph, final long maxIndpSet) {
+  private boolean checkTriangleCondition(final Graph graph, final Z maxIndpSet) {
     final int n = graph.order();
     for (int u = 0; u < n; ++u) {
-      if ((maxIndpSet & (1L << u)) == 0) {
+      if (!maxIndpSet.testBit(u)) {
         // u not in max indp set
         int v = u;
         while ((v = graph.nextVertex(u, v)) != -1) {
-          if ((maxIndpSet & (1L << v)) == 0) {
+          if (!maxIndpSet.testBit(v)) {
             // v not in max indp set => edge (u,v) not in indp set
             if (!isTriangle(graph, maxIndpSet, u, v)) {
               return false;
@@ -75,17 +76,17 @@ public class A007269 extends ParallelGenerateGraphsSequence {
     return true;
   }
 
-  private boolean checkIncidenceCondition(final long[] cover, final long set) {
-    for (final long c : cover) {
-      if ((c & set) == 0) {
+  private boolean checkIncidenceCondition(final Z[] cover, final Z set) {
+    for (final Z c : cover) {
+      if (c.and(set).isZero()) {
         return false;
       }
     }
     return true;
   }
 
-  private boolean checkIncidenceCondition(final long[] cover, final List<Long> sets) {
-    for (final long m : sets) {
+  private boolean checkIncidenceCondition(final Z[] cover, final List<Z> sets) {
+    for (final Z m : sets) {
       if (!checkIncidenceCondition(cover, m)) {
         return false;
       }
@@ -101,14 +102,14 @@ public class A007269 extends ParallelGenerateGraphsSequence {
   protected long getCount(final Graph graph) {
     final Graph simplifiedGraph = simplify(graph);
     if (neighborCheck(simplifiedGraph)) {
-      final List<Long> maxIndpSets = MaximalCliques.maximalIndependentSets(simplifiedGraph);
-      for (final long maxIndpSet : maxIndpSets) {
+      final List<Z> maxIndpSets = MaximalCliques.maximalIndependentSets(simplifiedGraph);
+      for (final Z maxIndpSet : maxIndpSets) {
         if (!checkTriangleCondition(simplifiedGraph, maxIndpSet)) {
           return 0;
         }
       }
       final CliqueCoversIterator cci = new CliqueCoversIterator(simplifiedGraph);
-      long[] cc;
+      Z[] cc;
       while ((cc = cci.next()) != null) {
         if (checkIncidenceCondition(cc, maxIndpSets)) {
           return 1;

@@ -3,6 +3,8 @@ package irvine.math.graph;
 import java.util.ArrayList;
 import java.util.List;
 
+import irvine.math.z.Z;
+
 /**
  * Compute all the maximal cliques of a graph.
  * @author Sean A. Irvine
@@ -12,58 +14,44 @@ public final class MaximalCliques {
   // Bron-Kerbosch with pivoting
 
   private final Graph mGraph;
-  private final List<Long> mMaximalCliques = new ArrayList<>();
+  private final List<Z> mMaximalCliques = new ArrayList<>();
+  private final Z[] mNeighborSetsCache; // computed as needed
 
   private MaximalCliques(final Graph graph) {
     final int n = graph.order();
-    if (n > 64) {
-      throw new UnsupportedOperationException();
-    }
     mGraph = graph;
-    search(0, (1L << n) - 1, 0);
+    mNeighborSetsCache = new Z[n];
+    search(Z.ZERO, Z.ONE.shiftLeft(n).subtract(1), Z.ZERO);
   }
 
-  private int getLeast(long s) {
-    if (s == 0) {
-      return -1;
-    }
-    int k = 0;
-    while ((s & 1) == 0) {
-      ++k;
-      s >>>= 1;
-    }
-    return k;
+  private int choosePivot(final Z p, final Z x) {
+    return (int) (p.isZero() ? x : p).makeOdd().auxiliary();
   }
 
-  private int choosePivot(final long p, final long x) {
-    if (p == 0) {
-      return getLeast(x);
+  private Z neighbors(final int v) {
+    if (mNeighborSetsCache[v] == null) {
+      Z n = Z.ZERO;
+      int u = -1;
+      while ((u = mGraph.nextVertex(v, u)) != -1) {
+        n = n.setBit(u);
+      }
+      mNeighborSetsCache[v] = n;
     }
-    return getLeast(p);
+    return mNeighborSetsCache[v];
   }
 
-  private long neighbors(final int v) {
-    long n = 0;
-    int u = -1;
-    while ((u = mGraph.nextVertex(v, u)) != -1) {
-      n |= 1L << u;
-    }
-    return n;
-  }
-
-  private void search(final long r, long p, long x) {
-    if (p == 0 && x == 0) {
+  private void search(final Z r, Z p, Z x) {
+    if (p.isZero() && x.isZero()) {
       mMaximalCliques.add(r);
       return;
     }
     final int u = choosePivot(p, x);
     for (int v = 0; v < mGraph.order(); ++v) {
-      final long vb = 1L << v;
-      if (!mGraph.isAdjacent(u, v) && (p & vb) != 0) {
-        final long n = neighbors(v);
-        search(r | vb, p & n, x & n);
-        p &= ~vb;
-        x |= vb;
+      if (!mGraph.isAdjacent(u, v) && p.testBit(v)) {
+        final Z n = neighbors(v);
+        search(r.setBit(v), p.and(n), x.and(n));
+        p = p.clearBit(v);
+        x = x.setBit(v);
       }
     }
   }
@@ -73,7 +61,7 @@ public final class MaximalCliques {
    * @param graph the graph
    * @return maximal cliques in the form of bit sets
    */
-  public static List<Long> maximalCliques(final Graph graph) {
+  public static List<Z> maximalCliques(final Graph graph) {
     final MaximalCliques maximalCliques = new MaximalCliques(graph);
     return maximalCliques.mMaximalCliques;
   }
@@ -83,7 +71,7 @@ public final class MaximalCliques {
    * @param graph the graph
    * @return maximal independent sets in the form of bit sets
    */
-  public static List<Long> maximalIndependentSets(final Graph graph) {
+  public static List<Z> maximalIndependentSets(final Graph graph) {
     final MaximalCliques maximalCliques = new MaximalCliques(graph.complement());
     return maximalCliques.mMaximalCliques;
   }

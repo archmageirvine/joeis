@@ -2,6 +2,7 @@ package irvine.math.graph;
 
 import java.util.List;
 
+import irvine.math.z.Z;
 import junit.framework.TestCase;
 
 /**
@@ -21,9 +22,9 @@ public class MaximalCliquesTest extends TestCase {
     g.addEdge(2, 3);
     g.addEdge(3, 4);
     g.addEdge(3, 5);
-    final List<Long> maxCliques = MaximalCliques.maximalCliques(g);
+    final List<Z> maxCliques = MaximalCliques.maximalCliques(g);
     assertEquals("[19, 6, 12, 24, 40]", maxCliques.toString());
-    final List<Long> maxIndependentSets = MaximalCliques.maximalIndependentSets(g);
+    final List<Z> maxIndependentSets = MaximalCliques.maximalIndependentSets(g);
     assertEquals(5, maxIndependentSets.size());
     assertEquals("[37, 9, 10, 34, 52]", maxIndependentSets.toString());
   }
@@ -52,7 +53,7 @@ public class MaximalCliquesTest extends TestCase {
     g.addEdge(6, 8);
     g.addEdge(6, 7);
     g.addEdge(7, 8);
-    final List<Long> maxIndependentSets = MaximalCliques.maximalIndependentSets(g);
+    final List<Z> maxIndependentSets = MaximalCliques.maximalIndependentSets(g);
     assertEquals(5, maxIndependentSets.size());
     assertEquals("[21, 73, 42, 146, 292]", maxIndependentSets.toString());
   }

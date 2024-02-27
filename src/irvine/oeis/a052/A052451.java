@@ -6,6 +6,7 @@ import irvine.math.graph.Graph;
 import irvine.math.graph.MaximalCliques;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.Multigraph;
+import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
@@ -19,10 +20,10 @@ public class A052451 extends ParallelGenerateGraphsSequence {
     super(0, 3, false, false, false);
   }
 
-  private int max(final List<Long> lst) {
+  private int max(final List<Z> lst) {
     int max = 0;
-    for (final long l : lst) {
-      final int cnt = Long.bitCount(l);
+    for (final Z l : lst) {
+      final int cnt = l.bitCount();
       if (cnt > max) {
         max = cnt;
       }

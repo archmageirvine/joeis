@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.math.z.Z;
 
 /**
- * A074029 Number of binary Lyndon words of length n with trace 1 and subtrace 0 over Z_2.
+ * A068620 Number of strings over Z_4 of length n with trace 0 and subtrace 0.
  * @author Sean A. Irvine
  */
 public class A068620 extends A068596 {

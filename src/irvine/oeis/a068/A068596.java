@@ -68,6 +68,12 @@ public class A068596 extends Sequence1 {
     return sum;
   }
 
+  protected Z s(final int n, final int m, final int t, final int s) {
+    final int m2 = (m & 1) == 1 ? m : 2 * m;
+    return s(n, m, t, (t * t + 2 * (m2 - s)) % m2, m, m2);
+  }
+  //{ WordsZmTS(n,m,T,S) = WordsZmTP(n,m,Mod(T,m),Mod(T^2 - 2*S,if(m%2,m,2*m))); }
+
   protected Z lyndonZmTS(final int n, final int m, final int trace, final int subtrace) {
     final int m2 = (m & 1) == 1 ? m : 2 * m;
     final int s2 = (trace * trace + 2 * (m2 - subtrace)) % m2;

@@ -2347,3 +2347,4 @@ A068529 k values for self-contained numbers.
 A068590 Number of different Euler multigraphs with n edges, loops allowed.
 A068591 Nonessential triangular numbers (conjectured).
 A068592 Number of different Euler multigraphs with n edges, loops forbidden.
+A068599 Number of n-uniform tilings

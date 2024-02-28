@@ -14,9 +14,11 @@ public class A116637 extends LambdaSequence {
   /** Construct the sequence. */
   public A116637() {
     super(0, m -> {
-      if (m == 0) return Z.valueOf(m + 1);
+      if (m == 0) {
+        return Z.ONE;
+      }
       final int n = m / 2;
-      return ((m & 1) == 1) ? Binomial.binomial(3 * n + 1, n).divide(n + 1).multiply(2) : Binomial.binomial(3 * n, n).divide(2 * n + 1).multiply(2);
+      return (m & 1) == 1 ? Binomial.binomial(3L * n + 1, n).divide(n + 1).multiply(2) : Binomial.binomial(3L * n, n).divide(2 * n + 1).multiply(2);
     });
   }
 }

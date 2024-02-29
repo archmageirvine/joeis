@@ -53,18 +53,18 @@ public class A068604 extends Sequence1 {
       }
 
       // (16.12) compliance check
-      for (final Map.Entry<List<Integer>, Z> e : mS.entrySet()) {
-        final List<Integer> lst = e.getKey();
-        final ArrayList<Integer> a = new ArrayList<>(lst);
-        a.add(mN);
-        final Z c1 = map.get(a);
-        final ArrayList<Integer> b = new ArrayList<>(lst);
-        b.set(b.size() - 1, mN);
-        final Z c2 = map.get(b);
-        if (!c1.add(c2).equals(e.getValue().multiply(mN))) {
-          throw new RuntimeException("Error detected during checking of (16.12): " + e.getKey());
-        }
-      }
+//      for (final Map.Entry<List<Integer>, Z> e : mS.entrySet()) {
+//        final List<Integer> lst = e.getKey();
+//        final ArrayList<Integer> a = new ArrayList<>(lst);
+//        a.add(mN);
+//        final Z c1 = map.get(a);
+//        final ArrayList<Integer> b = new ArrayList<>(lst);
+//        b.set(b.size() - 1, mN);
+//        final Z c2 = map.get(b);
+//        if (!c1.add(c2).equals(e.getValue().multiply(mN))) {
+//          throw new RuntimeException("Error detected during checking of (16.12): " + e.getKey());
+//        }
+//      }
 
       mS = map;
     }

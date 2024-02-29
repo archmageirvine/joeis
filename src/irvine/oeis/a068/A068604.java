@@ -19,6 +19,8 @@ import irvine.util.string.StringUtils;
  */
 public class A068604 extends Sequence1 {
 
+  // Implementation based on table and description on p. 379 of Hammersley
+
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;
   private Map<List<Integer>, Z> mS = Collections.singletonMap(Arrays.asList(0, 1), Z.ONE);
@@ -49,6 +51,21 @@ public class A068604 extends Sequence1 {
           map.merge(newList, mul, Z::add);
         }
       }
+
+      // (16.12) compliance check
+      for (final Map.Entry<List<Integer>, Z> e : mS.entrySet()) {
+        final List<Integer> lst = e.getKey();
+        final ArrayList<Integer> a = new ArrayList<>(lst);
+        a.add(mN);
+        final Z c1 = map.get(a);
+        final ArrayList<Integer> b = new ArrayList<>(lst);
+        b.set(b.size() - 1, mN);
+        final Z c2 = map.get(b);
+        if (!c1.add(c2).equals(e.getValue().multiply(mN))) {
+          throw new RuntimeException("Error detected during checking of (16.12): " + e.getKey());
+        }
+      }
+
       mS = map;
     }
     if (mVerbose) {

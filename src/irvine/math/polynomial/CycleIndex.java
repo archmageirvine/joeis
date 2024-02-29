@@ -554,6 +554,7 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
 
   /**
    * Replace <code>x_k</code> in this cycle index with <code>g(z_k,...,z_mk,...)</code>.
+   * Also called, plethysym.
    * @param g a cycle index
    * @return application
    */

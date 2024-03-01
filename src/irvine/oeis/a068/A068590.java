@@ -27,7 +27,7 @@ public class A068590 extends Sequence1 {
   public Z next() {
     final IntegerPartition part = new IntegerPartition(++mN);
     int[] p;
-    int[] c = new int[mN + 1];
+    final int[] c = new int[mN + 1];
     Z sum = Z.ZERO;
     while ((p = part.next()) != null) {
       IntegerPartition.toCountForm(p, c);

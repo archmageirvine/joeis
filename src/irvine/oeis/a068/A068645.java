@@ -9,8 +9,8 @@ import irvine.oeis.AbstractSequence;
  */
 public class A068645 extends AbstractSequence {
 
-  private int mAdd1; // add this to the last digit before shift
-  private int mAdd2; // add this to the last digit after shift
+  private final int mAdd1; // add this to the last digit before shift
+  private final int mAdd2; // add this to the last digit after shift
   private Z mTerm;
 
   /** Construct the sequence. */

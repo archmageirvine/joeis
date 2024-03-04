@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A022927 Number of 3^m between 5^n and 5^(n+1).
+ * A022927 Number of integers m such that 5^n &lt; 3^m &lt; 5^(n+1).
  * @author Sean A. Irvine
  */
 public class A022927 extends Sequence0 {

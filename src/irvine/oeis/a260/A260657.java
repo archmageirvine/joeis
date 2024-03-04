@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005394;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A260657 Rounded error in Stirling&apos;s formula: a(n) = round(n! - exp(-n)*n^(n+1/2)*sqrt(2*Pi)).
+ * A260657 Rounded error in Stirling's formula: a(n) = round(n! - exp(-n)*n^(n+1/2)*sqrt(2*Pi)).
  * @author Georg Fischer
  */
 public class A260657 extends TupleTransformSequence {

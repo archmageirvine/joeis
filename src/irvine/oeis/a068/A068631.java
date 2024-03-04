@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 
 /**
- * A068590.
+ * A068631 a(1) = 4; a(n) = smallest composite number different from the previous ones such that the sum of all the terms is a composite number.
  * @author Sean A. Irvine
  */
 public class A068631 extends Sequence1 {

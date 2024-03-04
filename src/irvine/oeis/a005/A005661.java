@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005661 n in S implies 2n-2, 3n-3 in S.
+ * A005661 k in S implies 2k-2, 3k-3 in S.
  * @author Sean A. Irvine
  */
 public class A005661 extends Sequence1 {

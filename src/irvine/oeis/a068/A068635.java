@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001359;
 
 /**
- * A068590.
+ * A068635 Smaller of the first twin pair to yield a twin pair chain of length n.
  * @author Sean A. Irvine
  */
 public class A068635 extends A001359 {

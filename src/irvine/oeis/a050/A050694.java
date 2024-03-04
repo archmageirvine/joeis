@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A050694 Composite numbers n such that all prime factors of n are a substring of n.
+ * A050694 Composite numbers k such that all prime factors of k are a substring of k.
  * @author Sean A. Irvine
  */
 public class A050694 extends Sequence1 {

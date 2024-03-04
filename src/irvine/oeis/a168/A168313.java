@@ -6,7 +6,7 @@ import irvine.oeis.a101.A101688;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A168313 Triangle read by rows, retain 1&apos;s as rightmost diagonal of A101688 and replace all other 1&apos;s with 2&apos;s.
+ * A168313 Triangle read by rows, retain 1's as rightmost diagonal of A101688 and replace all other 1's with 2's.
  * @author Georg Fischer
  */
 public class A168313 extends TupleTransformSequence {

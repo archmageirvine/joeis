@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A022921 Number of 2^m between 3^n and 3^(n+1).
+ * A022921 Number of integers m such that 3^n &lt; 2^m &lt; 3^(n+1).
  * @author Sean A. Irvine
  */
 public class A022921 extends Sequence0 {

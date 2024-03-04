@@ -6,7 +6,7 @@ import irvine.oeis.a055.A055642;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A369152 Total number of digits in row n of Pascal&apos;s triangle.
+ * A369152 Total number of digits in row n of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A369152 extends DirectTransformSequence {

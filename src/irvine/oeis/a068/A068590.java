@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068590.
+ * A068590 Number of different Euler multigraphs with n edges, loops allowed.
  * @author Sean A. Irvine
  */
 public class A068590 extends Sequence1 {

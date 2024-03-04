@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005662 If n appears then so do 2n+2 and 3n+3.
+ * A005662 Start with 4; if k appears then so do 2k+2 and 3k+3. (duplicates omitted.).
  * @author Sean A. Irvine
  */
 public class A005662 extends Sequence1 {

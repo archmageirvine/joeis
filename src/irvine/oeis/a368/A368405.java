@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a064.A064179;
 
 /**
- * A368405 Infinitary version of Mertens&apos;s function: a(n) = Sum_{k=1..n} A064179(k).
+ * A368405 Infinitary version of Mertens's function: a(n) = Sum_{k=1..n} A064179(k).
  * @author Georg Fischer
  */
 public class A368405 extends PartialSumSequence {

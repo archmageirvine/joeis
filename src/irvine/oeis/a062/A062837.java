@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062837 Numbers n such that n, 2n+1, 3n+1 are all squarefree.
+ * A062837 Numbers k such that k, 2*k+1, 3*k+1 are all squarefree.
  * @author Sean A. Irvine
  */
 public class A062837 extends Sequence1 {

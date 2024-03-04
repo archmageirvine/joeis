@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033308;
 
 /**
- * A054263.
+ * A068663 Let N = 23571113171923293137... the concatenation of primes; partition this number into minimal strings of composite numbers.
  * @author Sean A. Irvine
  */
 public class A068663 extends Sequence1 {

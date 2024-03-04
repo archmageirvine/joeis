@@ -6,7 +6,7 @@ package irvine.oeis.a182;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A182037 Expansion of 1 - (1 - 2x - x^2)^(1/2).
+ * A182037 Expansion of 1 - (1 - 2*x - x^2)^(1/2).
  * @author Georg Fischer
  */
 public class A182037 extends HolonomicRecurrence {

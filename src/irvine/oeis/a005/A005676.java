@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A005676 Sum C(n-k,4*k), k = 0..n.
+ * A005676 a(n) = Sum_{k=0..n} C(n-k,4*k).
  * @author Sean A. Irvine
  */
 public class A005676 extends Sequence0 {

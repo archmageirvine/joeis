@@ -5,7 +5,7 @@ package irvine.oeis.a130;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A130905 E.g.f.: exp(x^2 / 2) / (1 - x).
+ * A130905 Expansion of e.g.f. exp(x^2 / 2) / (1 - x).
  * @author Georg Fischer
  */
 public class A130905 extends HolonomicRecurrence {

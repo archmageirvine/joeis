@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068590.
+ * A068630 a(0)=0; a(n) = n + a(n-1) if gcd(n,a(n-1)) = 1 or a(n-1) = 0; a(n) = a(n-1) - n if n divides a(n-1), otherwise a(n) = a(n-1).
  * @author Sean A. Irvine
  */
 public class A068630 extends Sequence0 {

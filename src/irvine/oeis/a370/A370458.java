@@ -5,7 +5,7 @@ import irvine.oeis.PartialProductSequence;
 import irvine.oeis.a051.A051179;
 
 /**
- * A370458 allocated for Amiram Eldar.
+ * A370458 Partial products of A051179.
  * @author Georg Fischer
  */
 public class A370458 extends PartialProductSequence {

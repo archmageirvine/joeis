@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A204579 Triangle read by rows: matrix inverse of A036969.
+ * A204579 Triangle read by rows: matrix inverse of the central factorial numbers T(2n, 2k) (A036969).
  * @author Georg Fischer
  */
 public class A204579 extends Triangle {

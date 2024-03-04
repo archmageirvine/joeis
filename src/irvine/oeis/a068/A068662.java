@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a031.A031312;
 
 /**
- * A054263.
+ * A068662 Let N = 1357911131517192123252729... the concatenation of odd numbers; partition this number into minimal strings of primes.
  * @author Sean A. Irvine
  */
 public class A068662 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A000207 Number of inequivalent ways of dissecting a regular (n+2)-gon into n triangles by n-1 non-intersecting diagonals under rotations and reflections; also the number of planar 2-trees.
+ * A000207 Number of inequivalent ways of dissecting a regular (n+2)-gon into n triangles by n-1 non-intersecting diagonals under rotations and reflections; also the number of (unlabeled) maximal outerplanar graphs on n+2 vertices.
  * @author Sean A. Irvine
  */
 public class A000207 extends AbstractSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000984;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A208279 Central terms of Pascal&apos;s triangle mod 10 (A008975).
+ * A208279 Central terms of Pascal's triangle mod 10 (A008975).
  * @author Georg Fischer
  */
 public class A208279 extends SimpleTransformSequence {

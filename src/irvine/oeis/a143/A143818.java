@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A143818 Let R(n) = sum {k = 0..inf} (3k)^n/(3k)! for n = 0, 1, 2,... . Then the real number R(n) is an integral linear combination of R(0), R(1) and R(2). This sequence gives the coefficients of R(1).
+ * A143818 Let R(n) = sum {k = 0..inf} (3k)^n/(3k)! for n = 0,1,2,... . Then the real number R(n) is an integral linear combination of R(0), R(1) and R(2). This sequence gives the coefficients of R(1).
  * @author Georg Fischer
  */
 public class A143818 extends TupleTransformSequence {

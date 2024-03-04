@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A005699 tan(n)^2 rounded up.
+ * A005699 a(n) = ceiling(tan(n)^2).
  * @author Sean A. Irvine
  */
 public class A005699 extends Sequence0 {

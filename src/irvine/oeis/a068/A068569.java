@@ -9,7 +9,7 @@ import irvine.util.string.English;
 import irvine.util.string.StringUtils;
 
 /**
- * A068569 Positive numbers that are not the ratio of any n/(# of letters to express n in English).
+ * A068569 Positive numbers that are not the ratio of any n/(number of letters to express n in English).
  * @author Sean A. Irvine
  */
 public class A068569 extends Sequence1 implements Conjectural {

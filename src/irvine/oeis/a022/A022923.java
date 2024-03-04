@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A022923 Number of 2^m between 7^n and 7^(n+1).
+ * A022923 Number of integers m such that 7^n &lt; 2^m &lt; 7^(n+1).
  * @author Sean A. Irvine
  */
 public class A022923 extends Sequence0 {

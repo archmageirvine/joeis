@@ -5,7 +5,7 @@ package irvine.oeis.a082;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A082787 (2/3)*(2*n-1)!*binomial(3*n,2*n).
+ * A082787 a(n) = (2/3)*(2*n-1)!*binomial(3*n,2*n).
  * @author Georg Fischer
  */
 public class A082787 extends HolonomicRecurrence {

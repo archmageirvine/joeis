@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068596.
+ * A068603 Numbers n such that prime(n)+prime(2n)+prime(3n) is prime.
  * @author Sean A. Irvine
  */
 public class A068603 extends Sequence1 {

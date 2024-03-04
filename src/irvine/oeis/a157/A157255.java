@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BriefSequence;
 
 /**
- * A157255 Sigma_(n^n)(n).
+ * A157255 a(n) = sigma_(n^n)(n).
  *
  * @author Georg Fischer
  */

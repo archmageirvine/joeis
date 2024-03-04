@@ -8,7 +8,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002808;
 
 /**
- * A068590.
+ * A068632 a(1) = 2; a(n+1) = smallest composite number not in the sequence such that the sum of all the terms is prime.
  * @author Sean A. Irvine
  */
 public class A068632 extends Sequence1 {

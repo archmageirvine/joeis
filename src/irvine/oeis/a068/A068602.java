@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068596.
+ * A068602 Number of functions f:{0,1,2,...,n} -&gt; {0,1,2,...,n} that satisfy f(0)=0 and f(n)=0, with f nowhere concave upward.
  * @author Sean A. Irvine
  */
 public class A068602 extends Sequence0 {

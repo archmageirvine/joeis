@@ -6,7 +6,7 @@ import irvine.oeis.a246.A246547;
 import irvine.util.string.StringUtils;
 
 /**
- * A068583 p and q are primes. p^x - q^y = 2^h. ( p != q, h=&gt;0, x&gt;1, y&gt;1 ) : sequence gives p^x arranged in increasing order.
+ * A068583 Let p and q be distinct primes such that p^x - q^y = 2^h with h&gt;=0, x&gt;1, y&gt;1. Sequence gives p^x arranged in increasing order.
  * @author Sean A. Irvine
  */
 public class A068583 extends A246547 {

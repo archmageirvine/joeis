@@ -6,7 +6,7 @@ import irvine.oeis.a051.A051239;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A103839 Number of permutations of (1, 2, 3,...,n) where each of the (n-1) adjacent pairs of elements sums to a prime.
+ * A103839 Number of permutations of (1,2,3,...,n) where each of the (n-1) adjacent pairs of elements sums to a prime.
  * @author Georg Fischer
  */
 public class A103839 extends SimpleTransformSequence {

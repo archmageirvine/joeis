@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a001.A001274;
 
 /**
- * A063739 Squarefree n such that phi(n) = phi(n+1).
+ * A063739 Squarefree numbers k such that phi(k) = phi(k+1).
  * @author Sean A. Irvine
  */
 public class A063739 extends FilterSequence {

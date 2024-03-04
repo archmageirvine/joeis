@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005238 Numbers n such that n, n+1 and n+2 have the same number of divisors.
+ * A005238 Numbers k such that k, k+1 and k+2 have the same number of divisors.
  * @author Sean A. Irvine
  */
 public class A005238 extends Sequence1 {

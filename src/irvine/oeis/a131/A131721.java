@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A131721 Overlay of Pell companion numbers: a(n)=A001333(n)+A001333(n-6).
+ * A131721 Overlay of Pell companion numbers: a(n) = A001333(n) + A001333(n-6).
  * @author Georg Fischer
  */
 public class A131721 extends GeneratingFunctionSequence {

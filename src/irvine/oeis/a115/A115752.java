@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A115752 Number of words of length n+1 created with the letters a,b,c with more c&apos;s than b&apos;s and more b&apos;s than a&apos;s.
+ * A115752 Number of words of length n+1 created with the letters a,b,c with more c's than b's and more b's than a's.
  * @author Georg Fischer
  */
 public class A115752 extends LambdaSequence {

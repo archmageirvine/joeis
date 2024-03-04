@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A054263.
+ * A068660 Primes formed from the concatenation of k, k+1 and k for some k.
  * @author Sean A. Irvine
  */
 public class A068660 extends Sequence1 {

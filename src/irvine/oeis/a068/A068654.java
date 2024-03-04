@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A054263.
+ * A068654 Prime numbers such that every cyclic permutation (other than the number itself) is composite.
  * @author Sean A. Irvine
  */
 public class A068654 extends A000040 {

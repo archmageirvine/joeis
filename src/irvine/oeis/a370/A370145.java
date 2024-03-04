@@ -4,7 +4,7 @@ package irvine.oeis.a370;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A370145 allocated for Paul D. Hanna.
+ * A370145 Expansion of ( (1 + x)*(1 - 2*x)*(1 + 4*x) )^(1/3).
  * @author Georg Fischer
  */
 public class A370145 extends HolonomicRecurrence {

@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
 /**
- * A068590.
+ * A068615 Path of a knight's tour on an infinite chessboard.
  * @author Sean A. Irvine
  */
 public class A068615 extends A068608 {

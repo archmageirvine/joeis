@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A054263.
+ * A068659 Primes formed from the concatenation of n, n-1 and n for some n &gt; 0.
  * @author Sean A. Irvine
  */
 public class A068659 extends Sequence1 {

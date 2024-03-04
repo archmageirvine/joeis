@@ -10,7 +10,7 @@ import irvine.oeis.Sequence0;
 import irvine.util.Point;
 
 /**
- * A068590.
+ * A068608 Path of a knight's tour on an infinite chessboard.
  * @author Sean A. Irvine
  */
 public class A068608 extends Sequence0 {

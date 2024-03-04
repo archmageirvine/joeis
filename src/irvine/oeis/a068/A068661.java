@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a033.A033307;
 
 /**
- * A054263.
+ * A068661 Let N = 123456789101112131415... the concatenation of natural numbers; partition this number into minimal strings of noncomposite numbers, i.e., a(1) = 1 and a(2) onwards are primes.
  * @author Sean A. Irvine
  */
 public class A068661 extends Sequence1 {

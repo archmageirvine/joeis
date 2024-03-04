@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a004.A004593;
 
 /**
- * A369870 Cumulative sum of digits of base-2 representation of Euler number &quot;e&quot;.
+ * A369870 Cumulative sum of digits of base-2 representation of Euler number "e".
  * @author Georg Fischer
  */
 public class A369870 extends PartialSumSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000217;
 
 /**
- * A054263 Number of palindromic triangular numbers with n digits.
+ * A068644 Index of the largest n-digit palindromic triangular number, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A068644 extends A000217 {

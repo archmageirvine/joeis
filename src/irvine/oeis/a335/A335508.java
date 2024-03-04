@@ -6,7 +6,7 @@ import irvine.oeis.a080.A080599;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A335508 Number of patterns of length n matching the pattern (1, 1, 1).
+ * A335508 Number of patterns of length n matching the pattern (1,1,1).
  * @author Georg Fischer
  */
 public class A335508 extends TupleTransformSequence {

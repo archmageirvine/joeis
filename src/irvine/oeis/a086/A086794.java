@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a051.A051664;
 
 /**
- * A086794 Numbers n such that n-th cyclotomic polynomial has exactly 9 nonzero terms.
+ * A086794 Numbers k such that the k-th cyclotomic polynomial has exactly 9 nonzero terms.
  * @author Georg Fischer
  */
 public class A086794 extends FilterPositionSequence {

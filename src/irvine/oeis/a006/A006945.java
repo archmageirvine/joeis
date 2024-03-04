@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A006945 Smallest odd number that requires n Miller-Rabin primality tests.
+ * A006945 Smallest odd composite number that requires n Miller-Rabin primality tests.
  * @author Sean A. Irvine
  */
 public class A006945 extends Sequence1 {

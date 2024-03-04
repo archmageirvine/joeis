@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003098;
 
 /**
- * A054263.
+ * A068643 Largest n-digit palindromic triangular number, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A068643 extends A003098 {

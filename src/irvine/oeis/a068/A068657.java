@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A054263.
+ * A068657 Successive left concatenation of floor(k/2) beginning with n until we reach 1.
  * @author Sean A. Irvine
  */
 public class A068657 extends Sequence1 {

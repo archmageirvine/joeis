@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A004782 2(2n-3)!/n!(n-1)! is an integer.
+ * A004782 Numbers k such that 2*(2k-3)!/(k!*(k-1)!) is an integer.
  * @author Sean A. Irvine
  */
 public class A004782 extends Sequence1 {

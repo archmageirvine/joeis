@@ -14,7 +14,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A068595.
+ * A068604 Number of distinct coefficients in expansion related to enumeration of permutations of length n by length of longest subsequence.
  * @author Sean A. Irvine
  */
 public class A068604 extends Sequence1 {

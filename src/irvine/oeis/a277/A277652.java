@@ -6,7 +6,7 @@ package irvine.oeis.a277;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A277652 Numerators on factorial moments of order 2 for the number of parts in dissections of rooted and convex polygons.
+ * A277652 Numerators of factorial moments of order 2 for the number of parts in dissections of rooted and convex polygons.
  * @author Georg Fischer
  */
 public class A277652 extends HolonomicRecurrence {

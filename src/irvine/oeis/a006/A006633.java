@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A006633 From generalized Catalan numbers.
+ * A006633 Expansion of hypergeom([3/2, 7/4, 2, 9/4], [7/3, 8/3, 3], (256/27)*x).
  * @author Sean A. Irvine
  */
 public class A006633 extends Sequence0 {

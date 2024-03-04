@@ -5,7 +5,7 @@ import irvine.oeis.QuotientSequence;
 import irvine.oeis.a000.A000178;
 
 /**
- * A203417 A203415(n)/A000178(n).
+ * A203417 a(n) = A203415(n)/A000178(n).
  * @author Georg Fischer
  */
 public class A203417 extends QuotientSequence {

@@ -10,7 +10,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Point;
 
 /**
- * A068590.
+ * A316667 Squares visited by a knight moving on a spirally numbered board always to the lowest available unvisited square.
  * @author Sean A. Irvine
  */
 public class A316667 extends Sequence1 {

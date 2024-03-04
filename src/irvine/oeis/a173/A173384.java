@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001803;
 import irvine.oeis.a046.A046161;
 
 /**
- * A173384 a(n) = A001803(n) - A046161(n).
+ * A173384 a(n) = 2^(2*n - HammingWeight(n)) * [x^n] ((x-1)^(-1) + (1-x)^(-3/2)).
  * @author Georg Fischer
  */
 public class A173384 extends Sequence0 {

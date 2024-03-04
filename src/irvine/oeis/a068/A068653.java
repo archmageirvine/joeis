@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A054263.
+ * A068653 Composite numbers such that every cyclic shift (other than the number itself) gives a prime.
  * @author Sean A. Irvine
  */
 public class A068653 extends A002808 {

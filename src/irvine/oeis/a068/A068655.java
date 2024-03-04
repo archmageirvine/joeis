@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A054263.
+ * A068655 Primes which are a concatenation of at least two consecutive primes.
  * @author Sean A. Irvine
  */
 public class A068655 extends A000040 {

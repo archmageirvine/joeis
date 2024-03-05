@@ -11,7 +11,7 @@ import irvine.oeis.a000.A000040;
  */
 public class A068655 extends A000040 {
 
-  private static class State implements Comparable<State> {
+  private static final class State implements Comparable<State> {
     private final Z mN;
     private final Z mP;
 

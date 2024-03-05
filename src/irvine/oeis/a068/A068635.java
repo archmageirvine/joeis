@@ -21,7 +21,7 @@ public class A068635 extends A001359 {
       mStart = super.next();
       Z p = mStart;
       while (true) {
-        Z s = p.multiply2().add(2);
+        final Z s = p.multiply2().add(2);
         p = s.subtract(1);
         if (!p.isProbablePrime() || !s.add(1).isProbablePrime()) {
           break;

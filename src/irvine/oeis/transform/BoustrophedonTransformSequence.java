@@ -15,10 +15,20 @@ public class BoustrophedonTransformSequence extends MemoryFunction2Sequence<Long
 
   /**
    * Create the boustrophedon transform of a sequence.
+   * @param offset offset
+   * @param seq underlying sequence
+   */
+  public BoustrophedonTransformSequence(final int offset, final Sequence seq) {
+    super(offset);
+    mSeq = seq;
+  }
+
+  /**
+   * Create the boustrophedon transform of a sequence.
    * @param seq underlying sequence
    */
   public BoustrophedonTransformSequence(final Sequence seq) {
-    mSeq = seq;
+    this(0, seq);
   }
 
   @Override

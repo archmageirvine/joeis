@@ -1,0 +1,64 @@
+package irvine.oeis.a068;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import irvine.math.IntegerUtils;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence0;
+
+/**
+ * A068701.
+ * @author Sean A. Irvine
+ */
+public class A068723 extends Sequence0 {
+
+  private int mN = -1;
+
+  private void update(final Map<List<Integer>, Z> counts, final List<Integer> input, final Z v, final int max, final int[] output, final int down, final int pos) {
+    if (pos >= input.size()) {
+      if (down == 0) {
+        counts.merge(IntegerUtils.toList(output), v, Z::add);
+      }
+      return;
+    }
+    final int left = input.get(pos);
+    final int in = left + down;
+    // Loop over the possible right flows given the current in flow
+    final int lim = Math.min(max, in + max);
+    for (int right = Math.max(-max, in - max); right <= lim; ++right) {
+      final int newDown = in - right;
+      output[pos] = right;
+      update(counts, input, v, max, output, newDown, pos + 1);
+    }
+  }
+
+  private void update(final Map<List<Integer>, Z> counts, final List<Integer> input, final Z v, final int max) {
+    update(counts, input, v, max, new int[input.size()], 0, 0);
+  }
+
+  protected Z solenoidalFlows(final int size, final int max) {
+    // Compute one column at a time keeping track of flows across the right boundary
+    Map<List<Integer>, Z> counts = new HashMap<>();
+    final List<Integer> zero = new ArrayList<>();
+    for (int k = 0; k < size; ++k) {
+      zero.add(0);
+    }
+    counts.put(zero, Z.ONE); // 1 way to have no flow
+    for (int k = 0; k < size; ++k) {
+      final Map<List<Integer>, Z> newCounts = new HashMap<>();
+      for (final Map.Entry<List<Integer>, Z> e : counts.entrySet()) {
+        update(newCounts, e.getKey(), e.getValue(), max);
+      }
+      counts = newCounts;
+    }
+    return counts.get(zero);
+  }
+
+  @Override
+  public Z next() {
+    return solenoidalFlows(4, ++mN);
+  }
+}

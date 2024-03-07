@@ -1,5 +1,6 @@
 package irvine.math.z;
 
+import irvine.math.q.Q;
 import irvine.math.LongUtils;
 import irvine.math.factorial.MemoryFactorial;
 
@@ -14,7 +15,6 @@ public final class Binomial {
 
   /**
    * Compute binomial coefficients.
-   *
    * @param n upper index (may be negative)
    * @param m lower index
    * @return binomial coefficient
@@ -49,7 +49,6 @@ public final class Binomial {
 
   /**
    * Compute binomial coefficients of non-negative values.
-   *
    * @param n upper index
    * @param m lower index
    * @return binomial coefficient
@@ -83,8 +82,31 @@ public final class Binomial {
   }
 
   /**
+   * Compute binomial coefficients with fractional first parameter.
+   * @param n upper index
+   * @param m lower index
+   * @return binomial coefficient
+   */
+  public static Q binomial(final Q n, final Z m) {
+    return binomial(n, m.intValueExact());
+  }
+
+  /**
+   * Compute binomial coefficients with fractional first parameter.
+   * @param n upper index
+   * @param m lower index
+   * @return binomial coefficient
+   */
+  public static Q binomial(final Q n, final int m) {
+    Q prod = Q.ONE;
+    for (int j = 0; j < m; ++j) {
+      prod = prod.multiply(n.subtract(j)).divide(j + 1);
+    }
+    return prod;
+  }
+
+  /**
    * Compute binomial coefficients of non-negative values.
-   *
    * @param n upper index
    * @param m lower index
    * @return binomial coefficient
@@ -95,7 +117,6 @@ public final class Binomial {
 
   /**
    * Compute binomial coefficients of non-negative values.
-   *
    * @param n upper index
    * @param m lower index
    * @return binomial coefficient
@@ -106,7 +127,6 @@ public final class Binomial {
 
   /**
    * Catalan numbers.
-   *
    * @param n index
    * @return Catalan number
    */
@@ -118,7 +138,6 @@ public final class Binomial {
 
   /**
    * Compute a multinomial coefficient.
-   *
    * @param top top index
    * @param bottom bottom indices
    * @return coefficient
@@ -137,7 +156,6 @@ public final class Binomial {
 
   /**
    * The Gaussian binomial of <code>m</code> and <code>r</code> for <code>q</code>.
-   *
    * @param m upper parameter
    * @param r lower parameter
    * @param q base
@@ -202,7 +220,6 @@ public final class Binomial {
 
   /**
    * Compute binomial coefficients modulo a prime.
-   *
    * @param n upper index (may be negative)
    * @param m lower index
    * @param p modulus

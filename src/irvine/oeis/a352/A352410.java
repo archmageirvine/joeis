@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A352410 Expansion e.g.f. LambertW( -x/(1-x) ) / (-x).
+ * A352410 Expansion of e.g.f. LambertW( -x/(1-x) ) / (-x).
  * @author Georg Fischer
  */
 public class A352410 extends LambdaSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000290;
 
 /**
- * A068701.
+ * A068708 Squares whose digits can be arranged in increasing cyclic order - to form a substring of 123456789012345678901234567890...
  * @author Sean A. Irvine
  */
 public class A068708 extends Sequence1 {

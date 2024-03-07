@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068701.
+ * A068701 Primes in the concatenation n^2, n and 1.
  * @author Sean A. Irvine
  */
 public class A068701 extends Sequence1 {

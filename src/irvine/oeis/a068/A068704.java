@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068701.
+ * A068704 a(n) = smallest prime obtained as the concatenation of n^k, n^(k-1), n^(k-2), ..., n^2, n, 1 for some k &gt;= 1; or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A068704 extends Sequence1 {

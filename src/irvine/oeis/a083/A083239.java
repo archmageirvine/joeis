@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A083239 First order recursion: a(0)=1; a(n)=phi(n)-a(n-1)=A000010(n)-a(n-1).
+ * A083239 First order recursion: a(0) = 1; a(n) = phi(n) - a(n-1) = A000010(n) - a(n-1).
  * @author Georg Fischer
  */
 public class A083239 extends TupleTransformSequence {

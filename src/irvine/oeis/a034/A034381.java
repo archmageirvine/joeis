@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A034381 Number of labeled cyclic groups.
+ * A034381 Number of labeled cyclic groups with n elements.
  * @author Sean A. Irvine
  */
 public class A034381 extends A000142 {

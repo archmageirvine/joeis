@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005117;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A068328 Arithmetic derivative of squarefree numbers.
+ * A068328 Arithmetic derivatives of the squarefree numbers.
  * @author Georg Fischer
  */
 public class A068328 extends SimpleTransformSequence {

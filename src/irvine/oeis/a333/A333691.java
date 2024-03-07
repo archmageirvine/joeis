@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A333691 Expansion of e.g.f. atan(1 - sqrt(1 - x^2)) (even powers only).
+ * A333691 Expansion of e.g.f. arctan(1 - sqrt(1 - x^2)) (even powers only).
  * E.g.f.: atan(1 - sqrt(1 - x^2)), even powers
  * @author Georg Fischer
  */

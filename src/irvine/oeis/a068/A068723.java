@@ -7,15 +7,24 @@ import java.util.Map;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A068701.
+ * A068723 Number of solenoidal flows (flow in = flow out) in a 4 X 4 square array with integer velocities -n .. n.
  * @author Sean A. Irvine
  */
-public class A068723 extends Sequence0 {
+public class A068723 extends AbstractSequence {
 
   private int mN = -1;
+
+  protected A068723(final int offset) {
+    super(offset);
+  }
+
+  /** Construct the sequence. */
+  public A068723() {
+    this(0);
+  }
 
   private void update(final Map<List<Integer>, Z> counts, final List<Integer> input, final Z v, final int max, final int[] output, final int down, final int pos) {
     if (pos >= input.size()) {

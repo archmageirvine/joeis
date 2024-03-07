@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.transform.BoustrophedonTransformSequence;
 
 /**
- * A068701.
+ * A068718 Boustrophedon transform of A068717 with A068717(1) = -1 instead of 0.
  * @author Sean A. Irvine
  */
 public class A068718 extends BoustrophedonTransformSequence {

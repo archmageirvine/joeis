@@ -5,7 +5,7 @@ import irvine.oeis.a003.A003154;
 import irvine.oeis.prime.PrimeSubsequence;
 
 /**
- * A083577 Prime star numbers.
+ * A083577 Primes in A003154.
  * @author Georg Fischer
  */
 public class A083577 extends PrimeSubsequence {

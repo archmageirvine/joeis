@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A294064 Numbers n such that 2*n - 3, 2*n + 3, 3*n - 2, 3*n + 2 are primes.
+ * A294064 Numbers k such that 2*k - 3, 2*k + 3, 3*k - 2, 3*k + 2 are primes.
  * @author Georg Fischer
  */
 public class A294064 extends PrimeConditionListSequence {

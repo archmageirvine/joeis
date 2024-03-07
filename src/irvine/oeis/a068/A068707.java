@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068701.
+ * A068707 Smallest prime obtained as a right concatenation of n consecutive even numbers and 1.
  * @author Sean A. Irvine
  */
 public class A068707 extends Sequence1 {

@@ -8,16 +8,16 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A083007 a(n) = Sum_{k=0..n-1} 3^k*B(k)*C(n,k) where B(k) is the k-th Bernoulli number and C(n,k)=binomial(n,k).
+ * A083010 a(n) = 6^n(B_n(1/6)-B_n(0)) where B_n(x) is the n-th Bernoulli polynomial.
  * @author Georg Fischer
  */
-public class A083007 extends LambdaSequence {
+public class A083010 extends LambdaSequence {
 
   /** Construct the sequence. */
-  public A083007() {
+  public A083010() {
     super(0, n -> {
       final BernoulliSequence bs = new BernoulliSequence(0);
-      return Rationals.SINGLETON.sum(0, n - 1, k -> new Q(3).pow(k).multiply(Binomial.binomial(n, k)).multiply(bs.nextQ())).num();
+      return Rationals.SINGLETON.sum(0, n - 1, k -> new Q(6).pow(k).multiply(Binomial.binomial(n, k)).multiply(bs.nextQ())).num();
     });
   }
 }

@@ -1,4 +1,4 @@
-package irvine.oeis.a060;
+package irvine.oeis.a068;
 
 import java.util.Arrays;
 import java.util.TreeSet;
@@ -12,9 +12,9 @@ import irvine.oeis.Sequence0;
  * A060002 Digitized partition numbers: numbers with (weakly) increasing digits ordered by sum of their digits then by the numbers themselves.
  * @author Sean A. Irvine
  */
-public class A060002 extends Sequence0 {
+public class A068743 extends Sequence0 {
 
-  private final TreeSet<int[]> mPart = new TreeSet<>(Comparators.LEXICOGRAPHIC);
+  private final TreeSet<int[]> mPart = new TreeSet<>(Comparators.INCREASING_LENGTH_DECREASING_VALUE);
   private int mN = -1;
 
   @Override
@@ -29,11 +29,18 @@ public class A060002 extends Sequence0 {
     final int[] p = mPart.pollFirst();
     Z t = Z.ZERO;
     long mul = 10;
-    for (int k = p.length - 1; k >= 0; --k) {
-      while (p[k] >= mul) {
+    if (p.length > 0) {
+      while (mul <= p[0]) {
         mul *= 10;
       }
-      t = t.multiply(mul).add(p[k]);
+    }
+    long down = mul / 10;
+    for (final int v : p) {
+      if (v < down) {
+        mul = down;
+        down /= 10;
+      }
+      t = t.multiply(mul).add(v);
     }
     return t;
   }

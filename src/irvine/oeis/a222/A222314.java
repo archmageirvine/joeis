@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A222314 Number of characters when n-th row of Pascal&apos;s triangle is written in base 10 (including the n spaces).
+ * A222314 Number of characters when n-th row of Pascal's triangle is written in base 10 (including the n spaces).
  * @author Georg Fischer
  */
 public class A222314 extends LambdaSequence {

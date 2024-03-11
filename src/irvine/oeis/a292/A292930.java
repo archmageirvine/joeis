@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A292930 Triangle read by rows: T(n,k) (n&gt;=1, 3&lt;=k&lt;=n+2) is the number of k-sequences of balls colored with at most n colors such that exactly three balls are the same color as some other ball in the sequence
+ * A292930 Triangle read by rows: T(n,k) (n&gt;=1, 3&lt;=k&lt;=n+2) is the number of k-sequences of balls colored with at most n colors such that exactly three balls are the same color as some other ball in the sequence.
  * @author Georg Fischer
  */
 public class A292930 extends LambdaTriangle {

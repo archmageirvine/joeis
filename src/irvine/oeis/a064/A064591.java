@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064591 Nonunitary perfect numbers: n is the sum of its nonunitary divisors; i.e., sigma(n) - usigma(n) = n.
+ * A064591 Nonunitary perfect numbers: k is the sum of its nonunitary divisors; i.e., k = sigma(k) - usigma(k).
  * @author Sean A. Irvine
  */
 public class A064591 extends Sequence1 {

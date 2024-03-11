@@ -4,7 +4,7 @@ package irvine.oeis.a370;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A370754 a(n) = 2+n^2*floor((n+3)/2)+floor(3*n/2).
+ * A370754 a(n) = 2 + n^2*floor((n+3)/2) + floor(3*n/2).
  * @author Georg Fischer
  */
 public class A370754 extends GeneratingFunctionSequence {

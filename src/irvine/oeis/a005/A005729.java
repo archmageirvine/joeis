@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005729 a(n) is the smallest positive integer a for which there is an identity of the form a*x = Sum_{i=1..m} ai*gi(x)^n where a1, ..., am are in Z and g1(x), ..., gm(x) are in Z[x].
+ * A005729 a(n) is the smallest positive integer a for which there is an identity of the form a*n*x = Sum_{i=1..m} ai*gi(x)^n where a1, ..., am are in Z and g1(x), ..., gm(x) are in Z[x].
  * @author Sean A. Irvine
  */
 public class A005729 extends Sequence1 {

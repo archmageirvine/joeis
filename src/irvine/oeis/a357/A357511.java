@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A357511 a(n) = numerator of Sum_{k = 1..n} (1/k) * binomial(n,k)^2 * binomial(n+k,k)^2 for n &gt;= 1 with a(0) = 0
+ * A357511 a(n) = numerator of Sum_{k = 1..n} (1/k) * binomial(n,k)^2 * binomial(n+k,k)^2 for n &gt;= 1 with a(0) = 0.
  * @author Georg Fischer
  */
 public class A357511 extends LambdaSequence {

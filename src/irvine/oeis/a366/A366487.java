@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a121.A121805;
 
 /**
- * A366487 First differences of &quot;commas&quot; sequence A121805.
+ * A366487 First differences of "commas" sequence A121805.
  * @author Georg Fischer
  */
 public class A366487 extends DifferenceSequence {

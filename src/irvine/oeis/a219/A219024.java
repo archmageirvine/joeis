@@ -4,7 +4,7 @@ package irvine.oeis.a219;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A219024 Number of length n mixed radix numbers with base [2, 3, 4, ...] (factorial base) such that the parities of adjacent digits differ.
+ * A219024 Number of length n mixed-radix numbers with base [2, 3, 4, ...] (factorial base) such that the parities of adjacent digits differ.
  * (2*(n-6)*(n+1)*a(n-1)+n*(n-1)*(n-2)*(n+3)*a(n-2))-a(n)*(4*(n-3)*(n+2))
  * @author Georg Fischer
  */

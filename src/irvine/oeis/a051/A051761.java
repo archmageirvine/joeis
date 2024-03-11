@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.closure.DistinctAdditiveClosureSequence;
 
 /**
- * A051761 Numbers that are simultaneously a sum of distinct factorials and of the form a^b with b &gt;= 2.
+ * A051761 Numbers that are simultaneously a sum of factorials of distinct integers and of the form a^b with b &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A051761 extends Sequence1 {

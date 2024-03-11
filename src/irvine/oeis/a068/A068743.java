@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A060002 Digitized partition numbers: numbers with (weakly) increasing digits ordered by sum of their digits then by the numbers themselves.
+ * A068743 Digitized partition numbers: numbers with (weakly) decreasing digits ordered by sum of their digits then by the numbers themselves.
  * @author Sean A. Irvine
  */
 public class A068743 extends Sequence0 {

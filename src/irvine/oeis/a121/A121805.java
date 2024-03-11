@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A121805 The &quot;comma sequence&quot;: the lexicographically earliest sequence of positive numbers with the property that the sequence formed by the pairs of digits adjacent to the commas between the terms is the same as the sequence of successive differences between the terms.
+ * A121805 The "comma sequence": the lexicographically earliest sequence of positive numbers with the property that the sequence formed by the pairs of digits adjacent to the commas between the terms is the same as the sequence of successive differences between the terms.
  * @author Georg Fischer
  */
 public class A121805 extends AbstractSequence {

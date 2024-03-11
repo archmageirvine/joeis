@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A246418 Number of collections F of subsets of {1, 2,...,n} whose union is itself an element of F.
+ * A246418 Number of collections F of subsets of {1,2,...,n} whose union is itself an element of F.
  * @author Georg Fischer
  */
 public class A246418 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A165975 a(n) = sqrt( binomial(4n, 0) * binomial(4n, 1) * ... * binomial(4n, 2n-1) ).
+ * A165975 a(n) = sqrt( binomial(4n,0) * binomial(4n,1) * ... * binomial(4n,2n-1) ).
  * @author Georg Fischer
  */
 public class A165975 extends LambdaSequence {

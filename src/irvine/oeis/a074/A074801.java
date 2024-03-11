@@ -7,7 +7,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A074801 a(n) is the sum of the n-th row of the triangle formed by replacing each m in Pascal&apos;s triangle with sigma(m).
+ * A074801 a(n) is the sum of the n-th row of the triangle formed by replacing each m in Pascal's triangle with sigma(m).
  * @author Georg Fischer
  */
 public class A074801 extends LambdaSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A061910 Positive numbers n such that sum of digits of n^2 is a square.
+ * A061910 Positive numbers k such that sum of digits of k^2 is a square.
  * @author Sean A. Irvine
  */
 public class A061910 extends Sequence1 {

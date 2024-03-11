@@ -4,7 +4,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
 
 /**
- * A068723.
+ * A068742 Largest power of n! which divides (n^n)!.
  * @author Sean A. Irvine
  */
 public class A068742 extends A068741 {

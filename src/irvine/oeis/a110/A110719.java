@@ -13,5 +13,4 @@ public class A110719 extends A110718 {
     super.next();
     return mZ;
   }
-
 }

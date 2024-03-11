@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A105077 G.f. -(x^3+5x+5)/((x^2-x+1)*(x+1)^2).
+ * A105077 Expansion of g.f. -(x^3+5x+5)/((x^2-x+1)*(x+1)^2).
  * @author Sean A. Irvine
  */
 public class A105077 extends LinearRecurrence {

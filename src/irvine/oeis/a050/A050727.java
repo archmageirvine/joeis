@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
 /**
- * A050727 Decimal expansion of 6^n contains no pair of consecutive equal digits (probably finite).
+ * A050727 Numbers k such that the decimal expansion of 6^k contains no pair of consecutive equal digits (probably finite).
  * @author Sean A. Irvine
  */
 public class A050727 extends A050724 {

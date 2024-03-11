@@ -4,7 +4,7 @@ package irvine.oeis.a370;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A370722 a(n) = Sum_{k=0..floor(n/7)} binomial(n-4*k, 3*k).
+ * A370722 a(n) = Sum_{k=0..floor(n/7)} binomial(n-4*k,3*k).
  * @author Georg Fischer
  */
 public class A370722 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.Combiner;
 
 /**
- * A068723.
+ * A068740 Result after dividing (n^n)! as many times as possible by n!.
  * @author Sean A. Irvine
  */
 public class A068740 extends Combiner {

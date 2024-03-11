@@ -8,7 +8,7 @@ import irvine.math.z.Integers;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A293459 Denominator of probability that a permutation of elements of some subset of set {1, 2..n} is a permutation of elements of some set of the form 1..k, k &lt;= n.
+ * A293459 Denominator of probability that a permutation of elements of some subset of set {1,2..n} is a permutation of elements of some set of the form 1..k, k &lt;= n.
  * @author Georg Fischer
  */
 public class A293459 extends LambdaSequence {

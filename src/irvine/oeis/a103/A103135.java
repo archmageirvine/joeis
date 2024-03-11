@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A103135 Expansion of (-3x^3-18x^2+14x-1)/(3x^4-5x^2+4x-1).
+ * A103135 Expansion of (-3*x^3-18*x^2+14*x-1)/(3*x^4-5*x^2+4*x-1).
  * @author Sean A. Irvine
  */
 public class A103135 extends LinearRecurrence {

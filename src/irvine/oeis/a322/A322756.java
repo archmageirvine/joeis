@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A322756 Denominator of expected payoff in the &quot;Guessing Card Colors&quot; game with a 2n-card deck, using an optimal strategy.
+ * A322756 Denominator of expected payoff in the "Guessing Card Colors" game with a 2n-card deck, using an optimal strategy.
  * @author Georg Fischer
  */
 public class A322756 extends LambdaSequence {

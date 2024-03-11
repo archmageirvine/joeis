@@ -4,7 +4,7 @@ package irvine.oeis.a139;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A139372 Let the binary expansion of n be n = Sum_{k} 2^{r_k}, let e(n) be the number of r_k&apos;s that are even, o(n) the number that are odd; sequence lists n such that e(n) &gt;= o(n).
+ * A139372 Let the binary expansion of n be n = Sum_{k} 2^{r_k}, let e(n) be the number of r_k's that are even, o(n) the number that are odd; sequence lists n such that e(n) &gt;= o(n).
  * @author Georg Fischer
  */
 public class A139372 extends FilterNumberSequence {

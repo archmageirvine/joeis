@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A158362 a(n)=binomial((n+1)^3,n+2), n=1, 2... .
+ * A158362 a(n)=binomial((n+1)^3,n+2), n=1,2... .
  * @author Georg Fischer
  */
 public class A158362 extends LambdaSequence {

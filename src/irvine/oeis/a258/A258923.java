@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A258923 E.g.f. satisfies: A(x) = 1/(4 - 3*exp(x*A(x))).
+ * A258923 E.g.f. satisfies A(x) = 1/(4 - 3*exp(x*A(x))).
  * E.g.f.: <code>divx(reverse(4*x-3*x*exp(x)))</code>
  * @author Georg Fischer
  */

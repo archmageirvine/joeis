@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A105576 a(n+3) = 2a(n+2) - 3a(n+1) + 2a(n); a(0) = 3, a(1) = 4, a(2) = 0.
+ * A105576 a(n) = 2*a(n-1) - 3*a(n-2) + 2*a(n-3) with a(0) = 3, a(1) = 4, a(2) = 0.
  * @author Georg Fischer
  */
 public class A105576 extends GeneratingFunctionSequence {

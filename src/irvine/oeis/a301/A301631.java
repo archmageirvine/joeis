@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A301631 Numerator of population variance of n-th row of Pascal&apos;s triangle.
+ * A301631 Numerator of population variance of n-th row of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A301631 extends LambdaSequence {

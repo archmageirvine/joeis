@@ -1,6 +1,13 @@
 package irvine.oeis.a068;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -11,50 +18,95 @@ public class A068744 extends Sequence0 {
 
   private int mN = -1;
 
-  // Following 2x2 version does reproduce A063496
-//  @Override
-//  public Z next() {
-//    ++mN;
-//    // ab
-//    // cd
-//    long count = 0;
-//    for (int a = -mN; a <= mN; ++a) {
-//      for (int b = Math.max(-mN, a - mN); b <= Math.min(mN, a + mN); ++b) {
-//        for (int c = Math.max(-mN, a - mN); c <= Math.min(mN, a + mN); ++c) {
-//          for (int d = Math.max(Math.max(-mN, b - mN), c - mN); d <= Math.min(Math.min(mN, b + mN), c + mN); ++d) {
-//            if (a == mN || b == mN || c == mN || d == mN) {
-////              System.out.println(mN + " [" + a + "," + b + "," + c + "," + d + "]");
-//              ++count;
-//            }
-//          }
-//        }
-//      }
-//    }
-//    return Z.valueOf(count);
-//  }
+  private boolean isPotential(final int n, final int[] vec) {
+    for (int k = 1; k < vec.length; k += 2) {
+      final int t = vec[k - 1] - vec[k] - vec[k + 1];
+      if (t < -n || t > n) {
+        return false;
+      }
+    }
+    return true;
+  }
 
-  // todo rather than -n..n can we do 0..2n instead?
-  // todo would it be better to pick e first
+  private Map<List<Integer>, Z> init(final int n, final int m) {
+    final Map<List<Integer>, Z> counts = new HashMap<>();
+    final int[] v = new int[2 * m - 1];
+    Arrays.fill(v, -n);
+    do {
+      if (isPotential(n, v)) {
+        counts.put(IntegerUtils.toList(v), Z.ONE);
+      }
+    } while (IntegerUtils.bump(v, -n, n));
+    return counts;
+  }
 
-//  @Override
-//  public Z next() {
-//    ++mN;
-//    // abc
-//    // def
-//    // ghi
+  private static boolean evenBump(final int[] a, final int min, final int max) {
+    for (int k = a.length - 1; k >= 0; k -= 2) {
+      if (++a[k] <= max) {
+        return true;
+      }
+      a[k] = min;
+    }
+    return false;
+  }
+
+  private void update(final Map<List<Integer>, Z> counts, final List<Integer> input, final Z mul, final int n) {
+    final int[] vec = new int[input.size()];
+    Arrays.fill(vec, -n);
+    // horizontal values are fixed by incoming vector
+    for (int k = 1; k < vec.length; k += 2) {
+      final int t = input.get(k - 1) - input.get(k) - input.get(k + 1);
+      if (t < -n || t > n) {
+        return; // should the initial construction avoid this!
+      }
+      vec[k] = t;
+    }
+    do {
+      if (isPotential(n, vec)) {
+        counts.merge(IntegerUtils.toList(vec), mul, Z::add);
+      }
+    } while (evenBump(vec, -n, n));
+  }
+
+  protected Z potentialFlows(final int n, final int m) {
+    // Compute one column at a time keeping track of flows across the right boundary
+    Map<List<Integer>, Z> counts = init(n, m);
+    for (int k = 1; k < m - 1; ++k) {
+      final Map<List<Integer>, Z> newCounts = new HashMap<>();
+      for (final Map.Entry<List<Integer>, Z> e : counts.entrySet()) {
+        update(newCounts, e.getKey(), e.getValue(), n);
+      }
+      counts = newCounts;
+    }
+    return ZUtils.sum(counts.values());
+  }
+
+  @Override
+  public Z next() {
+    ++mN;
+    // abc
+    // def
+    // ghi
 //    long count = 0;
-//    for (int a = -mN; a <= mN; ++a) {
-//      for (int b = Math.max(-mN, a - mN); b <= Math.min(mN, a + mN); ++b) {
-//        for (int c = Math.max(-mN, b - mN); c <= Math.min(mN, b + mN); ++c) {
-//          for (int d = Math.max(-mN, a - mN); d <= Math.min(mN, a + mN); ++d) {
-//            for (int e = Math.max(Math.max(-mN, b - mN), d - mN); e <= Math.min(Math.min(mN, b + mN), d + mN); ++e) {
-//              for (int f = Math.max(Math.max(-mN, c - mN), e - mN); f <= Math.min(Math.min(mN, c + mN), e + mN); ++f) {
-//                for (int g = Math.max(-mN, d - mN); g <= Math.min(mN, d + mN); ++g) {
-//                  for (int h = Math.max(Math.max(-mN, e - mN), g - mN); h <= Math.min(Math.min(mN, e + mN), g + mN); ++h) {
-//                    for (int i = Math.max(Math.max(-mN, f - mN), h - mN); i <= Math.min(Math.min(mN, f + mN), h + mN); ++i) {
-//                      if (a == mN || b == mN || c == mN || d == mN || e == mN || f == mN || g == mN || h == mN || i == mN) {
-//                        System.out.println(mN + " [" + a + "," + b + "," + c + "," + d + "," + e + "," + f + "," + g + "," + h + "," + i + "]");
-//                        ++count;
+//    for (int ab = -mN; ab <= mN; ++ab) {
+//      for (int be = -mN; be <= mN; ++be) {
+//        for (int de = -mN; de <= mN; ++de) {
+//          final int ad = ab - be - de;
+//          if (ad >= -mN && ad <= mN) {
+//            for (int bc = -mN; bc <= mN; ++bc) {
+//              for (int cf = -mN; cf <= mN; ++cf) {
+//                final int ef = cf - be + bc;
+//                if (ef >= -mN && ef <= mN) {
+//                  for (int fi = -mN; fi <= mN; ++fi) {
+//                    for (int hi = -mN; hi <= mN; ++hi) {
+//                      final int eh = ef - fi - hi;
+//                      if (eh >= -mN && eh <= mN) {
+//                        for (int gh = -mN; gh <= mN; ++gh) {
+//                          final int dg = de - eh - gh;
+//                          if (dg >= -mN && dg <= mN) {
+//                            ++count;
+//                          }
+//                        }
 //                      }
 //                    }
 //                  }
@@ -65,45 +117,10 @@ public class A068744 extends Sequence0 {
 //        }
 //      }
 //    }
-//    return Z.valueOf(count);
-//  }
 
-  @Override
-  public Z next() {
-    ++mN;
-    // abc
-    // def
-    // ghi
-    long count = 0;
-    for (int ab = -mN; ab <= mN; ++ab) {
-      for (int be = -mN; be <= mN; ++be) {
-        for (int de = -mN; de <= mN; ++de) {
-          final int ad = ab - be - de;
-          if (ad >= -mN && ad <= mN) {
-            for (int bc = -mN; bc <= mN; ++bc) {
-              for (int cf = -mN; cf <= mN; ++cf) {
-                final int ef = cf - be + bc;
-                if (ef >= -mN && ef <= mN) {
-                  for (int fi = -mN; fi <= mN; ++fi) {
-                    for (int hi = -mN; hi <= mN; ++hi) {
-                      final int eh = ef - fi - hi;
-                      if (eh >= -mN && eh <= mN) {
-                        for (int gh = -mN; gh <= mN; ++gh) {
-                          final int dg = de - eh - gh;
-                          if (dg >= -mN && dg <= mN) {
-                            ++count;
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    return Z.valueOf(count);
+//    System.out.println("Count = " + potentialFlows(mN, 3));
+
+    return potentialFlows(mN, 3);
   }
+
 }

@@ -1,9 +1,7 @@
 package irvine.oeis.a068;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import irvine.math.IntegerUtils;
@@ -25,8 +23,6 @@ public class A068744 extends Sequence0 {
   // while 1, 3, ..., 2*m-1 are the velocities crossing a horizontal line
   // Given three values v[2*k],v[2*k+1],v[2*k+1] we can fix v[2*k+1] in next column
   // (because the loop of four values must sum to 0).
-
-  private final Map<Z, List<Z>> mCache = new HashMap<>();
 
   private Z pack(final int n, final int[] vec) {
     final long m = 2L * n + 1;
@@ -80,30 +76,21 @@ public class A068744 extends Sequence0 {
   }
 
   private void update(final Map<Z, Z> counts, final Z in, final Z mul, final int n, final int m) {
-    List<Z> trans = mCache.get(in);
-    if (trans == null) {
-      trans = new ArrayList<>();
-      final int[] input = unpack(n, in, new int[2 * m - 1]);
-      mCache.put(in, trans);
-      final int[] vec = new int[input.length];
-      Arrays.fill(vec, -n);
-      for (int k = 1; k < vec.length; k += 2) {
-        final int t = input[k - 1] - input[k] - input[k + 1];
-        vec[k] = t;
+    final int[] input = unpack(n, in, new int[2 * m - 1]);
+    final int[] vec = new int[input.length];
+    Arrays.fill(vec, -n);
+    for (int k = 1; k < vec.length; k += 2) {
+      final int t = input[k - 1] - input[k] - input[k + 1];
+      vec[k] = t;
+    }
+    do {
+      if (isPotential(n, vec)) {
+        counts.merge(pack(n, vec), mul, Z::add);
       }
-      do {
-        if (isPotential(n, vec)) {
-          trans.add(pack(n, vec));
-        }
-      } while (evenBump(vec, -n, n));
-    }
-    for (final Z t : trans) {
-      counts.merge(t, mul, Z::add);
-    }
+    } while (evenBump(vec, -n, n));
   }
 
   protected Z potentialFlows(final int n, final int m) {
-    mCache.clear();
     // Compute one column at a time keeping track of flows across the right boundary
     Map<Z, Z> counts = init(n, m);
     for (int k = 1; k < m - 1; ++k) {

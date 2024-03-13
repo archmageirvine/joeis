@@ -48,22 +48,44 @@ public class A068723 extends AbstractSequence {
     update(counts, input, v, max, new int[input.size()], 0, 0);
   }
 
+  private Z combine(final Map<List<Integer>, Z> a, final Map<List<Integer>, Z> b) {
+    // Think of "a" as the counts to reach the middle from the left
+    // Think of "b" as reaching right edge of "a" from the far right
+    // Multiply the number of ways for the corresponding entries to get total
+    Z sum = Z.ZERO;
+    for (final Map.Entry<List<Integer>, Z> e : a.entrySet()) {
+      final List<Integer> inverse = new ArrayList<>();
+      for (final int v : e.getKey()) {
+        inverse.add(-v);
+      }
+      final Z t = b.get(inverse);
+      if (t != null) {
+        sum = sum.add(e.getValue().multiply(t));
+      }
+    }
+    return sum;
+  }
+
   protected Z solenoidalFlows(final int size, final int max) {
     // Compute one column at a time keeping track of flows across the right boundary
+    // We only need to go halfway across then use symmetry to get the final counts
     Map<List<Integer>, Z> counts = new HashMap<>();
     final List<Integer> zero = new ArrayList<>();
     for (int k = 0; k < size; ++k) {
       zero.add(0);
     }
     counts.put(zero, Z.ONE); // 1 way to have no flow
-    for (int k = 0; k < size; ++k) {
+    Map<List<Integer>, Z> prev = counts;
+
+    for (int k = 0; k < (size + 1) / 2; ++k) {
       final Map<List<Integer>, Z> newCounts = new HashMap<>();
       for (final Map.Entry<List<Integer>, Z> e : counts.entrySet()) {
         update(newCounts, e.getKey(), e.getValue(), max);
       }
+      prev = counts;
       counts = newCounts;
     }
-    return counts.get(zero);
+    return combine(counts, (size & 1) == 0 ? counts : prev);
   }
 
   @Override

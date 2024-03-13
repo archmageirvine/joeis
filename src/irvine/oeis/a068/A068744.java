@@ -18,6 +18,13 @@ public class A068744 extends Sequence0 {
 
   private int mN = -1;
 
+  // For an m x m matrix, there are 2 * m * (m - 1) "edges"
+  // We compute left to right, one column at a time
+  // Edges 0, 2, 4, ..., 2*m are the velocities crossing a vertical line
+  // while 1, 3, ..., 2*m-1 are the velocities crossing a horizontal line
+  // Given three values v[2*k],v[2*k+1],v[2*k+1] we can fix v[2*k+1] in next column
+  // (because the loop of four values must sum to 0).
+
   private boolean isPotential(final int n, final int[] vec) {
     for (int k = 1; k < vec.length; k += 2) {
       final int t = vec[k - 1] - vec[k] - vec[k + 1];
@@ -53,12 +60,8 @@ public class A068744 extends Sequence0 {
   private void update(final Map<List<Integer>, Z> counts, final List<Integer> input, final Z mul, final int n) {
     final int[] vec = new int[input.size()];
     Arrays.fill(vec, -n);
-    // horizontal values are fixed by incoming vector
     for (int k = 1; k < vec.length; k += 2) {
       final int t = input.get(k - 1) - input.get(k) - input.get(k + 1);
-      if (t < -n || t > n) {
-        return; // should the initial construction avoid this!
-      }
       vec[k] = t;
     }
     do {
@@ -77,6 +80,7 @@ public class A068744 extends Sequence0 {
         update(newCounts, e.getKey(), e.getValue(), n);
       }
       counts = newCounts;
+      //System.out.println(n + " " + k + " " + counts.size());
     }
     return ZUtils.sum(counts.values());
   }

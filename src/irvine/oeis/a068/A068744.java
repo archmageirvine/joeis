@@ -26,7 +26,26 @@ public class A068744 extends Sequence0 {
   // Given three values v[2*k],v[2*k+1],v[2*k+1] we can fix v[2*k+1] in next column
   // (because the loop of four values must sum to 0).
 
-  private final Map<List<Integer>, List<List<Integer>>> mCache = new HashMap<>();
+  private final Map<Z, List<Z>> mCache = new HashMap<>();
+
+  private Z pack(final int n, final int[] vec) {
+    final long m = 2L * n + 1;
+    Z res = Z.ZERO;
+    for (final int v : vec) {
+      res = res.multiply(m).add(v + n);
+    }
+    return res;
+  }
+
+  private int[] unpack(final int n, Z v, final int[] res) {
+    final Z m = Z.valueOf(2L * n + 1);
+    for (int k = res.length - 1; k >= 0; --k) {
+      final Z[] qr = v.divideAndRemainder(m);
+      res[k] = qr[1].intValue() - n;
+      v = qr[0];
+    }
+    return res;
+  }
 
   private boolean isPotential(final int n, final int[] vec) {
     for (int k = 1; k < vec.length; k += 2) {
@@ -38,13 +57,13 @@ public class A068744 extends Sequence0 {
     return true;
   }
 
-  private Map<List<Integer>, Z> init(final int n, final int m) {
-    final Map<List<Integer>, Z> counts = new HashMap<>();
+  private Map<Z, Z> init(final int n, final int m) {
+    final Map<Z, Z> counts = new HashMap<>();
     final int[] v = new int[2 * m - 1];
     Arrays.fill(v, -n);
     do {
       if (isPotential(n, v)) {
-        counts.put(IntegerUtils.toList(v), Z.ONE);
+        counts.put(pack(n, v), Z.ONE);
       }
     } while (IntegerUtils.bump(v, -n, n));
     return counts;
@@ -60,24 +79,25 @@ public class A068744 extends Sequence0 {
     return false;
   }
 
-  private void update(final Map<List<Integer>, Z> counts, final List<Integer> input, final Z mul, final int n) {
-    List<List<Integer>> trans = mCache.get(input);
+  private void update(final Map<Z, Z> counts, final Z in, final Z mul, final int n, final int m) {
+    List<Z> trans = mCache.get(in);
     if (trans == null) {
       trans = new ArrayList<>();
-      mCache.put(input, trans);
-      final int[] vec = new int[input.size()];
+      final int[] input = unpack(n, in, new int[2 * m - 1]);
+      mCache.put(in, trans);
+      final int[] vec = new int[input.length];
       Arrays.fill(vec, -n);
       for (int k = 1; k < vec.length; k += 2) {
-        final int t = input.get(k - 1) - input.get(k) - input.get(k + 1);
+        final int t = input[k - 1] - input[k] - input[k + 1];
         vec[k] = t;
       }
       do {
         if (isPotential(n, vec)) {
-          trans.add(IntegerUtils.toList(vec));
+          trans.add(pack(n, vec));
         }
       } while (evenBump(vec, -n, n));
     }
-    for (final List<Integer> t : trans) {
+    for (final Z t : trans) {
       counts.merge(t, mul, Z::add);
     }
   }
@@ -85,11 +105,11 @@ public class A068744 extends Sequence0 {
   protected Z potentialFlows(final int n, final int m) {
     mCache.clear();
     // Compute one column at a time keeping track of flows across the right boundary
-    Map<List<Integer>, Z> counts = init(n, m);
+    Map<Z, Z> counts = init(n, m);
     for (int k = 1; k < m - 1; ++k) {
-      final Map<List<Integer>, Z> newCounts = new HashMap<>();
-      for (final Map.Entry<List<Integer>, Z> e : counts.entrySet()) {
-        update(newCounts, e.getKey(), e.getValue(), n);
+      final Map<Z, Z> newCounts = new HashMap<>();
+      for (final Map.Entry<Z, Z> e : counts.entrySet()) {
+        update(newCounts, e.getKey(), e.getValue(), n, m);
       }
       counts = newCounts;
       //System.out.println(n + " " + k + " " + counts.size());

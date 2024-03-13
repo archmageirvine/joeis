@@ -1,5 +1,6 @@
 package irvine.oeis.a068;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -24,6 +25,8 @@ public class A068744 extends Sequence0 {
   // while 1, 3, ..., 2*m-1 are the velocities crossing a horizontal line
   // Given three values v[2*k],v[2*k+1],v[2*k+1] we can fix v[2*k+1] in next column
   // (because the loop of four values must sum to 0).
+
+  private final Map<List<Integer>, List<List<Integer>>> mCache = new HashMap<>();
 
   private boolean isPotential(final int n, final int[] vec) {
     for (int k = 1; k < vec.length; k += 2) {
@@ -58,20 +61,29 @@ public class A068744 extends Sequence0 {
   }
 
   private void update(final Map<List<Integer>, Z> counts, final List<Integer> input, final Z mul, final int n) {
-    final int[] vec = new int[input.size()];
-    Arrays.fill(vec, -n);
-    for (int k = 1; k < vec.length; k += 2) {
-      final int t = input.get(k - 1) - input.get(k) - input.get(k + 1);
-      vec[k] = t;
-    }
-    do {
-      if (isPotential(n, vec)) {
-        counts.merge(IntegerUtils.toList(vec), mul, Z::add);
+    List<List<Integer>> trans = mCache.get(input);
+    if (trans == null) {
+      trans = new ArrayList<>();
+      mCache.put(input, trans);
+      final int[] vec = new int[input.size()];
+      Arrays.fill(vec, -n);
+      for (int k = 1; k < vec.length; k += 2) {
+        final int t = input.get(k - 1) - input.get(k) - input.get(k + 1);
+        vec[k] = t;
       }
-    } while (evenBump(vec, -n, n));
+      do {
+        if (isPotential(n, vec)) {
+          trans.add(IntegerUtils.toList(vec));
+        }
+      } while (evenBump(vec, -n, n));
+    }
+    for (final List<Integer> t : trans) {
+      counts.merge(t, mul, Z::add);
+    }
   }
 
   protected Z potentialFlows(final int n, final int m) {
+    mCache.clear();
     // Compute one column at a time keeping track of flows across the right boundary
     Map<List<Integer>, Z> counts = init(n, m);
     for (int k = 1; k < m - 1; ++k) {

@@ -62,31 +62,30 @@ public class A068744 extends AbstractSequence {
   }
 
   private void update(final Map<List<Integer>, Z> counts, final List<Integer> input, final Z v, final int n, final int[] output, final int pos) {
-    if (pos >= output.length) {
-      counts.merge(IntegerUtils.toList(output), v, Z::add);
+    if (pos >= output.length - 1) {
+      // output[0] and output[output.length-1] are free to be any value
+      for (int k = -n; k <= n; ++k) {
+        output[0] = k;
+        for (int j = -n; j <= n; ++j) {
+          output[output.length - 1] = j;
+          counts.merge(IntegerUtils.toList(output), v, Z::add);
+        }
+      }
       return;
     }
-    if (pos == 0 || pos == output.length - 1) {
-      // todo make this faster, by doing these two last
-      for (int t = -n; t <= n; ++t) {
+    // Loop over the possible right flows given the current in flow
+    for (int t = -n; t <= n; ++t) {
+      final int u = input.get(pos - 1) + input.get(pos) - t;
+      if (u >= -n && u <= n) {
         output[pos] = t;
-        update(counts, input, v, n, output, pos + 1);
-      }
-    } else {
-      // Loop over the possible right flows given the current in flow
-      for (int t = -n; t <= n; ++t) {
-        final int u = input.get(pos - 1) + input.get(pos) - t;
-        if (u >= -n && u <= n) {
-          output[pos] = t;
-          output[pos + 1] = u;
-          update(counts, input, v, n, output, pos + 2);
-        }
+        output[pos + 1] = u;
+        update(counts, input, v, n, output, pos + 2);
       }
     }
   }
 
   private void update(final Map<List<Integer>, Z> counts, final List<Integer> input, final Z v, final int n) {
-    update(counts, input, v, n, new int[input.size() + 2], 0);
+    update(counts, input, v, n, new int[input.size() + 2], 1);
   }
 
   private boolean isCompatible(final List<Integer> a, final List<Integer> b) {

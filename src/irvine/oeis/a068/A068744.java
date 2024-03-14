@@ -15,6 +15,41 @@ import irvine.oeis.AbstractSequence;
  */
 public class A068744 extends AbstractSequence {
 
+  // The "velocities" in this sequence correspond to the "edges" (adjacencies) between the
+  // actual values in the matrix. It is the velocities which are constrained to be in [-n,n]
+  // not the matrix values themselves.
+  //
+  // For example, in the 3x3 matrix there are 12 velocities.
+  //
+  // Rather than work directly with matrix elements, we instead work with the velocities
+  // and we pass through the matrix in a diagonal fashion. Viz, 3x3 matrix with velocities
+  // "a" through "l":
+  //
+  //  +---+---+---+
+  //  |   |   |   |
+  //  |   a   c   |
+  //  |   |   |   |
+  //  +-b-+-d-+-g-+
+  //  |   |   |   |
+  //  |   e   h   |
+  //  |   |   |   |
+  //  +-f-+-i-+-k-+
+  //  |   |   |   |
+  //  |   j   l   |
+  //  |   |   |   |
+  //  +---+---+---+
+  //
+  // we can rotate and view it like this:
+  //
+  //     cg
+  //    adhk
+  //    beil
+  //     fj
+  //
+  // In out computation, we then go column-wise in this rotated view.
+  // We go halfway across (to the column starting with c in this example),
+  // then use symmetry to combine.
+
   private int mN = -1;
 
   protected A068744(final int offset) {
@@ -32,6 +67,7 @@ public class A068744 extends AbstractSequence {
       return;
     }
     if (pos == 0 || pos == output.length - 1) {
+      // todo make this faster, by doing these two last
       for (int t = -n; t <= n; ++t) {
         output[pos] = t;
         update(counts, input, v, n, output, pos + 1);

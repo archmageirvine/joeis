@@ -98,19 +98,49 @@ public class A068744 extends AbstractSequence {
     return true;
   }
 
-  private Z combine(final Map<List<Integer>, Z> a, final Map<List<Integer>, Z> b) {
+  private Z mSum = Z.ZERO;
+
+  private void combine(final Map<List<Integer>, Z> b, final List<Integer> input, final Z v, final int n, final int[] output, final int pos) {
+    if (pos >= output.length) {
+      final Z u = b.get(IntegerUtils.toList(output));
+      if (u != null) {
+        mSum = mSum.add(v.multiply(u));
+      }
+      return;
+    }
+    // Loop over the possible right flows given the current in flow
+    for (int t = -n; t <= n; ++t) {
+      final int u = input.get(pos) + input.get(pos + 1) - t;
+      if (u >= -n && u <= n) {
+        output[pos] = t;
+        output[pos + 1] = u;
+        combine(b, input, v, n, output, pos + 2);
+      }
+    }
+  }
+
+  private void combine(final Map<List<Integer>, Z> b, final List<Integer> input, final Z v, final int n) {
+    combine(b, input, v, n, new int[input.size()], 0);
+  }
+
+  private Z combine(final Map<List<Integer>, Z> a, final Map<List<Integer>, Z> b, final int n) {
     // Think of "a" as the counts to reach the middle from the left
     // Think of "b" as reaching right edge of "a" from the far right
     // Multiply the number of ways for the corresponding entries to get total
-    Z sum = Z.ZERO;
+    mSum = Z.ZERO;
     for (final Map.Entry<List<Integer>, Z> e : a.entrySet()) {
-      for (final Map.Entry<List<Integer>, Z> f : b.entrySet()) {
-        if (isCompatible(e.getKey(), f.getKey())) {
-          sum = sum.add(e.getValue().multiply(f.getValue()));
-        }
-      }
+      combine(b, e.getKey(), e.getValue(), n);
     }
-    return sum;
+    return mSum;
+//    Z sum = Z.ZERO;
+//    for (final Map.Entry<List<Integer>, Z> e : a.entrySet()) {
+//      for (final Map.Entry<List<Integer>, Z> f : b.entrySet()) {
+//        if (isCompatible(e.getKey(), f.getKey())) {
+//          sum = sum.add(e.getValue().multiply(f.getValue()));
+//        }
+//      }
+//    }
+//    return sum;
   }
 
   protected Z potentialFlows(final int n, final int m) {
@@ -136,7 +166,7 @@ public class A068744 extends AbstractSequence {
       }
       counts = newCounts;
     }
-    return combine(counts, counts);
+    return combine(counts, counts, n);
   }
 
   @Override

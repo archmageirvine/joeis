@@ -39,14 +39,14 @@ public class A068744 extends AbstractSequence {
   //  |   |   |   |
   //  +---+---+---+
   //
-  // we can rotate and view it like this:
+  // we can rotate 45 degrees and view it like this:
   //
   //     cg
   //    adhk
   //    beil
   //     fj
   //
-  // In out computation, we then go column-wise in this rotated view.
+  // In our computation, we then go column-wise in this rotated view.
   // We go halfway across (to the column starting with c in this example),
   // then use symmetry to combine.
 
@@ -63,7 +63,7 @@ public class A068744 extends AbstractSequence {
 
   private void update(final Map<List<Integer>, Z> counts, final List<Integer> input, final Z v, final int n, final int[] output, final int pos) {
     if (pos >= output.length - 1) {
-      // output[0] and output[output.length-1] are free to be any value
+      // output[0] and output[output.length-1] are free to be any value in [-n,n]
       for (int k = -n; k <= n; ++k) {
         output[0] = k;
         for (int j = -n; j <= n; ++j) {
@@ -88,16 +88,6 @@ public class A068744 extends AbstractSequence {
     update(counts, input, v, n, new int[input.size() + 2], 1);
   }
 
-  private boolean isCompatible(final List<Integer> a, final List<Integer> b) {
-    assert a.size() == b.size();
-    for (int k = 0; k < a.size(); k += 2) {
-      if (a.get(k) + a.get(k + 1) + b.get(k) + b.get(k + 1) != 0) {
-        return false;
-      }
-    }
-    return true;
-  }
-
   private Z mSum = Z.ZERO;
 
   private void combine(final Map<List<Integer>, Z> b, final List<Integer> input, final Z v, final int n, final int[] output, final int pos) {
@@ -119,28 +109,16 @@ public class A068744 extends AbstractSequence {
     }
   }
 
-  private void combine(final Map<List<Integer>, Z> b, final List<Integer> input, final Z v, final int n) {
-    combine(b, input, v, n, new int[input.size()], 0);
-  }
-
   private Z combine(final Map<List<Integer>, Z> a, final Map<List<Integer>, Z> b, final int n) {
     // Think of "a" as the counts to reach the middle from the left
     // Think of "b" as reaching right edge of "a" from the far right
     // Multiply the number of ways for the corresponding entries to get total
     mSum = Z.ZERO;
     for (final Map.Entry<List<Integer>, Z> e : a.entrySet()) {
-      combine(b, e.getKey(), e.getValue(), n);
+      final List<Integer> input = e.getKey();
+      combine(b, input, e.getValue(), n, new int[input.size()], 0);
     }
     return mSum;
-//    Z sum = Z.ZERO;
-//    for (final Map.Entry<List<Integer>, Z> e : a.entrySet()) {
-//      for (final Map.Entry<List<Integer>, Z> f : b.entrySet()) {
-//        if (isCompatible(e.getKey(), f.getKey())) {
-//          sum = sum.add(e.getValue().multiply(f.getValue()));
-//        }
-//      }
-//    }
-//    return sum;
   }
 
   protected Z potentialFlows(final int n, final int m) {
@@ -149,7 +127,6 @@ public class A068744 extends AbstractSequence {
     }
     // Compute one column at a time keeping track of flows across the right boundary
     // We only need to go halfway across then use symmetry to get the final counts
-    // todo update this description, we are going diagonal here!
     Map<List<Integer>, Z> counts = new HashMap<>();
     for (int k = -n; k <= n; ++k) {
       for (int j = -n; j <= n; ++j) {

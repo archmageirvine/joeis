@@ -27,7 +27,7 @@ public class A068723 extends AbstractSequence {
   }
 
   private void update(final Map<List<Integer>, Z> counts, final List<Integer> input, final Z v, final int max, final int[] output, final int down, final int pos) {
-    if (pos >= input.size()) {
+    if (pos >= output.length) {
       if (down == 0) {
         counts.merge(IntegerUtils.toList(output), v, Z::add);
       }

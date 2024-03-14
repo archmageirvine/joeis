@@ -1,149 +1,111 @@
 package irvine.oeis.a068;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence0;
+import irvine.oeis.AbstractSequence;
 
 /**
- * A068744 Number of potential flows in 3 X 3 array with integer velocities in -n..n, i.e., number of 3 X 3 arrays with adjacent elements differing by no more than n, counting arrays differing by a constant only once.
+ * A068723.
  * @author Sean A. Irvine
  */
-public class A068744 extends Sequence0 {
+public class A068744 extends AbstractSequence {
 
   private int mN = -1;
 
-  // For an m x m matrix, there are 2 * m * (m - 1) "edges"
-  // We compute left to right, one column at a time
-  // Edges 0, 2, 4, ..., 2*m are the velocities crossing a vertical line
-  // while 1, 3, ..., 2*m-1 are the velocities crossing a horizontal line
-  // Given three values v[2*k],v[2*k+1],v[2*k+1] we can fix v[2*k+1] in next column
-  // (because the loop of four values must sum to 0).
-
-  private Z pack(final int n, final int[] vec) {
-    final long m = 2L * n + 1;
-    Z res = Z.ZERO;
-    for (final int v : vec) {
-      res = res.multiply(m).add(v + n);
-    }
-    return res;
+  protected A068744(final int offset) {
+    super(offset);
   }
 
-  private int[] unpack(final int n, Z v, final int[] res) {
-    final Z m = Z.valueOf(2L * n + 1);
-    for (int k = res.length - 1; k >= 0; --k) {
-      final Z[] qr = v.divideAndRemainder(m);
-      res[k] = qr[1].intValue() - n;
-      v = qr[0];
-    }
-    return res;
+  /** Construct the sequence. */
+  public A068744() {
+    this(0);
   }
 
-  private boolean isPotential(final int n, final int[] vec) {
-    for (int k = 1; k < vec.length; k += 2) {
-      final int t = vec[k - 1] - vec[k] - vec[k + 1];
-      if (t < -n || t > n) {
+  private void update(final Map<List<Integer>, Z> counts, final List<Integer> input, final Z v, final int n, final int[] output, final int pos) {
+    if (pos >= output.length) {
+      counts.merge(IntegerUtils.toList(output), v, Z::add);
+      return;
+    }
+    if (pos == 0 || pos == output.length - 1) {
+      for (int t = -n; t <= n; ++t) {
+        output[pos] = t;
+        update(counts, input, v, n, output, pos + 1);
+      }
+    } else {
+      // Loop over the possible right flows given the current in flow
+      for (int t = -n; t <= n; ++t) {
+        final int u = input.get(pos - 1) + input.get(pos) - t;
+        if (u >= -n && u <= n) {
+          output[pos] = t;
+          output[pos + 1] = u;
+          update(counts, input, v, n, output, pos + 2);
+        }
+      }
+    }
+  }
+
+  private void update(final Map<List<Integer>, Z> counts, final List<Integer> input, final Z v, final int n) {
+    update(counts, input, v, n, new int[input.size() + 2], 0);
+  }
+
+  private boolean isCompatible(final List<Integer> a, final List<Integer> b) {
+    assert a.size() == b.size();
+    for (int k = 0; k < a.size(); k += 2) {
+      if (a.get(k) + a.get(k + 1) + b.get(k) + b.get(k + 1) != 0) {
         return false;
       }
     }
     return true;
   }
 
-  private Map<Z, Z> init(final int n, final int m) {
-    final Map<Z, Z> counts = new HashMap<>();
-    final int[] v = new int[2 * m - 1];
-    Arrays.fill(v, -n);
-    do {
-      if (isPotential(n, v)) {
-        counts.put(pack(n, v), Z.ONE);
+  private Z combine(final Map<List<Integer>, Z> a, final Map<List<Integer>, Z> b) {
+    // Think of "a" as the counts to reach the middle from the left
+    // Think of "b" as reaching right edge of "a" from the far right
+    // Multiply the number of ways for the corresponding entries to get total
+    Z sum = Z.ZERO;
+    for (final Map.Entry<List<Integer>, Z> e : a.entrySet()) {
+      for (final Map.Entry<List<Integer>, Z> f : b.entrySet()) {
+        if (isCompatible(e.getKey(), f.getKey())) {
+          sum = sum.add(e.getValue().multiply(f.getValue()));
+        }
       }
-    } while (IntegerUtils.bump(v, -n, n));
-    return counts;
-  }
-
-  private static boolean evenBump(final int[] a, final int min, final int max) {
-    for (int k = a.length - 1; k >= 0; k -= 2) {
-      if (++a[k] <= max) {
-        return true;
-      }
-      a[k] = min;
     }
-    return false;
-  }
-
-  private void update(final Map<Z, Z> counts, final Z in, final Z mul, final int n, final int m) {
-    final int[] input = unpack(n, in, new int[2 * m - 1]);
-    final int[] vec = new int[input.length];
-    Arrays.fill(vec, -n);
-    for (int k = 1; k < vec.length; k += 2) {
-      final int t = input[k - 1] - input[k] - input[k + 1];
-      vec[k] = t;
-    }
-    do {
-      if (isPotential(n, vec)) {
-        counts.merge(pack(n, vec), mul, Z::add);
-      }
-    } while (evenBump(vec, -n, n));
+    return sum;
   }
 
   protected Z potentialFlows(final int n, final int m) {
+    if (m <= 1 || n < 1) {
+      return Z.ONE;
+    }
     // Compute one column at a time keeping track of flows across the right boundary
-    Map<Z, Z> counts = init(n, m);
+    // We only need to go halfway across then use symmetry to get the final counts
+    // todo update this description, we are going diagonal here!
+    Map<List<Integer>, Z> counts = new HashMap<>();
+    for (int k = -n; k <= n; ++k) {
+      for (int j = -n; j <= n; ++j) {
+        final List<Integer> v = new ArrayList<>();
+        v.add(k);
+        v.add(j);
+        counts.put(v, Z.ONE);
+      }
+    }
     for (int k = 1; k < m - 1; ++k) {
-      final Map<Z, Z> newCounts = new HashMap<>();
-      for (final Map.Entry<Z, Z> e : counts.entrySet()) {
-        update(newCounts, e.getKey(), e.getValue(), n, m);
+      final Map<List<Integer>, Z> newCounts = new HashMap<>();
+      for (final Map.Entry<List<Integer>, Z> e : counts.entrySet()) {
+        update(newCounts, e.getKey(), e.getValue(), n);
       }
       counts = newCounts;
-      //System.out.println(n + " " + k + " " + counts.size());
     }
-    return ZUtils.sum(counts.values());
+    return combine(counts, counts);
   }
 
   @Override
   public Z next() {
-    ++mN;
-    // abc
-    // def
-    // ghi
-//    long count = 0;
-//    for (int ab = -mN; ab <= mN; ++ab) {
-//      for (int be = -mN; be <= mN; ++be) {
-//        for (int de = -mN; de <= mN; ++de) {
-//          final int ad = ab - be - de;
-//          if (ad >= -mN && ad <= mN) {
-//            for (int bc = -mN; bc <= mN; ++bc) {
-//              for (int cf = -mN; cf <= mN; ++cf) {
-//                final int ef = cf - be + bc;
-//                if (ef >= -mN && ef <= mN) {
-//                  for (int fi = -mN; fi <= mN; ++fi) {
-//                    for (int hi = -mN; hi <= mN; ++hi) {
-//                      final int eh = ef - fi - hi;
-//                      if (eh >= -mN && eh <= mN) {
-//                        for (int gh = -mN; gh <= mN; ++gh) {
-//                          final int dg = de - eh - gh;
-//                          if (dg >= -mN && dg <= mN) {
-//                            ++count;
-//                          }
-//                        }
-//                      }
-//                    }
-//                  }
-//                }
-//              }
-//            }
-//          }
-//        }
-//      }
-//    }
-
-//    System.out.println("Count = " + potentialFlows(mN, 3));
-
-    return potentialFlows(mN, 3);
+    return potentialFlows(++mN, 3);
   }
-
 }

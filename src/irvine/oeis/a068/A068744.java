@@ -49,6 +49,9 @@ public class A068744 extends AbstractSequence {
   // In our computation, we then go column-wise in this rotated view.
   // We go halfway across (to the column starting with c in this example),
   // then use symmetry to combine.
+  //
+  // Despite the above, this approach is apparently much slower than R. H. Hardin's
+  // COSPAN solver on this problem.
 
   private int mN = -1;
 

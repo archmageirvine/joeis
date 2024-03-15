@@ -3,12 +3,13 @@ package irvine.oeis.a007;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A007947 Largest squarefree number dividing n: the squarefree kernel of n, rad(n), radical of n.
  * @author Sean A. Irvine
  */
-public class A007947 extends AbstractSequence {
+public class A007947 extends AbstractSequence implements DirectSequence {
 
   /** Construct the sequence. */
   public A007947() {
@@ -16,6 +17,16 @@ public class A007947 extends AbstractSequence {
   }
 
   private long mN = 0;
+
+  @Override
+  public Z a(final int n) {
+    return Jaguar.factor(n).squareFreeKernel();
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return Jaguar.factor(n).squareFreeKernel();
+  }
 
   @Override
   public Z next() {

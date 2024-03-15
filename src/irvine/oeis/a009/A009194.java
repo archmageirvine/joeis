@@ -2,15 +2,32 @@ package irvine.oeis.a009;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.AbstractSequence;
+import irvine.oeis.DirectSequence;
 
 /**
  * A009194 a(n) = gcd(n, sigma(n)).
  * @author Sean A. Irvine
  */
-public class A009194 extends Sequence1 {
+public class A009194 extends AbstractSequence implements DirectSequence {
 
-  private Z mN = Z.ZERO;
+  private Z mN;
+
+  /** Construct the sequence. */
+  public A009194() {
+    super(1);
+    mN = Z.ZERO;
+  }
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return n.gcd(Jaguar.factor(n).sigma());
+  }
 
   @Override
   public Z next() {

@@ -27,7 +27,7 @@ public class A068843 extends Sequence1 {
       do {
         gap = g;
         ++cnt;
-        long t = mP;
+        final long t = mP;
         mP = mPrime.nextPrime(mP);
         g = mP - t;
       } while (g >= gap);

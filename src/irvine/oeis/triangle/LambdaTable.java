@@ -27,7 +27,7 @@ public abstract class LambdaTable extends AbstractSequence implements DirectArra
    * @param colMin index of first column
    * @param lambda function for T[n, k]
    */
-  public LambdaTable(final int offset, final int rowMin, Function<Integer, Integer[]> colRange, final BiFunction<Integer, Integer, Z> lambda) {
+  public LambdaTable(final int offset, final int rowMin, final Function<Integer, Integer[]> colRange, final BiFunction<Integer, Integer, Z> lambda) {
     super(offset);
     mRowMin = rowMin;
     mRow = mRowMin - 1;

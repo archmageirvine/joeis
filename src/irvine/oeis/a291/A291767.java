@@ -12,6 +12,7 @@ public class A291767 extends Sequence1 {
 
   private final A291761 mSeq = new A291761();
 
+  @Override
   public Z next() {
     final Z result = mSeq.next();
     mSeq.next();

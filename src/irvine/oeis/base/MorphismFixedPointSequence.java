@@ -141,7 +141,7 @@ public class MorphismFixedPointSequence extends AbstractSequence {
       }
     } else if (mAnchorMode == ROWS) {
       if (mPos >= mCurWord.length()) {
-        String oldWord = new String(mCurWord);
+        final String oldWord = mCurWord;
         expandWord();
         mCurWord = oldWord + mCurWord;
         mPos = 0;
@@ -151,7 +151,7 @@ public class MorphismFixedPointSequence extends AbstractSequence {
       }
     } else if (mAnchorMode == WORD_MAPWORD) {
       if (mPos >= mCurWord.length()) {
-        String oldWord = new String(mCurWord);
+        final String oldWord = mCurWord;
         expandWord();
         mCurWord = oldWord + mCurWord;
         mPos = oldWord.length();

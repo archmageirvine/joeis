@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.a057.A057522;
 
 /**
- * A100709 Trajectory of 1001 under &quot;3x+1&quot; map.
+ * A100709 Trajectory of 1001 under "3x+1" map.
  * @author Georg Fischer
  */
 public class A100709 extends A057522 {

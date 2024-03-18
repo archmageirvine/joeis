@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001043;
 import irvine.oeis.a014.A014614;
 
 /**
- * A281926 Numbers that are the product of exactly 5 primes and are of the form prime(n) + prime(n + 1).
+ * A281926 Numbers that are the product of exactly 5 primes and are of the form prime(k) + prime(k + 1).
  * @author Georg Fischer
  */
 public class A281926 extends IntersectionSequence {

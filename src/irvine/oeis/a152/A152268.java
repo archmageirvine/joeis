@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A152268 A hidden Markov recursion involving the matrices: M0 = {{0, 1}, {1, 1/2}}; M = {{0, 2}, {2, 1}}; as Mh=M0.M.(M0+I); v[(n)=Mh.v(n-1): first element of v.
+ * A152268 Expansion of g.f. x/(1-7*x+8*x^2).
  * @author Sean A. Irvine
  */
 public class A152268 extends LinearRecurrence {

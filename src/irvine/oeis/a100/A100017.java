@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.DeadSequence;
 
 /**
- * A100017
+ * A100017 Atomic radii of noble gases in picometers (as was stated by some sources at some point in time).
  * @author Georg Fischer
  */
 public class A100017 extends DeadSequence {

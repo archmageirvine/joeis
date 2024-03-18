@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A127961 A007583(n) written in binary.
+ * A127961 a(n) = A007583(n) written in binary.
  * @author Sean A. Irvine
  */
 public class A127961 extends LinearRecurrence {

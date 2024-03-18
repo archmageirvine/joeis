@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A011973.
+ * A068781 Lesser of two consecutive numbers each divisible by a square.
  * @author Sean A. Irvine
  */
 public class A068781 extends Sequence1 {

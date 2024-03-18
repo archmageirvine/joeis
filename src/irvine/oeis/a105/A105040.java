@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A105040 Nonnegative n such that 7*n^2 + 7*n + 1 is a square.
+ * A105040 Nonnegative k such that 7*k^2 + 7*k + 1 is a square.
  * @author Sean A. Irvine
  */
 public class A105040 extends LinearRecurrence {

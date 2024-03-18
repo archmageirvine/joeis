@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A094728 Triangle read by rows: T(n,k) = n^2 - k^2, 0&lt;=k&lt;n.
+ * A094728 Triangle read by rows: T(n,k) = n^2 - k^2, 0 &lt;= k &lt; n.
  * @author Georg Fischer
  */
 public class A094728 extends Triangle {

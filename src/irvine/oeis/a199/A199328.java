@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007500;
 import irvine.oeis.a061.A061247;
 
 /**
- * A199328 Palindromic primes in the sense of A007500 with digits &apos;0&apos;, &apos;1&apos; and &apos;8&apos; only.
+ * A199328 Palindromic primes in the sense of A007500 with digits '0', '1' and '8' only.
  * @author Georg Fischer
  */
 public class A199328 extends IntersectionSequence {

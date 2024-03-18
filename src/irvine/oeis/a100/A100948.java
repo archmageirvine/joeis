@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A100948 Irregular triangle with T(n, 1) = floor(n!/3), T(n, 2) = n!/2, T(n, 3) = n!, read by rows.
+ * A100948 Irregular triangle with T(n,1) = floor(n!/3), T(n,2) = n!/2, T(n,3) = n!, read by rows.
  * @author Georg Fischer
  */
 public class A100948 extends LambdaTable {

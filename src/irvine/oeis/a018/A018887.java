@@ -4,7 +4,7 @@ package irvine.oeis.a018;
 import irvine.oeis.DeadSequence;
 
 /**
- * A018887
+ * A018887 Waring's problem: historical upper bounds on A079611, as stated in a web page in 1996.
  * @author Georg Fischer
  */
 public class A018887 extends DeadSequence {

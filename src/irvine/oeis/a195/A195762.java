@@ -4,7 +4,7 @@ package irvine.oeis.a195;
 import irvine.oeis.DeadSequence;
 
 /**
- * A195762
+ * A195762 Erroneous version of A127670 as "Right-hand diagonal of A195739".
  * @author Georg Fischer
  */
 public class A195762 extends DeadSequence {

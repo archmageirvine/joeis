@@ -5,7 +5,7 @@ import irvine.oeis.a354.A354482;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A320300 Positions of 0&apos;s in binary expansion of Pi/4.
+ * A320300 Positions of 0's in binary expansion of Pi/4.
  * @author Georg Fischer
  */
 public class A320300 extends SimpleTransformSequence {

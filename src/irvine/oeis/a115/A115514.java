@@ -5,7 +5,7 @@ import irvine.oeis.a004.A004526;
 import irvine.oeis.triangle.ToeplitzTriangle;
 
 /**
- * A115514 Triangle read by rows: row n &gt;= 1 lists first n positive members of A004526 (integers repeated) in decreasing order.
+ * A115514 Triangle read by rows: row n &gt;= 1 lists first n positive terms of A004526 (integers repeated) in decreasing order.
  * @author Georg Fischer
  */
 public class A115514 extends ToeplitzTriangle {

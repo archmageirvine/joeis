@@ -4,7 +4,7 @@ package irvine.oeis.a365;
 import irvine.oeis.DeadSequence;
 
 /**
- * A365405
+ * A365405 Erroneous version of A198245.
  * @author Georg Fischer
  */
 public class A365405 extends DeadSequence {

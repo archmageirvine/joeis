@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A011545 Decimal expansion of Pi truncated to n places.
+ * A011545 a(n) is the integer whose decimal digits are the first n+1 decimal digits of Pi.
  * @author Sean A. Irvine
  */
 public class A011545 extends AbstractSequence {

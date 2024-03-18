@@ -5,7 +5,7 @@ import irvine.math.z.Stirling;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A243569 Unsigned Stirling numbers of the first kind s(n, 8).
+ * A243569 Unsigned Stirling numbers of the first kind s(n,8).
  * @author Georg Fischer
  */
 public class A243569 extends LambdaSequence {

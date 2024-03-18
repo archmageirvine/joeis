@@ -5,7 +5,7 @@ import irvine.math.z.Stirling;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A243570 Unsigned Stirling numbers of the first kind s(n, 9).
+ * A243570 Unsigned Stirling numbers of the first kind s(n,9).
  * @author Georg Fischer
  */
 public class A243570 extends LambdaSequence {

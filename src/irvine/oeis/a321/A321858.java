@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A321858 a(n) = Pi(12, 5)(n) + Pi(12, 7)(n) - Pi(12, 1)(n) - Pi(12, 11)(n) where Pi(a,b)(x) denotes the number of primes in the arithmetic progression a*k + b less than or equal to x.
+ * A321858 a(n) = Pi(12,5)(n) + Pi(12,7)(n) - Pi(12,1)(n) - Pi(12,11)(n) where Pi(a,b)(x) denotes the number of primes in the arithmetic progression a*k + b less than or equal to x.
  * @author Georg Fischer
  */
 public class A321858 extends LambdaSequence {

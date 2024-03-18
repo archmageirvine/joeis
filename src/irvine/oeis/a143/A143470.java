@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.DeadSequence;
 
 /**
- * A143470
+ * A143470 Triangle read by rows, A000012 * A143316, 1 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A143470 extends DeadSequence {

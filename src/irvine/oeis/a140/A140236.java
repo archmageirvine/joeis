@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A140236 Double tetrahedral numbers (or double pyramidal numbers): a(n) = k(k+1)(k+2)/6 where k = n(n+1)(n+2)/6.
+ * A140236 a(n) = A000292(A000292(n)).
  * @author Sean A. Irvine
  */
 public class A140236 extends LinearRecurrence {

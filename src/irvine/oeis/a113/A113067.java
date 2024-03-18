@@ -4,7 +4,7 @@ package irvine.oeis.a113;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A113067 Expansion of -x/((x^2+x+1)*(x^2+3*x+1)); Invert transform gives signed version of Tetrahedral numbers A000292.
+ * A113067 Expansion of -x/((x^2+x+1)*(x^2+3*x+1)); invert transform gives signed version of tetrahedral numbers A000292.
  * @author Georg Fischer
  */
 public class A113067 extends GeneratingFunctionSequence {

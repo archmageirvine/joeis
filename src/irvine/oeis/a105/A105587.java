@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.triangle.RowSumSequence;
 
 /**
- * A105587 Row sums of a M√∂bius-binomial triangle.
+ * A105587 Row sums of a M\u00f6bius-binomial triangle.
  * @author Georg Fischer
  */
 public class A105587 extends RowSumSequence {

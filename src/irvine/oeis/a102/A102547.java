@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A102547 Triangle read by rows, formed from antidiagonals of the antidiagonals (A011973) of Pascal&apos;s triangle (A007318).
+ * A102547 Triangle read by rows, formed from antidiagonals of the antidiagonals (A011973) of Pascal's triangle (A007318).
  * @author Georg Fischer
  */
 public class A102547 extends LambdaTable {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A011973.
+ * A068782 Lesser of two consecutive numbers each divisible by a fourth power.
  * @author Sean A. Irvine
  */
 public class A068782 extends Sequence1 {

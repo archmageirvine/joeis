@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A126852 a(1) = 8; for n&gt;1, a(n)=SPM4Sigma(a(n)-1).
+ * A126852 a(1) = 8; for n&gt;1, a(n) = SPM4Sigma(a(n-1)).
  * @author Georg Fischer
  */
 public class A126852 extends PaddingSequence {

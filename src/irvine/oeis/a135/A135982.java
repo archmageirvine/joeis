@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A135982 2^(24n+7)-1.
+ * A135982 a(n) = 2^(24n+7)-1.
  * @author Sean A. Irvine
  */
 public class A135982 extends LinearRecurrence {

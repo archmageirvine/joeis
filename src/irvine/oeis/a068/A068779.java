@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A011973.
+ * A068779 Least number k such that floor( k / digit reversal of k ) = n.
  * @author Sean A. Irvine
  */
 public class A068779 extends Sequence1 {

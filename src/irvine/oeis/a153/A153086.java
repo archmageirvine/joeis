@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A153086 Numbers n such that 4*n+7 is not prime
+ * A153086 Numbers n such that 4*n+7 is not prime.
  * @author Georg Fischer
  */
 public class A153086 extends FilterNumberSequence {

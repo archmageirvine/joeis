@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A136598 G.f.: (2*x^3 + 5) / ( -x^5 + x^3 + 1).
+ * A136598 Expansion of g.f. (2*x^3 + 5) / ( -x^5 + x^3 + 1).
  * @author Sean A. Irvine
  */
 public class A136598 extends LinearRecurrence {

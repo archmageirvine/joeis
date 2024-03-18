@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002260;
 import irvine.oeis.a003.A003056;
 
 /**
- * A094727 Triangle read by rows: T(n,k) = n + k, 0 &lt;= k &lt; n.
+ * A094727 Triangle read by rows: T(n,k) = n + k, 0 &lt;= k &lt; n, n &gt;= 1.
  * @author Georg Fischer
  */
 public class A094727 extends Sequence1 {

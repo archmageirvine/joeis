@@ -4,7 +4,7 @@ package irvine.oeis.a087;
 import irvine.oeis.DeadSequence;
 
 /**
- * A087778
+ * A087778 Decimal expansion of experimental Avogadro's constant (in mol^(-1)).
  * @author Georg Fischer
  */
 public class A087778 extends DeadSequence {

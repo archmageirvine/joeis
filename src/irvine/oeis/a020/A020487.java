@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A020487 Antiharmonic numbers: numbers n such that sigma_1(n) divides sigma_2(n).
+ * A020487 Antiharmonic numbers: numbers k such that sigma_1(k) divides sigma_2(k).
  * @author Sean A. Irvine
  */
 public class A020487 extends Sequence1 {

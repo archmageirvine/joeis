@@ -4,7 +4,7 @@ package irvine.oeis.a128;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A128740 Number of DD&apos;s in all skew Dyck paths of semilength n.
+ * A128740 Number of DD's in all skew Dyck paths of semilength n.
  * Number of DDs in all skew Dyck paths of semilength n.
  * @author Georg Fischer
  */

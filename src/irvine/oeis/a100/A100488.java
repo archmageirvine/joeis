@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.DeadSequence;
 
 /**
- * A100488
+ * A100488 Boiling point of noble gases in Kelvin (as was stated by some sources at some point in time).
  * @author Georg Fischer
  */
 public class A100488 extends DeadSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a132;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A132160 Ten tone fractal jazz substitution with {5, 10} left out and spacing of either 3 or 4 notes( major or minor ).
+ * A132160 Ten tone fractal jazz substitution with {5,10} left out and spacing of either 3 or 4 notes( major or minor ).
  * @author Georg Fischer
  */
 public class A132160 extends MorphismFixedPointSequence {

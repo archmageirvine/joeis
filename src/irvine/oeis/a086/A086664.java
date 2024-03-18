@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a008.A008475;
 
 /**
- * A086664 n - {sum of prime power components of n}.
+ * A086664 a(n) = n - (sum of prime power components of n).
  * @author Georg Fischer
  */
 public class A086664 extends Sequence1 {

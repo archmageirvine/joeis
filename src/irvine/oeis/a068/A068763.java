@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A011973.
+ * A068763 Irregular triangle of the Fibonacci polynomials of A011973 multiplied diagonally by the Catalan numbers.
  * @author Sean A. Irvine
  */
 public class A068763 extends Sequence0 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A011973.
+ * A068783 Lesser of two consecutive numbers each divisible by a fifth power.
  * @author Sean A. Irvine
  */
 public class A068783 extends Sequence1 {

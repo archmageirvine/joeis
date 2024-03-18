@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A011973.
+ * A068784 Lesser of two consecutive numbers each divisible by a sixth power.
  * @author Sean A. Irvine
  */
 public class A068784 extends Sequence1 {

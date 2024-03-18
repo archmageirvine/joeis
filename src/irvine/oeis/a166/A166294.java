@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A166294 Number of peaks at even level in all Dyck paths of semilength n with no UUU&apos;s and no DDD&apos;s, (U=(1, 1), D=(1,-1)). These Dyck paths are counted by the secondary structure numbers (A004148).
+ * A166294 Number of peaks at even level in all Dyck paths of semilength n with no UUU's and no DDD's, (U=(1,1), D=(1,-1)). These Dyck paths are counted by the secondary structure numbers (A004148).
  * Number of peaks at even level in all Dyck paths of semilength n with no UUU's and no DDD's, (U=(1, 1), D=(1, -1)).These Dyck paths are counted by the secondary structure numbers (A004148).
  * @author Georg Fischer
  */

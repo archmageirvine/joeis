@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001043;
 import irvine.oeis.a014.A014613;
 
 /**
- * A281925 Numbers that are the product of exactly 4 primes and are of the form prime(n) + prime(n + 1).
+ * A281925 Numbers that are the product of exactly 4 primes and are of the form prime(k) + prime(k + 1).
  * @author Georg Fischer
  */
 public class A281925 extends IntersectionSequence {

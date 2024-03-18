@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.DeadSequence;
 
 /**
- * A245018
+ * A245018 Duplicate of A241991.
  * @author Georg Fischer
  */
 public class A245018 extends DeadSequence {

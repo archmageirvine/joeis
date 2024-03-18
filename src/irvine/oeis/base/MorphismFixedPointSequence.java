@@ -22,10 +22,14 @@ public class MorphismFixedPointSequence extends AbstractSequence {
 
   private static final int DEFOFF = 1; // default offset
   private static final int POS_FRACTION = 4;
-  private static final int MAX_LEN = 1000000; // maximum length of a word
+  private static final int MAX_LEN = 10000000; // maximum length of a word
   protected String mStart; // the starting word
   protected String mAnchor; // start of the desired limiting word, or triangle of words if empty
-  protected boolean mIsAnchored; // whether mAnchor is empty
+  protected int mAnchorMode; // one of the following
+  protected static final int ANCHORED = -1; // mAnchor >= 0
+  protected static final int ROWS = -2; // word followed by mapped word
+  protected static final int WORD_MAPWORD = -3; // word followed by mapped word
+  protected static final int TRIANGLE = -4; // mapped word
   protected int mFactor; // each iterate increases the length roughly by this factor
 
   protected String mCurWord; // current word expanded so far
@@ -59,8 +63,8 @@ public class MorphismFixedPointSequence extends AbstractSequence {
   protected MorphismFixedPointSequence(final int offset, final String start, final String anchor, final String mappings) {
     super(offset);
     configure(start, anchor, mappings);
-    if (mIsAnchored) {
-      while (mCurWord.length() < 1024 || !mCurWord.startsWith(mAnchor)) { // expand a few times
+    if (mAnchorMode == ANCHORED) {
+      while (mCurWord.length() < 256 || !mCurWord.startsWith(mAnchor)) { // expand a few times
         expandWord();
       }
     }
@@ -78,6 +82,7 @@ public class MorphismFixedPointSequence extends AbstractSequence {
 
   /**
    * Construct an instance which generates the fixed point of this morphism.
+   * Caution, this method is used in subclass MophismTransform!
    * @param anchor start of the desired limiting word, or triangle of words if empty
    * @param start start with this word
    * @param mappings pairs of digit string mappings, for example "0-&gt;001,1-&gt;0"
@@ -90,9 +95,9 @@ public class MorphismFixedPointSequence extends AbstractSequence {
     for (final String pair1 : pairs) {
       String[] pair = pair1.split("\\-\\>");
       if (pair.length == 1) {
-        pair = new String[]{pair[0], ""};
+        pair = new String[] {pair[0], ""};
       } else if (pair1.startsWith("->")) {
-        pair = new String[]{"", pair[0]};
+        pair = new String[] {"", pair[0]};
       }
       mMap[imap++] = pair[0];
       mMap[imap++] = pair[1];
@@ -100,8 +105,25 @@ public class MorphismFixedPointSequence extends AbstractSequence {
     mStart = start;
     mCurWord = mStart;
     mAnchor = anchor;
-    mIsAnchored = mAnchor.length() > 0;
+    mAnchorMode = ANCHORED;
+    if (anchor.startsWith("anchor")) {
+      // take default
+    } else if (anchor.startsWith("rows")) {
+      mAnchorMode = ROWS;
+    } else if (anchor.startsWith("word")) {
+      mAnchorMode = WORD_MAPWORD;
+    } else if (anchor.startsWith("tri")) {
+      mAnchorMode = TRIANGLE;
+    }
     mPos = 0;
+  }
+
+  /**
+   * Convert characters to Z.
+   * @return integer values for characters: 0-9 => 0-9, A-Z => 10..35, a-z => 36..61
+   */
+  protected Z charToZ(final char ch) {
+    return Z.valueOf(ch >= 'a' ? ch - 'a' + 36 : (ch >= 'A' ? ch - 'A' + 10 : ch - '0'));
   }
 
   /**
@@ -110,22 +132,42 @@ public class MorphismFixedPointSequence extends AbstractSequence {
    */
   @Override
   public Z next() {
-    if (mIsAnchored) {
+    if (mAnchorMode == ANCHORED) {
       while (mPos >= mMaxPos) {
         expandWord();
         while (!mCurWord.startsWith(mAnchor)) { // make sure that it starts with the anchor
           expandWord();
         }
       }
-    } else { // unanchored = triangle, expand all iterates in full length
+    } else if (mAnchorMode == ROWS) {
+      if (mPos >= mCurWord.length()) {
+        String oldWord = new String(mCurWord);
+        expandWord();
+        mCurWord = oldWord + mCurWord;
+        mPos = 0;
+        if (sDebug >= 2) {
+          System.out.println("# pos=" + mPos + ", oldWord=" + oldWord + ", curWord=" + (mCurWord.length() < 128 ? mCurWord : mCurWord.substring(0, 128) + " ..."));
+        }
+      }
+    } else if (mAnchorMode == WORD_MAPWORD) {
+      if (mPos >= mCurWord.length()) {
+        String oldWord = new String(mCurWord);
+        expandWord();
+        mCurWord = oldWord + mCurWord;
+        mPos = oldWord.length();
+        if (sDebug >= 2) {
+          System.out.println("# pos=" + mPos + ", oldWord=" + oldWord + ", curWord=" + (mCurWord.length() < 128 ? mCurWord : mCurWord.substring(0, 128) + " ..."));
+        }
+      }
+    } else if (mAnchorMode == TRIANGLE) {
       if (mPos >= mCurWord.length()) {
         expandWord();
         mPos = 0;
       }
+    } else { // "invalid mAnchorMode";
     }
     // take next from current word
-    final char ch = mCurWord.charAt(mPos++);
-    return ch == 'M' ? Z.NEG_ONE : Z.valueOf(ch - '0');
+    return charToZ(mCurWord.charAt(mPos++));
   }
 
   /**
@@ -141,7 +183,9 @@ public class MorphismFixedPointSequence extends AbstractSequence {
         final String search = mMap[imap++];
         final String replace = mMap[imap++];
         if (mCurWord.startsWith(search, ipos)) {
-          newWord.append(replace);
+          if (newWord.length() + replace.length() < MAX_LEN) {
+            newWord.append(replace);
+          } // else silently suppress appending behind 10 mio. chars
           ipos += search.length();
           busy = false;
         }
@@ -153,18 +197,46 @@ public class MorphismFixedPointSequence extends AbstractSequence {
     mCurWord = newWord.toString();
     mMaxPos = mCurWord.length() * (POS_FRACTION - 3) / POS_FRACTION;
 
-    if (sDebug > 0) {
-      final int len = mCurWord.length();
-      System.out.println("# expandWord: anchor=" + mAnchor
-        + " pos=" + String.format("%6d", mPos)
-        + " max=" + String.format("%8d", mMaxPos)
-        + " " + (len < 96 ? mCurWord : mCurWord.substring(0, 96) + " ...")
-        );
+    if (sDebug >= 1) {
+      System.out.println("# expandWord: anchor=" + mAnchor + ", pos=" + mPos + ", max=" + mMaxPos + ", curWord=" + (mCurWord.length() < 128 ? mCurWord : mCurWord.substring(0, 128) + " ..."));
     }
 
     if (mCurWord.length() > MAX_LEN) {
       throw new IllegalArgumentException("mCurWord longer than " + MAX_LEN + " characters");
     }
+  }
+
+  /**
+   * Get the mappings.
+   * @return String of the form "from1->to1,from2->to2" and so on.
+   */
+  public String getMappings() {
+    final StringBuilder sb = new StringBuilder(256);
+    for (int imap = 0; imap < mMap.length; imap += 2) {
+      if (imap > 0) {
+        sb.append(',');
+      }
+      sb.append(mMap[imap]);
+      sb.append("->");
+      sb.append(mMap[imap + 1]);
+    }
+    return sb.toString();
+  }
+
+  /**
+   * Get the anchor.
+   * @return start of the desired limiting word; if empty, a triangle of words is produced.
+   */
+  public String getAnchor() {
+    return mAnchor;
+  }
+
+  /**
+   * Get the starting word.
+   * @return initial word as a String of digits.
+   */
+  public String getStart() {
+    return mStart;
   }
 
   /**
@@ -197,6 +269,11 @@ public class MorphismFixedPointSequence extends AbstractSequence {
           start = args[iarg++];
         } else if ("-a".equals(opt)) {
           anchor = args[iarg++];
+/*
+          if (anchor.length() > 0 && !Character.isDigit(anchor.charAt(0))) {
+            anchor = "";
+          }
+*/
         } else if ("-m".equals(opt)) {
           mappings = args[iarg++];
         } else if ("-n".equals(opt)) {

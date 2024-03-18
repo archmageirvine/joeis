@@ -62,7 +62,7 @@ public class MorphismTransform extends MorphismFixedPointSequence {
     if (mTarPos >= mTarWord.length()) {
       refillBuffers();
     }
-    return Z.valueOf(mTarWord.charAt(mTarPos++) - '0');
+    return charToZ(mTarWord.charAt(mTarPos++)); // inherited from MorphismFixedPointSequence
   }
 
   /**
@@ -93,5 +93,13 @@ public class MorphismTransform extends MorphismFixedPointSequence {
         mTarWord.append(mSrcWord.charAt(mSrcPos++)); // copy source term unchanged
       }
     } // while mSrcPos
+  }
+
+  /**
+   * Return the name of the underlying sequence.
+   * @return last component of the classname
+   */
+  public String getSequenceName() {
+    return mSeq.getClass().getSimpleName();
   }
 } 

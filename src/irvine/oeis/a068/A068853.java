@@ -13,7 +13,7 @@ public class A068853 extends Sequence1 {
   private final Fast mPrime = new Fast();
   private long mP = 1;
 
-  private boolean is(final long s, final long p) {
+  static boolean is(final long s, final long p) {
     long t = s;
     long q = p;
     while (t != 0) {

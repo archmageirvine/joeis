@@ -9,6 +9,7 @@ import irvine.oeis.AbstractSequence;
  * Rearrange a square array A as a {@link Triangle} by enumerating the antidiagonals
  * in descending (NE -&gt; SW) or ascending (SW -&gt; NE) order.
  * The upper left corner (the origin) of the matrix is <code>A[rowMin, colMin]</code>.
+ * This class is similar to {@link UpperLeftTriangle}.
  * @author Georg Fischer
  */
 public class LambdaArray extends AbstractSequence implements DirectArray {
@@ -20,6 +21,14 @@ public class LambdaArray extends AbstractSequence implements DirectArray {
   private int mColMin; // first columns index 
   private int mDir; // direction: +1 = ascending, -1 = descending antidiagonals
   private BiFunction<Integer, Integer, Z> mLambda; // expression for A[n, k]
+
+  /**
+   * Constructor with offset, lambda expression, and a default origin [0, 0] with descending antidiagonals.
+   * @param offset first index of the resulting sequence
+   */
+  public LambdaArray(final int offset) {
+    this(offset, 0, 0, -1);
+  }
 
   /**
    * Constructor with offset, lambda expression, and a default origin [0, 0] with descending antidiagonals.
@@ -39,13 +48,52 @@ public class LambdaArray extends AbstractSequence implements DirectArray {
    * @param lambda expression for A[n, k]
    */
   public LambdaArray(final int offset, final int rowMin, final int colMin, final int dir, final BiFunction<Integer, Integer, Z> lambda) {
+    this(offset, rowMin, colMin, dir);
+    mLambda = lambda;
+  }
+
+  /**
+   * Constructor with offset, origin (coordinates of the upper left corner), direction of the antidiagonals, and a lambda expression.
+   * @param offset first index of the resulting sequence
+   * @param rowMin first row index
+   * @param colMin first column index
+   * @param dir direction: +1 = ascending, -1 = descending
+   */
+  public LambdaArray(final int offset, final int rowMin, final int colMin, final int dir) {
     super(offset);
     mRowMin = rowMin;
-    mColMin = mRowMin;
+    mColMin = colMin;
     mDir = dir;
-    mLambda = lambda;
-    mRow = mRowMin - 1;
-    mCol = mColMin - 1;
+    if (mDir < 0) {
+      mRow = mRowMin - 1;
+      mCol = mColMin;
+    } else {
+      mRow = mRowMin - 1;
+      mCol = mRow;
+    }
+    mLambda = null;
+  }
+
+  /**
+   * Return next term, reading the upper left triangle by descending or ascending antidiagonals,
+   * starting with A[mRowMin, mCOl0].
+   * @return the next term of the sequence.
+   */
+  @Override
+  public Z next() {
+    if (mDir < 0) { // descending
+      if (--mCol < mColMin) {
+        ++mRow;
+        mCol = mRow;
+      }
+    } else { // ascending
+      if (++mCol > mRow) {
+        ++mRow;
+        mCol = mColMin;
+      }
+    }
+    // System.out.println("mRow=" + mRow + ", n=" + (mRow - mCol + mRowMin) + ", k=" + mCol + ", result=" + mLambda.apply(mRow - mCol + mRowMin, mCol));
+    return mLambda.apply(mRow - mCol + mRowMin, mCol);
   }
 
   /**
@@ -67,20 +115,6 @@ public class LambdaArray extends AbstractSequence implements DirectArray {
    */
   public int[] getOrigin() {
     return new int[]{mRowMin, mColMin, mDir};
-  }
-
-  /**
-   * Return next term, reading the upper left triangle by descending or ascending antidiagonals,
-   * starting with A[mRowMin, mCOl0].
-   * @return the next term of the sequence.
-   */
-  @Override
-  public Z next() {
-    if (++mCol > mRow) {
-      ++mRow;
-      mCol = mColMin;
-    }
-    return mLambda.apply(mRow, mCol);
   }
 
 }

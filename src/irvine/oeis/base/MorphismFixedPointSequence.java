@@ -248,6 +248,7 @@ public class MorphismFixedPointSequence extends AbstractSequence {
    * <li>-m mappings, default "0-&gt;001,1-&gt;0"</li>
    * <li>-n number of terms, default 32</li>
    * <li>-o offset, default 1</li>
+   * <li>-b b-file format</li>
    * <li>-d debugging mode: 0=none (default), 1=some, 2=more</li>
    * </ul>
    */
@@ -255,6 +256,7 @@ public class MorphismFixedPointSequence extends AbstractSequence {
     int noTerms = 32;
     int offset = 1;
     int debug = 0;
+    boolean bfile = false;
     String start = "0";
     String anchor = "0010";
     String mappings = "0->001,1->0"; // A171588
@@ -263,17 +265,14 @@ public class MorphismFixedPointSequence extends AbstractSequence {
       final String opt = args[iarg++];
       try {
         if (false) {
+        } else if ("-b".equals(opt)) {
+          bfile = true;
         } else if ("-d".equals(opt)) {
           debug = Integer.parseInt(args[iarg++]);
         } else if ("-i".equals(opt)) {
           start = args[iarg++];
         } else if ("-a".equals(opt)) {
           anchor = args[iarg++];
-/*
-          if (anchor.length() > 0 && !Character.isDigit(anchor.charAt(0))) {
-            anchor = "";
-          }
-*/
         } else if ("-m".equals(opt)) {
           mappings = args[iarg++];
         } else if ("-n".equals(opt)) {
@@ -292,8 +291,18 @@ public class MorphismFixedPointSequence extends AbstractSequence {
     final MorphismFixedPointSequence seq = new MorphismFixedPointSequence(start, anchor, mappings);
     int index = offset;
     while (index < noTerms) {
-      System.out.println(index + " " + seq.next());
+      if (bfile) {
+        System.out.println(index + " " + seq.next());
+      } else {
+        if (index > offset) {
+          System.out.print(", ");
+        }
+        System.out.print(seq.next());
+      }
       ++index;
+    }
+    if (!bfile) {
+      System.out.println();
     }
   }
 }

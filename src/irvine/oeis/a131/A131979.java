@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A131979 A graph substitution group based on a heptagon (Church Music 7 tones; white piano keys) and a pentagon (flats and sharps: black piano keys): the polygons are tied together with 5 connections beside chord connections 12 X 12 matrix substitution with polynom
+ * A131979 A graph substitution group based on a heptagon (Church Music 7 tones; white piano keys) and a pentagon (flats and sharps: black piano keys): the polygons are tied together with 5 connections beside chord connections 12 X 12 matrix substitution with polynomial: 8 + 4 x - 4 x^2 + 9 x^3 - 141 x^4 + 196 x^5 + 35 x^6 - 259x^7 + 265 x^8 - 156 x^9 + 58 x^10 - 12 x^11 + x^12.
  * @author Georg Fischer
  */
 public class A131979 extends MorphismFixedPointSequence {

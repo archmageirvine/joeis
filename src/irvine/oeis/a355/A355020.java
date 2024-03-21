@@ -4,7 +4,7 @@ package irvine.oeis.a355;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A355020 a(n) = (-1)^n * F(n) + 1, where F = A000045 (Fibonacci numbers).
+ * A355020 a(n) = (-1)^n * A000045(n) + 1.
  * @author Georg Fischer
  */
 public class A355020 extends HolonomicRecurrence {

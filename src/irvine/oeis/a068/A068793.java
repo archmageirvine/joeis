@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A068793 sum{i*(n^(n-i-1)+n^(n+i-1)) | 1&lt;=i&lt;n}.
+ * A068793 a(n) = Sum_{i=1..n} i*(n^(n-i-1) + n^(n+i-1)).
  * @author Georg Fischer
  */
 public class A068793 extends Sequence2 {

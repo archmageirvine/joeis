@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068838.
+ * A068876 Smallest n-digit prime with property that digits alternate in parity.
  * @author Sean A. Irvine
  */
 public class A068876 extends Sequence1 {

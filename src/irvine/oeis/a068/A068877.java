@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068838.
+ * A068877 Largest n-digit prime with property that digits alternate in parity.
  * @author Sean A. Irvine
  */
 public class A068877 extends Sequence1 {

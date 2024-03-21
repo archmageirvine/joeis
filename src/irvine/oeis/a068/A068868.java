@@ -4,7 +4,7 @@ import irvine.factor.prime.Puma;
 import irvine.oeis.FilterSequence;
 
 /**
- * A068853.
+ * A068868 Numbers prime(k) such that A068863(k) = prime(k).
  * @author Sean A. Irvine
  */
 public class A068868 extends FilterSequence {

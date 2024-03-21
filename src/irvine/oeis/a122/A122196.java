@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A122196 Fractal sequence: count down by 2&apos;s from successive integers.
+ * A122196 Fractal sequence: count down by 2's from successive integers.
  * @author Georg Fischer
  */
 public class A122196 extends LambdaTable {

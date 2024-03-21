@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a059.A059882;
 
 /**
- * A025047 Alternating compositions, i.e., compositions with alternating increases and decreases, starting with either an increase or a decrease.
+ * A025047 Number of alternating compositions, i.e., compositions with alternating increases and decreases, starting with either an increase or a decrease.
  * @author Sean A. Irvine
  */
 public class A025047 extends A059882 {

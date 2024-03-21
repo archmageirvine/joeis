@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A113453 Triangle giving maximal permanent P(n,k) of an n X n lower Hessenberg (0, 1)-matrix with exactly k 1&apos;s for 2 &lt;= n &lt;= k &lt;= 2n, read by rows.
+ * A113453 Triangle giving maximal permanent P(n,k) of an n X n lower Hessenberg (0,1)-matrix with exactly k 1's for 2 &lt;= n &lt;= k &lt;= 2n, read by rows.
  * @author Georg Fischer
  */
 public class A113453 extends LambdaTable {

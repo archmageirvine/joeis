@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068853.
+ * A068860 a(1) = 1; a(n+1) is the smallest number &gt; a(n) which differs from it at every digit.
  * @author Sean A. Irvine
  */
 public class A068860 extends Sequence1 {

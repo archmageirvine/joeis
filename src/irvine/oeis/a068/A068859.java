@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068853.
+ * A068859 a(1) = 3 = 1*3; a(n) = smallest multiple of a(n-1) which is of the form k(k+2).
  * @author Sean A. Irvine
  */
 public class A068859 extends Sequence0 {

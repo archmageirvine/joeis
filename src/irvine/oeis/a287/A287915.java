@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007443;
 import irvine.oeis.prime.PrimePositionSubsequence;
 
 /**
- * A287915 Indices of primes in A007443: binomial transform of the primes.
+ * A287915 Indices of primes in A007443.
  * @author Georg Fischer
  */
 public class A287915 extends PrimePositionSubsequence {

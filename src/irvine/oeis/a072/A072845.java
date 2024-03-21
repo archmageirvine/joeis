@@ -4,7 +4,7 @@ package irvine.oeis.a072;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A072845 {1, 3, 7, 9} -&gt; Mod[ {1*{1, 3, 7, 9}, 3*{1, 3, 7, 9}, 7*{1, 3, 7, 9}, 9*{1, 3, 7, 9}}, 10}
+ * A072845 {1, 3, 7, 9} -&gt; Mod[ {1*{1, 3, 7, 9}, 3*{1, 3, 7, 9}, 7*{1, 3, 7, 9}, 9*{1, 3, 7, 9}}, 10}.
  * @author Georg Fischer
  */
 public class A072845 extends MorphismFixedPointSequence {

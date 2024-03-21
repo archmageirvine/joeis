@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001065;
 
 /**
- * A346878 Sum of the divisors, except the largest, of the n-th positive even number.
+ * A346878 Sum of the divisors, except for the largest, of the n-th positive even number.
  * @author Georg Fischer
  */
 public class A346878 extends A001065 {

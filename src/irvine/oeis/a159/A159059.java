@@ -5,7 +5,7 @@ import irvine.oeis.a102.A102370;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A159059 A102370(n) modulo 5 .
+ * A159059 a(n) = A102370(n) modulo 5.
  * @author Georg Fischer
  */
 public class A159059 extends SimpleTransformSequence {

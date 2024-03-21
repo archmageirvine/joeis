@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068853.
+ * A068855 a(1) = 1; a(n) is the smallest triangular number &gt; a(n-1) which differs from it at every digit.
  * @author Sean A. Irvine
  */
 public class A068855 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A195735 2*sigma(n^2) - sigma(n)^2.
+ * A195735 a(n) = 2*sigma(n^2) - sigma(n)^2.
  * a(n)=2*sigma(n^2,1)-sigma(n,1)^2
  * @author Georg Fischer
  */

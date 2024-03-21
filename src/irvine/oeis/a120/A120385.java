@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A120385 If a(n-1) = 1 then largest value so far + 1, otherwise floor(a(n-1)/2); or table T(n,k) with T(n, 0) = n, T(n,k+1) = floor(T(n,k)/2).
+ * A120385 If a(n-1) = 1 then largest value so far + 1, otherwise floor(a(n-1)/2); or table T(n,k) with T(n,0) = n, T(n,k+1) = floor(T(n,k)/2).
  * @author Georg Fischer
  */
 public class A120385 extends LambdaTable {

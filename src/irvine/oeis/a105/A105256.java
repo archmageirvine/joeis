@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A105256 Sign doubling substitution of the Rauzy: 1-&gt;{1, 2}, 2-&gt;{1, 3}, 3-&gt;1 using a digraphy symmetry to the bi-Kenyon version (not a triangular nest of nests, but a straight level 5).
+ * A105256 Sign doubling substitution of the Rauzy: 1-&gt;{1,2},2-&gt;{1,3},3-&gt;1 using a digraphy symmetry to the bi-Kenyon version (not a triangular nest of nests, but a straight level 5).
  * @author Georg Fischer
  */
 public class A105256 extends MorphismFixedPointSequence {

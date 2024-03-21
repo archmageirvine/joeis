@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007678;
 
 /**
- * A006533 Join n equal points around circle in all ways, count regions.
+ * A006533 Place n equally-spaced points around a circle and join every pair of points by a chord; this divides the circle into a(n) regions.
  * @author Sean A. Irvine
  */
 public class A006533 extends A007678 {

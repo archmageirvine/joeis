@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A133159 A symmetry-breaking on the graph substitution for hexagonal close packing (A131213) from two hexagons to a pentagon and heptagon while keeping the number of vertices constant: Characteristic polynomial is: 8 - 36 x - 332 x^2 + 314 x^3 + 3833 x^4 + 5492 x^5
+ * A133159 A symmetry-breaking on the graph substitution for hexagonal close packing (A131213) from two hexagons to a pentagon and heptagon while keeping the number of vertices constant: Characteristic polynomial is: 8 - 36 x - 332 x^2 + 314 x^3 + 3833 x^4 + 5492 x^5 + 584 x^6 - 3196 x^7 - 1315 x^8 + 596 x^9 + 354 x^10 - 36 x^11 - 34 x^12 + x^14.
  * @author Georg Fischer
  */
 public class A133159 extends MorphismFixedPointSequence {

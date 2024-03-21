@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A068853.
+ * A068863 a(1) = 2; a(n+1) is the smallest prime not already in the sequence which differs from a(n) at every digit.
  * @author Sean A. Irvine
  */
 public class A068863 extends Sequence1 {

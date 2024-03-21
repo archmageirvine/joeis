@@ -5,7 +5,7 @@ import irvine.oeis.a243.A243354;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A297156 Moebius transform of A243354.
+ * A297156 M\u00f6bius transform of A243354.
  * @author Georg Fischer
  */
 public class A297156 extends MobiusTransformSequence {

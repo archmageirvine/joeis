@@ -6,7 +6,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a046.A046304;
 
 /**
- * A166718 Numbers with at most 4 prime factors (counted with multiplicity)
+ * A166718 Numbers with at most 4 prime factors (counted with multiplicity).
  * @author Georg Fischer
  */
 public class A166718 extends ComplementSequence {

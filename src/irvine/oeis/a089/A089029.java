@@ -6,7 +6,7 @@ import irvine.oeis.a081.A081827;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A089029 a(n)=n if Hofstadter&apos;s Q-sequence increases A005185(n-1)-&gt;A005185(n), a(n)=1 otherwise.
+ * A089029 a(n)=n if Hofstadter's Q-sequence increases A005185(n-1)-&gt;A005185(n), a(n)=1 otherwise.
  * @author Georg Fischer
  */
 public class A089029 extends SimpleTransformSequence {

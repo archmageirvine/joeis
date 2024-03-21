@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterSequence;
 
 /**
- * A068853.
+ * A068867 Squares k^2 such that A068864(k) = k^2.
  * @author Sean A. Irvine
  */
 public class A068867 extends FilterSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A106108 Rowland&apos;s prime-generating sequence: a(1) = 7; for n &gt; 1, a(n) = a(n-1) + gcd(n, a(n-1)).
+ * A106108 Rowland's prime-generating sequence: a(1) = 7; for n &gt; 1, a(n) = a(n-1) + gcd(n, a(n-1)).
  * @author Georg Fischer
  */
 public class A106108 extends TupleTransformSequence {

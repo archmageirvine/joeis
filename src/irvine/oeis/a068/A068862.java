@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.FilterPositionSequence;
 
 /**
- * A068853.
+ * A068862 Numbers n such that A068861(n) = n.
  * @author Sean A. Irvine
  */
 public class A068862 extends FilterPositionSequence {

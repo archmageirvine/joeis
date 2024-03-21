@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068853.
+ * A068857 a(0) = 0, a(1) = 8; for n&gt;=2: a(n) = smallest multiple of a(n-1) which is of the form 2k*(2k+2).
  * @author Sean A. Irvine
  */
 public class A068857 extends Sequence0 {

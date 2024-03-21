@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002858;
 
 /**
- * A068853.
+ * A068856 First of three consecutive Ulam numbers (A002858) in arithmetic progression with difference 22.
  * @author Sean A. Irvine
  */
 public class A068856 extends A002858 {

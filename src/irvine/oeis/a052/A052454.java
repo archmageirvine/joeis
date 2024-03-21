@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A052454 Positive integer values of n such that 10n^2 - 9 is a square.
+ * A052454 Positive integer values of k such that 10*k^2 - 9 is a square.
  * @author Sean A. Irvine
  */
 public class A052454 extends LinearRecurrence {

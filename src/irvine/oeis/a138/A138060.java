@@ -4,7 +4,7 @@ package irvine.oeis.a138;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A138060 Triangle read by rows: row 1 = {1}; for n&gt;1, row n is obtained from row n-1 by applying the morphism 1-&gt;1, 2; 2-&gt;3; 3-&gt;4; 4-&gt;1.
+ * A138060 Triangle read by rows: row 1 = {1}; for n&gt;1, row n is obtained from row n-1 by applying the morphism 1-&gt;1,2; 2-&gt;3; 3-&gt;4; 4-&gt;1.
  * @author Georg Fischer
  */
 public class A138060 extends MorphismFixedPointSequence {

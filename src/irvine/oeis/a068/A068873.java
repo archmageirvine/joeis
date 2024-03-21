@@ -12,7 +12,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A068838.
+ * A068873 Smallest prime which is a sum of n distinct primes.
  * @author Sean A. Irvine
  */
 public class A068873 extends Sequence1 {

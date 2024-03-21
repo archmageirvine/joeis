@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A118919 Triangle read by rows: T(n,k) is the number of Grand Dyck paths of semilength n that cross downwards the x-axis k times. (A Grand Dyck path of semilength n is a path in the half-plane x&gt;=0, starting at (0, 0), ending at (2n, 0) and consisting of steps u=(1, 1
+ * A118919 Triangle read by rows: T(n,k) is the number of Grand Dyck paths of semilength n that cross downwards the x-axis k times. (A Grand Dyck path of semilength n is a path in the half-plane x&gt;=0, starting at (0,0), ending at (2n,0) and consisting of steps u=(1,1) and d=(1,-1)).
  * @author Georg Fischer
  */
 public class A118919 extends LambdaTable {

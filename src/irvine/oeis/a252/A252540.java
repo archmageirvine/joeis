@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001477;
 import irvine.oeis.a146.A146076;
 
 /**
- * A252540 Numbers k such that A000593(A146076(k)) = k. (A000593(n) is the sum of the odd divisors of n; A146076(n) is the sum of the even divisors of n.)
+ * A252540 Numbers k such that A000593(A146076(k)) = k. (A000593(n) is the sum of the odd divisors of n; A146076(n) is the sum of the even divisors of n.).
  * @author Georg Fischer
  */
 public class A252540 extends FilterSequence {

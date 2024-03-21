@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A133193 Two filled pentagons connected in a substitution graph in analogy to the hexagonal close pack A131213: the object is a 12 tone musical substitution. Characteristic polynomial: 12 + 120 x + 448 x^2 + 700 x^3 + 165 x^4 - 696 x^5 - 490 x^6 + 216 x^7 + 195 x^8
+ * A133193 Two filled pentagons connected in a substitution graph in analogy to the hexagonal close pack A131213: the object is a 12 tone musical substitution. Characteristic polynomial: 12 + 120 x + 448 x^2 + 700 x^3 + 165 x^4 - 696 x^5 - 490 x^6 + 216 x^7 + 195 x^8 - 20 x^9 - 26 x^10 + x^12.
  * @author Georg Fischer
  */
 public class A133193 extends MorphismFixedPointSequence {

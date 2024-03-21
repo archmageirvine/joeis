@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A103768 (29*3^n - 18(n + 3)*2^n + 6n^2 + 24n + 27)/12.
+ * A103768 a(n) = (29*3^n - 18(n + 3)*2^n + 6n^2 + 24n + 27)/12.
  * @author Sean A. Irvine
  */
 public class A103768 extends LinearRecurrence {

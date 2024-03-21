@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaArray;
 
 /**
- * A070914 Array read by antidiagonals giving number of paths up and left from (0, 0) to (n,kn) where x/y &lt;= k for all intermediate points.
+ * A070914 Array read by antidiagonals giving number of paths up and left from (0,0) to (n,kn) where x/y &lt;= k for all intermediate points.
  * @author Georg Fischer
  */
 public class A070914 extends LambdaArray {

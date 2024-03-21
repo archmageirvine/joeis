@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068853 a(1) = 2; a(n+1) is the smallest prime &gt; a(n) which differs from it in every digit.
+ * A068854 a(1) = 1; a(n) is the smallest square &gt; a(n-1) which differs from it at every digit.
  * @author Sean A. Irvine
  */
 public class A068854 extends Sequence1 {

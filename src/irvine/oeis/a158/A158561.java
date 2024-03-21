@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A158561 a(n)=((2^n)*((2^n)+1) - (2^(n-1))*((2^(n-1))+1))/2, a(1)=3.
+ * A158561 a(n) = ((2^n)*((2^n)+1) - (2^(n-1))*((2^(n-1))+1))/2, a(1)=3.
  * @author Georg Fischer
  */
 public class A158561 extends LinearRecurrence {

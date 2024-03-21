@@ -7,7 +7,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a305.A305390;
 
 /**
- * A107793 Differences between successive indices of 1&apos;s in the ternary tribonacci sequence A305390.
+ * A107793 Differences between successive indices of 1's in the ternary tribonacci sequence A305390.
  * @author Georg Fischer
  */
 public class A107793 extends DifferenceSequence {

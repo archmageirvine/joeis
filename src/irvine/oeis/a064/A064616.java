@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A064616 (10^n-1)*(91/81)-n*10^n/9.
+ * A064616 a(n) = (10^n-1)*(91/81)-n*10^n/9.
  * @author Sean A. Irvine
  */
 public class A064616 extends LinearRecurrence {

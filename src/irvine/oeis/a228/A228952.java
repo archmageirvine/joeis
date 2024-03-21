@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a010.A010062;
 
 /**
- * A228952 A010062(2^n-1)
+ * A228952 A010062(2^n-1).
  * @author Georg Fischer
  */
 public class A228952 extends FilterSequence {

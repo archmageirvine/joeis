@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A105265 Concatenation of letters of words obtained from axiom &quot;1&quot; and the iterates of the substitutions &apos;1&apos; -&gt; &quot;12&quot;, &apos;2&apos; -&gt; &quot;3&quot;, &apos;3&apos; -&gt; &quot;4&quot;, &apos;4&apos; -&gt; &quot;1&quot;.
+ * A105265 Concatenation of letters of words obtained from axiom "1" and the iterates of the substitutions '1' -&gt; "12", '2' -&gt; "3", '3' -&gt; "4", '4' -&gt; "1".
  * @author Georg Fischer
  */
 public class A105265 extends MorphismFixedPointSequence {

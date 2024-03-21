@@ -4,7 +4,7 @@ package irvine.oeis.a355;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A355021 a(n) = (-1)^n * L(n) - 1, where L = A000032 (Lucas numbers).
+ * A355021 a(n) = (-1)^n * A000032(n) - 1.
  * @author Georg Fischer
  */
 public class A355021 extends HolonomicRecurrence {

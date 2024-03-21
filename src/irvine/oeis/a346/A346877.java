@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001065;
 
 /**
- * A346877 Sum of the divisors, except the largest, of the n-th odd number.
+ * A346877 Sum of the divisors, except for the largest, of the n-th odd number.
  * @author Georg Fischer
  */
 public class A346877 extends A001065 {

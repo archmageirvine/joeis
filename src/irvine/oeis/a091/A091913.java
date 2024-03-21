@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A091913 Triangle read by rows: a(n,k) = C(n,k)*(2^(n-k) - 1) for k&lt;n, a(n,k) = 0 for k &gt;= n, where k=0..max(n-1, 0).
+ * A091913 Triangle read by rows: a(n,k) = C(n,k)*(2^(n-k) - 1) for k&lt;n, a(n,k) = 0 for k &gt;= n, where k=0..max(n-1,0).
  * @author Georg Fischer
  */
 public class A091913 extends LambdaTable {

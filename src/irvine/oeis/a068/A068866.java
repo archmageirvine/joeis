@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterSequence;
 
 /**
- * A068853.
+ * A068866 Triangular numbers k*(k+1)/2 such that A068865(k) = k*(k+1)/2.
  * @author Sean A. Irvine
  */
 public class A068866 extends FilterSequence {

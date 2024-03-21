@@ -5,7 +5,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A068853.
+ * A068865 a(1) = 1; a(n) is the smallest triangular number not already in the sequence which differs from a(n-1) at every digit.
  * @author Sean A. Irvine
  */
 public class A068865 extends Sequence1 {

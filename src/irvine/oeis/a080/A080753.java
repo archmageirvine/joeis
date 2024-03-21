@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A080753 a(1)=2; for n &gt; 1, a is the second-smallest positive integer greater than a(n-1) such that the condition &quot;n is in the sequence if and only if a(n) is odd&quot; is satisfied.
+ * A080753 a(1)=2; for n &gt; 1, a is the second-smallest positive integer greater than a(n-1) such that the condition "n is in the sequence if and only if a(n) is odd" is satisfied.
  * @author Georg Fischer
  */
 public class A080753 extends PartialSumSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068853.
+ * A068858 a(1) = 3 = 1*3; a(n) = smallest multiple of a(n-1) which is a product of two consecutive odd numbers.
  * @author Sean A. Irvine
  */
 public class A068858 extends Sequence0 {

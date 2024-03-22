@@ -11,26 +11,13 @@ public class A068881 extends Sequence1 {
 
   private Z mA = Z.ZERO;
 
-  private boolean is(Z s) {
-    boolean parity = s.isOdd();
-    s = s.divide(10);
-    while (!s.isZero()) {
-      if (s.isOdd() == parity) {
-        return false;
-      }
-      parity = !parity;
-      s = s.divide(10);
-    }
-    return true;
-  }
-
   @Override
   public Z next() {
     mA = mA.multiply(10).add(mA.isEven() ? 9 : 8);
     Z r = mA.sqrt().add(1);
     while (true) {
       final Z s = r.square();
-      if (s.compareTo(mA) <= 0 && is(s)) {
+      if (s.compareTo(mA) <= 0 && A068880.is(s)) {
         return s;
       }
       r = r.subtract(1);

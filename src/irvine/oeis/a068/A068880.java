@@ -11,7 +11,7 @@ public class A068880 extends Sequence1 {
 
   private Z mA = Z.ZERO;
 
-  private boolean is(Z s) {
+  static boolean is(Z s) {
     boolean parity = s.isOdd();
     s = s.divide(10);
     while (!s.isZero()) {

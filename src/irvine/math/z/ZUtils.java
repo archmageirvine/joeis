@@ -1132,8 +1132,10 @@ public final class ZUtils {
     Z p;
     Z sm = Z.ZERO;
     for (int k = 0; k < mods.length; ++k) {
-      p = product.divide(mods[k]);
-      sm = sm.add(divs[k].multiply(p.modInverse(mods[k])).multiply(p));
+      if (!Z.ONE.equals(mods[k])) {
+        p = product.divide(mods[k]);
+        sm = sm.add(divs[k].multiply(p.modInverse(mods[k])).multiply(p));
+      }
     }
     return sm.mod(product);
   }

@@ -1,5 +1,6 @@
 package irvine.oeis.a000;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -34,6 +35,24 @@ public class A000217 extends AbstractSequence implements DirectSequence {
     return Z.valueOf(n).multiply(n + 1).divide2();
   }
 
+  /**
+   * Return the index of the smallest triangular number greater than or equal to the given number.
+   * @param n number to get index of
+   * @return index
+   */
+  public static Z trinv(final Z n) {
+    return n.shiftLeft(3).add(1).sqrt().subtract(1).divide2();
+  }
+
+  /**
+   * Return the index of the smallest triangular number greater than or equal to the given number.
+   * @param n number to get index of
+   * @return index
+   */
+  public static long trinv(final long n) {
+    return (LongUtils.sqrt(8L * n + 1) - 1) / 2;
+  }
+
   @Override
   public Z a(final Z n) {
     return n.multiply(n.add(1)).divide2();
@@ -41,7 +60,7 @@ public class A000217 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Z.valueOf(n).multiply(n + 1).divide2();
+    return triangular(n);
   }
 
   @Override

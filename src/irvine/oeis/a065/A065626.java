@@ -3,6 +3,7 @@ package irvine.oeis.a065;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
+import irvine.oeis.a000.A000217;
 
 /**
  * A065626 Table of permutations of N, each row being a generator of the "rotation group" of infinite planar binary tree. Inverse generators are given in A065625.
@@ -13,10 +14,6 @@ public class A065626 extends Sequence0 {
   // After Antti Karttunen
 
   private long mN = -1;
-
-  private long trinv(final long n) {
-    return (LongUtils.sqrt(8L * n + 1) + 1) / 2;
-  }
 
   protected long rotateNodeLeft(final long t, final long x) {
     final long u = LongUtils.log2(t) + 1;
@@ -44,7 +41,7 @@ public class A065626 extends Sequence0 {
 
   @Override
   public Z next() {
-    final long t = trinv(++mN);
-    return Z.valueOf(rotateNodeLeft(1 + (mN - ((t * (t - 1)) / 2)), (((t - 1) * (t + 2) / 2) - mN) + 1));
+    final long t = A000217.trinv(++mN);
+    return Z.valueOf(rotateNodeLeft(1 + (mN - ((t * (t + 1)) / 2)), ((t * (t + 3) / 2) - mN) + 1));
   }
 }

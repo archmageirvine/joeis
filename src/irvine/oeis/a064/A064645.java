@@ -1,9 +1,9 @@
 package irvine.oeis.a064;
 
-import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
+import irvine.oeis.a000.A000217;
 
 /**
  * A064645 Table where the entry (n,k) (n &gt;= 0, k &gt;= 0) gives number of Motzkin paths of the length n with the minimum peak width of k.
@@ -15,10 +15,6 @@ public class A064645 extends Sequence0 {
 
   private Z c(final int n, final int k) {
     return n < 0 ? Z.ZERO : Binomial.binomial(n, k);
-  }
-
-  private int trinv(final int n) {
-    return (int) ((LongUtils.sqrt(8L * n + 1) + 1) / 2);
   }
 
   private Z t(final long n, final long k) {
@@ -37,7 +33,8 @@ public class A064645 extends Sequence0 {
 
   @Override
   public Z next() {
-    final int t = trinv(++mN);
+    final int n = ++mN;
+    final int t = (int) A000217.trinv(n) + 1;
     return mpw((t - 1) * (t + 2) / 2 - mN, mN - t * (t - 1) / 2);
   }
 }

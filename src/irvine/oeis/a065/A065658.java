@@ -7,6 +7,7 @@ import irvine.math.LongUtils;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
+import irvine.oeis.a000.A000217;
 import irvine.oeis.a007.A007305;
 import irvine.oeis.a047.A047679;
 import irvine.oeis.memory.MemorySequence;
@@ -22,10 +23,6 @@ public class A065658 extends Sequence0 {
   private long mN = -1;
   private final MemorySequence mSternBrocotNum = MemorySequence.cachedSequence(new A007305().skip(2));
   private final MemorySequence mSternBrocotDen = MemorySequence.cachedSequence(new A047679());
-
-  private long trinv(final long n) {
-    return (LongUtils.sqrt(8L * n + 1) + 1) / 2;
-  }
 
   private Z cfrac2BinExp(final List<Z> c) {
     Z n = Z.ZERO;
@@ -87,7 +84,7 @@ public class A065658 extends Sequence0 {
 
   @Override
   public Z next() {
-    final long t = trinv(++mN);
-    return rotateBinFracNode(1 + (mN - ((t * (t - 1)) / 2)), (((t - 1) * (t + 2) / 2) - mN) + 1);
+    final long t = A000217.trinv(++mN);
+    return rotateBinFracNode(1 + (mN - ((t * (t + 1)) / 2)), ((t * (t + 3) / 2) - mN) + 1);
   }
 }

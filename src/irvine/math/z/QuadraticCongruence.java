@@ -31,7 +31,7 @@ public final class QuadraticCongruence {
 
   /**
    * Solve <code>x^2=a (mod p)</code>
-   * @param a ant
+   * @param a residue
    * @param p modulus
    * @return solutions
    */

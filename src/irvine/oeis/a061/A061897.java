@@ -30,12 +30,16 @@ public class A061897 extends Sequence0 {
     }
   };
 
+  protected Z t(final int n, final int m) {
+    return mB.get(n, m);
+  }
+
   @Override
   public Z next() {
     if (++mM > mN) {
       ++mN;
       mM = 0;
     }
-    return mB.get(mM, mN - mM);
+    return t(mM, mN - mM);
   }
 }

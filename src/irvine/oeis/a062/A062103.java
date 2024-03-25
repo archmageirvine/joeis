@@ -1,9 +1,9 @@
 package irvine.oeis.a062;
 
-import irvine.math.LongUtils;
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
+import irvine.oeis.a000.A000217;
 
 /**
  * A062103 Number of paths by which an unpromoted knight (keima) of Shogi can move to various squares on infinite board, if it starts from its origin square, the second leftmost square of the back rank.
@@ -26,13 +26,10 @@ public class A062103 extends Sequence1 {
     }
   };
 
-  private int trinv(final int n) {
-    return (int) ((LongUtils.sqrt(8L * n + 1) + 1) / 2);
-  }
-
   @Override
   public Z next() {
+    final int t = (int) A000217.trinv(mN);
     ++mN;
-    return mB.get(trinv(mN - 1) - 1, (mN - ((trinv(mN - 1) * (trinv(mN - 1) - 1)) / 2)) - 1);
+    return mB.get(t, mN - t * (t + 1) / 2 - 1);
   }
 }

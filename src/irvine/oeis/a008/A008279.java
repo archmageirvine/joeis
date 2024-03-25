@@ -1,26 +1,19 @@
 package irvine.oeis.a008;
 
 import irvine.math.factorial.MemoryFactorial;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence0;
+import irvine.oeis.triangle.DirectArray;
+import irvine.oeis.triangle.LambdaTriangle;
 
 /**
  * A008279 Triangle T(n,k) = n!/(n-k)! (0 &lt;= k &lt;= n) read by rows, giving number of permutations of n things k at a time.
- * @author Sean A. Irvine
+ * This is the function <code>fallfac(n, k)</code>.
+ * @author Georg Fischer
  */
-public class A008279 extends Sequence0 {
+public class A008279 extends LambdaTriangle implements DirectArray {
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
-  private int mN = -1;
-  private int mM = 0;
-
-  @Override
-  public Z next() {
-    if (++mM > mN) {
-      ++mN;
-      mM = 0;
-    }
-    return mF.factorial(mN).divide(mF.factorial(mN - mM));
+  /* Construct the sequence. */
+  public A008279() {
+    super(0, 0, 0, (n, k) -> MemoryFactorial.SINGLETON.factorial(n).divide(MemoryFactorial.SINGLETON.factorial(n - k)));
   }
 }
 

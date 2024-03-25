@@ -11,7 +11,7 @@ import irvine.oeis.triangle.LambdaTriangle;
  */
 public class A008279 extends LambdaTriangle implements DirectArray {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A008279() {
     super(0, 0, 0, (n, k) -> MemoryFactorial.SINGLETON.factorial(n).divide(MemoryFactorial.SINGLETON.factorial(n - k)));
   }

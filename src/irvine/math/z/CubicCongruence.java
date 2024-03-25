@@ -64,7 +64,7 @@ public final class CubicCongruence {
    * @param p modulus
    * @return solutions
    */
-  public static Collection<Z> solve(Z a, final Z p, final int e) {
+  public static Collection<Z> solve(final Z a, final Z p, final int e) {
     if (VERBOSE) {
       System.out.println(StringUtils.rep(' ', sIndent) + "Solving x^3=" + a + " (mod " + p + "^" + e + ")");
       sIndent += 2;

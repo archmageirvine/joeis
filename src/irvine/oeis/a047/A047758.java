@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001764;
 
 /**
- * A047758 Number of dissectable polyhedra with symmetry of type G.
+ * A047758 Number of chiral pairs of dissectable polyhedra with n tetrahedral cells and symmetry of type G.
  * @author Sean A. Irvine
  */
 public class A047758 extends A001764 {

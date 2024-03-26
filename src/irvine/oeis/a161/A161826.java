@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A161826 Number of maximal vertex-independent sets in the hypergraph with nodes V = {1, 2, ..., n} and &quot;edges&quot; consisting of the triples (X,Y,Z) with X&lt;Y&lt;Z and X+Y=Z.
+ * A161826 Number of maximal vertex-independent sets in the hypergraph with nodes V = {1, 2, ..., n} and "edges" consisting of the triples (X,Y,Z) with X&lt;Y&lt;Z and X+Y=Z.
  * @author Georg Fischer
  */
 public class A161826 extends GeneratingFunctionSequence {

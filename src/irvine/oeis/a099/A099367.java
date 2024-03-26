@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A099367 a(n) = A054413(n-1), n &gt;= 1.
+ * A099367 a(n) = A054413(n-1)^2, n &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A099367 extends LinearRecurrence {

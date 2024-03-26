@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 import irvine.math.z.Z;
 
 /**
- * A047764 Number of dissectable polyhedra with symmetry of type Q.
+ * A047764 Number of dissectable polyhedra with n tetrahedral cells and symmetry of type Q.
  * @author Sean A. Irvine
  */
 public class A047764 extends A047749 {

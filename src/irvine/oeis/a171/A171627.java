@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A171627 Ceiling(n-th composite/n).
+ * A171627 a(n) = ceiling(n-th composite/n).
  * @author Georg Fischer
  */
 public class A171627 extends PaddingSequence {

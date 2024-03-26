@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A002047 Number of 3 X (2n+1) zero-sum arrays with entries -n,..,0,..,n.
+ * A002047 Number of 3 X (2n+1) zero-sum arrays with entries -n,...,0,...,n.
  * @author Sean A. Irvine
  */
 public class A002047 extends Sequence0 {

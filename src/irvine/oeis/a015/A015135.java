@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.Pair;
 
 /**
- * A015135 Consider Fibonacci-type sequences f(0)=X, f(1)=Y, f(k)=f(k-1)+f(k-2) mod n; all are periodic; sequence gives number of distinct period lengths.
+ * A015135 Consider Fibonacci-type sequences f(0)=X, f(1)=Y, f(k)=f(k-1)+f(k-2) mod n; all are periodic; sequence gives number of distinct periods.
  * @author Sean A. Irvine
  */
 public class A015135 extends Sequence1 {

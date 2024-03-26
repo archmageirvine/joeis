@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A064003 Numbers k such that product of decimal digits = sum of binary digits.
+ * A064003 Numbers whose product of decimal digits = sum of binary digits.
  * @author Sean A. Irvine
  */
 public class A064003 extends Sequence1 {

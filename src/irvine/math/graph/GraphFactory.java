@@ -1,5 +1,8 @@
 package irvine.math.graph;
 
+import java.util.Arrays;
+
+import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 
 /**
@@ -238,6 +241,66 @@ public final class GraphFactory {
         }
       }
     }
+    return g;
+  }
+
+  private static int queenPack(final int n, final int[] k) {
+    int vertex = 0;
+    for (final int v : k) {
+      vertex *= n;
+      vertex += v;
+    }
+    return vertex;
+  }
+
+  private static boolean queenOk(final int n, final int[] k) {
+    for (final int v : k) {
+      if (v < 0 || v >= n) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Construct the queen's graph of given size and number of dimensions.
+   * @param dimensions dimensions of space
+   * @param n number of cells
+   * @return queen's graph
+   */
+  public static Graph queensGraph(final int dimensions, final int n) {
+    if (dimensions < 1 || n < 0) {
+      throw new IllegalArgumentException();
+    }
+    final Z nodes = Z.valueOf(n).pow(dimensions);
+    if (nodes.bitLength() >= Integer.SIZE - 1) {
+      throw new UnsupportedOperationException();
+    }
+    final Graph g = create(nodes.intValueExact());
+    //System.out.println(g.order() + " vertices");
+    final int[] k = new int[dimensions]; // nodes
+    final int[] delta = new int[dimensions]; // directions the queen can move
+    final int[] w = new int[dimensions]; // work
+    do {
+      final int v = queenPack(n, k);
+      //System.out.println(v + " " + Arrays.toString(k));
+      Arrays.fill(delta, -1);
+      do {
+        if (!IntegerUtils.isZero(delta)) {
+          System.arraycopy(k, 0, w, 0, k.length);
+          while (true) {
+            for (int j = 0; j < w.length; ++j) {
+              w[j] += delta[j];
+            }
+            if (!queenOk(n, w)) {
+              break;
+            }
+            final int u = queenPack(n, w);
+            g.addEdge(v, u);
+          }
+        }
+      } while (IntegerUtils.bump(delta, -1, 1));
+    } while (IntegerUtils.bump(k, 0, n - 1));
     return g;
   }
 }

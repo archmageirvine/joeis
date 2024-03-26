@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A128503 Array for second (k=2) convolution of Chebyshev&apos;s S(n,x)=U(n,x/2) polynomials.
+ * A128503 Array for second (k=2) convolution of Chebyshev's S(n,x)=U(n,x/2) polynomials.
  * @author Georg Fischer
  */
 public class A128503 extends LambdaTable {

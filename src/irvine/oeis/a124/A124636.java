@@ -4,7 +4,7 @@ package irvine.oeis.a124;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A124636 Poincar√© series [or Poincare series] P(C_{3,2}(0); t).
+ * A124636 Poincar\u00e9 series [or Poincare series] P(C_{3,2}(0); t).
  * @author Georg Fischer
  */
 public class A124636 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000162;
 import irvine.oeis.a038.A038119;
 
 /**
- * A007743 Number of n-celled mirror-symmetric solid polyominoes (or polycubes).
+ * A007743 Number of achiral polyominoes with n cubical cells of the regular tiling with Schl\u00e4fli symbol {4,3,4} (or polycubes).
  * @author Sean A. Irvine
  */
 public class A007743 extends A038119 {

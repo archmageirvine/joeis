@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 import irvine.math.z.Z;
 
 /**
- * A047751 Number of dissectable polyhedra with symmetry of type K.
+ * A047751 Number of dissectable polyhedra with n tetrahedral cells and symmetry of type K.
  * @author Sean A. Irvine
  */
 public class A047751 extends A047749 {

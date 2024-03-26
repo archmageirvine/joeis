@@ -5,7 +5,7 @@ import irvine.oeis.a100.A100258;
 import irvine.oeis.triangle.RowSumSequence;
 
 /**
- * A060818 a(n) = 2^(floor(n/2) + floor(n/4) + floor(n/8) + floor(n/16) + ...).
+ * A060818 a(n) = 2^(n - HammingWeight(n)) = 2^(n - BitCount(n)) = 2^(n - A000120(n)).
  * @author Georg Fischer
  */
 public class A060818 extends RowSumSequence {

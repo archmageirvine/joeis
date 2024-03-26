@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A094645 Generalized Stirling number triangle of first kind.
+ * A094645 Triangle of generalized Stirling numbers of the first kind.
  * @author Georg Fischer
  */
 public class A094645 extends Triangle {

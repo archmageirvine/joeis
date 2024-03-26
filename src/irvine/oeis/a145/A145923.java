@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A145923 Second bisection of A061041: a(n) = A061041(2n+1) = (2n+1)*(2n+9).
+ * A145923 Second bisection of A061041: a(n) = A061041(2n+1) = (2*n+1)*(2*n+9).
  * @author Sean A. Irvine
  */
 public class A145923 extends LinearRecurrence {

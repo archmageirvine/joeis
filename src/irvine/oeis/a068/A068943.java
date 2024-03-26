@@ -30,11 +30,7 @@ public class A068943 extends AbstractSequence {
     ++mN;
     Z prod = Z.ONE;
     for (long m = 1; m <= mN; ++m) {
-      final Z b = Binomial.binomial(m + mN - 2, m - 1);
-      if (b.bitLength() > 30) {
-        throw new UnsupportedOperationException();
-      }
-      prod = prod.multiply(Z.valueOf(mN - m + 1).pow(b.intValue()));
+      prod = prod.multiply(Z.valueOf(mN - m + 1).pow(Binomial.binomial(m + mN - 2, m - 1)));
     }
     return prod;
   }

@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
- * A105316 From the 4-symbol substitution 1-&gt;{2, 3}, 2-&gt;{3, 4}, 3-&gt;{}, 4-&gt;{1, 4}.
+ * A105316 Let s denote the 4-symbol substitution 1-&gt;{2, 3}, 2-&gt;{3, 4}, 3-&gt;{}, 4-&gt;{1, 3}; let S(1) = 1, and S(n+1) = concat( S(n), s(S(n)) );  then the sequence is S(1), S(2), S(3), ...
  * @author Georg Fischer
  */
 public class A105316 extends MorphismFixedPointSequence {

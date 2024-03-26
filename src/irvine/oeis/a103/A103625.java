@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A103625 Define a(1)=0, a(2)=0, a(3)=2, a(4)=4, a(5)=34, a(6)=62, a(7)=480, a(8)=870 such that from i=1 to 8: 48*a(i)^2 + 48*a(i) + 1 = j(i)^2 with j(1)=1, j(2)=1, j(3)=17, j(4)=31, j(5)=239, j(6)=433, j(7)=3329, j(8)=6031. Then a(n) = a(n-8) + 28*sqrt(48*(a(n-4)^2) + 48*a(n-4) + 1).
+ * A103625 a(n) = 3 + 7*a(n-2) + sqrt(1 + 48*a(n-2) + 48*a(n-2)^2), with a(1) = 0, a(2) = 0, a(3) = 2.
  * @author Georg Fischer
  */
 public class A103625 extends HolonomicRecurrence {

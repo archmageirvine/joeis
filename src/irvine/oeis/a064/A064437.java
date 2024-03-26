@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A064437 a(1)=1, a(n)=a(n-1)+3 if n is already in the sequence, a(n)=a(n-1)+2 otherwise.
+ * A064437 a(1)=1, a(n) = a(n-1) + 3 if n is already in the sequence, a(n) = a(n-1) + 2 otherwise.
  * @author Georg Fischer
  */
 public class A064437 extends AbstractSequence {

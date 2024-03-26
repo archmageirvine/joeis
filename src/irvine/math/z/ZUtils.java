@@ -189,6 +189,24 @@ public final class ZUtils {
   }
 
   /**
+   * Return the digital root of a number.
+   * @param v number
+   * @return digital root
+   */
+  public static long digitalRoot(final long v) {
+    return v < 10 ? v : digitalRoot(digitSum(v));
+  }
+
+  /**
+   * Return the digital root of a number.
+   * @param v number
+   * @return digital root
+   */
+  public static long digitalRoot(final Z v) {
+    return v.compareTo(Z.TEN) < 0 ? v.longValue() : digitalRoot(digitSum(v));
+  }
+
+  /**
    * Compute the sum of the given powers of the digits in an integer.
    * @param v integer
    * @param base the base

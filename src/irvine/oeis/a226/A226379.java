@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A226379 a(5n) = 2n(2n+1), a(5n+1) = (2n-3)(2n+5), a(5n+2) = (2n-1)(2*n+3), a(5n+3)=(2n+2)(2n+1), a(5n+4) = (2n+1)(2n+3).
+ * A226379 a(5n) = 2*n*(2*n+1), a(5n+1) = (2*n-3)*(2*n+5), a(5n+2) = (2*n-1)*(2*n+3), a(5n+3) = (2*n+2)*(2*n+1), a(5n+4) = (2*n+1)*(2*n+3).
  * @author Sean A. Irvine
  */
 public class A226379 extends LinearRecurrence {

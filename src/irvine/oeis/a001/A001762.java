@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A001762 Number of dissections of a ball.
+ * A001762 Number of labeled n-vertex dissections of a ball.
  * @author Sean A. Irvine
  */
 public class A001762 extends Sequence3 {

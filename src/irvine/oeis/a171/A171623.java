@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.recur.PaddingSequence;
 
 /**
- * A171623 Floor(n-th composite / n).
+ * A171623 a(n) = floor(n-th composite / n).
  * @author Georg Fischer
  */
 public class A171623 extends PaddingSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a126.A126988;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A141671 Triangular sequence: t(n,m) = If[m == 0, n + 1, If[Mod[n, m] == 0, n/m, 0]].
+ * A141671 Triangle T(n, k) = n/k if n mod k = 0, otherwise T(n, k) = 0, with T(n, 0) = n+1, read by rows.
  * @author Georg Fischer
  */
 public class A141671 extends PrependColumn {

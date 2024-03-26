@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A113025 Triangle of integer coefficients of polynomials P(n,x) of degree n, and falling powers of x, arising in diagonal Pad√© approximation of exp(x).
+ * A113025 Triangle of integer coefficients of polynomials P(n,x) of degree n, and falling powers of x, arising in diagonal Pad\u00e9 approximation of exp(x).
  * @author Georg Fischer
  */
 public class A113025 extends LambdaTriangle {

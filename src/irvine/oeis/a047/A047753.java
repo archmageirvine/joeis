@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A047753 Number of dissectable polyhedra with symmetry of type I.
+ * A047753 Number of dissectable polyhedra with n tetrahedral cells and symmetry of type I.
  * @author Sean A. Irvine
  */
 public class A047753 extends A047749 {

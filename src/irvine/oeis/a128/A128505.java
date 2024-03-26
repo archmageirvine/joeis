@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A128505 Irregular triangular array a(n,m) for third (k=3) convolution of Chebyshev&apos;s S(n,x) = U(n,x/2) polynomials, read by rows (n &gt;=0, 0 &lt;= m &lt;= floor(n/2)).
+ * A128505 Irregular triangular array a(n,m) for third (k=3) convolution of Chebyshev's S(n,x) = U(n,x/2) polynomials, read by rows (n &gt;=0, 0 &lt;= m &lt;= floor(n/2)).
  * @author Georg Fischer
  */
 public class A128505 extends LambdaTable {

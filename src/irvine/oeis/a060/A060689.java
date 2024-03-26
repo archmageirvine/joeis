@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000001;
 import irvine.oeis.a000.A000688;
 
 /**
- * A060689 Number of non-Abelian groups of order n.
+ * A060689 Number of nonabelian groups of order n.
  * @author Sean A. Irvine
  */
 public class A060689 extends Combiner {

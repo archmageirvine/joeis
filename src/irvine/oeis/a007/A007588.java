@@ -1,15 +1,26 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
+import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence0;
 
 /**
  * A007588 Stella octangula numbers: a(n) = n*(2*n^2 - 1).
  * @author Sean A. Irvine
  */
-public class A007588 extends Sequence0 {
+public class A007588 extends Sequence0 implements DirectSequence {
 
   private long mN = -1;
+
+  @Override
+  public Z a(final int n) {
+    return a(Z.valueOf(n));
+  }
+
+  @Override
+  public Z a(final Z n) {
+    return n.square().multiply2().subtract(1).multiply(n);
+  }
 
   @Override
   public Z next() {

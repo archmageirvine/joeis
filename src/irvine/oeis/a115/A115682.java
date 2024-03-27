@@ -13,6 +13,6 @@ public class A115682 extends FilterSequence {
 
   /** Construct the sequence. */
   public A115682() {
-    super(1, new A000217(), v -> ZUtils.isPolygonal(ZUtils.reverse(v), 5));
+    super(1, new A000217().skip(), v -> ZUtils.isPolygonal(ZUtils.reverse(v), 5));
   }
 }

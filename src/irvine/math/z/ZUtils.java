@@ -1378,6 +1378,9 @@ public final class ZUtils {
    * @return true iff the number is <code>k</code>-gonal
    */
   public static boolean isPolygonal(final Z n, final long k) {
+    if (n.isZero()) {
+      return true;
+    }
     final Z t = n.multiply(8 * (k - 2)).add((k - 4) * (k - 4));
     final Z[] s = t.sqrtAndRemainder();
     if (!s[1].isZero()) {

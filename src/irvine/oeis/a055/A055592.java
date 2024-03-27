@@ -13,7 +13,10 @@ import irvine.util.Triple;
  */
 public class A055592 extends Sequence1 {
 
-  static final class Triangle extends Triple<Long> implements Comparable<Triangle> {
+  /**
+   * A triangle.
+   */
+  public static final class Triangle extends Triple<Long> implements Comparable<Triangle> {
 
     private Triangle(final long a, final long b, final long c) {
       super(a, b, c);

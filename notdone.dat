@@ -2348,3 +2348,4 @@ A068590 Number of different Euler multigraphs with n edges, loops allowed.
 A068591 Nonessential triangular numbers (conjectured).
 A068592 Number of different Euler multigraphs with n edges, loops forbidden.
 A068599 Number of n-uniform tilings
+A068979 Number of elements of rank n in the free lattice on three generators.

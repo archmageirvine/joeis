@@ -10,47 +10,7 @@ import irvine.oeis.Sequence1;
  */
 public class A005729 extends Sequence1 {
 
-  // After Michel Marcus
-
-  private int expa(final long p, final long n) {
-    if ((p & 1) != 0) {
-      return 1;
-    }
-    long j = 4;
-    while (j <= n + 1) {
-      if (n % (j - 1) == 0) {
-        return 2;
-      }
-      j <<= 1;
-      assert j >= 0;
-    }
-    return 1;
-  }
-
-  private int expb(final long p, final long n) {
-    int r = 1;
-    boolean ok = true;
-    while (ok) {
-      int m = 2;
-      long ps;
-      final Z zp = Z.valueOf(p);
-      while ((ps = zp.pow((long) m * r).subtract(1).divide(zp.pow(r).subtract(1)).longValueExact()) <= n) {
-        if (n % ps == 0) {
-          return 1;
-        }
-        ++m;
-      }
-      if (m == 2) {
-        ok = false;
-      }
-      ++r;
-    }
-    return 0;
-  }
-
-  private int expp(final long p, final long n) {
-    return n % p == 0 ? expa(p, n) : expb(p, n);
-  }
+  // After Chai Wah Wu
 
   private final Fast mPrime = new Fast();
   private long mN = 0;
@@ -58,11 +18,34 @@ public class A005729 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    Z prod = Z.ONE;
+    Z c = Z.ONE;
     for (long p = 2; p < mN; p = mPrime.nextPrime(p)) {
-      final Z t = Z.valueOf(p).pow(expp(p, mN));
-      prod = prod.multiply(t);
+      if (mN % p != 0) {
+        final Z zp = Z.valueOf(p);
+        long m = 1;
+        outer:
+        while (true) {
+          ++m;
+          if (zp.pow(m).subtract(1).divide(p - 1).longValueExact() > mN) {
+            break;
+          }
+          long r = 0;
+          while (true) {
+            ++r;
+            final long q = zp.pow(m * r).subtract(1).divide(zp.pow(r).subtract(1)).longValueExact();
+            if (q > mN) {
+              break;
+            }
+            if (mN % q == 0) {
+              c = c.multiply(p);
+              break outer;
+            }
+          }
+        }
+      } else {
+        c = c.multiply((p & 1) == 1 || mN % 6 != 0 ? p : p * p);
+      }
     }
-    return prod;
+    return c;
   }
 }

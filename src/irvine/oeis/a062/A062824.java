@@ -12,6 +12,7 @@ public class A062824 extends A005117 {
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).sigma().subtract(mN + 1);
+    final Z t = super.next();
+    return Z.ONE.equals(t) ? Z.ZERO : Jaguar.factor(t).sigma().subtract(mN + 1);
   }
 }

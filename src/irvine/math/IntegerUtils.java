@@ -552,4 +552,17 @@ public final class IntegerUtils {
     return neg ? m - p2 : p2;
   }
 
+  /**
+   * Return the mex of a collection.
+   * @param mex collection
+   * @return mex value
+   */
+  public static int mex(final Collection<Integer> mex) {
+    int m = -1;
+    while (mex.contains(++m)) {
+      // do nothing
+    }
+    return m;
+  }
+
 }

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A069003.
+ * A069025 Smallest power of 2 with digital sum (A007953) n, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A069025 extends Sequence1 {

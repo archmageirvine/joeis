@@ -5,7 +5,7 @@ import irvine.oeis.AlternatingSumSequence;
 import irvine.oeis.a018.A018804;
 
 /**
- * A370895 Partial alternating sums of Pillai&apos;s arithmetical function (A018804).
+ * A370895 Partial alternating sums of Pillai's arithmetical function (A018804).
  * @author Georg Fischer
  */
 public class A370895 extends AlternatingSumSequence {

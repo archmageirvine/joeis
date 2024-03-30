@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A068999.
+ * A069002 Smallest integer d such that n^2 + (n-d)^2 is a prime number.
  * @author Sean A. Irvine
  */
 public class A069002 extends Sequence2 {

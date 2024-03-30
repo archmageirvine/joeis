@@ -5,7 +5,7 @@ import irvine.oeis.recur.GeneratingFunctionSequence;
 import irvine.oeis.transform.RevertTransformSequence;
 
 /**
- * A113207 Coefficients of inverse of Poincar√© series [or Poincare series] of the 5-Gonal operad.
+ * A113207 Coefficients of inverse of Poincar\u00e9 series [or Poincare series] of the 5-Gonal operad.
  * @author Georg Fischer
  */
 public class A113207 extends RevertTransformSequence {

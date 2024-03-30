@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069003.
+ * A069019 Smallest square k &gt; 1 such that n*k + 1 is also a square or 0 if no such term exists, i.e., when n is a square.
  * @author Sean A. Irvine
  */
 public class A069019 extends Sequence1 {

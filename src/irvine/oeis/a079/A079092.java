@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A079092 Euler&apos;s totient of (prime(n)+1)*(prime(n+1)+1)/4.
+ * A079092 Euler's totient of (prime(n)+1)*(prime(n+1)+1)/4.
  * @author Georg Fischer
  */
 public class A079092 extends DirectTransformSequence {

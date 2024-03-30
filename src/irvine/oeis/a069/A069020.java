@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069003.
+ * A069020 a(1) = 1; a(n) = smallest number of the form k*a(n-1) +1 divisible by n^2.
  * @author Sean A. Irvine
  */
 public class A069020 extends Sequence1 {

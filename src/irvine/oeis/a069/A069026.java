@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A069003.
+ * A069026 Smallest power of 4 with digit sum n, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A069026 extends Sequence1 {

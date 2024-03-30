@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A069003.
+ * A069028 Powers of 3 with strictly increasing sum of digits.
  * @author Sean A. Irvine
  */
 public class A069028 extends Sequence1 {

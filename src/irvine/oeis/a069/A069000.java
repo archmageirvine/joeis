@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068999 Numbers k such that k = (sum of distinct prime factors of k)*(product of distinct prime factors of k).
+ * A069000 Numbers k such that k * (digit complement of k) is a square.
  * @author Sean A. Irvine
  */
 public class A069000 extends Sequence1 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069003.
+ * A069004 Number of times n^2 + s^2 is prime for positive integers s &lt; n.
  * @author Sean A. Irvine
  */
 public class A069004 extends Sequence1 {

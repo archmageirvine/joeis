@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A069003.
+ * A069035 Smallest proper multiple of n with digit sum n.
  * @author Sean A. Irvine
  */
 public class A069035 extends Sequence1 {

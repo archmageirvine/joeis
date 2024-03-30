@@ -5,7 +5,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a174.A174221;
 
 /**
- * A293979 Start with 83; if even, divide by 2; if odd,
+ * A293979 Start with 83; if even, divide by 2; if odd, add next three primes: Orbit of 83 under iterations of A174221, the "PrimeLatz" map.
  * add next three primes: Orbit of 83 under iterations of A174221, the "PrimeLatz" map.
  * @author Georg Fischer
  */

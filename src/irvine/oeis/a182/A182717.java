@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.FilterSequence;
 
 /**
- * A182717 Number of 2&apos;s in all partitions of 2n+1 that do not contain 1 as a part.
+ * A182717 Number of 2's in all partitions of 2n+1 that do not contain 1 as a part.
  * @author Georg Fischer
  */
 public class A182717 extends FilterSequence {

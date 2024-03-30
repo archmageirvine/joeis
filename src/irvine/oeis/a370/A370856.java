@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A370856 Numbers m such that c(0) &lt;= c(1) &lt;= c(2), where c(k) = number of k&apos;s in the ternary representation of m.
+ * A370856 Numbers m such that c(0) &lt;= c(1) &lt;= c(2), where c(k) = number of k's in the ternary representation of m.
  * @author Georg Fischer
  */
 public class A370856 extends FilterNumberSequence {

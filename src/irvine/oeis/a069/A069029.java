@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A069003.
+ * A069029 Powers of 4 with strictly increasing sum of digits.
  * @author Sean A. Irvine
  */
 public class A069029 extends Sequence1 {

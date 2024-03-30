@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a045.A045882;
 
 /**
- * A069003.
+ * A069021 Start of the first occurrence of n consecutive numbers divisible by a square greater than 1.
  * @author Sean A. Irvine
  */
 public class A069021 extends PrependSequence {

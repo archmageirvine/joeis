@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069003.
+ * A069013 a(1)=a(2)=a(3)=1; for n &gt; 3, a(n) = floor(a(n-3) + a(n-2)/a(n-1)).
  * @author Sean A. Irvine
  */
 public class A069013 extends Sequence1 {

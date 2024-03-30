@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A225043 Pascal&apos;s triangle with row n reduced modulo n+1.
+ * A225043 Pascal's triangle with row n reduced modulo n+1.
  * @author Georg Fischer
  */
 public class A225043 extends LambdaTriangle {

@@ -6,7 +6,7 @@ import irvine.oeis.a163.A163511;
 import irvine.oeis.transform.DirectTransformSequence;
 
 /**
- * A324182 a(n) = A083254(A163511(n)), where A083254(n) = 2*phi(n) - n, the M√∂bius transform of the deficiency of n.
+ * A324182 a(n) = A083254(A163511(n)), where A083254(n) = 2*phi(n) - n, the M\u00f6bius transform of the deficiency of n.
  * @author Georg Fischer
  */
 public class A324182 extends DirectTransformSequence {

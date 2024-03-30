@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
- * A108767 Triangle read by rows: T(n,k) is number of paths from (0, 0) to (3n, 0) that stay in the first quadrant (but may touch the horizontal axis), consisting of steps u=(1, 1), d=(1,-2) and have k peaks (i.e., ud&apos;s).
+ * A108767 Triangle read by rows: T(n,k) is number of paths from (0,0) to (3n,0) that stay in the first quadrant (but may touch the horizontal axis), consisting of steps u=(1,1), d=(1,-2) and have k peaks (i.e., ud's).
  * @author Georg Fischer
  */
 public class A108767 extends LambdaTriangle {

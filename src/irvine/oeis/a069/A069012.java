@@ -8,7 +8,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a050.A050278;
 
 /**
- * A069003.
+ * A069012 Number of distinct representations of n as the ratio A/B, where A and B taken together are pandigital (i.e., contains all digits 0 through 9 once).
  * @author Sean A. Irvine
  */
 public class A069012 extends Sequence2 {
@@ -26,7 +26,7 @@ public class A069012 extends Sequence2 {
         if (pan == null) {
           break;
         }
-        long p = pan.longValue();
+        final long p = pan.longValue();
         for (long mod = 10, t = 1; mod <= 100000; mod *= 10, t *= 10) {
           final long b = p % mod;
           if (b >= t) { // Avoids leading 0's

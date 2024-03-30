@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A069003.
+ * A069032 Powers of 7 with strictly increasing sum of digits.
  * @author Sean A. Irvine
  */
 public class A069032 extends Sequence1 {

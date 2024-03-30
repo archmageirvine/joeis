@@ -5,7 +5,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a051.A051953;
 
 /**
- * A362008 Numbers whose Euler&apos;s cototient is divisible by 9.
+ * A362008 Numbers whose Euler's cototient is divisible by 9.
  * @author Georg Fischer
  */
 public class A362008 extends FilterPositionSequence {

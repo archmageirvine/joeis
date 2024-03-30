@@ -48,6 +48,7 @@ public class MultivariatePolynomialFieldTest extends TestCase {
     // Fairly strong test of adding and multiplying multivariate polynomials
     final Sequence s = new A019447();
     assertEquals(Z.ONE, s.next());
+    assertEquals(Z.ONE, s.next());
     assertEquals(Z.TWO, s.next());
     assertEquals(Z.FOUR, s.next());
     assertEquals(Z.valueOf(12), s.next());

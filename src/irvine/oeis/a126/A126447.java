@@ -12,7 +12,7 @@ public class A126447 extends A126445 {
 
   @Override
   public Z next() {
-    return a(++mN, 1);
+    return get(++mN, 1);
   }
 }
 

@@ -12,10 +12,13 @@ import irvine.oeis.a091.A091904;
  */
 public class A159277 extends Sequence0 {
 
+  private int mN = -1;
   final Sequence mA091904 = new A091904();
+
   @Override
   public Z next() {
-    return Z.EIGHT.multiply(mA091904.next());
+    ++mN;
+    return mN == 0 ? Z.ONE : Z.EIGHT.multiply(mA091904.next());
   }
 
 }

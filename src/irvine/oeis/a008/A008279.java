@@ -1,7 +1,6 @@
 package irvine.oeis.a008;
 
 import irvine.math.factorial.MemoryFactorial;
-import irvine.oeis.triangle.DirectArray;
 import irvine.oeis.triangle.LambdaTriangle;
 
 /**
@@ -9,7 +8,7 @@ import irvine.oeis.triangle.LambdaTriangle;
  * This is the function <code>fallfac(n, k)</code>.
  * @author Georg Fischer
  */
-public class A008279 extends LambdaTriangle implements DirectArray {
+public class A008279 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A008279() {

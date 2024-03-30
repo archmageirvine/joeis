@@ -9,10 +9,27 @@ import irvine.oeis.a008.A008300;
  */
 public class A058528 extends A008300 {
 
-  private int mN = -1;
+  private int mCol;
+  private int mN;
+
+  /** Construct the sequence. */
+  public A058528() {
+    this(0, 4);
+  }
+
+  /**
+   * Generic constructor with parameters.
+   * @param offset first index
+   * @param colNo column number
+   */
+  public A058528(final int offset, final int col) {
+    super(offset);
+    mN = offset - 1;
+    mCol = col;
+  }
 
   @Override
   public Z next() {
-    return t(++mN, 4);
+    return t(++mN, mCol);
   }
 }

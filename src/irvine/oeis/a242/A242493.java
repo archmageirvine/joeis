@@ -6,7 +6,7 @@ import irvine.oeis.a064.A064775;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A242493 a(n) is the number of not-sqrt-smooth numbers (&quot;jagged&quot; numbers) not exceeding n. This is the counting function of A064052.
+ * A242493 a(n) is the number of not-sqrt-smooth numbers ("jagged" numbers) not exceeding n. This is the counting function of A064052.
  * @author Georg Fischer
  */
 public class A242493 extends SimpleTransformSequence {

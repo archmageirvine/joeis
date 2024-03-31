@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A069036.
+ * A069041 Fibonacci numbers with at most two distinct digits.
  * @author Sean A. Irvine
  */
 public class A069041 extends FilterSequence {

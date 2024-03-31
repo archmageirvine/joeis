@@ -5,7 +5,7 @@ import irvine.factor.prime.Puma;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A144589 Prime(n-th &quot;prime nonprime&quot;).
+ * A144589 Prime(n-th "prime nonprime").
  * @author Georg Fischer
  */
 public class A144589 extends SimpleTransformSequence {

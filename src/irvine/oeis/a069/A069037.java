@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A069036.
+ * A069037 Smallest multiple of 4 with digit sum 4^n.
  * @author Sean A. Irvine
  */
 public class A069037 extends Sequence0 {

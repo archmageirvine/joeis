@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A133383 10 followed by 2n 9&apos;s.
+ * A133383 10 followed by 2n 9's.
  * @author Georg Fischer
  */
 public class A133383 extends LambdaSequence {

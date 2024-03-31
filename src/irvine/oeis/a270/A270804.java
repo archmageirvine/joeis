@@ -6,7 +6,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A270804 0 followed by the positions of the 1&apos;s in the inverse Thue-Morse sequence A270803.
+ * A270804 0 followed by the positions of the 1's in the inverse Thue-Morse sequence A270803.
  * @author Georg Fischer
  */
 public class A270804 extends PrependSequence {

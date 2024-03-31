@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A094946 a(n) is 10110(3 1&apos;s)0...0(n 1&apos;s).
+ * A094946 a(n) is 10110(3 1's)0...0(n 1's).
  * @author Georg Fischer
  */
 public class A094946 extends TupleTransformSequence {

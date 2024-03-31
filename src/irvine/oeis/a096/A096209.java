@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a198.A198700;
 
 /**
- * A096209 Primes of the form 10 followed by 9&apos;s only.
+ * A096209 Primes of the form 10 followed by 9's only.
  * @author Georg Fischer
  */
 public class A096209 extends FilterSequence {

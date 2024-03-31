@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A177372 Fibonacci numbers whose decimal expansion does not contain any digit 7
+ * A177372 Fibonacci numbers whose decimal expansion does not contain any digit 7.
  * @author Georg Fischer
  */
 public class A177372 extends FilterSequence {

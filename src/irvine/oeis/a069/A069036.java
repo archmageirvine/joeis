@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A069036.
+ * A069036 Smallest multiple of 2 with digit sum 2^n.
  * @author Sean A. Irvine
  */
 public class A069036 extends Sequence0 {

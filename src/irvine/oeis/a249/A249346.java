@@ -5,7 +5,7 @@ import irvine.oeis.a187.A187059;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A249346 The exponent of the highest power of 6 dividing the product of the elements on the n-th row of Pascal&apos;s triangle.
+ * A249346 The exponent of the highest power of 6 dividing the product of the elements on the n-th row of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A249346 extends TupleTransformSequence {

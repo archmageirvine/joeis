@@ -11,23 +11,20 @@ import irvine.oeis.AbstractSequence;
  */
 public class A003586 extends AbstractSequence {
 
+  private final TreeSet<Z> mPriority = new TreeSet<>();
+
   /**
    * Constructor with offset.
    * @param offset first index
    */
   protected A003586(final int offset) {
     super(offset);
+    mPriority.add(Z.ONE);
   }
 
   /** Construct the sequence. */
   public A003586() {
-    super(1);
-  }
-
-  private final TreeSet<Z> mPriority = new TreeSet<>();
-
-  {
-    mPriority.add(Z.ONE);
+    this(1);
   }
 
   @Override

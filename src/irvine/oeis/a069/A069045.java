@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069044.
+ * A069045 Denominator(sum(i=1,n,1/i^4))/denominator(sum(i=1,n,1/i)).
  * @author Sean A. Irvine
  */
 public class A069045 extends Sequence1 {

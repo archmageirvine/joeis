@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069044.
+ * A069058 Numbers n such that A017666(n)=phi(n).
  * @author Sean A. Irvine
  */
 public class A069058 extends Sequence1 {

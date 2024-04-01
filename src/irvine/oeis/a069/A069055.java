@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003586;
 
 /**
- * A069044.
+ * A069055 Largest n-digit number with only prime divisors 2 or 3 (i.e., of the form 2^a * 3^b).
  * @author Sean A. Irvine
  */
 public class A069055 extends A003586 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069044.
+ * A069054 a(1)=0 a(2)=1 a(n)=concatenate(a(n-1)a(n-2)...a(1))-a(n-1).
  * @author Sean A. Irvine
  */
 public class A069054 extends Sequence1 {

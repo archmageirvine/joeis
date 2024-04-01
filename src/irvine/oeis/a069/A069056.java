@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069044.
+ * A069056 Numbers k such that Sum_{d|k} d^2*mu(d) divides k^2.
  * @author Sean A. Irvine
  */
 public class A069056 extends Sequence1 {

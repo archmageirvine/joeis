@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A069044.
+ * A069063 Composite n such that Sum phi(d)^2; d|n &gt; n(n+1)/2.
  * @author Sean A. Irvine
  */
 public class A069063 extends A002808 {

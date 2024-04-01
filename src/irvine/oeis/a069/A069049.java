@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069044.
+ * A069049 Numbers k such that 2^k mod k = 2^phi(k) mod phi(k).
  * @author Sean A. Irvine
  */
 public class A069049 extends Sequence1 {

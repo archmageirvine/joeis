@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069044.
+ * A069062 Numbers k such that k^2-1 and k^2+1 have the same number of positive divisors.
  * @author Sean A. Irvine
  */
 public class A069062 extends Sequence1 {

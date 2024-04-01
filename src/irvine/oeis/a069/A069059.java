@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a014.A014567;
 
 /**
- * A069044.
+ * A069059 Numbers k such that k and sigma(k) are not relatively prime.
  * @author Sean A. Irvine
  */
 public class A069059 extends ComplementSequence {

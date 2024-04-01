@@ -13,7 +13,7 @@ public class A327140 extends FilterNumberSequence {
   /** Construct the sequence. */
   public A327140() {
     super(1, 1, k -> {
-      final CR c2k[] = new CR[] {CR.valueOf(2 * k).cos(), CR.valueOf(2 * k + 2).cos(), CR.valueOf(2 * k + 4).cos(), CR.valueOf(2 * k + 6).cos()};
+      final CR[] c2k = {CR.valueOf(2 * k).cos(), CR.valueOf(2 * k + 2).cos(), CR.valueOf(2 * k + 4).cos(), CR.valueOf(2 * k + 6).cos()};
       return c2k[0].compareTo(c2k[1]) > 0 && c2k[1].compareTo(c2k[2]) > 0 && c2k[2].compareTo(c2k[3]) < 0;
     });
   }

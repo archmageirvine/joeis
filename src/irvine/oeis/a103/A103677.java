@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A103677 Numbers m such that in binary representation m! doesn&apos;t contain 5!.
+ * A103677 Numbers m such that in binary representation m! doesn't contain 5!.
  * @author Georg Fischer
  */
 public class A103677 extends FilterNumberSequence {

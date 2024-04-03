@@ -2,23 +2,23 @@ package irvine.oeis.a069;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A069066 Sigma(n)+phi(n) is a triangular number.
+ * A069081 Numbers n such that sigma(n)/tau(n) has denominator 2.
  * @author Sean A. Irvine
  */
-public class A069066 extends Sequence1 {
+public class A069081 extends Sequence1 {
 
-  private long mN = 2;
+  private long mN = 0;
 
   @Override
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      if (ZUtils.isTriangular(fs.sigma().add(fs.phi()))) {
+      if (Z.TWO.equals(new Q(fs.sigma(), fs.sigma0()).den())) {
         return Z.valueOf(mN);
       }
     }

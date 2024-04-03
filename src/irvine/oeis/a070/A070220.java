@@ -6,7 +6,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A070220 Primes of the form n (written in base 10) followed by n 1&apos;s.
+ * A070220 Primes of the form n (written in base 10) followed by n 1's.
  * @author Georg Fischer
  */
 public class A070220 extends FilterSequence {

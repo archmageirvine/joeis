@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A090077 In binary expansion of n: reduce contiguous blocks of 1&apos;s to 1.
+ * A090077 In binary expansion of n: reduce contiguous blocks of 1's to 1.
  * @author Georg Fischer
  */
 public class A090077 extends LambdaSequence {

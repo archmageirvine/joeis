@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A090080 In binary expansion of n-th prime: reduce contiguous blocks of 0&apos;s to 0 and contiguous blocks of 1&apos;s to 1.
+ * A090080 In binary expansion of n-th prime: reduce contiguous blocks of 0's to 0 and contiguous blocks of 1's to 1.
  * @author Georg Fischer
  */
 public class A090080 extends SimpleTransformSequence {

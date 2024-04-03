@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.LambdaTable;
 
 /**
- * A128727 Triangle read by rows: T(n,k) is the number of skew Dyck paths of semilength n having k DDU and LDU&apos;s.
+ * A128727 Triangle read by rows: T(n,k) is the number of skew Dyck paths of semilength n having k DDU and LDU's.
  * @author Georg Fischer
  */
 public class A128727 extends LambdaTable {

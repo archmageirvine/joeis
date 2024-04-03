@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069065.
+ * A069069 Numbers n such that n*phi(n-1) is a perfect square.
  * @author Sean A. Irvine
  */
 public class A069069 extends Sequence1 {

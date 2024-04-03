@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A070271 a(n) = n^reverse(n) (ignore leading 0&apos;s).
+ * A070271 a(n) = n^reverse(n) (ignore leading 0's).
  * @author Georg Fischer
  */
 public class A070271 extends LambdaSequence {

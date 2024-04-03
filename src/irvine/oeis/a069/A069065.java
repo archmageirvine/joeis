@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A069065.
+ * A069065 Sigma(n)-phi(n) is a triangular number.
  * @author Sean A. Irvine
  */
 public class A069065 extends Sequence1 {

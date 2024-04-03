@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A069065.
+ * A069068 Composite numbers k+1 such that k*phi(k+1) is a perfect square.
  * @author Sean A. Irvine
  */
 public class A069068 extends A002808 {

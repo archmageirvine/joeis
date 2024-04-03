@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A103675 a(n) = 1 if the binary representation of n! contains 7! (bit string &quot;1001110110000&quot;), otherwise a(n) = 0.
+ * A103675 a(n) = 1 if the binary representation of n! contains 7! (bit string "1001110110000"), otherwise a(n) = 0.
  * @author Georg Fischer
  */
 public class A103675 extends LambdaSequence {

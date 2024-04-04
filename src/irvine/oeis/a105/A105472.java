@@ -14,6 +14,6 @@ public class A105472 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A105472() {
-    super(0, n -> Fibonacci.fibonacci(n).mod(Z.valueOf(100)).divide(Z.TEN));
+    super(0, n -> Z.valueOf(Fibonacci.fibonacci(n, 100) / 10));
   }
 }

@@ -4,7 +4,6 @@ package irvine.oeis.a120;
 import irvine.factor.prime.Puma;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Integers;
-import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -16,6 +15,6 @@ public class A120467 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A120467() {
-    super(0, n -> Integers.SINGLETON.product(0, n, i -> Puma.primeZ(i + 1).pow(Fibonacci.fibonacci(i).mod(Z.TWO))));
+    super(0, n -> Integers.SINGLETON.product(0, n, i -> Puma.primeZ(i + 1).pow(Fibonacci.fibonacci(i, 2))));
   }
 }

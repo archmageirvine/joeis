@@ -1,12 +1,14 @@
 package irvine.math.z;
 
-import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 import irvine.math.LongUtils;
-import irvine.math.r.DoubleUtils;
+import irvine.math.api.Matrix;
+import irvine.math.group.IntegersMod;
+import irvine.math.group.MatrixRing;
+import irvine.math.matrix.DefaultMatrix;
 
 /**
  * Routines relating to Fibonacci and Lucas numbers.
@@ -208,102 +210,19 @@ public final class Fibonacci  {
     return lucas(--estimatedIndex).equals(n) ? estimatedIndex : -estimatedIndex;
   }
 
-  private static void lucasSnfsPoly5(final int n, final Z c, final PrintStream out) {
-    assert n % 5 != 0;
-    // This is the default polynomial in most cases.
-    // Write n = 5*k+r, r in {-2,-1,1,2}
-    final int kk = n / 5;
-    final int rr = n - kk * 5;
-    final int k, r;
-    if (rr > 2) {
-      r = rr - 5;
-      k = kk + 1;
-    } else {
-      r = rr;
-      k = kk;
-    }
-
-    final int c0;
-    out.println(c.toString());
-    out.println("X5 1");
-    out.println("X4 0");
-    switch (r) {
-    case -1:
-      out.println("X3 10");
-      out.println("X2 10");
-      out.println("X1 10");
-      c0 = 3;
-      break;
-    case 1:
-      out.println("X3 10");
-      out.println("X2 -10");
-      out.println("X1 10");
-      c0 = -3;
-      break;
-    default:
-      assert r == -2 || r == 2;
-      out.println("X3 -10");
-      out.println("X2 30");
-      out.println("X1 -40");
-      c0 = 21;
-      break;
-    }
-    out.println("X0 " + c0);
-    final Z y0 = lucas(k + r);
-    final Z y1 = lucas(k);
-    out.println("Y1 " + y1);
-    out.println("Y0 " + y0.negate());
-    out.println("M " + y0.modMultiply(y1.modInverse(c), c));
-    out.println("# skew " + DoubleUtils.NF4.format(Math.pow(Math.abs(c0), 0.2)));
-  }
-
-  private static final int[][][] LUCAS_COEFFS = {
-    null,
-    null,
-    {{3, -6, 30, 20, 45, 24, 7}, {3, -6, 30, 20, 45, 24, 7}, {3, -6, 30, 20, 45, 24, 7}},
-    {{19, -63, 105, -85, 45, -3, 1}, {6, -27, 45, -15, 30, 3, 4}, {4, -3, 30, 15, 45, 27, 6}},
-  };
-
-  private static void lucasSnfsPolyP(final int n, final Z c, final PrintStream out, final int p) {
-    assert n % p == 0;
-    // Write n = pm, m = 3*k+r, r in {0,1,2}
-    final int m = n / p;
-    final int k = m / 3;
-    final int r = m - 3 * k;
-    out.println(c.toString());
-    for (int j = 6; j >= 0; --j) {
-      out.println("X" + j + " " + LUCAS_COEFFS[p][r][j]);
-    }
-    final Z y0 = fibonacci(k + 1);
-    final Z y1 = fibonacci(k);
-    out.println("Y1 " + y1);
-    out.println("Y0 " + y0.negate());
-    out.println("M " + y0.modMultiply(y1.modInverse(c), c));
-    out.println("# skew " + DoubleUtils.NF4.format(Math.pow(Math.abs(LUCAS_COEFFS[p][r][0] / (double) LUCAS_COEFFS[p][r][6]), 0.2)));
-  }
-
   /**
-   * Print potential SNFS polynomials for a Lucas number.
-   * @param n Lucas index
-   * @param c number to be factored
-   * @param out output stream
+   * Compute a Fibonacci number mod <code>m</code>.
+   * @param n index
+   * @param m modulus
+   * @return Fibonacci number
    */
-  public static void lucasSnfsPoly(final int n, final Z c, final PrintStream out) {
-    if (!lucas(n).mod(c).isZero()) {
-      throw new ArithmeticException("Composite does not divide claimed Lucas number");
+  public static long fibonacci(final long n, final long m) {
+    if (m < 1) {
+      throw new IllegalArgumentException();
     }
-    if (n % 5 == 0 && (n & 1) == 1) {
-      out.println("Use Aurifeuillian factorization for this number.");
-    }
-    if (n % 5 != 0) {
-      lucasSnfsPoly5(n, c, out);
-    }
-    if (n % 2 == 0) {
-      lucasSnfsPolyP(n, c, out, 2);
-    }
-    if (n % 3 == 0) {
-      lucasSnfsPolyP(n, c, out, 3);
-    }
+    final MatrixRing<Z> ring = new MatrixRing<>(2, new IntegersMod(m));
+    final Matrix<Z> mat = new DefaultMatrix<>(new Z[][] {{Z.ONE, Z.ONE}, {Z.ONE, Z.ZERO}}, Z.ZERO);
+    return ring.pow(mat, n).get(0, 1).longValueExact() % m;
   }
 
   /**
@@ -315,8 +234,6 @@ public final class Fibonacci  {
       for (int k = 1; k < args.length; ++k) {
         System.out.println(lucas(Integer.parseInt(args[k])));
       }
-    } else if (args.length > 1 && "-lp".equals(args[0])) {
-      lucasSnfsPoly(Integer.parseInt(args[1]), new Z(args[2]), System.out);
     } else {
       for (final String s : args) {
         System.out.println(fibonacci(Integer.parseInt(s)));

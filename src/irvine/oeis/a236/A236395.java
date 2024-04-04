@@ -13,6 +13,6 @@ public class A236395 extends A000040 {
   @Override
   public Z next() {
     final Z p = super.next();
-    return Fibonacci.fibonacci(p.intValue()).mod(p.square());
+    return Z.valueOf(Fibonacci.fibonacci(p.longValueExact(), p.square().longValueExact()));
   }
 }

@@ -1,8 +1,5 @@
 package irvine.math.z;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
 import junit.framework.TestCase;
 
 /**
@@ -107,77 +104,5 @@ public class FibonacciTest extends TestCase {
     assertEquals(5000, Fibonacci.inverseLucas(Fibonacci.lucas(5000)));
     assertEquals(10000, Fibonacci.inverseLucas(Fibonacci.lucas(10000)));
     assertEquals(50000, Fibonacci.inverseLucas(Fibonacci.lucas(50000)));
-  }
-  
-  private static final String LS = System.lineSeparator();
-  private static final String SNFS_LUCAS_100 = ""
-      + "792070839848372253127" + LS
-      + "X6 7" + LS
-      + "X5 24" + LS
-      + "X4 45" + LS
-      + "X3 20" + LS
-      + "X2 30" + LS
-      + "X1 -6" + LS
-      + "X0 3" + LS
-      + "Y1 987" + LS
-      + "Y0 -1597" + LS
-      + "M 11179" + LS
-      + "# skew 0.8441" + LS
-      ;
-
-  public void testSnfsPolyLucas() {
-    final ByteArrayOutputStream bos = new ByteArrayOutputStream();
-    try (final PrintStream out = new PrintStream(bos)) {
-      Fibonacci.lucasSnfsPoly(100, Fibonacci.lucas(100), out);
-    }
-    final String s = bos.toString();
-    assertEquals(SNFS_LUCAS_100, s);
-  }
-  
-  private static final String SNFS_LUCAS_102 = ""
-      + "2073668380220713167378" + LS
-      + "X5 1" + LS
-      + "X4 0" + LS
-      + "X3 -10" + LS
-      + "X2 30" + LS
-      + "X1 -40" + LS
-      + "X0 21" + LS
-      + "Y1 15127" + LS
-      + "Y0 -39603" + LS
-      + "M 2073531296305844342553" + LS
-      + "# skew 1.8384" + LS
-      + "2073668380220713167378" + LS
-      + "X6 7" + LS
-      + "X5 24" + LS
-      + "X4 45" + LS
-      + "X3 20" + LS
-      + "X2 30" + LS
-      + "X1 -6" + LS
-      + "X0 3" + LS
-      + "Y1 1597" + LS
-      + "Y0 -2584" + LS
-      + "M 1677632778487890677680" + LS
-      + "# skew 0.8441" + LS
-      + "2073668380220713167378" + LS
-      + "X6 4" + LS
-      + "X5 3" + LS
-      + "X4 30" + LS
-      + "X3 -15" + LS
-      + "X2 45" + LS
-      + "X1 -27" + LS
-      + "X0 6" + LS
-      + "Y1 89" + LS
-      + "Y0 -144" + LS
-      + "M 512592183874783030140" + LS
-      + "# skew 1.0845" + LS
-      ;
-
-  public void testSnfsPolyLucas102() {
-    final ByteArrayOutputStream bos = new ByteArrayOutputStream();
-    try (final PrintStream out = new PrintStream(bos)) {
-      Fibonacci.lucasSnfsPoly(102, Fibonacci.lucas(102), out);
-    }
-    final String s = bos.toString();
-    assertEquals(SNFS_LUCAS_102, s);
   }
 }

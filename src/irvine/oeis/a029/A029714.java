@@ -19,7 +19,7 @@ public class A029714 extends A002034 {
 
   @Override
   public Z next() {
-    mA = mA.add(kempner(mN));
+    mA = mA.add(a(mN));
     mN = mN.multiply(3);
     return mA;
   }

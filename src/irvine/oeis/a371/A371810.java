@@ -1,13 +1,13 @@
-package irvine.oeis.a069;
+package irvine.oeis.a371;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069118.
+ * A371810.
  * @author Sean A. Irvine
  */
-public class A069124 extends Sequence1 {
+public class A371810 extends Sequence1 {
 
   private int[][] mG = {{1}};
   private int mN = 0;
@@ -25,19 +25,12 @@ public class A069124 extends Sequence1 {
       }
     }
     mG = g;
-    //System.out.println(Arrays.deepToString(mG));
   }
 
   private boolean isStable(final int[] wives, final int t) {
-//    final int[] husbands = new int[wives.length]; // todo if this is needed construct it incrementally
-//    for (int k = 0; k < wives.length; ++k) {
-//      husbands[wives[k]] = k;
-//    }
     for (int m = 0; m < t; ++m) {
       final int f = wives[m];
       final int s = mG[m][f]; // preference for current pairing
-
-      // this version is close to expected numbers
       for (int k = 0; k < t; ++k) {
         if (k != m) {
           final int j = wives[k];
@@ -46,13 +39,6 @@ public class A069124 extends Sequence1 {
           }
         }
       }
-
-      // this seems to match discussion but gets wrong answer
-//      for (int k = 0; k < t; ++k) {
-//        if (mG[m][k] < s && mG[husbands[k]][k] > s) {
-//          return false;
-//        }
-//      }
     }
     return true;
   }
@@ -67,7 +53,6 @@ public class A069124 extends Sequence1 {
     for (int f = 0; f < mN; ++f) {
       final long bit = 1L << f;
       if ((usedFemales & bit) == 0) {
-        // todo incremental stability check
         wives[male] = f;
         if (isStable(wives, male + 1)) {
           countStable(male + 1, usedFemales | bit, wives);

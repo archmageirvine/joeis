@@ -22,8 +22,7 @@ public final class CubicCongruence {
   private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
   private static int sIndent = 0; // Used only for printing during verbose
 
-  // Function to check if g is a primitive root modulo p
-  public static boolean isPrimitiveRoot(final Z g, final Z p, final Z phi, final Z[] phif) {
+  private static boolean isPrimitiveRoot(final Z g, final Z p, final Z phi, final Z[] phif) {
     for (final Z factor : phif) {
       if (g.modPow(phi.divide(factor), p).equals(Z.ONE)) {
         return false;

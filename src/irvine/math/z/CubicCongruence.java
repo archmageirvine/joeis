@@ -1,8 +1,9 @@
 package irvine.math.z;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
@@ -15,42 +16,64 @@ import irvine.util.string.StringUtils;
  */
 public final class CubicCongruence {
 
-  // WARNING: This code likely contains many deficiencies and may yield incorrect results.
-
   private CubicCongruence() {
   }
 
   private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
   private static int sIndent = 0; // Used only for printing during verbose
 
+  // Function to check if g is a primitive root modulo p
+  public static boolean isPrimitiveRoot(final Z g, final Z p, final Z phi, final Z[] phif) {
+    for (final Z factor : phif) {
+      if (g.modPow(phi.divide(factor), p).equals(Z.ONE)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  private static Z findPrimitiveRoot(final Z p) {
+    // Check for small primes
+    if (p.equals(Z.TWO)) {
+      return Z.ONE;
+    }
+    if (p.equals(Z.THREE)) {
+      return Z.TWO;
+    }
+    // Find the smallest primitive root using brute force
+    final Z phi = p.subtract(1);
+    final Z[] phif = Jaguar.factor(p.subtract(1)).toZArray();
+    for (Z i = Z.TWO; i.compareTo(p) < 0; i = i.add(Z.ONE)) {
+      if (isPrimitiveRoot(i, p, phi, phif)) {
+        return i;
+      }
+    }
+    return Z.NEG_ONE;
+  }
+
   /**
    * Solve <code>x^3=a (mod p)</code>
-   * @param a ant
+   * @param a argument
    * @param p modulus
    * @return solutions
    */
-  public static Collection<Z> solveP(Z a, final Z p) {
+  public static Collection<Z> solveP(final Z a, final Z p) {
     if (VERBOSE) {
       System.out.println(StringUtils.rep(' ', sIndent) + "Solving x^3=" + a + " (mod " + p + ")");
     }
-    // This could be flaky
-    if (a.signum() < 0) {
-      a = a.add(p);
-    }
     final TreeSet<Z> res = new TreeSet<>();
-    Z x = Z.ONE;
-    while (x.compareTo(p) < 0) {
-      if (x.modPow(Z.THREE, p).equals(a)) {
-        res.add(x);
-        if (!Z.ONE.equals(x)) {
-          res.add(x.modSquare(p)); // 1, x, x^2 are solutions
-          if (VERBOSE) {
-            System.out.println(StringUtils.rep(' ', sIndent) + " -> " + res);
-          }
-          return res;
-        }
-      }
-      x = x.add(1);
+
+    final Z g = findPrimitiveRoot(p);
+    final Z p1 = p.subtract(1);
+    final Z q = p1.divide(p1.gcd(Z.THREE));
+    final Z b = g.modPow(q, p);
+    final Z c = g.modPow(q.multiply(Z.valueOf(2)), p);
+    final Z ap = a.mod(p);
+    if (b.modPow(Z.THREE, p).equals(ap)) {
+      res.add(b);
+    }
+    if (c.modPow(Z.THREE, p).equals(ap)) {
+      res.add(c);
     }
     if (VERBOSE) {
       System.out.println(StringUtils.rep(' ', sIndent) + " -> " + res);
@@ -77,16 +100,9 @@ public final class CubicCongruence {
       return res;
     }
 
-    // This is not efficient, Hensel's Lemma should be applicable
-    final Z pe = p.pow(e);
-    final ArrayList<Z> lift = new ArrayList<>();
-    for (Z soln : res) {
-      do {
-        if (soln.modPow(Z.THREE, pe).equals(a)) {
-          lift.add(soln);
-        }
-        soln = soln.add(p);
-      } while (soln.compareTo(pe) <= 0);
+    final TreeSet<Z> lift = new TreeSet<>();
+    for (final Z soln : res) {
+      lift.addAll(lift(a, p, e, soln));
     }
     if (VERBOSE) {
       sIndent -= 2;
@@ -94,6 +110,54 @@ public final class CubicCongruence {
     }
     return lift;
   }
+
+  private static Set<Z> lift(final Z a, final Z p, final long e, final Z r) {
+    Set<Z> solutions = new HashSet<>();
+    solutions.add(r);
+    final Z pe = p.pow(e); // p^e
+
+    Z pk = p;
+    for (long k = 2; k <= e; k++) {
+      final Z ppk = pk;
+      pk = pk.multiply(p);
+      final Set<Z> newSolutions = new HashSet<>();
+      for (final Z residue : solutions) {
+        // Compute f(residue) = residue^3 - a
+        final Z fx = residue.modPow(Z.valueOf(3), pe).subtract(a).mod(pe);
+        // Compute f'(residue) = 3 * residue^2
+        final Z fxPrime = residue.modSquare(pk).multiply(3).mod(pk);
+
+        // If f'(residue) is not invertible modulo pk, handle the special case
+        if (!fxPrime.gcd(pk).equals(Z.ONE)) {
+          // Find additional residues for f(residue) ≡ 0 (mod pk) by adding multiples of p
+          Z liftedResidue = residue;
+          while (liftedResidue.compareTo(pk) < 0) {
+            if (liftedResidue.modPow(Z.THREE, pk).subtract(a).mod(pk).isZero()) {
+              newSolutions.add(liftedResidue);
+            }
+            liftedResidue = liftedResidue.add(ppk);
+          }
+        } else {
+          // Compute the modular inverse of f'(residue) modulo pk
+          final Z inverse = fxPrime.modInverse(pk);
+
+          // Compute Delta residue = -(f(residue)/f'(residue)) mod pk
+          final Z deltaResidue = fx.modMultiply(inverse, pk).negate();
+
+          // Update residue for next iteration: res = residue + Delta residue
+          final Z res = residue.add(deltaResidue).mod(pk);
+
+          // If res satisfies f(res) = 0 (mod pk), add it to newSolutions
+          if (res.modPow(Z.THREE, pk).subtract(a).mod(pk).isZero()) {
+            newSolutions.add(res);
+          }
+        }
+      }
+      solutions = newSolutions;
+    }
+    return solutions;
+  }
+
 
   /**
    * Solve <code>x^3 = a (mod n)</code>

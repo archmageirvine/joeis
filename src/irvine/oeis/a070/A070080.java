@@ -31,17 +31,17 @@ public class A070080 extends AbstractSequence {
 
   private long mN;
   private int mMode; // mode of operation, type of the target terms, one of the following:
-  public final static int COUNT = 0; // count occurrences of condition for the triangles with perimeter n
-  public final static int INDEX = 1; // select indexes in arrays [A070080,A070081,A070082]
-  public final static int SIDE_A = 2;
-  public final static int SIDE_B = 3;
-  public final static int SIDE_C = 4;
-  public final static int PERIMETER = 5; // a + b + c
-  public final static int GCD = 6;
-  public final static int SHAPE = 7; // a^2 + b^2 - c^2
-  public final static int AREA = 8;
-  public final static int INRAD = 9;
-  public final static int SQUARE16 = 10;
+  public static final int COUNT = 0; // count occurrences of condition for the triangles with perimeter n
+  public static final int INDEX = 1; // select indexes in arrays [A070080,A070081,A070082]
+  public static final int SIDE_A = 2;
+  public static final int SIDE_B = 3;
+  public static final int SIDE_C = 4;
+  public static final int PERIMETER = 5; // a + b + c
+  public static final int GCD = 6;
+  public static final int SHAPE = 7; // a^2 + b^2 - c^2
+  public static final int AREA = 8;
+  public static final int INRAD = 9;
+  public static final int SQUARE16 = 10;
 
   protected long mA; // length of side a
   protected long mB; // length of side b
@@ -145,7 +145,6 @@ public class A070080 extends AbstractSequence {
         advance();
         if (evaluate(new Long[] {mA, mB, mC})) {
           switch (mMode) {
-            default:
             case SIDE_A:
               return Z.valueOf(mA);
             case SIDE_B:
@@ -164,6 +163,8 @@ public class A070080 extends AbstractSequence {
               return Z.valueOf(Math.round(getInRadius(new Long[] {mA, mB, mC})));
             case SQUARE16:
               return getSquare16(new Long[] {mA, mB, mC});
+            default:
+              throw new RuntimeException();
           }
         }
       }
@@ -321,11 +322,11 @@ public class A070080 extends AbstractSequence {
       }
       if (mPeri <= periEnd) {
         final StringBuilder sb = new StringBuilder(128);
-        final Long[] s = new Long[] {mA, mB, mC};
+        final Long[] s = {mA, mB, mC};
         sb.append(String.format("| %5d | %5d |%4d%4d%4d |", n, mPeri, mA, mB, mC));
         sb.append(String.format("%6d |%6d |", LongUtils.gcd(mA, mB, mC), mA * mA + mB * mB - mC * mC));
-        String H = String.format("%12.6f", getArea(s)).replace(',', '.');
-        String I = String.format("%8.6f", getInRadius(s)).replace(',', '.');
+        String h = String.format("%12.6f", getArea(s)).replace(',', '.');
+        String i = String.format("%8.6f", getInRadius(s)).replace(',', '.');
         if (isScalene(s)) {
           sb.append(" s");
         }
@@ -351,7 +352,7 @@ public class A070080 extends AbstractSequence {
         }
         sb.append(hasIntArea(s) ? " H" : "  ");
         sb.append(hasIntInRadius(s) ? " I" : "  ");
-        sb.append(" | " + H + " " + I);
+        sb.append(" | " + h + " " + i);
         System.out.println(sb);
       }
     }

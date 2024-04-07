@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069098.
+ * A069106 Composite numbers k such that k divides F(k-1) where F(j) are the Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A069106 extends Sequence1 {

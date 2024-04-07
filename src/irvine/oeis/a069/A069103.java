@@ -4,7 +4,7 @@ import irvine.factor.prime.Puma;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A069101 a(1) = 2; a(2) = 2; a(n) = Prime[a(n-1) + a(n-2)] if n &gt; 2.
+ * A069103 a(1) = 1; a(2) = 1; a(n) = prime(a(n-1)) + prime(a(n-2)) if n &gt; 2.
  * @author Sean A. Irvine
  */
 public class A069103 extends TupleTransformSequence {

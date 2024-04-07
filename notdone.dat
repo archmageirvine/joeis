@@ -2350,3 +2350,5 @@ A068592 Number of different Euler multigraphs with n edges, loops forbidden.
 A068599 Number of n-uniform tilings
 A068979 Number of elements of rank n in the free lattice on three generators.
 A069001 Grundy value of a 3 X n rectangle in the game of Chomp.
+A069124 Pseudo-Latin stable matchings (possibly erroneous, cf. A371810)
+A069156 A certain class of stable matchings

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
- * A069098.
+ * A069110 Squarefree part of F(n) (the Fibonacci numbers): the smallest number such that a(n)*F(n) is a square.
  * @author Sean A. Irvine
  */
 public class A069110 extends Sequence1 {

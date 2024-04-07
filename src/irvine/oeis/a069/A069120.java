@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069118.
+ * A069120 Integers of the form k!*sum(i=1..k, 1/(i*2^i) ).
  * @author Sean A. Irvine
  */
 public class A069120 extends Sequence1 {

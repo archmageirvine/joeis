@@ -1,6 +1,6 @@
 package irvine.oeis;
 
-import java.lang.reflect.InvocationTargetException; 
+import java.lang.reflect.InvocationTargetException;
 
 import irvine.math.z.Z;
 
@@ -31,12 +31,21 @@ public class AlternatingSumSequence extends AbstractSequence {
   }
 
   /**
-   * Constructor with offset, another sequence and a sign pattern and default offset 0.
+   * Constructor another sequence and a sign pattern and default offset 0.
    * @param seq sequence to compute partial sums of
    * @param pattern pattern for the signs, for example "+-" or "--++"
    */
   public AlternatingSumSequence(final Sequence seq, final String pattern) {
     this(0, seq, pattern);
+  }
+
+  /**
+   * Constructor with offset and pattern "+-".
+   * @param offset sequence offset
+   * @param seq sequence to compute partial sums of
+   */
+  public AlternatingSumSequence(final int offset, final Sequence seq) {
+    this(offset, seq, "+-");
   }
 
   @Override

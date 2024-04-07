@@ -9,7 +9,7 @@ import irvine.oeis.Sequence2;
 import irvine.oeis.a002.A002034;
 
 /**
- * A069098.
+ * A069098 Number of minimal monic annihilator polynomials over the ring of integers modulo n.
  * @author Sean A. Irvine
  */
 public class A069098 extends Sequence2 {

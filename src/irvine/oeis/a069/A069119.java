@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069118.
+ * A069119 Numbers n such that n!*Sum_{i=1..n} 1/(i*2^i) is an integer.
  * @author Sean A. Irvine
  */
 public class A069119 extends Sequence1 {

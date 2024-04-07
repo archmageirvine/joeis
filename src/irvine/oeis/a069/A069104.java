@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
 
 /**
- * A069098.
+ * A069104 Numbers m such that m divides Fibonacci(m+1).
  * @author Sean A. Irvine
  */
 public class A069104 extends Sequence1 {

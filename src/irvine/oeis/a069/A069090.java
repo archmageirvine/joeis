@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A069090.
+ * A069090 Primes none of whose proper initial segments are primes.
  * @author Sean A. Irvine
  */
 public class A069090 extends A000040 {

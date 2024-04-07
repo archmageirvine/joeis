@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069118.
+ * A069118 Let D(n,s) denotes the denominator of sum(k=1,n,1/k^s); sequence gives values of n such that D(n,4)/D(n,2) is a perfect square.
  * @author Sean A. Irvine
  */
 public class A069118 extends Sequence1 {

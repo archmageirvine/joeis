@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A069098.
+ * A069116 Composite k such that the squarefree part of k is greater than sqrt(k).
  * @author Sean A. Irvine
  */
 public class A069116 extends FilterSequence {

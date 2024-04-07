@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069098.
+ * A069107 Composite numbers k that divide Fibonacci(k+1).
  * @author Sean A. Irvine
  */
 public class A069107 extends Sequence1 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A069118.
+ * A069123 Triangle formed as follows: For n-th row, n &gt;= 0, record the A000041(n) partitions of n; for each partition, write down number of ways to arrange the parts.
  * @author Sean A. Irvine
  */
 public class A069123 extends Sequence0 {

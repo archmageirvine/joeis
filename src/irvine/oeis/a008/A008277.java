@@ -24,7 +24,7 @@ public class A008277 extends AbstractSequence {
   }
 
   private long mN = 0;
-  private long mM = 0;
+  protected long mM = 0;
 
   @Override
   public Z next() {

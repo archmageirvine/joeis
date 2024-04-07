@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069057 Numbers k such that the numerator of Sum_{d|k} 1/d &gt; 2k.
+ * A069096 Numbers k such that the numerator of Sum_{d|k} 1/d &gt; 3*k.
  * @author Sean A. Irvine
  */
 public class A069096 extends Sequence1 {

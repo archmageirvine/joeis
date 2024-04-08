@@ -31,5 +31,10 @@ class CrZ extends CR {
     }
     return super.pow(e);
   }
+
+  @Override
+  public int signum() {
+    return mValue.signum();
+  }
 }
 

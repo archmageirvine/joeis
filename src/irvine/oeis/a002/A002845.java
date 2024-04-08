@@ -105,7 +105,7 @@ public class A002845 extends Sequence1 {
   }
 
   private int mN = 0;
-  private long mStart = System.currentTimeMillis();
+  private final long mStart = System.currentTimeMillis();
 
   @Override
   public Z next() {

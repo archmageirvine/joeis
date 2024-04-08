@@ -30,7 +30,7 @@ A000840 Graph colouring, insufficient detail [geng -d3 -D3 (2n) | pickg -b (does
 A000843 Graph colouring, insufficient detail
 A000876 Need more detail [had 1 email from author], cf. A000361
 A000937 Length of longest simple cycle without chords in the n-dimensional hypercube graph, have paper
-A000952 Hard, matrix
+A000952 Numbers k == 2 (mod 4) that are the orders of conference matrices
 A000983 Size of minimal binary covering code of length n and covering radius 1
 A000997 Have paper, can't find exact sequence in paper, pos. like A000998
 A001032 Not obvious how to exclude 842 for example
@@ -79,7 +79,7 @@ A001439 Probably an erroneous sequence
 A001440 Costas arrays, hard
 A001441 Costas arrays, hard
 A001442 Costas arrays, hard
-A001443 Have paper, might be possible
+A001443 Number of strong starters in cyclic group of order 2n+1
 A001528 NPN-equivalence threshold functions
 A001529 Threshold functions
 A001530 Threshold functions
@@ -207,7 +207,7 @@ A003034 Sylvester's problem: minimal number of ordinary lines through n points i
 A003035 Maximal number of 3-tree rows in n-tree orchard problem
 A003036 Number of simplicial arrangements of n lines in the plane
 A003039 Maximal number of prime implicants of a Boolean function of n variables, hard
-A003041 A cycle index style problem, have paper
+A003041 Number of vacuously transitive relations on n nodes up to isomorphism
 A003055 Match-stick graphs, homeomorphism is hard to understand
 A003061 Number of non-Abelian (finite) groups with n conjugacy classes, hard, depends A073043
 A003075 Minimal sorting numbers, hard
@@ -1892,7 +1892,6 @@ A058120 Number of self-converse semigroups of order n with 2 idempotent.
 A058121 Number of self-converse semigroups of order n with 3 idempotent.
 A058122	Number of self-converse idempotent semigroups of order n.
 A058123 Triangle read by rows: semigroups of order n with k idempotents, considered to be equivalent when they are isomorphic or anti-isomorphic (by reversal of the operator).
-A058129 Number of nonisomorphic monoids (semigroups with identity) of order n
 A058130 Number of asymmetric monoids (semigroups with identity) of order n.
 A058131 Number of isomorphism classes of commutative monoids (commutative semigroups with identity) of order n.
 A058132 Number of self-converse monoids (semigroups with identity) of order n.
@@ -1900,13 +1899,8 @@ A058133 Number of monoids (semigroups with identity) of order n, considered to b
 A058134 Number of asymmetric commutative monoids (semigroups with identity) of order n.
 A058135 Number of asymmetric self-converse monoids (semigroups with identity) of order n.
 A058136 Number of asymmetric monoids (semigroups with identity) of order n, considered to be equivalent when they are isomorphic or anti-isomorphic (by reversal of the operator).
-A058137 Triangle read by rows: monoids of order n with k idempotents.
-A058138 Monoids of order n with 2 idempotents.
-A058139 Monoids of order n with 3 idempotents.
 A058140 Triangle read by rows: number of asymmetric monoids of order n with k idempotents.
 A058141 Number of asymmetric monoids of order n with 2 idempotents.
-A058142 Triangle read by rows: number of commutative monoids of order n with k idempotents.
-A058143 Number of commutative monoids of order n with 2 idempotents.
 A058144 Triangle: Self-converse monoids of order n with k idempotents.
 A058145 Number of self-converse monoids of order n with 2 idempotents.
 A058146 Number of self-converse monoids of order n with 3 idempotents.
@@ -1916,14 +1910,6 @@ A058149 Monoids of order n with 3 idempotents, considered to be equivalent when 
 A058150 Triangle: Number of asymmetric commutative monoids of order n with k idempotents.
 A058151	Triangle: Number of asymmetric self-converse monoids of order n with k idempotents.
 A058152 Triangle: Number of asymmetric monoids of order n with k idempotents, considered to be equivalent when they are isomorphic or anti-isomorphic (by reversal of the operator).
-A058153 Number of labeled monoids of order n.
-A058154 Number of labeled monoids of order n with a fixed identity.
-A058155	Number of labeled commutative monoids of order n.
-A058156 Number of labeled commutative monoids of order n with a fixed identity.
-A058157 Triangle read by rows: T(n,k) is the number of labeled monoids of order n with k idempotents.
-A058158 Triangle read by rows: T(n,k) is the number of labeled monoids of order n with k idempotents and a fixed identity.
-A058159 Triangle read by rows: T(n,k) is the number of labeled commutative monoids of order n with k idempotents.
-A058160 Triangle read by rows: T(n,k) is the number of labeled commutative monoids of order n with k idempotents and a fixed identity.
 A058166 Triangle read by rows: T(n,k) = number of labeled semigroups of order n with k idempotents.
 A058167 Triangle read by rows: T(n,k) is the number of labeled commutative semigroups of order n with k idempotents
 A058168 Triangle: Number of asymmetric commutative semigroups of order n with k idempotents.

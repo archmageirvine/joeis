@@ -28,7 +28,7 @@ public final class IntegerPartition {
   /**
    * Construct a new object for getting the integer partitions of a number.
    * @param n number
-   * @exception IllegalArgumentException if <code>n</code> is not positive.
+   * @exception IllegalArgumentException if <code>n</code> is negative.
    */
   public IntegerPartition(final int n) {
     if (n < 0) {

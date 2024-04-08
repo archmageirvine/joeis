@@ -58,14 +58,14 @@ public final class SparseInteger implements Comparable<SparseInteger> {
   // (in the latter case property <see cref="isSmall"/> returns <c>true</c>).
 
   // The numeric value of this value if it fits into long type, otherwise 0.
-  private long mValue;
+  private final long mValue;
 
   // An sorted array of positions of 1's in the binary form of this number,
   // stored from lowest (least significant) to highest (most significant).
   //
   // If this field is null, then the field value is used
   // to represent such "small" number verbatim.
-  private SparseInteger[] mPositions;
+  private final SparseInteger[] mPositions;
 
   private SparseInteger(final SparseInteger[] positions, final long value) {
     assert value == 0 || positions == null;

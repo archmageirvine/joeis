@@ -30,18 +30,18 @@ import irvine.oeis.AbstractSequence;
 public class A070080 extends AbstractSequence {
 
   private long mN;
-  private int mMode; // mode of operation, type of the target terms, one of the following:
-  public static final int COUNT = 0; // count occurrences of condition for the triangles with perimeter n
-  public static final int INDEX = 1; // select indexes in arrays [A070080,A070081,A070082]
-  public static final int SIDE_A = 2;
-  public static final int SIDE_B = 3;
-  public static final int SIDE_C = 4;
-  public static final int PERIMETER = 5; // a + b + c
-  public static final int GCD = 6;
-  public static final int SHAPE = 7; // a^2 + b^2 - c^2
-  public static final int AREA = 8;
-  public static final int INRAD = 9;
-  public static final int SQUARE16 = 10;
+  private final int mMode; // mode of operation, type of the target terms, one of the following:
+  protected static final int COUNT = 0; // count occurrences of condition for the triangles with perimeter n
+  protected static final int INDEX = 1; // select indexes in arrays [A070080,A070081,A070082]
+  protected static final int SIDE_A = 2;
+  protected static final int SIDE_B = 3;
+  protected static final int SIDE_C = 4;
+  protected static final int PERIMETER = 5; // a + b + c
+  protected static final int GCD = 6;
+  protected static final int SHAPE = 7; // a^2 + b^2 - c^2
+  protected static final int AREA = 8;
+  protected static final int INRAD = 9;
+  protected static final int SQUARE16 = 10;
 
   protected long mA; // length of side a
   protected long mB; // length of side b
@@ -164,7 +164,7 @@ public class A070080 extends AbstractSequence {
             case SQUARE16:
               return getSquare16(new Long[] {mA, mB, mC});
             default:
-              throw new RuntimeException();
+              throw new RuntimeException("Unknown mode: " + mMode);
           }
         }
       }
@@ -176,9 +176,9 @@ public class A070080 extends AbstractSequence {
    * @return <code>p*(p - 2*a)*(p - 2*b)*(p - 2*c)</code>
    */
   protected static Z getSquare16(final Long[] s) {
-    final long a = s[0];
-    final long b = s[1];
-    final long c = s[2];
+    final long a = s[0].longValue();
+    final long b = s[1].longValue();
+    final long c = s[2].longValue();
     return Z.valueOf(a + b + c).multiply(-a + b + c).multiply(a - b + c).multiply(a + b - c); // (u+v+w)*(-u+v+w)*(u-v+w)*(u+v-w)
   }
 
@@ -210,7 +210,10 @@ public class A070080 extends AbstractSequence {
   }
 
   protected static boolean hasCoPrimeSides(final Long[] s) {
-    return LongUtils.gcd(s[0], s[1], s[2]) == 1;
+    final long a = s[0].longValue();
+    final long b = s[1].longValue();
+    final long c = s[2].longValue();
+    return LongUtils.gcd(a, b, c) == 1;
   }
 
   protected static boolean hasIntArea(final Long[] s) {
@@ -241,16 +244,19 @@ public class A070080 extends AbstractSequence {
   }
 
   protected static boolean isHeronian(final Long[] s) {
-    final long a = s[0];
-    final long b = s[1];
-    final long c = s[2];
+    final long a = s[0].longValue();
+    final long b = s[1].longValue();
+    final long c = s[2].longValue();
     final long p = a + b + c;
     final long heron16 = (p - 2 * a) * (p - 2 * b) * (p - 2 * c) * p * 2;
     return heron16 > 0 && Z.valueOf(heron16).isSquare();
   }
 
   protected static boolean isIsosceles(final Long[] s) {
-    return s[0].equals(s[1]) || s[1].equals(s[2]);
+    final long a = s[0].longValue();
+    final long b = s[1].longValue();
+    final long c = s[2].longValue();
+    return a == b || b == c;
   }
 
   protected static boolean isObtuse(final Long[] s) {
@@ -262,7 +268,10 @@ public class A070080 extends AbstractSequence {
   }
 
   protected static boolean isScalene(final Long[] s) {
-    return s[0] < s[1] && s[1] < s[2];
+    final long a = s[0].longValue();
+    final long b = s[1].longValue();
+    final long c = s[2].longValue();
+    return a < b && b < c;
   }
 
   protected static boolean isTriangle(final Long[] s) {
@@ -325,8 +334,8 @@ public class A070080 extends AbstractSequence {
         final Long[] s = {mA, mB, mC};
         sb.append(String.format("| %5d | %5d |%4d%4d%4d |", n, mPeri, mA, mB, mC));
         sb.append(String.format("%6d |%6d |", LongUtils.gcd(mA, mB, mC), mA * mA + mB * mB - mC * mC));
-        String h = String.format("%12.6f", getArea(s)).replace(',', '.');
-        String i = String.format("%8.6f", getInRadius(s)).replace(',', '.');
+        final String h = String.format("%12.6f", getArea(s)).replace(',', '.');
+        final String i = String.format("%8.6f", getInRadius(s)).replace(',', '.');
         if (isScalene(s)) {
           sb.append(" s");
         }

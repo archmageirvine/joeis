@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A050934 Numbers n such that phi(n)*d(n) is a multiple of sigma(n), where d(n) is the number of divisors of n.
+ * A050934 Numbers k such that phi(k)*d(k) is a multiple of sigma(k), where d(k) is the number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A050934 extends Sequence1 {

@@ -7,7 +7,7 @@ import irvine.oeis.a014.A014695;
 import irvine.oeis.a139.A139131;
 
 /**
- * A078636 rad{n(n+1)}.
+ * A078636 a(n) = rad(n*(n+1)).
  * @author Georg Fischer
  */
 public class A078636 extends AbstractSequence {

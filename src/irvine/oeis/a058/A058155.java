@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 import irvine.math.z.Z;
 
 /**
- * A058129.
+ * A058155 Number of labeled commutative monoids of order n.
  * @author Sean A. Irvine
  */
 public class A058155 extends A058156 {

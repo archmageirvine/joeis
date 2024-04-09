@@ -4,7 +4,7 @@ package irvine.oeis.a083;
 import irvine.math.z.Z;
 
 /**
- * A083081 First super-diagonal of number array A083075.
+ * A083081 First superdiagonal of number array A083075.
  * @author Georg Fischer
  */
 public class A083081 extends A083075 {

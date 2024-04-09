@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000166;
 
 
 /**
- * A192676  Floor-Sqrt transform of derangement numbers (A000166).
+ * A192676 Floor-Sqrt transform of derangement numbers (A000166).
  * @author Georg Fischer
  */
 public class A192676 extends A000166 {

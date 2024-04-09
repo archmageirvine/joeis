@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064212 a(n) = sigma(n) + usigma(n), or A000203(n) + A034448(n).
+ * A064212 a(n) = sigma(n) + usigma(n) = A000203(n) + A034448(n).
  * @author Sean A. Irvine
  */
 public class A064212 extends Sequence1 {

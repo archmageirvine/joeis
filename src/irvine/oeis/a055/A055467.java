@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a018.A018252;
 
 /**
- * A055467 Nonprime numbers for which phi(n) + sigma(n) is an integer multiple of the cube of the number of divisors.
+ * A055467 Nonprime numbers k for which phi(k) + sigma(k) is an integer multiple of the cube of the number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A055467 extends A018252 {

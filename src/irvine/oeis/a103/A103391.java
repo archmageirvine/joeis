@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003602;
 
 /**
- * A103391 'Even' fractal sequence for the natural numbers: Deleting every even-index term results in the same sequence.
+ * A103391 "Even" fractal sequence for the natural numbers: Deleting every even-indexed term results in the same sequence.
  * @author Georg Fischer
  */
 public class A103391 extends A003602 {

@@ -8,6 +8,10 @@ import java.util.Arrays;
  */
 public class Monoids {
 
+  // The generation here is very slow.
+  // It might be better to attempt only generation of canonical cases,
+  // or maybe the associativity checking could be made better.
+
   protected final int mN;
   protected final int[][] mM;
 

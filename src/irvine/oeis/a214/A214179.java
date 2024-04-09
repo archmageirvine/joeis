@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A214179 Primes p such that least positive primitive root of p is equal to number of 1&apos;s in binary representation of p.
+ * A214179 Primes p such that least positive primitive root of p is equal to number of 1's in binary representation of p.
  * @author Georg Fischer
  */
 public class A214179 extends FilterSequence {

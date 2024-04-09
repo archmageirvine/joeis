@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A171590 1+4^(n+1)-4*(-2)^n.
+ * A171590 a(n) = 1+4^(n+1)-4*(-2)^n.
  * @author Sean A. Irvine
  */
 public class A171590 extends LinearRecurrence {

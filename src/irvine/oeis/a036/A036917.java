@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A036917 a(n) = (16*(n-1/2)*(2*n^2-2*n+1)*a(n-1)-256*(n-1)^3*a(n-2))/n^3.
+ * A036917 G.f.: (4/Pi^2)*EllipticK(4*x^(1/2))^2.
  * @author Sean A. Irvine
  */
 public class A036917 extends AbstractSequence {

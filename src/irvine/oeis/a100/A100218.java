@@ -6,7 +6,7 @@ import irvine.oeis.a153.A153881;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A100218 Riordan array ((1-2x)/(1-x), (1-x)).
+ * A100218 Riordan array ((1-2*x)/(1-x), (1-x)).
  * @author Georg Fischer
  */
 public class A100218 extends PrependColumn {

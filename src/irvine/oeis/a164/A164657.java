@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A164657 Denominators of partial sums of Theta(5) = sum(1/(2*j-1)^5, j=1..infinity).
+ * A164657 Denominators of partial sums of Theta(5) = Sum_{j&gt;=1} 1/(2*j-1)^5.
  * @author Georg Fischer
  */
 public class A164657 extends LambdaSequence {

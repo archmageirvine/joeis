@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001405;
 
 /**
- * A064139 Sum of divisors of central binomial coefficient C(n, floor(n/2)).
+ * A064139 Sum of divisors of central binomial coefficient binomial(n, floor(n/2)).
  * @author Georg Fischer
  */
 public class A064139 extends A001405 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
 /**
- * A058129.
+ * A058139 Monoids of order n with 3 idempotents.
  * @author Sean A. Irvine
  */
 public class A058139 extends Sequence3 {

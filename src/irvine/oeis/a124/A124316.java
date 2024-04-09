@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
 /**
- * A124316 a(n) = Sum_{ d divides n } sigma(gcd(d,n/d)), where sigma is the sum of divisors function, A000203.
+ * A124316 a(n) = Sum_{d|n} sigma(gcd(d,n/d)), where sigma is the sum of divisors function, A000203.
  * @author Georg Fischer
  */
 public class A124316 extends AbstractSequence {

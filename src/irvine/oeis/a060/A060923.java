@@ -5,7 +5,7 @@ import irvine.oeis.Sequence0;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A060923 Bisection of Lucas triangle A060922: even indexed members of column sequences of A060922 (not counting leading zeros).
+ * A060923 Bisection of Lucas triangle A060922: even-indexed members of column sequences of A060922 (not counting leading zeros).
  * @author Sean A. Irvine
  */
 public class A060923 extends Sequence0 {

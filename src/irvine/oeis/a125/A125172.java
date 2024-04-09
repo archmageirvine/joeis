@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001906;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A125172 Triangle T(n,k) with partial column sums of the even indexed Fibonacci numbers.
+ * A125172 Triangle T(n,k) with partial column sums of the even-indexed Fibonacci numbers.
  * @author Georg Fischer
  */
 public class A125172 extends Triangle {

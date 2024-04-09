@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000578;
 
 /**
- * A167729 Cubes that become prime numbers when prefixed with a 5
+ * A167729 Cubes that become prime numbers when prefixed with a 5.
  * @author Georg Fischer
  */
 public class A167729 extends FilterSequence {

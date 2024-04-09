@@ -6,7 +6,7 @@ package irvine.oeis.a106;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A106228 G.f. satisfies: A(x) = 1 + x*A(x)/(1 - x*A(x)^2).
+ * A106228 G.f. satisfies A(x) = 1 + x*A(x)/(1 - x*A(x)^2).
  * @author Georg Fischer
  */
 public class A106228 extends HolonomicRecurrence {

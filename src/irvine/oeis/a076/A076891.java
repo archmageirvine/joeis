@@ -8,7 +8,7 @@ import irvine.oeis.a007.A007955;
 import irvine.oeis.a010.A010786;
 
 /**
- * A076891 [n/1][n/2][n/3] ...[n/n] / n^(tau(n)/2).
+ * A076891 a(n) = [n/1][n/2][n/3] ...[n/n] / n^(tau(n)/2).
  * @author Georg Fischer
  */
 public class A076891 extends AbstractSequence {

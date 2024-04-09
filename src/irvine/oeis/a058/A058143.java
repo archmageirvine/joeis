@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A058129.
+ * A058143 Number of commutative monoids of order n with 2 idempotents.
  * @author Sean A. Irvine
  */
 public class A058143 extends Sequence2 {

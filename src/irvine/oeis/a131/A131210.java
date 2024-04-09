@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A131210 Numbers n such that 24n - 1 is prime.
+ * A131210 Numbers k such that 24k - 1 is prime.
  * @author Georg Fischer
  */
 public class A131210 extends PrimePositionSubsequence {

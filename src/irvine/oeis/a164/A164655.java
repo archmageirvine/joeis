@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A164655 Numerators of partial sums of Theta(3) = sum(1/(2*j-1)^3, j=1..infinity).
+ * A164655 Numerators of partial sums of Theta(3) = Sum_{j&gt;=1} 1/(2*j-1)^3.
  * @author Georg Fischer
  */
 public class A164655 extends LambdaSequence {

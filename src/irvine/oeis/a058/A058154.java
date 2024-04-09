@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A058129.
+ * A058154 Number of labeled monoids of order n with a fixed identity.
  * @author Sean A. Irvine
  */
 public class A058154 extends Sequence1 {

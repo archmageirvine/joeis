@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FilterLambdaSequence;
 
 /**
- * A324909 Odd numbers n for which sigma(n^2) == 3 (mod 4).
+ * A324909 Odd numbers k for which sigma(k^2) == 3 (mod 4).
  * @author Georg Fischer
  */
 public class A324909 extends FilterLambdaSequence {

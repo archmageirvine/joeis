@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001764;
 import irvine.oeis.memory.MemorySequence;
 
 /**
- * A047774 Number of dissectable polyhedra with symmetry of type C.
+ * A047774 Number of chiral pairs of dissectable polyhedra with n tetrahedral cells and symmetry of type C.
  * @author Sean A. Irvine
  */
 public class A047774 extends Sequence1 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A005845 Bruckman-Lucas pseudoprimes: n | (L_n - 1), where n is composite and L_n = Lucas numbers A000032.
+ * A005845 Bruckman-Lucas pseudoprimes: k | (L_k - 1), where k is composite and L_k = Lucas numbers A000032.
  * @author Sean A. Irvine
  */
 public class A005845 extends Sequence1 {

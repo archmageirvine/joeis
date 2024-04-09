@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A058129.
+ * A058142 Triangle read by rows: number of commutative monoids of order n with k idempotents.
  * @author Sean A. Irvine
  */
 public class A058142 extends Sequence1 {

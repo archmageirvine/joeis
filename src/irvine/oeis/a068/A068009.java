@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A068009 Square array T(m,n) with m (row) &gt;= 1 and n (column) &gt;= 0 read by antidiagonals: number of subsets of {1,2,3,...n} that sum to 0 mod m (including the empty set whose sum is 0).
+ * A068009 Square array T(m,n) with m (row) &gt;= 1 and n (column) &gt;= 0 read by antidiagonals: number of subsets of {1,2,3,...n} that sum to 0 mod m (including the empty set, whose sum is 0).
  * @author Sean A. Irvine
  */
 public class A068009 extends Sequence0 {

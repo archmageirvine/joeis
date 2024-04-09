@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A072711 Last digit of F(n) is 9 where F(n) is the n-th Fibonacci number.
+ * A072711 Integers m such that the last digit of Fibonacci(m) is 9.
  * @author Sean A. Irvine
  */
 public class A072711 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A137742 a(n) = (n-1)*(n+4)*(n+6)/6 for n&gt;1, a(1)=1.
+ * A137742 a(n) = (n-1)*(n+4)*(n+6)/6 for n &gt; 1, a(1)=1.
  * @author Georg Fischer
  */
 public class A137742 extends GeneratingFunctionSequence {

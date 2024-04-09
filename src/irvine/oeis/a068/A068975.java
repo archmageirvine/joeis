@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A068975 Composite n such that (n+1)*sum(d|n,d/sigma(d)) is an integer (1 excluded).
+ * A068975 Composite k such that (k+1) * Sum_{d|k} d/sigma(d) is an integer.
  * @author Sean A. Irvine
  */
 public class A068975 extends A002808 {

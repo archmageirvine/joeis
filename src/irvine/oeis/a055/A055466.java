@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A055466 Numbers n such that d(n)^2 divides phi(n) + sigma(n).
+ * A055466 Numbers k such that d(k)^2 divides phi(k) + sigma(k).
  * @author Sean A. Irvine
  */
 public class A055466 extends Sequence1 {

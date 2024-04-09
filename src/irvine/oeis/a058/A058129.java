@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A058129.
+ * A058129 Number of nonisomorphic monoids (semigroups with identity) of order n.
  * @author Sean A. Irvine
  */
 public class A058129 extends Sequence0 {

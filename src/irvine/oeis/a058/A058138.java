@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A058129.
+ * A058138 Monoids of order n with 2 idempotents.
  * @author Sean A. Irvine
  */
 public class A058138 extends Sequence2 {

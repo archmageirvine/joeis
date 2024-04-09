@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A182007 Decimal expansion of 2*sin(Pi/5); the 'associate' of the golden ratio.
+ * A182007 Decimal expansion of 2*sin(Pi/5).
  * @author Georg Fischer
  */
 public class A182007 extends DecimalExpansionSequence {

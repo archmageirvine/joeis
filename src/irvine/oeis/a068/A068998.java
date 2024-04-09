@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A068998 Numbers n such that the concatenation of the prime factors of n (in increasing order) is prime.
+ * A068998 Numbers m such that the concatenation of the prime factors of m (in increasing order and ignoring multiplicity) is prime.
  * @author Sean A. Irvine
  */
 public class A068998 extends Sequence1 {

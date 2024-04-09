@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A007356 Apocalyptic powers: 2^n contains 666.
+ * A007356 Apocalyptic powers: 2^a(n) contains 666.
  * @author Sean A. Irvine
  */
 public class A007356 extends Sequence1 {

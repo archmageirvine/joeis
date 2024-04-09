@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000203;
 import irvine.oeis.a048.A048050;
 
 /**
- * A062785 Chowla's function * sigma(n).
+ * A062785 a(n) = Chowla's function of n * sigma(n).
  * @author Georg Fischer
  */
 public class A062785 extends AbstractSequence {

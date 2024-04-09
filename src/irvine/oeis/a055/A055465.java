@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A055465 Composite numbers for which sum of EulerPhi and Divisor-Sum is an integer multiple of the number of divisors.
+ * A055465 Composite numbers k for which phi(k) + sigma(k) is an integer multiple of the number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A055465 extends A002808 {

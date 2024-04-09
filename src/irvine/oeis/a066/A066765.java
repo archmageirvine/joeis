@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A066765 Numbers n such that phi(n) &lt; n/5.
+ * A066765 Numbers k such that phi(k) &lt; k/5.
  * @author Sean A. Irvine
  */
 public class A066765 extends Sequence1 {

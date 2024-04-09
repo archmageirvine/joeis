@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000290;
 
 /**
- * A167719 Squares that become a prime number when prefixed with a 4
+ * A167719 Squares that become a prime number when prefixed with a 4.
  * @author Georg Fischer
  */
 public class A167719 extends FilterSequence {

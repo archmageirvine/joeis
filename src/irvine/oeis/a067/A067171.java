@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067171 Numbers n such that sigma(n+1)+sigma(n) = sigma(2n+1).
+ * A067171 Numbers k such that sigma(k+1)+sigma(k) = sigma(2k+1).
  * @author Sean A. Irvine
  */
 public class A067171 extends Sequence1 {

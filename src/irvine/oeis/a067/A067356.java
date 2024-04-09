@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 
 /**
- * A067356 Numbers n such that prime(n+3)-(n+3)*tau(n+3)=prime(n)-n*tau(n) where tau(n) is the number of divisors of n A000005(n).
+ * A067356 Numbers k such that prime(k+3)-(k+3)*tau(k+3) = prime(k)-k*tau(k) where tau(k) = A000005(k) is the number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A067356 extends A067355 {

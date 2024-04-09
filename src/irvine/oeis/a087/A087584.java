@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A087584 a(n)=(1/7)*sum(k=0,n,binomial(n,k)*Fibonacci(k)*7^k).
+ * A087584 a(n) = (1/7)*Sum_{k=0..n} binomial(n,k)*Fibonacci(k)*7^k.
  * @author Sean A. Irvine
  */
 public class A087584 extends LinearRecurrence {

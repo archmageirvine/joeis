@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A020956 Sum of [tau^(n-k)] for k from 1 to infinity.
+ * A020956 a(n) = Sum_{k&gt;=1} floor(tau^(n-k)) where tau is A001622.
  * @author Sean A. Irvine
  */
 public class A020956 extends LinearRecurrence {

@@ -2338,3 +2338,4 @@ A068979 Number of elements of rank n in the free lattice on three generators.
 A069001 Grundy value of a 3 X n rectangle in the game of Chomp.
 A069124 Pseudo-Latin stable matchings (possibly erroneous, cf. A371810)
 A069156 A certain class of stable matchings
+A069161 Numbers n such that no group of order n can be a central factor

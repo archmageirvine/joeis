@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A058129.
+ * A058160 Triangle read by rows: T(n,k) is the number of labeled commutative monoids of order n with k idempotents and a fixed identity.
  * @author Sean A. Irvine
  */
 public class A058160 extends Sequence1 {

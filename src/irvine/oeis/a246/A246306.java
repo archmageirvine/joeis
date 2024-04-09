@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.FilterNumberSequence;
 
 /**
- * A246306 Numbers k such that cos(k) &gt; cos(k+1) &lt; cos(k+2) &lt; cos(k+3) &gt; cos(k+4).
+ * A246306 Numbers k such that cos(k) &gt; cos(k+1) &gt; cos(k+2) &gt; cos(k+3) &lt; cos(k+4).
  * @author Georg Fischer
  */
 public class A246306 extends FilterNumberSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A058129.
+ * A058137 Triangle read by rows: monoids of order n with k idempotents.
  * @author Sean A. Irvine
  */
 public class A058137 extends Sequence1 {

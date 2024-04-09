@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A069089 Related to Lucas property of a number array.
+ * A069089 a(n) is the number of 0's in a p X p square of a particular function mod p (see Formula) where p is the n-th prime.
  * @author Sean A. Irvine
  */
 public class A069089 extends A000040 {

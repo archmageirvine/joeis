@@ -7,7 +7,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000578;
 
 /**
- * A167725 Cubes that become a prime number when prefixed with a 1
+ * A167725 Cubes that become a prime number when prefixed with a 1.
  * @author Georg Fischer
  */
 public class A167725 extends FilterSequence {

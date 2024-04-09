@@ -6,7 +6,7 @@ import irvine.oeis.recur.PaddingSequence;
 import irvine.oeis.triangle.PrependColumn;
 
 /**
- * A098599 Riordan array ((1+2x)/(1+x),(1+x)).
+ * A098599 Riordan array ((1+2*x)/(1+x), (1+x)).
  * @author Georg Fischer
  */
 public class A098599 extends PrependColumn {

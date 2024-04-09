@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067335 Numbers n such that prime(n+1)-(n+1)*tau(n+1)=prime(n-1)-(n-1)*tau(n-1) where tau(n) is the number of divisors of n A000005(n).
+ * A067335 Numbers k such that prime(k+1)-(k+1)*tau(k+1) = prime(k-1)-(k-1)*tau(k-1) where tau(k) = A000005(k) is the number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A067335 extends A000040 {

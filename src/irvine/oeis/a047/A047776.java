@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A047776 Number of dissectable polyhedra with symmetry of type A.
+ * A047776 Number of chiral pairs of asymmetric dissectable polyhedra with n tetrahedral cells (type A).
  * @author Sean A. Irvine
  */
 public class A047776 extends Sequence1 {

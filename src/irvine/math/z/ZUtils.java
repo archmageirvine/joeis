@@ -1441,4 +1441,14 @@ public final class ZUtils {
   public static Z rotateRight(final Z n) {
     return rotateRight(n, 10);
   }
+
+  /**
+   * Return the ceiling of the square root of an integer.
+   * @param n integer
+   * @return ceiling of teh square root
+   */
+  public static Z ceilSqrt(final Z n) {
+    final Z[] s = n.sqrtAndRemainder();
+    return s[1].isZero() ? s[0] : s[0].add(1);
+  }
 }

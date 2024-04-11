@@ -2,7 +2,7 @@ package irvine.oeis.a088;
 // manually 2023-09-07/filtpos at 2023-09-07 21:05
 
 import irvine.math.z.Z;
-import irvine.nt.cyclotomic.Cyclotomic;
+import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.LambdaSequence;
 

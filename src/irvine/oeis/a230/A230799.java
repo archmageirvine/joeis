@@ -4,7 +4,7 @@ import java.util.TreeSet;
 
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.nt.cyclotomic.Cyclotomic;
+import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.AbstractSequence;
 
 /**

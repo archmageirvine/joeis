@@ -1,7 +1,7 @@
 package irvine.oeis.a289;
 
 import irvine.math.z.Z;
-import irvine.nt.homeprime.ReverseHomePrime;
+import irvine.factor.project.homeprime.ReverseHomePrime;
 import irvine.oeis.Sequence1;
 
 /**

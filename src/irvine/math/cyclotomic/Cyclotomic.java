@@ -1,4 +1,4 @@
-package irvine.nt.cyclotomic;
+package irvine.math.cyclotomic;
 
 import irvine.math.Mobius;
 import irvine.math.polynomial.Polynomial;

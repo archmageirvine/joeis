@@ -4,7 +4,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.nt.cyclotomic.CyclotomicPolynomials;
+import irvine.math.cyclotomic.CyclotomicPolynomials;
 import irvine.oeis.Sequence1;
 
 /**

@@ -2,7 +2,7 @@ package irvine.oeis.a241;
 // manually 2023-09-07/lambda at 2023-09-07 19:13
 
 import irvine.math.z.Z;
-import irvine.nt.cyclotomic.Cyclotomic;
+import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.LambdaSequence;
 
 /**

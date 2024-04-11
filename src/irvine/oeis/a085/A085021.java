@@ -2,7 +2,7 @@ package irvine.oeis.a085;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.nt.cyclotomic.Cyclotomic;
+import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence1;
 
 /**

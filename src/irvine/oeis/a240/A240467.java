@@ -1,6 +1,6 @@
 package irvine.oeis.a240;
 
-import irvine.nt.cyclotomic.Cyclotomic;
+import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**

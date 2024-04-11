@@ -12,7 +12,7 @@ public class AllTests extends TestSuite {
 
   public static Test suite() {
     final TestSuite suite = new TestSuite();
-    suite.addTest(irvine.nt.cyclotomic.AllTests.suite());
+    suite.addTest(irvine.math.cyclotomic.AllTests.suite());
     suite.addTest(irvine.nt.homeprime.AllTests.suite());
     return suite;
   }

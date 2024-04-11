@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.nt.cyclotomic.CyclotomicPolynomials;
+import irvine.math.cyclotomic.CyclotomicPolynomials;
 import irvine.oeis.Sequence1;
 
 /**

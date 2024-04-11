@@ -1,10 +1,10 @@
-package irvine.nt.homeprime;
-
-import irvine.math.z.Z;
+package irvine.factor.project.homeprime;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import irvine.math.z.Z;
 
 /**
  * For a given number find all numbers whose home prime sequence passes through

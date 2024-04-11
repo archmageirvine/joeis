@@ -1,4 +1,4 @@
-package irvine.nt.cyclotomic;
+package irvine.math.cyclotomic;
 
 import junit.framework.Test;
 import junit.framework.TestSuite;

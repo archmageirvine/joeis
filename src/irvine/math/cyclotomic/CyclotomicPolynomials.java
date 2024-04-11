@@ -1,4 +1,4 @@
-package irvine.nt.cyclotomic;
+package irvine.math.cyclotomic;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;

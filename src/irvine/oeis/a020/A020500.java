@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.nt.cyclotomic.Cyclotomic;
+import irvine.math.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence1;
 
 /**

@@ -92,4 +92,14 @@ public final class LeastPrimeFactorizer {
   public static Z lpf(final Z n) {
     return LPF.findLpf(n);
   }
+
+  /**
+   * Find the least prime factor of a given number.
+   * @param n number to factor
+   * @return least prime factor
+   * @throws UnsupportedOperationException if the requested factor cannot be determined.
+   */
+  public static Z lpf(final long n) {
+    return LPF.findLpf(Z.valueOf(n));
+  }
 }

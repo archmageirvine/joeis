@@ -21,24 +21,19 @@ public class A010355 extends Sequence1 {
     }
     Z count = Z.ZERO;
     final ParallelGenerateGraphsSequence pgs = new ParallelGenerateGraphsSequence(0, 1, 2, false, false, false) {
-        @Override
-        protected long getCount(final Graph graph) {
-          return 1;
-        }
+      @Override
+      protected long getCount(final Graph graph) {
+        return 1;
+      }
 
-        @Override
-        protected void graphGenInit(final GenerateGraphs gg) {
-          gg.setVertices(mN);
-          gg.setConnectionLevel(2); // biconnected
-          gg.setMinEdges(mEdges);
-          gg.setMaxEdges(mEdges);
-        }
-
-        @Override
-        protected void init(final int n) {
-          super.init(n);
-        }
-      };
+      @Override
+      protected void graphGenInit(final GenerateGraphs gg) {
+        gg.setVertices(mN);
+        gg.setConnectionLevel(2); // biconnected
+        gg.setMinEdges(mEdges);
+        gg.setMaxEdges(mEdges);
+      }
+    };
     for (int k = 2; k <= mEdges; ++k) {
       final Z cnt = pgs.next();
       count = count.add(cnt);

@@ -1,22 +1,16 @@
-package irvine.nt.homeprime;
-
-import irvine.factor.project.homeprime.ReverseHomePrime;
-import irvine.math.z.Z;
+package irvine.factor.project.homeprime;
 
 import java.util.Arrays;
 import java.util.List;
 
+import irvine.math.z.Z;
 import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class ReverseHomePrimeTest extends TestCase {
-
-
-
 
   public void test() {
     final List<Z> nums = ReverseHomePrime.homePrimeTree(new Z("3331113965338635107"), 10);

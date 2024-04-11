@@ -15,7 +15,6 @@ public class AllTests extends TestSuite {
     suite.addTest(irvine.games.AllTests.suite());
     suite.addTest(irvine.graph.AllTests.suite());
     suite.addTest(irvine.math.AllTests.suite());
-    suite.addTest(irvine.nt.AllTests.suite());
     suite.addTest(irvine.oeis.AllTests.suite());
     suite.addTest(irvine.util.AllTests.suite());
     return suite;

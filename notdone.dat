@@ -766,7 +766,6 @@ A010119 Magnetic susceptibility coefficients for square lattice spin 5/2 Ising m
 A010238 Maximal size of binary code of length n and asymmetric distance 3
 A010334 Maximal size of binary code of length n and asymmetric distance 4
 A010336 Maximal size of binary code of length n and asymmetric distance 5
-A010355 Single-edge stars with n edges, unclear what these stars are
 A010356 Triangle of single-edge stars with n edges by cyclotomic index
 A010357 Multi-edge stars with n edges
 A010358	Triangle of multi-edge stars with n edges by cyclotomic index

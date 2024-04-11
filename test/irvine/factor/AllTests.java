@@ -14,7 +14,6 @@ public class AllTests extends TestSuite {
     suite.addTest(irvine.factor.factor.AllTests.suite());
     suite.addTest(irvine.factor.prime.AllTests.suite());
     suite.addTest(irvine.factor.util.AllTests.suite());
-    suite.addTestSuite(SmarandacheTest.class);
     return suite;
   }
 

@@ -767,7 +767,6 @@ A010238 Maximal size of binary code of length n and asymmetric distance 3
 A010334 Maximal size of binary code of length n and asymmetric distance 4
 A010336 Maximal size of binary code of length n and asymmetric distance 5
 A010356 Triangle of single-edge stars with n edges by cyclotomic index
-A010357 Multi-edge stars with n edges
 A010358	Triangle of multi-edge stars with n edges by cyclotomic index
 A010359 Number of rooted multi-edge stars with n edges
 A010360 Triangle of rooted multi-edge stars with n edges by degree of root
@@ -869,7 +868,6 @@ A013576 Minimal scope of an (n,4) difference triangle
 A013577 Minimal scope of an (n,5) difference triangle
 A013578 Maximal size of equidistant permutation array R(n,2)
 A013579 Number of inequivalent Mendelsohn triple systems (MTS(n,1)) of order n and index 1
-A013588 Smallest positive integer not the determinant of an n X n 0-1 matrix, hard
 A013630 Triangle of coefficients of polynomials arising as numerators of certain Hilbert series, insufficient detail
 A013639 Brund-Steinmetz permutations, insufficient detail
 A013659 Initialized continued fraction for sqrt(n-th nonsquare) has period (1,a(n)), don't understand
@@ -890,7 +888,7 @@ A014543 Toroidal crossing number of complete graph
 A014582 Orders of magic squares having all-different sum-of-squares values for the rows and columns (except for the necessary 180 degree symmetry), likely hard
 A014593 Stairs of ideals of gradient type in the theory of singularities, insufficient detail
 A014596 Conjectured numbers of Vassiliev invariants of knots, unclear if extendable
-A014621 Triangle of numbers arising from analysis of Levine's sequence A011784, insufficient detail
+A014621 Triangle of numbers arising from analysis of Levine's sequence A011784 [python exists]
 A014622 Row sums of A014621
 A014623 Sequence arising from analysis of Levine's sequence A011784, insufficient detail
 A014627 Some sort of bipartite graph counting, could not find paper
@@ -906,7 +904,6 @@ A015164 Theta series of 17-dimensional lattice Q'_17(6)^{+3}
 A015165 Theta series of 17-dimensional lattice Q'_17(6)^{+6}
 A015229 Theta series of lattice Kappa_11
 A016034 Numbers having n self generators (not necessarily primitive), insufficient detail
-A016071 A sequence of Dewdney's, insufficient detail
 A016072 Obsolete sequence of lower bounds for A028444
 A016088 Smallest prime p such that Sum_{primes q = 2, ..., p} 1/q exceeds n, hard
 A016119 Minimal number of cosets in an orthogonal sublattice of A_n (minimal number of paths in any trellis diagram), likely hard

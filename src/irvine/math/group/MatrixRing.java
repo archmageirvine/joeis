@@ -104,7 +104,7 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
    */
   public E det(final Matrix<E> m) {
     // Strictly speaking this function should be restricted to matrix of
-    // the same size as the group.  But because we can and it is helpful
+    // the same size as the group.  But because we can, and it is helpful
     // for recursive expansion of cofactors this does work for any size.
     if (m == zero()) {
       return mZero;

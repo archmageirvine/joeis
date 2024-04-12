@@ -7,7 +7,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence1;
 
 /**
- * A003317 Number of unlabeled minimally 2-connected graphs with n nodes (also called "blocks").
+ * A010355 Number of unlabeled nonseparable (or 2-connected) graphs (or blocks) with n edges.
  * @author Sean A. Irvine
  */
 public class A010355 extends Sequence1 {

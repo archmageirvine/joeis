@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007001;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A076050 Limiting sequence if we start with 2 and successively replace n with 2, 3, 4,...,n,n+1.
+ * A076050 Limiting sequence if we start with 2 and successively replace n with 2,3,4,...,n,n+1.
  * @author Georg Fischer
  */
 public class A076050 extends SimpleTransformSequence {

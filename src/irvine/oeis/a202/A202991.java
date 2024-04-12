@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A202991 E.g.f: Sum_{n&gt;=0} 3^(n^2) * exp(-2*3^n*x) * x^n/n!.
+ * A202991  E.g.f: Sum_{n&gt;=0} 3^(n^2) * exp(-2*3^n*x) * x^n/n!.
  * @author Georg Fischer
  */
 public class A202991 extends LambdaSequence {

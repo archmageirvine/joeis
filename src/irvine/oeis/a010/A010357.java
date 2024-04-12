@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A010357.
+ * A010357 Number of unlabeled nonseparable (or 2-connected) loopless multigraphs with n edges.
  * @author Sean A. Irvine
  */
 public class A010357 extends Sequence1 implements GraphProcessor {

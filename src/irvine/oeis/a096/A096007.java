@@ -8,7 +8,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A096007 Scan Pascal&apos;s triangle (A007318) from left to right, record smallest prime factor of each entry.
+ * A096007 Scan Pascal's triangle (A007318) from left to right, record smallest prime factor of each entry.
  * @author Georg Fischer
  */
 public class A096007 extends SimpleTransformSequence {

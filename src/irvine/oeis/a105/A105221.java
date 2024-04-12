@@ -6,7 +6,7 @@ import irvine.oeis.a010.A010051;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A105221 a(n) is the sum of n&apos;s distinct prime factors below n.
+ * A105221 a(n) is the sum of n's distinct prime factors below n.
  * @author Georg Fischer
  */
 public class A105221 extends TupleTransformSequence {

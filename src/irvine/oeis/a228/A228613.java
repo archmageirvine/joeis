@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A228613 Least prime factor of (2n+1)^(2n+1)+2
+ * A228613 Least prime factor of (2n+1)^(2n+1)+2.
  * @author Georg Fischer
  */
 public class A228613 extends LambdaSequence {

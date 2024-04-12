@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A123903 Total number of &quot;Emperors&quot; in all tournaments on n labeled nodes.
+ * A123903 Total number of "Emperors" in all tournaments on n labeled nodes.
  * @author Georg Fischer
  */
 public class A123903 extends LambdaSequence {

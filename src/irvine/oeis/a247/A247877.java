@@ -5,7 +5,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A247877 Least prime factor of A247683
+ * A247877 Least prime factor of A247683.
  * @author Georg Fischer
  */
 public class A247877 extends SimpleTransformSequence {

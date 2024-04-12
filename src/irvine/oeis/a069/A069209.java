@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069206.
+ * A069209 Orders of non-Abelian Z-groups.
  * @author Sean A. Irvine
  */
 public class A069209 extends Sequence1 {

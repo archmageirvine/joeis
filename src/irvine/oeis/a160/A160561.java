@@ -5,7 +5,7 @@ import irvine.oeis.FilterSequence;
 import irvine.oeis.a274.A274765;
 
 /**
- * A160561 Cyclops primes with circular digits {0, 6, 8, 9}.
+ * A160561 Cyclops primes with circular digits {0,6,8,9}.
  * @author Georg Fischer
  */
 public class A160561 extends FilterSequence {

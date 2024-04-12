@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001902;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A092053 Denominators of the convergents of the continued fraction expansion [1;1/2, 1/3, 1/4,..., 1/n,...].
+ * A092053 Denominators of the convergents of the continued fraction expansion [1;1/2,1/3,1/4,...,1/n,...].
  * @author Georg Fischer
  */
 public class A092053 extends TupleTransformSequence {

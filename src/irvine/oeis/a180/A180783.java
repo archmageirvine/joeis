@@ -6,7 +6,7 @@ import irvine.oeis.a060.A060594;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A180783 Number of distinct solutions of Sum_{i=1..1} (x(2i-1)*x(2i)) == 1 (mod n), with x() in {1, 2,...,n-1}.
+ * A180783 Number of distinct solutions of Sum_{i=1..1} (x(2i-1)*x(2i)) == 1 (mod n), with x() in {1,2,...,n-1}.
  * @author Georg Fischer
  */
 public class A180783 extends TupleTransformSequence {

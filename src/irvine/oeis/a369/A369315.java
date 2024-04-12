@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005036;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A369315 Number of chiral pairs of polyominoes composed of n square cells of the hyperbolic regular tiling with Schl√§fli symbol {4,oo}.
+ * A369315 Number of chiral pairs of polyominoes composed of n square cells of the hyperbolic regular tiling with Schl\u00e4fli symbol {4,oo}.
  * @author Georg Fischer
  */
 public class A369315 extends TupleTransformSequence {

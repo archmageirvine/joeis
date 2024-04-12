@@ -7,7 +7,7 @@ import irvine.oeis.a362.A362640;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
- * A187129 Consider all pairs of primes (p,q) with p+q = 2n, p &lt;= q; a(n) is the sum of all the q&apos;s.
+ * A187129 Consider all pairs of primes (p,q) with p+q = 2n, p &lt;= q; a(n) is the sum of all the q's.
  * @author Georg Fischer
  */
 public class A187129 extends SimpleTransformSequence {

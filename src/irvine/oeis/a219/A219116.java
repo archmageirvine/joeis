@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A219116 Number of semicomplete digraphs on n nodes with an &quot;Emperor&quot;.
+ * A219116 Number of semicomplete digraphs on n nodes with an "Emperor".
  * @author Georg Fischer
  */
 public class A219116 extends LambdaSequence {

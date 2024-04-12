@@ -5,7 +5,7 @@ import irvine.oeis.a068.A068346;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A368922 a(n) = n&apos; - n&apos;&apos;*2, where n&apos; is the arithmetic derivative of n, A003415(n) and n&apos;&apos; is the second arithmetic defivative, A068346(n).
+ * A368922 a(n) = n' - n''*2, where n' is the arithmetic derivative of n, A003415(n) and n'' is the second arithmetic defivative, A068346(n).
  * @author Georg Fischer
  */
 public class A368922 extends TupleTransformSequence {

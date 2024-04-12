@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A137729 Number of circular permutations of the multiset {1, 1, 2, 2,...,n,n} (up to rotations).
+ * A137729 Number of circular permutations of the multiset {1,1,2,2,...,n,n} (up to rotations).
  * @author Georg Fischer
  */
 public class A137729 extends LambdaSequence {

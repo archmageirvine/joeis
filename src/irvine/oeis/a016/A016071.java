@@ -3,7 +3,7 @@ package irvine.oeis.a016;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A010357.
+ * A016071 Successive pattern lengths of a conjectured Busy Beaver by Uwe Schult.
  * @author Sean A. Irvine
  */
 public class A016071 extends FiniteSequence {

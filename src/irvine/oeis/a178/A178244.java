@@ -7,7 +7,7 @@ import irvine.oeis.a070.A070939;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A178244 Number of distinct permutations of binary digits (0&apos;s and 1&apos;s) in n.
+ * A178244 Number of distinct permutations of binary digits (0's and 1's) in n.
  * @author Georg Fischer
  */
 public class A178244 extends TupleTransformSequence {

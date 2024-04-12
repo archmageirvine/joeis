@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A010357.
+ * A013588 Smallest positive integer not the determinant of an n X n {0,1}-matrix.
  * @author Sean A. Irvine
  */
 public class A013588 extends Sequence1 {

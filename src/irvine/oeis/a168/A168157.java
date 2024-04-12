@@ -7,7 +7,7 @@ import irvine.oeis.a095.A095375;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A168157 Number of 0&apos;s in the matrix whose lines are the binary expansion of the first n primes.
+ * A168157 Number of 0's in the matrix whose lines are the binary expansion of the first n primes.
  * @author Georg Fischer
  */
 public class A168157 extends TupleTransformSequence {

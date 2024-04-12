@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005040;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A369472 Number of achiral polyominoes composed of n pentagonal cells of the hyperbolic regular tiling with Schl√§fli symbol {5,oo}.
+ * A369472 Number of achiral polyominoes composed of n pentagonal cells of the hyperbolic regular tiling with Schl\u00e4fli symbol {5,oo}.
  * @author Georg Fischer
  */
 public class A369472 extends TupleTransformSequence {

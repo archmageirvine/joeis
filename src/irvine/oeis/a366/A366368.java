@@ -6,7 +6,7 @@ import irvine.oeis.a139.A139550;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A366368 a(n) = LCM of pairwise products of distinct integers from {1, 2,...,n}.
+ * A366368 a(n) = LCM of pairwise products of distinct integers from {1,2,...,n}.
  * @author Georg Fischer
  */
 public class A366368 extends TupleTransformSequence {

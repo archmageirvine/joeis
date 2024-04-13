@@ -13,6 +13,6 @@ public class A072081 extends FilterLambdaSequence {
 
   /** Construct the sequence. */
   public A072081() {
-    super(1, 1, v -> v.mod(Z.valueOf(Functions.DIGIT_SUM.l(10, v)).square()).isZero());
+    super(1, 1, v -> v.mod(Functions.DIGIT_SUM.z(10, v).square()).isZero());
   }
 }

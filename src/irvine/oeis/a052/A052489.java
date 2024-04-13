@@ -22,7 +22,7 @@ public class A052489 extends Sequence0 {
       nbd = nbd.add(1);
     }
     for (Z k = nbd.multiply(9 * mN); k.signum() > 0; k = k.subtract(1)) {
-      if (Z.valueOf(Functions.DIGIT_SUM.l(k)).multiply(mN).equals(k)) {
+      if (Functions.DIGIT_SUM.z(k).multiply(mN).equals(k)) {
         return k;
       }
     }

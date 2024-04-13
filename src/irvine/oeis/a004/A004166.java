@@ -29,7 +29,7 @@ public class A004166 extends Sequence0 {
 
   @Override
   public Z next() {
-    final Z result = Z.valueOf(Functions.DIGIT_SUM.l(mTerm));
+    final Z result = Functions.DIGIT_SUM.z(mTerm);
     mTerm = mTerm.multiply(mBase);
     return result;
   }

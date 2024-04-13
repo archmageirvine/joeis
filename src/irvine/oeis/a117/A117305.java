@@ -15,6 +15,6 @@ public class A117305 extends FilterSequence {
 
   /** Construct the sequence. */
   public A117305() {
-    super(1, new A000217(), v -> ZUtils.isPolygonal(Z.valueOf(Functions.DIGIT_SUM.l(v)), 5));
+    super(1, new A000217(), v -> ZUtils.isPolygonal(Functions.DIGIT_SUM.z(v), 5));
   }
 }

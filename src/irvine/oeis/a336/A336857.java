@@ -20,6 +20,6 @@ public class A336857 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Z.valueOf(Functions.DIGIT_SUM.l(mSeq.next()));
+    return Functions.DIGIT_SUM.z(mSeq.next());
   }
 }

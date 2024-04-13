@@ -13,6 +13,6 @@ public class A245350 extends A024652 {
 
   @Override
   public Z next() {
-    return Z.valueOf(Functions.DIGIT_SUM.l(super.next()));
+    return Functions.DIGIT_SUM.z(super.next());
   }
 }

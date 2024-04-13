@@ -12,7 +12,7 @@ public class A004085 extends A000010 {
 
   @Override
   public Z next() {
-    return Z.valueOf(Functions.DIGIT_SUM.l(super.next()));
+    return Functions.DIGIT_SUM.z(super.next());
   }
 }
 

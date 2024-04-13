@@ -13,6 +13,6 @@ public class A065408 extends FilterSequence {
 
   /** Construct the sequence. */
   public A065408() {
-    super(1, new A000290(), k -> Z.valueOf(Functions.DIGIT_SUM.l(k)).isProbablePrime());
+    super(1, new A000290(), k -> Functions.DIGIT_SUM.z(k).isProbablePrime());
   }
 }

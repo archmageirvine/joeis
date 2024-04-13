@@ -12,7 +12,7 @@ public class A068949 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A068949() {
-    super(1, new A068809(), k -> Z.valueOf(Functions.DIGIT_SUM.l(k)));
+    super(1, new A068809(), k -> Functions.DIGIT_SUM.z(k));
   }
 }
 

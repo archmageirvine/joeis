@@ -13,6 +13,6 @@ public class A070282 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A070282() {
-    super(1, (n, s) -> Z.valueOf(Functions.DIGIT_SUM.l(s[0])).pow(Functions.DIGIT_SUM.l(s[1])), "1,2", PREVIOUS, PREVIOUS);
+    super(1, (n, s) -> Functions.DIGIT_SUM.z(s[0]).pow(Functions.DIGIT_SUM.l(s[1])), "1,2", PREVIOUS, PREVIOUS);
   }
 }

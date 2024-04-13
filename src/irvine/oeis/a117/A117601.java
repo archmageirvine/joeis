@@ -29,7 +29,7 @@ public class A117601 extends A000931 {
       return Z.valueOf(mN); // fixed terms
     }
     Z result = super.next();
-    while (! result.remainder(Z.valueOf(Functions.DIGIT_SUM.l(result))).equals(Z.ZERO)) {
+    while (! result.remainder(Functions.DIGIT_SUM.z(result)).equals(Z.ZERO)) {
       result = super.next();
     }
     return result;

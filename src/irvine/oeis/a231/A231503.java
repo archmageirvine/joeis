@@ -35,7 +35,7 @@ public class A231503 extends Sequence0 {
     ++mN;
     Z sum = Z.ZERO;
     for (int i = 0; i <= mN; ++i) {
-      sum = sum.add(Z.valueOf(Functions.DIGIT_SUM.l(mBase, i)).pow(mPow));
+      sum = sum.add(Functions.DIGIT_SUM.z(mBase, i).pow(mPow));
     }
     return sum;
   }

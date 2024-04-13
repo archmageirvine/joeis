@@ -16,6 +16,6 @@ public class A066600 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(0, ++mN, k -> Z.valueOf(Functions.DIGIT_SUM.l(Binomial.binomial(mN, k))));
+    return Integers.SINGLETON.sum(0, ++mN, k -> Functions.DIGIT_SUM.z(Binomial.binomial(mN, k)));
   }
 }

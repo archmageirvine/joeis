@@ -13,7 +13,7 @@ public class A046713 extends A046703 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (Z.valueOf(Functions.DIGIT_SUM.l(p)).isProbablePrime()) {
+      if (Functions.DIGIT_SUM.z(p).isProbablePrime()) {
         return p;
       }
     }

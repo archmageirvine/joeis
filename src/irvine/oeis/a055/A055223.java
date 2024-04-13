@@ -13,9 +13,6 @@ public class A055223 extends A000866 {
   /** Construct the sequence. */
   public A055223() {
     super(2);
-  }
-
-  {
     super.next();
     super.next();
   }

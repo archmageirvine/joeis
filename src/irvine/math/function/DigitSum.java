@@ -44,6 +44,6 @@ class DigitSum extends AbstractFunction2 {
 
   @Override
   public Z z(final long base, final Z n) {
-    return Z.valueOf(l(base, n.longValueExact()));
+    return Z.valueOf(l(base, n));
   }
 }

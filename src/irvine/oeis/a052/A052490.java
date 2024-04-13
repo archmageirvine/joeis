@@ -22,7 +22,7 @@ public class A052490 extends Sequence1 {
       }
       boolean seen = false;
       for (Z k = nbd.multiply(9 * mN); k.signum() > 0; k = k.subtract(1)) {
-        if (Z.valueOf(Functions.DIGIT_SUM.l(k)).multiply(mN).equals(k)) {
+        if (Functions.DIGIT_SUM.z(k).multiply(mN).equals(k)) {
           if (seen) {
             seen = false; // More than 1 solution for mN
             break;

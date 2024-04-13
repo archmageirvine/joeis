@@ -24,7 +24,7 @@ public class A061672 extends Sequence1 {
   private void augment(final Z n) {
     for (long r = n.mod(10); r < 10; ++r) {
       final Z t = n.multiply(10).add(r);
-      final Z sum = Z.valueOf(Functions.DIGIT_SUM.l(t));
+      final Z sum = Functions.DIGIT_SUM.z(t);
       final Z prod = Functions.DIGIT_PRODUCT.z(t);
       final Z diff = prod.subtract(sum);
       if (diff.isZero()) {

@@ -20,7 +20,7 @@ public class A062099 extends A000217 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (ZUtils.isTriangular(Z.valueOf(Functions.DIGIT_SUM.l(t)))) {
+      if (ZUtils.isTriangular(Functions.DIGIT_SUM.z(t))) {
         return t;
       }
     }

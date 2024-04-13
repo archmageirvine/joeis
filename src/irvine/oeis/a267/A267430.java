@@ -18,7 +18,7 @@ public class A267430 extends A000290 {
   public Z next() {
     while (true) {
       final Z result = super.next();
-      if (!Z.valueOf(Functions.DIGIT_SUM.l(result)).isPrime()) {
+      if (!Functions.DIGIT_SUM.z(result).isPrime()) {
         return result;
       }
     }

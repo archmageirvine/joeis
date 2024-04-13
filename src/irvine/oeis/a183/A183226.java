@@ -19,7 +19,7 @@ public class A183226 extends Sequence0 {
 
   @Override
   public Z next() {
-    final Z result = Z.valueOf(Functions.DIGIT_SUM.l(5, mTerm));
+    final Z result = Functions.DIGIT_SUM.z(5, mTerm);
     mTerm = mTerm.multiply2();
     return result;
   }

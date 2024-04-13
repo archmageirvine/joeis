@@ -11,6 +11,6 @@ import irvine.math.z.Z;
 public class A352104 extends A352103 {
   @Override
   public Z next() {
-    return Z.valueOf(Functions.DIGIT_SUM.l(super.next()));
+    return Functions.DIGIT_SUM.z(super.next());
   }
 }

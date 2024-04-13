@@ -24,7 +24,7 @@ public class A059514 extends Sequence1 {
         return Z.ZERO;
       }
       final Z g = f.num().multiply(f.den());
-      f = new Q(g, Z.valueOf(Functions.DIGIT_SUM.l(f.num()) + Functions.DIGIT_SUM.l(f.den()) - 1));
+      f = new Q(g, Functions.DIGIT_SUM.z(f.num()).add(Functions.DIGIT_SUM.l(f.den()) - 1));
       if (f.isInteger()) {
         return f.toZ();
       }

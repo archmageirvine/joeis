@@ -15,7 +15,7 @@ public class A066308 extends Sequence1 {
   @Override
   public Z next() {
     final long v = ++mN;
-    return Z.valueOf(Functions.DIGIT_PRODUCT.l(v)).multiply(Functions.DIGIT_SUM.l(mN));
+    return Functions.DIGIT_PRODUCT.z(v).multiply(Functions.DIGIT_SUM.l(mN));
   }
 }
 

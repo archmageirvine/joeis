@@ -14,6 +14,6 @@ public class A245346 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A245346() {
-    super(0, new A024658(), v -> Z.valueOf(Functions.DIGIT_SUM.l(v)));
+    super(0, new A024658(), v -> Functions.DIGIT_SUM.z(v));
   }
 }

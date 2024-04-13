@@ -15,7 +15,7 @@ public class A087486 extends A000040 {
   protected Z mNP = null;
 
   protected boolean isOk() {
-    return Z.valueOf(Functions.DIGIT_SUM.l(mNP)).mod(Z.valueOf(Functions.DIGIT_SUM.l(Z.valueOf(mK)))).isZero();
+    return Functions.DIGIT_SUM.z(mNP).mod(Z.valueOf(Functions.DIGIT_SUM.l(Z.valueOf(mK)))).isZero();
   }
 
   @Override

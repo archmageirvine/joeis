@@ -16,6 +16,6 @@ public class A081652 extends A000040 {
   public Z next() {
     ++mN;
     final Z nextPrime = super.next();
-    return Z.valueOf(mN).gcd(Z.valueOf(Functions.DIGIT_SUM.l(nextPrime)));
+    return Z.valueOf(mN).gcd(Functions.DIGIT_SUM.z(nextPrime));
   }
 }

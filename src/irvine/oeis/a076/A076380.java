@@ -14,6 +14,6 @@ public class A076380 extends FilterLambdaSequence {
 
   /** Construct the sequence. */
   public A076380() {
-    super(0, 2, v -> Jaguar.factor(v).sopf().mod(Z.valueOf(Functions.DIGIT_SUM.l(2, v))).isZero());
+    super(0, 2, v -> Jaguar.factor(v).sopf().mod(Functions.DIGIT_SUM.z(2, v)).isZero());
   }
 }

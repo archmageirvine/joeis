@@ -22,7 +22,7 @@ public class A157662 extends A002808 {
   public Z next() {
     while (true) {
       final Z cn = super.next();
-      if (cn.mod(Z.TEN).equals(Z.valueOf(Functions.DIGIT_SUM.l(cn.divide(Z.TEN))))) {
+      if (cn.mod(Z.TEN).equals(Functions.DIGIT_SUM.z(cn.divide(Z.TEN)))) {
         return cn;
       }
     }

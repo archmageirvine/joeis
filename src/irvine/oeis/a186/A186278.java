@@ -13,6 +13,6 @@ public class A186278 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A186278() {
-    super(1, 0, k -> Z.valueOf(Functions.DIGIT_SUM.l(Z.valueOf(k)) + Functions.DIGIT_SUM.l(Z.valueOf(k).multiply(k))).isProbablePrime());
+    super(1, 0, k -> Functions.DIGIT_SUM.z(k).add(Functions.DIGIT_SUM.z(Z.valueOf(k).multiply(k))).isProbablePrime());
   }
 }

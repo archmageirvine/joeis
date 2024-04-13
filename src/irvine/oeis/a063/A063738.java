@@ -16,7 +16,7 @@ public class A063738 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Functions.DIGIT_PRODUCT.z(Jaguar.factor(++mN).sopfr()).equals(Z.valueOf(Functions.DIGIT_SUM.l(mN)))) {
+      if (Functions.DIGIT_PRODUCT.z(Jaguar.factor(++mN).sopfr()).equals(Functions.DIGIT_SUM.z(mN))) {
         return Z.valueOf(mN);
       }
     }

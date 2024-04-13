@@ -21,7 +21,7 @@ public class A064155 extends A000040 {
         mLimit = mLimit.multiply(10);
         ++mDigits;
       }
-      if (Functions.DIGIT_PRODUCT.z(p).equals(Z.valueOf(Functions.DIGIT_SUM.l(p)).multiply(mDigits))) {
+      if (Functions.DIGIT_PRODUCT.z(p).equals(Functions.DIGIT_SUM.z(p).multiply(mDigits))) {
         return p;
       }
     }

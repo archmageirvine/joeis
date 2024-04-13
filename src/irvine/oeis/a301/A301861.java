@@ -12,6 +12,6 @@ import irvine.oeis.a000.A000197;
 public class A301861 extends A000197 {
   @Override
   public Z next() {
-    return Z.valueOf(Functions.DIGIT_SUM.l(super.next()));
+    return Functions.DIGIT_SUM.z(super.next());
   }
 }

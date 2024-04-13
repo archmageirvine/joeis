@@ -13,6 +13,6 @@ public class A071785 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A071785() {
-    super(1, (p, e) -> Z.valueOf(Functions.DIGIT_SUM.l(10, p)).pow(e));
+    super(1, (p, e) -> Functions.DIGIT_SUM.z(10, p).pow(e));
   }
 }

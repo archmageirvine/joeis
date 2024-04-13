@@ -13,6 +13,6 @@ public class A174931 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A174931() {
-    super(1, n -> Z.valueOf(Functions.DIGIT_SUM.l(3, Z.TWO.pow(n))).divide(2));
+    super(1, n -> Functions.DIGIT_SUM.z(3, Z.TWO.pow(n)).divide(2));
   }
 }

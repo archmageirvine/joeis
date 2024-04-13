@@ -33,6 +33,6 @@ public class A043261 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Z.valueOf(Functions.DIGIT_SUM.l(mRadix, mSeq.next()));
+    return Functions.DIGIT_SUM.z(mRadix, mSeq.next());
   }
 }

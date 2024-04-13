@@ -15,7 +15,7 @@ public class A004092 extends Sequence0 {
   @Override
   public Z next() {
     mN += 2;
-    return Z.valueOf(Functions.DIGIT_SUM.l(mN));
+    return Functions.DIGIT_SUM.z(mN);
   }
 }
 

@@ -31,6 +31,6 @@ public class A004152 extends AbstractSequence {
     if (++mN > 1) {
       mF = mF.multiply(mN);
     }
-    return Z.valueOf(Functions.DIGIT_SUM.l(mF));
+    return Functions.DIGIT_SUM.z(mF);
   }
 }

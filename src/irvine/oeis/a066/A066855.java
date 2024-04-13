@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.math.partitions.FixedLengthPartition;
+import irvine.math.partition.FixedLengthPartition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;

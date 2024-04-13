@@ -1,7 +1,7 @@
 package irvine.oeis.a331;
 
 import irvine.math.group.SymmetricGroup;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;

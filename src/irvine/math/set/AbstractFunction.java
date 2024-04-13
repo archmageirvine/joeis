@@ -1,22 +1,21 @@
 package irvine.math.set;
 
+import java.util.HashSet;
+
 import irvine.math.IntegerUtils;
 import irvine.math.api.Function;
 import irvine.math.api.Set;
 
-import java.util.HashSet;
-
 /**
  * Default implementation of some function related methods.
- *
  * @author Sean A. Irvine
  * @param <D> domain element type
  * @param <R> codomain element type
  */
 public abstract class AbstractFunction<D, R> extends DefaultInfiniteEffort implements Function<D, R> {
 
-  private Set<D> mDomain;
-  private Set<R> mCodomain;
+  private final Set<D> mDomain;
+  private final Set<R> mCodomain;
 
   /**
    * A function from a domain into a codomain.

@@ -2,7 +2,7 @@ package irvine.oeis.a060;
 
 import java.util.HashMap;
 
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 
 /**

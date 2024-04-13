@@ -29,7 +29,7 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.nauty.Nauty;
 import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.PairMultiply;
 import irvine.math.polynomial.Polynomial;

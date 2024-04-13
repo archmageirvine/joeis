@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import irvine.math.IntegerUtils;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;

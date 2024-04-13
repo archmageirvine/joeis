@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;

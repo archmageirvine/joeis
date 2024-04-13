@@ -2,7 +2,7 @@ package irvine.oeis.a068;
 
 import java.util.Arrays;
 
-import irvine.math.partitions.FixedLengthPartition;
+import irvine.math.partition.FixedLengthPartition;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Conjectural;

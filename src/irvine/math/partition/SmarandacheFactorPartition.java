@@ -1,4 +1,4 @@
-package irvine.math.partitions;
+package irvine.math.partition;
 
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;

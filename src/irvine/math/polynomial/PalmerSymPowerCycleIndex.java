@@ -9,7 +9,7 @@ import irvine.math.MemoryFunction2;
 import irvine.math.Mobius;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;

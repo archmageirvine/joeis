@@ -2,7 +2,7 @@ package irvine.oeis.a056;
 
 import irvine.math.group.MatrixField;
 import irvine.math.matrix.DefaultMatrix;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;

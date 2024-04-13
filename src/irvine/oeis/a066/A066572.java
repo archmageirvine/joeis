@@ -12,7 +12,7 @@ import java.util.function.ToIntFunction;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.IntegerUtils;
-import irvine.math.partitions.FixedLengthPartition;
+import irvine.math.partition.FixedLengthPartition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;

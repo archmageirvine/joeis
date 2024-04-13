@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.math.MemoryFunctionInt3;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;

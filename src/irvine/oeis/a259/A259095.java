@@ -1,6 +1,6 @@
 package irvine.oeis.a259;
 
-import irvine.math.partitions.DistinctPartsPartition;
+import irvine.math.partition.DistinctPartsPartition;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 

@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import java.util.Arrays;
 import java.util.HashSet;
 
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.util.string.StringUtils;

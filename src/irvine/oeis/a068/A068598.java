@@ -6,7 +6,7 @@ import java.util.List;
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 import irvine.math.graph.MaximalCliques;
-import irvine.math.partitions.DistinctPartsPartition;
+import irvine.math.partition.DistinctPartsPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 

@@ -2,7 +2,7 @@ package irvine.oeis.a005;
 
 import irvine.math.MemoryFunction1;
 import irvine.math.factorial.MemoryFactorial;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 

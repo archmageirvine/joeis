@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.math.factorial.MemoryFactorial;
-import irvine.math.partitions.DistinctPartsPartition;
+import irvine.math.partition.DistinctPartsPartition;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;

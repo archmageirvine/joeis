@@ -8,7 +8,7 @@ import java.util.Set;
 
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 

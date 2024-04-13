@@ -2,7 +2,7 @@ package irvine.math.polynomial;
 
 import irvine.math.IntegerUtils;
 import irvine.math.group.SymmetricGroup;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 

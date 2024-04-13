@@ -3,8 +3,8 @@ package irvine.oeis.a068;
 import java.util.Arrays;
 import java.util.TreeSet;
 
-import irvine.math.partitions.FixedLengthPartition;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.FixedLengthPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 

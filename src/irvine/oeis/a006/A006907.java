@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
-import irvine.math.partitions.IntegerPartition;
-import irvine.math.partitions.MurnaghanNakayama;
+import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.MurnaghanNakayama;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 

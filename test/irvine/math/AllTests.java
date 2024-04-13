@@ -38,7 +38,7 @@ public class AllTests extends TestSuite {
     suite.addTest(irvine.math.matrix.AllTests.suite());
     suite.addTest(irvine.math.nauty.AllTests.suite());
     suite.addTest(irvine.math.padic.AllTests.suite());
-    suite.addTest(irvine.math.partitions.AllTests.suite());
+    suite.addTest(irvine.math.partition.AllTests.suite());
     suite.addTest(irvine.math.plantri.AllTests.suite());
     suite.addTest(irvine.math.polynomial.AllTests.suite());
     suite.addTest(irvine.math.q.AllTests.suite());

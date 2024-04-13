@@ -2,7 +2,7 @@ package irvine.oeis.a068;
 
 import irvine.math.MemoryFunction1;
 import irvine.math.group.SymmetricGroup;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.CycleIndexReadBigN;
 import irvine.math.polynomial.StandardMultiply;

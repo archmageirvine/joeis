@@ -1,7 +1,7 @@
 package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
-import irvine.math.partitions.DistinctPartsPartition;
+import irvine.math.partition.DistinctPartsPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 

@@ -1445,7 +1445,7 @@ public final class ZUtils {
   /**
    * Return the ceiling of the square root of an integer.
    * @param n integer
-   * @return ceiling of teh square root
+   * @return ceiling of the square root
    */
   public static Z ceilSqrt(final Z n) {
     final Z[] s = n.sqrtAndRemainder();

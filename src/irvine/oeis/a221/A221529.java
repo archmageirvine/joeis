@@ -2,7 +2,7 @@ package irvine.oeis.a221;
 // manually convol/convprod at 2023-07-10 09:57
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 

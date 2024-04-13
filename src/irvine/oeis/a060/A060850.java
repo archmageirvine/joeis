@@ -2,7 +2,7 @@ package irvine.oeis.a060;
 
 import irvine.math.MemoryFunction1;
 import irvine.math.group.PolynomialRing;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;

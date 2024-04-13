@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
 
 import irvine.math.api.Set;
 import irvine.math.factorial.MemoryFactorial;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;

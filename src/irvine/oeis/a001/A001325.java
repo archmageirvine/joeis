@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.ExtendedSymmetricGroupCycleIndex;
 import irvine.math.polynomial.HararyMultiply;

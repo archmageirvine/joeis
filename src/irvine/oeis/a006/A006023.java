@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.LongUtils;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;

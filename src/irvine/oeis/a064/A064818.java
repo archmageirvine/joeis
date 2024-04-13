@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import java.util.ArrayList;
 
 import irvine.math.factorial.MemoryFactorial;
-import irvine.math.partitions.IntegerComposition;
+import irvine.math.partition.IntegerComposition;
 import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;

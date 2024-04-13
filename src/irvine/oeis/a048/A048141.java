@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import irvine.math.partitions.DistinctOddPartsPartition;
+import irvine.math.partition.DistinctOddPartsPartition;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 

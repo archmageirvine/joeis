@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.math.partitions.IntegerComposition;
+import irvine.math.partition.IntegerComposition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;

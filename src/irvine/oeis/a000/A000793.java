@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.IntegerUtils;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 

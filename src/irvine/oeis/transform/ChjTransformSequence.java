@@ -9,7 +9,7 @@ import java.util.List;
 import irvine.math.IntegerUtils;
 import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;

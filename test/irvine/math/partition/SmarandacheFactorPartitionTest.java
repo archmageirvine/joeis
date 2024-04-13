@@ -1,4 +1,4 @@
-package irvine.math.partitions;
+package irvine.math.partition;
 
 import irvine.math.z.Z;
 import junit.framework.TestCase;

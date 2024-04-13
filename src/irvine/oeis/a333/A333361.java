@@ -3,7 +3,7 @@ package irvine.oeis.a333;
 import irvine.math.IntegerUtils;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.a052.A052107;

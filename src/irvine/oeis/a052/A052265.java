@@ -6,7 +6,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.Mobius;
 import irvine.math.group.PolynomialRing;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;

@@ -1,7 +1,7 @@
 package irvine.oeis.a036;
 // manually, copied from A000041, 2020-10-30
 
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 

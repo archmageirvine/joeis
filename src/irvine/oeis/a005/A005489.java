@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.PolynomialRing;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;

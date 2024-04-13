@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.partitions.DistinctPartsPartition;
+import irvine.math.partition.DistinctPartsPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 

@@ -6,7 +6,7 @@ import java.util.List;
 
 import irvine.math.group.PolynomialRing;
 import irvine.math.group.SymmetricGroup;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Integers;

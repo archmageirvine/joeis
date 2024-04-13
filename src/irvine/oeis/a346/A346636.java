@@ -1,7 +1,7 @@
 package irvine.oeis.a346;
 
 import irvine.math.IntegerUtils;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;

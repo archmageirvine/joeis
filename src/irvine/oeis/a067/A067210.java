@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;
 
-import irvine.math.partitions.FixedLengthPartition;
+import irvine.math.partition.FixedLengthPartition;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;

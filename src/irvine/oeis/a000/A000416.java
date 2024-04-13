@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.partitions.MultidimensionalIntegerPartition;
+import irvine.math.partition.MultidimensionalIntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 

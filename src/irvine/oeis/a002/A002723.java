@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import irvine.math.partitions.IntegerPartition;
-import irvine.math.partitions.MultidimensionalIntegerPartition;
-import irvine.math.partitions.MultidimensionalIntegerPartition.PartitionUser;
+import irvine.math.partition.IntegerPartition;
+import irvine.math.partition.MultidimensionalIntegerPartition;
+import irvine.math.partition.MultidimensionalIntegerPartition.PartitionUser;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction1Sequence;
 

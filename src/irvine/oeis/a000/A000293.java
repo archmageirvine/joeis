@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002836;
 

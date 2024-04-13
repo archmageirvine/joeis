@@ -1,6 +1,6 @@
 package irvine.oeis.a020;
 
-import irvine.math.partitions.IntegerComposition;
+import irvine.math.partition.IntegerComposition;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;

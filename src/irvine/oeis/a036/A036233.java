@@ -3,8 +3,8 @@ package irvine.oeis.a036;
 import java.util.ArrayList;
 import java.util.HashSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -33,7 +33,7 @@ public class A036233 extends Sequence1 {
     ++mN;
     for (final State sumSeq : mA) {
       if (sumSeq.mTail < mN) {
-        sumSeq.mTail += ZUtils.digitSum(sumSeq.mTail);
+        sumSeq.mTail += Functions.DIGIT_SUM.l(sumSeq.mTail);
         sumSeq.mMembers.add(sumSeq.mTail);
       }
       if (sumSeq.mMembers.contains(mN)) {

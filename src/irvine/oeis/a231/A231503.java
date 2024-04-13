@@ -1,7 +1,7 @@
 package irvine.oeis.a231;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -35,7 +35,7 @@ public class A231503 extends Sequence0 {
     ++mN;
     Z sum = Z.ZERO;
     for (int i = 0; i <= mN; ++i) {
-      sum = sum.add(Z.valueOf(ZUtils.digitSum(i, mBase)).pow(mPow));
+      sum = sum.add(Z.valueOf(Functions.DIGIT_SUM.l(mBase, i)).pow(mPow));
     }
     return sum;
   }

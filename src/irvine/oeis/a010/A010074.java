@@ -1,7 +1,7 @@
 package irvine.oeis.a010;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -22,7 +22,7 @@ public class A010074 extends Sequence0 {
       }
       mB = Z.ONE;
     } else {
-      final Z t = Z.valueOf(ZUtils.digitSum(mA, 7) + ZUtils.digitSum(mB, 7));
+      final Z t = Z.valueOf(Functions.DIGIT_SUM.l(7, mA) + Functions.DIGIT_SUM.l(7, mB));
       mA = mB;
       mB = t;
     }

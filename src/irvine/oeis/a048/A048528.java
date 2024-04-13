@@ -3,8 +3,8 @@ package irvine.oeis.a048;
 import java.util.Map;
 import java.util.TreeMap;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -32,7 +32,7 @@ public class A048528 extends Sequence1 {
   public Z next() {
     while (true) {
       while (isMoreNeeded()) {
-        final Z q = mP.add(ZUtils.digitSum(mP));
+        final Z q = mP.add(Functions.DIGIT_SUM.l(mP));
         if (q.isProbablePrime()) {
           final Long v = mA.putIfAbsent(q, 1L);
           if (v != null) {

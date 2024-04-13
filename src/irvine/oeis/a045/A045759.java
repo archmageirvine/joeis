@@ -2,8 +2,8 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -15,10 +15,10 @@ public class A045759 extends Sequence1 {
   private long mN = 6;
 
   static long f(final long n) {
-    long sum = ZUtils.digitSum(n);
+    long sum = Functions.DIGIT_SUM.l(n);
     final FactorSequence fs = Jaguar.factor(n);
     for (final Z p : fs.toZArray()) {
-      sum += fs.getExponent(p) * ZUtils.digitSum(p);
+      sum += fs.getExponent(p) * Functions.DIGIT_SUM.l(p);
     }
     return sum;
   }

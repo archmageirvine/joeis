@@ -1,9 +1,9 @@
 package irvine.oeis.a066;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -16,6 +16,6 @@ public class A066600 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(0, ++mN, k -> Z.valueOf(ZUtils.digitSum(Binomial.binomial(mN, k))));
+    return Integers.SINGLETON.sum(0, ++mN, k -> Z.valueOf(Functions.DIGIT_SUM.l(Binomial.binomial(mN, k))));
   }
 }

@@ -3,8 +3,8 @@ package irvine.oeis.a064;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.a002.A002808;
 
@@ -30,7 +30,7 @@ public class A064166 extends AbstractSequence {
       final FactorSequence fs = Jaguar.factor(c);
       long sum = 0;
       for (final Z p : fs.toZArray()) {
-        sum += ZUtils.digitSum(p) * fs.getExponent(p);
+        sum += Functions.DIGIT_SUM.l(p) * fs.getExponent(p);
       }
       if (mPrime.isPrime(sum)) {
         return c;

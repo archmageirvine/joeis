@@ -1,8 +1,8 @@
 package irvine.oeis.a094;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -18,7 +18,7 @@ public class A094501 extends Sequence0 {
     for (int k = 1; k < mCache.length; ++k) {
       long sum = 0;
       for (final Z t : Jaguar.factor(k).divisors()) {
-        sum += ZUtils.digitSum(t);
+        sum += Functions.DIGIT_SUM.l(t);
       }
       mCache[k] = sum;
     }
@@ -30,7 +30,7 @@ public class A094501 extends Sequence0 {
     }
     long sum = 0;
     for (final Z t : Jaguar.factor(m).divisors()) {
-      sum += ZUtils.digitSum(t);
+      sum += Functions.DIGIT_SUM.l(t);
     }
     return sum;
   }

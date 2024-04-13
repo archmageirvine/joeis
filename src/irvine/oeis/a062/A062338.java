@@ -1,6 +1,6 @@
 package irvine.oeis.a062;
 
-import irvine.math.z.ZUtils;
+import irvine.math.function.Functions;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
@@ -12,6 +12,6 @@ public class A062338 extends FilterSequence {
 
   /** Construct the sequence. */
   public A062338() {
-    super(new A000040(), k -> (ZUtils.digitSum(k) & 3) == 0);
+    super(new A000040(), k -> (Functions.DIGIT_SUM.l(k) & 3) == 0);
   }
 }

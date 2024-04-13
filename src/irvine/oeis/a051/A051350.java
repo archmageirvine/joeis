@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.a141.A141468;
 
@@ -22,7 +22,7 @@ public class A051350 extends AbstractSequence {
 
   @Override
   public Z next() {
-    mA = mA.add(ZUtils.digitSum(mSeq1.next()));
+    mA = mA.add(Functions.DIGIT_SUM.l(mSeq1.next()));
     return mA;
   }
 }

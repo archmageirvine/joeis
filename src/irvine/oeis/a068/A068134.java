@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000217;
 
@@ -18,7 +18,7 @@ public class A068134 extends A000217 {
     final Sequence triangular = new A000217();
     while (true) {
       ++k;
-      if (ZUtils.digitSum(triangular.next()) == target) {
+      if (Functions.DIGIT_SUM.l(triangular.next()) == target) {
         return Z.valueOf(k);
       }
     }

@@ -2,8 +2,8 @@ package irvine.oeis.a103;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -38,11 +38,11 @@ public class A103123 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       if (!mN.isProbablePrime()) {
-        final long d = ZUtils.digitSum(mN);
+        final long d = Functions.DIGIT_SUM.l(mN);
         final FactorSequence fs = Jaguar.factor(mN);
         long s = 0;
         for (final Z p : fs.toZArray()) {
-          s += ZUtils.digitSum(p) * fs.getExponent(p);
+          s += Functions.DIGIT_SUM.l(p) * fs.getExponent(p);
         }
         if (s * mDen == d * mNum) {
           return mN;

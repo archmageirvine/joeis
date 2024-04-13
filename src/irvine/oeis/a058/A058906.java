@@ -1,7 +1,7 @@
 package irvine.oeis.a058;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -27,7 +27,7 @@ public class A058906 extends Sequence1 {
   public Z next() {
     while (true) {
       long k = ++mN;
-      while (ZUtils.digitSum(k, mBase) * mN != k && k < HEURISTIC * mN) {
+      while (Functions.DIGIT_SUM.l(mBase, k) * mN != k && k < HEURISTIC * mN) {
         k += mN;
       }
       if (k == HEURISTIC * mN) {

@@ -1,8 +1,8 @@
 package irvine.oeis.a053;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000045;
 
 /**
@@ -22,7 +22,7 @@ public class A053056 extends A000045 {
       if (Z.ONE.equals(f)) {
         super.next(); // skip second 1
       }
-      final long d = ZUtils.digitSum(f);
+      final long d = Functions.DIGIT_SUM.l(f);
       if (Fibonacci.inverseFibonacci(Z.valueOf(d)) >= 0) {
         return f;
       }

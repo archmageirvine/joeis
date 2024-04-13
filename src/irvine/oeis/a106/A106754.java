@@ -1,7 +1,7 @@
 package irvine.oeis.a106;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -28,7 +28,7 @@ public class A106754 extends A000040 {
   @Override
   public Z next() {
     Z prime = super.next();
-    while (ZUtils.digitSum(prime) != mDigitSum) {
+    while (Functions.DIGIT_SUM.l(prime) != mDigitSum) {
       prime = super.next();
     }
     return prime;

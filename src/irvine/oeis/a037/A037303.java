@@ -1,8 +1,8 @@
 package irvine.oeis.a037;
 // manually, 2020-10-30
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -36,7 +36,7 @@ public class A037303 extends Sequence1 {
     boolean busy = true;
     while (busy) {
       ++mN;
-      busy = ZUtils.digitSum(mN, mBase1) != ZUtils.digitSum(mN, mBase2);
+      busy = Functions.DIGIT_SUM.l(mBase1, mN) != Functions.DIGIT_SUM.l(mBase2, mN);
     }
     return Z.valueOf(mN);
   }

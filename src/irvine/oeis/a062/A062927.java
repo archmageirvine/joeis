@@ -1,7 +1,7 @@
 package irvine.oeis.a062;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
@@ -30,7 +30,7 @@ public class A062927 extends Sequence1 {
     while (true) {
       ++mN;
       mA = mA.multiply(mMul);
-      if (ZUtils.digitSum(mA) % mN == 0) {
+      if (Functions.DIGIT_SUM.l(mA) % mN == 0) {
         return Z.valueOf(mN);
       }
       if (mVerbose && mN % 10000 == 0) {

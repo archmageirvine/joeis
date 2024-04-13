@@ -1,8 +1,8 @@
 package irvine.oeis.a068;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000290;
 import irvine.util.array.DynamicArray;
 
@@ -22,7 +22,7 @@ public class A068833 extends A000290 {
     while (mFirsts.get(mN) == null) {
       final Z start = mS;
       int cnt = 0;
-      while (LongUtils.isSquare(ZUtils.digitSum(mS))) {
+      while (LongUtils.isSquare(Functions.DIGIT_SUM.l(mS))) {
         mS = super.next();
         ++cnt;
       }

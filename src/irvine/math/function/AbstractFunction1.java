@@ -21,7 +21,7 @@ public abstract class AbstractFunction1 implements Function1 {
 
   @Override
   public Z z(final int n) {
-    return z(Z.valueOf(n));
+    return z((long) n);
   }
 
   @Override
@@ -36,7 +36,7 @@ public abstract class AbstractFunction1 implements Function1 {
 
   @Override
   public long l(final int n) {
-    return z(n).longValueExact();
+    return l((long) n);
   }
 
   @Override
@@ -51,6 +51,6 @@ public abstract class AbstractFunction1 implements Function1 {
 
   @Override
   public int i(final int n) {
-    return z(n).intValueExact();
+    return i((long) n);
   }
 }

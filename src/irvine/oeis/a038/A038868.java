@@ -1,7 +1,7 @@
 package irvine.oeis.a038;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -30,7 +30,7 @@ public class A038868 extends Sequence1 {
         mLim *= 10;
         ++mDigits;
       }
-      if (contains(mDigits, ZUtils.digitSum(mN), mN)) {
+      if (contains(mDigits, Functions.DIGIT_SUM.l(mN), mN)) {
         return Z.valueOf(mN);
       }
     }

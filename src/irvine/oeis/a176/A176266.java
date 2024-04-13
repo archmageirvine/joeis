@@ -1,8 +1,8 @@
 package irvine.oeis.a176;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.a000.A000040;
 
@@ -13,7 +13,7 @@ import irvine.oeis.a000.A000040;
 public class A176266 extends AbstractSequence {
 
   private int mN = 0;
-  private A000040 mSeq1 = new A000040();
+  private final A000040 mSeq1 = new A000040();
 
   /** Construct the sequence. */
   public A176266() {
@@ -24,6 +24,6 @@ public class A176266 extends AbstractSequence {
   public Z next() {
     ++mN;
     final Z p = mSeq1.next();
-    return Binomial.binomial(p.intValue(), ZUtils.digitSum(mN)).divide(p);
+    return Binomial.binomial(p.intValue(), Functions.DIGIT_SUM.l(mN)).divide(p);
   }
 }

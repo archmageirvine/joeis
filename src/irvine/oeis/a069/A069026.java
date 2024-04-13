@@ -1,7 +1,7 @@
 package irvine.oeis.a069;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicArray;
 
@@ -17,7 +17,7 @@ public class A069026 extends Sequence1 {
 
   private void step() {
     mA = mA == null ? Z.ONE : mA.shiftLeft(2);
-    final long ds = ZUtils.digitSum(mA);
+    final long ds = Functions.DIGIT_SUM.l(mA);
     if (mFirsts.get(ds) == null) {
       if (ds < mN) {
         throw new RuntimeException("Heuristic failed: " + ds + " previously reported as 0 should be " + mA);

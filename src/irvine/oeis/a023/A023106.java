@@ -1,7 +1,7 @@
 package irvine.oeis.a023;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -19,7 +19,7 @@ public class A023106 extends Sequence0 {
       if (mN.compareTo(Z.TEN) < 0) {
         return mN;
       }
-      final long s = ZUtils.digitSum(mN);
+      final long s = Functions.DIGIT_SUM.l(mN);
       if (s > 1 && mN.mod(s) == 0 && mN.equals(Z.valueOf(s).pow(Math.round(mN.log(s))))) {
         return mN;
       }

@@ -1,8 +1,8 @@
 package irvine.oeis.a007;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -20,12 +20,12 @@ public class A007513 extends Sequence1 {
     long p = 1;
     while (true) {
       p = mPrime.nextPrime(p);
-      final long d = ZUtils.digitSum(p);
+      final long d = Functions.DIGIT_SUM.l(p);
       long q = p;
       for (long k = 0; k < mN; ++k) {
         q = mPrime.nextPrime(q);
       }
-      if (d == ZUtils.digitSum(q)) {
+      if (d == Functions.DIGIT_SUM.l(q)) {
         return Z.valueOf(p);
       }
     }

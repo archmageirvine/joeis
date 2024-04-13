@@ -1,7 +1,7 @@
 package irvine.oeis.a062;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000290;
 import irvine.util.array.LongDynamicArray;
 
@@ -25,7 +25,7 @@ public class A062685 extends A000290 {
     }
     while (mFirsts.get(mN) == null) {
       final Z sq = super.next();
-      final long d = ZUtils.digitSum(sq);
+      final long d = Functions.DIGIT_SUM.l(sq);
       if (mFirsts.get(d) == null) {
         mFirsts.set(d, sq);
       }

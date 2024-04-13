@@ -1,8 +1,8 @@
 package irvine.oeis.a062;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -17,7 +17,8 @@ public class A062713 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long d = ZUtils.digitSum(++mN);
+      final long v = ++mN;
+      final long d = Functions.DIGIT_SUM.l(v);
       if (mN % d == 0 && mPrime.isPrime(d)) {
         return Z.valueOf(mN);
       }

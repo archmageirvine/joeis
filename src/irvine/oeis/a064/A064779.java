@@ -1,5 +1,6 @@
 package irvine.oeis.a064;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -12,7 +13,7 @@ import irvine.oeis.a000.A000040;
 public class A064779 extends A000040 {
 
   private boolean is(final Z p) {
-    if (mPrime.isPrime(ZUtils.digitSum(p))) {
+    if (mPrime.isPrime(Functions.DIGIT_SUM.l(p))) {
       final int[] counts = ZUtils.digitCounts(p);
       if (counts[0] == 0) {
         Q sum = Q.ZERO;

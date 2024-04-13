@@ -1,8 +1,8 @@
 package irvine.oeis.a336;
 // manually knest at 2023-03-13
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006003;
 
@@ -20,6 +20,6 @@ public class A336857 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Z.valueOf(ZUtils.digitSum(mSeq.next()));
+    return Z.valueOf(Functions.DIGIT_SUM.l(mSeq.next()));
   }
 }

@@ -1,7 +1,7 @@
 package irvine.oeis.a048;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a031.A031955;
 
 /**
@@ -14,7 +14,7 @@ public class A048518 extends A031955 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (t.isProbablePrime() && ZUtils.digitSum(t) == 28) {
+      if (t.isProbablePrime() && Functions.DIGIT_SUM.l(t) == 28) {
         return t;
       }
     }

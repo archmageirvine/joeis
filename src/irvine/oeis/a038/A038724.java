@@ -1,7 +1,7 @@
 package irvine.oeis.a038;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -15,7 +15,8 @@ public class A038724 extends Sequence0 {
   @Override
   public Z next() {
     final StringBuilder sb = new StringBuilder();
-    sb.append(ZUtils.digitSum(++mN));
+    final long v = ++mN;
+    sb.append(Functions.DIGIT_SUM.l(v));
     final String s = String.valueOf(mN);
     for (int k = 1; k < s.length(); ++k) {
       sb.append(Math.abs(s.charAt(k) - s.charAt(k - 1)));

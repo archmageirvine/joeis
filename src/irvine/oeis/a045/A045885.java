@@ -2,8 +2,8 @@ package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence2;
 
 /**
@@ -25,7 +25,7 @@ public class A045885 extends Sequence2 {
     while ((mN - 1) * (Math.log(++m) / ln + 2) * 2 * (LongUtils.sqrt(m) + 1) >= m) {
       Z s = Z.ZERO;
       for (final Z d : Jaguar.factor(m).divisors()) {
-        s = s.add(ZUtils.digitSum(d, mN));
+        s = s.add(Functions.DIGIT_SUM.l(mN, d));
       }
       if (s.longValueExact() == m) {
         res = m;

@@ -2,8 +2,8 @@ package irvine.oeis.a051;
 
 import java.util.TreeSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -19,7 +19,7 @@ public class A051374 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      mExcluded.add(mN.add(ZUtils.digitSum(mN.square())));
+      mExcluded.add(mN.add(Functions.DIGIT_SUM.l(mN.square())));
       if (!mExcluded.remove(mN)) {
         return mN;
       }

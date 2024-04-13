@@ -1,8 +1,8 @@
 package irvine.oeis.a068;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -25,7 +25,7 @@ public class A068896 extends Sequence1 {
         mLim *= 100;
         mMod *= 10;
       }
-      if (ZUtils.digitSum(mP % mMod) == ZUtils.digitSum(mP / mMod)) {
+      if (Functions.DIGIT_SUM.l(mP % mMod) == Functions.DIGIT_SUM.l(mP / mMod)) {
         return Z.valueOf(mP);
       }
     }

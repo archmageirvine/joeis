@@ -1,8 +1,8 @@
 package irvine.oeis.a053;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000290;
 
 /**
@@ -19,7 +19,7 @@ public class A053057 extends A000290 {
   public Z next() {
     while (true) {
       final Z square = super.next();
-      final long d = ZUtils.digitSum(square);
+      final long d = Functions.DIGIT_SUM.l(square);
       final long s = LongUtils.sqrt(d);
       if (s * s == d) {
         return square;

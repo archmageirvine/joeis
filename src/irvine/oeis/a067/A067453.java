@@ -1,5 +1,6 @@
 package irvine.oeis.a067;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -15,7 +16,8 @@ public class A067453 extends Sequence0 {
 
   @Override
   public Z next() {
-    final long sum = ZUtils.digitSum(++mN);
+    final long v = ++mN;
+    final long sum = Functions.DIGIT_SUM.l(v);
     final long prod = ZUtils.digitNZProduct(mN, 10);
     return Binomial.binomial(Math.max(sum, prod), Math.min(sum, prod));
   }

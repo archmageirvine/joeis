@@ -1,7 +1,7 @@
 package irvine.oeis.a058;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -17,7 +17,7 @@ public class A058225 extends Sequence1 {
 
   private boolean isInconsummate(final long n, final long base) {
     for (long m = n; m < HEURISTIC_LIMIT * n * n; m += n) {
-      if (m == n * ZUtils.digitSum(m, base)) {
+      if (m == n * Functions.DIGIT_SUM.l(base, m)) {
         return false;
       }
     }

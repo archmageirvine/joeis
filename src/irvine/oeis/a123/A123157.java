@@ -1,8 +1,8 @@
 package irvine.oeis.a123;
 // manually 2024-03-14
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.a000.A000040;
 
@@ -19,11 +19,11 @@ public class A123157 extends A000040 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return Z.valueOf(ZUtils.digitSum(super.a(n).square()));
+    return Z.valueOf(Functions.DIGIT_SUM.l(super.a(n).square()));
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(ZUtils.digitSum(super.next().square()));
+    return Z.valueOf(Functions.DIGIT_SUM.l(super.next().square()));
   }
 }

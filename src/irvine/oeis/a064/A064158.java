@@ -1,6 +1,7 @@
 package irvine.oeis.a064;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -18,7 +19,7 @@ public class A064158 extends Sequence1 {
     while (true) {
       final long prod = ZUtils.digitProduct(++mN);
       if (prod != 0) {
-        final long sum = ZUtils.digitSum(mN);
+        final long sum = Functions.DIGIT_SUM.l(mN);
         if (Jaguar.factor(sum).largestPrimeFactor().longValue() > 7) {
           continue;
         }

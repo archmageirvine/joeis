@@ -1,7 +1,7 @@
 package irvine.oeis.a052;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -22,7 +22,7 @@ public class A052490 extends Sequence1 {
       }
       boolean seen = false;
       for (Z k = nbd.multiply(9 * mN); k.signum() > 0; k = k.subtract(1)) {
-        if (Z.valueOf(ZUtils.digitSum(k)).multiply(mN).equals(k)) {
+        if (Z.valueOf(Functions.DIGIT_SUM.l(k)).multiply(mN).equals(k)) {
           if (seen) {
             seen = false; // More than 1 solution for mN
             break;

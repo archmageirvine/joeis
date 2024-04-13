@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -20,7 +20,7 @@ public class A003052 extends Sequence1 {
   public static boolean isColumbian(final long n) {
     boolean ok = true;
     for (int k = 0; k <= n; ++k) {
-      if (k + ZUtils.digitSum(k) == n) {
+      if (k + Functions.DIGIT_SUM.l((long) k) == n) {
         ok = false;
         break;
       }

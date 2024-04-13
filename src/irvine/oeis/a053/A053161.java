@@ -1,6 +1,7 @@
 package irvine.oeis.a053;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a019.A019518;
@@ -37,7 +38,7 @@ public class A053161 extends A019518 {
   @Override
   public Z next() {
     final Z m = super.next();
-    if (ZUtils.digitSum(m) % 3 == 0) {
+    if (Functions.DIGIT_SUM.l(m) % 3 == 0) {
       return Z.ZERO;
     }
     final Permutation perm = reversePermuter(m);

@@ -1,8 +1,8 @@
 package irvine.oeis.a066;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002025;
@@ -21,7 +21,7 @@ public class A066871 extends Sequence1 {
   }
 
   private boolean isHarshad(final Z n) {
-    return n.mod(ZUtils.digitSum(n)) == 0;
+    return n.mod(Functions.DIGIT_SUM.l(n)) == 0;
   }
 
   @Override

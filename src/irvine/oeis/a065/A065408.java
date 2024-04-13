@@ -1,7 +1,7 @@
 package irvine.oeis.a065;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000290;
 
@@ -13,6 +13,6 @@ public class A065408 extends FilterSequence {
 
   /** Construct the sequence. */
   public A065408() {
-    super(1, new A000290(), k -> Z.valueOf(ZUtils.digitSum(k)).isProbablePrime());
+    super(1, new A000290(), k -> Z.valueOf(Functions.DIGIT_SUM.l(k)).isProbablePrime());
   }
 }

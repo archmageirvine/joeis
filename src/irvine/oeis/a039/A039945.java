@@ -1,8 +1,8 @@
 package irvine.oeis.a039;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -14,9 +14,9 @@ public class A039945 extends Sequence1 {
   private long mN = 2;
 
   private long f(final long k) {
-    long sum = ZUtils.digitSum(k);
+    long sum = Functions.DIGIT_SUM.l(k);
     for (final Z p : Jaguar.factor(k).toZArray()) {
-      sum += ZUtils.digitSum(p);
+      sum += Functions.DIGIT_SUM.l(p);
     }
     return sum;
   }

@@ -1,5 +1,6 @@
 package irvine.oeis.a038;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -16,7 +17,7 @@ public class A038366 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (mN.mod(ZUtils.digitProduct(mN).add(ZUtils.digitSum(mN))).isZero()) {
+      if (mN.mod(ZUtils.digitProduct(mN).add(Functions.DIGIT_SUM.l(mN))).isZero()) {
         return mN;
       }
     }

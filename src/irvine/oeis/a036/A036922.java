@@ -2,8 +2,8 @@ package irvine.oeis.a036;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -23,7 +23,7 @@ public class A036922 extends Sequence1 {
       for (final Z p : fs.toZArray()) {
         sum = sum.add(p.multiply(fs.getExponent(p)));
       }
-      if (ZUtils.digitSum(mN) == ZUtils.digitSum(sum)) {
+      if (Functions.DIGIT_SUM.l(mN) == Functions.DIGIT_SUM.l(sum)) {
         return mN;
       }
     }

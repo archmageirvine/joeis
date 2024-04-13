@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -33,7 +33,7 @@ public class A067499 extends AbstractSequence {
    * @return true (false) if the condition is (not) fulfilled.
    */
   protected boolean condition() {
-    final long sum = ZUtils.digitSum(mPow);
+    final long sum = Functions.DIGIT_SUM.l(mPow);
     long prod = 1;
     while (prod < sum) {
       prod *= mBase;

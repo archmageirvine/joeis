@@ -1,7 +1,7 @@
 package irvine.oeis.a279;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -34,7 +34,7 @@ public class A279768 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (ZUtils.digitSum(mN.multiply(mBase)) == mSum) {
+      if (Functions.DIGIT_SUM.l(mN.multiply(mBase)) == mSum) {
         return mN;
       }
     }

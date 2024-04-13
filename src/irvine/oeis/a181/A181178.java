@@ -1,7 +1,7 @@
 package irvine.oeis.a181;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -19,7 +19,7 @@ public class A181178 extends Sequence1 {
     int k = 0;
     while (count < mN) {
       ++k;
-      if (String.valueOf(k).indexOf('0') < 0 && ZUtils.digitSum(k, 10) == mN) {
+      if (String.valueOf(k).indexOf('0') < 0 && Functions.DIGIT_SUM.l(10, k) == mN) {
         ++count;
       }
     }

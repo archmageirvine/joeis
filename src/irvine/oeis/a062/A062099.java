@@ -1,5 +1,6 @@
 package irvine.oeis.a062;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000217;
@@ -19,7 +20,7 @@ public class A062099 extends A000217 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (ZUtils.isTriangular(Z.valueOf(ZUtils.digitSum(t)))) {
+      if (ZUtils.isTriangular(Z.valueOf(Functions.DIGIT_SUM.l(t)))) {
         return t;
       }
     }

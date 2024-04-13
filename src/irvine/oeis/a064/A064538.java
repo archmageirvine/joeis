@@ -1,8 +1,8 @@
 package irvine.oeis.a064;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -20,7 +20,7 @@ public class A064538 extends Sequence0 {
     Z prod = Z.valueOf(mN + 1);
     final long lim = (mN + 2) / (2 + (mN & 1));
     for (long p = 2; p <= lim; p = mPrime.nextPrime(p)) {
-      if (ZUtils.digitSum(mN + 1, p) >= p) {
+      if (Functions.DIGIT_SUM.l(p, mN + 1) >= p) {
         prod = prod.multiply(p);
       }
     }

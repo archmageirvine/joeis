@@ -2,8 +2,8 @@ package irvine.oeis.a061;
 
 import java.util.HashSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -19,7 +19,7 @@ public class A061903 extends Sequence0 {
     long t = ++mN;
     final HashSet<Long> seen = new HashSet<>();
     while (true) {
-      t = ZUtils.digitSum(t * t);
+      t = Functions.DIGIT_SUM.l(t * t);
       if (!seen.add(t)) {
         return Z.valueOf(seen.size());
       }

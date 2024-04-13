@@ -1,8 +1,8 @@
 package irvine.oeis.a061;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 
 /**
  * A061911 Square root of the sum of the digits of k^2 when this sum is a square.
@@ -15,7 +15,7 @@ public class A061911 extends A061910 {
   @Override
   public Z next() {
     while (true) {
-      final long t = ZUtils.digitSum(Z.valueOf(++mN).square());
+      final long t = Functions.DIGIT_SUM.l(Z.valueOf(++mN).square());
       if (LongUtils.isSquare(t)) {
         return Z.valueOf(LongUtils.sqrt(t));
       }

@@ -1,5 +1,6 @@
 package irvine.oeis.a064;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
@@ -21,7 +22,7 @@ public class A064155 extends A000040 {
         mLimit = mLimit.multiply(10);
         ++mDigits;
       }
-      if (ZUtils.digitProduct(p).equals(Z.valueOf(ZUtils.digitSum(p)).multiply(mDigits))) {
+      if (ZUtils.digitProduct(p).equals(Z.valueOf(Functions.DIGIT_SUM.l(p)).multiply(mDigits))) {
         return p;
       }
     }

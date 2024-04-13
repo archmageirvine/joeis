@@ -1,7 +1,7 @@
 package irvine.oeis.a157;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002808;
 
 /**
@@ -22,7 +22,7 @@ public class A157662 extends A002808 {
   public Z next() {
     while (true) {
       final Z cn = super.next();
-      if (cn.mod(Z.TEN).equals(Z.valueOf(ZUtils.digitSum(cn.divide(Z.TEN))))) {
+      if (cn.mod(Z.TEN).equals(Z.valueOf(Functions.DIGIT_SUM.l(cn.divide(Z.TEN))))) {
         return cn;
       }
     }

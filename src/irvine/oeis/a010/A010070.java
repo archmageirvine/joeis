@@ -2,8 +2,8 @@ package irvine.oeis.a010;
 
 import java.util.TreeSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.ComplementSequence;
 import irvine.oeis.Sequence0;
 
@@ -22,7 +22,7 @@ public class A010070 extends ComplementSequence {
       @Override
       public Z next() {
         while (mSet.isEmpty() || mSet.first().compareTo(mN) >= 0) {
-          mSet.add(mN.add(ZUtils.digitSum(mN, 8)));
+          mSet.add(mN.add(Functions.DIGIT_SUM.l(8, mN)));
           mN = mN.add(1);
         }
         return mSet.pollFirst();

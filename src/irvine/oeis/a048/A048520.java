@@ -2,8 +2,8 @@ package irvine.oeis.a048;
 
 import java.util.TreeSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -29,7 +29,7 @@ public class A048520 extends A000040 {
   public Z next() {
     // Slightly tricky to make sure we generate in order
     while (isMoreNeeded()) {
-      final Z q = mP.add(ZUtils.digitSum(mP));
+      final Z q = mP.add(Functions.DIGIT_SUM.l(mP));
       if (q.isProbablePrime()) {
         mA.add(q);
       }

@@ -2,8 +2,8 @@ package irvine.oeis.a019;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -19,10 +19,10 @@ public class A019506 extends Sequence1 {
   public Z next() {
     while (true) {
       if (!mPrime.isPrime(++mN)) {
-        final long dSum = ZUtils.digitSum(mN);
+        final long dSum = Functions.DIGIT_SUM.l(mN);
         long pSum = 0;
         for (final Z p : Jaguar.factor(mN).toZArray()) {
-          pSum += ZUtils.digitSum(p);
+          pSum += Functions.DIGIT_SUM.l(p);
           if (pSum > dSum) {
             break;
           }

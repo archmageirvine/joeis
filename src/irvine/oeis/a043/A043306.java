@@ -1,7 +1,7 @@
 package irvine.oeis.a043;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -30,7 +30,7 @@ public class A043306 extends AbstractSequence {
     ++mN;
     long sum = 0;
     for (long base = 2; base <= mN; ++base) {
-      sum += ZUtils.digitSum(mN, base);
+      sum += Functions.DIGIT_SUM.l(base, mN);
     }
     return Z.valueOf(sum);
   }

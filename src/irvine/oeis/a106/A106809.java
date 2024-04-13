@@ -2,8 +2,8 @@ package irvine.oeis.a106;
 
 import java.util.TreeSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.prime.ConsecutiveSequence;
 
 /**
@@ -40,7 +40,7 @@ public class A106809 extends ConsecutiveSequence {
     mP1 = mFastPrime.nextPrime(mP);
     ++mPrimeNo;
     mTerms[mPix] = mP1;
-    mDiffs[mPix] = ZUtils.digitSum(mP1);
+    mDiffs[mPix] = Functions.DIGIT_SUM.l(mP1);
     ++mPix;
     mPix &= mMask;
     mP = mP1;

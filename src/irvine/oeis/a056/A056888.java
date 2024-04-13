@@ -1,7 +1,7 @@
 package irvine.oeis.a056;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
 
@@ -18,7 +18,7 @@ public class A056888 extends Sequence1 {
 
   private void step() {
     mA = mA.multiply(9);
-    final long sum = ZUtils.digitSum(mA) / 9;
+    final long sum = Functions.DIGIT_SUM.l(mA) / 9;
     mCounts.increment(sum);
     if (sum <= mN) {
       throw new RuntimeException("Heuristic failed: " + sum + " observed while working on " + mN);

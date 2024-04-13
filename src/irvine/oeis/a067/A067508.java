@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -32,7 +32,7 @@ public class A067508 extends AbstractSequence {
   @Override
   public Z next() {
     mPow = mPow.multiply(mBase);
-    while (ZUtils.digitSum(mPow) % mBase != 0) {
+    while (Functions.DIGIT_SUM.l(mPow) % mBase != 0) {
       mPow = mPow.multiply(mBase);
     }
     return mPow;

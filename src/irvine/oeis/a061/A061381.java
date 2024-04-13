@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence2;
 
 /**
@@ -19,7 +19,7 @@ public class A061381 extends Sequence2 {
     while (true) {
       long k = mM;
       final long limit = 10 * mN * mM; // heuristic?
-      while (ZUtils.digitSum(k, mN) * mM != k && k < limit) {
+      while (Functions.DIGIT_SUM.l(mN, k) * mM != k && k < limit) {
         k += mM;
       }
       if (k != limit) {

@@ -13,6 +13,7 @@ import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.cr.CR;
+import irvine.math.function.Functions;
 import irvine.util.CollectionUtils;
 import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicIntArray;
@@ -33,7 +34,12 @@ public final class ZUtils {
   private static final DynamicArray<Z> BASE_POWER = new DynamicArray<>();
   private static final DynamicIntArray LOG_BASE_POWER = new DynamicIntArray();
 
-  private static Z basePower(final int base) {
+  /**
+   * Largest power of a base that fits in a long.
+   * @param base the base
+   * @return the power
+   */
+  public static Z basePower(final int base) {
     final Z bp = BASE_POWER.get(base);
     if (bp != null) {
       return bp;
@@ -139,62 +145,12 @@ public final class ZUtils {
   }
 
   /**
-   * Compute the sum of the digits in an integer.
-   * @param v integer
-   * @param base the base
-   * @return sum of digits
-   */
-  public static long digitSum(long v, final long base) {
-    long sum = 0;
-    while (v != 0) {
-      sum += v % base;
-      v /= base;
-    }
-    return sum;
-  }
-
-  /**
-   * Compute the sum of the digits in an integer.
-   * @param v integer
-   * @param base the base
-   * @return sum of digits
-   */
-  public static long digitSum(Z v, final int base) {
-    final Z bp = basePower(base);
-    long sum = 0;
-    while (!v.isZero()) {
-      final Z[] qr = v.divideAndRemainder(bp);
-      sum += digitSum(qr[1].longValue(), base);
-      v = qr[0];
-    }
-    return sum;
-  }
-
-  /**
-   * Compute the sum of the digits in an integer.
-   * @param v integer
-   * @return sum of digits
-   */
-  public static long digitSum(final long v) {
-    return digitSum(v, 10);
-  }
-
-  /**
-   * Compute the sum of the digits in an integer.
-   * @param v integer
-   * @return sum of digits
-   */
-  public static long digitSum(final Z v) {
-    return digitSum(v, 10);
-  }
-
-  /**
    * Return the digital root of a number.
    * @param v number
    * @return digital root
    */
   public static long digitalRoot(final long v) {
-    return v < 10 ? v : digitalRoot(digitSum(v));
+    return v < 10 ? v : digitalRoot(Functions.DIGIT_SUM.l(v));
   }
 
   /**
@@ -203,7 +159,7 @@ public final class ZUtils {
    * @return digital root
    */
   public static long digitalRoot(final Z v) {
-    return v.compareTo(Z.TEN) < 0 ? v.longValue() : digitalRoot(digitSum(v));
+    return v.compareTo(Z.TEN) < 0 ? v.longValue() : digitalRoot(Functions.DIGIT_SUM.l(v));
   }
 
   /**
@@ -349,9 +305,9 @@ public final class ZUtils {
    * @return iterated sum of digits
    */
   public static long digitSumRoot(final long v, final int base) {
-    long root = digitSum(v, base);
+    long root = Functions.DIGIT_SUM.l(base, v);
     while (root >= base) {
-      root = digitSum(root, base);
+      root = Functions.DIGIT_SUM.l(base, root);
     }
     return root;
   }
@@ -372,9 +328,9 @@ public final class ZUtils {
    * @return iterated sum of digits
    */
   public static Z digitSumRoot(final Z v, final int base) {
-    long root = digitSum(v, base);
+    long root = Functions.DIGIT_SUM.l(base, v);
     while (root >= base) {
-      root = digitSum(root, base);
+      root = Functions.DIGIT_SUM.l(base, root);
     }
     return Z.valueOf(root);
   }

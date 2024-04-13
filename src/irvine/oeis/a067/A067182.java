@@ -2,8 +2,8 @@ package irvine.oeis.a067;
 
 import java.util.HashMap;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000045;
 
 /**
@@ -17,7 +17,7 @@ public class A067182 extends A000045 {
 
   private void step() {
     final Z f = super.next();
-    final long d = ZUtils.digitSum(f);
+    final long d = Functions.DIGIT_SUM.l(f);
     if (!mFirstSolutions.containsKey(d)) {
       mFirstSolutions.put(d, f);
       if (d <= mN) {

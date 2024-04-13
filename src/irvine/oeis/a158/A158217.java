@@ -1,7 +1,7 @@
 package irvine.oeis.a158;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -14,7 +14,7 @@ public class A158217 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      final long dsum = ZUtils.digitSum(p);
+      final long dsum = Functions.DIGIT_SUM.l(p);
       if (dsum <= 7 && (dsum == 2 || dsum == 3 || dsum == 5 || dsum == 7)) {
         return p;
       }

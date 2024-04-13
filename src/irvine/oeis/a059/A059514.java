@@ -2,9 +2,9 @@ package irvine.oeis.a059;
 
 import java.util.HashSet;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -24,7 +24,7 @@ public class A059514 extends Sequence1 {
         return Z.ZERO;
       }
       final Z g = f.num().multiply(f.den());
-      f = new Q(g, Z.valueOf(ZUtils.digitSum(f.num()) + ZUtils.digitSum(f.den()) - 1));
+      f = new Q(g, Z.valueOf(Functions.DIGIT_SUM.l(f.num()) + Functions.DIGIT_SUM.l(f.den()) - 1));
       if (f.isInteger()) {
         return f.toZ();
       }

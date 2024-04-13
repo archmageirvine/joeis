@@ -1,8 +1,8 @@
 package irvine.oeis.a059;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -22,7 +22,7 @@ public class A059175 extends Sequence0 {
     while (true) {
       final Q prev = f;
       final Z g = f.num().multiply(f.den());
-      f = new Q(g, Z.valueOf(ZUtils.digitSum(f.num()) + ZUtils.digitSum(f.den())));
+      f = new Q(g, Z.valueOf(Functions.DIGIT_SUM.l(f.num()) + Functions.DIGIT_SUM.l(f.den())));
       if (f.isInteger()) {
         return f.toZ();
       }

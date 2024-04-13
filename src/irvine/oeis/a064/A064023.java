@@ -1,6 +1,7 @@
 package irvine.oeis.a064;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -44,7 +45,7 @@ public class A064023 extends Sequence1 {
         lim *= 10;
         ++len;
       }
-      if (ZUtils.digitProduct(p) == len * mN * ZUtils.digitSum(p)) {
+      if (ZUtils.digitProduct(p) == len * mN * Functions.DIGIT_SUM.l(p)) {
         return Z.valueOf(p);
       }
     }

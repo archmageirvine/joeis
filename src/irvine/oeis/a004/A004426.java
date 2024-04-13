@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -16,7 +16,8 @@ public class A004426 extends Sequence0 {
 
   @Override
   public Z next() {
-    final long s = ZUtils.digitSum(++mN);
+    final long v = ++mN;
+    final long s = Functions.DIGIT_SUM.l(v);
     if (mN >= mLim) {
       mLim *= 10;
       ++mDiv;

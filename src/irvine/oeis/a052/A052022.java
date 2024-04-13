@@ -1,8 +1,8 @@
 package irvine.oeis.a052;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -23,7 +23,7 @@ public class A052022 extends A000040 {
     Z m = p;
     while (true) {
       m = m.add(p); // We require p | m
-      if (ZUtils.digitSum(m) == pp) {
+      if (Functions.DIGIT_SUM.l(m) == pp) {
         final Z[] f = Jaguar.factor(m).toZArray();
         if (f[f.length - 1].equals(p)) {
           return m;

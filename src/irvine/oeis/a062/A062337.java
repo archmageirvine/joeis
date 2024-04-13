@@ -2,8 +2,8 @@ package irvine.oeis.a062;
 
 import java.util.TreeSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -31,7 +31,7 @@ public class A062337 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z t = mA.pollFirst();
-      final long digitSum = ZUtils.digitSum(t);
+      final long digitSum = Functions.DIGIT_SUM.l(t);
       final Z t10 = t.multiply(10);
       for (long k = 0; k <= Math.min(9, mTarget - digitSum); ++k) {
         mA.add(t10.add(k));

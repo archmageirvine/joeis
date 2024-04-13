@@ -66,20 +66,6 @@ public class ZUtilsTest extends TestCase {
     assertEquals(Z.ZERO, ZUtils.digitProduct(Z.valueOf(5035588244943512881L)));
   }
 
-  public void testDigitSum() {
-    assertEquals(0, ZUtils.digitSum(Z.ZERO));
-    assertEquals(4, ZUtils.digitSum(Z.FOUR));
-    assertEquals(6, ZUtils.digitSum(Z.valueOf(24)));
-    assertEquals(5, ZUtils.digitSum(Z.valueOf(401)));
-  }
-
-  public void testDigitSumLong() {
-    assertEquals(0, ZUtils.digitSum(0));
-    assertEquals(4, ZUtils.digitSum(4));
-    assertEquals(6, ZUtils.digitSum(24));
-    assertEquals(5, ZUtils.digitSum(401));
-  }
-
   public void testRandom() {
     final Random r = new Random();
     for (int k = 0; k < 20; ++k) {

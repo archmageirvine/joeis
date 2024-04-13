@@ -1,7 +1,7 @@
 package irvine.oeis.a106;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.prime.ConsecutiveSequence;
 
 /**
@@ -32,7 +32,7 @@ public class A106711 extends ConsecutiveSequence {
     boolean result = true; // assume success
     int m = 0;
     while (result && m < mTuple) {
-      if (!Z.valueOf(ZUtils.digitSum(mTerms[(mCix + m) & mMask])).isPrime()) {
+      if (!Z.valueOf(Functions.DIGIT_SUM.l(mTerms[(mCix + m) & mMask])).isPrime()) {
         result = false;
       }
       ++m;

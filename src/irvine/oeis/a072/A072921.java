@@ -1,8 +1,8 @@
 package irvine.oeis.a072;
 // manually 2021-10-21
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -33,7 +33,7 @@ public class A072921 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z result = mA1.multiply2().subtract(mA2).add(ZUtils.digitSum(mA1));
+    final Z result = mA1.multiply2().subtract(mA2).add(Functions.DIGIT_SUM.l(mA1));
     mA2 = mA1.isZero() ? mStart : mA1;
     mA1 = result;
     return result;

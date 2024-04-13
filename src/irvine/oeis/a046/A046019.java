@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -40,7 +40,7 @@ public class A046019 extends AbstractSequence {
     long cnt = 0;
     final long lim = upper(mN);
     while (k <= lim) {
-      if (ZUtils.digitSum(Z.valueOf(++k).pow(mN)) == k) {
+      if (Functions.DIGIT_SUM.l(Z.valueOf(++k).pow(mN)) == k) {
         ++cnt;
       }
     }

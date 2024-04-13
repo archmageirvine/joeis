@@ -1,8 +1,8 @@
 package irvine.oeis.a117;
 // manually 2021-01-20
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000931;
 
 /**
@@ -29,7 +29,7 @@ public class A117601 extends A000931 {
       return Z.valueOf(mN); // fixed terms
     }
     Z result = super.next();
-    while (! result.remainder(Z.valueOf(ZUtils.digitSum(result))).equals(Z.ZERO)) {
+    while (! result.remainder(Z.valueOf(Functions.DIGIT_SUM.l(result))).equals(Z.ZERO)) {
       result = super.next();
     }
     return result;

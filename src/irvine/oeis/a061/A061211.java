@@ -1,8 +1,8 @@
 package irvine.oeis.a061;
 
+import irvine.math.function.Functions;
 import irvine.math.r.LambertW;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -21,7 +21,7 @@ public class A061211 extends Sequence1 {
     long max = 1;
     final long limit = Math.round(Math.exp(-LambertW.wNeg1(-Math.log(10) / (4.5 * mN)))) + 900;
     for (long m = 1; m <= limit; ++m) {
-      if (ZUtils.digitSum(Z.valueOf(m).pow(mN)) == m) {
+      if (Functions.DIGIT_SUM.l(Z.valueOf(m).pow(mN)) == m) {
         max = m;
       }
     }

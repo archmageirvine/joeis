@@ -3,7 +3,6 @@ package irvine.oeis.a067;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -18,7 +17,7 @@ public class A067453 extends Sequence0 {
   public Z next() {
     final long v = ++mN;
     final long sum = Functions.DIGIT_SUM.l(v);
-    final long prod = ZUtils.digitNZProduct(mN, 10);
+    final long prod = Functions.DIGIT_NZ_PRODUCT.l(10, mN);
     return Binomial.binomial(Math.max(sum, prod), Math.min(sum, prod));
   }
 }

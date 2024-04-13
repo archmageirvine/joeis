@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000142;
@@ -31,6 +31,6 @@ public class A067067 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return ZUtils.digitNZProduct(mSeq.next(), 10);
+    return Functions.DIGIT_NZ_PRODUCT.z(10, mSeq.next());
   }
 }

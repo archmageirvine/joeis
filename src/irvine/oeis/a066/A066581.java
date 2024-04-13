@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.math.z.ZUtils;
+import irvine.math.function.Functions;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
@@ -11,6 +11,6 @@ public class A066581 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A066581() {
-    super(1, new A066547(), k -> ZUtils.digitNZProduct(k, 10));
+    super(1, new A066547(), k -> Functions.DIGIT_NZ_PRODUCT.z(10, k));
   }
 }

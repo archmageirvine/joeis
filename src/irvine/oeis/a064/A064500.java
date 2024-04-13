@@ -24,7 +24,7 @@ public class A064500 extends Sequence1 {
     }
     Z t = mA;
     while (true) {
-      if (Functions.DIGIT_SUM.l(t) * mN == Functions.DIGIT_PRODUCT.z(t).longValueExact()) {
+      if (Functions.DIGIT_SUM.l(t) * mN == Functions.DIGIT_PRODUCT.l(t)) {
         return t;
       }
       t = t.add(1);

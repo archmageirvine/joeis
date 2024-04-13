@@ -1,8 +1,8 @@
 package irvine.oeis.a066;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -16,7 +16,8 @@ public class A066613 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (ZUtils.digitNZProduct(++mN, 10) == Jaguar.factor(mN).sigma0AsLong()) {
+      final long v = ++mN;
+      if (Functions.DIGIT_NZ_PRODUCT.l(10, v) == Jaguar.factor(mN).sigma0AsLong()) {
         return Z.valueOf(mN);
       }
     }

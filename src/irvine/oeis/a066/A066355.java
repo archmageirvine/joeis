@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -15,7 +15,8 @@ public class A066355 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long nz = ZUtils.digitNZProduct(++mN, 10);
+      final long v = ++mN;
+      final long nz = Functions.DIGIT_NZ_PRODUCT.l(10, v);
       if (mN % nz == 0) {
         return Z.valueOf(mN / nz);
       }

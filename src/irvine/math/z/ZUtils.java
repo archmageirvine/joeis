@@ -335,53 +335,15 @@ public final class ZUtils {
   }
 
   /**
-   * Compute the product of the non-zero digits in an integer.
-   * @param v integer
-   * @param base the base
-   * @return product of non-zero digits
-   */
-  public static long digitNZProduct(final long v, final long base) {
-    long m = Math.abs(v);
-    long p = 1;
-    do {
-      final long r = m % base;
-      if (r != 0) {
-        p *= r;
-      }
-      m /= base;
-    } while (m != 0);
-    return p;
-  }
-
-  /**
-   * Compute the product of the non-zero digits in an integer until a single digit remains.
-   * @param v integer
-   * @param base the base
-   * @return product of non-zero digits
-   */
-  public static Z digitNZProduct(Z v, final int base) {
-    final Z bp = Z.valueOf(base);
-    Z prod = Z.ONE;
-    while (!v.isZero()) {
-      final Z[] qr = v.divideAndRemainder(bp);
-      if (! qr[1].isZero()) {
-        prod = prod.multiply(qr[1]);
-      }
-      v = qr[0];
-    }
-    return prod;
-  }
-
-  /**
    * Compute the sum of the non-zero digits in an integer iteratively until a single digit remains.
    * @param v integer
    * @param base the base
    * @return iterated product of non-zero digits
    */
   public static long digitNZProductRoot(final long v, final int base) {
-    long root = digitNZProduct(v, base);
+    long root = Functions.DIGIT_NZ_PRODUCT.l(base, v);
     while (root >= base) {
-      root = digitNZProduct(root, base);
+      root = Functions.DIGIT_NZ_PRODUCT.l(base, root);
     }
     return root;
   }
@@ -393,10 +355,10 @@ public final class ZUtils {
    * @return iterated product of non-zero digits
    */
   public static Z digitNZProductRoot(final Z v, final int base) {
-    Z root = digitNZProduct(v, base);
+    Z root = Functions.DIGIT_NZ_PRODUCT.z(base, v);
     final Z zb = Z.valueOf(base);
     while (root.compareTo(zb) >= 0) {
-      root = digitNZProduct(root, base);
+      root = Functions.DIGIT_NZ_PRODUCT.z(base, root);
     }
     return root;
   }

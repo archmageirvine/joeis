@@ -14,6 +14,8 @@ public final class Functions {
   public static final Function2 DIGIT_SUM = new DigitSum();
   /** Product of digits. */
   public static final Function2 DIGIT_PRODUCT = new DigitProduct();
+  /** Product of nonzero digits. */
+  public static final Function2 DIGIT_NZ_PRODUCT = new DigitNonzeroProduct();
   /** Rotate right by one digit. */
   public static final Function2 ROTATE_RIGHT = new RotateRight();
 }

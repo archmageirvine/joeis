@@ -15,7 +15,7 @@ public class A004093 extends Sequence0 {
   @Override
   public Z next() {
     mN += 2;
-    return Functions.REVERSE.z(Z.valueOf(mN));
+    return Functions.REVERSE.z(mN);
   }
 }
 

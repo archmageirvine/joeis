@@ -13,15 +13,12 @@ public class A043295 extends A000367 {
   /** Construct the sequence. */
   public A043295() {
     super(1);
-  }
-
-  {
     super.next();
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(Functions.DIGIT_SUM.l(super.next().abs()));
+    return Functions.DIGIT_SUM.z(super.next().abs());
   }
 }
 

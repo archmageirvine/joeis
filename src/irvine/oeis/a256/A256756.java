@@ -3,7 +3,6 @@ package irvine.oeis.a256;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -22,6 +21,6 @@ public class A256756 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(mN).xor(Functions.REVERSE.z(Z.valueOf(mN)));
+    return Z.valueOf(mN).xor(Functions.REVERSE.z(mN));
   }
 }

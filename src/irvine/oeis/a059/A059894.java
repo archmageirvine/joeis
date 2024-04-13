@@ -18,7 +18,7 @@ public class A059894 extends Sequence1 {
     if (++mN >= mBit) {
       mBit <<= 1;
     }
-    final long rev = Functions.REVERSE.z(2, mN).divide2().longValueExact();
+    final long rev = Functions.REVERSE.l(2, mN) / 2;
     return Z.valueOf(~rev & (mBit - 1));
   }
 }

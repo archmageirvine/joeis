@@ -13,6 +13,6 @@ public class A069973 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A069973() {
-    super(0, n -> Z.valueOf(Functions.DIGIT_SUM.l((long) n)).pow(3).subtract(Functions.DIGIT_SUM.l(Z.valueOf(n).pow(3))));
+    super(0, n -> Z.valueOf(Functions.DIGIT_SUM.l(n)).pow(3).subtract(Functions.DIGIT_SUM.l(Z.valueOf(n).pow(3))));
   }
 }

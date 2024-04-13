@@ -2,8 +2,8 @@ package irvine.oeis.a069;
 
 import java.util.HashSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -23,7 +23,7 @@ public class A069219 extends Sequence1 {
         Z u = v;
         final HashSet<Z> seen = new HashSet<>();
         do {
-          u = ZUtils.rotateRight(u);
+          u = Functions.ROTATE_RIGHT.z(u);
           if (u.compareTo(v) < 0 || !u.isProbablePrime()) {
             return;
           }

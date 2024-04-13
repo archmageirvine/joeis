@@ -1,7 +1,7 @@
 package irvine.oeis.a064;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -20,7 +20,7 @@ public class A064870 extends AbstractSequence {
   static long multiplicativePersistence(long n, final int base, final int target) {
     long k = 0;
     while (n >= base) {
-      n = ZUtils.digitProduct(n, base);
+      n = Functions.DIGIT_PRODUCT.l(base, n);
       if (++k > target) {
         return k;
       }

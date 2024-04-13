@@ -1,7 +1,7 @@
 package irvine.oeis.a056;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 
@@ -24,7 +24,7 @@ public class A056770 extends Sequence1 implements Conjectural {
     long k = 0;
     do {
       k += mN;
-    } while (ZUtils.digitProduct(k) * mN != k && k < HEURISTIC_MULTIPLIER * mMax);
+    } while (Functions.DIGIT_PRODUCT.l(k) * mN != k && k < HEURISTIC_MULTIPLIER * mMax);
     if (k < HEURISTIC_MULTIPLIER * mMax) {
       if (k > mMax) {
         mMax = k;

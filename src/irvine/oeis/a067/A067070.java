@@ -1,5 +1,6 @@
 package irvine.oeis.a067;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
@@ -18,7 +19,7 @@ public class A067070 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z c = mCubes.next();
-      final Z p = ZUtils.digitProduct(c);
+      final Z p = Functions.DIGIT_PRODUCT.z(c);
       if (p.signum() > 0 && ZUtils.isCube(p)) {
         return c;
       }

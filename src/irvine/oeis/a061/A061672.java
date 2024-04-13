@@ -5,7 +5,6 @@ import java.util.TreeMap;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
@@ -26,7 +25,7 @@ public class A061672 extends Sequence1 {
     for (long r = n.mod(10); r < 10; ++r) {
       final Z t = n.multiply(10).add(r);
       final Z sum = Z.valueOf(Functions.DIGIT_SUM.l(t));
-      final Z prod = ZUtils.digitProduct(t);
+      final Z prod = Functions.DIGIT_PRODUCT.z(t);
       final Z diff = prod.subtract(sum);
       if (diff.isZero()) {
         mA.put(t, t);

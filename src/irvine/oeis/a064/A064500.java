@@ -3,7 +3,6 @@ package irvine.oeis.a064;
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -25,7 +24,7 @@ public class A064500 extends Sequence1 {
     }
     Z t = mA;
     while (true) {
-      if (Functions.DIGIT_SUM.l(t) * mN == ZUtils.digitProduct(t).longValueExact()) {
+      if (Functions.DIGIT_SUM.l(t) * mN == Functions.DIGIT_PRODUCT.z(t).longValueExact()) {
         return t;
       }
       t = t.add(1);

@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(CeilSqrtTest.class);
+    suite.addTestSuite(DigitProductTest.class);
     suite.addTestSuite(DigitSumTest.class);
     suite.addTestSuite(RotateRightTest.class);
     return suite;

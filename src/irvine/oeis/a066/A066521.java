@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -16,8 +16,9 @@ public class A066521 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      final long dp = ZUtils.digitProduct(++mN);
-      if (dp != 0 && ZUtils.digitProduct(p).equals(Z.valueOf(dp))) {
+      final long v = ++mN;
+      final long dp = Functions.DIGIT_PRODUCT.l(v);
+      if (dp != 0 && Functions.DIGIT_PRODUCT.z(p).equals(Z.valueOf(dp))) {
         return p;
       }
     }

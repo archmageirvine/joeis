@@ -1,7 +1,7 @@
 package irvine.oeis.a034;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 
 /**
  * A034725 Product of digits of A034686(n).
@@ -11,7 +11,7 @@ public class A034725 extends A034686 {
 
   @Override
   public Z next() {
-    return ZUtils.digitProduct(super.next());
+    return Functions.DIGIT_PRODUCT.z(super.next());
   }
 }
 

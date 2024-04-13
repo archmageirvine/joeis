@@ -1,8 +1,8 @@
 package irvine.oeis.a058;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -17,7 +17,7 @@ public class A058627 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      final Z prod = ZUtils.digitProduct(mN);
+      final Z prod = Functions.DIGIT_PRODUCT.z(mN);
       if (!prod.isZero() && prod.equals(Euler.phi(mN))) {
         return mN;
       }

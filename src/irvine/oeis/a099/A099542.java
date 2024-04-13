@@ -1,8 +1,8 @@
 package irvine.oeis.a099;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -35,7 +35,7 @@ public class A099542 extends Sequence1 {
    * @return true if the condition is met, or false otherwise.
    */
   protected boolean isOk(final long n) {
-    final long digProd = ZUtils.digitProduct(n, mBase);
+    final long digProd = Functions.DIGIT_PRODUCT.l(mBase, n);
     if (digProd != 0 && digProd % mBase == 0) {
       mSopfr = Jaguar.factor(n).sopfr();
       if (mSopfr.multiply(mBase).equals(Z.valueOf(digProd))) {

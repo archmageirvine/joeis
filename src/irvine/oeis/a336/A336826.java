@@ -2,8 +2,8 @@ package irvine.oeis.a336;
 
 import java.util.TreeSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -18,7 +18,7 @@ public class A336826 extends Sequence1 {
   @Override
   public Z next() {
     while (mA.isEmpty() || mA.first().compareTo(mN) > 0) {
-      final Z t = mN.multiply(ZUtils.digitProduct(mN));
+      final Z t = mN.multiply(Functions.DIGIT_PRODUCT.z(mN));
       if (t.compareTo(mN) >= 0) {
         mA.add(t);
       }

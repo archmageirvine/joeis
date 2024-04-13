@@ -1,7 +1,7 @@
 package irvine.oeis.a070;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
 
@@ -30,11 +30,11 @@ public class A070562 extends AbstractSequence implements DirectSequence {
   public Z a(final Z n) {
     Z x = n;
     int steps = 0;
-    Z prod = ZUtils.digitProduct(x);
+    Z prod = Functions.DIGIT_PRODUCT.z(x);
     while (!prod.isZero()) {
       ++steps;
       x = x.add(prod);
-      prod = ZUtils.digitProduct(x);
+      prod = Functions.DIGIT_PRODUCT.z(x);
     }
     return Z.valueOf(steps);
   }

@@ -58,14 +58,6 @@ public class ZUtilsTest extends TestCase {
     assertEquals(new Z("987654321"), ZUtils.reverse(new Z("123456789")));
   }
 
-  public void testDigitProduct() {
-    assertEquals(Z.ZERO, ZUtils.digitProduct(Z.ZERO));
-    assertEquals(Z.FOUR, ZUtils.digitProduct(Z.FOUR));
-    assertEquals(Z.EIGHT, ZUtils.digitProduct(Z.valueOf(24)));
-    assertEquals(Z.ZERO, ZUtils.digitProduct(Z.valueOf(401)));
-    assertEquals(Z.ZERO, ZUtils.digitProduct(Z.valueOf(5035588244943512881L)));
-  }
-
   public void testRandom() {
     final Random r = new Random();
     for (int k = 0; k < 20; ++k) {

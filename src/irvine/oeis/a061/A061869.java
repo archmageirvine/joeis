@@ -3,7 +3,6 @@ package irvine.oeis.a061;
 import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000290;
 
 /**
@@ -20,7 +19,7 @@ public class A061869 extends A000290 {
   public Z next() {
     while (true) {
       final Z square = super.next();
-      if (ZUtils.digitProduct(square).isSquare() && LongUtils.isSquare(Functions.DIGIT_SUM.l(square))) {
+      if (Functions.DIGIT_PRODUCT.z(square).isSquare() && LongUtils.isSquare(Functions.DIGIT_SUM.l(square))) {
         return square;
       }
     }

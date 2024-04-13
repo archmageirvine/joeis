@@ -1,7 +1,7 @@
 package irvine.oeis.a034;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -19,7 +19,7 @@ public class A034686 extends Sequence1 {
     long min = Long.MAX_VALUE;
     long minN = 0;
     while (mN < mLim) {
-      final long d = ZUtils.digitProduct(mN);
+      final long d = Functions.DIGIT_PRODUCT.l(mN);
       if (d != 0 && mN / d < min && mN % d == 0) {
         min = mN / d;
         minN = mN;

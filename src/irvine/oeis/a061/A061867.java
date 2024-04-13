@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000290;
 
 /**
@@ -18,7 +18,7 @@ public class A061867 extends A000290 {
   public Z next() {
     while (true) {
       final Z square = super.next();
-      if (ZUtils.digitProduct(square).isSquare()) {
+      if (Functions.DIGIT_PRODUCT.z(square).isSquare()) {
         return square;
       }
     }

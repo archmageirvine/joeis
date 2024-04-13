@@ -1,8 +1,8 @@
 package irvine.oeis.a208;
 // manually 2022-02-28
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a007.A007623;
@@ -43,6 +43,6 @@ public class A208575 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return ZUtils.digitProduct(mSeq.next(), mBase);
+    return Functions.DIGIT_PRODUCT.z(mBase, mSeq.next());
   }
 }

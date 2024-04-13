@@ -1,7 +1,7 @@
 package irvine.oeis.a081;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -16,7 +16,7 @@ public class A081988 extends Sequence1 {
   public Z next() {
     while (true) {
       mK = mK.add(1);
-      if (ZUtils.digitProduct(mK).add(1).isPrime()) {
+      if (Functions.DIGIT_PRODUCT.z(mK).add(1).isPrime()) {
         return mK;
       }
     }

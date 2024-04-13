@@ -1,7 +1,7 @@
 package irvine.oeis.a307;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000217;
 
 /**
@@ -19,7 +19,7 @@ public class A307812 extends A000217 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      final Z prod = ZUtils.digitProduct(t);
+      final Z prod = Functions.DIGIT_PRODUCT.z(t);
       if (!prod.isZero() && prod.mod(mN) == 0) {
         return t;
       }

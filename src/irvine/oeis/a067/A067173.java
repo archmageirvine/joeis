@@ -1,8 +1,8 @@
 package irvine.oeis.a067;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -16,7 +16,8 @@ public class A067173 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      long t = ZUtils.digitProduct(++mN);
+      final long v = ++mN;
+      long t = Functions.DIGIT_PRODUCT.l(v);
       if (t != 0) {
         for (final Z p : Jaguar.factor(mN).toZArray()) {
           t -= p.longValue();

@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -18,7 +18,7 @@ public class A031346 extends Sequence0 {
     long cnt = 0;
     while (m > 9) {
       ++cnt;
-      m = ZUtils.digitProduct(m);
+      m = Functions.DIGIT_PRODUCT.l(m);
     }
     return Z.valueOf(cnt);
   }

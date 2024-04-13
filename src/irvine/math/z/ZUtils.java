@@ -242,63 +242,6 @@ public final class ZUtils {
   }
 
   /**
-   * Compute the product of the digits in an integer.
-   * @param v integer
-   * @param base the base
-   * @return product of digits
-   */
-  public static long digitProduct(final long v, final long base) {
-    long m = Math.abs(v);
-    long p = 1;
-    do {
-      p *= m % base;
-      m /= base;
-    } while (m != 0 && p != 0);
-    return p;
-  }
-
-  /**
-   * Compute the product of the digits in an integer.
-   * @param v integer
-   * @return product of digits
-   */
-  public static long digitProduct(final long v) {
-    return digitProduct(v, 10);
-  }
-
-  /**
-   * Compute the product of the digits in an integer.
-   * @param v integer
-   * @param base the base
-   * @return product of digits
-   */
-  public static Z digitProduct(Z v, final int base) {
-    if (v.isZero()) {
-      return Z.ZERO;
-    }
-    final Z bp = basePower(base);
-    Z prod = Z.ONE;
-    while (!v.isZero() && !prod.isZero()) {
-      final Z[] qr = v.divideAndRemainder(bp);
-      v = qr[0];
-      if (!v.isZero() && qr[1].multiply(base).compareTo(bp) < 0) {
-        return Z.ZERO; // Deal with situation where block has a leading 0
-      }
-      prod = prod.multiply(digitProduct(qr[1].longValue(), base));
-    }
-    return prod;
-  }
-
-  /**
-   * Compute the product of the digits in an integer.
-   * @param v integer
-   * @return product of digits
-   */
-  public static Z digitProduct(final Z v) {
-    return digitProduct(v, 10);
-  }
-
-  /**
    * Compute the sum of the digits in an integer iteratively until a single digit remains.
    * @param v integer
    * @param base the base
@@ -351,9 +294,9 @@ public final class ZUtils {
    * @return iterated product of digits
    */
   public static long digitProductRoot(final long v, final int base) {
-    long root = digitProduct(v, base);
+    long root = Functions.DIGIT_PRODUCT.l(base, v);
     while (root >= base) {
-      root = digitProduct(root, base);
+      root = Functions.DIGIT_PRODUCT.l(base, root);
     }
     return root;
   }
@@ -374,10 +317,10 @@ public final class ZUtils {
    * @return iterated product of digits
    */
   public static Z digitProductRoot(final Z v, final int base) {
-    Z root = digitProduct(v, base);
+    Z root = Functions.DIGIT_PRODUCT.z(base, v);
     final Z zb = Z.valueOf(base);
     while (root.compareTo(zb) >= 0) {
-      root = digitProduct(root, base);
+      root = Functions.DIGIT_PRODUCT.z(base, root);
     }
     return root;
   }
@@ -1176,7 +1119,7 @@ public final class ZUtils {
   public static long multiplicativePersistence(Z n) {
     long k = 0;
     while (n.compareTo(Z.NINE) > 0) {
-      n = ZUtils.digitProduct(n);
+      n = Functions.DIGIT_PRODUCT.z(n);
       ++k;
     }
     return k;

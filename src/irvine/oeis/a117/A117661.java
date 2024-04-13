@@ -2,8 +2,8 @@ package irvine.oeis.a117;
 // manually linrec/linrec2 at 2022-04-29 07:28
 // DO NOT EDIT here!
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -23,7 +23,7 @@ public class A117661 extends Sequence1 {
       }
       final Z hnn = Z.valueOf(mN).multiply(5 * mN - 3).divide2();
       // if type((3+sqrt(9+40*hnn))/10, integer)=true
-      final Z h2 = ZUtils.digitProduct(hnn).multiply(40).add(9);
+      final Z h2 = Functions.DIGIT_PRODUCT.z(hnn).multiply(40).add(9);
       if (h2.isSquare() && h2.sqrt().add(3).remainder(Z.TEN).isZero()) {
         return hnn;
       }

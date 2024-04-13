@@ -1,7 +1,7 @@
 package irvine.oeis.a048;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -15,7 +15,7 @@ public class A048052 extends A000040 {
 
   private boolean isPrimeChain(Z t, final int n) {
     for (int k = 0; k < n; ++k) {
-      final Z reverse = ZUtils.reverse(t);
+      final Z reverse = Functions.REVERSE.z(t);
       if (!mPrime.isPrime(reverse)) {
         return false;
       }

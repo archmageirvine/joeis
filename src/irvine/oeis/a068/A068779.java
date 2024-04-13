@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
@@ -19,7 +19,7 @@ public class A068779 extends Sequence1 {
   public Z next() {
     ++mN;
     while (mFirsts.get(mN) == 0) {
-      final long t = ++mM / LongUtils.reverse(mM);
+      final long t = ++mM / Functions.REVERSE.l(mM);
       if (mFirsts.get(t) == 0) {
         mFirsts.set(t, mM);
       }

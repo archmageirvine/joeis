@@ -423,14 +423,6 @@ public class LongUtilsTest extends TestCase {
     assertEquals(9, LongUtils.swizzle(6));
   }
 
-  public void testReverse() {
-    assertEquals(0, LongUtils.reverse(0));
-    assertEquals(1, LongUtils.reverse(1));
-    assertEquals(42, LongUtils.reverse(24));
-    assertEquals(1, LongUtils.reverse(10));
-    assertEquals(123456789, LongUtils.reverse(9876543210L));
-  }
-
   public void testToLongFromString() {
     assertEquals("[12, -1]", Arrays.toString(LongUtils.toLong("12,-1")));
     assertEquals("[12, -1]", Arrays.toString(LongUtils.toLong("12 -1")));

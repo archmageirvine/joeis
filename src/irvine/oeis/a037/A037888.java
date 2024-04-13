@@ -1,7 +1,7 @@
 package irvine.oeis.a037;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
 
@@ -11,7 +11,7 @@ import irvine.oeis.Sequence1;
  */
 public class A037888 extends Sequence1 implements DirectSequence {
 
-  private long mN = 0;
+  private int mN = 0;
 
   protected int base() {
     return 2;
@@ -29,7 +29,7 @@ public class A037888 extends Sequence1 implements DirectSequence {
     }
     long cnt = 0;
     long m = n;
-    long l = ZUtils.reverse(Z.valueOf(mN), base()).longValueExact();
+    long l = Functions.REVERSE.l(base(), mN);
     while (m != 0) {
       cnt += Math.abs(m % base() - l % base());
       m /= base();
@@ -40,17 +40,6 @@ public class A037888 extends Sequence1 implements DirectSequence {
 
   @Override
   public Z next() {
-    if (++mN == 0) {
-      return Z.ONE;
-    }
-    long cnt = 0;
-    long m = mN;
-    long l = ZUtils.reverse(Z.valueOf(mN), base()).longValueExact();
-    while (m != 0) {
-      cnt += Math.abs(m % base() - l % base());
-      m /= base();
-      l /= base();
-    }
-    return Z.valueOf(cnt / 2);
+    return a(++mN);
   }
 }

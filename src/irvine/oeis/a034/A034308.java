@@ -1,6 +1,7 @@
 package irvine.oeis.a034;
 
 import irvine.math.cr.CR;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
@@ -21,7 +22,7 @@ public class A034308 extends Sequence0 {
       if (!mN.isSquare()) {
         final CR s = CR.valueOf(mN).sqrt();
         final Z f = s.floor();
-        final Z r = ZUtils.reverse(f);
+        final Z r = Functions.REVERSE.z(f);
         final int len = f.toString().length();
         if (s.frac().multiply(Z.TEN.pow(len)).floor().equals(r)) {
           if (mStartOfRun) {

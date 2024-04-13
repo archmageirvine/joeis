@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
@@ -15,6 +15,7 @@ public class A036839 extends Sequence0 {
 
   @Override
   public Z next() {
-    return ZUtils.sortDigitsAscending(Z.valueOf(LongUtils.reverse(++mN) + mN));
+    long n = ++mN;
+    return ZUtils.sortDigitsAscending(Z.valueOf(Functions.REVERSE.l(n) + mN));
   }
 }

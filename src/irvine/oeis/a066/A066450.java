@@ -1,5 +1,6 @@
 package irvine.oeis.a066;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence2;
@@ -21,7 +22,7 @@ public class A066450 extends Sequence2 {
       if (m.bitLength() > HEURISTIC_BIT_LENGTH) {
         return true;
       }
-      m = ZUtils.reverse(m, base).add(m);
+      m = Functions.REVERSE.z(base, m).add(m);
     }
   }
 

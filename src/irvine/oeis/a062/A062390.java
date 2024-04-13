@@ -1,6 +1,6 @@
 package irvine.oeis.a062;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,7 +15,8 @@ public class A062390 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long r = LongUtils.reverse(++mN);
+      long n = ++mN;
+      final long r = Functions.REVERSE.l(n);
       final long s = mN + r;
       final long d = mN - r;
       if (d != 0 && s % d == 0 && Math.abs(s / d) == 11) {

@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a029.A029743;
 
 /**
@@ -17,7 +17,7 @@ public class A046732 extends A029743 {
       if (p == null) {
         return null;
       }
-      if (ZUtils.reverse(p).isProbablePrime()) {
+      if (Functions.REVERSE.z(p).isProbablePrime()) {
         return p;
       }
     }

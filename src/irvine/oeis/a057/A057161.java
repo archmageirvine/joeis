@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a014.A014486;
 
 /**
@@ -35,7 +35,7 @@ public class A057161 extends A014486 {
   }
 
   static Z rotateTriangularization(final Z nn) {
-    Z n = ZUtils.reverse(nn, 2);
+    Z n = Functions.REVERSE.z(2, nn);
     Z z = Z.ZERO;
     int w = 0;
     while (n.isOdd()) {

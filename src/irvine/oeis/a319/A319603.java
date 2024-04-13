@@ -1,7 +1,7 @@
 package irvine.oeis.a319;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -16,6 +16,6 @@ public class A319603 extends Sequence0 {
   public Z next() {
     ++mN;
     final Z cube = Z.valueOf(mN).multiply(mN).multiply(mN);
-    return cube.add(ZUtils.reverse(cube));
+    return cube.add(Functions.REVERSE.z(cube));
   }
 }

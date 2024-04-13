@@ -2,6 +2,7 @@ package irvine.oeis.a355;
 
 import java.util.HashSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -28,8 +29,8 @@ public class A355617 extends Sequence1 {
       mB = Z.TWO;
       return Z.TWO;
     }
-    if (!mB.equals(ZUtils.reverse(mA))) {
-      final Z r = ZUtils.reverse(mB);
+    if (!mB.equals(Functions.REVERSE.z(mA))) {
+      final Z r = Functions.REVERSE.z(mB);
       if (mSeen.add(r)) {
         mA = mB;
         mB = r;

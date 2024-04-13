@@ -5,10 +5,8 @@ import junit.framework.TestSuite;
 
 /**
  * Test class for all tests in this directory.
- *
  * @author Sean A. Irvine
  */
-
 public class AllTests extends TestSuite {
 
   public static Test suite() {
@@ -19,9 +17,5 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(MurnaghanNakayamaTest.class);
     suite.addTestSuite(SmarandacheFactorPartitionTest.class);
     return suite;
-  }
-
-  public static void main(final String[] args) {
-    junit.textui.TestRunner.run(suite());
   }
 }

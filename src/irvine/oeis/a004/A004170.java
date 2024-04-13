@@ -3,6 +3,7 @@ package irvine.oeis.a004;
 import java.util.Map;
 import java.util.TreeMap;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000045;
@@ -43,14 +44,14 @@ public class A004170 extends A000045 {
 
   {
     for (int k = 0; k < 100; ++k) {
-      add(ZUtils.reverse(super.next()));
+      add(Functions.REVERSE.z(super.next()));
     }
   }
 
   @Override
   public Z next() {
-    add(ZUtils.reverse(super.next()));
-    add(ZUtils.reverse(super.next()));
+    add(Functions.REVERSE.z(super.next()));
+    add(Functions.REVERSE.z(super.next()));
     final Z fr = get();
     if (fr.compareTo(mPrev) < 0) {
       throw new UnsupportedOperationException("Out of order: " + fr);

@@ -1,8 +1,8 @@
 package irvine.oeis.a235;
 // manually 2023-09-24/mult at 2023-09-24 21:44
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.MultiplicativeSequence;
 
@@ -16,7 +16,7 @@ public class A235027 extends MultiplicativeSequence implements DirectSequence {
 
   /** Construct the sequence. */
   public A235027() {
-    super(0, (p, e) -> p.equals(Z.TWO) ? p.pow(e) : ZUtils.reverse(p, 2).pow(e));
+    super(0, (p, e) -> p.equals(Z.TWO) ? p.pow(e) : Functions.REVERSE.z(2, p).pow(e));
   }
 
   @Override

@@ -1,7 +1,7 @@
 package irvine.oeis.a161;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,7 +16,8 @@ public class A161791 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long r = LongUtils.reverse(++mN);
+      long n = ++mN;
+      final long r = Functions.REVERSE.l(n);
       for (final Z dd : Jaguar.factor(mN).divisors()) {
         final long d = dd.longValue();
         if (2 * d > mN) {

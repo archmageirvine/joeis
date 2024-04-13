@@ -1,7 +1,7 @@
 package irvine.oeis.a060;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence2;
 import irvine.util.RuntimeUtils;
 
@@ -24,7 +24,7 @@ public class A060382 extends Sequence2 {
       n = n.add(1);
       Z m = n;
       for (long k = 0; k < SEARCH_LIMIT; ++k) {
-        final Z r = ZUtils.reverse(m, mBase);
+        final Z r = Functions.REVERSE.z(mBase, m);
         if (r.equals(m)) {
           continue outer;
         }

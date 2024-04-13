@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 
 /**
  * Lisp like list.
@@ -66,7 +66,7 @@ public final class SExpression extends ArrayList<SExpression> {
    * @return expression
    */
   public static SExpression binexp2pars(final Z n) {
-    return n.isZero() ? new SExpression() : binexp2parsR(ZUtils.reverse(n, 2));
+    return n.isZero() ? new SExpression() : binexp2parsR(Functions.REVERSE.z(2, n));
   }
 
   /** Construct an empty S expression. */

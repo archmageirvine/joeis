@@ -1,5 +1,6 @@
 package irvine.oeis.a061;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -20,6 +21,6 @@ public class A061219 extends Sequence1 {
 
   @Override
   public Z next() {
-    return ZUtils.reverse(mSeq.next());
+    return Functions.REVERSE.z(mSeq.next());
   }
 }

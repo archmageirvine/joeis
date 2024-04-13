@@ -1,7 +1,7 @@
 package irvine.oeis.base;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -69,7 +69,7 @@ public class RaddSequence extends AbstractSequence {
   @Override
   public Z next() {
     final Z result = mTerm;
-    mTerm = ZUtils.reverse(mTerm, mBase).add(mAddThis ? mTerm : mIncrement);
+    mTerm = Functions.REVERSE.z(mBase, mTerm).add(mAddThis ? mTerm : mIncrement);
     return result;
   }
 }

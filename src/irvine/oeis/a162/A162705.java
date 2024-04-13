@@ -1,7 +1,7 @@
 package irvine.oeis.a162;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
@@ -22,9 +22,9 @@ public class A162705 extends Sequence1 {
     while (n > mLim) {
       mLim *= 10;
       while (mP < mLim) {
-        final long a = LongUtils.reverse(mP);
+        final long a = Functions.REVERSE.l(mP);
         mP = mPrime.nextPrime(mP);
-        final long b = a + LongUtils.reverse(mP);
+        final long b = a + Functions.REVERSE.l(mP);
         final int c = mC.get(b);
         if (c == 0) {
           mC.set(b, (byte) 1);

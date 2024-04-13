@@ -1,6 +1,6 @@
 package irvine.oeis.a062;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -29,7 +29,8 @@ public class A062946 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final String rev = Long.toString(LongUtils.reverse(++mN));
+      long n = ++mN;
+      final String rev = Long.toString(Functions.REVERSE.l(n));
       final int nLen = Long.toString(mN).length();
       if (rev.length() == nLen) {
         long k = 1;

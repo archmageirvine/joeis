@@ -1,5 +1,7 @@
 package irvine.oeis.a103;
 
+import irvine.math.function.Functions;
+import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.prime.ConsecutiveSequence;
 
@@ -31,7 +33,7 @@ public class A103169 extends ConsecutiveSequence {
     boolean result = true; // assume success
     int m = 0;
     while (result && m < mTuple) {
-      if (!ZUtils.reverse(mTerms[(mCix + m) & mMask]).isPrime()) {
+      if (!Functions.REVERSE.z(mTerms[(mCix + m) & mMask]).isPrime()) {
         result = false;
       }
       ++m;

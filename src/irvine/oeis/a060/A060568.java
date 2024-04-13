@@ -1,7 +1,7 @@
 package irvine.oeis.a060;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A060568 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    final long r = LongUtils.reverse(mN);
+    final long r = Functions.REVERSE.l(mN);
     long cnt = 0;
     if (mN < r) {
       for (long p = mPrime.nextPrime(mN); p < r; p = mPrime.nextPrime(p)) {

@@ -1,6 +1,7 @@
 package irvine.oeis.a102;
 // manually A102111/parm2 at 2022-04-22
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
@@ -24,7 +25,7 @@ public class A102111 extends Sequence0 {
     } else if (mN == 2) {
       return Z.ONE;
     }
-    final Z result = mA.add(mB).add(ZUtils.reverse(mC));
+    final Z result = mA.add(mB).add(Functions.REVERSE.z(mC));
     mC = mB;
     mB = mA;
     mA = result;

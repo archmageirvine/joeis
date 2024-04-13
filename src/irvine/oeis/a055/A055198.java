@@ -1,5 +1,6 @@
 package irvine.oeis.a055;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -22,7 +23,7 @@ public class A055198 extends Sequence1 {
 //        if (mN.equals(Z.valueOf(1011))) {
 //          System.out.println(k + " " + m);
 //        }
-        m = ZUtils.reverse(m.add(4));
+        m = Functions.REVERSE.z(m.add(4));
         if (m.equals(mN)) {
           return mN;
         }

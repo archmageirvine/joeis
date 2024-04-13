@@ -1,6 +1,6 @@
 package irvine.oeis.a009;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,7 +22,7 @@ public class A009944 extends Sequence1 {
         q += p % 10;
         p /= 10;
         // q is already constructed in reverse
-        if (LongUtils.reverse(p) * q == mN) {
+        if (Functions.REVERSE.l(p) * q == mN) {
           return Z.valueOf(mN);
         }
       }

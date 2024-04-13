@@ -2,6 +2,7 @@ package irvine.oeis.a059;
 
 import java.util.TreeSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -33,7 +34,7 @@ public class A059005 extends Sequence1 {
       mLim = mLim.multiply(10);
       Z t;
       while ((t = mN.pow(mPower)).compareTo(mLim) < 0) {
-        final Z rev = ZUtils.reverse(t);
+        final Z rev = Functions.REVERSE.z(t);
         if (rev.isProbablePrime()) {
           mA.add(rev);
         }

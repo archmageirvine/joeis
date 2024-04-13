@@ -1,5 +1,6 @@
 package irvine.oeis.a102;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
@@ -23,7 +24,7 @@ public class A102119 extends Sequence0 {
     } else if (mN == 2) {
       return Z.ONE;
     }
-    final Z result = ZUtils.reverse(mA.add(mB).add(ZUtils.reverse(mC)));
+    final Z result = Functions.REVERSE.z(mA.add(mB).add(Functions.REVERSE.z(mC)));
     mC = mB;
     mB = mA;
     mA = result;

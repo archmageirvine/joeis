@@ -1,5 +1,6 @@
 package irvine.oeis.a058;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -24,7 +25,7 @@ public class A058997 extends Sequence1 {
     while (true) {
       ++k;
       n = n.multiply(mN);
-      if (ZUtils.reverse(n).isProbablePrime()) {
+      if (Functions.REVERSE.z(n).isProbablePrime()) {
         return Z.valueOf(k);
       }
       if (mVerbose && k % 250 == 0) {

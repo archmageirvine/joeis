@@ -1,5 +1,6 @@
 package irvine.oeis.a065;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Conjectural;
@@ -21,7 +22,7 @@ public class A065001 extends Sequence1 implements Conjectural {
     long count = 0;
     long c = 0;
     while (c < HEURISTIC_TERMS) {
-      final Z reverse = ZUtils.reverse(m);
+      final Z reverse = Functions.REVERSE.z(m);
       if (reverse.equals(m)) {
         ++count;
         c = 0;

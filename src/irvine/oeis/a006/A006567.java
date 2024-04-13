@@ -1,6 +1,7 @@
 package irvine.oeis.a006;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -18,7 +19,7 @@ public class A006567 extends Sequence1 {
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      final Z reverse = ZUtils.reverse(mP);
+      final Z reverse = Functions.REVERSE.z(mP);
       if (!reverse.equals(mP) && mPrime.isPrime(reverse)) {
         return mP;
       }

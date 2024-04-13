@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000290;
 
 /**
@@ -19,7 +19,7 @@ public class A033294 extends A000290 {
   public Z next() {
     while (true) {
       final Z square = super.next();
-      if (square.mod(10) != 0 && ZUtils.reverse(square).isSquare()) {
+      if (square.mod(10) != 0 && Functions.REVERSE.z(square).isSquare()) {
         return square;
       }
     }

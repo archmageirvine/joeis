@@ -10,6 +10,9 @@ public final class Functions {
 
   /** Ceiling square root. */
   public static final Function1 CEIL_SQRT = new CeilSqrt();
+
+  /** Reverse the digits of a number. */
+  public static final Function2 REVERSE = new Reverse();
   /** Sum of digits. */
   public static final Function2 DIGIT_SUM = new DigitSum();
   /** Product of digits. */

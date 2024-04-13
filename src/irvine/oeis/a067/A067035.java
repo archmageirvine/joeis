@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import java.util.Map;
 import java.util.TreeMap;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,7 +22,7 @@ public class A067035 extends Sequence1 {
     while (true) {
       while (mValues.isEmpty() || mN < mValues.firstKey()) {
         ++mN;
-        mValues.merge(mN + LongUtils.reverse(mN), 1L, Long::sum);
+        mValues.merge(mN + Functions.REVERSE.l(mN), 1L, Long::sum);
       }
       final Map.Entry<Long, Long> e = mValues.pollFirstEntry();
       if (e.getValue() > mMax) {

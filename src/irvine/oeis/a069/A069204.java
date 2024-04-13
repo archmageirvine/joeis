@@ -1,7 +1,7 @@
 package irvine.oeis.a069;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a006.A006567;
 
 /**
@@ -14,7 +14,7 @@ public class A069204 extends A006567 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (t.mod(4) == ZUtils.reverse(t).mod(4)) {
+      if (t.mod(4) == Functions.REVERSE.z(t).mod(4)) {
         return t;
       }
     }

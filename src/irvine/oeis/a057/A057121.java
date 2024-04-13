@@ -1,8 +1,8 @@
 package irvine.oeis.a057;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 
 /**
  * A057121 Local ranks of terms of A057119.
@@ -17,7 +17,7 @@ public class A057121 extends A057119 {
   }
 
   static Z catalanRank(final long n, final Z aa) {
-    Z a = ZUtils.reverse(aa, 2);
+    Z a = Functions.REVERSE.z(2, aa);
     long y = 0;
     Z lo = Z.ZERO;
     for (long x = 1; x < 2 * n; ++x) {

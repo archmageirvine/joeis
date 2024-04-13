@@ -1,7 +1,7 @@
 package irvine.oeis.a036;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -14,7 +14,7 @@ public class A036447 extends Sequence0 {
 
   @Override
   public Z next() {
-    mA = mA == null ? Z.ONE : ZUtils.reverse(mA.multiply2());
+    mA = mA == null ? Z.ONE : Functions.REVERSE.z(mA.multiply2());
     return mA;
   }
 }

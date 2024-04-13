@@ -1,6 +1,6 @@
 package irvine.oeis.a062;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -34,7 +34,7 @@ public class A062897 extends AbstractSequence {
   public Z next() {
     while (true) {
       ++mN;
-      if (mN % mMult == 0 && LongUtils.reverse(mN) % mMult == 0) {
+      if (mN % mMult == 0 && Functions.REVERSE.l(mN) % mMult == 0) {
         return Z.valueOf(mN);
       }
     }

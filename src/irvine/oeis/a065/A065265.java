@@ -1,7 +1,7 @@
 package irvine.oeis.a065;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -14,7 +14,7 @@ public class A065265 extends Sequence1 {
 
   // if n = 1ab..yz then a(n) = 1zy..ba
   static Z specialReverse(final Z n) {
-    final Z rev = ZUtils.reverse(n, 2).divide2();
+    final Z rev = Functions.REVERSE.z(2, n).divide2();
     return Z.ONE.shiftLeft(n.bitLength() - 1).add(rev);
   }
 

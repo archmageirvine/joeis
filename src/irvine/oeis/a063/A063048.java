@@ -2,6 +2,7 @@ package irvine.oeis.a063;
 
 import java.util.HashSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -25,7 +26,7 @@ public class A063048 extends Sequence1 {
       if (ZUtils.isPalindrome(n, 10)) {
         return true;
       }
-      n = n.add(ZUtils.reverse(n));
+      n = n.add(Functions.REVERSE.z(n));
     }
     return false;
   }

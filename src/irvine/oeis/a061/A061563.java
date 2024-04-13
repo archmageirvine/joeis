@@ -1,5 +1,6 @@
 package irvine.oeis.a061;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
@@ -17,7 +18,7 @@ public class A061563 extends Sequence0 {
     mN = mN.add(1);
     Z t = mN;
     do {
-      t = t.add(ZUtils.reverse(t));
+      t = t.add(Functions.REVERSE.z(t));
     } while (!ZUtils.isPalindrome(t, 10));
     return t;
   }

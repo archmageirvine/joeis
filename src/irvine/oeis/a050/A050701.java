@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A050701 extends Sequence1 {
       if (++mN % 10 != 0) {
         final long bigOmega = Jaguar.factor(mN).bigOmega();
         if (bigOmega > 1) {
-          final long rev = LongUtils.reverse(mN);
+          final long rev = Functions.REVERSE.l(mN);
           if (rev < mN && Jaguar.factor(rev).bigOmega() == bigOmega) {
             return Z.valueOf(mN);
           }

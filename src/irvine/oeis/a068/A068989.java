@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.math.z.ZUtils;
+import irvine.math.function.Functions;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000290;
 
@@ -12,6 +12,8 @@ public class A068989 extends FilterSequence {
 
   /** Construct the sequence. */
   public A068989() {
-    super(1, new A000290(), k -> ZUtils.reverse(k).isProbablePrime());
+    super(1, new A000290(), k -> {
+      return Functions.REVERSE.z(k).isProbablePrime();
+    });
   }
 }

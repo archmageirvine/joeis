@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +20,7 @@ public class A085869 extends Sequence1 {
   public Z next() {
     while (true) {
       final FactorSequence fs0 = Jaguar.factor(++mN);
-      final FactorSequence fs1 = Jaguar.factor(LongUtils.reverse(mN));
+      final FactorSequence fs1 = Jaguar.factor(Functions.REVERSE.l(mN));
       if (fs0.omega() == fs1.omega()) {
         final int[] a = new int[fs0.omega()];
         final int[] b = new int[fs0.omega()];

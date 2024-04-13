@@ -2,6 +2,7 @@ package irvine.oeis.a048;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002113;
@@ -28,7 +29,7 @@ public class A048343 extends A002113 {
       for (final Z d : fs.divisors()) {
         if (d.mod(10) != 0) { // Avoid leading 0 on reverse
           final Z e = palin.divide(d);
-          if (e.compareTo(d) > 0 && e.equals(ZUtils.reverse(d))) { // d != e (not palindromic), and d < e for symmetry
+          if (e.compareTo(d) > 0 && e.equals(Functions.REVERSE.z(d))) { // d != e (not palindromic), and d < e for symmetry
             final int len = d.toString().length();
             //System.out.println("Solved: " + palin + " = " + d + " * " + e);
             ++mCount[len];

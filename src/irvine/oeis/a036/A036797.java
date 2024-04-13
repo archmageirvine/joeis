@@ -2,8 +2,8 @@ package irvine.oeis.a036;
 
 import java.util.TreeSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000045;
 
 /**
@@ -21,7 +21,7 @@ public class A036797 extends A000045 {
   @Override
   public Z next() {
     while (true) {
-      final Z iccanobif = ZUtils.reverse(super.next());
+      final Z iccanobif = Functions.REVERSE.z(super.next());
       if (iccanobif.isProbablePrime()) {
         if (mA.isEmpty() || mA.first().toString().length() >= iccanobif.toString().length()) {
           mA.add(iccanobif);

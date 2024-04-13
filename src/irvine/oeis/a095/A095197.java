@@ -1,7 +1,7 @@
 package irvine.oeis.a095;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
@@ -17,6 +17,6 @@ public class A095197 extends ConstantOrderRecurrence {
 
   @Override
   public Z compute(final int n) {
-    return ZUtils.reverse(a(n - 1)).multiply2();
+    return Functions.REVERSE.z(a(n - 1)).multiply2();
   }
 }

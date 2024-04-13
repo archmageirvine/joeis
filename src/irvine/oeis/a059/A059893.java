@@ -1,7 +1,7 @@
 package irvine.oeis.a059;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -18,7 +18,7 @@ public class A059893 extends Sequence1 {
     if (++mN >= mBit) {
       mBit <<= 1;
     }
-    final long rev = ZUtils.reverse(Z.valueOf(mN), 2).divide2().longValueExact();
+    final long rev = Functions.REVERSE.z(2, mN).divide2().longValueExact();
     return Z.valueOf((mBit >>> 1) + rev);
   }
 }

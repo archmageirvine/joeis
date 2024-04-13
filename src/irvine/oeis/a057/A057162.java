@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a014.A014486;
 
 /**
@@ -18,7 +18,7 @@ public class A057162 extends A014486 {
   }
 
   private static Z reflectBinTree2(final Z n) {
-    return n.isZero() ? n : reflectBinTreeAux(ZUtils.reverse(n, 2));
+    return n.isZero() ? n : reflectBinTreeAux(Functions.REVERSE.z(2, n));
   }
 
   /**

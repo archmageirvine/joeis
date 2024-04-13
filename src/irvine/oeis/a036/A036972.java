@@ -1,8 +1,8 @@
 package irvine.oeis.a036;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000045;
 
 /**
@@ -18,7 +18,7 @@ public class A036972 extends A000045 {
   @Override
   public Z next() {
     while (true) {
-      final Z r = ZUtils.reverse(super.next());
+      final Z r = Functions.REVERSE.z(super.next());
       if (r.isProbablePrime()) {
         while (mP.compareTo(r) > 0) {
           mP = mPrime.prevPrime(mP);

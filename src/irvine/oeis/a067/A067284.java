@@ -3,6 +3,7 @@ package irvine.oeis.a067;
 import java.util.ArrayList;
 import java.util.List;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
@@ -38,7 +39,7 @@ public class A067284 extends A067030 {
         if (c == 0) {
           ++cnt;
         }
-        final Z r = ZUtils.reverse(t);
+        final Z r = Functions.REVERSE.z(t);
         t = t.add(r);
         mA.set(j, t);
       }

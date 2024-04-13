@@ -1,8 +1,8 @@
 package irvine.oeis.a042;
 // manually 2021-03-04
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -21,7 +21,7 @@ public class A042938 extends Sequence1 {
   @Override
   public Z next() {
     final Z result = mTerm;
-    final Z rev = ZUtils.reverse(mTerm, 10);
+    final Z rev = Functions.REVERSE.z(10, mTerm);
     mTerm = rev.compareTo(mTerm) > 0 ? rev : mTerm.multiply(3);
     return result;
   }

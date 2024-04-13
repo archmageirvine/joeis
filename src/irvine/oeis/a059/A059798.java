@@ -1,7 +1,7 @@
 package irvine.oeis.a059;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000040;
 
@@ -14,7 +14,7 @@ public class A059798 extends FilterSequence {
   /** Construct the sequence. */
   public A059798() {
     super(new A000040(), k -> {
-      final Z s = ZUtils.reverse(k).subtract(k).abs();
+      final Z s = Functions.REVERSE.z(k).subtract(k).abs();
       return !s.isZero() && s.isSquare();
     });
   }

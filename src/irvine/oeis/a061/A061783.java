@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -14,7 +14,7 @@ public class A061783 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (p.add(ZUtils.reverse(p)).isProbablePrime()) {
+      if (p.add(Functions.REVERSE.z(p)).isProbablePrime()) {
         return p;
       }
     }

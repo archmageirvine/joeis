@@ -2,7 +2,7 @@ package irvine.oeis.a008;
 
 import java.util.TreeSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A008920 extends Sequence1 {
 
   private boolean isReversibleSum(final long n) {
     for (long k = 0; k <= n * n; ++k) {
-      if (n == Math.abs(k - LongUtils.reverse(k))) {
+      if (n == Math.abs(k - Functions.REVERSE.l(k))) {
         return true;
       }
     }
@@ -29,7 +29,7 @@ public class A008920 extends Sequence1 {
     while (mValues.isEmpty() || mN < mValues.first()) {
       ++mN;
       if (isReversibleSum(mN)) {
-        mValues.add(mN + LongUtils.reverse(mN));
+        mValues.add(mN + Functions.REVERSE.l(mN));
       }
     }
     return Z.valueOf(mValues.pollFirst());

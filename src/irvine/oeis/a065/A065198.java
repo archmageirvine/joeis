@@ -1,7 +1,7 @@
 package irvine.oeis.a065;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -26,7 +26,7 @@ public class A065198 extends Sequence1 {
 
   private int t(Z n) {
     for (int i = 0; i < HEURISTIC_LIMIT; ++i) {
-      final Z r = ZUtils.reverse(n, mBase);
+      final Z r = Functions.REVERSE.z(mBase, n);
       if (r.equals(n)) {
         return i;
       }

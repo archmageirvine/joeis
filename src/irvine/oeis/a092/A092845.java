@@ -1,7 +1,7 @@
 package irvine.oeis.a092;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a011.A011545;
 
 /**
@@ -12,6 +12,6 @@ public class A092845 extends A011545 {
 
   @Override
   public Z next() {
-    return ZUtils.reverse(super.next());
+    return Functions.REVERSE.z(super.next());
   }
 }

@@ -14,18 +14,18 @@ class DigitNonzeroProduct extends AbstractFunction2 {
   }
 
   @Override
-  public Z z(final long base, Z v) {
+  public Z z(final long base, Z n) {
     if (base < 2) {
       throw new IllegalArgumentException();
     }
     final Z bp = Z.valueOf(base);
     Z prod = Z.ONE;
-    while (!v.isZero()) {
-      final Z[] qr = v.divideAndRemainder(bp);
+    while (!n.isZero()) {
+      final Z[] qr = n.divideAndRemainder(bp);
       if (! qr[1].isZero()) {
         prod = prod.multiply(qr[1]);
       }
-      v = qr[0];
+      n = qr[0];
     }
     return prod;
   }

@@ -1,5 +1,6 @@
 package irvine.oeis.a065;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -33,7 +34,7 @@ public class A065206 extends Sequence1 {
       if (ZUtils.isPalindrome(n, mBase)) {
         return false;
       }
-      n = n.add(ZUtils.reverse(n, mBase));
+      n = n.add(Functions.REVERSE.z(mBase, n));
     }
     return ZUtils.isPalindrome(n, mBase);
   }

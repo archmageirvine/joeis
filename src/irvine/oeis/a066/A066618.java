@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -16,7 +16,7 @@ public class A066618 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z t = Z.valueOf(++mN).square().add(1);
-      if (t.mod(10) != 0 && ZUtils.reverse(t).subtract(1).isSquare()) {
+      if (t.mod(10) != 0 && Functions.REVERSE.z(t).subtract(1).isSquare()) {
         return t;
       }
     }

@@ -53,11 +53,6 @@ public class ZUtilsTest extends TestCase {
     assertEquals(Z.valueOf(22), ZUtils.describe(Z.valueOf(22)));
   }
 
-  public void testReverse() {
-    assertEquals(Z.ZERO, ZUtils.reverse(Z.ZERO));
-    assertEquals(new Z("987654321"), ZUtils.reverse(new Z("123456789")));
-  }
-
   public void testRandom() {
     final Random r = new Random();
     for (int k = 0; k < 20; ++k) {

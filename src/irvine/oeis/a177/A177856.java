@@ -1,7 +1,7 @@
 package irvine.oeis.a177;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
@@ -17,7 +17,7 @@ public class A177856 extends Sequence1 {
   public Z next() {
     while (true) {
       mK = mK.add(1);
-      if (StringUtils.isPalindrome(mK.multiply(ZUtils.reverse(mK)).add(1).toString())) {
+      if (StringUtils.isPalindrome(mK.multiply(Functions.REVERSE.z(mK)).add(1).toString())) {
         return mK;
       }
     }

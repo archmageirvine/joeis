@@ -7,7 +7,6 @@ import junit.framework.TestSuite;
  * Test class for all tests in this directory.
  * @author Sean A. Irvine
  */
-
 public class AllTests extends TestSuite {
 
   public static Test suite() {
@@ -16,6 +15,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(DigitNonzeroProductTest.class);
     suite.addTestSuite(DigitProductTest.class);
     suite.addTestSuite(DigitSumTest.class);
+    suite.addTestSuite(ReverseTest.class);
     suite.addTestSuite(RotateRightTest.class);
     return suite;
   }

@@ -2,6 +2,7 @@ package irvine.oeis.a063;
 
 import java.util.TreeSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
@@ -39,7 +40,7 @@ public class A063056 extends Sequence0 {
       if (ZUtils.isPalindrome(n, 10)) {
         return -1;
       }
-      n = n.add(ZUtils.reverse(n));
+      n = n.add(Functions.REVERSE.z(n));
     }
     return -1;
   }

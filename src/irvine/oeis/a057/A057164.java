@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a014.A014486;
 
 /**
@@ -12,7 +12,7 @@ public class A057164 extends A014486 {
 
   private static Z bcr(final Z n) {
     final Z mask = Z.ONE.shiftLeft(n.bitLength()).subtract(1);
-    return ZUtils.reverse(n, 2).xor(mask);
+    return Functions.REVERSE.z(2, n).xor(mask);
   }
 
   @Override

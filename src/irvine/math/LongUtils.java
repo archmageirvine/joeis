@@ -493,22 +493,6 @@ public final class LongUtils {
   }
 
   /**
-   * Return the decimal reverse of a number. For example, reverse 24 is 42.
-   * Only for nonnegative.  Might overflow without warning for large inputs.
-   * @param n number to reverse
-   * @return reverse
-   */
-  public static long reverse(long n) {
-    long r = 0;
-    while (n != 0) {
-      r *= 10;
-      r += n % 10;
-      n /= 10;
-    }
-    return r;
-  }
-
-  /**
    * Make the array an identity map up to entry <code>n</code>.
    * @param a array
    * @param n maximum entry

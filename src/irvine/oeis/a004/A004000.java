@@ -2,8 +2,8 @@ package irvine.oeis.a004;
 
 import java.util.Arrays;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -19,7 +19,7 @@ public class A004000 extends Sequence1 {
     if (mA == null) {
       mA = Z.ONE;
     } else {
-      final Z r = ZUtils.reverse(mA);
+      final Z r = Functions.REVERSE.z(mA);
       final Z a = r.add(mA);
       final char[] decimal = a.toString().toCharArray();
       Arrays.sort(decimal);

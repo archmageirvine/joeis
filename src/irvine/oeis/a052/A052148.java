@@ -1,7 +1,7 @@
 package irvine.oeis.a052;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -17,7 +17,7 @@ public class A052148 extends Sequence1 {
     while (true) {
       final Z n1 = mN;
       mN = mN.add(1);
-      final Z rev = ZUtils.reverse(mN);
+      final Z rev = Functions.REVERSE.z(mN);
       if (mN.compareTo(rev) < 0 && rev.add(1).mod(n1).isZero()) {
         return mN;
       }

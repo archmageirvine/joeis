@@ -1,5 +1,6 @@
 package irvine.oeis.a103;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
@@ -24,7 +25,7 @@ public class A103160 extends AbstractSequence {
   public Z next() {
     ++mN;
     final Z f1 = mF.multiply(mN);
-    final Z result = ZUtils.reverse(mF).gcd(ZUtils.reverse(f1));
+    final Z result = Functions.REVERSE.z(mF).gcd(Functions.REVERSE.z(f1));
     mF = f1;
     return result;
   }

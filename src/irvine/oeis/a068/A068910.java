@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,7 +23,7 @@ public class A068910 extends Sequence1 {
     while (true) {
       while (mValues.isEmpty() || mN < mValues.firstKey()) {
         ++mN;
-        final long s = mN + LongUtils.reverse(mN);
+        final long s = mN + Functions.REVERSE.l(mN);
         if (LongUtils.isPalindrome(s, 10)) {
           mValues.merge(s, 1, Integer::sum);
           mK.put(s, mN);

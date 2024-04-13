@@ -1,5 +1,6 @@
 package irvine.oeis.a015;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
@@ -36,7 +37,7 @@ public class A015977 extends AbstractSequence {
     while (true) {
       Z a = Z.valueOf(++mN);
       for (int k = iterations(); k > 0; --k) {
-        a = ZUtils.reverse(a).add(a);
+        a = Functions.REVERSE.z(a).add(a);
         if (StringUtils.isPalindrome(a.toString())) {
           if (k == 1) {
             return Z.valueOf(mN);

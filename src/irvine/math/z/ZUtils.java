@@ -452,33 +452,6 @@ public final class ZUtils {
   }
 
   /**
-   * Reverse the digits of a number in specified base.
-   * @param n number to reverse
-   * @param base base to use
-   * @return reversed number
-   */
-  public static Z reverse(Z n, final long base) {
-    final Z b = Z.valueOf(base);
-    Z r = Z.ZERO;
-    while (!n.isZero()) {
-      final Z[] qr = n.divideAndRemainder(b);
-      r = r.multiply(base);
-      r = r.add(qr[1]);
-      n = qr[0];
-    }
-    return r;
-  }
-
-  /**
-   * Reverse the decimal digits of a number.
-   * @param n number to reverse
-   * @return reversed number
-   */
-  public static Z reverse(final Z n) {
-    return reverse(n, 10);
-  }
-
-  /**
    * Test if <code>r</code> is a primitive root of <code>n</code>.
    * @param r proposed root
    * @param n modulus

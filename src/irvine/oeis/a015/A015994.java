@@ -1,5 +1,6 @@
 package irvine.oeis.a015;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -34,7 +35,7 @@ public class A015994 extends Sequence1 {
       Z v = mValue.get(k);
       if (v != null) {
         while (it < mN) {
-          v = v.add(ZUtils.reverse(v));
+          v = v.add(Functions.REVERSE.z(v));
           ++it;
           if (ZUtils.isPalindrome(v, 10)) {
             // Finish this number, save space by storing null (also indicates it is complete)

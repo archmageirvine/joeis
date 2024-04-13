@@ -5,9 +5,8 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -23,7 +22,7 @@ public class A050702 extends Sequence1 {
     outer:
     while (true) {
       if (++mN % 10 != 0) {
-        final long rev = LongUtils.reverse(mN);
+        final long rev = Functions.REVERSE.l(mN);
         if (rev != mN) {
           final FactorSequence fs = Jaguar.factor(mN);
           if (fs.bigOmega() > 1) {
@@ -32,7 +31,7 @@ public class A050702 extends Sequence1 {
               final TreeSet<Z> factors = new TreeSet<>();
               Collections.addAll(factors, fs.toZArray());
               for (final Z p : revfs.toZArray()) {
-                if (!factors.contains(ZUtils.reverse(p))) {
+                if (!factors.contains(Functions.REVERSE.z(p))) {
                   continue outer;
                 }
               }

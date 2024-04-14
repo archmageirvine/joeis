@@ -5,7 +5,7 @@ import irvine.oeis.IntersectionSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A104364 Primes of the form A104350(k) - 1.
+ * A104364 Primes of the form A104350(n) - 1.
  * @author Georg Fischer
  */
 public class A104364 extends IntersectionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000037;
 
 /**
- * A069192.
+ * A069235 Numbers k, not perfect squares, such that the squarefree part of k divides sigma(k).
  * @author Sean A. Irvine
  */
 public class A069235 extends A000037 {

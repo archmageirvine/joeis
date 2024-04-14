@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069192.
+ * A069234 Numbers k such that the sum over the prime divisors of k equals the number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A069234 extends Sequence1 {

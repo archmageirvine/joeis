@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069211.
+ * A069213 a(n) = n-th positive integer relatively prime to n.
  * @author Sean A. Irvine
  */
 public class A069213 extends Sequence1 {

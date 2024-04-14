@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A351331 a(n) = (n+1)*(n^n) - n + 1.
+ * A351331 a(n) = (n+1)*n^n + n - 1.
  * @author Georg Fischer
  */
 public class A351331 extends LambdaSequence {

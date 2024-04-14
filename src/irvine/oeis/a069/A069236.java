@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000037;
 
 /**
- * A069192.
+ * A069236 Integers m, not a perfect square, such that the squarefree part of m divides phi(m).
  * @author Sean A. Irvine
  */
 public class A069236 extends A000037 {

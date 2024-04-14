@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069218.
+ * A069224 Numbers n such that n^2 + n + A007918(n+2) is prime.
  * @author Sean A. Irvine
  */
 public class A069224 extends Sequence1 {

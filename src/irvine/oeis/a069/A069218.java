@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069218.
+ * A069218 a(1)=1, a(2)=8; for n &gt;= 1, a(n+2)=(a(n+1)+a(n))/3 if (a(n+1)+a(n)==0 (mod 3)); a(n+2)=(a(n+1)+a(n))/2 if (a(n+1)+a(n)==0 (mod 2)); a(n+2)=a(n+1)+a(n) otherwise.
  * @author Sean A. Irvine
  */
 public class A069218 extends Sequence1 {

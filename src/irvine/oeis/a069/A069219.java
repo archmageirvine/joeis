@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069218.
+ * A069219 Number of cyclic primes with n digits.
  * @author Sean A. Irvine
  */
 public class A069219 extends Sequence1 {

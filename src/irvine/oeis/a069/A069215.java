@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069211.
+ * A069215 Numbers n such that phi(n) = reversal(n).
  * @author Sean A. Irvine
  */
 public class A069215 extends Sequence1 {

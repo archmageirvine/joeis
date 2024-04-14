@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069218.
+ * A069220 Denominator of Sum_{1&lt;=k&lt;=n, gcd(k,n)=1} 1/k.
  * @author Sean A. Irvine
  */
 public class A069220 extends Sequence1 {

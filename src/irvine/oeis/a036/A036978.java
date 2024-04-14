@@ -1,7 +1,7 @@
 package irvine.oeis.a036;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -16,7 +16,7 @@ public class A036978 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(2);
-      if (ZUtils.describe(mN).isProbablePrime()) {
+      if (Functions.LOOK_AND_SAY.z(mN).isProbablePrime()) {
         return mN;
       }
     }

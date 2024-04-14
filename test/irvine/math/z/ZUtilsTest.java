@@ -48,11 +48,6 @@ public class ZUtilsTest extends TestCase {
     assertEquals(0, ZUtils.valuation(Z.FOUR, Z.THREE));
   }
 
-  public void testDescribe() {
-    assertEquals(Z.valueOf(12), ZUtils.describe(Z.TWO));
-    assertEquals(Z.valueOf(22), ZUtils.describe(Z.valueOf(22)));
-  }
-
   public void testRandom() {
     final Random r = new Random();
     for (int k = 0; k < 20; ++k) {

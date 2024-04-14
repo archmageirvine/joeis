@@ -16,6 +16,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(DigitProductTest.class);
     suite.addTestSuite(DigitSumTest.class);
     suite.addTestSuite(LeastPrimitiveRootTest.class);
+    suite.addTestSuite(LookAndSayTest.class);
     suite.addTestSuite(ReverseTest.class);
     suite.addTestSuite(RotateRightTest.class);
     suite.addTestSuite(Syndrome.class);

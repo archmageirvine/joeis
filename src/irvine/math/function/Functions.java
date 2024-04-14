@@ -14,6 +14,8 @@ public final class Functions {
   public static final Function1 SYNDROME = new Syndrome();
   /** Least primitive root of a modulus. */
   public static final Function1 LEAST_PRIMITIVE_ROOT = new LeastPrimitiveRoot();
+  /** Describe the number. For example, 3445, is one 3, two 4s, one 5 to give 132415. */
+  public static final Function1 LOOK_AND_SAY = new LookAndSay();
 
   /** Reverse the digits of a number. */
   public static final Function2 REVERSE = new Reverse();

@@ -15,16 +15,16 @@ class DigitSum extends AbstractFunction2 {
   }
 
   @Override
-  public long l(final long base, Z v) {
+  public long l(final long base, Z n) {
     if (base < 2) {
       throw new IllegalArgumentException();
     }
     final Z bp = ZUtils.basePower((int) base);
     long sum = 0;
-    while (!v.isZero()) {
-      final Z[] qr = v.divideAndRemainder(bp);
+    while (!n.isZero()) {
+      final Z[] qr = n.divideAndRemainder(bp);
       sum += l(base, qr[1].longValue());
-      v = qr[0];
+      n = qr[0];
     }
     return sum;
   }

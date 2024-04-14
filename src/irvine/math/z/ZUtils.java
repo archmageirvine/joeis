@@ -128,23 +128,6 @@ public final class ZUtils {
   }
 
   /**
-   * Return the count of each digit in the number when written in the specified base.
-   * @param n number
-   * @param base base to use
-   * @return count of each digit
-   */
-  public static int distinctDigitCount(final Z n, final int base) {
-    final int[] counts = digitCounts(n, base);
-    int result = 0;
-    for (int c : counts) {
-      if (c > 0) {
-        ++result;
-      }
-    }
-    return result;
-  }
-
-  /**
    * Return the digital root of a number.
    * @param v number
    * @return digital root

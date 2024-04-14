@@ -25,6 +25,8 @@ public final class Functions {
   public static final Function2 DIGIT_PRODUCT = new DigitProduct();
   /** Product of nonzero digits. */
   public static final Function2 DIGIT_NZ_PRODUCT = new DigitNonzeroProduct();
+  /** Count of distinct digits. */
+  public static final Function2 DISTINCT_DIGIT_COUNT = new DistinctDigitCount();
   /** Rotate right by one digit. */
   public static final Function2 ROTATE_RIGHT = new RotateRight();
 }

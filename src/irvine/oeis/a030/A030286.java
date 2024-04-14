@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002385;
 
 /**
@@ -14,10 +14,10 @@ public class A030286 extends A002385 {
 
   @Override
   public Z next() {
-    final int syndrome = ZUtils.syn(mA);
+    final int syndrome = Functions.SYNDROME.i(mA);
     do {
       mA = super.next();
-    } while ((ZUtils.syn(mA) & syndrome) != 0);
+    } while ((Functions.SYNDROME.i(mA) & syndrome) != 0);
     return mA;
   }
 }

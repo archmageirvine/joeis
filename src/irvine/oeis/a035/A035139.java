@@ -1,9 +1,8 @@
 package irvine.oeis.a035;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -18,9 +17,10 @@ public class A035139 extends Sequence1 {
   public Z next() {
     outer:
     while (true) {
-      final int syn = LongUtils.syndrome(++mN);
+      long n = ++mN;
+      final int syn = Functions.SYNDROME.i(n);
       for (final Z p : Jaguar.factor(mN).toZArray()) {
-        if ((ZUtils.syn(p) & syn) != 0) {
+        if ((Functions.SYNDROME.i(p) & syn) != 0) {
           continue outer;
         }
       }

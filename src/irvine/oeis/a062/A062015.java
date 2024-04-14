@@ -1,7 +1,7 @@
 package irvine.oeis.a062;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -35,7 +35,7 @@ public class A062015 extends Sequence1 {
         if (2 * d > n) {
           break;
         }
-        if ((LongUtils.syndrome(d) & 0b1010101010) == 0 && (LongUtils.syndrome(n / d) & 0b1010101010) == 0) {
+        if ((Functions.SYNDROME.i(d) & 0b1010101010) == 0 && (Functions.SYNDROME.i(n / d) & 0b1010101010) == 0) {
           return Z.valueOf(n);
         }
       }

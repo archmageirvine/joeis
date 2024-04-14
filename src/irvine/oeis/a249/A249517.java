@@ -1,6 +1,6 @@
 package irvine.oeis.a249;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -28,7 +28,7 @@ public class A249517 extends Sequence1 {
         return false; // will never match
       }
     }
-    return s == LongUtils.syndrome(d) && s == LongUtils.syndrome(p);
+    return s == Functions.SYNDROME.i(d) && s == Functions.SYNDROME.i(p);
   }
 
   @Override

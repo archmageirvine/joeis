@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
@@ -17,7 +17,7 @@ public class A036745 extends FiniteSequence {
     final ArrayList<Z> lst = new ArrayList<>();
     for (long k = 32043; k <= 99066; ++k) {
       final long s = k * k;
-      if (LongUtils.syndrome(s) == 0b1111111111) {
+      if (Functions.SYNDROME.i(s) == 0b1111111111) {
         lst.add(Z.valueOf(s));
       }
     }

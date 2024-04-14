@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
-import irvine.math.LongUtils;
 import irvine.math.MemoryFunctionInt3;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -31,7 +31,7 @@ public class A061827 extends Sequence1 {
 
   @Override
   public Z next() {
-    return mB.get(++mN, LongUtils.syndrome(mN), 1);
+    return mB.get(++mN, Functions.SYNDROME.i((long) mN), 1);
   }
 }
 

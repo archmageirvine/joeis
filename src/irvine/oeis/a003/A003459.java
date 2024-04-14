@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
@@ -46,7 +46,7 @@ public class A003459 extends Sequence1 {
       if (mP <= 7) {
         return Z.valueOf(mP);
       }
-      final int syndrome = LongUtils.syndrome(mP);
+      final int syndrome = Functions.SYNDROME.i(mP);
       if ((syndrome & ~MASK) == 0 && (syndrome & MASK) != MASK && testPermutations(mP)) {
         return Z.valueOf(mP);
       }

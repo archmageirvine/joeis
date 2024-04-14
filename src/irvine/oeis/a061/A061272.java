@@ -1,6 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.ZUtils;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000290;
@@ -13,6 +14,6 @@ public class A061272 extends FilterSequence {
 
   /** Construct the sequence. */
   public A061272() {
-    super(1, new A000290(), k -> (ZUtils.syn(k) & 0b0111101100) == 0 && LongUtils.isSquare(ZUtils.digitSumSquares(k)));
+    super(1, new A000290(), k -> (Functions.SYNDROME.i(k) & 0b0111101100) == 0 && LongUtils.isSquare(ZUtils.digitSumSquares(k)));
   }
 }

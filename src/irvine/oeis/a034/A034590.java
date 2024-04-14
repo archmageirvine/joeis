@@ -1,8 +1,8 @@
 package irvine.oeis.a034;
 
 import irvine.math.cr.CR;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 import irvine.util.Permutation;
 
@@ -27,7 +27,7 @@ public class A034590 extends Sequence1 {
         a *= 10;
         a += i;
       }
-      if (ZUtils.syn(CR.valueOf(a).sqrt().frac().multiply(C).floor()) == 0b1111111110) {
+      if (Functions.SYNDROME.i(CR.valueOf(a).sqrt().frac().multiply(C).floor()) == 0b1111111110) {
         return Z.valueOf(a);
       }
     }

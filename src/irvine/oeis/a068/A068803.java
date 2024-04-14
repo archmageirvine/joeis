@@ -3,8 +3,8 @@ package irvine.oeis.a068;
 import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -25,7 +25,7 @@ public class A068803 extends Sequence1 {
 
   private boolean check(final Z u) {
     final Z v = mPrime.nextPrime(u);
-    return (ZUtils.syn(u) & ZUtils.syn(v)) == 0;
+    return (Functions.SYNDROME.i(u) & Functions.SYNDROME.i(v)) == 0;
   }
 
   @Override

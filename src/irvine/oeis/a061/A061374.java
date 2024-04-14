@@ -1,8 +1,7 @@
 package irvine.oeis.a061;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -17,7 +16,7 @@ public class A061374 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z n = Z.valueOf(++mN);
-      if (Long.bitCount(LongUtils.syndrome(mN)) > Long.bitCount(ZUtils.syn(n.pow(3)))) {
+      if (Long.bitCount(Functions.SYNDROME.i(mN)) > Long.bitCount(Functions.SYNDROME.i(n.pow(3)))) {
         return n;
       }
     }

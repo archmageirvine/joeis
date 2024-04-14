@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
@@ -24,7 +24,7 @@ public class A068830 extends Sequence1 {
       mP = mPrime.nextPrime(mP);
       long q = mP;
       int cnt = 0;
-      while ((LongUtils.syndrome(q) & 0b101010101) == 0) {
+      while ((Functions.SYNDROME.i(q) & 0b101010101) == 0) {
         q = mPrime.nextPrime(q);
         ++cnt;
       }

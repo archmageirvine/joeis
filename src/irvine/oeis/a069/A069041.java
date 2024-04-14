@@ -1,6 +1,6 @@
 package irvine.oeis.a069;
 
-import irvine.math.z.ZUtils;
+import irvine.math.function.Functions;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000045;
 
@@ -12,7 +12,7 @@ public class A069041 extends FilterSequence {
 
   /** Construct the sequence. */
   public A069041() {
-    super(1, new A000045().skip(), k -> Integer.bitCount(ZUtils.syn(k)) <= 2);
+    super(1, new A000045().skip(), k -> Integer.bitCount(Functions.SYNDROME.i(k)) <= 2);
   }
 }
 

@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -21,7 +21,7 @@ public class A034587 extends Sequence1 {
       if (t >= 1000000000L) {
         break; // too big
       }
-      if (LongUtils.syndrome(t) == NINE_DIGITS) {
+      if (Functions.SYNDROME.i(t) == NINE_DIGITS) {
         return true;
       }
       a = b;

@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,7 +15,8 @@ public class A057303 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final int syndrome = LongUtils.syndrome(++mN);
+      long n = ++mN;
+      final int syndrome = Functions.SYNDROME.i(n);
       if ((syndrome & (1 << Long.bitCount(syndrome))) != 0) {
         return Z.valueOf(mN);
       }

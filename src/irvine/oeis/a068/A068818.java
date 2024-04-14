@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000217;
@@ -17,10 +17,10 @@ public class A068818 extends Sequence1 {
 
   @Override
   public Z next() {
-    final int syn = ZUtils.syn(mA);
+    final int syn = Functions.SYNDROME.i(mA);
     while (true) {
       mA = mT.next();
-      if ((ZUtils.syn(mA) & syn) == 0) {
+      if ((Functions.SYNDROME.i(mA) & syn) == 0) {
         return mA;
       }
     }

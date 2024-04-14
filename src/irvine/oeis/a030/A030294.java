@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -17,7 +17,7 @@ public class A030294 extends Sequence1 {
     while (true) {
       mN = mN.add(1);
       final Z cube = mN.pow(3);
-      if (Integer.bitCount(ZUtils.syn(cube)) <= 3) {
+      if (Integer.bitCount(Functions.SYNDROME.i(cube)) <= 3) {
         return mN;
       }
     }

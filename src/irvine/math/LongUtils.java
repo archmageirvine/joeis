@@ -546,21 +546,6 @@ public final class LongUtils {
   }
 
   /**
-   * Return the syndrome of a number; that is, a number with a bit set for each
-   * distinct digit of the given number.
-   * @param n number to get syndrome of
-   * @return syndrome
-   */
-  public static int syndrome(long n) {
-    int s = 0;
-    do {
-      s |= 1 << (n % 10);
-      n /= 10;
-    } while (n != 0);
-    return s;
-  }
-
-  /**
    * Kronecker matrix product (tensor product). Suitable for relatively small integer matrices.
    * @param a first matrix
    * @param b second matrix

@@ -1,8 +1,8 @@
 package irvine.oeis.a035;
 
-import irvine.math.LongUtils;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
@@ -21,7 +21,7 @@ public class A035136 extends Sequence2 {
     final CR power = CR.valueOf(new Q(1, ++mN));
     long m = 0;
     while (true) {
-      if (LongUtils.syndrome(ComputableReals.SINGLETON.pow(CR.valueOf(++m), power).frac().multiply(C).floor().longValue()) == 0b1111111110) {
+      if (Functions.SYNDROME.i(ComputableReals.SINGLETON.pow(CR.valueOf(++m), power).frac().multiply(C).floor().longValue()) == 0b1111111110) {
         return Z.valueOf(m);
       }
     }

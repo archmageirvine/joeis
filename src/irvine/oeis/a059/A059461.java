@@ -1,8 +1,8 @@
 package irvine.oeis.a059;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -28,7 +28,7 @@ public class A059461 extends Sequence1 {
     while (true) {
       long sum = 0;
       for (final Z d : Jaguar.factor(++mN).divisors()) {
-        if ((ZUtils.syn(d) & mBit) != 0 && d.longValue() != mN) {
+        if ((Functions.SYNDROME.i(d) & mBit) != 0 && d.longValue() != mN) {
           sum += d.longValue();
         }
       }

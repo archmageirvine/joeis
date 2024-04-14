@@ -1,6 +1,6 @@
 package irvine.oeis.a059;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -16,7 +16,7 @@ public class A059707 extends Sequence0 {
   public Z next() {
     long m = ++mN;
     while (true) {
-      final int s = LongUtils.syndrome(m);
+      final int s = Functions.SYNDROME.i(m);
       if ((s & 0b1010101010) == 0 || (s & 0b101010101) == 0) {
         return Z.valueOf(m);
       }

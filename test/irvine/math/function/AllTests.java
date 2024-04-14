@@ -17,6 +17,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(DigitSumTest.class);
     suite.addTestSuite(ReverseTest.class);
     suite.addTestSuite(RotateRightTest.class);
+    suite.addTestSuite(Syndrome.class);
     return suite;
   }
 }

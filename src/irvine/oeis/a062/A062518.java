@@ -1,7 +1,7 @@
 package irvine.oeis.a062;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -26,7 +26,7 @@ public class A062518 extends Sequence1 {
     while (prevMax + HEURISTIC >= k) {
       ++k;
       nk = nk.multiply(mN);
-      if (ZUtils.syn(nk) != 0b1111111111) {
+      if (Functions.SYNDROME.i(nk) != 0b1111111111) {
         prevMax = k;
       }
     }

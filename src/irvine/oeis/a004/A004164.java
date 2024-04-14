@@ -29,6 +29,6 @@ public class A004164 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Z.valueOf(Functions.DIGIT_SUM.l(Z.valueOf(++mN).pow(mExp)));
+    return Functions.DIGIT_SUM.z(Z.valueOf(++mN).pow(mExp));
   }
 }

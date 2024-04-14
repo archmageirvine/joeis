@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -18,7 +18,7 @@ public class A057881 extends Sequence0 {
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      if (Integer.bitCount(LongUtils.syndrome(mP)) == 5 && A057876.is(String.valueOf(mP))) {
+      if (Integer.bitCount(Functions.SYNDROME.i(mP)) == 5 && A057876.is(String.valueOf(mP))) {
         return Z.valueOf(mP);
       }
     }

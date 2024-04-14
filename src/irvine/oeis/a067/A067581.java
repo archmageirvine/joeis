@@ -2,9 +2,8 @@ package irvine.oeis.a067;
 
 import java.util.HashSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -21,10 +20,11 @@ public class A067581 extends Sequence0 {
     if (mA == null) {
       mA = Z.ZERO;
     } else {
-      final int syn = ZUtils.syn(mA);
+      final int syn = Functions.SYNDROME.i(mA);
       long k = 0;
       while (true) {
-        if ((LongUtils.syndrome(++k) & syn) == 0 && mSeen.add(k)) {
+        long n = ++k;
+        if ((Functions.SYNDROME.i(n) & syn) == 0 && mSeen.add(k)) {
           mA = Z.valueOf(k);
           break;
         }

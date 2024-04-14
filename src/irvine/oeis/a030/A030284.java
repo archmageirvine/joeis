@@ -2,9 +2,8 @@ package irvine.oeis.a030;
 
 import java.util.ArrayList;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -19,7 +18,7 @@ public class A030284 extends Sequence1 {
   public Z next() {
     final ArrayList<Integer> digits = new ArrayList<>();
     Z t = mA;
-    final int syndrome = ZUtils.syn(t);
+    final int syndrome = Functions.SYNDROME.i(t);
     while (!t.isZero()) {
       digits.add((int) (t.mod(10)));
       t = t.divide(10);
@@ -27,7 +26,7 @@ public class A030284 extends Sequence1 {
     // increment leading digit
     int r = digits.get(digits.size() - 1) + 1;
     // There are extra constraints, e.g. 0 might be already used
-    while ((LongUtils.syndrome(r) & syndrome) != 0) {
+    while ((Functions.SYNDROME.i((long) r) & syndrome) != 0) {
       ++r;
     }
 
@@ -46,7 +45,7 @@ public class A030284 extends Sequence1 {
     while (!mA.isProbablePrime()) {
       do {
         mA = mA.add(1);
-      } while ((ZUtils.syn(mA) & syndrome) != 0);
+      } while ((Functions.SYNDROME.i(mA) & syndrome) != 0);
     }
     return mA;
   }

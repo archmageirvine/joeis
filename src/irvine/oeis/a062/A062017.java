@@ -1,7 +1,7 @@
 package irvine.oeis.a062;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -32,7 +32,7 @@ public class A062017 extends Sequence1 {
       // Check for an acceptable factorization
       for (final Z dd : Jaguar.factor(n).divisorsSorted()) {
         final long d = dd.longValue();
-        if (d > 1 && d < n && (LongUtils.syndrome(d) & 0b1010101010) == 0 && (LongUtils.syndrome(n / d) & 0b0101010101) == 0) {
+        if (d > 1 && d < n && (Functions.SYNDROME.i(d) & 0b1010101010) == 0 && (Functions.SYNDROME.i(n / d) & 0b0101010101) == 0) {
           return Z.valueOf(n);
         }
       }

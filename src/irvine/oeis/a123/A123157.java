@@ -19,11 +19,11 @@ public class A123157 extends A000040 implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return Z.valueOf(Functions.DIGIT_SUM.l(super.a(n).square()));
+    return Functions.DIGIT_SUM.z(super.a(n).square());
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(Functions.DIGIT_SUM.l(super.next().square()));
+    return Functions.DIGIT_SUM.z(super.next().square());
   }
 }

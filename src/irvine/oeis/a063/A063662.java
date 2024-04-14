@@ -1,6 +1,6 @@
 package irvine.oeis.a063;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -17,10 +17,11 @@ public class A063662 extends Sequence0 {
     if (mN < 0) {
       mN = 0;
     } else {
-      final int syn = LongUtils.syndrome(mN);
+      final int syn = Functions.SYNDROME.i(mN);
       long k = mN;
       while (true) {
-        if ((syn & LongUtils.syndrome(++k)) != 0) {
+        long n = ++k;
+        if ((syn & Functions.SYNDROME.i(n)) != 0) {
           mN = k;
           break;
         }

@@ -3,8 +3,8 @@ package irvine.oeis.a061;
 import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -33,7 +33,7 @@ public class A061844 extends Sequence1 {
         }
         final Z v = rn.divide(u);
         final Z x = v.subtract(u).divide2().square();
-        if (x.compareTo(lb) > 0 && x.compareTo(mT) < 0 && (ZUtils.syn(x) & 0b1000000000) == 0) {
+        if (x.compareTo(lb) > 0 && x.compareTo(mT) < 0 && (Functions.SYNDROME.i(x) & 0b1000000000) == 0) {
           mA.add(u.add(v).divide2().square());
         }
       }

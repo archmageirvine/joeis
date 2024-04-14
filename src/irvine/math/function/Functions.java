@@ -10,6 +10,8 @@ public final class Functions {
 
   /** Ceiling square root. */
   public static final Function1 CEIL_SQRT = new CeilSqrt();
+  /** Bitset indicating which digits are present in a number. */
+  public static final Function1 SYNDROME = new Syndrome();
 
   /** Reverse the digits of a number. */
   public static final Function2 REVERSE = new Reverse();

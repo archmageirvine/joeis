@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -14,7 +14,7 @@ public class A057659 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (Integer.bitCount(ZUtils.syn(p.square())) == 2) {
+      if (Integer.bitCount(Functions.SYNDROME.i(p.square())) == 2) {
         return p;
       }
     }

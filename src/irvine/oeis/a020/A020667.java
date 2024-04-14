@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -19,7 +19,7 @@ public class A020667 extends Sequence1 {
     }
     Z m = Z.TWO;
     Z power;
-    while (ZUtils.syn(power = m.pow(mN)) != 0b1111111111) {
+    while (Functions.SYNDROME.i(power = m.pow(mN)) != 0b1111111111) {
       m = m.add(1);
     }
     return power;

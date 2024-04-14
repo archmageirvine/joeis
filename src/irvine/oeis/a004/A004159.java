@@ -14,6 +14,6 @@ public class A004159 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Z.valueOf(Functions.DIGIT_SUM.l(Z.valueOf(++mN).square()));
+    return Functions.DIGIT_SUM.z(Z.valueOf(++mN).square());
   }
 }

@@ -1,7 +1,7 @@
 package irvine.oeis.a062;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000217;
 
 /**
@@ -19,7 +19,7 @@ public class A062100 extends A000217 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if ((ZUtils.syn(t) & 0b1110110100) == 0) {
+      if ((Functions.SYNDROME.i(t) & 0b1110110100) == 0) {
         return t;
       }
     }

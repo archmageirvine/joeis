@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -26,7 +26,7 @@ public class A366897 extends Sequence1 {
     final List<Integer> syndromes = new ArrayList<>();
     final TreeSet<Long> res = new TreeSet<>();
     for (long k = START; k <= 1000000; k = mPrime.nextPrime(k)) {
-      final int synK = LongUtils.syndrome(k);
+      final int synK = Functions.SYNDROME.i(k);
       if (Integer.bitCount(synK) >= 4) {
         primeList.add(k);
         syndromes.add(synK);
@@ -37,7 +37,7 @@ public class A366897 extends Sequence1 {
       for (int j = 0; j <= k; ++j) {
         if ((synK | syndromes.get(j)) == PANDIGITAL) {
           final long prod = primeList.get(k) * primeList.get(j);
-          if (LongUtils.syndrome(prod) == PANDIGITAL) {
+          if (Functions.SYNDROME.i(prod) == PANDIGITAL) {
             res.add(prod);
           }
         }

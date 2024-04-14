@@ -1,7 +1,7 @@
 package irvine.oeis.a062;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -20,7 +20,7 @@ public class A062281 extends A000040 {
     final Z q = p.multiply2(); // only ever going to be an even multiple
     do {
       s = s.add(q);
-    } while ((ZUtils.syn(s) & 0b1010101010) != 0);
+    } while ((Functions.SYNDROME.i(s) & 0b1010101010) != 0);
     return s;
   }
 }

@@ -15,8 +15,7 @@ public class A033170 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      Z n = new Z(Long.toString(++mN, 6));
-      if (Functions.SYNDROME.i(n) == Functions.SYNDROME.i(new Z(Long.toString(mN, 7)))) {
+      if (Functions.SYNDROME.i(new Z(Long.toString(++mN, 6))) == Functions.SYNDROME.i(new Z(Long.toString(mN, 7)))) {
         return Z.valueOf(mN);
       }
     }

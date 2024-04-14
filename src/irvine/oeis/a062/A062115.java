@@ -27,8 +27,7 @@ public class A062115 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      long n = ++mN;
-      if ((Functions.SYNDROME.i(n) & 0b0010101100) == 0 && is(mN)) {
+      if ((Functions.SYNDROME.i(++mN) & 0b0010101100) == 0 && is(mN)) {
         return Z.valueOf(mN);
       }
     }

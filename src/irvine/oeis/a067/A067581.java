@@ -23,8 +23,7 @@ public class A067581 extends Sequence0 {
       final int syn = Functions.SYNDROME.i(mA);
       long k = 0;
       while (true) {
-        long n = ++k;
-        if ((Functions.SYNDROME.i(n) & syn) == 0 && mSeen.add(k)) {
+        if ((Functions.SYNDROME.i(++k) & syn) == 0 && mSeen.add(k)) {
           mA = Z.valueOf(k);
           break;
         }

@@ -30,7 +30,6 @@ public class A007953 extends Sequence0 {
 
   @Override
   public Z next() {
-    long v = ++mN;
-    return Functions.DIGIT_SUM.z(mBase, v);
+    return Functions.DIGIT_SUM.z(mBase, ++mN);
   }
 }

@@ -15,8 +15,7 @@ public class A057303 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      long n = ++mN;
-      final int syndrome = Functions.SYNDROME.i(n);
+      final int syndrome = Functions.SYNDROME.i(++mN);
       if ((syndrome & (1 << Long.bitCount(syndrome))) != 0) {
         return Z.valueOf(mN);
       }

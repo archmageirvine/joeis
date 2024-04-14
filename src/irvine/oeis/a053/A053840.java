@@ -29,7 +29,6 @@ public class A053840 extends Sequence0 {
 
   @Override
   public Z next() {
-    long v = ++mN;
-    return Z.valueOf(Functions.DIGIT_SUM.l(mBase, v) % mBase);
+    return Z.valueOf(Functions.DIGIT_SUM.l(mBase, ++mN) % mBase);
   }
 }

@@ -3,7 +3,6 @@ package irvine.oeis.a076;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
-import irvine.math.z.Z;
 import irvine.oeis.FilterLambdaSequence;
 
 /**

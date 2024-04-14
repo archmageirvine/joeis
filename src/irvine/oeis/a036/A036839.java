@@ -15,7 +15,6 @@ public class A036839 extends Sequence0 {
 
   @Override
   public Z next() {
-    long n = ++mN;
-    return ZUtils.sortDigitsAscending(Z.valueOf(Functions.REVERSE.l(n) + mN));
+    return ZUtils.sortDigitsAscending(Z.valueOf(Functions.REVERSE.l(++mN) + mN));
   }
 }

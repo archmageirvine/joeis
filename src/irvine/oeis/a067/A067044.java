@@ -17,8 +17,7 @@ public class A067044 extends Sequence1 {
     ++mN;
     long k = 0;
     while (true) {
-      long n = ++k * mN;
-      if ((Functions.SYNDROME.i(n) & 0b1010101010) == 0) {
+      if ((Functions.SYNDROME.i(++k * mN) & 0b1010101010) == 0) {
         return Z.valueOf(k);
       }
     }

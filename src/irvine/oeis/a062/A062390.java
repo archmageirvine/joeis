@@ -15,8 +15,7 @@ public class A062390 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      long n = ++mN;
-      final long r = Functions.REVERSE.l(n);
+      final long r = Functions.REVERSE.l(++mN);
       final long s = mN + r;
       final long d = mN - r;
       if (d != 0 && s % d == 0 && Math.abs(s / d) == 11) {

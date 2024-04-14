@@ -3,7 +3,6 @@ package irvine.oeis.a102;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 
 /**
  * A102117 Iccanobirt numbers (7 of 15): a(n) = R(a(n-1)) + R(a(n-2)) + R(a(n-3)), where R is the digit reversal function A004086.

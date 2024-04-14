@@ -2,7 +2,6 @@ package irvine.oeis.a065;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
 

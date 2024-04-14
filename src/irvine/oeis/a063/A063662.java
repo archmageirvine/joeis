@@ -20,8 +20,7 @@ public class A063662 extends Sequence0 {
       final int syn = Functions.SYNDROME.i(mN);
       long k = mN;
       while (true) {
-        long n = ++k;
-        if ((syn & Functions.SYNDROME.i(n)) != 0) {
+        if ((syn & Functions.SYNDROME.i(++k)) != 0) {
           mN = k;
           break;
         }

@@ -36,7 +36,7 @@ class DigitProduct extends AbstractFunction2 {
   }
 
   @Override
-  public long l(final long base, long n) {
+  public long l(final long base, final long n) {
     if (base < 2) {
       throw new IllegalArgumentException();
     }

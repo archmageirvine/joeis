@@ -29,8 +29,7 @@ public class A062946 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      long n = ++mN;
-      final String rev = Long.toString(Functions.REVERSE.l(n));
+      final String rev = Long.toString(Functions.REVERSE.l(++mN));
       final int nLen = Long.toString(mN).length();
       if (rev.length() == nLen) {
         long k = 1;

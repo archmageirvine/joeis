@@ -17,8 +17,7 @@ public class A035139 extends Sequence1 {
   public Z next() {
     outer:
     while (true) {
-      long n = ++mN;
-      final int syn = Functions.SYNDROME.i(n);
+      final int syn = Functions.SYNDROME.i(++mN);
       for (final Z p : Jaguar.factor(mN).toZArray()) {
         if ((Functions.SYNDROME.i(p) & syn) != 0) {
           continue outer;

@@ -1,7 +1,6 @@
 package irvine.oeis.a066;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 import irvine.oeis.transform.SimpleTransformSequence;
 

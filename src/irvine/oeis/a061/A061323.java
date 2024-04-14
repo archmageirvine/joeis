@@ -1,8 +1,8 @@
 package irvine.oeis.a061;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -33,7 +33,7 @@ public class A061323 extends Sequence1 {
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      if (mRoot.equals(ZUtils.leastPrimitiveRoot(mP))) {
+      if (mRoot.equals(Functions.LEAST_PRIMITIVE_ROOT.z(mP))) {
         return mP;
       }
     }

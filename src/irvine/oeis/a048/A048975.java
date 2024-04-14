@@ -1,7 +1,7 @@
 package irvine.oeis.a048;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -24,7 +24,7 @@ public class A048975 extends A000040 {
       final Z p = mP;
       mP = super.next();
       mA = mP;
-      if (ZUtils.leastPrimitiveRoot(p).add(1).equals(ZUtils.leastPrimitiveRoot(mP))) {
+      if (Functions.LEAST_PRIMITIVE_ROOT.z(p).add(1).equals(Functions.LEAST_PRIMITIVE_ROOT.z(mP))) {
         return p;
       }
     }

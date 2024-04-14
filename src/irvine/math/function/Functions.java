@@ -12,6 +12,8 @@ public final class Functions {
   public static final Function1 CEIL_SQRT = new CeilSqrt();
   /** Bitset indicating which digits are present in a number. */
   public static final Function1 SYNDROME = new Syndrome();
+  /** Least primitive root of a modulus. */
+  public static final Function1 LEAST_PRIMITIVE_ROOT = new LeastPrimitiveRoot();
 
   /** Reverse the digits of a number. */
   public static final Function2 REVERSE = new Reverse();

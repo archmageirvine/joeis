@@ -16,8 +16,7 @@ public class A161791 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      long n = ++mN;
-      final long r = Functions.REVERSE.l(n);
+      final long r = Functions.REVERSE.l(++mN);
       for (final Z dd : Jaguar.factor(mN).divisors()) {
         final long d = dd.longValue();
         if (2 * d > mN) {

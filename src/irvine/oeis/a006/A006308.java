@@ -7,10 +7,10 @@ import irvine.math.cc.CC;
 import irvine.math.cc.ComputableComplexField;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -113,7 +113,7 @@ public class A006308 extends AbstractSequence {
   public Z next() {
     mP = (int) mPrime.nextPrime(mP);
     final long p2 = (long) mP * mP;
-    final Z g = ZUtils.leastPrimitiveRoot(Z.valueOf(p2));
+    final Z g = Functions.LEAST_PRIMITIVE_ROOT.z(p2);
     final int q = g.modPow(Z.valueOf(mP), Z.valueOf(p2)).intValueExact();
     final Polynomial<CR> f = f(mP, q);
     if (mVerbose) {

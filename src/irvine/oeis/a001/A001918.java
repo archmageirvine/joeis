@@ -1,8 +1,8 @@
 package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -45,6 +45,6 @@ public class A001918 extends AbstractSequence {
   public Z next() {
     ++mIndex;
     mP = mPrime.nextPrime(mP);
-    return ZUtils.leastPrimitiveRoot(mP);
+    return Functions.LEAST_PRIMITIVE_ROOT.z(mP);
   }
 }

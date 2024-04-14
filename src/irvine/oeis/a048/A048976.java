@@ -1,7 +1,7 @@
 package irvine.oeis.a048;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -14,7 +14,7 @@ public class A048976 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      final Z q = ZUtils.leastPrimitiveRoot(p);
+      final Z q = Functions.LEAST_PRIMITIVE_ROOT.z(p);
       if (q.isOdd() && q.isProbablePrime()) {
         return p;
       }

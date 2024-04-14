@@ -467,35 +467,6 @@ public final class ZUtils {
     return true;
   }
 
-  private static boolean isPrimitiveRoot(final Z[] primes, final Z phi, final Z n, final Z r) {
-    for (final Z pi : primes) {
-      if (Z.ONE.equals(r.modPow(phi.divide(pi), n))) {
-        return false;
-      }
-    }
-    return true;
-  }
-
-  /**
-   * Find the least primitive root of <code>n</code>.
-   * @param n modulus
-   * @return least primitive root of <code>n</code>
-   */
-  public static Z leastPrimitiveRoot(final Z n) {
-    if (Z.TWO.equals(n)) {
-      return Z.ONE;
-    }
-    final Z phi = Euler.phi(n);
-    final Z[] primes = Jaguar.factor(phi).toZArray();
-    Z r = Z.ONE;
-    while (true) {
-      r = r.add(1);
-      if (isPrimitiveRoot(primes, phi, n, r)) {
-        return r;
-      }
-    }
-  }
-
   /**
    * Describe the number. For example, 3445, is one 3, two 4s, one 5 to give 132415.
    * @param n number to describe

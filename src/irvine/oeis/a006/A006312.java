@@ -1,8 +1,8 @@
 package irvine.oeis.a006;
 
 import irvine.math.cr.CR;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 
 /**
  * A006312 Discriminants of period polynomials.
@@ -27,13 +27,13 @@ public class A006312 extends A006308 {
   public Z next() {
     mP = (int) mPrime.nextPrime(mP);
     final long p2 = (long) mP * mP;
-    final Z g = ZUtils.leastPrimitiveRoot(Z.valueOf(p2));
+    final Z g = Functions.LEAST_PRIMITIVE_ROOT.z(p2);
     final int q = g.modPow(Z.valueOf(mP), Z.valueOf(p2)).intValueExact();
     final CR[] etaStar = new CR[mP];
     for (int i = 0; i < etaStar.length; ++i) {
       etaStar[i] = etaStar(mP, q, i);
     }
-    // The paper gives multiple expressions for D, some where the individual
+    // The paper gives multiple expressions for D, where the individual
     // terms in the product are squared.  But it seems to me that the
     // squaring is unnecessary except strangely for p == 3.
     CR d = CR.ONE;

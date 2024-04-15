@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
@@ -19,7 +19,7 @@ public class A051521 extends Sequence1 {
   public Z next() {
     ++mN;
     while (mM <= 4 * mN * mN) {
-      final long d = Jaguar.factor(mM).sigma0().longValueExact();
+      final long d = Functions.SIGMA0.z(mM).longValueExact();
       if (mM % d == 0) {
         mA.increment(mM / d);
       }

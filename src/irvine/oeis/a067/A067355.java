@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -24,7 +24,7 @@ public class A067355 extends A000040 {
     mS = new Z[mL + 1];
     for (int k = 0; k < mS.length; ++k) {
       mP[k] = super.next();
-      mS[k] = Jaguar.factor(k + 1).sigma0().multiply(k + 1);
+      mS[k] = Functions.SIGMA0.z(k + 1).multiply(k + 1);
       ++mN;
     }
   }
@@ -42,7 +42,7 @@ public class A067355 extends A000040 {
       mP[mL] = super.next();
       final Z s = mS[0];
       System.arraycopy(mS, 1, mS, 0, mS.length - 1);
-      mS[mL] = Jaguar.factor(++mN).sigma0().multiply(mN);
+      mS[mL] = Functions.SIGMA0.z(++mN).multiply(mN);
       if (mP[mL].subtract(mS[mL]).equals(p.subtract(s))) {
         return Z.valueOf(mN + mLo);
       }

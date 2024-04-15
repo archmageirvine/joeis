@@ -1,6 +1,6 @@
 package irvine.oeis.a069;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A069062 extends Sequence1 {
     while (true) {
       final Z n = Z.valueOf(++mN);
       final Z t = n.square();
-      if (Jaguar.factor(t.subtract(1)).sigma0().equals(Jaguar.factor(t.add(1)).sigma0())) {
+      if (Functions.SIGMA0.z(t.subtract(1)).equals(Functions.SIGMA0.z(t.add(1)))) {
         return n;
       }
     }

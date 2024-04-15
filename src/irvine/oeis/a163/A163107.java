@@ -22,6 +22,6 @@ public class A163107 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Jaguar.factor(Jaguar.factor(Functions.SIGMA.z(mN)).tau()).tau();
+    return Functions.SIGMA0.z(Jaguar.factor(Functions.SIGMA.z(mN)).tau());
   }
 }

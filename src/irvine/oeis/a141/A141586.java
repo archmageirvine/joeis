@@ -1,6 +1,7 @@
 package irvine.oeis.a141;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -14,7 +15,7 @@ public class A141586 extends Sequence1 {
 
   private boolean is(final long n) {
     for (final Z d : Jaguar.factor(n).divisors()) {
-      if (n % Jaguar.factor(d).sigma0AsLong() != 0) {
+      if (n % Functions.SIGMA0.l(d) != 0) {
         return false;
       }
     }

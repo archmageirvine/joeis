@@ -1,6 +1,6 @@
 package irvine.oeis.a366;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -26,7 +26,7 @@ public class A366144 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    final Z dn = Jaguar.factor(n).sigma0();
+    final Z dn = Functions.SIGMA0.z(n);
     final Z[] quot = n.divideAndRemainder(dn);
     return quot[1].isZero() ? quot[0] : n.multiply(dn);
   }

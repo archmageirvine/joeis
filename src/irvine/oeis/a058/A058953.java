@@ -1,7 +1,7 @@
 package irvine.oeis.a058;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -24,7 +24,7 @@ public class A058953 extends A058933 {
         m >>>= 1;
       }
       if (mPrime.isPrime(m)) {
-        final Z sigma0 = Jaguar.factor(mN).sigma0();
+        final Z sigma0 = Functions.SIGMA0.z(mN);
         if (sigma0.equals(t) || sigma0.subtract(1).equals(t)) {
           return Z.valueOf(mN);
         }

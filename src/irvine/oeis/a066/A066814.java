@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 import irvine.util.array.LongDynamicArray;
@@ -23,7 +23,7 @@ public class A066814 extends A000040 {
     }
     while (mFirst.get(mN) == null) {
       final Z p = super.next();
-      final long s = Jaguar.factor(p.subtract(1)).sigma0AsLong();
+      final long s = Functions.SIGMA0.l(p.subtract(1));
       if (mFirst.get(s) == null) {
         mFirst.set(s, p);
       }

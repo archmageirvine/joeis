@@ -1,6 +1,6 @@
 package irvine.oeis.a161;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
@@ -17,7 +17,7 @@ public class A161575 extends Sequence1 {
   private boolean test(final long t, final int n, final String s) {
     int d = mDivisorCount.get(t);
     if (d == 0) {
-      d = Jaguar.factor(t).sigma0().intValueExact();
+      d = Functions.SIGMA0.z(t).intValueExact();
       mDivisorCount.set(t, d);
     }
     return d == n && Long.toString(t, 2).contains(s);

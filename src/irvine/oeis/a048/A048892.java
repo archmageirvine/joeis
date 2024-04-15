@@ -2,7 +2,7 @@ package irvine.oeis.a048;
 
 import java.util.HashSet;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A048892 extends Sequence1 {
 
   private int consecutiveDistinctDivisors(long n) {
     final HashSet<Z> div = new HashSet<>();
-    while (div.add(Jaguar.factor(n).sigma0())) {
+    while (div.add(Functions.SIGMA0.z(n))) {
       ++n;
     }
     return div.size();

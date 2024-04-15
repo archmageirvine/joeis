@@ -3,6 +3,7 @@ package irvine.oeis.a070;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.oeis.FilterNumberSequence;
 
 /**
@@ -15,7 +16,7 @@ public class A070418 extends FilterNumberSequence {
   public A070418() {
     super(1, 1, k -> {
       final FactorSequence fs = Jaguar.factor(k);
-      return fs.sigma0().equals(Jaguar.factor(fs.phi()).sigma0());
+      return fs.sigma0().equals(Functions.SIGMA0.z(fs.phi()));
     });
   }
 }

@@ -1,6 +1,6 @@
 package irvine.oeis.a161;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -26,7 +26,7 @@ public class A161767 extends Sequence0 {
     final long d = mB.subtract(mA).longValue();
     Z n = mB.add(2);
     while (true) {
-      if (Jaguar.factor(n).sigma0AsLong() == d) {
+      if (Functions.SIGMA0.l(n) == d) {
         mA = mB;
         mB = n;
         return n;

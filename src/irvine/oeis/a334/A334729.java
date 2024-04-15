@@ -19,7 +19,7 @@ public class A334729 extends Sequence1 {
     ++mN;
     Z prod = Z.ONE;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
-      prod = prod.multiply(Jaguar.factor(dd).sigma0().gcd(Functions.SIGMA.z(dd)));
+      prod = prod.multiply(Functions.SIGMA0.z(dd).gcd(Functions.SIGMA.z(dd)));
     }
     return prod;
   }

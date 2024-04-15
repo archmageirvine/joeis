@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
 import irvine.oeis.Sequence1;
@@ -30,7 +30,7 @@ public class A067069 extends Sequence1 implements Conjectural {
             }
           }
         }
-        final long d = Jaguar.factor(q).sigma0AsLong();
+        final long d = Functions.SIGMA0.l(q);
         final long s = (LongUtils.isSquare(q) ? d + 1 : d) / 2;
         if (r != s) {
           ok = false;

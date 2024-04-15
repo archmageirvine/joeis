@@ -1,7 +1,7 @@
 package irvine.oeis.a212;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -26,6 +26,6 @@ public class A212957 extends UpperLeftTriangle {
   @Override
   public Z matrixElement(final int n, final int k) {
     return k == 1 ? Z.ZERO : Integers.SINGLETON.sumdiv(n, d ->
-      Jaguar.factor(Z.valueOf(k).pow(d).subtract(1)).sigma0().multiply(Mobius.mobius(n / d)));
+      Functions.SIGMA0.z(Z.valueOf(k).pow(d).subtract(1)).multiply(Mobius.mobius(n / d)));
   }
 }

@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -31,7 +31,7 @@ public class A006128 extends AbstractSequence {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; ++k) {
-      sum = sum.add(IntegerPartition.partitions(mN - k).multiply(Jaguar.factor(k).sigma0()));
+      sum = sum.add(IntegerPartition.partitions(mN - k).multiply(Functions.SIGMA0.z(k)));
     }
     return sum;
   }

@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
@@ -17,7 +17,7 @@ public class A068977 extends Sequence1 {
   private final MemoryFunction1<Long> mSigma0 = new MemoryFunction1<>() {
     @Override
     protected Long compute(final int n) {
-      return Jaguar.factor(n).sigma0AsLong();
+      return Functions.SIGMA0.l(n);
     }
   };
 

@@ -2,7 +2,7 @@ package irvine.oeis.a175;
 
 import java.util.HashSet;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -27,7 +27,7 @@ public class A175502 extends Sequence1 {
     while (true) {
       final Z zn = Z.valueOf(n);
       if (!mUsed.contains(zn)) {
-        final long dc = Jaguar.factor(zn).sigma0AsLong();
+        final long dc = Functions.SIGMA0.l(zn);
         final long a, b;
         if (mLastDivisors < dc) {
           a = mLastDivisors;

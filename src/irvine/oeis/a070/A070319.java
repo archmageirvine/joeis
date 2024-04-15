@@ -1,7 +1,7 @@
 package irvine.oeis.a070;
 // manually 2024-02-07/dirtral at 2024-02-07 14:25
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.transform.TupleTransformSequence;
 
@@ -14,7 +14,7 @@ public class A070319 extends TupleTransformSequence {
   /** Construct the sequence. */
   public A070319() {
     super(1, (n, s) -> {
-      final Z taun = Jaguar.factor(n).tau();
+      final Z taun = Functions.SIGMA0.z(n);
       return taun.compareTo(s[0]) > 0 ? taun : s[0];
     }, "1", PREVIOUS);
   }

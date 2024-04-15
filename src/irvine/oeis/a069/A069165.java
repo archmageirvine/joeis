@@ -1,6 +1,6 @@
 package irvine.oeis.a069;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
@@ -17,7 +17,7 @@ public class A069165 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Q s = Rationals.SINGLETON.sumdiv(++mN, d -> new Q(Z.ONE, Jaguar.factor(d).sigma0())).multiply(mN);
+      final Q s = Rationals.SINGLETON.sumdiv(++mN, d -> new Q(Z.ONE, Functions.SIGMA0.z(d))).multiply(mN);
       if (s.isInteger()) {
         return s.toZ();
       }

@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,6 +15,6 @@ public class A003165 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(mN / 2 + 1).subtract(Jaguar.factor(mN).sigma0());
+    return Z.valueOf(mN / 2 + 1).subtract(Functions.SIGMA0.z(mN));
   }
 }

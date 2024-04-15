@@ -1,7 +1,6 @@
 package irvine.oeis.a243;
 // manually simbinom at 2023-03-17 20:00
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
@@ -23,7 +22,7 @@ public class A243997 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    final Z t = Functions.SIGMA.z(mN).subtract(Euler.phi(Z.valueOf(mN))).subtract(Jaguar.factor(mN).tau());
+    final Z t = Functions.SIGMA.z(mN).subtract(Euler.phi(Z.valueOf(mN))).subtract(Functions.SIGMA0.z(mN));
     return t.isZero() ? Z.ZERO : Euler.phi(t.abs());
   }
 }

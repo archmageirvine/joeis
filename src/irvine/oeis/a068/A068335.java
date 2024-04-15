@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,7 +16,7 @@ public class A068335 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long s0 = Jaguar.factor(++mN).sigma0AsLong();
+      final long s0 = Functions.SIGMA0.l(++mN);
       if (s0 < 39) {
         final long t = LongUtils.pow(3, s0);
         if (t <= mN && 2 * t > mN) {

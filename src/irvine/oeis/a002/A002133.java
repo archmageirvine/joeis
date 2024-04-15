@@ -2,7 +2,6 @@ package irvine.oeis.a002;
 
 import java.util.HashMap;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -22,7 +21,7 @@ public class A002133 extends Sequence1 {
     if (r != null) {
       return r;
     }
-    final long t = Jaguar.factor(n).sigma0AsLong();
+    final long t = Functions.SIGMA0.l(n);
     mTau.put(n, t);
     return t;
   }

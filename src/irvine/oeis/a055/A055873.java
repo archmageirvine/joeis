@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
@@ -17,6 +17,6 @@ public class A055873 extends MemorySequence {
     if (n == 0) {
       return Z.ONE;
     }
-    return Integers.SINGLETON.sum(1, Jaguar.factor(n).sigma0().intValueExact(), k -> a(n - k));
+    return Integers.SINGLETON.sum(1, Functions.SIGMA0.z(n).intValueExact(), k -> a(n - k));
   }
 }

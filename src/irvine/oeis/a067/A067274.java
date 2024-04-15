@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a010.A010052;
 
@@ -19,7 +19,7 @@ public class A067274 extends A010052 {
     if (++mN == 0) {
       return Z.ONE;
     } else if (mN > 1) {
-      mA = mA.add(Jaguar.factor(mN).sigma0().add(1).multiply2().add(c));
+      mA = mA.add(Functions.SIGMA0.z(mN).add(1).multiply2().add(c));
     }
     return mA;
   }

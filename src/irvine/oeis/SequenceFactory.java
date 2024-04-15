@@ -170,7 +170,7 @@ public final class SequenceFactory {
         case "sigma":
           return new SimpleTransformSequence(sequence(inner), k -> Functions.SIGMA.z(k));
         case "sigma0":
-          return new SimpleTransformSequence(sequence(inner), k -> Jaguar.factor(k).sigma0());
+          return new SimpleTransformSequence(sequence(inner), k -> Functions.SIGMA0.z(k));
         case "stirling1":
           return new Stirling1TransformSequence(1, sequence(inner));
         case "stirling2":

@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
@@ -19,7 +19,7 @@ public class A060990 extends Sequence0 {
   public Z next() {
     ++mN;
     while (mX <= 2 * mN + 3) {
-      final long d = mX - Jaguar.factor(mX).sigma0AsLong();
+      final long d = mX - Functions.SIGMA0.l(mX);
       if (d < mN) {
         throw new RuntimeException("An earlier count was wrong");
       }

@@ -8,6 +8,8 @@ public final class Functions {
 
   private Functions() { }
 
+  /** Sum of divisors function. */
+  public static final Function1 SIGMA = new Sigma();
   /** Ceiling square root. */
   public static final Function1 CEIL_SQRT = new CeilSqrt();
   /** Bitset indicating which digits are present in a number. */

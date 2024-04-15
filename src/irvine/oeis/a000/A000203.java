@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.factor.Sigma;
+import irvine.math.function.Functions;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -29,7 +29,8 @@ public class A000203 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(Sigma.sigma(++mN));
+    final long n = ++mN;
+    return Z.valueOf(Functions.SIGMA.l(n));
   }
 
   @Override

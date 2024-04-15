@@ -22,7 +22,8 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(LookAndSayTest.class);
     suite.addTestSuite(ReverseTest.class);
     suite.addTestSuite(RotateRightTest.class);
-    suite.addTestSuite(Syndrome.class);
+    suite.addTestSuite(SigmaTest.class);
+    suite.addTestSuite(SyndromeTest.class);
     return suite;
   }
 }

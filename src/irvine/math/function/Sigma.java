@@ -1,31 +1,29 @@
-package irvine.factor;
+package irvine.math.function;
 
+import irvine.factor.factor.Jaguar;
+import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * Compute the sum of divisors function for small integers.
+ * Compute the sum of divisors function.
+ * For small values it will consult a table (which can grow as required),
+ * for large specific values it will use factorization.
  * @author Sean A. Irvine
  */
-public class Sigma {
+public class Sigma extends AbstractFunction1 {
 
   private static final long INITIAL_SIZE = 1024;
-  private static final Sigma SINGLETON = new Sigma();
-
-  /**
-   * Return the sum of divisors of a positive integer.
-   * @param n number
-   * @return sum of divisors
-   */
-  public static long sigma(final long n) {
-    return SINGLETON.get(n);
-  }
-
   private final LongDynamicLongArray mSigma = new LongDynamicLongArray();
   private long mMax = 0;
 
-  private long get(final long n) {
+  @Override
+  public long l(final long n) {
     if (n <= 0) {
       throw new IllegalArgumentException();
+    }
+    if (n >= 2 * mMax) {
+      // Request value is much larger than the current table, use factorization
+      return Jaguar.factor(n).sigma().longValueExact();
     }
     if (n >= mMax) {
       // We need to resize the table to accommodate n.
@@ -39,5 +37,15 @@ public class Sigma {
       }
     }
     return mSigma.get(n);
+  }
+
+  @Override
+  public Z z(final long n) {
+    return Z.valueOf(l(n));
+  }
+
+  @Override
+  public Z z(final Z n) {
+    return n.bitLength() < Long.SIZE ? z(n.longValue()) : Jaguar.factor(n).sigma();
   }
 }

@@ -15,7 +15,7 @@ class DistinctDigitCount extends AbstractFunction2 {
   }
 
   @Override
-  public long l(final long base, Z n) {
+  public long l(final long base, final Z n) {
     if (base < 2) {
       throw new IllegalArgumentException();
     }

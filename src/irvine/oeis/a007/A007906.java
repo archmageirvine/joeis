@@ -2,7 +2,7 @@ package irvine.oeis.a007;
 
 import java.util.HashSet;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -24,7 +24,7 @@ public class A007906 extends Sequence1 {
       if (n.isProbablePrime()) {
         return step + 2;
       }
-      n = Jaguar.factor(n).sigma().subtract(n);
+      n = Functions.SIGMA.z(n).subtract(n);
       ++step;
     }
     return -1;

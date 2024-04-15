@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
@@ -14,7 +14,7 @@ public class A068017 extends A002808 {
   public Z next() {
     while (true) {
       final Z c = super.next();
-      final Z t = Jaguar.factor(c).sigma();
+      final Z t = Functions.SIGMA.z(c);
       if (t.subtract(1).isProbablePrime() && t.add(1).isProbablePrime()) {
         return c;
       }

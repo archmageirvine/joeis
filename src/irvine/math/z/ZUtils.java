@@ -994,7 +994,7 @@ public final class ZUtils {
     Arrays.sort(fn);
     Z p = Z.ONE;
     for (int k = 1; k < fn.length; ++k) {
-      final Z sigma = Jaguar.factor(fn[k - 1].pow(fs.getExponent(fn[k - 1]))).sigma();
+      final Z sigma = Functions.SIGMA.z(fn[k - 1].pow(fs.getExponent(fn[k - 1])));
       p = p.multiply(sigma);
       if (fn[k].compareTo(p.add(1)) > 0) {
         return false;

@@ -3,6 +3,7 @@ package irvine.oeis.a246;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -22,6 +23,6 @@ public class A246908 extends AbstractSequence {
   @Override
   public Z next() {
     final FactorSequence fs = Jaguar.factor(++mN);
-    return Jaguar.factor(fs.sigma().add(mN)).sigma().subtract(fs.sigma());
+    return Functions.SIGMA.z(fs.sigma().add(mN)).subtract(fs.sigma());
   }
 }

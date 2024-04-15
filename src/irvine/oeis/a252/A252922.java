@@ -1,7 +1,7 @@
 package irvine.oeis.a252;
 // manually simbinom at 2023-03-17 20:54
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -30,6 +30,6 @@ public class A252922 extends AbstractSequence {
     if (mN == 3) {
       return Z.FOUR;
     }
-    return Jaguar.factor(mN - 1).sigma().add(Jaguar.factor(mN - 2).sigma()).add(Jaguar.factor(mN - 3).sigma());
+    return Functions.SIGMA.z(mN - 1).add(Functions.SIGMA.z(mN - 2)).add(Functions.SIGMA.z(mN - 3));
   }
 }

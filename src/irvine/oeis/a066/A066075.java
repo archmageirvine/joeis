@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
@@ -21,7 +21,7 @@ public class A066075 extends Sequence1 {
   public Z next() {
     mP = mPrime.nextPrime(mP);
     while (mM <= mP) {
-      mA.increment(Jaguar.factor(mM).sigma().intValueExact() - 1);
+      mA.increment(Functions.SIGMA.z(mM).intValueExact() - 1);
       ++mM;
     }
     return Z.valueOf(mA.get(mP));

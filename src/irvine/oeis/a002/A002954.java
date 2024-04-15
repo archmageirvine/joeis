@@ -2,7 +2,7 @@ package irvine.oeis.a002;
 
 import java.util.HashSet;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
@@ -22,7 +22,7 @@ public class A002954 extends Sequence1 {
 
   private long chowla(final long n) {
     if (n >= mChowla.length() || mChowla.get(n) == 0) {
-      final long sigma = Jaguar.factor(n).sigma().longValueExact() - n - 1;
+      final long sigma = Functions.SIGMA.z(n).longValueExact() - n - 1;
       mChowla.set(n, sigma == 0 ? -1 : sigma);
     }
     final long v = mChowla.get(n);

@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
@@ -18,7 +18,7 @@ public class A067573 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Q a = new Q(Jaguar.factor(Euler.phi(++mN)).sigma(), Jaguar.factor(mN).sigma());
+      final Q a = new Q(Functions.SIGMA.z(Euler.phi(++mN)), Functions.SIGMA.z(mN));
       if (a.compareTo(mRecord) > 0) {
         mRecord = a;
         return Z.valueOf(mN);

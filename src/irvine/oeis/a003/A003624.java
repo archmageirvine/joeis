@@ -1,8 +1,8 @@
 package irvine.oeis.a003;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +20,7 @@ public class A003624 extends Sequence1 {
     while (true) {
       ++mN;
       if (!mPrime.isPrime(mN)) {
-        final Z sigma = Jaguar.factor(mN).sigma();
+        final Z sigma = Functions.SIGMA.z(mN);
         if (LongUtils.gcd(mN, sigma.longValueExact()) == 1) {
           return Z.valueOf(mN);
         }

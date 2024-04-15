@@ -1,7 +1,7 @@
 package irvine.oeis.a104;
 // manually sigman1/sigma1s at 2023-02-28 23:52
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -12,6 +12,6 @@ public class A104353 extends A104350 {
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next()).sigma();
+    return Functions.SIGMA.z(super.next());
   }
 }

@@ -1,6 +1,6 @@
 package irvine.oeis.a062;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.a023.A023022;
@@ -25,7 +25,7 @@ public class A062950 extends AbstractSequence {
   @Override
   public Z next() {
     final Z n = mSeq1.next();
-    return Jaguar.factor(n).sigma().subtract(n).subtract(1);
+    return Functions.SIGMA.z(n).subtract(n).subtract(1);
   }
 }
 

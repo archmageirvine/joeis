@@ -1,6 +1,5 @@
 package irvine.oeis.a066;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -17,7 +16,7 @@ public class A066871 extends Sequence1 {
   private Z mU = null;
 
   private static Z aliquot(final Z n) {
-    return Jaguar.factor(n).sigma().subtract(n);
+    return Functions.SIGMA.z(n).subtract(n);
   }
 
   private boolean isHarshad(final Z n) {

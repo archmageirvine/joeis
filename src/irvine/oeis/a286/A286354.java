@@ -1,7 +1,7 @@
 package irvine.oeis.a286;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunctionInt2;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
@@ -31,7 +31,7 @@ public class A286354 extends UpperLeftTriangle {
       }
       Z sum = Z.ZERO;
       for (int j = 1; j <= n; ++j) {
-        sum = sum.add(get(n - j, k).multiply(Jaguar.factor(j).sigma()));
+        sum = sum.add(get(n - j, k).multiply(Functions.SIGMA.z(j)));
       }
       return sum.multiply(-k).divide(n);
     }

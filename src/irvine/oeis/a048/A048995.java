@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicBooleanArray;
@@ -22,7 +22,7 @@ public class A048995 extends Sequence1 {
         return Z.ONE;
       }
       while (mN * mN >= mS || mN >= mA.length()) {
-        final long sigma = Jaguar.factor(++mS).sigma().longValueExact();
+        final long sigma = Functions.SIGMA.z(++mS).longValueExact();
         mA.set(sigma - mS - 1);
       }
       if (!mA.isSet(mN)) {

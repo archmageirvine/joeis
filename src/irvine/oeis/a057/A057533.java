@@ -2,7 +2,7 @@ package irvine.oeis.a057;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,7 +15,7 @@ public class A057533 extends Sequence1 {
   private long mN = 47;
 
   private Z step(final Z n) {
-    return Jaguar.factor(n).sigma().subtract(n).subtract(1);
+    return Functions.SIGMA.z(n).subtract(n).subtract(1);
   }
 
   @Override

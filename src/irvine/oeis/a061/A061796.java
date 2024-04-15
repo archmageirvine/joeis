@@ -2,7 +2,7 @@ package irvine.oeis.a061;
 
 import java.util.HashSet;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,10 +17,10 @@ public class A061796 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z s = Jaguar.factor(++mN).sigma();
+    final Z s = Functions.SIGMA.z(++mN);
     mSums.add(s.multiply2());
     for (long q = 1; q < mN; ++q) {
-      mSums.add(s.add(Jaguar.factor(q).sigma()));
+      mSums.add(s.add(Functions.SIGMA.z(q)));
     }
     return Z.valueOf(mSums.size());
   }

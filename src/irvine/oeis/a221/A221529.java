@@ -1,7 +1,7 @@
 package irvine.oeis.a221;
 // manually convol/convprod at 2023-07-10 09:57
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
@@ -20,6 +20,6 @@ public class A221529 extends BaseTriangle {
 
   @Override
   public Z triangleElement(final int n, final int k) {
-    return Jaguar.factor(k).sigma().multiply(IntegerPartition.partitions(n - k));
+    return Functions.SIGMA.z(k).multiply(IntegerPartition.partitions(n - k));
   }
 }

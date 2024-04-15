@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicIntArray;
@@ -16,7 +16,7 @@ public class A054973 extends Sequence1 {
 
   @Override
   public Z next() {
-    mA.increment(Jaguar.factor(++mN).sigma().longValueExact());
+    mA.increment(Functions.SIGMA.z(++mN).longValueExact());
     return Z.valueOf(mA.get(mN));
   }
 }

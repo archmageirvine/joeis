@@ -1,8 +1,7 @@
 package irvine.oeis.a329;
 // manually simbinom/simjagfa at 2023-03-17 19:21
 
-import irvine.factor.factor.Jaguar;
-import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -21,7 +20,6 @@ public class A329890 extends AbstractSequence {
 
   @Override
   public Z next() {
-    final FactorSequence fs = Jaguar.factor(++mN);
-    return (mN == 1) ? Z.ONE : Jaguar.factor(Z.ONE.shiftLeft(mN).subtract(1)).sigma().subtract(Jaguar.factor(Z.ONE.shiftLeft(mN - 1).subtract(1)).sigma());
+    return (++mN == 1) ? Z.ONE : Functions.SIGMA.z(Z.ONE.shiftLeft(mN).subtract(1)).subtract(Functions.SIGMA.z(Z.ONE.shiftLeft(mN - 1).subtract(1)));
   }
 }

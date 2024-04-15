@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -21,7 +21,7 @@ public class A000458 extends Sequence0 {
     } else if (mA == null) {
       mA = Z.ONE;
     } else {
-      final Z s = Jaguar.factor(mB).sigma();
+      final Z s = Functions.SIGMA.z(mB);
       final Z t = mASigma.add(s);
       mA = mB;
       mB = t;

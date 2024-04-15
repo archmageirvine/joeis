@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicByteArray;
@@ -20,7 +20,7 @@ public class A057709 extends Sequence1 {
     while (true) {
       ++mN;
       while (mM < mN * mN) {
-        final long s = Jaguar.factor(mM).sigma().longValueExact() - mM;
+        final long s = Functions.SIGMA.z(mM).longValueExact() - mM;
         final byte c = mCount.get(s);
         if (c <= 1) {
           mCount.set(s, (byte) (c + 1));

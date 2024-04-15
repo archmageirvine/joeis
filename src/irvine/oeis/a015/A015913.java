@@ -1,6 +1,6 @@
 package irvine.oeis.a015;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -10,10 +10,10 @@ import irvine.oeis.Sequence1;
  */
 public class A015913 extends Sequence1 {
 
-  private Z mSigmaA = Jaguar.factor(1).sigma();
-  private Z mSigmaB = Jaguar.factor(2).sigma();
-  private Z mSigmaC = Jaguar.factor(3).sigma();
-  private Z mSigmaD = Jaguar.factor(4).sigma();
+  private Z mSigmaA = Functions.SIGMA.z(1);
+  private Z mSigmaB = Functions.SIGMA.z(2);
+  private Z mSigmaC = Functions.SIGMA.z(3);
+  private Z mSigmaD = Functions.SIGMA.z(4);
   private long mN = 4;
 
   @Override
@@ -23,7 +23,7 @@ public class A015913 extends Sequence1 {
       mSigmaA = mSigmaB;
       mSigmaB = mSigmaC;
       mSigmaC = mSigmaD;
-      mSigmaD = Jaguar.factor(++mN).sigma();
+      mSigmaD = Functions.SIGMA.z(++mN);
       if (mSigmaD.equals(sigma.add(4))) {
         return Z.valueOf(mN - 4);
       }

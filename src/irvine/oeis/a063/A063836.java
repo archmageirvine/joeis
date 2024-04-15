@@ -1,6 +1,7 @@
 package irvine.oeis.a063;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,7 +16,7 @@ public class A063836 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Jaguar.factor(Jaguar.factor(++mN).sigma()).unitarySigma().isProbablePrime()) {
+      if (Jaguar.factor(Functions.SIGMA.z(++mN)).unitarySigma().isProbablePrime()) {
         return Z.valueOf(mN);
       }
     }

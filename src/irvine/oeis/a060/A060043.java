@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a003.A003056;
 
@@ -38,7 +38,7 @@ public class A060043 extends A003056 {
       mM = super.next().intValueExact();
     }
     if (mM == 1) {
-      return Jaguar.factor(mN).sigma();
+      return Functions.SIGMA.z(mN);
     }
     mSum = Z.ZERO;
     search(mN, mM, Z.ONE, 0);

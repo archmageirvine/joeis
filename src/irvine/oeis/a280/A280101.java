@@ -1,7 +1,7 @@
 package irvine.oeis.a280;
 // manually sigman1/sigma1 at 2023-02-28 22:58
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.a139.A139041;
@@ -23,6 +23,6 @@ public class A280101 extends AbstractSequence {
 
   @Override
   public Z next() {
-    return (++mN == 1) ? Z.ONE : Jaguar.factor(mSeq1.next()).sigma();
+    return (++mN == 1) ? Z.ONE : Functions.SIGMA.z(mSeq1.next());
   }
 }

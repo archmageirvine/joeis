@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -15,7 +15,7 @@ public class A066767 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sum(1, ++mN, k -> Jaguar.factor(k).sigma().shiftLeft(mN - k));
+    return Integers.SINGLETON.sum(1, ++mN, k -> Functions.SIGMA.z(k).shiftLeft(mN - k));
   }
 }
 

@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +23,7 @@ public class A066421 extends Sequence1 {
       ++k;
       try {
         //t = mFactor.factorize(t).sigma();
-        t = Jaguar.factor(t).sigma();
+        t = Functions.SIGMA.z(t);
       } catch (final RuntimeException e) {
         System.err.println("Failed with k=" + k);
         throw e;

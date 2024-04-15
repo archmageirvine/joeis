@@ -1,6 +1,6 @@
 package irvine.oeis.a168;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A168013 extends Sequence1 {
     ++mN;
     final long limit = mN * mN;
     while (mNext < limit) {
-      mSum = mSum.add(Jaguar.factor(mNext++).sigma());
+      mSum = mSum.add(Functions.SIGMA.z(mNext++));
     }
     return mSum;
   }

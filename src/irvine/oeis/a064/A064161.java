@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -16,7 +16,7 @@ public class A064161 extends A000040 {
     Z k = p;
     while (true) {
       k = k.add(p);
-      if (Jaguar.factor(k).sigma().subtract(k).compareTo(k) > 0) {
+      if (Functions.SIGMA.z(k).subtract(k).compareTo(k) > 0) {
         return k;
       }
     }

@@ -2,7 +2,7 @@ package irvine.oeis.a036;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -27,7 +27,7 @@ public class A036845 extends Sequence1 {
         m = Euler.phi(m);
         phi = false;
       } else {
-        m = Jaguar.factor(m).sigma();
+        m = Functions.SIGMA.z(m);
         phi = true;
       }
     }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
@@ -33,7 +33,7 @@ public class A036471 extends Sequence1 {
     if (mVerbose && n % 1000000 == 0) {
       StringUtils.message("Scan has reached: " + n);
     }
-    return Jaguar.factor(n).sigma().longValue();
+    return Functions.SIGMA.z(n).longValue();
   }
 
   @Override

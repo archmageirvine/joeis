@@ -1,6 +1,6 @@
 package irvine.oeis.a130;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -21,7 +21,7 @@ public class A130466 extends Sequence1 {
       // Starting a new row
       ++mRow;
       mPositionInRow = 0;
-      mCurrentSigma = Jaguar.factor(mRow).sigma();
+      mCurrentSigma = Functions.SIGMA.z(mRow);
       mCurrentIndex = 0;
     }
     ++mPositionInRow;

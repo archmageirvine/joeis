@@ -2,6 +2,7 @@ package irvine.oeis.a035;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -27,7 +28,7 @@ public class A035109 extends Sequence0 {
         ecnt = ecnt.add(e);
       }
     }
-    return Jaguar.factor(d).sigma().multiply(ecnt).multiply(m);
+    return Functions.SIGMA.z(d).multiply(ecnt).multiply(m);
   }
 
   @Override

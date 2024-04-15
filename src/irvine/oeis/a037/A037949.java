@@ -1,7 +1,7 @@
 package irvine.oeis.a037;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 import irvine.util.array.DynamicLongArray;
@@ -32,7 +32,7 @@ public class A037949 extends A000040 {
 
   private long sigma(final int n) {
     while (n >= mSigma.length()) {
-      mSigma.set(mSigma.length(), Jaguar.factor(mSigma.length()).sigma().longValueExact());
+      mSigma.set(mSigma.length(), Functions.SIGMA.z(mSigma.length()).longValueExact());
     }
     return mSigma.get(n);
   }

@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicIntArray;
@@ -22,7 +22,7 @@ public class A007368 extends Sequence0 {
     while (true) {
       ++k;
       while (k >= mS || k >= mA.length()) {
-        mA.increment(Jaguar.factor(++mS).sigma().longValueExact());
+        mA.increment(Functions.SIGMA.z(++mS).longValueExact());
       }
       if (mA.get(k) == mN) {
         return Z.valueOf(k);

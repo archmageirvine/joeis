@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a018.A018252;
@@ -15,7 +15,7 @@ public class A048698 extends A018252 {
   public Z next() {
     while (true) {
       final Z a = super.next();
-      if (ZUtils.isCube(Jaguar.factor(a).sigma().subtract(a))) {
+      if (ZUtils.isCube(Functions.SIGMA.z(a).subtract(a))) {
         return a;
       }
     }

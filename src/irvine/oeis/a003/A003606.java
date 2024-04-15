@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
@@ -20,7 +21,7 @@ public class A003606 extends MemorySequence {
       Z s = Z.ZERO;
       for (final Z dd : Jaguar.factor(n).divisors()) {
         final int d = dd.intValue();
-        s = s.add(Jaguar.factor(n / d).sigma().multiply(IntegerPartition.partitions(d).multiply(d)));
+        s = s.add(Functions.SIGMA.z(n / d).multiply(IntegerPartition.partitions(d).multiply(d)));
       }
       return s;
     }

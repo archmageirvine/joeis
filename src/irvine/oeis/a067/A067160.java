@@ -2,6 +2,7 @@ package irvine.oeis.a067;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -18,7 +19,7 @@ public class A067160 extends Sequence1 {
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      if (Jaguar.factor(Euler.phi(fs.sigma())).sigma().equals(Euler.phi(Jaguar.factor(fs.phi()).sigma()))) {
+      if (Functions.SIGMA.z(Euler.phi(fs.sigma())).equals(Euler.phi(Functions.SIGMA.z(fs.phi())))) {
         return Z.valueOf(mN);
       }
     }

@@ -1,7 +1,7 @@
 package irvine.oeis.a065;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A065000 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      mSum += Mobius.mobius(Jaguar.factor(++mN).sigma().longValueExact());
+      mSum += Mobius.mobius(Functions.SIGMA.z(++mN).longValueExact());
       if (mSum == 0) {
         return Z.valueOf(mN);
       }

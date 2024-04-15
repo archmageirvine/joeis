@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -15,6 +15,6 @@ public class A066090 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Binomial.binomial(Jaguar.factor(++mN).sigma().longValueExact(), mN);
+    return Binomial.binomial(Functions.SIGMA.z(++mN).longValueExact(), mN);
   }
 }

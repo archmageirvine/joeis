@@ -1,6 +1,6 @@
 package irvine.oeis.a033;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -14,7 +14,7 @@ public class A033855 extends A033831 {
     while (true) {
       final Z j = super.next();
       final Z phi = mFactorSequence.phi();
-      if (j.multiply(phi).equals(Jaguar.factor(phi).sigma().subtract(phi))) {
+      if (j.multiply(phi).equals(Functions.SIGMA.z(phi).subtract(phi))) {
         return Z.valueOf(mN);
       }
     }

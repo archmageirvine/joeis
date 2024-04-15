@@ -1,6 +1,6 @@
 package irvine.oeis;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -34,7 +34,7 @@ public class AliquotSequence extends Sequence0 {
     } else if (n.isProbablePrime()) {
       return Z.ONE;
     }
-    return Jaguar.factor(n).sigma().subtract(n);
+    return Functions.SIGMA.z(n).subtract(n);
   }
 
   @Override

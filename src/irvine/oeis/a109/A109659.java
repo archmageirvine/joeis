@@ -1,6 +1,6 @@
 package irvine.oeis.a109;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,7 +16,7 @@ public class A109659 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final String s = Jaguar.factor(++mN).sigma().pow(mN).toString();
+      final String s = Functions.SIGMA.z(++mN).pow(mN).toString();
       int digitSum = 0;
       for (int k = 0; k < s.length(); ++k) {
         digitSum += s.charAt(k) - '0';

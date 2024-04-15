@@ -15,11 +15,14 @@ public class Sigma extends AbstractFunction1 {
   private static final long INITIAL_SIZE = 1024;
   private final LongDynamicLongArray mSigma = new LongDynamicLongArray();
   private long mMax = 0;
+  {
+    mSigma.set(0, 1L); // Convention
+  }
 
   @Override
   public long l(final long n) {
-    if (n <= 0) {
-      throw new IllegalArgumentException();
+    if (n < 0) {
+      return 0;
     }
     if (n >= 2 * mMax) {
       // Request value is much larger than the current table, use factorization
@@ -40,12 +43,11 @@ public class Sigma extends AbstractFunction1 {
   }
 
   @Override
-  public Z z(final long n) {
-    return Z.valueOf(l(n));
-  }
-
-  @Override
   public Z z(final Z n) {
-    return n.bitLength() < Long.SIZE ? z(n.longValue()) : Jaguar.factor(n).sigma();
+    if (n.signum() < 0) {
+      return Z.ZERO;
+    }
+    // Note sigma(n) can exceed n
+    return n.bitLength() < Long.SIZE - 2 ? Z.valueOf(l(n.longValue())) : Jaguar.factor(n).sigma();
   }
 }

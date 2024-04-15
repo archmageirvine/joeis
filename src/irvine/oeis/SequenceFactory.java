@@ -14,6 +14,7 @@ import org.apfloat.ApfloatRuntimeException;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.factor.LeastPrimeFactorizer;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.producer.MetaProducer;
 import irvine.oeis.producer.Producer;
@@ -167,7 +168,7 @@ public final class SequenceFactory {
         case "semiprime":
           return new FilterSequence(sequence(inner), FilterSequence.SEMIPRIME);
         case "sigma":
-          return new SimpleTransformSequence(sequence(inner), k -> Jaguar.factor(k).sigma());
+          return new SimpleTransformSequence(sequence(inner), k -> Functions.SIGMA.z(k));
         case "sigma0":
           return new SimpleTransformSequence(sequence(inner), k -> Jaguar.factor(k).sigma0());
         case "stirling1":

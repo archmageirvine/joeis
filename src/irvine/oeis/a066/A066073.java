@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a002.A002808;
 
@@ -12,6 +12,6 @@ public class A066073 extends FilterSequence {
 
   /** Construct the sequence. */
   public A066073() {
-    super(1, new A002808(), k -> Jaguar.factor(k).sigma().subtract(1).isProbablePrime());
+    super(1, new A002808(), k -> Functions.SIGMA.z(k).subtract(1).isProbablePrime());
   }
 }

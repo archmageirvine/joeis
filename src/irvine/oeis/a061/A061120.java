@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -18,13 +18,13 @@ public class A061120 extends A000040 {
   @Override
   public Z next() {
     Z t = super.next().add(1);
-    Z min = Jaguar.factor(t).sigma();
+    Z min = Functions.SIGMA.z(t);
     while (true) {
       t = t.add(1);
       if (mPrime.isPrime(t)) {
         return min;
       }
-      min = min.min(Jaguar.factor(t).sigma());
+      min = min.min(Functions.SIGMA.z(t));
     }
   }
 }

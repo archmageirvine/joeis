@@ -3,6 +3,7 @@ package irvine.oeis.a002;
 import java.util.HashMap;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -37,6 +38,6 @@ public class A002133 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return d(mN).add(tau(mN)).subtract(Jaguar.factor(mN).sigma()).divide2();
+    return d(mN).add(tau(mN)).subtract(Functions.SIGMA.z(mN)).divide2();
   }
 }

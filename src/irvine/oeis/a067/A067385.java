@@ -2,6 +2,7 @@ package irvine.oeis.a067;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
@@ -21,7 +22,7 @@ public class A067385 extends Sequence1 {
     long k = 0;
     while (true) {
       final FactorSequence fs = Jaguar.factor(++k);
-      if (Jaguar.factor(fs.phi()).sigma().equals(fs.sigma().multiply(mN))) {
+      if (Functions.SIGMA.z(fs.phi()).equals(fs.sigma().multiply(mN))) {
         return Z.valueOf(k);
       }
       if (mVerbose && k % 1000000 == 0) {

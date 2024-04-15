@@ -1,7 +1,7 @@
 package irvine.oeis.a060;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction2;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
@@ -33,7 +33,7 @@ public class A060642 extends Triangle {
       }
       Z sum = Z.ZERO;
       for (int j = 1; j <= n; ++j) {
-        sum = sum.add(get(n - j, k).multiply(Jaguar.factor(j).sigma()));
+        sum = sum.add(get(n - j, k).multiply(Functions.SIGMA.z(j)));
       }
       return sum.multiply(k).divide(n);
     }

@@ -1,8 +1,8 @@
 package irvine.oeis.a211;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
@@ -31,7 +31,7 @@ public class A211342 extends DecimalExpansionSequence {
             if (zxk.isZero()) {
               break;
             }
-            final Z sigma = Jaguar.factor(++k).sigma();
+            final Z sigma = Functions.SIGMA.z(++k);
             sum = sum.add(zxk.multiply(sigma));
           }
           return sum;

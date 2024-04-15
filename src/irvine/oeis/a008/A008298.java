@@ -1,7 +1,7 @@
 package irvine.oeis.a008;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
@@ -39,7 +39,7 @@ public class A008298 extends MemoryFunction1Sequence<Polynomial<Z>> {
     }
     Polynomial<Z> sum = RING.zero();
     for (int k = 1; k <= n; ++k) {
-      sum = RING.add(sum, RING.multiply(get(n - k).shift(1), mF.factorial(n - 1).divide(mF.factorial(n - k)).multiply(Jaguar.factor(k).sigma())));
+      sum = RING.add(sum, RING.multiply(get(n - k).shift(1), mF.factorial(n - 1).divide(mF.factorial(n - k)).multiply(Functions.SIGMA.z(k))));
     }
     return sum;
   }

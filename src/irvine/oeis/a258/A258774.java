@@ -2,7 +2,7 @@ package irvine.oeis.a258;
 
 import java.util.function.Function;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -31,7 +31,7 @@ public class A258774 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z s = Jaguar.factor(++mN).sigma();
+    final Z s = Functions.SIGMA.z(++mN);
     return mLambda.apply(s);
 
   }

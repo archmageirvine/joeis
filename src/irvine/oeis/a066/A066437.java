@@ -2,7 +2,7 @@ package irvine.oeis.a066;
 
 import java.util.HashSet;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -28,7 +28,7 @@ public class A066437 extends Sequence1 {
         return max;
       }
       max = max.max(t);
-      t = Jaguar.factor(t).sigma();
+      t = Functions.SIGMA.z(t);
       if (!sigmaSeen.add(t)) {
         return max;
       }

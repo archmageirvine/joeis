@@ -14,6 +14,6 @@ public class A070275 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A070275() {
-    super(1, 1, k -> Z.valueOf(Functions.DIGIT_SUM.l((long) k)).equals(Jaguar.factor(k).sopf()));
+    super(1, 1, k -> Z.valueOf(Functions.DIGIT_SUM.l(k)).equals(Jaguar.factor(k).sopf()));
   }
 }

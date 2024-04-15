@@ -11,7 +11,7 @@ public class A068950 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A068950() {
-    super(1, new A068809(), Functions.DIGITAL_ROOT::z);
+    super(1, new A068809(), k -> Functions.DIGIT_SUM_ROOT.z(k));
   }
 }
 

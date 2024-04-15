@@ -1,8 +1,8 @@
 package irvine.oeis.a302;
 // manually 2021-09-29
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -30,7 +30,7 @@ public class A302563 extends Sequence1 {
         mPow10 *= 10;
         ++mLen;
       }
-      if (ZUtils.digitSumRoot(mN) == mLen) {
+      if (Functions.DIGIT_SUM_ROOT.l(mN) == mLen) {
         return Z.valueOf(mN);
       }
     }

@@ -16,13 +16,13 @@ public final class Functions {
   public static final Function1 LEAST_PRIMITIVE_ROOT = new LeastPrimitiveRoot();
   /** Describe the number. For example, 3445, is one 3, two 4s, one 5 to give 132415. */
   public static final Function1 LOOK_AND_SAY = new LookAndSay();
-  /** Digital root. */
-  public static final Function1 DIGITAL_ROOT = new DigitalRoot();
 
   /** Reverse the digits of a number. */
   public static final Function2 REVERSE = new Reverse();
   /** Sum of digits. */
   public static final Function2 DIGIT_SUM = new DigitSum();
+  /** Digital root. */
+  public static final Function2 DIGIT_SUM_ROOT = new DigitSumRoot();
   /** Product of digits. */
   public static final Function2 DIGIT_PRODUCT = new DigitProduct();
   /** Product of nonzero digits. */

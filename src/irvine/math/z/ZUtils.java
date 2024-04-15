@@ -207,52 +207,6 @@ public final class ZUtils {
   }
 
   /**
-   * Compute the sum of the digits in an integer iteratively until a single digit remains.
-   * @param v integer
-   * @param base the base
-   * @return iterated sum of digits
-   */
-  public static long digitSumRoot(final long v, final int base) {
-    long root = Functions.DIGIT_SUM.l(base, v);
-    while (root >= base) {
-      root = Functions.DIGIT_SUM.l(base, root);
-    }
-    return root;
-  }
-
-  /**
-   * Compute the sum of the digits in a base-10 integer iteratively until a single digit remains.
-   * @param v integer
-   * @return iterated sum of digits
-   */
-  public static long digitSumRoot(final long v) {
-    return digitSumRoot(v, 10);
-  }
-
-  /**
-   * Compute the sum of the digits in an integer iteratively until a single digit remains.
-   * @param v integer
-   * @param base the base
-   * @return iterated sum of digits
-   */
-  public static Z digitSumRoot(final Z v, final int base) {
-    long root = Functions.DIGIT_SUM.l(base, v);
-    while (root >= base) {
-      root = Functions.DIGIT_SUM.l(base, root);
-    }
-    return Z.valueOf(root);
-  }
-
-  /**
-   * Compute the sum of the digits in a base-10 integer iteratively until a single digit remains.
-   * @param v integer
-   * @return iterated sum of digits
-   */
-  public static Z digitSumRoot(final Z v) {
-    return digitSumRoot(v, 10);
-  }
-
-  /**
    * Compute the product of the digits in an integer iteratively until a single digit remains.
    * @param v integer
    * @param base the base

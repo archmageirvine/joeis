@@ -14,6 +14,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(CeilSqrtTest.class);
     suite.addTestSuite(DigitSumRootTest.class);
     suite.addTestSuite(DigitNonzeroProductTest.class);
+    suite.addTestSuite(DigitNonzeroProductRootTest.class);
     suite.addTestSuite(DigitProductTest.class);
     suite.addTestSuite(DigitSumTest.class);
     suite.addTestSuite(DistinctDigitCountTest.class);

@@ -1,8 +1,8 @@
 package irvine.oeis.a051;
 // manually 2021-09-29
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -41,7 +41,7 @@ public class A051812 extends Sequence1 {
     while (true) {
       ++mN;
       final Z result = mCount;
-      final int count1 = ZUtils.digitNZProductRoot(mN) == mParm ? 1 : 0;
+      final int count1 = Functions.DIGIT_NZ_PRODUCT_ROOT.l(mN) == mParm ? 1 : 0;
       if (mN == mPow10) {
         if (mReset) {
           mCount = Z.ZERO;

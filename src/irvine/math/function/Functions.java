@@ -21,12 +21,16 @@ public final class Functions {
   public static final Function2 REVERSE = new Reverse();
   /** Sum of digits. */
   public static final Function2 DIGIT_SUM = new DigitSum();
-  /** Digital root. */
+  /** Digit sum root. */
   public static final Function2 DIGIT_SUM_ROOT = new DigitSumRoot();
   /** Product of digits. */
   public static final Function2 DIGIT_PRODUCT = new DigitProduct();
+  /** Digit product root. */
+  public static final Function2 DIGIT_PRODUCT_ROOT = new DigitProductRoot();
   /** Product of nonzero digits. */
   public static final Function2 DIGIT_NZ_PRODUCT = new DigitNonzeroProduct();
+  /** Digit root of nonzero digits. */
+  public static final Function2 DIGIT_NZ_PRODUCT_ROOT = new DigitNonzeroProductRoot();
   /** Count of distinct digits. */
   public static final Function2 DISTINCT_DIGIT_COUNT = new DistinctDigitCount();
   /** Rotate right by one digit. */

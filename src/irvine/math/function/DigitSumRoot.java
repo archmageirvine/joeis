@@ -3,7 +3,7 @@ package irvine.math.function;
 import irvine.math.z.Z;
 
 /**
- * Digital root.
+ * Digital sum root.
  * @author Sean A. Irvine
  */
 class DigitSumRoot extends AbstractFunction2 {

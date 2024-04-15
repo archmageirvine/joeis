@@ -20,7 +20,7 @@ public class A057709 extends Sequence1 {
     while (true) {
       ++mN;
       while (mM < mN * mN) {
-        final long s = Functions.SIGMA.z(mM).longValueExact() - mM;
+        final long s = Functions.SIGMA.l(mM) - mM;
         final byte c = mCount.get(s);
         if (c <= 1) {
           mCount.set(s, (byte) (c + 1));

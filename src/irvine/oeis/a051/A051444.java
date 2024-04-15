@@ -18,7 +18,7 @@ public class A051444 extends Sequence1 {
       return Z.ONE;
     }
     for (long k = 1; k < mN; ++k) {
-      if (Functions.SIGMA.z(k).longValueExact() == mN) {
+      if (Functions.SIGMA.l(k) == mN) {
         return Z.valueOf(k);
       }
     }

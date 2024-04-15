@@ -17,7 +17,7 @@ public class A066226 extends Sequence1 {
   private final MemoryFunction1<Long> mF = new MemoryFunction1<>() {
     @Override
     protected Long compute(final int n) {
-      return Functions.SIGMA.z(Euler.phi((long) n)).longValueExact();
+      return Functions.SIGMA.l(Euler.phi((long) n));
     }
   };
 

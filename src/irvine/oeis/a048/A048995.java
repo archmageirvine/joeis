@@ -22,7 +22,7 @@ public class A048995 extends Sequence1 {
         return Z.ONE;
       }
       while (mN * mN >= mS || mN >= mA.length()) {
-        final long sigma = Functions.SIGMA.z(++mS).longValueExact();
+        final long sigma = Functions.SIGMA.l(++mS);
         mA.set(sigma - mS - 1);
       }
       if (!mA.isSet(mN)) {

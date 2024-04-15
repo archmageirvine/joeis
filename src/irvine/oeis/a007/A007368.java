@@ -22,7 +22,7 @@ public class A007368 extends Sequence0 {
     while (true) {
       ++k;
       while (k >= mS || k >= mA.length()) {
-        mA.increment(Functions.SIGMA.z(++mS).longValueExact());
+        mA.increment(Functions.SIGMA.l(++mS));
       }
       if (mA.get(k) == mN) {
         return Z.valueOf(k);

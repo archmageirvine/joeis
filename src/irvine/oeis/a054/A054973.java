@@ -16,7 +16,7 @@ public class A054973 extends Sequence1 {
 
   @Override
   public Z next() {
-    mA.increment(Functions.SIGMA.z(++mN).longValueExact());
+    mA.increment(Functions.SIGMA.l(++mN));
     return Z.valueOf(mA.get(mN));
   }
 }

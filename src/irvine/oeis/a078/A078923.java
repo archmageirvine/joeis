@@ -23,7 +23,7 @@ public class A078923 extends Sequence1 {
     while (true) {
       if (++mN > 1) {
         for (long k = (mN - 2) * (mN - 2) + 1; k <= (mN - 1) * (mN - 1); ++k) {
-          final long index = Functions.SIGMA.z(k).subtract(k).longValueExact();
+          final long index = Functions.SIGMA.l(k) - k;
           if (index >= 0) {
             mSeen.set(index);
           }

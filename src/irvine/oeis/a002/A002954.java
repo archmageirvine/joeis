@@ -22,7 +22,7 @@ public class A002954 extends Sequence1 {
 
   private long chowla(final long n) {
     if (n >= mChowla.length() || mChowla.get(n) == 0) {
-      final long sigma = Functions.SIGMA.z(n).longValueExact() - n - 1;
+      final long sigma = Functions.SIGMA.l(n) - n - 1;
       mChowla.set(n, sigma == 0 ? -1 : sigma);
     }
     final long v = mChowla.get(n);

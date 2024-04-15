@@ -4,7 +4,6 @@ import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
-import irvine.util.array.DynamicLongArray;
 
 /**
  * A037950 Primes at which cusp form Delta_20 is not ordinary.
@@ -16,23 +15,13 @@ public class A037950 extends A000040 {
     setOffset(0);
   }
 
-  private final DynamicLongArray mSigma = new DynamicLongArray();
-
-  private long sigma(final int n) {
-    while (n >= mSigma.length()) {
-      mSigma.set(mSigma.length(), Functions.SIGMA.z(mSigma.length()).longValueExact());
-    }
-    return mSigma.get(n);
-  }
-
-
   private long tau20(final int n) {
     long sum = 0;
     for (int k = 1; k < n; ++k) {
       long t = LongUtils.modPow(k, 8, n);
-      t *= sigma(k);
+      t *= Functions.SIGMA.l(k);
       t %= n;
-      t *= sigma(n - k);
+      t *= Functions.SIGMA.l(n - k);
       t %= n;
       sum += t;
       sum %= n;

@@ -4,7 +4,6 @@ import irvine.math.LongUtils;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
-import irvine.util.array.DynamicLongArray;
 
 /**
  * A037949 Primes at which cusp form Delta_16 is not ordinary.
@@ -16,35 +15,13 @@ public class A037949 extends A000040 {
     setOffset(0);
   }
 
-//  private final MemorySequence mSigma = MemorySequence.cachedSequence(new PrependSequence(new A000203(), 0));
-//
-//  private Z tau16(final Z n) {
-//    Z sum = Z.ZERO;
-//    final int nn = n.intValueExact();
-//    for (int k = 1; k < nn; ++k) {
-//      sum = sum.add(Z.valueOf(k).modPow(Z.SIX, n).modMultiply(mSigma.a(k), n).modMultiply(mSigma.a(nn - k), n));
-//      sum = sum.mod(n);
-//    }
-//    return sum.multiply(-6552).mod(n);
-//  }
-
-  private final DynamicLongArray mSigma = new DynamicLongArray();
-
-  private long sigma(final int n) {
-    while (n >= mSigma.length()) {
-      mSigma.set(mSigma.length(), Functions.SIGMA.z(mSigma.length()).longValueExact());
-    }
-    return mSigma.get(n);
-  }
-
-
   private long tau16(final int n) {
     long sum = 0;
     for (int k = 1; k < n; ++k) {
       long t = LongUtils.modPow(k, 6, n);
-      t *= sigma(k);
+      t *= Functions.SIGMA.l(k);
       t %= n;
-      t *= sigma(n - k);
+      t *= Functions.SIGMA.l(n - k);
       t %= n;
       sum += t;
       sum %= n;
@@ -59,9 +36,6 @@ public class A037949 extends A000040 {
       if (tau16(p.intValueExact()) == 0) {
         return p;
       }
-//      if (Z.ZERO.equals(tau16(p))) {
-//        return p;
-//      }
     }
   }
 }

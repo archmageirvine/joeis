@@ -12,19 +12,8 @@ import irvine.util.array.LongDynamicLongArray;
  */
 public class A015810 extends Sequence0 {
 
-  private final LongDynamicLongArray mSigma = new LongDynamicLongArray();
   private final LongDynamicLongArray mPhi = new LongDynamicLongArray();
   private long mN = -1;
-
-  private long sigma(final long n) {
-    final long r = mSigma.get(n);
-    if (r != 0) {
-      return r;
-    }
-    final long t = Functions.SIGMA.z(n).longValue();
-    mSigma.set(n, t);
-    return t;
-  }
 
   private long phi(final long n) {
     final long r = mPhi.get(n);
@@ -39,7 +28,7 @@ public class A015810 extends Sequence0 {
 
   private long findIt(final long n) {
     long k = 1;
-    while ((sigma(k) + n) % phi(n + k) != 0) {
+    while ((Functions.SIGMA.l(k) + n) % phi(n + k) != 0) {
       ++k;
     }
     return k;

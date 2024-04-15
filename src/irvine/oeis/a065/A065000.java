@@ -17,7 +17,7 @@ public class A065000 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      mSum += Mobius.mobius(Functions.SIGMA.z(++mN).longValueExact());
+      mSum += Mobius.mobius(Functions.SIGMA.l(++mN));
       if (mSum == 0) {
         return Z.valueOf(mN);
       }

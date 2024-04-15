@@ -15,6 +15,6 @@ public class A066090 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Binomial.binomial(Functions.SIGMA.z(++mN).longValueExact(), mN);
+    return Binomial.binomial(Functions.SIGMA.l(++mN), mN);
   }
 }

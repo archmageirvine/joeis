@@ -2,6 +2,7 @@ package irvine.oeis.a015;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 import irvine.util.array.LongDynamicLongArray;
@@ -12,25 +13,18 @@ import irvine.util.array.LongDynamicLongArray;
  */
 public class A015704 extends Sequence2 {
 
-  private final LongDynamicLongArray mSigma = new LongDynamicLongArray();
   private final LongDynamicLongArray mPhi = new LongDynamicLongArray();
   private long mN = 1;
 
-  private long sigma(final long m) {
-    final long r = mSigma.get(m);
+  private long phi(final long m) {
+    final long r = mPhi.get(m);
     if (r != 0) {
       return r;
     }
     final FactorSequence fs = Jaguar.factor(m);
-    final long sigma = fs.sigma().longValueExact();
-    mSigma.set(m, sigma);
-    mPhi.set(m, fs.phi().longValueExact());
-    return sigma;
-  }
-
-  private long phi(final long m) {
-    // Computed this as part of sigma() call
-    return mPhi.get(m);
+    final long phi = fs.phi().longValueExact();
+    mPhi.set(m, phi);
+    return phi;
   }
 
   @Override
@@ -39,7 +33,7 @@ public class A015704 extends Sequence2 {
     long m = 0;
     while (true) {
       ++m;
-      if (sigma(m) + phi(m) == mN * m) {
+      if (Functions.SIGMA.l(m) + phi(m) == mN * m) {
         return Z.valueOf(m);
       }
     }

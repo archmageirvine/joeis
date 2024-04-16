@@ -380,20 +380,6 @@ public final class ZUtils {
 
   /**
    * Return the product of all primes up to a number.
-   * @param n index
-   * @return primorial of <code>n</code>
-   */
-  public static Z primorial(final long n) {
-    final Fast prime = new Fast();
-    Z p = Z.ONE;
-    for (long k = 2; k <= n; k = prime.nextPrime(k)) {
-      p = p.multiply(k);
-    }
-    return p;
-  }
-
-  /**
-   * Return the product of all primes up to a number.
    * @param n number of primes to include
    * @return primorial of <code>n</code>
    */

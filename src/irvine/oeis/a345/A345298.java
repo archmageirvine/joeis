@@ -3,7 +3,6 @@ package irvine.oeis.a345;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Integers;
-import irvine.math.z.ZUtils;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -14,6 +13,6 @@ public class A345298 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A345298() {
-    super(1, n -> Integers.SINGLETON.sopf(n, p -> Functions.SIGMA0.z(ZUtils.primorial(p))));
+    super(1, n -> Integers.SINGLETON.sopf(n, p -> Functions.SIGMA0.z(Functions.PRIMORIAL.z((long) p))));
   }
 }

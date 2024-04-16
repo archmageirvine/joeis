@@ -32,15 +32,6 @@ public class ZUtilsTest extends TestCase {
     assertEquals(Z.ONE, ZUtils.min(Arrays.asList(Z.TWO, Z.FIVE, Z.ONE)));
   }
 
-  public void testPrimorial() {
-    assertEquals(Z.ONE, ZUtils.primorial(1));
-    assertEquals(Z.TWO, ZUtils.primorial(2));
-    assertEquals(Z.SIX, ZUtils.primorial(3));
-    assertEquals(Z.SIX, ZUtils.primorial(4));
-    assertEquals(Z.valueOf(30), ZUtils.primorial(5));
-    assertEquals(Z.valueOf(30), ZUtils.primorial(6));
-  }
-
   public void testOrd() {
     assertEquals(3, ZUtils.valuation(Z.EIGHT, Z.TWO));
     assertEquals(1, ZUtils.valuation(Z.SEVEN, Z.SEVEN));

@@ -1,5 +1,6 @@
 package irvine.math.expression;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
@@ -40,7 +41,7 @@ public class Primorial extends AbstractExpression {
         if (mCountPrimes) {
           return new LiteralZ(ZUtils.primorialCount(arg));
         } else {
-          return new LiteralZ(ZUtils.primorial(arg));
+          return new LiteralZ(Functions.PRIMORIAL.z(arg));
         }
       }
       throw new UnsupportedOperationException("Primorial on " + lit.ring());

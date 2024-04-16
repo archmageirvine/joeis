@@ -8,6 +8,8 @@ public final class Functions {
 
   private Functions() { }
 
+  /** Primorial, product of all primes up to and including the parameter. */
+  public static final Function1 PRIMORIAL = new Primorial();
   /** Sum of divisors function. */
   public static final Function1 SIGMA = new Sigma();
   /** Number of divisors function. */

@@ -23,6 +23,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(DistinctDigitCountTest.class);
     suite.addTestSuite(LeastPrimitiveRootTest.class);
     suite.addTestSuite(LookAndSayTest.class);
+    suite.addTestSuite(Primorial.class);
     suite.addTestSuite(ReverseTest.class);
     suite.addTestSuite(RotateRightTest.class);
     suite.addTestSuite(Sigma0Test.class);

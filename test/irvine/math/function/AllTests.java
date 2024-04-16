@@ -12,10 +12,11 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(CeilSqrtTest.class);
-    suite.addTestSuite(DigitSumRootTest.class);
     suite.addTestSuite(DigitNonzeroProductTest.class);
     suite.addTestSuite(DigitNonzeroProductRootTest.class);
     suite.addTestSuite(DigitProductTest.class);
+    suite.addTestSuite(DigitSumRootTest.class);
+    suite.addTestSuite(DigitSumSquaresTest.class);
     suite.addTestSuite(DigitSumTest.class);
     suite.addTestSuite(DistinctDigitCountTest.class);
     suite.addTestSuite(LeastPrimitiveRootTest.class);

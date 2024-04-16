@@ -2,7 +2,6 @@ package irvine.math.expression;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 
 /**
  * An expression for primorials.
@@ -39,7 +38,7 @@ public class Primorial extends AbstractExpression {
       if (lit.value() instanceof Z) {
         final long arg = ((Z) lit.value()).longValueExact();
         if (mCountPrimes) {
-          return new LiteralZ(ZUtils.primorialCount(arg));
+          return new LiteralZ(Functions.PRIMORIAL_COUNT.z(arg));
         } else {
           return new LiteralZ(Functions.PRIMORIAL.z(arg));
         }

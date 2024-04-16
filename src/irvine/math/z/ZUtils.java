@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Random;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.cr.CR;
@@ -376,20 +375,6 @@ public final class ZUtils {
       }
     }
     return m;
-  }
-
-  /**
-   * Return the product of all primes up to a number.
-   * @param n number of primes to include
-   * @return primorial of <code>n</code>
-   */
-  public static Z primorialCount(final long n) {
-    final Fast prime = new Fast();
-    Z p = Z.ONE;
-    for (long k = 2, j = 0; j < n; k = prime.nextPrime(k), ++j) {
-      p = p.multiply(k);
-    }
-    return p;
   }
 
   /**

@@ -10,6 +10,8 @@ public final class Functions {
 
   /** Primorial, product of all primes up to and including the parameter. */
   public static final Function1 PRIMORIAL = new Primorial();
+  /** Product of the specified number of primes. */
+  public static final Function1 PRIMORIAL_COUNT = new PrimorialCount();
   /** Sum of divisors function. */
   public static final Function1 SIGMA = new Sigma();
   /** Number of divisors function. */

@@ -16,7 +16,7 @@ public class A046642 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (LongUtils.gcd(Functions.SIGMA0.z(++mN).longValueExact(), mN) == 1) {
+      if (LongUtils.gcd(Functions.SIGMA0.l(++mN), mN) == 1) {
         return Z.valueOf(mN);
       }
     }

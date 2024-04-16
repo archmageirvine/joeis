@@ -16,6 +16,6 @@ public class A184389 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sum(1, Functions.SIGMA0.z(mN).intValue(), k -> Z.valueOf(k));
+    return Integers.SINGLETON.sum(1, Functions.SIGMA0.i(mN), Z::valueOf);
   }
 }

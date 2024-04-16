@@ -16,7 +16,7 @@ public class A036431 extends Sequence1 {
 
   @Override
   public Z next() {
-    mCnt.increment(++mN + Functions.SIGMA0.z(mN).longValueExact());
+    mCnt.increment(++mN + Functions.SIGMA0.l(mN));
     return Z.valueOf(mCnt.get(mN));
   }
 }

@@ -17,6 +17,6 @@ public class A055873 extends MemorySequence {
     if (n == 0) {
       return Z.ONE;
     }
-    return Integers.SINGLETON.sum(1, Functions.SIGMA0.z(n).intValueExact(), k -> a(n - k));
+    return Integers.SINGLETON.sum(1, Functions.SIGMA0.i(n), k -> a(n - k));
   }
 }

@@ -24,7 +24,7 @@ public class A036470 extends A000040 {
   public Z next() {
     mLim = mLim == 0 ? 1 : mLim * 2;
     while (mN <= mLim) {
-      final long s0 = Functions.SIGMA0.z(mN).longValueExact();
+      final long s0 = Functions.SIGMA0.l(mN);
       if (!mSeen.isSet(s0)) {
         mSeen.set(s0);
         ++mCount;

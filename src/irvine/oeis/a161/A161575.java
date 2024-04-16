@@ -17,7 +17,7 @@ public class A161575 extends Sequence1 {
   private boolean test(final long t, final int n, final String s) {
     int d = mDivisorCount.get(t);
     if (d == 0) {
-      d = Functions.SIGMA0.z(t).intValueExact();
+      d = Functions.SIGMA0.i(t);
       mDivisorCount.set(t, d);
     }
     return d == n && Long.toString(t, 2).contains(s);

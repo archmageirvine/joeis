@@ -22,6 +22,6 @@ public class A130674 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return MemoryFactorial.SINGLETON.factorial(Functions.SIGMA0.z(mN).intValue());
+    return MemoryFactorial.SINGLETON.factorial(Functions.SIGMA0.i(mN));
   }
 }

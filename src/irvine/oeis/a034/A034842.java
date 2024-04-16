@@ -15,7 +15,7 @@ public class A034842 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Functions.SIGMA0.z(++mN).longValueExact() == mN % 10) {
+      if (Functions.SIGMA0.l(++mN) == mN % 10) {
         return Z.valueOf(mN);
       }
     }

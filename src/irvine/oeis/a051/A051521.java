@@ -19,7 +19,7 @@ public class A051521 extends Sequence1 {
   public Z next() {
     ++mN;
     while (mM <= 4 * mN * mN) {
-      final long d = Functions.SIGMA0.z(mM).longValueExact();
+      final long d = Functions.SIGMA0.l(mM);
       if (mM % d == 0) {
         mA.increment(mM / d);
       }

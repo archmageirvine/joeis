@@ -23,7 +23,7 @@ public class A037870 extends Sequence1 {
     }
     long cnt = 0;
     long m = mN;
-    long l = Functions.DIGIT_SORT_ASCENDING.z(base(), Z.valueOf(mN)).longValueExact();
+    long l = Functions.DIGIT_SORT_ASCENDING.l(base(), mN);
     while (m != 0) {
       cnt += Math.abs(m % base() - l % base());
       m /= base();

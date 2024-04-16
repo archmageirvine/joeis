@@ -5,8 +5,8 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Set;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence2;
 import irvine.util.string.StringUtils;
 
@@ -165,7 +165,7 @@ public class A048175 extends Sequence2 {
     // the largest number containing a given set of digits.
     //System.out.println("trying: " + n);
     final Z m = Z.valueOf(n);
-    if (ZUtils.sortDigitsDescending(m).equals(m)) {
+    if (Functions.DIGIT_SORT_DESCENDING.z(m).equals(m)) {
       final String s = String.valueOf(n);
       final String[] digits = new String[s.length()];
       for (int k = 0; k < digits.length; ++k) {

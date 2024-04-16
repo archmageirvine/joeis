@@ -29,10 +29,10 @@ public class A065571 extends Sequence0 {
         mLim *= 10;
         while (mE < mLim) {
           mE += 11;
-          mMultiplesOf11.add(Functions.DIGIT_SORT_ASCENDING.z(Z.valueOf(mE)).longValueExact());
+          mMultiplesOf11.add(Functions.DIGIT_SORT_ASCENDING.l(mE));
         }
       }
-      final long t = Functions.DIGIT_SORT_ASCENDING.z(n).longValueExact();
+      final long t = Functions.DIGIT_SORT_ASCENDING.l(n);
       if (mMultiplesOf11.contains(t)) {
         return n;
       }

@@ -43,6 +43,8 @@ public final class Functions {
   public static final Function2 DISTINCT_DIGIT_COUNT = new DistinctDigitCount();
   /** Sort the digits of a number into ascending order. */
   public static final Function2 DIGIT_SORT_ASCENDING = new DigitSortAscending();
+  /** Sort the digits of a number into descending order. */
+  public static final Function2 DIGIT_SORT_DESCENDING = new DigitSortDescending();
   /** Rotate right by one digit. */
   public static final Function2 ROTATE_RIGHT = new RotateRight();
 }

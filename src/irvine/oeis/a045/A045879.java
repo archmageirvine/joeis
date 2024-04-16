@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -26,7 +26,7 @@ public class A045879 extends Sequence1 {
       mLim = mLim.multiply(10);
       Z s;
       while ((s = Z.valueOf(mN).square()).compareTo(mLim) < 0) {
-        final Z desc = ZUtils.sortDigitsDescending(s);
+        final Z desc = Functions.DIGIT_SORT_DESCENDING.z(s);
         final List<Long> l = t.get(desc);
         if (l == null) {
           final ArrayList<Long> nl = new ArrayList<>();

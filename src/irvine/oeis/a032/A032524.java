@@ -24,7 +24,7 @@ public class A032524 extends Sequence1 {
     if (ZUtils.containsZero(pp)) {
       return null;
     }
-    return Functions.DIGIT_SORT_ASCENDING.z(Z.valueOf(p));
+    return Functions.DIGIT_SORT_ASCENDING.z(p);
   }
 
   @Override

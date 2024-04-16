@@ -163,34 +163,6 @@ public final class ZUtils {
   }
 
   /**
-   * Sort the digits of a number.
-   * @param n number
-   * @param base the base to use
-   * @return sorted number
-   */
-  public static Z sortDigitsDescending(final Z n, final int base) {
-    final int[] counts = digitCounts(n, base);
-    int numDigits = 0;
-    for (final int count : counts) {
-      numDigits += count;
-    }
-    final char[] c = new char[numDigits];
-    for (int k = counts.length - 1, j = 0; k >= 0; j += counts[k--]) {
-      Arrays.fill(c, j, j + counts[k], (char) ('0' + k));
-    }
-    return new Z(new String(c), base);
-  }
-
-  /**
-   * Sort the digits of a number.
-   * @param n number
-   * @return sorted number
-   */
-  public static Z sortDigitsDescending(final Z n) {
-    return sortDigitsDescending(n, 10);
-  }
-
-  /**
    * Test if <code>r</code> is a primitive root of <code>n</code>.
    * @param r proposed root
    * @param n modulus

@@ -1,6 +1,6 @@
 package irvine.oeis.a004;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -50,7 +50,7 @@ public class A004035 extends AbstractSequence {
       mBest = pos;
     }
     final long max = Math.min(mLimit, word << w);
-    for (long k = LongUtils.swizzle(word); k < max; k = LongUtils.swizzle(k)) {
+    for (long k = Functions.SWIZZLE.l(word); k < max; k = Functions.SWIZZLE.l(k)) {
       if (isHammingOk(k, d, pos)) {
         mWords[pos] = k;
         search(k, d, w, pos + 1);
@@ -62,7 +62,7 @@ public class A004035 extends AbstractSequence {
     mBest = 0;
     mLimit = 1L << n;
     final long max = Math.min(mLimit, 1L << w); // WLOG can assume first word has at least one 1 in first w bits
-    for (long k = (1L << w) - 1; k < max; k = LongUtils.swizzle(k)) {
+    for (long k = (1L << w) - 1; k < max; k = Functions.SWIZZLE.l(k)) {
       if ((k & 1) == 1) { // WLOG can assume first code word has the lowest bit set
         mWords[0] = k;
         search(k, d, w, 1);

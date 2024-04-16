@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -19,7 +19,7 @@ public class A061712 extends Sequence1 {
       if (t.isProbablePrime()) {
         return t;
       }
-      t = ZUtils.swizzle(t);
+      t = Functions.SWIZZLE.z(t);
     }
   }
 }

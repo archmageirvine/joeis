@@ -1,6 +1,6 @@
 package irvine.oeis.a018;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -81,7 +81,7 @@ public class A018926 extends Sequence0 {
       return;
     }
     for (int numDim = mN - Long.bitCount(least); numDim > 0; --numDim) {
-      for (int selectedDimensions = (1 << numDim) - 1; selectedDimensions < mLimit; selectedDimensions = IntegerUtils.swizzle(selectedDimensions)) {
+      for (int selectedDimensions = (1 << numDim) - 1; selectedDimensions < mLimit; selectedDimensions = Functions.SWIZZLE.i(selectedDimensions)) {
         if (isAvailable(used, least, selectedDimensions)) {
           add(used, least, selectedDimensions);
           search(used);

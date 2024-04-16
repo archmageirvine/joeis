@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 import irvine.math.IntegerUtils;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -73,7 +73,7 @@ public class A006613 extends AbstractSequence {
     // matrix in each row.  Once all such matrices are exhausted return false.
     final long maskLimit = 1L << cols();
     for (int k = matrix.length - 1; k >= 0; --k) {
-      final long t = LongUtils.swizzle(matrix[k]);
+      final long t = Functions.SWIZZLE.l(matrix[k]);
       if (t < maskLimit) {
         matrix[k] = t;
         return true;

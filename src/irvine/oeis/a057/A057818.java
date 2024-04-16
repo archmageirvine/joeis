@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import java.util.HashSet;
 import java.util.Set;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -42,7 +42,7 @@ public class A057818 extends Sequence1 {
     mLim = 1L << mN;
     mFactorable.clear();
     for (int bits = 2; bits <= mN; ++bits) {
-      for (long set = (1L << bits) - 1; set < mLim; set = LongUtils.swizzle(set)) {
+      for (long set = (1L << bits) - 1; set < mLim; set = Functions.SWIZZLE.l(set)) {
         search(set, 0, set);
         search(0, set, set);
       }

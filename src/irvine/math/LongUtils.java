@@ -431,20 +431,6 @@ public final class LongUtils {
     return Jaguar.factor(n).maxExponent() <= 1;
   }
 
-  /**
-   * Step to the next number with the same number of set bits.
-   * @param x current value
-   * @return next value
-   */
-  public static long swizzle(final long x) {
-    // the swizzle function from HAKMEM 175
-    final long lowestBit = x & -x;
-    final long leftBits = x + lowestBit;
-    final long changedBits = x ^ leftBits;
-    final long rightBits = (changedBits / lowestBit) >>> 2;
-    return leftBits | rightBits;
-  }
-
   private static final String PADDING = StringUtils.rep('0', Long.SIZE);
 
   /**

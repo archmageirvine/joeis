@@ -2,8 +2,8 @@ package irvine.oeis.a067;
 
 import java.util.ArrayList;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -23,7 +23,7 @@ public class A067576 extends Sequence1 {
       mN = -1;
       return res;
     }
-    final Z res = ZUtils.swizzle(mA.get(mN));
+    final Z res = Functions.SWIZZLE.z(mA.get(mN));
     mA.set(mN, res);
     return res;
   }

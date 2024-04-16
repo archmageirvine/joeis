@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -61,7 +61,7 @@ public class A029889 extends AbstractSequence {
       } else {
         final long limit = 1L << (mN - row);
         mRowSums[row] += setBits;
-        for (long r = (1L << setBits) - 1; r < limit; r = LongUtils.swizzle(r)) {
+        for (long r = (1L << setBits) - 1; r < limit; r = Functions.SWIZZLE.l(r)) {
           // mirror the bits
           long t = r;
           for (int k = 1; k < mN - row; ++k) {

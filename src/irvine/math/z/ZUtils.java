@@ -465,20 +465,6 @@ public final class ZUtils {
   }
 
   /**
-   * Step to the next number with the same number of set bits.
-   * @param x current value
-   * @return next value
-   */
-  public static Z swizzle(final Z x) {
-    // the swizzle function from HAKMEM 175
-    final Z lowestBit = x.and(x.negate());
-    final Z leftBits = x.add(lowestBit);
-    final Z changedBits = x.xor(leftBits);
-    final Z rightBits = changedBits.divide(lowestBit).shiftRight(2);
-    return leftBits.or(rightBits);
-  }
-
-  /**
    * Return longs as an array of integers.
    * @param a array
    * @return Z array

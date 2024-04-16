@@ -2,8 +2,8 @@ package irvine.oeis.a347;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -29,7 +29,7 @@ public class A347063 extends Sequence1 {
             d[k] = dd[k].longValue();
           }
           final Z lim = Z.ONE.shiftLeft(d.length);
-          for (Z s = Z.ONE.shiftLeft(d.length / 2).subtract(1); s.compareTo(lim) < 0; s = ZUtils.swizzle(s)) {
+          for (Z s = Z.ONE.shiftLeft(d.length / 2).subtract(1); s.compareTo(lim) < 0; s = Functions.SWIZZLE.z(s)) {
             long tot = 0;
             for (int k = 0; k < d.length && tot <= target; ++k) {
               if (s.testBit(k)) {

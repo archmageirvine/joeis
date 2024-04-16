@@ -1,6 +1,6 @@
 package irvine.oeis.a103;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
@@ -69,7 +69,7 @@ public class A103139 extends Sequence1 {
         StringUtils.message("Trying for " + mKings + " kings");
       }
       boolean found = false;
-      for (long pattern = (1L << mKings) - 1; pattern <= limit; pattern = LongUtils.swizzle(pattern)) {
+      for (long pattern = (1L << mKings) - 1; pattern <= limit; pattern = Functions.SWIZZLE.l(pattern)) {
         // It seems reasonable to assume WLOG that there must be at least one king on the top row
         if ((pattern & topRow) != 0 && isSolution(pattern)) {
           found = true;

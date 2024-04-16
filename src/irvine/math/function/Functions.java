@@ -22,6 +22,8 @@ public final class Functions {
   public static final Function1 CEIL_SQRT = new CeilSqrt();
   /** Bitset indicating which digits are present in a number. */
   public static final Function1 SYNDROME = new Syndrome();
+  /** Step to the next number with the same number of set bits. */
+  public static final Function1 SWIZZLE = new Swizzle();
   /** Least primitive root of a modulus. */
   public static final Function1 LEAST_PRIMITIVE_ROOT = new LeastPrimitiveRoot();
   /** Describe the number. For example, 3445, is one 3, two 4s, one 5 to give 132415. */

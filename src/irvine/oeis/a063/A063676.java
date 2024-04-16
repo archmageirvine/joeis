@@ -2,8 +2,8 @@ package irvine.oeis.a063;
 
 import java.util.Arrays;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -30,7 +30,7 @@ public class A063676 extends Sequence1 {
       final Z limit = Z.ONE.shiftLeft(n);
       Z start = limit.subtract(1); // try all elements first
       while (true) {
-        for (Z k = start; k.compareTo(limit) < 0; k = ZUtils.swizzle(k)) {
+        for (Z k = start; k.compareTo(limit) < 0; k = Functions.SWIZZLE.z(k)) {
           Z s = Z.ZERO;
           int c = 0;
           for (int i = 0; i < k.bitLength(); ++i) {

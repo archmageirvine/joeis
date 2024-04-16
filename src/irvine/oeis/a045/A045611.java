@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import java.util.Arrays;
 import java.util.HashSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -23,7 +23,7 @@ public class A045611 extends Sequence0 {
     final HashSet<String> distances = new HashSet<>();
     final int charges = 2 * mN;
     final long limit = 1L << (charges - 1); // -1 for symmetry
-    for (long state = (1L << mN) - 1; state < limit; state = LongUtils.swizzle(state)) {
+    for (long state = (1L << mN) - 1; state < limit; state = Functions.SWIZZLE.l(state)) {
       final int[] cnts = new int[mN];
       for (int k = 0; k < charges; ++k) {
         if (((state >>> k) & 1) != 0) {

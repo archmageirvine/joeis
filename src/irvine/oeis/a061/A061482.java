@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -21,7 +21,7 @@ public class A061482 extends MemorySequence {
     }
     Z sum = Z.ZERO;
     final long lim = 1L << n;
-    for (long s = (1L << (n - 1)) - 1; s < lim; s = LongUtils.swizzle(s)) {
+    for (long s = (1L << (n - 1)) - 1; s < lim; s = Functions.SWIZZLE.l(s)) {
       long t = s;
       Z prod = Z.ONE;
       int k = 0;

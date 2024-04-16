@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
@@ -104,7 +104,7 @@ public class A039796 extends Sequence1 {
     }
 
     final List<Long> canons = new ArrayList<>();
-    for (long k = (1L << w) - 1; k < mLim; k = LongUtils.swizzle(k)) {
+    for (long k = (1L << w) - 1; k < mLim; k = Functions.SWIZZLE.l(k)) {
       if (isCanonical(k) && pst(c, k)) {
         canons.add(k);
       }

@@ -1,6 +1,6 @@
 package irvine.oeis.a018;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -43,7 +43,7 @@ public class A018794 extends Sequence0 {
     long sum = 0;
     final long limit = 1L << mN;
     for (int i = ap(); i <= mN; ++i) {
-      for (long swizzle = (1L << i) - 1; swizzle < limit; swizzle = LongUtils.swizzle(swizzle)) {
+      for (long swizzle = (1L << i) - 1; swizzle < limit; swizzle = Functions.SWIZZLE.l(swizzle)) {
         for (final long ap : aps) {
           if ((ap & swizzle) == ap) {
             ++sum;

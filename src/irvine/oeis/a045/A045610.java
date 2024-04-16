@@ -2,7 +2,7 @@ package irvine.oeis.a045;
 
 import java.util.TreeSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -23,7 +23,7 @@ public class A045610 extends Sequence0 {
     final TreeSet<Q> energy = new TreeSet<>();
     final int charges = 2 * mN;
     final long limit = 1L << (charges - 1); // -1 bit for symmetry
-    for (long state = (1L << mN) - 1; state < limit; state = LongUtils.swizzle(state)) {
+    for (long state = (1L << mN) - 1; state < limit; state = Functions.SWIZZLE.l(state)) {
       Q sum = Q.ZERO;
       for (int k = 0; k < charges; ++k) {
         Q s = Q.ZERO;

@@ -1,7 +1,7 @@
 package irvine.oeis.a065;
 
 import irvine.math.IntegerUtils;
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A065567 extends Sequence1 {
   protected Z t(final int n, final int m) {
     Z sum = Z.ZERO;
     final long lim = 1L << n;
-    for (long k = (1L << m) - 1; k < lim; k = LongUtils.swizzle(k)) {
+    for (long k = (1L << m) - 1; k < lim; k = Functions.SWIZZLE.l(k)) {
       long j = k;
       int gcd = 0;
       int i = 0;

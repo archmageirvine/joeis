@@ -417,12 +417,6 @@ public class LongUtilsTest extends TestCase {
     assertEquals(-1, LongUtils.max(-1, -10, -20, -18));
   }
 
-  public void testSwizzle() {
-    assertEquals(5, LongUtils.swizzle(3));
-    assertEquals(6, LongUtils.swizzle(5));
-    assertEquals(9, LongUtils.swizzle(6));
-  }
-
   public void testToLongFromString() {
     assertEquals("[12, -1]", Arrays.toString(LongUtils.toLong("12,-1")));
     assertEquals("[12, -1]", Arrays.toString(LongUtils.toLong("12 -1")));

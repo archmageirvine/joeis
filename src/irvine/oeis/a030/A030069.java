@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import java.util.HashSet;
 import java.util.Set;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -40,7 +40,7 @@ public class A030069 extends AbstractSequence {
   protected Set<Long> buildLexicographicCode(final int length, final int hammingDistance, final int weight) {
     final HashSet<Long> res = new HashSet<>();
     final long limit = 1L << length;
-    for (long w = (1L << weight) - 1; w < limit; w = LongUtils.swizzle(w)) {
+    for (long w = (1L << weight) - 1; w < limit; w = Functions.SWIZZLE.l(w)) {
       if (isOk(res, w, hammingDistance)) {
         res.add(w);
       }

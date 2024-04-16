@@ -208,20 +208,6 @@ public final class IntegerUtils {
   }
 
   /**
-   * Step to the next number with the same number of set bits.
-   * @param x current value
-   * @return next value
-   */
-  public static int swizzle(final int x) {
-    // the swizzle function from HAKMEM 175
-    final int lowestBit = x & -x;
-    final int leftBits = x + lowestBit;
-    final int changedBits = x ^ leftBits;
-    final int rightBits = (changedBits / lowestBit) >>> 2;
-    return leftBits | rightBits;
-  }
-
-  /**
    * Maximum of an array of values.
    * @param values the possible values
    * @return the maximum

@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -39,7 +39,7 @@ public class A046693 extends Sequence0 {
     final Z target = limit.subtract(1);
     Z start = Z.ONE.shiftLeft(mPrev).subtract(1);
     while (true) {
-      for (Z s = start; s.compareTo(limit) < 0; s = ZUtils.swizzle(s)) {
+      for (Z s = start; s.compareTo(limit) < 0; s = Functions.SWIZZLE.z(s)) {
         if (isComplete(s, target)) {
           return Z.valueOf(mPrev);
         }

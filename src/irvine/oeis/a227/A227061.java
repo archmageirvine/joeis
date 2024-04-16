@@ -1,6 +1,6 @@
 package irvine.oeis.a227;
 
-import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -90,7 +90,7 @@ public class A227061 extends MemoryFunction2Sequence<Integer, Long> {
       return;
     }
     final int bit = 1 << (matrix.length - row - 1);
-    for (int e = element; e < mLimit; e = IntegerUtils.swizzle(e)) {
+    for (int e = element; e < mLimit; e = Functions.SWIZZLE.i(e)) {
       // Place element in matrix[row] and move to next row
       if (isColSafe(colSums, e)) {
         incColSums(colSums, e);

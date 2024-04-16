@@ -2,7 +2,7 @@ package irvine.oeis.a052;
 
 import java.util.TreeSet;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -27,7 +27,7 @@ public class A052294 extends A000040 {
       mNext = (1L << super.next().intValueExact()) - 1;
     }
     final long res = mA.pollFirst();
-    mA.add(LongUtils.swizzle(res));
+    mA.add(Functions.SWIZZLE.l(res));
     return Z.valueOf(res);
   }
 }

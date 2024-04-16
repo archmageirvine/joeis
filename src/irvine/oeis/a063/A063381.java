@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 import irvine.math.IntegerUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
 
 /**
@@ -47,7 +47,7 @@ public class A063381 extends AbstractSequence {
     while (s.compareTo(limit) < 0) {
       c.add(s);
       r.put(s, s);
-      s = ZUtils.swizzle(s);
+      s = Functions.SWIZZLE.z(s);
     }
     for (final int k : u) {
       s = mBits;
@@ -70,7 +70,7 @@ public class A063381 extends AbstractSequence {
           r.put(s, v);
           c.remove(s);
         }
-        s = ZUtils.swizzle(s);
+        s = Functions.SWIZZLE.z(s);
       }
     }
     return Z.valueOf(c.size());

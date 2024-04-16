@@ -18,7 +18,7 @@ public class A068077 extends Sequence1 {
     while (true) {
       final Z t = mSigma;
       mSigma = Functions.SIGMA.z(++mN + 1);
-      if (t.add(mSigma).equals(Z.valueOf(4 * mN))) {
+      if (t.add(mSigma).equals(4 * mN)) {
         return Z.valueOf(mN);
       }
     }

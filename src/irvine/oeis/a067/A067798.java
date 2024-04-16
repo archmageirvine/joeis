@@ -18,7 +18,7 @@ public class A067798 extends Sequence1 {
     while (true) {
       final Z t = mPhi;
       mPhi = Euler.phi(++mN);
-      if (mPhi.add(t).equals(Z.valueOf(mN))) {
+      if (mPhi.add(t).equals(mN)) {
         return Z.valueOf(mN - 1);
       }
     }

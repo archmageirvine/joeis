@@ -18,7 +18,7 @@ public class A065774 extends Sequence1 {
     while (true) {
       final long v = ++mN;
       final long prod = Functions.DIGIT_PRODUCT.l(v);
-      if (prod > 1 && Jaguar.factor(mN).sopfr().equals(Z.valueOf(prod))) {
+      if (prod > 1 && Jaguar.factor(mN).sopfr().equals(prod)) {
         return Z.valueOf(mN);
       }
     }

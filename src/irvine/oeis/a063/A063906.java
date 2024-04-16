@@ -17,7 +17,7 @@ public class A063906 extends Sequence1 {
     while (true) {
       mN += 2;
       final Z sigma = Functions.SIGMA.z(mN);
-      if (sigma.mod(3) == 0 && sigma.divide(3).multiply2().equals(Z.valueOf(mN + 1))) {
+      if (sigma.mod(3) == 0 && sigma.divide(3).multiply2().equals(mN + 1)) {
         return Z.valueOf(mN);
       }
     }

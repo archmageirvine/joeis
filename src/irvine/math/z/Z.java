@@ -169,6 +169,15 @@ public class Z extends Number implements Comparable<Z> {
     return Compare.equals(this, n);
   }
 
+  /**
+   * Check if this integer equals another integer.
+   * @param n other integer
+   * @return true iff the values are equal
+   */
+  public boolean equals(final long n) {
+    return Compare.equals(this, Z.valueOf(n));
+  }
+
   @Override
   public int hashCode() {
     int hashCode = 0;

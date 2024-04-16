@@ -13,7 +13,7 @@ public class A157662 extends A002808 {
   /** Construct the sequence. */
   public A157662() {
     Z cn = super.next();
-    while (!cn.equals(Z.valueOf(99))) {
+    while (!cn.equals(99)) {
       cn = super.next();
     }
   }

@@ -18,7 +18,7 @@ public class A067816 extends Sequence1 {
     while (true) {
       final Z t = mSigma;
       mSigma = Functions.SIGMA.z(++mN + 1);
-      if (mSigma.subtract(t).equals(Z.valueOf(mN + 1))) {
+      if (mSigma.subtract(t).equals(mN + 1)) {
         return Z.valueOf(mN);
       }
     }

@@ -6,7 +6,6 @@ import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class CompareTest extends TestCase {
@@ -24,6 +23,9 @@ public class CompareTest extends TestCase {
     assertTrue(Z.TWO.equals(Z.valueOf(2L)));
     assertTrue(Z.THREE.equals(Z.valueOf(3L)));
     assertTrue(Z.FOUR.equals(Z.valueOf(4L)));
+    assertTrue(Z.THREE.equals(3));
+    assertTrue(Z.FOUR.equals(4));
+    assertFalse(Z.FOUR.equals(5));
     for (int i = 3; i < 2000; ++i) {
       final BigInteger v = new BigInteger(i, AddTest.RANDOM);
       if (v.equals(BigInteger.ZERO)) {

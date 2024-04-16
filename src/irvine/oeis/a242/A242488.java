@@ -13,6 +13,6 @@ public class A242488 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A242488() {
-    super(1, 0, n -> Jaguar.factor(n * n - 2).largestPrimeFactor().equals(Z.valueOf(17)));
+    super(1, 0, n -> Jaguar.factor(n * n - 2).largestPrimeFactor().equals(17));
   }
 }

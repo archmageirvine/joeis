@@ -19,7 +19,7 @@ public class A055198 extends Sequence1 {
       mN = mN.add(1);
       Z m = mN;
       for (long k = 0; k < HEURISTIC_LIMIT; ++k) {
-//        if (mN.equals(Z.valueOf(1011))) {
+//        if (mN.equals(1011)) {
 //          System.out.println(k + " " + m);
 //        }
         m = Functions.REVERSE.z(m.add(4));

@@ -21,7 +21,7 @@ public class A066950 extends Sequence1 {
       final Z sigma = fs.sigma();
       final FactorSequence fs1 = Jaguar.factor(phi);
       final FactorSequence fs2 = Jaguar.factor(sigma);
-      if (fs1.sigma().add(fs2.phi()).equals(Z.valueOf(2 * mN))) {
+      if (fs1.sigma().add(fs2.phi()).equals(2 * mN)) {
         return Z.valueOf(mN);
       }
     }

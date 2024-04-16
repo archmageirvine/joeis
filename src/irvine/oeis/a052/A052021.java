@@ -20,7 +20,7 @@ public class A052021 extends Sequence1 {
       final long sum = Functions.DIGIT_SUM.l(v);
       if (mN % sum == 0) {
         final Z[] p = Jaguar.factor(mN).toZArray();
-        if (p[p.length - 1].equals(Z.valueOf(sum))) {
+        if (p[p.length - 1].equals(sum)) {
           return Z.valueOf(mN);
         }
       }

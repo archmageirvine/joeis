@@ -25,7 +25,7 @@ public class A054862 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (usigma2Plus(++mN).equals(Z.valueOf(3L * mN))) {
+      if (usigma2Plus(++mN).equals(3L * mN)) {
         return Z.valueOf(mN);
       }
     }

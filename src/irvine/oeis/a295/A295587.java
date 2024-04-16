@@ -13,6 +13,6 @@ public class A295587 extends FilterPositionSequence {
 
   /** Construct the sequence. */
   public A295587() {
-    super(1, 1, new A027760(), v -> v.equals(Z.valueOf(13530)));
+    super(1, 1, new A027760(), v -> v.equals(13530));
   }
 }

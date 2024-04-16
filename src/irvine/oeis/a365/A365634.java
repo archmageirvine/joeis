@@ -13,6 +13,6 @@ public class A365634 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A365634() {
-    super(1, (p, e) -> Z.valueOf(1 + (p.equals(Z.valueOf(e)) ? 1 : 0)));
+    super(1, (p, e) -> Z.valueOf(1 + (p.equals(e.longValue()) ? 1 : 0)));
   }
 }

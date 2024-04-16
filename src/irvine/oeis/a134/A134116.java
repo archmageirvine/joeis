@@ -14,6 +14,6 @@ public class A134116 extends FilterSequence {
 
   /** Construct the sequence. */
   public A134116() {
-    super(1, new A000040(), v -> Puma.nextPrimeZ(v).subtract(v).equals(Z.valueOf(34)));
+    super(1, new A000040(), v -> Puma.nextPrimeZ(v).subtract(v).equals(34));
   }
 }

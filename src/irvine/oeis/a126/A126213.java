@@ -22,7 +22,6 @@ public class A126213 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    // A126213(n) = sumdiv(n, d, d*sum(k=1, n, (numdiv(k)==d)));
-    return Integers.SINGLETON.sumdiv(mN, d -> Integers.SINGLETON.sum(1, mN, k -> Functions.SIGMA0.z(k).equals(Z.valueOf(d)) ? Z.ONE : Z.ZERO).multiply(d));
+    return Integers.SINGLETON.sumdiv(mN, d -> Integers.SINGLETON.sum(1, mN, k -> Functions.SIGMA0.z(k).equals(d.longValue()) ? Z.ONE : Z.ZERO).multiply(d));
   }
 }

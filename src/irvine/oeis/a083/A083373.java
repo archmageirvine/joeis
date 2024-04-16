@@ -40,7 +40,7 @@ public class A083373 extends Sequence1 {
       for (final Z d : fs.divisors()) {
         sum = sum.add(sortedForm(d));
       }
-      if (sum.isEven() && sum.equals(Z.valueOf(2 * mN))) {
+      if (sum.isEven() && sum.equals(2 * mN)) {
         return Z.valueOf(mN);
       }
     }

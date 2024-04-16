@@ -15,7 +15,7 @@ public class A066271 extends A066256 {
   @Override
   public Z next() {
     while (true) {
-      if (super.next().equals(Z.valueOf(mN * mN - 2 * mN + 2))) {
+      if (super.next().equals(mN * mN - 2 * mN + 2)) {
         return Z.valueOf(mN);
       }
     }

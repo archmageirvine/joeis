@@ -12,6 +12,6 @@ public class A109040 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A109040() {
-    super(1, (p, e) -> p.compareTo(Z.THREE) <= 0 ? Z.ONE : (p.mod(Z.valueOf(12)).equals(Z.ONE) || p.mod(Z.valueOf(12)).equals(Z.valueOf(11)) ? p.pow(e + 1).subtract(1).divide(p.subtract(1)) : p.negate().pow(e + 1).subtract(1).divide(p.negate().subtract(1))));
+    super(1, (p, e) -> p.compareTo(Z.THREE) <= 0 ? Z.ONE : (p.mod(Z.valueOf(12)).equals(Z.ONE) || p.mod(Z.valueOf(12)).equals(11) ? p.pow(e + 1).subtract(1).divide(p.subtract(1)) : p.negate().pow(e + 1).subtract(1).divide(p.negate().subtract(1))));
   }
 }

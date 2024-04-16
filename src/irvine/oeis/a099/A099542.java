@@ -38,7 +38,7 @@ public class A099542 extends Sequence1 {
     final long digProd = Functions.DIGIT_PRODUCT.l(mBase, n);
     if (digProd != 0 && digProd % mBase == 0) {
       mSopfr = Jaguar.factor(n).sopfr();
-      if (mSopfr.multiply(mBase).equals(Z.valueOf(digProd))) {
+      if (mSopfr.multiply(mBase).equals(digProd)) {
         return true;
       }
     }

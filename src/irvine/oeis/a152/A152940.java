@@ -23,7 +23,7 @@ public class A152940 extends FilterSequence {
    * @param h desired heigth = absolute maximum value of coefficients
    */
   public A152940(final int offset, final int h) {
-    super(offset, new A056911(), t -> PolynomialUtils.height(Cyclotomic.cyclotomic(t.intValue())).equals(Z.valueOf(h)));
+    super(offset, new A056911(), t -> PolynomialUtils.height(Cyclotomic.cyclotomic(t.intValue())).equals(h));
   }
 
 }

@@ -21,7 +21,7 @@ public class A007624 extends Sequence1 {
           prod = prod.multiply(d);
         }
       }
-      if (!Z.ONE.equals(prod) && !prod.equals(Z.valueOf(mN))) {
+      if (!Z.ONE.equals(prod) && !prod.equals(mN)) {
         while (prod.mod(mN) == 0) {
           prod = prod.divide(mN);
         }

@@ -21,7 +21,7 @@ public class A063891 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (z(Jaguar.factor(++mN).unitarySigma()).equals(Z.valueOf(2 * mN))) {
+      if (z(Jaguar.factor(++mN).unitarySigma()).equals(2 * mN)) {
         return Z.valueOf(mN);
       }
     }

@@ -12,7 +12,7 @@ public class A049776 extends A049773 {
   public Z next() {
     while (true) {
       final Z v = super.next();
-      if (v.equals(Z.valueOf(mN + 1))) {
+      if (v.equals(mN + 1)) {
         return v;
       }
     }

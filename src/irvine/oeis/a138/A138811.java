@@ -16,7 +16,7 @@ public class A138811 extends MultiplicativeSequence implements DirectSequence {
 
   /** Construct the sequence. */
   public A138811() {
-    super(0, (p, e) -> p.equals(Z.valueOf(43)) ? Z.ONE : Z.valueOf(LongUtils.kronecker(-43, p.longValue()) == 1 ? e + 1 : oneOr0(e)));
+    super(0, (p, e) -> p.equals(43) ? Z.ONE : Z.valueOf(LongUtils.kronecker(-43, p.longValue()) == 1 ? e + 1 : oneOr0(e)));
   }
 
   @Override

@@ -11,8 +11,10 @@ import irvine.oeis.a027.A027760;
  */
 public class A295589 extends FilterPositionSequence {
 
+  private static final Z C = Z.valueOf(33330);
+
   /** Construct the sequence. */
   public A295589() {
-    super(1, 1, new A027760(), v -> v.equals(Z.valueOf(33330)));
+    super(1, 1, new A027760(), C::equals);
   }
 }

@@ -17,7 +17,7 @@ public class A067795 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (mPrime.nextPrime(Functions.SIGMA.z(++mN)).equals(Z.valueOf(2 * mN + 1))) {
+      if (mPrime.nextPrime(Functions.SIGMA.z(++mN)).equals(2 * mN + 1)) {
         return Z.valueOf(mN);
       }
     }

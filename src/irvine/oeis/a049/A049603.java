@@ -12,7 +12,7 @@ public class A049603 extends A051378 {
   @Override
   public Z next() {
     while (true) {
-      if (super.next().equals(Z.valueOf(2L * mN))) {
+      if (super.next().equals(2L * mN)) {
         return Z.valueOf(mN);
       }
     }

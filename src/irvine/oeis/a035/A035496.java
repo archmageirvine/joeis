@@ -20,7 +20,7 @@ public class A035496 extends A035485 {
 
   @Override
   public Z next() {
-    if (mA.isEmpty() || mA.first().compareTo(Z.valueOf(mX * mX + mX)) > 0) {
+    if (mA.isEmpty() || mA.first().compareTo(mX * mX + mX) > 0) {
       for (long y = 1; y <= mX; ++y) {
         for (long z = 1; z <= mX; ++z) {
           mA.add(Z.valueOf(mX * y * y + y * z * z + z * mX * mX));

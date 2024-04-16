@@ -88,7 +88,7 @@ class MonotoneDerivative extends UnaryCRFunction {
       final Z apprLeftDeriv = leftDeriv.getApprox(evalPrec);
       final Z apprRightDeriv = rightDeriv.getApprox(evalPrec);
       final Z derivDifference = apprRightDeriv.subtract(apprLeftDeriv).abs();
-      if (derivDifference.compareTo(Z.valueOf(8)) < 0) {
+      if (derivDifference.compareTo(8) < 0) {
         return scale(apprLeftDeriv, -extraPrec);
       } else {
         mMono.mDeriv2Msd[0] = evalPrec + derivDifference.bitLength() + 4 /*slop*/;

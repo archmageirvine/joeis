@@ -15,7 +15,7 @@ public class A068403 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Functions.SIGMA.z(++mN).compareTo(Z.valueOf(3 * mN)) > 0) {
+      if (Functions.SIGMA.z(++mN).compareTo(3 * mN) > 0) {
         return Z.valueOf(mN);
       }
     }

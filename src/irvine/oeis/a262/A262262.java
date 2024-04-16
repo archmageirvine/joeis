@@ -26,7 +26,7 @@ public class A262262 extends AbstractSequence {
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
       final FactorSequence fsd = Jaguar.factor(d);
-      sum = sum.add((dd.isProbablePrime() && dd.square().compareTo(Z.valueOf(mN)) < 0 && !Z.valueOf(mN).mod(dd.square()).isZero()) ? Z.ONE : Z.ZERO);
+      sum = sum.add((dd.isProbablePrime() && dd.square().compareTo(mN) < 0 && !Z.valueOf(mN).mod(dd.square()).isZero()) ? Z.ONE : Z.ZERO);
     }
     return sum;
   }

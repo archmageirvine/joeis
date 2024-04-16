@@ -28,7 +28,7 @@ public class A060297 extends Sequence1 {
           return Z.ZERO;
         }
         if (new Q(a, t.subtract(1)).equals(q)) {
-          if (a.compareTo(Z.valueOf(mN)) > 0) {
+          if (a.compareTo(mN) > 0) {
             return a;
           } else {
             break;

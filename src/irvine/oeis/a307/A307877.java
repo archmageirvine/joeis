@@ -31,7 +31,7 @@ public class A307877 extends MemoryFunction2Sequence<Integer, Z> {
     if (m == 0) {
       return n <= 1 ? Z.ONE : Z.ZERO;
     }
-    if (s(m).compareTo(Z.valueOf(n)) < 0) {
+    if (s(m).compareTo(n) < 0) {
       return Z.ZERO;
     }
     return get(n + m * m, m - 1).add(get(Math.abs(n - m * m), m - 1));

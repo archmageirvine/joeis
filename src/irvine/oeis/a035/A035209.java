@@ -64,7 +64,7 @@ public class A035209 extends Sequence0 implements Conjectural {
           if (isSolvable(p)) {
             final Z q = Z.valueOf(p).pow(11);
             //System.out.println("q=" + q + " " + p + "^11");
-            if (q.compareTo(Z.valueOf(n)) < 0) {
+            if (q.compareTo(n) < 0) {
               final DirichletSeries da = DirichletSeries.zetaNum(q.intValueExact(), n, Z.TWO).multiply(DirichletSeries.zeta(q.intValueExact(), n, Z.ONE), n);
               d = d.multiply(da, n);
             }

@@ -20,7 +20,7 @@ class DigitSumRoot extends AbstractFunction2 {
 
   @Override
   public long l(final long base, final Z n) {
-    return n.compareTo(Z.valueOf(base)) < 0 ? n.longValue() : l(Functions.DIGIT_SUM.l(base, n));
+    return n.compareTo(base) < 0 ? n.longValue() : l(Functions.DIGIT_SUM.l(base, n));
   }
 
   @Override

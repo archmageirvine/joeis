@@ -333,6 +333,20 @@ public class Z extends Number implements Comparable<Z> {
   }
 
   /**
+   * Compares this integer with the specified integer. This method is provided in
+   * preference to individual methods for each of the six boolean comparison operators
+   * (&lt;, ==, &gt;, &gt;=, !=, &lt;=). The suggested idiom for performing these
+   * comparisons is: <code>(x.compareTo(y) <i>op</i> 0)</code>, where <i>op</i> is one
+   * of the six comparison operators.
+   * @param n integer to compare against
+   * @return -1, 0 or 1 as this integer is numerically less than, equal to, or greater
+   *         than <code>n</code>.
+   */
+  public int compareTo(final long n) {
+    return Compare.compare(this, Z.valueOf(n));
+  }
+
+  /**
    * Convenience method for adding a long to an integer.
    * @param val value to add
    * @return <code>this + val</code>

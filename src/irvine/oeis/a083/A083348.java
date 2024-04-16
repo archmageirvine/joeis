@@ -13,6 +13,6 @@ public class A083348 extends A157037 {
 
   /** Construct the sequence. */
   public A083348() {
-    super(1, new A003415(), (n, t) -> t.compareTo(Z.valueOf(n)) > 0);
+    super(1, new A003415(), (n, t) -> t.compareTo(n) > 0);
   }
 }

@@ -17,7 +17,7 @@ public class A069057 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z t = Rationals.SINGLETON.sumdiv(++mN, d -> new Q(1, d)).num();
-      if (t.compareTo(Z.valueOf(2L * mN)) > 0) {
+      if (t.compareTo(2L * mN) > 0) {
         return Z.valueOf(mN);
       }
     }

@@ -89,7 +89,7 @@ final class IsPower {
           break;
         }
       }
-      if (t.compareTo(Z.valueOf(p)) <= 0) {
+      if (t.compareTo(p) <= 0) {
         p = t.intValue() - 1;
         break;
       }

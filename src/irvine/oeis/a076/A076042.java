@@ -12,6 +12,6 @@ public class A076042 extends TupleTransformSequence {
 
   /** Construct the sequence. */
   public A076042() {
-    super(0, (n, s) -> s[0].compareTo(Z.valueOf(n * n)) < 0 ? s[0].add(n * n) : s[0].subtract(n * n), "0", PREVIOUS);
+    super(0, (n, s) -> s[0].compareTo(n * n) < 0 ? s[0].add(n * n) : s[0].subtract(n * n), "0", PREVIOUS);
   }
 }

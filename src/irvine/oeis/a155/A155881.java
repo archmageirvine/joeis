@@ -34,7 +34,7 @@ public class A155881 extends A000045 {
   }
 
   private Z zeroCount(final Z n) {
-    if (n.compareTo(Z.valueOf(100)) < 0) {
+    if (n.compareTo(100) < 0) {
       return n.divide(10);
     }
 

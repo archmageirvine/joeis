@@ -1,7 +1,7 @@
 package irvine.oeis.a039;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -17,7 +17,7 @@ public class A039767 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (LongUtils.gcd(Euler.phiAsLong(++mN), mN - 1) == Jaguar.factor(mN - 1).omega()) {
+      if (LongUtils.gcd(Euler.phiAsLong(++mN), mN - 1) == Functions.OMEGA.i(mN - 1)) {
         return Z.valueOf(mN);
       }
     }

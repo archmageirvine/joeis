@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.BinarySplitFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -15,6 +15,6 @@ public class A066835 extends A000040 {
 
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(mFactorial.factorial(super.next().subtract(1).intValueExact()).add(1)).omega());
+    return Z.valueOf(Functions.OMEGA.i(mFactorial.factorial(super.next().subtract(1).intValueExact()).add(1)));
   }
 }

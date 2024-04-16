@@ -156,7 +156,7 @@ public final class SequenceFactory {
         case "mu":
           return new SimpleTransformSequence(sequence(inner), k -> Z.valueOf(Jaguar.factor(k).mobius()));
         case "omega":
-          return new SimpleTransformSequence(sequence(inner), k -> Z.valueOf(Jaguar.factor(k).omega()));
+          return new SimpleTransformSequence(sequence(inner), k -> Z.valueOf(Functions.OMEGA.i(k)));
         case "Omega":
           return new SimpleTransformSequence(sequence(inner), k -> Z.valueOf(Jaguar.factor(k).bigOmega()));
         case "phi":

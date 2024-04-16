@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -14,7 +14,7 @@ public class A005236 extends Sequence1 {
 
   private boolean isBarrier(final long n) {
     for (long m = 1; m < n; ++m) {
-      if (m + Jaguar.factor(m).omega() > n) {
+      if (m + Functions.OMEGA.i(m) > n) {
         return false;
       }
     }

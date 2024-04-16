@@ -18,6 +18,8 @@ public final class Functions {
   public static final Function1 SIGMA0 = new Sigma0();
   /** Number of divisors function. */
   public static final Function1 TAU = SIGMA0; // Convenient synonym
+  /** Number of prime divisors function. */
+  public static final Function1 OMEGA = new Omega();
   /** Ceiling square root. */
   public static final Function1 CEIL_SQRT = new CeilSqrt();
   /** Bitset indicating which digits are present in a number. */

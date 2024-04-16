@@ -5,6 +5,7 @@ import java.util.List;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
@@ -73,7 +74,7 @@ public class A003636 extends Sequence3 {
   }
 
   static long genera(final long d) {
-    final long r = Jaguar.factor(Math.abs(d)).omega();
+    final long r = Functions.OMEGA.i(Math.abs(d));
     if (r > 64) {
       throw new UnsupportedOperationException();
     }

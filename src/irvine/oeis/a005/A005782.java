@@ -2,6 +2,7 @@ package irvine.oeis.a005;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
@@ -22,7 +23,7 @@ public class A005782 extends Sequence3 {
   }
 
   private int omega(final int n) {
-    return Jaguar.factor(n).omega();
+    return Functions.OMEGA.i(n);
   }
 
   private Z either(final int n, final int a, final int dsqf) {

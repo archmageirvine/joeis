@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.a002.A002997;
@@ -27,7 +27,7 @@ public class A006931 extends AbstractSequence {
     ++mN;
     while (mLeast.get(mN) == null) {
       final Z n = mSeq1.next();
-      final int o = Jaguar.factor(n).omega();
+      final int o = Functions.OMEGA.i(n);
       if (mLeast.get(o) == null) {
         mLeast.set(o, n);
       }

@@ -2,6 +2,7 @@ package irvine.oeis.a068;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
@@ -18,7 +19,7 @@ public class A068405 extends A002808 {
       final FactorSequence fs1 = Jaguar.factor(k1);
       if (fs1.isSquareFree()) {
         final Z k = k1.subtract(1);
-        if (Jaguar.factor(k).omega() == fs1.omega() + 1) {
+        if (Functions.OMEGA.i(k) == fs1.omega() + 1) {
           return k;
         }
       }

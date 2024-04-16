@@ -2,7 +2,7 @@ package irvine.oeis.a366;
 
 import java.util.HashSet;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -26,7 +26,7 @@ public class A366896 extends Sequence0 {
         mA = mA.multiply(10);
         t *= 10;
       }
-      if (!mUsed.contains(k) && Jaguar.factor(mA.add(k)).omega() == mN) {
+      if (!mUsed.contains(k) && Functions.OMEGA.i(mA.add(k)) == mN) {
         mA = mA.add(k);
         mUsed.add(k);
         return Z.valueOf(k);

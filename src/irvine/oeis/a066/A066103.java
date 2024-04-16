@@ -1,6 +1,7 @@
 package irvine.oeis.a066;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.DynamicLongArray;
@@ -19,7 +20,7 @@ public class A066103 extends Sequence1 {
   public Z next() {
     ++mN;
     while (mA.get(mN) == 0) {
-      final int omega = Jaguar.factor(Jaguar.factor(++mM).sigma(4)).omega();
+      final int omega = Functions.OMEGA.i(Jaguar.factor(++mM).sigma(4));
       if (mA.get(omega) == 0) {
         mA.set(omega, mM);
       }

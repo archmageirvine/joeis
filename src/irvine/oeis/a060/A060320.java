@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence0;
@@ -23,7 +23,7 @@ public class A060320 extends Sequence0 {
     while (true) {
       ++k;
       final Z f = fibo.next();
-      if (Jaguar.factor(f).omega() == mN) {
+      if (Functions.OMEGA.i(f) == mN) {
         return Z.valueOf(k);
       }
     }

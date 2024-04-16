@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -27,7 +27,7 @@ public class A068069 extends Sequence1 {
     final int[] omegasM1 = new int[mN];
     long t = mF;
     for (int k = 0; k < omegasM1.length; ++k, ++t) {
-      omegasM1[k] = Jaguar.factor(t).omega() - 1;
+      omegasM1[k] = Functions.OMEGA.i(t) - 1;
     }
     final long success = (1L << mN) - 1;
     int free = 0;
@@ -42,7 +42,7 @@ public class A068069 extends Sequence1 {
           return Z.valueOf(t - mN);
         }
       }
-      omegasM1[free] = Jaguar.factor(t++).omega() - 1;
+      omegasM1[free] = Functions.OMEGA.i(t++) - 1;
       if (++free == omegasM1.length) {
         free = 0;
       }

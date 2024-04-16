@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -22,7 +22,7 @@ public class A052299 extends A000040 {
     mP = super.next();
     int min = Integer.MAX_VALUE;
     while (!s.equals(mP)) {
-      min = Integer.min(min, Jaguar.factor(s).omega());
+      min = Integer.min(min, Functions.OMEGA.i(s));
       s = s.add(1);
     }
     return Z.valueOf(min);

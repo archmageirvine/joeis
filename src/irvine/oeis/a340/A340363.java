@@ -1,7 +1,7 @@
 package irvine.oeis.a340;
 // manually knest/jaguarz at 2023-03-01 16:41
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000265;
 
@@ -13,6 +13,6 @@ public class A340363 extends A000265 {
 
   @Override
   public Z next() {
-    return (Jaguar.factor(super.next()).omega() <= 1) ? Z.ONE : Z.ZERO;
+    return (Functions.OMEGA.i(super.next()) <= 1) ? Z.ONE : Z.ZERO;
   }
 }

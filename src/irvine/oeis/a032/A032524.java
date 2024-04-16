@@ -3,6 +3,7 @@ package irvine.oeis.a032;
 import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -23,7 +24,7 @@ public class A032524 extends Sequence1 {
     if (ZUtils.containsZero(pp)) {
       return null;
     }
-    return ZUtils.sortDigitsAscending(Z.valueOf(p));
+    return Functions.DIGIT_SORT_ASCENDING.z(Z.valueOf(p));
   }
 
   @Override

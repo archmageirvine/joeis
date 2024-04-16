@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.TreeSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000217;
 
 /**
@@ -30,7 +30,7 @@ public class A034291 extends A000217 {
       mLim = mLim.multiply(10);
       final HashMap<Z, List<Z>> map = new HashMap<>();
       while (mT.compareTo(mLim) < 0) {
-        final Z sort = ZUtils.sortDigitsAscending(mT);
+        final Z sort = Functions.DIGIT_SORT_ASCENDING.z(mT);
         final List<Z> v = map.get(sort);
         if (v == null) {
           final ArrayList<Z> t = new ArrayList<>();

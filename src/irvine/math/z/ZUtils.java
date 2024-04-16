@@ -165,48 +165,6 @@ public final class ZUtils {
   /**
    * Sort the digits of a number.
    * @param n number
-   * @param base base to use
-   * @param base10Out should base 10 be used for output
-   * @return sorted number
-   */
-  public static Z sortDigitsAscending(final Z n, final int base, final boolean base10Out) {
-    if (n.isZero()) {
-      return Z.ZERO;
-    }
-    final int[] counts = digitCounts(n, base);
-    int numDigits = 0;
-    for (int k = 1; k < counts.length; ++k) {
-      numDigits += counts[k];
-    }
-    final char[] c = new char[numDigits];
-    for (int k = 1, j = 0; k < counts.length; j += counts[k++]) {
-      Arrays.fill(c, j, j + counts[k], (char) ('0' + k));
-    }
-    return base10Out ? new Z(new String(c), base) : new Z(new String(c));
-  }
-
-  /**
-   * Sort the digits of a number.
-   * @param n number
-   * @param base base to use
-   * @return sorted number
-   */
-  public static Z sortDigitsAscending(final Z n, final int base) {
-    return sortDigitsAscending(n, base, true);
-  }
-
-  /**
-   * Sort the digits of a number.
-   * @param n number
-   * @return sorted number
-   */
-  public static Z sortDigitsAscending(final Z n) {
-    return sortDigitsAscending(n, 10);
-  }
-
-  /**
-   * Sort the digits of a number.
-   * @param n number
    * @param base the base to use
    * @return sorted number
    */

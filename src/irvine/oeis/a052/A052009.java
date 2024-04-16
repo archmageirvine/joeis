@@ -1,5 +1,6 @@
 package irvine.oeis.a052;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
@@ -16,7 +17,7 @@ public class A052009 extends Sequence0 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (ZUtils.sortDigitsAscending(mN).add(ZUtils.sortDigitsDescending(mN)).isProbablePrime()) {
+      if (Functions.DIGIT_SORT_ASCENDING.z(mN).add(ZUtils.sortDigitsDescending(mN)).isProbablePrime()) {
         return mN;
       }
     }

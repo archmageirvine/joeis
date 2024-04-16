@@ -2,8 +2,8 @@ package irvine.oeis.a065;
 
 import java.util.TreeSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -29,10 +29,10 @@ public class A065571 extends Sequence0 {
         mLim *= 10;
         while (mE < mLim) {
           mE += 11;
-          mMultiplesOf11.add(ZUtils.sortDigitsAscending(Z.valueOf(mE)).longValueExact());
+          mMultiplesOf11.add(Functions.DIGIT_SORT_ASCENDING.z(Z.valueOf(mE)).longValueExact());
         }
       }
-      final long t = ZUtils.sortDigitsAscending(n).longValueExact();
+      final long t = Functions.DIGIT_SORT_ASCENDING.z(n).longValueExact();
       if (mMultiplesOf11.contains(t)) {
         return n;
       }

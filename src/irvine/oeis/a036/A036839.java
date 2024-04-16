@@ -2,7 +2,6 @@ package irvine.oeis.a036;
 
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -15,6 +14,7 @@ public class A036839 extends Sequence0 {
 
   @Override
   public Z next() {
-    return ZUtils.sortDigitsAscending(Z.valueOf(Functions.REVERSE.l(++mN) + mN));
+    final Z n = Z.valueOf(Functions.REVERSE.l(++mN) + mN);
+    return Functions.DIGIT_SORT_ASCENDING.z(n);
   }
 }

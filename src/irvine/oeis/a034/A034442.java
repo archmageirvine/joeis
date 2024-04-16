@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -27,7 +27,7 @@ public class A034442 extends Sequence1 {
       mLim = mLim.multiply(10);
       do {
         if (!mP.toString().contains("0")) {
-          mA.add(ZUtils.sortDigitsAscending(mP));
+          mA.add(Functions.DIGIT_SORT_ASCENDING.z(mP));
         }
         mP = mPrime.nextPrime(mP);
       } while (mP.compareTo(mLim) < 0);

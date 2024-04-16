@@ -4,8 +4,8 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicLongArray;
@@ -37,7 +37,7 @@ public class A033863 extends Sequence0 {
   //private final TreeMap<Z, Z> mCache = new TreeMap<>();
 
   private Z sortDigits(final Z v) {
-    return ZUtils.sortDigitsAscending(v);
+    return Functions.DIGIT_SORT_ASCENDING.z(v);
 
     // Following option is likely faster, but uses a lot of memory
 //    if (v.bitLength() < 60) {

@@ -1,5 +1,6 @@
 package irvine.oeis.a055;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -16,7 +17,7 @@ public class A055160 extends Sequence1 {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (mN.equals(ZUtils.sortDigitsDescending(mN).subtract(ZUtils.sortDigitsAscending(mN)))) {
+      if (mN.equals(ZUtils.sortDigitsDescending(mN).subtract(Functions.DIGIT_SORT_ASCENDING.z(mN)))) {
         return mN;
       }
     }

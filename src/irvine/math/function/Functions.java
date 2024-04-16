@@ -41,6 +41,8 @@ public final class Functions {
   public static final Function2 DIGIT_NZ_PRODUCT_ROOT = new DigitNonzeroProductRoot();
   /** Count of distinct digits. */
   public static final Function2 DISTINCT_DIGIT_COUNT = new DistinctDigitCount();
+  /** Sort the digits of a number into ascending order. */
+  public static final Function2 DIGIT_SORT_ASCENDING = new DigitSortAscending();
   /** Rotate right by one digit. */
   public static final Function2 ROTATE_RIGHT = new RotateRight();
 }

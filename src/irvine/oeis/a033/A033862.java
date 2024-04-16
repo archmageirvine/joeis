@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
@@ -17,7 +17,7 @@ public class A033862 extends Sequence1 {
     mN = mN.add(1);
     Z s;
     Z a = mN;
-    while (!(s = ZUtils.sortDigitsAscending(a)).equals(a)) {
+    while (!(s = Functions.DIGIT_SORT_ASCENDING.z(a)).equals(a)) {
       a = a.add(s);
     }
     return a;

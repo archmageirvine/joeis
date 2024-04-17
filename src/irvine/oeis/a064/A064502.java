@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -19,7 +19,7 @@ public class A064502 extends Sequence0 {
     }
     long k = 0;
     while (true) {
-      if (Jaguar.factor(++k).sopf().longValueExact() == mN) {
+      if (Functions.SOPF.z(++k).longValueExact() == mN) {
         return Z.valueOf(k);
       }
     }

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
  * In contrast to {@link Triangle}, this class handles offsets, row and column shifts.
  * @author Georg Fischer
  */
-public abstract class LambdaTriangle extends Triangle {
+public abstract class LambdaTriangle extends Triangle implements DirectArray {
 
   protected int mRowShift; // shifts mRow to first row index
   protected int mColShift; // shifts mCol to first columns index
@@ -59,6 +59,17 @@ public abstract class LambdaTriangle extends Triangle {
    * @return T(n, k)
    */
   protected Z triangleElement(final int n, final int k) {
+    return mLambda.apply(n, k);
+  }
+
+  /**
+   * Compute an element of the LambdaTriangle with shifted indexes.
+   * In contrast to {@link #get} and {@link #compute}, the indexes are shifted by {@link #mRowShift}, {@link #mColShift}.
+   * @param n shifted row index
+   * @param k shifted column index
+   * @return T(n, k)
+   */
+  public Z a(final int n, final int k) {
     return mLambda.apply(n, k);
   }
 

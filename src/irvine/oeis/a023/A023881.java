@@ -21,7 +21,7 @@ public class A023881 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN >= 1) {
-      mP = RING.add(mP, RING.monomial(new Q(Jaguar.factor(mN).sigma(mN), Z.valueOf(mN)), mN));
+      mP = RING.add(mP, RING.monomial(new Q(Jaguar.factor(mN).sigma(mN), mN), mN));
     }
     return RING.exp(mP, mN).coeff(mN).toZ();
   }

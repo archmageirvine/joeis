@@ -26,7 +26,7 @@ public class A007550 extends Sequence1 {
   @Override
   public Z next() {
     mF = mF.multiply(++mN);
-    mCoeffs.add(new Q(Z.valueOf(mN), mF));
+    mCoeffs.add(new Q(mN, mF));
     final Polynomial<Q> egf = RING.create(mCoeffs);
     final Polynomial<Q> et = RING.exp(RING.subtract(RING.exp(egf, mN), RING.one()), mN);
     return et.coeff(mN).multiply(mF).toZ();

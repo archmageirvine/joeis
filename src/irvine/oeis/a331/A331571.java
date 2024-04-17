@@ -35,7 +35,7 @@ public class A331571 extends A188445 {
       w.next();
     }
     final Z t = w.next();
-    return new Q(Binomial.binomial(t.add(k - 1), Z.valueOf(k)), SymmetricGroup.per(c));
+    return new Q(Binomial.binomial(t.add(k - 1), k), SymmetricGroup.per(c));
   }
 
   protected Z t(final int n, final int k) {

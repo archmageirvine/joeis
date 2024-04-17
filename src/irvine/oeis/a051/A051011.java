@@ -22,6 +22,6 @@ public class A051011 extends A051010 {
     for (int k = 0; k < mN; ++k) {
       sum = sum.add(super.next());
     }
-    return select(new Q(sum, Z.valueOf(mN)));
+    return select(new Q(sum, mN));
   }
 }

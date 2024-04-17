@@ -12,6 +12,6 @@ public class A060473 extends A000010 {
 
   @Override
   public Z next() {
-    return new Q(super.next(), Z.valueOf(mN + 1)).num();
+    return new Q(super.next(), mN + 1).num();
   }
 }

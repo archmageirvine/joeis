@@ -17,7 +17,7 @@ public class A037092 extends Sequence2 {
     final Z n3 = Z.valueOf(++mN).pow(3).subtract(1);
     Z sum = Z.ZERO;
     for (long k = 2; k < mN; ++k) {
-      final Q u = new Q(n3, Z.valueOf(k));
+      final Q u = new Q(n3, k);
       for (long j = k; j <= u.toZ().sqrt().longValueExact(); ++j) {
         sum = sum.add(u.divide(j).toZ().subtract(j - 1));
       }

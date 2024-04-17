@@ -14,6 +14,6 @@ public class A242926 extends A001610 {
 
   @Override
   public Z next() {
-    return new Q(super.next(), Z.valueOf(++mN)).den();
+    return new Q(super.next(), ++mN).den();
   }
 }

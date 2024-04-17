@@ -4,7 +4,6 @@ package irvine.oeis.a135;
 import irvine.factor.prime.Puma;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
-import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -16,6 +15,6 @@ public class A135568 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A135568() {
-    super(0, n -> Rationals.SINGLETON.product(1, n, i -> new Q(Puma.primeZ(i), Z.valueOf(i))).floor());
+    super(0, n -> Rationals.SINGLETON.product(1, n, i -> new Q(Puma.primeZ(i), i)).floor());
   }
 }

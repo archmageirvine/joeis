@@ -47,6 +47,6 @@ public class A036840 extends Sequence1 {
       sum = sum.add(m);
       ++cnt;
     } while (!m.equals(end));
-    return new Q(sum, Z.valueOf(cnt)).round();
+    return new Q(sum, cnt).round();
   }
 }

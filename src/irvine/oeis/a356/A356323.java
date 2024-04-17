@@ -5,7 +5,6 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
-import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -16,6 +15,6 @@ public class A356323 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A356323() {
-    super(1, n -> Rationals.SINGLETON.sum(1, n, k -> new Q(Jaguar.factor(k).sigma(3), Z.valueOf(k))).multiply(MemoryFactorial.SINGLETON.factorial(n)).num());
+    super(1, n -> Rationals.SINGLETON.sum(1, n, k -> new Q(Jaguar.factor(k).sigma(3), k)).multiply(MemoryFactorial.SINGLETON.factorial(n)).num());
   }
 }

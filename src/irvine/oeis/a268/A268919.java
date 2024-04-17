@@ -21,6 +21,6 @@ public class A268919 extends RationalTriangle {
   public Q compute(int m, int a) {
     final Z mz = Z.valueOf(++m);
     final Z az = Z.valueOf(++a);
-    return new Q(mz.pow(4).subtract(mz.multiply(30L * m).multiply((long) a * a)).add(az.pow(3).multiply(60L * m)).subtract(az.pow(4).multiply(30)), Z.valueOf(120L * m));
+    return new Q(mz.pow(4).subtract(mz.multiply(30L * m).multiply((long) a * a)).add(az.pow(3).multiply(60L * m)).subtract(az.pow(4).multiply(30)), 120L * m);
   }
 }

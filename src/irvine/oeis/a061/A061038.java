@@ -27,7 +27,7 @@ public class A061038 extends AbstractSequence {
   public A061038(final int offset, final int parm) {
     super(offset);
     mN = offset - 1;
-    mAdd = new Q(Z.ONE, Z.valueOf(parm));
+    mAdd = new Q(Z.ONE, parm);
   }
 
   @Override

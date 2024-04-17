@@ -23,6 +23,6 @@ public class A055032 extends Sequence1 {
     for (long k = 1; k < mN; ++k) {
       sum = sum.add(Z.valueOf(k).pow(mN - 1));
     }
-    return select(new Q(sum, Z.valueOf(mN)));
+    return select(new Q(sum, mN));
   }
 }

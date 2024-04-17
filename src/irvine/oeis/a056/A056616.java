@@ -16,7 +16,7 @@ public class A056616 extends A000984 {
 
   @Override
   public Z next() {
-    return select(new Q(super.next(), Z.valueOf(2 * mN + 1)));
+    return select(new Q(super.next(), 2 * mN + 1));
   }
 }
 

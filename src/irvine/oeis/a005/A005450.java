@@ -18,6 +18,6 @@ public class A005450 extends Sequence1 {
     if (++mN > 1) {
       mF = mF.multiply(mN);
     }
-    return new Q(mF.add(1), Z.valueOf(mN + 1)).num();
+    return new Q(mF.add(1), mN + 1).num();
   }
 }

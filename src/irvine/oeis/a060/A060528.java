@@ -20,7 +20,7 @@ public class A060528 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z num = V.multiply(++mDen).round();
-      final CR newD = V.subtract(CR.valueOf(new Q(num, Z.valueOf(mDen)))).abs();
+      final CR newD = V.subtract(CR.valueOf(new Q(num, mDen))).abs();
       if (newD.compareTo(mD, HEURISTIC_PRECISION) < 0) {
         mD = newD;
         return Z.valueOf(mDen);

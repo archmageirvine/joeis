@@ -17,7 +17,7 @@ public class A076000 extends Sequence1 {
     ++mN;
     Q prod = Q.ONE;
     for (int k = 1; k <= mN; ++k) {
-      prod = prod.multiply(new Q(Z.valueOf(k), Z.valueOf(mN).divide(k)));
+      prod = prod.multiply(new Q(k, Z.valueOf(mN).divide(k)));
     }
     return prod.toZ();
   }

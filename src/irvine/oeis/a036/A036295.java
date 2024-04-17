@@ -14,7 +14,7 @@ public class A036295 extends Sequence0 {
 
   @Override
   public Z next() {
-    return Q.TWO.subtract(new Q(Z.valueOf(++mN + 2), Z.ONE.shiftLeft(mN))).num();
+    return Q.TWO.subtract(new Q(++mN + 2, Z.ONE.shiftLeft(mN))).num();
   }
 }
 

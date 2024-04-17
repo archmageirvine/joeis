@@ -41,7 +41,7 @@ public class A145609 extends Sequence1 {
     Q sum = Q.ZERO;
     final int l = 2 * mN + 1;
     for (int d = 1; d < l; ++d) {
-      sum = sum.add(new Q(mX.pow(l - d), Z.valueOf(d)));
+      sum = sum.add(new Q(mX.pow(l - d), d));
     }
     return mNumer == 1 ? sum.num() : sum.den();
   }

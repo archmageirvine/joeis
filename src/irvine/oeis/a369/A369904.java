@@ -4,7 +4,6 @@ package irvine.oeis.a369;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
-import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -15,6 +14,6 @@ public class A369904 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A369904() {
-    super(1, n -> Rationals.SINGLETON.sopf(n, p -> new Q(Functions.SIGMA.z(n / p), Z.valueOf(p))).multiply(n).num());
+    super(1, n -> Rationals.SINGLETON.sopf(n, p -> new Q(Functions.SIGMA.z(n / p), p)).multiply(n).num());
   }
 }

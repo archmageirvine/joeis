@@ -14,6 +14,6 @@ public class A276652 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A276652() {
-    super(2, n -> Rationals.SINGLETON.sopf(n, p -> new Q(Z.valueOf(p), Z.TEN.pow(String.valueOf(p).length()))).den());
+    super(2, n -> Rationals.SINGLETON.sopf(n, p -> new Q(p, Z.TEN.pow(String.valueOf(p).length()))).den());
   }
 }

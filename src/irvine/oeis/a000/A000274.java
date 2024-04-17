@@ -17,7 +17,7 @@ public class A000274 extends Sequence1 {
   public Z next() {
     if (++mN > 2) {
       final Q t = new Q((mN & 1) == 0 ? 1 - mN : mN - 1, 2);
-      mA = new Q(mA.multiply(mN - 1).multiply(mN - 1), Z.valueOf(mN - 2)).add(t).toZ();
+      mA = new Q(mA.multiply(mN - 1).multiply(mN - 1), mN - 2).add(t).toZ();
     }
     return mA;
   }

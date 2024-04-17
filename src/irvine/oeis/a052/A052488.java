@@ -15,7 +15,7 @@ public class A052488 extends Sequence1 {
 
   @Override
   public Z next() {
-    mH = mH.add(new Q(Z.ONE, Z.valueOf(++mN)));
+    mH = mH.add(new Q(Z.ONE, ++mN));
     return mH.multiply(mN).toZ();
   }
 }

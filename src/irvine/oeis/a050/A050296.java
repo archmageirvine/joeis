@@ -22,7 +22,7 @@ public class A050296 extends Sequence1 {
   }
 
   private long f(final long k, final long n, final long m) {
-    return 1 + CR.valueOf(new Q(Z.valueOf(n), Z.THREE.pow(k)).divide(e(m))).log().divide(LOG2).floor().longValueExact();
+    return 1 + CR.valueOf(new Q(n, Z.THREE.pow(k)).divide(e(m))).log().divide(LOG2).floor().longValueExact();
   }
 
   private long g(final long n, final long m) {

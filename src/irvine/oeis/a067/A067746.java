@@ -14,6 +14,6 @@ public class A067746 extends Sequence1 {
 
   @Override
   public Z next() {
-    return new Q(Z.valueOf(3 * ++mN - 2), Z.valueOf(mN).pow(2 * mN - 1).multiply(2 * mN - 1).shiftLeft(2 * mN - 2)).den();
+    return new Q(3 * ++mN - 2, Z.valueOf(mN).pow(2 * mN - 1).multiply(2 * mN - 1).shiftLeft(2 * mN - 2)).den();
   }
 }

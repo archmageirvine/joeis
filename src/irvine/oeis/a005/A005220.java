@@ -28,7 +28,7 @@ public class A005220 extends Sequence0 {
         for (long l = 0; l <= k; ++l) {
           u = u.signedAdd(((mN - l - k) & 1) == 0, Binomial.binomial(k, l).multiply(Binomial.binomial(k - l, mN - m - 3 * l - k)));
         }
-        t = t.add(new Q(u, Z.valueOf(m + k + 1)).multiply(Binomial.binomial(m + 2 * k, k)));
+        t = t.add(new Q(u, m + k + 1).multiply(Binomial.binomial(m + 2 * k, k)));
       }
       sum = sum.add(t.multiply(s));
     }

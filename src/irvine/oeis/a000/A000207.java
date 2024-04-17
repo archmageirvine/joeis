@@ -42,7 +42,7 @@ public class A000207 extends AbstractSequence {
     mC.add(mA108.next());
     ++mN;
     final int k = (mN & 1) == 0 ? mN / 2 + 2 : (mN + 3) / 2;
-    Q r = new Q(c(mN), Z.valueOf(2L * mN + 4)).add(new Q(c(k - 2), Z.TWO));
+    Q r = new Q(c(mN), 2L * mN + 4).add(new Q(c(k - 2), Z.TWO));
     if ((mN & 1) == 0) {
       r = r.add(new Q(c(mN / 2), Z.FOUR));
     }

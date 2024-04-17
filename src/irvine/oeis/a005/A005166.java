@@ -18,7 +18,7 @@ public class A005166 extends Sequence0 {
   public Z next() {
     if (++mN > 0) {
       mS = mS.add(mA.pow(3));
-      final Q r = new Q(mS, Z.valueOf(mN));
+      final Q r = new Q(mS, mN);
       if (!r.isInteger()) {
         throw new UnsupportedOperationException("Not an integer");
       }

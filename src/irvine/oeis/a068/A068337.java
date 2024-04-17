@@ -16,6 +16,6 @@ public class A068337 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A068337() {
-    super(1, n -> Rationals.SINGLETON.sum(1, n, k -> new Q(Z.valueOf(Mobius.mobius(k)), Z.valueOf(k))).multiply(MemoryFactorial.SINGLETON.factorial(n)).num());
+    super(1, n -> Rationals.SINGLETON.sum(1, n, k -> new Q(Z.valueOf(Mobius.mobius(k)), k)).multiply(MemoryFactorial.SINGLETON.factorial(n)).num());
   }
 }

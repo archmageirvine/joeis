@@ -37,7 +37,7 @@ public final class PhysicsConstants {
   /** Planck constant in J s. As of 2019 this has a fixed exact value. */
   public static final double PLANCK_CONSTANT     = 6.62607015E-34;
   /** Planck constant in J s. As of 2019 this has a fixed exact value. */
-  public static final CR PLANCK_CONSTANT_CR      = CR.valueOf(new Q(Z.valueOf(662607015), Z.TEN.pow(34)));
+  public static final CR PLANCK_CONSTANT_CR      = CR.valueOf(new Q(662607015, Z.TEN.pow(34)));
   /** Planck constant over tau. */
   public static final double HBAR = PLANCK_CONSTANT / Constants.TAU;
   /** Planck constant over tau. */
@@ -46,7 +46,7 @@ public final class PhysicsConstants {
   /** Charge of an electron, e, in C. As of 2019 this has a fixed exact value. */
   public static final double ELEMENTARY_CHARGE     = 1.602176634E-19;
   /** Planck constant in J s. As of 2019 this has a fixed exact value. */
-  public static final CR ELEMENTARY_CHARGE_CR = CR.valueOf(new Q(Z.valueOf(1602176634), Z.TEN.pow(19)));
+  public static final CR ELEMENTARY_CHARGE_CR = CR.valueOf(new Q(1602176634, Z.TEN.pow(19)));
   /** Uncertainty in charge of an electron, e, in C. */
   public static final double ELEMENTARY_CHARGE_UNC = 0;
 
@@ -71,7 +71,7 @@ public final class PhysicsConstants {
   public static final double FARADAY_UNC = errorMultiply(AVOGADRO, AVOGADRO_UNC, ELEMENTARY_CHARGE, ELEMENTARY_CHARGE_UNC);
 
   /** Boltzmann constant, k, in J/K. */
-  public static final CR BOLTZMANN_CR = CR.valueOf(new Q(Z.valueOf(1380649), Z.TEN.pow(23)));
+  public static final CR BOLTZMANN_CR = CR.valueOf(new Q(1380649, Z.TEN.pow(23)));
 
   /** Stefan-Boltzmann constant, sigma, in W m^-2 K^-4. */
   public static final double STEFAN_BOLTZMANN     = 5.670367E-8;

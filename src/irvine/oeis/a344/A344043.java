@@ -4,7 +4,6 @@ package irvine.oeis.a344;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
-import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -15,6 +14,6 @@ public class A344043 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A344043() {
-    super(1, n -> Rationals.SINGLETON.sumdiv(n, d -> new Q(Functions.SIGMA.z(d).pow(3), Z.valueOf(d))).multiply(n).num());
+    super(1, n -> Rationals.SINGLETON.sumdiv(n, d -> new Q(Functions.SIGMA.z(d).pow(3), d)).multiply(n).num());
   }
 }

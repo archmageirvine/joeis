@@ -13,6 +13,6 @@ public class A078268 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A078268() {
-    super(1, n -> new Q(Z.valueOf(n), Z.TEN.pow(n.toString().length())).num());
+    super(1, n -> new Q(n, Z.TEN.pow(n.toString().length())).num());
   }
 }

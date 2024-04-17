@@ -18,7 +18,7 @@ public class A060436 extends A000005 {
 
   @Override
   public Z next() {
-    mA = mA.add(new Q(super.next(), Z.valueOf(mN)));
+    mA = mA.add(new Q(super.next(), mN));
     return select(mA);
   }
 }

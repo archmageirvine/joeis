@@ -15,7 +15,7 @@ public class HalfCentralBinomialSequence implements RationalSequence {
   @Override
   public final Q nextQ() {
     if (++mN > 1) {
-      mA = mA.multiply(new Q(Z.valueOf(mN - 1).shiftLeft(3), Z.valueOf(2 * mN - 1)));
+      mA = mA.multiply(new Q(Z.valueOf(mN - 1).shiftLeft(3), 2 * mN - 1));
     }
     return mA;
   }

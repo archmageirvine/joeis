@@ -4,7 +4,6 @@ package irvine.oeis.a368;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
-import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -15,6 +14,6 @@ public class A368792 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A368792() {
-    super(0, n -> Rationals.SINGLETON.sum(0, n, k -> new Q(Z.valueOf(k), MemoryFactorial.SINGLETON.doubleFactorial(2 * k - 1))).multiply(MemoryFactorial.SINGLETON.doubleFactorial(2 * n - 1)).num());
+    super(0, n -> Rationals.SINGLETON.sum(0, n, k -> new Q(k, MemoryFactorial.SINGLETON.doubleFactorial(2 * k - 1))).multiply(MemoryFactorial.SINGLETON.doubleFactorial(2 * n - 1)).num());
   }
 }

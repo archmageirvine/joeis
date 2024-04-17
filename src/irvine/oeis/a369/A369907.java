@@ -15,6 +15,6 @@ public class A369907 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A369907() {
-    super(1, n -> Rationals.SINGLETON.sopf(n, p -> new Q(Z.valueOf(Functions.OMEGA.i(n / p)), Z.valueOf(p))).multiply(Z.valueOf(n)).num());
+    super(1, n -> Rationals.SINGLETON.sopf(n, p -> new Q(Z.valueOf(Functions.OMEGA.i(n / p)), p)).multiply(Z.valueOf(n)).num());
   }
 }

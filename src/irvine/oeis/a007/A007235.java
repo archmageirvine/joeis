@@ -18,9 +18,9 @@ public class A007235 extends Sequence1 {
   private Z b(final int k, final int n) {
     Q sum = Q.ZERO;
     for (int j = 0; j < k; ++j) {
-      sum = sum.add(new Q(Z.valueOf(j + 1), Binomial.binomial(k - 1, j).multiply(Binomial.binomial(k, j))));
+      sum = sum.add(new Q(j + 1, Binomial.binomial(k - 1, j).multiply(Binomial.binomial(k, j))));
     }
-    sum = sum.multiply(new Q(Z.valueOf(k + 1), Binomial.binomial(n, k)));
+    sum = sum.multiply(new Q(k + 1, Binomial.binomial(n, k)));
     sum = sum.add(Q.ONE.signedAdd((k & 1) == 1, new Q(Z.ONE, Binomial.binomial(n, k))).multiply(new Q(n, n + 1)));
     return sum.multiply(mF.factorial(n)).toZ().multiply2().divide(Z.valueOf(k).square().multiply(n - k).multiply(n - k));
   }

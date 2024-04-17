@@ -15,6 +15,6 @@ public class A348203 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A348203() {
-    super(1, n -> Z.valueOf(n - Functions.OMEGA.i(n)).add(Rationals.SINGLETON.sopf(n, p -> new Q(Z.ONE, Z.valueOf(p))).multiply(n).num()));
+    super(1, n -> Z.valueOf(n - Functions.OMEGA.i(n)).add(Rationals.SINGLETON.sopf(n, p -> new Q(Z.ONE, p)).multiply(n).num()));
   }
 }

@@ -42,7 +42,7 @@ public class A109555 extends A000040 {
     Z primeN = mPrimeN1;
     mPrimeN1 = super.next();
     Z primePi = mSeq.next();
-    while (!new Q(mPrimeN1.subtract(primeN).multiply(primePi).mod(Z.EIGHT.multiply(mN)).multiply(2), Z.valueOf(mN)).floor().equals(mResidue)) {
+    while (!new Q(mPrimeN1.subtract(primeN).multiply(primePi).mod(Z.EIGHT.multiply(mN)).multiply(2), mN).floor().equals(mResidue)) {
       // System.out.println("mN=" + mN + ", mPrimeN1=" + mPrimeN1  + ", primeN=" + primeN + ", primePi=" + primePi + ", mod=" + mPrimeN1.subtract(primeN).multiply(primePi).mod(Z.EIGHT.multiply(mN)));
       ++mN;
       primeN = mPrimeN1;

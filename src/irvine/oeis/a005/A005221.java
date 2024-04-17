@@ -32,7 +32,7 @@ public class A005221 extends Sequence0 {
           for (long l = 0; l <= k; ++l) {
             v = v.signedAdd(((mN - l - k - m) & 1) == 0, Binomial.binomial(k, l).multiply(Binomial.binomial(k - l, mN - 3 * l - k - i - m)));
           }
-          u = u.add(new Q(v, Z.valueOf(k + i + m)).multiply(Binomial.binomial(2 * k + i + m - 1, k)));
+          u = u.add(new Q(v, k + i + m).multiply(Binomial.binomial(2 * k + i + m - 1, k)));
         }
         s = s.add(u.multiply(t));
       }

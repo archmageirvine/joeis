@@ -22,7 +22,7 @@ public class A051284 extends A004001 {
     while (true) {
       final Z t = super.next();
       final int n = size();
-      final Q m = new Q(Z.valueOf(n), t);
+      final Q m = new Q(n, t);
       if (m.compareTo(min) < 0) {
         min = m;
         minN = size();

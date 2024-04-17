@@ -19,7 +19,7 @@ public class A062861 extends Sequence0 {
     }
     for (final Z k : Jaguar.factor(6 * t).divisorsSorted()) {
       final Q z = new Q(k.square().subtract(1), Z.THREE);
-      final Q u = new Q(Z.valueOf(4 * t), k);
+      final Q u = new Q(4 * t, k);
       final Q r = u.subtract(z);
       if (r.isInteger() && r.toZ().isSquare()) {
         return true;

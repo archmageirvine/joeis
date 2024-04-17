@@ -20,6 +20,6 @@ public class A246657 extends A129164 {
   /** Construct the sequence. */
   public Z next() {
     ++mN;
-    return mN == 0 ? Z.ZERO : new Q(super.next(), Z.valueOf(mN)).round();
+    return mN == 0 ? Z.ZERO : new Q(super.next(), mN).round();
   }
 }

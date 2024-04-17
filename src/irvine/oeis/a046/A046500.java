@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 import irvine.util.array.LongDynamicArray;
 
@@ -23,7 +23,7 @@ public class A046500 extends A000040 {
     ++mN;
     while (mA.get(mN) == null) {
       final Z c = super.next();
-      final long persistence = ZUtils.multiplicativePersistence(c);
+      final long persistence = Functions.DIGIT_PRODUCT_PERSISTENCE.l(c);
       if (mA.get(persistence) == null) {
         mA.set(persistence, c);
       }

@@ -12,6 +12,6 @@ public class A342259 extends FilterNumberSequence {
 
   /** Construct the sequence. */
   public A342259() {
-    super(1, 1, k -> Functions.OMEGA.i(k - 1)== Functions.OMEGA.i(k) - 1 && Functions.OMEGA.i(k + 1) == Functions.OMEGA.i(k) + 1);
+    super(1, 1, k -> Functions.OMEGA.i(k - 1) == Functions.OMEGA.i(k) - 1 && Functions.OMEGA.i(k + 1) == Functions.OMEGA.i(k) + 1);
   }
 }

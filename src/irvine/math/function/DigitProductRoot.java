@@ -3,7 +3,7 @@ package irvine.math.function;
 import irvine.math.z.Z;
 
 /**
- * Digital product root.
+ * Digit product root.
  * @author Sean A. Irvine
  */
 class DigitProductRoot extends AbstractFunction2 {

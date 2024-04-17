@@ -18,7 +18,7 @@ public final class Functions {
   public static final Function1 SIGMA0 = new Sigma0();
   /** Number of divisors function. */
   public static final Function1 TAU = SIGMA0; // Convenient synonym
-  /** Number of prime divisors function. */
+  /** Number of distinct prime divisors function. */
   public static final Function1 OMEGA = new Omega();
   /** Ceiling square root. */
   public static final Function1 CEIL_SQRT = new CeilSqrt();
@@ -43,6 +43,8 @@ public final class Functions {
   public static final Function2 DIGIT_PRODUCT = new DigitProduct();
   /** Digit product root. */
   public static final Function2 DIGIT_PRODUCT_ROOT = new DigitProductRoot();
+  /** Digit product persistence. */
+  public static final Function2 DIGIT_PRODUCT_PERSISTENCE = new DigitProductPersistence();
   /** Product of nonzero digits. */
   public static final Function2 DIGIT_NZ_PRODUCT = new DigitNonzeroProduct();
   /** Digit root of nonzero digits. */

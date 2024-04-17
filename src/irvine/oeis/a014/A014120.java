@@ -2,8 +2,8 @@ package irvine.oeis.a014;
 
 import java.util.TreeSet;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence0;
 
 /**
@@ -31,7 +31,7 @@ public class A014120 extends Sequence0 {
     }
     while (true) {
       final Z c = mCandidates.pollFirst();
-      if (ZUtils.multiplicativePersistence(c) == mN) {
+      if (Functions.DIGIT_PRODUCT_PERSISTENCE.l(c) == mN) {
         return c;
       }
       final Z c10 = c.multiply(10);

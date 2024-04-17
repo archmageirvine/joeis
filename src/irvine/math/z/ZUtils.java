@@ -644,20 +644,6 @@ public final class ZUtils {
   }
 
   /**
-   * Compute the multiplicative persistence of a number in base 10.
-   * @param n number
-   * @return persistence
-   */
-  public static long multiplicativePersistence(Z n) {
-    long k = 0;
-    while (n.compareTo(Z.NINE) > 0) {
-      n = Functions.DIGIT_PRODUCT.z(n);
-      ++k;
-    }
-    return k;
-  }
-
-  /**
    * Return the sum of the values.
    * @param values numbers to sum
    * @return sum

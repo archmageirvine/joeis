@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
@@ -14,7 +14,7 @@ public class A046503 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (ZUtils.multiplicativePersistence(p) == 3) {
+      if (Functions.DIGIT_PRODUCT_PERSISTENCE.l(p) == 3) {
         return p;
       }
     }

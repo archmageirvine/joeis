@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * Compute the number of prime divisors function.
+ * Compute the number of distinct prime divisors function.
  * For small values it will consult a table (which can grow as required),
  * for large specific values it will use factorization.
  * @author Sean A. Irvine

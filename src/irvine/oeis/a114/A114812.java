@@ -1,6 +1,6 @@
 package irvine.oeis.a114;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a000.A000045;
@@ -33,7 +33,7 @@ public class A114812 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mN;
-      if (Jaguar.factor(mSeq.next()).bigOmega() == mNoprf) {
+      if (Functions.BIG_OMEGA.l(mSeq.next()) == mNoprf) {
         return Z.valueOf(mN);
       }
     }

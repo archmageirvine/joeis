@@ -1,8 +1,8 @@
 package irvine.oeis.a068;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +20,7 @@ public class A068597 extends Sequence1 {
       return n < 5 && n > 1;
     }
     for (long m = 3; m <= LongUtils.log2(n); ++m) {
-      if (Jaguar.factor(n - m).bigOmega() > m) {
+      if (Functions.BIG_OMEGA.l(n - m) > m) {
         return false;
       }
     }

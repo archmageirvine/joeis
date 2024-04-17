@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a071.A071904;
 
@@ -12,6 +12,6 @@ public class A046340 extends FilterSequence {
 
   /** Construct the sequence. */
   public A046340() {
-    super(1, new A071904(), k -> (Jaguar.factor(k).bigOmega() & 1) == 1);
+    super(1, new A071904(), k -> (Functions.BIG_OMEGA.l(k) & 1) == 1);
   }
 }

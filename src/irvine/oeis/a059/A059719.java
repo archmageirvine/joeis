@@ -2,7 +2,7 @@ package irvine.oeis.a059;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 import irvine.util.string.StringUtils;
@@ -31,7 +31,7 @@ public class A059719 extends MemorySequence {
     for (int k = size() - 1; k >= 0; --k) {
       final long v = a(k).longValueExact();
       final long a = mOmegas.get(k);
-      final long b = Jaguar.factor(m - v).bigOmega();
+      final long b = Functions.BIG_OMEGA.l(m - v);
       if (omegaM - a != b) {
         return false;
       }
@@ -43,12 +43,12 @@ public class A059719 extends MemorySequence {
   protected Z computeNext() {
     final int n = size();
     if (n == 0) {
-      mOmegas.add(Jaguar.factor(mStart).bigOmega());
+      mOmegas.add(Functions.BIG_OMEGA.l(mStart));
       return mStart;
     }
     long m = a(n - 1).longValueExact();
     while (true) {
-      final long omegaM = Jaguar.factor(++m).bigOmega();
+      final long omegaM = Functions.BIG_OMEGA.l(++m);
       if (omegaM > 1 && isOk(m, omegaM)) {
         mOmegas.add(omegaM);
         return Z.valueOf(m);

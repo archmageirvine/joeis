@@ -1,8 +1,8 @@
 package irvine.oeis.a036;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +23,7 @@ public class A036337 extends Sequence1 {
     if (fs.isComplete()) {
       return fs.bigOmega();
     }
-    return Jaguar.factor(s).bigOmega();
+    return Functions.BIG_OMEGA.l(s);
   }
 
   @Override

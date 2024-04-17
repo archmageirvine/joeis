@@ -2,7 +2,7 @@ package irvine.oeis.a207;
 
 import java.util.Arrays;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
@@ -25,7 +25,7 @@ public class A207975 extends Sequence1 {
     for (int k = index - 1; k >= 0; --k) {
       final long v = mA[k];
       final long a = mOmegas[k];
-      final long b = Jaguar.factor(m + v).bigOmega();
+      final long b = Functions.BIG_OMEGA.l(m + v);
       if (omegaM + a != b) {
         return false;
       }
@@ -44,7 +44,7 @@ public class A207975 extends Sequence1 {
     }
     final int remaining = mN - index;
     for (long k = prev + 1; sum + k * remaining < mBest; ++k) {
-      final long omega = Jaguar.factor(k).bigOmega();
+      final long omega = Functions.BIG_OMEGA.l(k);
       if (isOk(k, omega, index)) {
         mA[index] = k;
         mOmegas[index] = omega;

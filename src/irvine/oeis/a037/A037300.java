@@ -1,6 +1,6 @@
 package irvine.oeis.a037;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 import irvine.oeis.prime.HomePrimeSequence;
@@ -26,7 +26,7 @@ public class A037300 extends A002808 {
       r = p;
       p = q;
     }
-    return Z.valueOf(Jaguar.factor(r).bigOmega());
+    return Functions.BIG_OMEGA.z(r);
   }
 }
 

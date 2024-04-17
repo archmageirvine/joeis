@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
@@ -14,7 +14,7 @@ public class A046339 extends A002808 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if ((Jaguar.factor(t).bigOmega() & 1) == 1) {
+      if ((Functions.BIG_OMEGA.l(t) & 1) == 1) {
         return t;
       }
     }

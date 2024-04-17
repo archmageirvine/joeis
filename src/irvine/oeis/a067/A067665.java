@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -21,7 +21,7 @@ public class A067665 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final long omega = Jaguar.factor(++mN).bigOmega();
+      final long omega = Functions.BIG_OMEGA.l(++mN);
       if (omega >= Long.SIZE) {
         throw new UnsupportedOperationException();
       }

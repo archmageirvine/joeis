@@ -2,7 +2,7 @@ package irvine.oeis.a068;
 
 import java.util.HashSet;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A068796 extends Sequence1 {
     ++mN;
     final HashSet<Long> seen = new HashSet<>();
     long k = mN;
-    while (seen.add(Jaguar.factor(k++).bigOmega())) {
+    while (seen.add(Functions.BIG_OMEGA.l(k++))) {
       // do nothing
     }
     return Z.valueOf(seen.size());

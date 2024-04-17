@@ -1,8 +1,8 @@
 package irvine.oeis.a085;
 
-import irvine.factor.factor.Jaguar;
-import irvine.math.z.Z;
 import irvine.math.cyclotomic.Cyclotomic;
+import irvine.math.function.Functions;
+import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
@@ -12,24 +12,20 @@ import irvine.oeis.Sequence1;
 public class A085021 extends Sequence1 {
 
   private int mN;
-  private int mCyclo;
+  private final int mCyclo;
 
   /** Construct the sequence. */
   public A085021() {
     this(2);
   }
 
-  /**
-   * Generic constructor with parameters
-   * @param cyclo
-   */
-  public A085021(final int cyclo) {
+  protected A085021(final int cyclo) {
     mN = 0;
     mCyclo = cyclo;
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(Cyclotomic.cyclotomic(++mN, mCyclo)).bigOmega());
+    return Functions.BIG_OMEGA.z(Cyclotomic.cyclotomic(++mN, mCyclo));
   }
 }

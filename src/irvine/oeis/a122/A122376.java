@@ -1,7 +1,7 @@
 package irvine.oeis.a122;
 // manually knest/jaguarz at 2023-03-01 16:41
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a005.A005179;
 
@@ -12,6 +12,6 @@ import irvine.oeis.a005.A005179;
 public class A122376 extends A005179 {
   @Override
   public Z next() {
-    return Z.valueOf(Jaguar.factor(super.next()).bigOmega());
+    return Functions.BIG_OMEGA.z(super.next());
   }
 }

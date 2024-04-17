@@ -1,7 +1,7 @@
 package irvine.oeis.a050;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Puma;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -27,7 +27,7 @@ public class A050298 extends MemoryFunction2Sequence<Integer, Z> {
     Z k = get(n - 1, m);
     while (true) {
       k = k.add(1);
-      if (Jaguar.factor(k.add(1)).bigOmega() == m) {
+      if (Functions.BIG_OMEGA.l(k.add(1)) == m) {
         return k;
       }
     }

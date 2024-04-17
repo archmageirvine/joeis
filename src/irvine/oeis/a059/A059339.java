@@ -1,6 +1,6 @@
 package irvine.oeis.a059;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -14,10 +14,10 @@ public class A059339 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long omega = Jaguar.factor(++mN).bigOmega();
+    final long omega = Functions.BIG_OMEGA.l(++mN);
     long cnt = 0;
     for (long m = 1; 2 * m <= mN; ++m) {
-      if (Jaguar.factor(m).bigOmega() + Jaguar.factor(mN - m).bigOmega() == omega) {
+      if (Functions.BIG_OMEGA.l(m) + Functions.BIG_OMEGA.l(mN - m) == omega) {
         ++cnt;
       }
     }

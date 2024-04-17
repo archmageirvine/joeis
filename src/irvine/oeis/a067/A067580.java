@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
@@ -17,7 +17,7 @@ public class A067580 extends Sequence2 {
 
   @Override
   public Z next() {
-    final long omega = Jaguar.factor(++mN).bigOmega();
+    final long omega = Functions.BIG_OMEGA.l(++mN);
     mSum = mSum.add(new Q(1, omega));
     mProd = mProd.multiply(omega);
     return mSum.multiply(mProd).toZ();

@@ -1,6 +1,6 @@
 package irvine.oeis.a075;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -32,7 +32,7 @@ public class A075875 extends Sequence1 {
     while (true) {
       ++mN;
       final Z tri = Z.valueOf(mN + 1).multiply(mN).divide2();
-      if (Jaguar.factor(tri).bigOmega() == mCount) {
+      if (Functions.BIG_OMEGA.l(tri) == mCount) {
         return tri;
       }
     }

@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.cr.CR;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,7 +16,7 @@ public class A067712 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (CR.valueOf(Jaguar.factor(++mN).bigOmega()).compareTo(CR.valueOf(mN).log()) > 0) {
+      if (CR.valueOf(Functions.BIG_OMEGA.l(++mN)).compareTo(CR.valueOf(mN).log()) > 0) {
         return Z.valueOf(mN);
       }
     }

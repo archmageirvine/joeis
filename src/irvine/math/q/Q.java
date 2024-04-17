@@ -54,7 +54,6 @@ public class Q implements Comparable<Q>, Serializable {
 
   /**
    * Construct the rational integer <code>n</code>.
-   *
    * @param n integer value
    */
   public Q(final Z n) {
@@ -64,7 +63,6 @@ public class Q implements Comparable<Q>, Serializable {
 
   /**
    * Construct the rational integer <code>n</code>.
-   *
    * @param n integer value
    */
   public Q(final long n) {
@@ -73,7 +71,6 @@ public class Q implements Comparable<Q>, Serializable {
 
   /**
    * Construct the rational number formed by the ratio <code>p/q</code>.
-   *
    * @param p numerator
    * @param q denominator
    * @exception IllegalArgumentException if <code>q</code> is zero.
@@ -100,7 +97,6 @@ public class Q implements Comparable<Q>, Serializable {
 
   /**
    * Construct the rational number formed by the ratio <code>p/q</code>.
-   *
    * @param p numerator
    * @param q denominator
    * @exception IllegalArgumentException if <code>q</code> is zero.
@@ -110,8 +106,25 @@ public class Q implements Comparable<Q>, Serializable {
   }
 
   /**
+   * Construct the rational number formed by the ratio <code>p/q</code>.
+   * @param p numerator
+   * @param q denominator
+   */
+  public Q(final Z p, final long q) {
+    this(p, Z.valueOf(q));
+  }
+
+  /**
+   * Construct the rational number formed by the ratio <code>p/q</code>.
+   * @param p numerator
+   * @param q denominator
+   */
+  public Q(final long p, final Z q) {
+    this(Z.valueOf(p), q);
+  }
+
+  /**
    * Construct the rational number from a String of the form <code>"p/q"</code>.
-   *
    * @param val String of the form "p/q"
    * @exception IllegalArgumentException if <code>q</code> is zero.
    */

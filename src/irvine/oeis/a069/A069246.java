@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A069246.
+ * A069246 Primes which yield a prime whenever a 1 is inserted anywhere in them (including at the beginning or end).
  * @author Sean A. Irvine
  */
 public class A069246 extends A000040 {

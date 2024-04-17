@@ -4,7 +4,7 @@ import irvine.oeis.FilterPositionSequence;
 import irvine.oeis.a068.A068976;
 
 /**
- * A266780.
+ * A069266 Numbers k such that Sum_{d|k} d/core(d) &gt; 2*k, where core(d) is the squarefree part of d.
  * @author Sean A. Irvine
  */
 public class A069266 extends FilterPositionSequence {

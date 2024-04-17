@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A175624 n! modulo n(n+1)(n+2)/3.
+ * A175624 a(n) = n! modulo n*(n+1)*(n+2)/3.
  * a(n) = n! % (n*(n+1)*(n+2)/3);
  * @author Georg Fischer
  */

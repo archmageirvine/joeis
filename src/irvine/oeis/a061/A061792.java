@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A061792 49*(n*(n+1)/2)+6.
+ * A061792 a(n) = 49*(n*(n+1)/2) + 6.
  * @author Sean A. Irvine
  */
 public class A061792 extends LinearRecurrence {

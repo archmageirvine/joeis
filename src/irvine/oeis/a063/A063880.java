@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063880 Numbers n such that sigma(n) = 2*usigma(n).
+ * A063880 Numbers k such that sigma(k) = 2*usigma(k).
  * @author Sean A. Irvine
  */
 public class A063880 extends Sequence1 {

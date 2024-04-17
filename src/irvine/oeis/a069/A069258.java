@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A266780.
+ * A069258 Triangle T(n,k) = number of partitions of 2*n into n-k prime parts, n&gt;1, 0 &lt;= k &lt;= n-2.
  * @author Sean A. Irvine
  */
 public class A069258 extends Sequence2 {

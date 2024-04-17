@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
 
 /**
- * A085936 Numbers n such that the digits sorted in ascending order + the sum of the squares of the digits of n is a palindrome. Or, sortdigits(n)+digitsumsquare(n) is a palindrome.
+ * A085936 Numbers k such that the number resulting from sorting the digits of k in ascending order + the sum of the squares of the digits of k is a palindrome. Or, sortdigits(k) + digitsumsquare(k) is a palindrome.
  * @author Georg Fischer
  */
 public class A085936 extends Sequence1 {

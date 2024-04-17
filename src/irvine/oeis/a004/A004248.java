@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A004248 Table of x^y, where (x,y) = (0,0), (0,1), (1,0), (0,2), (1,1), (2,0), ...
+ * A004248 Array read by ascending antidiagonals: A(n, k) = k^n.
  * @author Sean A. Irvine
  */
 public class A004248 extends Sequence0 {

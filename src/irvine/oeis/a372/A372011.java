@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A372011.
+ * A372011 allocated for Damjan Kokovic.
  * @author Sean A. Irvine
  */
 public class A372011 extends Sequence2 {

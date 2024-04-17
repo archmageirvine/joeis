@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063838 Numbers n such that mu(n) + mu(n+1) + mu(n+2) = 3.
+ * A063838 Numbers k such that mu(k) + mu(k+1) + mu(k+2) = 3.
  * @author Sean A. Irvine
  */
 public class A063838 extends Sequence1 {

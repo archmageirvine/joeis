@@ -6,7 +6,7 @@ import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002445;
 
 /**
- * A266780.
+ * A069267 a(n) = (2^(n-1)/(2n)!)*Product_{k=1..n} q(k) where q(n) is the denominator of B(2n), the 2n-th Bernoulli number.
  * @author Sean A. Irvine
  */
 public class A069267 extends Sequence1 {

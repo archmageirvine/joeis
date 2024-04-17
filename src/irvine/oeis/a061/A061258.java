@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A061258 a(n)=Sum_{d|n} d*psi(d), where psi(d) is reduced totient function, cf. A002322.
+ * A061258 a(n) = Sum_{d|n} d*psi(d), where psi(d) is reduced totient function, cf. A002322.
  * @author Sean A. Irvine
  */
 public class A061258 extends Sequence1 {

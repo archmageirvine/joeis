@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A266780.
+ * A069257 Denominator of the last term of the Egyptian fraction sum (using the greedy algorithm) which satisfies 1 = 1/n + 1/(n+1) + 1/(n+2) ... 1/a(n).
  * @author Sean A. Irvine
  */
 public class A069257 extends Sequence2 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A364922 G.f. satisfies A(x) = 1 + x*A(x)^3 / (1 - 2*x*A(x)^2).
+ * A364922 a(n) is the square of the side length of a simplex whose n-dimensional inner hypervolume is equal to its (n-1)-dimensional surface hypervolume. As a result, the sequence starts at n=2.
  * a(n) = sum(k=0,n,3^k*(-2)^(n-k)*binom(n,k)*binom(2*n+k+1,n)/(2*n+k+1));
  * @author Georg Fischer
  */

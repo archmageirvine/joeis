@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
 
 /**
- * A061366 Numbers n such that phi(n)+sigma(n) is a perfect cube.
+ * A061366 Numbers k such that phi(k)+sigma(k) is a perfect cube.
  * @author Sean A. Irvine
  */
 public class A061366 extends Sequence1 {

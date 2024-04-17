@@ -6,7 +6,7 @@ import irvine.oeis.a060.A060006;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A266780.
+ * A218197 Decimal expansion of the Perrin argument a (see below).
  * @author Sean A. Irvine
  */
 public class A218197 extends DecimalExpansionSequence {

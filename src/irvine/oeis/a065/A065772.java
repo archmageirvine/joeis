@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a025.A025475;
 
 /**
- * A065772 Nontrivial prime powers n from A025475 such that tau[n^2] is prime but sigma[n^2] is a composite number.
+ * A065772 Nontrivial prime powers k from A025475 such that tau(k^2) is prime but sigma(k^2) is a composite number.
  * @author Sean A. Irvine
  */
 public class A065772 extends A025475 {

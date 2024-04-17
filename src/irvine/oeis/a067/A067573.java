@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A067573 Numbers such that Sigma(Phi(k))/Sigma(k) &gt; Sigma(Phi(j))/Sigma(j) for all k &gt; j.
+ * A067573 Numbers k &gt; 1 such that sigma(phi(k))/sigma(k) &gt; sigma(phi(j))/sigma(j) for all 1 &lt; j &lt; k.
  * @author Sean A. Irvine
  */
 public class A067573 extends Sequence1 {

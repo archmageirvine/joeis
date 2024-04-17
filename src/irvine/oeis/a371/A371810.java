@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A371810 allocated for Sean A. Irvine.
+ * A371810 a(n) is the number of pseudo-Latin stable matchings in a particular matrix of size n (see Comments for detail).
  * @author Sean A. Irvine
  */
 public class A371810 extends Sequence1 {

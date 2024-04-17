@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069165 Integers of the form k*sum(d|k,1/tau(d)).
+ * A069165 Integers of the form k * Sum_{d|k} 1/tau(d).
  * @author Sean A. Irvine
  */
 public class A069165 extends Sequence1 {

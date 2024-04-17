@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A063486 a(n) = 2^(2^n)+5.
+ * A063486 a(n) = 2^(2^n) + 5.
  * @author Georg Fischer
  */
 public class A063486 extends Sequence0 {

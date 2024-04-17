@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A063038 Floor(n*sqrt(n)) - d(n), where d(n) is the number of divisors function.
+ * A063038 a(n) = floor(n*sqrt(n)) - d(n), where d(n) is the number of divisors function.
  * @author Sean A. Irvine
  */
 public class A063038 extends Sequence1 {

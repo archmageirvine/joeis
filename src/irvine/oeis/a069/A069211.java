@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A069211 Let u(n,k) be the recursion: u(n,1)=1 u(n,2)=n u(n,k+3)= (1/2) *(u(n,k+1)+u(n,k)) if u(n,k+1)+u(n,k) is even u(n,k+3)=abs(u(n,k+1)-u(n,k)) otherwise. Sequence gives integer values a(n) such that u(n,k)=1 for any k&gt;=a(n).
+ * A069211 Let u(n,k) be the recursion: u(n,1)=1, u(n,2)=n, u(n,k+2) = (1/2) * (u(n,k+1)+u(n,k)) if u(n,k+1)+u(n,k) is even, and u(n,k+2) = abs(u(n,k+1)-u(n,k)) otherwise. Sequence gives integer values a(n) such that u(n,k)=1 for any k&gt;=a(n).
  * @author Sean A. Irvine
  */
 public class A069211 extends Sequence1 {

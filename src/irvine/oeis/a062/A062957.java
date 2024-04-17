@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A062957 C(n^2)-C(n), where C(n) is Chowla's function (A048050).
+ * A062957 a(n) = C(n^2) - C(n), where C(n) is Chowla's function (A048050).
  * @author Sean A. Irvine
  */
 public class A062957 extends Sequence1 {

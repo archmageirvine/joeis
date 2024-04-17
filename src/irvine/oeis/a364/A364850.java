@@ -8,7 +8,7 @@ import irvine.oeis.a023.A023900;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A364850 a(n) = numerator of A014963(n)*A023900(n)/2.
+ * A364850 a(n) = negated numerator of A014963(n)*A023900(n)/2.
  * @author Georg Fischer
  */
 public class A364850 extends TupleTransformSequence {

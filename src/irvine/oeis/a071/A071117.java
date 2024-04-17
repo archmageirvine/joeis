@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001113;
 
 /**
- * A071117 Sum of first n digits of decimal expansion of e is prime.
+ * A071117 Numbers k such that the sum of the first k digits of the decimal expansion of e is prime.
  * @author Georg Fischer
  */
 public class A071117 extends A001113 {

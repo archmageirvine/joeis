@@ -6,7 +6,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A178185 Numerators of sum (1/2)^((k^2+3k)/2) from k=1 to n.
+ * A178185 Numerator of Sum_{k=1..n} 1/2^((k^2 + 3*k)/2).
  * @author Georg Fischer
  */
 public class A178185 extends LambdaSequence {

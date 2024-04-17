@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A065774 Product of digits of n is equal to the sum of the prime factors of n, counted with multiplicity.
+ * A065774 Numbers k such that the product of the digits of k is equal to the sum of the prime factors of k, counted with multiplicity.
  * @author Sean A. Irvine
  */
 public class A065774 extends Sequence1 {

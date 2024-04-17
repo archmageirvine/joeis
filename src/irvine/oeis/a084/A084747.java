@@ -5,7 +5,7 @@ import irvine.factor.prime.Puma;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A084747 Leading diagonal of triangle shown below in which the n-th row contains the n smallest numbers &gt; 0 such that when they are incremented by n yield a prime.
+ * A084747 Leading diagonal of triangle (shown below) in which row n lists the n smallest positive numbers k such that k + n is a prime.
  * a(n)=prime(primepi(n)+n)-n
  * @author Georg Fischer
  */

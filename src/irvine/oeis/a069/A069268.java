@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.a000.A000217;
 
 /**
- * A266780.
+ * A069268 Greatest common divisor of n! and n*(n+1)/2.
  * @author Sean A. Irvine
  */
 public class A069268 extends Combiner {

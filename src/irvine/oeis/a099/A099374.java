@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A099374 Squares of A041041(n-1), n&gt;=1 (generalized Fibonacci).
+ * A099374 a(n) = A041041(n-1)^2, n &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A099374 extends LinearRecurrence {

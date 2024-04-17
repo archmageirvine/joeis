@@ -4,7 +4,7 @@ package irvine.oeis.a074;
 import irvine.oeis.transform.TupleTransformSequence;
 
 /**
- * A074171 a(1) = 1. For n &gt;= 2, a(n) is either a(n-1)+n or a(n-1)-n; we only use the minus sign if a(n-1) is prime. E.g. since a(2)=3 is prime, a(3)=a(2)-3=0.
+ * A074171 a(1) = 1. For n &gt;= 2, a(n) is either a(n-1)+n or a(n-1)-n; we use the minus sign only if a(n-1) is prime. E.g., since a(2)=3 is prime, a(3)=a(2)-3=0.
  * @author Georg Fischer
  */
 public class A074171 extends TupleTransformSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A266780.
+ * A069248 Number of positive divisors of n themselves divisible by largest prime that divides n.
  * @author Sean A. Irvine
  */
 public class A069248 extends Sequence1 {

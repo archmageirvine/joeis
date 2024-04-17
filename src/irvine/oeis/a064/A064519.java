@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A064519 Numbers n such that usigma(n) / tau(n) is prime.
+ * A064519 Numbers k such that usigma(k) / tau(k) is prime.
  * @author Sean A. Irvine
  */
 public class A064519 extends Sequence1 {

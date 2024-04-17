@@ -7,7 +7,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A120777 One half of denominators of partial sums of a series for sqrt(2).
+ * A120777 a(n) = 2^(2*n - valuation(CatalanNumber(n), 2)).
  * @author Georg Fischer
  */
 public class A120777 extends LambdaSequence {

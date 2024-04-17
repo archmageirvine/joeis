@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
 /**
- * A174407.
+ * A076586 Total number of right truncatable primes in base n.
  * @author Sean A. Irvine
  */
 public class A076586 extends Sequence2 {

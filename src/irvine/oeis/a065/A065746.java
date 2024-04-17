@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a025.A025475;
 
 /**
- * A065746 Number of divisors of squares of all true powers of primes: A000005[A025475(n)^2].
+ * A065746 Number of divisors of squares of all true powers of primes: a(n) = A000005(A025475(n+1)^2).
  * @author Georg Fischer
  */
 public class A065746 extends A025475 {

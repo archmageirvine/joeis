@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
- * A074943 tau(n) (mod 3).
+ * A074943 a(n) = tau(n) mod 3.
  * a(n)=numdiv(n)%3
  * @author Georg Fischer
  */

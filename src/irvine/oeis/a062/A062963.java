@@ -6,7 +6,7 @@ import irvine.oeis.AbstractSequence;
 import irvine.oeis.a023.A023022;
 
 /**
- * A062963 Mu(n) * H(n) where H(n) is A023022.
+ * A062963 a(n) = mu(n) * H(n) where H(n) is A023022.
  * @author Sean A. Irvine
  */
 public class A062963 extends AbstractSequence {

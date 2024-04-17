@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A064516 Numbers n such that pi(n^2) is prime.
+ * A064516 Numbers k such that pi(k^2) is prime.
  * @author Sean A. Irvine
  */
 public class A064516 extends A000720 {

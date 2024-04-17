@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A174407.
+ * A174407 The number of primitive roots g such that there exists an x with g^x (mod p) = x, where p=prime(n).
  * @author Sean A. Irvine
  */
 public class A174407 extends A000040 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A064371 Zero, together with positive numbers n such that the n-th prime + n is a square.
+ * A064371 Zero, together with positive numbers k such that prime(k) + k is a square.
  * @author Sean A. Irvine
  */
 public class A064371 extends A000040 {

@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A266780.
+ * A069247 Expansion of Molien series for Clifford group for the Quebbemann codes over F_8.
  * @author Sean A. Irvine
  */
 public class A069247 extends GeneratingFunctionSequence {

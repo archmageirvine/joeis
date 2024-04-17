@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A064483 Numbers n such that n^2 + prime(n) and n^2 - prime(n) are both primes.
+ * A064483 Numbers k such that k^2 + prime(k) and k^2 - prime(k) are both primes.
  * @author Sean A. Irvine
  */
 public class A064483 extends A000040 {

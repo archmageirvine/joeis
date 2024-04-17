@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
 /**
- * A266780.
+ * A069263 (Sum of digits of n)^3 = sum of digits of n^3.
  * @author Sean A. Irvine
  */
 public class A069263 extends Sequence1 {

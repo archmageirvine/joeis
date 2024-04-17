@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
 /**
- * A266780.
+ * A069259 Limit of A069258(k,n) = number of partitions of 2*k into k-n prime parts, as k tends to infinity.
  * @author Sean A. Irvine
  */
 public class A069259 extends Sequence0 {

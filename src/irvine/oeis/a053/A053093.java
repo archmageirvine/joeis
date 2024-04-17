@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -25,7 +25,7 @@ public class A053093 extends Sequence1 {
           if (++k > mN) {
             break;
           }
-          t = t.subtract(Jaguar.factor(t).sopfr());
+          t = t.subtract(Functions.SOPFR.z(t));
         } while (!t.isProbablePrime());
         if (k == mN) {
           return mM;

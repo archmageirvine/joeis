@@ -2,7 +2,7 @@ package irvine.oeis.a064;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
@@ -33,7 +33,7 @@ public class A064364 extends Sequence1 {
       final Z t = mU;
       mU = mUpper.next();
       for (Z u = t.add(1); u.compareTo(mU) <= 0; u = u.add(1)) {
-        final int s = Jaguar.factor(u).sopfr().intValueExact();
+        final int s = Functions.SOPFR.i(u);
         final TreeSet<Z> v = mA.get(s);
         if (v != null) {
           v.add(u);

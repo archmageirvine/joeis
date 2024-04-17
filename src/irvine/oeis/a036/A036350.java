@@ -1,7 +1,7 @@
 package irvine.oeis.a036;
 
-import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A036350 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (!mPrime.isPrime(++mN) && Jaguar.factor(mN).sopfr().isOdd()) {
+      if (!mPrime.isPrime(++mN) && Functions.SOPFR.z(mN).isOdd()) {
         return Z.valueOf(mN);
       }
     }

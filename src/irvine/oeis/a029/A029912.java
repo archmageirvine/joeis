@@ -1,6 +1,6 @@
 package irvine.oeis.a029;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A029912 extends Sequence1 {
     mN = mN.add(1);
     Z m = mN;
     do {
-      m = Jaguar.factor(m).sopfr().add(1);
+      m = Functions.SOPFR.z(m).add(1);
     } while (!m.isProbablePrime() && !Z.ONE.equals(m) && !Z.SIX.equals(m));
     return m;
   }

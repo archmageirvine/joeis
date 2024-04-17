@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.oeis.a002.A002275;
 import irvine.oeis.transform.SimpleTransformSequence;
 
@@ -12,7 +12,7 @@ public class A064798 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A064798() {
-    super(0, new A002275(), k -> Jaguar.factor(k).sopfr());
+    super(0, new A002275(), k -> Functions.SOPFR.z(k));
   }
 }
 

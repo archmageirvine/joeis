@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -26,7 +26,7 @@ public class A050703 extends AbstractSequence {
   private long mN = 1;
 
   protected Z f(final Z n) {
-    return Jaguar.factor(n).sopfr().add(n);
+    return Functions.SOPFR.z(n).add(n);
   }
 
   protected int iterations() {

@@ -1,6 +1,5 @@
 package irvine.oeis.a065;
 
-import irvine.factor.factor.Jaguar;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -18,7 +17,7 @@ public class A065774 extends Sequence1 {
     while (true) {
       final long v = ++mN;
       final long prod = Functions.DIGIT_PRODUCT.l(v);
-      if (prod > 1 && Jaguar.factor(mN).sopfr().equals(prod)) {
+      if (prod > 1 && Functions.SOPFR.z(mN).equals(prod)) {
         return Z.valueOf(mN);
       }
     }

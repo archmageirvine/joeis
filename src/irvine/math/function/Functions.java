@@ -24,6 +24,8 @@ public final class Functions {
   public static final Function1 BIG_OMEGA = new BigOmega();
   /** Sum of distinct prime divisors function. */
   public static final Function1 SOPF = new Sopf();
+  /** Sum of prime divisors counted with multiplicity function. */
+  public static final Function1 SOPFR = new Sopfr();
   /** Ceiling square root. */
   public static final Function1 CEIL_SQRT = new CeilSqrt();
   /** Bitset indicating which digits are present in a number. */

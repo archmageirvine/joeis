@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -15,7 +15,7 @@ public class A054575 extends A000040 {
     long cnt = 1;
     Z n = super.next().multiply2(); // obviously never prime
     do {
-      n = n.add(Jaguar.factor(n).sopfr());
+      n = n.add(Functions.SOPFR.z(n));
       ++cnt;
     } while (!n.isProbablePrime());
     return Z.valueOf(cnt);

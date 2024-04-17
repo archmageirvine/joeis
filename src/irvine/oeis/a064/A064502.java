@@ -19,7 +19,7 @@ public class A064502 extends Sequence0 {
     }
     long k = 0;
     while (true) {
-      if (Functions.SOPF.z(++k).longValueExact() == mN) {
+      if (Functions.SOPF.l(++k) == mN) {
         return Z.valueOf(k);
       }
     }

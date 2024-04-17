@@ -2,7 +2,7 @@ package irvine.oeis.a057;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -18,11 +18,11 @@ public class A057874 extends Sequence0 {
   @Override
   public Z next() {
     while (mA.isEmpty()) {
-      final Z s = Jaguar.factor(++mN).sopfr();
+      final Z s = Functions.SOPFR.z(++mN);
       final Z b = s.add(mN);
-      if (Jaguar.factor(b).sopfr().equals(s)) {
+      if (Functions.SOPFR.z(b).equals(s)) {
         final Z c = s.add(b);
-        if (Jaguar.factor(c).sopfr().equals(s)) {
+        if (Functions.SOPFR.z(c).equals(s)) {
           mA.add(Z.valueOf(mN));
           mA.add(b);
           mA.add(c);

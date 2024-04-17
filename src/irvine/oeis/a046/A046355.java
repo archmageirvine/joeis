@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.string.StringUtils;
 
@@ -14,7 +14,7 @@ public class A046355 extends A046349 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (StringUtils.isPalindrome(Jaguar.factor(t).sopfr().toString())) {
+      if (StringUtils.isPalindrome(Functions.SOPFR.z(t).toString())) {
         return t;
       }
     }

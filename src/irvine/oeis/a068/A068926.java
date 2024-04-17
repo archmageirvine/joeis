@@ -1,8 +1,8 @@
 package irvine.oeis.a068;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
-import irvine.oeis.a000.A000217;
 
 /**
  * A068926 Table read by antidiagonals: ti(r,s) is the number of incongruent ways to tile an r X s room with 1 X 2 Tatami mats. At most 3 Tatami mats may meet at a point.
@@ -65,7 +65,8 @@ public class A068926 extends Sequence0 {
 
   @Override
   public Z next() {
-    final int m = (int) A000217.trinv(++mN);
+    final long n = ++mN;
+    final int m = (int) Functions.TRINV.l(n);
     return ti(mN + 1 - m * (m + 1) / 2, (m + 1) * (m + 2) / 2 - mN);
   }
 }

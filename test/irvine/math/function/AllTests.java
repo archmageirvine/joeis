@@ -34,6 +34,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(SigmaTest.class);
     suite.addTestSuite(SwizzleTest.class);
     suite.addTestSuite(SyndromeTest.class);
+    suite.addTestSuite(TriangularInverseTest.class);
     return suite;
   }
 }

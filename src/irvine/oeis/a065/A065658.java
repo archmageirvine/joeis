@@ -4,10 +4,10 @@ import java.util.List;
 
 import irvine.math.ContinuedFractionUtils;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
-import irvine.oeis.a000.A000217;
 import irvine.oeis.a007.A007305;
 import irvine.oeis.a047.A047679;
 import irvine.oeis.memory.MemorySequence;
@@ -84,7 +84,8 @@ public class A065658 extends Sequence0 {
 
   @Override
   public Z next() {
-    final long t = A000217.trinv(++mN);
+    final long n = ++mN;
+    final long t = Functions.TRINV.l(n);
     return rotateBinFracNode(1 + (mN - ((t * (t + 1)) / 2)), ((t * (t + 3) / 2) - mN) + 1);
   }
 }

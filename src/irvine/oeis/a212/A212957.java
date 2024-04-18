@@ -17,13 +17,8 @@ public class A212957 extends UpperLeftTriangle {
     hasRAM(true);
   }
 
-  /* Maple:
-    with(numtheory):
-    A:= (n, k)-> add(mobius(n/d)*tau(k^d-1), d=divisors(n)):
-    seq(seq(A(n, 1+d-n), n=1..d), d=1..15);
-  */
   @Override
   public Z matrixElement(final int n, final int k) {
-    return k == 1 ? Z.ZERO : Integers.SINGLETON.sumdiv(n, d -> Functions.SIGMA0.z(Z.valueOf(k).pow(d).subtract(1)).multiply(Functions.MOBIUS.i((long) (n / d))));
+    return k == 1 ? Z.ZERO : Integers.SINGLETON.sumdiv(n, d -> Functions.SIGMA0.z(Z.valueOf(k).pow(d).subtract(1)).multiply(Functions.MOBIUS.i(n / d)));
   }
 }

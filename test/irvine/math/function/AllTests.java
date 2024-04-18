@@ -27,6 +27,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(DistinctDigitCountTest.class);
     suite.addTestSuite(LeastPrimitiveRootTest.class);
     suite.addTestSuite(LookAndSayTest.class);
+    suite.addTestSuite(MertensTest.class);
     suite.addTestSuite(MobiusTest.class);
     suite.addTestSuite(OmegaTest.class);
     suite.addTestSuite(PhiTest.class);

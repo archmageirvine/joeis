@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.util.CollectionUtils;
@@ -829,22 +828,4 @@ public final class LongUtils {
     return res;
   }
 
-  /**
-   * Compute the Mertens function of n.  That is, the sum of the Mobius
-   * function from 1 to n inclusive.
-   *
-   * @param n argument
-   * @return M(n)
-   * @exception ArithmeticException if argument is invalid.
-   */
-  public static long mertens(final long n) {
-    if (n <= 0) {
-      throw new ArithmeticException("Out of range.");
-    }
-    long mertens = 1;
-    for (long k = 2; k <= n; ++k) {
-      mertens += Functions.MOBIUS.i(k);
-    }
-    return mertens;
-  }
 }

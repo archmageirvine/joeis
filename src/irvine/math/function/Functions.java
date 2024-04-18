@@ -34,6 +34,8 @@ public final class Functions {
   public static final Function1 MOBIUS = new Mobius();
   /** Moebius function. */
   public static final Function1 MOEBIUS = MOBIUS;
+  /** Mertens function. */
+  public static final Function1 MERTENS = new Mertens();
   /** Ceiling square root. */
   public static final Function1 CEIL_SQRT = new CeilSqrt();
   /** Bitset indicating which digits are present in a number. */

@@ -1,6 +1,6 @@
 package irvine.oeis.a087;
 
-import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -21,7 +21,7 @@ public class A087989 extends Sequence0 {
     if (++mN > 1) {
       mF *= mN;
     }
-    return Z.valueOf(LongUtils.mertens(mF));
+    return Functions.MERTENS.z(mF);
   }
 }
 

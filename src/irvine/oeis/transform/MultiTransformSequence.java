@@ -89,7 +89,7 @@ public class MultiTransformSequence extends AbstractSequence {
                                 final String initTerms, final AbstractSequence... seqs) {
     super(offset);
     mOffset = offset;
-    mA = new ArrayList<Z>();
+    mA = new ArrayList<>();
     mN = -1;
     while (mN < mOffset - 1) {
       ++mN;

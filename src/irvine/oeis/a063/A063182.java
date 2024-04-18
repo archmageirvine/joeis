@@ -2,12 +2,12 @@ package irvine.oeis.a063;
 
 import java.util.Map;
 
+import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.HararyMultiply;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.Pair;
@@ -34,7 +34,7 @@ public class A063182 extends Sequence1 {
       for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
         order = order.lcm(Z.valueOf(e.getKey().right()));
       }
-      sum = sum.add(m.getCoefficient().divide(Euler.phi(order)));
+      sum = sum.add(m.getCoefficient().divide(Functions.PHI.z(order)));
     }
     return sum.multiply(mF2).toZ();
   }

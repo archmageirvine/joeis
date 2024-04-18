@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
@@ -19,7 +19,7 @@ public class A067723 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z t = mA.next();
-      if (ZUtils.isPalindrome(Euler.phi(t), 10)) {
+      if (ZUtils.isPalindrome(Functions.PHI.z(t), 10)) {
         return t;
       }
     }

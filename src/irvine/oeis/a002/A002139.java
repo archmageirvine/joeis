@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
@@ -27,7 +27,7 @@ public class A002139 extends A002326 {
       }
       // 2n-1 must have the form q^k, k>1
       final Z q = mN.isPower();
-      return f.add(1).multiply(Euler.phi(mN.divide(q)));
+      return f.add(1).multiply(Functions.PHI.z(mN.divide(q)));
     } else {
       return f.lcm(f.add(1));
     }

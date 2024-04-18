@@ -1,7 +1,7 @@
 package irvine.oeis.a309;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -20,7 +20,9 @@ public class A309148 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return Integers.SINGLETON.sumdiv(n, d -> Binomial.binomial(d * (long) k, d).multiply(((n + d) & 1) == 0 ? 1 : -1)
-      .multiply(Euler.phi(Z.valueOf(n / d)))).divide(n * (long) k);
+    return Integers.SINGLETON.sumdiv(n, d -> {
+      return Binomial.binomial(d * (long) k, d).multiply(((n + d) & 1) == 0 ? 1 : -1)
+        .multiply(Functions.PHI.z(Z.valueOf(n / d)));
+    }).divide(n * (long) k);
   }
 }

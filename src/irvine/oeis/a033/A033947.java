@@ -2,7 +2,7 @@ package irvine.oeis.a033;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -34,7 +34,7 @@ public class A033947 extends Sequence1 {
     if (Z.TWO.equals(n)) {
       return Z.ONE;
     }
-    final Z phi = Euler.phi(n);
+    final Z phi = Functions.PHI.z(n);
     final Z[] primes = Jaguar.factor(phi).toZArray();
     Z r = Z.ONE;
     if (isPrimitiveRoot(primes, phi, n, n.subtract(1))) {

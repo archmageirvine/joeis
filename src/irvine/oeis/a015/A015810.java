@@ -1,7 +1,6 @@
 package irvine.oeis.a015;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.util.array.LongDynamicLongArray;
@@ -20,7 +19,7 @@ public class A015810 extends Sequence0 {
     if (r != 0) {
       return r;
     }
-    final long t = Euler.phiAsLong(n);
+    final long t = Functions.PHI.l(n);
     mPhi.set(n, t);
     return t;
   }

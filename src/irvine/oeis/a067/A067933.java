@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,7 @@ public class A067933 extends Sequence1 {
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      final Z euler = Euler.phi(mP.subtract(Z.ONE));
+      final Z euler = Functions.PHI.z(mP.subtract(Z.ONE));
       if (mP.add(1).mod(euler).isZero()) {
         return mP;
       }

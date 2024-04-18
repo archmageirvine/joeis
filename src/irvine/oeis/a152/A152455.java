@@ -2,7 +2,7 @@ package irvine.oeis.a152;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -26,7 +26,7 @@ public class A152455 extends MemorySequence {
     final Z[] m = Jaguar.factor(n).toZArray();
     if (m.length == 1) {
       // i.e. n == p^a
-      return Euler.phi(Z.valueOf(n));
+      return Functions.PHI.z(Z.valueOf(n));
     }
     final int p = m[0].intValueExact();
     int s = 1;

@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -28,16 +28,16 @@ public class A000010 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Z.valueOf(Euler.phiAsLong(n));
+    return Functions.PHI.z(n);
   }
 
   @Override
   public Z a(final Z n) {
-    return Euler.phi(n);
+    return Functions.PHI.z(n);
   }
 
   @Override
   public Z next() {
-    return Z.valueOf(Euler.phiAsLong(++mN));
+    return Functions.PHI.z(++mN);
   }
 }

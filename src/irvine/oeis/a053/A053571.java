@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import java.util.TreeSet;
 
 import irvine.math.LongUtils;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -26,7 +26,7 @@ public class A053571 extends Sequence1 {
     }
     Z sum = Z.ZERO;
     for (final long v : a) {
-      sum = sum.add(Euler.phiAsLong(v));
+      sum = sum.add(Functions.PHI.l(v));
     }
     return sum;
   }

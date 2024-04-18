@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -57,7 +57,7 @@ public class A007474 extends MemoryFunction2Sequence<Long, Z> {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(2 * mN).divisors()) {
       final long d = dd.longValue();
-      sum = sum.add(get(2 * mN / d, d).subtract(get(2 * mN / d  - 2, d)).multiply(Euler.phiAsLong(d)));
+      sum = sum.add(get(2 * mN / d, d).subtract(get(2 * mN / d  - 2, d)).multiply(Functions.PHI.l(d)));
     }
     return sum.divide(2 * mN);
   }

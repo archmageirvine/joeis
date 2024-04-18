@@ -2,10 +2,10 @@ package irvine.oeis.a032;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +23,7 @@ public class A032250 extends Sequence1 {
     Polynomial<Z> sum = RING.zero();
     for (final Z dd : Jaguar.factor(k).divisors()) {
       final int d = dd.intValue();
-      final Z phi = Euler.phi(dd);
+      final Z phi = Functions.PHI.z(dd);
       final Polynomial<Z> t = RING.series(RING.one(), RING.pow(RING.oneMinusXToTheN(d * shift), k / d, s), s);
       sum = RING.add(sum, RING.multiply(t, phi));
     }

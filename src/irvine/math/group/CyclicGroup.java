@@ -4,10 +4,10 @@ import java.util.Iterator;
 import java.util.Random;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.util.AbstractIterator;
@@ -109,7 +109,7 @@ public class CyclicGroup extends AbstractGroup<Z> {
       final int d = dd.intValue();
       final MultivariateMonomial m = new MultivariateMonomial();
       m.add(d, mSize / d);
-      m.setCoefficient(new Q(Euler.phi(dd), size()));
+      m.setCoefficient(new Q(Functions.PHI.z(dd), size()));
       ci.add(m);
     }
     return ci;

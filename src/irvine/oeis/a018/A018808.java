@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 import irvine.math.MemoryFunction1;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -21,14 +21,14 @@ public class A018808 extends MemorySequence {
   private MemoryFunction1<Z> mR1 = new MemoryFunction1<>() {
     @Override
     protected Z compute(final int n) {
-      return n <= 1 ? Z.ZERO : get(n - 1).add(4 * (Euler.phiAsLong(n - 1) - ((n & 1) == 0 ? 0 : Euler.phiAsLong((n - 1) / 2))));
+      return n <= 1 ? Z.ZERO : get(n - 1).add(4 * (Functions.PHI.l((long) (n - 1)) - ((n & 1) == 0 ? 0 : Functions.PHI.l((long) ((n - 1) / 2)))));
     }
   };
 
   private long r2(final int n) {
     return (n & 1) == 0
-      ? Euler.phiAsLong(n - 1) * (n - 1)
-      : (n & 3) == 1 ? Euler.phiAsLong(n - 1) * (n - 1) / 2 : 0;
+      ? Functions.PHI.l((long) (n - 1)) * (n - 1)
+      : (n & 3) == 1 ? Functions.PHI.l((long) (n - 1)) * (n - 1) / 2 : 0;
   }
 
   @Override

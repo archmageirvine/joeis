@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a018.A018252;
 
@@ -12,6 +12,8 @@ public class A066071 extends FilterSequence {
 
   /** Construct the sequence. */
   public A066071() {
-    super(1, new A018252(), k -> Euler.phi(k).add(1).isProbablePrime());
+    super(1, new A018252(), k -> {
+      return Functions.PHI.z(k).add(1).isProbablePrime();
+    });
   }
 }

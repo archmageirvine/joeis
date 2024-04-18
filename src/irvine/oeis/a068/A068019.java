@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
@@ -14,7 +14,7 @@ public class A068019 extends A002808 {
   public Z next() {
     while (true) {
       final Z c = super.next();
-      final Z t = Euler.phi(c);
+      final Z t = Functions.PHI.z(c);
       if (t.subtract(1).isProbablePrime() && t.add(1).isProbablePrime()) {
         return c;
       }

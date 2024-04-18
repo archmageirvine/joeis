@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,7 +15,8 @@ public class A066231 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Euler.phi(++mN).equals(Euler.phi(mN - 1).subtract(Euler.phi(mN - 2)))) {
+      final long n = ++mN;
+      if (Functions.PHI.z(n).equals(Functions.PHI.z(mN - 1).subtract(Functions.PHI.z(mN - 2)))) {
         return Z.valueOf(mN);
       }
     }

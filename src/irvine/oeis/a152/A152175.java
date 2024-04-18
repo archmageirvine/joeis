@@ -1,7 +1,7 @@
 package irvine.oeis.a152;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.memory.FunctionInt3ZSequence;
@@ -32,7 +32,7 @@ public class A152175 extends FunctionInt3ZSequence {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
-      sum = sum.add(Euler.phi(dd).multiply(get(d, n / d, k)));
+      sum = sum.add(Functions.PHI.z(dd).multiply(get(d, n / d, k)));
     }
     return sum.divide(n);
   }

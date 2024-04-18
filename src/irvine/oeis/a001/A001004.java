@@ -2,10 +2,10 @@ package irvine.oeis.a001;
 
 import java.util.ArrayList;
 
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 
 /**
@@ -47,7 +47,7 @@ public class A001004 extends A001003 {
       Z q = Z.ZERO;
       for (int d = 1; d <= k; ++d) {
         if (k % d == 0) {
-          q = q.add(RING.pow(f.substitutePower(d, mN), k / d, mN).coeff(mN).multiply(Euler.phiAsLong(d)));
+          q = q.add(RING.pow(f.substitutePower(d, mN), k / d, mN).coeff(mN).multiply(Functions.PHI.l((long) d)));
         }
       }
       r = r.add(q.divide(k));

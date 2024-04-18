@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.Sequence1;
@@ -32,7 +32,7 @@ public class A018804 extends Sequence1 implements DirectSequence {
   public Z next() {
     Z sum = Z.ZERO;
     for (final Z d : Jaguar.factor(++mN).divisors()) {
-      sum = sum.add(Euler.phi(d).multiply(mN / d.longValue()));
+      sum = sum.add(Functions.PHI.z(d).multiply(mN / d.longValue()));
     }
     return sum;
   }

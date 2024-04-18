@@ -1,7 +1,6 @@
 package irvine.math.function;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 
 /**
@@ -24,7 +23,7 @@ class LeastPrimitiveRoot extends AbstractFunction1 {
     if (Z.TWO.equals(n)) {
       return Z.ONE;
     }
-    final Z phi = Euler.phi(n);
+    final Z phi = Functions.PHI.z(n);
     final Z[] primes = Jaguar.factor(phi).toZArray();
     Z r = Z.ONE;
     while (true) {

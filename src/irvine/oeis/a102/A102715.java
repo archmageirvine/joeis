@@ -1,6 +1,6 @@
 package irvine.oeis.a102;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.oeis.a007.A007318;
 import irvine.oeis.transform.SimpleTransformSequence;
 
@@ -12,6 +12,8 @@ public class A102715 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A102715() {
-    super(0, new A007318(), k -> Euler.phi(k));
+    super(0, new A007318(), k -> {
+      return Functions.PHI.z(k);
+    });
   }
 }

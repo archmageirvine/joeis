@@ -1,7 +1,7 @@
 package irvine.oeis.a063;
 
 import irvine.math.Mobius;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,7 @@ public class A063078 extends Sequence1 {
   public Z next() {
     while (true) {
       if (Mobius.mobius(++mN) == 1) {
-        final Z phi = Euler.phi(mN);
+        final Z phi = Functions.PHI.z(mN);
         if (phi.compareTo(mBest) > 0) {
           mBest = phi;
           return Z.valueOf(mN);

@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -63,7 +63,7 @@ public class A002729 extends AbstractSequence {
         }
       }
     }
-    return s.divide(p).divide(Euler.phiAsLong(p));
+    return s.divide(p).divide(Functions.PHI.l(p));
   }
 
   @Override

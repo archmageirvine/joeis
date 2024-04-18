@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -36,7 +36,7 @@ public class A000013 extends AbstractSequence {
     // divisors below does not include 1
     for (final Z d : Jaguar.factor(n).divisors()) {
       final int ld = d.intValue();
-      sum = sum.add(Z.valueOf(Euler.phiAsLong(2L * ld)).shiftLeft(mN / ld));
+      sum = sum.add(Z.valueOf(Functions.PHI.l(2L * ld)).shiftLeft(mN / ld));
     }
     return sum.divide(2L * mN);
   }

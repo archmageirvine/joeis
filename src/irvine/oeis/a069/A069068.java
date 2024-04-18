@@ -1,6 +1,6 @@
 package irvine.oeis.a069;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
@@ -15,7 +15,7 @@ public class A069068 extends A002808 {
     while (true) {
       final Z c = super.next();
       final Z c1 = c.subtract(1);
-      if (Euler.phi(c).multiply(c1).isSquare()) {
+      if (Functions.PHI.z(c).multiply(c1).isSquare()) {
         return c1;
       }
     }

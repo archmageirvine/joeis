@@ -12,6 +12,10 @@ public final class Functions {
   public static final Function1 PRIMORIAL = new Primorial();
   /** Product of the specified number of primes. */
   public static final Function1 PRIMORIAL_COUNT = new PrimorialCount();
+  /** Euler totient function. */
+  public static final Function1 PHI = new Phi();
+  /** Euler co-totient function. */
+  public static final Function1 COTOTIENT = new Cototient();
   /** Sum of divisors function. */
   public static final Function1 SIGMA = new Sigma();
   /** Number of divisors function. */

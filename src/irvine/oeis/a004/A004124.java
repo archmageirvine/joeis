@@ -2,7 +2,7 @@ package irvine.oeis.a004;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -26,9 +26,9 @@ public class A004124 extends Sequence1 {
       } else {
         t = p.pow(p.subtract(1).multiply(e).subtract(1).multiply(p.pow(e - 1)).intValueExact());
       }
-      prod = prod.multiply(t.pow(Euler.phiAsLong(mN / p.pow(e).longValueExact())));
+      prod = prod.multiply(t.pow(Functions.PHI.l(mN / p.pow(e).longValueExact())));
     }
-    final long phi = Euler.phiAsLong(mN);
+    final long phi = Functions.PHI.l((long) mN);
     if (Z.valueOf(phi).multiply(phi - 1).divide2().isOdd()) {
       prod = prod.negate();
     }

@@ -1,10 +1,10 @@
 package irvine.oeis.a003;
 
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -22,7 +22,7 @@ public class A003510 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mS = RING.add(mS, RING.monomial(new Q(Z.ONE, Z.valueOf(mN).multiply(Euler.phiAsLong(mN))), mN));
+      mS = RING.add(mS, RING.monomial(new Q(Z.ONE, Z.valueOf(mN).multiply(Functions.PHI.l((long) mN))), mN));
       mF = mF.multiply(mN);
     }
     return RING.exp(mS, mN).coeff(mN).multiply(mF).toZ();

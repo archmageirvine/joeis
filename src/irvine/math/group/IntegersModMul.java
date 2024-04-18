@@ -3,7 +3,7 @@ package irvine.math.group;
 import java.util.Iterator;
 
 import irvine.math.api.Group;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.AbstractIterator;
 
@@ -51,7 +51,7 @@ public class IntegersModMul extends AbstractGroup<Z> {
 
   @Override
   public Z size() {
-    return Euler.phi(mMod);
+    return Functions.PHI.z(mMod);
   }
 
   @Override

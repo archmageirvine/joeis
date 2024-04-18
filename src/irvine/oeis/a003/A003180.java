@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.math.IntegerUtils;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000595;
 
@@ -42,7 +42,7 @@ public class A003180 extends A000595 {
         if (shift > 32) {
           throw new UnsupportedOperationException();
         }
-        sum += (int) Euler.phiAsLong(ord / i) * (1 << shift);
+        sum += (int) Functions.PHI.l((long) (ord / i)) * (1 << shift);
       }
     }
     return sum / ord;

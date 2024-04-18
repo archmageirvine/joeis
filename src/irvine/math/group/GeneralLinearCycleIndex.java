@@ -7,13 +7,13 @@ import java.util.TreeSet;
 import irvine.factor.factor.Jaguar;
 import irvine.math.api.Ring;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.partition.NonnegativeIntegerComposition;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.HararyMultiply;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 
 /**
@@ -49,7 +49,7 @@ public final class GeneralLinearCycleIndex {
           aa.add(z);
           seen.add(z);
         } else {
-          final Z f = Euler.phi(z);
+          final Z f = Functions.PHI.z(z);
           final Z[] qr = f.divideAndRemainder(Z.valueOf(dd));
           final Z g = qr[0];
           final Z h = qr[1];

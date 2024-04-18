@@ -2,7 +2,6 @@ package irvine.oeis.a067;
 
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +17,8 @@ public class A067573 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Q a = new Q(Functions.SIGMA.z(Euler.phi(++mN)), Functions.SIGMA.z(mN));
+      final long n = ++mN;
+      final Q a = new Q(Functions.SIGMA.z(Functions.PHI.z(n)), Functions.SIGMA.z(mN));
       if (a.compareTo(mRecord) > 0) {
         mRecord = a;
         return Z.valueOf(mN);

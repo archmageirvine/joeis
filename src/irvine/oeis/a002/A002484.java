@@ -2,9 +2,9 @@ package irvine.oeis.a002;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
@@ -33,7 +33,7 @@ public class A002484 extends Sequence3 {
   private Q a(final int n, final int d) {
     final Z nd = Z.valueOf(n / d);
     final Z p = nd.pow(d);
-    return u(d, new Q(n - d, n)).multiply(Euler.phi(nd).multiply(p));
+    return u(d, new Q(n - d, n)).multiply(Functions.PHI.z(nd).multiply(p));
   }
 
   @Override

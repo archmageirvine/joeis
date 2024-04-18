@@ -1,6 +1,6 @@
 package irvine.oeis.a063;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 import irvine.util.array.LongDynamicLongArray;
@@ -19,7 +19,7 @@ public class A063740 extends Sequence2 {
     long s = mN * mN;
     ++mN;
     while (++s <= mN * mN) {
-      final long cophi = s - Euler.phiAsLong(s);
+      final long cophi = s - Functions.PHI.l(s);
       if (cophi > 1) {
         mA.increment(cophi);
       }

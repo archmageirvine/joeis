@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -24,7 +24,7 @@ public class A032275 extends Sequence1 {
     for (long d = 1; d <= mN; ++d) {
       kd = kd.multiply(colors());
       if (mN % d == 0) {
-        sum = sum.add(kd.multiply(Euler.phiAsLong(mN / d)));
+        sum = sum.add(kd.multiply(Functions.PHI.l(mN / d)));
       }
     }
     sum = sum.divide(mN);

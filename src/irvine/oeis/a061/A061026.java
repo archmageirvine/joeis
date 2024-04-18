@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
@@ -20,7 +20,8 @@ public class A061026 extends Sequence1 {
   public Z next() {
     ++mN;
     while (mFirsts.get(mN) == 0) {
-      for (final Z dd : Jaguar.factor(Euler.phi(Z.valueOf(++mM))).divisors()) {
+      final Z n = Z.valueOf(++mM);
+      for (final Z dd : Jaguar.factor(Functions.PHI.z(n)).divisors()) {
         final long d = dd.longValue();
         if (mFirsts.get(d) == 0) {
           mFirsts.set(d, mM);

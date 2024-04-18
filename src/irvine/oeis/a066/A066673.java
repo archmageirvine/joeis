@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.array.DynamicArray;
 
@@ -18,7 +18,7 @@ public class A066673 extends A066669 {
     ++mN;
     while (mFirsts.get(mN) == null) {
       final Z t = super.next();
-      final int b = (int) Euler.phi(t).makeOdd().auxiliary();
+      final int b = (int) Functions.PHI.z(t).makeOdd().auxiliary();
       if (mFirsts.get(b) == null) {
         mFirsts.set(b, t);
       }

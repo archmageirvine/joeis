@@ -2,8 +2,8 @@ package irvine.oeis.a047;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunctionInt2;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -38,7 +38,7 @@ public class A047730 extends AbstractSequence {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(k).divisors()) {
       final long d = dd.longValue();
-      final Z t = Euler.phi(k / d).multiply(Binomial.binomial((j + 1L) * d, d));
+      final Z t = Functions.PHI.z(k / d).multiply(Binomial.binomial((j + 1L) * d, d));
       sum = sum.signedAdd((((k - d) * j) & 1) == 0, t);
     }
     return sum.divide((j + 1) * k);

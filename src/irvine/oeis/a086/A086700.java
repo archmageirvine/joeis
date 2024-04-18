@@ -1,7 +1,7 @@
 package irvine.oeis.a086;
 // manually knest/eulphi at 2023-03-01 16:41
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000217;
 
@@ -19,6 +19,6 @@ public class A086700 extends A000217 {
 
   @Override
   public Z next() {
-    return Euler.phi(super.next());
+    return Functions.PHI.z(super.next());
   }
 }

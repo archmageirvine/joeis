@@ -1,9 +1,9 @@
 package irvine.oeis.a018;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.a081.A081054;
 
@@ -133,7 +133,7 @@ public class A018192 extends A081054 {
     for (final Z dd : Jaguar.factor(n2).divisors()) {
       final int d = dd.intValue();
       final int c = n2 / d;
-      sum = sum.add(gammaTilde(d, c).multiply(Euler.phiAsLong(c)));
+      sum = sum.add(gammaTilde(d, c).multiply(Functions.PHI.l((long) c)));
     }
     return sum.divide(n2);
   }

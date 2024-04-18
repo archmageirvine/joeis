@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -10,22 +10,13 @@ import irvine.oeis.Sequence1;
  */
 public class A003275 extends Sequence1 {
 
-  private int mN = 0;
-  private int mLimit = 0;
-  private Euler mEuler = null;
+  private long mN = 0;
 
   @Override
   public Z next() {
     while (true) {
-      if (++mN >= mLimit) {
-        mLimit = 2 * mLimit + 3;
-        mEuler = new Euler(mLimit);
-      }
-      if (mN < 0) {
-        throw new UnsupportedOperationException();
-      }
-      final int phi = mEuler.phi(mN);
-      if (phi == mEuler.phi(mN + 1)) {
+      final long phi = Functions.PHI.l(++mN);
+      if (phi == Functions.PHI.l(mN + 1)) {
         return Z.valueOf(phi);
       }
     }

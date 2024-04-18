@@ -2,7 +2,7 @@ package irvine.oeis.a032;
 
 import java.util.TreeSet;
 
-import irvine.math.z.Euler;
+import irvine.math.z.InverseEuler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A032447 extends Sequence1 {
   public Z next() {
     while (mInverses.isEmpty()) {
       mN = mN.add(1);
-      mInverses = Euler.inversePhi(mN);
+      mInverses = InverseEuler.inversePhi(mN);
     }
     return mInverses.pollFirst();
   }

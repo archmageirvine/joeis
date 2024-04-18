@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.LongUtils;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -59,6 +59,6 @@ public class A002086 extends Sequence1 {
         sum = sum.add(Z.ONE.shiftLeft(c(m, k)));
       }
     }
-    return sum.divide(Euler.phiAsLong(m));
+    return sum.divide(Functions.PHI.l(m));
   }
 }

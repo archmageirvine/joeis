@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
 
@@ -20,8 +20,8 @@ public class A051488 extends MemorySequence {
   protected Z computeNext() {
     while (true) {
       mN = mN.add(1);
-      final Z phi = Euler.phi(mN);
-      if (phi.compareTo(Euler.phi(mN.subtract(phi))) < 0) {
+      final Z phi = Functions.PHI.z(mN);
+      if (phi.compareTo(Functions.PHI.z(mN.subtract(phi))) < 0) {
         return mN;
       }
     }

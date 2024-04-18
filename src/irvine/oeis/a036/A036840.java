@@ -4,7 +4,6 @@ import java.util.TreeSet;
 
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -25,7 +24,7 @@ public class A036840 extends Sequence1 {
     Z m = mN;
     while (seen.add(m)) {
       if (phi) {
-        m = Euler.phi(m);
+        m = Functions.PHI.z(m);
         phi = false;
       } else {
         m = Functions.SIGMA.z(m);
@@ -38,7 +37,7 @@ public class A036840 extends Sequence1 {
     long cnt = 0;
     do {
       if (phi) {
-        m = Euler.phi(m);
+        m = Functions.PHI.z(m);
         phi = false;
       } else {
         m = Functions.SIGMA.z(m);

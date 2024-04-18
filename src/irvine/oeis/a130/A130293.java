@@ -1,7 +1,7 @@
 package irvine.oeis.a130;
 // manually sumdiv2/sumdiv at 2023-04-09 10:51
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -22,6 +22,8 @@ public class A130293 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> Euler.phi(Z.valueOf(d)).multiply(d).multiply(Z.valueOf(mN).pow(mN / d))).divide((long) mN * mN);
+    return Integers.SINGLETON.sumdiv(mN, d -> {
+      return Functions.PHI.z(Z.valueOf(d)).multiply(d).multiply(Z.valueOf(mN).pow(mN / d));
+    }).divide((long) mN * mN);
   }
 }

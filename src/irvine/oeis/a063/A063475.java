@@ -1,7 +1,7 @@
 package irvine.oeis.a063;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
 
@@ -15,6 +15,7 @@ public class A063475 extends Sequence3 {
 
   @Override
   public Z next() {
-    return Jaguar.factor(Euler.phi(++mN).divide2()).sigma2();
+    final long n = ++mN;
+    return Jaguar.factor(Functions.PHI.z(n).divide2()).sigma2();
   }
 }

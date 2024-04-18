@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,6 +15,6 @@ public class A066449 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Binomial.binomial(++mN, Euler.phiAsLong(mN));
+    return Binomial.binomial(++mN, Functions.PHI.l(mN));
   }
 }

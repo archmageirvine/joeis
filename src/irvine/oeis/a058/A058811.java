@@ -2,7 +2,7 @@ package irvine.oeis.a058;
 
 import java.util.HashSet;
 
-import irvine.math.z.Euler;
+import irvine.math.z.InverseEuler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -21,7 +21,7 @@ public class A058811 extends Sequence0 {
     } else {
       final HashSet<Z> t = new HashSet<>();
       for (final Z u : mA) {
-        t.addAll(Euler.inversePhi(u));
+        t.addAll(InverseEuler.inversePhi(u));
       }
       t.remove(Z.ONE);
       mA = t;

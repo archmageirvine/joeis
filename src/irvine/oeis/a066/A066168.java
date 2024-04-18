@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000203;
 
@@ -16,7 +16,7 @@ public class A066168 extends A000203 {
     long k = 1;
     while (true) {
       k += 2;
-      if (Euler.phi(k).compareTo(sigma) > 0) {
+      if (Functions.PHI.z(k).compareTo(sigma) > 0) {
         return Z.valueOf(k);
       }
     }

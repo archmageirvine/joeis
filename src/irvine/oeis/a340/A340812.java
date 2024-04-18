@@ -1,9 +1,9 @@
 package irvine.oeis.a340;
 
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -29,7 +29,9 @@ public class A340812 extends MemoryFunction2Sequence<Integer, Z> {
   protected Polynomial<Z> c(final Polynomial<Z> p, final int n, final int k) {
     return RING.add(RING.subtract(p, RING.pow(p, k, n).shift(1)),
       RING.divide(RING.sumdiv(k,
-          d -> RING.multiply(RING.pow(p.substitutePower(d, n), k / d, n), Euler.phi(Z.valueOf(d)))),
+          d -> {
+            return RING.multiply(RING.pow(p.substitutePower(d, n), k / d, n), Functions.PHI.z(Z.valueOf(d)));
+          }),
         Z.valueOf(k)).shift(1));
   }
 

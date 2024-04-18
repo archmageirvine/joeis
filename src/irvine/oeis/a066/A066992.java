@@ -1,8 +1,8 @@
 package irvine.oeis.a066;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,8 @@ public class A066992 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      mSum = mSum.add(new Q(Z.ONE, Euler.phi(++mN)));
+      final long n = ++mN;
+      mSum = mSum.add(new Q(Z.ONE, Functions.PHI.z(n)));
       final Q t = mSum.multiply(Binomial.binomial(2 * mN, mN).square());
       if (t.isInteger()) {
         return t.toZ();

@@ -3,7 +3,7 @@ package irvine.oeis.a325;
 
 import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
@@ -17,7 +17,9 @@ public class A325956 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A325956() {
-    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(Mobius.mobius(d)).multiply(Euler.phiAsLong(d)).multiply(Z.valueOf(d).pow(n / d))
-      .multiply(MemoryFactorial.SINGLETON.factorial(n / d))).divide(n));
+    super(1, n -> Integers.SINGLETON.sumdiv(n, d -> {
+      return Z.valueOf(Mobius.mobius(d)).multiply(Functions.PHI.l((long) d)).multiply(Z.valueOf(d).pow(n / d))
+        .multiply(MemoryFactorial.SINGLETON.factorial(n / d));
+    }).divide(n));
   }
 }

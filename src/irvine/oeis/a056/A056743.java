@@ -1,7 +1,7 @@
 package irvine.oeis.a056;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -25,6 +25,6 @@ public class A056743 extends Sequence0 {
       mP = mPrime.nextPrime(mP);
       mN = mN.shiftLeft(mP - q);
     }
-    return Euler.phi(mN.subtract(1)).divide(mP);
+    return Functions.PHI.z(mN.subtract(1)).divide(mP);
   }
 }

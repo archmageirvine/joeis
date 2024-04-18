@@ -3,7 +3,6 @@ package irvine.oeis.a066;
 import java.util.HashSet;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +22,7 @@ public class A066437 extends Sequence1 {
     final HashSet<Z> sigmaSeen = new HashSet<>();
     Z t = mN;
     while (true) {
-      t = Euler.phi(t);
+      t = Functions.PHI.z(t);
       if (!phiSeen.add(t)) {
         return max;
       }

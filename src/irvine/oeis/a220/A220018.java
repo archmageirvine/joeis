@@ -2,8 +2,8 @@ package irvine.oeis.a220;
 // manually holsig2/holos at 2023-08-08 18:53
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegersModMul;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -37,7 +37,7 @@ public class A220018 extends AbstractSequence {
     mTen = mTen.multiply(Z.TEN);
     Z sum = Z.ZERO;
     for (final Z d : Jaguar.factor(mTen).divisors()) {
-      sum = sum.add(Euler.phi(d).divide(new IntegersModMul(d).order(mOrder.mod(d))));
+      sum = sum.add(Functions.PHI.z(d).divide(new IntegersModMul(d).order(mOrder.mod(d))));
     }
     return sum;
   }

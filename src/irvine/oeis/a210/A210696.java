@@ -2,7 +2,7 @@ package irvine.oeis.a210;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.oeis.a146.A146305;
@@ -73,7 +73,7 @@ public class A210696 extends Sequence0 {
     Z sum = Z.ZERO;
     for (final Z d : Jaguar.factor(m + 3).divisors()) {
       final int s = d.intValueExact();
-      sum = sum.add(brownE(s, n, m).multiply(Euler.phiAsLong(s)));
+      sum = sum.add(brownE(s, n, m).multiply(Functions.PHI.l((long) s)));
     }
     return sum.divide(m + 3);
   }

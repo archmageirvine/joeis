@@ -1,8 +1,8 @@
 package irvine.oeis.a046;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegersModMul;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -19,7 +19,7 @@ public class A046146 extends Sequence0 {
     if (++mN <= 1) {
       return Z.ZERO;
     }
-    final Z phi = Z.valueOf(Euler.phiAsLong(mN));
+    final Z phi = Z.valueOf(Functions.PHI.l(mN));
     final IntegersModMul rn = new IntegersModMul(mN);
     for (long q = mN; q >= 1; --q) {
       if (LongUtils.gcd(q, mN) == 1 && rn.order(Z.valueOf(q)).equals(phi)) {

@@ -1,9 +1,9 @@
 package irvine.oeis.a003;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegersModMul;
 import irvine.math.q.Q;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -27,7 +27,7 @@ public class A003473 extends Sequence1 {
       //final int r = Z.ONE.equals(d) ? 1 : new IntegersModMul(d).order(p).intValueExact();
       final int r = Z.ONE.equals(d) ? 1 : new IntegersModMul(d).order(p).intValueExact();
       final Z pr = p.pow(r);
-      pp = pp.multiply(new Q(pr.subtract(1), pr).pow(Euler.phi(d).divide(r).intValueExact()));
+      pp = pp.multiply(new Q(pr.subtract(1), pr).pow(Functions.PHI.z(d).divide(r).intValueExact()));
     }
     return pp;
   }

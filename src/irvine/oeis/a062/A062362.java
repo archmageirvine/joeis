@@ -1,8 +1,8 @@
 package irvine.oeis.a062;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,6 +17,8 @@ public class A062362 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Rationals.SINGLETON.sumdiv(mN, d -> new Q(Euler.phiAsLong(d), d)).toZ();
+    return Rationals.SINGLETON.sumdiv(mN, d -> {
+      return new Q(Functions.PHI.l((long) d), d);
+    }).toZ();
   }
 }

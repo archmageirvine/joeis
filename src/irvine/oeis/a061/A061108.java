@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -24,7 +24,7 @@ public class A061108 extends A000040 {
       if (mPrime.isPrime(t)) {
         return max;
       }
-      max = max.max(Euler.phi(t));
+      max = max.max(Functions.PHI.z(t));
     }
   }
 }

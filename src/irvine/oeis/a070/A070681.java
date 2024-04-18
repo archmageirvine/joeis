@@ -1,6 +1,6 @@
 package irvine.oeis.a070;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -32,7 +32,7 @@ public class A070681 extends Sequence0 {
     ++mN;
     int m = 1;
     final Z n21 = Z.valueOf(2L * mN + 1);
-    final int lim = Euler.phi(n21).intValue();
+    final int lim = Functions.PHI.z(n21).intValue();
     while (m <= lim) {
       if (mBase.pow(m).mod(n21).equals(Z.ONE)) {
         return Z.valueOf(m);

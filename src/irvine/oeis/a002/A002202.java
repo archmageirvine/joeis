@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Euler;
+import irvine.math.z.InverseEuler;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -33,7 +33,7 @@ public class A002202 extends AbstractSequence {
     }
     while (true) {
       mN = mN.add(2);
-      if (!Euler.inversePhi(mN).isEmpty()) {
+      if (!InverseEuler.inversePhi(mN).isEmpty()) {
         return mN;
       }
     }

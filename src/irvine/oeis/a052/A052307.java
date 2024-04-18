@@ -2,8 +2,8 @@ package irvine.oeis.a052;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -28,7 +28,7 @@ public class A052307 extends Sequence0 {
     Z sum = Z.ZERO;
     for (final Z d : Jaguar.factor(LongUtils.gcd(mN, mM)).divisors()) {
       final long dd = d.longValue();
-      sum = sum.add(Euler.phi(d).multiply(Binomial.binomial(mN / dd - 1, mM / dd - 1)));
+      sum = sum.add(Functions.PHI.z(d).multiply(Binomial.binomial(mN / dd - 1, mM / dd - 1)));
     }
     return sum.divide(mM).add(Binomial.binomial((mN - (mM & 1)) / 2, mM / 2)).divide2();
   }

@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000010;
 import irvine.util.Pair;
@@ -34,7 +34,7 @@ public class A007614 extends A000010 {
       mPrimorial = mPrimorial.multiply(mP);
       while (mN.compareTo(mPrimorial) < 0) {
         mN = mN.add(1);
-        mNextCompute = Euler.phi(mN);
+        mNextCompute = Functions.PHI.z(mN);
         mA.add(new Pair<>(mNextCompute, mN));
       }
     }

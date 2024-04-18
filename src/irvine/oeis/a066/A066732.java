@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.array.LongDynamicLongArray;
@@ -26,7 +26,7 @@ public class A066732 extends Sequence1 {
         return Z.valueOf(k);
       }
       if (v == 0) {
-        final Z phi = Euler.phi(k);
+        final Z phi = Functions.PHI.z(k);
         final Z zk = Z.valueOf(k);
         long p = 1;
         while (true) {

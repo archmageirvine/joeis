@@ -1,9 +1,9 @@
 package irvine.oeis.a055;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -29,7 +29,7 @@ public class A055376 extends Sequence0 {
       mRow = RING.zero();
       for (final Z dd : Jaguar.factor(mN).divisors()) {
         final int d = dd.intValue();
-        mRow = RING.add(mRow, RING.multiply(RING.pow(RING.onePlusXToTheN(d), mN / d, mN), Euler.phi(dd).multiply(Z.ONE.shiftLeft(mN / d).subtract(1))));
+        mRow = RING.add(mRow, RING.multiply(RING.pow(RING.onePlusXToTheN(d), mN / d, mN), Functions.PHI.z(dd).multiply(Z.ONE.shiftLeft(mN / d).subtract(1))));
       }
     }
     return mRow.coeff(mM).divide(mN);

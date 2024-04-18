@@ -1,7 +1,7 @@
 package irvine.oeis.a064;
 
 import irvine.math.LongUtils;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -18,7 +18,7 @@ public class A064368 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mSum = mSum.add(Integers.SINGLETON.sumdiv(mN, d -> LongUtils.isSquare(d) ? Euler.phi(LongUtils.sqrt(d)) : Z.ZERO).multiply2());
+      mSum = mSum.add(Integers.SINGLETON.sumdiv(mN, d -> LongUtils.isSquare(d) ? Functions.PHI.z(LongUtils.sqrt(d)) : Z.ZERO).multiply2());
     }
     return mSum.add(mN + 1);
   }

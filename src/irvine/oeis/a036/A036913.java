@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.math.z.Euler;
+import irvine.math.z.InverseEuler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A036913 extends Sequence1 {
   public Z next() {
     while (true) {
       Z max = Z.ZERO;
-      for (final Z t : Euler.inversePhi(Z.valueOf(++mN))) {
+      for (final Z t : InverseEuler.inversePhi(Z.valueOf(++mN))) {
         max = max.max(t);
       }
       if (max.compareTo(mMax) > 0) {

@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,8 @@ public class A067578 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z phi = Euler.phi(++mN);
+    final long n = ++mN;
+    final Z phi = Functions.PHI.z(n);
     mSum = mSum.add(new Q(Z.ONE, phi));
     mProd = mProd.multiply(phi);
     return mSum.multiply(mProd).toZ();

@@ -1,7 +1,7 @@
 package irvine.oeis.a047;
 
 import irvine.math.factorial.MemoryFactorial;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A047916 extends Sequence1 {
 
   protected Z t(final int n, final int m) {
     return n % m == 0
-      ? mF.factorial(m).multiply(Euler.phiAsLong(n / m)).multiply(Z.valueOf(n / m).pow(m))
+      ? mF.factorial(m).multiply(Functions.PHI.l((long) (n / m))).multiply(Z.valueOf(n / m).pow(m))
       : Z.ZERO;
   }
 

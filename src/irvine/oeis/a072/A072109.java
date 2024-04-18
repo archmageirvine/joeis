@@ -1,8 +1,8 @@
 package irvine.oeis.a072;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,7 +22,7 @@ public class A072109 extends Sequence1 {
       Q g = Q.ONE;
       for (final Z d : Jaguar.factor(mN).divisors()) {
         if (!Z.ONE.equals(d)) {
-          final Z phi = Euler.phi(d);
+          final Z phi = Functions.PHI.z(d);
           l = l.add(d.multiply(phi));
           g = g.add(new Q(phi, d));
         }

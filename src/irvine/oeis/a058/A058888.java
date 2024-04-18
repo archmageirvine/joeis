@@ -1,6 +1,6 @@
 package irvine.oeis.a058;
 
-import irvine.math.z.Euler;
+import irvine.math.z.InverseEuler;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -12,6 +12,6 @@ public class A058888 extends A000040 {
 
   @Override
   public Z next() {
-    return Z.valueOf(Euler.inversePhi(super.next().multiply2()).size());
+    return Z.valueOf(InverseEuler.inversePhi(super.next().multiply2()).size());
   }
 }

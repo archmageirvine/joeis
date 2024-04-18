@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.util.string.StringUtils;
@@ -17,7 +17,7 @@ public class A067976 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z t = Z.valueOf(++mN).pow(Euler.phi(mN)).add(1);
+      final Z t = Z.valueOf(++mN).pow(Functions.PHI.z(mN)).add(1);
       if (t.isProbablePrime()) {
         if (mVerbose) {
           StringUtils.message("Found solution with n=" + mN);

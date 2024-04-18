@@ -2,10 +2,10 @@ package irvine.oeis.a007;
 
 import java.util.Arrays;
 
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -40,7 +40,7 @@ public class A007896 extends Sequence1 {
   }
 
   protected int power(final int k) {
-    return (int) Euler.phiAsLong(k);
+    return (int) Functions.PHI.l((long) k);
   }
 
   @Override

@@ -3,7 +3,6 @@ package irvine.oeis.a058;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.function.Functions;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,7 +21,7 @@ public class A058652 extends Sequence1 {
       if (fs.isSquareFree()) {
         final Z sigma = fs.sigma();
         final Z phi = fs.phi();
-        if (Functions.SIGMA.z(phi).equals(Euler.phi(sigma))) {
+        if (Functions.SIGMA.z(phi).equals(Functions.PHI.z(sigma))) {
           return Z.valueOf(mN);
         }
       }

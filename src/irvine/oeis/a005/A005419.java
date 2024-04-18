@@ -1,9 +1,9 @@
 package irvine.oeis.a005;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -27,7 +27,7 @@ public class A005419 extends Sequence1 {
     final long g = LongUtils.gcd(7, mN - 1);
     for (long k = 3; k <= g; ++k) {
       if (g % k == 0) {
-        sum = sum.add(new Q(Binomial.binomial((6 * mN + 1) / k, (mN - 1) / k).multiply(Euler.phiAsLong(k)), Z.valueOf(6 * mN + 1)));
+        sum = sum.add(new Q(Binomial.binomial((6 * mN + 1) / k, (mN - 1) / k).multiply(Functions.PHI.l(k)), Z.valueOf(6 * mN + 1)));
       }
     }
     return sum.toZ().divide2();

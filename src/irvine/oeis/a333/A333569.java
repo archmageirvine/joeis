@@ -3,7 +3,7 @@ package irvine.oeis.a333;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -27,7 +27,7 @@ public class A333569 extends AbstractSequence {
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
       final FactorSequence fsd = Jaguar.factor(d);
-      sum = sum.add(((((fsd.bigOmega() - fsd.omega()) & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Euler.phi(Z.valueOf(mN / d))));
+      sum = sum.add(((((fsd.bigOmega() - fsd.omega()) & 1) == 0) ? Z.ONE : Z.NEG_ONE).multiply(Functions.PHI.z(Z.valueOf(mN / d))));
     }
     return sum;
   }

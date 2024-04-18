@@ -3,8 +3,8 @@ package irvine.oeis.a046;
 import java.util.TreeSet;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegersModMul;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -20,7 +20,8 @@ public class A046147 extends Sequence2 {
   @Override
   public Z next() {
     while (mA.isEmpty()) {
-      final Z phi = Z.valueOf(Euler.phiAsLong(++mN));
+      final long n = ++mN;
+      final Z phi = Z.valueOf(Functions.PHI.l(n));
       final IntegersModMul rn = new IntegersModMul(mN);
       for (long q = 1; q <= mN; ++q) {
         if (LongUtils.gcd(q, mN) == 1 && rn.order(Z.valueOf(q)).equals(phi)) {

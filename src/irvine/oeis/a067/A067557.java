@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -21,7 +21,7 @@ public class A067557 extends A000040 {
     while (true) {
       final Z p = super.next();
       final Z p5 = p.subtract(5);
-      if (p5.mod(Euler.phi(p5)).isZero()) {
+      if (p5.mod(Functions.PHI.z(p5)).isZero()) {
         return p;
       }
     }

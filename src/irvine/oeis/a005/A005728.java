@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -29,7 +29,7 @@ public class A005728 extends AbstractSequence {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mA = mA.add(Euler.phiAsLong(mN));
+      mA = mA.add(Functions.PHI.l(mN));
     }
     return mA;
   }

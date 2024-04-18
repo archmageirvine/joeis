@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -19,7 +19,7 @@ public class A066340 extends Sequence2 {
     mM = mM.add(1);
     if (mM.equals(mN)) {
       mN = mN.add(1);
-      mPhi = Euler.phi(mN);
+      mPhi = Functions.PHI.z(mN);
       mM = Z.ONE;
     }
     return mM.modPow(mPhi, mN);

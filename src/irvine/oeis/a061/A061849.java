@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a065.A065091;
 
@@ -23,7 +23,7 @@ public class A061849 extends A065091 {
     for (final Z rr : Jaguar.factor(s).divisors()) {
       if (rr.isEven()) {
         final int r = rr.intValue();
-        sum = sum.add(Z.valueOf(Euler.phiAsLong(r)).shiftLeft(s / r));
+        sum = sum.add(Z.valueOf(Functions.PHI.l((long) r)).shiftLeft(s / r));
       }
     }
     return sum.divide(s).square();

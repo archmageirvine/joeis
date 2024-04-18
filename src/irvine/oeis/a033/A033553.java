@@ -2,7 +2,7 @@ package irvine.oeis.a033;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A033553 extends Sequence1 {
   private boolean isA033553(final long n) {
     final FactorSequence fs = Jaguar.factor(n);
     for (final Z pp : fs.toZArray()) {
-      if ((n - 3) % Euler.phi(pp.pow(fs.getExponent(pp))).longValueExact() != 0) {
+      if ((n - 3) % Functions.PHI.z(pp.pow(fs.getExponent(pp))).longValueExact() != 0) {
         return false;
       }
     }

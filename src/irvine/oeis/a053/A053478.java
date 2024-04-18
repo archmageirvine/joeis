@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction1Sequence;
 
@@ -19,7 +19,7 @@ public class A053478 extends MemoryFunction1Sequence<Long> {
 
   @Override
   protected Long compute(final int n) {
-    return n <= 1 ? n : n + get((int) Euler.phiAsLong(n));
+    return n <= 1 ? n : n + get((int) Functions.PHI.l((long) n));
   }
 
   @Override

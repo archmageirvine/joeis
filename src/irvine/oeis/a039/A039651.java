@@ -1,6 +1,6 @@
 package irvine.oeis.a039;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A039651 extends Sequence1 {
     long c = 0;
     Z m = Z.valueOf(++mN);
     while (!m.isProbablePrime()) {
-      m = Euler.phi(m).add(1);
+      m = Functions.PHI.z(m).add(1);
       ++c;
     }
     return Z.valueOf(c);

@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a065.A065091;
 
@@ -25,7 +25,7 @@ public class A061846 extends A065091 {
       if (rr.isEven()) {
         final int r = rr.intValue();
         final int q = s / r;
-        final Z phi = Z.valueOf(Euler.phiAsLong(r));
+        final Z phi = Z.valueOf(Functions.PHI.l((long) r));
         sum1 = sum1.add(phi.multiply(Z.ONE.shiftLeft((long) (p + 1) * q).subtract(Z.ONE.shiftLeft(2 * q))));
         sum2 = sum2.add(phi.shiftLeft(q));
       }

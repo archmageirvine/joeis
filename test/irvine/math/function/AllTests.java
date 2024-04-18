@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(BigOmegaTest.class);
     suite.addTestSuite(CeilSqrtTest.class);
+    suite.addTestSuite(CototientTest.class);
     suite.addTestSuite(DigitNonzeroProductTest.class);
     suite.addTestSuite(DigitNonzeroProductRootTest.class);
     suite.addTestSuite(DigitProductTest.class);
@@ -27,6 +28,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(LeastPrimitiveRootTest.class);
     suite.addTestSuite(LookAndSayTest.class);
     suite.addTestSuite(OmegaTest.class);
+    suite.addTestSuite(Phi.class);
     suite.addTestSuite(Primorial.class);
     suite.addTestSuite(ReverseTest.class);
     suite.addTestSuite(RotateRightTest.class);

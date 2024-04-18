@@ -1,6 +1,6 @@
 package irvine.oeis.a278;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
@@ -22,6 +22,6 @@ public class A278350 extends A000045 {
     // a(n) = fibonacci(n) - eulerphi(fibonacci(n));
     ++mN;
     final Z fib = super.next();
-    return fib.subtract(Euler.phi(fib));
+    return fib.subtract(Functions.PHI.z(fib));
   }
 }

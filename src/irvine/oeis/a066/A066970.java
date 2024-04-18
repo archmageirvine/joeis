@@ -1,9 +1,9 @@
 package irvine.oeis.a066;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,9 @@ public class A066970 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Q sum = Rationals.SINGLETON.sum(1, ++mN, k -> new Q(Euler.phiAsLong(k), LongUtils.gcd(mN, k)));
+      final Q sum = Rationals.SINGLETON.sum(1, ++mN, k -> {
+        return new Q(Functions.PHI.l((long) k), LongUtils.gcd(mN, k));
+      });
       if (sum.isInteger()) {
         return sum.toZ();
       }

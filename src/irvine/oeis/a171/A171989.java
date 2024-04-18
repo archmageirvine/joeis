@@ -1,7 +1,7 @@
 package irvine.oeis.a171;
 // manually knest/eulphi at 2023-03-13
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a006.A006862;
@@ -21,6 +21,6 @@ public class A171989 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Euler.phi(mSeq.next());
+    return Functions.PHI.z(mSeq.next());
   }
 }

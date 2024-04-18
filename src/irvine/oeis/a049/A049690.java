@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -30,7 +30,7 @@ public class A049690 extends AbstractSequence {
   public Z next() {
     mN = mN.add(2);
     if (!mN.isZero()) {
-      mSum = mSum.add(Euler.phi(mN));
+      mSum = mSum.add(Functions.PHI.z(mN));
     }
     return mSum;
   }

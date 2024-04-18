@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.math.LongUtils;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -12,8 +12,6 @@ import irvine.oeis.Sequence1;
 public class A003277 extends Sequence1 {
 
   private int mN = 0;
-  private int mLimit = 5;
-  private Euler mEuler = null;
 
   @Override
   public Z next() {
@@ -22,11 +20,7 @@ public class A003277 extends Sequence1 {
     }
     while (true) {
       mN += 2;
-      if (mN >= mLimit) {
-        mLimit = 2 * mLimit + 3;
-        mEuler = new Euler(mLimit);
-      }
-      if (LongUtils.gcd(mN, mEuler.phi(mN)) == 1) {
+      if (LongUtils.gcd(mN, Functions.PHI.l(mN)) == 1) {
         return Z.valueOf(mN);
       }
     }

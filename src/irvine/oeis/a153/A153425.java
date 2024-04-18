@@ -1,6 +1,6 @@
 package irvine.oeis.a153;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -29,11 +29,11 @@ public class A153425 extends Sequence1 {
       if (r != 0) {
         return r;
       }
-      final long c = Euler.phiAsLong(p);
+      final long c = Functions.PHI.l(p);
       mPhiCache[pp] = c;
       return c;
     } else {
-      return Euler.phiAsLong(p);
+      return Functions.PHI.l(p);
     }
   }
 

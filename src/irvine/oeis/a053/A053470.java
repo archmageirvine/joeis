@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a051.A051953;
 
@@ -13,6 +13,6 @@ public class A053470 extends A051953 {
   @Override
   public Z next() {
     final Z n = super.next();
-    return n.isZero() ? Z.ZERO : n.subtract(Euler.phi(n));
+    return n.isZero() ? Z.ZERO : n.subtract(Functions.PHI.z(n));
   }
 }

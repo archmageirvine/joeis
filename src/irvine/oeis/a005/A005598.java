@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -17,7 +17,7 @@ public class A005598 extends Sequence0 {
     ++mN;
     Z sum = Z.ONE;
     for (long k = 1; k <= mN; ++k) {
-      sum = sum.add(Z.valueOf(mN - k + 1).multiply(Euler.phiAsLong(k)));
+      sum = sum.add(Z.valueOf(mN - k + 1).multiply(Functions.PHI.l(k)));
     }
     return sum;
   }

@@ -1,7 +1,7 @@
 package irvine.oeis.a049;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a013.A013929;
 
@@ -15,7 +15,7 @@ public class A049199 extends A013929 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (!Jaguar.factor(Euler.phi(t)).isSquareFree()) {
+      if (!Jaguar.factor(Functions.PHI.z(t)).isSquareFree()) {
         return t;
       }
     }

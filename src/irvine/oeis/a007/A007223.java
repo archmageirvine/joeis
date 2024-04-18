@@ -1,10 +1,10 @@
 package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -35,7 +35,7 @@ public class A007223 extends MemoryFunction2Sequence<Integer, Polynomial<Z>> {
     Polynomial<Z> p = RING.zero();
     for (final Z dd : Jaguar.factor(b).divisors()) {
       final int d = dd.intValue();
-      p = RING.add(p, RING.multiply(RING.pow(RING.onePlusXToTheN(d), (long) v * b / d), Euler.phi(dd)));
+      p = RING.add(p, RING.multiply(RING.pow(RING.onePlusXToTheN(d), (long) v * b / d), Functions.PHI.z(dd)));
     }
     return RING.divide(p, Z.valueOf(b));
   }

@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,7 +15,7 @@ public class A005239 extends Sequence1 {
   private Z mLim = Z.TWO;
 
   private Z interatedPhi(final Z k, final int n) {
-    return n == 0 ? k : Euler.phi(interatedPhi(k, n - 1));
+    return n == 0 ? k : Functions.PHI.z(interatedPhi(k, n - 1));
   }
 
   @Override

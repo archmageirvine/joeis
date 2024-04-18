@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +23,7 @@ public class A063100 extends Sequence1 {
     long c = 0;
     while (!mPrime.isPrime(++mN)) {
       ++c;
-      cototients.add(mN - Euler.phiAsLong(mN));
+      cototients.add(mN - Functions.PHI.l(mN));
     }
     return Z.valueOf(c - cototients.size());
   }

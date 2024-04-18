@@ -1,7 +1,6 @@
 package irvine.oeis.a067;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
@@ -18,7 +17,7 @@ public class A067651 extends A000040 {
   @Override
   public Z next() {
     while (true) {
-      if (Functions.SIGMA.z(++mN).equals(Euler.phi(super.next().subtract(1)))) {
+      if (Functions.SIGMA.z(++mN).equals(Functions.PHI.z(super.next().subtract(1)))) {
         return Z.valueOf(mN);
       }
       if (mVerbose && mN % 1000000 == 0) {

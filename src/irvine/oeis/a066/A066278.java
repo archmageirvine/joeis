@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.Sequence1;
@@ -19,7 +19,8 @@ public class A066278 extends Sequence1 {
     long k = 0;
     final Z f = mF.next();
     while (true) {
-      if (Euler.cototient(++k).equals(f)) {
+      final long n = ++k;
+      if (Functions.COTOTIENT.z(n).equals(f)) {
         return Z.valueOf(k);
       }
     }

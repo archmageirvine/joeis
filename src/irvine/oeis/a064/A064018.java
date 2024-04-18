@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -21,7 +21,8 @@ public class A064018 extends Sequence0 {
     } else {
       mN *= 10;
       while (mM < mN) {
-        mSum = mSum.add(Euler.phi(++mM));
+        final long n = ++mM;
+        mSum = mSum.add(Functions.PHI.z(n));
       }
     }
     return mSum;

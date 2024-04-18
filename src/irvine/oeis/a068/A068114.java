@@ -5,7 +5,7 @@ import java.util.HashSet;
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.factorial.BinarySplitFactorial;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -25,7 +25,7 @@ public class A068114 extends Sequence1 {
     while (true) {
       mFactorSequence.add(++mN, FactorSequence.UNKNOWN);
       mFactor.factor(mFactorSequence);
-      final Z t = new BinarySplitFactorial().factorial(Euler.phi(mN).intValueExact());
+      final Z t = new BinarySplitFactorial().factorial(Functions.PHI.z(mN).intValueExact());
       final Z f = mFactorSequence.phi();
       final Z[] qr = f.divideAndRemainder(t);
       if (qr[1].isZero() && mSeen.add(qr[0])) {

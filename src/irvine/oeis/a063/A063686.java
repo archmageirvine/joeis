@@ -1,8 +1,8 @@
 package irvine.oeis.a063;
 
 import irvine.math.api.Matrix;
+import irvine.math.function.Functions;
 import irvine.math.matrix.DefaultMatrix;
-import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.a048.A048887;
@@ -59,7 +59,7 @@ public class A063686 extends A048887 {
       final int r = row;
       for (int col = 1; col <= n; ++col) {
         final int c = col;
-        final Z s = Integers.SINGLETON.sumdiv(r, d -> c < d ? m.get(d - 1, c - 1).multiply(Euler.phi((long) r / d)) : Z.ZERO).divide(r);
+        final Z s = Integers.SINGLETON.sumdiv(r, d -> c < d ? m.get(d - 1, c - 1).multiply(Functions.PHI.z((long) r / d)) : Z.ZERO).divide(r);
         mat.set(row - 1, col - 1, row == col ? s.add(1) : s);
       }
     }

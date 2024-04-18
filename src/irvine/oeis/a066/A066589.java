@@ -1,9 +1,9 @@
 package irvine.oeis.a066;
 
 import irvine.math.LongUtils;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegersModMul;
 import irvine.math.q.Q;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -21,7 +21,7 @@ public class A066589 extends Sequence1 {
     Q sum = Q.ZERO;
     for (long k = 1; k <= mN; ++k) {
       if (LongUtils.gcd(k, mN) == 1) {
-        sum = sum.add(new Q(Z.ONE, Euler.phi(ring.order(Z.valueOf(k)))));
+        sum = sum.add(new Q(Z.ONE, Functions.PHI.z(ring.order(Z.valueOf(k)))));
       }
     }
     return sum.toZ();

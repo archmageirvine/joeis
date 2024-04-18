@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeSet;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
+import irvine.math.z.InverseEuler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -22,10 +23,11 @@ public class A066362 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z phi = Euler.phi(++mN);
+    final long n1 = ++mN;
+    final Z phi = Functions.PHI.z(n1);
     final int iphi = phi.intValueExact();
     while (iphi >= mSmaller.size()) {
-      mSmaller.add(Euler.inversePhi(Z.valueOf(mSmaller.size())));
+      mSmaller.add(InverseEuler.inversePhi(Z.valueOf(mSmaller.size())));
     }
     int k = iphi;
     Z min = null;

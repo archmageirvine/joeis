@@ -2,7 +2,7 @@ package irvine.oeis.a080;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -25,10 +25,10 @@ public class A080737 extends Sequence1 {
       final int e = fs.getExponent(p);
       if (Z.TWO.equals(p)) {
         if (e > 1) {
-          sum = sum.add(Euler.phi(Z.ONE.shiftLeft(e)));
+          sum = sum.add(Functions.PHI.z(Z.ONE.shiftLeft(e)));
         }
       } else {
-        sum = sum.add(Euler.phi(p.pow(e)));
+        sum = sum.add(Functions.PHI.z(p.pow(e)));
       }
     }
     return sum;

@@ -1,7 +1,7 @@
 package irvine.oeis.a184;
 
 import irvine.math.LongUtils;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -34,7 +34,11 @@ public class A184271 extends UpperLeftTriangle {
   @Override
   public Z matrixElement(final int n, final int k) {
     final long t = (long) n * k;
-    return Integers.SINGLETON.sumdiv(n, c -> Euler.phi(Z.valueOf(c)).multiply(
-      Integers.SINGLETON.sumdiv(k, d -> Euler.phi(Z.valueOf(d)).multiply(mDim.pow(t / LongUtils.lcm(c, d)))))).divide(t);
+    return Integers.SINGLETON.sumdiv(n, c -> {
+      return Functions.PHI.z(Z.valueOf(c)).multiply(
+        Integers.SINGLETON.sumdiv(k, d -> {
+          return Functions.PHI.z(Z.valueOf(d)).multiply(mDim.pow(t / LongUtils.lcm(c, d)));
+        }));
+    }).divide(t);
   }
 }

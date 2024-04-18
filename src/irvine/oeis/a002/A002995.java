@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -21,7 +21,7 @@ public class A002995 extends Sequence0 {
     }
     Z s = Z.ZERO;
     for (final Z d : Jaguar.factor(mN - 1).divisors()) {
-      s = s.add(Binomial.binomial(d.multiply2(), d).multiply(Euler.phiAsLong((mN - 1) / d.longValue())));
+      s = s.add(Binomial.binomial(d.multiply2(), d).multiply(Functions.PHI.l((mN - 1) / d.longValue())));
     }
     s = s.divide(2 * (mN - 1));
     s = s.subtract(Binomial.catalan(mN - 1).divide2());

@@ -2,7 +2,7 @@ package irvine.oeis.a053;
 
 import irvine.math.IntegerUtils;
 import irvine.math.Mobius;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -22,7 +22,7 @@ public class A053633 extends Sequence0 {
         final int g = IntegerUtils.gcd(d, k);
         final int mu = Mobius.mobius(d / g);
         if (mu != 0) {
-          final long t1 = mu * Euler.phiAsLong(d) / Euler.phiAsLong(d / g);
+          final long t1 = mu * Functions.PHI.l((long) d) / Functions.PHI.l((long) (d / g));
           t = t.add(Z.valueOf(t1).shiftLeft(n / d));
         }
       }

@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -18,13 +18,13 @@ public class A061106 extends A000040 {
   @Override
   public Z next() {
     Z t = super.next().add(1);
-    Z min = Euler.phi(t);
+    Z min = Functions.PHI.z(t);
     while (true) {
       t = t.add(1);
       if (mPrime.isPrime(t)) {
         return min;
       }
-      min = min.min(Euler.phi(t));
+      min = min.min(Functions.PHI.z(t));
     }
   }
 }

@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -16,7 +16,7 @@ public class A060610 extends A000040 {
     long cnt = 0;
     while (p.bitCount() != 1) {
       ++cnt;
-      p = Euler.phi(p);
+      p = Functions.PHI.z(p);
     }
     return Z.valueOf(cnt);
   }

@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -18,7 +18,7 @@ public class A060609 extends A000040 {
       if (p.compareTo(max) > 0 && p.bitCount() == 1) {
         max = p;
       }
-      p = Euler.phi(p);
+      p = Functions.PHI.z(p);
     }
     return max;
   }

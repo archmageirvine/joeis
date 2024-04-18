@@ -3,8 +3,8 @@ package irvine.oeis.a065;
 import java.util.TreeSet;
 
 import irvine.math.cr.CR;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -24,7 +24,7 @@ public class A065657 extends Sequence1 {
       mLimit *= 10;
       CR best = CR.PHI;
       for (long k = mLimit / 10; k < mLimit; ++k) {
-        final CR t = CR.PHI.subtract(CR.valueOf(new Q(k, Euler.phiAsLong(k)))).abs();
+        final CR t = CR.PHI.subtract(CR.valueOf(new Q(k, Functions.PHI.l(k)))).abs();
         final int c = t.compareTo(best, HEURISTIC_ACCURACY);
         if (c <= 0) {
           if (c < 0) {

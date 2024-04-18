@@ -3,12 +3,12 @@ package irvine.oeis.a288;
 import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegersModMul;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunctionSequence;
 
@@ -42,12 +42,12 @@ public class A288620 extends MemoryFunctionSequence<Integer, CycleIndex> {
         final MultivariateMonomial mm = new MultivariateMonomial();
         for (final Z dd : Jaguar.factor(n).divisors()) {
           final int ord = new IntegersModMul(dd).order(Z.valueOf(k)).intValueExact();
-          mm.add(ord, Euler.phi(dd).divide(ord));
+          mm.add(ord, Functions.PHI.z(dd).divide(ord));
         }
         ci.add(mm);
       }
     }
-    ci.multiply(new Q(1, Euler.phiAsLong((long) n)));
+    ci.multiply(new Q(1, Functions.PHI.l((long) n)));
     return ci;
   }
 

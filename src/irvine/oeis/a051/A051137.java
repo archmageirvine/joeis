@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
@@ -25,7 +25,7 @@ public class A051137 extends UpperLeftTriangle {
     Z sum = Z.ZERO;
     final Z zk = Z.valueOf(k);
     for (final Z d : Jaguar.factor(n).divisors()) {
-      sum = sum.add(Euler.phi(d).multiply(zk.pow(n / d.intValue())));
+      sum = sum.add(Functions.PHI.z(d).multiply(zk.pow(n / d.intValue())));
     }
     sum = sum.divide(n);
     sum = sum.add(zk.pow((n + 1) / 2).add(zk.pow((n + 2) / 2)).divide2());

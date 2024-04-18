@@ -9,7 +9,16 @@ import irvine.factor.prime.Fast;
  * Routines relating to inverting the Euler totient function.
   * @author Sean A. Irvine
  */
-class InverseEuler {
+public class InverseEuler {
+
+  /**
+   * Find solutions to the equation <code>phi(n) = m</code>.
+   * @param m euler value
+   * @return set of solutions
+   */
+  public static TreeSet<Z> inversePhi(final Z m) {
+    return new InverseEuler().inversePhiC(m);
+  }
 
   private final PrimeDivision mFactor = new PrimeDivision();
   private final Fast mPrime = new Fast();
@@ -69,7 +78,7 @@ class InverseEuler {
    * @param m euler value
    * @return set of values having given totient value
    */
-  public TreeSet<Z> inversePhi(final Z m) {
+  public TreeSet<Z> inversePhiC(final Z m) {
     mInverses.clear();
     getInversePhi(m, Z.ONE);
     return mInverses;

@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A007147 extends Sequence1 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       if (dd.isOdd()) {
-        sum = sum.add(Euler.phi(dd).shiftLeft(mN / dd.longValue()));
+        sum = sum.add(Functions.PHI.z(dd).shiftLeft(mN / dd.longValue()));
       }
     }
     sum = sum.divide(mN);

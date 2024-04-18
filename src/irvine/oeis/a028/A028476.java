@@ -1,6 +1,7 @@
 package irvine.oeis.a028;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
+import irvine.math.z.InverseEuler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,6 +16,6 @@ public class A028476 extends Sequence1 {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return Euler.inversePhi(Euler.phi(mN)).last();
+    return InverseEuler.inversePhi(Functions.PHI.z(mN)).last();
   }
 }

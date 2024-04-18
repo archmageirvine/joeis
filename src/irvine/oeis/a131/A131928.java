@@ -1,8 +1,8 @@
 package irvine.oeis.a131;
 // manually simbinom at 2023-03-17 20:00
 
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -22,6 +22,6 @@ public class A131928 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return (mN == 0) ? Z.ZERO : Euler.phi(Binomial.binomial(2L * mN, mN).multiply(mN));
+    return (mN == 0) ? Z.ZERO : Functions.PHI.z(Binomial.binomial(2L * mN, mN).multiply(mN));
   }
 }

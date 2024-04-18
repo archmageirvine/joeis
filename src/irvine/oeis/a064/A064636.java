@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.a008.A008290;
@@ -19,7 +19,7 @@ public class A064636 extends A008290 {
       return Z.ZERO;
     }
     return Integers.SINGLETON.sumdiv(mN,
-      d -> Euler.phi((long) (mN / d))
+      d -> Functions.PHI.z((long) (mN / d))
         .multiply(Integers.SINGLETON.sum(0, d,
           k -> Z.valueOf(mN / d).pow(d - k).multiply(Z.valueOf(mN / d - 1).pow(k)).multiply(get((long) d, (long) k)))
         )

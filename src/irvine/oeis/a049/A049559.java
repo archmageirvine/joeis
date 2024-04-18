@@ -1,7 +1,7 @@
 package irvine.oeis.a049;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.DirectSequence;
 import irvine.oeis.a000.A000010;
@@ -14,7 +14,7 @@ public class A049559 extends A000010 implements DirectSequence {
 
   @Override
   public Z a(final int n) {
-    return Z.valueOf(Euler.phiAsLong(n)).gcd(Z.valueOf(n - 1));
+    return Z.valueOf(Functions.PHI.l((long) n)).gcd(Z.valueOf(n - 1));
   }
 
   @Override

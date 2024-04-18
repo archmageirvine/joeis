@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.factorial.MemoryFactorial;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -32,7 +32,7 @@ public class A000939 extends AbstractSequence {
     for (int d = 1; d <= mN; ++d) {
       if (mN % d == 0) {
         final Z r = Z.valueOf(mN / d);
-        t = t.add(Euler.phi(r).square().multiply(mF.factorial(d)).multiply(r.pow(d)));
+        t = t.add(Functions.PHI.z(r).square().multiply(mF.factorial(d)).multiply(r.pow(d)));
       }
     }
     return t.divide(2L * mN * mN);

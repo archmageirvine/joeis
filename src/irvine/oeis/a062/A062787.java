@@ -1,7 +1,7 @@
 package irvine.oeis.a062;
 
 import irvine.math.cr.CR;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
 
@@ -16,6 +16,6 @@ public class A062787 extends Sequence2 {
 
   @Override
   public Z next() {
-    return EXP_GAMMA.multiply(++mN).multiply(CR.valueOf(mN).log().log()).floor().subtract(Euler.phi(mN));
+    return EXP_GAMMA.multiply(++mN).multiply(CR.valueOf(mN).log().log()).floor().subtract(Functions.PHI.z(mN));
   }
 }

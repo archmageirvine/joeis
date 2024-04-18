@@ -1,9 +1,9 @@
 package irvine.oeis.a054;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.z.Euler;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
@@ -47,7 +47,7 @@ public class A054722 extends MemoryFunction2Sequence<Integer, Polynomial<Z>> {
       mQ = RING.zero();
       for (final Z dd : Jaguar.factor(mN).divisors()) {
         final int d = dd.intValue();
-        mQ = RING.add(mQ, RING.multiply(get(d, mN / d), Euler.phi(dd)));
+        mQ = RING.add(mQ, RING.multiply(get(d, mN / d), Functions.PHI.z(dd)));
       }
       mM = mQ.degree();
     }

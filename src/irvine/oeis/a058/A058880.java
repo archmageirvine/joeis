@@ -1,6 +1,6 @@
 package irvine.oeis.a058;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence3;
@@ -16,7 +16,9 @@ public class A058880 extends Sequence3 {
   @Override
   public Z next() {
     ++mN;
-    final Z sum = Integers.SINGLETON.sumdiv(mN, d -> Euler.phi(Z.valueOf(d)).shiftLeft(2L * mN / d)).divide(2L * mN);
+    final Z sum = Integers.SINGLETON.sumdiv(mN, d -> {
+      return Functions.PHI.z(Z.valueOf(d)).shiftLeft(2L * mN / d);
+    }).divide(2L * mN);
     return (mN & 1) == 0 ? sum.add(Z.ONE.shiftLeft((mN - 4) / 2)) : sum;
   }
 }

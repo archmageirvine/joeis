@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import java.util.ArrayList;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000139;
 
@@ -33,7 +33,7 @@ public class A006402 extends A000139 {
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       if (d != n) {
-        sum = sum.add(mB.get(d).multiply(Euler.phiAsLong(n / d)).multiply(9L * d * d - 9L * d + 2L));
+        sum = sum.add(mB.get(d).multiply(Functions.PHI.l((long) (n / d))).multiply(9L * d * d - 9L * d + 2L));
       }
     }
     sum = sum.add(mB.get(n).multiply2()).divide(n);

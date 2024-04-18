@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,7 +20,7 @@ public class A057741 extends Sequence1 {
     if (n % k != 0) {
       return Z.ZERO;
     }
-    return Euler.phi(Z.valueOf(k));
+    return Functions.PHI.z(Z.valueOf(k));
   }
 
   @Override

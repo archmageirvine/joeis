@@ -3,7 +3,8 @@ package irvine.oeis.a050;
 import java.util.ArrayList;
 import java.util.TreeSet;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
+import irvine.math.z.InverseEuler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -20,8 +21,8 @@ public class A050516 extends Sequence1 {
   public Z next() {
     while (mD.isEmpty()) {
       mN = mN.add(1);
-      final Z phi = Euler.phi(mN);
-      final TreeSet<Z> set = Euler.inversePhi(phi);
+      final Z phi = Functions.PHI.z(mN);
+      final TreeSet<Z> set = InverseEuler.inversePhi(phi);
       while (!set.first().equals(mN)) {
         set.pollFirst();
       }

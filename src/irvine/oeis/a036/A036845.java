@@ -3,7 +3,6 @@ package irvine.oeis.a036;
 import java.util.TreeSet;
 
 import irvine.math.function.Functions;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -24,7 +23,7 @@ public class A036845 extends Sequence1 {
     Z m = mN;
     while (seen.add(m)) {
       if (phi) {
-        m = Euler.phi(m);
+        m = Functions.PHI.z(m);
         phi = false;
       } else {
         m = Functions.SIGMA.z(m);

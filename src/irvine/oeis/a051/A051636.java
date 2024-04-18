@@ -1,8 +1,8 @@
 package irvine.oeis.a051;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -37,7 +37,7 @@ public class A051636 extends Sequence1 {
             lcm = lcm.lcm(zk);
           }
         }
-        sum = sum.add(mF.factorial(mN).divide(den.multiply(Euler.phi(lcm))));
+        sum = sum.add(mF.factorial(mN).divide(den.multiply(Functions.PHI.z(lcm))));
       }
     }
     return sum;

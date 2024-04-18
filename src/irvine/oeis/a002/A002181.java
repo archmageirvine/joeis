@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 
-import irvine.math.z.Euler;
+import irvine.math.z.InverseEuler;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -31,7 +31,7 @@ public class A002181 extends Sequence1 {
     }
     while (true) {
       mN = mN.add(2);
-      final Set<Z> c = Euler.inversePhi(mN);
+      final Set<Z> c = InverseEuler.inversePhi(mN);
       if (!c.isEmpty()) {
         return select(c);
       }

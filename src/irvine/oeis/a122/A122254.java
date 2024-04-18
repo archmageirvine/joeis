@@ -1,7 +1,7 @@
 package irvine.oeis.a122;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -16,7 +16,8 @@ public class A122254 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z[] p = Jaguar.factor(Euler.phi(++mN)).toZArray();
+      final long n = ++mN;
+      final Z[] p = Jaguar.factor(Functions.PHI.z(n)).toZArray();
       if (p.length == 0 || p[p.length - 1].compareTo(Z.THREE) <= 0) {
         return Z.valueOf(mN);
       }

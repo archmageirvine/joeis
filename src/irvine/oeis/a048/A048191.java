@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a005.A005114;
 
@@ -10,14 +10,18 @@ import irvine.oeis.a005.A005114;
  */
 public class A048191 extends A005114 {
 
-  private Z mPhi = Euler.phi(super.next());
+  private Z mPhi = Functions.PHI.z(super.next());
+
+  {
+    mPhi = Functions.PHI.z(super.next());
+  }
 
   @Override
   public Z next() {
     while (true) {
       final Z u = mPhi;
       final Z t = super.next();
-      mPhi = Euler.phi(t);
+      mPhi = Functions.PHI.z(t);
       if (u.equals(mPhi)) {
         return mPhi;
       }

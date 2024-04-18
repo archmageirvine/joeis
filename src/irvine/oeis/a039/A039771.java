@@ -1,6 +1,6 @@
 package irvine.oeis.a039;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence1;
@@ -16,7 +16,8 @@ public class A039771 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (ZUtils.isCube(Euler.phi(++mN))) {
+      final long n = ++mN;
+      if (ZUtils.isCube(Functions.PHI.z(n))) {
         return Z.valueOf(mN);
       }
     }

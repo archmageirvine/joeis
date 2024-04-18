@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
+import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -39,7 +39,7 @@ public class A000273 extends AbstractSequence {
             g1 += del * a[del];
           }
         }
-        g += g1 * Euler.phiAsLong(ord / d) * (g1 - 1);
+        g += g1 * Functions.PHI.l((long) (ord / d)) * (g1 - 1);
       }
     }
     return g;

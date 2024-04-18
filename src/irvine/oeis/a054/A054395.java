@@ -4,7 +4,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -23,7 +23,7 @@ public class A054395 extends Sequence1 {
   public Z next() {
     while (true) {
       ++mN;
-      final long p = LongUtils.gcd(mN, Euler.phiAsLong(mN));
+      final long p = LongUtils.gcd(mN, Functions.PHI.l(mN));
       if (!mPrime.isPrime(p)) {
         continue;
       }

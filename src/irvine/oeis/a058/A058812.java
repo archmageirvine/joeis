@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-import irvine.math.z.Euler;
+import irvine.math.z.InverseEuler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -26,7 +26,7 @@ public class A058812 extends Sequence0 {
     } else if (mB.isEmpty()) {
       final Set<Z> t = new HashSet<>();
       for (final Z u : mA) {
-        t.addAll(Euler.inversePhi(u));
+        t.addAll(InverseEuler.inversePhi(u));
       }
       t.remove(Z.ONE);
       mA = t;

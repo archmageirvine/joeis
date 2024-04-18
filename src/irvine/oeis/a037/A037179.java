@@ -1,8 +1,8 @@
 package irvine.oeis.a037;
 
 import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegersModMul;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -18,7 +18,7 @@ public class A037179 extends A000040 {
     final Z rho = div[div.length - 1];
     Z sum = Z.ONE;
     for (final Z d : Jaguar.factor(rho).divisors()) {
-      sum = sum.add(Euler.phi(d).divide(Z.ONE.equals(d) ? Z.ONE : new IntegersModMul(d).order(Z.TWO)));
+      sum = sum.add(Functions.PHI.z(d).divide(Z.ONE.equals(d) ? Z.ONE : new IntegersModMul(d).order(Z.TWO)));
     }
     return sum;
   }

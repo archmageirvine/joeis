@@ -2,7 +2,7 @@ package irvine.oeis.a058;
 
 import java.util.TreeSet;
 
-import irvine.math.z.Euler;
+import irvine.math.z.InverseEuler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -13,13 +13,13 @@ import irvine.oeis.Sequence0;
 public class A058213 extends Sequence0 {
 
   private Z mN = Z.ONE;
-  private TreeSet<Z> mA = Euler.inversePhi(mN);
+  private TreeSet<Z> mA = InverseEuler.inversePhi(mN);
 
   @Override
   public Z next() {
     if (mA.isEmpty()) {
       mN = mN.multiply2();
-      mA = Euler.inversePhi(mN);
+      mA = InverseEuler.inversePhi(mN);
     }
     return mA.pollFirst();
   }

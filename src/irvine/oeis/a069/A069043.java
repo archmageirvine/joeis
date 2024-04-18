@@ -1,6 +1,6 @@
 package irvine.oeis.a069;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.oeis.FilterSequence;
 import irvine.oeis.a038.A038509;
 
@@ -12,7 +12,9 @@ public class A069043 extends FilterSequence {
 
   /** Construct the sequence. */
   public A069043() {
-    super(1, new A038509(), k -> Euler.phi(k).multiply(3).compareTo(k.multiply2()) < 0);
+    super(1, new A038509(), k -> {
+      return Functions.PHI.z(k).multiply(3).compareTo(k.multiply2()) < 0;
+    });
   }
 }
 

@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.math.z.Euler;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 import irvine.util.array.DynamicArray;
@@ -26,7 +26,7 @@ public class A060611 extends A000040 {
       int cnt = 0;
       while (!Z.ONE.equals(q)) {
         ++cnt;
-        q = Euler.phi(q);
+        q = Functions.PHI.z(q);
       }
       if (mA.get(cnt) == null) {
         mA.set(cnt, p);

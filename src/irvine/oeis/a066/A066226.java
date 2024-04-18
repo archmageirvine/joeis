@@ -3,7 +3,6 @@ package irvine.oeis.a066;
 import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
 import irvine.math.function.Functions;
-import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +16,7 @@ public class A066226 extends Sequence1 {
   private final MemoryFunction1<Long> mF = new MemoryFunction1<>() {
     @Override
     protected Long compute(final int n) {
-      return Functions.SIGMA.l(Euler.phi((long) n));
+      return Functions.SIGMA.l(Functions.PHI.z((long) n));
     }
   };
 

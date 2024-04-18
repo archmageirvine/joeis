@@ -18,7 +18,7 @@ public class A176772 extends AbstractSequence {
 
   /** Default constructor. */
   public A176772() {
-    this(1);
+    this(0);
   }
 
   protected Z base() {

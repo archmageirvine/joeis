@@ -18,9 +18,8 @@ public class A174407 extends A000040 {
       if (ZUtils.isPrimitiveRoot(g, p)) {
         for (Z x = Z.ONE; x.compareTo(p) < 0; x = x.add(1)) {
           if (g.modPow(x, p).equals(x)) {
-            System.out.println("x=" + x);
             ++cnt;
-            //break;
+            break;
           }
         }
       }

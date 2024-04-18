@@ -6,16 +6,16 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A065952 Numerator of (-1)^n*n!*(E(n,2)-E(n,1)*E(n-1,1)) where E(n,x) = Sum_{k=0..n} (-1)^k*x^k/k!.
  * @author Sean A. Irvine
  */
-public class A065952 extends Sequence1 {
+public class A065952 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private int mN = 0;
+  private int mN = -1;
 
   private static Polynomial<Q> e(final int n) {
     final Q[] c = new Q[n + 1];

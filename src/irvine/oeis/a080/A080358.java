@@ -3,15 +3,15 @@ package irvine.oeis.a080;
 
 import irvine.factor.prime.Puma;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence1;
+import irvine.oeis.Sequence0;
 
 /**
  * A080358 Value of Vandermonde determinant for the first n prime numbers: V[prime(1), ..., prime(n)].
  * @author Georg Fischer
  */
-public class A080358 extends Sequence1 {
+public class A080358 extends Sequence0 {
 
-  protected int mN = 0;
+  protected int mN = -1;
 
   @Override
   public Z next() {

@@ -1,7 +1,7 @@
 package irvine.oeis.a062;
 
 import irvine.factor.prime.Fast;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,7 @@ public class A062304 extends Sequence1 {
   public Z next() {
     while (true) {
       mN += 2;
-      final long t = mN - Mobius.mobius(mN);
+      final long t = mN - Functions.MOBIUS.i(mN);
       if (mPrime.isPrime(t)) {
         return Z.valueOf(t);
       }

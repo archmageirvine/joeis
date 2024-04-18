@@ -1,6 +1,5 @@
 package irvine.oeis.a067;
 
-import irvine.math.Mobius;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002321;
@@ -17,7 +16,8 @@ public class A067195 extends A002321 {
   @Override
   public Z next() {
     while (true) {
-      mSum = mSum.add(Mobius.mobius(Functions.SIGMA.l(++mN)));
+      final long n = Functions.SIGMA.l(++mN);
+      mSum = mSum.add(Functions.MOBIUS.i(n));
       if (mSum.equals(super.next())) {
         return Z.valueOf(mN);
       }

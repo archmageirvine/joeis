@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Collections;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -38,7 +38,7 @@ public class DhkTransformSequence extends AbstractSequence {
       RING.one()), Q.TWO);
     Polynomial<Q> sum = RING.subtract(RING.pow(p, 2, n), px2);
     for (int d = 1; d <= n; ++d) {
-      final int m = Mobius.mobius(d);
+      final int m = Functions.MOBIUS.i((long) d);
       if (m != 0) {
         final Polynomial<Q> s = RING.series(RING.one(), RING.subtract(RING.one(), p), n / d).substitutePower(d, n);
         final Polynomial<Q> log = RING.log(s, n);

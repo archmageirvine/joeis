@@ -3,7 +3,7 @@ package irvine.oeis.transform;
 import java.util.ArrayList;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.AbstractSequence;
@@ -65,7 +65,7 @@ public class Phi2TransformSequence extends AbstractSequence {
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       if ((d & 1) == 1) {
-        a = ZUtils.mobiusAdd(Mobius.mobius(d), a, mTerms.get(n / d));
+        a = ZUtils.mobiusAdd(Functions.MOBIUS.i((long) d), a, mTerms.get(n / d));
       }
     }
     return a;

@@ -1,7 +1,7 @@
 package irvine.oeis.a056;
 // manually A060164/summu1 at 2022-03-25 13:13
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -33,7 +33,7 @@ public class A056476 extends AbstractSequence {
     if (mN == 0) {
       return Z.ONE;
     }
-    return Integers.SINGLETON.sumdiv(mN, d -> Z.ONE.shiftLeft((mN / d - 1) / 2).multiply(Mobius.mobius(d)));
+    return Integers.SINGLETON.sumdiv(mN, d -> Z.ONE.shiftLeft((mN / d - 1) / 2).multiply(Functions.MOBIUS.i((long) d)));
   }
 
 }

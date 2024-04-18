@@ -1,7 +1,7 @@
 package irvine.oeis.a101;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence2;
@@ -19,7 +19,7 @@ public class A101391 extends Sequence2 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final long d = dd.longValue();
-      sum = sum.add(Binomial.binomial(n / d - 1, k - 1).multiply(Mobius.mobius(d)));
+      sum = sum.add(Binomial.binomial(n / d - 1, k - 1).multiply(Functions.MOBIUS.i(d)));
     }
     return sum;
   }

@@ -1,6 +1,6 @@
 package irvine.oeis.a071;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -18,7 +18,8 @@ public class A071758 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      mSum = mSum.add(new Q(Mobius.mobius(++mN), mN));
+      final long n = ++mN;
+      mSum = mSum.add(new Q(Functions.MOBIUS.i(n), mN));
       if (mSum.abs().compareTo(mBest.abs()) < 0) {
         mBest = mSum;
         return mSum.reciprocal().floor();

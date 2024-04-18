@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
@@ -79,7 +79,7 @@ public class A068596 extends Sequence1 {
     assert s2 >= 0;
     return Integers.SINGLETON.sumdiv(n, d -> {
       final int nd = n / d;
-      final int mobius = Mobius.mobius(nd);
+      final int mobius = Functions.MOBIUS.i((long) nd);
       if (mobius != 0) {
         final int g1 = IntegerUtils.gcd(nd, m);
         final int g2 = IntegerUtils.gcd(nd, m2);

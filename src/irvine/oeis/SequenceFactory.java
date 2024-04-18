@@ -154,7 +154,7 @@ public final class SequenceFactory {
         case "mobius":
           return new MobiusTransformSequence(sequence(inner), 0);
         case "mu":
-          return new SimpleTransformSequence(sequence(inner), k -> Z.valueOf(Jaguar.factor(k).mobius()));
+          return new SimpleTransformSequence(sequence(inner), k -> Z.valueOf(Functions.MOBIUS.i(k)));
         case "omega":
           return new SimpleTransformSequence(sequence(inner), k -> Z.valueOf(Functions.OMEGA.i(k)));
         case "Omega":

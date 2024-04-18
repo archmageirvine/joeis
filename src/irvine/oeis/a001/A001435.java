@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction1;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -57,7 +57,7 @@ public class A001435 extends A001430 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(IntegerUtils.gcd(nodes, edges)).divisors()) {
       final int d = dd.intValue();
-      sum = sum.add(b(nodes / d, edges / d).multiply(Mobius.mobius(d)).divide(d));
+      sum = sum.add(b(nodes / d, edges / d).multiply(Functions.MOBIUS.i((long) d)).divide(d));
     }
     return sum;
   }

@@ -3,7 +3,7 @@ package irvine.oeis.transform;
 import java.util.List;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
@@ -31,7 +31,7 @@ public class MobiusTransformSequence extends AbstractSequence {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
-      final int m = Mobius.mobius(n / d);
+      final int m = Functions.MOBIUS.i((long) (n / d));
       if (m != 0) {
         sum = sum.signedAdd(m == 1, seq.get(d));
       }
@@ -94,7 +94,7 @@ public class MobiusTransformSequence extends AbstractSequence {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
-      final int m = Mobius.mobius(n / d);
+      final int m = Functions.MOBIUS.i((long) (n / d));
       if (m != 0) {
         final Z t = mSeq.a(mOffset + d);
         if (t == null) {

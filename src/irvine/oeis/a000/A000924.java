@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 import irvine.math.LongUtils;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,7 +15,8 @@ public class A000924 extends Sequence1 {
 
   @Override
   public Z next() {
-    while (Mobius.mobius(++mN) == 0) {
+    final long n1 = ++mN;
+    while (Functions.MOBIUS.i(n1) == 0) {
       // do nothing
     }
     final long n = -mN;

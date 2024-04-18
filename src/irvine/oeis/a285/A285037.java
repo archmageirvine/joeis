@@ -1,7 +1,7 @@
 package irvine.oeis.a285;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.a304.A304972;
@@ -37,7 +37,7 @@ public class A285037 extends MemoryFunction2Sequence<Integer, Z> {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
-      final int m = Mobius.mobius(d);
+      final int m = Functions.MOBIUS.i((long) d);
       if (m != 0) {
         Z s = Stirling.secondKind((n / d + 1) / 2, k).add(Stirling.secondKind(n / d / 2 + 1, k));
         if (((n - d) & 1) == 1) {

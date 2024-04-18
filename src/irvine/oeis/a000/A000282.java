@@ -2,7 +2,7 @@ package irvine.oeis.a000;
 
 import java.util.ArrayList;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 import irvine.oeis.a054.A054747;
@@ -22,7 +22,7 @@ public class A000282 extends Sequence1 {
 
   private int mob(final int m, final int n) {
     if (m % n == 0) {
-      return Mobius.mobius(m / n);
+      return Functions.MOBIUS.i((long) (m / n));
     }
     return 0;
   }

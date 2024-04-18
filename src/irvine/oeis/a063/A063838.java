@@ -1,6 +1,6 @@
 package irvine.oeis.a063;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,7 +15,8 @@ public class A063838 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      if (Mobius.mobius(++mN) == 1 && Mobius.mobius(mN + 1) == 1 && Mobius.mobius(mN + 2) == 1) {
+      final long n = ++mN;
+      if (Functions.MOBIUS.i(n) == 1 && Functions.MOBIUS.i(mN + 1) == 1 && Functions.MOBIUS.i(mN + 2) == 1) {
         return Z.valueOf(mN);
       }
     }

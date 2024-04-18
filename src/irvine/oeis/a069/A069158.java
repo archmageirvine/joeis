@@ -1,7 +1,7 @@
 package irvine.oeis.a069;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -17,7 +17,7 @@ public class A069158 extends Sequence1 {
   public Z next() {
     long prod = 1;
     for (final Z d : Jaguar.factor(++mN).divisors()) {
-      prod *= Mobius.mobius(d.longValue());
+      prod *= Functions.MOBIUS.i(d.longValue());
       if (prod == 0) {
         return Z.ZERO;
       }

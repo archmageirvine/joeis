@@ -1,8 +1,8 @@
 package irvine.oeis.a027;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
 /**
@@ -26,7 +26,7 @@ public class A027835 extends A027834 {
       Z s = Z.ZERO;
       for (final Z dd2 : Jaguar.factor(mN / m).divisors()) {
         final int d2 = dd2.intValue();
-        final int mu = Mobius.mobius(mN / (m * (long) d2));
+        final int mu = Functions.MOBIUS.i(mN / (m * (long) d2));
         if (mu != 0) {
           s = s.signedAdd(mu == 1, Z.valueOf(d2).pow((r - 1) * (long) m + 1));
         }

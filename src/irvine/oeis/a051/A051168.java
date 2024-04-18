@@ -2,7 +2,7 @@ package irvine.oeis.a051;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -36,7 +36,7 @@ public class A051168 extends AbstractSequence {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(LongUtils.gcd(n, k)).divisors()) {
       final long d = dd.longValue();
-      sum = sum.add(Binomial.binomial(n / d, k / d).multiply(Mobius.mobius(d)));
+      sum = sum.add(Binomial.binomial(n / d, k / d).multiply(Functions.MOBIUS.i(d)));
     }
     return sum.divide(n);
   }

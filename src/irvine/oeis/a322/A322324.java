@@ -1,6 +1,6 @@
 package irvine.oeis.a322;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -19,6 +19,6 @@ public class A322324 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(d).pow(k).multiply(Mobius.mobius(d)));
+    return Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(d).pow(k).multiply(Functions.MOBIUS.i((long) d)));
   }
 }

@@ -1,7 +1,7 @@
 package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 import irvine.oeis.memory.MemorySequence;
@@ -23,7 +23,7 @@ public class A045514 extends Sequence0 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
-      sum = sum.add(mA.a(d).multiply(Mobius.mobius(mN / d)));
+      sum = sum.add(mA.a(d).multiply(Functions.MOBIUS.i((long) (mN / d))));
     }
     return sum;
   }

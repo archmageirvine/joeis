@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.group.CycleIndexRing;
 import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
@@ -144,7 +144,7 @@ public final class CombinatorialSpecies {
     // Substitutions y -> y^k, x_i -> x_{i*k} (up to existing limits)
     Polynomial<CycleIndex> res = RING.zero();
     for (int k = 1; k <= p.degree(); ++k) {
-      final int mobius = Mobius.mobius(k);
+      final int mobius = Functions.MOBIUS.i((long) k);
       if (mobius != 0) {
         final Polynomial<CycleIndex> subs = divide(innerSubs(log.substitutePower(k, p.degree()), k , p.degree() / k), k);
         res = RING.signedAdd(mobius == 1, res, subs);

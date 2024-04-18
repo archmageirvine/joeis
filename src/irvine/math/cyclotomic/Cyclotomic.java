@@ -1,6 +1,6 @@
 package irvine.math.cyclotomic;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
@@ -30,11 +30,6 @@ public final class Cyclotomic {
     // n is prime
     return n;
   }
-
-  /** Mobius cache. */
-  private static Mobius sMobius = null;
-  /** Largest index supported by the Mobius cache. */
-  private static int sMobiusSize = -1;
 
   /**
    * Compute the values of Phi_n(x).
@@ -72,13 +67,9 @@ public final class Cyclotomic {
     }
     Z p = Z.ONE;
     Z q = Z.ONE;
-    if (n > sMobiusSize) {
-      sMobiusSize = n;
-      sMobius = new Mobius(n);
-    }
     for (int i = 1; i <= n; ++i) {
       if (n % i == 0) {
-        final int mu = sMobius.mobiusMu(n / i);
+        final int mu = Functions.MOBIUS.i(n / i);
         if (mu != 0) {
           final Z t = x.pow(i).subtract(Z.ONE);
           if (mu == 1) {

@@ -2,8 +2,8 @@ package irvine.oeis.a253;
 // manually prodsim/prodsid at 2021-11-28 14:44
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -23,7 +23,7 @@ public class A253901 extends Sequence1 {
     Q prod = Q.ONE;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
-      final int mu = Mobius.mobius(mN / d);
+      final int mu = Functions.MOBIUS.i((long) (mN / d));
       if (mu == -1) {
         prod = prod.divide(FACTORIAL.factorial(d - 1));
       } else if (mu == 1) {

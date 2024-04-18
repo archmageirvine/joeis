@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.group.GaloisField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.z.Z;
@@ -33,7 +33,7 @@ public final class IrreduciblePolynomials {
     Z s = Z.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
-      final int m = Mobius.mobius(n / d);
+      final int m = Functions.MOBIUS.i((long) (n / d));
       if (m == 1) {
         s = s.add(Z.ONE.shiftLeft(d));
       } else if (m == -1) {

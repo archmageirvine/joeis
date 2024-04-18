@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.math.Mobius;
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -10,16 +10,10 @@ import irvine.oeis.Sequence1;
  */
 public class A002321 extends Sequence1 {
 
-  private long mLimit = 1000000;
   protected long mN = 0;
-  private Mobius mMobius = new Mobius(mLimit);
 
   @Override
   public Z next() {
-    if (++mN >= mLimit) {
-      mLimit *= 10;
-      mMobius = new Mobius(mLimit);
-    }
-    return Z.valueOf(mMobius.mertens(mN));
+    return Z.valueOf(LongUtils.mertens(++mN));
   }
 }

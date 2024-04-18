@@ -1,8 +1,8 @@
 package irvine.oeis.a048;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
 
@@ -25,7 +25,7 @@ public class A048600 extends MemoryFunction2Sequence<Integer, Z> {
   protected Z compute(final Integer n, final Integer k) {
     Z sum = Z.ZERO;
     for (final Z d : Jaguar.factor(n).divisors()) {
-      final int mobius = Mobius.mobius(n / d.intValueExact());
+      final int mobius = Functions.MOBIUS.i((long) (n / d.intValueExact()));
       if (mobius != 0) {
         Z prod = Z.ONE;
         for (int j = 1; j <= k; ++j) {

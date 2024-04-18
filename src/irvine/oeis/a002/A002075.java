@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 
@@ -56,7 +56,7 @@ public class A002075 extends AbstractSequence {
     Z s = Z.ZERO;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
-      final int mu = Mobius.mobius(d);
+      final int mu = Functions.MOBIUS.i((long) d);
       if (mu != 0) {
         final Z t = Z.THREE.pow(mN / d).multiply((long) hprime(d) * mu);
         s = s.add(t);

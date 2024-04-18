@@ -3,8 +3,8 @@ package irvine.math.cr;
 import java.util.HashMap;
 
 import irvine.math.MemoryFunction;
-import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
@@ -197,7 +197,8 @@ public final class Zeta {
         Z sum = Z.ZERO;
         int k = 0;
         while (true) {
-          final int m = Mobius.mobius(++k);
+          final long n1 = ++k;
+          final int m = Functions.MOBIUS.i(n1);
           if (m != 0) {
             final Z t = zeta(n * k).log().divide(CR.valueOf(k)).getApprox(precision);
             if (t.isZero()) {

@@ -1,7 +1,6 @@
 package irvine.oeis.a032;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -41,7 +40,7 @@ public class A032250 extends Sequence1 {
     Polynomial<Z> sum = RING.zero();
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
-      final int mu = Mobius.mobius(d);
+      final int mu = Functions.MOBIUS.i((long) d);
       if (mu != 0) {
         sum = RING.signedAdd(mu == 1, sum, f(mN / d, d, 2 * mN));
       }

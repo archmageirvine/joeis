@@ -6,7 +6,7 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.LongUtils;
 import irvine.math.MemoryFunction2;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
@@ -162,7 +162,7 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(i).divisors()) {
       final int d = dd.intValue();
-      final int mobius = Mobius.mobius(i / d);
+      final int mobius = Functions.MOBIUS.i((long) (i / d));
       if (mobius != 0) {
         final Z f = f(n, d, c);
         sum = sum.signedAdd(mobius == 1, f);

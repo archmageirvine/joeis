@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import java.util.ArrayList;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -26,7 +26,7 @@ public class A001693 extends Sequence0 {
     Z s = Z.ZERO;
     for (final Z d : Jaguar.factor(mN).divisors()) {
       final int dd = d.intValue();
-      s = s.add(mPowers.get(mN / dd).multiply(Mobius.mobius(dd)));
+      s = s.add(mPowers.get(mN / dd).multiply(Functions.MOBIUS.i((long) dd)));
     }
     return s.divide(mN);
   }

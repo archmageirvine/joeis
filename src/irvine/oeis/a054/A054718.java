@@ -2,7 +2,7 @@ package irvine.oeis.a054;
 
 import java.util.function.Function;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -29,7 +29,7 @@ public class A054718 extends Sequence0 {
    */
   public A054718(final int base) {
     mBase = Z.valueOf(base);
-    mF = d -> mBase.pow(mN / d).multiply(Mobius.mobius(d));
+    mF = d -> mBase.pow(mN / d).multiply(Functions.MOBIUS.i((long) d));
     mN = -1;
   }
 

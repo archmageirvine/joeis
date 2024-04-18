@@ -1,7 +1,7 @@
 package irvine.oeis.a341;
 // manually genet/genetgh at 2022-02-20 11:57
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.transform.GeneralizedEulerTransform;
 
@@ -19,6 +19,6 @@ public class A341153 extends GeneralizedEulerTransform {
 
   @Override
   protected Z advanceG(final long k) {
-    return Z.valueOf(Mobius.mobius((int) (k + 1))).square();
+    return Z.valueOf(Functions.MOBIUS.i((long) (int) (k + 1))).square();
   }
 }

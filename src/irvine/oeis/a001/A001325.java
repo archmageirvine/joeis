@@ -1,8 +1,8 @@
 package irvine.oeis.a001;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.ExtendedSymmetricGroupCycleIndex;
@@ -28,7 +28,7 @@ public class A001325 extends Sequence1 {
     for (final Z dd : Jaguar.factor(t2).divisors()) {
       final int d = dd.intValue();
       if (t % d != 0) {
-        sum = sum.add(mm.pow(d / 2).subtract(m & 1).multiply(Mobius.mobius(t2 / d)));
+        sum = sum.add(mm.pow(d / 2).subtract(m & 1).multiply(Functions.MOBIUS.i((long) (t2 / d))));
       }
     }
     return sum.divide(t2).intValueExact();

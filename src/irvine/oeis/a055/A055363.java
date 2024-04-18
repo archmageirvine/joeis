@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.PolynomialUtils;
@@ -25,7 +25,7 @@ public class A055363 extends Sequence1 {
   private void step() {
     Polynomial<Polynomial<Q>> sum = RING.zero();
     for (int k = 1; k <= mN; ++k) {
-      final int m = Mobius.mobius(k);
+      final int m = Functions.MOBIUS.i((long) k);
       if (m != 0) {
         sum = RING.add(sum, RING.multiply(RING.log1p(RING.negate(PolynomialUtils.innerSubstitute(RING, mGf.substitutePower(k, mN), k, mN)), mN), RING_Y.monomial(new Q(m, k), 0)));
       }

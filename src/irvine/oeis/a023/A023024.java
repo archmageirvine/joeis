@@ -1,6 +1,6 @@
 package irvine.oeis.a023;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -46,7 +46,7 @@ public class A023024 extends AbstractSequence {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 1; parts() * k <= mN; ++k) {
-      final int m = Mobius.mobius(k);
+      final int m = Functions.MOBIUS.i((long) k);
       if (m != 0) {
         final int t = mN - parts() * k;
         sum = sum.signedAdd(m > 0, RING.coeff(RING.one(), den(k, t), t));

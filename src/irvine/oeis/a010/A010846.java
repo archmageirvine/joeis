@@ -1,7 +1,7 @@
 package irvine.oeis.a010;
 
 import irvine.math.LongUtils;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A010846 extends Sequence1 {
     Z sum = Z.ZERO;
     for (long k = 1; k <= mN; ++k) {
       if (LongUtils.gcd(k, mN) == 1) {
-        sum = sum.add(Mobius.mobius(k) * (mN / k));
+        sum = sum.add(Functions.MOBIUS.i(k) * (mN / k));
       }
     }
     return sum;

@@ -1,7 +1,6 @@
 package irvine.oeis.a035;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -18,7 +17,7 @@ public class A035109 extends Sequence0 {
     if (n == 1) {
       return Z.ONE;
     }
-    final int m = Mobius.mobius(n / d);
+    final int m = Functions.MOBIUS.i(n / d);
     if (m == 0) {
       return Z.ZERO;
     }

@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -19,7 +19,7 @@ public class A061447 extends Sequence1 {
     Z den = Z.ONE;
     for (final Z dd : Jaguar.factor(2L * n).divisors()) {
       final int d = dd.intValueExact();
-      final int m = Mobius.mobius(d);
+      final int m = Functions.MOBIUS.i((long) d);
       if (m == 1) {
         num = num.multiply(Fibonacci.fibonacci(2L * n / d));
       } else if (m == -1) {

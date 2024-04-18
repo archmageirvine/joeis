@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
-import irvine.math.Mobius;
 import irvine.math.cr.CR;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -18,7 +18,8 @@ public class A068576 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final int m = Mobius.mobius(++mN);
+      final long n = ++mN;
+      final int m = Functions.MOBIUS.i(n);
       mSum += m * m;
       if (mSum == CR.valueOf(6 * mN).divide(PI2).floor().longValueExact()) {
         return Z.valueOf(mN);

@@ -17,9 +17,9 @@ import java.util.function.Function;
 
 import irvine.graph.Vertex;
 import irvine.math.IntegerUtils;
-import irvine.math.Mobius;
 import irvine.math.api.Field;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.MatrixRing;
 import irvine.math.group.PolynomialRing;
@@ -449,7 +449,7 @@ public final class GraphUtils {
     final Polynomial<Polynomial<Q>> p = RING2.log1p(RING2.create(g).shift(1), n);
     Polynomial<Polynomial<Q>> sum = RING2.zero();
     for (int k = 1; k <= n; ++k) {
-      final int mobius = Mobius.mobius(k);
+      final int mobius = Functions.MOBIUS.i((long) k);
       if (mobius != 0) {
         final Polynomial<Polynomial<Q>> t = p.substitutePower(k, n);
         final Polynomial<Polynomial<Q>> u = RING2.empty();
@@ -718,7 +718,7 @@ public final class GraphUtils {
       for (int d = 1; d <= n; ++d) {
         if (n % d == 0) {
           final int i = n / d;
-          final E r = fld.coerce(MemoryFactorial.SINGLETON.factorial(n).divide(MemoryFactorial.SINGLETON.factorial(i)).divide(d).multiply(Mobius.mobius(d)));
+          final E r = fld.coerce(MemoryFactorial.SINGLETON.factorial(n).divide(MemoryFactorial.SINGLETON.factorial(i)).divide(d).multiply(Functions.MOBIUS.i((long) d)));
           final List<E> ui = lg.get(i);
           int xi = -1;
           final IntegerPartition partI = new IntegerPartition(n / d);

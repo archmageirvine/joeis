@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.IntegerUtils;
-import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.ReaderSequence;
@@ -52,7 +52,7 @@ public class ChjTransformSequence extends Sequence1 {
       Z t2 = Z.ZERO;
       for (int d = 1; d <= IntegerUtils.max(q); ++d) {
         if (isDivisor(q, d)) {
-          final int mu = Mobius.mobius(d);
+          final int mu = Functions.MOBIUS.i((long) d);
           if (mu != 0) {
             Z u = FACTORIAL.factorial(k / d);
             for (int i = 1; i < q.length; ++i) {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.Pair;
 
@@ -24,7 +24,7 @@ public final class WreathExponentiation {
     Z pow = Z.ZERO;
     for (final Z ww : Jaguar.factor(v).divisors()) {
       final long w = ww.longValueExact();
-      final long mu = Mobius.mobius(v / w);
+      final long mu = Functions.MOBIUS.i(v / w);
       if (mu != 0) {
         final long g = LongUtils.gcd(w, r); // actually an int since v was
         Z sum = Z.ZERO;

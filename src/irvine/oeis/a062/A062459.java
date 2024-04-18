@@ -1,6 +1,6 @@
 package irvine.oeis.a062;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -15,7 +15,7 @@ public class A062459 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z t = Z.valueOf(++mN).square().add(Mobius.mobius(mN));
+      final Z t = Z.valueOf(++mN).square().add(Functions.MOBIUS.i(mN));
       if (t.isProbablePrime()) {
         return t;
       }

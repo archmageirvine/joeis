@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
-import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
@@ -64,7 +63,7 @@ public class A007888 extends Sequence1 {
       final int l = ll.intValue();
       if (l != k) {
         final int dp = d / IntegerUtils.gcd(d, l);
-        final int mobius = Mobius.mobius(dp);
+        final int mobius = Functions.MOBIUS.i((long) dp);
         if (mobius != 0) {
           final Q phi = new Q(Functions.PHI.l((long) (k / l)), Functions.PHI.l((long) dp));
           res = RING.signedAdd(mobius > 0, res, RING.monomial(phi, k - l));
@@ -99,7 +98,7 @@ public class A007888 extends Sequence1 {
             final int pow = 2 * h - 2;
             for (int s = 0; s * m <= 3 * mN; ++s) {
               if (s + 2 * h >= 3 && (s == 0 || !RING.zero().equals(beta))) {
-                final int mobius = Mobius.mobius(m);
+                final int mobius = Functions.MOBIUS.i((long) m);
                 if (mobius != 0) {
                   final Polynomial<Q> betaPow = RING.pow(beta, s, mN - k * pow);
                   final Q chi = chi(h, s).divide(mF.factorial(s)).multiply(mobius);

@@ -1,7 +1,7 @@
 package irvine.oeis.a054;
 
 import irvine.math.IntegerUtils;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -16,6 +16,6 @@ public class A054664 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sumdiv(++mN, d -> Z.ONE.shiftLeft(2L * mN / d).multiply(IntegerUtils.gcd(d, 4)).multiply(Mobius.mobius(d))).divide(4L * mN);
+    return Integers.SINGLETON.sumdiv(++mN, d -> Z.ONE.shiftLeft(2L * mN / d).multiply(IntegerUtils.gcd(d, 4)).multiply(Functions.MOBIUS.i((long) d))).divide(4L * mN);
   }
 }

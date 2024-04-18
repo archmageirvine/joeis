@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -12,7 +12,7 @@ public class A067460 extends A000040 {
 
   @Override
   public Z next() {
-    return Z.valueOf(Mobius.mobius(super.next().longValueExact() - 1) + 1);
+    return Z.valueOf(Functions.MOBIUS.i(super.next().longValueExact() - 1) + 1);
   }
 }
 

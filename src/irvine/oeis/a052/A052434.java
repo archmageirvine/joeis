@@ -1,7 +1,7 @@
 package irvine.oeis.a052;
 
-import irvine.math.Mobius;
 import irvine.math.cr.CR;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
@@ -35,7 +35,7 @@ public class A052434 extends A000720 {
           if (t.isZero() || k > HEURISTIC_TERMS) {
             break;
           }
-          final int mobius = Mobius.mobius(k);
+          final int mobius = Functions.MOBIUS.i(k);
           if (mobius != 0) {
             sum = sum.signedAdd(mobius == 1, t);
           }

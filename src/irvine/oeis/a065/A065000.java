@@ -1,6 +1,5 @@
 package irvine.oeis.a065;
 
-import irvine.math.Mobius;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -17,7 +16,8 @@ public class A065000 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      mSum += Mobius.mobius(Functions.SIGMA.l(++mN));
+      final long n = Functions.SIGMA.l(++mN);
+      mSum += Functions.MOBIUS.i(n);
       if (mSum == 0) {
         return Z.valueOf(mN);
       }

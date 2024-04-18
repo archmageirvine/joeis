@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -35,6 +35,6 @@ public class A060170 extends Sequence1 {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> mSeq.a(d).multiply(Mobius.mobius(mN / d))).divide(mN);
+    return Integers.SINGLETON.sumdiv(mN, d -> mSeq.a(d).multiply(Functions.MOBIUS.i((long) (mN / d)))).divide(mN);
   }
 }

@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.HashSet;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -28,7 +28,7 @@ public class A011793 extends Sequence1 {
     for (final Z d : Jaguar.factor(mN + k).divisors()) {
       if (d.isEven() && divisors.contains(d)) {
         final long dd = d.longValue();
-        sum = sum.add(Binomial.binomial((n + k) / dd, (n - k) / dd).multiply(Mobius.mobius(dd / 2)));
+        sum = sum.add(Binomial.binomial((n + k) / dd, (n - k) / dd).multiply(Functions.MOBIUS.i(dd / 2)));
       }
     }
     return sum.multiply2().divide(n + k);

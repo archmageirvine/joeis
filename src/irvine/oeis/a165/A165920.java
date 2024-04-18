@@ -1,7 +1,7 @@
 package irvine.oeis.a165;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,7 +19,7 @@ public class A165920 extends Sequence1 {
     for (final Z dd : Jaguar.factor(++mN).divisors()) {
       final int d = dd.intValue();
       if ((mN / d) % 3 != 0) {
-        sum = sum.add(Z.ONE.shiftLeft(d).signedAdd((d & 1) == 0, Z.NEG_ONE).multiply(Mobius.mobius(mN / d)));
+        sum = sum.add(Z.ONE.shiftLeft(d).signedAdd((d & 1) == 0, Z.NEG_ONE).multiply(Functions.MOBIUS.i((long) (mN / d))));
       }
     }
     return sum.divide(3L * mN);

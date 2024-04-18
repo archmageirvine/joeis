@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.IntegerUtils;
-import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
@@ -90,6 +90,6 @@ public class A060041 extends AbstractSequence {
     final Polynomial<Q> a2d = RING.pow(RING.series(RING.diff(a2).shift(1), a2, mN), 3, mN);
     final Polynomial<Q> a3a = RING.series(FIVE, RING.multiply(RING.multiply(RING.multiply(a1, a1, mN), a2d, mN), C1, mN), mN);
     final Polynomial<Q> a3 = RING.substitute(a3a, reversion(a2, mN), mN);
-    return Rationals.SINGLETON.sumdiv(mN, k -> a3.coeff(k).multiply(Mobius.mobius(mN / k))).divide(mN).divide(mN).divide(mN).toZ();
+    return Rationals.SINGLETON.sumdiv(mN, k -> a3.coeff(k).multiply(Functions.MOBIUS.i((long) (mN / k)))).divide(mN).divide(mN).divide(mN).toZ();
   }
 }

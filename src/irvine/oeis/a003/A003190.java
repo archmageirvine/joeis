@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.polynomial.PalmerSymPowerCycleIndex;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -53,7 +53,7 @@ public class A003190 extends MemoryFunction2Sequence<Integer, Q> {
     Q s = Q.ZERO;
     for (final Z dd : Jaguar.factor(p).divisors()) {
       final int d = dd.intValueExact();
-      s = s.add(get(n, p / d).multiply(Mobius.mobius(d)).divide(d));
+      s = s.add(get(n, p / d).multiply(Functions.MOBIUS.i((long) d)).divide(d));
     }
     assert s.isInteger();
     return s.toZ();

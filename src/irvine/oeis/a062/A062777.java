@@ -1,6 +1,6 @@
 package irvine.oeis.a062;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -14,6 +14,6 @@ public class A062777 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Z.ONE.shiftLeft(++mN).subtract(Mobius.mobius(mN));
+    return Z.ONE.shiftLeft(++mN).subtract(Functions.MOBIUS.i((long) mN));
   }
 }

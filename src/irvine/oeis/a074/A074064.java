@@ -1,7 +1,7 @@
 package irvine.oeis.a074;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -27,7 +27,7 @@ public class A074064 extends A000793 {
     Z coeff = Z.ZERO;
     for (final Z dd : Jaguar.factor(aa).divisors()) {
       final long d = dd.longValue();
-      final int mu = Mobius.mobius(a / d);
+      final int mu = Functions.MOBIUS.i(a / d);
       Polynomial<Z> div = RING.one();
       for (final Z k : Jaguar.factor(dd).divisors()) {
         div = RING.multiply(div, RING.oneMinusXToTheN(k.intValue()), mN);

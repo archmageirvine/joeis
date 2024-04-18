@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -16,7 +16,7 @@ public class A068997 extends Sequence1 {
   @Override
   public Z next() {
     while (true) {
-      final Z t = Integers.SINGLETON.sumdiv(++mN, d -> Z.valueOf(d * Mobius.mobius(d)));
+      final Z t = Integers.SINGLETON.sumdiv(++mN, d -> Z.valueOf(d * Functions.MOBIUS.i((long) d)));
       if (mN % t.longValueExact() == 0) {
         return Z.valueOf(mN);
       }

@@ -4,11 +4,11 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-import irvine.math.Mobius;
 import irvine.math.api.Field;
 import irvine.math.c.C;
 import irvine.math.c.ComplexField;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
@@ -336,7 +336,7 @@ public final class PolynomialUtils {
     final int n = p.degree();
     final PolynomialRingField<E> r = new PolynomialRingField<>(fld);
     final Polynomial<E> q = r.log(p, n);
-    return r.sum(1, n, i -> r.divide(r.multiply(r.deepSubstitute(q.truncate(n / i), i), fld.coerce(Mobius.mobius(i))), fld.coerce(i)));
+    return r.sum(1, n, i -> r.divide(r.multiply(r.deepSubstitute(q.truncate(n / i), i), fld.coerce(Functions.MOBIUS.i((long) i))), fld.coerce(i)));
   }
 
   /**

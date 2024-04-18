@@ -16,7 +16,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(IntegerUtilsTest.class);
     suite.addTestSuite(LongOrderedPairTest.class);
     suite.addTestSuite(LongUtilsTest.class);
-    suite.addTestSuite(MobiusTest.class);
     suite.addTestSuite(MutableIntegerTest.class);
     suite.addTestSuite(OrderedPairTest.class);
     suite.addTestSuite(PrimePowersTest.class);

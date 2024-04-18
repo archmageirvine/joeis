@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
 
@@ -19,6 +19,6 @@ public class A054525 extends Sequence1 {
       ++mN;
       mM = 1;
     }
-    return Z.valueOf(mN % mM == 0 ? Mobius.mobius(mN / mM) : 0);
+    return Z.valueOf(mN % mM == 0 ? Functions.MOBIUS.i(mN / mM) : 0);
   }
 }

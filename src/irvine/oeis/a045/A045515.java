@@ -1,7 +1,7 @@
 package irvine.oeis.a045;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -42,7 +42,7 @@ public class A045515 extends Sequence0 {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
-      sum = sum.add(s.coeff(d).coeff(0).toZ().multiply(Mobius.mobius(mN / d)));
+      sum = sum.add(s.coeff(d).coeff(0).toZ().multiply(Functions.MOBIUS.i((long) (mN / d))));
     }
     return sum;
   }

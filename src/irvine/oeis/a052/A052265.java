@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
@@ -49,7 +49,7 @@ public class A052265 extends A052107 {
       for (int j = 0; j <= i; ++j) {
         if (v[i].mod(v[j]).isZero()) {
           final int d = v[i].divide(v[j]).intValueExact();
-          final int mu = Mobius.mobius(d);
+          final int mu = Functions.MOBIUS.i((long) d);
           sum += mu * u.get(j).intValueExact();
         }
       }

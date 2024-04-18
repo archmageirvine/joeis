@@ -1,7 +1,7 @@
 package irvine.oeis.a276;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a081.A081720;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -26,7 +26,7 @@ public class A276550 extends UpperLeftTriangle {
     Z sum = Z.ZERO;
     for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
-      final Z term = mA081720.compute(d - 1, k - 1).multiply(Mobius.mobius(n / d));
+      final Z term = mA081720.compute(d - 1, k - 1).multiply(Functions.MOBIUS.i((long) (n / d)));
       sum = sum.add(term);
     }
     return sum;

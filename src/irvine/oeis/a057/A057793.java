@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 
-import irvine.math.Mobius;
 import irvine.math.cr.CR;
+import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Conjectural;
@@ -28,7 +28,8 @@ public class A057793 extends Sequence1 implements Conjectural {
         Z sum = Z.ZERO;
         long k = 0;
         while (true) {
-          final int mu = Mobius.mobius(++k);
+          final long n = ++k;
+          final int mu = Functions.MOBIUS.i(n);
           if (mu != 0) {
             final Z li = z.pow(new Q(1, k)).li().divide(CR.valueOf(k)).getApprox(p);
             if (li.isZero()) {

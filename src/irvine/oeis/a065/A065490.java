@@ -1,6 +1,6 @@
 package irvine.oeis.a065;
 
-import irvine.math.Mobius;
+import irvine.math.function.Functions;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -16,6 +16,6 @@ public class A065490 extends Sequence1 {
 
   @Override
   public Z next() {
-    return Integers.SINGLETON.sumdiv(++mN, d -> Z.NEG_ONE.pow(d).multiply(Mobius.mobius(mN / d)).multiply(Fibonacci.fibonacci(d - 1).add(Fibonacci.fibonacci(d + 1)).subtract(1))).divide(mN);
+    return Integers.SINGLETON.sumdiv(++mN, d -> Z.NEG_ONE.pow(d).multiply(Functions.MOBIUS.i((long) (mN / d))).multiply(Fibonacci.fibonacci(d - 1).add(Fibonacci.fibonacci(d + 1)).subtract(1))).divide(mN);
   }
 }

@@ -1,8 +1,8 @@
 package irvine.math.polynomial;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -23,7 +23,7 @@ public final class ExtendedSymmetricGroupCycleIndex {
       final Z mm = Z.valueOf(m);
       Z sum = Z.ZERO;
       for (final Z d : Jaguar.factor(s).divisors()) {
-        sum = sum.add(mm.pow(d).multiply(Mobius.mobius(s / d.intValue())));
+        sum = sum.add(mm.pow(d).multiply(Functions.MOBIUS.i((long) (s / d.intValue()))));
       }
       return sum.divide(s).intValueExact();
     } else {

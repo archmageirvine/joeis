@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
-import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -18,7 +18,7 @@ public class A068107 extends Sequence1 {
   @Override
   public Z next() {
     final Z fn = F.factorial(++mN);
-    return Integers.SINGLETON.sum(1, mN, k -> fn.divide(F.factorial(k)).multiply(Mobius.mobius(k)));
+    return Integers.SINGLETON.sum(1, mN, k -> fn.divide(F.factorial(k)).multiply(Functions.MOBIUS.i((long) k)));
   }
 }
 

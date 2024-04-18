@@ -62,17 +62,6 @@ public class A069295 extends Sequence2 {
         lst.set(k, t);
       }
     }
-    byte r = 1; // would be better if this happened during construction
-    final byte[] map = new byte[lst.size() + 1];
-    for (int k = 0; k < lst.size(); ++k) {
-      final byte b = lst.get(k);
-      if (b > 1) {
-        if (map[b] == 0) {
-          map[b] = ++r;
-        }
-        lst.set(k, map[b]);
-      }
-    }
   }
 
   private Map<List<Byte>, Z> update(final Map<List<Byte>, Z> left, final int rows) {
@@ -81,26 +70,44 @@ public class A069295 extends Sequence2 {
       final List<Byte> state = e.getKey();
       final Z cnt = e.getValue();
       final byte max = max(state); // maximum clump used so far
-      final byte[] remap = new byte[max + 1];
       for (long s = 1; s < 1L << rows; ++s) {
-        for (int k = 1; k < remap.length; ++k) {
-          remap[k] = (byte) k;
-        }
+        final byte[] remap = new byte[max + 1];
+        remap[1] = 1;
         final List<Byte> lst = new ArrayList<>(rows);
-        byte adj = max;
+        byte adj = 1;
         long t = s;
         byte p = 0;
         for (int r = 0; r < rows; ++r, t >>>= 1) {
-          final byte l = remap[state.get(r)];
+          final byte u = state.get(r);
+          byte l = remap[u];
           if ((t & 1) == 1) {
-            if (l == 0) {
+            if (u == 0) {
               if (p == 0) {
                 p = ++adj;
               }
-            } else if (p == 0 || l < p) {
-              p = l;
             } else {
-              remap[l] = p;
+              // assert u != 0;
+              if (p == 0) {
+                if (l != 0) {
+                  p = l;
+                } else {
+                  // allocate next available clump code
+                  p = ++adj;
+                  remap[u] = p;
+                }
+              } else {
+                // assert p != 0 && u != 0;
+                if (l == 0) {
+                  // allocate next available clump code
+                  l = ++adj;
+                  remap[u] = l;
+                }
+                if (l < p) {
+                  p = l;
+                } else {
+                  remap[u] = p;
+                }
+              }
             }
           } else {
             p = 0;

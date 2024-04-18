@@ -28,8 +28,8 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(LeastPrimitiveRootTest.class);
     suite.addTestSuite(LookAndSayTest.class);
     suite.addTestSuite(OmegaTest.class);
-    suite.addTestSuite(Phi.class);
-    suite.addTestSuite(Primorial.class);
+    suite.addTestSuite(PhiTest.class);
+    suite.addTestSuite(PrimorialTest.class);
     suite.addTestSuite(ReverseTest.class);
     suite.addTestSuite(RotateRightTest.class);
     suite.addTestSuite(Sigma0Test.class);

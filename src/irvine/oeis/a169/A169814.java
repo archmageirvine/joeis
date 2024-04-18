@@ -13,6 +13,6 @@ public class A169814 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A169814() {
-    super(1, n -> Z.valueOf(n).xor(Functions.PHI.z((long) n)));
+    super(1, n -> Z.valueOf(n).xor(Functions.PHI.z(n)));
   }
 }

@@ -18,7 +18,7 @@ public class A038787 extends A065091 {
     for (final Z rr : Jaguar.factor(p - 1).divisors()) {
       if (rr.isEven()) {
         final int r = rr.intValue();
-        sum = sum.add(Z.valueOf(Functions.PHI.l((long) r)).shiftLeft(2L * (p - 1) / r));
+        sum = sum.add(Functions.PHI.z(r).shiftLeft(2L * (p - 1) / r));
       }
     }
     return sum.divide(p - 1);

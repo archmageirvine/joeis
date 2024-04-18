@@ -22,6 +22,6 @@ public class A343910 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(Mobius.mobius(Functions.PHI.l((long) mN)));
+    return Z.valueOf(Mobius.mobius(Functions.PHI.l(mN)));
   }
 }

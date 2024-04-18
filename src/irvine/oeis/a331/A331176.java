@@ -14,8 +14,6 @@ public class A331176 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A331176() {
-    super(1, n -> {
-      return Z.valueOf(n).subtract(Z.valueOf(n).divide(Z.valueOf(n).gcd(Functions.PHI.l((long) n))));
-    });
+    super(1, n -> Z.valueOf(n).subtract(Z.valueOf(n).divide(Z.valueOf(n).gcd(Functions.PHI.l(n)))));
   }
 }

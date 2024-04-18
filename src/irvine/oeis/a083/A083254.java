@@ -1,7 +1,7 @@
 package irvine.oeis.a083;
 // manually 2024-03-14
 
-import irvine.factor.factor.Jaguar;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
 import irvine.oeis.DirectSequence;
@@ -27,7 +27,7 @@ public class A083254 extends AbstractSequence implements DirectSequence {
 
   @Override
   public Z a(final Z n) {
-    return Jaguar.factor(n).phi().multiply2().subtract(n);
+    return Functions.PHI.z(n).multiply2().subtract(n);
   }
 
   @Override

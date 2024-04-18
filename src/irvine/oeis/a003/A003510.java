@@ -22,7 +22,7 @@ public class A003510 extends Sequence0 {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mS = RING.add(mS, RING.monomial(new Q(Z.ONE, Z.valueOf(mN).multiply(Functions.PHI.l((long) mN))), mN));
+      mS = RING.add(mS, RING.monomial(new Q(Z.ONE, Z.valueOf(mN).multiply(Functions.PHI.l(mN))), mN));
       mF = mF.multiply(mN);
     }
     return RING.exp(mS, mN).coeff(mN).multiply(mF).toZ();

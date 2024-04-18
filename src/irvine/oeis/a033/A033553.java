@@ -19,7 +19,7 @@ public class A033553 extends Sequence1 {
   private boolean isA033553(final long n) {
     final FactorSequence fs = Jaguar.factor(n);
     for (final Z pp : fs.toZArray()) {
-      if ((n - 3) % Functions.PHI.z(pp.pow(fs.getExponent(pp))).longValueExact() != 0) {
+      if ((n - 3) % Functions.PHI.l(pp.pow(fs.getExponent(pp))) != 0) {
         return false;
       }
     }

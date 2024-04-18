@@ -14,8 +14,6 @@ public class A181538 extends LambdaTriangle {
 
   /** Construct the sequence. */
   public A181538() {
-    super(1, 1, 1, (n, k) -> {
-      return Z.valueOf(LongUtils.gcd(n, k)).multiply(Functions.PHI.z(Z.valueOf(k)));
-    });
+    super(1, 1, 1, (n, k) -> Z.valueOf(LongUtils.gcd(n, k)).multiply(Functions.PHI.z(k)));
   }
 }

@@ -17,6 +17,6 @@ public class A016035 extends Sequence1 {
     if (++mN == 1) {
       return Z.ZERO;
     }
-    return Z.valueOf(mN - Functions.PHI.l(mN) - 1);
+    return Functions.COTOTIENT.z(mN).subtract(1);
   }
 }

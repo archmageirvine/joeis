@@ -22,7 +22,7 @@ public class A038791 extends A065091 {
     for (final Z rr : Jaguar.factor(p - 1).divisors()) {
       if (rr.isOdd()) {
         final int r = rr.intValue();
-        sum = sum.add(Z.valueOf(Functions.PHI.l((long) r)).shiftLeft((p - 1) / r));
+        sum = sum.add(Functions.PHI.z(r).shiftLeft((p - 1) / r));
       }
     }
     return sum.divide(p - 1);

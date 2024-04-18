@@ -18,6 +18,6 @@ public class A307705 extends EulerTransform {
 
   @Override
   protected Z advance() {
-    return Z.valueOf(mN - Functions.PHI.l((long) mN));
+    return Functions.COTOTIENT.z(mN);
   }
 }

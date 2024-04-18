@@ -23,9 +23,7 @@ public class A293820 extends AbstractSequence {
   public Z next() {
     ++mN;
     // a(n) = (Sum_{d|n} phi(n/d)*2^d)/n - 1 - 2^floor(n/2).
-    return Integers.SINGLETON.sumdiv(mN, d -> {
-        return Functions.PHI.z(Z.valueOf(mN / d)).multiply(Z.ONE.shiftLeft(d));
-      })
+    return Integers.SINGLETON.sumdiv(mN, d -> Functions.PHI.z(mN / d).multiply(Z.ONE.shiftLeft(d)))
       .divide(mN).subtract(1).subtract(Z.ONE.shiftLeft(mN >> 1));
   }
 }

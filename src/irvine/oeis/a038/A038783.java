@@ -19,7 +19,7 @@ public class A038783 extends A065091 {
       final int r = rr.intValue();
       final int q = (p - 1) / r;
       if ((q & 1) == 0) {
-        sum = sum.add(Z.valueOf(Functions.PHI.l((long) r)).shiftLeft(q));
+        sum = sum.add(Functions.PHI.z(r).shiftLeft(q));
       }
     }
     return sum.multiply2().divide(p - 1);

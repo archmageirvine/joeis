@@ -27,7 +27,7 @@ public class A054200 extends Sequence0 {
       final int g = IntegerUtils.gcd(dd, 3);
       final int dg = dd / g;
       if ((dd & 1) == 1) {
-        final Z t = Z.valueOf(Functions.PHI.l((long) dd) / Functions.PHI.l((long) dg)).shiftLeft(mN / dd);
+        final Z t = Z.valueOf(Functions.PHI.l(dd) / Functions.PHI.l(dg)).shiftLeft(mN / dd);
         sum = ZUtils.mobiusAdd(Mobius.mobius(dg), sum, t);
       }
     }

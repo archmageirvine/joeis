@@ -19,7 +19,7 @@ public class A046145 extends Sequence0 {
     if (++mN <= 1) {
       return Z.ZERO;
     }
-    final Z phi = Z.valueOf(Functions.PHI.l(mN));
+    final Z phi = Functions.PHI.z(mN);
     final IntegersModMul rn = new IntegersModMul(mN);
     for (long q = 1; q <= mN; ++q) {
       if (LongUtils.gcd(q, mN) == 1 && rn.order(Z.valueOf(q)).equals(phi)) {

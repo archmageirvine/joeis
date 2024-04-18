@@ -15,8 +15,6 @@ public class A344993 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A344993() {
-    super(0, n -> Z.TWO.multiply(n).multiply(Z.valueOf(n + 1)).add(Z.TWO.multiply(Integers.SINGLETON.sum(2, n, i -> {
-      return Z.valueOf(n + 1 - i).multiply(Z.valueOf(2 * n + 2 - i)).multiply(Functions.PHI.l((long) i));
-    }))));
+    super(0, n -> Z.TWO.multiply(n).multiply(Z.valueOf(n + 1)).add(Z.TWO.multiply(Integers.SINGLETON.sum(2, n, i -> Z.valueOf(n + 1 - i).multiply(Z.valueOf(2L * n + 2 - i)).multiply(Functions.PHI.l(i))))));
   }
 }

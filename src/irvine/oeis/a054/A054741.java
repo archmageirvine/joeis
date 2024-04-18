@@ -16,7 +16,7 @@ public class A054741 extends Sequence1 {
   public Z next() {
     while (true) {
       final Z n = Z.valueOf(++mN);
-      final long phi = Functions.PHI.z(n).longValueExact();
+      final long phi = Functions.PHI.l(n);
       if (phi < mN - phi) {
         return n;
       }

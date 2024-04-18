@@ -19,7 +19,7 @@ public class A046144 extends Sequence1 {
     if (++mN == 1) {
       return Z.ONE;
     }
-    final Z phi = Z.valueOf(Functions.PHI.l(mN));
+    final Z phi = Functions.PHI.z(mN);
     final IntegersModMul rn = new IntegersModMul(mN);
     long cnt = 0;
     for (long q = 1; q <= mN; ++q) {

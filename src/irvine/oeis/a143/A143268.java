@@ -21,6 +21,6 @@ public class A143268 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.PHI.z(Z.valueOf(mN)).multiply((long) mN * (mN + 1) / 2);
+    return Functions.PHI.z(mN).multiply((long) mN * (mN + 1) / 2);
   }
 }

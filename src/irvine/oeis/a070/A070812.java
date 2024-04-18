@@ -22,6 +22,6 @@ public class A070812 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.PHI.z(Z.valueOf(Jaguar.factor(mN).largestPrimeFactor().intValue())).subtract(Jaguar.factor(Functions.PHI.l((long) mN)).largestPrimeFactor());
+    return Functions.PHI.z(Z.valueOf(Jaguar.factor(mN).largestPrimeFactor().intValue())).subtract(Jaguar.factor(Functions.PHI.l(mN)).largestPrimeFactor());
   }
 }

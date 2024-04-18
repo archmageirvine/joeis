@@ -32,7 +32,7 @@ public class A070676 extends Sequence1 {
     ++mN;
     int m = 1;
     final Z n = Z.valueOf(mN);
-    final int lim = Functions.PHI.z(Z.valueOf(mN)).intValue();
+    final int lim = Functions.PHI.i(mN);
     while (m <= lim) {
       if (mBase.pow(m).mod(n).equals(Z.ONE)) {
         return Z.valueOf(m);

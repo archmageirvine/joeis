@@ -23,7 +23,7 @@ public class A018804 extends Sequence1 implements DirectSequence {
   public Z a(final Z n) {
     Z sum = Z.ZERO;
     for (final Z d : Jaguar.factor(n).divisors()) {
-      sum = sum.add(Jaguar.factor(d).phi().multiply(n.divide(d)));
+      sum = sum.add(Functions.PHI.z(d).multiply(n.divide(d)));
     }
     return sum;
   }

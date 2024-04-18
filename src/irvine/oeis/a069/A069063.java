@@ -15,7 +15,7 @@ public class A069063 extends A002808 {
   public Z next() {
     while (true) {
       final Z n = super.next();
-      if (Integers.SINGLETON.sumdiv(n.intValueExact(), d -> Functions.PHI.z((long) d).square()).compareTo(n.multiply(n.add(1)).divide2()) > 0) {
+      if (Integers.SINGLETON.sumdiv(n.intValueExact(), d -> Functions.PHI.z(d).square()).compareTo(n.multiply(n.add(1)).divide2()) > 0) {
         return n;
       }
     }

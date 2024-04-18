@@ -46,9 +46,6 @@ public class A006841 extends Sequence1 {
   private int getH(final int rmd4) {
     switch (rmd4) {
       case 0:
-        return mN / 2;
-      case 1:
-        return (mN - 1) / 2;
       case 2:
         return mN / 2;
       case 3:
@@ -80,7 +77,7 @@ public class A006841 extends Sequence1 {
     for (int d = 1; d <= mN; d++) {
       if (mN % d == 0) {
         final int i = mN / d;
-        final Z t = Z.valueOf(Functions.PHI.l((long) i)).square().multiply(Z.valueOf(i).pow(d)).multiply(mF.factorial(d));
+        final Z t = Z.valueOf(Functions.PHI.l(i)).square().multiply(Z.valueOf(i).pow(d)).multiply(mF.factorial(d));
         wk1 = wk1.add(t);
       }
     }

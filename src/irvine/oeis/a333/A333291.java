@@ -21,7 +21,7 @@ public class A333291 extends Sequence1 {
     for (int k = 1; k <= mN; ++k) {
       final long gd = LongUtils.gcd(mN, k);
       if (gd == 1) {
-        sum = sum.add(Z.valueOf(k * Functions.PHI.l((long) k)));
+        sum = sum.add(Z.valueOf(k * Functions.PHI.l(k)));
       }
     }
     return sum;

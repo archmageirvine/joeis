@@ -15,8 +15,6 @@ public class A092274 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A092274() {
-    super(0, n -> Integers.SINGLETON.sum(2, n, k -> {
-      return Z.valueOf(k).min(n - k).multiply(Functions.PHI.l((long) k)).multiply(Z.valueOf(n - k));
-    }));
+    super(0, n -> Integers.SINGLETON.sum(2, n, k -> Z.valueOf(k).min(n - k).multiply(Functions.PHI.l(k)).multiply(n - k)));
   }
 }

@@ -20,7 +20,7 @@ public class A038790 extends A065091 {
       if (rr.isOdd()) {
         final int r = rr.intValue();
         final int q = (p - 1) / r;
-        final Z phi = Z.valueOf(Functions.PHI.l((long) r));
+        final Z phi = Functions.PHI.z(r);
         sum1 = sum1.add(phi.multiply(Z.ONE.shiftLeft((long) (p + 1) * q / 2)));
         sum2 = sum2.add(phi.shiftLeft(q));
       }

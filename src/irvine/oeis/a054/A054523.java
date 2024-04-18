@@ -19,6 +19,6 @@ public class A054523 extends Sequence1 {
       ++mN;
       mM = 1;
     }
-    return mN % mM == 0 ? Functions.PHI.z(Z.valueOf(mN / mM)) : Z.ZERO;
+    return mN % mM == 0 ? Functions.PHI.z(mN / mM) : Z.ZERO;
   }
 }

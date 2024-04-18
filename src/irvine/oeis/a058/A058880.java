@@ -16,9 +16,7 @@ public class A058880 extends Sequence3 {
   @Override
   public Z next() {
     ++mN;
-    final Z sum = Integers.SINGLETON.sumdiv(mN, d -> {
-      return Functions.PHI.z(Z.valueOf(d)).shiftLeft(2L * mN / d);
-    }).divide(2L * mN);
+    final Z sum = Integers.SINGLETON.sumdiv(mN, d -> Functions.PHI.z(d).shiftLeft(2L * mN / d)).divide(2L * mN);
     return (mN & 1) == 0 ? sum.add(Z.ONE.shiftLeft((mN - 4) / 2)) : sum;
   }
 }

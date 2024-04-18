@@ -23,8 +23,6 @@ public class A156834 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> {
-      return Functions.PHI.z(Z.valueOf(d)).multiply(Binomial.binomial(d + mN / d - 2, d - 1));
-    });
+    return Integers.SINGLETON.sumdiv(mN, d -> Functions.PHI.z(d).multiply(Binomial.binomial(d + mN / d - 2, d - 1)));
   }
 }

@@ -38,7 +38,7 @@ public class A000016 extends AbstractSequence {
     for (final Z d : fs.divisors()) {
       final int i = d.intValue();
       if ((i & 1) == 1) {
-        sum = sum.add(Z.valueOf(Functions.PHI.l((long) i)).shiftLeft(mN / i));
+        sum = sum.add(Functions.PHI.z(i).shiftLeft(mN / i));
       }
     }
     return sum.divide(2L * mN);

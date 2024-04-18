@@ -26,7 +26,7 @@ public class A152455 extends MemorySequence {
     final Z[] m = Jaguar.factor(n).toZArray();
     if (m.length == 1) {
       // i.e. n == p^a
-      return Functions.PHI.z(Z.valueOf(n));
+      return Functions.PHI.z(n);
     }
     final int p = m[0].intValueExact();
     int s = 1;

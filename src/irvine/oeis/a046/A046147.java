@@ -21,7 +21,7 @@ public class A046147 extends Sequence2 {
   public Z next() {
     while (mA.isEmpty()) {
       final long n = ++mN;
-      final Z phi = Z.valueOf(Functions.PHI.l(n));
+      final Z phi = Functions.PHI.z(n);
       final IntegersModMul rn = new IntegersModMul(mN);
       for (long q = 1; q <= mN; ++q) {
         if (LongUtils.gcd(q, mN) == 1 && rn.order(Z.valueOf(q)).equals(phi)) {

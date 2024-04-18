@@ -13,8 +13,6 @@ public class A104192 extends A060822 {
 
   /** Construct the sequence. */
   public A104192() {
-    super(1, (n, p) -> {
-      return Z.valueOf(p).subtract(Functions.PHI.z(Z.valueOf(n)));
-    });
+    super(1, (n, p) -> Z.valueOf(p).subtract(Functions.PHI.z(n)));
   }
 }

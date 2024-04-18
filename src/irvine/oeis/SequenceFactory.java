@@ -160,7 +160,7 @@ public final class SequenceFactory {
         case "Omega":
           return new SimpleTransformSequence(sequence(inner), k -> Functions.BIG_OMEGA.z(k));
         case "phi":
-          return new SimpleTransformSequence(sequence(inner), k -> Jaguar.factor(k).phi());
+          return new SimpleTransformSequence(sequence(inner), k -> Functions.PHI.z(k));
         case "prime":
           return new FilterSequence(sequence(inner), FilterSequence.PRIME);
         case "record":

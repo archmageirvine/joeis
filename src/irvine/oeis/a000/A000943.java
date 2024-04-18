@@ -18,7 +18,7 @@ public class A000943 extends Sequence1 {
     Z c = Z.ZERO;
     for (int d = 1; d <= mN; ++d) {
       if ((d & 1) == 1 && mN % d == 0) {
-        c = c.add(Z.valueOf(Functions.PHI.l((long) d)).shiftLeft(mN / d));
+        c = c.add(Z.valueOf(Functions.PHI.l(d)).shiftLeft(mN / d));
       }
     }
     c = c.divide(4L * mN);

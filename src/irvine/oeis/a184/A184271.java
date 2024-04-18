@@ -28,17 +28,10 @@ public class A184271 extends UpperLeftTriangle {
     mDim = Z.valueOf(dim);
   }
 
-  /* PARI from A184277 (0..3 arrays):
-    T(n, k) = (1/(n*k)) * sumdiv(n, c, sumdiv(k, d, eulerphi(c) * eulerphi(d) * 4^(n*k/lcm(c, d))));
-  */
   @Override
   public Z matrixElement(final int n, final int k) {
     final long t = (long) n * k;
-    return Integers.SINGLETON.sumdiv(n, c -> {
-      return Functions.PHI.z(Z.valueOf(c)).multiply(
-        Integers.SINGLETON.sumdiv(k, d -> {
-          return Functions.PHI.z(Z.valueOf(d)).multiply(mDim.pow(t / LongUtils.lcm(c, d)));
-        }));
-    }).divide(t);
+    return Integers.SINGLETON.sumdiv(n, c -> Functions.PHI.z(c).multiply(
+      Integers.SINGLETON.sumdiv(k, d -> Functions.PHI.z(d).multiply(mDim.pow(t / LongUtils.lcm(c, d)))))).divide(t);
   }
 }

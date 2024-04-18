@@ -20,7 +20,7 @@ public class A342540 extends Sequence1 {
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; ++k) {
       final long gd = LongUtils.gcd(mN, k);
-      sum = sum.add(Z.valueOf(Functions.PHI.l(gd)).pow(mN - 1));
+      sum = sum.add(Functions.PHI.z(gd).pow(mN - 1));
     }
     return sum;
   }

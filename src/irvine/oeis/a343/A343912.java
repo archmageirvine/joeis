@@ -13,8 +13,6 @@ public class A343912 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A343912() {
-    super(1, n -> {
-      return Z.valueOf(n - Functions.PHI.l(n - Functions.PHI.l((long) n)));
-    });
+    super(1, n -> Z.valueOf(n - Functions.PHI.l(Functions.COTOTIENT.l(n))));
   }
 }

@@ -29,9 +29,7 @@ public class A340812 extends MemoryFunction2Sequence<Integer, Z> {
   protected Polynomial<Z> c(final Polynomial<Z> p, final int n, final int k) {
     return RING.add(RING.subtract(p, RING.pow(p, k, n).shift(1)),
       RING.divide(RING.sumdiv(k,
-          d -> {
-            return RING.multiply(RING.pow(p.substitutePower(d, n), k / d, n), Functions.PHI.z(Z.valueOf(d)));
-          }),
+          d -> RING.multiply(RING.pow(p.substitutePower(d, n), k / d, n), Functions.PHI.z(d))),
         Z.valueOf(k)).shift(1));
   }
 

@@ -28,6 +28,6 @@ public class A056374 extends Sequence1 {
         sum = sum.add(Z.FIVE.pow(s));
       }
     }
-    return sum.divide(Functions.PHI.z(Z.valueOf(mN)));
+    return sum.divide(Functions.PHI.z(mN));
   }
 }

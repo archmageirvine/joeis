@@ -20,7 +20,7 @@ public class A057741 extends Sequence1 {
     if (n % k != 0) {
       return Z.ZERO;
     }
-    return Functions.PHI.z(Z.valueOf(k));
+    return Functions.PHI.z(k);
   }
 
   @Override

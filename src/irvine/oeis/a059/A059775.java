@@ -19,10 +19,10 @@ public class A059775 extends Sequence0 {
     final Z n = Z.valueOf(++mN);
     return n.multiply(mN - 1).multiply(n.square().subtract(mN + 1))
       .add(Integers.SINGLETON.sum(2, IntegerUtils.sqrt(mN), k -> {
-        return Z.valueOf(Functions.PHI.l((long) k) * (mN / ((long) k * k)));
+        return Z.valueOf(Functions.PHI.l(k) * (mN / ((long) k * k)));
       }).multiply(4))
       .subtract(Integers.SINGLETON.sum(2, mN, k -> {
-        return Z.valueOf(Functions.PHI.l((long) k) * (mN / k) * (mN / k));
+        return Z.valueOf(Functions.PHI.l(k) * (mN / k) * (mN / k));
       }).multiply2());
   }
 }

@@ -17,7 +17,7 @@ public class A055035 extends Sequence1 {
     if (++mN <= 2) {
       return Z.ONE;
     }
-    final Z phi = Functions.PHI.z(Z.valueOf(mN));
+    final Z phi = Functions.PHI.z(mN);
     return (mN & 3) == 2 ? phi.divide2() : phi;
   }
 }

@@ -21,6 +21,6 @@ public class A358061 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Functions.PHI.z(Z.valueOf(mN)).mod(Functions.SIGMA0.z(mN));
+    return Functions.PHI.z(mN).mod(Functions.SIGMA0.z(mN));
   }
 }

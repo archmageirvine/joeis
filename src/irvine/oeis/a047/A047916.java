@@ -17,7 +17,7 @@ public class A047916 extends Sequence1 {
 
   protected Z t(final int n, final int m) {
     return n % m == 0
-      ? mF.factorial(m).multiply(Functions.PHI.l((long) (n / m))).multiply(Z.valueOf(n / m).pow(m))
+      ? mF.factorial(m).multiply(Functions.PHI.l(n / m)).multiply(Z.valueOf(n / m).pow(m))
       : Z.ZERO;
   }
 

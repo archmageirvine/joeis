@@ -23,8 +23,6 @@ public class A206369 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> {
-      return LongUtils.isSquare(d) ? Functions.PHI.z(Z.valueOf(mN / d)) : Z.ZERO;
-    });
+    return Integers.SINGLETON.sumdiv(mN, d -> LongUtils.isSquare(d) ? Functions.PHI.z(mN / d) : Z.ZERO);
   }
 }

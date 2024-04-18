@@ -19,6 +19,6 @@ public class A197219 extends Sequence0 {
     if (mN == 0) {
       return Z.TWO;
     }
-    return Fibonacci.lucas(Functions.PHI.z(Z.valueOf(mN)).intValue());
+    return Fibonacci.lucas(Functions.PHI.i(mN));
   }
 }

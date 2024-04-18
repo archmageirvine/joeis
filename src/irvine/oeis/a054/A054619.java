@@ -20,8 +20,6 @@ public class A054619 extends Sequence1 {
       ++mN;
       mM = 1;
     }
-    return Integers.SINGLETON.sumdiv(mM, d -> {
-      return Functions.PHI.z(Z.valueOf(d)).multiply(Z.valueOf(mN).pow(mM / d));
-    });
+    return Integers.SINGLETON.sumdiv(mM, d -> Functions.PHI.z(d).multiply(Z.valueOf(mN).pow(mM / d)));
   }
 }

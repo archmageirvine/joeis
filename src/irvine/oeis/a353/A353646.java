@@ -23,6 +23,6 @@ public class A353646 extends AbstractSequence {
   @Override
   public Z next() {
     final FactorSequence fs = Jaguar.factor(++mN);
-    return Functions.PHI.z(fs.sigma()).divide(Functions.PHI.z(Z.valueOf(mN)).gcd(Functions.PHI.z(fs.sigma())));
+    return Functions.PHI.z(fs.sigma()).divide(Functions.PHI.z(mN).gcd(Functions.PHI.z(fs.sigma())));
   }
 }

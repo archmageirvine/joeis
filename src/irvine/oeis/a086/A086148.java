@@ -15,8 +15,6 @@ public class A086148 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A086148() {
-    super(1, n -> Z.TWO.multiply(n).add(Integers.SINGLETON.sumdiv(n, d -> {
-      return Z.valueOf(d).multiply(Functions.PHI.l((long) d));
-    })));
+    super(1, n -> Z.TWO.multiply(n).add(Integers.SINGLETON.sumdiv(n, d -> Z.valueOf(d).multiply(Functions.PHI.l(d)))));
   }
 }

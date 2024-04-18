@@ -16,7 +16,7 @@ public class A181540 extends LambdaSequence {
   /** Construct the sequence. */
   public A181540() {
     super(0, n -> Integers.SINGLETON.sum(0, n, k -> {
-      return Z.valueOf(n).gcd(k).multiply(Functions.PHI.l((long) k));
+      return Z.valueOf(n).gcd(k).multiply(Functions.PHI.l(k));
     }));
   }
 }

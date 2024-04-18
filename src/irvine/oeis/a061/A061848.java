@@ -23,7 +23,7 @@ public class A061848 extends A065091 {
     for (final Z rr : Jaguar.factor(s).divisors()) {
       if (rr.isEven()) {
         final int r = rr.intValue();
-        sum = sum.add(Z.valueOf(Functions.PHI.l((long) r)).shiftLeft(2 * s / r));
+        sum = sum.add(Functions.PHI.z(r).shiftLeft(2 * s / r));
       }
     }
     return sum.divide(s);

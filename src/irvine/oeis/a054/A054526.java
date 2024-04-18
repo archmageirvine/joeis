@@ -19,6 +19,6 @@ public class A054526 extends Sequence1 {
       ++mN;
       mM = 1;
     }
-    return Functions.PHI.z(Z.valueOf(mM));
+    return Functions.PHI.z(mM);
   }
 }

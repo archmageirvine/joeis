@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.math.factorial.BinarySplitFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -10,10 +10,10 @@ import irvine.oeis.Sequence0;
  */
 public class A066061 extends Sequence0 {
 
-  private int mN = -1;
+  private long mN = -1;
 
   @Override
   public Z next() {
-    return new BinarySplitFactorial().factorial(++mN * mN + mN + 1);
+    return Functions.FACTORIAL.z(++mN * mN + mN + 1);
   }
 }

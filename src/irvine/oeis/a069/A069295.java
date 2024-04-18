@@ -14,6 +14,8 @@ import irvine.oeis.Sequence2;
  */
 public class A069295 extends Sequence2 {
 
+  // todo this apparently is still broken for A069296 ...
+
   private int mN = 1;
 
   // We use a list to hold an entire column.
@@ -132,7 +134,7 @@ public class A069295 extends Sequence2 {
     return false;
   }
 
-  private Z count(final int rows, final int cols) {
+  protected Z count(final int rows, final int cols) {
     Map<List<Byte>, Z> state = initial(rows);
     // Now work across updating the counts
     for (int c = 1; c < cols; ++c) {

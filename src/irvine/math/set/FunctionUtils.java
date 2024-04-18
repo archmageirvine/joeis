@@ -1,7 +1,7 @@
 package irvine.math.set;
 
 import irvine.math.api.Set;
-import irvine.math.factorial.BinarySplitFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
@@ -79,7 +79,7 @@ public final class FunctionUtils {
     }
     final long n = domainSize.longValueExact();
     final long m = codomainSize.longValue();
-    return Stirling.secondKind(n, m).multiply(new BinarySplitFactorial().factorial((int) m));
+    return Stirling.secondKind(n, m).multiply(Functions.FACTORIAL.z(m));
   }
 
   /**
@@ -109,7 +109,7 @@ public final class FunctionUtils {
     }
     if (codomainSize.equals(domainSize)) {
       // This special case is a speed optimization
-      return new BinarySplitFactorial().factorial(codomainSize.intValueExact());
+      return Functions.FACTORIAL.z(codomainSize);
     }
     Z fallingFactorial = Z.ONE;
     for (Z k = Z.ZERO, j = codomainSize; k.compareTo(domainSize) < 0; k = k.add(1), j = j.subtract(1)) {

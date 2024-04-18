@@ -8,6 +8,8 @@ public final class Functions {
 
   private Functions() { }
 
+  /** Factorial. */
+  public static final Function1 FACTORIAL = new Factorial();
   /** Primorial, product of all primes up to and including the parameter. */
   public static final Function1 PRIMORIAL = new Primorial();
   /** Product of the specified number of primes. */

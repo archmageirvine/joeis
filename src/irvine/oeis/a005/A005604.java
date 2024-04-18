@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.math.factorial.BinarySplitFactorial;
+import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
 
@@ -10,7 +10,6 @@ import irvine.oeis.Sequence0;
  */
 public class A005604 extends Sequence0 {
 
-  private final BinarySplitFactorial mF = new BinarySplitFactorial();
   private Z mA = null;
   private Z mB = null;
 
@@ -21,7 +20,7 @@ public class A005604 extends Sequence0 {
     } else if (mA == null) {
       mA = Z.ONE;
     } else {
-      final Z t = mF.factorial(mB.intValueExact()).add(mF.factorial(mA.intValueExact()));
+      final Z t = Functions.FACTORIAL.z(mB).add(Functions.FACTORIAL.z(mA));
       mA = mB;
       mB = t;
     }

@@ -1,6 +1,5 @@
 package irvine.oeis.a066;
 
-import irvine.math.factorial.BinarySplitFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
@@ -11,10 +10,8 @@ import irvine.oeis.a000.A000040;
  */
 public class A066835 extends A000040 {
 
-  private final BinarySplitFactorial mFactorial = new BinarySplitFactorial();
-
   @Override
   public Z next() {
-    return Z.valueOf(Functions.OMEGA.i(mFactorial.factorial(super.next().subtract(1).intValueExact()).add(1)));
+    return Functions.OMEGA.z(Functions.FACTORIAL.z(super.next().subtract(1)).add(1));
   }
 }

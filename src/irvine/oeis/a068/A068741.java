@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.math.factorial.BinarySplitFactorial;
+import irvine.math.function.Functions;
 import irvine.oeis.a000.A000312;
 import irvine.oeis.transform.SimpleTransformSequence;
 
@@ -12,6 +12,6 @@ public class A068741 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A068741() {
-    super(0, new A000312(), v -> new BinarySplitFactorial().factorial(v.intValueExact()));
+    super(0, new A000312(), Functions.FACTORIAL::z);
   }
 }

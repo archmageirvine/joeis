@@ -22,7 +22,7 @@ public class A124107 extends Sequence1 {
     for (int k = 1; k < MAX; ++k) {
       for (int j = 0; j < MAX; ++j) {
         final long v = ITERATED_FACTORIAL[k - 1][j];
-        ITERATED_FACTORIAL[k][j] = v == -1 || v >= 20 ? -1 : Functions.FACTORIAL.z((int) v).longValue();
+        ITERATED_FACTORIAL[k][j] = v == -1 || v >= 20 ? -1 : Functions.FACTORIAL.l(v);
       }
     }
   }

@@ -1,6 +1,7 @@
 package irvine.oeis.a069;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -16,6 +17,7 @@ public class A069295 extends Sequence2 {
 
   // todo this apparently is still broken for A069296 ...
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 1;
 
   // We use a list to hold an entire column.
@@ -64,6 +66,20 @@ public class A069295 extends Sequence2 {
         lst.set(k, t);
       }
     }
+    // Despite the construction procedure we sometimes end up with states
+    // like [1,1,0,3,3], which is equivalent to [1,1,0,2,2].  This step
+    // adjusts for that.
+    byte r = 1;
+    final byte[] map = new byte[lst.size() + 1];
+    for (int k = 0; k < lst.size(); ++k) {
+      final byte b = lst.get(k);
+      if (b > 1) {
+        if (map[b] == 0) {
+          map[b] = ++r;
+        }
+        lst.set(k, map[b]);
+      }
+    }
   }
 
   private Map<List<Byte>, Z> update(final Map<List<Byte>, Z> left, final int rows) {
@@ -108,6 +124,13 @@ public class A069295 extends Sequence2 {
                   p = l;
                 } else {
                   remap[u] = p;
+                  // Now associating u with p, replace all earlier settings
+                  // todo this is possibly unnecessary but leaving until more cases are getting the right answer
+                  for (int j = r - 1; j >= 0; --j) {
+                    if (lst.get(j) == l) {
+                      lst.set(j, p);
+                    }
+                  }
                 }
               }
             }
@@ -118,12 +141,20 @@ public class A069295 extends Sequence2 {
         }
         adjust(lst);
         if (hasOne(lst)) {
+
+          // debug
+          if (mVerbose && state.equals(DEBUG)) {
+            System.out.println(state + " -> " + lst + " with multiplicity " + cnt);
+          }
+
           res.merge(lst, cnt, Z::add);
         }
       }
     }
     return res;
   }
+
+  private static final List<Byte> DEBUG = Arrays.asList((byte) 2, (byte) 0, (byte) 2, (byte) 0, (byte) 1);
 
   private boolean hasOne(final List<Byte> lst) {
     for (final byte b : lst) {
@@ -136,10 +167,15 @@ public class A069295 extends Sequence2 {
 
   protected Z count(final int rows, final int cols) {
     Map<List<Byte>, Z> state = initial(rows);
+    if (mVerbose) {
+      System.out.println(state);
+    }
     // Now work across updating the counts
     for (int c = 1; c < cols; ++c) {
-      //System.out.println(state);
       state = update(state, rows);
+      if (mVerbose) {
+        System.out.println(state);
+      }
     }
     Z sum = Z.ZERO;
     for (final Map.Entry<List<Byte>, Z> e : state.entrySet()) {
@@ -151,6 +187,5 @@ public class A069295 extends Sequence2 {
   @Override
   public Z next() {
     return count(++mN, 4);
-    //return count(4, ++mN);
   }
 }

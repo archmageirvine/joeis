@@ -13,6 +13,6 @@ public class A091330 extends A060822 {
 
   /** Construct the sequence. */
   public A091330() {
-    super(1, (n, p) -> Functions.FACTORIAL.z(Z.valueOf(p).subtract(Z.ONE)).divide(Z.valueOf(p)).subtract(Z.valueOf(p).subtract(Z.ONE).multiply(Functions.FACTORIAL.z(Z.valueOf(p).subtract(Z.ONE))).divide(Functions.FACTORIAL.z(Z.valueOf(p)))));
+    super(1, (n, p) -> Functions.FACTORIAL.z(p - 1).divide(p).subtract(Z.valueOf(p).subtract(Z.ONE).multiply(Functions.FACTORIAL.z(p - 1)).divide(Functions.FACTORIAL.z(p))));
   }
 }

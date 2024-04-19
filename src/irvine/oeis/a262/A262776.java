@@ -22,7 +22,7 @@ public class A262776 extends Sequence0 {
     final Z mod = Functions.FACTORIAL.z(Fibonacci.fibonacci(mN));
     Z a = Z.ZERO;
     Z b = Z.ONE;
-    final long fn = Functions.FACTORIAL.z(mN).longValueExact();
+    final long fn = Functions.FACTORIAL.l(mN);
     for (long k = 1; k < fn; ++k) {
       final Z t = a.add(b).mod(mod);
       a = b;

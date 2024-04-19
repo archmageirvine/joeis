@@ -24,7 +24,7 @@ public class A322583 extends MemorySequence {
     long sum = 0;
     long f;
     int k = 1;
-    while ((f = Functions.FACTORIAL.z(++k).longValueExact()) <= m) {
+    while ((f = Functions.FACTORIAL.l(++k)) <= m) {
       if (n % f == 0) {
         sum += calculate(n / f, f);
       }

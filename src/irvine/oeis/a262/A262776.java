@@ -19,7 +19,7 @@ public class A262776 extends Sequence0 {
     if (++mN < 6) {
       return Z.ZERO;
     }
-    final Z mod = Functions.FACTORIAL.z(Fibonacci.fibonacci(mN).intValue());
+    final Z mod = Functions.FACTORIAL.z(Fibonacci.fibonacci(mN));
     Z a = Z.ZERO;
     Z b = Z.ONE;
     final long fn = Functions.FACTORIAL.z(mN).longValueExact();

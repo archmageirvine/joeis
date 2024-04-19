@@ -17,7 +17,7 @@ public class A214078 extends SimpleTransformSequence {
   /** Construct the sequence. */
   public A214078() {
     super(0, new A003059(), v -> {
-      return Functions.FACTORIAL.z(v.intValueExact());
+      return Functions.FACTORIAL.z(v);
     });
   }
 

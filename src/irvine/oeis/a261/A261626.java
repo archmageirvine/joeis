@@ -18,7 +18,7 @@ public class A261626 extends Sequence0 {
   public Z next() {
     ++mN;
     final Z result = Fibonacci.fibonacci(mF)
-      .subtract(Functions.FACTORIAL.z(Fibonacci.fibonacci(mN).intValue()));
+      .subtract(Functions.FACTORIAL.z(Fibonacci.fibonacci(mN)));
     mF = mF * (mN + 1);
     return result;
   }

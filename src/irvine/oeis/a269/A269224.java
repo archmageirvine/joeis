@@ -14,7 +14,7 @@ public class A269224 extends SimpleTransformSequence {
   /** Construct the sequence. */
   public A269224() {
     super(0, new A053737(), v -> {
-      return Functions.FACTORIAL.z(v.intValueExact());
+      return Functions.FACTORIAL.z(v);
     });
   }
 }

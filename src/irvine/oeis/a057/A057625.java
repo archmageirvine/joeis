@@ -18,7 +18,7 @@ public class A057625 extends Sequence1 {
   public Z next() {
     Q sum = Q.ZERO;
     for (final Z d : Jaguar.factor(++mN).divisors()) {
-      sum = sum.add(new Q(Z.ONE, Functions.FACTORIAL.z(d.intValue())));
+      sum = sum.add(new Q(Z.ONE, Functions.FACTORIAL.z(d)));
     }
     return sum.multiply(Functions.FACTORIAL.z(mN)).toZ();
   }

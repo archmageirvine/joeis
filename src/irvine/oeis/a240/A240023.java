@@ -13,7 +13,7 @@ public class A240023 extends MultiplicativeSequence {
   /** Construct the sequence. */
   public A240023() {
     super(1, (p, e) -> {
-      return Functions.FACTORIAL.z(p.intValue()).pow(e);
+      return Functions.FACTORIAL.z(p).pow(e);
     });
   }
 }

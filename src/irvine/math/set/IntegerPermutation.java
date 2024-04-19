@@ -389,7 +389,7 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
     if (r == 0) {
       return p;
     }
-    final int f = Functions.FACTORIAL.z(n - 1).intValueExact();
+    final int f = Functions.FACTORIAL.i(n - 1);
     final int s = r / f;
     final int[] q = IntegerUtils.identity(new int[n]);
     q[n - 1] = n - s - 1;

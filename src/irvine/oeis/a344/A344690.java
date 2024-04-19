@@ -22,6 +22,6 @@ public class A344690 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Binomial.binomial(Functions.FACTORIAL.z(mN).intValue() + mN - 1, mN);
+    return Binomial.binomial(Functions.FACTORIAL.l(mN) + mN - 1, mN);
   }
 }

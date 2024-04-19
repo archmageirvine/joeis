@@ -17,7 +17,7 @@ public class A168359 extends Sequence0 {
   @Override
   public Z next() {
     ++mN;
-    final Z result = Functions.FACTORIAL.z(Fibonacci.fibonacci(mF).intValue());
+    final Z result = Functions.FACTORIAL.z(Fibonacci.fibonacci(mF));
     mF *= mN;
     return result;
   }

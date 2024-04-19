@@ -69,7 +69,7 @@ public final class GroupGraphs {
   private static List<Permutation<Integer>> makeGeneratorsForSymmetricGroup(final int n) {
     assert n >= 3;
     final ArrayList<Permutation<Integer>> gens = new ArrayList<>();
-    final int m = Functions.FACTORIAL.z(n).intValueExact();
+    final int m = Functions.FACTORIAL.i(n);
     for (int k = 1; k < n; ++k) {
       final int[] p = new int[m];
       for (int j = 0; j < m; ++j) {

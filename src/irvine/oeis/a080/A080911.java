@@ -22,6 +22,6 @@ public class A080911 extends AbstractSequence {
   @Override
   public Z next() {
     ++mN;
-    return Binomial.binomial(Functions.FACTORIAL.z(mN).intValue(), Functions.FACTORIAL.z(mN - 1).intValue());
+    return Binomial.binomial(Functions.FACTORIAL.z(mN), Functions.FACTORIAL.z(mN - 1).intValue());
   }
 }

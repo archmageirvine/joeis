@@ -22,7 +22,7 @@ public class A061889 extends Sequence2 {
       if (m.compareTo(Z.ONE) <= 0 || n.compareTo(k) < 0) {
         return Z.ZERO;
       }
-      final Z mf = Functions.FACTORIAL.z(m.intValueExact());
+      final Z mf = Functions.FACTORIAL.z(m);
       if (n.compareTo(mf.multiply(k)) > 0) {
         return Z.ZERO;
       }

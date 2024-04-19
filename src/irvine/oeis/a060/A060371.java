@@ -12,6 +12,6 @@ public class A060371 extends A000040 {
 
   @Override
   public Z next() {
-    return Functions.FACTORIAL.z(super.next().subtract(1).intValueExact()).add(1);
+    return Functions.FACTORIAL.z(super.next().subtract(1)).add(1);
   }
 }

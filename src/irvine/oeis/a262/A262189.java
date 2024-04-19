@@ -24,7 +24,7 @@ public class A262189 extends Sequence1 {
 
   @Override
   public Z next() {
-    final Z result = Functions.FACTORIAL.z(mB.intValue()).divide(mA);
+    final Z result = Functions.FACTORIAL.z(mB).divide(mA);
     mA = mB;
     mB = mSeq.next();
     return result;

@@ -12,8 +12,8 @@ public class A336810 extends FoldedContinuedFraction {
   /** Construct the sequence. */
   public A336810() {
     super(0, k -> {
-        return Functions.FACTORIAL.z(Functions.FACTORIAL.z(k + 3).intValue())
-            .divide(Functions.FACTORIAL.z(Functions.FACTORIAL.z(k + 2).intValue()).square());
+        return Functions.FACTORIAL.z(Functions.FACTORIAL.z(k + 3))
+            .divide(Functions.FACTORIAL.z(Functions.FACTORIAL.z(k + 2)).square());
       }
         , 2, 1, 1, 179, 2);
   }

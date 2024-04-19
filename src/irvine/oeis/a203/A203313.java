@@ -12,6 +12,6 @@ public class A203313 extends QuotientSequence {
 
   /** Construct the sequence. */
   public A203313() {
-    super(new A203311(), new A000178());
+    super(1, new A203311().skip(), new A000178());
   }
 }

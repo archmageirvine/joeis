@@ -1,7 +1,6 @@
 package irvine.oeis.a060;
 
 import irvine.math.cr.CR;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
@@ -15,7 +14,6 @@ import irvine.oeis.Sequence0;
 public class A060053 extends Sequence0 {
 
   private static final Q NEG_HALF = Q.HALF.negate();
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   private Q innerSum(final int n, final int m) {

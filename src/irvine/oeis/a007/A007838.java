@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -33,7 +32,6 @@ public class A007838 extends MemorySequence {
   }
 
   private final BFunction mB = new BFunction();
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   protected MemoryFunction1<Q> getB() {
     return mB;

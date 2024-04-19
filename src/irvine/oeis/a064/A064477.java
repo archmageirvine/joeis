@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.function.Functions;
 import irvine.oeis.transform.SimpleTransformSequence;
 
 /**
@@ -11,7 +11,7 @@ public class A064477 extends SimpleTransformSequence {
 
   /** Construct the sequence. */
   public A064477() {
-    super(0, new A064637(), MemoryFactorial.SINGLETON::factorialBase);
+    super(0, new A064637(), n -> Functions.FACTORIAL_BASE.z(n));
   }
 }
 

@@ -1,6 +1,5 @@
 package irvine.oeis.a062;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -14,7 +13,6 @@ import irvine.oeis.triangle.Triangle;
 public class A062137 extends Triangle {
 
   private final int mParm;
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /** Construct the sequence. */
   public A062137() {

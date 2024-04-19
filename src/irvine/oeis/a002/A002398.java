@@ -1,6 +1,5 @@
 package irvine.oeis.a002;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
@@ -31,7 +30,6 @@ public class A002398 extends AbstractSequence {
   // After Jack Grahl
 
   static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   Z l(final int n) {

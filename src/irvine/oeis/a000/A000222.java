@@ -1,6 +1,5 @@
 package irvine.oeis.a000;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -17,7 +16,6 @@ public class A000222 extends Sequence0 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> BASE = Polynomial.create(-1, 1);
-  private final MemoryFactorial mFactorial = MemoryFactorial.SINGLETON;
 
   // This will be useful for other sequences based on A058057
   Polynomial<Z> menageHitPolynomial(final int n) {

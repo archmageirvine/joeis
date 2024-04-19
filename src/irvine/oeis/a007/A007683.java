@@ -1,6 +1,5 @@
 package irvine.oeis.a007;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemorySequence;
@@ -15,7 +14,6 @@ public class A007683 extends MemorySequence {
     setOffset(1);
   }
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   @Override
   protected Z computeNext() {

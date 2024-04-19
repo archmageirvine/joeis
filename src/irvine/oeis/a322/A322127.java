@@ -1,6 +1,5 @@
 package irvine.oeis.a322;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
@@ -12,7 +11,6 @@ import irvine.oeis.triangle.RationalTriangle;
  */
 public class A322127 extends RationalTriangle {
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /** Construct the sequence. */
   public A322127() {

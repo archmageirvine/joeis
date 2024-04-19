@@ -1,7 +1,6 @@
 package irvine.oeis.a005;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
@@ -14,7 +13,6 @@ import irvine.oeis.Sequence1;
  */
 public class A005747 extends Sequence1 {
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /**
    * Compute the number of k-covers of an n-set

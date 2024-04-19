@@ -1,6 +1,5 @@
 package irvine.oeis.a061;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.partition.DistinctPartsPartition;
 import irvine.math.z.Integers;
@@ -15,7 +14,6 @@ public class A061343 extends Sequence1 {
 
   // After Joerg Arndt
 
-  private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   private Z productFactorials(final int[] v) {

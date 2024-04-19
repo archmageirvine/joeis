@@ -2,7 +2,6 @@ package irvine.oeis.a050;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -15,7 +14,6 @@ import irvine.oeis.Sequence1;
 public class A050255 extends Sequence1 {
 
   private static final CR LN2 = CR.TWO.log();
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mA = 0;
   private int mN = 0;
 

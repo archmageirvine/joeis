@@ -1,6 +1,5 @@
 package irvine.oeis.a226;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -12,7 +11,6 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  */
 public class A226288 extends UpperLeftTriangle {
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /** Construct the sequence. */
   public A226288() {

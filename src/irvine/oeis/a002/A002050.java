@@ -2,7 +2,6 @@ package irvine.oeis.a002;
 
 import java.util.ArrayList;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
@@ -15,7 +14,6 @@ import irvine.oeis.Sequence0;
 public class A002050 extends Sequence0 {
 
   private int mN = -1;
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final ArrayList<Z> mS = new ArrayList<>();
 
   @Override

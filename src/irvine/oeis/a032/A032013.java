@@ -1,6 +1,5 @@
 package irvine.oeis.a032;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -14,7 +13,6 @@ public class A032013 extends MemoryFunctionInt3Sequence<Z> {
 
   // After Alois P. Heinz
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   @Override

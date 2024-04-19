@@ -1,6 +1,5 @@
 package irvine.oeis.a005;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -16,7 +15,6 @@ public class A005119 extends MemorySequence {
     setOffset(1);
   }
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   @Override
   protected Z computeNext() {

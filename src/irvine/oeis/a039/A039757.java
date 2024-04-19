@@ -1,6 +1,5 @@
 package irvine.oeis.a039;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.memory.MemoryFunction2Sequence;
@@ -11,7 +10,6 @@ import irvine.oeis.memory.MemoryFunction2Sequence;
  */
 public class A039757 extends MemoryFunction2Sequence<Integer, Z> {
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
   private int mM = 0;
 

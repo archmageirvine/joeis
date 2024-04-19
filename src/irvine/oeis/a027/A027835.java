@@ -1,7 +1,6 @@
 package irvine.oeis.a027;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 
@@ -13,7 +12,6 @@ public class A027835 extends A027834 {
 
   // After Petros Hadjicostas
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   @Override

@@ -1,7 +1,6 @@
 package irvine.oeis.a327;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.IntegerField;
@@ -31,7 +30,6 @@ public class A327371 extends AbstractSequence {
   }
 
   private static final Polynomial<Z> C1 = Polynomial.create(0, 0, 1);
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
   private int mM = 0;
   private Polynomial<Polynomial<Z>> mGf = null;

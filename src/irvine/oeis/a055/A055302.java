@@ -1,6 +1,5 @@
 package irvine.oeis.a055;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
@@ -13,7 +12,6 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A055302 extends Triangle {
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /** Construct the sequence. */
   public A055302() {

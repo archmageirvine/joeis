@@ -5,7 +5,6 @@ import java.util.Collections;
 import java.util.List;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
@@ -20,7 +19,6 @@ public class A309858 extends MemoryFunction2Sequence<Integer, Z> {
 
   // After Alois P. Heinz
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mD = -1;
   private int mN = 0;
 

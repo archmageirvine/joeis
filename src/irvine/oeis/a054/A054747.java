@@ -1,7 +1,6 @@
 package irvine.oeis.a054;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
@@ -14,7 +13,6 @@ import irvine.oeis.Sequence1;
  */
 public class A054747 extends Sequence1 {
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   private Z innerProduct(final int[] j, final int[] l, final int r) {

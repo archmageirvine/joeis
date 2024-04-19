@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -17,7 +16,6 @@ public class A035470 extends Sequence1 {
 
   // After Alois P. Heinz
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final HashMap<String, Z> mCache = new HashMap<>();
   private int mN = 0;
 

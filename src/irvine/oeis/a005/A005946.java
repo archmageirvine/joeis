@@ -1,6 +1,5 @@
 package irvine.oeis.a005;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -25,7 +24,6 @@ public class A005946 extends MemoryFunction2Sequence<Integer, Z> {
     super(1);
   }
 
-  protected static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   protected int mN = 0;
 
   protected static Z per(final int[] a) {

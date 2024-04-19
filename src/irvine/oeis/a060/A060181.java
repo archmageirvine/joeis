@@ -1,7 +1,6 @@
 package irvine.oeis.a060;
 
 import irvine.factor.prime.Fast;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -14,7 +13,6 @@ public class A060181 extends Sequence1 {
 
   // After Robert Israel
 
-  private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
   private final Fast mPrime = new Fast();
   private int mN = 0;
 

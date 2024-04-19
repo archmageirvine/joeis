@@ -1,7 +1,6 @@
 package irvine.oeis.a005;
 
 import irvine.math.MemoryFunction1;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -15,7 +14,6 @@ public class A005640 extends AbstractSequence {
 
   // This could be made faster by caching results
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN = -2;
 
   /** Construct the sequence. */

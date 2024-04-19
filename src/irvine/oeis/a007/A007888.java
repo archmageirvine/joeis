@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -23,7 +22,6 @@ public class A007888 extends Sequence1 {
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Z Z12 = Z.valueOf(12);
   private static final Q Q12 = new Q(-1, 12);
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final ArrayList<Q> mBernoulli = new ArrayList<>();
   private final BernoulliSequence mBernoulliSequence = new BernoulliSequence(0);
   private int mN = -2;

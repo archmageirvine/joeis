@@ -2,7 +2,6 @@ package irvine.oeis.a005;
 
 import java.util.Arrays;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.partition.IntegerPartition;
@@ -29,7 +28,6 @@ public class A005489 extends MemoryFunctionSequence<Integer, Polynomial<Q>> {
   private static final PolynomialRing<Q> RING = new PolynomialRing<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C1 = RING.create(Arrays.asList(Q.NEG_ONE, Q.TWO));
   private static final Polynomial<Q> C2 = RING.create(Arrays.asList(Q.ZERO, Q.NEG_ONE, Q.ONE));
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   @Override

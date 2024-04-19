@@ -1,6 +1,5 @@
 package irvine.oeis.a127;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -13,7 +12,6 @@ public class A127223 extends AbstractSequence {
 
   private final int mExpon;
   private int mN;
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /** Construct the sequence. */
   public A127223() {

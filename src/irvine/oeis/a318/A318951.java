@@ -1,7 +1,6 @@
 package irvine.oeis.a318;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -35,7 +34,6 @@ public class A318951 extends AbstractSequence {
 
   private static final PolynomialRingField<Z> RINGZ = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private Z permCount(final int[] v) {
     Z m = Z.ONE;

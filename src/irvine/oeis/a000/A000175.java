@@ -2,7 +2,6 @@ package irvine.oeis.a000;
 
 import java.util.Arrays;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -20,7 +19,6 @@ public class A000175 extends Sequence1 {
   // Using method described by Herman Jamke
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   private Z pi0(final int n) {

@@ -1,7 +1,6 @@
 package irvine.oeis.a318;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
@@ -34,7 +33,6 @@ public class A318795 extends A052107 {
   // After Andrew Howroyd
 
   private static final PolynomialRingField<Q> RING_Y = new PolynomialRingField<>("y", Rationals.SINGLETON);
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
   private int mM = 0;
 

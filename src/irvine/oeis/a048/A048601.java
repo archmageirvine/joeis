@@ -1,6 +1,5 @@
 package irvine.oeis.a048;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -25,7 +24,6 @@ public class A048601 extends AbstractSequence {
     super(1);
   }
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
   private int mM = 0;
 

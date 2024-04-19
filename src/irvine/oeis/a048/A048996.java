@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.TreeSet;
 
 import irvine.math.Comparators;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -29,7 +28,6 @@ public class A048996 extends AbstractSequence {
     super(0);
   }
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final TreeSet<int[]> mA = new TreeSet<>(Comparators.ABRAHAM_STEGUN);
   protected int mN = -1;
   private int[] mC;

@@ -1,6 +1,5 @@
 package irvine.oeis.a067;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.HarmonicSequence;
 import irvine.math.q.Q;
@@ -13,7 +12,6 @@ import irvine.oeis.CachedSequence;
  */
 public class A067857 extends CachedSequence {
 
-  private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
   private static final HarmonicSequence H = new HarmonicSequence();
 
   /** Construct the sequence. */

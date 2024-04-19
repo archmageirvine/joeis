@@ -1,6 +1,5 @@
 package irvine.oeis.a068;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
@@ -15,7 +14,6 @@ public class A068182 extends Sequence0 {
 
   // Formula (4) of Evgeniy Krasko, Igor Labutin, and Alexander Omelchenko
 
-  private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
   private static final Z Z12 = Z.valueOf(12);
   private int mN = 0;
 

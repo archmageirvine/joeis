@@ -1,6 +1,5 @@
 package irvine.oeis.a052;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
@@ -14,7 +13,6 @@ import irvine.oeis.memory.MemoryFunction2Sequence;
  */
 public class A052136 extends MemoryFunction2Sequence<Integer, Q> {
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   @Override

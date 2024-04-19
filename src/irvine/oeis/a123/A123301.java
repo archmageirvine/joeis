@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
@@ -65,7 +64,6 @@ public class A123301 extends AbstractSequence {
     return diff;
   }
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   // This version of reversion supports non-unit [x^1] coefficient
   // See https://mathworld.wolfram.com/SeriesReversion.html Morse and Feshbach formula

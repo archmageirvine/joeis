@@ -1,7 +1,6 @@
 package irvine.oeis.a074;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -12,7 +11,6 @@ import irvine.oeis.Sequence1;
  */
 public class A074651 extends Sequence1 {
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   protected int scale() {

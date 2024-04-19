@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
@@ -191,7 +190,6 @@ public final class IntegerPartition {
     return PARTITIONS.get(index);
   }
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /**
    * Return the number of standard Young tableaux corresponding to the given

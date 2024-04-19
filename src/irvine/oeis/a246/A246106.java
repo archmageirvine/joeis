@@ -5,7 +5,6 @@ import java.util.Collections;
 import java.util.List;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -19,7 +18,6 @@ public class A246106 extends MemoryFunction2Sequence<Integer, List<List<int[]>>>
 
   // After Alois P. Heinz
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
   private int mM = 0;
 

@@ -2,7 +2,6 @@ package irvine.oeis.a003;
 
 import java.util.Arrays;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -19,7 +18,6 @@ public class A003514 extends Sequence0 {
 
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> P = RING.create(Arrays.asList(Q.ZERO, Q.HALF, new Q(-1, 4)));
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   protected Polynomial<Q> egf(final int n) {

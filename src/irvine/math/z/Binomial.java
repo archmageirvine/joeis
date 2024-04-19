@@ -1,7 +1,6 @@
 package irvine.math.z;
 
 import irvine.math.LongUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 
@@ -135,7 +134,6 @@ public final class Binomial {
     return binomial(2 * n, n).divide(n + 1);
   }
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /**
    * Compute a multinomial coefficient.

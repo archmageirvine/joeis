@@ -1,6 +1,5 @@
 package irvine.oeis.a006;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -17,7 +16,6 @@ public class A006572 extends A111999 {
     super(0);
   }
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   protected Z select(final Q n) {

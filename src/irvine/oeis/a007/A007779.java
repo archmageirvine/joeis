@@ -1,6 +1,5 @@
 package irvine.oeis.a007;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -19,7 +18,6 @@ public class A007779 extends Sequence0 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Q QUARTER = Q.ONE_QUARTER;
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   @Override

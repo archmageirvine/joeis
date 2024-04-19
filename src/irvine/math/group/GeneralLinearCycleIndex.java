@@ -6,7 +6,6 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.api.Ring;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.partition.NonnegativeIntegerComposition;
@@ -124,7 +123,6 @@ public final class GeneralLinearCycleIndex {
     return new CycleIndex(name, MultivariateMonomial.create(1, 1));
   }
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   private static Z multinomialExt(final int a, final int[] b) {
     Z den = Z.ONE;

@@ -1,6 +1,5 @@
 package irvine.oeis.a000;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -25,7 +24,6 @@ public class A000313 extends AbstractSequence {
   }
 
   private int mN = -2;
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   @Override
   public Z next() {

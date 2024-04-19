@@ -1,6 +1,5 @@
 package irvine.oeis.a060;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
@@ -12,7 +11,6 @@ import irvine.oeis.triangle.BaseTriangle;
  */
 public class A060821 extends BaseTriangle {
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /** Construct the sequence. */
   public A060821() {

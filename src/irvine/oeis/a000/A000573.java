@@ -1,6 +1,5 @@
 package irvine.oeis.a000;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -19,7 +18,6 @@ public class A000573 extends AbstractSequence {
   // Based on C code by Douglas Stones
 
   protected int mN = 3;
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private boolean shouldNegate(final int[] a) {
     return ((a[2] + a[3] + a[5] + a[0]) & 1) == 1;

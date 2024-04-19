@@ -1,6 +1,5 @@
 package irvine.oeis.a062;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
@@ -16,7 +15,6 @@ import irvine.oeis.Sequence1;
  */
 public class A062734 extends Sequence1 {
 
-  private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
   private static final Polynomial<Q> Y1 = Polynomial.create(Q.ONE, Q.ONE);
   private int mN = 0;
   private int mM = 0;

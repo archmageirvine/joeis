@@ -1,7 +1,6 @@
 package irvine.oeis.a052;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partition.IntegerPartition;
@@ -24,7 +23,6 @@ public class A052371 extends A052107 {
   // After Andrew Howroyd
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Polynomial<Q> mRow = RING.zero();
   private int mN = -1;
   private int mM = 0;

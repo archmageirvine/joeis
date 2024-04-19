@@ -3,7 +3,6 @@ package irvine.oeis.a008;
 import java.util.Arrays;
 import java.util.Collections;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -21,7 +20,6 @@ public class A008295 extends A000081 {
   protected static final PolynomialRingField<Q> RING_Y = new PolynomialRingField<>("y", Rationals.SINGLETON);
   protected static final PolynomialRingField<Polynomial<Q>> RING_X = new PolynomialRingField<>(RING_Y);
   private static final Polynomial<Polynomial<Q>> Y1 = RING_X.monomial(RING_Y.create(Arrays.asList(Q.ONE, Q.ONE)), 0);
-  protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   protected Polynomial<Polynomial<Q>> mR = nextR(0);
   protected Polynomial<Polynomial<Q>> mRR = RING_X.zero();
   protected int mN = -1;

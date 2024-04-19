@@ -1,7 +1,6 @@
 package irvine.oeis.a003;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -13,7 +12,6 @@ import irvine.oeis.Sequence1;
  */
 public class A003086 extends Sequence1 {
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   private int c(final int n, final int[] j, final boolean even) {

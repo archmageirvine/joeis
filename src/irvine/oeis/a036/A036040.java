@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.TreeSet;
 
 import irvine.math.Comparators;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -16,7 +15,6 @@ import irvine.oeis.Sequence1;
  */
 public class A036040 extends Sequence1 {
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final TreeSet<int[]> mA = new TreeSet<>(Comparators.ABRAHAM_STEGUN);
   private int mN = 0;
   private int[] mC;

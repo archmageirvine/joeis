@@ -1,6 +1,5 @@
 package irvine.oeis.a068;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -12,7 +11,6 @@ import irvine.oeis.CachedSequence;
  */
 public class A068099 extends CachedSequence {
 
-  private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
 
   /** Construct the sequence. */
   public A068099() {

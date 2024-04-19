@@ -2,7 +2,6 @@ package irvine.oeis.a034;
 
 import java.util.ArrayList;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -32,7 +31,6 @@ public class A034855 extends AbstractSequence {
 
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
 
-  protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final ArrayList<Polynomial<Q>> mGF = new ArrayList<>();
 
   {

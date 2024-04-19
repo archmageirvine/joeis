@@ -2,7 +2,6 @@ package irvine.oeis.a005;
 
 import java.io.Serializable;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -14,7 +13,6 @@ import irvine.oeis.Sequence0;
 public class A005130 extends Sequence0 implements Serializable {
 
   private int mN = -1;
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   @Override
   public Z next() {

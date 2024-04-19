@@ -1,7 +1,6 @@
 package irvine.oeis.a204;
 // manually triuple at 2021-10-25 09:05
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -13,7 +12,6 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  */
 public class A204244 extends UpperLeftTriangle {
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /** Construct the sequence. */
   public A204244() {

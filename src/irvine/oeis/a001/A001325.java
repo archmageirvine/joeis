@@ -1,7 +1,6 @@
 package irvine.oeis.a001;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.CycleIndex;
@@ -18,7 +17,6 @@ import irvine.oeis.Sequence1;
  */
 public class A001325 extends Sequence1 {
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   private static int bigGPrime(final int m, final int t2) {
     assert (t2 & 1) == 0;

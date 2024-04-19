@@ -1,6 +1,5 @@
 package irvine.oeis.a000;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -20,7 +19,6 @@ public class A000373 extends A000275 {
     super.next();
   }
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private Z a(final int n) {
     return n == 1 ? Z.ZERO : mA.get(n);

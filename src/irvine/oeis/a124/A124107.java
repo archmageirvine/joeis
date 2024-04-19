@@ -1,6 +1,5 @@
 package irvine.oeis.a124;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -20,7 +19,6 @@ public class A124107 extends Sequence1 {
     for (int k = 0; k < MAX; ++k) {
       ITERATED_FACTORIAL[0][k] = k;
     }
-    final MemoryFactorial f = MemoryFactorial.SINGLETON;
     for (int k = 1; k < MAX; ++k) {
       for (int j = 0; j < MAX; ++j) {
         final long v = ITERATED_FACTORIAL[k - 1][j];

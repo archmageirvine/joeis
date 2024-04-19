@@ -1,7 +1,6 @@
 package irvine.oeis.a027;
 
 import irvine.math.api.Matrix;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.MatrixField;
 import irvine.math.matrix.DefaultMatrix;
@@ -32,7 +31,6 @@ public class A027477 extends AbstractSequence {
 
   private int mN = 0;
   private int mM = 0;
-  protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   protected Matrix<Q> mMatrix = null;
 
   protected int power() {

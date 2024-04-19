@@ -1,6 +1,5 @@
 package irvine.oeis.a034;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -12,7 +11,6 @@ import irvine.oeis.Sequence1;
  */
 public class A034879 extends Sequence1 {
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Z mA = null;
 
   private Z factorialDigitProduct(final Z f) {

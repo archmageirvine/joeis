@@ -1,6 +1,5 @@
 package irvine.oeis.a265;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.transform.GeneralizedEulerTransform;
@@ -11,7 +10,6 @@ import irvine.oeis.transform.GeneralizedEulerTransform;
  */
 public class A265950 extends GeneralizedEulerTransform {
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /** Construct the sequence. */
   public A265950() {

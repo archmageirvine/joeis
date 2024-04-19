@@ -1,6 +1,5 @@
 package irvine.oeis.a081;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
@@ -30,7 +29,6 @@ public class A081054 extends AbstractSequence {
 
   protected static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final PolynomialRing<Polynomial<Z>> RING2 = new PolynomialRing<>(RING);
-  protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Polynomial<Z> mPsiBarCache = null;
   private int mPsiBarCacheIndex = -1;
 

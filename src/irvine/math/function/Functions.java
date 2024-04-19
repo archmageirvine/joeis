@@ -12,6 +12,8 @@ public final class Functions {
   public static final Function1 FACTORIAL = new Factorial();
   /** Primorial, product of all primes up to and including the parameter. */
   public static final Function1 PRIMORIAL = new Primorial();
+  /** Factorial base representation. */
+  public static final Function1 FACTORIAL_BASE = new FactorialBase();
   /** Product of the specified number of primes. */
   public static final Function1 PRIMORIAL_COUNT = new PrimorialCount();
   /** Euler totient function. */

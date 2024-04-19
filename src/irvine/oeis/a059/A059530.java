@@ -2,7 +2,6 @@ package irvine.oeis.a059;
 
 import java.util.Arrays;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
@@ -19,7 +18,6 @@ import irvine.oeis.Sequence3;
  */
 public class A059530 extends Sequence3 {
 
-  protected static final MemoryFactorial F = MemoryFactorial.SINGLETON;
   private static final Q NEG_HALF = new Q(-1, 2);
   private int mN = 2;
   private int mM = 4;

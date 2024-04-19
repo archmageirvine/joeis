@@ -2,7 +2,6 @@ package irvine.oeis.a047;
 
 import java.util.ArrayList;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.AbstractSequence;
@@ -26,7 +25,6 @@ public class A047874 extends AbstractSequence {
     super(1);
   }
 
-  private final MemoryFactorial mFactorial = MemoryFactorial.SINGLETON;
 
   private Z h(final ArrayList<Integer> l) {
     int s = 0;

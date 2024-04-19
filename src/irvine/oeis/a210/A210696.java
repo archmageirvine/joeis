@@ -1,7 +1,6 @@
 package irvine.oeis.a210;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -16,7 +15,6 @@ public class A210696 extends Sequence0 {
 
   // Based on existing Maple program in OEIS entry (by R. J. Mathar)
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final A146305 mA146305 = new A146305();
 
   protected Z brownE(final int r, final int n, final int m) {

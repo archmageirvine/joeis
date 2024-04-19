@@ -3,7 +3,6 @@ package irvine.oeis.a259;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.polynomial.CycleIndex;
@@ -140,7 +139,6 @@ public class A259976 extends MemoryFunction1Sequence<CycleIndex> {
     return perm;
   }
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   // See Merris & Watkins paper, pp. 539-541
   protected Z t(final int q, final int p) {

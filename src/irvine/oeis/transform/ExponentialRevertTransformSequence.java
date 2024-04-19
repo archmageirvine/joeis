@@ -1,6 +1,5 @@
 package irvine.oeis.transform;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -19,7 +18,6 @@ public class ExponentialRevertTransformSequence extends AbstractSequence {
   private static final int DEFOFF = 1;
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final Polynomial<Q> mPoly = RING.empty();
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
   private final Sequence mSeq;
 

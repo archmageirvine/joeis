@@ -15,7 +15,6 @@ public class A002304 extends Sequence0 implements UnimplementedSequence {
   // goddard at least matches that part of Vaclav's Mathematica code
 
 //  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-//  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 //  private int mN = 0;
 //
 //  private Polynomial<Q> goddard(final int n, final int k) {

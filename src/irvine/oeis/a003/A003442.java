@@ -6,7 +6,6 @@ import java.util.HashMap;
 import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction2;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partition.IntegerPartition;
@@ -64,7 +63,6 @@ public class A003442 extends AbstractSequence {
     }
   }
 
-  protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   protected final VFunction mV = new VFunction();
   private final HashMap<Pair<Polynomial<Q>, Integer>, Polynomial<Q>> mPowerCache = new HashMap<>();
 

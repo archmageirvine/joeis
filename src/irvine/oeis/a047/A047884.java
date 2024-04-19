@@ -3,7 +3,6 @@ package irvine.oeis.a047;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
@@ -20,7 +19,6 @@ public class A047884 extends Sequence1 {
   // After Alois P. Heinz
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
   private int mM = 0;
   private Polynomial<Z> mG = null;

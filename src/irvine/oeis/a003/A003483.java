@@ -2,7 +2,6 @@ package irvine.oeis.a003;
 
 import java.util.Arrays;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -14,7 +13,6 @@ import irvine.oeis.memory.MemoryFunction2Sequence;
  */
 public class A003483 extends MemoryFunction2Sequence<Integer, Z> {
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   @Override

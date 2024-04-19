@@ -1,7 +1,6 @@
 package irvine.oeis.a134;
 // manually prodsim/prodsif at 2021-11-18 21:27
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -13,7 +12,6 @@ import irvine.oeis.Sequence1;
  */
 public class A134356 extends Sequence1 {
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   @Override

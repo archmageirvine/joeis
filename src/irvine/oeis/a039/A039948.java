@@ -1,6 +1,5 @@
 package irvine.oeis.a039;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -13,7 +12,6 @@ import irvine.oeis.memory.MemorySequence;
  */
 public class A039948 extends Sequence0 {
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final MemorySequence mFibo = MemorySequence.cachedSequence(new A000045());
   private int mN = -1;
   private int mM = 0;

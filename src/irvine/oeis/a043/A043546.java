@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.MultivariatePolynomialField;
@@ -24,7 +23,6 @@ public class A043546 extends Sequence0 {
 
   private static final MultivariatePolynomialField<Q> RING = new MultivariatePolynomialField<>(Rationals.SINGLETON, 2);
   private static final PolynomialRingField<Z> RINGZ = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   private MultivariatePolynomial<Q> i1(final int n) {

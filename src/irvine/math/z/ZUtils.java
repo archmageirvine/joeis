@@ -832,4 +832,25 @@ public final class ZUtils {
     return true;
   }
 
+  /**
+   * Convert a number into a list of digits in factorial base.
+   * @param n number to convert
+   * @return factorial base digits
+   */
+  public static List<Z> factorialBaseList(final Z n) {
+    int b = 1;
+    while (Functions.FACTORIAL.z(b).compareTo(n) <= 0) {
+      ++b;
+    }
+    final List<Z> res = new ArrayList<>();
+    Z m = n;
+    do {
+      final int n1 = --b;
+      final Z[] qr = m.divideAndRemainder(Functions.FACTORIAL.z(n1));
+      res.add(qr[0]);
+      m = qr[1];
+    } while (b > 1);
+    return res;
+  }
+
 }

@@ -2,7 +2,6 @@ package irvine.oeis.a007;
 
 import java.io.Serializable;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
@@ -16,7 +15,6 @@ import irvine.oeis.Sequence1;
  */
 public class A007151 extends Sequence1 implements Serializable {
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   private Q sum1(final int n, final int j, final int i) {

@@ -1,7 +1,6 @@
 package irvine.oeis.a210;
 
 import irvine.math.MemoryFunction2;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -19,7 +18,6 @@ public class A210913 extends ExponentialGeneratingFunction {
     super(0);
   }
 
-  private final MemoryFactorial mFactorial = MemoryFactorial.SINGLETON;
   protected MemoryFunction2<Integer, Polynomial<Q>> mT = new MemoryFunction2<>() {
     @Override
     protected Polynomial<Q> compute(final Integer k, final Integer n) {

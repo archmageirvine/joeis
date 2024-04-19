@@ -2,7 +2,6 @@ package irvine.oeis.a034;
 
 import java.util.TreeSet;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -42,7 +41,6 @@ public class A034882 extends Sequence1 {
     }
   }
 
-  private final MemoryFactorial mFactorial = MemoryFactorial.SINGLETON;
   private final TreeSet<State> mA = new TreeSet<>();
   private Z mPrev = Z.NEG_ONE;
   private Z mF = Z.ONE;

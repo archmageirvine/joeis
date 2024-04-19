@@ -2,7 +2,6 @@ package irvine.oeis.a060;
 
 import java.util.Arrays;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
@@ -22,7 +21,6 @@ public class A060517 extends Sequence0 {
   private static final PolynomialRingField<Polynomial<Q>> RING = new PolynomialRingField<>(INNER);
   private static final Polynomial<Polynomial<Q>> OPYX = RING.onePlusXToTheN(INNER.x(), 1); // 1 + x * y
   private static final Polynomial<Q> Y1 = INNER.onePlusXToTheN(1);
-  private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
   private Polynomial<Polynomial<Q>> mEgf = RING.one();
   private int mN = 0;
   private int mM = -1;

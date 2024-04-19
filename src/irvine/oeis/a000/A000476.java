@@ -1,6 +1,5 @@
 package irvine.oeis.a000;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -22,7 +21,6 @@ public class A000476 extends AbstractSequence {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> BASE = Polynomial.create(-1, 1);
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 4;
 
   @Override

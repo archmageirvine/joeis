@@ -3,7 +3,6 @@ package irvine.oeis.a003;
 import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction1;
 import irvine.math.MemoryFunction2;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Binomial;
@@ -16,7 +15,6 @@ import irvine.oeis.memory.MemoryFunction2Sequence;
  */
 public class A003122 extends MemoryFunction2Sequence<Integer, Z> {
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   private static Z p(final int n, final int k) {

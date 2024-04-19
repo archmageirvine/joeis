@@ -1,7 +1,6 @@
 package irvine.oeis.a007;
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -14,7 +13,6 @@ import irvine.oeis.Sequence0;
 public class A007769 extends Sequence0 {
 
   private int mN = -1;
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private Z alpha(final int p, final Z q) {
     if (q.isEven()) {

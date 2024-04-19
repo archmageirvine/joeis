@@ -1,6 +1,5 @@
 package irvine.oeis.a057;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -26,7 +25,6 @@ public class A057848 extends MemorySequence {
     new Z("2054813830468439040000"),
     new Z("1665031453088810526720000")
   };
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   {
     setOffset(1);
     add(Z.ZERO);

@@ -6,7 +6,6 @@ import java.util.Set;
 
 import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction2;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -44,7 +43,6 @@ public class A049312 extends MemoryFunction2Sequence<Integer, Z> {
   }
 
   private final BFunction mB = new BFunction();
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   private Z mul(final Polynomial<Z> p) {

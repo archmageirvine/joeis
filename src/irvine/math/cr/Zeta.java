@@ -3,7 +3,6 @@ package irvine.math.cr;
 import java.util.HashMap;
 
 import irvine.math.MemoryFunction;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
@@ -20,7 +19,6 @@ public final class Zeta {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
   private static final BernoulliSequence BERNOULLI = new BernoulliSequence(0);
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private static final CR EXP_PI = REALS.exp(CR.PI);
   private static final HashMap<Integer, CR> ZETA_CACHE = new HashMap<>();
 

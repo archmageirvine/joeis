@@ -1,6 +1,5 @@
 package irvine.oeis.a060;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -11,7 +10,6 @@ import irvine.oeis.Sequence0;
  */
 public class A060727 extends Sequence0 {
 
-  private final MemoryFactorial mFactorial = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   @Override

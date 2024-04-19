@@ -2,7 +2,6 @@ package irvine.oeis.a000;
 
 import java.util.ArrayList;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -22,7 +21,6 @@ public class A000264 extends Sequence1 {
   {
     mV.add(null);
   }
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Polynomial<Z> mU = RING.zero();
   private int mN = 0;
 

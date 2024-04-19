@@ -1,6 +1,5 @@
 package irvine.oeis.a274;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -12,7 +11,6 @@ import irvine.oeis.memory.MemoryFunction2Sequence;
  */
 public class A274447 extends MemoryFunction2Sequence<Integer, Z> {
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   // Eulerian2 function

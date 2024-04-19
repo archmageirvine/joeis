@@ -3,7 +3,6 @@ package irvine.oeis.a053;
 import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -17,7 +16,6 @@ public class A053195 extends MemoryFunctionInt3Sequence<Z> {
 
   // After Alois P. Heinz
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   @Override

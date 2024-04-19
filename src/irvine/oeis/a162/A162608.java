@@ -1,7 +1,6 @@
 package irvine.oeis.a162;
 // manually triman/trian at 2021-10-31 19:06
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
@@ -12,7 +11,6 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A162608 extends Triangle {
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private Z mFact;
 
   @Override

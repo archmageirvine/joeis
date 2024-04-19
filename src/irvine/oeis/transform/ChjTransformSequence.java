@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -24,7 +23,6 @@ public class ChjTransformSequence extends Sequence1 {
 
   // See https://oeis.org/transforms2.html (but beware errors)
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private final MemorySequence mA;
 
   protected ChjTransformSequence(final Sequence seq) {

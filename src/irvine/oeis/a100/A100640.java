@@ -1,6 +1,5 @@
 package irvine.oeis.a100;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
@@ -14,7 +13,6 @@ import irvine.oeis.Sequence0;
  */
 public class A100640 extends Sequence0 {
 
-  private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
 
   /**
    * Cotesian numbers.

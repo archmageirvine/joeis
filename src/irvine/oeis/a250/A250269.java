@@ -2,7 +2,6 @@ package irvine.oeis.a250;
 // manually prodsim/prodsid at 2021-11-28 15:07
 
 import irvine.factor.factor.Jaguar;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -15,7 +14,6 @@ import irvine.oeis.Sequence1;
 public class A250269 extends Sequence1 {
 
   private int mN = 0;
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   @Override
   public Z next() {

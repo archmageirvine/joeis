@@ -1,7 +1,6 @@
 package irvine.oeis.a002;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partition.IntegerPartition;
@@ -30,7 +29,6 @@ public class A002499 extends AbstractSequence {
   // Compare with A126067.  This is effectively the cycle index polynomials
   // evaluated at 1.
 
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   private boolean eta(final int k) {

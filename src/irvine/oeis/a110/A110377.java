@@ -2,7 +2,6 @@ package irvine.oeis.a110;
 // manually sumsi/sumgcd1 at 2021-11-20 19:26
 
 import irvine.math.LongUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence1;
@@ -14,7 +13,6 @@ import irvine.oeis.Sequence1;
 public class A110377 extends Sequence1 {
 
   private int mN = 0;
-  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   @Override
   public Z next() {

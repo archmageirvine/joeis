@@ -1,7 +1,6 @@
 package irvine.oeis.a052;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.z.Z;
@@ -28,7 +27,6 @@ public class A052107 extends AbstractSequence {
 
   // After Andrew Howroyd
 
-  protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   protected int mN = 0;
 
   protected int edges(final int[] v) {

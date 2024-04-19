@@ -1,6 +1,5 @@
 package irvine.oeis.a008;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
@@ -28,7 +27,6 @@ public class A008298 extends MemoryFunction1Sequence<Polynomial<Z>> {
   }
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
   private int mM = 0;
 

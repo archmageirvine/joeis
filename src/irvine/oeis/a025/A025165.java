@@ -1,6 +1,5 @@
 package irvine.oeis.a025;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -13,7 +12,6 @@ public class A025165 extends Sequence0 {
 
   // After G. C. Greubel
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   @Override

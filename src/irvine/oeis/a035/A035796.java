@@ -5,7 +5,6 @@ import java.util.HashSet;
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -20,7 +19,6 @@ public class A035796 extends A025487 {
   // After Andrew Howroyd
 
   private final PrimeDivision mFactor = new PrimeDivision();
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private Z c(final int[] sig) {
     final int s = (int) IntegerUtils.sum(sig);

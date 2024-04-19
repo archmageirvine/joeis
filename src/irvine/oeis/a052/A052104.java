@@ -1,6 +1,5 @@
 package irvine.oeis.a052;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.q.Q;
 import irvine.math.z.Stirling;
@@ -15,7 +14,6 @@ public class A052104 extends MemoryFunction2Sequence<Integer, Q> {
 
   // After Alois P. Heinz
 
-  protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   protected int mN = -1;
 
   @Override

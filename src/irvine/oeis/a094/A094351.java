@@ -2,7 +2,6 @@ package irvine.oeis.a094;
 
 import java.util.Arrays;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence0;
@@ -13,7 +12,6 @@ import irvine.oeis.Sequence0;
  */
 public class A094351 extends Sequence0 {
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Z mProd = Z.ONE;
   private boolean[] mUsed = new boolean[1000];
 

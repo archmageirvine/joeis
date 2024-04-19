@@ -1,7 +1,6 @@
 package irvine.oeis.a000;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
@@ -14,7 +13,6 @@ import irvine.oeis.Sequence1;
  */
 public class A000171 extends Sequence1 {
 
-  private final MemoryFactorial mFactorial = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   private Z period(final int[] k) {

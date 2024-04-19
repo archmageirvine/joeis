@@ -1,6 +1,5 @@
 package irvine.oeis.a000;
 
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
@@ -13,7 +12,6 @@ import irvine.oeis.Sequence2;
 public class A000409 extends Sequence2 {
 
   private int mN = 1;
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private Z poweredBinomial(final int k, final int n) {
     // compute C(2^k-1,n)

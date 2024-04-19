@@ -14,7 +14,6 @@ import java.util.TreeSet;
 import irvine.factor.factor.Jaguar;
 import irvine.math.api.Group;
 import irvine.math.api.Set;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.set.FiniteSet;
@@ -482,7 +481,6 @@ public class SymmetricGroupTest extends TestCase {
   }
 
   public void testDurbin7p18() {
-    final MemoryFactorial fact = MemoryFactorial.SINGLETON;
     for (int k = 1; k < 8; ++k) {
       final SymmetricGroup<Integer> h = SymmetricGroup.create(k);
       for (int j = 0; j <= k; ++j) {

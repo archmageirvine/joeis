@@ -1,7 +1,6 @@
 package irvine.oeis.a002;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.function.Functions;
 import irvine.math.partition.IntegerPartition;
 import irvine.math.q.Q;
@@ -16,7 +15,6 @@ public class A002785 extends Sequence1 {
 
   // After Pab Ter
 
-  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
   private Z mOddTerm = Z.ONE;
 

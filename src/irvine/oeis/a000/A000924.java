@@ -15,8 +15,7 @@ public class A000924 extends Sequence1 {
 
   @Override
   public Z next() {
-    final long n1 = ++mN;
-    while (Functions.MOBIUS.i(n1) == 0) {
+    while (Functions.MOBIUS.i(++mN) == 0) {
       // do nothing
     }
     final long n = -mN;

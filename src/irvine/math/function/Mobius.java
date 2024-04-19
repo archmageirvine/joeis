@@ -13,7 +13,7 @@ import irvine.util.array.LongDynamicIntArray;
 class Mobius extends AbstractFunction1 {
 
   /** Largest valid entry in the table. */
-  private long mLimit = 1024;
+  private long mLimit = 1000;
   private final LongDynamicIntArray mMu = new LongDynamicIntArray();
 
   Mobius() {
@@ -33,8 +33,7 @@ class Mobius extends AbstractFunction1 {
     final long index = n >> 4;
     final int shift = ((int) n & 15) << 1;
     final int old = mMu.get(index);
-    mMu.set(index, (old & (~(3 << shift)))
-            + ((((3 >> ((old >> shift) & 3)) + 1) & 3) << shift));
+    mMu.set(index, (old & (~(3 << shift))) + ((((3 >> ((old >> shift) & 3)) + 1) & 3) << shift));
   }
 
   private void extend() {
@@ -101,9 +100,6 @@ class Mobius extends AbstractFunction1 {
 
   @Override
   public int i(final long n) {
-    if (n < 0) {
-      throw new IllegalArgumentException();
-    }
     if (n >= 2 * mLimit) {
       // Resort to factorization
       return Jaguar.factor(n).mobius();
@@ -124,11 +120,7 @@ class Mobius extends AbstractFunction1 {
 
   @Override
   public int i(final Z n) {
-    if (n.signum() < 0) {
-      throw new IllegalArgumentException();
-    }
-    // Note sigma(n) can exceed n
-    return n.bitLength() < Long.SIZE - 2 ? i(n.longValue()) : Jaguar.factor(n).mobius();
+    return n.bitLength() < Long.SIZE ? i(n.longValue()) : Jaguar.factor(n).mobius();
   }
 }
 

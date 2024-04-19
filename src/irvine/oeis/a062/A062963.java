@@ -16,8 +16,7 @@ public class A062963 extends Sequence2 {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    return mSeq1.next().multiply(Functions.MOBIUS.i(n));
+    return mSeq1.next().multiply(Functions.MOBIUS.i(++mN));
   }
 }
 

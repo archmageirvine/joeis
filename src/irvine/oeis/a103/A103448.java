@@ -4,7 +4,6 @@ package irvine.oeis.a103;
 import irvine.math.function.Functions;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
-import irvine.math.z.Z;
 import irvine.oeis.LambdaSequence;
 
 /**
@@ -15,6 +14,6 @@ public class A103448 extends LambdaSequence {
 
   /** Construct the sequence. */
   public A103448() {
-    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Z.valueOf(Functions.MOBIUS.i(Binomial.binomial(n, k)))));
+    super(0, n -> Integers.SINGLETON.sum(0, n, k -> Functions.MOBIUS.z(Binomial.binomial(n, k))));
   }
 }

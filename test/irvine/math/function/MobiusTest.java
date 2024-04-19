@@ -11,12 +11,6 @@ public class MobiusTest extends TestCase {
 
   public void testMobius() {
     final Function1 f = new Mobius();
-    try {
-      f.i(-1);
-      fail();
-    } catch (final IllegalArgumentException e) {
-      // expected
-    }
     assertEquals(0, f.i(0));
     assertEquals(1, f.i(1));
     assertEquals(-1, f.i(2));
@@ -118,5 +112,13 @@ public class MobiusTest extends TestCase {
     assertEquals(0, f.i(98));
     assertEquals(0, f.i(99));
     assertEquals(0, f.l(Z.ONE.shiftLeft(200).subtract(1)));
+  }
+
+  public void testIncrementalConstruction() {
+    assertEquals(0, new Mobius().l(5043));
+    final Mobius f = new Mobius();
+    f.l(2000);
+    f.l(4000);
+    assertEquals(0, f.l(5043));
   }
 }
